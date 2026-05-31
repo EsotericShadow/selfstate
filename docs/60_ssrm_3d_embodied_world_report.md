@@ -111,12 +111,13 @@ This is still toy-scale:
 - latent metrics are computed from known simulator state;
 - social dynamics are minimal.
 
-Report 61 takes the next representation step by training recurrent observers on embodied traces. Report 62 takes the next policy-state step by training learned controllers. The stronger remaining version is online-return or model-based control with robust causal policy-state edits.
+Report 61 takes the next representation step by training recurrent observers on embodied traces. Report 62 takes the next policy-state step by training learned controllers. Report 64 makes the LLM-as-module boundary explicit and turns the language stream into a future ablation target. The stronger remaining version is online-return or model-based control with robust causal policy-state edits.
 
 ## Artifacts
 
 - [experiment script](../experiments/ssrm_3d_embodied_world.py)
 - [visualization](../visualizations/ssrm_3d.html)
+- [modular LLM architecture visualization](../visualizations/modular_llm_architecture.html)
 - [summary CSV](../artifacts/ssrm_3d_summary.csv)
 - [episode metrics CSV](../artifacts/ssrm_3d_episode_metrics.csv)
 - [verdict CSV](../artifacts/ssrm_3d_verdict.csv)

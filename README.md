@@ -65,6 +65,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D recurrent observer report](docs/61_ssrm_3d_recurrent_observer_report.md): tests whether GPU-backed recurrent observers recover self-state from embodied traces.
 - [SSRM-3D learned controller report](docs/62_ssrm_3d_learned_controller_report.md): tests whether recurrent controllers trained without self labels use self-state under embodied pressure.
 - [SSRM-3D done-enough gates](docs/63_ssrm_3d_done_enough_gates.md): defines the four gates still needed before the 3D track counts as done enough.
+- [Modular LLM architecture report](docs/64_modular_llm_architecture_report.md): separates persistent self-state control from slow language reasoning and defines LLM ablation predictions.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -494,6 +495,7 @@ This writes:
 - `artifacts/ssrm_3d_trajectory.json`
 - `artifacts/ssrm_3d_results.json`
 - `visualizations/ssrm_3d.html` replays the trajectory when served from the repo root.
+- `visualizations/modular_llm_architecture.html` shows the LLM-as-module control boundary and ablation modes.
 
 ```bash
 python3 experiments/ssrm_3d_recurrent_observer.py --episodes-per-stage 42 --ticks 540 --seed 20260608 --hidden-size 32 --epochs 180 --batch-size 64 --learning-rate 0.004 --device auto

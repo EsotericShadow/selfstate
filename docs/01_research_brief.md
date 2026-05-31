@@ -130,6 +130,8 @@ The SSRM-3D learned-controller precursor then moves from observer state to polic
 
 The SSRM-3D done-enough gates keep this from being overclaimed. The embodied track is not done until learned control, discovered tool-making or externalized cognition, real social pressure, and targeted ablation all pass. The current result is a useful gate-1 precursor; gates 2 and 3 remain open, and gate 4 is only partial.
 
+The modular LLM architecture report makes the language boundary explicit. The LLM is treated as a slow reasoning organ that reads compressed state packets and proposes; the self-equivalent object under test remains persistent control state in the reflex, self-state, attention, arbiter, and action stack.
+
 Learned bottleneck discovery adds a sharper boundary: a shared latent is selected from unlabeled outcomes in both agent-state and world-state reuse. Compression alone discovers reusable hidden structure, not selfhood; selfhood requires the causal boundary test.
 
 Sequence latent transfer adds held-out transfer: early calibration outcomes support later control only when they reveal a persistent episode state. The same transfer works for external world-state, so boundary evidence remains necessary.

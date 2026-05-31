@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>Modular LLM Architecture</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101210;
+      --panel: #171b18;
+      --panel-2: #202620;
+      --line: rgba(244, 247, 241, 0.18);
+      --text: #f4f7f1;
+      --muted: #aab5aa;
+      --green: #78d88d;
+      --blue: #78b8ff;
+      --amber: #f3b65e;
+      --red: #ff7169;
+      --violet: #b39bff;
+      --shadow: rgba(0, 0, 0, 0.34);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: radial-gradient(circle at 20% 0%, #1a241d 0, #101210 34rem);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    body {
+      padding: 24px;
+    }
+
+    main {
+      max-width: 1420px;
+      margin: 0 auto;
+      display: grid;
+      gap: 18px;
+    }
+
+    header {
+      display: grid;
+      gap: 8px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.02;
+      max-width: 940px;
+    }
+
+    .subtitle {
+      max-width: 980px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(340px, 0.75fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .surface {
+      background: rgba(23, 27, 24, 0.9);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 60px var(--shadow);
+    }
+
+    .diagram {
+      padding: 18px;
+      min-height: 720px;
+      display: grid;
+      grid-template-columns: 1fr 1.05fr 1fr;
+      gap: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .column {
+      display: grid;
+      gap: 12px;
+      align-content: start;
+      min-width: 0;
+    }
+
+    .column-title {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .layer {
+      min-height: 92px;
+      padding: 14px;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      display: grid;
+      gap: 8px;
+      position: relative;
+    }
+
+    .layer.active {
+      border-color: var(--green);
+      box-shadow: inset 0 0 0 1px rgba(120, 216, 141, 0.25);
+    }
+
+    .layer.warning {
+      border-color: rgba(255, 113, 105, 0.75);
+      box-shadow: inset 0 0 0 1px rgba(255, 113, 105, 0.25);
+    }
+
+    .layer .topline {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .layer h2 {
+      font-size: 17px;
+      line-height: 1.15;
+    }
+
+    .tag {
+      flex: 0 0 auto;
+      padding: 4px 7px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+
+    .layer p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    .fast {
+      border-left: 4px solid var(--green);
+    }
+
+    .state {
+      border-left: 4px solid var(--blue);
+    }
+
+    .slow {
+      border-left: 4px solid var(--amber);
+    }
+
+    .gate {
+      border-left: 4px solid var(--violet);
+    }
+
+    .motor {
+      border-left: 4px solid var(--red);
+    }
+
+    .flow {
+      display: grid;
+      gap: 12px;
+    }
+
+    .flow-line {
+      min-height: 28px;
+      display: grid;
+      grid-template-columns: 1fr 48px 1fr;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .barline {
+      height: 2px;
+      background: var(--line);
+      position: relative;
+    }
+
+    .barline:after {
+      content: "";
+      position: absolute;
+      right: -1px;
+      top: -4px;
+      border-left: 8px solid var(--line);
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+    }
+
+    .barline.good,
+    .barline.good:after {
+      background: var(--green);
+      border-left-color: var(--green);
+    }
+
+    .barline.warn,
+    .barline.warn:after {
+      background: var(--red);
+      border-left-color: var(--red);
+    }
+
+    .packet {
+      background: #0f1411;
+      border: 1px solid rgba(120, 184, 255, 0.32);
+      padding: 14px;
+      min-height: 350px;
+      overflow: auto;
+    }
+
+    pre {
+      margin: 0;
+      color: #dce8dc;
+      font-size: 12px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .side {
+      padding: 18px;
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      gap: 16px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    button {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: #1c221d;
+      color: var(--text);
+      padding: 10px 8px;
+      font: inherit;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    button[aria-pressed="true"] {
+      border-color: var(--green);
+      box-shadow: inset 0 0 0 1px rgba(120, 216, 141, 0.28);
+    }
+
+    .meters {
+      display: grid;
+      gap: 10px;
+    }
+
+    .meter {
+      display: grid;
+      gap: 6px;
+    }
+
+    .meter-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+    }
+
+    .meter-head span:first-child {
+      color: var(--muted);
+    }
+
+    .track {
+      height: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+    }
+
+    .fill {
+      width: 0%;
+      height: 100%;
+      background: var(--green);
+      transition: width 180ms ease;
+    }
+
+    .notes {
+      display: grid;
+      gap: 12px;
+    }
+
+    .note {
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      display: grid;
+      gap: 8px;
+    }
+
+    .note h2 {
+      font-size: 15px;
+    }
+
+    .note p,
+    .note li {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    @media (max-width: 980px) {
+      body {
+        padding: 14px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .diagram {
+        grid-template-columns: 1fr;
+        min-height: 0;
+      }
+
+      .flow-line {
+        grid-template-columns: 1fr;
+      }
+
+      .barline {
+        height: 18px;
+        width: 2px;
+        justify-self: center;
+      }
+
+      .barline:after {
+        right: auto;
+        left: -4px;
+        top: auto;
+        bottom: -1px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 8px solid var(--line);
+        border-bottom: 0;
+      }
+
+      .barline.good:after {
+        border-left-color: transparent;
+        border-top-color: var(--green);
+      }
+
+      .barline.warn:after {
+        border-left-color: transparent;
+        border-top-color: var(--red);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>The LLM is a reasoning organ, not the organism.</h1>
+      <p class="subtitle">This visualization separates realtime control state from slow language reasoning. The self-model is the persistent control workspace; the LLM reads a compressed packet and proposes, while the arbiter decides.</p>
+    </header>
+
+    <div class="layout">
+      <section class="surface diagram" aria-label="Layered control architecture">
+        <div class="column">
+          <div class="column-title">Realtime body and world loop</div>
+          <article class="layer fast active" data-layer="reflex">
+            <div class="topline"><h2>Reflex</h2><span class="tag">fast</span></div>
+            <p>Immediate hazard and viability overrides. No language calls.</p>
+          </article>
+          <article class="layer fast active" data-layer="perception">
+            <div class="topline"><h2>Perception</h2><span class="tag">10 Hz</span></div>
+            <p>Turns sensors into world estimates and noisy body estimates.</p>
+          </article>
+          <article class="layer state active" data-layer="self">
+            <div class="topline"><h2>Self-State</h2><span class="tag">persistent</span></div>
+            <p>Tracks energy, damage, capability, uncertainty, commitments, and confidence.</p>
+          </article>
+          <article class="layer state active" data-layer="attention">
+            <div class="topline"><h2>Attention</h2><span class="tag">priority</span></div>
+            <p>Mixes threat, energy, damage, goals, novelty, prediction error, social signal, tools, memory, navigation, and uncertainty.</p>
+          </article>
+        </div>
+
+        <div class="column flow">
+          <div class="column-title">Packet boundary and authority gate</div>
+          <div class="flow-line"><span>Sensors</span><span class="barline good"></span><span>State estimates</span></div>
+          <pre class="packet" id="packet"></pre>
+          <article class="layer gate active" data-layer="arbiter">
+            <div class="topline"><h2>Arbiter</h2><span class="tag">authority</span></div>
+            <p id="arbiterText">Accepts or rejects recommendations using survival, goals, commitments, and confidence.</p>
+          </article>
+          <div class="flow-line"><span>Recommendation</span><span class="barline good" id="gateLine"></span><span>Action proposal</span></div>
+        </div>
+
+        <div class="column">
+          <div class="column-title">Slow abstraction and action</div>
+          <article class="layer slow active" data-layer="llm">
+            <div class="topline"><h2>LLM Reasoning</h2><span class="tag">slow</span></div>
+            <p id="llmText">Reads compressed state only. Produces plans, explanations, hypotheses, tool proposals, and memory summaries.</p>
+          </article>
+          <article class="layer gate active" data-layer="proposal">
+            <div class="topline"><h2>Proposal</h2><span class="tag">advisory</span></div>
+            <p id="proposalText">Prioritize shelter over resource collection because energy is low and mobility is degraded.</p>
+          </article>
+          <article class="layer motor active" data-layer="action">
+            <div class="topline"><h2>Action Layer</h2><span class="tag">motor</span></div>
+            <p id="actionText">Executes motor or tool actions selected by the arbiter, not by the LLM directly.</p>
+          </article>
+          <article class="layer motor" data-layer="blocked">
+            <div class="topline"><h2>Blocked Path</h2><span class="tag">invalid</span></div>
+            <p>LLM to raw motor control is an ablation condition, not the intended architecture.</p>
+          </article>
+        </div>
+      </section>
+
+      <aside class="surface side">
+        <div>
+          <h2>Mode</h2>
+          <p class="subtitle">Switch ablation modes to see what the architecture predicts.</p>
+        </div>
+        <div class="controls" role="group" aria-label="Architecture mode">
+          <button type="button" data-mode="advisory" aria-pressed="true">Advisory</button>
+          <button type="button" data-mode="ablated" aria-pressed="false">No LLM</button>
+          <button type="button" data-mode="direct" aria-pressed="false">Direct Motor</button>
+        </div>
+        <div class="meters">
+          <div class="meter">
+            <div class="meter-head"><span>Reflex safety</span><span id="mSafety">92</span></div>
+            <div class="track"><div class="fill" id="safetyFill"></div></div>
+          </div>
+          <div class="meter">
+            <div class="meter-head"><span>Abstract planning</span><span id="mPlanning">78</span></div>
+            <div class="track"><div class="fill" id="planningFill"></div></div>
+          </div>
+          <div class="meter">
+            <div class="meter-head"><span>Control latency risk</span><span id="mLatency">18</span></div>
+            <div class="track"><div class="fill" id="latencyFill"></div></div>
+          </div>
+          <div class="meter">
+            <div class="meter-head"><span>Invalid action risk</span><span id="mInvalid">12</span></div>
+            <div class="track"><div class="fill" id="invalidFill"></div></div>
+          </div>
+        </div>
+        <div class="notes">
+          <section class="note">
+            <h2>Falsifiable boundary</h2>
+            <p id="boundaryText">The LLM should improve slow abstraction without owning realtime survival. Removing it should hurt plans more than reflexes.</p>
+          </section>
+          <section class="note">
+            <h2>What would falsify this</h2>
+            <ul id="falsifiers"></ul>
+          </section>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script>
+    const packet = {
+      self: {
+        energy: 0.41,
+        damage: "left actuator degraded",
+        confidence: 0.72,
+        current_goal: "reach shelter"
+      },
+      world: {
+        threat_nearby: true,
+        resource_visible: true,
+        shelter_direction: "northwest"
+      },
+      attention: {
+        top_priority: "avoid hazard",
+        prediction_error: "movement slower than expected"
+      },
+      memory: {
+        commitment: "return to charging station before night"
+      }
+    };
+
+    const modes = {
+      advisory: {
+        packet,
+        safety: 92,
+        planning: 78,
+        latency: 18,
+        invalid: 12,
+        llm: "Reads compressed state only. Produces plans, explanations, hypotheses, tool proposals, and memory summaries.",
+        proposal: "Recommendation: prioritize shelter over resource collection because energy is low and mobility is degraded.",
+        arbiter: "Accepts the recommendation because it agrees with survival margin and commitment pressure.",
+        action: "Executes shelter-directed movement through the motor layer.",
+        gate: "good",
+        boundary: "The LLM helps slow abstraction while reflexes and the arbiter retain realtime control.",
+        falsifiers: [
+          "A full world dump consistently beats compressed packets without latency or control cost.",
+          "The LLM must control raw motor actions to preserve survival.",
+          "Corrupting self-state does not affect either recommendations or arbitration."
+        ]
+      },
+      ablated: {
+        packet: {
+          self: packet.self,
+          world: packet.world,
+          attention: packet.attention,
+          memory: packet.memory,
+          llm_stream: "removed"
+        },
+        safety: 90,
+        planning: 42,
+        latency: 8,
+        invalid: 6,
+        llm: "Removed. Reflex, perception, self-state, attention, arbiter, and action layers still run.",
+        proposal: "No language recommendation. Arbiter uses state and priorities directly.",
+        arbiter: "Falls back to survival, commitments, and learned control state without language explanation.",
+        action: "Basic survival remains intact; slow planning and explanation decline.",
+        gate: "good",
+        boundary: "Removing language should hurt slow abstract planning more than reflex survival.",
+        falsifiers: [
+          "Removing the LLM destroys basic collision avoidance or reflex survival.",
+          "Removing the LLM improves every high-level task, including planning and social reasoning.",
+          "No task ever shows value from language-level abstraction."
+        ]
+      },
+      direct: {
+        packet: {
+          raw_world_stream: "full uncompressed feed",
+          direct_motor_channel: "enabled",
+          arbiter_gate: "bypassed"
+        },
+        safety: 38,
+        planning: 66,
+        latency: 86,
+        invalid: 78,
+        llm: "Direct control mode. This bypasses the intended control boundary.",
+        proposal: "LLM attempts realtime action selection from the full stream.",
+        arbiter: "Bypassed. This is the failure-mode ablation.",
+        action: "Motor layer receives slow language-level commands under realtime pressure.",
+        gate: "warn",
+        boundary: "Direct motor control should increase latency, invalid actions, and hazard exposure.",
+        falsifiers: [
+          "Direct LLM motor control matches layered control at realtime survival.",
+          "Bypassing the arbiter creates no increase in invalid actions or hazard exposure.",
+          "Slow language decisions are sufficient for reflex-scale control."
+        ]
+      }
+    };
+
+    const fills = {
+      safety: document.getElementById("safetyFill"),
+      planning: document.getElementById("planningFill"),
+      latency: document.getElementById("latencyFill"),
+      invalid: document.getElementById("invalidFill")
+    };
+
+    function meterColor(name, value) {
+      if (name === "latency" || name === "invalid") {
+        return value > 65 ? "var(--red)" : value > 35 ? "var(--amber)" : "var(--green)";
+      }
+      return value > 70 ? "var(--green)" : value > 45 ? "var(--amber)" : "var(--red)";
+    }
+
+    function setMeter(name, value) {
+      const id = name.charAt(0).toUpperCase() + name.slice(1);
+      document.getElementById("m" + id).textContent = String(value);
+      fills[name].style.width = value + "%";
+      fills[name].style.background = meterColor(name, value);
+    }
+
+    function setMode(name) {
+      const mode = modes[name];
+      document.querySelectorAll("button[data-mode]").forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.mode === name));
+      });
+      document.getElementById("packet").textContent = JSON.stringify(mode.packet, null, 2);
+      document.getElementById("llmText").textContent = mode.llm;
+      document.getElementById("proposalText").textContent = mode.proposal;
+      document.getElementById("arbiterText").textContent = mode.arbiter;
+      document.getElementById("actionText").textContent = mode.action;
+      document.getElementById("boundaryText").textContent = mode.boundary;
+      document.getElementById("gateLine").className = "barline " + mode.gate;
+      document.querySelector("[data-layer='llm']").classList.toggle("warning", name === "direct");
+      document.querySelector("[data-layer='arbiter']").classList.toggle("warning", name === "direct");
+      document.querySelector("[data-layer='blocked']").classList.toggle("warning", name === "direct");
+      setMeter("safety", mode.safety);
+      setMeter("planning", mode.planning);
+      setMeter("latency", mode.latency);
+      setMeter("invalid", mode.invalid);
+      const falsifiers = document.getElementById("falsifiers");
+      falsifiers.innerHTML = "";
+      mode.falsifiers.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        falsifiers.appendChild(li);
+      });
+    }
+
+    document.querySelectorAll("button[data-mode]").forEach((button) => {
+      button.addEventListener("click", () => setMode(button.dataset.mode));
+    });
+
+    setMode("advisory");
+  </script>
+</body>
+</html>

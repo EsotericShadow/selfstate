@@ -71,6 +71,17 @@ These gates are not another positive result. They are the current stopping rule 
 | Real social pressure | Open. Stage 6 is only a simple competitor precursor. | Other agents have memory, resources, reputation, communication, cooperation, deception, or conflict that make identity continuity control-relevant. |
 | Targeted ablation | Partial. Existing ablations cover self-state, learned observer self-subspace, and weak learned-controller edits. | Separate removals of self-state, learned self-subspace, attention mixing, continuity memory, LLM reasoning stream, and tool-building access produce specific pressure-dependent failures. |
 
+## Modular LLM Architecture Boundary
+
+This boundary is not evidence that selfhood exists. It defines how future language-enabled agents should be tested without confusing language with selfhood.
+
+| Claim | Expected evidence | Falsifier |
+|---|---|---|
+| The LLM is not the self | Self-state corruption harms control and recommendations even when the LLM remains present. | A language module with no persistent self-state matches control, recovery, and commitment behavior under embodied pressure. |
+| The LLM is not the organism | Removing the LLM hurts slow planning and explanation more than reflex survival. | Removing the LLM destroys basic hazard avoidance or motor stability. |
+| The arbiter owns action authority | Advisory LLM improves slow decisions only when accepted by the arbiter. | Direct LLM motor control matches layered realtime survival with no latency or invalid-action cost. |
+| Compressed packets are sufficient for language reasoning | Packet-fed LLMs match full-world LLMs on abstract recommendation quality when the state layers are healthy. | Full-world access consistently beats packet access without control costs, implying the packet omits essential state. |
+
 ## Candidate Hypotheses
 
 | Hypothesis | Current status | Evidence | Live falsifier |

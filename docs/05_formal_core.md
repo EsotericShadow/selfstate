@@ -159,6 +159,8 @@ Torch actor-critic learning tests a stronger neural sampled-return learner. If i
 
 SSRM-3D tests whether the same formal pressure survives embodiment. The language module is not part of the fast control loop; it receives compressed state packets and only recommends. The self-equivalent variable remains the persistent control state that links hidden viability, capability, prediction error, commitments, attention, and arbitration to future action.
 
+The modular LLM architecture turns that boundary into an ablation claim. Removing the LLM should damage slow abstraction more than reflex survival; bypassing the arbiter with direct language-to-motor control should damage realtime control; corrupting the self packet should produce specific recommendation and arbitration errors. If those predictions fail, the separation between language reasoning and self-state control must be revised.
+
 SSRM-3D recurrent observation tests whether that variable can be recovered from traces rather than read from the hand-built workspace. A recurrent observer supports the formal claim only if its hidden state decodes agent variables, improves over a frame-only observer under pressure, and changes future-viability prediction when edited along the learned self-state direction.
 
 SSRM-3D learned control tests the same pressure inside policy state. A learned controller supports the formal claim only if recurrence is not useful in the low-pressure stage, but becomes useful for control as hidden agent-state pressure accumulates, and the learned recurrent policy state contains decodable agent variables without self-label training. If action edits along that state remain weak, the result supports representation-for-control but not yet robust causal editability.

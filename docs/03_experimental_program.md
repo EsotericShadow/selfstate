@@ -1309,6 +1309,22 @@ Current status:
 
 The proposed attention-buffer capacity sweep belongs after those gates start to exist, or as a targeted gate-4 study of attention mixing. It should be treated as an internal bandwidth hypothesis, not as evidence for consciousness or a special 12-dimensional world.
 
+## Modular LLM Architecture Boundary
+
+Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:
+
+- [modular LLM architecture report](64_modular_llm_architecture_report.md)
+- [modular LLM architecture visualization](../visualizations/modular_llm_architecture.html)
+
+This is not a new positive experiment. It defines the expected ablation pattern:
+
+- removing the LLM should hurt slow abstract planning, social explanation, tool-use proposals, and memory summarization more than reflex survival;
+- direct LLM motor control should increase invalid actions, latency, hazard exposure, and recovery failures;
+- compressed state packets should be tested against full-world language access;
+- corrupting self-state should predictably corrupt language recommendations and arbiter decisions under embodied pressure.
+
+This belongs inside gate 4 once tool-making and richer social pressure exist.
+
 ## Sixteenth Minimal Experiment
 
 Run a learned bottleneck discovery test.

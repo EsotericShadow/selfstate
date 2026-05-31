@@ -179,6 +179,8 @@ The SSRM-3D recurrent-observer precursor then tests whether that workspace can b
 
 The SSRM-3D learned-controller precursor then moves the test into policy state. Recurrent controllers trained without self labels do not improve the low-pressure spatial task, but they strongly outperform frame-only controllers in stages 1-6 and carry decodable self-state. Direct self-edit action effects remain weak.
 
+The modular LLM architecture boundary makes the language layer explicit. The LLM is not treated as the self or the organism; it is a slow reasoning organ that receives compressed state packets and proposes plans, explanations, hypotheses, memory summaries, or tool-use ideas. Reflex, self-state, attention, arbiter, and action layers retain control authority. This turns "LLM as brain" into a falsifiable ablation target instead of a hidden assumption.
+
 The learned bottleneck discovery experiment adds that a shared latent can be selected from unlabeled outcome data. It is selected for both agent-state reuse and external-world reuse, which means compression alone discovers reusable hidden structure, not selfhood.
 
 The sequence latent transfer experiment adds held-out transfer: calibration outcomes support later action only when they reveal a persistent sequence state. The same transfer works for reusable world-state, so boundary evidence remains necessary.
@@ -537,6 +539,7 @@ The attractor claim becomes stronger if:
 - SSRM-3D recurrent observers test whether embodied self-state can be recovered from traces without reading the hand-built workspace;
 - SSRM-3D learned controllers test whether policy states trained without self labels recover self-state under embodied control pressure;
 - SSRM-3D done-enough gates require learned control, tool-making or externalized cognition, real social pressure, and targeted ablation before the 3D track counts as done enough;
+- modular LLM architecture separates persistent self-state control from slow language reasoning and defines direct-control, no-LLM, full-world, and corrupted-packet ablations;
 - learned bottlenecks emerge without self labels and are correctly separated into agent-state, world-state, local-hidden, and no-hidden cases by causal tests.
 - sequence latents inferred from early outcomes transfer to held-out contexts and are separated into agent-state versus world-state by causal tests.
 - heterogeneous learner families converge on the same latent causal signature while still separating agent-bounded latents from external shared latents.
@@ -556,7 +559,7 @@ The program has a coherent falsifiable theory and fifty-three toy experiment fam
 
 The newest evidence adds SSRM-3D learned control: recurrent controllers trained without self labels recover decodable self-state and improve control under embodied pressure. It supports a policy-state pressure-gradient reading, but direct self-edit action effects remain weak.
 
-The 3D track now has an explicit done-enough gate. Gate 1 has a useful learned-control precursor, gates 2 and 3 remain open because there is no discovered tool-making or real social pressure yet, and gate 4 is only partial because attention mixing, continuity memory, LLM stream, and tool-building access have not been independently ablated in the learned-control setting. The next target is tool-making or externalized cognition in SSRM-3D, followed by online-return or model-based controller training plus stronger causal policy-state interventions.
+The 3D track now has an explicit done-enough gate. Gate 1 has a useful learned-control precursor, gates 2 and 3 remain open because there is no discovered tool-making or real social pressure yet, and gate 4 is only partial because attention mixing, continuity memory, LLM stream, and tool-building access have not been independently ablated in the learned-control setting. The modular LLM architecture report defines the LLM-stream part of that future ablation. The next target is tool-making or externalized cognition in SSRM-3D, followed by online-return or model-based controller training plus stronger causal policy-state interventions.
 
 The next step is to replace linear learners and hand-coded policies with richer independent learned architectures:
 

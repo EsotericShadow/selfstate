@@ -117,7 +117,7 @@ Current status:
 
 Partially passed but incomplete.
 
-Existing evidence includes self-state ablation in SSRM-3D, learned observer self-subspace ablation, and weak learned-controller self-edit probes. The ablation suite is not complete because attention mixing, continuity memory, LLM stream, and tool-building access are not yet independently removed in the embodied learned-control setting.
+Existing evidence includes self-state ablation in SSRM-3D, learned observer self-subspace ablation, and weak learned-controller self-edit probes. The ablation suite is not complete because attention mixing, continuity memory, LLM stream, and tool-building access are not yet independently removed in the embodied learned-control setting. The modular LLM architecture report defines the expected no-LLM, direct-motor LLM, full-world LLM, and corrupted-packet ablation patterns.
 
 Failure interpretation:
 

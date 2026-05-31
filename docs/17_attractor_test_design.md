@@ -256,6 +256,7 @@ The current repo contains small precursors:
 - [SSRM-3D recurrent observer report](61_ssrm_3d_recurrent_observer_report.md)
 - [SSRM-3D learned controller report](62_ssrm_3d_learned_controller_report.md)
 - [SSRM-3D done-enough gates](63_ssrm_3d_done_enough_gates.md)
+- [modular LLM architecture report](64_modular_llm_architecture_report.md)
 - [learned bottleneck discovery report](25_learned_bottleneck_discovery_report.md)
 - [sequence latent transfer report](26_sequence_latent_transfer_report.md)
 - [heterogeneous attractor precursor report](27_heterogeneous_attractor_precursor_report.md)

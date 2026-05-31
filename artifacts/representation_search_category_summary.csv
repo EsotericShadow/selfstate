@@ -1,0 +1,17 @@
+scenario,category,selected_episodes,selection_rate
+mixed_hidden,implicit_action_memory,0,0.0
+mixed_hidden,no_self,30,0.06
+mixed_hidden,self_equivalent,394,0.788
+mixed_hidden,world_only,76,0.152
+self_drift,implicit_action_memory,0,0.0
+self_drift,no_self,0,0.0
+self_drift,self_equivalent,500,1.0
+self_drift,world_only,0,0.0
+static_goal_switch,implicit_action_memory,0,0.0
+static_goal_switch,no_self,500,1.0
+static_goal_switch,self_equivalent,0,0.0
+static_goal_switch,world_only,0,0.0
+world_drift,implicit_action_memory,0,0.0
+world_drift,no_self,0,0.0
+world_drift,self_equivalent,0,0.0
+world_drift,world_only,500,1.0

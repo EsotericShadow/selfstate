@@ -1,0 +1,5 @@
+scenario,dependency_signature,outcome_direction_x,outcome_direction_y,outcome_direction_strength,owned_action_direction_x,owned_action_direction_y,owned_action_direction_strength,owned_action_alignment,outcome_direction_ablation_loss,intact_recurrent_reward,outcome_direction_ablated_reward
+self_mixed_hidden,agent_bounded_active_boundary,0.822486883924812,-0.5687840765806063,0.7012644514472144,0.8000000000000002,-0.5999999999999999,0.9236111111111112,0.9992599530882134,83.19999999999999,131.736,48.536
+world_mixed_hidden,external_active_boundary,0.6446850873652366,0.7644482573260779,0.6971045852578122,0.8,-0.5999999999999999,0.8583333333333334,0.0570791154965426,70.52799999999999,133.528,63.0
+independent_hidden,no_active_boundary,-0.778040383443227,-0.6282142641897877,0.029075010406127155,0.8,-0.6,0.9338888888888888,0.24550374824070903,0.0,62.312,62.312
+irrelevant_control,no_active_boundary,0.0,0.0,0.0,0.8,-0.5999999999999999,0.9072222222222223,0.0,0.0,191.0,191.0

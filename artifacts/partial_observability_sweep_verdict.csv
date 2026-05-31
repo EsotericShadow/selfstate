@@ -1,0 +1,5 @@
+scenario,accuracy_range,best_at_max_accuracy,shared_self_minus_safe_at_min,shared_self_minus_safe_at_max,shared_world_minus_safe_at_max,shared_self_minus_local_at_max,local_minus_shared_self_at_max,greedy_minus_shared_self_at_max,supports_observability_prediction
+independent_hidden,0.50-0.95,step_local_probe,-1.0,-7.7520000000000024,-7.560000000000002,-54.583999999999996,54.583999999999996,-4.167999999999999,True
+irrelevant_control,0.50-0.95,greedy_no_state,-1.0,48.92,51.8,-41.08,41.08,47.08,True
+self_hidden,0.50-0.95,shared_self_belief,-1.0,48.727999999999994,-5.0319999999999965,4.231999999999999,-4.231999999999999,-66.488,True
+world_hidden,0.50-0.95,shared_world_belief,-1.0,-1.0959999999999965,52.376000000000005,-49.24,49.24,-7.544000000000004,True

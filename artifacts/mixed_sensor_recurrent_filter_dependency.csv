@@ -1,0 +1,5 @@
+scenario,dependency_signature,intact_recurrent_reward,ablate_source_a_reward,ablate_source_b_reward,source_a_ablation_loss,source_b_ablation_loss,source_a_intervention_effect,source_b_intervention_effect
+self_mixed_hidden,agent_bounded_mixed_recurrent,131.736,43.8,131.736,87.93599999999999,0.0,0.46,0.0
+world_mixed_hidden,external_mixed_recurrent,133.528,133.784,63.0,-0.2560000000000002,70.52799999999999,0.0,0.444
+independent_hidden,no_shared_mixed_boundary,62.312,63.0,63.0,-0.6880000000000024,-0.6880000000000024,0.0,0.0
+irrelevant_control,no_shared_mixed_boundary,191.0,191.0,191.0,0.0,0.0,0.0,0.0

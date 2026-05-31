@@ -1,0 +1,17 @@
+environment,surface,scenario,expected_signature,selected_structure,abstraction_signature,boundary_signature,learned_reward,shared_reward,local_probe_reward,marginal_reward,supports_environment
+body_actuator,action effects depend on hidden body capability,agent_shared,agent_bounded_candidate,shared_latent,agent_bounded_candidate,agent_bounded_cross_env,41248.0,41248.0,39748.0,21000.0,True
+body_actuator,action effects depend on hidden body capability,world_shared,external_candidate,shared_latent,external_candidate,external_cross_env,40564.0,40564.0,39064.0,21000.0,True
+body_actuator,action effects depend on hidden body capability,independent_hidden,no_shared_agent_boundary,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,40379.0,17464.0,40379.0,21000.0,True
+body_actuator,action effects depend on hidden body capability,irrelevant_control,no_hidden_needed,no_hidden_needed,no_hidden_needed,no_shared_agent_boundary,59000.0,58500.0,57000.0,59000.0,True
+homeostatic_viability,hidden integrity controls future option value,agent_shared,agent_bounded_candidate,shared_latent,agent_bounded_candidate,agent_bounded_cross_env,41936.0,41936.0,40436.0,22000.0,True
+homeostatic_viability,hidden integrity controls future option value,world_shared,external_candidate,shared_latent,external_candidate,external_cross_env,41312.0,41312.0,39812.0,22000.0,True
+homeostatic_viability,hidden integrity controls future option value,independent_hidden,no_shared_agent_boundary,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,42178.0,17520.0,42178.0,22000.0,True
+homeostatic_viability,hidden integrity controls future option value,irrelevant_control,no_hidden_needed,no_hidden_needed,no_hidden_needed,no_shared_agent_boundary,61000.0,60500.0,59000.0,61000.0,True
+sensor_frame,hidden body frame controls observation-action mapping,agent_shared,agent_bounded_candidate,shared_latent,agent_bounded_candidate,agent_bounded_cross_env,44340.0,44340.0,42840.0,23000.0,True
+sensor_frame,hidden body frame controls observation-action mapping,world_shared,external_candidate,shared_latent,external_candidate,external_cross_env,44340.0,44340.0,42840.0,23000.0,True
+sensor_frame,hidden body frame controls observation-action mapping,independent_hidden,no_shared_agent_boundary,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,42359.0,18466.0,42359.0,23000.0,True
+sensor_frame,hidden body frame controls observation-action mapping,irrelevant_control,no_hidden_needed,no_hidden_needed,no_hidden_needed,no_shared_agent_boundary,62000.0,61500.0,60000.0,62000.0,True
+continuity_commitment,hidden ownership state controls coherent recovery,agent_shared,agent_bounded_candidate,shared_latent,agent_bounded_candidate,agent_bounded_cross_env,42750.0,42750.0,41250.0,21500.0,True
+continuity_commitment,hidden ownership state controls coherent recovery,world_shared,external_candidate,shared_latent,external_candidate,external_cross_env,41925.0,41925.0,40425.0,21500.0,True
+continuity_commitment,hidden ownership state controls coherent recovery,independent_hidden,no_shared_agent_boundary,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,40257.0,17016.0,40257.0,21500.0,True
+continuity_commitment,hidden ownership state controls coherent recovery,irrelevant_control,no_hidden_needed,no_hidden_needed,no_hidden_needed,no_shared_agent_boundary,59000.0,58500.0,57000.0,59000.0,True

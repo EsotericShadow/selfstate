@@ -1,0 +1,5 @@
+scenario,selected_policy,selected_architecture,recurrent_training_reward,local_training_reward,greedy_training_reward,safe_training_reward,selected_weights
+self_noisy_hidden,recurrent_controller,sum_rnn,132.2,126.56,48.4,64.0,"0.0000,1.0000,0.0000,1.0000,0.0000"
+world_noisy_hidden,recurrent_controller,sum_rnn,132.92,127.2,50.0,64.0,"0.0000,0.0000,1.0000,1.0000,0.0000"
+independent_hidden,task_local_probe,sum_rnn,63.01,126.72,48.8,64.0,"0.0070,1.8405,1.8513,0.0514,-1.5272"
+irrelevant_control,greedy_no_state,sum_rnn,191.0,184.0,192.0,64.0,"0.0000,0.0000,0.0000,0.0000,6.0000"

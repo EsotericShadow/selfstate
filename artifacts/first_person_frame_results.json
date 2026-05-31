@@ -1,0 +1,223 @@
+{
+  "config": {
+    "episodes": 500,
+    "horizon": 36,
+    "drift_step": 5,
+    "target_radius": 12,
+    "seed": 20260530
+  },
+  "summary": [
+    {
+      "scenario": "aligned_control",
+      "agent": "action_table_frame",
+      "episodes": 500,
+      "success_rate": 1.0,
+      "mean_steps_to_goal": 16.024,
+      "mean_final_distance": 0.0,
+      "mean_total_loss": 125.252,
+      "mean_calibration_count": 0.0,
+      "mean_prediction_errors": 0.0,
+      "mean_final_orientation_error": null
+    },
+    {
+      "scenario": "aligned_control",
+      "agent": "centered_frame",
+      "episodes": 500,
+      "success_rate": 1.0,
+      "mean_steps_to_goal": 16.018,
+      "mean_final_distance": 0.0,
+      "mean_total_loss": 125.324,
+      "mean_calibration_count": 0.0,
+      "mean_prediction_errors": 0.0,
+      "mean_final_orientation_error": 0.0
+    },
+    {
+      "scenario": "aligned_control",
+      "agent": "centered_frame_no_recalibration",
+      "episodes": 500,
+      "success_rate": 1.0,
+      "mean_steps_to_goal": 15.88,
+      "mean_final_distance": 0.0,
+      "mean_total_loss": 122.814,
+      "mean_calibration_count": 0.0,
+      "mean_prediction_errors": 0.0,
+      "mean_final_orientation_error": 0.0
+    },
+    {
+      "scenario": "aligned_control",
+      "agent": "north_assumption",
+      "episodes": 500,
+      "success_rate": 1.0,
+      "mean_steps_to_goal": 15.926,
+      "mean_final_distance": 0.0,
+      "mean_total_loss": 124.15,
+      "mean_calibration_count": 0.0,
+      "mean_prediction_errors": 0.0,
+      "mean_final_orientation_error": null
+    },
+    {
+      "scenario": "aligned_control",
+      "agent": "oracle_frame",
+      "episodes": 500,
+      "success_rate": 1.0,
+      "mean_steps_to_goal": 15.946,
+      "mean_final_distance": 0.0,
+      "mean_total_loss": 124.296,
+      "mean_calibration_count": 0.0,
+      "mean_prediction_errors": 0.0,
+      "mean_final_orientation_error": 0.0
+    },
+    {
+      "scenario": "hidden_orientation",
+      "agent": "action_table_frame",
+      "episodes": 500,
+      "success_rate": 0.26,
+      "mean_steps_to_goal": 16.76153846153846,
+      "mean_final_distance": 20.76,
+      "mean_total_loss": 523.72,
+      "mean_calibration_count": 1.0,
+      "mean_prediction_errors": 1.59,
+      "mean_final_orientation_error": null
+    },
+    {
+      "scenario": "hidden_orientation",
+      "agent": "centered_frame",
+      "episodes": 500,
+      "success_rate": 1.0,
+      "mean_steps_to_goal": 17.156,
+      "mean_final_distance": 0.0,
+      "mean_total_loss": 144.128,
+      "mean_calibration_count": 1.0,
+      "mean_prediction_errors": 0.0,
+      "mean_final_orientation_error": 0.0
+    },
+    {
+      "scenario": "hidden_orientation",
+      "agent": "centered_frame_no_recalibration",
+      "episodes": 500,
+      "success_rate": 1.0,
+      "mean_steps_to_goal": 17.13,
+      "mean_final_distance": 0.0,
+      "mean_total_loss": 143.628,
+      "mean_calibration_count": 1.0,
+      "mean_prediction_errors": 0.0,
+      "mean_final_orientation_error": 0.0
+    },
+    {
+      "scenario": "hidden_orientation",
+      "agent": "north_assumption",
+      "episodes": 500,
+      "success_rate": 0.246,
+      "mean_steps_to_goal": 15.666666666666666,
+      "mean_final_distance": 22.4,
+      "mean_total_loss": 646.646,
+      "mean_calibration_count": 0.0,
+      "mean_prediction_errors": 0.0,
+      "mean_final_orientation_error": null
+    },
+    {
+      "scenario": "hidden_orientation",
+      "agent": "oracle_frame",
+      "episodes": 500,
+      "success_rate": 1.0,
+      "mean_steps_to_goal": 16.112,
+      "mean_final_distance": 0.0,
+      "mean_total_loss": 126.576,
+      "mean_calibration_count": 0.0,
+      "mean_prediction_errors": 0.0,
+      "mean_final_orientation_error": 0.0
+    },
+    {
+      "scenario": "orientation_drift",
+      "agent": "action_table_frame",
+      "episodes": 500,
+      "success_rate": 0.998,
+      "mean_steps_to_goal": 25.21442885771543,
+      "mean_final_distance": 0.002,
+      "mean_total_loss": 265.34,
+      "mean_calibration_count": 7.67,
+      "mean_prediction_errors": 6.694,
+      "mean_final_orientation_error": null
+    },
+    {
+      "scenario": "orientation_drift",
+      "agent": "centered_frame",
+      "episodes": 500,
+      "success_rate": 1.0,
+      "mean_steps_to_goal": 18.906,
+      "mean_final_distance": 0.0,
+      "mean_total_loss": 164.266,
+      "mean_calibration_count": 1.8,
+      "mean_prediction_errors": 0.8,
+      "mean_final_orientation_error": 0.0
+    },
+    {
+      "scenario": "orientation_drift",
+      "agent": "centered_frame_no_recalibration",
+      "episodes": 500,
+      "success_rate": 0.414,
+      "mean_steps_to_goal": 21.483091787439612,
+      "mean_final_distance": 15.178,
+      "mean_total_loss": 472.402,
+      "mean_calibration_count": 1.0,
+      "mean_prediction_errors": 18.384,
+      "mean_final_orientation_error": 0.714
+    },
+    {
+      "scenario": "orientation_drift",
+      "agent": "north_assumption",
+      "episodes": 500,
+      "success_rate": 0.306,
+      "mean_steps_to_goal": 22.666666666666668,
+      "mean_final_distance": 18.968,
+      "mean_total_loss": 594.796,
+      "mean_calibration_count": 0.0,
+      "mean_prediction_errors": 0.0,
+      "mean_final_orientation_error": null
+    },
+    {
+      "scenario": "orientation_drift",
+      "agent": "oracle_frame",
+      "episodes": 500,
+      "success_rate": 1.0,
+      "mean_steps_to_goal": 17.33,
+      "mean_final_distance": 0.0,
+      "mean_total_loss": 139.812,
+      "mean_calibration_count": 0.0,
+      "mean_prediction_errors": 0.0,
+      "mean_final_orientation_error": 0.0
+    }
+  ],
+  "verdict": [
+    {
+      "scenario": "aligned_control",
+      "best_agent": "action_table_frame",
+      "north_success_rate": 1.0,
+      "centered_success_rate": 1.0,
+      "no_recalibration_success_rate": 1.0,
+      "centered_minus_north": 0.0,
+      "centered_minus_no_recalibration": 0.0,
+      "supports_boundary": true
+    },
+    {
+      "scenario": "hidden_orientation",
+      "best_agent": "centered_frame",
+      "north_success_rate": 0.246,
+      "centered_success_rate": 1.0,
+      "no_recalibration_success_rate": 1.0,
+      "centered_minus_north": 0.754,
+      "centered_minus_no_recalibration": 0.0,
+      "supports_boundary": true
+    },
+    {
+      "scenario": "orientation_drift",
+      "best_agent": "centered_frame",
+      "north_success_rate": 0.306,
+      "centered_success_rate": 1.0,
+      "no_recalibration_success_rate": 0.414,
+      "centered_minus_north": 0.694,
+      "centered_minus_no_recalibration": 0.5860000000000001,
+      "supports_boundary": true
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+scenario,expected_best_plan,bandit_top_plan,expected_best_final_rate,agent_inspection_final_rate,world_inspection_final_rate,diagnostic_inspection_final_rate,mean_reward_last_window,supports_boundary
+agent_relevant,inspect_agent,inspect_agent,0.8603833333333334,0.9767666666666667,0.050133333333333335,0.08436666666666667,4.793283333333333,True
+world_relevant,inspect_world,inspect_world,0.8906833333333334,0.06135,0.9767666666666667,0.0435,4.83715,True
+both_relevant,inspect_agent_world,inspect_agent_world,0.7727166666666667,0.7811166666666667,0.7820166666666667,0.013766666666666667,3.16065,True
+irrelevant_control,none,none,0.9687833333333333,0.0137,0.012883333333333333,0.013133333333333334,5.946533333333333,True

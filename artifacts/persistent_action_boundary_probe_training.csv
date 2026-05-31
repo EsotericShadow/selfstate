@@ -1,0 +1,6 @@
+scenario,selected_policy,selected_architecture,recurrent_training_reward,local_training_reward,greedy_training_reward,safe_training_reward,selected_weights
+self_persistent_boundary,recurrent_controller,sum_rnn,133.32,126.88,49.2,64.0,"-0.0803,-1.9698,1.6217,-0.9365,0.1768"
+detachable_tool_world,recurrent_controller,sum_rnn,130.84,124.0,42.0,64.0,"0.0845,1.6174,1.5261,0.9627,0.5445"
+passive_world_boundary,recurrent_controller,sum_rnn,129.96,124.0,42.0,64.0,"-0.0347,1.3430,1.9228,1.8974,0.7893"
+independent_hidden,task_local_probe,sum_rnn,63.28,126.72,48.8,64.0,"0.0846,0.3054,-0.4021,-0.3424,-1.3725"
+irrelevant_control,greedy_no_state,sum_rnn,191.0,184.0,192.0,64.0,"-0.1241,-1.0280,0.7829,0.1021,1.5738"

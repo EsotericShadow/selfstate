@@ -1,0 +1,5 @@
+scenario,top_models,top_action_component_count,top_bias_component_count,best_full_loss,best_full_success_rate,best_action_ablation_loss_delta,best_bias_ablation_loss_delta,expected_self_pressure,expected_world_pressure,supports_boundary
+mixed_hidden,least_squares_predictive_state;symmetric_probe_predictive_state;affine_sgd_predictive_state,3,3,25.055400000000006,1.0,394.07869999999997,10.119599999999991,True,True,True
+self_drift,least_squares_predictive_state;symmetric_probe_predictive_state;gain_sgd_action_effect,3,0,25.136,1.0,464.9994,0.0,True,False,True
+static_goal_switch,affine_sgd_predictive_state;bias_sgd_world;gain_sgd_action_effect,0,0,16.5,1.0,0.0,0.0,False,False,True
+world_drift,affine_sgd_predictive_state;bias_sgd_world;least_squares_predictive_state,0,3,18.596400000000006,1.0,0.0,15.986300000000004,False,True,True

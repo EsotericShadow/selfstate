@@ -1,0 +1,5 @@
+scenario,boundary_signature,channel_a_intervention_effect,channel_b_intervention_effect
+self_noisy_hidden,agent_bounded_filter,0.45875,0.0
+world_noisy_hidden,external_filter,0.0,0.41875
+independent_hidden,no_shared_boundary,0.0,0.0
+irrelevant_control,no_shared_boundary,0.0,0.0

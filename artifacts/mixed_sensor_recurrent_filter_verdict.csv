@@ -1,0 +1,5 @@
+scenario,selected_policy,selected_architecture,dependency_signature,recurrent_reward,local_probe_reward,greedy_reward,selector_reward,source_a_ablation_loss,source_b_ablation_loss,supports_mixed_sensor_prediction
+independent_hidden,task_local_probe,sum_rnn,no_shared_mixed_boundary,62.408,125.024,44.56,125.024,-0.6880000000000024,-0.6880000000000024,True
+irrelevant_control,greedy_no_state,sum_rnn,no_shared_mixed_boundary,191.0,184.0,192.0,192.0,0.0,0.0,True
+self_mixed_hidden,recurrent_controller,sum_rnn,agent_bounded_mixed_recurrent,133.528,127.168,49.92,133.528,87.93599999999999,0.0,True
+world_mixed_hidden,recurrent_controller,sum_rnn,external_mixed_recurrent,125.976,120.0,32.0,125.976,-0.2560000000000002,70.52799999999999,True

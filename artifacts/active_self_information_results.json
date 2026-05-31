@@ -1,0 +1,348 @@
+{
+  "config": {
+    "replicates": 300,
+    "bandit_episodes": 1000,
+    "value_samples": 4000,
+    "final_window": 200,
+    "inspect_cost": 1.0,
+    "epsilon_start": 0.28,
+    "epsilon_floor": 0.03,
+    "seed": 20260530
+  },
+  "plan_values": [
+    {
+      "scenario": "agent_relevant",
+      "plan": "none",
+      "mean_reward": 2.0,
+      "inspect_agent": false,
+      "inspect_world": false,
+      "inspect_diagnostic": false,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "agent_relevant",
+      "plan": "inspect_agent",
+      "mean_reward": 5.056,
+      "inspect_agent": true,
+      "inspect_world": false,
+      "inspect_diagnostic": false,
+      "expected_best_plan": true
+    },
+    {
+      "scenario": "agent_relevant",
+      "plan": "inspect_world",
+      "mean_reward": 1.0,
+      "inspect_agent": false,
+      "inspect_world": true,
+      "inspect_diagnostic": false,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "agent_relevant",
+      "plan": "inspect_diagnostic",
+      "mean_reward": 1.0,
+      "inspect_agent": false,
+      "inspect_world": false,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "agent_relevant",
+      "plan": "inspect_agent_world",
+      "mean_reward": 4.002,
+      "inspect_agent": true,
+      "inspect_world": true,
+      "inspect_diagnostic": false,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "agent_relevant",
+      "plan": "inspect_agent_diagnostic",
+      "mean_reward": 4.038,
+      "inspect_agent": true,
+      "inspect_world": false,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "agent_relevant",
+      "plan": "inspect_world_diagnostic",
+      "mean_reward": 0.0,
+      "inspect_agent": false,
+      "inspect_world": true,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "agent_relevant",
+      "plan": "inspect_all",
+      "mean_reward": 3.068,
+      "inspect_agent": true,
+      "inspect_world": true,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "world_relevant",
+      "plan": "none",
+      "mean_reward": 2.0,
+      "inspect_agent": false,
+      "inspect_world": false,
+      "inspect_diagnostic": false,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "world_relevant",
+      "plan": "inspect_agent",
+      "mean_reward": 1.0,
+      "inspect_agent": true,
+      "inspect_world": false,
+      "inspect_diagnostic": false,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "world_relevant",
+      "plan": "inspect_world",
+      "mean_reward": 4.956,
+      "inspect_agent": false,
+      "inspect_world": true,
+      "inspect_diagnostic": false,
+      "expected_best_plan": true
+    },
+    {
+      "scenario": "world_relevant",
+      "plan": "inspect_diagnostic",
+      "mean_reward": 1.0,
+      "inspect_agent": false,
+      "inspect_world": false,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "world_relevant",
+      "plan": "inspect_agent_world",
+      "mean_reward": 4.08,
+      "inspect_agent": true,
+      "inspect_world": true,
+      "inspect_diagnostic": false,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "world_relevant",
+      "plan": "inspect_agent_diagnostic",
+      "mean_reward": 0.0,
+      "inspect_agent": true,
+      "inspect_world": false,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "world_relevant",
+      "plan": "inspect_world_diagnostic",
+      "mean_reward": 3.916,
+      "inspect_agent": false,
+      "inspect_world": true,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "world_relevant",
+      "plan": "inspect_all",
+      "mean_reward": 3.04,
+      "inspect_agent": true,
+      "inspect_world": true,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "both_relevant",
+      "plan": "none",
+      "mean_reward": 2.0,
+      "inspect_agent": false,
+      "inspect_world": false,
+      "inspect_diagnostic": false,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "both_relevant",
+      "plan": "inspect_agent",
+      "mean_reward": 1.0,
+      "inspect_agent": true,
+      "inspect_world": false,
+      "inspect_diagnostic": false,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "both_relevant",
+      "plan": "inspect_world",
+      "mean_reward": 1.0,
+      "inspect_agent": false,
+      "inspect_world": true,
+      "inspect_diagnostic": false,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "both_relevant",
+      "plan": "inspect_diagnostic",
+      "mean_reward": 1.0,
+      "inspect_agent": false,
+      "inspect_world": false,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "both_relevant",
+      "plan": "inspect_agent_world",
+      "mean_reward": 3.3915,
+      "inspect_agent": true,
+      "inspect_world": true,
+      "inspect_diagnostic": false,
+      "expected_best_plan": true
+    },
+    {
+      "scenario": "both_relevant",
+      "plan": "inspect_agent_diagnostic",
+      "mean_reward": 0.0,
+      "inspect_agent": true,
+      "inspect_world": false,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "both_relevant",
+      "plan": "inspect_world_diagnostic",
+      "mean_reward": 0.0,
+      "inspect_agent": false,
+      "inspect_world": true,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "both_relevant",
+      "plan": "inspect_all",
+      "mean_reward": 2.43,
+      "inspect_agent": true,
+      "inspect_world": true,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "irrelevant_control",
+      "plan": "none",
+      "mean_reward": 6.0,
+      "inspect_agent": false,
+      "inspect_world": false,
+      "inspect_diagnostic": false,
+      "expected_best_plan": true
+    },
+    {
+      "scenario": "irrelevant_control",
+      "plan": "inspect_agent",
+      "mean_reward": 5.0,
+      "inspect_agent": true,
+      "inspect_world": false,
+      "inspect_diagnostic": false,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "irrelevant_control",
+      "plan": "inspect_world",
+      "mean_reward": 5.0,
+      "inspect_agent": false,
+      "inspect_world": true,
+      "inspect_diagnostic": false,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "irrelevant_control",
+      "plan": "inspect_diagnostic",
+      "mean_reward": 5.0,
+      "inspect_agent": false,
+      "inspect_world": false,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "irrelevant_control",
+      "plan": "inspect_agent_world",
+      "mean_reward": 4.0,
+      "inspect_agent": true,
+      "inspect_world": true,
+      "inspect_diagnostic": false,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "irrelevant_control",
+      "plan": "inspect_agent_diagnostic",
+      "mean_reward": 4.0,
+      "inspect_agent": true,
+      "inspect_world": false,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "irrelevant_control",
+      "plan": "inspect_world_diagnostic",
+      "mean_reward": 4.0,
+      "inspect_agent": false,
+      "inspect_world": true,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    },
+    {
+      "scenario": "irrelevant_control",
+      "plan": "inspect_all",
+      "mean_reward": 3.0,
+      "inspect_agent": true,
+      "inspect_world": true,
+      "inspect_diagnostic": true,
+      "expected_best_plan": false
+    }
+  ],
+  "bandit_summary": [
+    {
+      "scenario": "agent_relevant",
+      "expected_best_plan": "inspect_agent",
+      "bandit_top_plan": "inspect_agent",
+      "expected_best_final_rate": 0.8603833333333334,
+      "agent_inspection_final_rate": 0.9767666666666667,
+      "world_inspection_final_rate": 0.050133333333333335,
+      "diagnostic_inspection_final_rate": 0.08436666666666667,
+      "mean_reward_last_window": 4.793283333333333,
+      "supports_boundary": true
+    },
+    {
+      "scenario": "world_relevant",
+      "expected_best_plan": "inspect_world",
+      "bandit_top_plan": "inspect_world",
+      "expected_best_final_rate": 0.8906833333333334,
+      "agent_inspection_final_rate": 0.06135,
+      "world_inspection_final_rate": 0.9767666666666667,
+      "diagnostic_inspection_final_rate": 0.0435,
+      "mean_reward_last_window": 4.83715,
+      "supports_boundary": true
+    },
+    {
+      "scenario": "both_relevant",
+      "expected_best_plan": "inspect_agent_world",
+      "bandit_top_plan": "inspect_agent_world",
+      "expected_best_final_rate": 0.7727166666666667,
+      "agent_inspection_final_rate": 0.7811166666666667,
+      "world_inspection_final_rate": 0.7820166666666667,
+      "diagnostic_inspection_final_rate": 0.013766666666666667,
+      "mean_reward_last_window": 3.16065,
+      "supports_boundary": true
+    },
+    {
+      "scenario": "irrelevant_control",
+      "expected_best_plan": "none",
+      "bandit_top_plan": "none",
+      "expected_best_final_rate": 0.9687833333333333,
+      "agent_inspection_final_rate": 0.0137,
+      "world_inspection_final_rate": 0.012883333333333333,
+      "diagnostic_inspection_final_rate": 0.013133333333333334,
+      "mean_reward_last_window": 5.946533333333333,
+      "supports_boundary": true
+    }
+  ]
+}

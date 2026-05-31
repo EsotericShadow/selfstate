@@ -1,0 +1,5 @@
+scenario,expected_causal_signature,supporting_environments,environment_count,mean_intact_reward,mean_ablated_reward,mean_reward_loss,environment_signatures,supports_latent_causal_ablation
+agent_shared,agent_latent_causal,4,4,42568.5,21875.0,20693.5,body_actuator:3/3:agent_latent_causal;homeostatic_viability:3/3:agent_latent_causal;sensor_frame:3/3:agent_latent_causal;continuity_commitment:3/3:agent_latent_causal,True
+world_shared,external_latent_causal,4,4,42035.25,21875.0,20160.25,body_actuator:3/3:external_latent_causal;homeostatic_viability:3/3:external_latent_causal;sensor_frame:3/3:external_latent_causal;continuity_commitment:3/3:external_latent_causal,True
+independent_hidden,no_shared_latent_causal,4,4,21875.0,21875.0,0.0,body_actuator:3/3:no_shared_latent_causal;homeostatic_viability:3/3:no_shared_latent_causal;sensor_frame:3/3:no_shared_latent_causal;continuity_commitment:3/3:no_shared_latent_causal,True
+irrelevant_control,no_hidden_needed,4,4,60250.0,60250.0,0.0,body_actuator:3/3:no_hidden_needed;homeostatic_viability:3/3:no_hidden_needed;sensor_frame:3/3:no_hidden_needed;continuity_commitment:3/3:no_hidden_needed,True

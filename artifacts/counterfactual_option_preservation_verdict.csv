@@ -1,0 +1,4 @@
+scenario,best_agent,best_mean_total_reward,future_option_reward,greedy_reward,world_model_reward,future_minus_greedy,future_lost_option_steps,greedy_lost_option_steps,supports_boundary
+no_option_pressure,future_option_self_state,320.0,320.0,320.0,320.0,0.0,0.0,0.0,True
+option_pressure,oracle_future_option,464.8543999999999,400.03239999999994,215.0,215.0,185.03239999999994,0.0,7.0,True
+world_gate_pressure,oracle_future_option,483.17,320.0,428.36,478.43,-108.36000000000001,0.0,0.0,True

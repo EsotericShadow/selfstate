@@ -1,0 +1,4 @@
+scenario,best_agent,north_success_rate,centered_success_rate,no_recalibration_success_rate,centered_minus_north,centered_minus_no_recalibration,supports_boundary
+aligned_control,action_table_frame,1.0,1.0,1.0,0.0,0.0,True
+hidden_orientation,centered_frame,0.246,1.0,1.0,0.754,0.0,True
+orientation_drift,centered_frame,0.306,1.0,0.414,0.694,0.5860000000000001,True

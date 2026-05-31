@@ -1,0 +1,5 @@
+scenario,selected_policy,selected_architecture,dependency_signature,recurrent_reward,local_probe_reward,greedy_reward,selector_reward,learned_direction_ablation_loss,learned_direction_strength,supports_learned_subspace_prediction
+independent_hidden,task_local_probe,sum_rnn,no_learned_subspace_boundary,62.408,125.024,44.56,125.024,0.0,0.029075010406127155,True
+irrelevant_control,greedy_no_state,sum_rnn,no_learned_subspace_boundary,191.0,184.0,192.0,192.0,0.0,0.0,True
+self_mixed_hidden,recurrent_controller,sum_rnn,agent_bounded_learned_subspace,133.528,127.168,49.92,133.528,83.19999999999999,0.7012644514472144,True
+world_mixed_hidden,recurrent_controller,sum_rnn,external_learned_subspace,125.976,120.0,32.0,125.976,70.52799999999999,0.6971045852578122,True

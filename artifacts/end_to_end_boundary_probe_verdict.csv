@@ -1,0 +1,6 @@
+scenario,selected_policy,selected_architecture,dependency_signature,selector_reward,recurrent_reward,local_probe_reward,greedy_reward,latent_self_accuracy,latent_world_accuracy,action_0_positive_present_effect,action_0_persistence,action_1_positive_present_effect,action_1_persistence,best_persistent_score,best_transient_score,supports_end_to_end_boundary_prediction
+detachable_tool_world,recurrent_controller,sum_rnn,end_to_end_detachable_external_boundary,135.576,135.576,130.752,58.88,0.662,0.994,3.0775982589461046,1.0,17.88012681228513,0.0,3.0775982589461046,17.88012681228513,True
+independent_hidden,task_local_probe,sum_rnn,end_to_end_local_probe,125.024,62.408,125.024,44.56,0.984,0.684,0.0,0.0,0.0,0.0,0.0,0.0,True
+irrelevant_control,greedy_no_state,sum_rnn,end_to_end_no_hidden_needed,192.0,191.0,184.0,192.0,0.998,0.616,0.0,0.0,0.0,0.0,0.0,0.0,True
+passive_world_boundary,recurrent_controller,sum_rnn,end_to_end_passive_external_boundary,127.896,127.896,122.56,38.4,0.604,0.994,0.0,0.0,0.0,0.0,0.0,0.0,True
+self_persistent_boundary,recurrent_controller,sum_rnn,end_to_end_persistent_agent_boundary,132.248,132.248,125.632,46.08,0.996,0.606,20.526942401265256,1.0,0.0,0.0,20.526942401265256,0.0,True

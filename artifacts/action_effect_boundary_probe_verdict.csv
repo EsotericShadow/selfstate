@@ -1,0 +1,6 @@
+scenario,selected_policy,selected_architecture,dependency_signature,recurrent_reward,local_probe_reward,greedy_reward,selector_reward,outcome_direction_ablation_loss,body_action_alignment,tool_action_alignment,max_action_alignment,supports_action_effect_boundary_prediction
+controllable_world_hidden,recurrent_controller,sum_rnn,controllable_external_action_boundary,134.552,129.216,55.04,134.552,75.26400000000001,0.03039568934615461,0.9995379442868451,0.9995379442868451,True
+independent_hidden,task_local_probe,sum_rnn,no_action_effect_boundary,62.408,125.024,44.56,125.024,0.0,0.24550374824070903,0.0,0.24550374824070903,True
+irrelevant_control,greedy_no_state,sum_rnn,no_action_effect_boundary,191.0,184.0,192.0,192.0,0.0,0.0,0.0,0.0,True
+self_mixed_hidden,recurrent_controller,sum_rnn,agent_bounded_action_effect_boundary,133.528,127.168,49.92,133.528,83.19999999999999,0.9992599530882134,0.0,0.9992599530882134,True
+world_mixed_hidden,recurrent_controller,sum_rnn,passive_external_action_boundary,125.976,120.0,32.0,125.976,70.52799999999999,0.0570791154965426,0.0,0.0570791154965426,True

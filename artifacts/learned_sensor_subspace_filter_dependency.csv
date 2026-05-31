@@ -1,0 +1,5 @@
+scenario,dependency_signature,learned_direction_x,learned_direction_y,learned_direction_strength,learned_direction_ablation_loss,intact_recurrent_reward,learned_direction_ablated_reward,source_a_intervention_effect,source_b_intervention_effect
+self_mixed_hidden,agent_bounded_learned_subspace,0.822486883924812,-0.5687840765806063,0.7012644514472144,83.19999999999999,131.736,48.536,0.46,0.0
+world_mixed_hidden,external_learned_subspace,0.6446850873652366,0.7644482573260779,0.6971045852578122,70.52799999999999,133.528,63.0,0.0,0.444
+independent_hidden,no_learned_subspace_boundary,-0.778040383443227,-0.6282142641897877,0.029075010406127155,0.0,62.312,62.312,0.0,0.0
+irrelevant_control,no_learned_subspace_boundary,0.0,0.0,0.0,0.0,191.0,191.0,0.0,0.0

@@ -1,0 +1,97 @@
+environment,surface,scenario,agent,selected_structure,boundary_signature,abstraction_signature,total_reward,mean_reward,risky_count,safe_count,failed_risky_count,success_rate
+body_actuator,action effects depend on hidden body capability,agent_shared,marginal_no_memory,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,21000.0,42.0,0,2000,0,0.0
+body_actuator,action effects depend on hidden body capability,agent_shared,calibration_memory_no_transfer,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,20500.0,41.0,0,2000,0,0.0
+body_actuator,action effects depend on hidden body capability,agent_shared,shared_latent_filter,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,41248.0,82.496,1092,908,0,1.0
+body_actuator,action effects depend on hidden body capability,agent_shared,task_local_probe,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,39748.0,79.496,1092,908,0,1.0
+body_actuator,action effects depend on hidden body capability,agent_shared,learned_environment_selector,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,41248.0,82.496,1092,908,0,1.0
+body_actuator,action effects depend on hidden body capability,agent_shared,oracle,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,41748.0,83.496,1092,908,0,1.0
+body_actuator,action effects depend on hidden body capability,world_shared,marginal_no_memory,shared_latent,external_cross_env,external_candidate,21000.0,42.0,0,2000,0,0.0
+body_actuator,action effects depend on hidden body capability,world_shared,calibration_memory_no_transfer,shared_latent,external_cross_env,external_candidate,20500.0,41.0,0,2000,0,0.0
+body_actuator,action effects depend on hidden body capability,world_shared,shared_latent_filter,shared_latent,external_cross_env,external_candidate,40564.0,81.128,1056,944,0,1.0
+body_actuator,action effects depend on hidden body capability,world_shared,task_local_probe,shared_latent,external_cross_env,external_candidate,39064.0,78.128,1056,944,0,1.0
+body_actuator,action effects depend on hidden body capability,world_shared,learned_environment_selector,shared_latent,external_cross_env,external_candidate,40564.0,81.128,1056,944,0,1.0
+body_actuator,action effects depend on hidden body capability,world_shared,oracle,shared_latent,external_cross_env,external_candidate,41064.0,82.128,1056,944,0,1.0
+body_actuator,action effects depend on hidden body capability,independent_hidden,marginal_no_memory,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,21000.0,42.0,0,2000,0,0.0
+body_actuator,action effects depend on hidden body capability,independent_hidden,calibration_memory_no_transfer,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,20500.0,41.0,0,2000,0,0.0
+body_actuator,action effects depend on hidden body capability,independent_hidden,shared_latent_filter,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,17464.0,34.928,624,1376,280,0.5512820512820513
+body_actuator,action effects depend on hidden body capability,independent_hidden,task_local_probe,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,40379.0,80.758,1123,877,0,1.0
+body_actuator,action effects depend on hidden body capability,independent_hidden,learned_environment_selector,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,40379.0,80.758,1123,877,0,1.0
+body_actuator,action effects depend on hidden body capability,independent_hidden,oracle,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,42379.0,84.758,1123,877,0,1.0
+body_actuator,action effects depend on hidden body capability,irrelevant_control,marginal_no_memory,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,59000.0,118.0,2000,0,0,1.0
+body_actuator,action effects depend on hidden body capability,irrelevant_control,calibration_memory_no_transfer,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,58500.0,117.0,2000,0,0,1.0
+body_actuator,action effects depend on hidden body capability,irrelevant_control,shared_latent_filter,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,58500.0,117.0,2000,0,0,1.0
+body_actuator,action effects depend on hidden body capability,irrelevant_control,task_local_probe,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,57000.0,114.0,2000,0,0,1.0
+body_actuator,action effects depend on hidden body capability,irrelevant_control,learned_environment_selector,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,59000.0,118.0,2000,0,0,1.0
+body_actuator,action effects depend on hidden body capability,irrelevant_control,oracle,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,59000.0,118.0,2000,0,0,1.0
+homeostatic_viability,hidden integrity controls future option value,agent_shared,marginal_no_memory,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,22000.0,44.0,0,2000,0,0.0
+homeostatic_viability,hidden integrity controls future option value,agent_shared,calibration_memory_no_transfer,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,21500.0,43.0,0,2000,0,0.0
+homeostatic_viability,hidden integrity controls future option value,agent_shared,shared_latent_filter,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,41936.0,83.872,1048,952,0,1.0
+homeostatic_viability,hidden integrity controls future option value,agent_shared,task_local_probe,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,40436.0,80.872,1048,952,0,1.0
+homeostatic_viability,hidden integrity controls future option value,agent_shared,learned_environment_selector,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,41936.0,83.872,1048,952,0,1.0
+homeostatic_viability,hidden integrity controls future option value,agent_shared,oracle,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,42436.0,84.872,1048,952,0,1.0
+homeostatic_viability,hidden integrity controls future option value,world_shared,marginal_no_memory,shared_latent,external_cross_env,external_candidate,22000.0,44.0,0,2000,0,0.0
+homeostatic_viability,hidden integrity controls future option value,world_shared,calibration_memory_no_transfer,shared_latent,external_cross_env,external_candidate,21500.0,43.0,0,2000,0,0.0
+homeostatic_viability,hidden integrity controls future option value,world_shared,shared_latent_filter,shared_latent,external_cross_env,external_candidate,41312.0,82.624,1016,984,0,1.0
+homeostatic_viability,hidden integrity controls future option value,world_shared,task_local_probe,shared_latent,external_cross_env,external_candidate,39812.0,79.624,1016,984,0,1.0
+homeostatic_viability,hidden integrity controls future option value,world_shared,learned_environment_selector,shared_latent,external_cross_env,external_candidate,41312.0,82.624,1016,984,0,1.0
+homeostatic_viability,hidden integrity controls future option value,world_shared,oracle,shared_latent,external_cross_env,external_candidate,41812.0,83.624,1016,984,0,1.0
+homeostatic_viability,hidden integrity controls future option value,independent_hidden,marginal_no_memory,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,22000.0,44.0,0,2000,0,0.0
+homeostatic_viability,hidden integrity controls future option value,independent_hidden,calibration_memory_no_transfer,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,21500.0,43.0,0,2000,0,0.0
+homeostatic_viability,hidden integrity controls future option value,independent_hidden,shared_latent_filter,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,17520.0,35.04,716,1284,303,0.5768156424581006
+homeostatic_viability,hidden integrity controls future option value,independent_hidden,task_local_probe,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,42178.0,84.356,1138,862,0,1.0
+homeostatic_viability,hidden integrity controls future option value,independent_hidden,learned_environment_selector,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,42178.0,84.356,1138,862,0,1.0
+homeostatic_viability,hidden integrity controls future option value,independent_hidden,oracle,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,44178.0,88.356,1138,862,0,1.0
+homeostatic_viability,hidden integrity controls future option value,irrelevant_control,marginal_no_memory,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,61000.0,122.0,2000,0,0,1.0
+homeostatic_viability,hidden integrity controls future option value,irrelevant_control,calibration_memory_no_transfer,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,60500.0,121.0,2000,0,0,1.0
+homeostatic_viability,hidden integrity controls future option value,irrelevant_control,shared_latent_filter,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,60500.0,121.0,2000,0,0,1.0
+homeostatic_viability,hidden integrity controls future option value,irrelevant_control,task_local_probe,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,59000.0,118.0,2000,0,0,1.0
+homeostatic_viability,hidden integrity controls future option value,irrelevant_control,learned_environment_selector,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,61000.0,122.0,2000,0,0,1.0
+homeostatic_viability,hidden integrity controls future option value,irrelevant_control,oracle,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,61000.0,122.0,2000,0,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,agent_shared,marginal_no_memory,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,23000.0,46.0,0,2000,0,0.0
+sensor_frame,hidden body frame controls observation-action mapping,agent_shared,calibration_memory_no_transfer,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,22500.0,45.0,0,2000,0,0.0
+sensor_frame,hidden body frame controls observation-action mapping,agent_shared,shared_latent_filter,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,44340.0,88.68,1120,880,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,agent_shared,task_local_probe,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,42840.0,85.68,1120,880,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,agent_shared,learned_environment_selector,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,44340.0,88.68,1120,880,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,agent_shared,oracle,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,44840.0,89.68,1120,880,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,world_shared,marginal_no_memory,shared_latent,external_cross_env,external_candidate,23000.0,46.0,0,2000,0,0.0
+sensor_frame,hidden body frame controls observation-action mapping,world_shared,calibration_memory_no_transfer,shared_latent,external_cross_env,external_candidate,22500.0,45.0,0,2000,0,0.0
+sensor_frame,hidden body frame controls observation-action mapping,world_shared,shared_latent_filter,shared_latent,external_cross_env,external_candidate,44340.0,88.68,1120,880,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,world_shared,task_local_probe,shared_latent,external_cross_env,external_candidate,42840.0,85.68,1120,880,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,world_shared,learned_environment_selector,shared_latent,external_cross_env,external_candidate,44340.0,88.68,1120,880,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,world_shared,oracle,shared_latent,external_cross_env,external_candidate,44840.0,89.68,1120,880,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,independent_hidden,marginal_no_memory,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,23000.0,46.0,0,2000,0,0.0
+sensor_frame,hidden body frame controls observation-action mapping,independent_hidden,calibration_memory_no_transfer,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,22500.0,45.0,0,2000,0,0.0
+sensor_frame,hidden body frame controls observation-action mapping,independent_hidden,shared_latent_filter,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,18466.0,36.932,612,1388,275,0.5506535947712419
+sensor_frame,hidden body frame controls observation-action mapping,independent_hidden,task_local_probe,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,42359.0,84.718,1095,905,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,independent_hidden,learned_environment_selector,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,42359.0,84.718,1095,905,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,independent_hidden,oracle,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,44359.0,88.718,1095,905,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,irrelevant_control,marginal_no_memory,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,62000.0,124.0,2000,0,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,irrelevant_control,calibration_memory_no_transfer,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,61500.0,123.0,2000,0,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,irrelevant_control,shared_latent_filter,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,61500.0,123.0,2000,0,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,irrelevant_control,task_local_probe,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,60000.0,120.0,2000,0,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,irrelevant_control,learned_environment_selector,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,62000.0,124.0,2000,0,0,1.0
+sensor_frame,hidden body frame controls observation-action mapping,irrelevant_control,oracle,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,62000.0,124.0,2000,0,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,agent_shared,marginal_no_memory,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,21500.0,43.0,0,2000,0,0.0
+continuity_commitment,hidden ownership state controls coherent recovery,agent_shared,calibration_memory_no_transfer,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,21000.0,42.0,0,2000,0,0.0
+continuity_commitment,hidden ownership state controls coherent recovery,agent_shared,shared_latent_filter,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,42750.0,85.5,1160,840,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,agent_shared,task_local_probe,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,41250.0,82.5,1160,840,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,agent_shared,learned_environment_selector,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,42750.0,85.5,1160,840,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,agent_shared,oracle,shared_latent,agent_bounded_cross_env,agent_bounded_candidate,43250.0,86.5,1160,840,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,world_shared,marginal_no_memory,shared_latent,external_cross_env,external_candidate,21500.0,43.0,0,2000,0,0.0
+continuity_commitment,hidden ownership state controls coherent recovery,world_shared,calibration_memory_no_transfer,shared_latent,external_cross_env,external_candidate,21000.0,42.0,0,2000,0,0.0
+continuity_commitment,hidden ownership state controls coherent recovery,world_shared,shared_latent_filter,shared_latent,external_cross_env,external_candidate,41925.0,83.85,1116,884,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,world_shared,task_local_probe,shared_latent,external_cross_env,external_candidate,40425.0,80.85,1116,884,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,world_shared,learned_environment_selector,shared_latent,external_cross_env,external_candidate,41925.0,83.85,1116,884,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,world_shared,oracle,shared_latent,external_cross_env,external_candidate,42425.0,84.85,1116,884,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,independent_hidden,marginal_no_memory,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,21500.0,43.0,0,2000,0,0.0
+continuity_commitment,hidden ownership state controls coherent recovery,independent_hidden,calibration_memory_no_transfer,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,21000.0,42.0,0,2000,0,0.0
+continuity_commitment,hidden ownership state controls coherent recovery,independent_hidden,shared_latent_filter,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,17016.0,34.032,616,1384,267,0.5665584415584416
+continuity_commitment,hidden ownership state controls coherent recovery,independent_hidden,task_local_probe,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,40257.0,80.514,1107,893,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,independent_hidden,learned_environment_selector,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,40257.0,80.514,1107,893,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,independent_hidden,oracle,local_hidden,no_shared_agent_boundary,no_shared_agent_boundary,42257.0,84.514,1107,893,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,irrelevant_control,marginal_no_memory,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,59000.0,118.0,2000,0,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,irrelevant_control,calibration_memory_no_transfer,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,58500.0,117.0,2000,0,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,irrelevant_control,shared_latent_filter,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,58500.0,117.0,2000,0,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,irrelevant_control,task_local_probe,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,57000.0,114.0,2000,0,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,irrelevant_control,learned_environment_selector,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,59000.0,118.0,2000,0,0,1.0
+continuity_commitment,hidden ownership state controls coherent recovery,irrelevant_control,oracle,no_hidden_needed,no_shared_agent_boundary,no_hidden_needed,59000.0,118.0,2000,0,0,1.0

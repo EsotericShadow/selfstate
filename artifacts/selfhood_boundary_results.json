@@ -1,0 +1,89 @@
+{
+  "config": {
+    "episodes": 500,
+    "horizon": 24,
+    "seed": 20260530
+  },
+  "summaries": [
+    {
+      "scenario": "hidden_world_bias",
+      "metric": "control_reward",
+      "baseline_mean": -2.996,
+      "hidden_tracker_mean": -0.061883847164952904,
+      "gain": 2.9341161528350472,
+      "agent_bounded": false,
+      "persistent": true,
+      "action_mediated": true,
+      "control_value_relevant": true,
+      "counterfactual_self_intervention": false,
+      "integrated": true,
+      "continuity_index": false,
+      "verdict": "world_model_not_self",
+      "counts_as_self_equivalent": false
+    },
+    {
+      "scenario": "internal_report_only",
+      "metric": "report_accuracy",
+      "baseline_mean": 0.55,
+      "hidden_tracker_mean": 0.8520833333333334,
+      "gain": 0.30208333333333337,
+      "agent_bounded": true,
+      "persistent": true,
+      "action_mediated": false,
+      "control_value_relevant": false,
+      "counterfactual_self_intervention": false,
+      "integrated": false,
+      "continuity_index": false,
+      "verdict": "passive_internal_state_not_self",
+      "counts_as_self_equivalent": false
+    },
+    {
+      "scenario": "action_effect_state",
+      "metric": "control_reward",
+      "baseline_mean": -1.8253791686737837,
+      "hidden_tracker_mean": -0.2197500893469276,
+      "gain": 1.6056290793268562,
+      "agent_bounded": true,
+      "persistent": true,
+      "action_mediated": true,
+      "control_value_relevant": true,
+      "counterfactual_self_intervention": true,
+      "integrated": true,
+      "continuity_index": false,
+      "verdict": "minimal_self_equivalent",
+      "counts_as_self_equivalent": true
+    },
+    {
+      "scenario": "viability_state",
+      "metric": "survival_value",
+      "baseline_mean": -29.69,
+      "hidden_tracker_mean": 30.953600000000005,
+      "gain": 60.643600000000006,
+      "agent_bounded": true,
+      "persistent": true,
+      "action_mediated": true,
+      "control_value_relevant": true,
+      "counterfactual_self_intervention": true,
+      "integrated": true,
+      "continuity_index": false,
+      "verdict": "long_horizon_control_self",
+      "counts_as_self_equivalent": true
+    },
+    {
+      "scenario": "continuity_state",
+      "metric": "coherence_score",
+      "baseline_mean": -0.38,
+      "hidden_tracker_mean": 6.0,
+      "gain": 6.38,
+      "agent_bounded": true,
+      "persistent": true,
+      "action_mediated": true,
+      "control_value_relevant": true,
+      "counterfactual_self_intervention": true,
+      "integrated": true,
+      "continuity_index": true,
+      "verdict": "identity_like_self",
+      "counts_as_self_equivalent": true
+    }
+  ]
+}

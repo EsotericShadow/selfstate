@@ -1,0 +1,6 @@
+scenario,selected_policy,selected_boundary_policy,dependency_signature,selector_reward,action_0_reward,action_1_reward,recurrent_reward,local_probe_reward,greedy_reward,action_0_persistence,action_1_persistence,supports_return_selected_boundary_prediction
+detachable_tool_world,recurrent_controller,action_1_boundary_policy,return_selected_detachable_external_boundary,135.576,56.984,136.088,135.576,130.752,58.88,1.0,0.0,True
+independent_hidden,task_local_probe,action_0_boundary_policy,return_selected_local_probe,125.024,53.832,43.56,62.408,125.024,44.56,1.0,0.0,True
+irrelevant_control,greedy_no_state,action_1_boundary_policy,return_selected_no_hidden_needed,192.0,134.936,191.0,191.0,184.0,192.0,1.0,0.0,True
+passive_world_boundary,recurrent_controller,action_0_boundary_policy,return_selected_passive_external_boundary,127.896,54.808,37.4,127.896,122.56,38.4,1.0,0.0,True
+self_persistent_boundary,action_0_boundary_policy,action_0_boundary_policy,return_selected_persistent_agent_boundary,132.248,132.248,45.08,132.248,125.632,46.08,1.0,0.0,True

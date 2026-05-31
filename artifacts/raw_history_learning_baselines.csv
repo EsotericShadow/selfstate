@@ -1,0 +1,65 @@
+environment,surface,scenario,baseline,total_reward
+body_actuator,action effects depend on hidden body capability,agent_shared,marginal_no_memory,21000.0
+body_actuator,action effects depend on hidden body capability,agent_shared,probe_memory_no_transfer,20500.0
+body_actuator,action effects depend on hidden body capability,agent_shared,task_local_probe,39748.0
+body_actuator,action effects depend on hidden body capability,agent_shared,oracle,41748.0
+body_actuator,action effects depend on hidden body capability,world_shared,marginal_no_memory,21000.0
+body_actuator,action effects depend on hidden body capability,world_shared,probe_memory_no_transfer,20500.0
+body_actuator,action effects depend on hidden body capability,world_shared,task_local_probe,39064.0
+body_actuator,action effects depend on hidden body capability,world_shared,oracle,41064.0
+body_actuator,action effects depend on hidden body capability,independent_hidden,marginal_no_memory,21000.0
+body_actuator,action effects depend on hidden body capability,independent_hidden,probe_memory_no_transfer,20500.0
+body_actuator,action effects depend on hidden body capability,independent_hidden,task_local_probe,40379.0
+body_actuator,action effects depend on hidden body capability,independent_hidden,oracle,42379.0
+body_actuator,action effects depend on hidden body capability,irrelevant_control,marginal_no_memory,59000.0
+body_actuator,action effects depend on hidden body capability,irrelevant_control,probe_memory_no_transfer,58500.0
+body_actuator,action effects depend on hidden body capability,irrelevant_control,task_local_probe,57000.0
+body_actuator,action effects depend on hidden body capability,irrelevant_control,oracle,59000.0
+homeostatic_viability,hidden integrity controls future option value,agent_shared,marginal_no_memory,22000.0
+homeostatic_viability,hidden integrity controls future option value,agent_shared,probe_memory_no_transfer,21500.0
+homeostatic_viability,hidden integrity controls future option value,agent_shared,task_local_probe,40436.0
+homeostatic_viability,hidden integrity controls future option value,agent_shared,oracle,42436.0
+homeostatic_viability,hidden integrity controls future option value,world_shared,marginal_no_memory,22000.0
+homeostatic_viability,hidden integrity controls future option value,world_shared,probe_memory_no_transfer,21500.0
+homeostatic_viability,hidden integrity controls future option value,world_shared,task_local_probe,39812.0
+homeostatic_viability,hidden integrity controls future option value,world_shared,oracle,41812.0
+homeostatic_viability,hidden integrity controls future option value,independent_hidden,marginal_no_memory,22000.0
+homeostatic_viability,hidden integrity controls future option value,independent_hidden,probe_memory_no_transfer,21500.0
+homeostatic_viability,hidden integrity controls future option value,independent_hidden,task_local_probe,42178.0
+homeostatic_viability,hidden integrity controls future option value,independent_hidden,oracle,44178.0
+homeostatic_viability,hidden integrity controls future option value,irrelevant_control,marginal_no_memory,61000.0
+homeostatic_viability,hidden integrity controls future option value,irrelevant_control,probe_memory_no_transfer,60500.0
+homeostatic_viability,hidden integrity controls future option value,irrelevant_control,task_local_probe,59000.0
+homeostatic_viability,hidden integrity controls future option value,irrelevant_control,oracle,61000.0
+sensor_frame,hidden body frame controls observation-action mapping,agent_shared,marginal_no_memory,23000.0
+sensor_frame,hidden body frame controls observation-action mapping,agent_shared,probe_memory_no_transfer,22500.0
+sensor_frame,hidden body frame controls observation-action mapping,agent_shared,task_local_probe,42840.0
+sensor_frame,hidden body frame controls observation-action mapping,agent_shared,oracle,44840.0
+sensor_frame,hidden body frame controls observation-action mapping,world_shared,marginal_no_memory,23000.0
+sensor_frame,hidden body frame controls observation-action mapping,world_shared,probe_memory_no_transfer,22500.0
+sensor_frame,hidden body frame controls observation-action mapping,world_shared,task_local_probe,42840.0
+sensor_frame,hidden body frame controls observation-action mapping,world_shared,oracle,44840.0
+sensor_frame,hidden body frame controls observation-action mapping,independent_hidden,marginal_no_memory,23000.0
+sensor_frame,hidden body frame controls observation-action mapping,independent_hidden,probe_memory_no_transfer,22500.0
+sensor_frame,hidden body frame controls observation-action mapping,independent_hidden,task_local_probe,42359.0
+sensor_frame,hidden body frame controls observation-action mapping,independent_hidden,oracle,44359.0
+sensor_frame,hidden body frame controls observation-action mapping,irrelevant_control,marginal_no_memory,62000.0
+sensor_frame,hidden body frame controls observation-action mapping,irrelevant_control,probe_memory_no_transfer,61500.0
+sensor_frame,hidden body frame controls observation-action mapping,irrelevant_control,task_local_probe,60000.0
+sensor_frame,hidden body frame controls observation-action mapping,irrelevant_control,oracle,62000.0
+continuity_commitment,hidden ownership state controls coherent recovery,agent_shared,marginal_no_memory,21500.0
+continuity_commitment,hidden ownership state controls coherent recovery,agent_shared,probe_memory_no_transfer,21000.0
+continuity_commitment,hidden ownership state controls coherent recovery,agent_shared,task_local_probe,41250.0
+continuity_commitment,hidden ownership state controls coherent recovery,agent_shared,oracle,43250.0
+continuity_commitment,hidden ownership state controls coherent recovery,world_shared,marginal_no_memory,21500.0
+continuity_commitment,hidden ownership state controls coherent recovery,world_shared,probe_memory_no_transfer,21000.0
+continuity_commitment,hidden ownership state controls coherent recovery,world_shared,task_local_probe,40425.0
+continuity_commitment,hidden ownership state controls coherent recovery,world_shared,oracle,42425.0
+continuity_commitment,hidden ownership state controls coherent recovery,independent_hidden,marginal_no_memory,21500.0
+continuity_commitment,hidden ownership state controls coherent recovery,independent_hidden,probe_memory_no_transfer,21000.0
+continuity_commitment,hidden ownership state controls coherent recovery,independent_hidden,task_local_probe,40257.0
+continuity_commitment,hidden ownership state controls coherent recovery,independent_hidden,oracle,42257.0
+continuity_commitment,hidden ownership state controls coherent recovery,irrelevant_control,marginal_no_memory,59000.0
+continuity_commitment,hidden ownership state controls coherent recovery,irrelevant_control,probe_memory_no_transfer,58500.0
+continuity_commitment,hidden ownership state controls coherent recovery,irrelevant_control,task_local_probe,57000.0
+continuity_commitment,hidden ownership state controls coherent recovery,irrelevant_control,oracle,59000.0

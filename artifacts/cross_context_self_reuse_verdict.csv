@@ -1,0 +1,5 @@
+scenario,best_non_oracle_agent,best_non_oracle_reward,greedy_reward,safe_reward,shared_self_reward,shared_world_reward,task_local_reward,shared_self_minus_task_local,shared_self_minus_world,supports_boundary
+independent_hidden,task_local_probe,55.992,14.208,34.0,31.144,13.208,55.992,-24.848,17.936,True
+irrelevant_control,greedy_no_state,80.0,80.0,34.0,79.0,79.0,77.0,2.0,0.0,True
+self_reuse,shared_self_reuse,58.484,15.776,34.0,58.484,14.776,56.484,2.0,43.708,True
+world_reuse,shared_world_reuse,57.932,14.048,34.0,23.316,57.932,55.932,-32.616,-34.616,True

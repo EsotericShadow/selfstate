@@ -1,0 +1,6 @@
+scenario,selected_policy,selected_architecture,dependency_signature,recurrent_reward,local_probe_reward,greedy_reward,selector_reward,outcome_direction_ablation_loss,best_persistent_alignment,best_transient_alignment,supports_persistent_action_boundary_prediction
+detachable_tool_world,recurrent_controller,sum_rnn,detachable_external_action_boundary,135.576,130.752,58.88,135.576,82.68799999999999,0.04296868083316274,0.9990764197334745,True
+independent_hidden,task_local_probe,sum_rnn,no_persistent_action_boundary,62.408,125.024,44.56,125.024,0.0,0.24550374824070903,0.0,True
+irrelevant_control,greedy_no_state,sum_rnn,no_persistent_action_boundary,191.0,184.0,192.0,192.0,0.0,0.0,0.0,True
+passive_world_boundary,recurrent_controller,sum_rnn,passive_external_persistent_boundary,127.896,122.56,38.4,127.896,77.43999999999998,0.030761744373871358,0.0,True
+self_persistent_boundary,recurrent_controller,sum_rnn,persistent_agent_action_boundary,132.248,125.632,46.08,132.248,82.43199999999999,0.9999439293927077,0.0,True

@@ -1,0 +1,6 @@
+scenario,metric,baseline_mean,hidden_tracker_mean,gain,agent_bounded,persistent,action_mediated,control_value_relevant,counterfactual_self_intervention,integrated,continuity_index,verdict,counts_as_self_equivalent
+hidden_world_bias,control_reward,-2.996,-0.061883847164952904,2.9341161528350472,False,True,True,True,False,True,False,world_model_not_self,False
+internal_report_only,report_accuracy,0.55,0.8520833333333334,0.30208333333333337,True,True,False,False,False,False,False,passive_internal_state_not_self,False
+action_effect_state,control_reward,-1.8253791686737837,-0.2197500893469276,1.6056290793268562,True,True,True,True,True,True,False,minimal_self_equivalent,True
+viability_state,survival_value,-29.69,30.953600000000005,60.643600000000006,True,True,True,True,True,True,False,long_horizon_control_self,True
+continuity_state,coherence_score,-0.38,6.0,6.38,True,True,True,True,True,True,True,identity_like_self,True

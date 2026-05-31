@@ -1,0 +1,5 @@
+scenario,selected_policy,boundary_signature,channel_a_reward,channel_b_reward,local_probe_reward,greedy_reward,selector_reward,channel_a_minus_local,channel_b_minus_local,local_minus_best_channel,greedy_minus_best_filter,supports_learned_filter_prediction
+independent_hidden,task_local_probe,no_shared_boundary,63.0,63.0,125.024,44.56,125.024,-62.024,-62.024,62.024,-18.439999999999998,True
+irrelevant_control,greedy_no_state,no_shared_boundary,191.0,191.0,184.0,192.0,192.0,7.0,7.0,-7.0,1.0,True
+self_noisy_hidden,channel_a_filter,agent_bounded_filter,130.84,63.384,126.4,48.0,130.84,4.439999999999998,-63.016000000000005,-4.439999999999998,-82.84,True
+world_noisy_hidden,channel_b_filter,external_filter,59.928,130.968,126.912,49.28,130.968,-66.98400000000001,4.055999999999983,-4.055999999999983,-81.68799999999999,True

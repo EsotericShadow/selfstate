@@ -1,0 +1,5 @@
+scenario,selected_structure,boundary_signature,intervention_a_effect,intervention_b_effect,best_non_oracle_agent,no_hidden_reward,shared_bottleneck_reward,task_local_reward,learned_selection_reward,supports_boundary
+self_reuse,shared_bottleneck,agent_bounded_shared,0.41333333333333333,0.0,learned_model_selection,40.0,69.888,66.888,69.888,True
+world_reuse,shared_bottleneck,external_shared,0.0,0.5033333333333333,learned_model_selection,40.0,69.78,66.78,69.78,True
+independent_hidden,local_hidden,no_shared_agent_boundary,0.0,0.0,learned_model_selection,40.0,23.496,66.606,66.606,True
+irrelevant_control,no_hidden_needed,no_shared_agent_boundary,0.0,0.0,learned_model_selection,94.0,93.0,90.0,94.0,True

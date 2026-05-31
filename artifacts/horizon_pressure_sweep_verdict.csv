@@ -1,0 +1,5 @@
+scenario,horizon_range,best_at_max_horizon,shared_self_minus_local_at_1,shared_self_minus_local_at_max,shared_world_minus_local_at_max,local_minus_shared_self_at_max,greedy_minus_shared_self_at_max,supports_horizon_prediction
+independent_steps,1-12,step_local_probe,0.0,-98.04,-105.08000000000001,98.04,-18.744,True
+irrelevant_control,1-12,greedy_no_state,0.0,11.0,11.0,-11.0,1.0,True
+self_persistent,1-12,shared_self_state,0.0,11.0,-111.112,-11.0,-125.14399999999999,True
+world_persistent,1-12,shared_world_state,-10.208,-111.30400000000002,11.0,111.30400000000002,-2.263999999999996,True

@@ -1,0 +1,5 @@
+scenario,selected_transfer,boundary_signature,mean_pairwise_agreement,expected_independent_agreement,intervention_a_effect,intervention_b_effect,best_non_oracle_agent,marginal_reward,memory_no_transfer_reward,shared_sequence_reward,task_local_reward,learned_sequence_reward,supports_boundary
+self_shared_sequence,shared_sequence_state,agent_bounded_sequence,1.0,0.5032,0.458,0.0,learned_sequence_selector,40.0,40.0,68.7,65.7,68.7,True
+world_shared_sequence,shared_sequence_state,external_sequence,1.0,0.505408,0.0,0.424,learned_sequence_selector,40.0,40.0,68.808,65.808,68.808,True
+independent_sequence,local_context_state,no_shared_agent_boundary,0.5148,0.50605,0.0,0.0,learned_sequence_selector,40.0,40.0,18.888,64.668,64.668,True
+irrelevant_sequence,no_hidden_needed,no_shared_agent_boundary,1.0,1.0,0.0,0.0,calibration_memory_no_transfer,94.0,94.0,93.0,90.0,94.0,True

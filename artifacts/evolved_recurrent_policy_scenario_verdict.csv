@@ -1,0 +1,5 @@
+scenario,expected_signature,supporting_environments,environment_count,mean_best_architecture_reward,mean_local_probe_reward,mean_marginal_reward,environment_signatures,supports_evolved_rnn_precursor
+agent_shared,agent_bounded_candidate,4,4,42568.5,41068.5,21875.0,body_actuator:3/3:agent_bounded_candidate;homeostatic_viability:3/3:agent_bounded_candidate;sensor_frame:3/3:agent_bounded_candidate;continuity_commitment:3/3:agent_bounded_candidate,True
+world_shared,external_candidate,4,4,42035.25,40535.25,21875.0,body_actuator:3/3:external_candidate;homeostatic_viability:3/3:external_candidate;sensor_frame:3/3:external_candidate;continuity_commitment:3/3:external_candidate,True
+independent_hidden,no_shared_agent_boundary,4,4,21875.0,41293.25,21875.0,body_actuator:3/3:no_shared_agent_boundary;homeostatic_viability:3/3:no_shared_agent_boundary;sensor_frame:3/3:no_shared_agent_boundary;continuity_commitment:3/3:no_shared_agent_boundary,True
+irrelevant_control,no_hidden_needed,4,4,60250.0,58250.0,60250.0,body_actuator:3/3:no_hidden_needed;homeostatic_viability:3/3:no_hidden_needed;sensor_frame:3/3:no_hidden_needed;continuity_commitment:3/3:no_hidden_needed,True

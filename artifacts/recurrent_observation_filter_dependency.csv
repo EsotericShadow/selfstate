@@ -1,0 +1,5 @@
+scenario,dependency_signature,intact_recurrent_reward,ablate_channel_a_reward,ablate_channel_b_reward,channel_a_ablation_loss,channel_b_ablation_loss,channel_a_intervention_effect,channel_b_intervention_effect
+self_noisy_hidden,agent_bounded_recurrent,128.408,38.04,128.408,90.368,0.0,0.478,0.0
+world_noisy_hidden,external_recurrent,130.584,130.584,42.52,0.0,88.064,0.0,0.464
+independent_hidden,no_shared_recurrent_boundary,62.664,63.0,63.0,-0.3359999999999985,-0.3359999999999985,0.0,0.0
+irrelevant_control,no_shared_recurrent_boundary,191.0,191.0,191.0,0.0,0.0,0.0,0.0

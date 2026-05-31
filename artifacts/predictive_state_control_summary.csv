@@ -1,0 +1,17 @@
+scenario,policy,episodes,success_rate,mean_final_distance,mean_total_loss
+mixed_hidden,full_predictive_state,500,1.0,0.0,24.780900000000003
+mixed_hidden,no_state_identity,500,0.572,47.241,319.2541
+mixed_hidden,self_component_ablation,500,0.744,46.397,314.27590000000004
+mixed_hidden,world_component_ablation,500,1.0,1.168,32.8785
+self_drift,full_predictive_state,500,1.0,0.0,25.136
+self_drift,no_state_identity,500,0.698,54.54,367.0124
+self_drift,self_component_ablation,500,0.698,54.54,367.0124
+self_drift,world_component_ablation,500,1.0,0.0,25.136
+static_goal_switch,full_predictive_state,500,1.0,0.0,16.5
+static_goal_switch,no_state_identity,500,1.0,0.0,16.5
+static_goal_switch,self_component_ablation,500,1.0,0.0,16.5
+static_goal_switch,world_component_ablation,500,1.0,0.0,16.5
+world_drift,full_predictive_state,500,1.0,0.0,18.444600000000005
+world_drift,no_state_identity,500,1.0,1.518,31.394900000000003
+world_drift,self_component_ablation,500,1.0,0.0,18.444600000000005
+world_drift,world_component_ablation,500,1.0,1.518,31.394900000000003

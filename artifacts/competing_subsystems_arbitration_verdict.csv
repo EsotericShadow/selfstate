@@ -1,0 +1,4 @@
+scenario,best_non_oracle_agent,best_non_oracle_reward,reward_priority_reward,local_vote_reward,self_arbitrator_reward,world_arbitrator_reward,self_minus_local,self_incoherent_actions,local_incoherent_actions,supports_boundary
+no_conflict,commitment_priority,98.0,98.0,98.0,98.0,98.0,0.0,0.0,0.0,True
+subsystem_conflict,self_coherence_arbitrator,77.88,-99.696,-99.696,77.88,-145.614,177.576,0.0,11.462,True
+world_gate_conflict,world_gate_arbitrator,-13.32,-110.114,-110.114,-51.424,-13.32,58.690000000000005,0.0,7.39,True

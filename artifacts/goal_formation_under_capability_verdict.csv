@@ -1,0 +1,5 @@
+scenario,best_non_oracle_agent,best_non_oracle_reward,greedy_reward,self_selector_reward,world_selector_reward,self_world_reward,self_minus_greedy,world_minus_greedy,self_world_minus_greedy,supports_boundary
+capability_relevant,self_capability_selector,20.786,1.648,20.786,0.898,20.036,19.138,-0.7499999999999999,18.388,True
+irrelevant_control,payoff_greedy,34.0,34.0,33.25,33.25,32.5,-0.75,-0.75,-1.5,True
+mixed_relevant,self_world_goal_selector,15.628,-6.896,8.15,2.042,15.628,15.046,8.937999999999999,22.524,True
+world_relevant,world_opportunity_selector,24.046,7.408,6.658,24.046,23.296,-0.75,16.637999999999998,15.887999999999998,True

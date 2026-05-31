@@ -161,6 +161,8 @@ SSRM-3D tests whether the same formal pressure survives embodiment. The language
 
 SSRM-3D recurrent observation tests whether that variable can be recovered from traces rather than read from the hand-built workspace. A recurrent observer supports the formal claim only if its hidden state decodes agent variables, improves over a frame-only observer under pressure, and changes future-viability prediction when edited along the learned self-state direction.
 
+SSRM-3D learned control tests the same pressure inside policy state. A learned controller supports the formal claim only if recurrence is not useful in the low-pressure stage, but becomes useful for control as hidden agent-state pressure accumulates, and the learned recurrent policy state contains decodable agent variables without self-label training. If action edits along that state remain weak, the result supports representation-for-control but not yet robust causal editability.
+
 A learned shared bottleneck is still not enough. If an unlabeled learner discovers a compact latent `z_t`, it is self-equivalent only after causal tests show that `z_t` is agent-bounded. A reusable external variable can produce the same compression advantage without being a self variable.
 
 Sequence transfer is a stricter version of reuse. Early observations can support later control only when they reveal a latent that persists across contexts. That latent remains only a candidate self variable until causal boundary tests show that it tracks `A_t` rather than `E_t`.

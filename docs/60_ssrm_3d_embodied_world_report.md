@@ -111,7 +111,7 @@ This is still toy-scale:
 - latent metrics are computed from known simulator state;
 - social dynamics are minimal.
 
-Report 61 takes the next representation step by training recurrent observers on embodied traces. The stronger remaining version is learned control: recurrent or model-based agents trained from return in this world, then probed for the same self-state latents.
+Report 61 takes the next representation step by training recurrent observers on embodied traces. Report 62 takes the next policy-state step by training learned controllers. The stronger remaining version is online-return or model-based control with robust causal policy-state edits.
 
 ## Artifacts
 

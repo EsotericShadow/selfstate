@@ -63,6 +63,8 @@ That claim does not define consciousness and does not require that the self be m
 - [Architecture Torch actor-critic report](docs/59_architecture_torch_actor_critic_report.md): tests whether GPU-backed recurrent actor-critic learners recover the boundary signatures.
 - [SSRM-3D embodied world report](docs/60_ssrm_3d_embodied_world_report.md): tests the same pressures in a persistent 3D world with layered realtime control and visualization.
 - [SSRM-3D recurrent observer report](docs/61_ssrm_3d_recurrent_observer_report.md): tests whether GPU-backed recurrent observers recover self-state from embodied traces.
+- [SSRM-3D learned controller report](docs/62_ssrm_3d_learned_controller_report.md): tests whether recurrent controllers trained without self labels use self-state under embodied pressure.
+- [SSRM-3D done-enough gates](docs/63_ssrm_3d_done_enough_gates.md): defines the four gates still needed before the 3D track counts as done enough.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -504,6 +506,17 @@ This writes:
 - `artifacts/ssrm_3d_recurrent_observer_results.json`
 
 ```bash
+python3 experiments/ssrm_3d_learned_controller.py --episodes-per-stage 48 --eval-episodes 24 --ticks 540 --seed 20260609 --hidden-size 32 --epochs 160 --batch-size 64 --learning-rate 0.004 --device auto
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_learned_controller_summary.csv`
+- `artifacts/ssrm_3d_learned_controller_eval.csv`
+- `artifacts/ssrm_3d_learned_controller_verdict.csv`
+- `artifacts/ssrm_3d_learned_controller_results.json`
+
+```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2
 ```
 
@@ -691,6 +704,7 @@ The project should not ask whether an agent says it has a self. It should ask wh
 47. Recoverable under GPU-backed recurrent actor-critic learning.
 48. Recoverable in a persistent 3D embodied world with layered realtime control.
 49. Recoverable by GPU-backed recurrent observers trained on persistent 3D embodied traces.
+50. Recoverable in learned recurrent controllers trained without self labels in the persistent 3D embodied world.
 
 Current stress evidence does not yet satisfy item 37. The architecture boundary stress test finds partial convergence in shared regimes, not strict architecture-wide convergence. Current horizon-pressure evidence partially supports item 38: recoverability improves with horizon, but strict convergence still does not appear.
 Current capacity evidence supports item 39, but only as a diagnostic: source-direction seeds are supplied, so this is not natural emergence.
@@ -704,5 +718,8 @@ Current policy-gradient budget evidence partially supports item 46: the larger b
 Current Torch actor-critic evidence supports item 47 in the single-seed canonical run: `torch_rnn`, `torch_gru`, and `torch_lstm` recover strict boundary signatures for self-persistent, detachable-tool, and passive-world regimes while independent-hidden and irrelevant controls remain clean on MPS.
 Current SSRM-3D evidence supports item 48 as a first embodied precursor: self-state is not needed in the low-pressure spatial stage, becomes decodable under hidden energy, beats world-only under body drift and delayed options, and dominates after commitments, subsystem conflict, and social pressure enter. Reactive control remains competitive in stages 2 and 3, so the result is a pressure gradient, not a solved Attractor Test.
 Current SSRM-3D recurrent-observer evidence supports item 49 as a representation-learning precursor: in the low-pressure stage, body state is decodable without meaningful recurrent advantage; in stages 1-6, recurrent observers recover stronger self-state than the frame-only baseline, and self-state edits move future-viability prediction.
+Current SSRM-3D learned-controller evidence supports item 50 as a policy-state precursor: recurrent controllers trained without self labels match the low-pressure frame-only control but strongly beat it under hidden energy, body drift, delayed options, commitments, arbitration, and social pressure while carrying decodable self-state. Direct counterfactual self-edit action effects remain weak.
+
+The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has a useful precursor; gates 2 and 3 remain open; gate 4 is partial.
 
 If agents with no persistent self-equivalent representation match performance, transfer, recovery, and compression under those conditions, the strong self-necessity claim fails.

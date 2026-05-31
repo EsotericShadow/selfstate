@@ -92,7 +92,7 @@ Stage 0 is the control: body state is decodable, but the recurrent gain is only 
 
 Stages 1-6 show the stronger pattern: as hidden energy, body drift, delayed options, commitments, arbitration, and social pressure accumulate, recurrent observers recover stronger agent-state variables than the stateless frame model. Removing the learned self subspace damages future-viability prediction, and moving the hidden state along the learned self direction changes future-viability prediction.
 
-This is still a precursor. It shows learned observer state, not autonomous learned control.
+This is still a precursor. It shows learned observer state, not autonomous learned control. Report 62 moves the same question into policy state.
 
 ## Limits
 
@@ -104,7 +104,7 @@ This is still a precursor. It shows learned observer state, not autonomous learn
 
 ## Stronger Next Test
 
-The next step is to train recurrent or model-based controllers in the SSRM-3D world and probe their policy state directly. The stronger test should ask whether the same self-equivalent latent appears when the agent must learn both representation and control from return.
+Report 62 trains recurrent controllers in the SSRM-3D world and probes their policy state directly. The stronger remaining test is online-return or model-based controller training with robust causal policy-state edits.
 
 ## Artifacts
 

@@ -1266,6 +1266,49 @@ Implemented version:
 - [verdict CSV](../artifacts/ssrm_3d_recurrent_observer_verdict.csv)
 - [JSON results](../artifacts/ssrm_3d_recurrent_observer_results.json)
 
+## Supplemental SSRM-3D Learned Controller
+
+Run a GPU-backed learned-controller precursor in SSRM-3D.
+
+This trains frame-only and recurrent controllers from return-weighted behavior cloning plus future-return prediction. The learner receives no self labels. The resulting policy states are then probed for self-state variables and rolled back into the SSRM-3D world.
+
+Current expected result:
+
+- learned recurrence should not be needed in the low-pressure spatial stage;
+- recurrent controllers should outperform frame-only controllers as hidden energy, body drift, delayed options, commitments, arbitration, and social pressure accumulate;
+- recurrent policy states should contain decodable energy, integrity, mobility, and sensor capability under pressure;
+- direct counterfactual self-state edits may remain weak, which should be reported as a remaining causal-control gap.
+
+Implemented version:
+
+- [SSRM-3D learned controller script](../experiments/ssrm_3d_learned_controller.py)
+- [SSRM-3D learned controller report](62_ssrm_3d_learned_controller_report.md)
+- [summary CSV](../artifacts/ssrm_3d_learned_controller_summary.csv)
+- [evaluation CSV](../artifacts/ssrm_3d_learned_controller_eval.csv)
+- [verdict CSV](../artifacts/ssrm_3d_learned_controller_verdict.csv)
+- [JSON results](../artifacts/ssrm_3d_learned_controller_results.json)
+
+## SSRM-3D Done-Enough Gates
+
+Use the SSRM-3D gate document as the current stopping rule for the embodied track:
+
+- [SSRM-3D done-enough gates](63_ssrm_3d_done_enough_gates.md)
+
+The four gates are:
+
+- learned control;
+- tool-making or externalized cognition;
+- real social pressure;
+- targeted ablation.
+
+Current status:
+
+- gate 1 has a useful learned-controller precursor, but direct self-edit action effects remain weak;
+- gates 2 and 3 remain open;
+- gate 4 is partially supported but lacks attention-mixing, continuity-memory, LLM-stream, and tool-access ablations in the learned-control setting.
+
+The proposed attention-buffer capacity sweep belongs after those gates start to exist, or as a targeted gate-4 study of attention mixing. It should be treated as an internal bandwidth hypothesis, not as evidence for consciousness or a special 12-dimensional world.
+
 ## Sixteenth Minimal Experiment
 
 Run a learned bottleneck discovery test.

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Embodied World</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --panel: rgba(18, 20, 22, 0.82);
+      --line: rgba(255, 255, 255, 0.18);
+      --text: #f2f5f1;
+      --muted: #aeb7b0;
+      --green: #6fe38d;
+      --red: #ff6b5f;
+      --blue: #77b7ff;
+      --amber: #f6b44b;
+      --violet: #b78cff;
+    }
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #0e1110;
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+    #scene {
+      position: fixed;
+      inset: 0;
+    }
+    #hud {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      bottom: 16px;
+      width: min(390px, calc(100vw - 32px));
+      background: var(--panel);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(18px);
+      display: grid;
+      grid-template-rows: auto auto auto 1fr;
+      gap: 14px;
+      padding: 16px;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .sub {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 24px;
+      font-size: 13px;
+    }
+    .label {
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .value {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    .bar {
+      height: 7px;
+      background: rgba(255, 255, 255, 0.12);
+      overflow: hidden;
+    }
+    .fill {
+      height: 100%;
+      width: 0%;
+      background: var(--green);
+      transition: width 120ms linear;
+    }
+    .grid {
+      display: grid;
+      gap: 8px;
+    }
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+    .attention {
+      display: grid;
+      gap: 8px;
+    }
+    .attention .row {
+      display: grid;
+      grid-template-columns: 92px 1fr 46px;
+    }
+    .recommendation {
+      color: var(--text);
+      line-height: 1.4;
+      font-size: 13px;
+    }
+    #loading {
+      position: fixed;
+      left: 18px;
+      bottom: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+    }
+    @media (max-width: 760px) {
+      #hud {
+        top: auto;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        width: auto;
+        max-height: 48vh;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="scene"></div>
+  <div id="hud">
+    <div>
+      <h1>SSRM-3D Embodied World</h1>
+      <div class="sub" id="stage">loading trajectory</div>
+    </div>
+    <div class="section">
+      <div class="row"><span class="label">mode</span><span class="value" id="mode">-</span></div>
+      <div class="row"><span class="label">time</span><span class="value" id="time">0.0s</span></div>
+      <div class="row"><span class="label">reward</span><span class="value" id="reward">0</span></div>
+      <div class="row"><span class="label">resources</span><span class="value" id="resources">0</span></div>
+    </div>
+    <div class="section grid">
+      <div>
+        <div class="row"><span class="label">energy</span><span class="value" id="energyValue">0.00</span></div>
+        <div class="bar"><div class="fill" id="energyBar"></div></div>
+      </div>
+      <div>
+        <div class="row"><span class="label">integrity</span><span class="value" id="integrityValue">0.00</span></div>
+        <div class="bar"><div class="fill" id="integrityBar"></div></div>
+      </div>
+      <div>
+        <div class="row"><span class="label">mobility estimate</span><span class="value" id="mobilityValue">0.00</span></div>
+        <div class="bar"><div class="fill" id="mobilityBar"></div></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="attention" id="attention"></div>
+      <div class="recommendation" id="recommendation"></div>
+    </div>
+  </div>
+  <div id="loading">Loading SSRM-3D trajectory...</div>
+
+  <script type="module">
+    import * as THREE from "https://unpkg.com/three@0.164.1/build/three.module.js";
+
+    const container = document.getElementById("scene");
+    const loading = document.getElementById("loading");
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor(0x0e1110, 1);
+    container.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0x0e1110, 70, 150);
+    const camera = new THREE.PerspectiveCamera(52, window.innerWidth / window.innerHeight, 0.1, 260);
+    camera.position.set(35, 42, 58);
+    camera.lookAt(0, 0, 0);
+
+    const hemi = new THREE.HemisphereLight(0xcfe9ff, 0x2b241a, 1.6);
+    scene.add(hemi);
+    const sun = new THREE.DirectionalLight(0xfff1c4, 2.2);
+    sun.position.set(-30, 60, 35);
+    scene.add(sun);
+
+    const materials = {
+      terrain: new THREE.MeshStandardMaterial({ color: 0x27352b, roughness: 0.92, metalness: 0.02 }),
+      grid: new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.12 }),
+      resource: new THREE.MeshStandardMaterial({ color: 0x6fe38d, emissive: 0x173b1e, roughness: 0.45 }),
+      hazard: new THREE.MeshStandardMaterial({ color: 0xff6b5f, emissive: 0x48110c, roughness: 0.55 }),
+      shelter: new THREE.MeshStandardMaterial({ color: 0x77b7ff, emissive: 0x102d49, roughness: 0.35 }),
+      agent: new THREE.MeshStandardMaterial({ color: 0xf6b44b, emissive: 0x4b2b08, roughness: 0.35 }),
+      competitor: new THREE.MeshStandardMaterial({ color: 0xb78cff, emissive: 0x2c1648, roughness: 0.45 }),
+      path: new THREE.LineBasicMaterial({ color: 0xf6b44b, transparent: true, opacity: 0.88 }),
+    };
+
+    function height(x, z) {
+      return 0.9 * Math.sin(x * 0.11) + 0.6 * Math.cos(z * 0.09) + 0.3 * Math.sin((x + z) * 0.05);
+    }
+
+    function makeTerrain(size) {
+      const segments = 80;
+      const geometry = new THREE.PlaneGeometry(size, size, segments, segments);
+      geometry.rotateX(-Math.PI / 2);
+      const pos = geometry.attributes.position;
+      for (let i = 0; i < pos.count; i++) {
+        const x = pos.getX(i);
+        const z = pos.getZ(i);
+        pos.setY(i, height(x, z));
+      }
+      geometry.computeVertexNormals();
+      return new THREE.Mesh(geometry, materials.terrain);
+    }
+
+    function addObject(obj) {
+      let mesh;
+      if (obj.kind === "resource") {
+        mesh = new THREE.Mesh(new THREE.SphereGeometry(1.25, 18, 14), materials.resource);
+      } else if (obj.kind === "hazard") {
+        mesh = new THREE.Mesh(new THREE.ConeGeometry(obj.radius * 0.55, 4.6, 24), materials.hazard);
+      } else {
+        mesh = new THREE.Mesh(new THREE.BoxGeometry(5.4, 3.2, 5.4), materials.shelter);
+      }
+      mesh.position.set(obj.x, height(obj.x, obj.z) + 1.5, obj.z);
+      mesh.userData.id = obj.id;
+      scene.add(mesh);
+      return mesh;
+    }
+
+    function setBar(id, value, color) {
+      const bar = document.getElementById(id);
+      bar.style.width = `${Math.max(0, Math.min(1, value)) * 100}%`;
+      bar.style.background = color;
+    }
+
+    function updateHud(frame) {
+      document.getElementById("mode").textContent = frame.mode;
+      document.getElementById("time").textContent = `${frame.t.toFixed(1)}s`;
+      document.getElementById("reward").textContent = frame.reward.toFixed(1);
+      document.getElementById("resources").textContent = String(frame.resources_collected);
+      document.getElementById("energyValue").textContent = frame.energy.toFixed(2);
+      document.getElementById("integrityValue").textContent = frame.integrity.toFixed(2);
+      document.getElementById("mobilityValue").textContent = frame.mobility_estimate.toFixed(2);
+      setBar("energyBar", frame.energy, "var(--green)");
+      setBar("integrityBar", frame.integrity, "var(--blue)");
+      setBar("mobilityBar", frame.mobility_estimate, "var(--amber)");
+      const attention = document.getElementById("attention");
+      attention.innerHTML = "";
+      Object.entries(frame.attention)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 7)
+        .forEach(([key, value]) => {
+          const row = document.createElement("div");
+          row.className = "row";
+          row.innerHTML = `<span class="label">${key}</span><div class="bar"><div class="fill" style="width:${value * 100}%;background:var(--violet)"></div></div><span class="value">${value.toFixed(2)}</span>`;
+          attention.appendChild(row);
+        });
+      document.getElementById("recommendation").textContent = `${frame.llm_recommendation}: ${frame.llm_reason}`;
+    }
+
+    const response = await fetch("../artifacts/ssrm_3d_trajectory.json", { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Unable to load trajectory (${response.status})`);
+    }
+    const data = await response.json();
+    document.getElementById("stage").textContent = `${data.stage.index} ${data.stage.name} - ${data.stage.pressure}`;
+    loading.remove();
+
+    const size = data.world.world_size;
+    scene.add(makeTerrain(size));
+    const grid = new THREE.GridHelper(size, 16, 0xffffff, 0xffffff);
+    grid.material.opacity = 0.12;
+    grid.material.transparent = true;
+    scene.add(grid);
+
+    const resourceMeshes = new Map();
+    data.world.resources.forEach((obj) => resourceMeshes.set(obj.id, addObject(obj)));
+    data.world.hazards.forEach(addObject);
+    data.world.shelters.forEach(addObject);
+
+    const agent = new THREE.Mesh(new THREE.CapsuleGeometry(1.1, 2.8, 8, 18), materials.agent);
+    scene.add(agent);
+    const competitor = new THREE.Mesh(new THREE.SphereGeometry(1.25, 18, 14), materials.competitor);
+    scene.add(competitor);
+
+    const pathGeometry = new THREE.BufferGeometry();
+    const pathPositions = new Float32Array(data.frames.length * 3);
+    pathGeometry.setAttribute("position", new THREE.BufferAttribute(pathPositions, 3));
+    const path = new THREE.Line(pathGeometry, materials.path);
+    scene.add(path);
+
+    let frameIndex = 0;
+    const clock = new THREE.Clock();
+
+    function render() {
+      requestAnimationFrame(render);
+      const elapsed = clock.getElapsedTime();
+      frameIndex = Math.floor(elapsed * 10) % data.frames.length;
+      const frame = data.frames[frameIndex];
+      agent.position.set(frame.x, frame.y + 2.2, frame.z);
+      agent.rotation.y = -frame.heading + Math.PI / 2;
+      if (frame.competitor.active) {
+        competitor.visible = true;
+        competitor.position.set(frame.competitor.x, height(frame.competitor.x, frame.competitor.z) + 1.5, frame.competitor.z);
+      } else {
+        competitor.visible = false;
+      }
+      resourceMeshes.forEach((mesh, id) => {
+        mesh.visible = frame.active_resources.includes(id);
+      });
+      for (let i = 0; i < data.frames.length; i++) {
+        const source = data.frames[Math.min(i, frameIndex)];
+        pathPositions[i * 3] = source.x;
+        pathPositions[i * 3 + 1] = source.y + 0.2;
+        pathPositions[i * 3 + 2] = source.z;
+      }
+      pathGeometry.attributes.position.needsUpdate = true;
+      updateHud(frame);
+      camera.position.x = frame.x + 34;
+      camera.position.z = frame.z + 52;
+      camera.lookAt(frame.x, 0, frame.z);
+      renderer.render(scene, camera);
+    }
+    render();
+
+    window.addEventListener("resize", () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
+</body>
+</html>

@@ -61,6 +61,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Architecture policy-gradient seed sweep report](docs/57_architecture_policy_gradient_seed_sweep_report.md): tests whether policy-gradient boundary recovery is seed-stable.
 - [Architecture policy-gradient budget sweep report](docs/58_architecture_policy_gradient_budget_sweep_report.md): tests whether larger policy-gradient budgets repair seed instability.
 - [Architecture Torch actor-critic report](docs/59_architecture_torch_actor_critic_report.md): tests whether GPU-backed recurrent actor-critic learners recover the boundary signatures.
+- [SSRM-3D embodied world report](docs/60_ssrm_3d_embodied_world_report.md): tests the same pressures in a persistent 3D world with layered realtime control and visualization.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -479,6 +480,19 @@ This writes:
 - `artifacts/architecture_torch_actor_critic_results.json`
 
 ```bash
+python3 experiments/ssrm_3d_embodied_world.py --episodes 48 --ticks 540 --seed 20260607 --stage-min 0 --stage-max 6 --world-size 80 --perception-hz 10 --goal-hz 2 --reasoning-hz 0.5 --trace-stage 6 --trace-episode 0
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_summary.csv`
+- `artifacts/ssrm_3d_episode_metrics.csv`
+- `artifacts/ssrm_3d_verdict.csv`
+- `artifacts/ssrm_3d_trajectory.json`
+- `artifacts/ssrm_3d_results.json`
+- `visualizations/ssrm_3d.html` replays the trajectory when served from the repo root.
+
+```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2
 ```
 
@@ -664,6 +678,7 @@ The project should not ask whether an agent says it has a self. It should ask wh
 45. Seed-stable under stochastic policy-gradient return learning.
 46. More seed-stable under larger stochastic policy-gradient budgets.
 47. Recoverable under GPU-backed recurrent actor-critic learning.
+48. Recoverable in a persistent 3D embodied world with layered realtime control.
 
 Current stress evidence does not yet satisfy item 37. The architecture boundary stress test finds partial convergence in shared regimes, not strict architecture-wide convergence. Current horizon-pressure evidence partially supports item 38: recoverability improves with horizon, but strict convergence still does not appear.
 Current capacity evidence supports item 39, but only as a diagnostic: source-direction seeds are supplied, so this is not natural emergence.
@@ -675,5 +690,6 @@ Current policy-gradient evidence supports item 44 in this toy benchmark: stochas
 Current policy-gradient seed-sweep evidence does not satisfy item 45: controls remain clean across 5/5 seeds, but shared regimes reach strict convergence in only 2/5 to 3/5 seeds.
 Current policy-gradient budget evidence partially supports item 46: the larger budget repairs self-persistent and passive-world seed stability and keeps controls clean, but detachable-tool convergence remains only 3/5 strict seeds.
 Current Torch actor-critic evidence supports item 47 in the single-seed canonical run: `torch_rnn`, `torch_gru`, and `torch_lstm` recover strict boundary signatures for self-persistent, detachable-tool, and passive-world regimes while independent-hidden and irrelevant controls remain clean on MPS.
+Current SSRM-3D evidence supports item 48 as a first embodied precursor: self-state is not needed in the low-pressure spatial stage, becomes decodable under hidden energy, beats world-only under body drift and delayed options, and dominates after commitments, subsystem conflict, and social pressure enter. Reactive control remains competitive in stages 2 and 3, so the result is a pressure gradient, not a solved Attractor Test.
 
 If agents with no persistent self-equivalent representation match performance, transfer, recovery, and compression under those conditions, the strong self-necessity claim fails.

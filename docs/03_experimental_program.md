@@ -1221,6 +1221,30 @@ Implemented version:
 - [verdict CSV](../artifacts/architecture_torch_actor_critic_verdict.csv)
 - [JSON results](../artifacts/architecture_torch_actor_critic_results.json)
 
+## Supplemental SSRM-3D Embodied World
+
+Run a persistent 3D embodied-world precursor.
+
+This moves the pressure stack into a continuous world with terrain, resources, hazards, shelter, weather, day/night change, commitments, subsystem conflict, and a simple social competitor. The architecture is layered: reflex, perception, self-state, attention, arbiter, slow language module, and action. The language module receives compressed state packets and never directly controls motor behavior.
+
+Current expected result:
+
+- self-state should not be required in the low-pressure spatial stage;
+- reusable self-state latents should become more useful as hidden energy, body drift, delayed options, commitments, arbitration, and social pressure accumulate;
+- ablation should damage the layered agent once the self-state workspace is reused across several control contexts;
+- reactive control may remain competitive in early stages, keeping the pressure-gradient claim falsifiable.
+
+Implemented version:
+
+- [SSRM-3D script](../experiments/ssrm_3d_embodied_world.py)
+- [SSRM-3D report](60_ssrm_3d_embodied_world_report.md)
+- [SSRM-3D visualization](../visualizations/ssrm_3d.html)
+- [summary CSV](../artifacts/ssrm_3d_summary.csv)
+- [episode metrics CSV](../artifacts/ssrm_3d_episode_metrics.csv)
+- [verdict CSV](../artifacts/ssrm_3d_verdict.csv)
+- [trajectory JSON](../artifacts/ssrm_3d_trajectory.json)
+- [JSON results](../artifacts/ssrm_3d_results.json)
+
 ## Sixteenth Minimal Experiment
 
 Run a learned bottleneck discovery test.

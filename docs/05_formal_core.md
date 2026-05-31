@@ -159,6 +159,8 @@ Torch actor-critic learning tests a stronger neural sampled-return learner. If i
 
 SSRM-3D tests whether the same formal pressure survives embodiment. The language module is not part of the fast control loop; it receives compressed state packets and only recommends. The self-equivalent variable remains the persistent control state that links hidden viability, capability, prediction error, commitments, attention, and arbitration to future action.
 
+SSRM-3D recurrent observation tests whether that variable can be recovered from traces rather than read from the hand-built workspace. A recurrent observer supports the formal claim only if its hidden state decodes agent variables, improves over a frame-only observer under pressure, and changes future-viability prediction when edited along the learned self-state direction.
+
 A learned shared bottleneck is still not enough. If an unlabeled learner discovers a compact latent `z_t`, it is self-equivalent only after causal tests show that `z_t` is agent-bounded. A reusable external variable can produce the same compression advantage without being a self variable.
 
 Sequence transfer is a stricter version of reuse. Early observations can support later control only when they reveal a latent that persists across contexts. That latent remains only a candidate self variable until causal boundary tests show that it tracks `A_t` rather than `E_t`.

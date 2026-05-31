@@ -175,6 +175,8 @@ The architecture Torch actor-critic learner closes the next narrow precursor und
 
 The SSRM-3D embodied-world precursor starts the persistent 3D track. It keeps the LLM as a slow language-cortex module rather than the controller, and tests whether reflex, perception, self-state, attention, arbiter, and action layers benefit from a reusable self-state workspace under staged embodiment pressure.
 
+The SSRM-3D recurrent-observer precursor then tests whether that workspace can be recovered from traces. GPU-backed recurrent observers watch embodied action-observation streams from all SSRM-3D source agents. The low-pressure stage remains only body-state decodability with little recurrent advantage, while stages 1-6 show stronger recurrent self-state recovery and future-viability sensitivity to self-state edits.
+
 The learned bottleneck discovery experiment adds that a shared latent can be selected from unlabeled outcome data. It is selected for both agent-state reuse and external-world reuse, which means compression alone discovers reusable hidden structure, not selfhood.
 
 The sequence latent transfer experiment adds held-out transfer: calibration outcomes support later action only when they reveal a persistent sequence state. The same transfer works for reusable world-state, so boundary evidence remains necessary.
@@ -264,6 +266,8 @@ The architecture policy-gradient budget sweep shows that the seed instability is
 The architecture Torch actor-critic learner adds a stronger neural sampled-return result. Across `torch_rnn`, `torch_gru`, and `torch_lstm`, the canonical run recovers 3/3 strict convergence in self-persistent, detachable-tool, and passive-world regimes and preserves 3/3 control rejection in independent-hidden and irrelevant regimes.
 
 The SSRM-3D embodied-world precursor adds an embodied pressure gradient. In the low-pressure spatial stage, no-self reactive control remains sufficient. Under hidden energy, body drift, and delayed options, the layered self-state latent becomes decodable and beats the world-only model, though reactive control remains competitive in body-drift and delayed-option stages. Once commitments, subsystem arbitration, and social pressure enter, the layered self-state agent dominates and self-state ablation sharply reduces reward.
+
+The SSRM-3D recurrent-observer precursor adds learned representation evidence on the same embodied traces. In stage 0, `torch_lstm` recovers body state but only gains 0.032 over the frame-only baseline. In stages 1-6, recurrent observers gain 0.071 to 0.362 self-state R2 over frame-only observers, and learned self-state edits move future-viability prediction.
 
 The learned bottleneck discovery experiment adds a simple model-selection step: the learned policy chooses a shared bottleneck in reusable-hidden regimes, local probes in independent-hidden regimes, and no hidden state when hidden state is irrelevant.
 
@@ -395,6 +399,7 @@ The experiments produce non-conscious self-equivalent mechanisms:
 - architecture policy-gradient budget sweeping;
 - architecture Torch actor-critic learning;
 - SSRM-3D embodied-world layering and visualization;
+- SSRM-3D recurrent-observer representation learning;
 - learned bottleneck discovery;
 - sequence latent transfer;
 - heterogeneous learner convergence;
@@ -475,6 +480,7 @@ The theory weakens or fails if future experiments show that:
 - policy-gradient budget sweeps fail to repair seed instability or create control false positives under larger budgets;
 - Torch actor-critic seed sweeps lose strict shared-regime convergence, disagree across CPU/MPS backends, or produce false positives in controls;
 - SSRM-3D reactive or world-only agents scale through commitment, arbitration, and social pressure with equal value, or self-state ablation does not damage the layered agent;
+- SSRM-3D recurrent observers fail to recover stronger self-state than frame-only observers under pressure, or self-state edits do not affect future-viability prediction;
 - world-only or action-history agents scale through hidden and drifting body frames without compact centered state;
 - recurrent agents solve body drift, hidden viability, and corrupted continuity with no stable agent-state information;
 - interventions on decoded agent-state variables do not change prediction or control;
@@ -522,6 +528,7 @@ The attractor claim becomes stronger if:
 - policy-gradient budget sweeps test whether remaining seed failures are optimization-budget artifacts or persistent boundary failures;
 - Torch actor-critic learners test whether neural recurrent sampled-return credit assignment reproduces the same boundaries across RNN, GRU, and LSTM architectures;
 - SSRM-3D tests whether the same pressure gradient appears in a persistent embodied world with layered realtime control and a non-controller language module;
+- SSRM-3D recurrent observers test whether embodied self-state can be recovered from traces without reading the hand-built workspace;
 - learned bottlenecks emerge without self labels and are correctly separated into agent-state, world-state, local-hidden, and no-hidden cases by causal tests.
 - sequence latents inferred from early outcomes transfer to held-out contexts and are separated into agent-state versus world-state by causal tests.
 - heterogeneous learner families converge on the same latent causal signature while still separating agent-bounded latents from external shared latents.
@@ -537,9 +544,9 @@ The attractor claim becomes stronger if:
 
 ## Current Research Status
 
-The program has a coherent falsifiable theory and fifty-one toy experiment families, including an executable hidden-state boundary probe, a first architecture-convergence test, active self-information, counterfactual option-preservation, first-person frame integration, goal formation under capability, competing-subsystems arbitration, cross-context self-state reuse, reuse-pressure scaling, horizon-pressure scaling, partial-observability belief scaling, learned noisy-observation filtering, recurrent observation filtering, unseeded recurrent filtering, mixed-sensor recurrent filtering, learned sensor-subspace filtering, active boundary discovery, action-effect boundary probing, persistent action-boundary probing, return-selected boundary probing, end-to-end recurrent boundary probing, architecture boundary stress testing, architecture horizon-pressure sweeping, architecture capacity probing, architecture soft-return optimization, architecture hard-return auditing, architecture hard-return horizon sweeping, architecture online return learning, architecture policy-gradient return learning, architecture policy-gradient seed sweeping, architecture policy-gradient budget sweeping, architecture Torch actor-critic learning, SSRM-3D embodied-world layering, learned bottleneck discovery, sequence latent transfer, heterogeneous learner convergence, cross-environment boundary recurrence, factorial learner-environment convergence, raw reward-history learning, delayed-return memory policy learning, evolved recurrent hidden-state learning, gradient-trained recurrent hidden-state learning, model-based reward planning, latent causal ablation, and counterfactual latent editing. It does not yet prove a general law of adaptive systems.
+The program has a coherent falsifiable theory and fifty-two toy experiment families, including an executable hidden-state boundary probe, a first architecture-convergence test, active self-information, counterfactual option-preservation, first-person frame integration, goal formation under capability, competing-subsystems arbitration, cross-context self-state reuse, reuse-pressure scaling, horizon-pressure scaling, partial-observability belief scaling, learned noisy-observation filtering, recurrent observation filtering, unseeded recurrent filtering, mixed-sensor recurrent filtering, learned sensor-subspace filtering, active boundary discovery, action-effect boundary probing, persistent action-boundary probing, return-selected boundary probing, end-to-end recurrent boundary probing, architecture boundary stress testing, architecture horizon-pressure sweeping, architecture capacity probing, architecture soft-return optimization, architecture hard-return auditing, architecture hard-return horizon sweeping, architecture online return learning, architecture policy-gradient return learning, architecture policy-gradient seed sweeping, architecture policy-gradient budget sweeping, architecture Torch actor-critic learning, SSRM-3D embodied-world layering, SSRM-3D recurrent-observer representation learning, learned bottleneck discovery, sequence latent transfer, heterogeneous learner convergence, cross-environment boundary recurrence, factorial learner-environment convergence, raw reward-history learning, delayed-return memory policy learning, evolved recurrent hidden-state learning, gradient-trained recurrent hidden-state learning, model-based reward planning, latent causal ablation, and counterfactual latent editing. It does not yet prove a general law of adaptive systems.
 
-The newest evidence adds SSRM-3D: a persistent 3D embodied-world precursor with a layered non-LLM controller and a visualization. It supports a pressure-gradient reading: no-self control is enough in the low-pressure stage, the self-state latent becomes decodable under hidden energy and body drift, and it becomes strongly performance-relevant once commitments, arbitration, and social pressure accumulate. The next target is to replace the hand-built controller with trained recurrent or model-based agents in the same world.
+The newest evidence adds SSRM-3D recurrent observation: GPU-backed recurrent observers recover self-state from embodied traces. It supports a pressure-gradient reading: low-pressure body state is decodable without much recurrent advantage, but hidden energy, body drift, delayed options, commitments, arbitration, and social pressure make recurrent self-state more useful for future-viability prediction. The next target is to train controllers, not just observers, in the same world.
 
 The next step is to replace linear learners and hand-coded policies with richer independent learned architectures:
 

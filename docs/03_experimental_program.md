@@ -1245,6 +1245,27 @@ Implemented version:
 - [trajectory JSON](../artifacts/ssrm_3d_trajectory.json)
 - [JSON results](../artifacts/ssrm_3d_results.json)
 
+## Supplemental SSRM-3D Recurrent Observer
+
+Run a GPU-backed recurrent-observer precursor on SSRM-3D traces.
+
+This removes the hand-built self-state workspace from the measured representation. The trace generator is still SSRM-3D, but the observer receives action-observation packets and must learn hidden state useful for future viability prediction.
+
+Current expected result:
+
+- body state may be decodable even in the low-pressure spatial stage, but recurrence should add little there;
+- recurrent observers should recover stronger self-state than a frame-only model once hidden energy, body drift, delayed options, commitments, arbitration, and social pressure accumulate;
+- counterfactual edits along the learned self-state direction should move future-viability prediction;
+- self-subspace ablation should be reported as a stricter causal check, not hidden inside the verdict.
+
+Implemented version:
+
+- [SSRM-3D recurrent observer script](../experiments/ssrm_3d_recurrent_observer.py)
+- [SSRM-3D recurrent observer report](61_ssrm_3d_recurrent_observer_report.md)
+- [summary CSV](../artifacts/ssrm_3d_recurrent_observer_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_recurrent_observer_verdict.csv)
+- [JSON results](../artifacts/ssrm_3d_recurrent_observer_results.json)
+
 ## Sixteenth Minimal Experiment
 
 Run a learned bottleneck discovery test.

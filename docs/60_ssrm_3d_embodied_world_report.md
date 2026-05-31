@@ -111,7 +111,7 @@ This is still toy-scale:
 - latent metrics are computed from known simulator state;
 - social dynamics are minimal.
 
-The next stronger version should train recurrent or model-based agents from raw action-observation-reward traces in this world, then test whether the same self-state latents are decodable, reusable, ablatable, and counterfactually editable.
+Report 61 takes the next representation step by training recurrent observers on embodied traces. The stronger remaining version is learned control: recurrent or model-based agents trained from return in this world, then probed for the same self-state latents.
 
 ## Artifacts
 

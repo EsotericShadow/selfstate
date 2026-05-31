@@ -155,6 +155,8 @@ Policy-gradient seed sweeping separates recoverability from seed-stable converge
 
 Policy-gradient budget sweeping tests whether those failures are just small-budget optimization artifacts. If a larger budget repairs self-boundary seed stability while controls remain clean, the attractor claim strengthens for agent-bounded recurrence. If detachable-tool recurrence remains partial, the remaining gap is not generic hidden-state tracking; it is the harder distinction between the continuing agent boundary and detachable external action effects.
 
+Torch actor-critic learning tests a stronger neural sampled-return learner. If independently trained `RNN`, `GRU`, and `LSTM` actor-critics recover the self-persistent, detachable-tool, and passive-world boundary signatures while independent-hidden and irrelevant controls stay clean, the evidence supports credit-assignment-driven boundary discovery rather than generic hidden-state tracking. This still remains a toy precursor, not a consciousness result or a general attractor law.
+
 A learned shared bottleneck is still not enough. If an unlabeled learner discovers a compact latent `z_t`, it is self-equivalent only after causal tests show that `z_t` is agent-bounded. A reusable external variable can produce the same compression advantage without being a self variable.
 
 Sequence transfer is a stricter version of reuse. Early observations can support later control only when they reveal a latent that persists across contexts. That latent remains only a candidate self variable until causal boundary tests show that it tracks `A_t` rather than `E_t`.

@@ -16,7 +16,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import math
 import random
 import statistics
 from dataclasses import asdict, dataclass
@@ -43,19 +42,19 @@ class TorchActorCriticConfig:
     episodes: int = 200
     training_episodes: int = 400
     validation_episodes: int = 240
-    batch_episodes: int = 256
+    batch_episodes: int = 512
     seed: int = 20260606
     horizon: int = 8
     evidence_samples: int = 9
     cue_accuracy: float = 0.85
     shared_cue_cost: float = 1.0
     local_probe_cost: float = 1.0
-    epochs: int = 140
-    restarts: int = 3
-    hidden_size: int = 8
-    learning_rate: float = 0.015
-    entropy_weight: float = 0.015
-    value_weight: float = 0.5
+    epochs: int = 300
+    restarts: int = 8
+    hidden_size: int = 12
+    learning_rate: float = 0.02
+    entropy_weight: float = 0.0
+    value_weight: float = 0.35
     max_grad_norm: float = 2.0
     device: str = "auto"
 
@@ -605,19 +604,19 @@ def parse_args() -> TorchActorCriticConfig:
     parser.add_argument("--episodes", type=int, default=200)
     parser.add_argument("--training-episodes", type=int, default=400)
     parser.add_argument("--validation-episodes", type=int, default=240)
-    parser.add_argument("--batch-episodes", type=int, default=256)
+    parser.add_argument("--batch-episodes", type=int, default=512)
     parser.add_argument("--seed", type=int, default=20260606)
     parser.add_argument("--horizon", type=int, default=8)
     parser.add_argument("--evidence-samples", type=int, default=9)
     parser.add_argument("--cue-accuracy", type=float, default=0.85)
     parser.add_argument("--shared-cue-cost", type=float, default=1.0)
     parser.add_argument("--local-probe-cost", type=float, default=1.0)
-    parser.add_argument("--epochs", type=int, default=140)
-    parser.add_argument("--restarts", type=int, default=3)
-    parser.add_argument("--hidden-size", type=int, default=8)
-    parser.add_argument("--learning-rate", type=float, default=0.015)
-    parser.add_argument("--entropy-weight", type=float, default=0.015)
-    parser.add_argument("--value-weight", type=float, default=0.5)
+    parser.add_argument("--epochs", type=int, default=300)
+    parser.add_argument("--restarts", type=int, default=8)
+    parser.add_argument("--hidden-size", type=int, default=12)
+    parser.add_argument("--learning-rate", type=float, default=0.02)
+    parser.add_argument("--entropy-weight", type=float, default=0.0)
+    parser.add_argument("--value-weight", type=float, default=0.35)
     parser.add_argument("--max-grad-norm", type=float, default=2.0)
     parser.add_argument("--device", type=str, default="auto")
     args = parser.parse_args()

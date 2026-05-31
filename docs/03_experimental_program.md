@@ -1201,6 +1201,26 @@ Implemented version:
 - [verdict CSV](../artifacts/architecture_policy_gradient_budget_sweep_verdict.csv)
 - [JSON results](../artifacts/architecture_policy_gradient_budget_sweep_results.json)
 
+## Supplemental Architecture Torch Actor-Critic Learner
+
+Run a Torch recurrent actor-critic learner.
+
+This replaces the score-function toy policy with PyTorch `RNN`, `GRU`, and `LSTM` actor-critic learners trained from sampled episode return. It uses Apple Silicon MPS when available and applies the same post-training causal boundary classifier to policy logits.
+
+Current expected result:
+
+- shared regimes should recover strict boundary convergence across Torch recurrent architectures;
+- detachable-tool recurrence should be separated from persistent agent-boundary recurrence;
+- independent-hidden and irrelevant controls should stay clean.
+
+Implemented version:
+
+- [architecture Torch actor-critic script](../experiments/architecture_torch_actor_critic.py)
+- [architecture Torch actor-critic report](59_architecture_torch_actor_critic_report.md)
+- [summary CSV](../artifacts/architecture_torch_actor_critic_summary.csv)
+- [verdict CSV](../artifacts/architecture_torch_actor_critic_verdict.csv)
+- [JSON results](../artifacts/architecture_torch_actor_critic_results.json)
+
 ## Sixteenth Minimal Experiment
 
 Run a learned bottleneck discovery test.

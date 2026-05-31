@@ -67,6 +67,8 @@ The current claim should therefore be:
 
 > Larger policy-gradient budgets make self-boundary recovery seed-stable in this toy benchmark and keep controls clean, but they do not yet produce seed-stable convergence for all self-equivalent boundary distinctions.
 
+Report 59 tests the next narrow repair: a Torch actor-critic learner closes the detachable-tool boundary for `RNN`, `GRU`, and `LSTM` architectures in a single canonical MPS run. That does not retroactively make this budget sweep seed-stable; it identifies the next mechanism to seed-sweep.
+
 ## Falsifiers And Strengtheners
 
 The attractor claim weakens if:
@@ -78,7 +80,7 @@ The attractor claim weakens if:
 The attractor claim strengthens if:
 
 - detachable-tool convergence becomes seed-stable under a principled learner improvement;
-- actor-critic variants reproduce the self/passive repairs without control false positives;
+- actor-critic seed sweeps reproduce the self/tool/passive repairs without control false positives;
 - the same budget-sensitive repair appears across richer body, viability, frame, and continuity environments.
 
 ## Artifacts

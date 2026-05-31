@@ -171,6 +171,8 @@ The architecture policy-gradient seed sweep then limits that positive result. Ac
 
 The architecture policy-gradient budget sweep partially repairs that limit. A larger policy-gradient budget makes self-persistent and passive-world recurrence strict across all five seeds while preserving clean controls. Detachable-tool recurrence improves but remains partial, so the continuing-agent versus detachable-external boundary is still the hard case.
 
+The architecture Torch actor-critic learner closes the next narrow precursor under a single canonical MPS run. PyTorch `RNN`, `GRU`, and `LSTM` actor-critics recover strict self-persistent, detachable-tool, and passive-world boundary signatures while independent-hidden and irrelevant controls stay clean.
+
 The learned bottleneck discovery experiment adds that a shared latent can be selected from unlabeled outcome data. It is selected for both agent-state reuse and external-world reuse, which means compression alone discovers reusable hidden structure, not selfhood.
 
 The sequence latent transfer experiment adds held-out transfer: calibration outcomes support later action only when they reveal a persistent sequence state. The same transfer works for reusable world-state, so boundary evidence remains necessary.
@@ -256,6 +258,8 @@ The architecture policy-gradient learner shows that stronger sampled-return cred
 The architecture policy-gradient seed sweep shows that the result is not yet seed-stable. Shared regimes recover most architecture-seed cells, but strict convergence appears in only 2/5 to 3/5 seeds. Controls remain 5/5 stable.
 
 The architecture policy-gradient budget sweep shows that the seed instability is partly an optimization-budget artifact. The larger budget repairs self-persistent and passive-world strict seed convergence and preserves 5/5 controls, but detachable-tool convergence remains at 3/5 strict seeds.
+
+The architecture Torch actor-critic learner adds a stronger neural sampled-return result. Across `torch_rnn`, `torch_gru`, and `torch_lstm`, the canonical run recovers 3/3 strict convergence in self-persistent, detachable-tool, and passive-world regimes and preserves 3/3 control rejection in independent-hidden and irrelevant regimes.
 
 The learned bottleneck discovery experiment adds a simple model-selection step: the learned policy chooses a shared bottleneck in reusable-hidden regimes, local probes in independent-hidden regimes, and no hidden state when hidden state is irrelevant.
 
@@ -385,6 +389,7 @@ The experiments produce non-conscious self-equivalent mechanisms:
 - architecture policy-gradient return learning;
 - architecture policy-gradient seed sweeping;
 - architecture policy-gradient budget sweeping;
+- architecture Torch actor-critic learning;
 - learned bottleneck discovery;
 - sequence latent transfer;
 - heterogeneous learner convergence;
@@ -463,6 +468,7 @@ The theory weakens or fails if future experiments show that:
 - policy-gradient learners fail to reproduce strict shared-regime convergence across seeds or produce control false positives;
 - policy-gradient seed sweeps show convergence collapses toward local/no-hidden strategies in shared regimes;
 - policy-gradient budget sweeps fail to repair seed instability or create control false positives under larger budgets;
+- Torch actor-critic seed sweeps lose strict shared-regime convergence, disagree across CPU/MPS backends, or produce false positives in controls;
 - world-only or action-history agents scale through hidden and drifting body frames without compact centered state;
 - recurrent agents solve body drift, hidden viability, and corrupted continuity with no stable agent-state information;
 - interventions on decoded agent-state variables do not change prediction or control;
@@ -508,6 +514,7 @@ The attractor claim becomes stronger if:
 - policy-gradient learners test whether sampled-return credit assignment can recover boundary signatures without smooth reward surrogates;
 - policy-gradient seed sweeps test whether that recovery is robust or only seed-specific;
 - policy-gradient budget sweeps test whether remaining seed failures are optimization-budget artifacts or persistent boundary failures;
+- Torch actor-critic learners test whether neural recurrent sampled-return credit assignment reproduces the same boundaries across RNN, GRU, and LSTM architectures;
 - learned bottlenecks emerge without self labels and are correctly separated into agent-state, world-state, local-hidden, and no-hidden cases by causal tests.
 - sequence latents inferred from early outcomes transfer to held-out contexts and are separated into agent-state versus world-state by causal tests.
 - heterogeneous learner families converge on the same latent causal signature while still separating agent-bounded latents from external shared latents.
@@ -523,9 +530,9 @@ The attractor claim becomes stronger if:
 
 ## Current Research Status
 
-The program has a coherent falsifiable theory and forty-nine toy experiment families, including an executable hidden-state boundary probe, a first architecture-convergence test, active self-information, counterfactual option-preservation, first-person frame integration, goal formation under capability, competing-subsystems arbitration, cross-context self-state reuse, reuse-pressure scaling, horizon-pressure scaling, partial-observability belief scaling, learned noisy-observation filtering, recurrent observation filtering, unseeded recurrent filtering, mixed-sensor recurrent filtering, learned sensor-subspace filtering, active boundary discovery, action-effect boundary probing, persistent action-boundary probing, return-selected boundary probing, end-to-end recurrent boundary probing, architecture boundary stress testing, architecture horizon-pressure sweeping, architecture capacity probing, architecture soft-return optimization, architecture hard-return auditing, architecture hard-return horizon sweeping, architecture online return learning, architecture policy-gradient return learning, architecture policy-gradient seed sweeping, architecture policy-gradient budget sweeping, learned bottleneck discovery, sequence latent transfer, heterogeneous learner convergence, cross-environment boundary recurrence, factorial learner-environment convergence, raw reward-history learning, delayed-return memory policy learning, evolved recurrent hidden-state learning, gradient-trained recurrent hidden-state learning, model-based reward planning, latent causal ablation, and counterfactual latent editing. It does not yet prove a general law of adaptive systems.
+The program has a coherent falsifiable theory and fifty toy experiment families, including an executable hidden-state boundary probe, a first architecture-convergence test, active self-information, counterfactual option-preservation, first-person frame integration, goal formation under capability, competing-subsystems arbitration, cross-context self-state reuse, reuse-pressure scaling, horizon-pressure scaling, partial-observability belief scaling, learned noisy-observation filtering, recurrent observation filtering, unseeded recurrent filtering, mixed-sensor recurrent filtering, learned sensor-subspace filtering, active boundary discovery, action-effect boundary probing, persistent action-boundary probing, return-selected boundary probing, end-to-end recurrent boundary probing, architecture boundary stress testing, architecture horizon-pressure sweeping, architecture capacity probing, architecture soft-return optimization, architecture hard-return auditing, architecture hard-return horizon sweeping, architecture online return learning, architecture policy-gradient return learning, architecture policy-gradient seed sweeping, architecture policy-gradient budget sweeping, architecture Torch actor-critic learning, learned bottleneck discovery, sequence latent transfer, heterogeneous learner convergence, cross-environment boundary recurrence, factorial learner-environment convergence, raw reward-history learning, delayed-return memory policy learning, evolved recurrent hidden-state learning, gradient-trained recurrent hidden-state learning, model-based reward planning, latent causal ablation, and counterfactual latent editing. It does not yet prove a general law of adaptive systems.
 
-The newest evidence adds a policy-gradient budget sweep: larger budgets repair self-persistent and passive-world seed stability and keep controls clean, but detachable-tool recurrence remains partial. This sharpens the next target: test actor-critic variants and richer environment surfaces for the remaining detachable-boundary failure.
+The newest evidence adds a Torch actor-critic precursor: neural recurrent `RNN`, `GRU`, and `LSTM` actor-critics recover strict self-persistent, detachable-tool, and passive-world boundary signatures in the canonical MPS run while controls remain clean. This sharpens the next target: actor-critic seed sweeps, backend checks, and richer environment surfaces.
 
 The next step is to replace linear learners and hand-coded policies with richer independent learned architectures:
 

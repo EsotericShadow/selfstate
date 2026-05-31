@@ -67,7 +67,7 @@ The current claim should therefore be:
 
 > Policy-gradient credit assignment can recover self-equivalent boundary structure under sampled return, but the result is not yet a seed-stable attractor law.
 
-Report 58 tests whether that instability is a budget artifact. It finds that larger budgets repair self-persistent and passive-world seed stability while keeping controls clean, but detachable-tool recurrence remains partial.
+Report 58 tests whether that instability is a budget artifact. It finds that larger budgets repair self-persistent and passive-world seed stability while keeping controls clean, but detachable-tool recurrence remains partial. Report 59 then tests a neural actor-critic repair and closes that detachable-tool boundary in a single canonical run; seed stability is still open.
 
 ## Falsifiers And Strengtheners
 
@@ -80,7 +80,7 @@ The attractor claim weakens if:
 The attractor claim strengthens if:
 
 - larger policy-gradient budgets make strict convergence seed-stable;
-- actor-critic or model-based learners recover the same boundary more reliably;
+- actor-critic or model-based learners recover the same boundary more reliably across seeds;
 - the same seed-stability appears across body, viability, frame, and continuity task surfaces.
 
 ## Artifacts

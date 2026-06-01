@@ -165,6 +165,8 @@ SSRM-3D tool-making tests whether useful control state can be externalized into 
 
 SSRM-3D social pressure tests whether the agent's own continuity becomes a social control variable. A model of other agents is not selfhood by itself. It supports the formal claim only when the tested agent must track its own vulnerability, reputation, obligations, and remembered identity because other agents can help, exploit, deceive, trade, or sabotage across time.
 
+SSRM-3D social ecology tests whether communication becomes social infrastructure only when it has a control job. A signal, name, gossip report, or check-in is not selfhood by itself. It supports the formal claim only when costly communication is rejected in no-job controls and selected because persistent social memory changes the agent's future repair, cooperation, deception-resistance, or shared-tool options.
+
 SSRM-3D recurrent observation tests whether that variable can be recovered from traces rather than read from the hand-built workspace. A recurrent observer supports the formal claim only if its hidden state decodes agent variables, improves over a frame-only observer under pressure, and changes future-viability prediction when edited along the learned self-state direction.
 
 SSRM-3D learned control tests the same pressure inside policy state. A learned controller supports the formal claim only if recurrence is not useful in the low-pressure stage, but becomes useful for control as hidden agent-state pressure accumulates, and the learned recurrent policy state contains decodable agent variables without self-label training. If action edits along that state remain weak, the result supports representation-for-control but not yet robust causal editability.

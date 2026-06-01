@@ -1358,7 +1358,37 @@ Implemented version:
 - [summary CSV](../artifacts/ssrm_3d_social_pressure_summary.csv)
 - [verdict CSV](../artifacts/ssrm_3d_social_pressure_verdict.csv)
 - [trace JSON](../artifacts/ssrm_3d_social_pressure_trace.json)
+- [trace JS fallback](../artifacts/ssrm_3d_social_pressure_trace.js)
 - [JSON results](../artifacts/ssrm_3d_social_pressure_results.json)
+
+## Supplemental SSRM-3D Social Ecology
+
+Run a costly-communication precursor in SSRM-3D.
+
+Communication has explicit time, energy, and opportunity costs. Policies are not rewarded for talking. They are selected only by episode return, then tested with signal, name, gossip, and check-in ablations.
+
+Current expected result:
+
+- communication should be rejected when resources are visible and no social information advantage exists;
+- warning signals should be selected only when transferred route information beats rediscovery;
+- identity names should be selected only when persistent social history matters;
+- gossip should be selected only when absent-agent information improves future decisions;
+- check-ins should be selected only when low-cost contact maintains trust, repair, shared-tool access, or future options;
+- babble should lose return when communication has no control job.
+
+Implemented version:
+
+- [SSRM-3D social-ecology script](../experiments/ssrm_3d_social_ecology.py)
+- [SSRM-3D social-ecology report](67_ssrm_3d_social_ecology_report.md)
+- [social-ecology visualization](../visualizations/ssrm_3d_social_ecology.html)
+- [evaluation CSV](../artifacts/ssrm_3d_social_ecology_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_social_ecology_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_social_ecology_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_social_ecology_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_social_ecology_trace.json)
+- [JSON results](../artifacts/ssrm_3d_social_ecology_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_social_ecology_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_social_ecology_results.js)
 
 ## Modular LLM Architecture Boundary
 

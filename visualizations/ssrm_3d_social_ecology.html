@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Social Ecology Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111312;
+      --panel: rgba(18, 22, 20, 0.94);
+      --line: rgba(244, 247, 241, 0.16);
+      --text: #f4f7f1;
+      --muted: #a9b4ab;
+      --agent: #f3bd63;
+      --scout: #76c7ff;
+      --helper: #74d990;
+      --builder: #ffd46f;
+      --opportunist: #ff736e;
+      --deceiver: #c6a0ff;
+      --cache: #8be3b6;
+      --hazard: #ff9664;
+      --shelter: #ffffff;
+      --signal: #76c7ff;
+      --name: #f3bd63;
+      --gossip: #c6a0ff;
+      --checkin: #74d990;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 390px;
+      min-height: 100vh;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #101613;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .label,
+    .legend span,
+    .verdict-row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+    }
+
+    .value {
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .legend {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 7px;
+    }
+
+    .bars {
+      display: grid;
+      gap: 7px;
+    }
+
+    .bar {
+      height: 8px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: var(--checkin);
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: #1d241f;
+      color: var(--text);
+      padding: 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .verdict-row {
+      display: grid;
+      grid-template-columns: 20px 1fr auto;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      color: var(--text);
+      padding: 2px 6px;
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 64vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Social Ecology Trace</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+    <div class="section">
+      <div class="row"><span class="label">tick</span><span class="value" id="tick">0</span></div>
+      <div class="row"><span class="label">event</span><span class="value" id="event">-</span></div>
+      <div class="row"><span class="label">note</span><span class="value" id="note">-</span></div>
+      <div class="row"><span class="label">energy</span><span class="value" id="energy">0.00</span></div>
+      <div class="row"><span class="label">integrity</span><span class="value" id="integrity">0.00</span></div>
+      <div class="row"><span class="label">future options</span><span class="value" id="options">0.00</span></div>
+      <div class="row"><span class="label">communication cost</span><span class="value" id="cost">0.0</span></div>
+      <div class="row"><span class="label">reward</span><span class="value" id="reward">0.0</span></div>
+    </div>
+    <div class="section">
+      <input id="scrubber" type="range" min="0" max="0" value="0">
+      <button type="button" id="play">Pause</button>
+    </div>
+    <div class="section legend">
+      <span><i class="dot" style="background: var(--agent)"></i>tested agent</span>
+      <span><i class="dot" style="background: var(--scout)"></i>scout</span>
+      <span><i class="dot" style="background: var(--helper)"></i>helper</span>
+      <span><i class="dot" style="background: var(--builder)"></i>builder</span>
+      <span><i class="dot" style="background: var(--opportunist)"></i>opportunist</span>
+      <span><i class="dot" style="background: var(--deceiver)"></i>deceiver</span>
+      <span><i class="dot" style="background: var(--cache)"></i>cache</span>
+      <span><i class="dot" style="background: var(--hazard)"></i>hazard</span>
+    </div>
+    <div class="section">
+      <h2>Communication Counts</h2>
+      <div class="row"><span class="label">signals</span><span class="value" id="signals">0</span></div>
+      <div class="row"><span class="label">names</span><span class="value" id="names">0</span></div>
+      <div class="row"><span class="label">gossip</span><span class="value" id="gossip">0</span></div>
+      <div class="row"><span class="label">check-ins</span><span class="value" id="checkins">0</span></div>
+    </div>
+    <div class="section">
+      <h2>Trust State</h2>
+      <div class="bars" id="trustBars"></div>
+    </div>
+    <div class="section">
+      <h2>Scenario Verdicts</h2>
+      <div id="verdicts"></div>
+    </div>
+    <div class="section">
+      <h2>Gate 3 Reading</h2>
+      <p>Communication pays for itself only when it moves information, identity, reputation, or trust maintenance more cheaply than acting alone.</p>
+    </div>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_social_ecology_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_social_ecology_results.js"></script>
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const scrubber = document.getElementById("scrubber");
+    const playButton = document.getElementById("play");
+    let trace = null;
+    let results = null;
+    let frameIndex = 0;
+    let playing = true;
+
+    function resize() {
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.floor(canvas.clientWidth * ratio);
+      canvas.height = Math.floor(canvas.clientHeight * ratio);
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      draw();
+    }
+
+    function toScreen(x, z) {
+      const pad = 40;
+      const size = trace ? trace.world.size : 88;
+      const w = canvas.clientWidth - pad * 2;
+      const h = canvas.clientHeight - pad * 2;
+      return [
+        pad + ((x + size / 2) / size) * w,
+        pad + ((z + size / 2) / size) * h,
+      ];
+    }
+
+    function roleColor(role) {
+      const colors = {
+        self: "#f3bd63",
+        scout: "#76c7ff",
+        helper: "#74d990",
+        builder: "#ffd46f",
+        opportunist: "#ff736e",
+        deceiver: "#c6a0ff",
+        cache: "#8be3b6",
+        hazard: "#ff9664",
+        shelter: "#ffffff",
+      };
+      return colors[role] || "#a9b4ab";
+    }
+
+    function eventColor(event) {
+      const colors = {
+        signal: "#76c7ff",
+        name: "#f3bd63",
+        gossip: "#c6a0ff",
+        checkin: "#74d990",
+        repair: "#74d990",
+        exploit: "#ff736e",
+        deception: "#c6a0ff",
+        tool: "#ffd46f",
+        hazard: "#ff9664",
+        resource: "#8be3b6",
+        commitment: "#ffffff",
+      };
+      return colors[event] || "#f4f7f1";
+    }
+
+    function circle(x, z, radius, color, stroke) {
+      const [sx, sy] = toScreen(x, z);
+      ctx.beginPath();
+      ctx.arc(sx, sy, radius, 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.fill();
+      if (stroke) {
+        ctx.strokeStyle = stroke;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+      }
+      return [sx, sy];
+    }
+
+    function label(x, y, text) {
+      ctx.fillStyle = "rgba(244, 247, 241, 0.82)";
+      ctx.font = "12px Inter, system-ui, sans-serif";
+      ctx.fillText(text, x + 9, y - 8);
+    }
+
+    function drawLink(from, to, color, strength) {
+      const positions = trace.world.positions;
+      const a = positions[from];
+      const b = positions[to];
+      if (!a || !b) return;
+      const [ax, ay] = toScreen(a.x, a.z);
+      const [bx, by] = toScreen(b.x, b.z);
+      ctx.strokeStyle = color;
+      ctx.globalAlpha = Math.max(0.12, Math.min(0.75, strength));
+      ctx.lineWidth = 1 + strength * 5;
+      ctx.beginPath();
+      ctx.moveTo(ax, ay);
+      ctx.lineTo(bx, by);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
+      if (!trace || !trace.frames.length) return;
+      const frame = trace.frames[frameIndex];
+      const positions = trace.world.positions;
+
+      ctx.fillStyle = "#101613";
+      ctx.fillRect(0, 0, canvas.clientWidth, canvas.clientHeight);
+      ctx.strokeStyle = "rgba(244, 247, 241, 0.10)";
+      ctx.lineWidth = 1;
+      for (let i = -40; i <= 40; i += 20) {
+        const [x1, y1] = toScreen(-44, i);
+        const [x2, y2] = toScreen(44, i);
+        const [x3, y3] = toScreen(i, -44);
+        const [x4, y4] = toScreen(i, 44);
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.moveTo(x3, y3);
+        ctx.lineTo(x4, y4);
+        ctx.stroke();
+      }
+
+      const trust = frame.trust || {};
+      drawLink("self", "helper", "#74d990", trust.helper || 0);
+      drawLink("self", "builder", "#ffd46f", trust.builder || 0);
+      drawLink("self", "opportunist", "#ff736e", 1 - (trust.opportunist || 0));
+      drawLink("self", "deceiver", "#c6a0ff", 1 - (trust.deceiver || 0));
+
+      Object.entries(positions).forEach(([role, pos]) => {
+        const radius = role === "self" ? 9 : role === "hazard" ? 11 : 7;
+        const stroke = role === frame.actor ? eventColor(frame.event) : "rgba(255,255,255,0.35)";
+        const [x, y] = circle(pos.x, pos.z, radius, roleColor(role), stroke);
+        label(x, y, role);
+      });
+
+      const actorPos = positions[frame.actor] || positions.self;
+      const [eventX, eventY] = toScreen(actorPos.x, actorPos.z);
+      ctx.strokeStyle = eventColor(frame.event);
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.arc(eventX, eventY, 20 + (Date.now() % 700) / 70, 0, Math.PI * 2);
+      ctx.stroke();
+
+      ctx.fillStyle = eventColor(frame.event);
+      ctx.font = "13px Inter, system-ui, sans-serif";
+      ctx.fillText(frame.event, eventX + 14, eventY + 20);
+    }
+
+    function updateTrustBars(frame) {
+      const container = document.getElementById("trustBars");
+      container.innerHTML = "";
+      Object.entries(frame.trust || {}).forEach(([name, value]) => {
+        const row = document.createElement("div");
+        const label = document.createElement("div");
+        label.className = "row";
+        label.innerHTML = `<span class="label">${name}</span><span class="value">${value.toFixed(2)}</span>`;
+        const bar = document.createElement("div");
+        bar.className = "bar";
+        const fill = document.createElement("span");
+        fill.style.width = `${Math.max(0, Math.min(1, value)) * 100}%`;
+        fill.style.background = roleColor(name);
+        bar.appendChild(fill);
+        row.appendChild(label);
+        row.appendChild(bar);
+        container.appendChild(row);
+      });
+    }
+
+    function updateVerdicts() {
+      const container = document.getElementById("verdicts");
+      container.innerHTML = "";
+      if (!results || !results.verdict) return;
+      results.verdict.forEach((row) => {
+        const node = document.createElement("div");
+        node.className = "verdict-row";
+        const dot = row.supports_social_ecology_precursor ? "#74d990" : "#ff736e";
+        node.innerHTML = `<span class="dot" style="background:${dot}"></span><span>${row.scenario_name}</span><span class="pill">${row.communication_gain_over_no_comm.toFixed(1)}</span>`;
+        container.appendChild(node);
+      });
+    }
+
+    function updatePanel() {
+      if (!trace || !trace.frames.length) return;
+      const frame = trace.frames[frameIndex];
+      document.getElementById("subtitle").textContent = `${trace.scenario.name} / ${trace.policy.name}`;
+      document.getElementById("tick").textContent = frame.tick;
+      document.getElementById("event").textContent = frame.event;
+      document.getElementById("note").textContent = frame.note;
+      document.getElementById("energy").textContent = frame.energy.toFixed(2);
+      document.getElementById("integrity").textContent = frame.integrity.toFixed(2);
+      document.getElementById("options").textContent = frame.future_options.toFixed(2);
+      document.getElementById("cost").textContent = frame.communication_cost.toFixed(1);
+      document.getElementById("reward").textContent = frame.reward.toFixed(1);
+      document.getElementById("signals").textContent = frame.signals;
+      document.getElementById("names").textContent = frame.names;
+      document.getElementById("gossip").textContent = frame.gossip;
+      document.getElementById("checkins").textContent = frame.checkins;
+      scrubber.value = String(frameIndex);
+      updateTrustBars(frame);
+      draw();
+    }
+
+    function tick() {
+      if (playing && trace && trace.frames.length) {
+        frameIndex = (frameIndex + 1) % trace.frames.length;
+        updatePanel();
+      }
+      window.setTimeout(tick, 850);
+    }
+
+    scrubber.addEventListener("input", () => {
+      frameIndex = Number(scrubber.value);
+      updatePanel();
+    });
+
+    playButton.addEventListener("click", () => {
+      playing = !playing;
+      playButton.textContent = playing ? "Pause" : "Play";
+    });
+
+    window.addEventListener("resize", resize);
+
+    function hydrate(traceData, resultData) {
+      trace = traceData;
+      results = resultData;
+      scrubber.max = String(Math.max(0, trace.frames.length - 1));
+      updateVerdicts();
+      resize();
+      updatePanel();
+      tick();
+    }
+
+    function loadJson(path) {
+      return fetch(path).then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        return response.json();
+      });
+    }
+
+    Promise.all([
+      loadJson("../artifacts/ssrm_3d_social_ecology_trace.json"),
+      loadJson("../artifacts/ssrm_3d_social_ecology_results.json"),
+    ]).then(([traceData, resultData]) => {
+      hydrate(traceData, resultData);
+    }).catch((error) => {
+      if (window.SSRM_3D_SOCIAL_ECOLOGY_TRACE && window.SSRM_3D_SOCIAL_ECOLOGY_RESULTS) {
+        hydrate(window.SSRM_3D_SOCIAL_ECOLOGY_TRACE, window.SSRM_3D_SOCIAL_ECOLOGY_RESULTS);
+        return;
+      }
+      document.getElementById("subtitle").textContent =
+        `Could not load trace. Run \`python3 -m http.server 8765\` from the repo root and open /visualizations/ssrm_3d_social_ecology.html. Error: ${error.message}`;
+    });
+  </script>
+</body>
+</html>

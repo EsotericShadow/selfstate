@@ -259,6 +259,7 @@ The current repo contains small precursors:
 - [modular LLM architecture report](64_modular_llm_architecture_report.md)
 - [SSRM-3D tool-making report](65_ssrm_3d_tool_making_report.md)
 - [SSRM-3D social pressure report](66_ssrm_3d_social_pressure_report.md)
+- [SSRM-3D social ecology report](67_ssrm_3d_social_ecology_report.md)
 - [learned bottleneck discovery report](25_learned_bottleneck_discovery_report.md)
 - [sequence latent transfer report](26_sequence_latent_transfer_report.md)
 - [heterogeneous attractor precursor report](27_heterogeneous_attractor_precursor_report.md)

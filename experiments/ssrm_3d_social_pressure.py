@@ -1108,6 +1108,13 @@ def write_csv(path: Path, rows: Iterable[object]) -> None:
             writer.writerow(asdict(row))
 
 
+def write_js_data(path: Path, global_name: str, data: object) -> None:
+    with path.open("w", encoding="utf-8") as handle:
+        handle.write(f"window.{global_name} = ")
+        json.dump(data, handle, indent=2)
+        handle.write(";\n")
+
+
 def print_table(verdicts: Sequence[VerdictRow]) -> None:
     headers = [
         "scenario",
@@ -1182,32 +1189,32 @@ def main() -> int:
     verdict_path = ARTIFACT_DIR / "ssrm_3d_social_pressure_verdict.csv"
     results_path = ARTIFACT_DIR / "ssrm_3d_social_pressure_results.json"
     trace_path = ARTIFACT_DIR / "ssrm_3d_social_pressure_trace.json"
+    trace_js_path = ARTIFACT_DIR / "ssrm_3d_social_pressure_trace.js"
     write_csv(episode_path, episode_rows)
     write_csv(selection_path, selection_rows)
     write_csv(summary_path, summary_rows)
     write_csv(verdict_path, verdicts)
+    results = {
+        "config": asdict(cfg),
+        "selection": [asdict(row) for row in selection_rows],
+        "summary": [asdict(row) for row in summary_rows],
+        "verdict": [asdict(row) for row in verdicts],
+        "diagnostics": {key: value for key, value in diagnostics.items() if key != "trace"},
+    }
     with results_path.open("w", encoding="utf-8") as handle:
-        json.dump(
-            {
-                "config": asdict(cfg),
-                "selection": [asdict(row) for row in selection_rows],
-                "summary": [asdict(row) for row in summary_rows],
-                "verdict": [asdict(row) for row in verdicts],
-                "diagnostics": {key: value for key, value in diagnostics.items() if key != "trace"},
-            },
-            handle,
-            indent=2,
-        )
+        json.dump(results, handle, indent=2)
         handle.write("\n")
     with trace_path.open("w", encoding="utf-8") as handle:
         json.dump(diagnostics["trace"], handle, indent=2)
         handle.write("\n")
+    write_js_data(trace_js_path, "SSRM_3D_SOCIAL_PRESSURE_TRACE", diagnostics["trace"])
     print(f"wrote {episode_path}")
     print(f"wrote {selection_path}")
     print(f"wrote {summary_path}")
     print(f"wrote {verdict_path}")
     print(f"wrote {results_path}")
     print(f"wrote {trace_path}")
+    print(f"wrote {trace_js_path}")
     print_table(verdicts)
     return 0 if all(row.supports_social_pressure_precursor for row in verdicts) else 1
 

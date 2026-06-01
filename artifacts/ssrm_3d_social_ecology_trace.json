@@ -1,0 +1,310 @@
+{
+  "scenario": {
+    "index": 4,
+    "name": "trust_maintenance_infrastructure",
+    "pressure": "low-cost contact preserves trust, repair access, shared tools, and future options",
+    "expected_signal": true,
+    "expected_name": true,
+    "expected_gossip": true,
+    "expected_checkin": true,
+    "info_asymmetry": true,
+    "identity_persistence": true,
+    "absent_agent_risk": true,
+    "future_cooperation": true,
+    "scarcity": 0.62
+  },
+  "policy": {
+    "name": "trust_maintenance_full",
+    "communication_enabled": true,
+    "signal_enabled": true,
+    "name_enabled": true,
+    "gossip_enabled": true,
+    "checkin_enabled": true,
+    "trust_threshold": 0.42,
+    "cooperation_bias": 0.82,
+    "signal_cost_tolerance": 0.82,
+    "gossip_weight": 0.88,
+    "checkin_interval": 2,
+    "deception_filter": 0.76,
+    "babble": false,
+    "deceptive": false
+  },
+  "condition": "selected_full_access",
+  "world": {
+    "size": 88.0,
+    "positions": {
+      "self": {
+        "x": -36.0,
+        "z": -32.0
+      },
+      "scout": {
+        "x": -13.0,
+        "z": -4.0
+      },
+      "helper": {
+        "x": 8.0,
+        "z": 6.0
+      },
+      "opportunist": {
+        "x": 18.0,
+        "z": -9.0
+      },
+      "deceiver": {
+        "x": -7.0,
+        "z": 20.0
+      },
+      "builder": {
+        "x": 25.0,
+        "z": 18.0
+      },
+      "cache": {
+        "x": 34.0,
+        "z": 28.0
+      },
+      "hazard": {
+        "x": 5.0,
+        "z": -26.0
+      },
+      "shelter": {
+        "x": 38.0,
+        "z": 34.0
+      }
+    }
+  },
+  "frames": [
+    {
+      "tick": 0,
+      "event": "start",
+      "note": "start long-run social ecology episode",
+      "actor": "self",
+      "x": -36.0,
+      "z": -32.0,
+      "energy": 0.6988,
+      "integrity": 0.7636000000000001,
+      "resources": 0,
+      "reward": 0.0,
+      "future_options": 0.38,
+      "trust": {
+        "scout": 0.52,
+        "helper": 0.56,
+        "opportunist": 0.42,
+        "deceiver": 0.48,
+        "builder": 0.52
+      },
+      "aggregate_trust": 0.5,
+      "signals": 0,
+      "names": 0,
+      "gossip": 0,
+      "checkins": 0,
+      "communication_cost": 0.0
+    },
+    {
+      "tick": 2,
+      "event": "signal",
+      "note": "route signal coordinates shared cache approach",
+      "actor": "scout",
+      "x": -13.0,
+      "z": -4.0,
+      "energy": 0.6738222222222222,
+      "integrity": 0.7636000000000001,
+      "resources": 0,
+      "reward": -4.496,
+      "future_options": 0.38,
+      "trust": {
+        "scout": 0.52,
+        "helper": 0.56,
+        "opportunist": 0.42,
+        "deceiver": 0.48,
+        "builder": 0.52
+      },
+      "aggregate_trust": 0.5,
+      "signals": 1,
+      "names": 0,
+      "gossip": 0,
+      "checkins": 0,
+      "communication_cost": 4.496
+    },
+    {
+      "tick": 3,
+      "event": "name",
+      "note": "names bind repair/trade histories",
+      "actor": "self",
+      "x": -36.0,
+      "z": -32.0,
+      "energy": 0.6582111111111111,
+      "integrity": 0.7636000000000001,
+      "resources": 0,
+      "reward": 10.693999999999999,
+      "future_options": 0.38,
+      "trust": {
+        "scout": 0.52,
+        "helper": 0.56,
+        "opportunist": 0.42,
+        "deceiver": 0.48,
+        "builder": 0.52
+      },
+      "aggregate_trust": 0.5,
+      "signals": 1,
+      "names": 1,
+      "gossip": 0,
+      "checkins": 0,
+      "communication_cost": 7.306000000000001
+    },
+    {
+      "tick": 4,
+      "event": "gossip",
+      "note": "reputation report flags opportunist and tool-builder",
+      "actor": "helper",
+      "x": 8.0,
+      "z": 6.0,
+      "energy": 0.6269888888888888,
+      "integrity": 0.7636000000000001,
+      "resources": 0,
+      "reward": 5.073999999999998,
+      "future_options": 0.38,
+      "trust": {
+        "scout": 0.52,
+        "helper": 0.68,
+        "opportunist": 0.24,
+        "deceiver": 0.48,
+        "builder": 0.64
+      },
+      "aggregate_trust": 0.5,
+      "signals": 1,
+      "names": 1,
+      "gossip": 1,
+      "checkins": 0,
+      "communication_cost": 12.926000000000002
+    },
+    {
+      "tick": 5,
+      "event": "checkin",
+      "note": "low-cost contact maintains repair/tool trust",
+      "actor": "self",
+      "x": -36.0,
+      "z": -32.0,
+      "energy": 0.6144999999999999,
+      "integrity": 0.7636000000000001,
+      "resources": 0,
+      "reward": 2.825999999999998,
+      "future_options": 0.38,
+      "trust": {
+        "scout": 0.52,
+        "helper": 0.68,
+        "opportunist": 0.0,
+        "deceiver": 0.48,
+        "builder": 0.8400000000000001
+      },
+      "aggregate_trust": 0.5,
+      "signals": 1,
+      "names": 1,
+      "gossip": 1,
+      "checkins": 1,
+      "communication_cost": 15.174000000000003
+    },
+    {
+      "tick": 6,
+      "event": "checkin",
+      "note": "low-cost contact maintains repair/tool trust",
+      "actor": "self",
+      "x": -36.0,
+      "z": -32.0,
+      "energy": 0.602011111111111,
+      "integrity": 0.7636000000000001,
+      "resources": 0,
+      "reward": 0.5779999999999976,
+      "future_options": 0.38,
+      "trust": {
+        "scout": 0.52,
+        "helper": 0.75,
+        "opportunist": 0.0,
+        "deceiver": 0.48,
+        "builder": 0.9000000000000001
+      },
+      "aggregate_trust": 0.5,
+      "signals": 1,
+      "names": 1,
+      "gossip": 1,
+      "checkins": 2,
+      "communication_cost": 17.422000000000004
+    },
+    {
+      "tick": 7,
+      "event": "checkin",
+      "note": "low-cost contact maintains repair/tool trust",
+      "actor": "self",
+      "x": -36.0,
+      "z": -32.0,
+      "energy": 0.5895222222222222,
+      "integrity": 0.7636000000000001,
+      "resources": 0,
+      "reward": -1.6700000000000026,
+      "future_options": 0.38,
+      "trust": {
+        "scout": 0.52,
+        "helper": 0.8200000000000001,
+        "opportunist": 0.0,
+        "deceiver": 0.48,
+        "builder": 0.9600000000000002
+      },
+      "aggregate_trust": 0.5,
+      "signals": 1,
+      "names": 1,
+      "gossip": 1,
+      "checkins": 3,
+      "communication_cost": 19.670000000000005
+    },
+    {
+      "tick": 8,
+      "event": "tool",
+      "note": "maintained trust keeps shared tool/cache access open",
+      "actor": "builder",
+      "x": 25.0,
+      "z": 18.0,
+      "energy": 0.5895222222222222,
+      "integrity": 1.0,
+      "resources": 2,
+      "reward": 90.33,
+      "future_options": 0.72,
+      "trust": {
+        "scout": 0.52,
+        "helper": 0.8900000000000001,
+        "opportunist": 0.0,
+        "deceiver": 0.48,
+        "builder": 1.0
+      },
+      "aggregate_trust": 0.5,
+      "signals": 1,
+      "names": 1,
+      "gossip": 1,
+      "checkins": 3,
+      "communication_cost": 19.670000000000005
+    },
+    {
+      "tick": 99,
+      "event": "commitment",
+      "note": "episode scored by survival, resources, and future options",
+      "actor": "shelter",
+      "x": 38.0,
+      "z": 34.0,
+      "energy": 0.5895222222222222,
+      "integrity": 1.0,
+      "resources": 2,
+      "reward": 161.45,
+      "future_options": 0.84,
+      "trust": {
+        "scout": 0.52,
+        "helper": 0.8900000000000001,
+        "opportunist": 0.0,
+        "deceiver": 0.48,
+        "builder": 1.0
+      },
+      "aggregate_trust": 0.5,
+      "signals": 1,
+      "names": 1,
+      "gossip": 1,
+      "checkins": 3,
+      "communication_cost": 19.670000000000005
+    }
+  ]
+}

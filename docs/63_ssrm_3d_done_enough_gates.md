@@ -83,13 +83,15 @@ Pass condition:
 
 Current status:
 
-Partially passed by [report 66](66_ssrm_3d_social_pressure_report.md).
+Partially passed by [report 66](66_ssrm_3d_social_pressure_report.md) and extended by [report 67](67_ssrm_3d_social_ecology_report.md).
 
 The SSRM-3D social-pressure precursor gives other agents persistent identities, resource needs, trust toward the tested agent, and helper, trader, opportunist, and deceiver policies. Return selection rejects social machinery in the visible-resource control, selects social identity policies under cooperative repair, opportunist vulnerability, deceptive-route, and shared-tool pressure, and loses the advantage when identity memory, social self-state, or shared-tool access is ablated.
 
+The SSRM-3D social-ecology precursor makes communication costly. Return selection rejects communication in the visible solo control, selects warning signals when route information beats rediscovery, selects names when persistent social history matters, selects gossip when absent-agent information improves future choices, and selects check-ins when low-cost contact maintains repair, trust, shared-tool access, and future options.
+
 Remaining weakness:
 
-The successful policies are return-selected from candidate social-control policies, not learned end-to-end by the SSRM-3D controller. The social agents use simple role policies rather than open-ended communication, learned deception, or long multi-episode reputation. This means Gate 3 has a useful social-pressure precursor, but not a full pass.
+The successful policies are return-selected from candidate social-control and communication policies, not learned end-to-end by the SSRM-3D controller. The social agents use simple role policies rather than open-ended communication, learned deception, or long multi-episode reputation. This means Gate 3 has useful social-pressure and costly-communication precursors, but not a full pass.
 
 Failure interpretation:
 
@@ -174,10 +176,10 @@ Gate 1 has a useful learned-control precursor.
 
 Gate 2 has a partial externalized-cognition precursor.
 
-Gate 3 has a partial social-pressure precursor.
+Gate 3 has partial social-pressure and costly-communication precursors.
 
 Gate 4 is partially supported, but the ablation suite is incomplete.
 
 The strongest next experiment is learned tool and social discovery inside the SSRM-3D controller, then a richer repeated-interaction society where tools can be shared, trusted, stolen, or sabotaged.
 
-The stronger social ecology should make communication costly. Signals, names, promises, gossip, play, humour, and bonding should not be directly rewarded; they should survive only when they preserve future options, reduce uncertainty, protect commitments, or improve cooperation under social memory.
+The next stronger social ecology should move costly communication into learned controllers. Signals, names, promises, gossip, play, humour, and bonding should not be directly rewarded; they should survive only when they preserve future options, reduce uncertainty, protect commitments, or improve cooperation under social memory.

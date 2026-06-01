@@ -100,7 +100,9 @@ That is the real Gate 3 to Gate 4 bridge.
 
 ## Long-Run Social Ecology
 
-The next clean social experiment should not reward talking, chatting, bonding, or friendship directly.
+[Report 67](67_ssrm_3d_social_ecology_report.md) implements the narrow costly-communication precursor implied by this section.
+
+The clean social experiment should not reward talking, chatting, bonding, or friendship directly.
 
 Communication should have a cost:
 
@@ -145,4 +147,5 @@ A stronger ecology would track trust clusters, role specialization, retaliation,
 - [summary CSV](../artifacts/ssrm_3d_social_pressure_summary.csv)
 - [verdict CSV](../artifacts/ssrm_3d_social_pressure_verdict.csv)
 - [trace JSON](../artifacts/ssrm_3d_social_pressure_trace.json)
+- [trace JS fallback](../artifacts/ssrm_3d_social_pressure_trace.js)
 - [JSON results](../artifacts/ssrm_3d_social_pressure_results.json)

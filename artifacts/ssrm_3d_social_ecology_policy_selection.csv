@@ -1,0 +1,6 @@
+scenario,scenario_name,selected_policy,selected_uses_signal,selected_uses_names,selected_uses_gossip,selected_uses_checkins,train_reward,no_comm_train_reward,train_gain_over_no_comm
+0,visible_solo_control,no_comm_baseline,False,False,False,False,145.54,145.54,0.0
+1,costly_warning_signal,costly_signal_only,True,False,False,False,108.16799999999998,8.1725,99.99549999999998
+2,persistent_identity_names,identity_label_memory,False,True,False,False,106.97999999999999,14.84,92.13999999999999
+3,absent_agent_gossip,gossip_with_names,False,True,True,False,100.88,-10.785,111.66499999999999
+4,trust_maintenance_infrastructure,trust_maintenance_full,True,True,True,True,161.45,-67.9625,229.4125

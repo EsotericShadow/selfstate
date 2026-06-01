@@ -189,6 +189,7 @@
     </div>
   </aside>
 
+  <script src="../artifacts/ssrm_3d_social_pressure_trace.js"></script>
   <script>
     const canvas = document.getElementById("scene");
     const ctx = canvas.getContext("2d");
@@ -331,17 +332,34 @@
     });
     window.addEventListener("resize", resize);
 
-    fetch("../artifacts/ssrm_3d_social_pressure_trace.json")
-      .then((response) => response.json())
-      .then((data) => {
-        trace = data;
-        scrubber.max = String(trace.frames.length - 1);
-        document.getElementById("subtitle").textContent = trace.scenario.name + " / " + trace.policy.name;
-        resize();
-        step();
-      })
+    function hydrate(data) {
+      trace = data;
+      scrubber.max = String(trace.frames.length - 1);
+      document.getElementById("subtitle").textContent = trace.scenario.name + " / " + trace.policy.name;
+      resize();
+      step();
+    }
+
+    function loadTrace() {
+      return fetch("../artifacts/ssrm_3d_social_pressure_trace.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+          return response.json();
+        });
+    }
+
+    loadTrace()
+      .then(hydrate)
       .catch((error) => {
-        document.getElementById("subtitle").textContent = "Could not load trace: " + error.message;
+        if (window.SSRM_3D_SOCIAL_PRESSURE_TRACE) {
+          hydrate(window.SSRM_3D_SOCIAL_PRESSURE_TRACE);
+          return;
+        }
+        document.getElementById("subtitle").textContent =
+          "Could not load trace. Run `python3 -m http.server 8765` from the repo root and open /visualizations/ssrm_3d_social_pressure.html. Error: " +
+          error.message;
       });
   </script>
 </body>

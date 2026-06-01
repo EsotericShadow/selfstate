@@ -1598,6 +1598,34 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_weather_exposure_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_weather_exposure_results.js)
 
+## SSRM-3D Tool/Shelter Degradation Pressure
+
+Run the fifth persistent-pressure layer from report 74.
+
+This experiment treats marker wear, shelter damage, alarm/cache decay, inspection, repair, spare parts, and continuity as abstract control variables. It asks whether persistent infrastructure becomes self-relevant only when decay changes the agent's future capability.
+
+Canonical result:
+
+- stable new-tools control rejects maintenance machinery;
+- route-marker decay fails under no-degradation-state, no-repair-action, no-tool-memory, and no-material-cache ablations;
+- storm shelter wear fails under no-repair-action, no-shelter-memory, and no-material-cache ablations;
+- alarm/cache wear fails under no-inspection-action, no-repair-action, no-tool-memory, and no-material-cache ablations;
+- restore pressure fails under no-continuity plus tool, shelter, repair, and parts ablations.
+
+Implemented version:
+
+- [SSRM-3D tool/shelter degradation script](../experiments/ssrm_3d_tool_shelter_degradation.py)
+- [SSRM-3D tool/shelter degradation report](79_ssrm_3d_tool_shelter_degradation_report.md)
+- [tool/shelter degradation visualization](../visualizations/ssrm_3d_tool_shelter_degradation.html)
+- [evaluation CSV](../artifacts/ssrm_3d_tool_shelter_degradation_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_tool_shelter_degradation_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_tool_shelter_degradation_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_tool_shelter_degradation_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_tool_shelter_degradation_trace.json)
+- [JSON results](../artifacts/ssrm_3d_tool_shelter_degradation_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_tool_shelter_degradation_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_tool_shelter_degradation_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

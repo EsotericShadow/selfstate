@@ -75,11 +75,12 @@ That claim does not define consciousness and does not require that the self be m
 - [Repository weakness audit](docs/70_repo_weakness_audit.md): records the strongest current objections, including the Report 69 shortcut and the unstable attractor claim.
 - [Live demo MVP plan](docs/71_live_demo_mvp_plan.md): defines the smallest 3D demonstration where an agent can reject a user command for continuity-grounded reasons.
 - [Framework extraction plan](docs/72_framework_extraction_plan.md): identifies reusable primitives such as `AgentContinuityRecord`, `AttentionMixer`, `Arbiter`, `EventLog`, `WorldSnapshot`, `LLMPacketBoundary`, and `MultiRateScheduler`.
-- [SSRM-3D persistent pressure layer spec](docs/74_ssrm_3d_persistent_pressure_layer_spec.md): defines the next narrow realism layer: structured perception, sleep/rest, illness/sanitation, weather/exposure, affective control state, and falsifiers.
+- [SSRM-3D persistent pressure layer spec](docs/74_ssrm_3d_persistent_pressure_layer_spec.md): defines the next narrow realism layer: structured perception, sleep/rest, illness/sanitation, weather/exposure, tool/shelter degradation, affective control state, and falsifiers.
 - [SSRM-3D structured perception report](docs/75_ssrm_3d_structured_perception_report.md): tests cone/FOV vision and spatial audio as ablatable partial-observability pressure before raw pixels or waveform learning.
 - [SSRM-3D day/night sleep-rest report](docs/76_ssrm_3d_day_night_sleep_report.md): tests sleep as a vulnerable control action under fatigue, darkness, shelter timing, alarms, social watch, and interruption continuity.
 - [SSRM-3D illness/sanitation report](docs/77_ssrm_3d_illness_sanitation_report.md): tests hunger, thirst, latent illness, contamination, clean water, quarantine/care, immunity, and continuity as abstract control pressure.
 - [SSRM-3D weather/exposure report](docs/78_ssrm_3d_weather_exposure_report.md): tests cold, heat, rain, wind, drought, shelter, fire/light, water planning, and continuity as abstract control pressure.
+- [SSRM-3D tool/shelter degradation report](docs/79_ssrm_3d_tool_shelter_degradation_report.md): tests marker wear, shelter damage, alarm/cache decay, inspection, repair, spare parts, and continuity as abstract control pressure.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -690,6 +691,22 @@ This writes:
 - `visualizations/ssrm_3d_weather_exposure.html` replays the weather/exposure trace when served from the repo root.
 
 ```bash
+python3 experiments/ssrm_3d_tool_shelter_degradation.py --train-episodes 72 --eval-episodes 96 --seed 20260624 --candidate-count 6
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_tool_shelter_degradation_eval.csv`
+- `artifacts/ssrm_3d_tool_shelter_degradation_policy_selection.csv`
+- `artifacts/ssrm_3d_tool_shelter_degradation_summary.csv`
+- `artifacts/ssrm_3d_tool_shelter_degradation_verdict.csv`
+- `artifacts/ssrm_3d_tool_shelter_degradation_trace.json`
+- `artifacts/ssrm_3d_tool_shelter_degradation_results.json`
+- `artifacts/ssrm_3d_tool_shelter_degradation_trace.js`
+- `artifacts/ssrm_3d_tool_shelter_degradation_results.js`
+- `visualizations/ssrm_3d_tool_shelter_degradation.html` replays the tool/shelter degradation trace when served from the repo root.
+
+```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2
 ```
 
@@ -899,7 +916,7 @@ Current SSRM-3D social-pressure evidence supports item 52 as a Gate 3 precursor:
 Current SSRM-3D social-ecology evidence supports item 53 as a Gate 3 extension: costly communication is rejected when it has no job, then selected as warning signals, identity names, gossip, or trust-maintenance check-ins only when it preserves survival, repair, deception resistance, shared tools, or future options.
 Current SSRM-3D agent-continuity evidence supports item 54 as a Gate 4 precursor: restored agents preserve future control only when body, model, memory, social history, commitments, event log, attention, hidden state, tools, goals, and branch identity are serialized as a coherent continuity record.
 Current SSRM-3D learned-integration evidence supports item 55 only as a designed packet bridge: a recurrent controller trained from reward-derived action choices carries early tool, social, continuity, and attention evidence in the seeded canonical run. The no-leak sweep removes scenario identity, randomizes pressure combinations, and runs five seeds; it preserves some bridges but rejects the strong stable-integration claim because `single_tool` margins are too close and `integrated_social` is not ablation-stable.
-Current SSRM-3D pressure-layer evidence supports item 56 as designed precursors: structured perception removes omniscient world-state access; day/night sleep-rest shows that rest is rejected in daylight control but becomes useful under fatigue debt, darkness, shelter timing, guarded sleep, and interruption continuity; illness/sanitation shows that hunger/thirst, latent infection, contamination, quarantine/care, immunity, and continuity matter only in matching pressure regimes; and weather/exposure shows that cold, heat, rain, wind, drought, shelter, fire/light, water planning, and continuity matter only when external conditions change future capability.
+Current SSRM-3D pressure-layer evidence supports item 56 as designed precursors: structured perception removes omniscient world-state access; day/night sleep-rest shows that rest is rejected in daylight control but becomes useful under fatigue debt, darkness, shelter timing, guarded sleep, and interruption continuity; illness/sanitation shows that hunger/thirst, latent infection, contamination, quarantine/care, immunity, and continuity matter only in matching pressure regimes; weather/exposure shows that cold, heat, rain, wind, drought, shelter, fire/light, water planning, and continuity matter only when external conditions change future capability; and tool/shelter degradation shows that marker wear, shelter damage, alarm/cache decay, inspection, repair, spare parts, and continuity matter only when persistent infrastructure decay changes future control.
 
 The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has useful learned-control precursors; gate 2 has a partial externalized-cognition precursor plus a learned tool-memory bridge; gate 3 has partial social-pressure and costly-communication precursors plus a learned social-memory bridge; gate 4 has continuity-record and learned continuity/attention precursors but is still incomplete.
 

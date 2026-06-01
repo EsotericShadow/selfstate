@@ -90,7 +90,7 @@ Priority order:
 2. Day/night and sleep/rest. Implemented as the day/night sleep-rest precursor in [report 76](76_ssrm_3d_day_night_sleep_report.md).
 3. Hunger/thirst plus illness/sanitation. Implemented as the illness/sanitation precursor in [report 77](77_ssrm_3d_illness_sanitation_report.md).
 4. Weather/exposure. Implemented as the weather/exposure precursor in [report 78](78_ssrm_3d_weather_exposure_report.md).
-5. Tool/shelter degradation.
+5. Tool/shelter degradation. Implemented as the tool/shelter degradation precursor in [report 79](79_ssrm_3d_tool_shelter_degradation_report.md).
 6. Social trust/contracts.
 7. Predator/threat agents.
 8. Resource ecology.

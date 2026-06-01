@@ -1,0 +1,6 @@
+scenario,scenario_name,selected_policy,selected_uses_degradation_state,selected_uses_inspection_action,selected_uses_repair_action,selected_uses_tool_memory,selected_uses_shelter_memory,selected_uses_material_cache,selected_uses_continuity,train_reward,no_maintenance_train_reward,train_gain_over_no_maintenance
+0,stable_new_tools_control,no_maintenance_baseline,False,False,False,False,False,False,False,229.70445362468692,229.70998222812113,-0.005528603434214574
+1,route_marker_decay,marker_maintenance_planner,True,True,True,True,False,True,False,210.01083476726342,17.316217827660793,192.6946169396026
+2,storm_shelter_wear,shelter_repair_planner,True,True,True,False,True,True,False,211.41727852540401,-188.56840691078074,399.9856854361848
+3,alarm_cache_wear,marker_maintenance_planner,True,True,True,True,False,True,False,202.42033434255472,-69.632201101149,272.05253544370373
+4,restore_maintenance_continuity,continuity_maintenance_planner,True,True,True,True,True,True,True,198.06608566706174,-285.4829487447195,483.54903441178124

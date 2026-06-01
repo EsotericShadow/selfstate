@@ -24,6 +24,8 @@ The simulated organism uses layered control:
 
 The LLM-like module can recommend, but the arbiter still decides and the motor layer executes. It is a language-cortex module, not the organism.
 
+The simulator counts ticks internally, but the architecture should be read as multi-rate control. A world clock can run at 60 Hz while reflexes and physics run at that rate, motor correction runs lower, perception and attention run at medium rates, self-state and goals update slower, and language reasoning updates very slowly or only when triggered. Ticks are implementation; subsystem frequencies are the conceptual model.
+
 ## Design
 
 The experiment compares four agents:

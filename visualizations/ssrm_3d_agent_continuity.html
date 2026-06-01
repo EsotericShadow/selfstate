@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Agent Continuity Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111313;
+      --panel: rgba(18, 22, 23, 0.94);
+      --line: rgba(244, 247, 241, 0.16);
+      --text: #f4f7f1;
+      --muted: #a9b3b0;
+      --good: #79d88c;
+      --weak: #ff766f;
+      --body: #75b8ff;
+      --memory: #f0bf66;
+      --social: #c6a0ff;
+      --commitment: #8be3b6;
+      --tool: #ffd76e;
+      --branch: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 400px;
+      min-height: 100vh;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #101516;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .label,
+    .verdict-row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+    }
+
+    .value {
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .bars {
+      display: grid;
+      gap: 7px;
+    }
+
+    .bar {
+      height: 8px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 0%;
+    }
+
+    .verdict-row {
+      display: grid;
+      grid-template-columns: 20px 1fr auto;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      color: var(--text);
+      padding: 2px 6px;
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: #1d2425;
+      color: var(--text);
+      padding: 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 64vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Agent Continuity Trace</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+    <div class="section">
+      <div class="row"><span class="label">tick</span><span class="value" id="tick">0</span></div>
+      <div class="row"><span class="label">event</span><span class="value" id="event">-</span></div>
+      <div class="row"><span class="label">claim</span><span class="value" id="claim">-</span></div>
+      <div class="row"><span class="label">score</span><span class="value" id="score">0.00</span></div>
+      <div class="row"><span class="label">reward</span><span class="value" id="reward">0.0</span></div>
+      <p id="note">-</p>
+    </div>
+    <div class="section">
+      <input id="scrubber" type="range" min="0" max="0" value="0">
+      <button type="button" id="play">Pause</button>
+    </div>
+    <div class="section">
+      <h2>Component Coherence</h2>
+      <div class="bars" id="componentBars"></div>
+    </div>
+    <div class="section">
+      <h2>Record Identity</h2>
+      <div class="row"><span class="label">agent</span><span class="value" id="agentId">-</span></div>
+      <div class="row"><span class="label">world</span><span class="value" id="worldId">-</span></div>
+      <div class="row"><span class="label">branch</span><span class="value" id="branchId">-</span></div>
+      <div class="row"><span class="label">fork parent</span><span class="value" id="forkParent">-</span></div>
+    </div>
+    <div class="section">
+      <h2>Scenario Verdicts</h2>
+      <div id="verdicts"></div>
+    </div>
+    <div class="section">
+      <h2>Reading</h2>
+      <p>Continuity is treated as a binding record across body, model, memory, social history, commitments, event log, attention, hidden state, tools, goals, and branch identity.</p>
+    </div>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_agent_continuity_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_agent_continuity_results.js"></script>
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const scrubber = document.getElementById("scrubber");
+    const playButton = document.getElementById("play");
+    let trace = null;
+    let results = null;
+    let frameIndex = 0;
+    let playing = true;
+
+    const componentColors = {
+      body: "#75b8ff",
+      hidden: "#8be3b6",
+      memory: "#f0bf66",
+      social: "#c6a0ff",
+      commitment: "#79d88c",
+      tools: "#ffd76e",
+      branch: "#ffffff",
+    };
+
+    function resize() {
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.floor(canvas.clientWidth * ratio);
+      canvas.height = Math.floor(canvas.clientHeight * ratio);
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      draw();
+    }
+
+    function drawNode(cx, cy, radius, label, value, color) {
+      ctx.beginPath();
+      ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+      ctx.fillStyle = value > 0.5 ? color : "#ff766f";
+      ctx.fill();
+      ctx.strokeStyle = "rgba(255,255,255,0.50)";
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+      ctx.fillStyle = "#f4f7f1";
+      ctx.font = "12px Inter, system-ui, sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText(label, cx, cy + radius + 17);
+      ctx.fillText(value.toFixed(2), cx, cy + 4);
+    }
+
+    function draw() {
+      if (!trace || !trace.frames.length) return;
+      const frame = trace.frames[frameIndex];
+      const scores = frame.scores;
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = "#101516";
+      ctx.fillRect(0, 0, w, h);
+
+      const centerX = w * 0.5;
+      const centerY = h * 0.45;
+      const radius = Math.min(w, h) * 0.28;
+      const names = Object.keys(componentColors);
+
+      ctx.strokeStyle = "rgba(244,247,241,0.16)";
+      ctx.lineWidth = 2;
+      names.forEach((name, index) => {
+        const angle = -Math.PI / 2 + (index / names.length) * Math.PI * 2;
+        const x = centerX + Math.cos(angle) * radius;
+        const y = centerY + Math.sin(angle) * radius;
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.lineTo(x, y);
+        ctx.stroke();
+      });
+
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, 42, 0, Math.PI * 2);
+      ctx.fillStyle = frame.continuity_score > 0.75 ? "#79d88c" : "#ff766f";
+      ctx.fill();
+      ctx.strokeStyle = "#ffffff";
+      ctx.stroke();
+      ctx.fillStyle = "#101516";
+      ctx.font = "13px Inter, system-ui, sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText("record", centerX, centerY - 4);
+      ctx.fillText(frame.continuity_score.toFixed(2), centerX, centerY + 14);
+
+      names.forEach((name, index) => {
+        const angle = -Math.PI / 2 + (index / names.length) * Math.PI * 2;
+        const x = centerX + Math.cos(angle) * radius;
+        const y = centerY + Math.sin(angle) * radius;
+        drawNode(x, y, 27, name, scores[name], componentColors[name]);
+      });
+
+      ctx.textAlign = "left";
+      ctx.fillStyle = "rgba(244,247,241,0.82)";
+      ctx.font = "14px Inter, system-ui, sans-serif";
+      ctx.fillText(frame.event, 28, 34);
+      ctx.fillStyle = "rgba(169,179,176,0.92)";
+      ctx.fillText(frame.note, 28, 58);
+    }
+
+    function updateComponentBars(frame) {
+      const container = document.getElementById("componentBars");
+      container.innerHTML = "";
+      Object.entries(frame.scores).forEach(([name, value]) => {
+        const row = document.createElement("div");
+        const label = document.createElement("div");
+        label.className = "row";
+        label.innerHTML = `<span class="label">${name}</span><span class="value">${value.toFixed(2)}</span>`;
+        const bar = document.createElement("div");
+        bar.className = "bar";
+        const fill = document.createElement("span");
+        fill.style.width = `${Math.max(0, Math.min(1, value)) * 100}%`;
+        fill.style.background = componentColors[name] || "#79d88c";
+        bar.appendChild(fill);
+        row.appendChild(label);
+        row.appendChild(bar);
+        container.appendChild(row);
+      });
+    }
+
+    function updateVerdicts() {
+      const container = document.getElementById("verdicts");
+      container.innerHTML = "";
+      if (!results || !results.verdict) return;
+      results.verdict.forEach((row) => {
+        const node = document.createElement("div");
+        node.className = "verdict-row";
+        const dot = row.supports_agent_continuity_precursor ? "#79d88c" : "#ff766f";
+        node.innerHTML = `<span class="dot" style="background:${dot}"></span><span>${row.scenario_name}</span><span class="pill">${row.full_gain_over_model_only.toFixed(1)}</span>`;
+        container.appendChild(node);
+      });
+    }
+
+    function updatePanel() {
+      if (!trace || !trace.frames.length) return;
+      const frame = trace.frames[frameIndex];
+      const record = frame.components;
+      document.getElementById("subtitle").textContent = `${trace.scenario.name} / ${trace.condition}`;
+      document.getElementById("tick").textContent = frame.tick;
+      document.getElementById("event").textContent = frame.event;
+      document.getElementById("claim").textContent = trace.continuity_claim;
+      document.getElementById("score").textContent = frame.continuity_score.toFixed(2);
+      document.getElementById("reward").textContent = frame.reward.toFixed(1);
+      document.getElementById("note").textContent = frame.note;
+      document.getElementById("agentId").textContent = record.agent_id;
+      document.getElementById("worldId").textContent = record.current_world_id;
+      document.getElementById("branchId").textContent = record.branch_id;
+      document.getElementById("forkParent").textContent = record.fork_parent_id;
+      scrubber.value = String(frameIndex);
+      updateComponentBars(frame);
+      draw();
+    }
+
+    function tick() {
+      if (playing && trace && trace.frames.length) {
+        frameIndex = (frameIndex + 1) % trace.frames.length;
+        updatePanel();
+      }
+      window.setTimeout(tick, 950);
+    }
+
+    scrubber.addEventListener("input", () => {
+      frameIndex = Number(scrubber.value);
+      updatePanel();
+    });
+
+    playButton.addEventListener("click", () => {
+      playing = !playing;
+      playButton.textContent = playing ? "Pause" : "Play";
+    });
+
+    window.addEventListener("resize", resize);
+
+    function hydrate(traceData, resultData) {
+      trace = traceData;
+      results = resultData;
+      scrubber.max = String(Math.max(0, trace.frames.length - 1));
+      updateVerdicts();
+      resize();
+      updatePanel();
+      tick();
+    }
+
+    function loadJson(path) {
+      return fetch(path).then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        return response.json();
+      });
+    }
+
+    Promise.all([
+      loadJson("../artifacts/ssrm_3d_agent_continuity_trace.json"),
+      loadJson("../artifacts/ssrm_3d_agent_continuity_results.json"),
+    ]).then(([traceData, resultData]) => {
+      hydrate(traceData, resultData);
+    }).catch((error) => {
+      if (window.SSRM_3D_AGENT_CONTINUITY_TRACE && window.SSRM_3D_AGENT_CONTINUITY_RESULTS) {
+        hydrate(window.SSRM_3D_AGENT_CONTINUITY_TRACE, window.SSRM_3D_AGENT_CONTINUITY_RESULTS);
+        return;
+      }
+      document.getElementById("subtitle").textContent =
+        `Could not load trace. Run \`python3 -m http.server 8765\` from the repo root and open /visualizations/ssrm_3d_agent_continuity.html. Error: ${error.message}`;
+    });
+  </script>
+</body>
+</html>

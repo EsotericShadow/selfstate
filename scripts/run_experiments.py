@@ -806,6 +806,14 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_agent_continuity.py",
+        "--episodes",
+        "120",
+        "--seed",
+        "20260613",
+    ],
+    [
+        sys.executable,
         "experiments/learned_bottleneck_discovery.py",
         "--episodes",
         "500",

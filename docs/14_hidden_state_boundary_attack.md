@@ -32,8 +32,9 @@ Hidden-state tracking becomes self-equivalent only when the tracked variable is:
 Continuity and ownership add a stronger identity-like layer:
 
 7. continuity-indexed: it links past, present, and projected future states as states of the same continuing controlled process.
+8. restore/fork specific: it preserves the components needed to resume or branch that process, rather than treating model weights, memory, body state, or social history alone as sufficient.
 
-The minimal self-equivalent threshold is criteria 1-6. Criterion 7 is not required for simple sensorimotor selfhood, but it is required for identity-like selfhood.
+The minimal self-equivalent threshold is criteria 1-6. Criteria 7 and 8 are not required for simple sensorimotor selfhood, but they are required for identity-like continuity claims.
 
 ## Boundary Ladder
 
@@ -44,7 +45,7 @@ The minimal self-equivalent threshold is criteria 1-6. Criterion 7 is not requir
 | 2 | Passive internal-state tracker | Fatigue sensor used only for report prediction | No, unless it affects control/value. |
 | 3 | Agent-state controller | Actuator gain, damage, energy, sensor reliability | Minimal self-equivalent. |
 | 4 | First-person control frame | Counterfactuals over what this system can do next | Stronger self-equivalent. |
-| 5 | Continuity/identity self | Owner/epoch/commitment index across interruption | Identity-like self. |
+| 5 | Continuity/identity self | Owner/epoch/commitment index across interruption; AgentContinuityRecord across restore or fork | Identity-like self. |
 | 6 | Narrative or phenomenal self | Reportable autobiography or experience | Not tested here. |
 
 The theory should not infer selfhood from tiers 0-2. Those are hidden-state mechanisms. They become evidence for selfhood only when the same latent participates in tier 3 or above.
@@ -120,6 +121,7 @@ A variable should not be counted as self-equivalent unless these probes succeed:
 5. Integration probe: is the same variable reused across more than one prediction/control problem?
 6. Ablation probe: does removing or randomizing it selectively harm tasks that require agent-state but not tasks that only require world-state?
 7. Continuity probe: for identity-like selfhood, does it distinguish current own commitments from stale, foreign, duplicated, or contradictory records?
+8. Restore/fork probe: does a resumed or forked agent fail in predictable ways when the continuity record is reduced to weights, generic memory, body state, social history, commitments, tools, or branch id alone?
 
 ## New Falsifiers Introduced By The Attack
 
@@ -190,3 +192,5 @@ The SSRM-3D tool-making precursor adds a sixth boundary: externalized cognition 
 The SSRM-3D social-pressure precursor adds a seventh boundary: other-agent modeling is not automatically selfhood. Trust and reputation become relevant because other agents remember and act on the tested agent as a continuing social object. Identity-memory, social-self-state, and tool-access ablations must produce specific losses before the result counts as social self-pressure rather than generic multi-agent state tracking.
 
 The SSRM-3D social-ecology precursor adds an eighth boundary: communication is not automatically language, selfhood, or social structure. Signals, names, gossip, and check-ins count only when they are costly, rejected in no-job controls, selected by return under social memory, and damaged by targeted ablation. Babble must lose when it has no control job.
+
+The SSRM-3D agent-continuity precursor adds a ninth boundary: continuity is not model weights, memory, body state, or social history alone. A restored or forked agent counts as the same continuing control process only when the full record binds body, model, memory, social history, commitments, event-log position, attention, hidden state, tools, goals, and branch identity. Component ablations must fail specifically in the pressures that require those components.

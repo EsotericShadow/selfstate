@@ -69,6 +69,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D tool-making report](docs/65_ssrm_3d_tool_making_report.md): tests whether return-selected agents discover external markers, beacons, alarms, or caches under embodied confusion pressure.
 - [SSRM-3D social pressure report](docs/66_ssrm_3d_social_pressure_report.md): tests whether return-selected agents use identity memory, reputation, vulnerability, and shared-tool state under real social pressure.
 - [SSRM-3D social ecology report](docs/67_ssrm_3d_social_ecology_report.md): tests when costly signals, names, gossip, and trust-maintenance check-ins become useful social infrastructure.
+- [SSRM-3D agent continuity report](docs/68_ssrm_3d_agent_continuity_report.md): tests what must be serialized for a restored or forked agent to remain the same continuing control process.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -500,6 +501,8 @@ This writes:
 - `visualizations/ssrm_3d.html` replays the trajectory when served from the repo root.
 - `visualizations/modular_llm_architecture.html` shows the LLM-as-module control boundary and ablation modes.
 
+SSRM-3D counts ticks internally, but the architecture should be read as multi-rate control: reflex and physics run fast, perception and attention run at medium rates, self-state and goal arbitration run slower, and language reasoning or memory consolidation run much slower.
+
 ```bash
 python3 experiments/ssrm_3d_recurrent_observer.py --episodes-per-stage 42 --ticks 540 --seed 20260608 --hidden-size 32 --epochs 180 --batch-size 64 --learning-rate 0.004 --device auto
 ```
@@ -565,6 +568,21 @@ This writes:
 - `artifacts/ssrm_3d_social_ecology_trace.js`
 - `artifacts/ssrm_3d_social_ecology_results.js`
 - `visualizations/ssrm_3d_social_ecology.html` replays the costly-communication social-ecology trace when served from the repo root.
+
+```bash
+python3 experiments/ssrm_3d_agent_continuity.py --episodes 120 --seed 20260613
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_agent_continuity_eval.csv`
+- `artifacts/ssrm_3d_agent_continuity_summary.csv`
+- `artifacts/ssrm_3d_agent_continuity_verdict.csv`
+- `artifacts/ssrm_3d_agent_continuity_trace.json`
+- `artifacts/ssrm_3d_agent_continuity_results.json`
+- `artifacts/ssrm_3d_agent_continuity_trace.js`
+- `artifacts/ssrm_3d_agent_continuity_results.js`
+- `visualizations/ssrm_3d_agent_continuity.html` replays the pause/restore/fork continuity trace when served from the repo root.
 
 ```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2
@@ -774,7 +792,8 @@ Current SSRM-3D learned-controller evidence supports item 50 as a policy-state p
 Current SSRM-3D tool-making evidence supports item 51 as a Gate 2 precursor: tools are rejected in the visible control, selected under hidden-route, degraded-sensor, and interruption pressure, and tool-access ablation removes most of the gain. The cache-only control remains a limit, not a pass.
 Current SSRM-3D social-pressure evidence supports item 52 as a Gate 3 precursor: social machinery is rejected in the visible-resource control, selected under cooperative repair, opportunist vulnerability, deceptive-route, and shared-tool pressure, and identity/self-state/tool ablations produce specific losses.
 Current SSRM-3D social-ecology evidence supports item 53 as a Gate 3 extension: costly communication is rejected when it has no job, then selected as warning signals, identity names, gossip, or trust-maintenance check-ins only when it preserves survival, repair, deception resistance, shared tools, or future options.
+Current SSRM-3D agent-continuity evidence supports item 54 as a Gate 4 precursor: restored agents preserve future control only when body, model, memory, social history, commitments, event log, attention, hidden state, tools, goals, and branch identity are serialized as a coherent continuity record.
 
-The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has a useful precursor; gate 2 has a partial externalized-cognition precursor; gate 3 has partial social-pressure and costly-communication precursors; gate 4 is partial.
+The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has a useful precursor; gate 2 has a partial externalized-cognition precursor; gate 3 has partial social-pressure and costly-communication precursors; gate 4 now has a continuity-record precursor but is still incomplete.
 
 If agents with no persistent self-equivalent representation match performance, transfer, recovery, and compression under those conditions, the strong self-necessity claim fails.

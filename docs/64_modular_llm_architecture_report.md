@@ -28,6 +28,35 @@ The LLM is a language and abstraction module. It reads a compressed state packet
 | LLM | Slow abstract reasoning, decomposition, reflection, explanation, social reasoning, tool-use proposals, and memory summaries. | Receives compressed packets only. |
 | Action | Executes motor or tool actions. | No direct motor control. |
 
+## Rate Contract
+
+Ticks are the simulator's implementation clock. Rates are the architecture.
+
+The system should be documented as a multi-rate controller, even when the code counts integer ticks internally:
+
+```text
+base_tick_hz = 60
+
+physics_hz = 60
+reflex_hz = 60
+motor_control_hz = 30
+perception_hz = 10
+attention_hz = 10
+self_state_hz = 5
+goal_hz = 2
+reasoning_hz = 0.5
+memory_hz = 0.1
+reflection_hz = event_triggered
+```
+
+The implementation can convert those rates into intervals:
+
+```text
+interval_ticks = base_tick_hz / subsystem_hz
+```
+
+The falsifiable claim is not that every layer updates every world tick. The claim is that survival pressure, motor correction, perception, attention, self-state maintenance, goal arbitration, language reasoning, and memory consolidation operate on different timescales. A single-loop architecture that asks the LLM to process every tick would erase the boundary this report is trying to test.
+
 ## Compressed Packet Boundary
 
 The LLM should receive a packet like this:
@@ -87,6 +116,7 @@ SSRM-3D already implements the first version of this boundary:
 
 - reflexes can override immediately under hazard pressure;
 - perception runs at 10 Hz;
+- self-state and goal arbitration run slower than reflexes and perception;
 - the self-state workspace tracks viability, mobility, sensor capability, confidence, commitments, and prediction error;
 - attention weighs threat, energy, damage, uncertainty, novelty, prediction error, goals, commitments, and social pressure;
 - the arbiter chooses action mode;

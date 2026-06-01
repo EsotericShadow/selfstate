@@ -13,6 +13,28 @@ This track is done enough only when the embodied world passes four gates:
 
 The gates are designed to keep the project from mistaking named hidden variables, observer probes, scripted behavior, or pretty embodiment for evidence that selfhood is a useful control abstraction.
 
+## Clock And Rates
+
+The simulator can count ticks, but the architecture should be specified as subsystem update rates.
+
+Example framing:
+
+```text
+base_tick_hz = 60
+physics_hz = 60
+reflex_hz = 60
+motor_control_hz = 30
+perception_hz = 10
+attention_hz = 10
+self_state_hz = 5
+goal_hz = 2
+reasoning_hz = 0.5
+memory_hz = 0.1
+reflection = event_triggered
+```
+
+The implementation can convert rates to tick intervals, but the cognitive claim is multi-rate control: threats and movement need fast loops, perception and attention can be medium rate, self-state and goal arbitration can be slower, and language reasoning or memory consolidation should be much slower. A single global reasoning tick would blur the control boundaries the gates are supposed to test.
+
 ## Gate 1: Learned Control
 
 Question:
@@ -129,6 +151,8 @@ Partially passed but incomplete.
 
 Existing evidence includes self-state ablation in SSRM-3D, learned observer self-subspace ablation, and weak learned-controller self-edit probes. The ablation suite is not complete because attention mixing, continuity memory, LLM stream, and tool-building access are not yet independently removed in the embodied learned-control setting. The modular LLM architecture report defines the expected no-LLM, direct-motor LLM, full-world LLM, and corrupted-packet ablation patterns.
 
+[Report 68](68_ssrm_3d_agent_continuity_report.md) adds a continuity-record precursor: model-only copies, incompatible memory transplants, social-memory resets, commitment resets, tool resets, and ambiguous forks fail in specific restore/fork regimes. That strengthens the continuity-memory side of Gate 4, but it is still not the learned-controller ablation suite required for a full pass.
+
 Failure interpretation:
 
 - If removing self-state hurts everywhere, the environment is biased toward self variables.
@@ -178,8 +202,8 @@ Gate 2 has a partial externalized-cognition precursor.
 
 Gate 3 has partial social-pressure and costly-communication precursors.
 
-Gate 4 is partially supported, but the ablation suite is incomplete.
+Gate 4 has a continuity-record precursor, but the ablation suite is incomplete.
 
-The strongest next experiment is learned tool and social discovery inside the SSRM-3D controller, then a richer repeated-interaction society where tools can be shared, trusted, stolen, or sabotaged.
+The strongest next experiment is learned tool, social, and continuity discovery inside the SSRM-3D controller, then a richer repeated-interaction society where tools can be shared, trusted, stolen, or sabotaged.
 
 The next stronger social ecology should move costly communication into learned controllers. Signals, names, promises, gossip, play, humour, and bonding should not be directly rewarded; they should survive only when they preserve future options, reduce uncertainty, protect commitments, or improve cooperation under social memory.

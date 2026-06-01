@@ -179,11 +179,15 @@ The SSRM-3D recurrent-observer precursor then tests whether that workspace can b
 
 The SSRM-3D learned-controller precursor then moves the test into policy state. Recurrent controllers trained without self labels do not improve the low-pressure spatial task, but they strongly outperform frame-only controllers in stages 1-6 and carry decodable self-state. Direct self-edit action effects remain weak.
 
-The modular LLM architecture boundary makes the language layer explicit. The LLM is not treated as the self or the organism; it is a slow reasoning organ that receives compressed state packets and proposes plans, explanations, hypotheses, memory summaries, or tool-use ideas. Reflex, self-state, attention, arbiter, and action layers retain control authority. This turns "LLM as brain" into a falsifiable ablation target instead of a hidden assumption.
+The modular LLM architecture boundary makes the language layer explicit. The LLM is not treated as the self or the organism; it is a slow reasoning organ that receives compressed state packets and proposes plans, explanations, hypotheses, memory summaries, or tool-use ideas. Reflex, self-state, attention, arbiter, and action layers retain control authority. The stack should be described in subsystem frequencies rather than one global cognitive tick: ticks are implementation, rates are architecture. This turns "LLM as brain" into a falsifiable ablation target instead of a hidden assumption.
 
 The SSRM-3D tool-making precursor starts the externalized-cognition gate. Return selection rejects tools in the visible control, selects marker/beacon-style policies under hidden-route, degraded-sensor, and interruption pressure, and loses the advantage when tool access is ablated. The cache-only condition remains a live limit rather than a success.
 
 The SSRM-3D social-pressure precursor starts the real-social-pressure gate. Return selection rejects social machinery in the visible-resource control, selects identity/reputation/vulnerability-aware policies when helpers, traders, opportunists, deceivers, or shared tools matter, and loses the advantage under identity-memory, social-self-state, or shared-tool ablation.
+
+The SSRM-3D social-ecology precursor then asks when communication earns its cost. It does not reward talking directly. Costly communication is rejected in the visible solo control, but return selection keeps warning signals, names, gossip, and trust-maintenance check-ins when they reduce rediscovery, compress social history, protect against absent-agent deception, or preserve repair and shared-tool trust.
+
+The SSRM-3D agent-continuity precursor asks what must be serialized for the same agent to continue after pause, restore, transplant, rollback, or fork. Model-only copies, incompatible memory transplants, social-memory resets, commitment resets, tool resets, and ambiguous forks fail in specific regimes, while the full AgentContinuityRecord preserves control.
 
 The learned bottleneck discovery experiment adds that a shared latent can be selected from unlabeled outcome data. It is selected for both agent-state reuse and external-world reuse, which means compression alone discovers reusable hidden structure, not selfhood.
 
@@ -279,6 +283,10 @@ The SSRM-3D recurrent-observer precursor adds learned representation evidence on
 
 The SSRM-3D learned-controller precursor adds learned control evidence on the same world. Recurrent controllers trained by return-weighted imitation and future-return prediction beat frame-only controllers by 50.120 to 123.950 reward points in stages 1-6 while their hidden states decode self variables. The weak self-edit action swing keeps causal policy editing as the next gap.
 
+The SSRM-3D tool-making and social precursors add that self-state pressure is not only internal. External markers, shared tools, identity memory, reputation, costly signals, and names matter only when they preserve future options under embodied confusion or repeated social memory.
+
+The SSRM-3D agent-continuity precursor adds a restore/fork boundary. The same agent is not identified by weights, body, or memory alone; control survives when the continuity record binds body, model, memory, social history, commitments, event log, attention, hidden state, tools, goals, and branch identity.
+
 The learned bottleneck discovery experiment adds a simple model-selection step: the learned policy chooses a shared bottleneck in reusable-hidden regimes, local probes in independent-hidden regimes, and no hidden state when hidden state is irrelevant.
 
 The sequence latent transfer experiment adds that calibration memory without transfer is not enough. Control improves when the agent treats early outcomes as evidence about a persistent state that continues to govern later contexts.
@@ -322,6 +330,8 @@ Supported conditionally.
 Generic memory solves clean resume. It fails when memory contains foreign, stale, duplicate, or contradictory records. The identity continuity ledger matches oracle in those corrupted settings.
 
 The competing-subsystems arbitration experiment adds a simultaneous-conflict case. Local voting collapses when immediate reward, commitment completion, and safety maintenance disagree under hidden agent energy. A self-coherence arbitrator beats local voting in that setting, while no-conflict and world-gate controls show that self-state is not generally useful.
+
+The SSRM-3D agent-continuity precursor broadens this from corrupted memory to restored and forked control. Generic model weights, generic memory, and body state are each insufficient when the pressure requires the whole continuity record.
 
 Current interpretation: self is useful as an index for "my current unfinished commitments" and as a shared arbitration variable for "which subsystem proposal is coherent for this continuing system," not for memory or conflict resolution in general.
 
@@ -411,6 +421,9 @@ The experiments produce non-conscious self-equivalent mechanisms:
 - SSRM-3D embodied-world layering and visualization;
 - SSRM-3D recurrent-observer representation learning;
 - SSRM-3D learned-controller policy-state learning;
+- SSRM-3D tool-making and externalized cognition;
+- SSRM-3D social pressure and costly communication;
+- SSRM-3D agent-continuity serialization;
 - learned bottleneck discovery;
 - sequence latent transfer;
 - heterogeneous learner convergence;
@@ -493,6 +506,7 @@ The theory weakens or fails if future experiments show that:
 - SSRM-3D reactive or world-only agents scale through commitment, arbitration, and social pressure with equal value, or self-state ablation does not damage the layered agent;
 - SSRM-3D recurrent observers fail to recover stronger self-state than frame-only observers under pressure, or self-state edits do not affect future-viability prediction;
 - SSRM-3D learned recurrent controllers fail to beat frame-only controllers under pressure, or their policy states carry no decodable self-state;
+- SSRM-3D model-only copies, memory transplants, body-state restores, or ambiguous forks match full continuity records across restore and fork pressure;
 - world-only or action-history agents scale through hidden and drifting body frames without compact centered state;
 - recurrent agents solve body drift, hidden viability, and corrupted continuity with no stable agent-state information;
 - interventions on decoded agent-state variables do not change prediction or control;
@@ -547,6 +561,7 @@ The attractor claim becomes stronger if:
 - SSRM-3D tool-making tests whether return-selected agents externalize memory through markers, beacons, and alarms only when embodied confusion pressure requires it;
 - SSRM-3D social pressure tests whether return-selected agents use reputation, vulnerability, identity memory, and shared-tool trust only when other agents have persistent memory and policies;
 - SSRM-3D social ecology tests whether costly signals, names, gossip, and trust-maintenance check-ins are selected only when communication preserves future options under social memory;
+- SSRM-3D agent continuity tests whether restored or forked agents preserve control only when the whole continuity record is serialized, with component ablations failing specifically where those components matter;
 - learned bottlenecks emerge without self labels and are correctly separated into agent-state, world-state, local-hidden, and no-hidden cases by causal tests.
 - sequence latents inferred from early outcomes transfer to held-out contexts and are separated into agent-state versus world-state by causal tests.
 - heterogeneous learner families converge on the same latent causal signature while still separating agent-bounded latents from external shared latents.
@@ -562,11 +577,11 @@ The attractor claim becomes stronger if:
 
 ## Current Research Status
 
-The program has a coherent falsifiable theory and fifty-six toy experiment families, including an executable hidden-state boundary probe, a first architecture-convergence test, active self-information, counterfactual option-preservation, first-person frame integration, goal formation under capability, competing-subsystems arbitration, cross-context self-state reuse, reuse-pressure scaling, horizon-pressure scaling, partial-observability belief scaling, learned noisy-observation filtering, recurrent observation filtering, unseeded recurrent filtering, mixed-sensor recurrent filtering, learned sensor-subspace filtering, active boundary discovery, action-effect boundary probing, persistent action-boundary probing, return-selected boundary probing, end-to-end recurrent boundary probing, architecture boundary stress testing, architecture horizon-pressure sweeping, architecture capacity probing, architecture soft-return optimization, architecture hard-return auditing, architecture hard-return horizon sweeping, architecture online return learning, architecture policy-gradient return learning, architecture policy-gradient seed sweeping, architecture policy-gradient budget sweeping, architecture Torch actor-critic learning, SSRM-3D embodied-world layering, SSRM-3D recurrent-observer representation learning, SSRM-3D learned-controller policy-state learning, SSRM-3D tool-making/externalized-cognition pressure, SSRM-3D social-pressure identity/reputation pressure, SSRM-3D social-ecology costly-communication pressure, learned bottleneck discovery, sequence latent transfer, heterogeneous learner convergence, cross-environment boundary recurrence, factorial learner-environment convergence, raw reward-history learning, delayed-return memory policy learning, evolved recurrent hidden-state learning, gradient-trained recurrent hidden-state learning, model-based reward planning, latent causal ablation, and counterfactual latent editing. It does not yet prove a general law of adaptive systems.
+The program has a coherent falsifiable theory and fifty-seven toy experiment families, including an executable hidden-state boundary probe, a first architecture-convergence test, active self-information, counterfactual option-preservation, first-person frame integration, goal formation under capability, competing-subsystems arbitration, cross-context self-state reuse, reuse-pressure scaling, horizon-pressure scaling, partial-observability belief scaling, learned noisy-observation filtering, recurrent observation filtering, unseeded recurrent filtering, mixed-sensor recurrent filtering, learned sensor-subspace filtering, active boundary discovery, action-effect boundary probing, persistent action-boundary probing, return-selected boundary probing, end-to-end recurrent boundary probing, architecture boundary stress testing, architecture horizon-pressure sweeping, architecture capacity probing, architecture soft-return optimization, architecture hard-return auditing, architecture hard-return horizon sweeping, architecture online return learning, architecture policy-gradient return learning, architecture policy-gradient seed sweeping, architecture policy-gradient budget sweeping, architecture Torch actor-critic learning, SSRM-3D embodied-world layering, SSRM-3D recurrent-observer representation learning, SSRM-3D learned-controller policy-state learning, SSRM-3D tool-making/externalized-cognition pressure, SSRM-3D social-pressure identity/reputation pressure, SSRM-3D social-ecology costly-communication pressure, SSRM-3D agent-continuity restore/fork pressure, learned bottleneck discovery, sequence latent transfer, heterogeneous learner convergence, cross-environment boundary recurrence, factorial learner-environment convergence, raw reward-history learning, delayed-return memory policy learning, evolved recurrent hidden-state learning, gradient-trained recurrent hidden-state learning, model-based reward planning, latent causal ablation, and counterfactual latent editing. It does not yet prove a general law of adaptive systems.
 
-The newest evidence adds SSRM-3D social ecology: costly communication is rejected when it has no job, but warning signals, names, gossip, and check-ins are selected when they preserve survival, repair, deception resistance, shared-tool access, or future options. It supports a social-control pressure-gradient reading, but remains return-selected and toy-scale.
+The newest evidence adds SSRM-3D agent continuity: model-only copies, incompatible memory transplants, component resets, and ambiguous forks fail in specific restore/fork regimes, while the full AgentContinuityRecord preserves future control. It supports a continuity-as-control-record reading, but remains toy-scale and return-evaluated rather than learned-controller continuity.
 
-The 3D track now has an explicit done-enough gate. Gate 1 has a useful learned-control precursor, Gate 2 has a partial return-selected tool-making precursor, Gate 3 has partial return-selected social-pressure and costly-communication precursors, and Gate 4 is only partial because attention mixing, continuity memory, LLM stream, tool-building access, and richer social memory have not been independently ablated in the learned-control setting. The modular LLM architecture report defines the LLM-stream part of that future ablation. The next target is moving tool and social discovery into learned controllers, then testing richer repeated societies.
+The 3D track now has an explicit done-enough gate. Gate 1 has a useful learned-control precursor, Gate 2 has a partial return-selected tool-making precursor, Gate 3 has partial return-selected social-pressure and costly-communication precursors, and Gate 4 has a continuity-record precursor while still lacking attention mixing, continuity memory, LLM stream, tool-building access, and richer social memory ablations in the learned-control setting. The modular LLM architecture report defines the LLM-stream part of that future ablation, including multi-rate control where ticks are implementation and subsystem frequencies are the architecture. The next target is moving tool, social, and continuity discovery into learned controllers, then testing richer repeated societies.
 
 The next step is to replace linear learners and hand-coded policies with richer independent learned architectures:
 

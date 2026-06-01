@@ -1227,6 +1227,8 @@ Run a persistent 3D embodied-world precursor.
 
 This moves the pressure stack into a continuous world with terrain, resources, hazards, shelter, weather, day/night change, commitments, subsystem conflict, and a simple social competitor. The architecture is layered: reflex, perception, self-state, attention, arbiter, slow language module, and action. The language module receives compressed state packets and never directly controls motor behavior.
 
+The simulator may count ticks, but the intended architecture is rate based: high-frequency reflex and physics loops, medium-rate perception and attention, slower self-state and goal arbitration, and very slow or event-triggered language and memory layers. Ticks are implementation. Rates are the control model.
+
 Current expected result:
 
 - self-state should not be required in the low-pressure spatial stage;
@@ -1304,8 +1306,9 @@ The four gates are:
 Current status:
 
 - gate 1 has a useful learned-controller precursor, but direct self-edit action effects remain weak;
-- gates 2 and 3 remain open;
-- gate 4 is partially supported but lacks attention-mixing, continuity-memory, LLM-stream, and tool-access ablations in the learned-control setting.
+- gate 2 has a partial return-selected externalized-cognition precursor;
+- gate 3 has partial return-selected social-pressure and costly-communication precursors;
+- gate 4 has self-state, learned-observer, tool-access, communication, and continuity-record precursors, but lacks attention-mixing, continuity-memory, LLM-stream, and tool-access ablations in the learned-control setting.
 
 The proposed attention-buffer capacity sweep belongs after those gates start to exist, or as a targeted gate-4 study of attention mixing. It should be treated as an internal bandwidth hypothesis, not as evidence for consciousness or a special 12-dimensional world.
 
@@ -1390,6 +1393,36 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_social_ecology_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_social_ecology_results.js)
 
+## Supplemental SSRM-3D Agent Continuity
+
+Run an AgentContinuityRecord precursor in SSRM-3D.
+
+The ML model is not continuity by itself. Memory is not continuity by itself. Body state is not continuity by itself. This experiment tests continuity as a serialized binding record across body, model, memory, social history, commitments, event log, attention state, hidden state, tools, goals, and fork branch identity.
+
+Current expected result:
+
+- full continuity record should preserve control after pause/resume;
+- model-only copies should fail when memory, body, social history, or commitments matter;
+- memory-only transplants should fail when body/model/hidden state are incompatible;
+- social-memory reset should hurt repair and trust regimes specifically;
+- commitment-ledger reset should hurt unfinished obligations;
+- tool-inventory reset should hurt externalized-cognition commitments;
+- fork without branch identity should create rollback or duplicate-commitment conflict;
+- clean forks should share history before the fork and become separate continuities afterward.
+
+Implemented version:
+
+- [SSRM-3D agent-continuity script](../experiments/ssrm_3d_agent_continuity.py)
+- [SSRM-3D agent-continuity report](68_ssrm_3d_agent_continuity_report.md)
+- [agent-continuity visualization](../visualizations/ssrm_3d_agent_continuity.html)
+- [evaluation CSV](../artifacts/ssrm_3d_agent_continuity_eval.csv)
+- [summary CSV](../artifacts/ssrm_3d_agent_continuity_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_agent_continuity_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_agent_continuity_trace.json)
+- [JSON results](../artifacts/ssrm_3d_agent_continuity_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_agent_continuity_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_agent_continuity_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:
@@ -1403,6 +1436,8 @@ This is not a new positive experiment. It defines the expected ablation pattern:
 - direct LLM motor control should increase invalid actions, latency, hazard exposure, and recovery failures;
 - compressed state packets should be tested against full-world language access;
 - corrupting self-state should predictably corrupt language recommendations and arbiter decisions under embodied pressure.
+
+This boundary should be specified in frequencies, not as one global cognitive tick. Example rates are `reflex_hz = 60`, `perception_hz = 10`, `attention_hz = 10`, `self_state_hz = 5`, `goal_hz = 2`, `reasoning_hz = 0.5`, and `memory_hz = 0.1`, with implementation intervals derived from the base simulator clock.
 
 This belongs inside gate 4 once tool-making and richer social pressure are integrated into learned-controller runs.
 

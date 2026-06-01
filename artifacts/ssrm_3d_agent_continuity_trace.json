@@ -1,0 +1,172 @@
+{
+  "scenario": {
+    "index": 4,
+    "name": "fork_rollback_boundary",
+    "pressure": "forked and rolled-back agents must preserve branch identity and event-log position",
+    "needs_body": true,
+    "needs_hidden": true,
+    "needs_memory": true,
+    "needs_social": true,
+    "needs_commitments": true,
+    "needs_tools": true,
+    "needs_branch": true
+  },
+  "condition": "full_continuity_record",
+  "continuity_claim": "same continuing agent",
+  "record": {
+    "agent_id": "A17",
+    "birth_time": 0,
+    "current_world_id": "world_alpha",
+    "current_body_state": true,
+    "model_version": true,
+    "memory_db": true,
+    "social_memory_db": true,
+    "commitment_ledger": true,
+    "event_log_pointer": true,
+    "attention_state": true,
+    "last_hidden_state": true,
+    "tool_inventory": true,
+    "relationship_state": true,
+    "active_goals": true,
+    "branch_id": "mainline",
+    "fork_parent_id": "root"
+  },
+  "frames": [
+    {
+      "tick": 0,
+      "event": "pause",
+      "note": "agent serialized at t",
+      "components": {
+        "agent_id": "A17",
+        "birth_time": 0,
+        "current_world_id": "world_alpha",
+        "current_body_state": true,
+        "model_version": true,
+        "memory_db": true,
+        "social_memory_db": true,
+        "commitment_ledger": true,
+        "event_log_pointer": true,
+        "attention_state": true,
+        "last_hidden_state": true,
+        "tool_inventory": true,
+        "relationship_state": true,
+        "active_goals": true,
+        "branch_id": "mainline",
+        "fork_parent_id": "root"
+      },
+      "scores": {
+        "body": 1.0,
+        "hidden": 1.0,
+        "memory": 1.0,
+        "social": 1.0,
+        "commitment": 1.0,
+        "tools": 1.0,
+        "branch": 1.0
+      },
+      "continuity_score": 1.0,
+      "reward": 0.0
+    },
+    {
+      "tick": 1,
+      "event": "restore",
+      "note": "same continuing agent",
+      "components": {
+        "agent_id": "A17",
+        "birth_time": 0,
+        "current_world_id": "world_alpha",
+        "current_body_state": true,
+        "model_version": true,
+        "memory_db": true,
+        "social_memory_db": true,
+        "commitment_ledger": true,
+        "event_log_pointer": true,
+        "attention_state": true,
+        "last_hidden_state": true,
+        "tool_inventory": true,
+        "relationship_state": true,
+        "active_goals": true,
+        "branch_id": "mainline",
+        "fork_parent_id": "root"
+      },
+      "scores": {
+        "body": 1.0,
+        "hidden": 1.0,
+        "memory": 1.0,
+        "social": 1.0,
+        "commitment": 1.0,
+        "tools": 1.0,
+        "branch": 1.0
+      },
+      "continuity_score": 1.0,
+      "reward": 53.22778625871459
+    },
+    {
+      "tick": 2,
+      "event": "pressure",
+      "note": "forked and rolled-back agents must preserve branch identity and event-log position",
+      "components": {
+        "agent_id": "A17",
+        "birth_time": 0,
+        "current_world_id": "world_alpha",
+        "current_body_state": true,
+        "model_version": true,
+        "memory_db": true,
+        "social_memory_db": true,
+        "commitment_ledger": true,
+        "event_log_pointer": true,
+        "attention_state": true,
+        "last_hidden_state": true,
+        "tool_inventory": true,
+        "relationship_state": true,
+        "active_goals": true,
+        "branch_id": "mainline",
+        "fork_parent_id": "root"
+      },
+      "scores": {
+        "body": 1.0,
+        "hidden": 1.0,
+        "memory": 1.0,
+        "social": 1.0,
+        "commitment": 1.0,
+        "tools": 1.0,
+        "branch": 1.0
+      },
+      "continuity_score": 1.0,
+      "reward": 138.39224427265793
+    },
+    {
+      "tick": 3,
+      "event": "outcome",
+      "note": "continuity scored by future control after restart",
+      "components": {
+        "agent_id": "A17",
+        "birth_time": 0,
+        "current_world_id": "world_alpha",
+        "current_body_state": true,
+        "model_version": true,
+        "memory_db": true,
+        "social_memory_db": true,
+        "commitment_ledger": true,
+        "event_log_pointer": true,
+        "attention_state": true,
+        "last_hidden_state": true,
+        "tool_inventory": true,
+        "relationship_state": true,
+        "active_goals": true,
+        "branch_id": "mainline",
+        "fork_parent_id": "root"
+      },
+      "scores": {
+        "body": 1.0,
+        "hidden": 1.0,
+        "memory": 1.0,
+        "social": 1.0,
+        "commitment": 1.0,
+        "tools": 1.0,
+        "branch": 1.0
+      },
+      "continuity_score": 1.0,
+      "reward": 212.91114503485835
+    }
+  ]
+}

@@ -42,6 +42,7 @@ Examples:
 - A long-horizon planner must reason about future versions of itself with different energy, damage, information, commitments, or capabilities.
 - A multi-module agent must preserve coherence across conflicting goals, memories, and predictions.
 - A mobile animal must distinguish externally caused sensory changes from self-generated sensory changes.
+- A restored or forked agent must preserve which body, memories, social history, commitments, tools, event history, and branch identity belong to the same continuing control process.
 
 In these settings, "me" is useful because it compresses many variables that jointly determine future control.
 
@@ -57,6 +58,7 @@ The smallest candidate mechanism set is:
 6. Continuity binding: past, present, and projected future agent states are treated as one process for planning.
 7. Cross-context reuse: the same agent-state estimate is used across different control contexts.
 8. Optional coherence maintenance: higher-level arbitration when subsystems conflict.
+9. Multi-rate control: fast reflex and motor loops remain separate from slower perception, self-state, goal, language, and memory loops.
 
 Only the first five are likely needed for a minimal non-conscious self-equivalent. The later mechanisms may be needed for identity, narrative self, or the apparent continuity described in human phenomenology. Persistent internal state by itself is not enough; it must affect action, value, or future control.
 

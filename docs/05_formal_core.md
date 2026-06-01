@@ -159,6 +159,8 @@ Torch actor-critic learning tests a stronger neural sampled-return learner. If i
 
 SSRM-3D tests whether the same formal pressure survives embodiment. The language module is not part of the fast control loop; it receives compressed state packets and only recommends. The self-equivalent variable remains the persistent control state that links hidden viability, capability, prediction error, commitments, attention, and arbitration to future action.
 
+The SSRM-3D control stack should be treated as multi-rate. A tick is only the simulator clock. Reflexes, motor correction, perception, attention, self-state updates, goal arbitration, language reasoning, and memory consolidation should have different update frequencies. This matters formally because the self-state can be a slower persistent sufficient statistic while reflexes and motor control still require high-frequency loops.
+
 The modular LLM architecture turns that boundary into an ablation claim. Removing the LLM should damage slow abstraction more than reflex survival; bypassing the arbiter with direct language-to-motor control should damage realtime control; corrupting the self packet should produce specific recommendation and arbitration errors. If those predictions fail, the separation between language reasoning and self-state control must be revised.
 
 SSRM-3D tool-making tests whether useful control state can be externalized into the world. A marker, beacon, alarm, or cache is not self-state by itself. It supports the formal claim only when external structure is selected because it preserves future control under partial observability, and when removing tool access produces a specific loss in those pressure regimes but not in visible controls.
@@ -166,6 +168,8 @@ SSRM-3D tool-making tests whether useful control state can be externalized into 
 SSRM-3D social pressure tests whether the agent's own continuity becomes a social control variable. A model of other agents is not selfhood by itself. It supports the formal claim only when the tested agent must track its own vulnerability, reputation, obligations, and remembered identity because other agents can help, exploit, deceive, trade, or sabotage across time.
 
 SSRM-3D social ecology tests whether communication becomes social infrastructure only when it has a control job. A signal, name, gossip report, or check-in is not selfhood by itself. It supports the formal claim only when costly communication is rejected in no-job controls and selected because persistent social memory changes the agent's future repair, cooperation, deception-resistance, or shared-tool options.
+
+SSRM-3D agent continuity tests whether persistence is bound by a whole control record rather than model weights alone. A restored or forked agent supports the formal claim only when body state, model version, memory, social memory, commitments, event-log position, attention, hidden state, tools, goals, and branch identity are preserved or specifically ablated under pressures that require those components.
 
 SSRM-3D recurrent observation tests whether that variable can be recovered from traces rather than read from the hand-built workspace. A recurrent observer supports the formal claim only if its hidden state decodes agent variables, improves over a frame-only observer under pressure, and changes future-viability prediction when edited along the learned self-state direction.
 

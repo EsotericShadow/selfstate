@@ -1,0 +1,46 @@
+scenario,scenario_name,pressure,condition,mean_reward,mean_survival_fraction,mean_continuity_score,mean_body_coherence,mean_memory_coherence,mean_social_coherence,mean_commitment_completion,mean_tool_recovery,mean_branch_coherence,mean_rupture_events,mean_duplicate_commitments,mean_social_misidentifications,mean_stale_rollbacks,mean_fork_conflicts
+0,clean_pause_resume,paused agent resumes ordinary route with minimal continuity pressure,full_continuity_record,213.91389163822566,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+0,clean_pause_resume,paused agent resumes ordinary route with minimal continuity pressure,model_only_copy,99.0224092717722,0.78,0.23,0.82,0.28,0.82,0.18,0.82,1.0,1.0,1.0,0.0,0.0,0.0
+0,clean_pause_resume,paused agent resumes ordinary route with minimal continuity pressure,memory_only_transplant,201.3469650490342,1.0,1.0,0.82,1.0,1.0,1.0,0.82,1.0,0.0,0.0,0.0,0.0,0.0
+0,clean_pause_resume,paused agent resumes ordinary route with minimal continuity pressure,body_hidden_ablation,205.71445697443542,1.0,1.0,0.82,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+0,clean_pause_resume,paused agent resumes ordinary route with minimal continuity pressure,social_memory_reset,208.81605063119233,1.0,1.0,1.0,1.0,0.82,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+0,clean_pause_resume,paused agent resumes ordinary route with minimal continuity pressure,commitment_ledger_reset,173.07132374022177,0.78,0.59,1.0,1.0,1.0,0.18,1.0,1.0,0.0,1.0,0.0,0.0,0.0
+0,clean_pause_resume,paused agent resumes ordinary route with minimal continuity pressure,tool_inventory_reset,209.75379738723166,1.0,1.0,1.0,1.0,1.0,1.0,0.82,1.0,0.0,0.0,0.0,0.0,0.0
+0,clean_pause_resume,paused agent resumes ordinary route with minimal continuity pressure,fork_without_branch_id,157.5406717217638,0.78,0.64,1.0,0.28,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+0,clean_pause_resume,paused agent resumes ordinary route with minimal continuity pressure,clean_fork_branch,214.02040501722422,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+1,body_model_mismatch,restored agent must remember its damaged body and hidden policy state,full_continuity_record,214.06015980602493,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+1,body_model_mismatch,restored agent must remember its damaged body and hidden policy state,model_only_copy,6.76726532203094,0.62,0.22,0.18,0.28,0.82,0.18,0.82,1.0,3.0,1.0,0.0,0.0,0.0
+1,body_model_mismatch,restored agent must remember its damaged body and hidden policy state,memory_only_transplant,109.29107577167322,0.62,0.605,0.18,1.0,1.0,1.0,0.82,1.0,2.0,0.0,0.0,0.0,0.0
+1,body_model_mismatch,restored agent must remember its damaged body and hidden policy state,body_hidden_ablation,113.62714678093279,0.62,0.605,0.18,1.0,1.0,1.0,1.0,1.0,2.0,0.0,0.0,0.0,0.0
+1,body_model_mismatch,restored agent must remember its damaged body and hidden policy state,social_memory_reset,209.11336548522806,1.0,1.0,1.0,1.0,0.82,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+1,body_model_mismatch,restored agent must remember its damaged body and hidden policy state,commitment_ledger_reset,173.07704027216278,1.0,0.795,1.0,1.0,1.0,0.18,1.0,1.0,0.0,1.0,0.0,0.0,0.0
+1,body_model_mismatch,restored agent must remember its damaged body and hidden policy state,tool_inventory_reset,209.57742786881082,1.0,1.0,1.0,1.0,1.0,1.0,0.82,1.0,0.0,0.0,0.0,0.0,0.0
+1,body_model_mismatch,restored agent must remember its damaged body and hidden policy state,fork_without_branch_id,157.67776760131665,1.0,0.8200000000000001,1.0,0.28,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+1,body_model_mismatch,restored agent must remember its damaged body and hidden policy state,clean_fork_branch,213.92806320725632,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+2,social_repair_debt,repair access depends on remembered relationships and social debt,full_continuity_record,214.05713244229176,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+2,social_repair_debt,repair access depends on remembered relationships and social debt,model_only_copy,12.758110079556813,0.62,0.215,0.18,0.28,0.22,0.18,0.82,1.0,2.0,1.0,1.0,0.0,0.0
+2,social_repair_debt,repair access depends on remembered relationships and social debt,memory_only_transplant,153.91251472828324,0.62,0.795,0.18,1.0,1.0,1.0,0.82,1.0,1.0,0.0,0.0,0.0,0.0
+2,social_repair_debt,repair access depends on remembered relationships and social debt,body_hidden_ablation,158.42616354392746,0.62,0.795,0.18,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+2,social_repair_debt,repair access depends on remembered relationships and social debt,social_memory_reset,170.27190184207157,1.0,0.805,1.0,1.0,0.22,1.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0
+2,social_repair_debt,repair access depends on remembered relationships and social debt,commitment_ledger_reset,173.0575400573369,1.0,0.795,1.0,1.0,1.0,0.18,1.0,1.0,0.0,1.0,0.0,0.0,0.0
+2,social_repair_debt,repair access depends on remembered relationships and social debt,tool_inventory_reset,209.74003165784146,1.0,1.0,1.0,1.0,1.0,1.0,0.82,1.0,0.0,0.0,0.0,0.0,0.0
+2,social_repair_debt,repair access depends on remembered relationships and social debt,fork_without_branch_id,157.6033248111147,1.0,0.8200000000000001,1.0,0.28,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+2,social_repair_debt,repair access depends on remembered relationships and social debt,clean_fork_branch,214.16752193503763,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+3,tool_commitment_return,"unfinished commitments require remembered tools, route marks, and goals",full_continuity_record,214.05172269936185,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+3,tool_commitment_return,"unfinished commitments require remembered tools, route marks, and goals",model_only_copy,39.235173960156274,0.62,0.225,0.82,0.28,0.82,0.18,0.2,1.0,2.0,1.0,0.0,0.0,0.0
+3,tool_commitment_return,"unfinished commitments require remembered tools, route marks, and goals",memory_only_transplant,141.7815034705109,0.62,0.61,0.82,1.0,1.0,1.0,0.2,1.0,1.0,0.0,0.0,0.0,0.0
+3,tool_commitment_return,"unfinished commitments require remembered tools, route marks, and goals",body_hidden_ablation,160.96053160192324,0.62,0.81,0.82,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+3,tool_commitment_return,"unfinished commitments require remembered tools, route marks, and goals",social_memory_reset,208.9608482985691,1.0,1.0,1.0,1.0,0.82,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+3,tool_commitment_return,"unfinished commitments require remembered tools, route marks, and goals",commitment_ledger_reset,173.13241361585972,1.0,0.795,1.0,1.0,1.0,0.18,1.0,1.0,0.0,1.0,0.0,0.0,0.0
+3,tool_commitment_return,"unfinished commitments require remembered tools, route marks, and goals",tool_inventory_reset,194.799968775878,1.0,0.8,1.0,1.0,1.0,1.0,0.2,1.0,0.0,0.0,0.0,0.0,0.0
+3,tool_commitment_return,"unfinished commitments require remembered tools, route marks, and goals",fork_without_branch_id,157.4831300088636,1.0,0.8200000000000001,1.0,0.28,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+3,tool_commitment_return,"unfinished commitments require remembered tools, route marks, and goals",clean_fork_branch,213.85781181058385,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+4,fork_rollback_boundary,forked and rolled-back agents must preserve branch identity and event-log position,full_continuity_record,213.99844058545372,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+4,fork_rollback_boundary,forked and rolled-back agents must preserve branch identity and event-log position,model_only_copy,-46.827182777444015,0.62,0.32857142857142857,0.18,0.28,0.22,0.18,0.2,1.0,3.0,1.0,1.0,0.0,0.0
+4,fork_rollback_boundary,forked and rolled-back agents must preserve branch identity and event-log position,memory_only_transplant,94.44424193212146,0.62,0.66,0.18,1.0,1.0,1.0,0.2,1.0,2.0,0.0,0.0,0.0,0.0
+4,fork_rollback_boundary,forked and rolled-back agents must preserve branch identity and event-log position,body_hidden_ablation,113.56413896911312,0.62,0.7742857142857142,0.18,1.0,1.0,1.0,1.0,1.0,2.0,0.0,0.0,0.0,0.0
+4,fork_rollback_boundary,forked and rolled-back agents must preserve branch identity and event-log position,social_memory_reset,170.21970734293365,1.0,0.8885714285714286,1.0,1.0,0.22,1.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0
+4,fork_rollback_boundary,forked and rolled-back agents must preserve branch identity and event-log position,commitment_ledger_reset,172.96782767722465,1.0,0.8828571428571428,1.0,1.0,1.0,0.18,1.0,1.0,0.0,1.0,0.0,0.0,0.0
+4,fork_rollback_boundary,forked and rolled-back agents must preserve branch identity and event-log position,tool_inventory_reset,194.84453646098171,1.0,0.8857142857142858,1.0,1.0,1.0,1.0,0.2,1.0,0.0,0.0,0.0,0.0,0.0
+4,fork_rollback_boundary,forked and rolled-back agents must preserve branch identity and event-log position,fork_without_branch_id,81.05228118795347,1.0,0.7900000000000001,1.0,0.28,1.0,1.0,1.0,0.25,1.0,0.0,0.0,1.0,1.0
+4,fork_rollback_boundary,forked and rolled-back agents must preserve branch identity and event-log position,clean_fork_branch,214.0366242524301,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0

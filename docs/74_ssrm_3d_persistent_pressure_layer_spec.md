@@ -94,7 +94,8 @@ Priority order:
 6. Social trust/contracts. Implemented as the social trust/contracts precursor in [report 80](80_ssrm_3d_social_trust_contracts_report.md).
 7. Predator/threat agents. Implemented as the predator/threat agents precursor in [report 81](81_ssrm_3d_predator_threat_agents_report.md).
 8. Resource ecology. Implemented as the resource ecology precursor in [report 82](82_ssrm_3d_resource_ecology_report.md).
-9. Injury/disability adaptation. Next pressure-layer target.
+9. Injury/disability adaptation. Implemented as the injury/disability adaptation precursor in [report 83](83_ssrm_3d_injury_disability_adaptation_report.md).
+10. Development/skill learning. Next pressure-layer target.
 
 This combination should make the agent answer behaviorally:
 

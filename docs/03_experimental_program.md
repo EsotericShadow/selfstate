@@ -1713,6 +1713,35 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_resource_ecology_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_resource_ecology_results.js)
 
+## SSRM-3D Injury/Disability Adaptation Pressure
+
+Run the ninth persistent-pressure layer from report 74.
+
+This experiment treats capability self-state, motor adaptation, sensor compensation, infection management, repair access, help-seeking, compensation tools, route adaptation, and continuity as abstract control variables. It asks whether injury/disability becomes self-relevant only when changed capability alters the agent's own future action feasibility, perception, social support, tools, routes, or restore-time control.
+
+Canonical result:
+
+- fixed-body control rejects disability machinery;
+- limp/route pressure fails under no-capability-state, no-motor-adaptation, no-compensation-tools, and no-route-adaptation ablations;
+- vision/hearing damage pressure fails under no-capability-state, no-sensor-compensation, no-compensation-tools, and no-route-adaptation ablations;
+- wound infection pressure fails under no-capability-state, no-motor-adaptation, no-infection-management, and no-repair-access ablations;
+- social help compensation pressure fails under no-capability-state, no-motor-adaptation, no-sensor-compensation, no-help-seeking, no-compensation-tools, and no-route-adaptation ablations;
+- restore pressure fails under no-continuity plus capability, motor, sensor, infection, repair, help, tool, and route ablations.
+
+Implemented version:
+
+- [SSRM-3D injury/disability adaptation script](../experiments/ssrm_3d_injury_disability_adaptation.py)
+- [SSRM-3D injury/disability adaptation report](83_ssrm_3d_injury_disability_adaptation_report.md)
+- [injury/disability adaptation visualization](../visualizations/ssrm_3d_injury_disability_adaptation.html)
+- [evaluation CSV](../artifacts/ssrm_3d_injury_disability_adaptation_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_injury_disability_adaptation_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_injury_disability_adaptation_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_injury_disability_adaptation_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_injury_disability_adaptation_trace.json)
+- [JSON results](../artifacts/ssrm_3d_injury_disability_adaptation_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_injury_disability_adaptation_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_injury_disability_adaptation_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

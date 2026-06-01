@@ -189,6 +189,8 @@ Existing evidence includes self-state ablation in SSRM-3D, learned observer self
 
 [Report 82](82_ssrm_3d_resource_ecology_report.md) adds a pressure-layer ablation check for resource memory, regeneration, spoilage, migration, restraint, cache management, sharing contracts, territory ownership, and continuity. It strengthens the targeted-ablation pattern for designed policies, but it does not replace learned-controller discovery of sustainable resource use.
 
+[Report 83](83_ssrm_3d_injury_disability_adaptation_report.md) adds a pressure-layer ablation check for capability self-state, motor adaptation, sensor compensation, infection management, repair access, help-seeking, compensation tools, route adaptation, and continuity. It strengthens the targeted-ablation pattern for designed policies, but it does not replace learned-controller discovery of disability adaptation or full embodied self-state ablations.
+
 Failure interpretation:
 
 - If removing self-state hurts everywhere, the environment is biased toward self variables.

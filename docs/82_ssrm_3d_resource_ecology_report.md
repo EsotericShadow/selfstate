@@ -97,15 +97,17 @@ Some selected policies carry extra channels whose ablations are neutral in that 
 - Resource dynamics are abstract control variables, not ecology simulation.
 - Restraint, sharing, territory, and cache policies are designed channels.
 - The selected planner is not an online RL agent discovering sustainable harvesting from scratch.
-- This does not yet include injury/disability adaptation, development, dependent care, or irreversible loss.
+- This report itself does not include injury/disability adaptation, development, dependent care, or irreversible loss.
 
 ## Next Test
 
-The next pressure-layer step should add injury/disability adaptation:
+The implemented follow-up adds injury/disability adaptation:
 
 - limping, hearing loss, vision damage, infection risk, and tool wear should change feasible actions;
 - help-seeking, repair, tool substitution, route choice, and social trust should compete;
 - ablations should separate capability self-state, sensor damage, motor degradation, repair access, help-seeking, compensation tools, and continuity.
+
+Implemented by [report 83](83_ssrm_3d_injury_disability_adaptation_report.md).
 
 ## Visualization
 

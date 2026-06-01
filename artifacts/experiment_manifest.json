@@ -13,7 +13,7 @@
         "15"
       ],
       "returncode": 0,
-      "elapsed_seconds": 1.8522980213165283,
+      "elapsed_seconds": 1.8228349685668945,
       "stdout_tail": [
         "static_goal_switch | factorized_self_world | 1.000             | 4.000                         | 3.750              | 201.060         | 0.000         | 0.000        ",
         "static_goal_switch | history_action_table  | 1.000             | 4.000                         | 3.750              | 201.060         |               |              ",
@@ -44,7 +44,7 @@
         "8"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.1620771884918213,
+      "elapsed_seconds": 0.15995287895202637,
       "stdout_tail": [
         "self_drift         | implicit_action_memory | 0.000         ",
         "self_drift         | no_self                | 0.000         ",
@@ -77,7 +77,7 @@
         "10"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.5918259620666504,
+      "elapsed_seconds": 0.5734529495239258,
       "stdout_tail": [
         "self_drift         | full_predictive_state    | 1.000        | 0.000               | 25.136         ",
         "self_drift         | no_state_identity        | 0.698        | 54.540              | 367.012        ",
@@ -106,7 +106,7 @@
         "80"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.6908988952636719,
+      "elapsed_seconds": 0.682260274887085,
       "stdout_tail": [
         "energy_stress  | fixed_schedule_memory  | 0.000         | 56.360              | 379.327              | 279.327          | 41.196          | 10.672          | 5.492             | 0.000             ",
         "energy_stress  | oracle_self_state      | 1.000         | 80.000              | 610.000              | 610.000          | 61.000          | 19.000          | 0.000             | 0.000             ",
@@ -137,7 +137,7 @@
         "9"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.22037887573242188,
+      "elapsed_seconds": 0.18269085884094238,
       "stdout_tail": [
         "foreign_memory  | current_goal_only          | 0.000                 | 0.006                    | 4.010              | 0.962                | 0.000              | 0.000                  | 0.000                      | -39.516         ",
         "foreign_memory  | generic_memory_no_identity | 0.000                 | 1.000                    | 0.000              | 4.000                | 0.000              | 0.000                  | 0.000                      | 8.360           ",
@@ -170,7 +170,7 @@
         "12"
       ],
       "returncode": 0,
-      "elapsed_seconds": 2.047744035720825,
+      "elapsed_seconds": 2.02109694480896,
       "stdout_tail": [
         "world_drift        | action_table_memory     | full_model                | 0.422        | 3.442               | 7.204               |                     |                    ",
         "world_drift        | action_table_memory     | no_state_identity         | 1.000        | 1.518               | 7.204               |                     |                    ",
@@ -199,7 +199,7 @@
         "24"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.06308507919311523,
+      "elapsed_seconds": 0.06388020515441895,
       "stdout_tail": [
         "wrote /Volumes/T7/Users-main/Documents/consciousness/artifacts/selfhood_boundary_summary.csv",
         "wrote /Volumes/T7/Users-main/Documents/consciousness/artifacts/selfhood_boundary_results.json"
@@ -222,7 +222,7 @@
         "12"
       ],
       "returncode": 0,
-      "elapsed_seconds": 21.039752960205078,
+      "elapsed_seconds": 21.02311611175537,
       "stdout_tail": [
         "wrote artifacts/architecture_convergence_summary.csv",
         "wrote artifacts/architecture_convergence_verdict.csv",
@@ -254,7 +254,7 @@
         "20260530"
       ],
       "returncode": 0,
-      "elapsed_seconds": 5.727444887161255,
+      "elapsed_seconds": 5.711465835571289,
       "stdout_tail": [
         "wrote artifacts/active_self_information_plan_values.csv",
         "wrote artifacts/active_self_information_bandit_summary.csv",
@@ -280,7 +280,7 @@
         "20260530"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.7808530330657959,
+      "elapsed_seconds": 0.7875039577484131,
       "stdout_tail": [
         "wrote artifacts/counterfactual_option_preservation_summary.csv",
         "wrote artifacts/counterfactual_option_preservation_verdict.csv",
@@ -309,7 +309,7 @@
         "20260530"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.22715401649475098,
+      "elapsed_seconds": 0.22674894332885742,
       "stdout_tail": [
         "wrote artifacts/first_person_frame_summary.csv",
         "wrote artifacts/first_person_frame_verdict.csv",
@@ -332,7 +332,7 @@
         "20260530"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.1478099822998047,
+      "elapsed_seconds": 0.1481161117553711,
       "stdout_tail": [
         "wrote artifacts/goal_formation_under_capability_summary.csv",
         "wrote artifacts/goal_formation_under_capability_verdict.csv",
@@ -358,7 +358,7 @@
         "20260530"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.24555206298828125,
+      "elapsed_seconds": 0.24663615226745605,
       "stdout_tail": [
         "wrote artifacts/competing_subsystems_arbitration_summary.csv",
         "wrote artifacts/competing_subsystems_arbitration_verdict.csv",
@@ -381,7 +381,7 @@
         "20260531"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.15198493003845215,
+      "elapsed_seconds": 0.14890813827514648,
       "stdout_tail": [
         "wrote artifacts/cross_context_self_reuse_summary.csv",
         "wrote artifacts/cross_context_self_reuse_verdict.csv",
@@ -407,7 +407,7 @@
         "6"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.6340410709381104,
+      "elapsed_seconds": 0.6324191093444824,
       "stdout_tail": [
         "wrote artifacts/reuse_pressure_sweep_summary.csv",
         "wrote artifacts/reuse_pressure_sweep_verdict.csv",
@@ -433,7 +433,7 @@
         "12"
       ],
       "returncode": 0,
-      "elapsed_seconds": 2.2374331951141357,
+      "elapsed_seconds": 2.224735975265503,
       "stdout_tail": [
         "wrote artifacts/horizon_pressure_sweep_summary.csv",
         "wrote artifacts/horizon_pressure_sweep_verdict.csv",
@@ -467,7 +467,7 @@
         "0.05"
       ],
       "returncode": 0,
-      "elapsed_seconds": 2.012528896331787,
+      "elapsed_seconds": 2.0134809017181396,
       "stdout_tail": [
         "wrote artifacts/partial_observability_sweep_summary.csv",
         "wrote artifacts/partial_observability_sweep_verdict.csv",
@@ -499,7 +499,7 @@
         "0.85"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.38876914978027344,
+      "elapsed_seconds": 0.38637828826904297,
       "stdout_tail": [
         "wrote artifacts/learned_observation_filter_summary.csv",
         "wrote artifacts/learned_observation_filter_training.csv",
@@ -535,7 +535,7 @@
         "500"
       ],
       "returncode": 0,
-      "elapsed_seconds": 9.321570873260498,
+      "elapsed_seconds": 9.268501996994019,
       "stdout_tail": [
         "wrote artifacts/recurrent_observation_filter_summary.csv",
         "wrote artifacts/recurrent_observation_filter_training.csv",
@@ -571,7 +571,7 @@
         "1500"
       ],
       "returncode": 0,
-      "elapsed_seconds": 27.259033679962158,
+      "elapsed_seconds": 27.350401163101196,
       "stdout_tail": [
         "wrote artifacts/unseeded_recurrent_filter_summary.csv",
         "wrote artifacts/unseeded_recurrent_filter_training.csv",
@@ -607,7 +607,7 @@
         "1800"
       ],
       "returncode": 0,
-      "elapsed_seconds": 37.810133934020996,
+      "elapsed_seconds": 37.69576287269592,
       "stdout_tail": [
         "wrote artifacts/mixed_sensor_recurrent_filter_summary.csv",
         "wrote artifacts/mixed_sensor_recurrent_filter_training.csv",
@@ -643,7 +643,7 @@
         "1800"
       ],
       "returncode": 0,
-      "elapsed_seconds": 37.531166791915894,
+      "elapsed_seconds": 37.561230182647705,
       "stdout_tail": [
         "wrote artifacts/learned_sensor_subspace_filter_summary.csv",
         "wrote artifacts/learned_sensor_subspace_filter_training.csv",
@@ -679,7 +679,7 @@
         "1800"
       ],
       "returncode": 0,
-      "elapsed_seconds": 36.59435701370239,
+      "elapsed_seconds": 36.96240472793579,
       "stdout_tail": [
         "wrote artifacts/active_boundary_discovery_summary.csv",
         "wrote artifacts/active_boundary_discovery_training.csv",
@@ -715,7 +715,7 @@
         "1800"
       ],
       "returncode": 0,
-      "elapsed_seconds": 46.20371985435486,
+      "elapsed_seconds": 48.10435104370117,
       "stdout_tail": [
         "wrote artifacts/action_effect_boundary_probe_summary.csv",
         "wrote artifacts/action_effect_boundary_probe_training.csv",
@@ -752,7 +752,7 @@
         "1800"
       ],
       "returncode": 0,
-      "elapsed_seconds": 46.565061807632446,
+      "elapsed_seconds": 46.240349769592285,
       "stdout_tail": [
         "wrote artifacts/persistent_action_boundary_probe_summary.csv",
         "wrote artifacts/persistent_action_boundary_probe_training.csv",
@@ -789,7 +789,7 @@
         "1800"
       ],
       "returncode": 0,
-      "elapsed_seconds": 46.4679491519928,
+      "elapsed_seconds": 45.84694290161133,
       "stdout_tail": [
         "wrote artifacts/return_selected_boundary_probe_summary.csv",
         "wrote artifacts/return_selected_boundary_probe_training.csv",
@@ -825,7 +825,7 @@
         "1800"
       ],
       "returncode": 0,
-      "elapsed_seconds": 46.02029514312744,
+      "elapsed_seconds": 46.32841992378235,
       "stdout_tail": [
         "wrote artifacts/end_to_end_boundary_probe_summary.csv",
         "wrote artifacts/end_to_end_boundary_probe_training.csv",
@@ -862,7 +862,7 @@
         "1800"
       ],
       "returncode": 0,
-      "elapsed_seconds": 46.17619872093201,
+      "elapsed_seconds": 46.38170504570007,
       "stdout_tail": [
         "wrote artifacts/architecture_boundary_stress_summary.csv",
         "wrote artifacts/architecture_boundary_stress_verdict.csv",
@@ -897,7 +897,7 @@
         "900"
       ],
       "returncode": 0,
-      "elapsed_seconds": 46.38066077232361,
+      "elapsed_seconds": 46.03609776496887,
       "stdout_tail": [
         "wrote artifacts/architecture_horizon_pressure_summary.csv",
         "wrote artifacts/architecture_horizon_pressure_verdict.csv",
@@ -930,7 +930,7 @@
         "0.85"
       ],
       "returncode": 0,
-      "elapsed_seconds": 4.221124172210693,
+      "elapsed_seconds": 4.252938270568848,
       "stdout_tail": [
         "wrote artifacts/architecture_capacity_probe_summary.csv",
         "wrote artifacts/architecture_capacity_probe_verdict.csv",
@@ -973,7 +973,7 @@
         "1.4"
       ],
       "returncode": 0,
-      "elapsed_seconds": 682.6992020606995,
+      "elapsed_seconds": 681.4830813407898,
       "stdout_tail": [
         "wrote artifacts/architecture_soft_return_optimizer_summary.csv",
         "wrote artifacts/architecture_soft_return_optimizer_verdict.csv",
@@ -1014,7 +1014,7 @@
         "1.4"
       ],
       "returncode": 0,
-      "elapsed_seconds": 448.91731095314026,
+      "elapsed_seconds": 447.2380909919739,
       "stdout_tail": [
         "wrote artifacts/architecture_hard_return_audit_summary.csv",
         "wrote artifacts/architecture_hard_return_audit_verdict.csv",
@@ -1055,7 +1055,7 @@
         "1.4"
       ],
       "returncode": 0,
-      "elapsed_seconds": 147.29033517837524,
+      "elapsed_seconds": 147.65729999542236,
       "stdout_tail": [
         "wrote artifacts/architecture_hard_return_horizon_summary.csv",
         "wrote artifacts/architecture_hard_return_horizon_verdict.csv",
@@ -1110,7 +1110,7 @@
         "0.06"
       ],
       "returncode": 0,
-      "elapsed_seconds": 20.165666103363037,
+      "elapsed_seconds": 20.223937034606934,
       "stdout_tail": [
         "wrote artifacts/architecture_online_return_learner_summary.csv",
         "wrote artifacts/architecture_online_return_learner_verdict.csv",
@@ -1163,7 +1163,7 @@
         "4.0"
       ],
       "returncode": 0,
-      "elapsed_seconds": 12.290565967559814,
+      "elapsed_seconds": 12.32758903503418,
       "stdout_tail": [
         "wrote artifacts/architecture_policy_gradient_learner_summary.csv",
         "wrote artifacts/architecture_policy_gradient_learner_verdict.csv",
@@ -1216,7 +1216,7 @@
         "4.0"
       ],
       "returncode": 0,
-      "elapsed_seconds": 61.335768699645996,
+      "elapsed_seconds": 61.52839398384094,
       "stdout_tail": [
         "wrote artifacts/architecture_policy_gradient_seed_sweep_summary.csv",
         "wrote artifacts/architecture_policy_gradient_seed_sweep_verdict.csv",
@@ -1265,7 +1265,7 @@
         "4.0"
       ],
       "returncode": 0,
-      "elapsed_seconds": 346.60012888908386,
+      "elapsed_seconds": 349.28687381744385,
       "stdout_tail": [
         "wrote artifacts/architecture_policy_gradient_budget_sweep_summary.csv",
         "wrote artifacts/architecture_policy_gradient_budget_sweep_verdict.csv",
@@ -1318,7 +1318,7 @@
         "auto"
       ],
       "returncode": 0,
-      "elapsed_seconds": 475.30231285095215,
+      "elapsed_seconds": 476.41714096069336,
       "stdout_tail": [
         "wrote artifacts/architecture_torch_actor_critic_summary.csv",
         "wrote artifacts/architecture_torch_actor_critic_verdict.csv",
@@ -1362,7 +1362,7 @@
         "0"
       ],
       "returncode": 0,
-      "elapsed_seconds": 5.45402717590332,
+      "elapsed_seconds": 5.495960235595703,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_verdict.csv",
         "wrote artifacts/ssrm_3d_trajectory.json",
@@ -1401,7 +1401,7 @@
         "auto"
       ],
       "returncode": 0,
-      "elapsed_seconds": 40.54491710662842,
+      "elapsed_seconds": 40.331238985061646,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_recurrent_observer_verdict.csv",
         "wrote artifacts/ssrm_3d_recurrent_observer_results.json",
@@ -1442,7 +1442,7 @@
         "auto"
       ],
       "returncode": 0,
-      "elapsed_seconds": 71.04734015464783,
+      "elapsed_seconds": 71.56780123710632,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_learned_controller_verdict.csv",
         "wrote artifacts/ssrm_3d_learned_controller_results.json",
@@ -1475,7 +1475,7 @@
         "20260610"
       ],
       "returncode": 0,
-      "elapsed_seconds": 78.19638133049011,
+      "elapsed_seconds": 78.53926801681519,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_tool_making_policy_selection.csv",
         "wrote artifacts/ssrm_3d_tool_making_summary.csv",
@@ -1506,7 +1506,7 @@
         "20260611"
       ],
       "returncode": 0,
-      "elapsed_seconds": 1.15464186668396,
+      "elapsed_seconds": 1.1471972465515137,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_social_pressure_summary.csv",
         "wrote artifacts/ssrm_3d_social_pressure_verdict.csv",
@@ -1537,7 +1537,7 @@
         "20260612"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.8978638648986816,
+      "elapsed_seconds": 0.8970692157745361,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_social_ecology_verdict.csv",
         "wrote artifacts/ssrm_3d_social_ecology_results.json",
@@ -1564,7 +1564,7 @@
         "20260613"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.12288188934326172,
+      "elapsed_seconds": 0.12480425834655762,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_agent_continuity_verdict.csv",
         "wrote artifacts/ssrm_3d_agent_continuity_results.json",
@@ -1597,7 +1597,7 @@
         "auto"
       ],
       "returncode": 0,
-      "elapsed_seconds": 20.88153314590454,
+      "elapsed_seconds": 21.201883792877197,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_learned_integration_verdict.csv",
         "wrote artifacts/ssrm_3d_learned_integration_results.json",
@@ -1632,7 +1632,7 @@
         "cpu"
       ],
       "returncode": 0,
-      "elapsed_seconds": 51.066336154937744,
+      "elapsed_seconds": 51.4447386264801,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_no_leak_integration_results.js",
         "wrote artifacts/ssrm_3d_no_leak_integration_trace.js",
@@ -1663,7 +1663,7 @@
         "6"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.22563695907592773,
+      "elapsed_seconds": 0.22655367851257324,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_structured_perception_verdict.csv",
         "wrote artifacts/ssrm_3d_structured_perception_results.json",
@@ -1694,7 +1694,7 @@
         "6"
       ],
       "returncode": 0,
-      "elapsed_seconds": 1.9556739330291748,
+      "elapsed_seconds": 1.974010944366455,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_day_night_sleep_verdict.csv",
         "wrote artifacts/ssrm_3d_day_night_sleep_results.json",
@@ -1725,7 +1725,7 @@
         "6"
       ],
       "returncode": 0,
-      "elapsed_seconds": 3.04670786857605,
+      "elapsed_seconds": 3.019451856613159,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_illness_sanitation_results.json",
         "wrote artifacts/ssrm_3d_illness_sanitation_trace.json",
@@ -1756,7 +1756,7 @@
         "6"
       ],
       "returncode": 0,
-      "elapsed_seconds": 6.807008981704712,
+      "elapsed_seconds": 6.720641851425171,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_weather_exposure_verdict.csv",
         "wrote artifacts/ssrm_3d_weather_exposure_results.json",
@@ -1787,7 +1787,7 @@
         "6"
       ],
       "returncode": 0,
-      "elapsed_seconds": 2.3701300621032715,
+      "elapsed_seconds": 2.3667469024658203,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_tool_shelter_degradation_verdict.csv",
         "wrote artifacts/ssrm_3d_tool_shelter_degradation_results.json",
@@ -1818,7 +1818,7 @@
         "7"
       ],
       "returncode": 0,
-      "elapsed_seconds": 1.05159330368042,
+      "elapsed_seconds": 1.049342393875122,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_social_trust_contracts_results.json",
         "wrote artifacts/ssrm_3d_social_trust_contracts_trace.json",
@@ -1849,7 +1849,7 @@
         "7"
       ],
       "returncode": 0,
-      "elapsed_seconds": 2.4880239963531494,
+      "elapsed_seconds": 2.5185747146606445,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_predator_threat_agents_results.json",
         "wrote artifacts/ssrm_3d_predator_threat_agents_trace.json",
@@ -1880,7 +1880,7 @@
         "7"
       ],
       "returncode": 0,
-      "elapsed_seconds": 3.295118808746338,
+      "elapsed_seconds": 3.292696714401245,
       "stdout_tail": [
         "wrote artifacts/ssrm_3d_resource_ecology_results.json",
         "wrote artifacts/ssrm_3d_resource_ecology_trace.json",
@@ -1900,6 +1900,37 @@
     {
       "command": [
         "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "experiments/ssrm_3d_injury_disability_adaptation.py",
+        "--train-episodes",
+        "72",
+        "--eval-episodes",
+        "96",
+        "--seed",
+        "20260628",
+        "--candidate-count",
+        "7"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.530815839767456,
+      "stdout_tail": [
+        "wrote artifacts/ssrm_3d_injury_disability_adaptation_results.json",
+        "wrote artifacts/ssrm_3d_injury_disability_adaptation_trace.json",
+        "wrote artifacts/ssrm_3d_injury_disability_adaptation_results.js",
+        "wrote artifacts/ssrm_3d_injury_disability_adaptation_trace.js",
+        "scenario                      | policy                        | capability_loss | motor_loss | sensor_loss | infection_loss | repair_loss | help_loss | tool_loss | route_loss | continuity_loss | supports",
+        "------------------------------+-------------------------------+-----------------+------------+-------------+----------------+-------------+-----------+-----------+------------+-----------------+---------",
+        "fixed_body_control            | ignore_disability_baseline    | -0.019          | -0.075     | -0.044      | -0.098         | 0.082       | 0.027     | 0.008     | 0.016      | 0.011           | True    ",
+        "limp_route_adaptation         | limp_route_tool_planner       | 76.843          | 184.822    | -0.157      | -0.298         | -0.255      | -0.257    | 113.561   | 115.636    | -0.095          | True    ",
+        "vision_hearing_damage         | sensor_compensation_planner   | 93.679          | -0.954     | 206.126     | -0.695         | -0.281      | -0.423    | 131.054   | 130.512    | -0.045          | True    ",
+        "wound_infection_repair        | infection_repair_planner      | 74.193          | 121.441    | 0.141       | 90.020         | 393.278     | 0.039     | 0.126     | 0.011      | -0.077          | True    ",
+        "social_help_compensation      | help_tool_route_planner       | 69.179          | 139.830    | 122.556     | 0.086          | 0.173       | 78.104    | 102.879   | 101.539    | 0.046           | True    ",
+        "restore_disability_continuity | continuity_disability_planner | 64.629          | 127.753    | 121.122     | 75.136         | 238.188     | 47.429    | 82.206    | 80.644     | 59.908          | True"
+      ],
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
         "experiments/learned_bottleneck_discovery.py",
         "--episodes",
         "500",
@@ -1911,7 +1942,7 @@
         "2"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.14935803413391113,
+      "elapsed_seconds": 0.15177202224731445,
       "stdout_tail": [
         "wrote artifacts/learned_bottleneck_discovery_summary.csv",
         "wrote artifacts/learned_bottleneck_discovery_verdict.csv",
@@ -1939,7 +1970,7 @@
         "2"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.18633580207824707,
+      "elapsed_seconds": 0.18841791152954102,
       "stdout_tail": [
         "wrote artifacts/sequence_latent_transfer_summary.csv",
         "wrote artifacts/sequence_latent_transfer_verdict.csv",
@@ -1969,7 +2000,7 @@
         "600"
       ],
       "returncode": 0,
-      "elapsed_seconds": 2.1747570037841797,
+      "elapsed_seconds": 2.170278310775757,
       "stdout_tail": [
         "wrote artifacts/heterogeneous_attractor_precursor_summary.csv",
         "wrote artifacts/heterogeneous_attractor_precursor_verdict.csv",
@@ -1997,7 +2028,7 @@
         "2"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.6746780872344971,
+      "elapsed_seconds": 0.6682839393615723,
       "stdout_tail": [
         "wrote artifacts/cross_environment_attractor_summary.csv",
         "wrote artifacts/cross_environment_attractor_environment_verdict.csv",
@@ -2028,7 +2059,7 @@
         "500"
       ],
       "returncode": 0,
-      "elapsed_seconds": 6.462585926055908,
+      "elapsed_seconds": 6.446461915969849,
       "stdout_tail": [
         "wrote artifacts/factorial_attractor_summary.csv",
         "wrote artifacts/factorial_attractor_baselines.csv",
@@ -2060,7 +2091,7 @@
         "500"
       ],
       "returncode": 0,
-      "elapsed_seconds": 7.0724310874938965,
+      "elapsed_seconds": 7.036412000656128,
       "stdout_tail": [
         "wrote artifacts/raw_history_learning_summary.csv",
         "wrote artifacts/raw_history_learning_baselines.csv",
@@ -2092,7 +2123,7 @@
         "500"
       ],
       "returncode": 0,
-      "elapsed_seconds": 9.699467897415161,
+      "elapsed_seconds": 9.643862962722778,
       "stdout_tail": [
         "wrote artifacts/delayed_return_policy_summary.csv",
         "wrote artifacts/delayed_return_policy_baselines.csv",
@@ -2124,7 +2155,7 @@
         "700"
       ],
       "returncode": 0,
-      "elapsed_seconds": 12.765443086624146,
+      "elapsed_seconds": 12.750862836837769,
       "stdout_tail": [
         "wrote artifacts/evolved_recurrent_policy_summary.csv",
         "wrote artifacts/evolved_recurrent_policy_baselines.csv",
@@ -2158,7 +2189,7 @@
         "2"
       ],
       "returncode": 0,
-      "elapsed_seconds": 15.094454050064087,
+      "elapsed_seconds": 15.158621072769165,
       "stdout_tail": [
         "wrote artifacts/gradient_recurrent_policy_summary.csv",
         "wrote artifacts/gradient_recurrent_policy_baselines.csv",
@@ -2190,7 +2221,7 @@
         "200"
       ],
       "returncode": 0,
-      "elapsed_seconds": 4.341551780700684,
+      "elapsed_seconds": 4.330352306365967,
       "stdout_tail": [
         "wrote artifacts/model_based_planning_summary.csv",
         "wrote artifacts/model_based_planning_baselines.csv",
@@ -2222,7 +2253,7 @@
         "200"
       ],
       "returncode": 0,
-      "elapsed_seconds": 3.918254852294922,
+      "elapsed_seconds": 3.904897689819336,
       "stdout_tail": [
         "wrote artifacts/latent_causal_ablation_summary.csv",
         "wrote artifacts/latent_causal_ablation_environment_verdict.csv",
@@ -2253,7 +2284,7 @@
         "200"
       ],
       "returncode": 0,
-      "elapsed_seconds": 3.858776807785034,
+      "elapsed_seconds": 3.886629104614258,
       "stdout_tail": [
         "wrote artifacts/counterfactual_latent_editing_summary.csv",
         "wrote artifacts/counterfactual_latent_editing_environment_verdict.csv",

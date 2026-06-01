@@ -1,0 +1,7 @@
+scenario,scenario_name,selected_policy,selected_uses_capability_state,selected_uses_motor_adaptation,selected_uses_sensor_compensation,selected_uses_infection_management,selected_uses_repair_access,selected_uses_help_seeking,selected_uses_compensation_tools,selected_uses_route_adaptation,selected_uses_continuity,train_reward,ignore_train_reward,train_gain_over_ignore
+0,fixed_body_control,ignore_disability_baseline,False,False,False,False,False,False,False,False,False,277.022617566416,277.0931087579589,-0.07049119154288519
+1,limp_route_adaptation,limp_route_tool_planner,True,True,False,False,False,False,True,True,False,212.56943941232794,-60.13775812127916,272.7071975336071
+2,vision_hearing_damage,sensor_compensation_planner,True,False,True,False,False,False,True,True,False,230.97174977233908,-43.383301873980194,274.3550516463193
+3,wound_infection_repair,infection_repair_planner,True,True,False,True,True,False,False,False,False,182.5546200052364,-526.4630835852004,709.0177035904368
+4,social_help_compensation,help_tool_route_planner,True,True,True,False,False,True,True,True,False,206.8733150091839,-382.822851732549,589.6961667417329
+5,restore_disability_continuity,continuity_disability_planner,True,True,True,True,True,True,True,True,True,169.19043078946964,-702.1742117294357,871.3646425189054

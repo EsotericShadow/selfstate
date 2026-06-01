@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Injury Disability Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101211;
+      --panel: #171b1a;
+      --line: rgba(239, 244, 238, 0.15);
+      --text: #f0f4ef;
+      --muted: #aab6ad;
+      --mobility: #79d28f;
+      --sensor: #75bdf0;
+      --infection: #f06f68;
+      --tool: #e8c66e;
+      --help: #b9a2f4;
+      --route: #f49a64;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 430px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #0b0e0d;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .event,
+    .outcome-row,
+    .verdict-row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: #202524;
+      height: 32px;
+      padding: 0 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      padding: 8px;
+      min-height: 58px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 18px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 112px minmax(0, 1fr) 48px;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .bar {
+      height: 10px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      width: 0;
+    }
+
+    .event {
+      border-left: 3px solid var(--line);
+      padding-left: 8px;
+    }
+
+    .outcome-row,
+    .verdict-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      border-top: 1px solid rgba(239, 244, 238, 0.08);
+      padding-top: 6px;
+    }
+
+    .verdict-row {
+      grid-template-columns: 10px minmax(0, 1fr) auto;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      padding: 2px 6px;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .value {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    @media (max-width: 940px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 58vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Injury/Disability</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+
+    <div class="controls">
+      <button id="play" type="button">Pause</button>
+      <input id="scrub" type="range" min="0" max="0" value="0">
+    </div>
+
+    <section class="metrics">
+      <div class="metric"><span>Tick</span><strong id="tick">0</strong></div>
+      <div class="metric"><span>Action</span><strong id="action">-</strong></div>
+      <div class="metric"><span>Progress</span><strong id="progress">0.00</strong></div>
+      <div class="metric"><span>Integrity</span><strong id="integrity">0.00</strong></div>
+    </section>
+
+    <section class="section" id="bars"></section>
+
+    <section class="section">
+      <h2>Recent Events</h2>
+      <div id="events"></div>
+    </section>
+
+    <section class="section">
+      <h2>Ablation Outcomes</h2>
+      <div id="outcomes"></div>
+    </section>
+
+    <section class="section">
+      <h2>Verdict Rows</h2>
+      <div id="verdicts"></div>
+    </section>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_injury_disability_adaptation_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_injury_disability_adaptation_results.js"></script>
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const subtitle = document.getElementById("subtitle");
+    const playButton = document.getElementById("play");
+    const scrub = document.getElementById("scrub");
+    const fields = {
+      tick: document.getElementById("tick"),
+      action: document.getElementById("action"),
+      progress: document.getElementById("progress"),
+      integrity: document.getElementById("integrity"),
+      bars: document.getElementById("bars"),
+      events: document.getElementById("events"),
+      outcomes: document.getElementById("outcomes"),
+      verdicts: document.getElementById("verdicts"),
+    };
+
+    const barDefs = [
+      ["mobility", "Mobility", "var(--mobility)", 1],
+      ["vision_quality", "Vision", "var(--sensor)", 1],
+      ["hearing_quality", "Hearing", "var(--sensor)", 1],
+      ["infection_load", "Infection", "var(--infection)", 1.2],
+      ["pain_stress", "Stress", "var(--infection)", 1],
+      ["tool_support", "Tools", "var(--tool)", 1],
+      ["help_support", "Help", "var(--help)", 1],
+      ["route_fit", "Route", "var(--route)", 1],
+      ["exposure_risk", "Exposure", "var(--infection)", 1.8],
+      ["energy", "Energy", "var(--mobility)", 1],
+    ];
+
+    let trace = window.SSRM_3D_INJURY_DISABILITY_TRACE;
+    let results = window.SSRM_3D_INJURY_DISABILITY_RESULTS;
+    let frameIndex = 0;
+    let playing = true;
+    let lastFrameTime = 0;
+
+    async function ensureData() {
+      if (!trace) {
+        const response = await fetch("../artifacts/ssrm_3d_injury_disability_adaptation_trace.json");
+        trace = await response.json();
+      }
+      if (!results) {
+        const response = await fetch("../artifacts/ssrm_3d_injury_disability_adaptation_results.json");
+        results = await response.json();
+      }
+    }
+
+    function fmt(value, digits = 2) {
+      const number = Number(value || 0);
+      return number.toFixed(digits);
+    }
+
+    function cssColor(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name.replace("var(", "").replace(")", "")).trim();
+    }
+
+    function buildBars() {
+      fields.bars.innerHTML = "";
+      for (const [key, label, color] of barDefs) {
+        const row = document.createElement("div");
+        row.className = "row";
+        row.innerHTML = `<span>${label}</span><div class="bar"><span style="background:${color}"></span></div><span class="value">0.00</span>`;
+        row.dataset.key = key;
+        fields.bars.appendChild(row);
+      }
+    }
+
+    function buildOutcomes() {
+      const outcomes = trace.condition_outcomes || {};
+      const keys = [
+        "full_control",
+        "no_capability_state",
+        "no_motor_adaptation",
+        "no_sensor_compensation",
+        "no_infection_management",
+        "no_repair_access",
+        "no_help_seeking",
+        "no_compensation_tools",
+        "no_route_adaptation",
+        "no_continuity",
+        "ignore_disability_baseline",
+      ];
+      fields.outcomes.innerHTML = "";
+      for (const key of keys) {
+        const row = outcomes[key];
+        if (!row) continue;
+        const div = document.createElement("div");
+        div.className = "outcome-row";
+        div.innerHTML = `<span>${key}</span><span class="value">${fmt(row.mean_reward, 1)}</span>`;
+        fields.outcomes.appendChild(div);
+      }
+    }
+
+    function buildVerdicts() {
+      fields.verdicts.innerHTML = "";
+      for (const row of results.verdict || []) {
+        const div = document.createElement("div");
+        div.className = "verdict-row";
+        const color = row.supports_injury_disability_precursor ? "var(--mobility)" : "var(--infection)";
+        const loss = Math.max(
+          row.no_capability_state_loss,
+          row.no_motor_adaptation_loss,
+          row.no_sensor_compensation_loss,
+          row.no_infection_management_loss,
+          row.no_repair_access_loss,
+          row.no_help_seeking_loss,
+          row.no_compensation_tools_loss,
+          row.no_route_adaptation_loss,
+          row.no_continuity_loss,
+        );
+        div.innerHTML = `<span class="dot" style="background:${color}"></span><span>${row.scenario_name}</span><span class="value">${fmt(loss, 1)}</span>`;
+        fields.verdicts.appendChild(div);
+      }
+    }
+
+    function resize() {
+      const rect = canvas.getBoundingClientRect();
+      const scale = window.devicePixelRatio || 1;
+      canvas.width = Math.max(1, Math.floor(rect.width * scale));
+      canvas.height = Math.max(1, Math.floor(rect.height * scale));
+      ctx.setTransform(scale, 0, 0, scale, 0, 0);
+    }
+
+    function draw(frame) {
+      const width = canvas.clientWidth;
+      const height = canvas.clientHeight;
+      ctx.clearRect(0, 0, width, height);
+
+      const pad = Math.max(28, Math.min(width, height) * 0.055);
+      const trackY = height * 0.55;
+      const trackX = pad;
+      const trackW = width - pad * 2;
+      const progressNorm = Math.min(1, frame.progress / (trace.scenario.required_progress || 1));
+      const agentX = trackX + trackW * progressNorm;
+      const agentY = trackY - frame.exposure_risk * 36 + (1 - frame.route_fit) * 16;
+
+      ctx.strokeStyle = "rgba(239,244,238,0.12)";
+      ctx.lineWidth = 1;
+      for (let i = 0; i < 8; i += 1) {
+        const y = pad + (height - pad * 2) * (i / 7);
+        ctx.beginPath();
+        ctx.moveTo(pad, y);
+        ctx.lineTo(width - pad, y);
+        ctx.stroke();
+      }
+
+      ctx.strokeStyle = "rgba(239,244,238,0.35)";
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(trackX, trackY);
+      for (let i = 0; i <= 12; i += 1) {
+        const x = trackX + trackW * (i / 12);
+        const y = trackY + Math.sin(i * 0.9) * 22 + (1 - frame.route_fit) * 16;
+        ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+
+      ctx.strokeStyle = cssColor("var(--route)");
+      ctx.lineWidth = 4;
+      ctx.beginPath();
+      ctx.moveTo(trackX, trackY - 42);
+      ctx.lineTo(width - pad, trackY - 42 + (1 - frame.route_fit) * 16);
+      ctx.stroke();
+
+      const exposureRadius = 42 + frame.exposure_risk * 56;
+      ctx.fillStyle = "rgba(240,111,104,0.13)";
+      ctx.beginPath();
+      ctx.arc(agentX, agentY, exposureRadius, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = "rgba(117,189,240,0.14)";
+      ctx.beginPath();
+      const cone = Math.max(0.18, frame.vision_quality) * 110;
+      ctx.moveTo(agentX, agentY);
+      ctx.arc(agentX, agentY, cone, -0.45, 0.45);
+      ctx.closePath();
+      ctx.fill();
+
+      ctx.strokeStyle = cssColor("var(--help)");
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(width - pad * 2.4, pad * 2.2, 26 + frame.help_support * 36, 0, Math.PI * 2);
+      ctx.stroke();
+
+      ctx.strokeStyle = cssColor("var(--tool)");
+      ctx.beginPath();
+      ctx.rect(pad * 1.4, pad * 1.4, 28 + frame.tool_support * 38, 28 + frame.tool_support * 38);
+      ctx.stroke();
+
+      ctx.fillStyle = cssColor("var(--mobility)");
+      ctx.beginPath();
+      ctx.arc(agentX, agentY, 16 + frame.mobility * 9, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = cssColor("var(--infection)");
+      ctx.beginPath();
+      ctx.arc(agentX + 13, agentY - 13, 5 + frame.infection_load * 8, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = "rgba(240,244,239,0.88)";
+      ctx.font = "13px ui-sans-serif, system-ui";
+      ctx.fillText(`policy: ${trace.policy.name}`, pad, height - pad - 36);
+      ctx.fillText(`scenario: ${trace.scenario.name}`, pad, height - pad - 16);
+      ctx.fillText(`falls ${frame.falls} / collisions ${frame.collisions}`, width - pad - 170, height - pad - 16);
+    }
+
+    function updateFields(frame) {
+      fields.tick.textContent = String(frame.tick);
+      fields.action.textContent = frame.action.replaceAll("_", " ");
+      fields.progress.textContent = fmt(frame.progress, 1);
+      fields.integrity.textContent = fmt(frame.integrity, 2);
+
+      for (const [key, , , maxValue] of barDefs) {
+        const row = fields.bars.querySelector(`[data-key="${key}"]`);
+        if (!row) continue;
+        const value = Number(frame[key] || 0);
+        row.querySelector(".bar > span").style.width = `${Math.min(100, Math.max(0, (value / maxValue) * 100))}%`;
+        row.querySelector(".value").textContent = fmt(value, 2);
+      }
+
+      fields.events.innerHTML = "";
+      const notes = frame.notes && frame.notes.length ? frame.notes : ["nominal work loop"];
+      for (const note of notes.slice(-3)) {
+        const div = document.createElement("div");
+        div.className = "event";
+        div.textContent = note;
+        fields.events.appendChild(div);
+      }
+    }
+
+    function render() {
+      const frame = trace.frames[frameIndex] || trace.frames[0];
+      scrub.value = String(frameIndex);
+      draw(frame);
+      updateFields(frame);
+    }
+
+    function animate(time) {
+      if (playing && time - lastFrameTime > 150) {
+        frameIndex = (frameIndex + 1) % trace.frames.length;
+        lastFrameTime = time;
+        render();
+      }
+      requestAnimationFrame(animate);
+    }
+
+    async function init() {
+      await ensureData();
+      subtitle.textContent = `${trace.scenario.name} / ${trace.policy.name}`;
+      scrub.max = String(Math.max(0, trace.frames.length - 1));
+      buildBars();
+      buildOutcomes();
+      buildVerdicts();
+      resize();
+      render();
+      requestAnimationFrame(animate);
+    }
+
+    playButton.addEventListener("click", () => {
+      playing = !playing;
+      playButton.textContent = playing ? "Pause" : "Play";
+    });
+
+    scrub.addEventListener("input", () => {
+      frameIndex = Number(scrub.value);
+      render();
+    });
+
+    window.addEventListener("resize", () => {
+      resize();
+      render();
+    });
+
+    init().catch((error) => {
+      subtitle.textContent = `Could not load trace: ${error.message}`;
+    });
+  </script>
+</body>
+</html>

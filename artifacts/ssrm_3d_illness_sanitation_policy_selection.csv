@@ -1,0 +1,7 @@
+scenario,scenario_name,selected_policy,selected_uses_need_state,selected_uses_illness_state,selected_uses_contamination,selected_uses_sanitation,selected_uses_clean_water,selected_uses_care,selected_uses_immunity,selected_uses_continuity,train_reward,no_health_train_reward,train_gain_over_no_health
+0,clean_resource_control,no_health_baseline,False,False,False,False,False,False,False,False,218.3617448332885,218.43598397252734,-0.07423913923884129
+1,hunger_thirst_delayed_need,need_reactive_forager,True,False,False,False,False,False,False,False,199.5121940702072,11.573241242341645,187.93895282786553
+2,latent_illness_attribution,quarantine_care_planner,True,True,True,True,True,True,False,True,146.79734004306155,-43.25639951308697,190.0537395561485
+3,contaminated_shelter_water,quarantine_care_planner,True,True,True,True,True,True,False,True,111.65334213290478,-311.36362485085164,423.01696698375645
+4,contagion_quarantine_care,quarantine_care_planner,True,True,True,True,True,True,False,True,127.07469818919998,-382.2918298562253,509.3665280454253
+5,immunity_restore_continuity,immunity_continuity_planner,True,True,True,True,True,False,True,True,142.7121935685076,-330.3308083882377,473.0430019567453

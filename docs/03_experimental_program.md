@@ -1541,6 +1541,35 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_day_night_sleep_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_day_night_sleep_results.js)
 
+## SSRM-3D Illness/Sanitation Pressure
+
+Run the third persistent-pressure layer from report 74.
+
+This experiment treats hunger, thirst, illness, contamination, sanitation, care, quarantine, immunity, and continuity as abstract control variables. It asks whether delayed internal risk and social exposure consequences create specific self-state pressure.
+
+Canonical result:
+
+- clean resource control rejects health machinery;
+- delayed hunger/thirst fails under no-hunger-thirst-state ablation;
+- latent illness attribution fails under no-illness-state and symptom-reactive-only ablations;
+- contaminated shelter/water fails under no-contamination-map, no-sanitation-action, and no-clean-water-tool ablations;
+- contagion pressure fails under no-care-quarantine ablation;
+- restore pressure fails under no-immunity-memory and no-continuity ablations.
+
+Implemented version:
+
+- [SSRM-3D illness/sanitation script](../experiments/ssrm_3d_illness_sanitation.py)
+- [SSRM-3D illness/sanitation report](77_ssrm_3d_illness_sanitation_report.md)
+- [illness/sanitation visualization](../visualizations/ssrm_3d_illness_sanitation.html)
+- [evaluation CSV](../artifacts/ssrm_3d_illness_sanitation_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_illness_sanitation_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_illness_sanitation_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_illness_sanitation_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_illness_sanitation_trace.json)
+- [JSON results](../artifacts/ssrm_3d_illness_sanitation_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_illness_sanitation_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_illness_sanitation_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

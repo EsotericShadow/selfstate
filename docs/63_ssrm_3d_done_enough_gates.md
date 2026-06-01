@@ -61,6 +61,8 @@ The learned-integration precursor trains a recurrent controller from reward-deri
 
 [Report 76](76_ssrm_3d_day_night_sleep_report.md) adds the second persistent-pressure layer. It does not satisfy learned control by itself, but it makes future learned-control gates more temporal: fatigue, night timing, shelter state, alarms, social watch, and continuity now have targeted sleep/rest ablations.
 
+[Report 77](77_ssrm_3d_illness_sanitation_report.md) adds the third persistent-pressure layer. It does not satisfy learned control by itself, but it makes future learned-control gates more internally hidden: hunger/thirst, illness attribution, contamination, quarantine/care, immunity, and continuity now have targeted health-state ablations.
+
 Remaining weakness:
 
 Direct counterfactual self-state edits have weak action effects. This means the current evidence supports learned policy-state self tracking for control, but not robust causal policy editing.
@@ -90,6 +92,8 @@ The learned-integration precursor adds that early tool-route evidence can be car
 The structured-perception precursor adds a more concrete tool reason: visual markers and audio alarms matter when FOV, darkness, occlusion, and sound direction create partial observability. This is still candidate-policy evidence, not learned tool invention.
 
 The sleep-rest precursor adds a second tool reason: alarms matter when the agent is vulnerable while resting near danger. This remains a supplied affordance, but the ablation is specific to the guarded-sleep regime.
+
+The illness/sanitation precursor adds a third tool reason: clean-water tools matter when hydration and pathogen exposure conflict. This remains a supplied affordance, but the ablation is specific to contaminated-resource regimes.
 
 Remaining weakness:
 

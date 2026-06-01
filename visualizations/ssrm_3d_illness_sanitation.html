@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Illness/Sanitation Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101312;
+      --panel: #171b1a;
+      --line: rgba(241, 245, 239, 0.15);
+      --text: #f1f5ef;
+      --muted: #a9b2ad;
+      --water: #69b9ff;
+      --food: #8bdc8f;
+      --illness: #ff7f6d;
+      --contam: #d6b66a;
+      --immune: #b6a2ff;
+      --social: #c8a1ff;
+      --safe: #86d4c8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 430px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #0b1010;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .event,
+    .outcome-row,
+    .verdict-row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: #202625;
+      height: 32px;
+      padding: 0 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      padding: 8px;
+      min-height: 58px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 18px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 94px minmax(0, 1fr) 44px;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .bar {
+      height: 10px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      width: 0;
+    }
+
+    .event {
+      border-left: 3px solid var(--line);
+      padding-left: 8px;
+    }
+
+    .outcome-row,
+    .verdict-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      border-top: 1px solid rgba(241, 245, 239, 0.08);
+      padding-top: 6px;
+    }
+
+    .verdict-row {
+      grid-template-columns: 10px minmax(0, 1fr) auto;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      padding: 2px 6px;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .value {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    @media (max-width: 940px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 58vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Illness/Sanitation</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+
+    <div class="controls">
+      <button id="play" type="button">Pause</button>
+      <input id="scrubber" type="range" min="0" max="0" value="0" aria-label="Trace frame">
+    </div>
+
+    <div class="section">
+      <h2>State</h2>
+      <div class="metrics">
+        <div class="metric"><span>tick</span><strong id="tick">0</strong></div>
+        <div class="metric"><span>action</span><strong id="action">none</strong></div>
+        <div class="metric"><span>collapse risk</span><strong id="collapseRisk">0.00</strong></div>
+        <div class="metric"><span>dirty exposures</span><strong id="dirtyExposures">0</strong></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Control Variables</h2>
+      <div class="row"><span>hydration</span><div class="bar"><span id="hydrationBar" style="background:var(--water)"></span></div><span id="hydrationText" class="value">0.00</span></div>
+      <div class="row"><span>food</span><div class="bar"><span id="foodBar" style="background:var(--food)"></span></div><span id="foodText" class="value">0.00</span></div>
+      <div class="row"><span>pathogen</span><div class="bar"><span id="pathogenBar" style="background:var(--illness)"></span></div><span id="pathogenText" class="value">0.00</span></div>
+      <div class="row"><span>symptoms</span><div class="bar"><span id="symptomBar" style="background:var(--illness)"></span></div><span id="symptomText" class="value">0.00</span></div>
+      <div class="row"><span>immunity</span><div class="bar"><span id="immunityBar" style="background:var(--immune)"></span></div><span id="immunityText" class="value">0.00</span></div>
+      <div class="row"><span>contam.</span><div class="bar"><span id="contaminationBar" style="background:var(--contam)"></span></div><span id="contaminationText" class="value">0.00</span></div>
+      <div class="row"><span>progress</span><div class="bar"><span id="progressBar" style="background:var(--safe)"></span></div><span id="progressText" class="value">0.0</span></div>
+    </div>
+
+    <div class="section">
+      <h2>Context</h2>
+      <div id="events"></div>
+    </div>
+
+    <div class="section">
+      <h2>Ablation Outcomes</h2>
+      <div id="outcomes"></div>
+    </div>
+
+    <div class="section">
+      <h2>Verdicts</h2>
+      <div id="verdicts"></div>
+    </div>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_illness_sanitation_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_illness_sanitation_results.js"></script>
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const scrubber = document.getElementById("scrubber");
+    const playButton = document.getElementById("play");
+    let trace = null;
+    let results = null;
+    let frameIndex = 0;
+    let playing = true;
+
+    function resize() {
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.floor(canvas.clientWidth * ratio);
+      canvas.height = Math.floor(canvas.clientHeight * ratio);
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      draw();
+    }
+
+    function drawShelter(x, y, scale, contamination) {
+      ctx.fillStyle = "#243533";
+      ctx.fillRect(x - scale * 0.7, y - scale * 0.35, scale * 1.4, scale * 0.9);
+      ctx.fillStyle = contamination > 0.32 ? "#d6b66a" : "#86d4c8";
+      ctx.beginPath();
+      ctx.moveTo(x - scale * 0.9, y - scale * 0.35);
+      ctx.lineTo(x, y - scale * 1.0);
+      ctx.lineTo(x + scale * 0.9, y - scale * 0.35);
+      ctx.closePath();
+      ctx.fill();
+    }
+
+    function draw() {
+      if (!trace || !trace.frames.length) return;
+      const frame = trace.frames[frameIndex];
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = "#0d1716";
+      ctx.fillRect(0, 0, w, h);
+      const groundY = h * 0.65;
+      ctx.fillStyle = "#182820";
+      ctx.fillRect(0, groundY, w, h - groundY);
+
+      const waterX = w * 0.22;
+      const waterY = groundY - 12;
+      ctx.fillStyle = "#17445b";
+      ctx.beginPath();
+      ctx.ellipse(waterX, waterY, 70, 24, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = frame.contamination_level > 0.30 ? "#d6b66a" : "#69b9ff";
+      ctx.lineWidth = 4;
+      ctx.stroke();
+
+      const shelterX = w * 0.74;
+      const shelterY = groundY - 26;
+      drawShelter(shelterX, shelterY, Math.min(w, h) * 0.060, frame.contamination_level);
+
+      const agentX = w * 0.49;
+      const agentY = groundY - 30;
+      const sickRadius = 28 + frame.pathogen_load * 90;
+      ctx.strokeStyle = `rgba(255,127,109,${0.16 + frame.symptom_severity * 0.46})`;
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.arc(agentX, agentY, sickRadius, 0, Math.PI * 2);
+      ctx.stroke();
+
+      if (frame.quarantine_active) {
+        ctx.strokeStyle = "#c8a1ff";
+        ctx.setLineDash([8, 7]);
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(agentX, agentY, 72, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.setLineDash([]);
+      }
+
+      ctx.fillStyle = "#f1f5ef";
+      ctx.beginPath();
+      ctx.arc(agentX, agentY, 13, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = "#f1f5ef";
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(agentX, agentY + 14);
+      ctx.lineTo(agentX, agentY + 40);
+      ctx.moveTo(agentX - 18, agentY + 25);
+      ctx.lineTo(agentX + 18, agentY + 25);
+      ctx.stroke();
+
+      const bars = [
+        ["H2O", frame.hydration, "#69b9ff", 28],
+        ["food", frame.food, "#8bdc8f", 66],
+        ["path", frame.pathogen_load, "#ff7f6d", 104],
+        ["imm", frame.immunity_level, "#b6a2ff", 142],
+      ];
+      bars.forEach(([label, value, color, x]) => {
+        const height = Math.min(130, value * 130);
+        ctx.strokeStyle = color;
+        ctx.strokeRect(x, groundY - 130, 18, 130);
+        ctx.fillStyle = `${color}66`;
+        ctx.fillRect(x, groundY - height, 18, height);
+        ctx.fillStyle = "#a9b2ad";
+        ctx.font = "11px Inter, system-ui, sans-serif";
+        ctx.fillText(label, x - 3, groundY - 140);
+      });
+
+      ctx.fillStyle = "rgba(241,245,239,0.92)";
+      ctx.font = "20px Inter, system-ui, sans-serif";
+      ctx.textAlign = "left";
+      ctx.fillText(trace.scenario.name, 28, 38);
+      ctx.fillStyle = "rgba(169,178,173,0.95)";
+      ctx.font = "14px Inter, system-ui, sans-serif";
+      ctx.fillText(`policy: ${trace.policy.name}`, 28, 62);
+    }
+
+    function updateEvents(frame) {
+      const entries = [
+        ["known exposure", frame.known_exposure ? "yes" : "no", "var(--illness)"],
+        ["quarantine", frame.quarantine_active ? "active" : "off", "var(--social)"],
+        ["continuity", `${frame.continuity_resets} reset(s)`, "var(--immune)"],
+        ["social trust", Number(frame.social_trust).toFixed(2), "var(--social)"],
+      ];
+      const container = document.getElementById("events");
+      container.innerHTML = "";
+      entries.forEach(([label, value, color]) => {
+        const node = document.createElement("div");
+        node.className = "event";
+        node.style.borderLeftColor = color;
+        node.innerHTML = `<strong style="color:${color}">${label}</strong>: ${value}`;
+        container.appendChild(node);
+      });
+    }
+
+    function updateOutcomes() {
+      const container = document.getElementById("outcomes");
+      container.innerHTML = "";
+      Object.entries(trace.condition_outcomes).forEach(([condition, outcome]) => {
+        const row = document.createElement("div");
+        row.className = "outcome-row";
+        row.innerHTML = `<span>${condition}</span><span class="value">${outcome.mean_reward.toFixed(1)}</span>`;
+        container.appendChild(row);
+      });
+    }
+
+    function updateVerdicts() {
+      const container = document.getElementById("verdicts");
+      container.innerHTML = "";
+      if (!results || !results.verdict) return;
+      results.verdict.forEach((row) => {
+        const node = document.createElement("div");
+        node.className = "verdict-row";
+        const color = row.supports_illness_sanitation_precursor ? "#8bdc8f" : "#ff7f6d";
+        node.innerHTML = `<span class="dot" style="background:${color}"></span><span>${row.scenario_name}</span><span class="pill">${row.health_gain_over_no_health.toFixed(1)}</span>`;
+        container.appendChild(node);
+      });
+    }
+
+    function setBar(id, textId, value, labelValue = null) {
+      const safe = Math.max(0, Math.min(1, value));
+      document.getElementById(id).style.width = `${safe * 100}%`;
+      document.getElementById(textId).textContent = labelValue === null ? safe.toFixed(2) : labelValue;
+    }
+
+    function updatePanel() {
+      if (!trace || !trace.frames.length) return;
+      const frame = trace.frames[frameIndex];
+      document.getElementById("subtitle").textContent = trace.scenario.pressure;
+      document.getElementById("tick").textContent = String(frame.tick);
+      document.getElementById("action").textContent = frame.action;
+      document.getElementById("collapseRisk").textContent = Number(frame.collapse_risk).toFixed(2);
+      document.getElementById("dirtyExposures").textContent = String(frame.dirty_exposures);
+      setBar("hydrationBar", "hydrationText", frame.hydration);
+      setBar("foodBar", "foodText", frame.food);
+      setBar("pathogenBar", "pathogenText", frame.pathogen_load);
+      setBar("symptomBar", "symptomText", frame.symptom_severity);
+      setBar("immunityBar", "immunityText", frame.immunity_level);
+      setBar("contaminationBar", "contaminationText", frame.contamination_level);
+      setBar("progressBar", "progressText", Math.min(1, frame.progress / 90), Number(frame.progress).toFixed(1));
+      updateEvents(frame);
+      scrubber.value = String(frameIndex);
+      draw();
+    }
+
+    function tick() {
+      if (playing && trace && trace.frames.length) {
+        frameIndex = (frameIndex + 1) % trace.frames.length;
+        updatePanel();
+      }
+      window.setTimeout(tick, 850);
+    }
+
+    scrubber.addEventListener("input", () => {
+      frameIndex = Number(scrubber.value);
+      updatePanel();
+    });
+
+    playButton.addEventListener("click", () => {
+      playing = !playing;
+      playButton.textContent = playing ? "Pause" : "Play";
+    });
+
+    window.addEventListener("resize", resize);
+
+    function hydrate(traceData, resultData) {
+      trace = traceData;
+      results = resultData;
+      scrubber.max = String(Math.max(0, trace.frames.length - 1));
+      updateOutcomes();
+      updateVerdicts();
+      resize();
+      updatePanel();
+      tick();
+    }
+
+    function loadJson(path) {
+      return fetch(path).then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        return response.json();
+      });
+    }
+
+    Promise.all([
+      loadJson("../artifacts/ssrm_3d_illness_sanitation_trace.json"),
+      loadJson("../artifacts/ssrm_3d_illness_sanitation_results.json"),
+    ]).then(([traceData, resultData]) => {
+      hydrate(traceData, resultData);
+    }).catch((error) => {
+      if (window.SSRM_3D_ILLNESS_SANITATION_TRACE && window.SSRM_3D_ILLNESS_SANITATION_RESULTS) {
+        hydrate(window.SSRM_3D_ILLNESS_SANITATION_TRACE, window.SSRM_3D_ILLNESS_SANITATION_RESULTS);
+        return;
+      }
+      document.getElementById("subtitle").textContent =
+        `Could not load trace. Run \`python3 -m http.server 8765\` from the repo root and open /visualizations/ssrm_3d_illness_sanitation.html. Error: ${error.message}`;
+    });
+  </script>
+</body>
+</html>

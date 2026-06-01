@@ -47,6 +47,7 @@ This file links the research claims to current evidence, counterevidence, and ne
 | SSRM-3D embodied world | Persistent 3D embodiment with layered realtime control | Self-state is unnecessary in the low-pressure spatial stage, becomes decodable under hidden energy, beats world-only under body drift and delayed options, and dominates after commitments, arbitration, and social pressure. | Hand-built controller and toy continuous world; reactive control remains competitive in body-drift and delayed-option stages. |
 | SSRM-3D recurrent observer | Learned observer state from embodied traces | GPU-backed recurrent observers recover stronger self-state than a frame-only baseline in stages 1-6, and self-state edits move future-viability prediction. | Still observer learning, not learned control; traces come from supplied SSRM-3D policies and future viability is the target. |
 | SSRM-3D learned controller | Learned policy state in embodied control | Recurrent controllers trained without self labels beat frame-only controllers in stages 1-6 and carry decodable self-state. | Return-weighted imitation, not online RL; direct counterfactual self-edit action effects are weak. |
+| SSRM-3D tool-making | Externalized cognition under embodied confusion | Return selection rejects tools in visible control, selects tools under hidden-route, degraded-sensor, and interruption pressure, and loses the gain when tool access is ablated. | Candidate affordance policies are supplied; energy-cache affordance remains a limit control; not yet learned-controller tool invention. |
 | Learned bottleneck discovery | Self labels removed from structure selection | Unlabeled model selection chooses shared bottleneck in both self and world reuse, local hidden variables in independent-hidden, and no hidden state in irrelevant control. | Candidate structures and causal interventions are still hand supplied. |
 | Sequence latent transfer | Held-out transfer from raw outcomes | Early calibration outcomes transfer to held-out contexts under shared agent-state and shared world-state, but not independent-hidden or irrelevant controls. | Simple pairwise-agreement learner; not a rich recurrent neural policy. |
 | Heterogeneous attractor precursor | Cross-learner convergence | Five learner families converge on agent-bounded latents in self-shared streams, external latents in world-shared streams, no shared boundary in independent-hidden streams, and no hidden state in irrelevant streams. | Still a compact toy environment; learners are simple, not rich embodied RL systems. |
@@ -67,7 +68,7 @@ These gates are not another positive result. They are the current stopping rule 
 | Gate | Current status | What would count next |
 |---|---|---|
 | Learned control | Partial pass. Report 62 shows recurrent controllers trained without self labels improve control under embodied pressure and carry decodable self-state. | Online-return or model-based controllers with stronger causal policy-state edits. |
-| Tool-making or externalized cognition | Open. SSRM-3D has no discovered markers, maps, alarms, routes, sensors, caches, or device logic. | Agents discover external structures because they reduce uncertainty, preserve options, support commitments, or aid coordination. |
+| Tool-making or externalized cognition | Partial pass. Return-selected SSRM-3D policies discover markers/beacons/alarms under hidden-route, degraded-sensor, and interruption pressure, while visible and cache-only controls reject tools. | Move tool discovery into the learned controller and test richer tools under social pressure. |
 | Real social pressure | Open. Stage 6 is only a simple competitor precursor. | Other agents have memory, resources, reputation, communication, cooperation, deception, or conflict that make identity continuity control-relevant. |
 | Targeted ablation | Partial. Existing ablations cover self-state, learned observer self-subspace, and weak learned-controller edits. | Separate removals of self-state, learned self-subspace, attention mixing, continuity memory, LLM reasoning stream, and tool-building access produce specific pressure-dependent failures. |
 
@@ -186,6 +187,7 @@ architecture Torch actor-critic learning that recovers strict neural recurrent b
 SSRM-3D embodied-world layering with a non-controller language module
 SSRM-3D recurrent-observer learning from embodied traces
 SSRM-3D learned-controller policy-state learning
+SSRM-3D tool-making/externalized-cognition pressure
 learned bottleneck plus causal boundary test
 sequence latent transfer to held-out contexts
 heterogeneous convergence across learner families with causal boundary separation
@@ -717,6 +719,7 @@ This is the narrow precursor to the full Attractor Test. It varies simple learne
 | `experiments/ssrm_3d_embodied_world.py` | `artifacts/ssrm_3d_verdict.csv` |
 | `experiments/ssrm_3d_recurrent_observer.py` | `artifacts/ssrm_3d_recurrent_observer_verdict.csv` |
 | `experiments/ssrm_3d_learned_controller.py` | `artifacts/ssrm_3d_learned_controller_verdict.csv` |
+| `experiments/ssrm_3d_tool_making.py` | `artifacts/ssrm_3d_tool_making_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

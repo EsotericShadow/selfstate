@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Tool-Making Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101210;
+      --panel: rgba(20, 24, 21, 0.88);
+      --line: rgba(244, 247, 241, 0.18);
+      --text: #f4f7f1;
+      --muted: #aab5aa;
+      --green: #78d88d;
+      --blue: #78b8ff;
+      --amber: #f3b65e;
+      --red: #ff7169;
+      --violet: #b39bff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      min-height: 100vh;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #121713;
+    }
+
+    aside {
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      gap: 14px;
+      align-content: start;
+      overflow: auto;
+      max-height: 100vh;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+    }
+
+    .label {
+      color: var(--muted);
+    }
+
+    .value {
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .legend {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: #1d241e;
+      color: var(--text);
+      padding: 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    @media (max-width: 860px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 64vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Tool-Making Trace</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+    <div class="section">
+      <div class="row"><span class="label">tick</span><span class="value" id="tick">0</span></div>
+      <div class="row"><span class="label">energy</span><span class="value" id="energy">0.00</span></div>
+      <div class="row"><span class="label">integrity</span><span class="value" id="integrity">0.00</span></div>
+      <div class="row"><span class="label">uncertainty</span><span class="value" id="uncertainty">0.00</span></div>
+      <div class="row"><span class="label">action source</span><span class="value" id="source">-</span></div>
+    </div>
+    <div class="section">
+      <input id="scrubber" type="range" min="0" max="0" value="0">
+      <button type="button" id="play">Pause</button>
+    </div>
+    <div class="section legend">
+      <span><i class="dot" style="background: var(--amber)"></i>agent path</span>
+      <span><i class="dot" style="background: var(--green)"></i>resource</span>
+      <span><i class="dot" style="background: var(--red)"></i>hazard</span>
+      <span><i class="dot" style="background: var(--blue)"></i>shelter</span>
+      <span><i class="dot" style="background: var(--violet)"></i>marker</span>
+      <span><i class="dot" style="background: #ffd36d"></i>cache</span>
+      <span><i class="dot" style="background: #ff9c8f"></i>alarm</span>
+      <span><i class="dot" style="background: #9bd8ff"></i>beacon</span>
+    </div>
+    <div class="section">
+      <h2>Gate 2 reading</h2>
+      <p>The trace shows external structures as memory in the world. The policy was selected by return, then tested again with tool access ablated.</p>
+    </div>
+  </aside>
+
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const scrubber = document.getElementById("scrubber");
+    const playButton = document.getElementById("play");
+    let trace = null;
+    let frameIndex = 0;
+    let playing = true;
+
+    function resize() {
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.floor(canvas.clientWidth * ratio);
+      canvas.height = Math.floor(canvas.clientHeight * ratio);
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      draw();
+    }
+
+    function toScreen(x, z) {
+      const pad = 36;
+      const size = 88;
+      const w = canvas.clientWidth - pad * 2;
+      const h = canvas.clientHeight - pad * 2;
+      return [
+        pad + ((x + size / 2) / size) * w,
+        pad + ((z + size / 2) / size) * h,
+      ];
+    }
+
+    function circle(x, z, radius, color, stroke) {
+      const [sx, sy] = toScreen(x, z);
+      ctx.beginPath();
+      ctx.arc(sx, sy, radius, 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.fill();
+      if (stroke) {
+        ctx.strokeStyle = stroke;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+      }
+    }
+
+    function draw() {
+      if (!trace) {
+        return;
+      }
+      const frame = trace.frames[frameIndex];
+      ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
+      ctx.fillStyle = "#121713";
+      ctx.fillRect(0, 0, canvas.clientWidth, canvas.clientHeight);
+      ctx.strokeStyle = "rgba(244,247,241,0.12)";
+      ctx.lineWidth = 1;
+      for (let i = -44; i <= 44; i += 11) {
+        const [x1, y1] = toScreen(-44, i);
+        const [x2, y2] = toScreen(44, i);
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+        const [x3, y3] = toScreen(i, -44);
+        const [x4, y4] = toScreen(i, 44);
+        ctx.beginPath();
+        ctx.moveTo(x3, y3);
+        ctx.lineTo(x4, y4);
+        ctx.stroke();
+      }
+      const shelter = trace.world.shelter;
+      circle(shelter.x, shelter.z, 9, "#78b8ff", "#d4edff");
+      frame.resources.forEach((resource) => {
+        if (resource.active) {
+          circle(resource.x, resource.z, 5, "#78d88d", null);
+        }
+      });
+      frame.hazards.forEach((hazard) => {
+        if (hazard.active) {
+          circle(hazard.x, hazard.z, 6 + hazard.radius, "#ff7169", "rgba(255,255,255,0.45)");
+        }
+      });
+      frame.tools.forEach((tool) => {
+        if (!tool.active) {
+          return;
+        }
+        const color = tool.kind === "cache" ? "#ffd36d" : tool.kind === "alarm" ? "#ff9c8f" : tool.kind === "beacon" ? "#9bd8ff" : "#b39bff";
+        const radius = tool.kind === "beacon" ? 6 : tool.kind === "alarm" ? 7 : 4.5;
+        circle(tool.x, tool.z, radius, color, "#101210");
+      });
+      ctx.strokeStyle = "#f3b65e";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      trace.frames.slice(0, frameIndex + 1).forEach((item, index) => {
+        const [x, y] = toScreen(item.x, item.z);
+        if (index === 0) {
+          ctx.moveTo(x, y);
+        } else {
+          ctx.lineTo(x, y);
+        }
+      });
+      ctx.stroke();
+      circle(frame.x, frame.z, 7, "#f3b65e", "#fff0c8");
+      const [tx, ty] = toScreen(frame.target[0], frame.target[1]);
+      ctx.strokeStyle = "rgba(243,182,94,0.55)";
+      ctx.setLineDash([5, 5]);
+      ctx.beginPath();
+      const [ax, ay] = toScreen(frame.x, frame.z);
+      ctx.moveTo(ax, ay);
+      ctx.lineTo(tx, ty);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      document.getElementById("tick").textContent = String(frame.tick);
+      document.getElementById("energy").textContent = frame.energy.toFixed(2);
+      document.getElementById("integrity").textContent = frame.integrity.toFixed(2);
+      document.getElementById("uncertainty").textContent = frame.uncertainty.toFixed(2);
+      document.getElementById("source").textContent = frame.action_source;
+      scrubber.value = String(frameIndex);
+    }
+
+    function step() {
+      if (playing && trace) {
+        frameIndex = (frameIndex + 1) % trace.frames.length;
+        draw();
+      }
+      window.requestAnimationFrame(step);
+    }
+
+    playButton.addEventListener("click", () => {
+      playing = !playing;
+      playButton.textContent = playing ? "Pause" : "Play";
+    });
+    scrubber.addEventListener("input", () => {
+      frameIndex = Number(scrubber.value);
+      draw();
+    });
+    window.addEventListener("resize", resize);
+
+    fetch("../artifacts/ssrm_3d_tool_making_trace.json")
+      .then((response) => response.json())
+      .then((data) => {
+        trace = data;
+        scrubber.max = String(trace.frames.length - 1);
+        document.getElementById("subtitle").textContent = trace.scenario.name + " / " + trace.policy.name;
+        resize();
+        step();
+      })
+      .catch((error) => {
+        document.getElementById("subtitle").textContent = "Could not load trace: " + error.message;
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+scenario,scenario_name,selected_policy,selected_uses_tools,train_reward,train_tools_built,no_tool_train_reward,train_gain_over_no_tool
+0,visible_resource_control,no_tool_baseline,False,144.3448298879469,0.0,144.3448298879469,0.0
+1,hidden_route_marking,shelter_resource_beacons,True,79.99989530097018,3.0625,37.25979313040168,42.7401021705685
+2,degraded_sensor_alarms,sparse_cache_beacon,True,76.79693384065118,2.2708333333333335,40.04822941309187,36.74870442755931
+3,interruption_option_recovery,candidate_132,True,22.52153670452317,9.104166666666666,-29.708757059017085,52.23029376354026
+4,energy_cache_limit_control,no_tool_baseline,False,14.718717032970448,0.0,14.718717032970448,0.0

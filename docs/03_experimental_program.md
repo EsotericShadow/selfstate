@@ -1309,6 +1309,31 @@ Current status:
 
 The proposed attention-buffer capacity sweep belongs after those gates start to exist, or as a targeted gate-4 study of attention mixing. It should be treated as an internal bandwidth hypothesis, not as evidence for consciousness or a special 12-dimensional world.
 
+## Supplemental SSRM-3D Tool-Making
+
+Run a return-selected tool-making precursor in SSRM-3D.
+
+The world exposes simple build/place affordances: route markers, shelter/resource beacons, hazard alarms, and energy caches. Policies are selected by episode return, not by a tool-use label. The selected policy is then evaluated with tool access ablated.
+
+Current expected result:
+
+- tools should not be selected in the visible-resource control;
+- tools should be selected under hidden-route, degraded-sensor, and interruption-recovery pressure;
+- removing tool access from the selected policy should remove most of the gain;
+- tool spam and cache-only access should not be overclaimed as successes.
+
+Implemented version:
+
+- [SSRM-3D tool-making script](../experiments/ssrm_3d_tool_making.py)
+- [SSRM-3D tool-making report](65_ssrm_3d_tool_making_report.md)
+- [tool-making visualization](../visualizations/ssrm_3d_tool_making.html)
+- [evaluation CSV](../artifacts/ssrm_3d_tool_making_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_tool_making_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_tool_making_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_tool_making_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_tool_making_trace.json)
+- [JSON results](../artifacts/ssrm_3d_tool_making_results.json)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

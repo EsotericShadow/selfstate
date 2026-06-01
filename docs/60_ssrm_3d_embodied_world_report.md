@@ -111,7 +111,7 @@ This is still toy-scale:
 - latent metrics are computed from known simulator state;
 - social dynamics are minimal.
 
-Report 61 takes the next representation step by training recurrent observers on embodied traces. Report 62 takes the next policy-state step by training learned controllers. Report 64 makes the LLM-as-module boundary explicit and turns the language stream into a future ablation target. The stronger remaining version is online-return or model-based control with robust causal policy-state edits.
+Report 61 takes the next representation step by training recurrent observers on embodied traces. Report 62 takes the next policy-state step by training learned controllers. Report 64 makes the LLM-as-module boundary explicit and turns the language stream into a future ablation target. Report 65 starts the tool-making/externalized-cognition gate. The stronger remaining version is online-return or model-based control with robust causal policy-state edits and learned tool discovery.
 
 ## Artifacts
 

@@ -53,9 +53,13 @@ Pass condition:
 
 Current status:
 
-Open.
+Partially passed by [report 65](65_ssrm_3d_tool_making_report.md).
 
-SSRM-3D currently has resources, hazards, shelter, commitments, and a simple competitor. It does not yet let agents construct external memory, route markers, alarms, sensors, or device-like policies.
+The SSRM-3D tool-making precursor gives the world marker, beacon, alarm, and cache affordances. Return selection rejects tools in the visible-resource control, selects tools under hidden-route, degraded-sensor, and interruption-recovery pressure, and loses most of the gain when tool access is ablated.
+
+Remaining weakness:
+
+The successful policies are return-selected from candidate affordance policies, not learned end-to-end by the SSRM-3D controller. The cache-only affordance remains a limit control rather than a success. This means Gate 2 has a useful externalized-cognition precursor, but not a full pass.
 
 Failure interpretation:
 
@@ -164,8 +168,10 @@ This belongs after the basic four gates are in place, or as a supporting gate-4 
 
 Gate 1 has a useful learned-control precursor.
 
-Gates 2 and 3 remain open.
+Gate 2 has a partial externalized-cognition precursor.
+
+Gate 3 remains open.
 
 Gate 4 is partially supported, but the ablation suite is incomplete.
 
-The strongest next experiment is tool-making or externalized cognition in SSRM-3D, because it creates the missing pressure needed for both social coordination and attention-buffer ablation to become meaningful.
+The strongest next experiment is learned tool discovery inside the SSRM-3D controller, then richer social pressure where tools can be shared, trusted, stolen, or sabotaged.

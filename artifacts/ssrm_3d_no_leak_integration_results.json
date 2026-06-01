@@ -1,0 +1,3399 @@
+{
+  "config": {
+    "seeds": [
+      20260615,
+      20260616,
+      20260617,
+      20260618,
+      20260619
+    ],
+    "train_episodes": 1200,
+    "eval_episodes": 400,
+    "sequence_length": 6,
+    "hidden_size": 64,
+    "epochs": 400,
+    "batch_size": 128,
+    "learning_rate": 0.005,
+    "value_weight": 0.18,
+    "device": "cpu",
+    "trace_seed": 20260615,
+    "trace_case": "integrated_social"
+  },
+  "summary": [
+    {
+      "seed": 20260615,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 66.04444444444445,
+      "action_accuracy": 0.5111111111111111
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 66.04444444444445,
+      "action_accuracy": 0.5111111111111111
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 66.04444444444445,
+      "action_accuracy": 0.5111111111111111
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 66.04444444444445,
+      "action_accuracy": 0.5111111111111111
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 66.04444444444445,
+      "action_accuracy": 0.5111111111111111
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 66.04444444444445,
+      "action_accuracy": 0.5111111111111111
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 73.0,
+      "action_accuracy": 0.5
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 73.0,
+      "action_accuracy": 0.5
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 73.0,
+      "action_accuracy": 0.5
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 73.0,
+      "action_accuracy": 0.5
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 73.0,
+      "action_accuracy": 0.5
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 73.0,
+      "action_accuracy": 0.5
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 30.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 67.56666666666666,
+      "action_accuracy": 0.38333333333333336
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 111.66666666666667,
+      "action_accuracy": 0.8333333333333334
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 50.214285714285715,
+      "action_accuracy": 0.25
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 58.0,
+      "action_accuracy": 0.2857142857142857
+    },
+    {
+      "seed": 20260616,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 66.04444444444445,
+      "action_accuracy": 0.5111111111111111
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 66.04444444444445,
+      "action_accuracy": 0.5111111111111111
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 66.04444444444445,
+      "action_accuracy": 0.5111111111111111
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 66.04444444444445,
+      "action_accuracy": 0.5111111111111111
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 66.04444444444445,
+      "action_accuracy": 0.5111111111111111
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 66.04444444444445,
+      "action_accuracy": 0.5111111111111111
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 82.16666666666667,
+      "action_accuracy": 0.5833333333333334
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 82.16666666666667,
+      "action_accuracy": 0.5833333333333334
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 82.16666666666667,
+      "action_accuracy": 0.5833333333333334
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 82.16666666666667,
+      "action_accuracy": 0.5833333333333334
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 82.16666666666667,
+      "action_accuracy": 0.5833333333333334
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 82.16666666666667,
+      "action_accuracy": 0.5833333333333334
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 41.43333333333333,
+      "action_accuracy": 0.11666666666666667
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 64.3,
+      "action_accuracy": 0.35
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 65.93333333333334,
+      "action_accuracy": 0.36666666666666664
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 73.53571428571429,
+      "action_accuracy": 0.44642857142857145
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 101.75,
+      "action_accuracy": 0.7321428571428571
+    },
+    {
+      "seed": 20260617,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 57.68888888888889,
+      "action_accuracy": 0.4222222222222222
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 57.68888888888889,
+      "action_accuracy": 0.4222222222222222
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 57.68888888888889,
+      "action_accuracy": 0.4222222222222222
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 57.68888888888889,
+      "action_accuracy": 0.4222222222222222
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 57.68888888888889,
+      "action_accuracy": 0.4222222222222222
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 57.68888888888889,
+      "action_accuracy": 0.4222222222222222
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 76.66666666666667,
+      "action_accuracy": 0.5333333333333333
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 76.66666666666667,
+      "action_accuracy": 0.5333333333333333
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 76.66666666666667,
+      "action_accuracy": 0.5333333333333333
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 76.66666666666667,
+      "action_accuracy": 0.5333333333333333
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 76.66666666666667,
+      "action_accuracy": 0.5333333333333333
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 76.66666666666667,
+      "action_accuracy": 0.5333333333333333
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 41.43333333333333,
+      "action_accuracy": 0.11666666666666667
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 83.9,
+      "action_accuracy": 0.55
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 56.13333333333333,
+      "action_accuracy": 0.26666666666666666
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 58.92857142857143,
+      "action_accuracy": 0.32142857142857145
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 100.0,
+      "action_accuracy": 0.7142857142857143
+    },
+    {
+      "seed": 20260618,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 76.4888888888889,
+      "action_accuracy": 0.6222222222222222
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 76.4888888888889,
+      "action_accuracy": 0.6222222222222222
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 76.4888888888889,
+      "action_accuracy": 0.6222222222222222
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 76.4888888888889,
+      "action_accuracy": 0.6222222222222222
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 76.4888888888889,
+      "action_accuracy": 0.6222222222222222
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 76.4888888888889,
+      "action_accuracy": 0.6222222222222222
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 74.83333333333333,
+      "action_accuracy": 0.5166666666666667
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 74.83333333333333,
+      "action_accuracy": 0.5166666666666667
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 74.83333333333333,
+      "action_accuracy": 0.5166666666666667
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 74.83333333333333,
+      "action_accuracy": 0.5166666666666667
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 74.83333333333333,
+      "action_accuracy": 0.5166666666666667
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 74.83333333333333,
+      "action_accuracy": 0.5166666666666667
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 30.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 75.73333333333333,
+      "action_accuracy": 0.4666666666666667
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 79.0,
+      "action_accuracy": 0.5
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 82.5,
+      "action_accuracy": 0.5357142857142857
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 84.25,
+      "action_accuracy": 0.5535714285714286
+    },
+    {
+      "seed": 20260619,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "control",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "control",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 84.84444444444445,
+      "action_accuracy": 0.7111111111111111
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 84.84444444444445,
+      "action_accuracy": 0.7111111111111111
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 84.84444444444445,
+      "action_accuracy": 0.7111111111111111
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 84.84444444444445,
+      "action_accuracy": 0.7111111111111111
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_tool",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 84.84444444444445,
+      "action_accuracy": 0.7111111111111111
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 84.84444444444445,
+      "action_accuracy": 0.7111111111111111
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_tool",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_social",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_social",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_continuity",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_continuity",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 112.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 82.16666666666667,
+      "action_accuracy": 0.5833333333333334
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 82.16666666666667,
+      "action_accuracy": 0.5833333333333334
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 82.16666666666667,
+      "action_accuracy": 0.5833333333333334
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 82.16666666666667,
+      "action_accuracy": 0.5833333333333334
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_tool",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 82.16666666666667,
+      "action_accuracy": 0.5833333333333334
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 82.16666666666667,
+      "action_accuracy": 0.5833333333333334
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_tool",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 44.7,
+      "action_accuracy": 0.15
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_social",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 62.666666666666664,
+      "action_accuracy": 0.3333333333333333
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_social",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 103.1,
+      "action_accuracy": 0.75
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "full_policy_state",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "social_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_continuity",
+      "architecture": "frame_mlp",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 18.0,
+      "action_accuracy": 0.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "full_policy_state",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "tool_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "social_channel_ablation",
+      "mean_reward": 128.0,
+      "action_accuracy": 1.0
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "continuity_channel_ablation",
+      "mean_reward": 75.5,
+      "action_accuracy": 0.4642857142857143
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_continuity",
+      "architecture": "torch_gru",
+      "condition": "attention_channel_ablation",
+      "mean_reward": 84.03571428571429,
+      "action_accuracy": 0.5535714285714286
+    }
+  ],
+  "seed_verdict": [
+    {
+      "seed": 20260615,
+      "case_type": "control",
+      "frame_reward": 112.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 0.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "control_rejects_extra_state"
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_tool",
+      "frame_reward": 66.04444444444445,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 45.95555555555555,
+      "tool_ablation_loss": 45.95555555555555,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "tool_channel_bridge"
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_social",
+      "frame_reward": 18.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 94.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 94.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "social_channel_bridge"
+    },
+    {
+      "seed": 20260615,
+      "case_type": "single_continuity",
+      "frame_reward": 18.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 94.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 94.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "continuity_channel_bridge"
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_tool",
+      "frame_reward": 73.0,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 55.0,
+      "tool_ablation_loss": 55.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 98.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_tool_priority_bridge"
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_social",
+      "frame_reward": 18.0,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 110.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 60.43333333333334,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 16.33333333333333,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": false,
+      "verdict": "randomized_social_priority_unclear"
+    },
+    {
+      "seed": 20260615,
+      "case_type": "integrated_continuity",
+      "frame_reward": 18.0,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 110.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 77.78571428571428,
+      "attention_ablation_loss": 70.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_continuity_priority_bridge"
+    },
+    {
+      "seed": 20260616,
+      "case_type": "control",
+      "frame_reward": 112.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 0.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "control_rejects_extra_state"
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_tool",
+      "frame_reward": 66.04444444444445,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 45.95555555555555,
+      "tool_ablation_loss": 45.95555555555555,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "tool_channel_bridge"
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_social",
+      "frame_reward": 18.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 94.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 94.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "social_channel_bridge"
+    },
+    {
+      "seed": 20260616,
+      "case_type": "single_continuity",
+      "frame_reward": 18.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 94.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 94.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "continuity_channel_bridge"
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_tool",
+      "frame_reward": 82.16666666666667,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 45.83333333333333,
+      "tool_ablation_loss": 45.83333333333333,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 86.56666666666666,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_tool_priority_bridge"
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_social",
+      "frame_reward": 18.0,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 110.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 63.7,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 62.06666666666666,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_social_priority_bridge"
+    },
+    {
+      "seed": 20260616,
+      "case_type": "integrated_continuity",
+      "frame_reward": 18.0,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 110.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 54.46428571428571,
+      "attention_ablation_loss": 26.25,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_continuity_priority_bridge"
+    },
+    {
+      "seed": 20260617,
+      "case_type": "control",
+      "frame_reward": 112.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 0.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "control_rejects_extra_state"
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_tool",
+      "frame_reward": 57.68888888888889,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 54.31111111111111,
+      "tool_ablation_loss": 54.31111111111111,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "tool_channel_bridge"
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_social",
+      "frame_reward": 18.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 94.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 94.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "social_channel_bridge"
+    },
+    {
+      "seed": 20260617,
+      "case_type": "single_continuity",
+      "frame_reward": 18.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 94.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 94.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "continuity_channel_bridge"
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_tool",
+      "frame_reward": 76.66666666666667,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 51.33333333333333,
+      "tool_ablation_loss": 51.33333333333333,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 86.56666666666666,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_tool_priority_bridge"
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_social",
+      "frame_reward": 18.0,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 110.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 44.099999999999994,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 71.86666666666667,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_social_priority_bridge"
+    },
+    {
+      "seed": 20260617,
+      "case_type": "integrated_continuity",
+      "frame_reward": 18.0,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 110.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 69.07142857142857,
+      "attention_ablation_loss": 28.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_continuity_priority_bridge"
+    },
+    {
+      "seed": 20260618,
+      "case_type": "control",
+      "frame_reward": 112.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 0.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "control_rejects_extra_state"
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_tool",
+      "frame_reward": 76.4888888888889,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 35.511111111111106,
+      "tool_ablation_loss": 35.511111111111106,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "tool_channel_bridge"
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_social",
+      "frame_reward": 18.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 94.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 94.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "social_channel_bridge"
+    },
+    {
+      "seed": 20260618,
+      "case_type": "single_continuity",
+      "frame_reward": 18.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 94.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 94.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "continuity_channel_bridge"
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_tool",
+      "frame_reward": 74.83333333333333,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 53.16666666666667,
+      "tool_ablation_loss": 53.16666666666667,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 98.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_tool_priority_bridge"
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_social",
+      "frame_reward": 18.0,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 110.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 52.266666666666666,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 49.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_social_priority_bridge"
+    },
+    {
+      "seed": 20260618,
+      "case_type": "integrated_continuity",
+      "frame_reward": 18.0,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 110.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 45.5,
+      "attention_ablation_loss": 43.75,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_continuity_priority_bridge"
+    },
+    {
+      "seed": 20260619,
+      "case_type": "control",
+      "frame_reward": 112.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 0.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "control_rejects_extra_state"
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_tool",
+      "frame_reward": 84.84444444444445,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 27.15555555555555,
+      "tool_ablation_loss": 27.15555555555555,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "tool_channel_bridge"
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_social",
+      "frame_reward": 18.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 94.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 94.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "social_channel_bridge"
+    },
+    {
+      "seed": 20260619,
+      "case_type": "single_continuity",
+      "frame_reward": 18.0,
+      "recurrent_reward": 112.0,
+      "recurrent_gain_over_frame": 94.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 94.0,
+      "attention_ablation_loss": 0.0,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "continuity_channel_bridge"
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_tool",
+      "frame_reward": 82.16666666666667,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 45.83333333333333,
+      "tool_ablation_loss": 45.83333333333333,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 83.3,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_tool_priority_bridge"
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_social",
+      "frame_reward": 18.0,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 110.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 65.33333333333334,
+      "continuity_ablation_loss": 0.0,
+      "attention_ablation_loss": 24.900000000000006,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_social_priority_bridge"
+    },
+    {
+      "seed": 20260619,
+      "case_type": "integrated_continuity",
+      "frame_reward": 18.0,
+      "recurrent_reward": 128.0,
+      "recurrent_gain_over_frame": 110.0,
+      "tool_ablation_loss": 0.0,
+      "social_ablation_loss": 0.0,
+      "continuity_ablation_loss": 52.5,
+      "attention_ablation_loss": 43.96428571428571,
+      "recurrent_action_accuracy": 1.0,
+      "supports_no_leak_bridge": true,
+      "verdict": "randomized_continuity_priority_bridge"
+    }
+  ],
+  "verdict": [
+    {
+      "case_type": "control",
+      "seeds_tested": 5,
+      "seeds_supported": 5,
+      "support_rate": 1.0,
+      "min_gain_margin": 8.0,
+      "min_relevant_ablation_margin": 8.0,
+      "max_irrelevant_ablation_loss": 0.0,
+      "supports_no_leak_integration": true,
+      "verdict": "no_leak_bridge_supported"
+    },
+    {
+      "case_type": "single_tool",
+      "seeds_tested": 5,
+      "seeds_supported": 5,
+      "support_rate": 1.0,
+      "min_gain_margin": 2.1555555555555515,
+      "min_relevant_ablation_margin": 3.1555555555555515,
+      "max_irrelevant_ablation_loss": 0.0,
+      "supports_no_leak_integration": false,
+      "verdict": "no_leak_bridge_not_stable"
+    },
+    {
+      "case_type": "single_social",
+      "seeds_tested": 5,
+      "seeds_supported": 5,
+      "support_rate": 1.0,
+      "min_gain_margin": 69.0,
+      "min_relevant_ablation_margin": 70.0,
+      "max_irrelevant_ablation_loss": 0.0,
+      "supports_no_leak_integration": true,
+      "verdict": "no_leak_bridge_supported"
+    },
+    {
+      "case_type": "single_continuity",
+      "seeds_tested": 5,
+      "seeds_supported": 5,
+      "support_rate": 1.0,
+      "min_gain_margin": 69.0,
+      "min_relevant_ablation_margin": 70.0,
+      "max_irrelevant_ablation_loss": 0.0,
+      "supports_no_leak_integration": true,
+      "verdict": "no_leak_bridge_supported"
+    },
+    {
+      "case_type": "integrated_tool",
+      "seeds_tested": 5,
+      "seeds_supported": 5,
+      "support_rate": 1.0,
+      "min_gain_margin": 10.833333333333329,
+      "min_relevant_ablation_margin": 33.83333333333333,
+      "max_irrelevant_ablation_loss": 0.0,
+      "supports_no_leak_integration": true,
+      "verdict": "no_leak_bridge_supported"
+    },
+    {
+      "case_type": "integrated_social",
+      "seeds_tested": 5,
+      "seeds_supported": 4,
+      "support_rate": 0.8,
+      "min_gain_margin": 75.0,
+      "min_relevant_ablation_margin": -1.6666666666666714,
+      "max_irrelevant_ablation_loss": 0.0,
+      "supports_no_leak_integration": false,
+      "verdict": "no_leak_bridge_not_stable"
+    },
+    {
+      "case_type": "integrated_continuity",
+      "seeds_tested": 5,
+      "seeds_supported": 5,
+      "support_rate": 1.0,
+      "min_gain_margin": 75.0,
+      "min_relevant_ablation_margin": 8.25,
+      "max_irrelevant_ablation_loss": 0.0,
+      "supports_no_leak_integration": true,
+      "verdict": "no_leak_bridge_supported"
+    }
+  ],
+  "diagnostics": {
+    "device": "cpu",
+    "artifact_note": "No scenario id feature is present; case_type is metadata for evaluation only."
+  }
+}

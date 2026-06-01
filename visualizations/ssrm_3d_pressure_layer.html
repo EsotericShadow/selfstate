@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Persistent Pressure Layer</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0e1110;
+      --panel: #151918;
+      --line: rgba(242, 246, 240, 0.15);
+      --text: #f2f6f0;
+      --muted: #aab2ad;
+      --self: #80d99a;
+      --world: #68b7ff;
+      --social: #cf9dff;
+      --tool: #f3c852;
+      --disease: #ff8a7a;
+      --perception: #f1f1f1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 420px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #0b1212;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    li,
+    .row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 28px minmax(0, 1fr);
+      gap: 8px;
+      align-items: start;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-top: 3px;
+    }
+
+    .strong {
+      color: var(--text);
+    }
+
+    .pill-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      padding: 3px 6px;
+      color: var(--text);
+      font-size: 12px;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 58vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Persistent Pressure Layer</h1>
+      <p>Control variables only. No roleplay, no subjective claims.</p>
+    </header>
+
+    <div class="section">
+      <h2>Rule</h2>
+      <p>If removing a variable would not change policy, memory, tools, social behavior, or continuity, do not add it yet.</p>
+    </div>
+
+    <div class="section">
+      <h2>Layers</h2>
+      <div class="row"><span class="dot" style="background:var(--world)"></span><span><span class="strong">World pressure:</span> day/night, shelter, weather, hazards, food/water, exposure.</span></div>
+      <div class="row"><span class="dot" style="background:var(--self)"></span><span><span class="strong">Self-state:</span> energy, hydration, fatigue, injury, sleep/rest, sensor quality.</span></div>
+      <div class="row"><span class="dot" style="background:var(--disease)"></span><span><span class="strong">Illness:</span> exposure, latent infection, symptoms, recovery, immunity, contagion.</span></div>
+      <div class="row"><span class="dot" style="background:var(--tool)"></span><span><span class="strong">Tools:</span> markers, alarms, caches, medicine, clean-water and shelter sanitation tools.</span></div>
+      <div class="row"><span class="dot" style="background:var(--social)"></span><span><span class="strong">Social:</span> trust, care debt, quarantine, avoidance, deception, shared shelter norms.</span></div>
+      <div class="row"><span class="dot" style="background:var(--perception)"></span><span><span class="strong">Perception:</span> cone vision, spatial audio, occlusion, light, hearing/vision damage.</span></div>
+    </div>
+
+    <div class="section">
+      <h2>Minimum Disease Model</h2>
+      <div class="pill-grid">
+        <span class="pill">exposure</span>
+        <span class="pill">latent infection</span>
+        <span class="pill">symptoms</span>
+        <span class="pill">recovery</span>
+        <span class="pill">immunity</span>
+        <span class="pill">collapse</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Priority Order</h2>
+      <ol>
+        <li>Vision + audio partial observability</li>
+        <li>Day/night + sleep/rest</li>
+        <li>Hunger/thirst + illness/sanitation</li>
+        <li>Weather/exposure</li>
+        <li>Tool/shelter degradation</li>
+        <li>Social trust/contracts</li>
+        <li>Predator/threat agents</li>
+        <li>Resource ecology</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>Affective Control</h2>
+      <p>Fear, stress, trust, frustration, affiliation, curiosity, and shame/guilt analogues are compact control summaries. They must change attention, risk, communication, memory salience, rest threshold, help-seeking, or trust updates.</p>
+    </div>
+
+    <div class="section">
+      <h2>Key Ablations</h2>
+      <ul>
+        <li>no illness state</li>
+        <li>no contamination map</li>
+        <li>no affective control state</li>
+        <li>no audio or no direction audio</li>
+        <li>omniscient vision control</li>
+        <li>no visual memory</li>
+        <li>body-state-blind perception</li>
+        <li>no event-log continuity</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Pass Condition</h2>
+      <p>The layer matters only if ablations fail specifically under the pressures that require them, while low-pressure or omniscient controls reduce the need for self/social/tool machinery.</p>
+    </div>
+  </aside>
+
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+
+    const colors = {
+      world: "#68b7ff",
+      self: "#80d99a",
+      disease: "#ff8a7a",
+      tool: "#f3c852",
+      social: "#cf9dff",
+      perception: "#f1f1f1",
+    };
+
+    const nodes = [
+      { key: "world", label: "world pressure", x: 0.18, y: 0.20, color: colors.world },
+      { key: "perception", label: "structured perception", x: 0.50, y: 0.16, color: colors.perception },
+      { key: "self", label: "self-state", x: 0.80, y: 0.25, color: colors.self },
+      { key: "disease", label: "illness/disease", x: 0.24, y: 0.56, color: colors.disease },
+      { key: "tool", label: "tools/external memory", x: 0.55, y: 0.62, color: colors.tool },
+      { key: "social", label: "social memory", x: 0.78, y: 0.55, color: colors.social },
+      { key: "continuity", label: "event-log continuity", x: 0.50, y: 0.86, color: "#ffffff" },
+    ];
+
+    const links = [
+      ["world", "perception"],
+      ["perception", "self"],
+      ["world", "disease"],
+      ["disease", "self"],
+      ["self", "tool"],
+      ["tool", "social"],
+      ["social", "disease"],
+      ["disease", "continuity"],
+      ["social", "continuity"],
+      ["tool", "continuity"],
+      ["self", "continuity"],
+      ["perception", "tool"],
+    ];
+
+    function resize() {
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.floor(canvas.clientWidth * ratio);
+      canvas.height = Math.floor(canvas.clientHeight * ratio);
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      draw();
+    }
+
+    function nodeByKey(key) {
+      return nodes.find((node) => node.key === key);
+    }
+
+    function drawArrow(from, to) {
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      const x1 = from.x * w;
+      const y1 = from.y * h;
+      const x2 = to.x * w;
+      const y2 = to.y * h;
+      const angle = Math.atan2(y2 - y1, x2 - x1);
+      const radius = Math.min(w, h) * 0.055;
+      const startX = x1 + Math.cos(angle) * radius;
+      const startY = y1 + Math.sin(angle) * radius;
+      const endX = x2 - Math.cos(angle) * radius;
+      const endY = y2 - Math.sin(angle) * radius;
+
+      ctx.strokeStyle = "rgba(242,246,240,0.22)";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(startX, startY);
+      ctx.lineTo(endX, endY);
+      ctx.stroke();
+
+      ctx.fillStyle = "rgba(242,246,240,0.45)";
+      ctx.beginPath();
+      ctx.moveTo(endX, endY);
+      ctx.lineTo(endX - Math.cos(angle - 0.38) * 10, endY - Math.sin(angle - 0.38) * 10);
+      ctx.lineTo(endX - Math.cos(angle + 0.38) * 10, endY - Math.sin(angle + 0.38) * 10);
+      ctx.closePath();
+      ctx.fill();
+    }
+
+    function draw() {
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = "#0b1212";
+      ctx.fillRect(0, 0, w, h);
+
+      links.forEach(([fromKey, toKey]) => {
+        drawArrow(nodeByKey(fromKey), nodeByKey(toKey));
+      });
+
+      nodes.forEach((node) => {
+        const x = node.x * w;
+        const y = node.y * h;
+        const radius = Math.max(44, Math.min(w, h) * 0.07);
+
+        ctx.fillStyle = "rgba(255,255,255,0.04)";
+        ctx.beginPath();
+        ctx.arc(x, y, radius + 12, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.strokeStyle = node.color;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
+        ctx.stroke();
+
+        ctx.fillStyle = node.color;
+        ctx.beginPath();
+        ctx.arc(x, y, 8, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = "#f2f6f0";
+        ctx.font = "14px Inter, system-ui, sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText(node.label, x, y + radius + 24);
+      });
+
+      ctx.fillStyle = "rgba(242,246,240,0.92)";
+      ctx.font = "20px Inter, system-ui, sans-serif";
+      ctx.textAlign = "left";
+      ctx.fillText("Persistent pressure, not organism detail", 28, 38);
+      ctx.fillStyle = "rgba(170,178,173,0.95)";
+      ctx.font = "14px Inter, system-ui, sans-serif";
+      ctx.fillText("Each variable stays only if an ablation changes control behavior.", 28, 62);
+    }
+
+    window.addEventListener("resize", resize);
+    resize();
+  </script>
+</body>
+</html>

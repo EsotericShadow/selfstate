@@ -98,7 +98,7 @@ The result supports the next bounded claim only at bridge level:
 - attention matters when several valid pressures compete and one must be selected;
 - the strong claim that one recurrent state independently discovers tool, social, continuity, and attention pressures is not yet supported.
 
-If the frame-only controller matched recurrent performance, or if every ablation caused the same generic collapse, the bridge claim would fail. If no-scenario-leakage, randomized-pressure, or multi-seed versions collapse, the strong learned-integration claim remains false.
+If the frame-only controller matched recurrent performance, or if every ablation caused the same generic collapse, the bridge claim would fail. [Report 73](73_ssrm_3d_no_leak_integration_sweep_report.md) runs the no-scenario-leakage randomized multi-seed attack and produces a partial negative, so the strong learned-integration claim remains false.
 
 ## Limits
 
@@ -108,9 +108,9 @@ If the frame-only controller matched recurrent performance, or if every ablation
 - The feature groups are known for ablation.
 - The recurrent architecture is a small GRU, not a rich embodied model-based agent.
 - Probe scores are diagnostic only; the boundary evidence is the pressure-specific action loss.
-- Early unseeded runs exposed verdict instability; model initialization is now seeded, but multi-seed robustness is still untested.
+- Early unseeded runs exposed verdict instability; model initialization is now seeded, and the follow-up no-leak multi-seed sweep still fails the strong integration verdict.
 
-The next stronger version should remove scenario identity leakage, randomize pressure combinations, run multiple seeds, require wider margins, and then move the result into the full SSRM-3D world with learned tool construction, repeated social interaction, continuity restore/fork events, and multi-rate control.
+The next stronger version should move the result into the full SSRM-3D world with learned tool construction, repeated social interaction, continuity restore/fork events, and multi-rate control.
 
 ## Visualization
 

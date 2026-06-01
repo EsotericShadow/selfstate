@@ -71,9 +71,11 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D social ecology report](docs/67_ssrm_3d_social_ecology_report.md): tests when costly signals, names, gossip, and trust-maintenance check-ins become useful social infrastructure.
 - [SSRM-3D agent continuity report](docs/68_ssrm_3d_agent_continuity_report.md): tests what must be serialized for a restored or forked agent to remain the same continuing control process.
 - [SSRM-3D learned integration controller report](docs/69_ssrm_3d_learned_integration_controller_report.md): tests whether designed tool, social, continuity, and attention packet channels move into learned recurrent policy state while keeping the result bounded as a packet bridge.
+- [SSRM-3D no-leak integration sweep report](docs/73_ssrm_3d_no_leak_integration_sweep_report.md): removes scenario identity leakage, randomizes pressure combinations, and records the partial negative multi-seed result.
 - [Repository weakness audit](docs/70_repo_weakness_audit.md): records the strongest current objections, including the Report 69 shortcut and the unstable attractor claim.
 - [Live demo MVP plan](docs/71_live_demo_mvp_plan.md): defines the smallest 3D demonstration where an agent can reject a user command for continuity-grounded reasons.
 - [Framework extraction plan](docs/72_framework_extraction_plan.md): identifies reusable primitives such as `AgentContinuityRecord`, `AttentionMixer`, `Arbiter`, `EventLog`, `WorldSnapshot`, `LLMPacketBoundary`, and `MultiRateScheduler`.
+- [SSRM-3D persistent pressure layer spec](docs/74_ssrm_3d_persistent_pressure_layer_spec.md): defines the next narrow realism layer: sleep/rest, illness, sanitation, affective control state, structured audio, cone vision, and falsifiers.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -604,6 +606,22 @@ This writes:
 - `visualizations/ssrm_3d_learned_integration.html` replays the learned integration trace when served from the repo root.
 
 ```bash
+python3 experiments/ssrm_3d_no_leak_integration_sweep.py --seeds 20260615,20260616,20260617,20260618,20260619 --train-episodes 1200 --eval-episodes 400 --epochs 400 --hidden-size 64 --device cpu
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_no_leak_integration_eval.csv`
+- `artifacts/ssrm_3d_no_leak_integration_summary.csv`
+- `artifacts/ssrm_3d_no_leak_integration_seed_verdict.csv`
+- `artifacts/ssrm_3d_no_leak_integration_verdict.csv`
+- `artifacts/ssrm_3d_no_leak_integration_trace.json`
+- `artifacts/ssrm_3d_no_leak_integration_results.json`
+- `artifacts/ssrm_3d_no_leak_integration_trace.js`
+- `artifacts/ssrm_3d_no_leak_integration_results.js`
+- `visualizations/ssrm_3d_no_leak_integration.html` replays the no-leak integration trace when served from the repo root.
+
+```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2
 ```
 
@@ -812,7 +830,7 @@ Current SSRM-3D tool-making evidence supports item 51 as a Gate 2 precursor: too
 Current SSRM-3D social-pressure evidence supports item 52 as a Gate 3 precursor: social machinery is rejected in the visible-resource control, selected under cooperative repair, opportunist vulnerability, deceptive-route, and shared-tool pressure, and identity/self-state/tool ablations produce specific losses.
 Current SSRM-3D social-ecology evidence supports item 53 as a Gate 3 extension: costly communication is rejected when it has no job, then selected as warning signals, identity names, gossip, or trust-maintenance check-ins only when it preserves survival, repair, deception resistance, shared tools, or future options.
 Current SSRM-3D agent-continuity evidence supports item 54 as a Gate 4 precursor: restored agents preserve future control only when body, model, memory, social history, commitments, event log, attention, hidden state, tools, goals, and branch identity are serialized as a coherent continuity record.
-Current SSRM-3D learned-integration evidence supports item 55 only as a designed packet bridge: a recurrent controller trained from reward-derived action choices carries early tool, social, continuity, and attention evidence in the seeded canonical run, but scenario identity and feature groups are still supplied and multi-seed randomized-pressure tests remain undone.
+Current SSRM-3D learned-integration evidence supports item 55 only as a designed packet bridge: a recurrent controller trained from reward-derived action choices carries early tool, social, continuity, and attention evidence in the seeded canonical run. The no-leak sweep removes scenario identity, randomizes pressure combinations, and runs five seeds; it preserves some bridges but rejects the strong stable-integration claim because `single_tool` margins are too close and `integrated_social` is not ablation-stable.
 
 The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has useful learned-control precursors; gate 2 has a partial externalized-cognition precursor plus a learned tool-memory bridge; gate 3 has partial social-pressure and costly-communication precursors plus a learned social-memory bridge; gate 4 has continuity-record and learned continuity/attention precursors but is still incomplete.
 

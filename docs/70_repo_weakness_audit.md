@@ -18,6 +18,8 @@ That still matters because it moves part of tool, social, and continuity pressur
 
 An initial full-manifest run exposed instability because model initialization was not seeded. After seeding model weights, the canonical rows pass repeatably. That repair does not upgrade the claim: the result remains a designed packet bridge because scenario identity and feature-group boundaries are supplied.
 
+[Report 73](73_ssrm_3d_no_leak_integration_sweep_report.md) attacks that weakness directly. It removes scenario identity leakage, randomizes pressure combinations, runs five seeds, and requires wider margins. The result is partial negative evidence: local social, local continuity, integrated tool, and integrated continuity survive, but `single_tool` is too close to the margin and `integrated_social` is not ablation-stable. That keeps Report 69 in the bridge category.
+
 ### The Attractor Claim Is Not Stable
 
 The architecture boundary stress test remains negative evidence against an architecture-independent attractor. Only one of three tested recurrent architectures converges in all shared regimes.
@@ -65,7 +67,7 @@ The repo should stop treating return-selected candidate behavior as close to inv
 
 ## Near-Term Attack On Report 69
 
-The next experiment should keep the same broad learned-integration idea but remove the obvious shortcuts:
+The completed no-leak follow-up kept the same broad learned-integration idea but removed the obvious shortcuts:
 
 - remove scenario identity leakage from packet rows;
 - randomize pressure combinations instead of using one scenario per pressure;
@@ -74,8 +76,4 @@ The next experiment should keep the same broad learned-integration idea but remo
 - report bridge support separately from strong integration support;
 - allow the strong result to fail without making the experiment process fail.
 
-Success would strengthen the integration claim.
-
-Failure would correctly downgrade Report 69 to a designed packet precursor.
-
-Both outcomes are useful.
+It did not support the strong integration claim. That failure correctly downgrades Report 69 to a designed packet precursor while preserving narrower evidence that some designed channels can enter learned policy state.

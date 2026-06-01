@@ -51,11 +51,11 @@ Pass condition:
 
 Current status:
 
-Partially passed by [report 62](62_ssrm_3d_learned_controller_report.md) and extended by [report 69](69_ssrm_3d_learned_integration_controller_report.md).
+Partially passed by [report 62](62_ssrm_3d_learned_controller_report.md), extended by [report 69](69_ssrm_3d_learned_integration_controller_report.md), and constrained by the no-leak sweep in [report 73](73_ssrm_3d_no_leak_integration_sweep_report.md).
 
 The SSRM-3D learned-controller precursor trains recurrent controllers without self labels. In stages 1-6, recurrent controllers beat frame-only controllers by 50.120 to 123.950 reward points and carry decodable self-state. Stage 0 remains a clean low-pressure control.
 
-The learned-integration precursor trains a recurrent controller from reward-derived packet traces. It rejects extra state in visible control and carries early local and integrated pressure evidence in the seeded canonical run, but scenario identity and feature-group structure are supplied.
+The learned-integration precursor trains a recurrent controller from reward-derived packet traces. It rejects extra state in visible control and carries early local and integrated pressure evidence in the seeded canonical run, but scenario identity and feature-group structure are supplied. The no-leak sweep removes scenario identity and randomizes pressure combinations; it preserves some bridges but rejects stable integration because the tool margin is fragile and integrated social pressure is not ablation-stable.
 
 Remaining weakness:
 
@@ -77,11 +77,11 @@ Pass condition:
 
 Current status:
 
-Partially passed by [report 65](65_ssrm_3d_tool_making_report.md) and given a learned-controller bridge by [report 69](69_ssrm_3d_learned_integration_controller_report.md).
+Partially passed by [report 65](65_ssrm_3d_tool_making_report.md), given a learned-controller bridge by [report 69](69_ssrm_3d_learned_integration_controller_report.md), and constrained by [report 73](73_ssrm_3d_no_leak_integration_sweep_report.md).
 
 The SSRM-3D tool-making precursor gives the world marker, beacon, alarm, and cache affordances. Return selection rejects tools in the visible-resource control, selects tools under hidden-route, degraded-sensor, and interruption-recovery pressure, and loses most of the gain when tool access is ablated.
 
-The learned-integration precursor adds that early tool-route evidence can be carried by recurrent policy state; frame-only control falls behind and tool-channel ablation removes the learned advantage.
+The learned-integration precursor adds that early tool-route evidence can be carried by recurrent policy state; frame-only control falls behind and tool-channel ablation removes the learned advantage. The no-leak sweep keeps raw tool support across seeds but the weakest margins are too close to the widened threshold, so the learned tool bridge remains provisional.
 
 Remaining weakness:
 
@@ -159,7 +159,7 @@ Existing evidence includes self-state ablation in SSRM-3D, learned observer self
 
 [Report 68](68_ssrm_3d_agent_continuity_report.md) adds a continuity-record precursor: model-only copies, incompatible memory transplants, social-memory resets, commitment resets, tool resets, and ambiguous forks fail in specific restore/fork regimes. That strengthens the continuity-memory side of Gate 4, but it is still not the learned-controller ablation suite required for a full pass.
 
-[Report 69](69_ssrm_3d_learned_integration_controller_report.md) adds a learned packet-level ablation bridge: continuity-channel ablation damages the local restore row, attention-channel ablation damages integrated gate pressure, and tool/social ablations remain pressure-specific. It also records a failure: continuity-channel ablation does not damage the integrated gate-pressure row. It still does not replace the full embodied learned-controller ablation suite.
+[Report 69](69_ssrm_3d_learned_integration_controller_report.md) adds a learned packet-level ablation bridge: continuity-channel ablation damages the local restore row, attention-channel ablation damages integrated gate pressure, and tool/social ablations remain pressure-specific. It also records a failure: continuity-channel ablation does not damage the integrated gate-pressure row. [Report 73](73_ssrm_3d_no_leak_integration_sweep_report.md) then removes scenario identity and randomizes pressure combinations; the local social, local continuity, integrated tool, and integrated continuity bridges survive, but `single_tool` and `integrated_social` fail the stronger verdict. These reports still do not replace the full embodied learned-controller ablation suite.
 
 Failure interpretation:
 

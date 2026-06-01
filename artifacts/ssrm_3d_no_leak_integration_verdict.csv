@@ -1,0 +1,8 @@
+case_type,seeds_tested,seeds_supported,support_rate,min_gain_margin,min_relevant_ablation_margin,max_irrelevant_ablation_loss,supports_no_leak_integration,verdict
+control,5,5,1.0,8.0,8.0,0.0,True,no_leak_bridge_supported
+single_tool,5,5,1.0,2.1555555555555515,3.1555555555555515,0.0,False,no_leak_bridge_not_stable
+single_social,5,5,1.0,69.0,70.0,0.0,True,no_leak_bridge_supported
+single_continuity,5,5,1.0,69.0,70.0,0.0,True,no_leak_bridge_supported
+integrated_tool,5,5,1.0,10.833333333333329,33.83333333333333,0.0,True,no_leak_bridge_supported
+integrated_social,5,4,0.8,75.0,-1.6666666666666714,0.0,False,no_leak_bridge_not_stable
+integrated_continuity,5,5,1.0,75.0,8.25,0.0,True,no_leak_bridge_supported

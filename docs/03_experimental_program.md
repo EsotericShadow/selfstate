@@ -1441,7 +1441,7 @@ Canonical result:
 
 - local tool, social, continuity, and integrated rows support a designed packet bridge in the seeded canonical run;
 - the result remains provisional because scenario identity and feature groups are supplied;
-- the next version should remove scenario identity leakage, randomize pressure combinations, run multiple seeds, and require wider margins.
+- the no-leak follow-up removes scenario identity leakage, randomizes pressure combinations, runs five seeds, and finds a partial negative: social and continuity bridges mostly survive, but `single_tool` margins are too close and `integrated_social` is not stable.
 
 Implemented version:
 
@@ -1455,6 +1455,35 @@ Implemented version:
 - [JSON results](../artifacts/ssrm_3d_learned_integration_results.json)
 - [trace JS fallback](../artifacts/ssrm_3d_learned_integration_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_learned_integration_results.js)
+
+## Supplemental SSRM-3D No-Leak Integration Sweep
+
+Run the Report 69 attack directly.
+
+This experiment keeps the packet-controller frame but removes scenario-id input features, randomizes pressure combinations, splits integrated verdicts by priority metadata, runs five seeds, and requires margins that do not sit on the threshold.
+
+Canonical result:
+
+- control remains clean;
+- local social and continuity pass robustly;
+- integrated tool and integrated continuity pass;
+- `single_tool` fails the widened margin requirement;
+- `integrated_social` is not seed/ablation stable;
+- the strong no-leak randomized integration claim is not supported.
+
+Implemented version:
+
+- [SSRM-3D no-leak integration script](../experiments/ssrm_3d_no_leak_integration_sweep.py)
+- [SSRM-3D no-leak integration report](73_ssrm_3d_no_leak_integration_sweep_report.md)
+- [no-leak integration visualization](../visualizations/ssrm_3d_no_leak_integration.html)
+- [evaluation CSV](../artifacts/ssrm_3d_no_leak_integration_eval.csv)
+- [summary CSV](../artifacts/ssrm_3d_no_leak_integration_summary.csv)
+- [seed verdict CSV](../artifacts/ssrm_3d_no_leak_integration_seed_verdict.csv)
+- [verdict CSV](../artifacts/ssrm_3d_no_leak_integration_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_no_leak_integration_trace.json)
+- [JSON results](../artifacts/ssrm_3d_no_leak_integration_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_no_leak_integration_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_no_leak_integration_results.js)
 
 ## Modular LLM Architecture Boundary
 

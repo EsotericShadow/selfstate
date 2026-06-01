@@ -133,11 +133,13 @@ The SSRM-3D social-ecology precursor makes communication costly. Return selectio
 
 The SSRM-3D social trust/contracts precursor makes promises costly. Return selection rejects contract machinery in the visible no-contract control, selects borrowed-tool return, hazard warning, resource sharing, and shelter repair duty only when they preserve future access, and loses the advantage under matching commitment, identity, communication, trust, ownership, repair-debt, or continuity ablations.
 
+The SSRM-3D predator/threat precursor adds hostile tracking pressure. It is not a social-gate pass by itself, but it gives social warning and group defense a job: return selection keeps those channels only when trackers exploit isolation, weakness, alarms, shelter, or restore-time forgetting.
+
 The learned-integration precursor adds that early helper/deceiver identity evidence can be carried by recurrent policy state; social-channel ablation removes the learned social-repair advantage.
 
 Remaining weakness:
 
-The successful policies are return-selected from candidate social-control, communication, and contract policies, not learned end-to-end by the SSRM-3D controller. The social agents use simple role policies rather than open-ended communication, learned deception, or long multi-episode reputation. This means Gate 3 has useful social-pressure, costly-communication, and contract precursors, but not a full pass.
+The successful policies are return-selected from candidate social-control, communication, contract, and group-defense policies, not learned end-to-end by the SSRM-3D controller. The social agents use simple role policies rather than open-ended communication, learned deception, or long multi-episode reputation. This means Gate 3 has useful social-pressure, costly-communication, contract, and threat-linked group-defense precursors, but not a full pass.
 
 Failure interpretation:
 
@@ -178,6 +180,8 @@ Existing evidence includes self-state ablation in SSRM-3D, learned observer self
 [Report 68](68_ssrm_3d_agent_continuity_report.md) adds a continuity-record precursor: model-only copies, incompatible memory transplants, social-memory resets, commitment resets, tool resets, and ambiguous forks fail in specific restore/fork regimes. That strengthens the continuity-memory side of Gate 4, but it is still not the learned-controller ablation suite required for a full pass.
 
 [Report 69](69_ssrm_3d_learned_integration_controller_report.md) adds a learned packet-level ablation bridge: continuity-channel ablation damages the local restore row, attention-channel ablation damages integrated gate pressure, and tool/social ablations remain pressure-specific. It also records a failure: continuity-channel ablation does not damage the integrated gate-pressure row. [Report 73](73_ssrm_3d_no_leak_integration_sweep_report.md) then removes scenario identity and randomizes pressure combinations; the local social, local continuity, integrated tool, and integrated continuity bridges survive, but `single_tool` and `integrated_social` fail the stronger verdict. These reports still do not replace the full embodied learned-controller ablation suite.
+
+[Report 81](81_ssrm_3d_predator_threat_agents_report.md) adds a pressure-layer ablation check for threat perception, self-vulnerability, sound/scent memory, stealth, shelter, alarms, social warning, and continuity. It strengthens the targeted-ablation pattern for designed policies, but it does not replace learned-controller self-state, attention, LLM-stream, or tool-building ablations.
 
 Failure interpretation:
 

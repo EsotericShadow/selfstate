@@ -1,0 +1,7 @@
+scenario,scenario_name,selected_policy,selected_uses_threat_perception,selected_uses_self_vulnerability_state,selected_uses_sound_scent_memory,selected_uses_stealth_action,selected_uses_shelter_memory,selected_uses_tool_alarm,selected_uses_social_warning,selected_uses_continuity,train_reward,no_threat_train_reward,train_gain_over_no_threat
+0,open_safe_control,no_threat_baseline,False,False,False,False,False,False,False,False,214.72864118645555,214.73014016622227,-0.0014989797667226412
+1,sound_tracking_predator,sound_stealth_alarm_planner,True,False,True,True,False,True,False,False,143.53937150141633,-744.9326747856697,888.4720462870861
+2,scent_weakness_tracker,scent_vulnerability_shelter_planner,True,True,True,True,True,False,False,False,118.76014936403261,-798.3460591836973,917.1062085477299
+3,routine_ambush_predator,routine_avoidance_alarm_planner,True,False,True,True,False,True,False,False,151.98421659259668,-748.8629557281922,900.8471723207889
+4,social_warning_group_defense,social_warning_shelter_planner,True,True,False,False,True,True,True,False,88.11349840479113,-763.8124307321613,851.9259291369524
+5,restore_threat_continuity,continuity_threat_planner,True,True,True,True,True,True,True,True,97.72164829642207,-859.6057826800113,957.3274309764333

@@ -93,15 +93,17 @@ Some selected policies carry extra channels whose ablations are neutral in that 
 - Social contract dynamics are abstract control variables, not open-ended society.
 - Promise types, trust updates, ownership, repair debt, and continuity are designed channels.
 - The selected planner is not an online RL agent discovering contracts from scratch.
-- This does not yet include predators, resource ecology, territorial conflict, development, dependent care, or irreversible loss.
+- This report itself does not include predators, resource ecology, territorial conflict, development, dependent care, or irreversible loss.
 
 ## Next Test
 
-The next pressure-layer step should add predator/threat agents:
+The implemented follow-up adds predator/threat agents:
 
 - threats should track sound, scent, weakness, routines, or social disclosure;
 - fear-like control state should bias attention, shelter use, stealth, group defense, or alarms;
 - ablations should separate threat perception, self-vulnerability state, sound/scent memory, social warning, tool alarm, shelter, and continuity.
+
+Implemented by [report 81](81_ssrm_3d_predator_threat_agents_report.md).
 
 ## Visualization
 

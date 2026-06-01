@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Predator Threat Agents Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101211;
+      --panel: #171b19;
+      --line: rgba(239, 244, 238, 0.15);
+      --text: #eff4ee;
+      --muted: #a9b4ad;
+      --threat: #ff746d;
+      --fear: #f0c86d;
+      --self: #eff4ee;
+      --scent: #c7a8ff;
+      --shelter: #8bd2a1;
+      --social: #7bc8ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 430px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #0b0f0d;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .event,
+    .outcome-row,
+    .verdict-row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: #202521;
+      height: 32px;
+      padding: 0 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      padding: 8px;
+      min-height: 58px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 18px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 104px minmax(0, 1fr) 48px;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .bar {
+      height: 10px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      width: 0;
+    }
+
+    .event {
+      border-left: 3px solid var(--line);
+      padding-left: 8px;
+    }
+
+    .outcome-row,
+    .verdict-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      border-top: 1px solid rgba(239, 244, 238, 0.08);
+      padding-top: 6px;
+    }
+
+    .verdict-row {
+      grid-template-columns: 10px minmax(0, 1fr) auto;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      padding: 2px 6px;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .value {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    @media (max-width: 940px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 58vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Predator/Threat Agents</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+
+    <div class="controls">
+      <button id="play" type="button">Pause</button>
+      <input id="scrub" type="range" min="0" max="0" value="0">
+    </div>
+
+    <div class="metrics">
+      <div class="metric"><span>tick</span><strong id="tick">0</strong></div>
+      <div class="metric"><span>action</span><strong id="action">-</strong></div>
+      <div class="metric"><span>attacks</span><strong id="attacks">0</strong></div>
+      <div class="metric"><span>injury</span><strong id="injury">0.00</strong></div>
+    </div>
+
+    <div class="section" id="bars"></div>
+
+    <div class="section">
+      <h2>Trace Event</h2>
+      <p class="event" id="event">Waiting for trace.</p>
+    </div>
+
+    <div class="section">
+      <h2>Ablation Outcomes</h2>
+      <div id="outcomes"></div>
+    </div>
+
+    <div class="section">
+      <h2>Verdicts</h2>
+      <div id="verdicts"></div>
+    </div>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_predator_threat_agents_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_predator_threat_agents_results.js"></script>
+  <script>
+    const state = {
+      trace: window.SSRM_3D_PREDATOR_THREAT_AGENTS_TRACE || null,
+      results: window.SSRM_3D_PREDATOR_THREAT_AGENTS_RESULTS || null,
+      frameIndex: 0,
+      playing: true,
+      lastStep: 0,
+    };
+
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const playButton = document.getElementById("play");
+    const scrub = document.getElementById("scrub");
+    const bars = document.getElementById("bars");
+
+    const barDefs = [
+      ["progress", "Progress", "var(--social)", () => state.trace.scenario.required_progress || 1],
+      ["energy", "Energy", "var(--shelter)", () => 1],
+      ["injury", "Injury", "var(--threat)", () => 1],
+      ["detection_risk", "Detection", "var(--threat)", () => 1.6],
+      ["fear_state", "Fear control", "var(--fear)", () => 1],
+      ["noise_level", "Noise", "var(--social)", () => 1],
+      ["scent_trace", "Scent trace", "var(--scent)", () => 1],
+      ["shelter_security", "Shelter", "var(--shelter)", () => 1],
+      ["social_support", "Social support", "var(--social)", () => 1],
+    ];
+
+    function fallbackLoad() {
+      const tracePromise = state.trace ? Promise.resolve(state.trace) : fetch("../artifacts/ssrm_3d_predator_threat_agents_trace.json").then((response) => response.json());
+      const resultPromise = state.results ? Promise.resolve(state.results) : fetch("../artifacts/ssrm_3d_predator_threat_agents_results.json").then((response) => response.json());
+      return Promise.all([tracePromise, resultPromise]).then(([trace, results]) => {
+        state.trace = trace;
+        state.results = results;
+      });
+    }
+
+    function cssVar(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+
+    function resizeCanvas() {
+      const ratio = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.max(1, Math.floor(rect.width * ratio));
+      canvas.height = Math.max(1, Math.floor(rect.height * ratio));
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+
+    function setupBars() {
+      bars.innerHTML = "";
+      for (const [key, label, color] of barDefs) {
+        const row = document.createElement("div");
+        row.className = "row";
+        row.innerHTML = `<span>${label}</span><div class="bar"><span id="bar-${key}"></span></div><span class="value" id="value-${key}">0.00</span>`;
+        row.querySelector(".bar > span").style.background = color;
+        bars.appendChild(row);
+      }
+    }
+
+    function setBar(key, value, scale) {
+      const raw = Number(value) || 0;
+      const clamped = Math.max(0, Math.min(1, raw / scale));
+      document.getElementById(`bar-${key}`).style.width = `${clamped * 100}%`;
+      document.getElementById(`value-${key}`).textContent = raw.toFixed(2);
+    }
+
+    function drawScene(frame) {
+      const rect = canvas.getBoundingClientRect();
+      const width = rect.width;
+      const height = rect.height;
+      ctx.clearRect(0, 0, width, height);
+
+      const gradient = ctx.createLinearGradient(0, 0, 0, height);
+      gradient.addColorStop(0, "#101819");
+      gradient.addColorStop(1, "#111915");
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, width, height);
+
+      ctx.fillStyle = "#17231a";
+      ctx.fillRect(0, height * 0.70, width, height * 0.30);
+
+      const selfX = width * 0.42;
+      const selfY = height * 0.64;
+      const threatX = width * (0.78 - Math.min(frame.detection_risk, 1.2) * 0.12);
+      const threatY = height * 0.38;
+      const shelterX = width * 0.62;
+      const shelterY = height * 0.74;
+      const groupX = width * 0.22;
+      const groupY = height * 0.50;
+
+      ctx.strokeStyle = cssVar("--scent");
+      ctx.globalAlpha = 0.10 + frame.scent_trace * 0.38;
+      ctx.lineWidth = 18 + frame.scent_trace * 28;
+      ctx.beginPath();
+      ctx.moveTo(selfX - 90, selfY + 18);
+      ctx.bezierCurveTo(selfX - 30, selfY - 40, selfX + 60, selfY + 40, threatX, threatY);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      ctx.strokeStyle = cssVar("--social");
+      ctx.globalAlpha = 0.12 + frame.social_support * 0.55;
+      ctx.lineWidth = 4 + frame.social_support * 8;
+      ctx.beginPath();
+      ctx.moveTo(groupX, groupY);
+      ctx.lineTo(selfX, selfY);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      ctx.fillStyle = "#273532";
+      ctx.fillRect(shelterX - 58, shelterY - 36, 116, 58);
+      ctx.fillStyle = cssVar("--shelter");
+      ctx.globalAlpha = 0.18 + frame.shelter_security * 0.60;
+      ctx.fillRect(shelterX - 50, shelterY - 28, 100, 44);
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = "#3b4542";
+      ctx.beginPath();
+      ctx.moveTo(shelterX - 70, shelterY - 34);
+      ctx.lineTo(shelterX, shelterY - 86);
+      ctx.lineTo(shelterX + 70, shelterY - 34);
+      ctx.closePath();
+      ctx.fill();
+
+      ctx.strokeStyle = cssVar("--threat");
+      ctx.globalAlpha = 0.18 + frame.detection_risk * 0.34;
+      ctx.lineWidth = 20 + frame.detection_risk * 20;
+      ctx.beginPath();
+      ctx.arc(selfX, selfY, 36 + frame.fear_state * 22, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      ctx.fillStyle = cssVar("--self");
+      ctx.beginPath();
+      ctx.arc(selfX, selfY, 15, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = frame.action.includes("stealth") ? cssVar("--fear") : cssVar("--threat");
+      ctx.beginPath();
+      ctx.arc(selfX + 5, selfY - 4, 4, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = cssVar("--social");
+      ctx.globalAlpha = 0.28 + frame.social_support * 0.55;
+      ctx.beginPath();
+      ctx.arc(groupX, groupY, 20, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+
+      ctx.fillStyle = cssVar("--threat");
+      ctx.globalAlpha = 0.30 + Math.min(frame.detection_risk, 1) * 0.55;
+      ctx.beginPath();
+      ctx.moveTo(threatX, threatY - 22);
+      ctx.lineTo(threatX + 26, threatY + 20);
+      ctx.lineTo(threatX - 26, threatY + 20);
+      ctx.closePath();
+      ctx.fill();
+      ctx.globalAlpha = 1;
+
+      ctx.fillStyle = cssVar("--muted");
+      ctx.font = "12px Inter, sans-serif";
+      ctx.fillText("self", selfX - 12, selfY + 38);
+      ctx.fillText("threat", threatX - 18, threatY + 44);
+      ctx.fillText("group", groupX - 16, groupY + 38);
+      ctx.fillText("shelter", shelterX - 22, shelterY + 42);
+      ctx.fillText(state.trace.scenario.name.replaceAll("_", " "), 24, 32);
+    }
+
+    function renderOutcomes() {
+      const container = document.getElementById("outcomes");
+      const outcomes = state.trace.condition_outcomes || {};
+      const rows = Object.entries(outcomes)
+        .sort((a, b) => (b[1].mean_reward || 0) - (a[1].mean_reward || 0))
+        .slice(0, 7);
+      container.innerHTML = "";
+      for (const [name, row] of rows) {
+        const div = document.createElement("div");
+        div.className = "outcome-row";
+        div.innerHTML = `<span>${name}</span><span class="value">${Number(row.mean_reward).toFixed(1)}</span>`;
+        container.appendChild(div);
+      }
+    }
+
+    function renderVerdicts() {
+      const container = document.getElementById("verdicts");
+      container.innerHTML = "";
+      for (const row of state.results.verdict || []) {
+        const div = document.createElement("div");
+        div.className = "verdict-row";
+        const ok = row.supports_predator_threat_precursor;
+        div.innerHTML = `<span class="dot" style="background:${ok ? "var(--shelter)" : "var(--threat)"}"></span><span>${row.scenario_name}</span><span class="pill">${ok ? "pass" : "fail"}</span>`;
+        container.appendChild(div);
+      }
+    }
+
+    function renderFrame() {
+      if (!state.trace || !state.trace.frames.length) {
+        return;
+      }
+      const frame = state.trace.frames[state.frameIndex];
+      scrub.value = String(state.frameIndex);
+      document.getElementById("tick").textContent = frame.tick;
+      document.getElementById("action").textContent = frame.action.replaceAll("_", " ");
+      document.getElementById("attacks").textContent = frame.attacks;
+      document.getElementById("injury").textContent = Number(frame.injury).toFixed(2);
+      for (const [key, , , scaleFn] of barDefs) {
+        setBar(key, frame[key], scaleFn());
+      }
+      const notes = (frame.notes || []).join("; ");
+      document.getElementById("event").textContent = `action=${frame.action}; attacks=${frame.attacks}; notes=${notes || "none"}.`;
+      drawScene(frame);
+    }
+
+    function step(timestamp) {
+      if (state.playing && timestamp - state.lastStep > 170) {
+        state.frameIndex = (state.frameIndex + 1) % state.trace.frames.length;
+        state.lastStep = timestamp;
+        renderFrame();
+      }
+      requestAnimationFrame(step);
+    }
+
+    playButton.addEventListener("click", () => {
+      state.playing = !state.playing;
+      playButton.textContent = state.playing ? "Pause" : "Play";
+    });
+
+    scrub.addEventListener("input", () => {
+      state.playing = false;
+      playButton.textContent = "Play";
+      state.frameIndex = Number(scrub.value);
+      renderFrame();
+    });
+
+    window.addEventListener("resize", () => {
+      resizeCanvas();
+      renderFrame();
+    });
+
+    fallbackLoad()
+      .then(() => {
+        document.getElementById("subtitle").textContent = `${state.trace.scenario.name} / ${state.trace.policy.name}`;
+        scrub.max = String(state.trace.frames.length - 1);
+        setupBars();
+        renderOutcomes();
+        renderVerdicts();
+        resizeCanvas();
+        renderFrame();
+        requestAnimationFrame(step);
+      })
+      .catch((error) => {
+        document.getElementById("subtitle").textContent = "Could not load trace.";
+        document.getElementById("event").textContent = String(error);
+      });
+  </script>
+</body>
+</html>

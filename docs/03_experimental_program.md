@@ -1655,6 +1655,35 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_social_trust_contracts_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_social_trust_contracts_results.js)
 
+## SSRM-3D Predator/Threat Agents Pressure
+
+Run the seventh persistent-pressure layer from report 74.
+
+This experiment treats trackers, threat perception, self-vulnerability state, sound/scent memory, stealth, shelter, alarms, social warning, fear-like control state, and continuity as abstract control variables. It asks whether threats become self-relevant only when they exploit the agent's own trace, weakness, routines, defenses, or restore-time forgetting.
+
+Canonical result:
+
+- open safe control rejects threat machinery;
+- sound-tracking pressure fails under no-threat-perception, no-sound-scent-memory, no-stealth-action, and no-tool-alarm ablations;
+- scent/weakness pressure fails under no-threat-perception, no-self-vulnerability-state, no-sound-scent-memory, no-stealth-action, and no-shelter-access ablations;
+- routine ambush pressure fails under no-threat-perception, no-sound-scent-memory, no-stealth-action, and no-tool-alarm ablations;
+- social group-defense pressure fails under no-social-warning plus shelter, alarm, self-vulnerability, and threat-perception ablations;
+- restore pressure fails under no-continuity plus perception, vulnerability, trace, stealth, shelter, alarm, and social-warning ablations.
+
+Implemented version:
+
+- [SSRM-3D predator/threat agents script](../experiments/ssrm_3d_predator_threat_agents.py)
+- [SSRM-3D predator/threat agents report](81_ssrm_3d_predator_threat_agents_report.md)
+- [predator/threat agents visualization](../visualizations/ssrm_3d_predator_threat_agents.html)
+- [evaluation CSV](../artifacts/ssrm_3d_predator_threat_agents_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_predator_threat_agents_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_predator_threat_agents_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_predator_threat_agents_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_predator_threat_agents_trace.json)
+- [JSON results](../artifacts/ssrm_3d_predator_threat_agents_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_predator_threat_agents_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_predator_threat_agents_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

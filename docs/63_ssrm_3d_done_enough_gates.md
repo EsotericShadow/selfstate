@@ -197,6 +197,8 @@ Existing evidence includes self-state ablation in SSRM-3D, learned observer self
 
 [Report 86](86_ssrm_3d_irreversible_loss_report.md) adds a pressure-layer ablation check for loss memory, value-at-risk estimation, replacement modeling, caution control, tool/shelter/relationship preservation, memory backup, loss response, and continuity. It strengthens the targeted-ablation pattern for designed policies under permanent option-space loss, but it does not replace learned-controller discovery of loss-sensitive planning or affective control state.
 
+[Report 87](87_ssrm_3d_affective_control_report.md) adds a pressure-layer ablation check for fear, stress, trust, frustration, affiliation, curiosity, guilt analogue, attention mixing, memory salience, risk modulation, communication bias, and continuity. It strengthens the targeted-ablation pattern for designed policies under compact control-summary pressure, but it does not replace learned-controller discovery of affective subspaces.
+
 Failure interpretation:
 
 - If removing self-state hurts everywhere, the environment is biased toward self variables.

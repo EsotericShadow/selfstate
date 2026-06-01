@@ -98,7 +98,8 @@ Priority order:
 10. Development/skill learning. Implemented as the development/skill learning precursor in [report 84](84_ssrm_3d_development_skill_learning_report.md).
 11. Dependent care. Implemented as the dependent care precursor in [report 85](85_ssrm_3d_dependent_care_report.md).
 12. Irreversible loss. Implemented as the irreversible loss precursor in [report 86](86_ssrm_3d_irreversible_loss_report.md).
-13. Affective control state. Next pressure-layer target.
+13. Affective control state. Implemented as the affective control precursor in [report 87](87_ssrm_3d_affective_control_report.md).
+14. Places with function and territory/social infrastructure. Next pressure-layer target.
 
 This combination should make the agent answer behaviorally:
 

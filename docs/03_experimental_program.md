@@ -1829,6 +1829,36 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_irreversible_loss_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_irreversible_loss_results.js)
 
+## SSRM-3D Affective Control Pressure
+
+Run the thirteenth persistent-pressure layer from report 74.
+
+This experiment treats fear, stress, trust, frustration, affiliation, curiosity, guilt analogue, attention mixing, memory salience, risk modulation, communication bias, and continuity as abstract control variables. It asks whether affective control becomes self-relevant only when compact internal summaries change the tested agent's attention, risk tolerance, social access, communication, repair, information seeking, memory salience, or restore-time control.
+
+Canonical result:
+
+- calm clear control rejects affective-control machinery;
+- fear/hazard pressure fails under no-fear, no-attention, no-memory, no-risk, and no-affect ablations;
+- stress/need-arbitration pressure fails under no-stress, no-attention, no-memory, no-risk, and no-affect ablations;
+- trust/affiliation pressure fails under no-trust, no-affiliation, no-memory, no-communication, and no-affect ablations;
+- frustration/curiosity pressure fails under no-frustration, no-curiosity, no-attention, no-memory, and no-affect ablations;
+- guilt/commitment-repair pressure fails under no-guilt, no-trust, no-memory, no-communication, and no-affect ablations;
+- restore pressure fails under no-affective-continuity plus fear, stress, trust, guilt, attention, memory, risk, and communication ablations.
+
+Implemented version:
+
+- [SSRM-3D affective control script](../experiments/ssrm_3d_affective_control.py)
+- [SSRM-3D affective control report](87_ssrm_3d_affective_control_report.md)
+- [affective control visualization](../visualizations/ssrm_3d_affective_control.html)
+- [evaluation CSV](../artifacts/ssrm_3d_affective_control_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_affective_control_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_affective_control_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_affective_control_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_affective_control_trace.json)
+- [JSON results](../artifacts/ssrm_3d_affective_control_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_affective_control_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_affective_control_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

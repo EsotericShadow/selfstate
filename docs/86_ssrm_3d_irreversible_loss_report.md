@@ -91,9 +91,9 @@ The anti-overclaim boundary is:
 - The successful trace mostly avoids permanent loss; the strongest visible failures are in ablation outcomes.
 - This does not yet test learned affective control state in the full SSRM-3D learned controller.
 
-## Next Test
+## Follow-Up
 
-The next pressure-layer step should add affective control state as a narrow, ablatable control summary:
+The direct follow-up is now implemented in [report 87](87_ssrm_3d_affective_control_report.md). It adds affective control state as a narrow, ablatable control summary:
 
 - fear, stress, trust, frustration, affiliation, curiosity, shame/guilt analogues, and loss-response state should only count when they change attention, risk tolerance, approach/avoidance, communication, memory salience, rest safety, repair/help-seeking, or trust updates;
 - each state needs a no-job control where it is rejected;

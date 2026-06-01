@@ -1,0 +1,8 @@
+scenario,scenario_name,selected_policy,selected_uses_fear,selected_uses_stress,selected_uses_trust,selected_uses_frustration,selected_uses_affiliation,selected_uses_curiosity,selected_uses_guilt,selected_uses_attention,selected_uses_memory,selected_uses_risk,selected_uses_communication,selected_uses_continuity,train_reward,reactive_train_reward,train_gain_over_reactive
+0,calm_clear_control,reactive_no_affect,False,False,False,False,False,False,False,False,False,False,False,False,238.08916524323695,238.0827826263972,0.00638261683974406
+1,fear_hazard_attention,integrated_affect_planner,True,True,True,True,True,True,True,True,True,True,True,False,168.62691687710006,-1104.610348479433,1273.237265356533
+2,stress_need_arbitration,stress_arbitrator,False,True,False,False,False,False,False,True,True,True,False,False,202.94127784829888,-1072.3017804277958,1275.2430582760946
+3,trust_affiliation_social,trust_affiliation_planner,False,False,True,False,True,False,False,True,True,False,True,False,276.1640049588897,-1314.0156247409575,1590.1796296998473
+4,frustration_curiosity_switching,frustration_curiosity_planner,False,False,False,True,False,True,False,True,True,True,False,False,127.04551158705868,-1051.431794759922,1178.4773063469806
+5,guilt_commitment_repair,guilt_repair_planner,False,True,True,False,False,False,True,True,True,False,True,False,257.66131566650785,-2197.5748587822973,2455.2361744488053
+6,restore_affective_continuity,continuity_affect_planner,True,True,True,True,True,True,True,True,True,True,True,True,205.87015121527537,-3645.043166021709,3850.9133172369843

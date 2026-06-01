@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Learned Integration Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101312;
+      --panel: rgba(17, 21, 23, 0.96);
+      --line: rgba(244, 247, 241, 0.16);
+      --text: #f4f7f1;
+      --muted: #aab4b1;
+      --world: #71b7ff;
+      --self: #80d99a;
+      --tool: #ffd166;
+      --social: #cf9dff;
+      --continuity: #ff8a7a;
+      --attention: #f2f2f2;
+      --good: #78d98b;
+      --weak: #ff766f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 410px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #0f1515;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.14;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .label,
+    .verdict-row,
+    .action-row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .row,
+    .action-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+    }
+
+    .value {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .bars {
+      display: grid;
+      gap: 7px;
+    }
+
+    .bar {
+      height: 8px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 0%;
+    }
+
+    .verdict-row {
+      display: grid;
+      grid-template-columns: 18px 1fr auto;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      color: var(--text);
+      padding: 2px 6px;
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: #1b2324;
+      color: var(--text);
+      padding: 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 62vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Learned Integration Trace</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+    <div class="section">
+      <div class="row"><span class="label">tick</span><span class="value" id="tick">0</span></div>
+      <div class="row"><span class="label">top action</span><span class="value" id="topAction">-</span></div>
+      <div class="row"><span class="label">target</span><span class="value" id="targetAction">-</span></div>
+      <div class="row"><span class="label">confidence</span><span class="value" id="confidence">0.00</span></div>
+      <div class="row"><span class="label">hidden norm</span><span class="value" id="hiddenNorm">0.00</span></div>
+    </div>
+    <div class="section">
+      <input id="scrubber" type="range" min="0" max="0" value="0">
+      <button type="button" id="play">Pause</button>
+    </div>
+    <div class="section">
+      <h2>Feature Groups</h2>
+      <div class="bars" id="featureBars"></div>
+    </div>
+    <div class="section">
+      <h2>Ablation Outcomes</h2>
+      <div id="ablationActions"></div>
+    </div>
+    <div class="section">
+      <h2>Scenario Verdicts</h2>
+      <div id="verdicts"></div>
+    </div>
+    <div class="section">
+      <h2>Reading</h2>
+      <p>The recurrent controller sees early packet evidence. The frame-only controller sees only the final packet. Ablations zero a feature group after training.</p>
+    </div>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_learned_integration_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_learned_integration_results.js"></script>
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const scrubber = document.getElementById("scrubber");
+    const playButton = document.getElementById("play");
+    let trace = null;
+    let results = null;
+    let frameIndex = 0;
+    let playing = true;
+
+    const groupColors = {
+      world: "#71b7ff",
+      self: "#80d99a",
+      tool: "#ffd166",
+      social: "#cf9dff",
+      continuity: "#ff8a7a",
+      attention: "#f2f2f2",
+    };
+
+    function resize() {
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.floor(canvas.clientWidth * ratio);
+      canvas.height = Math.floor(canvas.clientHeight * ratio);
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      draw();
+    }
+
+    function groupMean(frame, groupName) {
+      const indexes = trace.feature_groups[groupName];
+      const values = indexes.map((index) => frame.features[index] || 0);
+      return values.reduce((sum, value) => sum + value, 0) / Math.max(1, values.length);
+    }
+
+    function draw() {
+      if (!trace || !trace.frames.length) return;
+      const frame = trace.frames[frameIndex];
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = "#0f1515";
+      ctx.fillRect(0, 0, w, h);
+
+      const groups = Object.keys(groupColors);
+      const margin = Math.max(28, w * 0.05);
+      const chartTop = h * 0.18;
+      const chartHeight = h * 0.52;
+      const laneHeight = chartHeight / groups.length;
+      const frameCount = trace.frames.length;
+      const usableWidth = w - margin * 2;
+
+      groups.forEach((group, groupIndex) => {
+        const y = chartTop + groupIndex * laneHeight;
+        ctx.fillStyle = "rgba(255,255,255,0.04)";
+        ctx.fillRect(margin, y, usableWidth, laneHeight - 8);
+        ctx.fillStyle = groupColors[group];
+        trace.frames.forEach((item, index) => {
+          const value = groupMean(item, group);
+          const x = margin + (index / frameCount) * usableWidth;
+          const barWidth = usableWidth / frameCount - 5;
+          const barHeight = Math.max(2, value * (laneHeight - 14));
+          ctx.fillRect(x, y + laneHeight - 8 - barHeight, barWidth, barHeight);
+        });
+        ctx.fillStyle = "#f4f7f1";
+        ctx.font = "13px Inter, system-ui, sans-serif";
+        ctx.textAlign = "left";
+        ctx.fillText(group, margin, y - 4);
+      });
+
+      const markerX = margin + (frameIndex / Math.max(1, frameCount - 1)) * usableWidth;
+      ctx.strokeStyle = "#ffffff";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(markerX, chartTop - 16);
+      ctx.lineTo(markerX, chartTop + chartHeight);
+      ctx.stroke();
+
+      const panelY = chartTop + chartHeight + 34;
+      ctx.fillStyle = "rgba(244,247,241,0.92)";
+      ctx.font = "18px Inter, system-ui, sans-serif";
+      ctx.textAlign = "left";
+      ctx.fillText(frame.top_action, margin, panelY);
+      ctx.fillStyle = "rgba(170,180,177,0.95)";
+      ctx.font = "14px Inter, system-ui, sans-serif";
+      ctx.fillText(`target: ${frame.target_action}`, margin, panelY + 24);
+      ctx.fillText(`confidence: ${frame.confidence.toFixed(2)}`, margin, panelY + 46);
+    }
+
+    function updateFeatureBars(frame) {
+      const container = document.getElementById("featureBars");
+      container.innerHTML = "";
+      Object.keys(groupColors).forEach((group) => {
+        const value = groupMean(frame, group);
+        const row = document.createElement("div");
+        const label = document.createElement("div");
+        label.className = "row";
+        label.innerHTML = `<span class="label">${group}</span><span class="value">${value.toFixed(2)}</span>`;
+        const bar = document.createElement("div");
+        bar.className = "bar";
+        const fill = document.createElement("span");
+        fill.style.width = `${Math.max(0, Math.min(1, value)) * 100}%`;
+        fill.style.background = groupColors[group];
+        bar.appendChild(fill);
+        row.appendChild(label);
+        row.appendChild(bar);
+        container.appendChild(row);
+      });
+    }
+
+    function updateAblations() {
+      const container = document.getElementById("ablationActions");
+      container.innerHTML = "";
+      Object.entries(trace.condition_actions).forEach(([condition, outcome]) => {
+        const row = document.createElement("div");
+        row.className = "action-row";
+        row.innerHTML = `<span>${condition}</span><span class="value">${outcome.action} / ${outcome.reward.toFixed(1)}</span>`;
+        container.appendChild(row);
+      });
+    }
+
+    function updateVerdicts() {
+      const container = document.getElementById("verdicts");
+      container.innerHTML = "";
+      if (!results || !results.verdict) return;
+      results.verdict.forEach((row) => {
+        const node = document.createElement("div");
+        node.className = "verdict-row";
+        const dot = row.supports_learned_integration_precursor ? "#78d98b" : "#ff766f";
+        node.innerHTML = `<span class="dot" style="background:${dot}"></span><span>${row.scenario_name}</span><span class="pill">${row.recurrent_gain_over_frame.toFixed(1)}</span>`;
+        container.appendChild(node);
+      });
+    }
+
+    function updatePanel() {
+      if (!trace || !trace.frames.length) return;
+      const frame = trace.frames[frameIndex];
+      document.getElementById("subtitle").textContent = trace.scenario.name;
+      document.getElementById("tick").textContent = String(frame.tick);
+      document.getElementById("topAction").textContent = frame.top_action;
+      document.getElementById("targetAction").textContent = frame.target_action;
+      document.getElementById("confidence").textContent = frame.confidence.toFixed(2);
+      document.getElementById("hiddenNorm").textContent = frame.hidden_norm.toFixed(2);
+      scrubber.value = String(frameIndex);
+      updateFeatureBars(frame);
+      draw();
+    }
+
+    function tick() {
+      if (playing && trace && trace.frames.length) {
+        frameIndex = (frameIndex + 1) % trace.frames.length;
+        updatePanel();
+      }
+      window.setTimeout(tick, 850);
+    }
+
+    scrubber.addEventListener("input", () => {
+      frameIndex = Number(scrubber.value);
+      updatePanel();
+    });
+
+    playButton.addEventListener("click", () => {
+      playing = !playing;
+      playButton.textContent = playing ? "Pause" : "Play";
+    });
+
+    window.addEventListener("resize", resize);
+
+    function hydrate(traceData, resultData) {
+      trace = traceData;
+      results = resultData;
+      scrubber.max = String(Math.max(0, trace.frames.length - 1));
+      updateAblations();
+      updateVerdicts();
+      resize();
+      updatePanel();
+      tick();
+    }
+
+    function loadJson(path) {
+      return fetch(path).then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        return response.json();
+      });
+    }
+
+    Promise.all([
+      loadJson("../artifacts/ssrm_3d_learned_integration_trace.json"),
+      loadJson("../artifacts/ssrm_3d_learned_integration_results.json"),
+    ]).then(([traceData, resultData]) => {
+      hydrate(traceData, resultData);
+    }).catch((error) => {
+      if (window.SSRM_3D_LEARNED_INTEGRATION_TRACE && window.SSRM_3D_LEARNED_INTEGRATION_RESULTS) {
+        hydrate(window.SSRM_3D_LEARNED_INTEGRATION_TRACE, window.SSRM_3D_LEARNED_INTEGRATION_RESULTS);
+        return;
+      }
+      document.getElementById("subtitle").textContent =
+        `Could not load trace. Run \`python3 -m http.server 8765\` from the repo root and open /visualizations/ssrm_3d_learned_integration.html. Error: ${error.message}`;
+    });
+  </script>
+</body>
+</html>

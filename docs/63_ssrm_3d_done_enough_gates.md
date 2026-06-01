@@ -51,9 +51,11 @@ Pass condition:
 
 Current status:
 
-Partially passed by [report 62](62_ssrm_3d_learned_controller_report.md).
+Partially passed by [report 62](62_ssrm_3d_learned_controller_report.md) and extended by [report 69](69_ssrm_3d_learned_integration_controller_report.md).
 
 The SSRM-3D learned-controller precursor trains recurrent controllers without self labels. In stages 1-6, recurrent controllers beat frame-only controllers by 50.120 to 123.950 reward points and carry decodable self-state. Stage 0 remains a clean low-pressure control.
+
+The learned-integration precursor trains a recurrent controller from reward-derived packet traces. It rejects extra state in visible control and carries early local and integrated pressure evidence in the seeded canonical run, but scenario identity and feature-group structure are supplied.
 
 Remaining weakness:
 
@@ -75,9 +77,11 @@ Pass condition:
 
 Current status:
 
-Partially passed by [report 65](65_ssrm_3d_tool_making_report.md).
+Partially passed by [report 65](65_ssrm_3d_tool_making_report.md) and given a learned-controller bridge by [report 69](69_ssrm_3d_learned_integration_controller_report.md).
 
 The SSRM-3D tool-making precursor gives the world marker, beacon, alarm, and cache affordances. Return selection rejects tools in the visible-resource control, selects tools under hidden-route, degraded-sensor, and interruption-recovery pressure, and loses most of the gain when tool access is ablated.
+
+The learned-integration precursor adds that early tool-route evidence can be carried by recurrent policy state; frame-only control falls behind and tool-channel ablation removes the learned advantage.
 
 Remaining weakness:
 
@@ -105,11 +109,13 @@ Pass condition:
 
 Current status:
 
-Partially passed by [report 66](66_ssrm_3d_social_pressure_report.md) and extended by [report 67](67_ssrm_3d_social_ecology_report.md).
+Partially passed by [report 66](66_ssrm_3d_social_pressure_report.md), extended by [report 67](67_ssrm_3d_social_ecology_report.md), and given a learned-controller bridge by [report 69](69_ssrm_3d_learned_integration_controller_report.md).
 
 The SSRM-3D social-pressure precursor gives other agents persistent identities, resource needs, trust toward the tested agent, and helper, trader, opportunist, and deceiver policies. Return selection rejects social machinery in the visible-resource control, selects social identity policies under cooperative repair, opportunist vulnerability, deceptive-route, and shared-tool pressure, and loses the advantage when identity memory, social self-state, or shared-tool access is ablated.
 
 The SSRM-3D social-ecology precursor makes communication costly. Return selection rejects communication in the visible solo control, selects warning signals when route information beats rediscovery, selects names when persistent social history matters, selects gossip when absent-agent information improves future choices, and selects check-ins when low-cost contact maintains repair, trust, shared-tool access, and future options.
+
+The learned-integration precursor adds that early helper/deceiver identity evidence can be carried by recurrent policy state; social-channel ablation removes the learned social-repair advantage.
 
 Remaining weakness:
 
@@ -152,6 +158,8 @@ Partially passed but incomplete.
 Existing evidence includes self-state ablation in SSRM-3D, learned observer self-subspace ablation, and weak learned-controller self-edit probes. The ablation suite is not complete because attention mixing, continuity memory, LLM stream, and tool-building access are not yet independently removed in the embodied learned-control setting. The modular LLM architecture report defines the expected no-LLM, direct-motor LLM, full-world LLM, and corrupted-packet ablation patterns.
 
 [Report 68](68_ssrm_3d_agent_continuity_report.md) adds a continuity-record precursor: model-only copies, incompatible memory transplants, social-memory resets, commitment resets, tool resets, and ambiguous forks fail in specific restore/fork regimes. That strengthens the continuity-memory side of Gate 4, but it is still not the learned-controller ablation suite required for a full pass.
+
+[Report 69](69_ssrm_3d_learned_integration_controller_report.md) adds a learned packet-level ablation bridge: continuity-channel ablation damages the local restore row, attention-channel ablation damages integrated gate pressure, and tool/social ablations remain pressure-specific. It also records a failure: continuity-channel ablation does not damage the integrated gate-pressure row. It still does not replace the full embodied learned-controller ablation suite.
 
 Failure interpretation:
 
@@ -196,14 +204,14 @@ This belongs after the basic four gates are in place, or as a supporting gate-4 
 
 ## Current Summary
 
-Gate 1 has a useful learned-control precursor.
+Gate 1 has useful learned-control precursors.
 
-Gate 2 has a partial externalized-cognition precursor.
+Gate 2 has a partial externalized-cognition precursor and a learned tool-memory bridge.
 
-Gate 3 has partial social-pressure and costly-communication precursors.
+Gate 3 has partial social-pressure and costly-communication precursors and a learned social-memory bridge.
 
-Gate 4 has a continuity-record precursor, but the ablation suite is incomplete.
+Gate 4 has continuity-record and learned continuity/attention precursors, but the ablation suite is incomplete.
 
-The strongest next experiment is learned tool, social, and continuity discovery inside the SSRM-3D controller, then a richer repeated-interaction society where tools can be shared, trusted, stolen, or sabotaged.
+The strongest next experiment is moving learned tool, social, and continuity integration into the full SSRM-3D controller with actual construction, repeated interaction, restore/fork events, and richer societies.
 
 The next stronger social ecology should move costly communication into learned controllers. Signals, names, promises, gossip, play, humour, and bonding should not be directly rewarded; they should survive only when they preserve future options, reduce uncertainty, protect commitments, or improve cooperation under social memory.

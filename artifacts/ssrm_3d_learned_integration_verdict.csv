@@ -1,0 +1,6 @@
+scenario,scenario_name,expected_pressure,frame_reward,recurrent_reward,recurrent_gain_over_frame,tool_ablation_loss,social_ablation_loss,continuity_ablation_loss,attention_ablation_loss,recurrent_action_accuracy,supports_learned_integration_precursor,verdict
+0,visible_resource_control,none,112.0,112.0,0.0,0.0,0.0,0.0,0.0,1.0,True,visible_control_rejects_extra_state
+1,learned_tool_route,tool,79.21428571428571,112.0,32.78571428571429,38.57142857142857,0.0,0.0,0.0,1.0,True,learned_policy_state_uses_external_tool_memory
+2,learned_social_repair,social,82.28571428571429,112.0,29.714285714285708,0.0,90.0,0.0,0.0,1.0,True,learned_policy_state_uses_social_identity_memory
+3,learned_continuity_restore,continuity,86.31428571428572,112.0,25.685714285714283,0.0,0.0,90.0,0.0,1.0,True,learned_policy_state_uses_continuity_memory
+4,integrated_gate_pressure,tool+social+continuity+attention,71.97142857142858,128.0,56.028571428571425,18.285714285714292,10.57142857142857,37.528571428571425,50.21428571428571,1.0,True,learned_policy_state_integrates_gate_pressures

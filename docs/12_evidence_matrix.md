@@ -51,6 +51,7 @@ This file links the research claims to current evidence, counterevidence, and ne
 | SSRM-3D social pressure | Persistent other-agent memory, trust, deception, and shared-tool pressure | Return selection rejects social machinery in visible control, selects social identity policies under cooperative repair, opportunist vulnerability, deceptive-route, and shared-tool pressure, and loses the gain under identity, self-state, or tool ablation. | Candidate social-control policies and role agents are supplied; not yet learned-controller social discovery or open-ended communication. |
 | SSRM-3D social ecology | Costly communication under long-run social memory | Return selection rejects communication in the visible solo control, selects warning signals, names, gossip, and trust-maintenance check-ins only when they preserve options, and loses the gain under targeted communication ablations. | Candidate communication policies are supplied; not learned protocol emergence, language, emotion, or open-ended society. |
 | SSRM-3D agent continuity | Restore, transplant, rollback, and fork pressure | Full AgentContinuityRecord preserves control, while model-only copies, incompatible memory transplants, social resets, commitment resets, tool resets, and ambiguous forks fail in specific regimes. | Explicit continuity-record components and restore conditions are supplied; not yet learned-controller continuity serialization or open-ended identity repair. |
+| SSRM-3D learned integration controller | Designed tool, social, continuity, and attention packet channels inside learned policy state | A recurrent controller trained from reward-derived action choices beats frame-only control in local and integrated rows, with matching ablation losses in the seeded canonical run. | Scenario identity, packet features, and feature groups are hand designed; no multi-seed randomized-pressure test yet. |
 | Learned bottleneck discovery | Self labels removed from structure selection | Unlabeled model selection chooses shared bottleneck in both self and world reuse, local hidden variables in independent-hidden, and no hidden state in irrelevant control. | Candidate structures and causal interventions are still hand supplied. |
 | Sequence latent transfer | Held-out transfer from raw outcomes | Early calibration outcomes transfer to held-out contexts under shared agent-state and shared world-state, but not independent-hidden or irrelevant controls. | Simple pairwise-agreement learner; not a rich recurrent neural policy. |
 | Heterogeneous attractor precursor | Cross-learner convergence | Five learner families converge on agent-bounded latents in self-shared streams, external latents in world-shared streams, no shared boundary in independent-hidden streams, and no hidden state in irrelevant streams. | Still a compact toy environment; learners are simple, not rich embodied RL systems. |
@@ -70,10 +71,10 @@ These gates are not another positive result. They are the current stopping rule 
 
 | Gate | Current status | What would count next |
 |---|---|---|
-| Learned control | Partial pass. Report 62 shows recurrent controllers trained without self labels improve control under embodied pressure and carry decodable self-state. | Online-return or model-based controllers with stronger causal policy-state edits. |
-| Tool-making or externalized cognition | Partial pass. Return-selected SSRM-3D policies discover markers/beacons/alarms under hidden-route, degraded-sensor, and interruption pressure, while visible and cache-only controls reject tools. | Move tool discovery into the learned controller and test richer tools under social pressure. |
-| Real social pressure | Partial pass. Return-selected SSRM-3D policies use identity memory, reputation, vulnerability, shared-tool trust, and costly communication under the pressures where those mechanisms preserve future options. | Move social discovery into learned controllers and add learned repeated interaction, communication, deception, and resource conflict. |
-| Targeted ablation | Partial. Existing ablations cover self-state, learned observer self-subspace, weak learned-controller edits, tool access, communication components, and AgentContinuityRecord component resets. | Separate removals of self-state, learned self-subspace, attention mixing, continuity memory, LLM reasoning stream, and tool-building access produce specific pressure-dependent failures in the learned-control setting. |
+| Learned control | Partial pass. Report 62 shows recurrent controllers trained without self labels improve embodied control, and report 69 shows a designed packet bridge rather than stable cross-gate integration. | Online-return or model-based controllers with stronger causal policy-state edits in the full SSRM-3D world. |
+| Tool-making or externalized cognition | Partial pass. Return-selected SSRM-3D policies discover markers/beacons/alarms under hidden-route, degraded-sensor, and interruption pressure; report 69 adds a learned tool-memory bridge. | Move actual tool construction into the full learned controller and test richer tools under social pressure. |
+| Real social pressure | Partial pass. Return-selected SSRM-3D policies use identity memory, reputation, vulnerability, shared-tool trust, and costly communication; report 69 adds a learned social-memory bridge. | Move repeated social interaction, communication, deception, and resource conflict into learned controllers. |
+| Targeted ablation | Partial. Existing ablations cover self-state, learned observer self-subspace, weak learned-controller edits, tool access, communication components, AgentContinuityRecord component resets, and local learned tool/social/continuity packet channels. | Separate removals of self-state, learned self-subspace, attention mixing, continuity memory, LLM reasoning stream, and tool-building access produce specific pressure-dependent failures in the full embodied learned-control setting. |
 
 ## Modular LLM Architecture Boundary
 
@@ -194,6 +195,7 @@ SSRM-3D tool-making/externalized-cognition pressure
 SSRM-3D social-pressure identity and reputation pressure
 SSRM-3D costly-communication social ecology
 SSRM-3D agent-continuity restore/fork pressure
+SSRM-3D learned-integration designed packet bridge
 learned bottleneck plus causal boundary test
 sequence latent transfer to held-out contexts
 heterogeneous convergence across learner families with causal boundary separation
@@ -218,6 +220,7 @@ counterfactual latent editing
 | Hidden energy/damage changes future options | Long-horizon control self | It affects viability and future action space. |
 | Owner/epoch metadata filters commitments after interruption | Identity-like self | It indexes the same continuing process through time. |
 | Full continuity record preserves restore/fork control | Identity-like control record | It binds body, model, memory, social history, commitments, event log, attention, hidden state, tools, goals, and branch identity as one continuing process. |
+| Recurrent policy state carries tool/social/continuity cues | Learned cross-gate integration | It shows that early evidence can become action-relevant policy state rather than a separate candidate policy or explicit restore record. |
 | Same agent-state variable transfers across contexts | Reusable self abstraction | It compresses several control problems into one continuing-system estimate. |
 | Reuse advantage grows with agent-state context count | Attractor pressure gradient | It shows increasing value as one agent-state estimate explains more future control. |
 | Horizon advantage grows with persistent agent-state | Temporal attractor pressure gradient | It shows increasing value as one agent-state estimate explains more future time steps. |

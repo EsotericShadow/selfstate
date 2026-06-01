@@ -1308,7 +1308,7 @@ Current status:
 - gate 1 has a useful learned-controller precursor, but direct self-edit action effects remain weak;
 - gate 2 has a partial return-selected externalized-cognition precursor;
 - gate 3 has partial return-selected social-pressure and costly-communication precursors;
-- gate 4 has self-state, learned-observer, tool-access, communication, and continuity-record precursors, but lacks attention-mixing, continuity-memory, LLM-stream, and tool-access ablations in the learned-control setting.
+- gate 4 has self-state, learned-observer, tool-access, communication, continuity-record, and packet-level learned-integration precursors, but lacks full-world attention-mixing, continuity-memory, LLM-stream, and tool-access ablations in the embodied learned-control setting.
 
 The proposed attention-buffer capacity sweep belongs after those gates start to exist, or as a targeted gate-4 study of attention mixing. It should be treated as an internal bandwidth hypothesis, not as evidence for consciousness or a special 12-dimensional world.
 
@@ -1422,6 +1422,39 @@ Implemented version:
 - [JSON results](../artifacts/ssrm_3d_agent_continuity_results.json)
 - [trace JS fallback](../artifacts/ssrm_3d_agent_continuity_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_agent_continuity_results.js)
+
+## Supplemental SSRM-3D Learned Integration Controller
+
+Run a learned-controller integration precursor in SSRM-3D.
+
+The previous tool, social, communication, and continuity experiments mostly used return-selected candidate policies or explicit restore records. This experiment trains a frame-only policy and a recurrent policy from reward-derived action choices over compressed state-packet traces, then ablates tool, social, continuity, and attention feature groups after training.
+
+Current expected result:
+
+- visible-resource control should not need recurrent memory or special channels;
+- tool-route pressure should favor recurrent policy state and fail under tool-channel ablation;
+- social-repair pressure should fail under social-channel ablation;
+- continuity-restore pressure should fail under continuity-channel ablation;
+- integrated gate pressure should fail under attention-channel ablation and show smaller losses under tool/social/continuity ablations.
+
+Canonical result:
+
+- local tool, social, continuity, and integrated rows support a designed packet bridge in the seeded canonical run;
+- the result remains provisional because scenario identity and feature groups are supplied;
+- the next version should remove scenario identity leakage, randomize pressure combinations, run multiple seeds, and require wider margins.
+
+Implemented version:
+
+- [SSRM-3D learned-integration script](../experiments/ssrm_3d_learned_integration_controller.py)
+- [SSRM-3D learned-integration report](69_ssrm_3d_learned_integration_controller_report.md)
+- [learned-integration visualization](../visualizations/ssrm_3d_learned_integration.html)
+- [evaluation CSV](../artifacts/ssrm_3d_learned_integration_eval.csv)
+- [summary CSV](../artifacts/ssrm_3d_learned_integration_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_learned_integration_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_learned_integration_trace.json)
+- [JSON results](../artifacts/ssrm_3d_learned_integration_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_learned_integration_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_learned_integration_results.js)
 
 ## Modular LLM Architecture Boundary
 

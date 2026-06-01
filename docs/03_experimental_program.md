@@ -1570,6 +1570,34 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_illness_sanitation_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_illness_sanitation_results.js)
 
+## SSRM-3D Weather/Exposure Pressure
+
+Run the fourth persistent-pressure layer from report 74.
+
+This experiment treats cold, heat, rain, wind, drought, shelter, fire/light, water planning, and continuity as abstract control variables. It asks whether external conditions become self-relevant only when they change the agent's own future capability.
+
+Canonical result:
+
+- mild clear control rejects weather machinery;
+- cold/rain exposure fails under no-weather-state, no-exposure-state, no-shelter-memory, and no-fire-tools ablations;
+- heat/drought pressure fails under no-water-planning and no-weather-state ablations;
+- forecast storm pressure fails under no-weather-state, no-shelter-memory, no-fire-tools, and reactive-weather-only ablations;
+- restore pressure fails under no-continuity, no-weather-state, no-shelter-memory, and no-fire-tools ablations.
+
+Implemented version:
+
+- [SSRM-3D weather/exposure script](../experiments/ssrm_3d_weather_exposure.py)
+- [SSRM-3D weather/exposure report](78_ssrm_3d_weather_exposure_report.md)
+- [weather/exposure visualization](../visualizations/ssrm_3d_weather_exposure.html)
+- [evaluation CSV](../artifacts/ssrm_3d_weather_exposure_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_weather_exposure_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_weather_exposure_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_weather_exposure_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_weather_exposure_trace.json)
+- [JSON results](../artifacts/ssrm_3d_weather_exposure_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_weather_exposure_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_weather_exposure_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

@@ -1,0 +1,6 @@
+scenario,scenario_name,selected_policy,selected_uses_weather_state,selected_uses_exposure_state,selected_uses_shelter_memory,selected_uses_fire_tools,selected_uses_water_planning,selected_uses_continuity,train_reward,no_weather_train_reward,train_gain_over_no_weather
+0,mild_clear_control,no_weather_baseline,False,False,False,False,False,False,230.79504538194558,230.54574860399856,0.24929677794702343
+1,cold_rain_exposure,continuity_weather_planner,True,True,True,True,True,True,179.11232899748973,-213.78582410841838,392.89815310590814
+2,heat_drought_hydration,continuity_weather_planner,True,True,True,True,True,True,92.6581578181581,-152.98510273272183,245.64326055087992
+3,storm_shelter_fire,storm_fire_planner,True,True,True,True,False,True,203.70525861094816,70.93766095685551,132.76759765409264
+4,restore_forecast_continuity,continuity_weather_planner,True,True,True,True,True,True,198.020655634138,-131.3023083412536,329.3229639753916

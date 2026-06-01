@@ -95,6 +95,8 @@ The sleep-rest precursor adds a second tool reason: alarms matter when the agent
 
 The illness/sanitation precursor adds a third tool reason: clean-water tools matter when hydration and pathogen exposure conflict. This remains a supplied affordance, but the ablation is specific to contaminated-resource regimes.
 
+The weather/exposure precursor adds a fourth tool reason: fire/light tools matter when shelter alone does not preserve capability under cold, rain, wind, and storm darkness. This remains a supplied affordance, but the ablation is specific to weather-pressure regimes.
+
 Remaining weakness:
 
 The successful policies are return-selected from candidate affordance policies, not learned end-to-end by the SSRM-3D controller. The cache-only affordance remains a limit control rather than a success. This means Gate 2 has a useful externalized-cognition precursor, but not a full pass.

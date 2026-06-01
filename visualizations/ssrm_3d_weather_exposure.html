@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Weather/Exposure Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0f1214;
+      --panel: #171b1d;
+      --line: rgba(236, 241, 244, 0.15);
+      --text: #eef2f4;
+      --muted: #a9b2b8;
+      --cold: #77b8ff;
+      --rain: #8da1b7;
+      --heat: #ff9f68;
+      --safe: #88d3bc;
+      --fire: #ffc65d;
+      --risk: #ff716d;
+      --water: #59c4d8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 430px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #0a0f12;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .event,
+    .outcome-row,
+    .verdict-row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: #20262a;
+      height: 32px;
+      padding: 0 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      padding: 8px;
+      min-height: 58px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 18px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 98px minmax(0, 1fr) 48px;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .bar {
+      height: 10px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      width: 0;
+    }
+
+    .event {
+      border-left: 3px solid var(--line);
+      padding-left: 8px;
+    }
+
+    .outcome-row,
+    .verdict-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      border-top: 1px solid rgba(236, 241, 244, 0.08);
+      padding-top: 6px;
+    }
+
+    .verdict-row {
+      grid-template-columns: 10px minmax(0, 1fr) auto;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      padding: 2px 6px;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .value {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    @media (max-width: 940px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 58vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Weather/Exposure</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+
+    <div class="controls">
+      <button id="play" type="button">Pause</button>
+      <input id="scrub" type="range" min="0" max="0" value="0">
+    </div>
+
+    <div class="metrics">
+      <div class="metric"><span>tick</span><strong id="tick">0</strong></div>
+      <div class="metric"><span>action</span><strong id="action">-</strong></div>
+      <div class="metric"><span>temperature</span><strong id="temperature">-</strong></div>
+      <div class="metric"><span>weather risk</span><strong id="risk">-</strong></div>
+    </div>
+
+    <div class="section" id="bars"></div>
+
+    <div class="section">
+      <h2>Trace Event</h2>
+      <p class="event" id="event">Waiting for trace.</p>
+    </div>
+
+    <div class="section">
+      <h2>Ablation Outcomes</h2>
+      <div id="outcomes"></div>
+    </div>
+
+    <div class="section">
+      <h2>Verdicts</h2>
+      <div id="verdicts"></div>
+    </div>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_weather_exposure_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_weather_exposure_results.js"></script>
+  <script>
+    const state = {
+      trace: window.SSRM_3D_WEATHER_EXPOSURE_TRACE || null,
+      results: window.SSRM_3D_WEATHER_EXPOSURE_RESULTS || null,
+      frameIndex: 0,
+      playing: true,
+      lastStep: 0,
+    };
+
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const playButton = document.getElementById("play");
+    const scrub = document.getElementById("scrub");
+    const bars = document.getElementById("bars");
+
+    const barDefs = [
+      ["hydration", "Hydration", "var(--water)"],
+      ["exposure_debt", "Exposure", "var(--risk)"],
+      ["illness_risk", "Illness risk", "var(--heat)"],
+      ["shelter_quality", "Shelter", "var(--safe)"],
+      ["light_level", "Light", "var(--fire)"],
+    ];
+
+    function fallbackLoad() {
+      const tracePromise = state.trace ? Promise.resolve(state.trace) : fetch("../artifacts/ssrm_3d_weather_exposure_trace.json").then((response) => response.json());
+      const resultPromise = state.results ? Promise.resolve(state.results) : fetch("../artifacts/ssrm_3d_weather_exposure_results.json").then((response) => response.json());
+      return Promise.all([tracePromise, resultPromise]).then(([trace, results]) => {
+        state.trace = trace;
+        state.results = results;
+      });
+    }
+
+    function cssVar(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+
+    function resizeCanvas() {
+      const ratio = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.max(1, Math.floor(rect.width * ratio));
+      canvas.height = Math.max(1, Math.floor(rect.height * ratio));
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+
+    function setupBars() {
+      bars.innerHTML = "";
+      for (const [key, label, color] of barDefs) {
+        const row = document.createElement("div");
+        row.className = "row";
+        row.innerHTML = `<span>${label}</span><div class="bar"><span id="bar-${key}"></span></div><span class="value" id="value-${key}">0.00</span>`;
+        row.querySelector(".bar > span").style.background = color;
+        bars.appendChild(row);
+      }
+    }
+
+    function setBar(key, value) {
+      const clamped = Math.max(0, Math.min(1, Number(value) || 0));
+      document.getElementById(`bar-${key}`).style.width = `${clamped * 100}%`;
+      document.getElementById(`value-${key}`).textContent = clamped.toFixed(2);
+    }
+
+    function drawRain(width, height, frame) {
+      const count = Math.floor(20 + frame.rain * 120);
+      ctx.strokeStyle = `rgba(174, 201, 226, ${0.12 + frame.rain * 0.40})`;
+      ctx.lineWidth = 1;
+      for (let i = 0; i < count; i += 1) {
+        const x = (i * 73 + frame.tick * 11) % width;
+        const y = (i * 41 + frame.tick * 19) % height;
+        const drift = 10 + frame.wind * 18;
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x - drift, y + 22);
+        ctx.stroke();
+      }
+    }
+
+    function drawScene(frame) {
+      const rect = canvas.getBoundingClientRect();
+      const width = rect.width;
+      const height = rect.height;
+      const cold = Math.max(0, (10 - frame.temperature_c) / 22);
+      const heat = Math.max(0, (frame.temperature_c - 26) / 18);
+      const storm = frame.storm_active ? 1 : 0;
+      const skyTop = heat > cold ? "#322018" : "#111b24";
+      const skyBottom = storm ? "#15191e" : "#182428";
+
+      ctx.clearRect(0, 0, width, height);
+      const gradient = ctx.createLinearGradient(0, 0, 0, height);
+      gradient.addColorStop(0, skyTop);
+      gradient.addColorStop(1, skyBottom);
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, width, height);
+
+      drawRain(width, height, frame);
+
+      ctx.fillStyle = "#1b2a24";
+      ctx.fillRect(0, height * 0.68, width, height * 0.32);
+
+      const centerX = width * 0.50;
+      const groundY = height * 0.72;
+      const shelterX = width * 0.68;
+      const shelterY = groundY - 74;
+      const waterX = width * 0.22;
+      const agentX = frame.at_shelter ? shelterX - 12 : width * 0.34 + Math.min(1, frame.tick / 80) * 120;
+      const agentY = groundY - 28;
+
+      ctx.strokeStyle = "rgba(238, 242, 244, 0.12)";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(width * 0.18, groundY + 24);
+      ctx.bezierCurveTo(width * 0.38, groundY - 20, width * 0.55, groundY + 8, width * 0.78, groundY - 4);
+      ctx.stroke();
+
+      ctx.fillStyle = cssVar("--water");
+      ctx.beginPath();
+      ctx.ellipse(waterX, groundY + 26, 44, 13, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = "#263337";
+      ctx.fillRect(shelterX - 56, shelterY + 32, 112, 74);
+      ctx.fillStyle = cssVar("--safe");
+      ctx.globalAlpha = 0.35 + frame.shelter_quality * 0.45;
+      ctx.fillRect(shelterX - 50, shelterY + 38, 100, 62);
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = "#394348";
+      ctx.beginPath();
+      ctx.moveTo(shelterX - 66, shelterY + 36);
+      ctx.lineTo(shelterX, shelterY - 16);
+      ctx.lineTo(shelterX + 66, shelterY + 36);
+      ctx.closePath();
+      ctx.fill();
+
+      if (frame.fire_ready) {
+        ctx.fillStyle = cssVar("--fire");
+        ctx.beginPath();
+        ctx.arc(shelterX + 34, shelterY + 88, 16 + Math.sin(frame.tick * 0.2) * 2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = "rgba(255, 198, 93, 0.24)";
+        ctx.lineWidth = 24;
+        ctx.beginPath();
+        ctx.arc(shelterX + 34, shelterY + 88, 34, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      ctx.strokeStyle = cssVar("--risk");
+      ctx.globalAlpha = 0.18 + frame.exposure_debt * 0.40;
+      ctx.lineWidth = 20 + frame.exposure_debt * 28;
+      ctx.beginPath();
+      ctx.arc(agentX, agentY, 28, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      ctx.fillStyle = cssVar("--text");
+      ctx.beginPath();
+      ctx.arc(agentX, agentY, 13, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = frame.action === "collect_water" ? cssVar("--water") : cssVar("--risk");
+      ctx.beginPath();
+      ctx.arc(agentX + 5, agentY - 4, 4, 0, Math.PI * 2);
+      ctx.fill();
+
+      const riskWidth = width * 0.42 * frame.weather_risk;
+      ctx.fillStyle = frame.temperature_c > 30 ? cssVar("--heat") : cssVar("--cold");
+      ctx.globalAlpha = 0.22;
+      ctx.fillRect(centerX - riskWidth / 2, 24, riskWidth, 18);
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = cssVar("--muted");
+      ctx.font = "12px Inter, sans-serif";
+      ctx.fillText(frame.storm_active ? "storm window" : "weather window", centerX - 46, 20);
+    }
+
+    function renderOutcomes() {
+      const container = document.getElementById("outcomes");
+      const outcomes = state.trace.condition_outcomes || {};
+      const rows = Object.entries(outcomes)
+        .sort((a, b) => (b[1].mean_reward || 0) - (a[1].mean_reward || 0))
+        .slice(0, 7);
+      container.innerHTML = "";
+      for (const [name, row] of rows) {
+        const div = document.createElement("div");
+        div.className = "outcome-row";
+        div.innerHTML = `<span>${name}</span><span class="value">${Number(row.mean_reward).toFixed(1)}</span>`;
+        container.appendChild(div);
+      }
+    }
+
+    function renderVerdicts() {
+      const container = document.getElementById("verdicts");
+      container.innerHTML = "";
+      for (const row of state.results.verdict || []) {
+        const div = document.createElement("div");
+        div.className = "verdict-row";
+        const ok = row.supports_weather_exposure_precursor;
+        div.innerHTML = `<span class="dot" style="background:${ok ? "var(--safe)" : "var(--risk)"}"></span><span>${row.scenario_name}</span><span class="pill">${ok ? "pass" : "fail"}</span>`;
+        container.appendChild(div);
+      }
+    }
+
+    function renderFrame() {
+      if (!state.trace || !state.trace.frames.length) {
+        return;
+      }
+      const frame = state.trace.frames[state.frameIndex];
+      scrub.value = String(state.frameIndex);
+      document.getElementById("tick").textContent = frame.tick;
+      document.getElementById("action").textContent = frame.action.replaceAll("_", " ");
+      document.getElementById("temperature").textContent = `${Number(frame.temperature_c).toFixed(1)} C`;
+      document.getElementById("risk").textContent = Number(frame.weather_risk).toFixed(2);
+      setBar("hydration", frame.hydration);
+      setBar("exposure_debt", frame.exposure_debt);
+      setBar("illness_risk", frame.illness_risk);
+      setBar("shelter_quality", frame.shelter_quality);
+      setBar("light_level", frame.light_level);
+      const stormText = frame.storm_active ? "storm active" : "storm inactive";
+      document.getElementById("event").textContent = `${stormText}; action=${frame.action}; exposed_ticks=${frame.exposed_ticks}; continuity_resets=${frame.continuity_resets}.`;
+      drawScene(frame);
+    }
+
+    function step(timestamp) {
+      if (state.playing && timestamp - state.lastStep > 170) {
+        state.frameIndex = (state.frameIndex + 1) % state.trace.frames.length;
+        state.lastStep = timestamp;
+        renderFrame();
+      }
+      requestAnimationFrame(step);
+    }
+
+    playButton.addEventListener("click", () => {
+      state.playing = !state.playing;
+      playButton.textContent = state.playing ? "Pause" : "Play";
+    });
+
+    scrub.addEventListener("input", () => {
+      state.playing = false;
+      playButton.textContent = "Play";
+      state.frameIndex = Number(scrub.value);
+      renderFrame();
+    });
+
+    window.addEventListener("resize", () => {
+      resizeCanvas();
+      renderFrame();
+    });
+
+    fallbackLoad()
+      .then(() => {
+        document.getElementById("subtitle").textContent = `${state.trace.scenario.name} / ${state.trace.policy.name}`;
+        scrub.max = String(state.trace.frames.length - 1);
+        setupBars();
+        renderOutcomes();
+        renderVerdicts();
+        resizeCanvas();
+        renderFrame();
+        requestAnimationFrame(step);
+      })
+      .catch((error) => {
+        document.getElementById("subtitle").textContent = "Could not load trace.";
+        document.getElementById("event").textContent = String(error);
+      });
+  </script>
+</body>
+</html>

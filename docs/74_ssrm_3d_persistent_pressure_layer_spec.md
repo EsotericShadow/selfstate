@@ -89,7 +89,7 @@ Priority order:
 1. Vision and audio partial observability. Implemented as the structured-perception precursor in [report 75](75_ssrm_3d_structured_perception_report.md).
 2. Day/night and sleep/rest. Implemented as the day/night sleep-rest precursor in [report 76](76_ssrm_3d_day_night_sleep_report.md).
 3. Hunger/thirst plus illness/sanitation. Implemented as the illness/sanitation precursor in [report 77](77_ssrm_3d_illness_sanitation_report.md).
-4. Weather/exposure.
+4. Weather/exposure. Implemented as the weather/exposure precursor in [report 78](78_ssrm_3d_weather_exposure_report.md).
 5. Tool/shelter degradation.
 6. Social trust/contracts.
 7. Predator/threat agents.

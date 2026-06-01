@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Structured Perception Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d1212;
+      --panel: rgba(18, 22, 23, 0.96);
+      --line: rgba(244, 247, 241, 0.16);
+      --text: #f4f7f1;
+      --muted: #aab4b1;
+      --vision: #70b8ff;
+      --audio: #f3c852;
+      --memory: #80d99a;
+      --tool: #cf9dff;
+      --bad: #ff766f;
+      --good: #78d98b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 430px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #0b1212;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.14;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .label,
+    .event,
+    .verdict-row,
+    .outcome-row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .row,
+    .outcome-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+    }
+
+    .value {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .event-list {
+      display: grid;
+      gap: 6px;
+    }
+
+    .event {
+      border: 1px solid var(--line);
+      padding: 7px;
+      display: grid;
+      gap: 2px;
+    }
+
+    .bar {
+      height: 8px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 0%;
+    }
+
+    .verdict-row {
+      display: grid;
+      grid-template-columns: 16px minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      color: var(--text);
+      padding: 2px 6px;
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: #1b2324;
+      color: var(--text);
+      padding: 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 62vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Structured Perception Trace</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+    <div class="section">
+      <div class="row"><span class="label">tick</span><span class="value" id="tick">0</span></div>
+      <div class="row"><span class="label">heading</span><span class="value" id="heading">0</span></div>
+      <div class="row"><span class="label">light</span><span class="value" id="lightLevel">0.00</span></div>
+      <div class="row"><span class="label">vision quality</span><span class="value" id="visionQuality">0.00</span></div>
+      <div class="row"><span class="label">audio quality</span><span class="value" id="audioQuality">0.00</span></div>
+      <div class="row"><span class="label">visual memory reads</span><span class="value" id="visualMemory">0</span></div>
+      <div class="row"><span class="label">audio memory reads</span><span class="value" id="audioMemory">0</span></div>
+    </div>
+    <div class="section">
+      <input id="scrubber" type="range" min="0" max="0" value="0">
+      <button type="button" id="play">Pause</button>
+    </div>
+    <div class="section">
+      <h2>Signals</h2>
+      <div>
+        <div class="row"><span class="label">vision</span><span class="value" id="visionBarText">0.00</span></div>
+        <div class="bar"><span id="visionBar" style="background:var(--vision)"></span></div>
+      </div>
+      <div>
+        <div class="row"><span class="label">audio</span><span class="value" id="audioBarText">0.00</span></div>
+        <div class="bar"><span id="audioBar" style="background:var(--audio)"></span></div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Visual Events</h2>
+      <div class="event-list" id="visualEvents"></div>
+    </div>
+    <div class="section">
+      <h2>Audio Events</h2>
+      <div class="event-list" id="audioEvents"></div>
+    </div>
+    <div class="section">
+      <h2>Ablation Outcomes</h2>
+      <div id="outcomes"></div>
+    </div>
+    <div class="section">
+      <h2>Scenario Verdicts</h2>
+      <div id="verdicts"></div>
+    </div>
+    <div class="section">
+      <h2>Reading</h2>
+      <p>The agent receives structured cone-vision and spatial-audio events. The controls remove vision, audio, direction, memory, alarms, self-state adaptation, or FOV pressure.</p>
+    </div>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_structured_perception_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_structured_perception_results.js"></script>
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const scrubber = document.getElementById("scrubber");
+    const playButton = document.getElementById("play");
+    let trace = null;
+    let results = null;
+    let frameIndex = 0;
+    let playing = true;
+
+    function resize() {
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.floor(canvas.clientWidth * ratio);
+      canvas.height = Math.floor(canvas.clientHeight * ratio);
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      draw();
+    }
+
+    function polarPoint(cx, cy, radius, degrees) {
+      const angle = (degrees - 90) * Math.PI / 180;
+      return {
+        x: cx + Math.cos(angle) * radius,
+        y: cy + Math.sin(angle) * radius,
+      };
+    }
+
+    function draw() {
+      if (!trace || !trace.frames.length) return;
+      const frame = trace.frames[frameIndex];
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = "#0b1212";
+      ctx.fillRect(0, 0, w, h);
+
+      const cx = w * 0.48;
+      const cy = h * 0.50;
+      const viewRadius = Math.min(w, h) * 0.30;
+      const start = frame.fov_center - frame.fov_width / 2;
+      const end = frame.fov_center + frame.fov_width / 2;
+      const left = polarPoint(cx, cy, viewRadius, start);
+      const right = polarPoint(cx, cy, viewRadius, end);
+
+      ctx.fillStyle = `rgba(112,184,255,${0.08 + frame.vision_quality * 0.18})`;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.arc(cx, cy, viewRadius, (start - 90) * Math.PI / 180, (end - 90) * Math.PI / 180);
+      ctx.closePath();
+      ctx.fill();
+      ctx.strokeStyle = "#70b8ff";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.lineTo(left.x, left.y);
+      ctx.moveTo(cx, cy);
+      ctx.lineTo(right.x, right.y);
+      ctx.arc(cx, cy, viewRadius, (start - 90) * Math.PI / 180, (end - 90) * Math.PI / 180);
+      ctx.stroke();
+
+      ctx.strokeStyle = `rgba(243,200,82,${0.20 + frame.audio_quality * 0.30})`;
+      ctx.lineWidth = 2;
+      for (let index = 1; index <= 3; index += 1) {
+        ctx.beginPath();
+        ctx.arc(cx, cy, viewRadius * (0.25 * index), 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      ctx.fillStyle = "#f4f7f1";
+      ctx.beginPath();
+      ctx.arc(cx, cy, 10, 0, Math.PI * 2);
+      ctx.fill();
+      const headingPoint = polarPoint(cx, cy, 46, frame.heading);
+      ctx.strokeStyle = "#ffffff";
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.lineTo(headingPoint.x, headingPoint.y);
+      ctx.stroke();
+
+      frame.visual_events.forEach((event) => {
+        const point = polarPoint(cx, cy, Math.min(viewRadius, event.distance_estimate * 5), event.bearing);
+        ctx.fillStyle = "#70b8ff";
+        ctx.beginPath();
+        ctx.arc(point.x, point.y, 8, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "#f4f7f1";
+        ctx.font = "12px Inter, system-ui, sans-serif";
+        ctx.fillText(event.kind, point.x + 10, point.y + 4);
+      });
+
+      frame.audio_events.forEach((event) => {
+        const point = polarPoint(cx, cy, viewRadius * 0.84, event.direction);
+        ctx.fillStyle = "#f3c852";
+        ctx.beginPath();
+        ctx.arc(point.x, point.y, 7 + event.loudness * 5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "#f4f7f1";
+        ctx.font = "12px Inter, system-ui, sans-serif";
+        ctx.fillText(event.kind, point.x + 10, point.y + 4);
+      });
+
+      ctx.fillStyle = "rgba(244,247,241,0.92)";
+      ctx.font = "20px Inter, system-ui, sans-serif";
+      ctx.textAlign = "left";
+      ctx.fillText(trace.scenario.name, 28, 38);
+      ctx.fillStyle = "rgba(170,180,177,0.95)";
+      ctx.font = "14px Inter, system-ui, sans-serif";
+      ctx.fillText(`policy: ${trace.policy.name}`, 28, 62);
+    }
+
+    function renderEvents(containerId, events, color) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = "";
+      if (!events.length) {
+        const empty = document.createElement("div");
+        empty.className = "event";
+        empty.textContent = "none";
+        container.appendChild(empty);
+        return;
+      }
+      events.forEach((event) => {
+        const node = document.createElement("div");
+        node.className = "event";
+        const bearing = event.bearing ?? event.direction;
+        const confidence = event.confidence ?? event.loudness;
+        node.innerHTML = `<strong style="color:${color}">${event.kind}</strong><span>bearing ${bearing}; confidence ${Number(confidence).toFixed(2)}</span>`;
+        container.appendChild(node);
+      });
+    }
+
+    function updateOutcomes() {
+      const container = document.getElementById("outcomes");
+      container.innerHTML = "";
+      Object.entries(trace.condition_outcomes).forEach(([condition, outcome]) => {
+        const row = document.createElement("div");
+        row.className = "outcome-row";
+        row.innerHTML = `<span>${condition}</span><span class="value">${outcome.mean_reward.toFixed(1)}</span>`;
+        container.appendChild(row);
+      });
+    }
+
+    function updateVerdicts() {
+      const container = document.getElementById("verdicts");
+      container.innerHTML = "";
+      if (!results || !results.verdict) return;
+      results.verdict.forEach((row) => {
+        const node = document.createElement("div");
+        node.className = "verdict-row";
+        const color = row.supports_structured_perception_precursor ? "#78d98b" : "#ff766f";
+        node.innerHTML = `<span class="dot" style="background:${color}"></span><span>${row.scenario_name}</span><span class="pill">${row.perception_gain_over_no_perception.toFixed(1)}</span>`;
+        container.appendChild(node);
+      });
+    }
+
+    function updatePanel() {
+      if (!trace || !trace.frames.length) return;
+      const frame = trace.frames[frameIndex];
+      document.getElementById("subtitle").textContent = trace.scenario.pressure;
+      document.getElementById("tick").textContent = String(frame.tick);
+      document.getElementById("heading").textContent = frame.heading.toFixed(1);
+      document.getElementById("lightLevel").textContent = frame.light_level.toFixed(2);
+      document.getElementById("visionQuality").textContent = frame.vision_quality.toFixed(2);
+      document.getElementById("audioQuality").textContent = frame.audio_quality.toFixed(2);
+      document.getElementById("visualMemory").textContent = String(frame.memory_reads.visual);
+      document.getElementById("audioMemory").textContent = String(frame.memory_reads.audio);
+      document.getElementById("visionBar").style.width = `${frame.vision_quality * 100}%`;
+      document.getElementById("audioBar").style.width = `${frame.audio_quality * 100}%`;
+      document.getElementById("visionBarText").textContent = frame.vision_quality.toFixed(2);
+      document.getElementById("audioBarText").textContent = frame.audio_quality.toFixed(2);
+      renderEvents("visualEvents", frame.visual_events, "#70b8ff");
+      renderEvents("audioEvents", frame.audio_events, "#f3c852");
+      scrubber.value = String(frameIndex);
+      draw();
+    }
+
+    function tick() {
+      if (playing && trace && trace.frames.length) {
+        frameIndex = (frameIndex + 1) % trace.frames.length;
+        updatePanel();
+      }
+      window.setTimeout(tick, 850);
+    }
+
+    scrubber.addEventListener("input", () => {
+      frameIndex = Number(scrubber.value);
+      updatePanel();
+    });
+
+    playButton.addEventListener("click", () => {
+      playing = !playing;
+      playButton.textContent = playing ? "Pause" : "Play";
+    });
+
+    window.addEventListener("resize", resize);
+
+    function hydrate(traceData, resultData) {
+      trace = traceData;
+      results = resultData;
+      scrubber.max = String(Math.max(0, trace.frames.length - 1));
+      updateOutcomes();
+      updateVerdicts();
+      resize();
+      updatePanel();
+      tick();
+    }
+
+    function loadJson(path) {
+      return fetch(path).then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        return response.json();
+      });
+    }
+
+    Promise.all([
+      loadJson("../artifacts/ssrm_3d_structured_perception_trace.json"),
+      loadJson("../artifacts/ssrm_3d_structured_perception_results.json"),
+    ]).then(([traceData, resultData]) => {
+      hydrate(traceData, resultData);
+    }).catch((error) => {
+      if (window.SSRM_3D_STRUCTURED_PERCEPTION_TRACE && window.SSRM_3D_STRUCTURED_PERCEPTION_RESULTS) {
+        hydrate(window.SSRM_3D_STRUCTURED_PERCEPTION_TRACE, window.SSRM_3D_STRUCTURED_PERCEPTION_RESULTS);
+        return;
+      }
+      document.getElementById("subtitle").textContent =
+        `Could not load trace. Run \`python3 -m http.server 8765\` from the repo root and open /visualizations/ssrm_3d_structured_perception.html. Error: ${error.message}`;
+    });
+  </script>
+</body>
+</html>

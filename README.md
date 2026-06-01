@@ -76,6 +76,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Live demo MVP plan](docs/71_live_demo_mvp_plan.md): defines the smallest 3D demonstration where an agent can reject a user command for continuity-grounded reasons.
 - [Framework extraction plan](docs/72_framework_extraction_plan.md): identifies reusable primitives such as `AgentContinuityRecord`, `AttentionMixer`, `Arbiter`, `EventLog`, `WorldSnapshot`, `LLMPacketBoundary`, and `MultiRateScheduler`.
 - [SSRM-3D persistent pressure layer spec](docs/74_ssrm_3d_persistent_pressure_layer_spec.md): defines the next narrow realism layer: sleep/rest, illness, sanitation, affective control state, structured audio, cone vision, and falsifiers.
+- [SSRM-3D structured perception report](docs/75_ssrm_3d_structured_perception_report.md): tests cone/FOV vision and spatial audio as ablatable partial-observability pressure before raw pixels or waveform learning.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -620,6 +621,22 @@ This writes:
 - `artifacts/ssrm_3d_no_leak_integration_trace.js`
 - `artifacts/ssrm_3d_no_leak_integration_results.js`
 - `visualizations/ssrm_3d_no_leak_integration.html` replays the no-leak integration trace when served from the repo root.
+
+```bash
+python3 experiments/ssrm_3d_structured_perception.py --train-episodes 72 --eval-episodes 96 --seed 20260620 --candidate-count 6
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_structured_perception_eval.csv`
+- `artifacts/ssrm_3d_structured_perception_policy_selection.csv`
+- `artifacts/ssrm_3d_structured_perception_summary.csv`
+- `artifacts/ssrm_3d_structured_perception_verdict.csv`
+- `artifacts/ssrm_3d_structured_perception_trace.json`
+- `artifacts/ssrm_3d_structured_perception_results.json`
+- `artifacts/ssrm_3d_structured_perception_trace.js`
+- `artifacts/ssrm_3d_structured_perception_results.js`
+- `visualizations/ssrm_3d_structured_perception.html` replays the structured perception trace when served from the repo root.
 
 ```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2

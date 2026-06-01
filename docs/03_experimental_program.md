@@ -1485,6 +1485,34 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_no_leak_integration_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_no_leak_integration_results.js)
 
+## SSRM-3D Structured Perception Pressure
+
+Run the first persistent-pressure layer from report 74.
+
+This experiment uses structured cone/FOV vision and spatial audio events rather than omniscient world state, raw pixels, or raw waveforms. It asks whether partial perception creates specific pressure for memory, tools, attention, and self-state adaptation.
+
+Canonical result:
+
+- open daylight control rejects perception machinery;
+- cone-vision route memory fails under no-vision and visual-memory ablation;
+- occluded hazard pressure fails under no-audio, no-direction audio, and tool-alarm ablation;
+- night shelter pressure needs multimodal perception and memory;
+- sensor-damage pressure fails when perception is blind to body-state degradation.
+
+Implemented version:
+
+- [SSRM-3D structured-perception script](../experiments/ssrm_3d_structured_perception.py)
+- [SSRM-3D structured-perception report](75_ssrm_3d_structured_perception_report.md)
+- [structured-perception visualization](../visualizations/ssrm_3d_structured_perception.html)
+- [evaluation CSV](../artifacts/ssrm_3d_structured_perception_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_structured_perception_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_structured_perception_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_structured_perception_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_structured_perception_trace.json)
+- [JSON results](../artifacts/ssrm_3d_structured_perception_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_structured_perception_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_structured_perception_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

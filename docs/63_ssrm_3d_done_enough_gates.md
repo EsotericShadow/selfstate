@@ -57,6 +57,8 @@ The SSRM-3D learned-controller precursor trains recurrent controllers without se
 
 The learned-integration precursor trains a recurrent controller from reward-derived packet traces. It rejects extra state in visible control and carries early local and integrated pressure evidence in the seeded canonical run, but scenario identity and feature-group structure are supplied. The no-leak sweep removes scenario identity and randomizes pressure combinations; it preserves some bridges but rejects stable integration because the tool margin is fragile and integrated social pressure is not ablation-stable.
 
+[Report 75](75_ssrm_3d_structured_perception_report.md) adds the first persistent-pressure perception layer. It does not satisfy learned control by itself, but it makes future learned-control gates less omniscient: route memory, tool alarms, multimodal night navigation, and sensor-damage adaptation now have targeted vision/audio ablations.
+
 Remaining weakness:
 
 Direct counterfactual self-state edits have weak action effects. This means the current evidence supports learned policy-state self tracking for control, but not robust causal policy editing.
@@ -82,6 +84,8 @@ Partially passed by [report 65](65_ssrm_3d_tool_making_report.md), given a learn
 The SSRM-3D tool-making precursor gives the world marker, beacon, alarm, and cache affordances. Return selection rejects tools in the visible-resource control, selects tools under hidden-route, degraded-sensor, and interruption-recovery pressure, and loses most of the gain when tool access is ablated.
 
 The learned-integration precursor adds that early tool-route evidence can be carried by recurrent policy state; frame-only control falls behind and tool-channel ablation removes the learned advantage. The no-leak sweep keeps raw tool support across seeds but the weakest margins are too close to the widened threshold, so the learned tool bridge remains provisional.
+
+The structured-perception precursor adds a more concrete tool reason: visual markers and audio alarms matter when FOV, darkness, occlusion, and sound direction create partial observability. This is still candidate-policy evidence, not learned tool invention.
 
 Remaining weakness:
 

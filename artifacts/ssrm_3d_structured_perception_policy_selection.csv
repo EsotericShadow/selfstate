@@ -1,0 +1,6 @@
+scenario,scenario_name,selected_policy,selected_uses_vision,selected_uses_audio,selected_uses_tools,selected_uses_self_adapt,train_reward,no_perception_train_reward,train_gain_over_no_perception
+0,open_daylight_control,no_perception_baseline,False,False,False,False,134.19703491985348,134.25174224239396,-0.05470732254048016
+1,cone_vision_route_memory,body_state_adaptive_integrator,True,True,True,True,100.49265830039832,25.376096636470777,75.11656166392754
+2,occluded_hazard_audio_alarm,body_state_adaptive_integrator,True,True,True,True,126.03462716951321,27.592935283512983,98.44169188600023
+3,night_multimodal_shelter,multimodal_integrator,True,True,True,False,131.31302090115992,55.936048616622934,75.37697228453698
+4,sensor_damage_adaptation,body_state_adaptive_integrator,True,True,True,True,129.6422978349023,71.84074475803293,57.80155307686938

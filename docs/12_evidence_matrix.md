@@ -64,6 +64,7 @@ This file links the research claims to current evidence, counterevidence, and ne
 | SSRM-3D injury/disability adaptation | Capability self-state, motor adaptation, sensor compensation, infection, repair, help, tools, routes, and continuity pressure | Fixed-body control rejects disability machinery; limp/route, vision/hearing damage, wound infection, social help, and restore rows fail under matching capability, motor, sensor, infection, repair, help, tool, route, or continuity ablations. | Candidate policies and injury dynamics are supplied; not learned disability adaptation, biology, or subjective suffering. |
 | SSRM-3D development/skill learning | Skill memory, practice planning, capability state, fatigue, injury retraining, transfer, teaching, tools, goal feasibility, and continuity pressure | Easy fixed-skill control rejects skill machinery; practice/transfer, fatigue degradation, injury retraining, teaching/tool transfer, and restore rows fail under matching skill, practice, capability, fatigue, injury, transfer, teaching, tool, feasibility, or continuity ablations. | Candidate policies and skill dynamics are supplied; not learned curriculum discovery or development simulation. |
 | SSRM-3D dependent care | Fragile companions, dependent state, identity memory, protection, sharing, repair, teaching, promises, trust, priority, and continuity pressure | No-dependent control rejects care machinery; protection, sharing, repair/teaching, promise/trust, and restore rows fail under matching dependent-state, identity, protection, sharing, repair, teaching, shelter, promise, social-trust, priority, or continuity ablations. | Candidate policies and care dynamics are supplied; not learned caregiving discovery, reproduction, or dependent psychology. |
+| SSRM-3D irreversible loss | Permanent tool, shelter, relationship, memory, and option-space loss pressure | Reversible-wear control rejects loss machinery; tool/shelter, relationship, memory-archive, cascading-loss, and restore rows fail under matching loss-memory, value-risk, replacement, caution, preservation, backup, response, or continuity ablations. | Candidate policies and loss dynamics are supplied; not learned grief, learned ethics, or open-ended loss discovery. |
 | Learned bottleneck discovery | Self labels removed from structure selection | Unlabeled model selection chooses shared bottleneck in both self and world reuse, local hidden variables in independent-hidden, and no hidden state in irrelevant control. | Candidate structures and causal interventions are still hand supplied. |
 | Sequence latent transfer | Held-out transfer from raw outcomes | Early calibration outcomes transfer to held-out contexts under shared agent-state and shared world-state, but not independent-hidden or irrelevant controls. | Simple pairwise-agreement learner; not a rich recurrent neural policy. |
 | Heterogeneous attractor precursor | Cross-learner convergence | Five learner families converge on agent-bounded latents in self-shared streams, external latents in world-shared streams, no shared boundary in independent-hidden streams, and no hidden state in irrelevant streams. | Still a compact toy environment; learners are simple, not rich embodied RL systems. |
@@ -208,7 +209,7 @@ SSRM-3D social-pressure identity and reputation pressure
 SSRM-3D costly-communication social ecology
 SSRM-3D agent-continuity restore/fork pressure
 SSRM-3D learned-integration designed packet bridge
-SSRM-3D persistent pressure layers from perception through dependent care
+SSRM-3D persistent pressure layers from perception through irreversible loss
 learned bottleneck plus causal boundary test
 sequence latent transfer to held-out contexts
 heterogeneous convergence across learner families with causal boundary separation
@@ -759,6 +760,7 @@ This is the narrow precursor to the full Attractor Test. It varies simple learne
 | `experiments/ssrm_3d_injury_disability_adaptation.py` | `artifacts/ssrm_3d_injury_disability_adaptation_verdict.csv` |
 | `experiments/ssrm_3d_development_skill_learning.py` | `artifacts/ssrm_3d_development_skill_learning_verdict.csv` |
 | `experiments/ssrm_3d_dependent_care.py` | `artifacts/ssrm_3d_dependent_care_verdict.csv` |
+| `experiments/ssrm_3d_irreversible_loss.py` | `artifacts/ssrm_3d_irreversible_loss_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

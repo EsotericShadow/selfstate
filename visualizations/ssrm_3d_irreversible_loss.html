@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Irreversible Loss Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101211;
+      --panel: #171b1a;
+      --line: rgba(239, 244, 241, 0.15);
+      --text: #eff4f1;
+      --muted: #a9b4ae;
+      --agent: #83d18a;
+      --tool: #e8c860;
+      --shelter: #f39c63;
+      --social: #9ab7ff;
+      --memory: #bd9ff2;
+      --risk: #ee716a;
+      --safe: #6fd1c1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 430px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #0b0f0d;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .event,
+    .outcome-row,
+    .verdict-row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: #202624;
+      height: 32px;
+      padding: 0 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      padding: 8px;
+      min-height: 58px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 18px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 126px minmax(0, 1fr) 48px;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .bar {
+      height: 10px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      width: 0;
+    }
+
+    .event {
+      border-left: 3px solid var(--line);
+      padding-left: 8px;
+    }
+
+    .outcome-row,
+    .verdict-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      border-top: 1px solid rgba(239, 244, 241, 0.08);
+      padding-top: 6px;
+    }
+
+    .verdict-row {
+      grid-template-columns: 10px minmax(0, 1fr) auto;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .value {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    @media (max-width: 940px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 58vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Irreversible Loss</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+
+    <div class="controls">
+      <button id="play" type="button">Pause</button>
+      <input id="scrub" type="range" min="0" max="0" value="0">
+    </div>
+
+    <section class="metrics">
+      <div class="metric"><span>Tick</span><strong id="tick">0</strong></div>
+      <div class="metric"><span>Action</span><strong id="action">-</strong></div>
+      <div class="metric"><span>Progress</span><strong id="progress">0.00</strong></div>
+      <div class="metric"><span>Losses</span><strong id="losses">0</strong></div>
+    </section>
+
+    <section class="section" id="bars"></section>
+
+    <section class="section">
+      <h2>Recent Events</h2>
+      <div id="events"></div>
+    </section>
+
+    <section class="section">
+      <h2>Ablation Outcomes</h2>
+      <div id="outcomes"></div>
+    </section>
+
+    <section class="section">
+      <h2>Verdict Rows</h2>
+      <div id="verdicts"></div>
+    </section>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_irreversible_loss_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_irreversible_loss_results.js"></script>
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const subtitle = document.getElementById("subtitle");
+    const playButton = document.getElementById("play");
+    const scrub = document.getElementById("scrub");
+    const fields = {
+      tick: document.getElementById("tick"),
+      action: document.getElementById("action"),
+      progress: document.getElementById("progress"),
+      losses: document.getElementById("losses"),
+      bars: document.getElementById("bars"),
+      events: document.getElementById("events"),
+      outcomes: document.getElementById("outcomes"),
+      verdicts: document.getElementById("verdicts"),
+    };
+    const css = getComputedStyle(document.documentElement);
+    const colors = {
+      text: css.getPropertyValue("--text").trim(),
+      agent: css.getPropertyValue("--agent").trim(),
+      tool: css.getPropertyValue("--tool").trim(),
+      shelter: css.getPropertyValue("--shelter").trim(),
+      social: css.getPropertyValue("--social").trim(),
+      memory: css.getPropertyValue("--memory").trim(),
+      risk: css.getPropertyValue("--risk").trim(),
+      safe: css.getPropertyValue("--safe").trim(),
+    };
+
+    const barDefs = [
+      ["energy", "Energy", "var(--agent)"],
+      ["integrity", "Integrity", "var(--safe)"],
+      ["tool_integrity", "Tool", "var(--tool)"],
+      ["shelter_safety", "Shelter", "var(--shelter)"],
+      ["relationship_trust", "Relationship", "var(--social)"],
+      ["memory_integrity", "Memory", "var(--memory)"],
+      ["option_space", "Options", "var(--safe)"],
+      ["replacement_feasibility", "Replaceable", "var(--tool)"],
+      ["caution_state", "Caution", "var(--social)"],
+      ["value_at_risk_estimate", "Value Risk", "var(--risk)"],
+      ["stress", "Stress", "var(--risk)"],
+    ];
+
+    let trace = null;
+    let results = null;
+    let index = 0;
+    let playing = true;
+    let lastTime = 0;
+
+    function clamp(value, low, high) {
+      return Math.max(low, Math.min(high, value));
+    }
+
+    function format(value, digits = 2) {
+      return Number(value || 0).toFixed(digits);
+    }
+
+    async function loadData() {
+      trace = window.SSRM_3D_IRREVERSIBLE_LOSS_TRACE;
+      results = window.SSRM_3D_IRREVERSIBLE_LOSS_RESULTS;
+      if (!trace) {
+        const response = await fetch("../artifacts/ssrm_3d_irreversible_loss_trace.json");
+        trace = await response.json();
+      }
+      if (!results) {
+        const response = await fetch("../artifacts/ssrm_3d_irreversible_loss_results.json");
+        results = await response.json();
+      }
+      if (!trace || !trace.frames || trace.frames.length === 0) {
+        throw new Error("trace has no frames");
+      }
+      scrub.max = String(trace.frames.length - 1);
+      subtitle.textContent = `${trace.scenario.name} / ${trace.policy.name}`;
+      renderStaticPanels();
+      resize();
+      requestAnimationFrame(tick);
+    }
+
+    function renderStaticPanels() {
+      fields.bars.innerHTML = barDefs.map(([key, label, color]) => `
+        <div class="row">
+          <span>${label}</span>
+          <div class="bar"><span id="bar-${key}" style="background:${color}"></span></div>
+          <span class="value" id="value-${key}">0.00</span>
+        </div>
+      `).join("");
+
+      const outcomes = trace.condition_outcomes || {};
+      const keyRows = [
+        "full_control",
+        "no_loss_memory",
+        "no_value_at_risk",
+        "no_replacement_model",
+        "no_caution_control",
+        "no_tool_preservation",
+        "no_shelter_preservation",
+        "no_relationship_preservation",
+        "no_loss_response",
+        "reckless_reversible_baseline",
+      ];
+      const fullReward = outcomes.full_control ? outcomes.full_control.mean_reward : 0;
+      fields.outcomes.innerHTML = keyRows
+        .filter((key) => outcomes[key])
+        .map((key) => {
+          const row = outcomes[key];
+          const loss = fullReward - row.mean_reward;
+          const events = row.mean_loss_events || 0;
+          return `
+            <div class="outcome-row">
+              <span>${key}<br><span class="value">${format(events, 1)} permanent losses</span></span>
+              <span class="value">${format(loss, 1)}</span>
+            </div>
+          `;
+        }).join("");
+
+      fields.verdicts.innerHTML = (results.verdict || []).map((row) => `
+        <div class="verdict-row">
+          <span class="dot" style="background:${row.supports_irreversible_loss_precursor ? "var(--safe)" : "var(--risk)"}"></span>
+          <span>${row.scenario_name}<br><span class="value">${row.selected_policy}</span></span>
+          <span class="value">${row.supports_irreversible_loss_precursor ? "pass" : "fail"}</span>
+        </div>
+      `).join("");
+    }
+
+    function resize() {
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.max(1, Math.floor(rect.width * dpr));
+      canvas.height = Math.max(1, Math.floor(rect.height * dpr));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      draw();
+    }
+
+    function drawNode(x, y, radius, color, label, health, broken) {
+      ctx.save();
+      ctx.globalAlpha = broken ? 0.42 : 1;
+      ctx.strokeStyle = broken ? colors.risk : color;
+      ctx.fillStyle = "rgba(255, 255, 255, 0.035)";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(x, y, radius, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.arc(x, y, radius - 6, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * clamp(health, 0, 1));
+      ctx.stroke();
+
+      if (broken) {
+        ctx.strokeStyle = colors.risk;
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(x - radius * 0.45, y - radius * 0.45);
+        ctx.lineTo(x + radius * 0.45, y + radius * 0.45);
+        ctx.moveTo(x + radius * 0.45, y - radius * 0.45);
+        ctx.lineTo(x - radius * 0.45, y + radius * 0.45);
+        ctx.stroke();
+      }
+
+      ctx.fillStyle = colors.text;
+      ctx.font = "12px Inter, sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText(label, x, y + radius + 18);
+      ctx.restore();
+    }
+
+    function draw() {
+      if (!trace) return;
+      const frame = trace.frames[index] || trace.frames[0];
+      const rect = canvas.getBoundingClientRect();
+      const width = rect.width;
+      const height = rect.height;
+      ctx.clearRect(0, 0, width, height);
+
+      const centerX = width * 0.50;
+      const centerY = height * 0.50;
+      const radius = Math.min(width, height) * 0.30;
+
+      ctx.strokeStyle = "rgba(239, 244, 241, 0.08)";
+      ctx.lineWidth = 1;
+      for (let ring = 1; ring <= 4; ring += 1) {
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius * ring / 4, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      const riskArc = clamp(frame.value_at_risk_estimate || 0, 0, 1);
+      ctx.strokeStyle = "rgba(238, 113, 106, 0.70)";
+      ctx.lineWidth = 8;
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, radius + 18, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * riskArc);
+      ctx.stroke();
+
+      const cautionArc = clamp(frame.caution_state || 0, 0, 1);
+      ctx.strokeStyle = "rgba(111, 209, 193, 0.72)";
+      ctx.lineWidth = 8;
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, radius + 32, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * cautionArc);
+      ctx.stroke();
+
+      const assets = [
+        [centerX - radius * 0.96, centerY - radius * 0.50, colors.tool, "tool", frame.tool_integrity],
+        [centerX + radius * 0.96, centerY - radius * 0.50, colors.shelter, "shelter", frame.shelter_safety],
+        [centerX - radius * 0.82, centerY + radius * 0.62, colors.social, "helper", frame.relationship_trust],
+        [centerX + radius * 0.82, centerY + radius * 0.62, colors.memory, "archive", frame.memory_integrity],
+      ];
+
+      ctx.strokeStyle = "rgba(239, 244, 241, 0.14)";
+      ctx.lineWidth = 2;
+      for (const [x, y] of assets) {
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.lineTo(x, y);
+        ctx.stroke();
+      }
+
+      for (const [x, y, color, label, health] of assets) {
+        drawNode(x, y, 44, color, label, health, health <= 0.02);
+      }
+
+      const option = clamp(frame.option_space || 0, 0, 1);
+      const agentRadius = 34 + option * 12;
+      ctx.fillStyle = "rgba(131, 209, 138, 0.18)";
+      ctx.strokeStyle = colors.agent;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, agentRadius, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.stroke();
+      ctx.fillStyle = colors.text;
+      ctx.font = "13px Inter, sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText("agent option space", centerX, centerY + 4);
+
+      const pulse = 5 + Math.sin(Date.now() / 240) * 3;
+      if ((frame.loss_events || 0) > 0) {
+        ctx.strokeStyle = colors.risk;
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, agentRadius + pulse + 10, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      ctx.fillStyle = "rgba(239, 244, 241, 0.75)";
+      ctx.font = "12px Inter, sans-serif";
+      ctx.textAlign = "left";
+      ctx.fillText(`value at risk ${format(frame.value_at_risk_estimate)}`, 24, 32);
+      ctx.fillText(`caution ${format(frame.caution_state)}`, 24, 52);
+      ctx.fillText(`replacement ${format(frame.replacement_feasibility)}`, 24, 72);
+    }
+
+    function updatePanel() {
+      const frame = trace.frames[index] || trace.frames[0];
+      fields.tick.textContent = frame.tick;
+      fields.action.textContent = frame.action;
+      fields.progress.textContent = format(frame.progress);
+      fields.losses.textContent = frame.loss_events || 0;
+      for (const [key] of barDefs) {
+        const value = clamp(frame[key] || 0, 0, 1);
+        const bar = document.getElementById(`bar-${key}`);
+        const text = document.getElementById(`value-${key}`);
+        if (bar) bar.style.width = `${value * 100}%`;
+        if (text) text.textContent = format(value);
+      }
+      const notes = frame.notes && frame.notes.length ? frame.notes : ["no salient event"];
+      fields.events.innerHTML = notes.slice(-4).map((note) => `<div class="event">${note}</div>`).join("");
+      scrub.value = String(index);
+    }
+
+    function tick(time) {
+      if (playing && time - lastTime > 95) {
+        index = (index + 1) % trace.frames.length;
+        lastTime = time;
+        updatePanel();
+        draw();
+      }
+      requestAnimationFrame(tick);
+    }
+
+    playButton.addEventListener("click", () => {
+      playing = !playing;
+      playButton.textContent = playing ? "Pause" : "Play";
+    });
+
+    scrub.addEventListener("input", () => {
+      index = Number(scrub.value);
+      updatePanel();
+      draw();
+    });
+
+    window.addEventListener("resize", resize);
+
+    loadData()
+      .then(() => {
+        updatePanel();
+        draw();
+      })
+      .catch((error) => {
+        subtitle.textContent = `Could not load trace: ${error.message}`;
+        console.error(error);
+      });
+  </script>
+</body>
+</html>

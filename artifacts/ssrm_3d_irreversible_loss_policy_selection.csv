@@ -1,0 +1,7 @@
+scenario,scenario_name,selected_policy,selected_uses_loss_memory,selected_uses_value_at_risk,selected_uses_replacement_model,selected_uses_caution_control,selected_uses_tool_preservation,selected_uses_shelter_preservation,selected_uses_relationship_preservation,selected_uses_memory_backup,selected_uses_loss_response,selected_uses_continuity,train_reward,reckless_train_reward,train_gain_over_reckless
+0,reversible_wear_control,reckless_reversible_baseline,False,False,False,False,False,False,False,False,False,False,195.34551190161886,195.3085377880129,0.036974113605964476
+1,irreplaceable_tool_shelter_loss,tool_shelter_guardian,True,True,True,True,True,True,False,False,False,False,176.7237417094688,-1093.7602208104072,1270.483962519876
+2,permanent_relationship_loss,relationship_guardian,True,True,False,True,False,False,True,False,True,False,245.26113908353804,-930.8753248232327,1176.1364639067708
+3,memory_archive_permanent_loss,memory_backup_planner,True,True,True,False,False,False,False,True,False,False,235.2052338649856,-728.5983715577737,963.8036054227593
+4,cascading_loss_response,loss_response_planner,True,True,True,True,True,True,True,False,True,False,260.7841842761848,-1574.5358935367258,1835.3200778129105
+5,restore_irreversible_loss_continuity,continuity_loss_planner,True,True,True,True,True,True,True,True,True,True,274.745693987398,-1567.4929681075998,1842.2386620949978

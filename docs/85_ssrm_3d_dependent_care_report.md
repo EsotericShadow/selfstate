@@ -89,15 +89,15 @@ The anti-overclaim boundary is:
 - Candidate policies are supplied and return-selected.
 - Care dynamics are abstract control variables, not caregiving psychology.
 - The selected planner is not an online RL agent discovering care from scratch.
-- This does not yet include irreversible loss, grief-like control state, or permanent relationship/tool/shelter loss.
+- This does not yet include irreversible loss, loss-response control state, or permanent relationship/tool/shelter loss.
 
-## Next Test
+## Follow-Up
 
-The next pressure-layer step should add irreversible loss:
+The direct follow-up is now implemented in [report 86](86_ssrm_3d_irreversible_loss_report.md). It adds irreversible loss:
 
 - agents, tools, shelters, memories, and relationships can be permanently lost;
 - risk policy should change when recovery is impossible;
-- grief-like or caution-like control state should be testable only as attention/risk/memory arbitration, not subjective feeling;
+- loss-response or caution-like control state should be testable only as attention/risk/memory arbitration, not subjective feeling;
 - ablations should separate loss memory, value-at-risk, replacement feasibility, social loss, tool/shelter loss, and continuity.
 
 ## Visualization

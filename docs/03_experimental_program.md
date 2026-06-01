@@ -1800,6 +1800,35 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_dependent_care_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_dependent_care_results.js)
 
+## SSRM-3D Irreversible Loss Pressure
+
+Run the twelfth persistent-pressure layer from report 74.
+
+This experiment treats permanent tool loss, shelter loss, relationship loss, memory loss, value-at-risk estimation, replacement feasibility, caution control, loss response, and continuity as abstract control variables. It asks whether irreversible loss becomes self-relevant only when permanent future-option loss changes the tested agent's own risk tolerance, preservation actions, social access, memory state, or restore-time control.
+
+Canonical result:
+
+- reversible-wear control rejects irreversible-loss machinery;
+- irreplaceable tool/shelter pressure fails under no-loss-memory, no-value-at-risk, no-replacement-model, no-caution-control, no-tool-preservation, no-shelter-preservation, and reckless baseline ablations;
+- permanent relationship pressure fails under no-loss-memory, no-value-at-risk, no-caution-control, no-relationship-preservation, no-loss-response, and reckless baseline ablations;
+- memory-archive loss pressure fails under no-loss-memory, no-value-at-risk, no-replacement-model, no-memory-backup, and reckless baseline ablations;
+- cascading loss pressure fails under no-loss-memory, no-value-at-risk, no-replacement-model, no-caution-control, no-loss-response, and reckless baseline ablations;
+- restore pressure fails under no-continuity plus loss memory, value-at-risk, replacement, caution, tool, shelter, relationship, memory-backup, and loss-response ablations.
+
+Implemented version:
+
+- [SSRM-3D irreversible loss script](../experiments/ssrm_3d_irreversible_loss.py)
+- [SSRM-3D irreversible loss report](86_ssrm_3d_irreversible_loss_report.md)
+- [irreversible loss visualization](../visualizations/ssrm_3d_irreversible_loss.html)
+- [evaluation CSV](../artifacts/ssrm_3d_irreversible_loss_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_irreversible_loss_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_irreversible_loss_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_irreversible_loss_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_irreversible_loss_trace.json)
+- [JSON results](../artifacts/ssrm_3d_irreversible_loss_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_irreversible_loss_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_irreversible_loss_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

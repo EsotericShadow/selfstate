@@ -125,17 +125,19 @@ Pass condition:
 
 Current status:
 
-Partially passed by [report 66](66_ssrm_3d_social_pressure_report.md), extended by [report 67](67_ssrm_3d_social_ecology_report.md), and given a learned-controller bridge by [report 69](69_ssrm_3d_learned_integration_controller_report.md).
+Partially passed by [report 66](66_ssrm_3d_social_pressure_report.md), extended by [report 67](67_ssrm_3d_social_ecology_report.md), extended again by [report 80](80_ssrm_3d_social_trust_contracts_report.md), and given a learned-controller bridge by [report 69](69_ssrm_3d_learned_integration_controller_report.md).
 
 The SSRM-3D social-pressure precursor gives other agents persistent identities, resource needs, trust toward the tested agent, and helper, trader, opportunist, and deceiver policies. Return selection rejects social machinery in the visible-resource control, selects social identity policies under cooperative repair, opportunist vulnerability, deceptive-route, and shared-tool pressure, and loses the advantage when identity memory, social self-state, or shared-tool access is ablated.
 
 The SSRM-3D social-ecology precursor makes communication costly. Return selection rejects communication in the visible solo control, selects warning signals when route information beats rediscovery, selects names when persistent social history matters, selects gossip when absent-agent information improves future choices, and selects check-ins when low-cost contact maintains repair, trust, shared-tool access, and future options.
 
+The SSRM-3D social trust/contracts precursor makes promises costly. Return selection rejects contract machinery in the visible no-contract control, selects borrowed-tool return, hazard warning, resource sharing, and shelter repair duty only when they preserve future access, and loses the advantage under matching commitment, identity, communication, trust, ownership, repair-debt, or continuity ablations.
+
 The learned-integration precursor adds that early helper/deceiver identity evidence can be carried by recurrent policy state; social-channel ablation removes the learned social-repair advantage.
 
 Remaining weakness:
 
-The successful policies are return-selected from candidate social-control and communication policies, not learned end-to-end by the SSRM-3D controller. The social agents use simple role policies rather than open-ended communication, learned deception, or long multi-episode reputation. This means Gate 3 has useful social-pressure and costly-communication precursors, but not a full pass.
+The successful policies are return-selected from candidate social-control, communication, and contract policies, not learned end-to-end by the SSRM-3D controller. The social agents use simple role policies rather than open-ended communication, learned deception, or long multi-episode reputation. This means Gate 3 has useful social-pressure, costly-communication, and contract precursors, but not a full pass.
 
 Failure interpretation:
 
@@ -224,7 +226,7 @@ Gate 1 has useful learned-control precursors.
 
 Gate 2 has a partial externalized-cognition precursor and a learned tool-memory bridge.
 
-Gate 3 has partial social-pressure and costly-communication precursors and a learned social-memory bridge.
+Gate 3 has partial social-pressure, costly-communication, and social-contract precursors and a learned social-memory bridge.
 
 Gate 4 has continuity-record and learned continuity/attention precursors, but the ablation suite is incomplete.
 

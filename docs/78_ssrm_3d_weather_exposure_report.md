@@ -100,6 +100,8 @@ The next pressure-layer step should add tool/shelter degradation:
 - inspection and repair should compete with food, water, sleep, exploration, and social commitments;
 - ablations should separate degradation state, repair action, tool memory, shelter memory, and continuity.
 
+Implemented by [report 79](79_ssrm_3d_tool_shelter_degradation_report.md).
+
 ## Visualization
 
 Serve the repo root and open:

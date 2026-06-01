@@ -91,7 +91,7 @@ Priority order:
 3. Hunger/thirst plus illness/sanitation. Implemented as the illness/sanitation precursor in [report 77](77_ssrm_3d_illness_sanitation_report.md).
 4. Weather/exposure. Implemented as the weather/exposure precursor in [report 78](78_ssrm_3d_weather_exposure_report.md).
 5. Tool/shelter degradation. Implemented as the tool/shelter degradation precursor in [report 79](79_ssrm_3d_tool_shelter_degradation_report.md).
-6. Social trust/contracts.
+6. Social trust/contracts. Implemented as the social trust/contracts precursor in [report 80](80_ssrm_3d_social_trust_contracts_report.md).
 7. Predator/threat agents.
 8. Resource ecology.
 

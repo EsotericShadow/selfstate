@@ -102,6 +102,8 @@ The next pressure-layer step should add social trust/contracts:
 - trust should be affected by fulfilled or broken commitments;
 - ablations should separate commitment memory, identity memory, tool ownership, repair debt, communication, and continuity.
 
+Implemented by [report 80](80_ssrm_3d_social_trust_contracts_report.md).
+
 ## Visualization
 
 Serve the repo root and open:

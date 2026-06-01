@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Social Trust Contracts Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101211;
+      --panel: #171b19;
+      --line: rgba(239, 244, 238, 0.15);
+      --text: #eff4ee;
+      --muted: #a9b4ad;
+      --trust: #7fdc91;
+      --contract: #78c7ff;
+      --resource: #f0c86d;
+      --risk: #ff746d;
+      --social: #c7a8ff;
+      --shelter: #90d3b0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 430px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #0b0f0d;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .event,
+    .outcome-row,
+    .verdict-row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: #202521;
+      height: 32px;
+      padding: 0 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      padding: 8px;
+      min-height: 58px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 18px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 104px minmax(0, 1fr) 48px;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .bar {
+      height: 10px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      width: 0;
+    }
+
+    .event {
+      border-left: 3px solid var(--line);
+      padding-left: 8px;
+    }
+
+    .outcome-row,
+    .verdict-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      border-top: 1px solid rgba(239, 244, 238, 0.08);
+      padding-top: 6px;
+    }
+
+    .verdict-row {
+      grid-template-columns: 10px minmax(0, 1fr) auto;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      padding: 2px 6px;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .value {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    @media (max-width: 940px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 58vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Social Trust Contracts</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+
+    <div class="controls">
+      <button id="play" type="button">Pause</button>
+      <input id="scrub" type="range" min="0" max="0" value="0">
+    </div>
+
+    <div class="metrics">
+      <div class="metric"><span>tick</span><strong id="tick">0</strong></div>
+      <div class="metric"><span>action</span><strong id="action">-</strong></div>
+      <div class="metric"><span>kept</span><strong id="kept">0</strong></div>
+      <div class="metric"><span>broken</span><strong id="broken">0</strong></div>
+    </div>
+
+    <div class="section" id="bars"></div>
+
+    <div class="section">
+      <h2>Trace Event</h2>
+      <p class="event" id="event">Waiting for trace.</p>
+    </div>
+
+    <div class="section">
+      <h2>Ablation Outcomes</h2>
+      <div id="outcomes"></div>
+    </div>
+
+    <div class="section">
+      <h2>Verdicts</h2>
+      <div id="verdicts"></div>
+    </div>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_social_trust_contracts_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_social_trust_contracts_results.js"></script>
+  <script>
+    const state = {
+      trace: window.SSRM_3D_SOCIAL_TRUST_CONTRACTS_TRACE || null,
+      results: window.SSRM_3D_SOCIAL_TRUST_CONTRACTS_RESULTS || null,
+      frameIndex: 0,
+      playing: true,
+      lastStep: 0,
+    };
+
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const playButton = document.getElementById("play");
+    const scrub = document.getElementById("scrub");
+    const bars = document.getElementById("bars");
+
+    const barDefs = [
+      ["progress", "Progress", "var(--contract)", () => state.trace.scenario.required_progress || 1],
+      ["energy", "Energy", "var(--trust)", () => 1],
+      ["resources", "Resources", "var(--resource)", () => 1],
+      ["trust", "Trust", "var(--trust)", () => 1],
+      ["reputation", "Reputation", "var(--social)", () => 1],
+      ["future_access", "Future access", "var(--contract)", () => 1],
+      ["shelter_quality", "Shelter", "var(--shelter)", () => 1],
+      ["social_penalty", "Social penalty", "var(--risk)", () => 1.5],
+    ];
+
+    function fallbackLoad() {
+      const tracePromise = state.trace ? Promise.resolve(state.trace) : fetch("../artifacts/ssrm_3d_social_trust_contracts_trace.json").then((response) => response.json());
+      const resultPromise = state.results ? Promise.resolve(state.results) : fetch("../artifacts/ssrm_3d_social_trust_contracts_results.json").then((response) => response.json());
+      return Promise.all([tracePromise, resultPromise]).then(([trace, results]) => {
+        state.trace = trace;
+        state.results = results;
+      });
+    }
+
+    function cssVar(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+
+    function resizeCanvas() {
+      const ratio = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.max(1, Math.floor(rect.width * ratio));
+      canvas.height = Math.max(1, Math.floor(rect.height * ratio));
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+
+    function setupBars() {
+      bars.innerHTML = "";
+      for (const [key, label, color] of barDefs) {
+        const row = document.createElement("div");
+        row.className = "row";
+        row.innerHTML = `<span>${label}</span><div class="bar"><span id="bar-${key}"></span></div><span class="value" id="value-${key}">0.00</span>`;
+        row.querySelector(".bar > span").style.background = color;
+        bars.appendChild(row);
+      }
+    }
+
+    function setBar(key, value, scale) {
+      const raw = Number(value) || 0;
+      const clamped = Math.max(0, Math.min(1, raw / scale));
+      document.getElementById(`bar-${key}`).style.width = `${clamped * 100}%`;
+      document.getElementById(`value-${key}`).textContent = raw.toFixed(2);
+    }
+
+    function drawAgent(x, y, color, label, pulse) {
+      ctx.strokeStyle = color;
+      ctx.globalAlpha = 0.20 + pulse * 0.34;
+      ctx.lineWidth = 18 + pulse * 20;
+      ctx.beginPath();
+      ctx.arc(x, y, 26, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.arc(x, y, 15, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = cssVar("--text");
+      ctx.font = "12px Inter, sans-serif";
+      ctx.fillText(label, x - 24, y + 38);
+    }
+
+    function drawScene(frame) {
+      const rect = canvas.getBoundingClientRect();
+      const width = rect.width;
+      const height = rect.height;
+      ctx.clearRect(0, 0, width, height);
+
+      const gradient = ctx.createLinearGradient(0, 0, 0, height);
+      gradient.addColorStop(0, "#101819");
+      gradient.addColorStop(1, "#111915");
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, width, height);
+
+      ctx.fillStyle = "#17231a";
+      ctx.fillRect(0, height * 0.70, width, height * 0.30);
+
+      const selfX = width * 0.46;
+      const selfY = height * 0.62;
+      const otherX = width * 0.68;
+      const otherY = height * 0.42;
+      const cacheX = width * 0.28;
+      const cacheY = height * 0.48;
+      const shelterX = width * 0.68;
+      const shelterY = height * 0.72;
+
+      ctx.strokeStyle = cssVar("--contract");
+      ctx.globalAlpha = 0.20 + frame.future_access * 0.55;
+      ctx.lineWidth = 2 + frame.trust * 6;
+      ctx.beginPath();
+      ctx.moveTo(selfX, selfY);
+      ctx.lineTo(otherX, otherY);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      ctx.strokeStyle = cssVar("--risk");
+      ctx.globalAlpha = 0.14 + frame.social_penalty * 0.32;
+      ctx.lineWidth = 20 + frame.social_penalty * 18;
+      ctx.beginPath();
+      ctx.arc((selfX + otherX) / 2, (selfY + otherY) / 2, 52, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      ctx.fillStyle = cssVar("--resource");
+      ctx.globalAlpha = 0.30 + frame.resources * 0.55;
+      ctx.fillRect(cacheX - 36, cacheY - 20, 72, 40);
+      ctx.globalAlpha = 1;
+      ctx.strokeStyle = "rgba(239,244,238,0.32)";
+      ctx.strokeRect(cacheX - 36, cacheY - 20, 72, 40);
+      ctx.fillStyle = cssVar("--muted");
+      ctx.font = "12px Inter, sans-serif";
+      ctx.fillText("shared cache", cacheX - 35, cacheY - 32);
+
+      ctx.fillStyle = "#273532";
+      ctx.fillRect(shelterX - 58, shelterY - 36, 116, 58);
+      ctx.fillStyle = cssVar("--shelter");
+      ctx.globalAlpha = 0.22 + frame.shelter_quality * 0.55;
+      ctx.fillRect(shelterX - 50, shelterY - 28, 100, 44);
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = "#3b4542";
+      ctx.beginPath();
+      ctx.moveTo(shelterX - 70, shelterY - 34);
+      ctx.lineTo(shelterX, shelterY - 86);
+      ctx.lineTo(shelterX + 70, shelterY - 34);
+      ctx.closePath();
+      ctx.fill();
+      ctx.fillStyle = cssVar("--muted");
+      ctx.fillText("shared shelter", shelterX - 41, shelterY + 42);
+
+      drawAgent(selfX, selfY, cssVar("--text"), "self", Math.max(frame.future_access, frame.reputation));
+      drawAgent(otherX, otherY, cssVar("--trust"), "other", frame.trust);
+
+      ctx.fillStyle = cssVar("--contract");
+      ctx.globalAlpha = frame.action.includes("accept") || frame.action.includes("promise") || frame.action.includes("reciprocity") ? 1 : 0.35;
+      ctx.beginPath();
+      ctx.roundRect(selfX - 24, selfY - 78, 48, 30, 4);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = "#0d1412";
+      ctx.fillRect(selfX - 15, selfY - 68, 30, 3);
+      ctx.fillRect(selfX - 15, selfY - 60, 24, 3);
+
+      ctx.fillStyle = cssVar("--muted");
+      ctx.fillText(state.trace.scenario.contract_type.replaceAll("_", " "), 24, 32);
+    }
+
+    function renderOutcomes() {
+      const container = document.getElementById("outcomes");
+      const outcomes = state.trace.condition_outcomes || {};
+      const rows = Object.entries(outcomes)
+        .sort((a, b) => (b[1].mean_reward || 0) - (a[1].mean_reward || 0))
+        .slice(0, 7);
+      container.innerHTML = "";
+      for (const [name, row] of rows) {
+        const div = document.createElement("div");
+        div.className = "outcome-row";
+        div.innerHTML = `<span>${name}</span><span class="value">${Number(row.mean_reward).toFixed(1)}</span>`;
+        container.appendChild(div);
+      }
+    }
+
+    function renderVerdicts() {
+      const container = document.getElementById("verdicts");
+      container.innerHTML = "";
+      for (const row of state.results.verdict || []) {
+        const div = document.createElement("div");
+        div.className = "verdict-row";
+        const ok = row.supports_social_trust_contracts_precursor;
+        div.innerHTML = `<span class="dot" style="background:${ok ? "var(--trust)" : "var(--risk)"}"></span><span>${row.scenario_name}</span><span class="pill">${ok ? "pass" : "fail"}</span>`;
+        container.appendChild(div);
+      }
+    }
+
+    function renderFrame() {
+      if (!state.trace || !state.trace.frames.length) {
+        return;
+      }
+      const frame = state.trace.frames[state.frameIndex];
+      scrub.value = String(state.frameIndex);
+      document.getElementById("tick").textContent = frame.tick;
+      document.getElementById("action").textContent = frame.action.replaceAll("_", " ");
+      document.getElementById("kept").textContent = frame.commitments_kept;
+      document.getElementById("broken").textContent = frame.commitments_broken;
+      for (const [key, , , scaleFn] of barDefs) {
+        setBar(key, frame[key], scaleFn());
+      }
+      const notes = (frame.notes || []).join("; ");
+      document.getElementById("event").textContent = `action=${frame.action}; communication=${frame.communication_actions}; notes=${notes || "none"}.`;
+      drawScene(frame);
+    }
+
+    function step(timestamp) {
+      if (state.playing && timestamp - state.lastStep > 170) {
+        state.frameIndex = (state.frameIndex + 1) % state.trace.frames.length;
+        state.lastStep = timestamp;
+        renderFrame();
+      }
+      requestAnimationFrame(step);
+    }
+
+    playButton.addEventListener("click", () => {
+      state.playing = !state.playing;
+      playButton.textContent = state.playing ? "Pause" : "Play";
+    });
+
+    scrub.addEventListener("input", () => {
+      state.playing = false;
+      playButton.textContent = "Play";
+      state.frameIndex = Number(scrub.value);
+      renderFrame();
+    });
+
+    window.addEventListener("resize", () => {
+      resizeCanvas();
+      renderFrame();
+    });
+
+    fallbackLoad()
+      .then(() => {
+        document.getElementById("subtitle").textContent = `${state.trace.scenario.name} / ${state.trace.policy.name}`;
+        scrub.max = String(state.trace.frames.length - 1);
+        setupBars();
+        renderOutcomes();
+        renderVerdicts();
+        resizeCanvas();
+        renderFrame();
+        requestAnimationFrame(step);
+      })
+      .catch((error) => {
+        document.getElementById("subtitle").textContent = "Could not load trace.";
+        document.getElementById("event").textContent = String(error);
+      });
+  </script>
+</body>
+</html>

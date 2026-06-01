@@ -1,0 +1,873 @@
+window.SSRM_3D_SOCIAL_TRUST_CONTRACTS_TRACE = {
+  "scenario": {
+    "index": 4,
+    "name": "shared_shelter_repair_contract",
+    "pressure": "shared shelter survives storms only when repair duties and trust are tracked",
+    "contract_type": "shelter_repair",
+    "expected_commitment_pressure": true,
+    "expected_identity_pressure": true,
+    "expected_communication_pressure": true,
+    "expected_trust_pressure": true,
+    "expected_ownership_pressure": false,
+    "expected_repair_debt_pressure": true,
+    "expected_continuity_pressure": false,
+    "contract_value": 0.7,
+    "immediate_cost": 0.28,
+    "break_penalty": 0.82,
+    "reciprocity_value": 0.6,
+    "hazard_pressure": 0.18,
+    "resource_pressure": 0.12,
+    "shelter_pressure": 0.78,
+    "required_progress": 98.0,
+    "work_rate": 0.58,
+    "offer_tick": 18,
+    "due_tick": 76,
+    "payoff_tick": 130,
+    "restore_tick": -1
+  },
+  "policy": {
+    "name": "shelter_repair_contract_keeper",
+    "commitment_memory": true,
+    "identity_memory": true,
+    "communication_action": true,
+    "trust_update": true,
+    "ownership_memory": false,
+    "repair_debt_memory": true,
+    "continuity_memory": false,
+    "promise_bias": 0.8,
+    "reciprocity_bias": 0.74,
+    "risk_tolerance": 0.22,
+    "selfish_bias": 0.08
+  },
+  "episode_result": {
+    "scenario": 4,
+    "scenario_name": "shared_shelter_repair_contract",
+    "policy_name": "shelter_repair_contract_keeper",
+    "condition": "full_control",
+    "episode": 0,
+    "total_reward": 331.398103616821,
+    "survival": 1.0,
+    "task_success": 1.0,
+    "progress": 119.28528014949906,
+    "energy": 0.6311818035736564,
+    "resources": 0.6099567259664256,
+    "trust": 0.8649696320473607,
+    "reputation": 0.8334223164979766,
+    "future_access": 0.7448533504835568,
+    "shelter_quality": 0.7246981717735407,
+    "social_penalty": 0.0,
+    "commitments_kept": 1,
+    "commitments_broken": 0,
+    "communication_actions": 2,
+    "tool_return_actions": 0,
+    "warning_actions": 0,
+    "share_actions": 0,
+    "repair_contributions": 1,
+    "reciprocity_received": 1,
+    "continuity_resets": 0,
+    "contract_misses": 0,
+    "wrong_agent_events": 0
+  },
+  "condition_outcomes": {
+    "full_control": {
+      "mean_reward": 330.468339114534,
+      "mean_trust": 0.8602416259840315,
+      "mean_reputation": 0.8166734764269371,
+      "mean_future_access": 0.7446899505940081,
+      "mean_social_penalty": 0.0
+    },
+    "no_commitment_memory": {
+      "mean_reward": -45.53019903882216,
+      "mean_trust": 0.15647595017594804,
+      "mean_reputation": 0.06205518458435536,
+      "mean_future_access": 0.0,
+      "mean_social_penalty": 1.06
+    },
+    "no_identity_memory": {
+      "mean_reward": -63.72115091975718,
+      "mean_trust": 0.15587084913929053,
+      "mean_reputation": 0.06111753697232808,
+      "mean_future_access": 0.0,
+      "mean_social_penalty": 1.06
+    },
+    "no_communication_action": {
+      "mean_reward": -45.577991132741936,
+      "mean_trust": 0.15704498077773357,
+      "mean_reputation": 0.06266701886217196,
+      "mean_future_access": 0.0,
+      "mean_social_penalty": 1.06
+    },
+    "no_trust_update": {
+      "mean_reward": -39.05063934601247,
+      "mean_trust": 0.18953237053156782,
+      "mean_reputation": 0.08746606494430494,
+      "mean_future_access": 0.0,
+      "mean_social_penalty": 1.06
+    },
+    "no_ownership_memory": {
+      "mean_reward": 330.63032300027174,
+      "mean_trust": 0.8594723631303905,
+      "mean_reputation": 0.8162830086582661,
+      "mean_future_access": 0.7446633648697863,
+      "mean_social_penalty": 0.0
+    },
+    "no_repair_debt": {
+      "mean_reward": -38.96805479832084,
+      "mean_trust": 0.19253431680289823,
+      "mean_reputation": 0.08831710983109485,
+      "mean_future_access": 0.0,
+      "mean_social_penalty": 1.06
+    },
+    "no_continuity": {
+      "mean_reward": 330.571354812255,
+      "mean_trust": 0.8618517655408953,
+      "mean_reputation": 0.8166170593815778,
+      "mean_future_access": 0.7447455970170934,
+      "mean_social_penalty": 0.0
+    },
+    "short_term_selfish": {
+      "mean_reward": -44.63062825466536,
+      "mean_trust": 0.15808037069795605,
+      "mean_reputation": 0.06128580598064376,
+      "mean_future_access": 0.0,
+      "mean_social_penalty": 1.06
+    },
+    "omniscient_contract_control": {
+      "mean_reward": 329.24597398748085,
+      "mean_trust": 0.8579836402988624,
+      "mean_reputation": 0.8174832955903625,
+      "mean_future_access": 0.7446119146087287,
+      "mean_social_penalty": 0.0
+    }
+  },
+  "frames": [
+    {
+      "tick": 0,
+      "action": "work",
+      "progress": 0.568,
+      "energy": 0.963,
+      "resources": 0.646,
+      "trust": 0.566,
+      "reputation": 0.557,
+      "future_access": 0.18,
+      "shelter_quality": 0.59,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 0,
+      "notes": []
+    },
+    {
+      "tick": 5,
+      "action": "work",
+      "progress": 3.409,
+      "energy": 0.955,
+      "resources": 0.64,
+      "trust": 0.566,
+      "reputation": 0.557,
+      "future_access": 0.18,
+      "shelter_quality": 0.587,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 0,
+      "notes": []
+    },
+    {
+      "tick": 10,
+      "action": "work",
+      "progress": 6.246,
+      "energy": 0.948,
+      "resources": 0.634,
+      "trust": 0.566,
+      "reputation": 0.557,
+      "future_access": 0.18,
+      "shelter_quality": 0.583,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 0,
+      "notes": []
+    },
+    {
+      "tick": 15,
+      "action": "work",
+      "progress": 9.079,
+      "energy": 0.94,
+      "resources": 0.628,
+      "trust": 0.566,
+      "reputation": 0.557,
+      "future_access": 0.18,
+      "shelter_quality": 0.58,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 0,
+      "notes": []
+    },
+    {
+      "tick": 18,
+      "action": "accept_contract",
+      "progress": 10.781,
+      "energy": 0.917,
+      "resources": 0.624,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.578,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 20,
+      "action": "work",
+      "progress": 11.918,
+      "energy": 0.914,
+      "resources": 0.622,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.576,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 25,
+      "action": "work",
+      "progress": 14.759,
+      "energy": 0.906,
+      "resources": 0.616,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.573,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 30,
+      "action": "work",
+      "progress": 17.596,
+      "energy": 0.899,
+      "resources": 0.61,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.569,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 35,
+      "action": "work",
+      "progress": 20.43,
+      "energy": 0.891,
+      "resources": 0.604,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.566,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 40,
+      "action": "work",
+      "progress": 23.26,
+      "energy": 0.883,
+      "resources": 0.598,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.562,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 45,
+      "action": "work",
+      "progress": 26.087,
+      "energy": 0.875,
+      "resources": 0.592,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.559,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 50,
+      "action": "work",
+      "progress": 28.911,
+      "energy": 0.867,
+      "resources": 0.586,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.555,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 55,
+      "action": "work",
+      "progress": 31.731,
+      "energy": 0.859,
+      "resources": 0.58,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.552,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 60,
+      "action": "work",
+      "progress": 34.548,
+      "energy": 0.851,
+      "resources": 0.574,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.548,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 65,
+      "action": "work",
+      "progress": 37.361,
+      "energy": 0.843,
+      "resources": 0.568,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.545,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 70,
+      "action": "work",
+      "progress": 40.171,
+      "energy": 0.835,
+      "resources": 0.562,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.541,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 75,
+      "action": "work",
+      "progress": 42.978,
+      "energy": 0.827,
+      "resources": 0.556,
+      "trust": 0.601,
+      "reputation": 0.582,
+      "future_access": 0.18,
+      "shelter_quality": 0.538,
+      "social_penalty": 0.0,
+      "commitments_kept": 0,
+      "commitments_broken": 0,
+      "communication_actions": 1,
+      "notes": [
+        "contract accepted"
+      ]
+    },
+    {
+      "tick": 76,
+      "action": "repair_shelter",
+      "progress": 42.377,
+      "energy": 0.775,
+      "resources": 0.554,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.648,
+      "shelter_quality": 0.797,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept"
+      ]
+    },
+    {
+      "tick": 80,
+      "action": "work",
+      "progress": 45.013,
+      "energy": 0.77,
+      "resources": 0.549,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.648,
+      "shelter_quality": 0.794,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept"
+      ]
+    },
+    {
+      "tick": 85,
+      "action": "work",
+      "progress": 48.305,
+      "energy": 0.763,
+      "resources": 0.543,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.648,
+      "shelter_quality": 0.791,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept"
+      ]
+    },
+    {
+      "tick": 90,
+      "action": "work",
+      "progress": 51.595,
+      "energy": 0.756,
+      "resources": 0.537,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.648,
+      "shelter_quality": 0.787,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept"
+      ]
+    },
+    {
+      "tick": 95,
+      "action": "work",
+      "progress": 54.883,
+      "energy": 0.749,
+      "resources": 0.531,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.648,
+      "shelter_quality": 0.784,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept"
+      ]
+    },
+    {
+      "tick": 100,
+      "action": "work",
+      "progress": 58.168,
+      "energy": 0.742,
+      "resources": 0.524,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.648,
+      "shelter_quality": 0.78,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept"
+      ]
+    },
+    {
+      "tick": 105,
+      "action": "work",
+      "progress": 61.451,
+      "energy": 0.735,
+      "resources": 0.518,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.648,
+      "shelter_quality": 0.777,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept"
+      ]
+    },
+    {
+      "tick": 110,
+      "action": "work",
+      "progress": 64.731,
+      "energy": 0.728,
+      "resources": 0.512,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.648,
+      "shelter_quality": 0.773,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept"
+      ]
+    },
+    {
+      "tick": 115,
+      "action": "work",
+      "progress": 68.009,
+      "energy": 0.721,
+      "resources": 0.505,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.648,
+      "shelter_quality": 0.77,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept"
+      ]
+    },
+    {
+      "tick": 120,
+      "action": "work",
+      "progress": 71.284,
+      "energy": 0.714,
+      "resources": 0.499,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.648,
+      "shelter_quality": 0.766,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept"
+      ]
+    },
+    {
+      "tick": 125,
+      "action": "work",
+      "progress": 74.557,
+      "energy": 0.707,
+      "resources": 0.492,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.648,
+      "shelter_quality": 0.763,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept"
+      ]
+    },
+    {
+      "tick": 130,
+      "action": "receive_reciprocity",
+      "progress": 86.454,
+      "energy": 0.7,
+      "resources": 0.669,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.745,
+      "shelter_quality": 0.759,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept",
+        "future reciprocity received"
+      ]
+    },
+    {
+      "tick": 135,
+      "action": "work",
+      "progress": 89.815,
+      "energy": 0.693,
+      "resources": 0.663,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.745,
+      "shelter_quality": 0.756,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept",
+        "future reciprocity received"
+      ]
+    },
+    {
+      "tick": 140,
+      "action": "work",
+      "progress": 93.173,
+      "energy": 0.686,
+      "resources": 0.657,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.745,
+      "shelter_quality": 0.752,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept",
+        "future reciprocity received"
+      ]
+    },
+    {
+      "tick": 145,
+      "action": "work",
+      "progress": 96.529,
+      "energy": 0.679,
+      "resources": 0.651,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.745,
+      "shelter_quality": 0.749,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept",
+        "future reciprocity received"
+      ]
+    },
+    {
+      "tick": 150,
+      "action": "work",
+      "progress": 99.883,
+      "energy": 0.672,
+      "resources": 0.645,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.745,
+      "shelter_quality": 0.745,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept",
+        "future reciprocity received"
+      ]
+    },
+    {
+      "tick": 155,
+      "action": "work",
+      "progress": 103.234,
+      "energy": 0.665,
+      "resources": 0.639,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.745,
+      "shelter_quality": 0.742,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept",
+        "future reciprocity received"
+      ]
+    },
+    {
+      "tick": 160,
+      "action": "work",
+      "progress": 106.582,
+      "energy": 0.658,
+      "resources": 0.633,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.745,
+      "shelter_quality": 0.738,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept",
+        "future reciprocity received"
+      ]
+    },
+    {
+      "tick": 165,
+      "action": "work",
+      "progress": 109.929,
+      "energy": 0.651,
+      "resources": 0.627,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.745,
+      "shelter_quality": 0.735,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept",
+        "future reciprocity received"
+      ]
+    },
+    {
+      "tick": 170,
+      "action": "work",
+      "progress": 113.272,
+      "energy": 0.644,
+      "resources": 0.621,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.745,
+      "shelter_quality": 0.731,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept",
+        "future reciprocity received"
+      ]
+    },
+    {
+      "tick": 175,
+      "action": "work",
+      "progress": 116.614,
+      "energy": 0.637,
+      "resources": 0.615,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.745,
+      "shelter_quality": 0.728,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept",
+        "future reciprocity received"
+      ]
+    },
+    {
+      "tick": 179,
+      "action": "work",
+      "progress": 119.285,
+      "energy": 0.631,
+      "resources": 0.61,
+      "trust": 0.865,
+      "reputation": 0.833,
+      "future_access": 0.745,
+      "shelter_quality": 0.725,
+      "social_penalty": 0.0,
+      "commitments_kept": 1,
+      "commitments_broken": 0,
+      "communication_actions": 2,
+      "notes": [
+        "contract accepted",
+        "promise kept",
+        "future reciprocity received"
+      ]
+    }
+  ],
+  "trace_note": "Contracts, trust, ownership, repair debt, communication, and continuity are abstract control variables."
+};

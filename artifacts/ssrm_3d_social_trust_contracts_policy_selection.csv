@@ -1,0 +1,7 @@
+scenario,scenario_name,selected_policy,selected_uses_commitment_memory,selected_uses_identity_memory,selected_uses_communication_action,selected_uses_trust_update,selected_uses_ownership_memory,selected_uses_repair_debt_memory,selected_uses_continuity,train_reward,no_contract_train_reward,train_gain_over_no_contract
+0,visible_no_contract_control,no_contract_baseline,False,False,False,False,False,False,False,201.84013124637914,201.84056035696415,-0.0004291105850029453
+1,borrowed_tool_return_contract,tool_return_contract_keeper,True,True,True,True,True,False,False,329.3286035441003,-40.51330152941003,369.84190507351036
+2,hazard_warning_promise,hazard_warning_contract_keeper,True,True,True,True,False,False,False,323.22905702693924,-73.77140549538665,397.0004625223259
+3,reciprocal_resource_sharing,resource_reciprocity_contract_keeper,True,True,True,True,False,False,False,158.6030877058732,-123.63491621304891,282.2380039189221
+4,shared_shelter_repair_contract,shelter_repair_contract_keeper,True,True,True,True,False,True,False,330.40163546919115,-61.521481802067996,391.9231172712591
+5,restore_contract_continuity,continuity_contract_keeper,True,True,True,True,True,True,True,329.8815008397612,-104.02786673324721,433.9093675730084

@@ -1626,6 +1626,35 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_tool_shelter_degradation_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_tool_shelter_degradation_results.js)
 
+## SSRM-3D Social Trust/Contracts Pressure
+
+Run the sixth persistent-pressure layer from report 74.
+
+This experiment treats promises, tool return, hazard warnings, resource sharing, shelter repair debt, trust updates, ownership, communication, and continuity as abstract control variables. It asks whether contracts become self-relevant only when delayed social consequences change future access, help, tools, shelter safety, or social punishment.
+
+Canonical result:
+
+- visible no-contract control rejects contract machinery;
+- borrowed-tool return fails under no-commitment, no-identity, no-communication, no-trust-update, and no-ownership ablations;
+- hazard-warning promises fail under no-commitment, no-identity, no-communication, and no-trust-update ablations;
+- reciprocal resource sharing fails under no-commitment, no-identity, no-communication, and no-trust-update ablations;
+- shared shelter repair fails under no-repair-debt plus commitment, identity, communication, and trust ablations;
+- restore pressure fails under no-continuity plus commitment, identity, ownership, repair-debt, communication, and trust ablations.
+
+Implemented version:
+
+- [SSRM-3D social trust/contracts script](../experiments/ssrm_3d_social_trust_contracts.py)
+- [SSRM-3D social trust/contracts report](80_ssrm_3d_social_trust_contracts_report.md)
+- [social trust/contracts visualization](../visualizations/ssrm_3d_social_trust_contracts.html)
+- [evaluation CSV](../artifacts/ssrm_3d_social_trust_contracts_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_social_trust_contracts_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_social_trust_contracts_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_social_trust_contracts_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_social_trust_contracts_trace.json)
+- [JSON results](../artifacts/ssrm_3d_social_trust_contracts_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_social_trust_contracts_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_social_trust_contracts_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

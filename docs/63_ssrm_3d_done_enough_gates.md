@@ -193,6 +193,8 @@ Existing evidence includes self-state ablation in SSRM-3D, learned observer self
 
 [Report 84](84_ssrm_3d_development_skill_learning_report.md) adds a pressure-layer ablation check for skill memory, practice planning, capability self-state, fatigue management, injury adaptation, transfer modeling, teaching help, training tools, goal feasibility, and continuity. It strengthens the targeted-ablation pattern for designed policies, but it does not replace learned-controller discovery of curriculum, transfer, or competence self-modeling.
 
+[Report 85](85_ssrm_3d_dependent_care_report.md) adds a pressure-layer ablation check for dependent state, identity memory, protection planning, resource sharing, repair care, teaching support, shelter coordination, promise commitment, social trust, priority arbitration, and continuity. It strengthens the targeted-ablation pattern for designed policies, but it does not replace learned-controller discovery of caregiving, sacrifice, or persistent social obligations.
+
 Failure interpretation:
 
 - If removing self-state hurts everywhere, the environment is biased toward self variables.

@@ -100,15 +100,17 @@ Some selected policies carry extra channels whose ablations are neutral in that 
 - Skill dynamics are abstract control variables, not development simulation.
 - Practice, teaching, transfer, and tool policies are designed channels.
 - The selected planner is not an online RL agent discovering curriculum learning from scratch.
-- This does not yet include dependent care or irreversible loss.
+- This does not yet include irreversible loss.
 
 ## Next Test
 
-The next pressure-layer step should add dependent care without biological reproduction:
+The implemented follow-up adds dependent care without biological reproduction:
 
 - fragile companions should create asymmetric capability and protection tradeoffs;
 - teaching, repair, shelter, food/water, social trust, and promises should become useful only when another persistent agent depends on them;
 - ablations should separate caregiving state, dependent identity memory, teaching, sacrifice/priority arbitration, social trust, and continuity.
+
+Implemented by [report 85](85_ssrm_3d_dependent_care_report.md).
 
 ## Visualization
 

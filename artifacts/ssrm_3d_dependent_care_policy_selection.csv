@@ -1,0 +1,7 @@
+scenario,scenario_name,selected_policy,selected_uses_dependent_state,selected_uses_identity_memory,selected_uses_protection_planning,selected_uses_resource_sharing,selected_uses_repair_care,selected_uses_teaching_support,selected_uses_shelter_coordination,selected_uses_promise_commitment,selected_uses_social_trust,selected_uses_priority_arbitration,selected_uses_continuity,train_reward,self_only_train_reward,train_gain_over_self_only
+0,no_dependent_control,self_only_baseline,False,False,False,False,False,False,False,False,False,False,False,250.01526984551597,250.01435548281694,0.0009143626990351095
+1,fragile_companion_protection,protection_shelter_planner,True,True,True,False,False,False,True,False,False,True,False,260.672296086001,-996.7884994191099,1257.460795505111
+2,resource_sharing_tradeoff,sharing_priority_planner,True,True,False,True,False,False,False,False,False,True,False,235.53041652401146,-842.792128270493,1078.3225447945044
+3,repair_teaching_burden,repair_teaching_planner,True,True,False,False,True,True,False,False,False,True,False,246.6485637228586,-943.105422835908,1189.7539865587667
+4,promise_trust_care,promise_trust_planner,True,True,False,True,False,False,False,True,True,True,False,293.33515848277506,-1134.3802878664676,1427.7154463492427
+5,restore_dependent_continuity,continuity_care_planner,True,True,True,True,True,True,True,True,True,True,True,288.2338766224768,-1614.3169561262075,1902.5508327486843

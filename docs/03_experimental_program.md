@@ -1771,6 +1771,35 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_development_skill_learning_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_development_skill_learning_results.js)
 
+## SSRM-3D Dependent Care Pressure
+
+Run the eleventh persistent-pressure layer from report 74.
+
+This experiment treats dependent state, identity memory, protection planning, resource sharing, repair care, teaching support, shelter coordination, promise commitments, social trust, priority arbitration, and continuity as abstract control variables. It asks whether dependent care becomes self-relevant only when another persistent vulnerable agent changes the tested agent's future options, obligations, resources, social access, or restore-time control.
+
+Canonical result:
+
+- no-dependent control rejects care machinery;
+- fragile-companion protection pressure fails under no-dependent-state, no-identity-memory, no-protection-planning, no-shelter-coordination, no-priority-arbitration, and self-only ablations;
+- resource-sharing pressure fails under no-dependent-state, no-identity-memory, no-resource-sharing, no-priority-arbitration, and self-only ablations;
+- repair/teaching burden pressure fails under no-dependent-state, no-identity-memory, no-repair-care, no-teaching-support, no-priority-arbitration, and self-only ablations;
+- promise/trust care pressure fails under no-dependent-state, no-identity-memory, no-resource-sharing, no-promise-commitment, no-social-trust, and no-priority-arbitration ablations;
+- restore pressure fails under no-continuity plus dependent state, identity, protection, sharing, repair, teaching, shelter, promise, social trust, and priority ablations.
+
+Implemented version:
+
+- [SSRM-3D dependent care script](../experiments/ssrm_3d_dependent_care.py)
+- [SSRM-3D dependent care report](85_ssrm_3d_dependent_care_report.md)
+- [dependent care visualization](../visualizations/ssrm_3d_dependent_care.html)
+- [evaluation CSV](../artifacts/ssrm_3d_dependent_care_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_dependent_care_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_dependent_care_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_dependent_care_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_dependent_care_trace.json)
+- [JSON results](../artifacts/ssrm_3d_dependent_care_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_dependent_care_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_dependent_care_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

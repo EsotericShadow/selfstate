@@ -156,7 +156,7 @@
       <div class="row"><span class="dot" style="background:var(--self)"></span><span><span class="strong">Self-state:</span> energy, hydration, fatigue, injury, sleep/rest, sensor quality.</span></div>
       <div class="row"><span class="dot" style="background:var(--disease)"></span><span><span class="strong">Illness:</span> exposure, latent infection, symptoms, recovery, immunity, contagion.</span></div>
       <div class="row"><span class="dot" style="background:var(--tool)"></span><span><span class="strong">Tools:</span> markers, alarms, caches, medicine, clean-water and shelter sanitation tools.</span></div>
-      <div class="row"><span class="dot" style="background:var(--social)"></span><span><span class="strong">Social:</span> trust, care debt, quarantine, avoidance, deception, shared shelter norms.</span></div>
+      <div class="row"><span class="dot" style="background:var(--social)"></span><span><span class="strong">Social:</span> trust, promises, care debt, dependent care, quarantine, avoidance, deception, shared shelter norms.</span></div>
       <div class="row"><span class="dot" style="background:var(--perception)"></span><span><span class="strong">Perception:</span> cone vision, spatial audio, occlusion, light, hearing/vision damage.</span></div>
     </div>
 
@@ -183,6 +183,10 @@
         <li>Social trust/contracts</li>
         <li>Predator/threat agents</li>
         <li>Resource ecology</li>
+        <li>Injury/disability adaptation</li>
+        <li>Development/skill learning</li>
+        <li>Dependent care</li>
+        <li>Irreversible loss</li>
       </ol>
     </div>
 
@@ -231,6 +235,7 @@
       { key: "disease", label: "illness/disease", x: 0.24, y: 0.56, color: colors.disease },
       { key: "tool", label: "tools/external memory", x: 0.55, y: 0.62, color: colors.tool },
       { key: "social", label: "social memory", x: 0.78, y: 0.55, color: colors.social },
+      { key: "care", label: "dependent care", x: 0.36, y: 0.76, color: colors.social },
       { key: "continuity", label: "event-log continuity", x: 0.50, y: 0.86, color: "#ffffff" },
     ];
 
@@ -241,6 +246,9 @@
       ["disease", "self"],
       ["self", "tool"],
       ["tool", "social"],
+      ["social", "care"],
+      ["care", "continuity"],
+      ["care", "tool"],
       ["social", "disease"],
       ["disease", "continuity"],
       ["social", "continuity"],

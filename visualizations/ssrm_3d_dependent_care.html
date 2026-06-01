@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Dependent Care Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111311;
+      --panel: #171b19;
+      --line: rgba(238, 244, 236, 0.15);
+      --text: #eef4ec;
+      --muted: #a9b5aa;
+      --self: #83d18a;
+      --dependent: #7fc7f2;
+      --trust: #bfa3f3;
+      --resource: #e6c765;
+      --risk: #ee716a;
+      --shelter: #f39d66;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 430px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #0c0f0d;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .event,
+    .outcome-row,
+    .verdict-row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: #202622;
+      height: 32px;
+      padding: 0 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      padding: 8px;
+      min-height: 58px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 18px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 120px minmax(0, 1fr) 48px;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .bar {
+      height: 10px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      width: 0;
+    }
+
+    .event {
+      border-left: 3px solid var(--line);
+      padding-left: 8px;
+    }
+
+    .outcome-row,
+    .verdict-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      border-top: 1px solid rgba(238, 244, 236, 0.08);
+      padding-top: 6px;
+    }
+
+    .verdict-row {
+      grid-template-columns: 10px minmax(0, 1fr) auto;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .value {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    @media (max-width: 940px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 58vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Dependent Care</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+
+    <div class="controls">
+      <button id="play" type="button">Pause</button>
+      <input id="scrub" type="range" min="0" max="0" value="0">
+    </div>
+
+    <section class="metrics">
+      <div class="metric"><span>Tick</span><strong id="tick">0</strong></div>
+      <div class="metric"><span>Action</span><strong id="action">-</strong></div>
+      <div class="metric"><span>Progress</span><strong id="progress">0.00</strong></div>
+      <div class="metric"><span>Dependent</span><strong id="dependent">0.00</strong></div>
+    </section>
+
+    <section class="section" id="bars"></section>
+
+    <section class="section">
+      <h2>Recent Events</h2>
+      <div id="events"></div>
+    </section>
+
+    <section class="section">
+      <h2>Ablation Outcomes</h2>
+      <div id="outcomes"></div>
+    </section>
+
+    <section class="section">
+      <h2>Verdict Rows</h2>
+      <div id="verdicts"></div>
+    </section>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_dependent_care_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_dependent_care_results.js"></script>
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const subtitle = document.getElementById("subtitle");
+    const playButton = document.getElementById("play");
+    const scrub = document.getElementById("scrub");
+    const fields = {
+      tick: document.getElementById("tick"),
+      action: document.getElementById("action"),
+      progress: document.getElementById("progress"),
+      dependent: document.getElementById("dependent"),
+      bars: document.getElementById("bars"),
+      events: document.getElementById("events"),
+      outcomes: document.getElementById("outcomes"),
+      verdicts: document.getElementById("verdicts"),
+    };
+
+    const barDefs = [
+      ["dependent_health", "Health", "var(--dependent)", 1],
+      ["dependent_energy", "Dep energy", "var(--dependent)", 1],
+      ["dependent_skill", "Skill", "var(--self)", 1],
+      ["dependent_safety", "Safety", "var(--shelter)", 1],
+      ["dependent_trust", "Trust", "var(--trust)", 1],
+      ["resource_level", "Resources", "var(--resource)", 1],
+      ["shelter_safety", "Shelter", "var(--shelter)", 1],
+      ["promise_standing", "Promise", "var(--trust)", 1],
+      ["social_access", "Social access", "var(--trust)", 1],
+      ["stress", "Stress", "var(--risk)", 1.2],
+      ["energy", "Self energy", "var(--self)", 1],
+      ["integrity", "Self integrity", "var(--self)", 1],
+    ];
+
+    let trace = window.SSRM_3D_DEPENDENT_CARE_TRACE;
+    let results = window.SSRM_3D_DEPENDENT_CARE_RESULTS;
+    let frameIndex = 0;
+    let playing = true;
+    let lastFrameTime = 0;
+
+    async function ensureData() {
+      if (!trace) {
+        const response = await fetch("../artifacts/ssrm_3d_dependent_care_trace.json");
+        trace = await response.json();
+      }
+      if (!results) {
+        const response = await fetch("../artifacts/ssrm_3d_dependent_care_results.json");
+        results = await response.json();
+      }
+    }
+
+    function fmt(value, digits = 2) {
+      const number = Number(value || 0);
+      return number.toFixed(digits);
+    }
+
+    function cssColor(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name.replace("var(", "").replace(")", "")).trim();
+    }
+
+    function buildBars() {
+      fields.bars.innerHTML = "";
+      for (const [key, label, color] of barDefs) {
+        const row = document.createElement("div");
+        row.className = "row";
+        row.innerHTML = `<span>${label}</span><div class="bar"><span style="background:${color}"></span></div><span class="value">0.00</span>`;
+        row.dataset.key = key;
+        fields.bars.appendChild(row);
+      }
+    }
+
+    function buildOutcomes() {
+      const outcomes = trace.condition_outcomes || {};
+      const keys = [
+        "full_control",
+        "no_dependent_state",
+        "no_identity_memory",
+        "no_protection_planning",
+        "no_resource_sharing",
+        "no_repair_care",
+        "no_teaching_support",
+        "no_shelter_coordination",
+        "no_promise_commitment",
+        "no_social_trust",
+        "no_priority_arbitration",
+        "no_continuity",
+        "self_only_baseline",
+      ];
+      fields.outcomes.innerHTML = "";
+      for (const key of keys) {
+        const row = outcomes[key];
+        if (!row) continue;
+        const div = document.createElement("div");
+        div.className = "outcome-row";
+        div.innerHTML = `<span>${key}</span><span class="value">${fmt(row.mean_reward, 1)}</span>`;
+        fields.outcomes.appendChild(div);
+      }
+    }
+
+    function buildVerdicts() {
+      fields.verdicts.innerHTML = "";
+      for (const row of results.verdict || []) {
+        const div = document.createElement("div");
+        div.className = "verdict-row";
+        const color = row.supports_dependent_care_precursor ? "var(--self)" : "var(--risk)";
+        const loss = Math.max(
+          row.no_dependent_state_loss,
+          row.no_identity_memory_loss,
+          row.no_protection_planning_loss,
+          row.no_resource_sharing_loss,
+          row.no_repair_care_loss,
+          row.no_teaching_support_loss,
+          row.no_shelter_coordination_loss,
+          row.no_promise_commitment_loss,
+          row.no_social_trust_loss,
+          row.no_priority_arbitration_loss,
+          row.no_continuity_loss,
+        );
+        div.innerHTML = `<span class="dot" style="background:${color}"></span><span>${row.scenario_name}</span><span class="value">${fmt(loss, 1)}</span>`;
+        fields.verdicts.appendChild(div);
+      }
+    }
+
+    function resize() {
+      const rect = canvas.getBoundingClientRect();
+      const scale = window.devicePixelRatio || 1;
+      canvas.width = Math.max(1, Math.floor(rect.width * scale));
+      canvas.height = Math.max(1, Math.floor(rect.height * scale));
+      ctx.setTransform(scale, 0, 0, scale, 0, 0);
+    }
+
+    function draw(frame) {
+      const width = canvas.clientWidth;
+      const height = canvas.clientHeight;
+      ctx.clearRect(0, 0, width, height);
+
+      const pad = Math.max(28, Math.min(width, height) * 0.055);
+      const laneY = height * 0.62;
+      const laneX = pad;
+      const laneW = width - pad * 2;
+      const progressNorm = Math.min(1, frame.progress / (trace.scenario.required_progress || 1));
+      const selfX = laneX + laneW * progressNorm;
+      const selfY = laneY - frame.energy * 46 + frame.stress * 28;
+      const depX = Math.max(pad + 22, selfX - 52 + frame.dependent_skill * 26);
+      const depY = selfY + 40 - frame.dependent_safety * 26;
+
+      ctx.strokeStyle = "rgba(238,244,236,0.11)";
+      ctx.lineWidth = 1;
+      for (let i = 0; i < 8; i += 1) {
+        const y = pad + (height - pad * 2) * (i / 7);
+        ctx.beginPath();
+        ctx.moveTo(pad, y);
+        ctx.lineTo(width - pad, y);
+        ctx.stroke();
+      }
+
+      ctx.strokeStyle = "rgba(238,244,236,0.34)";
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(laneX, laneY);
+      ctx.lineTo(laneX + laneW, laneY);
+      ctx.stroke();
+
+      const shelterX = width - pad * 3.6;
+      const shelterY = pad * 1.4;
+      ctx.fillStyle = "rgba(243,157,102,0.14)";
+      ctx.fillRect(shelterX, shelterY, 96, 70);
+      ctx.strokeStyle = cssColor("var(--shelter)");
+      ctx.lineWidth = 2;
+      ctx.strokeRect(shelterX, shelterY, 96, 70);
+      ctx.fillStyle = cssColor("var(--shelter)");
+      ctx.fillRect(shelterX, shelterY + 70 - frame.shelter_safety * 70, 96, frame.shelter_safety * 70);
+
+      const resourceH = 150 * frame.resource_level;
+      ctx.fillStyle = "rgba(230,199,101,0.20)";
+      ctx.fillRect(pad * 1.4, height - pad - resourceH, 52, resourceH);
+      ctx.strokeStyle = cssColor("var(--resource)");
+      ctx.strokeRect(pad * 1.4, height - pad - 150, 52, 150);
+
+      ctx.strokeStyle = cssColor("var(--trust)");
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(width - pad * 2.4, height - pad * 2.0, 24 + frame.social_access * 42, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(width - pad * 2.4, height - pad * 2.0, 12 + frame.promise_standing * 30, 0, Math.PI * 2);
+      ctx.stroke();
+
+      ctx.fillStyle = "rgba(238,113,106,0.15)";
+      ctx.beginPath();
+      ctx.arc(selfX, selfY, 36 + frame.stress * 40, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.strokeStyle = "rgba(238,244,236,0.34)";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(selfX, selfY);
+      ctx.lineTo(depX, depY);
+      ctx.stroke();
+
+      ctx.fillStyle = cssColor("var(--self)");
+      ctx.beginPath();
+      ctx.arc(selfX, selfY, 15 + frame.integrity * 8, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = cssColor("var(--dependent)");
+      ctx.beginPath();
+      ctx.arc(depX, depY, 10 + frame.dependent_health * 9, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = cssColor("var(--risk)");
+      ctx.beginPath();
+      ctx.arc(depX + 11, depY - 10, 3 + (1 - frame.dependent_safety) * 8, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = "rgba(238,244,236,0.88)";
+      ctx.font = "13px ui-sans-serif, system-ui";
+      ctx.fillText(`policy: ${trace.policy.name}`, pad, pad + 18);
+      ctx.fillText(`scenario: ${trace.scenario.name}`, pad, pad + 38);
+      ctx.fillText(`neglect ${frame.neglect_events} / failures ${frame.dependent_failures}`, width - pad - 190, height - pad - 16);
+    }
+
+    function updateFields(frame) {
+      const dependentMean = (
+        Number(frame.dependent_health || 0)
+        + Number(frame.dependent_energy || 0)
+        + Number(frame.dependent_skill || 0)
+        + Number(frame.dependent_safety || 0)
+        + Number(frame.dependent_trust || 0)
+      ) / 5;
+
+      fields.tick.textContent = String(frame.tick);
+      fields.action.textContent = frame.action.replaceAll("_", " ");
+      fields.progress.textContent = fmt(frame.progress, 1);
+      fields.dependent.textContent = fmt(dependentMean, 2);
+
+      for (const [key, , , maxValue] of barDefs) {
+        const row = fields.bars.querySelector(`[data-key="${key}"]`);
+        if (!row) continue;
+        const value = Number(frame[key] || 0);
+        row.querySelector(".bar > span").style.width = `${Math.min(100, Math.max(0, (value / maxValue) * 100))}%`;
+        row.querySelector(".value").textContent = fmt(value, 2);
+      }
+
+      fields.events.innerHTML = "";
+      const notes = frame.notes && frame.notes.length ? frame.notes : ["nominal work loop"];
+      for (const note of notes.slice(-3)) {
+        const div = document.createElement("div");
+        div.className = "event";
+        div.textContent = note;
+        fields.events.appendChild(div);
+      }
+    }
+
+    function render() {
+      const frame = trace.frames[frameIndex] || trace.frames[0];
+      scrub.value = String(frameIndex);
+      draw(frame);
+      updateFields(frame);
+    }
+
+    function animate(time) {
+      if (playing && time - lastFrameTime > 150) {
+        frameIndex = (frameIndex + 1) % trace.frames.length;
+        lastFrameTime = time;
+        render();
+      }
+      requestAnimationFrame(animate);
+    }
+
+    async function init() {
+      await ensureData();
+      subtitle.textContent = `${trace.scenario.name} / ${trace.policy.name}`;
+      scrub.max = String(Math.max(0, trace.frames.length - 1));
+      buildBars();
+      buildOutcomes();
+      buildVerdicts();
+      resize();
+      render();
+      requestAnimationFrame(animate);
+    }
+
+    playButton.addEventListener("click", () => {
+      playing = !playing;
+      playButton.textContent = playing ? "Pause" : "Play";
+    });
+
+    scrub.addEventListener("input", () => {
+      frameIndex = Number(scrub.value);
+      render();
+    });
+
+    window.addEventListener("resize", () => {
+      resize();
+      render();
+    });
+
+    init().catch((error) => {
+      subtitle.textContent = `Could not load trace: ${error.message}`;
+    });
+  </script>
+</body>
+</html>

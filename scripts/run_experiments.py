@@ -782,6 +782,18 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_social_pressure.py",
+        "--train-episodes",
+        "64",
+        "--eval-episodes",
+        "96",
+        "--candidate-count",
+        "160",
+        "--seed",
+        "20260611",
+    ],
+    [
+        sys.executable,
         "experiments/learned_bottleneck_discovery.py",
         "--episodes",
         "500",

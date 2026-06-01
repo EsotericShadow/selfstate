@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Social Pressure Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101210;
+      --panel: rgba(20, 24, 21, 0.9);
+      --line: rgba(244, 247, 241, 0.18);
+      --text: #f4f7f1;
+      --muted: #aab5aa;
+      --agent: #f2bd64;
+      --helper: #78d88d;
+      --trader: #78b8ff;
+      --opportunist: #ff7169;
+      --deceiver: #c8a2ff;
+      --tool: #ffd36d;
+      --resource: #9adf8f;
+      --hidden: #83c7ff;
+      --shelter: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 380px;
+      min-height: 100vh;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #121713;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .label,
+    .legend span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+    }
+
+    .value {
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .legend {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 7px;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: #1d241e;
+      color: var(--text);
+      padding: 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 64vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Social Pressure Trace</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+    <div class="section">
+      <div class="row"><span class="label">tick</span><span class="value" id="tick">0</span></div>
+      <div class="row"><span class="label">event</span><span class="value" id="event">-</span></div>
+      <div class="row"><span class="label">action</span><span class="value" id="action">-</span></div>
+      <div class="row"><span class="label">energy</span><span class="value" id="energy">0.00</span></div>
+      <div class="row"><span class="label">integrity</span><span class="value" id="integrity">0.00</span></div>
+      <div class="row"><span class="label">resources</span><span class="value" id="resources">0</span></div>
+      <div class="row"><span class="label">reputation</span><span class="value" id="reputation">0.00</span></div>
+      <div class="row"><span class="label">reward</span><span class="value" id="reward">0.0</span></div>
+    </div>
+    <div class="section">
+      <input id="scrubber" type="range" min="0" max="0" value="0">
+      <button type="button" id="play">Pause</button>
+    </div>
+    <div class="section legend">
+      <span><i class="dot" style="background: var(--agent)"></i>tested agent</span>
+      <span><i class="dot" style="background: var(--helper)"></i>helper</span>
+      <span><i class="dot" style="background: var(--trader)"></i>trader</span>
+      <span><i class="dot" style="background: var(--opportunist)"></i>opportunist</span>
+      <span><i class="dot" style="background: var(--deceiver)"></i>deceiver</span>
+      <span><i class="dot" style="background: var(--tool)"></i>shared tool</span>
+      <span><i class="dot" style="background: var(--resource)"></i>visible resource</span>
+      <span><i class="dot" style="background: var(--hidden)"></i>hidden resource</span>
+    </div>
+    <div class="section">
+      <h2>Social Memory</h2>
+      <p id="memory">-</p>
+    </div>
+    <div class="section">
+      <h2>Gate 3 Reading</h2>
+      <p>The trace shows identity memory, reputation, vulnerability, and shared-tool state as control variables under social pressure.</p>
+    </div>
+  </aside>
+
+  <script>
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const scrubber = document.getElementById("scrubber");
+    const playButton = document.getElementById("play");
+    let trace = null;
+    let frameIndex = 0;
+    let playing = true;
+
+    function resize() {
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.floor(canvas.clientWidth * ratio);
+      canvas.height = Math.floor(canvas.clientHeight * ratio);
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      draw();
+    }
+
+    function toScreen(x, z) {
+      const pad = 36;
+      const size = trace ? trace.world.size : 88;
+      const w = canvas.clientWidth - pad * 2;
+      const h = canvas.clientHeight - pad * 2;
+      return [
+        pad + ((x + size / 2) / size) * w,
+        pad + ((z + size / 2) / size) * h,
+      ];
+    }
+
+    function circle(x, z, radius, color, stroke) {
+      const [sx, sy] = toScreen(x, z);
+      ctx.beginPath();
+      ctx.arc(sx, sy, radius, 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.fill();
+      if (stroke) {
+        ctx.strokeStyle = stroke;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+      }
+    }
+
+    function roleColor(role) {
+      if (role === "helper") return "#78d88d";
+      if (role === "trader") return "#78b8ff";
+      if (role === "opportunist") return "#ff7169";
+      if (role === "deceiver") return "#c8a2ff";
+      return "#aab5aa";
+    }
+
+    function drawGrid() {
+      ctx.fillStyle = "#121713";
+      ctx.fillRect(0, 0, canvas.clientWidth, canvas.clientHeight);
+      ctx.strokeStyle = "rgba(244,247,241,0.12)";
+      ctx.lineWidth = 1;
+      for (let i = -44; i <= 44; i += 11) {
+        const [x1, y1] = toScreen(-44, i);
+        const [x2, y2] = toScreen(44, i);
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+        const [x3, y3] = toScreen(i, -44);
+        const [x4, y4] = toScreen(i, 44);
+        ctx.beginPath();
+        ctx.moveTo(x3, y3);
+        ctx.lineTo(x4, y4);
+        ctx.stroke();
+      }
+    }
+
+    function draw() {
+      if (!trace) {
+        return;
+      }
+      const frame = trace.frames[frameIndex];
+      drawGrid();
+      trace.world.visible_resources.forEach((resource) => circle(resource.x, resource.z, 5, "#9adf8f", null));
+      circle(trace.world.hidden_resource.x, trace.world.hidden_resource.z, 6, "#83c7ff", "rgba(255,255,255,0.35)");
+      circle(trace.world.shelter.x, trace.world.shelter.z, 8, "#ffffff", "#78b8ff");
+      frame.tools.forEach((tool) => {
+        if (tool.active) {
+          circle(tool.x, tool.z, 6, "#ffd36d", "#101210");
+        }
+      });
+      frame.agents.forEach((agent) => {
+        circle(agent.x, agent.z, 7, roleColor(agent.role), "#101210");
+        const [tx, ty] = toScreen(agent.x, agent.z);
+        ctx.fillStyle = "rgba(244,247,241,0.86)";
+        ctx.font = "11px ui-sans-serif, system-ui";
+        ctx.fillText(agent.id.split("_")[0], tx + 8, ty - 8);
+      });
+      ctx.strokeStyle = "#f2bd64";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      trace.frames.slice(0, frameIndex + 1).forEach((item, index) => {
+        const [x, y] = toScreen(item.x, item.z);
+        if (index === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      ctx.stroke();
+      const [tx, ty] = toScreen(frame.target[0], frame.target[1]);
+      const [ax, ay] = toScreen(frame.x, frame.z);
+      ctx.strokeStyle = "rgba(242,189,100,0.55)";
+      ctx.setLineDash([5, 5]);
+      ctx.beginPath();
+      ctx.moveTo(ax, ay);
+      ctx.lineTo(tx, ty);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      circle(frame.x, frame.z, 7, "#f2bd64", "#fff0c8");
+      document.getElementById("tick").textContent = String(frame.tick);
+      document.getElementById("event").textContent = frame.event;
+      document.getElementById("action").textContent = frame.action;
+      document.getElementById("energy").textContent = frame.energy.toFixed(2);
+      document.getElementById("integrity").textContent = frame.integrity.toFixed(2);
+      document.getElementById("resources").textContent = String(frame.resources);
+      document.getElementById("reputation").textContent = frame.reputation.toFixed(2);
+      document.getElementById("reward").textContent = frame.reward.toFixed(1);
+      document.getElementById("memory").textContent = Object.entries(frame.memory)
+        .map(([key, value]) => key + ": " + Number(value).toFixed(2))
+        .join("  ");
+      scrubber.value = String(frameIndex);
+    }
+
+    function step() {
+      if (playing && trace) {
+        frameIndex = (frameIndex + 1) % trace.frames.length;
+        draw();
+      }
+      window.requestAnimationFrame(step);
+    }
+
+    playButton.addEventListener("click", () => {
+      playing = !playing;
+      playButton.textContent = playing ? "Pause" : "Play";
+    });
+    scrubber.addEventListener("input", () => {
+      frameIndex = Number(scrubber.value);
+      draw();
+    });
+    window.addEventListener("resize", resize);
+
+    fetch("../artifacts/ssrm_3d_social_pressure_trace.json")
+      .then((response) => response.json())
+      .then((data) => {
+        trace = data;
+        scrubber.max = String(trace.frames.length - 1);
+        document.getElementById("subtitle").textContent = trace.scenario.name + " / " + trace.policy.name;
+        resize();
+        step();
+      })
+      .catch((error) => {
+        document.getElementById("subtitle").textContent = "Could not load trace: " + error.message;
+      });
+  </script>
+</body>
+</html>

@@ -93,7 +93,7 @@ The next version should move tool discovery into the learned controller:
 - remove explicit candidate tool policies;
 - probe whether policy state learns when external memory is worth building;
 - ablate tool access, attention mixing, continuity memory, and self-state separately;
-- add social pressure where tools can be shared, stolen, trusted, or sabotaged.
+- combine with the social-pressure precursor so tools can be shared, stolen, trusted, or sabotaged by agents with persistent memory.
 
 That is the real Gate 2 to Gate 3 bridge.
 

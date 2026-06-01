@@ -1,0 +1,6 @@
+scenario,scenario_name,selected_policy,selected_uses_social,selected_uses_identity_memory,selected_uses_self_state_social,selected_uses_tools,train_reward,no_social_train_reward,train_gain_over_no_social
+0,visible_resource_social_control,no_social_baseline,False,False,False,False,166.0,166.0,0.0
+1,cooperative_reputation_repair,candidate_123,True,True,True,True,193.359375,132.875,60.484375
+2,opportunist_vulnerability,candidate_68,True,True,True,True,140.890625,90.0,50.890625
+3,deceptive_route_identity,full_social_identity,True,True,True,True,196.0,112.296875,83.703125
+4,shared_tool_trust_conflict,candidate_9,True,True,True,True,184.0625,-36.0,220.0625

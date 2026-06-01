@@ -83,9 +83,13 @@ Pass condition:
 
 Current status:
 
-Open, with only a weak precursor.
+Partially passed by [report 66](66_ssrm_3d_social_pressure_report.md).
 
-SSRM-3D stage 6 has a simple competitor. That is useful as a first social pressure, but it is not enough. There is no reputation, memory of prior interaction, communication, deception, shared tool use, or trust.
+The SSRM-3D social-pressure precursor gives other agents persistent identities, resource needs, trust toward the tested agent, and helper, trader, opportunist, and deceiver policies. Return selection rejects social machinery in the visible-resource control, selects social identity policies under cooperative repair, opportunist vulnerability, deceptive-route, and shared-tool pressure, and loses the advantage when identity memory, social self-state, or shared-tool access is ablated.
+
+Remaining weakness:
+
+The successful policies are return-selected from candidate social-control policies, not learned end-to-end by the SSRM-3D controller. The social agents use simple role policies rather than open-ended communication, learned deception, or long multi-episode reputation. This means Gate 3 has a useful social-pressure precursor, but not a full pass.
 
 Failure interpretation:
 
@@ -170,8 +174,10 @@ Gate 1 has a useful learned-control precursor.
 
 Gate 2 has a partial externalized-cognition precursor.
 
-Gate 3 remains open.
+Gate 3 has a partial social-pressure precursor.
 
 Gate 4 is partially supported, but the ablation suite is incomplete.
 
-The strongest next experiment is learned tool discovery inside the SSRM-3D controller, then richer social pressure where tools can be shared, trusted, stolen, or sabotaged.
+The strongest next experiment is learned tool and social discovery inside the SSRM-3D controller, then a richer repeated-interaction society where tools can be shared, trusted, stolen, or sabotaged.
+
+The stronger social ecology should make communication costly. Signals, names, promises, gossip, play, humour, and bonding should not be directly rewarded; they should survive only when they preserve future options, reduce uncertainty, protect commitments, or improve cooperation under social memory.

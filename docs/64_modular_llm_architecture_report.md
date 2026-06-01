@@ -107,7 +107,7 @@ The next version should add a specific LLM-stream ablation to the SSRM-3D done-e
 | Full-world LLM | May improve explanation, but should not replace self-state and arbiter layers without latency or control costs. |
 | Corrupted self packet | LLM recommendations become specifically wrong in ways predicted by the corrupted self-state. |
 
-This test belongs after tool-making and richer social pressure exist, because those are the regimes where slow language reasoning should actually matter.
+This test belongs after tool-making and richer social pressure are integrated into learned-controller runs, because those are the regimes where slow language reasoning should actually matter.
 
 ## Visualization
 

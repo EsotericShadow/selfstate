@@ -67,6 +67,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D done-enough gates](docs/63_ssrm_3d_done_enough_gates.md): defines the four gates still needed before the 3D track counts as done enough.
 - [Modular LLM architecture report](docs/64_modular_llm_architecture_report.md): separates persistent self-state control from slow language reasoning and defines LLM ablation predictions.
 - [SSRM-3D tool-making report](docs/65_ssrm_3d_tool_making_report.md): tests whether return-selected agents discover external markers, beacons, alarms, or caches under embodied confusion pressure.
+- [SSRM-3D social pressure report](docs/66_ssrm_3d_social_pressure_report.md): tests whether return-selected agents use identity memory, reputation, vulnerability, and shared-tool state under real social pressure.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -534,6 +535,20 @@ This writes:
 - `visualizations/ssrm_3d_tool_making.html` replays the tool-making trace when served from the repo root.
 
 ```bash
+python3 experiments/ssrm_3d_social_pressure.py --train-episodes 64 --eval-episodes 96 --candidate-count 160 --seed 20260611
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_social_pressure_eval.csv`
+- `artifacts/ssrm_3d_social_pressure_policy_selection.csv`
+- `artifacts/ssrm_3d_social_pressure_summary.csv`
+- `artifacts/ssrm_3d_social_pressure_verdict.csv`
+- `artifacts/ssrm_3d_social_pressure_trace.json`
+- `artifacts/ssrm_3d_social_pressure_results.json`
+- `visualizations/ssrm_3d_social_pressure.html` replays the social-pressure trace when served from the repo root.
+
+```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2
 ```
 
@@ -723,6 +738,7 @@ The project should not ask whether an agent says it has a self. It should ask wh
 49. Recoverable by GPU-backed recurrent observers trained on persistent 3D embodied traces.
 50. Recoverable in learned recurrent controllers trained without self labels in the persistent 3D embodied world.
 51. Extended through externalized cognition when return-selected agents build markers, beacons, or alarms only under embodied confusion pressure.
+52. Extended through social identity pressure when return-selected agents use reputation, vulnerability, identity memory, and shared-tool trust only when other agents have persistent policies and memory.
 
 Current stress evidence does not yet satisfy item 37. The architecture boundary stress test finds partial convergence in shared regimes, not strict architecture-wide convergence. Current horizon-pressure evidence partially supports item 38: recoverability improves with horizon, but strict convergence still does not appear.
 Current capacity evidence supports item 39, but only as a diagnostic: source-direction seeds are supplied, so this is not natural emergence.
@@ -738,7 +754,8 @@ Current SSRM-3D evidence supports item 48 as a first embodied precursor: self-st
 Current SSRM-3D recurrent-observer evidence supports item 49 as a representation-learning precursor: in the low-pressure stage, body state is decodable without meaningful recurrent advantage; in stages 1-6, recurrent observers recover stronger self-state than the frame-only baseline, and self-state edits move future-viability prediction.
 Current SSRM-3D learned-controller evidence supports item 50 as a policy-state precursor: recurrent controllers trained without self labels match the low-pressure frame-only control but strongly beat it under hidden energy, body drift, delayed options, commitments, arbitration, and social pressure while carrying decodable self-state. Direct counterfactual self-edit action effects remain weak.
 Current SSRM-3D tool-making evidence supports item 51 as a Gate 2 precursor: tools are rejected in the visible control, selected under hidden-route, degraded-sensor, and interruption pressure, and tool-access ablation removes most of the gain. The cache-only control remains a limit, not a pass.
+Current SSRM-3D social-pressure evidence supports item 52 as a Gate 3 precursor: social machinery is rejected in the visible-resource control, selected under cooperative repair, opportunist vulnerability, deceptive-route, and shared-tool pressure, and identity/self-state/tool ablations produce specific losses.
 
-The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has a useful precursor; gate 2 has a partial externalized-cognition precursor; gate 3 remains open; gate 4 is partial.
+The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has a useful precursor; gate 2 has a partial externalized-cognition precursor; gate 3 has a partial social-pressure precursor; gate 4 is partial.
 
 If agents with no persistent self-equivalent representation match performance, transfer, recovery, and compression under those conditions, the strong self-necessity claim fails.

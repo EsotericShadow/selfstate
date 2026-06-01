@@ -128,11 +128,13 @@ The SSRM-3D recurrent-observer precursor then removes the hand-built self-state 
 
 The SSRM-3D learned-controller precursor then moves from observer state to policy state. Recurrent controllers trained without self labels do not improve the low-pressure spatial task, but they strongly outperform frame-only controllers under hidden energy, body drift, delayed options, commitments, arbitration, and social pressure. Their policy states carry decodable self-state, while direct counterfactual self-edit action effects remain weak.
 
-The SSRM-3D done-enough gates keep this from being overclaimed. The embodied track is not done until learned control, discovered tool-making or externalized cognition, real social pressure, and targeted ablation all pass. The current result is a useful gate-1 precursor; Gate 2 now has a partial externalized-cognition precursor, Gate 3 remains open, and Gate 4 is only partial.
+The SSRM-3D done-enough gates keep this from being overclaimed. The embodied track is not done until learned control, discovered tool-making or externalized cognition, real social pressure, and targeted ablation all pass. The current result is a useful gate-1 precursor; Gate 2 now has a partial externalized-cognition precursor, Gate 3 now has a partial social-pressure precursor, and Gate 4 is only partial.
 
 The modular LLM architecture report makes the language boundary explicit. The LLM is treated as a slow reasoning organ that reads compressed state packets and proposes; the self-equivalent object under test remains persistent control state in the reflex, self-state, attention, arbiter, and action stack.
 
 The SSRM-3D tool-making precursor then starts Gate 2. It gives the world external marker, beacon, alarm, and cache affordances, selects policies by return, and ablates tool access after selection. Tools are rejected in the visible control but selected under hidden-route, degraded-sensor, and interruption pressure. The cache-only condition remains a limit control.
+
+The SSRM-3D social-pressure precursor then starts Gate 3. It gives other agents persistent identities, resource needs, trust toward the tested agent, and simple helper, trader, opportunist, and deceiver policies. Social machinery is rejected in the visible-resource control but selected under cooperative repair, opportunist vulnerability, deceptive-route, and shared-tool pressure. Identity-memory, social-self-state, and tool-access ablations produce specific losses.
 
 Learned bottleneck discovery adds a sharper boundary: a shared latent is selected from unlabeled outcomes in both agent-state and world-state reuse. Compression alone discovers reusable hidden structure, not selfhood; selfhood requires the causal boundary test.
 
@@ -223,6 +225,8 @@ The SSRM-3D precursor adds embodied pressure. No-self control remains sufficient
 The SSRM-3D recurrent-observer precursor adds learned representation evidence on the same embodied traces. The strongest pattern is not generic hidden-state tracking: stage 0 remains a low-pressure control with only a 0.032 recurrent self-state gain, while stages 1-6 show recurrent gains from 0.071 to 0.362 and self-state edits with large future-viability swings.
 
 The SSRM-3D learned-controller precursor adds policy-state evidence. Learned recurrent controllers trained by return-weighted imitation and future-return prediction beat frame-only controllers by 50.120 to 123.950 reward points in stages 1-6 and carry decodable self-state. The weak action-edit swing keeps the causal-editability claim open.
+
+The SSRM-3D social-pressure precursor adds a first real social gate test. Other agents now have persistent memory, needs, trust, and role policies; social self-state helps only when the tested agent can be helped, exploited, deceived, remembered, or trusted.
 
 Learned bottleneck discovery shows the control policy selected from unlabeled data matches the right abstraction: shared bottleneck for reusable hidden causes, local hidden variables for independent contexts, and no hidden state when all risky actions work.
 

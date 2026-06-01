@@ -1334,6 +1334,32 @@ Implemented version:
 - [trace JSON](../artifacts/ssrm_3d_tool_making_trace.json)
 - [JSON results](../artifacts/ssrm_3d_tool_making_results.json)
 
+## Supplemental SSRM-3D Social Pressure
+
+Run a return-selected social-pressure precursor in SSRM-3D.
+
+Other agents have persistent identity, resource need, trust toward the tested agent, and simple role policies: helper, trader, opportunist, and deceiver. Policies are selected by episode return, not by a social-label objective. The selected policy is then evaluated with identity memory, social self-state, and tool access ablated.
+
+Current expected result:
+
+- social machinery should not be selected in the visible-resource control;
+- social identity should be selected under cooperative repair, opportunist vulnerability, deceptive route, and shared-tool conflict pressure;
+- removing identity memory should damage cooperation, deception resistance, and shared-tool trust;
+- removing social self-state should damage vulnerability handling, reputation-sensitive repair, and commitment completion;
+- removing shared-tool access should produce a specific failure in the shared-tool conflict stage.
+
+Implemented version:
+
+- [SSRM-3D social-pressure script](../experiments/ssrm_3d_social_pressure.py)
+- [SSRM-3D social-pressure report](66_ssrm_3d_social_pressure_report.md)
+- [social-pressure visualization](../visualizations/ssrm_3d_social_pressure.html)
+- [evaluation CSV](../artifacts/ssrm_3d_social_pressure_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_social_pressure_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_social_pressure_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_social_pressure_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_social_pressure_trace.json)
+- [JSON results](../artifacts/ssrm_3d_social_pressure_results.json)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:
@@ -1348,7 +1374,7 @@ This is not a new positive experiment. It defines the expected ablation pattern:
 - compressed state packets should be tested against full-world language access;
 - corrupting self-state should predictably corrupt language recommendations and arbiter decisions under embodied pressure.
 
-This belongs inside gate 4 once tool-making and richer social pressure exist.
+This belongs inside gate 4 once tool-making and richer social pressure are integrated into learned-controller runs.
 
 ## Sixteenth Minimal Experiment
 

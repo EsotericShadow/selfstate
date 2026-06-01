@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Resource Ecology Trace</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111312;
+      --panel: #171a18;
+      --line: rgba(241, 244, 238, 0.15);
+      --text: #f1f4ee;
+      --muted: #aeb7af;
+      --food: #8fd36d;
+      --water: #72c7f5;
+      --cache: #efc66c;
+      --risk: #ff776d;
+      --social: #c4a6ff;
+      --territory: #f49a66;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 430px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background: #0b0e0d;
+    }
+
+    aside {
+      max-height: 100vh;
+      overflow: auto;
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p,
+    .event,
+    .outcome-row,
+    .verdict-row {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: #202420;
+      height: 32px;
+      padding: 0 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      padding: 8px;
+      min-height: 58px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 18px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 112px minmax(0, 1fr) 48px;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .bar {
+      height: 10px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      width: 0;
+    }
+
+    .event {
+      border-left: 3px solid var(--line);
+      padding-left: 8px;
+    }
+
+    .outcome-row,
+    .verdict-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      border-top: 1px solid rgba(241, 244, 238, 0.08);
+      padding-top: 6px;
+    }
+
+    .verdict-row {
+      grid-template-columns: 10px minmax(0, 1fr) auto;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      padding: 2px 6px;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .value {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    @media (max-width: 940px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      canvas {
+        height: 58vh;
+      }
+
+      aside {
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <aside>
+    <header>
+      <h1>SSRM-3D Resource Ecology</h1>
+      <p id="subtitle">Loading trace...</p>
+    </header>
+
+    <div class="controls">
+      <button id="play" type="button">Pause</button>
+      <input id="scrub" type="range" min="0" max="0" value="0">
+    </div>
+
+    <div class="metrics">
+      <div class="metric"><span>tick</span><strong id="tick">0</strong></div>
+      <div class="metric"><span>action</span><strong id="action">-</strong></div>
+      <div class="metric"><span>conflicts</span><strong id="conflicts">0</strong></div>
+      <div class="metric"><span>cache</span><strong id="cache">0.00</strong></div>
+    </div>
+
+    <div class="section" id="bars"></div>
+
+    <div class="section">
+      <h2>Trace Event</h2>
+      <p class="event" id="event">Waiting for trace.</p>
+    </div>
+
+    <div class="section">
+      <h2>Ablation Outcomes</h2>
+      <div id="outcomes"></div>
+    </div>
+
+    <div class="section">
+      <h2>Verdicts</h2>
+      <div id="verdicts"></div>
+    </div>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_resource_ecology_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_resource_ecology_results.js"></script>
+  <script>
+    const state = {
+      trace: window.SSRM_3D_RESOURCE_ECOLOGY_TRACE || null,
+      results: window.SSRM_3D_RESOURCE_ECOLOGY_RESULTS || null,
+      frameIndex: 0,
+      playing: true,
+      lastStep: 0,
+    };
+
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    const playButton = document.getElementById("play");
+    const scrub = document.getElementById("scrub");
+    const bars = document.getElementById("bars");
+
+    const barDefs = [
+      ["progress", "Progress", "var(--cache)", () => state.trace.scenario.required_progress || 1],
+      ["energy", "Energy", "var(--food)", () => 1],
+      ["hunger", "Hunger", "var(--risk)", () => 1.2],
+      ["thirst", "Thirst", "var(--water)", () => 1.2],
+      ["resource_level", "Food source", "var(--food)", () => 1],
+      ["water_level", "Water source", "var(--water)", () => 1],
+      ["cache_level", "Cache", "var(--cache)", () => 1],
+      ["scarcity_risk", "Scarcity", "var(--risk)", () => 1.8],
+      ["spoilage_waste", "Spoilage", "var(--territory)", () => 1.8],
+      ["migration_confidence", "Migration", "var(--social)", () => 1],
+      ["social_access", "Social access", "var(--social)", () => 1],
+      ["territory_standing", "Territory", "var(--territory)", () => 1],
+    ];
+
+    function fallbackLoad() {
+      const tracePromise = state.trace ? Promise.resolve(state.trace) : fetch("../artifacts/ssrm_3d_resource_ecology_trace.json").then((response) => response.json());
+      const resultPromise = state.results ? Promise.resolve(state.results) : fetch("../artifacts/ssrm_3d_resource_ecology_results.json").then((response) => response.json());
+      return Promise.all([tracePromise, resultPromise]).then(([trace, results]) => {
+        state.trace = trace;
+        state.results = results;
+      });
+    }
+
+    function cssVar(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+
+    function resizeCanvas() {
+      const ratio = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.max(1, Math.floor(rect.width * ratio));
+      canvas.height = Math.max(1, Math.floor(rect.height * ratio));
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+
+    function setupBars() {
+      bars.innerHTML = "";
+      for (const [key, label, color] of barDefs) {
+        const row = document.createElement("div");
+        row.className = "row";
+        row.innerHTML = `<span>${label}</span><div class="bar"><span id="bar-${key}"></span></div><span class="value" id="value-${key}">0.00</span>`;
+        row.querySelector(".bar > span").style.background = color;
+        bars.appendChild(row);
+      }
+    }
+
+    function setBar(key, value, scale) {
+      const raw = Number(value) || 0;
+      const clamped = Math.max(0, Math.min(1, raw / scale));
+      document.getElementById(`bar-${key}`).style.width = `${clamped * 100}%`;
+      document.getElementById(`value-${key}`).textContent = raw.toFixed(2);
+    }
+
+    function drawCircle(x, y, radius, color, alpha) {
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.arc(x, y, radius, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    }
+
+    function drawScene(frame) {
+      const rect = canvas.getBoundingClientRect();
+      const width = rect.width;
+      const height = rect.height;
+      ctx.clearRect(0, 0, width, height);
+
+      const gradient = ctx.createLinearGradient(0, 0, 0, height);
+      gradient.addColorStop(0, "#111719");
+      gradient.addColorStop(1, "#111611");
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, width, height);
+
+      const groundY = height * 0.70;
+      ctx.fillStyle = "#162216";
+      ctx.fillRect(0, groundY, width, height - groundY);
+
+      const selfX = width * 0.46;
+      const selfY = height * 0.64;
+      const foodX = width * 0.24;
+      const foodY = height * 0.42;
+      const waterX = width * 0.74;
+      const waterY = height * 0.44;
+      const cacheX = width * 0.58;
+      const cacheY = height * 0.76;
+      const socialX = width * 0.28;
+      const socialY = height * 0.74;
+      const territoryX = width * 0.70;
+      const territoryY = height * 0.72;
+
+      ctx.strokeStyle = cssVar("--territory");
+      ctx.globalAlpha = 0.18 + frame.territory_standing * 0.32;
+      ctx.lineWidth = 3 + frame.territory_standing * 8;
+      ctx.beginPath();
+      ctx.arc(territoryX, territoryY, 88, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      ctx.strokeStyle = cssVar("--social");
+      ctx.globalAlpha = 0.12 + frame.social_access * 0.52;
+      ctx.lineWidth = 4 + frame.social_access * 7;
+      ctx.beginPath();
+      ctx.moveTo(socialX, socialY);
+      ctx.lineTo(selfX, selfY);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      ctx.strokeStyle = cssVar("--cache");
+      ctx.globalAlpha = 0.10 + frame.migration_confidence * 0.38;
+      ctx.lineWidth = 4;
+      ctx.setLineDash([12, 10]);
+      ctx.beginPath();
+      ctx.moveTo(foodX, foodY);
+      ctx.bezierCurveTo(width * 0.42, height * 0.26, width * 0.58, height * 0.30, waterX, waterY);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.globalAlpha = 1;
+
+      drawCircle(foodX, foodY, 22 + frame.resource_level * 30, cssVar("--food"), 0.22 + frame.resource_level * 0.50);
+      drawCircle(waterX, waterY, 24 + frame.water_level * 28, cssVar("--water"), 0.20 + frame.water_level * 0.50);
+
+      ctx.fillStyle = "#32321f";
+      ctx.fillRect(cacheX - 54, cacheY - 26, 108, 44);
+      ctx.fillStyle = cssVar("--cache");
+      ctx.globalAlpha = 0.16 + frame.cache_level * 0.62;
+      ctx.fillRect(cacheX - 46, cacheY - 18, 92, 28);
+      ctx.globalAlpha = 1;
+
+      drawCircle(socialX, socialY, 18, cssVar("--social"), 0.35 + frame.social_access * 0.45);
+      drawCircle(selfX, selfY, 17, cssVar("--text"), 1);
+      drawCircle(selfX + 5, selfY - 4, 4, frame.action.includes("harvest") ? cssVar("--cache") : cssVar("--food"), 1);
+
+      ctx.strokeStyle = cssVar("--risk");
+      ctx.globalAlpha = 0.10 + frame.scarcity_risk * 0.24;
+      ctx.lineWidth = 16 + frame.scarcity_risk * 22;
+      ctx.beginPath();
+      ctx.arc(selfX, selfY, 38 + frame.scarcity_risk * 18, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      if (frame.spoilage_waste > 0.02) {
+        drawCircle(cacheX + 64, cacheY - 28, 10 + frame.spoilage_waste * 16, cssVar("--risk"), 0.20 + frame.spoilage_waste * 0.28);
+      }
+
+      ctx.fillStyle = cssVar("--muted");
+      ctx.font = "12px Inter, sans-serif";
+      ctx.fillText("food", foodX - 12, foodY + 58);
+      ctx.fillText("water", waterX - 16, waterY + 56);
+      ctx.fillText("self", selfX - 12, selfY + 38);
+      ctx.fillText("cache", cacheX - 16, cacheY + 44);
+      ctx.fillText("social", socialX - 16, socialY + 38);
+      ctx.fillText("territory", territoryX - 24, territoryY + 104);
+      ctx.fillText(state.trace.scenario.name.replaceAll("_", " "), 24, 32);
+    }
+
+    function renderOutcomes() {
+      const container = document.getElementById("outcomes");
+      const outcomes = state.trace.condition_outcomes || {};
+      const fullReward = outcomes.full_control ? Number(outcomes.full_control.mean_reward) : 0;
+      const rows = Object.entries(outcomes)
+        .filter(([name]) => name !== "full_control")
+        .sort((a, b) => (fullReward - (b[1].mean_reward || 0)) - (fullReward - (a[1].mean_reward || 0)))
+        .slice(0, 8);
+      container.innerHTML = "";
+      for (const [name, row] of rows) {
+        const div = document.createElement("div");
+        div.className = "outcome-row";
+        div.innerHTML = `<span>${name}</span><span class="value">${(fullReward - Number(row.mean_reward)).toFixed(1)}</span>`;
+        container.appendChild(div);
+      }
+    }
+
+    function renderVerdicts() {
+      const container = document.getElementById("verdicts");
+      container.innerHTML = "";
+      for (const row of state.results.verdict || []) {
+        const div = document.createElement("div");
+        div.className = "verdict-row";
+        const ok = row.supports_resource_ecology_precursor;
+        div.innerHTML = `<span class="dot" style="background:${ok ? "var(--food)" : "var(--risk)"}"></span><span>${row.scenario_name}</span><span class="pill">${ok ? "pass" : "fail"}</span>`;
+        container.appendChild(div);
+      }
+    }
+
+    function renderFrame() {
+      if (!state.trace || !state.trace.frames.length) {
+        return;
+      }
+      const frame = state.trace.frames[state.frameIndex];
+      scrub.value = String(state.frameIndex);
+      document.getElementById("tick").textContent = frame.tick;
+      document.getElementById("action").textContent = frame.action.replaceAll("_", " ");
+      document.getElementById("conflicts").textContent = frame.conflict_events;
+      document.getElementById("cache").textContent = Number(frame.cache_level).toFixed(2);
+      for (const [key, , , scaleFn] of barDefs) {
+        setBar(key, frame[key], scaleFn());
+      }
+      const notes = (frame.notes || []).join("; ");
+      document.getElementById("event").textContent = `action=${frame.action}; conflicts=${frame.conflict_events}; notes=${notes || "none"}.`;
+      drawScene(frame);
+    }
+
+    function step(timestamp) {
+      if (state.playing && timestamp - state.lastStep > 170) {
+        state.frameIndex = (state.frameIndex + 1) % state.trace.frames.length;
+        state.lastStep = timestamp;
+        renderFrame();
+      }
+      requestAnimationFrame(step);
+    }
+
+    playButton.addEventListener("click", () => {
+      state.playing = !state.playing;
+      playButton.textContent = state.playing ? "Pause" : "Play";
+    });
+
+    scrub.addEventListener("input", () => {
+      state.playing = false;
+      playButton.textContent = "Play";
+      state.frameIndex = Number(scrub.value);
+      renderFrame();
+    });
+
+    window.addEventListener("resize", () => {
+      resizeCanvas();
+      renderFrame();
+    });
+
+    fallbackLoad()
+      .then(() => {
+        document.getElementById("subtitle").textContent = `${state.trace.scenario.name} / ${state.trace.policy.name}`;
+        scrub.max = String(state.trace.frames.length - 1);
+        setupBars();
+        renderOutcomes();
+        renderVerdicts();
+        resizeCanvas();
+        renderFrame();
+        requestAnimationFrame(step);
+      })
+      .catch((error) => {
+        document.getElementById("subtitle").textContent = "Could not load trace.";
+        document.getElementById("event").textContent = String(error);
+      });
+  </script>
+</body>
+</html>

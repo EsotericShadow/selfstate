@@ -1684,6 +1684,35 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_predator_threat_agents_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_predator_threat_agents_results.js)
 
+## SSRM-3D Resource Ecology Pressure
+
+Run the eighth persistent-pressure layer from report 74.
+
+This experiment treats resource memory, regeneration/depletion, spoilage timing, migration tracking, restraint, cache management, sharing contracts, territory ownership, and continuity as abstract control variables. It asks whether resource ecology becomes self-relevant only when delayed resource consequences change the agent's own future viability or access.
+
+Canonical result:
+
+- abundant static control rejects ecology machinery;
+- slow-regrowth pressure fails under no-resource-memory, no-regeneration-model, and no-restraint ablations;
+- spoilage/cache pressure fails under no-resource-memory, no-spoilage-model, no-cache-management, and no-restraint ablations;
+- migrating-source pressure fails under no-resource-memory, no-migration-tracking, and no-restraint ablations;
+- shared-territory pressure fails under no-resource-memory, no-regeneration-model, no-restraint, no-sharing-contract, and no-territory-ownership ablations;
+- restore pressure fails under no-continuity plus resource memory, regeneration, spoilage, migration, cache, sharing, and territory ablations.
+
+Implemented version:
+
+- [SSRM-3D resource ecology script](../experiments/ssrm_3d_resource_ecology.py)
+- [SSRM-3D resource ecology report](82_ssrm_3d_resource_ecology_report.md)
+- [resource ecology visualization](../visualizations/ssrm_3d_resource_ecology.html)
+- [evaluation CSV](../artifacts/ssrm_3d_resource_ecology_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_resource_ecology_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_resource_ecology_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_resource_ecology_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_resource_ecology_trace.json)
+- [JSON results](../artifacts/ssrm_3d_resource_ecology_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_resource_ecology_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_resource_ecology_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

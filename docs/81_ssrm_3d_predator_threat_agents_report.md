@@ -94,15 +94,17 @@ Some selected policies carry extra channels whose ablations are neutral in that 
 - Threat dynamics are abstract control variables, not predator biology.
 - Fear-like state is an affective control summary, not a subjective feeling claim.
 - The selected planner is not an online RL agent discovering stealth, shelter, or group defense from scratch.
-- This does not yet include resource ecology, territorial conflict, development, dependent care, or irreversible loss.
+- This report itself does not include resource ecology, territorial conflict, development, dependent care, or irreversible loss.
 
 ## Next Test
 
-The next pressure-layer step should add resource ecology:
+The implemented follow-up adds resource ecology:
 
 - food and water should regrow, spoil, migrate, or deplete slowly;
 - restraint, caches, sharing, hoarding, territory, memory, and long-horizon planning should compete;
 - ablations should separate resource memory, spoilage state, regeneration model, territory/ownership, sharing contracts, and continuity.
+
+Implemented by [report 82](82_ssrm_3d_resource_ecology_report.md).
 
 ## Visualization
 

@@ -1,0 +1,7 @@
+scenario,scenario_name,selected_policy,selected_uses_resource_memory,selected_uses_regeneration_model,selected_uses_spoilage_model,selected_uses_migration_tracking,selected_uses_restraint,selected_uses_cache_management,selected_uses_sharing_contract,selected_uses_territory_ownership,selected_uses_continuity,train_reward,greedy_train_reward,train_gain_over_greedy
+0,abundant_static_control,greedy_no_ecology_baseline,False,False,False,False,False,False,False,False,False,200.6146449776284,200.65953544337233,-0.04489046574394706
+1,slow_regrowth_depletion,regrowth_restraint_planner,True,True,False,False,True,False,False,False,False,163.91245805655433,-524.7348929021761,688.6473509587304
+2,spoilage_cache_timing,spoilage_cache_planner,True,False,True,False,True,True,False,False,False,134.583573711358,-306.7967929176793,441.3803666290373
+3,migrating_resource_sources,migration_tracking_planner,True,False,False,True,True,False,False,False,False,154.56449417337566,-352.7815012331928,507.3459954065685
+4,shared_territory_pressure,territory_sharing_planner,True,True,False,False,True,False,True,True,False,151.43795517357304,-556.8827952548637,708.3207504284368
+5,restore_ecology_continuity,continuity_ecology_planner,True,True,True,True,True,True,True,True,True,131.36298233210388,-892.9289051384017,1024.2918874705056

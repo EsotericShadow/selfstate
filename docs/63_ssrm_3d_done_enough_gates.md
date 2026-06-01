@@ -99,6 +99,8 @@ The weather/exposure precursor adds a fourth tool reason: fire/light tools matte
 
 The tool/shelter degradation precursor adds a fifth tool reason: markers, alarms, caches, shelters, spare parts, inspection, and repair matter when persistent infrastructure decays. This remains a supplied affordance, but the ablation is specific to maintenance-pressure regimes.
 
+The resource-ecology precursor adds a sixth tool reason: caches matter when regrowth, depletion, spoilage, and delayed scarcity make storage and rotation useful. This remains a supplied affordance, but the ablation is specific to resource-pressure regimes.
+
 Remaining weakness:
 
 The successful policies are return-selected from candidate affordance policies, not learned end-to-end by the SSRM-3D controller. The cache-only affordance remains a limit control rather than a success. This means Gate 2 has a useful externalized-cognition precursor, but not a full pass.
@@ -134,6 +136,8 @@ The SSRM-3D social-ecology precursor makes communication costly. Return selectio
 The SSRM-3D social trust/contracts precursor makes promises costly. Return selection rejects contract machinery in the visible no-contract control, selects borrowed-tool return, hazard warning, resource sharing, and shelter repair duty only when they preserve future access, and loses the advantage under matching commitment, identity, communication, trust, ownership, repair-debt, or continuity ablations.
 
 The SSRM-3D predator/threat precursor adds hostile tracking pressure. It is not a social-gate pass by itself, but it gives social warning and group defense a job: return selection keeps those channels only when trackers exploit isolation, weakness, alarms, shelter, or restore-time forgetting.
+
+The SSRM-3D resource-ecology precursor adds shared-territory pressure. It is not a social-gate pass by itself, but it gives sharing contracts and territory memory a job: return selection keeps those channels only when other agents can change future resource access.
 
 The learned-integration precursor adds that early helper/deceiver identity evidence can be carried by recurrent policy state; social-channel ablation removes the learned social-repair advantage.
 
@@ -182,6 +186,8 @@ Existing evidence includes self-state ablation in SSRM-3D, learned observer self
 [Report 69](69_ssrm_3d_learned_integration_controller_report.md) adds a learned packet-level ablation bridge: continuity-channel ablation damages the local restore row, attention-channel ablation damages integrated gate pressure, and tool/social ablations remain pressure-specific. It also records a failure: continuity-channel ablation does not damage the integrated gate-pressure row. [Report 73](73_ssrm_3d_no_leak_integration_sweep_report.md) then removes scenario identity and randomizes pressure combinations; the local social, local continuity, integrated tool, and integrated continuity bridges survive, but `single_tool` and `integrated_social` fail the stronger verdict. These reports still do not replace the full embodied learned-controller ablation suite.
 
 [Report 81](81_ssrm_3d_predator_threat_agents_report.md) adds a pressure-layer ablation check for threat perception, self-vulnerability, sound/scent memory, stealth, shelter, alarms, social warning, and continuity. It strengthens the targeted-ablation pattern for designed policies, but it does not replace learned-controller self-state, attention, LLM-stream, or tool-building ablations.
+
+[Report 82](82_ssrm_3d_resource_ecology_report.md) adds a pressure-layer ablation check for resource memory, regeneration, spoilage, migration, restraint, cache management, sharing contracts, territory ownership, and continuity. It strengthens the targeted-ablation pattern for designed policies, but it does not replace learned-controller discovery of sustainable resource use.
 
 Failure interpretation:
 

@@ -1,0 +1,7 @@
+scenario,scenario_name,selected_policy,selected_uses_skill_memory,selected_uses_practice_planning,selected_uses_capability_state,selected_uses_fatigue_management,selected_uses_injury_adaptation,selected_uses_transfer_model,selected_uses_teaching_help,selected_uses_tool_training,selected_uses_goal_feasibility,selected_uses_continuity,train_reward,naive_train_reward,train_gain_over_naive
+0,easy_fixed_skill_control,naive_fixed_skill_baseline,False,False,False,False,False,False,False,False,False,False,215.59021790185218,215.83596641486926,-0.24574851301707668
+1,practice_curve_transfer,deliberate_transfer_planner,True,True,True,False,False,True,False,False,True,False,130.9595792959081,-774.1234294192961,905.0830087152042
+2,fatigue_skill_degradation,fatigue_calibration_planner,True,False,True,True,False,False,False,False,True,False,122.40952068968765,-589.6084121367562,712.0179328264438
+3,injury_retraining_substitution,injury_retraining_planner,True,True,True,False,True,False,False,True,True,False,83.65162731236103,-1016.1150535042848,1099.766680816646
+4,teaching_tool_transfer,mentor_tool_transfer_planner,True,True,True,False,False,True,True,True,True,False,190.15519952791325,-1128.6424199558246,1318.797619483738
+5,restore_skill_continuity,continuity_skill_planner,True,True,True,True,True,True,True,True,True,True,66.21850118483216,-1322.3819158965819,1388.600417081414

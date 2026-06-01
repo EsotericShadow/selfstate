@@ -1742,6 +1742,35 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_injury_disability_adaptation_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_injury_disability_adaptation_results.js)
 
+## SSRM-3D Development/Skill Learning Pressure
+
+Run the tenth persistent-pressure layer from report 74.
+
+This experiment treats skill memory, practice planning, capability self-state, fatigue management, injury adaptation, transfer modeling, teaching help, training tools, goal feasibility, and continuity as abstract control variables. It asks whether development/skill learning becomes self-relevant only when changing competence alters the agent's own future action feasibility.
+
+Canonical result:
+
+- easy fixed-skill control rejects skill machinery;
+- practice/transfer pressure fails under no-skill-memory, no-practice-planning, no-capability-state, no-transfer-model, no-goal-feasibility, and fixed-skill baseline ablations;
+- fatigue skill-degradation pressure fails under no-skill-memory, no-capability-state, no-fatigue-management, no-goal-feasibility, and fixed-skill baseline ablations;
+- injury retraining pressure fails under no-skill-memory, no-practice-planning, no-capability-state, no-injury-adaptation, no-tool-training, and no-goal-feasibility ablations;
+- teaching/tool transfer pressure fails under no-skill-memory, no-practice-planning, no-transfer-model, no-teaching-help, no-tool-training, and no-goal-feasibility ablations;
+- restore pressure fails under no-continuity plus skill, practice, capability, fatigue, injury, transfer, teaching, tool, and feasibility ablations.
+
+Implemented version:
+
+- [SSRM-3D development/skill learning script](../experiments/ssrm_3d_development_skill_learning.py)
+- [SSRM-3D development/skill learning report](84_ssrm_3d_development_skill_learning_report.md)
+- [development/skill learning visualization](../visualizations/ssrm_3d_development_skill_learning.html)
+- [evaluation CSV](../artifacts/ssrm_3d_development_skill_learning_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_development_skill_learning_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_development_skill_learning_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_development_skill_learning_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_development_skill_learning_trace.json)
+- [JSON results](../artifacts/ssrm_3d_development_skill_learning_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_development_skill_learning_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_development_skill_learning_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

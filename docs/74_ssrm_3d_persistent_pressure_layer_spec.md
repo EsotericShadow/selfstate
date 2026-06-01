@@ -95,7 +95,8 @@ Priority order:
 7. Predator/threat agents. Implemented as the predator/threat agents precursor in [report 81](81_ssrm_3d_predator_threat_agents_report.md).
 8. Resource ecology. Implemented as the resource ecology precursor in [report 82](82_ssrm_3d_resource_ecology_report.md).
 9. Injury/disability adaptation. Implemented as the injury/disability adaptation precursor in [report 83](83_ssrm_3d_injury_disability_adaptation_report.md).
-10. Development/skill learning. Next pressure-layer target.
+10. Development/skill learning. Implemented as the development/skill learning precursor in [report 84](84_ssrm_3d_development_skill_learning_report.md).
+11. Dependent care. Next pressure-layer target.
 
 This combination should make the agent answer behaviorally:
 

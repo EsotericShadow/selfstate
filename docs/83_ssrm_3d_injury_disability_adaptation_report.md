@@ -98,16 +98,18 @@ Some selected policies carry extra channels whose ablations are neutral in that 
 - Injury/disability dynamics are abstract control variables, not biology.
 - Repair, help, tool, and route policies are designed channels.
 - The selected planner is not an online RL agent discovering disability adaptation from scratch.
-- This does not yet include learned skill development, dependent care, or irreversible loss.
+- This report itself does not include learned skill development, dependent care, or irreversible loss.
 
 ## Next Test
 
-The next pressure-layer step should add development and skill learning:
+The implemented follow-up adds development and skill learning:
 
 - repeated actions should improve competence;
 - injury, fatigue, illness, and stress should degrade competence;
 - agents should estimate what they can safely do now versus after rest, repair, help, or practice;
 - ablations should separate skill memory, capability self-state, practice history, transfer, and continuity.
+
+Implemented by [report 84](84_ssrm_3d_development_skill_learning_report.md).
 
 ## Visualization
 

@@ -1513,6 +1513,34 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_structured_perception_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_structured_perception_results.js)
 
+## SSRM-3D Day/Night Sleep-Rest Pressure
+
+Run the second persistent-pressure layer from report 74.
+
+This experiment treats sleep/rest as a vulnerable control action. It asks whether rest is useful only when fatigue, darkness, shelter timing, alarms, social watch, or interruption continuity change future capability.
+
+Canonical result:
+
+- open daylight control rejects rest;
+- long-horizon fatigue fails under no-rest and no-fatigue-state ablations;
+- night shelter pressure fails under no-day/night-state and no-shelter-memory ablations;
+- guarded sleep pressure fails under no-alarm-tools and no-social-watch ablations;
+- interrupted commitment pressure fails under no-continuity, no-rest, and no-fatigue-state ablations.
+
+Implemented version:
+
+- [SSRM-3D day/night sleep-rest script](../experiments/ssrm_3d_day_night_sleep.py)
+- [SSRM-3D day/night sleep-rest report](76_ssrm_3d_day_night_sleep_report.md)
+- [day/night sleep-rest visualization](../visualizations/ssrm_3d_day_night_sleep.html)
+- [evaluation CSV](../artifacts/ssrm_3d_day_night_sleep_eval.csv)
+- [policy-selection CSV](../artifacts/ssrm_3d_day_night_sleep_policy_selection.csv)
+- [summary CSV](../artifacts/ssrm_3d_day_night_sleep_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_day_night_sleep_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_day_night_sleep_trace.json)
+- [JSON results](../artifacts/ssrm_3d_day_night_sleep_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_day_night_sleep_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_day_night_sleep_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

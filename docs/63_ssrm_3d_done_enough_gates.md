@@ -59,6 +59,8 @@ The learned-integration precursor trains a recurrent controller from reward-deri
 
 [Report 75](75_ssrm_3d_structured_perception_report.md) adds the first persistent-pressure perception layer. It does not satisfy learned control by itself, but it makes future learned-control gates less omniscient: route memory, tool alarms, multimodal night navigation, and sensor-damage adaptation now have targeted vision/audio ablations.
 
+[Report 76](76_ssrm_3d_day_night_sleep_report.md) adds the second persistent-pressure layer. It does not satisfy learned control by itself, but it makes future learned-control gates more temporal: fatigue, night timing, shelter state, alarms, social watch, and continuity now have targeted sleep/rest ablations.
+
 Remaining weakness:
 
 Direct counterfactual self-state edits have weak action effects. This means the current evidence supports learned policy-state self tracking for control, but not robust causal policy editing.
@@ -86,6 +88,8 @@ The SSRM-3D tool-making precursor gives the world marker, beacon, alarm, and cac
 The learned-integration precursor adds that early tool-route evidence can be carried by recurrent policy state; frame-only control falls behind and tool-channel ablation removes the learned advantage. The no-leak sweep keeps raw tool support across seeds but the weakest margins are too close to the widened threshold, so the learned tool bridge remains provisional.
 
 The structured-perception precursor adds a more concrete tool reason: visual markers and audio alarms matter when FOV, darkness, occlusion, and sound direction create partial observability. This is still candidate-policy evidence, not learned tool invention.
+
+The sleep-rest precursor adds a second tool reason: alarms matter when the agent is vulnerable while resting near danger. This remains a supplied affordance, but the ablation is specific to the guarded-sleep regime.
 
 Remaining weakness:
 

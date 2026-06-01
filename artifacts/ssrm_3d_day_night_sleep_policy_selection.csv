@@ -1,0 +1,6 @@
+scenario,scenario_name,selected_policy,selected_uses_rest,selected_uses_fatigue,selected_uses_day_night,selected_uses_shelter_memory,selected_uses_alarm_or_watch,selected_uses_continuity,train_reward,no_rest_train_reward,train_gain_over_no_rest
+0,open_daylight_control,no_rest_baseline,False,False,False,False,False,False,187.89749442838584,188.53965519412114,-0.6421607657352979
+1,fatigue_debt_long_horizon,continuity_recovery_planner,True,True,True,True,True,True,159.61538600696383,-126.15053933315511,285.76592534011894
+2,night_shelter_vulnerability,continuity_recovery_planner,True,True,True,True,True,True,136.6325371214144,-138.24294468692486,274.87548180833926
+3,alarm_social_guarded_sleep,alarm_guarded_sleep_planner,True,True,True,True,True,True,128.8061989845601,-147.2987075467521,276.10490653131217
+4,interrupted_commitment_rest,continuity_recovery_planner,True,True,True,True,True,True,160.58794738810036,-176.76926679034602,337.3572141784464

@@ -87,7 +87,7 @@ Add pressures that force tradeoffs across time. The useful additions are not "mo
 Priority order:
 
 1. Vision and audio partial observability. Implemented as the structured-perception precursor in [report 75](75_ssrm_3d_structured_perception_report.md).
-2. Day/night and sleep/rest.
+2. Day/night and sleep/rest. Implemented as the day/night sleep-rest precursor in [report 76](76_ssrm_3d_day_night_sleep_report.md).
 3. Hunger/thirst plus illness/sanitation.
 4. Weather/exposure.
 5. Tool/shelter degradation.

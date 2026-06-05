@@ -10,7 +10,6 @@ If you are not reading the full technical stack, start here:
 
 - [Plain-language visual guide](docs/public/README.md)
 - [Findings so far article](docs/public/research_article.md)
-- [YouTube video production package](docs/public/video/youtube_video_package.md)
 
 The working claim is deliberately narrow:
 

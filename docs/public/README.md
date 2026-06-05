@@ -332,7 +332,6 @@ Those are not footnotes. They are the falsifiers.
 
 Start here:
 
-- [YouTube video production package](video/youtube_video_package.md)
 - [Public findings article](research_article.md)
 - [Current synthesis](../11_current_synthesis.md)
 - [Evidence matrix](../12_evidence_matrix.md)

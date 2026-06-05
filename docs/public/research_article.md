@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `73` runs, including the physics-first benchmark.
+The canonical runner is now wired for `74` runs, including the physics-first benchmark and settlement/civilization pressure layer.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -191,11 +191,17 @@ The rule is:
 
 > Add world detail only when removing it would change the agent's control problem.
 
-The newest step adds a physics-first benchmark foundation. A modular C++ simulation kernel now generates terrain, weather, shelter, resources, illness/care pressure, sound, vibration, tension, FOV perception, and user proposals. Python trains recurrent neural models on those physics-derived streams without scenario labels.
+The physics-first benchmark adds a modular foundation. A C++ simulation kernel now generates terrain, weather, shelter, resources, illness/care pressure, sound, vibration, tension, FOV perception, and user proposals. Python trains recurrent neural models on those physics-derived streams without scenario labels.
 
 ![SSRM-3D physics-first benchmark viewer](assets/ssrm_3d_physics_benchmark.png)
 
 That is real neural sequence learning, but it is still offline decision learning from traces. It is not yet closed-loop deep reinforcement learning and it is not a claim that a self-aware agent has been created.
+
+The newest step adds a settlement/civilization pressure layer. It moves the public replay beyond one-agent water/shelter survival into a small society with roles, construction, social memory, norms, affective-control state, conflict, sickness, and future shocks.
+
+![SSRM-3D settlement/civilization pressure viewer](assets/ssrm_3d_civilization_pressure.png)
+
+The integrated settlement policy reaches `0.812` mean civilization score. Reactive individuals fall to `0.502`, and targeted ablations for norms, role memory, future planning, building memory, social memory, and affective control all reduce score. This remains designed policy evidence, not open-ended civilization emergence.
 
 ## Visual Evidence Gallery
 

@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Settlement Pressure</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --panel: rgba(12, 15, 15, 0.88);
+      --line: rgba(236, 244, 240, 0.16);
+      --text: #eef5f1;
+      --muted: #a9b8b2;
+      --green: #78d989;
+      --blue: #76bdf2;
+      --amber: #e7c766;
+      --red: #ef7067;
+      --cyan: #5dded7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #070b0b;
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    #scene {
+      position: fixed;
+      inset: 0;
+    }
+
+    #hud {
+      position: fixed;
+      top: 14px;
+      right: 14px;
+      bottom: 14px;
+      width: min(470px, calc(100vw - 28px));
+      overflow: auto;
+      display: grid;
+      align-content: start;
+      gap: 12px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(15px);
+    }
+
+    #topbar {
+      position: fixed;
+      left: 14px;
+      top: 14px;
+      width: min(580px, calc(100vw - 500px));
+      min-width: 320px;
+      padding: 13px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(15px);
+      display: grid;
+      gap: 10px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 20px;
+      line-height: 1.12;
+    }
+
+    h2 {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+
+    p,
+    .small,
+    .event,
+    .agent-row,
+    .condition-row {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    button {
+      min-height: 31px;
+      border: 1px solid var(--line);
+      background: #1b2221;
+      color: var(--text);
+      font: inherit;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) 58px;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .grid3,
+    .grid2 {
+      display: grid;
+      gap: 8px;
+    }
+
+    .grid3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .metric,
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      padding: 8px;
+      min-height: 54px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 15px;
+      overflow-wrap: anywhere;
+    }
+
+    .section {
+      display: grid;
+      gap: 8px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 112px minmax(0, 1fr) 42px;
+      gap: 7px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .bar {
+      height: 9px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 0;
+    }
+
+    .agent-row,
+    .condition-row {
+      display: grid;
+      grid-template-columns: 72px 82px minmax(0, 1fr);
+      gap: 7px;
+      align-items: center;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(236, 244, 240, 0.08);
+    }
+
+    .condition-row {
+      grid-template-columns: 142px minmax(0, 1fr) 46px;
+    }
+
+    .event {
+      border-left: 3px solid var(--blue);
+      padding-left: 8px;
+    }
+
+    @media (max-width: 940px) {
+      #topbar {
+        left: 12px;
+        right: 12px;
+        width: auto;
+      }
+
+      #hud {
+        left: 12px;
+        right: 12px;
+        top: auto;
+        bottom: 12px;
+        width: auto;
+        max-height: 56vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="scene"></div>
+  <section id="topbar">
+    <header>
+      <h1>SSRM-3D Settlement Pressure</h1>
+      <p>Multi-agent replay: social memory, roles, construction, norms, affect control, and future planning.</p>
+    </header>
+    <div class="controls">
+      <button id="play" type="button">Pause</button>
+      <input id="scrub" type="range" min="0" max="0" value="0">
+      <span class="small" id="tick">0</span>
+    </div>
+    <div class="grid3">
+      <div class="metric"><span>weather</span><strong id="weather">-</strong></div>
+      <div class="metric"><span>condition</span><strong id="condition">-</strong></div>
+      <div class="metric"><span>score</span><strong id="score">-</strong></div>
+    </div>
+  </section>
+
+  <aside id="hud">
+    <div class="section">
+      <h2>Settlement</h2>
+      <div id="settlement-bars"></div>
+    </div>
+    <div class="section">
+      <h2>Resources</h2>
+      <div id="resource-bars"></div>
+    </div>
+    <div class="section">
+      <h2>Projects</h2>
+      <div id="project-bars"></div>
+    </div>
+    <div class="section">
+      <h2>Agents</h2>
+      <div id="agents"></div>
+    </div>
+    <div class="section">
+      <h2>Ablations</h2>
+      <div id="conditions"></div>
+    </div>
+    <div class="section">
+      <h2>Events</h2>
+      <div id="events"></div>
+    </div>
+  </aside>
+
+  <script src="../artifacts/ssrm_3d_civilization_pressure_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_civilization_pressure_results.js"></script>
+  <script type="module">
+    import * as THREE from "https://unpkg.com/three@0.164.1/build/three.module.js";
+
+    const trace = window.SSRM_3D_CIVILIZATION_PRESSURE_TRACE;
+    const results = window.SSRM_3D_CIVILIZATION_PRESSURE_RESULTS;
+    const frames = trace.frames || [];
+    const summary = results.summary || [];
+
+    const places = {
+      shelter: [-18, -12],
+      water_source: [24, -8],
+      clinic: [-8, 22],
+      farm: [14, 20],
+      workshop: [-24, 10],
+      watchtower: [2, -28],
+      school: [26, 28],
+      commons: [-4, 0],
+      frontier: [34, -30],
+      trade_gate: [-34, -2],
+    };
+
+    const projectPlace = {
+      shelter: "shelter",
+      water_purifier: "water_source",
+      clinic: "clinic",
+      farm: "farm",
+      workshop: "workshop",
+      watchtower: "watchtower",
+      school: "school",
+      commons: "commons",
+    };
+
+    const roleColors = {
+      scout: 0x76bdf2,
+      builder: 0xe7c766,
+      medic: 0x78d989,
+      farmer: 0x9fd36d,
+      guard: 0xef7067,
+      teacher: 0x5dded7,
+      trader: 0xd1b08a,
+      dependent: 0xf1f4ef,
+    };
+
+    const container = document.getElementById("scene");
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor(0x080c0c, 1);
+    container.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0x071010, 72, 170);
+
+    const camera = new THREE.PerspectiveCamera(54, window.innerWidth / window.innerHeight, 0.1, 260);
+    camera.position.set(42, 48, 58);
+    camera.lookAt(0, 0, 0);
+
+    scene.add(new THREE.HemisphereLight(0xe1f4ff, 0x1d2119, 1.35));
+    const key = new THREE.DirectionalLight(0xfff1cd, 2.2);
+    key.position.set(-30, 58, 34);
+    scene.add(key);
+
+    const mats = {
+      ground: new THREE.MeshStandardMaterial({ color: 0x243228, roughness: 0.96 }),
+      road: new THREE.MeshStandardMaterial({ color: 0x445047, roughness: 0.92 }),
+      water: new THREE.MeshStandardMaterial({ color: 0x234e68, emissive: 0x062334, roughness: 0.30 }),
+      project: new THREE.MeshStandardMaterial({ color: 0x78d989, emissive: 0x102a17, roughness: 0.42 }),
+      incomplete: new THREE.MeshStandardMaterial({ color: 0x47504c, roughness: 0.70 }),
+      agent: new THREE.MeshStandardMaterial({ color: 0xf1f4ef, roughness: 0.38 }),
+      line: new THREE.LineBasicMaterial({ color: 0x76bdf2, transparent: true, opacity: 0.42 }),
+      conflict: new THREE.LineBasicMaterial({ color: 0xef7067, transparent: true, opacity: 0.50 }),
+    };
+
+    const ground = new THREE.Mesh(new THREE.PlaneGeometry(92, 84, 18, 18), mats.ground);
+    ground.rotation.x = -Math.PI / 2;
+    scene.add(ground);
+
+    function makeCylinder(radius, height, material) {
+      return new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, height, 24), material);
+    }
+
+    const projectMeshes = new Map();
+    const placeMeshes = new Map();
+    Object.entries(places).forEach(([name, [x, z]]) => {
+      const base = makeCylinder(name === "water_source" ? 4.2 : 3.2, 0.24, name === "water_source" ? mats.water : mats.incomplete);
+      base.position.set(x, 0.12, z);
+      scene.add(base);
+      placeMeshes.set(name, base);
+      if (name !== "frontier" && name !== "trade_gate") {
+        const tower = new THREE.Mesh(new THREE.BoxGeometry(4.4, 1.0, 4.4), mats.project.clone());
+        tower.position.set(x, 0.70, z);
+        tower.material.color.setHex(0x3f4c48);
+        tower.material.emissive.setHex(0x061111);
+        scene.add(tower);
+        projectMeshes.set(name, tower);
+      }
+    });
+
+    const roadMaterial = mats.road;
+    Object.values(places).forEach(([x, z]) => {
+      const points = [new THREE.Vector3(-4, 0.035, 0), new THREE.Vector3(x, 0.035, z)];
+      const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), new THREE.LineBasicMaterial({ color: 0x59645d, transparent: true, opacity: 0.42 }));
+      scene.add(line);
+    });
+
+    const agentMeshes = new Map();
+    const socialLines = new Map();
+
+    function ensureAgent(agent) {
+      if (agentMeshes.has(agent.name)) return agentMeshes.get(agent.name);
+      const group = new THREE.Group();
+      const bodyMat = new THREE.MeshStandardMaterial({
+        color: roleColors[agent.role] || 0xf1f4ef,
+        emissive: roleColors[agent.role] || 0x111111,
+        emissiveIntensity: 0.12,
+        roughness: 0.36,
+      });
+      const body = makeCylinder(0.72, 1.8, bodyMat);
+      body.position.y = 0.9;
+      const head = new THREE.Mesh(new THREE.SphereGeometry(0.46, 18, 18), bodyMat);
+      head.position.y = 2.05;
+      group.add(body, head);
+      scene.add(group);
+      agentMeshes.set(agent.name, group);
+      const line = new THREE.Line(new THREE.BufferGeometry(), mats.line.clone());
+      scene.add(line);
+      socialLines.set(agent.name, line);
+      return group;
+    }
+
+    const stormGroup = new THREE.Group();
+    for (let i = 0; i < 80; i += 1) {
+      const drop = new THREE.Mesh(new THREE.BoxGeometry(0.035, 1.1, 0.035), new THREE.MeshBasicMaterial({ color: 0x8fd4ff, transparent: true, opacity: 0.28 }));
+      drop.position.set((Math.random() - 0.5) * 90, Math.random() * 34 + 4, (Math.random() - 0.5) * 80);
+      stormGroup.add(drop);
+    }
+    scene.add(stormGroup);
+
+    const els = {
+      play: document.getElementById("play"),
+      scrub: document.getElementById("scrub"),
+      tick: document.getElementById("tick"),
+      weather: document.getElementById("weather"),
+      condition: document.getElementById("condition"),
+      score: document.getElementById("score"),
+      settlementBars: document.getElementById("settlement-bars"),
+      resourceBars: document.getElementById("resource-bars"),
+      projectBars: document.getElementById("project-bars"),
+      agents: document.getElementById("agents"),
+      conditions: document.getElementById("conditions"),
+      events: document.getElementById("events"),
+    };
+
+    els.scrub.max = Math.max(0, frames.length - 1);
+    let frameIndex = 0;
+    let playing = true;
+
+    function fmt(value) {
+      return Number(value || 0).toFixed(2);
+    }
+
+    function bar(label, value, color = "var(--green)") {
+      const safe = Math.max(0, Math.min(1, Number(value || 0)));
+      return `<div class="row"><span>${label}</span><div class="bar"><span style="width:${safe * 100}%;background:${color}"></span></div><span>${fmt(safe)}</span></div>`;
+    }
+
+    function updateBars(frame) {
+      const s = frame.settlement;
+      els.settlementBars.innerHTML = [
+        bar("morale", s.morale, "var(--green)"),
+        bar("trust", s.trust_network, "var(--blue)"),
+        bar("norms", s.norm_standing, "var(--cyan)"),
+        bar("knowledge", s.knowledge, "var(--amber)"),
+        bar("sickness", s.sickness, "var(--red)"),
+        bar("conflict", s.conflict, "var(--red)"),
+        bar("threat", s.threat, "var(--red)"),
+      ].join("");
+      const r = frame.resources;
+      els.resourceBars.innerHTML = [
+        bar("food", r.food, "var(--green)"),
+        bar("water", r.water, "var(--blue)"),
+        bar("materials", r.materials, "var(--amber)"),
+        bar("medicine", r.medicine, "var(--cyan)"),
+        bar("tools", r.tools, "var(--amber)"),
+      ].join("");
+      els.projectBars.innerHTML = Object.entries(frame.projects)
+        .map(([name, value]) => bar(name.replace("_", " "), value, value > 0.88 ? "var(--green)" : "var(--amber)"))
+        .join("");
+    }
+
+    function updateAgents(frame) {
+      els.agents.innerHTML = frame.agents.map((agent) => {
+        const affect = Math.max(agent.fear, agent.stress, agent.anger, agent.guilt);
+        return `<div class="agent-row"><strong>${agent.name}</strong><span>${agent.role}</span><span>${agent.action} / ${agent.animation} / affect ${fmt(affect)}</span></div>`;
+      }).join("");
+    }
+
+    function updateConditions() {
+      const full = summary.find((row) => row.condition === "integrated_settlement_self");
+      els.conditions.innerHTML = summary
+        .slice()
+        .sort((a, b) => b.mean_civilization_score - a.mean_civilization_score)
+        .map((row) => {
+          const loss = full ? Math.max(0, full.mean_civilization_score - row.mean_civilization_score) : 0;
+          return `<div class="condition-row"><strong>${row.condition}</strong><div class="bar"><span style="width:${row.mean_civilization_score * 100}%;background:var(--blue)"></span></div><span>-${fmt(loss)}</span></div>`;
+        })
+        .join("");
+    }
+
+    function updateScene(frame) {
+      Object.entries(projectPlace).forEach(([project, place]) => {
+        const mesh = projectMeshes.get(place);
+        if (!mesh) return;
+        const value = frame.projects[project] || 0;
+        mesh.scale.y = 0.35 + value * 3.2;
+        mesh.position.y = 0.34 + mesh.scale.y * 0.50;
+        mesh.material.color.setHex(value > 0.88 ? 0x78d989 : value > 0.48 ? 0xe7c766 : 0x4d5a56);
+        mesh.material.emissive.setHex(value > 0.88 ? 0x153a1c : 0x111616);
+      });
+      frame.agents.forEach((agent) => {
+        const mesh = ensureAgent(agent);
+        mesh.position.set(agent.x, agent.alive ? 0 : -1, agent.z);
+        mesh.visible = agent.alive;
+        const scale = agent.animation === "rest" ? 0.75 : agent.animation === "build" ? 1.08 : 1.0;
+        mesh.scale.set(scale, scale, scale);
+        const line = socialLines.get(agent.name);
+        const material = frame.settlement.conflict > 0.45 ? mats.conflict : mats.line;
+        line.material.color.setHex(material.color.getHex());
+        line.material.opacity = 0.12 + frame.settlement.trust_network * 0.42;
+        line.geometry.setFromPoints([
+          new THREE.Vector3(agent.x, 0.12, agent.z),
+          new THREE.Vector3(places.commons[0], 0.12, places.commons[1]),
+        ]);
+      });
+      stormGroup.visible = frame.weather !== "clear";
+      stormGroup.children.forEach((drop, i) => {
+        drop.position.y -= 0.75 + frame.weather_severity * 1.1;
+        drop.position.x += Math.sin((frame.tick + i) * 0.03) * 0.05;
+        if (drop.position.y < 0) drop.position.y = 34;
+      });
+      scene.fog.density = 0.002 + frame.weather_severity * 0.002;
+    }
+
+    function updateHud(frame) {
+      els.tick.textContent = `t ${frame.tick}`;
+      els.weather.textContent = frame.weather;
+      els.condition.textContent = frame.condition;
+      els.score.textContent = fmt(frame.settlement.infrastructure * 0.34 + frame.settlement.trust_network * 0.24 + frame.settlement.knowledge * 0.22 + frame.resources.water * 0.20);
+      updateBars(frame);
+      updateAgents(frame);
+      els.events.innerHTML = (frame.events || []).slice().reverse().map((event) => `<p class="event">${event}</p>`).join("") || "<p class=\"small\">No major event in this sample.</p>";
+    }
+
+    function renderFrame(index) {
+      const frame = frames[index];
+      if (!frame) return;
+      frameIndex = index;
+      els.scrub.value = String(index);
+      updateScene(frame);
+      updateHud(frame);
+    }
+
+    els.play.addEventListener("click", () => {
+      playing = !playing;
+      els.play.textContent = playing ? "Pause" : "Play";
+    });
+
+    els.scrub.addEventListener("input", () => {
+      playing = false;
+      els.play.textContent = "Play";
+      renderFrame(Number(els.scrub.value));
+    });
+
+    function animate() {
+      requestAnimationFrame(animate);
+      if (playing && frames.length) {
+        if (!animate.last || performance.now() - animate.last > 220) {
+          frameIndex = (frameIndex + 1) % frames.length;
+          renderFrame(frameIndex);
+          animate.last = performance.now();
+        }
+      }
+      renderer.render(scene, camera);
+    }
+
+    window.addEventListener("resize", () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    });
+
+    updateConditions();
+    renderFrame(0);
+    animate();
+  </script>
+</body>
+</html>

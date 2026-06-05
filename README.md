@@ -97,6 +97,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D irreversible loss report](docs/86_ssrm_3d_irreversible_loss_report.md): tests permanent tool, shelter, relationship, memory, and option-space loss as abstract future-option pressure.
 - [SSRM-3D affective control report](docs/87_ssrm_3d_affective_control_report.md): tests fear, stress, trust, frustration, affiliation, curiosity, and guilt analogues as abstract control summaries.
 - [SSRM-3D physics-first benchmark report](docs/88_ssrm_3d_physics_benchmark_report.md): starts the physics-grounded benchmark track with a modular C++ simulation kernel, recurrent neural decision learning, held-out worlds, ablations, and a replay/intervention viewer.
+- [SSRM-3D settlement/civilization pressure report](docs/89_ssrm_3d_civilization_pressure_report.md): expands the public replay beyond a single-agent survival loop into multi-agent settlement pressure with roles, construction, social memory, norms, affect control, and future planning ablations.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -865,6 +866,21 @@ This writes:
 - `artifacts/ssrm_3d_physics_benchmark_trace.js`
 - `artifacts/ssrm_3d_physics_benchmark_results.js`
 - `visualizations/ssrm_3d_physics_benchmark.html` replays the physics-first trace and viewer shell when served from the repo root.
+
+```bash
+python3 experiments/ssrm_3d_civilization_pressure.py --eval-episodes 48 --ticks 96 --seed 20260706 --trace-episode 3
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_civilization_pressure_eval.csv`
+- `artifacts/ssrm_3d_civilization_pressure_summary.csv`
+- `artifacts/ssrm_3d_civilization_pressure_verdict.csv`
+- `artifacts/ssrm_3d_civilization_pressure_trace.json`
+- `artifacts/ssrm_3d_civilization_pressure_results.json`
+- `artifacts/ssrm_3d_civilization_pressure_trace.js`
+- `artifacts/ssrm_3d_civilization_pressure_results.js`
+- `visualizations/ssrm_3d_civilization_pressure.html` replays the settlement/civilization pressure trace when served from the repo root.
 
 ```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2

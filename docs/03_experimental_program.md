@@ -1889,6 +1889,33 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_physics_benchmark_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_physics_benchmark_results.js)
 
+## SSRM-3D Settlement/Civilization Pressure
+
+Expand the visible SSRM-3D benchmark beyond one-agent water/shelter survival into a small inhabited settlement.
+
+This benchmark adds eight named agents, persistent roles, shared projects, social memory, social norms, emotion-like control summaries, knowledge, map coverage, migration pressure, and late frontier shocks. It is still a designed precursor, not open-ended civilization emergence.
+
+Canonical result:
+
+- `integrated_settlement_self` reaches `0.812` mean civilization score;
+- reactive individuals fall to `0.502`;
+- targeted ablations reduce score for social memory, building memory, role memory, affective control, norms, and future planning;
+- the verdict explicitly records `supports_closed_loop_rl=False`.
+
+Implemented version:
+
+- [SSRM-3D settlement/civilization script](../experiments/ssrm_3d_civilization_pressure.py)
+- [SSRM-3D settlement/civilization module package](../experiments/ssrm_civilization)
+- [SSRM-3D settlement/civilization report](89_ssrm_3d_civilization_pressure_report.md)
+- [settlement/civilization visualization](../visualizations/ssrm_3d_civilization_pressure.html)
+- [evaluation CSV](../artifacts/ssrm_3d_civilization_pressure_eval.csv)
+- [summary CSV](../artifacts/ssrm_3d_civilization_pressure_summary.csv)
+- [verdict CSV](../artifacts/ssrm_3d_civilization_pressure_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_civilization_pressure_trace.json)
+- [JSON results](../artifacts/ssrm_3d_civilization_pressure_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_civilization_pressure_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_civilization_pressure_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

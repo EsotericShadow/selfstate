@@ -4,6 +4,13 @@ This repo holds a falsifiable research program for the question:
 
 > When does representing "me" become more useful than representing "world state only"?
 
+## Plain-Language Public Overview
+
+If you are not reading the full technical stack, start here:
+
+- [Plain-language visual guide](docs/public/README.md)
+- [Findings so far article](docs/public/research_article.md)
+
 The working claim is deliberately narrow:
 
 > A persistent self is not required for all prediction or control. It becomes computationally favored when an adaptive system must predict and regulate future outcomes that depend on its own hidden, changing internal state, body, capabilities, memory, and action effects across time.

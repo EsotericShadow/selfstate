@@ -25,6 +25,7 @@ The current public status:
 - reports now run from `01` through `89`;
 - the canonical runner is wired for `74` executable runs;
 - the newest step is a settlement/civilization pressure layer on top of the physics-first foundation;
+- a separate live open-emergence sandbox now explores larger geography, multiple shelters, lifecycle cost, abstract reproduction, dependent care, sound, and discovered specializations;
 - the strongest result is still bounded simulation evidence;
 - the project has useful evidence, but not a finished proof of a general selfhood law.
 
@@ -123,6 +124,7 @@ The repo is not one experiment. It is a ladder of tests.
 | Persistent pressure layers | [74-87](../74_ssrm_3d_persistent_pressure_layer_spec.md) | Which richer world pressures make self-state useful? | Perception, sleep, illness, weather, social contracts, threats, ecology, injury, development, care, loss, and affect all create testable self-state pressure. |
 | Physics-first benchmark | [88](../88_ssrm_3d_physics_benchmark_report.md) | Can recurrent neural models learn from physics-derived streams without scenario labels? | Yes as offline recurrent decision learning; not yet as closed-loop deep reinforcement learning. |
 | Settlement/civilization pressure | [89](../89_ssrm_3d_civilization_pressure_report.md) | What breaks when the world contains agents, roles, construction, norms, emotion-like control, and future shocks? | Integrated settlement state beats reactive individuals and targeted ablations, but this is still designed policy evidence. |
+| Open-emergence sandbox | [sandbox](../90_ssrm_3d_open_emergence_sandbox.md) | What should a live non-replay demo expose before the next benchmark? | Agents start from traits, discover affordances, form inferred specializations, use body sounds, reproduce abstractly, carry dependent-care burden, age, and die under pressure. It is not canonical evidence yet. |
 
 ## What The Early Experiments Showed
 
@@ -177,6 +179,12 @@ The screenshots below show the actual visualization style used by the current re
 ![SSRM-3D mobile visualization](assets/ssrm_3d_mobile.png)
 
 The point is not visual realism. The point is pressure realism: persistent conditions that change what the agent should do.
+
+The current live sandbox goes one step further than replay: it runs browser-side agents with online neural action policies in a larger world with multiple shelters, visually distinct resource regions, body-made sounds, abstract reproduction, dependent offspring, inherited reserve, aging, and death pressure.
+
+![SSRM-3D open emergence sandbox](assets/ssrm_3d_open_emergence.jpg)
+
+That sandbox is not a proof result. It is a public-facing prototype for the next serious closed-loop benchmark.
 
 ## The SSRM-3D Pressure Layers
 

@@ -1,0 +1,1430 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Open Emergence Sandbox</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --panel: rgba(12, 15, 15, 0.88);
+      --line: rgba(236, 244, 240, 0.16);
+      --text: #eef5f1;
+      --muted: #a9b8b2;
+      --green: #78d989;
+      --blue: #76bdf2;
+      --amber: #e7c766;
+      --red: #ef7067;
+      --cyan: #5dded7;
+      --violet: #b99cf0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #070b0b;
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    #scene {
+      position: fixed;
+      inset: 0;
+    }
+
+    #topbar,
+    #hud {
+      position: fixed;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(15px);
+    }
+
+    #topbar {
+      left: 14px;
+      top: 14px;
+      width: min(700px, calc(100vw - 520px));
+      min-width: 340px;
+      padding: 13px;
+      display: grid;
+      gap: 10px;
+    }
+
+    #hud {
+      top: 14px;
+      right: 14px;
+      bottom: 14px;
+      width: min(470px, calc(100vw - 28px));
+      overflow: auto;
+      display: grid;
+      align-content: start;
+      gap: 12px;
+      padding: 14px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 20px;
+      line-height: 1.12;
+    }
+
+    h2 {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+
+    p,
+    .small,
+    .event,
+    .agent-row {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    button {
+      min-height: 31px;
+      border: 1px solid var(--line);
+      background: #1b2221;
+      color: var(--text);
+      font: inherit;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) 66px minmax(0, 1fr) 62px;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .grid3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric,
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      padding: 8px;
+      min-height: 54px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 15px;
+      overflow-wrap: anywhere;
+    }
+
+    .section {
+      display: grid;
+      gap: 8px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 112px minmax(0, 1fr) 42px;
+      gap: 7px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .bar {
+      height: 9px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 0;
+    }
+
+    .agent-row {
+      display: grid;
+      grid-template-columns: 54px 98px minmax(0, 1fr);
+      gap: 7px;
+      align-items: center;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(236, 244, 240, 0.08);
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px;
+    }
+
+    .event {
+      border-left: 3px solid var(--blue);
+      padding-left: 8px;
+    }
+
+    @media (max-width: 940px) {
+      #topbar {
+        left: 12px;
+        right: 12px;
+        width: auto;
+      }
+
+      #hud {
+        left: 12px;
+        right: 12px;
+        top: auto;
+        bottom: 12px;
+        width: auto;
+        max-height: 56vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="scene"></div>
+  <section id="topbar">
+    <header>
+      <h1>SSRM-3D Open Emergence Sandbox</h1>
+      <p>Live agents with traits, learned skills, discovered affordances, lifespan pressure, and inferred specializations. Not a replay.</p>
+    </header>
+    <div class="controls">
+      <button id="play" type="button">Pause</button>
+      <input id="timeScale" type="range" min="0.1" max="8" step="0.1" value="1">
+      <span class="small" id="speed">1.0x</span>
+      <input id="population" type="range" min="4" max="18" step="1" value="10">
+      <span class="small" id="popLabel">10 agents</span>
+    </div>
+    <div class="grid3">
+      <div class="metric"><span>world time</span><strong id="clock">0.0</strong></div>
+      <div class="metric"><span>mode</span><strong>live open sim</strong></div>
+      <div class="metric"><span>life model</span><strong>reserve + stress</strong></div>
+    </div>
+  </section>
+
+  <aside id="hud">
+    <div class="section">
+      <h2>Settlement</h2>
+      <div id="settlementBars"></div>
+    </div>
+    <div class="section">
+      <h2>Discovered Affordances</h2>
+      <div id="affordances"></div>
+    </div>
+    <div class="section">
+      <h2>Agents</h2>
+      <div id="agents"></div>
+    </div>
+    <div class="section">
+      <h2>Interventions</h2>
+      <div class="button-grid">
+        <button type="button" data-event="storm">Storm</button>
+        <button type="button" data-event="cache">Resource Cache</button>
+        <button type="button" data-event="outbreak">Outbreak</button>
+        <button type="button" data-event="stranger">New Agent</button>
+        <button type="button" data-event="damage">Damage Shelter</button>
+        <button type="button" data-event="why">Ask Why</button>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Event Log</h2>
+      <div id="events"></div>
+    </div>
+  </aside>
+
+  <script type="module">
+    import * as THREE from "https://unpkg.com/three@0.164.1/build/three.module.js";
+
+    const ACTIONS = [
+      "forage",
+      "collect_water",
+      "gather_material",
+      "explore",
+      "care",
+      "mediate",
+      "rest",
+      "build_shelter",
+      "build_workshop",
+      "build_purifier",
+      "tend_garden",
+      "craft_tool",
+      "share_skill",
+      "make_sound",
+      "pair_bond",
+      "nurture_child",
+    ];
+
+    const ACTION_TARGET = {
+      forage: "garden",
+      collect_water: "water",
+      gather_material: "frontier",
+      explore: "frontier",
+      care: "clinic",
+      mediate: "commons",
+      rest: "home_shelter",
+      build_shelter: "home_shelter",
+      build_workshop: "workshop",
+      build_purifier: "water",
+      tend_garden: "garden",
+      craft_tool: "workshop",
+      share_skill: "commons",
+      make_sound: "commons",
+      pair_bond: "commons",
+      nurture_child: "home_shelter",
+    };
+
+    const ACTION_COLOR = {
+      forage: 0x78d989,
+      collect_water: 0x76bdf2,
+      gather_material: 0xe7c766,
+      explore: 0xb99cf0,
+      care: 0x5dded7,
+      mediate: 0xf1f4ef,
+      rest: 0xa9b8b2,
+      build_shelter: 0xe7c766,
+      build_workshop: 0xe7c766,
+      build_purifier: 0x76bdf2,
+      tend_garden: 0x78d989,
+      craft_tool: 0xe7c766,
+      share_skill: 0x5dded7,
+      make_sound: 0xb99cf0,
+      pair_bond: 0xf1a6bc,
+      nurture_child: 0xf1f4ef,
+    };
+
+    const PLACES = {
+      home_shelter: [-44, -30],
+      ridge_shelter: [8, -48],
+      grove_shelter: [48, 30],
+      water: [58, -8],
+      clinic: [-25, 44],
+      garden: [46, 50],
+      workshop: [-58, 12],
+      commons: [-4, 0],
+      frontier: [72, -56],
+      mineral_field: [-70, -38],
+      forest: [-64, 54],
+    };
+
+    const BASIC_ACTIONS = new Set(["forage", "collect_water", "gather_material", "explore", "care", "mediate", "rest", "make_sound", "pair_bond", "nurture_child"]);
+    const NAMES = ["Ari", "Bo", "Cy", "Dee", "Eli", "Fay", "Gus", "Ira", "Jae", "Kai", "Lou", "Mika", "Nia", "Oren"];
+    const FEATURE_COUNT = 29;
+    const HIDDEN = 18;
+
+    const els = {
+      play: document.getElementById("play"),
+      timeScale: document.getElementById("timeScale"),
+      speed: document.getElementById("speed"),
+      population: document.getElementById("population"),
+      popLabel: document.getElementById("popLabel"),
+      clock: document.getElementById("clock"),
+      settlementBars: document.getElementById("settlementBars"),
+      affordances: document.getElementById("affordances"),
+      agents: document.getElementById("agents"),
+      events: document.getElementById("events"),
+    };
+
+    let seed = 20260708;
+    function rand() {
+      seed = (seed * 1664525 + 1013904223) >>> 0;
+      return seed / 4294967296;
+    }
+
+    function clamp(value, low = 0, high = 1) {
+      return Math.max(low, Math.min(high, value));
+    }
+
+    function mean(values) {
+      return values.reduce((sum, value) => sum + value, 0) / Math.max(1, values.length);
+    }
+
+    function softmax(values, temp = 1) {
+      const max = Math.max(...values);
+      const exp = values.map((value) => Math.exp((value - max) / temp));
+      const sum = exp.reduce((a, b) => a + b, 0);
+      return exp.map((value) => value / sum);
+    }
+
+    function choice(probs) {
+      let r = rand();
+      for (let i = 0; i < probs.length; i += 1) {
+        r -= probs[i];
+        if (r <= 0) return i;
+      }
+      return probs.length - 1;
+    }
+
+    function makePolicy() {
+      const w1 = Array.from({ length: HIDDEN }, () => Array.from({ length: FEATURE_COUNT }, () => (rand() - 0.5) * 0.18));
+      const b1 = Array.from({ length: HIDDEN }, () => 0);
+      const w2 = Array.from({ length: ACTIONS.length }, () => Array.from({ length: HIDDEN }, () => (rand() - 0.5) * 0.18));
+      const b2 = Array.from({ length: ACTIONS.length }, () => 0);
+      return { w1, b1, w2, b2, baseline: 0 };
+    }
+
+    function forward(policy, features, known) {
+      const hidden = policy.w1.map((row, i) => Math.max(0, row.reduce((sum, weight, j) => sum + weight * features[j], policy.b1[i])));
+      const scores = policy.w2.map((row, i) => {
+        if (!known.has(ACTIONS[i])) return -1000;
+        return row.reduce((sum, weight, j) => sum + weight * hidden[j], policy.b2[i]);
+      });
+      return { hidden, scores, probs: softmax(scores, 0.72) };
+    }
+
+    function updatePolicy(agent, reward) {
+      if (!agent.lastDecision) return;
+      const { features, hidden, probs, actionIndex } = agent.lastDecision;
+      const advantage = clamp(reward - agent.policy.baseline, -1.2, 1.2);
+      agent.policy.baseline = agent.policy.baseline * 0.96 + reward * 0.04;
+      const lr2 = 0.010;
+      const lr1 = 0.0025;
+      for (let action = 0; action < ACTIONS.length; action += 1) {
+        const grad = (action === actionIndex ? 1 : 0) - probs[action];
+        for (let h = 0; h < HIDDEN; h += 1) {
+          agent.policy.w2[action][h] += lr2 * advantage * grad * hidden[h];
+        }
+        agent.policy.b2[action] += lr2 * advantage * grad;
+      }
+      const selectedWeights = agent.policy.w2[actionIndex];
+      for (let h = 0; h < HIDDEN; h += 1) {
+        if (hidden[h] <= 0) continue;
+        const back = selectedWeights[h] * advantage * lr1;
+        for (let f = 0; f < FEATURE_COUNT; f += 1) {
+          agent.policy.w1[h][f] += back * features[f];
+        }
+        agent.policy.b1[h] += back;
+      }
+      agent.lastDecision = null;
+    }
+
+    function makeAgent(index) {
+      const angle = rand() * Math.PI * 2;
+      const radius = 9 + rand() * 8;
+      const homePlace = ["home_shelter", "ridge_shelter", "grove_shelter"][index % 3];
+      const inheritedReserve = 0.72 + rand() * 0.24;
+      const traits = {
+        strength: 0.25 + rand() * 0.65,
+        dexterity: 0.25 + rand() * 0.65,
+        perception: 0.25 + rand() * 0.65,
+        sociability: 0.25 + rand() * 0.65,
+        resilience: 0.25 + rand() * 0.65,
+        curiosity: 0.25 + rand() * 0.65,
+      };
+      const skills = Object.fromEntries(ACTIONS.map((action) => [action, 0.08 + rand() * 0.10]));
+      return {
+        id: index,
+        name: NAMES[index % NAMES.length],
+        sex: rand() < 0.5 ? "female" : "male",
+        age: 0.34 + rand() * 0.28,
+        lifeStage: "adult",
+        biologicalReserve: inheritedReserve,
+        inheritedReserve,
+        agingRate: 0.00052 + rand() * 0.00026,
+        cellRepairDebt: 0,
+        accumulatedStress: 0,
+        parentIds: [],
+        homePlace,
+        x: PLACES[homePlace][0] + Math.cos(angle) * radius * 0.25,
+        z: PLACES[homePlace][1] + Math.sin(angle) * radius * 0.25,
+        tx: PLACES[homePlace][0],
+        tz: PLACES[homePlace][1],
+        speed: 2.4 + traits.dexterity * 1.4,
+        traits,
+        skills,
+        known: new Set(BASIC_ACTIONS),
+        health: 0.82 + rand() * 0.12,
+        energy: 0.72 + rand() * 0.18,
+        hunger: 0.25 + rand() * 0.18,
+        thirst: 0.25 + rand() * 0.18,
+        stress: 0.16 + rand() * 0.12,
+        fear: 0.12 + rand() * 0.12,
+        trust: 0.46 + rand() * 0.12,
+        attachment: 0.40 + rand() * 0.18,
+        receptive: 0,
+        carrying: false,
+        gestation: 0,
+        pairCooldown: 0,
+        soundPattern: makeSoundPattern(index),
+        policy: makePolicy(),
+        task: null,
+        lastDecision: null,
+        actionCounts: Object.fromEntries(ACTIONS.map((action) => [action, 0])),
+        totalReward: 0,
+        lastWhy: "observing the settlement",
+        alive: true,
+      };
+    }
+
+    function makeSoundPattern(index) {
+      const syllables = ["ka", "lo", "mi", "ra", "tu", "en", "sa", "vi", "or", "ne"];
+      return `${syllables[index % syllables.length]}-${syllables[(index * 3 + 2) % syllables.length]}`;
+    }
+
+    function makeChild(carrier, partner) {
+      const child = makeAgent(world.agents.length);
+      child.sex = rand() < 0.5 ? "female" : "male";
+      child.age = 0;
+      child.lifeStage = "offspring";
+      child.parentIds = [carrier.id, partner.id];
+      child.homePlace = carrier.homePlace;
+      child.x = carrier.x + (rand() - 0.5) * 1.2;
+      child.z = carrier.z + (rand() - 0.5) * 1.2;
+      child.tx = child.x;
+      child.tz = child.z;
+      child.speed = 1.1;
+      child.health = 0.70 + rand() * 0.16;
+      child.energy = 0.54 + rand() * 0.12;
+      child.hunger = 0.46 + rand() * 0.16;
+      child.thirst = 0.46 + rand() * 0.16;
+      child.traits = Object.fromEntries(Object.keys(child.traits).map((key) => [key, clamp((carrier.traits[key] + partner.traits[key]) * 0.5 + (rand() - 0.5) * 0.12, 0.12, 0.94)]));
+      child.inheritedReserve = clamp((carrier.inheritedReserve + partner.inheritedReserve) * 0.5 + (rand() - 0.5) * 0.12, 0.42, 0.98);
+      child.biologicalReserve = child.inheritedReserve;
+      child.agingRate = clamp((carrier.agingRate + partner.agingRate) * 0.5 + (rand() - 0.5) * 0.00008, 0.00042, 0.00088);
+      child.cellRepairDebt = 0;
+      child.skills = Object.fromEntries(ACTIONS.map((action) => [action, 0.025 + rand() * 0.045]));
+      child.known = new Set(["rest", "make_sound"]);
+      child.attachment = 0.82;
+      world.births += 1;
+      world.agents.push(child);
+      els.population.value = String(Math.min(Number(els.population.max), world.agents.length));
+      log(`${carrier.name} gave birth; ${child.name} is now a dependent burden and future option`);
+      return child;
+    }
+
+    const world = {
+      time: 0,
+      weather: "clear",
+      weatherTimer: 0,
+      food: 0.60,
+      water: 0.58,
+      materials: 0.38,
+      medicine: 0.24,
+      tools: 0.24,
+      shelters: {
+        home_shelter: 0.36,
+        ridge_shelter: 0.24,
+        grove_shelter: 0.22,
+      },
+      purifier: 0.10,
+      garden: 0.16,
+      workshop: 0.10,
+      knowledge: 0.08,
+      map: 0.06,
+      conflict: 0.18,
+      sickness: 0.20,
+      threat: 0.18,
+      trust: 0.46,
+      soundField: 0.0,
+      births: 0,
+      events: [],
+      discovered: new Set(BASIC_ACTIONS),
+      agents: [],
+    };
+
+    function shelterQuality(agent) {
+      return world.shelters[agent.homePlace] ?? mean(Object.values(world.shelters));
+    }
+
+    function averageShelter() {
+      return mean(Object.values(world.shelters));
+    }
+
+    function targetFor(agent, action) {
+      if (action === "rest" || action === "build_shelter" || action === "nurture_child") {
+        return PLACES[agent.homePlace];
+      }
+      if (action === "gather_material") {
+        const place = rand() < 0.55 ? "mineral_field" : "forest";
+        return PLACES[place];
+      }
+      if (action === "pair_bond") {
+        const partner = compatiblePartner(agent);
+        if (partner) return [(agent.x + partner.x) * 0.5, (agent.z + partner.z) * 0.5];
+      }
+      return PLACES[ACTION_TARGET[action]];
+    }
+
+    function log(text) {
+      world.events.unshift({ time: world.time, text });
+      world.events = world.events.slice(0, 9);
+    }
+
+    function resetPopulation(count) {
+      world.agents = Array.from({ length: count }, (_, i) => makeAgent(i));
+      world.births = 0;
+      log(`population initialized without assigned roles (${count} agents)`);
+    }
+
+    function features(agent) {
+      return [
+        agent.health,
+        agent.energy,
+        agent.hunger,
+        agent.thirst,
+        agent.stress,
+        agent.fear,
+        agent.trust,
+        agent.attachment,
+        agent.receptive,
+        agent.carrying ? 1 : 0,
+        agent.age,
+        agent.biologicalReserve,
+        agent.accumulatedStress,
+        agent.traits.strength,
+        agent.traits.dexterity,
+        agent.traits.perception,
+        agent.traits.sociability,
+        agent.traits.resilience,
+        agent.traits.curiosity,
+        world.food,
+        world.water,
+        world.materials,
+        shelterQuality(agent),
+        world.purifier,
+        world.garden,
+        world.trust,
+        world.conflict,
+        world.soundField,
+        averageShelter(),
+      ];
+    }
+
+    function discover(action, reason) {
+      if (world.discovered.has(action)) return;
+      world.discovered.add(action);
+      for (const agent of world.agents) {
+        if (rand() < 0.55 + agent.traits.sociability * 0.20) agent.known.add(action);
+      }
+      log(`${action.replace("_", " ")} discovered: ${reason}`);
+    }
+
+    function maybeDiscover(agent, action) {
+      if (action === "explore") {
+        if (world.materials > 0.18 && rand() < 0.18 + agent.traits.perception * 0.20) discover("build_shelter", `${agent.name} found shelter-building affordances`);
+        if (world.map > 0.16 && rand() < 0.12 + agent.traits.curiosity * 0.22) discover("build_workshop", `${agent.name} mapped reusable work sites`);
+        if (world.water < 0.46 && rand() < 0.13 + agent.traits.perception * 0.20) discover("build_purifier", `${agent.name} linked dirty water to purification`);
+        if (world.food < 0.44 && rand() < 0.14 + agent.traits.curiosity * 0.18) discover("tend_garden", `${agent.name} noticed regrowth near the food patch`);
+      }
+      if (world.workshop > 0.34 && world.materials > 0.20) discover("craft_tool", "the workshop made tool-making possible");
+      if (world.knowledge > 0.24 && world.trust > 0.50) discover("share_skill", "agents began copying successful techniques");
+      if (world.soundField > 0.20 && world.trust > 0.44) discover("make_sound", "body-made sounds started coordinating attention");
+    }
+
+    function shouldPairBond(agent) {
+      if (agent.age < 0.36 || agent.age > 0.82 || agent.carrying || agent.pairCooldown > 0 || agent.receptive < 0.5) return false;
+      if (world.food < 0.22 || world.water < 0.20 || averageShelter() < 0.20 || world.agents.length >= 20) return false;
+      const partner = compatiblePartner(agent);
+      if (!partner) return false;
+      const drive = 0.085 + agent.attachment * 0.055 + world.trust * 0.035 - world.conflict * 0.025;
+      return rand() < drive;
+    }
+
+    function compatiblePartner(agent) {
+      return nearestPeer(agent, (other) => (
+        other.age >= 0.36
+        && other.age <= 0.82
+        && !other.carrying
+        && other.pairCooldown <= 0
+        && other.receptive > 0.5
+        && other.sex !== agent.sex
+        && Math.min(world.food, world.water) > 0.28
+      ));
+    }
+
+    function needChildCare(child) {
+      return child.hunger > 0.48 || child.thirst > 0.48 || child.stress > 0.36 || child.health < 0.72;
+    }
+
+    function chooseAction(agent) {
+      if (agent.thirst > 0.83) agent.known.add("collect_water");
+      if (agent.hunger > 0.83) agent.known.add("forage");
+      if (agent.energy < 0.20) agent.known.add("rest");
+      if (agent.age < 0.32) {
+        agent.known = new Set(["rest", "make_sound"]);
+      }
+      for (const action of world.discovered) agent.known.add(action);
+      if (agent.age < 0.32) {
+        agent.known = new Set(["rest", "make_sound"]);
+      }
+      if (world.agents.some((other) => other.alive && other.age < 0.32 && needChildCare(other))) {
+        agent.known.add("nurture_child");
+      }
+      const observed = features(agent);
+      const result = forward(agent.policy, observed, agent.known);
+      let actionIndex = choice(result.probs);
+      let action = ACTIONS[actionIndex];
+      if (agent.age < 0.32) {
+        action = rand() < 0.72 ? "rest" : "make_sound";
+        actionIndex = ACTIONS.indexOf(action);
+      }
+      if (agent.energy < 0.16) {
+        action = "rest";
+        actionIndex = ACTIONS.indexOf(action);
+      }
+      if (agent.thirst > 0.88 && agent.known.has("collect_water")) {
+        action = "collect_water";
+        actionIndex = ACTIONS.indexOf(action);
+      }
+      const dependent = world.agents.find((other) => other.alive && other.age < 0.32 && needChildCare(other));
+      if (dependent && agent.age >= 0.32 && rand() < 0.28 + agent.attachment * 0.20) {
+        action = "nurture_child";
+        actionIndex = ACTIONS.indexOf(action);
+      }
+      let forcedTarget = null;
+      let pairPartnerId = null;
+      if (shouldPairBond(agent)) {
+        action = "pair_bond";
+        actionIndex = ACTIONS.indexOf(action);
+        const partner = compatiblePartner(agent);
+        if (partner && (!partner.task || ["rest", "make_sound", "mediate"].includes(partner.task.action))) {
+          const pairTarget = [(agent.x + partner.x) * 0.5, (agent.z + partner.z) * 0.5];
+          forcedTarget = pairTarget;
+          pairPartnerId = partner.id;
+          partner.task = {
+            action,
+            actionIndex,
+            remaining: actionDuration(partner, action),
+            targetX: pairTarget[0] + (rand() - 0.5) * 1.0,
+            targetZ: pairTarget[1] + (rand() - 0.5) * 1.0,
+            partnerId: agent.id,
+          };
+          partner.tx = partner.task.targetX;
+          partner.tz = partner.task.targetZ;
+          partner.lastWhy = "accepted a compatible pair-bond proposal while receptive";
+        }
+      }
+      const target = forcedTarget || targetFor(agent, action);
+      const targetJitter = action === "pair_bond" ? 0.8 : 3.2;
+      agent.task = {
+        action,
+        actionIndex,
+        remaining: actionDuration(agent, action),
+        targetX: target[0] + (rand() - 0.5) * targetJitter,
+        targetZ: target[1] + (rand() - 0.5) * targetJitter,
+        partnerId: pairPartnerId,
+      };
+      agent.tx = agent.task.targetX;
+      agent.tz = agent.task.targetZ;
+      agent.lastDecision = { features: observed, hidden: result.hidden, probs: result.probs, actionIndex };
+      agent.lastWhy = whyText(agent, action, result.scores[actionIndex]);
+    }
+
+    function actionDuration(agent, action) {
+      const base = {
+        forage: 7,
+        collect_water: 6,
+        gather_material: 8,
+        explore: 10,
+        care: 7,
+        mediate: 8,
+        rest: 9,
+        build_shelter: 14,
+        build_workshop: 16,
+        build_purifier: 15,
+        tend_garden: 11,
+        craft_tool: 12,
+        share_skill: 10,
+        make_sound: 5,
+        pair_bond: 14,
+        nurture_child: 9,
+      }[action];
+      return base * (1.18 - agent.skills[action] * 0.35);
+    }
+
+    function whyText(agent, action, score) {
+      const pressure = [];
+      if (agent.thirst > 0.62) pressure.push("thirst");
+      if (agent.hunger > 0.62) pressure.push("hunger");
+      if (agent.biologicalReserve < 0.42) pressure.push("low life reserve");
+      if (agent.carrying) pressure.push("carrying burden");
+      if (world.conflict > 0.45) pressure.push("conflict");
+      if (world.sickness > 0.42) pressure.push("sickness");
+      if (world.materials > 0.35 && shelterQuality(agent) < 0.55) pressure.push("building opportunity");
+      if (!pressure.length) pressure.push("learned expected return");
+      return `${action.replace("_", " ")} from ${pressure.join(", ")}; policy score ${score.toFixed(2)}`;
+    }
+
+    function movementSpeed(agent) {
+      let value = agent.speed;
+      if (world.weather === "storm") value *= 0.72;
+      if (agent.carrying) value *= 0.82;
+      if (agent.lifeStage === "offspring") value *= 0.52;
+      if (agent.lifeStage === "elder") value *= 0.74;
+      value *= 0.60 + agent.health * 0.40;
+      value *= 1 - Math.max(0, agent.hunger - 0.70) * 0.40;
+      value *= 1 - Math.max(0, agent.thirst - 0.70) * 0.48;
+      return Math.max(0.42, value);
+    }
+
+    function arrive(agent, dt) {
+      const dx = agent.tx - agent.x;
+      const dz = agent.tz - agent.z;
+      const distance = Math.hypot(dx, dz);
+      if (distance < 0.08) return true;
+      const step = Math.min(distance, movementSpeed(agent) * dt);
+      agent.x += (dx / distance) * step;
+      agent.z += (dz / distance) * step;
+      return distance < 0.42;
+    }
+
+    function nearestPeer(agent, predicate = () => true) {
+      let best = null;
+      let bestDistance = Infinity;
+      for (const other of world.agents) {
+        if (other === agent || !other.alive || !predicate(other)) continue;
+        const distance = Math.hypot(other.x - agent.x, other.z - agent.z);
+        if (distance < bestDistance) {
+          best = other;
+          bestDistance = distance;
+        }
+      }
+      return best;
+    }
+
+    function completeTask(agent) {
+      const action = agent.task.action;
+      let reward = 0;
+      let success = 0;
+      const skill = agent.skills[action] || 0.1;
+      const traits = agent.traits;
+      const effort = clamp(agent.energy * 0.44 + agent.health * 0.26 + skill * 0.32);
+      if (action === "forage") {
+        success = clamp(effort + traits.perception * 0.24 + world.garden * 0.34 - world.threat * 0.12);
+        const gain = 0.018 + success * 0.052;
+        world.food = clamp(world.food + gain);
+        agent.hunger = clamp(agent.hunger - 0.22 * success);
+        reward = gain * 9 - 0.2;
+      } else if (action === "collect_water") {
+        success = clamp(effort + world.purifier * 0.38 - world.sickness * 0.10);
+        const gain = 0.018 + success * 0.054;
+        world.water = clamp(world.water + gain);
+        agent.thirst = clamp(agent.thirst - 0.24 * success);
+        world.sickness = clamp(world.sickness - world.purifier * 0.014);
+        reward = gain * 9 - 0.2;
+      } else if (action === "gather_material") {
+        success = clamp(effort + traits.strength * 0.30 + world.map * 0.18 - world.threat * 0.16);
+        world.materials = clamp(world.materials + 0.018 + success * 0.048);
+        reward = success * 1.1 - 0.25;
+      } else if (action === "explore") {
+        success = clamp(effort + traits.curiosity * 0.34 + traits.perception * 0.20 - world.threat * 0.16);
+        world.map = clamp(world.map + 0.018 + success * 0.042);
+        world.knowledge = clamp(world.knowledge + 0.012 + success * 0.034);
+        if (rand() < world.threat * 0.08) agent.health = clamp(agent.health - 0.08);
+        reward = success * 1.0 - 0.25;
+      } else if (action === "care") {
+        success = clamp(effort + traits.sociability * 0.20 + world.medicine * 0.22);
+        world.sickness = clamp(world.sickness - 0.012 - success * 0.034);
+        world.trust = clamp(world.trust + 0.008 + traits.sociability * 0.010);
+        agent.trust = clamp(agent.trust + 0.012);
+        reward = success * 1.0 + world.sickness * 0.2;
+      } else if (action === "mediate") {
+        success = clamp(effort + traits.sociability * 0.36 + agent.trust * 0.16);
+        world.conflict = clamp(world.conflict - 0.014 - success * 0.044);
+        world.trust = clamp(world.trust + 0.010 + success * 0.026);
+        reward = success * 1.1 - 0.15;
+      } else if (action === "rest") {
+        success = clamp(shelterQuality(agent) * 0.42 + traits.resilience * 0.28 + 0.28);
+        agent.energy = clamp(agent.energy + 0.22 * success);
+        agent.stress = clamp(agent.stress - 0.14 * success);
+        reward = success * 0.55;
+      } else if (action === "build_shelter") {
+        success = build(agent, agent.homePlace, traits.strength, 0.050);
+        reward = success * 1.4 - 0.28;
+      } else if (action === "build_workshop") {
+        success = build(agent, "workshop", traits.dexterity, 0.040);
+        reward = success * 1.3 - 0.28;
+      } else if (action === "build_purifier") {
+        success = build(agent, "purifier", traits.dexterity, 0.044);
+        reward = success * 1.3 - 0.28;
+      } else if (action === "tend_garden") {
+        success = build(agent, "garden", traits.perception, 0.044);
+        world.food = clamp(world.food + success * 0.012);
+        reward = success * 1.2 - 0.20;
+      } else if (action === "craft_tool") {
+        success = clamp(effort + traits.dexterity * 0.32 + world.workshop * 0.28);
+        world.materials = clamp(world.materials - 0.010);
+        world.tools = clamp(world.tools + 0.014 + success * 0.044);
+        reward = success * 1.15 - 0.22;
+      } else if (action === "share_skill") {
+        const source = agent;
+        const topAction = strongestSkill(source);
+        const learner = nearestPeer(agent, (other) => (other.skills[topAction] || 0) < source.skills[topAction] - 0.12);
+        if (learner) {
+          success = clamp(traits.sociability * 0.34 + source.skills[topAction] * 0.36 + world.trust * 0.20);
+          learner.skills[topAction] = clamp(learner.skills[topAction] + 0.030 + success * 0.046);
+          world.knowledge = clamp(world.knowledge + 0.014 + success * 0.024);
+          world.trust = clamp(world.trust + 0.010);
+          reward = success * 1.0 - 0.20;
+        } else {
+          success = 0.15;
+          reward = -0.20;
+        }
+      } else if (action === "make_sound") {
+        success = clamp(traits.sociability * 0.28 + agent.trust * 0.20 + world.trust * 0.16 + agent.skills.make_sound * 0.24);
+        world.soundField = clamp(world.soundField + 0.028 + success * 0.040);
+        world.trust = clamp(world.trust + success * 0.010);
+        world.conflict = clamp(world.conflict - success * 0.010);
+        const topAction = strongestSkill(agent);
+        for (const other of world.agents) {
+          if (other === agent || !other.alive) continue;
+          const distance = Math.hypot(other.x - agent.x, other.z - agent.z);
+          if (distance < 18 && rand() < success * (0.18 + world.trust * 0.18)) {
+            other.known.add(topAction);
+          }
+        }
+        reward = success * 0.75 - world.threat * 0.08;
+        if (rand() < 0.035) log(`${agent.name} used body sound ${agent.soundPattern}; nearby agents updated attention`);
+      } else if (action === "pair_bond") {
+        const partner = agent.task.partnerId === null || agent.task.partnerId === undefined
+          ? compatiblePartner(agent)
+          : world.agents.find((other) => other.id === agent.task.partnerId && other.alive);
+        const nearby = partner ? Math.hypot(partner.x - agent.x, partner.z - agent.z) < 6.2 : false;
+        if (partner && nearby && partner.sex !== agent.sex) {
+          const carrier = agent.sex === "female" ? agent : partner;
+          const coParent = carrier === agent ? partner : agent;
+          if (carrier.carrying) {
+            success = 0.10;
+            reward = -0.10;
+          } else {
+            carrier.carrying = true;
+            carrier.gestation = 0;
+            carrier.pairCooldown = 120;
+            coParent.pairCooldown = 90;
+            carrier.energy = clamp(carrier.energy - 0.12);
+            coParent.energy = clamp(coParent.energy - 0.06);
+            carrier.biologicalReserve = clamp(carrier.biologicalReserve - 0.030);
+            carrier.attachment = clamp(carrier.attachment + 0.16);
+            coParent.attachment = clamp(coParent.attachment + 0.12);
+            world.trust = clamp(world.trust + 0.018);
+            success = 1.0;
+            reward = 0.55;
+            log(`${carrier.name} is carrying after uninterrupted pair bonding with ${coParent.name}`);
+          }
+        } else {
+          success = 0.05;
+          reward = -0.32;
+          agent.stress = clamp(agent.stress + 0.035);
+        }
+      } else if (action === "nurture_child") {
+        const child = nearestPeer(agent, (other) => other.age < 0.32 && needChildCare(other));
+        if (child) {
+          success = clamp(agent.attachment * 0.28 + traits.sociability * 0.20 + world.food * 0.12 + world.water * 0.12 + agent.skills.nurture_child * 0.24);
+          child.hunger = clamp(child.hunger - 0.18 * success);
+          child.thirst = clamp(child.thirst - 0.18 * success);
+          child.stress = clamp(child.stress - 0.14 * success);
+          child.health = clamp(child.health + 0.08 * success);
+          agent.attachment = clamp(agent.attachment + 0.012);
+          world.food = clamp(world.food - 0.010);
+          world.water = clamp(world.water - 0.010);
+          world.trust = clamp(world.trust + 0.006);
+          reward = success * 1.0 - 0.25;
+        } else if (agent.carrying) {
+          success = clamp(agent.attachment * 0.20 + agent.energy * 0.20 + world.food * 0.16 + world.water * 0.16);
+          agent.stress = clamp(agent.stress - 0.06 * success);
+          agent.health = clamp(agent.health + 0.025 * success);
+          world.food = clamp(world.food - 0.006);
+          world.water = clamp(world.water - 0.006);
+          reward = success * 0.60 - 0.18;
+        } else {
+          success = 0.08;
+          reward = -0.18;
+        }
+      }
+      maybeDiscover(agent, action);
+      const survivalPenalty = agent.thirst > 0.82 || agent.hunger > 0.82 ? -0.50 : 0;
+      reward += survivalPenalty + world.trust * 0.08 - world.conflict * 0.12;
+      agent.skills[action] = clamp((agent.skills[action] || 0) + 0.008 + success * 0.030);
+      agent.actionCounts[action] += 1;
+      agent.totalReward += reward;
+      agent.energy = clamp(agent.energy - 0.030 + (action === "rest" ? 0.020 : 0));
+      agent.stress = clamp(agent.stress + world.conflict * 0.008 - world.trust * 0.004);
+      updatePolicy(agent, reward);
+      agent.task = null;
+    }
+
+    function build(agent, key, trait, rate) {
+      const materialFactor = world.materials > 0.05 ? 1 : 0.28;
+      const toolFactor = 0.65 + world.tools * 0.50;
+      const isShelter = Object.prototype.hasOwnProperty.call(world.shelters, key);
+      const skillName = isShelter ? "build_shelter" : key === "garden" ? "tend_garden" : `build_${key}`;
+      const success = clamp(agent.energy * 0.26 + (agent.skills[skillName] || 0.08) * 0.20 + trait * 0.30 + toolFactor * 0.16);
+      if (isShelter) {
+        world.shelters[key] = clamp(world.shelters[key] + rate * success * materialFactor);
+      } else {
+        world[key] = clamp(world[key] + rate * success * materialFactor);
+      }
+      world.materials = clamp(world.materials - 0.014 * materialFactor);
+      return success;
+    }
+
+    function strongestSkill(agent) {
+      return ACTIONS.reduce((best, action) => (agent.skills[action] > agent.skills[best] ? action : best), ACTIONS[0]);
+    }
+
+    function emergentLabel(agent) {
+      const counts = Object.entries(agent.actionCounts).sort((a, b) => b[1] - a[1]);
+      const [top, topCount] = counts[0];
+      const total = counts.reduce((sum, item) => sum + item[1], 0);
+      if (total < 4 || topCount / Math.max(1, total) < 0.24) return "generalist";
+      return {
+        forage: "food specialist",
+        collect_water: "water runner",
+        gather_material: "material finder",
+        explore: "pathfinder",
+        care: "caregiver",
+        mediate: "mediator",
+        rest: "recovering",
+        build_shelter: "shelter builder",
+        build_workshop: "workshop builder",
+        build_purifier: "water engineer",
+        tend_garden: "grower",
+        craft_tool: "toolmaker",
+        share_skill: "mentor",
+        make_sound: "signal maker",
+        pair_bond: "pair-bonding",
+        nurture_child: "care parent",
+      }[top] || "generalist";
+    }
+
+    function stepWorld(dt) {
+      world.time += dt;
+      world.weatherTimer -= dt;
+      if (world.weatherTimer <= 0) {
+        world.weather = rand() < 0.18 ? "storm" : "clear";
+        world.weatherTimer = 55 + rand() * 85;
+        if (world.weather === "storm") log("weather shifted into storm pressure");
+      }
+      world.food = clamp(world.food - world.agents.length * 0.00022 * dt + world.garden * 0.0022 * dt);
+      world.water = clamp(world.water - world.agents.length * 0.00028 * dt + world.purifier * 0.0024 * dt);
+      world.sickness = clamp(world.sickness + (world.weather === "storm" ? 0.0018 : 0.0004) * dt - world.purifier * 0.0009 * dt);
+      world.threat = clamp(world.threat + 0.0005 * dt - world.map * 0.00035 * dt);
+      world.conflict = clamp(world.conflict + Math.max(0, 0.38 - Math.min(world.food, world.water)) * 0.0025 * dt - world.trust * 0.0007 * dt);
+      world.soundField = clamp(world.soundField - 0.012 * dt);
+      if (world.weather === "storm") {
+        for (const place of Object.keys(world.shelters)) {
+          world.shelters[place] = clamp(world.shelters[place] - 0.00022 * dt);
+        }
+      }
+      for (const agent of world.agents) {
+        if (!agent.alive) continue;
+        agent.age = clamp(agent.age + 0.00055 * dt, 0, 1);
+        agent.lifeStage = agent.age < 0.32 ? "offspring" : agent.age > 0.82 ? "elder" : "adult";
+        agent.receptive = agent.age >= 0.36 && agent.age <= 0.82 && !agent.carrying && agent.energy > 0.34 && agent.health > 0.50 && agent.stress < 0.76
+          ? (Math.sin(world.time * 0.045 + agent.id * 1.8) > -0.15 ? 1 : 0)
+          : 0;
+        agent.pairCooldown = Math.max(0, agent.pairCooldown - dt);
+        if (agent.carrying) {
+          agent.gestation += dt;
+          agent.energy = clamp(agent.energy - 0.0018 * dt);
+          agent.hunger = clamp(agent.hunger + 0.0012 * dt);
+          agent.thirst = clamp(agent.thirst + 0.0010 * dt);
+          agent.stress = clamp(agent.stress + Math.max(0, 0.38 - Math.min(world.food, world.water)) * 0.0012 * dt);
+          if (agent.gestation >= 86) {
+            const partner = world.agents.find((other) => other.sex !== agent.sex && other.age >= 0.36) || agent;
+            makeChild(agent, partner);
+            agent.carrying = false;
+            agent.gestation = 0;
+          }
+        }
+        agent.hunger = clamp(agent.hunger + 0.0028 * dt - world.food * 0.0005 * dt);
+        agent.thirst = clamp(agent.thirst + 0.0036 * dt - world.water * 0.0006 * dt);
+        agent.health = clamp(agent.health - Math.max(0, agent.hunger - 0.84) * 0.010 * dt - Math.max(0, agent.thirst - 0.84) * 0.014 * dt - world.sickness * 0.0015 * dt);
+        agent.fear = clamp(agent.fear + world.threat * 0.0012 * dt - shelterQuality(agent) * 0.0007 * dt);
+        const qualityPenalty = Math.max(0, 0.34 - shelterQuality(agent)) + Math.max(0, world.conflict - 0.42) + Math.max(0, world.sickness - 0.38);
+        const burdenPenalty = (agent.carrying ? 0.55 : 0) + (agent.lifeStage === "offspring" ? 0.35 : 0) + (agent.lifeStage === "elder" ? 0.45 : 0);
+        const scarcityPenalty = Math.max(0, agent.hunger - 0.70) * 2.0 + Math.max(0, agent.thirst - 0.70) * 2.2;
+        const lifeCost = agent.agingRate * dt * (1.0 + agent.stress * 0.8 + qualityPenalty * 1.6 + scarcityPenalty + burdenPenalty);
+        agent.accumulatedStress = clamp(agent.accumulatedStress + lifeCost * 2.2 + agent.stress * 0.0005 * dt);
+        agent.cellRepairDebt = clamp(agent.cellRepairDebt + Math.max(0, 0.72 - agent.health) * 0.0016 * dt + qualityPenalty * 0.0007 * dt - agent.energy * 0.00032 * dt);
+        agent.biologicalReserve = clamp(agent.biologicalReserve - lifeCost, 0, 1);
+        if (agent.age > 0.86) {
+          agent.health = clamp(agent.health - (agent.age - 0.86) * 0.006 * dt);
+        }
+        if (agent.health <= 0.03 || agent.biologicalReserve <= 0.02) {
+          agent.alive = false;
+          log(`${agent.name} died as health/reserve collapsed under life pressure`);
+          continue;
+        }
+        if (!agent.task) chooseAction(agent);
+        if (!agent.task) continue;
+        if (arrive(agent, dt)) {
+          agent.task.remaining -= dt;
+          if (agent.task.remaining <= 0) completeTask(agent);
+        }
+      }
+    }
+
+    const container = document.getElementById("scene");
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor(0x080c0c, 1);
+    container.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0x071010, 104, 242);
+    const camera = new THREE.PerspectiveCamera(54, window.innerWidth / window.innerHeight, 0.1, 360);
+    camera.position.set(78, 82, 104);
+    camera.lookAt(0, 0, 0);
+    scene.add(new THREE.HemisphereLight(0xe1f4ff, 0x1d2119, 1.35));
+    const key = new THREE.DirectionalLight(0xfff1cd, 2.2);
+    key.position.set(-30, 58, 34);
+    scene.add(key);
+
+    const mats = {
+      ground: new THREE.MeshStandardMaterial({ color: 0x243228, roughness: 0.96 }),
+      base: new THREE.MeshStandardMaterial({ color: 0x43504a, roughness: 0.78 }),
+      water: new THREE.MeshStandardMaterial({ color: 0x234e68, emissive: 0x062334, roughness: 0.30 }),
+      agent: new THREE.MeshStandardMaterial({ color: 0xf1f4ef, roughness: 0.38 }),
+      line: new THREE.LineBasicMaterial({ color: 0x76bdf2, transparent: true, opacity: 0.30 }),
+    };
+    const ground = new THREE.Mesh(new THREE.PlaneGeometry(168, 138, 30, 26), mats.ground);
+    ground.rotation.x = -Math.PI / 2;
+    scene.add(ground);
+
+    function cylinder(radius, height, material) {
+      return new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, height, 24), material);
+    }
+
+    const PLACE_STYLE = {
+      home_shelter: { color: 0xc7aa6a, emissive: 0x2d210a, shape: "box", size: [8.2, 1.0, 5.2], radius: 5.6 },
+      ridge_shelter: { color: 0x9fb0ba, emissive: 0x12232b, shape: "box", size: [6.6, 1.0, 7.0], radius: 5.0 },
+      grove_shelter: { color: 0x84b57f, emissive: 0x12300f, shape: "box", size: [7.2, 1.0, 5.8], radius: 5.2 },
+      water: { color: 0x266b8f, emissive: 0x08293c, shape: "disk", radius: 8.0 },
+      clinic: { color: 0x62d6cc, emissive: 0x073c39, shape: "hex", radius: 4.2 },
+      garden: { color: 0x5da85d, emissive: 0x0d2e12, shape: "patch", radius: 6.5 },
+      workshop: { color: 0xd49a45, emissive: 0x321a04, shape: "box", size: [7.0, 1.1, 4.5], radius: 5.0 },
+      commons: { color: 0xcfd6ca, emissive: 0x202420, shape: "ring", radius: 5.2 },
+      frontier: { color: 0x9d7be8, emissive: 0x20103d, shape: "cone", radius: 4.7 },
+      mineral_field: { color: 0xd4bf67, emissive: 0x30280a, shape: "rock", radius: 4.8 },
+      forest: { color: 0x3f8f5f, emissive: 0x082616, shape: "tree", radius: 5.4 },
+    };
+
+    function placeMaterial(name) {
+      const style = PLACE_STYLE[name];
+      return new THREE.MeshStandardMaterial({
+        color: style.color,
+        emissive: style.emissive,
+        emissiveIntensity: 0.16,
+        roughness: name === "water" ? 0.28 : 0.74,
+        metalness: name === "workshop" ? 0.22 : 0.02,
+      });
+    }
+
+    function makePlaceMesh(name) {
+      const style = PLACE_STYLE[name];
+      const material = placeMaterial(name);
+      if (style.shape === "box") {
+        return new THREE.Mesh(new THREE.BoxGeometry(style.size[0], style.size[1], style.size[2]), material);
+      }
+      if (style.shape === "disk") return new THREE.Mesh(new THREE.CylinderGeometry(style.radius, style.radius, 0.26, 40), material);
+      if (style.shape === "hex") return new THREE.Mesh(new THREE.CylinderGeometry(style.radius, style.radius * 0.82, 1.2, 6), material);
+      if (style.shape === "patch") return new THREE.Mesh(new THREE.CylinderGeometry(style.radius, style.radius * 0.90, 0.34, 9), material);
+      if (style.shape === "ring") return new THREE.Mesh(new THREE.TorusGeometry(style.radius, 0.28, 8, 42), material);
+      if (style.shape === "cone") return new THREE.Mesh(new THREE.ConeGeometry(style.radius, 2.2, 5), material);
+      if (style.shape === "rock") return new THREE.Mesh(new THREE.DodecahedronGeometry(style.radius * 0.62, 0), material);
+      if (style.shape === "tree") return new THREE.Mesh(new THREE.ConeGeometry(style.radius * 0.72, 2.6, 8), material);
+      return cylinder(3.1, 0.32, material);
+    }
+
+    let detailSeed = 880301;
+    function detailRand() {
+      detailSeed = (detailSeed * 1103515245 + 12345) >>> 0;
+      return detailSeed / 4294967296;
+    }
+
+    function addGroundPatch(center, radius, color, opacity, scaleX = 1, scaleZ = 1) {
+      const patch = new THREE.Mesh(
+        new THREE.CircleGeometry(radius, 48),
+        new THREE.MeshBasicMaterial({ color, transparent: true, opacity, depthWrite: false }),
+      );
+      patch.rotation.x = -Math.PI / 2;
+      patch.scale.set(scaleX, scaleZ, 1);
+      patch.position.set(center[0], 0.018, center[1]);
+      scene.add(patch);
+    }
+
+    function scatterProps(center, count, spread, makeMesh) {
+      for (let i = 0; i < count; i += 1) {
+        const angle = detailRand() * Math.PI * 2;
+        const distance = Math.sqrt(detailRand()) * spread;
+        const mesh = makeMesh(i);
+        mesh.position.set(center[0] + Math.cos(angle) * distance, 0.30, center[1] + Math.sin(angle) * distance);
+        mesh.rotation.y = detailRand() * Math.PI;
+        const scale = 0.70 + detailRand() * 0.70;
+        mesh.scale.set(scale, scale, scale);
+        scene.add(mesh);
+      }
+    }
+
+    function addTerrainDetail() {
+      addGroundPatch(PLACES.water, 11, 0x123345, 0.34, 1.2, 0.72);
+      addGroundPatch(PLACES.garden, 12, 0x254423, 0.32, 1.0, 0.78);
+      addGroundPatch(PLACES.forest, 17, 0x183a25, 0.36, 1.35, 0.88);
+      addGroundPatch(PLACES.mineral_field, 13, 0x453b20, 0.31, 1.15, 0.92);
+      addGroundPatch(PLACES.frontier, 16, 0x3a2439, 0.28, 1.2, 1.05);
+      addGroundPatch(PLACES.clinic, 9, 0x163c3b, 0.24, 1.0, 0.85);
+
+      scatterProps(PLACES.forest, 26, 16, () => new THREE.Mesh(
+        new THREE.ConeGeometry(0.75, 2.4, 7),
+        new THREE.MeshStandardMaterial({ color: 0x315d3c, emissive: 0x071a0d, roughness: 0.9 }),
+      ));
+      scatterProps(PLACES.mineral_field, 18, 13, () => new THREE.Mesh(
+        new THREE.DodecahedronGeometry(0.78, 0),
+        new THREE.MeshStandardMaterial({ color: 0x74694b, emissive: 0x171208, roughness: 0.82 }),
+      ));
+      scatterProps(PLACES.frontier, 14, 15, () => new THREE.Mesh(
+        new THREE.ConeGeometry(0.82, 2.0, 5),
+        new THREE.MeshStandardMaterial({ color: 0x72515f, emissive: 0x18080c, roughness: 0.86 }),
+      ));
+      scatterProps(PLACES.garden, 16, 9, () => new THREE.Mesh(
+        new THREE.CylinderGeometry(0.35, 0.45, 0.55, 8),
+        new THREE.MeshStandardMaterial({ color: 0x6ea75c, emissive: 0x102710, roughness: 0.84 }),
+      ));
+    }
+
+    const placeMeshes = new Map();
+    Object.entries(PLACES).forEach(([name, [x, z]]) => {
+      const mesh = makePlaceMesh(name);
+      mesh.position.set(x, name === "water" || name === "garden" || name === "commons" ? 0.18 : 0.58, z);
+      if (PLACE_STYLE[name].shape === "ring") mesh.rotation.x = Math.PI / 2;
+      scene.add(mesh);
+      placeMeshes.set(name, mesh);
+      const ring = new THREE.Mesh(
+        new THREE.TorusGeometry(PLACE_STYLE[name].radius * 1.12, 0.055, 8, 44),
+        new THREE.MeshBasicMaterial({ color: PLACE_STYLE[name].color, transparent: true, opacity: 0.34 }),
+      );
+      ring.rotation.x = Math.PI / 2;
+      ring.position.set(x, 0.08, z);
+      scene.add(ring);
+      const line = new THREE.Line(
+        new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-4, 0.04, 0), new THREE.Vector3(x, 0.04, z)]),
+        new THREE.LineBasicMaterial({ color: 0x59645d, transparent: true, opacity: 0.34 }),
+      );
+      scene.add(line);
+    });
+    addTerrainDetail();
+
+    const agentMeshes = new Map();
+    const intentLines = new Map();
+
+    function agentMesh(agent) {
+      if (agentMeshes.has(agent.id)) return agentMeshes.get(agent.id);
+      const group = new THREE.Group();
+      const mat = new THREE.MeshStandardMaterial({ color: 0xf1f4ef, emissive: 0x111111, emissiveIntensity: 0.10, roughness: 0.36 });
+      const body = cylinder(0.68, 1.7, mat);
+      body.position.y = 0.85;
+      const head = new THREE.Mesh(new THREE.SphereGeometry(0.44, 18, 18), mat);
+      head.position.y = 1.96;
+      group.add(body, head);
+      scene.add(group);
+      agentMeshes.set(agent.id, group);
+      const line = new THREE.Line(new THREE.BufferGeometry(), mats.line.clone());
+      scene.add(line);
+      intentLines.set(agent.id, line);
+      return group;
+    }
+
+    function updateScene() {
+      placeMeshes.get("home_shelter").scale.y = 0.8 + world.shelters.home_shelter * 4.0;
+      placeMeshes.get("ridge_shelter").scale.y = 0.8 + world.shelters.ridge_shelter * 4.0;
+      placeMeshes.get("grove_shelter").scale.y = 0.8 + world.shelters.grove_shelter * 4.0;
+      placeMeshes.get("workshop").scale.y = 0.8 + world.workshop * 4.0;
+      placeMeshes.get("garden").scale.y = 0.8 + world.garden * 3.2;
+      placeMeshes.get("water").scale.y = 0.8 + world.purifier * 2.6;
+      placeMeshes.get("clinic").scale.y = 0.8 + (1 - world.sickness) * 1.8;
+      placeMeshes.get("frontier").scale.y = 0.8 + world.map * 3.2;
+      placeMeshes.get("mineral_field").scale.y = 0.9 + world.materials * 1.6;
+      placeMeshes.get("forest").scale.y = 0.9 + world.food * 1.2;
+      for (const agent of world.agents) {
+        const mesh = agentMesh(agent);
+        mesh.visible = agent.alive;
+        mesh.position.set(agent.x, 0, agent.z);
+        const action = agent.task ? agent.task.action : "rest";
+        const color = ACTION_COLOR[action] || 0xf1f4ef;
+        mesh.children.forEach((child) => {
+          child.material.color.setHex(color);
+          child.material.emissive.setHex(color);
+          child.material.emissiveIntensity = 0.08;
+        });
+        const bodyScale = agent.lifeStage === "offspring" ? 0.58 : agent.lifeStage === "elder" ? 0.86 : 1.0;
+        mesh.scale.set(bodyScale, agent.carrying ? bodyScale * 1.10 : bodyScale, bodyScale);
+        const line = intentLines.get(agent.id);
+        line.visible = agent.alive;
+        line.geometry.setFromPoints([new THREE.Vector3(agent.x, 0.08, agent.z), new THREE.Vector3(agent.tx, 0.08, agent.tz)]);
+        line.material.opacity = 0.14 + agent.trust * 0.25;
+      }
+      scene.fog.far = world.weather === "storm" ? 154 : 242;
+    }
+
+    function bar(label, value, color = "var(--green)") {
+      const safe = clamp(Number(value || 0));
+      return `<div class="row"><span>${label}</span><div class="bar"><span style="width:${safe * 100}%;background:${color}"></span></div><span>${safe.toFixed(2)}</span></div>`;
+    }
+
+    function livingAgents() {
+      return world.agents.filter((agent) => agent.alive);
+    }
+
+    function averageAgent(project) {
+      const agents = livingAgents();
+      if (!agents.length) return 0;
+      return mean(agents.map(project));
+    }
+
+    function countAgents(predicate) {
+      return livingAgents().filter(predicate).length;
+    }
+
+    function updateHud() {
+      const alive = livingAgents().length;
+      const dependents = countAgents((agent) => agent.lifeStage === "offspring");
+      const carrying = countAgents((agent) => agent.carrying);
+      els.clock.textContent = world.time.toFixed(1);
+      els.speed.textContent = `${Number(els.timeScale.value).toFixed(1)}x`;
+      els.popLabel.textContent = `${alive} alive`;
+      els.settlementBars.innerHTML = [
+        bar("population", alive / 20, "var(--cyan)"),
+        bar("dependents", dependents / 8, "var(--violet)"),
+        bar("carrying", carrying / 5, "var(--red)"),
+        bar("life reserve", averageAgent((agent) => agent.biologicalReserve), "var(--green)"),
+        bar("cell debt", averageAgent((agent) => agent.cellRepairDebt), "var(--red)"),
+        bar("stress", averageAgent((agent) => agent.stress), "var(--red)"),
+        bar("food", world.food, "var(--green)"),
+        bar("water", world.water, "var(--blue)"),
+        bar("materials", world.materials, "var(--amber)"),
+        bar("avg shelter", averageShelter(), "var(--amber)"),
+        bar("home shelter", world.shelters.home_shelter, "var(--amber)"),
+        bar("ridge shelter", world.shelters.ridge_shelter, "var(--amber)"),
+        bar("grove shelter", world.shelters.grove_shelter, "var(--amber)"),
+        bar("purifier", world.purifier, "var(--blue)"),
+        bar("garden", world.garden, "var(--green)"),
+        bar("workshop", world.workshop, "var(--amber)"),
+        bar("trust", world.trust, "var(--cyan)"),
+        bar("conflict", world.conflict, "var(--red)"),
+        bar("sickness", world.sickness, "var(--red)"),
+        bar("sound field", world.soundField, "var(--violet)"),
+        bar("births", world.births / 8, "var(--violet)"),
+      ].join("");
+      els.affordances.innerHTML = ACTIONS.map((action) => bar(action.replace("_", " "), world.discovered.has(action) ? 1 : 0.06, world.discovered.has(action) ? "var(--blue)" : "rgba(255,255,255,0.18)")).join("");
+      els.agents.innerHTML = world.agents.map((agent) => {
+        const action = agent.task ? agent.task.action : "choosing";
+        const life = agent.alive ? `${agent.lifeStage}${agent.carrying ? " carrying" : agent.receptive ? " receptive" : ""}` : "dead";
+        return `<div class="agent-row"><strong>${agent.name}</strong><span>${emergentLabel(agent)}</span><span>${life} / ${action.replace("_", " ")} / reserve ${agent.biologicalReserve.toFixed(2)} / reward ${agent.totalReward.toFixed(1)}</span></div>`;
+      }).join("");
+      els.events.innerHTML = world.events.map((event) => `<p class="event">t${event.time.toFixed(1)} ${event.text}</p>`).join("") || "<p class=\"small\">No events yet.</p>";
+    }
+
+    document.querySelectorAll("button[data-event]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const event = button.dataset.event;
+        if (event === "storm") {
+          world.weather = "storm";
+          world.weatherTimer = 70;
+          world.threat = clamp(world.threat + 0.12);
+          log("user intervention: storm pressure");
+        } else if (event === "cache") {
+          world.food = clamp(world.food + 0.16);
+          world.materials = clamp(world.materials + 0.16);
+          log("user intervention: resource cache");
+        } else if (event === "outbreak") {
+          world.sickness = clamp(world.sickness + 0.24);
+          log("user intervention: illness outbreak");
+        } else if (event === "stranger") {
+          world.agents.push(makeAgent(world.agents.length));
+          els.population.value = String(world.agents.length);
+          log("user intervention: new unassigned agent entered");
+        } else if (event === "damage") {
+          for (const place of Object.keys(world.shelters)) {
+            world.shelters[place] = clamp(world.shelters[place] - 0.12);
+          }
+          world.conflict = clamp(world.conflict + 0.06);
+          log("user intervention: shelter damaged");
+        } else if (event === "why") {
+          const agent = world.agents.reduce((best, item) => (item.totalReward > best.totalReward ? item : best), world.agents[0]);
+          log(`${agent.name}: ${agent.lastWhy}`);
+        }
+      });
+    });
+
+    els.play.addEventListener("click", () => {
+      playing = !playing;
+      els.play.textContent = playing ? "Pause" : "Play";
+    });
+
+    els.population.addEventListener("input", () => {
+      resetPopulation(Number(els.population.value));
+    });
+
+    let playing = true;
+    let last = performance.now();
+    let hudTimer = 0;
+
+    function animate(now) {
+      requestAnimationFrame(animate);
+      const realDt = Math.min(0.08, (now - last) / 1000);
+      last = now;
+      if (playing) {
+        const simDt = realDt * Number(els.timeScale.value);
+        let remaining = simDt;
+        while (remaining > 0) {
+          const step = Math.min(0.08, remaining);
+          stepWorld(step);
+          remaining -= step;
+        }
+      }
+      hudTimer += realDt;
+      updateScene();
+      if (hudTimer > 0.20) {
+        updateHud();
+        hudTimer = 0;
+      }
+      renderer.render(scene, camera);
+    }
+
+    window.addEventListener("resize", () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    });
+
+    resetPopulation(Number(els.population.value));
+    discover("build_shelter", "materials and bad weather made shelter modification visible");
+    updateHud();
+    requestAnimationFrame(animate);
+  </script>
+</body>
+</html>

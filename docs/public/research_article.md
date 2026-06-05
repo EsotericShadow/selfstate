@@ -1,6 +1,6 @@
 # Why Would an Artificial Agent Need a Self?
 
-## Findings So Far From A Toy Research Program
+## Findings So Far From A Controlled Simulation Research Program
 
 ![Pressures in toy worlds leading to repeated self-like structure](assets/self_like_structure_pressure_map.png)
 
@@ -94,6 +94,7 @@ The experiments then add pressure:
 - dependent care;
 - irreversible loss;
 - affective control summaries.
+- physics-derived sensor streams.
 
 The key question is not whether an agent says it has a self.
 
@@ -105,9 +106,9 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The current manifest contains `72` canonical runs with `0` failures.
+The canonical runner is now wired for `73` runs, including the physics-first benchmark.
 
-That does not mean all claims are proven. It means the current repo evidence stack is internally passing and reproducible under its canonical runner.
+That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
 The main pattern is:
 
@@ -172,7 +173,7 @@ This distinction matters. A fear-like control state can be useful without being 
 
 ![Attention mixer architecture concept](assets/attention_mixer_architecture.png)
 
-## SSRM-3D: The Embodied Toy World
+## SSRM-3D: The Embodied Simulation Track
 
 SSRM-3D is the project's persistent embodied simulation track.
 
@@ -190,9 +191,15 @@ The rule is:
 
 > Add world detail only when removing it would change the agent's control problem.
 
+The newest step adds a physics-first benchmark foundation. A modular C++ simulation kernel now generates terrain, weather, shelter, resources, illness/care pressure, sound, vibration, tension, FOV perception, and user proposals. Python trains recurrent neural models on those physics-derived streams without scenario labels.
+
+![SSRM-3D physics-first benchmark viewer](assets/ssrm_3d_physics_benchmark.png)
+
+That is real neural sequence learning, but it is still offline decision learning from traces. It is not yet closed-loop deep reinforcement learning and it is not a claim that a self-aware agent has been created.
+
 ## Visual Evidence Gallery
 
-The following screenshots show current SSRM-3D pressure-layer visualizations. They are visual summaries of toy experiments, not claims that these worlds are biologically realistic.
+The following screenshots show current SSRM-3D pressure-layer visualizations. They are visual summaries of controlled experiments, not claims that these worlds are biologically realistic.
 
 ![Structured perception pressure layer](assets/ssrm_3d_structured_perception.png)
 
@@ -303,16 +310,15 @@ It also gives a practical architecture direction for future agents:
 
 The next serious research step is not simply to add more world detail.
 
-The next step is to move more pressure into shared learned controllers:
+The next step is to close the loop in the physics world:
 
 - no scenario identity shortcuts;
 - randomized pressure combinations;
 - multiple seeds and architectures;
 - online or model-based learning;
 - causal ablations of learned policy state;
-- richer SSRM-3D environments where tools, social pressure, continuity, perception, illness, and affect interact.
+- learned policies acting inside richer SSRM-3D environments where tools, social pressure, continuity, perception, illness, weather, physics, and affect interact.
 
 Only then can the project test the harder question:
 
 > Does selfhood emerge as an attractor in adaptive systems, or is it just a useful structure we keep handing to the agent?
-

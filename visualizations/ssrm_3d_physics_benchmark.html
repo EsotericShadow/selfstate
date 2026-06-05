@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Physics Benchmark</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --panel: rgba(15, 18, 18, 0.86);
+      --line: rgba(240, 246, 242, 0.16);
+      --text: #eef5f1;
+      --muted: #aeb8b2;
+      --green: #75dc91;
+      --blue: #75bdf0;
+      --amber: #e8c860;
+      --red: #f07167;
+      --violet: #bd9ff2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #090d0d;
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    #scene {
+      position: fixed;
+      inset: 0;
+    }
+
+    #hud {
+      position: fixed;
+      top: 14px;
+      right: 14px;
+      bottom: 14px;
+      width: min(430px, calc(100vw - 28px));
+      overflow: auto;
+      padding: 14px;
+      display: grid;
+      align-content: start;
+      gap: 12px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(16px);
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 20px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+
+    p,
+    .row,
+    .event {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.38;
+    }
+
+    button {
+      height: 31px;
+      border: 1px solid var(--line);
+      background: #1d2423;
+      color: var(--text);
+      font: inherit;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 8px;
+      align-items: center;
+    }
+
+    .grid2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      padding: 8px;
+      min-height: 52px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 3px;
+      font-size: 16px;
+      overflow-wrap: anywhere;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 116px minmax(0, 1fr) 46px;
+      gap: 7px;
+      align-items: center;
+    }
+
+    .bar {
+      height: 9px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 0;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px;
+    }
+
+    .event {
+      border-left: 3px solid var(--blue);
+      padding-left: 8px;
+    }
+
+    #help {
+      position: fixed;
+      left: 14px;
+      bottom: 14px;
+      max-width: min(520px, calc(100vw - 28px));
+      background: var(--panel);
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      color: var(--muted);
+      font-size: 13px;
+      backdrop-filter: blur(12px);
+    }
+
+    @media (max-width: 840px) {
+      #hud {
+        left: 12px;
+        right: 12px;
+        top: auto;
+        bottom: 12px;
+        width: auto;
+        max-height: 48vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="scene"></div>
+  <aside id="hud">
+    <header>
+      <h1>SSRM-3D Physics Benchmark</h1>
+      <p>Physics-derived replay with playable observer and user intervention log. Not a consciousness claim.</p>
+    </header>
+
+    <div class="controls">
+      <button id="play" type="button">Pause</button>
+      <input id="scrub" type="range" min="0" max="0" value="0">
+    </div>
+
+    <div class="grid2">
+      <div class="metric"><span>weather</span><strong id="weather">-</strong></div>
+      <div class="metric"><span>animation</span><strong id="animation">-</strong></div>
+      <div class="metric"><span>action</span><strong id="action">-</strong></div>
+      <div class="metric"><span>visible</span><strong id="visible">-</strong></div>
+    </div>
+
+    <div class="section">
+      <h2>Agent State</h2>
+      <div id="bars"></div>
+    </div>
+
+    <div class="section">
+      <h2>Physical Signals</h2>
+      <div id="signals"></div>
+    </div>
+
+    <div class="section">
+      <h2>Decision Reason</h2>
+      <p id="reason">-</p>
+    </div>
+
+    <div class="section">
+      <h2>Player Interventions</h2>
+      <div class="button-grid">
+        <button type="button" data-kind="offer_tool">Offer Tool</button>
+        <button type="button" data-kind="place_sound">Place Sound</button>
+        <button type="button" data-kind="false_warning">False Warning</button>
+        <button type="button" data-kind="storm_signal">Trigger Storm</button>
+        <button type="button" data-kind="damage_shelter">Damage Shelter</button>
+        <button type="button" data-kind="ask_why">Ask Why</button>
+      </div>
+      <div id="events"></div>
+    </div>
+  </aside>
+  <div id="help">WASD moves the player. Arrow keys rotate/move the camera. Buttons add intervention markers to the replay log.</div>
+
+  <script src="../artifacts/ssrm_3d_physics_benchmark_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_physics_benchmark_results.js"></script>
+  <script type="module">
+    import * as THREE from "https://unpkg.com/three@0.164.1/build/three.module.js";
+
+    const trace = window.SSRM_3D_PHYSICS_BENCHMARK_TRACE;
+    const results = window.SSRM_3D_PHYSICS_BENCHMARK_RESULTS;
+    const frames = trace.frames || [];
+    const zones = trace.zones || [];
+    const obstacles = trace.obstacles || [];
+
+    const container = document.getElementById("scene");
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor(0x080c0c, 1);
+    container.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0x0b1111, 65, 150);
+    const camera = new THREE.PerspectiveCamera(54, window.innerWidth / window.innerHeight, 0.1, 260);
+    camera.position.set(34, 38, 54);
+    camera.lookAt(0, 0, 0);
+
+    scene.add(new THREE.HemisphereLight(0xd7f3ff, 0x221b16, 1.5));
+    const sun = new THREE.DirectionalLight(0xfff1ca, 2.3);
+    sun.position.set(-30, 64, 32);
+    scene.add(sun);
+
+    const mats = {
+      terrain: new THREE.MeshStandardMaterial({ color: 0x24312a, roughness: 0.94 }),
+      player: new THREE.MeshStandardMaterial({ color: 0xf0f5f2, emissive: 0x101414, roughness: 0.42 }),
+      agent: new THREE.MeshStandardMaterial({ color: 0xe8c860, emissive: 0x423407, roughness: 0.35 }),
+      shelter: new THREE.MeshStandardMaterial({ color: 0x75bdf0, emissive: 0x0c2c42, roughness: 0.40 }),
+      water: new THREE.MeshStandardMaterial({ color: 0x5ec6ff, emissive: 0x07283d, roughness: 0.20 }),
+      clinic: new THREE.MeshStandardMaterial({ color: 0x83d18a, emissive: 0x102b14, roughness: 0.45 }),
+      resource: new THREE.MeshStandardMaterial({ color: 0x75dc91, emissive: 0x123515, roughness: 0.45 }),
+      hazard: new THREE.MeshStandardMaterial({ color: 0xf07167, emissive: 0x3a0d0a, roughness: 0.52 }),
+      social: new THREE.MeshStandardMaterial({ color: 0xbd9ff2, emissive: 0x20113e, roughness: 0.45 }),
+      cache: new THREE.MeshStandardMaterial({ color: 0xe8c860, emissive: 0x3c3008, roughness: 0.5 }),
+      frontier: new THREE.MeshStandardMaterial({ color: 0x8fd1c7, emissive: 0x102d2a, roughness: 0.5 }),
+      obstacle: new THREE.MeshStandardMaterial({ color: 0x4a5550, roughness: 0.85 }),
+      fov: new THREE.MeshBasicMaterial({ color: 0x75bdf0, transparent: true, opacity: 0.13, side: THREE.DoubleSide }),
+      sound: new THREE.LineBasicMaterial({ color: 0xe8c860, transparent: true, opacity: 0.55 }),
+      vibration: new THREE.LineBasicMaterial({ color: 0xf07167, transparent: true, opacity: 0.45 }),
+      intervention: new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0x335566, roughness: 0.25 }),
+    };
+
+    function height(x, z) {
+      return 1.2 * Math.sin(x * 0.075) + 0.9 * Math.cos(z * 0.069) + 0.6 * Math.sin((x + z) * 0.041);
+    }
+
+    function makeTerrain() {
+      const geometry = new THREE.PlaneGeometry(92, 92, 110, 110);
+      geometry.rotateX(-Math.PI / 2);
+      const pos = geometry.attributes.position;
+      for (let i = 0; i < pos.count; i++) {
+        pos.setY(i, height(pos.getX(i), pos.getZ(i)));
+      }
+      geometry.computeVertexNormals();
+      return new THREE.Mesh(geometry, mats.terrain);
+    }
+
+    function zoneMaterial(kind) {
+      return mats[kind] || mats.frontier;
+    }
+
+    scene.add(makeTerrain());
+    const grid = new THREE.GridHelper(92, 23, 0x8ca39a, 0x394640);
+    grid.material.transparent = true;
+    grid.material.opacity = 0.28;
+    scene.add(grid);
+
+    zones.forEach((zone) => {
+      const geom = zone.kind === "water"
+        ? new THREE.CylinderGeometry(zone.radius, zone.radius, 0.22, 36)
+        : zone.kind === "hazard"
+          ? new THREE.ConeGeometry(zone.radius * 0.55, 5.6, 28)
+          : new THREE.BoxGeometry(zone.radius * 1.25, 2.8, zone.radius * 1.25);
+      const mesh = new THREE.Mesh(geom, zoneMaterial(zone.kind));
+      mesh.position.set(zone.x, height(zone.x, zone.z) + (zone.kind === "water" ? 0.08 : 1.4), zone.z);
+      scene.add(mesh);
+    });
+
+    obstacles.forEach((obstacle) => {
+      const mesh = new THREE.Mesh(new THREE.DodecahedronGeometry(obstacle.radius, 0), mats.obstacle);
+      mesh.position.set(obstacle.x, height(obstacle.x, obstacle.z) + obstacle.radius * 0.45, obstacle.z);
+      mesh.scale.y = 0.55;
+      scene.add(mesh);
+    });
+
+    const agent = new THREE.Group();
+    const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.8, 2.1, 8, 16), mats.agent);
+    body.position.y = 1.55;
+    agent.add(body);
+    const nose = new THREE.Mesh(new THREE.ConeGeometry(0.28, 0.82, 16), mats.agent);
+    nose.rotation.z = -Math.PI / 2;
+    nose.position.set(0.75, 1.65, 0);
+    agent.add(nose);
+    scene.add(agent);
+
+    const player = new THREE.Mesh(new THREE.CapsuleGeometry(0.72, 1.8, 8, 14), mats.player);
+    player.position.set(-22, height(-22, -18) + 1.4, -18);
+    scene.add(player);
+
+    const fovMesh = new THREE.Mesh(new THREE.CircleGeometry(1, 48, -0.48, 0.96), mats.fov);
+    fovMesh.rotation.x = -Math.PI / 2;
+    scene.add(fovMesh);
+
+    const soundRing = new THREE.Line(new THREE.BufferGeometry(), mats.sound);
+    scene.add(soundRing);
+    const vibrationRing = new THREE.Line(new THREE.BufferGeometry(), mats.vibration);
+    scene.add(vibrationRing);
+
+    const interventions = [];
+    const interventionMeshes = [];
+    const keys = new Set();
+    let frameIndex = 0;
+    let playing = true;
+    let cameraYaw = 0;
+
+    function circleLine(radius, segments = 96) {
+      const points = [];
+      for (let i = 0; i <= segments; i++) {
+        const a = (i / segments) * Math.PI * 2;
+        points.push(new THREE.Vector3(Math.cos(a) * radius, 0.05, Math.sin(a) * radius));
+      }
+      return new THREE.BufferGeometry().setFromPoints(points);
+    }
+
+    function setBar(name, value, color) {
+      const id = name.replace(/[^a-z0-9]/gi, "_");
+      let row = document.getElementById(`row_${id}`);
+      if (!row) {
+        row = document.createElement("div");
+        row.className = "row";
+        row.id = `row_${id}`;
+        row.innerHTML = `<span>${name}</span><div class="bar"><span></span></div><span class="value"></span>`;
+        document.getElementById("bars").appendChild(row);
+      }
+      row.querySelector(".bar span").style.width = `${Math.max(0, Math.min(1, value)) * 100}%`;
+      row.querySelector(".bar span").style.background = color;
+      row.querySelector(".value").textContent = value.toFixed(2);
+    }
+
+    function setSignal(name, value, color) {
+      const id = `sig_${name}`;
+      let row = document.getElementById(id);
+      if (!row) {
+        row = document.createElement("div");
+        row.className = "row";
+        row.id = id;
+        row.innerHTML = `<span>${name}</span><div class="bar"><span></span></div><span class="value"></span>`;
+        document.getElementById("signals").appendChild(row);
+      }
+      row.querySelector(".bar span").style.width = `${Math.max(0, Math.min(1, value)) * 100}%`;
+      row.querySelector(".bar span").style.background = color;
+      row.querySelector(".value").textContent = value.toFixed(2);
+    }
+
+    function renderEvents() {
+      const list = document.getElementById("events");
+      list.innerHTML = "";
+      interventions.slice(-5).reverse().forEach((event) => {
+        const div = document.createElement("div");
+        div.className = "event";
+        div.textContent = `${event.kind} at (${event.x.toFixed(1)}, ${event.z.toFixed(1)}) tick ${event.tick}`;
+        list.appendChild(div);
+      });
+    }
+
+    function addIntervention(kind) {
+      const event = { kind, x: player.position.x, z: player.position.z, tick: frames[frameIndex]?.tick ?? 0 };
+      interventions.push(event);
+      const marker = new THREE.Mesh(new THREE.SphereGeometry(0.55, 16, 12), mats.intervention);
+      marker.position.set(event.x, height(event.x, event.z) + 1.1, event.z);
+      scene.add(marker);
+      interventionMeshes.push(marker);
+      renderEvents();
+    }
+
+    function updateHud(frame) {
+      document.getElementById("weather").textContent = frame.weather;
+      document.getElementById("animation").textContent = frame.animation;
+      document.getElementById("action").textContent = frame.action;
+      document.getElementById("visible").textContent = frame.visible;
+      document.getElementById("reason").textContent = frame.reason;
+      setBar("energy", frame.energy, "var(--green)");
+      setBar("hydration", frame.hydration, "var(--blue)");
+      setBar("integrity", frame.integrity, "var(--red)");
+      setBar("illness", frame.illness, "var(--violet)");
+      setBar("shelter", frame.shelter_integrity, "var(--amber)");
+      setBar("dependent", frame.dependent_health, "var(--violet)");
+      setSignal("audio", Math.min(1, frame.audio_loudness), "var(--amber)");
+      setSignal("vibration", Math.min(1, frame.vibration), "var(--red)");
+      setSignal("tension", Math.min(1, frame.tension), "var(--violet)");
+      setSignal("visibility", frame.visibility, "var(--blue)");
+    }
+
+    function updateAgent(frame) {
+      agent.position.set(frame.x, height(frame.x, frame.z), frame.z);
+      agent.rotation.y = -frame.heading;
+      const scale = frame.animation === "collapse" ? 0.35 : frame.animation === "limp" ? 0.85 : 1;
+      body.scale.set(1, scale, 1);
+      fovMesh.position.set(frame.x, height(frame.x, frame.z) + 0.08, frame.z);
+      fovMesh.rotation.z = -frame.heading;
+      fovMesh.scale.set(frame.fov_range, frame.fov_range, 1);
+      soundRing.geometry.dispose();
+      soundRing.geometry = circleLine(2 + frame.audio_loudness * 16);
+      soundRing.position.set(frame.x, height(frame.x, frame.z) + 0.12, frame.z);
+      vibrationRing.geometry.dispose();
+      vibrationRing.geometry = circleLine(2 + frame.vibration * 12);
+      vibrationRing.position.set(frame.x, height(frame.x, frame.z) + 0.16, frame.z);
+    }
+
+    function movePlayer(dt) {
+      const speed = 10 * dt;
+      let dx = 0;
+      let dz = 0;
+      if (keys.has("KeyW")) dz -= speed;
+      if (keys.has("KeyS")) dz += speed;
+      if (keys.has("KeyA")) dx -= speed;
+      if (keys.has("KeyD")) dx += speed;
+      player.position.x = Math.max(-42, Math.min(42, player.position.x + dx));
+      player.position.z = Math.max(-42, Math.min(42, player.position.z + dz));
+      player.position.y = height(player.position.x, player.position.z) + 1.35;
+      if (keys.has("ArrowLeft")) cameraYaw -= dt * 1.4;
+      if (keys.has("ArrowRight")) cameraYaw += dt * 1.4;
+      if (keys.has("ArrowUp")) camera.position.y += dt * 16;
+      if (keys.has("ArrowDown")) camera.position.y -= dt * 16;
+      camera.position.y = Math.max(18, Math.min(70, camera.position.y));
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      movePlayer(1 / 60);
+      if (playing && frames.length) {
+        frameIndex = (frameIndex + 1) % frames.length;
+        document.getElementById("scrub").value = String(frameIndex);
+      }
+      const frame = frames[frameIndex];
+      if (frame) {
+        updateAgent(frame);
+        updateHud(frame);
+        const radius = 58;
+        const target = new THREE.Vector3((agent.position.x + player.position.x) * 0.5, 0, (agent.position.z + player.position.z) * 0.5);
+        camera.position.x = target.x + Math.sin(cameraYaw + 0.65) * radius;
+        camera.position.z = target.z + Math.cos(cameraYaw + 0.65) * radius;
+        camera.lookAt(target.x, 0, target.z);
+      }
+      renderer.render(scene, camera);
+    }
+
+    document.getElementById("scrub").max = String(Math.max(0, frames.length - 1));
+    document.getElementById("play").addEventListener("click", () => {
+      playing = !playing;
+      document.getElementById("play").textContent = playing ? "Pause" : "Play";
+    });
+    document.getElementById("scrub").addEventListener("input", (event) => {
+      frameIndex = Number(event.target.value);
+      playing = false;
+      document.getElementById("play").textContent = "Play";
+    });
+    document.querySelectorAll("[data-kind]").forEach((button) => {
+      button.addEventListener("click", () => addIntervention(button.dataset.kind));
+    });
+    window.addEventListener("keydown", (event) => keys.add(event.code));
+    window.addEventListener("keyup", (event) => keys.delete(event.code));
+    window.addEventListener("resize", () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    });
+
+    if (results?.verdict) {
+      console.log("SSRM-3D physics benchmark verdict", results.verdict);
+    }
+    animate();
+  </script>
+</body>
+</html>
+

@@ -99,7 +99,9 @@ Priority order:
 11. Dependent care. Implemented as the dependent care precursor in [report 85](85_ssrm_3d_dependent_care_report.md).
 12. Irreversible loss. Implemented as the irreversible loss precursor in [report 86](86_ssrm_3d_irreversible_loss_report.md).
 13. Affective control state. Implemented as the affective control precursor in [report 87](87_ssrm_3d_affective_control_report.md).
-14. Places with function and territory/social infrastructure. Next pressure-layer target.
+14. Physics-first benchmark foundation. Implemented as the modular C++/Python physics benchmark in [report 88](88_ssrm_3d_physics_benchmark_report.md).
+15. Closed-loop learned control in the physics kernel. Next target.
+16. Places with function and territory/social infrastructure. Add only where they create specific control pressure.
 
 This combination should make the agent answer behaviorally:
 
@@ -525,5 +527,7 @@ The layer is overbuilt or biased if:
 5. Sanitation: contamination map, latrine/shelter/resource interactions.
 6. Affective control state: fear/stress/trust/frustration/affiliation/curiosity/shame-guilt analogues as attention and policy modulators.
 7. Social disease layer: care, quarantine, exposure memory, stigma/avoidance, deception.
+8. Physics-first kernel: terrain, weather, collision, FOV, audio, vibration, tension, user proposals, and artifacts from the same state stream.
+9. Closed-loop learned control: train recurrent policies by return or model-based RL while acting in the physics kernel.
 
 Stop after each step and run ablations before adding the next.

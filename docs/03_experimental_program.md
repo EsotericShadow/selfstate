@@ -1859,6 +1859,36 @@ Implemented version:
 - [trace JS fallback](../artifacts/ssrm_3d_affective_control_trace.js)
 - [results JS fallback](../artifacts/ssrm_3d_affective_control_results.js)
 
+## SSRM-3D Physics-First Benchmark Foundation
+
+Move the SSRM-3D track toward a physics-grounded inhabited world instead of another labeled pressure row.
+
+This benchmark uses a modular C++ kernel for world construction, structured sensors, policy rollouts, deterministic stepping, and JSON serialization. Python owns compilation, neural training, held-out evaluation, ablations, metrics, and artifacts. The viewer consumes the same trace as a replay/intervention surface.
+
+Canonical result:
+
+- RNN, GRU, and LSTM recurrent neural models train on physics-derived sequences without scenario labels;
+- held-out worlds are evaluated separately from training worlds;
+- `gru` is the best canonical architecture at 0.855 held-out action accuracy;
+- weather, user proposal, tool/social/continuity, and self-state ablations cause measurable losses;
+- the verdict explicitly records `supports_closed_loop_deep_rl=False`;
+- the viewer provides WASD movement, FOV cone, weather, sound/vibration rings, HUD, animation state, reason text, and intervention logging, but interventions do not yet feed back into a live learned agent.
+
+Implemented version:
+
+- [SSRM-3D physics benchmark script](../experiments/ssrm_3d_physics_benchmark.py)
+- [SSRM-3D physics benchmark report](88_ssrm_3d_physics_benchmark_report.md)
+- [C++ physics kernel](../cpp/ssrm_physics)
+- [physics benchmark visualization](../visualizations/ssrm_3d_physics_benchmark.html)
+- [architecture CSV](../artifacts/ssrm_3d_physics_benchmark_architectures.csv)
+- [ablation CSV](../artifacts/ssrm_3d_physics_benchmark_ablations.csv)
+- [baseline CSV](../artifacts/ssrm_3d_physics_benchmark_baselines.csv)
+- [verdict CSV](../artifacts/ssrm_3d_physics_benchmark_verdict.csv)
+- [trace JSON](../artifacts/ssrm_3d_physics_benchmark_trace.json)
+- [JSON results](../artifacts/ssrm_3d_physics_benchmark_results.json)
+- [trace JS fallback](../artifacts/ssrm_3d_physics_benchmark_trace.js)
+- [results JS fallback](../artifacts/ssrm_3d_physics_benchmark_results.js)
+
 ## Modular LLM Architecture Boundary
 
 Use the modular LLM architecture report as the control-authority contract for future SSRM-3D language work:

@@ -1,0 +1,6 @@
+policy,mean_reward,mean_control_score,mean_refusals
+reactive,-533.8080622,0.27118380000000003,0.0
+world_only,-530.9342747,0.2850666,0.0
+generic_memory,-519.4752426,0.3485979,0.0
+integrated_physics_self,-512.1966703,0.39521100000000003,35.0
+oracle,-520.1027093,0.3643792,0.0

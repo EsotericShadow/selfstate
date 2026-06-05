@@ -22,10 +22,10 @@ It treats "self" as a persistent model of the acting system. That model can be e
 
 The current public status:
 
-- reports now run from `01` through `87`;
-- the canonical runner currently reports `72` executable runs;
-- the latest manifest reports `0` failures;
-- the strongest result is still toy-scale;
+- reports now run from `01` through `88`;
+- the canonical runner is wired for `73` executable runs;
+- the newest step is a physics-first benchmark foundation, not another hand-labeled pressure row;
+- the strongest result is still bounded simulation evidence;
 - the project has useful evidence, but not a finished proof of a general selfhood law.
 
 ## What This Project Is Not
@@ -121,6 +121,7 @@ The repo is not one experiment. It is a ladder of tests.
 | SSRM-3D embodied world | [60-64](../60_ssrm_3d_embodied_world_report.md) | Does the same idea survive in a persistent 3D-style agent world? | The 3D track supports the mechanism, while keeping language separate from the self. |
 | Tools, society, and continuity | [65-73](../65_ssrm_3d_tool_making_report.md) | Do tools, trust, communication, restore, and integration pressure need self-state? | Candidate-policy tests are positive, but the no-leak learned-integration sweep is only partial. |
 | Persistent pressure layers | [74-87](../74_ssrm_3d_persistent_pressure_layer_spec.md) | Which richer world pressures make self-state useful? | Perception, sleep, illness, weather, social contracts, threats, ecology, injury, development, care, loss, and affect all create testable self-state pressure. |
+| Physics-first benchmark | [88](../88_ssrm_3d_physics_benchmark_report.md) | Can recurrent neural models learn from physics-derived streams without scenario labels? | Yes as offline recurrent decision learning; not yet as closed-loop deep reinforcement learning. |
 
 ## What The Early Experiments Showed
 
@@ -230,6 +231,16 @@ These are visual summaries of the current SSRM-3D pressure reports.
 
 ![Affective control pressure layer](assets/ssrm_3d_affective_control.png)
 
+## Physics-First Benchmark
+
+The latest step is different from the earlier pressure rows.
+
+Report 88 adds a modular physics-first benchmark: a C++ simulation kernel generates terrain, weather, shelter, resources, illness/care pressure, sound, vibration, tension, FOV perception, and user proposals. Python trains recurrent neural models on those physics-derived streams without scenario labels.
+
+![SSRM-3D physics-first benchmark viewer](assets/ssrm_3d_physics_benchmark.png)
+
+That is real neural sequence learning, but it is not a claim that a live self-aware agent has been trained. The current model learns from traces. The next threshold is closed-loop learning, where the trained policy acts in the physics world, receives consequences, and fails under targeted ablations while acting.
+
 ## Language Is Not The Self
 
 Language is treated as a slow reasoning layer, not as the self and not as the whole organism.
@@ -299,20 +310,20 @@ Use these as the clean public version of the project.
 8. Social trust matters because promises, reputation, deception, and care require continuity.
 9. Affective states can be modeled as control summaries without claiming subjective emotion.
 10. Negative results are part of the research, not a problem to hide.
-11. The current result is serious toy-scale evidence, not proof of a universal law.
-12. The next frontier is shared learned controllers in richer worlds, not more hand-picked scenario rows.
+11. The current result is serious bounded-simulation evidence, not proof of a universal law.
+12. The next frontier is closed-loop learned controllers in the physics world, not more hand-picked scenario rows.
 
 ## The Current Honest Finding
 
 In plain English:
 
-> A persistent self-like model looks useful when an agent has to survive, adapt, remember, repair, cooperate, and continue through changing conditions. But the current evidence is still toy-scale. It supports a mechanism, not a consciousness claim.
+> A persistent self-like model looks useful when an agent has to survive, adapt, remember, repair, cooperate, and continue through changing conditions. The current evidence now includes a physics-first recurrent-learning benchmark, but it still supports a mechanism, not a consciousness claim.
 
 The most important open weakness:
 
 > The project has not yet proven that selfhood naturally emerges in open learned agents. Some results still depend on designed scenarios, supplied candidate policies, or structured state packets.
 
-That is why the next serious step is to move more of the pressure into shared learned controllers and see whether the same self-like variables are discovered without shortcuts.
+That is why the next serious step is to close the loop: train learned controllers while acting in the physics world and test whether the same self-like variables are discovered without shortcuts.
 
 ## What Would Prove This Wrong?
 

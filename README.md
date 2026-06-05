@@ -96,6 +96,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D dependent care report](docs/85_ssrm_3d_dependent_care_report.md): tests fragile companions, dependent state, identity memory, protection, sharing, repair, teaching, shelter coordination, promises, trust, priority arbitration, and continuity as abstract care pressure.
 - [SSRM-3D irreversible loss report](docs/86_ssrm_3d_irreversible_loss_report.md): tests permanent tool, shelter, relationship, memory, and option-space loss as abstract future-option pressure.
 - [SSRM-3D affective control report](docs/87_ssrm_3d_affective_control_report.md): tests fear, stress, trust, frustration, affiliation, curiosity, and guilt analogues as abstract control summaries.
+- [SSRM-3D physics-first benchmark report](docs/88_ssrm_3d_physics_benchmark_report.md): starts the physics-grounded benchmark track with a modular C++ simulation kernel, recurrent neural decision learning, held-out worlds, ablations, and a replay/intervention viewer.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -850,6 +851,22 @@ This writes:
 - `visualizations/ssrm_3d_affective_control.html` replays the affective-control trace when served from the repo root.
 
 ```bash
+python3 experiments/ssrm_3d_physics_benchmark.py --train-episodes 24 --test-episodes 10 --epochs 80 --hidden-size 32 --ticks 360 --seed 20260705 --device auto
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_physics_benchmark_architectures.csv`
+- `artifacts/ssrm_3d_physics_benchmark_ablations.csv`
+- `artifacts/ssrm_3d_physics_benchmark_baselines.csv`
+- `artifacts/ssrm_3d_physics_benchmark_verdict.csv`
+- `artifacts/ssrm_3d_physics_benchmark_trace.json`
+- `artifacts/ssrm_3d_physics_benchmark_results.json`
+- `artifacts/ssrm_3d_physics_benchmark_trace.js`
+- `artifacts/ssrm_3d_physics_benchmark_results.js`
+- `visualizations/ssrm_3d_physics_benchmark.html` replays the physics-first trace and viewer shell when served from the repo root.
+
+```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2
 ```
 
@@ -1040,6 +1057,11 @@ The project should not ask whether an agent says it has a self. It should ask wh
 50. Recoverable in learned recurrent controllers trained without self labels in the persistent 3D embodied world.
 51. Extended through externalized cognition when return-selected agents build markers, beacons, or alarms only under embodied confusion pressure.
 52. Extended through social identity pressure when return-selected agents use reputation, vulnerability, identity memory, and shared-tool trust only when other agents have persistent policies and memory.
+53. Extended through costly communication when signals, names, gossip, and check-ins preserve future options under social memory.
+54. Preserved through interruption, restore, transplant, rollback, and fork only when the full continuity record is serialized.
+55. Moved into learned recurrent policy state under designed tool, social, continuity, and attention packets, with no-leak stress tests visible.
+56. Pressured by structured perception, sleep, illness, weather, maintenance, contracts, threats, ecology, injury, skill, care, loss, and affective-control layers only when each variable changes control.
+57. Recoverable from physics-derived sensor streams in a modular embodied world without scenario labels, while still requiring closed-loop learned control before the stronger claim.
 
 Current stress evidence does not yet satisfy item 37. The architecture boundary stress test finds partial convergence in shared regimes, not strict architecture-wide convergence. Current horizon-pressure evidence partially supports item 38: recoverability improves with horizon, but strict convergence still does not appear.
 Current capacity evidence supports item 39, but only as a diagnostic: source-direction seeds are supplied, so this is not natural emergence.
@@ -1060,7 +1082,8 @@ Current SSRM-3D social-ecology evidence supports item 53 as a Gate 3 extension: 
 Current SSRM-3D agent-continuity evidence supports item 54 as a Gate 4 precursor: restored agents preserve future control only when body, model, memory, social history, commitments, event log, attention, hidden state, tools, goals, and branch identity are serialized as a coherent continuity record.
 Current SSRM-3D learned-integration evidence supports item 55 only as a designed packet bridge: a recurrent controller trained from reward-derived action choices carries early tool, social, continuity, and attention evidence in the seeded canonical run. The no-leak sweep removes scenario identity, randomizes pressure combinations, and runs five seeds; it preserves some bridges but rejects the strong stable-integration claim because `single_tool` margins are too close and `integrated_social` is not ablation-stable.
 Current SSRM-3D pressure-layer evidence supports item 56 as designed precursors: structured perception removes omniscient world-state access; day/night sleep-rest shows that rest is rejected in daylight control but becomes useful under fatigue debt, darkness, shelter timing, guarded sleep, and interruption continuity; illness/sanitation shows that hunger/thirst, latent infection, contamination, quarantine/care, immunity, and continuity matter only in matching pressure regimes; weather/exposure shows that cold, heat, rain, wind, drought, shelter, fire/light, water planning, and continuity matter only when external conditions change future capability; tool/shelter degradation shows that marker wear, shelter damage, alarm/cache decay, inspection, repair, spare parts, and continuity matter only when persistent infrastructure decay changes future control; social trust/contracts shows that promises, tool return, warnings, sharing, repair debt, trust updates, and continuity matter only when delayed social consequences change future options; predator/threat agents show that sound/scent traces, vulnerability, stealth, shelter, alarms, social warning, and continuity matter only when trackers exploit them; resource ecology shows that regrowth, depletion, spoilage, migration, restraint, caches, sharing, territory, and continuity matter only when delayed resource consequences change future options; injury/disability adaptation shows that mobility loss, degraded senses, infection risk, repair, help, tools, routes, and continuity matter only when changed capability changes future action feasibility; development/skill learning shows that practice, fatigue, injury retraining, transfer, teaching, tools, goal feasibility, and continuity matter only when changing competence changes future action feasibility; dependent care shows that fragile companions, identity memory, protection, sharing, repair, teaching, shelter coordination, promises, social trust, priority arbitration, and continuity matter only when another persistent agent changes future options; irreversible loss shows that permanent tool, shelter, relationship, memory, and option-space loss matters only when future options cannot simply be restored; and affective control shows that fear, stress, trust, frustration, affiliation, curiosity, and guilt analogues matter only when compact summaries change attention, memory, risk, communication, repair, inspection, social access, or continuity.
+Current SSRM-3D physics-first evidence supports item 57 only as a foundation: a modular C++ kernel produces physics-derived traces, PyTorch RNN/GRU/LSTM models learn held-out decision structure without scenario labels, and ablations expose learned dependencies on weather, proposal, tool/social/continuity, and self-state inputs. It is not closed-loop deep reinforcement learning yet.
 
-The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has useful learned-control precursors; gate 2 has a partial externalized-cognition precursor plus a learned tool-memory bridge; gate 3 has partial social-pressure and costly-communication precursors plus a learned social-memory bridge; gate 4 has continuity-record and learned continuity/attention precursors but is still incomplete.
+The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has useful learned-control precursors and a physics-first offline recurrent benchmark; gate 2 has a partial externalized-cognition precursor plus a learned tool-memory bridge; gate 3 has partial social-pressure and costly-communication precursors plus a learned social-memory bridge; gate 4 has continuity-record and learned continuity/attention precursors but is still incomplete.
 
 If agents with no persistent self-equivalent representation match performance, transfer, recovery, and compression under those conditions, the strong self-necessity claim fails.

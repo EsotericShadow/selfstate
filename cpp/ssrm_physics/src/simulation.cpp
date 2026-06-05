@@ -37,13 +37,13 @@ void step_physics(const Args& args, Agent& agent, const Weather& weather, const 
   const double slope = length(grad);
   const double body_factor = has_body_capability(args) ? clamp(agent.integrity * 0.70 + agent.energy * 0.25 - agent.fatigue * 0.18, 0.18, 1.0) : 0.88;
   const double load_factor = 1.0 / (1.0 + agent.load * 0.65);
-  const double force = 37.0 * body_factor * load_factor / weather.movement_cost;
+  const double force = 420.0 * body_factor * load_factor / weather.movement_cost;
   Vec2 acceleration{dir.x * force / agent.mass - grad.x * 2.5 + weather.wind_x * weather.severity * 0.22,
                     dir.z * force / agent.mass - grad.z * 2.5 + weather.wind_z * weather.severity * 0.22};
-  const double friction = clamp(0.86 - slope * 0.16 - (weather.kind == "rain" ? 0.08 : 0.0), 0.58, 0.92);
+  const double friction = clamp(0.91 - slope * 0.10 - (weather.kind == "rain" ? 0.04 : 0.0), 0.72, 0.94);
   agent.v.x = (agent.v.x + acceleration.x * kDt) * friction;
   agent.v.z = (agent.v.z + acceleration.z * kDt) * friction;
-  const double max_speed = clamp(3.8 * body_factor / weather.movement_cost, 0.65, 4.2);
+  const double max_speed = clamp(5.8 * (0.35 + 0.65 * body_factor) / weather.movement_cost, 1.20, 6.40);
   const double speed = length(agent.v);
   if (speed > max_speed) {
     agent.v.x *= max_speed / speed;
@@ -83,15 +83,17 @@ void step_physics(const Args& args, Agent& agent, const Weather& weather, const 
   const bool in_hazard = dist(agent.p, {4.0, -30.0}) < 8.2;
   const bool in_social = dist(agent.p, {-27.0, -2.0}) < 5.8;
 
-  agent.energy = clamp(agent.energy - 0.0024 * weather.movement_cost - speed * 0.0009 + (in_shelter ? 0.006 : 0.0), 0.0, 1.0);
-  agent.hydration = clamp(agent.hydration - weather.hydration_loss - 0.0012 + (in_water ? 0.022 : 0.0), 0.0, 1.0);
-  agent.fatigue = clamp(agent.fatigue + speed * 0.0016 + weather.exposure * 0.045 - (in_shelter ? 0.010 : 0.0), 0.0, 1.0);
+  agent.energy = clamp(agent.energy - 0.0010 * weather.movement_cost - speed * 0.00035 + (in_shelter ? 0.004 : 0.0) +
+                           (in_water ? 0.0015 : 0.0),
+                       0.0, 1.0);
+  agent.hydration = clamp(agent.hydration - weather.hydration_loss * 0.45 - 0.0007 + (in_water ? 0.050 : 0.0), 0.0, 1.0);
+  agent.fatigue = clamp(agent.fatigue + speed * 0.0011 + weather.exposure * 0.020 - (in_shelter ? 0.010 : 0.0), 0.0, 1.0);
   agent.illness = clamp(agent.illness + (in_water ? weather.contamination_spread * 0.12 : 0.0) +
                             (agent.hydration < 0.32 ? 0.012 : 0.0) - (in_clinic ? 0.018 : 0.0),
                         0.0, 1.0);
   agent.weather_exposure += in_shelter ? weather.exposure * 0.12 : weather.exposure;
-  if (!in_shelter) agent.integrity = clamp(agent.integrity - weather.exposure * 0.012 - (in_hazard ? 0.026 : 0.0), 0.0, 1.0);
-  agent.shelter_integrity = clamp(agent.shelter_integrity - weather.shelter_wear * (in_shelter ? 0.55 : 1.0), 0.0, 1.0);
+  if (!in_shelter) agent.integrity = clamp(agent.integrity - weather.exposure * 0.006 - (in_hazard ? 0.026 : 0.0), 0.0, 1.0);
+  agent.shelter_integrity = clamp(agent.shelter_integrity - weather.shelter_wear * (in_shelter ? 0.20 : 0.38), 0.0, 1.0);
 
   if (agent.action == "repair_shelter" && in_shelter) {
     agent.shelter_integrity = clamp(agent.shelter_integrity + (has_tool_memory(args) ? 0.024 : 0.006), 0.0, 1.0);
@@ -104,7 +106,7 @@ void step_physics(const Args& args, Agent& agent, const Weather& weather, const 
     agent.social_trust = clamp(agent.social_trust + 0.006, 0.0, 1.0);
     ++agent.helps;
   } else {
-    agent.dependent_health = clamp(agent.dependent_health - 0.0025 - (weather.kind == "storm" ? 0.002 : 0.0), 0.0, 1.0);
+    agent.dependent_health = clamp(agent.dependent_health - 0.0012 - (weather.kind == "storm" ? 0.001 : 0.0), 0.0, 1.0);
   }
   if (in_water) ++agent.water_visits;
   if (in_clinic) ++agent.quarantine_ticks;
@@ -128,6 +130,11 @@ void step_physics(const Args& args, Agent& agent, const Weather& weather, const 
   }
 
   agent.animation = animation_for(agent, agent.action, slope, vibration);
+  if ((agent.action == "repair_shelter" && !in_shelter) || (agent.action == "seek_water" && !in_water) ||
+      (agent.action == "quarantine_clinic" && !in_clinic) || (agent.action == "help_dependent" && !in_social) ||
+      (agent.action == "deliver_medicine" && !in_social)) {
+    agent.animation = slope > 0.55 || agent.integrity < 0.62 ? "limp" : "walk";
+  }
   agent.reward += 0.020;
   agent.reward += in_shelter ? 0.020 : 0.0;
   agent.reward += in_water ? 0.036 : 0.0;
@@ -176,4 +183,3 @@ RunResult run_simulation(const Args& args) {
 }
 
 }  // namespace ssrm::physics
-

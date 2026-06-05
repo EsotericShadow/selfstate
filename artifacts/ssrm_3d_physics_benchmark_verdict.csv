@@ -1,2 +1,2 @@
 supports_physics_first_foundation,supports_closed_loop_deep_rl,no_scenario_labels_in_model_input,held_out_worlds_tested,architectures_tested,best_architecture,best_accuracy,mean_self_state_ablation_loss,mean_weather_ablation_loss,mean_vibration_tension_ablation_loss,mean_vision_ablation_loss,claim
-True,False,True,True,3,gru,0.8550000190734863,0.031111101309458416,0.08277779817581177,0.008333325386047363,0.0038889050483703613,physics-derived recurrent decision learning precursor; not closed-loop learned control yet
+True,False,True,True,3,lstm,0.8983333110809326,0.06333333253860474,0.012777765591939291,0.004444440205891927,0.014444430669148764,physics-derived recurrent decision learning precursor; not closed-loop learned control yet

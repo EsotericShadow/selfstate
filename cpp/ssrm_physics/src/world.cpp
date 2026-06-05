@@ -23,7 +23,7 @@ std::vector<Obstacle> build_obstacles() {
       {"ridge_rock_1", {-2.0, -27.0}, 3.8},
       {"fallen_wall", {-13.0, 10.0}, 3.2},
       {"ruin_block", {-25.0, 14.0}, 4.4},
-      {"wet_basin", {18.0, -4.0}, 3.6},
+      {"wet_basin", {18.0, 3.0}, 3.2},
   };
 }
 
@@ -113,4 +113,3 @@ Weather weather_at(int tick, int episode) {
 }
 
 }  // namespace ssrm::physics
-

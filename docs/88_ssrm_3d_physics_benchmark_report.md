@@ -13,7 +13,7 @@ The narrow claim is:
 ## Command
 
 ```bash
-python3 experiments/ssrm_3d_physics_benchmark.py --train-episodes 24 --test-episodes 10 --epochs 80 --hidden-size 32 --ticks 360 --seed 20260705 --device auto
+python3 experiments/ssrm_3d_physics_benchmark.py --train-episodes 24 --test-episodes 10 --epochs 80 --hidden-size 32 --ticks 360 --seed 20260705 --device auto --trace-episode 8
 ```
 
 ## Architecture
@@ -52,11 +52,11 @@ Three recurrent architectures are trained with PyTorch:
 
 | Architecture | Held-out action accuracy | Refusal accuracy | Repair accuracy | Care accuracy | Water accuracy |
 |---|---:|---:|---:|---:|---:|
-| `rnn` | 0.835 | 0.983 | 0.717 | 1.000 | 0.912 |
-| `gru` | 0.855 | 1.000 | 0.726 | 1.000 | 0.929 |
-| `lstm` | 0.823 | 1.000 | 0.679 | 1.000 | 0.903 |
+| `rnn` | 0.892 | 0.826 | 0.869 | 1.000 | 0.945 |
+| `gru` | 0.895 | 0.870 | 0.876 | 1.000 | 0.940 |
+| `lstm` | 0.898 | 0.826 | 0.869 | 1.000 | 0.954 |
 
-The best held-out architecture is `gru` at `0.855` action accuracy.
+The best held-out architecture is `lstm` at `0.898` action accuracy.
 
 This is actual neural sequence learning: model weights are trained by gradient descent through recurrent networks. It is also still pattern learning in the broad sense that all supervised neural learning is pattern learning. The stronger research threshold is not "does a neural network train?" but "does the learned policy act in the world, receive consequences, update through return, and show causal self-state dependence under ablation?"
 
@@ -68,21 +68,20 @@ Feature groups are zeroed at evaluation time. Mean accuracy loss across RNN, GRU
 
 | Ablation | Mean held-out accuracy loss |
 |---|---:|
-| weather | 0.083 |
-| user proposal | 0.063 |
-| tool/social/continuity | 0.044 |
-| self-state | 0.031 |
-| position/motion | 0.027 |
-| audio | 0.021 |
-| vibration/tension | 0.008 |
-| vision | 0.004 |
+| self-state | 0.063 |
+| position/motion | 0.060 |
+| audio | 0.031 |
+| user proposal | 0.017 |
+| vision | 0.014 |
+| weather | 0.013 |
+| tool/social/continuity | 0.005 |
+| vibration/tension | 0.004 |
 
 Interpretation:
 
-- weather is the strongest learned dependency in this canonical run;
-- proposal input is important because refusal/redirection is part of the action space;
-- self-state and tool/social/continuity are behaviorally useful but not dominant;
-- vibration/tension and vision are present but weakly ablatable at this scale;
+- self-state and position/motion are the strongest learned dependencies in this canonical run;
+- audio, proposal input, vision, and weather all carry measurable decision information;
+- tool/social/continuity and vibration/tension are present but weakly ablatable in this trace mix;
 - future versions need richer closed-loop tasks where perception failures create larger causal losses.
 
 ## Baselines
@@ -91,11 +90,11 @@ Held-out policy rollouts from the physics kernel:
 
 | Policy | Mean reward | Mean control score | Mean refusals |
 |---|---:|---:|---:|
-| `reactive` | -533.808 | 0.271 | 0.000 |
-| `world_only` | -530.934 | 0.285 | 0.000 |
-| `generic_memory` | -519.475 | 0.349 | 0.000 |
-| `integrated_physics_self` | -512.197 | 0.395 | 35.000 |
-| `oracle` | -520.103 | 0.364 | 0.000 |
+| `reactive` | -167.663 | 0.276 | 0.000 |
+| `world_only` | -340.277 | 0.229 | 0.000 |
+| `generic_memory` | -369.632 | 0.215 | 0.000 |
+| `integrated_physics_self` | -68.886 | 0.388 | 13.200 |
+| `oracle` | -157.184 | 0.204 | 0.000 |
 
 The teacher policy produces the strongest reward/control score in this run and is the only one refusing unsafe proposals. This is a policy-generation baseline, not a proof that the learned recurrent model would outperform those policies in closed-loop control.
 
@@ -125,8 +124,8 @@ The viewer is a replay/intervention shell. User interventions are logged and vis
 | no scenario labels in model input | `True` |
 | held-out worlds tested | `True` |
 | architectures tested | `3` |
-| best architecture | `gru` |
-| best accuracy | `0.855` |
+| best architecture | `lstm` |
+| best accuracy | `0.898` |
 
 This supports Report 88 as a physics-derived recurrent decision-learning precursor.
 

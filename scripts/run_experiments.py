@@ -1015,6 +1015,8 @@ COMMANDS: List[List[str]] = [
         "20260705",
         "--device",
         "auto",
+        "--trace-episode",
+        "8",
     ],
     [
         sys.executable,

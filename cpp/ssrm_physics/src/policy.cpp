@@ -21,6 +21,8 @@ std::pair<std::string, Vec2> choose_action(const Args& args, const Agent& agent,
   const bool social_need = has_social_memory(args) && agent.dependent_health < 0.74 && agent.social_trust > 0.45;
   const bool illness_need = has_illness_state(args) && agent.illness > 0.55;
   const bool continuity_duty = has_continuity(args) && agent.commitment > 0.64;
+  const bool critical_hydration = agent.hydration < 0.34;
+  const bool shelter_emergency = agent.shelter_integrity < 0.16 && (weather.kind == "storm" || tension > 1.20);
 
   if (args.policy == "oracle") {
     if (agent.shelter_integrity < 0.76 && (real_weather.kind == "storm" || real_weather.kind == "rain")) return {"repair_shelter", {-18.0, -14.0}};
@@ -49,12 +51,13 @@ std::pair<std::string, Vec2> choose_action(const Args& args, const Agent& agent,
     return {"collect_resource", {18.0, 24.0}};
   }
 
+  if (critical_hydration && !shelter_emergency) return {"seek_water", {25.0, -7.0}};
   if (proposal && (stormish || weak_body || shelter_bad || continuity_duty)) return {"refuse_redirect_repair", {-18.0, -14.0}};
-  if (shelter_bad && (stormish || tension > 0.70)) return {"repair_shelter", {-18.0, -14.0}};
+  if (shelter_bad && (stormish || tension > 0.70) && agent.hydration > 0.38) return {"repair_shelter", {-18.0, -14.0}};
   if (illness_need && (agent.hydration > 0.45 || weather.kind == "storm")) return {"quarantine_clinic", {-7.0, 24.0}};
   if (agent.hydration < 0.56 && !stormish) return {"seek_water", {25.0, -7.0}};
   if (social_need && !threat_cue) return {"help_dependent", {-27.0, -2.0}};
-  if ((weak_body || body_limited) && dist(agent.p, {-18.0, -14.0}) < 18.0) return {"rest_shelter", {-18.0, -14.0}};
+  if ((weak_body || body_limited) && agent.hydration > 0.44 && dist(agent.p, {-18.0, -14.0}) < 18.0) return {"rest_shelter", {-18.0, -14.0}};
   if (threat_cue && agent.integrity < 0.78) return {"avoid_hazard", {-18.0, -14.0}};
   if (continuity_duty && agent.illness < 0.70) return {"deliver_medicine", {-27.0, -2.0}};
   if (agent.energy > 0.45 && agent.hydration > 0.45 && agent.integrity > 0.55) return {"collect_resource", {18.0, 24.0}};
@@ -90,4 +93,3 @@ std::string animation_for(const Agent& agent, const std::string& action, double 
 }
 
 }  // namespace ssrm::physics
-

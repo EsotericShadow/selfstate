@@ -79,7 +79,7 @@ class BenchmarkConfig:
     hidden_size: int = 32
     learning_rate: float = 0.004
     device: str = "auto"
-    trace_episode: int = 0
+    trace_episode: int = 8
 
 
 class RecurrentDecisionModel(nn.Module):
@@ -413,7 +413,7 @@ def parse_args() -> BenchmarkConfig:
     parser.add_argument("--hidden-size", type=int, default=32)
     parser.add_argument("--learning-rate", type=float, default=0.004)
     parser.add_argument("--device", default="auto")
-    parser.add_argument("--trace-episode", type=int, default=0)
+    parser.add_argument("--trace-episode", type=int, default=8)
     return BenchmarkConfig(**vars(parser.parse_args()))
 
 

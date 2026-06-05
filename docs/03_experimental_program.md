@@ -1869,8 +1869,8 @@ Canonical result:
 
 - RNN, GRU, and LSTM recurrent neural models train on physics-derived sequences without scenario labels;
 - held-out worlds are evaluated separately from training worlds;
-- `gru` is the best canonical architecture at 0.855 held-out action accuracy;
-- weather, user proposal, tool/social/continuity, and self-state ablations cause measurable losses;
+- `lstm` is the best canonical architecture at 0.898 held-out action accuracy;
+- self-state, position/motion, audio, user proposal, vision, and weather ablations cause measurable losses;
 - the verdict explicitly records `supports_closed_loop_deep_rl=False`;
 - the viewer provides WASD movement, FOV cone, weather, sound/vibration rings, HUD, animation state, reason text, and intervention logging, but interventions do not yet feed back into a live learned agent.
 

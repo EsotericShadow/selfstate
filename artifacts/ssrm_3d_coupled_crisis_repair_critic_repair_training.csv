@@ -1,0 +1,2 @@
+train_loss,train_accuracy,weighted_accuracy,device_used,parameter_count,train_examples,repair_epochs,repair_hidden_size
+1.364370492351175,0.3280428647994995,0.3295743763446808,mps,6684,30243,70,48

@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `86` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, social credit-assignment controller, social repair critic controller, multi-day maturation verifier, learned multi-day maturation controller, return-selected multi-day maturation controller, and coupled social/environment maturation controller.
+The canonical runner is now wired for `87` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, social credit-assignment controller, social repair critic controller, multi-day maturation verifier, learned multi-day maturation controller, return-selected multi-day maturation controller, coupled social/environment maturation controller, and coupled crisis repair critic controller.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -230,6 +230,8 @@ Report 104 then trains frame and GRU neural controllers from those 72h traces an
 Report 105 adds validation-return selection around that GRU. The selected router is `social_env`, and held-out 72h worlds still mature with score `1.000`. This is progress because the adapter is selected by closed-loop world return, but it is not deep reinforcement learning and it does not solve the main weakness: total-score ablations still show that social/culture and environmental channels can be routed around.
 
 Report 106 makes that weakness harder to ignore. Post-12h crises now require environmental repair and social coordination together. The designed controller resolves them with crisis score `0.733`, but the learned return-selected GRU gets crisis score `0.000` and resolves only `0.100` of crises. That means the current learned controller can keep the society developing without actually learning coupled crisis repair.
+
+Report 107 then adds a learned repair critic around that coupled-crisis GRU. This also fails in a useful way: validation selects repair bias `0.0`, so the critic is turned off, and the held-out repair-critic controller still gets crisis score `0.000`. The lesson is not "add another supervised label head." The next real step needs outcome-aware learning, such as return/counterfactual training or a value head that predicts unresolved crisis damage.
 
 ![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 

@@ -407,12 +407,69 @@
       "wait",
       "follow",
     ];
+    const SENSOR_CHANNELS = ["liquid", "nutrient", "structure", "material", "hazard", "care", "social", "path", "thermal"];
+    const ENVIRONMENT_SIGNALS = {
+      home_shelter: [0.05, 0.10, 0.94, 0.28, 0.10, 0.22, 0.48, 0.36, 0.62],
+      ridge_shelter: [0.04, 0.08, 0.88, 0.32, 0.18, 0.14, 0.38, 0.32, 0.52],
+      grove_shelter: [0.08, 0.18, 0.78, 0.25, 0.12, 0.18, 0.44, 0.36, 0.56],
+      water: [0.96, 0.10, 0.08, 0.06, 0.18, 0.05, 0.18, 0.42, 0.20],
+      creek: [0.88, 0.16, 0.05, 0.08, 0.24, 0.04, 0.14, 0.55, 0.18],
+      clinic: [0.18, 0.12, 0.54, 0.26, 0.22, 0.86, 0.46, 0.36, 0.42],
+      garden: [0.28, 0.92, 0.20, 0.22, 0.12, 0.18, 0.28, 0.34, 0.48],
+      workshop: [0.04, 0.08, 0.52, 0.90, 0.20, 0.10, 0.32, 0.30, 0.38],
+      commons: [0.08, 0.10, 0.28, 0.20, 0.10, 0.16, 0.92, 0.74, 0.44],
+      frontier: [0.10, 0.12, 0.12, 0.26, 0.72, 0.04, 0.10, 0.86, 0.30],
+      mineral_field: [0.02, 0.04, 0.08, 0.94, 0.28, 0.02, 0.08, 0.40, 0.34],
+      forest: [0.22, 0.86, 0.18, 0.46, 0.26, 0.12, 0.16, 0.48, 0.46],
+      ruins: [0.04, 0.08, 0.38, 0.78, 0.44, 0.04, 0.12, 0.62, 0.36],
+      badlands: [0.02, 0.04, 0.08, 0.32, 0.95, 0.02, 0.06, 0.46, 0.86],
+    };
+    const DEBUG_HINTS = [
+      { hint: "fluid-like", channel: "liquid" },
+      { hint: "nutrient-like", channel: "nutrient" },
+      { hint: "shelter-like", channel: "structure" },
+      { hint: "material-like", channel: "material" },
+      { hint: "hazard-like", channel: "hazard" },
+      { hint: "care-like", channel: "care" },
+      { hint: "social-like", channel: "social" },
+      { hint: "path-like", channel: "path" },
+      { hint: "heat-like", channel: "thermal" },
+    ];
+    const HINT_TO_SIGNAL = {
+      water: ENVIRONMENT_SIGNALS.water,
+      food: ENVIRONMENT_SIGNALS.garden,
+      shelter: ENVIRONMENT_SIGNALS.home_shelter,
+      tool: ENVIRONMENT_SIGNALS.workshop,
+      danger: ENVIRONMENT_SIGNALS.badlands,
+      child: [0.12, 0.24, 0.26, 0.10, 0.18, 0.92, 0.62, 0.28, 0.44],
+      trust: ENVIRONMENT_SIGNALS.commons,
+      storm: [0.08, 0.06, 0.18, 0.14, 0.84, 0.05, 0.20, 0.30, 0.92],
+      repair: [0.06, 0.08, 0.82, 0.64, 0.26, 0.18, 0.38, 0.28, 0.40],
+      illness: ENVIRONMENT_SIGNALS.clinic,
+      path: ENVIRONMENT_SIGNALS.frontier,
+      gather: ENVIRONMENT_SIGNALS.forest,
+      wait: ENVIRONMENT_SIGNALS.home_shelter,
+      follow: ENVIRONMENT_SIGNALS.commons,
+      inspect: ENVIRONMENT_SIGNALS.frontier,
+      harvest: ENVIRONMENT_SIGNALS.forest,
+      carry: ENVIRONMENT_SIGNALS.mineral_field,
+      construct: ENVIRONMENT_SIGNALS.home_shelter,
+      modify: ENVIRONMENT_SIGNALS.workshop,
+      strike: ENVIRONMENT_SIGNALS.badlands,
+      treat: ENVIRONMENT_SIGNALS.clinic,
+      signal: ENVIRONMENT_SIGNALS.commons,
+      share_pattern: ENVIRONMENT_SIGNALS.frontier,
+      rest: ENVIRONMENT_SIGNALS.home_shelter,
+      pair_bond: ENVIRONMENT_SIGNALS.commons,
+      nurture_child: [0.12, 0.24, 0.26, 0.10, 0.18, 0.92, 0.62, 0.28, 0.44],
+      self: [0.10, 0.16, 0.38, 0.20, 0.18, 0.36, 0.42, 0.40, 0.46],
+    };
     const SYLLABLES = ["ka", "lo", "mi", "ra", "tu", "en", "sa", "vi", "or", "ne", "sha", "ko", "di", "um", "tal", "ren"];
     const GLYPH_PARTS = ["^", "[]", "()", "~", "X", "+", "!", "=", "<>", "#", "||", "::", "/\\", "T", "o"];
 
     const BASIC_ACTIONS = new Set(["inspect", "harvest", "carry", "construct", "repair", "modify", "strike", "treat", "signal", "rest", "pair_bond", "nurture_child"]);
     const NAMES = ["Ari", "Bo", "Cy", "Dee", "Eli", "Fay", "Gus", "Ira", "Jae", "Kai", "Lou", "Mika", "Nia", "Oren"];
-    const FEATURE_COUNT = 29;
+    const FEATURE_COUNT = 36;
     const HIDDEN = 18;
 
     const els = {
@@ -514,6 +571,19 @@
       return `${GLYPH_PARTS[base % GLYPH_PARTS.length]}${GLYPH_PARTS[(base + 6) % GLYPH_PARTS.length]}`;
     }
 
+    function makeCategoryGlyph(agent, category) {
+      const ranked = category.prototype.map((value, index) => ({ value, index }))
+        .sort((a, b) => b.value - a.value);
+      const first = ranked[0]?.index || 0;
+      const second = ranked[1]?.index || 1;
+      const valueBand = Math.round(category.value * 6);
+      const dangerBand = Math.round(category.danger * 6);
+      const a = GLYPH_PARTS[(first * 3 + agent.id + category.count) % GLYPH_PARTS.length];
+      const b = GLYPH_PARTS[(second * 5 + agent.id + valueBand) % GLYPH_PARTS.length];
+      const c = GLYPH_PARTS[(first + second + dangerBand + agent.id) % GLYPH_PARTS.length];
+      return `${a}${b}${c}`;
+    }
+
     function makeMind(index, traits, homePlace) {
       const lexicon = Object.fromEntries(CONCEPTS.map((concept, i) => [concept, makeToken(index, concept, i)]));
       return {
@@ -528,6 +598,11 @@
         lexicon,
         meanings: Object.fromEntries(Object.entries(lexicon).map(([concept, token]) => [token, { concept, confidence: 0.62 }])),
         glyphLexicon: {},
+        categories: [],
+        categoryLexicon: {},
+        categoryGlyphs: {},
+        lastCategory: "",
+        nextCategoryIndex: 1,
         placeBeliefs: Object.fromEntries(PLACE_KEYS.map((key) => [key, {
           known: key === homePlace || ["commons", "water", "forest"].includes(key) ? 0.64 + traits.perception * 0.18 : 0.18 + rand() * 0.18,
           value: key === homePlace ? 0.72 : 0.30 + rand() * 0.28,
@@ -566,6 +641,236 @@
     function ensureGlyph(agent, concept) {
       if (!agent.mind.glyphLexicon[concept]) agent.mind.glyphLexicon[concept] = makeGlyph(agent, concept);
       return agent.mind.glyphLexicon[concept];
+    }
+
+    function signalForPlace(key) {
+      return ENVIRONMENT_SIGNALS[key] || HINT_TO_SIGNAL.self;
+    }
+
+    function noisySignal(base, amount = 0.035) {
+      return base.map((value) => clamp(value + (rand() - 0.5) * amount));
+    }
+
+    function signalDistance(a, b) {
+      return Math.sqrt(a.reduce((sum, value, index) => sum + (value - b[index]) ** 2, 0) / Math.max(1, a.length));
+    }
+
+    function debugHintForSignal(signal) {
+      const scored = DEBUG_HINTS.map(({ hint, channel }) => {
+        const index = SENSOR_CHANNELS.indexOf(channel);
+        return { hint, score: signal[index] || 0 };
+      }).sort((a, b) => b.score - a.score);
+      return scored[0].score > 0.42 ? scored[0].hint : "mixed-signal";
+    }
+
+    function blendPrototype(category, signal, weight) {
+      category.prototype = category.prototype.map((value, index) => value * (1 - weight) + signal[index] * weight);
+      category.count += 1;
+      category.hint = debugHintForSignal(category.prototype);
+    }
+
+    function inferCategory(agent, signal, outcome = {}) {
+      const candidates = agent.mind.categories
+        .map((category) => ({ category, distance: signalDistance(category.prototype, signal) }))
+        .sort((a, b) => a.distance - b.distance);
+      let category = candidates[0]?.distance < 0.30 ? candidates[0].category : null;
+      if (!category) {
+        category = {
+          id: `C${agent.id}.${agent.mind.nextCategoryIndex}`,
+          prototype: signal.slice(),
+          count: 1,
+          value: 0.28,
+          danger: 0.18,
+          hint: debugHintForSignal(signal),
+          examples: [],
+        };
+        agent.mind.nextCategoryIndex += 1;
+        agent.mind.categories.push(category);
+      } else {
+        blendPrototype(category, signal, 0.10 + Math.min(0.08, 1 / Math.max(2, category.count)));
+      }
+      category.value = clamp(category.value * 0.92 + (outcome.value ?? 0.35) * 0.08);
+      category.danger = clamp(category.danger * 0.92 + (outcome.danger ?? 0.12) * 0.08);
+      if (outcome.place) {
+        category.examples.unshift(outcome.place);
+        category.examples = [...new Set(category.examples)].slice(0, 4);
+      }
+      agent.mind.lastCategory = `${category.id} ${category.hint}`;
+      return category;
+    }
+
+    function categoryFromHint(agent, hint, placeKey = null) {
+      const base = placeKey ? signalForPlace(placeKey) : (HINT_TO_SIGNAL[hint] || HINT_TO_SIGNAL.self);
+      return inferCategory(agent, noisySignal(base, 0.020), {
+        place: placeKey || hint,
+        value: ["water", "food", "shelter", "repair", "tool", "child", "trust"].includes(hint) ? 0.72 : 0.32,
+        danger: ["danger", "storm", "illness"].includes(hint) ? 0.76 : 0.14,
+      });
+    }
+
+    function ensureCategoryWord(agent, category) {
+      if (!agent.mind.categoryLexicon[category.id]) {
+        agent.mind.categoryLexicon[category.id] = adoptCommunitySymbol(agent, category, "token") || makeToken(agent.id, category.id, category.count);
+      } else {
+        const adopted = adoptCommunitySymbol(agent, category, "token");
+        if (adopted && adopted !== agent.mind.categoryLexicon[category.id] && rand() < 0.18 + agent.trust * 0.10) {
+          agent.mind.categoryLexicon[category.id] = adopted;
+        }
+      }
+      return agent.mind.categoryLexicon[category.id];
+    }
+
+    function ensureCategoryGlyph(agent, category) {
+      if (!agent.mind.categoryGlyphs[category.id]) {
+        agent.mind.categoryGlyphs[category.id] = adoptCommunitySymbol(agent, category, "glyph") || makeCategoryGlyph(agent, category);
+      } else {
+        const adopted = adoptCommunitySymbol(agent, category, "glyph");
+        if (adopted && adopted !== agent.mind.categoryGlyphs[category.id] && rand() < 0.14 + agent.trust * 0.08) {
+          agent.mind.categoryGlyphs[category.id] = adopted;
+        }
+      }
+      return agent.mind.categoryGlyphs[category.id];
+    }
+
+    function hintMatches(hint, names) {
+      return names.some((name) => hint.includes(name) || (name === "water" && hint.includes("fluid")) || (name === "food" && hint.includes("nutrient")) || (name === "danger" && hint.includes("hazard")) || (name === "shelter" && hint.includes("shelter")) || (name === "tool" && hint.includes("material")));
+    }
+
+    function signatureKey(signal) {
+      const ranked = SENSOR_CHANNELS.map((name, index) => ({ name, value: signal[index] || 0 }))
+        .sort((a, b) => b.value - a.value)
+        .slice(0, 2);
+      return ranked.map((item) => item.name).join(":");
+    }
+
+    function symbolEntry(signal) {
+      const key = signatureKey(signal);
+      if (!world.symbolMemory[key]) {
+        world.symbolMemory[key] = {
+          key,
+          tokens: {},
+          glyphs: {},
+          strength: 0,
+          uses: 0,
+          last: world.time,
+        };
+      }
+      return world.symbolMemory[key];
+    }
+
+    function dominantSymbol(signal, kind = "token") {
+      const entry = world.symbolMemory[signatureKey(signal)];
+      if (!entry) return null;
+      const bucket = kind === "glyph" ? entry.glyphs : entry.tokens;
+      const ranked = Object.entries(bucket).sort((a, b) => b[1] - a[1]);
+      if (!ranked.length || ranked[0][1] < 0.18) return null;
+      return { symbol: ranked[0][0], strength: ranked[0][1], key: entry.key };
+    }
+
+    function registerSymbolUse(agent, kind, symbol, signal, weight = 0.35) {
+      if (!symbol || !signal) return null;
+      const entry = symbolEntry(signal);
+      const bucket = kind === "glyph" ? entry.glyphs : entry.tokens;
+      const socialMass = agent
+        ? clamp(agent.influence * 0.42 + agent.reputation * 0.18 + agent.statusCapital * 0.12 + agent.cleanliness * 0.10 + 0.18)
+        : 0.32;
+      const mass = clamp(weight * 0.58 + socialMass * 0.42);
+      bucket[symbol] = clamp((bucket[symbol] || 0) * 0.985 + mass * 0.090);
+      entry.strength = clamp(entry.strength * 0.990 + mass * 0.055);
+      entry.uses += 1;
+      entry.last = world.time;
+      return entry;
+    }
+
+    function adoptCommunitySymbol(agent, category, kind = "token") {
+      const dominant = dominantSymbol(category.prototype, kind);
+      if (!dominant) return null;
+      const known = kind === "glyph"
+        ? agent.mind.meanings[dominant.symbol] || Object.values(agent.mind.categoryGlyphs).includes(dominant.symbol)
+        : agent.mind.meanings[dominant.symbol] || Object.values(agent.mind.categoryLexicon).includes(dominant.symbol);
+      const pressure = clamp(dominant.strength * 0.42 + agent.traits.sociability * 0.16 + agent.influence * 0.18 + world.trust * 0.14 - agent.mind.uncertainty * 0.08);
+      if (known || rand() < pressure * 0.30) return dominant.symbol;
+      return null;
+    }
+
+    function decaySymbolMemory(dt) {
+      for (const entry of Object.values(world.symbolMemory)) {
+        entry.strength *= 1 - 0.00030 * dt;
+        for (const bucket of [entry.tokens, entry.glyphs]) {
+          for (const [symbol, value] of Object.entries(bucket)) {
+            const next = value * (1 - 0.00036 * dt);
+            if (next < 0.010) delete bucket[symbol];
+            else bucket[symbol] = next;
+          }
+        }
+      }
+    }
+
+    function symbolFieldStrength() {
+      return Object.values(world.symbolMemory).reduce((max, entry) => Math.max(max, entry.strength), 0);
+    }
+
+    function topSymbolSummary(kind = "token", limit = 4) {
+      const rows = [];
+      for (const entry of Object.values(world.symbolMemory)) {
+        const bucket = kind === "glyph" ? entry.glyphs : entry.tokens;
+        for (const [symbol, strength] of Object.entries(bucket)) {
+          rows.push({ symbol, strength, key: entry.key });
+        }
+      }
+      return rows.sort((a, b) => b.strength - a.strength).slice(0, limit);
+    }
+
+    function averageSkill(agent) {
+      return mean(Object.values(agent.skills));
+    }
+
+    function strongestSkillValue(agent) {
+      return Math.max(...Object.values(agent.skills));
+    }
+
+    function socialInfluence(agent) {
+      const lifeWeight = agent.lifeStage === "elder" ? 0.10 : agent.lifeStage === "offspring" ? -0.10 : 0.02;
+      return clamp(
+        agent.mentalAptitude * 0.16
+        + agent.physicalAptitude * 0.13
+        + agent.presence * 0.12
+        + agent.cleanliness * 0.11
+        + agent.reputation * 0.17
+        + agent.statusCapital * 0.12
+        + averageSkill(agent) * 0.10
+        + strongestSkillValue(agent) * 0.06
+        + agent.health * 0.06
+        + agent.trust * 0.06
+        + lifeWeight,
+      );
+    }
+
+    function updateSocialState(agent, dt) {
+      const nearWater = Math.hypot(agent.x - PLACES.water[0], agent.z - PLACES.water[1]) < 18 || Math.hypot(agent.x - PLACES.creek[0], agent.z - PLACES.creek[1]) < 18;
+      const shelter = shelterQuality(agent);
+      const scarcity = Math.max(0, 0.45 - Math.min(world.food, world.water));
+      agent.cleanliness = clamp(agent.cleanliness
+        + (nearWater ? 0.0015 : -0.00018) * dt
+        + (agent.task?.action === "rest" ? shelter * 0.00055 : 0) * dt
+        - (world.sickness * 0.00042 + scarcity * 0.00055 + (world.weather === "storm" ? 0.00016 : 0)) * dt);
+      agent.reputation = clamp(agent.reputation * (1 - 0.00006 * dt) + agent.totalReward * 0.000006 * dt);
+      agent.influence = socialInfluence(agent);
+    }
+
+    function applySocialOutcome(agent, action, success, reward) {
+      const proSocial = ["repair", "construct", "treat", "signal", "share_pattern", "nurture_child", "harvest"].includes(action);
+      const competence = Math.max(0, success - 0.38);
+      agent.reputation = clamp(agent.reputation + competence * (proSocial ? 0.016 : 0.006) + Math.max(0, reward) * 0.004);
+      agent.statusCapital = clamp(agent.statusCapital + competence * (["construct", "repair", "modify", "harvest"].includes(action) ? 0.010 : 0.004));
+      if (action === "strike") {
+        agent.reputation = clamp(agent.reputation - 0.040 - success * 0.030);
+        agent.statusCapital = clamp(agent.statusCapital + Math.max(0, world.conflict - 0.52) * 0.010 - 0.014);
+        agent.cleanliness = clamp(agent.cleanliness - 0.018);
+      }
+      if (action === "treat" || action === "nurture_child") agent.presence = clamp(agent.presence + success * 0.006);
+      if (action === "rest") agent.cleanliness = clamp(agent.cleanliness + shelterQuality(agent) * 0.014);
+      agent.influence = socialInfluence(agent);
     }
 
     function dominantPressure(agent) {
@@ -615,6 +920,10 @@
         curiosity: 0.25 + rand() * 0.65,
       };
       const skills = Object.fromEntries(ACTIONS.map((action) => [action, 0.08 + rand() * 0.10]));
+      const mentalAptitude = clamp(traits.perception * 0.34 + traits.curiosity * 0.28 + traits.resilience * 0.20 + rand() * 0.18);
+      const physicalAptitude = clamp(traits.strength * 0.36 + traits.dexterity * 0.30 + inheritedReserve * 0.18 + rand() * 0.16);
+      const presence = clamp(traits.sociability * 0.44 + traits.resilience * 0.20 + inheritedReserve * 0.10 + rand() * 0.26);
+      const statusCapital = clamp(inheritedReserve * 0.18 + traits.sociability * 0.10 + rand() * 0.16);
       return {
         id: index,
         name: NAMES[index % NAMES.length],
@@ -648,6 +957,13 @@
         carrying: false,
         gestation: 0,
         pairCooldown: 0,
+        mentalAptitude,
+        physicalAptitude,
+        presence,
+        cleanliness: 0.56 + rand() * 0.28,
+        reputation: 0.26 + rand() * 0.18,
+        statusCapital,
+        influence: 0.35,
         soundPattern: makeSoundPattern(index),
         mind: makeMind(index, traits, homePlace),
         policy: makePolicy(),
@@ -685,16 +1001,50 @@
       child.inheritedReserve = clamp((carrier.inheritedReserve + partner.inheritedReserve) * 0.5 + (rand() - 0.5) * 0.12, 0.42, 0.98);
       child.biologicalReserve = child.inheritedReserve;
       child.agingRate = clamp((carrier.agingRate + partner.agingRate) * 0.5 + (rand() - 0.5) * 0.000012, 0.000045, 0.000115);
+      child.mentalAptitude = clamp((carrier.mentalAptitude + partner.mentalAptitude) * 0.5 + (rand() - 0.5) * 0.12);
+      child.physicalAptitude = clamp((carrier.physicalAptitude + partner.physicalAptitude) * 0.5 + (rand() - 0.5) * 0.12);
+      child.presence = clamp((carrier.presence + partner.presence) * 0.5 + (rand() - 0.5) * 0.14);
+      child.cleanliness = clamp(0.64 + Math.max(carrier.cleanliness, partner.cleanliness) * 0.18);
+      child.reputation = 0.12;
+      child.statusCapital = clamp((carrier.influence + partner.influence) * 0.16 + (carrier.statusCapital + partner.statusCapital) * 0.18);
       child.cellRepairDebt = 0;
       child.skills = Object.fromEntries(ACTIONS.map((action) => [action, 0.025 + rand() * 0.045]));
+      child.influence = socialInfluence(child);
       child.known = new Set(["rest", "signal"]);
       child.mind = makeMind(child.id, child.traits, child.homePlace);
-      for (const concept of ["self", "water", "food", "shelter", "child", "danger", "trust"]) {
-        const source = rand() < 0.5 ? carrier : partner;
-        child.mind.lexicon[concept] = rand() < 0.82 ? source.mind.lexicon[concept] : makeToken(child.id, concept, world.births + concept.length);
-        child.mind.meanings[child.mind.lexicon[concept]] = { concept, confidence: 0.48 + rand() * 0.20 };
+      for (const source of [carrier, partner]) {
+        for (const sourceCategory of source.mind.categories.slice(0, 8)) {
+          if (rand() > 0.42 + source.influence * 0.24) continue;
+          const childCategory = inferCategory(child, noisySignal(sourceCategory.prototype, 0.018), {
+            place: sourceCategory.hint,
+            value: sourceCategory.value,
+            danger: sourceCategory.danger,
+          });
+          const parentToken = source.mind.categoryLexicon[sourceCategory.id];
+          if (parentToken && rand() < 0.58 + source.influence * 0.20) {
+            child.mind.categoryLexicon[childCategory.id] = parentToken;
+            child.mind.meanings[parentToken] = {
+              categoryId: childCategory.id,
+              hint: childCategory.hint,
+              confidence: 0.34 + source.influence * 0.22,
+              source: source.name,
+            };
+            registerSymbolUse(source, "token", parentToken, childCategory.prototype, source.influence);
+          }
+          const parentGlyph = source.mind.categoryGlyphs[sourceCategory.id];
+          if (parentGlyph && rand() < 0.46 + source.influence * 0.18) {
+            child.mind.categoryGlyphs[childCategory.id] = parentGlyph;
+            child.mind.meanings[parentGlyph] = {
+              categoryId: childCategory.id,
+              hint: childCategory.hint,
+              confidence: 0.30 + source.influence * 0.20,
+              source: source.name,
+            };
+            registerSymbolUse(source, "glyph", parentGlyph, childCategory.prototype, source.influence);
+          }
+        }
       }
-      think(child, `I know ${child.mind.lexicon.self}; I follow warmth and sound.`);
+      think(child, "I follow warmth, sound, and repeated marks from nearby adults.");
       child.attachment = 0.82;
       world.births += 1;
       world.agents.push(child);
@@ -733,6 +1083,7 @@
       utterances: [],
       glyphs: [],
       languageEvents: [],
+      symbolMemory: {},
       discovered: new Set(BASIC_ACTIONS),
       agents: [],
     };
@@ -851,6 +1202,7 @@
       world.utterances = [];
       world.glyphs = [];
       world.languageEvents = [];
+      world.symbolMemory = {};
       log(`population initialized without assigned roles (${count} agents)`);
     }
 
@@ -885,6 +1237,13 @@
         world.conflict,
         world.soundField,
         averageShelter(),
+        agent.mentalAptitude,
+        agent.physicalAptitude,
+        agent.presence,
+        agent.cleanliness,
+        agent.reputation,
+        agent.statusCapital,
+        agent.influence,
       ];
     }
 
@@ -946,6 +1305,7 @@
     function observePlace(agent, key, clarity = 1) {
       const belief = agent.mind.placeBeliefs[key];
       if (!belief) return;
+      const signal = noisySignal(signalForPlace(key), (1 - clarity) * 0.060 + 0.015);
       const style = PLACE_STYLE[key] || { radius: 6 };
       belief.known = clamp(belief.known + (0.045 + agent.traits.perception * 0.030) * clarity);
       belief.lastSeen = world.time;
@@ -956,6 +1316,11 @@
       if (Math.hypot(PLACES[key][0] - agent.x, PLACES[key][1] - agent.z) < style.radius + 7) {
         remember(agent, `Saw ${key.replaceAll("_", " ")}; value ${belief.value.toFixed(2)}, danger ${belief.danger.toFixed(2)}`);
       }
+      return inferCategory(agent, signal, {
+        place: key,
+        value: belief.value,
+        danger: belief.danger,
+      });
     }
 
     function bestBelievedPlace(agent, keys, mode = "value") {
@@ -975,7 +1340,7 @@
       world.languageEvents = world.languageEvents.slice(0, 8);
     }
 
-    function conceptForAction(agent, action) {
+    function hintForAction(agent, action) {
       const pressure = dominantPressure(agent);
       if (pressure.value > 0.55) return pressure.concept;
       return {
@@ -998,38 +1363,62 @@
     function hearUtterance(listener, utterance, loudness) {
       if (!listener.alive || listener.id === utterance.agentId) return;
       if (listener.mind.heard.some((item) => item.id === utterance.id)) return;
-      listener.mind.heard.unshift({ id: utterance.id, token: utterance.token, concept: utterance.concept, time: world.time, loudness });
+      const speaker = world.agents.find((agent) => agent.id === utterance.agentId);
+      const sourceInfluence = speaker ? speaker.influence : utterance.influence || 0.3;
+      const localCategory = inferCategory(listener, utterance.prototype || HINT_TO_SIGNAL.self, {
+        place: utterance.hint,
+        value: utterance.value,
+        danger: utterance.danger,
+      });
+      const adoptionPressure = clamp(loudness * 0.30 + sourceInfluence * 0.34 + world.trust * 0.10 + utterance.adoptions * 0.018 - listener.mind.uncertainty * 0.08);
+      const primaryToken = utterance.token.split(" ")[0];
+      listener.mind.heard.unshift({ id: utterance.id, token: utterance.token, categoryId: utterance.categoryId, hint: utterance.hint, time: world.time, loudness });
       listener.mind.heard.splice(5);
-      const confidence = clamp((listener.mind.meanings[utterance.token]?.confidence || 0.18) + loudness * (0.08 + world.trust * 0.08));
-      listener.mind.meanings[utterance.token] = { concept: utterance.concept, confidence };
-      if (utterance.concept === "danger" || utterance.concept === "storm") listener.fear = clamp(listener.fear + loudness * 0.12);
-      if (utterance.concept === "child") listener.attachment = clamp(listener.attachment + loudness * 0.06);
-      if (utterance.concept === "water" || utterance.concept === "food") listener.known.add("harvest");
-      if (utterance.concept === "repair" || utterance.concept === "shelter") listener.known.add("repair");
-      listener.trust = clamp(listener.trust + loudness * 0.010 - (utterance.concept === "danger" ? 0.006 : 0));
-      think(listener, `Heard ${utterance.token} from ${utterance.speaker}; I map it to ${utterance.concept}.`);
+      const confidence = clamp((listener.mind.meanings[primaryToken]?.confidence || 0.18) + adoptionPressure * (0.10 + world.trust * 0.08));
+      listener.mind.meanings[primaryToken] = { categoryId: localCategory.id, hint: localCategory.hint, confidence, source: utterance.speaker };
+      if (rand() < adoptionPressure) {
+        listener.mind.categoryLexicon[localCategory.id] = primaryToken;
+        utterance.adoptions += 1;
+        registerSymbolUse(listener, "token", primaryToken, localCategory.prototype, adoptionPressure);
+        if (speaker) speaker.reputation = clamp(speaker.reputation + 0.003 + adoptionPressure * 0.004);
+      }
+      const hint = utterance.hint || "mixed-signal";
+      if (hintMatches(hint, ["danger"]) || hint.includes("storm")) listener.fear = clamp(listener.fear + loudness * 0.12);
+      if (hint.includes("child") || hint.includes("care")) listener.attachment = clamp(listener.attachment + loudness * 0.06);
+      if (hintMatches(hint, ["water", "food"])) listener.known.add("harvest");
+      if (hintMatches(hint, ["repair", "shelter", "tool"])) listener.known.add("repair");
+      listener.trust = clamp(listener.trust + loudness * (0.006 + sourceInfluence * 0.010) - (hintMatches(hint, ["danger"]) ? 0.006 : 0));
+      think(listener, `Heard ${utterance.token} from ${utterance.speaker}; influence ${sourceInfluence.toFixed(2)} mapped it to ${localCategory.id} (${localCategory.hint}).`);
     }
 
     function emitUtterance(agent, action, success) {
-      const concept = conceptForAction(agent, action);
-      const token = ensureWord(agent, concept);
-      const second = ensureWord(agent, action === "signal" ? "follow" : action);
+      const hint = hintForAction(agent, action);
+      const category = categoryFromHint(agent, hint);
+      const token = ensureCategoryWord(agent, category);
+      const second = ensureCategoryWord(agent, categoryFromHint(agent, action === "signal" ? "follow" : action));
       const utterance = {
         id: `${agent.id}-${Math.round(world.time * 10)}-${world.utterances.length}`,
         time: world.time,
         agentId: agent.id,
         speaker: agent.name,
         token: `${token} ${second}`,
-        concept,
+        categoryId: category.id,
+        hint: category.hint,
+        prototype: category.prototype.slice(),
+        value: category.value,
+        danger: category.danger,
+        influence: agent.influence,
+        adoptions: 0,
         x: agent.x,
         z: agent.z,
-        power: clamp(0.45 + success * 0.55 + agent.traits.sociability * 0.20),
+        power: clamp(0.35 + success * 0.42 + agent.traits.sociability * 0.16 + agent.influence * 0.22),
       };
+      registerSymbolUse(agent, "token", token, category.prototype, utterance.power);
       agent.mind.lastUtterance = utterance.token;
       world.utterances.unshift(utterance);
       world.utterances = world.utterances.slice(0, 14);
-      recordLanguageEvent(`${agent.name} sounded ${utterance.token} for ${concept}`);
-      think(agent, `I made sound ${utterance.token} so others can orient to ${concept}.`);
+      recordLanguageEvent(`${agent.name} sounded ${utterance.token} for ${category.id} (${category.hint})`);
+      think(agent, `I made sound ${utterance.token} so others can orient to ${category.id} (${category.hint}).`);
       for (const other of world.agents) {
         if (other === agent || !other.alive) continue;
         const distance = Math.hypot(other.x - agent.x, other.z - agent.z);
@@ -1041,25 +1430,32 @@
       return utterance;
     }
 
-    function placeGlyph(agent, concept, placeKey) {
-      const glyph = ensureGlyph(agent, concept);
+    function placeGlyph(agent, hint, placeKey) {
+      const category = categoryFromHint(agent, hint, placeKey);
+      const glyph = ensureCategoryGlyph(agent, category);
       const base = PLACES[placeKey] || [agent.x, agent.z];
       const record = {
         id: `${agent.id}-${Math.round(world.time * 10)}-${world.glyphs.length}`,
         time: world.time,
         agentId: agent.id,
         maker: agent.name,
-        concept,
+        categoryId: category.id,
+        hint: category.hint,
+        prototype: category.prototype.slice(),
+        value: category.value,
+        danger: category.danger,
+        influence: agent.influence,
         glyph,
         x: base[0] + (rand() - 0.5) * 8,
         z: base[1] + (rand() - 0.5) * 8,
         strength: 0.72 + agent.traits.dexterity * 0.20,
       };
+      registerSymbolUse(agent, "glyph", glyph, category.prototype, record.strength);
       world.glyphs.unshift(record);
       world.glyphs = world.glyphs.slice(0, 28);
-      agent.mind.lastGlyph = `${glyph}=${concept}`;
-      recordLanguageEvent(`${agent.name} marked ${glyph} for ${concept} near ${placeKey.replaceAll("_", " ")}`);
-      think(agent, `I left mark ${glyph}; it should mean ${concept}.`);
+      agent.mind.lastGlyph = `${glyph}=${category.id}`;
+      recordLanguageEvent(`${agent.name} marked ${glyph} for ${category.id} (${category.hint}) near ${placeKey.replaceAll("_", " ")}`);
+      think(agent, `I left mark ${glyph}; it should point to ${category.id} (${category.hint}).`);
       return record;
     }
 
@@ -1067,12 +1463,21 @@
       for (const glyph of world.glyphs) {
         const distance = Math.hypot(glyph.x - agent.x, glyph.z - agent.z);
         if (distance > 14) continue;
-        const confidence = clamp((agent.mind.meanings[glyph.glyph]?.confidence || 0.16) + (0.05 + agent.traits.perception * 0.05) * glyph.strength);
-        agent.mind.meanings[glyph.glyph] = { concept: glyph.concept, confidence };
-        if (!agent.mind.glyphLexicon[glyph.concept] || confidence > 0.48) agent.mind.glyphLexicon[glyph.concept] = glyph.glyph;
-        if (glyph.concept === "danger") agent.fear = clamp(agent.fear + 0.018);
-        if (glyph.concept === "water" || glyph.concept === "food") agent.known.add("harvest");
-        if (glyph.concept === "shelter" || glyph.concept === "repair") agent.known.add("repair");
+        const localCategory = inferCategory(agent, glyph.prototype || HINT_TO_SIGNAL.self, {
+          place: glyph.hint,
+          value: glyph.value,
+          danger: glyph.danger,
+        });
+        const adoptionPressure = clamp(glyph.strength * 0.24 + glyph.influence * 0.30 + agent.traits.perception * 0.14 + world.trust * 0.08 - agent.mind.uncertainty * 0.06);
+        const confidence = clamp((agent.mind.meanings[glyph.glyph]?.confidence || 0.16) + adoptionPressure * 0.16);
+        agent.mind.meanings[glyph.glyph] = { categoryId: localCategory.id, hint: localCategory.hint, confidence, source: glyph.maker };
+        if (!agent.mind.categoryGlyphs[localCategory.id] || confidence > 0.48 || rand() < adoptionPressure) {
+          agent.mind.categoryGlyphs[localCategory.id] = glyph.glyph;
+          registerSymbolUse(agent, "glyph", glyph.glyph, localCategory.prototype, adoptionPressure * glyph.strength);
+        }
+        if (hintMatches(glyph.hint, ["danger"])) agent.fear = clamp(agent.fear + 0.018);
+        if (hintMatches(glyph.hint, ["water", "food"])) agent.known.add("harvest");
+        if (hintMatches(glyph.hint, ["shelter", "repair", "tool"])) agent.known.add("repair");
       }
     }
 
@@ -1100,8 +1505,8 @@
       }
       if (pressure.concept === "child" && pressure.value > 0.70 && agent.age >= 0.32) chosen = "nurture_child";
       if (pressure.concept === "danger" && pressure.value > 0.78 && world.conflict < 0.42) chosen = "signal";
-      if (agent.mind.heard[0]?.concept === "danger" && agent.energy > 0.30 && rand() < 0.45) chosen = "signal";
-      if (agent.mind.heard[0]?.concept === "repair" && agent.energy > 0.34 && rand() < 0.35) chosen = "repair";
+      if (hintMatches(agent.mind.heard[0]?.hint || "", ["danger"]) && agent.energy > 0.30 && rand() < 0.45) chosen = "signal";
+      if (hintMatches(agent.mind.heard[0]?.hint || "", ["repair", "shelter"]) && agent.energy > 0.34 && rand() < 0.35) chosen = "repair";
       agent.mind.plan = `${chosen.replaceAll("_", " ")} because ${pressure.concept}=${pressure.value.toFixed(2)} and policy=${score.toFixed(2)}`;
       think(agent, `Option ${action.replaceAll("_", " ")}; selected ${chosen.replaceAll("_", " ")} after predicting ${pressure.concept} pressure.`);
       return chosen;
@@ -1505,6 +1910,7 @@
       agent.totalReward += reward;
       agent.energy = clamp(agent.energy - 0.030 + (action === "rest" ? 0.020 : 0));
       agent.stress = clamp(agent.stress + world.conflict * 0.008 - world.trust * 0.004);
+      applySocialOutcome(agent, action, success, reward);
       updatePolicy(agent, reward);
       agent.task = null;
     }
@@ -1578,6 +1984,7 @@
       world.violence = clamp(world.violence - 0.0020 * dt);
       world.tools = clamp(world.tools - Math.max(0, aliveCount - 2) * 0.000025 * dt);
       world.utterances = world.utterances.filter((utterance) => world.time - utterance.time < 36);
+      decaySymbolMemory(dt);
       world.glyphs = world.glyphs
         .map((glyph) => ({ ...glyph, strength: clamp(glyph.strength - 0.000035 * dt) }))
         .filter((glyph) => glyph.strength > 0.08);
@@ -1626,6 +2033,7 @@
           log(`${agent.name} died as health/reserve collapsed under life pressure`);
           continue;
         }
+        updateSocialState(agent, dt);
         updateMind(agent, dt);
         if (!agent.task) chooseAction(agent);
         if (!agent.task) continue;
@@ -1863,7 +2271,7 @@
       for (const glyph of world.glyphs) {
         let sprite = glyphSprites.get(glyph.id);
         if (!sprite) {
-          sprite = makeTextSprite(glyph.glyph, glyph.concept === "danger" ? "#ef7067" : glyph.concept === "water" ? "#76bdf2" : glyph.concept === "food" ? "#78d989" : "#e7c766");
+          sprite = makeTextSprite(glyph.glyph, hintMatches(glyph.hint, ["danger"]) ? "#ef7067" : hintMatches(glyph.hint, ["water"]) ? "#76bdf2" : hintMatches(glyph.hint, ["food"]) ? "#78d989" : "#e7c766");
           scene.add(sprite);
           glyphSprites.set(glyph.id, sprite);
         }
@@ -1941,6 +2349,11 @@
         sickness: world.sickness,
         averageReserve: averageAgent((agent) => agent.biologicalReserve),
         averageHealth: averageAgent((agent) => agent.health),
+        averageInfluence: averageAgent((agent) => agent.influence),
+        averageCleanliness: averageAgent((agent) => agent.cleanliness),
+        symbolField: symbolFieldStrength(),
+        topTokens: topSymbolSummary("token", 5),
+        topGlyphs: topSymbolSummary("glyph", 5),
         actions: alive.map((agent) => agent.task ? agent.task.action : "choosing"),
         utterances: world.utterances.slice(0, 6),
         glyphs: world.glyphs.slice(0, 8),
@@ -1952,6 +2365,10 @@
           thought: agent.mind.thoughts[0],
           sound: agent.mind.lastUtterance,
           glyph: agent.mind.lastGlyph,
+          category: agent.mind.lastCategory,
+          influence: agent.influence,
+          reputation: agent.reputation,
+          cleanliness: agent.cleanliness,
         })),
       };
     }
@@ -1961,21 +2378,30 @@
       const memory = agent.mind.memories[0]?.text || "No durable memory yet.";
       const sound = agent.mind.lastUtterance || ensureWord(agent, "self");
       const glyph = agent.mind.lastGlyph || "none";
-      return `<div class="mind-card"><strong>${escapeHtml(agent.name)} / ${escapeHtml(agent.mind.emotion)}</strong><span>attention: ${escapeHtml(agent.mind.attention)} | motive: ${escapeHtml(agent.mind.motive)} | uncertainty ${agent.mind.uncertainty.toFixed(2)}</span><span class="thought">${escapeHtml(agent.mind.plan)}</span><span>${escapeHtml(thought)}</span><span>memory: ${escapeHtml(memory)}</span><span>sound <span class="lexeme">${escapeHtml(sound)}</span> glyph <span class="glyph-mark">${escapeHtml(glyph)}</span></span></div>`;
+      const category = agent.mind.lastCategory || "none";
+      return `<div class="mind-card"><strong>${escapeHtml(agent.name)} / ${escapeHtml(agent.mind.emotion)}</strong><span>attention: ${escapeHtml(agent.mind.attention)} | motive: ${escapeHtml(agent.mind.motive)} | uncertainty ${agent.mind.uncertainty.toFixed(2)}</span><span>influence ${agent.influence.toFixed(2)} | reputation ${agent.reputation.toFixed(2)} | cleanliness ${agent.cleanliness.toFixed(2)}</span><span>last category ${escapeHtml(category)}</span><span class="thought">${escapeHtml(agent.mind.plan)}</span><span>${escapeHtml(thought)}</span><span>memory: ${escapeHtml(memory)}</span><span>sound <span class="lexeme">${escapeHtml(sound)}</span> glyph <span class="glyph-mark">${escapeHtml(glyph)}</span></span></div>`;
     }
 
     function languageRows() {
       const rows = world.utterances.slice(0, 8).map((utterance) => (
-        `<div class="language-row"><strong>${escapeHtml(utterance.speaker)}</strong><span><span class="lexeme">${escapeHtml(utterance.token)}</span> means ${escapeHtml(utterance.concept)} | power ${utterance.power.toFixed(2)}</span></div>`
+        `<div class="language-row"><strong>${escapeHtml(utterance.speaker)}</strong><span><span class="lexeme">${escapeHtml(utterance.token)}</span> points to ${escapeHtml(utterance.categoryId)} (${escapeHtml(utterance.hint)}) | influence ${utterance.influence.toFixed(2)} | adoptions ${utterance.adoptions}</span></div>`
       ));
+      const publicTokens = topSymbolSummary("token", 3);
+      if (publicTokens.length) {
+        rows.push(`<div class="language-row"><strong>public field</strong><span>${publicTokens.map((item) => `${escapeHtml(item.symbol)} ${item.strength.toFixed(2)} ${escapeHtml(item.key)}`).join(" | ")}</span></div>`);
+      }
       if (!rows.length) rows.push("<p class=\"small\">No spoken tokens yet. Agents begin with private sound patterns and invent shared meanings through signaling.</p>");
       return rows.join("");
     }
 
     function glyphRows() {
       const rows = world.glyphs.slice(0, 10).map((glyph) => (
-        `<div class="glyph-row"><strong>${escapeHtml(glyph.maker)}</strong><span><span class="glyph-mark">${escapeHtml(glyph.glyph)}</span> means ${escapeHtml(glyph.concept)} | strength ${glyph.strength.toFixed(2)}</span></div>`
+        `<div class="glyph-row"><strong>${escapeHtml(glyph.maker)}</strong><span><span class="glyph-mark">${escapeHtml(glyph.glyph)}</span> points to ${escapeHtml(glyph.categoryId)} (${escapeHtml(glyph.hint)}) | influence ${glyph.influence.toFixed(2)} | strength ${glyph.strength.toFixed(2)}</span></div>`
       ));
+      const publicGlyphs = topSymbolSummary("glyph", 3);
+      if (publicGlyphs.length) {
+        rows.push(`<div class="glyph-row"><strong>public field</strong><span>${publicGlyphs.map((item) => `<span class="glyph-mark">${escapeHtml(item.symbol)}</span> ${item.strength.toFixed(2)} ${escapeHtml(item.key)}`).join(" | ")}</span></div>`);
+      }
       if (!rows.length) rows.push("<p class=\"small\">No persistent marks yet. Agents create marks after inspection, repair, construction, resource discovery, or danger.</p>");
       return rows.join("");
     }
@@ -1992,6 +2418,8 @@
         bar("dependents", dependents / 8, "var(--violet)"),
         bar("carrying", carrying / 5, "var(--red)"),
         bar("life reserve", averageAgent((agent) => agent.biologicalReserve), "var(--green)"),
+        bar("influence", averageAgent((agent) => agent.influence), "var(--cyan)"),
+        bar("cleanliness", averageAgent((agent) => agent.cleanliness), "var(--blue)"),
         bar("cell debt", averageAgent((agent) => agent.cellRepairDebt), "var(--red)"),
         bar("stress", averageAgent((agent) => agent.stress), "var(--red)"),
         bar("food", world.food, "var(--green)"),
@@ -2012,13 +2440,14 @@
         bar("knowledge", world.knowledge, "var(--cyan)"),
         bar("map", world.map, "var(--violet)"),
         bar("sound field", world.soundField, "var(--violet)"),
+        bar("symbol memory", symbolFieldStrength(), "var(--violet)"),
         bar("births", world.births / 8, "var(--violet)"),
       ].join("");
       els.affordances.innerHTML = ACTIONS.map((action) => bar(action.replaceAll("_", " "), world.discovered.has(action) ? 1 : 0.06, world.discovered.has(action) ? "var(--blue)" : "rgba(255,255,255,0.18)")).join("");
       els.agents.innerHTML = world.agents.map((agent) => {
         const action = agent.task ? agent.task.action : "choosing";
         const life = agent.alive ? `${agent.lifeStage}${agent.carrying ? " carrying" : agent.receptive ? " receptive" : ""}` : "dead";
-        return `<div class="agent-row"><strong>${agent.name}</strong><span>${emergentLabel(agent)}</span><span>${life} / ${action.replaceAll("_", " ")} / reserve ${agent.biologicalReserve.toFixed(2)} / reward ${agent.totalReward.toFixed(1)}</span></div>`;
+        return `<div class="agent-row"><strong>${agent.name}</strong><span>${emergentLabel(agent)}</span><span>${life} / ${action.replaceAll("_", " ")} / inf ${agent.influence.toFixed(2)} / reserve ${agent.biologicalReserve.toFixed(2)} / reward ${agent.totalReward.toFixed(1)}</span></div>`;
       }).join("");
       els.minds.innerHTML = livingAgents().slice(0, 7).map(mindCard).join("");
       els.language.innerHTML = languageRows();
@@ -2056,7 +2485,7 @@
       parts.forEach((part, index) => {
         const osc = audioContext.createOscillator();
         const gain = audioContext.createGain();
-        osc.type = utterance.concept === "danger" ? "sawtooth" : utterance.concept === "child" ? "triangle" : "sine";
+        osc.type = hintMatches(utterance.hint, ["danger"]) ? "sawtooth" : (utterance.hint || "").includes("care") ? "triangle" : "sine";
         osc.frequency.setValueAtTime(frequencyFor(part, index), start + index * 0.105);
         gain.gain.setValueAtTime(0.0001, start + index * 0.105);
         gain.gain.linearRampToValueAtTime(0.035 * utterance.power, start + index * 0.105 + 0.025);

@@ -67,11 +67,14 @@ The sandbox now adds a lightweight cognition layer. Each live agent carries:
 - imperfect private beliefs about places, value, danger, and recency;
 - current emotion, motive, attention target, uncertainty, and plan text;
 - a short thought trace and durable memory trace;
-- an invented sound lexicon that maps concepts such as water, food, danger, child, shelter, illness, and repair to local tokens;
+- private latent categories inferred from environmental sensor signatures and outcomes;
+- invented sound tokens that point to those agent-local categories;
 - learned token meanings from hearing other agents;
 - learned glyph meanings from reading marks in the world.
 
-Sounds and glyphs are grounded in consequences. A signal can teach nearby agents a token meaning, raise fear, increase attachment, unlock a relevant action, or spread attention. A glyph persists in the terrain and can teach future agents where food, water, danger, shelter, tools, or repairs matter. Optional browser audio turns emitted sound tokens into short synthesized tone sequences after the user enables audio.
+Sounds and glyphs are grounded in consequences. A signal can teach nearby agents a category meaning, raise fear, increase attachment, unlock a relevant action, or spread attention. A glyph persists in the terrain and can teach future agents that a mark points to an agent-local category such as `C4.1`; the viewer may show a debug hint such as `fluid-like` or `material-like`, but the symbol target is the category id. Optional browser audio turns emitted sound tokens into short synthesized tone sequences after the user enables audio.
+
+The sandbox also adds a first influence/convention layer. Agents now carry mental aptitude, physical aptitude, social presence, cleanliness, reputation, status capital, skill evidence, and health/trust-derived influence. Those variables affect whether other agents adopt sounds or glyphs, and repeated use accumulates into a public symbol field. A name can catch on because it has been used by reliable, high-influence agents and reinforced by outcomes, not because a single correct label is programmed into the world.
 
 ## Current balance pass
 

@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `88` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, social credit-assignment controller, social repair critic controller, multi-day maturation verifier, learned multi-day maturation controller, return-selected multi-day maturation controller, coupled social/environment maturation controller, coupled crisis repair critic controller, and coupled crisis outcome-value controller.
+The canonical runner is now wired for `89` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, social credit-assignment controller, social repair critic controller, multi-day maturation verifier, learned multi-day maturation controller, return-selected multi-day maturation controller, coupled social/environment maturation controller, coupled crisis repair critic controller, coupled crisis outcome-value controller, and coupled crisis sequence-outcome controller.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -235,9 +235,11 @@ Report 107 then adds a learned repair critic around that coupled-crisis GRU. Thi
 
 Report 108 tries that next step as a counterfactual action-value reranker. It trains on `180000` value examples and validation selects a nonzero value bias of `1.75`. Held-out evaluation still fails: crisis score stays `0.000`, resolved rate falls to `0.050`, and total score drops below the return-selected GRU. The lesson gets narrower again: the next controller needs sequence-level outcome learning, not per-step reranking.
 
+Report 109 moves the target to short repair-window plans. Validation selects plan bias `4.0`, and held-out crisis repair finally improves: crisis score rises from `0.036` to `0.304`, resolved rate rises from `0.200` to `0.500`, and coupled response rises from `0.084` to `0.434`. That is a real learned-control improvement. It is still not a full pass because environment ablation produces only a tiny coupled-response loss, so the controller has not yet proved clean social/environment dependency.
+
 ![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 
-That sandbox is a prototype for the next benchmark, not a new proof result. The important next step is to move the same pressures into closed-loop learned control with held-out worlds and targeted ablations.
+That sandbox is a prototype for the next benchmark, not a new proof result. The important next step is to make those pressures non-substitutable in closed-loop learned control with held-out worlds and targeted ablations.
 
 ## What This Could Become
 

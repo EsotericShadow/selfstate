@@ -119,6 +119,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D coupled social/environment maturation report](docs/106_ssrm_3d_coupled_social_environment_maturation_report.md): adds post-12h crises that require both environmental repair and social coordination; the designed controller resolves them, but the learned return-selected GRU fails the coupled-crisis gate.
 - [SSRM-3D coupled crisis repair critic report](docs/107_ssrm_3d_coupled_crisis_repair_critic_report.md): adds a learned repair critic around the coupled-crisis GRU; validation rejects the critic by selecting repair bias `0.0`, so the coupled-crisis failure remains.
 - [SSRM-3D coupled crisis outcome-value report](docs/108_ssrm_3d_coupled_crisis_outcome_value_report.md): trains a counterfactual action-value reranker for coupled crises; validation selects a nonzero value bias, but held-out crisis repair gets worse than the return-selected GRU.
+- [SSRM-3D coupled crisis sequence-outcome report](docs/109_ssrm_3d_coupled_crisis_sequence_outcome_report.md): trains a sequence-plan controller for coupled crises; held-out crisis repair improves sharply, but the strong social/environment ablation dependency still fails.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -1021,6 +1022,25 @@ This writes:
 - `artifacts/ssrm_3d_coupled_crisis_outcome_value_results.js`
 
 ```bash
+python3 experiments/ssrm_3d_coupled_crisis_sequence_outcome_controller.py --train-seeds 20260911,20260912,20260913,20260914,20260915,20260916 --tune-seeds 20261011,20261012,20261013 --eval-seeds 20261021,20261022,20261023,20261024,20261025 --hours 72 --step-hours 0.10 --population 14 --epochs 42 --hidden-size 64 --plan-epochs 72 --plan-hidden-size 72 --max-plan-examples 160000 --plan-bias-candidates 0.00,1.00,1.75,2.75,4.00,5.50,7.00 --device auto --trace-seed 20261021
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_base_training.csv`
+- `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_plan_training.csv`
+- `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_router_selection.csv`
+- `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_plan_selection.csv`
+- `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_eval.csv`
+- `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_summary.csv`
+- `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_ablations.csv`
+- `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_verdict.csv`
+- `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_trace.json`
+- `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_results.json`
+- `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_trace.js`
+- `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_results.js`
+
+```bash
 python3 experiments/ssrm_3d_hidden_regime_adaptation.py --seeds 20260713,20260714,20260715,20260716,20260717 --hours 16 --step-hours 0.05 --population 10 --trace-seed 20260713
 ```
 
@@ -1342,6 +1362,7 @@ The project should not ask whether an agent says it has a self. It should ask wh
 61. Tested under coupled social/environment crises where environmental repair and social coordination must both work after the 12h development gate.
 62. Tested with a learned repair critic around coupled crisis control, while rejecting supervised repair reranking if validation return turns it off.
 63. Tested with counterfactual outcome-value reranking for coupled crisis control, while rejecting validation overfit if held-out crises get worse.
+64. Tested with sequence-level outcome planning for coupled crisis control, while rejecting the strong claim if social/environment ablations are not both clean.
 
 Current stress evidence does not yet satisfy item 37. The architecture boundary stress test finds partial convergence in shared regimes, not strict architecture-wide convergence. Current horizon-pressure evidence partially supports item 38: recoverability improves with horizon, but strict convergence still does not appear.
 Current capacity evidence supports item 39, but only as a diagnostic: source-direction seeds are supplied, so this is not natural emergence.
@@ -1369,6 +1390,7 @@ Current SSRM-3D return-selected multi-day maturation evidence supports item 60 o
 Current SSRM-3D coupled social/environment maturation evidence does not satisfy item 61: the designed controller resolves the coupled crises, but the learned return-selected GRU preserves generic maturation while scoring `0.000` on crisis score and resolving only `0.100` of crises.
 Current SSRM-3D coupled crisis repair-critic evidence does not satisfy item 62: validation selects repair bias `0.0`, the repair-critic GRU keeps crisis score at `0.000`, and social/environment ablations cannot create clean crisis-score losses while the base crisis behavior is still collapsed.
 Current SSRM-3D coupled crisis outcome-value evidence does not satisfy item 63: validation selects nonzero value bias `1.75`, but held-out crisis score remains `0.000`, resolved rate falls to `0.050`, and total score drops below the return-selected GRU.
+Current SSRM-3D coupled crisis sequence-outcome evidence partially supports item 64: validation selects plan bias `4.0`, held-out crisis score rises to `0.304`, resolved rate rises to `0.500`, and coupled response rises to `0.434`, but the strong claim fails because environment ablation produces only `0.003` coupled-response loss.
 
 The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has useful learned-control precursors and a physics-first offline recurrent benchmark; gate 2 has a partial externalized-cognition precursor plus a learned tool-memory bridge; gate 3 has partial social-pressure and costly-communication precursors plus a learned social-memory bridge; gate 4 has continuity-record and learned continuity/attention precursors but is still incomplete.
 

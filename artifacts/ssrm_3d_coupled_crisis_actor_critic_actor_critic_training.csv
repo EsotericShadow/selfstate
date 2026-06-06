@@ -1,0 +1,2 @@
+episodes,crises,epochs,final_loss,final_policy_loss,final_value_loss,mean_return,return_std,mean_value_prediction,mean_abs_advantage,mean_entropy,policy_temperature,entropy_coef,value_coef,device_used,parameter_count
+12,71,4,0.11719121783971786,0.13176655769348145,0.004153331741690636,2.2555034557199427,0.4487538158888897,2.2997266992333447,0.3862354914271257,1.9885718377743882,1.0,0.008,0.45,mps,10377

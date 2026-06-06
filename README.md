@@ -121,6 +121,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D coupled crisis outcome-value report](docs/108_ssrm_3d_coupled_crisis_outcome_value_report.md): trains a counterfactual action-value reranker for coupled crises; validation selects a nonzero value bias, but held-out crisis repair gets worse than the return-selected GRU.
 - [SSRM-3D coupled crisis sequence-outcome report](docs/109_ssrm_3d_coupled_crisis_sequence_outcome_report.md): trains a sequence-plan controller for coupled crises; held-out crisis repair improves sharply, but the strong social/environment ablation dependency still fails.
 - [SSRM-3D coupled crisis environmental bottleneck report](docs/110_ssrm_3d_coupled_crisis_environment_bottleneck_report.md): makes environmental crisis repair non-substitutable; the learned overlay improves some response metrics but fails the crisis-score and ablation gates.
+- [SSRM-3D coupled crisis rollout-window report](docs/111_ssrm_3d_coupled_crisis_rollout_window_report.md): trains plan values from cloned simulator rollouts; validation rejects the overlay by selecting plan bias `0.0`, so the stricter coupled-crisis failure remains.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -1042,6 +1043,44 @@ This writes:
 - `artifacts/ssrm_3d_coupled_crisis_sequence_outcome_results.js`
 
 ```bash
+python3 experiments/ssrm_3d_coupled_crisis_environment_bottleneck_controller.py --train-seeds 20260911,20260912,20260913,20260914,20260915,20260916 --tune-seeds 20261011,20261012,20261013 --eval-seeds 20261021,20261022,20261023,20261024,20261025 --hours 72 --step-hours 0.10 --population 14 --epochs 42 --hidden-size 64 --plan-epochs 72 --plan-hidden-size 72 --max-plan-examples 160000 --plan-bias-candidates 0.00,1.00,1.75,2.75,4.00,5.50,7.00,9.00,11.00 --device auto --trace-seed 20261021
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_coupled_crisis_environment_bottleneck_base_training.csv`
+- `artifacts/ssrm_3d_coupled_crisis_environment_bottleneck_plan_training.csv`
+- `artifacts/ssrm_3d_coupled_crisis_environment_bottleneck_router_selection.csv`
+- `artifacts/ssrm_3d_coupled_crisis_environment_bottleneck_plan_selection.csv`
+- `artifacts/ssrm_3d_coupled_crisis_environment_bottleneck_eval.csv`
+- `artifacts/ssrm_3d_coupled_crisis_environment_bottleneck_summary.csv`
+- `artifacts/ssrm_3d_coupled_crisis_environment_bottleneck_ablations.csv`
+- `artifacts/ssrm_3d_coupled_crisis_environment_bottleneck_verdict.csv`
+- `artifacts/ssrm_3d_coupled_crisis_environment_bottleneck_trace.json`
+- `artifacts/ssrm_3d_coupled_crisis_environment_bottleneck_results.json`
+- `artifacts/ssrm_3d_coupled_crisis_environment_bottleneck_trace.js`
+- `artifacts/ssrm_3d_coupled_crisis_environment_bottleneck_results.js`
+
+```bash
+python3 experiments/ssrm_3d_coupled_crisis_rollout_window_controller.py --train-seeds 20260911,20260912,20260913,20260914,20260915,20260916 --tune-seeds 20261011,20261012,20261013 --eval-seeds 20261021,20261022,20261023,20261024,20261025 --hours 72 --step-hours 0.10 --population 14 --epochs 42 --hidden-size 64 --plan-epochs 72 --plan-hidden-size 72 --max-plan-examples 48000 --plan-bias-candidates 0.00,1.00,1.75,2.75,4.00,5.50,7.00,9.00,11.00 --device auto --trace-seed 20261021
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_coupled_crisis_rollout_window_base_training.csv`
+- `artifacts/ssrm_3d_coupled_crisis_rollout_window_plan_training.csv`
+- `artifacts/ssrm_3d_coupled_crisis_rollout_window_router_selection.csv`
+- `artifacts/ssrm_3d_coupled_crisis_rollout_window_plan_selection.csv`
+- `artifacts/ssrm_3d_coupled_crisis_rollout_window_eval.csv`
+- `artifacts/ssrm_3d_coupled_crisis_rollout_window_summary.csv`
+- `artifacts/ssrm_3d_coupled_crisis_rollout_window_ablations.csv`
+- `artifacts/ssrm_3d_coupled_crisis_rollout_window_verdict.csv`
+- `artifacts/ssrm_3d_coupled_crisis_rollout_window_trace.json`
+- `artifacts/ssrm_3d_coupled_crisis_rollout_window_results.json`
+- `artifacts/ssrm_3d_coupled_crisis_rollout_window_trace.js`
+- `artifacts/ssrm_3d_coupled_crisis_rollout_window_results.js`
+
+```bash
 python3 experiments/ssrm_3d_hidden_regime_adaptation.py --seeds 20260713,20260714,20260715,20260716,20260717 --hours 16 --step-hours 0.05 --population 10 --trace-seed 20260713
 ```
 
@@ -1394,6 +1433,7 @@ Current SSRM-3D coupled crisis repair-critic evidence does not satisfy item 62: 
 Current SSRM-3D coupled crisis outcome-value evidence does not satisfy item 63: validation selects nonzero value bias `1.75`, but held-out crisis score remains `0.000`, resolved rate falls to `0.050`, and total score drops below the return-selected GRU.
 Current SSRM-3D coupled crisis sequence-outcome evidence partially supports item 64: validation selects plan bias `4.0`, held-out crisis score rises to `0.304`, resolved rate rises to `0.500`, and coupled response rises to `0.434`, but the strong claim fails because environment ablation produces only `0.003` coupled-response loss.
 Current SSRM-3D coupled crisis environmental-bottleneck evidence does not satisfy item 65: validation selects plan bias `2.75`, resolved rate rises over the return-selected GRU from `0.100` to `0.250`, and coupled response rises from `0.029` to `0.160`, but held-out crisis score remains `0.000`, total score falls below the return-selected GRU, and social/environment ablations still do not create clean losses.
+Current SSRM-3D coupled crisis rollout-window evidence does not satisfy item 66: the plan-value model trains on `9248` cloned rollout examples, but validation rejects the overlay by selecting plan bias `0.0`; held-out crisis score remains `0.000`, resolved rate stays `0.100`, and social/environment ablations still do not create clean losses.
 
 The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has useful learned-control precursors and a physics-first offline recurrent benchmark; gate 2 has a partial externalized-cognition precursor plus a learned tool-memory bridge; gate 3 has partial social-pressure and costly-communication precursors plus a learned social-memory bridge; gate 4 has continuity-record and learned continuity/attention precursors but is still incomplete.
 

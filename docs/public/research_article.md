@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `90` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, social credit-assignment controller, social repair critic controller, multi-day maturation verifier, learned multi-day maturation controller, return-selected multi-day maturation controller, coupled social/environment maturation controller, coupled crisis repair critic controller, coupled crisis outcome-value controller, coupled crisis sequence-outcome controller, and coupled crisis environmental-bottleneck controller.
+The canonical runner is now wired for `91` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, social credit-assignment controller, social repair critic controller, multi-day maturation verifier, learned multi-day maturation controller, return-selected multi-day maturation controller, coupled social/environment maturation controller, coupled crisis repair critic controller, coupled crisis outcome-value controller, coupled crisis sequence-outcome controller, coupled crisis environmental-bottleneck controller, and coupled crisis rollout-window controller.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -239,9 +239,11 @@ Report 109 moves the target to short repair-window plans. Validation selects pla
 
 Report 110 makes the environmental side harder to fake. Generic environmental activity no longer counts as repair, wrong environmental actions add damage, and ablated sensors are neutralized so missing signals do not become false urgency. The designed controller still solves the stricter task, but the learned overlay fails the gate: crisis score remains `0.000`, total score falls below the return-selected GRU, and social/environment ablations still do not create clean losses. The narrow positive is that resolved rate rises from `0.100` to `0.250` and coupled response rises from `0.029` to `0.160`; the honest conclusion is that the current learned controller can be nudged, but it still does not reliably diagnose the needed environmental repair.
 
+Report 111 replaces the analytic plan target with cloned simulator rollouts. That sounds closer to the long-term field-experience idea, but the result is still negative: the plan model trains on `9248` rollout examples, validation selects plan bias `0.0`, and held-out crisis score stays `0.000`. The lesson is sharper: counterfactual rollout labels alone are not enough. The repair policy needs stronger consequence-trained action learning, active crisis memory, or diagnostic state that actually changes behavior.
+
 ![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 
-That sandbox is a prototype for the next benchmark, not a new proof result. The important next step is consequence-trained repair-window control: counterfactual rollouts, actor-critic, or model-based return learning inside the crisis world, with held-out worlds and targeted ablations.
+That sandbox is a prototype for the next benchmark, not a new proof result. The important next step is stronger consequence-trained repair control: actor-critic, model-based return learning, learned active-crisis memory, or explicit diagnostic heads inside the crisis world, with held-out worlds and targeted ablations.
 
 ## What This Could Become
 

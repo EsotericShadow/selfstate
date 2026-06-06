@@ -14,6 +14,10 @@ The claim is not that the system should merely write code. Frontier LLM coding a
 A field-experienced software engineering controller improves a frontier LLM's root-cause localization, patch choice, test strategy, review quality, and regression avoidance.
 ```
 
+## Current Research Dependency
+
+This roadmap depends on a stronger simulator result than the project has today. Report 111 is a caution: even when plan-value labels come from cloned simulator rollouts, validation can reject the overlay if it does not improve held-out action consequences. The software version should therefore be judged by real patch outcomes, hidden tests, review survival, regression reduction, and cost, not by whether the critic sounds plausible.
+
 ## Why Software Is The Direct Money Path
 
 Software has a clean feedback loop:

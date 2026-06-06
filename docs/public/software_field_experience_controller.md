@@ -90,6 +90,12 @@ It returns:
 
 That is easier to prove and safer than a fully autonomous coding agent.
 
+## What Is Not Proven Yet
+
+The current simulator does not yet prove that field-experience critics work. Report 111 is the caution: even cloned simulator rollouts can train a critic that validation rejects because it does not improve held-out consequences.
+
+For software, the controller has to prove itself on real outcomes: better patches, fewer regressions, stronger hidden-test performance, less review time, and lower debugging cost.
+
 ## What Would Prove Value
 
 The proof is a head-to-head:

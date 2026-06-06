@@ -1,0 +1,2 @@
+train_loss,pairwise_accuracy,device_used,parameter_count,train_examples,positive_examples,plan_epochs,plan_hidden_size
+0.04499490186572075,0.5239999890327454,mps,11953,9248,8776,72,72

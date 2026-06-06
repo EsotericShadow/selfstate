@@ -203,9 +203,11 @@ The newest step adds a settlement/civilization pressure layer. It moves the publ
 
 The integrated settlement policy reaches `0.812` mean civilization score. Reactive individuals fall to `0.502`, and targeted ablations for norms, role memory, future planning, building memory, social memory, and affective control all reduce score. This remains designed policy evidence, not open-ended civilization emergence.
 
-The current live sandbox then removes the replay format. It shows agents in a larger top-down browser world with multiple shelters, visually distinct resource regions, generic construct/repair/modify/strike primitives, private belief and thought traces, environment-inferred symbol categories, influence-weighted symbol adoption, invented sound tokens, persistent terrain glyphs, optional synthesized audio, abstract reproduction, carrying cost, dependent offspring, inherited biological reserve, recovery through shelter/treatment, aging, and death pressure.
+The current live sandbox then removes the replay format. It shows agents in a larger top-down browser world with multiple shelters, visually distinct resource regions, generic construct/repair/modify/strike primitives, private belief and thought traces, environment-inferred symbol categories, influence-weighted symbol adoption, invented sound tokens, persistent terrain glyphs, optional synthesized audio, abstract reproduction, carrying cost, dependent offspring, inherited biological reserve, recovery through shelter/treatment, aging, death pressure, shifting resource reliability, stale-map pressure, disease strain, social inequality, and a long-horizon development phase before delayed major shocks.
 
-![SSRM-3D open emergence cognition sandbox](assets/ssrm_3d_open_emergence_cognition.jpg)
+The newest pressure pass adds an adaptive-pressure ledger. It separates survival, ecology, infrastructure, social, and uncertainty pressure, then records adaptation evidence and adaptation quality. That makes the "becoming wise" idea testable: the next benchmark has to show better recovery under changing worlds, not just better-looking behavior in one replay.
+
+![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 
 That sandbox is a prototype for the next benchmark, not a new proof result. The important next step is to move the same pressures into closed-loop learned control with held-out worlds and targeted ablations.
 

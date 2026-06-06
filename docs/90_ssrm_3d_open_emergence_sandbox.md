@@ -76,6 +76,27 @@ Sounds and glyphs are grounded in consequences. A signal can teach nearby agents
 
 The sandbox also adds a first influence/convention layer. Agents now carry mental aptitude, physical aptitude, social presence, cleanliness, reputation, status capital, skill evidence, and health/trust-derived influence. Those variables affect whether other agents adopt sounds or glyphs, and repeated use accumulates into a public symbol field. A name can catch on because it has been used by reliable, high-influence agents and reinforced by outcomes, not because a single correct label is programmed into the world.
 
+## Long-horizon adaptation pass
+
+The sandbox now has a slower development clock. At `1x`, autonomous major shocks are locked until at least 12 simulated hours. The time slider can still accelerate the run for inspection.
+
+Before the shock gate opens, agents face gradual pressure instead of instant drama:
+
+- weather changes over hour-scale intervals;
+- soil fertility, contamination, temperature, visibility, wind, rainfall, and route hazard drift continuously;
+- resource reliability shifts, so water, food, and material gathering cannot be solved by one permanent route;
+- map knowledge can go stale unless agents keep inspecting, marking, and sharing;
+- disease strain and social inequality can rise as sanitation, scarcity, influence, and conflict change;
+- architecture, tool design, food storage, paths, waterworks, teaching tradition, and risk memory can improve or degrade;
+- hunger, thirst, aging, gestation, shelter wear, tool wear, sickness, and stress run on slower clocks;
+- an hourly development log records pressure, adaptation evidence, architecture, tool design, teaching, and average wisdom.
+
+After the 12-hour gate, major shocks such as drought, blight, epidemic, structural failure, or frontier threat can occur. This gives the world a falsifiable long-horizon shape: early development, then delayed stress that tests whether infrastructure, symbols, social transmission, and body/self-state were useful.
+
+The sandbox treats wisdom operationally. Wisdom increases through long-horizon actions such as inspecting uncertainty, repairing, constructing, modifying tools, treating illness, and sharing patterns. It can influence social weight and reserve cost, and a small amount can pass to offspring through teaching tradition and parent experience. This is not a consciousness claim; it is a measurable adaptation variable.
+
+The newest pass also adds an adaptive-pressure ledger. It reports survival, ecology, infrastructure, social, and uncertainty pressure through the JSON snapshot and HUD. The goal is to make "becoming wise" testable: agents should accumulate adaptation evidence only when they cope with shifting pressure, not when they repeat a memorized survival loop.
+
 ## Current balance pass
 
 The enlarged map needs slower life-clock constants than the smaller prototype. The current sandbox therefore uses:

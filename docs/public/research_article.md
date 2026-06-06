@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `82` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, social credit-assignment controller, and social repair critic controller.
+The canonical runner is now wired for `85` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, social credit-assignment controller, social repair critic controller, multi-day maturation verifier, learned multi-day maturation controller, and return-selected multi-day maturation controller.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -222,6 +222,12 @@ Report 98 attacks the remaining social/culture weakness. It turns social life in
 Report 99 makes that social test harsher. Different hidden social shocks now require different repair actions, and wrong repairs consume the scarce recovery window. This is a completed failed result: the GRU beats reactive, fixed-bias, and frame controls in total score, but targeted repair is only `0.287`, wrong repair is `0.713`, and social/culture ablation improves several repair metrics. The practical conclusion is that return-trained social credit assignment is now the bottleneck.
 
 Report 101 adds a learned repair critic around the Report 99 controller. It is progress but not a pass: score rises from `0.703` to `0.744`, targeted repair rises from `0.287` to `0.402`, and wrong repair falls from `0.713` to `0.598`. The claim still fails because social/culture ablation improves several repair metrics and rumor correction still collapses. The useful conclusion is sharper: the next step needs return-trained or actor-critic social repair, not only imitation-derived repair labels.
+
+Report 103 stretches the long-horizon world into a 72h maturation verifier. The world includes births, teaching, building and tool tiers, weather, ecology, disease, resource migration, culture pressure, and delayed shocks after the 12h gate. It is a designed verifier, not open-ended civilization, but it makes the overnight-scale development claim measurable.
+
+Report 104 then trains frame and GRU neural controllers from those 72h traces and runs them closed-loop on held-out worlds. The GRU preserves maturation, beats frame/reactive control, and keeps the shock gate intact. The boundary is still partial because social/culture, environment, and previous-action ablations are not clean.
+
+Report 105 adds validation-return selection around that GRU. The selected router is `social_env`, and held-out 72h worlds still mature with score `1.000`. This is progress because the adapter is selected by closed-loop world return, but it is not deep reinforcement learning and it does not solve the main weakness: total-score ablations still show that social/culture and environmental channels can be routed around.
 
 ![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 

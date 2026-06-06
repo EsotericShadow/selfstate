@@ -301,7 +301,9 @@
         <button type="button" data-event="damage">Damage Structures</button>
         <button type="button" data-event="audio">Enable Audio</button>
         <button type="button" data-event="why">Ask Why</button>
+        <button type="button" data-event="audit">Audit 12h</button>
       </div>
+      <p class="small" id="auditStatus">Audit not run.</p>
     </div>
     <div class="section">
       <h2>Agent Minds</h2>
@@ -494,6 +496,7 @@
       language: document.getElementById("language"),
       glyphs: document.getElementById("glyphs"),
       events: document.getElementById("events"),
+      auditStatus: document.getElementById("auditStatus"),
     };
 
     let seed = 20260708;
@@ -880,7 +883,7 @@
       agent.reputation = clamp(agent.reputation + competence * (proSocial ? 0.016 : 0.006) + Math.max(0, reward) * 0.004);
       agent.statusCapital = clamp(agent.statusCapital + competence * (["construct", "repair", "modify", "harvest"].includes(action) ? 0.010 : 0.004));
       const longHorizonBonus = ["inspect", "repair", "construct", "modify", "share_pattern", "treat"].includes(action) ? 1 : 0.45;
-      agent.wisdom = clamp(agent.wisdom + Math.max(0, reward) * 0.0011 * longHorizonBonus + competence * 0.00055 - Math.max(0, -reward) * 0.0012);
+      agent.wisdom = clamp(agent.wisdom + Math.max(0, reward) * 0.00032 * longHorizonBonus + competence * 0.00018 - Math.max(0, -reward) * 0.0012);
       agent.adaptation = clamp(agent.adaptation + Math.abs(reward - agent.policy.baseline) * 0.0009 + competence * 0.00065);
       agent.lessonDebt = clamp(agent.lessonDebt - competence * 0.010 + Math.max(0, -reward) * 0.006);
       if (action === "strike") {
@@ -896,8 +899,8 @@
 
     function dominantPressure(agent) {
       const pressures = [
-        { concept: "water", value: agent.thirst },
-        { concept: "food", value: agent.hunger },
+        { concept: "water", value: Math.max(agent.thirst, Math.max(0, 0.52 - world.water) * 1.45) },
+        { concept: "food", value: Math.max(agent.hunger, Math.max(0, 0.52 - world.food) * 1.35) },
         { concept: "shelter", value: Math.max(0, 0.76 - shelterQuality(agent)) },
         { concept: "danger", value: agent.fear + world.threat * 0.35 + world.violence * 0.45 + world.routeHazard * 0.20 },
         { concept: "illness", value: world.sickness + world.contamination * 0.24 + Math.max(0, 0.72 - agent.health) },
@@ -910,6 +913,17 @@
         { concept: "storm", value: world.weather === "storm" ? 0.88 : 0.12 },
       ];
       return pressures.sort((a, b) => b.value - a.value)[0];
+    }
+
+    function urgentSurvivalPressure(agent) {
+      return Math.max(
+        agent.thirst,
+        agent.hunger,
+        Math.max(0, 0.42 - world.water) * 1.45,
+        Math.max(0, 0.42 - world.food) * 1.35,
+        Math.max(0, 0.32 - agent.energy),
+        Math.max(0, 0.46 - agent.health),
+      );
     }
 
     function emotionFor(agent) {
@@ -1705,7 +1719,7 @@
         if (speaker) speaker.reputation = clamp(speaker.reputation + 0.003 + adoptionPressure * 0.004);
       }
       const hint = utterance.hint || "mixed-signal";
-      if (hintMatches(hint, ["danger"]) || hint.includes("storm")) listener.fear = clamp(listener.fear + loudness * 0.12);
+      if (hintMatches(hint, ["danger"]) || hint.includes("storm")) listener.fear = clamp(listener.fear + loudness * 0.026);
       if (hint.includes("child") || hint.includes("care")) listener.attachment = clamp(listener.attachment + loudness * 0.06);
       if (hintMatches(hint, ["water", "food"])) listener.known.add("harvest");
       if (hintMatches(hint, ["repair", "shelter", "tool"])) listener.known.add("repair");
@@ -1819,6 +1833,7 @@
 
     function deliberateChoice(agent, action, score) {
       const pressure = dominantPressure(agent);
+      const urgentSurvival = urgentSurvivalPressure(agent);
       let chosen = action;
       if (pressure.concept === "water" && pressure.value > 0.64) chosen = "harvest";
       if (pressure.concept === "food" && pressure.value > 0.66) chosen = "harvest";
@@ -1827,12 +1842,13 @@
       }
       if (pressure.concept === "tool" && pressure.value > 0.52 && agent.energy > 0.30) chosen = rand() < 0.64 ? "modify" : "construct";
       if (pressure.concept === "path" && pressure.value > 0.54 && agent.energy > 0.30) chosen = rand() < 0.60 ? "inspect" : "construct";
-      if (pressure.concept === "uncertainty" && pressure.value > 0.54 && agent.energy > 0.28) chosen = rand() < 0.72 ? "inspect" : "share_pattern";
-      if (pressure.concept === "social" && pressure.value > 0.56 && agent.energy > 0.25) chosen = rand() < 0.62 ? "signal" : "share_pattern";
+      if (pressure.concept === "uncertainty" && pressure.value > 0.54 && agent.energy > 0.28 && urgentSurvival < 0.68) chosen = rand() < 0.72 ? "inspect" : "share_pattern";
+      if (pressure.concept === "social" && pressure.value > 0.56 && agent.energy > 0.25 && urgentSurvival < 0.68) chosen = rand() < 0.62 ? "signal" : "share_pattern";
       if (pressure.concept === "child" && pressure.value > 0.70 && agent.age >= 0.32) chosen = "nurture_child";
-      if (pressure.concept === "danger" && pressure.value > 0.78 && world.conflict < 0.42) chosen = "signal";
-      if (hintMatches(agent.mind.heard[0]?.hint || "", ["danger"]) && agent.energy > 0.30 && rand() < 0.45) chosen = "signal";
+      if (pressure.concept === "danger" && pressure.value > 0.78 && world.conflict < 0.42 && urgentSurvival < 0.68) chosen = "signal";
+      if (hintMatches(agent.mind.heard[0]?.hint || "", ["danger"]) && agent.energy > 0.30 && urgentSurvival < 0.62 && rand() < 0.24) chosen = "signal";
       if (hintMatches(agent.mind.heard[0]?.hint || "", ["repair", "shelter"]) && agent.energy > 0.34 && rand() < 0.35) chosen = "repair";
+      if ((world.water < 0.22 || world.food < 0.22 || agent.thirst > 0.64 || agent.hunger > 0.64) && agent.energy > 0.18) chosen = "harvest";
       agent.mind.plan = `${chosen.replaceAll("_", " ")} because ${pressure.concept}=${pressure.value.toFixed(2)} and policy=${score.toFixed(2)}`;
       think(agent, `Option ${action.replaceAll("_", " ")}; selected ${chosen.replaceAll("_", " ")} after predicting ${pressure.concept} pressure.`);
       return chosen;
@@ -1841,6 +1857,7 @@
     function chooseAction(agent) {
       if (agent.thirst > 0.70) agent.known.add("harvest");
       if (agent.hunger > 0.70) agent.known.add("harvest");
+      if (world.food < 0.34 || world.water < 0.34) agent.known.add("harvest");
       if (agent.energy < 0.24 || agent.health < 0.46) agent.known.add("rest");
       if (agent.age < 0.32) {
         agent.known = new Set(["rest", "signal"]);
@@ -2038,7 +2055,7 @@
         const localReliability = atWater ? world.waterReliability : atFood ? world.foodReliability : atMaterial ? world.materialReliability : 0.52;
         success = clamp(effort + traits.perception * 0.20 + world.map * 0.12 + world.pathNetwork * 0.08 + localReliability * 0.08 - world.routeHazard * 0.12 - world.threat * 0.06 - world.knowledgeDrift * 0.10);
         if (atWater && (agent.thirst > agent.hunger || world.water < 0.52)) {
-          const gain = (0.010 + success * (0.024 + (world.purifier + world.waterworks) * 0.012)) * (0.68 + world.waterReliability * 0.46);
+          const gain = (0.014 + success * (0.034 + (world.purifier + world.waterworks) * 0.016)) * (0.70 + world.waterReliability * 0.50);
           world.water = clamp(world.water + gain);
           agent.thirst = clamp(agent.thirst - 0.28 * success);
           world.sickness = clamp(world.sickness - (world.purifier + world.waterworks) * 0.006 + world.contamination * 0.004);
@@ -2046,13 +2063,13 @@
           remember(agent, `Water source worked; thirst fell to ${agent.thirst.toFixed(2)}.`);
           reward = gain * 8.5 - 0.16;
         } else if (atMaterial && (world.materials < 0.62 || world.tools < 0.44)) {
-          const gain = (0.010 + success * (0.026 + world.toolDesign * 0.010)) * (0.68 + world.materialReliability * 0.44);
+          const gain = (0.012 + success * (0.030 + world.toolDesign * 0.012)) * (0.68 + world.materialReliability * 0.44);
           world.materials = clamp(world.materials + gain);
           if (rand() < 0.16 + traits.dexterity * 0.10) placeGlyph(agent, "tool", nearestPlaceKey(agent).key);
           remember(agent, `Material gathered; tools/material options improved.`);
           reward = gain * 8.0 - 0.18;
         } else if (atFood) {
-          const gain = (0.010 + success * (0.024 + world.garden * 0.012 + world.soilFertility * 0.006)) * (0.66 + world.foodReliability * 0.48);
+          const gain = (0.014 + success * (0.034 + world.garden * 0.016 + world.soilFertility * 0.008)) * (0.70 + world.foodReliability * 0.50);
           world.food = clamp(world.food + gain);
           world.foodStorage = clamp(world.foodStorage + Math.max(0, gain - 0.020) * 0.10);
           agent.hunger = clamp(agent.hunger - 0.26 * success);
@@ -2193,7 +2210,7 @@
             other.known.add(topAction);
           }
         }
-        reward = success * 0.75 - world.threat * 0.08;
+        reward = success * 0.42 - world.threat * 0.08 - Math.max(0, world.soundField - 0.44) * 0.10;
         if (rand() < 0.012) log(`${agent.name} used body sound ${utterance.token}; nearby agents updated attention`);
       } else if (action === "pair_bond") {
         const partner = agent.task.partnerId === null || agent.task.partnerId === undefined
@@ -2342,8 +2359,8 @@
       maybeMajorShock();
       maybeDevelopmentLog();
       const aliveCount = livingAgents().length;
-      world.food = clamp(world.food - aliveCount * 0.0000060 * dt + world.garden * world.soilFertility * world.foodReliability * 0.000060 * dt + world.foodStorage * 0.000018 * dt - world.contamination * 0.000010 * dt - world.resourceMigration * 0.000003 * dt);
-      world.water = clamp(world.water - aliveCount * 0.0000068 * dt + (world.purifier + world.waterworks) * world.waterReliability * 0.000052 * dt + world.rainfall * 0.000018 * dt - world.contamination * 0.000014 * dt);
+      world.food = clamp(world.food - aliveCount * 0.0000046 * dt + world.garden * world.soilFertility * world.foodReliability * 0.000145 * dt + world.foodStorage * 0.000026 * dt - world.contamination * 0.000010 * dt - world.resourceMigration * 0.000002 * dt);
+      world.water = clamp(world.water - aliveCount * 0.0000050 * dt + (world.purifier + world.waterworks) * world.waterReliability * 0.000118 * dt + world.rainfall * 0.000026 * dt - world.contamination * 0.000012 * dt);
       world.sickness = clamp(world.sickness + (world.weather === "storm" ? 0.000030 : 0.000007) * dt + world.contamination * 0.000025 * dt + world.diseaseStrain * 0.000024 * dt - (world.purifier + world.waterworks + world.teachingTradition) * 0.000028 * dt);
       world.threat = clamp(world.threat + (world.routeHazard * 0.000018 + world.knowledgeDrift * 0.000010 + (majorShockUnlocked() ? 0.000006 : 0)) * dt - (world.map + world.riskMemory + world.pathNetwork) * 0.000022 * dt);
       world.conflict = clamp(world.conflict + Math.max(0, 0.38 - Math.min(world.food, world.water)) * 0.00022 * dt + world.contamination * 0.000035 * dt + world.socialInequality * 0.000035 * dt - world.trust * 0.00018 * dt - world.teachingTradition * 0.00006 * dt);
@@ -2392,7 +2409,12 @@
         agent.hunger = clamp(agent.hunger + (0.000020 + temperatureCost + agent.stress * 0.000004) * dt - (world.food * 0.000014 + world.foodStorage * 0.000006) * dt);
         agent.thirst = clamp(agent.thirst + (0.000025 + Math.max(0, world.temperature - 0.62) * 0.000026 + agent.stress * 0.000004) * dt - (world.water * 0.000018 + world.waterworks * 0.000006) * dt);
         agent.health = clamp(agent.health - Math.max(0, agent.hunger - 0.91) * 0.00055 * dt - Math.max(0, agent.thirst - 0.91) * 0.00070 * dt - (world.sickness + world.contamination * 0.28 + world.diseaseStrain * 0.12) * 0.000040 * dt);
-        agent.fear = clamp(agent.fear + (world.threat + world.routeHazard * 0.28 + world.adaptivePressure * 0.08) * 0.000060 * dt - shelterQuality(agent) * 0.000075 * dt - world.riskMemory * 0.000020 * dt);
+        agent.fear = clamp(
+          agent.fear * (1 - (0.000030 + world.trust * 0.000018 + world.riskMemory * 0.000018) * dt)
+          + (world.threat + world.routeHazard * 0.28 + world.adaptivePressure * 0.08) * 0.000052 * dt
+          - shelterQuality(agent) * 0.000085 * dt
+          - world.riskMemory * 0.000026 * dt,
+        );
         const qualityPenalty = Math.max(0, 0.40 - shelterQuality(agent)) + Math.max(0, world.conflict - 0.42) + Math.max(0, world.sickness - 0.38) + Math.max(0, world.contamination - 0.40) * 0.50 + Math.max(0, world.routeHazard - 0.45) * 0.35 + world.knowledgeDrift * 0.16 + world.socialInequality * 0.10;
         const burdenPenalty = (agent.carrying ? 0.55 : 0) + (agent.lifeStage === "offspring" ? 0.35 : 0) + (agent.lifeStage === "elder" ? 0.45 : 0);
         const scarcityPenalty = Math.max(0, agent.hunger - 0.74) * 1.55 + Math.max(0, agent.thirst - 0.74) * 1.70;
@@ -2968,6 +2990,19 @@
         } else if (event === "why") {
           const agent = world.agents.reduce((best, item) => (item.totalReward > best.totalReward ? item : best), world.agents[0]);
           log(`${agent.name}: ${agent.lastWhy}`);
+        } else if (event === "audit") {
+          button.disabled = true;
+          button.textContent = "Auditing";
+          const result = longHorizonAudit({ restorePlaying: false });
+          document.body.dataset.ssrmAudit = JSON.stringify(result);
+          const final = result.checkpoints[result.checkpoints.length - 1];
+          const summary = result.verdict.passed
+            ? `12h audit passed: no major shock before gate; ${final.alive} alive at ${final.hours.toFixed(1)}h after ${final.majorShockCount} shock(s).`
+            : `12h audit failed: ${JSON.stringify(result.verdict)}`;
+          els.auditStatus.textContent = summary;
+          log(summary);
+          button.textContent = "Audit 12h";
+          button.disabled = false;
         }
       });
     });
@@ -2985,18 +3020,70 @@
     let last = performance.now();
     let hudTimer = 0;
 
+    function stepSimulationSeconds(seconds, maxStep = 0.08) {
+      let remaining = Math.max(0, Number(seconds) || 0);
+      const stepLimit = clamp(Number(maxStep) || 0.08, 0.02, 0.25);
+      while (remaining > 0) {
+        const step = Math.min(stepLimit, remaining);
+        stepWorld(step);
+        remaining -= step;
+      }
+      return snapshotWorld();
+    }
+
+    function refreshSimulationView() {
+      updateScene();
+      updateHud();
+      renderer.render(scene, camera);
+    }
+
+    function longHorizonAudit(options = {}) {
+      const previousPlaying = playing;
+      playing = false;
+      if (options.reset !== false) {
+        resetPopulation(Number(els.population.value));
+        log("generic action primitives online; no roles assigned");
+      }
+      const checkpoints = options.checkpoints || [1, 6, 12, 12.5, 14.5];
+      const maxStep = options.maxStep || 0.08;
+      const rows = [];
+      for (const targetHour of checkpoints) {
+        const targetSeconds = Math.max(0, Number(targetHour) || 0) * HOUR;
+        stepSimulationSeconds(Math.max(0, targetSeconds - world.time), maxStep);
+        rows.push({ label: `${targetHour}h`, ...snapshotWorld() });
+      }
+      refreshSimulationView();
+      last = performance.now();
+      playing = options.restorePlaying === false ? false : previousPlaying;
+      const beforeGate = rows.filter((row) => row.hours < MAJOR_EVENT_DELAY / HOUR - 0.0001);
+      const atGate = rows.find((row) => row.hours >= 12 && row.hours < 12.01);
+      const afterGate = rows.filter((row) => row.hours >= 12.5);
+      const latest = rows[rows.length - 1] || snapshotWorld();
+      const verdict = {
+        passed: Boolean(
+          rows.length
+          && beforeGate.every((row) => row.majorShockCount === 0 && row.majorShockUnlocked === false)
+          && (!atGate || atGate.majorShockCount === 0)
+          && latest.majorShockCount >= 1
+          && latest.adaptationEvidence > 0.02
+          && latest.alive > 0
+        ),
+        noMajorShockBefore12h: beforeGate.every((row) => row.majorShockCount === 0 && row.majorShockUnlocked === false),
+        noMajorShockAtGate: !atGate || atGate.majorShockCount === 0,
+        postGateShockOccurred: afterGate.some((row) => row.majorShockCount >= 1),
+        adaptationEvidenceAccumulated: latest.adaptationEvidence > 0.02,
+        populationSurvived: latest.alive > 0,
+      };
+      return { verdict, checkpoints: rows };
+    }
+
     function animate(now) {
       requestAnimationFrame(animate);
       const realDt = Math.min(0.08, (now - last) / 1000);
       last = now;
       if (playing) {
         const simDt = realDt * Number(els.timeScale.value);
-        let remaining = simDt;
-        while (remaining > 0) {
-          const step = Math.min(0.08, remaining);
-          stepWorld(step);
-          remaining -= step;
-        }
+        stepSimulationSeconds(simDt);
       }
       hudTimer += realDt;
       updateScene();
@@ -3025,18 +3112,17 @@
       snapshot() {
         return snapshotWorld();
       },
-      stepSeconds(seconds) {
-        let remaining = Math.max(0, Math.min(3600, Number(seconds) || 0));
-        while (remaining > 0) {
-          const step = Math.min(0.08, remaining);
-          stepWorld(step);
-          remaining -= step;
-        }
-        updateScene();
-        updateHud();
-        renderer.render(scene, camera);
+      setPlaying(value) {
+        playing = Boolean(value);
+        last = performance.now();
+        return playing;
+      },
+      stepSeconds(seconds, options = {}) {
+        stepSimulationSeconds(Math.max(0, Math.min(3600, Number(seconds) || 0)), options.maxStep || 0.08);
+        refreshSimulationView();
         return this.snapshot();
       },
+      longHorizonAudit,
     };
     requestAnimationFrame(animate);
   </script>

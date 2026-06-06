@@ -97,6 +97,8 @@ The sandbox treats wisdom operationally. Wisdom increases through long-horizon a
 
 The newest pass also adds an adaptive-pressure ledger. It reports survival, ecology, infrastructure, social, and uncertainty pressure through the JSON snapshot and HUD. The goal is to make "becoming wise" testable: agents should accumulate adaptation evidence only when they cope with shifting pressure, not when they repeat a memorized survival loop.
 
+The page also exposes `window.ssrmOpenEmergence.longHorizonAudit()` and an `Audit 12h` intervention button for browser-side verification. The audit advances the live sandbox to `1h`, `6h`, `12h`, `12.5h`, and `14.5h` checkpoints and returns a verdict for the shock gate, post-gate shock, accumulated adaptation evidence, and population survival.
+
 ## Current balance pass
 
 The enlarged map needs slower life-clock constants than the smaller prototype. The current sandbox therefore uses:

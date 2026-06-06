@@ -146,3 +146,46 @@ across generations: partial skill/symbol/wisdom transmission
 ```
 
 It does not prove selfhood or consciousness.
+
+## Browser audit hook
+
+The visualization now exposes a machine-readable audit helper:
+
+```js
+window.ssrmOpenEmergence.longHorizonAudit()
+```
+
+The HUD also includes an `Audit 12h` intervention button. It runs the same helper, pauses the simulation at the final checkpoint, writes the JSON result to `document.body.dataset.ssrmAudit`, and shows a short pass/fail summary.
+
+The helper pauses animation, optionally resets the population, advances the same simulation stepper to fixed checkpoints, refreshes the viewer, and returns:
+
+- checkpoint snapshots at `1h`, `6h`, `12h`, `12.5h`, and `14.5h`;
+- a verdict that no major shock occurred before `12h`;
+- a verdict that no major shock occurred exactly at the `12h` gate;
+- a verdict that a post-gate major shock occurred by the final checkpoint;
+- a verdict that adaptation evidence accumulated;
+- a verdict that at least one agent survived.
+
+This is a browser-side audit of the live sandbox. It is stronger than watching the animation by eye, but it is still not the final scientific test. The next stronger version should move the same long-horizon pressure schedule into a headless multi-seed benchmark with ablations.
+
+## Current browser-audit evidence
+
+The tuned browser audit passed on the live page after the survival-arbitration fix.
+
+| checkpoint | alive | major shocks | food | water | architecture | tool design | adaptation evidence |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| `1h` | 10 | 0 | 0.763 | 0.832 | 0.261 | 0.208 | 0.098 |
+| `6h` | 10 | 0 | 0.439 | 0.707 | 0.183 | 0.302 | 0.141 |
+| `12h` | 10 | 0 | 0.308 | 0.400 | 0.275 | 0.731 | 0.438 |
+| `12.5h` | 10 | 0 | 0.301 | 0.392 | 0.280 | 0.748 | 0.458 |
+| `14.5h` | 10 | 1 | 0.355 | 0.261 | 0.443 | 0.839 | 0.632 |
+
+Verdict:
+
+- no major shock occurred before the 12h gate;
+- no major shock occurred at the 12h gate;
+- one post-gate major shock occurred by 14.5h;
+- all 10 agents survived to 14.5h;
+- adaptation evidence, architecture, and tool design increased across the run.
+
+This verifies the current browser sandbox shape. It does not replace the needed headless multi-seed benchmark.

@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import random
-from typing import List
+from typing import Callable, List, Optional
 
 from .environment import clamp, living, mean
 from .models import Agent, Condition, World
@@ -215,10 +215,24 @@ def apply_action(agent: Agent, world: World, agents: List[Agent], condition: Con
     agent.stress = clamp(agent.stress + world.adaptive_pressure * 0.006 * dt + world.conflict * 0.010 * dt - world.culture * 0.006 * dt)
 
 
-def update_agents(world: World, agents: List[Agent], condition: Condition, dt: float, rng: random.Random) -> None:
+ActionSelector = Callable[[Agent, World, Condition, random.Random], str]
+ActionRecorder = Callable[[Agent, str], None]
+
+
+def update_agents(
+    world: World,
+    agents: List[Agent],
+    condition: Condition,
+    dt: float,
+    rng: random.Random,
+    action_selector: Optional[ActionSelector] = None,
+    action_recorder: Optional[ActionRecorder] = None,
+) -> None:
     for agent in living(agents):
         agent.age_hours += dt
-        action = choose_action(agent, world, condition, rng)
+        action = action_selector(agent, world, condition, rng) if action_selector else choose_action(agent, world, condition, rng)
+        if action_recorder:
+            action_recorder(agent, action)
         apply_action(agent, world, agents, condition, action, dt, rng)
 
     for agent in living(agents):

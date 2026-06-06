@@ -113,6 +113,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D social repair critic controller report](docs/101_ssrm_3d_social_repair_critic_controller_report.md): adds a learned repair critic around the Report 99 controller. It improves targeted repair and opportunity score, but the strong claim still fails because social/culture ablation remains unstable.
 - [Software field-experience controller plan](docs/102_software_field_experience_controller_plan.md): records the most direct commercial path: train consequence-aware software engineering critics that make frontier LLM coding agents better at root-cause repair, test strategy, regression avoidance, and code review.
 - [SSRM-3D multi-day maturation report](docs/103_ssrm_3d_multiday_maturation_report.md): extends the 12h shock-gated world into a 72h modular verifier with weather/ecology/disease/resource migration, building and tool tiers, births, teaching-dependent knowledge transfer, culture/symbol pressure, and targeted ablations.
+- [SSRM-3D learned multi-day maturation controller report](docs/104_ssrm_3d_learned_multiday_maturation_controller_report.md): trains frame and GRU neural controllers from 72h maturation traces and evaluates them closed-loop; the GRU preserves the long-run development behavior and beats frame/reactive controls, but social/environment/previous-action ablations remain weak.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -927,6 +928,22 @@ This writes:
 - `visualizations/ssrm_3d_multiday_maturation.html` replays the multi-day trace when served from the repo root.
 
 ```bash
+python3 experiments/ssrm_3d_learned_multiday_maturation_controller.py --train-seeds 20260911,20260912,20260913,20260914,20260915,20260916 --eval-seeds 20260921,20260922,20260923,20260924,20260925 --hours 72 --step-hours 0.10 --population 14 --epochs 42 --hidden-size 64 --device auto --trace-seed 20260921
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_learned_multiday_maturation_training.csv`
+- `artifacts/ssrm_3d_learned_multiday_maturation_eval.csv`
+- `artifacts/ssrm_3d_learned_multiday_maturation_summary.csv`
+- `artifacts/ssrm_3d_learned_multiday_maturation_ablations.csv`
+- `artifacts/ssrm_3d_learned_multiday_maturation_verdict.csv`
+- `artifacts/ssrm_3d_learned_multiday_maturation_trace.json`
+- `artifacts/ssrm_3d_learned_multiday_maturation_results.json`
+- `artifacts/ssrm_3d_learned_multiday_maturation_trace.js`
+- `artifacts/ssrm_3d_learned_multiday_maturation_results.js`
+
+```bash
 python3 experiments/ssrm_3d_hidden_regime_adaptation.py --seeds 20260713,20260714,20260715,20260716,20260717 --hours 16 --step-hours 0.05 --population 10 --trace-seed 20260713
 ```
 
@@ -1243,6 +1260,7 @@ The project should not ask whether an agent says it has a self. It should ask wh
 56. Pressured by structured perception, sleep, illness, weather, maintenance, contracts, threats, ecology, injury, skill, care, loss, and affective-control layers only when each variable changes control.
 57. Recoverable from physics-derived sensor streams in a modular embodied world without scenario labels, while still requiring closed-loop learned control before the stronger claim.
 58. Sustained across a multi-day maturation world where a population develops for 12h before major shocks, then adapts through weather, disease, resource migration, building/tool tiers, births, teaching, culture, and post-gate shocks with targeted ablations.
+59. Recoverable in learned closed-loop action selection over the multi-day maturation world, while preserving the distinction between imitation, return training, and deep RL.
 
 Current stress evidence does not yet satisfy item 37. The architecture boundary stress test finds partial convergence in shared regimes, not strict architecture-wide convergence. Current horizon-pressure evidence partially supports item 38: recoverability improves with horizon, but strict convergence still does not appear.
 Current capacity evidence supports item 39, but only as a diagnostic: source-direction seeds are supplied, so this is not natural emergence.
@@ -1265,6 +1283,7 @@ Current SSRM-3D learned-integration evidence supports item 55 only as a designed
 Current SSRM-3D pressure-layer evidence supports item 56 as designed precursors: structured perception removes omniscient world-state access; day/night sleep-rest shows that rest is rejected in daylight control but becomes useful under fatigue debt, darkness, shelter timing, guarded sleep, and interruption continuity; illness/sanitation shows that hunger/thirst, latent infection, contamination, quarantine/care, immunity, and continuity matter only in matching pressure regimes; weather/exposure shows that cold, heat, rain, wind, drought, shelter, fire/light, water planning, and continuity matter only when external conditions change future capability; tool/shelter degradation shows that marker wear, shelter damage, alarm/cache decay, inspection, repair, spare parts, and continuity matter only when persistent infrastructure decay changes future control; social trust/contracts shows that promises, tool return, warnings, sharing, repair debt, trust updates, and continuity matter only when delayed social consequences change future options; predator/threat agents show that sound/scent traces, vulnerability, stealth, shelter, alarms, social warning, and continuity matter only when trackers exploit them; resource ecology shows that regrowth, depletion, spoilage, migration, restraint, caches, sharing, territory, and continuity matter only when delayed resource consequences change future options; injury/disability adaptation shows that mobility loss, degraded senses, infection risk, repair, help, tools, routes, and continuity matter only when changed capability changes future action feasibility; development/skill learning shows that practice, fatigue, injury retraining, transfer, teaching, tools, goal feasibility, and continuity matter only when changing competence changes future action feasibility; dependent care shows that fragile companions, identity memory, protection, sharing, repair, teaching, shelter coordination, promises, social trust, priority arbitration, and continuity matter only when another persistent agent changes future options; irreversible loss shows that permanent tool, shelter, relationship, memory, and option-space loss matters only when future options cannot simply be restored; and affective control shows that fear, stress, trust, frustration, affiliation, curiosity, and guilt analogues matter only when compact summaries change attention, memory, risk, communication, repair, inspection, social access, or continuity.
 Current SSRM-3D physics-first evidence supports item 57 only as a foundation: a modular C++ kernel produces physics-derived traces, PyTorch RNN/GRU/LSTM models learn held-out decision structure without scenario labels, and ablations expose learned dependencies on self-state, position/motion, audio, user proposal, vision, and weather inputs. It is not closed-loop deep reinforcement learning yet.
 Current SSRM-3D multi-day maturation evidence supports item 58 only as a designed verifier: a modular headless world runs 72 simulated hours, locks major shocks until after 12h, records births and lineage, improves architecture and tools, and shows targeted losses when teaching, risk memory, infrastructure memory, tool improvement, social learning, environmental sensing, or all development channels are removed. It is not open-ended civilization or trained deep RL.
+Current SSRM-3D learned multi-day maturation evidence supports item 59 only as an imitation-control precursor: a GRU trained on 72h traces acts closed-loop for held-out 72h worlds, preserves the shock gate, matches the designed score, and beats frame/reactive controls. The strong ablation claim remains partial because social/culture, environment, and previous-action channels do not all show clean losses.
 
 The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has useful learned-control precursors and a physics-first offline recurrent benchmark; gate 2 has a partial externalized-cognition precursor plus a learned tool-memory bridge; gate 3 has partial social-pressure and costly-communication precursors plus a learned social-memory bridge; gate 4 has continuity-record and learned continuity/attention precursors but is still incomplete.
 

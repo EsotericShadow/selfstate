@@ -58,6 +58,19 @@ The current action layer is deliberately primitive:
 
 Those primitives are not social roles. For example, `construct` can improve a shelter, garden, purifier, workshop, or tool cache depending on material availability and world need. `strike` can damage a nearby agent or a structure, and can become lethal under repeated conflict, but it also lowers trust and raises conflict.
 
+## Current balance pass
+
+The enlarged map needs slower life-clock constants than the smaller prototype. The current sandbox therefore uses:
+
+- longer inherited biological-reserve time constants;
+- lower passive hunger, thirst, sickness, shelter-wear, and tool-wear rates;
+- emergency harvesting that routes agents to the nearest relevant water, food, or material source;
+- rest and treatment paths that repair health, stress, and cell-repair debt;
+- stricter pair-bond/reproduction conditions so dependents appear after a viable settlement exists;
+- strike suppression under low-conflict conditions, while still allowing violence when scarcity, fear, or conflict actually rise.
+
+This keeps death possible without causing immediate whole-population collapse before agents can learn or specialize.
+
 ## What this tests informally
 
 The sandbox is useful for design pressure, not final evidence. It tests whether the public-facing world can expose control-relevant life functions:

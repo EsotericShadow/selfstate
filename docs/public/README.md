@@ -180,7 +180,7 @@ The screenshots below show the actual visualization style used by the current re
 
 The point is not visual realism. The point is pressure realism: persistent conditions that change what the agent should do.
 
-The current live sandbox goes one step further than replay: it runs browser-side agents with online neural action policies in a larger top-down world with multiple shelters, visually distinct resource regions, generic construct/repair/modify/strike primitives, body-made sounds, abstract reproduction, dependent offspring, inherited reserve, aging, and death pressure.
+The current live sandbox goes one step further than replay: it runs browser-side agents with online neural action policies in a larger top-down world with multiple shelters, visually distinct resource regions, generic construct/repair/modify/strike primitives, body-made sounds, abstract reproduction, dependent offspring, inherited reserve, recovery through shelter/treatment, aging, and death pressure.
 
 ![SSRM-3D open emergence sandbox](assets/ssrm_3d_open_emergence.jpg)
 

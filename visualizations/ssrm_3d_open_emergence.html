@@ -428,7 +428,7 @@
       const angle = rand() * Math.PI * 2;
       const radius = 9 + rand() * 8;
       const homePlace = ["home_shelter", "ridge_shelter", "grove_shelter"][index % 3];
-      const inheritedReserve = 0.72 + rand() * 0.24;
+      const inheritedReserve = 0.80 + rand() * 0.18;
       const traits = {
         strength: 0.25 + rand() * 0.65,
         dexterity: 0.25 + rand() * 0.65,
@@ -446,7 +446,7 @@
         lifeStage: "adult",
         biologicalReserve: inheritedReserve,
         inheritedReserve,
-        agingRate: 0.00052 + rand() * 0.00026,
+        agingRate: 0.000055 + rand() * 0.000045,
         cellRepairDebt: 0,
         accumulatedStress: 0,
         parentIds: [],
@@ -459,11 +459,11 @@
         traits,
         skills,
         known: new Set(BASIC_ACTIONS),
-        health: 0.82 + rand() * 0.12,
+        health: 0.86 + rand() * 0.10,
         energy: 0.72 + rand() * 0.18,
-        hunger: 0.25 + rand() * 0.18,
-        thirst: 0.25 + rand() * 0.18,
-        stress: 0.16 + rand() * 0.12,
+        hunger: 0.20 + rand() * 0.14,
+        thirst: 0.20 + rand() * 0.14,
+        stress: 0.12 + rand() * 0.10,
         fear: 0.12 + rand() * 0.12,
         trust: 0.46 + rand() * 0.12,
         attachment: 0.40 + rand() * 0.18,
@@ -499,14 +499,14 @@
       child.tx = child.x;
       child.tz = child.z;
       child.speed = 1.1;
-      child.health = 0.70 + rand() * 0.16;
-      child.energy = 0.54 + rand() * 0.12;
-      child.hunger = 0.46 + rand() * 0.16;
-      child.thirst = 0.46 + rand() * 0.16;
+      child.health = 0.78 + rand() * 0.12;
+      child.energy = 0.60 + rand() * 0.14;
+      child.hunger = 0.36 + rand() * 0.12;
+      child.thirst = 0.36 + rand() * 0.12;
       child.traits = Object.fromEntries(Object.keys(child.traits).map((key) => [key, clamp((carrier.traits[key] + partner.traits[key]) * 0.5 + (rand() - 0.5) * 0.12, 0.12, 0.94)]));
       child.inheritedReserve = clamp((carrier.inheritedReserve + partner.inheritedReserve) * 0.5 + (rand() - 0.5) * 0.12, 0.42, 0.98);
       child.biologicalReserve = child.inheritedReserve;
-      child.agingRate = clamp((carrier.agingRate + partner.agingRate) * 0.5 + (rand() - 0.5) * 0.00008, 0.00042, 0.00088);
+      child.agingRate = clamp((carrier.agingRate + partner.agingRate) * 0.5 + (rand() - 0.5) * 0.000012, 0.000045, 0.000115);
       child.cellRepairDebt = 0;
       child.skills = Object.fromEntries(ACTIONS.map((action) => [action, 0.025 + rand() * 0.045]));
       child.known = new Set(["rest", "signal"]);
@@ -522,26 +522,26 @@
       time: 0,
       weather: "clear",
       weatherTimer: 0,
-      food: 0.74,
-      water: 0.74,
-      materials: 0.48,
-      medicine: 0.30,
-      tools: 0.30,
-      violence: 0.04,
+      food: 0.82,
+      water: 0.82,
+      materials: 0.58,
+      medicine: 0.38,
+      tools: 0.38,
+      violence: 0.025,
       shelters: {
-        home_shelter: 0.36,
-        ridge_shelter: 0.24,
-        grove_shelter: 0.22,
+        home_shelter: 0.50,
+        ridge_shelter: 0.42,
+        grove_shelter: 0.42,
       },
-      purifier: 0.14,
-      garden: 0.20,
-      workshop: 0.14,
-      knowledge: 0.10,
-      map: 0.08,
-      conflict: 0.12,
-      sickness: 0.14,
-      threat: 0.15,
-      trust: 0.52,
+      purifier: 0.24,
+      garden: 0.28,
+      workshop: 0.22,
+      knowledge: 0.12,
+      map: 0.12,
+      conflict: 0.08,
+      sickness: 0.10,
+      threat: 0.12,
+      trust: 0.58,
       soundField: 0.0,
       births: 0,
       events: [],
@@ -561,10 +561,17 @@
       return Object.entries(world.shelters).reduce((best, item) => (item[1] < best[1] ? item : best), ["home_shelter", world.shelters.home_shelter])[0];
     }
 
+    function nearestPlace(agent, keys) {
+      return keys
+        .map((key) => ({ place: PLACES[key], distance: Math.hypot(PLACES[key][0] - agent.x, PLACES[key][1] - agent.z) }))
+        .sort((a, b) => a.distance - b.distance)[0].place;
+    }
+
     function harvestPlace(agent) {
-      if (agent.thirst > agent.hunger + 0.08 || world.water < 0.40) return rand() < 0.62 ? PLACES.water : PLACES.creek;
-      if (agent.hunger > 0.55 || world.food < 0.45) return rand() < 0.62 ? PLACES.forest : PLACES.garden;
-      return rand() < 0.42 ? PLACES.mineral_field : rand() < 0.70 ? PLACES.forest : PLACES.creek;
+      if (agent.thirst > 0.68 && (agent.thirst >= agent.hunger - 0.10 || world.water < 0.42)) return nearestPlace(agent, ["water", "creek"]);
+      if (agent.hunger > 0.68 || world.food < 0.42) return nearestPlace(agent, ["forest", "garden"]);
+      if (world.materials < 0.42 || world.tools < 0.34) return nearestPlace(agent, ["mineral_field", "ruins"]);
+      return rand() < 0.34 ? nearestPlace(agent, ["mineral_field", "ruins"]) : rand() < 0.66 ? nearestPlace(agent, ["forest", "garden"]) : nearestPlace(agent, ["water", "creek"]);
     }
 
     function constructionIntent(agent) {
@@ -592,7 +599,7 @@
     function strikeTarget(agent) {
       const scarcity = Math.max(0, 0.42 - Math.min(world.food, world.water));
       const peer = nearestPeer(agent, (other) => Math.hypot(other.x - agent.x, other.z - agent.z) < 11);
-      if (peer && (world.conflict + scarcity + agent.fear > 0.55 || rand() < 0.18)) {
+      if (peer && (world.conflict + scarcity + agent.fear > 0.78 || (world.violence > 0.14 && rand() < 0.08))) {
         return { type: "agent", agent: peer, x: peer.x, z: peer.z };
       }
       const key = rand() < 0.55 ? lowestShelterKey() : rand() < 0.75 ? "garden" : rand() < 0.88 ? "purifier" : "workshop";
@@ -715,10 +722,10 @@
 
     function shouldPairBond(agent) {
       if (agent.age < 0.36 || agent.age > 0.82 || agent.carrying || agent.pairCooldown > 0 || agent.receptive < 0.5) return false;
-      if (world.food < 0.22 || world.water < 0.20 || averageShelter() < 0.20 || livingAgents().length >= 20) return false;
+      if (world.food < 0.44 || world.water < 0.44 || averageShelter() < 0.38 || world.sickness > 0.46 || livingAgents().length >= 18) return false;
       const partner = compatiblePartner(agent);
       if (!partner) return false;
-      const drive = 0.085 + agent.attachment * 0.055 + world.trust * 0.035 - world.conflict * 0.025;
+      const drive = 0.030 + agent.attachment * 0.030 + world.trust * 0.020 - world.conflict * 0.030;
       return rand() < drive;
     }
 
@@ -730,7 +737,8 @@
         && other.pairCooldown <= 0
         && other.receptive > 0.5
         && other.sex !== agent.sex
-        && Math.min(world.food, world.water) > 0.28
+        && Math.min(world.food, world.water) > 0.44
+        && averageShelter() > 0.38
       ));
     }
 
@@ -739,9 +747,9 @@
     }
 
     function chooseAction(agent) {
-      if (agent.thirst > 0.78) agent.known.add("harvest");
-      if (agent.hunger > 0.78) agent.known.add("harvest");
-      if (agent.energy < 0.20) agent.known.add("rest");
+      if (agent.thirst > 0.70) agent.known.add("harvest");
+      if (agent.hunger > 0.70) agent.known.add("harvest");
+      if (agent.energy < 0.24 || agent.health < 0.46) agent.known.add("rest");
       if (agent.age < 0.32) {
         agent.known = new Set(["rest", "signal"]);
       }
@@ -763,13 +771,20 @@
         action = rand() < 0.72 ? "rest" : "signal";
         actionIndex = ACTIONS.indexOf(action);
       }
-      if (agent.energy < 0.16) {
+      if (agent.energy < 0.20 || agent.health < 0.34) {
         action = "rest";
         actionIndex = ACTIONS.indexOf(action);
       }
-      if ((agent.thirst > 0.84 || agent.hunger > 0.84) && agent.known.has("harvest")) {
+      if ((agent.thirst > 0.76 || agent.hunger > 0.76) && agent.known.has("harvest")) {
         action = "harvest";
         actionIndex = ACTIONS.indexOf(action);
+      }
+      if (action === "strike") {
+        const scarcity = Math.max(0, 0.42 - Math.min(world.food, world.water));
+        if (world.conflict + scarcity + agent.fear < 0.72) {
+          action = rand() < 0.56 ? "signal" : "inspect";
+          actionIndex = ACTIONS.indexOf(action);
+        }
       }
       const dependent = world.agents.find((other) => other.alive && other.age < 0.32 && needChildCare(other));
       if (dependent && agent.age >= 0.32 && rand() < 0.28 + agent.attachment * 0.20) {
@@ -986,6 +1001,13 @@
         world.sickness = clamp(world.sickness - 0.012 - success * 0.034);
         world.trust = clamp(world.trust + 0.008 + traits.sociability * 0.010);
         agent.trust = clamp(agent.trust + 0.012);
+        const patient = nearestPeer(agent, (other) => other.health < 0.72 || other.stress > 0.48) || (agent.health < 0.86 || agent.stress > 0.38 ? agent : null);
+        if (patient) {
+          patient.health = clamp(patient.health + 0.055 * success);
+          patient.stress = clamp(patient.stress - 0.050 * success);
+          patient.cellRepairDebt = clamp(patient.cellRepairDebt - 0.030 * success);
+          world.medicine = clamp(world.medicine - 0.004);
+        }
         reward = success * 1.0 + world.sickness * 0.2;
       } else if (action === "share_pattern") {
         success = clamp(effort + traits.sociability * 0.36 + agent.trust * 0.16);
@@ -1001,6 +1023,13 @@
         success = clamp(shelterQuality(agent) * 0.42 + traits.resilience * 0.28 + 0.28);
         agent.energy = clamp(agent.energy + 0.22 * success);
         agent.stress = clamp(agent.stress - 0.14 * success);
+        agent.health = clamp(agent.health + (0.012 + shelterQuality(agent) * 0.030 + world.medicine * 0.012) * success);
+        agent.hunger = clamp(agent.hunger - world.food * 0.028 * success);
+        agent.thirst = clamp(agent.thirst - world.water * 0.030 * success);
+        agent.cellRepairDebt = clamp(agent.cellRepairDebt - 0.040 * success);
+        if (agent.biologicalReserve < agent.inheritedReserve) {
+          agent.biologicalReserve = clamp(agent.biologicalReserve + 0.0035 * success, 0, agent.inheritedReserve);
+        }
         reward = success * 0.55;
       } else if (action === "signal") {
         success = clamp(traits.sociability * 0.28 + agent.trust * 0.20 + world.trust * 0.16 + agent.skills.signal * 0.24);
@@ -1031,8 +1060,8 @@
           } else {
             carrier.carrying = true;
             carrier.gestation = 0;
-            carrier.pairCooldown = 120;
-            coParent.pairCooldown = 90;
+            carrier.pairCooldown = 220;
+            coParent.pairCooldown = 170;
             carrier.energy = clamp(carrier.energy - 0.12);
             coParent.energy = clamp(coParent.energy - 0.06);
             carrier.biologicalReserve = clamp(carrier.biologicalReserve - 0.030);
@@ -1052,10 +1081,10 @@
         const child = nearestPeer(agent, (other) => other.age < 0.32 && needChildCare(other));
         if (child) {
           success = clamp(agent.attachment * 0.28 + traits.sociability * 0.20 + world.food * 0.12 + world.water * 0.12 + agent.skills.nurture_child * 0.24);
-          child.hunger = clamp(child.hunger - 0.18 * success);
-          child.thirst = clamp(child.thirst - 0.18 * success);
-          child.stress = clamp(child.stress - 0.14 * success);
-          child.health = clamp(child.health + 0.08 * success);
+          child.hunger = clamp(child.hunger - 0.24 * success);
+          child.thirst = clamp(child.thirst - 0.24 * success);
+          child.stress = clamp(child.stress - 0.18 * success);
+          child.health = clamp(child.health + 0.10 * success);
           agent.attachment = clamp(agent.attachment + 0.012);
           world.food = clamp(world.food - 0.010);
           world.water = clamp(world.water - 0.010);
@@ -1145,22 +1174,22 @@
         if (world.weather === "storm") log("weather shifted into storm pressure");
       }
       const aliveCount = livingAgents().length;
-      world.food = clamp(world.food - aliveCount * 0.00013 * dt + world.garden * 0.0024 * dt);
-      world.water = clamp(world.water - aliveCount * 0.00015 * dt + world.purifier * 0.0027 * dt);
-      world.sickness = clamp(world.sickness + (world.weather === "storm" ? 0.0011 : 0.00024) * dt - world.purifier * 0.0011 * dt);
-      world.threat = clamp(world.threat + 0.0005 * dt - world.map * 0.00035 * dt);
-      world.conflict = clamp(world.conflict + Math.max(0, 0.38 - Math.min(world.food, world.water)) * 0.0025 * dt - world.trust * 0.0007 * dt);
+      world.food = clamp(world.food - aliveCount * 0.000085 * dt + world.garden * 0.0026 * dt);
+      world.water = clamp(world.water - aliveCount * 0.000095 * dt + world.purifier * 0.0029 * dt);
+      world.sickness = clamp(world.sickness + (world.weather === "storm" ? 0.00065 : 0.00016) * dt - world.purifier * 0.0015 * dt);
+      world.threat = clamp(world.threat + 0.00032 * dt - world.map * 0.00042 * dt);
+      world.conflict = clamp(world.conflict + Math.max(0, 0.34 - Math.min(world.food, world.water)) * 0.0018 * dt - world.trust * 0.0009 * dt);
       world.soundField = clamp(world.soundField - 0.012 * dt);
       world.violence = clamp(world.violence - 0.0020 * dt);
-      world.tools = clamp(world.tools - Math.max(0, aliveCount - 2) * 0.000035 * dt);
+      world.tools = clamp(world.tools - Math.max(0, aliveCount - 2) * 0.000025 * dt);
       if (world.weather === "storm") {
         for (const place of Object.keys(world.shelters)) {
-          world.shelters[place] = clamp(world.shelters[place] - 0.00022 * dt);
+          world.shelters[place] = clamp(world.shelters[place] - 0.00012 * dt);
         }
       }
       for (const agent of world.agents) {
         if (!agent.alive) continue;
-        agent.age = clamp(agent.age + 0.00055 * dt, 0, 1);
+        agent.age = clamp(agent.age + 0.000095 * dt, 0, 1);
         agent.lifeStage = agent.age < 0.32 ? "offspring" : agent.age > 0.82 ? "elder" : "adult";
         agent.receptive = agent.age >= 0.36 && agent.age <= 0.82 && !agent.carrying && agent.energy > 0.34 && agent.health > 0.50 && agent.stress < 0.76
           ? (Math.sin(world.time * 0.045 + agent.id * 1.8) > -0.15 ? 1 : 0)
@@ -1168,32 +1197,32 @@
         agent.pairCooldown = Math.max(0, agent.pairCooldown - dt);
         if (agent.carrying) {
           agent.gestation += dt;
-          agent.energy = clamp(agent.energy - 0.0018 * dt);
-          agent.hunger = clamp(agent.hunger + 0.0012 * dt);
-          agent.thirst = clamp(agent.thirst + 0.0010 * dt);
-          agent.stress = clamp(agent.stress + Math.max(0, 0.38 - Math.min(world.food, world.water)) * 0.0012 * dt);
-          if (agent.gestation >= 86) {
+          agent.energy = clamp(agent.energy - 0.00075 * dt);
+          agent.hunger = clamp(agent.hunger + 0.00055 * dt);
+          agent.thirst = clamp(agent.thirst + 0.00048 * dt);
+          agent.stress = clamp(agent.stress + Math.max(0, 0.38 - Math.min(world.food, world.water)) * 0.0008 * dt);
+          if (agent.gestation >= 170) {
             const partner = world.agents.find((other) => other.sex !== agent.sex && other.age >= 0.36) || agent;
             makeChild(agent, partner);
             agent.carrying = false;
             agent.gestation = 0;
           }
         }
-        agent.hunger = clamp(agent.hunger + 0.00145 * dt - world.food * 0.00072 * dt);
-        agent.thirst = clamp(agent.thirst + 0.00175 * dt - world.water * 0.00082 * dt);
-        agent.health = clamp(agent.health - Math.max(0, agent.hunger - 0.88) * 0.006 * dt - Math.max(0, agent.thirst - 0.88) * 0.008 * dt - world.sickness * 0.00085 * dt);
-        agent.fear = clamp(agent.fear + world.threat * 0.0012 * dt - shelterQuality(agent) * 0.0007 * dt);
+        agent.hunger = clamp(agent.hunger + 0.00092 * dt - world.food * 0.00062 * dt);
+        agent.thirst = clamp(agent.thirst + 0.00102 * dt - world.water * 0.00068 * dt);
+        agent.health = clamp(agent.health - Math.max(0, agent.hunger - 0.91) * 0.0035 * dt - Math.max(0, agent.thirst - 0.91) * 0.0045 * dt - world.sickness * 0.00042 * dt);
+        agent.fear = clamp(agent.fear + world.threat * 0.0008 * dt - shelterQuality(agent) * 0.00085 * dt);
         const qualityPenalty = Math.max(0, 0.34 - shelterQuality(agent)) + Math.max(0, world.conflict - 0.42) + Math.max(0, world.sickness - 0.38);
         const burdenPenalty = (agent.carrying ? 0.55 : 0) + (agent.lifeStage === "offspring" ? 0.35 : 0) + (agent.lifeStage === "elder" ? 0.45 : 0);
         const scarcityPenalty = Math.max(0, agent.hunger - 0.74) * 1.55 + Math.max(0, agent.thirst - 0.74) * 1.70;
-        const lifeCost = agent.agingRate * dt * (1.0 + agent.stress * 0.8 + qualityPenalty * 1.6 + scarcityPenalty + burdenPenalty);
-        agent.accumulatedStress = clamp(agent.accumulatedStress + lifeCost * 2.2 + agent.stress * 0.0005 * dt);
-        agent.cellRepairDebt = clamp(agent.cellRepairDebt + Math.max(0, 0.72 - agent.health) * 0.0016 * dt + qualityPenalty * 0.0007 * dt - agent.energy * 0.00032 * dt);
+        const lifeCost = agent.agingRate * dt * (1.0 + agent.stress * 0.45 + qualityPenalty * 1.05 + scarcityPenalty * 0.70 + burdenPenalty * 0.70);
+        agent.accumulatedStress = clamp(agent.accumulatedStress + lifeCost * 1.4 + agent.stress * 0.00024 * dt);
+        agent.cellRepairDebt = clamp(agent.cellRepairDebt + Math.max(0, 0.72 - agent.health) * 0.00095 * dt + qualityPenalty * 0.00042 * dt - agent.energy * 0.00042 * dt);
         agent.biologicalReserve = clamp(agent.biologicalReserve - lifeCost, 0, 1);
         if (agent.age > 0.86) {
-          agent.health = clamp(agent.health - (agent.age - 0.86) * 0.006 * dt);
+          agent.health = clamp(agent.health - (agent.age - 0.86) * 0.0028 * dt);
         }
-        if (agent.health <= 0.03 || agent.biologicalReserve <= 0.02) {
+        if (agent.health <= 0.025 || agent.biologicalReserve <= 0.006) {
           agent.alive = false;
           log(`${agent.name} died as health/reserve collapsed under life pressure`);
           continue;
@@ -1451,6 +1480,26 @@
       return livingAgents().filter(predicate).length;
     }
 
+    function snapshotWorld() {
+      const alive = livingAgents();
+      return {
+        time: world.time,
+        alive: alive.length,
+        total: world.agents.length,
+        births: world.births,
+        food: world.food,
+        water: world.water,
+        averageShelter: averageShelter(),
+        trust: world.trust,
+        conflict: world.conflict,
+        violence: world.violence,
+        sickness: world.sickness,
+        averageReserve: averageAgent((agent) => agent.biologicalReserve),
+        averageHealth: averageAgent((agent) => agent.health),
+        actions: alive.map((agent) => agent.task ? agent.task.action : "choosing"),
+      };
+    }
+
     function updateHud() {
       const alive = livingAgents().length;
       const dependents = countAgents((agent) => agent.lifeStage === "offspring");
@@ -1492,6 +1541,7 @@
         return `<div class="agent-row"><strong>${agent.name}</strong><span>${emergentLabel(agent)}</span><span>${life} / ${action.replaceAll("_", " ")} / reserve ${agent.biologicalReserve.toFixed(2)} / reward ${agent.totalReward.toFixed(1)}</span></div>`;
       }).join("");
       els.events.innerHTML = world.events.map((event) => `<p class="event">t${event.time.toFixed(1)} ${event.text}</p>`).join("") || "<p class=\"small\">No events yet.</p>";
+      document.body.dataset.ssrmSnapshot = JSON.stringify(snapshotWorld());
     }
 
     document.querySelectorAll("button[data-event]").forEach((button) => {
@@ -1579,6 +1629,23 @@
     resetPopulation(Number(els.population.value));
     log("generic action primitives online; no roles assigned");
     updateHud();
+    window.ssrmOpenEmergence = {
+      snapshot() {
+        return snapshotWorld();
+      },
+      stepSeconds(seconds) {
+        let remaining = Math.max(0, Math.min(3600, Number(seconds) || 0));
+        while (remaining > 0) {
+          const step = Math.min(0.08, remaining);
+          stepWorld(step);
+          remaining -= step;
+        }
+        updateScene();
+        updateHud();
+        renderer.render(scene, camera);
+        return this.snapshot();
+      },
+    };
     requestAnimationFrame(animate);
   </script>
 </body>

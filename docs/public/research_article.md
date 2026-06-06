@@ -203,7 +203,7 @@ The newest step adds a settlement/civilization pressure layer. It moves the publ
 
 The integrated settlement policy reaches `0.812` mean civilization score. Reactive individuals fall to `0.502`, and targeted ablations for norms, role memory, future planning, building memory, social memory, and affective control all reduce score. This remains designed policy evidence, not open-ended civilization emergence.
 
-The current live sandbox then removes the replay format. It shows agents in a larger top-down browser world with multiple shelters, visually distinct resource regions, generic construct/repair/modify/strike primitives, body-made sound, abstract reproduction, carrying cost, dependent offspring, inherited biological reserve, aging, and death pressure.
+The current live sandbox then removes the replay format. It shows agents in a larger top-down browser world with multiple shelters, visually distinct resource regions, generic construct/repair/modify/strike primitives, body-made sound, abstract reproduction, carrying cost, dependent offspring, inherited biological reserve, recovery through shelter/treatment, aging, and death pressure.
 
 ![SSRM-3D open emergence sandbox](assets/ssrm_3d_open_emergence.jpg)
 

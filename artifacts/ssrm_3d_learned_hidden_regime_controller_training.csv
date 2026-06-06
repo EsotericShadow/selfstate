@@ -1,0 +1,3 @@
+architecture,train_loss,train_accuracy,device_used,parameter_count
+frame_mlp,1.723852515220642,0.3425625264644623,mps,5868
+gru,1.7144103050231934,0.34806251525878906,mps,16428

@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `76` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, and hidden-regime adaptation verifier.
+The canonical runner is now wired for `77` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, and learned hidden-regime controller.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -210,6 +210,8 @@ The newest pressure pass adds an adaptive-pressure ledger. It separates survival
 Report 93 then moves that milestone into a headless multi-seed verifier. Across five seeds, the integrated condition keeps the major-shock gate closed until `12h`, survives a post-gate shock, improves architecture and tool design, accumulates adaptation evidence, and transfers knowledge. Removing teaching, risk memory, infrastructure memory, tool improvement, adaptive arbitration, or persistent development creates specific losses. This is stronger than watching one browser run, but it is still designed simulation evidence rather than learned open-ended consciousness.
 
 Report 94 adds hidden regime shifts after the 12h gate. The world can become contaminated, cold/wet, blighted, tool-fatiguing, or socially fractured. Agents do not receive those labels; they only receive noisy symptoms such as sickness, shelter wear, poor yields, tool failures, conflict, and symbol instability. The integrated condition passes across five seeds, while ablations expose losses in inference, teaching, reputation/influence, sanitation memory, weather sensing, and tool adaptation. The important nuance is that no-inference agents can still survive through broad development, so this is evidence for measurable hidden-regime pressure, not proof that causal diagnosis is already necessary for all survival.
+
+Report 95 makes the next step learned and closed-loop. A frame MLP and GRU are trained from hidden-regime symptom histories, then their actions feed back into held-out worlds. The GRU preserves the 12h gate, survives hidden-regime activation, improves tools and infrastructure, transfers knowledge, and beats reactive survival-only control. The verdict is still partial: the frame model scores higher, training accuracy is low, and ablations do not prove clean recurrent symptom-memory dependence. That is useful negative evidence for the next controller design.
 
 ![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 

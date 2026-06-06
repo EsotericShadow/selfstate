@@ -1,0 +1,2 @@
+episodes,crises,epochs,final_loss,mean_return,return_std,moving_baseline,mean_sequence_length,mean_entropy,policy_temperature,entropy_coef,device_used,parameter_count
+15,90,5,-3.235010862350464,1.4733322428740763,1.2224213168331792,0.9065458230967998,1221.6,1.6144672206069894,1.0,0.008,mps,29640

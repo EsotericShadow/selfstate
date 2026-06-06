@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `80` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, and focused social/culture hidden-regime controller.
+The canonical runner is now wired for `81` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, and social credit-assignment controller.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -218,6 +218,8 @@ Report 96 adds a learned response-option head. The GRU improves over Report 95, 
 Report 97 uses validation return to select the option-action bias before held-out evaluation. That produces the strongest learned hidden-regime result so far: the selected GRU beats the fixed-bias GRU, the frame model, and reactive control, while regime-signal, infrastructure, and body ablations create losses. It remains bounded because this is return-shaped policy selection after imitation training, not full gradient deep reinforcement learning.
 
 Report 98 attacks the remaining social/culture weakness. It turns social life into hidden delayed regimes: trust fracture, symbol drift, coalition split, teacher loss, and rumor cascade. The learned controller strongly beats reactive control and only edges fixed-bias/frame controls, so the verdict remains partial. Social/culture ablation lowers total score and culture transfer, but it does not cleanly reduce social response across every held-out variant. The next benchmark has to make mediation, rumor correction, convention repair, and teaching carry sharper mutually exclusive opportunity costs.
+
+Report 99 makes that social test harsher. Different hidden social shocks now require different repair actions, and wrong repairs consume the scarce recovery window. This is a completed failed result: the GRU beats reactive, fixed-bias, and frame controls in total score, but targeted repair is only `0.287`, wrong repair is `0.713`, and social/culture ablation improves several repair metrics. The practical conclusion is that return-trained social credit assignment is now the bottleneck.
 
 ![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 

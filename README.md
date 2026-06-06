@@ -107,6 +107,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D option-gated hidden-regime controller report](docs/96_ssrm_3d_option_gated_hidden_regime_controller_report.md): adds a learned response-option head to improve hidden-regime closed-loop routing; GRU response improves and regime-signal ablation hurts, but the frame model still wins and the verdict remains partial.
 - [SSRM-3D return-selected hidden-regime controller report](docs/97_ssrm_3d_return_selected_hidden_regime_controller_report.md): selects the option-action bias by closed-loop validation return, then passes the held-out gate where the learned GRU beats fixed bias, frame, and reactive controls while regime-signal, infrastructure, and body ablations create losses.
 - [SSRM-3D social/culture hidden-regime controller report](docs/98_ssrm_3d_social_culture_hidden_regime_controller_report.md): turns the weak Report 97 social/culture ablation into a focused hidden social-regime benchmark; the learned GRU strongly beats reactive control and only edges fixed/frame controls, with a partial verdict because social/culture ablation is not clean across response metrics.
+- [SSRM-3D social credit-assignment controller report](docs/99_ssrm_3d_social_credit_assignment_controller_report.md): sharpens the social/culture benchmark with mutually exclusive opportunity costs. The learned GRU beats reactive, fixed-bias, and frame controls in total score, but the claim fails because targeted repair is low and social/culture ablation improves several repair metrics.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -986,6 +987,24 @@ This writes:
 - `artifacts/ssrm_3d_social_culture_hidden_regime_controller_results.json`
 - `artifacts/ssrm_3d_social_culture_hidden_regime_controller_trace.js`
 - `artifacts/ssrm_3d_social_culture_hidden_regime_controller_results.js`
+
+```bash
+python3 experiments/ssrm_3d_social_credit_assignment_controller.py --train-seeds 20260838,20260839,20260840,20260841,20260842,20260843,20260844,20260845 --tune-seeds 20260848,20260849,20260850,20260851,20260852 --eval-seeds 20260853,20260854,20260855,20260856,20260857 --bias-candidates 0.50,0.70,1.00,1.35,1.70 --hours 16 --step-hours 0.08 --population 10 --epochs 110 --hidden-size 64 --device auto --trace-seed 20260853
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_social_credit_assignment_controller_training.csv`
+- `artifacts/ssrm_3d_social_credit_assignment_controller_bias_selection.csv`
+- `artifacts/ssrm_3d_social_credit_assignment_controller_eval.csv`
+- `artifacts/ssrm_3d_social_credit_assignment_controller_summary.csv`
+- `artifacts/ssrm_3d_social_credit_assignment_controller_variant_summary.csv`
+- `artifacts/ssrm_3d_social_credit_assignment_controller_ablations.csv`
+- `artifacts/ssrm_3d_social_credit_assignment_controller_verdict.csv`
+- `artifacts/ssrm_3d_social_credit_assignment_controller_trace.json`
+- `artifacts/ssrm_3d_social_credit_assignment_controller_results.json`
+- `artifacts/ssrm_3d_social_credit_assignment_controller_trace.js`
+- `artifacts/ssrm_3d_social_credit_assignment_controller_results.js`
 
 ```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2

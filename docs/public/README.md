@@ -22,9 +22,9 @@ It treats "self" as a persistent model of the acting system. That model can be e
 
 The current public status:
 
-- reports now run from `01` through `98`;
-- the canonical runner is wired for `80` executable runs;
-- the newest evidence step is a focused learned social/culture hidden-regime controller with a partial verdict;
+- reports now run from `01` through `99`;
+- the canonical runner is wired for `81` executable runs;
+- the newest evidence step is a failed social credit-assignment controller: it responds to hidden social shocks, but it still spends too much of the recovery window on the wrong repair action;
 - a separate live open-emergence sandbox now explores larger geography, multiple shelters, generic physical action primitives, lifecycle cost, abstract reproduction, dependent care, private beliefs, environment-inferred symbol categories, influence-weighted symbol adoption, invented sound tokens, terrain glyphs, conflict, discovered specializations, shifting resource reliability, stale-map pressure, disease strain, social inequality, and a long-horizon development phase before delayed major shocks;
 - the broader direction is an [accelerated agency and civilization testbed](agency_civilization_testbed.md), where the goal is to study what agents reliably reinvent under pressure;
 - the strongest result is still bounded simulation evidence;
@@ -132,6 +132,7 @@ The repo is not one experiment. It is a ladder of tests.
 | Option-gated hidden-regime controller | [96](../96_ssrm_3d_option_gated_hidden_regime_controller_report.md) | Does a learned response-option head improve hidden-regime control? | Partly: GRU response improves, targeted response rises, and regime-signal removal now hurts. The frame model still wins and social/culture ablation remains unstable. |
 | Return-selected hidden-regime controller | [97](../97_ssrm_3d_return_selected_hidden_regime_controller_report.md) | Can validation return select a better learned controller setting? | Yes as a bounded precursor: validation return chooses the option bias, the selected GRU beats fixed bias, frame, and reactive controls on held-out worlds, and regime-signal, infrastructure, and body ablations create losses. It is still not gradient deep RL. |
 | Social/culture hidden-regime controller | [98](../98_ssrm_3d_social_culture_hidden_regime_controller_report.md) | Can the learned controller handle delayed hidden social/culture regimes? | Partly: the GRU strongly beats reactive control and only edges fixed-bias/frame controls across trust, symbol, coalition, teacher-loss, and rumor variants. The result remains partial because social/culture ablation is not clean across social response metrics. |
+| Social credit-assignment controller | [99](../99_ssrm_3d_social_credit_assignment_controller_report.md) | Can the learned controller choose the right social repair when wrong repairs consume the recovery window? | No, not yet. The GRU beats reactive, frame, and fixed-bias controls in total score, but targeted repair is low, wrong repair is high, and social/culture ablation improves several repair metrics. This is a useful failed boundary. |
 
 ## What The Early Experiments Showed
 
@@ -343,7 +344,7 @@ Use these as the clean public version of the project.
 
 In plain English:
 
-> A persistent self-like model looks useful when an agent has to survive, adapt, remember, repair, cooperate, and continue through changing conditions. The current evidence now includes a physics-first recurrent-learning benchmark, but it still supports a mechanism, not a consciousness claim.
+> A persistent self-like model looks useful when an agent has to survive, adapt, remember, repair, cooperate, and continue through changing conditions. The current evidence now includes physics-first recurrent learning and sharper learned social-control failures, but it still supports a mechanism, not a consciousness claim.
 
 The most important open weakness:
 

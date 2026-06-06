@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `78` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, and option-gated learned hidden-regime controller.
+The canonical runner is now wired for `79` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, and return-selected learned hidden-regime controller.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -214,6 +214,8 @@ Report 94 adds hidden regime shifts after the 12h gate. The world can become con
 Report 95 makes the next step learned and closed-loop. A frame MLP and GRU are trained from hidden-regime symptom histories, then their actions feed back into held-out worlds. The GRU preserves the 12h gate, survives hidden-regime activation, improves tools and infrastructure, transfers knowledge, and beats reactive survival-only control. The verdict is still partial: the frame model scores higher, training accuracy is low, and ablations do not prove clean recurrent symptom-memory dependence. That is useful negative evidence for the next controller design.
 
 Report 96 adds a learned response-option head. The GRU improves over Report 95, with higher hidden-regime response and targeted response. Removing regime-signal features now causes a response loss, which is the right direction scientifically. The verdict remains partial because the frame model still scores higher and social/culture ablation is not stable.
+
+Report 97 uses validation return to select the option-action bias before held-out evaluation. That produces the strongest learned hidden-regime result so far: the selected GRU beats the fixed-bias GRU, the frame model, and reactive control, while regime-signal, infrastructure, and body ablations create losses. It remains bounded because this is return-shaped policy selection after imitation training, not full gradient deep reinforcement learning.
 
 ![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 

@@ -105,6 +105,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D hidden-regime adaptation report](docs/94_ssrm_3d_hidden_regime_adaptation_report.md): adds post-12h hidden world-rule changes where agents see noisy symptoms rather than regime labels, then ablates inference, teaching, reputation/influence, sanitation memory, weather sensing, and tool adaptation.
 - [SSRM-3D learned hidden-regime controller report](docs/95_ssrm_3d_learned_hidden_regime_controller_report.md): trains frame and recurrent neural controllers from hidden-regime symptom histories, evaluates them closed-loop on held-out worlds, and records the partial result where GRU beats reactive control but not the frame model or ablation-specificity gate.
 - [SSRM-3D option-gated hidden-regime controller report](docs/96_ssrm_3d_option_gated_hidden_regime_controller_report.md): adds a learned response-option head to improve hidden-regime closed-loop routing; GRU response improves and regime-signal ablation hurts, but the frame model still wins and the verdict remains partial.
+- [SSRM-3D return-selected hidden-regime controller report](docs/97_ssrm_3d_return_selected_hidden_regime_controller_report.md): selects the option-action bias by closed-loop validation return, then passes the held-out gate where the learned GRU beats fixed bias, frame, and reactive controls while regime-signal, infrastructure, and body ablations create losses.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -949,6 +950,23 @@ This writes:
 - `artifacts/ssrm_3d_option_gated_hidden_regime_controller_results.json`
 - `artifacts/ssrm_3d_option_gated_hidden_regime_controller_trace.js`
 - `artifacts/ssrm_3d_option_gated_hidden_regime_controller_results.js`
+
+```bash
+python3 experiments/ssrm_3d_return_selected_hidden_regime_controller.py --train-seeds 20260718,20260719,20260720,20260721,20260722,20260723,20260724,20260725 --tune-seeds 20260808,20260809,20260810,20260811,20260812 --eval-seeds 20260813,20260814,20260815,20260816,20260817 --bias-candidates 0.70,1.00,1.35,1.70,2.10 --hours 16 --step-hours 0.08 --population 10 --epochs 100 --hidden-size 56 --device auto --trace-seed 20260813
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_return_selected_hidden_regime_controller_training.csv`
+- `artifacts/ssrm_3d_return_selected_hidden_regime_controller_bias_selection.csv`
+- `artifacts/ssrm_3d_return_selected_hidden_regime_controller_eval.csv`
+- `artifacts/ssrm_3d_return_selected_hidden_regime_controller_summary.csv`
+- `artifacts/ssrm_3d_return_selected_hidden_regime_controller_ablations.csv`
+- `artifacts/ssrm_3d_return_selected_hidden_regime_controller_verdict.csv`
+- `artifacts/ssrm_3d_return_selected_hidden_regime_controller_trace.json`
+- `artifacts/ssrm_3d_return_selected_hidden_regime_controller_results.json`
+- `artifacts/ssrm_3d_return_selected_hidden_regime_controller_trace.js`
+- `artifacts/ssrm_3d_return_selected_hidden_regime_controller_results.js`
 
 ```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2

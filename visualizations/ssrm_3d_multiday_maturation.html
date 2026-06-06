@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>SSRM-3D Multi-Day Maturation</title>
+  <script src="../artifacts/ssrm_3d_multiday_maturation_results.js"></script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #070b0b;
+      --panel: rgba(14, 17, 17, 0.88);
+      --line: rgba(232, 242, 238, 0.16);
+      --text: #eef5f1;
+      --muted: #9fb1aa;
+      --cyan: #58d6ce;
+      --green: #7bdc8a;
+      --amber: #e8c65d;
+      --red: #ec6e66;
+      --violet: #aa94ee;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: radial-gradient(circle at 25% 10%, rgba(88, 214, 206, 0.10), transparent 34%), var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    main {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.65fr);
+      gap: 14px;
+      padding: 14px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(14px);
+    }
+
+    .stage {
+      display: grid;
+      grid-template-rows: auto minmax(360px, 1fr) auto;
+      gap: 12px;
+      padding: 14px;
+    }
+
+    .side {
+      padding: 14px;
+      display: grid;
+      gap: 12px;
+      align-content: start;
+      max-height: calc(100vh - 28px);
+      overflow: auto;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.08;
+    }
+
+    h2 {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    p,
+    .small,
+    .row,
+    .event {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .top {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .badge {
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      color: var(--green);
+      font-size: 12px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    canvas {
+      width: 100%;
+      min-height: 420px;
+      height: 100%;
+      display: block;
+      border: 1px solid var(--line);
+      background: #0a1010;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 64px minmax(0, 1fr) 88px;
+      gap: 10px;
+      align-items: center;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    button {
+      min-height: 34px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      padding: 9px;
+      min-height: 58px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 5px;
+      font-size: 16px;
+      overflow-wrap: anywhere;
+    }
+
+    .section {
+      display: grid;
+      gap: 8px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 120px minmax(0, 1fr) 48px;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .bar {
+      height: 9px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: var(--cyan);
+    }
+
+    .event {
+      border-left: 3px solid var(--amber);
+      padding-left: 8px;
+    }
+
+    .table {
+      display: grid;
+      gap: 5px;
+    }
+
+    .table-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) repeat(3, minmax(58px, 0.4fr));
+      gap: 6px;
+      font-size: 11px;
+      color: var(--muted);
+      align-items: center;
+    }
+
+    .table-row strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    @media (max-width: 980px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .side {
+        max-height: none;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel stage">
+      <div class="top">
+        <div>
+          <h1>SSRM-3D Multi-Day Maturation</h1>
+          <p>72h accelerated trace with a locked 12h development window, delayed shocks, building tiers, tool tiers, births, culture, and environmental pressure.</p>
+        </div>
+        <div class="badge" id="verdict">loading</div>
+      </div>
+      <canvas id="scene" width="1400" height="780"></canvas>
+      <div class="controls">
+        <button id="play">Play</button>
+        <input id="frame" type="range" min="0" max="1" step="1" value="0">
+        <strong id="time">0h</strong>
+      </div>
+    </section>
+
+    <aside class="panel side">
+      <div class="metrics">
+        <div class="metric"><span>Alive</span><strong id="alive">-</strong></div>
+        <div class="metric"><span>Births</span><strong id="births">-</strong></div>
+        <div class="metric"><span>Shocks</span><strong id="shocks">-</strong></div>
+        <div class="metric"><span>Architecture</span><strong id="arch">-</strong></div>
+        <div class="metric"><span>Tools</span><strong id="tools">-</strong></div>
+        <div class="metric"><span>Culture</span><strong id="culture">-</strong></div>
+      </div>
+
+      <div class="section" id="bars"></div>
+
+      <div class="section">
+        <h2>Channel Losses</h2>
+        <div class="table" id="losses"></div>
+      </div>
+
+      <div class="section">
+        <h2>Events</h2>
+        <div id="events"></div>
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    const data = window.SSRM_3D_MULTIDAY_MATURATION_RESULTS || {};
+    const trace = (data.trace && data.trace.frames) || [];
+    const verdict = data.verdict || {};
+    const slider = document.getElementById("frame");
+    const canvas = document.getElementById("scene");
+    const ctx = canvas.getContext("2d");
+    let playing = false;
+    let timer = null;
+
+    slider.max = Math.max(0, trace.length - 1);
+    document.getElementById("verdict").textContent = verdict.verdict || "missing artifact";
+
+    function pct(value) {
+      return `${Math.round((Number(value) || 0) * 100)}%`;
+    }
+
+    function drawTerrain(frame) {
+      const w = canvas.width;
+      const h = canvas.height;
+      ctx.clearRect(0, 0, w, h);
+      const grd = ctx.createLinearGradient(0, 0, w, h);
+      grd.addColorStop(0, "#0b1514");
+      grd.addColorStop(0.46, "#101815");
+      grd.addColorStop(1, "#15100e");
+      ctx.fillStyle = grd;
+      ctx.fillRect(0, 0, w, h);
+
+      ctx.strokeStyle = "rgba(232,242,238,0.08)";
+      ctx.lineWidth = 1;
+      for (let i = 0; i < 18; i += 1) {
+        const y = 80 + i * 38 + Math.sin(i * 0.7) * 12;
+        ctx.beginPath();
+        ctx.moveTo(60, y);
+        for (let x = 60; x < w - 60; x += 60) {
+          ctx.lineTo(x, y + Math.sin(x * 0.012 + i) * 22);
+        }
+        ctx.stroke();
+      }
+
+      const gateX = 92 + (12 / 72) * (w - 184);
+      ctx.strokeStyle = "rgba(232,198,93,0.75)";
+      ctx.setLineDash([8, 8]);
+      ctx.beginPath();
+      ctx.moveTo(gateX, 48);
+      ctx.lineTo(gateX, h - 80);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = "rgba(232,198,93,0.92)";
+      ctx.font = "18px ui-monospace, monospace";
+      ctx.fillText("12h shock gate", gateX + 12, 66);
+
+      drawTimeline(frame);
+      drawSettlement(frame);
+    }
+
+    function drawSettlement(frame) {
+      const cx = canvas.width * 0.52;
+      const cy = canvas.height * 0.48;
+      const arch = Number(frame.architecture || 0);
+      const tools = Number(frame.tools || 0);
+      const culture = Number(frame.culture || 0);
+      const pressure = Number(frame.adaptive_pressure || 0);
+      const radius = 82 + arch * 86;
+
+      ctx.strokeStyle = `rgba(88,214,206,${0.22 + arch * 0.34})`;
+      ctx.lineWidth = 2;
+      for (let r = 0; r < 4; r += 1) {
+        ctx.beginPath();
+        ctx.arc(cx, cy, radius * (0.45 + r * 0.22), 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      const buildings = [
+        ["shelter", -90, -44, frame.shelter, "#e8c65d"],
+        ["water", 112, -60, frame.waterworks, "#58d6ce"],
+        ["granary", 78, 88, frame.granary, "#7bdc8a"],
+        ["workshop", -126, 70, frame.workshop, "#aa94ee"],
+        ["sanitation", -22, 132, frame.sanitation, "#eef5f1"],
+        ["paths", 0, -132, frame.paths, "#ec6e66"]
+      ];
+      buildings.forEach(([label, dx, dy, value, color]) => {
+        const v = Number(value || 0);
+        const size = 28 + v * 46;
+        ctx.fillStyle = color;
+        ctx.globalAlpha = 0.18 + v * 0.62;
+        ctx.fillRect(cx + dx - size / 2, cy + dy - size / 2, size, size);
+        ctx.globalAlpha = 1;
+        ctx.strokeStyle = color;
+        ctx.strokeRect(cx + dx - size / 2, cy + dy - size / 2, size, size);
+        ctx.fillStyle = "#eef5f1";
+        ctx.font = "13px ui-monospace, monospace";
+        ctx.fillText(label, cx + dx - 32, cy + dy + size / 2 + 18);
+      });
+
+      const alive = Number(frame.alive || 0);
+      const children = Number(frame.children || 0);
+      for (let i = 0; i < alive; i += 1) {
+        const angle = (i / Math.max(1, alive)) * Math.PI * 2 + Number(frame.hours || 0) * 0.08;
+        const ring = radius * (0.38 + (i % 5) * 0.09);
+        ctx.fillStyle = i < children ? "#e8c65d" : "#58d6ce";
+        ctx.beginPath();
+        ctx.arc(cx + Math.cos(angle) * ring, cy + Math.sin(angle) * ring, 6 + tools * 1.5, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      ctx.fillStyle = `rgba(236,110,102,${0.10 + pressure * 0.28})`;
+      ctx.beginPath();
+      ctx.arc(cx, cy, radius * (1.10 + pressure * 0.30), 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = "#eef5f1";
+      ctx.font = "22px ui-monospace, monospace";
+      ctx.fillText(`Day ${(Number(frame.hours || 0) / 24).toFixed(1)} | ${frame.weather}`, 46, 46);
+    }
+
+    function drawTimeline(frame) {
+      const x0 = 92;
+      const y0 = canvas.height - 64;
+      const width = canvas.width - 184;
+      ctx.strokeStyle = "rgba(232,242,238,0.24)";
+      ctx.beginPath();
+      ctx.moveTo(x0, y0);
+      ctx.lineTo(x0 + width, y0);
+      ctx.stroke();
+      trace.forEach((item) => {
+        const x = x0 + (Number(item.hours || 0) / 72) * width;
+        const height = 10 + Number(item.adaptation_evidence || 0) * 38;
+        ctx.fillStyle = item.major_shocks > 0 ? "#ec6e66" : "#58d6ce";
+        ctx.fillRect(x - 3, y0 - height, 6, height);
+      });
+      const nowX = x0 + (Number(frame.hours || 0) / 72) * width;
+      ctx.fillStyle = "#eef5f1";
+      ctx.beginPath();
+      ctx.arc(nowX, y0, 8, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    function renderBars(frame) {
+      const rows = [
+        ["Food", frame.food, "var(--green)"],
+        ["Water", frame.water, "var(--cyan)"],
+        ["Disease", frame.disease, "var(--red)"],
+        ["Route hazard", frame.route_hazard, "var(--amber)"],
+        ["Risk memory", frame.risk_memory, "var(--violet)"],
+        ["Knowledge", frame.knowledge_transfer, "var(--green)"],
+        ["Adaptation", frame.adaptation_evidence, "var(--cyan)"],
+        ["Pressure", frame.adaptive_pressure, "var(--red)"]
+      ];
+      document.getElementById("bars").innerHTML = rows.map(([label, value, color]) => `
+        <div class="row">
+          <span>${label}</span>
+          <div class="bar"><span style="width:${pct(value)};background:${color}"></span></div>
+          <strong>${pct(value)}</strong>
+        </div>
+      `).join("");
+    }
+
+    function renderLosses() {
+      const rows = [
+        ["Reactive", verdict.reactive_loss],
+        ["Teaching", verdict.teaching_loss],
+        ["Risk memory", verdict.risk_memory_loss],
+        ["Infrastructure", verdict.infrastructure_loss],
+        ["Tool system", verdict.tool_loss],
+        ["Social learning", verdict.social_learning_loss],
+        ["Env sensing", verdict.environmental_sensing_loss]
+      ];
+      document.getElementById("losses").innerHTML = `
+        <div class="table-row"><strong>Channel</strong><strong>Loss</strong><strong>Gate</strong><strong>Result</strong></div>
+        ${rows.map(([label, loss]) => `
+          <div class="table-row">
+            <span>${label}</span>
+            <strong>${Number(loss || 0).toFixed(3)}</strong>
+            <span>ablated</span>
+            <span>${Number(loss || 0) > 0 ? "specific" : "weak"}</span>
+          </div>
+        `).join("")}
+      `;
+    }
+
+    function render(index) {
+      const frame = trace[index] || trace[0] || {};
+      slider.value = String(index);
+      document.getElementById("time").textContent = frame.label || `${frame.hours || 0}h`;
+      document.getElementById("alive").textContent = `${frame.alive || 0}/${frame.total_agents || 0}`;
+      document.getElementById("births").textContent = frame.births || 0;
+      document.getElementById("shocks").textContent = frame.major_shocks || 0;
+      document.getElementById("arch").textContent = `tier ${frame.architecture_tier || 0}`;
+      document.getElementById("tools").textContent = `tier ${frame.tool_tier || 0}`;
+      document.getElementById("culture").textContent = pct(frame.culture);
+      document.getElementById("events").innerHTML = ((frame.events || []).length ? frame.events : ["No major event yet."]).map((event) => `<div class="event">${event}</div>`).join("");
+      drawTerrain(frame);
+      renderBars(frame);
+      renderLosses();
+    }
+
+    function step() {
+      const next = (Number(slider.value) + 1) % Math.max(1, trace.length);
+      render(next);
+    }
+
+    window.ssrmMultidayMaturation = {
+      data,
+      trace,
+      render,
+      current() {
+        return trace[Number(slider.value)] || trace[0] || {};
+      }
+    };
+
+    document.getElementById("play").addEventListener("click", () => {
+      playing = !playing;
+      document.getElementById("play").textContent = playing ? "Pause" : "Play";
+      clearInterval(timer);
+      if (playing) {
+        timer = setInterval(step, 900);
+      }
+    });
+    slider.addEventListener("input", () => render(Number(slider.value)));
+    render(0);
+  </script>
+</body>
+</html>

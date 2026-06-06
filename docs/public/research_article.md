@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `77` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, and learned hidden-regime controller.
+The canonical runner is now wired for `78` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, and option-gated learned hidden-regime controller.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -212,6 +212,8 @@ Report 93 then moves that milestone into a headless multi-seed verifier. Across 
 Report 94 adds hidden regime shifts after the 12h gate. The world can become contaminated, cold/wet, blighted, tool-fatiguing, or socially fractured. Agents do not receive those labels; they only receive noisy symptoms such as sickness, shelter wear, poor yields, tool failures, conflict, and symbol instability. The integrated condition passes across five seeds, while ablations expose losses in inference, teaching, reputation/influence, sanitation memory, weather sensing, and tool adaptation. The important nuance is that no-inference agents can still survive through broad development, so this is evidence for measurable hidden-regime pressure, not proof that causal diagnosis is already necessary for all survival.
 
 Report 95 makes the next step learned and closed-loop. A frame MLP and GRU are trained from hidden-regime symptom histories, then their actions feed back into held-out worlds. The GRU preserves the 12h gate, survives hidden-regime activation, improves tools and infrastructure, transfers knowledge, and beats reactive survival-only control. The verdict is still partial: the frame model scores higher, training accuracy is low, and ablations do not prove clean recurrent symptom-memory dependence. That is useful negative evidence for the next controller design.
+
+Report 96 adds a learned response-option head. The GRU improves over Report 95, with higher hidden-regime response and targeted response. Removing regime-signal features now causes a response loss, which is the right direction scientifically. The verdict remains partial because the frame model still scores higher and social/culture ablation is not stable.
 
 ![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 

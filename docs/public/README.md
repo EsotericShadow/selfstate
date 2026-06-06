@@ -22,9 +22,9 @@ It treats "self" as a persistent model of the acting system. That model can be e
 
 The current public status:
 
-- reports now run from `01` through `95`;
-- the canonical runner is wired for `77` executable runs;
-- the newest evidence step is a learned closed-loop hidden-regime controller with a partial verdict;
+- reports now run from `01` through `96`;
+- the canonical runner is wired for `78` executable runs;
+- the newest evidence step is an option-gated learned hidden-regime controller with a partial verdict;
 - a separate live open-emergence sandbox now explores larger geography, multiple shelters, generic physical action primitives, lifecycle cost, abstract reproduction, dependent care, private beliefs, environment-inferred symbol categories, influence-weighted symbol adoption, invented sound tokens, terrain glyphs, conflict, discovered specializations, shifting resource reliability, stale-map pressure, disease strain, social inequality, and a long-horizon development phase before delayed major shocks;
 - the strongest result is still bounded simulation evidence;
 - the project has useful evidence, but not a finished proof of a general selfhood law.
@@ -128,6 +128,7 @@ The repo is not one experiment. It is a ladder of tests.
 | Long-horizon adaptation | [93](../93_ssrm_3d_long_horizon_adaptation_report.md) | Does the 12-hour development gate survive headless multi-seed verification? | Yes as a designed verifier: no major shocks before 12h, post-gate shock appears, agents survive, architecture/tools/teaching/risk memory improve, and targeted ablations create losses. It is not learned closed-loop evidence yet. |
 | Hidden-regime adaptation | [94](../94_ssrm_3d_hidden_regime_adaptation_report.md) | Can the world change its hidden rules after 12h without handing agents a label? | Yes as a designed verifier: agents receive noisy symptoms, not regime names, and the integrated condition passes hidden water, weather, food, tool, and social regime pressure. Ablations expose inference, teaching, reputation/influence, sanitation, weather, and tool-adaptation losses. |
 | Learned hidden-regime controller | [95](../95_ssrm_3d_learned_hidden_regime_controller_report.md) | Can a neural controller act closed-loop in that hidden-regime world? | Partly: the GRU learned controller acts in the world, preserves the 12h gate, survives hidden-regime activation, develops tools/infrastructure, transfers knowledge, and beats reactive control. It does not beat the frame model or pass clean ablation specificity. |
+| Option-gated hidden-regime controller | [96](../96_ssrm_3d_option_gated_hidden_regime_controller_report.md) | Does a learned response-option head improve hidden-regime control? | Partly: GRU response improves, targeted response rises, and regime-signal removal now hurts. The frame model still wins and social/culture ablation remains unstable. |
 
 ## What The Early Experiments Showed
 

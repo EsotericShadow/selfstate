@@ -16,7 +16,7 @@ A field-experienced software engineering controller improves a frontier LLM's ro
 
 ## Current Research Dependency
 
-This roadmap depends on a stronger simulator result than the project has today. Reports 111 and 112 are the caution. Report 111 shows that even plan-value labels from cloned simulator rollouts can be rejected by validation. Report 112 goes further: a diagnostic head can reach `0.991` offline label accuracy and still be selected off because using it worsens coupled online consequences. Report 113 is the first bounded positive bridge in that line: separate learned environmental and social action heads work only when joint arbitration keeps both repair channels alive. The software version should therefore be judged by real patch outcomes, hidden tests, review survival, regression reduction, and cost, not by whether the critic sounds plausible or predicts a plausible label.
+This roadmap depends on a stronger simulator result than the project has today. Reports 111 and 112 are the caution. Report 111 shows that even plan-value labels from cloned simulator rollouts can be rejected by validation. Report 112 goes further: a diagnostic head can reach `0.991` offline label accuracy and still be selected off because using it worsens coupled online consequences. Report 113 is the first bounded positive bridge in that line: separate learned environmental and social action heads work only when joint arbitration keeps both repair channels alive. Report 116 adds the product-relevant caution: a value selector can improve tune-world choice and still transfer worse than the seed/fixed allocator. The software version should therefore be judged by real patch outcomes, hidden tests, review survival, regression reduction, and cost, not by whether the critic sounds plausible, predicts a plausible label, or wins a narrow validation set.
 
 ## Why Software Is The Direct Money Path
 
@@ -125,6 +125,32 @@ Examples:
 ## Product Sequence
 
 Start with a reviewer, not a fully autonomous coder.
+
+## Commercial Claim Boundary
+
+The market-facing claim should not be:
+
+```text
+This system writes code.
+```
+
+That is already the baseline capability of frontier coding agents. The sellable claim is narrower and harder:
+
+```text
+The same frontier coding agent becomes a better software engineer when wrapped with a controller trained on executable repair consequences.
+```
+
+That has to show up in repo-level outcomes, not demos:
+
+- better root-cause localization before editing;
+- fewer symptom patches that pass shallow tests;
+- better choice of the next useful test;
+- fewer API, migration, security, and regression mistakes;
+- fewer review-rejection loops;
+- lower CI and token cost per accepted patch;
+- better performance on private/live repositories that were not in the training set.
+
+In this framing, the controller is a field-experience layer. The LLM still generates code, reads files, explains changes, and uses tools. The controller learns what kinds of repair paths survive real consequence.
 
 ### Product 1: Patch Critic / PR Reviewer
 

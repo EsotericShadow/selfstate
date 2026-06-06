@@ -126,6 +126,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D coupled crisis joint-arbitration report](docs/113_ssrm_3d_coupled_crisis_joint_arbitration_report.md): trains separate recurrent environmental and social action heads, then validation-selects joint quotas; held-out crisis score rises from `0.000` to `0.380`, resolved rate rises from `0.100` to `0.650`, and social/environment ablations collapse coupled response.
 - [SSRM-3D coupled crisis randomized-transfer report](docs/114_ssrm_3d_coupled_crisis_randomized_transfer_report.md): extends the joint-arbitration controller to 96h runs with randomized post-12h crisis schedules and initial world pressure; held-out crisis score rises from `0.000` to `0.706`, resolved rate rises from `0.067` to `0.967`, and both channel ablations collapse the transfer result.
 - [SSRM-3D coupled crisis adaptive allocator report](docs/115_ssrm_3d_coupled_crisis_adaptive_allocator_report.md): replaces fixed joint quotas with a compact return-searched adaptive allocator; it improves over return-selected and fixed-joint baselines but fails the stronger non-fixed-transfer gate.
+- [SSRM-3D coupled crisis policy/value allocator report](docs/116_ssrm_3d_coupled_crisis_policy_value_allocator_report.md): trains a value selector from closed-loop allocator-policy consequences; it improves tune selection and beats return-selected GRU, but fails held-out improvement over the seed/fixed allocator.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -1162,6 +1163,28 @@ This writes:
 - `artifacts/ssrm_3d_coupled_crisis_adaptive_allocator_results.json`
 - `artifacts/ssrm_3d_coupled_crisis_adaptive_allocator_trace.js`
 - `artifacts/ssrm_3d_coupled_crisis_adaptive_allocator_results.js`
+
+```bash
+python3 experiments/ssrm_3d_coupled_crisis_policy_value_allocator_controller.py --train-seeds 20260911,20260912,20260913,20260914,20260915,20260916 --tune-seeds 20261111,20261112,20261113 --eval-seeds 20261121,20261122,20261123,20261124,20261125 --hours 96 --step-hours 0.10 --population 14 --epochs 36 --hidden-size 64 --action-epochs 52 --action-hidden-size 64 --policy-value-samples 12 --policy-value-candidates 48 --policy-value-rollouts 5 --policy-value-epochs 180 --policy-value-hidden-size 64 --policy-value-sigma 0.52 --device auto --trace-seed 20261121
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_schedule.csv`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_base_training.csv`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_action_training.csv`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_router_selection.csv`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_policy_value_selection.csv`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_policy_value_training.csv`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_allocator_probes.csv`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_eval.csv`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_summary.csv`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_ablations.csv`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_verdict.csv`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_trace.json`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_results.json`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_trace.js`
+- `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_results.js`
 
 ```bash
 python3 experiments/ssrm_3d_hidden_regime_adaptation.py --seeds 20260713,20260714,20260715,20260716,20260717 --hours 16 --step-hours 0.05 --population 10 --trace-seed 20260713

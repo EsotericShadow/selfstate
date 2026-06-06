@@ -90,11 +90,36 @@ It returns:
 
 That is easier to prove and safer than a fully autonomous coding agent.
 
+## The Money Claim
+
+The product is not valuable because it can type code. Coding agents already do that.
+
+The product is valuable if it makes the same coding agent behave more like a careful senior engineer:
+
+- find the actual cause before patching;
+- avoid fixes that only satisfy the visible test;
+- choose the next test instead of wasting a full CI run;
+- spot hidden regressions before review;
+- keep the patch small enough to merge;
+- avoid changes that create security, migration, or API risk.
+
+So the test is simple:
+
+```text
+coding agent alone
+vs.
+coding agent plus field-experience controller
+```
+
+If the wrapped agent ships more accepted patches with fewer regressions, lower review time, and lower cost, the controller is commercially useful.
+
 ## What Is Not Proven Yet
 
 The current simulator does not yet prove that field-experience critics work. Reports 111 and 112 are the caution. A critic can be trained from cloned rollouts, or a diagnostic head can reach `0.991` offline label accuracy, and validation can still reject it because it does not improve held-out consequences.
 
 Report 113 adds one useful positive lesson: a controller can improve when it keeps multiple consequence channels active at the same time. In the simulation, separate environmental and social action heads need joint arbitration. In software, a root-cause critic would need the same kind of balance across tests, regression risk, API compatibility, review fit, and time cost.
+
+Report 116 adds the caution for product work: a value selector can win on the tune set and still transfer worse than a simple seed/fixed allocator. For software, that means a reviewer that looks good on a small validation set is not enough. It has to improve hidden tests, regressions, review outcomes, and cost on held-out repositories.
 
 For software, the controller has to prove itself on real outcomes: better patches, fewer regressions, stronger hidden-test performance, less review time, and lower debugging cost.
 

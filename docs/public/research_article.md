@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `74` runs, including the physics-first benchmark and settlement/civilization pressure layer.
+The canonical runner is now wired for `75` runs, including the physics-first benchmark, settlement/civilization pressure layer, and long-horizon adaptation verifier.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -206,6 +206,8 @@ The integrated settlement policy reaches `0.812` mean civilization score. Reacti
 The current live sandbox then removes the replay format. It shows agents in a larger top-down browser world with multiple shelters, visually distinct resource regions, generic construct/repair/modify/strike primitives, private belief and thought traces, environment-inferred symbol categories, influence-weighted symbol adoption, invented sound tokens, persistent terrain glyphs, optional synthesized audio, abstract reproduction, carrying cost, dependent offspring, inherited biological reserve, recovery through shelter/treatment, aging, death pressure, shifting resource reliability, stale-map pressure, disease strain, social inequality, and a long-horizon development phase before delayed major shocks.
 
 The newest pressure pass adds an adaptive-pressure ledger. It separates survival, ecology, infrastructure, social, and uncertainty pressure, then records adaptation evidence and adaptation quality. That makes the "becoming wise" idea testable: the next benchmark has to show better recovery under changing worlds, not just better-looking behavior in one replay.
+
+Report 93 then moves that milestone into a headless multi-seed verifier. Across five seeds, the integrated condition keeps the major-shock gate closed until `12h`, survives a post-gate shock, improves architecture and tool design, accumulates adaptation evidence, and transfers knowledge. Removing teaching, risk memory, infrastructure memory, tool improvement, adaptive arbitration, or persistent development creates specific losses. This is stronger than watching one browser run, but it is still designed simulation evidence rather than learned open-ended consciousness.
 
 ![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 

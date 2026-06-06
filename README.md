@@ -101,6 +101,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D open emergence sandbox](docs/90_ssrm_3d_open_emergence_sandbox.md): live non-canonical browser sandbox where agents start from traits, use generic primitives such as inspect, harvest, construct, repair, modify, strike, and signal, carry private belief/memory/thought traces, invent sound tokens and terrain glyphs, form inferred specializations, reproduce abstractly, care for dependents, recover under shelter/treatment, age, and die under world pressure.
 - [Environment-inferred symbol grounding note](docs/91_environment_inferred_symbol_grounding.md): records the first pass away from direct symbol labels by making sounds and glyphs point to agent-local latent categories inferred from environmental sensor signatures and outcomes, with influence-weighted convention pressure for names and marks.
 - [Long-horizon adaptation sandbox note](docs/92_ssrm_3d_long_horizon_adaptation_sandbox.md): slows the live sandbox into an overnight-scale development phase with 12-hour major-shock gating, gradual ecology, shifting resource reliability, stale map pressure, disease strain, social inequality, a pressure/adaptation ledger, infrastructure/tool improvement, teaching tradition, risk memory, operational wisdom/adaptation variables, and a browser audit hook for the 12h shock gate.
+- [SSRM-3D long-horizon adaptation report](docs/93_ssrm_3d_long_horizon_adaptation_report.md): adds a headless multi-seed verifier for the 12h shock gate, post-gate shock, infrastructure/tool development, teaching/knowledge transfer, risk memory, adaptation evidence, and targeted ablations.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -884,6 +885,20 @@ This writes:
 - `artifacts/ssrm_3d_civilization_pressure_trace.js`
 - `artifacts/ssrm_3d_civilization_pressure_results.js`
 - `visualizations/ssrm_3d_civilization_pressure.html` replays the settlement/civilization pressure trace when served from the repo root.
+
+```bash
+python3 experiments/ssrm_3d_long_horizon_adaptation.py --seeds 20260708,20260709,20260710,20260711,20260712 --hours 14.5 --step-hours 0.05 --population 10 --trace-seed 20260708
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_long_horizon_adaptation_eval.csv`
+- `artifacts/ssrm_3d_long_horizon_adaptation_summary.csv`
+- `artifacts/ssrm_3d_long_horizon_adaptation_verdict.csv`
+- `artifacts/ssrm_3d_long_horizon_adaptation_trace.json`
+- `artifacts/ssrm_3d_long_horizon_adaptation_results.json`
+- `artifacts/ssrm_3d_long_horizon_adaptation_trace.js`
+- `artifacts/ssrm_3d_long_horizon_adaptation_results.js`
 
 ```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2

@@ -1,0 +1,3 @@
+architecture,train_loss,action_accuracy,option_accuracy,device_used,parameter_count
+option_frame,2.805265188217163,0.5381250381469727,0.5498125553131104,mps,9364
+option_gru,2.704369306564331,0.5482500195503235,0.5691250562667847,mps,25492

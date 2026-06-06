@@ -1,0 +1,2 @@
+architecture,train_loss,repair_accuracy,active_repair_accuracy,non_none_repair_accuracy,device_used,parameter_count
+repair_gru,0.011587753891944885,0.9961250424385071,1.0,1.0,mps,12404

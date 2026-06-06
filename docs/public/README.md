@@ -22,11 +22,13 @@ It treats "self" as a persistent model of the acting system. That model can be e
 
 The current public status:
 
-- reports now run from `01` through `99`;
-- the canonical runner is wired for `81` executable runs;
-- the newest evidence step is a failed social credit-assignment controller: it responds to hidden social shocks, but it still spends too much of the recovery window on the wrong repair action;
+- reports now include Report `101`, with roadmap docs through `102`;
+- the canonical runner is wired for `82` executable runs;
+- the newest evidence step is a failed-but-improved social repair critic controller: targeted repair improves over Report 99, but the learned social/culture dependence is still not clean;
 - a separate live open-emergence sandbox now explores larger geography, multiple shelters, generic physical action primitives, lifecycle cost, abstract reproduction, dependent care, private beliefs, environment-inferred symbol categories, influence-weighted symbol adoption, invented sound tokens, terrain glyphs, conflict, discovered specializations, shifting resource reliability, stale-map pressure, disease strain, social inequality, and a long-horizon development phase before delayed major shocks;
 - the broader direction is an [accelerated agency and civilization testbed](agency_civilization_testbed.md), where the goal is to study what agents reliably reinvent under pressure;
+- the long-term product/research direction is [simulation-distilled reasoning for LLMs](sim_distilled_reasoning_controller.md), where simulation-trained critics guide LLM planning instead of replacing the LLM;
+- the most direct commercial path is [software field-experience controllers](software_field_experience_controller.md), where consequence-trained critics improve LLM coding agents on root-cause repair, tests, regressions, and review;
 - the strongest result is still bounded simulation evidence;
 - the project has useful evidence, but not a finished proof of a general selfhood law.
 
@@ -133,6 +135,7 @@ The repo is not one experiment. It is a ladder of tests.
 | Return-selected hidden-regime controller | [97](../97_ssrm_3d_return_selected_hidden_regime_controller_report.md) | Can validation return select a better learned controller setting? | Yes as a bounded precursor: validation return chooses the option bias, the selected GRU beats fixed bias, frame, and reactive controls on held-out worlds, and regime-signal, infrastructure, and body ablations create losses. It is still not gradient deep RL. |
 | Social/culture hidden-regime controller | [98](../98_ssrm_3d_social_culture_hidden_regime_controller_report.md) | Can the learned controller handle delayed hidden social/culture regimes? | Partly: the GRU strongly beats reactive control and only edges fixed-bias/frame controls across trust, symbol, coalition, teacher-loss, and rumor variants. The result remains partial because social/culture ablation is not clean across social response metrics. |
 | Social credit-assignment controller | [99](../99_ssrm_3d_social_credit_assignment_controller_report.md) | Can the learned controller choose the right social repair when wrong repairs consume the recovery window? | No, not yet. The GRU beats reactive, frame, and fixed-bias controls in total score, but targeted repair is low, wrong repair is high, and social/culture ablation improves several repair metrics. This is a useful failed boundary. |
+| Social repair critic controller | [101](../101_ssrm_3d_social_repair_critic_controller_report.md) | Can a learned repair critic improve the wrong-repair failure? | It improves the numbers but still fails the strong claim. Targeted repair rises from `0.287` to `0.402`, but social/culture ablation remains unstable and rumor correction still collapses. |
 
 ## What The Early Experiments Showed
 
@@ -281,6 +284,10 @@ This keeps language testable:
 - removing language should hurt slow planning and explanation more than reflex survival;
 - corrupting self-state should hurt control even if language remains available;
 - a language-only agent with no persistent self-state would weaken the architecture claim if it performed equally well.
+
+The long-term LLM direction is not to make the LLM the agent. It is to distill simulation-trained judgment into critics that help an LLM search, rank, and repair plans. See [The Long-Term Use: Simulation-Distilled Reasoning For LLMs](sim_distilled_reasoning_controller.md).
+
+The direct commercial version is software: use consequence-trained critics around coding agents so they choose better repairs, tests, and review decisions. See [The Commercial Path: Software Field-Experience Controllers](software_field_experience_controller.md).
 
 ## Attention, Emotion, And Control
 

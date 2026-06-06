@@ -248,3 +248,31 @@ Then analyze:
 The real prize is not proving that the agents are conscious.
 
 The real prize is discovering which parts of self, society, culture, and intelligence are control solutions that reappear whenever agents must persist through time together.
+
+## Downstream Use: Reasoning Controllers For LLMs
+
+A practical downstream use is to distill the best transferable agency judgment from the simulation into controllers around an LLM.
+
+The LLM should remain the language, abstraction, explanation, and code engine. The simulation-trained component should become a bounded critic or controller that scores candidate plans for:
+
+- self-state feasibility;
+- social credit assignment;
+- repair correctness;
+- time cost;
+- cascade risk;
+- option preservation;
+- commitment continuity.
+
+The long-term architecture is:
+
+```text
+LLM proposes candidate plans
+  -> simulation-distilled critics score consequence and repair fit
+  -> search keeps the strongest branches
+  -> verifiers and safety rules check constraints
+  -> LLM explains the selected plan
+```
+
+This turns the simulation into a possible source of non-linguistic agency priors. The future claim to test is whether critics distilled from accelerated embodied/social worlds improve LLM reasoning on held-out tasks such as false blame, project recovery, emergency triage, robotics planning, multi-agent workflow repair, and cascading operational failures.
+
+The companion roadmap is [The Long-Term Use: Simulation-Distilled Reasoning For LLMs](sim_distilled_reasoning_controller.md).

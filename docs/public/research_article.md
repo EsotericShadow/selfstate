@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `81` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, and social credit-assignment controller.
+The canonical runner is now wired for `82` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, social credit-assignment controller, and social repair critic controller.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -221,6 +221,8 @@ Report 98 attacks the remaining social/culture weakness. It turns social life in
 
 Report 99 makes that social test harsher. Different hidden social shocks now require different repair actions, and wrong repairs consume the scarce recovery window. This is a completed failed result: the GRU beats reactive, fixed-bias, and frame controls in total score, but targeted repair is only `0.287`, wrong repair is `0.713`, and social/culture ablation improves several repair metrics. The practical conclusion is that return-trained social credit assignment is now the bottleneck.
 
+Report 101 adds a learned repair critic around the Report 99 controller. It is progress but not a pass: score rises from `0.703` to `0.744`, targeted repair rises from `0.287` to `0.402`, and wrong repair falls from `0.713` to `0.598`. The claim still fails because social/culture ablation improves several repair metrics and rumor correction still collapses. The useful conclusion is sharper: the next step needs return-trained or actor-critic social repair, not only imitation-derived repair labels.
+
 ![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 
 That sandbox is a prototype for the next benchmark, not a new proof result. The important next step is to move the same pressures into closed-loop learned control with held-out worlds and targeted ablations.
@@ -234,6 +236,10 @@ The most valuable thing is not watching them win. It is watching what they relia
 That means measuring whether agents independently discover useful abstractions such as self-state, ownership, reputation, roles, warnings, teaching, tools, maps, norms, institutions, and externalized memory because the world punishes them when they do not.
 
 The companion plain-language roadmap is here: [The Bigger Use: An Accelerated Agency And Civilization Testbed](agency_civilization_testbed.md).
+
+The long-term LLM direction is here: [The Long-Term Use: Simulation-Distilled Reasoning For LLMs](sim_distilled_reasoning_controller.md). The point is not to make the LLM the simulated agent. The point is to distill agency, self-state feasibility, social repair, cascade-risk, and option-preservation critics from simulation traces, then use those critics to guide LLM planning and search.
+
+The direct commercial path is here: [The Commercial Path: Software Field-Experience Controllers](software_field_experience_controller.md). Software is a clean consequence domain: issue, repo state, patch, tests, review, deployment, and regressions. The product claim would be that consequence-trained critics make frontier coding agents better at root-cause localization, patch risk, test strategy, review fit, and regression avoidance.
 
 ## Visual Evidence Gallery
 
@@ -342,6 +348,8 @@ It also gives a practical architecture direction for future agents:
 - track continuity across interruption and memory repair;
 - treat affective state as control state, not proof of feeling;
 - make language a reasoning module, not the whole agent;
+- use simulation-trained critics to score candidate LLM plans by consequence, repair fit, self-state feasibility, and cascade risk;
+- specialize that idea for software by training repo-level critics for root-cause repair, tests, regressions, and code review;
 - require ablation evidence before calling any variable self-like.
 
 ## Where To Go Next

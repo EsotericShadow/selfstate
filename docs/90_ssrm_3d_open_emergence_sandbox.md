@@ -17,7 +17,9 @@ The sandbox removes the fixed-role replay structure from the settlement/civiliza
 - online neural action policies;
 - learned skill values;
 - generic action primitives rather than assigned jobs;
-- body-made sound patterns;
+- body-made sound patterns and invented sound tokens;
+- private belief maps, short memory traces, attention state, and deliberation summaries;
+- persistent ASCII glyph marks placed in the world for resources, paths, danger, shelter, repair, and tools;
 - abstract receptive/pair-bond state;
 - gestation, offspring, dependent-care, and death pressure.
 
@@ -58,6 +60,19 @@ The current action layer is deliberately primitive:
 
 Those primitives are not social roles. For example, `construct` can improve a shelter, garden, purifier, workshop, or tool cache depending on material availability and world need. `strike` can damage a nearby agent or a structure, and can become lethal under repeated conflict, but it also lowers trust and raises conflict.
 
+## Cognition, language, and marks
+
+The sandbox now adds a lightweight cognition layer. Each live agent carries:
+
+- imperfect private beliefs about places, value, danger, and recency;
+- current emotion, motive, attention target, uncertainty, and plan text;
+- a short thought trace and durable memory trace;
+- an invented sound lexicon that maps concepts such as water, food, danger, child, shelter, illness, and repair to local tokens;
+- learned token meanings from hearing other agents;
+- learned glyph meanings from reading marks in the world.
+
+Sounds and glyphs are grounded in consequences. A signal can teach nearby agents a token meaning, raise fear, increase attachment, unlock a relevant action, or spread attention. A glyph persists in the terrain and can teach future agents where food, water, danger, shelter, tools, or repairs matter. Optional browser audio turns emitted sound tokens into short synthesized tone sequences after the user enables audio.
+
 ## Current balance pass
 
 The enlarged map needs slower life-clock constants than the smaller prototype. The current sandbox therefore uses:
@@ -81,6 +96,7 @@ The sandbox is useful for design pressure, not final evidence. It tests whether 
 - aging and stress drain biological reserve;
 - poor shelter, illness, scarcity, and conflict shorten viable lifespan;
 - sound can spread attention and discovered action knowledge;
+- invented language and glyphs can alter attention, trust, fear, learned meanings, and action availability;
 - agents can construct, repair, modify, damage, injure, or kill through generic physical/social interfaces;
 - specializations emerge from action history rather than assigned roles.
 

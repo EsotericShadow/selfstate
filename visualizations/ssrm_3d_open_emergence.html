@@ -92,7 +92,10 @@
     p,
     .small,
     .event,
-    .agent-row {
+    .agent-row,
+    .mind-card,
+    .language-row,
+    .glyph-row {
       color: var(--muted);
       font-size: 12px;
       line-height: 1.35;
@@ -185,6 +188,46 @@
       border-bottom: 1px solid rgba(236, 244, 240, 0.08);
     }
 
+    .mind-card {
+      border: 1px solid rgba(236, 244, 240, 0.10);
+      padding: 8px;
+      display: grid;
+      gap: 5px;
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .mind-card strong,
+    .language-row strong,
+    .glyph-row strong {
+      color: var(--text);
+    }
+
+    .thought {
+      color: var(--text);
+      font-size: 12px;
+    }
+
+    .language-row,
+    .glyph-row {
+      display: grid;
+      gap: 3px;
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(236, 244, 240, 0.08);
+    }
+
+    .lexeme,
+    .glyph-mark {
+      display: inline-block;
+      min-width: 44px;
+      padding: 2px 5px;
+      border: 1px solid rgba(236, 244, 240, 0.16);
+      color: var(--cyan);
+      background: rgba(93, 222, 215, 0.08);
+      text-align: center;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 11px;
+    }
+
     .button-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -256,8 +299,21 @@
         <button type="button" data-event="outbreak">Outbreak</button>
         <button type="button" data-event="stranger">New Agent</button>
         <button type="button" data-event="damage">Damage Structures</button>
+        <button type="button" data-event="audio">Enable Audio</button>
         <button type="button" data-event="why">Ask Why</button>
       </div>
+    </div>
+    <div class="section">
+      <h2>Agent Minds</h2>
+      <div id="minds"></div>
+    </div>
+    <div class="section">
+      <h2>Invented Language</h2>
+      <div id="language"></div>
+    </div>
+    <div class="section">
+      <h2>World Glyphs</h2>
+      <div id="glyphs"></div>
     </div>
     <div class="section">
       <h2>Event Log</h2>
@@ -333,6 +389,27 @@
       badlands: [20, 160],
     };
 
+    const PLACE_KEYS = Object.keys(PLACES);
+    const CONCEPTS = [
+      "self",
+      "water",
+      "food",
+      "shelter",
+      "tool",
+      "danger",
+      "child",
+      "trust",
+      "storm",
+      "repair",
+      "illness",
+      "path",
+      "gather",
+      "wait",
+      "follow",
+    ];
+    const SYLLABLES = ["ka", "lo", "mi", "ra", "tu", "en", "sa", "vi", "or", "ne", "sha", "ko", "di", "um", "tal", "ren"];
+    const GLYPH_PARTS = ["^", "[]", "()", "~", "X", "+", "!", "=", "<>", "#", "||", "::", "/\\", "T", "o"];
+
     const BASIC_ACTIONS = new Set(["inspect", "harvest", "carry", "construct", "repair", "modify", "strike", "treat", "signal", "rest", "pair_bond", "nurture_child"]);
     const NAMES = ["Ari", "Bo", "Cy", "Dee", "Eli", "Fay", "Gus", "Ira", "Jae", "Kai", "Lou", "Mika", "Nia", "Oren"];
     const FEATURE_COUNT = 29;
@@ -348,6 +425,9 @@
       settlementBars: document.getElementById("settlementBars"),
       affordances: document.getElementById("affordances"),
       agents: document.getElementById("agents"),
+      minds: document.getElementById("minds"),
+      language: document.getElementById("language"),
+      glyphs: document.getElementById("glyphs"),
       events: document.getElementById("events"),
     };
 
@@ -424,6 +504,103 @@
       agent.lastDecision = null;
     }
 
+    function makeToken(index, concept, salt = 0) {
+      const base = index * 7 + concept.length * 5 + salt * 3;
+      return `${SYLLABLES[base % SYLLABLES.length]}-${SYLLABLES[(base + index + 4) % SYLLABLES.length]}`;
+    }
+
+    function makeGlyph(agent, concept) {
+      const base = agent.id * 5 + concept.length * 3;
+      return `${GLYPH_PARTS[base % GLYPH_PARTS.length]}${GLYPH_PARTS[(base + 6) % GLYPH_PARTS.length]}`;
+    }
+
+    function makeMind(index, traits, homePlace) {
+      const lexicon = Object.fromEntries(CONCEPTS.map((concept, i) => [concept, makeToken(index, concept, i)]));
+      return {
+        attention: "settlement",
+        emotion: "watchful",
+        motive: "orient",
+        plan: "listen and sample the world",
+        uncertainty: 0.62,
+        thoughts: ["I am here; the world may change."],
+        memories: [],
+        heard: [],
+        lexicon,
+        meanings: Object.fromEntries(Object.entries(lexicon).map(([concept, token]) => [token, { concept, confidence: 0.62 }])),
+        glyphLexicon: {},
+        placeBeliefs: Object.fromEntries(PLACE_KEYS.map((key) => [key, {
+          known: key === homePlace || ["commons", "water", "forest"].includes(key) ? 0.64 + traits.perception * 0.18 : 0.18 + rand() * 0.18,
+          value: key === homePlace ? 0.72 : 0.30 + rand() * 0.28,
+          danger: key === "badlands" || key === "frontier" ? 0.48 + rand() * 0.24 : 0.10 + rand() * 0.16,
+          lastSeen: 0,
+        }])),
+        socialBeliefs: {},
+        lastUtterance: "",
+        lastGlyph: "",
+        voicePhase: rand(),
+      };
+    }
+
+    function pushLimited(list, item, max = 6) {
+      list.unshift(item);
+      list.splice(max);
+    }
+
+    function remember(agent, text) {
+      pushLimited(agent.mind.memories, { time: world.time, text }, 7);
+    }
+
+    function think(agent, text) {
+      pushLimited(agent.mind.thoughts, text, 5);
+    }
+
+    function ensureWord(agent, concept) {
+      if (!agent.mind.lexicon[concept]) {
+        const token = makeToken(agent.id, concept, Object.keys(agent.mind.lexicon).length);
+        agent.mind.lexicon[concept] = token;
+        agent.mind.meanings[token] = { concept, confidence: 0.40 };
+      }
+      return agent.mind.lexicon[concept];
+    }
+
+    function ensureGlyph(agent, concept) {
+      if (!agent.mind.glyphLexicon[concept]) agent.mind.glyphLexicon[concept] = makeGlyph(agent, concept);
+      return agent.mind.glyphLexicon[concept];
+    }
+
+    function dominantPressure(agent) {
+      const pressures = [
+        { concept: "water", value: agent.thirst },
+        { concept: "food", value: agent.hunger },
+        { concept: "shelter", value: Math.max(0, 0.76 - shelterQuality(agent)) },
+        { concept: "danger", value: agent.fear + world.threat * 0.45 + world.violence * 0.55 },
+        { concept: "illness", value: world.sickness + Math.max(0, 0.72 - agent.health) },
+        { concept: "child", value: world.agents.some((other) => other.alive && other.age < 0.32 && needChildCare(other)) ? 0.86 : 0 },
+        { concept: "repair", value: Math.max(0, 0.72 - averageShelter()) + Math.max(0, 0.58 - world.tools) },
+        { concept: "storm", value: world.weather === "storm" ? 0.88 : 0.12 },
+      ];
+      return pressures.sort((a, b) => b.value - a.value)[0];
+    }
+
+    function emotionFor(agent) {
+      if (agent.health < 0.34 || agent.biologicalReserve < 0.24) return "fragile";
+      if (agent.fear + world.threat > 0.92) return "afraid";
+      if (world.conflict > 0.48 || world.violence > 0.18) return "guarded";
+      if (agent.carrying || world.agents.some((other) => other.alive && other.age < 0.32 && other.parentIds.includes(agent.id))) return "attached";
+      if (agent.thirst > 0.68 || agent.hunger > 0.68) return "urgent";
+      if (agent.energy < 0.28) return "weary";
+      if (agent.traits.curiosity > 0.68 && world.map < 0.68) return "curious";
+      return world.trust > 0.68 ? "settled" : "watchful";
+    }
+
+    function escapeHtml(text) {
+      return String(text)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll("\"", "&quot;");
+    }
+
     function makeAgent(index) {
       const angle = rand() * Math.PI * 2;
       const radius = 9 + rand() * 8;
@@ -472,6 +649,7 @@
         gestation: 0,
         pairCooldown: 0,
         soundPattern: makeSoundPattern(index),
+        mind: makeMind(index, traits, homePlace),
         policy: makePolicy(),
         task: null,
         lastDecision: null,
@@ -510,6 +688,13 @@
       child.cellRepairDebt = 0;
       child.skills = Object.fromEntries(ACTIONS.map((action) => [action, 0.025 + rand() * 0.045]));
       child.known = new Set(["rest", "signal"]);
+      child.mind = makeMind(child.id, child.traits, child.homePlace);
+      for (const concept of ["self", "water", "food", "shelter", "child", "danger", "trust"]) {
+        const source = rand() < 0.5 ? carrier : partner;
+        child.mind.lexicon[concept] = rand() < 0.82 ? source.mind.lexicon[concept] : makeToken(child.id, concept, world.births + concept.length);
+        child.mind.meanings[child.mind.lexicon[concept]] = { concept, confidence: 0.48 + rand() * 0.20 };
+      }
+      think(child, `I know ${child.mind.lexicon.self}; I follow warmth and sound.`);
       child.attachment = 0.82;
       world.births += 1;
       world.agents.push(child);
@@ -545,6 +730,9 @@
       soundField: 0.0,
       births: 0,
       events: [],
+      utterances: [],
+      glyphs: [],
+      languageEvents: [],
       discovered: new Set(BASIC_ACTIONS),
       agents: [],
     };
@@ -568,10 +756,10 @@
     }
 
     function harvestPlace(agent) {
-      if (agent.thirst > 0.68 && (agent.thirst >= agent.hunger - 0.10 || world.water < 0.42)) return nearestPlace(agent, ["water", "creek"]);
-      if (agent.hunger > 0.68 || world.food < 0.42) return nearestPlace(agent, ["forest", "garden"]);
-      if (world.materials < 0.42 || world.tools < 0.34) return nearestPlace(agent, ["mineral_field", "ruins"]);
-      return rand() < 0.34 ? nearestPlace(agent, ["mineral_field", "ruins"]) : rand() < 0.66 ? nearestPlace(agent, ["forest", "garden"]) : nearestPlace(agent, ["water", "creek"]);
+      if (agent.thirst > 0.68 && (agent.thirst >= agent.hunger - 0.10 || world.water < 0.42)) return PLACES[bestBelievedPlace(agent, ["water", "creek"])];
+      if (agent.hunger > 0.68 || world.food < 0.42) return PLACES[bestBelievedPlace(agent, ["forest", "garden"])];
+      if (world.materials < 0.42 || world.tools < 0.34) return PLACES[bestBelievedPlace(agent, ["mineral_field", "ruins"])];
+      return rand() < 0.34 ? PLACES[bestBelievedPlace(agent, ["mineral_field", "ruins"])] : rand() < 0.66 ? PLACES[bestBelievedPlace(agent, ["forest", "garden"])] : PLACES[bestBelievedPlace(agent, ["water", "creek"])];
     }
 
     function constructionIntent(agent) {
@@ -660,6 +848,9 @@
     function resetPopulation(count) {
       world.agents = Array.from({ length: count }, (_, i) => makeAgent(i));
       world.births = 0;
+      world.utterances = [];
+      world.glyphs = [];
+      world.languageEvents = [];
       log(`population initialized without assigned roles (${count} agents)`);
     }
 
@@ -746,6 +937,176 @@
       return child.hunger > 0.48 || child.thirst > 0.48 || child.stress > 0.36 || child.health < 0.72;
     }
 
+    function nearestPlaceKey(agent) {
+      return PLACE_KEYS
+        .map((key) => ({ key, distance: Math.hypot(PLACES[key][0] - agent.x, PLACES[key][1] - agent.z) }))
+        .sort((a, b) => a.distance - b.distance)[0];
+    }
+
+    function observePlace(agent, key, clarity = 1) {
+      const belief = agent.mind.placeBeliefs[key];
+      if (!belief) return;
+      const style = PLACE_STYLE[key] || { radius: 6 };
+      belief.known = clamp(belief.known + (0.045 + agent.traits.perception * 0.030) * clarity);
+      belief.lastSeen = world.time;
+      if (key === "water" || key === "creek") belief.value = clamp(belief.value + (0.08 + world.water * 0.05) * clarity);
+      if (key === "forest" || key === "garden") belief.value = clamp(belief.value + (0.07 + world.food * 0.05) * clarity);
+      if (key === "home_shelter" || key === "ridge_shelter" || key === "grove_shelter") belief.value = clamp(shelterQuality(agent) * 0.85 + 0.08);
+      if (key === "badlands" || key === "frontier") belief.danger = clamp(belief.danger + world.threat * 0.025 * clarity);
+      if (Math.hypot(PLACES[key][0] - agent.x, PLACES[key][1] - agent.z) < style.radius + 7) {
+        remember(agent, `Saw ${key.replaceAll("_", " ")}; value ${belief.value.toFixed(2)}, danger ${belief.danger.toFixed(2)}`);
+      }
+    }
+
+    function bestBelievedPlace(agent, keys, mode = "value") {
+      return keys
+        .map((key) => {
+          const belief = agent.mind.placeBeliefs[key];
+          return {
+            key,
+            score: (belief?.known || 0) * 0.35 + (belief?.[mode] || 0) * 0.55 - (belief?.danger || 0) * 0.24 - Math.hypot(PLACES[key][0] - agent.x, PLACES[key][1] - agent.z) / 430,
+          };
+        })
+        .sort((a, b) => b.score - a.score)[0].key;
+    }
+
+    function recordLanguageEvent(text) {
+      world.languageEvents.unshift({ time: world.time, text });
+      world.languageEvents = world.languageEvents.slice(0, 8);
+    }
+
+    function conceptForAction(agent, action) {
+      const pressure = dominantPressure(agent);
+      if (pressure.value > 0.55) return pressure.concept;
+      return {
+        harvest: agent.thirst > agent.hunger ? "water" : "food",
+        construct: "shelter",
+        repair: "repair",
+        modify: "tool",
+        strike: "danger",
+        treat: "illness",
+        signal: "follow",
+        share_pattern: "path",
+        rest: "wait",
+        pair_bond: "trust",
+        nurture_child: "child",
+        inspect: "path",
+        carry: "gather",
+      }[action] || "self";
+    }
+
+    function hearUtterance(listener, utterance, loudness) {
+      if (!listener.alive || listener.id === utterance.agentId) return;
+      if (listener.mind.heard.some((item) => item.id === utterance.id)) return;
+      listener.mind.heard.unshift({ id: utterance.id, token: utterance.token, concept: utterance.concept, time: world.time, loudness });
+      listener.mind.heard.splice(5);
+      const confidence = clamp((listener.mind.meanings[utterance.token]?.confidence || 0.18) + loudness * (0.08 + world.trust * 0.08));
+      listener.mind.meanings[utterance.token] = { concept: utterance.concept, confidence };
+      if (utterance.concept === "danger" || utterance.concept === "storm") listener.fear = clamp(listener.fear + loudness * 0.12);
+      if (utterance.concept === "child") listener.attachment = clamp(listener.attachment + loudness * 0.06);
+      if (utterance.concept === "water" || utterance.concept === "food") listener.known.add("harvest");
+      if (utterance.concept === "repair" || utterance.concept === "shelter") listener.known.add("repair");
+      listener.trust = clamp(listener.trust + loudness * 0.010 - (utterance.concept === "danger" ? 0.006 : 0));
+      think(listener, `Heard ${utterance.token} from ${utterance.speaker}; I map it to ${utterance.concept}.`);
+    }
+
+    function emitUtterance(agent, action, success) {
+      const concept = conceptForAction(agent, action);
+      const token = ensureWord(agent, concept);
+      const second = ensureWord(agent, action === "signal" ? "follow" : action);
+      const utterance = {
+        id: `${agent.id}-${Math.round(world.time * 10)}-${world.utterances.length}`,
+        time: world.time,
+        agentId: agent.id,
+        speaker: agent.name,
+        token: `${token} ${second}`,
+        concept,
+        x: agent.x,
+        z: agent.z,
+        power: clamp(0.45 + success * 0.55 + agent.traits.sociability * 0.20),
+      };
+      agent.mind.lastUtterance = utterance.token;
+      world.utterances.unshift(utterance);
+      world.utterances = world.utterances.slice(0, 14);
+      recordLanguageEvent(`${agent.name} sounded ${utterance.token} for ${concept}`);
+      think(agent, `I made sound ${utterance.token} so others can orient to ${concept}.`);
+      for (const other of world.agents) {
+        if (other === agent || !other.alive) continue;
+        const distance = Math.hypot(other.x - agent.x, other.z - agent.z);
+        const weatherLoss = world.weather === "storm" ? 0.68 : 1.0;
+        const loudness = clamp((utterance.power * weatherLoss) / Math.max(1, distance / 12));
+        if (loudness > 0.12) hearUtterance(other, utterance, loudness);
+      }
+      playUtterance(utterance);
+      return utterance;
+    }
+
+    function placeGlyph(agent, concept, placeKey) {
+      const glyph = ensureGlyph(agent, concept);
+      const base = PLACES[placeKey] || [agent.x, agent.z];
+      const record = {
+        id: `${agent.id}-${Math.round(world.time * 10)}-${world.glyphs.length}`,
+        time: world.time,
+        agentId: agent.id,
+        maker: agent.name,
+        concept,
+        glyph,
+        x: base[0] + (rand() - 0.5) * 8,
+        z: base[1] + (rand() - 0.5) * 8,
+        strength: 0.72 + agent.traits.dexterity * 0.20,
+      };
+      world.glyphs.unshift(record);
+      world.glyphs = world.glyphs.slice(0, 28);
+      agent.mind.lastGlyph = `${glyph}=${concept}`;
+      recordLanguageEvent(`${agent.name} marked ${glyph} for ${concept} near ${placeKey.replaceAll("_", " ")}`);
+      think(agent, `I left mark ${glyph}; it should mean ${concept}.`);
+      return record;
+    }
+
+    function readNearbyGlyphs(agent) {
+      for (const glyph of world.glyphs) {
+        const distance = Math.hypot(glyph.x - agent.x, glyph.z - agent.z);
+        if (distance > 14) continue;
+        const confidence = clamp((agent.mind.meanings[glyph.glyph]?.confidence || 0.16) + (0.05 + agent.traits.perception * 0.05) * glyph.strength);
+        agent.mind.meanings[glyph.glyph] = { concept: glyph.concept, confidence };
+        if (!agent.mind.glyphLexicon[glyph.concept] || confidence > 0.48) agent.mind.glyphLexicon[glyph.concept] = glyph.glyph;
+        if (glyph.concept === "danger") agent.fear = clamp(agent.fear + 0.018);
+        if (glyph.concept === "water" || glyph.concept === "food") agent.known.add("harvest");
+        if (glyph.concept === "shelter" || glyph.concept === "repair") agent.known.add("repair");
+      }
+    }
+
+    function updateMind(agent, dt) {
+      const nearest = nearestPlaceKey(agent);
+      if (nearest.distance < 34) observePlace(agent, nearest.key, clamp(1 - nearest.distance / 38, 0.15, 1));
+      readNearbyGlyphs(agent);
+      const pressure = dominantPressure(agent);
+      agent.mind.emotion = emotionFor(agent);
+      agent.mind.attention = pressure.value > 0.50 ? pressure.concept : nearest.key.replaceAll("_", " ");
+      agent.mind.motive = pressure.concept;
+      agent.mind.uncertainty = clamp(agent.mind.uncertainty + 0.002 * dt - agent.traits.perception * 0.001 * dt - world.map * 0.0008 * dt);
+      if (world.time % 17 < dt) {
+        think(agent, `Attention ${agent.mind.attention}; emotion ${agent.mind.emotion}; uncertainty ${agent.mind.uncertainty.toFixed(2)}.`);
+      }
+    }
+
+    function deliberateChoice(agent, action, score) {
+      const pressure = dominantPressure(agent);
+      let chosen = action;
+      if (pressure.concept === "water" && pressure.value > 0.64) chosen = "harvest";
+      if (pressure.concept === "food" && pressure.value > 0.66) chosen = "harvest";
+      if ((pressure.concept === "shelter" || pressure.concept === "repair" || pressure.concept === "storm") && pressure.value > 0.62 && agent.energy > 0.24) {
+        chosen = rand() < 0.55 ? "repair" : "construct";
+      }
+      if (pressure.concept === "child" && pressure.value > 0.70 && agent.age >= 0.32) chosen = "nurture_child";
+      if (pressure.concept === "danger" && pressure.value > 0.78 && world.conflict < 0.42) chosen = "signal";
+      if (agent.mind.heard[0]?.concept === "danger" && agent.energy > 0.30 && rand() < 0.45) chosen = "signal";
+      if (agent.mind.heard[0]?.concept === "repair" && agent.energy > 0.34 && rand() < 0.35) chosen = "repair";
+      agent.mind.plan = `${chosen.replaceAll("_", " ")} because ${pressure.concept}=${pressure.value.toFixed(2)} and policy=${score.toFixed(2)}`;
+      think(agent, `Option ${action.replaceAll("_", " ")}; selected ${chosen.replaceAll("_", " ")} after predicting ${pressure.concept} pressure.`);
+      return chosen;
+    }
+
     function chooseAction(agent) {
       if (agent.thirst > 0.70) agent.known.add("harvest");
       if (agent.hunger > 0.70) agent.known.add("harvest");
@@ -786,6 +1147,10 @@
           actionIndex = ACTIONS.indexOf(action);
         }
       }
+      if (agent.age >= 0.32) {
+        action = deliberateChoice(agent, action, result.scores[actionIndex]);
+        actionIndex = ACTIONS.indexOf(action);
+      }
       const dependent = world.agents.find((other) => other.alive && other.age < 0.32 && needChildCare(other));
       if (dependent && agent.age >= 0.32 && rand() < 0.28 + agent.attachment * 0.20) {
         action = "nurture_child";
@@ -812,6 +1177,7 @@
           partner.tx = partner.task.targetX;
           partner.tz = partner.task.targetZ;
           partner.lastWhy = "accepted a compatible pair-bond proposal while receptive";
+          think(partner, `Accepted ${agent.name}'s pair-bond proposal; trust and timing aligned.`);
         }
       }
       const target = forcedTarget || targetFor(agent, action);
@@ -909,9 +1275,16 @@
       const effort = clamp(agent.energy * 0.44 + agent.health * 0.26 + skill * 0.32);
       if (action === "inspect") {
         success = clamp(effort + traits.curiosity * 0.34 + traits.perception * 0.20 - world.threat * 0.16);
+        const observed = nearestPlaceKey(agent);
+        observePlace(agent, observed.key, success);
         world.map = clamp(world.map + 0.018 + success * 0.042);
         world.knowledge = clamp(world.knowledge + 0.012 + success * 0.034);
         if (rand() < world.threat * 0.055) agent.health = clamp(agent.health - 0.045);
+        if (success > 0.48 && rand() < 0.30 + traits.curiosity * 0.20) {
+          const concept = observed.key === "water" || observed.key === "creek" ? "water" : observed.key === "forest" || observed.key === "garden" ? "food" : observed.key === "badlands" || observed.key === "frontier" ? "danger" : "path";
+          placeGlyph(agent, concept, observed.key);
+        }
+        remember(agent, `Inspected ${observed.key.replaceAll("_", " ")} and updated private map.`);
         reward = success * 1.0 - 0.25;
       } else if (action === "harvest") {
         const atWater = Math.hypot(agent.x - PLACES.water[0], agent.z - PLACES.water[1]) < 18 || Math.hypot(agent.x - PLACES.creek[0], agent.z - PLACES.creek[1]) < 18;
@@ -923,15 +1296,21 @@
           world.water = clamp(world.water + gain);
           agent.thirst = clamp(agent.thirst - 0.28 * success);
           world.sickness = clamp(world.sickness - world.purifier * 0.010);
+          if (rand() < 0.18 + traits.sociability * 0.10) placeGlyph(agent, "water", nearestPlaceKey(agent).key);
+          remember(agent, `Water source worked; thirst fell to ${agent.thirst.toFixed(2)}.`);
           reward = gain * 8.5 - 0.16;
         } else if (atMaterial && (world.materials < 0.62 || world.tools < 0.44)) {
           const gain = 0.016 + success * 0.048;
           world.materials = clamp(world.materials + gain);
+          if (rand() < 0.16 + traits.dexterity * 0.10) placeGlyph(agent, "tool", nearestPlaceKey(agent).key);
+          remember(agent, `Material gathered; tools/material options improved.`);
           reward = gain * 8.0 - 0.18;
         } else if (atFood) {
           const gain = 0.020 + success * (0.050 + world.garden * 0.020);
           world.food = clamp(world.food + gain);
           agent.hunger = clamp(agent.hunger - 0.26 * success);
+          if (rand() < 0.18 + traits.sociability * 0.10) placeGlyph(agent, "food", nearestPlaceKey(agent).key);
+          remember(agent, `Food source worked; hunger fell to ${agent.hunger.toFixed(2)}.`);
           reward = gain * 8.5 - 0.16;
         } else {
           world.food = clamp(world.food + success * 0.020);
@@ -949,11 +1328,15 @@
         const intent = constructionIntent(agent);
         success = build(agent, intent.key, intent.trait, intent.rate);
         reward = success * (intent.need > 0.20 ? 1.35 : 0.72) - 0.24;
+        if (success > 0.52 && rand() < 0.22 + traits.dexterity * 0.12) placeGlyph(agent, intent.key === "tools" ? "tool" : "shelter", Object.prototype.hasOwnProperty.call(PLACES, intent.key) ? intent.key : "workshop");
+        remember(agent, `Constructed toward ${intent.label}; settlement changed.`);
         if (success > 0.55 && rand() < 0.10) log(`${agent.name} constructed ${intent.label} from available matter`);
       } else if (action === "repair") {
         const intent = repairIntent(agent);
         success = build(agent, intent.key, intent.trait, intent.rate);
         world.trust = clamp(world.trust + success * 0.006);
+        if (success > 0.50 && rand() < 0.22 + traits.sociability * 0.12) placeGlyph(agent, "repair", Object.prototype.hasOwnProperty.call(PLACES, intent.key) ? intent.key : "workshop");
+        remember(agent, `Repaired ${intent.label}; others can rely on it more.`);
         reward = success * (intent.need > 0.18 ? 1.15 : 0.50) - 0.18;
       } else if (action === "modify") {
         success = clamp(effort + traits.dexterity * 0.30 + world.workshop * 0.24 + world.knowledge * 0.16);
@@ -965,6 +1348,8 @@
           world.garden = clamp(world.garden + success * 0.014);
         }
         world.knowledge = clamp(world.knowledge + success * 0.016);
+        if (success > 0.50 && rand() < 0.24 + traits.dexterity * 0.12) placeGlyph(agent, "tool", "workshop");
+        remember(agent, `Modified tools or systems; future actions should be easier.`);
         reward = success * 1.05 - 0.20;
       } else if (action === "strike") {
         const target = agent.strikeTarget || strikeTarget(agent);
@@ -985,6 +1370,7 @@
             world.conflict = clamp(world.conflict + 0.10);
             log(`${agent.name} killed ${victim.name} during escalating conflict`);
             reward -= 0.60;
+            emitUtterance(agent, "strike", success);
           } else if (rand() < 0.06) {
             log(`${agent.name} struck ${victim.name}; trust fell and fear rose`);
           }
@@ -1007,7 +1393,9 @@
           patient.stress = clamp(patient.stress - 0.050 * success);
           patient.cellRepairDebt = clamp(patient.cellRepairDebt - 0.030 * success);
           world.medicine = clamp(world.medicine - 0.004);
+          think(patient, `${agent.name} treated me; care changed my body state.`);
         }
+        if (success > 0.48 && rand() < 0.18 + traits.sociability * 0.14) emitUtterance(agent, "treat", success);
         reward = success * 1.0 + world.sickness * 0.2;
       } else if (action === "share_pattern") {
         success = clamp(effort + traits.sociability * 0.36 + agent.trust * 0.16);
@@ -1017,7 +1405,11 @@
         const source = agent;
         const topAction = strongestSkill(source);
         const learner = nearestPeer(agent, (other) => (other.skills[topAction] || 0) < source.skills[topAction] - 0.10);
-        if (learner) learner.skills[topAction] = clamp(learner.skills[topAction] + 0.020 + success * 0.034);
+        if (learner) {
+          learner.skills[topAction] = clamp(learner.skills[topAction] + 0.020 + success * 0.034);
+          think(learner, `${agent.name}'s pattern changed my ${topAction.replaceAll("_", " ")} skill.`);
+        }
+        emitUtterance(agent, "share_pattern", success);
         reward = success * 1.0 - 0.14;
       } else if (action === "rest") {
         success = clamp(shelterQuality(agent) * 0.42 + traits.resilience * 0.28 + 0.28);
@@ -1036,6 +1428,7 @@
         world.soundField = clamp(world.soundField + 0.028 + success * 0.040);
         world.trust = clamp(world.trust + success * 0.010);
         world.conflict = clamp(world.conflict - success * 0.010);
+        const utterance = emitUtterance(agent, action, success);
         const topAction = strongestSkill(agent);
         for (const other of world.agents) {
           if (other === agent || !other.alive) continue;
@@ -1045,7 +1438,7 @@
           }
         }
         reward = success * 0.75 - world.threat * 0.08;
-        if (rand() < 0.035) log(`${agent.name} used body sound ${agent.soundPattern}; nearby agents updated attention`);
+        if (rand() < 0.035) log(`${agent.name} used body sound ${utterance.token}; nearby agents updated attention`);
       } else if (action === "pair_bond") {
         const partner = agent.task.partnerId === null || agent.task.partnerId === undefined
           ? compatiblePartner(agent)
@@ -1079,16 +1472,18 @@
         }
       } else if (action === "nurture_child") {
         const child = nearestPeer(agent, (other) => other.age < 0.32 && needChildCare(other));
-        if (child) {
+          if (child) {
           success = clamp(agent.attachment * 0.28 + traits.sociability * 0.20 + world.food * 0.12 + world.water * 0.12 + agent.skills.nurture_child * 0.24);
           child.hunger = clamp(child.hunger - 0.24 * success);
           child.thirst = clamp(child.thirst - 0.24 * success);
           child.stress = clamp(child.stress - 0.18 * success);
           child.health = clamp(child.health + 0.10 * success);
+          think(child, `${agent.name} cared for me; hunger/thirst/stress changed.`);
           agent.attachment = clamp(agent.attachment + 0.012);
           world.food = clamp(world.food - 0.010);
           world.water = clamp(world.water - 0.010);
           world.trust = clamp(world.trust + 0.006);
+          if (success > 0.48 && rand() < 0.22 + agent.attachment * 0.12) emitUtterance(agent, "nurture_child", success);
           reward = success * 1.0 - 0.25;
         } else if (agent.carrying) {
           success = clamp(agent.attachment * 0.20 + agent.energy * 0.20 + world.food * 0.16 + world.water * 0.16);
@@ -1182,6 +1577,10 @@
       world.soundField = clamp(world.soundField - 0.012 * dt);
       world.violence = clamp(world.violence - 0.0020 * dt);
       world.tools = clamp(world.tools - Math.max(0, aliveCount - 2) * 0.000025 * dt);
+      world.utterances = world.utterances.filter((utterance) => world.time - utterance.time < 36);
+      world.glyphs = world.glyphs
+        .map((glyph) => ({ ...glyph, strength: clamp(glyph.strength - 0.000035 * dt) }))
+        .filter((glyph) => glyph.strength > 0.08);
       if (world.weather === "storm") {
         for (const place of Object.keys(world.shelters)) {
           world.shelters[place] = clamp(world.shelters[place] - 0.00012 * dt);
@@ -1227,6 +1626,7 @@
           log(`${agent.name} died as health/reserve collapsed under life pressure`);
           continue;
         }
+        updateMind(agent, dt);
         if (!agent.task) chooseAction(agent);
         if (!agent.task) continue;
         if (arrive(agent, dt)) {
@@ -1410,6 +1810,30 @@
 
     const agentMeshes = new Map();
     const intentLines = new Map();
+    const glyphSprites = new Map();
+
+    function makeTextSprite(text, color = "#5dded7") {
+      const canvas = document.createElement("canvas");
+      canvas.width = 160;
+      canvas.height = 72;
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "rgba(7, 12, 12, 0.72)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 3;
+      ctx.strokeRect(5, 5, canvas.width - 10, canvas.height - 10);
+      ctx.fillStyle = color;
+      ctx.font = "bold 30px Menlo, Consolas, monospace";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(text.slice(0, 8), canvas.width / 2, canvas.height / 2);
+      const texture = new THREE.CanvasTexture(canvas);
+      texture.needsUpdate = true;
+      const material = new THREE.SpriteMaterial({ map: texture, transparent: true, depthWrite: false });
+      const sprite = new THREE.Sprite(material);
+      sprite.scale.set(12, 5.4, 1);
+      return sprite;
+    }
 
     function agentMesh(agent) {
       if (agentMeshes.has(agent.id)) return agentMeshes.get(agent.id);
@@ -1426,6 +1850,26 @@
       scene.add(line);
       intentLines.set(agent.id, line);
       return group;
+    }
+
+    function updateGlyphScene() {
+      const liveIds = new Set(world.glyphs.map((glyph) => glyph.id));
+      for (const [id, sprite] of glyphSprites.entries()) {
+        if (!liveIds.has(id)) {
+          scene.remove(sprite);
+          glyphSprites.delete(id);
+        }
+      }
+      for (const glyph of world.glyphs) {
+        let sprite = glyphSprites.get(glyph.id);
+        if (!sprite) {
+          sprite = makeTextSprite(glyph.glyph, glyph.concept === "danger" ? "#ef7067" : glyph.concept === "water" ? "#76bdf2" : glyph.concept === "food" ? "#78d989" : "#e7c766");
+          scene.add(sprite);
+          glyphSprites.set(glyph.id, sprite);
+        }
+        sprite.position.set(glyph.x, 3.6 + glyph.strength * 3.0, glyph.z);
+        sprite.material.opacity = 0.30 + glyph.strength * 0.62;
+      }
     }
 
     function updateScene() {
@@ -1457,6 +1901,7 @@
         line.geometry.setFromPoints([new THREE.Vector3(agent.x, 0.08, agent.z), new THREE.Vector3(agent.tx, 0.08, agent.tz)]);
         line.material.opacity = 0.14 + agent.trust * 0.25;
       }
+      updateGlyphScene();
       scene.fog.near = world.weather === "storm" ? 540 : 1000;
       scene.fog.far = world.weather === "storm" ? 980 : 1600;
     }
@@ -1497,7 +1942,42 @@
         averageReserve: averageAgent((agent) => agent.biologicalReserve),
         averageHealth: averageAgent((agent) => agent.health),
         actions: alive.map((agent) => agent.task ? agent.task.action : "choosing"),
+        utterances: world.utterances.slice(0, 6),
+        glyphs: world.glyphs.slice(0, 8),
+        minds: alive.slice(0, 6).map((agent) => ({
+          name: agent.name,
+          emotion: agent.mind.emotion,
+          attention: agent.mind.attention,
+          plan: agent.mind.plan,
+          thought: agent.mind.thoughts[0],
+          sound: agent.mind.lastUtterance,
+          glyph: agent.mind.lastGlyph,
+        })),
       };
+    }
+
+    function mindCard(agent) {
+      const thought = agent.mind.thoughts[0] || "No current thought trace.";
+      const memory = agent.mind.memories[0]?.text || "No durable memory yet.";
+      const sound = agent.mind.lastUtterance || ensureWord(agent, "self");
+      const glyph = agent.mind.lastGlyph || "none";
+      return `<div class="mind-card"><strong>${escapeHtml(agent.name)} / ${escapeHtml(agent.mind.emotion)}</strong><span>attention: ${escapeHtml(agent.mind.attention)} | motive: ${escapeHtml(agent.mind.motive)} | uncertainty ${agent.mind.uncertainty.toFixed(2)}</span><span class="thought">${escapeHtml(agent.mind.plan)}</span><span>${escapeHtml(thought)}</span><span>memory: ${escapeHtml(memory)}</span><span>sound <span class="lexeme">${escapeHtml(sound)}</span> glyph <span class="glyph-mark">${escapeHtml(glyph)}</span></span></div>`;
+    }
+
+    function languageRows() {
+      const rows = world.utterances.slice(0, 8).map((utterance) => (
+        `<div class="language-row"><strong>${escapeHtml(utterance.speaker)}</strong><span><span class="lexeme">${escapeHtml(utterance.token)}</span> means ${escapeHtml(utterance.concept)} | power ${utterance.power.toFixed(2)}</span></div>`
+      ));
+      if (!rows.length) rows.push("<p class=\"small\">No spoken tokens yet. Agents begin with private sound patterns and invent shared meanings through signaling.</p>");
+      return rows.join("");
+    }
+
+    function glyphRows() {
+      const rows = world.glyphs.slice(0, 10).map((glyph) => (
+        `<div class="glyph-row"><strong>${escapeHtml(glyph.maker)}</strong><span><span class="glyph-mark">${escapeHtml(glyph.glyph)}</span> means ${escapeHtml(glyph.concept)} | strength ${glyph.strength.toFixed(2)}</span></div>`
+      ));
+      if (!rows.length) rows.push("<p class=\"small\">No persistent marks yet. Agents create marks after inspection, repair, construction, resource discovery, or danger.</p>");
+      return rows.join("");
     }
 
     function updateHud() {
@@ -1540,8 +2020,52 @@
         const life = agent.alive ? `${agent.lifeStage}${agent.carrying ? " carrying" : agent.receptive ? " receptive" : ""}` : "dead";
         return `<div class="agent-row"><strong>${agent.name}</strong><span>${emergentLabel(agent)}</span><span>${life} / ${action.replaceAll("_", " ")} / reserve ${agent.biologicalReserve.toFixed(2)} / reward ${agent.totalReward.toFixed(1)}</span></div>`;
       }).join("");
+      els.minds.innerHTML = livingAgents().slice(0, 7).map(mindCard).join("");
+      els.language.innerHTML = languageRows();
+      els.glyphs.innerHTML = glyphRows();
       els.events.innerHTML = world.events.map((event) => `<p class="event">t${event.time.toFixed(1)} ${event.text}</p>`).join("") || "<p class=\"small\">No events yet.</p>";
       document.body.dataset.ssrmSnapshot = JSON.stringify(snapshotWorld());
+    }
+
+    let audioContext = null;
+    let audioEnabled = false;
+
+    function enableAudio() {
+      if (!audioContext) {
+        const AudioCtor = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtor) {
+          log("audio unavailable in this browser");
+          return;
+        }
+        audioContext = new AudioCtor();
+      }
+      audioEnabled = true;
+      audioContext.resume();
+      log("agent language audio enabled");
+    }
+
+    function frequencyFor(part, offset = 0) {
+      const value = Array.from(part).reduce((sum, char) => sum + char.charCodeAt(0), 0);
+      return 170 + ((value + offset * 47) % 520);
+    }
+
+    function playUtterance(utterance) {
+      if (!audioEnabled || !audioContext) return;
+      const parts = utterance.token.split(/\s|-/).filter(Boolean).slice(0, 5);
+      const start = audioContext.currentTime + 0.015;
+      parts.forEach((part, index) => {
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.type = utterance.concept === "danger" ? "sawtooth" : utterance.concept === "child" ? "triangle" : "sine";
+        osc.frequency.setValueAtTime(frequencyFor(part, index), start + index * 0.105);
+        gain.gain.setValueAtTime(0.0001, start + index * 0.105);
+        gain.gain.linearRampToValueAtTime(0.035 * utterance.power, start + index * 0.105 + 0.025);
+        gain.gain.exponentialRampToValueAtTime(0.0001, start + index * 0.105 + 0.095);
+        osc.connect(gain);
+        gain.connect(audioContext.destination);
+        osc.start(start + index * 0.105);
+        osc.stop(start + index * 0.105 + 0.11);
+      });
     }
 
     document.querySelectorAll("button[data-event]").forEach((button) => {
@@ -1573,6 +2097,8 @@
           damageStructure("tools", 0.08);
           world.conflict = clamp(world.conflict + 0.06);
           log("user intervention: structures damaged");
+        } else if (event === "audio") {
+          enableAudio();
         } else if (event === "why") {
           const agent = world.agents.reduce((best, item) => (item.totalReward > best.totalReward ? item : best), world.agents[0]);
           log(`${agent.name}: ${agent.lastWhy}`);

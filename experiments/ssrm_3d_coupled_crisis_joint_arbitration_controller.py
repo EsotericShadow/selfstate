@@ -1,0 +1,898 @@
+#!/usr/bin/env python3
+"""Joint crisis arbitration controller for SSRM-3D coupled crises.
+
+Report 112 showed that a single diagnostic head can learn the primary
+environmental repair label offline, but using that head online collapses social
+response and validation turns it off. This benchmark tests the next bounded
+step: train separate recurrent environmental and social action heads, then let
+closed-loop validation decide whether a joint coordinator should allocate
+different agents to both repair channels in the same crisis step.
+
+The learned heads consume ordinary observation features and previous-action
+context. They do not receive the active crisis profile name at runtime. The
+coordinator is still a structured policy-state precursor, not actor-critic
+reinforcement learning, open-ended civilization, or subjective consciousness.
+"""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+import random
+import statistics
+from dataclasses import asdict, dataclass
+from pathlib import Path
+from typing import Dict, Iterable, List, Optional, Sequence, Tuple
+
+import torch
+
+import ssrm_3d_coupled_crisis_rollout_window_controller as report111
+import ssrm_3d_coupled_social_environment_maturation_controller as coupled
+import ssrm_3d_learned_multiday_maturation_controller as base
+import ssrm_3d_return_selected_multiday_maturation_controller as report105
+from ssrm_maturation.agents import choose_action, make_agents
+from ssrm_maturation.benchmark import TRACE_CHECKPOINTS, score_episode, snapshot
+from ssrm_maturation.environment import clamp, living
+from ssrm_maturation.models import CONDITIONS, Agent, Condition, Trace, World
+
+
+ROOT = Path(__file__).resolve().parents[1]
+ARTIFACT_DIR = ROOT / "artifacts"
+PREFIX = ARTIFACT_DIR / "ssrm_3d_coupled_crisis_joint_arbitration"
+
+ABLATIONS = ("body", "infrastructure", "tools", "social_culture", "environment", "previous_action")
+
+
+@dataclass(frozen=True)
+class Config:
+    train_seeds: Sequence[int]
+    tune_seeds: Sequence[int]
+    eval_seeds: Sequence[int]
+    hours: float = 72.0
+    step_hours: float = 0.10
+    population: int = 14
+    epochs: int = 42
+    hidden_size: int = 64
+    learning_rate: float = 0.004
+    action_epochs: int = 64
+    action_hidden_size: int = 64
+    action_learning_rate: float = 0.004
+    joint_candidates: Sequence[Tuple[float, float, float]] = (
+        (0.0, 0.0, 0.0),
+        (0.12, 0.12, 0.70),
+        (0.14, 0.14, 0.85),
+        (0.16, 0.14, 1.00),
+        (0.14, 0.16, 1.00),
+        (0.18, 0.16, 1.10),
+        (0.16, 0.18, 1.10),
+        (0.20, 0.18, 1.20),
+    )
+    device: str = "auto"
+    trace_seed: int = 20261021
+
+
+@dataclass(frozen=True)
+class ActionTrainingRow:
+    head: str
+    train_loss: float
+    accuracy: float
+    crisis_accuracy: float
+    device_used: str
+    parameter_count: int
+    train_examples: int
+    crisis_examples: int
+    action_epochs: int
+    action_hidden_size: int
+
+
+@dataclass(frozen=True)
+class JointSelectionRow:
+    env_quota: float
+    social_quota: float
+    coordinator_strength: float
+    tune_total_score: float
+    tune_maturation_score: float
+    tune_crisis_score: float
+    tune_resolved_rate: float
+    tune_env_response: float
+    tune_social_response: float
+    tune_coupled_response: float
+    tune_damage: float
+    selection_objective: float
+    selected: bool
+
+
+@dataclass(frozen=True)
+class VerdictRow:
+    selected_router: str
+    selected_env_quota: float
+    selected_social_quota: float
+    selected_coordinator_strength: float
+    joint_arbitration_total_score: float
+    return_selected_total_score: float
+    base_gru_total_score: float
+    designed_total_score: float
+    frame_total_score: float
+    reactive_total_score: float
+    gain_over_return_selected: float
+    gain_over_base_gru: float
+    gain_over_frame: float
+    gain_over_reactive: float
+    gap_to_designed: float
+    joint_arbitration_crisis_score: float
+    return_selected_crisis_score: float
+    joint_arbitration_resolved_rate: float
+    return_selected_resolved_rate: float
+    joint_arbitration_env_response: float
+    return_selected_env_response: float
+    joint_arbitration_social_response: float
+    return_selected_social_response: float
+    joint_arbitration_coupled_response: float
+    return_selected_coupled_response: float
+    social_culture_total_loss: float
+    environment_total_loss: float
+    social_culture_crisis_loss: float
+    environment_crisis_loss: float
+    social_culture_coupled_loss: float
+    environment_coupled_loss: float
+    shock_gate_pass_rate: float
+    post_gate_shock_rate: float
+    survival_at_12h: float
+    supports_joint_selection: bool
+    supports_social_environment_dependency: bool
+    verdict: str
+
+
+def mean(values: Iterable[float]) -> float:
+    values = list(values)
+    return statistics.fmean(values) if values else 0.0
+
+
+def parse_ints(value: str) -> Tuple[int, ...]:
+    return tuple(int(part.strip()) for part in value.split(",") if part.strip())
+
+
+def parse_joint_candidates(value: str) -> Tuple[Tuple[float, float, float], ...]:
+    candidates: List[Tuple[float, float, float]] = []
+    for part in value.split(","):
+        if not part.strip():
+            continue
+        fields = [float(item.strip()) for item in part.split(":")]
+        if len(fields) != 3:
+            raise ValueError(f"joint candidate must be env:social:strength, got {part!r}")
+        candidates.append((fields[0], fields[1], fields[2]))
+    return tuple(candidates)
+
+
+def social_target_action(active: coupled.ActiveCrisis, features: Sequence[float]) -> str:
+    if features[report111.FEATURE["conflict"]] > 0.28 or features[report111.FEATURE["social_trust"]] < 0.56:
+        return "social_repair"
+    if (
+        "teach" in active.profile.social_actions
+        and (
+            features[report111.FEATURE["risk_memory"]] < 0.64
+            or features[report111.FEATURE["knowledge_transfer"]] < 0.74
+            or features[report111.FEATURE["culture"]] < 0.70
+        )
+    ):
+        return "teach"
+    if "learn" in active.profile.social_actions and features[report111.FEATURE["symbols"]] < 0.58:
+        return "learn"
+    return active.profile.social_actions[0]
+
+
+def collect_joint_sequences(
+    cfg: Config,
+) -> Tuple[List[List[List[float]]], List[List[int]], List[List[List[float]]], List[List[int]], List[List[int]]]:
+    condition = CONDITIONS[0]
+    env_sequences: Dict[str, List[List[float]]] = {}
+    env_labels: Dict[str, List[int]] = {}
+    social_sequences: Dict[str, List[List[float]]] = {}
+    social_labels: Dict[str, List[int]] = {}
+    crisis_flags: Dict[str, List[int]] = {}
+    for seed in cfg.train_seeds:
+        rng = random.Random(seed * 149 + 71)
+        agents = make_agents(rng, cfg.population)
+        world = coupled.prepare_world(rng, cfg)
+        previous_actions: Dict[str, int] = {}
+        events: List[str] = []
+        tracker = coupled.CrisisTracker(schedule=coupled.crisis_schedule(seed))
+
+        while world.time < cfg.hours - 1e-9:
+            dt = min(cfg.step_hours, cfg.hours - world.time)
+            action_counts: Dict[str, int] = {}
+            coupled.maybe_start_crisis(world, tracker, rng, events)
+            if tracker.active is not None:
+                coupled.apply_crisis_symptoms(world, tracker.active, dt)
+
+            def selector(
+                agent: Agent,
+                current_world: World,
+                current_condition: Condition,
+                current_rng: random.Random,
+                features: List[float],
+                previous: int,
+            ) -> str:
+                active = tracker.active
+                if active is not None and current_world.time >= 12.0:
+                    key = f"{seed}:{agent.ident}:crisis{tracker.started}"
+                    env_sequences.setdefault(key, []).append(features)
+                    env_labels.setdefault(key, []).append(base.ACTION_TO_INDEX[report111.primary_env_action(active)])
+                    social_sequences.setdefault(key, []).append(features)
+                    social_labels.setdefault(key, []).append(base.ACTION_TO_INDEX[social_target_action(active, features)])
+                    crisis_flags.setdefault(key, []).append(1)
+                    action = report111.bottleneck_target_action(active, features)
+                else:
+                    action = choose_action(agent, current_world, current_condition, current_rng)
+                action_counts[action] = action_counts.get(action, 0) + 1
+                return action
+
+            base.step_world(world, agents, condition, dt, rng, previous_actions, selector, events)
+            report111.update_bottleneck_crisis_after_actions(world, agents, tracker, action_counts, dt)
+            coupled.complete_crisis_if_due(world, agents, tracker, events)
+    keys = sorted(env_sequences)
+    return (
+        [env_sequences[key] for key in keys],
+        [env_labels[key] for key in keys],
+        [social_sequences[key] for key in keys],
+        [social_labels[key] for key in keys],
+        [crisis_flags[key] for key in keys],
+    )
+
+
+def build_flag_tensor(flags: List[List[int]], max_len: int, device: torch.device) -> torch.Tensor:
+    out = torch.zeros((len(flags), max_len), dtype=torch.bool)
+    for row, seq in enumerate(flags):
+        out[row, : len(seq)] = torch.tensor(seq, dtype=torch.bool)
+    return out.to(device)
+
+
+def train_action_model(
+    cfg: Config,
+    device: torch.device,
+    head: str,
+    sequences: List[List[List[float]]],
+    labels: List[List[int]],
+    flags: List[List[int]],
+    seed: int,
+) -> Tuple[base.ControllerNet, ActionTrainingRow]:
+    x, y, mask = base.build_tensors(sequences, labels, device)
+    crisis_mask = build_flag_tensor(flags, y.shape[1], device) & mask
+    torch.manual_seed(seed)
+    model = base.ControllerNet("gru", base.FEATURE_COUNT, cfg.action_hidden_size, len(base.ACTIONS)).to(device)
+    optimizer = torch.optim.Adam(model.parameters(), lr=cfg.action_learning_rate)
+    sample_weights = mask.float() * 0.04 + crisis_mask.float() * 8.0
+    for _ in range(cfg.action_epochs):
+        model.train()
+        optimizer.zero_grad()
+        logits, _ = model(x)
+        per_item = torch.nn.functional.cross_entropy(
+            logits.reshape(-1, len(base.ACTIONS)),
+            y.reshape(-1),
+            ignore_index=-100,
+            reduction="none",
+        ).reshape_as(y)
+        loss = (per_item * sample_weights).sum() / sample_weights.sum().clamp_min(1e-6)
+        loss.backward()
+        torch.nn.utils.clip_grad_norm_(model.parameters(), 2.0)
+        optimizer.step()
+    model.eval()
+    with torch.no_grad():
+        logits, _ = model(x)
+        per_item = torch.nn.functional.cross_entropy(
+            logits.reshape(-1, len(base.ACTIONS)),
+            y.reshape(-1),
+            ignore_index=-100,
+            reduction="none",
+        ).reshape_as(y)
+        loss = ((per_item * sample_weights).sum() / sample_weights.sum().clamp_min(1e-6)).item()
+        pred = logits.argmax(dim=-1)
+        accuracy = ((pred == y) & mask).sum().float() / mask.sum().clamp_min(1)
+        crisis_accuracy = ((pred == y) & crisis_mask).sum().float() / crisis_mask.sum().clamp_min(1)
+    return model, ActionTrainingRow(
+        head=head,
+        train_loss=loss,
+        accuracy=accuracy.item(),
+        crisis_accuracy=crisis_accuracy.item(),
+        device_used=str(device),
+        parameter_count=sum(parameter.numel() for parameter in model.parameters()),
+        train_examples=int(mask.sum().item()),
+        crisis_examples=int(crisis_mask.sum().item()),
+        action_epochs=cfg.action_epochs,
+        action_hidden_size=cfg.action_hidden_size,
+    )
+
+
+def restricted_prediction(logits: torch.Tensor, actions: Sequence[str]) -> Tuple[str, float]:
+    probs = torch.softmax(logits, dim=-1)
+    scored = [(action, float(probs[:, base.ACTION_TO_INDEX[action]].item())) for action in actions]
+    return max(scored, key=lambda item: item[1])
+
+
+def suppress_channel_actions(logits: torch.Tensor, ablation: str) -> torch.Tensor:
+    if ablation == "environment":
+        for action in report111.ENV_RESPONSE_ACTIONS:
+            logits[:, base.ACTION_TO_INDEX[action]] -= 100.0
+    elif ablation == "social_culture":
+        for action in report111.SOCIAL_RESPONSE_ACTIONS:
+            logits[:, base.ACTION_TO_INDEX[action]] -= 100.0
+    return logits
+
+
+def coordinator_action(
+    agent: Agent,
+    features: Sequence[float],
+    action_counts: Dict[str, int],
+    alive_count: int,
+    env_model: base.ControllerNet,
+    social_model: base.ControllerNet,
+    env_states: Dict[str, torch.Tensor],
+    social_states: Dict[str, torch.Tensor],
+    env_quota: float,
+    social_quota: float,
+    strength: float,
+    device: torch.device,
+    ablation: str,
+) -> Optional[str]:
+    if strength <= 0.0:
+        return None
+    model_features = torch.tensor([base.mask_features(features, ablation)], dtype=torch.float32, device=device)
+    with torch.no_grad():
+        env_state = env_states.get(agent.ident)
+        env_logits, next_env = env_model.step(model_features, env_state)
+        if next_env is not None:
+            env_states[agent.ident] = next_env.detach()
+        social_state = social_states.get(agent.ident)
+        social_logits, next_social = social_model.step(model_features, social_state)
+        if next_social is not None:
+            social_states[agent.ident] = next_social.detach()
+    env_action, env_confidence = restricted_prediction(env_logits, report111.DIAGNOSTIC_ENV_ACTIONS)
+    social_action, social_confidence = restricted_prediction(social_logits, report111.SOCIAL_RESPONSE_ACTIONS)
+    env_fraction = action_counts.get(env_action, 0) / max(1, alive_count)
+    social_fraction = sum(action_counts.get(action, 0) for action in report111.SOCIAL_RESPONSE_ACTIONS) / max(1, alive_count)
+    env_target = 0.0 if ablation == "environment" else clamp(env_quota * (0.82 + strength * 0.28))
+    social_target = 0.0 if ablation == "social_culture" else clamp(social_quota * (0.82 + strength * 0.28))
+    env_deficit = env_target - env_fraction
+    social_deficit = social_target - social_fraction
+    if env_deficit <= 0.0 and social_deficit <= 0.0:
+        return None
+    if env_deficit >= social_deficit and env_confidence >= 0.10:
+        return env_action
+    if social_confidence >= 0.10:
+        return social_action
+    if env_confidence >= 0.10:
+        return env_action
+    return None
+
+
+def run_episode(
+    seed: int,
+    cfg: Config,
+    controller: str,
+    model: Optional[base.ControllerNet],
+    env_model: Optional[base.ControllerNet],
+    social_model: Optional[base.ControllerNet],
+    device: torch.device,
+    router: report105.PressureRouter,
+    env_quota: float = 0.0,
+    social_quota: float = 0.0,
+    coordinator_strength: float = 0.0,
+    ablation: str = "none",
+    trace: bool = False,
+) -> Tuple[coupled.EvalRow, Trace, coupled.CrisisTracker]:
+    if controller == "joint_arbitration_gru" and (model is None or env_model is None or social_model is None):
+        raise ValueError("joint_arbitration_gru requires base, environmental, and social models")
+
+    condition = CONDITIONS[1] if controller == "reactive" else CONDITIONS[0]
+    rng = random.Random(seed * 127 + 9137)
+    agents = make_agents(rng, cfg.population)
+    world = coupled.prepare_world(rng, cfg)
+    baseline = base.initial_baseline(world, cfg.population)
+    previous_actions: Dict[str, int] = {}
+    recurrent_states: Dict[str, torch.Tensor] = {}
+    env_states: Dict[str, torch.Tensor] = {}
+    social_states: Dict[str, torch.Tensor] = {}
+    events: List[str] = []
+    tracker = coupled.CrisisTracker(schedule=coupled.crisis_schedule(seed))
+    trace_out = Trace(seed=seed, condition=f"{controller}:{router.name}:joint_{env_quota:g}_{social_quota:g}_{coordinator_strength:g}:{ablation}")
+    checkpoints = list(TRACE_CHECKPOINTS)
+    no_pre_gate_shock = True
+    alive_at_12h = cfg.population
+    at_12: dict[str, float] = {}
+    if trace:
+        trace_out.frames.append(snapshot(world, agents, "0h", events))
+        if checkpoints and checkpoints[0] == 0.0:
+            checkpoints.pop(0)
+
+    while world.time < cfg.hours - 1e-9:
+        dt = min(cfg.step_hours, cfg.hours - world.time)
+        action_counts: Dict[str, int] = {}
+        coupled.maybe_start_crisis(world, tracker, rng, events)
+        if tracker.active is not None:
+            coupled.apply_crisis_symptoms(world, tracker.active, dt)
+
+        def selector(
+            agent: Agent,
+            current_world: World,
+            current_condition: Condition,
+            current_rng: random.Random,
+            features: List[float],
+            previous: int,
+        ) -> str:
+            active = tracker.active
+            if controller == "designed":
+                action = report111.bottleneck_target_action(active, features) if active is not None else choose_action(agent, current_world, current_condition, current_rng)
+            elif controller == "reactive":
+                action = choose_action(agent, current_world, current_condition, current_rng)
+            elif model is None:
+                action = "rest"
+            else:
+                if controller == "joint_arbitration_gru" and active is not None:
+                    action = coordinator_action(
+                        agent,
+                        features,
+                        action_counts,
+                        len(living(agents)),
+                        env_model,
+                        social_model,
+                        env_states,
+                        social_states,
+                        env_quota,
+                        social_quota,
+                        coordinator_strength,
+                        device,
+                        ablation,
+                    )
+                    if action is not None:
+                        action_counts[action] = action_counts.get(action, 0) + 1
+                        return action
+                model_features = torch.tensor([base.mask_features(features, ablation)], dtype=torch.float32, device=device)
+                with torch.no_grad():
+                    if model.architecture == "gru":
+                        state = recurrent_states.get(agent.ident)
+                        logits, next_state = model.step(model_features, state)
+                        if next_state is not None:
+                            recurrent_states[agent.ident] = next_state.detach()
+                    else:
+                        logits, _ = model.step(model_features, None)
+                    if controller in {"return_selected_gru", "joint_arbitration_gru"}:
+                        logits = logits + report105.router_bias(features, router, device, logits.dtype, ablation)
+                    if controller == "joint_arbitration_gru" and active is not None:
+                        logits = suppress_channel_actions(logits, ablation)
+                    action = base.INDEX_TO_ACTION[int(logits.argmax(dim=-1).item())]
+            action_counts[action] = action_counts.get(action, 0) + 1
+            return action
+
+        base.step_world(world, agents, condition, dt, rng, previous_actions, selector, events)
+        report111.update_bottleneck_crisis_after_actions(world, agents, tracker, action_counts, dt)
+        coupled.complete_crisis_if_due(world, agents, tracker, events)
+        if world.time < 12.0 and world.major_shocks > 0:
+            no_pre_gate_shock = False
+        if world.time >= 12.0 and not at_12:
+            alive_at_12h = len(living(agents))
+            at_12 = {
+                "development": clamp(
+                    (world.architecture - baseline["architecture"]) * 0.48
+                    + (world.tools + world.workshop * 0.45 + world.fire_control * 0.30 - baseline["tool_system"]) * 0.34
+                    + (world.paths - baseline["paths"]) * 0.16
+                ),
+                "knowledge": clamp(world.knowledge_transfer * 0.80 + (world.culture + world.symbols * 0.50 - baseline["culture_system"]) * 0.45),
+            }
+        while trace and checkpoints and world.time >= checkpoints[0] - 1e-9:
+            hour = checkpoints.pop(0)
+            frame = snapshot(world, agents, f"{hour:g}h", events)
+            frame["active_crisis"] = tracker.active.profile.name if tracker.active else None
+            frame["crisis_resolved"] = tracker.resolved
+            frame["crisis_unresolved"] = tracker.unresolved
+            frame["crisis_damage"] = tracker.damage_integral
+            trace_out.frames.append(frame)
+
+    if tracker.active is not None:
+        coupled.complete_crisis_if_due(world, agents, tracker, events)
+    episode = score_episode(world, agents, baseline, at_12, seed, condition, alive_at_12h, no_pre_gate_shock)
+    crisis_score, resolved_rate, env_response, social_response, coupled_response = coupled.crisis_metrics(tracker)
+    total_score = clamp(episode.maturation_score * 0.52 + crisis_score * 0.48)
+    eval_row = coupled.EvalRow(
+        seed=seed,
+        controller=controller,
+        ablation=ablation,
+        total_score=total_score,
+        maturation_score=episode.maturation_score,
+        crisis_score=crisis_score,
+        resolved_rate=resolved_rate,
+        unresolved_count=tracker.unresolved,
+        env_response_rate=env_response,
+        social_response_rate=social_response,
+        coupled_response_rate=coupled_response,
+        crisis_damage=tracker.damage_integral,
+        final_alive=episode.final_alive,
+        total_agents=episode.total_agents,
+        alive_at_12h=episode.alive_at_12h,
+        no_major_shock_before_12h=episode.no_major_shock_before_12h,
+        post_gate_shock=episode.post_gate_shock,
+        births=episode.births,
+        deaths=episode.deaths,
+        architecture_tier=episode.architecture_tier,
+        tool_tier=episode.tool_tier,
+        knowledge_transfer=episode.knowledge_transfer,
+        adaptation_evidence=episode.adaptation_evidence,
+        survival_score=episode.survival_score,
+        development_score=episode.development_score,
+        knowledge_score=episode.knowledge_score,
+        recovery_score=episode.recovery_score,
+    )
+    if trace and (not trace_out.frames or trace_out.frames[-1]["hours"] < cfg.hours):
+        frame = snapshot(world, agents, f"{cfg.hours:g}h", events)
+        frame["active_crisis"] = tracker.active.profile.name if tracker.active else None
+        frame["crisis_resolved"] = tracker.resolved
+        frame["crisis_unresolved"] = tracker.unresolved
+        frame["crisis_damage"] = tracker.damage_integral
+        trace_out.frames.append(frame)
+    return eval_row, trace_out, tracker
+
+
+def selection_objective(rows: Sequence[coupled.EvalRow]) -> Tuple[float, float, float, float, float, float, float, float]:
+    total = mean(row.total_score for row in rows)
+    maturation = mean(row.maturation_score for row in rows)
+    crisis = mean(row.crisis_score for row in rows)
+    resolved = mean(row.resolved_rate for row in rows)
+    env_response = mean(row.env_response_rate for row in rows)
+    social_response = mean(row.social_response_rate for row in rows)
+    coupled_response = mean(row.coupled_response_rate for row in rows)
+    damage = mean(row.crisis_damage for row in rows)
+    objective = total * 0.55 + crisis * 1.05 + resolved * 0.62 + coupled_response * 0.72 - damage * 0.30
+    return total, maturation, crisis, resolved, env_response, social_response, coupled_response, objective
+
+
+def select_joint_candidate(
+    cfg: Config,
+    model: base.ControllerNet,
+    env_model: base.ControllerNet,
+    social_model: base.ControllerNet,
+    device: torch.device,
+    router: report105.PressureRouter,
+) -> Tuple[Tuple[float, float, float], List[JointSelectionRow]]:
+    best = cfg.joint_candidates[0]
+    best_objective = -1e9
+    rows: List[JointSelectionRow] = []
+    for env_quota, social_quota, strength in cfg.joint_candidates:
+        eval_rows = [
+            run_episode(
+                seed,
+                cfg,
+                "joint_arbitration_gru",
+                model,
+                env_model,
+                social_model,
+                device,
+                router,
+                env_quota,
+                social_quota,
+                strength,
+            )[0]
+            for seed in cfg.tune_seeds
+        ]
+        total, maturation, crisis, resolved, env_response, social_response, coupled_response, objective = selection_objective(eval_rows)
+        damage = mean(row.crisis_damage for row in eval_rows)
+        if objective > best_objective:
+            best = (env_quota, social_quota, strength)
+            best_objective = objective
+        rows.append(JointSelectionRow(
+            env_quota=env_quota,
+            social_quota=social_quota,
+            coordinator_strength=strength,
+            tune_total_score=total,
+            tune_maturation_score=maturation,
+            tune_crisis_score=crisis,
+            tune_resolved_rate=resolved,
+            tune_env_response=env_response,
+            tune_social_response=social_response,
+            tune_coupled_response=coupled_response,
+            tune_damage=damage,
+            selection_objective=objective,
+            selected=False,
+        ))
+    return best, [
+        JointSelectionRow(
+            row.env_quota,
+            row.social_quota,
+            row.coordinator_strength,
+            row.tune_total_score,
+            row.tune_maturation_score,
+            row.tune_crisis_score,
+            row.tune_resolved_rate,
+            row.tune_env_response,
+            row.tune_social_response,
+            row.tune_coupled_response,
+            row.tune_damage,
+            row.selection_objective,
+            (row.env_quota, row.social_quota, row.coordinator_strength) == best,
+        )
+        for row in rows
+    ]
+
+
+def ablations_from_summary(summary: Sequence[coupled.SummaryRow]) -> List[coupled.AblationRow]:
+    base_row = coupled.row_lookup(summary, "joint_arbitration_gru", "none")
+    rows: List[coupled.AblationRow] = []
+    for ablation in ABLATIONS:
+        row = coupled.row_lookup(summary, "joint_arbitration_gru", ablation)
+        rows.append(coupled.AblationRow(
+            ablation=ablation,
+            mean_total_score=row.mean_total_score,
+            total_loss=base_row.mean_total_score - row.mean_total_score,
+            crisis_score_loss=base_row.mean_crisis_score - row.mean_crisis_score,
+            resolved_rate_loss=base_row.mean_resolved_rate - row.mean_resolved_rate,
+            env_response_loss=base_row.mean_env_response_rate - row.mean_env_response_rate,
+            social_response_loss=base_row.mean_social_response_rate - row.mean_social_response_rate,
+            coupled_response_loss=base_row.mean_coupled_response_rate - row.mean_coupled_response_rate,
+            damage_increase=row.mean_crisis_damage - base_row.mean_crisis_damage,
+        ))
+    return rows
+
+
+def verdict_from_summary(
+    summary: Sequence[coupled.SummaryRow],
+    ablations: Sequence[coupled.AblationRow],
+    selected_router: report105.PressureRouter,
+    selected: Tuple[float, float, float],
+) -> VerdictRow:
+    outcome = coupled.row_lookup(summary, "joint_arbitration_gru", "none")
+    returned = coupled.row_lookup(summary, "return_selected_gru", "none")
+    base_gru = coupled.row_lookup(summary, "gru", "none")
+    designed = coupled.row_lookup(summary, "designed", "none")
+    frame = coupled.row_lookup(summary, "frame_mlp", "none")
+    reactive = coupled.row_lookup(summary, "reactive", "none")
+    by_ablation = {row.ablation: row for row in ablations}
+    social = by_ablation["social_culture"]
+    environment = by_ablation["environment"]
+    env_quota, social_quota, strength = selected
+    supports_selection = (
+        strength > 0.0
+        and outcome.mean_total_score - returned.mean_total_score >= 0.015
+        and outcome.mean_crisis_score - returned.mean_crisis_score >= 0.050
+        and outcome.mean_resolved_rate - returned.mean_resolved_rate >= 0.100
+        and outcome.mean_coupled_response_rate - returned.mean_coupled_response_rate >= 0.100
+        and outcome.mean_alive_at_12h >= 12.0
+        and outcome.shock_gate_pass_rate == 1.0
+        and outcome.post_gate_shock_rate == 1.0
+    )
+    supports_dependency = (
+        social.coupled_response_loss >= 0.050
+        and environment.coupled_response_loss >= 0.050
+        and (social.crisis_score_loss >= 0.040 or social.resolved_rate_loss >= 0.100)
+        and (environment.crisis_score_loss >= 0.040 or environment.resolved_rate_loss >= 0.100)
+    )
+    return VerdictRow(
+        selected_router=selected_router.name,
+        selected_env_quota=env_quota,
+        selected_social_quota=social_quota,
+        selected_coordinator_strength=strength,
+        joint_arbitration_total_score=outcome.mean_total_score,
+        return_selected_total_score=returned.mean_total_score,
+        base_gru_total_score=base_gru.mean_total_score,
+        designed_total_score=designed.mean_total_score,
+        frame_total_score=frame.mean_total_score,
+        reactive_total_score=reactive.mean_total_score,
+        gain_over_return_selected=outcome.mean_total_score - returned.mean_total_score,
+        gain_over_base_gru=outcome.mean_total_score - base_gru.mean_total_score,
+        gain_over_frame=outcome.mean_total_score - frame.mean_total_score,
+        gain_over_reactive=outcome.mean_total_score - reactive.mean_total_score,
+        gap_to_designed=designed.mean_total_score - outcome.mean_total_score,
+        joint_arbitration_crisis_score=outcome.mean_crisis_score,
+        return_selected_crisis_score=returned.mean_crisis_score,
+        joint_arbitration_resolved_rate=outcome.mean_resolved_rate,
+        return_selected_resolved_rate=returned.mean_resolved_rate,
+        joint_arbitration_env_response=outcome.mean_env_response_rate,
+        return_selected_env_response=returned.mean_env_response_rate,
+        joint_arbitration_social_response=outcome.mean_social_response_rate,
+        return_selected_social_response=returned.mean_social_response_rate,
+        joint_arbitration_coupled_response=outcome.mean_coupled_response_rate,
+        return_selected_coupled_response=returned.mean_coupled_response_rate,
+        social_culture_total_loss=social.total_loss,
+        environment_total_loss=environment.total_loss,
+        social_culture_crisis_loss=social.crisis_score_loss,
+        environment_crisis_loss=environment.crisis_score_loss,
+        social_culture_coupled_loss=social.coupled_response_loss,
+        environment_coupled_loss=environment.coupled_response_loss,
+        shock_gate_pass_rate=outcome.shock_gate_pass_rate,
+        post_gate_shock_rate=outcome.post_gate_shock_rate,
+        survival_at_12h=outcome.mean_alive_at_12h,
+        supports_joint_selection=supports_selection,
+        supports_social_environment_dependency=supports_dependency,
+        verdict="pass" if supports_selection and supports_dependency else "partial_or_failed",
+    )
+
+
+def rows_to_csv(path: Path, rows: Sequence[object]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    data = [asdict(row) for row in rows]
+    if not data:
+        path.write_text("", encoding="utf-8")
+        return
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(data[0].keys()), lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(data)
+
+
+def write_json(path: Path, payload: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+
+
+def write_js(path: Path, variable: str, payload: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(f"window.{variable} = {json.dumps(payload, indent=2)};\n", encoding="utf-8")
+
+
+def run_benchmark(cfg: Config) -> dict[str, object]:
+    device = base.resolve_device(cfg.device)
+    sequences, labels = base.collect_sequences(cfg)
+    x, y, mask = base.build_tensors(sequences, labels, device)
+    training_rows: List[base.TrainingRow] = []
+    models: Dict[str, base.ControllerNet] = {}
+    for architecture in ("frame_mlp", "gru"):
+        model, row = base.train_model(architecture, x, y, mask, cfg, device)
+        models[architecture] = model
+        training_rows.append(row)
+
+    selected_router, router_selection = coupled.select_router(cfg, models["gru"], device)
+    env_sequences, env_labels, social_sequences, social_labels, flags = collect_joint_sequences(cfg)
+    env_model, env_training = train_action_model(cfg, device, "environment", env_sequences, env_labels, flags, 20261211)
+    social_model, social_training = train_action_model(cfg, device, "social", social_sequences, social_labels, flags, 20261212)
+    selected_joint, joint_selection = select_joint_candidate(cfg, models["gru"], env_model, social_model, device, selected_router)
+
+    eval_rows: List[coupled.EvalRow] = []
+    trace = Trace(seed=cfg.trace_seed, condition="joint_arbitration")
+    crisis_logs: Dict[str, List[dict[str, object]]] = {}
+    env_quota, social_quota, strength = selected_joint
+    for seed in cfg.eval_seeds:
+        for controller, model, router in (
+            ("designed", None, report105.ROUTERS[0]),
+            ("reactive", None, report105.ROUTERS[0]),
+            ("frame_mlp", models["frame_mlp"], report105.ROUTERS[0]),
+            ("gru", models["gru"], report105.ROUTERS[0]),
+            ("return_selected_gru", models["gru"], selected_router),
+            ("joint_arbitration_gru", models["gru"], selected_router),
+        ):
+            row, maybe_trace, tracker = run_episode(
+                seed,
+                cfg,
+                controller,
+                model,
+                env_model,
+                social_model,
+                device,
+                router,
+                env_quota if controller == "joint_arbitration_gru" else 0.0,
+                social_quota if controller == "joint_arbitration_gru" else 0.0,
+                strength if controller == "joint_arbitration_gru" else 0.0,
+                trace=(seed == cfg.trace_seed and controller == "joint_arbitration_gru"),
+            )
+            eval_rows.append(row)
+            crisis_logs[f"{seed}:{controller}:none"] = tracker.response_log
+            if maybe_trace.frames:
+                trace = maybe_trace
+
+        for ablation in ABLATIONS:
+            row, _, tracker = run_episode(
+                seed,
+                cfg,
+                "joint_arbitration_gru",
+                models["gru"],
+                env_model,
+                social_model,
+                device,
+                selected_router,
+                env_quota,
+                social_quota,
+                strength,
+                ablation=ablation,
+            )
+            eval_rows.append(row)
+            crisis_logs[f"{seed}:joint_arbitration_gru:{ablation}"] = tracker.response_log
+
+    summary = coupled.summarize(eval_rows)
+    ablations = ablations_from_summary(summary)
+    verdict = verdict_from_summary(summary, ablations, selected_router, selected_joint)
+    payload = {
+        "config": {
+            "train_seeds": list(cfg.train_seeds),
+            "tune_seeds": list(cfg.tune_seeds),
+            "eval_seeds": list(cfg.eval_seeds),
+            "hours": cfg.hours,
+            "step_hours": cfg.step_hours,
+            "population": cfg.population,
+            "epochs": cfg.epochs,
+            "hidden_size": cfg.hidden_size,
+            "action_epochs": cfg.action_epochs,
+            "action_hidden_size": cfg.action_hidden_size,
+            "joint_candidates": [list(candidate) for candidate in cfg.joint_candidates],
+            "device": cfg.device,
+            "trace_seed": cfg.trace_seed,
+        },
+        "crisis_profiles": [asdict(profile) for profile in coupled.PROFILES],
+        "primary_env_actions": report111.PRIMARY_ENV_ACTION,
+        "routers": [asdict(router) for router in report105.ROUTERS],
+        "router_selection": [asdict(row) for row in router_selection],
+        "joint_selection": [asdict(row) for row in joint_selection],
+        "base_training": [asdict(row) for row in training_rows],
+        "action_training": [asdict(env_training), asdict(social_training)],
+        "summary": [asdict(row) for row in summary],
+        "ablations": [asdict(row) for row in ablations],
+        "verdict": asdict(verdict),
+        "trace": asdict(trace),
+        "crisis_logs": crisis_logs,
+        "notes": {
+            "claim": "joint environmental/social crisis arbitration for 72h SSRM-3D coupled crises",
+            "not_claimed": "actor-critic reinforcement learning, subjective consciousness, open-ended civilization, or real-world competence",
+            "input_discipline": "action heads consume ordinary observation features and previous-action context, but not active crisis profile labels at runtime",
+        },
+    }
+    rows_to_csv(Path(f"{PREFIX}_base_training.csv"), training_rows)
+    rows_to_csv(Path(f"{PREFIX}_action_training.csv"), [env_training, social_training])
+    rows_to_csv(Path(f"{PREFIX}_router_selection.csv"), router_selection)
+    rows_to_csv(Path(f"{PREFIX}_joint_selection.csv"), joint_selection)
+    rows_to_csv(Path(f"{PREFIX}_eval.csv"), eval_rows)
+    rows_to_csv(Path(f"{PREFIX}_summary.csv"), summary)
+    rows_to_csv(Path(f"{PREFIX}_ablations.csv"), ablations)
+    rows_to_csv(Path(f"{PREFIX}_verdict.csv"), [verdict])
+    write_json(Path(f"{PREFIX}_results.json"), payload)
+    write_json(Path(f"{PREFIX}_trace.json"), asdict(trace))
+    write_js(Path(f"{PREFIX}_results.js"), "SSRM_3D_COUPLED_CRISIS_JOINT_ARBITRATION_RESULTS", payload)
+    write_js(Path(f"{PREFIX}_trace.js"), "SSRM_3D_COUPLED_CRISIS_JOINT_ARBITRATION_TRACE", asdict(trace))
+    return payload
+
+
+def parse_args() -> Config:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--train-seeds", default="20260911,20260912,20260913,20260914,20260915,20260916")
+    parser.add_argument("--tune-seeds", default="20261011,20261012,20261013")
+    parser.add_argument("--eval-seeds", default="20261021,20261022,20261023,20261024,20261025")
+    parser.add_argument("--hours", type=float, default=72.0)
+    parser.add_argument("--step-hours", type=float, default=0.10)
+    parser.add_argument("--population", type=int, default=14)
+    parser.add_argument("--epochs", type=int, default=42)
+    parser.add_argument("--hidden-size", type=int, default=64)
+    parser.add_argument("--learning-rate", type=float, default=0.004)
+    parser.add_argument("--action-epochs", type=int, default=64)
+    parser.add_argument("--action-hidden-size", type=int, default=64)
+    parser.add_argument("--action-learning-rate", type=float, default=0.004)
+    parser.add_argument("--joint-candidates", default="0.00:0.00:0.00,0.12:0.12:0.70,0.14:0.14:0.85,0.16:0.14:1.00,0.14:0.16:1.00,0.18:0.16:1.10,0.16:0.18:1.10,0.20:0.18:1.20")
+    parser.add_argument("--device", default="auto")
+    parser.add_argument("--trace-seed", type=int, default=20261021)
+    args = parser.parse_args()
+    return Config(
+        train_seeds=parse_ints(args.train_seeds),
+        tune_seeds=parse_ints(args.tune_seeds),
+        eval_seeds=parse_ints(args.eval_seeds),
+        hours=args.hours,
+        step_hours=args.step_hours,
+        population=args.population,
+        epochs=args.epochs,
+        hidden_size=args.hidden_size,
+        learning_rate=args.learning_rate,
+        action_epochs=args.action_epochs,
+        action_hidden_size=args.action_hidden_size,
+        action_learning_rate=args.action_learning_rate,
+        joint_candidates=parse_joint_candidates(args.joint_candidates),
+        device=args.device,
+        trace_seed=args.trace_seed,
+    )
+
+
+def main() -> int:
+    cfg = parse_args()
+    payload = run_benchmark(cfg)
+    print(json.dumps({
+        "joint_selection": payload["joint_selection"],
+        "verdict": payload["verdict"],
+        "summary": payload["summary"],
+    }, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

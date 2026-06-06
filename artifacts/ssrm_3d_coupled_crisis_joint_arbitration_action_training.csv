@@ -1,0 +1,3 @@
+head,train_loss,accuracy,crisis_accuracy,device_used,parameter_count,train_examples,crisis_examples,action_epochs,action_hidden_size
+environment,0.915516197681427,0.626181423664093,0.626181423664093,mps,28236,30472,30472,64,64
+social,0.0003357464156579226,1.0,1.0,mps,28236,30472,30472,64,64

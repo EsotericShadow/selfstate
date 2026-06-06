@@ -104,6 +104,8 @@ Is this the right repair for the actual hidden cause, under time pressure, while
 
 Report 99 creates that pressure and records a failed result. The learned GRU responds broadly to hidden social shock, but it spends too much of the recovery window on wrong repair classes. That is exactly the failure mode a social credit-assignment critic must learn to detect.
 
+Reports 112 and 113 add a second bridge for the same roadmap. A diagnostic label can be correct offline and still fail online if using it collapses another required repair channel. The first bounded positive coupled-crisis result comes from joint arbitration that keeps environmental and social repair active together. A future LLM-facing controller should therefore score coordination among consequence channels, not only one plausible root cause.
+
 Example transfer target:
 
 ```text

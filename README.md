@@ -123,6 +123,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D coupled crisis environmental bottleneck report](docs/110_ssrm_3d_coupled_crisis_environment_bottleneck_report.md): makes environmental crisis repair non-substitutable; the learned overlay improves some response metrics but fails the crisis-score and ablation gates.
 - [SSRM-3D coupled crisis rollout-window report](docs/111_ssrm_3d_coupled_crisis_rollout_window_report.md): trains plan values from cloned simulator rollouts; validation rejects the overlay by selecting plan bias `0.0`, so the stricter coupled-crisis failure remains.
 - [SSRM-3D coupled crisis diagnostic-memory report](docs/112_ssrm_3d_coupled_crisis_diagnostic_memory_report.md): trains a recurrent crisis diagnostic head with `0.991` offline environmental-repair accuracy, but validation selects diagnostic bias `0.0`; nonzero diagnostic bias raises environmental response while killing social response and increasing damage.
+- [SSRM-3D coupled crisis joint-arbitration report](docs/113_ssrm_3d_coupled_crisis_joint_arbitration_report.md): trains separate recurrent environmental and social action heads, then validation-selects joint quotas; held-out crisis score rises from `0.000` to `0.380`, resolved rate rises from `0.100` to `0.650`, and social/environment ablations collapse coupled response.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -1101,6 +1102,25 @@ This writes:
 - `artifacts/ssrm_3d_coupled_crisis_diagnostic_memory_results.js`
 
 ```bash
+python3 experiments/ssrm_3d_coupled_crisis_joint_arbitration_controller.py --train-seeds 20260911,20260912,20260913,20260914,20260915,20260916 --tune-seeds 20261011,20261012,20261013 --eval-seeds 20261021,20261022,20261023,20261024,20261025 --hours 72 --step-hours 0.10 --population 14 --epochs 42 --hidden-size 64 --action-epochs 64 --action-hidden-size 64 --joint-candidates 0.00:0.00:0.00,0.12:0.12:0.70,0.14:0.14:0.85,0.16:0.14:1.00,0.14:0.16:1.00,0.18:0.16:1.10,0.16:0.18:1.10,0.20:0.18:1.20 --device auto --trace-seed 20261021
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_coupled_crisis_joint_arbitration_base_training.csv`
+- `artifacts/ssrm_3d_coupled_crisis_joint_arbitration_action_training.csv`
+- `artifacts/ssrm_3d_coupled_crisis_joint_arbitration_router_selection.csv`
+- `artifacts/ssrm_3d_coupled_crisis_joint_arbitration_joint_selection.csv`
+- `artifacts/ssrm_3d_coupled_crisis_joint_arbitration_eval.csv`
+- `artifacts/ssrm_3d_coupled_crisis_joint_arbitration_summary.csv`
+- `artifacts/ssrm_3d_coupled_crisis_joint_arbitration_ablations.csv`
+- `artifacts/ssrm_3d_coupled_crisis_joint_arbitration_verdict.csv`
+- `artifacts/ssrm_3d_coupled_crisis_joint_arbitration_trace.json`
+- `artifacts/ssrm_3d_coupled_crisis_joint_arbitration_results.json`
+- `artifacts/ssrm_3d_coupled_crisis_joint_arbitration_trace.js`
+- `artifacts/ssrm_3d_coupled_crisis_joint_arbitration_results.js`
+
+```bash
 python3 experiments/ssrm_3d_hidden_regime_adaptation.py --seeds 20260713,20260714,20260715,20260716,20260717 --hours 16 --step-hours 0.05 --population 10 --trace-seed 20260713
 ```
 
@@ -1424,6 +1444,9 @@ The project should not ask whether an agent says it has a self. It should ask wh
 63. Tested with counterfactual outcome-value reranking for coupled crisis control, while rejecting validation overfit if held-out crises get worse.
 64. Tested with sequence-level outcome planning for coupled crisis control, while rejecting the strong claim if social/environment ablations are not both clean.
 65. Tested with non-substitutable environmental crisis repair, while rejecting the strong claim if the learned controller cannot recover crisis score or clean social/environment ablation losses.
+66. Tested with cloned rollout-window labels for coupled crisis repair, while rejecting the overlay if validation return selects it off.
+67. Tested with recurrent diagnostic memory for primary environmental repair, while rejecting offline label accuracy if using it worsens online consequences.
+68. Tested with learned joint arbitration over separate environmental and social crisis action heads, while rejecting the claim unless held-out crisis repair improves and both channel ablations collapse coupled response.
 
 Current stress evidence does not yet satisfy item 37. The architecture boundary stress test finds partial convergence in shared regimes, not strict architecture-wide convergence. Current horizon-pressure evidence partially supports item 38: recoverability improves with horizon, but strict convergence still does not appear.
 Current capacity evidence supports item 39, but only as a diagnostic: source-direction seeds are supplied, so this is not natural emergence.
@@ -1455,6 +1478,7 @@ Current SSRM-3D coupled crisis sequence-outcome evidence partially supports item
 Current SSRM-3D coupled crisis environmental-bottleneck evidence does not satisfy item 65: validation selects plan bias `2.75`, resolved rate rises over the return-selected GRU from `0.100` to `0.250`, and coupled response rises from `0.029` to `0.160`, but held-out crisis score remains `0.000`, total score falls below the return-selected GRU, and social/environment ablations still do not create clean losses.
 Current SSRM-3D coupled crisis rollout-window evidence does not satisfy item 66: the plan-value model trains on `9248` cloned rollout examples, but validation rejects the overlay by selecting plan bias `0.0`; held-out crisis score remains `0.000`, resolved rate stays `0.100`, and social/environment ablations still do not create clean losses.
 Current SSRM-3D coupled crisis diagnostic-memory evidence does not satisfy item 67: the recurrent diagnostic head reaches `0.991` offline environmental-repair accuracy, but validation selects diagnostic bias `0.0`; nonzero diagnostic bias increases environmental response while eliminating social response, increasing damage, and preserving `0.000` crisis score.
+Current SSRM-3D coupled crisis joint-arbitration evidence supports item 68 as a structured learned-coordination precursor: validation selects env/social quotas `0.14`/`0.14` with coordinator strength `0.85`; held-out crisis score rises from `0.000` to `0.380`, resolved rate rises from `0.100` to `0.650`, and coupled response rises from `0.027` to `0.646`. Social/culture and environment ablations both collapse crisis score and coupled response. This is still structured joint arbitration around learned heads, not actor-critic RL or open-ended civilization.
 
 The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has useful learned-control precursors and a physics-first offline recurrent benchmark; gate 2 has a partial externalized-cognition precursor plus a learned tool-memory bridge; gate 3 has partial social-pressure and costly-communication precursors plus a learned social-memory bridge; gate 4 has continuity-record and learned continuity/attention precursors but is still incomplete.
 

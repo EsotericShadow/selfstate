@@ -16,7 +16,7 @@ A field-experienced software engineering controller improves a frontier LLM's ro
 
 ## Current Research Dependency
 
-This roadmap depends on a stronger simulator result than the project has today. Reports 111 and 112 are the caution. Report 111 shows that even plan-value labels from cloned simulator rollouts can be rejected by validation. Report 112 goes further: a diagnostic head can reach `0.991` offline label accuracy and still be selected off because using it worsens coupled online consequences. The software version should therefore be judged by real patch outcomes, hidden tests, review survival, regression reduction, and cost, not by whether the critic sounds plausible or predicts a plausible label.
+This roadmap depends on a stronger simulator result than the project has today. Reports 111 and 112 are the caution. Report 111 shows that even plan-value labels from cloned simulator rollouts can be rejected by validation. Report 112 goes further: a diagnostic head can reach `0.991` offline label accuracy and still be selected off because using it worsens coupled online consequences. Report 113 is the first bounded positive bridge in that line: separate learned environmental and social action heads work only when joint arbitration keeps both repair channels alive. The software version should therefore be judged by real patch outcomes, hidden tests, review survival, regression reduction, and cost, not by whether the critic sounds plausible or predicts a plausible label.
 
 ## Why Software Is The Direct Money Path
 
@@ -238,13 +238,14 @@ The key training target is not "write code." It is:
 choose the right repair path under uncertainty and prove it without wasting time
 ```
 
-Report 112 adds a stricter warning for this product path:
+Reports 112 and 113 sharpen the product path:
 
 ```text
-offline critic accuracy is not field experience unless it improves held-out consequences
+offline critic accuracy is not field experience unless it improves held-out consequences,
+and useful repair often requires coordinating several consequence channels at once
 ```
 
-For software, that means a root-cause critic is not valuable merely because it predicts a plausible cause. It has to produce better accepted patches, fewer regressions, stronger hidden-test performance, less review time, or lower debugging cost when wrapped around the same frontier coding LLM.
+For software, that means a root-cause critic is not valuable merely because it predicts a plausible cause. It also cannot collapse test strategy, regression safety, review fit, API compatibility, or time cost while chasing that one cause. It has to produce better accepted patches, fewer regressions, stronger hidden-test performance, less review time, or lower debugging cost when wrapped around the same frontier coding LLM.
 
 ## Safety And Scope
 

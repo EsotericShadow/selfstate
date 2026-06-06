@@ -94,6 +94,8 @@ That is easier to prove and safer than a fully autonomous coding agent.
 
 The current simulator does not yet prove that field-experience critics work. Reports 111 and 112 are the caution. A critic can be trained from cloned rollouts, or a diagnostic head can reach `0.991` offline label accuracy, and validation can still reject it because it does not improve held-out consequences.
 
+Report 113 adds one useful positive lesson: a controller can improve when it keeps multiple consequence channels active at the same time. In the simulation, separate environmental and social action heads need joint arbitration. In software, a root-cause critic would need the same kind of balance across tests, regression risk, API compatibility, review fit, and time cost.
+
 For software, the controller has to prove itself on real outcomes: better patches, fewer regressions, stronger hidden-test performance, less review time, and lower debugging cost.
 
 ## What Would Prove Value

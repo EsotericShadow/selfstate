@@ -22,10 +22,11 @@ It treats "self" as a persistent model of the acting system. That model can be e
 
 The current public status:
 
-- reports now run from `01` through `97`;
-- the canonical runner is wired for `79` executable runs;
-- the newest evidence step is a return-selected learned hidden-regime controller with a passing bounded verdict;
+- reports now run from `01` through `98`;
+- the canonical runner is wired for `80` executable runs;
+- the newest evidence step is a focused learned social/culture hidden-regime controller with a partial verdict;
 - a separate live open-emergence sandbox now explores larger geography, multiple shelters, generic physical action primitives, lifecycle cost, abstract reproduction, dependent care, private beliefs, environment-inferred symbol categories, influence-weighted symbol adoption, invented sound tokens, terrain glyphs, conflict, discovered specializations, shifting resource reliability, stale-map pressure, disease strain, social inequality, and a long-horizon development phase before delayed major shocks;
+- the broader direction is an [accelerated agency and civilization testbed](agency_civilization_testbed.md), where the goal is to study what agents reliably reinvent under pressure;
 - the strongest result is still bounded simulation evidence;
 - the project has useful evidence, but not a finished proof of a general selfhood law.
 
@@ -130,6 +131,7 @@ The repo is not one experiment. It is a ladder of tests.
 | Learned hidden-regime controller | [95](../95_ssrm_3d_learned_hidden_regime_controller_report.md) | Can a neural controller act closed-loop in that hidden-regime world? | Partly: the GRU learned controller acts in the world, preserves the 12h gate, survives hidden-regime activation, develops tools/infrastructure, transfers knowledge, and beats reactive control. It does not beat the frame model or pass clean ablation specificity. |
 | Option-gated hidden-regime controller | [96](../96_ssrm_3d_option_gated_hidden_regime_controller_report.md) | Does a learned response-option head improve hidden-regime control? | Partly: GRU response improves, targeted response rises, and regime-signal removal now hurts. The frame model still wins and social/culture ablation remains unstable. |
 | Return-selected hidden-regime controller | [97](../97_ssrm_3d_return_selected_hidden_regime_controller_report.md) | Can validation return select a better learned controller setting? | Yes as a bounded precursor: validation return chooses the option bias, the selected GRU beats fixed bias, frame, and reactive controls on held-out worlds, and regime-signal, infrastructure, and body ablations create losses. It is still not gradient deep RL. |
+| Social/culture hidden-regime controller | [98](../98_ssrm_3d_social_culture_hidden_regime_controller_report.md) | Can the learned controller handle delayed hidden social/culture regimes? | Partly: the GRU strongly beats reactive control and only edges fixed-bias/frame controls across trust, symbol, coalition, teacher-loss, and rumor variants. The result remains partial because social/culture ablation is not clean across social response metrics. |
 
 ## What The Early Experiments Showed
 

@@ -106,6 +106,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D learned hidden-regime controller report](docs/95_ssrm_3d_learned_hidden_regime_controller_report.md): trains frame and recurrent neural controllers from hidden-regime symptom histories, evaluates them closed-loop on held-out worlds, and records the partial result where GRU beats reactive control but not the frame model or ablation-specificity gate.
 - [SSRM-3D option-gated hidden-regime controller report](docs/96_ssrm_3d_option_gated_hidden_regime_controller_report.md): adds a learned response-option head to improve hidden-regime closed-loop routing; GRU response improves and regime-signal ablation hurts, but the frame model still wins and the verdict remains partial.
 - [SSRM-3D return-selected hidden-regime controller report](docs/97_ssrm_3d_return_selected_hidden_regime_controller_report.md): selects the option-action bias by closed-loop validation return, then passes the held-out gate where the learned GRU beats fixed bias, frame, and reactive controls while regime-signal, infrastructure, and body ablations create losses.
+- [SSRM-3D social/culture hidden-regime controller report](docs/98_ssrm_3d_social_culture_hidden_regime_controller_report.md): turns the weak Report 97 social/culture ablation into a focused hidden social-regime benchmark; the learned GRU strongly beats reactive control and only edges fixed/frame controls, with a partial verdict because social/culture ablation is not clean across response metrics.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -967,6 +968,24 @@ This writes:
 - `artifacts/ssrm_3d_return_selected_hidden_regime_controller_results.json`
 - `artifacts/ssrm_3d_return_selected_hidden_regime_controller_trace.js`
 - `artifacts/ssrm_3d_return_selected_hidden_regime_controller_results.js`
+
+```bash
+python3 experiments/ssrm_3d_social_culture_hidden_regime_controller.py --train-seeds 20260818,20260819,20260820,20260821,20260822,20260823,20260824,20260825 --tune-seeds 20260828,20260829,20260830,20260831,20260832 --eval-seeds 20260833,20260834,20260835,20260836,20260837 --bias-candidates 0.70,1.00,1.35,1.70,2.10 --hours 16 --step-hours 0.08 --population 10 --epochs 100 --hidden-size 56 --device auto --trace-seed 20260833
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_social_culture_hidden_regime_controller_training.csv`
+- `artifacts/ssrm_3d_social_culture_hidden_regime_controller_bias_selection.csv`
+- `artifacts/ssrm_3d_social_culture_hidden_regime_controller_eval.csv`
+- `artifacts/ssrm_3d_social_culture_hidden_regime_controller_summary.csv`
+- `artifacts/ssrm_3d_social_culture_hidden_regime_controller_variant_summary.csv`
+- `artifacts/ssrm_3d_social_culture_hidden_regime_controller_ablations.csv`
+- `artifacts/ssrm_3d_social_culture_hidden_regime_controller_verdict.csv`
+- `artifacts/ssrm_3d_social_culture_hidden_regime_controller_trace.json`
+- `artifacts/ssrm_3d_social_culture_hidden_regime_controller_results.json`
+- `artifacts/ssrm_3d_social_culture_hidden_regime_controller_trace.js`
+- `artifacts/ssrm_3d_social_culture_hidden_regime_controller_results.js`
 
 ```bash
 python3 experiments/learned_bottleneck_discovery.py --episodes 500 --training-episodes 300 --seed 20260531 --calibration-contexts 2

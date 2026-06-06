@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `79` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, and return-selected learned hidden-regime controller.
+The canonical runner is now wired for `80` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, and focused social/culture hidden-regime controller.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -217,9 +217,21 @@ Report 96 adds a learned response-option head. The GRU improves over Report 95, 
 
 Report 97 uses validation return to select the option-action bias before held-out evaluation. That produces the strongest learned hidden-regime result so far: the selected GRU beats the fixed-bias GRU, the frame model, and reactive control, while regime-signal, infrastructure, and body ablations create losses. It remains bounded because this is return-shaped policy selection after imitation training, not full gradient deep reinforcement learning.
 
+Report 98 attacks the remaining social/culture weakness. It turns social life into hidden delayed regimes: trust fracture, symbol drift, coalition split, teacher loss, and rumor cascade. The learned controller strongly beats reactive control and only edges fixed-bias/frame controls, so the verdict remains partial. Social/culture ablation lowers total score and culture transfer, but it does not cleanly reduce social response across every held-out variant. The next benchmark has to make mediation, rumor correction, convention repair, and teaching carry sharper mutually exclusive opportunity costs.
+
 ![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 
 That sandbox is a prototype for the next benchmark, not a new proof result. The important next step is to move the same pressures into closed-loop learned control with held-out worlds and targeted ablations.
+
+## What This Could Become
+
+The larger use is an accelerated agency and civilization testbed: a persistent world where autonomous agents must survive together, adapt, build, communicate, remember, teach, cooperate, compete, and recover from shocks.
+
+The most valuable thing is not watching them win. It is watching what they reliably reinvent.
+
+That means measuring whether agents independently discover useful abstractions such as self-state, ownership, reputation, roles, warnings, teaching, tools, maps, norms, institutions, and externalized memory because the world punishes them when they do not.
+
+The companion plain-language roadmap is here: [The Bigger Use: An Accelerated Agency And Civilization Testbed](agency_civilization_testbed.md).
 
 ## Visual Evidence Gallery
 

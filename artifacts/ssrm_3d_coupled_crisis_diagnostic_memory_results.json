@@ -1,0 +1,3987 @@
+{
+  "config": {
+    "train_seeds": [
+      20260911,
+      20260912,
+      20260913,
+      20260914,
+      20260915,
+      20260916
+    ],
+    "tune_seeds": [
+      20261011,
+      20261012,
+      20261013
+    ],
+    "eval_seeds": [
+      20261021,
+      20261022,
+      20261023,
+      20261024,
+      20261025
+    ],
+    "hours": 72.0,
+    "step_hours": 0.1,
+    "population": 14,
+    "epochs": 42,
+    "hidden_size": 64,
+    "diagnostic_epochs": 64,
+    "diagnostic_hidden_size": 64,
+    "diagnostic_bias_candidates": [
+      0.0,
+      0.75,
+      1.25,
+      1.75,
+      2.5,
+      3.5,
+      5.0,
+      8.0,
+      12.0,
+      20.0
+    ],
+    "device": "auto",
+    "trace_seed": 20261021
+  },
+  "crisis_profiles": [
+    {
+      "name": "contaminated_water_trust",
+      "env_actions": [
+        "sanitize",
+        "treat"
+      ],
+      "social_actions": [
+        "social_repair",
+        "teach"
+      ],
+      "env_need": 0.92,
+      "social_need": 0.7,
+      "contamination_rate": 0.036,
+      "disease_rate": 0.03,
+      "conflict_rate": 0.016,
+      "trust_loss_rate": 0.016,
+      "route_rate": 0.0,
+      "predator_rate": 0.0,
+      "migration_rate": 0.0,
+      "water_loss_rate": 0.014,
+      "food_loss_rate": 0.0,
+      "shelter_loss_rate": 0.0,
+      "visibility_loss_rate": 0.0
+    },
+    {
+      "name": "route_migration_dispute",
+      "env_actions": [
+        "scout",
+        "harvest_food",
+        "collect_water"
+      ],
+      "social_actions": [
+        "social_repair",
+        "teach"
+      ],
+      "env_need": 0.98,
+      "social_need": 0.72,
+      "contamination_rate": 0.0,
+      "disease_rate": 0.0,
+      "conflict_rate": 0.02,
+      "trust_loss_rate": 0.0,
+      "route_rate": 0.034,
+      "predator_rate": 0.02,
+      "migration_rate": 0.04,
+      "water_loss_rate": 0.01,
+      "food_loss_rate": 0.014,
+      "shelter_loss_rate": 0.0,
+      "visibility_loss_rate": 0.0
+    },
+    {
+      "name": "storm_shelter_coordination",
+      "env_actions": [
+        "construct",
+        "scout"
+      ],
+      "social_actions": [
+        "social_repair",
+        "teach"
+      ],
+      "env_need": 1.04,
+      "social_need": 0.76,
+      "contamination_rate": 0.0,
+      "disease_rate": 0.0,
+      "conflict_rate": 0.018,
+      "trust_loss_rate": 0.012,
+      "route_rate": 0.018,
+      "predator_rate": 0.0,
+      "migration_rate": 0.0,
+      "water_loss_rate": 0.0,
+      "food_loss_rate": 0.0,
+      "shelter_loss_rate": 0.034,
+      "visibility_loss_rate": 0.032
+    },
+    {
+      "name": "quarantine_rumor",
+      "env_actions": [
+        "sanitize",
+        "treat"
+      ],
+      "social_actions": [
+        "social_repair",
+        "teach",
+        "learn"
+      ],
+      "env_need": 0.9,
+      "social_need": 0.92,
+      "contamination_rate": 0.022,
+      "disease_rate": 0.032,
+      "conflict_rate": 0.038,
+      "trust_loss_rate": 0.03,
+      "route_rate": 0.0,
+      "predator_rate": 0.0,
+      "migration_rate": 0.0,
+      "water_loss_rate": 0.0,
+      "food_loss_rate": 0.0,
+      "shelter_loss_rate": 0.0,
+      "visibility_loss_rate": 0.0
+    }
+  ],
+  "primary_env_actions": {
+    "contaminated_water_trust": "sanitize",
+    "route_migration_dispute": "scout",
+    "storm_shelter_coordination": "construct",
+    "quarantine_rumor": "treat"
+  },
+  "routers": [
+    {
+      "name": "none",
+      "social_bias": 0.0,
+      "environment_bias": 0.0,
+      "infrastructure_bias": 0.0,
+      "tool_bias": 0.0,
+      "teaching_bias": 0.0
+    },
+    {
+      "name": "balanced",
+      "social_bias": 1.0,
+      "environment_bias": 1.0,
+      "infrastructure_bias": 1.0,
+      "tool_bias": 1.0,
+      "teaching_bias": 1.0
+    },
+    {
+      "name": "social_env",
+      "social_bias": 1.55,
+      "environment_bias": 1.45,
+      "infrastructure_bias": 0.75,
+      "tool_bias": 0.7,
+      "teaching_bias": 1.2
+    },
+    {
+      "name": "environment_first",
+      "social_bias": 0.55,
+      "environment_bias": 2.0,
+      "infrastructure_bias": 0.7,
+      "tool_bias": 0.65,
+      "teaching_bias": 0.55
+    },
+    {
+      "name": "social_first",
+      "social_bias": 2.0,
+      "environment_bias": 0.55,
+      "infrastructure_bias": 0.6,
+      "tool_bias": 0.6,
+      "teaching_bias": 1.35
+    },
+    {
+      "name": "build_tool",
+      "social_bias": 0.45,
+      "environment_bias": 0.7,
+      "infrastructure_bias": 1.65,
+      "tool_bias": 1.7,
+      "teaching_bias": 0.55
+    },
+    {
+      "name": "teaching_tradition",
+      "social_bias": 1.1,
+      "environment_bias": 0.75,
+      "infrastructure_bias": 0.7,
+      "tool_bias": 0.7,
+      "teaching_bias": 2.0
+    },
+    {
+      "name": "high_pressure",
+      "social_bias": 1.8,
+      "environment_bias": 1.6,
+      "infrastructure_bias": 1.3,
+      "tool_bias": 1.25,
+      "teaching_bias": 1.5
+    }
+  ],
+  "router_selection": [
+    {
+      "router": "none",
+      "social_bias": 0.0,
+      "environment_bias": 0.0,
+      "infrastructure_bias": 0.0,
+      "tool_bias": 0.0,
+      "teaching_bias": 0.0,
+      "tune_total_score": 0.5174540799999999,
+      "tune_maturation_score": 0.9951039999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.0,
+      "tune_coupled_response": 0.0,
+      "tune_damage": 1.1462280213375575,
+      "selection_objective": 0.2882084757324884,
+      "selected": false
+    },
+    {
+      "router": "balanced",
+      "social_bias": 1.0,
+      "environment_bias": 1.0,
+      "infrastructure_bias": 1.0,
+      "tool_bias": 1.0,
+      "teaching_bias": 1.0,
+      "tune_total_score": 0.5185909245122988,
+      "tune_maturation_score": 0.9972902394467286,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.08333333333333333,
+      "tune_coupled_response": 0.013888888888888888,
+      "tune_damage": 1.0979721243308889,
+      "selection_objective": 0.30420483297945444,
+      "selected": false
+    },
+    {
+      "router": "social_env",
+      "social_bias": 1.55,
+      "environment_bias": 1.45,
+      "infrastructure_bias": 0.75,
+      "tool_bias": 0.7,
+      "teaching_bias": 1.2,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.08333333333333333,
+      "tune_coupled_response": 0.007478632478632479,
+      "tune_damage": 1.0528463163647603,
+      "selection_objective": 0.31307764852191977,
+      "selected": false
+    },
+    {
+      "router": "environment_first",
+      "social_bias": 0.55,
+      "environment_bias": 2.0,
+      "infrastructure_bias": 0.7,
+      "tool_bias": 0.65,
+      "teaching_bias": 0.55,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.08333333333333333,
+      "tune_coupled_response": 0.007478632478632479,
+      "tune_damage": 1.0510386254618906,
+      "selection_objective": 0.3134391867024937,
+      "selected": false
+    },
+    {
+      "router": "social_first",
+      "social_bias": 2.0,
+      "environment_bias": 0.55,
+      "infrastructure_bias": 0.6,
+      "tool_bias": 0.6,
+      "teaching_bias": 1.35,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.08333333333333333,
+      "tune_coupled_response": 0.022435897435897436,
+      "tune_damage": 1.042795133177876,
+      "selection_objective": 0.3157609620823736,
+      "selected": true
+    },
+    {
+      "router": "build_tool",
+      "social_bias": 0.45,
+      "environment_bias": 0.7,
+      "infrastructure_bias": 1.65,
+      "tool_bias": 1.7,
+      "teaching_bias": 0.55,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.0,
+      "tune_coupled_response": 0.016025641025641028,
+      "tune_damage": 1.113328145481561,
+      "selection_objective": 0.29678256474984177,
+      "selected": false
+    },
+    {
+      "router": "teaching_tradition",
+      "social_bias": 1.1,
+      "environment_bias": 0.75,
+      "infrastructure_bias": 0.7,
+      "tool_bias": 0.7,
+      "teaching_bias": 2.0,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.08333333333333333,
+      "tune_coupled_response": 0.010683760683760682,
+      "tune_damage": 1.0528066744944313,
+      "selection_objective": 0.31322980766521635,
+      "selected": false
+    },
+    {
+      "router": "high_pressure",
+      "social_bias": 1.8,
+      "environment_bias": 1.6,
+      "infrastructure_bias": 1.3,
+      "tool_bias": 1.25,
+      "teaching_bias": 1.5,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.08333333333333333,
+      "tune_coupled_response": 0.013888888888888888,
+      "tune_damage": 1.078529311954724,
+      "selection_objective": 0.3082295109423886,
+      "selected": false
+    }
+  ],
+  "diagnostic_selection": [
+    {
+      "diagnostic_bias": 0.0,
+      "tune_total_score": 0.5174540799999999,
+      "tune_maturation_score": 0.9951039999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.08333333333333333,
+      "tune_env_response": 0.1858974358974359,
+      "tune_social_response": 0.35363247863247865,
+      "tune_coupled_response": 0.03311965811965812,
+      "tune_damage": 1.3530370803354093,
+      "selection_objective": -0.06797164334822725,
+      "selected": true
+    },
+    {
+      "diagnostic_bias": 0.75,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.0,
+      "tune_env_response": 0.4166666666666667,
+      "tune_social_response": 0.0,
+      "tune_coupled_response": 0.0,
+      "tune_damage": 1.7460216121889662,
+      "selection_objective": -0.2564747721442485,
+      "selected": false
+    },
+    {
+      "diagnostic_bias": 1.25,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.0,
+      "tune_env_response": 0.4166666666666667,
+      "tune_social_response": 0.0,
+      "tune_coupled_response": 0.0,
+      "tune_damage": 1.7463321590393435,
+      "selection_objective": -0.25658035807337676,
+      "selected": false
+    },
+    {
+      "diagnostic_bias": 1.75,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.0,
+      "tune_env_response": 0.4166666666666667,
+      "tune_social_response": 0.0,
+      "tune_coupled_response": 0.0,
+      "tune_damage": 1.7463321590393435,
+      "selection_objective": -0.25658035807337676,
+      "selected": false
+    },
+    {
+      "diagnostic_bias": 2.5,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.0,
+      "tune_env_response": 0.4166666666666667,
+      "tune_social_response": 0.0,
+      "tune_coupled_response": 0.0,
+      "tune_damage": 1.7338922456049763,
+      "selection_objective": -0.25235078750569195,
+      "selected": false
+    },
+    {
+      "diagnostic_bias": 3.5,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.0,
+      "tune_env_response": 0.5,
+      "tune_social_response": 0.0,
+      "tune_coupled_response": 0.0,
+      "tune_damage": 1.8580707249278612,
+      "selection_objective": -0.29457147047547283,
+      "selected": false
+    },
+    {
+      "diagnostic_bias": 5.0,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.0,
+      "tune_env_response": 0.5,
+      "tune_social_response": 0.0,
+      "tune_coupled_response": 0.0,
+      "tune_damage": 1.859793722958016,
+      "selection_objective": -0.2951572898057254,
+      "selected": false
+    },
+    {
+      "diagnostic_bias": 8.0,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.0,
+      "tune_env_response": 0.5,
+      "tune_social_response": 0.0,
+      "tune_coupled_response": 0.0,
+      "tune_damage": 1.859793722958016,
+      "selection_objective": -0.2951572898057254,
+      "selected": false
+    },
+    {
+      "diagnostic_bias": 12.0,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.0,
+      "tune_env_response": 0.5,
+      "tune_social_response": 0.0,
+      "tune_coupled_response": 0.0,
+      "tune_damage": 1.859793722958016,
+      "selection_objective": -0.2951572898057254,
+      "selected": false
+    },
+    {
+      "diagnostic_bias": 20.0,
+      "tune_total_score": 0.51872704,
+      "tune_maturation_score": 0.9975519999999999,
+      "tune_crisis_score": 0.0,
+      "tune_resolved_rate": 0.0,
+      "tune_env_response": 0.5,
+      "tune_social_response": 0.0,
+      "tune_coupled_response": 0.0,
+      "tune_damage": 1.859793722958016,
+      "selection_objective": -0.2951572898057254,
+      "selected": false
+    }
+  ],
+  "base_training": [
+    {
+      "architecture": "frame_mlp",
+      "train_loss": 1.8162533044815063,
+      "train_accuracy": 0.25658294153359595,
+      "device_used": "mps",
+      "parameter_count": 9932,
+      "train_sequences": 105,
+      "train_steps": 70827
+    },
+    {
+      "architecture": "gru",
+      "train_loss": 1.7891311645507812,
+      "train_accuracy": 0.2634729693478476,
+      "device_used": "mps",
+      "parameter_count": 28236,
+      "train_sequences": 105,
+      "train_steps": 70827
+    }
+  ],
+  "diagnostic_training": {
+    "train_loss": 0.03152753412723541,
+    "accuracy": 0.9914746880531311,
+    "crisis_accuracy": 0.9914746880531311,
+    "env_accuracy": 0.9914746880531311,
+    "social_accuracy": 0.0,
+    "device_used": "mps",
+    "parameter_count": 28236,
+    "train_examples": 30732,
+    "crisis_examples": 30732,
+    "diagnostic_epochs": 64,
+    "diagnostic_hidden_size": 64
+  },
+  "summary": [
+    {
+      "controller": "designed",
+      "ablation": "none",
+      "mean_total_score": 0.7733075600824334,
+      "mean_maturation_score": 1.0,
+      "mean_crisis_score": 0.5277240835050695,
+      "mean_resolved_rate": 1.0,
+      "mean_env_response_rate": 0.07692307692307693,
+      "mean_social_response_rate": 0.9230769230769231,
+      "mean_coupled_response_rate": 0.0,
+      "mean_crisis_damage": 0.03507404712837282,
+      "mean_final_alive": 17.0,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 3.0,
+      "mean_architecture_tier": 4.0,
+      "mean_tool_tier": 4.0,
+      "mean_knowledge_transfer": 1.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    },
+    {
+      "controller": "diagnostic_memory_gru",
+      "ablation": "body",
+      "mean_total_score": 0.517708672,
+      "mean_maturation_score": 0.9955936,
+      "mean_crisis_score": 0.0,
+      "mean_resolved_rate": 0.05,
+      "mean_env_response_rate": 0.14102564102564102,
+      "mean_social_response_rate": 0.45256410256410257,
+      "mean_coupled_response_rate": 0.007051282051282051,
+      "mean_crisis_damage": 1.3438841156724592,
+      "mean_final_alive": 15.8,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 1.8,
+      "mean_architecture_tier": 3.0,
+      "mean_tool_tier": 4.0,
+      "mean_knowledge_transfer": 1.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    },
+    {
+      "controller": "diagnostic_memory_gru",
+      "ablation": "environment",
+      "mean_total_score": 0.5184250351323365,
+      "mean_maturation_score": 0.9969712214083394,
+      "mean_crisis_score": 0.0,
+      "mean_resolved_rate": 0.05,
+      "mean_env_response_rate": 0.1,
+      "mean_social_response_rate": 0.03333333333333333,
+      "mean_coupled_response_rate": 0.004487179487179487,
+      "mean_crisis_damage": 1.3918840326277082,
+      "mean_final_alive": 15.2,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 1.2,
+      "mean_architecture_tier": 3.0,
+      "mean_tool_tier": 4.0,
+      "mean_knowledge_transfer": 1.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    },
+    {
+      "controller": "diagnostic_memory_gru",
+      "ablation": "infrastructure",
+      "mean_total_score": 0.33027299702820867,
+      "mean_maturation_score": 0.6351403789004012,
+      "mean_crisis_score": 0.0,
+      "mean_resolved_rate": 0.0,
+      "mean_env_response_rate": 0.25,
+      "mean_social_response_rate": 0.0,
+      "mean_coupled_response_rate": 0.0,
+      "mean_crisis_damage": 1.9030110258713193,
+      "mean_final_alive": 14.0,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 0.0,
+      "mean_architecture_tier": 4.0,
+      "mean_tool_tier": 0.0,
+      "mean_knowledge_transfer": 0.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    },
+    {
+      "controller": "diagnostic_memory_gru",
+      "ablation": "none",
+      "mean_total_score": 0.5192362239999999,
+      "mean_maturation_score": 0.9985312000000001,
+      "mean_crisis_score": 0.0,
+      "mean_resolved_rate": 0.1,
+      "mean_env_response_rate": 0.13525641025641028,
+      "mean_social_response_rate": 0.35320512820512817,
+      "mean_coupled_response_rate": 0.025,
+      "mean_crisis_damage": 1.2579815762653175,
+      "mean_final_alive": 15.6,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 1.6,
+      "mean_architecture_tier": 3.8,
+      "mean_tool_tier": 4.0,
+      "mean_knowledge_transfer": 1.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    },
+    {
+      "controller": "diagnostic_memory_gru",
+      "ablation": "previous_action",
+      "mean_total_score": 0.52,
+      "mean_maturation_score": 1.0,
+      "mean_crisis_score": 0.0,
+      "mean_resolved_rate": 0.15,
+      "mean_env_response_rate": 0.07371794871794872,
+      "mean_social_response_rate": 0.367948717948718,
+      "mean_coupled_response_rate": 0.03076923076923077,
+      "mean_crisis_damage": 1.1259463604706998,
+      "mean_final_alive": 15.6,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 1.6,
+      "mean_architecture_tier": 3.4,
+      "mean_tool_tier": 4.0,
+      "mean_knowledge_transfer": 1.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    },
+    {
+      "controller": "diagnostic_memory_gru",
+      "ablation": "social_culture",
+      "mean_total_score": 0.5179878101234582,
+      "mean_maturation_score": 0.9961304040835735,
+      "mean_crisis_score": 0.0,
+      "mean_resolved_rate": 0.0,
+      "mean_env_response_rate": 0.0,
+      "mean_social_response_rate": 1.0,
+      "mean_coupled_response_rate": 0.0,
+      "mean_crisis_damage": 1.2410672506217173,
+      "mean_final_alive": 16.2,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 2.2,
+      "mean_architecture_tier": 3.0,
+      "mean_tool_tier": 4.0,
+      "mean_knowledge_transfer": 1.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    },
+    {
+      "controller": "diagnostic_memory_gru",
+      "ablation": "tools",
+      "mean_total_score": 0.5176903541294055,
+      "mean_maturation_score": 0.9955583733257797,
+      "mean_crisis_score": 0.0,
+      "mean_resolved_rate": 0.0,
+      "mean_env_response_rate": 0.0,
+      "mean_social_response_rate": 0.003205128205128205,
+      "mean_coupled_response_rate": 0.0,
+      "mean_crisis_damage": 1.2316626246334166,
+      "mean_final_alive": 15.2,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 1.2,
+      "mean_architecture_tier": 3.0,
+      "mean_tool_tier": 4.0,
+      "mean_knowledge_transfer": 1.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    },
+    {
+      "controller": "frame_mlp",
+      "ablation": "none",
+      "mean_total_score": 0.3299908453816235,
+      "mean_maturation_score": 0.6345977795800452,
+      "mean_crisis_score": 0.0,
+      "mean_resolved_rate": 0.0,
+      "mean_env_response_rate": 0.25,
+      "mean_social_response_rate": 0.0,
+      "mean_coupled_response_rate": 0.0,
+      "mean_crisis_damage": 1.8827216862027876,
+      "mean_final_alive": 14.0,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 0.0,
+      "mean_architecture_tier": 4.0,
+      "mean_tool_tier": 0.0,
+      "mean_knowledge_transfer": 0.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    },
+    {
+      "controller": "gru",
+      "ablation": "none",
+      "mean_total_score": 0.518472448,
+      "mean_maturation_score": 0.9970623999999999,
+      "mean_crisis_score": 0.0,
+      "mean_resolved_rate": 0.0,
+      "mean_env_response_rate": 0.0,
+      "mean_social_response_rate": 0.31153846153846154,
+      "mean_coupled_response_rate": 0.0,
+      "mean_crisis_damage": 1.2450030381225616,
+      "mean_final_alive": 15.0,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 1.0,
+      "mean_architecture_tier": 3.2,
+      "mean_tool_tier": 4.0,
+      "mean_knowledge_transfer": 1.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    },
+    {
+      "controller": "reactive",
+      "ablation": "none",
+      "mean_total_score": 0.23993131957865424,
+      "mean_maturation_score": 0.46140638380510424,
+      "mean_crisis_score": 0.0,
+      "mean_resolved_rate": 0.0,
+      "mean_env_response_rate": 0.125,
+      "mean_social_response_rate": 0.0,
+      "mean_coupled_response_rate": 0.0,
+      "mean_crisis_damage": 1.9208947255554505,
+      "mean_final_alive": 14.0,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 0.0,
+      "mean_architecture_tier": 0.0,
+      "mean_tool_tier": 0.0,
+      "mean_knowledge_transfer": 0.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    },
+    {
+      "controller": "return_selected_gru",
+      "ablation": "none",
+      "mean_total_score": 0.5192362239999999,
+      "mean_maturation_score": 0.9985312000000001,
+      "mean_crisis_score": 0.0,
+      "mean_resolved_rate": 0.1,
+      "mean_env_response_rate": 0.13525641025641028,
+      "mean_social_response_rate": 0.35320512820512817,
+      "mean_coupled_response_rate": 0.025,
+      "mean_crisis_damage": 1.2579815762653175,
+      "mean_final_alive": 15.6,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 1.6,
+      "mean_architecture_tier": 3.8,
+      "mean_tool_tier": 4.0,
+      "mean_knowledge_transfer": 1.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    },
+    {
+      "controller": "return_selected_reference",
+      "ablation": "none",
+      "mean_total_score": 0.5192362239999999,
+      "mean_maturation_score": 0.9985312000000001,
+      "mean_crisis_score": 0.0,
+      "mean_resolved_rate": 0.1,
+      "mean_env_response_rate": 0.13525641025641028,
+      "mean_social_response_rate": 0.35320512820512817,
+      "mean_coupled_response_rate": 0.025,
+      "mean_crisis_damage": 1.2579815762653175,
+      "mean_final_alive": 15.6,
+      "mean_alive_at_12h": 14.0,
+      "mean_births": 1.6,
+      "mean_architecture_tier": 3.8,
+      "mean_tool_tier": 4.0,
+      "mean_knowledge_transfer": 1.0,
+      "mean_adaptation_evidence": 1.0,
+      "shock_gate_pass_rate": 1.0,
+      "post_gate_shock_rate": 1.0
+    }
+  ],
+  "ablations": [
+    {
+      "ablation": "body",
+      "mean_total_score": 0.517708672,
+      "total_loss": 0.0015275519999998766,
+      "crisis_score_loss": 0.0,
+      "resolved_rate_loss": 0.05,
+      "env_response_loss": -0.005769230769230749,
+      "social_response_loss": -0.0993589743589744,
+      "coupled_response_loss": 0.01794871794871795,
+      "damage_increase": 0.08590253940714176
+    },
+    {
+      "ablation": "infrastructure",
+      "mean_total_score": 0.33027299702820867,
+      "total_loss": 0.18896322697179124,
+      "crisis_score_loss": 0.0,
+      "resolved_rate_loss": 0.1,
+      "env_response_loss": -0.11474358974358972,
+      "social_response_loss": 0.35320512820512817,
+      "coupled_response_loss": 0.025,
+      "damage_increase": 0.6450294496060018
+    },
+    {
+      "ablation": "tools",
+      "mean_total_score": 0.5176903541294055,
+      "total_loss": 0.001545869870594463,
+      "crisis_score_loss": 0.0,
+      "resolved_rate_loss": 0.1,
+      "env_response_loss": 0.13525641025641028,
+      "social_response_loss": 0.35,
+      "coupled_response_loss": 0.025,
+      "damage_increase": -0.0263189516319009
+    },
+    {
+      "ablation": "social_culture",
+      "mean_total_score": 0.5179878101234582,
+      "total_loss": 0.0012484138765417319,
+      "crisis_score_loss": 0.0,
+      "resolved_rate_loss": 0.1,
+      "env_response_loss": 0.13525641025641028,
+      "social_response_loss": -0.6467948717948718,
+      "coupled_response_loss": 0.025,
+      "damage_increase": -0.01691432564360018
+    },
+    {
+      "ablation": "environment",
+      "mean_total_score": 0.5184250351323365,
+      "total_loss": 0.0008111888676634038,
+      "crisis_score_loss": 0.0,
+      "resolved_rate_loss": 0.05,
+      "env_response_loss": 0.03525641025641027,
+      "social_response_loss": 0.31987179487179485,
+      "coupled_response_loss": 0.020512820512820516,
+      "damage_increase": 0.13390245636239073
+    },
+    {
+      "ablation": "previous_action",
+      "mean_total_score": 0.52,
+      "total_loss": -0.0007637760000001048,
+      "crisis_score_loss": 0.0,
+      "resolved_rate_loss": -0.04999999999999999,
+      "env_response_loss": 0.061538461538461556,
+      "social_response_loss": -0.014743589743589802,
+      "coupled_response_loss": -0.0057692307692307696,
+      "damage_increase": -0.13203521579461763
+    }
+  ],
+  "verdict": {
+    "selected_router": "social_first",
+    "selected_diagnostic_bias": 0.0,
+    "diagnostic_memory_total_score": 0.5192362239999999,
+    "return_selected_reference_total_score": 0.5192362239999999,
+    "return_selected_total_score": 0.5192362239999999,
+    "base_gru_total_score": 0.518472448,
+    "designed_total_score": 0.7733075600824334,
+    "frame_total_score": 0.3299908453816235,
+    "reactive_total_score": 0.23993131957865424,
+    "gain_over_return_selected_reference": 0.0,
+    "gain_over_return_selected": 0.0,
+    "gain_over_base_gru": 0.0007637759999998828,
+    "gain_over_frame": 0.18924537861837643,
+    "gain_over_reactive": 0.2793049044213457,
+    "gap_to_designed": 0.2540713360824335,
+    "diagnostic_memory_crisis_score": 0.0,
+    "return_selected_crisis_score": 0.0,
+    "diagnostic_memory_resolved_rate": 0.1,
+    "return_selected_resolved_rate": 0.1,
+    "diagnostic_memory_env_response": 0.13525641025641028,
+    "return_selected_env_response": 0.13525641025641028,
+    "diagnostic_memory_social_response": 0.35320512820512817,
+    "return_selected_social_response": 0.35320512820512817,
+    "diagnostic_memory_coupled_response": 0.025,
+    "return_selected_coupled_response": 0.025,
+    "social_culture_total_loss": 0.0012484138765417319,
+    "environment_total_loss": 0.0008111888676634038,
+    "social_culture_crisis_loss": 0.0,
+    "environment_crisis_loss": 0.0,
+    "social_culture_coupled_loss": 0.025,
+    "environment_coupled_loss": 0.020512820512820516,
+    "shock_gate_pass_rate": 1.0,
+    "post_gate_shock_rate": 1.0,
+    "survival_at_12h": 14.0,
+    "supports_environment_response_gain": false,
+    "supports_diagnostic_memory_selection": false,
+    "supports_social_environment_dependency": true,
+    "verdict": "partial_or_failed"
+  },
+  "trace": {
+    "seed": 20261021,
+    "condition": "diagnostic_memory_gru:social_first:diag_0:none",
+    "frames": [
+      {
+        "label": "0h",
+        "hours": 0.0,
+        "alive": 14,
+        "total_agents": 14,
+        "children": 0,
+        "births": 0,
+        "deaths": 0,
+        "major_shocks": 0,
+        "next_shock": 172.0,
+        "weather": "clear",
+        "food": 0.7718858494019949,
+        "water": 0.7722947667667384,
+        "materials": 0.568715803104111,
+        "medicine": 0.36,
+        "shelter": 0.4343207711278336,
+        "architecture": 0.12,
+        "architecture_tier": 0,
+        "tools": 0.32,
+        "tool_tier": 1,
+        "workshop": 0.1,
+        "waterworks": 0.14,
+        "granary": 0.12,
+        "paths": 0.1,
+        "sanitation": 0.12,
+        "garden": 0.22,
+        "culture": 0.06,
+        "symbols": 0.05,
+        "risk_memory": 0.07,
+        "map_knowledge": 0.1,
+        "contamination": 0.18000000000000002,
+        "disease": 0.1,
+        "predators": 0.12,
+        "route_hazard": 0.2,
+        "resource_migration": 0.18,
+        "adaptive_pressure": 0.1,
+        "pressure_integral": 0.0,
+        "adaptation_evidence": 0.0,
+        "knowledge_transfer": 0.0,
+        "mean_wisdom": 0.11456565981868436,
+        "mean_health": 0.914504657594201,
+        "mean_energy": 0.798826796483425,
+        "mean_age": 32.47477288278735,
+        "actions": {
+          "idle": 14
+        },
+        "events": []
+      },
+      {
+        "label": "3h",
+        "hours": 3.0,
+        "alive": 14,
+        "total_agents": 14,
+        "children": 0,
+        "births": 0,
+        "deaths": 0,
+        "major_shocks": 0,
+        "next_shock": 172.0,
+        "weather": "clear",
+        "food": 0.7418797913807657,
+        "water": 0.7023890129830769,
+        "materials": 0.33621863178815864,
+        "medicine": 0.36,
+        "shelter": 1.0,
+        "architecture": 0.6692341787301108,
+        "architecture_tier": 2,
+        "tools": 0.26497999999999994,
+        "tool_tier": 1,
+        "workshop": 0.1,
+        "waterworks": 0.6068846632993548,
+        "granary": 0.542901804354236,
+        "paths": 0.5241303593677327,
+        "sanitation": 0.12,
+        "garden": 0.5171084220995893,
+        "culture": 0.06,
+        "symbols": 0.05,
+        "risk_memory": 0.12235906318339171,
+        "map_knowledge": 0.19482393019328617,
+        "contamination": 0.15352251651334858,
+        "disease": 0.06375183772413391,
+        "predators": 0.10292751739032463,
+        "route_hazard": 0.08225182837863221,
+        "resource_migration": 0.23147680395642292,
+        "adaptive_pressure": 0.12863142597236668,
+        "pressure_integral": 0.006138367575445007,
+        "adaptation_evidence": 1.0,
+        "knowledge_transfer": 0.0,
+        "mean_wisdom": 0.11815209616461718,
+        "mean_health": 0.914504657594201,
+        "mean_energy": 0.7519805719593483,
+        "mean_age": 35.474772882787384,
+        "actions": {
+          "construct": 14
+        },
+        "events": [],
+        "active_crisis": null,
+        "crisis_resolved": 0,
+        "crisis_unresolved": 0,
+        "crisis_damage": 0.0
+      },
+      {
+        "label": "6h",
+        "hours": 6.0,
+        "alive": 14,
+        "total_agents": 14,
+        "children": 0,
+        "births": 0,
+        "deaths": 0,
+        "major_shocks": 0,
+        "next_shock": 172.0,
+        "weather": "hot",
+        "food": 0.8126118305954129,
+        "water": 0.7229774023233542,
+        "materials": 0.10020982622965215,
+        "medicine": 0.36,
+        "shelter": 1.0,
+        "architecture": 1.0,
+        "architecture_tier": 4,
+        "tools": 0.22151240186333876,
+        "tool_tier": 1,
+        "workshop": 0.10938106692192559,
+        "waterworks": 1.0,
+        "granary": 0.9941171091706055,
+        "paths": 0.9762604560872089,
+        "sanitation": 0.12,
+        "garden": 0.8336852741808671,
+        "culture": 0.06,
+        "symbols": 0.05,
+        "risk_memory": 0.12155107333340863,
+        "map_knowledge": 0.19301885808985964,
+        "contamination": 0.07129502181407217,
+        "disease": 0.023450565836351054,
+        "predators": 0.05791884481128277,
+        "route_hazard": 0.004980426206966822,
+        "resource_migration": 0.2500579580748096,
+        "adaptive_pressure": 0.1034036641552595,
+        "pressure_integral": 0.01022778396428273,
+        "adaptation_evidence": 1.0,
+        "knowledge_transfer": 0.0,
+        "mean_wisdom": 0.1216919311701039,
+        "mean_health": 0.914504657594201,
+        "mean_energy": 0.7074005719593488,
+        "mean_age": 38.47477288278743,
+        "actions": {
+          "construct": 10,
+          "improve_tools": 4
+        },
+        "events": [],
+        "active_crisis": null,
+        "crisis_resolved": 0,
+        "crisis_unresolved": 0,
+        "crisis_damage": 0.0
+      },
+      {
+        "label": "9h",
+        "hours": 9.0,
+        "alive": 14,
+        "total_agents": 14,
+        "children": 0,
+        "births": 0,
+        "deaths": 0,
+        "major_shocks": 0,
+        "next_shock": 172.0,
+        "weather": "hot",
+        "food": 0.9357146547993263,
+        "water": 0.7815916005343858,
+        "materials": 0.001123147447481083,
+        "medicine": 0.36,
+        "shelter": 1.0,
+        "architecture": 0.9971077644693338,
+        "architecture_tier": 4,
+        "tools": 0.8457938796261714,
+        "tool_tier": 4,
+        "workshop": 0.6404038034881668,
+        "waterworks": 1.0,
+        "granary": 0.9998595212462121,
+        "paths": 0.9960732855110725,
+        "sanitation": 0.12,
+        "garden": 0.8475679458603881,
+        "culture": 0.37949512224849896,
+        "symbols": 0.28074647717947154,
+        "risk_memory": 0.3155352150511842,
+        "map_knowledge": 0.19088492438038637,
+        "contamination": 0.0,
+        "disease": 0.0,
+        "predators": 0.0,
+        "route_hazard": 0.0,
+        "resource_migration": 0.23676640017905692,
+        "adaptive_pressure": 0.09565201375359174,
+        "pressure_integral": 0.01436039373741252,
+        "adaptation_evidence": 1.0,
+        "knowledge_transfer": 0.30174539323469346,
+        "mean_wisdom": 0.14647687219065345,
+        "mean_health": 0.914504657594201,
+        "mean_energy": 0.6628205719593491,
+        "mean_age": 41.47477288278748,
+        "actions": {
+          "teach": 14
+        },
+        "events": [],
+        "active_crisis": null,
+        "crisis_resolved": 0,
+        "crisis_unresolved": 0,
+        "crisis_damage": 0.0
+      },
+      {
+        "label": "12h",
+        "hours": 12.0,
+        "alive": 14,
+        "total_agents": 14,
+        "children": 0,
+        "births": 0,
+        "deaths": 0,
+        "major_shocks": 0,
+        "next_shock": 172.0,
+        "weather": "hot",
+        "food": 1.0,
+        "water": 0.8409187361939874,
+        "materials": 0.006707982861168596,
+        "medicine": 0.36,
+        "shelter": 1.0,
+        "architecture": 0.9935809506715152,
+        "architecture_tier": 4,
+        "tools": 0.8247938796261703,
+        "tool_tier": 4,
+        "workshop": 0.6404038034881668,
+        "waterworks": 1.0,
+        "granary": 0.9998595212462121,
+        "paths": 0.996117617329848,
+        "sanitation": 0.12,
+        "garden": 0.8475679458603881,
+        "culture": 1.0,
+        "symbols": 1.0,
+        "risk_memory": 1.0,
+        "map_knowledge": 0.18923346941956923,
+        "contamination": 0.0,
+        "disease": 0.0,
+        "predators": 0.0,
+        "route_hazard": 0.0,
+        "resource_migration": 0.18187655713239018,
+        "adaptive_pressure": 0.05408050435775744,
+        "pressure_integral": 0.016424980175296394,
+        "adaptation_evidence": 1.0,
+        "knowledge_transfer": 1.0,
+        "mean_wisdom": 0.24280462832964278,
+        "mean_health": 0.914504657594201,
+        "mean_energy": 0.6182405719593494,
+        "mean_age": 44.47477288278752,
+        "actions": {
+          "teach": 14
+        },
+        "events": [],
+        "active_crisis": null,
+        "crisis_resolved": 0,
+        "crisis_unresolved": 0,
+        "crisis_damage": 0.0
+      },
+      {
+        "label": "18h",
+        "hours": 18.0,
+        "alive": 14,
+        "total_agents": 14,
+        "children": 0,
+        "births": 0,
+        "deaths": 0,
+        "major_shocks": 1,
+        "next_shock": 172.0,
+        "weather": "hot",
+        "food": 1.0,
+        "water": 0.9228263995311264,
+        "materials": 0.017717502897552934,
+        "medicine": 0.36,
+        "shelter": 1.0,
+        "architecture": 0.9864734440798643,
+        "architecture_tier": 4,
+        "tools": 0.7827938796261683,
+        "tool_tier": 4,
+        "workshop": 0.6404038034881668,
+        "waterworks": 1.0,
+        "granary": 0.9998595212462121,
+        "paths": 0.9962227439939588,
+        "sanitation": 0.12,
+        "garden": 0.8475679458603881,
+        "culture": 1.0,
+        "symbols": 1.0,
+        "risk_memory": 1.0,
+        "map_knowledge": 0.18557911508972733,
+        "contamination": 0.0,
+        "disease": 0.0,
+        "predators": 0.0,
+        "route_hazard": 0.0,
+        "resource_migration": 0.11021504231511084,
+        "adaptive_pressure": 0.05399295157877453,
+        "pressure_integral": 0.020945267903445437,
+        "adaptation_evidence": 1.0,
+        "knowledge_transfer": 1.0,
+        "mean_wisdom": 0.441116351610478,
+        "mean_health": 0.914504657594201,
+        "mean_energy": 0.5290805719593502,
+        "mean_age": 50.4747728827876,
+        "actions": {
+          "teach": 14
+        },
+        "events": [
+          "14.1h: coupled route migration dispute crisis"
+        ],
+        "active_crisis": "route_migration_dispute",
+        "crisis_resolved": 0,
+        "crisis_unresolved": 0,
+        "crisis_damage": 0.058870211095894125
+      },
+      {
+        "label": "24h",
+        "hours": 24.0,
+        "alive": 14,
+        "total_agents": 14,
+        "children": 0,
+        "births": 0,
+        "deaths": 0,
+        "major_shocks": 1,
+        "next_shock": 172.0,
+        "weather": "clear",
+        "food": 1.0,
+        "water": 1.0,
+        "materials": 0.0,
+        "medicine": 0.36,
+        "shelter": 1.0,
+        "architecture": 1.0,
+        "architecture_tier": 4,
+        "tools": 1.0,
+        "tool_tier": 4,
+        "workshop": 1.0,
+        "waterworks": 1.0,
+        "granary": 1.0,
+        "paths": 1.0,
+        "sanitation": 0.12,
+        "garden": 0.936614863864676,
+        "culture": 1.0,
+        "symbols": 1.0,
+        "risk_memory": 0.9958312668368028,
+        "map_knowledge": 0.7491357940171534,
+        "contamination": 0.0,
+        "disease": 0.0,
+        "predators": 0.0,
+        "route_hazard": 0.0,
+        "resource_migration": 0.0,
+        "adaptive_pressure": 0.02902253244569554,
+        "pressure_integral": 0.024467697895668345,
+        "adaptation_evidence": 1.0,
+        "knowledge_transfer": 1.0,
+        "mean_wisdom": 0.5297042548175557,
+        "mean_health": 0.914504657594201,
+        "mean_energy": 0.43992057195935097,
+        "mean_age": 56.47477288278766,
+        "actions": {
+          "construct": 2,
+          "improve_tools": 12
+        },
+        "events": [
+          "14.1h: coupled route migration dispute crisis",
+          "21.9h: resolved route migration dispute"
+        ],
+        "active_crisis": null,
+        "crisis_resolved": 1,
+        "crisis_unresolved": 0,
+        "crisis_damage": 0.10333300731111057
+      },
+      {
+        "label": "36h",
+        "hours": 36.0,
+        "alive": 18,
+        "total_agents": 18,
+        "children": 4,
+        "births": 4,
+        "deaths": 0,
+        "major_shocks": 2,
+        "next_shock": 172.0,
+        "weather": "clear",
+        "food": 1.0,
+        "water": 1.0,
+        "materials": 0.0,
+        "medicine": 0.36,
+        "shelter": 1.0,
+        "architecture": 1.0,
+        "architecture_tier": 4,
+        "tools": 1.0,
+        "tool_tier": 4,
+        "workshop": 1.0,
+        "waterworks": 1.0,
+        "granary": 1.0,
+        "paths": 1.0,
+        "sanitation": 0.12,
+        "garden": 1.0,
+        "culture": 1.0,
+        "symbols": 1.0,
+        "risk_memory": 0.987566739360998,
+        "map_knowledge": 0.7227511659934369,
+        "contamination": 0.0,
+        "disease": 0.004266820832937378,
+        "predators": 0.0,
+        "route_hazard": 0.0,
+        "resource_migration": 0.05874001371892714,
+        "adaptive_pressure": 0.033814630183022165,
+        "pressure_integral": 0.0298900550157644,
+        "adaptation_evidence": 1.0,
+        "knowledge_transfer": 1.0,
+        "mean_wisdom": 0.4764705939149178,
+        "mean_health": 0.8573287003551214,
+        "mean_energy": 0.26653257152988963,
+        "mean_age": 55.29149001994577,
+        "actions": {
+          "construct": 2,
+          "improve_tools": 12,
+          "learn": 4
+        },
+        "events": [
+          "24.5h: new generation born",
+          "26.8h: new generation born",
+          "27.0h: coupled storm shelter coordination crisis",
+          "27.8h: new generation born",
+          "28.3h: new generation born",
+          "34.8h: unresolved storm shelter coordination"
+        ],
+        "active_crisis": null,
+        "crisis_resolved": 1,
+        "crisis_unresolved": 1,
+        "crisis_damage": 0.3941015964337672
+      },
+      {
+        "label": "48h",
+        "hours": 48.0,
+        "alive": 18,
+        "total_agents": 18,
+        "children": 0,
+        "births": 4,
+        "deaths": 0,
+        "major_shocks": 3,
+        "next_shock": 172.0,
+        "weather": "cold",
+        "food": 1.0,
+        "water": 1.0,
+        "materials": 0.0,
+        "medicine": 0.36,
+        "shelter": 1.0,
+        "architecture": 1.0,
+        "architecture_tier": 4,
+        "tools": 1.0,
+        "tool_tier": 4,
+        "workshop": 1.0,
+        "waterworks": 1.0,
+        "granary": 1.0,
+        "paths": 1.0,
+        "sanitation": 0.12,
+        "garden": 1.0,
+        "culture": 1.0,
+        "symbols": 1.0,
+        "risk_memory": 0.9964316759993244,
+        "map_knowledge": 0.6986435968833805,
+        "contamination": 0.039037819468689616,
+        "disease": 0.0742980588111696,
+        "predators": 0.0,
+        "route_hazard": 0.0,
+        "resource_migration": 0.19574212950236272,
+        "adaptive_pressure": 0.058314418361184464,
+        "pressure_integral": 0.03636831600082202,
+        "adaptation_evidence": 1.0,
+        "knowledge_transfer": 1.0,
+        "mean_wisdom": 0.5134979520532895,
+        "mean_health": 0.8573287003551214,
+        "mean_energy": 0.11572206215425311,
+        "mean_age": 67.29149001994534,
+        "actions": {
+          "construct": 2,
+          "improve_tools": 16
+        },
+        "events": [
+          "26.8h: new generation born",
+          "27.0h: coupled storm shelter coordination crisis",
+          "27.8h: new generation born",
+          "28.3h: new generation born",
+          "34.8h: unresolved storm shelter coordination",
+          "42.0h: coupled quarantine rumor crisis"
+        ],
+        "active_crisis": "quarantine_rumor",
+        "crisis_resolved": 1,
+        "crisis_unresolved": 1,
+        "crisis_damage": 0.5174979121004141
+      },
+      {
+        "label": "60h",
+        "hours": 60.0,
+        "alive": 18,
+        "total_agents": 18,
+        "children": 0,
+        "births": 4,
+        "deaths": 0,
+        "major_shocks": 4,
+        "next_shock": 172.0,
+        "weather": "clear",
+        "food": 1.0,
+        "water": 1.0,
+        "materials": 0.0,
+        "medicine": 0.36,
+        "shelter": 1.0,
+        "architecture": 1.0,
+        "architecture_tier": 4,
+        "tools": 1.0,
+        "tool_tier": 4,
+        "workshop": 1.0,
+        "waterworks": 1.0,
+        "granary": 1.0,
+        "paths": 1.0,
+        "sanitation": 0.12,
+        "garden": 1.0,
+        "culture": 1.0,
+        "symbols": 1.0,
+        "risk_memory": 1.0,
+        "map_knowledge": 0.6766344505961575,
+        "contamination": 0.06687600274326361,
+        "disease": 0.01235553916293149,
+        "predators": 0.0,
+        "route_hazard": 0.0,
+        "resource_migration": 0.27492779534215606,
+        "adaptive_pressure": 0.05789632251795325,
+        "pressure_integral": 0.0442668929397134,
+        "adaptation_evidence": 1.0,
+        "knowledge_transfer": 1.0,
+        "mean_wisdom": 0.5374612795783418,
+        "mean_health": 0.8466258282086983,
+        "mean_energy": 0.04161527006453124,
+        "mean_age": 79.29149001994485,
+        "actions": {
+          "construct": 2,
+          "improve_tools": 16
+        },
+        "events": [
+          "27.8h: new generation born",
+          "28.3h: new generation born",
+          "34.8h: unresolved storm shelter coordination",
+          "42.0h: coupled quarantine rumor crisis",
+          "49.8h: unresolved quarantine rumor",
+          "57.0h: coupled contaminated water trust crisis"
+        ],
+        "active_crisis": "contaminated_water_trust",
+        "crisis_resolved": 1,
+        "crisis_unresolved": 2,
+        "crisis_damage": 0.8024867053340792
+      },
+      {
+        "label": "72h",
+        "hours": 72.0,
+        "alive": 18,
+        "total_agents": 18,
+        "children": 0,
+        "births": 4,
+        "deaths": 0,
+        "major_shocks": 4,
+        "next_shock": 172.0,
+        "weather": "clear",
+        "food": 1.0,
+        "water": 1.0,
+        "materials": 0.0,
+        "medicine": 0.36,
+        "shelter": 1.0,
+        "architecture": 1.0,
+        "architecture_tier": 4,
+        "tools": 1.0,
+        "tool_tier": 4,
+        "workshop": 1.0,
+        "waterworks": 1.0,
+        "granary": 1.0,
+        "paths": 1.0,
+        "sanitation": 0.12,
+        "garden": 1.0,
+        "culture": 1.0,
+        "symbols": 1.0,
+        "risk_memory": 1.0,
+        "map_knowledge": 0.656390229868799,
+        "contamination": 0.0,
+        "disease": 0.0,
+        "predators": 0.0,
+        "route_hazard": 0.0,
+        "resource_migration": 0.27858670580562445,
+        "adaptive_pressure": 0.04608907522036583,
+        "pressure_integral": 0.05098744695786051,
+        "adaptation_evidence": 1.0,
+        "knowledge_transfer": 1.0,
+        "mean_wisdom": 0.5614612549607356,
+        "mean_health": 0.8370296969517712,
+        "mean_energy": 0.0034227020805732674,
+        "mean_age": 91.29149001994418,
+        "actions": {
+          "construct": 2,
+          "improve_tools": 16
+        },
+        "events": [
+          "28.3h: new generation born",
+          "34.8h: unresolved storm shelter coordination",
+          "42.0h: coupled quarantine rumor crisis",
+          "49.8h: unresolved quarantine rumor",
+          "57.0h: coupled contaminated water trust crisis",
+          "64.8h: unresolved contaminated water trust"
+        ],
+        "active_crisis": null,
+        "crisis_resolved": 1,
+        "crisis_unresolved": 3,
+        "crisis_damage": 1.0637261877956536
+      }
+    ]
+  },
+  "crisis_logs": {
+    "20261021:designed:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.9807692307692307,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.9807692307692307,
+        "resolved": true
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      }
+    ],
+    "20261021:reactive:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261021:frame_mlp:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261021:gru:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.358695652173913,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261021:return_selected_gru:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.8269927536231878,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261021:return_selected_reference:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.8269927536231878,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261021:diagnostic_memory_gru:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.8269927536231878,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261021:diagnostic_memory_gru:body": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.37006802721088417,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.37006802721088417,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261021:diagnostic_memory_gru:infrastructure": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261021:diagnostic_memory_gru:tools": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.3088768115942027,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261021:diagnostic_memory_gru:social_culture": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261021:diagnostic_memory_gru:environment": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.7857142857142858,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.07846467391304347,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261021:diagnostic_memory_gru:previous_action": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      }
+    ],
+    "20261022:designed:none": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.9807692307692307,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.9807692307692307,
+        "resolved": true
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      }
+    ],
+    "20261022:reactive:none": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261022:frame_mlp:none": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261022:gru:none": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.9326086956521744,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261022:return_selected_gru:none": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.41410256410256413,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.41410256410256413,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.16205357142857146,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.8456632653061222,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261022:return_selected_reference:none": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.41410256410256413,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.41410256410256413,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.16205357142857146,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.8456632653061222,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261022:diagnostic_memory_gru:none": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.41410256410256413,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.41410256410256413,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.16205357142857146,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.8456632653061222,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261022:diagnostic_memory_gru:body": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261022:diagnostic_memory_gru:infrastructure": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261022:diagnostic_memory_gru:tools": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261022:diagnostic_memory_gru:social_culture": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261022:diagnostic_memory_gru:environment": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.9924812030075189,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.9326086956521744,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261022:diagnostic_memory_gru:previous_action": [
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261023:designed:none": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.9807692307692307,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.9807692307692307,
+        "resolved": true
+      }
+    ],
+    "20261023:reactive:none": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261023:frame_mlp:none": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261023:gru:none": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261023:return_selected_gru:none": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261023:return_selected_reference:none": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261023:diagnostic_memory_gru:none": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261023:diagnostic_memory_gru:body": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261023:diagnostic_memory_gru:infrastructure": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261023:diagnostic_memory_gru:tools": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261023:diagnostic_memory_gru:social_culture": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261023:diagnostic_memory_gru:environment": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261023:diagnostic_memory_gru:previous_action": [
+      {
+        "crisis": "quarantine_rumor",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.1571428571428571,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261024:designed:none": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.9807692307692307,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.9807692307692307,
+        "resolved": true
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      }
+    ],
+    "20261024:reactive:none": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261024:frame_mlp:none": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261024:gru:none": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261024:return_selected_gru:none": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.2750000000000001,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261024:return_selected_reference:none": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.2750000000000001,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261024:diagnostic_memory_gru:none": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.2750000000000001,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261024:diagnostic_memory_gru:body": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.3959627329192546,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.3959627329192546,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261024:diagnostic_memory_gru:infrastructure": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261024:diagnostic_memory_gru:tools": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261024:diagnostic_memory_gru:social_culture": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261024:diagnostic_memory_gru:environment": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 0.9933673469387756,
+        "coupled_fraction": 0.9933673469387756,
+        "resolved": true
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.7959183673469392,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261024:diagnostic_memory_gru:previous_action": [
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "route_migration_dispute",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261025:designed:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.9807692307692307,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.9807692307692307,
+        "resolved": true
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      }
+    ],
+    "20261025:reactive:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261025:frame_mlp:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261025:gru:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261025:return_selected_gru:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.8499999999999986,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.8499999999999986,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.9086956521739136,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261025:return_selected_reference:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.8499999999999986,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.8499999999999986,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.9086956521739136,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261025:diagnostic_memory_gru:none": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.8499999999999986,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.8499999999999986,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.9086956521739136,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261025:diagnostic_memory_gru:body": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.6844812925170071,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.6844812925170071,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261025:diagnostic_memory_gru:infrastructure": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 1.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261025:diagnostic_memory_gru:tools": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261025:diagnostic_memory_gru:social_culture": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261025:diagnostic_memory_gru:environment": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      }
+    ],
+    "20261025:diagnostic_memory_gru:previous_action": [
+      {
+        "crisis": "route_migration_dispute",
+        "start": 14.1,
+        "end": 21.9,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "storm_shelter_coordination",
+        "start": 27.0,
+        "end": 34.8,
+        "env_fraction": 0.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "quarantine_rumor",
+        "start": 42.0,
+        "end": 49.8,
+        "env_fraction": 0.0,
+        "social_fraction": 0.0,
+        "coupled_fraction": 0.0,
+        "resolved": false
+      },
+      {
+        "crisis": "contaminated_water_trust",
+        "start": 57.0,
+        "end": 64.8,
+        "env_fraction": 1.0,
+        "social_fraction": 1.0,
+        "coupled_fraction": 1.0,
+        "resolved": true
+      }
+    ]
+  },
+  "notes": {
+    "claim": "recurrent crisis-diagnostic action memory for coupled social/environment pressure",
+    "not_claimed": "actor-critic reinforcement learning, subjective consciousness, open-ended civilization, or real-world competence",
+    "input_discipline": "the diagnostic GRU consumes ordinary observation features and previous-action context, but not active crisis profile labels at runtime",
+    "return_selected_reference": "duplicate of the return-selected GRU held-out row used as a stable baseline reference, not a separate Report 111 rerun"
+  }
+}

@@ -92,7 +92,7 @@ That is easier to prove and safer than a fully autonomous coding agent.
 
 ## What Is Not Proven Yet
 
-The current simulator does not yet prove that field-experience critics work. Report 111 is the caution: even cloned simulator rollouts can train a critic that validation rejects because it does not improve held-out consequences.
+The current simulator does not yet prove that field-experience critics work. Reports 111 and 112 are the caution. A critic can be trained from cloned rollouts, or a diagnostic head can reach `0.991` offline label accuracy, and validation can still reject it because it does not improve held-out consequences.
 
 For software, the controller has to prove itself on real outcomes: better patches, fewer regressions, stronger hidden-test performance, less review time, and lower debugging cost.
 

@@ -106,7 +106,7 @@ If a no-self or world-only agent performs just as well, the self claim fails for
 
 ## What The Evidence Shows
 
-The canonical runner is now wired for `91` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, social credit-assignment controller, social repair critic controller, multi-day maturation verifier, learned multi-day maturation controller, return-selected multi-day maturation controller, coupled social/environment maturation controller, coupled crisis repair critic controller, coupled crisis outcome-value controller, coupled crisis sequence-outcome controller, coupled crisis environmental-bottleneck controller, and coupled crisis rollout-window controller.
+The canonical runner is now wired for `92` runs, including the physics-first benchmark, settlement/civilization pressure layer, long-horizon adaptation verifier, hidden-regime adaptation verifier, learned hidden-regime controller, option-gated learned hidden-regime controller, return-selected learned hidden-regime controller, focused social/culture hidden-regime controller, social credit-assignment controller, social repair critic controller, multi-day maturation verifier, learned multi-day maturation controller, return-selected multi-day maturation controller, coupled social/environment maturation controller, coupled crisis repair critic controller, coupled crisis outcome-value controller, coupled crisis sequence-outcome controller, coupled crisis environmental-bottleneck controller, coupled crisis rollout-window controller, and coupled crisis diagnostic-memory controller.
 
 That does not mean all claims are proven. It means the repo evidence stack is designed to be regenerated under its canonical runner, and each new claim still needs its matching verification pass.
 
@@ -241,9 +241,11 @@ Report 110 makes the environmental side harder to fake. Generic environmental ac
 
 Report 111 replaces the analytic plan target with cloned simulator rollouts. That sounds closer to the long-term field-experience idea, but the result is still negative: the plan model trains on `9248` rollout examples, validation selects plan bias `0.0`, and held-out crisis score stays `0.000`. The lesson is sharper: counterfactual rollout labels alone are not enough. The repair policy needs stronger consequence-trained action learning, active crisis memory, or diagnostic state that actually changes behavior.
 
+Report 112 tries that diagnostic-state idea directly. A recurrent diagnostic head learns the primary environmental repair label very well offline, with `0.991` crisis-window accuracy across `30732` training examples. But validation still selects diagnostic bias `0.0`. Nonzero diagnostic bias increases environmental response on tuning worlds, but it also collapses social response to `0.000`, leaves crisis score at `0.000`, and increases damage. The lesson is now very specific: correct diagnostic labels do not count as field experience unless using them improves held-out action consequences.
+
 ![SSRM-3D open emergence pressure ledger sandbox](assets/ssrm_3d_open_emergence_cognition_pressure.png)
 
-That sandbox is a prototype for the next benchmark, not a new proof result. The important next step is stronger consequence-trained repair control: actor-critic, model-based return learning, learned active-crisis memory, or explicit diagnostic heads inside the crisis world, with held-out worlds and targeted ablations.
+That sandbox is a prototype for the next benchmark, not a new proof result. The important next step is stronger consequence-trained repair control: actor-critic, model-based return learning, or learned active-crisis memory inside the crisis world, with held-out worlds and targeted ablations. Report 112 makes clear that an offline-correct diagnostic head is not enough by itself.
 
 ## What This Could Become
 

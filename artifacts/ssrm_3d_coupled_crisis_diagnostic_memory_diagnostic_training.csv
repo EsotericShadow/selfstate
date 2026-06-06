@@ -1,0 +1,2 @@
+train_loss,accuracy,crisis_accuracy,env_accuracy,social_accuracy,device_used,parameter_count,train_examples,crisis_examples,diagnostic_epochs,diagnostic_hidden_size
+0.03152753412723541,0.9914746880531311,0.9914746880531311,0.9914746880531311,0.0,mps,28236,30732,30732,64,64

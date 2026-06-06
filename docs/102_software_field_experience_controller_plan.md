@@ -16,7 +16,7 @@ A field-experienced software engineering controller improves a frontier LLM's ro
 
 ## Current Research Dependency
 
-This roadmap depends on a stronger simulator result than the project has today. Report 111 is a caution: even when plan-value labels come from cloned simulator rollouts, validation can reject the overlay if it does not improve held-out action consequences. The software version should therefore be judged by real patch outcomes, hidden tests, review survival, regression reduction, and cost, not by whether the critic sounds plausible.
+This roadmap depends on a stronger simulator result than the project has today. Reports 111 and 112 are the caution. Report 111 shows that even plan-value labels from cloned simulator rollouts can be rejected by validation. Report 112 goes further: a diagnostic head can reach `0.991` offline label accuracy and still be selected off because using it worsens coupled online consequences. The software version should therefore be judged by real patch outcomes, hidden tests, review survival, regression reduction, and cost, not by whether the critic sounds plausible or predicts a plausible label.
 
 ## Why Software Is The Direct Money Path
 
@@ -237,6 +237,14 @@ The key training target is not "write code." It is:
 ```text
 choose the right repair path under uncertainty and prove it without wasting time
 ```
+
+Report 112 adds a stricter warning for this product path:
+
+```text
+offline critic accuracy is not field experience unless it improves held-out consequences
+```
+
+For software, that means a root-cause critic is not valuable merely because it predicts a plausible cause. It has to produce better accepted patches, fewer regressions, stronger hidden-test performance, less review time, or lower debugging cost when wrapped around the same frontier coding LLM.
 
 ## Safety And Scope
 

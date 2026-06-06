@@ -22,9 +22,9 @@ It treats "self" as a persistent model of the acting system. That model can be e
 
 The current public status:
 
-- reports now run from `01` through `93`;
-- the canonical runner is wired for `75` executable runs;
-- the newest evidence step is a headless long-horizon adaptation verifier for the 12h shock gate;
+- reports now run from `01` through `94`;
+- the canonical runner is wired for `76` executable runs;
+- the newest evidence step is a hidden-regime adaptation verifier after the 12h shock gate;
 - a separate live open-emergence sandbox now explores larger geography, multiple shelters, generic physical action primitives, lifecycle cost, abstract reproduction, dependent care, private beliefs, environment-inferred symbol categories, influence-weighted symbol adoption, invented sound tokens, terrain glyphs, conflict, discovered specializations, shifting resource reliability, stale-map pressure, disease strain, social inequality, and a long-horizon development phase before delayed major shocks;
 - the strongest result is still bounded simulation evidence;
 - the project has useful evidence, but not a finished proof of a general selfhood law.
@@ -126,6 +126,7 @@ The repo is not one experiment. It is a ladder of tests.
 | Settlement/civilization pressure | [89](../89_ssrm_3d_civilization_pressure_report.md) | What breaks when the world contains agents, roles, construction, norms, emotion-like control, and future shocks? | Integrated settlement state beats reactive individuals and targeted ablations, but this is still designed policy evidence. |
 | Open-emergence sandbox | [sandbox](../90_ssrm_3d_open_emergence_sandbox.md) | What should a live non-replay demo expose before the next benchmark? | Agents start from traits and use generic primitives such as inspect, harvest, construct, repair, modify, strike, and signal. They carry private beliefs and thought traces, attach sounds/glyphs to environment-inferred categories, and can spread names through influence-weighted convention pressure. The current pass adds a 12-hour major-shock gate, slow ecology, shifting resource reliability, stale map knowledge, disease strain, social inequality, architecture/tool improvement, teaching tradition, risk memory, and operational wisdom/adaptation variables. It is not canonical evidence yet. |
 | Long-horizon adaptation | [93](../93_ssrm_3d_long_horizon_adaptation_report.md) | Does the 12-hour development gate survive headless multi-seed verification? | Yes as a designed verifier: no major shocks before 12h, post-gate shock appears, agents survive, architecture/tools/teaching/risk memory improve, and targeted ablations create losses. It is not learned closed-loop evidence yet. |
+| Hidden-regime adaptation | [94](../94_ssrm_3d_hidden_regime_adaptation_report.md) | Can the world change its hidden rules after 12h without handing agents a label? | Yes as a designed verifier: agents receive noisy symptoms, not regime names, and the integrated condition passes hidden water, weather, food, tool, and social regime pressure. Ablations expose inference, teaching, reputation/influence, sanitation, weather, and tool-adaptation losses. |
 
 ## What The Early Experiments Showed
 

@@ -88,16 +88,20 @@ Before the shock gate opens, agents face gradual pressure instead of instant dra
 - map knowledge can go stale unless agents keep inspecting, marking, and sharing;
 - disease strain and social inequality can rise as sanitation, scarcity, influence, and conflict change;
 - architecture, tool design, food storage, paths, waterworks, teaching tradition, and risk memory can improve or degrade;
+- fuel reserve, seed bank, building patterns, tool patterns, forecast memory, and apprenticeship can accumulate or decay;
+- pest pressure and structural strain rise from weather, storage, population, contamination, and weak preparation;
 - hunger, thirst, aging, gestation, shelter wear, tool wear, sickness, and stress run on slower clocks;
 - an hourly development log records pressure, adaptation evidence, architecture, tool design, teaching, and average wisdom.
 
 After the 12-hour gate, major shocks such as drought, blight, epidemic, structural failure, or frontier threat can occur. This gives the world a falsifiable long-horizon shape: early development, then delayed stress that tests whether infrastructure, symbols, social transmission, and body/self-state were useful.
 
+The newest environment-development pass makes preparation more explicit. Generic actions can now build fuel stores, seed banks, building/tool blueprints, weather markers, and apprenticeship space. Repair and treatment can reduce structural strain or pest pressure. Major shocks interact with those variables: seed banks soften drought/blight, forecast memory softens route shocks, and building patterns reduce structural-failure damage. These are still hand-built sandbox dynamics, but they make the viewer less like a water/shelter loop and more like a slow survival ecology.
+
 The sandbox treats wisdom operationally. Wisdom increases through long-horizon actions such as inspecting uncertainty, repairing, constructing, modifying tools, treating illness, and sharing patterns. It can influence social weight and reserve cost, and a small amount can pass to offspring through teaching tradition and parent experience. This is not a consciousness claim; it is a measurable adaptation variable.
 
 The newest pass also adds an adaptive-pressure ledger. It reports survival, ecology, infrastructure, social, and uncertainty pressure through the JSON snapshot and HUD. The goal is to make "becoming wise" testable: agents should accumulate adaptation evidence only when they cope with shifting pressure, not when they repeat a memorized survival loop.
 
-The page also exposes `window.ssrmOpenEmergence.longHorizonAudit()` and an `Audit 12h` intervention button for browser-side verification. The audit advances the live sandbox to `1h`, `6h`, `12h`, `12.5h`, and `14.5h` checkpoints and returns a verdict for the shock gate, post-gate shock, accumulated adaptation evidence, and population survival.
+The page also exposes an `Audit 12h` intervention button for browser-side verification. The audit advances the live sandbox to `1h`, `6h`, `12h`, `12.5h`, and `14.5h` checkpoints and returns a verdict for the shock gate, post-gate shock, accumulated adaptation evidence, readiness before shock, readiness after shock, bounded structural strain, bounded pest pressure, and population survival.
 
 ## Current balance pass
 
@@ -124,6 +128,7 @@ The sandbox is useful for design pressure, not final evidence. It tests whether 
 - sound can spread attention and discovered action knowledge;
 - invented language and glyphs can alter attention, trust, fear, learned meanings, and action availability;
 - agents can construct, repair, modify, damage, injure, or kill through generic physical/social interfaces;
+- agents can prepare for later shocks by accumulating environmental readiness rather than only collecting immediate food and water;
 - specializations emerge from action history rather than assigned roles.
 
 ## What this does not claim

@@ -405,6 +405,13 @@
       "repair",
       "illness",
       "path",
+      "fuel",
+      "seed",
+      "blueprint",
+      "strain",
+      "pest",
+      "forecast",
+      "apprentice",
       "gather",
       "wait",
       "follow",
@@ -449,6 +456,13 @@
       repair: [0.06, 0.08, 0.82, 0.64, 0.26, 0.18, 0.38, 0.28, 0.40],
       illness: ENVIRONMENT_SIGNALS.clinic,
       path: ENVIRONMENT_SIGNALS.frontier,
+      fuel: [0.08, 0.10, 0.38, 0.70, 0.24, 0.06, 0.16, 0.24, 0.82],
+      seed: [0.12, 0.82, 0.26, 0.20, 0.10, 0.14, 0.20, 0.30, 0.38],
+      blueprint: [0.04, 0.08, 0.84, 0.72, 0.14, 0.12, 0.36, 0.42, 0.36],
+      strain: [0.04, 0.08, 0.86, 0.54, 0.72, 0.08, 0.20, 0.28, 0.52],
+      pest: [0.10, 0.72, 0.22, 0.10, 0.68, 0.12, 0.20, 0.24, 0.42],
+      forecast: [0.06, 0.08, 0.22, 0.16, 0.44, 0.08, 0.32, 0.86, 0.74],
+      apprentice: [0.08, 0.14, 0.36, 0.42, 0.12, 0.48, 0.82, 0.42, 0.38],
       gather: ENVIRONMENT_SIGNALS.forest,
       wait: ENVIRONMENT_SIGNALS.home_shelter,
       follow: ENVIRONMENT_SIGNALS.commons,
@@ -477,7 +491,7 @@
     const MIN_REPRODUCTION_TIME = 2.5 * HOUR;
     const WEATHER_MIN_INTERVAL = 0.65 * HOUR;
     const WEATHER_SPAN = 1.35 * HOUR;
-    const FEATURE_COUNT = 64;
+    const FEATURE_COUNT = 72;
     const HIDDEN = 18;
 
     const els = {
@@ -720,8 +734,8 @@
       const base = placeKey ? signalForPlace(placeKey) : (HINT_TO_SIGNAL[hint] || HINT_TO_SIGNAL.self);
       return inferCategory(agent, noisySignal(base, 0.020), {
         place: placeKey || hint,
-        value: ["water", "food", "shelter", "repair", "tool", "child", "trust"].includes(hint) ? 0.72 : 0.32,
-        danger: ["danger", "storm", "illness"].includes(hint) ? 0.76 : 0.14,
+        value: ["water", "food", "shelter", "repair", "tool", "child", "trust", "fuel", "seed", "blueprint", "forecast", "apprentice"].includes(hint) ? 0.72 : 0.32,
+        danger: ["danger", "storm", "illness", "strain", "pest"].includes(hint) ? 0.76 : 0.14,
       });
     }
 
@@ -908,6 +922,13 @@
         { concept: "repair", value: Math.max(0, 0.72 - averageShelter()) + Math.max(0, 0.58 - world.tools) + Math.max(0, 0.50 - world.architecture) * 0.35 },
         { concept: "tool", value: Math.max(0, 0.56 - world.toolDesign) + Math.max(0, 0.52 - world.tools) },
         { concept: "path", value: Math.max(0, world.routeHazard - 0.26) + Math.max(0, 0.56 - world.pathNetwork) * 0.40 },
+        { concept: "fuel", value: Math.max(0, 0.46 - world.fuelReserve) + Math.abs(world.temperature - 0.58) * 0.44 + (world.weather === "storm" ? 0.16 : 0) },
+        { concept: "seed", value: Math.max(0, 0.40 - world.seedBank) + world.pestPressure * 0.24 + Math.max(0, 0.56 - world.foodReliability) * 0.20 },
+        { concept: "blueprint", value: Math.max(0, 0.42 - world.buildingBlueprints) * 0.42 + Math.max(0, 0.38 - world.toolBlueprints) * 0.34 + world.structuralStrain * 0.26 },
+        { concept: "strain", value: world.structuralStrain + Math.max(0, 0.58 - averageShelter()) * 0.22 },
+        { concept: "pest", value: world.pestPressure + Math.max(0, 0.50 - world.foodStorage) * 0.12 },
+        { concept: "forecast", value: Math.max(0, 0.50 - world.forecastMemory) * 0.32 + world.ecologyVolatility * 0.22 + world.resourceMigration * 0.18 },
+        { concept: "apprentice", value: Math.max(0, 0.42 - world.apprenticeship) * 0.24 + (countAgents((other) => other.lifeStage === "offspring") / Math.max(4, livingAgents().length)) * 0.30 },
         { concept: "uncertainty", value: world.knowledgeDrift + world.resourceMigration * 0.24 + Math.max(0, 0.56 - world.map) * 0.30 },
         { concept: "social", value: world.socialInequality + world.conflict * 0.34 + Math.max(0, 0.56 - world.trust) * 0.18 },
         { concept: "storm", value: world.weather === "storm" ? 0.88 : 0.12 },
@@ -1119,6 +1140,14 @@
       foodStorage: 0.18,
       pathNetwork: 0.12,
       waterworks: 0.16,
+      fuelReserve: 0.30,
+      seedBank: 0.16,
+      buildingBlueprints: 0.10,
+      toolBlueprints: 0.08,
+      forecastMemory: 0.10,
+      apprenticeship: 0.08,
+      pestPressure: 0.08,
+      structuralStrain: 0.14,
       teachingTradition: 0.08,
       riskMemory: 0.08,
       soilFertility: 0.64,
@@ -1178,6 +1207,17 @@
       return clamp(mean(Object.values(world.shelters)) * (0.86 + world.architecture * 0.20));
     }
 
+    function environmentReadiness() {
+      return clamp((
+        world.fuelReserve
+        + world.seedBank
+        + world.buildingBlueprints
+        + world.toolBlueprints
+        + world.forecastMemory
+        + world.apprenticeship
+      ) / 6);
+    }
+
     function simHours() {
       return world.time / HOUR;
     }
@@ -1212,6 +1252,9 @@
         scarcity
         + world.sickness * 0.22
         + world.contamination * 0.22
+        + world.pestPressure * 0.14
+        + Math.max(0, 0.44 - world.fuelReserve) * 0.16
+        + Math.max(0, 0.38 - world.seedBank) * 0.12
         + Math.max(0, 0.62 - averageAgent((agent) => agent.biologicalReserve)) * 0.28,
       );
       const ecology = clamp(
@@ -1219,14 +1262,19 @@
         + world.resourceMigration * 0.28
         + Math.abs(world.temperature - 0.58) * 0.42
         + Math.max(0, 0.55 - world.visibility) * 0.20
-        + world.routeHazard * 0.24,
+        + world.routeHazard * 0.24
+        + world.pestPressure * 0.16
+        + Math.max(0, 0.42 - world.forecastMemory) * 0.12,
       );
       const infrastructure = clamp(
         Math.max(0, 0.62 - averageShelter()) * 0.34
         + Math.max(0, 0.54 - world.architecture) * 0.22
         + Math.max(0, 0.54 - world.toolDesign) * 0.18
         + Math.max(0, 0.50 - world.pathNetwork) * 0.16
-        + Math.max(0, 0.48 - world.waterworks) * 0.12,
+        + Math.max(0, 0.48 - world.waterworks) * 0.12
+        + world.structuralStrain * 0.22
+        + Math.max(0, 0.42 - world.buildingBlueprints) * 0.10
+        + Math.max(0, 0.38 - world.toolBlueprints) * 0.08,
       );
       const social = clamp(
         world.socialInequality * 0.32
@@ -1241,7 +1289,9 @@
         + world.resourceMigration * 0.22
         + Math.max(0, 0.58 - world.map) * 0.26
         + Math.max(0, 0.50 - world.riskMemory) * 0.18
-        + Math.max(0, 0.52 - symbolFieldStrength()) * 0.10,
+        + Math.max(0, 0.52 - symbolFieldStrength()) * 0.10
+        + Math.max(0, 0.44 - world.forecastMemory) * 0.18
+        + Math.max(0, 0.40 - world.apprenticeship) * 0.12,
       );
       const total = clamp(
         survival * 0.24
@@ -1288,17 +1338,27 @@
       const aliveCount = livingAgents().length;
       const cleanliness = averageAgent((agent) => agent.cleanliness);
       const scarcity = Math.max(0, 0.50 - Math.min(world.food, world.water));
-      world.ecologyVolatility = clamp(0.08 + Math.abs(seasonal) * 0.18 + storm * 0.18 + Math.abs(world.rainfall - 0.26) * 0.16 + world.majorShockCount * 0.018);
-      world.resourceMigration = clamp(0.14 + Math.abs(migrationCycle) * 0.32 + world.threat * 0.08 + world.ecologyVolatility * 0.12 - world.pathNetwork * 0.06);
-      world.waterReliability = clamp(0.54 + waterCycle * 0.15 + world.rainfall * 0.22 - world.contamination * 0.18 + world.waterworks * 0.16);
-      world.foodReliability = clamp(0.54 + seasonal * 0.16 + world.soilFertility * 0.22 + world.garden * 0.12 - world.contamination * 0.12 - world.resourceMigration * 0.08);
-      world.materialReliability = clamp(0.52 + materialCycle * 0.12 + world.map * 0.16 + world.pathNetwork * 0.12 - world.routeHazard * 0.12);
-      world.diseaseStrain = clamp(world.diseaseStrain + (world.contamination * 0.000030 + storm * 0.000018 + aliveCount * 0.0000018) * dt - (world.medicine + world.teachingTradition + world.waterworks) * 0.000026 * dt);
+      const coldStress = Math.max(0, 0.46 - world.temperature);
+      const heatStress = Math.max(0, world.temperature - 0.70);
+      world.pestPressure = clamp(world.pestPressure + (world.garden * 0.000010 + world.foodStorage * 0.000010 + world.rainfall * 0.000018 + heatStress * 0.000040 + world.contamination * 0.000018 + world.sickness * 0.000008) * dt - (world.seedBank + world.purifier + world.teachingTradition + cleanliness) * 0.000022 * dt);
+      world.structuralStrain = clamp(world.structuralStrain + (storm * 0.000030 + world.wind * 0.000018 + world.rainfall * 0.000010 + aliveCount * 0.0000020 + averageShelter() * 0.000004) * dt - (world.architecture + world.buildingBlueprints + world.materials) * 0.000020 * dt);
+      world.fuelReserve = clamp(world.fuelReserve - (coldStress * 0.000030 + storm * 0.000014 + aliveCount * 0.0000016) * dt + (world.pathNetwork + world.map + world.materialReliability) * 0.000006 * dt);
+      world.seedBank = clamp(world.seedBank + (world.garden + world.foodReliability + world.teachingTradition) * 0.0000055 * dt - (world.pestPressure + world.resourceMigration + world.contamination) * 0.000008 * dt);
+      world.forecastMemory = clamp(world.forecastMemory + (world.map + world.riskMemory + symbolFieldStrength()) * 0.000006 * dt - (world.knowledgeDrift + storm * 0.10 + world.resourceMigration * 0.20) * 0.000006 * dt);
+      world.buildingBlueprints = clamp(world.buildingBlueprints + (world.architecture + world.teachingTradition + world.apprenticeship) * 0.000005 * dt - world.knowledgeDrift * 0.000006 * dt);
+      world.toolBlueprints = clamp(world.toolBlueprints + (world.toolDesign + world.workshop + world.apprenticeship) * 0.000005 * dt - world.knowledgeDrift * 0.000006 * dt);
+      world.apprenticeship = clamp(world.apprenticeship + (world.teachingTradition + world.trust) * 0.000004 * dt - (world.conflict + world.socialInequality + world.violence) * 0.000006 * dt);
+      world.ecologyVolatility = clamp(0.08 + Math.abs(seasonal) * 0.18 + storm * 0.18 + Math.abs(world.rainfall - 0.26) * 0.16 + world.majorShockCount * 0.018 - world.forecastMemory * 0.05);
+      world.resourceMigration = clamp(0.14 + Math.abs(migrationCycle) * 0.32 + world.threat * 0.08 + world.ecologyVolatility * 0.12 - world.pathNetwork * 0.06 - world.forecastMemory * 0.04);
+      world.waterReliability = clamp(0.54 + waterCycle * 0.15 + world.rainfall * 0.22 - world.contamination * 0.18 + world.waterworks * 0.16 + world.forecastMemory * 0.04);
+      world.foodReliability = clamp(0.54 + seasonal * 0.16 + world.soilFertility * 0.22 + world.garden * 0.12 + world.seedBank * 0.10 - world.pestPressure * 0.16 - world.contamination * 0.12 - world.resourceMigration * 0.08);
+      world.materialReliability = clamp(0.52 + materialCycle * 0.12 + world.map * 0.16 + world.pathNetwork * 0.12 + world.toolBlueprints * 0.04 + world.forecastMemory * 0.03 - world.routeHazard * 0.12);
+      world.diseaseStrain = clamp(world.diseaseStrain + (world.contamination * 0.000030 + world.pestPressure * 0.000016 + storm * 0.000018 + aliveCount * 0.0000018) * dt - (world.medicine + world.teachingTradition + world.waterworks) * 0.000026 * dt);
       world.socialInequality = clamp(agentSpread((agent) => agent.influence) * 0.65 + agentSpread((agent) => agent.biologicalReserve) * 0.42 + scarcity * 0.28 + world.violence * 0.20 - world.trust * 0.10 - world.teachingTradition * 0.08);
-      world.knowledgeDrift = clamp(world.knowledgeDrift + (world.ecologyVolatility * 0.000025 + world.resourceMigration * 0.000018 + world.majorShockCount * 0.000003) * dt - (world.map + world.riskMemory + world.teachingTradition + symbolFieldStrength()) * 0.000030 * dt);
-      world.soilFertility = clamp(world.soilFertility + (world.rainfall - 0.22) * 0.000020 * dt + world.garden * 0.000018 * dt + (world.foodReliability - 0.55) * 0.000014 * dt - aliveCount * 0.0000018 * dt);
-      world.contamination = clamp(world.contamination + (storm * 0.000028 + aliveCount * (1 - cleanliness) * 0.0000035 + world.sickness * 0.000015 + world.diseaseStrain * 0.000016) * dt - (world.purifier + world.waterworks) * 0.000050 * dt);
-      world.routeHazard = clamp(0.10 + world.threat * 0.30 + storm * 0.22 + world.wind * 0.10 + world.contamination * 0.08 + world.knowledgeDrift * 0.10 - world.pathNetwork * 0.18 - world.map * 0.10);
+      world.knowledgeDrift = clamp(world.knowledgeDrift + (world.ecologyVolatility * 0.000025 + world.resourceMigration * 0.000018 + world.majorShockCount * 0.000003) * dt - (world.map + world.riskMemory + world.teachingTradition + world.apprenticeship + world.forecastMemory + symbolFieldStrength()) * 0.000030 * dt);
+      world.soilFertility = clamp(world.soilFertility + (world.rainfall - 0.22) * 0.000020 * dt + world.garden * 0.000018 * dt + world.seedBank * 0.000010 * dt + (world.foodReliability - 0.55) * 0.000014 * dt - aliveCount * 0.0000018 * dt - world.pestPressure * 0.000012 * dt);
+      world.contamination = clamp(world.contamination + (storm * 0.000028 + aliveCount * (1 - cleanliness) * 0.0000035 + world.sickness * 0.000015 + world.diseaseStrain * 0.000016 + world.pestPressure * 0.000014) * dt - (world.purifier + world.waterworks) * 0.000050 * dt);
+      world.routeHazard = clamp(0.10 + world.threat * 0.30 + storm * 0.22 + world.wind * 0.10 + world.contamination * 0.08 + world.knowledgeDrift * 0.10 - world.pathNetwork * 0.18 - world.map * 0.10 - world.forecastMemory * 0.06);
     }
 
     function triggerMajorShock() {
@@ -1306,22 +1366,26 @@
       const type = types[Math.floor(rand() * types.length)];
       world.majorShockCount += 1;
       if (type === "drought") {
-        world.water = clamp(world.water - 0.24);
-        world.soilFertility = clamp(world.soilFertility - 0.18);
+        world.water = clamp(world.water - (0.24 - world.forecastMemory * 0.05));
+        world.soilFertility = clamp(world.soilFertility - (0.18 - world.seedBank * 0.04));
         world.temperature = clamp(world.temperature + 0.16);
+        world.fuelReserve = clamp(world.fuelReserve - 0.06);
       } else if (type === "blight") {
-        world.food = clamp(world.food - 0.22);
-        world.garden = clamp(world.garden - 0.14);
+        world.food = clamp(world.food - (0.22 - world.seedBank * 0.06));
+        world.garden = clamp(world.garden - (0.14 - world.seedBank * 0.04));
         world.contamination = clamp(world.contamination + 0.10);
+        world.pestPressure = clamp(world.pestPressure + 0.14);
       } else if (type === "epidemic") {
         world.sickness = clamp(world.sickness + 0.24);
         world.trust = clamp(world.trust - 0.06);
+        world.pestPressure = clamp(world.pestPressure + 0.06);
       } else if (type === "structural failure") {
-        for (const key of Object.keys(world.shelters)) damageStructure(key, 0.10 + (1 - world.architecture) * 0.10);
-        damageStructure("workshop", 0.08);
+        for (const key of Object.keys(world.shelters)) damageStructure(key, 0.10 + Math.max(0, 1 - world.architecture - world.buildingBlueprints * 0.40) * 0.10);
+        damageStructure("workshop", Math.max(0.03, 0.08 - world.buildingBlueprints * 0.03));
+        world.structuralStrain = clamp(world.structuralStrain + 0.16);
       } else {
         world.threat = clamp(world.threat + 0.22);
-        world.routeHazard = clamp(world.routeHazard + 0.18);
+        world.routeHazard = clamp(world.routeHazard + Math.max(0.08, 0.18 - world.forecastMemory * 0.06));
         world.conflict = clamp(world.conflict + 0.08);
       }
       world.riskMemory = clamp(world.riskMemory + 0.18);
@@ -1368,6 +1432,12 @@
         { key: "workshop", label: "work bench", need: Math.max(0, 0.46 - world.workshop) + Math.max(0, world.materials - 0.36), trait: agent.traits.dexterity, rate: 0.012 },
         { key: "pathNetwork", label: "trail markers", need: Math.max(0, 0.58 - world.pathNetwork) + world.routeHazard * 0.18, trait: agent.traits.perception, rate: 0.012 },
         { key: "tools", label: "tool cache", need: Math.max(0, 0.54 - world.tools) + world.workshop * 0.14, trait: agent.traits.dexterity, rate: 0.014 },
+        { key: "fuelReserve", label: "fuel reserve", need: Math.max(0, 0.50 - world.fuelReserve) + (world.weather === "storm" ? 0.18 : 0) + Math.abs(world.temperature - 0.58) * 0.20, trait: agent.traits.strength, rate: 0.013 },
+        { key: "seedBank", label: "seed bank", need: Math.max(0, 0.44 - world.seedBank) + world.pestPressure * 0.18 + Math.max(0, 0.58 - world.foodReliability) * 0.14, trait: agent.traits.perception, rate: 0.011 },
+        { key: "buildingBlueprints", label: "building pattern", need: Math.max(0, 0.44 - world.buildingBlueprints) + world.structuralStrain * 0.22, trait: agent.traits.perception, rate: 0.010 },
+        { key: "toolBlueprints", label: "tool pattern", need: Math.max(0, 0.42 - world.toolBlueprints) + Math.max(0, 0.52 - world.toolDesign) * 0.16, trait: agent.traits.dexterity, rate: 0.010 },
+        { key: "forecastMemory", label: "weather marker", need: Math.max(0, 0.46 - world.forecastMemory) + world.ecologyVolatility * 0.16 + world.resourceMigration * 0.12, trait: agent.traits.perception, rate: 0.010 },
+        { key: "apprenticeship", label: "apprentice circle", need: Math.max(0, 0.42 - world.apprenticeship) + world.teachingTradition * 0.08 + countAgents((other) => other.lifeStage === "offspring") * 0.010, trait: agent.traits.sociability, rate: 0.010 },
       ];
       return options.map((item) => ({ ...item, score: item.need + rand() * 0.12 })).sort((a, b) => b.score - a.score)[0];
     }
@@ -1381,6 +1451,8 @@
         { key: "purifier", label: "water system damage", need: Math.max(0, 0.56 - world.purifier), trait: agent.traits.dexterity, rate: 0.012 },
         { key: "foodStorage", label: "spoiled storage", need: Math.max(0, 0.54 - world.foodStorage), trait: agent.traits.dexterity, rate: 0.010 },
         { key: "pathNetwork", label: "eroded paths", need: Math.max(0, 0.54 - world.pathNetwork) + world.routeHazard * 0.10, trait: agent.traits.perception, rate: 0.010 },
+        { key: "structuralStrain", label: "load strain", need: world.structuralStrain + Math.max(0, 0.58 - world.buildingBlueprints) * 0.12, trait: agent.traits.perception, rate: 0.012 },
+        { key: "pestPressure", label: "pest pressure", need: world.pestPressure + Math.max(0, 0.52 - world.seedBank) * 0.10, trait: agent.traits.perception, rate: 0.011 },
       ];
       return options.map((item) => ({ ...item, score: item.need + rand() * 0.08 })).sort((a, b) => b.score - a.score)[0];
     }
@@ -1418,6 +1490,12 @@
         if (intent.key === "purifier") return PLACES.water;
         if (intent.key === "waterworks") return PLACES.creek;
         if (intent.key === "pathNetwork") return PLACES.frontier;
+        if (intent.key === "fuelReserve") return PLACES.forest;
+        if (intent.key === "seedBank") return PLACES.garden;
+        if (intent.key === "buildingBlueprints") return PLACES.commons;
+        if (intent.key === "toolBlueprints") return PLACES.workshop;
+        if (intent.key === "forecastMemory") return PLACES.frontier;
+        if (intent.key === "apprenticeship") return PLACES.commons;
         if (intent.key === "architecture") return PLACES.commons;
         if (intent.key === "workshop" || intent.key === "tools") return PLACES.workshop;
       }
@@ -1426,6 +1504,8 @@
         if (Object.prototype.hasOwnProperty.call(world.shelters, intent.key)) return PLACES[intent.key];
         if (intent.key === "pathNetwork") return PLACES.frontier;
         if (intent.key === "foodStorage") return PLACES.garden;
+        if (intent.key === "structuralStrain") return PLACES.commons;
+        if (intent.key === "pestPressure") return PLACES.garden;
         return PLACES.workshop;
       }
       if (action === "modify") {
@@ -1466,6 +1546,14 @@
       world.foodStorage = 0.18;
       world.pathNetwork = 0.12;
       world.waterworks = 0.16;
+      world.fuelReserve = 0.30;
+      world.seedBank = 0.16;
+      world.buildingBlueprints = 0.10;
+      world.toolBlueprints = 0.08;
+      world.forecastMemory = 0.10;
+      world.apprenticeship = 0.08;
+      world.pestPressure = 0.08;
+      world.structuralStrain = 0.14;
       world.teachingTradition = 0.08;
       world.riskMemory = 0.08;
       world.soilFertility = 0.64;
@@ -1553,6 +1641,14 @@
         world.foodStorage,
         world.pathNetwork,
         world.waterworks,
+        world.fuelReserve,
+        world.seedBank,
+        world.buildingBlueprints,
+        world.toolBlueprints,
+        world.forecastMemory,
+        world.apprenticeship,
+        world.pestPressure,
+        world.structuralStrain,
         world.teachingTradition,
         world.riskMemory,
         world.soilFertility,
@@ -1723,6 +1819,9 @@
       if (hint.includes("child") || hint.includes("care")) listener.attachment = clamp(listener.attachment + loudness * 0.06);
       if (hintMatches(hint, ["water", "food"])) listener.known.add("harvest");
       if (hintMatches(hint, ["repair", "shelter", "tool"])) listener.known.add("repair");
+      if (hintMatches(hint, ["fuel", "seed"])) listener.known.add("harvest");
+      if (hintMatches(hint, ["blueprint", "strain", "pest"])) listener.known.add("repair");
+      if (hintMatches(hint, ["forecast", "apprentice"])) listener.known.add("share_pattern");
       listener.trust = clamp(listener.trust + loudness * (0.006 + sourceInfluence * 0.010) - (hintMatches(hint, ["danger"]) ? 0.006 : 0));
       think(listener, `Heard ${utterance.token} from ${utterance.speaker}; influence ${sourceInfluence.toFixed(2)} mapped it to ${localCategory.id} (${localCategory.hint}).`);
     }
@@ -1814,6 +1913,9 @@
         if (hintMatches(glyph.hint, ["danger"])) agent.fear = clamp(agent.fear + 0.018);
         if (hintMatches(glyph.hint, ["water", "food"])) agent.known.add("harvest");
         if (hintMatches(glyph.hint, ["shelter", "repair", "tool"])) agent.known.add("repair");
+        if (hintMatches(glyph.hint, ["fuel", "seed"])) agent.known.add("harvest");
+        if (hintMatches(glyph.hint, ["blueprint", "strain", "pest"])) agent.known.add("repair");
+        if (hintMatches(glyph.hint, ["forecast", "apprentice"])) agent.known.add("share_pattern");
       }
     }
 
@@ -1842,6 +1944,13 @@
       }
       if (pressure.concept === "tool" && pressure.value > 0.52 && agent.energy > 0.30) chosen = rand() < 0.64 ? "modify" : "construct";
       if (pressure.concept === "path" && pressure.value > 0.54 && agent.energy > 0.30) chosen = rand() < 0.60 ? "inspect" : "construct";
+      if (pressure.concept === "fuel" && pressure.value > 0.50 && agent.energy > 0.28) chosen = rand() < 0.58 ? "harvest" : "construct";
+      if (pressure.concept === "seed" && pressure.value > 0.50 && agent.energy > 0.28) chosen = rand() < 0.48 ? "harvest" : "construct";
+      if (pressure.concept === "blueprint" && pressure.value > 0.46 && agent.energy > 0.30) chosen = rand() < 0.55 ? "modify" : "share_pattern";
+      if (pressure.concept === "strain" && pressure.value > 0.48 && agent.energy > 0.28) chosen = rand() < 0.62 ? "repair" : "construct";
+      if (pressure.concept === "pest" && pressure.value > 0.48 && agent.energy > 0.28) chosen = rand() < 0.55 ? "treat" : "repair";
+      if (pressure.concept === "forecast" && pressure.value > 0.48 && agent.energy > 0.28) chosen = rand() < 0.62 ? "inspect" : "share_pattern";
+      if (pressure.concept === "apprentice" && pressure.value > 0.48 && agent.energy > 0.25 && urgentSurvival < 0.68) chosen = rand() < 0.70 ? "share_pattern" : "nurture_child";
       if (pressure.concept === "uncertainty" && pressure.value > 0.54 && agent.energy > 0.28 && urgentSurvival < 0.68) chosen = rand() < 0.72 ? "inspect" : "share_pattern";
       if (pressure.concept === "social" && pressure.value > 0.56 && agent.energy > 0.25 && urgentSurvival < 0.68) chosen = rand() < 0.62 ? "signal" : "share_pattern";
       if (pressure.concept === "child" && pressure.value > 0.70 && agent.age >= 0.32) chosen = "nurture_child";
@@ -1981,6 +2090,14 @@
       if (world.resourceMigration > 0.34) pressure.push("resource locations shifting");
       if (world.diseaseStrain > 0.38) pressure.push("mutating illness pressure");
       if (world.socialInequality > 0.30) pressure.push("uneven social influence");
+      if (world.fuelReserve < 0.34) pressure.push("low fuel reserve");
+      if (world.seedBank < 0.30) pressure.push("thin seed bank");
+      if (world.buildingBlueprints < 0.28) pressure.push("weak building patterns");
+      if (world.toolBlueprints < 0.26) pressure.push("weak tool patterns");
+      if (world.forecastMemory < 0.30) pressure.push("weak weather memory");
+      if (world.apprenticeship < 0.28) pressure.push("weak skill transmission");
+      if (world.pestPressure > 0.34) pressure.push("pest pressure");
+      if (world.structuralStrain > 0.34) pressure.push("structural strain");
       if (world.adaptivePressure > 0.34) pressure.push(`total pressure ${world.adaptivePressure.toFixed(2)}`);
       if (world.time < MAJOR_EVENT_DELAY) pressure.push(`pre-shock development ${(MAJOR_EVENT_DELAY / HOUR - simHours()).toFixed(1)}h left`);
       if (!pressure.length) pressure.push("learned expected return");
@@ -2041,6 +2158,8 @@
         world.riskMemory = clamp(world.riskMemory + Math.max(0, world.routeHazard - 0.38) * 0.010);
         world.knowledgeDrift = clamp(world.knowledgeDrift - success * 0.010);
         world.resourceMigration = clamp(world.resourceMigration - success * 0.004);
+        world.forecastMemory = clamp(world.forecastMemory + success * (0.004 + world.ecologyVolatility * 0.006));
+        world.buildingBlueprints = clamp(world.buildingBlueprints + success * Math.max(0, observed.key === "ruins" || observed.key === "frontier" ? 0.004 : 0.001));
         if (rand() < world.routeHazard * 0.018) agent.health = clamp(agent.health - 0.026);
         if (success > 0.48 && rand() < 0.30 + traits.curiosity * 0.20) {
           const concept = observed.key === "water" || observed.key === "creek" ? "water" : observed.key === "forest" || observed.key === "garden" ? "food" : observed.key === "badlands" || observed.key === "frontier" ? "danger" : "path";
@@ -2065,6 +2184,7 @@
         } else if (atMaterial && (world.materials < 0.62 || world.tools < 0.44)) {
           const gain = (0.012 + success * (0.030 + world.toolDesign * 0.012)) * (0.68 + world.materialReliability * 0.44);
           world.materials = clamp(world.materials + gain);
+          world.fuelReserve = clamp(world.fuelReserve + success * 0.004);
           if (rand() < 0.16 + traits.dexterity * 0.10) placeGlyph(agent, "tool", nearestPlaceKey(agent).key);
           remember(agent, `Material gathered; tools/material options improved.`);
           reward = gain * 8.0 - 0.18;
@@ -2072,6 +2192,9 @@
           const gain = (0.014 + success * (0.034 + world.garden * 0.016 + world.soilFertility * 0.008)) * (0.70 + world.foodReliability * 0.50);
           world.food = clamp(world.food + gain);
           world.foodStorage = clamp(world.foodStorage + Math.max(0, gain - 0.020) * 0.10);
+          world.seedBank = clamp(world.seedBank + Math.max(0, gain - 0.018) * 0.10 + success * 0.002);
+          world.pestPressure = clamp(world.pestPressure - success * 0.002);
+          if (nearestPlaceKey(agent).key === "forest") world.fuelReserve = clamp(world.fuelReserve + success * 0.004);
           agent.hunger = clamp(agent.hunger - 0.26 * success);
           if (rand() < 0.18 + traits.sociability * 0.10) placeGlyph(agent, "food", nearestPlaceKey(agent).key);
           remember(agent, `Food source worked; hunger fell to ${agent.hunger.toFixed(2)}.`);
@@ -2086,6 +2209,7 @@
         success = clamp(effort + traits.strength * 0.30 + world.tools * 0.12 + world.pathNetwork * 0.10 + world.materialReliability * 0.06 - world.routeHazard * 0.10 - world.knowledgeDrift * 0.04);
         world.materials = clamp(world.materials + 0.008 + success * 0.024);
         world.food = clamp(world.food + success * 0.005);
+        world.fuelReserve = clamp(world.fuelReserve + success * 0.005);
         agent.energy = clamp(agent.energy - 0.020);
         reward = success * 0.90 - 0.18;
       } else if (action === "construct") {
@@ -2108,10 +2232,12 @@
         if (rand() < 0.45 + world.workshop * 0.28) {
           world.tools = clamp(world.tools + 0.010 + success * 0.024);
           world.toolDesign = clamp(world.toolDesign + success * 0.010);
+          world.toolBlueprints = clamp(world.toolBlueprints + success * 0.008);
         } else {
           world.purifier = clamp(world.purifier + success * 0.010);
           world.garden = clamp(world.garden + success * 0.008);
           world.waterworks = clamp(world.waterworks + success * 0.006);
+          world.buildingBlueprints = clamp(world.buildingBlueprints + success * 0.004);
         }
         world.knowledge = clamp(world.knowledge + success * 0.012);
         if (success > 0.50 && rand() < 0.24 + traits.dexterity * 0.12) placeGlyph(agent, "tool", "workshop");
@@ -2153,6 +2279,7 @@
         world.sickness = clamp(world.sickness - 0.006 - success * (0.018 + world.teachingTradition * 0.006));
         world.contamination = clamp(world.contamination - success * 0.010);
         world.diseaseStrain = clamp(world.diseaseStrain - success * 0.012);
+        world.pestPressure = clamp(world.pestPressure - success * 0.010);
         world.trust = clamp(world.trust + 0.008 + traits.sociability * 0.010);
         agent.trust = clamp(agent.trust + 0.012);
         const patient = nearestPeer(agent, (other) => other.health < 0.72 || other.stress > 0.48) || (agent.health < 0.86 || agent.stress > 0.38 ? agent : null);
@@ -2174,6 +2301,10 @@
         world.riskMemory = clamp(world.riskMemory + Math.max(0, agent.wisdom - 0.35) * 0.010);
         world.knowledgeDrift = clamp(world.knowledgeDrift - success * 0.006);
         world.socialInequality = clamp(world.socialInequality - success * 0.006);
+        world.apprenticeship = clamp(world.apprenticeship + success * 0.010);
+        world.forecastMemory = clamp(world.forecastMemory + success * 0.003);
+        world.buildingBlueprints = clamp(world.buildingBlueprints + success * 0.0025);
+        world.toolBlueprints = clamp(world.toolBlueprints + success * 0.0025);
         const source = agent;
         const topAction = strongestSkill(source);
         const learner = nearestPeer(agent, (other) => (other.skills[topAction] || 0) < source.skills[topAction] - 0.10);
@@ -2286,24 +2417,61 @@
 
     function build(agent, key, trait, rate) {
       const materialFactor = world.materials > 0.05 ? 1 : 0.28;
-      const toolFactor = 0.55 + world.tools * 0.32 + world.toolDesign * 0.22;
+      const toolFactor = 0.55 + world.tools * 0.30 + world.toolDesign * 0.18 + world.toolBlueprints * 0.12;
       const isShelter = Object.prototype.hasOwnProperty.call(world.shelters, key);
-      const skillName = key === "tools" || key === "toolDesign" ? "modify" : isShelter ? "construct" : key === "garden" || key === "foodStorage" || key === "pathNetwork" || key === "architecture" ? "construct" : key === "purifier" || key === "waterworks" ? "modify" : "construct";
-      const success = clamp(agent.energy * 0.24 + (agent.skills[skillName] || 0.08) * 0.20 + trait * 0.28 + toolFactor * 0.18 + world.knowledge * 0.06);
+      const skillName = key === "tools" || key === "toolDesign" || key === "toolBlueprints" ? "modify" : isShelter ? "construct" : key === "garden" || key === "foodStorage" || key === "pathNetwork" || key === "architecture" || key === "seedBank" || key === "fuelReserve" || key === "buildingBlueprints" || key === "forecastMemory" || key === "apprenticeship" ? "construct" : key === "purifier" || key === "waterworks" || key === "pestPressure" || key === "structuralStrain" ? "modify" : "construct";
+      const blueprintBoost = (
+        isShelter || key === "architecture" || key === "buildingBlueprints" || key === "structuralStrain"
+          ? world.buildingBlueprints
+          : key === "tools" || key === "toolDesign" || key === "toolBlueprints"
+            ? world.toolBlueprints
+            : environmentReadiness()
+      );
+      const success = clamp(agent.energy * 0.24 + (agent.skills[skillName] || 0.08) * 0.20 + trait * 0.28 + toolFactor * 0.16 + world.knowledge * 0.05 + blueprintBoost * 0.08 + world.apprenticeship * 0.04);
       if (isShelter) {
         world.shelters[key] = clamp(world.shelters[key] + rate * success * materialFactor);
         world.architecture = clamp(world.architecture + success * 0.0018);
+        world.buildingBlueprints = clamp(world.buildingBlueprints + success * 0.0012);
+        world.structuralStrain = clamp(world.structuralStrain - success * 0.0020);
       } else if (key === "tools") {
         world.tools = clamp(world.tools + rate * success * materialFactor);
         world.toolDesign = clamp(world.toolDesign + success * 0.0028);
+        world.toolBlueprints = clamp(world.toolBlueprints + success * 0.0018);
       } else if (key === "architecture") {
         world.architecture = clamp(world.architecture + rate * success * materialFactor);
+        world.buildingBlueprints = clamp(world.buildingBlueprints + success * 0.0026);
+        world.structuralStrain = clamp(world.structuralStrain - success * 0.0024);
       } else if (key === "foodStorage") {
         world.foodStorage = clamp(world.foodStorage + rate * success * materialFactor);
+        world.seedBank = clamp(world.seedBank + success * 0.0014);
       } else if (key === "pathNetwork") {
         world.pathNetwork = clamp(world.pathNetwork + rate * success * materialFactor);
+        world.forecastMemory = clamp(world.forecastMemory + success * 0.0012);
       } else if (key === "waterworks") {
         world.waterworks = clamp(world.waterworks + rate * success * materialFactor);
+      } else if (key === "fuelReserve") {
+        world.fuelReserve = clamp(world.fuelReserve + rate * success * materialFactor);
+      } else if (key === "seedBank") {
+        world.seedBank = clamp(world.seedBank + rate * success * materialFactor);
+        world.pestPressure = clamp(world.pestPressure - success * 0.0020);
+      } else if (key === "buildingBlueprints") {
+        world.buildingBlueprints = clamp(world.buildingBlueprints + rate * success * materialFactor);
+        world.knowledgeDrift = clamp(world.knowledgeDrift - success * 0.0014);
+      } else if (key === "toolBlueprints") {
+        world.toolBlueprints = clamp(world.toolBlueprints + rate * success * materialFactor);
+        world.toolDesign = clamp(world.toolDesign + success * 0.0018);
+      } else if (key === "forecastMemory") {
+        world.forecastMemory = clamp(world.forecastMemory + rate * success * materialFactor);
+        world.riskMemory = clamp(world.riskMemory + success * 0.0016);
+      } else if (key === "apprenticeship") {
+        world.apprenticeship = clamp(world.apprenticeship + rate * success * materialFactor);
+        world.teachingTradition = clamp(world.teachingTradition + success * 0.0018);
+      } else if (key === "pestPressure") {
+        world.pestPressure = clamp(world.pestPressure - rate * success * materialFactor * 1.3);
+        world.contamination = clamp(world.contamination - success * 0.0010);
+      } else if (key === "structuralStrain") {
+        world.structuralStrain = clamp(world.structuralStrain - rate * success * materialFactor * 1.4);
+        world.architecture = clamp(world.architecture + success * 0.0010);
       } else {
         world[key] = clamp(world[key] + rate * success * materialFactor);
       }
@@ -2315,7 +2483,9 @@
     function damageStructure(key, amount) {
       if (Object.prototype.hasOwnProperty.call(world.shelters, key)) {
         world.shelters[key] = clamp(world.shelters[key] - amount);
-      } else if (key === "garden" || key === "purifier" || key === "workshop" || key === "tools" || key === "foodStorage" || key === "pathNetwork" || key === "waterworks" || key === "architecture") {
+      } else if (key === "pestPressure" || key === "structuralStrain") {
+        world[key] = clamp(world[key] + amount);
+      } else if (key === "garden" || key === "purifier" || key === "workshop" || key === "tools" || key === "foodStorage" || key === "pathNetwork" || key === "waterworks" || key === "architecture" || key === "fuelReserve" || key === "seedBank" || key === "buildingBlueprints" || key === "toolBlueprints" || key === "forecastMemory" || key === "apprenticeship") {
         world[key] = clamp(world[key] - amount);
       }
     }
@@ -2359,17 +2529,17 @@
       maybeMajorShock();
       maybeDevelopmentLog();
       const aliveCount = livingAgents().length;
-      world.food = clamp(world.food - aliveCount * 0.0000046 * dt + world.garden * world.soilFertility * world.foodReliability * 0.000145 * dt + world.foodStorage * 0.000026 * dt - world.contamination * 0.000010 * dt - world.resourceMigration * 0.000002 * dt);
+      world.food = clamp(world.food - aliveCount * 0.0000046 * dt + world.garden * world.soilFertility * world.foodReliability * 0.000145 * dt + world.foodStorage * 0.000026 * dt + world.seedBank * 0.000014 * dt - world.pestPressure * 0.000020 * dt - world.contamination * 0.000010 * dt - world.resourceMigration * 0.000002 * dt);
       world.water = clamp(world.water - aliveCount * 0.0000050 * dt + (world.purifier + world.waterworks) * world.waterReliability * 0.000118 * dt + world.rainfall * 0.000026 * dt - world.contamination * 0.000012 * dt);
-      world.sickness = clamp(world.sickness + (world.weather === "storm" ? 0.000030 : 0.000007) * dt + world.contamination * 0.000025 * dt + world.diseaseStrain * 0.000024 * dt - (world.purifier + world.waterworks + world.teachingTradition) * 0.000028 * dt);
+      world.sickness = clamp(world.sickness + (world.weather === "storm" ? 0.000030 : 0.000007) * dt + world.contamination * 0.000025 * dt + world.diseaseStrain * 0.000024 * dt + world.pestPressure * 0.000014 * dt - (world.purifier + world.waterworks + world.teachingTradition) * 0.000028 * dt);
       world.threat = clamp(world.threat + (world.routeHazard * 0.000018 + world.knowledgeDrift * 0.000010 + (majorShockUnlocked() ? 0.000006 : 0)) * dt - (world.map + world.riskMemory + world.pathNetwork) * 0.000022 * dt);
       world.conflict = clamp(world.conflict + Math.max(0, 0.38 - Math.min(world.food, world.water)) * 0.00022 * dt + world.contamination * 0.000035 * dt + world.socialInequality * 0.000035 * dt - world.trust * 0.00018 * dt - world.teachingTradition * 0.00006 * dt);
       world.soundField = clamp(world.soundField - 0.0026 * dt);
       world.violence = clamp(world.violence - 0.00034 * dt);
-      world.tools = clamp(world.tools - Math.max(0, aliveCount - 2) * (0.0000065 - world.toolDesign * 0.0000030) * dt);
-      world.foodStorage = clamp(world.foodStorage - world.contamination * 0.000010 * dt);
+      world.tools = clamp(world.tools - Math.max(0, aliveCount - 2) * Math.max(0.0000020, 0.0000065 - world.toolDesign * 0.0000026 - world.toolBlueprints * 0.0000014) * dt);
+      world.foodStorage = clamp(world.foodStorage - (world.contamination * 0.000010 + world.pestPressure * 0.000014) * dt);
       world.pathNetwork = clamp(world.pathNetwork - (world.weather === "storm" ? 0.000020 : 0.000004) * dt + world.map * 0.000004 * dt);
-      world.architecture = clamp(world.architecture - (world.weather === "storm" ? 0.000010 : 0.000002) * dt);
+      world.architecture = clamp(world.architecture - Math.max(0.000001, (world.weather === "storm" ? 0.000010 : 0.000002) + world.structuralStrain * 0.000010 - world.buildingBlueprints * 0.000004) * dt);
       world.riskMemory = clamp(world.riskMemory * (1 - 0.000006 * dt) + world.majorShockCount * 0.000001 * dt);
       world.knowledge = clamp(world.knowledge - world.knowledgeDrift * 0.000006 * dt + world.teachingTradition * 0.000006 * dt);
       world.map = clamp(world.map - world.knowledgeDrift * 0.000010 * dt + world.pathNetwork * 0.000004 * dt);
@@ -2381,8 +2551,18 @@
         .filter((glyph) => glyph.strength > 0.08);
       if (world.weather === "storm") {
         for (const place of Object.keys(world.shelters)) {
-          world.shelters[place] = clamp(world.shelters[place] - Math.max(0.000006, 0.000018 - world.architecture * 0.000010) * dt);
+          world.shelters[place] = clamp(world.shelters[place] - Math.max(0.000006, 0.000018 + world.structuralStrain * 0.000010 - world.architecture * 0.000010 - world.buildingBlueprints * 0.000004) * dt);
         }
+      }
+      if (world.structuralStrain > 0.52) {
+        for (const place of Object.keys(world.shelters)) {
+          world.shelters[place] = clamp(world.shelters[place] - (world.structuralStrain - 0.52) * 0.000010 * dt);
+        }
+        world.workshop = clamp(world.workshop - (world.structuralStrain - 0.52) * 0.000006 * dt);
+      }
+      if (world.pestPressure > 0.46) {
+        world.garden = clamp(world.garden - (world.pestPressure - 0.46) * 0.000010 * dt);
+        world.seedBank = clamp(world.seedBank - (world.pestPressure - 0.46) * 0.000008 * dt);
       }
       for (const agent of world.agents) {
         if (!agent.alive) continue;
@@ -2405,7 +2585,8 @@
             agent.gestation = 0;
           }
         }
-        const temperatureCost = Math.abs(world.temperature - 0.58) * 0.000010;
+        const exposureBuffer = clamp(shelterQuality(agent) * 0.44 + world.fuelReserve * 0.28 + world.architecture * 0.16);
+        const temperatureCost = Math.max(0, Math.abs(world.temperature - 0.58) - exposureBuffer * 0.18) * 0.000016;
         agent.hunger = clamp(agent.hunger + (0.000020 + temperatureCost + agent.stress * 0.000004) * dt - (world.food * 0.000014 + world.foodStorage * 0.000006) * dt);
         agent.thirst = clamp(agent.thirst + (0.000025 + Math.max(0, world.temperature - 0.62) * 0.000026 + agent.stress * 0.000004) * dt - (world.water * 0.000018 + world.waterworks * 0.000006) * dt);
         agent.health = clamp(agent.health - Math.max(0, agent.hunger - 0.91) * 0.00055 * dt - Math.max(0, agent.thirst - 0.91) * 0.00070 * dt - (world.sickness + world.contamination * 0.28 + world.diseaseStrain * 0.12) * 0.000040 * dt);
@@ -2415,7 +2596,7 @@
           - shelterQuality(agent) * 0.000085 * dt
           - world.riskMemory * 0.000026 * dt,
         );
-        const qualityPenalty = Math.max(0, 0.40 - shelterQuality(agent)) + Math.max(0, world.conflict - 0.42) + Math.max(0, world.sickness - 0.38) + Math.max(0, world.contamination - 0.40) * 0.50 + Math.max(0, world.routeHazard - 0.45) * 0.35 + world.knowledgeDrift * 0.16 + world.socialInequality * 0.10;
+        const qualityPenalty = Math.max(0, 0.40 - shelterQuality(agent)) + Math.max(0, world.conflict - 0.42) + Math.max(0, world.sickness - 0.38) + Math.max(0, world.contamination - 0.40) * 0.50 + Math.max(0, world.routeHazard - 0.45) * 0.35 + world.knowledgeDrift * 0.16 + world.socialInequality * 0.10 + world.pestPressure * 0.08 + world.structuralStrain * 0.10 + Math.max(0, 0.32 - world.fuelReserve) * 0.16;
         const burdenPenalty = (agent.carrying ? 0.55 : 0) + (agent.lifeStage === "offspring" ? 0.35 : 0) + (agent.lifeStage === "elder" ? 0.45 : 0);
         const scarcityPenalty = Math.max(0, agent.hunger - 0.74) * 1.55 + Math.max(0, agent.thirst - 0.74) * 1.70;
         const lifeCost = agent.reserveWearRate * dt * (1.0 + agent.stress * 0.45 + qualityPenalty * 1.05 + scarcityPenalty * 0.70 + burdenPenalty * 0.70 - agent.wisdom * 0.18);
@@ -2760,6 +2941,15 @@
         foodStorage: world.foodStorage,
         pathNetwork: world.pathNetwork,
         waterworks: world.waterworks,
+        fuelReserve: world.fuelReserve,
+        seedBank: world.seedBank,
+        buildingBlueprints: world.buildingBlueprints,
+        toolBlueprints: world.toolBlueprints,
+        forecastMemory: world.forecastMemory,
+        apprenticeship: world.apprenticeship,
+        pestPressure: world.pestPressure,
+        structuralStrain: world.structuralStrain,
+        environmentReadiness: environmentReadiness(),
         teachingTradition: world.teachingTradition,
         riskMemory: world.riskMemory,
         ecologyVolatility: world.ecologyVolatility,
@@ -2870,6 +3060,15 @@
         bar("food storage", world.foodStorage, "var(--green)"),
         bar("path network", world.pathNetwork, "var(--violet)"),
         bar("waterworks", world.waterworks, "var(--blue)"),
+        bar("fuel reserve", world.fuelReserve, "var(--amber)"),
+        bar("seed bank", world.seedBank, "var(--green)"),
+        bar("building patterns", world.buildingBlueprints, "var(--amber)"),
+        bar("tool patterns", world.toolBlueprints, "var(--cyan)"),
+        bar("forecast memory", world.forecastMemory, "var(--violet)"),
+        bar("apprenticeship", world.apprenticeship, "var(--cyan)"),
+        bar("pest pressure", world.pestPressure, "var(--red)"),
+        bar("structural strain", world.structuralStrain, "var(--red)"),
+        bar("environment readiness", environmentReadiness(), "var(--green)"),
         bar("avg shelter", averageShelter(), "var(--amber)"),
         bar("home shelter", world.shelters.home_shelter, "var(--amber)"),
         bar("ridge shelter", world.shelters.ridge_shelter, "var(--amber)"),
@@ -2983,6 +3182,9 @@
           damageStructure("purifier", 0.08);
           damageStructure("workshop", 0.08);
           damageStructure("tools", 0.08);
+          damageStructure("fuelReserve", 0.06);
+          damageStructure("seedBank", 0.05);
+          damageStructure("structuralStrain", 0.10);
           world.conflict = clamp(world.conflict + 0.06);
           log("user intervention: structures damaged");
         } else if (event === "audio") {
@@ -2997,7 +3199,7 @@
           document.body.dataset.ssrmAudit = JSON.stringify(result);
           const final = result.checkpoints[result.checkpoints.length - 1];
           const summary = result.verdict.passed
-            ? `12h audit passed: no major shock before gate; ${final.alive} alive at ${final.hours.toFixed(1)}h after ${final.majorShockCount} shock(s).`
+            ? `12h audit passed: no major shock before gate; readiness ${final.environmentReadiness.toFixed(2)}, strain ${final.structuralStrain.toFixed(2)}, pests ${final.pestPressure.toFixed(2)}, ${final.alive} alive at ${final.hours.toFixed(1)}h after ${final.majorShockCount} shock(s).`
             : `12h audit failed: ${JSON.stringify(result.verdict)}`;
           els.auditStatus.textContent = summary;
           log(summary);
@@ -3045,7 +3247,7 @@
         log("generic action primitives online; no roles assigned");
       }
       const checkpoints = options.checkpoints || [1, 6, 12, 12.5, 14.5];
-      const maxStep = options.maxStep || 0.08;
+      const maxStep = options.maxStep || 0.50;
       const rows = [];
       for (const targetHour of checkpoints) {
         const targetSeconds = Math.max(0, Number(targetHour) || 0) * HOUR;
@@ -3059,6 +3261,7 @@
       const atGate = rows.find((row) => row.hours >= 12 && row.hours < 12.01);
       const afterGate = rows.filter((row) => row.hours >= 12.5);
       const latest = rows[rows.length - 1] || snapshotWorld();
+      const developmentRow = atGate || rows.find((row) => row.hours >= 11.9) || latest;
       const verdict = {
         passed: Boolean(
           rows.length
@@ -3066,12 +3269,20 @@
           && (!atGate || atGate.majorShockCount === 0)
           && latest.majorShockCount >= 1
           && latest.adaptationEvidence > 0.02
+          && developmentRow.environmentReadiness >= 0.11
+          && latest.environmentReadiness >= 0.12
+          && latest.structuralStrain < 0.92
+          && latest.pestPressure < 0.92
           && latest.alive > 0
         ),
         noMajorShockBefore12h: beforeGate.every((row) => row.majorShockCount === 0 && row.majorShockUnlocked === false),
         noMajorShockAtGate: !atGate || atGate.majorShockCount === 0,
         postGateShockOccurred: afterGate.some((row) => row.majorShockCount >= 1),
         adaptationEvidenceAccumulated: latest.adaptationEvidence > 0.02,
+        developmentReadinessBeforeShock: developmentRow.environmentReadiness >= 0.11,
+        readinessStillPresentAfterShock: latest.environmentReadiness >= 0.12,
+        structuralStrainBounded: latest.structuralStrain < 0.92,
+        pestPressureBounded: latest.pestPressure < 0.92,
         populationSurvived: latest.alive > 0,
       };
       return { verdict, checkpoints: rows };

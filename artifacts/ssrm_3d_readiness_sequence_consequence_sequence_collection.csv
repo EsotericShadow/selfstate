@@ -1,0 +1,4 @@
+seed,sampled_examples,selected_plans,mean_selected_score,mean_runner_up_score,mean_plan_margin,mean_label_weight,final_sequence_alive,final_sequence_readiness,final_sequence_knowledge,final_sequence_score
+20261301,882,"{""build_tools"": 8, ""culture"": 7, ""ecology"": 4, ""readiness"": 46, ""repair"": 1, ""survival"": 24}",0.7345820205983379,0.7301750352914758,0.004406985306862129,2.242245786433431,26,1.0,1.0,1.0
+20261302,14,"{""build_tools"": 8, ""culture"": 7, ""ecology"": 4, ""readiness"": 47, ""repair"": 1, ""survival"": 23}",0.7344893880184173,0.7301202717050049,0.004369116313412414,4.760523552091651,23,1.0,1.0,1.0
+20261303,0,"{""build_tools"": 8, ""culture"": 8, ""ecology"": 3, ""readiness"": 46, ""repair"": 3, ""survival"": 22}",0.7346914904104596,0.7303467177398428,0.004344772670616686,0.0,24,1.0,1.0,1.0

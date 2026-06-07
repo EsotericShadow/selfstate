@@ -1,0 +1,6 @@
+seed,controller,condition,selected_plans,final_alive,final_readiness,knowledge_transfer,final_structural_strain,final_pest_pressure,maturation_score
+20261321,sequence_optimizer,none,"{""build_tools"": 7, ""culture"": 11, ""ecology"": 2, ""readiness"": 43, ""repair"": 2, ""survival"": 25}",24,1.0,1.0,0.0,0.0,1.0
+20261322,sequence_optimizer,none,"{""build_tools"": 6, ""culture"": 10, ""ecology"": 3, ""readiness"": 46, ""repair"": 1, ""survival"": 24}",24,1.0,1.0,0.0,0.0,1.0
+20261323,sequence_optimizer,none,"{""build_tools"": 7, ""culture"": 8, ""ecology"": 3, ""readiness"": 47, ""repair"": 1, ""survival"": 24}",23,1.0,1.0,0.0,0.0,1.0
+20261324,sequence_optimizer,none,"{""build_tools"": 9, ""culture"": 9, ""ecology"": 2, ""readiness"": 46, ""repair"": 3, ""survival"": 21}",21,1.0,1.0,0.01244949983683552,0.0,1.0
+20261325,sequence_optimizer,none,"{""build_tools"": 8, ""culture"": 9, ""ecology"": 4, ""readiness"": 45, ""repair"": 1, ""survival"": 23}",23,1.0,1.0,0.0,0.0,1.0

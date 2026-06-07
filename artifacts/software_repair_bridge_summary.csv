@@ -1,0 +1,6 @@
+policy,task_count,visible_pass_rate,hidden_pass_rate,wrong_fix_rate,root_cause_repair_rate,regression_avoidance_rate,weakest_channel_score,oracle_match_rate,mean_repair_quality
+min_channel_critic,15,1.0,1.0,0.0,1.0,1.0,0.864,1.0,0.945813
+oracle,15,1.0,1.0,0.0,1.0,1.0,0.864,1.0,0.945813
+root_cause_first,15,1.0,0.866667,0.2,1.0,0.8,0.708,0.8,0.889047
+visible_test_only,15,1.0,0.066667,1.0,0.2,0.0,0.012,0.0,0.488287
+weighted_quality_critic,15,1.0,1.0,0.0,1.0,1.0,0.864,1.0,0.945813

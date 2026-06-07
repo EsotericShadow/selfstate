@@ -139,7 +139,7 @@ This boundary is not evidence that selfhood exists. It defines how future langua
 | The arbiter owns action authority | Advisory LLM improves slow decisions only when accepted by the arbiter. | Direct LLM motor control matches layered realtime survival with no latency or invalid-action cost. |
 | Compressed packets are sufficient for language reasoning | Packet-fed LLMs match full-world LLMs on abstract recommendation quality when the state layers are healthy. | Full-world access consistently beats packet access without control costs, implying the packet omits essential state. |
 | Simulation-distilled critics can improve LLM reasoning | A sim-distilled critic improves held-out LLM planning, repair, and cascade-avoidance tasks while ablations identify which critic matters. | LLM search plus generic reward models match or beat sim-distilled critics, or the critics only transfer simulation artifacts. |
-| Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
+| Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. Report 139 is only a structured toy bridge showing that weakest-channel repair beats visible-test-only selection in a WrongFix Arena. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
 
 ## Candidate Hypotheses
 
@@ -739,6 +739,18 @@ This is the narrow precursor to the full Attractor Test. It varies simple learne
 | `independent_hidden` | `no_shared_counterfactual` | 3/3 planners show no shared edit effect in all 4 environments; mean edit swing is 0.000. |
 | `irrelevant_control` | `no_hidden_needed` | 3/3 planners show no hidden-state edit dependence in all 4 environments; mean edit swing is 0.000. |
 
+## Software Repair Bridge Snapshot
+
+| Policy | Visible pass | Hidden pass | Wrong fix | Root-cause repair | Weakest channel | Current result |
+|---|---:|---:|---:|---:|---:|---|
+| `visible_test_only` | `1.000` | `0.067` | `1.000` | `0.200` | `0.012` | Passes shallow tests while choosing wrong repairs. |
+| `root_cause_first` | `1.000` | `0.867` | `0.200` | `1.000` | `0.708` | Identifies the broad cause but still misses some weakest-channel failures. |
+| `min_channel_critic` | `1.000` | `1.000` | `0.000` | `1.000` | `0.864` | Structured bridge pass against visible-test-only selection. |
+| `weighted_quality_critic` | `1.000` | `1.000` | `0.000` | `1.000` | `0.864` | Also matches oracle on this small deterministic task bank. |
+| `oracle` | `1.000` | `1.000` | `0.000` | `1.000` | `0.864` | Expected best repair. |
+
+This is Report 139 only: a toy software-shaped arena, not real repo coding or evidence that a field-experience controller improves frontier LLM coding agents.
+
 ## Reproducibility Artifacts
 
 | Script | Main artifact |
@@ -813,6 +825,7 @@ This is the narrow precursor to the full Attractor Test. It varies simple learne
 | `experiments/ssrm_3d_coupled_crisis_randomized_transfer_controller.py` | `artifacts/ssrm_3d_coupled_crisis_randomized_transfer_verdict.csv` |
 | `experiments/ssrm_3d_coupled_crisis_adaptive_allocator_controller.py` | `artifacts/ssrm_3d_coupled_crisis_adaptive_allocator_verdict.csv` |
 | `experiments/ssrm_3d_coupled_crisis_policy_value_allocator_controller.py` | `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_verdict.csv` |
+| `python3 -m experiments.software_repair_bridge.benchmark` | `artifacts/software_repair_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

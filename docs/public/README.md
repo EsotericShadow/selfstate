@@ -22,15 +22,15 @@ It treats "self" as a persistent model of the acting system. That model can be e
 
 The current public status:
 
-- reports now include Report `138`, with roadmap docs through `102`;
-- the canonical runner is wired for `118` executable runs;
+- reports now include Report `139`, with roadmap docs through `102`;
+- the canonical runner is wired for `119` executable runs;
 - the newest environment-pressure evidence is Report `135`: the richer readiness layer now runs as a `72h` headless verifier with a `12h` shock gate, post-gate shocks, and channel-specific ablation losses;
 - the newest readiness-sequence evidence is Report `138`: short cloned-rollout sequence planning solves the 72h readiness world, but distilling that behavior into a planner-free GRU fails;
 - the newest coupled-crisis learned-transfer evidence is still Report `134`: student-created counterfactual sequence windows add high-value training signal, but after planner removal the recurrent student scores `0.508` total versus `0.520` for consequence recovery, and held-out crisis score, resolved rate, and coupled response still fall to `0.000`;
 - a separate live open-emergence sandbox now explores larger geography, multiple shelters, generic physical action primitives, lifecycle cost, abstract reproduction, dependent care, private beliefs, environment-inferred symbol categories, influence-weighted symbol adoption, invented sound tokens, terrain glyphs, conflict, discovered specializations, shifting resource reliability, stale-map pressure, disease strain, social inequality, and a long-horizon development phase before delayed major shocks;
 - the broader direction is an [accelerated agency and civilization testbed](agency_civilization_testbed.md), where the goal is to study what agents reliably reinvent under pressure;
 - the long-term product/research direction is [simulation-distilled reasoning for LLMs](sim_distilled_reasoning_controller.md), where simulation-trained critics guide LLM planning instead of replacing the LLM;
-- the most direct commercial path is [software field-experience controllers](software_field_experience_controller.md), where consequence-trained critics improve LLM coding agents on root-cause repair, tests, regressions, and review;
+- the most direct commercial path is [software field-experience controllers](software_field_experience_controller.md), where consequence-trained critics improve LLM coding agents on root-cause repair, tests, regressions, and review; Report `139` is the first structured toy bridge for that path;
 - the strongest result is still bounded simulation evidence;
 - the project has useful evidence, but not a finished proof of a general selfhood law.
 
@@ -136,6 +136,7 @@ The repo is not one experiment. It is a ladder of tests.
 | Learned environment-readiness control | [136](../136_ssrm_3d_learned_environment_readiness_controller_report.md) | Can a neural controller own that richer readiness behavior? | No: the GRU beats reactive/frame scores and keeps the shock gate, but final alive falls to `0.0`, knowledge transfer is `0.000`, and ablations are unstable. |
 | Readiness closed-loop recovery | [137](../137_ssrm_3d_readiness_closed_loop_recovery_report.md) | Does relabeling the learner's own failed readiness states repair the 72h controller? | Partly: final alive improves from `0.0` to `14.0` and score rises from `0.212` to `0.470`, but knowledge transfer remains `0.000` and ablation specificity fails. |
 | Readiness sequence consequence | [138](../138_ssrm_3d_readiness_sequence_consequence_report.md) | Does multi-step consequence search reveal the missing readiness behavior? | Yes as a bounded planner bridge: sequence optimization reaches `1.000` score/readiness/knowledge transfer. No as learned transfer: the planner-free GRU falls to `0.287` score and `0.0` final alive. |
+| Software repair bridge | [139](../139_software_repair_bridge_report.md) | Can weakest-channel planning be mapped into software-shaped repair judgment? | Yes as a structured toy bridge: `min_channel_critic` beats `visible_test_only` on hidden pass, wrong-fix, root-cause, and weakest-channel metrics. No real repo or LLM-agent claim yet. |
 | Learned multi-day maturation | [104](../104_ssrm_3d_learned_multiday_maturation_controller_report.md) | Can a learned neural controller act closed-loop in that 72h world? | Partly: the GRU preserves the long-run development behavior and beats frame/reactive control, but social/culture, environment, and previous-action ablations are not clean. |
 | Return-selected multi-day maturation | [105](../105_ssrm_3d_return_selected_multiday_maturation_controller_report.md) | Can closed-loop validation return select a better pressure-router setting? | Partly: validation chooses a `social_env` router and held-out worlds still mature, but social/culture and environmental ablations still do not reduce total score. |
 | Coupled social/environment maturation | [106](../106_ssrm_3d_coupled_social_environment_maturation_report.md) | What if post-12h crises require environmental repair and social coordination together? | Current learned control fails: the designed controller resolves the coupled crises, but the learned return-selected GRU gets `0.000` crisis score and only `0.100` resolved rate. |
@@ -325,7 +326,7 @@ This keeps language testable:
 
 The long-term LLM direction is not to make the LLM the agent. It is to distill simulation-trained judgment into critics that help an LLM search, rank, and repair plans. See [The Long-Term Use: Simulation-Distilled Reasoning For LLMs](sim_distilled_reasoning_controller.md).
 
-The direct commercial version is software: use consequence-trained critics around coding agents so they choose better repairs, tests, and review decisions. See [The Commercial Path: Software Field-Experience Controllers](software_field_experience_controller.md).
+The direct commercial version is software: use consequence-trained critics around coding agents so they choose better repairs, tests, and review decisions. Report `139` adds the first structured WrongFix Arena bridge for this idea, but it is still toy structured data, not real repo coding. See [The Commercial Path: Software Field-Experience Controllers](software_field_experience_controller.md).
 
 ## Attention, Emotion, And Control
 

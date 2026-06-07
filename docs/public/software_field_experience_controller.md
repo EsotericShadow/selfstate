@@ -123,6 +123,16 @@ Report 116 adds the caution for product work: a value selector can win on the tu
 
 For software, the controller has to prove itself on real outcomes: better patches, fewer regressions, stronger hidden-test performance, less review time, and lower debugging cost.
 
+Report 139 adds the first structured bridge toward this product path. It is a toy WrongFix Arena with `15` software-repair tasks represented as structured data, not executable repositories. The result is positive but bounded: `visible_test_only` passes visible tests while getting hidden pass rate `0.067` and wrong-fix rate `1.000`; `min_channel_critic` gets hidden pass rate `1.000`, wrong-fix rate `0.000`, root-cause repair rate `1.000`, and weakest-channel score `0.864`.
+
+That supports the benchmark shape:
+
+```text
+do not trust a green visible test if another required correctness channel is weaker
+```
+
+It does not yet prove that a field-experience controller improves an LLM on real repo work.
+
 ## What Would Prove Value
 
 The proof is a head-to-head:

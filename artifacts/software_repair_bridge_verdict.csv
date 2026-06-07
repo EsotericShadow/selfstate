@@ -1,0 +1,2 @@
+visible_hidden_pass_rate,min_channel_hidden_pass_rate,visible_wrong_fix_rate,min_channel_wrong_fix_rate,visible_root_cause_repair_rate,min_channel_root_cause_repair_rate,visible_weakest_channel_score,min_channel_weakest_channel_score,hidden_pass_gain,wrong_fix_reduction,root_cause_gain,weakest_channel_gain,supports_programmable_repair_bridge,verdict
+0.066667,1.0,1.0,0.0,0.2,1.0,0.012,0.864,0.933333,1.0,0.8,0.852,True,pass

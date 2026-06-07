@@ -1,0 +1,2 @@
+source_sequences,examples,epochs,final_loss,mean_target_return,target_return_std,positive_target_rate,train_mae,weighted_train_mae,mean_weight,max_weight,env_action_fraction,social_action_fraction,none_fraction,device_used,parameter_count
+114,143384,8,0.05385139212012291,0.353433781516621,1.7387982445119632,0.40350877192982454,0.2527802884578705,0.07490134239196777,3.3573780059814453,8.0,0.5148482396920159,0.19329911287172907,0.2918526474362551,mps,10312

@@ -1,0 +1,2 @@
+episodes,crises,epochs,final_loss,mean_return,return_std,moving_baseline,mean_sequence_length,mean_entropy,active_training_bias,active_entropy_coef,active_learning_rate,device_used,parameter_count
+9,57,3,-0.39786118268966675,1.0105140251249212,2.685840346505347,0.2701850668255271,1210.0877192982457,0.16045865390941247,0.4,0.006,0.0018,mps,19928

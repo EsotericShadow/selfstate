@@ -1,0 +1,2 @@
+iteration,source,aggregate_sequences,aggregate_examples,epochs,final_loss,train_accuracy,weighted_train_accuracy,mean_return,positive_return_rate,mean_weight,max_weight,env_action_fraction,social_action_fraction,none_fraction,device_used,parameter_count
+0,behavior_sources,114,143384,8,0.319438099861145,0.9943787312391899,0.9938164654439176,0.353433781516621,0.40350877192982454,3.345266852879356,8.0,0.5148482396920159,0.19329911287172907,0.2918526474362551,mps,19928

@@ -145,6 +145,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D coupled crisis MPC sequence distillation report](docs/132_ssrm_3d_coupled_crisis_mpc_sequence_distillation_report.md): distills the MPC sequence teacher into a recurrent crisis-memory policy, then removes rollout scoring at evaluation; the student fits teacher traces but collapses held-out crisis/coupled repair.
 - [SSRM-3D coupled crisis MPC closed-loop recovery report](docs/133_ssrm_3d_coupled_crisis_mpc_closed_loop_recovery_report.md): lets the failed MPC-distilled student act in training worlds and relabels its visited crisis states with the MPC teacher; total score improves to `0.506`, but crisis score, resolved rate, and coupled response remain `0.000`.
 - [SSRM-3D coupled crisis student-sequence consequence report](docs/134_ssrm_3d_coupled_crisis_student_sequence_consequence_report.md): trains on student-created counterfactual sequence windows weighted by downstream consequence and MPC plan value; the windows have positive signal, but the planner-free student falls below consequence recovery and held-out crisis score, resolved rate, and coupled response remain `0.000`.
+- [SSRM-3D environment-readiness maturation report](docs/135_ssrm_3d_environment_readiness_maturation_report.md): moves the open-emergence sandbox readiness layer into a headless 72h verifier with fuel reserves, seed banks, blueprints, forecast memory, apprenticeship, pest pressure, structural strain, 12h shock gating, post-gate shocks, and channel-specific ablations.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -957,6 +958,20 @@ This writes:
 - `artifacts/ssrm_3d_multiday_maturation_trace.js`
 - `artifacts/ssrm_3d_multiday_maturation_results.js`
 - `visualizations/ssrm_3d_multiday_maturation.html` replays the multi-day trace when served from the repo root.
+
+```bash
+python3 experiments/ssrm_3d_environment_readiness_maturation.py --seeds 20261201,20261202,20261203,20261204,20261205 --hours 72 --step-hours 0.10 --population 14 --trace-seed 20261201
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_environment_readiness_maturation_eval.csv`
+- `artifacts/ssrm_3d_environment_readiness_maturation_summary.csv`
+- `artifacts/ssrm_3d_environment_readiness_maturation_verdict.csv`
+- `artifacts/ssrm_3d_environment_readiness_maturation_trace.json`
+- `artifacts/ssrm_3d_environment_readiness_maturation_results.json`
+- `artifacts/ssrm_3d_environment_readiness_maturation_trace.js`
+- `artifacts/ssrm_3d_environment_readiness_maturation_results.js`
 
 ```bash
 python3 experiments/ssrm_3d_learned_multiday_maturation_controller.py --train-seeds 20260911,20260912,20260913,20260914,20260915,20260916 --eval-seeds 20260921,20260922,20260923,20260924,20260925 --hours 72 --step-hours 0.10 --population 14 --epochs 42 --hidden-size 64 --device auto --trace-seed 20260921

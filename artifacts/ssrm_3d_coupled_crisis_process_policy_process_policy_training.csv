@@ -1,0 +1,2 @@
+episodes,crises,epochs,final_loss,final_policy_loss,final_process_loss,mean_return,return_std,moving_baseline,mean_sequence_length,mean_entropy,process_loss_coef,policy_temperature,entropy_coef,device_used,parameter_count
+15,91,5,0.4420003592967987,0.08247539401054382,1.0272141695022583,2.85885973652014,0.9263629806314859,3.1445439353839912,1312.9450549450548,1.6339860856762374,0.35,1.0,0.008,mps,29640

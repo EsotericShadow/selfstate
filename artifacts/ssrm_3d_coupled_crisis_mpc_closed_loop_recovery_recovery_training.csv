@@ -1,0 +1,3 @@
+iteration,source,collected_sequences,collected_examples,aggregate_sequences,aggregate_examples,sequences,examples,epochs,final_loss,train_accuracy,balanced_train_accuracy,env_action_fraction,social_action_fraction,none_fraction,mean_sequence_length,class_balance_power,collection_policy_bias,device_used,parameter_count
+0,mpc_teacher,19,25076,19,25076,19,25076,10,0.765322208404541,0.5892885627691817,0.48580812668322354,0.5793188706332748,0.3598261285691498,0.06085500079757537,1319.7894736842106,0.35,0.0,mps,29640
+1,student_state_mpc_relabel,19,20713,38,45789,38,45789,6,1.2687791585922241,0.47076808840551226,0.32726302297772397,0.5559195439952828,0.410753674463299,0.03332678154141824,1204.9736842105262,0.35,0.8,mps,29640

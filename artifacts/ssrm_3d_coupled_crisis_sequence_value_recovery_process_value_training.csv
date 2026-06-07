@@ -1,0 +1,2 @@
+train_examples,source_sequences,process_value_epochs,final_loss,train_mae,pairwise_accuracy,positive_example_rate,mean_return,mean_weight,max_weight,env_action_fraction,social_action_fraction,none_fraction,device_used,parameter_count
+166169,133,18,0.3829241693019867,1.4798707962036133,0.7013333439826965,0.5953216303883396,0.9755863765879987,4.721235788314724,8.0,0.5778695183818883,0.2766761549988265,0.14545432661928517,mps,10369

@@ -1,0 +1,3 @@
+architecture,train_loss,train_accuracy,device_used,parameter_count,train_sequences,train_steps
+frame_mlp,1.9407713413238525,0.25166814946619215,cpu,12543,108,71936
+gru,1.99517023563385,0.24534308274021352,cpu,35439,108,71936

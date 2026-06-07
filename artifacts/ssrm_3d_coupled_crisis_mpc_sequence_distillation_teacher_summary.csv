@@ -1,0 +1,2 @@
+sequences,examples,env_action_fraction,social_action_fraction,none_fraction,mean_sequence_length,teacher_commit_actions
+19,24633,0.5811715990744124,0.357122559168595,0.06170584175699265,1296.4736842105262,14

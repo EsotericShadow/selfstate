@@ -1,0 +1,2 @@
+sequences,examples,distill_epochs,final_loss,train_accuracy,balanced_train_accuracy,env_action_fraction,social_action_fraction,none_fraction,mean_sequence_length,class_balance_power,device_used,parameter_count
+19,24633,10,0.792137086391449,0.5963950797710389,0.49937281585005794,0.5811715990744124,0.357122559168595,0.06170584175699265,1296.4736842105262,0.35,mps,29640

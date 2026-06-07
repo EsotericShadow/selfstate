@@ -147,6 +147,7 @@ That claim does not define consciousness and does not require that the self be m
 - [SSRM-3D coupled crisis student-sequence consequence report](docs/134_ssrm_3d_coupled_crisis_student_sequence_consequence_report.md): trains on student-created counterfactual sequence windows weighted by downstream consequence and MPC plan value; the windows have positive signal, but the planner-free student falls below consequence recovery and held-out crisis score, resolved rate, and coupled response remain `0.000`.
 - [SSRM-3D environment-readiness maturation report](docs/135_ssrm_3d_environment_readiness_maturation_report.md): moves the open-emergence sandbox readiness layer into a headless 72h verifier with fuel reserves, seed banks, blueprints, forecast memory, apprenticeship, pest pressure, structural strain, 12h shock gating, post-gate shocks, and channel-specific ablations.
 - [SSRM-3D learned environment-readiness controller report](docs/136_ssrm_3d_learned_environment_readiness_controller_report.md): trains frame and GRU neural controllers in the 72h readiness world; the GRU beats reactive/frame scores and preserves the 12h gate, but all learned-controller agents die by the end, knowledge transfer collapses, and ablations are unstable.
+- [SSRM-3D readiness closed-loop recovery report](docs/137_ssrm_3d_readiness_closed_loop_recovery_report.md): lets the failed readiness learner act in training worlds, relabels its visited states, and retrains a recovery GRU; final survival improves from `0.0` to `14.0`, but knowledge transfer remains `0.000` and ablations are not clean.
 - [Learned bottleneck discovery report](docs/25_learned_bottleneck_discovery_report.md): tests whether shared latent structure can be learned without self labels and then separated by causal boundary.
 - [Sequence latent transfer report](docs/26_sequence_latent_transfer_report.md): tests whether an unlabeled sequence state inferred from calibration outcomes transfers to held-out contexts.
 - [Heterogeneous attractor precursor report](docs/27_heterogeneous_attractor_precursor_report.md): tests whether several learner families converge on the same latent causal signature.
@@ -991,6 +992,23 @@ This writes:
 - `artifacts/ssrm_3d_learned_environment_readiness_results.js`
 
 ```bash
+python3 experiments/ssrm_3d_readiness_closed_loop_recovery_controller.py --behavior-train-seeds 20261211,20261212,20261213,20261214,20261215,20261216 --recovery-seeds 20261231,20261232,20261233 --eval-seeds 20261251,20261252,20261253,20261254,20261255 --hours 72 --step-hours 0.10 --population 14 --epochs 52 --recovery-epochs 42 --hidden-size 72 --device cpu --trace-seed 20261251
+```
+
+This writes:
+
+- `artifacts/ssrm_3d_readiness_closed_loop_recovery_training.csv`
+- `artifacts/ssrm_3d_readiness_closed_loop_recovery_collection.csv`
+- `artifacts/ssrm_3d_readiness_closed_loop_recovery_eval.csv`
+- `artifacts/ssrm_3d_readiness_closed_loop_recovery_summary.csv`
+- `artifacts/ssrm_3d_readiness_closed_loop_recovery_ablations.csv`
+- `artifacts/ssrm_3d_readiness_closed_loop_recovery_verdict.csv`
+- `artifacts/ssrm_3d_readiness_closed_loop_recovery_trace.json`
+- `artifacts/ssrm_3d_readiness_closed_loop_recovery_results.json`
+- `artifacts/ssrm_3d_readiness_closed_loop_recovery_trace.js`
+- `artifacts/ssrm_3d_readiness_closed_loop_recovery_results.js`
+
+```bash
 python3 experiments/ssrm_3d_learned_multiday_maturation_controller.py --train-seeds 20260911,20260912,20260913,20260914,20260915,20260916 --eval-seeds 20260921,20260922,20260923,20260924,20260925 --hours 72 --step-hours 0.10 --population 14 --epochs 42 --hidden-size 64 --device auto --trace-seed 20260921
 ```
 
@@ -1583,6 +1601,8 @@ The project should not ask whether an agent says it has a self. It should ask wh
 86. Tested with model-predictive sequence commitment over cloned rollout-scored repair plans, while rejecting the learned-transfer claim if it remains a supplied planning bridge or misses the strict teacher-transfer crisis threshold.
 87. Tested with recurrent distillation of the MPC sequence teacher, while rejecting the claim if teacher-trace imitation does not preserve held-out crisis score, resolved rate, coupled response, and social/environment dependency after rollout scoring is removed.
 88. Tested with MPC teacher relabeling of student-visited crisis states, while rejecting the claim if closed-loop relabeling still cannot preserve held-out crisis score, resolved rate, coupled response, and social/environment dependency after rollout scoring is removed.
+89. Tested with student-created counterfactual sequence windows for coupled crisis control, while rejecting the claim if high-value student-state windows still fail to transfer into planner-free coupled repair.
+90. Tested with closed-loop recovery relabeling in the richer 72h readiness world, while rejecting the strong claim if survival improves but knowledge transfer, readiness, and ablation specificity remain weak.
 
 Current stress evidence does not yet satisfy item 37. The architecture boundary stress test finds partial convergence in shared regimes, not strict architecture-wide convergence. Current horizon-pressure evidence partially supports item 38: recoverability improves with horizon, but strict convergence still does not appear.
 Current capacity evidence supports item 39, but only as a diagnostic: source-direction seeds are supplied, so this is not natural emergence.
@@ -1636,6 +1656,7 @@ Current SSRM-3D coupled crisis MPC sequence-optimizer evidence partially support
 Current SSRM-3D coupled crisis MPC sequence-distillation evidence does not satisfy item 87: the recurrent student trains on `24633` MPC teacher examples with `0.596` accuracy and `0.499` balanced accuracy, but after rollout scoring is removed held-out crisis score, resolved rate, social response, and coupled response all fall to `0.000`; total score `0.457` is below consequence recovery `0.520` and return-selected `0.487`.
 Current SSRM-3D coupled crisis MPC closed-loop recovery evidence does not satisfy item 88: one student-state relabeling pass expands training to `45789` aggregate examples and raises total score over the initial MPC-distilled student from `0.468` to `0.506`, but held-out crisis score, resolved rate, and coupled response remain `0.000`; the recovered policy collapses into social-only crisis response and still fails planner-free coupled repair.
 Current SSRM-3D coupled crisis student-sequence consequence evidence does not satisfy item 89: student-created counterfactual windows add `25615` high-value active-crisis examples with mean return `0.823`, but the final recurrent policy reaches only `0.508` total score versus `0.520` for consequence recovery, and held-out crisis score, resolved rate, environment response, and coupled response all remain `0.000`.
+Current SSRM-3D readiness closed-loop recovery evidence does not satisfy item 90: two student-state relabeling passes expand training to `124711` aggregate steps and raise held-out readiness-world maturation score from `0.212` to `0.470`, with final alive improving from `0.0` to `14.0`. The strong claim still fails because knowledge transfer remains `0.000`, final readiness is only `0.349` versus `1.000` designed, and body/tools/previous-action ablations are inverted.
 
 The SSRM-3D done-enough gates keep that result bounded: the 3D track is not done until learned control, tool-making or externalized cognition, real social pressure, and targeted ablation all pass. Gate 1 has useful learned-control precursors and a physics-first offline recurrent benchmark; gate 2 has a partial externalized-cognition precursor plus a learned tool-memory bridge; gate 3 has partial social-pressure and costly-communication precursors plus a learned social-memory bridge; gate 4 has continuity-record and learned continuity/attention precursors but is still incomplete.
 

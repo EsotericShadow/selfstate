@@ -1,0 +1,5 @@
+pass_name,architecture,source,train_loss,train_accuracy,weighted_accuracy,device_used,parameter_count,train_sequences,train_steps,recovery_examples
+behavior,frame_mlp,designed_teacher_traces,1.9271366596221924,0.25066725978647686,0.25066725978647686,cpu,12543,108,71936,0
+behavior,gru,designed_teacher_traces,1.9147859811782837,0.24920762900355872,0.24920762900355872,cpu,35439,108,71936,0
+recovery_stage_1,gru,teacher_traces_plus_student_visited_states,1.3338018655776978,0.34256746217438777,0.5170777643280655,cpu,35439,150,96165,24229
+recovery_final,gru,teacher_traces_plus_two_student_recovery_passes,1.111454725265503,0.4234349816776387,0.6391484306480759,cpu,35439,192,124711,52775

@@ -48,10 +48,14 @@ def write_artifacts(
     eval_rows: Sequence[EvalRow],
     summary_rows: Sequence[SummaryRow],
     verdict: VerdictRow,
+    *,
+    report: int = 139,
+    name: str = "Programmable Repair Bridge / WrongFix Arena Spec",
+    prefix: str = "software_repair_bridge",
 ) -> dict[str, object]:
     payload = {
-        "report": 139,
-        "name": "Programmable Repair Bridge / WrongFix Arena Spec",
+        "report": report,
+        "name": name,
         "task_count": len(tasks),
         "tasks": task_payload(tasks),
         "summary": [asdict(row) for row in summary_rows],
@@ -61,8 +65,8 @@ def write_artifacts(
             "not_claimed": "real repo coding, frontier LLM improvement, or autonomous software engineering",
         },
     }
-    rows_to_csv(ARTIFACT_DIR / f"{PREFIX}_eval.csv", eval_rows)
-    rows_to_csv(ARTIFACT_DIR / f"{PREFIX}_summary.csv", summary_rows)
-    rows_to_csv(ARTIFACT_DIR / f"{PREFIX}_verdict.csv", [verdict])
-    write_json(ARTIFACT_DIR / f"{PREFIX}_results.json", payload)
+    rows_to_csv(ARTIFACT_DIR / f"{prefix}_eval.csv", eval_rows)
+    rows_to_csv(ARTIFACT_DIR / f"{prefix}_summary.csv", summary_rows)
+    rows_to_csv(ARTIFACT_DIR / f"{prefix}_verdict.csv", [verdict])
+    write_json(ARTIFACT_DIR / f"{prefix}_results.json", payload)
     return payload

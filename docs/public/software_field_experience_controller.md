@@ -125,6 +125,8 @@ For software, the controller has to prove itself on real outcomes: better patche
 
 Report 139 adds the first structured bridge toward this product path. It is a toy WrongFix Arena with `15` software-repair tasks represented as structured data, not executable repositories. The result is positive but bounded: `visible_test_only` passes visible tests while getting hidden pass rate `0.067` and wrong-fix rate `1.000`; `min_channel_critic` gets hidden pass rate `1.000`, wrong-fix rate `0.000`, root-cause repair rate `1.000`, and weakest-channel score `0.864`.
 
+Report 140 adds a seeded dynamic extension to `120` tasks with held-out families, noisy and irrelevant signals, difficulty tiers, and explicit ambiguity across correctness channels. It shows why visible tests alone fail under realistic uncertainty while multi-channel critics can do better, but this remains a benchmark bridge: no executable repositories, no external repos, and no claim of frontier coding-agent improvement.
+
 That supports the benchmark shape:
 
 ```text

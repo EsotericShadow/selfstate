@@ -139,7 +139,7 @@ This boundary is not evidence that selfhood exists. It defines how future langua
 | The arbiter owns action authority | Advisory LLM improves slow decisions only when accepted by the arbiter. | Direct LLM motor control matches layered realtime survival with no latency or invalid-action cost. |
 | Compressed packets are sufficient for language reasoning | Packet-fed LLMs match full-world LLMs on abstract recommendation quality when the state layers are healthy. | Full-world access consistently beats packet access without control costs, implying the packet omits essential state. |
 | Simulation-distilled critics can improve LLM reasoning | A sim-distilled critic improves held-out LLM planning, repair, and cascade-avoidance tasks while ablations identify which critic matters. | LLM search plus generic reward models match or beat sim-distilled critics, or the critics only transfer simulation artifacts. |
-| Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. Report 139 is only a structured toy bridge showing that weakest-channel repair beats visible-test-only selection in a WrongFix Arena. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
+| Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. Report 139 is the first structured toy bridge; Report 140 is its dynamic extension with held-out families and noisy multi-channel conditions. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
 
 ## Candidate Hypotheses
 
@@ -743,13 +743,15 @@ This is the narrow precursor to the full Attractor Test. It varies simple learne
 
 | Policy | Visible pass | Hidden pass | Wrong fix | Root-cause repair | Weakest channel | Current result |
 |---|---:|---:|---:|---:|---:|---|
-| `visible_test_only` | `1.000` | `0.067` | `1.000` | `0.200` | `0.012` | Passes shallow tests while choosing wrong repairs. |
-| `root_cause_first` | `1.000` | `0.867` | `0.200` | `1.000` | `0.708` | Identifies the broad cause but still misses some weakest-channel failures. |
-| `min_channel_critic` | `1.000` | `1.000` | `0.000` | `1.000` | `0.864` | Structured bridge pass against visible-test-only selection. |
-| `weighted_quality_critic` | `1.000` | `1.000` | `0.000` | `1.000` | `0.864` | Also matches oracle on this small deterministic task bank. |
-| `oracle` | `1.000` | `1.000` | `0.000` | `1.000` | `0.864` | Expected best repair. |
+| `visible_test_only` | `1.000` | `0.344` | `0.864` | `0.240` | `0.060022` | Passes visible tests while often selecting wrong or risky repairs. |
+| `root_cause_first` | `0.840` | `0.976` | `0.208` | `0.984` | `0.134015` | Broad cause is often right, but weakest-channel risk remains high in this dynamic generator. |
+| `min_channel_critic` | `0.880` | `1.000` | `0.328` | `0.824` | `0.163007` | Strong hidden-pass result, but still over-accepts some weak-channel/risk-heavy repairs. |
+| `weighted_quality_critic` | `0.840` | `1.000` | `0.008` | `0.968` | `0.118217` | Best non-oracle policy under the calibrated-governance gate. |
+| `conservative_review_critic` | `0.000` | `0.000` | `0.000` | `0.000` | `0.000` | Over-blocking boundary: zero visible pass and no unblocked selections. |
+| `risk_tolerant_shipper` | `1.000` | `0.840` | `0.320` | `0.864` | `0.137453` | Favors visible speed and still permits a sizable wrong-fix share. |
+| `oracle` | `0.840` | `1.000` | `0.000` | `0.968` | `0.118663` | Expected best repair. |
 
-This is Report 139 only: a toy software-shaped arena, not real repo coding or evidence that a field-experience controller improves frontier LLM coding agents.
+This is Report 140: a seeded dynamic extension of Report 139 with uncertainty-heavy multi-channel behavior, not real repo coding or evidence that a field-experience controller improves frontier LLM coding agents.
 
 ## Reproducibility Artifacts
 
@@ -826,6 +828,7 @@ This is Report 139 only: a toy software-shaped arena, not real repo coding or ev
 | `experiments/ssrm_3d_coupled_crisis_adaptive_allocator_controller.py` | `artifacts/ssrm_3d_coupled_crisis_adaptive_allocator_verdict.csv` |
 | `experiments/ssrm_3d_coupled_crisis_policy_value_allocator_controller.py` | `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_verdict.csv` |
 | `python3 -m experiments.software_repair_bridge.benchmark` | `artifacts/software_repair_bridge_verdict.csv` |
+| `python3 -m experiments.software_repair_bridge.dynamic_benchmark` | `artifacts/software_repair_dynamic_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

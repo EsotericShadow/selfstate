@@ -273,3 +273,7 @@ Report 237 adds deterministic typed post-entry conversation after avatar entry. 
 
 Report 238 moves post-entry typed interaction into a multi-day browser-local state loop. It generates 30 user-authored utterance examples, 8 parser rules, 30 parsed intents, 30 public agent goals, 30 goal updates, 30 household schedule changes, 30 relationship memory updates, 13 browser-local memory events, 30 consequence resolutions, 30 durable snapshots, and 30 loop ticks. The run passes with readiness 0.985091 and weakest-channel score 0.866667. The weakest channel is parser accuracy, correctly preserving the boundary that this is deterministic routing, not open-ended language understanding.
 
+## Report 239 Durable Browser Game Loop Bridge Note
+
+Report 239 makes the post-entry browser page itself into a durable local game-loop scaffold. It generates 35 free typed local utterances, 35 browser world-state frames, 35 agent goal conflicts, 35 schedule simulation steps, 35 persistent relationship memory rows, 35 sensory/body state frames, 140 replay export rows, and 35 durable game-loop ticks. The run passes with readiness 0.994928 and weakest-channel score 0.889429. The weakest channel is local parser confidence, correctly preserving the boundary that free local text is still deterministic parsing rather than open-ended understanding.
+

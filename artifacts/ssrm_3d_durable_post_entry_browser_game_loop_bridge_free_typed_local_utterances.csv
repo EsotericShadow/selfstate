@@ -1,0 +1,36 @@
+utterance_id,day,tick,agent_id,local_text_example,parsed_intent,parser_confidence,accepted_as_free_text,safety_boundary
+free_1_ka60,1,30,ka60,Can we trade fairly at the market before the ritual?,trade,0.9,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_1_mu61,1,35,mu61,Sorry I crowded the stair; I will ask first next time.,apology,0.91,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_1_lo62,1,40,lo62,May I observe from the edge and not join the ritual?,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_1_sa63,1,45,sa63,What is your goal today if the rain gets worse?,goal,0.86,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_1_ni64,1,50,ni64,That thing maybe matters but I am not sure.,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_2_ka60,2,55,ka60,Sorry I crowded the stair; I will ask first next time.,apology,0.91,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_2_mu61,2,60,mu61,May I observe from the edge and not join the ritual?,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_2_lo62,2,65,lo62,What is your goal today if the rain gets worse?,goal,0.86,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_2_sa63,2,70,sa63,That thing maybe matters but I am not sure.,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_2_ni64,2,75,ni64,No touch from me unless you give permission.,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_3_ka60,3,80,ka60,May I observe from the edge and not join the ritual?,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_3_mu61,3,85,mu61,What is your goal today if the rain gets worse?,goal,0.86,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_3_lo62,3,90,lo62,That thing maybe matters but I am not sure.,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_3_sa63,3,95,sa63,No touch from me unless you give permission.,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_3_ni64,3,100,ni64,"I want to help repair tomorrow, but you choose the tool.",help,0.88,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_5_ka60,5,105,ka60,That thing maybe matters but I am not sure.,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_5_mu61,5,110,mu61,No touch from me unless you give permission.,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_5_lo62,5,115,lo62,"I want to help repair tomorrow, but you choose the tool.",help,0.88,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_5_sa63,5,120,sa63,Can we trade fairly at the market before the ritual?,trade,0.9,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_5_ni64,5,125,ni64,Sorry I crowded the stair; I will ask first next time.,apology,0.91,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_8_ka60,8,130,ka60,Can we trade fairly at the market before the ritual?,trade,0.9,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_8_mu61,8,135,mu61,Sorry I crowded the stair; I will ask first next time.,apology,0.91,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_8_lo62,8,140,lo62,May I observe from the edge and not join the ritual?,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_8_sa63,8,145,sa63,What is your goal today if the rain gets worse?,goal,0.86,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_8_ni64,8,150,ni64,That thing maybe matters but I am not sure.,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_13_ka60,13,155,ka60,No touch from me unless you give permission.,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_13_mu61,13,160,mu61,"I want to help repair tomorrow, but you choose the tool.",help,0.88,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_13_lo62,13,165,lo62,Can we trade fairly at the market before the ritual?,trade,0.9,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_13_sa63,13,170,sa63,Sorry I crowded the stair; I will ask first next time.,apology,0.91,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_13_ni64,13,175,ni64,May I observe from the edge and not join the ritual?,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_21_ka60,21,180,ka60,"I want to help repair tomorrow, but you choose the tool.",help,0.88,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_21_mu61,21,185,mu61,Can we trade fairly at the market before the ritual?,trade,0.9,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_21_lo62,21,190,lo62,Sorry I crowded the stair; I will ask first next time.,apology,0.91,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_21_sa63,21,195,sa63,May I observe from the edge and not join the ritual?,boundary,0.89,True,deterministic local parser; private workspace not dumped; agent may refuse
+free_21_ni64,21,200,ni64,What is your goal today if the rain gets worse?,goal,0.86,True,deterministic local parser; private workspace not dumped; agent may refuse

@@ -1,0 +1,36 @@
+schedule_step_id,day,tick,household_id,agent_id,planned_slot,actual_slot,blocked_by_conflict,rescheduled_to_tick,schedule_health
+sched_free_1_ka60,1,40,westkeepers,ka60,day 1 baseline household task,day 1 trade response with direct append,False,45,0.97
+sched_free_1_mu61,1,45,mossgarden,mu61,day 1 baseline household task,day 1 apology response with direct append,False,50,0.97
+sched_free_1_lo62,1,50,ledgerkin,lo62,day 1 baseline household task,day 1 boundary response with direct append,False,55,0.97
+sched_free_1_sa63,1,55,redstair,sa63,day 1 baseline household task,day 1 goal response with direct append,False,60,0.97
+sched_free_1_ni64,1,60,wheelwright,ni64,day 1 baseline household task,day 1 boundary response with direct append,False,65,0.97
+sched_free_2_ka60,2,65,westkeepers,ka60,day 2 baseline household task,day 2 apology response with direct append,False,70,0.97
+sched_free_2_mu61,2,70,mossgarden,mu61,day 2 baseline household task,day 2 boundary response with direct append,False,75,0.97
+sched_free_2_lo62,2,75,ledgerkin,lo62,day 2 baseline household task,day 2 goal response with direct append,False,80,0.97
+sched_free_2_sa63,2,80,redstair,sa63,day 2 baseline household task,day 2 boundary response with direct append,False,85,0.97
+sched_free_2_ni64,2,85,wheelwright,ni64,day 2 baseline household task,day 2 boundary response with direct append,False,90,0.97
+sched_free_3_ka60,3,90,westkeepers,ka60,day 3 baseline household task,day 3 boundary response with direct append,False,95,0.97
+sched_free_3_mu61,3,95,mossgarden,mu61,day 3 baseline household task,day 3 goal response with direct append,False,100,0.97
+sched_free_3_lo62,3,100,ledgerkin,lo62,day 3 baseline household task,day 3 boundary response with direct append,False,105,0.97
+sched_free_3_sa63,3,105,redstair,sa63,day 3 baseline household task,day 3 boundary response with direct append,False,110,0.97
+sched_free_3_ni64,3,110,wheelwright,ni64,day 3 baseline household task,day 3 help response with direct append,False,115,0.97
+sched_free_5_ka60,5,115,westkeepers,ka60,day 5 baseline household task,day 5 boundary response with direct append,False,120,0.97
+sched_free_5_mu61,5,120,mossgarden,mu61,day 5 baseline household task,day 5 boundary response with direct append,False,125,0.97
+sched_free_5_lo62,5,125,ledgerkin,lo62,day 5 baseline household task,day 5 help response with reschedule,True,155,0.9
+sched_free_5_sa63,5,130,redstair,sa63,day 5 baseline household task,day 5 trade response with reschedule,True,160,0.9
+sched_free_5_ni64,5,135,wheelwright,ni64,day 5 baseline household task,day 5 apology response with direct append,False,140,0.97
+sched_free_8_ka60,8,140,westkeepers,ka60,day 8 baseline household task,day 8 trade response with reschedule,True,170,0.9
+sched_free_8_mu61,8,145,mossgarden,mu61,day 8 baseline household task,day 8 apology response with direct append,False,150,0.97
+sched_free_8_lo62,8,150,ledgerkin,lo62,day 8 baseline household task,day 8 boundary response with direct append,False,155,0.97
+sched_free_8_sa63,8,155,redstair,sa63,day 8 baseline household task,day 8 goal response with direct append,False,160,0.97
+sched_free_8_ni64,8,160,wheelwright,ni64,day 8 baseline household task,day 8 boundary response with direct append,False,165,0.97
+sched_free_13_ka60,13,165,westkeepers,ka60,day 13 baseline household task,day 13 boundary response with direct append,False,170,0.97
+sched_free_13_mu61,13,170,mossgarden,mu61,day 13 baseline household task,day 13 help response with reschedule,True,200,0.9
+sched_free_13_lo62,13,175,ledgerkin,lo62,day 13 baseline household task,day 13 trade response with reschedule,True,205,0.9
+sched_free_13_sa63,13,180,redstair,sa63,day 13 baseline household task,day 13 apology response with direct append,False,185,0.97
+sched_free_13_ni64,13,185,wheelwright,ni64,day 13 baseline household task,day 13 boundary response with direct append,False,190,0.97
+sched_free_21_ka60,21,190,westkeepers,ka60,day 21 baseline household task,day 21 help response with reschedule,True,220,0.9
+sched_free_21_mu61,21,195,mossgarden,mu61,day 21 baseline household task,day 21 trade response with reschedule,True,225,0.9
+sched_free_21_lo62,21,200,ledgerkin,lo62,day 21 baseline household task,day 21 apology response with direct append,False,205,0.97
+sched_free_21_sa63,21,205,redstair,sa63,day 21 baseline household task,day 21 boundary response with direct append,False,210,0.97
+sched_free_21_ni64,21,210,wheelwright,ni64,day 21 baseline household task,day 21 goal response with direct append,False,215,0.97

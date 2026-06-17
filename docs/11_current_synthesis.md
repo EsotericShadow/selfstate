@@ -847,3 +847,6 @@ Report 237 adds deterministic typed post-entry conversation. User text is routed
 
 
 Report 238 moves typed interaction into a multi-day state loop. User-authored utterance examples route through deterministic parser rules and then update public agent goals, household schedules, relationship memory, browser-local memory snapshots, and later-day consequences. The weakest channel is parser accuracy, which honestly marks that user-authored text is still handled by deterministic rules rather than open-ended language understanding.
+
+
+Report 239 makes the browser page itself into the durable post-entry game-loop scaffold. It accepts free local text, persists world state through localStorage, creates agent goal conflicts, runs schedule simulation steps, writes relationship memory rows, binds sensory/body state, and exports deterministic replay rows across days 1 through 21. The weakest channel is local parser confidence, preserving the boundary that this remains deterministic local parsing rather than open-ended language understanding.

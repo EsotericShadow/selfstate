@@ -1,0 +1,141 @@
+replay_id,day,tick,event_type,entity_ref,serialized_payload,replay_order,deterministic_hash,export_ready
+replay_001,1,31,world,world_free_1_ka60,day=1;agent=ka60;intent=trade;rows=1,1,h167933,True
+replay_002,1,32,utterance,free_1_ka60,Can we trade fairly at the market before the ritual?,2,h256471,True
+replay_003,1,33,memory,mem_free_1_ka60,avatar free text 'Can we trade fairly at the market before the ritual?' became trade; conflict_success=True,3,h799188,True
+replay_004,1,30,schedule,sched_free_1_ka60,day 1 trade response with direct append,4,h208100,True
+replay_005,1,36,world,world_free_1_mu61,day=1;agent=mu61;intent=apology;rows=2,5,h183454,True
+replay_006,1,37,utterance,free_1_mu61,Sorry I crowded the stair; I will ask first next time.,6,h265212,True
+replay_007,1,38,memory,mem_free_1_mu61,avatar free text 'Sorry I crowded the stair; I will ask first next time.' became apology; conflict_success=True,7,h847654,True
+replay_008,1,35,schedule,sched_free_1_mu61,day 1 apology response with direct append,8,h223409,True
+replay_009,1,41,world,world_free_1_lo62,day=1;agent=lo62;intent=boundary;rows=3,9,h189691,True
+replay_010,1,42,utterance,free_1_lo62,May I observe from the edge and not join the ritual?,10,h252750,True
+replay_011,1,43,memory,mem_free_1_lo62,avatar free text 'May I observe from the edge and not join the ritual?' became boundary; conflict_success=True,11,h837923,True
+replay_012,1,40,schedule,sched_free_1_lo62,day 1 boundary response with direct append,12,h230304,True
+replay_013,1,46,world,world_free_1_sa63,day=1;agent=sa63;intent=goal;rows=4,13,h162403,True
+replay_014,1,47,utterance,free_1_sa63,What is your goal today if the rain gets worse?,14,h222360,True
+replay_015,1,48,memory,mem_free_1_sa63,avatar free text 'What is your goal today if the rain gets worse?' became goal; conflict_success=True,15,h725611,True
+replay_016,1,45,schedule,sched_free_1_sa63,day 1 goal response with direct append,16,h201555,True
+replay_017,1,51,world,world_free_1_ni64,day=1;agent=ni64;intent=boundary;rows=5,17,h189703,True
+replay_018,1,52,utterance,free_1_ni64,That thing maybe matters but I am not sure.,18,h193174,True
+replay_019,1,53,memory,mem_free_1_ni64,avatar free text 'That thing maybe matters but I am not sure.' became boundary; conflict_success=True,19,h728571,True
+replay_020,1,50,schedule,sched_free_1_ni64,day 1 boundary response with direct append,20,h230258,True
+replay_021,2,56,world,world_free_2_ka60,day=2;agent=ka60;intent=apology;rows=6,21,h182392,True
+replay_022,2,57,utterance,free_2_ka60,Sorry I crowded the stair; I will ask first next time.,22,h264791,True
+replay_023,2,58,memory,mem_free_2_ka60,avatar free text 'Sorry I crowded the stair; I will ask first next time.' became apology; conflict_success=True,23,h847211,True
+replay_024,2,55,schedule,sched_free_2_ka60,day 2 apology response with direct append,24,h222910,True
+replay_025,2,61,world,world_free_2_mu61,day=2;agent=mu61;intent=boundary;rows=7,25,h190338,True
+replay_026,2,62,utterance,free_2_mu61,May I observe from the edge and not join the ritual?,26,h252877,True
+replay_027,2,63,memory,mem_free_2_mu61,avatar free text 'May I observe from the edge and not join the ritual?' became boundary; conflict_success=True,27,h838057,True
+replay_028,2,60,schedule,sched_free_2_mu61,day 2 boundary response with direct append,28,h230498,True
+replay_029,2,66,world,world_free_2_lo62,day=2;agent=lo62;intent=goal;rows=8,29,h163050,True
+replay_030,2,67,utterance,free_2_lo62,What is your goal today if the rain gets worse?,30,h222495,True
+replay_031,2,68,memory,mem_free_2_lo62,avatar free text 'What is your goal today if the rain gets worse?' became goal; conflict_success=True,31,h725753,True
+replay_032,2,65,schedule,sched_free_2_lo62,day 2 goal response with direct append,32,h201757,True
+replay_033,2,71,world,world_free_2_sa63,day=2;agent=sa63;intent=boundary;rows=9,33,h189752,True
+replay_034,2,72,utterance,free_2_sa63,That thing maybe matters but I am not sure.,34,h193107,True
+replay_035,2,73,memory,mem_free_2_sa63,avatar free text 'That thing maybe matters but I am not sure.' became boundary; conflict_success=True,35,h728501,True
+replay_036,2,70,schedule,sched_free_2_sa63,day 2 boundary response with direct append,36,h230208,True
+replay_037,2,76,world,world_free_2_ni64,day=2;agent=ni64;intent=boundary;rows=10,37,h192570,True
+replay_038,2,77,utterance,free_2_ni64,No touch from me unless you give permission.,38,h209927,True
+replay_039,2,78,memory,mem_free_2_ni64,avatar free text 'No touch from me unless you give permission.' became boundary; conflict_success=True,39,h754153,True
+replay_040,2,75,schedule,sched_free_2_ni64,day 2 boundary response with direct append,40,h230311,True
+replay_041,3,81,world,world_free_3_ka60,day=3;agent=ka60;intent=boundary;rows=11,41,h191786,True
+replay_042,3,82,utterance,free_3_ka60,May I observe from the edge and not join the ritual?,42,h252456,True
+replay_043,3,83,memory,mem_free_3_ka60,avatar free text 'May I observe from the edge and not join the ritual?' became boundary; conflict_success=True,43,h837614,True
+replay_044,3,80,schedule,sched_free_3_ka60,day 3 boundary response with direct append,44,h229999,True
+replay_045,3,86,world,world_free_3_mu61,day=3;agent=mu61;intent=goal;rows=12,45,h166032,True
+replay_046,3,87,utterance,free_3_mu61,What is your goal today if the rain gets worse?,46,h222622,True
+replay_047,3,88,memory,mem_free_3_mu61,avatar free text 'What is your goal today if the rain gets worse?' became goal; conflict_success=True,47,h725887,True
+replay_048,3,85,schedule,sched_free_3_mu61,day 3 goal response with direct append,48,h201951,True
+replay_049,3,91,world,world_free_3_lo62,day=3;agent=lo62;intent=boundary;rows=13,49,h192923,True
+replay_050,3,92,utterance,free_3_lo62,That thing maybe matters but I am not sure.,50,h193242,True
+replay_051,3,93,memory,mem_free_3_lo62,avatar free text 'That thing maybe matters but I am not sure.' became boundary; conflict_success=True,51,h728643,True
+replay_052,3,90,schedule,sched_free_3_lo62,day 3 boundary response with direct append,52,h230410,True
+replay_053,3,96,world,world_free_3_sa63,day=3;agent=sa63;intent=boundary;rows=14,53,h192623,True
+replay_054,3,97,utterance,free_3_sa63,No touch from me unless you give permission.,54,h209860,True
+replay_055,3,98,memory,mem_free_3_sa63,avatar free text 'No touch from me unless you give permission.' became boundary; conflict_success=True,55,h754083,True
+replay_056,3,95,schedule,sched_free_3_sa63,day 3 boundary response with direct append,56,h230261,True
+replay_057,3,101,world,world_free_3_ni64,day=3;agent=ni64;intent=help;rows=15,57,h166068,True
+replay_058,3,102,utterance,free_3_ni64,"I want to help repair tomorrow, but you choose the tool.",58,h286023,True
+replay_059,3,103,memory,mem_free_3_ni64,"avatar free text 'I want to help repair tomorrow, but you choose the too' became help; conflict_success=True",59,h815289,True
+replay_060,3,100,schedule,sched_free_3_ni64,day 3 help response with direct append,60,h201992,True
+replay_061,5,106,world,world_free_5_ka60,day=5;agent=ka60;intent=boundary;rows=16,61,h192200,True
+replay_062,5,107,utterance,free_5_ka60,That thing maybe matters but I am not sure.,62,h192948,True
+replay_063,5,108,memory,mem_free_5_ka60,avatar free text 'That thing maybe matters but I am not sure.' became boundary; conflict_success=True,63,h728334,True
+replay_064,5,105,schedule,sched_free_5_ka60,day 5 boundary response with direct append,64,h230105,True
+replay_065,5,111,world,world_free_5_mu61,day=5;agent=mu61;intent=boundary;rows=17,65,h193621,True
+replay_066,5,112,utterance,free_5_mu61,No touch from me unless you give permission.,66,h210122,True
+replay_067,5,113,memory,mem_free_5_mu61,avatar free text 'No touch from me unless you give permission.' became boundary; conflict_success=True,67,h754359,True
+replay_068,5,110,schedule,sched_free_5_mu61,day 5 boundary response with direct append,68,h230657,True
+replay_069,5,116,world,world_free_5_lo62,day=5;agent=lo62;intent=help;rows=18,69,h166456,True
+replay_070,5,117,utterance,free_5_lo62,"I want to help repair tomorrow, but you choose the tool.",70,h286091,True
+replay_071,5,118,memory,mem_free_5_lo62,"avatar free text 'I want to help repair tomorrow, but you choose the too' became help; conflict_success=True",71,h815361,True
+replay_072,5,115,schedule,sched_free_5_lo62,day 5 help response with reschedule,72,h186411,True
+replay_073,5,121,world,world_free_5_sa63,day=5;agent=sa63;intent=trade;rows=19,73,h172243,True
+replay_074,5,122,utterance,free_5_sa63,Can we trade fairly at the market before the ritual?,74,h256742,True
+replay_075,5,123,memory,mem_free_5_sa63,avatar free text 'Can we trade fairly at the market before the ritual?' became trade; conflict_success=True,75,h799474,True
+replay_076,5,120,schedule,sched_free_5_sa63,day 5 trade response with reschedule,76,h192602,True
+replay_077,5,126,world,world_free_5_ni64,day=5;agent=ni64;intent=apology;rows=20,77,h186204,True
+replay_078,5,127,utterance,free_5_ni64,Sorry I crowded the stair; I will ask first next time.,78,h265129,True
+replay_079,5,128,memory,mem_free_5_ni64,avatar free text 'Sorry I crowded the stair; I will ask first next time.' became apology; conflict_success=True,79,h847567,True
+replay_080,5,125,schedule,sched_free_5_ni64,day 5 apology response with direct append,80,h223434,True
+replay_081,8,131,world,world_free_8_ka60,day=8;agent=ka60;intent=trade;rows=21,81,h171311,True
+replay_082,8,132,utterance,free_8_ka60,Can we trade fairly at the market before the ritual?,82,h256583,True
+replay_083,8,133,memory,mem_free_8_ka60,avatar free text 'Can we trade fairly at the market before the ritual?' became trade; conflict_success=True,83,h799307,True
+replay_084,8,130,schedule,sched_free_8_ka60,day 8 trade response with reschedule,84,h192499,True
+replay_085,8,136,world,world_free_8_mu61,day=8;agent=mu61;intent=apology;rows=22,85,h186933,True
+replay_086,8,137,utterance,free_8_mu61,Sorry I crowded the stair; I will ask first next time.,86,h265324,True
+replay_087,8,138,memory,mem_free_8_mu61,avatar free text 'Sorry I crowded the stair; I will ask first next time.' became apology; conflict_success=True,87,h847773,True
+replay_088,8,135,schedule,sched_free_8_mu61,day 8 apology response with direct append,88,h223780,True
+replay_089,8,141,world,world_free_8_lo62,day=8;agent=lo62;intent=boundary;rows=23,89,h193221,True
+replay_090,8,142,utterance,free_8_lo62,May I observe from the edge and not join the ritual?,90,h252862,True
+replay_091,8,143,memory,mem_free_8_lo62,avatar free text 'May I observe from the edge and not join the ritual?' became boundary; conflict_success=True,91,h838042,True
+replay_092,8,140,schedule,sched_free_8_lo62,day 8 boundary response with direct append,92,h230675,True
+replay_093,8,146,world,world_free_8_sa63,day=8;agent=sa63;intent=goal;rows=24,93,h165734,True
+replay_094,8,147,utterance,free_8_sa63,What is your goal today if the rain gets worse?,94,h222472,True
+replay_095,8,148,memory,mem_free_8_sa63,avatar free text 'What is your goal today if the rain gets worse?' became goal; conflict_success=True,95,h725730,True
+replay_096,8,145,schedule,sched_free_8_sa63,day 8 goal response with direct append,96,h201926,True
+replay_097,8,151,world,world_free_8_ni64,day=8;agent=ni64;intent=boundary;rows=25,97,h193235,True
+replay_098,8,152,utterance,free_8_ni64,That thing maybe matters but I am not sure.,98,h193286,True
+replay_099,8,153,memory,mem_free_8_ni64,avatar free text 'That thing maybe matters but I am not sure.' became boundary; conflict_success=True,99,h728690,True
+replay_100,8,150,schedule,sched_free_8_ni64,day 8 boundary response with direct append,100,h230629,True
+replay_101,13,156,world,world_free_13_ka60,day=13;agent=ka60;intent=boundary;rows=26,101,h202076,True
+replay_102,13,157,utterance,free_13_ka60,No touch from me unless you give permission.,102,h215138,True
+replay_103,13,158,memory,mem_free_13_ka60,avatar free text 'No touch from me unless you give permission.' became boundary; conflict_success=True,103,h764894,True
+replay_104,13,155,schedule,sched_free_13_ka60,day 13 boundary response with direct append,104,h240843,True
+replay_105,13,161,world,world_free_13_mu61,day=13;agent=mu61;intent=help;rows=27,105,h175801,True
+replay_106,13,162,utterance,free_13_mu61,"I want to help repair tomorrow, but you choose the tool.",106,h292700,True
+replay_107,13,163,memory,mem_free_13_mu61,"avatar free text 'I want to help repair tomorrow, but you choose the too' became help; conflict_success=True",107,h826921,True
+replay_108,13,160,schedule,sched_free_13_mu61,day 13 help response with reschedule,108,h195949,True
+replay_109,13,166,world,world_free_13_lo62,day=13;agent=lo62;intent=trade;rows=28,109,h181794,True
+replay_110,13,167,utterance,free_13_lo62,Can we trade fairly at the market before the ritual?,110,h262943,True
+replay_111,13,168,memory,mem_free_13_lo62,avatar free text 'Can we trade fairly at the market before the ritual?' became trade; conflict_success=True,111,h810883,True
+replay_112,13,165,schedule,sched_free_13_lo62,day 13 trade response with reschedule,112,h202348,True
+replay_113,13,171,world,world_free_13_sa63,day=13;agent=sa63;intent=apology;rows=29,113,h196163,True
+replay_114,13,172,utterance,free_13_sa63,Sorry I crowded the stair; I will ask first next time.,114,h271234,True
+replay_115,13,173,memory,mem_free_13_sa63,avatar free text 'Sorry I crowded the stair; I will ask first next time.' became apology; conflict_success=True,115,h859105,True
+replay_116,13,170,schedule,sched_free_13_sa63,day 13 apology response with direct append,116,h233870,True
+replay_117,13,176,world,world_free_13_ni64,day=13;agent=ni64;intent=boundary;rows=30,117,h202685,True
+replay_118,13,177,utterance,free_13_ni64,May I observe from the edge and not join the ritual?,118,h258780,True
+replay_119,13,178,memory,mem_free_13_ni64,avatar free text 'May I observe from the edge and not join the ritual?' became boundary; conflict_success=True,119,h849497,True
+replay_120,13,175,schedule,sched_free_13_ni64,day 13 boundary response with direct append,120,h241223,True
+replay_121,21,181,world,world_free_21_ka60,day=21;agent=ka60;intent=help;rows=31,121,h174012,True
+replay_122,21,182,utterance,free_21_ka60,"I want to help repair tomorrow, but you choose the tool.",122,h292222,True
+replay_123,21,183,memory,mem_free_21_ka60,"avatar free text 'I want to help repair tomorrow, but you choose the too' became help; conflict_success=True",123,h826419,True
+replay_124,21,180,schedule,sched_free_21_ka60,day 21 help response with reschedule,124,h195316,True
+replay_125,21,186,world,world_free_21_mu61,day=21;agent=mu61;intent=trade;rows=32,125,h181792,True
+replay_126,21,187,utterance,free_21_mu61,Can we trade fairly at the market before the ritual?,126,h263042,True
+replay_127,21,188,memory,mem_free_21_mu61,avatar free text 'Can we trade fairly at the market before the ritual?' became trade; conflict_success=True,127,h810987,True
+replay_128,21,185,schedule,sched_free_21_mu61,day 21 trade response with reschedule,128,h202437,True
+replay_129,21,191,world,world_free_21_lo62,day=21;agent=lo62;intent=apology;rows=33,129,h196167,True
+replay_130,21,192,utterance,free_21_lo62,Sorry I crowded the stair; I will ask first next time.,130,h271341,True
+replay_131,21,193,memory,mem_free_21_lo62,avatar free text 'Sorry I crowded the stair; I will ask first next time.' became apology; conflict_success=True,131,h859217,True
+replay_132,21,190,schedule,sched_free_21_lo62,day 21 apology response with direct append,132,h233967,True
+replay_133,21,196,world,world_free_21_sa63,day=21;agent=sa63;intent=boundary;rows=34,133,h202635,True
+replay_134,21,197,utterance,free_21_sa63,May I observe from the edge and not join the ritual?,134,h258675,True
+replay_135,21,198,memory,mem_free_21_sa63,avatar free text 'May I observe from the edge and not join the ritual?' became boundary; conflict_success=True,135,h849387,True
+replay_136,21,195,schedule,sched_free_21_sa63,day 21 boundary response with direct append,136,h241058,True
+replay_137,21,201,world,world_free_21_ni64,day=21;agent=ni64;intent=goal;rows=35,137,h174870,True
+replay_138,21,202,utterance,free_21_ni64,What is your goal today if the rain gets worse?,138,h228117,True
+replay_139,21,203,memory,mem_free_21_ni64,avatar free text 'What is your goal today if the rain gets worse?' became goal; conflict_success=True,139,h736468,True
+replay_140,21,200,schedule,sched_free_21_ni64,day 21 goal response with direct append,140,h211667,True

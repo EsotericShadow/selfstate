@@ -1,0 +1,227 @@
+{
+  "boundary": "functional thousands-year pre-avatar scaffold; no consciousness claim",
+  "epoch_model": "compressed years + lineage divergence + technology inheritance + welfare survival + avatar ceremony gates",
+  "lineages": {
+    "Hearthline": {
+      "base_tokens": [
+        "lum",
+        "ori",
+        "sova"
+      ],
+      "care": 0.84,
+      "freq": 2.31,
+      "guard": 0.72,
+      "origin": "Hearthnest",
+      "tech_bias": "hearth ceramics"
+    },
+    "Ledgerline": {
+      "base_tokens": [
+        "nari",
+        "vonn",
+        "sova"
+      ],
+      "care": 0.59,
+      "freq": 2.06,
+      "guard": 0.8,
+      "origin": "Quietledger",
+      "tech_bias": "seed ledgers"
+    },
+    "Marketline": {
+      "base_tokens": [
+        "melo",
+        "keth",
+        "vonn"
+      ],
+      "care": 0.67,
+      "freq": 2.47,
+      "guard": 0.63,
+      "origin": "Marketroof",
+      "tech_bias": "measure weights"
+    },
+    "Orchardline": {
+      "base_tokens": [
+        "lum",
+        "melo",
+        "tek"
+      ],
+      "care": 0.71,
+      "freq": 2.4,
+      "guard": 0.61,
+      "origin": "Orchardring",
+      "tech_bias": "water terraces"
+    },
+    "Rainline": {
+      "base_tokens": [
+        "sova",
+        "vonn",
+        "nari"
+      ],
+      "care": 0.61,
+      "freq": 2.12,
+      "guard": 0.75,
+      "origin": "Rainloft",
+      "tech_bias": "weather bells"
+    },
+    "Routeline": {
+      "base_tokens": [
+        "tek",
+        "nari",
+        "keth"
+      ],
+      "care": 0.63,
+      "freq": 2.17,
+      "guard": 0.7,
+      "origin": "Routehall",
+      "tech_bias": "stone bridge joints"
+    }
+  },
+  "report": 247,
+  "sample_ticks": [
+    {
+      "epoch_index": 1,
+      "private_epoch_hint": "hash=b0282d9b6e9413; welfare=1.00; flower=147.0",
+      "public_epoch_marker": "year 0-50: mild growth; pop=203",
+      "public_gate_marker": "pre-ceremony accumulating",
+      "public_lineage_marker": "Rainline branch rainline-vonn-01; div=0.30",
+      "public_technology_marker": "Ledgerline seed ledgers; stage=tool; rel=0.70",
+      "replay_checkpoint": "r247-year0050",
+      "trace_integrity_token": "r247:1:79bf40671b",
+      "welfare_marker": "welfare-survives",
+      "year_end": 50
+    },
+    {
+      "epoch_index": 2,
+      "private_epoch_hint": "hash=4c05b8dc7f40ee; welfare=1.00; flower=294.0",
+      "public_epoch_marker": "year 50-100: wet cold; pop=226",
+      "public_gate_marker": "pre-ceremony accumulating",
+      "public_lineage_marker": "Rainline branch rainline-nari-02; div=0.31",
+      "public_technology_marker": "Ledgerline seed ledgers; stage=tool; rel=0.68",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r247:2:eba1c627c2",
+      "welfare_marker": "welfare-survives",
+      "year_end": 100
+    },
+    {
+      "epoch_index": 3,
+      "private_epoch_hint": "hash=b7ab99c0086908; welfare=1.00; flower=81.0",
+      "public_epoch_marker": "year 100-150: market expansion; pop=249",
+      "public_gate_marker": "pre-ceremony accumulating",
+      "public_lineage_marker": "Rainline branch rainline-sova-03; div=0.31",
+      "public_technology_marker": "Ledgerline seed ledgers; stage=tool; rel=0.70",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r247:3:756f5ec385",
+      "welfare_marker": "welfare-survives",
+      "year_end": 150
+    },
+    {
+      "epoch_index": 4,
+      "private_epoch_hint": "hash=a43a13ebf99753; welfare=1.00; flower=228.0",
+      "public_epoch_marker": "year 150-200: dry repair years; pop=272",
+      "public_gate_marker": "pre-ceremony accumulating",
+      "public_lineage_marker": "Rainline branch rainline-vonn-04; div=0.32",
+      "public_technology_marker": "Ledgerline seed ledgers; stage=tool; rel=0.71",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r247:4:15af4ea522",
+      "welfare_marker": "welfare-survives",
+      "year_end": 200
+    },
+    {
+      "epoch_index": 5,
+      "private_epoch_hint": "hash=cc4303b4019b99; welfare=1.00; flower=15.0",
+      "public_epoch_marker": "year 200-250: ritual consolidation; pop=294",
+      "public_gate_marker": "pre-ceremony accumulating",
+      "public_lineage_marker": "Rainline branch rainline-nari-05; div=0.33",
+      "public_technology_marker": "Ledgerline seed ledgers; stage=tool; rel=0.71",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r247:5:c8680b915c",
+      "welfare_marker": "welfare-survives",
+      "year_end": 250
+    },
+    {
+      "epoch_index": 6,
+      "private_epoch_hint": "hash=f5246152ef0d38; welfare=1.00; flower=162.0",
+      "public_epoch_marker": "year 250-300: storm memory; pop=317",
+      "public_gate_marker": "pre-ceremony accumulating",
+      "public_lineage_marker": "Rainline branch rainline-sova-06; div=0.35",
+      "public_technology_marker": "Ledgerline seed ledgers; stage=tool; rel=0.69",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r247:6:5c858e617c",
+      "welfare_marker": "welfare-survives",
+      "year_end": 300
+    },
+    {
+      "epoch_index": 7,
+      "private_epoch_hint": "hash=d80cd659fc3ad0; welfare=1.00; flower=309.1",
+      "public_epoch_marker": "year 300-350: mild growth; pop=339",
+      "public_gate_marker": "pre-ceremony accumulating",
+      "public_lineage_marker": "Rainline branch rainline-vonn-07; div=0.35",
+      "public_technology_marker": "Ledgerline seed ledgers; stage=tool; rel=0.71",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r247:7:c5c4f4a3b6",
+      "welfare_marker": "welfare-survives",
+      "year_end": 350
+    },
+    {
+      "epoch_index": 8,
+      "private_epoch_hint": "hash=3a7a41147abdb0; welfare=1.00; flower=96.1",
+      "public_epoch_marker": "year 350-400: wet cold; pop=360",
+      "public_gate_marker": "pre-ceremony accumulating",
+      "public_lineage_marker": "Rainline branch rainline-nari-08; div=0.36",
+      "public_technology_marker": "Ledgerline seed ledgers; stage=tool; rel=0.70",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r247:8:594343b3f8",
+      "welfare_marker": "welfare-survives",
+      "year_end": 400
+    },
+    {
+      "epoch_index": 9,
+      "private_epoch_hint": "hash=f5f64e0fcf3b37; welfare=1.00; flower=243.1",
+      "public_epoch_marker": "year 400-450: market expansion; pop=381",
+      "public_gate_marker": "pre-ceremony accumulating",
+      "public_lineage_marker": "Rainline branch rainline-sova-09; div=0.36",
+      "public_technology_marker": "Ledgerline seed ledgers; stage=tool; rel=0.72",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r247:9:54fe3c8457",
+      "welfare_marker": "welfare-survives",
+      "year_end": 450
+    },
+    {
+      "epoch_index": 10,
+      "private_epoch_hint": "hash=77596c1ab8beaa; welfare=1.00; flower=30.1",
+      "public_epoch_marker": "year 450-500: dry repair years; pop=402",
+      "public_gate_marker": "pre-ceremony accumulating",
+      "public_lineage_marker": "Rainline branch rainline-vonn-10; div=0.37",
+      "public_technology_marker": "Ledgerline seed ledgers; stage=tool; rel=0.72",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r247:10:0d7d055237",
+      "welfare_marker": "welfare-survives",
+      "year_end": 500
+    },
+    {
+      "epoch_index": 11,
+      "private_epoch_hint": "hash=0d66e95539aed7; welfare=1.00; flower=177.1",
+      "public_epoch_marker": "year 500-550: ritual consolidation; pop=422",
+      "public_gate_marker": "pre-ceremony accumulating",
+      "public_lineage_marker": "Rainline branch rainline-nari-11; div=0.38",
+      "public_technology_marker": "Ledgerline seed ledgers; stage=tool; rel=0.73",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r247:11:fce8eaf6d0",
+      "welfare_marker": "welfare-survives",
+      "year_end": 550
+    },
+    {
+      "epoch_index": 12,
+      "private_epoch_hint": "hash=9eb62f1c21f261; welfare=1.00; flower=324.1",
+      "public_epoch_marker": "year 550-600: storm memory; pop=441",
+      "public_gate_marker": "pre-ceremony accumulating",
+      "public_lineage_marker": "Rainline branch rainline-sova-12; div=0.39",
+      "public_technology_marker": "Ledgerline seed ledgers; stage=tool; rel=0.72",
+      "replay_checkpoint": "r247-year0600",
+      "trace_integrity_token": "r247:12:8b0f99cd36",
+      "welfare_marker": "welfare-survives",
+      "year_end": 600
+    }
+  ],
+  "seed": 20260860,
+  "simulated_years": 4200
+}

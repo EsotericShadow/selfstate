@@ -1,0 +1,60 @@
+{
+  "ablations": {
+    "no_avatar_entry_gates": 0.672949,
+    "no_epoch_compression": 0.732949,
+    "no_frequency_flower_epoch_rhythm": 0.902949,
+    "no_language_grounding": 0.712949,
+    "no_multi_lineage_divergence": 0.702949,
+    "no_replay_epoch_integrity": 0.832949,
+    "no_technology_inheritance": 0.692949,
+    "no_technology_welfare_alignment": 0.762949,
+    "no_thousands_year_span": 0.652949,
+    "no_welfare_epoch_survival": 0.642949
+  },
+  "counts": {
+    "avatar_ceremony_gate_frames": 7,
+    "browser_world_v7_ticks": 84,
+    "epoch_compression_frames": 84,
+    "lineage_divergence_frames": 504,
+    "replay_epoch_frames": 84,
+    "technology_inheritance_frames": 504,
+    "welfare_epoch_guardrail_frames": 504
+  },
+  "honest_limits": [
+    "This is deterministic thousands-year epoch compression, not subjective consciousness.",
+    "Lineage divergence and proto-language branches are rule-based scaffolds, not autonomous natural language emergence.",
+    "Technology inheritance is simulated continuity, not a complete economy or physics engine.",
+    "Avatar-entry ceremony gates are functional constraints, not real consent or moral standing.",
+    "Welfare survival guardrails are bounded checks, not proof of welfare experience.",
+    "Frequency and flower phase are rhythm variables, not metaphysical proof.",
+    "The browser world v7 visualization is a scaffold, not a finished 3D game engine."
+  ],
+  "metrics": {
+    "avatar_entry_gate_completeness": 1.0,
+    "browser_world_v7_surface_available": 1.0,
+    "browser_world_v7_thousands_year_epoch_readiness": 0.972949,
+    "ceremony_gate_readiness": 0.947953,
+    "epoch_compression_integrity": 1.0,
+    "frequency_flower_epoch_rhythm": 1.0,
+    "language_divergence_without_collapse": 1.0,
+    "mean_epoch_channel_score": 0.976839,
+    "multi_lineage_divergence": 0.969178,
+    "private_epoch_trace_boundary": 1.0,
+    "replay_checkpoint_coverage": 1.0,
+    "replay_epoch_integrity": 1.0,
+    "ritual_boundary_retention": 0.843209,
+    "source_generational_inheritance_continuity": 1.0,
+    "technology_inheritance_continuity": 0.845927,
+    "technology_welfare_alignment": 1.0,
+    "thousands_year_span_coverage": 1.0,
+    "weakest_channel_score": 0.843209,
+    "welfare_clause_coverage": 1.0,
+    "welfare_guardrail_epoch_survival": 1
+  },
+  "name": "SSRM-3D Browser World v7 Thousands-Year Pre-Avatar Epoch Bridge",
+  "next_gate": "browser world v8 with post-epoch playable avatar-entry ceremony, live local movement, inspectable lineage histories, and agent responses conditioned by thousands-year culture",
+  "report": 247,
+  "seed": 20260860,
+  "source_results": "artifacts/ssrm_3d_browser_world_v6_generational_cultural_inheritance_bridge_results.json",
+  "verdict": "pass"
+}

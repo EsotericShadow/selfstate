@@ -1,0 +1,8 @@
+gate_id,epoch_index,year,gate_name,passed,gate_score,evidence,failure_mode_if_absent
+1,84,4200,thousands_year_span,True,1.0,epoch reaches multi-thousand-year pre-avatar age,avatar enters too early
+2,84,4200,lineage_divergence,True,0.864161,lineages diverged into distinct branches,culture remains shallow and uniform
+3,84,4200,semantic_retention,True,0.874618,meaning survives language divergence,language drift loses grounding
+4,84,4200,technology_inheritance,True,0.998881,technologies survive maintenance and teaching,tools reset between eras
+5,84,4200,welfare_survival,True,1,welfare clauses survive epoch compression,distress or coercion becomes spectacle
+6,84,4200,ceremony_consent_boundary,True,0.898008,avatar-entry ceremony includes boundary clauses,avatar entry overrides local society
+7,84,4200,replay_trace,True,1.0,epoch replay carries final ceremony state,ceremony cannot be audited

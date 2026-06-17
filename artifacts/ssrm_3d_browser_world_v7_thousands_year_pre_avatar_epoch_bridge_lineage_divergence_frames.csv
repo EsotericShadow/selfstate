@@ -1,0 +1,505 @@
+epoch_index,lineage,language_branch,divergence_index,mutual_intelligibility,semantic_retention,ritual_continuity,boundary_clause_retention,lineage_story
+1,Hearthline,hearthline-ori-01,0.136988,0.989665,1.0,0.809299,0.886751,Hearthline diverges through hearth ceramics while retaining lum meaning.
+1,Routeline,routeline-nari-01,0.168988,0.959425,0.999582,0.788299,0.922551,Routeline diverges through stone bridge joints while retaining tek meaning.
+1,Marketline,marketline-keth-01,0.200988,0.949185,0.986822,0.792299,0.871851,Marketline diverges through measure weights while retaining melo meaning.
+1,Ledgerline,ledgerline-vonn-01,0.232988,0.929345,0.998062,0.784299,0.932351,Ledgerline diverges through seed ledgers while retaining nari meaning.
+1,Orchardline,orchardline-melo-01,0.264988,0.925505,0.973302,0.796299,0.866051,Orchardline diverges through water terraces while retaining lum meaning.
+1,Rainline,rainline-vonn-01,0.296988,0.904065,0.981542,0.786299,0.922651,Rainline diverges through weather bells while retaining sova meaning.
+2,Hearthline,hearthline-sova-02,0.152452,0.98317,1.0,0.797037,0.885977,Hearthline diverges through hearth ceramics while retaining lum meaning.
+2,Routeline,routeline-keth-02,0.184452,0.95293,0.996799,0.776037,0.921777,Routeline diverges through stone bridge joints while retaining tek meaning.
+2,Marketline,marketline-vonn-02,0.216452,0.94269,0.984039,0.780037,0.871077,Marketline diverges through measure weights while retaining melo meaning.
+2,Ledgerline,ledgerline-sova-02,0.248452,0.92285,0.995279,0.772037,0.931577,Ledgerline diverges through seed ledgers while retaining nari meaning.
+2,Orchardline,orchardline-tek-02,0.280452,0.91901,0.970519,0.784037,0.865277,Orchardline diverges through water terraces while retaining lum meaning.
+2,Rainline,rainline-nari-02,0.312452,0.89757,0.978759,0.774037,0.921877,Rainline diverges through weather bells while retaining sova meaning.
+3,Hearthline,hearthline-lum-03,0.154026,0.982509,1.0,0.806998,0.885899,Hearthline diverges through hearth ceramics while retaining lum meaning.
+3,Routeline,routeline-tek-03,0.186026,0.952269,0.996515,0.785998,0.921699,Routeline diverges through stone bridge joints while retaining tek meaning.
+3,Marketline,marketline-melo-03,0.218026,0.942029,0.983755,0.789998,0.870999,Marketline diverges through measure weights while retaining melo meaning.
+3,Ledgerline,ledgerline-nari-03,0.250026,0.922189,0.994995,0.781998,0.931499,Ledgerline diverges through seed ledgers while retaining nari meaning.
+3,Orchardline,orchardline-lum-03,0.282026,0.918349,0.970235,0.793998,0.865199,Orchardline diverges through water terraces while retaining lum meaning.
+3,Rainline,rainline-sova-03,0.314026,0.896909,0.978475,0.783998,0.921799,Rainline diverges through weather bells while retaining sova meaning.
+4,Hearthline,hearthline-ori-04,0.161936,0.979187,1.0,0.806822,0.885503,Hearthline diverges through hearth ceramics while retaining lum meaning.
+4,Routeline,routeline-nari-04,0.193936,0.948947,0.995092,0.785822,0.921303,Routeline diverges through stone bridge joints while retaining tek meaning.
+4,Marketline,marketline-keth-04,0.225936,0.938707,0.982332,0.789822,0.870603,Marketline diverges through measure weights while retaining melo meaning.
+4,Ledgerline,ledgerline-vonn-04,0.257936,0.918867,0.993572,0.781822,0.931103,Ledgerline diverges through seed ledgers while retaining nari meaning.
+4,Orchardline,orchardline-melo-04,0.289936,0.915027,0.968812,0.793822,0.864803,Orchardline diverges through water terraces while retaining lum meaning.
+4,Rainline,rainline-vonn-04,0.321936,0.893587,0.977052,0.783822,0.921403,Rainline diverges through weather bells while retaining sova meaning.
+5,Hearthline,hearthline-sova-05,0.170598,0.975549,1.0,0.855444,0.88507,Hearthline diverges through hearth ceramics while retaining lum meaning.
+5,Routeline,routeline-keth-05,0.202598,0.945309,0.993532,0.834444,0.92087,Routeline diverges through stone bridge joints while retaining tek meaning.
+5,Marketline,marketline-vonn-05,0.234598,0.935069,0.980772,0.838444,0.87017,Marketline diverges through measure weights while retaining melo meaning.
+5,Ledgerline,ledgerline-sova-05,0.266598,0.915229,0.992012,0.830444,0.93067,Ledgerline diverges through seed ledgers while retaining nari meaning.
+5,Orchardline,orchardline-tek-05,0.298598,0.911389,0.967252,0.842444,0.86437,Orchardline diverges through water terraces while retaining lum meaning.
+5,Rainline,rainline-nari-05,0.330598,0.889949,0.975492,0.832444,0.92097,Rainline diverges through weather bells while retaining sova meaning.
+6,Hearthline,hearthline-lum-06,0.185752,0.969184,0.998565,0.793677,0.884312,Hearthline diverges through hearth ceramics while retaining lum meaning.
+6,Routeline,routeline-tek-06,0.217752,0.938944,0.990805,0.772677,0.920112,Routeline diverges through stone bridge joints while retaining tek meaning.
+6,Marketline,marketline-melo-06,0.249752,0.928704,0.978045,0.776677,0.869412,Marketline diverges through measure weights while retaining melo meaning.
+6,Ledgerline,ledgerline-nari-06,0.281752,0.908864,0.989285,0.768677,0.929912,Ledgerline diverges through seed ledgers while retaining nari meaning.
+6,Orchardline,orchardline-lum-06,0.313752,0.905024,0.964525,0.780677,0.863612,Orchardline diverges through water terraces while retaining lum meaning.
+6,Rainline,rainline-sova-06,0.345752,0.883584,0.972765,0.770677,0.920212,Rainline diverges through weather bells while retaining sova meaning.
+7,Hearthline,hearthline-ori-07,0.186643,0.96881,0.998404,0.804731,0.884268,Hearthline diverges through hearth ceramics while retaining lum meaning.
+7,Routeline,routeline-nari-07,0.218643,0.93857,0.990644,0.783731,0.920068,Routeline diverges through stone bridge joints while retaining tek meaning.
+7,Marketline,marketline-keth-07,0.250643,0.92833,0.977884,0.787731,0.869368,Marketline diverges through measure weights while retaining melo meaning.
+7,Ledgerline,ledgerline-vonn-07,0.282643,0.90849,0.989124,0.779731,0.929868,Ledgerline diverges through seed ledgers while retaining nari meaning.
+7,Orchardline,orchardline-melo-07,0.314643,0.90465,0.964364,0.791731,0.863568,Orchardline diverges through water terraces while retaining lum meaning.
+7,Rainline,rainline-vonn-07,0.346643,0.88321,0.972604,0.781731,0.920168,Rainline diverges through weather bells while retaining sova meaning.
+8,Hearthline,hearthline-sova-08,0.201942,0.962385,0.995651,0.792734,0.883503,Hearthline diverges through hearth ceramics while retaining lum meaning.
+8,Routeline,routeline-keth-08,0.233942,0.932145,0.987891,0.771734,0.919303,Routeline diverges through stone bridge joints while retaining tek meaning.
+8,Marketline,marketline-vonn-08,0.265942,0.921905,0.975131,0.775734,0.868603,Marketline diverges through measure weights while retaining melo meaning.
+8,Ledgerline,ledgerline-sova-08,0.297942,0.902065,0.986371,0.767734,0.929103,Ledgerline diverges through seed ledgers while retaining nari meaning.
+8,Orchardline,orchardline-tek-08,0.329942,0.898225,0.961611,0.779734,0.862803,Orchardline diverges through water terraces while retaining lum meaning.
+8,Rainline,rainline-nari-08,0.361942,0.876785,0.969851,0.769734,0.919403,Rainline diverges through weather bells while retaining sova meaning.
+9,Hearthline,hearthline-lum-09,0.20348,0.961738,0.995374,0.802751,0.883426,Hearthline diverges through hearth ceramics while retaining lum meaning.
+9,Routeline,routeline-tek-09,0.23548,0.931498,0.987614,0.781751,0.919226,Routeline diverges through stone bridge joints while retaining tek meaning.
+9,Marketline,marketline-melo-09,0.26748,0.921258,0.974854,0.785751,0.868526,Marketline diverges through measure weights while retaining melo meaning.
+9,Ledgerline,ledgerline-nari-09,0.29948,0.901418,0.986094,0.777751,0.929026,Ledgerline diverges through seed ledgers while retaining nari meaning.
+9,Orchardline,orchardline-lum-09,0.33148,0.897578,0.961334,0.789751,0.862726,Orchardline diverges through water terraces while retaining lum meaning.
+9,Rainline,rainline-sova-09,0.36348,0.876138,0.969574,0.779751,0.919326,Rainline diverges through weather bells while retaining sova meaning.
+10,Hearthline,hearthline-ori-10,0.210686,0.958712,0.994077,0.803702,0.883066,Hearthline diverges through hearth ceramics while retaining lum meaning.
+10,Routeline,routeline-nari-10,0.242686,0.928472,0.986317,0.782702,0.918866,Routeline diverges through stone bridge joints while retaining tek meaning.
+10,Marketline,marketline-keth-10,0.274686,0.918232,0.973557,0.786702,0.868166,Marketline diverges through measure weights while retaining melo meaning.
+10,Ledgerline,ledgerline-vonn-10,0.306686,0.898392,0.984797,0.778702,0.928666,Ledgerline diverges through seed ledgers while retaining nari meaning.
+10,Orchardline,orchardline-melo-10,0.338686,0.894552,0.960037,0.790702,0.862366,Orchardline diverges through water terraces while retaining lum meaning.
+10,Rainline,rainline-vonn-10,0.370686,0.873112,0.968277,0.780702,0.918966,Rainline diverges through weather bells while retaining sova meaning.
+11,Hearthline,hearthline-sova-11,0.218949,0.955241,0.992589,0.852962,0.882653,Hearthline diverges through hearth ceramics while retaining lum meaning.
+11,Routeline,routeline-keth-11,0.250949,0.925001,0.984829,0.831962,0.918453,Routeline diverges through stone bridge joints while retaining tek meaning.
+11,Marketline,marketline-vonn-11,0.282949,0.914761,0.972069,0.835962,0.867753,Marketline diverges through measure weights while retaining melo meaning.
+11,Ledgerline,ledgerline-sova-11,0.314949,0.894921,0.983309,0.827962,0.928253,Ledgerline diverges through seed ledgers while retaining nari meaning.
+11,Orchardline,orchardline-tek-11,0.346949,0.891081,0.958549,0.839962,0.861953,Orchardline diverges through water terraces while retaining lum meaning.
+11,Rainline,rainline-nari-11,0.378949,0.869641,0.966789,0.829962,0.918553,Rainline diverges through weather bells while retaining sova meaning.
+12,Hearthline,hearthline-lum-12,0.233203,0.949255,0.990023,0.792636,0.88194,Hearthline diverges through hearth ceramics while retaining lum meaning.
+12,Routeline,routeline-tek-12,0.265203,0.919015,0.982263,0.771636,0.91774,Routeline diverges through stone bridge joints while retaining tek meaning.
+12,Marketline,marketline-melo-12,0.297203,0.908775,0.969503,0.775636,0.86704,Marketline diverges through measure weights while retaining melo meaning.
+12,Ledgerline,ledgerline-nari-12,0.329203,0.888935,0.980743,0.767636,0.92754,Ledgerline diverges through seed ledgers while retaining nari meaning.
+12,Orchardline,orchardline-lum-12,0.361203,0.885095,0.955983,0.779636,0.86124,Orchardline diverges through water terraces while retaining lum meaning.
+12,Rainline,rainline-sova-12,0.393203,0.863655,0.964223,0.769636,0.91784,Rainline diverges through weather bells while retaining sova meaning.
+13,Hearthline,hearthline-ori-13,0.234259,0.948811,0.989833,0.803426,0.881887,Hearthline diverges through hearth ceramics while retaining lum meaning.
+13,Routeline,routeline-nari-13,0.266259,0.918571,0.982073,0.782426,0.917687,Routeline diverges through stone bridge joints while retaining tek meaning.
+13,Marketline,marketline-keth-13,0.298259,0.908331,0.969313,0.786426,0.866987,Marketline diverges through measure weights while retaining melo meaning.
+13,Ledgerline,ledgerline-vonn-13,0.330259,0.888491,0.980553,0.778426,0.927487,Ledgerline diverges through seed ledgers while retaining nari meaning.
+13,Orchardline,orchardline-melo-13,0.362259,0.884651,0.955793,0.790426,0.861187,Orchardline diverges through water terraces while retaining lum meaning.
+13,Rainline,rainline-vonn-13,0.394259,0.863211,0.964033,0.780426,0.917787,Rainline diverges through weather bells while retaining sova meaning.
+14,Hearthline,hearthline-sova-14,0.248883,0.942669,0.987201,0.792507,0.881156,Hearthline diverges through hearth ceramics while retaining lum meaning.
+14,Routeline,routeline-keth-14,0.280883,0.912429,0.979441,0.771507,0.916956,Routeline diverges through stone bridge joints while retaining tek meaning.
+14,Marketline,marketline-vonn-14,0.312883,0.902189,0.966681,0.775507,0.866256,Marketline diverges through measure weights while retaining melo meaning.
+14,Ledgerline,ledgerline-sova-14,0.344883,0.882349,0.977921,0.767507,0.926756,Ledgerline diverges through seed ledgers while retaining nari meaning.
+14,Orchardline,orchardline-tek-14,0.376883,0.878509,0.953161,0.779507,0.860456,Orchardline diverges through water terraces while retaining lum meaning.
+14,Rainline,rainline-nari-14,0.408883,0.857069,0.961401,0.769507,0.917056,Rainline diverges through weather bells while retaining sova meaning.
+15,Hearthline,hearthline-lum-15,0.249519,0.942402,0.987087,0.803969,0.881124,Hearthline diverges through hearth ceramics while retaining lum meaning.
+15,Routeline,routeline-tek-15,0.281519,0.912162,0.979327,0.782969,0.916924,Routeline diverges through stone bridge joints while retaining tek meaning.
+15,Marketline,marketline-melo-15,0.313519,0.901922,0.966567,0.786969,0.866224,Marketline diverges through measure weights while retaining melo meaning.
+15,Ledgerline,ledgerline-nari-15,0.345519,0.882082,0.977807,0.778969,0.926724,Ledgerline diverges through seed ledgers while retaining nari meaning.
+15,Orchardline,orchardline-lum-15,0.377519,0.878242,0.953047,0.790969,0.860424,Orchardline diverges through water terraces while retaining lum meaning.
+15,Rainline,rainline-sova-15,0.409519,0.856802,0.961287,0.780969,0.917024,Rainline diverges through weather bells while retaining sova meaning.
+16,Hearthline,hearthline-ori-16,0.257266,0.939148,0.985692,0.804054,0.880737,Hearthline diverges through hearth ceramics while retaining lum meaning.
+16,Routeline,routeline-nari-16,0.289266,0.908908,0.977932,0.783054,0.916537,Routeline diverges through stone bridge joints while retaining tek meaning.
+16,Marketline,marketline-keth-16,0.321266,0.898668,0.965172,0.787054,0.865837,Marketline diverges through measure weights while retaining melo meaning.
+16,Ledgerline,ledgerline-vonn-16,0.353266,0.878828,0.976412,0.779054,0.926337,Ledgerline diverges through seed ledgers while retaining nari meaning.
+16,Orchardline,orchardline-melo-16,0.385266,0.874988,0.951652,0.791054,0.860037,Orchardline diverges through water terraces while retaining lum meaning.
+16,Rainline,rainline-vonn-16,0.417266,0.853548,0.959892,0.781054,0.916637,Rainline diverges through weather bells while retaining sova meaning.
+17,Hearthline,hearthline-sova-17,0.263729,0.936434,0.984529,0.856193,0.880414,Hearthline diverges through hearth ceramics while retaining lum meaning.
+17,Routeline,routeline-keth-17,0.295729,0.906194,0.976769,0.835193,0.916214,Routeline diverges through stone bridge joints while retaining tek meaning.
+17,Marketline,marketline-vonn-17,0.327729,0.895954,0.964009,0.839193,0.865514,Marketline diverges through measure weights while retaining melo meaning.
+17,Ledgerline,ledgerline-sova-17,0.359729,0.876114,0.975249,0.831193,0.926014,Ledgerline diverges through seed ledgers while retaining nari meaning.
+17,Orchardline,orchardline-tek-17,0.391729,0.872274,0.950489,0.843193,0.859714,Orchardline diverges through water terraces while retaining lum meaning.
+17,Rainline,rainline-nari-17,0.423729,0.850834,0.958729,0.833193,0.916314,Rainline diverges through weather bells while retaining sova meaning.
+18,Hearthline,hearthline-lum-18,0.278652,0.930166,0.981843,0.794796,0.879667,Hearthline diverges through hearth ceramics while retaining lum meaning.
+18,Routeline,routeline-tek-18,0.310652,0.899926,0.974083,0.773796,0.915467,Routeline diverges through stone bridge joints while retaining tek meaning.
+18,Marketline,marketline-melo-18,0.342652,0.889686,0.961323,0.777796,0.864767,Marketline diverges through measure weights while retaining melo meaning.
+18,Ledgerline,ledgerline-nari-18,0.374652,0.869846,0.972563,0.769796,0.925267,Ledgerline diverges through seed ledgers while retaining nari meaning.
+18,Orchardline,orchardline-lum-18,0.406652,0.866006,0.947803,0.781796,0.858967,Orchardline diverges through water terraces while retaining lum meaning.
+18,Rainline,rainline-sova-18,0.438652,0.844566,0.956043,0.771796,0.915567,Rainline diverges through weather bells while retaining sova meaning.
+19,Hearthline,hearthline-ori-19,0.279203,0.929935,0.981744,0.806396,0.87964,Hearthline diverges through hearth ceramics while retaining lum meaning.
+19,Routeline,routeline-nari-19,0.311203,0.899695,0.973984,0.785396,0.91544,Routeline diverges through stone bridge joints while retaining tek meaning.
+19,Marketline,marketline-keth-19,0.343203,0.889455,0.961224,0.789396,0.86474,Marketline diverges through measure weights while retaining melo meaning.
+19,Ledgerline,ledgerline-vonn-19,0.375203,0.869615,0.972464,0.781396,0.92524,Ledgerline diverges through seed ledgers while retaining nari meaning.
+19,Orchardline,orchardline-melo-19,0.407203,0.865775,0.947704,0.793396,0.85894,Orchardline diverges through water terraces while retaining lum meaning.
+19,Rainline,rainline-vonn-19,0.439203,0.844335,0.955944,0.783396,0.91554,Rainline diverges through weather bells while retaining sova meaning.
+20,Hearthline,hearthline-sova-20,0.293391,0.923976,0.97919,0.796174,0.87893,Hearthline diverges through hearth ceramics while retaining lum meaning.
+20,Routeline,routeline-keth-20,0.325391,0.893736,0.97143,0.775174,0.91473,Routeline diverges through stone bridge joints while retaining tek meaning.
+20,Marketline,marketline-vonn-20,0.357391,0.883496,0.95867,0.779174,0.86403,Marketline diverges through measure weights while retaining melo meaning.
+20,Ledgerline,ledgerline-sova-20,0.389391,0.863656,0.96991,0.771174,0.92453,Ledgerline diverges through seed ledgers while retaining nari meaning.
+20,Orchardline,orchardline-tek-20,0.421391,0.859816,0.94515,0.783174,0.85823,Orchardline diverges through water terraces while retaining lum meaning.
+20,Rainline,rainline-nari-20,0.453391,0.838376,0.95339,0.773174,0.91483,Rainline diverges through weather bells while retaining sova meaning.
+21,Hearthline,hearthline-lum-21,0.293712,0.923841,0.979132,0.808141,0.878914,Hearthline diverges through hearth ceramics while retaining lum meaning.
+21,Routeline,routeline-tek-21,0.325712,0.893601,0.971372,0.787141,0.914714,Routeline diverges through stone bridge joints while retaining tek meaning.
+21,Marketline,marketline-melo-21,0.357712,0.883361,0.958612,0.791141,0.864014,Marketline diverges through measure weights while retaining melo meaning.
+21,Ledgerline,ledgerline-nari-21,0.389712,0.863521,0.969852,0.783141,0.924514,Ledgerline diverges through seed ledgers while retaining nari meaning.
+21,Orchardline,orchardline-lum-21,0.421712,0.859681,0.945092,0.795141,0.858214,Orchardline diverges through water terraces while retaining lum meaning.
+21,Rainline,rainline-sova-21,0.453712,0.838241,0.953332,0.785141,0.914814,Rainline diverges through weather bells while retaining sova meaning.
+22,Hearthline,hearthline-ori-22,0.300266,0.921088,0.977952,0.810134,0.878587,Hearthline diverges through hearth ceramics while retaining lum meaning.
+22,Routeline,routeline-nari-22,0.332266,0.890848,0.970192,0.789134,0.914387,Routeline diverges through stone bridge joints while retaining tek meaning.
+22,Marketline,marketline-keth-22,0.364266,0.880608,0.957432,0.793134,0.863687,Marketline diverges through measure weights while retaining melo meaning.
+22,Ledgerline,ledgerline-vonn-22,0.396266,0.860768,0.968672,0.785134,0.924187,Ledgerline diverges through seed ledgers while retaining nari meaning.
+22,Orchardline,orchardline-melo-22,0.428266,0.856928,0.943912,0.797134,0.857887,Orchardline diverges through water terraces while retaining lum meaning.
+22,Rainline,rainline-vonn-22,0.460266,0.835488,0.952152,0.787134,0.914487,Rainline diverges through weather bells while retaining sova meaning.
+23,Hearthline,hearthline-sova-23,0.307766,0.917938,0.976602,0.860615,0.878212,Hearthline diverges through hearth ceramics while retaining lum meaning.
+23,Routeline,routeline-keth-23,0.339766,0.887698,0.968842,0.839615,0.914012,Routeline diverges through stone bridge joints while retaining tek meaning.
+23,Marketline,marketline-vonn-23,0.371766,0.877458,0.956082,0.843615,0.863312,Marketline diverges through measure weights while retaining melo meaning.
+23,Ledgerline,ledgerline-sova-23,0.403766,0.857618,0.967322,0.835615,0.923812,Ledgerline diverges through seed ledgers while retaining nari meaning.
+23,Orchardline,orchardline-tek-23,0.435766,0.853778,0.942562,0.847615,0.857512,Orchardline diverges through water terraces while retaining lum meaning.
+23,Rainline,rainline-nari-23,0.467766,0.832338,0.950802,0.837615,0.914112,Rainline diverges through weather bells while retaining sova meaning.
+24,Hearthline,hearthline-lum-24,0.321807,0.912041,0.974075,0.800628,0.87751,Hearthline diverges through hearth ceramics while retaining lum meaning.
+24,Routeline,routeline-tek-24,0.353807,0.881801,0.966315,0.779628,0.91331,Routeline diverges through stone bridge joints while retaining tek meaning.
+24,Marketline,marketline-melo-24,0.385807,0.871561,0.953555,0.783628,0.86261,Marketline diverges through measure weights while retaining melo meaning.
+24,Ledgerline,ledgerline-nari-24,0.417807,0.851721,0.964795,0.775628,0.92311,Ledgerline diverges through seed ledgers while retaining nari meaning.
+24,Orchardline,orchardline-lum-24,0.449807,0.847881,0.940035,0.787628,0.85681,Orchardline diverges through water terraces while retaining lum meaning.
+24,Rainline,rainline-sova-24,0.481807,0.826441,0.948275,0.777628,0.91341,Rainline diverges through weather bells while retaining sova meaning.
+25,Hearthline,hearthline-ori-25,0.322078,0.911927,0.974026,0.812676,0.877496,Hearthline diverges through hearth ceramics while retaining lum meaning.
+25,Routeline,routeline-nari-25,0.354078,0.881687,0.966266,0.791676,0.913296,Routeline diverges through stone bridge joints while retaining tek meaning.
+25,Marketline,marketline-keth-25,0.386078,0.871447,0.953506,0.795676,0.862596,Marketline diverges through measure weights while retaining melo meaning.
+25,Ledgerline,ledgerline-vonn-25,0.418078,0.851607,0.964746,0.787676,0.923096,Ledgerline diverges through seed ledgers while retaining nari meaning.
+25,Orchardline,orchardline-melo-25,0.450078,0.847767,0.939986,0.799676,0.856796,Orchardline diverges through water terraces while retaining lum meaning.
+25,Rainline,rainline-vonn-25,0.482078,0.826327,0.948226,0.789676,0.913396,Rainline diverges through weather bells while retaining sova meaning.
+26,Hearthline,hearthline-sova-26,0.336138,0.906022,0.971495,0.802659,0.876793,Hearthline diverges through hearth ceramics while retaining lum meaning.
+26,Routeline,routeline-keth-26,0.368138,0.875782,0.963735,0.781659,0.912593,Routeline diverges through stone bridge joints while retaining tek meaning.
+26,Marketline,marketline-vonn-26,0.400138,0.865542,0.950975,0.785659,0.861893,Marketline diverges through measure weights while retaining melo meaning.
+26,Ledgerline,ledgerline-sova-26,0.432138,0.845702,0.962215,0.777659,0.922393,Ledgerline diverges through seed ledgers while retaining nari meaning.
+26,Orchardline,orchardline-tek-26,0.464138,0.841862,0.937455,0.789659,0.856093,Orchardline diverges through water terraces while retaining lum meaning.
+26,Rainline,rainline-nari-26,0.496138,0.820422,0.945695,0.779659,0.912693,Rainline diverges through weather bells while retaining sova meaning.
+27,Hearthline,hearthline-lum-27,0.336736,0.905771,0.971388,0.814183,0.876763,Hearthline diverges through hearth ceramics while retaining lum meaning.
+27,Routeline,routeline-tek-27,0.368736,0.875531,0.963628,0.793183,0.912563,Routeline diverges through stone bridge joints while retaining tek meaning.
+27,Marketline,marketline-melo-27,0.400736,0.865291,0.950868,0.797183,0.861863,Marketline diverges through measure weights while retaining melo meaning.
+27,Ledgerline,ledgerline-nari-27,0.432735,0.845451,0.962108,0.789183,0.922363,Ledgerline diverges through seed ledgers while retaining nari meaning.
+27,Orchardline,orchardline-lum-27,0.464736,0.841611,0.937348,0.801183,0.856063,Orchardline diverges through water terraces while retaining lum meaning.
+27,Rainline,rainline-sova-27,0.496736,0.820171,0.945588,0.791183,0.912663,Rainline diverges through weather bells while retaining sova meaning.
+28,Hearthline,hearthline-ori-28,0.344348,0.902574,0.970017,0.814484,0.876383,Hearthline diverges through hearth ceramics while retaining lum meaning.
+28,Routeline,routeline-nari-28,0.376348,0.872334,0.962257,0.793484,0.912183,Routeline diverges through stone bridge joints while retaining tek meaning.
+28,Marketline,marketline-keth-28,0.408348,0.862094,0.949497,0.797484,0.861483,Marketline diverges through measure weights while retaining melo meaning.
+28,Ledgerline,ledgerline-vonn-28,0.440348,0.842254,0.960737,0.789484,0.921983,Ledgerline diverges through seed ledgers while retaining nari meaning.
+28,Orchardline,orchardline-melo-28,0.472348,0.838414,0.935977,0.801484,0.855683,Orchardline diverges through water terraces while retaining lum meaning.
+28,Rainline,rainline-vonn-28,0.504348,0.816974,0.944217,0.791484,0.912283,Rainline diverges through weather bells while retaining sova meaning.
+29,Hearthline,hearthline-sova-29,0.351595,0.89953,0.968713,0.865368,0.87602,Hearthline diverges through hearth ceramics while retaining lum meaning.
+29,Routeline,routeline-keth-29,0.383595,0.86929,0.960953,0.844368,0.91182,Routeline diverges through stone bridge joints while retaining tek meaning.
+29,Marketline,marketline-vonn-29,0.415595,0.85905,0.948193,0.848368,0.86112,Marketline diverges through measure weights while retaining melo meaning.
+29,Ledgerline,ledgerline-sova-29,0.447595,0.83921,0.959433,0.840368,0.92162,Ledgerline diverges through seed ledgers while retaining nari meaning.
+29,Orchardline,orchardline-tek-29,0.479595,0.83537,0.934673,0.852368,0.85532,Orchardline diverges through water terraces while retaining lum meaning.
+29,Rainline,rainline-nari-29,0.511595,0.81393,0.942913,0.842368,0.91192,Rainline diverges through weather bells while retaining sova meaning.
+30,Hearthline,hearthline-lum-30,0.366035,0.893465,0.966114,0.804744,0.875298,Hearthline diverges through hearth ceramics while retaining lum meaning.
+30,Routeline,routeline-tek-30,0.398035,0.863225,0.958354,0.783744,0.911098,Routeline diverges through stone bridge joints while retaining tek meaning.
+30,Marketline,marketline-melo-30,0.430035,0.852985,0.945594,0.787744,0.860398,Marketline diverges through measure weights while retaining melo meaning.
+30,Ledgerline,ledgerline-nari-30,0.462035,0.833145,0.956834,0.779744,0.920898,Ledgerline diverges through seed ledgers while retaining nari meaning.
+30,Orchardline,orchardline-lum-30,0.494035,0.829305,0.932074,0.791744,0.854598,Orchardline diverges through water terraces while retaining lum meaning.
+30,Rainline,rainline-sova-30,0.526035,0.807865,0.940314,0.781744,0.911198,Rainline diverges through weather bells while retaining sova meaning.
+31,Hearthline,hearthline-ori-31,0.36717,0.892989,0.965909,0.815408,0.875241,Hearthline diverges through hearth ceramics while retaining lum meaning.
+31,Routeline,routeline-nari-31,0.39917,0.862749,0.958149,0.794408,0.911041,Routeline diverges through stone bridge joints while retaining tek meaning.
+31,Marketline,marketline-keth-31,0.43117,0.852509,0.945389,0.798408,0.860341,Marketline diverges through measure weights while retaining melo meaning.
+31,Ledgerline,ledgerline-vonn-31,0.46317,0.832669,0.956629,0.790408,0.920841,Ledgerline diverges through seed ledgers while retaining nari meaning.
+31,Orchardline,orchardline-melo-31,0.49517,0.828829,0.931869,0.802408,0.854541,Orchardline diverges through water terraces while retaining lum meaning.
+31,Rainline,rainline-vonn-31,0.52717,0.807389,0.940109,0.792408,0.911141,Rainline diverges through weather bells while retaining sova meaning.
+32,Hearthline,hearthline-sova-32,0.381955,0.886779,0.963248,0.804233,0.874502,Hearthline diverges through hearth ceramics while retaining lum meaning.
+32,Routeline,routeline-keth-32,0.413955,0.856539,0.955488,0.783233,0.910302,Routeline diverges through stone bridge joints while retaining tek meaning.
+32,Marketline,marketline-vonn-32,0.445955,0.846299,0.942728,0.787233,0.859602,Marketline diverges through measure weights while retaining melo meaning.
+32,Ledgerline,ledgerline-sova-32,0.477955,0.826459,0.953968,0.779233,0.920102,Ledgerline diverges through seed ledgers while retaining nari meaning.
+32,Orchardline,orchardline-tek-32,0.509955,0.822619,0.929208,0.791233,0.853802,Orchardline diverges through water terraces while retaining lum meaning.
+32,Rainline,rainline-nari-32,0.541955,0.801179,0.937448,0.781233,0.910402,Rainline diverges through weather bells while retaining sova meaning.
+33,Hearthline,hearthline-lum-33,0.382824,0.886414,0.963092,0.815321,0.874459,Hearthline diverges through hearth ceramics while retaining lum meaning.
+33,Routeline,routeline-tek-33,0.414824,0.856174,0.955332,0.794321,0.910259,Routeline diverges through stone bridge joints while retaining tek meaning.
+33,Marketline,marketline-melo-33,0.446824,0.845934,0.942572,0.798321,0.859559,Marketline diverges through measure weights while retaining melo meaning.
+33,Ledgerline,ledgerline-nari-33,0.478824,0.826094,0.953812,0.790321,0.920059,Ledgerline diverges through seed ledgers while retaining nari meaning.
+33,Orchardline,orchardline-lum-33,0.510824,0.822254,0.929052,0.802321,0.853759,Orchardline diverges through water terraces while retaining lum meaning.
+33,Rainline,rainline-sova-33,0.542824,0.800814,0.937292,0.792321,0.910359,Rainline diverges through weather bells while retaining sova meaning.
+34,Hearthline,hearthline-ori-34,0.390291,0.883278,0.961748,0.815854,0.874085,Hearthline diverges through hearth ceramics while retaining lum meaning.
+34,Routeline,routeline-nari-34,0.422291,0.853038,0.953988,0.794854,0.909885,Routeline diverges through stone bridge joints while retaining tek meaning.
+34,Marketline,marketline-keth-34,0.454291,0.842798,0.941228,0.798854,0.859185,Marketline diverges through measure weights while retaining melo meaning.
+34,Ledgerline,ledgerline-vonn-34,0.486291,0.822958,0.952468,0.790854,0.919685,Ledgerline diverges through seed ledgers while retaining nari meaning.
+34,Orchardline,orchardline-melo-34,0.518291,0.819118,0.927708,0.802854,0.853385,Orchardline diverges through water terraces while retaining lum meaning.
+34,Rainline,rainline-vonn-34,0.550291,0.797678,0.935948,0.792854,0.909985,Rainline diverges through weather bells while retaining sova meaning.
+35,Hearthline,hearthline-sova-35,0.398234,0.879942,0.960318,0.865626,0.873688,Hearthline diverges through hearth ceramics while retaining lum meaning.
+35,Routeline,routeline-keth-35,0.430234,0.849702,0.952558,0.844626,0.909488,Routeline diverges through stone bridge joints while retaining tek meaning.
+35,Marketline,marketline-vonn-35,0.462234,0.839462,0.939798,0.848626,0.858788,Marketline diverges through measure weights while retaining melo meaning.
+35,Ledgerline,ledgerline-sova-35,0.494234,0.819622,0.951038,0.840626,0.919288,Ledgerline diverges through seed ledgers while retaining nari meaning.
+35,Orchardline,orchardline-tek-35,0.526234,0.815782,0.926278,0.852626,0.852988,Orchardline diverges through water terraces while retaining lum meaning.
+35,Rainline,rainline-nari-35,0.558234,0.794342,0.934518,0.842626,0.909588,Rainline diverges through weather bells while retaining sova meaning.
+36,Hearthline,hearthline-lum-36,0.412696,0.873868,0.957715,0.804967,0.872965,Hearthline diverges through hearth ceramics while retaining lum meaning.
+36,Routeline,routeline-tek-36,0.444696,0.843628,0.949955,0.783967,0.908765,Routeline diverges through stone bridge joints while retaining tek meaning.
+36,Marketline,marketline-melo-36,0.476696,0.833388,0.937195,0.787967,0.858065,Marketline diverges through measure weights while retaining melo meaning.
+36,Ledgerline,ledgerline-nari-36,0.508696,0.813548,0.948435,0.779967,0.918565,Ledgerline diverges through seed ledgers while retaining nari meaning.
+36,Orchardline,orchardline-lum-36,0.540696,0.809708,0.923675,0.791967,0.852265,Orchardline diverges through water terraces while retaining lum meaning.
+36,Rainline,rainline-sova-36,0.572696,0.788268,0.931915,0.781967,0.908865,Rainline diverges through weather bells while retaining sova meaning.
+37,Hearthline,hearthline-ori-37,0.414308,0.873191,0.957425,0.814868,0.872885,Hearthline diverges through hearth ceramics while retaining lum meaning.
+37,Routeline,routeline-nari-37,0.446308,0.842951,0.949665,0.793868,0.908685,Routeline diverges through stone bridge joints while retaining tek meaning.
+37,Marketline,marketline-keth-37,0.478308,0.832711,0.936905,0.797868,0.857985,Marketline diverges through measure weights while retaining melo meaning.
+37,Ledgerline,ledgerline-vonn-37,0.510308,0.812871,0.948145,0.789868,0.918485,Ledgerline diverges through seed ledgers while retaining nari meaning.
+37,Orchardline,orchardline-melo-37,0.542308,0.809031,0.923385,0.801868,0.852185,Orchardline diverges through water terraces while retaining lum meaning.
+37,Rainline,rainline-vonn-37,0.574308,0.787591,0.931625,0.791868,0.908785,Rainline diverges through weather bells while retaining sova meaning.
+38,Hearthline,hearthline-sova-38,0.429418,0.866844,0.954705,0.803171,0.872129,Hearthline diverges through hearth ceramics while retaining lum meaning.
+38,Routeline,routeline-keth-38,0.461418,0.836604,0.946945,0.782171,0.907929,Routeline diverges through stone bridge joints while retaining tek meaning.
+38,Marketline,marketline-vonn-38,0.493418,0.826364,0.934185,0.786171,0.857229,Marketline diverges through measure weights while retaining melo meaning.
+38,Ledgerline,ledgerline-sova-38,0.525418,0.806524,0.945425,0.778171,0.917729,Ledgerline diverges through seed ledgers while retaining nari meaning.
+38,Orchardline,orchardline-tek-38,0.557418,0.802684,0.920665,0.790171,0.851429,Orchardline diverges through water terraces while retaining lum meaning.
+38,Rainline,rainline-nari-38,0.589418,0.781244,0.928905,0.780171,0.908029,Rainline diverges through weather bells while retaining sova meaning.
+39,Hearthline,hearthline-lum-39,0.431039,0.866164,0.954413,0.813058,0.872048,Hearthline diverges through hearth ceramics while retaining lum meaning.
+39,Routeline,routeline-tek-39,0.463039,0.835924,0.946653,0.792058,0.907848,Routeline diverges through stone bridge joints while retaining tek meaning.
+39,Marketline,marketline-melo-39,0.495039,0.825684,0.933893,0.796058,0.857148,Marketline diverges through measure weights while retaining melo meaning.
+39,Ledgerline,ledgerline-nari-39,0.527039,0.805844,0.945133,0.788058,0.917648,Ledgerline diverges through seed ledgers while retaining nari meaning.
+39,Orchardline,orchardline-lum-39,0.559039,0.802004,0.920373,0.800058,0.851348,Orchardline diverges through water terraces while retaining lum meaning.
+39,Rainline,rainline-sova-39,0.591039,0.780564,0.928613,0.790058,0.907948,Rainline diverges through weather bells while retaining sova meaning.
+40,Hearthline,hearthline-ori-40,0.438567,0.863002,0.953058,0.813493,0.871672,Hearthline diverges through hearth ceramics while retaining lum meaning.
+40,Routeline,routeline-nari-40,0.470567,0.832762,0.945298,0.792493,0.907472,Routeline diverges through stone bridge joints while retaining tek meaning.
+40,Marketline,marketline-keth-40,0.502567,0.822522,0.932538,0.796493,0.856772,Marketline diverges through measure weights while retaining melo meaning.
+40,Ledgerline,ledgerline-vonn-40,0.534567,0.802682,0.943778,0.788493,0.917272,Ledgerline diverges through seed ledgers while retaining nari meaning.
+40,Orchardline,orchardline-melo-40,0.566567,0.798842,0.919018,0.800493,0.850972,Orchardline diverges through water terraces while retaining lum meaning.
+40,Rainline,rainline-vonn-40,0.598567,0.777402,0.927258,0.790493,0.907572,Rainline diverges through weather bells while retaining sova meaning.
+41,Hearthline,hearthline-sova-41,0.447299,0.859334,0.951486,0.862001,0.871235,Hearthline diverges through hearth ceramics while retaining lum meaning.
+41,Routeline,routeline-keth-41,0.479299,0.829094,0.943726,0.841001,0.907035,Routeline diverges through stone bridge joints while retaining tek meaning.
+41,Marketline,marketline-vonn-41,0.511299,0.818854,0.930966,0.845001,0.856335,Marketline diverges through measure weights while retaining melo meaning.
+41,Ledgerline,ledgerline-sova-41,0.543299,0.799014,0.942206,0.837001,0.916835,Ledgerline diverges through seed ledgers while retaining nari meaning.
+41,Orchardline,orchardline-tek-41,0.575299,0.795174,0.917446,0.849001,0.850535,Orchardline diverges through water terraces while retaining lum meaning.
+41,Rainline,rainline-nari-41,0.607299,0.773734,0.925686,0.839001,0.907135,Rainline diverges through weather bells while retaining sova meaning.
+42,Hearthline,hearthline-lum-42,0.462731,0.852853,0.948708,0.799791,0.870463,Hearthline diverges through hearth ceramics while retaining lum meaning.
+42,Routeline,routeline-tek-42,0.494731,0.822613,0.940948,0.778791,0.906263,Routeline diverges through stone bridge joints while retaining tek meaning.
+42,Marketline,marketline-melo-42,0.526731,0.812373,0.928188,0.782791,0.855563,Marketline diverges through measure weights while retaining melo meaning.
+42,Ledgerline,ledgerline-nari-42,0.558731,0.792533,0.939428,0.774791,0.916063,Ledgerline diverges through seed ledgers while retaining nari meaning.
+42,Orchardline,orchardline-lum-42,0.590731,0.788693,0.914668,0.786791,0.849763,Orchardline diverges through water terraces while retaining lum meaning.
+42,Rainline,rainline-sova-42,0.622731,0.767253,0.922908,0.776791,0.906363,Rainline diverges through weather bells while retaining sova meaning.
+43,Hearthline,hearthline-ori-43,0.464126,0.852267,0.948457,0.810038,0.870394,Hearthline diverges through hearth ceramics while retaining lum meaning.
+43,Routeline,routeline-nari-43,0.496126,0.822027,0.940697,0.789038,0.906194,Routeline diverges through stone bridge joints while retaining tek meaning.
+43,Marketline,marketline-keth-43,0.528126,0.811787,0.927937,0.793038,0.855494,Marketline diverges through measure weights while retaining melo meaning.
+43,Ledgerline,ledgerline-vonn-43,0.560126,0.791947,0.939177,0.785038,0.915994,Ledgerline diverges through seed ledgers while retaining nari meaning.
+43,Orchardline,orchardline-melo-43,0.592126,0.788107,0.914417,0.797038,0.849694,Orchardline diverges through water terraces while retaining lum meaning.
+43,Rainline,rainline-vonn-43,0.624126,0.766667,0.922657,0.787038,0.906294,Rainline diverges through weather bells while retaining sova meaning.
+44,Hearthline,hearthline-sova-44,0.47946,0.845827,0.945697,0.797984,0.869627,Hearthline diverges through hearth ceramics while retaining lum meaning.
+44,Routeline,routeline-keth-44,0.51146,0.815587,0.937937,0.776984,0.905427,Routeline diverges through stone bridge joints while retaining tek meaning.
+44,Marketline,marketline-vonn-44,0.54346,0.805347,0.925177,0.780984,0.854727,Marketline diverges through measure weights while retaining melo meaning.
+44,Ledgerline,ledgerline-sova-44,0.57546,0.785507,0.936417,0.772984,0.915227,Ledgerline diverges through seed ledgers while retaining nari meaning.
+44,Orchardline,orchardline-tek-44,0.60746,0.781667,0.911657,0.784984,0.848927,Orchardline diverges through water terraces while retaining lum meaning.
+44,Rainline,rainline-nari-44,0.63946,0.760227,0.919897,0.774984,0.905527,Rainline diverges through weather bells while retaining sova meaning.
+45,Hearthline,hearthline-lum-45,0.480545,0.845371,0.945502,0.808728,0.869573,Hearthline diverges through hearth ceramics while retaining lum meaning.
+45,Routeline,routeline-tek-45,0.512545,0.815131,0.937742,0.787728,0.905373,Routeline diverges through stone bridge joints while retaining tek meaning.
+45,Marketline,marketline-melo-45,0.544545,0.804891,0.924982,0.791728,0.854673,Marketline diverges through measure weights while retaining melo meaning.
+45,Ledgerline,ledgerline-nari-45,0.576545,0.785051,0.936222,0.783728,0.915173,Ledgerline diverges through seed ledgers while retaining nari meaning.
+45,Orchardline,orchardline-lum-45,0.608545,0.781211,0.911462,0.795728,0.848873,Orchardline diverges through water terraces while retaining lum meaning.
+45,Rainline,rainline-sova-45,0.640545,0.759771,0.919702,0.785728,0.905473,Rainline diverges through weather bells while retaining sova meaning.
+46,Hearthline,hearthline-ori-46,0.488628,0.841976,0.944047,0.808275,0.869169,Hearthline diverges through hearth ceramics while retaining lum meaning.
+46,Routeline,routeline-nari-46,0.520628,0.811736,0.936287,0.787275,0.904969,Routeline diverges through stone bridge joints while retaining tek meaning.
+46,Marketline,marketline-keth-46,0.552628,0.801496,0.923527,0.791275,0.854269,Marketline diverges through measure weights while retaining melo meaning.
+46,Ledgerline,ledgerline-vonn-46,0.584628,0.781656,0.934767,0.783275,0.914769,Ledgerline diverges through seed ledgers while retaining nari meaning.
+46,Orchardline,orchardline-melo-46,0.616628,0.777816,0.910007,0.795275,0.848469,Orchardline diverges through water terraces while retaining lum meaning.
+46,Rainline,rainline-vonn-46,0.648628,0.756376,0.918247,0.785275,0.905069,Rainline diverges through weather bells while retaining sova meaning.
+47,Hearthline,hearthline-sova-47,0.497266,0.838348,0.942492,0.856934,0.868737,Hearthline diverges through hearth ceramics while retaining lum meaning.
+47,Routeline,routeline-keth-47,0.529266,0.808108,0.934732,0.835934,0.904537,Routeline diverges through stone bridge joints while retaining tek meaning.
+47,Marketline,marketline-vonn-47,0.561266,0.797868,0.921972,0.839934,0.853837,Marketline diverges through measure weights while retaining melo meaning.
+47,Ledgerline,ledgerline-sova-47,0.593266,0.778028,0.933212,0.831934,0.914337,Ledgerline diverges through seed ledgers while retaining nari meaning.
+47,Orchardline,orchardline-tek-47,0.625266,0.774188,0.908452,0.843934,0.848037,Orchardline diverges through water terraces while retaining lum meaning.
+47,Rainline,rainline-nari-47,0.657266,0.752748,0.916692,0.833934,0.904637,Rainline diverges through weather bells while retaining sova meaning.
+48,Hearthline,hearthline-lum-48,0.512084,0.832125,0.939825,0.795706,0.867996,Hearthline diverges through hearth ceramics while retaining lum meaning.
+48,Routeline,routeline-tek-48,0.544084,0.801885,0.932065,0.774706,0.903796,Routeline diverges through stone bridge joints while retaining tek meaning.
+48,Marketline,marketline-melo-48,0.576084,0.791645,0.919305,0.778706,0.853096,Marketline diverges through measure weights while retaining melo meaning.
+48,Ledgerline,ledgerline-nari-48,0.608084,0.771805,0.930545,0.770706,0.913596,Ledgerline diverges through seed ledgers while retaining nari meaning.
+48,Orchardline,orchardline-lum-48,0.640084,0.767965,0.905785,0.782706,0.847296,Orchardline diverges through water terraces while retaining lum meaning.
+48,Rainline,rainline-sova-48,0.672084,0.746525,0.914025,0.772706,0.903896,Rainline diverges through weather bells while retaining sova meaning.
+49,Hearthline,hearthline-ori-49,0.514158,0.831254,0.939452,0.804868,0.867892,Hearthline diverges through hearth ceramics while retaining lum meaning.
+49,Routeline,routeline-nari-49,0.546158,0.801014,0.931692,0.783868,0.903692,Routeline diverges through stone bridge joints while retaining tek meaning.
+49,Marketline,marketline-keth-49,0.578158,0.790774,0.918932,0.787868,0.852992,Marketline diverges through measure weights while retaining melo meaning.
+49,Ledgerline,ledgerline-vonn-49,0.610158,0.770934,0.930172,0.779868,0.913492,Ledgerline diverges through seed ledgers while retaining nari meaning.
+49,Orchardline,orchardline-melo-49,0.642158,0.767094,0.905412,0.791868,0.847192,Orchardline diverges through water terraces while retaining lum meaning.
+49,Rainline,rainline-vonn-49,0.674158,0.745654,0.913652,0.781868,0.903792,Rainline diverges through weather bells while retaining sova meaning.
+50,Hearthline,hearthline-sova-50,0.529333,0.82488,0.93672,0.793067,0.867133,Hearthline diverges through hearth ceramics while retaining lum meaning.
+50,Routeline,routeline-keth-50,0.561333,0.79464,0.92896,0.772067,0.902933,Routeline diverges through stone bridge joints while retaining tek meaning.
+50,Marketline,marketline-vonn-50,0.593333,0.7844,0.9162,0.776067,0.852233,Marketline diverges through measure weights while retaining melo meaning.
+50,Ledgerline,ledgerline-sova-50,0.625333,0.76456,0.92744,0.768067,0.912733,Ledgerline diverges through seed ledgers while retaining nari meaning.
+50,Orchardline,orchardline-tek-50,0.657333,0.76072,0.90268,0.780067,0.846433,Orchardline diverges through water terraces while retaining lum meaning.
+50,Rainline,rainline-nari-50,0.689333,0.73928,0.91092,0.770067,0.903033,Rainline diverges through weather bells while retaining sova meaning.
+51,Hearthline,hearthline-lum-51,0.530528,0.824378,0.936505,0.803636,0.867074,Hearthline diverges through hearth ceramics while retaining lum meaning.
+51,Routeline,routeline-tek-51,0.562528,0.794138,0.928745,0.782636,0.902874,Routeline diverges through stone bridge joints while retaining tek meaning.
+51,Marketline,marketline-melo-51,0.594528,0.783898,0.915985,0.786636,0.852174,Marketline diverges through measure weights while retaining melo meaning.
+51,Ledgerline,ledgerline-nari-51,0.626528,0.764058,0.927225,0.778636,0.912674,Ledgerline diverges through seed ledgers while retaining nari meaning.
+51,Orchardline,orchardline-lum-51,0.658528,0.760218,0.902465,0.790636,0.846374,Orchardline diverges through water terraces while retaining lum meaning.
+51,Rainline,rainline-sova-51,0.690528,0.738778,0.910705,0.780636,0.902974,Rainline diverges through weather bells while retaining sova meaning.
+52,Hearthline,hearthline-ori-52,0.53808,0.821206,0.935146,0.804032,0.866696,Hearthline diverges through hearth ceramics while retaining lum meaning.
+52,Routeline,routeline-nari-52,0.57008,0.790966,0.927386,0.783032,0.902496,Routeline diverges through stone bridge joints while retaining tek meaning.
+52,Marketline,marketline-keth-52,0.60208,0.780726,0.914626,0.787032,0.851796,Marketline diverges through measure weights while retaining melo meaning.
+52,Ledgerline,ledgerline-vonn-52,0.63408,0.760886,0.925866,0.779032,0.912296,Ledgerline diverges through seed ledgers while retaining nari meaning.
+52,Orchardline,orchardline-melo-52,0.66608,0.757046,0.901106,0.791032,0.845996,Orchardline diverges through water terraces while retaining lum meaning.
+52,Rainline,rainline-vonn-52,0.69808,0.735606,0.909346,0.781032,0.902596,Rainline diverges through weather bells while retaining sova meaning.
+53,Hearthline,hearthline-sova-53,0.545805,0.817962,0.933755,0.854152,0.86631,Hearthline diverges through hearth ceramics while retaining lum meaning.
+53,Routeline,routeline-keth-53,0.577805,0.787722,0.925995,0.833152,0.90211,Routeline diverges through stone bridge joints while retaining tek meaning.
+53,Marketline,marketline-vonn-53,0.609805,0.777482,0.913235,0.837152,0.85141,Marketline diverges through measure weights while retaining melo meaning.
+53,Ledgerline,ledgerline-sova-53,0.641805,0.757642,0.924475,0.829152,0.91191,Ledgerline diverges through seed ledgers while retaining nari meaning.
+53,Orchardline,orchardline-tek-53,0.673805,0.753802,0.899715,0.841152,0.84561,Orchardline diverges through water terraces while retaining lum meaning.
+53,Rainline,rainline-nari-53,0.705805,0.732362,0.907955,0.831152,0.90221,Rainline diverges through weather bells while retaining sova meaning.
+54,Hearthline,hearthline-lum-54,0.560869,0.811635,0.931044,0.79253,0.865557,Hearthline diverges through hearth ceramics while retaining lum meaning.
+54,Routeline,routeline-tek-54,0.592869,0.781395,0.923284,0.77153,0.901357,Routeline diverges through stone bridge joints while retaining tek meaning.
+54,Marketline,marketline-melo-54,0.624869,0.771155,0.910524,0.77553,0.850657,Marketline diverges through measure weights while retaining melo meaning.
+54,Ledgerline,ledgerline-nari-54,0.656869,0.751315,0.921764,0.76753,0.911157,Ledgerline diverges through seed ledgers while retaining nari meaning.
+54,Orchardline,orchardline-lum-54,0.688869,0.747475,0.897004,0.77953,0.844857,Orchardline diverges through water terraces while retaining lum meaning.
+54,Rainline,rainline-sova-54,0.720869,0.726035,0.905244,0.76953,0.901457,Rainline diverges through weather bells while retaining sova meaning.
+55,Hearthline,hearthline-ori-55,0.562261,0.811051,0.930793,0.802783,0.865487,Hearthline diverges through hearth ceramics while retaining lum meaning.
+55,Routeline,routeline-nari-55,0.594261,0.780811,0.923033,0.781783,0.901287,Routeline diverges through stone bridge joints while retaining tek meaning.
+55,Marketline,marketline-keth-55,0.626261,0.770571,0.910273,0.785783,0.850587,Marketline diverges through measure weights while retaining melo meaning.
+55,Ledgerline,ledgerline-vonn-55,0.658261,0.750731,0.921513,0.777783,0.911087,Ledgerline diverges through seed ledgers while retaining nari meaning.
+55,Orchardline,orchardline-melo-55,0.690261,0.746891,0.896753,0.789783,0.844787,Orchardline diverges through water terraces while retaining lum meaning.
+55,Rainline,rainline-vonn-55,0.722261,0.725451,0.904993,0.779783,0.901387,Rainline diverges through weather bells while retaining sova meaning.
+56,Hearthline,hearthline-sova-56,0.576463,0.805086,0.928237,0.79254,0.864777,Hearthline diverges through hearth ceramics while retaining lum meaning.
+56,Routeline,routeline-keth-56,0.608463,0.774846,0.920477,0.77154,0.900577,Routeline diverges through stone bridge joints while retaining tek meaning.
+56,Marketline,marketline-vonn-56,0.640463,0.764606,0.907717,0.77554,0.849877,Marketline diverges through measure weights while retaining melo meaning.
+56,Ledgerline,ledgerline-sova-56,0.672463,0.744766,0.918957,0.76754,0.910377,Ledgerline diverges through seed ledgers while retaining nari meaning.
+56,Orchardline,orchardline-tek-56,0.704463,0.740926,0.894197,0.77954,0.844077,Orchardline diverges through water terraces while retaining lum meaning.
+56,Rainline,rainline-nari-56,0.736463,0.719486,0.902437,0.76954,0.900677,Rainline diverges through weather bells while retaining sova meaning.
+57,Hearthline,hearthline-lum-57,0.577166,0.80479,0.92811,0.803894,0.864742,Hearthline diverges through hearth ceramics while retaining lum meaning.
+57,Routeline,routeline-tek-57,0.609166,0.77455,0.92035,0.782894,0.900542,Routeline diverges through stone bridge joints while retaining tek meaning.
+57,Marketline,marketline-melo-57,0.641166,0.76431,0.90759,0.786894,0.849842,Marketline diverges through measure weights while retaining melo meaning.
+57,Ledgerline,ledgerline-nari-57,0.673166,0.74447,0.91883,0.778894,0.910342,Ledgerline diverges through seed ledgers while retaining nari meaning.
+57,Orchardline,orchardline-lum-57,0.705166,0.74063,0.89407,0.790894,0.844042,Orchardline diverges through water terraces while retaining lum meaning.
+57,Rainline,rainline-sova-57,0.737166,0.71919,0.90231,0.780894,0.900642,Rainline diverges through weather bells while retaining sova meaning.
+58,Hearthline,hearthline-ori-58,0.584677,0.801635,0.926758,0.804356,0.864366,Hearthline diverges through hearth ceramics while retaining lum meaning.
+58,Routeline,routeline-nari-58,0.616677,0.771395,0.918998,0.783356,0.900166,Routeline diverges through stone bridge joints while retaining tek meaning.
+58,Marketline,marketline-keth-58,0.648677,0.761155,0.906238,0.787356,0.849466,Marketline diverges through measure weights while retaining melo meaning.
+58,Ledgerline,ledgerline-vonn-58,0.680677,0.741315,0.917478,0.779356,0.909966,Ledgerline diverges through seed ledgers while retaining nari meaning.
+58,Orchardline,orchardline-melo-58,0.712677,0.737475,0.892718,0.791356,0.843666,Orchardline diverges through water terraces while retaining lum meaning.
+58,Rainline,rainline-vonn-58,0.744677,0.716035,0.900958,0.781356,0.900266,Rainline diverges through weather bells while retaining sova meaning.
+59,Hearthline,hearthline-sova-59,0.592105,0.798516,0.925421,0.854951,0.863995,Hearthline diverges through hearth ceramics while retaining lum meaning.
+59,Routeline,routeline-keth-59,0.624105,0.768276,0.917661,0.833951,0.899795,Routeline diverges through stone bridge joints while retaining tek meaning.
+59,Marketline,marketline-vonn-59,0.656105,0.758036,0.904901,0.837951,0.849095,Marketline diverges through measure weights while retaining melo meaning.
+59,Ledgerline,ledgerline-sova-59,0.688105,0.738196,0.916141,0.829951,0.909595,Ledgerline diverges through seed ledgers while retaining nari meaning.
+59,Orchardline,orchardline-tek-59,0.720105,0.734356,0.891381,0.841951,0.843295,Orchardline diverges through water terraces while retaining lum meaning.
+59,Rainline,rainline-nari-59,0.752105,0.712916,0.899621,0.831951,0.899895,Rainline diverges through weather bells while retaining sova meaning.
+60,Hearthline,hearthline-lum-60,0.607252,0.792154,0.922695,0.793196,0.863237,Hearthline diverges through hearth ceramics while retaining lum meaning.
+60,Routeline,routeline-tek-60,0.639252,0.761914,0.914935,0.772196,0.899037,Routeline diverges through stone bridge joints while retaining tek meaning.
+60,Marketline,marketline-melo-60,0.671252,0.751674,0.902175,0.776196,0.848337,Marketline diverges through measure weights while retaining melo meaning.
+60,Ledgerline,ledgerline-nari-60,0.703252,0.731834,0.913415,0.768196,0.908837,Ledgerline diverges through seed ledgers while retaining nari meaning.
+60,Orchardline,orchardline-lum-60,0.735252,0.727994,0.888655,0.780196,0.842537,Orchardline diverges through water terraces while retaining lum meaning.
+60,Rainline,rainline-sova-60,0.767252,0.706554,0.896895,0.770196,0.899137,Rainline diverges through weather bells while retaining sova meaning.
+61,Hearthline,hearthline-ori-61,0.607403,0.792091,0.922667,0.805435,0.86323,Hearthline diverges through hearth ceramics while retaining lum meaning.
+61,Routeline,routeline-nari-61,0.639403,0.761851,0.914907,0.784435,0.89903,Routeline diverges through stone bridge joints while retaining tek meaning.
+61,Marketline,marketline-keth-61,0.671403,0.751611,0.902147,0.788435,0.84833,Marketline diverges through measure weights while retaining melo meaning.
+61,Ledgerline,ledgerline-vonn-61,0.703403,0.731771,0.913387,0.780435,0.90883,Ledgerline diverges through seed ledgers while retaining nari meaning.
+61,Orchardline,orchardline-melo-61,0.735403,0.727931,0.888627,0.792435,0.84253,Orchardline diverges through water terraces while retaining lum meaning.
+61,Rainline,rainline-vonn-61,0.767403,0.706491,0.896867,0.782435,0.89913,Rainline diverges through weather bells while retaining sova meaning.
+62,Hearthline,hearthline-sova-62,0.621297,0.786255,0.920167,0.795685,0.862535,Hearthline diverges through hearth ceramics while retaining lum meaning.
+62,Routeline,routeline-keth-62,0.653297,0.756015,0.912407,0.774685,0.898335,Routeline diverges through stone bridge joints while retaining tek meaning.
+62,Marketline,marketline-vonn-62,0.685297,0.745775,0.899647,0.778685,0.847635,Marketline diverges through measure weights while retaining melo meaning.
+62,Ledgerline,ledgerline-sova-62,0.717297,0.725935,0.910887,0.770685,0.908135,Ledgerline diverges through seed ledgers while retaining nari meaning.
+62,Orchardline,orchardline-tek-62,0.749297,0.722095,0.886127,0.782685,0.841835,Orchardline diverges through water terraces while retaining lum meaning.
+62,Rainline,rainline-nari-62,0.781297,0.700655,0.894367,0.772685,0.898435,Rainline diverges through weather bells while retaining sova meaning.
+63,Hearthline,hearthline-lum-63,0.622187,0.785882,0.920006,0.806741,0.862491,Hearthline diverges through hearth ceramics while retaining lum meaning.
+63,Routeline,routeline-tek-63,0.654187,0.755642,0.912246,0.785741,0.898291,Routeline diverges through stone bridge joints while retaining tek meaning.
+63,Marketline,marketline-melo-63,0.686187,0.745402,0.899486,0.789741,0.847591,Marketline diverges through measure weights while retaining melo meaning.
+63,Ledgerline,ledgerline-nari-63,0.718187,0.725562,0.910726,0.781741,0.908091,Ledgerline diverges through seed ledgers while retaining nari meaning.
+63,Orchardline,orchardline-lum-63,0.750187,0.721722,0.885966,0.793741,0.841791,Orchardline diverges through water terraces while retaining lum meaning.
+63,Rainline,rainline-sova-63,0.782187,0.700282,0.894206,0.783741,0.898391,Rainline diverges through weather bells while retaining sova meaning.
+64,Hearthline,hearthline-ori-64,0.628837,0.783088,0.918809,0.808581,0.862158,Hearthline diverges through hearth ceramics while retaining lum meaning.
+64,Routeline,routeline-nari-64,0.660837,0.752848,0.911049,0.787581,0.897958,Routeline diverges through stone bridge joints while retaining tek meaning.
+64,Marketline,marketline-keth-64,0.692837,0.742608,0.898289,0.791581,0.847258,Marketline diverges through measure weights while retaining melo meaning.
+64,Ledgerline,ledgerline-vonn-64,0.724837,0.722768,0.909529,0.783581,0.907758,Ledgerline diverges through seed ledgers while retaining nari meaning.
+64,Orchardline,orchardline-melo-64,0.756837,0.718928,0.884769,0.795581,0.841458,Orchardline diverges through water terraces while retaining lum meaning.
+64,Rainline,rainline-vonn-64,0.788837,0.697488,0.893009,0.785581,0.898058,Rainline diverges through weather bells while retaining sova meaning.
+65,Hearthline,hearthline-sova-65,0.63703,0.779647,0.917335,0.857952,0.861748,Hearthline diverges through hearth ceramics while retaining lum meaning.
+65,Routeline,routeline-keth-65,0.66903,0.749407,0.909575,0.836952,0.897548,Routeline diverges through stone bridge joints while retaining tek meaning.
+65,Marketline,marketline-vonn-65,0.70103,0.739167,0.896815,0.840952,0.846848,Marketline diverges through measure weights while retaining melo meaning.
+65,Ledgerline,ledgerline-sova-65,0.73303,0.719327,0.908055,0.832952,0.907348,Ledgerline diverges through seed ledgers while retaining nari meaning.
+65,Orchardline,orchardline-tek-65,0.76503,0.715487,0.883295,0.844952,0.841048,Orchardline diverges through water terraces while retaining lum meaning.
+65,Rainline,rainline-nari-65,0.79703,0.694047,0.891535,0.834952,0.897648,Rainline diverges through weather bells while retaining sova meaning.
+66,Hearthline,hearthline-lum-66,0.651072,0.77375,0.914807,0.797964,0.861046,Hearthline diverges through hearth ceramics while retaining lum meaning.
+66,Routeline,routeline-tek-66,0.683072,0.74351,0.907047,0.776964,0.896846,Routeline diverges through stone bridge joints while retaining tek meaning.
+66,Marketline,marketline-melo-66,0.715072,0.73327,0.894287,0.780964,0.846146,Marketline diverges through measure weights while retaining melo meaning.
+66,Ledgerline,ledgerline-nari-66,0.747072,0.71343,0.905527,0.772964,0.906646,Ledgerline diverges through seed ledgers while retaining nari meaning.
+66,Orchardline,orchardline-lum-66,0.779072,0.70959,0.880767,0.784964,0.840346,Orchardline diverges through water terraces while retaining lum meaning.
+66,Rainline,rainline-sova-66,0.811072,0.68815,0.889007,0.774964,0.896946,Rainline diverges through weather bells while retaining sova meaning.
+67,Hearthline,hearthline-ori-67,0.650586,0.773954,0.914895,0.811222,0.861071,Hearthline diverges through hearth ceramics while retaining lum meaning.
+67,Routeline,routeline-nari-67,0.682586,0.743714,0.907135,0.790222,0.896871,Routeline diverges through stone bridge joints while retaining tek meaning.
+67,Marketline,marketline-keth-67,0.714586,0.733474,0.894375,0.794222,0.846171,Marketline diverges through measure weights while retaining melo meaning.
+67,Ledgerline,ledgerline-vonn-67,0.746586,0.713634,0.905615,0.786222,0.906671,Ledgerline diverges through seed ledgers while retaining nari meaning.
+67,Orchardline,orchardline-melo-67,0.778586,0.709794,0.880855,0.798222,0.840371,Orchardline diverges through water terraces while retaining lum meaning.
+67,Rainline,rainline-vonn-67,0.810586,0.688354,0.889095,0.788222,0.896971,Rainline diverges through weather bells while retaining sova meaning.
+68,Hearthline,hearthline-sova-68,0.664798,0.767985,0.912336,0.800963,0.86036,Hearthline diverges through hearth ceramics while retaining lum meaning.
+68,Routeline,routeline-keth-68,0.696798,0.737745,0.904576,0.779963,0.89616,Routeline diverges through stone bridge joints while retaining tek meaning.
+68,Marketline,marketline-vonn-68,0.728798,0.727505,0.891816,0.783963,0.84546,Marketline diverges through measure weights while retaining melo meaning.
+68,Ledgerline,ledgerline-sova-68,0.760798,0.707665,0.903056,0.775963,0.90596,Ledgerline diverges through seed ledgers while retaining nari meaning.
+68,Orchardline,orchardline-tek-68,0.792798,0.703825,0.878296,0.787963,0.83966,Orchardline diverges through water terraces while retaining lum meaning.
+68,Rainline,rainline-nari-68,0.824798,0.682385,0.886536,0.777963,0.89626,Rainline diverges through weather bells while retaining sova meaning.
+69,Hearthline,hearthline-lum-69,0.665143,0.76784,0.912274,0.812891,0.860343,Hearthline diverges through hearth ceramics while retaining lum meaning.
+69,Routeline,routeline-tek-69,0.697143,0.7376,0.904514,0.791891,0.896143,Routeline diverges through stone bridge joints while retaining tek meaning.
+69,Marketline,marketline-melo-69,0.729143,0.72736,0.891754,0.795891,0.845443,Marketline diverges through measure weights while retaining melo meaning.
+69,Ledgerline,ledgerline-nari-69,0.761143,0.70752,0.902994,0.787891,0.905943,Ledgerline diverges through seed ledgers while retaining nari meaning.
+69,Orchardline,orchardline-lum-69,0.793143,0.70368,0.878234,0.799891,0.839643,Orchardline diverges through water terraces while retaining lum meaning.
+69,Rainline,rainline-sova-69,0.825143,0.68224,0.886474,0.789891,0.896243,Rainline diverges through weather bells while retaining sova meaning.
+70,Hearthline,hearthline-ori-70,0.673268,0.764428,0.910812,0.812372,0.859937,Hearthline diverges through hearth ceramics while retaining lum meaning.
+70,Routeline,routeline-nari-70,0.705268,0.734188,0.903052,0.791372,0.895737,Routeline diverges through stone bridge joints while retaining tek meaning.
+70,Marketline,marketline-keth-70,0.737268,0.723948,0.890292,0.795372,0.845037,Marketline diverges through measure weights while retaining melo meaning.
+70,Ledgerline,ledgerline-vonn-70,0.769268,0.704108,0.901532,0.787372,0.905537,Ledgerline diverges through seed ledgers while retaining nari meaning.
+70,Orchardline,orchardline-melo-70,0.801268,0.700268,0.876772,0.799372,0.839237,Orchardline diverges through water terraces while retaining lum meaning.
+70,Rainline,rainline-vonn-70,0.833268,0.678828,0.885012,0.789372,0.895837,Rainline diverges through weather bells while retaining sova meaning.
+71,Hearthline,hearthline-sova-71,0.680173,0.761527,0.909569,0.863803,0.859591,Hearthline diverges through hearth ceramics while retaining lum meaning.
+71,Routeline,routeline-keth-71,0.712173,0.731287,0.901809,0.842803,0.895391,Routeline diverges through stone bridge joints while retaining tek meaning.
+71,Marketline,marketline-vonn-71,0.744173,0.721047,0.889049,0.846803,0.844691,Marketline diverges through measure weights while retaining melo meaning.
+71,Ledgerline,ledgerline-sova-71,0.776173,0.701207,0.900289,0.838803,0.905191,Ledgerline diverges through seed ledgers while retaining nari meaning.
+71,Orchardline,orchardline-tek-71,0.808173,0.697367,0.875529,0.850803,0.838891,Orchardline diverges through water terraces while retaining lum meaning.
+71,Rainline,rainline-nari-71,0.840173,0.675927,0.883769,0.840803,0.895491,Rainline diverges through weather bells while retaining sova meaning.
+72,Hearthline,hearthline-lum-72,0.694971,0.755312,0.906905,0.802606,0.888851,Hearthline diverges through hearth ceramics while retaining lum meaning.
+72,Routeline,routeline-tek-72,0.726971,0.725072,0.899145,0.781606,0.924651,Routeline diverges through stone bridge joints while retaining tek meaning.
+72,Marketline,marketline-melo-72,0.758971,0.714832,0.886385,0.785606,0.873951,Marketline diverges through measure weights while retaining melo meaning.
+72,Ledgerline,ledgerline-nari-72,0.790971,0.694992,0.897625,0.777606,0.934451,Ledgerline diverges through seed ledgers while retaining nari meaning.
+72,Orchardline,orchardline-lum-72,0.822971,0.691152,0.872865,0.789606,0.868151,Orchardline diverges through water terraces while retaining lum meaning.
+72,Rainline,rainline-sova-72,0.854971,0.669712,0.881105,0.779606,0.924751,Rainline diverges through weather bells while retaining sova meaning.
+73,Hearthline,hearthline-ori-73,0.694705,0.755424,0.906953,0.815512,0.888865,Hearthline diverges through hearth ceramics while retaining lum meaning.
+73,Routeline,routeline-nari-73,0.726705,0.725184,0.899193,0.794512,0.924665,Routeline diverges through stone bridge joints while retaining tek meaning.
+73,Marketline,marketline-keth-73,0.758705,0.714944,0.886433,0.798512,0.873965,Marketline diverges through measure weights while retaining melo meaning.
+73,Ledgerline,ledgerline-vonn-73,0.790705,0.695104,0.897673,0.790512,0.934465,Ledgerline diverges through seed ledgers while retaining nari meaning.
+73,Orchardline,orchardline-melo-73,0.822705,0.691264,0.872913,0.802512,0.868165,Orchardline diverges through water terraces while retaining lum meaning.
+73,Rainline,rainline-vonn-73,0.854705,0.669824,0.881153,0.792512,0.924765,Rainline diverges through weather bells while retaining sova meaning.
+74,Hearthline,hearthline-sova-74,0.709953,0.74902,0.904208,0.803595,0.888102,Hearthline diverges through hearth ceramics while retaining lum meaning.
+74,Routeline,routeline-keth-74,0.741953,0.71878,0.896448,0.782595,0.923902,Routeline diverges through stone bridge joints while retaining tek meaning.
+74,Marketline,marketline-vonn-74,0.773953,0.70854,0.883688,0.786595,0.873202,Marketline diverges through measure weights while retaining melo meaning.
+74,Ledgerline,ledgerline-sova-74,0.805953,0.6887,0.894928,0.778595,0.933702,Ledgerline diverges through seed ledgers while retaining nari meaning.
+74,Orchardline,orchardline-tek-74,0.837953,0.68486,0.870168,0.790595,0.867402,Orchardline diverges through water terraces while retaining lum meaning.
+74,Rainline,rainline-nari-74,0.869953,0.66342,0.878408,0.780595,0.924002,Rainline diverges through weather bells while retaining sova meaning.
+75,Hearthline,hearthline-lum-75,0.710052,0.748978,0.904191,0.815916,0.888097,Hearthline diverges through hearth ceramics while retaining lum meaning.
+75,Routeline,routeline-tek-75,0.742052,0.718738,0.896431,0.794916,0.923897,Routeline diverges through stone bridge joints while retaining tek meaning.
+75,Marketline,marketline-melo-75,0.774052,0.708498,0.883671,0.798916,0.873197,Marketline diverges through measure weights while retaining melo meaning.
+75,Ledgerline,ledgerline-nari-75,0.806052,0.688658,0.894911,0.790916,0.933697,Ledgerline diverges through seed ledgers while retaining nari meaning.
+75,Orchardline,orchardline-lum-75,0.838052,0.684818,0.870151,0.802916,0.867397,Orchardline diverges through water terraces while retaining lum meaning.
+75,Rainline,rainline-sova-75,0.870052,0.663378,0.878391,0.792916,0.923997,Rainline diverges through weather bells while retaining sova meaning.
+76,Hearthline,hearthline-ori-76,0.717372,0.745904,0.902873,0.816685,0.887731,Hearthline diverges through hearth ceramics while retaining lum meaning.
+76,Routeline,routeline-nari-76,0.749372,0.715664,0.895113,0.795685,0.923531,Routeline diverges through stone bridge joints while retaining tek meaning.
+76,Marketline,marketline-keth-76,0.781372,0.705424,0.882353,0.799685,0.872831,Marketline diverges through measure weights while retaining melo meaning.
+76,Ledgerline,ledgerline-vonn-76,0.813372,0.685584,0.893593,0.791685,0.933331,Ledgerline diverges through seed ledgers while retaining nari meaning.
+76,Orchardline,orchardline-melo-76,0.845372,0.681744,0.868833,0.803685,0.867031,Orchardline diverges through water terraces while retaining lum meaning.
+76,Rainline,rainline-vonn-76,0.877372,0.660304,0.877073,0.793685,0.923631,Rainline diverges through weather bells while retaining sova meaning.
+77,Hearthline,hearthline-sova-77,0.725708,0.742403,0.901373,0.865827,0.887315,Hearthline diverges through hearth ceramics while retaining lum meaning.
+77,Routeline,routeline-keth-77,0.757708,0.712163,0.893613,0.844827,0.923115,Routeline diverges through stone bridge joints while retaining tek meaning.
+77,Marketline,marketline-vonn-77,0.789708,0.701923,0.880853,0.848827,0.872415,Marketline diverges through measure weights while retaining melo meaning.
+77,Ledgerline,ledgerline-sova-77,0.821708,0.682083,0.892093,0.840827,0.932915,Ledgerline diverges through seed ledgers while retaining nari meaning.
+77,Orchardline,orchardline-tek-77,0.853708,0.678243,0.867333,0.852827,0.866615,Orchardline diverges through water terraces while retaining lum meaning.
+77,Rainline,rainline-nari-77,0.885708,0.656803,0.875573,0.842827,0.923215,Rainline diverges through weather bells while retaining sova meaning.
+78,Hearthline,hearthline-lum-78,0.74031,0.73627,0.898744,0.804944,0.886585,Hearthline diverges through hearth ceramics while retaining lum meaning.
+78,Routeline,routeline-tek-78,0.77231,0.70603,0.890984,0.783944,0.922385,Routeline diverges through stone bridge joints while retaining tek meaning.
+78,Marketline,marketline-melo-78,0.80431,0.69579,0.878224,0.787944,0.871685,Marketline diverges through measure weights while retaining melo meaning.
+78,Ledgerline,ledgerline-nari-78,0.83631,0.67595,0.889464,0.779944,0.932185,Ledgerline diverges through seed ledgers while retaining nari meaning.
+78,Orchardline,orchardline-lum-78,0.86831,0.67211,0.864704,0.791944,0.865885,Orchardline diverges through water terraces while retaining lum meaning.
+78,Rainline,rainline-sova-78,0.90031,0.65067,0.872944,0.781944,0.922485,Rainline diverges through weather bells while retaining sova meaning.
+79,Hearthline,hearthline-ori-79,0.741693,0.735689,0.898495,0.815211,0.886515,Hearthline diverges through hearth ceramics while retaining lum meaning.
+79,Routeline,routeline-nari-79,0.773693,0.705449,0.890735,0.794211,0.922315,Routeline diverges through stone bridge joints while retaining tek meaning.
+79,Marketline,marketline-keth-79,0.805693,0.695209,0.877975,0.798211,0.871615,Marketline diverges through measure weights while retaining melo meaning.
+79,Ledgerline,ledgerline-vonn-79,0.837693,0.675369,0.889215,0.790211,0.932115,Ledgerline diverges through seed ledgers while retaining nari meaning.
+79,Orchardline,orchardline-melo-79,0.869693,0.671529,0.864455,0.802211,0.865815,Orchardline diverges through water terraces while retaining lum meaning.
+79,Rainline,rainline-vonn-79,0.901693,0.650089,0.872695,0.792211,0.922415,Rainline diverges through weather bells while retaining sova meaning.
+80,Hearthline,hearthline-sova-80,0.756865,0.729317,0.895764,0.803416,0.885757,Hearthline diverges through hearth ceramics while retaining lum meaning.
+80,Routeline,routeline-keth-80,0.788865,0.699077,0.888004,0.782416,0.921557,Routeline diverges through stone bridge joints while retaining tek meaning.
+80,Marketline,marketline-vonn-80,0.820865,0.688837,0.875244,0.786416,0.870857,Marketline diverges through measure weights while retaining melo meaning.
+80,Ledgerline,ledgerline-sova-80,0.852865,0.668997,0.886484,0.778416,0.931357,Ledgerline diverges through seed ledgers while retaining nari meaning.
+80,Orchardline,orchardline-tek-80,0.884865,0.665157,0.861724,0.790416,0.865057,Orchardline diverges through water terraces while retaining lum meaning.
+80,Rainline,rainline-nari-80,0.916865,0.643717,0.869964,0.780416,0.921657,Rainline diverges through weather bells while retaining sova meaning.
+81,Hearthline,hearthline-lum-81,0.75702,0.729252,0.895736,0.815649,0.885749,Hearthline diverges through hearth ceramics while retaining lum meaning.
+81,Routeline,routeline-tek-81,0.78902,0.699012,0.887976,0.794649,0.921549,Routeline diverges through stone bridge joints while retaining tek meaning.
+81,Marketline,marketline-melo-81,0.82102,0.688772,0.875216,0.798649,0.870849,Marketline diverges through measure weights while retaining melo meaning.
+81,Ledgerline,ledgerline-nari-81,0.85302,0.668932,0.886456,0.790649,0.931349,Ledgerline diverges through seed ledgers while retaining nari meaning.
+81,Orchardline,orchardline-lum-81,0.88502,0.665092,0.861696,0.802649,0.865049,Orchardline diverges through water terraces while retaining lum meaning.
+81,Rainline,rainline-sova-81,0.91702,0.643652,0.869936,0.792649,0.921649,Rainline diverges through weather bells while retaining sova meaning.
+82,Hearthline,hearthline-ori-82,0.765876,0.725532,0.894142,0.813959,0.885306,Hearthline diverges through hearth ceramics while retaining lum meaning.
+82,Routeline,routeline-nari-82,0.797876,0.695292,0.886382,0.792959,0.921106,Routeline diverges through stone bridge joints while retaining tek meaning.
+82,Marketline,marketline-keth-82,0.829876,0.685052,0.873622,0.796959,0.870406,Marketline diverges through measure weights while retaining melo meaning.
+82,Ledgerline,ledgerline-vonn-82,0.861876,0.665212,0.884862,0.788959,0.930906,Ledgerline diverges through seed ledgers while retaining nari meaning.
+82,Orchardline,orchardline-melo-82,0.893876,0.661372,0.860102,0.800959,0.864606,Orchardline diverges through water terraces while retaining lum meaning.
+82,Rainline,rainline-vonn-82,0.92,0.6424,0.8694,0.790959,0.9215,Rainline diverges through weather bells while retaining sova meaning.
+83,Hearthline,hearthline-sova-83,0.773502,0.722329,0.89277,0.864237,0.884925,Hearthline diverges through hearth ceramics while retaining lum meaning.
+83,Routeline,routeline-keth-83,0.805502,0.692089,0.88501,0.843237,0.920725,Routeline diverges through stone bridge joints while retaining tek meaning.
+83,Marketline,marketline-vonn-83,0.837502,0.681849,0.87225,0.847237,0.870025,Marketline diverges through measure weights while retaining melo meaning.
+83,Ledgerline,ledgerline-sova-83,0.869502,0.662009,0.88349,0.839237,0.930525,Ledgerline diverges through seed ledgers while retaining nari meaning.
+83,Orchardline,orchardline-tek-83,0.901502,0.658169,0.85873,0.851237,0.864225,Orchardline diverges through water terraces while retaining lum meaning.
+83,Rainline,rainline-nari-83,0.92,0.6424,0.8694,0.841237,0.9215,Rainline diverges through weather bells while retaining sova meaning.
+84,Hearthline,hearthline-lum-84,0.788993,0.715823,0.889981,0.801932,0.88415,Hearthline diverges through hearth ceramics while retaining lum meaning.
+84,Routeline,routeline-tek-84,0.820993,0.685583,0.882221,0.780932,0.91995,Routeline diverges through stone bridge joints while retaining tek meaning.
+84,Marketline,marketline-melo-84,0.852993,0.675343,0.869461,0.784932,0.86925,Marketline diverges through measure weights while retaining melo meaning.
+84,Ledgerline,ledgerline-nari-84,0.884993,0.655503,0.880701,0.776932,0.92975,Ledgerline diverges through seed ledgers while retaining nari meaning.
+84,Orchardline,orchardline-lum-84,0.916993,0.651663,0.855941,0.788932,0.86345,Orchardline diverges through water terraces while retaining lum meaning.
+84,Rainline,rainline-sova-84,0.92,0.6424,0.8694,0.778932,0.9215,Rainline diverges through weather bells while retaining sova meaning.

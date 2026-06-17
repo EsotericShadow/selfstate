@@ -304,3 +304,7 @@ Report 245 adds population-level cultural diffusion across six households. It ge
 ## Report 246 Browser World v6 Generational Cultural Inheritance Bridge Note
 
 Report 246 carries culture across 18 simulated generations. It generates 108 generation lineage frames, 324 child learning arc frames, 324 cultural inheritance frames, 432 lineage memory frames, 108 avatar legacy frames, 108 welfare inheritance frames, 108 replay generational frames, and 108 browser-world v6 ticks. The run passes with readiness 0.941430 and weakest-channel score 0.833333. The weakest channel is welfare guardrail inheritance, correctly marking that intergenerational culture must preserve child welfare, sleep protection, boundary clauses, recovery paths, shame minimization, harmful-legacy blocking, and autonomy.
+
+## Report 247 Browser World v7 Thousands-Year Pre-Avatar Epoch Bridge Note
+
+Report 247 compresses a 4,200-year pre-avatar epoch into inspectable browser-world v7 rows. It generates 84 epoch compression frames, 504 lineage divergence frames, 504 technology inheritance frames, 504 welfare guardrail frames, 7 avatar-entry ceremony gates, 84 replay epoch frames, and 84 browser-world v7 ticks. The run passes with readiness 0.972949 and weakest-channel score 0.843209. All final avatar-entry gates pass; ritual-boundary retention and technology inheritance continuity remain the next pressure points.

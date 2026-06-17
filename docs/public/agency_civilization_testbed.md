@@ -32,7 +32,9 @@ Report 145 adds autonomous live-agent ticks: agents keep sensing, updating inter
 
 Report 146 adds persistent object affordances: named objects have locations, integrity, stock, wetness, heat, pathogen risk, owners, affordance lists, required materials, inventory costs, repair/crafting loops, sensory bindings, and object histories.
 
-This is still not a completed playable civilization. Report 147 adds place-based object navigation: objects are bound to places, routes have terrain costs and hazards, agents plan paths, spend body state while traveling, use sensory gradients, update route memory, exchange wayfinding, and interact with objects only after arrival. Place-navigation readiness is `0.948822`. The next gate is larger agent-made route/object histories and learned/open-ended navigation/interpretation rather than deterministic bridge policies.
+Report 147 adds place-based object navigation: objects are bound to places, routes have terrain costs and hazards, agents plan paths, spend body state while traveling, use sensory gradients, update route memory, exchange wayfinding, and interact with objects only after arrival.
+
+This is still not a completed playable civilization. Report 148 adds agent-made infrastructure: agents spend materials and coordinate labor to build roads, drains, watch posts, signs, covered walks, channels, and route improvements that mutate route cost, route hazard, object accessibility, and maintenance histories. Infrastructure readiness is `0.829745`. The next gate is agent-created project proposals, conflict over infrastructure priorities, long-run maintenance debt, and learned/open-ended interpretation rather than deterministic bridge policies.
 
 ## What The Testbed Can Study
 

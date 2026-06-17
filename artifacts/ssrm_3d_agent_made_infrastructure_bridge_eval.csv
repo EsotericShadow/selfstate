@@ -1,0 +1,10 @@
+condition,cycles,project_count,completed_projects,project_completion_rate,material_expenditure_rate,social_labor_coordination_rate,route_mutation_rate,route_cost_reduction_score,hazard_reduction_score,maintenance_sustainability,sensory_site_alignment,object_route_coupling_rate,accessibility_gain,infrastructure_history_persistence,trace_completeness,infrastructure_readiness
+integrated_agent_made_infrastructure,84,10,10,1.0,1.0,1.0,1.0,0.087778,0.078333,0.768008,0.620519,1.0,0.109286,1.0,1.0,0.829745
+no_infrastructure_projects,84,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.08
+no_material_expenditure,84,10,0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.625737,0.0,0.0,1.0,1.0,0.300059
+no_social_labor,84,10,0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.64163,0.0,0.0,1.0,1.0,0.30133
+no_route_mutation,84,10,10,1.0,1.0,1.0,0.0,0.0,0.0,0.768008,0.620519,1.0,0.109286,1.0,1.0,0.683134
+no_maintenance_decay,84,10,10,1.0,1.0,1.0,1.0,0.087778,0.078333,0.0,0.619183,1.0,0.109286,1.0,1.0,0.760517
+no_sensory_site_selection,84,10,9,0.9,1.0,1.0,1.0,0.083333,0.075,0.770083,0.0,1.0,0.097143,1.0,1.0,0.766027
+no_object_route_coupling,84,10,10,1.0,1.0,1.0,1.0,0.087778,0.078333,0.768008,0.620519,0.0,0.0,1.0,1.0,0.745373
+no_trace_replay,84,10,10,1.0,1.0,1.0,1.0,0.087778,0.078333,0.768008,0.620519,1.0,0.109286,1.0,0.0,0.749745

@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Agent-Made Infrastructure Bridge</title>
+  <script src="../artifacts/ssrm_3d_agent_made_infrastructure_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_agent_made_infrastructure_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_agent_made_infrastructure_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #17211d;
+      --paper: #e9dec1;
+      --panel: #fff8e8;
+      --line: #c7ad72;
+      --moss: #3f6447;
+      --clay: #9a4a2b;
+      --water: #3f7287;
+      --gold: #bd8929;
+      --stone: #59616f;
+      --muted: #687167;
+      --shadow: rgba(23, 33, 29, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 14% 12%, rgba(189, 137, 41, 0.24), transparent 24%),
+        radial-gradient(circle at 86% 14%, rgba(63, 114, 135, 0.22), transparent 28%),
+        linear-gradient(140deg, rgba(63, 100, 71, 0.24), transparent 46%),
+        var(--paper);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+
+    .shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(580px, 1fr) 455px;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    .stage,
+    .panel {
+      border: 1px solid var(--line);
+      background: rgba(255, 248, 232, 0.94);
+      box-shadow: 0 22px 52px var(--shadow);
+      overflow: hidden;
+    }
+
+    .stage { display: grid; grid-template-rows: auto minmax(540px, 1fr) auto; }
+
+    header,
+    .hud,
+    .panel-head,
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      flex-wrap: wrap;
+    }
+
+    header { justify-content: space-between; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-family: Georgia, serif; font-size: clamp(1.35rem, 2.5vw, 2.4rem); }
+    h2 { font-size: 1rem; }
+    h3 { color: var(--muted); font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+    .badge,
+    button {
+      border: 1px solid var(--line);
+      background: #f3e5c7;
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
+    .badge { padding: 6px 8px; }
+    button { min-height: 38px; padding: 8px 10px; cursor: pointer; }
+    button:hover, button.active { background: var(--moss); color: #fff8e8; border-color: var(--moss); }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      min-height: 540px;
+      display: block;
+      background:
+        linear-gradient(rgba(23, 33, 29, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 33, 29, 0.05) 1px, transparent 1px),
+        #e2d2b0;
+      background-size: 34px 34px;
+    }
+
+    .hud { border-top: 1px solid var(--line); border-bottom: 0; }
+    .metric { min-width: 112px; display: grid; gap: 4px; color: var(--muted); font-size: 0.74rem; }
+    .metric strong { color: var(--ink); font-size: 1rem; }
+
+    .panel { display: grid; grid-template-rows: auto auto minmax(300px, 1fr); min-height: calc(100vh - 32px); }
+    .controls button { flex: 1 1 30%; }
+    .detail { overflow: auto; display: grid; align-content: start; gap: 12px; padding: 14px; }
+    .project-row { border: 1px solid var(--line); background: rgba(255, 252, 242, 0.82); padding: 9px; cursor: pointer; }
+    .project-row.active { border-color: var(--clay); box-shadow: inset 0 0 0 2px rgba(154, 74, 43, 0.20); }
+    .bar-row { display: grid; grid-template-columns: 112px 1fr 44px; gap: 8px; align-items: center; font-size: 0.80rem; }
+    .bar { height: 8px; background: #d8c394; overflow: hidden; }
+    .bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--water), var(--gold), var(--clay)); }
+    .log { display: grid; gap: 8px; border-top: 1px solid var(--line); background: #e4d2ad; padding: 12px; }
+    .line { border-left: 3px solid var(--moss); background: rgba(255, 248, 232, 0.9); padding: 8px 10px; font-size: 0.84rem; line-height: 1.35; }
+
+    @media (max-width: 980px) {
+      .shell { grid-template-columns: 1fr; }
+      .panel { min-height: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <main class="stage">
+      <header>
+        <div>
+          <h1>Agent-Made Infrastructure</h1>
+          <p>Agents build roads, drains, watch posts, signs, covered walks, channels, and route improvements.</p>
+        </div>
+        <span class="badge" id="verdict">loading</span>
+      </header>
+      <canvas id="world" width="1120" height="760"></canvas>
+      <section class="hud" id="hud"></section>
+    </main>
+
+    <aside class="panel">
+      <div class="panel-head">
+        <h2>Infrastructure Console</h2>
+        <span class="badge">Report 148</span>
+        <span class="badge" id="projectBadge">project</span>
+      </div>
+      <div class="controls">
+        <button id="prev">prev</button>
+        <button id="next">next</button>
+        <button id="maintain">local maintain</button>
+      </div>
+      <div class="detail" id="detail"></div>
+    </aside>
+  </div>
+
+  <script>
+    const payload = window.SSRM_3D_AGENT_MADE_INFRASTRUCTURE_BRIDGE_RESULTS || { verdict: {}, trace: [], final_state: { projects: {}, places: {}, routes: {}, objects: {} } };
+    const generated = window.SSRM_3D_AGENT_MADE_INFRASTRUCTURE_BRIDGE_STATE || payload.final_state || { projects: {}, places: {}, routes: {}, objects: {} };
+    const state = {
+      selected: 0,
+      projects: Object.values(generated.projects || {}),
+      places: generated.places || {},
+      routes: generated.routes || {},
+      objects: generated.objects || {},
+      log: []
+    };
+
+    const kindColor = { road: "#3f6447", drainage: "#3f7287", stairs: "#59616f", watch: "#9a4a2b", covered_walk: "#7a7448", switchback: "#637b3c", haul_path: "#8b6632", signage: "#bd8929", channel: "#3f7287", signal: "#7d5b34" };
+    function clamp(value, low = 0, high = 1) { return Math.max(low, Math.min(high, value)); }
+    function fmt(value) { return Number(value || 0).toFixed(3); }
+    function project() { return state.projects[state.selected] || state.projects[0] || {}; }
+    function projectPoint(placeId) { const p = state.places[placeId] || { x: 0, z: 0 }; return { x: 560 + Number(p.x || 0) * 44, y: 380 + Number(p.z || 0) * 44 }; }
+
+    function renderHud() {
+      const v = payload.verdict || {};
+      document.getElementById("verdict").textContent = `verdict: ${v.verdict || "local"}`;
+      const rows = [
+        ["readiness", v.full_infrastructure_readiness || 0],
+        ["complete", v.full_project_completion_rate || 0],
+        ["materials", v.full_material_expenditure_rate || 0],
+        ["labor", v.full_social_labor_coordination_rate || 0],
+        ["routes", v.full_route_mutation_rate || 0],
+        ["trace", v.full_trace_completeness || 0]
+      ];
+      document.getElementById("hud").innerHTML = rows.map(([label, value]) => `<div class="metric">${label}<strong>${fmt(value)}</strong></div>`).join("");
+    }
+
+    function renderDetail() {
+      const item = project();
+      document.getElementById("projectBadge").textContent = item.name || "project";
+      const bars = [["progress", item.progress], ["integrity", item.integrity], ["maintained", Math.min(1, (item.maintained || 0) / 6)], ["materials", Math.min(1, (item.spent_events || 0) / 8)], ["labor", Math.min(1, (item.labor_events || 0) / 8)]].map(([name, value]) => `<div class="bar-row"><span>${name}</span><div class="bar"><span style="width:${clamp(value) * 100}%"></span></div><strong>${fmt(value)}</strong></div>`).join("");
+      const rows = state.projects.map((entry, index) => `<div class="project-row ${index === state.selected ? "active" : ""}" data-index="${index}"><strong>${entry.name}</strong><br><small>${entry.kind}; ${entry.route.join(" -> ")}; ${entry.object}</small></div>`).join("");
+      const log = state.log.slice(0, 8).map((line) => `<div class="line">${line}</div>`).join("");
+      document.getElementById("detail").innerHTML = `
+        <h2>${item.name || "project"}</h2>
+        <p>route: ${(item.route || []).join(" -> ")}</p>
+        <p>object link: ${item.object || "none"}; kind: ${item.kind || "unknown"}</p>
+        ${bars}
+        <h3>Projects</h3>
+        <div class="log">${rows}</div>
+        <h3>Local maintenance trace</h3>
+        <div class="log">${log || "<div class='line'>Select a project and apply local maintenance.</div>"}</div>
+      `;
+      document.querySelectorAll(".project-row").forEach((el) => el.addEventListener("click", () => { state.selected = Number(el.dataset.index); renderAll(); }));
+    }
+
+    function drawWorld() {
+      const canvas = document.getElementById("world");
+      const ctx = canvas.getContext("2d");
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#e2d2b0";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      Object.values(state.routes).forEach((route) => {
+        const a = projectPoint(route.src);
+        const b = projectPoint(route.dst);
+        const improved = (route.built_projects || []).length > 0;
+        ctx.strokeStyle = improved ? "rgba(154, 74, 43, 0.70)" : "rgba(23, 33, 29, 0.18)";
+        ctx.lineWidth = improved ? 4 : 2;
+        ctx.beginPath();
+        ctx.moveTo(a.x, a.y);
+        ctx.lineTo(b.x, b.y);
+        ctx.stroke();
+      });
+      Object.values(state.places).forEach((place) => {
+        const p = projectPoint(place.id);
+        ctx.fillStyle = "#3f6447";
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 11 + (place.visited || 0) * 0.18, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "#17211d";
+        ctx.font = "700 12px Avenir Next, sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText(place.name.split(" ")[0], p.x, p.y - 18);
+      });
+      state.projects.forEach((item, index) => {
+        if (!item.route) return;
+        const a = projectPoint(item.route[0]);
+        const b = projectPoint(item.route[1]);
+        const mx = (a.x + b.x) / 2;
+        const my = (a.y + b.y) / 2;
+        ctx.fillStyle = index === state.selected ? "#bd8929" : (kindColor[item.kind] || "#9a4a2b");
+        ctx.globalAlpha = 0.45 + (item.integrity || 0) * 0.55;
+        ctx.fillRect(mx - 10, my - 10, 20 + (item.progress || 0) * 10, 20 + (item.progress || 0) * 10);
+        ctx.globalAlpha = 1;
+      });
+      ctx.fillStyle = "#17211d";
+      ctx.textAlign = "left";
+      ctx.font = "700 22px Georgia";
+      ctx.fillText(`built projects: ${state.projects.filter((p) => p.completed).length}`, 32, 48);
+    }
+
+    function maintain() {
+      const item = project();
+      item.integrity = clamp((item.integrity || 0) + 0.05);
+      item.maintained = (item.maintained || 0) + 1;
+      state.log.unshift(`${item.name} maintained locally; integrity ${fmt(item.integrity)}`);
+      renderAll();
+    }
+
+    function renderAll() { renderHud(); renderDetail(); drawWorld(); }
+    document.getElementById("prev").addEventListener("click", () => { state.selected = Math.max(0, state.selected - 1); renderAll(); });
+    document.getElementById("next").addEventListener("click", () => { state.selected = Math.min(state.projects.length - 1, state.selected + 1); renderAll(); });
+    document.getElementById("maintain").addEventListener("click", maintain);
+    renderAll();
+  </script>
+</body>
+</html>

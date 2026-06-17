@@ -1,0 +1,2 @@
+gate_id,entry_year,required_history_years,observed_history_years,language_layers_required,language_layers_observed,institution_layers_required,institution_layers_observed,pre_entry_noninterference,public_briefing,private_boundary,gate_passed
+avatar-entry-after-deep-history,3180,3000,4980,10,10,6,6,True,"Avatar learns threshold-common, boundary words, public institutions, and crisis memories before free movement.","Avatar sees public archives and sealed digests, not private workspace contents.",True

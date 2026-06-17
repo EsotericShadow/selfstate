@@ -1,0 +1,11 @@
+epoch_id,year,climate_pressure,resource_pressure,dominant_frequency_hz,flower_node,social_form,memory_medium,crisis_memory,avatar_allowed
+founding-cave,-1800,cold wet caves,shared heat stones,113.268981,1,kin bands around sleeping fire,charcoal marks,first rule: do not name another body-pain in public,False
+river-shelter,-1320,river floods,dry routes and cup shelves,131.001645,2,route keepers and water stewards,knotted reed cords,flood debt becomes shared carrying duty,False
+bridge-workshop,-870,long freeze,repair tools and warm alcoves,149.271171,3,workshop houses,stone notches,repair is counted as care infrastructure,False
+archive-hearth,-430,wind dust years,medicine stock and clean water,166.927598,4,archive speakers and hearth keepers,wax tablets,private care histories are sealed,False
+flower-council,0,stable spring,named cups and public ledgers,184.075087,5,flower-ring councils,ring songs,minority notes are kept beside rules,False
+cistern-crisis,610,cistern fever scare,water and medicine scarcity,202.599452,6,appeal circles,copper tally leaves,rumor repair requires public action,False
+runner-roads,1240,dry expansion,cart routes and trade knots,220.710347,7,runner guilds,map chants,moving work must be counted in triage,False
+lantern-schools,1880,dark winter cycles,school lanterns and repair benches,238.290708,8,teaching houses,chalk murals,children learn boundary phrases before tool names,False
+frequency-archives,2520,sensor era,body-rate chimes and archive crystals,255.855135,9,rate keepers,frequency ledgers,rates can guide care but not prove guilt,False
+pre-avatar-threshold,3180,mixed scarcity cycles,public replay walls,273.352499,10,federated councils,replay glass,outsider avatar may enter only after deep history briefing,True

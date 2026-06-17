@@ -1,0 +1,7 @@
+technology_id,origin_year,current_year,root_material,current_artifact,generations_of_use,repair_knowledge_retention,ritual_or_institution_link,frequency_hz,flower_node
+heat-stone-to-blanket-chime,-1800,3180,river stone,thermal blanket chime,166,0.87,warm-stone-near-rest,132.0,1
+reed-cord-to-water-ledger,-1320,3180,reed cord,public cistern tally wall,150,0.84,reed-carrying-duty,168.0,4
+stone-notch-to-tool-receipt,-870,3180,notched stone,tool return replay receipt,135,0.89,tool-return-receipt,207.0,7
+wax-tablet-to-sealed-archive,-430,3180,wax tablet,sealed frequency archive,121,0.82,sealed-care-flap,249.0,10
+ring-song-to-replay-wall,0,3180,voice ring,public replay wall,106,0.78,minority-note-ring,286.0,6
+threshold-marker-to-avatar-gate,2520,3180,rate crystal,avatar threshold gate,22,0.73,avatar-threshold-welcome,333.0,12

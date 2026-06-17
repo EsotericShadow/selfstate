@@ -1,0 +1,108 @@
+{
+  "ablations": [
+    {
+      "ablation": "no_multi_turn_dialogue",
+      "interpretation": "Negotiation collapses back into one-shot terms.",
+      "readiness_after_ablation": 0.544916,
+      "readiness_loss": 0.36
+    },
+    {
+      "ablation": "no_counteroffer_loops",
+      "interpretation": "Agents stop revising offers across turns.",
+      "readiness_after_ablation": 0.589916,
+      "readiness_loss": 0.315
+    },
+    {
+      "ablation": "no_compromise_ceremony",
+      "interpretation": "Compromises lose public ritual memory and later recall hooks.",
+      "readiness_after_ablation": 0.629916,
+      "readiness_loss": 0.275
+    },
+    {
+      "ablation": "no_body_world_expression",
+      "interpretation": "Negotiation terms no longer become posture, movement, or object access.",
+      "readiness_after_ablation": 0.649916,
+      "readiness_loss": 0.255
+    },
+    {
+      "ablation": "no_multi_sensory_binding",
+      "interpretation": "Dialogue detaches from sound, smell, temperature, wetness, comfort, and pain pressure.",
+      "readiness_after_ablation": 0.689916,
+      "readiness_loss": 0.215
+    },
+    {
+      "ablation": "no_breakdown_repair",
+      "interpretation": "Failed dialogue can stall without repair turns or bounded residue.",
+      "readiness_after_ablation": 0.714916,
+      "readiness_loss": 0.19
+    }
+  ],
+  "artifacts": {
+    "body_world_expressions_csv": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_body_world_expressions.csv",
+    "browser_ticks_csv": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_browser_ticks.csv",
+    "ceremony_memory_recalls_csv": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_ceremony_memory_recalls.csv",
+    "compromise_ceremonies_csv": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_compromise_ceremonies.csv",
+    "counteroffer_loops_csv": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_counteroffer_loops.csv",
+    "dialogue_breakdown_repairs_csv": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_dialogue_breakdown_repairs.csv",
+    "dialogue_turns_csv": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_dialogue_turns.csv",
+    "negotiation_dialogue_replays_csv": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_negotiation_dialogue_replays.csv",
+    "proposal_revisions_csv": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_proposal_revisions.csv",
+    "results_json": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_results.json",
+    "sensory_negotiations_csv": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_sensory_negotiations.csv",
+    "state_json": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_state.json",
+    "summary_csv": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_summary.csv",
+    "verdict_csv": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_verdict.csv",
+    "visualization_html": "visualizations/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge.html"
+  },
+  "claim_boundary": "Deterministic browser-local negotiation dialogue scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "agents": 6,
+    "body_world_expression_frames": 288,
+    "browser_world_v18_ticks": 288,
+    "ceremony_memory_recall_frames": 288,
+    "compromise_ceremony_frames": 288,
+    "counteroffer_loop_frames": 288,
+    "dialogue_breakdown_repair_frames": 288,
+    "dialogue_turn_frames": 288,
+    "negotiation_dialogue_replay_frames": 288,
+    "proposal_revision_frames": 288,
+    "sensory_negotiation_frames": 288
+  },
+  "days": 24,
+  "metrics": {
+    "agent_led_turn_rate": 0.965278,
+    "avatar_not_primary_author": 0.965278,
+    "boundary_preserved_during_revision": 0.965278,
+    "browser_world_v18_negotiation_dialogue_readiness": 0.904916,
+    "browser_world_v18_surface_available": 1.0,
+    "comfort_pain_boundedness": 1.0,
+    "completed_loop_count": 249.0,
+    "compromise_ceremony_rate": 0.836806,
+    "concession_without_erasure": 0.90625,
+    "counteroffer_loop_completion": 0.864583,
+    "dialogue_to_body_world_expression": 0.958333,
+    "mean_dialogue_channel_score": 0.950322,
+    "multi_sensory_dialogue_binding": 0.965278,
+    "multi_turn_dialogue_surface": 1.0,
+    "no_torture_loop_guardrail": 0.996528,
+    "privacy_safe_dialogue_terms": 1.0,
+    "proposal_revision_depth": 0.89875,
+    "public_ceremony_integrity": 0.970954,
+    "remembered_ceremony_recall": 0.92029,
+    "repair_after_dialogue_breakdown": 0.962963,
+    "replay_dialogue_integrity": 0.9925,
+    "sensory_frequency_flower_dialogue_rhythm": 1.0,
+    "source_counterproposal_compromise_continuity": 1.0,
+    "typed_dialogue_confidence": 0.849125,
+    "visible_body_expression_binding": 0.888889,
+    "weakest_channel_score": 0.836806
+  },
+  "name": "SSRM-3D browser world v18 agent-led negotiation dialogue ceremony bridge",
+  "next_gate": "browser world v19 with embodied negotiation animation states, turn-taking gestures, proximity choreography, and object-handling ceremonies tied to multi-sensory dialogue",
+  "report": 258,
+  "seed": 20260871,
+  "source_dependency": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_results.json",
+  "source_verdict": "pass",
+  "turns_per_day": 12,
+  "verdict": "pass"
+}

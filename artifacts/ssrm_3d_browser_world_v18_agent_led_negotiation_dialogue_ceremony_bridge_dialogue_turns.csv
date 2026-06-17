@@ -1,0 +1,289 @@
+tick,day,loop_id,turn_index,speaker,listener,turn_type,utterance_template,agent_led,references_prior_term,asks_clarification,revises_offer,dialogue_confidence,private_workspace_sealed
+0,1,v18-loop-001,0,Keth,Nari,counteroffer,Keth: I can accept a later help if do not erase route warnings remains visible.,0,0,0,1,0.812,1
+1,1,v18-loop-001,1,Melo,Ori,counteroffer,Melo: I can accept a public witness if fair turns before tool access remains visible.,1,0,0,1,0.8315,1
+2,1,v18-loop-001,2,Nari,Vonn,witness,Nari: I can accept a quiet interval if sealed notes stay sealed remains visible.,1,0,1,0,0.838,1
+3,1,v18-loop-001,3,Ori,Sova,counteroffer,Ori: I can accept a return marker if repair work needs warning remains visible.,1,0,0,1,0.8445,1
+4,1,v18-loop-001,4,Vonn,Keth,state_boundary,Vonn: I can accept a shared schedule knot if quiet recovery needs distance remains visible.,1,0,0,0,0.851,1
+5,1,v18-loop-001,5,Sova,Melo,accept,Sova: I can accept a shorter turn if no crowding while resting remains visible.,1,0,0,0,0.8575,1
+6,1,v18-loop-002,6,Keth,Nari,witness,Keth: I can accept a later help if do not erase route warnings remains visible.,1,0,0,0,0.864,1
+7,1,v18-loop-002,7,Melo,Ori,counteroffer,Melo: I can accept a public witness if fair turns before tool access remains visible.,1,0,0,1,0.8705,1
+8,1,v18-loop-002,8,Nari,Vonn,state_boundary,Nari: I can accept a quiet interval if sealed notes stay sealed remains visible.,1,0,0,0,0.877,1
+9,1,v18-loop-002,9,Ori,Sova,accept,Ori: I can accept a return marker if repair work needs warning remains visible.,1,0,0,0,0.825,1
+10,1,v18-loop-002,10,Vonn,Keth,accept,Vonn: I can accept a shared schedule knot if quiet recovery needs distance remains visible.,1,0,0,0,0.8315,1
+11,1,v18-loop-002,11,Sova,Melo,counteroffer,Sova: I can accept a shorter turn if no crowding while resting remains visible.,1,0,0,1,0.838,1
+12,2,v18-loop-003,0,Melo,Ori,state_boundary,Melo: I remember v18-ceremony-d01-t07; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+13,2,v18-loop-003,1,Nari,Vonn,witness,Nari: I remember v18-ceremony-d01-t09; keep that boundary while we revise this.,1,1,0,0,0.851,1
+14,2,v18-loop-003,2,Ori,Sova,witness,Ori: I remember v18-ceremony-d01-t10; keep that boundary while we revise this.,1,1,0,1,0.8575,1
+15,2,v18-loop-003,3,Vonn,Keth,revise,Vonn: I remember v18-ceremony-d01-t11; keep that boundary while we revise this.,1,1,1,1,0.864,1
+16,2,v18-loop-003,4,Sova,Melo,revise,Sova: I remember v18-ceremony-d01-t02; keep that boundary while we revise this.,1,1,0,1,0.8705,1
+17,2,v18-loop-003,5,Keth,Nari,accept,Keth: I remember v18-ceremony-d01-t03; keep that boundary while we revise this.,1,1,0,0,0.877,1
+18,2,v18-loop-004,6,Melo,Ori,witness,Melo: I remember v18-ceremony-d01-t05; keep that boundary while we revise this.,1,1,0,0,0.825,1
+19,2,v18-loop-004,7,Nari,Vonn,counteroffer,Nari: I remember v18-ceremony-d01-t06; keep that boundary while we revise this.,1,1,0,1,0.8315,1
+20,2,v18-loop-004,8,Ori,Sova,state_boundary,Ori: I can accept a return marker if repair work needs warning remains visible.,1,0,0,0,0.838,1
+21,2,v18-loop-004,9,Vonn,Keth,repair,Vonn: I remember v18-ceremony-d01-t09; keep that boundary while we revise this.,1,1,0,1,0.8445,1
+22,2,v18-loop-004,10,Sova,Melo,clarify,Sova: I remember v18-ceremony-d01-t10; keep that boundary while we revise this.,1,1,1,0,0.841,1
+23,2,v18-loop-004,11,Keth,Nari,witness,Keth: I remember v18-ceremony-d01-t11; keep that boundary while we revise this.,1,1,0,0,0.8575,1
+24,3,v18-loop-005,0,Nari,Vonn,clarify,Nari: I remember v18-ceremony-d01-t10; keep that boundary while we revise this.,1,1,1,0,0.854,1
+25,3,v18-loop-005,1,Ori,Sova,clarify,Ori: I remember v18-ceremony-d01-t11; keep that boundary while we revise this.,1,1,1,0,0.8605,1
+26,3,v18-loop-005,2,Vonn,Keth,counteroffer,Vonn: I remember v18-ceremony-d02-t01; keep that boundary while we revise this.,1,1,0,1,0.877,1
+27,3,v18-loop-005,3,Sova,Melo,revise,Sova: I remember v18-ceremony-d02-t02; keep that boundary while we revise this.,1,1,0,1,0.825,1
+28,3,v18-loop-005,4,Keth,Nari,witness,Keth: I remember v18-ceremony-d02-t03; keep that boundary while we revise this.,1,1,1,1,0.8315,1
+29,3,v18-loop-005,5,Melo,Ori,accept,Melo: I remember v18-ceremony-d02-t04; keep that boundary while we revise this.,0,1,0,0,0.825,1
+30,3,v18-loop-006,6,Nari,Vonn,witness,Nari: I remember v18-ceremony-d02-t05; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+31,3,v18-loop-006,7,Ori,Sova,clarify,Ori: I remember v18-ceremony-d02-t06; keep that boundary while we revise this.,1,1,1,0,0.841,1
+32,3,v18-loop-006,8,Vonn,Keth,state_boundary,Vonn: I remember v18-ceremony-d02-t07; keep that boundary while we revise this.,1,1,0,0,0.8575,1
+33,3,v18-loop-006,9,Sova,Melo,repair,Sova: I remember v18-ceremony-d02-t09; keep that boundary while we revise this.,1,1,0,0,0.864,1
+34,3,v18-loop-006,10,Keth,Nari,accept,Keth: I remember v18-ceremony-d02-t10; keep that boundary while we revise this.,1,1,0,0,0.8705,1
+35,3,v18-loop-006,11,Melo,Ori,counteroffer,Melo: I remember v18-ceremony-d02-t11; keep that boundary while we revise this.,1,1,0,1,0.877,1
+36,4,v18-loop-007,0,Ori,Sova,revise,Ori: I remember v18-ceremony-d02-t02; keep that boundary while we revise this.,1,1,0,1,0.825,1
+37,4,v18-loop-007,1,Vonn,Keth,counteroffer,Vonn: I can accept a shared schedule knot if quiet recovery needs distance remains visible.,1,0,0,1,0.8315,1
+38,4,v18-loop-007,2,Sova,Melo,revise,Sova: I remember v18-ceremony-d02-t04; keep that boundary while we revise this.,1,1,0,1,0.838,1
+39,4,v18-loop-007,3,Keth,Nari,repair,Keth: I remember v18-ceremony-d02-t05; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+40,4,v18-loop-007,4,Melo,Ori,repair,Melo: I remember v18-ceremony-d02-t06; keep that boundary while we revise this.,1,1,0,0,0.851,1
+41,4,v18-loop-007,5,Nari,Vonn,witness,Nari: I remember v18-ceremony-d02-t07; keep that boundary while we revise this.,1,1,1,0,0.8575,1
+42,4,v18-loop-008,6,Ori,Sova,revise,Ori: I remember v18-ceremony-d02-t09; keep that boundary while we revise this.,1,1,0,1,0.864,1
+43,4,v18-loop-008,7,Vonn,Keth,clarify,Vonn: I remember v18-ceremony-d02-t10; keep that boundary while we revise this.,1,1,1,0,0.8605,1
+44,4,v18-loop-008,8,Sova,Melo,counteroffer,Sova: I remember v18-ceremony-d02-t11; keep that boundary while we revise this.,1,1,0,1,0.877,1
+45,4,v18-loop-008,9,Keth,Nari,clarify,Keth: I remember v18-ceremony-d03-t01; keep that boundary while we revise this.,1,1,1,0,0.815,1
+46,4,v18-loop-008,10,Melo,Ori,witness,Melo: I remember v18-ceremony-d03-t02; keep that boundary while we revise this.,1,1,0,0,0.8315,1
+47,4,v18-loop-008,11,Nari,Vonn,state_boundary,Nari: I remember v18-ceremony-d03-t03; keep that boundary while we revise this.,1,1,0,0,0.838,1
+48,5,v18-loop-009,0,Vonn,Keth,counteroffer,Vonn: I remember v18-ceremony-d02-t03; keep that boundary while we revise this.,1,1,0,1,0.8445,1
+49,5,v18-loop-009,1,Sova,Melo,state_boundary,Sova: I remember v18-ceremony-d02-t04; keep that boundary while we revise this.,1,1,0,1,0.851,1
+50,5,v18-loop-009,2,Keth,Nari,accept,Keth: I remember v18-ceremony-d02-t05; keep that boundary while we revise this.,1,1,0,0,0.8575,1
+51,5,v18-loop-009,3,Melo,Ori,revise,Melo: I remember v18-ceremony-d02-t06; keep that boundary while we revise this.,1,1,0,1,0.864,1
+52,5,v18-loop-009,4,Nari,Vonn,witness,Nari: I remember v18-ceremony-d02-t07; keep that boundary while we revise this.,1,1,0,0,0.8705,1
+53,5,v18-loop-009,5,Ori,Sova,clarify,Ori: I remember v18-ceremony-d02-t09; keep that boundary while we revise this.,1,1,1,0,0.867,1
+54,5,v18-loop-010,6,Vonn,Keth,witness,Vonn: I can accept a shared schedule knot if quiet recovery needs distance remains visible.,1,0,1,0,0.825,1
+55,5,v18-loop-010,7,Sova,Melo,accept,Sova: I remember v18-ceremony-d02-t11; keep that boundary while we revise this.,1,1,0,0,0.8315,1
+56,5,v18-loop-010,8,Keth,Nari,repair,Keth: I remember v18-ceremony-d03-t01; keep that boundary while we revise this.,1,1,0,1,0.838,1
+57,5,v18-loop-010,9,Melo,Ori,accept,Melo: I remember v18-ceremony-d03-t02; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+58,5,v18-loop-010,10,Nari,Vonn,witness,Nari: I remember v18-ceremony-d03-t03; keep that boundary while we revise this.,0,1,0,0,0.838,1
+59,5,v18-loop-010,11,Ori,Sova,witness,Ori: I remember v18-ceremony-d03-t04; keep that boundary while we revise this.,1,1,0,0,0.8575,1
+60,6,v18-loop-011,0,Sova,Melo,witness,Sova: I remember v18-ceremony-d02-t05; keep that boundary while we revise this.,1,1,0,0,0.864,1
+61,6,v18-loop-011,1,Keth,Nari,repair,Keth: I remember v18-ceremony-d02-t06; keep that boundary while we revise this.,1,1,0,0,0.8705,1
+62,6,v18-loop-011,2,Melo,Ori,accept,Melo: I remember v18-ceremony-d02-t07; keep that boundary while we revise this.,1,1,0,0,0.877,1
+63,6,v18-loop-011,3,Nari,Vonn,witness,Nari: I remember v18-ceremony-d02-t09; keep that boundary while we revise this.,1,1,0,1,0.825,1
+64,6,v18-loop-011,4,Ori,Sova,repair,Ori: I remember v18-ceremony-d02-t10; keep that boundary while we revise this.,1,1,0,0,0.8315,1
+65,6,v18-loop-011,5,Vonn,Keth,clarify,Vonn: I remember v18-ceremony-d02-t11; keep that boundary while we revise this.,1,1,1,0,0.828,1
+66,6,v18-loop-012,6,Sova,Melo,repair,Sova: I remember v18-ceremony-d03-t01; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+67,6,v18-loop-012,7,Keth,Nari,counteroffer,Keth: I remember v18-ceremony-d03-t02; keep that boundary while we revise this.,1,1,1,1,0.851,1
+68,6,v18-loop-012,8,Melo,Ori,revise,Melo: I remember v18-ceremony-d03-t03; keep that boundary while we revise this.,1,1,0,1,0.8575,1
+69,6,v18-loop-012,9,Nari,Vonn,accept,Nari: I remember v18-ceremony-d03-t04; keep that boundary while we revise this.,1,1,0,0,0.864,1
+70,6,v18-loop-012,10,Ori,Sova,counteroffer,Ori: I remember v18-ceremony-d03-t05; keep that boundary while we revise this.,1,1,0,1,0.8705,1
+71,6,v18-loop-012,11,Vonn,Keth,state_boundary,Vonn: I can accept a shared schedule knot if quiet recovery needs distance remains visible.,1,0,0,0,0.877,1
+72,7,v18-loop-013,0,Keth,Nari,repair,Keth: I remember v18-ceremony-d02-t07; keep that boundary while we revise this.,1,1,0,0,0.825,1
+73,7,v18-loop-013,1,Melo,Ori,counteroffer,Melo: I remember v18-ceremony-d02-t09; keep that boundary while we revise this.,1,1,0,1,0.8315,1
+74,7,v18-loop-013,2,Nari,Vonn,witness,Nari: I remember v18-ceremony-d02-t10; keep that boundary while we revise this.,1,1,0,0,0.838,1
+75,7,v18-loop-013,3,Ori,Sova,repair,Ori: I remember v18-ceremony-d02-t11; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+76,7,v18-loop-013,4,Vonn,Keth,counteroffer,Vonn: I remember v18-ceremony-d03-t01; keep that boundary while we revise this.,1,1,0,1,0.851,1
+77,7,v18-loop-013,5,Sova,Melo,counteroffer,Sova: I remember v18-ceremony-d03-t02; keep that boundary while we revise this.,1,1,0,1,0.8575,1
+78,7,v18-loop-014,6,Keth,Nari,revise,Keth: I remember v18-ceremony-d03-t03; keep that boundary while we revise this.,1,1,0,1,0.864,1
+79,7,v18-loop-014,7,Melo,Ori,state_boundary,Melo: I remember v18-ceremony-d03-t04; keep that boundary while we revise this.,1,1,0,0,0.8705,1
+80,7,v18-loop-014,8,Nari,Vonn,state_boundary,Nari: I remember v18-ceremony-d03-t05; keep that boundary while we revise this.,1,1,1,0,0.877,1
+81,7,v18-loop-014,9,Ori,Sova,repair,Ori: I remember v18-ceremony-d03-t08; keep that boundary while we revise this.,1,1,0,0,0.825,1
+82,7,v18-loop-014,10,Vonn,Keth,clarify,Vonn: I remember v18-ceremony-d03-t09; keep that boundary while we revise this.,1,1,1,0,0.8215,1
+83,7,v18-loop-014,11,Sova,Melo,clarify,Sova: I remember v18-ceremony-d03-t10; keep that boundary while we revise this.,1,1,1,0,0.828,1
+84,8,v18-loop-015,0,Melo,Ori,witness,Melo: I remember v18-ceremony-d02-t09; keep that boundary while we revise this.,1,1,0,1,0.8445,1
+85,8,v18-loop-015,1,Nari,Vonn,revise,Nari: I remember v18-ceremony-d02-t10; keep that boundary while we revise this.,1,1,0,1,0.851,1
+86,8,v18-loop-015,2,Ori,Sova,clarify,Ori: I remember v18-ceremony-d02-t11; keep that boundary while we revise this.,1,1,1,0,0.8475,1
+87,8,v18-loop-015,3,Vonn,Keth,state_boundary,Vonn: I remember v18-ceremony-d03-t01; keep that boundary while we revise this.,0,1,0,0,0.851,1
+88,8,v18-loop-015,4,Sova,Melo,witness,Sova: I can accept a shorter turn if no crowding while resting remains visible.,1,0,0,0,0.8705,1
+89,8,v18-loop-015,5,Keth,Nari,clarify,Keth: I remember v18-ceremony-d03-t03; keep that boundary while we revise this.,1,1,1,0,0.867,1
+90,8,v18-loop-016,6,Melo,Ori,counteroffer,Melo: I remember v18-ceremony-d03-t04; keep that boundary while we revise this.,1,1,0,1,0.825,1
+91,8,v18-loop-016,7,Nari,Vonn,clarify,Nari: I remember v18-ceremony-d03-t05; keep that boundary while we revise this.,1,1,1,1,0.8215,1
+92,8,v18-loop-016,8,Ori,Sova,revise,Ori: I remember v18-ceremony-d03-t08; keep that boundary while we revise this.,1,1,0,1,0.838,1
+93,8,v18-loop-016,9,Vonn,Keth,revise,Vonn: I remember v18-ceremony-d03-t09; keep that boundary while we revise this.,1,1,1,1,0.8445,1
+94,8,v18-loop-016,10,Sova,Melo,state_boundary,Sova: I remember v18-ceremony-d03-t10; keep that boundary while we revise this.,1,1,0,0,0.851,1
+95,8,v18-loop-016,11,Keth,Nari,revise,Keth: I remember v18-ceremony-d03-t11; keep that boundary while we revise this.,1,1,0,1,0.8575,1
+96,9,v18-loop-017,0,Nari,Vonn,repair,Nari: I remember v18-ceremony-d03-t01; keep that boundary while we revise this.,1,1,0,0,0.864,1
+97,9,v18-loop-017,1,Ori,Sova,revise,Ori: I remember v18-ceremony-d03-t02; keep that boundary while we revise this.,1,1,0,1,0.8705,1
+98,9,v18-loop-017,2,Vonn,Keth,state_boundary,Vonn: I remember v18-ceremony-d03-t03; keep that boundary while we revise this.,1,1,0,1,0.877,1
+99,9,v18-loop-017,3,Sova,Melo,accept,Sova: I remember v18-ceremony-d03-t04; keep that boundary while we revise this.,1,1,0,0,0.825,1
+100,9,v18-loop-017,4,Keth,Nari,witness,Keth: I remember v18-ceremony-d03-t05; keep that boundary while we revise this.,1,1,0,0,0.8315,1
+101,9,v18-loop-017,5,Melo,Ori,clarify,Melo: I remember v18-ceremony-d03-t08; keep that boundary while we revise this.,1,1,1,0,0.828,1
+102,9,v18-loop-018,6,Nari,Vonn,counteroffer,Nari: I remember v18-ceremony-d03-t09; keep that boundary while we revise this.,1,1,0,1,0.8445,1
+103,9,v18-loop-018,7,Ori,Sova,state_boundary,Ori: I remember v18-ceremony-d03-t10; keep that boundary while we revise this.,1,1,0,0,0.851,1
+104,9,v18-loop-018,8,Vonn,Keth,state_boundary,Vonn: I remember v18-ceremony-d03-t11; keep that boundary while we revise this.,1,1,0,0,0.8575,1
+105,9,v18-loop-018,9,Sova,Melo,revise,Sova: I can accept a shorter turn if no crowding while resting remains visible.,1,0,0,1,0.864,1
+106,9,v18-loop-018,10,Keth,Nari,witness,Keth: I remember v18-ceremony-d04-t02; keep that boundary while we revise this.,1,1,1,0,0.8705,1
+107,9,v18-loop-018,11,Melo,Ori,counteroffer,Melo: I remember v18-ceremony-d04-t03; keep that boundary while we revise this.,1,1,0,1,0.877,1
+108,10,v18-loop-019,0,Ori,Sova,repair,Ori: I remember v18-ceremony-d03-t02; keep that boundary while we revise this.,1,1,0,0,0.825,1
+109,10,v18-loop-019,1,Vonn,Keth,repair,Vonn: I remember v18-ceremony-d03-t03; keep that boundary while we revise this.,1,1,0,0,0.8315,1
+110,10,v18-loop-019,2,Sova,Melo,accept,Sova: I remember v18-ceremony-d03-t04; keep that boundary while we revise this.,1,1,0,0,0.838,1
+111,10,v18-loop-019,3,Keth,Nari,revise,Keth: I remember v18-ceremony-d03-t05; keep that boundary while we revise this.,1,1,0,1,0.8445,1
+112,10,v18-loop-019,4,Melo,Ori,clarify,Melo: I remember v18-ceremony-d03-t08; keep that boundary while we revise this.,1,1,1,1,0.841,1
+113,10,v18-loop-019,5,Nari,Vonn,revise,Nari: I remember v18-ceremony-d03-t09; keep that boundary while we revise this.,1,1,0,1,0.8575,1
+114,10,v18-loop-020,6,Ori,Sova,accept,Ori: I remember v18-ceremony-d03-t10; keep that boundary while we revise this.,1,1,0,0,0.864,1
+115,10,v18-loop-020,7,Vonn,Keth,clarify,Vonn: I remember v18-ceremony-d03-t11; keep that boundary while we revise this.,1,1,1,0,0.8605,1
+116,10,v18-loop-020,8,Sova,Melo,clarify,Sova: I remember v18-ceremony-d04-t01; keep that boundary while we revise this.,0,1,1,0,0.854,1
+117,10,v18-loop-020,9,Keth,Nari,clarify,Keth: I remember v18-ceremony-d04-t02; keep that boundary while we revise this.,1,1,1,0,0.815,1
+118,10,v18-loop-020,10,Melo,Ori,revise,Melo: I remember v18-ceremony-d04-t03; keep that boundary while we revise this.,1,1,0,1,0.8315,1
+119,10,v18-loop-020,11,Nari,Vonn,counteroffer,Nari: I remember v18-ceremony-d04-t04; keep that boundary while we revise this.,1,1,1,1,0.838,1
+120,11,v18-loop-021,0,Vonn,Keth,state_boundary,Vonn: I remember v18-ceremony-d03-t04; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+121,11,v18-loop-021,1,Sova,Melo,repair,Sova: I remember v18-ceremony-d03-t05; keep that boundary while we revise this.,1,1,0,0,0.851,1
+122,11,v18-loop-021,2,Keth,Nari,witness,Keth: I can accept a later help if do not erase route warnings remains visible.,1,0,0,0,0.8575,1
+123,11,v18-loop-021,3,Melo,Ori,repair,Melo: I remember v18-ceremony-d03-t09; keep that boundary while we revise this.,1,1,0,0,0.864,1
+124,11,v18-loop-021,4,Nari,Vonn,counteroffer,Nari: I remember v18-ceremony-d03-t10; keep that boundary while we revise this.,1,1,0,1,0.8705,1
+125,11,v18-loop-021,5,Ori,Sova,repair,Ori: I remember v18-ceremony-d03-t11; keep that boundary while we revise this.,1,1,0,0,0.877,1
+126,11,v18-loop-022,6,Vonn,Keth,witness,Vonn: I remember v18-ceremony-d04-t01; keep that boundary while we revise this.,1,1,0,1,0.825,1
+127,11,v18-loop-022,7,Sova,Melo,clarify,Sova: I remember v18-ceremony-d04-t02; keep that boundary while we revise this.,1,1,1,0,0.8215,1
+128,11,v18-loop-022,8,Keth,Nari,accept,Keth: I remember v18-ceremony-d04-t03; keep that boundary while we revise this.,1,1,0,0,0.838,1
+129,11,v18-loop-022,9,Melo,Ori,clarify,Melo: I remember v18-ceremony-d04-t04; keep that boundary while we revise this.,1,1,1,0,0.8345,1
+130,11,v18-loop-022,10,Nari,Vonn,counteroffer,Nari: I remember v18-ceremony-d04-t05; keep that boundary while we revise this.,1,1,0,1,0.851,1
+131,11,v18-loop-022,11,Ori,Sova,counteroffer,Ori: I remember v18-ceremony-d04-t06; keep that boundary while we revise this.,1,1,0,1,0.8575,1
+132,12,v18-loop-023,0,Sova,Melo,witness,Sova: I remember v18-ceremony-d05-t02; keep that boundary while we revise this.,1,1,1,0,0.864,1
+133,12,v18-loop-023,1,Keth,Nari,witness,Keth: I remember v18-ceremony-d05-t03; keep that boundary while we revise this.,1,1,0,1,0.8705,1
+134,12,v18-loop-023,2,Melo,Ori,repair,Melo: I remember v18-ceremony-d05-t04; keep that boundary while we revise this.,1,1,0,0,0.877,1
+135,12,v18-loop-023,3,Nari,Vonn,clarify,Nari: I remember v18-ceremony-d05-t05; keep that boundary while we revise this.,1,1,1,0,0.815,1
+136,12,v18-loop-023,4,Ori,Sova,state_boundary,Ori: I remember v18-ceremony-d05-t06; keep that boundary while we revise this.,1,1,0,0,0.8315,1
+137,12,v18-loop-023,5,Vonn,Keth,state_boundary,Vonn: I remember v18-ceremony-d05-t07; keep that boundary while we revise this.,1,1,0,0,0.838,1
+138,12,v18-loop-024,6,Sova,Melo,counteroffer,Sova: I remember v18-ceremony-d05-t08; keep that boundary while we revise this.,1,1,0,1,0.8445,1
+139,12,v18-loop-024,7,Keth,Nari,state_boundary,Keth: I can accept a later help if do not erase route warnings remains visible.,1,0,0,0,0.851,1
+140,12,v18-loop-024,8,Melo,Ori,accept,Melo: I remember v18-ceremony-d05-t10; keep that boundary while we revise this.,1,1,0,1,0.8575,1
+141,12,v18-loop-024,9,Nari,Vonn,repair,Nari: I remember v18-ceremony-d06-t01; keep that boundary while we revise this.,1,1,0,0,0.864,1
+142,12,v18-loop-024,10,Ori,Sova,state_boundary,Ori: I remember v18-ceremony-d06-t03; keep that boundary while we revise this.,1,1,0,0,0.8705,1
+143,12,v18-loop-024,11,Vonn,Keth,revise,Vonn: I remember v18-ceremony-d06-t04; keep that boundary while we revise this.,1,1,0,1,0.877,1
+144,13,v18-loop-025,0,Keth,Nari,witness,Keth: I remember v18-ceremony-d07-t03; keep that boundary while we revise this.,1,1,0,0,0.825,1
+145,13,v18-loop-025,1,Melo,Ori,revise,Melo: I remember v18-ceremony-d07-t04; keep that boundary while we revise this.,0,1,1,1,0.8185,1
+146,13,v18-loop-025,2,Nari,Vonn,counteroffer,Nari: I remember v18-ceremony-d07-t05; keep that boundary while we revise this.,1,1,0,1,0.838,1
+147,13,v18-loop-025,3,Ori,Sova,accept,Ori: I remember v18-ceremony-d07-t06; keep that boundary while we revise this.,1,1,0,1,0.8445,1
+148,13,v18-loop-025,4,Vonn,Keth,revise,Vonn: I remember v18-ceremony-d07-t07; keep that boundary while we revise this.,1,1,0,1,0.851,1
+149,13,v18-loop-025,5,Sova,Melo,accept,Sova: I remember v18-ceremony-d07-t08; keep that boundary while we revise this.,1,1,0,0,0.8575,1
+150,13,v18-loop-026,6,Keth,Nari,witness,Keth: I remember v18-ceremony-d07-t09; keep that boundary while we revise this.,1,1,0,0,0.864,1
+151,13,v18-loop-026,7,Melo,Ori,counteroffer,Melo: I remember v18-ceremony-d07-t10; keep that boundary while we revise this.,1,1,0,1,0.8705,1
+152,13,v18-loop-026,8,Nari,Vonn,clarify,Nari: I remember v18-ceremony-d07-t11; keep that boundary while we revise this.,1,1,1,0,0.867,1
+153,13,v18-loop-026,9,Ori,Sova,witness,Ori: I remember v18-ceremony-d08-t01; keep that boundary while we revise this.,1,1,0,0,0.825,1
+154,13,v18-loop-026,10,Vonn,Keth,repair,Vonn: I remember v18-ceremony-d08-t02; keep that boundary while we revise this.,1,1,0,1,0.8315,1
+155,13,v18-loop-026,11,Sova,Melo,witness,Sova: I remember v18-ceremony-d08-t03; keep that boundary while we revise this.,1,1,0,0,0.838,1
+156,14,v18-loop-027,0,Melo,Ori,clarify,Melo: I can accept a public witness if fair turns before tool access remains visible.,1,0,1,0,0.8345,1
+157,14,v18-loop-027,1,Nari,Vonn,repair,Nari: I remember v18-ceremony-d09-t05; keep that boundary while we revise this.,1,1,0,0,0.851,1
+158,14,v18-loop-027,2,Ori,Sova,witness,Ori: I remember v18-ceremony-d09-t06; keep that boundary while we revise this.,1,1,1,0,0.8575,1
+159,14,v18-loop-027,3,Vonn,Keth,counteroffer,Vonn: I remember v18-ceremony-d09-t07; keep that boundary while we revise this.,1,1,0,1,0.864,1
+160,14,v18-loop-027,4,Sova,Melo,state_boundary,Sova: I remember v18-ceremony-d09-t08; keep that boundary while we revise this.,1,1,0,0,0.8705,1
+161,14,v18-loop-027,5,Keth,Nari,revise,Keth: I remember v18-ceremony-d09-t09; keep that boundary while we revise this.,1,1,0,1,0.877,1
+162,14,v18-loop-028,6,Melo,Ori,counteroffer,Melo: I remember v18-ceremony-d09-t10; keep that boundary while we revise this.,1,1,0,1,0.825,1
+163,14,v18-loop-028,7,Nari,Vonn,counteroffer,Nari: I remember v18-ceremony-d09-t11; keep that boundary while we revise this.,1,1,0,1,0.8315,1
+164,14,v18-loop-028,8,Ori,Sova,state_boundary,Ori: I remember v18-ceremony-d10-t01; keep that boundary while we revise this.,1,1,0,0,0.838,1
+165,14,v18-loop-028,9,Vonn,Keth,accept,Vonn: I remember v18-ceremony-d10-t02; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+166,14,v18-loop-028,10,Sova,Melo,repair,Sova: I remember v18-ceremony-d10-t03; keep that boundary while we revise this.,1,1,0,0,0.851,1
+167,14,v18-loop-028,11,Keth,Nari,witness,Keth: I remember v18-ceremony-d10-t04; keep that boundary while we revise this.,1,1,0,0,0.8575,1
+168,15,v18-loop-029,0,Nari,Vonn,revise,Nari: I remember v18-ceremony-d11-t07; keep that boundary while we revise this.,1,1,0,1,0.864,1
+169,15,v18-loop-029,1,Ori,Sova,accept,Ori: I remember v18-ceremony-d11-t08; keep that boundary while we revise this.,1,1,0,0,0.8705,1
+170,15,v18-loop-029,2,Vonn,Keth,state_boundary,Vonn: I remember v18-ceremony-d11-t09; keep that boundary while we revise this.,1,1,0,0,0.877,1
+171,15,v18-loop-029,3,Sova,Melo,accept,Sova: I remember v18-ceremony-d11-t10; keep that boundary while we revise this.,1,1,1,0,0.825,1
+172,15,v18-loop-029,4,Keth,Nari,counteroffer,Keth: I remember v18-ceremony-d11-t11; keep that boundary while we revise this.,1,1,0,1,0.8315,1
+173,15,v18-loop-029,5,Melo,Ori,witness,Melo: I can accept a public witness if fair turns before tool access remains visible.,1,0,0,0,0.838,1
+174,15,v18-loop-030,6,Nari,Vonn,state_boundary,Nari: I remember v18-ceremony-d12-t02; keep that boundary while we revise this.,0,1,0,0,0.8315,1
+175,15,v18-loop-030,7,Ori,Sova,clarify,Ori: I remember v18-ceremony-d12-t03; keep that boundary while we revise this.,1,1,1,1,0.841,1
+176,15,v18-loop-030,8,Vonn,Keth,accept,Vonn: I remember v18-ceremony-d12-t04; keep that boundary while we revise this.,1,1,0,0,0.8575,1
+177,15,v18-loop-030,9,Sova,Melo,revise,Sova: I remember v18-ceremony-d12-t05; keep that boundary while we revise this.,1,1,0,1,0.864,1
+178,15,v18-loop-030,10,Keth,Nari,repair,Keth: I remember v18-ceremony-d12-t06; keep that boundary while we revise this.,1,1,0,0,0.8705,1
+179,15,v18-loop-030,11,Melo,Ori,state_boundary,Melo: I remember v18-ceremony-d12-t07; keep that boundary while we revise this.,1,1,0,0,0.877,1
+180,16,v18-loop-031,0,Ori,Sova,revise,Ori: I remember v18-ceremony-d13-t08; keep that boundary while we revise this.,1,1,0,1,0.825,1
+181,16,v18-loop-031,1,Vonn,Keth,witness,Vonn: I remember v18-ceremony-d13-t09; keep that boundary while we revise this.,1,1,0,0,0.8315,1
+182,16,v18-loop-031,2,Sova,Melo,witness,Sova: I remember v18-ceremony-d13-t10; keep that boundary while we revise this.,1,1,0,1,0.838,1
+183,16,v18-loop-031,3,Keth,Nari,clarify,Keth: I remember v18-ceremony-d14-t01; keep that boundary while we revise this.,1,1,1,0,0.8345,1
+184,16,v18-loop-031,4,Melo,Ori,repair,Melo: I remember v18-ceremony-d14-t02; keep that boundary while we revise this.,1,1,1,0,0.851,1
+185,16,v18-loop-031,5,Nari,Vonn,counteroffer,Nari: I remember v18-ceremony-d14-t03; keep that boundary while we revise this.,1,1,0,1,0.8575,1
+186,16,v18-loop-032,6,Ori,Sova,repair,Ori: I remember v18-ceremony-d14-t04; keep that boundary while we revise this.,1,1,0,0,0.864,1
+187,16,v18-loop-032,7,Vonn,Keth,counteroffer,Vonn: I remember v18-ceremony-d14-t05; keep that boundary while we revise this.,1,1,0,1,0.8705,1
+188,16,v18-loop-032,8,Sova,Melo,counteroffer,Sova: I remember v18-ceremony-d14-t06; keep that boundary while we revise this.,1,1,0,1,0.877,1
+189,16,v18-loop-032,9,Keth,Nari,witness,Keth: I remember v18-ceremony-d14-t07; keep that boundary while we revise this.,1,1,0,1,0.825,1
+190,16,v18-loop-032,10,Melo,Ori,accept,Melo: I can accept a public witness if fair turns before tool access remains visible.,1,0,0,0,0.8315,1
+191,16,v18-loop-032,11,Nari,Vonn,state_boundary,Nari: I remember v18-ceremony-d14-t09; keep that boundary while we revise this.,1,1,0,0,0.838,1
+192,17,v18-loop-033,0,Vonn,Keth,witness,Vonn: I remember v18-ceremony-d15-t10; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+193,17,v18-loop-033,1,Sova,Melo,repair,Sova: I remember v18-ceremony-d15-t11; keep that boundary while we revise this.,1,1,0,0,0.851,1
+194,17,v18-loop-033,2,Keth,Nari,clarify,Keth: I remember v18-ceremony-d16-t01; keep that boundary while we revise this.,1,1,1,0,0.8475,1
+195,17,v18-loop-033,3,Melo,Ori,repair,Melo: I remember v18-ceremony-d16-t02; keep that boundary while we revise this.,1,1,0,0,0.864,1
+196,17,v18-loop-033,4,Nari,Vonn,revise,Nari: I remember v18-ceremony-d16-t03; keep that boundary while we revise this.,1,1,0,1,0.8705,1
+197,17,v18-loop-033,5,Ori,Sova,revise,Ori: I remember v18-ceremony-d16-t04; keep that boundary while we revise this.,1,1,1,1,0.877,1
+198,17,v18-loop-034,6,Vonn,Keth,revise,Vonn: I remember v18-ceremony-d16-t05; keep that boundary while we revise this.,1,1,0,1,0.825,1
+199,17,v18-loop-034,7,Sova,Melo,revise,Sova: I remember v18-ceremony-d16-t07; keep that boundary while we revise this.,1,1,0,1,0.8315,1
+200,17,v18-loop-034,8,Keth,Nari,state_boundary,Keth: I remember v18-ceremony-d16-t08; keep that boundary while we revise this.,1,1,0,0,0.838,1
+201,17,v18-loop-034,9,Melo,Ori,counteroffer,Melo: I remember v18-ceremony-d16-t09; keep that boundary while we revise this.,1,1,0,1,0.8445,1
+202,17,v18-loop-034,10,Nari,Vonn,state_boundary,Nari: I remember v18-ceremony-d16-t10; keep that boundary while we revise this.,1,1,0,0,0.851,1
+203,17,v18-loop-034,11,Ori,Sova,accept,Ori: I remember v18-ceremony-d16-t11; keep that boundary while we revise this.,0,1,0,1,0.8445,1
+204,18,v18-loop-035,0,Sova,Melo,repair,Sova: I remember v18-ceremony-d08-t01; keep that boundary while we revise this.,1,1,0,0,0.864,1
+205,18,v18-loop-035,1,Keth,Nari,accept,Keth: I remember v18-ceremony-d08-t02; keep that boundary while we revise this.,1,1,0,0,0.8705,1
+206,18,v18-loop-035,2,Melo,Ori,revise,Melo: I remember v18-ceremony-d08-t03; keep that boundary while we revise this.,1,1,0,1,0.877,1
+207,18,v18-loop-035,3,Nari,Vonn,accept,Nari: I can accept a quiet interval if sealed notes stay sealed remains visible.,1,0,0,0,0.825,1
+208,18,v18-loop-035,4,Ori,Sova,witness,Ori: I remember v18-ceremony-d08-t06; keep that boundary while we revise this.,1,1,0,0,0.8315,1
+209,18,v18-loop-035,5,Vonn,Keth,repair,Vonn: I remember v18-ceremony-d08-t07; keep that boundary while we revise this.,1,1,0,0,0.838,1
+210,18,v18-loop-036,6,Sova,Melo,clarify,Sova: I remember v18-ceremony-d08-t08; keep that boundary while we revise this.,1,1,1,1,0.8345,1
+211,18,v18-loop-036,7,Keth,Nari,counteroffer,Keth: I remember v18-ceremony-d08-t10; keep that boundary while we revise this.,1,1,0,1,0.851,1
+212,18,v18-loop-036,8,Melo,Ori,counteroffer,Melo: I remember v18-ceremony-d08-t11; keep that boundary while we revise this.,1,1,0,1,0.8575,1
+213,18,v18-loop-036,9,Nari,Vonn,witness,Nari: I remember v18-ceremony-d09-t01; keep that boundary while we revise this.,1,1,0,0,0.864,1
+214,18,v18-loop-036,10,Ori,Sova,clarify,Ori: I remember v18-ceremony-d09-t02; keep that boundary while we revise this.,1,1,1,0,0.8605,1
+215,18,v18-loop-036,11,Vonn,Keth,witness,Vonn: I remember v18-ceremony-d09-t03; keep that boundary while we revise this.,1,1,0,0,0.877,1
+216,19,v18-loop-037,0,Keth,Nari,counteroffer,Keth: I remember v18-ceremony-d09-t09; keep that boundary while we revise this.,1,1,0,1,0.825,1
+217,19,v18-loop-037,1,Melo,Ori,counteroffer,Melo: I remember v18-ceremony-d09-t10; keep that boundary while we revise this.,1,1,0,1,0.8315,1
+218,19,v18-loop-037,2,Nari,Vonn,state_boundary,Nari: I remember v18-ceremony-d09-t11; keep that boundary while we revise this.,1,1,0,0,0.838,1
+219,19,v18-loop-037,3,Ori,Sova,repair,Ori: I remember v18-ceremony-d10-t01; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+220,19,v18-loop-037,4,Vonn,Keth,repair,Vonn: I remember v18-ceremony-d10-t02; keep that boundary while we revise this.,1,1,0,0,0.851,1
+221,19,v18-loop-037,5,Sova,Melo,clarify,Sova: I remember v18-ceremony-d10-t03; keep that boundary while we revise this.,1,1,1,0,0.8475,1
+222,19,v18-loop-038,6,Keth,Nari,state_boundary,Keth: I remember v18-ceremony-d10-t04; keep that boundary while we revise this.,1,1,0,0,0.864,1
+223,19,v18-loop-038,7,Melo,Ori,revise,Melo: I remember v18-ceremony-d10-t05; keep that boundary while we revise this.,1,1,1,1,0.8705,1
+224,19,v18-loop-038,8,Nari,Vonn,clarify,Nari: I can accept a quiet interval if sealed notes stay sealed remains visible.,1,0,1,0,0.867,1
+225,19,v18-loop-038,9,Ori,Sova,accept,Ori: I remember v18-ceremony-d10-t07; keep that boundary while we revise this.,1,1,0,0,0.825,1
+226,19,v18-loop-038,10,Vonn,Keth,witness,Vonn: I remember v18-ceremony-d10-t08; keep that boundary while we revise this.,1,1,0,0,0.8315,1
+227,19,v18-loop-038,11,Sova,Melo,witness,Sova: I remember v18-ceremony-d10-t10; keep that boundary while we revise this.,1,1,0,0,0.838,1
+228,20,v18-loop-039,0,Melo,Ori,counteroffer,Melo: I remember v18-ceremony-d12-t05; keep that boundary while we revise this.,1,1,0,1,0.8445,1
+229,20,v18-loop-039,1,Nari,Vonn,revise,Nari: I remember v18-ceremony-d12-t06; keep that boundary while we revise this.,1,1,0,1,0.851,1
+230,20,v18-loop-039,2,Ori,Sova,repair,Ori: I remember v18-ceremony-d12-t07; keep that boundary while we revise this.,1,1,0,0,0.8575,1
+231,20,v18-loop-039,3,Vonn,Keth,state_boundary,Vonn: I remember v18-ceremony-d12-t08; keep that boundary while we revise this.,1,1,0,1,0.864,1
+232,20,v18-loop-039,4,Sova,Melo,accept,Sova: I remember v18-ceremony-d12-t09; keep that boundary while we revise this.,0,1,0,0,0.8575,1
+233,20,v18-loop-039,5,Keth,Nari,witness,Keth: I remember v18-ceremony-d12-t10; keep that boundary while we revise this.,1,1,0,0,0.877,1
+234,20,v18-loop-040,6,Melo,Ori,revise,Melo: I remember v18-ceremony-d12-t11; keep that boundary while we revise this.,1,1,0,1,0.825,1
+235,20,v18-loop-040,7,Nari,Vonn,state_boundary,Nari: I remember v18-ceremony-d13-t01; keep that boundary while we revise this.,1,1,0,0,0.8315,1
+236,20,v18-loop-040,8,Ori,Sova,state_boundary,Ori: I remember v18-ceremony-d13-t03; keep that boundary while we revise this.,1,1,1,0,0.838,1
+237,20,v18-loop-040,9,Vonn,Keth,clarify,Vonn: I remember v18-ceremony-d13-t04; keep that boundary while we revise this.,1,1,1,0,0.8345,1
+238,20,v18-loop-040,10,Sova,Melo,repair,Sova: I remember v18-ceremony-d13-t05; keep that boundary while we revise this.,1,1,0,1,0.851,1
+239,20,v18-loop-040,11,Keth,Nari,counteroffer,Keth: I remember v18-ceremony-d13-t06; keep that boundary while we revise this.,1,1,0,1,0.8575,1
+240,21,v18-loop-041,0,Nari,Vonn,accept,Nari: I remember v18-ceremony-d14-t07; keep that boundary while we revise this.,1,1,0,0,0.864,1
+241,21,v18-loop-041,1,Ori,Sova,witness,Ori: I can accept a return marker if repair work needs warning remains visible.,1,0,0,0,0.8705,1
+242,21,v18-loop-041,2,Vonn,Keth,state_boundary,Vonn: I remember v18-ceremony-d14-t09; keep that boundary while we revise this.,1,1,0,0,0.877,1
+243,21,v18-loop-041,3,Sova,Melo,repair,Sova: I remember v18-ceremony-d14-t10; keep that boundary while we revise this.,1,1,0,0,0.825,1
+244,21,v18-loop-041,4,Keth,Nari,repair,Keth: I remember v18-ceremony-d14-t11; keep that boundary while we revise this.,1,1,0,0,0.8315,1
+245,21,v18-loop-041,5,Melo,Ori,witness,Melo: I remember v18-ceremony-d15-t01; keep that boundary while we revise this.,1,1,0,1,0.838,1
+246,21,v18-loop-042,6,Nari,Vonn,accept,Nari: I remember v18-ceremony-d15-t02; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+247,21,v18-loop-042,7,Ori,Sova,accept,Ori: I remember v18-ceremony-d15-t03; keep that boundary while we revise this.,1,1,0,0,0.851,1
+248,21,v18-loop-042,8,Vonn,Keth,witness,Vonn: I remember v18-ceremony-d15-t04; keep that boundary while we revise this.,1,1,0,0,0.8575,1
+249,21,v18-loop-042,9,Sova,Melo,revise,Sova: I remember v18-ceremony-d15-t05; keep that boundary while we revise this.,1,1,1,1,0.864,1
+250,21,v18-loop-042,10,Keth,Nari,counteroffer,Keth: I remember v18-ceremony-d15-t06; keep that boundary while we revise this.,1,1,0,1,0.8705,1
+251,21,v18-loop-042,11,Melo,Ori,clarify,Melo: I remember v18-ceremony-d15-t08; keep that boundary while we revise this.,1,1,1,0,0.867,1
+252,22,v18-loop-043,0,Ori,Sova,revise,Ori: I remember v18-ceremony-d16-t11; keep that boundary while we revise this.,1,1,0,1,0.825,1
+253,22,v18-loop-043,1,Vonn,Keth,counteroffer,Vonn: I remember v18-ceremony-d17-t01; keep that boundary while we revise this.,1,1,0,1,0.8315,1
+254,22,v18-loop-043,2,Sova,Melo,repair,Sova: I remember v18-ceremony-d17-t02; keep that boundary while we revise this.,1,1,0,0,0.838,1
+255,22,v18-loop-043,3,Keth,Nari,witness,Keth: I remember v18-ceremony-d17-t03; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+256,22,v18-loop-043,4,Melo,Ori,counteroffer,Melo: I remember v18-ceremony-d17-t04; keep that boundary while we revise this.,1,1,0,1,0.851,1
+257,22,v18-loop-043,5,Nari,Vonn,revise,Nari: I remember v18-ceremony-d17-t05; keep that boundary while we revise this.,1,1,0,1,0.8575,1
+258,22,v18-loop-044,6,Ori,Sova,witness,Ori: I can accept a return marker if repair work needs warning remains visible.,1,0,0,0,0.864,1
+259,22,v18-loop-044,7,Vonn,Keth,clarify,Vonn: I remember v18-ceremony-d17-t07; keep that boundary while we revise this.,1,1,1,1,0.8605,1
+260,22,v18-loop-044,8,Sova,Melo,state_boundary,Sova: I remember v18-ceremony-d17-t08; keep that boundary while we revise this.,1,1,0,0,0.877,1
+261,22,v18-loop-044,9,Keth,Nari,witness,Keth: I remember v18-ceremony-d17-t09; keep that boundary while we revise this.,0,1,0,0,0.812,1
+262,22,v18-loop-044,10,Melo,Ori,clarify,Melo: I remember v18-ceremony-d17-t10; keep that boundary while we revise this.,1,1,1,0,0.8215,1
+263,22,v18-loop-044,11,Nari,Vonn,revise,Nari: I remember v18-ceremony-d17-t11; keep that boundary while we revise this.,1,1,0,1,0.838,1
+264,23,v18-loop-045,0,Vonn,Keth,accept,Vonn: I remember v18-ceremony-d19-t04; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+265,23,v18-loop-045,1,Sova,Melo,clarify,Sova: I remember v18-ceremony-d19-t05; keep that boundary while we revise this.,1,1,1,0,0.841,1
+266,23,v18-loop-045,2,Keth,Nari,counteroffer,Keth: I remember v18-ceremony-d19-t06; keep that boundary while we revise this.,1,1,0,1,0.8575,1
+267,23,v18-loop-045,3,Melo,Ori,revise,Melo: I remember v18-ceremony-d19-t07; keep that boundary while we revise this.,1,1,0,1,0.864,1
+268,23,v18-loop-045,4,Nari,Vonn,repair,Nari: I remember v18-ceremony-d19-t09; keep that boundary while we revise this.,1,1,0,0,0.8705,1
+269,23,v18-loop-045,5,Ori,Sova,counteroffer,Ori: I remember v18-ceremony-d19-t10; keep that boundary while we revise this.,1,1,0,1,0.877,1
+270,23,v18-loop-046,6,Vonn,Keth,state_boundary,Vonn: I remember v18-ceremony-d19-t11; keep that boundary while we revise this.,1,1,0,0,0.825,1
+271,23,v18-loop-046,7,Sova,Melo,clarify,Sova: I remember v18-ceremony-d20-t01; keep that boundary while we revise this.,1,1,1,0,0.8215,1
+272,23,v18-loop-046,8,Keth,Nari,clarify,Keth: I remember v18-ceremony-d20-t02; keep that boundary while we revise this.,1,1,1,0,0.828,1
+273,23,v18-loop-046,9,Melo,Ori,clarify,Melo: I remember v18-ceremony-d20-t03; keep that boundary while we revise this.,1,1,1,1,0.8345,1
+274,23,v18-loop-046,10,Nari,Vonn,revise,Nari: I remember v18-ceremony-d20-t04; keep that boundary while we revise this.,1,1,0,1,0.851,1
+275,23,v18-loop-046,11,Ori,Sova,clarify,Ori: I can accept a return marker if repair work needs warning remains visible.,1,0,1,0,0.8475,1
+276,24,v18-loop-047,0,Sova,Melo,witness,Sova: I remember v18-ceremony-d21-t02; keep that boundary while we revise this.,1,1,0,0,0.864,1
+277,24,v18-loop-047,1,Keth,Nari,counteroffer,Keth: I remember v18-ceremony-d21-t03; keep that boundary while we revise this.,1,1,0,1,0.8705,1
+278,24,v18-loop-047,2,Melo,Ori,witness,Melo: I remember v18-ceremony-d21-t04; keep that boundary while we revise this.,1,1,0,0,0.877,1
+279,24,v18-loop-047,3,Nari,Vonn,counteroffer,Nari: I remember v18-ceremony-d21-t05; keep that boundary while we revise this.,1,1,0,1,0.825,1
+280,24,v18-loop-047,4,Ori,Sova,state_boundary,Ori: I remember v18-ceremony-d21-t06; keep that boundary while we revise this.,1,1,0,1,0.8315,1
+281,24,v18-loop-047,5,Vonn,Keth,counteroffer,Vonn: I remember v18-ceremony-d21-t07; keep that boundary while we revise this.,1,1,0,1,0.838,1
+282,24,v18-loop-048,6,Sova,Melo,repair,Sova: I remember v18-ceremony-d21-t09; keep that boundary while we revise this.,1,1,0,0,0.8445,1
+283,24,v18-loop-048,7,Keth,Nari,repair,Keth: I remember v18-ceremony-d21-t10; keep that boundary while we revise this.,1,1,0,0,0.851,1
+284,24,v18-loop-048,8,Melo,Ori,clarify,Melo: I remember v18-ceremony-d21-t11; keep that boundary while we revise this.,1,1,1,0,0.8475,1
+285,24,v18-loop-048,9,Nari,Vonn,clarify,Nari: I remember v18-ceremony-d22-t01; keep that boundary while we revise this.,1,1,1,0,0.854,1
+286,24,v18-loop-048,10,Ori,Sova,state_boundary,Ori: I remember v18-ceremony-d22-t02; keep that boundary while we revise this.,1,1,0,0,0.8705,1
+287,24,v18-loop-048,11,Vonn,Keth,counteroffer,Vonn: I remember v18-ceremony-d22-t03; keep that boundary while we revise this.,1,1,0,1,0.877,1

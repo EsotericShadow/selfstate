@@ -1,0 +1,289 @@
+tick,day,loop_id,focus_agent,dialogue_turn_visible,counteroffer_loop_active,ceremony_active,remembered_ceremony_active,body_world_expression_active,sensory_frequency_hz,flower_phase,public_behavior_marker,private_workspace_sealed
+0,1,v18-loop-001,Keth,1,1,0,0,1,1.56,48.8253,revises counteroffer with body shift,1
+1,1,v18-loop-001,Melo,1,1,0,0,0,1.655,195.016764,revises counteroffer with body shift,1
+2,1,v18-loop-001,Nari,1,1,1,0,1,1.69,336.100528,marks compromise ceremony publicly,1
+3,1,v18-loop-001,Ori,1,1,1,0,1,1.805,117.502292,marks compromise ceremony publicly,1
+4,1,v18-loop-001,Vonn,1,0,0,0,0,1.68,242.675056,waits for agent-led reply,1
+5,1,v18-loop-001,Sova,1,1,1,0,1,1.755,31.16522,marks compromise ceremony publicly,1
+6,1,v18-loop-002,Keth,1,1,1,0,1,1.83,170.800584,marks compromise ceremony publicly,1
+7,1,v18-loop-002,Melo,1,1,1,0,1,1.945,312.070748,marks compromise ceremony publicly,1
+8,1,v18-loop-002,Nari,1,0,0,0,0,1.82,77.046112,waits for agent-led reply,1
+9,1,v18-loop-002,Ori,1,1,1,0,1,1.895,225.536276,marks compromise ceremony publicly,1
+10,1,v18-loop-002,Vonn,1,1,1,0,1,1.97,5.36904,marks compromise ceremony publicly,1
+11,1,v18-loop-002,Sova,1,1,1,0,1,2.085,146.441804,marks compromise ceremony publicly,1
+12,2,v18-loop-003,Melo,1,1,0,1,1,1.58,259.604268,recalls old ceremony before counteroffer,1
+13,2,v18-loop-003,Nari,1,1,1,1,1,1.655,47.897032,marks compromise ceremony publicly,1
+14,2,v18-loop-003,Ori,1,1,1,1,1,1.77,189.167196,marks compromise ceremony publicly,1
+15,2,v18-loop-003,Vonn,1,1,1,1,0,1.845,328.86836,marks compromise ceremony publicly,1
+16,2,v18-loop-003,Sova,1,1,1,1,1,1.76,104.070124,marks compromise ceremony publicly,1
+17,2,v18-loop-003,Keth,1,1,1,1,1,1.795,242.662888,marks compromise ceremony publicly,1
+18,2,v18-loop-004,Melo,1,1,1,1,1,1.87,22.298252,marks compromise ceremony publicly,1
+19,2,v18-loop-004,Nari,1,1,1,1,1,1.985,163.469716,marks compromise ceremony publicly,1
+20,2,v18-loop-004,Ori,1,0,0,1,1,1.82,287.13928,recalls old ceremony before counteroffer,1
+21,2,v18-loop-004,Vonn,1,1,1,1,1,1.975,78.273944,marks compromise ceremony publicly,1
+22,2,v18-loop-004,Sova,1,1,1,1,1,2.01,216.537708,marks compromise ceremony publicly,1
+23,2,v18-loop-004,Keth,1,1,1,1,1,2.085,356.502072,marks compromise ceremony publicly,1
+24,3,v18-loop-005,Nari,1,1,0,1,1,1.58,109.565836,recalls old ceremony before counteroffer,1
+25,3,v18-loop-005,Ori,1,1,1,0,1,1.655,257.8586,marks compromise ceremony publicly,1
+26,3,v18-loop-005,Vonn,1,1,1,1,1,1.77,39.260364,marks compromise ceremony publicly,1
+27,3,v18-loop-005,Sova,1,1,1,1,1,1.845,179.093128,marks compromise ceremony publicly,1
+28,3,v18-loop-005,Keth,1,1,1,1,1,1.76,314.031692,marks compromise ceremony publicly,1
+29,3,v18-loop-005,Melo,1,1,1,1,1,1.775,92.136056,marks compromise ceremony publicly,1
+30,3,v18-loop-006,Nari,1,1,0,1,0,1.87,229.57142,recalls old ceremony before counteroffer,1
+31,3,v18-loop-006,Ori,1,1,0,1,1,1.945,3.632584,recalls old ceremony before counteroffer,1
+32,3,v18-loop-006,Vonn,1,1,1,1,1,1.86,147.096948,marks compromise ceremony publicly,1
+33,3,v18-loop-006,Sova,1,1,1,1,1,1.935,286.929712,marks compromise ceremony publicly,1
+34,3,v18-loop-006,Keth,1,1,1,1,1,2.01,66.959876,marks compromise ceremony publicly,1
+35,3,v18-loop-006,Melo,1,1,1,1,1,2.125,208.03264,marks compromise ceremony publicly,1
+36,4,v18-loop-007,Ori,1,1,0,1,1,1.62,321.228004,recalls old ceremony before counteroffer,1
+37,4,v18-loop-007,Vonn,1,1,1,1,0,1.655,108.116268,marks compromise ceremony publicly,1
+38,4,v18-loop-007,Sova,1,1,1,1,1,1.77,249.254832,marks compromise ceremony publicly,1
+39,4,v18-loop-007,Keth,1,1,1,1,1,1.805,27.748896,marks compromise ceremony publicly,1
+40,4,v18-loop-007,Melo,1,1,1,1,1,1.72,162.81906,marks compromise ceremony publicly,1
+41,4,v18-loop-007,Nari,1,1,1,1,1,1.795,302.520224,marks compromise ceremony publicly,1
+42,4,v18-loop-008,Ori,1,1,1,1,1,1.91,83.921988,marks compromise ceremony publicly,1
+43,4,v18-loop-008,Vonn,1,1,1,1,1,1.945,222.185752,marks compromise ceremony publicly,1
+44,4,v18-loop-008,Sova,1,1,1,0,0,1.9,358.627516,marks compromise ceremony publicly,1
+45,4,v18-loop-008,Keth,1,1,1,1,1,1.935,136.89128,marks compromise ceremony publicly,1
+46,4,v18-loop-008,Melo,1,1,1,1,1,2.01,276.855644,marks compromise ceremony publicly,1
+47,4,v18-loop-008,Nari,1,1,1,1,1,2.085,56.688408,marks compromise ceremony publicly,1
+48,5,v18-loop-009,Vonn,1,1,0,1,1,1.62,171.321172,recalls old ceremony before counteroffer,1
+49,5,v18-loop-009,Sova,1,1,1,1,1,1.695,319.613936,marks compromise ceremony publicly,1
+50,5,v18-loop-009,Keth,1,1,1,1,1,1.73,98.2067,marks compromise ceremony publicly,1
+51,5,v18-loop-009,Melo,1,1,1,1,1,1.845,239.279464,marks compromise ceremony publicly,1
+52,5,v18-loop-009,Nari,1,1,1,1,1,1.72,12.912228,marks compromise ceremony publicly,1
+53,5,v18-loop-009,Ori,1,1,1,1,1,1.795,152.613392,marks compromise ceremony publicly,1
+54,5,v18-loop-010,Vonn,1,1,1,1,1,1.83,291.041656,marks compromise ceremony publicly,1
+55,5,v18-loop-010,Sova,1,1,1,1,1,1.945,72.60792,marks compromise ceremony publicly,1
+56,5,v18-loop-010,Keth,1,1,1,1,1,1.9,208.720684,marks compromise ceremony publicly,1
+57,5,v18-loop-010,Melo,1,1,1,1,1,1.935,347.214748,marks compromise ceremony publicly,1
+58,5,v18-loop-010,Nari,1,1,1,1,1,1.99,126.328812,marks compromise ceremony publicly,1
+59,5,v18-loop-010,Ori,1,1,0,1,0,2.085,263.961576,recalls old ceremony before counteroffer,1
+60,6,v18-loop-011,Sova,1,1,0,1,1,1.58,19.97694,recalls old ceremony before counteroffer,1
+61,6,v18-loop-011,Keth,1,1,1,1,1,1.655,168.269704,marks compromise ceremony publicly,1
+62,6,v18-loop-011,Melo,1,1,0,1,1,1.73,299.839868,recalls old ceremony before counteroffer,1
+63,6,v18-loop-011,Nari,1,1,1,0,1,1.845,89.372632,marks compromise ceremony publicly,1
+64,6,v18-loop-011,Ori,1,1,1,1,1,1.72,223.005396,marks compromise ceremony publicly,1
+65,6,v18-loop-011,Vonn,1,1,1,1,1,1.795,2.70656,marks compromise ceremony publicly,1
+66,6,v18-loop-012,Sova,1,1,1,1,0,1.87,142.670924,marks compromise ceremony publicly,1
+67,6,v18-loop-012,Keth,1,1,1,1,1,1.985,283.809488,marks compromise ceremony publicly,1
+68,6,v18-loop-012,Melo,1,1,1,1,1,1.9,58.813852,marks compromise ceremony publicly,1
+69,6,v18-loop-012,Nari,1,1,1,1,1,1.935,197.406616,marks compromise ceremony publicly,1
+70,6,v18-loop-012,Ori,1,1,1,1,1,2.05,338.47938,marks compromise ceremony publicly,1
+71,6,v18-loop-012,Vonn,1,1,1,1,1,2.045,115.470244,marks compromise ceremony publicly,1
+72,7,v18-loop-013,Keth,1,1,0,1,1,1.58,230.070108,recalls old ceremony before counteroffer,1
+73,7,v18-loop-013,Melo,1,1,1,1,0,1.695,19.800272,marks compromise ceremony publicly,1
+74,7,v18-loop-013,Nari,1,1,1,1,1,1.73,158.195636,marks compromise ceremony publicly,1
+75,7,v18-loop-013,Ori,1,1,1,1,1,1.805,298.0284,marks compromise ceremony publicly,1
+76,7,v18-loop-013,Vonn,1,1,1,1,1,1.76,74.437264,marks compromise ceremony publicly,1
+77,7,v18-loop-013,Sova,1,1,1,1,1,1.835,214.368728,marks compromise ceremony publicly,1
+78,7,v18-loop-014,Keth,1,1,1,1,1,1.91,354.201492,marks compromise ceremony publicly,1
+79,7,v18-loop-014,Melo,1,1,1,1,1,1.945,132.596856,marks compromise ceremony publicly,1
+80,7,v18-loop-014,Nari,1,1,1,1,1,1.86,267.33802,marks compromise ceremony publicly,1
+81,7,v18-loop-014,Ori,1,1,1,1,1,1.935,47.302384,marks compromise ceremony publicly,1
+82,7,v18-loop-014,Vonn,1,1,1,0,1,2.01,187.003548,marks compromise ceremony publicly,1
+83,7,v18-loop-014,Sova,1,1,1,1,1,2.085,326.836312,marks compromise ceremony publicly,1
+84,8,v18-loop-015,Melo,1,1,0,1,1,1.62,81.600676,recalls old ceremony before counteroffer,1
+85,8,v18-loop-015,Nari,1,1,1,1,1,1.695,229.89344,marks compromise ceremony publicly,1
+86,8,v18-loop-015,Ori,1,1,1,1,1,1.73,8.157204,marks compromise ceremony publicly,1
+87,8,v18-loop-015,Vonn,1,1,1,1,1,1.785,147.501568,marks compromise ceremony publicly,1
+88,8,v18-loop-015,Sova,1,0,0,1,0,1.68,273.327232,recalls old ceremony before counteroffer,1
+89,8,v18-loop-015,Keth,1,1,1,1,1,1.795,62.892896,marks compromise ceremony publicly,1
+90,8,v18-loop-016,Melo,1,1,1,1,1,1.91,204.29466,marks compromise ceremony publicly,1
+91,8,v18-loop-016,Nari,1,1,1,1,1,1.985,343.995824,marks compromise ceremony publicly,1
+92,8,v18-loop-016,Ori,1,1,1,1,1,1.9,119.000188,marks compromise ceremony publicly,1
+93,8,v18-loop-016,Vonn,1,1,0,1,1,1.975,250.241352,recalls old ceremony before counteroffer,1
+94,8,v18-loop-016,Sova,1,1,1,1,1,2.01,37.228316,marks compromise ceremony publicly,1
+95,8,v18-loop-016,Keth,1,1,1,1,0,2.125,178.39978,marks compromise ceremony publicly,1
+96,9,v18-loop-017,Nari,1,1,0,1,1,1.58,290.256444,recalls old ceremony before counteroffer,1
+97,9,v18-loop-017,Ori,1,1,1,1,1,1.695,79.986608,marks compromise ceremony publicly,1
+98,9,v18-loop-017,Vonn,1,1,1,1,1,1.77,219.819372,marks compromise ceremony publicly,1
+99,9,v18-loop-017,Sova,1,1,1,1,1,1.805,358.412136,marks compromise ceremony publicly,1
+100,9,v18-loop-017,Keth,1,1,1,1,1,1.72,133.2849,marks compromise ceremony publicly,1
+101,9,v18-loop-017,Melo,1,1,1,0,1,1.795,272.986064,marks compromise ceremony publicly,1
+102,9,v18-loop-018,Nari,1,1,1,1,0,1.91,54.387828,marks compromise ceremony publicly,1
+103,9,v18-loop-018,Ori,1,1,1,1,1,1.945,192.783192,marks compromise ceremony publicly,1
+104,9,v18-loop-018,Vonn,1,1,1,1,1,1.86,327.655956,marks compromise ceremony publicly,1
+105,9,v18-loop-018,Sova,1,1,1,1,1,1.935,107.52162,marks compromise ceremony publicly,1
+106,9,v18-loop-018,Keth,1,1,1,1,1,2.01,247.189884,marks compromise ceremony publicly,1
+107,9,v18-loop-018,Melo,1,1,1,1,1,2.125,28.591648,marks compromise ceremony publicly,1
+108,10,v18-loop-019,Ori,1,1,0,1,1,1.58,140.349612,recalls old ceremony before counteroffer,1
+109,10,v18-loop-019,Vonn,1,1,1,1,1,1.655,288.642376,marks compromise ceremony publicly,1
+110,10,v18-loop-019,Sova,1,1,1,1,1,1.73,68.67254,marks compromise ceremony publicly,1
+111,10,v18-loop-019,Keth,1,1,1,1,1,1.845,209.745304,marks compromise ceremony publicly,1
+112,10,v18-loop-019,Melo,1,1,1,1,1,1.76,344.683868,marks compromise ceremony publicly,1
+113,10,v18-loop-019,Nari,1,1,1,1,1,1.835,124.648232,marks compromise ceremony publicly,1
+114,10,v18-loop-020,Ori,1,1,1,1,1,1.87,263.142296,marks compromise ceremony publicly,1
+115,10,v18-loop-020,Vonn,1,1,1,1,1,1.945,42.74476,marks compromise ceremony publicly,1
+116,10,v18-loop-020,Sova,1,1,1,1,1,1.84,176.997524,marks compromise ceremony publicly,1
+117,10,v18-loop-020,Keth,1,1,0,1,0,1.935,314.630288,recalls old ceremony before counteroffer,1
+118,10,v18-loop-020,Melo,1,1,1,1,1,2.05,98.852052,marks compromise ceremony publicly,1
+119,10,v18-loop-020,Nari,1,1,1,1,1,2.125,238.553216,marks compromise ceremony publicly,1
+120,11,v18-loop-021,Vonn,1,1,0,0,0,1.58,350.44278,waits for agent-led reply,1
+121,11,v18-loop-021,Sova,1,1,1,1,1,1.655,138.735544,marks compromise ceremony publicly,1
+122,11,v18-loop-021,Keth,1,1,1,1,1,1.69,277.163808,marks compromise ceremony publicly,1
+123,11,v18-loop-021,Melo,1,1,1,1,1,1.805,58.401072,marks compromise ceremony publicly,1
+124,11,v18-loop-021,Nari,1,1,0,1,0,1.76,186.448636,recalls old ceremony before counteroffer,1
+125,11,v18-loop-021,Ori,1,1,1,1,1,1.795,333.304,marks compromise ceremony publicly,1
+126,11,v18-loop-022,Vonn,1,1,1,1,1,1.91,114.574164,marks compromise ceremony publicly,1
+127,11,v18-loop-022,Sova,1,1,1,1,1,1.945,252.837928,marks compromise ceremony publicly,1
+128,11,v18-loop-022,Keth,1,1,1,1,1,1.86,28.039692,marks compromise ceremony publicly,1
+129,11,v18-loop-022,Melo,1,1,1,1,1,1.935,167.543456,marks compromise ceremony publicly,1
+130,11,v18-loop-022,Nari,1,1,1,1,1,2.05,308.94522,marks compromise ceremony publicly,1
+131,11,v18-loop-022,Ori,1,1,1,1,0,2.125,88.777984,marks compromise ceremony publicly,1
+132,12,v18-loop-023,Sova,1,1,0,1,1,1.58,200.404348,recalls old ceremony before counteroffer,1
+133,12,v18-loop-023,Keth,1,1,1,1,1,1.695,350.167412,marks compromise ceremony publicly,1
+134,12,v18-loop-023,Melo,1,1,1,1,1,1.73,128.661476,marks compromise ceremony publicly,1
+135,12,v18-loop-023,Nari,1,1,1,1,1,1.805,268.36264,marks compromise ceremony publicly,1
+136,12,v18-loop-023,Ori,1,1,1,1,1,1.72,43.564404,marks compromise ceremony publicly,1
+137,12,v18-loop-023,Vonn,1,1,1,1,1,1.795,183.397168,marks compromise ceremony publicly,1
+138,12,v18-loop-024,Sova,1,1,1,1,1,1.91,324.667332,marks compromise ceremony publicly,1
+139,12,v18-loop-024,Keth,1,1,1,0,1,1.905,101.658196,marks compromise ceremony publicly,1
+140,12,v18-loop-024,Melo,1,1,1,1,1,1.9,239.57026,marks compromise ceremony publicly,1
+141,12,v18-loop-024,Nari,1,1,1,1,1,1.935,17.768224,marks compromise ceremony publicly,1
+142,12,v18-loop-024,Ori,1,1,1,1,1,2.01,157.600988,marks compromise ceremony publicly,1
+143,12,v18-loop-024,Vonn,1,1,1,1,1,2.125,298.871152,marks compromise ceremony publicly,1
+144,13,v18-loop-025,Keth,1,1,0,1,1,1.58,50.629116,recalls old ceremony before counteroffer,1
+145,13,v18-loop-025,Melo,1,1,1,1,1,1.675,199.60768,marks compromise ceremony publicly,1
+146,13,v18-loop-025,Nari,1,1,0,1,0,1.77,337.372044,recalls old ceremony before counteroffer,1
+147,13,v18-loop-025,Ori,1,1,1,1,1,1.845,120.222208,marks compromise ceremony publicly,1
+148,13,v18-loop-025,Vonn,1,1,1,1,1,1.76,255.094972,marks compromise ceremony publicly,1
+149,13,v18-loop-025,Sova,1,1,1,1,1,1.795,33.687736,marks compromise ceremony publicly,1
+150,13,v18-loop-026,Keth,1,1,1,1,1,1.87,173.3231,marks compromise ceremony publicly,1
+151,13,v18-loop-026,Melo,1,1,1,1,1,1.985,314.593264,marks compromise ceremony publicly,1
+152,13,v18-loop-026,Nari,1,1,1,1,1,1.86,87.798328,marks compromise ceremony publicly,1
+153,13,v18-loop-026,Ori,1,1,1,1,0,1.935,227.861392,marks compromise ceremony publicly,1
+154,13,v18-loop-026,Vonn,1,1,1,1,1,2.05,9.131556,marks compromise ceremony publicly,1
+155,13,v18-loop-026,Sova,1,1,0,1,1,2.085,139.06692,recalls old ceremony before counteroffer,1
+156,14,v18-loop-027,Melo,1,0,0,1,1,1.54,259.186184,recalls old ceremony before counteroffer,1
+157,14,v18-loop-027,Nari,1,1,1,1,1,1.655,49.015048,marks compromise ceremony publicly,1
+158,14,v18-loop-027,Ori,1,1,1,0,1,1.73,188.716212,marks compromise ceremony publicly,1
+159,14,v18-loop-027,Vonn,1,1,1,1,1,1.845,330.117976,marks compromise ceremony publicly,1
+160,14,v18-loop-027,Sova,1,1,1,1,0,1.72,103.75074,marks compromise ceremony publicly,1
+161,14,v18-loop-027,Keth,1,1,1,1,1,1.835,245.020904,marks compromise ceremony publicly,1
+162,14,v18-loop-028,Melo,1,1,1,1,1,1.91,24.853668,marks compromise ceremony publicly,1
+163,14,v18-loop-028,Nari,1,1,1,1,1,1.985,164.686432,marks compromise ceremony publicly,1
+164,14,v18-loop-028,Ori,1,1,1,1,1,1.86,298.121796,marks compromise ceremony publicly,1
+165,14,v18-loop-028,Vonn,1,1,1,1,1,1.935,78.15196,marks compromise ceremony publicly,1
+166,14,v18-loop-028,Sova,1,1,1,1,1,2.01,217.787324,marks compromise ceremony publicly,1
+167,14,v18-loop-028,Keth,1,1,1,1,1,2.085,357.620088,marks compromise ceremony publicly,1
+168,15,v18-loop-029,Nari,1,1,0,1,1,1.62,112.252852,recalls old ceremony before counteroffer,1
+169,15,v18-loop-029,Ori,1,1,1,1,1,1.655,259.305616,marks compromise ceremony publicly,1
+170,15,v18-loop-029,Vonn,1,1,1,1,1,1.73,38.94098,marks compromise ceremony publicly,1
+171,15,v18-loop-029,Sova,1,1,1,1,1,1.805,178.740844,marks compromise ceremony publicly,1
+172,15,v18-loop-029,Keth,1,1,1,1,1,1.76,315.281308,marks compromise ceremony publicly,1
+173,15,v18-loop-029,Melo,1,1,1,1,1,1.755,92.272172,marks compromise ceremony publicly,1
+174,15,v18-loop-030,Nari,1,1,1,1,1,1.85,232.889436,marks compromise ceremony publicly,1
+175,15,v18-loop-030,Ori,1,1,0,1,0,1.985,11.828,recalls old ceremony before counteroffer,1
+176,15,v18-loop-030,Vonn,1,1,1,1,1,1.86,148.412364,marks compromise ceremony publicly,1
+177,15,v18-loop-030,Sova,1,1,1,0,1,1.975,289.485128,marks compromise ceremony publicly,1
+178,15,v18-loop-030,Keth,1,1,1,1,1,2.01,67.880492,marks compromise ceremony publicly,1
+179,15,v18-loop-030,Melo,1,1,1,1,1,2.085,207.713256,marks compromise ceremony publicly,1
+180,16,v18-loop-031,Ori,1,1,0,1,1,1.62,322.34602,recalls old ceremony before counteroffer,1
+181,16,v18-loop-031,Vonn,1,1,1,1,1,1.655,109.201384,marks compromise ceremony publicly,1
+182,16,v18-loop-031,Sova,1,1,1,1,0,1.77,250.471548,marks compromise ceremony publicly,1
+183,16,v18-loop-031,Keth,1,1,1,1,1,1.805,28.735312,marks compromise ceremony publicly,1
+184,16,v18-loop-031,Melo,1,1,1,1,1,1.72,163.805476,marks compromise ceremony publicly,1
+185,16,v18-loop-031,Nari,1,1,1,1,1,1.835,305.20724,marks compromise ceremony publicly,1
+186,16,v18-loop-032,Ori,1,1,0,1,1,1.87,75.142604,recalls old ceremony before counteroffer,1
+187,16,v18-loop-032,Vonn,1,1,1,1,1,1.985,224.872768,marks compromise ceremony publicly,1
+188,16,v18-loop-032,Sova,1,1,1,1,1,1.9,359.745532,marks compromise ceremony publicly,1
+189,16,v18-loop-032,Keth,1,1,1,1,0,1.975,139.578296,marks compromise ceremony publicly,1
+190,16,v18-loop-032,Melo,1,1,1,1,1,1.97,276.66786,marks compromise ceremony publicly,1
+191,16,v18-loop-032,Nari,1,1,1,1,1,2.085,57.806424,marks compromise ceremony publicly,1
+192,17,v18-loop-033,Vonn,1,1,0,1,1,1.58,171.001788,recalls old ceremony before counteroffer,1
+193,17,v18-loop-033,Sova,1,1,1,1,1,1.655,319.294552,marks compromise ceremony publicly,1
+194,17,v18-loop-033,Keth,1,1,1,1,1,1.73,98.995716,marks compromise ceremony publicly,1
+195,17,v18-loop-033,Melo,1,1,1,1,1,1.805,238.96008,marks compromise ceremony publicly,1
+196,17,v18-loop-033,Nari,1,1,1,0,1,1.76,15.467644,marks compromise ceremony publicly,1
+197,17,v18-loop-033,Ori,1,1,1,1,1,1.835,155.168808,marks compromise ceremony publicly,1
+198,17,v18-loop-034,Vonn,1,1,1,1,1,1.91,295.133172,marks compromise ceremony publicly,1
+199,17,v18-loop-034,Sova,1,1,1,1,1,1.985,74.965936,marks compromise ceremony publicly,1
+200,17,v18-loop-034,Keth,1,1,1,1,1,1.86,208.4013,marks compromise ceremony publicly,1
+201,17,v18-loop-034,Melo,1,1,1,1,1,1.975,349.671464,marks compromise ceremony publicly,1
+202,17,v18-loop-034,Nari,1,1,1,1,1,2.01,128.066828,marks compromise ceremony publicly,1
+203,17,v18-loop-034,Ori,1,1,1,1,1,2.105,268.914392,marks compromise ceremony publicly,1
+204,18,v18-loop-035,Sova,1,1,0,1,0,1.58,21.094956,recalls old ceremony before counteroffer,1
+205,18,v18-loop-035,Keth,1,1,1,0,1,1.655,169.58512,marks compromise ceremony publicly,1
+206,18,v18-loop-035,Melo,1,1,1,0,1,1.77,310.657884,marks compromise ceremony publicly,1
+207,18,v18-loop-035,Nari,1,1,1,0,1,1.765,87.846148,marks compromise ceremony publicly,1
+208,18,v18-loop-035,Ori,1,1,1,1,1,1.72,224.123412,marks compromise ceremony publicly,1
+209,18,v18-loop-035,Vonn,1,1,1,0,1,1.795,3.857476,marks compromise ceremony publicly,1
+210,18,v18-loop-036,Sova,1,1,1,0,1,1.91,145.09474,marks compromise ceremony publicly,1
+211,18,v18-loop-036,Keth,1,1,1,0,0,1.985,285.059104,marks compromise ceremony publicly,1
+212,18,v18-loop-036,Melo,1,1,1,1,1,1.9,59.931868,marks compromise ceremony publicly,1
+213,18,v18-loop-036,Nari,1,1,1,1,1,1.935,198.327232,marks compromise ceremony publicly,1
+214,18,v18-loop-036,Ori,1,1,1,1,1,2.01,338.028396,marks compromise ceremony publicly,1
+215,18,v18-loop-036,Vonn,1,1,1,0,1,2.085,117.99276,marks compromise ceremony publicly,1
+216,19,v18-loop-037,Keth,1,1,0,1,1,1.62,232.625524,recalls old ceremony before counteroffer,1
+217,19,v18-loop-037,Melo,1,1,0,0,1,1.695,12.458288,revises counteroffer with body shift,1
+218,19,v18-loop-037,Nari,1,1,1,0,0,1.73,159.313652,marks compromise ceremony publicly,1
+219,19,v18-loop-037,Ori,1,1,1,1,1,1.805,299.146416,marks compromise ceremony publicly,1
+220,19,v18-loop-037,Vonn,1,1,1,1,1,1.72,74.21658,marks compromise ceremony publicly,1
+221,19,v18-loop-037,Sova,1,1,1,1,1,1.795,213.917744,marks compromise ceremony publicly,1
+222,19,v18-loop-038,Keth,1,1,1,1,1,1.87,353.882108,marks compromise ceremony publicly,1
+223,19,v18-loop-038,Melo,1,1,1,1,1,1.985,135.020672,marks compromise ceremony publicly,1
+224,19,v18-loop-038,Nari,1,0,0,1,1,1.82,258.591536,recalls old ceremony before counteroffer,1
+225,19,v18-loop-038,Ori,1,1,1,1,1,1.935,48.6178,marks compromise ceremony publicly,1
+226,19,v18-loop-038,Vonn,1,1,1,1,1,2.01,188.253164,marks compromise ceremony publicly,1
+227,19,v18-loop-038,Sova,1,1,1,1,1,2.085,328.085928,marks compromise ceremony publicly,1
+228,20,v18-loop-039,Melo,1,1,0,1,1,1.62,82.619992,recalls old ceremony before counteroffer,1
+229,20,v18-loop-039,Nari,1,1,1,1,1,1.695,231.011456,marks compromise ceremony publicly,1
+230,20,v18-loop-039,Ori,1,1,1,1,1,1.73,9.40682,marks compromise ceremony publicly,1
+231,20,v18-loop-039,Vonn,1,1,1,1,1,1.845,150.676984,marks compromise ceremony publicly,1
+232,20,v18-loop-039,Sova,1,1,1,1,1,1.7,283.887148,marks compromise ceremony publicly,1
+233,20,v18-loop-039,Keth,1,1,0,1,0,1.795,61.322512,recalls old ceremony before counteroffer,1
+234,20,v18-loop-040,Melo,1,1,1,0,1,1.91,205.412676,marks compromise ceremony publicly,1
+235,20,v18-loop-040,Nari,1,1,1,1,1,1.945,343.80804,marks compromise ceremony publicly,1
+236,20,v18-loop-040,Ori,1,1,1,1,1,1.86,118.549204,marks compromise ceremony publicly,1
+237,20,v18-loop-040,Vonn,1,1,1,1,1,1.935,258.381968,marks compromise ceremony publicly,1
+238,20,v18-loop-040,Sova,1,1,1,1,1,2.05,39.783732,marks compromise ceremony publicly,1
+239,20,v18-loop-040,Keth,1,1,1,1,1,2.125,179.616496,marks compromise ceremony publicly,1
+240,21,v18-loop-041,Nari,1,1,0,1,0,1.58,291.57186,recalls old ceremony before counteroffer,1
+241,21,v18-loop-041,Ori,1,1,0,1,1,1.615,69.802724,recalls old ceremony before counteroffer,1
+242,21,v18-loop-041,Vonn,1,1,1,1,1,1.73,219.499988,marks compromise ceremony publicly,1
+243,21,v18-loop-041,Sova,1,1,1,1,1,1.805,359.332752,marks compromise ceremony publicly,1
+244,21,v18-loop-041,Keth,1,1,1,1,1,1.72,134.402916,marks compromise ceremony publicly,1
+245,21,v18-loop-041,Melo,1,1,1,1,1,1.835,275.67308,marks compromise ceremony publicly,1
+246,21,v18-loop-042,Nari,1,1,1,1,1,1.87,54.265844,marks compromise ceremony publicly,1
+247,21,v18-loop-042,Ori,1,1,1,1,0,1.945,193.999908,marks compromise ceremony publicly,1
+248,21,v18-loop-042,Vonn,1,1,0,1,1,1.86,320.313972,recalls old ceremony before counteroffer,1
+249,21,v18-loop-042,Sova,1,1,1,1,1,1.975,109.912536,marks compromise ceremony publicly,1
+250,21,v18-loop-042,Keth,1,1,1,1,1,2.05,249.8769,marks compromise ceremony publicly,1
+251,21,v18-loop-042,Melo,1,1,1,1,1,2.085,28.140664,marks compromise ceremony publicly,1
+252,22,v18-loop-043,Ori,1,1,0,1,1,1.62,142.905028,recalls old ceremony before counteroffer,1
+253,22,v18-loop-043,Vonn,1,1,1,0,1,1.695,291.197792,marks compromise ceremony publicly,1
+254,22,v18-loop-043,Sova,1,1,1,1,1,1.73,69.593156,marks compromise ceremony publicly,1
+255,22,v18-loop-043,Keth,1,1,1,1,1,1.805,209.42592,marks compromise ceremony publicly,1
+256,22,v18-loop-043,Melo,1,1,1,1,1,1.76,345.933484,marks compromise ceremony publicly,1
+257,22,v18-loop-043,Nari,1,1,1,1,1,1.835,125.766248,marks compromise ceremony publicly,1
+258,22,v18-loop-044,Ori,1,1,1,1,1,1.83,262.757112,marks compromise ceremony publicly,1
+259,22,v18-loop-044,Vonn,1,1,1,1,1,1.985,45.300176,marks compromise ceremony publicly,1
+260,22,v18-loop-044,Sova,1,1,1,1,1,1.86,178.86714,marks compromise ceremony publicly,1
+261,22,v18-loop-044,Keth,1,1,1,1,1,1.915,318.079904,marks compromise ceremony publicly,1
+262,22,v18-loop-044,Melo,1,1,0,1,0,2.01,95.581068,recalls old ceremony before counteroffer,1
+263,22,v18-loop-044,Nari,1,1,1,1,1,2.125,239.802832,marks compromise ceremony publicly,1
+264,23,v18-loop-045,Vonn,1,1,0,1,1,1.58,351.758196,recalls old ceremony before counteroffer,1
+265,23,v18-loop-045,Sova,1,1,1,1,1,1.655,139.72196,marks compromise ceremony publicly,1
+266,23,v18-loop-045,Keth,1,1,1,1,1,1.77,281.025024,marks compromise ceremony publicly,1
+267,23,v18-loop-045,Melo,1,1,1,1,1,1.845,60.956488,marks compromise ceremony publicly,1
+268,23,v18-loop-045,Nari,1,1,1,1,1,1.72,194.589252,marks compromise ceremony publicly,1
+269,23,v18-loop-045,Ori,1,1,1,1,0,1.835,335.859416,marks compromise ceremony publicly,1
+270,23,v18-loop-046,Vonn,1,1,1,1,1,1.87,114.25478,marks compromise ceremony publicly,1
+271,23,v18-loop-046,Sova,1,1,1,1,1,1.945,253.955944,marks compromise ceremony publicly,1
+272,23,v18-loop-046,Keth,1,1,1,0,1,1.86,28.828708,marks compromise ceremony publicly,1
+273,23,v18-loop-046,Melo,1,1,1,1,1,1.975,170.098872,marks compromise ceremony publicly,1
+274,23,v18-loop-046,Nari,1,1,1,1,1,2.05,310.063236,marks compromise ceremony publicly,1
+275,23,v18-loop-046,Ori,1,1,1,1,1,2.045,86.9225,marks compromise ceremony publicly,1
+276,24,v18-loop-047,Sova,1,1,0,1,0,1.58,201.653964,recalls old ceremony before counteroffer,1
+277,24,v18-loop-047,Keth,1,1,1,1,1,1.695,351.384128,marks compromise ceremony publicly,1
+278,24,v18-loop-047,Melo,1,1,1,1,1,1.73,129.779492,marks compromise ceremony publicly,1
+279,24,v18-loop-047,Nari,1,1,0,1,1,1.845,262.589656,recalls old ceremony before counteroffer,1
+280,24,v18-loop-047,Ori,1,1,1,1,1,1.76,46.11982,marks compromise ceremony publicly,1
+281,24,v18-loop-047,Vonn,1,1,1,1,1,1.835,185.952584,marks compromise ceremony publicly,1
+282,24,v18-loop-048,Sova,1,1,1,1,1,1.87,324.347948,marks compromise ceremony publicly,1
+283,24,v18-loop-048,Keth,1,1,1,1,1,1.945,104.180712,marks compromise ceremony publicly,1
+284,24,v18-loop-048,Melo,1,1,1,1,1,1.86,238.921876,marks compromise ceremony publicly,1
+285,24,v18-loop-048,Nari,1,1,1,1,1,1.935,18.65594,marks compromise ceremony publicly,1
+286,24,v18-loop-048,Ori,1,1,1,1,1,2.01,158.719004,marks compromise ceremony publicly,1
+287,24,v18-loop-048,Vonn,1,1,1,1,1,2.125,299.989168,marks compromise ceremony publicly,1

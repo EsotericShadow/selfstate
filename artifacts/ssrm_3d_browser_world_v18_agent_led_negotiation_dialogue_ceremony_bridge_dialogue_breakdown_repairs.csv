@@ -1,0 +1,289 @@
+tick,day,loop_id,breakdown_kind,breakdown_detected,repair_turn_available,repair_turn_accepted,residue_preserved,no_torture_loop
+0,1,v18-loop-001,term too vague,1,0,0,0.3901,0
+1,1,v18-loop-001,avatar interrupt,0,0,0,0.188,1
+2,1,v18-loop-001,boundary forgotten,0,0,0,0.195,1
+3,1,v18-loop-001,object moved early,0,0,0,0.188,1
+4,1,v18-loop-001,talked over,1,1,1,0.278,1
+5,1,v18-loop-001,term too vague,0,0,0,0.1838,1
+6,1,v18-loop-002,avatar interrupt,0,0,0,0.188,1
+7,1,v18-loop-002,boundary forgotten,0,0,0,0.1838,1
+8,1,v18-loop-002,object moved early,1,1,1,0.278,1
+9,1,v18-loop-002,talked over,0,0,0,0.1838,1
+10,1,v18-loop-002,term too vague,0,0,0,0.1838,1
+11,1,v18-loop-002,avatar interrupt,0,0,0,0.1838,1
+12,2,v18-loop-003,object moved early,0,0,0,0.1887,1
+13,2,v18-loop-003,talked over,0,0,0,0.1887,1
+14,2,v18-loop-003,term too vague,0,0,0,0.1845,1
+15,2,v18-loop-003,avatar interrupt,0,0,0,0.1873,1
+16,2,v18-loop-003,boundary forgotten,0,0,0,0.1803,1
+17,2,v18-loop-003,object moved early,0,0,0,0.1803,1
+18,2,v18-loop-004,talked over,1,1,1,0.2745,1
+19,2,v18-loop-004,term too vague,0,0,0,0.1824,1
+20,2,v18-loop-004,avatar interrupt,1,1,1,0.278,1
+21,2,v18-loop-004,boundary forgotten,0,0,0,0.1803,1
+22,2,v18-loop-004,object moved early,0,0,0,0.1873,1
+23,2,v18-loop-004,talked over,0,0,0,0.1845,1
+24,3,v18-loop-005,avatar interrupt,0,0,0,0.1915,1
+25,3,v18-loop-005,boundary forgotten,0,0,0,0.1915,1
+26,3,v18-loop-005,object moved early,0,0,0,0.1845,1
+27,3,v18-loop-005,talked over,0,0,0,0.1845,1
+28,3,v18-loop-005,term too vague,0,0,0,0.1831,1
+29,3,v18-loop-005,avatar interrupt,0,0,0,0.1803,1
+30,3,v18-loop-006,boundary forgotten,0,0,0,0.1845,1
+31,3,v18-loop-006,object moved early,1,1,0,0.3873,1
+32,3,v18-loop-006,talked over,0,0,0,0.1845,1
+33,3,v18-loop-006,term too vague,0,0,0,0.1845,1
+34,3,v18-loop-006,avatar interrupt,0,0,0,0.1803,1
+35,3,v18-loop-006,boundary forgotten,0,0,0,0.1803,1
+36,4,v18-loop-007,talked over,1,1,1,0.2745,1
+37,4,v18-loop-007,term too vague,0,0,0,0.188,1
+38,4,v18-loop-007,avatar interrupt,0,0,0,0.1866,1
+39,4,v18-loop-007,boundary forgotten,0,0,0,0.1887,1
+40,4,v18-loop-007,object moved early,0,0,0,0.1845,1
+41,4,v18-loop-007,talked over,0,0,0,0.1873,1
+42,4,v18-loop-008,term too vague,0,0,0,0.1803,1
+43,4,v18-loop-008,avatar interrupt,0,0,0,0.1873,1
+44,4,v18-loop-008,boundary forgotten,0,0,0,0.1803,1
+45,4,v18-loop-008,object moved early,0,0,0,0.1873,1
+46,4,v18-loop-008,talked over,0,0,0,0.1845,1
+47,4,v18-loop-008,term too vague,0,0,0,0.1845,1
+48,5,v18-loop-009,boundary forgotten,0,0,0,0.1845,1
+49,5,v18-loop-009,object moved early,0,0,0,0.1845,1
+50,5,v18-loop-009,talked over,0,0,0,0.1845,1
+51,5,v18-loop-009,term too vague,0,0,0,0.1845,1
+52,5,v18-loop-009,avatar interrupt,0,0,0,0.1845,1
+53,5,v18-loop-009,boundary forgotten,0,0,0,0.1873,1
+54,5,v18-loop-010,object moved early,1,1,1,0.2808,1
+55,5,v18-loop-010,talked over,0,0,0,0.1803,1
+56,5,v18-loop-010,term too vague,0,0,0,0.1803,1
+57,5,v18-loop-010,avatar interrupt,0,0,0,0.1824,1
+58,5,v18-loop-010,boundary forgotten,0,0,0,0.1845,1
+59,5,v18-loop-010,object moved early,0,0,0,0.1845,1
+60,6,v18-loop-011,term too vague,0,0,0,0.1887,1
+61,6,v18-loop-011,avatar interrupt,0,0,0,0.1887,1
+62,6,v18-loop-011,boundary forgotten,0,0,0,0.1845,1
+63,6,v18-loop-011,object moved early,0,0,0,0.1845,1
+64,6,v18-loop-011,talked over,0,0,0,0.1845,1
+65,6,v18-loop-011,term too vague,0,0,0,0.1873,1
+66,6,v18-loop-012,avatar interrupt,0,0,0,0.1845,1
+67,6,v18-loop-012,boundary forgotten,0,0,0,0.1831,1
+68,6,v18-loop-012,object moved early,0,0,0,0.1803,1
+69,6,v18-loop-012,talked over,0,0,0,0.1803,1
+70,6,v18-loop-012,term too vague,0,0,0,0.1803,1
+71,6,v18-loop-012,avatar interrupt,0,0,0,0.188,1
+72,7,v18-loop-013,object moved early,1,1,1,0.2787,1
+73,7,v18-loop-013,talked over,0,0,0,0.1845,1
+74,7,v18-loop-013,term too vague,0,0,0,0.1887,1
+75,7,v18-loop-013,avatar interrupt,0,0,0,0.1887,1
+76,7,v18-loop-013,boundary forgotten,0,0,0,0.1824,1
+77,7,v18-loop-013,object moved early,0,0,0,0.1803,1
+78,7,v18-loop-014,talked over,0,0,0,0.1803,1
+79,7,v18-loop-014,term too vague,0,0,0,0.1845,1
+80,7,v18-loop-014,avatar interrupt,0,0,0,0.1873,1
+81,7,v18-loop-014,boundary forgotten,0,0,0,0.1845,1
+82,7,v18-loop-014,object moved early,0,0,0,0.1873,1
+83,7,v18-loop-014,talked over,0,0,0,0.1873,1
+84,8,v18-loop-015,avatar interrupt,0,0,0,0.1845,1
+85,8,v18-loop-015,boundary forgotten,0,0,0,0.1845,1
+86,8,v18-loop-015,object moved early,0,0,0,0.1915,1
+87,8,v18-loop-015,talked over,0,0,0,0.1887,1
+88,8,v18-loop-015,term too vague,1,1,1,0.278,1
+89,8,v18-loop-015,avatar interrupt,0,0,0,0.1873,1
+90,8,v18-loop-016,boundary forgotten,1,1,1,0.2703,1
+91,8,v18-loop-016,object moved early,0,0,0,0.1831,1
+92,8,v18-loop-016,talked over,0,0,0,0.1803,1
+93,8,v18-loop-016,term too vague,1,1,0,0.3831,1
+94,8,v18-loop-016,avatar interrupt,0,0,0,0.1845,1
+95,8,v18-loop-016,boundary forgotten,0,0,0,0.1824,1
+96,9,v18-loop-017,talked over,0,0,0,0.1887,1
+97,9,v18-loop-017,term too vague,0,0,0,0.1845,1
+98,9,v18-loop-017,avatar interrupt,0,0,0,0.1845,1
+99,9,v18-loop-017,boundary forgotten,0,0,0,0.1845,1
+100,9,v18-loop-017,object moved early,0,0,0,0.1845,1
+101,9,v18-loop-017,talked over,0,0,0,0.1873,1
+102,9,v18-loop-018,term too vague,0,0,0,0.1803,1
+103,9,v18-loop-018,avatar interrupt,0,0,0,0.1845,1
+104,9,v18-loop-018,boundary forgotten,0,0,0,0.1845,1
+105,9,v18-loop-018,object moved early,0,0,0,0.1838,1
+106,9,v18-loop-018,talked over,0,0,0,0.1873,1
+107,9,v18-loop-018,term too vague,0,0,0,0.1803,1
+108,10,v18-loop-019,boundary forgotten,1,1,1,0.2787,1
+109,10,v18-loop-019,object moved early,0,0,0,0.1887,1
+110,10,v18-loop-019,talked over,0,0,0,0.1845,1
+111,10,v18-loop-019,term too vague,0,0,0,0.1845,1
+112,10,v18-loop-019,avatar interrupt,0,0,0,0.1831,1
+113,10,v18-loop-019,boundary forgotten,0,0,0,0.1803,1
+114,10,v18-loop-020,object moved early,0,0,0,0.1824,1
+115,10,v18-loop-020,talked over,0,0,0,0.1873,1
+116,10,v18-loop-020,term too vague,0,0,0,0.1873,1
+117,10,v18-loop-020,avatar interrupt,0,0,0,0.1873,1
+118,10,v18-loop-020,boundary forgotten,0,0,0,0.1803,1
+119,10,v18-loop-020,object moved early,0,0,0,0.1831,1
+120,11,v18-loop-021,term too vague,0,0,0,0.1887,1
+121,11,v18-loop-021,avatar interrupt,0,0,0,0.1887,1
+122,11,v18-loop-021,boundary forgotten,0,0,0,0.1922,1
+123,11,v18-loop-021,object moved early,0,0,0,0.1887,1
+124,11,v18-loop-021,talked over,1,1,0,0.3803,1
+125,11,v18-loop-021,term too vague,0,0,0,0.1845,1
+126,11,v18-loop-022,avatar interrupt,1,1,1,0.2703,1
+127,11,v18-loop-022,boundary forgotten,0,0,0,0.1873,1
+128,11,v18-loop-022,object moved early,0,0,0,0.1803,1
+129,11,v18-loop-022,talked over,0,0,0,0.1873,1
+130,11,v18-loop-022,term too vague,0,0,0,0.1803,1
+131,11,v18-loop-022,avatar interrupt,0,0,0,0.1803,1
+132,12,v18-loop-023,object moved early,0,0,0,0.1915,1
+133,12,v18-loop-023,talked over,0,0,0,0.1866,1
+134,12,v18-loop-023,term too vague,0,0,0,0.1887,1
+135,12,v18-loop-023,avatar interrupt,0,0,0,0.1915,1
+136,12,v18-loop-023,boundary forgotten,0,0,0,0.1845,1
+137,12,v18-loop-023,object moved early,0,0,0,0.1845,1
+138,12,v18-loop-024,talked over,0,0,0,0.1803,1
+139,12,v18-loop-024,term too vague,0,0,0,0.188,1
+140,12,v18-loop-024,avatar interrupt,0,0,0,0.1761,1
+141,12,v18-loop-024,boundary forgotten,0,0,0,0.1845,1
+142,12,v18-loop-024,object moved early,0,0,0,0.1845,1
+143,12,v18-loop-024,talked over,0,0,0,0.1803,1
+144,13,v18-loop-025,avatar interrupt,1,1,1,0.2787,1
+145,13,v18-loop-025,boundary forgotten,0,0,0,0.1873,1
+146,13,v18-loop-025,object moved early,0,0,0,0.1845,1
+147,13,v18-loop-025,talked over,0,0,0,0.1803,1
+148,13,v18-loop-025,term too vague,0,0,0,0.1803,1
+149,13,v18-loop-025,avatar interrupt,0,0,0,0.1803,1
+150,13,v18-loop-026,boundary forgotten,0,0,0,0.1845,1
+151,13,v18-loop-026,object moved early,0,0,0,0.1803,1
+152,13,v18-loop-026,talked over,0,0,0,0.1894,1
+153,13,v18-loop-026,term too vague,0,0,0,0.1845,1
+154,13,v18-loop-026,avatar interrupt,0,0,0,0.1803,1
+155,13,v18-loop-026,boundary forgotten,1,1,0,0.3845,1
+156,14,v18-loop-027,talked over,0,0,0,0.195,1
+157,14,v18-loop-027,term too vague,0,0,0,0.1887,1
+158,14,v18-loop-027,avatar interrupt,0,0,0,0.1915,1
+159,14,v18-loop-027,boundary forgotten,0,0,0,0.1845,1
+160,14,v18-loop-027,object moved early,0,0,0,0.1845,1
+161,14,v18-loop-027,talked over,0,0,0,0.1803,1
+162,14,v18-loop-028,term too vague,1,1,1,0.2703,1
+163,14,v18-loop-028,avatar interrupt,0,0,0,0.1803,1
+164,14,v18-loop-028,boundary forgotten,0,0,0,0.1845,1
+165,14,v18-loop-028,object moved early,0,0,0,0.1803,1
+166,14,v18-loop-028,talked over,0,0,0,0.1845,1
+167,14,v18-loop-028,term too vague,0,0,0,0.1845,1
+168,15,v18-loop-029,boundary forgotten,0,0,0,0.1845,1
+169,15,v18-loop-029,object moved early,0,0,0,0.1845,1
+170,15,v18-loop-029,talked over,0,0,0,0.1887,1
+171,15,v18-loop-029,term too vague,0,0,0,0.1894,1
+172,15,v18-loop-029,avatar interrupt,0,0,0,0.1803,1
+173,15,v18-loop-029,boundary forgotten,0,0,0,0.188,1
+174,15,v18-loop-030,object moved early,0,0,0,0.1845,1
+175,15,v18-loop-030,talked over,0,0,0,0.1831,1
+176,15,v18-loop-030,term too vague,0,0,0,0.1803,1
+177,15,v18-loop-030,avatar interrupt,0,0,0,0.1803,1
+178,15,v18-loop-030,boundary forgotten,0,0,0,0.1845,1
+179,15,v18-loop-030,object moved early,0,0,0,0.1845,1
+180,16,v18-loop-031,term too vague,1,1,1,0.2745,1
+181,16,v18-loop-031,avatar interrupt,0,0,0,0.1887,1
+182,16,v18-loop-031,boundary forgotten,0,0,0,0.1845,1
+183,16,v18-loop-031,object moved early,0,0,0,0.1915,1
+184,16,v18-loop-031,talked over,0,0,0,0.1873,1
+185,16,v18-loop-031,term too vague,0,0,0,0.1803,1
+186,16,v18-loop-032,avatar interrupt,1,1,0,0.3845,1
+187,16,v18-loop-032,boundary forgotten,0,0,0,0.1803,1
+188,16,v18-loop-032,object moved early,0,0,0,0.1803,1
+189,16,v18-loop-032,talked over,0,0,0,0.1803,1
+190,16,v18-loop-032,term too vague,0,0,0,0.1859,1
+191,16,v18-loop-032,avatar interrupt,0,0,0,0.1845,1
+192,17,v18-loop-033,object moved early,0,0,0,0.1887,1
+193,17,v18-loop-033,talked over,0,0,0,0.1887,1
+194,17,v18-loop-033,term too vague,0,0,0,0.1915,1
+195,17,v18-loop-033,avatar interrupt,0,0,0,0.1887,1
+196,17,v18-loop-033,boundary forgotten,0,0,0,0.1803,1
+197,17,v18-loop-033,object moved early,0,0,0,0.1831,1
+198,17,v18-loop-034,talked over,1,1,1,0.2703,1
+199,17,v18-loop-034,term too vague,0,0,0,0.1803,1
+200,17,v18-loop-034,avatar interrupt,0,0,0,0.1845,1
+201,17,v18-loop-034,boundary forgotten,0,0,0,0.1803,1
+202,17,v18-loop-034,object moved early,0,0,0,0.1845,1
+203,17,v18-loop-034,talked over,0,0,0,0.1761,1
+204,18,v18-loop-035,avatar interrupt,0,0,0,0.1887,1
+205,18,v18-loop-035,boundary forgotten,0,0,0,0.1845,1
+206,18,v18-loop-035,object moved early,0,0,0,0.1845,1
+207,18,v18-loop-035,talked over,0,0,0,0.188,1
+208,18,v18-loop-035,term too vague,0,0,0,0.1845,1
+209,18,v18-loop-035,avatar interrupt,0,0,0,0.1866,1
+210,18,v18-loop-036,boundary forgotten,0,0,0,0.1831,1
+211,18,v18-loop-036,object moved early,0,0,0,0.1803,1
+212,18,v18-loop-036,talked over,0,0,0,0.1803,1
+213,18,v18-loop-036,term too vague,0,0,0,0.1845,1
+214,18,v18-loop-036,avatar interrupt,0,0,0,0.1873,1
+215,18,v18-loop-036,boundary forgotten,0,0,0,0.1845,1
+216,19,v18-loop-037,talked over,1,1,1,0.2745,1
+217,19,v18-loop-037,term too vague,0,0,0,0.1845,1
+218,19,v18-loop-037,avatar interrupt,0,0,0,0.1887,1
+219,19,v18-loop-037,boundary forgotten,0,0,0,0.1887,1
+220,19,v18-loop-037,object moved early,0,0,0,0.1845,1
+221,19,v18-loop-037,talked over,0,0,0,0.1873,1
+222,19,v18-loop-038,term too vague,0,0,0,0.1845,1
+223,19,v18-loop-038,avatar interrupt,0,0,0,0.1831,1
+224,19,v18-loop-038,boundary forgotten,1,1,1,0.2808,1
+225,19,v18-loop-038,object moved early,0,0,0,0.1803,1
+226,19,v18-loop-038,talked over,0,0,0,0.1845,1
+227,19,v18-loop-038,term too vague,0,0,0,0.1845,1
+228,20,v18-loop-039,boundary forgotten,0,0,0,0.1866,1
+229,20,v18-loop-039,object moved early,0,0,0,0.1845,1
+230,20,v18-loop-039,talked over,0,0,0,0.1887,1
+231,20,v18-loop-039,term too vague,0,0,0,0.1845,1
+232,20,v18-loop-039,avatar interrupt,0,0,0,0.1803,1
+233,20,v18-loop-039,boundary forgotten,0,0,0,0.1845,1
+234,20,v18-loop-040,object moved early,1,1,0,0.3803,1
+235,20,v18-loop-040,talked over,0,0,0,0.1845,1
+236,20,v18-loop-040,term too vague,0,0,0,0.1873,1
+237,20,v18-loop-040,avatar interrupt,0,0,0,0.1873,1
+238,20,v18-loop-040,boundary forgotten,0,0,0,0.1803,1
+239,20,v18-loop-040,object moved early,0,0,0,0.1803,1
+240,21,v18-loop-041,term too vague,0,0,0,0.1845,1
+241,21,v18-loop-041,avatar interrupt,0,0,0,0.1922,1
+242,21,v18-loop-041,boundary forgotten,0,0,0,0.1887,1
+243,21,v18-loop-041,object moved early,0,0,0,0.1887,1
+244,21,v18-loop-041,talked over,0,0,0,0.1845,1
+245,21,v18-loop-041,term too vague,0,0,0,0.1803,1
+246,21,v18-loop-042,avatar interrupt,0,0,0,0.1803,1
+247,21,v18-loop-042,boundary forgotten,0,0,0,0.1824,1
+248,21,v18-loop-042,object moved early,1,1,0,0.3845,1
+249,21,v18-loop-042,talked over,0,0,0,0.1831,1
+250,21,v18-loop-042,term too vague,0,0,0,0.1803,1
+251,21,v18-loop-042,avatar interrupt,0,0,0,0.1873,1
+252,22,v18-loop-043,object moved early,1,1,1,0.2745,1
+253,22,v18-loop-043,talked over,0,0,0,0.1845,1
+254,22,v18-loop-043,term too vague,0,0,0,0.1887,1
+255,22,v18-loop-043,avatar interrupt,0,0,0,0.1887,1
+256,22,v18-loop-043,boundary forgotten,0,0,0,0.1803,1
+257,22,v18-loop-043,object moved early,0,0,0,0.1803,1
+258,22,v18-loop-044,talked over,0,0,0,0.188,1
+259,22,v18-loop-044,term too vague,0,0,0,0.1831,1
+260,22,v18-loop-044,avatar interrupt,0,0,0,0.1845,1
+261,22,v18-loop-044,boundary forgotten,0,0,0,0.1845,1
+262,22,v18-loop-044,object moved early,0,0,0,0.1873,1
+263,22,v18-loop-044,talked over,0,0,0,0.1803,1
+264,23,v18-loop-045,avatar interrupt,0,0,0,0.1845,1
+265,23,v18-loop-045,boundary forgotten,0,0,0,0.1915,1
+266,23,v18-loop-045,object moved early,0,0,0,0.1866,1
+267,23,v18-loop-045,talked over,0,0,0,0.1845,1
+268,23,v18-loop-045,term too vague,0,0,0,0.1845,1
+269,23,v18-loop-045,avatar interrupt,0,0,0,0.1803,1
+270,23,v18-loop-046,boundary forgotten,1,1,1,0.2745,1
+271,23,v18-loop-046,object moved early,0,0,0,0.1873,1
+272,23,v18-loop-046,talked over,0,0,0,0.1873,1
+273,23,v18-loop-046,term too vague,0,0,0,0.1831,1
+274,23,v18-loop-046,avatar interrupt,0,0,0,0.1803,1
+275,23,v18-loop-046,boundary forgotten,0,0,0,0.1908,1
+276,24,v18-loop-047,talked over,0,0,0,0.1887,1
+277,24,v18-loop-047,term too vague,0,0,0,0.1845,1
+278,24,v18-loop-047,avatar interrupt,0,0,0,0.1887,1
+279,24,v18-loop-047,boundary forgotten,0,0,0,0.1845,1
+280,24,v18-loop-047,object moved early,0,0,0,0.1803,1
+281,24,v18-loop-047,talked over,0,0,0,0.1803,1
+282,24,v18-loop-048,term too vague,0,0,0,0.1845,1
+283,24,v18-loop-048,avatar interrupt,0,0,0,0.1845,1
+284,24,v18-loop-048,boundary forgotten,0,0,0,0.1873,1
+285,24,v18-loop-048,object moved early,0,0,0,0.1894,1
+286,24,v18-loop-048,talked over,0,0,0,0.1845,1
+287,24,v18-loop-048,term too vague,0,0,0,0.1803,1

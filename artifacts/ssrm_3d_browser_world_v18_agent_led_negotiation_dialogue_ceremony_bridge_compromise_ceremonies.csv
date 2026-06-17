@@ -1,0 +1,289 @@
+tick,day,ceremony_id,loop_id,witness_agents,ceremony_marker,spoken_formula,object_marker,ceremony_completed,ceremony_public,no_mystical_claim
+0,1,v18-ceremony-d01-t00,v18-loop-001,Keth|Nari|Vonn,chalk circle,We keep do not erase route warnings; we mark return marker; we can revisit without shame.,path cord,0,0,1
+1,1,v18-ceremony-d01-t01,v18-loop-001,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shared schedule knot; we can revisit without shame.,tally beads,0,0,1
+2,1,v18-ceremony-d01-t02,v18-loop-001,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shorter turn; we can revisit without shame.,ink ledger,1,1,1
+3,1,v18-ceremony-d01-t03,v18-loop-001,Ori|Sova,ledger mark,We keep repair work needs warning; we mark shorter turn; we can revisit without shame.,sap hook,1,1,1
+4,1,v18-ceremony-d01-t04,v18-loop-001,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark public witness; we can revisit without shame.,listening shell,0,0,1
+5,1,v18-ceremony-d01-t05,v18-loop-001,Sova|Melo|Ori,reed knot,We keep no crowding while resting; we mark quiet interval; we can revisit without shame.,ember bowl,1,1,1
+6,1,v18-ceremony-d01-t06,v18-loop-002,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark return marker; we can revisit without shame.,path cord,1,1,1
+7,1,v18-ceremony-d01-t07,v18-loop-002,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shared schedule knot; we can revisit without shame.,tally beads,1,1,1
+8,1,v18-ceremony-d01-t08,v18-loop-002,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shorter turn; we can revisit without shame.,ink ledger,0,0,1
+9,1,v18-ceremony-d01-t09,v18-loop-002,Ori|Sova,ledger mark,We keep repair work needs warning; we mark shorter turn; we can revisit without shame.,sap hook,1,1,1
+10,1,v18-ceremony-d01-t10,v18-loop-002,Vonn|Keth|Nari,sap thread,We keep quiet recovery needs distance; we mark public witness; we can revisit without shame.,listening shell,1,1,1
+11,1,v18-ceremony-d01-t11,v18-loop-002,Sova|Melo,reed knot,We keep no crowding while resting; we mark quiet interval; we can revisit without shame.,ember bowl,1,1,1
+12,2,v18-ceremony-d02-t00,v18-loop-003,Melo|Ori,ember tap,We keep fair turns before tool access; we mark return marker; we can revisit without shame.,tally beads,0,0,1
+13,2,v18-ceremony-d02-t01,v18-loop-003,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shared schedule knot; we can revisit without shame.,ink ledger,1,1,1
+14,2,v18-ceremony-d02-t02,v18-loop-003,Ori|Sova,ledger mark,We keep repair work needs warning; we mark shared schedule knot; we can revisit without shame.,sap hook,1,1,1
+15,2,v18-ceremony-d02-t03,v18-loop-003,Vonn|Keth|Nari,sap thread,We keep quiet recovery needs distance; we mark later help; we can revisit without shame.,listening shell,1,1,1
+16,2,v18-ceremony-d02-t04,v18-loop-003,Sova|Melo,reed knot,We keep no crowding while resting; we mark public witness; we can revisit without shame.,ember bowl,1,1,1
+17,2,v18-ceremony-d02-t05,v18-loop-003,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark quiet interval; we can revisit without shame.,path cord,1,1,1
+18,2,v18-ceremony-d02-t06,v18-loop-004,Melo|Ori,ember tap,We keep fair turns before tool access; we mark return marker; we can revisit without shame.,tally beads,1,1,1
+19,2,v18-ceremony-d02-t07,v18-loop-004,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shared schedule knot; we can revisit without shame.,ink ledger,1,1,1
+20,2,v18-ceremony-d02-t08,v18-loop-004,Ori|Sova|Melo,ledger mark,We keep repair work needs warning; we mark shared schedule knot; we can revisit without shame.,sap hook,0,0,1
+21,2,v18-ceremony-d02-t09,v18-loop-004,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark later help; we can revisit without shame.,listening shell,1,1,1
+22,2,v18-ceremony-d02-t10,v18-loop-004,Sova|Melo,reed knot,We keep no crowding while resting; we mark public witness; we can revisit without shame.,ember bowl,1,1,1
+23,2,v18-ceremony-d02-t11,v18-loop-004,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark quiet interval; we can revisit without shame.,path cord,1,1,1
+24,3,v18-ceremony-d03-t00,v18-loop-005,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark return marker; we can revisit without shame.,ink ledger,0,0,1
+25,3,v18-ceremony-d03-t01,v18-loop-005,Ori|Sova|Melo,ledger mark,We keep repair work needs warning; we mark return marker; we can revisit without shame.,sap hook,1,1,1
+26,3,v18-ceremony-d03-t02,v18-loop-005,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shorter turn; we can revisit without shame.,listening shell,1,1,1
+27,3,v18-ceremony-d03-t03,v18-loop-005,Sova|Melo,reed knot,We keep no crowding while resting; we mark later help; we can revisit without shame.,ember bowl,1,1,1
+28,3,v18-ceremony-d03-t04,v18-loop-005,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark public witness; we can revisit without shame.,path cord,1,1,1
+29,3,v18-ceremony-d03-t05,v18-loop-005,Melo|Ori,ember tap,We keep fair turns before tool access; we mark quiet interval; we can revisit without shame.,tally beads,1,1,1
+30,3,v18-ceremony-d03-t06,v18-loop-006,Nari|Vonn|Keth,rain shell,We keep sealed notes stay sealed; we mark return marker; we can revisit without shame.,ink ledger,0,0,1
+31,3,v18-ceremony-d03-t07,v18-loop-006,Ori|Sova,ledger mark,We keep repair work needs warning; we mark return marker; we can revisit without shame.,sap hook,0,0,1
+32,3,v18-ceremony-d03-t08,v18-loop-006,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shorter turn; we can revisit without shame.,listening shell,1,1,1
+33,3,v18-ceremony-d03-t09,v18-loop-006,Sova|Melo,reed knot,We keep no crowding while resting; we mark later help; we can revisit without shame.,ember bowl,1,1,1
+34,3,v18-ceremony-d03-t10,v18-loop-006,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark public witness; we can revisit without shame.,path cord,1,1,1
+35,3,v18-ceremony-d03-t11,v18-loop-006,Melo|Ori|Sova,ember tap,We keep fair turns before tool access; we mark quiet interval; we can revisit without shame.,tally beads,1,1,1
+36,4,v18-ceremony-d04-t00,v18-loop-007,Ori|Sova,ledger mark,We keep repair work needs warning; we mark quiet interval; we can revisit without shame.,sap hook,0,0,1
+37,4,v18-ceremony-d04-t01,v18-loop-007,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shared schedule knot; we can revisit without shame.,listening shell,1,0,1
+38,4,v18-ceremony-d04-t02,v18-loop-007,Sova|Melo,reed knot,We keep no crowding while resting; we mark shorter turn; we can revisit without shame.,ember bowl,1,1,1
+39,4,v18-ceremony-d04-t03,v18-loop-007,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark later help; we can revisit without shame.,path cord,1,1,1
+40,4,v18-ceremony-d04-t04,v18-loop-007,Melo|Ori|Sova,ember tap,We keep fair turns before tool access; we mark public witness; we can revisit without shame.,tally beads,1,1,1
+41,4,v18-ceremony-d04-t05,v18-loop-007,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark quiet interval; we can revisit without shame.,ink ledger,1,1,1
+42,4,v18-ceremony-d04-t06,v18-loop-008,Ori|Sova,ledger mark,We keep repair work needs warning; we mark quiet interval; we can revisit without shame.,sap hook,1,1,1
+43,4,v18-ceremony-d04-t07,v18-loop-008,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shared schedule knot; we can revisit without shame.,listening shell,1,1,1
+44,4,v18-ceremony-d04-t08,v18-loop-008,Sova|Melo,reed knot,We keep no crowding while resting; we mark shorter turn; we can revisit without shame.,ember bowl,1,1,1
+45,4,v18-ceremony-d04-t09,v18-loop-008,Keth|Nari|Vonn,chalk circle,We keep do not erase route warnings; we mark later help; we can revisit without shame.,path cord,1,1,1
+46,4,v18-ceremony-d04-t10,v18-loop-008,Melo|Ori,ember tap,We keep fair turns before tool access; we mark public witness; we can revisit without shame.,tally beads,1,1,1
+47,4,v18-ceremony-d04-t11,v18-loop-008,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark quiet interval; we can revisit without shame.,ink ledger,1,1,1
+48,5,v18-ceremony-d05-t00,v18-loop-009,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark return marker; we can revisit without shame.,listening shell,0,0,1
+49,5,v18-ceremony-d05-t01,v18-loop-009,Sova|Melo,reed knot,We keep no crowding while resting; we mark shared schedule knot; we can revisit without shame.,ember bowl,1,1,1
+50,5,v18-ceremony-d05-t02,v18-loop-009,Keth|Nari|Vonn,chalk circle,We keep do not erase route warnings; we mark shorter turn; we can revisit without shame.,path cord,1,1,1
+51,5,v18-ceremony-d05-t03,v18-loop-009,Melo|Ori,ember tap,We keep fair turns before tool access; we mark later help; we can revisit without shame.,tally beads,1,1,1
+52,5,v18-ceremony-d05-t04,v18-loop-009,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark public witness; we can revisit without shame.,ink ledger,1,1,1
+53,5,v18-ceremony-d05-t05,v18-loop-009,Ori|Sova,ledger mark,We keep repair work needs warning; we mark public witness; we can revisit without shame.,sap hook,1,1,1
+54,5,v18-ceremony-d05-t06,v18-loop-010,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark return marker; we can revisit without shame.,listening shell,1,1,1
+55,5,v18-ceremony-d05-t07,v18-loop-010,Sova|Melo|Ori,reed knot,We keep no crowding while resting; we mark shared schedule knot; we can revisit without shame.,ember bowl,1,1,1
+56,5,v18-ceremony-d05-t08,v18-loop-010,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shorter turn; we can revisit without shame.,path cord,1,1,1
+57,5,v18-ceremony-d05-t09,v18-loop-010,Melo|Ori,ember tap,We keep fair turns before tool access; we mark later help; we can revisit without shame.,tally beads,1,1,1
+58,5,v18-ceremony-d05-t10,v18-loop-010,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark public witness; we can revisit without shame.,ink ledger,1,1,1
+59,5,v18-ceremony-d05-t11,v18-loop-010,Ori|Sova,ledger mark,We keep repair work needs warning; we mark public witness; we can revisit without shame.,sap hook,0,0,1
+60,6,v18-ceremony-d06-t00,v18-loop-011,Sova|Melo|Ori,reed knot,We keep no crowding while resting; we mark return marker; we can revisit without shame.,ember bowl,0,0,1
+61,6,v18-ceremony-d06-t01,v18-loop-011,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shared schedule knot; we can revisit without shame.,path cord,1,1,1
+62,6,v18-ceremony-d06-t02,v18-loop-011,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shorter turn; we can revisit without shame.,tally beads,0,0,1
+63,6,v18-ceremony-d06-t03,v18-loop-011,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark later help; we can revisit without shame.,ink ledger,1,1,1
+64,6,v18-ceremony-d06-t04,v18-loop-011,Ori|Sova,ledger mark,We keep repair work needs warning; we mark later help; we can revisit without shame.,sap hook,1,1,1
+65,6,v18-ceremony-d06-t05,v18-loop-011,Vonn|Keth|Nari,sap thread,We keep quiet recovery needs distance; we mark quiet interval; we can revisit without shame.,listening shell,1,1,1
+66,6,v18-ceremony-d06-t06,v18-loop-012,Sova|Melo,reed knot,We keep no crowding while resting; we mark return marker; we can revisit without shame.,ember bowl,1,1,1
+67,6,v18-ceremony-d06-t07,v18-loop-012,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shared schedule knot; we can revisit without shame.,path cord,1,1,1
+68,6,v18-ceremony-d06-t08,v18-loop-012,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shorter turn; we can revisit without shame.,tally beads,1,1,1
+69,6,v18-ceremony-d06-t09,v18-loop-012,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark later help; we can revisit without shame.,ink ledger,1,1,1
+70,6,v18-ceremony-d06-t10,v18-loop-012,Ori|Sova|Melo,ledger mark,We keep repair work needs warning; we mark later help; we can revisit without shame.,sap hook,1,1,1
+71,6,v18-ceremony-d06-t11,v18-loop-012,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark quiet interval; we can revisit without shame.,listening shell,1,1,1
+72,7,v18-ceremony-d07-t00,v18-loop-013,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark return marker; we can revisit without shame.,path cord,0,0,1
+73,7,v18-ceremony-d07-t01,v18-loop-013,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shared schedule knot; we can revisit without shame.,tally beads,1,1,1
+74,7,v18-ceremony-d07-t02,v18-loop-013,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shorter turn; we can revisit without shame.,ink ledger,1,0,1
+75,7,v18-ceremony-d07-t03,v18-loop-013,Ori|Sova|Melo,ledger mark,We keep repair work needs warning; we mark shorter turn; we can revisit without shame.,sap hook,1,1,1
+76,7,v18-ceremony-d07-t04,v18-loop-013,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark public witness; we can revisit without shame.,listening shell,1,1,1
+77,7,v18-ceremony-d07-t05,v18-loop-013,Sova|Melo,reed knot,We keep no crowding while resting; we mark quiet interval; we can revisit without shame.,ember bowl,1,1,1
+78,7,v18-ceremony-d07-t06,v18-loop-014,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark return marker; we can revisit without shame.,path cord,1,1,1
+79,7,v18-ceremony-d07-t07,v18-loop-014,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shared schedule knot; we can revisit without shame.,tally beads,1,1,1
+80,7,v18-ceremony-d07-t08,v18-loop-014,Nari|Vonn|Keth,rain shell,We keep sealed notes stay sealed; we mark shorter turn; we can revisit without shame.,ink ledger,1,1,1
+81,7,v18-ceremony-d07-t09,v18-loop-014,Ori|Sova,ledger mark,We keep repair work needs warning; we mark shorter turn; we can revisit without shame.,sap hook,1,1,1
+82,7,v18-ceremony-d07-t10,v18-loop-014,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark public witness; we can revisit without shame.,listening shell,1,1,1
+83,7,v18-ceremony-d07-t11,v18-loop-014,Sova|Melo,reed knot,We keep no crowding while resting; we mark quiet interval; we can revisit without shame.,ember bowl,1,1,1
+84,8,v18-ceremony-d08-t00,v18-loop-015,Melo|Ori,ember tap,We keep fair turns before tool access; we mark return marker; we can revisit without shame.,tally beads,0,0,1
+85,8,v18-ceremony-d08-t01,v18-loop-015,Nari|Vonn|Keth,rain shell,We keep sealed notes stay sealed; we mark shared schedule knot; we can revisit without shame.,ink ledger,1,1,1
+86,8,v18-ceremony-d08-t02,v18-loop-015,Ori|Sova,ledger mark,We keep repair work needs warning; we mark shared schedule knot; we can revisit without shame.,sap hook,1,1,1
+87,8,v18-ceremony-d08-t03,v18-loop-015,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark later help; we can revisit without shame.,listening shell,1,1,1
+88,8,v18-ceremony-d08-t04,v18-loop-015,Sova|Melo,reed knot,We keep no crowding while resting; we mark public witness; we can revisit without shame.,ember bowl,0,0,1
+89,8,v18-ceremony-d08-t05,v18-loop-015,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark quiet interval; we can revisit without shame.,path cord,1,1,1
+90,8,v18-ceremony-d08-t06,v18-loop-016,Melo|Ori|Sova,ember tap,We keep fair turns before tool access; we mark return marker; we can revisit without shame.,tally beads,1,1,1
+91,8,v18-ceremony-d08-t07,v18-loop-016,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shared schedule knot; we can revisit without shame.,ink ledger,1,1,1
+92,8,v18-ceremony-d08-t08,v18-loop-016,Ori|Sova,ledger mark,We keep repair work needs warning; we mark shared schedule knot; we can revisit without shame.,sap hook,1,1,1
+93,8,v18-ceremony-d08-t09,v18-loop-016,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark later help; we can revisit without shame.,listening shell,0,0,1
+94,8,v18-ceremony-d08-t10,v18-loop-016,Sova|Melo,reed knot,We keep no crowding while resting; we mark public witness; we can revisit without shame.,ember bowl,1,1,1
+95,8,v18-ceremony-d08-t11,v18-loop-016,Keth|Nari|Vonn,chalk circle,We keep do not erase route warnings; we mark quiet interval; we can revisit without shame.,path cord,1,1,1
+96,9,v18-ceremony-d09-t00,v18-loop-017,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark return marker; we can revisit without shame.,ink ledger,0,0,1
+97,9,v18-ceremony-d09-t01,v18-loop-017,Ori|Sova,ledger mark,We keep repair work needs warning; we mark return marker; we can revisit without shame.,sap hook,1,1,1
+98,9,v18-ceremony-d09-t02,v18-loop-017,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shorter turn; we can revisit without shame.,listening shell,1,1,1
+99,9,v18-ceremony-d09-t03,v18-loop-017,Sova|Melo,reed knot,We keep no crowding while resting; we mark later help; we can revisit without shame.,ember bowl,1,1,1
+100,9,v18-ceremony-d09-t04,v18-loop-017,Keth|Nari|Vonn,chalk circle,We keep do not erase route warnings; we mark public witness; we can revisit without shame.,path cord,1,1,1
+101,9,v18-ceremony-d09-t05,v18-loop-017,Melo|Ori,ember tap,We keep fair turns before tool access; we mark quiet interval; we can revisit without shame.,tally beads,1,1,1
+102,9,v18-ceremony-d09-t06,v18-loop-018,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark return marker; we can revisit without shame.,ink ledger,1,1,1
+103,9,v18-ceremony-d09-t07,v18-loop-018,Ori|Sova,ledger mark,We keep repair work needs warning; we mark return marker; we can revisit without shame.,sap hook,1,1,1
+104,9,v18-ceremony-d09-t08,v18-loop-018,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shorter turn; we can revisit without shame.,listening shell,1,1,1
+105,9,v18-ceremony-d09-t09,v18-loop-018,Sova|Melo|Ori,reed knot,We keep no crowding while resting; we mark later help; we can revisit without shame.,ember bowl,1,1,1
+106,9,v18-ceremony-d09-t10,v18-loop-018,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark public witness; we can revisit without shame.,path cord,1,1,1
+107,9,v18-ceremony-d09-t11,v18-loop-018,Melo|Ori,ember tap,We keep fair turns before tool access; we mark quiet interval; we can revisit without shame.,tally beads,1,1,1
+108,10,v18-ceremony-d10-t00,v18-loop-019,Ori|Sova,ledger mark,We keep repair work needs warning; we mark quiet interval; we can revisit without shame.,sap hook,0,0,1
+109,10,v18-ceremony-d10-t01,v18-loop-019,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shared schedule knot; we can revisit without shame.,listening shell,1,1,1
+110,10,v18-ceremony-d10-t02,v18-loop-019,Sova|Melo|Ori,reed knot,We keep no crowding while resting; we mark shorter turn; we can revisit without shame.,ember bowl,1,1,1
+111,10,v18-ceremony-d10-t03,v18-loop-019,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark later help; we can revisit without shame.,path cord,1,0,1
+112,10,v18-ceremony-d10-t04,v18-loop-019,Melo|Ori,ember tap,We keep fair turns before tool access; we mark public witness; we can revisit without shame.,tally beads,1,1,1
+113,10,v18-ceremony-d10-t05,v18-loop-019,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark quiet interval; we can revisit without shame.,ink ledger,1,1,1
+114,10,v18-ceremony-d10-t06,v18-loop-020,Ori|Sova,ledger mark,We keep repair work needs warning; we mark quiet interval; we can revisit without shame.,sap hook,1,1,1
+115,10,v18-ceremony-d10-t07,v18-loop-020,Vonn|Keth|Nari,sap thread,We keep quiet recovery needs distance; we mark shared schedule knot; we can revisit without shame.,listening shell,1,1,1
+116,10,v18-ceremony-d10-t08,v18-loop-020,Sova|Melo,reed knot,We keep no crowding while resting; we mark shorter turn; we can revisit without shame.,ember bowl,1,1,1
+117,10,v18-ceremony-d10-t09,v18-loop-020,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark later help; we can revisit without shame.,path cord,0,0,1
+118,10,v18-ceremony-d10-t10,v18-loop-020,Melo|Ori,ember tap,We keep fair turns before tool access; we mark public witness; we can revisit without shame.,tally beads,1,1,1
+119,10,v18-ceremony-d10-t11,v18-loop-020,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark quiet interval; we can revisit without shame.,ink ledger,1,1,1
+120,11,v18-ceremony-d11-t00,v18-loop-021,Vonn|Keth|Nari,sap thread,We keep quiet recovery needs distance; we mark return marker; we can revisit without shame.,listening shell,0,0,1
+121,11,v18-ceremony-d11-t01,v18-loop-021,Sova|Melo,reed knot,We keep no crowding while resting; we mark shared schedule knot; we can revisit without shame.,ember bowl,1,1,1
+122,11,v18-ceremony-d11-t02,v18-loop-021,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shorter turn; we can revisit without shame.,path cord,1,1,1
+123,11,v18-ceremony-d11-t03,v18-loop-021,Melo|Ori,ember tap,We keep fair turns before tool access; we mark later help; we can revisit without shame.,tally beads,1,1,1
+124,11,v18-ceremony-d11-t04,v18-loop-021,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark public witness; we can revisit without shame.,ink ledger,0,0,1
+125,11,v18-ceremony-d11-t05,v18-loop-021,Ori|Sova|Melo,ledger mark,We keep repair work needs warning; we mark public witness; we can revisit without shame.,sap hook,1,1,1
+126,11,v18-ceremony-d11-t06,v18-loop-022,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark return marker; we can revisit without shame.,listening shell,1,1,1
+127,11,v18-ceremony-d11-t07,v18-loop-022,Sova|Melo,reed knot,We keep no crowding while resting; we mark shared schedule knot; we can revisit without shame.,ember bowl,1,1,1
+128,11,v18-ceremony-d11-t08,v18-loop-022,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shorter turn; we can revisit without shame.,path cord,1,1,1
+129,11,v18-ceremony-d11-t09,v18-loop-022,Melo|Ori,ember tap,We keep fair turns before tool access; we mark later help; we can revisit without shame.,tally beads,1,1,1
+130,11,v18-ceremony-d11-t10,v18-loop-022,Nari|Vonn|Keth,rain shell,We keep sealed notes stay sealed; we mark public witness; we can revisit without shame.,ink ledger,1,1,1
+131,11,v18-ceremony-d11-t11,v18-loop-022,Ori|Sova,ledger mark,We keep repair work needs warning; we mark public witness; we can revisit without shame.,sap hook,1,1,1
+132,12,v18-ceremony-d12-t00,v18-loop-023,Sova|Melo,reed knot,We keep no crowding while resting; we mark return marker; we can revisit without shame.,ember bowl,0,0,1
+133,12,v18-ceremony-d12-t01,v18-loop-023,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shared schedule knot; we can revisit without shame.,path cord,1,1,1
+134,12,v18-ceremony-d12-t02,v18-loop-023,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shorter turn; we can revisit without shame.,tally beads,1,1,1
+135,12,v18-ceremony-d12-t03,v18-loop-023,Nari|Vonn|Keth,rain shell,We keep sealed notes stay sealed; we mark later help; we can revisit without shame.,ink ledger,1,1,1
+136,12,v18-ceremony-d12-t04,v18-loop-023,Ori|Sova,ledger mark,We keep repair work needs warning; we mark later help; we can revisit without shame.,sap hook,1,1,1
+137,12,v18-ceremony-d12-t05,v18-loop-023,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark quiet interval; we can revisit without shame.,listening shell,1,1,1
+138,12,v18-ceremony-d12-t06,v18-loop-024,Sova|Melo,reed knot,We keep no crowding while resting; we mark return marker; we can revisit without shame.,ember bowl,1,1,1
+139,12,v18-ceremony-d12-t07,v18-loop-024,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shared schedule knot; we can revisit without shame.,path cord,1,1,1
+140,12,v18-ceremony-d12-t08,v18-loop-024,Melo|Ori|Sova,ember tap,We keep fair turns before tool access; we mark shorter turn; we can revisit without shame.,tally beads,1,1,1
+141,12,v18-ceremony-d12-t09,v18-loop-024,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark later help; we can revisit without shame.,ink ledger,1,1,1
+142,12,v18-ceremony-d12-t10,v18-loop-024,Ori|Sova,ledger mark,We keep repair work needs warning; we mark later help; we can revisit without shame.,sap hook,1,1,1
+143,12,v18-ceremony-d12-t11,v18-loop-024,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark quiet interval; we can revisit without shame.,listening shell,1,1,1
+144,13,v18-ceremony-d13-t00,v18-loop-025,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark return marker; we can revisit without shame.,path cord,0,0,1
+145,13,v18-ceremony-d13-t01,v18-loop-025,Melo|Ori|Sova,ember tap,We keep fair turns before tool access; we mark shared schedule knot; we can revisit without shame.,tally beads,1,1,1
+146,13,v18-ceremony-d13-t02,v18-loop-025,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shorter turn; we can revisit without shame.,ink ledger,0,0,1
+147,13,v18-ceremony-d13-t03,v18-loop-025,Ori|Sova,ledger mark,We keep repair work needs warning; we mark shorter turn; we can revisit without shame.,sap hook,1,1,1
+148,13,v18-ceremony-d13-t04,v18-loop-025,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark public witness; we can revisit without shame.,listening shell,1,0,1
+149,13,v18-ceremony-d13-t05,v18-loop-025,Sova|Melo,reed knot,We keep no crowding while resting; we mark quiet interval; we can revisit without shame.,ember bowl,1,1,1
+150,13,v18-ceremony-d13-t06,v18-loop-026,Keth|Nari|Vonn,chalk circle,We keep do not erase route warnings; we mark return marker; we can revisit without shame.,path cord,1,1,1
+151,13,v18-ceremony-d13-t07,v18-loop-026,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shared schedule knot; we can revisit without shame.,tally beads,1,1,1
+152,13,v18-ceremony-d13-t08,v18-loop-026,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shorter turn; we can revisit without shame.,ink ledger,1,1,1
+153,13,v18-ceremony-d13-t09,v18-loop-026,Ori|Sova,ledger mark,We keep repair work needs warning; we mark shorter turn; we can revisit without shame.,sap hook,1,1,1
+154,13,v18-ceremony-d13-t10,v18-loop-026,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark public witness; we can revisit without shame.,listening shell,1,1,1
+155,13,v18-ceremony-d13-t11,v18-loop-026,Sova|Melo|Ori,reed knot,We keep no crowding while resting; we mark quiet interval; we can revisit without shame.,ember bowl,0,0,1
+156,14,v18-ceremony-d14-t00,v18-loop-027,Melo|Ori,ember tap,We keep fair turns before tool access; we mark return marker; we can revisit without shame.,tally beads,0,0,1
+157,14,v18-ceremony-d14-t01,v18-loop-027,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shared schedule knot; we can revisit without shame.,ink ledger,1,1,1
+158,14,v18-ceremony-d14-t02,v18-loop-027,Ori|Sova,ledger mark,We keep repair work needs warning; we mark shared schedule knot; we can revisit without shame.,sap hook,1,1,1
+159,14,v18-ceremony-d14-t03,v18-loop-027,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark later help; we can revisit without shame.,listening shell,1,1,1
+160,14,v18-ceremony-d14-t04,v18-loop-027,Sova|Melo|Ori,reed knot,We keep no crowding while resting; we mark public witness; we can revisit without shame.,ember bowl,1,1,1
+161,14,v18-ceremony-d14-t05,v18-loop-027,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark quiet interval; we can revisit without shame.,path cord,1,1,1
+162,14,v18-ceremony-d14-t06,v18-loop-028,Melo|Ori,ember tap,We keep fair turns before tool access; we mark return marker; we can revisit without shame.,tally beads,1,1,1
+163,14,v18-ceremony-d14-t07,v18-loop-028,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shared schedule knot; we can revisit without shame.,ink ledger,1,1,1
+164,14,v18-ceremony-d14-t08,v18-loop-028,Ori|Sova,ledger mark,We keep repair work needs warning; we mark shared schedule knot; we can revisit without shame.,sap hook,1,1,1
+165,14,v18-ceremony-d14-t09,v18-loop-028,Vonn|Keth|Nari,sap thread,We keep quiet recovery needs distance; we mark later help; we can revisit without shame.,listening shell,1,1,1
+166,14,v18-ceremony-d14-t10,v18-loop-028,Sova|Melo,reed knot,We keep no crowding while resting; we mark public witness; we can revisit without shame.,ember bowl,1,1,1
+167,14,v18-ceremony-d14-t11,v18-loop-028,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark quiet interval; we can revisit without shame.,path cord,1,1,1
+168,15,v18-ceremony-d15-t00,v18-loop-029,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark return marker; we can revisit without shame.,ink ledger,0,0,1
+169,15,v18-ceremony-d15-t01,v18-loop-029,Ori|Sova,ledger mark,We keep repair work needs warning; we mark return marker; we can revisit without shame.,sap hook,1,1,1
+170,15,v18-ceremony-d15-t02,v18-loop-029,Vonn|Keth|Nari,sap thread,We keep quiet recovery needs distance; we mark shorter turn; we can revisit without shame.,listening shell,1,1,1
+171,15,v18-ceremony-d15-t03,v18-loop-029,Sova|Melo,reed knot,We keep no crowding while resting; we mark later help; we can revisit without shame.,ember bowl,1,1,1
+172,15,v18-ceremony-d15-t04,v18-loop-029,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark public witness; we can revisit without shame.,path cord,1,1,1
+173,15,v18-ceremony-d15-t05,v18-loop-029,Melo|Ori,ember tap,We keep fair turns before tool access; we mark quiet interval; we can revisit without shame.,tally beads,1,1,1
+174,15,v18-ceremony-d15-t06,v18-loop-030,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark return marker; we can revisit without shame.,ink ledger,1,1,1
+175,15,v18-ceremony-d15-t07,v18-loop-030,Ori|Sova|Melo,ledger mark,We keep repair work needs warning; we mark return marker; we can revisit without shame.,sap hook,0,0,1
+176,15,v18-ceremony-d15-t08,v18-loop-030,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shorter turn; we can revisit without shame.,listening shell,1,1,1
+177,15,v18-ceremony-d15-t09,v18-loop-030,Sova|Melo,reed knot,We keep no crowding while resting; we mark later help; we can revisit without shame.,ember bowl,1,1,1
+178,15,v18-ceremony-d15-t10,v18-loop-030,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark public witness; we can revisit without shame.,path cord,1,1,1
+179,15,v18-ceremony-d15-t11,v18-loop-030,Melo|Ori,ember tap,We keep fair turns before tool access; we mark quiet interval; we can revisit without shame.,tally beads,1,1,1
+180,16,v18-ceremony-d16-t00,v18-loop-031,Ori|Sova|Melo,ledger mark,We keep repair work needs warning; we mark quiet interval; we can revisit without shame.,sap hook,0,0,1
+181,16,v18-ceremony-d16-t01,v18-loop-031,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shared schedule knot; we can revisit without shame.,listening shell,1,1,1
+182,16,v18-ceremony-d16-t02,v18-loop-031,Sova|Melo,reed knot,We keep no crowding while resting; we mark shorter turn; we can revisit without shame.,ember bowl,1,1,1
+183,16,v18-ceremony-d16-t03,v18-loop-031,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark later help; we can revisit without shame.,path cord,1,1,1
+184,16,v18-ceremony-d16-t04,v18-loop-031,Melo|Ori,ember tap,We keep fair turns before tool access; we mark public witness; we can revisit without shame.,tally beads,1,1,1
+185,16,v18-ceremony-d16-t05,v18-loop-031,Nari|Vonn|Keth,rain shell,We keep sealed notes stay sealed; we mark quiet interval; we can revisit without shame.,ink ledger,1,0,1
+186,16,v18-ceremony-d16-t06,v18-loop-032,Ori|Sova,ledger mark,We keep repair work needs warning; we mark quiet interval; we can revisit without shame.,sap hook,0,0,1
+187,16,v18-ceremony-d16-t07,v18-loop-032,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shared schedule knot; we can revisit without shame.,listening shell,1,1,1
+188,16,v18-ceremony-d16-t08,v18-loop-032,Sova|Melo,reed knot,We keep no crowding while resting; we mark shorter turn; we can revisit without shame.,ember bowl,1,1,1
+189,16,v18-ceremony-d16-t09,v18-loop-032,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark later help; we can revisit without shame.,path cord,1,1,1
+190,16,v18-ceremony-d16-t10,v18-loop-032,Melo|Ori|Sova,ember tap,We keep fair turns before tool access; we mark public witness; we can revisit without shame.,tally beads,1,1,1
+191,16,v18-ceremony-d16-t11,v18-loop-032,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark quiet interval; we can revisit without shame.,ink ledger,1,1,1
+192,17,v18-ceremony-d17-t00,v18-loop-033,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark return marker; we can revisit without shame.,listening shell,0,0,1
+193,17,v18-ceremony-d17-t01,v18-loop-033,Sova|Melo,reed knot,We keep no crowding while resting; we mark shared schedule knot; we can revisit without shame.,ember bowl,1,1,1
+194,17,v18-ceremony-d17-t02,v18-loop-033,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shorter turn; we can revisit without shame.,path cord,1,1,1
+195,17,v18-ceremony-d17-t03,v18-loop-033,Melo|Ori|Sova,ember tap,We keep fair turns before tool access; we mark later help; we can revisit without shame.,tally beads,1,1,1
+196,17,v18-ceremony-d17-t04,v18-loop-033,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark public witness; we can revisit without shame.,ink ledger,1,1,1
+197,17,v18-ceremony-d17-t05,v18-loop-033,Ori|Sova,ledger mark,We keep repair work needs warning; we mark public witness; we can revisit without shame.,sap hook,1,1,1
+198,17,v18-ceremony-d17-t06,v18-loop-034,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark return marker; we can revisit without shame.,listening shell,1,1,1
+199,17,v18-ceremony-d17-t07,v18-loop-034,Sova|Melo,reed knot,We keep no crowding while resting; we mark shared schedule knot; we can revisit without shame.,ember bowl,1,1,1
+200,17,v18-ceremony-d17-t08,v18-loop-034,Keth|Nari|Vonn,chalk circle,We keep do not erase route warnings; we mark shorter turn; we can revisit without shame.,path cord,1,1,1
+201,17,v18-ceremony-d17-t09,v18-loop-034,Melo|Ori,ember tap,We keep fair turns before tool access; we mark later help; we can revisit without shame.,tally beads,1,1,1
+202,17,v18-ceremony-d17-t10,v18-loop-034,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark public witness; we can revisit without shame.,ink ledger,1,1,1
+203,17,v18-ceremony-d17-t11,v18-loop-034,Ori|Sova,ledger mark,We keep repair work needs warning; we mark public witness; we can revisit without shame.,sap hook,1,1,1
+204,18,v18-ceremony-d18-t00,v18-loop-035,Sova|Melo,reed knot,We keep no crowding while resting; we mark return marker; we can revisit without shame.,ember bowl,0,0,1
+205,18,v18-ceremony-d18-t01,v18-loop-035,Keth|Nari|Vonn,chalk circle,We keep do not erase route warnings; we mark shared schedule knot; we can revisit without shame.,path cord,1,1,1
+206,18,v18-ceremony-d18-t02,v18-loop-035,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shorter turn; we can revisit without shame.,tally beads,1,1,1
+207,18,v18-ceremony-d18-t03,v18-loop-035,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark later help; we can revisit without shame.,ink ledger,1,1,1
+208,18,v18-ceremony-d18-t04,v18-loop-035,Ori|Sova,ledger mark,We keep repair work needs warning; we mark later help; we can revisit without shame.,sap hook,1,1,1
+209,18,v18-ceremony-d18-t05,v18-loop-035,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark quiet interval; we can revisit without shame.,listening shell,1,1,1
+210,18,v18-ceremony-d18-t06,v18-loop-036,Sova|Melo|Ori,reed knot,We keep no crowding while resting; we mark return marker; we can revisit without shame.,ember bowl,1,1,1
+211,18,v18-ceremony-d18-t07,v18-loop-036,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shared schedule knot; we can revisit without shame.,path cord,1,1,1
+212,18,v18-ceremony-d18-t08,v18-loop-036,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shorter turn; we can revisit without shame.,tally beads,1,1,1
+213,18,v18-ceremony-d18-t09,v18-loop-036,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark later help; we can revisit without shame.,ink ledger,1,1,1
+214,18,v18-ceremony-d18-t10,v18-loop-036,Ori|Sova,ledger mark,We keep repair work needs warning; we mark later help; we can revisit without shame.,sap hook,1,1,1
+215,18,v18-ceremony-d18-t11,v18-loop-036,Vonn|Keth|Nari,sap thread,We keep quiet recovery needs distance; we mark quiet interval; we can revisit without shame.,listening shell,1,1,1
+216,19,v18-ceremony-d19-t00,v18-loop-037,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark return marker; we can revisit without shame.,path cord,0,0,1
+217,19,v18-ceremony-d19-t01,v18-loop-037,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shared schedule knot; we can revisit without shame.,tally beads,0,0,1
+218,19,v18-ceremony-d19-t02,v18-loop-037,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shorter turn; we can revisit without shame.,ink ledger,1,1,1
+219,19,v18-ceremony-d19-t03,v18-loop-037,Ori|Sova,ledger mark,We keep repair work needs warning; we mark shorter turn; we can revisit without shame.,sap hook,1,1,1
+220,19,v18-ceremony-d19-t04,v18-loop-037,Vonn|Keth|Nari,sap thread,We keep quiet recovery needs distance; we mark public witness; we can revisit without shame.,listening shell,1,1,1
+221,19,v18-ceremony-d19-t05,v18-loop-037,Sova|Melo,reed knot,We keep no crowding while resting; we mark quiet interval; we can revisit without shame.,ember bowl,1,1,1
+222,19,v18-ceremony-d19-t06,v18-loop-038,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark return marker; we can revisit without shame.,path cord,1,0,1
+223,19,v18-ceremony-d19-t07,v18-loop-038,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shared schedule knot; we can revisit without shame.,tally beads,1,1,1
+224,19,v18-ceremony-d19-t08,v18-loop-038,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shorter turn; we can revisit without shame.,ink ledger,0,0,1
+225,19,v18-ceremony-d19-t09,v18-loop-038,Ori|Sova|Melo,ledger mark,We keep repair work needs warning; we mark shorter turn; we can revisit without shame.,sap hook,1,1,1
+226,19,v18-ceremony-d19-t10,v18-loop-038,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark public witness; we can revisit without shame.,listening shell,1,1,1
+227,19,v18-ceremony-d19-t11,v18-loop-038,Sova|Melo,reed knot,We keep no crowding while resting; we mark quiet interval; we can revisit without shame.,ember bowl,1,1,1
+228,20,v18-ceremony-d20-t00,v18-loop-039,Melo|Ori,ember tap,We keep fair turns before tool access; we mark return marker; we can revisit without shame.,tally beads,0,0,1
+229,20,v18-ceremony-d20-t01,v18-loop-039,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark shared schedule knot; we can revisit without shame.,ink ledger,1,1,1
+230,20,v18-ceremony-d20-t02,v18-loop-039,Ori|Sova|Melo,ledger mark,We keep repair work needs warning; we mark shared schedule knot; we can revisit without shame.,sap hook,1,1,1
+231,20,v18-ceremony-d20-t03,v18-loop-039,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark later help; we can revisit without shame.,listening shell,1,1,1
+232,20,v18-ceremony-d20-t04,v18-loop-039,Sova|Melo,reed knot,We keep no crowding while resting; we mark public witness; we can revisit without shame.,ember bowl,1,1,1
+233,20,v18-ceremony-d20-t05,v18-loop-039,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark quiet interval; we can revisit without shame.,path cord,0,0,1
+234,20,v18-ceremony-d20-t06,v18-loop-040,Melo|Ori,ember tap,We keep fair turns before tool access; we mark return marker; we can revisit without shame.,tally beads,1,1,1
+235,20,v18-ceremony-d20-t07,v18-loop-040,Nari|Vonn|Keth,rain shell,We keep sealed notes stay sealed; we mark shared schedule knot; we can revisit without shame.,ink ledger,1,1,1
+236,20,v18-ceremony-d20-t08,v18-loop-040,Ori|Sova,ledger mark,We keep repair work needs warning; we mark shared schedule knot; we can revisit without shame.,sap hook,1,1,1
+237,20,v18-ceremony-d20-t09,v18-loop-040,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark later help; we can revisit without shame.,listening shell,1,1,1
+238,20,v18-ceremony-d20-t10,v18-loop-040,Sova|Melo,reed knot,We keep no crowding while resting; we mark public witness; we can revisit without shame.,ember bowl,1,1,1
+239,20,v18-ceremony-d20-t11,v18-loop-040,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark quiet interval; we can revisit without shame.,path cord,1,1,1
+240,21,v18-ceremony-d21-t00,v18-loop-041,Nari|Vonn|Keth,rain shell,We keep sealed notes stay sealed; we mark return marker; we can revisit without shame.,ink ledger,0,0,1
+241,21,v18-ceremony-d21-t01,v18-loop-041,Ori|Sova,ledger mark,We keep repair work needs warning; we mark return marker; we can revisit without shame.,sap hook,0,0,1
+242,21,v18-ceremony-d21-t02,v18-loop-041,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shorter turn; we can revisit without shame.,listening shell,1,1,1
+243,21,v18-ceremony-d21-t03,v18-loop-041,Sova|Melo,reed knot,We keep no crowding while resting; we mark later help; we can revisit without shame.,ember bowl,1,1,1
+244,21,v18-ceremony-d21-t04,v18-loop-041,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark public witness; we can revisit without shame.,path cord,1,1,1
+245,21,v18-ceremony-d21-t05,v18-loop-041,Melo|Ori|Sova,ember tap,We keep fair turns before tool access; we mark quiet interval; we can revisit without shame.,tally beads,1,1,1
+246,21,v18-ceremony-d21-t06,v18-loop-042,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark return marker; we can revisit without shame.,ink ledger,1,1,1
+247,21,v18-ceremony-d21-t07,v18-loop-042,Ori|Sova,ledger mark,We keep repair work needs warning; we mark return marker; we can revisit without shame.,sap hook,1,1,1
+248,21,v18-ceremony-d21-t08,v18-loop-042,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shorter turn; we can revisit without shame.,listening shell,0,0,1
+249,21,v18-ceremony-d21-t09,v18-loop-042,Sova|Melo,reed knot,We keep no crowding while resting; we mark later help; we can revisit without shame.,ember bowl,1,1,1
+250,21,v18-ceremony-d21-t10,v18-loop-042,Keth|Nari|Vonn,chalk circle,We keep do not erase route warnings; we mark public witness; we can revisit without shame.,path cord,1,1,1
+251,21,v18-ceremony-d21-t11,v18-loop-042,Melo|Ori,ember tap,We keep fair turns before tool access; we mark quiet interval; we can revisit without shame.,tally beads,1,1,1
+252,22,v18-ceremony-d22-t00,v18-loop-043,Ori|Sova,ledger mark,We keep repair work needs warning; we mark quiet interval; we can revisit without shame.,sap hook,0,0,1
+253,22,v18-ceremony-d22-t01,v18-loop-043,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shared schedule knot; we can revisit without shame.,listening shell,1,1,1
+254,22,v18-ceremony-d22-t02,v18-loop-043,Sova|Melo,reed knot,We keep no crowding while resting; we mark shorter turn; we can revisit without shame.,ember bowl,1,1,1
+255,22,v18-ceremony-d22-t03,v18-loop-043,Keth|Nari|Vonn,chalk circle,We keep do not erase route warnings; we mark later help; we can revisit without shame.,path cord,1,1,1
+256,22,v18-ceremony-d22-t04,v18-loop-043,Melo|Ori,ember tap,We keep fair turns before tool access; we mark public witness; we can revisit without shame.,tally beads,1,1,1
+257,22,v18-ceremony-d22-t05,v18-loop-043,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark quiet interval; we can revisit without shame.,ink ledger,1,1,1
+258,22,v18-ceremony-d22-t06,v18-loop-044,Ori|Sova,ledger mark,We keep repair work needs warning; we mark quiet interval; we can revisit without shame.,sap hook,1,1,1
+259,22,v18-ceremony-d22-t07,v18-loop-044,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark shared schedule knot; we can revisit without shame.,listening shell,1,0,1
+260,22,v18-ceremony-d22-t08,v18-loop-044,Sova|Melo|Ori,reed knot,We keep no crowding while resting; we mark shorter turn; we can revisit without shame.,ember bowl,1,1,1
+261,22,v18-ceremony-d22-t09,v18-loop-044,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark later help; we can revisit without shame.,path cord,1,1,1
+262,22,v18-ceremony-d22-t10,v18-loop-044,Melo|Ori,ember tap,We keep fair turns before tool access; we mark public witness; we can revisit without shame.,tally beads,0,0,1
+263,22,v18-ceremony-d22-t11,v18-loop-044,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark quiet interval; we can revisit without shame.,ink ledger,1,1,1
+264,23,v18-ceremony-d23-t00,v18-loop-045,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark return marker; we can revisit without shame.,listening shell,0,0,1
+265,23,v18-ceremony-d23-t01,v18-loop-045,Sova|Melo|Ori,reed knot,We keep no crowding while resting; we mark shared schedule knot; we can revisit without shame.,ember bowl,1,1,1
+266,23,v18-ceremony-d23-t02,v18-loop-045,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shorter turn; we can revisit without shame.,path cord,1,1,1
+267,23,v18-ceremony-d23-t03,v18-loop-045,Melo|Ori,ember tap,We keep fair turns before tool access; we mark later help; we can revisit without shame.,tally beads,1,1,1
+268,23,v18-ceremony-d23-t04,v18-loop-045,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark public witness; we can revisit without shame.,ink ledger,1,1,1
+269,23,v18-ceremony-d23-t05,v18-loop-045,Ori|Sova,ledger mark,We keep repair work needs warning; we mark public witness; we can revisit without shame.,sap hook,1,1,1
+270,23,v18-ceremony-d23-t06,v18-loop-046,Vonn|Keth|Nari,sap thread,We keep quiet recovery needs distance; we mark return marker; we can revisit without shame.,listening shell,1,1,1
+271,23,v18-ceremony-d23-t07,v18-loop-046,Sova|Melo,reed knot,We keep no crowding while resting; we mark shared schedule knot; we can revisit without shame.,ember bowl,1,1,1
+272,23,v18-ceremony-d23-t08,v18-loop-046,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shorter turn; we can revisit without shame.,path cord,1,1,1
+273,23,v18-ceremony-d23-t09,v18-loop-046,Melo|Ori,ember tap,We keep fair turns before tool access; we mark later help; we can revisit without shame.,tally beads,1,1,1
+274,23,v18-ceremony-d23-t10,v18-loop-046,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark public witness; we can revisit without shame.,ink ledger,1,1,1
+275,23,v18-ceremony-d23-t11,v18-loop-046,Ori|Sova|Melo,ledger mark,We keep repair work needs warning; we mark public witness; we can revisit without shame.,sap hook,1,1,1
+276,24,v18-ceremony-d24-t00,v18-loop-047,Sova|Melo,reed knot,We keep no crowding while resting; we mark return marker; we can revisit without shame.,ember bowl,0,0,1
+277,24,v18-ceremony-d24-t01,v18-loop-047,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shared schedule knot; we can revisit without shame.,path cord,1,1,1
+278,24,v18-ceremony-d24-t02,v18-loop-047,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shorter turn; we can revisit without shame.,tally beads,1,1,1
+279,24,v18-ceremony-d24-t03,v18-loop-047,Nari|Vonn,rain shell,We keep sealed notes stay sealed; we mark later help; we can revisit without shame.,ink ledger,0,0,1
+280,24,v18-ceremony-d24-t04,v18-loop-047,Ori|Sova|Melo,ledger mark,We keep repair work needs warning; we mark later help; we can revisit without shame.,sap hook,1,1,1
+281,24,v18-ceremony-d24-t05,v18-loop-047,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark quiet interval; we can revisit without shame.,listening shell,1,1,1
+282,24,v18-ceremony-d24-t06,v18-loop-048,Sova|Melo,reed knot,We keep no crowding while resting; we mark return marker; we can revisit without shame.,ember bowl,1,1,1
+283,24,v18-ceremony-d24-t07,v18-loop-048,Keth|Nari,chalk circle,We keep do not erase route warnings; we mark shared schedule knot; we can revisit without shame.,path cord,1,1,1
+284,24,v18-ceremony-d24-t08,v18-loop-048,Melo|Ori,ember tap,We keep fair turns before tool access; we mark shorter turn; we can revisit without shame.,tally beads,1,1,1
+285,24,v18-ceremony-d24-t09,v18-loop-048,Nari|Vonn|Keth,rain shell,We keep sealed notes stay sealed; we mark later help; we can revisit without shame.,ink ledger,1,1,1
+286,24,v18-ceremony-d24-t10,v18-loop-048,Ori|Sova,ledger mark,We keep repair work needs warning; we mark later help; we can revisit without shame.,sap hook,1,1,1
+287,24,v18-ceremony-d24-t11,v18-loop-048,Vonn|Keth,sap thread,We keep quiet recovery needs distance; we mark quiet interval; we can revisit without shame.,listening shell,1,1,1

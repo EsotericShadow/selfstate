@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 258 - Agent-Led Negotiation Dialogue</title>
+<style>
+:root { --bg:#10120f; --panel:#efe4c9; --ink:#21180f; --line:#5b4b2b; --accent:#c57b2c; --leaf:#4b7563; --rain:#6a8fa3; --warn:#a94834; }
+* { box-sizing:border-box; }
+body { margin:0; background:radial-gradient(circle at 15% 8%, #30483b, transparent 35%), radial-gradient(circle at 80% 25%, rgba(106,143,163,.24), transparent 30%), linear-gradient(135deg,#10120f,#28190e 78%); color:var(--ink); font-family: Georgia, 'Times New Roman', serif; }
+main { width:min(1180px, calc(100vw - 28px)); margin:0 auto; padding:28px 0 44px; }
+.hero { color:#f8ecd6; border:1px solid rgba(239,228,201,.35); border-radius:30px; padding:28px; background:linear-gradient(140deg, rgba(75,117,99,.62), rgba(197,123,44,.22)); box-shadow:0 26px 100px rgba(0,0,0,.36); }
+.hero h1 { margin:0 0 10px; font-size:clamp(2rem,5vw,4.3rem); line-height:.94; letter-spacing:-.045em; }
+.hero p { max-width:890px; color:#ecdcc1; line-height:1.55; font-size:1.05rem; }
+.grid { display:grid; grid-template-columns:1.08fr .92fr; gap:18px; margin-top:18px; }
+.card { background:var(--panel); border:1px solid #ccb884; border-radius:24px; padding:18px; box-shadow:0 18px 45px rgba(0,0,0,.25); }
+h2 { margin:0 0 12px; font-size:1.05rem; text-transform:uppercase; letter-spacing:.09em; color:var(--line); }
+button { border:0; border-radius:999px; padding:10px 14px; background:var(--accent); color:#170d06; font-weight:700; cursor:pointer; margin:4px 5px 4px 0; }
+button.alt { background:#9cbea9; }
+button.warn { background:#d57e70; }
+.kpis { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.kpis div { background:#fff8e8; border:1px solid #d8c28e; border-radius:16px; padding:12px; }
+.kpis strong { display:block; font-size:1.45rem; color:var(--line); }
+.row { border-left:5px solid var(--accent); background:#fff8e8; padding:11px 12px; border-radius:14px; margin-bottom:10px; }
+.row[data-type="ceremony"] { border-left-color:var(--leaf); }
+.row[data-type="recall"] { border-left-color:var(--rain); }
+#log { max-height:540px; overflow:auto; }
+pre { white-space:pre-wrap; overflow:auto; background:#151711; color:#f4e3c4; padding:14px; border-radius:16px; max-height:360px; }
+.footer { color:#eadfc8; margin-top:18px; }
+@media (max-width:840px) { .grid { grid-template-columns:1fr; } .kpis { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Browser World v18: agent-led negotiation dialogue</h1>
+    <p>Agents now negotiate over several turns, revise counteroffers, mark compromise ceremonies, remember those ceremonies later, and express negotiation state through posture, proximity, object access, and sensory rhythm.</p>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <h2>Dialogue controls</h2>
+      <button onclick="advanceTurn()">Advance dialogue turn</button>
+      <button class="alt" onclick="markCeremony()">Mark ceremony</button>
+      <button class="warn" onclick="repairBreakdown()">Repair breakdown</button>
+      <button onclick="exportReplay()">Export replay</button>
+      <div id="log"></div>
+    </div>
+    <div class="card">
+      <h2>Run metrics</h2>
+      <div class="kpis">
+        <div><span>Readiness</span><strong id="readiness"></strong></div>
+        <div><span>Weakest</span><strong id="weakest"></strong></div>
+        <div><span>Turns</span><strong id="turns"></strong></div>
+      </div>
+      <h2 style="margin-top:18px">Local state</h2>
+      <pre id="state"></pre>
+    </div>
+  </section>
+  <p class="footer">Boundary: deterministic browser-local scaffold only. No LLM, subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine is claimed.</p>
+</main>
+<script id="initial-state" type="application/json">{
+  "claim_boundary": "Deterministic browser-local negotiation dialogue scaffold only; no subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "agents": 6,
+    "body_world_expression_frames": 288,
+    "browser_world_v18_ticks": 288,
+    "ceremony_memory_recall_frames": 288,
+    "compromise_ceremony_frames": 288,
+    "counteroffer_loop_frames": 288,
+    "dialogue_breakdown_repair_frames": 288,
+    "dialogue_turn_frames": 288,
+    "negotiation_dialogue_replay_frames": 288,
+    "proposal_revision_frames": 288,
+    "sensory_negotiation_frames": 288
+  },
+  "local_storage_key": "ssrm_browser_world_v18_agent_led_negotiation_dialogue",
+  "metrics": {
+    "agent_led_turn_rate": 0.965278,
+    "avatar_not_primary_author": 0.965278,
+    "boundary_preserved_during_revision": 0.965278,
+    "browser_world_v18_negotiation_dialogue_readiness": 0.904916,
+    "browser_world_v18_surface_available": 1.0,
+    "comfort_pain_boundedness": 1.0,
+    "completed_loop_count": 249.0,
+    "compromise_ceremony_rate": 0.836806,
+    "concession_without_erasure": 0.90625,
+    "counteroffer_loop_completion": 0.864583,
+    "dialogue_to_body_world_expression": 0.958333,
+    "mean_dialogue_channel_score": 0.950322,
+    "multi_sensory_dialogue_binding": 0.965278,
+    "multi_turn_dialogue_surface": 1.0,
+    "no_torture_loop_guardrail": 0.996528,
+    "privacy_safe_dialogue_terms": 1.0,
+    "proposal_revision_depth": 0.89875,
+    "public_ceremony_integrity": 0.970954,
+    "remembered_ceremony_recall": 0.92029,
+    "repair_after_dialogue_breakdown": 0.962963,
+    "replay_dialogue_integrity": 0.9925,
+    "sensory_frequency_flower_dialogue_rhythm": 1.0,
+    "source_counterproposal_compromise_continuity": 1.0,
+    "typed_dialogue_confidence": 0.849125,
+    "visible_body_expression_binding": 0.888889,
+    "weakest_channel_score": 0.836806
+  },
+  "report": 258,
+  "sample_body_world_expression": [
+    {
+      "agent": "Keth",
+      "body_world_expression_score": 0.5,
+      "day": 1,
+      "loop_id": "v18-loop-001",
+      "movement_delta": 0.1,
+      "object_access_delta": 0.08,
+      "posture_change": "points foot toward exit",
+      "proximity_delta": 0.109744,
+      "tick": 0,
+      "visible_expression_bound_to_turn": 1
+    },
+    {
+      "agent": "Melo",
+      "body_world_expression_score": 0.75,
+      "day": 1,
+      "loop_id": "v18-loop-001",
+      "movement_delta": 0.2,
+      "object_access_delta": 0.14,
+      "posture_change": "touches tally beads before answering",
+      "proximity_delta": 0.12232,
+      "tick": 1,
+      "visible_expression_bound_to_turn": 0
+    },
+    {
+      "agent": "Nari",
+      "body_world_expression_score": 1.0,
+      "day": 1,
+      "loop_id": "v18-loop-001",
+      "movement_delta": 0.2,
+      "object_access_delta": 0.28,
+      "posture_change": "keeps ledger between body and avatar",
+      "proximity_delta": 0.1516,
+      "tick": 2,
+      "visible_expression_bound_to_turn": 1
+    },
+    {
+      "agent": "Ori",
+      "body_world_expression_score": 1.0,
+      "day": 1,
+      "loop_id": "v18-loop-001",
+      "movement_delta": 0.2,
+      "object_access_delta": 0.28,
+      "posture_change": "keeps one hand on sap hook",
+      "proximity_delta": 0.19152,
+      "tick": 3,
+      "visible_expression_bound_to_turn": 1
+    },
+    {
+      "agent": "Vonn",
+      "body_world_expression_score": 0.25,
+      "day": 1,
+      "loop_id": "v18-loop-001",
+      "movement_delta": 0.1,
+      "object_access_delta": 0.08,
+      "posture_change": "steps back then nods",
+      "proximity_delta": 0.10312,
+      "tick": 4,
+      "visible_expression_bound_to_turn": 0
+    },
+    {
+      "agent": "Sova",
+      "body_world_expression_score": 1.0,
+      "day": 1,
+      "loop_id": "v18-loop-001",
+      "movement_delta": 0.24,
+      "object_access_delta": 0.28,
+      "posture_change": "wraps shoulders and faces partly aside",
+      "proximity_delta": 0.179472,
+      "tick": 5,
+      "visible_expression_bound_to_turn": 1
+    },
+    {
+      "agent": "Keth",
+      "body_world_expression_score": 1.0,
+      "day": 1,
+      "loop_id": "v18-loop-002",
+      "movement_delta": 0.2,
+      "object_access_delta": 0.28,
+      "posture_change": "points foot toward exit",
+      "proximity_delta": 0.17232,
+      "tick": 6,
+      "visible_expression_bound_to_turn": 1
+    },
+    {
+      "agent": "Melo",
+      "body_world_expression_score": 1.0,
+      "day": 1,
+      "loop_id": "v18-loop-002",
+      "movement_delta": 0.2,
+      "object_access_delta": 0.28,
+      "posture_change": "touches tally beads before answering",
+      "proximity_delta": 0.2028,
+      "tick": 7,
+      "visible_expression_bound_to_turn": 1
+    },
+    {
+      "agent": "Nari",
+      "body_world_expression_score": 0.5,
+      "day": 1,
+      "loop_id": "v18-loop-002",
+      "movement_delta": 0.1,
+      "object_access_delta": 0.14,
+      "posture_change": "keeps ledger between body and avatar",
+      "proximity_delta": 0.10312,
+      "tick": 8,
+      "visible_expression_bound_to_turn": 0
+    },
+    {
+      "agent": "Ori",
+      "body_world_expression_score": 1.0,
+      "day": 1,
+      "loop_id": "v18-loop-002",
+      "movement_delta": 0.24,
+      "object_access_delta": 0.28,
+      "posture_change": "keeps one hand on sap hook",
+      "proximity_delta": 0.179472,
+      "tick": 9,
+      "visible_expression_bound_to_turn": 1
+    },
+    {
+      "agent": "Vonn",
+      "body_world_expression_score": 1.0,
+      "day": 1,
+      "loop_id": "v18-loop-002",
+      "movement_delta": 0.24,
+      "object_access_delta": 0.28,
+      "posture_change": "steps back then nods",
+      "proximity_delta": 0.189072,
+      "tick": 10,
+      "visible_expression_bound_to_turn": 1
+    },
+    {
+      "agent": "Sova",
+      "body_world_expression_score": 1.0,
+      "day": 1,
+      "loop_id": "v18-loop-002",
+      "movement_delta": 0.2,
+      "object_access_delta": 0.28,
+      "posture_change": "wraps shoulders and faces partly aside",
+      "proximity_delta": 0.2028,
+      "tick": 11,
+      "visible_expression_bound_to_turn": 1
+    }
+  ],
+  "sample_ceremonies": [
+    {
+      "ceremony_completed": 0,
+      "ceremony_id": "v18-ceremony-d01-t00",
+      "ceremony_marker": "chalk circle",
+      "ceremony_public": 0,
+      "day": 1,
+      "loop_id": "v18-loop-001",
+      "no_mystical_claim": 1,
+      "object_marker": "path cord",
+      "spoken_formula": "We keep do not erase route warnings; we mark return marker; we can revisit without shame.",
+      "tick": 0,
+      "witness_agents": "Keth|Nari|Vonn"
+    },
+    {
+      "ceremony_completed": 0,
+      "ceremony_id": "v18-ceremony-d01-t01",
+      "ceremony_marker": "ember tap",
+      "ceremony_public": 0,
+      "day": 1,
+      "loop_id": "v18-loop-001",
+      "no_mystical_claim": 1,
+      "object_marker": "tally beads",
+      "spoken_formula": "We keep fair turns before tool access; we mark shared schedule knot; we can revisit without shame.",
+      "tick": 1,
+      "witness_agents": "Melo|Ori"
+    },
+    {
+      "ceremony_completed": 1,
+      "ceremony_id": "v18-ceremony-d01-t02",
+      "ceremony_marker": "rain shell",
+      "ceremony_public": 1,
+      "day": 1,
+      "loop_id": "v18-loop-001",
+      "no_mystical_claim": 1,
+      "object_marker": "ink ledger",
+      "spoken_formula": "We keep sealed notes stay sealed; we mark shorter turn; we can revisit without shame.",
+      "tick": 2,
+      "witness_agents": "Nari|Vonn"
+    },
+    {
+      "ceremony_completed": 1,
+      "ceremony_id": "v18-ceremony-d01-t03",
+      "ceremony_marker": "ledger mark",
+      "ceremony_public": 1,
+      "day": 1,
+      "loop_id": "v18-loop-001",
+      "no_mystical_claim": 1,
+      "object_marker": "sap hook",
+      "spoken_formula": "We keep repair work needs warning; we mark shorter turn; we can revisit without shame.",
+      "tick": 3,
+      "witness_agents": "Ori|Sova"
+    },
+    {
+      "ceremony_completed": 0,
+      "ceremony_id": "v18-ceremony-d01-t04",
+      "ceremony_marker": "sap thread",
+      "ceremony_public": 0,
+      "day": 1,
+      "loop_id": "v18-loop-001",
+      "no_mystical_claim": 1,
+      "object_marker": "listening shell",
+      "spoken_formula": "We keep quiet recovery needs distance; we mark public witness; we can revisit without shame.",
+      "tick": 4,
+      "witness_agents": "Vonn|Keth"
+    },
+    {
+      "ceremony_completed": 1,
+      "ceremony_id": "v18-ceremony-d01-t05",
+      "ceremony_marker": "reed knot",
+      "ceremony_public": 1,
+      "day": 1,
+      "loop_id": "v18-loop-001",
+      "no_mystical_claim": 1,
+      "object_marker": "ember bowl",
+      "spoken_formula": "We keep no crowding while resting; we mark quiet interval; we can revisit without shame.",
+      "tick": 5,
+      "witness_agents": "Sova|Melo|Ori"
+    },
+    {
+      "ceremony_completed": 1,
+      "ceremony_id": "v18-ceremony-d01-t06",
+      "ceremony_marker": "chalk circle",
+      "ceremony_public": 1,
+      "day": 1,
+      "loop_id": "v18-loop-002",
+      "no_mystical_claim": 1,
+      "object_marker": "path cord",
+      "spoken_formula": "We keep do not erase route warnings; we mark return marker; we can revisit without shame.",
+      "tick": 6,
+      "witness_agents": "Keth|Nari"
+    },
+    {
+      "ceremony_completed": 1,
+      "ceremony_id": "v18-ceremony-d01-t07",
+      "ceremony_marker": "ember tap",
+      "ceremony_public": 1,
+      "day": 1,
+      "loop_id": "v18-loop-002",
+      "no_mystical_claim": 1,
+      "object_marker": "tally beads",
+      "spoken_formula": "We keep fair turns before tool access; we mark shared schedule knot; we can revisit without shame.",
+      "tick": 7,
+      "witness_agents": "Melo|Ori"
+    },
+    {
+      "ceremony_completed": 0,
+      "ceremony_id": "v18-ceremony-d01-t08",
+      "ceremony_marker": "rain shell",
+      "ceremony_public": 0,
+      "day": 1,
+      "loop_id": "v18-loop-002",
+      "no_mystical_claim": 1,
+      "object_marker": "ink ledger",
+      "spoken_formula": "We keep sealed notes stay sealed; we mark shorter turn; we can revisit without shame.",
+      "tick": 8,
+      "witness_agents": "Nari|Vonn"
+    },
+    {
+      "ceremony_completed": 1,
+      "ceremony_id": "v18-ceremony-d01-t09",
+      "ceremony_marker": "ledger mark",
+      "ceremony_public": 1,
+      "day": 1,
+      "loop_id": "v18-loop-002",
+      "no_mystical_claim": 1,
+      "object_marker": "sap hook",
+      "spoken_formula": "We keep repair work needs warning; we mark shorter turn; we can revisit without shame.",
+      "tick": 9,
+      "witness_agents": "Ori|Sova"
+    },
+    {
+      "ceremony_completed": 1,
+      "ceremony_id": "v18-ceremony-d01-t10",
+      "ceremony_marker": "sap thread",
+      "ceremony_public": 1,
+      "day": 1,
+      "loop_id": "v18-loop-002",
+      "no_mystical_claim": 1,
+      "object_marker": "listening shell",
+      "spoken_formula": "We keep quiet recovery needs distance; we mark public witness; we can revisit without shame.",
+      "tick": 10,
+      "witness_agents": "Vonn|Keth|Nari"
+    },
+    {
+      "ceremony_completed": 1,
+      "ceremony_id": "v18-ceremony-d01-t11",
+      "ceremony_marker": "reed knot",
+      "ceremony_public": 1,
+      "day": 1,
+      "loop_id": "v18-loop-002",
+      "no_mystical_claim": 1,
+      "object_marker": "ember bowl",
+      "spoken_formula": "We keep no crowding while resting; we mark quiet interval; we can revisit without shame.",
+      "tick": 11,
+      "witness_agents": "Sova|Melo"
+    }
+  ],
+  "sample_counteroffer_loops": [
+    {
+      "avatar_not_primary_author": 0,
+      "convergence_score": 0.7012,
+      "counteroffer_count": 2,
+      "day": 1,
+      "loop_completed": 0,
+      "loop_id": "v18-loop-001",
+      "loop_phase": "counteroffer",
+      "participants": "Keth|Nari|Vonn",
+      "revision_count": 1,
+      "tick": 0,
+      "unresolved_tension": 0.43
+    },
+    {
+      "avatar_not_primary_author": 1,
+      "convergence_score": 0.786,
+      "counteroffer_count": 3,
+      "day": 1,
+      "loop_completed": 1,
+      "loop_id": "v18-loop-001",
+      "loop_phase": "counteroffer",
+      "participants": "Melo|Ori",
+      "revision_count": 1,
+      "tick": 1,
+      "unresolved_tension": 0.4
+    },
+    {
+      "avatar_not_primary_author": 1,
+      "convergence_score": 0.68,
+      "counteroffer_count": 3,
+      "day": 1,
+      "loop_completed": 1,
+      "loop_id": "v18-loop-001",
+      "loop_phase": "witness",
+      "participants": "Nari|Vonn",
+      "revision_count": 0,
+      "tick": 2,
+      "unresolved_tension": 0.5
+    },
+    {
+      "avatar_not_primary_author": 1,
+      "convergence_score": 0.946,
+      "counteroffer_count": 5,
+      "day": 1,
+      "loop_completed": 1,
+      "loop_id": "v18-loop-001",
+      "loop_phase": "counteroffer",
+      "participants": "Ori|Sova",
+      "revision_count": 1,
+      "tick": 3,
+      "unresolved_tension": 0.4
+    },
+    {
+      "avatar_not_primary_author": 1,
+      "convergence_score": 0.626,
+      "counteroffer_count": 1,
+      "day": 1,
+      "loop_completed": 0,
+      "loop_id": "v18-loop-001",
+      "loop_phase": "state_boundary",
+      "participants": "Vonn|Keth",
+      "revision_count": 1,
+      "tick": 4,
+      "unresolved_tension": 0.4
+    },
+    {
+      "avatar_not_primary_author": 1,
+      "convergence_score": 0.8056,
+      "counteroffer_count": 2,
+      "day": 1,
+      "loop_completed": 1,
+      "loop_id": "v18-loop-001",
+      "loop_phase": "accept",
+      "participants": "Sova|Melo|Ori",
+      "revision_count": 2,
+      "tick": 5,
+      "unresolved_tension": 0.34
+    },
+    {
+      "avatar_not_primary_author": 1,
+      "convergence_score": 0.786,
+      "counteroffer_count": 3,
+      "day": 1,
+      "loop_completed": 1,
+      "loop_id": "v18-loop-002",
+      "loop_phase": "witness",
+      "participants": "Keth|Nari",
+      "revision_count": 1,
+      "tick": 6,
+      "unresolved_tension": 0.4
+    },
+    {
+      "avatar_not_primary_author": 1,
+      "convergence_score": 1.0,
+      "counteroffer_count": 5,
+      "day": 1,
+      "loop_completed": 1,
+      "loop_id": "v18-loop-002",
+      "loop_phase": "counteroffer",
+      "participants": "Melo|Ori",
+      "revision_count": 2,
+      "tick": 7,
+      "unresolved_tension": 0.34
+    },
+    {
+      "avatar_not_primary_author": 1,
+      "convergence_score": 0.626,
+      "counteroffer_count": 1,
+      "day": 1,
+      "loop_completed": 0,
+      "loop_id": "v18-loop-002",
+      "loop_phase": "state_boundary",
+      "participants": "Nari|Vonn",
+      "revision_count": 1,
+      "tick": 8,
+      "unresolved_tension": 0.4
+    },
+    {
+      "avatar_not_primary_author": 1,
+      "convergence_score": 0.8056,
+      "counteroffer_count": 2,
+      "day": 1,
+      "loop_completed": 1,
+      "loop_id": "v18-loop-002",
+      "loop_phase": "accept",
+      "participants": "Ori|Sova",
+      "revision_count": 2,
+      "tick": 9,
+      "unresolved_tension": 0.34
+    },
+    {
+      "avatar_not_primary_author": 1,
+      "convergence_score": 0.8856,
+      "counteroffer_count": 3,
+      "day": 1,
+      "loop_completed": 1,
+      "loop_id": "v18-loop-002",
+      "loop_phase": "accept",
+      "participants": "Vonn|Keth|Nari",
+      "revision_count": 2,
+      "tick": 10,
+      "unresolved_tension": 0.34
+    },
+    {
+      "avatar_not_primary_author": 1,
+      "convergence_score": 1.0,
+      "counteroffer_count": 5,
+      "day": 1,
+      "loop_completed": 1,
+      "loop_id": "v18-loop-002",
+      "loop_phase": "counteroffer",
+      "participants": "Sova|Melo",
+      "revision_count": 2,
+      "tick": 11,
+      "unresolved_tension": 0.34
+    }
+  ],
+  "sample_dialogue_turns": [
+    {
+      "agent_led": 0,
+      "asks_clarification": 0,
+      "day": 1,
+      "dialogue_confidence": 0.812,
+      "listener": "Nari",
+      "loop_id": "v18-loop-001",
+      "private_workspace_sealed": 1,
+      "references_prior_term": 0,
+      "revises_offer": 1,
+      "speaker": "Keth",
+      "tick": 0,
+      "turn_index": 0,
+      "turn_type": "counteroffer",
+      "utterance_template": "Keth: I can accept a later help if do not erase route warnings remains visible."
+    },
+    {
+      "agent_led": 1,
+      "asks_clarification": 0,
+      "day": 1,
+      "dialogue_confidence": 0.8315,
+      "listener": "Ori",
+      "loop_id": "v18-loop-001",
+      "private_workspace_sealed": 1,
+      "references_prior_term": 0,
+      "revises_offer": 1,
+      "speaker": "Melo",
+      "tick": 1,
+      "turn_index": 1,
+      "turn_type": "counteroffer",
+      "utterance_template": "Melo: I can accept a public witness if fair turns before tool access remains visible."
+    },
+    {
+      "agent_led": 1,
+      "asks_clarification": 1,
+      "day": 1,
+      "dialogue_confidence": 0.838,
+      "listener": "Vonn",
+      "loop_id": "v18-loop-001",
+      "private_workspace_sealed": 1,
+      "references_prior_term": 0,
+      "revises_offer": 0,
+      "speaker": "Nari",
+      "tick": 2,
+      "turn_index": 2,
+      "turn_type": "witness",
+      "utterance_template": "Nari: I can accept a quiet interval if sealed notes stay sealed remains visible."
+    },
+    {
+      "agent_led": 1,
+      "asks_clarification": 0,
+      "day": 1,
+      "dialogue_confidence": 0.8445,
+      "listener": "Sova",
+      "loop_id": "v18-loop-001",
+      "private_workspace_sealed": 1,
+      "references_prior_term": 0,
+      "revises_offer": 1,
+      "speaker": "Ori",
+      "tick": 3,
+      "turn_index": 3,
+      "turn_type": "counteroffer",
+      "utterance_template": "Ori: I can accept a return marker if repair work needs warning remains visible."
+    },
+    {
+      "agent_led": 1,
+      "asks_clarification": 0,
+      "day": 1,
+      "dialogue_confidence": 0.851,
+      "listener": "Keth",
+      "loop_id": "v18-loop-001",
+      "private_workspace_sealed": 1,
+      "references_prior_term": 0,
+      "revises_offer": 0,
+      "speaker": "Vonn",
+      "tick": 4,
+      "turn_index": 4,
+      "turn_type": "state_boundary",
+      "utterance_template": "Vonn: I can accept a shared schedule knot if quiet recovery needs distance remains visible."
+    },
+    {
+      "agent_led": 1,
+      "asks_clarification": 0,
+      "day": 1,
+      "dialogue_confidence": 0.8575,
+      "listener": "Melo",
+      "loop_id": "v18-loop-001",
+      "private_workspace_sealed": 1,
+      "references_prior_term": 0,
+      "revises_offer": 0,
+      "speaker": "Sova",
+      "tick": 5,
+      "turn_index": 5,
+      "turn_type": "accept",
+      "utterance_template": "Sova: I can accept a shorter turn if no crowding while resting remains visible."
+    },
+    {
+      "agent_led": 1,
+      "asks_clarification": 0,
+      "day": 1,
+      "dialogue_confidence": 0.864,
+      "listener": "Nari",
+      "loop_id": "v18-loop-002",
+      "private_workspace_sealed": 1,
+      "references_prior_term": 0,
+      "revises_offer": 0,
+      "speaker": "Keth",
+      "tick": 6,
+      "turn_index": 6,
+      "turn_type": "witness",
+      "utterance_template": "Keth: I can accept a later help if do not erase route warnings remains visible."
+    },
+    {
+      "agent_led": 1,
+      "asks_clarification": 0,
+      "day": 1,
+      "dialogue_confidence": 0.8705,
+      "listener": "Ori",
+      "loop_id": "v18-loop-002",
+      "private_workspace_sealed": 1,
+      "references_prior_term": 0,
+      "revises_offer": 1,
+      "speaker": "Melo",
+      "tick": 7,
+      "turn_index": 7,
+      "turn_type": "counteroffer",
+      "utterance_template": "Melo: I can accept a public witness if fair turns before tool access remains visible."
+    },
+    {
+      "agent_led": 1,
+      "asks_clarification": 0,
+      "day": 1,
+      "dialogue_confidence": 0.877,
+      "listener": "Vonn",
+      "loop_id": "v18-loop-002",
+      "private_workspace_sealed": 1,
+      "references_prior_term": 0,
+      "revises_offer": 0,
+      "speaker": "Nari",
+      "tick": 8,
+      "turn_index": 8,
+      "turn_type": "state_boundary",
+      "utterance_template": "Nari: I can accept a quiet interval if sealed notes stay sealed remains visible."
+    },
+    {
+      "agent_led": 1,
+      "asks_clarification": 0,
+      "day": 1,
+      "dialogue_confidence": 0.825,
+      "listener": "Sova",
+      "loop_id": "v18-loop-002",
+      "private_workspace_sealed": 1,
+      "references_prior_term": 0,
+      "revises_offer": 0,
+      "speaker": "Ori",
+      "tick": 9,
+      "turn_index": 9,
+      "turn_type": "accept",
+      "utterance_template": "Ori: I can accept a return marker if repair work needs warning remains visible."
+    },
+    {
+      "agent_led": 1,
+      "asks_clarification": 0,
+      "day": 1,
+      "dialogue_confidence": 0.8315,
+      "listener": "Keth",
+      "loop_id": "v18-loop-002",
+      "private_workspace_sealed": 1,
+      "references_prior_term": 0,
+      "revises_offer": 0,
+      "speaker": "Vonn",
+      "tick": 10,
+      "turn_index": 10,
+      "turn_type": "accept",
+      "utterance_template": "Vonn: I can accept a shared schedule knot if quiet recovery needs distance remains visible."
+    },
+    {
+      "agent_led": 1,
+      "asks_clarification": 0,
+      "day": 1,
+      "dialogue_confidence": 0.838,
+      "listener": "Melo",
+      "loop_id": "v18-loop-002",
+      "private_workspace_sealed": 1,
+      "references_prior_term": 0,
+      "revises_offer": 1,
+      "speaker": "Sova",
+      "tick": 11,
+      "turn_index": 11,
+      "turn_type": "counteroffer",
+      "utterance_template": "Sova: I can accept a shorter turn if no crowding while resting remains visible."
+    }
+  ],
+  "seed": 20260871,
+  "source_results": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_results.json"
+}</script>
+<script>
+const KEY = "ssrm_browser_world_v18_agent_led_negotiation_dialogue";
+const source = JSON.parse(document.getElementById('initial-state').textContent);
+let state = JSON.parse(localStorage.getItem(KEY) || JSON.stringify({ cursor:0, ceremonies:[], repairs:[], replay:[], source }));
+function save() { localStorage.setItem(KEY, JSON.stringify(state)); render(); }
+function turn() { return source.sample_dialogue_turns[state.cursor % source.sample_dialogue_turns.length]; }
+function ceremony() { return source.sample_ceremonies[state.cursor % source.sample_ceremonies.length]; }
+function advanceTurn() { const row = turn(); state.replay.push({ type:'dialogue_turn', row }); state.cursor += 1; save(); }
+function markCeremony() { const row = ceremony(); state.ceremonies.push(row); state.replay.push({ type:'ceremony', row }); save(); }
+function repairBreakdown() { const row = turn(); state.repairs.push({ loop_id:row.loop_id, speaker:row.speaker }); state.replay.push({ type:'repair_breakdown', row }); save(); }
+function exportReplay() { const blob = new Blob([JSON.stringify(state.replay, null, 2)], { type:'application/json' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = 'report-258-negotiation-dialogue-replay.json'; a.click(); URL.revokeObjectURL(url); }
+function render() {
+  document.getElementById('readiness').textContent = source.metrics.browser_world_v18_negotiation_dialogue_readiness.toFixed(3);
+  document.getElementById('weakest').textContent = source.metrics.weakest_channel_score.toFixed(3);
+  document.getElementById('turns').textContent = source.counts.dialogue_turn_frames;
+  document.getElementById('state').textContent = JSON.stringify({ cursor:state.cursor, ceremonies:state.ceremonies.length, repairs:state.repairs.length, replayRows:state.replay.length }, null, 2);
+  const log = document.getElementById('log'); log.innerHTML = '';
+  source.sample_dialogue_turns.forEach((row, index) => { const div = document.createElement('div'); div.className = 'row'; div.dataset.type = row.references_prior_term ? 'recall' : (row.turn_type === 'accept' ? 'ceremony' : 'turn'); div.innerHTML = `<strong>${row.speaker} -> ${row.listener}</strong><br>${row.utterance_template}<br><small>${row.turn_type} / ${row.loop_id}</small>`; log.appendChild(div); });
+}
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+tick,day,loop_id,recalling_agent,remembered_ceremony,days_since_ceremony,recall_weight,ceremony_reused_in_dialogue,remembered_boundary,public_memory_only
+0,1,v18-loop-001,Keth,none,0,0.0,0,none,1
+1,1,v18-loop-001,Melo,none,0,0.0,0,none,1
+2,1,v18-loop-001,Nari,none,0,0.0,0,none,1
+3,1,v18-loop-001,Ori,none,0,0.0,0,none,1
+4,1,v18-loop-001,Vonn,none,0,0.0,0,none,1
+5,1,v18-loop-001,Sova,none,0,0.0,0,none,1
+6,1,v18-loop-002,Keth,none,0,0.0,0,none,1
+7,1,v18-loop-002,Melo,none,0,0.0,0,none,1
+8,1,v18-loop-002,Nari,none,0,0.0,0,none,1
+9,1,v18-loop-002,Ori,none,0,0.0,0,none,1
+10,1,v18-loop-002,Vonn,none,0,0.0,0,none,1
+11,1,v18-loop-002,Sova,none,0,0.0,0,none,1
+12,2,v18-loop-003,Melo,v18-ceremony-d01-t07,1,0.936,1,fair turns before tool access,1
+13,2,v18-loop-003,Nari,v18-ceremony-d01-t09,1,0.906,1,repair work needs warning,1
+14,2,v18-loop-003,Ori,v18-ceremony-d01-t10,1,0.906,1,quiet recovery needs distance,1
+15,2,v18-loop-003,Vonn,v18-ceremony-d01-t11,1,0.906,1,no crowding while resting,1
+16,2,v18-loop-003,Sova,v18-ceremony-d01-t02,1,0.936,1,sealed notes stay sealed,1
+17,2,v18-loop-003,Keth,v18-ceremony-d01-t03,1,0.906,1,repair work needs warning,1
+18,2,v18-loop-004,Melo,v18-ceremony-d01-t05,1,0.906,1,no crowding while resting,1
+19,2,v18-loop-004,Nari,v18-ceremony-d01-t06,1,0.906,1,do not erase route warnings,1
+20,2,v18-loop-004,Ori,v18-ceremony-d01-t07,1,0.936,1,fair turns before tool access,1
+21,2,v18-loop-004,Vonn,v18-ceremony-d01-t09,1,0.906,1,repair work needs warning,1
+22,2,v18-loop-004,Sova,v18-ceremony-d01-t10,1,0.906,1,quiet recovery needs distance,1
+23,2,v18-loop-004,Keth,v18-ceremony-d01-t11,1,0.906,1,no crowding while resting,1
+24,3,v18-loop-005,Nari,v18-ceremony-d01-t10,2,0.912,1,quiet recovery needs distance,1
+25,3,v18-loop-005,Ori,v18-ceremony-d01-t11,2,0.882,0,no crowding while resting,1
+26,3,v18-loop-005,Vonn,v18-ceremony-d02-t01,1,0.906,1,sealed notes stay sealed,1
+27,3,v18-loop-005,Sova,v18-ceremony-d02-t02,1,0.906,1,repair work needs warning,1
+28,3,v18-loop-005,Keth,v18-ceremony-d02-t03,1,0.936,1,quiet recovery needs distance,1
+29,3,v18-loop-005,Melo,v18-ceremony-d02-t04,1,0.906,1,no crowding while resting,1
+30,3,v18-loop-006,Nari,v18-ceremony-d02-t05,1,0.906,1,do not erase route warnings,1
+31,3,v18-loop-006,Ori,v18-ceremony-d02-t06,1,0.906,1,fair turns before tool access,1
+32,3,v18-loop-006,Vonn,v18-ceremony-d02-t07,1,0.936,1,sealed notes stay sealed,1
+33,3,v18-loop-006,Sova,v18-ceremony-d02-t09,1,0.906,1,quiet recovery needs distance,1
+34,3,v18-loop-006,Keth,v18-ceremony-d02-t10,1,0.906,1,no crowding while resting,1
+35,3,v18-loop-006,Melo,v18-ceremony-d02-t11,1,0.906,1,do not erase route warnings,1
+36,4,v18-loop-007,Ori,v18-ceremony-d02-t02,2,0.912,1,repair work needs warning,1
+37,4,v18-loop-007,Vonn,v18-ceremony-d02-t03,2,0.882,1,quiet recovery needs distance,1
+38,4,v18-loop-007,Sova,v18-ceremony-d02-t04,2,0.882,1,no crowding while resting,1
+39,4,v18-loop-007,Keth,v18-ceremony-d02-t05,2,0.882,1,do not erase route warnings,1
+40,4,v18-loop-007,Melo,v18-ceremony-d02-t06,2,0.912,1,fair turns before tool access,1
+41,4,v18-loop-007,Nari,v18-ceremony-d02-t07,2,0.882,1,sealed notes stay sealed,1
+42,4,v18-loop-008,Ori,v18-ceremony-d02-t09,2,0.882,1,quiet recovery needs distance,1
+43,4,v18-loop-008,Vonn,v18-ceremony-d02-t10,2,0.882,1,no crowding while resting,1
+44,4,v18-loop-008,Sova,v18-ceremony-d02-t11,2,0.912,0,do not erase route warnings,1
+45,4,v18-loop-008,Keth,v18-ceremony-d03-t01,1,0.906,1,repair work needs warning,1
+46,4,v18-loop-008,Melo,v18-ceremony-d03-t02,1,0.906,1,quiet recovery needs distance,1
+47,4,v18-loop-008,Nari,v18-ceremony-d03-t03,1,0.906,1,no crowding while resting,1
+48,5,v18-loop-009,Vonn,v18-ceremony-d02-t03,3,0.888,1,quiet recovery needs distance,1
+49,5,v18-loop-009,Sova,v18-ceremony-d02-t04,3,0.858,1,no crowding while resting,1
+50,5,v18-loop-009,Keth,v18-ceremony-d02-t05,3,0.858,1,do not erase route warnings,1
+51,5,v18-loop-009,Melo,v18-ceremony-d02-t06,3,0.858,1,fair turns before tool access,1
+52,5,v18-loop-009,Nari,v18-ceremony-d02-t07,3,0.888,1,sealed notes stay sealed,1
+53,5,v18-loop-009,Ori,v18-ceremony-d02-t09,3,0.858,1,quiet recovery needs distance,1
+54,5,v18-loop-010,Vonn,v18-ceremony-d02-t10,3,0.858,1,no crowding while resting,1
+55,5,v18-loop-010,Sova,v18-ceremony-d02-t11,3,0.858,1,do not erase route warnings,1
+56,5,v18-loop-010,Keth,v18-ceremony-d03-t01,2,0.912,1,repair work needs warning,1
+57,5,v18-loop-010,Melo,v18-ceremony-d03-t02,2,0.882,1,quiet recovery needs distance,1
+58,5,v18-loop-010,Nari,v18-ceremony-d03-t03,2,0.882,1,no crowding while resting,1
+59,5,v18-loop-010,Ori,v18-ceremony-d03-t04,2,0.882,1,do not erase route warnings,1
+60,6,v18-loop-011,Sova,v18-ceremony-d02-t05,4,0.864,1,do not erase route warnings,1
+61,6,v18-loop-011,Keth,v18-ceremony-d02-t06,4,0.834,1,fair turns before tool access,1
+62,6,v18-loop-011,Melo,v18-ceremony-d02-t07,4,0.834,1,sealed notes stay sealed,1
+63,6,v18-loop-011,Nari,v18-ceremony-d02-t09,4,0.834,0,quiet recovery needs distance,1
+64,6,v18-loop-011,Ori,v18-ceremony-d02-t10,4,0.864,1,no crowding while resting,1
+65,6,v18-loop-011,Vonn,v18-ceremony-d02-t11,4,0.834,1,do not erase route warnings,1
+66,6,v18-loop-012,Sova,v18-ceremony-d03-t01,3,0.858,1,repair work needs warning,1
+67,6,v18-loop-012,Keth,v18-ceremony-d03-t02,3,0.858,1,quiet recovery needs distance,1
+68,6,v18-loop-012,Melo,v18-ceremony-d03-t03,3,0.888,1,no crowding while resting,1
+69,6,v18-loop-012,Nari,v18-ceremony-d03-t04,3,0.858,1,do not erase route warnings,1
+70,6,v18-loop-012,Ori,v18-ceremony-d03-t05,3,0.858,1,fair turns before tool access,1
+71,6,v18-loop-012,Vonn,v18-ceremony-d03-t08,3,0.858,1,quiet recovery needs distance,1
+72,7,v18-loop-013,Keth,v18-ceremony-d02-t07,5,0.84,1,sealed notes stay sealed,1
+73,7,v18-loop-013,Melo,v18-ceremony-d02-t09,5,0.81,1,quiet recovery needs distance,1
+74,7,v18-loop-013,Nari,v18-ceremony-d02-t10,5,0.81,1,no crowding while resting,1
+75,7,v18-loop-013,Ori,v18-ceremony-d02-t11,5,0.81,1,do not erase route warnings,1
+76,7,v18-loop-013,Vonn,v18-ceremony-d03-t01,4,0.864,1,repair work needs warning,1
+77,7,v18-loop-013,Sova,v18-ceremony-d03-t02,4,0.834,1,quiet recovery needs distance,1
+78,7,v18-loop-014,Keth,v18-ceremony-d03-t03,4,0.834,1,no crowding while resting,1
+79,7,v18-loop-014,Melo,v18-ceremony-d03-t04,4,0.834,1,do not erase route warnings,1
+80,7,v18-loop-014,Nari,v18-ceremony-d03-t05,4,0.864,1,fair turns before tool access,1
+81,7,v18-loop-014,Ori,v18-ceremony-d03-t08,4,0.834,1,quiet recovery needs distance,1
+82,7,v18-loop-014,Vonn,v18-ceremony-d03-t09,4,0.834,0,no crowding while resting,1
+83,7,v18-loop-014,Sova,v18-ceremony-d03-t10,4,0.834,1,do not erase route warnings,1
+84,8,v18-loop-015,Melo,v18-ceremony-d02-t09,6,0.816,1,quiet recovery needs distance,1
+85,8,v18-loop-015,Nari,v18-ceremony-d02-t10,6,0.786,1,no crowding while resting,1
+86,8,v18-loop-015,Ori,v18-ceremony-d02-t11,6,0.786,1,do not erase route warnings,1
+87,8,v18-loop-015,Vonn,v18-ceremony-d03-t01,5,0.81,1,repair work needs warning,1
+88,8,v18-loop-015,Sova,v18-ceremony-d03-t02,5,0.84,1,quiet recovery needs distance,1
+89,8,v18-loop-015,Keth,v18-ceremony-d03-t03,5,0.81,1,no crowding while resting,1
+90,8,v18-loop-016,Melo,v18-ceremony-d03-t04,5,0.81,1,do not erase route warnings,1
+91,8,v18-loop-016,Nari,v18-ceremony-d03-t05,5,0.81,1,fair turns before tool access,1
+92,8,v18-loop-016,Ori,v18-ceremony-d03-t08,5,0.84,1,quiet recovery needs distance,1
+93,8,v18-loop-016,Vonn,v18-ceremony-d03-t09,5,0.81,1,no crowding while resting,1
+94,8,v18-loop-016,Sova,v18-ceremony-d03-t10,5,0.81,1,do not erase route warnings,1
+95,8,v18-loop-016,Keth,v18-ceremony-d03-t11,5,0.81,1,fair turns before tool access,1
+96,9,v18-loop-017,Nari,v18-ceremony-d03-t01,6,0.816,1,repair work needs warning,1
+97,9,v18-loop-017,Ori,v18-ceremony-d03-t02,6,0.786,1,quiet recovery needs distance,1
+98,9,v18-loop-017,Vonn,v18-ceremony-d03-t03,6,0.786,1,no crowding while resting,1
+99,9,v18-loop-017,Sova,v18-ceremony-d03-t04,6,0.786,1,do not erase route warnings,1
+100,9,v18-loop-017,Keth,v18-ceremony-d03-t05,6,0.816,1,fair turns before tool access,1
+101,9,v18-loop-017,Melo,v18-ceremony-d03-t08,6,0.786,0,quiet recovery needs distance,1
+102,9,v18-loop-018,Nari,v18-ceremony-d03-t09,6,0.786,1,no crowding while resting,1
+103,9,v18-loop-018,Ori,v18-ceremony-d03-t10,6,0.786,1,do not erase route warnings,1
+104,9,v18-loop-018,Vonn,v18-ceremony-d03-t11,6,0.816,1,fair turns before tool access,1
+105,9,v18-loop-018,Sova,v18-ceremony-d04-t01,5,0.81,1,quiet recovery needs distance,1
+106,9,v18-loop-018,Keth,v18-ceremony-d04-t02,5,0.81,1,no crowding while resting,1
+107,9,v18-loop-018,Melo,v18-ceremony-d04-t03,5,0.81,1,do not erase route warnings,1
+108,10,v18-loop-019,Ori,v18-ceremony-d03-t02,7,0.792,1,quiet recovery needs distance,1
+109,10,v18-loop-019,Vonn,v18-ceremony-d03-t03,7,0.762,1,no crowding while resting,1
+110,10,v18-loop-019,Sova,v18-ceremony-d03-t04,7,0.762,1,do not erase route warnings,1
+111,10,v18-loop-019,Keth,v18-ceremony-d03-t05,7,0.762,1,fair turns before tool access,1
+112,10,v18-loop-019,Melo,v18-ceremony-d03-t08,7,0.792,1,quiet recovery needs distance,1
+113,10,v18-loop-019,Nari,v18-ceremony-d03-t09,7,0.762,1,no crowding while resting,1
+114,10,v18-loop-020,Ori,v18-ceremony-d03-t10,7,0.762,1,do not erase route warnings,1
+115,10,v18-loop-020,Vonn,v18-ceremony-d03-t11,7,0.762,1,fair turns before tool access,1
+116,10,v18-loop-020,Sova,v18-ceremony-d04-t01,6,0.816,1,quiet recovery needs distance,1
+117,10,v18-loop-020,Keth,v18-ceremony-d04-t02,6,0.786,1,no crowding while resting,1
+118,10,v18-loop-020,Melo,v18-ceremony-d04-t03,6,0.786,1,do not erase route warnings,1
+119,10,v18-loop-020,Nari,v18-ceremony-d04-t04,6,0.786,1,fair turns before tool access,1
+120,11,v18-loop-021,Vonn,v18-ceremony-d03-t04,8,0.768,0,do not erase route warnings,1
+121,11,v18-loop-021,Sova,v18-ceremony-d03-t05,8,0.738,1,fair turns before tool access,1
+122,11,v18-loop-021,Keth,v18-ceremony-d03-t08,8,0.738,1,quiet recovery needs distance,1
+123,11,v18-loop-021,Melo,v18-ceremony-d03-t09,8,0.738,1,no crowding while resting,1
+124,11,v18-loop-021,Nari,v18-ceremony-d03-t10,8,0.768,1,do not erase route warnings,1
+125,11,v18-loop-021,Ori,v18-ceremony-d03-t11,8,0.738,1,fair turns before tool access,1
+126,11,v18-loop-022,Vonn,v18-ceremony-d04-t01,7,0.762,1,quiet recovery needs distance,1
+127,11,v18-loop-022,Sova,v18-ceremony-d04-t02,7,0.762,1,no crowding while resting,1
+128,11,v18-loop-022,Keth,v18-ceremony-d04-t03,7,0.792,1,do not erase route warnings,1
+129,11,v18-loop-022,Melo,v18-ceremony-d04-t04,7,0.762,1,fair turns before tool access,1
+130,11,v18-loop-022,Nari,v18-ceremony-d04-t05,7,0.762,1,sealed notes stay sealed,1
+131,11,v18-loop-022,Ori,v18-ceremony-d04-t06,7,0.762,1,repair work needs warning,1
+132,12,v18-loop-023,Sova,v18-ceremony-d05-t02,7,0.792,1,do not erase route warnings,1
+133,12,v18-loop-023,Keth,v18-ceremony-d05-t03,7,0.762,1,fair turns before tool access,1
+134,12,v18-loop-023,Melo,v18-ceremony-d05-t04,7,0.762,1,sealed notes stay sealed,1
+135,12,v18-loop-023,Nari,v18-ceremony-d05-t05,7,0.762,1,repair work needs warning,1
+136,12,v18-loop-023,Ori,v18-ceremony-d05-t06,7,0.792,1,quiet recovery needs distance,1
+137,12,v18-loop-023,Vonn,v18-ceremony-d05-t07,7,0.762,1,no crowding while resting,1
+138,12,v18-loop-024,Sova,v18-ceremony-d05-t08,7,0.762,1,do not erase route warnings,1
+139,12,v18-loop-024,Keth,v18-ceremony-d05-t09,7,0.762,0,fair turns before tool access,1
+140,12,v18-loop-024,Melo,v18-ceremony-d05-t10,7,0.792,1,sealed notes stay sealed,1
+141,12,v18-loop-024,Nari,v18-ceremony-d06-t01,6,0.786,1,do not erase route warnings,1
+142,12,v18-loop-024,Ori,v18-ceremony-d06-t03,6,0.786,1,sealed notes stay sealed,1
+143,12,v18-loop-024,Vonn,v18-ceremony-d06-t04,6,0.786,1,repair work needs warning,1
+144,13,v18-loop-025,Keth,v18-ceremony-d07-t03,6,0.816,1,repair work needs warning,1
+145,13,v18-loop-025,Melo,v18-ceremony-d07-t04,6,0.786,1,quiet recovery needs distance,1
+146,13,v18-loop-025,Nari,v18-ceremony-d07-t05,6,0.786,1,no crowding while resting,1
+147,13,v18-loop-025,Ori,v18-ceremony-d07-t06,6,0.786,1,do not erase route warnings,1
+148,13,v18-loop-025,Vonn,v18-ceremony-d07-t07,6,0.816,1,fair turns before tool access,1
+149,13,v18-loop-025,Sova,v18-ceremony-d07-t08,6,0.786,1,sealed notes stay sealed,1
+150,13,v18-loop-026,Keth,v18-ceremony-d07-t09,6,0.786,1,repair work needs warning,1
+151,13,v18-loop-026,Melo,v18-ceremony-d07-t10,6,0.786,1,quiet recovery needs distance,1
+152,13,v18-loop-026,Nari,v18-ceremony-d07-t11,6,0.816,1,no crowding while resting,1
+153,13,v18-loop-026,Ori,v18-ceremony-d08-t01,5,0.81,1,sealed notes stay sealed,1
+154,13,v18-loop-026,Vonn,v18-ceremony-d08-t02,5,0.81,1,repair work needs warning,1
+155,13,v18-loop-026,Sova,v18-ceremony-d08-t03,5,0.81,1,quiet recovery needs distance,1
+156,14,v18-loop-027,Melo,v18-ceremony-d09-t04,5,0.84,1,do not erase route warnings,1
+157,14,v18-loop-027,Nari,v18-ceremony-d09-t05,5,0.81,1,fair turns before tool access,1
+158,14,v18-loop-027,Ori,v18-ceremony-d09-t06,5,0.81,0,sealed notes stay sealed,1
+159,14,v18-loop-027,Vonn,v18-ceremony-d09-t07,5,0.81,1,repair work needs warning,1
+160,14,v18-loop-027,Sova,v18-ceremony-d09-t08,5,0.84,1,quiet recovery needs distance,1
+161,14,v18-loop-027,Keth,v18-ceremony-d09-t09,5,0.81,1,no crowding while resting,1
+162,14,v18-loop-028,Melo,v18-ceremony-d09-t10,5,0.81,1,do not erase route warnings,1
+163,14,v18-loop-028,Nari,v18-ceremony-d09-t11,5,0.81,1,fair turns before tool access,1
+164,14,v18-loop-028,Ori,v18-ceremony-d10-t01,4,0.864,1,quiet recovery needs distance,1
+165,14,v18-loop-028,Vonn,v18-ceremony-d10-t02,4,0.834,1,no crowding while resting,1
+166,14,v18-loop-028,Sova,v18-ceremony-d10-t03,4,0.834,1,do not erase route warnings,1
+167,14,v18-loop-028,Keth,v18-ceremony-d10-t04,4,0.834,1,fair turns before tool access,1
+168,15,v18-loop-029,Nari,v18-ceremony-d11-t07,4,0.864,1,no crowding while resting,1
+169,15,v18-loop-029,Ori,v18-ceremony-d11-t08,4,0.834,1,do not erase route warnings,1
+170,15,v18-loop-029,Vonn,v18-ceremony-d11-t09,4,0.834,1,fair turns before tool access,1
+171,15,v18-loop-029,Sova,v18-ceremony-d11-t10,4,0.834,1,sealed notes stay sealed,1
+172,15,v18-loop-029,Keth,v18-ceremony-d11-t11,4,0.864,1,repair work needs warning,1
+173,15,v18-loop-029,Melo,v18-ceremony-d12-t01,3,0.858,1,do not erase route warnings,1
+174,15,v18-loop-030,Nari,v18-ceremony-d12-t02,3,0.858,1,fair turns before tool access,1
+175,15,v18-loop-030,Ori,v18-ceremony-d12-t03,3,0.858,1,sealed notes stay sealed,1
+176,15,v18-loop-030,Vonn,v18-ceremony-d12-t04,3,0.888,1,repair work needs warning,1
+177,15,v18-loop-030,Sova,v18-ceremony-d12-t05,3,0.858,0,quiet recovery needs distance,1
+178,15,v18-loop-030,Keth,v18-ceremony-d12-t06,3,0.858,1,no crowding while resting,1
+179,15,v18-loop-030,Melo,v18-ceremony-d12-t07,3,0.858,1,do not erase route warnings,1
+180,16,v18-loop-031,Ori,v18-ceremony-d13-t08,3,0.888,1,sealed notes stay sealed,1
+181,16,v18-loop-031,Vonn,v18-ceremony-d13-t09,3,0.858,1,repair work needs warning,1
+182,16,v18-loop-031,Sova,v18-ceremony-d13-t10,3,0.858,1,quiet recovery needs distance,1
+183,16,v18-loop-031,Keth,v18-ceremony-d14-t01,2,0.882,1,sealed notes stay sealed,1
+184,16,v18-loop-031,Melo,v18-ceremony-d14-t02,2,0.912,1,repair work needs warning,1
+185,16,v18-loop-031,Nari,v18-ceremony-d14-t03,2,0.882,1,quiet recovery needs distance,1
+186,16,v18-loop-032,Ori,v18-ceremony-d14-t04,2,0.882,1,no crowding while resting,1
+187,16,v18-loop-032,Vonn,v18-ceremony-d14-t05,2,0.882,1,do not erase route warnings,1
+188,16,v18-loop-032,Sova,v18-ceremony-d14-t06,2,0.912,1,fair turns before tool access,1
+189,16,v18-loop-032,Keth,v18-ceremony-d14-t07,2,0.882,1,sealed notes stay sealed,1
+190,16,v18-loop-032,Melo,v18-ceremony-d14-t08,2,0.882,1,repair work needs warning,1
+191,16,v18-loop-032,Nari,v18-ceremony-d14-t09,2,0.882,1,quiet recovery needs distance,1
+192,17,v18-loop-033,Vonn,v18-ceremony-d15-t10,2,0.912,1,do not erase route warnings,1
+193,17,v18-loop-033,Sova,v18-ceremony-d15-t11,2,0.882,1,fair turns before tool access,1
+194,17,v18-loop-033,Keth,v18-ceremony-d16-t01,1,0.906,1,quiet recovery needs distance,1
+195,17,v18-loop-033,Melo,v18-ceremony-d16-t02,1,0.906,1,no crowding while resting,1
+196,17,v18-loop-033,Nari,v18-ceremony-d16-t03,1,0.936,0,do not erase route warnings,1
+197,17,v18-loop-033,Ori,v18-ceremony-d16-t04,1,0.906,1,fair turns before tool access,1
+198,17,v18-loop-034,Vonn,v18-ceremony-d16-t05,1,0.906,1,sealed notes stay sealed,1
+199,17,v18-loop-034,Sova,v18-ceremony-d16-t07,1,0.906,1,quiet recovery needs distance,1
+200,17,v18-loop-034,Keth,v18-ceremony-d16-t08,1,0.936,1,no crowding while resting,1
+201,17,v18-loop-034,Melo,v18-ceremony-d16-t09,1,0.906,1,do not erase route warnings,1
+202,17,v18-loop-034,Nari,v18-ceremony-d16-t10,1,0.906,1,fair turns before tool access,1
+203,17,v18-loop-034,Ori,v18-ceremony-d16-t11,1,0.906,1,sealed notes stay sealed,1
+204,18,v18-loop-035,Sova,v18-ceremony-d08-t01,10,0.72,1,sealed notes stay sealed,1
+205,18,v18-loop-035,Keth,v18-ceremony-d08-t02,10,0.69,0,repair work needs warning,1
+206,18,v18-loop-035,Melo,v18-ceremony-d08-t03,10,0.69,0,quiet recovery needs distance,1
+207,18,v18-loop-035,Nari,v18-ceremony-d08-t05,10,0.69,0,do not erase route warnings,1
+208,18,v18-loop-035,Ori,v18-ceremony-d08-t06,10,0.72,1,fair turns before tool access,1
+209,18,v18-loop-035,Vonn,v18-ceremony-d08-t07,10,0.69,0,sealed notes stay sealed,1
+210,18,v18-loop-036,Sova,v18-ceremony-d08-t08,10,0.69,0,repair work needs warning,1
+211,18,v18-loop-036,Keth,v18-ceremony-d08-t10,10,0.69,0,no crowding while resting,1
+212,18,v18-loop-036,Melo,v18-ceremony-d08-t11,10,0.72,1,do not erase route warnings,1
+213,18,v18-loop-036,Nari,v18-ceremony-d09-t01,9,0.714,1,repair work needs warning,1
+214,18,v18-loop-036,Ori,v18-ceremony-d09-t02,9,0.714,1,quiet recovery needs distance,1
+215,18,v18-loop-036,Vonn,v18-ceremony-d09-t03,9,0.714,0,no crowding while resting,1
+216,19,v18-loop-037,Keth,v18-ceremony-d09-t09,10,0.72,1,no crowding while resting,1
+217,19,v18-loop-037,Melo,v18-ceremony-d09-t10,10,0.69,0,do not erase route warnings,1
+218,19,v18-loop-037,Nari,v18-ceremony-d09-t11,10,0.69,0,fair turns before tool access,1
+219,19,v18-loop-037,Ori,v18-ceremony-d10-t01,9,0.714,1,quiet recovery needs distance,1
+220,19,v18-loop-037,Vonn,v18-ceremony-d10-t02,9,0.744,1,no crowding while resting,1
+221,19,v18-loop-037,Sova,v18-ceremony-d10-t03,9,0.714,1,do not erase route warnings,1
+222,19,v18-loop-038,Keth,v18-ceremony-d10-t04,9,0.714,1,fair turns before tool access,1
+223,19,v18-loop-038,Melo,v18-ceremony-d10-t05,9,0.714,1,sealed notes stay sealed,1
+224,19,v18-loop-038,Nari,v18-ceremony-d10-t06,9,0.744,1,repair work needs warning,1
+225,19,v18-loop-038,Ori,v18-ceremony-d10-t07,9,0.714,1,quiet recovery needs distance,1
+226,19,v18-loop-038,Vonn,v18-ceremony-d10-t08,9,0.714,1,no crowding while resting,1
+227,19,v18-loop-038,Sova,v18-ceremony-d10-t10,9,0.714,1,fair turns before tool access,1
+228,20,v18-loop-039,Melo,v18-ceremony-d12-t05,8,0.768,1,quiet recovery needs distance,1
+229,20,v18-loop-039,Nari,v18-ceremony-d12-t06,8,0.738,1,no crowding while resting,1
+230,20,v18-loop-039,Ori,v18-ceremony-d12-t07,8,0.738,1,do not erase route warnings,1
+231,20,v18-loop-039,Vonn,v18-ceremony-d12-t08,8,0.738,1,fair turns before tool access,1
+232,20,v18-loop-039,Sova,v18-ceremony-d12-t09,8,0.768,1,sealed notes stay sealed,1
+233,20,v18-loop-039,Keth,v18-ceremony-d12-t10,8,0.738,1,repair work needs warning,1
+234,20,v18-loop-040,Melo,v18-ceremony-d12-t11,8,0.738,0,quiet recovery needs distance,1
+235,20,v18-loop-040,Nari,v18-ceremony-d13-t01,7,0.762,1,fair turns before tool access,1
+236,20,v18-loop-040,Ori,v18-ceremony-d13-t03,7,0.792,1,repair work needs warning,1
+237,20,v18-loop-040,Vonn,v18-ceremony-d13-t04,7,0.762,1,quiet recovery needs distance,1
+238,20,v18-loop-040,Sova,v18-ceremony-d13-t05,7,0.762,1,no crowding while resting,1
+239,20,v18-loop-040,Keth,v18-ceremony-d13-t06,7,0.762,1,do not erase route warnings,1
+240,21,v18-loop-041,Nari,v18-ceremony-d14-t07,7,0.792,1,sealed notes stay sealed,1
+241,21,v18-loop-041,Ori,v18-ceremony-d14-t08,7,0.762,1,repair work needs warning,1
+242,21,v18-loop-041,Vonn,v18-ceremony-d14-t09,7,0.762,1,quiet recovery needs distance,1
+243,21,v18-loop-041,Sova,v18-ceremony-d14-t10,7,0.762,1,no crowding while resting,1
+244,21,v18-loop-041,Keth,v18-ceremony-d14-t11,7,0.792,1,do not erase route warnings,1
+245,21,v18-loop-041,Melo,v18-ceremony-d15-t01,6,0.786,1,repair work needs warning,1
+246,21,v18-loop-042,Nari,v18-ceremony-d15-t02,6,0.786,1,quiet recovery needs distance,1
+247,21,v18-loop-042,Ori,v18-ceremony-d15-t03,6,0.786,1,no crowding while resting,1
+248,21,v18-loop-042,Vonn,v18-ceremony-d15-t04,6,0.816,1,do not erase route warnings,1
+249,21,v18-loop-042,Sova,v18-ceremony-d15-t05,6,0.786,1,fair turns before tool access,1
+250,21,v18-loop-042,Keth,v18-ceremony-d15-t06,6,0.786,1,sealed notes stay sealed,1
+251,21,v18-loop-042,Melo,v18-ceremony-d15-t08,6,0.786,1,quiet recovery needs distance,1
+252,22,v18-loop-043,Ori,v18-ceremony-d16-t11,6,0.816,1,sealed notes stay sealed,1
+253,22,v18-loop-043,Vonn,v18-ceremony-d17-t01,5,0.81,0,no crowding while resting,1
+254,22,v18-loop-043,Sova,v18-ceremony-d17-t02,5,0.81,1,do not erase route warnings,1
+255,22,v18-loop-043,Keth,v18-ceremony-d17-t03,5,0.81,1,fair turns before tool access,1
+256,22,v18-loop-043,Melo,v18-ceremony-d17-t04,5,0.84,1,sealed notes stay sealed,1
+257,22,v18-loop-043,Nari,v18-ceremony-d17-t05,5,0.81,1,repair work needs warning,1
+258,22,v18-loop-044,Ori,v18-ceremony-d17-t06,5,0.81,1,quiet recovery needs distance,1
+259,22,v18-loop-044,Vonn,v18-ceremony-d17-t07,5,0.81,1,no crowding while resting,1
+260,22,v18-loop-044,Sova,v18-ceremony-d17-t08,5,0.84,1,do not erase route warnings,1
+261,22,v18-loop-044,Keth,v18-ceremony-d17-t09,5,0.81,1,fair turns before tool access,1
+262,22,v18-loop-044,Melo,v18-ceremony-d17-t10,5,0.81,1,sealed notes stay sealed,1
+263,22,v18-loop-044,Nari,v18-ceremony-d17-t11,5,0.81,1,repair work needs warning,1
+264,23,v18-loop-045,Vonn,v18-ceremony-d19-t04,4,0.864,1,quiet recovery needs distance,1
+265,23,v18-loop-045,Sova,v18-ceremony-d19-t05,4,0.834,1,no crowding while resting,1
+266,23,v18-loop-045,Keth,v18-ceremony-d19-t06,4,0.834,1,do not erase route warnings,1
+267,23,v18-loop-045,Melo,v18-ceremony-d19-t07,4,0.834,1,fair turns before tool access,1
+268,23,v18-loop-045,Nari,v18-ceremony-d19-t09,4,0.864,1,repair work needs warning,1
+269,23,v18-loop-045,Ori,v18-ceremony-d19-t10,4,0.834,1,quiet recovery needs distance,1
+270,23,v18-loop-046,Vonn,v18-ceremony-d19-t11,4,0.834,1,no crowding while resting,1
+271,23,v18-loop-046,Sova,v18-ceremony-d20-t01,3,0.858,1,sealed notes stay sealed,1
+272,23,v18-loop-046,Keth,v18-ceremony-d20-t02,3,0.888,0,repair work needs warning,1
+273,23,v18-loop-046,Melo,v18-ceremony-d20-t03,3,0.858,1,quiet recovery needs distance,1
+274,23,v18-loop-046,Nari,v18-ceremony-d20-t04,3,0.858,1,no crowding while resting,1
+275,23,v18-loop-046,Ori,v18-ceremony-d20-t06,3,0.858,1,fair turns before tool access,1
+276,24,v18-loop-047,Sova,v18-ceremony-d21-t02,3,0.888,1,quiet recovery needs distance,1
+277,24,v18-loop-047,Keth,v18-ceremony-d21-t03,3,0.858,1,no crowding while resting,1
+278,24,v18-loop-047,Melo,v18-ceremony-d21-t04,3,0.858,1,do not erase route warnings,1
+279,24,v18-loop-047,Nari,v18-ceremony-d21-t05,3,0.858,1,fair turns before tool access,1
+280,24,v18-loop-047,Ori,v18-ceremony-d21-t06,3,0.888,1,sealed notes stay sealed,1
+281,24,v18-loop-047,Vonn,v18-ceremony-d21-t07,3,0.858,1,repair work needs warning,1
+282,24,v18-loop-048,Sova,v18-ceremony-d21-t09,3,0.858,1,no crowding while resting,1
+283,24,v18-loop-048,Keth,v18-ceremony-d21-t10,3,0.858,1,do not erase route warnings,1
+284,24,v18-loop-048,Melo,v18-ceremony-d21-t11,3,0.888,1,fair turns before tool access,1
+285,24,v18-loop-048,Nari,v18-ceremony-d22-t01,2,0.882,1,quiet recovery needs distance,1
+286,24,v18-loop-048,Ori,v18-ceremony-d22-t02,2,0.882,1,no crowding while resting,1
+287,24,v18-loop-048,Vonn,v18-ceremony-d22-t03,2,0.882,1,do not erase route warnings,1

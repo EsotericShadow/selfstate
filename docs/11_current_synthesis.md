@@ -832,3 +832,6 @@ Report 232 adds the first explicit functional ego bridge. It turns interaction i
 
 
 Report 233 extends the first-person ego layer across days 1 through 55. It adds ownership generalization without overclaiming, relationship-specific attachment, repeated ego wound/repair cycles, forgiveness without amnesia, self-story consolidation, and richer body-language states. Its first full run failed because body-language richness was too low, which correctly exposed a weak visible-expression layer; the passing version adds multiple readable ego-body conditions instead of relying on one repeated cue.
+
+
+Report 234 shifts from individual ego continuity into pre-avatar civilization scaffolding. It compresses years 0 through 4181 into inspectable epochs with persistent households, markets, rituals, proto-language tokens, technology lineages, cultural norms, sensory ecology, and avatar-entry gates. The first run failed because technology lineage was scored as if primitive early epochs should already be mature; the passing version scores continuity and primitive-to-mature improvement instead.

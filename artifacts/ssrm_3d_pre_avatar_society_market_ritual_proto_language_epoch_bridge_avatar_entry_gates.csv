@@ -1,0 +1,10 @@
+gate_id,year,language_ready,market_ready,ritual_ready,technology_ready,recovery_ready,minimum_year_ready,gate_status,reason
+gate_0,0,False,False,False,False,False,False,blocked_pre_avatar_training,"blocked: language, market, ritual, technology, recovery, minimum_year"
+gate_1,1,False,False,False,False,False,False,blocked_pre_avatar_training,"blocked: language, market, ritual, technology, recovery, minimum_year"
+gate_8,8,False,False,False,False,False,False,blocked_pre_avatar_training,"blocked: language, market, ritual, technology, recovery, minimum_year"
+gate_55,55,False,False,False,False,False,False,blocked_pre_avatar_training,"blocked: language, market, ritual, technology, recovery, minimum_year"
+gate_377,377,False,False,False,False,False,False,blocked_pre_avatar_training,"blocked: language, market, ritual, technology, recovery, minimum_year"
+gate_987,987,False,False,False,False,False,False,blocked_pre_avatar_training,"blocked: language, market, ritual, technology, recovery, minimum_year"
+gate_1597,1597,False,False,False,False,False,False,blocked_pre_avatar_training,"blocked: language, market, ritual, technology, recovery, minimum_year"
+gate_2584,2584,True,True,True,True,True,False,blocked_pre_avatar_training,blocked: minimum_year
+gate_4181,4181,True,True,True,True,True,True,eligible_but_avatar_not_entered,civilization thresholds and thousand-year delay satisfied; report keeps avatar absent for pre-entry trace

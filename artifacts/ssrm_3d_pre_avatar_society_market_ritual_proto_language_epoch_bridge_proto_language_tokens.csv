@@ -1,0 +1,46 @@
+token_id,year,household_id,token,root,modifier,meaning,grounded_referent,compositional_use,adoption_count,stability_score
+token_0_westkeepers,0,westkeepers,kase0,ka,se,self-boundary: I/mine/ask,safe route repair around west arch terraces,ka+se marks self-boundary in ritual and market speech,1,0.7
+token_0_mossgarden,0,mossgarden,muse0,mu,se,self-boundary: I/mine/ask,food and rest around warm moss rooms,mu+se marks self-boundary in ritual and market speech,1,0.7
+token_0_ledgerkin,0,ledgerkin,lose0,lo,se,self-boundary: I/mine/ask,fair exchange around north market steps,lo+se marks self-boundary in ritual and market speech,1,0.7
+token_0_redstair,0,redstair,sase0,sa,se,self-boundary: I/mine/ask,witness and boundary around quiet red stair,sa+se marks self-boundary in ritual and market speech,1,0.7
+token_0_wheelwright,0,wheelwright,nise0,ni,se,self-boundary: I/mine/ask,water and motion around wheelhouse loft,ni+se marks self-boundary in ritual and market speech,1,0.7
+token_1_westkeepers,1,westkeepers,kave1,ka,ve,care-return: help remembered,safe route repair around west arch terraces,ka+ve marks care-return in ritual and market speech,1,0.728
+token_1_mossgarden,1,mossgarden,muve1,mu,ve,care-return: help remembered,food and rest around warm moss rooms,mu+ve marks care-return in ritual and market speech,1,0.728
+token_1_ledgerkin,1,ledgerkin,love1,lo,ve,care-return: help remembered,fair exchange around north market steps,lo+ve marks care-return in ritual and market speech,1,0.728
+token_1_redstair,1,redstair,save1,sa,ve,care-return: help remembered,witness and boundary around quiet red stair,sa+ve marks care-return in ritual and market speech,1,0.728
+token_1_wheelwright,1,wheelwright,nive1,ni,ve,care-return: help remembered,water and motion around wheelhouse loft,ni+ve marks care-return in ritual and market speech,1,0.728
+token_8_westkeepers,8,westkeepers,katr2,ka,tr,safe-route: path allowed,safe route repair around west arch terraces,ka+tr marks safe-route in ritual and market speech,2,0.756
+token_8_mossgarden,8,mossgarden,mutr2,mu,tr,safe-route: path allowed,food and rest around warm moss rooms,mu+tr marks safe-route in ritual and market speech,2,0.756
+token_8_ledgerkin,8,ledgerkin,lotr2,lo,tr,safe-route: path allowed,fair exchange around north market steps,lo+tr marks safe-route in ritual and market speech,2,0.756
+token_8_redstair,8,redstair,satr2,sa,tr,safe-route: path allowed,witness and boundary around quiet red stair,sa+tr marks safe-route in ritual and market speech,2,0.756
+token_8_wheelwright,8,wheelwright,nitr2,ni,tr,safe-route: path allowed,water and motion around wheelhouse loft,ni+tr marks safe-route in ritual and market speech,2,0.756
+token_55_westkeepers,55,westkeepers,kasq3,ka,sq,trade-fair: balanced exchange,safe route repair around west arch terraces,ka+sq marks trade-fair in ritual and market speech,2,0.784
+token_55_mossgarden,55,mossgarden,musq3,mu,sq,trade-fair: balanced exchange,food and rest around warm moss rooms,mu+sq marks trade-fair in ritual and market speech,2,0.784
+token_55_ledgerkin,55,ledgerkin,losq3,lo,sq,trade-fair: balanced exchange,fair exchange around north market steps,lo+sq marks trade-fair in ritual and market speech,2,0.784
+token_55_redstair,55,redstair,sasq3,sa,sq,trade-fair: balanced exchange,witness and boundary around quiet red stair,sa+sq marks trade-fair in ritual and market speech,2,0.784
+token_55_wheelwright,55,wheelwright,nisq3,ni,sq,trade-fair: balanced exchange,water and motion around wheelhouse loft,ni+sq marks trade-fair in ritual and market speech,2,0.784
+token_377_westkeepers,377,westkeepers,kape4,ka,pe,repair-after: harm followed by repair,safe route repair around west arch terraces,ka+pe marks repair-after in ritual and market speech,3,0.812
+token_377_mossgarden,377,mossgarden,mupe4,mu,pe,repair-after: harm followed by repair,food and rest around warm moss rooms,mu+pe marks repair-after in ritual and market speech,3,0.812
+token_377_ledgerkin,377,ledgerkin,lope4,lo,pe,repair-after: harm followed by repair,fair exchange around north market steps,lo+pe marks repair-after in ritual and market speech,3,0.812
+token_377_redstair,377,redstair,sape4,sa,pe,repair-after: harm followed by repair,witness and boundary around quiet red stair,sa+pe marks repair-after in ritual and market speech,3,0.812
+token_377_wheelwright,377,wheelwright,nipe4,ni,pe,repair-after: harm followed by repair,water and motion around wheelhouse loft,ni+pe marks repair-after in ritual and market speech,3,0.812
+token_987_westkeepers,987,westkeepers,kahe5,ka,he,water-caution: wetness changes body cost,safe route repair around west arch terraces,ka+he marks water-caution in ritual and market speech,4,0.84
+token_987_mossgarden,987,mossgarden,muhe5,mu,he,water-caution: wetness changes body cost,food and rest around warm moss rooms,mu+he marks water-caution in ritual and market speech,4,0.84
+token_987_ledgerkin,987,ledgerkin,lohe5,lo,he,water-caution: wetness changes body cost,fair exchange around north market steps,lo+he marks water-caution in ritual and market speech,4,0.84
+token_987_redstair,987,redstair,sahe5,sa,he,water-caution: wetness changes body cost,witness and boundary around quiet red stair,sa+he marks water-caution in ritual and market speech,4,0.84
+token_987_wheelwright,987,wheelwright,nihe5,ni,he,water-caution: wetness changes body cost,water and motion around wheelhouse loft,ni+he marks water-caution in ritual and market speech,4,0.84
+token_1597_westkeepers,1597,westkeepers,kafl6,ka,fl,witness-true: seen and believed,safe route repair around west arch terraces,ka+fl marks witness-true in ritual and market speech,5,0.868
+token_1597_mossgarden,1597,mossgarden,mufl6,mu,fl,witness-true: seen and believed,food and rest around warm moss rooms,mu+fl marks witness-true in ritual and market speech,5,0.868
+token_1597_ledgerkin,1597,ledgerkin,lofl6,lo,fl,witness-true: seen and believed,fair exchange around north market steps,lo+fl marks witness-true in ritual and market speech,5,0.868
+token_1597_redstair,1597,redstair,safl6,sa,fl,witness-true: seen and believed,witness and boundary around quiet red stair,sa+fl marks witness-true in ritual and market speech,5,0.868
+token_1597_wheelwright,1597,wheelwright,nifl6,ni,fl,witness-true: seen and believed,water and motion around wheelhouse loft,ni+fl marks witness-true in ritual and market speech,5,0.868
+token_2584_westkeepers,2584,westkeepers,kafr7,ka,fr,home-warm: rest place,safe route repair around west arch terraces,ka+fr marks home-warm in ritual and market speech,5,0.896
+token_2584_mossgarden,2584,mossgarden,mufr7,mu,fr,home-warm: rest place,food and rest around warm moss rooms,mu+fr marks home-warm in ritual and market speech,5,0.896
+token_2584_ledgerkin,2584,ledgerkin,lofr7,lo,fr,home-warm: rest place,fair exchange around north market steps,lo+fr marks home-warm in ritual and market speech,5,0.896
+token_2584_redstair,2584,redstair,safr7,sa,fr,home-warm: rest place,witness and boundary around quiet red stair,sa+fr marks home-warm in ritual and market speech,5,0.896
+token_2584_wheelwright,2584,wheelwright,nifr7,ni,fr,home-warm: rest place,water and motion around wheelhouse loft,ni+fr marks home-warm in ritual and market speech,5,0.896
+token_4181_westkeepers,4181,westkeepers,kare8,ka,re,future-promise: owed action later,safe route repair around west arch terraces,ka+re marks future-promise in ritual and market speech,5,0.924
+token_4181_mossgarden,4181,mossgarden,mure8,mu,re,future-promise: owed action later,food and rest around warm moss rooms,mu+re marks future-promise in ritual and market speech,5,0.924
+token_4181_ledgerkin,4181,ledgerkin,lore8,lo,re,future-promise: owed action later,fair exchange around north market steps,lo+re marks future-promise in ritual and market speech,5,0.924
+token_4181_redstair,4181,redstair,sare8,sa,re,future-promise: owed action later,witness and boundary around quiet red stair,sa+re marks future-promise in ritual and market speech,5,0.924
+token_4181_wheelwright,4181,wheelwright,nire8,ni,re,future-promise: owed action later,water and motion around wheelhouse loft,ni+re marks future-promise in ritual and market speech,5,0.924

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Governance Memory Dialogue Bridge</title>
+  <style>
+    :root {
+      --ink: #1d1b16;
+      --muted: #676051;
+      --paper: #f7efd8;
+      --panel: rgba(255, 250, 235, 0.88);
+      --line: rgba(67, 50, 22, 0.22);
+      --accent: #a6531b;
+      --green: #557246;
+      --blue: #315f72;
+      --red: #8d3d2f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 16% 14%, rgba(166, 83, 27, 0.24), transparent 28rem),
+        radial-gradient(circle at 88% 8%, rgba(49, 95, 114, 0.22), transparent 24rem),
+        linear-gradient(135deg, #ead8ab 0%, #f8f0dc 48%, #d9c291 100%);
+      min-height: 100vh;
+    }
+    header {
+      padding: 42px clamp(18px, 5vw, 68px) 18px;
+    }
+    h1 {
+      font-size: clamp(2.1rem, 5vw, 5rem);
+      line-height: 0.94;
+      margin: 0;
+      max-width: 980px;
+      letter-spacing: -0.055em;
+    }
+    .subtitle {
+      max-width: 920px;
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-top: 18px;
+    }
+    main {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.2fr);
+      gap: 18px;
+      padding: 18px clamp(18px, 5vw, 68px) 52px;
+    }
+    section, .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 24px 80px rgba(59, 44, 17, 0.15);
+      backdrop-filter: blur(8px);
+    }
+    section { padding: 18px; }
+    h2 { margin: 0 0 12px; font-size: 1.15rem; letter-spacing: -0.02em; }
+    .metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .metric { padding: 12px; border-radius: 18px; background: rgba(255,255,255,0.42); border: 1px solid var(--line); }
+    .metric b { display: block; font-size: 1.35rem; color: var(--accent); }
+    .metric span { color: var(--muted); font-size: 0.82rem; }
+    select, textarea, button {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 11px 12px;
+      background: rgba(255,255,255,0.66);
+      color: var(--ink);
+      font: inherit;
+    }
+    textarea { min-height: 88px; resize: vertical; margin: 10px 0; }
+    button { background: var(--ink); color: var(--paper); cursor: pointer; }
+    .answer { margin-top: 12px; padding: 14px; border-radius: 18px; background: rgba(29, 27, 22, 0.06); white-space: pre-wrap; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+    .tag { display: inline-block; padding: 4px 8px; border-radius: 999px; background: rgba(166,83,27,0.14); margin: 2px; color: var(--accent); font-size: 0.78rem; }
+    .small { color: var(--muted); font-size: 0.88rem; }
+    .trace-list { max-height: 520px; overflow: auto; display: grid; gap: 10px; padding-right: 6px; }
+    .trace-item { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.38); }
+    .trace-item strong { color: var(--blue); }
+    @media (max-width: 850px) {
+      main { grid-template-columns: 1fr; }
+      .metrics, .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Governance memory you can question, but not open dialogue.</h1>
+    <p class="subtitle">Report 150 turns recorded infrastructure councils into deterministic avatar questions. It preserves evidence limits through rejection shadows, benefit-flow loops, faction disagreement, and rollback hooks.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Bridge verdict</h2>
+      <div class="metrics" id="metrics"></div>
+      <div class="grid">
+        <div class="card" style="padding:14px">
+          <h2>Dialogue objects</h2>
+          <div id="objects" class="small"></div>
+        </div>
+        <div class="card" style="padding:14px">
+          <h2>Limits</h2>
+          <div class="small">No LLM calls. No subjective-consciousness claim. Rejected proposal bodies were not stored in Report 149, so this viewer exposes rejection shadows instead of inventing missing evidence.</div>
+        </div>
+      </div>
+      <h2 style="margin-top:18px">Ask the local parser</h2>
+      <select id="sessionSelect"></select>
+      <textarea id="questionBox"></textarea>
+      <button id="askButton">Replay deterministic answer</button>
+      <div class="answer" id="answerBox"></div>
+    </section>
+    <section>
+      <h2>Integrated trace</h2>
+      <div class="trace-list" id="traceList"></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_governance_memory_dialogue_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_governance_memory_dialogue_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_governance_memory_dialogue_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_GOVERNANCE_MEMORY_DIALOGUE_RESULTS || { verdict: {}, eval_rows: [] };
+    const trace = window.SSRM_3D_GOVERNANCE_MEMORY_DIALOGUE_TRACE || [];
+    const state = window.SSRM_3D_GOVERNANCE_MEMORY_DIALOGUE_STATE || {};
+    const verdict = results.verdict || {};
+    const metricKeys = [
+      ['full_dialogue_readiness', 'dialogue readiness'],
+      ['full_question_parse_rate', 'parse rate'],
+      ['full_governance_memory_retrieval_rate', 'memory retrieval'],
+      ['full_evidence_trace_binding_rate', 'trace binding'],
+      ['full_disagreement_expression_rate', 'dissent expression'],
+      ['full_answer_specificity_score', 'specificity']
+    ];
+    document.getElementById('metrics').innerHTML = metricKeys.map(([key, label]) => `
+      <div class="metric"><b>${Number(verdict[key] || 0).toFixed(3)}</b><span>${label}</span></div>
+    `).join('');
+    const objects = state.dialogue_objects || {};
+    document.getElementById('objects').innerHTML = Object.entries(objects).map(([key, value]) => `<span class="tag">${key}</span><br>${value}`).join('<br><br>');
+    const select = document.getElementById('sessionSelect');
+    trace.slice(0, 96).forEach((item, idx) => {
+      const option = document.createElement('option');
+      option.value = String(idx);
+      option.textContent = `${item.session_id}: ${item.parsed_intent} / ${item.agent_name}`;
+      select.appendChild(option);
+    });
+    const questionBox = document.getElementById('questionBox');
+    const answerBox = document.getElementById('answerBox');
+    function renderSelected() {
+      const item = trace[Number(select.value || 0)] || trace[0] || {};
+      questionBox.value = item.question || '';
+      answerBox.textContent = item.answer || 'No trace loaded.';
+    }
+    select.addEventListener('change', renderSelected);
+    document.getElementById('askButton').addEventListener('click', () => {
+      const text = questionBox.value.toLowerCase();
+      const found = trace.find(item => (item.question || '').toLowerCase() === text) || trace.find(item => text.includes(item.parsed_intent));
+      answerBox.textContent = found ? found.answer : 'The browser parser only replays generated deterministic sessions. It will not synthesize a new open answer.';
+    });
+    document.getElementById('traceList').innerHTML = trace.slice(0, 64).map(item => `
+      <div class="trace-item">
+        <strong>${item.session_id}</strong> <span class="tag">${item.faction}</span> <span class="tag">${item.parsed_intent}</span>
+        <div class="small">${item.question}</div>
+        <p>${item.answer}</p>
+      </div>
+    `).join('');
+    renderSelected();
+  </script>
+</body>
+</html>

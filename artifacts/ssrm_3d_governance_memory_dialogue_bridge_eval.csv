@@ -1,0 +1,10 @@
+condition,sessions,question_parse_rate,governance_memory_retrieval_rate,evidence_trace_binding_rate,native_token_grounding_rate,role_perspective_consistency,disagreement_expression_rate,state_update_from_dialogue_rate,answer_specificity_score,faction_diversity_score,trace_completeness,dialogue_readiness
+integrated_governance_memory_dialogue,96,1.0,1.0,1.0,0.864583,1.0,1.0,1.0,0.870265,1.0,1.0,0.97089
+no_avatar_question_parser,96,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.181818,1.0,1.0,0.241818
+no_governance_memory,96,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.272727,1.0,1.0,0.352727
+no_evidence_trace_binding,96,1.0,1.0,0.0,0.864583,1.0,1.0,1.0,0.782197,1.0,1.0,0.830322
+no_native_token_grounding,96,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.796402,1.0,1.0,0.875568
+no_role_perspective,96,1.0,1.0,1.0,0.864583,0.0,1.0,1.0,0.691288,0.0,1.0,0.779413
+no_disagreement_model,96,1.0,1.0,1.0,0.864583,1.0,0.0,1.0,0.857008,1.0,1.0,0.889299
+no_state_update_from_dialogue,96,1.0,1.0,1.0,0.864583,1.0,1.0,0.0,0.782197,1.0,1.0,0.840322
+no_trace_replay,96,1.0,1.0,1.0,0.864583,1.0,1.0,1.0,0.870265,1.0,0.0,0.92089

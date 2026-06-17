@@ -1,0 +1,649 @@
+tick_id,day,tick,project_id,owner,stage,progress_before,progress_delta,progress_after,target_after_reshape,active_work,blocked,blocker_type,reshaped,visible_project_marker
+0,1,0,west_bridge_repair,Ari,measure,0.0,0.0,0.0,1.0,false,false,none,false,work active
+1,1,1,herb_roof_garden,Fay,clear,0.0,0.0,0.0,1.0,false,false,none,false,work active
+2,1,2,north_lantern_relay,Milo,clean,0.0,0.0,0.0,1.0,false,false,none,false,work active
+3,1,3,archive_weather_log,Nia,sort,0.0,0.0,0.0,1.0,false,false,none,false,work active
+4,1,4,west_bridge_repair,Ari,measure,0.0,0.0,0.0,1.0,false,false,none,false,work active
+5,1,5,herb_roof_garden,Fay,clear,0.0,0.02909,0.02909,1.0,true,false,none,false,reserved work slot
+6,1,6,north_lantern_relay,Milo,clean,0.0,0.0,0.0,1.0,false,false,none,false,work active
+7,1,7,archive_weather_log,Nia,sort,0.0,0.027794,0.027794,1.0,true,false,none,false,reserved work slot
+8,1,8,west_bridge_repair,Ari,measure,0.0,0.0,0.0,1.0,false,false,none,false,work active
+9,1,9,herb_roof_garden,Fay,clear,0.02909,0.005151,0.034241,1.0,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+10,1,10,north_lantern_relay,Milo,clean,0.0,0.028373,0.028373,1.0,true,false,none,false,reserved work slot
+11,1,11,archive_weather_log,Nia,sort,0.027794,0.0,0.027794,1.0,false,false,none,false,work active
+12,1,12,west_bridge_repair,Ari,measure,0.0,0.0,0.0,1.0,false,false,none,false,work active
+13,1,13,herb_roof_garden,Fay,clear,0.034241,0.0,0.034241,1.0,false,false,none,false,work active
+14,1,14,north_lantern_relay,Milo,clean,0.028373,0.0,0.028373,1.0,false,false,none,false,work active
+15,1,15,archive_weather_log,Nia,sort,0.027794,0.027432,0.055227,1.0,true,false,none,false,reserved work slot
+16,1,16,west_bridge_repair,Ari,measure,0.0,0.0,0.0,1.0,false,false,none,false,work active
+17,1,17,herb_roof_garden,Fay,clear,0.034241,0.0,0.034241,1.0,false,false,none,false,work active
+18,2,0,north_lantern_relay,Milo,clean,0.028373,0.0,0.028373,1.0,false,false,none,false,work active
+19,2,1,archive_weather_log,Nia,sort,0.055227,0.0,0.055227,1.0,false,false,none,false,work active
+20,2,2,west_bridge_repair,Ari,measure,0.0,0.030558,0.030558,1.0,true,false,none,false,reserved work slot
+21,2,3,herb_roof_garden,Fay,clear,0.034241,0.0,0.034241,1.0,false,false,none,false,work active
+22,2,4,north_lantern_relay,Milo,clean,0.028373,0.0,0.028373,1.0,false,false,none,false,work active
+23,2,5,archive_weather_log,Nia,sort,0.055227,0.0,0.055227,1.0,false,false,none,false,work active
+24,2,6,west_bridge_repair,Ari,measure,0.030558,0.0,0.030558,1.0,false,false,none,false,work active
+25,2,7,herb_roof_garden,Fay,clear,0.034241,0.028904,0.063145,1.0,true,false,none,false,reserved work slot
+26,2,8,north_lantern_relay,Milo,clean,0.028373,0.0,0.028373,1.0,false,false,none,false,work active
+27,2,9,archive_weather_log,Nia,sort,0.055227,0.0,0.055227,1.0,false,false,none,false,work active
+28,2,10,west_bridge_repair,Ari,measure,0.030558,0.0,0.030558,1.0,false,false,none,false,work active
+29,2,11,herb_roof_garden,Fay,clear,0.063145,0.0,0.063145,1.0,false,false,none,false,work active
+30,2,12,north_lantern_relay,Milo,clean,0.028373,0.0,0.028373,1.0,false,false,none,false,work active
+31,2,13,archive_weather_log,Nia,sort,0.055227,0.005013,0.060239,1.0,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+32,2,14,west_bridge_repair,Ari,measure,0.030558,0.0,0.030558,1.0,false,false,none,false,work active
+33,2,15,herb_roof_garden,Fay,clear,0.063145,0.0,0.063145,1.0,false,false,none,false,work active
+34,2,16,north_lantern_relay,Milo,clean,0.028373,0.0,0.028373,1.0,false,false,none,false,work active
+35,2,17,archive_weather_log,Nia,sort,0.060239,0.0,0.060239,1.0,false,false,none,false,reserved work slot
+36,3,0,herb_roof_garden,Fay,clear,0.063145,0.0,0.063145,1.0,false,false,none,false,work active
+37,3,1,north_lantern_relay,Milo,clean,0.028373,0.0,0.028373,1.0,false,false,none,false,work active
+38,3,2,archive_weather_log,Nia,sort,0.060239,0.0,0.060239,1.0,false,false,none,false,work active
+39,3,3,west_bridge_repair,Ari,measure,0.030558,0.030534,0.061091,1.0,true,false,none,false,reserved work slot
+40,3,4,herb_roof_garden,Fay,clear,0.063145,0.0,0.063145,1.0,false,false,none,false,work active
+41,3,5,north_lantern_relay,Milo,clean,0.028373,0.0,0.028373,1.0,false,false,none,false,work active
+42,3,6,archive_weather_log,Nia,sort,0.060239,0.0,0.060239,1.0,false,false,none,false,work active
+43,3,7,west_bridge_repair,Ari,measure,0.061091,0.0,0.061091,1.0,false,false,none,false,work active
+44,3,8,herb_roof_garden,Fay,clear,0.063145,0.0,0.063145,1.0,false,false,none,false,work active
+45,3,9,north_lantern_relay,Milo,clean,0.028373,0.030416,0.058789,1.0,true,false,none,false,reserved work slot
+46,3,10,archive_weather_log,Nia,sort,0.060239,0.0,0.060239,1.0,false,false,none,false,work active
+47,3,11,west_bridge_repair,Ari,measure,0.061091,0.0,0.061091,1.0,false,false,none,false,work active
+48,3,12,herb_roof_garden,Fay,clear,0.063145,0.0,0.063145,1.0,false,false,none,false,work active
+49,3,13,north_lantern_relay,Milo,clean,0.058789,0.0,0.058789,1.0,false,false,none,false,work active
+50,3,14,archive_weather_log,Nia,sort,0.060239,0.028246,0.088486,1.0,true,false,none,false,reserved work slot
+51,3,15,west_bridge_repair,Ari,measure,0.061091,0.0,0.061091,1.0,false,false,none,false,work active
+52,3,16,herb_roof_garden,Fay,clear,0.063145,0.0,0.063145,1.0,false,false,none,false,work active
+53,3,17,north_lantern_relay,Milo,clean,0.058789,0.0,0.058789,1.0,false,false,none,false,reserved work slot
+54,4,0,archive_weather_log,Nia,sort,0.088486,0.0,0.088486,1.0,false,false,none,false,work active
+55,4,1,west_bridge_repair,Ari,measure,0.061091,0.0,0.061091,1.0,false,false,none,false,reserved work slot
+56,4,2,herb_roof_garden,Fay,clear,0.063145,0.0,0.063145,1.0,false,false,none,false,work active
+57,4,3,north_lantern_relay,Milo,clean,0.058789,0.0,0.058789,1.0,false,false,none,false,work active
+58,4,4,archive_weather_log,Nia,sort,0.088486,0.028362,0.116848,1.0,true,false,none,false,reserved work slot
+59,4,5,west_bridge_repair,Ari,measure,0.061091,0.0,0.061091,1.0,false,false,none,false,work active
+60,4,6,herb_roof_garden,Fay,clear,0.063145,0.03047,0.093615,1.0,true,false,none,false,reserved work slot
+61,4,7,north_lantern_relay,Milo,clean,0.058789,0.0,0.058789,1.0,false,false,none,false,work active
+62,4,8,archive_weather_log,Nia,sort,0.116848,0.0,0.116848,1.0,false,false,none,false,work active
+63,4,9,west_bridge_repair,Ari,measure,0.061091,0.0,0.061091,1.0,false,false,none,false,work active
+64,4,10,herb_roof_garden,Fay,clear,0.093615,0.0,0.093615,1.0,false,false,none,false,work active
+65,4,11,north_lantern_relay,Milo,clean,0.058789,0.030964,0.089753,1.0,true,false,none,false,reserved work slot
+66,4,12,archive_weather_log,Nia,sort,0.116848,0.0,0.116848,1.0,false,false,none,false,work active
+67,4,13,west_bridge_repair,Ari,measure,0.061091,0.0,0.061091,1.0,false,false,none,false,work active
+68,4,14,herb_roof_garden,Fay,clear,0.093615,0.0,0.093615,1.0,false,false,none,false,work active
+69,4,15,north_lantern_relay,Milo,clean,0.089753,0.0,0.089753,1.0,false,false,none,false,work active
+70,4,16,archive_weather_log,Nia,sort,0.116848,0.0,0.116848,1.0,false,false,none,false,work active
+71,4,17,west_bridge_repair,Ari,measure,0.061091,0.0,0.061091,1.0,false,false,none,false,work active
+72,5,0,herb_roof_garden,Fay,clear,0.093615,0.0,0.093615,1.0,false,false,none,false,work active
+73,5,1,north_lantern_relay,Milo,clean,0.089753,0.0,0.089753,1.0,false,false,none,false,work active
+74,5,2,archive_weather_log,Nia,sort,0.116848,0.0,0.116848,1.0,false,false,none,false,work active
+75,5,3,west_bridge_repair,Ari,measure,0.061091,0.030965,0.092056,1.0,true,false,none,false,reserved work slot
+76,5,4,herb_roof_garden,Fay,clear,0.093615,0.0,0.093615,1.0,false,false,none,false,work active
+77,5,5,north_lantern_relay,Milo,clean,0.089753,0.0,0.089753,1.0,false,false,none,false,work active
+78,5,6,archive_weather_log,Nia,sort,0.116848,0.0,0.116848,1.0,false,false,none,false,work active
+79,5,7,west_bridge_repair,Ari,measure,0.092056,0.0,0.092056,1.0,false,false,none,false,work active
+80,5,8,herb_roof_garden,Fay,clear,0.093615,0.0,0.093615,1.0,false,false,none,false,work active
+81,5,9,north_lantern_relay,Milo,clean,0.089753,0.030965,0.120718,1.0,true,false,none,false,reserved work slot
+82,5,10,archive_weather_log,Nia,sort,0.116848,0.0,0.116848,1.0,false,false,none,false,work active
+83,5,11,west_bridge_repair,Ari,measure,0.092056,0.0,0.092056,1.0,false,false,none,false,work active
+84,5,12,herb_roof_garden,Fay,clear,0.093615,0.0,0.093615,1.0,false,false,none,false,work active
+85,5,13,north_lantern_relay,Milo,clean,0.120718,0.0,0.120718,1.0,false,false,none,false,work active
+86,5,14,archive_weather_log,Nia,sort,0.116848,0.029189,0.146036,1.0,true,false,none,false,reserved work slot
+87,5,15,west_bridge_repair,Ari,measure,0.092056,0.0,0.092056,1.0,false,false,none,false,work active
+88,5,16,herb_roof_garden,Fay,clear,0.093615,0.0,0.093615,1.0,false,false,none,false,reserved work slot
+89,5,17,north_lantern_relay,Milo,clean,0.120718,0.0,0.120718,1.0,false,false,none,false,work active
+90,6,0,west_bridge_repair,Ari,measure,0.092056,0.0,0.092056,1.0,false,false,none,false,work active
+91,6,1,herb_roof_garden,Fay,clear,0.093615,0.0,0.093615,1.0,false,false,none,false,work active
+92,6,2,north_lantern_relay,Milo,clean,0.120718,0.0,0.120718,1.0,false,false,none,false,work active
+93,6,3,archive_weather_log,Nia,sort,0.146036,0.0,0.146036,1.0,false,false,none,false,work active
+94,6,4,west_bridge_repair,Ari,measure,0.092056,0.0,0.092056,1.0,false,false,none,false,work active
+95,6,5,herb_roof_garden,Fay,clear,0.093615,0.005574,0.099188,1.0,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+96,6,6,north_lantern_relay,Milo,clean,0.120718,0.0,0.120718,1.0,false,false,none,false,work active
+97,6,7,archive_weather_log,Nia,sort,0.146036,0.0,0.146036,1.0,false,false,none,false,work active
+98,6,8,west_bridge_repair,Ari,measure,0.092056,0.0,0.092056,1.0,false,false,none,false,work active
+99,6,9,herb_roof_garden,Fay,clear,0.099188,0.0,0.099188,1.0,false,false,none,false,work active
+100,6,10,north_lantern_relay,Milo,clean,0.120718,0.030965,0.151682,1.0,true,false,none,false,reserved work slot
+101,6,11,archive_weather_log,Nia,sort,0.146036,0.0,0.146036,1.0,false,false,none,false,work active
+102,6,12,west_bridge_repair,Ari,measure,0.092056,0.0,0.092056,1.0,false,false,none,false,work active
+103,6,13,herb_roof_garden,Fay,clear,0.099188,0.0,0.099188,1.0,false,false,none,false,work active
+104,6,14,north_lantern_relay,Milo,clean,0.151682,0.030491,0.182173,1.0,true,false,none,false,reserved work slot
+105,6,15,archive_weather_log,Nia,sort,0.146036,0.029165,0.175202,1.0,true,false,none,false,reserved work slot
+106,6,16,west_bridge_repair,Ari,measure,0.092056,0.0,0.092056,1.0,false,false,none,false,reserved work slot
+107,6,17,herb_roof_garden,Fay,clear,0.099188,0.0,0.099188,1.0,false,false,none,false,work active
+108,7,0,north_lantern_relay,Milo,clean,0.182173,0.0,0.182173,1.0,false,false,none,false,work active
+109,7,1,archive_weather_log,Nia,sort,0.175202,0.0,0.175202,1.0,false,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+110,7,2,west_bridge_repair,Ari,measure,0.092056,0.005574,0.09763,1.0,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+111,7,3,herb_roof_garden,Fay,clear,0.099188,0.030965,0.130153,1.0,true,false,none,false,reserved work slot
+112,7,4,north_lantern_relay,Milo,clean,0.182173,0.0,0.182173,1.0,false,false,none,false,work active
+113,7,5,archive_weather_log,Nia,sort,0.175202,0.0,0.175202,1.0,false,false,none,false,work active
+114,7,6,west_bridge_repair,Ari,measure,0.09763,0.0,0.09763,1.0,false,false,none,false,work active
+115,7,7,herb_roof_garden,Fay,clear,0.130153,0.030491,0.160644,1.0,true,false,none,false,reserved work slot
+116,7,8,north_lantern_relay,Milo,clean,0.182173,0.0,0.182173,1.0,false,false,none,false,work active
+117,7,9,archive_weather_log,Nia,sort,0.175202,0.0,0.175202,1.0,false,false,none,false,work active
+118,7,10,west_bridge_repair,Ari,measure,0.09763,0.0,0.09763,1.0,false,false,none,false,work active
+119,7,11,herb_roof_garden,Fay,clear,0.160644,0.0,0.160644,1.0,false,false,none,false,work active
+120,7,12,north_lantern_relay,Milo,clean,0.182173,0.0,0.182173,1.0,false,false,none,false,work active
+121,7,13,archive_weather_log,Nia,sort,0.175202,0.029542,0.204744,1.0,true,false,none,false,reserved work slot
+122,7,14,west_bridge_repair,Ari,measure,0.09763,0.0,0.09763,1.0,false,false,none,false,work active
+123,7,15,herb_roof_garden,Fay,clear,0.160644,0.0,0.160644,1.0,false,false,none,false,work active
+124,7,16,north_lantern_relay,Milo,clean,0.182173,0.0,0.182173,1.0,false,false,none,false,work active
+125,7,17,archive_weather_log,Nia,sort,0.204744,0.0,0.204744,1.0,false,false,none,false,work active
+126,8,0,west_bridge_repair,Ari,measure,0.09763,0.0,0.09763,1.0,false,false,none,false,work active
+127,8,1,herb_roof_garden,Fay,clear,0.160644,0.0,0.160644,1.0,false,false,none,false,work active
+128,8,2,north_lantern_relay,Milo,clean,0.182173,0.0,0.182173,1.0,false,false,none,false,work active
+129,8,3,archive_weather_log,Nia,sort,0.204744,0.0,0.204744,1.0,false,false,none,false,work active
+130,8,4,west_bridge_repair,Ari,measure,0.09763,0.0,0.09763,1.0,false,false,none,false,work active
+131,8,5,herb_roof_garden,Fay,clear,0.160644,0.030868,0.191512,1.0,true,false,none,false,reserved work slot
+132,8,6,north_lantern_relay,Milo,clean,0.182173,0.0,0.182173,1.0,false,false,none,false,work active
+133,8,7,archive_weather_log,Nia,sort,0.204744,0.0,0.204744,1.0,false,false,none,false,work active
+134,8,8,west_bridge_repair,Ari,measure,0.09763,0.0,0.09763,1.0,false,false,none,false,work active
+135,8,9,herb_roof_garden,Fay,clear,0.191512,0.0,0.191512,1.0,false,false,none,false,work active
+136,8,10,north_lantern_relay,Milo,clean,0.182173,0.030965,0.213138,1.0,true,false,none,false,reserved work slot
+137,8,11,archive_weather_log,Nia,sort,0.204744,0.029919,0.234663,1.0,true,false,none,false,reserved work slot
+138,8,12,west_bridge_repair,Ari,measure,0.09763,0.0,0.09763,1.0,false,false,none,false,work active
+139,8,13,herb_roof_garden,Fay,clear,0.191512,0.030545,0.222057,1.0,true,false,none,false,reserved work slot
+140,8,14,north_lantern_relay,Milo,clean,0.213138,0.0,0.213138,1.0,false,false,none,false,work active
+141,8,15,archive_weather_log,Nia,sort,0.234663,0.0053,0.239963,1.0,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+142,8,16,west_bridge_repair,Ari,measure,0.09763,0.0,0.09763,1.0,false,false,none,false,work active
+143,8,17,herb_roof_garden,Fay,clear,0.222057,0.0,0.222057,1.0,false,false,none,false,work active
+144,9,0,archive_weather_log,Nia,sort,0.239963,0.0,0.239963,1.0,false,false,none,false,work active
+145,9,1,west_bridge_repair,Ari,measure,0.09763,0.0,0.09763,1.0,false,false,none,false,reserved work slot
+146,9,2,herb_roof_garden,Fay,clear,0.222057,0.0,0.222057,1.0,false,false,none,false,work active
+147,9,3,north_lantern_relay,Milo,clean,0.213138,0.0,0.213138,1.0,false,false,none,false,work active
+148,9,4,archive_weather_log,Nia,sort,0.239963,0.0,0.239963,1.0,false,false,none,false,work active
+149,9,5,west_bridge_repair,Ari,measure,0.09763,0.0,0.09763,1.0,false,false,none,false,work active
+150,9,6,herb_roof_garden,Fay,clear,0.222057,0.030772,0.252829,1.0,true,false,none,false,reserved work slot
+151,9,7,north_lantern_relay,Milo,clean,0.213138,0.0,0.213138,1.0,false,false,none,false,work active
+152,9,8,archive_weather_log,Nia,sort,0.239963,0.0,0.239963,1.0,false,false,none,false,work active
+153,9,9,west_bridge_repair,Ari,measure,0.09763,0.0,0.09763,1.0,false,false,none,false,work active
+154,9,10,herb_roof_garden,Fay,plant,0.252829,0.0,0.252829,1.0,false,false,none,false,work active
+155,9,11,north_lantern_relay,Milo,clean,0.213138,0.030941,0.244079,1.0,true,false,none,false,reserved work slot
+156,9,12,archive_weather_log,Nia,sort,0.239963,0.0,0.239963,1.0,false,false,none,false,work active
+157,9,13,west_bridge_repair,Ari,measure,0.09763,0.030965,0.128594,1.0,true,false,none,false,reserved work slot
+158,9,14,herb_roof_garden,Fay,plant,0.252829,0.0,0.252829,1.0,false,false,none,false,work active
+159,9,15,north_lantern_relay,Milo,clean,0.244079,0.0,0.244079,1.0,false,false,none,false,work active
+160,9,16,archive_weather_log,Nia,sort,0.239963,0.0,0.239963,1.0,false,false,none,false,work active
+161,9,17,west_bridge_repair,Ari,measure,0.128594,0.0,0.128594,1.0,false,false,none,false,work active
+162,10,0,herb_roof_garden,Fay,plant,0.252829,0.0,0.252829,1.0,false,false,none,false,reserved work slot
+163,10,1,north_lantern_relay,Milo,clean,0.244079,0.0,0.244079,1.0,false,false,none,false,work active
+164,10,2,archive_weather_log,Nia,sort,0.239963,0.0,0.239963,1.0,false,false,none,false,work active
+165,10,3,west_bridge_repair,Ari,measure,0.128594,0.036964,0.165559,0.86,true,false,none,true,reshaped plan posted
+166,10,4,herb_roof_garden,Fay,plant,0.252829,0.0,0.252829,1.0,false,false,none,false,work active
+167,10,5,north_lantern_relay,Milo,clean,0.244079,0.0,0.244079,1.0,false,false,none,false,work active
+168,10,6,archive_weather_log,Nia,sort,0.239963,0.0,0.239963,1.0,false,false,none,false,work active
+169,10,7,west_bridge_repair,Ari,measure,0.165559,0.0,0.165559,0.86,false,false,none,false,work active
+170,10,8,herb_roof_garden,Fay,plant,0.252829,0.0,0.252829,1.0,false,false,none,false,work active
+171,10,9,north_lantern_relay,Milo,clean,0.244079,0.030964,0.275043,1.0,true,false,none,false,reserved work slot
+172,10,10,archive_weather_log,Nia,sort,0.239963,0.0,0.239963,1.0,false,false,none,false,work active
+173,10,11,west_bridge_repair,Ari,measure,0.165559,0.0,0.165559,0.86,false,false,none,false,work active
+174,10,12,herb_roof_garden,Fay,plant,0.252829,0.0,0.252829,1.0,false,false,none,false,work active
+175,10,13,north_lantern_relay,Milo,fit,0.275043,0.0,0.275043,1.0,false,false,none,false,work active
+176,10,14,archive_weather_log,Nia,sort,0.239963,0.005566,0.245529,1.0,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+177,10,15,west_bridge_repair,Ari,measure,0.165559,0.0,0.165559,0.86,false,false,none,false,work active
+178,10,16,herb_roof_garden,Fay,plant,0.252829,0.0,0.252829,1.0,false,false,none,false,work active
+179,10,17,north_lantern_relay,Milo,fit,0.275043,0.0,0.275043,1.0,false,false,none,false,work active
+180,11,0,archive_weather_log,Nia,sort,0.245529,0.0,0.245529,1.0,false,false,none,false,work active
+181,11,1,west_bridge_repair,Ari,measure,0.165559,0.0,0.165559,0.86,false,false,none,false,reserved work slot
+182,11,2,herb_roof_garden,Fay,plant,0.252829,0.0,0.252829,1.0,false,false,none,false,work active
+183,11,3,north_lantern_relay,Milo,fit,0.275043,0.0,0.275043,1.0,false,false,none,false,work active
+184,11,4,archive_weather_log,Nia,sort,0.245529,0.0,0.245529,1.0,false,false,none,false,work active
+185,11,5,west_bridge_repair,Ari,measure,0.165559,0.0,0.165559,0.86,false,false,none,false,work active
+186,11,6,herb_roof_garden,Fay,plant,0.252829,0.038337,0.291166,1.0,true,false,none,false,reserved work slot
+187,11,7,north_lantern_relay,Milo,fit,0.275043,0.0,0.275043,1.0,false,false,none,false,work active
+188,11,8,archive_weather_log,Nia,sort,0.245529,0.005574,0.251103,1.0,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+189,11,9,west_bridge_repair,Ari,measure,0.165559,0.0,0.165559,0.86,false,false,none,false,work active
+190,11,10,herb_roof_garden,Fay,plant,0.291166,0.037685,0.328851,1.0,true,false,none,false,reserved work slot
+191,11,11,north_lantern_relay,Milo,fit,0.275043,0.038337,0.31338,1.0,true,false,none,false,reserved work slot
+192,11,12,archive_weather_log,Nia,copy,0.251103,0.0,0.251103,1.0,false,false,none,false,work active
+193,11,13,west_bridge_repair,Ari,measure,0.165559,0.0,0.165559,0.86,false,false,none,false,work active
+194,11,14,herb_roof_garden,Fay,plant,0.328851,0.0,0.328851,1.0,false,false,none,false,work active
+195,11,15,north_lantern_relay,Milo,fit,0.31338,0.0,0.31338,1.0,false,false,none,false,work active
+196,11,16,archive_weather_log,Nia,copy,0.251103,0.0,0.251103,1.0,false,false,none,false,work active
+197,11,17,west_bridge_repair,Ari,measure,0.165559,0.0,0.165559,0.86,false,false,none,false,work active
+198,12,0,north_lantern_relay,Milo,fit,0.31338,0.0,0.31338,1.0,false,false,none,false,work active
+199,12,1,archive_weather_log,Nia,copy,0.251103,0.0,0.251103,1.0,false,false,none,false,work active
+200,12,2,west_bridge_repair,Ari,measure,0.165559,0.030965,0.196523,0.86,true,false,none,false,reserved work slot
+201,12,3,herb_roof_garden,Fay,plant,0.328851,0.0,0.328851,1.0,false,false,none,false,work active
+202,12,4,north_lantern_relay,Milo,fit,0.31338,0.0,0.31338,1.0,false,false,none,false,work active
+203,12,5,archive_weather_log,Nia,copy,0.251103,0.0,0.251103,1.0,false,false,none,false,work active
+204,12,6,west_bridge_repair,Ari,measure,0.196523,0.0,0.196523,0.86,false,false,none,false,work active
+205,12,7,herb_roof_garden,Fay,plant,0.328851,0.037357,0.366208,1.0,true,false,none,false,reserved work slot
+206,12,8,north_lantern_relay,Milo,fit,0.31338,0.006901,0.320281,1.0,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+207,12,9,archive_weather_log,Nia,copy,0.251103,0.0,0.251103,1.0,false,false,none,false,work active
+208,12,10,west_bridge_repair,Ari,measure,0.196523,0.030603,0.227126,0.86,true,false,none,false,reserved work slot
+209,12,11,herb_roof_garden,Fay,plant,0.366208,0.0,0.366208,1.0,false,false,none,false,work active
+210,12,12,north_lantern_relay,Milo,fit,0.320281,0.0,0.320281,1.0,false,false,none,false,work active
+211,12,13,archive_weather_log,Nia,copy,0.251103,0.006901,0.258003,1.0,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+212,12,14,west_bridge_repair,Ari,measure,0.227126,0.0,0.227126,0.86,false,false,none,false,work active
+213,12,15,herb_roof_garden,Fay,plant,0.366208,0.0,0.366208,1.0,false,false,none,false,work active
+214,12,16,north_lantern_relay,Milo,fit,0.320281,0.0,0.320281,1.0,false,false,none,false,work active
+215,12,17,archive_weather_log,Nia,copy,0.258003,0.0,0.258003,1.0,false,false,none,false,work active
+216,13,0,west_bridge_repair,Ari,measure,0.227126,0.0,0.227126,0.86,false,false,none,false,work active
+217,13,1,herb_roof_garden,Fay,plant,0.366208,0.0,0.366208,1.0,false,false,none,false,work active
+218,13,2,north_lantern_relay,Milo,fit,0.320281,0.0,0.320281,1.0,false,false,none,false,work active
+219,13,3,archive_weather_log,Nia,copy,0.258003,0.0,0.258003,1.0,false,false,none,false,work active
+220,13,4,west_bridge_repair,Ari,measure,0.227126,0.0,0.227126,0.86,false,false,none,false,work active
+221,13,5,herb_roof_garden,Fay,plant,0.366208,0.006805,0.373013,1.0,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+222,13,6,north_lantern_relay,Milo,fit,0.320281,0.0,0.320281,1.0,false,false,none,false,work active
+223,13,7,archive_weather_log,Nia,copy,0.258003,0.0,0.258003,1.0,false,false,none,false,work active
+224,13,8,west_bridge_repair,Ari,measure,0.227126,0.0,0.227126,0.86,false,false,none,false,work active
+225,13,9,herb_roof_garden,Fay,plant,0.373013,0.0,0.373013,1.0,false,false,none,false,work active
+226,13,10,north_lantern_relay,Milo,fit,0.320281,0.038337,0.358618,1.0,true,false,none,false,reserved work slot
+227,13,11,archive_weather_log,Nia,copy,0.258003,0.0,0.258003,1.0,false,false,none,false,work active
+228,13,12,west_bridge_repair,Ari,measure,0.227126,0.0,0.227126,0.86,false,false,none,false,work active
+229,13,13,herb_roof_garden,Fay,plant,0.373013,0.0,0.373013,1.0,false,false,none,false,work active
+230,13,14,north_lantern_relay,Milo,fit,0.358618,0.0,0.358618,1.0,false,false,none,false,work active
+231,13,15,archive_weather_log,Nia,copy,0.258003,0.038337,0.29634,1.0,true,false,none,false,reserved work slot
+232,13,16,west_bridge_repair,Ari,measure,0.227126,0.0,0.227126,0.86,false,false,none,false,work active
+233,13,17,herb_roof_garden,Fay,plant,0.373013,0.0,0.373013,1.0,false,false,none,false,work active
+234,14,0,north_lantern_relay,Milo,fit,0.358618,0.0,0.358618,1.0,false,false,none,false,work active
+235,14,1,archive_weather_log,Nia,copy,0.29634,0.0,0.29634,1.0,false,false,none,false,work active
+236,14,2,west_bridge_repair,Ari,measure,0.227126,0.005574,0.232699,0.86,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+237,14,3,herb_roof_garden,Fay,plant,0.373013,0.0,0.373013,1.0,false,false,none,false,work active
+238,14,4,north_lantern_relay,Milo,fit,0.358618,0.0,0.358618,1.0,false,false,none,false,work active
+239,14,5,archive_weather_log,Nia,copy,0.29634,0.038337,0.334677,1.0,true,false,none,false,reserved work slot
+240,14,6,west_bridge_repair,Ari,measure,0.232699,0.0,0.232699,0.86,false,false,none,false,work active
+241,14,7,herb_roof_garden,Fay,plant,0.373013,0.008412,0.381425,0.845,true,true,material_shortage,true,blocked: material_shortage
+242,14,8,north_lantern_relay,Milo,fit,0.358618,0.0,0.358618,1.0,false,false,none,false,work active
+243,14,9,archive_weather_log,Nia,copy,0.334677,0.0,0.334677,1.0,false,false,none,false,work active
+244,14,10,west_bridge_repair,Ari,measure,0.232699,0.0,0.232699,0.86,false,false,none,false,work active
+245,14,11,herb_roof_garden,Fay,plant,0.381425,0.0,0.381425,0.845,false,false,none,false,work active
+246,14,12,north_lantern_relay,Milo,fit,0.358618,0.0,0.358618,1.0,false,false,none,false,work active
+247,14,13,archive_weather_log,Nia,copy,0.334677,0.037871,0.372548,1.0,true,false,none,false,reserved work slot
+248,14,14,west_bridge_repair,Ari,measure,0.232699,0.0,0.232699,0.86,false,false,none,false,work active
+249,14,15,herb_roof_garden,Fay,plant,0.381425,0.0,0.381425,0.845,false,false,none,false,work active
+250,14,16,north_lantern_relay,Milo,fit,0.358618,0.0,0.358618,1.0,false,false,none,false,work active
+251,14,17,archive_weather_log,Nia,copy,0.372548,0.0,0.372548,1.0,false,false,none,false,work active
+252,15,0,herb_roof_garden,Fay,plant,0.381425,0.0,0.381425,0.845,false,false,none,false,work active
+253,15,1,north_lantern_relay,Milo,fit,0.358618,0.0,0.358618,1.0,false,false,none,false,work active
+254,15,2,archive_weather_log,Nia,copy,0.372548,0.0,0.372548,1.0,false,false,none,false,work active
+255,15,3,west_bridge_repair,Ari,measure,0.232699,0.030812,0.263512,0.86,true,false,none,false,reserved work slot
+256,15,4,herb_roof_garden,Fay,plant,0.381425,0.0,0.381425,0.845,false,false,none,false,work active
+257,15,5,north_lantern_relay,Milo,fit,0.358618,0.038337,0.396955,1.0,true,false,none,false,reserved work slot
+258,15,6,archive_weather_log,Nia,copy,0.372548,0.0,0.372548,1.0,false,false,none,false,work active
+259,15,7,west_bridge_repair,Ari,brace,0.263512,0.037563,0.301074,0.86,true,false,none,false,reserved work slot
+260,15,8,herb_roof_garden,Fay,plant,0.381425,0.0,0.381425,0.845,false,false,none,false,work active
+261,15,9,north_lantern_relay,Milo,fit,0.396955,0.037638,0.434593,1.0,true,false,none,false,reserved work slot
+262,15,10,archive_weather_log,Nia,copy,0.372548,0.0,0.372548,1.0,false,false,none,false,work active
+263,15,11,west_bridge_repair,Ari,brace,0.301074,0.0,0.301074,0.86,false,false,none,false,work active
+264,15,12,herb_roof_garden,Fay,plant,0.381425,0.0,0.381425,0.845,false,false,none,false,work active
+265,15,13,north_lantern_relay,Milo,fit,0.434593,0.0,0.434593,1.0,false,false,none,false,work active
+266,15,14,archive_weather_log,Nia,copy,0.372548,0.038337,0.410885,1.0,true,false,none,false,reserved work slot
+267,15,15,west_bridge_repair,Ari,brace,0.301074,0.0,0.301074,0.86,false,false,none,false,work active
+268,15,16,herb_roof_garden,Fay,plant,0.381425,0.0,0.381425,0.845,false,false,none,false,work active
+269,15,17,north_lantern_relay,Milo,fit,0.434593,0.0,0.434593,1.0,false,false,none,false,work active
+270,16,0,archive_weather_log,Nia,copy,0.410885,0.0,0.410885,1.0,false,false,none,false,work active
+271,16,1,west_bridge_repair,Ari,brace,0.301074,0.0,0.301074,0.86,false,false,none,false,reserved work slot
+272,16,2,herb_roof_garden,Fay,plant,0.381425,0.0,0.381425,0.845,false,false,none,false,work active
+273,16,3,north_lantern_relay,Milo,fit,0.434593,0.0,0.434593,1.0,false,false,none,false,work active
+274,16,4,archive_weather_log,Nia,copy,0.410885,0.0,0.410885,1.0,false,false,none,false,work active
+275,16,5,west_bridge_repair,Ari,brace,0.301074,0.0,0.301074,0.86,false,false,none,false,work active
+276,16,6,herb_roof_garden,Fay,plant,0.381425,0.038337,0.419762,0.845,true,false,none,false,reserved work slot
+277,16,7,north_lantern_relay,Milo,fit,0.434593,0.0,0.434593,1.0,false,false,none,false,work active
+278,16,8,archive_weather_log,Nia,copy,0.410885,0.0,0.410885,1.0,false,false,none,false,work active
+279,16,9,west_bridge_repair,Ari,brace,0.301074,0.0,0.301074,0.86,false,false,none,false,work active
+280,16,10,herb_roof_garden,Fay,plant,0.419762,0.0,0.419762,0.845,false,false,none,false,work active
+281,16,11,north_lantern_relay,Milo,fit,0.434593,0.038272,0.472865,1.0,true,false,none,false,reserved work slot
+282,16,12,archive_weather_log,Nia,copy,0.410885,0.0,0.410885,1.0,false,false,none,false,work active
+283,16,13,west_bridge_repair,Ari,brace,0.301074,0.0,0.301074,0.86,false,false,none,false,work active
+284,16,14,herb_roof_garden,Fay,plant,0.419762,0.0,0.419762,0.845,false,false,none,false,work active
+285,16,15,north_lantern_relay,Milo,fit,0.472865,0.037573,0.510437,1.0,true,false,none,false,reserved work slot
+286,16,16,archive_weather_log,Nia,copy,0.410885,0.0,0.410885,1.0,false,false,none,false,work active
+287,16,17,west_bridge_repair,Ari,brace,0.301074,0.0,0.301074,0.86,false,false,none,false,reserved work slot
+288,17,0,herb_roof_garden,Fay,plant,0.419762,0.0,0.419762,0.845,false,false,none,false,work active
+289,17,1,north_lantern_relay,Milo,wire,0.510437,0.0,0.510437,1.0,false,false,none,false,work active
+290,17,2,archive_weather_log,Nia,copy,0.410885,0.038337,0.449222,1.0,true,false,none,false,reserved work slot
+291,17,3,west_bridge_repair,Ari,brace,0.301074,0.038337,0.339411,0.86,true,false,none,false,reserved work slot
+292,17,4,herb_roof_garden,Fay,plant,0.419762,0.038337,0.458099,0.845,true,false,none,false,reserved work slot
+293,17,5,north_lantern_relay,Milo,wire,0.510437,0.0,0.510437,1.0,false,false,none,false,work active
+294,17,6,archive_weather_log,Nia,copy,0.449222,0.0,0.449222,1.0,false,false,none,false,work active
+295,17,7,west_bridge_repair,Ari,brace,0.339411,0.0,0.339411,0.86,false,false,none,false,work active
+296,17,8,herb_roof_garden,Fay,plant,0.458099,0.0,0.458099,0.845,false,false,none,false,work active
+297,17,9,north_lantern_relay,Milo,wire,0.510437,0.002842,0.513279,1.0,true,true,material_shortage,false,blocked: material_shortage
+298,17,10,archive_weather_log,Nia,copy,0.449222,0.0,0.449222,1.0,false,false,none,false,work active
+299,17,11,west_bridge_repair,Ari,brace,0.339411,0.0,0.339411,0.86,false,false,none,false,work active
+300,17,12,herb_roof_garden,Fay,plant,0.458099,0.0,0.458099,0.845,false,false,none,false,work active
+301,17,13,north_lantern_relay,Milo,wire,0.513279,0.0,0.513279,1.0,false,false,none,false,work active
+302,17,14,archive_weather_log,Nia,copy,0.449222,0.038057,0.487279,1.0,true,false,none,false,reserved work slot
+303,17,15,west_bridge_repair,Ari,brace,0.339411,0.0,0.339411,0.86,false,false,none,false,work active
+304,17,16,herb_roof_garden,Fay,plant,0.458099,0.0,0.458099,0.845,false,false,none,false,work active
+305,17,17,north_lantern_relay,Milo,wire,0.513279,0.0,0.513279,1.0,false,false,none,false,work active
+306,18,0,west_bridge_repair,Ari,brace,0.339411,0.0,0.339411,0.86,false,false,none,false,work active
+307,18,1,herb_roof_garden,Fay,plant,0.458099,0.0,0.458099,0.845,false,false,none,false,work active
+308,18,2,north_lantern_relay,Milo,wire,0.513279,0.051101,0.56438,0.83,true,false,none,true,reshaped plan posted
+309,18,3,archive_weather_log,Nia,copy,0.487279,0.0,0.487279,1.0,false,false,none,false,work active
+310,18,4,west_bridge_repair,Ari,brace,0.339411,0.038337,0.377748,0.86,true,false,none,false,reserved work slot
+311,18,5,herb_roof_garden,Fay,plant,0.458099,0.038337,0.496436,0.845,true,false,none,false,reserved work slot
+312,18,6,north_lantern_relay,Milo,wire,0.56438,0.0,0.56438,0.83,false,false,none,false,work active
+313,18,7,archive_weather_log,Nia,copy,0.487279,0.0,0.487279,1.0,false,false,none,false,work active
+314,18,8,west_bridge_repair,Ari,brace,0.377748,0.0,0.377748,0.86,false,false,none,false,work active
+315,18,9,herb_roof_garden,Fay,plant,0.496436,0.0,0.496436,0.845,false,false,none,false,work active
+316,18,10,north_lantern_relay,Milo,wire,0.56438,0.04441,0.60879,0.83,true,false,none,false,reserved work slot
+317,18,11,archive_weather_log,Nia,copy,0.487279,0.0,0.487279,1.0,false,false,none,false,work active
+318,18,12,west_bridge_repair,Ari,brace,0.377748,0.0,0.377748,0.86,false,false,none,false,work active
+319,18,13,herb_roof_garden,Fay,plant,0.496436,0.0,0.496436,0.845,false,false,none,false,work active
+320,18,14,north_lantern_relay,Milo,wire,0.60879,0.0,0.60879,0.83,false,false,none,false,work active
+321,18,15,archive_weather_log,Nia,copy,0.487279,0.006833,0.494112,1.0,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+322,18,16,west_bridge_repair,Ari,brace,0.377748,0.0,0.377748,0.86,false,false,none,false,work active
+323,18,17,herb_roof_garden,Fay,plant,0.496436,0.0,0.496436,0.845,false,false,none,false,work active
+324,19,0,north_lantern_relay,Milo,wire,0.60879,0.0,0.60879,0.83,false,false,none,false,work active
+325,19,1,archive_weather_log,Nia,copy,0.494112,0.0,0.494112,1.0,false,false,none,false,work active
+326,19,2,west_bridge_repair,Ari,brace,0.377748,0.038337,0.416085,0.86,true,false,none,false,reserved work slot
+327,19,3,herb_roof_garden,Fay,plant,0.496436,0.0,0.496436,0.845,false,false,none,false,work active
+328,19,4,north_lantern_relay,Milo,wire,0.60879,0.0,0.60879,0.83,false,false,none,false,work active
+329,19,5,archive_weather_log,Nia,copy,0.494112,0.0,0.494112,1.0,false,false,none,false,work active
+330,19,6,west_bridge_repair,Ari,brace,0.416085,0.0,0.416085,0.86,false,false,none,false,work active
+331,19,7,herb_roof_garden,Fay,plant,0.496436,0.038337,0.534773,0.845,true,false,none,false,reserved work slot
+332,19,8,north_lantern_relay,Milo,wire,0.60879,0.0,0.60879,0.83,false,false,none,false,work active
+333,19,9,archive_weather_log,Nia,copy,0.494112,0.0,0.494112,1.0,false,false,none,false,work active
+334,19,10,west_bridge_repair,Ari,brace,0.416085,0.0,0.416085,0.86,false,false,none,false,work active
+335,19,11,herb_roof_garden,Fay,water,0.534773,0.0,0.534773,0.845,false,false,none,false,work active
+336,19,12,north_lantern_relay,Milo,wire,0.60879,0.008116,0.616906,0.83,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+337,19,13,archive_weather_log,Nia,copy,0.494112,0.038204,0.532316,1.0,true,false,none,false,reserved work slot
+338,19,14,west_bridge_repair,Ari,brace,0.416085,0.038009,0.454094,0.86,true,false,none,false,reserved work slot
+339,19,15,herb_roof_garden,Fay,water,0.534773,0.0,0.534773,0.845,false,false,none,false,work active
+340,19,16,north_lantern_relay,Milo,wire,0.616906,0.0,0.616906,0.83,false,false,none,false,work active
+341,19,17,archive_weather_log,Nia,bind,0.532316,0.0,0.532316,1.0,false,false,none,false,work active
+342,20,0,west_bridge_repair,Ari,brace,0.454094,0.0,0.454094,0.86,false,false,none,false,work active
+343,20,1,herb_roof_garden,Fay,water,0.534773,0.0,0.534773,0.845,false,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+344,20,2,north_lantern_relay,Milo,wire,0.616906,0.0,0.616906,0.83,false,false,none,false,work active
+345,20,3,archive_weather_log,Nia,bind,0.532316,0.0,0.532316,1.0,false,false,none,false,work active
+346,20,4,west_bridge_repair,Ari,brace,0.454094,0.0,0.454094,0.86,false,false,none,false,work active
+347,20,5,herb_roof_garden,Fay,water,0.534773,0.008228,0.543,0.845,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+348,20,6,north_lantern_relay,Milo,wire,0.616906,0.0,0.616906,0.83,false,false,none,false,work active
+349,20,7,archive_weather_log,Nia,bind,0.532316,0.0,0.532316,1.0,false,false,none,false,work active
+350,20,8,west_bridge_repair,Ari,brace,0.454094,0.0,0.454094,0.86,false,false,none,false,work active
+351,20,9,herb_roof_garden,Fay,water,0.543,0.0,0.543,0.845,false,false,none,false,work active
+352,20,10,north_lantern_relay,Milo,wire,0.616906,0.045355,0.662261,0.83,true,false,none,false,reserved work slot
+353,20,11,archive_weather_log,Nia,bind,0.532316,0.0,0.532316,1.0,false,false,none,false,work active
+354,20,12,west_bridge_repair,Ari,brace,0.454094,0.0,0.454094,0.86,false,false,none,false,work active
+355,20,13,herb_roof_garden,Fay,water,0.543,0.0,0.543,0.845,false,false,none,false,work active
+356,20,14,north_lantern_relay,Milo,wire,0.662261,0.0,0.662261,0.83,false,false,none,false,work active
+357,20,15,archive_weather_log,Nia,bind,0.532316,0.00288,0.535195,1.0,true,true,material_shortage,false,blocked: material_shortage
+358,20,16,west_bridge_repair,Ari,brace,0.454094,0.0,0.454094,0.86,false,false,none,false,work active
+359,20,17,herb_roof_garden,Fay,water,0.543,0.0,0.543,0.845,false,false,none,false,work active
+360,21,0,archive_weather_log,Nia,bind,0.535195,0.0,0.535195,1.0,false,false,none,false,work active
+361,21,1,west_bridge_repair,Ari,brace,0.454094,0.0,0.454094,0.86,false,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+362,21,2,herb_roof_garden,Fay,water,0.543,0.0,0.543,0.845,false,false,none,false,work active
+363,21,3,north_lantern_relay,Milo,wire,0.662261,0.0,0.662261,0.83,false,false,none,false,work active
+364,21,4,archive_weather_log,Nia,bind,0.535195,0.0,0.535195,1.0,false,false,none,false,work active
+365,21,5,west_bridge_repair,Ari,brace,0.454094,0.0,0.454094,0.86,false,false,none,false,work active
+366,21,6,herb_roof_garden,Fay,water,0.543,0.045709,0.58871,0.845,true,false,none,false,reserved work slot
+367,21,7,north_lantern_relay,Milo,wire,0.662261,0.0,0.662261,0.83,false,false,none,false,work active
+368,21,8,archive_weather_log,Nia,bind,0.535195,0.0,0.535195,1.0,false,false,none,false,work active
+369,21,9,west_bridge_repair,Ari,brace,0.454094,0.0,0.454094,0.86,false,false,none,false,work active
+370,21,10,herb_roof_garden,Fay,water,0.58871,0.0,0.58871,0.845,false,false,none,false,work active
+371,21,11,north_lantern_relay,Milo,wire,0.662261,0.045164,0.707425,0.83,true,false,none,false,reserved work slot
+372,21,12,archive_weather_log,Nia,bind,0.535195,0.0,0.535195,1.0,false,false,none,false,work active
+373,21,13,west_bridge_repair,Ari,brace,0.454094,0.0,0.454094,0.86,false,false,none,false,work active
+374,21,14,herb_roof_garden,Fay,water,0.58871,0.0,0.58871,0.845,false,false,none,false,work active
+375,21,15,north_lantern_relay,Milo,wire,0.707425,0.0,0.707425,0.83,false,false,none,false,work active
+376,21,16,archive_weather_log,Nia,bind,0.535195,0.0,0.535195,1.0,false,false,none,false,work active
+377,21,17,west_bridge_repair,Ari,brace,0.454094,0.0,0.454094,0.86,false,false,none,false,work active
+378,22,0,herb_roof_garden,Fay,water,0.58871,0.0,0.58871,0.845,false,false,none,false,work active
+379,22,1,north_lantern_relay,Milo,wire,0.707425,0.0,0.707425,0.83,false,false,none,false,work active
+380,22,2,archive_weather_log,Nia,bind,0.535195,0.0,0.535195,1.0,false,false,none,false,work active
+381,22,3,west_bridge_repair,Ari,brace,0.454094,0.002415,0.456509,0.86,true,true,material_shortage,false,blocked: material_shortage
+382,22,4,herb_roof_garden,Fay,water,0.58871,0.0,0.58871,0.845,false,false,none,false,work active
+383,22,5,north_lantern_relay,Milo,wire,0.707425,0.0,0.707425,0.83,false,false,none,false,work active
+384,22,6,archive_weather_log,Nia,bind,0.535195,0.0,0.535195,1.0,false,false,none,false,work active
+385,22,7,west_bridge_repair,Ari,brace,0.456509,0.0,0.456509,0.86,false,false,none,false,work active
+386,22,8,herb_roof_garden,Fay,water,0.58871,0.0,0.58871,0.845,false,false,none,false,work active
+387,22,9,north_lantern_relay,Milo,wire,0.707425,0.045564,0.752989,0.83,true,false,none,false,reserved work slot
+388,22,10,archive_weather_log,Nia,bind,0.535195,0.0,0.535195,1.0,false,false,none,false,work active
+389,22,11,west_bridge_repair,Ari,brace,0.456509,0.037712,0.494221,0.86,true,false,none,false,reserved work slot
+390,22,12,herb_roof_garden,Fay,water,0.58871,0.0,0.58871,0.845,false,false,none,false,work active
+391,22,13,north_lantern_relay,Milo,test,0.752989,0.0,0.752989,0.83,false,false,none,false,work active
+392,22,14,archive_weather_log,Nia,bind,0.535195,0.051709,0.586905,0.815,true,false,none,true,reshaped plan posted
+393,22,15,west_bridge_repair,Ari,brace,0.494221,0.0,0.494221,0.86,false,false,none,false,work active
+394,22,16,herb_roof_garden,Fay,water,0.58871,0.0,0.58871,0.845,false,false,none,false,work active
+395,22,17,north_lantern_relay,Milo,test,0.752989,0.0,0.752989,0.83,false,false,none,false,work active
+396,23,0,archive_weather_log,Nia,bind,0.586905,0.0,0.586905,0.815,false,false,none,false,work active
+397,23,1,west_bridge_repair,Ari,brace,0.494221,0.0,0.494221,0.86,false,false,none,false,reserved work slot
+398,23,2,herb_roof_garden,Fay,water,0.58871,0.0,0.58871,0.845,false,false,none,false,work active
+399,23,3,north_lantern_relay,Milo,test,0.752989,0.0,0.752989,0.83,false,false,none,false,work active
+400,23,4,archive_weather_log,Nia,bind,0.586905,0.0,0.586905,0.815,false,false,none,false,work active
+401,23,5,west_bridge_repair,Ari,brace,0.494221,0.0,0.494221,0.86,false,false,none,false,work active
+402,23,6,herb_roof_garden,Fay,water,0.58871,0.045709,0.634419,0.845,true,false,none,false,reserved work slot
+403,23,7,north_lantern_relay,Milo,test,0.752989,0.0,0.752989,0.83,false,false,none,false,work active
+404,23,8,archive_weather_log,Nia,bind,0.586905,0.0,0.586905,0.815,false,false,none,false,work active
+405,23,9,west_bridge_repair,Ari,brace,0.494221,0.0,0.494221,0.86,false,false,none,false,work active
+406,23,10,herb_roof_garden,Fay,water,0.634419,0.0,0.634419,0.845,false,false,none,false,work active
+407,23,11,north_lantern_relay,Milo,test,0.752989,0.053082,0.806071,0.83,true,false,none,false,reserved work slot
+408,23,12,archive_weather_log,Nia,bind,0.586905,0.0,0.586905,0.815,false,false,none,false,work active
+409,23,13,west_bridge_repair,Ari,brace,0.494221,0.0,0.494221,0.86,false,false,none,false,work active
+410,23,14,herb_roof_garden,Fay,water,0.634419,0.0,0.634419,0.845,false,false,none,false,work active
+411,23,15,north_lantern_relay,Milo,test,0.806071,0.0,0.806071,0.83,false,false,none,false,work active
+412,23,16,archive_weather_log,Nia,bind,0.586905,0.0,0.586905,0.815,false,false,none,false,work active
+413,23,17,west_bridge_repair,Ari,brace,0.494221,0.0,0.494221,0.86,false,false,none,false,work active
+414,24,0,north_lantern_relay,Milo,test,0.806071,0.0,0.806071,0.83,false,false,none,false,work active
+415,24,1,archive_weather_log,Nia,bind,0.586905,0.0,0.586905,0.815,false,false,none,false,work active
+416,24,2,west_bridge_repair,Ari,brace,0.494221,0.038337,0.532558,0.86,true,false,none,false,reserved work slot
+417,24,3,herb_roof_garden,Fay,water,0.634419,0.0,0.634419,0.845,false,false,none,false,work active
+418,24,4,north_lantern_relay,Milo,test,0.806071,0.0,0.806071,0.83,false,false,none,false,work active
+419,24,5,archive_weather_log,Nia,bind,0.586905,0.0,0.586905,0.815,false,false,none,false,work active
+420,24,6,west_bridge_repair,Ari,seal,0.532558,0.0,0.532558,0.86,false,false,none,false,work active
+421,24,7,herb_roof_garden,Fay,water,0.634419,0.002868,0.637287,0.845,true,true,material_shortage,false,blocked: material_shortage
+422,24,8,north_lantern_relay,Milo,test,0.806071,0.0,0.806071,0.83,false,false,none,false,work active
+423,24,9,archive_weather_log,Nia,bind,0.586905,0.0,0.586905,0.815,false,false,none,false,work active
+424,24,10,west_bridge_repair,Ari,seal,0.532558,0.0,0.532558,0.86,false,false,none,false,work active
+425,24,11,herb_roof_garden,Fay,water,0.637287,0.0,0.637287,0.845,false,false,none,false,work active
+426,24,12,north_lantern_relay,Milo,test,0.806071,0.0,0.806071,0.83,false,false,none,false,work active
+427,24,13,archive_weather_log,Nia,bind,0.586905,0.00288,0.589785,0.815,true,true,material_shortage,false,blocked: material_shortage
+428,24,14,west_bridge_repair,Ari,seal,0.532558,0.0,0.532558,0.86,false,false,none,false,work active
+429,24,15,herb_roof_garden,Fay,water,0.637287,0.0,0.637287,0.845,false,false,none,false,work active
+430,24,16,north_lantern_relay,Milo,test,0.806071,0.0,0.806071,0.83,false,false,none,false,work active
+431,24,17,archive_weather_log,Nia,bind,0.589785,0.0,0.589785,0.815,false,false,none,false,reserved work slot
+432,25,0,west_bridge_repair,Ari,seal,0.532558,0.0,0.532558,0.86,false,false,none,false,work active
+433,25,1,herb_roof_garden,Fay,water,0.637287,0.0,0.637287,0.845,false,false,none,false,work active
+434,25,2,north_lantern_relay,Milo,test,0.806071,0.0,0.806071,0.83,false,false,none,false,work active
+435,25,3,archive_weather_log,Nia,bind,0.589785,0.0,0.589785,0.815,false,false,none,false,work active
+436,25,4,west_bridge_repair,Ari,seal,0.532558,0.0,0.532558,0.86,false,false,none,false,work active
+437,25,5,herb_roof_garden,Fay,water,0.637287,0.045709,0.682997,0.845,true,false,none,false,reserved work slot
+438,25,6,north_lantern_relay,Milo,test,0.806071,0.023929,0.83,0.83,true,false,none,false,reserved work slot
+439,25,7,archive_weather_log,Nia,bind,0.589785,0.0,0.589785,0.815,false,false,none,false,work active
+440,25,8,west_bridge_repair,Ari,seal,0.532558,0.045709,0.578268,0.86,true,false,none,false,reserved work slot
+441,25,9,herb_roof_garden,Fay,water,0.682997,0.0,0.682997,0.845,false,false,none,false,work active
+442,25,10,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,true,false,none,false,reserved work slot
+443,25,11,archive_weather_log,Nia,bind,0.589785,0.0,0.589785,0.815,false,false,none,false,work active
+444,25,12,west_bridge_repair,Ari,seal,0.578268,0.0,0.578268,0.86,false,false,none,false,work active
+445,25,13,herb_roof_garden,Fay,water,0.682997,0.0,0.682997,0.845,false,false,none,false,work active
+446,25,14,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+447,25,15,archive_weather_log,Nia,bind,0.589785,0.008228,0.598012,0.815,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+448,25,16,west_bridge_repair,Ari,seal,0.578268,0.0,0.578268,0.86,false,false,none,false,work active
+449,25,17,herb_roof_garden,Fay,water,0.682997,0.0,0.682997,0.845,false,false,none,false,work active
+450,26,0,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+451,26,1,archive_weather_log,Nia,bind,0.598012,0.0,0.598012,0.815,false,false,none,false,work active
+452,26,2,west_bridge_repair,Ari,seal,0.578268,0.045709,0.623977,0.86,true,false,none,false,reserved work slot
+453,26,3,herb_roof_garden,Fay,water,0.682997,0.0,0.682997,0.845,false,false,none,false,work active
+454,26,4,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+455,26,5,archive_weather_log,Nia,bind,0.598012,0.0,0.598012,0.815,false,false,none,false,work active
+456,26,6,west_bridge_repair,Ari,seal,0.623977,0.0,0.623977,0.86,false,false,none,false,work active
+457,26,7,herb_roof_garden,Fay,water,0.682997,0.045709,0.728706,0.845,true,false,none,false,reserved work slot
+458,26,8,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+459,26,9,archive_weather_log,Nia,bind,0.598012,0.0,0.598012,0.815,false,false,none,false,work active
+460,26,10,west_bridge_repair,Ari,seal,0.623977,0.0,0.623977,0.86,false,false,none,false,work active
+461,26,11,herb_roof_garden,Fay,water,0.728706,0.0,0.728706,0.845,false,false,none,false,work active
+462,26,12,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+463,26,13,archive_weather_log,Nia,bind,0.598012,0.045709,0.643722,0.815,true,false,none,false,reserved work slot
+464,26,14,west_bridge_repair,Ari,seal,0.623977,0.0,0.623977,0.86,false,false,none,false,work active
+465,26,15,herb_roof_garden,Fay,water,0.728706,0.0,0.728706,0.845,false,false,none,false,work active
+466,26,16,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+467,26,17,archive_weather_log,Nia,bind,0.643722,0.0,0.643722,0.815,false,false,none,false,work active
+468,27,0,herb_roof_garden,Fay,water,0.728706,0.0,0.728706,0.845,false,false,none,false,work active
+469,27,1,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+470,27,2,archive_weather_log,Nia,bind,0.643722,0.0,0.643722,0.815,false,false,none,false,work active
+471,27,3,west_bridge_repair,Ari,seal,0.623977,0.045518,0.669495,0.86,true,false,none,false,reserved work slot
+472,27,4,herb_roof_garden,Fay,water,0.728706,0.0,0.728706,0.845,false,false,none,false,work active
+473,27,5,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+474,27,6,archive_weather_log,Nia,bind,0.643722,0.0,0.643722,0.815,false,false,none,false,work active
+475,27,7,west_bridge_repair,Ari,seal,0.669495,0.0,0.669495,0.86,false,false,none,false,work active
+476,27,8,herb_roof_garden,Fay,water,0.728706,0.0,0.728706,0.845,false,false,none,false,work active
+477,27,9,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,true,false,none,false,reserved work slot
+478,27,10,archive_weather_log,Nia,bind,0.643722,0.0,0.643722,0.815,false,false,none,false,work active
+479,27,11,west_bridge_repair,Ari,seal,0.669495,0.0,0.669495,0.86,false,false,none,false,work active
+480,27,12,herb_roof_garden,Fay,water,0.728706,0.0,0.728706,0.845,false,false,none,false,work active
+481,27,13,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+482,27,14,archive_weather_log,Nia,bind,0.643722,0.045709,0.689431,0.815,true,false,none,false,reserved work slot
+483,27,15,west_bridge_repair,Ari,seal,0.669495,0.0,0.669495,0.86,false,false,none,false,work active
+484,27,16,herb_roof_garden,Fay,water,0.728706,0.0,0.728706,0.845,false,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+485,27,17,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+486,28,0,archive_weather_log,Nia,bind,0.689431,0.0,0.689431,0.815,false,false,none,false,work active
+487,28,1,west_bridge_repair,Ari,seal,0.669495,0.0,0.669495,0.86,false,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+488,28,2,herb_roof_garden,Fay,water,0.728706,0.0,0.728706,0.845,false,false,none,false,work active
+489,28,3,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,true,false,none,false,reserved work slot
+490,28,4,archive_weather_log,Nia,bind,0.689431,0.0,0.689431,0.815,false,false,none,false,work active
+491,28,5,west_bridge_repair,Ari,seal,0.669495,0.008228,0.677723,0.86,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+492,28,6,herb_roof_garden,Fay,water,0.728706,0.045709,0.774416,0.845,true,false,none,false,reserved work slot
+493,28,7,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+494,28,8,archive_weather_log,Nia,bind,0.689431,0.0,0.689431,0.815,false,false,none,false,work active
+495,28,9,west_bridge_repair,Ari,seal,0.677723,0.0,0.677723,0.86,false,false,none,false,work active
+496,28,10,herb_roof_garden,Fay,mark,0.774416,0.0,0.774416,0.845,false,false,none,false,work active
+497,28,11,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,true,false,none,false,reserved work slot
+498,28,12,archive_weather_log,Nia,bind,0.689431,0.0,0.689431,0.815,false,false,none,false,work active
+499,28,13,west_bridge_repair,Ari,seal,0.677723,0.0,0.677723,0.86,false,false,none,false,work active
+500,28,14,herb_roof_garden,Fay,mark,0.774416,0.0,0.774416,0.845,false,false,none,false,work active
+501,28,15,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+502,28,16,archive_weather_log,Nia,bind,0.689431,0.0,0.689431,0.815,false,false,none,false,work active
+503,28,17,west_bridge_repair,Ari,seal,0.677723,0.0,0.677723,0.86,false,false,none,false,work active
+504,29,0,herb_roof_garden,Fay,mark,0.774416,0.0,0.774416,0.845,false,false,none,false,work active
+505,29,1,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+506,29,2,archive_weather_log,Nia,bind,0.689431,0.0,0.689431,0.815,false,false,none,false,work active
+507,29,3,west_bridge_repair,Ari,seal,0.677723,0.045709,0.723432,0.86,true,false,none,false,reserved work slot
+508,29,4,herb_roof_garden,Fay,mark,0.774416,0.0,0.774416,0.845,false,false,none,false,work active
+509,29,5,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+510,29,6,archive_weather_log,Nia,bind,0.689431,0.0,0.689431,0.815,false,false,none,false,work active
+511,29,7,west_bridge_repair,Ari,seal,0.723432,0.0,0.723432,0.86,false,false,none,false,work active
+512,29,8,herb_roof_garden,Fay,mark,0.774416,0.0,0.774416,0.845,false,false,none,false,work active
+513,29,9,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,true,false,none,false,reserved work slot
+514,29,10,archive_weather_log,Nia,bind,0.689431,0.0,0.689431,0.815,false,false,none,false,work active
+515,29,11,west_bridge_repair,Ari,seal,0.723432,0.0,0.723432,0.86,false,false,none,false,work active
+516,29,12,herb_roof_garden,Fay,mark,0.774416,0.0,0.774416,0.845,false,false,none,false,work active
+517,29,13,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,true,false,none,false,reserved work slot
+518,29,14,archive_weather_log,Nia,bind,0.689431,0.045709,0.735141,0.815,true,false,none,false,reserved work slot
+519,29,15,west_bridge_repair,Ari,seal,0.723432,0.04524,0.768672,0.86,true,false,none,false,reserved work slot
+520,29,16,herb_roof_garden,Fay,mark,0.774416,0.0,0.774416,0.845,false,false,none,false,work active
+521,29,17,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+522,30,0,west_bridge_repair,Ari,test,0.768672,0.0,0.768672,0.86,false,false,none,false,work active
+523,30,1,herb_roof_garden,Fay,mark,0.774416,0.0,0.774416,0.845,false,false,none,false,work active
+524,30,2,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+525,30,3,archive_weather_log,Nia,bind,0.735141,0.0,0.735141,0.815,false,false,none,false,work active
+526,30,4,west_bridge_repair,Ari,test,0.768672,0.0,0.768672,0.86,false,false,none,false,work active
+527,30,5,herb_roof_garden,Fay,mark,0.774416,0.053082,0.827498,0.845,true,false,none,false,reserved work slot
+528,30,6,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+529,30,7,archive_weather_log,Nia,bind,0.735141,0.0,0.735141,0.815,false,false,none,false,work active
+530,30,8,west_bridge_repair,Ari,test,0.768672,0.0,0.768672,0.86,false,false,none,false,work active
+531,30,9,herb_roof_garden,Fay,mark,0.827498,0.0,0.827498,0.845,false,false,none,false,work active
+532,30,10,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,true,false,none,false,reserved work slot
+533,30,11,archive_weather_log,Nia,bind,0.735141,0.045297,0.780438,0.815,true,false,none,false,reserved work slot
+534,30,12,west_bridge_repair,Ari,test,0.768672,0.0,0.768672,0.86,false,false,none,false,work active
+535,30,13,herb_roof_garden,Fay,mark,0.827498,0.003292,0.83079,0.845,true,true,material_shortage,false,blocked: material_shortage
+536,30,14,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+537,30,15,archive_weather_log,Nia,index,0.780438,0.034562,0.815,0.815,true,false,none,false,reserved work slot
+538,30,16,west_bridge_repair,Ari,test,0.768672,0.0,0.768672,0.86,false,false,none,false,work active
+539,30,17,herb_roof_garden,Fay,mark,0.83079,0.0,0.83079,0.845,false,false,none,false,work active
+540,31,0,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,reserved work slot
+541,31,1,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+542,31,2,west_bridge_repair,Ari,test,0.768672,0.053082,0.821754,0.86,true,false,none,false,reserved work slot
+543,31,3,herb_roof_garden,Fay,mark,0.83079,0.0,0.83079,0.845,false,false,none,false,work active
+544,31,4,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+545,31,5,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+546,31,6,west_bridge_repair,Ari,test,0.821754,0.0,0.821754,0.86,false,false,none,false,work active
+547,31,7,herb_roof_garden,Fay,mark,0.83079,0.01421,0.845,0.845,true,false,none,false,reserved work slot
+548,31,8,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+549,31,9,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+550,31,10,west_bridge_repair,Ari,test,0.821754,0.0,0.821754,0.86,false,false,none,false,work active
+551,31,11,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+552,31,12,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+553,31,13,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,true,false,none,false,reserved work slot
+554,31,14,west_bridge_repair,Ari,test,0.821754,0.0,0.821754,0.86,false,false,none,false,work active
+555,31,15,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+556,31,16,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+557,31,17,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+558,32,0,west_bridge_repair,Ari,test,0.821754,0.0,0.821754,0.86,false,false,none,false,work active
+559,32,1,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+560,32,2,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+561,32,3,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+562,32,4,west_bridge_repair,Ari,test,0.821754,0.0,0.821754,0.86,false,false,none,false,work active
+563,32,5,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,true,false,none,false,reserved work slot
+564,32,6,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+565,32,7,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+566,32,8,west_bridge_repair,Ari,test,0.821754,0.0,0.821754,0.86,false,false,none,false,work active
+567,32,9,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+568,32,10,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,true,false,none,false,reserved work slot
+569,32,11,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+570,32,12,west_bridge_repair,Ari,test,0.821754,0.038246,0.86,0.86,true,false,none,false,reserved work slot
+571,32,13,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+572,32,14,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+573,32,15,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+574,32,16,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+575,32,17,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+576,33,0,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+577,33,1,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,reserved work slot
+578,33,2,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+579,33,3,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+580,33,4,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+581,33,5,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+582,33,6,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,true,false,none,false,reserved work slot
+583,33,7,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+584,33,8,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,true,false,none,false,reserved work slot
+585,33,9,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+586,33,10,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,true,false,none,false,reserved work slot
+587,33,11,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+588,33,12,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+589,33,13,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+590,33,14,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+591,33,15,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+592,33,16,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+593,33,17,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+594,34,0,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+595,34,1,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+596,34,2,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+597,34,3,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,true,false,none,false,reserved work slot
+598,34,4,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+599,34,5,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+600,34,6,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+601,34,7,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+602,34,8,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+603,34,9,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,true,false,none,false,reserved work slot
+604,34,10,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+605,34,11,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+606,34,12,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+607,34,13,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+608,34,14,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,true,false,none,false,reserved work slot
+609,34,15,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+610,34,16,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+611,34,17,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+612,35,0,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+613,35,1,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+614,35,2,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+615,35,3,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+616,35,4,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+617,35,5,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+618,35,6,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,true,false,none,false,reserved work slot
+619,35,7,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,true,false,none,false,reserved work slot
+620,35,8,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+621,35,9,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,true,true,obligation_time_conflict,false,blocked: obligation_time_conflict
+622,35,10,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+623,35,11,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,true,false,none,false,reserved work slot
+624,35,12,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+625,35,13,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+626,35,14,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+627,35,15,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+628,35,16,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+629,35,17,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+630,36,0,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+631,36,1,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+632,36,2,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,true,false,none,false,reserved work slot
+633,36,3,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+634,36,4,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+635,36,5,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,true,false,none,false,reserved work slot
+636,36,6,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+637,36,7,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,true,false,none,false,reserved work slot
+638,36,8,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+639,36,9,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active
+640,36,10,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+641,36,11,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+642,36,12,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+643,36,13,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,true,false,none,false,reserved work slot
+644,36,14,west_bridge_repair,Ari,test,0.86,0.0,0.86,0.86,false,false,none,false,work active
+645,36,15,herb_roof_garden,Fay,mark,0.845,0.0,0.845,0.845,false,false,none,false,work active
+646,36,16,north_lantern_relay,Milo,test,0.83,0.0,0.83,0.83,false,false,none,false,work active
+647,36,17,archive_weather_log,Nia,index,0.815,0.0,0.815,0.815,false,false,none,false,work active

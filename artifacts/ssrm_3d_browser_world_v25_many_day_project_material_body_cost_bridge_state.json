@@ -1,0 +1,102 @@
+{
+  "boundary": "deterministic browser-local project/material/body-cost scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, complete 3D engine, or metaphysical frequency claim",
+  "days": 36,
+  "final_agent_body": {
+    "Ari": {
+      "energy": 0.9593,
+      "fatigue": 0.05
+    },
+    "Fay": {
+      "energy": 0.9537,
+      "fatigue": 0.05
+    },
+    "Milo": {
+      "energy": 0.96,
+      "fatigue": 0.05
+    },
+    "Nia": {
+      "energy": 0.92027,
+      "fatigue": 0.05
+    }
+  },
+  "final_inventory": {
+    "compost": 6.393,
+    "glass": 7.006,
+    "ink": 7.701,
+    "oil": 10.22125,
+    "paper": 9.8455,
+    "planks": 16.812,
+    "resin": 6.42,
+    "rope": 4.607,
+    "seed": 9.572,
+    "thread": 0.74125,
+    "water": 35.2392,
+    "wire": 5.015
+  },
+  "final_project_progress": {
+    "archive_weather_log": 0.815,
+    "herb_roof_garden": 0.845,
+    "north_lantern_relay": 0.83,
+    "west_bridge_repair": 0.86
+  },
+  "final_project_targets": {
+    "archive_weather_log": 0.815,
+    "herb_roof_garden": 0.845,
+    "north_lantern_relay": 0.83,
+    "west_bridge_repair": 0.86
+  },
+  "projects": [
+    {
+      "home_zone": "west crossing",
+      "owner": "Ari",
+      "ownership_clause": "Ari owns the repair plan and may defer unsafe crossings.",
+      "preferred_slot": "morning dry window",
+      "primary_object": "borrowed caliper",
+      "project_id": "west_bridge_repair",
+      "recovery_clause": "If fatigued, Ari may ask for rest or a returned tool before continuing.",
+      "required_materials": "planks:8,resin:5,rope:4",
+      "stage_plan": "measure span -> brace rail -> seal deck -> test crossing",
+      "title": "West bridge repair"
+    },
+    {
+      "home_zone": "warm roof",
+      "owner": "Fay",
+      "ownership_clause": "Fay owns the garden tray and can refuse crowding during planting.",
+      "preferred_slot": "midday light window",
+      "primary_object": "seed pouch",
+      "project_id": "herb_roof_garden",
+      "recovery_clause": "If water is short, Fay reshapes the plan into fewer rows instead of failing silently.",
+      "required_materials": "seed:9,water:18,compost:7",
+      "stage_plan": "clear tray -> plant rows -> water roots -> mark harvest",
+      "title": "Herb roof garden"
+    },
+    {
+      "home_zone": "north path",
+      "owner": "Milo",
+      "ownership_clause": "Milo owns the relay route and can slow the build when tired.",
+      "preferred_slot": "dusk safety window",
+      "primary_object": "lamp oil flask",
+      "project_id": "north_lantern_relay",
+      "recovery_clause": "If fatigue rises, Milo can split the route over another day.",
+      "required_materials": "oil:10,glass:5,wire:4",
+      "stage_plan": "clean bracket -> fit glass -> wire relay -> dusk test",
+      "title": "North lantern relay"
+    },
+    {
+      "home_zone": "archive alcove",
+      "owner": "Nia",
+      "ownership_clause": "Nia owns the archive copy and can reject private workspace inspection.",
+      "preferred_slot": "quiet evening window",
+      "primary_object": "reading lens",
+      "project_id": "archive_weather_log",
+      "recovery_clause": "If paper is short, Nia publishes a public stub and records the missing pages.",
+      "required_materials": "ink:8,paper:10,thread:3",
+      "stage_plan": "sort notes -> copy table -> bind pages -> public index",
+      "title": "Archive weather log"
+    }
+  ],
+  "seed": 20260878,
+  "source_v24_next_gate": "browser world v25 with many-day agent projects that consume materials, reserve time, create fatigue/body cost, and make unresolved obligations block or reshape project progress",
+  "source_v24_verdict": "pass",
+  "ticks_per_day": 18
+}

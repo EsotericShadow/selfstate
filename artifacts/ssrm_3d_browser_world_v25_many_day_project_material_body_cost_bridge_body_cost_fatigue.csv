@@ -1,0 +1,649 @@
+tick_id,day,owner,project_id,energy,fatigue_before,fatigue_delta,fatigue_after,movement_effort,comfort,pain,rest_action,recovery_visible
+0,1,Ari,west_bridge_repair,0.87925,0.24,-0.055,0.185,0.2207,0.7565,0.06,routine rest,true
+1,1,Fay,herb_roof_garden,0.84925,0.28,-0.055,0.225,0.2295,0.7413,0.06,routine rest,true
+2,1,Milo,north_lantern_relay,0.8049,0.32,-0.014,0.306,0.24732,0.71052,0.06,ambient recovery,true
+3,1,Nia,archive_weather_log,0.7749,0.36,-0.014,0.346,0.25612,0.69532,0.06,ambient recovery,true
+4,1,Ari,west_bridge_repair,0.88415,0.185,-0.014,0.171,0.21762,0.76182,0.06,ambient recovery,true
+5,1,Fay,herb_roof_garden,0.82494,0.225,0.0442,0.2692,0.599224,0.664504,0.06,none,false
+6,1,Milo,north_lantern_relay,0.8098,0.306,-0.014,0.292,0.24424,0.71584,0.06,ambient recovery,true
+7,1,Nia,archive_weather_log,0.74861,0.346,0.0478,0.3938,0.706636,0.617156,0.06,none,false
+8,1,Ari,west_bridge_repair,0.88905,0.171,-0.014,0.157,0.21454,0.76714,0.06,ambient recovery,true
+9,1,Fay,herb_roof_garden,0.79403,0.2692,0.0562,0.3254,0.691588,0.635448,0.095,none,false
+10,1,Milo,north_lantern_relay,0.78549,0.292,0.0442,0.3362,0.613964,0.639044,0.06,none,false
+11,1,Nia,archive_weather_log,0.75351,0.3938,-0.014,0.3798,0.263556,0.682476,0.06,ambient recovery,true
+12,1,Ari,west_bridge_repair,0.89395,0.157,-0.014,0.143,0.21146,0.77246,0.06,ambient recovery,true
+13,1,Fay,herb_roof_garden,0.79893,0.3254,-0.014,0.3114,0.248508,0.708468,0.06,ambient recovery,true
+14,1,Milo,north_lantern_relay,0.79039,0.3362,-0.014,0.3222,0.250884,0.704364,0.06,ambient recovery,true
+15,1,Nia,archive_weather_log,0.7292,0.3798,0.0442,0.424,0.63328,0.60568,0.06,none,false
+16,1,Ari,west_bridge_repair,0.9132,0.143,-0.055,0.088,0.19936,0.79336,0.06,routine rest,true
+17,1,Fay,herb_roof_garden,0.81818,0.3114,-0.055,0.2564,0.236408,0.729368,0.06,routine rest,true
+18,2,Milo,north_lantern_relay,0.80964,0.3222,-0.055,0.2672,0.238784,0.725264,0.06,routine rest,true
+19,2,Nia,archive_weather_log,0.74845,0.424,-0.055,0.369,0.26118,0.68658,0.06,routine rest,true
+20,2,Ari,west_bridge_repair,0.88889,0.088,0.0442,0.1322,0.569084,0.716564,0.06,none,false
+21,2,Fay,herb_roof_garden,0.82308,0.2564,-0.014,0.2424,0.233328,0.734688,0.06,ambient recovery,true
+22,2,Milo,north_lantern_relay,0.81454,0.2672,-0.014,0.2532,0.235704,0.730584,0.06,ambient recovery,true
+23,2,Nia,archive_weather_log,0.75335,0.369,-0.014,0.355,0.2581,0.6919,0.06,ambient recovery,true
+24,2,Ari,west_bridge_repair,0.89379,0.1322,-0.014,0.1182,0.206004,0.781884,0.06,ambient recovery,true
+25,2,Fay,herb_roof_garden,0.79679,0.2424,0.0478,0.2902,0.683844,0.656524,0.06,none,false
+26,2,Milo,north_lantern_relay,0.81944,0.2532,-0.014,0.2392,0.232624,0.735904,0.06,ambient recovery,true
+27,2,Nia,archive_weather_log,0.75825,0.355,-0.014,0.341,0.25502,0.69722,0.06,ambient recovery,true
+28,2,Ari,west_bridge_repair,0.89869,0.1182,-0.014,0.1042,0.202924,0.787204,0.06,ambient recovery,true
+29,2,Fay,herb_roof_garden,0.80169,0.2902,-0.014,0.2762,0.240764,0.721844,0.06,ambient recovery,true
+30,2,Milo,north_lantern_relay,0.82434,0.2392,-0.014,0.2252,0.229544,0.741224,0.06,ambient recovery,true
+31,2,Nia,archive_weather_log,0.72536,0.341,0.0598,0.4008,0.788176,0.606796,0.095,none,false
+32,2,Ari,west_bridge_repair,0.90359,0.1042,-0.014,0.0902,0.199844,0.792524,0.06,ambient recovery,true
+33,2,Fay,herb_roof_garden,0.80659,0.2762,-0.014,0.2622,0.237684,0.727164,0.06,ambient recovery,true
+34,2,Milo,north_lantern_relay,0.84359,0.2252,-0.055,0.1702,0.217444,0.762124,0.06,routine rest,true
+35,2,Nia,archive_weather_log,0.74461,0.4008,-0.055,0.3458,0.256076,0.695396,0.06,routine rest,true
+36,3,Fay,herb_roof_garden,0.82584,0.2622,-0.055,0.2072,0.225584,0.748064,0.06,routine rest,true
+37,3,Milo,north_lantern_relay,0.86284,0.1702,-0.055,0.1152,0.205344,0.783024,0.06,routine rest,true
+38,3,Nia,archive_weather_log,0.74951,0.3458,-0.014,0.3318,0.252996,0.700716,0.06,ambient recovery,true
+39,3,Ari,west_bridge_repair,0.87928,0.0902,0.0442,0.1344,0.569568,0.715728,0.06,none,false
+40,3,Fay,herb_roof_garden,0.83074,0.2072,-0.014,0.1932,0.222504,0.753384,0.06,ambient recovery,true
+41,3,Milo,north_lantern_relay,0.86774,0.1152,-0.014,0.1012,0.202264,0.788344,0.06,ambient recovery,true
+42,3,Nia,archive_weather_log,0.75441,0.3318,-0.014,0.3178,0.249916,0.706036,0.06,ambient recovery,true
+43,3,Ari,west_bridge_repair,0.88418,0.1344,-0.014,0.1204,0.206488,0.781048,0.06,ambient recovery,true
+44,3,Fay,herb_roof_garden,0.83564,0.1932,-0.014,0.1792,0.219424,0.758704,0.06,ambient recovery,true
+45,3,Milo,north_lantern_relay,0.84343,0.1012,0.0442,0.1454,0.571988,0.711548,0.06,none,false
+46,3,Nia,archive_weather_log,0.75931,0.3178,-0.014,0.3038,0.246836,0.711356,0.06,ambient recovery,true
+47,3,Ari,west_bridge_repair,0.88908,0.1204,-0.014,0.1064,0.203408,0.786368,0.06,ambient recovery,true
+48,3,Fay,herb_roof_garden,0.84054,0.1792,-0.014,0.1652,0.216344,0.764024,0.06,ambient recovery,true
+49,3,Milo,north_lantern_relay,0.84833,0.1454,-0.014,0.1314,0.208908,0.776868,0.06,ambient recovery,true
+50,3,Nia,archive_weather_log,0.735,0.3038,0.0442,0.348,0.61656,0.63456,0.06,none,false
+51,3,Ari,west_bridge_repair,0.89398,0.1064,-0.014,0.0924,0.200328,0.791688,0.06,ambient recovery,true
+52,3,Fay,herb_roof_garden,0.85979,0.1652,-0.055,0.1102,0.204244,0.784924,0.06,routine rest,true
+53,3,Milo,north_lantern_relay,0.86758,0.1314,-0.055,0.0764,0.196808,0.797768,0.06,routine rest,true
+54,4,Nia,archive_weather_log,0.75425,0.348,-0.055,0.293,0.24446,0.71546,0.06,routine rest,true
+55,4,Ari,west_bridge_repair,0.91323,0.0924,-0.0424,0.05,0.191,0.8078,0.06,routine rest,true
+56,4,Fay,herb_roof_garden,0.86469,0.1102,-0.014,0.0962,0.201164,0.790244,0.06,ambient recovery,true
+57,4,Milo,north_lantern_relay,0.87248,0.0764,-0.014,0.0624,0.193728,0.803088,0.06,ambient recovery,true
+58,4,Nia,archive_weather_log,0.72796,0.293,0.0478,0.3408,0.694976,0.637296,0.06,none,false
+59,4,Ari,west_bridge_repair,0.91813,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+60,4,Fay,herb_roof_garden,0.84038,0.0962,0.0442,0.1404,0.570888,0.713448,0.06,none,false
+61,4,Milo,north_lantern_relay,0.87738,0.0624,-0.0124,0.05,0.191,0.8078,0.06,ambient recovery,true
+62,4,Nia,archive_weather_log,0.73286,0.3408,-0.014,0.3268,0.251896,0.702616,0.06,ambient recovery,true
+63,4,Ari,west_bridge_repair,0.92303,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+64,4,Fay,herb_roof_garden,0.84528,0.1404,-0.014,0.1264,0.207808,0.778768,0.06,ambient recovery,true
+65,4,Milo,north_lantern_relay,0.85109,0.05,0.0478,0.0978,0.641516,0.729636,0.06,none,false
+66,4,Nia,archive_weather_log,0.73776,0.3268,-0.014,0.3128,0.248816,0.707936,0.06,ambient recovery,true
+67,4,Ari,west_bridge_repair,0.92793,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+68,4,Fay,herb_roof_garden,0.85018,0.1264,-0.014,0.1124,0.204728,0.784088,0.06,ambient recovery,true
+69,4,Milo,north_lantern_relay,0.85599,0.0978,-0.014,0.0838,0.198436,0.794956,0.06,ambient recovery,true
+70,4,Nia,archive_weather_log,0.75701,0.3128,-0.055,0.2578,0.236716,0.728836,0.06,routine rest,true
+71,4,Ari,west_bridge_repair,0.94718,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+72,5,Fay,herb_roof_garden,0.86943,0.1124,-0.055,0.0574,0.192628,0.804988,0.06,routine rest,true
+73,5,Milo,north_lantern_relay,0.87524,0.0838,-0.0338,0.05,0.191,0.8078,0.06,routine rest,true
+74,5,Nia,archive_weather_log,0.76191,0.2578,-0.014,0.2438,0.233636,0.734156,0.06,ambient recovery,true
+75,5,Ari,west_bridge_repair,0.92089,0.05,0.0478,0.0978,0.641516,0.729636,0.06,none,false
+76,5,Fay,herb_roof_garden,0.87433,0.0574,-0.0074,0.05,0.191,0.8078,0.06,ambient recovery,true
+77,5,Milo,north_lantern_relay,0.88014,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+78,5,Nia,archive_weather_log,0.76681,0.2438,-0.014,0.2298,0.230556,0.739476,0.06,ambient recovery,true
+79,5,Ari,west_bridge_repair,0.92579,0.0978,-0.014,0.0838,0.198436,0.794956,0.06,ambient recovery,true
+80,5,Fay,herb_roof_garden,0.87923,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+81,5,Milo,north_lantern_relay,0.85385,0.05,0.0478,0.0978,0.641516,0.729636,0.06,none,false
+82,5,Nia,archive_weather_log,0.77171,0.2298,-0.014,0.2158,0.227476,0.744796,0.06,ambient recovery,true
+83,5,Ari,west_bridge_repair,0.93069,0.0838,-0.014,0.0698,0.195356,0.800276,0.06,ambient recovery,true
+84,5,Fay,herb_roof_garden,0.88413,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+85,5,Milo,north_lantern_relay,0.85875,0.0978,-0.014,0.0838,0.198436,0.794956,0.06,ambient recovery,true
+86,5,Nia,archive_weather_log,0.7474,0.2158,0.0442,0.26,0.5972,0.668,0.06,none,false
+87,5,Ari,west_bridge_repair,0.93559,0.0698,-0.014,0.0558,0.192276,0.805596,0.06,ambient recovery,true
+88,5,Fay,herb_roof_garden,0.90338,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+89,5,Milo,north_lantern_relay,0.878,0.0838,-0.0338,0.05,0.191,0.8078,0.06,routine rest,true
+90,6,Ari,west_bridge_repair,0.95484,0.0558,-0.0058,0.05,0.191,0.8078,0.06,routine rest,true
+91,6,Fay,herb_roof_garden,0.92263,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+92,6,Milo,north_lantern_relay,0.8829,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+93,6,Nia,archive_weather_log,0.7523,0.26,-0.014,0.246,0.23412,0.73332,0.06,ambient recovery,true
+94,6,Ari,west_bridge_repair,0.95974,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+95,6,Fay,herb_roof_garden,0.89172,0.05,0.0562,0.1062,0.643364,0.718744,0.095,none,false
+96,6,Milo,north_lantern_relay,0.8878,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+97,6,Nia,archive_weather_log,0.7572,0.246,-0.014,0.232,0.23104,0.73864,0.06,ambient recovery,true
+98,6,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+99,6,Fay,herb_roof_garden,0.89662,0.1062,-0.014,0.0922,0.200284,0.791764,0.06,ambient recovery,true
+100,6,Milo,north_lantern_relay,0.86349,0.05,0.0442,0.0942,0.560724,0.731004,0.06,none,false
+101,6,Nia,archive_weather_log,0.7621,0.232,-0.014,0.218,0.22796,0.74396,0.06,ambient recovery,true
+102,6,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+103,6,Fay,herb_roof_garden,0.90152,0.0922,-0.014,0.0782,0.197204,0.797084,0.06,ambient recovery,true
+104,6,Milo,north_lantern_relay,0.8372,0.0942,0.0478,0.142,0.65124,0.71284,0.06,none,false
+105,6,Nia,archive_weather_log,0.73581,0.218,0.0478,0.2658,0.678476,0.665796,0.06,none,false
+106,6,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+107,6,Fay,herb_roof_garden,0.92077,0.0782,-0.0282,0.05,0.191,0.8078,0.06,routine rest,true
+108,7,Milo,north_lantern_relay,0.85645,0.142,-0.055,0.087,0.19914,0.79374,0.06,routine rest,true
+109,7,Nia,archive_weather_log,0.75506,0.2658,-0.055,0.2108,0.306376,0.738996,0.095,routine rest,true
+110,7,Ari,west_bridge_repair,0.92711,0.05,0.0598,0.1098,0.724156,0.717376,0.095,none,false
+111,7,Fay,herb_roof_garden,0.89646,0.05,0.0442,0.0942,0.560724,0.731004,0.06,none,false
+112,7,Milo,north_lantern_relay,0.86135,0.087,-0.014,0.073,0.19606,0.79906,0.06,ambient recovery,true
+113,7,Nia,archive_weather_log,0.75996,0.2108,-0.014,0.1968,0.223296,0.752016,0.06,ambient recovery,true
+114,7,Ari,west_bridge_repair,0.93201,0.1098,-0.014,0.0958,0.201076,0.790396,0.06,ambient recovery,true
+115,7,Fay,herb_roof_garden,0.87017,0.0942,0.0478,0.142,0.65124,0.71284,0.06,none,false
+116,7,Milo,north_lantern_relay,0.86625,0.073,-0.014,0.059,0.19298,0.80438,0.06,ambient recovery,true
+117,7,Nia,archive_weather_log,0.76486,0.1968,-0.014,0.1828,0.220216,0.757336,0.06,ambient recovery,true
+118,7,Ari,west_bridge_repair,0.93691,0.0958,-0.014,0.0818,0.197996,0.795716,0.06,ambient recovery,true
+119,7,Fay,herb_roof_garden,0.87507,0.142,-0.014,0.128,0.20816,0.77816,0.06,ambient recovery,true
+120,7,Milo,north_lantern_relay,0.87115,0.059,-0.009,0.05,0.191,0.8078,0.06,ambient recovery,true
+121,7,Nia,archive_weather_log,0.73857,0.1828,0.0478,0.2306,0.670732,0.679172,0.06,none,false
+122,7,Ari,west_bridge_repair,0.94181,0.0818,-0.014,0.0678,0.194916,0.801036,0.06,ambient recovery,true
+123,7,Fay,herb_roof_garden,0.87997,0.128,-0.014,0.114,0.20508,0.78348,0.06,ambient recovery,true
+124,7,Milo,north_lantern_relay,0.8904,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+125,7,Nia,archive_weather_log,0.75782,0.2306,-0.055,0.1756,0.218632,0.760072,0.06,routine rest,true
+126,8,Ari,west_bridge_repair,0.96,0.0678,-0.0178,0.05,0.191,0.8078,0.06,routine rest,true
+127,8,Fay,herb_roof_garden,0.89922,0.114,-0.055,0.059,0.19298,0.80438,0.06,routine rest,true
+128,8,Milo,north_lantern_relay,0.8953,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+129,8,Nia,archive_weather_log,0.76272,0.1756,-0.014,0.1616,0.215552,0.765392,0.06,ambient recovery,true
+130,8,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+131,8,Fay,herb_roof_garden,0.87491,0.059,0.0442,0.1032,0.562704,0.727584,0.06,none,false
+132,8,Milo,north_lantern_relay,0.9002,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+133,8,Nia,archive_weather_log,0.76762,0.1616,-0.014,0.1476,0.212472,0.770712,0.06,ambient recovery,true
+134,8,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+135,8,Fay,herb_roof_garden,0.87981,0.1032,-0.014,0.0892,0.199624,0.792904,0.06,ambient recovery,true
+136,8,Milo,north_lantern_relay,0.87589,0.05,0.0442,0.0942,0.560724,0.731004,0.06,none,false
+137,8,Nia,archive_weather_log,0.74331,0.1476,0.0442,0.1918,0.582196,0.693916,0.06,none,false
+138,8,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+139,8,Fay,herb_roof_garden,0.85352,0.0892,0.0478,0.137,0.65014,0.71474,0.06,none,false
+140,8,Milo,north_lantern_relay,0.88079,0.0942,-0.014,0.0802,0.197644,0.796324,0.06,ambient recovery,true
+141,8,Nia,archive_weather_log,0.7124,0.1918,0.0562,0.248,0.67456,0.66486,0.095,none,false
+142,8,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+143,8,Fay,herb_roof_garden,0.87277,0.137,-0.055,0.082,0.19804,0.79564,0.06,routine rest,true
+144,9,Nia,archive_weather_log,0.73165,0.248,-0.055,0.193,0.22246,0.75346,0.06,routine rest,true
+145,9,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+146,9,Fay,herb_roof_garden,0.87767,0.082,-0.014,0.068,0.19496,0.80096,0.06,ambient recovery,true
+147,9,Milo,north_lantern_relay,0.88569,0.0802,-0.014,0.0662,0.194564,0.801644,0.06,ambient recovery,true
+148,9,Nia,archive_weather_log,0.73655,0.193,-0.014,0.179,0.21938,0.75878,0.06,ambient recovery,true
+149,9,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+150,9,Fay,herb_roof_garden,0.85138,0.068,0.0478,0.1158,0.645476,0.722796,0.06,none,false
+151,9,Milo,north_lantern_relay,0.89059,0.0662,-0.014,0.0522,0.191484,0.806964,0.06,ambient recovery,true
+152,9,Nia,archive_weather_log,0.74145,0.179,-0.014,0.165,0.2163,0.7641,0.06,ambient recovery,true
+153,9,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+154,9,Fay,herb_roof_garden,0.85628,0.1158,-0.014,0.1018,0.202396,0.788116,0.06,ambient recovery,true
+155,9,Milo,north_lantern_relay,0.8643,0.0522,0.0478,0.1,0.642,0.7288,0.06,none,false
+156,9,Nia,archive_weather_log,0.74635,0.165,-0.014,0.151,0.21322,0.76942,0.06,ambient recovery,true
+157,9,Ari,west_bridge_repair,0.93569,0.05,0.0442,0.0942,0.560724,0.731004,0.06,none,false
+158,9,Fay,herb_roof_garden,0.86118,0.1018,-0.014,0.0878,0.199316,0.793436,0.06,ambient recovery,true
+159,9,Milo,north_lantern_relay,0.8692,0.1,-0.014,0.086,0.19892,0.79412,0.06,ambient recovery,true
+160,9,Nia,archive_weather_log,0.7656,0.151,-0.055,0.096,0.20112,0.79032,0.06,routine rest,true
+161,9,Ari,west_bridge_repair,0.95494,0.0942,-0.0442,0.05,0.191,0.8078,0.06,routine rest,true
+162,10,Fay,herb_roof_garden,0.88043,0.0878,-0.0378,0.05,0.191,0.8078,0.06,routine rest,true
+163,10,Milo,north_lantern_relay,0.88845,0.086,-0.036,0.05,0.191,0.8078,0.06,routine rest,true
+164,10,Nia,archive_weather_log,0.7705,0.096,-0.014,0.082,0.19804,0.79564,0.06,ambient recovery,true
+165,10,Ari,west_bridge_repair,0.93063,0.05,0.0442,0.0942,0.560724,0.731004,0.06,none,false
+166,10,Fay,herb_roof_garden,0.88533,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+167,10,Milo,north_lantern_relay,0.89335,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+168,10,Nia,archive_weather_log,0.7754,0.082,-0.014,0.068,0.19496,0.80096,0.06,ambient recovery,true
+169,10,Ari,west_bridge_repair,0.93553,0.0942,-0.014,0.0802,0.197644,0.796324,0.06,ambient recovery,true
+170,10,Fay,herb_roof_garden,0.89023,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+171,10,Milo,north_lantern_relay,0.86904,0.05,0.0442,0.0942,0.560724,0.731004,0.06,none,false
+172,10,Nia,archive_weather_log,0.7803,0.068,-0.014,0.054,0.19188,0.80628,0.06,ambient recovery,true
+173,10,Ari,west_bridge_repair,0.94043,0.0802,-0.014,0.0662,0.194564,0.801644,0.06,ambient recovery,true
+174,10,Fay,herb_roof_garden,0.89513,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+175,10,Milo,north_lantern_relay,0.87394,0.0942,-0.014,0.0802,0.197644,0.796324,0.06,ambient recovery,true
+176,10,Nia,archive_weather_log,0.74939,0.054,0.0562,0.1102,0.644244,0.717224,0.095,none,false
+177,10,Ari,west_bridge_repair,0.94533,0.0662,-0.014,0.0522,0.191484,0.806964,0.06,ambient recovery,true
+178,10,Fay,herb_roof_garden,0.91438,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+179,10,Milo,north_lantern_relay,0.89319,0.0802,-0.0302,0.05,0.191,0.8078,0.06,routine rest,true
+180,11,Nia,archive_weather_log,0.76864,0.1102,-0.055,0.0552,0.192144,0.805824,0.06,routine rest,true
+181,11,Ari,west_bridge_repair,0.96,0.0522,-0.0022,0.05,0.191,0.8078,0.06,routine rest,true
+182,11,Fay,herb_roof_garden,0.91928,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+183,11,Milo,north_lantern_relay,0.89809,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+184,11,Nia,archive_weather_log,0.77354,0.0552,-0.0052,0.05,0.191,0.8078,0.06,ambient recovery,true
+185,11,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+186,11,Fay,herb_roof_garden,0.892247,0.05,0.04915,0.09915,0.671813,0.729123,0.06,none,false
+187,11,Milo,north_lantern_relay,0.90299,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+188,11,Nia,archive_weather_log,0.74263,0.05,0.0562,0.1062,0.643364,0.718744,0.095,none,false
+189,11,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+190,11,Fay,herb_roof_garden,0.863235,0.09915,0.05275,0.1519,0.763418,0.709078,0.06,none,false
+191,11,Milo,north_lantern_relay,0.875957,0.05,0.04915,0.09915,0.671813,0.729123,0.06,none,false
+192,11,Nia,archive_weather_log,0.74753,0.1062,-0.014,0.0922,0.200284,0.791764,0.06,ambient recovery,true
+193,11,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+194,11,Fay,herb_roof_garden,0.868135,0.1519,-0.014,0.1379,0.210338,0.774398,0.06,ambient recovery,true
+195,11,Milo,north_lantern_relay,0.880857,0.09915,-0.014,0.08515,0.198733,0.794443,0.06,ambient recovery,true
+196,11,Nia,archive_weather_log,0.76678,0.0922,-0.0422,0.05,0.191,0.8078,0.06,routine rest,true
+197,11,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+198,12,Milo,north_lantern_relay,0.900107,0.08515,-0.03515,0.05,0.191,0.8078,0.06,routine rest,true
+199,12,Nia,archive_weather_log,0.78603,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+200,12,Ari,west_bridge_repair,0.93371,0.05,0.0478,0.0978,0.641516,0.729636,0.06,none,false
+201,12,Fay,herb_roof_garden,0.873035,0.1379,-0.014,0.1239,0.207258,0.779718,0.06,ambient recovery,true
+202,12,Milo,north_lantern_relay,0.905007,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+203,12,Nia,archive_weather_log,0.79093,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+204,12,Ari,west_bridge_repair,0.93861,0.0978,-0.014,0.0838,0.198436,0.794956,0.06,ambient recovery,true
+205,12,Fay,herb_roof_garden,0.846002,0.1239,0.04915,0.17305,0.688071,0.701041,0.06,none,false
+206,12,Milo,north_lantern_relay,0.869395,0.05,0.06475,0.11475,0.835245,0.715495,0.095,none,false
+207,12,Nia,archive_weather_log,0.79583,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+208,12,Ari,west_bridge_repair,0.9143,0.0838,0.0442,0.128,0.56816,0.71816,0.06,none,false
+209,12,Fay,herb_roof_garden,0.850902,0.17305,-0.014,0.15905,0.214991,0.766361,0.06,ambient recovery,true
+210,12,Milo,north_lantern_relay,0.874295,0.11475,-0.014,0.10075,0.202165,0.788515,0.06,ambient recovery,true
+211,12,Nia,archive_weather_log,0.762198,0.05,0.06115,0.11115,0.754453,0.716863,0.095,none,false
+212,12,Ari,west_bridge_repair,0.9192,0.128,-0.014,0.114,0.20508,0.78348,0.06,ambient recovery,true
+213,12,Fay,herb_roof_garden,0.855802,0.15905,-0.014,0.14505,0.211911,0.771681,0.06,ambient recovery,true
+214,12,Milo,north_lantern_relay,0.893545,0.10075,-0.05075,0.05,0.191,0.8078,0.06,routine rest,true
+215,12,Nia,archive_weather_log,0.781448,0.11115,-0.055,0.05615,0.192353,0.805463,0.06,routine rest,true
+216,13,Ari,west_bridge_repair,0.93845,0.114,-0.055,0.059,0.19298,0.80438,0.06,routine rest,true
+217,13,Fay,herb_roof_garden,0.875052,0.14505,-0.055,0.09005,0.199811,0.792581,0.06,routine rest,true
+218,13,Milo,north_lantern_relay,0.898445,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+219,13,Nia,archive_weather_log,0.786348,0.05615,-0.00615,0.05,0.191,0.8078,0.06,ambient recovery,true
+220,13,Ari,west_bridge_repair,0.94335,0.059,-0.009,0.05,0.191,0.8078,0.06,ambient recovery,true
+221,13,Fay,herb_roof_garden,0.84142,0.09005,0.06115,0.1512,0.763264,0.701644,0.095,none,false
+222,13,Milo,north_lantern_relay,0.903345,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+223,13,Nia,archive_weather_log,0.791248,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+224,13,Ari,west_bridge_repair,0.94825,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+225,13,Fay,herb_roof_garden,0.84632,0.1512,-0.014,0.1372,0.210184,0.774664,0.06,ambient recovery,true
+226,13,Milo,north_lantern_relay,0.876312,0.05,0.04915,0.09915,0.671813,0.729123,0.06,none,false
+227,13,Nia,archive_weather_log,0.796148,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+228,13,Ari,west_bridge_repair,0.95315,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+229,13,Fay,herb_roof_garden,0.85122,0.1372,-0.014,0.1232,0.207104,0.779984,0.06,ambient recovery,true
+230,13,Milo,north_lantern_relay,0.881212,0.09915,-0.014,0.08515,0.198733,0.794443,0.06,ambient recovery,true
+231,13,Nia,archive_weather_log,0.769115,0.05,0.04915,0.09915,0.671813,0.729123,0.06,none,false
+232,13,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+233,13,Fay,herb_roof_garden,0.87047,0.1232,-0.055,0.0682,0.195004,0.800884,0.06,routine rest,true
+234,14,Milo,north_lantern_relay,0.900462,0.08515,-0.03515,0.05,0.191,0.8078,0.06,routine rest,true
+235,14,Nia,archive_weather_log,0.788365,0.09915,-0.04915,0.05,0.191,0.8078,0.06,routine rest,true
+236,14,Ari,west_bridge_repair,0.92909,0.05,0.0562,0.1062,0.643364,0.718744,0.095,none,false
+237,14,Fay,herb_roof_garden,0.87537,0.0682,-0.014,0.0542,0.191924,0.806204,0.06,ambient recovery,true
+238,14,Milo,north_lantern_relay,0.905362,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+239,14,Nia,archive_weather_log,0.761333,0.05,0.04915,0.09915,0.671813,0.729123,0.06,none,false
+240,14,Ari,west_bridge_repair,0.93399,0.1062,-0.014,0.0922,0.200284,0.791764,0.06,ambient recovery,true
+241,14,Fay,herb_roof_garden,0.839757,0.0542,0.06475,0.11895,0.836169,0.713899,0.095,none,false
+242,14,Milo,north_lantern_relay,0.910262,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+243,14,Nia,archive_weather_log,0.766233,0.09915,-0.014,0.08515,0.198733,0.794443,0.06,ambient recovery,true
+244,14,Ari,west_bridge_repair,0.93889,0.0922,-0.014,0.0782,0.197204,0.797084,0.06,ambient recovery,true
+245,14,Fay,herb_roof_garden,0.844657,0.11895,-0.014,0.10495,0.203089,0.786919,0.06,ambient recovery,true
+246,14,Milo,north_lantern_relay,0.915162,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+247,14,Nia,archive_weather_log,0.73722,0.08515,0.05275,0.1379,0.760338,0.714398,0.06,none,false
+248,14,Ari,west_bridge_repair,0.94379,0.0782,-0.014,0.0642,0.194124,0.802404,0.06,ambient recovery,true
+249,14,Fay,herb_roof_garden,0.849557,0.10495,-0.014,0.09095,0.200009,0.792239,0.06,ambient recovery,true
+250,14,Milo,north_lantern_relay,0.934412,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+251,14,Nia,archive_weather_log,0.75647,0.1379,-0.055,0.0829,0.198238,0.795298,0.06,routine rest,true
+252,15,Fay,herb_roof_garden,0.868807,0.09095,-0.04095,0.05,0.191,0.8078,0.06,routine rest,true
+253,15,Milo,north_lantern_relay,0.953662,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+254,15,Nia,archive_weather_log,0.76137,0.0829,-0.014,0.0689,0.195158,0.800618,0.06,ambient recovery,true
+255,15,Ari,west_bridge_repair,0.91948,0.0642,0.0442,0.1084,0.563848,0.725608,0.06,none,false
+256,15,Fay,herb_roof_garden,0.873707,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+257,15,Milo,north_lantern_relay,0.92465,0.05,0.05275,0.10275,0.752605,0.727755,0.06,none,false
+258,15,Nia,archive_weather_log,0.76627,0.0689,-0.014,0.0549,0.192078,0.805938,0.06,ambient recovery,true
+259,15,Ari,west_bridge_repair,0.892447,0.1084,0.04915,0.15755,0.684661,0.706931,0.06,none,false
+260,15,Fay,herb_roof_garden,0.878607,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+261,15,Milo,north_lantern_relay,0.897617,0.10275,0.04915,0.1519,0.683418,0.709078,0.06,none,false
+262,15,Nia,archive_weather_log,0.77117,0.0549,-0.0049,0.05,0.191,0.8078,0.06,ambient recovery,true
+263,15,Ari,west_bridge_repair,0.897347,0.15755,-0.014,0.14355,0.211581,0.772251,0.06,ambient recovery,true
+264,15,Fay,herb_roof_garden,0.883508,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+265,15,Milo,north_lantern_relay,0.902517,0.1519,-0.014,0.1379,0.210338,0.774398,0.06,ambient recovery,true
+266,15,Nia,archive_weather_log,0.744138,0.05,0.04915,0.09915,0.671813,0.729123,0.06,none,false
+267,15,Ari,west_bridge_repair,0.902247,0.14355,-0.014,0.12955,0.208501,0.777571,0.06,ambient recovery,true
+268,15,Fay,herb_roof_garden,0.902757,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+269,15,Milo,north_lantern_relay,0.921767,0.1379,-0.055,0.0829,0.198238,0.795298,0.06,routine rest,true
+270,16,Nia,archive_weather_log,0.763388,0.09915,-0.04915,0.05,0.191,0.8078,0.06,routine rest,true
+271,16,Ari,west_bridge_repair,0.921497,0.12955,-0.055,0.07455,0.196401,0.798471,0.06,routine rest,true
+272,16,Fay,herb_roof_garden,0.907658,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+273,16,Milo,north_lantern_relay,0.926667,0.0829,-0.014,0.0689,0.195158,0.800618,0.06,ambient recovery,true
+274,16,Nia,archive_weather_log,0.768288,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+275,16,Ari,west_bridge_repair,0.926397,0.07455,-0.014,0.06055,0.193321,0.803791,0.06,ambient recovery,true
+276,16,Fay,herb_roof_garden,0.880625,0.05,0.04915,0.09915,0.671813,0.729123,0.06,none,false
+277,16,Milo,north_lantern_relay,0.931567,0.0689,-0.014,0.0549,0.192078,0.805938,0.06,ambient recovery,true
+278,16,Nia,archive_weather_log,0.773188,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+279,16,Ari,west_bridge_repair,0.931298,0.06055,-0.01055,0.05,0.191,0.8078,0.06,ambient recovery,true
+280,16,Fay,herb_roof_garden,0.885525,0.09915,-0.014,0.08515,0.198733,0.794443,0.06,ambient recovery,true
+281,16,Milo,north_lantern_relay,0.902555,0.0549,0.05275,0.10765,0.753683,0.725893,0.06,none,false
+282,16,Nia,archive_weather_log,0.778088,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+283,16,Ari,west_bridge_repair,0.936198,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+284,16,Fay,herb_roof_garden,0.890425,0.08515,-0.014,0.07115,0.195653,0.799763,0.06,ambient recovery,true
+285,16,Milo,north_lantern_relay,0.875522,0.10765,0.04915,0.1568,0.684496,0.707216,0.06,none,false
+286,16,Nia,archive_weather_log,0.797338,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+287,16,Ari,west_bridge_repair,0.955448,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+288,17,Fay,herb_roof_garden,0.909675,0.07115,-0.02115,0.05,0.191,0.8078,0.06,routine rest,true
+289,17,Milo,north_lantern_relay,0.894772,0.1568,-0.055,0.1018,0.202396,0.788116,0.06,routine rest,true
+290,17,Nia,archive_weather_log,0.770305,0.05,0.04915,0.09915,0.671813,0.729123,0.06,none,false
+291,17,Ari,west_bridge_repair,0.926435,0.05,0.05275,0.10275,0.752605,0.727755,0.06,none,false
+292,17,Fay,herb_roof_garden,0.880663,0.05,0.05275,0.10275,0.752605,0.727755,0.06,none,false
+293,17,Milo,north_lantern_relay,0.899672,0.1018,-0.014,0.0878,0.199316,0.793436,0.06,ambient recovery,true
+294,17,Nia,archive_weather_log,0.775205,0.09915,-0.014,0.08515,0.198733,0.794443,0.06,ambient recovery,true
+295,17,Ari,west_bridge_repair,0.931335,0.10275,-0.014,0.08875,0.199525,0.793075,0.06,ambient recovery,true
+296,17,Fay,herb_roof_garden,0.885563,0.10275,-0.014,0.08875,0.199525,0.793075,0.06,ambient recovery,true
+297,17,Milo,north_lantern_relay,0.861337,0.0878,0.0697,0.1575,0.95465,0.69925,0.095,none,false
+298,17,Nia,archive_weather_log,0.780105,0.08515,-0.014,0.07115,0.195653,0.799763,0.06,ambient recovery,true
+299,17,Ari,west_bridge_repair,0.936235,0.08875,-0.014,0.07475,0.196445,0.798395,0.06,ambient recovery,true
+300,17,Fay,herb_roof_garden,0.890463,0.08875,-0.014,0.07475,0.196445,0.798395,0.06,ambient recovery,true
+301,17,Milo,north_lantern_relay,0.866237,0.1575,-0.014,0.1435,0.21157,0.77227,0.06,ambient recovery,true
+302,17,Nia,archive_weather_log,0.753073,0.07115,0.04915,0.1203,0.676466,0.721086,0.06,none,false
+303,17,Ari,west_bridge_repair,0.941135,0.07475,-0.014,0.06075,0.193365,0.803715,0.06,ambient recovery,true
+304,17,Fay,herb_roof_garden,0.909713,0.07475,-0.02475,0.05,0.191,0.8078,0.06,routine rest,true
+305,17,Milo,north_lantern_relay,0.885487,0.1435,-0.055,0.0885,0.19947,0.79317,0.06,routine rest,true
+306,18,Ari,west_bridge_repair,0.96,0.06075,-0.01075,0.05,0.191,0.8078,0.06,routine rest,true
+307,18,Fay,herb_roof_garden,0.928963,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+308,18,Milo,north_lantern_relay,0.853753,0.0885,0.0577,0.1462,0.872164,0.711244,0.06,none,false
+309,18,Nia,archive_weather_log,0.757973,0.1203,-0.014,0.1063,0.203386,0.786406,0.06,ambient recovery,true
+310,18,Ari,west_bridge_repair,0.932967,0.05,0.04915,0.09915,0.671813,0.729123,0.06,none,false
+311,18,Fay,herb_roof_garden,0.90193,0.05,0.04915,0.09915,0.671813,0.729123,0.06,none,false
+312,18,Milo,north_lantern_relay,0.858653,0.1462,-0.014,0.1322,0.209084,0.776564,0.06,ambient recovery,true
+313,18,Nia,archive_weather_log,0.762873,0.1063,-0.014,0.0923,0.200306,0.791726,0.06,ambient recovery,true
+314,18,Ari,west_bridge_repair,0.937867,0.09915,-0.014,0.08515,0.198733,0.794443,0.06,ambient recovery,true
+315,18,Fay,herb_roof_garden,0.90683,0.09915,-0.014,0.08515,0.198733,0.794443,0.06,ambient recovery,true
+316,18,Milo,north_lantern_relay,0.828898,0.1322,0.0541,0.1863,0.800986,0.696006,0.06,none,false
+317,18,Nia,archive_weather_log,0.767773,0.0923,-0.014,0.0783,0.197226,0.797046,0.06,ambient recovery,true
+318,18,Ari,west_bridge_repair,0.942767,0.08515,-0.014,0.07115,0.195653,0.799763,0.06,ambient recovery,true
+319,18,Fay,herb_roof_garden,0.91173,0.08515,-0.014,0.07115,0.195653,0.799763,0.06,ambient recovery,true
+320,18,Milo,north_lantern_relay,0.833798,0.1863,-0.014,0.1723,0.217906,0.761326,0.06,ambient recovery,true
+321,18,Nia,archive_weather_log,0.73216,0.0783,0.06475,0.14305,0.841471,0.704741,0.095,none,false
+322,18,Ari,west_bridge_repair,0.96,0.07115,-0.02115,0.05,0.191,0.8078,0.06,routine rest,true
+323,18,Fay,herb_roof_garden,0.93098,0.07115,-0.02115,0.05,0.191,0.8078,0.06,routine rest,true
+324,19,Milo,north_lantern_relay,0.853048,0.1723,-0.055,0.1173,0.205806,0.782226,0.06,routine rest,true
+325,19,Nia,archive_weather_log,0.75141,0.14305,-0.055,0.08805,0.199371,0.793341,0.06,routine rest,true
+326,19,Ari,west_bridge_repair,0.930987,0.05,0.05275,0.10275,0.752605,0.727755,0.06,none,false
+327,19,Fay,herb_roof_garden,0.93588,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+328,19,Milo,north_lantern_relay,0.857948,0.1173,-0.014,0.1033,0.202726,0.787546,0.06,ambient recovery,true
+329,19,Nia,archive_weather_log,0.75631,0.08805,-0.014,0.07405,0.196291,0.798661,0.06,ambient recovery,true
+330,19,Ari,west_bridge_repair,0.935887,0.10275,-0.014,0.08875,0.199525,0.793075,0.06,ambient recovery,true
+331,19,Fay,herb_roof_garden,0.906868,0.05,0.05275,0.10275,0.752605,0.727755,0.06,none,false
+332,19,Milo,north_lantern_relay,0.862848,0.1033,-0.014,0.0893,0.199646,0.792866,0.06,ambient recovery,true
+333,19,Nia,archive_weather_log,0.76121,0.07405,-0.014,0.06005,0.193211,0.803981,0.06,ambient recovery,true
+334,19,Ari,west_bridge_repair,0.940787,0.08875,-0.014,0.07475,0.196445,0.798395,0.06,ambient recovery,true
+335,19,Fay,herb_roof_garden,0.911768,0.10275,-0.014,0.08875,0.199525,0.793075,0.06,ambient recovery,true
+336,19,Milo,north_lantern_relay,0.826493,0.0893,0.0661,0.1554,0.874188,0.700048,0.095,none,false
+337,19,Nia,archive_weather_log,0.732198,0.06005,0.05275,0.1128,0.754816,0.723936,0.06,none,false
+338,19,Ari,west_bridge_repair,0.911775,0.07475,0.05275,0.1275,0.75805,0.71835,0.06,none,false
+339,19,Fay,herb_roof_garden,0.916668,0.08875,-0.014,0.07475,0.196445,0.798395,0.06,ambient recovery,true
+340,19,Milo,north_lantern_relay,0.845743,0.1554,-0.055,0.1004,0.202088,0.788648,0.06,routine rest,true
+341,19,Nia,archive_weather_log,0.751448,0.1128,-0.055,0.0578,0.192716,0.804836,0.06,routine rest,true
+342,20,Ari,west_bridge_repair,0.931025,0.1275,-0.055,0.0725,0.19595,0.79925,0.06,routine rest,true
+343,20,Fay,herb_roof_garden,0.935918,0.07475,-0.02475,0.05,0.271,0.8001,0.095,routine rest,true
+344,20,Milo,north_lantern_relay,0.850643,0.1004,-0.014,0.0864,0.199008,0.793968,0.06,ambient recovery,true
+345,20,Nia,archive_weather_log,0.756348,0.0578,-0.0078,0.05,0.191,0.8078,0.06,ambient recovery,true
+346,20,Ari,west_bridge_repair,0.935925,0.0725,-0.014,0.0585,0.19287,0.80457,0.06,ambient recovery,true
+347,20,Fay,herb_roof_garden,0.899563,0.05,0.0661,0.1161,0.865542,0.714982,0.095,none,false
+348,20,Milo,north_lantern_relay,0.855543,0.0864,-0.014,0.0724,0.195928,0.799288,0.06,ambient recovery,true
+349,20,Nia,archive_weather_log,0.761248,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+350,20,Ari,west_bridge_repair,0.940825,0.0585,-0.0085,0.05,0.191,0.8078,0.06,ambient recovery,true
+351,20,Fay,herb_roof_garden,0.904463,0.1161,-0.014,0.1021,0.202462,0.788002,0.06,ambient recovery,true
+352,20,Milo,north_lantern_relay,0.825788,0.0724,0.0541,0.1265,0.78783,0.71873,0.06,none,false
+353,20,Nia,archive_weather_log,0.766148,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+354,20,Ari,west_bridge_repair,0.945725,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+355,20,Fay,herb_roof_garden,0.909363,0.1021,-0.014,0.0881,0.199382,0.793322,0.06,ambient recovery,true
+356,20,Milo,north_lantern_relay,0.830688,0.1265,-0.014,0.1125,0.20475,0.78405,0.06,ambient recovery,true
+357,20,Nia,archive_weather_log,0.729793,0.05,0.0661,0.1161,0.865542,0.714982,0.095,none,false
+358,20,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+359,20,Fay,herb_roof_garden,0.928613,0.0881,-0.0381,0.05,0.191,0.8078,0.06,routine rest,true
+360,21,Nia,archive_weather_log,0.749043,0.1161,-0.055,0.0611,0.193442,0.803582,0.06,routine rest,true
+361,21,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.271,0.8001,0.095,routine rest,true
+362,21,Fay,herb_roof_garden,0.933513,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+363,21,Milo,north_lantern_relay,0.835588,0.1125,-0.014,0.0985,0.20167,0.78937,0.06,ambient recovery,true
+364,21,Nia,archive_weather_log,0.753943,0.0611,-0.0111,0.05,0.191,0.8078,0.06,ambient recovery,true
+365,21,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+366,21,Fay,herb_roof_garden,0.901778,0.05,0.0577,0.1077,0.863694,0.725874,0.06,none,false
+367,21,Milo,north_lantern_relay,0.840488,0.0985,-0.014,0.0845,0.19859,0.79469,0.06,ambient recovery,true
+368,21,Nia,archive_weather_log,0.758843,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+369,21,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+370,21,Fay,herb_roof_garden,0.906678,0.1077,-0.014,0.0937,0.200614,0.791194,0.06,ambient recovery,true
+371,21,Milo,north_lantern_relay,0.808753,0.0845,0.0577,0.1422,0.871284,0.712764,0.06,none,false
+372,21,Nia,archive_weather_log,0.763743,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+373,21,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+374,21,Fay,herb_roof_garden,0.911578,0.0937,-0.014,0.0797,0.197534,0.796514,0.06,ambient recovery,true
+375,21,Milo,north_lantern_relay,0.813653,0.1422,-0.014,0.1282,0.208204,0.778084,0.06,ambient recovery,true
+376,21,Nia,archive_weather_log,0.782993,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+377,21,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+378,22,Fay,herb_roof_garden,0.930828,0.0797,-0.0297,0.05,0.191,0.8078,0.06,routine rest,true
+379,22,Milo,north_lantern_relay,0.832903,0.1282,-0.055,0.0732,0.196104,0.798984,0.06,routine rest,true
+380,22,Nia,archive_weather_log,0.787893,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+381,22,Ari,west_bridge_repair,0.926368,0.05,0.06115,0.11115,0.754453,0.716863,0.095,none,false
+382,22,Fay,herb_roof_garden,0.935728,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+383,22,Milo,north_lantern_relay,0.837803,0.0732,-0.014,0.0592,0.193024,0.804304,0.06,ambient recovery,true
+384,22,Nia,archive_weather_log,0.792793,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+385,22,Ari,west_bridge_repair,0.931268,0.11115,-0.014,0.09715,0.201373,0.789883,0.06,ambient recovery,true
+386,22,Fay,herb_roof_garden,0.940628,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+387,22,Milo,north_lantern_relay,0.808048,0.0592,0.0541,0.1133,0.784926,0.723746,0.06,none,false
+388,22,Nia,archive_weather_log,0.797693,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+389,22,Ari,west_bridge_repair,0.902255,0.09715,0.05275,0.1499,0.762978,0.709838,0.06,none,false
+390,22,Fay,herb_roof_garden,0.945528,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+391,22,Milo,north_lantern_relay,0.812948,0.1133,-0.014,0.0993,0.201846,0.789066,0.06,ambient recovery,true
+392,22,Nia,archive_weather_log,0.767938,0.05,0.0541,0.1041,0.782902,0.727242,0.06,none,false
+393,22,Ari,west_bridge_repair,0.907155,0.1499,-0.014,0.1359,0.209898,0.775158,0.06,ambient recovery,true
+394,22,Fay,herb_roof_garden,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+395,22,Milo,north_lantern_relay,0.832198,0.0993,-0.0493,0.05,0.191,0.8078,0.06,routine rest,true
+396,23,Nia,archive_weather_log,0.787188,0.1041,-0.0541,0.05,0.191,0.8078,0.06,routine rest,true
+397,23,Ari,west_bridge_repair,0.926405,0.1359,-0.055,0.0809,0.197798,0.796058,0.06,routine rest,true
+398,23,Fay,herb_roof_garden,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+399,23,Milo,north_lantern_relay,0.837098,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+400,23,Nia,archive_weather_log,0.792088,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+401,23,Ari,west_bridge_repair,0.931305,0.0809,-0.014,0.0669,0.194718,0.801378,0.06,ambient recovery,true
+402,23,Fay,herb_roof_garden,0.930245,0.05,0.0541,0.1041,0.782902,0.727242,0.06,none,false
+403,23,Milo,north_lantern_relay,0.841998,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+404,23,Nia,archive_weather_log,0.796988,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+405,23,Ari,west_bridge_repair,0.936205,0.0669,-0.014,0.0529,0.191638,0.806698,0.06,ambient recovery,true
+406,23,Fay,herb_roof_garden,0.935145,0.1041,-0.014,0.0901,0.199822,0.792562,0.06,ambient recovery,true
+407,23,Milo,north_lantern_relay,0.80952,0.05,0.05905,0.10905,0.893991,0.725361,0.06,none,false
+408,23,Nia,archive_weather_log,0.801888,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+409,23,Ari,west_bridge_repair,0.941105,0.0529,-0.0029,0.05,0.191,0.8078,0.06,ambient recovery,true
+410,23,Fay,herb_roof_garden,0.940045,0.0901,-0.014,0.0761,0.196742,0.797882,0.06,ambient recovery,true
+411,23,Milo,north_lantern_relay,0.81442,0.10905,-0.014,0.09505,0.200911,0.790681,0.06,ambient recovery,true
+412,23,Nia,archive_weather_log,0.821138,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+413,23,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+414,24,Milo,north_lantern_relay,0.83367,0.09505,-0.04505,0.05,0.191,0.8078,0.06,routine rest,true
+415,24,Nia,archive_weather_log,0.840388,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+416,24,Ari,west_bridge_repair,0.930987,0.05,0.05275,0.10275,0.752605,0.727755,0.06,none,false
+417,24,Fay,herb_roof_garden,0.944945,0.0761,-0.014,0.0621,0.193662,0.803202,0.06,ambient recovery,true
+418,24,Milo,north_lantern_relay,0.83857,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+419,24,Nia,archive_weather_log,0.845288,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+420,24,Ari,west_bridge_repair,0.935887,0.10275,-0.014,0.08875,0.199525,0.793075,0.06,ambient recovery,true
+421,24,Fay,herb_roof_garden,0.90859,0.0621,0.0661,0.1282,0.868204,0.710384,0.095,none,false
+422,24,Milo,north_lantern_relay,0.84347,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+423,24,Nia,archive_weather_log,0.850188,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+424,24,Ari,west_bridge_repair,0.940787,0.08875,-0.014,0.07475,0.196445,0.798395,0.06,ambient recovery,true
+425,24,Fay,herb_roof_garden,0.91349,0.1282,-0.014,0.1142,0.205124,0.783404,0.06,ambient recovery,true
+426,24,Milo,north_lantern_relay,0.84837,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+427,24,Nia,archive_weather_log,0.813833,0.05,0.0661,0.1161,0.865542,0.714982,0.095,none,false
+428,24,Ari,west_bridge_repair,0.945688,0.07475,-0.014,0.06075,0.193365,0.803715,0.06,ambient recovery,true
+429,24,Fay,herb_roof_garden,0.91839,0.1142,-0.014,0.1002,0.202044,0.788724,0.06,ambient recovery,true
+430,24,Milo,north_lantern_relay,0.86762,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+431,24,Nia,archive_weather_log,0.833083,0.1161,-0.055,0.0611,0.193442,0.803582,0.06,routine rest,true
+432,25,Ari,west_bridge_repair,0.96,0.06075,-0.01075,0.05,0.191,0.8078,0.06,routine rest,true
+433,25,Fay,herb_roof_garden,0.93764,0.1002,-0.0502,0.05,0.191,0.8078,0.06,routine rest,true
+434,25,Milo,north_lantern_relay,0.87252,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+435,25,Nia,archive_weather_log,0.837983,0.0611,-0.0111,0.05,0.191,0.8078,0.06,ambient recovery,true
+436,25,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+437,25,Fay,herb_roof_garden,0.907885,0.05,0.0541,0.1041,0.782902,0.727242,0.06,none,false
+438,25,Milo,north_lantern_relay,0.840043,0.05,0.05905,0.10905,0.893991,0.725361,0.06,none,false
+439,25,Nia,archive_weather_log,0.842883,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+440,25,Ari,west_bridge_repair,0.928265,0.05,0.0577,0.1077,0.863694,0.725874,0.06,none,false
+441,25,Fay,herb_roof_garden,0.912785,0.1041,-0.014,0.0901,0.199822,0.792562,0.06,ambient recovery,true
+442,25,Milo,north_lantern_relay,0.824643,0.10905,0.028,0.13705,0.210151,0.714721,0.06,none,false
+443,25,Nia,archive_weather_log,0.847783,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+444,25,Ari,west_bridge_repair,0.933165,0.1077,-0.014,0.0937,0.200614,0.791194,0.06,ambient recovery,true
+445,25,Fay,herb_roof_garden,0.917685,0.0901,-0.014,0.0761,0.196742,0.797882,0.06,ambient recovery,true
+446,25,Milo,north_lantern_relay,0.829543,0.13705,-0.014,0.12305,0.207071,0.780041,0.06,ambient recovery,true
+447,25,Nia,archive_weather_log,0.811428,0.05,0.0661,0.1161,0.865542,0.714982,0.095,none,false
+448,25,Ari,west_bridge_repair,0.952415,0.0937,-0.0437,0.05,0.191,0.8078,0.06,routine rest,true
+449,25,Fay,herb_roof_garden,0.936935,0.0761,-0.0261,0.05,0.191,0.8078,0.06,routine rest,true
+450,26,Milo,north_lantern_relay,0.848793,0.12305,-0.055,0.06805,0.194971,0.800941,0.06,routine rest,true
+451,26,Nia,archive_weather_log,0.830678,0.1161,-0.055,0.0611,0.193442,0.803582,0.06,routine rest,true
+452,26,Ari,west_bridge_repair,0.92266,0.05,0.0541,0.1041,0.782902,0.727242,0.06,none,false
+453,26,Fay,herb_roof_garden,0.941835,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+454,26,Milo,north_lantern_relay,0.853693,0.06805,-0.014,0.05405,0.191891,0.806261,0.06,ambient recovery,true
+455,26,Nia,archive_weather_log,0.835578,0.0611,-0.0111,0.05,0.191,0.8078,0.06,ambient recovery,true
+456,26,Ari,west_bridge_repair,0.92756,0.1041,-0.014,0.0901,0.199822,0.792562,0.06,ambient recovery,true
+457,26,Fay,herb_roof_garden,0.9101,0.05,0.0577,0.1077,0.863694,0.725874,0.06,none,false
+458,26,Milo,north_lantern_relay,0.858593,0.05405,-0.00405,0.05,0.191,0.8078,0.06,ambient recovery,true
+459,26,Nia,archive_weather_log,0.840478,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+460,26,Ari,west_bridge_repair,0.93246,0.0901,-0.014,0.0761,0.196742,0.797882,0.06,ambient recovery,true
+461,26,Fay,herb_roof_garden,0.915,0.1077,-0.014,0.0937,0.200614,0.791194,0.06,ambient recovery,true
+462,26,Milo,north_lantern_relay,0.863493,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+463,26,Nia,archive_weather_log,0.808743,0.05,0.0577,0.1077,0.863694,0.725874,0.06,none,false
+464,26,Ari,west_bridge_repair,0.93736,0.0761,-0.014,0.0621,0.193662,0.803202,0.06,ambient recovery,true
+465,26,Fay,herb_roof_garden,0.9199,0.0937,-0.014,0.0797,0.197534,0.796514,0.06,ambient recovery,true
+466,26,Milo,north_lantern_relay,0.882743,0.05,0.0,0.05,0.271,0.8001,0.095,routine rest,true
+467,26,Nia,archive_weather_log,0.827993,0.1077,-0.055,0.0527,0.191594,0.806774,0.06,routine rest,true
+468,27,Fay,herb_roof_garden,0.93915,0.0797,-0.0297,0.05,0.191,0.8078,0.06,routine rest,true
+469,27,Milo,north_lantern_relay,0.901993,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+470,27,Nia,archive_weather_log,0.832893,0.0527,-0.0027,0.05,0.191,0.8078,0.06,ambient recovery,true
+471,27,Ari,west_bridge_repair,0.907605,0.0621,0.0541,0.1162,0.785564,0.722644,0.06,none,false
+472,27,Fay,herb_roof_garden,0.94405,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+473,27,Milo,north_lantern_relay,0.906893,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+474,27,Nia,archive_weather_log,0.837793,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+475,27,Ari,west_bridge_repair,0.912505,0.1162,-0.014,0.1022,0.202484,0.787964,0.06,ambient recovery,true
+476,27,Fay,herb_roof_garden,0.94895,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+477,27,Milo,north_lantern_relay,0.891493,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+478,27,Nia,archive_weather_log,0.842693,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+479,27,Ari,west_bridge_repair,0.917405,0.1022,-0.014,0.0882,0.199404,0.793284,0.06,ambient recovery,true
+480,27,Fay,herb_roof_garden,0.95385,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+481,27,Milo,north_lantern_relay,0.896393,0.078,-0.014,0.064,0.19408,0.80248,0.06,ambient recovery,true
+482,27,Nia,archive_weather_log,0.812938,0.05,0.0541,0.1041,0.782902,0.727242,0.06,none,false
+483,27,Ari,west_bridge_repair,0.922305,0.0882,-0.014,0.0742,0.196324,0.798604,0.06,ambient recovery,true
+484,27,Fay,herb_roof_garden,0.96,0.05,0.0,0.05,0.271,0.8001,0.095,routine rest,true
+485,27,Milo,north_lantern_relay,0.915643,0.064,-0.014,0.05,0.191,0.8078,0.06,routine rest,true
+486,28,Nia,archive_weather_log,0.832188,0.1041,-0.0541,0.05,0.191,0.8078,0.06,routine rest,true
+487,28,Ari,west_bridge_repair,0.941555,0.0742,-0.0242,0.05,0.271,0.8001,0.095,routine rest,true
+488,28,Fay,herb_roof_garden,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+489,28,Milo,north_lantern_relay,0.900243,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+490,28,Nia,archive_weather_log,0.837088,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+491,28,Ari,west_bridge_repair,0.90322,0.05,0.0697,0.1197,0.946334,0.713614,0.095,none,false
+492,28,Fay,herb_roof_garden,0.930245,0.05,0.0541,0.1041,0.782902,0.727242,0.06,none,false
+493,28,Milo,north_lantern_relay,0.905143,0.078,-0.014,0.064,0.19408,0.80248,0.06,ambient recovery,true
+494,28,Nia,archive_weather_log,0.841988,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+495,28,Ari,west_bridge_repair,0.90812,0.1197,-0.014,0.1057,0.203254,0.786634,0.06,ambient recovery,true
+496,28,Fay,herb_roof_garden,0.935145,0.1041,-0.014,0.0901,0.199822,0.792562,0.06,ambient recovery,true
+497,28,Milo,north_lantern_relay,0.889743,0.064,0.028,0.092,0.20024,0.73184,0.06,none,false
+498,28,Nia,archive_weather_log,0.846888,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+499,28,Ari,west_bridge_repair,0.91302,0.1057,-0.014,0.0917,0.200174,0.791954,0.06,ambient recovery,true
+500,28,Fay,herb_roof_garden,0.940045,0.0901,-0.014,0.0761,0.196742,0.797882,0.06,ambient recovery,true
+501,28,Milo,north_lantern_relay,0.894643,0.092,-0.014,0.078,0.19716,0.79716,0.06,ambient recovery,true
+502,28,Nia,archive_weather_log,0.866138,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+503,28,Ari,west_bridge_repair,0.93227,0.0917,-0.0417,0.05,0.191,0.8078,0.06,routine rest,true
+504,29,Fay,herb_roof_garden,0.959295,0.0761,-0.0261,0.05,0.191,0.8078,0.06,routine rest,true
+505,29,Milo,north_lantern_relay,0.913893,0.078,-0.028,0.05,0.191,0.8078,0.06,routine rest,true
+506,29,Nia,archive_weather_log,0.871038,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+507,29,Ari,west_bridge_repair,0.900535,0.05,0.0577,0.1077,0.863694,0.725874,0.06,none,false
+508,29,Fay,herb_roof_garden,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+509,29,Milo,north_lantern_relay,0.918793,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+510,29,Nia,archive_weather_log,0.875938,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+511,29,Ari,west_bridge_repair,0.905435,0.1077,-0.014,0.0937,0.200614,0.791194,0.06,ambient recovery,true
+512,29,Fay,herb_roof_garden,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+513,29,Milo,north_lantern_relay,0.903393,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+514,29,Nia,archive_weather_log,0.880838,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+515,29,Ari,west_bridge_repair,0.910335,0.0937,-0.014,0.0797,0.197534,0.796514,0.06,ambient recovery,true
+516,29,Fay,herb_roof_garden,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+517,29,Milo,north_lantern_relay,0.887993,0.078,0.028,0.106,0.20332,0.72652,0.06,none,false
+518,29,Nia,archive_weather_log,0.851083,0.05,0.0541,0.1041,0.782902,0.727242,0.06,none,false
+519,29,Ari,west_bridge_repair,0.8786,0.0797,0.0577,0.1374,0.870228,0.714588,0.06,none,false
+520,29,Fay,herb_roof_garden,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+521,29,Milo,north_lantern_relay,0.907243,0.106,-0.055,0.051,0.19122,0.80742,0.06,routine rest,true
+522,30,Ari,west_bridge_repair,0.89785,0.1374,-0.055,0.0824,0.198128,0.795488,0.06,routine rest,true
+523,30,Fay,herb_roof_garden,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+524,30,Milo,north_lantern_relay,0.912143,0.051,-0.001,0.05,0.191,0.8078,0.06,ambient recovery,true
+525,30,Nia,archive_weather_log,0.855983,0.1041,-0.014,0.0901,0.199822,0.792562,0.06,ambient recovery,true
+526,30,Ari,west_bridge_repair,0.90275,0.0824,-0.014,0.0684,0.195048,0.800808,0.06,ambient recovery,true
+527,30,Fay,herb_roof_garden,0.927522,0.05,0.05905,0.10905,0.893991,0.725361,0.06,none,false
+528,30,Milo,north_lantern_relay,0.917043,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+529,30,Nia,archive_weather_log,0.860883,0.0901,-0.014,0.0761,0.196742,0.797882,0.06,ambient recovery,true
+530,30,Ari,west_bridge_repair,0.90765,0.0684,-0.014,0.0544,0.191968,0.806128,0.06,ambient recovery,true
+531,30,Fay,herb_roof_garden,0.932422,0.10905,-0.014,0.09505,0.200911,0.790681,0.06,ambient recovery,true
+532,30,Milo,north_lantern_relay,0.901643,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+533,30,Nia,archive_weather_log,0.831128,0.0761,0.0541,0.1302,0.788644,0.717324,0.06,none,false
+534,30,Ari,west_bridge_repair,0.91255,0.0544,-0.0044,0.05,0.191,0.8078,0.06,ambient recovery,true
+535,30,Fay,herb_roof_garden,0.893345,0.09505,0.07105,0.1661,0.986542,0.695982,0.095,none,false
+536,30,Milo,north_lantern_relay,0.906543,0.078,-0.014,0.064,0.19408,0.80248,0.06,ambient recovery,true
+537,30,Nia,archive_weather_log,0.79667,0.1302,0.06265,0.19285,0.992427,0.693517,0.06,none,false
+538,30,Ari,west_bridge_repair,0.9318,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+539,30,Fay,herb_roof_garden,0.912595,0.1661,-0.055,0.1111,0.204442,0.784582,0.06,routine rest,true
+540,31,Milo,north_lantern_relay,0.925793,0.064,-0.014,0.05,0.191,0.8078,0.06,routine rest,true
+541,31,Nia,archive_weather_log,0.81592,0.19285,-0.055,0.13785,0.210327,0.774417,0.06,routine rest,true
+542,31,Ari,west_bridge_repair,0.897343,0.05,0.06265,0.11265,0.974783,0.723993,0.06,none,false
+543,31,Fay,herb_roof_garden,0.917495,0.1111,-0.014,0.0971,0.201362,0.789902,0.06,ambient recovery,true
+544,31,Milo,north_lantern_relay,0.930693,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+545,31,Nia,archive_weather_log,0.82082,0.13785,-0.014,0.12385,0.207247,0.779737,0.06,ambient recovery,true
+546,31,Ari,west_bridge_repair,0.902243,0.11265,-0.014,0.09865,0.201703,0.789313,0.06,ambient recovery,true
+547,31,Fay,herb_roof_garden,0.883037,0.0971,0.06265,0.15975,0.985145,0.706095,0.06,none,false
+548,31,Milo,north_lantern_relay,0.935593,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+549,31,Nia,archive_weather_log,0.82572,0.12385,-0.014,0.10985,0.204167,0.785057,0.06,ambient recovery,true
+550,31,Ari,west_bridge_repair,0.907143,0.09865,-0.014,0.08465,0.198623,0.794633,0.06,ambient recovery,true
+551,31,Fay,herb_roof_garden,0.887937,0.15975,-0.014,0.14575,0.212065,0.771415,0.06,ambient recovery,true
+552,31,Milo,north_lantern_relay,0.940493,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+553,31,Nia,archive_weather_log,0.81032,0.10985,0.028,0.13785,0.210327,0.714417,0.06,none,false
+554,31,Ari,west_bridge_repair,0.912043,0.08465,-0.014,0.07065,0.195543,0.799953,0.06,ambient recovery,true
+555,31,Fay,herb_roof_garden,0.892837,0.14575,-0.014,0.13175,0.208985,0.776735,0.06,ambient recovery,true
+556,31,Milo,north_lantern_relay,0.959743,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+557,31,Nia,archive_weather_log,0.82957,0.13785,-0.055,0.08285,0.198227,0.795317,0.06,routine rest,true
+558,32,Ari,west_bridge_repair,0.931293,0.07065,-0.02065,0.05,0.191,0.8078,0.06,routine rest,true
+559,32,Fay,herb_roof_garden,0.912087,0.13175,-0.055,0.07675,0.196885,0.797635,0.06,routine rest,true
+560,32,Milo,north_lantern_relay,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+561,32,Nia,archive_weather_log,0.83447,0.08285,-0.014,0.06885,0.195147,0.800637,0.06,ambient recovery,true
+562,32,Ari,west_bridge_repair,0.936193,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+563,32,Fay,herb_roof_garden,0.896687,0.07675,0.028,0.10475,0.203045,0.726995,0.06,none,false
+564,32,Milo,north_lantern_relay,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+565,32,Nia,archive_weather_log,0.83937,0.06885,-0.014,0.05485,0.192067,0.805957,0.06,ambient recovery,true
+566,32,Ari,west_bridge_repair,0.941093,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+567,32,Fay,herb_roof_garden,0.901587,0.10475,-0.014,0.09075,0.199965,0.792315,0.06,ambient recovery,true
+568,32,Milo,north_lantern_relay,0.9446,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+569,32,Nia,archive_weather_log,0.84427,0.05485,-0.00485,0.05,0.191,0.8078,0.06,ambient recovery,true
+570,32,Ari,west_bridge_repair,0.906635,0.05,0.06265,0.11265,0.974783,0.723993,0.06,none,false
+571,32,Fay,herb_roof_garden,0.906488,0.09075,-0.014,0.07675,0.196885,0.797635,0.06,ambient recovery,true
+572,32,Milo,north_lantern_relay,0.9495,0.078,-0.014,0.064,0.19408,0.80248,0.06,ambient recovery,true
+573,32,Nia,archive_weather_log,0.82227,0.05,0.04,0.09,0.2798,0.7249,0.095,none,false
+574,32,Ari,west_bridge_repair,0.925885,0.11265,-0.055,0.05765,0.192683,0.804893,0.06,routine rest,true
+575,32,Fay,herb_roof_garden,0.925737,0.07675,-0.02675,0.05,0.191,0.8078,0.06,routine rest,true
+576,33,Nia,archive_weather_log,0.84152,0.09,-0.04,0.05,0.191,0.8078,0.06,routine rest,true
+577,33,Ari,west_bridge_repair,0.945135,0.05765,-0.00765,0.05,0.191,0.8078,0.06,routine rest,true
+578,33,Fay,herb_roof_garden,0.930638,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+579,33,Milo,north_lantern_relay,0.9544,0.064,-0.014,0.05,0.191,0.8078,0.06,ambient recovery,true
+580,33,Nia,archive_weather_log,0.84642,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+581,33,Ari,west_bridge_repair,0.950035,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+582,33,Fay,herb_roof_garden,0.915238,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+583,33,Milo,north_lantern_relay,0.9593,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+584,33,Nia,archive_weather_log,0.83102,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+585,33,Ari,west_bridge_repair,0.954935,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+586,33,Fay,herb_roof_garden,0.899838,0.078,0.028,0.106,0.20332,0.72652,0.06,none,false
+587,33,Milo,north_lantern_relay,0.9373,0.05,0.04,0.09,0.2798,0.7249,0.095,none,false
+588,33,Nia,archive_weather_log,0.83592,0.078,-0.014,0.064,0.19408,0.80248,0.06,ambient recovery,true
+589,33,Ari,west_bridge_repair,0.959835,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+590,33,Fay,herb_roof_garden,0.904738,0.106,-0.014,0.092,0.20024,0.79184,0.06,ambient recovery,true
+591,33,Milo,north_lantern_relay,0.9422,0.09,-0.014,0.076,0.19672,0.79792,0.06,ambient recovery,true
+592,33,Nia,archive_weather_log,0.85517,0.064,-0.014,0.05,0.191,0.8078,0.06,routine rest,true
+593,33,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+594,34,Fay,herb_roof_garden,0.923988,0.092,-0.042,0.05,0.191,0.8078,0.06,routine rest,true
+595,34,Milo,north_lantern_relay,0.96,0.076,-0.026,0.05,0.191,0.8078,0.06,routine rest,true
+596,34,Nia,archive_weather_log,0.86007,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+597,34,Ari,west_bridge_repair,0.9446,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+598,34,Fay,herb_roof_garden,0.928888,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+599,34,Milo,north_lantern_relay,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+600,34,Nia,archive_weather_log,0.86497,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+601,34,Ari,west_bridge_repair,0.9495,0.078,-0.014,0.064,0.19408,0.80248,0.06,ambient recovery,true
+602,34,Fay,herb_roof_garden,0.933788,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+603,34,Milo,north_lantern_relay,0.9446,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+604,34,Nia,archive_weather_log,0.86987,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+605,34,Ari,west_bridge_repair,0.9544,0.064,-0.014,0.05,0.191,0.8078,0.06,ambient recovery,true
+606,34,Fay,herb_roof_garden,0.938688,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+607,34,Milo,north_lantern_relay,0.9495,0.078,-0.014,0.064,0.19408,0.80248,0.06,ambient recovery,true
+608,34,Nia,archive_weather_log,0.85447,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+609,34,Ari,west_bridge_repair,0.9593,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+610,34,Fay,herb_roof_garden,0.957938,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+611,34,Milo,north_lantern_relay,0.96,0.064,-0.014,0.05,0.191,0.8078,0.06,routine rest,true
+612,35,Nia,archive_weather_log,0.87372,0.078,-0.028,0.05,0.191,0.8078,0.06,routine rest,true
+613,35,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.271,0.8001,0.095,routine rest,true
+614,35,Fay,herb_roof_garden,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+615,35,Milo,north_lantern_relay,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+616,35,Nia,archive_weather_log,0.87862,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+617,35,Ari,west_bridge_repair,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+618,35,Fay,herb_roof_garden,0.9446,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+619,35,Milo,north_lantern_relay,0.9446,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+620,35,Nia,archive_weather_log,0.88352,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+621,35,Ari,west_bridge_repair,0.938,0.05,0.04,0.09,0.2798,0.7249,0.095,none,false
+622,35,Fay,herb_roof_garden,0.9495,0.078,-0.014,0.064,0.19408,0.80248,0.06,ambient recovery,true
+623,35,Milo,north_lantern_relay,0.9292,0.078,0.028,0.106,0.20332,0.72652,0.06,none,false
+624,35,Nia,archive_weather_log,0.88842,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+625,35,Ari,west_bridge_repair,0.9429,0.09,-0.014,0.076,0.19672,0.79792,0.06,ambient recovery,true
+626,35,Fay,herb_roof_garden,0.9544,0.064,-0.014,0.05,0.191,0.8078,0.06,ambient recovery,true
+627,35,Milo,north_lantern_relay,0.9341,0.106,-0.014,0.092,0.20024,0.79184,0.06,ambient recovery,true
+628,35,Nia,archive_weather_log,0.90767,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+629,35,Ari,west_bridge_repair,0.96,0.076,-0.026,0.05,0.191,0.8078,0.06,routine rest,true
+630,36,Milo,north_lantern_relay,0.95335,0.092,-0.042,0.05,0.191,0.8078,0.06,routine rest,true
+631,36,Nia,archive_weather_log,0.92692,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+632,36,Ari,west_bridge_repair,0.9446,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+633,36,Fay,herb_roof_garden,0.9593,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+634,36,Milo,north_lantern_relay,0.95825,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+635,36,Nia,archive_weather_log,0.91152,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+636,36,Ari,west_bridge_repair,0.9495,0.078,-0.014,0.064,0.19408,0.80248,0.06,ambient recovery,true
+637,36,Fay,herb_roof_garden,0.9439,0.05,0.028,0.078,0.19716,0.73716,0.06,none,false
+638,36,Milo,north_lantern_relay,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+639,36,Nia,archive_weather_log,0.91642,0.078,-0.014,0.064,0.19408,0.80248,0.06,ambient recovery,true
+640,36,Ari,west_bridge_repair,0.9544,0.064,-0.014,0.05,0.191,0.8078,0.06,ambient recovery,true
+641,36,Fay,herb_roof_garden,0.9488,0.078,-0.014,0.064,0.19408,0.80248,0.06,ambient recovery,true
+642,36,Milo,north_lantern_relay,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+643,36,Nia,archive_weather_log,0.90102,0.064,0.028,0.092,0.20024,0.73184,0.06,none,false
+644,36,Ari,west_bridge_repair,0.9593,0.05,0.0,0.05,0.191,0.8078,0.06,ambient recovery,true
+645,36,Fay,herb_roof_garden,0.9537,0.064,-0.014,0.05,0.191,0.8078,0.06,ambient recovery,true
+646,36,Milo,north_lantern_relay,0.96,0.05,0.0,0.05,0.191,0.8078,0.06,routine rest,true
+647,36,Nia,archive_weather_log,0.92027,0.092,-0.042,0.05,0.191,0.8078,0.06,routine rest,true

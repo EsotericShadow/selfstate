@@ -1296,6 +1296,8 @@ This is Report 161: a deterministic restored autonomous session-tick bridge wher
 | `experiments/latent_causal_ablation.py` | `artifacts/latent_causal_ablation_scenario_verdict.csv` |
 | `experiments/counterfactual_latent_editing.py` | `artifacts/counterfactual_latent_editing_scenario_verdict.csv` |
 
+| Report 265 | SSRM-3D browser world v25 many-day project material body cost bridge | `experiments/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge.py`; `artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_results.json`; `visualizations/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge.html`; `docs/265_ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_report.md` | Pass: readiness 0.936943; weakest channel 0.835000; 648 project progress frames; 648 material inventory frames; 648 time reservation frames; 648 body-cost/fatigue frames; 648 obligation-project blocker frames; 648 reshape frames; 648 browser-world v25 ticks; 33 blocked project frames; 4 reshaped projects; 7 material shortage rows. | Deterministic browser-local many-day project/material/body-cost scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, complete gameplay, complete 3D engine, or metaphysical frequency claim. |
+
 Run all canonical experiments with:
 
 ```bash

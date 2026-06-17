@@ -1,0 +1,180 @@
+{
+  "ablations": {
+    "no_body_cost": 0.749943,
+    "no_followup_memory": 0.819943,
+    "no_materials": 0.715943,
+    "no_obligation_blockers": 0.733943,
+    "no_recovery_path": 0.785943,
+    "no_reshape_paths": 0.794943,
+    "no_time_reservation": 0.772943
+  },
+  "artifacts": {
+    "agent_project_followups_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_agent_project_followups.csv",
+    "body_cost_fatigue_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_body_cost_fatigue.csv",
+    "browser_ticks_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_browser_ticks.csv",
+    "material_inventory_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_material_inventory.csv",
+    "multi_sensory_projects_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_multi_sensory_projects.csv",
+    "obligation_project_blockers_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_obligation_project_blockers.csv",
+    "project_memory_snapshots_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_project_memory_snapshots.csv",
+    "project_progress_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_project_progress.csv",
+    "project_replays_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_project_replays.csv",
+    "project_reshapes_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_project_reshapes.csv",
+    "report_md": "/Volumes/T7/Users-main/Documents/consciousness/docs/265_ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_report.md",
+    "results_json": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_results.json",
+    "state_json": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_state.json",
+    "summary_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_summary.csv",
+    "time_reservations_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_time_reservations.csv",
+    "verdict_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge_verdict.csv",
+    "visualization_html": "/Volumes/T7/Users-main/Documents/consciousness/visualizations/ssrm_3d_browser_world_v25_many_day_project_material_body_cost_bridge.html"
+  },
+  "boundary": "deterministic browser-local project/material/body-cost scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, complete 3D engine, or metaphysical frequency claim",
+  "counts": {
+    "agent_project_followups": 648,
+    "body_cost_fatigue": 648,
+    "browser_ticks": 648,
+    "material_inventory": 648,
+    "multi_sensory_projects": 648,
+    "obligation_project_blockers": 648,
+    "project_memory_snapshots": 648,
+    "project_progress": 648,
+    "project_replays": 648,
+    "project_reshapes": 648,
+    "time_reservations": 648
+  },
+  "metrics": {
+    "agent_project_followup_binding": 1.0,
+    "blocked_project_frame_count": 33.0,
+    "body_cost_fatigue_binding": 0.959877,
+    "browser_world_v25_project_readiness": 0.936943,
+    "browser_world_v25_surface_available": 1.0,
+    "comfort_pain_project_bounds": 1.0,
+    "fatigue_recovery_count": 512.0,
+    "fatigue_recovery_path": 1.0,
+    "final_mean_completion_ratio": 1.0,
+    "frequency_flower_project_rhythm": 0.944444,
+    "many_day_project_persistence": 0.888889,
+    "material_consumption_traceability": 1.0,
+    "material_shortage_count": 7.0,
+    "material_shortage_visibility": 1.0,
+    "mean_project_channel_score": 0.976588,
+    "obligation_project_blocking": 0.933333,
+    "privacy_safe_project_state": 1.0,
+    "project_memory_storage_integrity": 1.0,
+    "project_progress_under_constraints": 0.835,
+    "project_replay_integrity": 1.0,
+    "project_reshape_from_obligation": 1.0,
+    "reshaped_project_count": 4.0,
+    "sensory_project_binding": 1.0,
+    "source_obligation_continuity": 1.0,
+    "time_reservation_integrity": 0.993631,
+    "visible_project_surface": 1.0,
+    "weakest_channel_score": 0.835
+  },
+  "name": "SSRM-3D browser world v25 many-day project/material/body-cost bridge",
+  "next_gate": "browser world v26 with cooperative multi-agent projects, delegated subprojects, trade debt, shared workshops, conflicting material priorities, and project outcomes that change later routines",
+  "report": 265,
+  "seed": 20260878,
+  "state": {
+    "boundary": "deterministic browser-local project/material/body-cost scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, complete 3D engine, or metaphysical frequency claim",
+    "days": 36,
+    "final_agent_body": {
+      "Ari": {
+        "energy": 0.9593,
+        "fatigue": 0.05
+      },
+      "Fay": {
+        "energy": 0.9537,
+        "fatigue": 0.05
+      },
+      "Milo": {
+        "energy": 0.96,
+        "fatigue": 0.05
+      },
+      "Nia": {
+        "energy": 0.92027,
+        "fatigue": 0.05
+      }
+    },
+    "final_inventory": {
+      "compost": 6.393,
+      "glass": 7.006,
+      "ink": 7.701,
+      "oil": 10.22125,
+      "paper": 9.8455,
+      "planks": 16.812,
+      "resin": 6.42,
+      "rope": 4.607,
+      "seed": 9.572,
+      "thread": 0.74125,
+      "water": 35.2392,
+      "wire": 5.015
+    },
+    "final_project_progress": {
+      "archive_weather_log": 0.815,
+      "herb_roof_garden": 0.845,
+      "north_lantern_relay": 0.83,
+      "west_bridge_repair": 0.86
+    },
+    "final_project_targets": {
+      "archive_weather_log": 0.815,
+      "herb_roof_garden": 0.845,
+      "north_lantern_relay": 0.83,
+      "west_bridge_repair": 0.86
+    },
+    "projects": [
+      {
+        "home_zone": "west crossing",
+        "owner": "Ari",
+        "ownership_clause": "Ari owns the repair plan and may defer unsafe crossings.",
+        "preferred_slot": "morning dry window",
+        "primary_object": "borrowed caliper",
+        "project_id": "west_bridge_repair",
+        "recovery_clause": "If fatigued, Ari may ask for rest or a returned tool before continuing.",
+        "required_materials": "planks:8,resin:5,rope:4",
+        "stage_plan": "measure span -> brace rail -> seal deck -> test crossing",
+        "title": "West bridge repair"
+      },
+      {
+        "home_zone": "warm roof",
+        "owner": "Fay",
+        "ownership_clause": "Fay owns the garden tray and can refuse crowding during planting.",
+        "preferred_slot": "midday light window",
+        "primary_object": "seed pouch",
+        "project_id": "herb_roof_garden",
+        "recovery_clause": "If water is short, Fay reshapes the plan into fewer rows instead of failing silently.",
+        "required_materials": "seed:9,water:18,compost:7",
+        "stage_plan": "clear tray -> plant rows -> water roots -> mark harvest",
+        "title": "Herb roof garden"
+      },
+      {
+        "home_zone": "north path",
+        "owner": "Milo",
+        "ownership_clause": "Milo owns the relay route and can slow the build when tired.",
+        "preferred_slot": "dusk safety window",
+        "primary_object": "lamp oil flask",
+        "project_id": "north_lantern_relay",
+        "recovery_clause": "If fatigue rises, Milo can split the route over another day.",
+        "required_materials": "oil:10,glass:5,wire:4",
+        "stage_plan": "clean bracket -> fit glass -> wire relay -> dusk test",
+        "title": "North lantern relay"
+      },
+      {
+        "home_zone": "archive alcove",
+        "owner": "Nia",
+        "ownership_clause": "Nia owns the archive copy and can reject private workspace inspection.",
+        "preferred_slot": "quiet evening window",
+        "primary_object": "reading lens",
+        "project_id": "archive_weather_log",
+        "recovery_clause": "If paper is short, Nia publishes a public stub and records the missing pages.",
+        "required_materials": "ink:8,paper:10,thread:3",
+        "stage_plan": "sort notes -> copy table -> bind pages -> public index",
+        "title": "Archive weather log"
+      }
+    ],
+    "seed": 20260878,
+    "source_v24_next_gate": "browser world v25 with many-day agent projects that consume materials, reserve time, create fatigue/body cost, and make unresolved obligations block or reshape project progress",
+    "source_v24_verdict": "pass",
+    "ticks_per_day": 18
+  },
+  "verdict": "pass"
+}

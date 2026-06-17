@@ -1,0 +1,12 @@
+condition,restored_ticks,agent_tick_opportunities,restore_bootstrap_rate,elapsed_time_tick_rate,autonomous_agent_tick_rate,body_memory_drift_rate,world_decay_repair_rate,frequency_phase_tick_rate,source_boundary_watchdog_rate,background_replay_rate,typed_thread_continuity_rate,multi_agent_scheduling_rate,trace_integrity,restored_tick_readiness
+integrated_restored_autonomous_session_tick,180,540,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_restore_bootstrap,180,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.02
+no_elapsed_time_clock,180,540,1,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.91
+no_autonomous_agent_tick,180,540,1,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.76
+no_body_memory_drift,180,540,1,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.89
+no_world_decay_repair,180,540,1,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.89
+no_frequency_phase_tick,180,540,1,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_source_boundary_watchdog,180,540,1,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.91
+no_background_replay,180,540,1,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.93
+no_typed_thread_continuity,180,540,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.92
+no_multi_agent_scheduling,180,180,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.92

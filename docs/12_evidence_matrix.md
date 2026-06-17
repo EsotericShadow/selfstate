@@ -1064,6 +1064,25 @@ This is Report 159: a deterministic interactive typed co-presence bridge where b
 This is Report 160: a deterministic persistent session-state bridge where local save/restore carries agent memory, world feedback, place context, typed thread, replay, source boundaries, frequency phase, schema guard, and post-restore interaction. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
 
 
+### Report 161: SSRM-3D restored autonomous session tick bridge
+
+| Condition | Readiness | Restore | Clock | Agent tick | Body/memory | World | Frequency | Source | Replay | Thread | Multi-agent | Trace |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `integrated_restored_autonomous_session_tick` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_restore_bootstrap` | `0.020000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `1.000000` |
+| `no_elapsed_time_clock` | `0.910000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_autonomous_agent_tick` | `0.760000` | `1.000000` | `1.000000` | `0.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_body_memory_drift` | `0.890000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_world_decay_repair` | `0.890000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_frequency_phase_tick` | `0.900000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_source_boundary_watchdog` | `0.910000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_background_replay` | `0.930000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_typed_thread_continuity` | `0.920000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` |
+| `no_multi_agent_scheduling` | `0.920000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` |
+
+This is Report 161: a deterministic restored autonomous session-tick bridge where a saved session resumes background agent activity over elapsed time, with body/memory drift, world decay/repair, frequency ticking, source-boundary watching, replay, thread continuity, and multi-agent scheduling. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
+
+
 ## Reproducibility Artifacts
 
 | Script | Main artifact |
@@ -1159,6 +1178,7 @@ This is Report 160: a deterministic persistent session-state bridge where local 
 | `experiments/ssrm_3d_continuous_copresence_bridge.py` | `artifacts/ssrm_3d_continuous_copresence_bridge_verdict.csv` |
 | `experiments/ssrm_3d_interactive_typed_copresence_bridge.py` | `artifacts/ssrm_3d_interactive_typed_copresence_bridge_verdict.csv` |
 | `experiments/ssrm_3d_persistent_session_state_bridge.py` | `artifacts/ssrm_3d_persistent_session_state_bridge_verdict.csv` |
+| `experiments/ssrm_3d_restored_autonomous_session_tick_bridge.py` | `artifacts/ssrm_3d_restored_autonomous_session_tick_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

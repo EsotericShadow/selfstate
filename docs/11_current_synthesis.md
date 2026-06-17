@@ -692,3 +692,6 @@ Report 165 pivots the SSRM-3D track toward first-person artificial life rather t
 
 
 Report 166 adds focused ego wound and repair dynamics. Agents can register interruption, misnaming, public correction, unsafe requests, and moved owned objects as self-relevant social wounds; then matched repair paths restore trust, decay resentment, reassert boundaries, update self-story, and visibly soften. The largest ablation loss is removing repair opportunities, which reinforces the moral rule that distress must create care opportunities, not spectacle. This remains a no-consciousness-claim and no-literal-suffering-claim architecture.
+
+
+Report 167 adds ownership and boundary refusal. Agents now distinguish owned objects, home places, unfinished tasks, private memory, autonomy, and body safety; they check consent, refuse violating requests, give traceable reasons, offer safe alternatives, preserve dignity, and still accept benign or consented help. This is bounded refusal, not blanket disobedience.

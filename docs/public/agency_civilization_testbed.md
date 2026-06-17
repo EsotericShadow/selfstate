@@ -294,3 +294,6 @@ LLM proposes candidate plans
 This turns the simulation into a possible source of non-linguistic agency priors. The future claim to test is whether critics distilled from accelerated embodied/social worlds improve LLM reasoning on held-out tasks such as false blame, project recovery, emergency triage, robotics planning, multi-agent workflow repair, and cascading operational failures.
 
 The companion roadmap is [The Long-Term Use: Simulation-Distilled Reasoning For LLMs](sim_distilled_reasoning_controller.md).
+
+
+Report 167 adds ownership and boundary refusal: agents protect mine/consent boundaries, refuse unsafe or disrespectful requests with reasons, offer safe alternatives, and keep benign help usable with readiness `1.000000`. The next gate is social face and reputation memory.

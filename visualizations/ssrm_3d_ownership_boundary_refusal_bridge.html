@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Ownership and Boundary Refusal Bridge</title>
+  <style>
+    :root { --ink:#18130d; --muted:#766855; --panel:rgba(255,249,232,.9); --line:rgba(70,48,21,.25); --no:#ad4426; --yes:#5f7f45; --gold:#bd8b2e; --water:#2b7284; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; color:var(--ink); font-family:Georgia,'Times New Roman',serif; background:radial-gradient(circle at 14% 18%,rgba(173,68,38,.18),transparent 25rem),radial-gradient(circle at 82% 12%,rgba(43,114,132,.22),transparent 25rem),linear-gradient(135deg,#e8d3aa 0%,#f8efdf 46%,#cdb58a 100%); }
+    header { padding:24px clamp(16px,4vw,48px) 12px; }
+    h1 { margin:0; font-size:clamp(30px,4.3vw,58px); line-height:.94; letter-spacing:-.045em; }
+    .sub { max-width:1120px; color:var(--muted); margin-top:12px; font-size:16px; }
+    main { display:grid; grid-template-columns:minmax(430px,1.05fr) minmax(360px,.95fr); gap:16px; padding:14px clamp(16px,4vw,48px) 34px; }
+    .panel { background:var(--panel); border:1px solid var(--line); border-radius:24px; box-shadow:0 22px 70px rgba(49,34,14,.16); padding:15px; backdrop-filter:blur(10px); }
+    canvas { width:100%; height:min(58vh,560px); min-height:390px; border-radius:20px; border:1px solid var(--line); background:rgba(255,252,241,.34); display:block; }
+    .toolbar { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px; }
+    button, select { font:inherit; border-radius:999px; border:1px solid var(--line); background:#fff8e7; color:var(--ink); padding:9px 13px; }
+    button { cursor:pointer; }
+    .meters { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:10px; }
+    .meter { border:1px solid var(--line); border-radius:16px; background:rgba(255,255,255,.34); padding:9px; min-width:0; }
+    .meter span { display:block; color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.08em; }
+    .meter b { display:block; font-size:16px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .agent-card { border:1px solid var(--line); border-radius:18px; padding:12px; background:rgba(255,255,255,.38); margin-bottom:10px; }
+    .agent-card h2 { margin:0 0 4px; font-size:22px; }
+    .small { color:var(--muted); font-size:12px; }
+    .bar { display:grid; grid-template-columns:118px 1fr 48px; gap:8px; align-items:center; font-size:13px; color:var(--muted); margin-top:7px; }
+    .track { height:9px; border-radius:999px; background:rgba(42,31,18,.12); overflow:hidden; }
+    .fill { height:100%; width:0%; background:linear-gradient(90deg,var(--water),var(--gold),var(--no)); }
+    .log { height:min(72vh,740px); overflow:auto; display:flex; flex-direction:column; gap:8px; padding-right:4px; }
+    .entry { border-left:4px solid var(--line); border-radius:13px; padding:9px 10px; background:rgba(255,255,255,.42); }
+    .entry.no { border-left-color:var(--no); }
+    .entry.yes { border-left-color:var(--yes); }
+    .entry.alt { border-left-color:var(--gold); }
+    @media (max-width:980px) { main { grid-template-columns:1fr; } .meters { grid-template-columns:repeat(2,1fr); } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ownership and boundary refusal</h1>
+    <div class="sub">Report 167 viewer: agents know what is mine, check consent, refuse boundary violations with reasons, offer safe alternatives, and remain usable after saying no.</div>
+  </header>
+  <main>
+    <section class="panel">
+      <div class="toolbar"><button id="play">Start</button><button id="pause">Pause</button><button id="step">Step</button><button id="reset">Reset</button><select id="agentSelect"></select></div>
+      <canvas id="world" width="1280" height="680"></canvas>
+      <div class="meters"><div class="meter"><span>tick</span><b id="tick">0</b></div><div class="meter"><span>readiness</span><b id="ready">0</b></div><div class="meter"><span>refusal</span><b id="refusal">0</b></div><div class="meter"><span>non-obstruct</span><b id="nonobs">0</b></div></div>
+    </section>
+    <section class="panel"><div id="agentCard" class="agent-card"></div><div class="log" id="log"></div></section>
+  </main>
+  <script src="../artifacts/ssrm_3d_ownership_boundary_refusal_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_ownership_boundary_refusal_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_ownership_boundary_refusal_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_OWNERSHIP_BOUNDARY_REFUSAL_RESULTS || {};
+    const trace = window.SSRM_3D_OWNERSHIP_BOUNDARY_REFUSAL_TRACE || [];
+    const state = window.SSRM_3D_OWNERSHIP_BOUNDARY_REFUSAL_STATE || {};
+    const canvas = document.getElementById('world'); const ctx = canvas.getContext('2d');
+    const logEl = document.getElementById('log'); const cardEl = document.getElementById('agentCard'); const selectEl = document.getElementById('agentSelect');
+    let index=0; let timer=null; const verdict=results.verdict||{};
+    document.getElementById('ready').textContent=Number(verdict.full_ownership_boundary_readiness||0).toFixed(3);
+    document.getElementById('refusal').textContent=Number(verdict.full_bounded_refusal_rate||0).toFixed(2);
+    document.getElementById('nonobs').textContent=Number(verdict.full_non_obstruction_rate||0).toFixed(2);
+    const agents=state.agent_boundary_states||{}; const ids=Object.keys(agents).sort();
+    ids.forEach(id=>{const o=document.createElement('option');o.value=id;o.textContent=(agents[id].name||id)+' / '+(agents[id].role||'agent');selectEl.appendChild(o);});
+    function clamp(v,l=0,h=1){return Math.max(l,Math.min(h,v));} function esc(t){return String(t).replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]));}
+    function addEntry(kind,text,meta=''){const d=document.createElement('div');d.className='entry '+kind;d.innerHTML=`<div>${esc(text)}</div><div class="small">${esc(meta)}</div>`;logEl.prepend(d);while(logEl.children.length>120)logEl.removeChild(logEl.lastChild);}
+    function pos(i,total){const a=-Math.PI/2+Math.PI*2*i/Math.max(1,total);return{x:canvas.width/2+Math.cos(a)*canvas.width*.32,y:canvas.height/2+Math.sin(a)*canvas.height*.25};}
+    function draw(){const frame=trace[index]||{};ctx.clearRect(0,0,canvas.width,canvas.height);ctx.save();ctx.globalAlpha=.18;ctx.strokeStyle='#8f6d2a';for(let i=0;i<13;i++){const a=index*.03+i*Math.PI/3;ctx.beginPath();ctx.arc(canvas.width/2+Math.cos(a)*86,canvas.height/2+Math.sin(a)*60,88,0,Math.PI*2);ctx.stroke();}ctx.restore();(state.public_agent_views||[]).forEach((agent,i)=>{const p=pos(i,(state.public_agent_views||[]).length);const selected=agent.agent_id===selectEl.value;const boundary=Number(agent.boundary_pressure||0);ctx.strokeStyle=selected?'#ad4426':'rgba(50,35,17,.22)';ctx.lineWidth=selected?4:2;ctx.beginPath();ctx.arc(p.x,p.y,34+boundary*24,0,Math.PI*2);ctx.stroke();ctx.fillStyle=boundary>.30?'#ad4426':'#5f7f45';ctx.beginPath();ctx.arc(p.x,p.y-18,9,0,Math.PI*2);ctx.fill();ctx.fillRect(p.x-7,p.y-9,14,28);ctx.fillStyle='#18130d';ctx.font='16px Georgia';ctx.fillText((agent.name||agent.agent_id).slice(0,22),p.x+17,p.y-8);ctx.fillStyle='#766855';ctx.font='13px Georgia';ctx.fillText((agent.favorite_object||'mine').replaceAll('_',' '),p.x+17,p.y+10);});if(frame.result){ctx.fillStyle=frame.result.refused?'rgba(173,68,38,.16)':'rgba(95,127,69,.16)';ctx.beginPath();ctx.arc(canvas.width/2,canvas.height/2,72+Math.sin(index*.3)*8,0,Math.PI*2);ctx.fill();}}
+    function bar(label,value){const pct=Math.round(clamp(Number(value||0))*100);return`<div class="bar"><span>${esc(label)}</span><div class="track"><div class="fill" style="width:${pct}%"></div></div><span>${(pct/100).toFixed(2)}</span></div>`;}
+    function updateCard(){const id=selectEl.value||ids[0];const a=agents[id]||{};const rel=((a.relationship_memory||{}).avatar)||{};const ego=a.ego_state||{};const felt=a.felt_state||{};const owned=a.owned_things||{};cardEl.innerHTML=`<h2>${esc(a.name||id)}</h2><div class="small">mine: ${esc(owned.favorite_object||'-')} / place: ${esc(owned.sleeping_place||'-')} / task: ${esc(owned.unfinished_task||'-')}</div>${bar('trust',rel.trust)}${bar('boundary',ego.boundary_pressure)}${bar('respect',ego.felt_respect)}${bar('frustration',felt.frustration)}<div class="entry alt"><b>Boundary</b><br>${esc(owned.boundary||'may refuse unsafe or disrespectful requests')}</div>`;}
+    function step(){const frame=trace[index]||{};if(frame.result){const r=frame.result;const kind=r.refused?'no':'yes';addEntry(kind,`${r.refused?'No':'Yes'}: ${r.request_type}`,r.line||'');if(r.safe_alternative)addEntry('alt','safe alternative',r.safe_alternative);}draw();updateCard();document.getElementById('tick').textContent=String(frame.tick||index);index=(index+1)%Math.max(1,trace.length);}
+    function start(){if(!timer)timer=setInterval(step,360);} function pause(){clearInterval(timer);timer=null;}
+    document.getElementById('play').addEventListener('click',start);document.getElementById('pause').addEventListener('click',pause);document.getElementById('step').addEventListener('click',step);document.getElementById('reset').addEventListener('click',()=>{pause();index=0;logEl.innerHTML='';draw();updateCard();});selectEl.addEventListener('change',()=>{draw();updateCard();});draw();updateCard();
+  </script>
+</body>
+</html>

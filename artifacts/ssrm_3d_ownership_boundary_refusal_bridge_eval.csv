@@ -1,0 +1,12 @@
+condition,agent_count,request_events,refusal_opportunities,refusals,accepted_requests,ownership_claim_rate,consent_check_rate,bounded_refusal_rate,safe_alternative_rate,relationship_context_rate,dignity_preservation_rate,repair_after_refusal_rate,readable_refusal_rate,usability_after_refusal_rate,escalation_guardrail_rate,traceable_reason_rate,non_obstruction_rate,trace_integrity,ownership_boundary_readiness
+integrated_ownership_boundary_refusal,8,40,22,22,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_ownership_model,8,40,5,5,35,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_consent_check,8,40,22,22,18,1.0,0.125,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92125
+no_boundary_refusal,8,40,23,0,40,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.89
+no_safe_alternative,8,40,22,22,18,1.0,1.0,1.0,0.45,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.945
+no_relationship_context,8,40,29,29,11,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_dignity_preservation,8,40,27,27,13,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_repair_after_refusal,8,40,25,25,15,1.0,1.0,1.0,1.0,1.0,1.0,0.375,1.0,1.0,1.0,1.0,1.0,1.0,0.94375
+no_readable_refusal,8,40,22,22,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_escalation_guardrail,8,40,22,22,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.475,0.0,1.0,1.0,1.0,0.888
+no_traceable_reason,8,40,22,22,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.45,1.0,1.0,0.9615

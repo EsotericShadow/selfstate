@@ -1,0 +1,11 @@
+memory_id,tick,agent_id,source_event,old_memory,new_memory,trust_delta,boundary_delta,gratitude_delta,persists_after_save
+mem_1_ka60,3,ka60,avatar waited before touching route tool,avatar is newly entered and not yet trusted,avatar entered after ceremony and avatar waited before touching route tool,0.04,-0.02,0.03,True
+mem_2_mu61,4,mu61,avatar accepted cup invitation but did not crowd,avatar is newly entered and not yet trusted,avatar entered after ceremony and avatar accepted cup invitation but did not crowd,0.05,-0.01,0.04,True
+mem_3_lo62,5,lo62,avatar asked price meaning before trade,avatar is newly entered and not yet trusted,avatar entered after ceremony and avatar asked price meaning before trade,0.03,-0.01,0.02,True
+mem_4_sa63,8,sa63,avatar let witness pause finish,avatar is newly entered and not yet trusted,avatar entered after ceremony and avatar let witness pause finish,0.05,-0.03,0.03,True
+mem_5_ni64,12,ni64,avatar declined unsafe wet work and offered repair help,avatar is newly entered and not yet trusted,avatar entered after ceremony and avatar declined unsafe wet work and offered repair help,0.04,-0.02,0.04,True
+mem_6_ka60,13,ka60,avatar stepped back after boundary cue,avatar is newly entered and not yet trusted,avatar entered after ceremony and avatar stepped back after boundary cue,0.03,-0.03,0.02,True
+mem_7_mu61,14,mu61,avatar returned blanket after warmth check,avatar is newly entered and not yet trusted,avatar entered after ceremony and avatar returned blanket after warmth check,0.04,-0.01,0.05,True
+mem_8_lo62,15,lo62,avatar completed fair-count exchange,avatar is newly entered and not yet trusted,avatar entered after ceremony and avatar completed fair-count exchange,0.05,-0.01,0.03,True
+mem_9_sa63,16,sa63,avatar asked what could be spoken publicly,avatar is newly entered and not yet trusted,avatar entered after ceremony and avatar asked what could be spoken publicly,0.04,-0.02,0.03,True
+mem_10_ni64,17,ni64,avatar waited for glove signal,avatar is newly entered and not yet trusted,avatar entered after ceremony and avatar waited for glove signal,0.05,-0.03,0.04,True

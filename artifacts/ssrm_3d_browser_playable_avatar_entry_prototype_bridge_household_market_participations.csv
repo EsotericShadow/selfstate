@@ -1,0 +1,6 @@
+market_id,tick,household_id,agent_id,offered_good,requested_token,avatar_choice,fairness_score,consequence,memory_update_ref
+market_ka60,41,westkeepers,ka60,dry route pass,kafl6,ask_price_then_trade_fairly,0.872,Ka60 records a fair first exchange and lowers scarcity pressure,mem_6_ka60
+market_mu61,42,mossgarden,mu61,warm seed cake,muse6,ask_price_then_trade_fairly,0.884,Mu61 records a fair first exchange and lowers scarcity pressure,mem_7_mu61
+market_lo62,43,ledgerkin,lo62,fair-count thread,lotr6,ask_price_then_trade_fairly,0.896,Lo62 records a fair first exchange and lowers scarcity pressure,mem_8_lo62
+market_sa63,44,redstair,sa63,witness shell minute,save6,ask_price_then_trade_fairly,0.908,Sa63 records a fair first exchange and lowers scarcity pressure,mem_9_sa63
+market_ni64,45,wheelwright,ni64,vane-safe repair,nihe6,ask_price_then_trade_fairly,0.92,Ni64 records a fair first exchange and lowers scarcity pressure,mem_10_ni64

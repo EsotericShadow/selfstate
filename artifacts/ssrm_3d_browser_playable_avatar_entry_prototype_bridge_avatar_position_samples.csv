@@ -1,0 +1,13 @@
+sample_id,tick,x,y,place,nearest_agent,nearest_distance,body_energy,body_warmth,wetness,sensory_summary
+pos_1,1,38,46,outer threshold,sa63,25.632011,0.915,0.699272,0.182,outer threshold: nearest Sa63; wetness 0.182; warmth 0.699
+pos_2,2,44,46,outer threshold,lo62,24.33105,0.89,0.698536,0.184,outer threshold: nearest Lo62; wetness 0.184; warmth 0.699
+pos_3,3,50,46,outer threshold,lo62,18.439089,0.865,0.697792,0.186,outer threshold: nearest Lo62; wetness 0.186; warmth 0.698
+pos_4,4,50,52,outer threshold,lo62,20.59126,0.84,0.697032,0.19,outer threshold: nearest Lo62; wetness 0.190; warmth 0.697
+pos_5,5,50,52,outer threshold,lo62,20.59126,0.83,0.696272,0.19,outer threshold: nearest Lo62; wetness 0.190; warmth 0.696
+pos_6,6,50,58,outer threshold,lo62,24.083189,0.805,0.695496,0.194,outer threshold: nearest Lo62; wetness 0.194; warmth 0.695
+pos_7,7,44,58,outer threshold,sa63,19.209373,0.78,0.694704,0.198,outer threshold: nearest Sa63; wetness 0.198; warmth 0.695
+pos_8,8,38,58,outer threshold,sa63,15.0,0.755,0.693896,0.202,outer threshold: nearest Sa63; wetness 0.202; warmth 0.694
+pos_9,9,38,52,outer threshold,sa63,20.124612,0.73,0.69308,0.204,outer threshold: nearest Sa63; wetness 0.204; warmth 0.693
+pos_10,10,44,52,outer threshold,sa63,23.430749,0.705,0.692256,0.206,outer threshold: nearest Sa63; wetness 0.206; warmth 0.692
+pos_11,11,44,52,outer threshold,sa63,23.430749,0.695,0.691424,0.208,outer threshold: nearest Sa63; wetness 0.208; warmth 0.691
+pos_12,12,47,49,outer threshold,lo62,22.135944,0.67,0.690584,0.21,outer threshold: nearest Lo62; wetness 0.210; warmth 0.691

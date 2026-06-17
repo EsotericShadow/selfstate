@@ -1,0 +1,13 @@
+command_id,tick,command,input_keys,dx,dy,effort_cost,wetness_cost,collision_policy,expected_result
+move_1_north,1,north,W/ArrowUp,0,-6,0.025,0.002,clamp_to_world_and_stop_before_agent_body,position changes and sensory/body feedback updates
+move_2_east,2,east,D/ArrowRight,6,0,0.025,0.002,clamp_to_world_and_stop_before_agent_body,position changes and sensory/body feedback updates
+move_3_east,3,east,D/ArrowRight,6,0,0.025,0.002,clamp_to_world_and_stop_before_agent_body,position changes and sensory/body feedback updates
+move_4_south,4,south,S/ArrowDown,0,6,0.025,0.004,clamp_to_world_and_stop_before_agent_body,position changes and sensory/body feedback updates
+move_5_wait,5,wait,Space,0,0,0.01,0.002,clamp_to_world_and_stop_before_agent_body,time advances and sensory sampling updates
+move_6_south,6,south,S/ArrowDown,0,6,0.025,0.004,clamp_to_world_and_stop_before_agent_body,position changes and sensory/body feedback updates
+move_7_west,7,west,A/ArrowLeft,-6,0,0.025,0.004,clamp_to_world_and_stop_before_agent_body,position changes and sensory/body feedback updates
+move_8_west,8,west,A/ArrowLeft,-6,0,0.025,0.004,clamp_to_world_and_stop_before_agent_body,position changes and sensory/body feedback updates
+move_9_north,9,north,W/ArrowUp,0,-6,0.025,0.002,clamp_to_world_and_stop_before_agent_body,position changes and sensory/body feedback updates
+move_10_east,10,east,D/ArrowRight,6,0,0.025,0.002,clamp_to_world_and_stop_before_agent_body,position changes and sensory/body feedback updates
+move_11_listen,11,listen,L,0,0,0.01,0.002,clamp_to_world_and_stop_before_agent_body,time advances and sensory sampling updates
+move_12_approach,12,approach,E,3,-3,0.025,0.002,clamp_to_world_and_stop_before_agent_body,position changes and sensory/body feedback updates

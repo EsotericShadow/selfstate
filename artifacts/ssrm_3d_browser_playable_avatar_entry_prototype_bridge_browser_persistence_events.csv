@@ -1,0 +1,5 @@
+persistence_id,tick,action,state_fragment,replay_marker,expected_restore,integrity_score
+persist_1_save,30,save,avatar_position+agent_memory+market_state,replay_mark_30,"restore same position, memories, and log",1.0
+persist_2_restore,31,restore,avatar_position+agent_memory+market_state,replay_mark_30,same nearest agent and memory refs,1.0
+persist_3_export,70,export_replay,all_loop_ticks+memory_updates,replay_export_70,deterministic replay rows match artifacts,1.0
+persist_4_memory_check,71,memory_persist_check,10_memory_updates,replay_export_70,all persistent memory updates remain available,1.0

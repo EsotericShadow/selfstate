@@ -838,3 +838,6 @@ Report 234 shifts from individual ego continuity into pre-avatar civilization sc
 
 
 Report 235 turns the pre-avatar epoch scaffold into a deterministic local playable sandbox trace. It adds 35 generational agents, proto-language mutation chains, household market and ritual schedules, technology use slots, sensory/body prompts, sandbox turns, and a final witnessed avatar-entry ceremony at year 4181. The weakest channel is proto-language semantic stability, which is the right pressure point for the next playable language work.
+
+
+Report 236 adds the first browser-playable avatar-entry prototype scaffold after the year-4181 ceremony. It includes movement controls, proximity binding, post-entry conversation turns, market participation, ritual consent prompts, persistent memory updates, sensory/body feedback, and save/restore/replay scaffolding. The weakest channel is entry action surface coverage at 0.875000, which correctly marks that the prototype has controls but not a full action vocabulary.

@@ -1,0 +1,13 @@
+proximity_id,tick,avatar_x,avatar_y,agent_id,agent_name,distance,proximity_band,visible_behavior,available_actions
+prox_1_sa63,1,38,46,sa63,Sa63,25.632011,ambient_range,Sa63 (witness keeper) continues household work without forced engagement,"[""move"", ""listen"", ""look""]"
+prox_2_lo62,2,44,46,lo62,Lo62,24.33105,ambient_range,Lo62 (market counter) continues household work without forced engagement,"[""move"", ""listen"", ""look""]"
+prox_3_lo62,3,50,46,lo62,Lo62,18.439089,notice_range,Lo62 (market counter) notices movement and resumes task rhythm,"[""wave"", ""approach"", ""observe"", ""wait""]"
+prox_4_lo62,4,50,52,lo62,Lo62,20.59126,notice_range,Lo62 (market counter) notices movement and resumes task rhythm,"[""wave"", ""approach"", ""observe"", ""wait""]"
+prox_5_lo62,5,50,52,lo62,Lo62,20.59126,notice_range,Lo62 (market counter) notices movement and resumes task rhythm,"[""wave"", ""approach"", ""observe"", ""wait""]"
+prox_6_lo62,6,50,58,lo62,Lo62,24.083189,ambient_range,Lo62 (market counter) continues household work without forced engagement,"[""move"", ""listen"", ""look""]"
+prox_7_sa63,7,44,58,sa63,Sa63,19.209373,notice_range,Sa63 (witness keeper) notices movement and resumes task rhythm,"[""wave"", ""approach"", ""observe"", ""wait""]"
+prox_8_sa63,8,38,58,sa63,Sa63,15.0,notice_range,Sa63 (witness keeper) notices movement and resumes task rhythm,"[""wave"", ""approach"", ""observe"", ""wait""]"
+prox_9_sa63,9,38,52,sa63,Sa63,20.124612,notice_range,Sa63 (witness keeper) notices movement and resumes task rhythm,"[""wave"", ""approach"", ""observe"", ""wait""]"
+prox_10_sa63,10,44,52,sa63,Sa63,23.430749,notice_range,Sa63 (witness keeper) notices movement and resumes task rhythm,"[""wave"", ""approach"", ""observe"", ""wait""]"
+prox_11_sa63,11,44,52,sa63,Sa63,23.430749,notice_range,Sa63 (witness keeper) notices movement and resumes task rhythm,"[""wave"", ""approach"", ""observe"", ""wait""]"
+prox_12_lo62,12,47,49,lo62,Lo62,22.135944,notice_range,Lo62 (market counter) notices movement and resumes task rhythm,"[""wave"", ""approach"", ""observe"", ""wait""]"

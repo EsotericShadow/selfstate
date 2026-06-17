@@ -1,0 +1,232 @@
+{
+  "agents": {
+    "Ari": {
+      "authored_plan": {
+        "avoid": [
+          "bitter_herb",
+          "sweet_root"
+        ],
+        "boundary": "ask before wrist touch",
+        "plan_id": "ari_no_sedation_wrap_plan",
+        "prefer": [
+          "dry_wrap",
+          "short_lamp_rest"
+        ],
+        "preferred_window": "dawn-before-repair"
+      },
+      "consent_memory": {
+        "bitter_herb": "refused",
+        "care_token": "accepted",
+        "dry_wrap": "accepted",
+        "lamp_rest": "accepted",
+        "sweet_root": "accepted"
+      },
+      "followups": [
+        {
+          "medicine": "dry_wrap",
+          "status": "requested",
+          "window": "dawn-before-repair"
+        },
+        {
+          "medicine": "dry_wrap",
+          "status": "completed",
+          "window": "dawn-before-repair"
+        },
+        {
+          "medicine": "short_lamp_rest",
+          "status": "requested",
+          "window": "midday-repair"
+        },
+        {
+          "medicine": "",
+          "status": "rejected_counter",
+          "window": "after-inventory"
+        },
+        {
+          "medicine": "short_lamp_rest",
+          "status": "missed",
+          "window": "after-inventory"
+        }
+      ],
+      "learning_rules": {
+        "lamp_rest": "short rest only if inventory remains in order",
+        "sweet_root": "avoid before repair because sleepy side effect costs work time"
+      },
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Ari authors a no-sedation wrist plan before repair work.",
+        "Ari requests the first dry-wrap follow-up himself.",
+        "Ari's plan learns to avoid sweet root before work.",
+        "Ari completes dawn dry-wrap follow-up with wrist consent respected.",
+        "Ari requests midday rest, but Fay already needs the quiet alcove.",
+        "Ari refuses the counter-time because it would break inventory order.",
+        "Ari's refused counter-time leaves one follow-up unresolved rather than forced.",
+        "Ari tries to revise lamp rest rules, but the clinic cannot yet solve inventory scheduling."
+      ],
+      "side_effect_memory": [
+        "visit 3: lamp_rest caused lost_time",
+        "visit 4: sweet_root caused sleepy"
+      ],
+      "temperament": "cautious-proud repair keeper",
+      "trust": 0.887
+    },
+    "Fay": {
+      "authored_plan": {
+        "avoid": [
+          "bitter_herb_if_hosting"
+        ],
+        "boundary": "do not cancel hosting without asking",
+        "plan_id": "fay_low_light_nausea_safe_plan",
+        "prefer": [
+          "warm_water",
+          "lamp_rest"
+        ],
+        "preferred_window": "low-light-before-hosting",
+        "revisions": [
+          {
+            "lesson": "ask about hosting before any future herb",
+            "medicine": "bitter_herb"
+          }
+        ]
+      },
+      "consent_memory": {
+        "bitter_herb": "side_effect_nausea",
+        "care_token": "accepted",
+        "clean_cloth": "accepted",
+        "lamp_rest": "accepted",
+        "warm_water": "accepted"
+      },
+      "followups": [
+        {
+          "medicine": "lamp_rest",
+          "status": "requested",
+          "window": "dawn-before-repair"
+        },
+        {
+          "medicine": "",
+          "status": "negotiated",
+          "window": "low-light-before-hosting"
+        },
+        {
+          "medicine": "lamp_rest",
+          "status": "completed",
+          "window": "low-light-before-hosting"
+        },
+        {
+          "medicine": "warm_water",
+          "status": "requested",
+          "window": "low-light-before-hosting"
+        },
+        {
+          "medicine": "warm_water",
+          "status": "completed",
+          "window": "low-light-before-hosting"
+        }
+      ],
+      "learning_rules": {
+        "bitter_herb": "ask about hosting before any future herb"
+      },
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Fay authors a low-light plan that avoids casual bitter herb after nausea.",
+        "Fay requests the same clinic window as Ari, creating a schedule conflict.",
+        "Fay accepts low-light care after the clinic names Ari's dawn repair conflict.",
+        "Fay's plan learns bitter herb is conditional after nausea.",
+        "Fay completes low-light rest before hosting.",
+        "Fay requests warm water before hosting without waiting for clinic prompt.",
+        "Fay completes warm-water follow-up and keeps hosting choice.",
+        "Fay revises her plan so nausea risk is checked before herb offers."
+      ],
+      "side_effect_memory": [
+        "visit 5: bitter_herb caused nausea"
+      ],
+      "temperament": "social ritual keeper",
+      "trust": 0.973
+    },
+    "Milo": {
+      "authored_plan": {
+        "avoid": [
+          "separate_cup_argument",
+          "map_line_crossing"
+        ],
+        "boundary": "spacing yes, cup replacement no",
+        "plan_id": "milo_route_edge_distance_plan",
+        "prefer": [
+          "warm_water",
+          "route_edge_cloth"
+        ],
+        "preferred_window": "route-edge-after-map-check",
+        "revisions": [
+          {
+            "lesson": "clinic may offer cloth, not cup replacement, unless symptoms rise",
+            "medicine": "clean_cloth"
+          }
+        ]
+      },
+      "consent_memory": {
+        "care_token": "conditional",
+        "clean_cloth": "conditional",
+        "lamp_rest": "conditional",
+        "warm_water": "conditional"
+      },
+      "followups": [
+        {
+          "medicine": "warm_water",
+          "status": "requested",
+          "window": "route-edge-after-map-check"
+        },
+        {
+          "medicine": "warm_water",
+          "status": "completed",
+          "window": "route-edge-after-map-check"
+        },
+        {
+          "medicine": "route_edge_cloth",
+          "status": "requested",
+          "window": "route-edge-after-map-check"
+        },
+        {
+          "medicine": "",
+          "status": "negotiated",
+          "window": "archive-curtain-before-dusk"
+        },
+        {
+          "medicine": "route_edge_cloth",
+          "status": "completed",
+          "window": "archive-curtain-before-dusk"
+        }
+      ],
+      "learning_rules": {
+        "clean_cloth": "clinic may offer cloth, not cup replacement, unless symptoms rise"
+      },
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Milo authors a route-edge care plan with cup and map boundaries.",
+        "Milo requests route-edge follow-up without being prompted.",
+        "Milo's plan learns the cloth boundary separately from the cup refusal.",
+        "Milo completes route-edge warm-water care without map-line crossing.",
+        "Milo requests cloth at route-edge distance after his authored boundary is remembered.",
+        "Milo accepts a dusk counter-time only because the map boundary is repeated.",
+        "Milo completes cloth care with distance terms intact.",
+        "Milo revises the plan to preserve cup refusal while allowing cloth."
+      ],
+      "side_effect_memory": [],
+      "temperament": "guarded map carrier",
+      "trust": 0.832
+    }
+  },
+  "claim_boundary": "Deterministic agent-authored clinic-plan substrate only: not real medicine, not real care, not real consent, not subjective suffering, not subjective consciousness, and not moral patienthood.",
+  "module": "ssrm_3d_agent_authored_care_plans_clinic_scheduling_medicine_learning_followup_negotiation_bridge",
+  "next_gate": "agent-authored treatment norms, clinic reputation, medicine evidence ledgers, and multi-agent care governance",
+  "schedule": {
+    "archive-curtain-before-dusk": "Milo",
+    "dawn-before-repair": "Ari",
+    "low-light-before-hosting": "Fay",
+    "midday-repair": "Ari",
+    "route-edge-after-map-check": "Milo"
+  },
+  "seed": 20260827,
+  "source_condition": "integrated_playable_clinic_loop_inventory_repeated_visits_consent_memory_side_effects_help_seeking",
+  "source_state_loaded": true,
+  "steps": 24
+}

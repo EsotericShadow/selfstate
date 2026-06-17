@@ -1,0 +1,4 @@
+agent,plan_id,preferred_window,avoid,prefer,boundary,revisions,trust,private_workspace_digest
+Ari,ari_no_sedation_wrap_plan,dawn-before-repair,"[""bitter_herb"", ""sweet_root""]","[""dry_wrap"", ""short_lamp_rest""]",ask before wrist touch,[],0.887,sealed
+Fay,fay_low_light_nausea_safe_plan,low-light-before-hosting,"[""bitter_herb_if_hosting""]","[""warm_water"", ""lamp_rest""]",do not cancel hosting without asking,"[{""lesson"": ""ask about hosting before any future herb"", ""medicine"": ""bitter_herb""}]",0.973,sealed
+Milo,milo_route_edge_distance_plan,route-edge-after-map-check,"[""separate_cup_argument"", ""map_line_crossing""]","[""warm_water"", ""route_edge_cloth""]","spacing yes, cup replacement no","[{""lesson"": ""clinic may offer cloth, not cup replacement, unless symptoms rise"", ""medicine"": ""clean_cloth""}]",0.832,sealed

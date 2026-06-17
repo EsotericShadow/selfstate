@@ -1,0 +1,16 @@
+agent,window,medicine,status
+Ari,dawn-before-repair,dry_wrap,requested
+Ari,dawn-before-repair,dry_wrap,completed
+Ari,midday-repair,short_lamp_rest,requested
+Ari,after-inventory,,rejected_counter
+Ari,after-inventory,short_lamp_rest,missed
+Fay,dawn-before-repair,lamp_rest,requested
+Fay,low-light-before-hosting,,negotiated
+Fay,low-light-before-hosting,lamp_rest,completed
+Fay,low-light-before-hosting,warm_water,requested
+Fay,low-light-before-hosting,warm_water,completed
+Milo,route-edge-after-map-check,warm_water,requested
+Milo,route-edge-after-map-check,warm_water,completed
+Milo,route-edge-after-map-check,route_edge_cloth,requested
+Milo,archive-curtain-before-dusk,,negotiated
+Milo,archive-curtain-before-dusk,route_edge_cloth,completed

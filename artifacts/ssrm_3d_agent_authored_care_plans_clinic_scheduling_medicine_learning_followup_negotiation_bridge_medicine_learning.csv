@@ -1,0 +1,5 @@
+agent,medicine,learned_rule,side_effect_memory_count
+Ari,lamp_rest,short rest only if inventory remains in order,2
+Ari,sweet_root,avoid before repair because sleepy side effect costs work time,2
+Fay,bitter_herb,ask about hosting before any future herb,1
+Milo,clean_cloth,"clinic may offer cloth, not cup replacement, unless symptoms rise",0

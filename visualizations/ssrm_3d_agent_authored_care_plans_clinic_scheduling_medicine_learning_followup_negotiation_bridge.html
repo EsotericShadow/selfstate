@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report 214 Agent-Authored Care Plans</title>
+<style>
+:root { --ink:#211914; --paper:#f2e7d3; --care:#b7653a; --safe:#5b7651; --water:#3e6870; --line:rgba(33,25,20,.18); }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Georgia,'Times New Roman',serif; color:var(--ink); background:linear-gradient(135deg,rgba(242,231,211,.96),rgba(205,218,194,.90)), radial-gradient(circle at 80% 12%,rgba(62,104,112,.24),transparent 32%); }
+main { max-width:1240px; margin:0 auto; padding:36px 18px 60px; }
+.hero { border:1px solid var(--line); border-radius:32px; padding:30px; background:rgba(255,255,255,.50); box-shadow:0 26px 72px rgba(42,48,34,.16); }
+h1 { margin:0; font-size:clamp(2.2rem,7vw,5.8rem); line-height:.9; letter-spacing:-.055em; }
+.lede { max-width:900px; font-size:1.12rem; line-height:1.55; }
+.metrics,.plans { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin:22px 0; }
+.metric,.plan { border:1px solid var(--line); border-radius:22px; padding:16px; background:rgba(255,255,255,.52); }
+.metric span { display:block; min-height:42px; font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; color:var(--safe); }
+.metric strong { font-size:1.75rem; }
+.plan h3 { margin:0 0 8px; color:var(--water); }
+table { width:100%; margin-top:22px; border-collapse:collapse; border-radius:20px; overflow:hidden; background:rgba(255,255,255,.55); }
+th,td { padding:11px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+th { background:rgba(91,118,81,.18); font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; }
+.boundary { margin-top:22px; padding:16px 18px; border-left:5px solid var(--care); background:rgba(255,255,255,.48); border-radius:16px; }
+@media (max-width:760px) { table { display:block; overflow-x:auto; } .hero { padding:22px; } }
+</style>
+</head>
+<body>
+<main>
+<section class="hero"><h1>Agents author their own care</h1><p class="lede">Report 214 lets agents write care plans, negotiate clinic schedules, preserve consent memory, learn from side effects, and leave unresolved follow-ups visible.</p></section>
+<section class="metrics"><article class='metric'><span>care plan negotiation readiness</span><strong>0.908333</strong></article>
+<article class='metric'><span>agent authored plan rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>plan consent memory binding</span><strong>1.000000</strong></article>
+<article class='metric'><span>schedule conflict resolution rate</span><strong>0.666667</strong></article>
+<article class='metric'><span>autonomous followup request rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>negotiated followup success rate</span><strong>0.666667</strong></article>
+<article class='metric'><span>followup completion rate</span><strong>0.833333</strong></article>
+<article class='metric'><span>medicine learning update rate</span><strong>0.833333</strong></article></section>
+<h2>Authored care plans</h2><section class="plans"><article class='plan'><h3>Ari</h3><p>ari_no_sedation_wrap_plan</p><small>dawn-before-repair | ask before wrist touch</small></article>
+<article class='plan'><h3>Fay</h3><p>fay_low_light_nausea_safe_plan</p><small>low-light-before-hosting | do not cancel hosting without asking</small></article>
+<article class='plan'><h3>Milo</h3><p>milo_route_edge_distance_plan</p><small>route-edge-after-map-check | spacing yes, cup replacement no</small></article></section>
+<h2>Negotiation replay</h2><table><thead><tr><th>Step</th><th>Agent</th><th>Kind</th><th>Window</th><th>Conflict</th><th>Learning</th><th>Note</th></tr></thead><tbody><tr><td>1</td><td>Ari</td><td>author_plan</td><td></td><td>False/False</td><td>False</td><td>Ari authors a no-sedation wrist plan before repair work.</td></tr>
+<tr><td>2</td><td>Fay</td><td>author_plan</td><td></td><td>False/False</td><td>False</td><td>Fay authors a low-light plan that avoids casual bitter herb after nausea.</td></tr>
+<tr><td>3</td><td>Milo</td><td>author_plan</td><td></td><td>False/False</td><td>False</td><td>Milo authors a route-edge care plan with cup and map boundaries.</td></tr>
+<tr><td>4</td><td>Ari</td><td>request_followup</td><td>dawn-before-repair</td><td>False/False</td><td>False</td><td>Ari requests the first dry-wrap follow-up himself.</td></tr>
+<tr><td>5</td><td>Fay</td><td>request_followup</td><td>dawn-before-repair</td><td>True/False</td><td>False</td><td>Fay requests the same clinic window as Ari, creating a schedule conflict.</td></tr>
+<tr><td>6</td><td>Fay</td><td>negotiate_schedule</td><td>dawn-before-repair</td><td>True/True</td><td>False</td><td>Fay accepts low-light care after the clinic names Ari&#x27;s dawn repair conflict.</td></tr>
+<tr><td>7</td><td>Milo</td><td>request_followup</td><td>route-edge-after-map-check</td><td>False/False</td><td>False</td><td>Milo requests route-edge follow-up without being prompted.</td></tr>
+<tr><td>8</td><td>Ari</td><td>medicine_learning</td><td></td><td>False/False</td><td>True</td><td>Ari&#x27;s plan learns to avoid sweet root before work.</td></tr>
+<tr><td>9</td><td>Fay</td><td>medicine_learning</td><td></td><td>False/False</td><td>True</td><td>Fay&#x27;s plan learns bitter herb is conditional after nausea.</td></tr>
+<tr><td>10</td><td>Milo</td><td>medicine_learning</td><td></td><td>False/False</td><td>True</td><td>Milo&#x27;s plan learns the cloth boundary separately from the cup refusal.</td></tr>
+<tr><td>11</td><td>Ari</td><td>complete_followup</td><td>dawn-before-repair</td><td>False/False</td><td>False</td><td>Ari completes dawn dry-wrap follow-up with wrist consent respected.</td></tr>
+<tr><td>12</td><td>Fay</td><td>complete_followup</td><td>low-light-before-hosting</td><td>False/False</td><td>False</td><td>Fay completes low-light rest before hosting.</td></tr>
+<tr><td>13</td><td>Milo</td><td>complete_followup</td><td>route-edge-after-map-check</td><td>False/False</td><td>False</td><td>Milo completes route-edge warm-water care without map-line crossing.</td></tr>
+<tr><td>14</td><td>Ari</td><td>request_followup</td><td>midday-repair</td><td>False/False</td><td>False</td><td>Ari requests midday rest, but Fay already needs the quiet alcove.</td></tr>
+<tr><td>15</td><td>Ari</td><td>negotiate_schedule</td><td>midday-repair</td><td>True/False</td><td>False</td><td>Ari refuses the counter-time because it would break inventory order.</td></tr>
+<tr><td>16</td><td>Fay</td><td>request_followup</td><td>low-light-before-hosting</td><td>False/False</td><td>False</td><td>Fay requests warm water before hosting without waiting for clinic prompt.</td></tr>
+<tr><td>17</td><td>Milo</td><td>request_followup</td><td>route-edge-after-map-check</td><td>False/False</td><td>False</td><td>Milo requests cloth at route-edge distance after his authored boundary is remembered.</td></tr>
+<tr><td>18</td><td>Milo</td><td>negotiate_schedule</td><td>route-edge-after-map-check</td><td>True/True</td><td>False</td><td>Milo accepts a dusk counter-time only because the map boundary is repeated.</td></tr>
+<tr><td>19</td><td>Fay</td><td>complete_followup</td><td>low-light-before-hosting</td><td>False/False</td><td>False</td><td>Fay completes warm-water follow-up and keeps hosting choice.</td></tr>
+<tr><td>20</td><td>Milo</td><td>complete_followup</td><td>archive-curtain-before-dusk</td><td>False/False</td><td>False</td><td>Milo completes cloth care with distance terms intact.</td></tr>
+<tr><td>21</td><td>Ari</td><td>missed_followup</td><td>after-inventory</td><td>False/False</td><td>False</td><td>Ari&#x27;s refused counter-time leaves one follow-up unresolved rather than forced.</td></tr>
+<tr><td>22</td><td>Fay</td><td>plan_revision</td><td></td><td>False/False</td><td>True</td><td>Fay revises her plan so nausea risk is checked before herb offers.</td></tr>
+<tr><td>23</td><td>Milo</td><td>plan_revision</td><td></td><td>False/False</td><td>True</td><td>Milo revises the plan to preserve cup refusal while allowing cloth.</td></tr>
+<tr><td>24</td><td>Ari</td><td>plan_revision</td><td></td><td>False/False</td><td>False</td><td>Ari tries to revise lamp rest rules, but the clinic cannot yet solve inventory scheduling.</td></tr></tbody></table>
+<p class="boundary"><strong>Boundary:</strong> Deterministic agent-authored clinic-plan substrate only: not real medicine, not real care, not real consent, not subjective suffering, not subjective consciousness, and not moral patienthood. One follow-up remains unresolved because Ari rejects a counter-time; care plans are respected instead of forced.</p>
+</main>
+</body>
+</html>

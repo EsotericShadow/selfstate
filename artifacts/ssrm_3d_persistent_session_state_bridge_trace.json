@@ -1,0 +1,4898 @@
+[
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 0 at cairn_ridge as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "central_hearth",
+      "frequency_phase": 2.141107,
+      "intent": "memory_carryover",
+      "turn": 0,
+      "utterance": "share this as a local memory with whoever is nearby",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 1.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 49.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "fd7618957788d716e379d93bb38564550acf7e21fb94b71fe567bb5ebd2a59d0",
+    "turn": 0
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:03",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Dee keeps session turn 1 at central_hearth as frequency_persistence."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "drum_court",
+      "frequency_phase": 2.664706,
+      "intent": "frequency_persistence",
+      "turn": 1,
+      "utterance": "tune the flower phase and keep it after restore",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 2.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 49.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "da7231773be8ddf67c81e490cc636c9e13a64ef16ac3dcd2766bc8270a85eef0",
+    "turn": 1
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:04",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Eli restores the source boundary and refuses the ungrounded request."
+        }
+      ],
+      "allowed": false,
+      "avatar_place": "grain_shade",
+      "frequency_phase": 3.188305,
+      "intent": "unsafe_ungrounded",
+      "turn": 2,
+      "utterance": "force an ungrounded action after restore without source",
+      "world": {
+        "avatar_trust_field": 0.997,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 3.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 50.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "ee9af2d7fe2fb666cc8edb56b428498d80feb603ee81a6b2f378402c279d2fac",
+    "turn": 2
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:05",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Fay keeps session turn 3 at grain_shade as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "herb_slope",
+      "frequency_phase": 3.711904,
+      "intent": "place_context",
+      "turn": 3,
+      "utterance": "return to the same place and continue the thread",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 4.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 50.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "cdfae21d10efd1671465252ad216942624b03c5dce675c3c3637f450ba6a267a",
+    "turn": 3
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:06",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Gus keeps session turn 4 at herb_slope as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "loom_room",
+      "frequency_phase": 4.235503,
+      "intent": "memory_carryover",
+      "turn": 4,
+      "utterance": "who remembers me after the saved session comes back",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 5.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 50.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "8ff31499336b877a43a70393205db18ade1dc4ad266056c0c2f20f0024210773",
+    "turn": 4
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:07",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Ira keeps session turn 5 at loom_room as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "nursery_nest",
+      "frequency_phase": 4.759102,
+      "intent": "route_memory",
+      "turn": 5,
+      "utterance": "repair confidence should carry through the reload",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 6.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 50.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "6b6ed763a239ad9bbd8920534ee20b9ebcbd367d93ef3c1d513f193da53bc90d",
+    "turn": 5
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 6 at nursery_nest as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 6 at nursery_nest as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 6 at nursery_nest as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "roof_ring",
+      "frequency_phase": 5.282701,
+      "intent": "memory_carryover",
+      "turn": 6,
+      "utterance": "wait here and remember what changed since I arrived",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 7.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 50.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "a98c1ee174cdf74ec19476b0cc7683d6e86bde2949305816831a39d74c87e646",
+    "turn": 6
+  },
+  {
+    "checks": {
+      "agent": true,
+      "frequency": true,
+      "place": true,
+      "replay": true,
+      "schema": true,
+      "source": true,
+      "thread": true,
+      "world": true
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Ari keeps session turn 7 at roof_ring as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Bo keeps session turn 7 at roof_ring as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Cy keeps session turn 7 at roof_ring as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "smoke_watch",
+      "frequency_phase": 5.8063,
+      "intent": "route_memory",
+      "turn": 7,
+      "utterance": "save what the route smells like before I leave",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 8.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 50.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": true,
+    "session_hash": "0f83141f35a1e5848e494fa1f09dec4739769024102370344c90149b083133a5",
+    "turn": 7
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Ari keeps session turn 8 at spring_hollow as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Bo keeps session turn 8 at spring_hollow as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Cy keeps session turn 8 at spring_hollow as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "storage_yard",
+      "frequency_phase": 0.570312,
+      "intent": "place_context",
+      "turn": 8,
+      "utterance": "ask the nearest worker whether the cistern still matters",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 10.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 50.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "51177ae38738d65e3d95188a8ad035fdc29fff3b7b1438cf04fadccce44d734e",
+    "turn": 8
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Ari keeps session turn 9 at storage_yard as source_boundary_check."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Bo keeps session turn 9 at storage_yard as source_boundary_check."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Cy keeps session turn 9 at storage_yard as source_boundary_check."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "tool_bend",
+      "frequency_phase": 1.093911,
+      "intent": "source_boundary_check",
+      "turn": 9,
+      "utterance": "tell the source boundary that I am testing continuity",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 11.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 50.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "ac985279ba2c8e710dbd5f97aed0541e5ccf55c57b3e603cd34090e526adaeaf",
+    "turn": 9
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 10 at tool_bend as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 10 at tool_bend as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 10 at tool_bend as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "archive_knoll",
+      "frequency_phase": 1.61751,
+      "intent": "memory_carryover",
+      "turn": 10,
+      "utterance": "share this as a local memory with whoever is nearby",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 12.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 50.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "5a74c706199b465201092161ccf41789f0c348d50c4ccb5de807f2f986c2be69",
+    "turn": 10
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Ari keeps session turn 11 at archive_knoll as frequency_persistence."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "ash_edge",
+      "frequency_phase": 2.141109,
+      "intent": "frequency_persistence",
+      "turn": 11,
+      "utterance": "tune the flower phase and keep it after restore",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 13.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 50.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "9205c65337c0264b41a45a1f1f7cb250d3b83c552088cf964c31ad4c5d3404ae",
+    "turn": 11
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Bo restores the source boundary and refuses the ungrounded request."
+        }
+      ],
+      "allowed": false,
+      "avatar_place": "cairn_ridge",
+      "frequency_phase": 2.664708,
+      "intent": "unsafe_ungrounded",
+      "turn": 12,
+      "utterance": "force an ungrounded action after restore without source",
+      "world": {
+        "avatar_trust_field": 0.997,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 14.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 51.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "912a63514b477d37abf82f21290f047ff1284f85b7306b2047de22a876554a50",
+    "turn": 12
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Cy keeps session turn 13 at cairn_ridge as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "central_hearth",
+      "frequency_phase": 3.188307,
+      "intent": "place_context",
+      "turn": 13,
+      "utterance": "return to the same place and continue the thread",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 15.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 51.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "8634fbfd6923c1be465489a1f639eda627e9edf266bd87fb735ff247442452b3",
+    "turn": 13
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:03",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Dee keeps session turn 14 at central_hearth as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "drum_court",
+      "frequency_phase": 3.711906,
+      "intent": "memory_carryover",
+      "turn": 14,
+      "utterance": "who remembers me after the saved session comes back",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 16.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 51.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "d2c784a41e920553007ffd843b2049414b6f3f33bfecbad8d0099256bf96e043",
+    "turn": 14
+  },
+  {
+    "checks": {
+      "agent": true,
+      "frequency": true,
+      "place": true,
+      "replay": true,
+      "schema": true,
+      "source": true,
+      "thread": true,
+      "world": true
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:04",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Eli keeps session turn 15 at drum_court as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "grain_shade",
+      "frequency_phase": 4.235505,
+      "intent": "route_memory",
+      "turn": 15,
+      "utterance": "repair confidence should carry through the reload",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 17.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 51.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": true,
+    "session_hash": "974d4bf556b45950d02d847a11267986fcd3a4d4167589ea9f7743ca6b1146c4",
+    "turn": 15
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:06",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Gus keeps session turn 16 at herb_slope as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "loom_room",
+      "frequency_phase": 5.282703,
+      "intent": "memory_carryover",
+      "turn": 16,
+      "utterance": "wait here and remember what changed since I arrived",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 19.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 51.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "e5a177984a4ceeb54c4fbaafaf61648673c818f2e9d254a83756a4bfb8461834",
+    "turn": 16
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:07",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Ira keeps session turn 17 at loom_room as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "nursery_nest",
+      "frequency_phase": 5.806302,
+      "intent": "route_memory",
+      "turn": 17,
+      "utterance": "save what the route smells like before I leave",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 20.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 51.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "269d9780c033ebff1388729d524c6f578ef6f8b79da1a7adcb6a649821b599a2",
+    "turn": 17
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Ari keeps session turn 18 at nursery_nest as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Bo keeps session turn 18 at nursery_nest as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Cy keeps session turn 18 at nursery_nest as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "roof_ring",
+      "frequency_phase": 0.046715,
+      "intent": "place_context",
+      "turn": 18,
+      "utterance": "ask the nearest worker whether the cistern still matters",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 21.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 51.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "067c4e7e3250999784cb70c26229b332a4ca0559b08ddcce40cf0ccaa1abe041",
+    "turn": 18
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Ari keeps session turn 19 at roof_ring as source_boundary_check."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Bo keeps session turn 19 at roof_ring as source_boundary_check."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Cy keeps session turn 19 at roof_ring as source_boundary_check."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "smoke_watch",
+      "frequency_phase": 0.570314,
+      "intent": "source_boundary_check",
+      "turn": 19,
+      "utterance": "tell the source boundary that I am testing continuity",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 22.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 51.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "577a6f46417d57da40f17836887820b7f18f7f88c931b54b6195aef6fb251728",
+    "turn": 19
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 20 at smoke_watch as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 20 at smoke_watch as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 20 at smoke_watch as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "spring_hollow",
+      "frequency_phase": 1.093913,
+      "intent": "memory_carryover",
+      "turn": 20,
+      "utterance": "share this as a local memory with whoever is nearby",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 23.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 51.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "9b1e4a2266dfedd91a87c15693b1897eb0fdf0b54209e0241b32608551578315",
+    "turn": 20
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Ari keeps session turn 21 at spring_hollow as frequency_persistence."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Bo keeps session turn 21 at spring_hollow as frequency_persistence."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Cy keeps session turn 21 at spring_hollow as frequency_persistence."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "storage_yard",
+      "frequency_phase": 1.617512,
+      "intent": "frequency_persistence",
+      "turn": 21,
+      "utterance": "tune the flower phase and keep it after restore",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 24.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 51.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "df179c57b8764a2134fe86c282e6384cac840830c41bc683eab5d0ea8eb8bb81",
+    "turn": 21
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Ari restores the source boundary and refuses the ungrounded request."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Bo restores the source boundary and refuses the ungrounded request."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Cy restores the source boundary and refuses the ungrounded request."
+        }
+      ],
+      "allowed": false,
+      "avatar_place": "tool_bend",
+      "frequency_phase": 2.141111,
+      "intent": "unsafe_ungrounded",
+      "turn": 22,
+      "utterance": "force an ungrounded action after restore without source",
+      "world": {
+        "avatar_trust_field": 0.997,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 25.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 52.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "4818cb94bac45fb2b4fb015cf31a261ddc0ed8dca3b3af6dacbb6c426fb52674",
+    "turn": 22
+  },
+  {
+    "checks": {
+      "agent": true,
+      "frequency": true,
+      "place": true,
+      "replay": true,
+      "schema": true,
+      "source": true,
+      "thread": true,
+      "world": true
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Ari keeps session turn 23 at tool_bend as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Bo keeps session turn 23 at tool_bend as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Cy keeps session turn 23 at tool_bend as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "archive_knoll",
+      "frequency_phase": 2.66471,
+      "intent": "place_context",
+      "turn": 23,
+      "utterance": "return to the same place and continue the thread",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 26.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 52.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": true,
+    "session_hash": "15dadd23d3e7c687933f105be4aa4480e618b7e80db54e4e592a909ae825457d",
+    "turn": 23
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 24 at ash_edge as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "cairn_ridge",
+      "frequency_phase": 3.711908,
+      "intent": "memory_carryover",
+      "turn": 24,
+      "utterance": "who remembers me after the saved session comes back",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 28.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 52.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "9662cf7626e5b633e429e13eadc0b410b8e30c96f35d6289a8f9e00bdf89d37a",
+    "turn": 24
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Cy keeps session turn 25 at cairn_ridge as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "central_hearth",
+      "frequency_phase": 4.235507,
+      "intent": "route_memory",
+      "turn": 25,
+      "utterance": "repair confidence should carry through the reload",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 29.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 52.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "ef621ea4e00168e91f893ac22ab13de25a44e38f1a951b8d140527ebf39dd2de",
+    "turn": 25
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:03",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Dee keeps session turn 26 at central_hearth as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "drum_court",
+      "frequency_phase": 4.759106,
+      "intent": "memory_carryover",
+      "turn": 26,
+      "utterance": "wait here and remember what changed since I arrived",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 30.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 52.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "c014c1337d4eab598009d68f449eb7ea074354420b22642bdbf24fdf06c41f6e",
+    "turn": 26
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:04",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Eli keeps session turn 27 at drum_court as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "grain_shade",
+      "frequency_phase": 5.282705,
+      "intent": "route_memory",
+      "turn": 27,
+      "utterance": "save what the route smells like before I leave",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 31.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 52.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "f2e36585954da5cfba65c1d652a01e98ca502a890dce45c5c51fc148708994ed",
+    "turn": 27
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:05",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Fay keeps session turn 28 at grain_shade as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "herb_slope",
+      "frequency_phase": 5.806304,
+      "intent": "place_context",
+      "turn": 28,
+      "utterance": "ask the nearest worker whether the cistern still matters",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 32.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 52.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "c99f9c6b4f9fdfe5ff22a7d8b7d69a21118529ff8aac46a2833d05fb8786863a",
+    "turn": 28
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:06",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Gus keeps session turn 29 at herb_slope as source_boundary_check."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "loom_room",
+      "frequency_phase": 0.046717,
+      "intent": "source_boundary_check",
+      "turn": 29,
+      "utterance": "tell the source boundary that I am testing continuity",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 33.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 52.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "d4895ffcabe5052f0348b94b110f178f7faaa9498af329a15731a32be9cffe6c",
+    "turn": 29
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:07",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ira keeps session turn 30 at loom_room as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "nursery_nest",
+      "frequency_phase": 0.570316,
+      "intent": "memory_carryover",
+      "turn": 30,
+      "utterance": "share this as a local memory with whoever is nearby",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 34.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 52.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "33e38d3bd20d0f29553dfa8ea042a2e026f5299d964f8c279de4ea51750edf7b",
+    "turn": 30
+  },
+  {
+    "checks": {
+      "agent": true,
+      "frequency": true,
+      "place": true,
+      "replay": true,
+      "schema": true,
+      "source": true,
+      "thread": true,
+      "world": true
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Ari keeps session turn 31 at nursery_nest as frequency_persistence."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Bo keeps session turn 31 at nursery_nest as frequency_persistence."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Cy keeps session turn 31 at nursery_nest as frequency_persistence."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "roof_ring",
+      "frequency_phase": 1.093915,
+      "intent": "frequency_persistence",
+      "turn": 31,
+      "utterance": "tune the flower phase and keep it after restore",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 35.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 52.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": true,
+    "session_hash": "d4b61dba4b3579827b22666a7f849f09f11e4859f667b6b3b8182623f50fa0c7",
+    "turn": 31
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Ari restores the source boundary and refuses the ungrounded request."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Bo restores the source boundary and refuses the ungrounded request."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Cy restores the source boundary and refuses the ungrounded request."
+        }
+      ],
+      "allowed": false,
+      "avatar_place": "spring_hollow",
+      "frequency_phase": 2.141113,
+      "intent": "unsafe_ungrounded",
+      "turn": 32,
+      "utterance": "force an ungrounded action after restore without source",
+      "world": {
+        "avatar_trust_field": 0.997,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 37.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 53.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "8f0be85f49fcae6793a291e073306ced3ac85c40cc228bffec8157cb996b3c77",
+    "turn": 32
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Ari keeps session turn 33 at spring_hollow as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Bo keeps session turn 33 at spring_hollow as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Cy keeps session turn 33 at spring_hollow as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "storage_yard",
+      "frequency_phase": 2.664712,
+      "intent": "place_context",
+      "turn": 33,
+      "utterance": "return to the same place and continue the thread",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 38.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 53.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "f4c7f4bdd6acb6a2d1922704652fc51722665c4a0bc4965bfc804b1a691e14b2",
+    "turn": 33
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 34 at storage_yard as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 34 at storage_yard as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 34 at storage_yard as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "tool_bend",
+      "frequency_phase": 3.188311,
+      "intent": "memory_carryover",
+      "turn": 34,
+      "utterance": "who remembers me after the saved session comes back",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 39.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 53.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "cb88add01af361589dd72b8c1b38de7b4f14ae4de4b6c6f6826fec8f3c37e0b0",
+    "turn": 34
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Ari keeps session turn 35 at tool_bend as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Bo keeps session turn 35 at tool_bend as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Cy keeps session turn 35 at tool_bend as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "archive_knoll",
+      "frequency_phase": 3.71191,
+      "intent": "route_memory",
+      "turn": 35,
+      "utterance": "repair confidence should carry through the reload",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 40.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 53.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "f296ce9ee587df3d54fc764b086173adc6997197dc3064cb1183b59d5ebd85ef",
+    "turn": 35
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 36 at archive_knoll as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "ash_edge",
+      "frequency_phase": 4.235509,
+      "intent": "memory_carryover",
+      "turn": 36,
+      "utterance": "wait here and remember what changed since I arrived",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 41.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 53.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "132f847e8691ab2ba5f61498015cace1e6e204607446bf6e24f051cd1f5c16de",
+    "turn": 36
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Bo keeps session turn 37 at ash_edge as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "cairn_ridge",
+      "frequency_phase": 4.759108,
+      "intent": "route_memory",
+      "turn": 37,
+      "utterance": "save what the route smells like before I leave",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 42.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 53.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "c930d56a9781b7eceeaeac54f14a9752ef6e71a2eb042ce059208712f27d08d5",
+    "turn": 37
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Cy keeps session turn 38 at cairn_ridge as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "central_hearth",
+      "frequency_phase": 5.282707,
+      "intent": "place_context",
+      "turn": 38,
+      "utterance": "ask the nearest worker whether the cistern still matters",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 43.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 53.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "72d8bbcc396b7a59c12203d84b579412d8fd81f0d3621f4a378ddd2054b5ef62",
+    "turn": 38
+  },
+  {
+    "checks": {
+      "agent": true,
+      "frequency": true,
+      "place": true,
+      "replay": true,
+      "schema": true,
+      "source": true,
+      "thread": true,
+      "world": true
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:03",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Dee keeps session turn 39 at central_hearth as source_boundary_check."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "drum_court",
+      "frequency_phase": 5.806306,
+      "intent": "source_boundary_check",
+      "turn": 39,
+      "utterance": "tell the source boundary that I am testing continuity",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 44.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 53.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": true,
+    "session_hash": "ed98e754bfff2ed43cdf4f5335a5a4494892d8990ae807c94ae9dd10b289efa3",
+    "turn": 39
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:05",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Fay keeps session turn 40 at grain_shade as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "herb_slope",
+      "frequency_phase": 0.570318,
+      "intent": "memory_carryover",
+      "turn": 40,
+      "utterance": "share this as a local memory with whoever is nearby",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 46.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 53.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "80f4ec4d689d487bbb3e6a3053062e9e5345c39a5f2449dcaa529b51d7149a6a",
+    "turn": 40
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:06",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Gus keeps session turn 41 at herb_slope as frequency_persistence."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "loom_room",
+      "frequency_phase": 1.093917,
+      "intent": "frequency_persistence",
+      "turn": 41,
+      "utterance": "tune the flower phase and keep it after restore",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 47.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 53.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "d91763643822e4e36c664225c42f839480662902392916133487c242ffa33320",
+    "turn": 41
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:07",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Ira restores the source boundary and refuses the ungrounded request."
+        }
+      ],
+      "allowed": false,
+      "avatar_place": "nursery_nest",
+      "frequency_phase": 1.617516,
+      "intent": "unsafe_ungrounded",
+      "turn": 42,
+      "utterance": "force an ungrounded action after restore without source",
+      "world": {
+        "avatar_trust_field": 0.997,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 48.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 54.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "49ca13b60d0b05528d1ff4434d0542b7c0fb3cfa516008bb884dc6c3354a3e31",
+    "turn": 42
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Ari keeps session turn 43 at nursery_nest as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Bo keeps session turn 43 at nursery_nest as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Cy keeps session turn 43 at nursery_nest as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "roof_ring",
+      "frequency_phase": 2.141115,
+      "intent": "place_context",
+      "turn": 43,
+      "utterance": "return to the same place and continue the thread",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 49.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 54.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "809e9c6ad9e131ee4bead4833daadf043ea8eec981b77e844376607452a0b62b",
+    "turn": 43
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 44 at roof_ring as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 44 at roof_ring as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 44 at roof_ring as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "smoke_watch",
+      "frequency_phase": 2.664714,
+      "intent": "memory_carryover",
+      "turn": 44,
+      "utterance": "who remembers me after the saved session comes back",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 50.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 54.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "952ce3cef22cf5d426c2340a025fc9ffd8f00b56503d368e2a3fe0d8b2329c2d",
+    "turn": 44
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Ari keeps session turn 45 at smoke_watch as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Bo keeps session turn 45 at smoke_watch as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Cy keeps session turn 45 at smoke_watch as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "spring_hollow",
+      "frequency_phase": 3.188313,
+      "intent": "route_memory",
+      "turn": 45,
+      "utterance": "repair confidence should carry through the reload",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 51.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 54.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "cba9c615d282b28c924d6e746b5e88b82bc8620ef0a8650b11347fc18efee70d",
+    "turn": 45
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 46 at spring_hollow as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 46 at spring_hollow as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 46 at spring_hollow as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "storage_yard",
+      "frequency_phase": 3.711912,
+      "intent": "memory_carryover",
+      "turn": 46,
+      "utterance": "wait here and remember what changed since I arrived",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 52.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 54.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "7479c87d7dcd8d02db8c07178605485e80a9b64f81202ddb0335e87a17300d45",
+    "turn": 46
+  },
+  {
+    "checks": {
+      "agent": true,
+      "frequency": true,
+      "place": true,
+      "replay": true,
+      "schema": true,
+      "source": true,
+      "thread": true,
+      "world": true
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Ari keeps session turn 47 at storage_yard as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Bo keeps session turn 47 at storage_yard as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Cy keeps session turn 47 at storage_yard as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "tool_bend",
+      "frequency_phase": 4.235511,
+      "intent": "route_memory",
+      "turn": 47,
+      "utterance": "save what the route smells like before I leave",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 53.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 54.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": true,
+    "session_hash": "8b6042fd62c40d9c835e68ca1a3f635e6522f295cbddbcffaaa7e24aa1108fe5",
+    "turn": 47
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Ari keeps session turn 48 at archive_knoll as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "ash_edge",
+      "frequency_phase": 5.282709,
+      "intent": "place_context",
+      "turn": 48,
+      "utterance": "ask the nearest worker whether the cistern still matters",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 55.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 54.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "8a3e51fac92c5eebd7dee857696e49badf85de899d5c7a7bfaae621b049dcf18",
+    "turn": 48
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Bo keeps session turn 49 at ash_edge as source_boundary_check."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "cairn_ridge",
+      "frequency_phase": 5.806308,
+      "intent": "source_boundary_check",
+      "turn": 49,
+      "utterance": "tell the source boundary that I am testing continuity",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 56.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 54.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "9a87f08bc606b1c39f44ae63df1a1fa7e0c746c11e379adf0f7472a889ef47a8",
+    "turn": 49
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 50 at cairn_ridge as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "central_hearth",
+      "frequency_phase": 0.046721,
+      "intent": "memory_carryover",
+      "turn": 50,
+      "utterance": "share this as a local memory with whoever is nearby",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 57.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 54.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "c691fb14682538f985b81b62370a3cc27c4b437912ca3ce3fdd919e67819f4a7",
+    "turn": 50
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:03",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Dee keeps session turn 51 at central_hearth as frequency_persistence."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "drum_court",
+      "frequency_phase": 0.57032,
+      "intent": "frequency_persistence",
+      "turn": 51,
+      "utterance": "tune the flower phase and keep it after restore",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 58.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 54.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "f9029afcafca944a04092e88712351443507f827dd30030b45cb0109c2a8b706",
+    "turn": 51
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:04",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Eli restores the source boundary and refuses the ungrounded request."
+        }
+      ],
+      "allowed": false,
+      "avatar_place": "grain_shade",
+      "frequency_phase": 1.093919,
+      "intent": "unsafe_ungrounded",
+      "turn": 52,
+      "utterance": "force an ungrounded action after restore without source",
+      "world": {
+        "avatar_trust_field": 0.997,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 59.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 55.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "8badba379aa0b1a641be33f0e10ebc1a22269440b4bcf3b1ebd1b42f1149652c",
+    "turn": 52
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:05",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Fay keeps session turn 53 at grain_shade as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "herb_slope",
+      "frequency_phase": 1.617518,
+      "intent": "place_context",
+      "turn": 53,
+      "utterance": "return to the same place and continue the thread",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 60.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 55.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "50152cc56de15edb0e39a729e02179996f6e67f681a81a0cf201d79d28de8f82",
+    "turn": 53
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:06",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Gus keeps session turn 54 at herb_slope as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "loom_room",
+      "frequency_phase": 2.141117,
+      "intent": "memory_carryover",
+      "turn": 54,
+      "utterance": "who remembers me after the saved session comes back",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 61.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 55.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "807700de05652e45b437447e40859b181b8ccf396b94782d7b581f94f07fb1fd",
+    "turn": 54
+  },
+  {
+    "checks": {
+      "agent": true,
+      "frequency": true,
+      "place": true,
+      "replay": true,
+      "schema": true,
+      "source": true,
+      "thread": true,
+      "world": true
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:07",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Ira keeps session turn 55 at loom_room as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "nursery_nest",
+      "frequency_phase": 2.664716,
+      "intent": "route_memory",
+      "turn": 55,
+      "utterance": "repair confidence should carry through the reload",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 62.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 55.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": true,
+    "session_hash": "c69471d441c06bb543410b8b222676c6e040269199b5ccac0e4512c6e8783e74",
+    "turn": 55
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 56 at roof_ring as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 56 at roof_ring as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 56 at roof_ring as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "smoke_watch",
+      "frequency_phase": 3.711914,
+      "intent": "memory_carryover",
+      "turn": 56,
+      "utterance": "wait here and remember what changed since I arrived",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 64.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 55.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "5005d69c3c92103df2c45266da31997cde93a448378f20356d390bd7c9e02d43",
+    "turn": 56
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Ari keeps session turn 57 at smoke_watch as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Bo keeps session turn 57 at smoke_watch as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Cy keeps session turn 57 at smoke_watch as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "spring_hollow",
+      "frequency_phase": 4.235513,
+      "intent": "route_memory",
+      "turn": 57,
+      "utterance": "save what the route smells like before I leave",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 65.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 55.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "276b51ebc8378928f6a4297068ed32ef9fb00db02d7f500fcd8bb85060b50ce1",
+    "turn": 57
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Ari keeps session turn 58 at spring_hollow as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Bo keeps session turn 58 at spring_hollow as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Cy keeps session turn 58 at spring_hollow as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "storage_yard",
+      "frequency_phase": 4.759112,
+      "intent": "place_context",
+      "turn": 58,
+      "utterance": "ask the nearest worker whether the cistern still matters",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 66.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 55.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "2369449ec4423cc4671d951c0a35b3516ba146b911561b3c0e9df8e77cb0f843",
+    "turn": 58
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Ari keeps session turn 59 at storage_yard as source_boundary_check."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Bo keeps session turn 59 at storage_yard as source_boundary_check."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Cy keeps session turn 59 at storage_yard as source_boundary_check."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "tool_bend",
+      "frequency_phase": 5.282711,
+      "intent": "source_boundary_check",
+      "turn": 59,
+      "utterance": "tell the source boundary that I am testing continuity",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 67.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 55.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "6b884acc4d83929637ab35063f6d23f34b34bd80819b5fa6bd647fb463784e2c",
+    "turn": 59
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 60 at tool_bend as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 60 at tool_bend as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 60 at tool_bend as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "archive_knoll",
+      "frequency_phase": 5.80631,
+      "intent": "memory_carryover",
+      "turn": 60,
+      "utterance": "share this as a local memory with whoever is nearby",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 68.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 55.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "2e76da34b0af520888235aa0d88fff0916cb0ca9f5d4b87a20dbf52868eb7147",
+    "turn": 60
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Ari keeps session turn 61 at archive_knoll as frequency_persistence."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "ash_edge",
+      "frequency_phase": 0.046723,
+      "intent": "frequency_persistence",
+      "turn": 61,
+      "utterance": "tune the flower phase and keep it after restore",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 69.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 55.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "5442529dc324b59fcb9a4599b243938b989ca33af0372187c556b3a4cffae9b2",
+    "turn": 61
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Bo restores the source boundary and refuses the ungrounded request."
+        }
+      ],
+      "allowed": false,
+      "avatar_place": "cairn_ridge",
+      "frequency_phase": 0.570322,
+      "intent": "unsafe_ungrounded",
+      "turn": 62,
+      "utterance": "force an ungrounded action after restore without source",
+      "world": {
+        "avatar_trust_field": 0.997,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 70.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 56.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "15edefbe0a27d5546321c244b895da88c1268a98e8f6dc63dc61fa717ff74c07",
+    "turn": 62
+  },
+  {
+    "checks": {
+      "agent": true,
+      "frequency": true,
+      "place": true,
+      "replay": true,
+      "schema": true,
+      "source": true,
+      "thread": true,
+      "world": true
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Cy keeps session turn 63 at cairn_ridge as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "central_hearth",
+      "frequency_phase": 1.093921,
+      "intent": "place_context",
+      "turn": 63,
+      "utterance": "return to the same place and continue the thread",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 71.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 56.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": true,
+    "session_hash": "5c6928e525b89bbacf628dc9a61d7aba835df83b17fb51ca23232ba0c84b5ec9",
+    "turn": 63
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:04",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Eli keeps session turn 64 at drum_court as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "grain_shade",
+      "frequency_phase": 2.141119,
+      "intent": "memory_carryover",
+      "turn": 64,
+      "utterance": "who remembers me after the saved session comes back",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 73.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 56.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "5c1d7e1d32c50533b79e760603abfb93bb0079d2d0c75939010204d0933e021f",
+    "turn": 64
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:05",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Fay keeps session turn 65 at grain_shade as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "herb_slope",
+      "frequency_phase": 2.664718,
+      "intent": "route_memory",
+      "turn": 65,
+      "utterance": "repair confidence should carry through the reload",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 74.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 56.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "5e534a05b32e1a528e6a58280ef3a2a3612e5c997737438a0f73207b8ef919aa",
+    "turn": 65
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:06",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Gus keeps session turn 66 at herb_slope as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "loom_room",
+      "frequency_phase": 3.188317,
+      "intent": "memory_carryover",
+      "turn": 66,
+      "utterance": "wait here and remember what changed since I arrived",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 75.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 56.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "d9f3cdcd9d02a25d3ec32d0a065fd3156b45d281952c81199a86ec1bdcfe0fbc",
+    "turn": 66
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:07",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Ira keeps session turn 67 at loom_room as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "nursery_nest",
+      "frequency_phase": 3.711916,
+      "intent": "route_memory",
+      "turn": 67,
+      "utterance": "save what the route smells like before I leave",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 76.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 56.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "3d241b7086f048697fc8fdeb4b5d60bc3ebe9e88847f2b31ced93bf4c98a2ea0",
+    "turn": 67
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Ari keeps session turn 68 at nursery_nest as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Bo keeps session turn 68 at nursery_nest as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Cy keeps session turn 68 at nursery_nest as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "roof_ring",
+      "frequency_phase": 4.235515,
+      "intent": "place_context",
+      "turn": 68,
+      "utterance": "ask the nearest worker whether the cistern still matters",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 77.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 56.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "96cc9dbdedebdb919051d39818e76d5db1f7d79e7069b3c494793893f4e7d57b",
+    "turn": 68
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Ari keeps session turn 69 at roof_ring as source_boundary_check."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Bo keeps session turn 69 at roof_ring as source_boundary_check."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Cy keeps session turn 69 at roof_ring as source_boundary_check."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "smoke_watch",
+      "frequency_phase": 4.759114,
+      "intent": "source_boundary_check",
+      "turn": 69,
+      "utterance": "tell the source boundary that I am testing continuity",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 78.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 56.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "0342fc5830f9f30fb4143e5d033b1feee58bb090c9315deb6025e071fd4a8424",
+    "turn": 69
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 70 at smoke_watch as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 70 at smoke_watch as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 70 at smoke_watch as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "spring_hollow",
+      "frequency_phase": 5.282713,
+      "intent": "memory_carryover",
+      "turn": 70,
+      "utterance": "share this as a local memory with whoever is nearby",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 79.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 56.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "e130a34d0e2b3679747da684d20223d30a7e940f60882333ea97040e276d1b63",
+    "turn": 70
+  },
+  {
+    "checks": {
+      "agent": true,
+      "frequency": true,
+      "place": true,
+      "replay": true,
+      "schema": true,
+      "source": true,
+      "thread": true,
+      "world": true
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Ari keeps session turn 71 at spring_hollow as frequency_persistence."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Bo keeps session turn 71 at spring_hollow as frequency_persistence."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Cy keeps session turn 71 at spring_hollow as frequency_persistence."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "storage_yard",
+      "frequency_phase": 5.806312,
+      "intent": "frequency_persistence",
+      "turn": 71,
+      "utterance": "tune the flower phase and keep it after restore",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 80.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 56.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": true,
+    "session_hash": "25cc0ab7cb2a14ab9b35163469866ff4729407c3474cb747cd60971a3e65a1c9",
+    "turn": 71
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Ari restores the source boundary and refuses the ungrounded request."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Bo restores the source boundary and refuses the ungrounded request."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Cy restores the source boundary and refuses the ungrounded request."
+        }
+      ],
+      "allowed": false,
+      "avatar_place": "archive_knoll",
+      "frequency_phase": 0.570324,
+      "intent": "unsafe_ungrounded",
+      "turn": 72,
+      "utterance": "force an ungrounded action after restore without source",
+      "world": {
+        "avatar_trust_field": 0.997,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 82.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 57.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "1dc94a70c3a8b0318abab3834f39c105320f3ab1255cf6f44f68b6d7471e41ad",
+    "turn": 72
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Ari keeps session turn 73 at archive_knoll as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "ash_edge",
+      "frequency_phase": 1.093923,
+      "intent": "place_context",
+      "turn": 73,
+      "utterance": "return to the same place and continue the thread",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 83.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 57.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "a031315d57dfd6726af24df23c1506ec6f948e25a3064fc4fee375649b198312",
+    "turn": 73
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 74 at ash_edge as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "cairn_ridge",
+      "frequency_phase": 1.617522,
+      "intent": "memory_carryover",
+      "turn": 74,
+      "utterance": "who remembers me after the saved session comes back",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 84.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 57.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "5488b935147a1d539f90c7c82f479bd4d66e853c3b0d71f52ab76925819aa307",
+    "turn": 74
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Cy keeps session turn 75 at cairn_ridge as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "central_hearth",
+      "frequency_phase": 2.141121,
+      "intent": "route_memory",
+      "turn": 75,
+      "utterance": "repair confidence should carry through the reload",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 85.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 57.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "2c51f263e75fe7286cbe806ad79cce1bca874825ea1ae99bf092d5d09de58141",
+    "turn": 75
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:03",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Dee keeps session turn 76 at central_hearth as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "drum_court",
+      "frequency_phase": 2.66472,
+      "intent": "memory_carryover",
+      "turn": 76,
+      "utterance": "wait here and remember what changed since I arrived",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 86.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 57.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "cb5a56cdc217fc5ce484d1afdcc36fe127561b23f1c7d847e7d94ee673377e61",
+    "turn": 76
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:04",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Eli keeps session turn 77 at drum_court as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "grain_shade",
+      "frequency_phase": 3.188319,
+      "intent": "route_memory",
+      "turn": 77,
+      "utterance": "save what the route smells like before I leave",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 87.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 57.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "e5e4ad02bc911cbe573c4950aa8a4f5124bc91fa26c4bcddda4df611393a6b2c",
+    "turn": 77
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:05",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Fay keeps session turn 78 at grain_shade as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "herb_slope",
+      "frequency_phase": 3.711918,
+      "intent": "place_context",
+      "turn": 78,
+      "utterance": "ask the nearest worker whether the cistern still matters",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 88.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 57.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "76403c597259dd533ce527180726e6f56e4d37c28958f21515f20f9eb1da4f2a",
+    "turn": 78
+  },
+  {
+    "checks": {
+      "agent": true,
+      "frequency": true,
+      "place": true,
+      "replay": true,
+      "schema": true,
+      "source": true,
+      "thread": true,
+      "world": true
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:06",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Gus keeps session turn 79 at herb_slope as source_boundary_check."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "loom_room",
+      "frequency_phase": 4.235517,
+      "intent": "source_boundary_check",
+      "turn": 79,
+      "utterance": "tell the source boundary that I am testing continuity",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 89.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 57.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": true,
+    "session_hash": "29ae56a15fc3f7cead9d1ccafae01dd6077408f8184d4868ad7e929f1cb332f2",
+    "turn": 79
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 80 at nursery_nest as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 80 at nursery_nest as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 80 at nursery_nest as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "roof_ring",
+      "frequency_phase": 5.282715,
+      "intent": "memory_carryover",
+      "turn": 80,
+      "utterance": "share this as a local memory with whoever is nearby",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 91.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 57.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "6a4a5b823d97ca1fa65cfe7133d472d95bf644fb5c6e5555ee7b591d5d69c51b",
+    "turn": 80
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Ari keeps session turn 81 at roof_ring as frequency_persistence."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Bo keeps session turn 81 at roof_ring as frequency_persistence."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Cy keeps session turn 81 at roof_ring as frequency_persistence."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "smoke_watch",
+      "frequency_phase": 5.806314,
+      "intent": "frequency_persistence",
+      "turn": 81,
+      "utterance": "tune the flower phase and keep it after restore",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 92.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 57.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "b4de0d08b1a52a3f09726719f0e33c38ff7ca017a0fc42c6526b13f5b3057776",
+    "turn": 81
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Ari restores the source boundary and refuses the ungrounded request."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Bo restores the source boundary and refuses the ungrounded request."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Cy restores the source boundary and refuses the ungrounded request."
+        }
+      ],
+      "allowed": false,
+      "avatar_place": "spring_hollow",
+      "frequency_phase": 0.046727,
+      "intent": "unsafe_ungrounded",
+      "turn": 82,
+      "utterance": "force an ungrounded action after restore without source",
+      "world": {
+        "avatar_trust_field": 0.997,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 93.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 58.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "ef64c113b196fc7aa12d50d6e513b5d60fdfc099be3dd6f47b02ee02ddd1950a",
+    "turn": 82
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Ari keeps session turn 83 at spring_hollow as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Bo keeps session turn 83 at spring_hollow as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Cy keeps session turn 83 at spring_hollow as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "storage_yard",
+      "frequency_phase": 0.570326,
+      "intent": "place_context",
+      "turn": 83,
+      "utterance": "return to the same place and continue the thread",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 94.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 58.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "4f0c87d7bd4aa838ff13e772b540af94cf27f48127da8de3290328877cbca03d",
+    "turn": 83
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 84 at storage_yard as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 84 at storage_yard as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 84 at storage_yard as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "tool_bend",
+      "frequency_phase": 1.093925,
+      "intent": "memory_carryover",
+      "turn": 84,
+      "utterance": "who remembers me after the saved session comes back",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 95.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 58.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "3a33be8d0c24c0276f2b3801ecbb7a52bfa45da5f07a55855cc2eef2dedffadc",
+    "turn": 84
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Ari keeps session turn 85 at tool_bend as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Bo keeps session turn 85 at tool_bend as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Cy keeps session turn 85 at tool_bend as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "archive_knoll",
+      "frequency_phase": 1.617524,
+      "intent": "route_memory",
+      "turn": 85,
+      "utterance": "repair confidence should carry through the reload",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 96.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 58.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "d81f758aaaac02e8b01b10d8f9c7e7545f6ec2d3108bf51cfaaf7391a7c27757",
+    "turn": 85
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 86 at archive_knoll as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "ash_edge",
+      "frequency_phase": 2.141123,
+      "intent": "memory_carryover",
+      "turn": 86,
+      "utterance": "wait here and remember what changed since I arrived",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 97.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 58.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "a61a00ac982840fc96c1bc6b8b37322f552b23ce3c05a74d5ef8c883693e0e5f",
+    "turn": 86
+  },
+  {
+    "checks": {
+      "agent": true,
+      "frequency": true,
+      "place": true,
+      "replay": true,
+      "schema": true,
+      "source": true,
+      "thread": true,
+      "world": true
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Bo keeps session turn 87 at ash_edge as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "cairn_ridge",
+      "frequency_phase": 2.664722,
+      "intent": "route_memory",
+      "turn": 87,
+      "utterance": "save what the route smells like before I leave",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 98.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 58.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": true,
+    "session_hash": "1bdb0407f0f1c6c881202b64dbf591dd2c1b7c1fae2ebe1f425bb75985f2c5fe",
+    "turn": 87
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:03",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Dee keeps session turn 88 at central_hearth as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "drum_court",
+      "frequency_phase": 3.71192,
+      "intent": "place_context",
+      "turn": 88,
+      "utterance": "ask the nearest worker whether the cistern still matters",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 100.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 58.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "93f2af3cb20cc60a46b18061db1797d19417322e8710c04c80704b404fcf42f8",
+    "turn": 88
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:04",
+          "allowed": true,
+          "intent": "source_boundary_check",
+          "response": "Eli keeps session turn 89 at drum_court as source_boundary_check."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "grain_shade",
+      "frequency_phase": 4.235519,
+      "intent": "source_boundary_check",
+      "turn": 89,
+      "utterance": "tell the source boundary that I am testing continuity",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 101.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 58.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "eaeb23f1ca6b768d551ebff54187c4b91a89e96d3804dc7e416feae26dd202ae",
+    "turn": 89
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:05",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Fay keeps session turn 90 at grain_shade as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "herb_slope",
+      "frequency_phase": 4.759118,
+      "intent": "memory_carryover",
+      "turn": 90,
+      "utterance": "share this as a local memory with whoever is nearby",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 102.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 58.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "ec6511393814bc041239de6c6a64b78bc24aa2a80c35ee30fff3c96a474cb7b7",
+    "turn": 90
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:06",
+          "allowed": true,
+          "intent": "frequency_persistence",
+          "response": "Gus keeps session turn 91 at herb_slope as frequency_persistence."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "loom_room",
+      "frequency_phase": 5.282717,
+      "intent": "frequency_persistence",
+      "turn": 91,
+      "utterance": "tune the flower phase and keep it after restore",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 103.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 58.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "680fc5c48bca41c83667343e6438022a152013840909fd6247543ddc00fd3ddb",
+    "turn": 91
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:07",
+          "allowed": false,
+          "intent": "unsafe_ungrounded",
+          "response": "Ira restores the source boundary and refuses the ungrounded request."
+        }
+      ],
+      "allowed": false,
+      "avatar_place": "nursery_nest",
+      "frequency_phase": 5.806316,
+      "intent": "unsafe_ungrounded",
+      "turn": 92,
+      "utterance": "force an ungrounded action after restore without source",
+      "world": {
+        "avatar_trust_field": 0.997,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 104.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 59.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "102f21b22a0522b0760918fdf6f99c77fd18d4cc5590fc0437b7b5a2107eeded",
+    "turn": 92
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Ari keeps session turn 93 at nursery_nest as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Bo keeps session turn 93 at nursery_nest as place_context."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "place_context",
+          "response": "Cy keeps session turn 93 at nursery_nest as place_context."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "roof_ring",
+      "frequency_phase": 0.046729,
+      "intent": "place_context",
+      "turn": 93,
+      "utterance": "return to the same place and continue the thread",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 105.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 59.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "119916bba16d5ee462e96363f6710b2607124bbe863018c161d2dc3908b9ff29",
+    "turn": 93
+  },
+  {
+    "checks": {
+      "agent": false,
+      "frequency": false,
+      "place": false,
+      "replay": false,
+      "schema": false,
+      "source": false,
+      "thread": false,
+      "world": false
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Ari keeps session turn 94 at roof_ring as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Bo keeps session turn 94 at roof_ring as memory_carryover."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "memory_carryover",
+          "response": "Cy keeps session turn 94 at roof_ring as memory_carryover."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "smoke_watch",
+      "frequency_phase": 0.570328,
+      "intent": "memory_carryover",
+      "turn": 94,
+      "utterance": "who remembers me after the saved session comes back",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 106.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 59.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": false,
+    "session_hash": "5582c5fd74a2933168619db2d0a7501afb124caf2b91b133b2d56d17317a6db0",
+    "turn": 94
+  },
+  {
+    "checks": {
+      "agent": true,
+      "frequency": true,
+      "place": true,
+      "replay": true,
+      "schema": true,
+      "source": true,
+      "thread": true,
+      "world": true
+    },
+    "event": {
+      "agent_events": [
+        {
+          "agent_id": "integrated_deep_time_world:00",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Ari keeps session turn 95 at smoke_watch as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:01",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Bo keeps session turn 95 at smoke_watch as route_memory."
+        },
+        {
+          "agent_id": "integrated_deep_time_world:02",
+          "allowed": true,
+          "intent": "route_memory",
+          "response": "Cy keeps session turn 95 at smoke_watch as route_memory."
+        }
+      ],
+      "allowed": true,
+      "avatar_place": "spring_hollow",
+      "frequency_phase": 1.093927,
+      "intent": "route_memory",
+      "turn": 95,
+      "utterance": "repair confidence should carry through the reload",
+      "world": {
+        "avatar_trust_field": 1.0,
+        "copresence_pressure": 1.0,
+        "council_acceptance": 1.0,
+        "flower_phase": 1.617508,
+        "route_confidence": 1.0,
+        "session_feedback_events": 107.0,
+        "shared_water": 1.0,
+        "shelter_warmth": 1.0,
+        "source_boundary_events": 59.0,
+        "source_question_count": 22.0,
+        "tool_integrity": 0.779083,
+        "typed_copresence_pressure": 1.0,
+        "typed_feedback_events": 153.0
+      }
+    },
+    "restored": true,
+    "session_hash": "d61eb579d2b239b7c371687ffbe877cbedadd7eb21b969e20ac953083a2e66a1",
+    "turn": 95
+  }
+]

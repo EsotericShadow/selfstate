@@ -1,0 +1,12 @@
+condition,session_turns,expected_saves,session_save_rate,restore_continuity_rate,agent_memory_carryover_rate,world_feedback_carryover_rate,place_context_carryover_rate,typed_thread_carryover_rate,replay_import_export_rate,source_boundary_carryover_rate,frequency_phase_carryover_rate,schema_migration_guard_rate,post_restore_interaction_rate,trace_integrity,persistent_session_readiness
+integrated_persistent_session_state,96,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_local_save,96,12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.02
+no_restore_continuity,96,12,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.12
+no_agent_memory_carryover,96,12,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.72
+no_world_feedback_carryover,96,12,1.0,0.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0,0.0,1.0,0.65
+no_place_context_carryover,96,12,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.76
+no_typed_thread_carryover,96,12,1.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0,0.74
+no_replay_import_export,96,12,1.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,0.76
+no_source_boundary_carryover,96,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.91
+no_frequency_phase_carryover,96,12,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.76
+no_schema_migration_guard,96,12,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,0.77

@@ -1045,6 +1045,25 @@ This is Report 158: a deterministic same-loop co-presence bridge where avatar pl
 This is Report 159: a deterministic interactive typed co-presence bridge where browser-side utterances route to nearby agents and mutate workspace, social memory, world feedback, source boundaries, frequency state, persistent thread, and replay without regenerating the benchmark trace. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
 
 
+### Report 160: SSRM-3D persistent session state bridge
+
+| Condition | Readiness | Save | Restore | Agent memory | World | Place | Thread | Replay | Source | Frequency | Schema | Post-restore | Trace |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `integrated_persistent_session_state` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_local_save` | `0.020000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `1.000000` |
+| `no_restore_continuity` | `0.120000` | `1.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `1.000000` |
+| `no_agent_memory_carryover` | `0.720000` | `1.000000` | `0.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` |
+| `no_world_feedback_carryover` | `0.650000` | `1.000000` | `0.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` |
+| `no_place_context_carryover` | `0.760000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` |
+| `no_typed_thread_carryover` | `0.740000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` |
+| `no_replay_import_export` | `0.760000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` |
+| `no_source_boundary_carryover` | `0.910000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_frequency_phase_carryover` | `0.760000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `0.000000` | `1.000000` |
+| `no_schema_migration_guard` | `0.770000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `0.000000` | `1.000000` |
+
+This is Report 160: a deterministic persistent session-state bridge where local save/restore carries agent memory, world feedback, place context, typed thread, replay, source boundaries, frequency phase, schema guard, and post-restore interaction. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
+
+
 ## Reproducibility Artifacts
 
 | Script | Main artifact |
@@ -1139,6 +1158,7 @@ This is Report 159: a deterministic interactive typed co-presence bridge where b
 | `experiments/ssrm_3d_navigable_embodied_presence_bridge.py` | `artifacts/ssrm_3d_navigable_embodied_presence_bridge_verdict.csv` |
 | `experiments/ssrm_3d_continuous_copresence_bridge.py` | `artifacts/ssrm_3d_continuous_copresence_bridge_verdict.csv` |
 | `experiments/ssrm_3d_interactive_typed_copresence_bridge.py` | `artifacts/ssrm_3d_interactive_typed_copresence_bridge_verdict.csv` |
+| `experiments/ssrm_3d_persistent_session_state_bridge.py` | `artifacts/ssrm_3d_persistent_session_state_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

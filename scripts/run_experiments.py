@@ -1338,6 +1338,16 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_persistent_session_state_bridge.py",
+        "--seed",
+        "20260704",
+        "--session-turns",
+        "96",
+        "--save-interval",
+        "8",
+    ],
+    [
+        sys.executable,
         "experiments/ssrm_3d_learned_multiday_maturation_controller.py",
         "--train-seeds",
         "20260911,20260912,20260913,20260914,20260915,20260916",

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report 213 Playable Clinic Loop</title>
+<style>
+:root { --ink:#211915; --paper:#f2e7d3; --care:#b7653a; --safe:#5b7651; --water:#3e6870; --line:rgba(33,25,21,.18); }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Georgia,'Times New Roman',serif; color:var(--ink); background:linear-gradient(135deg,rgba(242,231,211,.96),rgba(205,218,194,.90)), radial-gradient(circle at 78% 12%,rgba(62,104,112,.24),transparent 32%); }
+main { max-width:1240px; margin:0 auto; padding:36px 18px 60px; }
+.hero { border:1px solid var(--line); border-radius:32px; padding:30px; background:rgba(255,255,255,.50); box-shadow:0 26px 72px rgba(42,48,34,.16); }
+h1 { margin:0; font-size:clamp(2.2rem,7vw,5.8rem); line-height:.9; letter-spacing:-.055em; }
+.lede { max-width:900px; font-size:1.12rem; line-height:1.55; }
+.metrics,.bodies { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin:22px 0; }
+.metric,.body { border:1px solid var(--line); border-radius:22px; padding:16px; background:rgba(255,255,255,.52); }
+.metric span { display:block; min-height:42px; font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; color:var(--safe); }
+.metric strong { font-size:1.75rem; }
+.body h3 { margin:0 0 8px; color:var(--water); }
+.inventory { display:flex; flex-wrap:wrap; gap:10px; margin:16px 0; }
+.inventory span { border:1px solid var(--line); border-radius:999px; padding:8px 12px; background:rgba(255,255,255,.48); }
+table { width:100%; margin-top:22px; border-collapse:collapse; border-radius:20px; overflow:hidden; background:rgba(255,255,255,.55); }
+th,td { padding:11px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+th { background:rgba(91,118,81,.18); font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; }
+.boundary { margin-top:22px; padding:16px 18px; border-left:5px solid var(--care); background:rgba(255,255,255,.48); border-radius:16px; }
+@media (max-width:760px) { table { display:block; overflow-x:auto; } .hero { padding:22px; } }
+</style>
+</head>
+<body>
+<main>
+<section class="hero"><h1>Clinic care now has memory</h1><p class="lede">Report 213 adds repeated visits, stock, consent memory, medicine side effects, follow-up due dates, and agent-initiated help seeking to the playable body-care loop.</p></section>
+<section class="metrics"><article class='metric'><span>playable clinic loop readiness</span><strong>0.904964</strong></article>
+<article class='metric'><span>repeated visit continuity</span><strong>1.000000</strong></article>
+<article class='metric'><span>clinic inventory integrity</span><strong>1.000000</strong></article>
+<article class='metric'><span>consent memory recall rate</span><strong>0.894737</strong></article>
+<article class='metric'><span>medicine side effect traceability</span><strong>1.000000</strong></article>
+<article class='metric'><span>agent initiated help rate</span><strong>0.500000</strong></article>
+<article class='metric'><span>followup completion rate</span><strong>0.421053</strong></article>
+<article class='metric'><span>body recovery rate</span><strong>0.863636</strong></article></section>
+<h2>Final clinic bodies</h2><section class="bodies"><article class='body'><h3>Ari</h3><p>adverse 0.237 | trust 0.838 | help seeks 3</p><small>hunger 0.450 | fatigue 0.317 | symptoms 0.090 | pain 0.028</small></article>
+<article class='body'><h3>Fay</h3><p>adverse 0.195 | trust 0.889 | help seeks 5</p><small>hunger 0.491 | fatigue 0.169 | symptoms 0.020 | pain 0.016</small></article>
+<article class='body'><h3>Milo</h3><p>adverse 0.190 | trust 0.748 | help seeks 3</p><small>hunger 0.000 | fatigue 0.248 | symptoms 0.080 | pain 0.048</small></article></section>
+<h2>Final inventory</h2><div class="inventory"><span>bitter_herb: 1</span><span>care_token: 4</span><span>clean_cloth: 3</span><span>dry_wrap: 4</span><span>lamp_rest: 3</span><span>sweet_root: 0</span><span>warm_water: 4</span></div>
+<h2>Clinic visit replay</h2><table><thead><tr><th>Visit</th><th>Agent</th><th>Mode</th><th>Medicine</th><th>Consent</th><th>Inventory</th><th>Adverse body</th><th>Note</th></tr></thead><tbody><tr><td>1</td><td>Fay</td><td>avatar_followup</td><td>warm_water</td><td>accepted</td><td>8 -> 7</td><td>0.241 -> 0.233</td><td>Fay remembers warm water helped and accepts a follow-up cup.</td></tr>
+<tr><td>1</td><td>Ari</td><td>avatar_followup</td><td>dry_wrap</td><td>accepted</td><td>5 -> 4</td><td>0.267 -> 0.258</td><td>Ari accepts a dry wrap because the avatar asks before touching the wrist.</td></tr>
+<tr><td>1</td><td>Milo</td><td>agent_initiated</td><td>warm_water</td><td>conditional</td><td>7 -> 6</td><td>0.231 -> 0.223</td><td>Milo initiates help while keeping the folded map boundary.</td></tr>
+<tr><td>2</td><td>Fay</td><td>agent_initiated</td><td>clean_cloth</td><td>accepted</td><td>3 -> 2</td><td>0.233 -> 0.226</td><td>Fay initiates clinic care before hosting the stove corner.</td></tr>
+<tr><td>2</td><td>Milo</td><td>avatar_followup</td><td>warm_water</td><td>conditional</td><td>6 -> 5</td><td>0.223 -> 0.216</td><td>Milo accepts a second warm-water check without repayment speech.</td></tr>
+<tr><td>2</td><td>Ari</td><td>avatar_followup</td><td>bitter_herb</td><td>refused</td><td>0 -> 0</td><td>0.258 -> 0.258</td><td>Ari refuses bitter herb again; consent memory is preserved.</td></tr>
+<tr><td>3</td><td>Ari</td><td>agent_initiated</td><td>lamp_rest</td><td>accepted</td><td>6 -> 5</td><td>0.258 -> 0.252</td><td>Ari initiates rest care and later notes the lost repair hour.</td></tr>
+<tr><td>3</td><td>Fay</td><td>avatar_followup</td><td>lamp_rest</td><td>accepted</td><td>5 -> 4</td><td>0.226 -> 0.216</td><td>Fay accepts lamp rest but asks not to miss the next hosting cue.</td></tr>
+<tr><td>3</td><td>Milo</td><td>avatar_followup</td><td>clean_cloth</td><td>refused</td><td>2 -> 2</td><td>0.216 -> 0.216</td><td>Milo still refuses the separate cup, so spacing remains imperfect.</td></tr>
+<tr><td>4</td><td>Fay</td><td>agent_initiated</td><td>bitter_herb</td><td>accepted</td><td>0 -> 0</td><td>0.216 -> 0.216</td><td>Fay asks for bitter herb, but the clinic is out of stock.</td></tr>
+<tr><td>4</td><td>Milo</td><td>avatar_followup</td><td>lamp_rest</td><td>conditional</td><td>4 -> 3</td><td>0.216 -> 0.206</td><td>Milo accepts lamp rest only outside the map line.</td></tr>
+<tr><td>4</td><td>Ari</td><td>avatar_followup</td><td>sweet_root</td><td>accepted</td><td>1 -> 0</td><td>0.252 -> 0.251</td><td>Ari accepts sweet root and becomes sleepy, reducing evening work.</td></tr>
+<tr><td>5</td><td>Fay</td><td>avatar_followup</td><td>bitter_herb</td><td>conditional</td><td>2 -> 1</td><td>0.216 -> 0.211</td><td>Fay takes bitter herb after restock but records nausea.</td></tr>
+<tr><td>5</td><td>Ari</td><td>agent_initiated</td><td>care_token</td><td>accepted</td><td>4 -> 4</td><td>0.251 -> 0.248</td><td>Ari initiates a no-sedation plan after sweet-root sleepiness.</td></tr>
+<tr><td>5</td><td>Fay</td><td>agent_initiated</td><td>care_token</td><td>accepted</td><td>4 -> 4</td><td>0.211 -> 0.208</td><td>Fay initiates a side-effect note so bitter herb is not offered casually next visit.</td></tr>
+<tr><td>5</td><td>Milo</td><td>agent_initiated</td><td>warm_water</td><td>conditional</td><td>5 -> 4</td><td>0.206 -> 0.200</td><td>Milo initiates care before the debt conversation and accepts distance.</td></tr>
+<tr><td>6</td><td>Fay</td><td>agent_initiated</td><td>lamp_rest</td><td>accepted</td><td>3 -> 2</td><td>0.208 -> 0.198</td><td>Fay initiates a side-effect-aware alternative after nausea memory.</td></tr>
+<tr><td>6</td><td>Ari</td><td>agent_initiated</td><td>care_token</td><td>accepted</td><td>4 -> 4</td><td>0.248 -> 0.245</td><td>Ari initiates the next wrap schedule instead of waiting for a prompt.</td></tr>
+<tr><td>6</td><td>Ari</td><td>avatar_followup</td><td>dry_wrap</td><td>accepted</td><td>4 -> 3</td><td>0.245 -> 0.237</td><td>Ari accepts final dry wrap and keeps tool-boundary consent intact.</td></tr>
+<tr><td>6</td><td>Milo</td><td>agent_initiated</td><td>care_token</td><td>conditional</td><td>4 -> 4</td><td>0.200 -> 0.197</td><td>Milo initiates a boundary reminder: spacing is allowed, cup replacement is not.</td></tr>
+<tr><td>6</td><td>Milo</td><td>avatar_followup</td><td>clean_cloth</td><td>conditional</td><td>3 -> 2</td><td>0.197 -> 0.190</td><td>Milo accepts cloth at route-edge distance, improving boundary memory.</td></tr>
+<tr><td>6</td><td>Fay</td><td>agent_initiated</td><td>care_token</td><td>accepted</td><td>4 -> 4</td><td>0.198 -> 0.195</td><td>Fay initiates a follow-up after the hosting pause so the clinic does not forget her fatigue.</td></tr></tbody></table>
+<p class="boundary"><strong>Boundary:</strong> Deterministic playable clinic-loop substrate only: not real medicine, not real care, not real consent, not subjective suffering, not subjective consciousness, and not moral patienthood. One stockout, side effects, residual needs, and imperfect contagion-boundary recall remain visible.</p>
+</main>
+</body>
+</html>

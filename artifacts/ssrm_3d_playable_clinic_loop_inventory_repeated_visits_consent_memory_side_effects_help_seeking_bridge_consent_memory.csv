@@ -1,0 +1,15 @@
+agent,medicine,consent_memory,public_history_count
+Ari,bitter_herb,refused,7
+Ari,care_token,accepted,7
+Ari,dry_wrap,accepted,7
+Ari,lamp_rest,accepted,7
+Ari,sweet_root,accepted,7
+Fay,bitter_herb,side_effect_nausea,8
+Fay,care_token,accepted,8
+Fay,clean_cloth,accepted,8
+Fay,lamp_rest,accepted,8
+Fay,warm_water,accepted,8
+Milo,care_token,conditional,7
+Milo,clean_cloth,conditional,7
+Milo,lamp_rest,conditional,7
+Milo,warm_water,conditional,7

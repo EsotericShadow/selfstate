@@ -1,0 +1,122 @@
+{
+  "agents": {
+    "Ari": {
+      "body": {
+        "fatigue": 0.317,
+        "hunger": 0.45,
+        "illness_risk": 0.155,
+        "pain": 0.028,
+        "symptoms": 0.09,
+        "warmth_deficit": 0.523,
+        "wetness": 0.094
+      },
+      "consent_memory": {
+        "bitter_herb": "refused",
+        "care_token": "accepted",
+        "dry_wrap": "accepted",
+        "lamp_rest": "accepted",
+        "sweet_root": "accepted"
+      },
+      "help_seek_count": 3,
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Ari accepts a dry wrap because the avatar asks before touching the wrist.",
+        "Ari refuses bitter herb again; consent memory is preserved.",
+        "Ari initiates rest care and later notes the lost repair hour.",
+        "Ari accepts sweet root and becomes sleepy, reducing evening work.",
+        "Ari initiates a no-sedation plan after sweet-root sleepiness.",
+        "Ari initiates the next wrap schedule instead of waiting for a prompt.",
+        "Ari accepts final dry wrap and keeps tool-boundary consent intact."
+      ],
+      "side_effect_memory": [
+        "visit 3: lamp_rest caused lost_time",
+        "visit 4: sweet_root caused sleepy"
+      ],
+      "temperament": "cautious-proud repair keeper",
+      "trust": 0.838
+    },
+    "Fay": {
+      "body": {
+        "fatigue": 0.169,
+        "hunger": 0.491,
+        "illness_risk": 0.029,
+        "pain": 0.016,
+        "symptoms": 0.02,
+        "warmth_deficit": 0.234,
+        "wetness": 0.404
+      },
+      "consent_memory": {
+        "bitter_herb": "side_effect_nausea",
+        "care_token": "accepted",
+        "clean_cloth": "accepted",
+        "lamp_rest": "accepted",
+        "warm_water": "accepted"
+      },
+      "help_seek_count": 5,
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Fay remembers warm water helped and accepts a follow-up cup.",
+        "Fay initiates clinic care before hosting the stove corner.",
+        "Fay accepts lamp rest but asks not to miss the next hosting cue.",
+        "Fay asks for bitter herb, but the clinic is out of stock.",
+        "Fay takes bitter herb after restock but records nausea.",
+        "Fay initiates a side-effect note so bitter herb is not offered casually next visit.",
+        "Fay initiates a side-effect-aware alternative after nausea memory.",
+        "Fay initiates a follow-up after the hosting pause so the clinic does not forget her fatigue."
+      ],
+      "side_effect_memory": [
+        "visit 5: bitter_herb caused nausea"
+      ],
+      "temperament": "social ritual keeper",
+      "trust": 0.889
+    },
+    "Milo": {
+      "body": {
+        "fatigue": 0.248,
+        "hunger": 0.0,
+        "illness_risk": 0.198,
+        "pain": 0.048,
+        "symptoms": 0.08,
+        "warmth_deficit": 0.363,
+        "wetness": 0.393
+      },
+      "consent_memory": {
+        "care_token": "conditional",
+        "clean_cloth": "conditional",
+        "lamp_rest": "conditional",
+        "warm_water": "conditional"
+      },
+      "help_seek_count": 3,
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Milo initiates help while keeping the folded map boundary.",
+        "Milo accepts a second warm-water check without repayment speech.",
+        "Milo still refuses the separate cup, so spacing remains imperfect.",
+        "Milo accepts lamp rest only outside the map line.",
+        "Milo initiates care before the debt conversation and accepts distance.",
+        "Milo initiates a boundary reminder: spacing is allowed, cup replacement is not.",
+        "Milo accepts cloth at route-edge distance, improving boundary memory."
+      ],
+      "side_effect_memory": [],
+      "temperament": "guarded map carrier",
+      "trust": 0.748
+    }
+  },
+  "claim_boundary": "Deterministic playable clinic-loop substrate only: not real medicine, not real care, not real consent, not subjective suffering, not subjective consciousness, and not moral patienthood.",
+  "events": 22,
+  "inventory": {
+    "bitter_herb": 1,
+    "care_token": 4,
+    "clean_cloth": 2,
+    "dry_wrap": 3,
+    "lamp_rest": 2,
+    "sweet_root": 0,
+    "warm_water": 4
+  },
+  "module": "ssrm_3d_playable_clinic_loop_inventory_repeated_visits_consent_memory_side_effects_help_seeking_bridge",
+  "next_gate": "agent-authored care plans, clinic scheduling conflicts, medicine learning, and autonomous follow-up negotiation",
+  "seed": 20260826,
+  "source_condition": "integrated_recoverable_body_care_gameplay_player_intervention_contagion_medicine_triage",
+  "source_state_loaded": true,
+  "visits": 6
+}

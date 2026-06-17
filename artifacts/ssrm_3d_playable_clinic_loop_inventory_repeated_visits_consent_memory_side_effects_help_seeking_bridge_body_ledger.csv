@@ -1,0 +1,4 @@
+agent,adverse_body_score,hunger,warmth_deficit,wetness,fatigue,illness_risk,symptoms,pain,trust,help_seek_count,private_workspace_digest
+Ari,0.237,0.450,0.523,0.094,0.317,0.155,0.090,0.028,0.838,3,sealed
+Fay,0.195,0.491,0.234,0.404,0.169,0.029,0.020,0.016,0.889,5,sealed
+Milo,0.190,0.000,0.363,0.393,0.248,0.198,0.080,0.048,0.748,3,sealed

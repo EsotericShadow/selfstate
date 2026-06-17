@@ -1,0 +1,8 @@
+condition,steps,parsed_inputs,grounded_actions,input_parse_rate,proximity_valid_action_rate,agent_state_update_rate,world_state_update_rate,sensory_context_alignment,workspace_continuity_rate,trace_completeness,embodied_input_readiness
+integrated_embodied_avatar_input,20,17,16,0.85,0.9375,0.75,0.75,0.532469,1.0,1.0,0.839146
+no_spatial_body,20,17,16,0.85,0.0,0.0,0.0,0.532469,0.0,1.0,0.322896
+no_free_text_parser,20,5,5,0.25,1.0,0.25,0.25,0.151235,1.0,1.0,0.568148
+no_agent_memory_update,20,17,16,0.85,0.9375,0.75,0.75,0.532469,0.0,1.0,0.679146
+no_sensory_context,20,17,16,0.85,0.9375,0.75,0.75,0.17,1.0,1.0,0.79565
+no_action_consequence,20,17,16,0.85,0.9375,0.75,0.0,0.532469,1.0,1.0,0.734146
+no_persistent_trace,20,17,16,0.85,0.9375,0.75,0.75,0.532469,1.0,0.0,0.699146

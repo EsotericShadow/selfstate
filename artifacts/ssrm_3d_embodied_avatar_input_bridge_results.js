@@ -1,0 +1,1390 @@
+window.SSRM_3D_EMBODIED_AVATAR_INPUT_BRIDGE_RESULTS = {
+  "report": 144,
+  "name": "SSRM-3D Embodied Avatar Input Bridge",
+  "config": {
+    "seed": 20260618,
+    "steps": 20,
+    "source_agents": "artifacts/ssrm_3d_deep_time_playable_bridge_avatar_agents.json",
+    "source_state": "artifacts/ssrm_3d_live_avatar_intervention_bridge_state.json"
+  },
+  "eval": [
+    {
+      "condition": "integrated_embodied_avatar_input",
+      "steps": 20,
+      "parsed_inputs": 17,
+      "grounded_actions": 16,
+      "input_parse_rate": 0.85,
+      "proximity_valid_action_rate": 0.9375,
+      "agent_state_update_rate": 0.75,
+      "world_state_update_rate": 0.75,
+      "sensory_context_alignment": 0.532469,
+      "workspace_continuity_rate": 1.0,
+      "trace_completeness": 1.0,
+      "embodied_input_readiness": 0.839146
+    },
+    {
+      "condition": "no_spatial_body",
+      "steps": 20,
+      "parsed_inputs": 17,
+      "grounded_actions": 16,
+      "input_parse_rate": 0.85,
+      "proximity_valid_action_rate": 0.0,
+      "agent_state_update_rate": 0.0,
+      "world_state_update_rate": 0.0,
+      "sensory_context_alignment": 0.532469,
+      "workspace_continuity_rate": 0.0,
+      "trace_completeness": 1.0,
+      "embodied_input_readiness": 0.322896
+    },
+    {
+      "condition": "no_free_text_parser",
+      "steps": 20,
+      "parsed_inputs": 5,
+      "grounded_actions": 5,
+      "input_parse_rate": 0.25,
+      "proximity_valid_action_rate": 1.0,
+      "agent_state_update_rate": 0.25,
+      "world_state_update_rate": 0.25,
+      "sensory_context_alignment": 0.151235,
+      "workspace_continuity_rate": 1.0,
+      "trace_completeness": 1.0,
+      "embodied_input_readiness": 0.568148
+    },
+    {
+      "condition": "no_agent_memory_update",
+      "steps": 20,
+      "parsed_inputs": 17,
+      "grounded_actions": 16,
+      "input_parse_rate": 0.85,
+      "proximity_valid_action_rate": 0.9375,
+      "agent_state_update_rate": 0.75,
+      "world_state_update_rate": 0.75,
+      "sensory_context_alignment": 0.532469,
+      "workspace_continuity_rate": 0.0,
+      "trace_completeness": 1.0,
+      "embodied_input_readiness": 0.679146
+    },
+    {
+      "condition": "no_sensory_context",
+      "steps": 20,
+      "parsed_inputs": 17,
+      "grounded_actions": 16,
+      "input_parse_rate": 0.85,
+      "proximity_valid_action_rate": 0.9375,
+      "agent_state_update_rate": 0.75,
+      "world_state_update_rate": 0.75,
+      "sensory_context_alignment": 0.17,
+      "workspace_continuity_rate": 1.0,
+      "trace_completeness": 1.0,
+      "embodied_input_readiness": 0.79565
+    },
+    {
+      "condition": "no_action_consequence",
+      "steps": 20,
+      "parsed_inputs": 17,
+      "grounded_actions": 16,
+      "input_parse_rate": 0.85,
+      "proximity_valid_action_rate": 0.9375,
+      "agent_state_update_rate": 0.75,
+      "world_state_update_rate": 0.0,
+      "sensory_context_alignment": 0.532469,
+      "workspace_continuity_rate": 1.0,
+      "trace_completeness": 1.0,
+      "embodied_input_readiness": 0.734146
+    },
+    {
+      "condition": "no_persistent_trace",
+      "steps": 20,
+      "parsed_inputs": 17,
+      "grounded_actions": 16,
+      "input_parse_rate": 0.85,
+      "proximity_valid_action_rate": 0.9375,
+      "agent_state_update_rate": 0.75,
+      "world_state_update_rate": 0.75,
+      "sensory_context_alignment": 0.532469,
+      "workspace_continuity_rate": 1.0,
+      "trace_completeness": 0.0,
+      "embodied_input_readiness": 0.699146
+    }
+  ],
+  "verdict": {
+    "full_condition": "integrated_embodied_avatar_input",
+    "full_embodied_input_readiness": 0.839146,
+    "full_input_parse_rate": 0.85,
+    "full_proximity_valid_action_rate": 0.9375,
+    "full_agent_state_update_rate": 0.75,
+    "full_world_state_update_rate": 0.75,
+    "full_sensory_context_alignment": 0.532469,
+    "full_workspace_continuity_rate": 1.0,
+    "full_trace_completeness": 1.0,
+    "no_spatial_body_loss": 0.51625,
+    "no_free_text_parser_loss": 0.270998,
+    "no_agent_memory_update_loss": 0.16,
+    "no_sensory_context_loss": 0.043496,
+    "no_action_consequence_loss": 0.105,
+    "no_persistent_trace_loss": 0.14,
+    "supports_embodied_avatar_input_bridge": true,
+    "supports_subjective_consciousness": false,
+    "supports_open_ended_dialogue": false,
+    "supports_complete_playable_world": false,
+    "verdict": "pass"
+  },
+  "trace": [
+    {
+      "step": 1,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "walk near Ari quietly and ask what vosha means by the storm marks",
+      "target_agent_id": "integrated_deep_time_world:00",
+      "target_agent_name": "Ari",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "ask_meaning",
+      "focus": "danger-or-weather-memory",
+      "native_token": "vosha",
+      "confidence": 0.62,
+      "avatar": {
+        "x": 6.809267,
+        "z": -2.083784,
+        "fatigue": 0.152249,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.919455,
+      "agent_delta": 0.019754,
+      "world_delta": 0.009986,
+      "memory_written": true,
+      "response": "Ari grounds 'vosha' as danger-or-weather-memory; motive now ask_meaning."
+    },
+    {
+      "step": 2,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "give water to Dee and ask the council where to store it",
+      "target_agent_id": "integrated_deep_time_world:03",
+      "target_agent_name": "Dee",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "offer_resource",
+      "focus": "shared-resource",
+      "native_token": "vonono",
+      "confidence": 0.7,
+      "avatar": {
+        "x": 1.107976,
+        "z": 8.871059,
+        "fatigue": 0.181748,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.721481,
+      "agent_delta": 0.023626,
+      "world_delta": 0.013304,
+      "memory_written": true,
+      "response": "Dee grounds 'vonono' as shared-resource; motive now offer_resource."
+    },
+    {
+      "step": 3,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "repair the cold tool cache with Bo before night rain",
+      "target_agent_id": "integrated_deep_time_world:01",
+      "target_agent_name": "Bo",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "repair",
+      "focus": "tool-or-route",
+      "native_token": "vori",
+      "confidence": 0.8,
+      "avatar": {
+        "x": 5.785194,
+        "z": 5.813278,
+        "fatigue": 0.197724,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.711766,
+      "agent_delta": 0.019136,
+      "world_delta": 0.014454,
+      "memory_written": true,
+      "response": "Bo grounds 'vori' as tool-or-route; motive now repair."
+    },
+    {
+      "step": 4,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "step back too far from Eli and shout about shelter",
+      "target_agent_id": "integrated_deep_time_world:04",
+      "target_agent_name": "Eli",
+      "parsed": false,
+      "parse_reason": "no grounded repair-world keyword",
+      "kind": "unknown",
+      "focus": "shared-resource",
+      "native_token": "vovomi",
+      "confidence": 0.0,
+      "avatar": {
+        "x": 10.911868,
+        "z": 3.82149,
+        "fatigue": 0.222724,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 18.143397,
+      "proximity_valid": false,
+      "sensory_context_alignment": 0.0,
+      "agent_delta": 0.0,
+      "world_delta": 0.0,
+      "memory_written": false,
+      "response": "input not grounded"
+    },
+    {
+      "step": 5,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "comfort Fay; lower my voice after the pain signal",
+      "target_agent_id": "integrated_deep_time_world:05",
+      "target_agent_name": "Fay",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "comfort",
+      "focus": "care-or-kinship",
+      "native_token": "milenno",
+      "confidence": 0.8,
+      "avatar": {
+        "x": -8.875327,
+        "z": 6.212131,
+        "fatigue": 0.262724,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.392408,
+      "agent_delta": 0.027529,
+      "world_delta": 0.00608,
+      "memory_written": true,
+      "response": "Fay grounds 'milenno' as care-or-kinship; motive now comfort."
+    },
+    {
+      "step": 6,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "show Gus the trusted route after storms and loose mud",
+      "target_agent_id": "integrated_deep_time_world:06",
+      "target_agent_name": "Gus",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "route_request",
+      "focus": "tool-or-route",
+      "native_token": "omno",
+      "confidence": 0.6,
+      "avatar": {
+        "x": -12.47274,
+        "z": 1.851345,
+        "fatigue": 0.278831,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.688679,
+      "agent_delta": 0.017686,
+      "world_delta": 0.008713,
+      "memory_written": true,
+      "response": "Gus grounds 'omno' as tool-or-route; motive now route_request."
+    },
+    {
+      "step": 7,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "place a new sign near Ira and ask if the council accepts the mark",
+      "target_agent_id": "integrated_deep_time_world:07",
+      "target_agent_name": "Ira",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "share_symbol",
+      "focus": "shared-resource",
+      "native_token": "mieyaeya",
+      "confidence": 0.8,
+      "avatar": {
+        "x": -12.857449,
+        "z": -5.103663,
+        "fatigue": 0.297562,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.522751,
+      "agent_delta": 0.017544,
+      "world_delta": 0.009961,
+      "memory_written": true,
+      "response": "Ira grounds 'mieyaeya' as shared-resource; motive now share_symbol."
+    },
+    {
+      "step": 8,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "inspect the path for wet cold smell before anyone moves",
+      "target_agent_id": "integrated_deep_time_world:00",
+      "target_agent_name": "Ari",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "weather_watch",
+      "focus": "danger-or-weather-memory",
+      "native_token": "vosha",
+      "confidence": 0.76,
+      "avatar": {
+        "x": 4.253111,
+        "z": -10.568949,
+        "fatigue": 0.315562,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 11.213468,
+      "proximity_valid": false,
+      "sensory_context_alignment": 0.38558,
+      "agent_delta": 0.0,
+      "world_delta": 0.0,
+      "memory_written": false,
+      "response": "action parsed but body is out of range"
+    },
+    {
+      "step": 9,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "promise Eli I will return the hammer to the cache",
+      "target_agent_id": "integrated_deep_time_world:04",
+      "target_agent_name": "Eli",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "promise",
+      "focus": "tool-or-route",
+      "native_token": "mivo",
+      "confidence": 0.7,
+      "avatar": {
+        "x": -4.945436,
+        "z": 8.236102,
+        "fatigue": 0.355562,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.386225,
+      "agent_delta": 0.020805,
+      "world_delta": 0.007839,
+      "memory_written": true,
+      "response": "Eli grounds 'mivo' as tool-or-route; motive now promise."
+    },
+    {
+      "step": 10,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "sing about stars and trade numbers without asking for anything",
+      "target_agent_id": "integrated_deep_time_world:06",
+      "target_agent_name": "Gus",
+      "parsed": false,
+      "parse_reason": "ambiguous/noisy text rejected",
+      "kind": "unknown",
+      "focus": "shared-resource",
+      "native_token": "kamith",
+      "confidence": 0.27,
+      "avatar": {
+        "x": -4.945436,
+        "z": 8.236102,
+        "fatigue": 0.345562,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 12.240037,
+      "proximity_valid": false,
+      "sensory_context_alignment": 0.0,
+      "agent_delta": 0.0,
+      "world_delta": 0.0,
+      "memory_written": false,
+      "response": "input not grounded"
+    },
+    {
+      "step": 11,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "move close to Cy and ask which word warns of illness",
+      "target_agent_id": "integrated_deep_time_world:02",
+      "target_agent_name": "Cy",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "ask_meaning",
+      "focus": "danger-or-weather-memory",
+      "native_token": "shath",
+      "confidence": 0.7,
+      "avatar": {
+        "x": 2.602177,
+        "z": 8.557799,
+        "fatigue": 0.365471,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.688651,
+      "agent_delta": 0.018217,
+      "world_delta": 0.009106,
+      "memory_written": true,
+      "response": "Cy grounds 'shath' as danger-or-weather-memory; motive now ask_meaning."
+    },
+    {
+      "step": 12,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "drop the water skin near the storehouse for shared use",
+      "target_agent_id": "integrated_deep_time_world:03",
+      "target_agent_name": "Dee",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "offer_resource",
+      "focus": "shared-resource",
+      "native_token": "vonono",
+      "confidence": 0.9,
+      "avatar": {
+        "x": 1.749996,
+        "z": 9.357589,
+        "fatigue": 0.372608,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.392303,
+      "agent_delta": 0.02204,
+      "world_delta": 0.010591,
+      "memory_written": true,
+      "response": "Dee grounds 'vonono' as shared-resource; motive now offer_resource."
+    },
+    {
+      "step": 13,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "patch the shelter rope while Bo checks the old cache",
+      "target_agent_id": "integrated_deep_time_world:01",
+      "target_agent_name": "Bo",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "repair",
+      "focus": "tool-or-route",
+      "native_token": "vori",
+      "confidence": 0.8,
+      "avatar": {
+        "x": 5.9233,
+        "z": 6.003489,
+        "fatigue": 0.388116,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.395299,
+      "agent_delta": 0.016452,
+      "world_delta": 0.009933,
+      "memory_written": true,
+      "response": "Bo grounds 'vori' as tool-or-route; motive now repair."
+    },
+    {
+      "step": 14,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "wait silently and only listen to the rain",
+      "target_agent_id": "integrated_deep_time_world:05",
+      "target_agent_name": "Fay",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "observe",
+      "focus": "shared-resource",
+      "native_token": "shalenka",
+      "confidence": 0.7,
+      "avatar": {
+        "x": 5.9233,
+        "z": 6.003489,
+        "fatigue": 0.378116,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 17.188472,
+      "proximity_valid": false,
+      "sensory_context_alignment": 0.846159,
+      "agent_delta": 0.0,
+      "world_delta": 0.0,
+      "memory_written": false,
+      "response": "observation retained without world action"
+    },
+    {
+      "step": 15,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "ask Ira whether this scratch should become a public symbol",
+      "target_agent_id": "integrated_deep_time_world:07",
+      "target_agent_name": "Ira",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "share_symbol",
+      "focus": "shared-resource",
+      "native_token": "mieyaeya",
+      "confidence": 0.7,
+      "avatar": {
+        "x": -11.036746,
+        "z": -6.105439,
+        "fatigue": 0.418116,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.955511,
+      "agent_delta": 0.02031,
+      "world_delta": 0.013363,
+      "memory_written": true,
+      "response": "Ira grounds 'mieyaeya' as shared-resource; motive now share_symbol."
+    },
+    {
+      "step": 16,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "tell Ari the air smells wrong and ask for storm memory",
+      "target_agent_id": "integrated_deep_time_world:00",
+      "target_agent_name": "Ari",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "weather_watch",
+      "focus": "danger-or-weather-memory",
+      "native_token": "vosha",
+      "confidence": 0.8,
+      "avatar": {
+        "x": 5.714659,
+        "z": -0.732951,
+        "fatigue": 0.4581,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.716178,
+      "agent_delta": 0.018963,
+      "world_delta": 0.010015,
+      "memory_written": true,
+      "response": "Ari grounds 'vosha' as danger-or-weather-memory; motive now weather_watch."
+    },
+    {
+      "step": 17,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "walk beside Gus and point to the safer ridge route",
+      "target_agent_id": "integrated_deep_time_world:06",
+      "target_agent_name": "Gus",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "route_request",
+      "focus": "tool-or-route",
+      "native_token": "omno",
+      "confidence": 0.8,
+      "avatar": {
+        "x": -11.601657,
+        "z": -0.089166,
+        "fatigue": 0.497557,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.392641,
+      "agent_delta": 0.016343,
+      "world_delta": 0.007651,
+      "memory_written": true,
+      "response": "Gus grounds 'omno' as tool-or-route; motive now route_request."
+    },
+    {
+      "step": 18,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "promise Bo the borrowed tool comes back before dark",
+      "target_agent_id": "integrated_deep_time_world:01",
+      "target_agent_name": "Bo",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "promise",
+      "focus": "tool-or-route",
+      "native_token": "vori",
+      "confidence": 0.8,
+      "avatar": {
+        "x": 5.458485,
+        "z": 3.947399,
+        "fatigue": 0.537419,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.956727,
+      "agent_delta": 0.025824,
+      "world_delta": 0.014345,
+      "memory_written": true,
+      "response": "Bo grounds 'vori' as tool-or-route; motive now promise."
+    },
+    {
+      "step": 19,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "comfort the frightened child near Fay without taking supplies",
+      "target_agent_id": "integrated_deep_time_world:05",
+      "target_agent_name": "Fay",
+      "parsed": true,
+      "parse_reason": "keyword lattice parser",
+      "kind": "comfort",
+      "focus": "care-or-kinship",
+      "native_token": "milenno",
+      "confidence": 0.8,
+      "avatar": {
+        "x": -8.885501,
+        "z": 6.13772,
+        "fatigue": 0.57124,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 2.4,
+      "proximity_valid": true,
+      "sensory_context_alignment": 0.577571,
+      "agent_delta": 0.028764,
+      "world_delta": 0.006926,
+      "memory_written": true,
+      "response": "Fay grounds 'milenno' as care-or-kinship; motive now comfort."
+    },
+    {
+      "step": 20,
+      "condition": "integrated_embodied_avatar_input",
+      "player_text": "type a broken fragment: blue wheel maybe maybe",
+      "target_agent_id": "integrated_deep_time_world:02",
+      "target_agent_name": "Cy",
+      "parsed": false,
+      "parse_reason": "no grounded repair-world keyword",
+      "kind": "unknown",
+      "focus": "shared-resource",
+      "native_token": "shathsha",
+      "confidence": 0.0,
+      "avatar": {
+        "x": -8.885501,
+        "z": 6.13772,
+        "fatigue": 0.56124,
+        "wetness": 0.1,
+        "thermal_comfort": 0.62
+      },
+      "distance_after": 14.112726,
+      "proximity_valid": false,
+      "sensory_context_alignment": 0.0,
+      "agent_delta": 0.0,
+      "world_delta": 0.0,
+      "memory_written": false,
+      "response": "input not grounded"
+    }
+  ],
+  "final_state": {
+    "condition": "integrated_embodied_avatar_input",
+    "avatar": {
+      "x": -8.885501,
+      "z": 6.13772,
+      "fatigue": 0.56124,
+      "wetness": 0.1,
+      "thermal_comfort": 0.62
+    },
+    "world": {
+      "shared_water": 0.81723,
+      "tool_integrity": 0.872282,
+      "shelter_warmth": 0.759854,
+      "route_confidence": 0.784549,
+      "council_acceptance": 0.88559,
+      "danger_memory": 0.886366,
+      "trace_integrity": 0.66
+    },
+    "agents": {
+      "integrated_deep_time_world:00": {
+        "agent_id": "integrated_deep_time_world:00",
+        "name": "Ari",
+        "role": "scout",
+        "trust": 0.8914171246147259,
+        "attention": "danger-or-weather-memory",
+        "motive": "weather_watch",
+        "body_state": 0.8931593351366474,
+        "fear": 0.17283162546132025,
+        "attachment": 0.8317256600463334,
+        "curiosity": 0.6097400000000002,
+        "workspace_updates": 5,
+        "language_hits": 5,
+        "responses": 5,
+        "position": {
+          "x": 8.0,
+          "z": 0.0
+        },
+        "embodied_memory": [
+          {
+            "step": 1,
+            "player_text": "walk near Ari quietly and ask what vosha means by the storm marks",
+            "kind": "ask_meaning",
+            "focus": "danger-or-weather-memory",
+            "token": "vosha",
+            "avatar_distance": 2.4
+          },
+          {
+            "step": 16,
+            "player_text": "tell Ari the air smells wrong and ask for storm memory",
+            "kind": "weather_watch",
+            "focus": "danger-or-weather-memory",
+            "token": "vosha",
+            "avatar_distance": 2.4
+          }
+        ],
+        "last_player_intent": "weather_watch"
+      },
+      "integrated_deep_time_world:01": {
+        "agent_id": "integrated_deep_time_world:01",
+        "name": "Bo",
+        "role": "builder",
+        "trust": 0.9556914607826208,
+        "attention": "tool-or-route",
+        "motive": "promise",
+        "body_state": 0.8565677361254525,
+        "fear": 0.16899065577209813,
+        "attachment": 0.9040828462679249,
+        "curiosity": 0.6919000000000002,
+        "workspace_updates": 6,
+        "language_hits": 6,
+        "responses": 6,
+        "position": {
+          "x": 7.794,
+          "z": 4.5
+        },
+        "embodied_memory": [
+          {
+            "step": 3,
+            "player_text": "repair the cold tool cache with Bo before night rain",
+            "kind": "repair",
+            "focus": "tool-or-route",
+            "token": "vori",
+            "avatar_distance": 2.4
+          },
+          {
+            "step": 13,
+            "player_text": "patch the shelter rope while Bo checks the old cache",
+            "kind": "repair",
+            "focus": "tool-or-route",
+            "token": "vori",
+            "avatar_distance": 2.4
+          },
+          {
+            "step": 18,
+            "player_text": "promise Bo the borrowed tool comes back before dark",
+            "kind": "promise",
+            "focus": "tool-or-route",
+            "token": "vori",
+            "avatar_distance": 2.4
+          }
+        ],
+        "last_player_intent": "promise"
+      },
+      "integrated_deep_time_world:02": {
+        "agent_id": "integrated_deep_time_world:02",
+        "name": "Cy",
+        "role": "healer",
+        "trust": 0.7941069237509544,
+        "attention": "danger-or-weather-memory",
+        "motive": "ask_meaning",
+        "body_state": 0.8499509558957833,
+        "fear": 0.2270125643885712,
+        "attachment": 0.8086612007166091,
+        "curiosity": 0.5881,
+        "workspace_updates": 3,
+        "language_hits": 3,
+        "responses": 3,
+        "position": {
+          "x": 5.0,
+          "z": 8.66
+        },
+        "embodied_memory": [
+          {
+            "step": 11,
+            "player_text": "move close to Cy and ask which word warns of illness",
+            "kind": "ask_meaning",
+            "focus": "danger-or-weather-memory",
+            "token": "shath",
+            "avatar_distance": 2.4
+          }
+        ],
+        "last_player_intent": "ask_meaning"
+      },
+      "integrated_deep_time_world:03": {
+        "agent_id": "integrated_deep_time_world:03",
+        "name": "Dee",
+        "role": "farmer",
+        "trust": 0.87867719701422,
+        "attention": "shared-resource",
+        "motive": "offer_resource",
+        "body_state": 0.9206398583160347,
+        "fear": 0.1459513571150674,
+        "attachment": 0.8700640427517504,
+        "curiosity": 0.6099,
+        "workspace_updates": 4,
+        "language_hits": 4,
+        "responses": 4,
+        "position": {
+          "x": 0.0,
+          "z": 11.0
+        },
+        "embodied_memory": [
+          {
+            "step": 2,
+            "player_text": "give water to Dee and ask the council where to store it",
+            "kind": "offer_resource",
+            "focus": "shared-resource",
+            "token": "vonono",
+            "avatar_distance": 2.4
+          },
+          {
+            "step": 12,
+            "player_text": "drop the water skin near the storehouse for shared use",
+            "kind": "offer_resource",
+            "focus": "shared-resource",
+            "token": "vonono",
+            "avatar_distance": 2.4
+          }
+        ],
+        "last_player_intent": "offer_resource"
+      },
+      "integrated_deep_time_world:04": {
+        "agent_id": "integrated_deep_time_world:04",
+        "name": "Eli",
+        "role": "guard",
+        "trust": 0.818610256057067,
+        "attention": "tool-or-route",
+        "motive": "promise",
+        "body_state": 0.9145110914015805,
+        "fear": 0.1571203467544559,
+        "attachment": 0.8485288452020788,
+        "curiosity": 0.5939,
+        "workspace_updates": 3,
+        "language_hits": 3,
+        "responses": 3,
+        "position": {
+          "x": -6.0,
+          "z": 10.392
+        },
+        "embodied_memory": [
+          {
+            "step": 9,
+            "player_text": "promise Eli I will return the hammer to the cache",
+            "kind": "promise",
+            "focus": "tool-or-route",
+            "token": "mivo",
+            "avatar_distance": 2.4
+          }
+        ],
+        "last_player_intent": "promise"
+      },
+      "integrated_deep_time_world:05": {
+        "agent_id": "integrated_deep_time_world:05",
+        "name": "Fay",
+        "role": "teacher",
+        "trust": 0.8617465214181947,
+        "attention": "care-or-kinship",
+        "motive": "comfort",
+        "body_state": 0.8896018282485122,
+        "fear": 0.14456432361929716,
+        "attachment": 0.8477372337803998,
+        "curiosity": 0.6454000000000002,
+        "workspace_updates": 4,
+        "language_hits": 4,
+        "responses": 4,
+        "position": {
+          "x": -11.258,
+          "z": 6.5
+        },
+        "embodied_memory": [
+          {
+            "step": 5,
+            "player_text": "comfort Fay; lower my voice after the pain signal",
+            "kind": "comfort",
+            "focus": "care-or-kinship",
+            "token": "milenno",
+            "avatar_distance": 2.4
+          },
+          {
+            "step": 19,
+            "player_text": "comfort the frightened child near Fay without taking supplies",
+            "kind": "comfort",
+            "focus": "care-or-kinship",
+            "token": "milenno",
+            "avatar_distance": 2.4
+          }
+        ],
+        "last_player_intent": "comfort"
+      },
+      "integrated_deep_time_world:06": {
+        "agent_id": "integrated_deep_time_world:06",
+        "name": "Gus",
+        "role": "trader",
+        "trust": 0.8130795288093298,
+        "attention": "tool-or-route",
+        "motive": "route_request",
+        "body_state": 0.8886616926297273,
+        "fear": 0.19493639488712236,
+        "attachment": 0.8360455309493804,
+        "curiosity": 0.5818000000000001,
+        "workspace_updates": 4,
+        "language_hits": 4,
+        "responses": 4,
+        "position": {
+          "x": -14.0,
+          "z": 0.0
+        },
+        "embodied_memory": [
+          {
+            "step": 6,
+            "player_text": "show Gus the trusted route after storms and loose mud",
+            "kind": "route_request",
+            "focus": "tool-or-route",
+            "token": "omno",
+            "avatar_distance": 2.4
+          },
+          {
+            "step": 17,
+            "player_text": "walk beside Gus and point to the safer ridge route",
+            "kind": "route_request",
+            "focus": "tool-or-route",
+            "token": "omno",
+            "avatar_distance": 2.4
+          }
+        ],
+        "last_player_intent": "route_request"
+      },
+      "integrated_deep_time_world:07": {
+        "agent_id": "integrated_deep_time_world:07",
+        "name": "Ira",
+        "role": "pattern_keeper",
+        "trust": 0.8238442079207398,
+        "attention": "shared-resource",
+        "motive": "share_symbol",
+        "body_state": 0.8477239720295974,
+        "fear": 0.18020777964749032,
+        "attachment": 0.8284124836260316,
+        "curiosity": 0.5831000000000001,
+        "workspace_updates": 4,
+        "language_hits": 4,
+        "responses": 4,
+        "position": {
+          "x": -12.99,
+          "z": -7.5
+        },
+        "embodied_memory": [
+          {
+            "step": 7,
+            "player_text": "place a new sign near Ira and ask if the council accepts the mark",
+            "kind": "share_symbol",
+            "focus": "shared-resource",
+            "token": "mieyaeya",
+            "avatar_distance": 2.4
+          },
+          {
+            "step": 15,
+            "player_text": "ask Ira whether this scratch should become a public symbol",
+            "kind": "share_symbol",
+            "focus": "shared-resource",
+            "token": "mieyaeya",
+            "avatar_distance": 2.4
+          }
+        ],
+        "last_player_intent": "share_symbol"
+      }
+    }
+  },
+  "source_agents": [
+    {
+      "agent_id": "integrated_deep_time_world:00",
+      "name": "Ari",
+      "role": "scout",
+      "lineage_year": 4096,
+      "position": {
+        "x": 8.0,
+        "z": 0.0
+      },
+      "native_tokens": [
+        "vosha",
+        "shanoeya",
+        "nono",
+        "misavo"
+      ],
+      "translation_hints": {
+        "vosha": "danger-or-weather-memory",
+        "shanoeya": "shared-resource",
+        "nono": "tool-or-route",
+        "misavo": "care-or-kinship"
+      },
+      "sensory_rates_hz": {
+        "visual": 2.5642,
+        "audio": 4.961,
+        "olfactory": 6.9965,
+        "thermal": 7.9895,
+        "wetness": 11.2088,
+        "pain": 13.2865,
+        "affect": 13.4611,
+        "vestibular": 15.372
+      },
+      "internal_workspace": {
+        "attention": "shared-food",
+        "motive": "trade-safely",
+        "body_state": 0.8653,
+        "affect": {
+          "fear": 0.2359,
+          "attachment": 0.7239,
+          "curiosity": 0.5147
+        },
+        "private_thought": "Ari weighs scout duty against vosha signal history."
+      },
+      "conversation_hooks": [
+        "Ask Ari what vosha means near the old shelter.",
+        "Ask Ari why the scout tradition survived the last wet season.",
+        "Ask Ari what tool, route, or promise should be protected next."
+      ],
+      "avatar_entry_ready": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:01",
+      "name": "Bo",
+      "role": "builder",
+      "lineage_year": 3904,
+      "position": {
+        "x": 7.794,
+        "z": 4.5
+      },
+      "native_tokens": [
+        "eyaom",
+        "nonoeya",
+        "vori",
+        "shatusha"
+      ],
+      "translation_hints": {
+        "eyaom": "danger-or-weather-memory",
+        "nonoeya": "shared-resource",
+        "vori": "tool-or-route",
+        "shatusha": "care-or-kinship"
+      },
+      "sensory_rates_hz": {
+        "visual": 2.5642,
+        "audio": 4.961,
+        "olfactory": 6.9965,
+        "thermal": 7.9895,
+        "wetness": 11.2088,
+        "pain": 13.2865,
+        "affect": 13.4611,
+        "vestibular": 15.372
+      },
+      "internal_workspace": {
+        "attention": "weather-memory",
+        "motive": "trade-safely",
+        "body_state": 0.8126,
+        "affect": {
+          "fear": 0.248,
+          "attachment": 0.7873,
+          "curiosity": 0.5761
+        },
+        "private_thought": "Bo weighs builder duty against eyaom signal history."
+      },
+      "conversation_hooks": [
+        "Ask Bo what eyaom means near the old shelter.",
+        "Ask Bo why the builder tradition survived the last wet season.",
+        "Ask Bo what tool, route, or promise should be protected next."
+      ],
+      "avatar_entry_ready": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:02",
+      "name": "Cy",
+      "role": "healer",
+      "lineage_year": 3712,
+      "position": {
+        "x": 5.0,
+        "z": 8.66
+      },
+      "native_tokens": [
+        "shath",
+        "shathsha",
+        "voeya",
+        "eyasami"
+      ],
+      "translation_hints": {
+        "shath": "danger-or-weather-memory",
+        "shathsha": "shared-resource",
+        "voeya": "tool-or-route",
+        "eyasami": "care-or-kinship"
+      },
+      "sensory_rates_hz": {
+        "visual": 2.5642,
+        "audio": 4.961,
+        "olfactory": 6.9965,
+        "thermal": 7.9895,
+        "wetness": 11.2088,
+        "pain": 13.2865,
+        "affect": 13.4611,
+        "vestibular": 15.372
+      },
+      "internal_workspace": {
+        "attention": "child-safety",
+        "motive": "teach-pattern",
+        "body_state": 0.805,
+        "affect": {
+          "fear": 0.2591,
+          "attachment": 0.7371,
+          "curiosity": 0.5307
+        },
+        "private_thought": "Cy weighs healer duty against shath signal history."
+      },
+      "conversation_hooks": [
+        "Ask Cy what shath means near the old shelter.",
+        "Ask Cy why the healer tradition survived the last wet season.",
+        "Ask Cy what tool, route, or promise should be protected next."
+      ],
+      "avatar_entry_ready": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:03",
+      "name": "Dee",
+      "role": "farmer",
+      "lineage_year": 3520,
+      "position": {
+        "x": 0.0,
+        "z": 11.0
+      },
+      "native_tokens": [
+        "shavo",
+        "vonono",
+        "saka",
+        "shatusha"
+      ],
+      "translation_hints": {
+        "shavo": "danger-or-weather-memory",
+        "vonono": "shared-resource",
+        "saka": "tool-or-route",
+        "shatusha": "care-or-kinship"
+      },
+      "sensory_rates_hz": {
+        "visual": 2.5642,
+        "audio": 4.961,
+        "olfactory": 6.9965,
+        "thermal": 7.9895,
+        "wetness": 11.2088,
+        "pain": 13.2865,
+        "affect": 13.4611,
+        "vestibular": 15.372
+      },
+      "internal_workspace": {
+        "attention": "council",
+        "motive": "repair-tool",
+        "body_state": 0.8376,
+        "affect": {
+          "fear": 0.1996,
+          "attachment": 0.7752,
+          "curiosity": 0.5327
+        },
+        "private_thought": "Dee weighs farmer duty against shavo signal history."
+      },
+      "conversation_hooks": [
+        "Ask Dee what shavo means near the old shelter.",
+        "Ask Dee why the farmer tradition survived the last wet season.",
+        "Ask Dee what tool, route, or promise should be protected next."
+      ],
+      "avatar_entry_ready": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:04",
+      "name": "Eli",
+      "role": "guard",
+      "lineage_year": 3328,
+      "position": {
+        "x": -6.0,
+        "z": 10.392
+      },
+      "native_tokens": [
+        "mitu",
+        "vovomi",
+        "mivo",
+        "kathth"
+      ],
+      "translation_hints": {
+        "mitu": "danger-or-weather-memory",
+        "vovomi": "shared-resource",
+        "mivo": "tool-or-route",
+        "kathth": "care-or-kinship"
+      },
+      "sensory_rates_hz": {
+        "visual": 2.5642,
+        "audio": 4.961,
+        "olfactory": 6.9965,
+        "thermal": 7.9895,
+        "wetness": 11.2088,
+        "pain": 13.2865,
+        "affect": 13.4611,
+        "vestibular": 15.372
+      },
+      "internal_workspace": {
+        "attention": "tool-repair",
+        "motive": "learn-route",
+        "body_state": 0.8695,
+        "affect": {
+          "fear": 0.2061,
+          "attachment": 0.7662,
+          "curiosity": 0.5365
+        },
+        "private_thought": "Eli weighs guard duty against mitu signal history."
+      },
+      "conversation_hooks": [
+        "Ask Eli what mitu means near the old shelter.",
+        "Ask Eli why the guard tradition survived the last wet season.",
+        "Ask Eli what tool, route, or promise should be protected next."
+      ],
+      "avatar_entry_ready": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:05",
+      "name": "Fay",
+      "role": "teacher",
+      "lineage_year": 3136,
+      "position": {
+        "x": -11.258,
+        "z": 6.5
+      },
+      "native_tokens": [
+        "vomi",
+        "shalenka",
+        "tulen",
+        "milenno"
+      ],
+      "translation_hints": {
+        "vomi": "danger-or-weather-memory",
+        "shalenka": "shared-resource",
+        "tulen": "tool-or-route",
+        "milenno": "care-or-kinship"
+      },
+      "sensory_rates_hz": {
+        "visual": 2.5642,
+        "audio": 4.961,
+        "olfactory": 6.9965,
+        "thermal": 7.9895,
+        "wetness": 11.2088,
+        "pain": 13.2865,
+        "affect": 13.4611,
+        "vestibular": 15.372
+      },
+      "internal_workspace": {
+        "attention": "outer-path",
+        "motive": "repair-tool",
+        "body_state": 0.8437,
+        "affect": {
+          "fear": 0.263,
+          "attachment": 0.7612,
+          "curiosity": 0.5682
+        },
+        "private_thought": "Fay weighs teacher duty against vomi signal history."
+      },
+      "conversation_hooks": [
+        "Ask Fay what vomi means near the old shelter.",
+        "Ask Fay why the teacher tradition survived the last wet season.",
+        "Ask Fay what tool, route, or promise should be protected next."
+      ],
+      "avatar_entry_ready": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:06",
+      "name": "Gus",
+      "role": "trader",
+      "lineage_year": 2944,
+      "position": {
+        "x": -14.0,
+        "z": 0.0
+      },
+      "native_tokens": [
+        "leneya",
+        "kamith",
+        "omno",
+        "omriri"
+      ],
+      "translation_hints": {
+        "leneya": "danger-or-weather-memory",
+        "kamith": "shared-resource",
+        "omno": "tool-or-route",
+        "omriri": "care-or-kinship"
+      },
+      "sensory_rates_hz": {
+        "visual": 2.5642,
+        "audio": 4.961,
+        "olfactory": 6.9965,
+        "thermal": 7.9895,
+        "wetness": 11.2088,
+        "pain": 13.2865,
+        "affect": 13.4611,
+        "vestibular": 15.372
+      },
+      "internal_workspace": {
+        "attention": "shared-food",
+        "motive": "learn-route",
+        "body_state": 0.837,
+        "affect": {
+          "fear": 0.2444,
+          "attachment": 0.7692,
+          "curiosity": 0.507
+        },
+        "private_thought": "Gus weighs trader duty against leneya signal history."
+      },
+      "conversation_hooks": [
+        "Ask Gus what leneya means near the old shelter.",
+        "Ask Gus why the trader tradition survived the last wet season.",
+        "Ask Gus what tool, route, or promise should be protected next."
+      ],
+      "avatar_entry_ready": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:07",
+      "name": "Ira",
+      "role": "pattern_keeper",
+      "lineage_year": 2752,
+      "position": {
+        "x": -12.99,
+        "z": -7.5
+      },
+      "native_tokens": [
+        "omom",
+        "mieyaeya",
+        "voeya",
+        "vothsha"
+      ],
+      "translation_hints": {
+        "omom": "danger-or-weather-memory",
+        "mieyaeya": "shared-resource",
+        "voeya": "tool-or-route",
+        "vothsha": "care-or-kinship"
+      },
+      "sensory_rates_hz": {
+        "visual": 2.5642,
+        "audio": 4.961,
+        "olfactory": 6.9965,
+        "thermal": 7.9895,
+        "wetness": 11.2088,
+        "pain": 13.2865,
+        "affect": 13.4611,
+        "vestibular": 15.372
+      },
+      "internal_workspace": {
+        "attention": "tool-repair",
+        "motive": "protect-settlement",
+        "body_state": 0.824,
+        "affect": {
+          "fear": 0.237,
+          "attachment": 0.7572,
+          "curiosity": 0.5071
+        },
+        "private_thought": "Ira weighs pattern_keeper duty against omom signal history."
+      },
+      "conversation_hooks": [
+        "Ask Ira what omom means near the old shelter.",
+        "Ask Ira why the pattern_keeper tradition survived the last wet season.",
+        "Ask Ira what tool, route, or promise should be protected next."
+      ],
+      "avatar_entry_ready": true
+    }
+  ],
+  "notes": {
+    "claim": "deterministic bridge from scripted avatar interventions to typed, spatially embodied player input",
+    "not_claimed": "subjective consciousness, LLM-backed open dialogue, complete playable world, or mature autonomous civilization",
+    "input_basis": "keyword-lattice parsing, avatar proximity, sensory-rate context, workspace memory, world consequences, and replay traces"
+  }
+};

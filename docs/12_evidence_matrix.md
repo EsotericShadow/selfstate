@@ -140,7 +140,7 @@ This boundary is not evidence that selfhood exists. It defines how future langua
 | Compressed packets are sufficient for language reasoning | Packet-fed LLMs match full-world LLMs on abstract recommendation quality when the state layers are healthy. | Full-world access consistently beats packet access without control costs, implying the packet omits essential state. |
 | Simulation-distilled critics can improve LLM reasoning | A sim-distilled critic improves held-out LLM planning, repair, and cascade-avoidance tasks while ablations identify which critic matters. | LLM search plus generic reward models match or beat sim-distilled critics, or the critics only transfer simulation artifacts. |
 | Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. Report 139 is the first structured toy bridge; Report 141 is its dynamic extension with held-out families and noisy multi-channel conditions. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
-| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years, with sensory-rate channels, internal workspace fields, invented tokens, culture/technology traces, and a browser viewer. Report 143 adds stateful avatar interventions and replay traces over those packets. | A claim of mature live agents, true conversation, open-ended language/culture, or subjective consciousness appears before agents update state through open-ended player interaction and ablations. |
+| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years, with sensory-rate channels, internal workspace fields, invented tokens, culture/technology traces, and a browser viewer. Report 143 adds stateful avatar interventions and replay traces over those packets. Report 144 adds typed embodied avatar input with parser, proximity, sensory, workspace, world-consequence, and trace ablations; integrated readiness is `0.839146`. | A claim of mature live agents, true conversation, open-ended language/culture, or subjective consciousness appears before typed input is learned/open-ended rather than keyword-parsed and before autonomous live agents act without scripted benchmark rows. |
 
 ## Candidate Hypotheses
 
@@ -778,6 +778,22 @@ This is Report 142: a deterministic bridge from deep-time settlement pressure to
 
 This is Report 143: a deterministic stateful-interaction bridge from mature avatar packets to replayable player intervention sessions. It does not prove subjective consciousness, mature live agents, or LLM-backed dialogue.
 
+
+### Report 144: SSRM-3D embodied avatar input bridge
+
+| Condition | Embodied readiness | Parse | Proximity | Agent state | World state | Sensory | Workspace | Trace |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| `integrated_embodied_avatar_input` | `0.839146` | `0.850000` | `0.937500` | `0.750000` | `0.750000` | `0.532469` | `1.000000` | `1.000000` |
+| `no_spatial_body` | `0.322896` | `0.850000` | `0.000000` | `0.000000` | `0.000000` | `0.532469` | `0.000000` | `1.000000` |
+| `no_free_text_parser` | `0.568148` | `0.250000` | `1.000000` | `0.250000` | `0.250000` | `0.151235` | `1.000000` | `1.000000` |
+| `no_agent_memory_update` | `0.679146` | `0.850000` | `0.937500` | `0.750000` | `0.750000` | `0.532469` | `0.000000` | `1.000000` |
+| `no_sensory_context` | `0.795650` | `0.850000` | `0.937500` | `0.750000` | `0.750000` | `0.170000` | `1.000000` | `1.000000` |
+| `no_action_consequence` | `0.734146` | `0.850000` | `0.937500` | `0.750000` | `0.000000` | `0.532469` | `1.000000` | `1.000000` |
+| `no_persistent_trace` | `0.699146` | `0.850000` | `0.937500` | `0.750000` | `0.750000` | `0.532469` | `1.000000` | `0.000000` |
+
+This is Report 144: a deterministic bridge from scripted interventions to typed embodied avatar input. It does not prove subjective consciousness, open-ended dialogue, complete playable worlds, or mature autonomous live agents.
+
+
 ## Reproducibility Artifacts
 
 | Script | Main artifact |
@@ -856,6 +872,7 @@ This is Report 143: a deterministic stateful-interaction bridge from mature avat
 | `python3 -m experiments.software_repair_bridge.dynamic_benchmark` | `artifacts/software_repair_dynamic_verdict.csv` |
 | `experiments/ssrm_3d_deep_time_playable_bridge.py` | `artifacts/ssrm_3d_deep_time_playable_bridge_verdict.csv` |
 | `experiments/ssrm_3d_live_avatar_intervention_bridge.py` | `artifacts/ssrm_3d_live_avatar_intervention_bridge_verdict.csv` |
+| `experiments/ssrm_3d_embodied_avatar_input_bridge.py` | `artifacts/ssrm_3d_embodied_avatar_input_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

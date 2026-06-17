@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Place Navigation Object Bridge</title>
+  <script src="../artifacts/ssrm_3d_place_navigation_object_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_place_navigation_object_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_place_navigation_object_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #17211f;
+      --paper: #eadfc5;
+      --panel: #fff8ea;
+      --line: #c8af74;
+      --moss: #3f6248;
+      --clay: #994b2c;
+      --water: #3f7287;
+      --gold: #bd8a2c;
+      --ridge: #596271;
+      --muted: #687167;
+      --shadow: rgba(23, 33, 31, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 12%, rgba(189, 138, 44, 0.24), transparent 25%),
+        radial-gradient(circle at 84% 14%, rgba(63, 114, 135, 0.22), transparent 28%),
+        linear-gradient(140deg, rgba(63, 98, 72, 0.24), transparent 46%),
+        var(--paper);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+
+    .shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(580px, 1fr) 455px;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    .stage,
+    .panel {
+      border: 1px solid var(--line);
+      background: rgba(255, 248, 234, 0.94);
+      box-shadow: 0 22px 52px var(--shadow);
+      overflow: hidden;
+    }
+
+    .stage { display: grid; grid-template-rows: auto minmax(540px, 1fr) auto; }
+
+    header,
+    .hud,
+    .panel-head,
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      flex-wrap: wrap;
+    }
+
+    header { justify-content: space-between; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-family: Georgia, serif; font-size: clamp(1.35rem, 2.5vw, 2.4rem); }
+    h2 { font-size: 1rem; }
+    h3 { font-size: 0.82rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+
+    .badge,
+    button {
+      border: 1px solid var(--line);
+      background: #f3e5c8;
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
+    .badge { padding: 6px 8px; }
+    button { min-height: 38px; padding: 8px 10px; cursor: pointer; }
+    button:hover, button.active { background: var(--moss); color: #fff8ea; border-color: var(--moss); }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      min-height: 540px;
+      display: block;
+      background:
+        linear-gradient(rgba(23, 33, 31, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 33, 31, 0.05) 1px, transparent 1px),
+        #e2d3b2;
+      background-size: 34px 34px;
+    }
+
+    .hud { border-top: 1px solid var(--line); border-bottom: 0; }
+    .metric { min-width: 112px; display: grid; gap: 4px; color: var(--muted); font-size: 0.74rem; }
+    .metric strong { color: var(--ink); font-size: 1rem; }
+
+    .panel { display: grid; grid-template-rows: auto auto minmax(300px, 1fr); min-height: calc(100vh - 32px); }
+    .controls button { flex: 1 1 30%; }
+    .detail { overflow: auto; display: grid; align-content: start; gap: 12px; padding: 14px; }
+    .route-row { border: 1px solid var(--line); background: rgba(255, 252, 242, 0.82); padding: 9px; cursor: pointer; }
+    .route-row.active { border-color: var(--clay); box-shadow: inset 0 0 0 2px rgba(153, 75, 44, 0.20); }
+    .bar-row { display: grid; grid-template-columns: 110px 1fr 44px; gap: 8px; align-items: center; font-size: 0.80rem; }
+    .bar { height: 8px; background: #d9c597; overflow: hidden; }
+    .bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--water), var(--gold), var(--clay)); }
+    .log { display: grid; gap: 8px; border-top: 1px solid var(--line); background: #e4d3af; padding: 12px; }
+    .line { border-left: 3px solid var(--moss); background: rgba(255, 248, 234, 0.9); padding: 8px 10px; font-size: 0.84rem; line-height: 1.35; }
+
+    @media (max-width: 980px) {
+      .shell { grid-template-columns: 1fr; }
+      .panel { min-height: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <main class="stage">
+      <header>
+        <div>
+          <h1>Place Navigation Object Bridge</h1>
+          <p>Agents must plan terrain routes, spend body state, follow sensory gradients, arrive, then use objects.</p>
+        </div>
+        <span class="badge" id="verdict">loading</span>
+      </header>
+      <canvas id="world" width="1120" height="760"></canvas>
+      <section class="hud" id="hud"></section>
+    </main>
+
+    <aside class="panel">
+      <div class="panel-head">
+        <h2>Route Console</h2>
+        <span class="badge">Report 147</span>
+        <span class="badge" id="routeBadge">trip</span>
+      </div>
+      <div class="controls">
+        <button id="prev">prev</button>
+        <button id="next">next</button>
+        <button id="animate">animate path</button>
+      </div>
+      <div class="detail" id="detail"></div>
+    </aside>
+  </div>
+
+  <script>
+    const payload = window.SSRM_3D_PLACE_NAVIGATION_OBJECT_BRIDGE_RESULTS || { verdict: {}, trace: [], final_state: { places: {}, objects: {}, agents: {} } };
+    const generated = window.SSRM_3D_PLACE_NAVIGATION_OBJECT_BRIDGE_STATE || payload.final_state || { places: {}, objects: {}, agents: {} };
+    const state = {
+      selected: 0,
+      animStep: 0,
+      places: Object.values(generated.places || {}),
+      placeById: generated.places || {},
+      objects: Object.values(generated.objects || {}),
+      trace: payload.trace || []
+    };
+
+    const terrainColor = { packed: "#3f6248", covered: "#5a744f", stone: "#596271", mud: "#3f7287", brush: "#637b3c", rough: "#994b2c", ridge: "#6c624c" };
+    function clamp(value, low = 0, high = 1) { return Math.max(low, Math.min(high, value)); }
+    function fmt(value) { return Number(value || 0).toFixed(3); }
+    function trip() { return state.trace[state.selected] || {}; }
+    function project(place) { return { x: 560 + Number(place.x || 0) * 44, y: 380 + Number(place.z || 0) * 44 }; }
+
+    function renderHud() {
+      const v = payload.verdict || {};
+      document.getElementById("verdict").textContent = `verdict: ${v.verdict || "local"}`;
+      const rows = [
+        ["readiness", v.full_place_navigation_readiness || 0],
+        ["routes", v.full_route_planning_success_rate || 0],
+        ["arrivals", v.full_destination_arrival_rate || 0],
+        ["object use", v.full_object_after_arrival_interaction_rate || 0],
+        ["travel", v.full_travel_expenditure_rate || 0],
+        ["trace", v.full_trace_completeness || 0]
+      ];
+      document.getElementById("hud").innerHTML = rows.map(([label, value]) => `<div class="metric">${label}<strong>${fmt(value)}</strong></div>`).join("");
+    }
+
+    function renderDetail() {
+      const row = trip();
+      document.getElementById("routeBadge").textContent = `trip ${row.trip || 0}`;
+      const bars = [["hazard", row.hazard], ["sensory", row.sensory_alignment], ["arrived", row.arrived ? 1 : 0], ["object use", row.object_interacted_after_arrival ? 1 : 0], ["travel spent", row.travel_spent ? 1 : 0]].map(([name, value]) => `<div class="bar-row"><span>${name}</span><div class="bar"><span style="width:${clamp(value) * 100}%"></span></div><strong>${fmt(value)}</strong></div>`).join("");
+      const routes = state.trace.slice(0, 18).map((item, index) => `<div class="route-row ${index === state.selected ? "active" : ""}" data-index="${index}"><strong>${item.agent_name}</strong> to ${item.object_name}<br><small>${item.start} -> ${item.goal}; ${item.path.join(" / ")}</small></div>`).join("");
+      document.getElementById("detail").innerHTML = `
+        <h2>${row.agent_name || "agent"} / ${row.object_name || "object"}</h2>
+        <p>path: ${(row.path || []).join(" -> ")}</p>
+        <p>cost: ${fmt(row.route_cost)}; role: ${row.role || "unknown"}</p>
+        ${bars}
+        <h3>Trips</h3>
+        <div class="log">${routes}</div>
+      `;
+      document.querySelectorAll(".route-row").forEach((el) => el.addEventListener("click", () => { state.selected = Number(el.dataset.index); state.animStep = 0; renderAll(); }));
+    }
+
+    function drawWorld() {
+      const canvas = document.getElementById("world");
+      const ctx = canvas.getContext("2d");
+      const w = canvas.width;
+      const h = canvas.height;
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = "#e2d3b2";
+      ctx.fillRect(0, 0, w, h);
+      const places = state.placeById;
+      const routeDefs = generated.routes || [];
+      ctx.lineWidth = 2;
+      routeDefs.forEach((route) => {
+        const a = places[route[0]];
+        const b = places[route[1]];
+        if (!a || !b) return;
+        const pa = project(a);
+        const pb = project(b);
+        ctx.strokeStyle = `rgba(23, 33, 31, ${0.18 + (1 - Number(route[3] || 0)) * 0.28})`;
+        ctx.beginPath();
+        ctx.moveTo(pa.x, pa.y);
+        ctx.lineTo(pb.x, pb.y);
+        ctx.stroke();
+      });
+      const row = trip();
+      const path = row.path || [];
+      if (path.length > 1) {
+        ctx.strokeStyle = "#994b2c";
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        path.forEach((placeId, index) => {
+          const p = project(places[placeId] || {});
+          if (index === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y);
+        });
+        ctx.stroke();
+      }
+      state.places.forEach((place) => {
+        const p = project(place);
+        ctx.fillStyle = terrainColor[place.terrain] || "#3f6248";
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 12 + Number(place.visited || 0) * 0.4, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "#17211f";
+        ctx.font = "700 12px Avenir Next, sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText(place.name.split(" ")[0], p.x, p.y - 18);
+      });
+      if (path.length) {
+        const stepPlace = places[path[Math.min(state.animStep, path.length - 1)]];
+        if (stepPlace) {
+          const p = project(stepPlace);
+          ctx.fillStyle = "#bd8a2c";
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 18, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      ctx.fillStyle = "#17211f";
+      ctx.textAlign = "left";
+      ctx.font = "700 22px Georgia";
+      ctx.fillText(`place graph nodes: ${state.places.length}`, 32, 48);
+    }
+
+    function renderAll() { renderHud(); renderDetail(); drawWorld(); }
+    document.getElementById("prev").addEventListener("click", () => { state.selected = Math.max(0, state.selected - 1); state.animStep = 0; renderAll(); });
+    document.getElementById("next").addEventListener("click", () => { state.selected = Math.min(state.trace.length - 1, state.selected + 1); state.animStep = 0; renderAll(); });
+    document.getElementById("animate").addEventListener("click", () => { const row = trip(); state.animStep = (state.animStep + 1) % Math.max(1, (row.path || []).length); renderAll(); });
+    renderAll();
+  </script>
+</body>
+</html>

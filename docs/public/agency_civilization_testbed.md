@@ -30,7 +30,9 @@ Report 144 adds typed embodied player input: the avatar has a body position, the
 
 Report 145 adds autonomous live-agent ticks: agents keep sensing, updating internal workspaces, choosing actions, affecting body state, exchanging native tokens, repairing or degrading world variables, and responding to sparse avatar interrupts.
 
-This is still not a completed playable civilization. Report 146 adds persistent object affordances: named objects have locations, integrity, stock, wetness, heat, pathogen risk, owners, affordance lists, required materials, inventory costs, repair/crafting loops, sensory bindings, and object histories. Capped affordance-ecology readiness is `1.000000`. The next gate is larger place-based object graphs with navigation and learned/open-ended interpretation rather than deterministic bridge policies.
+Report 146 adds persistent object affordances: named objects have locations, integrity, stock, wetness, heat, pathogen risk, owners, affordance lists, required materials, inventory costs, repair/crafting loops, sensory bindings, and object histories.
+
+This is still not a completed playable civilization. Report 147 adds place-based object navigation: objects are bound to places, routes have terrain costs and hazards, agents plan paths, spend body state while traveling, use sensory gradients, update route memory, exchange wayfinding, and interact with objects only after arrival. Place-navigation readiness is `0.948822`. The next gate is larger agent-made route/object histories and learned/open-ended navigation/interpretation rather than deterministic bridge policies.
 
 ## What The Testbed Can Study
 

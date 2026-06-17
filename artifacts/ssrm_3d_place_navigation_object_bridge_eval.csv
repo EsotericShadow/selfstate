@@ -1,0 +1,10 @@
+condition,trips,attempted_trips,planned_routes,arrivals,object_interactions,route_planning_success_rate,destination_arrival_rate,object_after_arrival_interaction_rate,travel_expenditure_rate,terrain_hazard_avoidance_rate,sensory_gradient_alignment,route_memory_update_rate,social_wayfinding_rate,path_efficiency_score,trace_completeness,place_navigation_readiness
+integrated_place_navigation_object_bridge,96,96,96,96,96,1.0,1.0,1.0,1.0,0.943153,0.615716,1.0,1.0,0.899078,1.0,0.948822
+no_place_graph,96,96,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.07
+no_pathfinding,96,96,48,4,4,0.5,0.083333,1.0,1.0,0.492813,0.296567,0.0,1.0,0.480833,1.0,0.55843
+no_travel_expenditure,96,96,96,96,96,1.0,1.0,1.0,0.0,0.943153,0.615716,1.0,1.0,0.899078,1.0,0.848822
+no_terrain_hazard,96,96,96,96,96,1.0,1.0,1.0,1.0,0.0,0.615716,1.0,1.0,0.930575,1.0,0.856712
+no_sensory_gradient,96,96,96,96,96,1.0,1.0,1.0,1.0,0.943153,0.0,1.0,1.0,0.888785,1.0,0.88653
+no_object_destination_binding,96,96,96,96,0,1.0,1.0,0.0,1.0,0.874417,0.627639,1.0,1.0,0.48781,1.0,0.784352
+no_social_wayfinding,96,96,96,96,96,1.0,1.0,1.0,1.0,0.943153,0.615716,1.0,0.0,0.899078,1.0,0.878822
+no_trace_replay,96,96,96,96,96,1.0,1.0,1.0,1.0,0.943153,0.615716,1.0,1.0,0.899078,0.0,0.878822

@@ -140,7 +140,7 @@ This boundary is not evidence that selfhood exists. It defines how future langua
 | Compressed packets are sufficient for language reasoning | Packet-fed LLMs match full-world LLMs on abstract recommendation quality when the state layers are healthy. | Full-world access consistently beats packet access without control costs, implying the packet omits essential state. |
 | Simulation-distilled critics can improve LLM reasoning | A sim-distilled critic improves held-out LLM planning, repair, and cascade-avoidance tasks while ablations identify which critic matters. | LLM search plus generic reward models match or beat sim-distilled critics, or the critics only transfer simulation artifacts. |
 | Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. Report 139 is the first structured toy bridge; Report 141 is its dynamic extension with held-out families and noisy multi-channel conditions. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
-| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years. Report 143 adds stateful avatar interventions. Report 144 adds typed embodied avatar input. Report 145 adds autonomous multi-rate live-agent ticks. Report 146 adds persistent object affordances with inventory expenditure, ownership, decay, repair/crafting, sensory binding, object histories, and trace ablations; capped readiness is `1.000000`. | A claim of mature live agents, true conversation, open-ended language/culture, unscripted civilization, or subjective consciousness appears before action selection is learned/open-ended and before larger object graphs, navigation, and language grounding exceed deterministic bridge policies. |
+| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years. Report 143 adds stateful avatar interventions. Report 144 adds typed embodied avatar input. Report 145 adds autonomous multi-rate live-agent ticks. Report 146 adds persistent object affordances. Report 147 binds objects to a place graph with terrain costs, sensory gradients, pathfinding, travel expenditure, route memory, social wayfinding, and object-use-after-arrival ablations; readiness is `0.948822`. | A claim of mature live agents, true conversation, open-ended language/culture, unscripted civilization, or subjective consciousness appears before navigation and affordance choice are learned/open-ended and before larger agent-made route/object histories exceed deterministic bridge policies. |
 
 ## Candidate Hypotheses
 
@@ -827,6 +827,24 @@ This is Report 145: a deterministic bridge from typed benchmark rows to autonomo
 This is Report 146: a deterministic bridge from scalar live-agent state to persistent object affordances, inventory expenditure, object histories, ownership, decay, and repair/crafting loops. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
 
 
+### Report 147: SSRM-3D place navigation object bridge
+
+| Condition | Readiness | Planning | Arrival | Object-after-arrival | Travel | Hazard | Sensory | Route memory | Wayfinding | Efficiency | Trace |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `integrated_place_navigation_object_bridge` | `0.948822` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.943153` | `0.615716` | `1.000000` | `1.000000` | `0.899078` | `1.000000` |
+| `no_place_graph` | `0.070000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `1.000000` |
+| `no_pathfinding` | `0.558430` | `0.500000` | `0.083333` | `1.000000` | `1.000000` | `0.492813` | `0.296567` | `0.000000` | `1.000000` | `0.480833` | `1.000000` |
+| `no_travel_expenditure` | `0.848822` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `0.943153` | `0.615716` | `1.000000` | `1.000000` | `0.899078` | `1.000000` |
+| `no_terrain_hazard` | `0.856712` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `0.615716` | `1.000000` | `1.000000` | `0.930575` | `1.000000` |
+| `no_sensory_gradient` | `0.886530` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.943153` | `0.000000` | `1.000000` | `1.000000` | `0.888785` | `1.000000` |
+| `no_object_destination_binding` | `0.784352` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `0.874417` | `0.627639` | `1.000000` | `1.000000` | `0.487810` | `1.000000` |
+| `no_social_wayfinding` | `0.878822` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.943153` | `0.615716` | `1.000000` | `0.000000` | `0.899078` | `1.000000` |
+| `no_trace_replay` | `0.878822` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.943153` | `0.615716` | `1.000000` | `1.000000` | `0.899078` | `0.000000` |
+
+This is Report 147: a deterministic bridge from object affordances to place-based navigation and object interaction after arrival. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
+
+
+
 
 
 ## Reproducibility Artifacts
@@ -910,6 +928,7 @@ This is Report 146: a deterministic bridge from scalar live-agent state to persi
 | `experiments/ssrm_3d_embodied_avatar_input_bridge.py` | `artifacts/ssrm_3d_embodied_avatar_input_bridge_verdict.csv` |
 | `experiments/ssrm_3d_autonomous_live_agent_loop_bridge.py` | `artifacts/ssrm_3d_autonomous_live_agent_loop_bridge_verdict.csv` |
 | `experiments/ssrm_3d_affordance_object_ecology_bridge.py` | `artifacts/ssrm_3d_affordance_object_ecology_bridge_verdict.csv` |
+| `experiments/ssrm_3d_place_navigation_object_bridge.py` | `artifacts/ssrm_3d_place_navigation_object_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

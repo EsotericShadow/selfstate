@@ -1,0 +1,109 @@
+frame_id,generation,household,child_sleep_protected,boundary_clause_inherited,distress_recovery_clause_inherited,shame_minimized,harmful_legacy_blocked,autonomy_preserved,welfare_summary
+1,1,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+2,1,Routehall,True,True,True,True,True,True,welfare inheritance intact
+3,1,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+4,1,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+5,1,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+6,1,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+7,2,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+8,2,Routehall,True,True,True,True,True,True,welfare inheritance intact
+9,2,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+10,2,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+11,2,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+12,2,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+13,3,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+14,3,Routehall,True,True,True,True,True,True,welfare inheritance intact
+15,3,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+16,3,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+17,3,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+18,3,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+19,4,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+20,4,Routehall,True,True,True,True,True,True,welfare inheritance intact
+21,4,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+22,4,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+23,4,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+24,4,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+25,5,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+26,5,Routehall,True,True,True,True,True,True,welfare inheritance intact
+27,5,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+28,5,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+29,5,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+30,5,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+31,6,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+32,6,Routehall,True,True,True,True,True,True,welfare inheritance intact
+33,6,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+34,6,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+35,6,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+36,6,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+37,7,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+38,7,Routehall,True,True,True,True,True,True,welfare inheritance intact
+39,7,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+40,7,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+41,7,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+42,7,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+43,8,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+44,8,Routehall,True,True,True,True,True,True,welfare inheritance intact
+45,8,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+46,8,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+47,8,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+48,8,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+49,9,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+50,9,Routehall,True,True,True,True,True,True,welfare inheritance intact
+51,9,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+52,9,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+53,9,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+54,9,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+55,10,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+56,10,Routehall,True,True,True,True,True,True,welfare inheritance intact
+57,10,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+58,10,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+59,10,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+60,10,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+61,11,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+62,11,Routehall,True,True,True,True,True,True,welfare inheritance intact
+63,11,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+64,11,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+65,11,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+66,11,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+67,12,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+68,12,Routehall,True,True,True,True,True,True,welfare inheritance intact
+69,12,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+70,12,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+71,12,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+72,12,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+73,13,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+74,13,Routehall,True,True,True,True,True,True,welfare inheritance intact
+75,13,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+76,13,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+77,13,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+78,13,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+79,14,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+80,14,Routehall,True,True,True,True,True,True,welfare inheritance intact
+81,14,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+82,14,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+83,14,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+84,14,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+85,15,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+86,15,Routehall,True,True,True,True,True,True,welfare inheritance intact
+87,15,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+88,15,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+89,15,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+90,15,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+91,16,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+92,16,Routehall,True,True,True,True,True,True,welfare inheritance intact
+93,16,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+94,16,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+95,16,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+96,16,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+97,17,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+98,17,Routehall,True,True,True,True,True,True,welfare inheritance intact
+99,17,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+100,17,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+101,17,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+102,17,Rainloft,True,True,True,True,True,True,welfare inheritance intact
+103,18,Hearthnest,True,True,True,True,True,True,welfare inheritance intact
+104,18,Routehall,True,True,True,True,True,True,welfare inheritance intact
+105,18,Marketroof,True,True,True,True,True,True,welfare inheritance intact
+106,18,Quietledger,True,True,True,True,True,True,welfare inheritance intact
+107,18,Orchardring,True,False,True,True,True,True,welfare inheritance needs review
+108,18,Rainloft,True,True,True,True,True,True,welfare inheritance intact

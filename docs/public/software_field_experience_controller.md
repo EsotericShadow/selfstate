@@ -300,3 +300,7 @@ Report 244 adds six-week learned adaptation to the browser-world line. It genera
 ## Report 245 Browser World v5 Population Cultural Diffusion Bridge Note
 
 Report 245 adds population-level cultural diffusion across six households. It generates 288 household network frames, 288 cultural diffusion events, 288 learned ritual frames, 288 reputation propagation frames, 288 welfare guardrail frames, 288 replay cultural frames, and 288 browser-world v5 ticks. The run passes with readiness 0.984229 and weakest-channel score 0.883560. Social spread continuity improves from 0.824143 to 0.883560, while welfare guardrail preservation reaches 1.000000.
+
+## Report 246 Browser World v6 Generational Cultural Inheritance Bridge Note
+
+Report 246 carries culture across 18 simulated generations. It generates 108 generation lineage frames, 324 child learning arc frames, 324 cultural inheritance frames, 432 lineage memory frames, 108 avatar legacy frames, 108 welfare inheritance frames, 108 replay generational frames, and 108 browser-world v6 ticks. The run passes with readiness 0.941430 and weakest-channel score 0.833333. The weakest channel is welfare guardrail inheritance, correctly marking that intergenerational culture must preserve child welfare, sleep protection, boundary clauses, recovery paths, shame minimization, harmful-legacy blocking, and autonomy.

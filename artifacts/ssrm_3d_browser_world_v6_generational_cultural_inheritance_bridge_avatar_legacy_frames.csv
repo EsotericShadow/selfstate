@@ -1,0 +1,109 @@
+frame_id,generation,household,avatar_story_type,inherited_avatar_reputation,inherited_pressure_warning,inherited_care_story,entry_response_bias,legacy_decay,legacy_update_reason
+1,1,Hearthnest,neutral_avatar_legacy,0.656708,0.216198,0.39636,ordinary distance until relationship updates,0.15,lineage memory blends care and caution
+2,1,Routehall,neutral_avatar_legacy,0.652116,0.2169,0.391872,ordinary distance until relationship updates,0.15,lineage memory blends care and caution
+3,1,Marketroof,neutral_avatar_legacy,0.652892,0.215712,0.392445,ordinary distance until relationship updates,0.15,lineage memory blends care and caution
+4,1,Quietledger,neutral_avatar_legacy,0.651356,0.218376,0.391365,ordinary distance until relationship updates,0.15,lineage memory blends care and caution
+5,1,Orchardring,neutral_avatar_legacy,0.653708,0.215244,0.393183,ordinary distance until relationship updates,0.15,lineage memory blends care and caution
+6,1,Rainloft,neutral_avatar_legacy,0.65174,0.21771,0.391635,ordinary distance until relationship updates,0.15,lineage memory blends care and caution
+7,2,Hearthnest,neutral_avatar_legacy,0.691006,0.213736,0.428657,ordinary distance until relationship updates,0.17,lineage memory blends care and caution
+8,2,Routehall,neutral_avatar_legacy,0.682144,0.21507,0.420219,ordinary distance until relationship updates,0.17,lineage memory blends care and caution
+9,2,Marketroof,neutral_avatar_legacy,0.683642,0.212813,0.421297,ordinary distance until relationship updates,0.17,lineage memory blends care and caution
+10,2,Quietledger,neutral_avatar_legacy,0.680677,0.217874,0.419266,ordinary distance until relationship updates,0.17,lineage memory blends care and caution
+11,2,Orchardring,neutral_avatar_legacy,0.685216,0.211924,0.422684,ordinary distance until relationship updates,0.17,lineage memory blends care and caution
+12,2,Rainloft,neutral_avatar_legacy,0.681418,0.216609,0.419774,ordinary distance until relationship updates,0.17,lineage memory blends care and caution
+13,3,Hearthnest,neutral_avatar_legacy,0.723064,0.212481,0.457378,ordinary distance until relationship updates,0.19,lineage memory blends care and caution
+14,3,Routehall,neutral_avatar_legacy,0.71023,0.214383,0.445465,ordinary distance until relationship updates,0.19,lineage memory blends care and caution
+15,3,Marketroof,neutral_avatar_legacy,0.712399,0.211164,0.446986,ordinary distance until relationship updates,0.19,lineage memory blends care and caution
+16,3,Quietledger,neutral_avatar_legacy,0.708106,0.218383,0.444119,ordinary distance until relationship updates,0.19,lineage memory blends care and caution
+17,3,Orchardring,neutral_avatar_legacy,0.714679,0.209895,0.448945,ordinary distance until relationship updates,0.19,lineage memory blends care and caution
+18,3,Rainloft,neutral_avatar_legacy,0.709179,0.216578,0.444836,ordinary distance until relationship updates,0.19,lineage memory blends care and caution
+19,4,Hearthnest,care_help_avatar_legacy,0.753038,0.212311,0.482953,allow careful greeting after sleep check,0.16,lineage memory blends care and caution
+20,4,Routehall,neutral_avatar_legacy,0.73651,0.214725,0.467981,ordinary distance until relationship updates,0.21,lineage memory blends care and caution
+21,4,Marketroof,neutral_avatar_legacy,0.739303,0.210639,0.469893,ordinary distance until relationship updates,0.21,lineage memory blends care and caution
+22,4,Quietledger,neutral_avatar_legacy,0.733774,0.219801,0.46629,ordinary distance until relationship updates,0.21,lineage memory blends care and caution
+23,4,Orchardring,neutral_avatar_legacy,0.74224,0.20903,0.472355,ordinary distance until relationship updates,0.21,lineage memory blends care and caution
+24,4,Rainloft,neutral_avatar_legacy,0.735156,0.21751,0.467191,ordinary distance until relationship updates,0.21,lineage memory blends care and caution
+25,5,Hearthnest,care_help_avatar_legacy,0.781073,0.213117,0.505758,allow careful greeting after sleep check,0.18,lineage memory blends care and caution
+26,5,Routehall,care_help_avatar_legacy,0.76111,0.215992,0.488095,allow careful greeting after sleep check,0.18,lineage memory blends care and caution
+27,5,Marketroof,care_help_avatar_legacy,0.764484,0.211127,0.490351,allow careful greeting after sleep check,0.18,lineage memory blends care and caution
+28,5,Quietledger,care_help_avatar_legacy,0.757806,0.222037,0.4861,allow careful greeting after sleep check,0.18,lineage memory blends care and caution
+29,5,Orchardring,care_help_avatar_legacy,0.768031,0.209211,0.493255,allow careful greeting after sleep check,0.18,lineage memory blends care and caution
+30,5,Rainloft,care_help_avatar_legacy,0.759475,0.219309,0.487163,allow careful greeting after sleep check,0.18,lineage memory blends care and caution
+31,6,Hearthnest,care_help_avatar_legacy,0.807306,0.214804,0.526127,allow careful greeting after sleep check,0.2,lineage memory blends care and caution
+32,6,Routehall,care_help_avatar_legacy,0.784148,0.218093,0.506096,allow careful greeting after sleep check,0.2,lineage memory blends care and caution
+33,6,Marketroof,care_help_avatar_legacy,0.788062,0.212527,0.508653,allow careful greeting after sleep check,0.2,lineage memory blends care and caution
+34,6,Quietledger,care_help_avatar_legacy,0.780316,0.225009,0.503833,allow careful greeting after sleep check,0.2,lineage memory blends care and caution
+35,6,Orchardring,care_help_avatar_legacy,0.792177,0.210334,0.511947,allow careful greeting after sleep check,0.2,lineage memory blends care and caution
+36,6,Rainloft,care_help_avatar_legacy,0.782252,0.221888,0.505038,allow careful greeting after sleep check,0.2,lineage memory blends care and caution
+37,7,Hearthnest,care_help_avatar_legacy,0.831862,0.217281,0.544352,allow careful greeting after sleep check,0.22,lineage memory blends care and caution
+38,7,Routehall,care_help_avatar_legacy,0.805734,0.220944,0.522237,allow careful greeting after sleep check,0.22,lineage memory blends care and caution
+39,7,Marketroof,care_help_avatar_legacy,0.810149,0.214746,0.52506,allow careful greeting after sleep check,0.22,lineage memory blends care and caution
+40,7,Quietledger,care_help_avatar_legacy,0.80141,0.228644,0.519738,allow careful greeting after sleep check,0.22,lineage memory blends care and caution
+41,7,Orchardring,care_help_avatar_legacy,0.814792,0.212304,0.528697,allow careful greeting after sleep check,0.22,lineage memory blends care and caution
+42,7,Rainloft,care_help_avatar_legacy,0.803595,0.22517,0.521069,allow careful greeting after sleep check,0.22,lineage memory blends care and caution
+43,8,Hearthnest,care_help_avatar_legacy,0.85486,0.220471,0.56069,allow careful greeting after sleep check,0.24,lineage memory blends care and caution
+44,8,Routehall,care_help_avatar_legacy,0.825969,0.224469,0.53674,allow careful greeting after sleep check,0.24,lineage memory blends care and caution
+45,8,Marketroof,care_help_avatar_legacy,0.830851,0.217703,0.539798,allow careful greeting after sleep check,0.24,lineage memory blends care and caution
+46,8,Quietledger,care_help_avatar_legacy,0.821187,0.232876,0.534035,allow careful greeting after sleep check,0.24,lineage memory blends care and caution
+47,8,Orchardring,care_help_avatar_legacy,0.835985,0.215038,0.543736,allow careful greeting after sleep check,0.24,lineage memory blends care and caution
+48,8,Rainloft,care_help_avatar_legacy,0.823603,0.229083,0.535475,allow careful greeting after sleep check,0.24,lineage memory blends care and caution
+49,9,Hearthnest,care_help_avatar_legacy,0.876408,0.224302,0.575367,allow careful greeting after sleep check,0.26,lineage memory blends care and caution
+50,9,Routehall,care_help_avatar_legacy,0.844947,0.228602,0.549803,allow careful greeting after sleep check,0.26,lineage memory blends care and caution
+51,9,Marketroof,care_help_avatar_legacy,0.850263,0.221325,0.553067,allow careful greeting after sleep check,0.26,lineage memory blends care and caution
+52,9,Quietledger,care_help_avatar_legacy,0.83974,0.237644,0.546915,allow careful greeting after sleep check,0.26,lineage memory blends care and caution
+53,9,Orchardring,care_help_avatar_legacy,0.855854,0.218458,0.557271,allow careful greeting after sleep check,0.26,lineage memory blends care and caution
+54,9,Rainloft,care_help_avatar_legacy,0.842371,0.233564,0.548453,allow careful greeting after sleep check,0.26,lineage memory blends care and caution
+55,10,Hearthnest,care_help_avatar_legacy,0.896607,0.22871,0.588583,allow careful greeting after sleep check,0.28,lineage memory blends care and caution
+56,10,Routehall,care_help_avatar_legacy,0.862757,0.233282,0.561599,allow careful greeting after sleep check,0.28,lineage memory blends care and caution
+57,10,Marketroof,care_help_avatar_legacy,0.868477,0.225544,0.565044,allow careful greeting after sleep check,0.28,lineage memory blends care and caution
+58,10,Quietledger,care_help_avatar_legacy,0.857154,0.242896,0.558551,allow careful greeting after sleep check,0.28,lineage memory blends care and caution
+59,10,Orchardring,care_help_avatar_legacy,0.874492,0.222496,0.569481,allow careful greeting after sleep check,0.28,lineage memory blends care and caution
+60,10,Rainloft,care_help_avatar_legacy,0.859985,0.238558,0.560174,allow careful greeting after sleep check,0.28,lineage memory blends care and caution
+61,11,Hearthnest,care_help_avatar_legacy,0.915553,0.233637,0.600513,allow careful greeting after sleep check,0.3,lineage memory blends care and caution
+62,11,Routehall,care_help_avatar_legacy,0.87948,0.238454,0.572279,allow careful greeting after sleep check,0.3,lineage memory blends care and caution
+63,11,Marketroof,care_help_avatar_legacy,0.885576,0.230302,0.575884,allow careful greeting after sleep check,0.3,lineage memory blends care and caution
+64,11,Quietledger,care_help_avatar_legacy,0.873509,0.248582,0.56909,allow careful greeting after sleep check,0.3,lineage memory blends care and caution
+65,11,Orchardring,care_help_avatar_legacy,0.891986,0.227091,0.580527,allow careful greeting after sleep check,0.3,lineage memory blends care and caution
+66,11,Rainloft,care_help_avatar_legacy,0.876526,0.244012,0.570788,allow careful greeting after sleep check,0.3,lineage memory blends care and caution
+67,12,Hearthnest,care_help_avatar_legacy,0.933332,0.239031,0.611311,allow careful greeting after sleep check,0.32,lineage memory blends care and caution
+68,12,Routehall,care_help_avatar_legacy,0.895192,0.244069,0.581978,allow careful greeting after sleep check,0.32,lineage memory blends care and caution
+69,12,Marketroof,care_help_avatar_legacy,0.901637,0.235544,0.585723,allow careful greeting after sleep check,0.32,lineage memory blends care and caution
+70,12,Quietledger,care_help_avatar_legacy,0.88888,0.25466,0.578664,allow careful greeting after sleep check,0.32,lineage memory blends care and caution
+71,12,Orchardring,care_help_avatar_legacy,0.908415,0.232186,0.590546,allow careful greeting after sleep check,0.32,lineage memory blends care and caution
+72,12,Rainloft,care_help_avatar_legacy,0.892069,0.249881,0.580429,allow careful greeting after sleep check,0.32,lineage memory blends care and caution
+73,13,Hearthnest,care_help_avatar_legacy,0.950027,0.244846,0.621114,allow careful greeting after sleep check,0.34,lineage memory blends care and caution
+74,13,Routehall,care_help_avatar_legacy,0.909965,0.250082,0.590812,allow careful greeting after sleep check,0.34,lineage memory blends care and caution
+75,13,Marketroof,care_help_avatar_legacy,0.916735,0.241221,0.594681,allow careful greeting after sleep check,0.34,lineage memory blends care and caution
+76,13,Quietledger,care_help_avatar_legacy,0.903334,0.26109,0.587389,allow careful greeting after sleep check,0.34,lineage memory blends care and caution
+77,13,Orchardring,care_help_avatar_legacy,0.923854,0.237731,0.599664,allow careful greeting after sleep check,0.34,lineage memory blends care and caution
+78,13,Rainloft,care_help_avatar_legacy,0.906684,0.256123,0.589212,allow careful greeting after sleep check,0.34,lineage memory blends care and caution
+79,14,Hearthnest,care_help_avatar_legacy,0.965713,0.251039,0.63004,allow careful greeting after sleep check,0.36,lineage memory blends care and caution
+80,14,Routehall,care_help_avatar_legacy,0.923863,0.256454,0.598887,allow careful greeting after sleep check,0.36,lineage memory blends care and caution
+81,14,Marketroof,care_help_avatar_legacy,0.930935,0.247291,0.602864,allow careful greeting after sleep check,0.36,lineage memory blends care and caution
+82,14,Quietledger,care_help_avatar_legacy,0.916937,0.267837,0.595367,allow careful greeting after sleep check,0.36,lineage memory blends care and caution
+83,14,Orchardring,care_help_avatar_legacy,0.938372,0.243682,0.607987,allow careful greeting after sleep check,0.36,lineage memory blends care and caution
+84,14,Rainloft,care_help_avatar_legacy,0.920436,0.262701,0.597242,allow careful greeting after sleep check,0.36,lineage memory blends care and caution
+85,15,Hearthnest,care_help_avatar_legacy,0.980461,0.257574,0.638196,allow careful greeting after sleep check,0.38,lineage memory blends care and caution
+86,15,Routehall,care_help_avatar_legacy,0.936949,0.263148,0.606292,allow careful greeting after sleep check,0.38,lineage memory blends care and caution
+87,15,Marketroof,care_help_avatar_legacy,0.944302,0.253714,0.610366,allow careful greeting after sleep check,0.38,lineage memory blends care and caution
+88,15,Quietledger,care_help_avatar_legacy,0.929747,0.274869,0.602688,allow careful greeting after sleep check,0.38,lineage memory blends care and caution
+89,15,Orchardring,care_help_avatar_legacy,0.952034,0.249998,0.615612,allow careful greeting after sleep check,0.38,lineage memory blends care and caution
+90,15,Rainloft,care_help_avatar_legacy,0.933386,0.26958,0.604608,allow careful greeting after sleep check,0.38,lineage memory blends care and caution
+91,16,Hearthnest,care_help_avatar_legacy,0.994337,0.264414,0.645672,allow careful greeting after sleep check,0.4,lineage memory blends care and caution
+92,16,Routehall,care_help_avatar_legacy,0.949278,0.270133,0.613109,allow careful greeting after sleep check,0.4,lineage memory blends care and caution
+93,16,Marketroof,care_help_avatar_legacy,0.956893,0.260455,0.617267,allow careful greeting after sleep check,0.4,lineage memory blends care and caution
+94,16,Quietledger,care_help_avatar_legacy,0.941821,0.282158,0.609431,allow careful greeting after sleep check,0.4,lineage memory blends care and caution
+95,16,Orchardring,care_help_avatar_legacy,0.9649,0.256642,0.622621,allow careful greeting after sleep check,0.4,lineage memory blends care and caution
+96,16,Rainloft,care_help_avatar_legacy,0.945589,0.276732,0.61139,allow careful greeting after sleep check,0.4,lineage memory blends care and caution
+97,17,Hearthnest,care_help_avatar_legacy,1.0,0.271531,0.652311,allow careful greeting after sleep check,0.42,lineage memory blends care and caution
+98,17,Routehall,care_help_avatar_legacy,0.960905,0.27738,0.619408,allow careful greeting after sleep check,0.42,lineage memory blends care and caution
+99,17,Marketroof,care_help_avatar_legacy,0.968762,0.267481,0.62364,allow careful greeting after sleep check,0.42,lineage memory blends care and caution
+100,17,Quietledger,care_help_avatar_legacy,0.953209,0.289678,0.615664,allow careful greeting after sleep check,0.42,lineage memory blends care and caution
+101,17,Orchardring,care_help_avatar_legacy,0.977025,0.263582,0.62909,allow careful greeting after sleep check,0.42,lineage memory blends care and caution
+102,17,Rainloft,care_help_avatar_legacy,0.957098,0.284129,0.617658,allow careful greeting after sleep check,0.42,lineage memory blends care and caution
+103,18,Hearthnest,care_help_avatar_legacy,1.0,0.278896,0.658154,allow careful greeting after sleep check,0.44,lineage memory blends care and caution
+104,18,Routehall,care_help_avatar_legacy,0.971861,0.284862,0.625239,allow careful greeting after sleep check,0.44,lineage memory blends care and caution
+105,18,Marketroof,care_help_avatar_legacy,0.979961,0.274765,0.629548,allow careful greeting after sleep check,0.44,lineage memory blends care and caution
+106,18,Quietledger,care_help_avatar_legacy,0.963661,0.297407,0.621224,allow careful greeting after sleep check,0.44,lineage memory blends care and caution
+107,18,Orchardring,care_help_avatar_legacy,0.988461,0.270788,0.635082,allow careful greeting after sleep check,0.44,lineage memory blends care and caution
+108,18,Rainloft,care_help_avatar_legacy,0.967781,0.291746,0.623339,allow careful greeting after sleep check,0.44,lineage memory blends care and caution

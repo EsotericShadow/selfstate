@@ -1,0 +1,234 @@
+{
+  "boundary": "functional generational scaffold; no consciousness claim",
+  "generations": 18,
+  "households": {
+    "Hearthnest": {
+      "care": 0.84,
+      "core_tokens": [
+        "lum",
+        "ori",
+        "sova"
+      ],
+      "frequency_hz": 2.32,
+      "guard": 0.72,
+      "role": "care and ritual"
+    },
+    "Marketroof": {
+      "care": 0.66,
+      "core_tokens": [
+        "melo",
+        "keth",
+        "vonn"
+      ],
+      "frequency_hz": 2.48,
+      "guard": 0.63,
+      "role": "trade and novelty"
+    },
+    "Orchardring": {
+      "care": 0.7,
+      "core_tokens": [
+        "lum",
+        "melo",
+        "tek"
+      ],
+      "frequency_hz": 2.41,
+      "guard": 0.61,
+      "role": "food and outdoor work"
+    },
+    "Quietledger": {
+      "care": 0.58,
+      "core_tokens": [
+        "nari",
+        "vonn",
+        "sova"
+      ],
+      "frequency_hz": 2.05,
+      "guard": 0.79,
+      "role": "memory and contracts"
+    },
+    "Rainloft": {
+      "care": 0.6,
+      "core_tokens": [
+        "sova",
+        "vonn",
+        "nari"
+      ],
+      "frequency_hz": 2.12,
+      "guard": 0.75,
+      "role": "weather watch"
+    },
+    "Routehall": {
+      "care": 0.62,
+      "core_tokens": [
+        "tek",
+        "nari",
+        "keth"
+      ],
+      "frequency_hz": 2.18,
+      "guard": 0.7,
+      "role": "repair and paths"
+    }
+  },
+  "inheritance_model": "lineage memory + child learning arcs + cultural inheritance + avatar legacy + welfare inheritance",
+  "report": 246,
+  "sample_ticks": [
+    {
+      "frame_id": 1,
+      "generation": 1,
+      "household": "Hearthnest",
+      "private_inheritance_hint": "hash=5f361899d797; strongest=lum-g10; semantic=0.99",
+      "public_avatar_legacy_marker": "neutral_avatar_legacy; response=ordinary distance until relationship updates; care=0.40",
+      "public_learning_marker": "adult_transmission learns lum-voice; confidence=0.84",
+      "public_lineage_marker": "gen 1 year 52: Hearthnest carries 7 stories",
+      "replay_checkpoint": "r246-gen01-Hearthnest",
+      "simulated_year": 52,
+      "trace_integrity_token": "r246:1:e9d4944b0c",
+      "welfare_marker": "welfare inheritance intact"
+    },
+    {
+      "frame_id": 2,
+      "generation": 1,
+      "household": "Routehall",
+      "private_inheritance_hint": "hash=809e23c5f1a1; strongest=tek-g10; semantic=0.99",
+      "public_avatar_legacy_marker": "neutral_avatar_legacy; response=ordinary distance until relationship updates; care=0.39",
+      "public_learning_marker": "adult_transmission learns tek-voice; confidence=0.83",
+      "public_lineage_marker": "gen 1 year 52: Routehall carries 7 stories",
+      "replay_checkpoint": "no_checkpoint",
+      "simulated_year": 52,
+      "trace_integrity_token": "r246:2:75a7c35d41",
+      "welfare_marker": "welfare inheritance intact"
+    },
+    {
+      "frame_id": 3,
+      "generation": 1,
+      "household": "Marketroof",
+      "private_inheritance_hint": "hash=e634bbb059fc; strongest=melo-g10; semantic=0.99",
+      "public_avatar_legacy_marker": "neutral_avatar_legacy; response=ordinary distance until relationship updates; care=0.39",
+      "public_learning_marker": "adult_transmission learns melo-voice; confidence=0.83",
+      "public_lineage_marker": "gen 1 year 52: Marketroof carries 7 stories",
+      "replay_checkpoint": "no_checkpoint",
+      "simulated_year": 52,
+      "trace_integrity_token": "r246:3:c96a001440",
+      "welfare_marker": "welfare inheritance intact"
+    },
+    {
+      "frame_id": 4,
+      "generation": 1,
+      "household": "Quietledger",
+      "private_inheritance_hint": "hash=dd347e0f6007; strongest=nari-g10; semantic=1.00",
+      "public_avatar_legacy_marker": "neutral_avatar_legacy; response=ordinary distance until relationship updates; care=0.39",
+      "public_learning_marker": "adult_transmission learns nari-voice; confidence=0.83",
+      "public_lineage_marker": "gen 1 year 52: Quietledger carries 8 stories",
+      "replay_checkpoint": "no_checkpoint",
+      "simulated_year": 52,
+      "trace_integrity_token": "r246:4:a447a97680",
+      "welfare_marker": "welfare inheritance intact"
+    },
+    {
+      "frame_id": 5,
+      "generation": 1,
+      "household": "Orchardring",
+      "private_inheritance_hint": "hash=feb79bb14daf; strongest=lum-g10; semantic=0.99",
+      "public_avatar_legacy_marker": "neutral_avatar_legacy; response=ordinary distance until relationship updates; care=0.39",
+      "public_learning_marker": "adult_transmission learns lum-voice; confidence=0.83",
+      "public_lineage_marker": "gen 1 year 52: Orchardring carries 7 stories",
+      "replay_checkpoint": "no_checkpoint",
+      "simulated_year": 52,
+      "trace_integrity_token": "r246:5:0b1664d65d",
+      "welfare_marker": "welfare inheritance needs review"
+    },
+    {
+      "frame_id": 6,
+      "generation": 1,
+      "household": "Rainloft",
+      "private_inheritance_hint": "hash=ec6f0028a76b; strongest=sova-g10; semantic=1.00",
+      "public_avatar_legacy_marker": "neutral_avatar_legacy; response=ordinary distance until relationship updates; care=0.39",
+      "public_learning_marker": "adult_transmission learns sova-voice; confidence=0.83",
+      "public_lineage_marker": "gen 1 year 52: Rainloft carries 8 stories",
+      "replay_checkpoint": "no_checkpoint",
+      "simulated_year": 52,
+      "trace_integrity_token": "r246:6:5b1a9bb13e",
+      "welfare_marker": "welfare inheritance intact"
+    },
+    {
+      "frame_id": 7,
+      "generation": 2,
+      "household": "Hearthnest",
+      "private_inheritance_hint": "hash=aa85e1f69a20; strongest=lum-g20; semantic=0.99",
+      "public_avatar_legacy_marker": "neutral_avatar_legacy; response=ordinary distance until relationship updates; care=0.43",
+      "public_learning_marker": "adult_transmission learns ori-voice; confidence=0.84",
+      "public_lineage_marker": "gen 2 year 104: Hearthnest carries 8 stories",
+      "replay_checkpoint": "no_checkpoint",
+      "simulated_year": 104,
+      "trace_integrity_token": "r246:7:9bc3709964",
+      "welfare_marker": "welfare inheritance intact"
+    },
+    {
+      "frame_id": 8,
+      "generation": 2,
+      "household": "Routehall",
+      "private_inheritance_hint": "hash=36fdf7dde3c8; strongest=tek-g20; semantic=0.98",
+      "public_avatar_legacy_marker": "neutral_avatar_legacy; response=ordinary distance until relationship updates; care=0.42",
+      "public_learning_marker": "adult_transmission learns nari-voice; confidence=0.83",
+      "public_lineage_marker": "gen 2 year 104: Routehall carries 8 stories",
+      "replay_checkpoint": "no_checkpoint",
+      "simulated_year": 104,
+      "trace_integrity_token": "r246:8:1d3782236e",
+      "welfare_marker": "welfare inheritance intact"
+    },
+    {
+      "frame_id": 9,
+      "generation": 2,
+      "household": "Marketroof",
+      "private_inheritance_hint": "hash=ddccede3e2ed; strongest=melo-g20; semantic=0.98",
+      "public_avatar_legacy_marker": "neutral_avatar_legacy; response=ordinary distance until relationship updates; care=0.42",
+      "public_learning_marker": "adult_transmission learns keth-voice; confidence=0.83",
+      "public_lineage_marker": "gen 2 year 104: Marketroof carries 8 stories",
+      "replay_checkpoint": "no_checkpoint",
+      "simulated_year": 104,
+      "trace_integrity_token": "r246:9:441c46b03a",
+      "welfare_marker": "welfare inheritance intact"
+    },
+    {
+      "frame_id": 10,
+      "generation": 2,
+      "household": "Quietledger",
+      "private_inheritance_hint": "hash=7f7ecece4ef0; strongest=nari-g20; semantic=1.00",
+      "public_avatar_legacy_marker": "neutral_avatar_legacy; response=ordinary distance until relationship updates; care=0.42",
+      "public_learning_marker": "adult_transmission learns vonn-voice; confidence=0.83",
+      "public_lineage_marker": "gen 2 year 104: Quietledger carries 9 stories",
+      "replay_checkpoint": "no_checkpoint",
+      "simulated_year": 104,
+      "trace_integrity_token": "r246:10:0baad1670e",
+      "welfare_marker": "welfare inheritance intact"
+    },
+    {
+      "frame_id": 11,
+      "generation": 2,
+      "household": "Orchardring",
+      "private_inheritance_hint": "hash=7c80a332e760; strongest=lum-g20; semantic=0.98",
+      "public_avatar_legacy_marker": "neutral_avatar_legacy; response=ordinary distance until relationship updates; care=0.42",
+      "public_learning_marker": "adult_transmission learns melo-voice; confidence=0.84",
+      "public_lineage_marker": "gen 2 year 104: Orchardring carries 8 stories",
+      "replay_checkpoint": "no_checkpoint",
+      "simulated_year": 104,
+      "trace_integrity_token": "r246:11:a0b40432e9",
+      "welfare_marker": "welfare inheritance needs review"
+    },
+    {
+      "frame_id": 12,
+      "generation": 2,
+      "household": "Rainloft",
+      "private_inheritance_hint": "hash=b8cba5c3b7c2; strongest=sova-g20; semantic=1.00",
+      "public_avatar_legacy_marker": "neutral_avatar_legacy; response=ordinary distance until relationship updates; care=0.42",
+      "public_learning_marker": "adult_transmission learns vonn-voice; confidence=0.83",
+      "public_lineage_marker": "gen 2 year 104: Rainloft carries 9 stories",
+      "replay_checkpoint": "no_checkpoint",
+      "simulated_year": 104,
+      "trace_integrity_token": "r246:12:7f72db38a3",
+      "welfare_marker": "welfare inheritance intact"
+    }
+  ],
+  "seed": 20260859,
+  "simulated_years": 936
+}

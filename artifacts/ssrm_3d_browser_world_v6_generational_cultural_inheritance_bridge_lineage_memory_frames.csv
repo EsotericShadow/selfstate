@@ -1,0 +1,433 @@
+frame_id,generation,household,memory_type,memory_sentence,elder_source,child_receiver,trust_charge,caution_charge,gratitude_charge,recall_probability
+1,1,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g01,Hearthnest-child-g01,0.6044,0.3816,0.476,0.8422
+1,1,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g01,Hearthnest-child-g01,0.5644,0.4416,0.426,0.8582
+1,1,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g01,Hearthnest-child-g01,0.5644,0.3816,0.426,0.8782
+1,1,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g01,Hearthnest-child-g01,0.5644,0.3816,0.476,0.8982
+2,1,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g01,Routehall-child-g01,0.5692,0.378,0.443,0.836568
+2,1,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g01,Routehall-child-g01,0.5292,0.438,0.393,0.852568
+2,1,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g01,Routehall-child-g01,0.5292,0.378,0.393,0.872568
+2,1,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g01,Routehall-child-g01,0.5292,0.378,0.443,0.892568
+3,1,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g01,Marketroof-child-g01,0.5756,0.3654,0.449,0.83662
+3,1,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g01,Marketroof-child-g01,0.5356,0.4254,0.399,0.85262
+3,1,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g01,Marketroof-child-g01,0.5356,0.3654,0.399,0.87262
+3,1,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g01,Marketroof-child-g01,0.5356,0.3654,0.449,0.89262
+4,1,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g01,Quietledger-child-g01,0.5628,0.3942,0.437,0.83678
+4,1,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g01,Quietledger-child-g01,0.5228,0.4542,0.387,0.85278
+4,1,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g01,Quietledger-child-g01,0.5228,0.3942,0.387,0.87278
+4,1,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g01,Quietledger-child-g01,0.5228,0.3942,0.437,0.89278
+5,1,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g01,Orchardring-child-g01,0.582,0.3618,0.455,0.837332
+5,1,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g01,Orchardring-child-g01,0.542,0.4218,0.405,0.853332
+5,1,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g01,Orchardring-child-g01,0.542,0.3618,0.405,0.873332
+5,1,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g01,Orchardring-child-g01,0.542,0.3618,0.455,0.893332
+6,1,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g01,Rainloft-child-g01,0.566,0.387,0.44,0.83674
+6,1,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g01,Rainloft-child-g01,0.526,0.447,0.39,0.85274
+6,1,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g01,Rainloft-child-g01,0.526,0.387,0.39,0.87274
+6,1,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g01,Rainloft-child-g01,0.526,0.387,0.44,0.89274
+7,2,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g02,Hearthnest-child-g02,0.6144,0.3936,0.476,0.8444
+7,2,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g02,Hearthnest-child-g02,0.5744,0.4536,0.426,0.8604
+7,2,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g02,Hearthnest-child-g02,0.5744,0.3936,0.426,0.8804
+7,2,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g02,Hearthnest-child-g02,0.5744,0.3936,0.476,0.9004
+8,2,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g02,Routehall-child-g02,0.5792,0.39,0.443,0.838768
+8,2,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g02,Routehall-child-g02,0.5392,0.45,0.393,0.854768
+8,2,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g02,Routehall-child-g02,0.5392,0.39,0.393,0.874768
+8,2,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g02,Routehall-child-g02,0.5392,0.39,0.443,0.894768
+9,2,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g02,Marketroof-child-g02,0.5856,0.3774,0.449,0.83882
+9,2,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g02,Marketroof-child-g02,0.5456,0.4374,0.399,0.85482
+9,2,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g02,Marketroof-child-g02,0.5456,0.3774,0.399,0.87482
+9,2,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g02,Marketroof-child-g02,0.5456,0.3774,0.449,0.89482
+10,2,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g02,Quietledger-child-g02,0.5728,0.4062,0.437,0.83898
+10,2,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g02,Quietledger-child-g02,0.5328,0.4662,0.387,0.85498
+10,2,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g02,Quietledger-child-g02,0.5328,0.4062,0.387,0.87498
+10,2,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g02,Quietledger-child-g02,0.5328,0.4062,0.437,0.89498
+11,2,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g02,Orchardring-child-g02,0.592,0.3738,0.455,0.839532
+11,2,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g02,Orchardring-child-g02,0.552,0.4338,0.405,0.855532
+11,2,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g02,Orchardring-child-g02,0.552,0.3738,0.405,0.875532
+11,2,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g02,Orchardring-child-g02,0.552,0.3738,0.455,0.895532
+12,2,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g02,Rainloft-child-g02,0.576,0.399,0.44,0.83894
+12,2,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g02,Rainloft-child-g02,0.536,0.459,0.39,0.85494
+12,2,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g02,Rainloft-child-g02,0.536,0.399,0.39,0.87494
+12,2,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g02,Rainloft-child-g02,0.536,0.399,0.44,0.89494
+13,3,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g03,Hearthnest-child-g03,0.6244,0.4056,0.476,0.8466
+13,3,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g03,Hearthnest-child-g03,0.5844,0.4656,0.426,0.8626
+13,3,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g03,Hearthnest-child-g03,0.5844,0.4056,0.426,0.8826
+13,3,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g03,Hearthnest-child-g03,0.5844,0.4056,0.476,0.9026
+14,3,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g03,Routehall-child-g03,0.5892,0.402,0.443,0.840968
+14,3,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g03,Routehall-child-g03,0.5492,0.462,0.393,0.856968
+14,3,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g03,Routehall-child-g03,0.5492,0.402,0.393,0.876968
+14,3,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g03,Routehall-child-g03,0.5492,0.402,0.443,0.896968
+15,3,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g03,Marketroof-child-g03,0.5956,0.3894,0.449,0.84102
+15,3,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g03,Marketroof-child-g03,0.5556,0.4494,0.399,0.85702
+15,3,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g03,Marketroof-child-g03,0.5556,0.3894,0.399,0.87702
+15,3,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g03,Marketroof-child-g03,0.5556,0.3894,0.449,0.89702
+16,3,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g03,Quietledger-child-g03,0.5828,0.4182,0.437,0.84118
+16,3,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g03,Quietledger-child-g03,0.5428,0.4782,0.387,0.85718
+16,3,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g03,Quietledger-child-g03,0.5428,0.4182,0.387,0.87718
+16,3,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g03,Quietledger-child-g03,0.5428,0.4182,0.437,0.89718
+17,3,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g03,Orchardring-child-g03,0.602,0.3858,0.455,0.841732
+17,3,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g03,Orchardring-child-g03,0.562,0.4458,0.405,0.857732
+17,3,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g03,Orchardring-child-g03,0.562,0.3858,0.405,0.877732
+17,3,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g03,Orchardring-child-g03,0.562,0.3858,0.455,0.897732
+18,3,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g03,Rainloft-child-g03,0.586,0.411,0.44,0.84114
+18,3,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g03,Rainloft-child-g03,0.546,0.471,0.39,0.85714
+18,3,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g03,Rainloft-child-g03,0.546,0.411,0.39,0.87714
+18,3,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g03,Rainloft-child-g03,0.546,0.411,0.44,0.89714
+19,4,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g04,Hearthnest-child-g04,0.6344,0.4176,0.476,0.8488
+19,4,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g04,Hearthnest-child-g04,0.5944,0.4776,0.426,0.8648
+19,4,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g04,Hearthnest-child-g04,0.5944,0.4176,0.426,0.8848
+19,4,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g04,Hearthnest-child-g04,0.5944,0.4176,0.476,0.9048
+20,4,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g04,Routehall-child-g04,0.5992,0.414,0.443,0.843168
+20,4,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g04,Routehall-child-g04,0.5592,0.474,0.393,0.859168
+20,4,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g04,Routehall-child-g04,0.5592,0.414,0.393,0.879168
+20,4,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g04,Routehall-child-g04,0.5592,0.414,0.443,0.899168
+21,4,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g04,Marketroof-child-g04,0.6056,0.4014,0.449,0.84322
+21,4,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g04,Marketroof-child-g04,0.5656,0.4614,0.399,0.85922
+21,4,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g04,Marketroof-child-g04,0.5656,0.4014,0.399,0.87922
+21,4,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g04,Marketroof-child-g04,0.5656,0.4014,0.449,0.89922
+22,4,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g04,Quietledger-child-g04,0.5928,0.4302,0.437,0.84338
+22,4,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g04,Quietledger-child-g04,0.5528,0.4902,0.387,0.85938
+22,4,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g04,Quietledger-child-g04,0.5528,0.4302,0.387,0.87938
+22,4,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g04,Quietledger-child-g04,0.5528,0.4302,0.437,0.89938
+23,4,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g04,Orchardring-child-g04,0.612,0.3978,0.455,0.843932
+23,4,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g04,Orchardring-child-g04,0.572,0.4578,0.405,0.859932
+23,4,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g04,Orchardring-child-g04,0.572,0.3978,0.405,0.879932
+23,4,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g04,Orchardring-child-g04,0.572,0.3978,0.455,0.899932
+24,4,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g04,Rainloft-child-g04,0.596,0.423,0.44,0.84334
+24,4,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g04,Rainloft-child-g04,0.556,0.483,0.39,0.85934
+24,4,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g04,Rainloft-child-g04,0.556,0.423,0.39,0.87934
+24,4,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g04,Rainloft-child-g04,0.556,0.423,0.44,0.89934
+25,5,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g05,Hearthnest-child-g05,0.6444,0.4296,0.476,0.851
+25,5,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g05,Hearthnest-child-g05,0.6044,0.4896,0.426,0.867
+25,5,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g05,Hearthnest-child-g05,0.6044,0.4296,0.426,0.887
+25,5,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g05,Hearthnest-child-g05,0.6044,0.4296,0.476,0.907
+26,5,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g05,Routehall-child-g05,0.6092,0.426,0.443,0.845368
+26,5,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g05,Routehall-child-g05,0.5692,0.486,0.393,0.861368
+26,5,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g05,Routehall-child-g05,0.5692,0.426,0.393,0.881368
+26,5,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g05,Routehall-child-g05,0.5692,0.426,0.443,0.901368
+27,5,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g05,Marketroof-child-g05,0.6156,0.4134,0.449,0.84542
+27,5,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g05,Marketroof-child-g05,0.5756,0.4734,0.399,0.86142
+27,5,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g05,Marketroof-child-g05,0.5756,0.4134,0.399,0.88142
+27,5,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g05,Marketroof-child-g05,0.5756,0.4134,0.449,0.90142
+28,5,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g05,Quietledger-child-g05,0.6028,0.4422,0.437,0.84558
+28,5,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g05,Quietledger-child-g05,0.5628,0.5022,0.387,0.86158
+28,5,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g05,Quietledger-child-g05,0.5628,0.4422,0.387,0.88158
+28,5,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g05,Quietledger-child-g05,0.5628,0.4422,0.437,0.90158
+29,5,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g05,Orchardring-child-g05,0.622,0.4098,0.455,0.846132
+29,5,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g05,Orchardring-child-g05,0.582,0.4698,0.405,0.862132
+29,5,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g05,Orchardring-child-g05,0.582,0.4098,0.405,0.882132
+29,5,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g05,Orchardring-child-g05,0.582,0.4098,0.455,0.902132
+30,5,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g05,Rainloft-child-g05,0.606,0.435,0.44,0.84554
+30,5,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g05,Rainloft-child-g05,0.566,0.495,0.39,0.86154
+30,5,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g05,Rainloft-child-g05,0.566,0.435,0.39,0.88154
+30,5,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g05,Rainloft-child-g05,0.566,0.435,0.44,0.90154
+31,6,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g06,Hearthnest-child-g06,0.6544,0.4416,0.476,0.8532
+31,6,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g06,Hearthnest-child-g06,0.6144,0.5016,0.426,0.8692
+31,6,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g06,Hearthnest-child-g06,0.6144,0.4416,0.426,0.8892
+31,6,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g06,Hearthnest-child-g06,0.6144,0.4416,0.476,0.9092
+32,6,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g06,Routehall-child-g06,0.6192,0.438,0.443,0.847568
+32,6,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g06,Routehall-child-g06,0.5792,0.498,0.393,0.863568
+32,6,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g06,Routehall-child-g06,0.5792,0.438,0.393,0.883568
+32,6,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g06,Routehall-child-g06,0.5792,0.438,0.443,0.903568
+33,6,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g06,Marketroof-child-g06,0.6256,0.4254,0.449,0.84762
+33,6,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g06,Marketroof-child-g06,0.5856,0.4854,0.399,0.86362
+33,6,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g06,Marketroof-child-g06,0.5856,0.4254,0.399,0.88362
+33,6,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g06,Marketroof-child-g06,0.5856,0.4254,0.449,0.90362
+34,6,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g06,Quietledger-child-g06,0.6128,0.4542,0.437,0.84778
+34,6,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g06,Quietledger-child-g06,0.5728,0.5142,0.387,0.86378
+34,6,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g06,Quietledger-child-g06,0.5728,0.4542,0.387,0.88378
+34,6,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g06,Quietledger-child-g06,0.5728,0.4542,0.437,0.90378
+35,6,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g06,Orchardring-child-g06,0.632,0.4218,0.455,0.848332
+35,6,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g06,Orchardring-child-g06,0.592,0.4818,0.405,0.864332
+35,6,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g06,Orchardring-child-g06,0.592,0.4218,0.405,0.884332
+35,6,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g06,Orchardring-child-g06,0.592,0.4218,0.455,0.904332
+36,6,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g06,Rainloft-child-g06,0.616,0.447,0.44,0.84774
+36,6,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g06,Rainloft-child-g06,0.576,0.507,0.39,0.86374
+36,6,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g06,Rainloft-child-g06,0.576,0.447,0.39,0.88374
+36,6,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g06,Rainloft-child-g06,0.576,0.447,0.44,0.90374
+37,7,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g07,Hearthnest-child-g07,0.6644,0.4536,0.476,0.8554
+37,7,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g07,Hearthnest-child-g07,0.6244,0.5136,0.426,0.8714
+37,7,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g07,Hearthnest-child-g07,0.6244,0.4536,0.426,0.8914
+37,7,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g07,Hearthnest-child-g07,0.6244,0.4536,0.476,0.9114
+38,7,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g07,Routehall-child-g07,0.6292,0.45,0.443,0.849768
+38,7,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g07,Routehall-child-g07,0.5892,0.51,0.393,0.865768
+38,7,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g07,Routehall-child-g07,0.5892,0.45,0.393,0.885768
+38,7,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g07,Routehall-child-g07,0.5892,0.45,0.443,0.905768
+39,7,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g07,Marketroof-child-g07,0.6356,0.4374,0.449,0.84982
+39,7,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g07,Marketroof-child-g07,0.5956,0.4974,0.399,0.86582
+39,7,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g07,Marketroof-child-g07,0.5956,0.4374,0.399,0.88582
+39,7,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g07,Marketroof-child-g07,0.5956,0.4374,0.449,0.90582
+40,7,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g07,Quietledger-child-g07,0.6228,0.4662,0.437,0.84998
+40,7,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g07,Quietledger-child-g07,0.5828,0.5262,0.387,0.86598
+40,7,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g07,Quietledger-child-g07,0.5828,0.4662,0.387,0.88598
+40,7,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g07,Quietledger-child-g07,0.5828,0.4662,0.437,0.90598
+41,7,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g07,Orchardring-child-g07,0.642,0.4338,0.455,0.850532
+41,7,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g07,Orchardring-child-g07,0.602,0.4938,0.405,0.866532
+41,7,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g07,Orchardring-child-g07,0.602,0.4338,0.405,0.886532
+41,7,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g07,Orchardring-child-g07,0.602,0.4338,0.455,0.906532
+42,7,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g07,Rainloft-child-g07,0.626,0.459,0.44,0.84994
+42,7,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g07,Rainloft-child-g07,0.586,0.519,0.39,0.86594
+42,7,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g07,Rainloft-child-g07,0.586,0.459,0.39,0.88594
+42,7,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g07,Rainloft-child-g07,0.586,0.459,0.44,0.90594
+43,8,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g08,Hearthnest-child-g08,0.6744,0.4656,0.476,0.8576
+43,8,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g08,Hearthnest-child-g08,0.6344,0.5256,0.426,0.8736
+43,8,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g08,Hearthnest-child-g08,0.6344,0.4656,0.426,0.8936
+43,8,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g08,Hearthnest-child-g08,0.6344,0.4656,0.476,0.9136
+44,8,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g08,Routehall-child-g08,0.6392,0.462,0.443,0.851968
+44,8,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g08,Routehall-child-g08,0.5992,0.522,0.393,0.867968
+44,8,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g08,Routehall-child-g08,0.5992,0.462,0.393,0.887968
+44,8,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g08,Routehall-child-g08,0.5992,0.462,0.443,0.907968
+45,8,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g08,Marketroof-child-g08,0.6456,0.4494,0.449,0.85202
+45,8,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g08,Marketroof-child-g08,0.6056,0.5094,0.399,0.86802
+45,8,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g08,Marketroof-child-g08,0.6056,0.4494,0.399,0.88802
+45,8,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g08,Marketroof-child-g08,0.6056,0.4494,0.449,0.90802
+46,8,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g08,Quietledger-child-g08,0.6328,0.4782,0.437,0.85218
+46,8,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g08,Quietledger-child-g08,0.5928,0.5382,0.387,0.86818
+46,8,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g08,Quietledger-child-g08,0.5928,0.4782,0.387,0.88818
+46,8,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g08,Quietledger-child-g08,0.5928,0.4782,0.437,0.90818
+47,8,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g08,Orchardring-child-g08,0.652,0.4458,0.455,0.852732
+47,8,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g08,Orchardring-child-g08,0.612,0.5058,0.405,0.868732
+47,8,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g08,Orchardring-child-g08,0.612,0.4458,0.405,0.888732
+47,8,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g08,Orchardring-child-g08,0.612,0.4458,0.455,0.908732
+48,8,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g08,Rainloft-child-g08,0.636,0.471,0.44,0.85214
+48,8,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g08,Rainloft-child-g08,0.596,0.531,0.39,0.86814
+48,8,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g08,Rainloft-child-g08,0.596,0.471,0.39,0.88814
+48,8,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g08,Rainloft-child-g08,0.596,0.471,0.44,0.90814
+49,9,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g09,Hearthnest-child-g09,0.6844,0.4776,0.476,0.8598
+49,9,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g09,Hearthnest-child-g09,0.6444,0.5376,0.426,0.8758
+49,9,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g09,Hearthnest-child-g09,0.6444,0.4776,0.426,0.8958
+49,9,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g09,Hearthnest-child-g09,0.6444,0.4776,0.476,0.9158
+50,9,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g09,Routehall-child-g09,0.6492,0.474,0.443,0.854168
+50,9,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g09,Routehall-child-g09,0.6092,0.534,0.393,0.870168
+50,9,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g09,Routehall-child-g09,0.6092,0.474,0.393,0.890168
+50,9,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g09,Routehall-child-g09,0.6092,0.474,0.443,0.910168
+51,9,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g09,Marketroof-child-g09,0.6556,0.4614,0.449,0.85422
+51,9,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g09,Marketroof-child-g09,0.6156,0.5214,0.399,0.87022
+51,9,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g09,Marketroof-child-g09,0.6156,0.4614,0.399,0.89022
+51,9,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g09,Marketroof-child-g09,0.6156,0.4614,0.449,0.91022
+52,9,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g09,Quietledger-child-g09,0.6428,0.4902,0.437,0.85438
+52,9,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g09,Quietledger-child-g09,0.6028,0.5502,0.387,0.87038
+52,9,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g09,Quietledger-child-g09,0.6028,0.4902,0.387,0.89038
+52,9,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g09,Quietledger-child-g09,0.6028,0.4902,0.437,0.91038
+53,9,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g09,Orchardring-child-g09,0.662,0.4578,0.455,0.854932
+53,9,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g09,Orchardring-child-g09,0.622,0.5178,0.405,0.870932
+53,9,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g09,Orchardring-child-g09,0.622,0.4578,0.405,0.890932
+53,9,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g09,Orchardring-child-g09,0.622,0.4578,0.455,0.910932
+54,9,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g09,Rainloft-child-g09,0.646,0.483,0.44,0.85434
+54,9,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g09,Rainloft-child-g09,0.606,0.543,0.39,0.87034
+54,9,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g09,Rainloft-child-g09,0.606,0.483,0.39,0.89034
+54,9,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g09,Rainloft-child-g09,0.606,0.483,0.44,0.91034
+55,10,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g10,Hearthnest-child-g10,0.6944,0.4896,0.476,0.862
+55,10,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g10,Hearthnest-child-g10,0.6544,0.5496,0.426,0.878
+55,10,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g10,Hearthnest-child-g10,0.6544,0.4896,0.426,0.898
+55,10,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g10,Hearthnest-child-g10,0.6544,0.4896,0.476,0.918
+56,10,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g10,Routehall-child-g10,0.6592,0.486,0.443,0.856368
+56,10,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g10,Routehall-child-g10,0.6192,0.546,0.393,0.872368
+56,10,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g10,Routehall-child-g10,0.6192,0.486,0.393,0.892368
+56,10,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g10,Routehall-child-g10,0.6192,0.486,0.443,0.912368
+57,10,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g10,Marketroof-child-g10,0.6656,0.4734,0.449,0.85642
+57,10,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g10,Marketroof-child-g10,0.6256,0.5334,0.399,0.87242
+57,10,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g10,Marketroof-child-g10,0.6256,0.4734,0.399,0.89242
+57,10,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g10,Marketroof-child-g10,0.6256,0.4734,0.449,0.91242
+58,10,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g10,Quietledger-child-g10,0.6528,0.5022,0.437,0.85658
+58,10,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g10,Quietledger-child-g10,0.6128,0.5622,0.387,0.87258
+58,10,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g10,Quietledger-child-g10,0.6128,0.5022,0.387,0.89258
+58,10,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g10,Quietledger-child-g10,0.6128,0.5022,0.437,0.91258
+59,10,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g10,Orchardring-child-g10,0.672,0.4698,0.455,0.857132
+59,10,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g10,Orchardring-child-g10,0.632,0.5298,0.405,0.873132
+59,10,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g10,Orchardring-child-g10,0.632,0.4698,0.405,0.893132
+59,10,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g10,Orchardring-child-g10,0.632,0.4698,0.455,0.913132
+60,10,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g10,Rainloft-child-g10,0.656,0.495,0.44,0.85654
+60,10,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g10,Rainloft-child-g10,0.616,0.555,0.39,0.87254
+60,10,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g10,Rainloft-child-g10,0.616,0.495,0.39,0.89254
+60,10,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g10,Rainloft-child-g10,0.616,0.495,0.44,0.91254
+61,11,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g11,Hearthnest-child-g11,0.7044,0.5016,0.476,0.8642
+61,11,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g11,Hearthnest-child-g11,0.6644,0.5616,0.426,0.8802
+61,11,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g11,Hearthnest-child-g11,0.6644,0.5016,0.426,0.9002
+61,11,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g11,Hearthnest-child-g11,0.6644,0.5016,0.476,0.9202
+62,11,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g11,Routehall-child-g11,0.6692,0.498,0.443,0.858568
+62,11,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g11,Routehall-child-g11,0.6292,0.558,0.393,0.874568
+62,11,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g11,Routehall-child-g11,0.6292,0.498,0.393,0.894568
+62,11,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g11,Routehall-child-g11,0.6292,0.498,0.443,0.914568
+63,11,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g11,Marketroof-child-g11,0.6756,0.4854,0.449,0.85862
+63,11,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g11,Marketroof-child-g11,0.6356,0.5454,0.399,0.87462
+63,11,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g11,Marketroof-child-g11,0.6356,0.4854,0.399,0.89462
+63,11,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g11,Marketroof-child-g11,0.6356,0.4854,0.449,0.91462
+64,11,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g11,Quietledger-child-g11,0.6628,0.5142,0.437,0.85878
+64,11,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g11,Quietledger-child-g11,0.6228,0.5742,0.387,0.87478
+64,11,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g11,Quietledger-child-g11,0.6228,0.5142,0.387,0.89478
+64,11,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g11,Quietledger-child-g11,0.6228,0.5142,0.437,0.91478
+65,11,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g11,Orchardring-child-g11,0.682,0.4818,0.455,0.859332
+65,11,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g11,Orchardring-child-g11,0.642,0.5418,0.405,0.875332
+65,11,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g11,Orchardring-child-g11,0.642,0.4818,0.405,0.895332
+65,11,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g11,Orchardring-child-g11,0.642,0.4818,0.455,0.915332
+66,11,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g11,Rainloft-child-g11,0.666,0.507,0.44,0.85874
+66,11,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g11,Rainloft-child-g11,0.626,0.567,0.39,0.87474
+66,11,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g11,Rainloft-child-g11,0.626,0.507,0.39,0.89474
+66,11,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g11,Rainloft-child-g11,0.626,0.507,0.44,0.91474
+67,12,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g12,Hearthnest-child-g12,0.7144,0.5136,0.476,0.8664
+67,12,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g12,Hearthnest-child-g12,0.6744,0.5736,0.426,0.8824
+67,12,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g12,Hearthnest-child-g12,0.6744,0.5136,0.426,0.9024
+67,12,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g12,Hearthnest-child-g12,0.6744,0.5136,0.476,0.9224
+68,12,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g12,Routehall-child-g12,0.6792,0.51,0.443,0.860768
+68,12,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g12,Routehall-child-g12,0.6392,0.57,0.393,0.876768
+68,12,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g12,Routehall-child-g12,0.6392,0.51,0.393,0.896768
+68,12,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g12,Routehall-child-g12,0.6392,0.51,0.443,0.916768
+69,12,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g12,Marketroof-child-g12,0.6856,0.4974,0.449,0.86082
+69,12,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g12,Marketroof-child-g12,0.6456,0.5574,0.399,0.87682
+69,12,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g12,Marketroof-child-g12,0.6456,0.4974,0.399,0.89682
+69,12,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g12,Marketroof-child-g12,0.6456,0.4974,0.449,0.91682
+70,12,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g12,Quietledger-child-g12,0.6728,0.5262,0.437,0.86098
+70,12,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g12,Quietledger-child-g12,0.6328,0.5862,0.387,0.87698
+70,12,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g12,Quietledger-child-g12,0.6328,0.5262,0.387,0.89698
+70,12,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g12,Quietledger-child-g12,0.6328,0.5262,0.437,0.91698
+71,12,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g12,Orchardring-child-g12,0.692,0.4938,0.455,0.861532
+71,12,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g12,Orchardring-child-g12,0.652,0.5538,0.405,0.877532
+71,12,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g12,Orchardring-child-g12,0.652,0.4938,0.405,0.897532
+71,12,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g12,Orchardring-child-g12,0.652,0.4938,0.455,0.917532
+72,12,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g12,Rainloft-child-g12,0.676,0.519,0.44,0.86094
+72,12,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g12,Rainloft-child-g12,0.636,0.579,0.39,0.87694
+72,12,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g12,Rainloft-child-g12,0.636,0.519,0.39,0.89694
+72,12,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g12,Rainloft-child-g12,0.636,0.519,0.44,0.91694
+73,13,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g13,Hearthnest-child-g13,0.7244,0.5256,0.476,0.8686
+73,13,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g13,Hearthnest-child-g13,0.6844,0.5856,0.426,0.8846
+73,13,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g13,Hearthnest-child-g13,0.6844,0.5256,0.426,0.9046
+73,13,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g13,Hearthnest-child-g13,0.6844,0.5256,0.476,0.9246
+74,13,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g13,Routehall-child-g13,0.6892,0.522,0.443,0.862968
+74,13,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g13,Routehall-child-g13,0.6492,0.582,0.393,0.878968
+74,13,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g13,Routehall-child-g13,0.6492,0.522,0.393,0.898968
+74,13,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g13,Routehall-child-g13,0.6492,0.522,0.443,0.918968
+75,13,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g13,Marketroof-child-g13,0.6956,0.5094,0.449,0.86302
+75,13,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g13,Marketroof-child-g13,0.6556,0.5694,0.399,0.87902
+75,13,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g13,Marketroof-child-g13,0.6556,0.5094,0.399,0.89902
+75,13,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g13,Marketroof-child-g13,0.6556,0.5094,0.449,0.91902
+76,13,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g13,Quietledger-child-g13,0.6828,0.5382,0.437,0.86318
+76,13,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g13,Quietledger-child-g13,0.6428,0.5982,0.387,0.87918
+76,13,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g13,Quietledger-child-g13,0.6428,0.5382,0.387,0.89918
+76,13,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g13,Quietledger-child-g13,0.6428,0.5382,0.437,0.91918
+77,13,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g13,Orchardring-child-g13,0.702,0.5058,0.455,0.863732
+77,13,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g13,Orchardring-child-g13,0.662,0.5658,0.405,0.879732
+77,13,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g13,Orchardring-child-g13,0.662,0.5058,0.405,0.899732
+77,13,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g13,Orchardring-child-g13,0.662,0.5058,0.455,0.919732
+78,13,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g13,Rainloft-child-g13,0.686,0.531,0.44,0.86314
+78,13,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g13,Rainloft-child-g13,0.646,0.591,0.39,0.87914
+78,13,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g13,Rainloft-child-g13,0.646,0.531,0.39,0.89914
+78,13,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g13,Rainloft-child-g13,0.646,0.531,0.44,0.91914
+79,14,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g14,Hearthnest-child-g14,0.7344,0.5376,0.476,0.8708
+79,14,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g14,Hearthnest-child-g14,0.6944,0.5976,0.426,0.8868
+79,14,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g14,Hearthnest-child-g14,0.6944,0.5376,0.426,0.9068
+79,14,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g14,Hearthnest-child-g14,0.6944,0.5376,0.476,0.9268
+80,14,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g14,Routehall-child-g14,0.6992,0.534,0.443,0.865168
+80,14,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g14,Routehall-child-g14,0.6592,0.594,0.393,0.881168
+80,14,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g14,Routehall-child-g14,0.6592,0.534,0.393,0.901168
+80,14,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g14,Routehall-child-g14,0.6592,0.534,0.443,0.921168
+81,14,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g14,Marketroof-child-g14,0.7056,0.5214,0.449,0.86522
+81,14,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g14,Marketroof-child-g14,0.6656,0.5814,0.399,0.88122
+81,14,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g14,Marketroof-child-g14,0.6656,0.5214,0.399,0.90122
+81,14,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g14,Marketroof-child-g14,0.6656,0.5214,0.449,0.92122
+82,14,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g14,Quietledger-child-g14,0.6928,0.5502,0.437,0.86538
+82,14,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g14,Quietledger-child-g14,0.6528,0.6102,0.387,0.88138
+82,14,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g14,Quietledger-child-g14,0.6528,0.5502,0.387,0.90138
+82,14,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g14,Quietledger-child-g14,0.6528,0.5502,0.437,0.92138
+83,14,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g14,Orchardring-child-g14,0.712,0.5178,0.455,0.865932
+83,14,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g14,Orchardring-child-g14,0.672,0.5778,0.405,0.881932
+83,14,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g14,Orchardring-child-g14,0.672,0.5178,0.405,0.901932
+83,14,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g14,Orchardring-child-g14,0.672,0.5178,0.455,0.921932
+84,14,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g14,Rainloft-child-g14,0.696,0.543,0.44,0.86534
+84,14,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g14,Rainloft-child-g14,0.656,0.603,0.39,0.88134
+84,14,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g14,Rainloft-child-g14,0.656,0.543,0.39,0.90134
+84,14,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g14,Rainloft-child-g14,0.656,0.543,0.44,0.92134
+85,15,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g15,Hearthnest-child-g15,0.7444,0.5496,0.476,0.873
+85,15,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g15,Hearthnest-child-g15,0.7044,0.6096,0.426,0.889
+85,15,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g15,Hearthnest-child-g15,0.7044,0.5496,0.426,0.909
+85,15,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g15,Hearthnest-child-g15,0.7044,0.5496,0.476,0.929
+86,15,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g15,Routehall-child-g15,0.7092,0.546,0.443,0.867368
+86,15,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g15,Routehall-child-g15,0.6692,0.606,0.393,0.883368
+86,15,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g15,Routehall-child-g15,0.6692,0.546,0.393,0.903368
+86,15,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g15,Routehall-child-g15,0.6692,0.546,0.443,0.923368
+87,15,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g15,Marketroof-child-g15,0.7156,0.5334,0.449,0.86742
+87,15,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g15,Marketroof-child-g15,0.6756,0.5934,0.399,0.88342
+87,15,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g15,Marketroof-child-g15,0.6756,0.5334,0.399,0.90342
+87,15,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g15,Marketroof-child-g15,0.6756,0.5334,0.449,0.92342
+88,15,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g15,Quietledger-child-g15,0.7028,0.5622,0.437,0.86758
+88,15,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g15,Quietledger-child-g15,0.6628,0.6222,0.387,0.88358
+88,15,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g15,Quietledger-child-g15,0.6628,0.5622,0.387,0.90358
+88,15,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g15,Quietledger-child-g15,0.6628,0.5622,0.437,0.92358
+89,15,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g15,Orchardring-child-g15,0.722,0.5298,0.455,0.868132
+89,15,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g15,Orchardring-child-g15,0.682,0.5898,0.405,0.884132
+89,15,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g15,Orchardring-child-g15,0.682,0.5298,0.405,0.904132
+89,15,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g15,Orchardring-child-g15,0.682,0.5298,0.455,0.924132
+90,15,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g15,Rainloft-child-g15,0.706,0.555,0.44,0.86754
+90,15,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g15,Rainloft-child-g15,0.666,0.615,0.39,0.88354
+90,15,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g15,Rainloft-child-g15,0.666,0.555,0.39,0.90354
+90,15,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g15,Rainloft-child-g15,0.666,0.555,0.44,0.92354
+91,16,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g16,Hearthnest-child-g16,0.7544,0.5616,0.476,0.8752
+91,16,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g16,Hearthnest-child-g16,0.7144,0.6216,0.426,0.8912
+91,16,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g16,Hearthnest-child-g16,0.7144,0.5616,0.426,0.9112
+91,16,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g16,Hearthnest-child-g16,0.7144,0.5616,0.476,0.9312
+92,16,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g16,Routehall-child-g16,0.7192,0.558,0.443,0.869568
+92,16,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g16,Routehall-child-g16,0.6792,0.618,0.393,0.885568
+92,16,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g16,Routehall-child-g16,0.6792,0.558,0.393,0.905568
+92,16,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g16,Routehall-child-g16,0.6792,0.558,0.443,0.925568
+93,16,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g16,Marketroof-child-g16,0.7256,0.5454,0.449,0.86962
+93,16,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g16,Marketroof-child-g16,0.6856,0.6054,0.399,0.88562
+93,16,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g16,Marketroof-child-g16,0.6856,0.5454,0.399,0.90562
+93,16,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g16,Marketroof-child-g16,0.6856,0.5454,0.449,0.92562
+94,16,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g16,Quietledger-child-g16,0.7128,0.5742,0.437,0.86978
+94,16,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g16,Quietledger-child-g16,0.6728,0.6342,0.387,0.88578
+94,16,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g16,Quietledger-child-g16,0.6728,0.5742,0.387,0.90578
+94,16,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g16,Quietledger-child-g16,0.6728,0.5742,0.437,0.92578
+95,16,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g16,Orchardring-child-g16,0.732,0.5418,0.455,0.870332
+95,16,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g16,Orchardring-child-g16,0.692,0.6018,0.405,0.886332
+95,16,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g16,Orchardring-child-g16,0.692,0.5418,0.405,0.906332
+95,16,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g16,Orchardring-child-g16,0.692,0.5418,0.455,0.926332
+96,16,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g16,Rainloft-child-g16,0.716,0.567,0.44,0.86974
+96,16,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g16,Rainloft-child-g16,0.676,0.627,0.39,0.88574
+96,16,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g16,Rainloft-child-g16,0.676,0.567,0.39,0.90574
+96,16,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g16,Rainloft-child-g16,0.676,0.567,0.44,0.92574
+97,17,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g17,Hearthnest-child-g17,0.7644,0.5736,0.476,0.87644
+97,17,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g17,Hearthnest-child-g17,0.7244,0.6336,0.426,0.89244
+97,17,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g17,Hearthnest-child-g17,0.7244,0.5736,0.426,0.91244
+97,17,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g17,Hearthnest-child-g17,0.7244,0.5736,0.476,0.93244
+98,17,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g17,Routehall-child-g17,0.7292,0.57,0.443,0.871768
+98,17,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g17,Routehall-child-g17,0.6892,0.63,0.393,0.887768
+98,17,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g17,Routehall-child-g17,0.6892,0.57,0.393,0.907768
+98,17,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g17,Routehall-child-g17,0.6892,0.57,0.443,0.927768
+99,17,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g17,Marketroof-child-g17,0.7356,0.5574,0.449,0.87182
+99,17,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g17,Marketroof-child-g17,0.6956,0.6174,0.399,0.88782
+99,17,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g17,Marketroof-child-g17,0.6956,0.5574,0.399,0.90782
+99,17,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g17,Marketroof-child-g17,0.6956,0.5574,0.449,0.92782
+100,17,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g17,Quietledger-child-g17,0.7228,0.5862,0.437,0.87198
+100,17,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g17,Quietledger-child-g17,0.6828,0.6462,0.387,0.88798
+100,17,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g17,Quietledger-child-g17,0.6828,0.5862,0.387,0.90798
+100,17,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g17,Quietledger-child-g17,0.6828,0.5862,0.437,0.92798
+101,17,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g17,Orchardring-child-g17,0.742,0.5538,0.455,0.872532
+101,17,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g17,Orchardring-child-g17,0.702,0.6138,0.405,0.888532
+101,17,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g17,Orchardring-child-g17,0.702,0.5538,0.405,0.908532
+101,17,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g17,Orchardring-child-g17,0.702,0.5538,0.455,0.928532
+102,17,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g17,Rainloft-child-g17,0.726,0.579,0.44,0.87194
+102,17,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g17,Rainloft-child-g17,0.686,0.639,0.39,0.88794
+102,17,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g17,Rainloft-child-g17,0.686,0.579,0.39,0.90794
+102,17,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g17,Rainloft-child-g17,0.686,0.579,0.44,0.92794
+103,18,Hearthnest,avatar_care,Hearthnest remembers help as welcome only when boundaries are kept.,Hearthnest-elder-g18,Hearthnest-child-g18,0.7744,0.5856,0.476,0.87744
+103,18,Hearthnest,boundary_warning,Hearthnest teaches that pressure must be answered with a pause.,Hearthnest-elder-g18,Hearthnest-child-g18,0.7344,0.6456,0.426,0.89344
+103,18,Hearthnest,ritual_origin,Hearthnest keeps the old rhythm but lets children vary it safely.,Hearthnest-elder-g18,Hearthnest-child-g18,0.7344,0.5856,0.426,0.91344
+103,18,Hearthnest,sleep_protection,Hearthnest protects sleep before work or avatar requests.,Hearthnest-elder-g18,Hearthnest-child-g18,0.7344,0.5856,0.476,0.93344
+104,18,Routehall,avatar_care,Routehall remembers help as welcome only when boundaries are kept.,Routehall-elder-g18,Routehall-child-g18,0.7392,0.582,0.443,0.87392
+104,18,Routehall,boundary_warning,Routehall teaches that pressure must be answered with a pause.,Routehall-elder-g18,Routehall-child-g18,0.6992,0.642,0.393,0.88992
+104,18,Routehall,ritual_origin,Routehall keeps the old rhythm but lets children vary it safely.,Routehall-elder-g18,Routehall-child-g18,0.6992,0.582,0.393,0.90992
+104,18,Routehall,sleep_protection,Routehall protects sleep before work or avatar requests.,Routehall-elder-g18,Routehall-child-g18,0.6992,0.582,0.443,0.92992
+105,18,Marketroof,avatar_care,Marketroof remembers help as welcome only when boundaries are kept.,Marketroof-elder-g18,Marketroof-child-g18,0.7456,0.5694,0.449,0.87402
+105,18,Marketroof,boundary_warning,Marketroof teaches that pressure must be answered with a pause.,Marketroof-elder-g18,Marketroof-child-g18,0.7056,0.6294,0.399,0.89002
+105,18,Marketroof,ritual_origin,Marketroof keeps the old rhythm but lets children vary it safely.,Marketroof-elder-g18,Marketroof-child-g18,0.7056,0.5694,0.399,0.91002
+105,18,Marketroof,sleep_protection,Marketroof protects sleep before work or avatar requests.,Marketroof-elder-g18,Marketroof-child-g18,0.7056,0.5694,0.449,0.93002
+106,18,Quietledger,avatar_care,Quietledger remembers help as welcome only when boundaries are kept.,Quietledger-elder-g18,Quietledger-child-g18,0.7328,0.5982,0.437,0.87328
+106,18,Quietledger,boundary_warning,Quietledger teaches that pressure must be answered with a pause.,Quietledger-elder-g18,Quietledger-child-g18,0.6928,0.6582,0.387,0.88928
+106,18,Quietledger,ritual_origin,Quietledger keeps the old rhythm but lets children vary it safely.,Quietledger-elder-g18,Quietledger-child-g18,0.6928,0.5982,0.387,0.90928
+106,18,Quietledger,sleep_protection,Quietledger protects sleep before work or avatar requests.,Quietledger-elder-g18,Quietledger-child-g18,0.6928,0.5982,0.437,0.92928
+107,18,Orchardring,avatar_care,Orchardring remembers help as welcome only when boundaries are kept.,Orchardring-elder-g18,Orchardring-child-g18,0.752,0.5658,0.455,0.874732
+107,18,Orchardring,boundary_warning,Orchardring teaches that pressure must be answered with a pause.,Orchardring-elder-g18,Orchardring-child-g18,0.712,0.6258,0.405,0.890732
+107,18,Orchardring,ritual_origin,Orchardring keeps the old rhythm but lets children vary it safely.,Orchardring-elder-g18,Orchardring-child-g18,0.712,0.5658,0.405,0.910732
+107,18,Orchardring,sleep_protection,Orchardring protects sleep before work or avatar requests.,Orchardring-elder-g18,Orchardring-child-g18,0.712,0.5658,0.455,0.930732
+108,18,Rainloft,avatar_care,Rainloft remembers help as welcome only when boundaries are kept.,Rainloft-elder-g18,Rainloft-child-g18,0.736,0.591,0.44,0.8736
+108,18,Rainloft,boundary_warning,Rainloft teaches that pressure must be answered with a pause.,Rainloft-elder-g18,Rainloft-child-g18,0.696,0.651,0.39,0.8896
+108,18,Rainloft,ritual_origin,Rainloft keeps the old rhythm but lets children vary it safely.,Rainloft-elder-g18,Rainloft-child-g18,0.696,0.591,0.39,0.9096
+108,18,Rainloft,sleep_protection,Rainloft protects sleep before work or avatar requests.,Rainloft-elder-g18,Rainloft-child-g18,0.696,0.591,0.44,0.9296

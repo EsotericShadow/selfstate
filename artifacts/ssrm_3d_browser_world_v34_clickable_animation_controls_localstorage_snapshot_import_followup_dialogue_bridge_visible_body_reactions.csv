@@ -1,0 +1,704 @@
+tick_id,day,route_id,agent,cause,body_reaction,reaction_visible,posture_delta,proximity_delta,sensory_cue_bound,followup_scheduled_tick,care_path_available
+0,1,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",False,guards,0.055,True,4,True
+1,1,roofward_archive,Nia,animation_step,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,6,True
+2,1,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,8,True
+3,1,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,6,True
+5,1,central_repair_ring,Pax,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,10,True
+6,1,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,10,True
+7,1,roofward_archive,Nia,animation_step,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,12,True
+8,1,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,14,True
+9,1,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,12,True
+12,2,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,17,True
+14,2,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,17,True
+15,2,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,19,True
+17,2,central_repair_ring,Juno,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,23,True
+18,2,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,23,True
+20,2,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,23,True
+21,2,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,25,True
+24,3,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,30,True
+26,3,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,30,True
+27,3,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,32,True
+29,3,central_repair_ring,Pax,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,32,True
+30,3,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,36,True
+32,3,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,36,True
+33,3,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,38,True
+36,4,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,39,True
+38,4,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",False,opens,-0.045,True,43,True
+39,4,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,45,True
+41,4,central_repair_ring,Juno,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,45,True
+42,4,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,45,True
+44,4,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,49,True
+45,4,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,51,True
+48,5,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,52,True
+50,5,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,56,True
+51,5,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,54,True
+53,5,central_repair_ring,Pax,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,58,True
+54,5,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,58,True
+56,5,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,62,True
+57,5,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,False,guards,0.055,True,60,True
+60,6,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,65,True
+62,6,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,65,True
+63,6,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,67,True
+65,6,central_repair_ring,Juno,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,71,True
+66,6,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,71,True
+68,6,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,71,True
+69,6,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,73,True
+72,7,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,78,True
+74,7,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,78,True
+75,7,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,80,True
+77,7,central_repair_ring,Pax,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,80,True
+78,7,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,84,True
+80,7,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,84,True
+81,7,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,86,True
+84,8,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,88,True
+86,8,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,92,True
+87,8,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,90,True
+89,8,riverbend_roofward,Fay,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,92,True
+90,8,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,94,True
+92,8,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,98,True
+93,8,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,96,True
+96,9,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,101,True
+98,9,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,101,True
+99,9,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,103,True
+101,9,riverbend_roofward,Ari,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,105,True
+102,9,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,107,True
+104,9,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,107,True
+105,9,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,109,True
+108,10,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,114,True
+110,10,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,114,True
+111,10,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,116,True
+113,10,riverbend_roofward,Fay,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,118,True
+114,10,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,False,guards,0.055,True,120,True
+116,10,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,120,True
+117,10,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,122,True
+120,11,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,123,True
+122,11,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,127,True
+123,11,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,129,True
+125,11,riverbend_roofward,Ari,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,131,True
+126,11,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,129,True
+128,11,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,133,True
+129,11,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,135,True
+132,12,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,136,True
+134,12,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,140,True
+135,12,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,138,True
+137,12,riverbend_roofward,Fay,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,140,True
+138,12,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,142,True
+140,12,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,146,True
+141,12,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,144,True
+144,13,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,149,True
+146,13,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,149,True
+147,13,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,151,True
+149,13,riverbend_roofward,Ari,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,153,True
+150,13,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,155,True
+152,13,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,False,opens,-0.045,True,155,True
+153,13,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,157,True
+156,14,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,162,True
+158,14,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,162,True
+159,14,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,164,True
+160,14,central_repair_ring,Pax,animation_step,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,166,True
+161,14,riverbend_roofward,Fay,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,166,True
+162,14,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,168,True
+164,14,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,168,True
+165,14,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,170,True
+166,14,central_repair_ring,Pax,animation_step,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,172,True
+168,15,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,171,True
+170,15,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,175,True
+171,15,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",False,guards,0.055,True,177,True
+173,15,riverbend_roofward,Ari,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,179,True
+174,15,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,177,True
+176,15,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,181,True
+177,15,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,183,True
+180,16,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,185,True
+181,16,signal_orchard,Milo,animation_step,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,187,True
+182,16,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,185,True
+183,16,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,187,True
+185,16,roofward_archive,Fay,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,189,True
+186,16,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,191,True
+187,16,signal_orchard,Milo,animation_step,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,193,True
+188,16,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,191,True
+189,16,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,193,True
+192,17,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,198,True
+194,17,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,198,True
+195,17,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,200,True
+197,17,roofward_archive,Nia,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,202,True
+198,17,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,204,True
+200,17,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,204,True
+201,17,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,206,True
+204,18,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,207,True
+206,18,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,211,True
+207,18,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,213,True
+209,18,roofward_archive,Fay,rollback_direct,Fay lowers her shoulders and uncurls her fingers,False,guards,0.055,True,215,True
+210,18,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,213,True
+212,18,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,217,True
+213,18,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,219,True
+215,18,roofward_archive,Fay,animation_step,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,221,True
+216,19,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,220,True
+218,19,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,224,True
+219,19,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,222,True
+220,19,riverbend_roofward,Fay,animation_step,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,226,True
+221,19,roofward_archive,Nia,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,224,True
+222,19,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,226,True
+224,19,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,230,True
+225,19,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,228,True
+226,19,riverbend_roofward,Fay,animation_step,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,232,True
+228,20,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",False,opens,-0.045,True,233,True
+230,20,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,233,True
+231,20,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,235,True
+233,20,roofward_archive,Fay,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,237,True
+234,20,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,239,True
+236,20,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,239,True
+237,20,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,241,True
+240,21,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,246,True
+242,21,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,246,True
+243,21,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,248,True
+245,21,roofward_archive,Nia,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,250,True
+246,21,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,252,True
+247,21,signal_orchard,Ivo,rollback_direct,Milo lifts the lantern and scans the path twice,False,guards,0.055,True,250,True
+248,21,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,252,True
+249,21,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,254,True
+252,22,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,255,True
+254,22,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,259,True
+255,22,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,261,True
+257,22,roofward_archive,Fay,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,263,True
+258,22,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,261,True
+260,22,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,265,True
+261,22,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,267,True
+264,23,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,268,True
+266,23,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",False,opens,-0.045,True,272,True
+267,23,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,270,True
+269,23,roofward_archive,Nia,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,272,True
+270,23,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,274,True
+272,23,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,278,True
+273,23,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,276,True
+276,24,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,282,True
+278,24,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,282,True
+279,24,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,282,True
+281,24,archive_signal,Milo,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,286,True
+282,24,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,288,True
+284,24,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,288,True
+285,24,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",False,guards,0.055,True,288,True
+288,25,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,291,True
+290,25,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,295,True
+291,25,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,295,True
+293,25,archive_signal,Nia,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,299,True
+294,25,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,297,True
+296,25,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,301,True
+297,25,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,301,True
+300,26,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,304,True
+302,26,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,308,True
+303,26,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,308,True
+305,26,archive_signal,Milo,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,308,True
+306,26,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,310,True
+308,26,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,314,True
+309,26,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,314,True
+312,27,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,317,True
+314,27,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,317,True
+315,27,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,321,True
+317,27,archive_signal,Nia,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,321,True
+318,27,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,323,True
+320,27,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,323,True
+321,27,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,327,True
+324,28,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,330,True
+326,28,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,330,True
+327,28,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,330,True
+329,28,archive_signal,Milo,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,334,True
+330,28,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,336,True
+332,28,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,336,True
+333,28,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,336,True
+336,29,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,339,True
+338,29,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,343,True
+339,29,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,343,True
+341,29,archive_signal,Nia,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,347,True
+342,29,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,False,guards,0.055,True,345,True
+344,29,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,349,True
+345,29,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,349,True
+348,30,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,352,True
+350,30,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,356,True
+351,30,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,356,True
+353,30,archive_signal,Milo,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,356,True
+354,30,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,358,True
+356,30,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,362,True
+357,30,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,362,True
+360,31,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,365,True
+362,31,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,365,True
+363,31,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,369,True
+365,31,archive_signal,Nia,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,369,True
+366,31,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,371,True
+368,31,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,371,True
+369,31,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,375,True
+372,32,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,375,True
+374,32,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,377,True
+375,32,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,379,True
+377,32,signal_orchard,Milo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,383,True
+378,32,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,381,True
+380,32,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",False,opens,-0.045,True,383,True
+381,32,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,385,True
+384,33,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,388,True
+386,33,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,390,True
+387,33,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,392,True
+389,33,signal_orchard,Ivo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,392,True
+390,33,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,394,True
+392,33,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,396,True
+393,33,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,398,True
+395,33,signal_orchard,Ivo,animation_step,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,398,True
+396,34,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,401,True
+398,34,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,403,True
+399,34,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,False,guards,0.055,True,405,True
+400,34,archive_signal,Nia,animation_step,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,403,True
+401,34,signal_orchard,Milo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,405,True
+402,34,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,407,True
+404,34,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,409,True
+405,34,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,411,True
+406,34,archive_signal,Nia,animation_step,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,409,True
+408,35,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,414,True
+410,35,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,416,True
+411,35,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,414,True
+413,35,signal_orchard,Ivo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,418,True
+414,35,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,420,True
+416,35,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,422,True
+417,35,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,420,True
+420,36,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,423,True
+422,36,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,425,True
+423,36,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,427,True
+425,36,signal_orchard,Milo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,431,True
+426,36,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,429,True
+428,36,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,431,True
+429,36,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,433,True
+432,37,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,436,True
+434,37,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,438,True
+435,37,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,440,True
+437,37,signal_orchard,Ivo,rollback_direct,Milo lifts the lantern and scans the path twice,False,guards,0.055,True,440,True
+438,37,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,442,True
+440,37,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,444,True
+441,37,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,446,True
+444,38,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,449,True
+446,38,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,451,True
+447,38,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,453,True
+449,38,signal_orchard,Milo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,453,True
+450,38,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,455,True
+452,38,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,457,True
+453,38,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,459,True
+456,39,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",False,opens,-0.045,True,462,True
+458,39,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,464,True
+459,39,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,462,True
+461,39,signal_orchard,Ivo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,466,True
+462,39,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,468,True
+464,39,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,470,True
+465,39,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,468,True
+468,40,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,472,True
+470,40,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,474,True
+471,40,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,476,True
+473,40,orchard_riverbend,Ari,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,476,True
+474,40,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,478,True
+476,40,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,480,True
+477,40,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,482,True
+480,41,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,485,True
+482,41,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,487,True
+483,41,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,489,True
+485,41,orchard_riverbend,Ivo,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,489,True
+486,41,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,491,True
+488,41,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,493,True
+489,41,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,495,True
+492,42,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,498,True
+493,42,riverbend_roofward,Fay,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,498,True
+494,42,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,False,opens,-0.045,True,500,True
+495,42,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,498,True
+497,42,orchard_riverbend,Ari,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,502,True
+498,42,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,504,True
+500,42,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,506,True
+501,42,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,504,True
+504,43,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,507,True
+506,43,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,509,True
+507,43,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,511,True
+509,43,orchard_riverbend,Ivo,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,515,True
+510,43,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,513,True
+512,43,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,515,True
+513,43,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",False,guards,0.055,True,517,True
+516,44,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,520,True
+518,44,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,522,True
+519,44,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,524,True
+521,44,orchard_riverbend,Ari,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,524,True
+522,44,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,526,True
+524,44,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,528,True
+525,44,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,530,True
+528,45,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,533,True
+530,45,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,535,True
+531,45,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,537,True
+533,45,orchard_riverbend,Ivo,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,537,True
+534,45,central_repair_ring,Juno,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,539,True
+536,45,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,541,True
+537,45,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,543,True
+540,46,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,546,True
+542,46,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,548,True
+543,46,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,546,True
+545,46,orchard_riverbend,Ari,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,550,True
+546,46,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,552,True
+548,46,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,554,True
+549,46,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,552,True
+552,47,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,555,True
+554,47,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,557,True
+555,47,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,559,True
+557,47,orchard_riverbend,Ivo,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,563,True
+558,47,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,561,True
+560,47,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,563,True
+561,47,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,565,True
+564,48,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,567,True
+566,48,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,571,True
+567,48,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,573,True
+569,48,central_repair_ring,Juno,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,573,True
+570,48,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",False,guards,0.055,True,573,True
+572,48,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,577,True
+573,48,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,579,True
+575,48,central_repair_ring,Juno,animation_step,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,579,True
+576,49,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,580,True
+578,49,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,584,True
+579,49,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,582,True
+580,49,orchard_riverbend,Ari,animation_step,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,584,True
+581,49,central_repair_ring,Pax,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,586,True
+582,49,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,586,True
+584,49,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,590,True
+585,49,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,588,True
+586,49,orchard_riverbend,Ari,animation_step,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,590,True
+588,50,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,593,True
+590,50,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,593,True
+591,50,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,595,True
+593,50,central_repair_ring,Juno,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,599,True
+594,50,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,599,True
+596,50,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,599,True
+597,50,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,601,True
+600,51,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,606,True
+602,51,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,606,True
+603,51,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,608,True
+605,51,central_repair_ring,Pax,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,608,True
+606,51,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,612,True
+608,51,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",False,opens,-0.045,True,612,True
+609,51,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,614,True
+612,52,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,615,True
+613,52,roofward_archive,Fay,animation_step,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,617,True
+614,52,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,619,True
+615,52,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,621,True
+617,52,central_repair_ring,Juno,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,621,True
+618,52,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,621,True
+619,52,roofward_archive,Fay,animation_step,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,623,True
+620,52,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,625,True
+621,52,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,627,True
+624,53,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,628,True
+626,53,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,632,True
+627,53,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,False,guards,0.055,True,630,True
+629,53,central_repair_ring,Pax,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,634,True
+630,53,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,634,True
+632,53,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,638,True
+633,53,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,636,True
+636,54,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,641,True
+638,54,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,641,True
+639,54,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,643,True
+641,54,central_repair_ring,Juno,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,647,True
+642,54,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,647,True
+644,54,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,647,True
+645,54,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,649,True
+648,55,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,654,True
+650,55,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,654,True
+651,55,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,656,True
+653,55,central_repair_ring,Pax,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,656,True
+654,55,riverbend_roofward,Fay,animation_play,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,660,True
+656,55,archive_signal,Milo,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,660,True
+657,55,signal_orchard,Ivo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,662,True
+660,56,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,664,True
+662,56,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,668,True
+663,56,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,666,True
+665,56,riverbend_roofward,Fay,rollback_direct,"Ari shakes water from sleeves, then leans closer",False,guards,0.055,True,668,True
+666,56,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,670,True
+668,56,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,674,True
+669,56,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,672,True
+672,57,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,677,True
+674,57,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,677,True
+675,57,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,679,True
+677,57,riverbend_roofward,Ari,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,681,True
+678,57,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,683,True
+680,57,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,683,True
+681,57,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,685,True
+684,58,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,False,opens,-0.045,True,690,True
+686,58,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,690,True
+687,58,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,692,True
+689,58,riverbend_roofward,Fay,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,694,True
+690,58,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,696,True
+692,58,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,696,True
+693,58,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,698,True
+696,59,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,699,True
+698,59,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,703,True
+699,59,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,705,True
+701,59,riverbend_roofward,Ari,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,707,True
+702,59,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,705,True
+704,59,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,709,True
+705,59,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,711,True
+708,60,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,712,True
+710,60,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,716,True
+711,60,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,714,True
+713,60,riverbend_roofward,Fay,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,716,True
+714,60,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,718,True
+716,60,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,722,True
+717,60,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,720,True
+720,61,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,725,True
+722,61,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,False,opens,-0.045,True,725,True
+723,61,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,727,True
+725,61,riverbend_roofward,Ari,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,729,True
+726,61,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,731,True
+728,61,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,731,True
+729,61,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,733,True
+732,62,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,738,True
+734,62,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,738,True
+735,62,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,740,True
+737,62,riverbend_roofward,Fay,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,742,True
+738,62,roofward_archive,Nia,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,744,True
+739,62,archive_signal,Milo,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,742,True
+740,62,signal_orchard,Ivo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,744,True
+741,62,orchard_riverbend,Ari,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",False,guards,0.055,True,746,True
+744,63,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,747,True
+746,63,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,751,True
+747,63,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,753,True
+749,63,riverbend_roofward,Ari,rollback_direct,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,755,True
+750,63,roofward_archive,Fay,animation_play,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,753,True
+752,63,signal_orchard,Milo,merge_detour,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,757,True
+753,63,orchard_riverbend,Ivo,animation_pause,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,759,True
+756,64,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,761,True
+758,64,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,761,True
+759,64,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,763,True
+761,64,roofward_archive,Fay,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,765,True
+762,64,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,767,True
+764,64,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,767,True
+765,64,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,769,True
+768,65,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,774,True
+770,65,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,774,True
+771,65,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,776,True
+773,65,roofward_archive,Nia,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,778,True
+774,65,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,780,True
+776,65,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,780,True
+777,65,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,782,True
+780,66,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,783,True
+782,66,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,787,True
+783,66,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,789,True
+785,66,roofward_archive,Fay,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,791,True
+786,66,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,789,True
+788,66,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,793,True
+789,66,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,795,True
+792,67,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,796,True
+793,67,signal_orchard,Ivo,animation_step,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,798,True
+794,67,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,800,True
+795,67,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,798,True
+797,67,roofward_archive,Nia,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,800,True
+798,67,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",False,guards,0.055,True,802,True
+799,67,signal_orchard,Ivo,animation_step,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,804,True
+800,67,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,806,True
+801,67,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,804,True
+804,68,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,809,True
+806,68,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,809,True
+807,68,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,811,True
+809,68,roofward_archive,Fay,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,813,True
+810,68,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,815,True
+812,68,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,815,True
+813,68,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,817,True
+816,69,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,822,True
+818,69,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,822,True
+819,69,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,824,True
+821,69,roofward_archive,Nia,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,826,True
+822,69,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,828,True
+824,69,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,828,True
+825,69,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,830,True
+827,69,roofward_archive,Nia,animation_step,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,832,True
+828,70,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,831,True
+830,70,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,835,True
+831,70,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,837,True
+832,70,riverbend_roofward,Ari,animation_step,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,837,True
+833,70,roofward_archive,Fay,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,839,True
+834,70,archive_signal,Nia,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,837,True
+836,70,orchard_riverbend,Ivo,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",False,opens,-0.045,True,841,True
+837,70,central_repair_ring,Juno,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,843,True
+838,70,riverbend_roofward,Ari,animation_step,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,843,True
+840,71,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,844,True
+842,71,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,848,True
+843,71,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,846,True
+845,71,roofward_archive,Nia,rollback_direct,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,848,True
+846,71,archive_signal,Milo,animation_play,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,850,True
+848,71,orchard_riverbend,Ari,merge_detour,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,854,True
+849,71,central_repair_ring,Pax,animation_pause,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,852,True
+852,72,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,858,True
+854,72,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,858,True
+855,72,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",False,guards,0.055,True,858,True
+857,72,archive_signal,Milo,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,862,True
+858,72,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,864,True
+860,72,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,864,True
+861,72,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,864,True
+864,73,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,867,True
+866,73,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,871,True
+867,73,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,871,True
+869,73,archive_signal,Nia,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,875,True
+870,73,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,873,True
+872,73,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,877,True
+873,73,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,877,True
+876,74,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,880,True
+878,74,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,884,True
+879,74,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,884,True
+881,74,archive_signal,Milo,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,884,True
+882,74,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,886,True
+884,74,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,890,True
+885,74,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,890,True
+888,75,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,893,True
+890,75,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,893,True
+891,75,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,897,True
+893,75,archive_signal,Nia,rollback_direct,"Nia blinks twice, then points toward the kiosk",False,guards,0.055,True,897,True
+894,75,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,899,True
+896,75,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,899,True
+897,75,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,903,True
+900,76,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,906,True
+902,76,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,906,True
+903,76,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,906,True
+905,76,archive_signal,Milo,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,910,True
+906,76,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,912,True
+908,76,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,912,True
+909,76,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,912,True
+912,77,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,False,opens,-0.045,True,915,True
+914,77,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,919,True
+915,77,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,919,True
+917,77,archive_signal,Nia,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,923,True
+918,77,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,921,True
+920,77,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,925,True
+921,77,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,925,True
+924,78,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,928,True
+926,78,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,932,True
+927,78,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,932,True
+929,78,archive_signal,Milo,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,932,True
+930,78,signal_orchard,Ivo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,934,True
+932,78,central_repair_ring,Pax,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,938,True
+933,78,riverbend_roofward,Fay,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,938,True
+936,79,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,941,True
+938,79,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,941,True
+939,79,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,945,True
+941,79,archive_signal,Nia,rollback_direct,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,945,True
+942,79,signal_orchard,Milo,animation_play,Milo lifts the lantern and scans the path twice,True,opens,-0.045,True,947,True
+944,79,central_repair_ring,Juno,merge_detour,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,947,True
+945,79,riverbend_roofward,Ari,animation_pause,"Ari shakes water from sleeves, then leans closer",True,guards,0.055,True,951,True
+948,80,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,951,True
+950,80,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",False,opens,-0.045,True,953,True
+951,80,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,955,True
+953,80,signal_orchard,Milo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,959,True
+954,80,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,957,True
+956,80,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,959,True
+957,80,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,961,True
+960,81,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,964,True
+962,81,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,966,True
+963,81,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,968,True
+965,81,signal_orchard,Ivo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,968,True
+966,81,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,970,True
+968,81,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,972,True
+969,81,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,False,guards,0.055,True,974,True
+972,82,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,977,True
+973,82,central_repair_ring,Juno,animation_step,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,979,True
+974,82,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,979,True
+975,82,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,981,True
+977,82,signal_orchard,Milo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,981,True
+978,82,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,983,True
+979,82,central_repair_ring,Juno,animation_step,"Juno covers the wire, exhales, then nods once",True,opens,-0.045,True,985,True
+980,82,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,985,True
+981,82,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,987,True
+984,83,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,990,True
+985,83,central_repair_ring,Pax,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,988,True
+986,83,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,992,True
+987,83,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,990,True
+989,83,signal_orchard,Ivo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,994,True
+990,83,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,996,True
+992,83,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,998,True
+993,83,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,996,True
+996,84,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,999,True
+998,84,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,1001,True
+999,84,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,1003,True
+1001,84,signal_orchard,Milo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,1007,True
+1002,84,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,1005,True
+1004,84,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,1007,True
+1005,84,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,1009,True
+1007,84,signal_orchard,Milo,animation_step,Milo lifts the lantern and scans the path twice,False,guards,0.055,True,1013,True
+1008,85,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,1012,True
+1010,85,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,1014,True
+1011,85,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,1016,True
+1012,85,archive_signal,Milo,animation_step,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1018,True
+1013,85,signal_orchard,Ivo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,1016,True
+1014,85,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,1018,True
+1016,85,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,1020,True
+1017,85,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,1022,True
+1018,85,archive_signal,Milo,animation_step,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1024,True
+1020,86,orchard_riverbend,Ivo,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,opens,-0.045,True,1025,True
+1022,86,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,1027,True
+1023,86,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,1029,True
+1025,86,signal_orchard,Milo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,1029,True
+1026,86,orchard_riverbend,Ivo,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",False,guards,0.055,True,1031,True
+1028,86,riverbend_roofward,Ari,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,1033,True
+1029,86,roofward_archive,Fay,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,1035,True
+1032,87,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,1038,True
+1034,87,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,1040,True
+1035,87,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,1038,True
+1037,87,signal_orchard,Ivo,rollback_direct,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,1042,True
+1038,87,orchard_riverbend,Ari,animation_play,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,1044,True
+1040,87,riverbend_roofward,Fay,merge_detour,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,1046,True
+1041,87,roofward_archive,Nia,animation_pause,Fay lowers her shoulders and uncurls her fingers,True,guards,0.055,True,1044,True
+1044,88,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1048,True
+1046,88,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1050,True
+1047,88,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1052,True
+1049,88,orchard_riverbend,Ari,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,1052,True
+1050,88,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1054,True
+1052,88,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1056,True
+1053,88,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1058,True
+1056,89,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1061,True
+1058,89,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1063,True
+1059,89,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1065,True
+1061,89,orchard_riverbend,Ivo,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,1065,True
+1062,89,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1067,True
+1064,89,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,False,opens,-0.045,True,1069,True
+1065,89,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1071,True
+1068,90,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1074,True
+1070,90,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1076,True
+1071,90,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1074,True
+1073,90,orchard_riverbend,Ari,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,1078,True
+1074,90,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1080,True
+1076,90,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1082,True
+1077,90,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1080,True
+1080,91,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1083,True
+1082,91,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1085,True
+1083,91,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",False,guards,0.055,True,1087,True
+1085,91,orchard_riverbend,Ivo,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,1091,True
+1086,91,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1089,True
+1088,91,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1091,True
+1089,91,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1093,True
+1092,92,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1096,True
+1094,92,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1098,True
+1095,92,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1100,True
+1097,92,orchard_riverbend,Ari,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,1100,True
+1098,92,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1102,True
+1100,92,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1104,True
+1101,92,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1106,True
+1104,93,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1109,True
+1106,93,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1111,True
+1107,93,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1113,True
+1109,93,orchard_riverbend,Ivo,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,1113,True
+1110,93,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1115,True
+1112,93,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1117,True
+1113,93,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1119,True
+1116,94,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1122,True
+1118,94,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1124,True
+1119,94,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1122,True
+1121,94,orchard_riverbend,Ari,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",False,guards,0.055,True,1126,True
+1122,94,central_repair_ring,Pax,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1128,True
+1124,94,roofward_archive,Nia,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1130,True
+1125,94,archive_signal,Milo,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1128,True
+1128,95,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1131,True
+1130,95,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1133,True
+1131,95,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1135,True
+1133,95,orchard_riverbend,Ivo,rollback_direct,"Ivo pats the satchel, then moves nearer to the dry planks",True,guards,0.055,True,1139,True
+1134,95,central_repair_ring,Juno,animation_play,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1137,True
+1136,95,roofward_archive,Fay,merge_detour,Fay lowers her shoulders and uncurls her fingers,True,opens,-0.045,True,1139,True
+1137,95,archive_signal,Nia,animation_pause,"Nia blinks twice, then points toward the kiosk",True,guards,0.055,True,1141,True
+1140,96,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",False,opens,-0.045,True,1143,True
+1142,96,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,1147,True
+1143,96,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,1149,True
+1145,96,central_repair_ring,Juno,rollback_direct,"Juno covers the wire, exhales, then nods once",True,guards,0.055,True,1149,True
+1146,96,riverbend_roofward,Ari,animation_play,"Ari shakes water from sleeves, then leans closer",True,opens,-0.045,True,1149,True
+1148,96,archive_signal,Nia,merge_detour,"Nia blinks twice, then points toward the kiosk",True,opens,-0.045,True,1153,True
+1149,96,signal_orchard,Milo,animation_pause,Milo lifts the lantern and scans the path twice,True,guards,0.055,True,1155,True

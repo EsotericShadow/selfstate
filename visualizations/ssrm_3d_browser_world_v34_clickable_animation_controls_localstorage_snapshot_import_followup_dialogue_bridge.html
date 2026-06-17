@@ -1,0 +1,1708 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report 274 SSRM-3D Browser World v34 Clickable Controls</title>
+  <style>
+    :root {
+      --ink: #1d2118;
+      --paper: #f4ecd5;
+      --moss: #4f6f45;
+      --clay: #b6683f;
+      --water: #2f6f7d;
+      --line: rgba(29, 33, 24, 0.22);
+    }
+    body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: var(--ink); background: radial-gradient(circle at 20% 0%, #fff6cf 0 18%, transparent 36%), linear-gradient(135deg, #e7d8ac, #b8c8a3 48%, #7aa3a3); }
+    header { padding: 32px; border-bottom: 1px solid var(--line); background: rgba(244, 236, 213, 0.82); }
+    h1 { margin: 0 0 10px; font-size: clamp(2rem, 5vw, 4.5rem); letter-spacing: -0.05em; }
+    main { padding: 22px; display: grid; gap: 18px; }
+    .boundary { padding: 14px 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.45); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+    .route-card, .panel { border: 1px solid var(--line); border-radius: 18px; padding: 16px; background: rgba(244, 236, 213, 0.78); box-shadow: 0 16px 44px rgba(31, 44, 28, 0.13); }
+    .buttons { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    button { border: 1px solid var(--ink); border-radius: 999px; padding: 8px 12px; background: #f8f0d8; cursor: pointer; font: inherit; }
+    button:hover { background: var(--clay); color: white; }
+    .badge, .body-reaction, .followup { margin-top: 8px; padding: 8px; border-left: 4px solid var(--moss); background: rgba(255,255,255,0.38); }
+    textarea, pre { width: 100%; min-height: 130px; box-sizing: border-box; border: 1px solid var(--line); border-radius: 12px; padding: 12px; background: rgba(255,255,255,0.62); color: var(--ink); }
+    .cue { color: #40513a; font-style: italic; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Browser World v34: Clickable Controls</h1>
+    <p>Verdict: <strong>pass</strong> · readiness 0.937142 · weakest followup_not_oversaturated 0.836000</p>
+  </header>
+  <main>
+    <section class="boundary">Boundary: browser-local deterministic scaffold; no subjective consciousness claim, no real consent claim, no moral patienthood claim, no LLM call.</section>
+    <section class="panel">
+      <h2>Snapshot paste/import UI</h2>
+      <div class="buttons">
+        <button id="snapshot-export" onclick="exportSnapshot()">Export snapshot</button>
+        <button id="snapshot-import" onclick="importSnapshot()">Import pasted snapshot</button>
+        <button onclick="localStorage.removeItem(LS_KEY); render()">Clear local state</button>
+      </div>
+      <textarea id="snapshot-paste-box" spellcheck="false" placeholder="Paste exported snapshot JSON here"></textarea>
+      <pre id="state-json">loading</pre>
+    </section>
+    <section class="grid">
+      
+      <article class="route-card" data-route="riverbend_roofward">
+        <h2>riverbend_roofward</h2>
+        <p><strong>Agents:</strong> Ari and Fay</p>
+        <p><strong>Object:</strong> cedar repair kit</p>
+        <p class="cue">river slap under planks · cedar resin and rain · cold spray</p>
+        <div class="buttons">
+          <button id="anim-riverbend_roofward-play" data-action="play" onclick="clickAnimation('riverbend_roofward', 'playing')">Play body animation</button>
+          <button id="anim-riverbend_roofward-pause" data-action="pause" onclick="clickAnimation('riverbend_roofward', 'paused')">Pause</button>
+          <button id="anim-riverbend_roofward-step" data-action="step" onclick="clickAnimation('riverbend_roofward', 'stepped')">Step one frame</button>
+          <button id="merge-riverbend_roofward" onclick="mergeRoute('riverbend_roofward')">Merge detour</button>
+          <button id="rollback-riverbend_roofward" onclick="rollbackRoute('riverbend_roofward')">Rollback direct</button>
+        </div>
+        <div id="badge-riverbend_roofward" class="badge">waiting</div>
+        <div id="body-reaction-riverbend_roofward" class="body-reaction">body reaction: pending</div>
+        <div id="followup-riverbend_roofward" class="followup">follow-up: pending</div>
+      </article>
+      <article class="route-card" data-route="roofward_archive">
+        <h2>roofward_archive</h2>
+        <p><strong>Agents:</strong> Fay and Nia</p>
+        <p><strong>Object:</strong> herb ledger</p>
+        <p class="cue">hinges ticking · dry paper and thyme · warm draft</p>
+        <div class="buttons">
+          <button id="anim-roofward_archive-play" data-action="play" onclick="clickAnimation('roofward_archive', 'playing')">Play body animation</button>
+          <button id="anim-roofward_archive-pause" data-action="pause" onclick="clickAnimation('roofward_archive', 'paused')">Pause</button>
+          <button id="anim-roofward_archive-step" data-action="step" onclick="clickAnimation('roofward_archive', 'stepped')">Step one frame</button>
+          <button id="merge-roofward_archive" onclick="mergeRoute('roofward_archive')">Merge detour</button>
+          <button id="rollback-roofward_archive" onclick="rollbackRoute('roofward_archive')">Rollback direct</button>
+        </div>
+        <div id="badge-roofward_archive" class="badge">waiting</div>
+        <div id="body-reaction-roofward_archive" class="body-reaction">body reaction: pending</div>
+        <div id="followup-roofward_archive" class="followup">follow-up: pending</div>
+      </article>
+      <article class="route-card" data-route="archive_signal">
+        <h2>archive_signal</h2>
+        <p><strong>Agents:</strong> Nia and Milo</p>
+        <p><strong>Object:</strong> signal spool</p>
+        <p class="cue">soft page flutter · ink, chalk, and dry linen · cool stone</p>
+        <div class="buttons">
+          <button id="anim-archive_signal-play" data-action="play" onclick="clickAnimation('archive_signal', 'playing')">Play body animation</button>
+          <button id="anim-archive_signal-pause" data-action="pause" onclick="clickAnimation('archive_signal', 'paused')">Pause</button>
+          <button id="anim-archive_signal-step" data-action="step" onclick="clickAnimation('archive_signal', 'stepped')">Step one frame</button>
+          <button id="merge-archive_signal" onclick="mergeRoute('archive_signal')">Merge detour</button>
+          <button id="rollback-archive_signal" onclick="rollbackRoute('archive_signal')">Rollback direct</button>
+        </div>
+        <div id="badge-archive_signal" class="badge">waiting</div>
+        <div id="body-reaction-archive_signal" class="body-reaction">body reaction: pending</div>
+        <div id="followup-archive_signal" class="followup">follow-up: pending</div>
+      </article>
+      <article class="route-card" data-route="signal_orchard">
+        <h2>signal_orchard</h2>
+        <p><strong>Agents:</strong> Milo and Ivo</p>
+        <p><strong>Object:</strong> oil lantern</p>
+        <p class="cue">crickets under static · lamp oil and wet grass · cool dusk</p>
+        <div class="buttons">
+          <button id="anim-signal_orchard-play" data-action="play" onclick="clickAnimation('signal_orchard', 'playing')">Play body animation</button>
+          <button id="anim-signal_orchard-pause" data-action="pause" onclick="clickAnimation('signal_orchard', 'paused')">Pause</button>
+          <button id="anim-signal_orchard-step" data-action="step" onclick="clickAnimation('signal_orchard', 'stepped')">Step one frame</button>
+          <button id="merge-signal_orchard" onclick="mergeRoute('signal_orchard')">Merge detour</button>
+          <button id="rollback-signal_orchard" onclick="rollbackRoute('signal_orchard')">Rollback direct</button>
+        </div>
+        <div id="badge-signal_orchard" class="badge">waiting</div>
+        <div id="body-reaction-signal_orchard" class="body-reaction">body reaction: pending</div>
+        <div id="followup-signal_orchard" class="followup">follow-up: pending</div>
+      </article>
+      <article class="route-card" data-route="orchard_riverbend">
+        <h2>orchard_riverbend</h2>
+        <p><strong>Agents:</strong> Ivo and Ari</p>
+        <p><strong>Object:</strong> seed satchel</p>
+        <p class="cue">cart wheels creaking · apple skin and wet soil · damp air</p>
+        <div class="buttons">
+          <button id="anim-orchard_riverbend-play" data-action="play" onclick="clickAnimation('orchard_riverbend', 'playing')">Play body animation</button>
+          <button id="anim-orchard_riverbend-pause" data-action="pause" onclick="clickAnimation('orchard_riverbend', 'paused')">Pause</button>
+          <button id="anim-orchard_riverbend-step" data-action="step" onclick="clickAnimation('orchard_riverbend', 'stepped')">Step one frame</button>
+          <button id="merge-orchard_riverbend" onclick="mergeRoute('orchard_riverbend')">Merge detour</button>
+          <button id="rollback-orchard_riverbend" onclick="rollbackRoute('orchard_riverbend')">Rollback direct</button>
+        </div>
+        <div id="badge-orchard_riverbend" class="badge">waiting</div>
+        <div id="body-reaction-orchard_riverbend" class="body-reaction">body reaction: pending</div>
+        <div id="followup-orchard_riverbend" class="followup">follow-up: pending</div>
+      </article>
+      <article class="route-card" data-route="central_repair_ring">
+        <h2>central_repair_ring</h2>
+        <p><strong>Agents:</strong> Juno and Pax</p>
+        <p><strong>Object:</strong> copper wire</p>
+        <p class="cue">bell hum through walls · hot copper and dust · warm metal</p>
+        <div class="buttons">
+          <button id="anim-central_repair_ring-play" data-action="play" onclick="clickAnimation('central_repair_ring', 'playing')">Play body animation</button>
+          <button id="anim-central_repair_ring-pause" data-action="pause" onclick="clickAnimation('central_repair_ring', 'paused')">Pause</button>
+          <button id="anim-central_repair_ring-step" data-action="step" onclick="clickAnimation('central_repair_ring', 'stepped')">Step one frame</button>
+          <button id="merge-central_repair_ring" onclick="mergeRoute('central_repair_ring')">Merge detour</button>
+          <button id="rollback-central_repair_ring" onclick="rollbackRoute('central_repair_ring')">Rollback direct</button>
+        </div>
+        <div id="badge-central_repair_ring" class="badge">waiting</div>
+        <div id="body-reaction-central_repair_ring" class="body-reaction">body reaction: pending</div>
+        <div id="followup-central_repair_ring" class="followup">follow-up: pending</div>
+      </article>
+    </section>
+    <section class="panel">
+      <h2>Replay trace preview</h2>
+      <pre id="replay-json"></pre>
+    </section>
+  </main>
+  <script id="ssrm-data" type="application/json">{
+  "body": [
+    {
+      "agent": "Fay",
+      "body_reaction": "Ari shakes water from sleeves, then leans closer",
+      "care_path_available": true,
+      "cause": "animation_play",
+      "day": 1,
+      "followup_scheduled_tick": 4,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": false,
+      "route_id": "riverbend_roofward",
+      "sensory_cue_bound": true,
+      "tick_id": 0
+    },
+    {
+      "agent": "Nia",
+      "body_reaction": "Fay lowers her shoulders and uncurls her fingers",
+      "care_path_available": true,
+      "cause": "animation_step",
+      "day": 1,
+      "followup_scheduled_tick": 6,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "roofward_archive",
+      "sensory_cue_bound": true,
+      "tick_id": 1
+    },
+    {
+      "agent": "Milo",
+      "body_reaction": "Nia blinks twice, then points toward the kiosk",
+      "care_path_available": true,
+      "cause": "merge_detour",
+      "day": 1,
+      "followup_scheduled_tick": 8,
+      "posture_delta": "opens",
+      "proximity_delta": -0.045,
+      "reaction_visible": true,
+      "route_id": "archive_signal",
+      "sensory_cue_bound": true,
+      "tick_id": 2
+    },
+    {
+      "agent": "Ivo",
+      "body_reaction": "Milo lifts the lantern and scans the path twice",
+      "care_path_available": true,
+      "cause": "animation_pause",
+      "day": 1,
+      "followup_scheduled_tick": 6,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "signal_orchard",
+      "sensory_cue_bound": true,
+      "tick_id": 3
+    },
+    {
+      "agent": "Pax",
+      "body_reaction": "Juno covers the wire, exhales, then nods once",
+      "care_path_available": true,
+      "cause": "rollback_direct",
+      "day": 1,
+      "followup_scheduled_tick": 10,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "central_repair_ring",
+      "sensory_cue_bound": true,
+      "tick_id": 5
+    },
+    {
+      "agent": "Fay",
+      "body_reaction": "Ari shakes water from sleeves, then leans closer",
+      "care_path_available": true,
+      "cause": "animation_play",
+      "day": 1,
+      "followup_scheduled_tick": 10,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "riverbend_roofward",
+      "sensory_cue_bound": true,
+      "tick_id": 6
+    },
+    {
+      "agent": "Nia",
+      "body_reaction": "Fay lowers her shoulders and uncurls her fingers",
+      "care_path_available": true,
+      "cause": "animation_step",
+      "day": 1,
+      "followup_scheduled_tick": 12,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "roofward_archive",
+      "sensory_cue_bound": true,
+      "tick_id": 7
+    },
+    {
+      "agent": "Milo",
+      "body_reaction": "Nia blinks twice, then points toward the kiosk",
+      "care_path_available": true,
+      "cause": "merge_detour",
+      "day": 1,
+      "followup_scheduled_tick": 14,
+      "posture_delta": "opens",
+      "proximity_delta": -0.045,
+      "reaction_visible": true,
+      "route_id": "archive_signal",
+      "sensory_cue_bound": true,
+      "tick_id": 8
+    },
+    {
+      "agent": "Ivo",
+      "body_reaction": "Milo lifts the lantern and scans the path twice",
+      "care_path_available": true,
+      "cause": "animation_pause",
+      "day": 1,
+      "followup_scheduled_tick": 12,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "signal_orchard",
+      "sensory_cue_bound": true,
+      "tick_id": 9
+    },
+    {
+      "agent": "Ari",
+      "body_reaction": "Ari shakes water from sleeves, then leans closer",
+      "care_path_available": true,
+      "cause": "animation_play",
+      "day": 2,
+      "followup_scheduled_tick": 17,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "riverbend_roofward",
+      "sensory_cue_bound": true,
+      "tick_id": 12
+    },
+    {
+      "agent": "Nia",
+      "body_reaction": "Nia blinks twice, then points toward the kiosk",
+      "care_path_available": true,
+      "cause": "merge_detour",
+      "day": 2,
+      "followup_scheduled_tick": 17,
+      "posture_delta": "opens",
+      "proximity_delta": -0.045,
+      "reaction_visible": true,
+      "route_id": "archive_signal",
+      "sensory_cue_bound": true,
+      "tick_id": 14
+    },
+    {
+      "agent": "Milo",
+      "body_reaction": "Milo lifts the lantern and scans the path twice",
+      "care_path_available": true,
+      "cause": "animation_pause",
+      "day": 2,
+      "followup_scheduled_tick": 19,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "signal_orchard",
+      "sensory_cue_bound": true,
+      "tick_id": 15
+    },
+    {
+      "agent": "Juno",
+      "body_reaction": "Juno covers the wire, exhales, then nods once",
+      "care_path_available": true,
+      "cause": "rollback_direct",
+      "day": 2,
+      "followup_scheduled_tick": 23,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "central_repair_ring",
+      "sensory_cue_bound": true,
+      "tick_id": 17
+    },
+    {
+      "agent": "Ari",
+      "body_reaction": "Ari shakes water from sleeves, then leans closer",
+      "care_path_available": true,
+      "cause": "animation_play",
+      "day": 2,
+      "followup_scheduled_tick": 23,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "riverbend_roofward",
+      "sensory_cue_bound": true,
+      "tick_id": 18
+    },
+    {
+      "agent": "Nia",
+      "body_reaction": "Nia blinks twice, then points toward the kiosk",
+      "care_path_available": true,
+      "cause": "merge_detour",
+      "day": 2,
+      "followup_scheduled_tick": 23,
+      "posture_delta": "opens",
+      "proximity_delta": -0.045,
+      "reaction_visible": true,
+      "route_id": "archive_signal",
+      "sensory_cue_bound": true,
+      "tick_id": 20
+    },
+    {
+      "agent": "Milo",
+      "body_reaction": "Milo lifts the lantern and scans the path twice",
+      "care_path_available": true,
+      "cause": "animation_pause",
+      "day": 2,
+      "followup_scheduled_tick": 25,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "signal_orchard",
+      "sensory_cue_bound": true,
+      "tick_id": 21
+    },
+    {
+      "agent": "Fay",
+      "body_reaction": "Ari shakes water from sleeves, then leans closer",
+      "care_path_available": true,
+      "cause": "animation_play",
+      "day": 3,
+      "followup_scheduled_tick": 30,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "riverbend_roofward",
+      "sensory_cue_bound": true,
+      "tick_id": 24
+    },
+    {
+      "agent": "Milo",
+      "body_reaction": "Nia blinks twice, then points toward the kiosk",
+      "care_path_available": true,
+      "cause": "merge_detour",
+      "day": 3,
+      "followup_scheduled_tick": 30,
+      "posture_delta": "opens",
+      "proximity_delta": -0.045,
+      "reaction_visible": true,
+      "route_id": "archive_signal",
+      "sensory_cue_bound": true,
+      "tick_id": 26
+    },
+    {
+      "agent": "Ivo",
+      "body_reaction": "Milo lifts the lantern and scans the path twice",
+      "care_path_available": true,
+      "cause": "animation_pause",
+      "day": 3,
+      "followup_scheduled_tick": 32,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "signal_orchard",
+      "sensory_cue_bound": true,
+      "tick_id": 27
+    },
+    {
+      "agent": "Pax",
+      "body_reaction": "Juno covers the wire, exhales, then nods once",
+      "care_path_available": true,
+      "cause": "rollback_direct",
+      "day": 3,
+      "followup_scheduled_tick": 32,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "central_repair_ring",
+      "sensory_cue_bound": true,
+      "tick_id": 29
+    },
+    {
+      "agent": "Fay",
+      "body_reaction": "Ari shakes water from sleeves, then leans closer",
+      "care_path_available": true,
+      "cause": "animation_play",
+      "day": 3,
+      "followup_scheduled_tick": 36,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "riverbend_roofward",
+      "sensory_cue_bound": true,
+      "tick_id": 30
+    },
+    {
+      "agent": "Milo",
+      "body_reaction": "Nia blinks twice, then points toward the kiosk",
+      "care_path_available": true,
+      "cause": "merge_detour",
+      "day": 3,
+      "followup_scheduled_tick": 36,
+      "posture_delta": "opens",
+      "proximity_delta": -0.045,
+      "reaction_visible": true,
+      "route_id": "archive_signal",
+      "sensory_cue_bound": true,
+      "tick_id": 32
+    },
+    {
+      "agent": "Ivo",
+      "body_reaction": "Milo lifts the lantern and scans the path twice",
+      "care_path_available": true,
+      "cause": "animation_pause",
+      "day": 3,
+      "followup_scheduled_tick": 38,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "signal_orchard",
+      "sensory_cue_bound": true,
+      "tick_id": 33
+    },
+    {
+      "agent": "Ari",
+      "body_reaction": "Ari shakes water from sleeves, then leans closer",
+      "care_path_available": true,
+      "cause": "animation_play",
+      "day": 4,
+      "followup_scheduled_tick": 39,
+      "posture_delta": "guards",
+      "proximity_delta": 0.055,
+      "reaction_visible": true,
+      "route_id": "riverbend_roofward",
+      "sensory_cue_bound": true,
+      "tick_id": 36
+    }
+  ],
+  "followups": [
+    {
+      "agent": "Fay",
+      "bounded_refusal_available": true,
+      "day": 1,
+      "delay_ticks": 2,
+      "dialogue_line": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 6,
+      "localstorage_memory_key": "ssrm.v34.memory.riverbend_roofward",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 6
+    },
+    {
+      "agent": "Nia",
+      "bounded_refusal_available": true,
+      "day": 1,
+      "delay_ticks": 1,
+      "dialogue_line": "The warm lane helped. I remember you waited instead of rushing me.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 7,
+      "localstorage_memory_key": "ssrm.v34.memory.roofward_archive",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "roofward_archive",
+      "tick_id": 7
+    },
+    {
+      "agent": "Milo",
+      "bounded_refusal_available": true,
+      "day": 1,
+      "delay_ticks": 1,
+      "dialogue_line": "That path kept the spool clean. I can explain the pattern now.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 8,
+      "localstorage_memory_key": "ssrm.v34.memory.archive_signal",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "archive_signal",
+      "tick_id": 8
+    },
+    {
+      "agent": "Ivo",
+      "bounded_refusal_available": true,
+      "day": 1,
+      "delay_ticks": 3,
+      "dialogue_line": "The loop gave us light. I trust that more than the short road tonight.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 9,
+      "localstorage_memory_key": "ssrm.v34.memory.signal_orchard",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "signal_orchard",
+      "tick_id": 9
+    },
+    {
+      "agent": "Pax",
+      "bounded_refusal_available": true,
+      "day": 1,
+      "delay_ticks": 1,
+      "dialogue_line": "The outer path gave me room. I can finish the wire without shaking.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 5,
+      "localstorage_memory_key": "ssrm.v34.memory.central_repair_ring",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "central_repair_ring",
+      "tick_id": 11
+    },
+    {
+      "agent": "Fay",
+      "bounded_refusal_available": true,
+      "day": 2,
+      "delay_ticks": 2,
+      "dialogue_line": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 12,
+      "localstorage_memory_key": "ssrm.v34.memory.riverbend_roofward",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 12
+    },
+    {
+      "agent": "Nia",
+      "bounded_refusal_available": true,
+      "day": 2,
+      "delay_ticks": 1,
+      "dialogue_line": "The warm lane helped. I remember you waited instead of rushing me.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 7,
+      "localstorage_memory_key": "ssrm.v34.memory.roofward_archive",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "roofward_archive",
+      "tick_id": 13
+    },
+    {
+      "agent": "Milo",
+      "bounded_refusal_available": true,
+      "day": 2,
+      "delay_ticks": 1,
+      "dialogue_line": "That path kept the spool clean. I can explain the pattern now.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 14,
+      "localstorage_memory_key": "ssrm.v34.memory.archive_signal",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "archive_signal",
+      "tick_id": 14
+    },
+    {
+      "agent": "Ivo",
+      "bounded_refusal_available": true,
+      "day": 2,
+      "delay_ticks": 3,
+      "dialogue_line": "The loop gave us light. I trust that more than the short road tonight.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 15,
+      "localstorage_memory_key": "ssrm.v34.memory.signal_orchard",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "signal_orchard",
+      "tick_id": 15
+    },
+    {
+      "agent": "Ari",
+      "bounded_refusal_available": true,
+      "day": 2,
+      "delay_ticks": 1,
+      "dialogue_line": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 18,
+      "localstorage_memory_key": "ssrm.v34.memory.riverbend_roofward",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 18
+    },
+    {
+      "agent": "Nia",
+      "bounded_refusal_available": true,
+      "day": 2,
+      "delay_ticks": 3,
+      "dialogue_line": "That path kept the spool clean. I can explain the pattern now.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 20,
+      "localstorage_memory_key": "ssrm.v34.memory.archive_signal",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "archive_signal",
+      "tick_id": 20
+    },
+    {
+      "agent": "Milo",
+      "bounded_refusal_available": true,
+      "day": 2,
+      "delay_ticks": 2,
+      "dialogue_line": "The loop gave us light. I trust that more than the short road tonight.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 21,
+      "localstorage_memory_key": "ssrm.v34.memory.signal_orchard",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "signal_orchard",
+      "tick_id": 21
+    },
+    {
+      "agent": "Juno",
+      "bounded_refusal_available": true,
+      "day": 2,
+      "delay_ticks": 1,
+      "dialogue_line": "The outer path gave me room. I can finish the wire without shaking.",
+      "dialogue_visible": false,
+      "follows_body_reaction_tick": 17,
+      "localstorage_memory_key": "ssrm.v34.memory.central_repair_ring",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "central_repair_ring",
+      "tick_id": 23
+    },
+    {
+      "agent": "Ari",
+      "bounded_refusal_available": true,
+      "day": 3,
+      "delay_ticks": 1,
+      "dialogue_line": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 24,
+      "localstorage_memory_key": "ssrm.v34.memory.riverbend_roofward",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 24
+    },
+    {
+      "agent": "Nia",
+      "bounded_refusal_available": true,
+      "day": 3,
+      "delay_ticks": 3,
+      "dialogue_line": "That path kept the spool clean. I can explain the pattern now.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 26,
+      "localstorage_memory_key": "ssrm.v34.memory.archive_signal",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "archive_signal",
+      "tick_id": 26
+    },
+    {
+      "agent": "Milo",
+      "bounded_refusal_available": true,
+      "day": 3,
+      "delay_ticks": 2,
+      "dialogue_line": "The loop gave us light. I trust that more than the short road tonight.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 27,
+      "localstorage_memory_key": "ssrm.v34.memory.signal_orchard",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "signal_orchard",
+      "tick_id": 27
+    },
+    {
+      "agent": "Fay",
+      "bounded_refusal_available": true,
+      "day": 3,
+      "delay_ticks": 1,
+      "dialogue_line": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 30,
+      "localstorage_memory_key": "ssrm.v34.memory.riverbend_roofward",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 30
+    },
+    {
+      "agent": "Milo",
+      "bounded_refusal_available": true,
+      "day": 3,
+      "delay_ticks": 2,
+      "dialogue_line": "That path kept the spool clean. I can explain the pattern now.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 32,
+      "localstorage_memory_key": "ssrm.v34.memory.archive_signal",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "archive_signal",
+      "tick_id": 32
+    },
+    {
+      "agent": "Ivo",
+      "bounded_refusal_available": true,
+      "day": 3,
+      "delay_ticks": 1,
+      "dialogue_line": "The loop gave us light. I trust that more than the short road tonight.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 33,
+      "localstorage_memory_key": "ssrm.v34.memory.signal_orchard",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "signal_orchard",
+      "tick_id": 33
+    },
+    {
+      "agent": "Pax",
+      "bounded_refusal_available": true,
+      "day": 3,
+      "delay_ticks": 3,
+      "dialogue_line": "Back up. Sparks near my hands make me lose the thread.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 29,
+      "localstorage_memory_key": "ssrm.v34.memory.central_repair_ring",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "central_repair_ring",
+      "tick_id": 35
+    },
+    {
+      "agent": "Fay",
+      "bounded_refusal_available": true,
+      "day": 4,
+      "delay_ticks": 1,
+      "dialogue_line": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 36,
+      "localstorage_memory_key": "ssrm.v34.memory.riverbend_roofward",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 36
+    },
+    {
+      "agent": "Milo",
+      "bounded_refusal_available": true,
+      "day": 4,
+      "delay_ticks": 2,
+      "dialogue_line": "That path kept the spool clean. I can explain the pattern now.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 38,
+      "localstorage_memory_key": "ssrm.v34.memory.archive_signal",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "archive_signal",
+      "tick_id": 38
+    },
+    {
+      "agent": "Ivo",
+      "bounded_refusal_available": true,
+      "day": 4,
+      "delay_ticks": 1,
+      "dialogue_line": "The loop gave us light. I trust that more than the short road tonight.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 39,
+      "localstorage_memory_key": "ssrm.v34.memory.signal_orchard",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "signal_orchard",
+      "tick_id": 39
+    },
+    {
+      "agent": "Ari",
+      "bounded_refusal_available": true,
+      "day": 4,
+      "delay_ticks": 3,
+      "dialogue_line": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "dialogue_visible": true,
+      "follows_body_reaction_tick": 42,
+      "localstorage_memory_key": "ssrm.v34.memory.riverbend_roofward",
+      "memory_written": true,
+      "private_workspace_hidden": true,
+      "recovery_choice_available": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 42
+    }
+  ],
+  "replay": [
+    {
+      "deterministic_order": 1,
+      "dom_selector": "#anim-riverbend_roofward-play",
+      "event_payload_hash": "v34-739794",
+      "expected_state_after": "playing",
+      "observed_state_after": "playing",
+      "replay_event": "animation_play",
+      "replay_exportable": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 0
+    },
+    {
+      "deterministic_order": 2,
+      "dom_selector": "#body-reaction-riverbend_roofward",
+      "event_payload_hash": "v34-164611",
+      "expected_state_after": "Ari shakes water from sleeves, then leans closer",
+      "observed_state_after": "Ari shakes water from sleeves, then leans closer",
+      "replay_event": "visible_body_reaction",
+      "replay_exportable": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 0
+    },
+    {
+      "deterministic_order": 3,
+      "dom_selector": "#anim-roofward_archive-step",
+      "event_payload_hash": "v34-702060",
+      "expected_state_after": "stepped",
+      "observed_state_after": "stepped",
+      "replay_event": "animation_step",
+      "replay_exportable": true,
+      "route_id": "roofward_archive",
+      "tick_id": 1
+    },
+    {
+      "deterministic_order": 4,
+      "dom_selector": "#body-reaction-roofward_archive",
+      "event_payload_hash": "v34-138716",
+      "expected_state_after": "Fay lowers her shoulders and uncurls her fingers",
+      "observed_state_after": "Fay lowers her shoulders and uncurls her fingers",
+      "replay_event": "visible_body_reaction",
+      "replay_exportable": true,
+      "route_id": "roofward_archive",
+      "tick_id": 1
+    },
+    {
+      "deterministic_order": 5,
+      "dom_selector": "#snapshot-paste-box",
+      "event_payload_hash": "v34-295559",
+      "expected_state_after": "imported:roofward_archive:d1:t1",
+      "observed_state_after": "imported:roofward_archive:d1:t1",
+      "replay_event": "paste_import_snapshot",
+      "replay_exportable": true,
+      "route_id": "roofward_archive",
+      "tick_id": 1
+    },
+    {
+      "deterministic_order": 6,
+      "dom_selector": "#merge-archive_signal",
+      "event_payload_hash": "v34-740754",
+      "expected_state_after": "stone kiosk path",
+      "observed_state_after": "stone kiosk path",
+      "replay_event": "merge_detour",
+      "replay_exportable": true,
+      "route_id": "archive_signal",
+      "tick_id": 2
+    },
+    {
+      "deterministic_order": 7,
+      "dom_selector": "#body-reaction-archive_signal",
+      "event_payload_hash": "v34-040561",
+      "expected_state_after": "Nia blinks twice, then points toward the kiosk",
+      "observed_state_after": "Nia blinks twice, then points toward the kiosk",
+      "replay_event": "visible_body_reaction",
+      "replay_exportable": true,
+      "route_id": "archive_signal",
+      "tick_id": 2
+    },
+    {
+      "deterministic_order": 8,
+      "dom_selector": "#anim-signal_orchard-pause",
+      "event_payload_hash": "v34-660057",
+      "expected_state_after": "paused",
+      "observed_state_after": "paused",
+      "replay_event": "animation_pause",
+      "replay_exportable": true,
+      "route_id": "signal_orchard",
+      "tick_id": 3
+    },
+    {
+      "deterministic_order": 9,
+      "dom_selector": "#body-reaction-signal_orchard",
+      "event_payload_hash": "v34-052160",
+      "expected_state_after": "Milo lifts the lantern and scans the path twice",
+      "observed_state_after": "Milo lifts the lantern and scans the path twice",
+      "replay_event": "visible_body_reaction",
+      "replay_exportable": true,
+      "route_id": "signal_orchard",
+      "tick_id": 3
+    },
+    {
+      "deterministic_order": 10,
+      "dom_selector": "#snapshot-export-box",
+      "event_payload_hash": "v34-209458",
+      "expected_state_after": "snapshot:orchard_riverbend:d1:t4",
+      "observed_state_after": "snapshot:orchard_riverbend:d1:t4",
+      "replay_event": "export_snapshot",
+      "replay_exportable": true,
+      "route_id": "orchard_riverbend",
+      "tick_id": 4
+    },
+    {
+      "deterministic_order": 11,
+      "dom_selector": "#rollback-central_repair_ring",
+      "event_payload_hash": "v34-986511",
+      "expected_state_after": "inner repair yard",
+      "observed_state_after": "inner repair yard",
+      "replay_event": "rollback_direct",
+      "replay_exportable": true,
+      "route_id": "central_repair_ring",
+      "tick_id": 5
+    },
+    {
+      "deterministic_order": 12,
+      "dom_selector": "#body-reaction-central_repair_ring",
+      "event_payload_hash": "v34-109014",
+      "expected_state_after": "Juno covers the wire, exhales, then nods once",
+      "observed_state_after": "Juno covers the wire, exhales, then nods once",
+      "replay_event": "visible_body_reaction",
+      "replay_exportable": true,
+      "route_id": "central_repair_ring",
+      "tick_id": 5
+    },
+    {
+      "deterministic_order": 13,
+      "dom_selector": "#anim-riverbend_roofward-play",
+      "event_payload_hash": "v34-740586",
+      "expected_state_after": "playing",
+      "observed_state_after": "playing",
+      "replay_event": "animation_play",
+      "replay_exportable": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 6
+    },
+    {
+      "deterministic_order": 14,
+      "dom_selector": "#body-reaction-riverbend_roofward",
+      "event_payload_hash": "v34-165403",
+      "expected_state_after": "Ari shakes water from sleeves, then leans closer",
+      "observed_state_after": "Ari shakes water from sleeves, then leans closer",
+      "replay_event": "visible_body_reaction",
+      "replay_exportable": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 6
+    },
+    {
+      "deterministic_order": 15,
+      "dom_selector": "#followup-riverbend_roofward",
+      "event_payload_hash": "v34-408863",
+      "expected_state_after": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "observed_state_after": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "replay_event": "delayed_followup_dialogue",
+      "replay_exportable": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 6
+    },
+    {
+      "deterministic_order": 16,
+      "dom_selector": "#anim-roofward_archive-step",
+      "event_payload_hash": "v34-702852",
+      "expected_state_after": "stepped",
+      "observed_state_after": "stepped",
+      "replay_event": "animation_step",
+      "replay_exportable": true,
+      "route_id": "roofward_archive",
+      "tick_id": 7
+    },
+    {
+      "deterministic_order": 17,
+      "dom_selector": "#body-reaction-roofward_archive",
+      "event_payload_hash": "v34-139508",
+      "expected_state_after": "Fay lowers her shoulders and uncurls her fingers",
+      "observed_state_after": "Fay lowers her shoulders and uncurls her fingers",
+      "replay_event": "visible_body_reaction",
+      "replay_exportable": true,
+      "route_id": "roofward_archive",
+      "tick_id": 7
+    },
+    {
+      "deterministic_order": 18,
+      "dom_selector": "#followup-roofward_archive",
+      "event_payload_hash": "v34-447731",
+      "expected_state_after": "The warm lane helped. I remember you waited instead of rushing me.",
+      "observed_state_after": "The warm lane helped. I remember you waited instead of rushing me.",
+      "replay_event": "delayed_followup_dialogue",
+      "replay_exportable": true,
+      "route_id": "roofward_archive",
+      "tick_id": 7
+    },
+    {
+      "deterministic_order": 19,
+      "dom_selector": "#snapshot-export-box",
+      "event_payload_hash": "v34-171680",
+      "expected_state_after": "snapshot:roofward_archive:d1:t7",
+      "observed_state_after": "snapshot:roofward_archive:d1:t7",
+      "replay_event": "export_snapshot",
+      "replay_exportable": true,
+      "route_id": "roofward_archive",
+      "tick_id": 7
+    },
+    {
+      "deterministic_order": 20,
+      "dom_selector": "#merge-archive_signal",
+      "event_payload_hash": "v34-852930",
+      "expected_state_after": "stone kiosk path",
+      "observed_state_after": "stone kiosk path",
+      "replay_event": "merge_detour",
+      "replay_exportable": true,
+      "route_id": "archive_signal",
+      "tick_id": 8
+    },
+    {
+      "deterministic_order": 21,
+      "dom_selector": "#body-reaction-archive_signal",
+      "event_payload_hash": "v34-041353",
+      "expected_state_after": "Nia blinks twice, then points toward the kiosk",
+      "observed_state_after": "Nia blinks twice, then points toward the kiosk",
+      "replay_event": "visible_body_reaction",
+      "replay_exportable": true,
+      "route_id": "archive_signal",
+      "tick_id": 8
+    },
+    {
+      "deterministic_order": 22,
+      "dom_selector": "#followup-archive_signal",
+      "event_payload_hash": "v34-315882",
+      "expected_state_after": "That path kept the spool clean. I can explain the pattern now.",
+      "observed_state_after": "That path kept the spool clean. I can explain the pattern now.",
+      "replay_event": "delayed_followup_dialogue",
+      "replay_exportable": true,
+      "route_id": "archive_signal",
+      "tick_id": 8
+    },
+    {
+      "deterministic_order": 23,
+      "dom_selector": "#anim-signal_orchard-pause",
+      "event_payload_hash": "v34-660849",
+      "expected_state_after": "paused",
+      "observed_state_after": "paused",
+      "replay_event": "animation_pause",
+      "replay_exportable": true,
+      "route_id": "signal_orchard",
+      "tick_id": 9
+    },
+    {
+      "deterministic_order": 24,
+      "dom_selector": "#body-reaction-signal_orchard",
+      "event_payload_hash": "v34-052952",
+      "expected_state_after": "Milo lifts the lantern and scans the path twice",
+      "observed_state_after": "Milo lifts the lantern and scans the path twice",
+      "replay_event": "visible_body_reaction",
+      "replay_exportable": true,
+      "route_id": "signal_orchard",
+      "tick_id": 9
+    },
+    {
+      "deterministic_order": 25,
+      "dom_selector": "#followup-signal_orchard",
+      "event_payload_hash": "v34-487203",
+      "expected_state_after": "The loop gave us light. I trust that more than the short road tonight.",
+      "observed_state_after": "The loop gave us light. I trust that more than the short road tonight.",
+      "replay_event": "delayed_followup_dialogue",
+      "replay_exportable": true,
+      "route_id": "signal_orchard",
+      "tick_id": 9
+    },
+    {
+      "deterministic_order": 26,
+      "dom_selector": "#snapshot-paste-box",
+      "event_payload_hash": "v34-359854",
+      "expected_state_after": "imported:orchard_riverbend:d1:t10",
+      "observed_state_after": "imported:orchard_riverbend:d1:t10",
+      "replay_event": "paste_import_snapshot",
+      "replay_exportable": true,
+      "route_id": "orchard_riverbend",
+      "tick_id": 10
+    },
+    {
+      "deterministic_order": 27,
+      "dom_selector": "#followup-central_repair_ring",
+      "event_payload_hash": "v34-547847",
+      "expected_state_after": "The outer path gave me room. I can finish the wire without shaking.",
+      "observed_state_after": "The outer path gave me room. I can finish the wire without shaking.",
+      "replay_event": "delayed_followup_dialogue",
+      "replay_exportable": true,
+      "route_id": "central_repair_ring",
+      "tick_id": 11
+    },
+    {
+      "deterministic_order": 28,
+      "dom_selector": "#anim-riverbend_roofward-play",
+      "event_payload_hash": "v34-751178",
+      "expected_state_after": "playing",
+      "observed_state_after": "playing",
+      "replay_event": "animation_play",
+      "replay_exportable": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 12
+    },
+    {
+      "deterministic_order": 29,
+      "dom_selector": "#body-reaction-riverbend_roofward",
+      "event_payload_hash": "v34-178177",
+      "expected_state_after": "Ari shakes water from sleeves, then leans closer",
+      "observed_state_after": "Ari shakes water from sleeves, then leans closer",
+      "replay_event": "visible_body_reaction",
+      "replay_exportable": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 12
+    },
+    {
+      "deterministic_order": 30,
+      "dom_selector": "#followup-riverbend_roofward",
+      "event_payload_hash": "v34-422755",
+      "expected_state_after": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "observed_state_after": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "replay_event": "delayed_followup_dialogue",
+      "replay_exportable": true,
+      "route_id": "riverbend_roofward",
+      "tick_id": 12
+    },
+    {
+      "deterministic_order": 31,
+      "dom_selector": "#followup-roofward_archive",
+      "event_payload_hash": "v34-461796",
+      "expected_state_after": "The warm lane helped. I remember you waited instead of rushing me.",
+      "observed_state_after": "The warm lane helped. I remember you waited instead of rushing me.",
+      "replay_event": "delayed_followup_dialogue",
+      "replay_exportable": true,
+      "route_id": "roofward_archive",
+      "tick_id": 13
+    },
+    {
+      "deterministic_order": 32,
+      "dom_selector": "#snapshot-paste-box",
+      "event_payload_hash": "v34-310013",
+      "expected_state_after": "imported:roofward_archive:d2:t1",
+      "observed_state_after": "imported:roofward_archive:d2:t1",
+      "replay_event": "paste_import_snapshot",
+      "replay_exportable": true,
+      "route_id": "roofward_archive",
+      "tick_id": 13
+    },
+    {
+      "deterministic_order": 33,
+      "dom_selector": "#merge-archive_signal",
+      "event_payload_hash": "v34-864289",
+      "expected_state_after": "stone kiosk path",
+      "observed_state_after": "stone kiosk path",
+      "replay_event": "merge_detour",
+      "replay_exportable": true,
+      "route_id": "archive_signal",
+      "tick_id": 14
+    },
+    {
+      "deterministic_order": 34,
+      "dom_selector": "#body-reaction-archive_signal",
+      "event_payload_hash": "v34-053487",
+      "expected_state_after": "Nia blinks twice, then points toward the kiosk",
+      "observed_state_after": "Nia blinks twice, then points toward the kiosk",
+      "replay_event": "visible_body_reaction",
+      "replay_exportable": true,
+      "route_id": "archive_signal",
+      "tick_id": 14
+    },
+    {
+      "deterministic_order": 35,
+      "dom_selector": "#followup-archive_signal",
+      "event_payload_hash": "v34-329324",
+      "expected_state_after": "That path kept the spool clean. I can explain the pattern now.",
+      "observed_state_after": "That path kept the spool clean. I can explain the pattern now.",
+      "replay_event": "delayed_followup_dialogue",
+      "replay_exportable": true,
+      "route_id": "archive_signal",
+      "tick_id": 14
+    },
+    {
+      "deterministic_order": 36,
+      "dom_selector": "#anim-signal_orchard-pause",
+      "event_payload_hash": "v34-670982",
+      "expected_state_after": "paused",
+      "observed_state_after": "paused",
+      "replay_event": "animation_pause",
+      "replay_exportable": true,
+      "route_id": "signal_orchard",
+      "tick_id": 15
+    }
+  ],
+  "results": {
+    "ablations": {
+      "no_bounded_refusal_recovery": 0.836142,
+      "no_clickable_animation_controls": 0.765142,
+      "no_delayed_followup_dialogue": 0.771142,
+      "no_localstorage_branch_mutation": 0.789142,
+      "no_privacy_boundary": 0.851142,
+      "no_snapshot_paste_import": 0.805142,
+      "no_visible_body_reaction": 0.796142
+    },
+    "artifacts": {
+      "browser_control_replays_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_browser_control_replays.csv",
+      "browser_ticks_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_browser_ticks.csv",
+      "clickable_animation_controls_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_clickable_animation_controls.csv",
+      "delayed_followup_dialogue_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_delayed_followup_dialogue.csv",
+      "html": "/Volumes/T7/Users-main/Documents/consciousness/visualizations/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge.html",
+      "localstorage_branch_mutations_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_localstorage_branch_mutations.csv",
+      "report": "/Volumes/T7/Users-main/Documents/consciousness/docs/274_ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_report.md",
+      "results_json": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_results.json",
+      "sensory_control_bindings_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_sensory_control_bindings.csv",
+      "snapshot_paste_imports_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_snapshot_paste_imports.csv",
+      "state_restore_frames_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_state_restore_frames.csv",
+      "summary_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_summary.csv",
+      "verdict_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_verdict.csv",
+      "visible_body_reactions_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v34_clickable_animation_controls_localstorage_snapshot_import_followup_dialogue_bridge_visible_body_reactions.csv"
+    },
+    "boundary": "Deterministic browser-local clickable-control scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+    "counts": {
+      "browser_control_replays": 2507,
+      "browser_ticks": 1152,
+      "clickable_animation_controls": 1152,
+      "delayed_followup_dialogue": 700,
+      "localstorage_branch_mutations": 294,
+      "sensory_control_bindings": 1152,
+      "snapshot_paste_imports": 384,
+      "state_restore_frames": 219,
+      "visible_body_reactions": 703
+    },
+    "html_capability_checks": {
+      "button_count": 32,
+      "control_surface_score": 1.0,
+      "has_animation_buttons": true,
+      "has_boundary_notice": true,
+      "has_delayed_followup_renderer": true,
+      "has_localstorage_mutation": true,
+      "has_merge_buttons": true,
+      "has_snapshot_paste_import_ui": true,
+      "import_handler_count": 5,
+      "localstorage_handler_count": 5
+    },
+    "metrics": {
+      "actual_clickable_control_surface": 1.0,
+      "animation_click_count": 426.0,
+      "animation_control_click_binding": 1.0,
+      "bounded_refusal_and_recovery_available": 1.0,
+      "branch_mutation_count": 294.0,
+      "browser_replay_trace_integrity": 1.0,
+      "browser_world_v34_clickable_readiness": 0.937142,
+      "delayed_followup_after_body_reaction": 0.9544807965860598,
+      "delayed_followup_count": 700.0,
+      "flower_frequency_rate_scaffold": 1.0,
+      "followup_not_oversaturated": 0.836,
+      "html_button_count": 32.0,
+      "html_import_handler_count": 5.0,
+      "html_localstorage_handler_count": 5.0,
+      "localstorage_branch_mutation": 1.0,
+      "mean_clickable_control_channel_score": 0.980488,
+      "privacy_boundary_preserved": 1.0,
+      "reload_state_persistence": 1.0,
+      "replay_event_count": 2507.0,
+      "restore_probe_count": 219.0,
+      "sensory_click_body_binding": 0.9878472222222222,
+      "snapshot_export_import_count": 384.0,
+      "snapshot_import_count": 192.0,
+      "snapshot_paste_import_ui": 1.0,
+      "source_v33_continuity": 1.0,
+      "successful_snapshot_import_restore": 0.9635416666666666,
+      "valid_snapshot_import_count": 185.0,
+      "visible_body_reaction_after_control": 0.9459459459459459,
+      "visible_body_reaction_count": 665.0,
+      "visible_browser_v34_surface": 1.0,
+      "visible_followup_count": 671.0,
+      "weakest_channel_name": "followup_not_oversaturated",
+      "weakest_channel_score": 0.836
+    },
+    "next_gate": "browser world v35 with avatar conversation input, click-to-talk agent replies, bounded refusal/recovery choices, and agent-side sensory/body state updates caused by user interaction",
+    "report": 274,
+    "seed": 20260887,
+    "source_v33_next_gate": "browser world v34 with actual clickable animation-state controls, branch merge buttons mutating localStorage, session snapshot paste/import UI, and delayed agent follow-up dialogue after visible body-language reactions",
+    "source_v33_verdict": "pass",
+    "verdict": "pass"
+  },
+  "routes": [
+    {
+      "agents": [
+        "Ari",
+        "Fay"
+      ],
+      "detour_branch": "lantern ridge detour",
+      "direct_branch": "low plank crossing",
+      "followup_line": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "hazard": "wet boards",
+      "home_place": "riverbend room",
+      "object_name": "cedar repair kit",
+      "refusal_line": "I will not cross the wet plank while my hands are numb.",
+      "route_id": "riverbend_roofward",
+      "smell_cue": "cedar resin and rain",
+      "sound_cue": "river slap under planks",
+      "temperature_cue": "cold spray",
+      "visible_body_reaction": "Ari shakes water from sleeves, then leans closer"
+    },
+    {
+      "agents": [
+        "Fay",
+        "Nia"
+      ],
+      "detour_branch": "warm archive lane",
+      "direct_branch": "glass stair",
+      "followup_line": "The warm lane helped. I remember you waited instead of rushing me.",
+      "hazard": "slick glass",
+      "home_place": "roofward sill",
+      "object_name": "herb ledger",
+      "refusal_line": "I need a slower route before I carry the ledger.",
+      "route_id": "roofward_archive",
+      "smell_cue": "dry paper and thyme",
+      "sound_cue": "hinges ticking",
+      "temperature_cue": "warm draft",
+      "visible_body_reaction": "Fay lowers her shoulders and uncurls her fingers"
+    },
+    {
+      "agents": [
+        "Nia",
+        "Milo"
+      ],
+      "detour_branch": "stone kiosk path",
+      "direct_branch": "paper lane",
+      "followup_line": "That path kept the spool clean. I can explain the pattern now.",
+      "hazard": "paper dust",
+      "home_place": "archive bench",
+      "object_name": "signal spool",
+      "refusal_line": "Do not pull the spool from my hands. Ask first.",
+      "route_id": "archive_signal",
+      "smell_cue": "ink, chalk, and dry linen",
+      "sound_cue": "soft page flutter",
+      "temperature_cue": "cool stone",
+      "visible_body_reaction": "Nia blinks twice, then points toward the kiosk"
+    },
+    {
+      "agents": [
+        "Milo",
+        "Ivo"
+      ],
+      "detour_branch": "river lantern loop",
+      "direct_branch": "dusk road",
+      "followup_line": "The loop gave us light. I trust that more than the short road tonight.",
+      "hazard": "low visibility",
+      "home_place": "signal mast",
+      "object_name": "oil lantern",
+      "refusal_line": "I am not walking blind while the lantern sputters.",
+      "route_id": "signal_orchard",
+      "smell_cue": "lamp oil and wet grass",
+      "sound_cue": "crickets under static",
+      "temperature_cue": "cool dusk",
+      "visible_body_reaction": "Milo lifts the lantern and scans the path twice"
+    },
+    {
+      "agents": [
+        "Ivo",
+        "Ari"
+      ],
+      "detour_branch": "market plank route",
+      "direct_branch": "fen track",
+      "followup_line": "The seeds stayed dry. I will remember that route.",
+      "hazard": "mud sink",
+      "home_place": "orchard gate",
+      "object_name": "seed satchel",
+      "refusal_line": "I will not step into the fen with the satchel open.",
+      "route_id": "orchard_riverbend",
+      "smell_cue": "apple skin and wet soil",
+      "sound_cue": "cart wheels creaking",
+      "temperature_cue": "damp air",
+      "visible_body_reaction": "Ivo pats the satchel, then moves nearer to the dry planks"
+    },
+    {
+      "agents": [
+        "Juno",
+        "Pax"
+      ],
+      "detour_branch": "outer bell path",
+      "direct_branch": "inner repair yard",
+      "followup_line": "The outer path gave me room. I can finish the wire without shaking.",
+      "hazard": "crowded sparks",
+      "home_place": "repair ring",
+      "object_name": "copper wire",
+      "refusal_line": "Back up. Sparks near my hands make me lose the thread.",
+      "route_id": "central_repair_ring",
+      "smell_cue": "hot copper and dust",
+      "sound_cue": "bell hum through walls",
+      "temperature_cue": "warm metal",
+      "visible_body_reaction": "Juno covers the wire, exhales, then nods once"
+    }
+  ],
+  "state": {
+    "active_branch": {
+      "archive_signal": "stone kiosk path",
+      "central_repair_ring": "inner repair yard",
+      "orchard_riverbend": "fen track",
+      "riverbend_roofward": "lantern ridge detour",
+      "roofward_archive": "warm archive lane",
+      "signal_orchard": "dusk road"
+    },
+    "animation_state": {
+      "archive_signal": "paused",
+      "central_repair_ring": "playing",
+      "orchard_riverbend": "playing",
+      "riverbend_roofward": "playing",
+      "roofward_archive": "paused",
+      "signal_orchard": "paused"
+    },
+    "boundary": "Deterministic browser-local clickable-control scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+    "followup_memory_count": {
+      "archive_signal": 116,
+      "central_repair_ring": 118,
+      "orchard_riverbend": 114,
+      "riverbend_roofward": 116,
+      "roofward_archive": 118,
+      "signal_orchard": 118
+    },
+    "routes": [
+      {
+        "agents": [
+          "Ari",
+          "Fay"
+        ],
+        "detour_branch": "lantern ridge detour",
+        "direct_branch": "low plank crossing",
+        "followup_line": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+        "hazard": "wet boards",
+        "home_place": "riverbend room",
+        "object_name": "cedar repair kit",
+        "refusal_line": "I will not cross the wet plank while my hands are numb.",
+        "route_id": "riverbend_roofward",
+        "smell_cue": "cedar resin and rain",
+        "sound_cue": "river slap under planks",
+        "temperature_cue": "cold spray",
+        "visible_body_reaction": "Ari shakes water from sleeves, then leans closer"
+      },
+      {
+        "agents": [
+          "Fay",
+          "Nia"
+        ],
+        "detour_branch": "warm archive lane",
+        "direct_branch": "glass stair",
+        "followup_line": "The warm lane helped. I remember you waited instead of rushing me.",
+        "hazard": "slick glass",
+        "home_place": "roofward sill",
+        "object_name": "herb ledger",
+        "refusal_line": "I need a slower route before I carry the ledger.",
+        "route_id": "roofward_archive",
+        "smell_cue": "dry paper and thyme",
+        "sound_cue": "hinges ticking",
+        "temperature_cue": "warm draft",
+        "visible_body_reaction": "Fay lowers her shoulders and uncurls her fingers"
+      },
+      {
+        "agents": [
+          "Nia",
+          "Milo"
+        ],
+        "detour_branch": "stone kiosk path",
+        "direct_branch": "paper lane",
+        "followup_line": "That path kept the spool clean. I can explain the pattern now.",
+        "hazard": "paper dust",
+        "home_place": "archive bench",
+        "object_name": "signal spool",
+        "refusal_line": "Do not pull the spool from my hands. Ask first.",
+        "route_id": "archive_signal",
+        "smell_cue": "ink, chalk, and dry linen",
+        "sound_cue": "soft page flutter",
+        "temperature_cue": "cool stone",
+        "visible_body_reaction": "Nia blinks twice, then points toward the kiosk"
+      },
+      {
+        "agents": [
+          "Milo",
+          "Ivo"
+        ],
+        "detour_branch": "river lantern loop",
+        "direct_branch": "dusk road",
+        "followup_line": "The loop gave us light. I trust that more than the short road tonight.",
+        "hazard": "low visibility",
+        "home_place": "signal mast",
+        "object_name": "oil lantern",
+        "refusal_line": "I am not walking blind while the lantern sputters.",
+        "route_id": "signal_orchard",
+        "smell_cue": "lamp oil and wet grass",
+        "sound_cue": "crickets under static",
+        "temperature_cue": "cool dusk",
+        "visible_body_reaction": "Milo lifts the lantern and scans the path twice"
+      },
+      {
+        "agents": [
+          "Ivo",
+          "Ari"
+        ],
+        "detour_branch": "market plank route",
+        "direct_branch": "fen track",
+        "followup_line": "The seeds stayed dry. I will remember that route.",
+        "hazard": "mud sink",
+        "home_place": "orchard gate",
+        "object_name": "seed satchel",
+        "refusal_line": "I will not step into the fen with the satchel open.",
+        "route_id": "orchard_riverbend",
+        "smell_cue": "apple skin and wet soil",
+        "sound_cue": "cart wheels creaking",
+        "temperature_cue": "damp air",
+        "visible_body_reaction": "Ivo pats the satchel, then moves nearer to the dry planks"
+      },
+      {
+        "agents": [
+          "Juno",
+          "Pax"
+        ],
+        "detour_branch": "outer bell path",
+        "direct_branch": "inner repair yard",
+        "followup_line": "The outer path gave me room. I can finish the wire without shaking.",
+        "hazard": "crowded sparks",
+        "home_place": "repair ring",
+        "object_name": "copper wire",
+        "refusal_line": "Back up. Sparks near my hands make me lose the thread.",
+        "route_id": "central_repair_ring",
+        "smell_cue": "hot copper and dust",
+        "sound_cue": "bell hum through walls",
+        "temperature_cue": "warm metal",
+        "visible_body_reaction": "Juno covers the wire, exhales, then nods once"
+      }
+    ],
+    "snapshot_id": {
+      "archive_signal": "imported:archive_signal:d87:t10",
+      "central_repair_ring": "snapshot:central_repair_ring:d87:t7",
+      "orchard_riverbend": "imported:orchard_riverbend:d96:t10",
+      "riverbend_roofward": "snapshot:riverbend_roofward:d95:t7",
+      "roofward_archive": "snapshot:roofward_archive:d96:t7",
+      "signal_orchard": "imported:signal_orchard:d95:t10"
+    },
+    "state_version": {
+      "archive_signal": 80,
+      "central_repair_ring": 82,
+      "orchard_riverbend": 81,
+      "riverbend_roofward": 81,
+      "roofward_archive": 81,
+      "signal_orchard": 80
+    }
+  }
+}</script>
+  <script>
+    const DATA = JSON.parse(document.querySelector('#ssrm-data').textContent);
+    const LS_KEY = 'ssrm.v34.world';
+    const ROUTE_LINES = Object.fromEntries(DATA.routes.map(r => [r.route_id, r]));
+
+    function defaultWorld() {
+      const world = { routes: {}, followups: [], memory: [] };
+      for (const route of DATA.routes) {
+        world.routes[route.route_id] = { branch: route.direct_branch, animation: 'idle', version: 1, snapshotId: 'browser:' + route.route_id };
+      }
+      return world;
+    }
+    function loadWorld() {
+      try { return JSON.parse(localStorage.getItem(LS_KEY)) || defaultWorld(); }
+      catch (_err) { return defaultWorld(); }
+    }
+    function saveWorld(state) { localStorage.setItem(LS_KEY, JSON.stringify(state)); }
+    function clickAnimation(routeId, animation) {
+      const world = loadWorld();
+      world.routes[routeId] = world.routes[routeId] || {};
+      world.routes[routeId].animation = animation;
+      world.routes[routeId].version = (world.routes[routeId].version || 0) + 1;
+      saveWorld(world);
+      showBodyReaction(routeId, 'animation ' + animation);
+      scheduleFollowup(routeId, 'animation ' + animation);
+      render();
+    }
+    function mergeRoute(routeId) {
+      const world = loadWorld();
+      world.routes[routeId] = world.routes[routeId] || {};
+      world.routes[routeId].branch = ROUTE_LINES[routeId].detour_branch;
+      world.routes[routeId].version = (world.routes[routeId].version || 0) + 1;
+      localStorage.setItem(LS_KEY, JSON.stringify(world));
+      showBodyReaction(routeId, 'merge detour');
+      scheduleFollowup(routeId, 'merge detour');
+      render();
+    }
+    function rollbackRoute(routeId) {
+      const world = loadWorld();
+      world.routes[routeId] = world.routes[routeId] || {};
+      world.routes[routeId].branch = ROUTE_LINES[routeId].direct_branch;
+      world.routes[routeId].version = (world.routes[routeId].version || 0) + 1;
+      localStorage.setItem(LS_KEY, JSON.stringify(world));
+      showBodyReaction(routeId, 'rollback direct');
+      scheduleFollowup(routeId, 'rollback direct');
+      render();
+    }
+    function showBodyReaction(routeId, cause) {
+      const route = ROUTE_LINES[routeId];
+      document.querySelector('#body-reaction-' + routeId).textContent = 'body reaction after ' + cause + ': ' + route.visible_body_reaction;
+    }
+    function scheduleFollowup(routeId, cause) {
+      const world = loadWorld();
+      world.followups = world.followups || [];
+      world.followups.push({ routeId, cause, due: Date.now() + 700 });
+      saveWorld(world);
+    }
+    function runFollowups() {
+      const world = loadWorld();
+      const now = Date.now();
+      const remaining = [];
+      for (const item of world.followups || []) {
+        const route = ROUTE_LINES[item.routeId];
+        const line = item.cause.includes('rollback') ? route.refusal_line : route.followup_line;
+        if (item.due <= now) {
+          document.querySelector('#followup-' + item.routeId).textContent = 'follow-up dialogue: ' + line;
+          world.memory.push({ routeId: item.routeId, cause: item.cause, line });
+        } else { remaining.push(item); }
+      }
+      world.followups = remaining;
+      saveWorld(world);
+    }
+    function exportSnapshot() {
+      document.querySelector('#snapshot-paste-box').value = JSON.stringify(loadWorld(), null, 2);
+    }
+    function importSnapshot() {
+      const text = document.querySelector('#snapshot-paste-box').value;
+      try {
+        const parsed = JSON.parse(text || '{}');
+        localStorage.setItem(LS_KEY, JSON.stringify(parsed));
+        render();
+      } catch (err) {
+        document.querySelector('#state-json').textContent = 'Import failed: ' + err.message;
+      }
+    }
+    function render() {
+      let world = loadWorld();
+      for (const route of DATA.routes) {
+        const state = world.routes[route.route_id] || {};
+        document.querySelector('#badge-' + route.route_id).textContent = 'branch: ' + (state.branch || 'unset') + ' · animation: ' + (state.animation || 'idle') + ' · version: ' + (state.version || 0);
+      }
+      runFollowups();
+      world = loadWorld();
+      document.querySelector('#state-json').textContent = JSON.stringify(world, null, 2);
+      document.querySelector('#replay-json').textContent = JSON.stringify(DATA.replay.slice(0, 16), null, 2);
+    }
+    if (!localStorage.getItem(LS_KEY)) { saveWorld(defaultWorld()); }
+    render();
+    setInterval(runFollowups, 800);
+  </script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+tick_id,day,route_id,action,textarea_id,snapshot_id,snapshot_hash,exported_json_bytes,pasted_json_valid,imported_branch,imported_animation_state,import_result_visible,localstorage_restored
+1,1,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d1:t1,v34-648626,0,True,glass stair,stepped,snapshot imported into local state,True
+4,1,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d1:t4,v34-565117,156,True,fen track,idle,snapshot copied to export box,True
+7,1,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d1:t7,v34-648978,159,True,glass stair,stepped,snapshot copied to export box,True
+10,1,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d1:t10,v34-565117,0,True,fen track,idle,snapshot imported into local state,True
+13,2,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d2:t1,v34-649155,0,True,glass stair,stepped,snapshot imported into local state,True
+16,2,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d2:t4,v34-565288,156,True,fen track,idle,snapshot copied to export box,True
+19,2,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d2:t7,v34-649330,159,True,glass stair,stepped,snapshot copied to export box,True
+22,2,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d2:t10,v34-565288,0,True,fen track,idle,snapshot imported into local state,True
+25,3,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d3:t1,v34-649330,0,True,glass stair,stepped,snapshot imported into local state,True
+28,3,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d3:t4,v34-565459,156,True,fen track,idle,snapshot copied to export box,True
+31,3,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d3:t7,v34-649505,159,True,glass stair,stepped,snapshot copied to export box,True
+34,3,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d3:t10,v34-565459,0,True,fen track,idle,snapshot imported into local state,True
+37,4,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d4:t1,v34-649505,0,True,glass stair,stepped,snapshot imported into local state,True
+40,4,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d4:t4,v34-565630,156,True,fen track,idle,snapshot copied to export box,True
+43,4,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d4:t7,v34-649680,159,True,glass stair,stepped,snapshot copied to export box,True
+46,4,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d4:t10,v34-565630,0,True,fen track,idle,snapshot imported into local state,True
+49,5,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d5:t1,v34-649680,0,True,glass stair,stepped,snapshot imported into local state,True
+52,5,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d5:t4,v34-565801,156,True,fen track,idle,snapshot copied to export box,True
+55,5,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d5:t7,v34-649855,159,True,glass stair,stepped,snapshot copied to export box,True
+58,5,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d5:t4,v34-565801,0,False,fen track,idle,snapshot parse warning; previous state kept,False
+61,6,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d6:t1,v34-649855,0,True,glass stair,stepped,snapshot imported into local state,True
+64,6,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d6:t4,v34-565801,156,True,fen track,idle,snapshot copied to export box,True
+67,6,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d6:t7,v34-650030,159,True,glass stair,stepped,snapshot copied to export box,True
+70,6,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d6:t10,v34-565801,0,True,fen track,idle,snapshot imported into local state,True
+73,7,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d7:t1,v34-650030,0,True,glass stair,stepped,snapshot imported into local state,True
+76,7,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d7:t4,v34-565972,156,True,fen track,idle,snapshot copied to export box,True
+79,7,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d7:t7,v34-650205,159,True,glass stair,stepped,snapshot copied to export box,True
+82,7,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d7:t10,v34-565972,0,True,fen track,idle,snapshot imported into local state,True
+85,8,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d8:t1,v34-651887,0,True,stone kiosk path,idle,snapshot imported into local state,True
+88,8,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d8:t4,v34-744347,168,True,inner repair yard,idle,snapshot copied to export box,True
+91,8,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d8:t7,v34-652063,159,True,stone kiosk path,idle,snapshot copied to export box,True
+94,8,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d8:t10,v34-744347,0,True,inner repair yard,idle,snapshot imported into local state,True
+97,9,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d9:t1,v34-652063,0,True,stone kiosk path,idle,snapshot imported into local state,True
+100,9,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d9:t4,v34-744528,168,True,inner repair yard,idle,snapshot copied to export box,True
+103,9,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d9:t7,v34-652239,159,True,stone kiosk path,idle,snapshot copied to export box,True
+106,9,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d9:t10,v34-744528,0,True,inner repair yard,idle,snapshot imported into local state,True
+109,10,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d10:t1,v34-652239,0,True,stone kiosk path,idle,snapshot imported into local state,True
+112,10,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d10:t4,v34-752008,170,True,inner repair yard,idle,snapshot copied to export box,True
+115,10,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d10:t7,v34-652415,160,True,stone kiosk path,idle,snapshot copied to export box,True
+118,10,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d10:t10,v34-752008,0,True,inner repair yard,idle,snapshot imported into local state,True
+121,11,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d11:t1,v34-652415,0,True,stone kiosk path,idle,snapshot imported into local state,True
+124,11,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d11:t4,v34-752190,170,True,inner repair yard,idle,snapshot copied to export box,True
+127,11,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d11:t7,v34-652591,160,True,stone kiosk path,idle,snapshot copied to export box,True
+130,11,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d11:t10,v34-752190,0,True,inner repair yard,idle,snapshot imported into local state,True
+133,12,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d12:t1,v34-652591,0,True,stone kiosk path,idle,snapshot imported into local state,True
+136,12,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d12:t4,v34-752372,170,True,inner repair yard,idle,snapshot copied to export box,True
+139,12,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d12:t7,v34-651182,160,True,stone kiosk path,idle,snapshot copied to export box,True
+142,12,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d12:t10,v34-752372,0,True,inner repair yard,idle,snapshot imported into local state,True
+145,13,archive_signal,paste_import_snapshot,snapshot-paste-box,snapshot:archive_signal:d12:t7,v34-651182,0,False,stone kiosk path,idle,snapshot parse warning; previous state kept,False
+148,13,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d13:t4,v34-752554,170,True,inner repair yard,idle,snapshot copied to export box,True
+151,13,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d13:t7,v34-651182,160,True,stone kiosk path,idle,snapshot copied to export box,True
+154,13,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d13:t10,v34-752554,0,True,inner repair yard,idle,snapshot imported into local state,True
+157,14,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d14:t1,v34-651182,0,True,stone kiosk path,idle,snapshot imported into local state,True
+160,14,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d14:t4,v34-815462,173,True,inner repair yard,stepped,snapshot copied to export box,True
+163,14,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d14:t7,v34-651358,160,True,stone kiosk path,idle,snapshot copied to export box,True
+166,14,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d14:t10,v34-815649,0,True,inner repair yard,stepped,snapshot imported into local state,True
+169,15,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d15:t1,v34-651358,0,True,stone kiosk path,idle,snapshot imported into local state,True
+172,15,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d15:t4,v34-816021,173,True,inner repair yard,stepped,snapshot copied to export box,True
+175,15,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d15:t7,v34-651534,160,True,stone kiosk path,idle,snapshot copied to export box,True
+178,15,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d15:t10,v34-816021,0,True,inner repair yard,stepped,snapshot imported into local state,True
+181,16,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d16:t1,v34-752386,0,True,river lantern loop,stepped,snapshot imported into local state,True
+184,16,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d16:t4,v34-822669,172,True,low plank crossing,playing,snapshot copied to export box,True
+187,16,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d16:t7,v34-752751,165,True,river lantern loop,stepped,snapshot copied to export box,True
+190,16,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d16:t10,v34-822669,0,True,low plank crossing,playing,snapshot imported into local state,True
+193,17,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d17:t1,v34-752935,0,True,river lantern loop,stepped,snapshot imported into local state,True
+196,17,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d17:t4,v34-830314,173,True,low plank crossing,playing,snapshot copied to export box,True
+199,17,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d17:t7,v34-753116,165,True,river lantern loop,stepped,snapshot copied to export box,True
+202,17,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d17:t10,v34-830314,0,True,low plank crossing,playing,snapshot imported into local state,True
+205,18,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d18:t1,v34-753116,0,True,river lantern loop,stepped,snapshot imported into local state,True
+208,18,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d18:t4,v34-830499,173,True,low plank crossing,playing,snapshot copied to export box,True
+211,18,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d18:t7,v34-751667,165,True,river lantern loop,stepped,snapshot copied to export box,True
+214,18,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d18:t10,v34-830499,0,True,low plank crossing,playing,snapshot imported into local state,True
+217,19,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d19:t1,v34-751667,0,True,river lantern loop,stepped,snapshot imported into local state,True
+220,19,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d19:t4,v34-830813,173,True,low plank crossing,stepped,snapshot copied to export box,True
+223,19,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d19:t7,v34-751848,165,True,river lantern loop,stepped,snapshot copied to export box,True
+226,19,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d19:t10,v34-831001,0,True,low plank crossing,stepped,snapshot imported into local state,True
+229,20,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d20:t1,v34-751848,0,True,river lantern loop,stepped,snapshot imported into local state,True
+232,20,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d20:t4,v34-831374,173,True,low plank crossing,stepped,snapshot copied to export box,True
+235,20,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d20:t7,v34-752029,165,True,river lantern loop,stepped,snapshot copied to export box,True
+238,20,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d20:t10,v34-831374,0,True,low plank crossing,stepped,snapshot imported into local state,True
+241,21,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d21:t1,v34-752029,0,True,river lantern loop,stepped,snapshot imported into local state,True
+244,21,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d21:t4,v34-831559,173,True,low plank crossing,stepped,snapshot copied to export box,True
+247,21,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d21:t7,v34-590801,156,True,dusk road,stepped,snapshot copied to export box,True
+250,21,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d21:t10,v34-831559,0,True,low plank crossing,stepped,snapshot imported into local state,True
+253,22,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d22:t1,v34-590976,0,True,dusk road,stepped,snapshot imported into local state,True
+256,22,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d22:t4,v34-831744,173,True,low plank crossing,stepped,snapshot copied to export box,True
+259,22,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d22:t7,v34-591148,156,True,dusk road,stepped,snapshot copied to export box,True
+262,22,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d22:t10,v34-831744,0,True,low plank crossing,stepped,snapshot imported into local state,True
+265,23,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d23:t1,v34-591148,0,True,dusk road,stepped,snapshot imported into local state,True
+268,23,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d23:t4,v34-831929,173,True,low plank crossing,stepped,snapshot copied to export box,True
+271,23,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d23:t7,v34-591320,156,True,dusk road,stepped,snapshot copied to export box,True
+274,23,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d23:t10,v34-831929,0,True,low plank crossing,stepped,snapshot imported into local state,True
+277,24,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d24:t1,v34-786383,0,True,market plank route,paused,snapshot imported into local state,True
+280,24,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d24:t4,v34-668609,162,True,glass stair,stepped,snapshot copied to export box,True
+283,24,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d24:t7,v34-786752,170,True,market plank route,paused,snapshot copied to export box,True
+286,24,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d24:t10,v34-668609,0,True,glass stair,stepped,snapshot imported into local state,True
+289,25,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d25:t1,v34-786752,0,True,market plank route,paused,snapshot imported into local state,True
+292,25,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d25:t4,v34-668785,162,True,glass stair,stepped,snapshot copied to export box,True
+295,25,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d25:t7,v34-786935,170,True,market plank route,paused,snapshot copied to export box,True
+298,25,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d25:t10,v34-668785,0,True,glass stair,stepped,snapshot imported into local state,True
+301,26,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d26:t1,v34-786935,0,True,market plank route,paused,snapshot imported into local state,True
+304,26,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d26:t4,v34-668961,162,True,glass stair,stepped,snapshot copied to export box,True
+307,26,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d26:t7,v34-787118,170,True,market plank route,paused,snapshot copied to export box,True
+310,26,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d26:t10,v34-668961,0,True,glass stair,stepped,snapshot imported into local state,True
+313,27,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d27:t1,v34-787118,0,True,market plank route,paused,snapshot imported into local state,True
+316,27,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d27:t4,v34-669137,162,True,glass stair,stepped,snapshot copied to export box,True
+319,27,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d27:t7,v34-787301,170,True,market plank route,paused,snapshot copied to export box,True
+322,27,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d27:t10,v34-669137,0,True,glass stair,stepped,snapshot imported into local state,True
+325,28,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d28:t1,v34-787301,0,True,market plank route,paused,snapshot imported into local state,True
+328,28,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d28:t4,v34-667728,162,True,glass stair,stepped,snapshot copied to export box,True
+331,28,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d28:t7,v34-787484,170,True,market plank route,paused,snapshot copied to export box,True
+334,28,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d28:t10,v34-667728,0,True,glass stair,stepped,snapshot imported into local state,True
+337,29,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d29:t1,v34-787484,0,True,market plank route,paused,snapshot imported into local state,True
+340,29,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d29:t4,v34-667904,162,True,glass stair,stepped,snapshot copied to export box,True
+343,29,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d29:t7,v34-787667,170,True,market plank route,paused,snapshot copied to export box,True
+346,29,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d29:t10,v34-667904,0,True,glass stair,stepped,snapshot imported into local state,True
+349,30,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d30:t1,v34-787667,0,True,market plank route,paused,snapshot imported into local state,True
+352,30,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d30:t4,v34-668080,162,True,glass stair,stepped,snapshot copied to export box,True
+355,30,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d30:t7,v34-786202,170,True,market plank route,paused,snapshot copied to export box,True
+358,30,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d30:t10,v34-668080,0,True,glass stair,stepped,snapshot imported into local state,True
+361,31,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d31:t1,v34-786202,0,True,market plank route,paused,snapshot imported into local state,True
+364,31,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d31:t4,v34-668256,162,True,glass stair,stepped,snapshot copied to export box,True
+367,31,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d31:t7,v34-786385,170,True,market plank route,paused,snapshot copied to export box,True
+370,31,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d31:t10,v34-668256,0,True,glass stair,stepped,snapshot imported into local state,True
+373,32,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d32:t1,v34-785513,0,True,outer bell path,stepped,snapshot imported into local state,True
+376,32,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d32:t4,v34-606953,157,True,paper lane,playing,snapshot copied to export box,True
+379,32,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d32:t7,v34-785696,172,True,outer bell path,stepped,snapshot copied to export box,True
+382,32,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d32:t10,v34-606953,0,True,paper lane,playing,snapshot imported into local state,True
+385,33,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d33:t1,v34-785696,0,True,outer bell path,stepped,snapshot imported into local state,True
+388,33,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d33:t4,v34-607126,157,True,paper lane,playing,snapshot copied to export box,True
+391,33,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d33:t7,v34-785879,172,True,outer bell path,stepped,snapshot copied to export box,True
+394,33,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d33:t10,v34-607126,0,True,paper lane,playing,snapshot imported into local state,True
+397,34,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d34:t1,v34-785879,0,True,outer bell path,stepped,snapshot imported into local state,True
+400,34,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d34:t4,v34-607416,157,True,paper lane,stepped,snapshot copied to export box,True
+403,34,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d34:t7,v34-786062,172,True,outer bell path,stepped,snapshot copied to export box,True
+406,34,archive_signal,paste_import_snapshot,snapshot-paste-box,snapshot:archive_signal:d34:t4,v34-607592,0,False,paper lane,stepped,snapshot parse warning; previous state kept,False
+409,35,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d35:t1,v34-786062,0,True,outer bell path,stepped,snapshot imported into local state,True
+412,35,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d35:t4,v34-606183,157,True,paper lane,stepped,snapshot copied to export box,True
+415,35,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d35:t7,v34-786245,172,True,outer bell path,stepped,snapshot copied to export box,True
+418,35,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d35:t10,v34-606183,0,True,paper lane,stepped,snapshot imported into local state,True
+421,36,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d36:t1,v34-786245,0,True,outer bell path,stepped,snapshot imported into local state,True
+424,36,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d36:t4,v34-606356,157,True,paper lane,stepped,snapshot copied to export box,True
+427,36,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d36:t7,v34-786428,172,True,outer bell path,stepped,snapshot copied to export box,True
+430,36,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d36:t10,v34-606356,0,True,paper lane,stepped,snapshot imported into local state,True
+433,37,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d37:t1,v34-786428,0,True,outer bell path,stepped,snapshot imported into local state,True
+436,37,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d37:t4,v34-606529,157,True,paper lane,stepped,snapshot copied to export box,True
+439,37,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d37:t7,v34-786611,172,True,outer bell path,stepped,snapshot copied to export box,True
+442,37,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d37:t10,v34-606529,0,True,paper lane,stepped,snapshot imported into local state,True
+445,38,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d38:t1,v34-786611,0,True,outer bell path,stepped,snapshot imported into local state,True
+448,38,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d38:t4,v34-606702,157,True,paper lane,stepped,snapshot copied to export box,True
+451,38,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d38:t7,v34-786794,172,True,outer bell path,stepped,snapshot copied to export box,True
+454,38,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d38:t10,v34-606702,0,True,paper lane,stepped,snapshot imported into local state,True
+457,39,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d39:t1,v34-786794,0,True,outer bell path,stepped,snapshot imported into local state,True
+460,39,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d39:t4,v34-606875,157,True,paper lane,stepped,snapshot copied to export box,True
+463,39,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d39:t7,v34-785329,172,True,outer bell path,stepped,snapshot copied to export box,True
+466,39,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d39:t10,v34-606875,0,True,paper lane,stepped,snapshot imported into local state,True
+469,40,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d40:t1,v34-868326,0,True,lantern ridge detour,stepped,snapshot imported into local state,True
+472,40,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d40:t4,v34-592370,156,True,dusk road,stepped,snapshot copied to export box,True
+475,40,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d40:t7,v34-868703,175,True,lantern ridge detour,stepped,snapshot copied to export box,True
+478,40,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d40:t10,v34-592370,0,True,dusk road,stepped,snapshot imported into local state,True
+481,41,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d41:t1,v34-868703,0,True,lantern ridge detour,stepped,snapshot imported into local state,True
+484,41,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d41:t4,v34-592542,156,True,dusk road,stepped,snapshot copied to export box,True
+487,41,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d41:t7,v34-868890,175,True,lantern ridge detour,stepped,snapshot copied to export box,True
+490,41,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d41:t10,v34-592542,0,True,dusk road,stepped,snapshot imported into local state,True
+493,42,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d41:t7,v34-833234,0,False,low plank crossing,stepped,snapshot parse warning; previous state kept,False
+496,42,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d42:t4,v34-592714,156,True,dusk road,stepped,snapshot copied to export box,True
+499,42,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d42:t7,v34-833422,173,True,low plank crossing,stepped,snapshot copied to export box,True
+502,42,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d42:t10,v34-592714,0,True,dusk road,stepped,snapshot imported into local state,True
+505,43,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d43:t1,v34-833422,0,True,low plank crossing,stepped,snapshot imported into local state,True
+508,43,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d43:t4,v34-592886,156,True,dusk road,stepped,snapshot copied to export box,True
+511,43,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d43:t7,v34-833607,173,True,low plank crossing,stepped,snapshot copied to export box,True
+514,43,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d43:t10,v34-592886,0,True,dusk road,stepped,snapshot imported into local state,True
+517,44,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d44:t1,v34-833607,0,True,low plank crossing,stepped,snapshot imported into local state,True
+520,44,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d44:t4,v34-593058,156,True,dusk road,stepped,snapshot copied to export box,True
+523,44,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d44:t7,v34-833792,173,True,low plank crossing,stepped,snapshot copied to export box,True
+526,44,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d44:t10,v34-593058,0,True,dusk road,stepped,snapshot imported into local state,True
+529,45,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d45:t1,v34-833792,0,True,low plank crossing,stepped,snapshot imported into local state,True
+532,45,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d45:t4,v34-593230,156,True,dusk road,stepped,snapshot copied to export box,True
+535,45,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d45:t7,v34-833977,173,True,low plank crossing,stepped,snapshot copied to export box,True
+538,45,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d45:t10,v34-593230,0,True,dusk road,stepped,snapshot imported into local state,True
+541,46,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d46:t1,v34-833977,0,True,low plank crossing,stepped,snapshot imported into local state,True
+544,46,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d46:t4,v34-591853,156,True,dusk road,stepped,snapshot copied to export box,True
+547,46,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d46:t7,v34-832496,173,True,low plank crossing,stepped,snapshot copied to export box,True
+550,46,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d46:t10,v34-591853,0,True,dusk road,stepped,snapshot imported into local state,True
+553,47,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d47:t1,v34-832496,0,True,low plank crossing,stepped,snapshot imported into local state,True
+556,47,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d47:t4,v34-592025,156,True,dusk road,stepped,snapshot copied to export box,True
+559,47,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d47:t7,v34-832681,173,True,low plank crossing,stepped,snapshot copied to export box,True
+562,47,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d47:t10,v34-592025,0,True,dusk road,stepped,snapshot imported into local state,True
+565,48,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d48:t1,v34-745474,0,True,warm archive lane,paused,snapshot imported into local state,True
+568,48,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d48:t4,v34-645215,162,True,fen track,playing,snapshot copied to export box,True
+571,48,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d48:t7,v34-745655,167,True,warm archive lane,paused,snapshot copied to export box,True
+574,48,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d48:t10,v34-645215,0,True,fen track,playing,snapshot imported into local state,True
+577,49,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d49:t1,v34-745655,0,True,warm archive lane,paused,snapshot imported into local state,True
+580,49,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d49:t4,v34-643933,162,True,fen track,stepped,snapshot copied to export box,True
+583,49,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d49:t7,v34-745836,167,True,warm archive lane,paused,snapshot copied to export box,True
+586,49,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d49:t10,v34-644111,0,True,fen track,stepped,snapshot imported into local state,True
+589,50,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d50:t1,v34-745836,0,True,warm archive lane,paused,snapshot imported into local state,True
+592,50,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d50:t4,v34-644464,162,True,fen track,stepped,snapshot copied to export box,True
+595,50,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d50:t7,v34-746017,167,True,warm archive lane,paused,snapshot copied to export box,True
+598,50,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d50:t10,v34-644464,0,True,fen track,stepped,snapshot imported into local state,True
+601,51,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d51:t1,v34-746017,0,True,warm archive lane,paused,snapshot imported into local state,True
+604,51,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d51:t4,v34-644639,162,True,fen track,stepped,snapshot copied to export box,True
+607,51,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d51:t7,v34-746198,167,True,warm archive lane,paused,snapshot copied to export box,True
+610,51,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d51:t10,v34-644639,0,True,fen track,stepped,snapshot imported into local state,True
+613,52,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d52:t1,v34-767034,0,True,warm archive lane,stepped,snapshot imported into local state,True
+616,52,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d52:t4,v34-644814,162,True,fen track,stepped,snapshot copied to export box,True
+619,52,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d52:t7,v34-765735,168,True,warm archive lane,stepped,snapshot copied to export box,True
+622,52,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d52:t10,v34-644814,0,True,fen track,stepped,snapshot imported into local state,True
+625,53,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d53:t1,v34-765920,0,True,warm archive lane,stepped,snapshot imported into local state,True
+628,53,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d53:t4,v34-644989,162,True,fen track,stepped,snapshot copied to export box,True
+631,53,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d53:t7,v34-766102,168,True,warm archive lane,stepped,snapshot copied to export box,True
+634,53,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d53:t10,v34-644989,0,True,fen track,stepped,snapshot imported into local state,True
+637,54,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d54:t1,v34-766102,0,True,warm archive lane,stepped,snapshot imported into local state,True
+640,54,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d54:t4,v34-645164,162,True,fen track,stepped,snapshot copied to export box,True
+643,54,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d54:t7,v34-766284,168,True,warm archive lane,stepped,snapshot copied to export box,True
+646,54,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d54:t10,v34-645164,0,True,fen track,stepped,snapshot imported into local state,True
+649,55,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d55:t1,v34-766284,0,True,warm archive lane,stepped,snapshot imported into local state,True
+652,55,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d55:t4,v34-645339,162,True,fen track,stepped,snapshot copied to export box,True
+655,55,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d55:t7,v34-766466,168,True,warm archive lane,stepped,snapshot copied to export box,True
+658,55,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d55:t10,v34-645339,0,True,fen track,stepped,snapshot imported into local state,True
+661,56,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d56:t1,v34-713772,0,True,stone kiosk path,stepped,snapshot imported into local state,True
+664,56,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d56:t4,v34-826997,174,True,inner repair yard,stepped,snapshot copied to export box,True
+667,56,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d56:t7,v34-713951,163,True,stone kiosk path,stepped,snapshot copied to export box,True
+670,56,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d56:t10,v34-826997,0,True,inner repair yard,stepped,snapshot imported into local state,True
+673,57,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d57:t1,v34-713951,0,True,stone kiosk path,stepped,snapshot imported into local state,True
+676,57,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d57:t4,v34-825516,174,True,inner repair yard,stepped,snapshot copied to export box,True
+679,57,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d57:t7,v34-714130,163,True,stone kiosk path,stepped,snapshot copied to export box,True
+682,57,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d57:t10,v34-825516,0,True,inner repair yard,stepped,snapshot imported into local state,True
+685,58,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d58:t1,v34-714130,0,True,stone kiosk path,stepped,snapshot imported into local state,True
+688,58,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d58:t4,v34-825701,174,True,inner repair yard,stepped,snapshot copied to export box,True
+691,58,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d58:t7,v34-714309,163,True,stone kiosk path,stepped,snapshot copied to export box,True
+694,58,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d58:t10,v34-825701,0,True,inner repair yard,stepped,snapshot imported into local state,True
+697,59,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d59:t1,v34-714309,0,True,stone kiosk path,stepped,snapshot imported into local state,True
+700,59,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d59:t4,v34-825886,174,True,inner repair yard,stepped,snapshot copied to export box,True
+703,59,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d59:t7,v34-714488,163,True,stone kiosk path,stepped,snapshot copied to export box,True
+706,59,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d59:t10,v34-825886,0,True,inner repair yard,stepped,snapshot imported into local state,True
+709,60,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d60:t1,v34-714488,0,True,stone kiosk path,stepped,snapshot imported into local state,True
+712,60,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d60:t4,v34-826071,174,True,inner repair yard,stepped,snapshot copied to export box,True
+715,60,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d60:t7,v34-714667,163,True,stone kiosk path,stepped,snapshot copied to export box,True
+718,60,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d60:t10,v34-826071,0,True,inner repair yard,stepped,snapshot imported into local state,True
+721,61,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d61:t1,v34-714667,0,True,stone kiosk path,stepped,snapshot imported into local state,True
+724,61,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d61:t4,v34-826256,174,True,inner repair yard,stepped,snapshot copied to export box,True
+727,61,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d61:t7,v34-714846,163,True,stone kiosk path,stepped,snapshot copied to export box,True
+730,61,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d61:t10,v34-826256,0,True,inner repair yard,stepped,snapshot imported into local state,True
+733,62,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d62:t1,v34-714846,0,True,stone kiosk path,stepped,snapshot imported into local state,True
+736,62,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d62:t4,v34-826441,174,True,inner repair yard,stepped,snapshot copied to export box,True
+739,62,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d62:t7,v34-607403,157,True,paper lane,stepped,snapshot copied to export box,True
+742,62,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d62:t10,v34-826441,0,True,inner repair yard,stepped,snapshot imported into local state,True
+745,63,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d63:t1,v34-607579,0,True,paper lane,stepped,snapshot imported into local state,True
+748,63,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d63:t4,v34-826626,174,True,inner repair yard,stepped,snapshot copied to export box,True
+751,63,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d63:t7,v34-607752,157,True,paper lane,stepped,snapshot copied to export box,True
+754,63,central_repair_ring,paste_import_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d63:t4,v34-826626,0,False,inner repair yard,stepped,snapshot parse warning; previous state kept,False
+757,64,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d64:t1,v34-733664,0,True,river lantern loop,paused,snapshot imported into local state,True
+760,64,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d64:t4,v34-833465,173,True,low plank crossing,playing,snapshot copied to export box,True
+763,64,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d64:t7,v34-733844,164,True,river lantern loop,paused,snapshot copied to export box,True
+766,64,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d64:t10,v34-833465,0,True,low plank crossing,playing,snapshot imported into local state,True
+769,65,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d65:t1,v34-733844,0,True,river lantern loop,paused,snapshot imported into local state,True
+772,65,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d65:t4,v34-831984,173,True,low plank crossing,playing,snapshot copied to export box,True
+775,65,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d65:t7,v34-732403,164,True,river lantern loop,paused,snapshot copied to export box,True
+778,65,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d65:t10,v34-831984,0,True,low plank crossing,playing,snapshot imported into local state,True
+781,66,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d66:t1,v34-732403,0,True,river lantern loop,paused,snapshot imported into local state,True
+784,66,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d66:t4,v34-832169,173,True,low plank crossing,playing,snapshot copied to export box,True
+787,66,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d66:t7,v34-732583,164,True,river lantern loop,paused,snapshot copied to export box,True
+790,66,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d66:t10,v34-832169,0,True,low plank crossing,playing,snapshot imported into local state,True
+793,67,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d67:t1,v34-753298,0,True,river lantern loop,stepped,snapshot imported into local state,True
+796,67,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d67:t4,v34-832354,173,True,low plank crossing,playing,snapshot copied to export box,True
+799,67,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d67:t7,v34-753663,165,True,river lantern loop,stepped,snapshot copied to export box,True
+802,67,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d67:t10,v34-832354,0,True,low plank crossing,playing,snapshot imported into local state,True
+805,68,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d68:t1,v34-753847,0,True,river lantern loop,stepped,snapshot imported into local state,True
+808,68,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d68:t4,v34-832539,173,True,low plank crossing,playing,snapshot copied to export box,True
+811,68,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d68:t7,v34-754028,165,True,river lantern loop,stepped,snapshot copied to export box,True
+814,68,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d68:t10,v34-832539,0,True,low plank crossing,playing,snapshot imported into local state,True
+817,69,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d69:t1,v34-754028,0,True,river lantern loop,stepped,snapshot imported into local state,True
+820,69,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d69:t4,v34-832724,173,True,low plank crossing,playing,snapshot copied to export box,True
+823,69,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d69:t7,v34-754209,165,True,river lantern loop,stepped,snapshot copied to export box,True
+826,69,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d69:t10,v34-832724,0,True,low plank crossing,playing,snapshot imported into local state,True
+829,70,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d70:t1,v34-754209,0,True,river lantern loop,stepped,snapshot imported into local state,True
+832,70,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d70:t4,v34-833038,173,True,low plank crossing,stepped,snapshot copied to export box,True
+835,70,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d70:t7,v34-754390,165,True,river lantern loop,stepped,snapshot copied to export box,True
+838,70,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d70:t10,v34-833226,0,True,low plank crossing,stepped,snapshot imported into local state,True
+841,71,signal_orchard,paste_import_snapshot,snapshot-paste-box,snapshot:signal_orchard:d70:t7,v34-754390,0,False,river lantern loop,stepped,snapshot parse warning; previous state kept,False
+844,71,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d71:t4,v34-833599,173,True,low plank crossing,stepped,snapshot copied to export box,True
+847,71,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d71:t7,v34-754390,165,True,river lantern loop,stepped,snapshot copied to export box,True
+850,71,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d71:t10,v34-833599,0,True,low plank crossing,stepped,snapshot imported into local state,True
+853,72,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d72:t1,v34-810594,0,True,market plank route,stepped,snapshot imported into local state,True
+856,72,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d72:t4,v34-670198,162,True,glass stair,stepped,snapshot copied to export box,True
+859,72,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d72:t7,v34-809281,171,True,market plank route,stepped,snapshot copied to export box,True
+862,72,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d72:t10,v34-670198,0,True,glass stair,stepped,snapshot imported into local state,True
+865,73,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d73:t1,v34-809281,0,True,market plank route,stepped,snapshot imported into local state,True
+868,73,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d73:t4,v34-670374,162,True,glass stair,stepped,snapshot copied to export box,True
+871,73,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d73:t7,v34-809465,171,True,market plank route,stepped,snapshot copied to export box,True
+874,73,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d73:t10,v34-670374,0,True,glass stair,stepped,snapshot imported into local state,True
+877,74,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d74:t1,v34-809465,0,True,market plank route,stepped,snapshot imported into local state,True
+880,74,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d74:t4,v34-670550,162,True,glass stair,stepped,snapshot copied to export box,True
+883,74,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d74:t7,v34-809649,171,True,market plank route,stepped,snapshot copied to export box,True
+886,74,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d74:t10,v34-670550,0,True,glass stair,stepped,snapshot imported into local state,True
+889,75,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d75:t1,v34-809649,0,True,market plank route,stepped,snapshot imported into local state,True
+892,75,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d75:t4,v34-670726,162,True,glass stair,stepped,snapshot copied to export box,True
+895,75,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d75:t7,v34-809833,171,True,market plank route,stepped,snapshot copied to export box,True
+898,75,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d75:t10,v34-670726,0,True,glass stair,stepped,snapshot imported into local state,True
+901,76,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d76:t1,v34-809833,0,True,market plank route,stepped,snapshot imported into local state,True
+904,76,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d76:t4,v34-669317,162,True,glass stair,stepped,snapshot copied to export box,True
+907,76,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d76:t7,v34-810017,171,True,market plank route,stepped,snapshot copied to export box,True
+910,76,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d76:t10,v34-669317,0,True,glass stair,stepped,snapshot imported into local state,True
+913,77,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d77:t1,v34-810017,0,True,market plank route,stepped,snapshot imported into local state,True
+916,77,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d77:t4,v34-669493,162,True,glass stair,stepped,snapshot copied to export box,True
+919,77,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d77:t7,v34-810201,171,True,market plank route,stepped,snapshot copied to export box,True
+922,77,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d77:t10,v34-669493,0,True,glass stair,stepped,snapshot imported into local state,True
+925,78,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d78:t1,v34-810201,0,True,market plank route,stepped,snapshot imported into local state,True
+928,78,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d78:t4,v34-669669,162,True,glass stair,stepped,snapshot copied to export box,True
+931,78,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d78:t7,v34-808728,171,True,market plank route,stepped,snapshot copied to export box,True
+934,78,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d78:t10,v34-669669,0,True,glass stair,stepped,snapshot imported into local state,True
+937,79,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d79:t1,v34-808728,0,True,market plank route,stepped,snapshot imported into local state,True
+940,79,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d79:t4,v34-669845,162,True,glass stair,stepped,snapshot copied to export box,True
+943,79,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d79:t7,v34-808912,171,True,market plank route,stepped,snapshot copied to export box,True
+946,79,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d79:t10,v34-669845,0,True,glass stair,stepped,snapshot imported into local state,True
+949,80,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d80:t1,v34-767513,0,True,outer bell path,paused,snapshot imported into local state,True
+952,80,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d80:t4,v34-608515,157,True,paper lane,playing,snapshot copied to export box,True
+955,80,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d80:t7,v34-767695,171,True,outer bell path,paused,snapshot copied to export box,True
+958,80,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d80:t10,v34-608515,0,True,paper lane,playing,snapshot imported into local state,True
+961,81,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d81:t1,v34-767695,0,True,outer bell path,paused,snapshot imported into local state,True
+964,81,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d81:t4,v34-608688,157,True,paper lane,playing,snapshot copied to export box,True
+967,81,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d81:t7,v34-767877,171,True,outer bell path,paused,snapshot copied to export box,True
+970,81,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d81:t10,v34-608688,0,True,paper lane,playing,snapshot imported into local state,True
+973,82,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d82:t1,v34-788834,0,True,outer bell path,stepped,snapshot imported into local state,True
+976,82,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d82:t4,v34-608861,157,True,paper lane,playing,snapshot copied to export box,True
+979,82,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d82:t7,v34-789203,172,True,outer bell path,stepped,snapshot copied to export box,True
+982,82,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d82:t10,v34-608861,0,True,paper lane,playing,snapshot imported into local state,True
+985,83,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d83:t1,v34-834096,0,True,inner repair yard,stepped,snapshot imported into local state,True
+988,83,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d83:t4,v34-609034,157,True,paper lane,playing,snapshot copied to export box,True
+991,83,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d83:t7,v34-834470,175,True,inner repair yard,stepped,snapshot copied to export box,True
+994,83,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d83:t10,v34-609034,0,True,paper lane,playing,snapshot imported into local state,True
+997,84,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d84:t1,v34-834470,0,True,inner repair yard,stepped,snapshot imported into local state,True
+1000,84,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d84:t4,v34-609207,157,True,paper lane,playing,snapshot copied to export box,True
+1003,84,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d84:t7,v34-834655,175,True,inner repair yard,stepped,snapshot copied to export box,True
+1006,84,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d84:t10,v34-609207,0,True,paper lane,playing,snapshot imported into local state,True
+1009,85,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d85:t1,v34-834655,0,True,inner repair yard,stepped,snapshot imported into local state,True
+1012,85,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d85:t4,v34-609497,157,True,paper lane,stepped,snapshot copied to export box,True
+1015,85,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d85:t7,v34-834840,175,True,inner repair yard,stepped,snapshot copied to export box,True
+1018,85,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d85:t10,v34-609673,0,True,paper lane,stepped,snapshot imported into local state,True
+1021,86,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d86:t1,v34-834840,0,True,inner repair yard,stepped,snapshot imported into local state,True
+1024,86,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d86:t4,v34-610022,157,True,paper lane,stepped,snapshot copied to export box,True
+1027,86,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d86:t7,v34-833359,175,True,inner repair yard,stepped,snapshot copied to export box,True
+1030,86,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d86:t10,v34-610022,0,True,paper lane,stepped,snapshot imported into local state,True
+1033,87,central_repair_ring,paste_import_snapshot,snapshot-paste-box,imported:central_repair_ring:d87:t1,v34-833359,0,True,inner repair yard,stepped,snapshot imported into local state,True
+1036,87,archive_signal,export_snapshot,snapshot-paste-box,snapshot:archive_signal:d87:t4,v34-610195,157,True,paper lane,stepped,snapshot copied to export box,True
+1039,87,central_repair_ring,export_snapshot,snapshot-paste-box,snapshot:central_repair_ring:d87:t7,v34-833544,175,True,inner repair yard,stepped,snapshot copied to export box,True
+1042,87,archive_signal,paste_import_snapshot,snapshot-paste-box,imported:archive_signal:d87:t10,v34-610195,0,True,paper lane,stepped,snapshot imported into local state,True
+1045,88,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d88:t1,v34-877579,0,True,lantern ridge detour,stepped,snapshot imported into local state,True
+1048,88,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d88:t4,v34-600734,157,True,dusk road,stepped,snapshot copied to export box,True
+1051,88,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d88:t7,v34-877957,176,True,lantern ridge detour,stepped,snapshot copied to export box,True
+1054,88,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d88:t10,v34-600734,0,True,dusk road,stepped,snapshot imported into local state,True
+1057,89,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d89:t1,v34-877957,0,True,lantern ridge detour,stepped,snapshot imported into local state,True
+1060,89,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d89:t4,v34-600906,157,True,dusk road,stepped,snapshot copied to export box,True
+1063,89,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d89:t7,v34-878144,176,True,lantern ridge detour,stepped,snapshot copied to export box,True
+1066,89,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d89:t10,v34-600906,0,True,dusk road,stepped,snapshot imported into local state,True
+1069,90,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d90:t1,v34-878144,0,True,lantern ridge detour,stepped,snapshot imported into local state,True
+1072,90,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d90:t4,v34-601078,157,True,dusk road,stepped,snapshot copied to export box,True
+1075,90,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d90:t7,v34-878331,176,True,lantern ridge detour,stepped,snapshot copied to export box,True
+1078,90,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d90:t10,v34-601078,0,True,dusk road,stepped,snapshot imported into local state,True
+1081,91,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d91:t1,v34-878331,0,True,lantern ridge detour,stepped,snapshot imported into local state,True
+1084,91,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d91:t4,v34-601250,157,True,dusk road,stepped,snapshot copied to export box,True
+1087,91,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d91:t7,v34-878518,176,True,lantern ridge detour,stepped,snapshot copied to export box,True
+1090,91,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d91:t10,v34-601250,0,True,dusk road,stepped,snapshot imported into local state,True
+1093,92,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d92:t1,v34-878518,0,True,lantern ridge detour,stepped,snapshot imported into local state,True
+1096,92,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d92:t4,v34-601422,157,True,dusk road,stepped,snapshot copied to export box,True
+1099,92,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d92:t7,v34-878705,176,True,lantern ridge detour,stepped,snapshot copied to export box,True
+1102,92,signal_orchard,paste_import_snapshot,snapshot-paste-box,snapshot:signal_orchard:d92:t4,v34-601422,0,False,dusk road,stepped,snapshot parse warning; previous state kept,False
+1105,93,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d93:t1,v34-878705,0,True,lantern ridge detour,stepped,snapshot imported into local state,True
+1108,93,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d93:t4,v34-601422,157,True,dusk road,stepped,snapshot copied to export box,True
+1111,93,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d93:t7,v34-878892,176,True,lantern ridge detour,stepped,snapshot copied to export box,True
+1114,93,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d93:t10,v34-601422,0,True,dusk road,stepped,snapshot imported into local state,True
+1117,94,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d94:t1,v34-878892,0,True,lantern ridge detour,stepped,snapshot imported into local state,True
+1120,94,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d94:t4,v34-601594,157,True,dusk road,stepped,snapshot copied to export box,True
+1123,94,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d94:t7,v34-877395,176,True,lantern ridge detour,stepped,snapshot copied to export box,True
+1126,94,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d94:t10,v34-601594,0,True,dusk road,stepped,snapshot imported into local state,True
+1129,95,riverbend_roofward,paste_import_snapshot,snapshot-paste-box,imported:riverbend_roofward:d95:t1,v34-877395,0,True,lantern ridge detour,stepped,snapshot imported into local state,True
+1132,95,signal_orchard,export_snapshot,snapshot-paste-box,snapshot:signal_orchard:d95:t4,v34-601766,157,True,dusk road,stepped,snapshot copied to export box,True
+1135,95,riverbend_roofward,export_snapshot,snapshot-paste-box,snapshot:riverbend_roofward:d95:t7,v34-877582,176,True,lantern ridge detour,stepped,snapshot copied to export box,True
+1138,95,signal_orchard,paste_import_snapshot,snapshot-paste-box,imported:signal_orchard:d95:t10,v34-601766,0,True,dusk road,stepped,snapshot imported into local state,True
+1141,96,roofward_archive,paste_import_snapshot,snapshot-paste-box,imported:roofward_archive:d96:t1,v34-754443,0,True,warm archive lane,paused,snapshot imported into local state,True
+1144,96,orchard_riverbend,export_snapshot,snapshot-paste-box,snapshot:orchard_riverbend:d96:t4,v34-652313,163,True,fen track,playing,snapshot copied to export box,True
+1147,96,roofward_archive,export_snapshot,snapshot-paste-box,snapshot:roofward_archive:d96:t7,v34-754624,168,True,warm archive lane,paused,snapshot copied to export box,True
+1150,96,orchard_riverbend,paste_import_snapshot,snapshot-paste-box,imported:orchard_riverbend:d96:t10,v34-652313,0,True,fen track,playing,snapshot imported into local state,True

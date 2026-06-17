@@ -1,0 +1,1153 @@
+tick_id,day,route_id,agent,control_id,button_label,click_kind,animation_state_before,animation_state_after,localstorage_key,localstorage_written,dom_event_handler,visible_state_badge,private_workspace_hidden
+0,1,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,idle,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+1,1,roofward_archive,Nia,anim-roofward_archive-step,Step one frame,animation_step,idle,stepped,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'stepped')",Nia: stepped,True
+2,1,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+3,1,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,idle,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+4,1,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ari: idle,True
+5,1,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+6,1,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+7,1,roofward_archive,Nia,anim-roofward_archive-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'stepped')",Nia: stepped,True
+8,1,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+9,1,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+10,1,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ari: idle,True
+11,1,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+12,2,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+13,2,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+14,2,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+15,2,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+16,2,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: idle,True
+17,2,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Juno: idle,True
+18,2,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+19,2,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+20,2,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+21,2,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+22,2,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: idle,True
+23,2,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Juno: idle,True
+24,3,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+25,3,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+26,3,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+27,3,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+28,3,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ari: idle,True
+29,3,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+30,3,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+31,3,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+32,3,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+33,3,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+34,3,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ari: idle,True
+35,3,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+36,4,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+37,4,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+38,4,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+39,4,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+40,4,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: idle,True
+41,4,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Juno: idle,True
+42,4,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+43,4,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+44,4,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+45,4,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+46,4,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: idle,True
+47,4,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Juno: idle,True
+48,5,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+49,5,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+50,5,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+51,5,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+52,5,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ari: idle,True
+53,5,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+54,5,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+55,5,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+56,5,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+57,5,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+58,5,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ari: idle,True
+59,5,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+60,6,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+61,6,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+62,6,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+63,6,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+64,6,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: idle,True
+65,6,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Juno: idle,True
+66,6,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+67,6,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+68,6,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+69,6,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+70,6,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: idle,True
+71,6,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Juno: idle,True
+72,7,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+73,7,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+74,7,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+75,7,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+76,7,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ari: idle,True
+77,7,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+78,7,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+79,7,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+80,7,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+81,7,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+82,7,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,idle,idle,ssrm.v34.route.orchard_riverbend,False,noop,Ari: idle,True
+83,7,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+84,8,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,stepped,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+85,8,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+86,8,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+87,8,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,idle,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+88,8,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+89,8,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+90,8,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+91,8,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+92,8,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+93,8,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+94,8,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+95,8,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+96,9,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+97,9,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+98,9,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+99,9,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+100,9,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Juno: idle,True
+101,9,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+102,9,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+103,9,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+104,9,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+105,9,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+106,9,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Juno: idle,True
+107,9,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+108,10,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+109,10,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+110,10,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+111,10,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+112,10,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+113,10,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+114,10,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+115,10,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+116,10,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+117,10,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+118,10,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+119,10,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+120,11,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+121,11,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+122,11,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+123,11,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+124,11,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Juno: idle,True
+125,11,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+126,11,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+127,11,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+128,11,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+129,11,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+130,11,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Juno: idle,True
+131,11,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+132,12,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+133,12,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+134,12,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+135,12,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+136,12,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+137,12,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+138,12,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+139,12,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+140,12,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+141,12,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+142,12,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Pax: idle,True
+143,12,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+144,13,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+145,13,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+146,13,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+147,13,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+148,13,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Juno: idle,True
+149,13,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+150,13,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+151,13,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+152,13,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+153,13,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+154,13,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,idle,idle,ssrm.v34.route.central_repair_ring,False,noop,Juno: idle,True
+155,13,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+156,14,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+157,14,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+158,14,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+159,14,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+160,14,central_repair_ring,Pax,anim-central_repair_ring-step,Step one frame,animation_step,idle,stepped,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'stepped')",Pax: stepped,True
+161,14,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+162,14,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+163,14,archive_signal,Milo,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Milo: idle,True
+164,14,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+165,14,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+166,14,central_repair_ring,Pax,anim-central_repair_ring-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'stepped')",Pax: stepped,True
+167,14,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+168,15,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+169,15,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+170,15,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+171,15,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+172,15,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+173,15,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+174,15,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+175,15,archive_signal,Nia,anim-archive_signal-idle,hold,none,idle,idle,ssrm.v34.route.archive_signal,False,noop,Nia: idle,True
+176,15,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+177,15,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+178,15,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+179,15,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+180,16,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,idle,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+181,16,signal_orchard,Milo,anim-signal_orchard-step,Step one frame,animation_step,paused,stepped,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'stepped')",Milo: stepped,True
+182,16,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+183,16,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,stepped,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+184,16,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+185,16,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Fay: playing,True
+186,16,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+187,16,signal_orchard,Milo,anim-signal_orchard-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'stepped')",Milo: stepped,True
+188,16,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+189,16,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+190,16,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+191,16,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Fay: playing,True
+192,17,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+193,17,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+194,17,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+195,17,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+196,17,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+197,17,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Nia: playing,True
+198,17,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+199,17,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+200,17,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+201,17,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+202,17,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+203,17,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Nia: playing,True
+204,18,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+205,18,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+206,18,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+207,18,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+208,18,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+209,18,roofward_archive,Fay,anim-roofward_archive-step,Step one frame,animation_step,playing,stepped,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'stepped')",Fay: stepped,True
+210,18,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+211,18,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+212,18,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+213,18,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+214,18,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+215,18,roofward_archive,Fay,anim-roofward_archive-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'stepped')",Fay: stepped,True
+216,19,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+217,19,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+218,19,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+219,19,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+220,19,riverbend_roofward,Fay,anim-riverbend_roofward-step,Step one frame,animation_step,playing,stepped,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'stepped')",Fay: stepped,True
+221,19,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+222,19,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+223,19,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+224,19,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+225,19,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+226,19,riverbend_roofward,Fay,anim-riverbend_roofward-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'stepped')",Fay: stepped,True
+227,19,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+228,20,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+229,20,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+230,20,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+231,20,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+232,20,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+233,20,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+234,20,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+235,20,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+236,20,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+237,20,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+238,20,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+239,20,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+240,21,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+241,21,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+242,21,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+243,21,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+244,21,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+245,21,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+246,21,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+247,21,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+248,21,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+249,21,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+250,21,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+251,21,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+252,22,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+253,22,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+254,22,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+255,22,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+256,22,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+257,22,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+258,22,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+259,22,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+260,22,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+261,22,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+262,22,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+263,22,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+264,23,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+265,23,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+266,23,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+267,23,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+268,23,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+269,23,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+270,23,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+271,23,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+272,23,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+273,23,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+274,23,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+275,23,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+276,24,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,stepped,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+277,24,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+278,24,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+279,24,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,stepped,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+280,24,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+281,24,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+282,24,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+283,24,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+284,24,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+285,24,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+286,24,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+287,24,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+288,25,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+289,25,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+290,25,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+291,25,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+292,25,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+293,25,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+294,25,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+295,25,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+296,25,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+297,25,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+298,25,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+299,25,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+300,26,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+301,26,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+302,26,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+303,26,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+304,26,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+305,26,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+306,26,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+307,26,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+308,26,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+309,26,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+310,26,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+311,26,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+312,27,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+313,27,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+314,27,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+315,27,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+316,27,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+317,27,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+318,27,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+319,27,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+320,27,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+321,27,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+322,27,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+323,27,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+324,28,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+325,28,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+326,28,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+327,28,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+328,28,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+329,28,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+330,28,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+331,28,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+332,28,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+333,28,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+334,28,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+335,28,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+336,29,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+337,29,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+338,29,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+339,29,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+340,29,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+341,29,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+342,29,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+343,29,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+344,29,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+345,29,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+346,29,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+347,29,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+348,30,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+349,30,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+350,30,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+351,30,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+352,30,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+353,30,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+354,30,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+355,30,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+356,30,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+357,30,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+358,30,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+359,30,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+360,31,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+361,31,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+362,31,central_repair_ring,Juno,anim-central_repair_ring-step,Step one frame,animation_step,paused,stepped,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'stepped')",Juno: stepped,True
+363,31,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+364,31,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+365,31,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+366,31,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+367,31,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+368,31,central_repair_ring,Juno,anim-central_repair_ring-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'stepped')",Juno: stepped,True
+369,31,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+370,31,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+371,31,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+372,32,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,paused,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+373,32,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+374,32,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Ari: paused,True
+375,32,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,stepped,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+376,32,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+377,32,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,playing,playing,ssrm.v34.route.signal_orchard,False,noop,Milo: playing,True
+378,32,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+379,32,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+380,32,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Ari: paused,True
+381,32,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+382,32,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+383,32,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,playing,playing,ssrm.v34.route.signal_orchard,False,noop,Milo: playing,True
+384,33,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+385,33,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+386,33,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Fay: paused,True
+387,33,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+388,33,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+389,33,signal_orchard,Ivo,anim-signal_orchard-step,Step one frame,animation_step,playing,stepped,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'stepped')",Ivo: stepped,True
+390,33,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+391,33,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+392,33,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Fay: paused,True
+393,33,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+394,33,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+395,33,signal_orchard,Ivo,anim-signal_orchard-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'stepped')",Ivo: stepped,True
+396,34,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+397,34,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+398,34,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Ari: paused,True
+399,34,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+400,34,archive_signal,Nia,anim-archive_signal-step,Step one frame,animation_step,playing,stepped,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'stepped')",Nia: stepped,True
+401,34,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+402,34,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+403,34,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+404,34,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Ari: paused,True
+405,34,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+406,34,archive_signal,Nia,anim-archive_signal-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'stepped')",Nia: stepped,True
+407,34,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+408,35,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+409,35,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+410,35,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Fay: paused,True
+411,35,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+412,35,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+413,35,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+414,35,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+415,35,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+416,35,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Fay: paused,True
+417,35,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+418,35,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+419,35,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+420,36,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+421,36,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+422,36,riverbend_roofward,Ari,anim-riverbend_roofward-step,Step one frame,animation_step,paused,stepped,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'stepped')",Ari: stepped,True
+423,36,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+424,36,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+425,36,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+426,36,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+427,36,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+428,36,riverbend_roofward,Ari,anim-riverbend_roofward-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'stepped')",Ari: stepped,True
+429,36,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+430,36,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+431,36,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+432,37,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+433,37,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+434,37,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+435,37,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+436,37,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+437,37,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+438,37,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+439,37,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+440,37,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+441,37,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+442,37,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+443,37,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+444,38,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+445,38,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+446,38,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+447,38,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+448,38,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+449,38,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+450,38,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+451,38,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+452,38,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+453,38,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+454,38,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+455,38,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+456,39,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+457,39,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+458,39,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+459,39,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+460,39,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+461,39,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+462,39,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+463,39,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+464,39,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+465,39,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+466,39,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+467,39,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+468,40,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,stepped,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+469,40,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+470,40,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+471,40,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,stepped,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+472,40,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+473,40,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+474,40,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+475,40,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+476,40,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+477,40,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+478,40,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+479,40,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+480,41,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+481,41,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+482,41,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+483,41,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+484,41,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+485,41,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+486,41,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+487,41,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+488,41,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+489,41,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+490,41,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+491,41,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+492,42,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+493,42,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+494,42,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+495,42,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+496,42,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+497,42,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+498,42,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+499,42,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+500,42,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+501,42,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+502,42,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+503,42,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+504,43,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+505,43,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+506,43,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+507,43,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+508,43,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+509,43,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+510,43,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+511,43,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+512,43,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+513,43,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+514,43,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+515,43,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+516,44,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+517,44,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+518,44,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+519,44,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+520,44,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+521,44,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+522,44,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+523,44,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+524,44,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+525,44,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+526,44,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+527,44,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+528,45,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+529,45,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+530,45,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+531,45,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+532,45,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+533,45,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+534,45,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+535,45,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+536,45,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+537,45,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+538,45,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+539,45,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+540,46,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+541,46,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+542,46,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+543,46,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+544,46,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+545,46,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+546,46,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+547,46,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+548,46,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+549,46,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+550,46,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+551,46,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+552,47,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+553,47,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+554,47,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+555,47,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+556,47,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+557,47,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+558,47,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+559,47,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+560,47,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+561,47,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+562,47,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+563,47,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+564,48,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,stepped,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+565,48,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+566,48,archive_signal,Nia,anim-archive_signal-idle,hold,none,paused,paused,ssrm.v34.route.archive_signal,False,noop,Nia: paused,True
+567,48,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,stepped,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+568,48,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+569,48,central_repair_ring,Juno,anim-central_repair_ring-step,Step one frame,animation_step,playing,stepped,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'stepped')",Juno: stepped,True
+570,48,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+571,48,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+572,48,archive_signal,Nia,anim-archive_signal-idle,hold,none,paused,paused,ssrm.v34.route.archive_signal,False,noop,Nia: paused,True
+573,48,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+574,48,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+575,48,central_repair_ring,Juno,anim-central_repair_ring-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'stepped')",Juno: stepped,True
+576,49,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+577,49,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+578,49,archive_signal,Milo,anim-archive_signal-idle,hold,none,paused,paused,ssrm.v34.route.archive_signal,False,noop,Milo: paused,True
+579,49,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+580,49,orchard_riverbend,Ari,anim-orchard_riverbend-step,Step one frame,animation_step,playing,stepped,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'stepped')",Ari: stepped,True
+581,49,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+582,49,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+583,49,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+584,49,archive_signal,Milo,anim-archive_signal-idle,hold,none,paused,paused,ssrm.v34.route.archive_signal,False,noop,Milo: paused,True
+585,49,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+586,49,orchard_riverbend,Ari,anim-orchard_riverbend-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'stepped')",Ari: stepped,True
+587,49,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+588,50,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+589,50,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+590,50,archive_signal,Nia,anim-archive_signal-idle,hold,none,paused,paused,ssrm.v34.route.archive_signal,False,noop,Nia: paused,True
+591,50,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+592,50,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+593,50,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+594,50,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+595,50,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+596,50,archive_signal,Nia,anim-archive_signal-idle,hold,none,paused,paused,ssrm.v34.route.archive_signal,False,noop,Nia: paused,True
+597,50,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+598,50,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+599,50,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+600,51,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+601,51,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+602,51,archive_signal,Milo,anim-archive_signal-step,Step one frame,animation_step,paused,stepped,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'stepped')",Milo: stepped,True
+603,51,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+604,51,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+605,51,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+606,51,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+607,51,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+608,51,archive_signal,Milo,anim-archive_signal-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'stepped')",Milo: stepped,True
+609,51,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+610,51,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+611,51,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+612,52,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+613,52,roofward_archive,Fay,anim-roofward_archive-step,Step one frame,animation_step,paused,stepped,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'stepped')",Fay: stepped,True
+614,52,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+615,52,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+616,52,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+617,52,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+618,52,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+619,52,roofward_archive,Fay,anim-roofward_archive-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'stepped')",Fay: stepped,True
+620,52,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+621,52,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+622,52,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+623,52,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+624,53,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+625,53,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+626,53,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+627,53,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+628,53,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+629,53,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+630,53,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+631,53,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+632,53,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+633,53,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+634,53,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+635,53,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+636,54,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+637,54,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+638,54,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+639,54,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+640,54,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+641,54,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+642,54,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+643,54,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+644,54,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+645,54,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+646,54,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+647,54,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+648,55,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+649,55,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+650,55,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+651,55,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+652,55,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+653,55,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+654,55,riverbend_roofward,Fay,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+655,55,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+656,55,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+657,55,signal_orchard,Ivo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+658,55,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+659,55,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+660,56,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,stepped,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+661,56,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+662,56,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+663,56,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,stepped,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+664,56,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+665,56,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+666,56,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+667,56,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+668,56,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+669,56,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+670,56,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+671,56,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+672,57,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+673,57,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+674,57,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+675,57,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+676,57,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+677,57,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+678,57,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+679,57,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+680,57,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+681,57,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+682,57,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+683,57,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+684,58,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+685,58,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+686,58,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+687,58,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+688,58,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+689,58,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+690,58,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+691,58,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+692,58,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+693,58,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+694,58,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+695,58,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+696,59,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+697,59,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+698,59,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+699,59,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+700,59,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+701,59,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+702,59,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+703,59,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+704,59,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+705,59,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+706,59,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+707,59,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+708,60,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+709,60,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+710,60,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+711,60,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+712,60,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+713,60,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+714,60,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+715,60,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+716,60,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+717,60,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+718,60,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+719,60,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+720,61,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+721,61,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+722,61,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+723,61,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+724,61,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+725,61,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+726,61,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+727,61,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+728,61,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+729,61,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+730,61,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+731,61,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+732,62,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+733,62,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+734,62,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+735,62,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+736,62,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+737,62,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+738,62,roofward_archive,Nia,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+739,62,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+740,62,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+741,62,orchard_riverbend,Ari,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+742,62,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+743,62,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+744,63,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+745,63,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+746,63,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+747,63,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+748,63,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+749,63,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+750,63,roofward_archive,Fay,anim-roofward_archive-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'playing')",Fay: playing,True
+751,63,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+752,63,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+753,63,orchard_riverbend,Ivo,anim-orchard_riverbend-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'paused')",Ivo: paused,True
+754,63,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+755,63,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+756,64,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,stepped,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+757,64,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+758,64,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+759,64,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,stepped,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+760,64,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+761,64,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Fay: playing,True
+762,64,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+763,64,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+764,64,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: paused,True
+765,64,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+766,64,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+767,64,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Fay: playing,True
+768,65,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+769,65,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+770,65,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+771,65,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+772,65,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+773,65,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Nia: playing,True
+774,65,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+775,65,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Ivo: paused,True
+776,65,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,paused,paused,ssrm.v34.route.orchard_riverbend,False,noop,Ari: paused,True
+777,65,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+778,65,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+779,65,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Nia: playing,True
+780,66,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+781,66,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+782,66,orchard_riverbend,Ivo,anim-orchard_riverbend-step,Step one frame,animation_step,paused,stepped,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'stepped')",Ivo: stepped,True
+783,66,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+784,66,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+785,66,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Fay: playing,True
+786,66,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+787,66,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,paused,paused,ssrm.v34.route.signal_orchard,False,noop,Milo: paused,True
+788,66,orchard_riverbend,Ivo,anim-orchard_riverbend-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'stepped')",Ivo: stepped,True
+789,66,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+790,66,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+791,66,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Fay: playing,True
+792,67,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+793,67,signal_orchard,Ivo,anim-signal_orchard-step,Step one frame,animation_step,paused,stepped,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'stepped')",Ivo: stepped,True
+794,67,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+795,67,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+796,67,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+797,67,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Nia: playing,True
+798,67,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+799,67,signal_orchard,Ivo,anim-signal_orchard-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'stepped')",Ivo: stepped,True
+800,67,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+801,67,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+802,67,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+803,67,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Nia: playing,True
+804,68,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+805,68,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+806,68,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+807,68,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+808,68,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+809,68,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Fay: playing,True
+810,68,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+811,68,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+812,68,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+813,68,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+814,68,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Ari: playing,True
+815,68,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,playing,playing,ssrm.v34.route.roofward_archive,False,noop,Fay: playing,True
+816,69,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+817,69,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+818,69,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+819,69,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+820,69,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+821,69,roofward_archive,Nia,anim-roofward_archive-step,Step one frame,animation_step,playing,stepped,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'stepped')",Nia: stepped,True
+822,69,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+823,69,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+824,69,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+825,69,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+826,69,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,playing,playing,ssrm.v34.route.riverbend_roofward,False,noop,Fay: playing,True
+827,69,roofward_archive,Nia,anim-roofward_archive-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'stepped')",Nia: stepped,True
+828,70,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+829,70,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+830,70,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+831,70,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+832,70,riverbend_roofward,Ari,anim-riverbend_roofward-step,Step one frame,animation_step,playing,stepped,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'stepped')",Ari: stepped,True
+833,70,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+834,70,archive_signal,Nia,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Nia: playing,True
+835,70,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+836,70,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+837,70,central_repair_ring,Juno,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Juno: paused,True
+838,70,riverbend_roofward,Ari,anim-riverbend_roofward-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'stepped')",Ari: stepped,True
+839,70,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+840,71,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+841,71,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+842,71,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+843,71,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+844,71,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+845,71,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+846,71,archive_signal,Milo,anim-archive_signal-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+847,71,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+848,71,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+849,71,central_repair_ring,Pax,anim-central_repair_ring-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'paused')",Pax: paused,True
+850,71,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+851,71,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+852,72,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,stepped,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+853,72,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+854,72,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+855,72,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,stepped,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+856,72,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+857,72,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+858,72,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+859,72,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+860,72,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+861,72,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+862,72,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+863,72,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+864,73,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+865,73,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+866,73,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+867,73,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+868,73,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+869,73,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+870,73,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+871,73,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+872,73,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+873,73,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+874,73,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+875,73,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+876,74,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+877,74,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+878,74,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+879,74,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+880,74,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+881,74,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+882,74,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+883,74,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+884,74,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+885,74,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+886,74,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+887,74,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+888,75,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+889,75,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+890,75,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+891,75,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+892,75,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+893,75,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+894,75,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+895,75,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+896,75,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+897,75,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+898,75,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+899,75,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+900,76,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+901,76,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+902,76,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+903,76,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+904,76,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+905,76,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+906,76,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+907,76,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+908,76,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+909,76,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+910,76,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+911,76,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+912,77,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+913,77,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+914,77,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+915,77,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+916,77,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+917,77,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+918,77,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+919,77,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+920,77,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+921,77,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+922,77,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+923,77,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+924,78,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+925,78,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+926,78,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+927,78,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+928,78,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+929,78,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+930,78,signal_orchard,Ivo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+931,78,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ari: stepped,True
+932,78,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+933,78,riverbend_roofward,Fay,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+934,78,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Nia: stepped,True
+935,78,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+936,79,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+937,79,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+938,79,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+939,79,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+940,79,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+941,79,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+942,79,signal_orchard,Milo,anim-signal_orchard-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'playing')",Milo: playing,True
+943,79,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,stepped,stepped,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: stepped,True
+944,79,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+945,79,riverbend_roofward,Ari,anim-riverbend_roofward-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'paused')",Ari: paused,True
+946,79,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,stepped,stepped,ssrm.v34.route.roofward_archive,False,noop,Fay: stepped,True
+947,79,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+948,80,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,stepped,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+949,80,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+950,80,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Ari: paused,True
+951,80,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,stepped,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+952,80,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+953,80,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,playing,playing,ssrm.v34.route.signal_orchard,False,noop,Milo: playing,True
+954,80,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+955,80,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Juno: paused,True
+956,80,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Ari: paused,True
+957,80,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+958,80,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+959,80,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,playing,playing,ssrm.v34.route.signal_orchard,False,noop,Milo: playing,True
+960,81,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+961,81,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+962,81,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Fay: paused,True
+963,81,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+964,81,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+965,81,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,playing,playing,ssrm.v34.route.signal_orchard,False,noop,Ivo: playing,True
+966,81,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+967,81,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,paused,paused,ssrm.v34.route.central_repair_ring,False,noop,Pax: paused,True
+968,81,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Fay: paused,True
+969,81,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+970,81,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+971,81,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,playing,playing,ssrm.v34.route.signal_orchard,False,noop,Ivo: playing,True
+972,82,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+973,82,central_repair_ring,Juno,anim-central_repair_ring-step,Step one frame,animation_step,paused,stepped,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'stepped')",Juno: stepped,True
+974,82,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Ari: paused,True
+975,82,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+976,82,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+977,82,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,playing,playing,ssrm.v34.route.signal_orchard,False,noop,Milo: playing,True
+978,82,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+979,82,central_repair_ring,Juno,anim-central_repair_ring-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'stepped')",Juno: stepped,True
+980,82,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Ari: paused,True
+981,82,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+982,82,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+983,82,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,playing,playing,ssrm.v34.route.signal_orchard,False,noop,Milo: playing,True
+984,83,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+985,83,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+986,83,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Fay: paused,True
+987,83,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+988,83,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+989,83,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,playing,playing,ssrm.v34.route.signal_orchard,False,noop,Ivo: playing,True
+990,83,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+991,83,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+992,83,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Fay: paused,True
+993,83,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+994,83,archive_signal,Milo,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Milo: playing,True
+995,83,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,playing,playing,ssrm.v34.route.signal_orchard,False,noop,Ivo: playing,True
+996,84,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+997,84,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+998,84,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Ari: paused,True
+999,84,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+1000,84,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+1001,84,signal_orchard,Milo,anim-signal_orchard-step,Step one frame,animation_step,playing,stepped,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'stepped')",Milo: stepped,True
+1002,84,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+1003,84,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+1004,84,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Ari: paused,True
+1005,84,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+1006,84,archive_signal,Nia,anim-archive_signal-idle,hold,none,playing,playing,ssrm.v34.route.archive_signal,False,noop,Nia: playing,True
+1007,84,signal_orchard,Milo,anim-signal_orchard-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'stepped')",Milo: stepped,True
+1008,85,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+1009,85,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+1010,85,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Fay: paused,True
+1011,85,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+1012,85,archive_signal,Milo,anim-archive_signal-step,Step one frame,animation_step,playing,stepped,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'stepped')",Milo: stepped,True
+1013,85,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+1014,85,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+1015,85,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+1016,85,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Fay: paused,True
+1017,85,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+1018,85,archive_signal,Milo,anim-archive_signal-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'stepped')",Milo: stepped,True
+1019,85,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+1020,86,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+1021,86,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+1022,86,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Ari: paused,True
+1023,86,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+1024,86,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+1025,86,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+1026,86,orchard_riverbend,Ivo,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ivo: playing,True
+1027,86,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Juno: stepped,True
+1028,86,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,paused,paused,ssrm.v34.route.riverbend_roofward,False,noop,Ari: paused,True
+1029,86,roofward_archive,Fay,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Fay: paused,True
+1030,86,archive_signal,Nia,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Nia: stepped,True
+1031,86,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+1032,87,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+1033,87,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+1034,87,riverbend_roofward,Fay,anim-riverbend_roofward-step,Step one frame,animation_step,paused,stepped,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'stepped')",Fay: stepped,True
+1035,87,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+1036,87,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+1037,87,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+1038,87,orchard_riverbend,Ari,anim-orchard_riverbend-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.orchard_riverbend,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+1039,87,central_repair_ring,Pax,anim-central_repair_ring-idle,hold,none,stepped,stepped,ssrm.v34.route.central_repair_ring,False,noop,Pax: stepped,True
+1040,87,riverbend_roofward,Fay,anim-riverbend_roofward-step,Step one frame,animation_step,stepped,stepped,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'stepped')",Fay: stepped,True
+1041,87,roofward_archive,Nia,anim-roofward_archive-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.roofward_archive,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+1042,87,archive_signal,Milo,anim-archive_signal-idle,hold,none,stepped,stepped,ssrm.v34.route.archive_signal,False,noop,Milo: stepped,True
+1043,87,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+1044,88,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,stepped,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+1045,88,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+1046,88,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+1047,88,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,stepped,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+1048,88,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+1049,88,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+1050,88,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+1051,88,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+1052,88,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+1053,88,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+1054,88,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+1055,88,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+1056,89,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+1057,89,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+1058,89,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+1059,89,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+1060,89,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+1061,89,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+1062,89,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+1063,89,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+1064,89,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+1065,89,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+1066,89,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+1067,89,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+1068,90,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+1069,90,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+1070,90,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+1071,90,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+1072,90,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+1073,90,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+1074,90,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+1075,90,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+1076,90,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+1077,90,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+1078,90,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+1079,90,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+1080,91,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+1081,91,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+1082,91,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+1083,91,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+1084,91,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+1085,91,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+1086,91,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+1087,91,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+1088,91,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+1089,91,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+1090,91,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+1091,91,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+1092,92,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+1093,92,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+1094,92,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+1095,92,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+1096,92,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+1097,92,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+1098,92,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+1099,92,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+1100,92,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+1101,92,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+1102,92,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+1103,92,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+1104,93,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+1105,93,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+1106,93,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+1107,93,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+1108,93,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+1109,93,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+1110,93,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+1111,93,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+1112,93,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+1113,93,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+1114,93,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+1115,93,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+1116,94,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+1117,94,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+1118,94,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+1119,94,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+1120,94,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+1121,94,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+1122,94,central_repair_ring,Pax,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Pax: playing,True
+1123,94,riverbend_roofward,Fay,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Fay: stepped,True
+1124,94,roofward_archive,Nia,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Nia: paused,True
+1125,94,archive_signal,Milo,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+1126,94,signal_orchard,Ivo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Ivo: stepped,True
+1127,94,orchard_riverbend,Ari,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ari: playing,True
+1128,95,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+1129,95,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+1130,95,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+1131,95,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+1132,95,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+1133,95,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+1134,95,central_repair_ring,Juno,anim-central_repair_ring-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.central_repair_ring,True,"clickAnimation(routeId, 'playing')",Juno: playing,True
+1135,95,riverbend_roofward,Ari,anim-riverbend_roofward-idle,hold,none,stepped,stepped,ssrm.v34.route.riverbend_roofward,False,noop,Ari: stepped,True
+1136,95,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+1137,95,archive_signal,Nia,anim-archive_signal-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.archive_signal,True,"clickAnimation(routeId, 'paused')",Nia: paused,True
+1138,95,signal_orchard,Milo,anim-signal_orchard-idle,hold,none,stepped,stepped,ssrm.v34.route.signal_orchard,False,noop,Milo: stepped,True
+1139,95,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+1140,96,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,stepped,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+1141,96,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+1142,96,archive_signal,Nia,anim-archive_signal-idle,hold,none,paused,paused,ssrm.v34.route.archive_signal,False,noop,Nia: paused,True
+1143,96,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,stepped,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+1144,96,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+1145,96,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,playing,playing,ssrm.v34.route.central_repair_ring,False,noop,Juno: playing,True
+1146,96,riverbend_roofward,Ari,anim-riverbend_roofward-play,Play body animation,animation_play,playing,playing,ssrm.v34.route.riverbend_roofward,True,"clickAnimation(routeId, 'playing')",Ari: playing,True
+1147,96,roofward_archive,Fay,anim-roofward_archive-idle,hold,none,paused,paused,ssrm.v34.route.roofward_archive,False,noop,Fay: paused,True
+1148,96,archive_signal,Nia,anim-archive_signal-idle,hold,none,paused,paused,ssrm.v34.route.archive_signal,False,noop,Nia: paused,True
+1149,96,signal_orchard,Milo,anim-signal_orchard-pause,Pause body animation,animation_pause,paused,paused,ssrm.v34.route.signal_orchard,True,"clickAnimation(routeId, 'paused')",Milo: paused,True
+1150,96,orchard_riverbend,Ivo,anim-orchard_riverbend-idle,hold,none,playing,playing,ssrm.v34.route.orchard_riverbend,False,noop,Ivo: playing,True
+1151,96,central_repair_ring,Juno,anim-central_repair_ring-idle,hold,none,playing,playing,ssrm.v34.route.central_repair_ring,False,noop,Juno: playing,True

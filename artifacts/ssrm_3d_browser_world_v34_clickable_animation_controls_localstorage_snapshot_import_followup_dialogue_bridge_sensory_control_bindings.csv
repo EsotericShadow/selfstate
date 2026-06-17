@@ -1,0 +1,1153 @@
+tick_id,route_id,agent,sound_cue,smell_cue,temperature_cue,rhythm_marker,flower_node,sensory_bound_to_click,sensory_bound_to_body_reaction
+0,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-1,True,True
+1,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-3,True,True
+2,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-5,True,True
+3,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-7,True,True
+4,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-9,False,False
+5,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-11,True,True
+6,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-7,True,True
+7,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-9,True,True
+8,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-11,True,True
+9,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-1,True,True
+10,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-3,False,False
+11,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-5,False,True
+12,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-2,True,True
+13,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-4,False,True
+14,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-6,True,True
+15,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-8,True,True
+16,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-10,False,False
+17,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-0,True,True
+18,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-8,True,True
+19,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-10,False,True
+20,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-0,True,True
+21,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-2,True,True
+22,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-4,False,False
+23,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-6,False,True
+24,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-3,True,True
+25,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-5,False,True
+26,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-7,True,True
+27,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-9,True,True
+28,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-11,False,False
+29,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-1,True,True
+30,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-9,True,True
+31,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-11,False,True
+32,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-1,True,True
+33,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-3,True,True
+34,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-5,False,False
+35,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-7,False,True
+36,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-4,True,True
+37,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-6,False,True
+38,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-8,True,True
+39,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-10,True,True
+40,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-0,False,False
+41,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-2,True,True
+42,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-10,True,True
+43,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-0,False,True
+44,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-2,True,True
+45,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-4,True,True
+46,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-6,False,False
+47,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-8,False,True
+48,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-5,True,True
+49,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-7,False,True
+50,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-9,True,True
+51,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-11,True,True
+52,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-1,False,False
+53,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-3,True,True
+54,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-11,True,True
+55,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-1,False,True
+56,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-3,True,True
+57,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-5,True,True
+58,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-7,False,False
+59,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-9,False,True
+60,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-6,True,True
+61,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-8,False,True
+62,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-10,True,True
+63,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-0,True,True
+64,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-2,False,False
+65,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-4,True,True
+66,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-0,True,True
+67,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-2,False,True
+68,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-4,True,True
+69,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-6,True,True
+70,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-8,False,False
+71,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-10,False,True
+72,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-7,True,True
+73,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-9,False,True
+74,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-11,True,True
+75,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-1,True,True
+76,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-3,False,False
+77,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-5,True,True
+78,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-1,True,True
+79,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-3,False,True
+80,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-5,True,True
+81,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-7,True,True
+82,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-9,False,False
+83,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-11,False,True
+84,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-9,True,True
+85,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-11,False,True
+86,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-1,True,True
+87,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-3,True,True
+88,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,flower-node,node-5,False,True
+89,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-1,True,True
+90,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-3,True,True
+91,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-5,False,True
+92,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-7,True,True
+93,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-9,True,True
+94,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-11,False,True
+95,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-7,False,True
+96,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-10,True,True
+97,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-0,False,True
+98,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-2,True,True
+99,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-4,True,True
+100,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-6,False,True
+101,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-2,True,True
+102,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-4,True,True
+103,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-6,False,True
+104,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-8,True,True
+105,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-10,True,True
+106,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-0,False,True
+107,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-8,False,True
+108,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-11,True,True
+109,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-1,False,True
+110,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-3,True,True
+111,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-5,True,True
+112,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,flower-node,node-7,False,True
+113,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-3,True,True
+114,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-5,True,True
+115,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-7,False,True
+116,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-9,True,True
+117,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-11,True,True
+118,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-1,False,True
+119,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-9,False,True
+120,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-0,True,True
+121,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-2,False,True
+122,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-4,True,True
+123,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-6,True,True
+124,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-8,False,True
+125,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-4,True,True
+126,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-6,True,True
+127,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-8,False,True
+128,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-10,True,True
+129,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-0,True,True
+130,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-2,False,True
+131,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-10,False,True
+132,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-1,True,True
+133,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-3,False,True
+134,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-5,True,True
+135,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-7,True,True
+136,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,flower-node,node-9,False,True
+137,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-5,True,True
+138,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-7,True,True
+139,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-9,False,True
+140,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-11,True,True
+141,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-1,True,True
+142,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-3,False,True
+143,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-11,False,True
+144,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-2,True,True
+145,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-4,False,True
+146,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-6,True,True
+147,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-8,True,True
+148,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-10,False,True
+149,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-6,True,True
+150,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-8,True,True
+151,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-10,False,True
+152,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-0,True,True
+153,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-2,True,True
+154,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-4,False,True
+155,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-0,False,True
+156,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-3,True,True
+157,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-5,False,True
+158,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-7,True,True
+159,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-9,True,True
+160,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-11,True,True
+161,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-7,True,True
+162,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-9,True,True
+163,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-11,False,True
+164,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-1,True,True
+165,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-3,True,True
+166,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-5,True,True
+167,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-1,False,True
+168,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-4,True,True
+169,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-6,False,True
+170,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-8,True,True
+171,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-10,True,True
+172,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-0,False,True
+173,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-8,True,True
+174,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-10,True,True
+175,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-0,False,True
+176,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-2,True,True
+177,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-4,True,True
+178,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-6,False,True
+179,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-2,False,True
+180,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-6,True,True
+181,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-8,True,True
+182,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-10,True,True
+183,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-0,True,True
+184,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,flower-node,node-8,False,True
+185,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-10,True,True
+186,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-0,True,True
+187,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-2,True,True
+188,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-4,True,True
+189,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-6,True,True
+190,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-2,False,True
+191,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-4,False,True
+192,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-7,True,True
+193,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-9,False,True
+194,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-11,True,True
+195,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-1,True,True
+196,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-9,False,True
+197,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-11,True,True
+198,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-1,True,True
+199,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-3,False,True
+200,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-5,True,True
+201,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-7,True,True
+202,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-3,False,True
+203,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-5,False,True
+204,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-8,True,True
+205,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-10,False,True
+206,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-0,True,True
+207,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-2,True,True
+208,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,flower-node,node-10,False,True
+209,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-0,True,True
+210,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-2,True,True
+211,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-4,False,True
+212,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-6,True,True
+213,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-8,True,True
+214,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-4,False,True
+215,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-6,True,True
+216,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-9,True,True
+217,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-11,False,True
+218,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-1,True,True
+219,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-3,True,True
+220,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-11,True,True
+221,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-1,True,True
+222,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-3,True,True
+223,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-5,False,True
+224,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-7,True,True
+225,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-9,True,True
+226,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-5,True,True
+227,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-7,False,True
+228,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-10,True,True
+229,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-0,False,True
+230,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-2,True,True
+231,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-4,True,True
+232,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,flower-node,node-0,False,True
+233,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-2,True,True
+234,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-4,True,True
+235,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-6,False,True
+236,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-8,True,True
+237,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-10,True,True
+238,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-6,False,True
+239,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-8,False,True
+240,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-11,True,True
+241,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-1,False,True
+242,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-3,True,True
+243,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-5,True,True
+244,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-1,False,True
+245,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-3,True,True
+246,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-5,True,True
+247,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-7,True,True
+248,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-9,True,True
+249,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-11,True,True
+250,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-7,False,True
+251,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-9,False,True
+252,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-0,True,True
+253,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-2,False,True
+254,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-4,True,True
+255,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-6,True,True
+256,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,flower-node,node-2,False,True
+257,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-4,True,True
+258,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-6,True,True
+259,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-8,False,True
+260,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-10,True,True
+261,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-0,True,True
+262,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-8,False,True
+263,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-10,False,True
+264,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-1,True,True
+265,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-3,False,True
+266,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-5,True,True
+267,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-7,True,True
+268,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-3,False,True
+269,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-5,True,True
+270,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-7,True,True
+271,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-9,False,True
+272,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-11,True,True
+273,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-1,True,True
+274,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-9,False,True
+275,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-11,False,True
+276,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-3,True,True
+277,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-5,False,True
+278,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-7,True,True
+279,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-3,True,True
+280,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,flower-node,node-5,False,True
+281,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-7,True,True
+282,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-9,True,True
+283,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-11,False,True
+284,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-1,True,True
+285,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-9,True,True
+286,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-11,False,True
+287,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-1,False,True
+288,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-4,True,True
+289,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-6,False,True
+290,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-8,True,True
+291,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-4,True,True
+292,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-6,False,True
+293,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-8,True,True
+294,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-10,True,True
+295,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-0,False,True
+296,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,flower-node,node-2,True,True
+297,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-10,True,True
+298,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-0,False,True
+299,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-2,False,True
+300,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-5,True,True
+301,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-7,False,True
+302,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-9,True,True
+303,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-5,True,True
+304,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,flower-node,node-7,False,True
+305,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-9,True,True
+306,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-11,True,True
+307,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-1,False,True
+308,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-3,True,True
+309,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-11,True,True
+310,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-1,False,True
+311,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-3,False,True
+312,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-6,True,True
+313,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-8,False,True
+314,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-10,True,True
+315,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-6,True,True
+316,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-8,False,True
+317,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-10,True,True
+318,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-0,True,True
+319,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-2,False,True
+320,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,flower-node,node-4,True,True
+321,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-0,True,True
+322,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-2,False,True
+323,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-4,False,True
+324,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-7,True,True
+325,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-9,False,True
+326,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-11,True,True
+327,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-7,True,True
+328,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,flower-node,node-9,False,True
+329,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-11,True,True
+330,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-1,True,True
+331,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-3,False,True
+332,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-5,True,True
+333,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-1,True,True
+334,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-3,False,True
+335,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-5,False,True
+336,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-8,True,True
+337,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-10,False,True
+338,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-0,True,True
+339,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-8,True,True
+340,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-10,False,True
+341,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-0,True,True
+342,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-2,True,True
+343,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-4,False,True
+344,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,flower-node,node-6,True,True
+345,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-2,True,True
+346,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-4,False,True
+347,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-6,False,True
+348,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-9,True,True
+349,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-11,False,True
+350,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-1,True,True
+351,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-9,True,True
+352,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,flower-node,node-11,False,True
+353,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-1,True,True
+354,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-3,True,True
+355,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-5,False,True
+356,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-7,True,True
+357,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-3,True,True
+358,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-5,False,True
+359,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-7,False,True
+360,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-10,True,True
+361,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-0,False,True
+362,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-2,True,True
+363,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-10,True,True
+364,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-0,False,True
+365,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-2,True,True
+366,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-4,True,True
+367,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-6,False,True
+368,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-8,True,True
+369,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-4,True,True
+370,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-6,False,True
+371,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-8,False,True
+372,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-0,True,True
+373,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-2,False,True
+374,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-10,True,True
+375,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-0,True,True
+376,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-2,False,True
+377,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-4,True,True
+378,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-6,True,True
+379,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-8,False,True
+380,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-4,True,True
+381,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-6,True,True
+382,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-8,False,True
+383,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-10,False,True
+384,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-1,True,True
+385,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-3,False,True
+386,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-11,True,True
+387,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-1,True,True
+388,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-3,False,True
+389,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-5,True,True
+390,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-7,True,True
+391,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-9,False,True
+392,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,flower-node,node-5,True,True
+393,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-7,True,True
+394,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-9,False,True
+395,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-11,True,True
+396,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-2,True,True
+397,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-4,False,True
+398,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-0,True,True
+399,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-2,True,True
+400,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-4,True,True
+401,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-6,True,True
+402,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-8,True,True
+403,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-10,False,True
+404,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-6,True,True
+405,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-8,True,True
+406,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-10,True,True
+407,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-0,False,True
+408,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-3,True,True
+409,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-5,False,True
+410,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-1,True,True
+411,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-3,True,True
+412,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-5,False,True
+413,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-7,True,True
+414,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-9,True,True
+415,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-11,False,True
+416,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,flower-node,node-7,True,True
+417,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-9,True,True
+418,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-11,False,True
+419,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-1,False,True
+420,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-4,True,True
+421,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-6,False,True
+422,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-2,True,True
+423,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-4,True,True
+424,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-6,False,True
+425,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-8,True,True
+426,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-10,True,True
+427,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-0,False,True
+428,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-8,True,True
+429,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-10,True,True
+430,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-0,False,True
+431,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-2,False,True
+432,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-5,True,True
+433,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-7,False,True
+434,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-3,True,True
+435,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-5,True,True
+436,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-7,False,True
+437,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-9,True,True
+438,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-11,True,True
+439,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-1,False,True
+440,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,flower-node,node-9,True,True
+441,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-11,True,True
+442,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-1,False,True
+443,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-3,False,True
+444,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-6,True,True
+445,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-8,False,True
+446,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-4,True,True
+447,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-6,True,True
+448,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-8,False,True
+449,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-10,True,True
+450,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-0,True,True
+451,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-2,False,True
+452,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-10,True,True
+453,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-0,True,True
+454,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-2,False,True
+455,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-4,False,True
+456,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-7,True,True
+457,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-9,False,True
+458,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-5,True,True
+459,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-7,True,True
+460,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-9,False,True
+461,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-11,True,True
+462,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-1,True,True
+463,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-3,False,True
+464,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,flower-node,node-11,True,True
+465,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-1,True,True
+466,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-3,False,True
+467,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-5,False,True
+468,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-9,True,True
+469,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-5,False,True
+470,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-7,True,True
+471,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-9,True,True
+472,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-11,False,True
+473,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-1,True,True
+474,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-3,True,True
+475,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-11,False,True
+476,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-1,True,True
+477,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-3,True,True
+478,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-5,False,True
+479,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-7,False,True
+480,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-10,True,True
+481,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-6,False,True
+482,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-8,True,True
+483,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-10,True,True
+484,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-0,False,True
+485,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-2,True,True
+486,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-4,True,True
+487,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-0,False,True
+488,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,flower-node,node-2,True,True
+489,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-4,True,True
+490,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-6,False,True
+491,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-8,False,True
+492,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-11,True,True
+493,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-7,True,True
+494,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-9,True,True
+495,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-11,True,True
+496,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-1,False,True
+497,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-3,True,True
+498,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-5,True,True
+499,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-1,False,True
+500,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-3,True,True
+501,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-5,True,True
+502,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-7,False,True
+503,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-9,False,True
+504,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-0,True,True
+505,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-8,False,True
+506,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-10,True,True
+507,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-0,True,True
+508,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-2,False,True
+509,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-4,True,True
+510,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-6,True,True
+511,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-2,False,True
+512,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,flower-node,node-4,True,True
+513,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-6,True,True
+514,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-8,False,True
+515,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-10,False,True
+516,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-1,True,True
+517,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-9,False,True
+518,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-11,True,True
+519,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-1,True,True
+520,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-3,False,True
+521,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-5,True,True
+522,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-7,True,True
+523,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-3,False,True
+524,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-5,True,True
+525,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-7,True,True
+526,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-9,False,True
+527,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-11,False,True
+528,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-2,True,True
+529,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-10,False,True
+530,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-0,True,True
+531,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-2,True,True
+532,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-4,False,True
+533,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-6,True,True
+534,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-8,True,True
+535,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-4,False,True
+536,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,flower-node,node-6,True,True
+537,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-8,True,True
+538,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-10,False,True
+539,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-0,False,True
+540,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-3,True,True
+541,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-11,False,True
+542,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-1,True,True
+543,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-3,True,True
+544,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-5,False,True
+545,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-7,True,True
+546,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-9,True,True
+547,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-5,False,True
+548,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-7,True,True
+549,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-9,True,True
+550,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-11,False,True
+551,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-1,False,True
+552,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-4,True,True
+553,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-0,False,True
+554,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-2,True,True
+555,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-4,True,True
+556,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-6,False,True
+557,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-8,True,True
+558,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-10,True,True
+559,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-6,False,True
+560,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,flower-node,node-8,True,True
+561,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-10,True,True
+562,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-0,False,True
+563,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-2,False,True
+564,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-0,True,True
+565,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-2,False,True
+566,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-4,True,True
+567,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-6,True,True
+568,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-8,False,True
+569,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-10,True,True
+570,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-6,True,True
+571,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-8,False,True
+572,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-10,True,True
+573,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-0,True,True
+574,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-2,False,True
+575,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-4,True,True
+576,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-1,True,True
+577,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-3,False,True
+578,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-5,True,True
+579,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-7,True,True
+580,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-9,True,True
+581,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-11,True,True
+582,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-7,True,True
+583,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-9,False,True
+584,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-11,True,True
+585,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-1,True,True
+586,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-3,True,True
+587,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-5,False,True
+588,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-2,True,True
+589,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-4,False,True
+590,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-6,True,True
+591,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-8,True,True
+592,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-10,False,True
+593,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-0,True,True
+594,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-8,True,True
+595,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-10,False,True
+596,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-0,True,True
+597,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-2,True,True
+598,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-4,False,True
+599,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-6,False,True
+600,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-3,True,True
+601,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-5,False,True
+602,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-7,True,True
+603,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-9,True,True
+604,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-11,False,True
+605,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-1,True,True
+606,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-9,True,True
+607,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-11,False,True
+608,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-1,True,True
+609,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-3,True,True
+610,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-5,False,True
+611,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-7,False,True
+612,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-4,True,True
+613,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-6,True,True
+614,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-8,True,True
+615,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-10,True,True
+616,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-0,False,True
+617,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-2,True,True
+618,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-10,True,True
+619,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-0,True,True
+620,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-2,True,True
+621,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-4,True,True
+622,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-6,False,True
+623,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-8,False,True
+624,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-5,True,True
+625,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-7,False,True
+626,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-9,True,True
+627,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-11,True,True
+628,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-1,False,True
+629,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-3,True,True
+630,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-11,True,True
+631,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-1,False,True
+632,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-3,True,True
+633,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-5,True,True
+634,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-7,False,True
+635,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-9,False,True
+636,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-6,True,True
+637,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-8,False,True
+638,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-10,True,True
+639,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-0,True,True
+640,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-2,False,True
+641,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-4,True,True
+642,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-0,True,True
+643,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-2,False,True
+644,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-4,True,True
+645,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-6,True,True
+646,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-8,False,True
+647,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-10,False,True
+648,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-7,True,True
+649,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-9,False,True
+650,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-11,True,True
+651,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-1,True,True
+652,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-3,False,True
+653,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-5,True,True
+654,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-1,True,True
+655,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-3,False,True
+656,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-5,True,True
+657,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-7,True,True
+658,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-9,False,True
+659,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-11,False,True
+660,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-9,True,True
+661,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-11,False,True
+662,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-1,True,True
+663,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-3,True,True
+664,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,flower-node,node-5,False,True
+665,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-1,True,True
+666,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-3,True,True
+667,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-5,False,True
+668,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-7,True,True
+669,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-9,True,True
+670,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-11,False,True
+671,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-7,False,True
+672,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-10,True,True
+673,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-0,False,True
+674,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-2,True,True
+675,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-4,True,True
+676,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-6,False,True
+677,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-2,True,True
+678,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-4,True,True
+679,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-6,False,True
+680,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-8,True,True
+681,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-10,True,True
+682,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-0,False,True
+683,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-8,False,True
+684,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-11,True,True
+685,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-1,False,True
+686,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-3,True,True
+687,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-5,True,True
+688,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,flower-node,node-7,False,True
+689,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-3,True,True
+690,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-5,True,True
+691,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-7,False,True
+692,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-9,True,True
+693,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-11,True,True
+694,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-1,False,True
+695,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-9,False,True
+696,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-0,True,True
+697,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-2,False,True
+698,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-4,True,True
+699,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-6,True,True
+700,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-8,False,True
+701,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-4,True,True
+702,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-6,True,True
+703,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-8,False,True
+704,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-10,True,True
+705,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-0,True,True
+706,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-2,False,True
+707,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-10,False,True
+708,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-1,True,True
+709,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-3,False,True
+710,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-5,True,True
+711,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-7,True,True
+712,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,flower-node,node-9,False,True
+713,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-5,True,True
+714,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-7,True,True
+715,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-9,False,True
+716,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-11,True,True
+717,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-1,True,True
+718,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-3,False,True
+719,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-11,False,True
+720,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-2,True,True
+721,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-4,False,True
+722,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-6,True,True
+723,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-8,True,True
+724,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-10,False,True
+725,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-6,True,True
+726,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-8,True,True
+727,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-10,False,True
+728,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-0,True,True
+729,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-2,True,True
+730,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-4,False,True
+731,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-0,False,True
+732,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-3,True,True
+733,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-5,False,True
+734,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-7,True,True
+735,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-9,True,True
+736,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,flower-node,node-11,False,True
+737,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-7,True,True
+738,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-9,True,True
+739,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-11,True,True
+740,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-1,True,True
+741,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-3,True,True
+742,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-5,False,True
+743,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-1,False,True
+744,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-4,True,True
+745,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-6,False,True
+746,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-8,True,True
+747,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-10,True,True
+748,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-0,False,True
+749,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-8,True,True
+750,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-10,True,True
+751,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-0,False,True
+752,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-2,True,True
+753,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-4,True,True
+754,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-6,False,True
+755,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-2,False,True
+756,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-6,True,True
+757,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-8,False,True
+758,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-10,True,True
+759,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-0,True,True
+760,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,flower-node,node-8,False,True
+761,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-10,True,True
+762,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-0,True,True
+763,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-2,False,True
+764,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-4,True,True
+765,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-6,True,True
+766,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-2,False,True
+767,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-4,False,True
+768,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-7,True,True
+769,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-9,False,True
+770,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-11,True,True
+771,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-1,True,True
+772,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-9,False,True
+773,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-11,True,True
+774,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-1,True,True
+775,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-3,False,True
+776,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-5,True,True
+777,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-7,True,True
+778,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-3,False,True
+779,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-5,False,True
+780,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-8,True,True
+781,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-10,False,True
+782,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-0,True,True
+783,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-2,True,True
+784,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,flower-node,node-10,False,True
+785,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-0,True,True
+786,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-2,True,True
+787,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-4,False,True
+788,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-6,True,True
+789,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-8,True,True
+790,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-4,False,True
+791,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-6,False,True
+792,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-9,True,True
+793,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-11,True,True
+794,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-1,True,True
+795,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-3,True,True
+796,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-11,False,True
+797,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-1,True,True
+798,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-3,True,True
+799,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-5,True,True
+800,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-7,True,True
+801,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-9,True,True
+802,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-5,False,True
+803,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-7,False,True
+804,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-10,True,True
+805,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-0,False,True
+806,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-2,True,True
+807,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-4,True,True
+808,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,flower-node,node-0,False,True
+809,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-2,True,True
+810,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-4,True,True
+811,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-6,False,True
+812,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-8,True,True
+813,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-10,True,True
+814,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-6,False,True
+815,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-8,False,True
+816,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-11,True,True
+817,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-1,False,True
+818,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-3,True,True
+819,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-5,True,True
+820,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-1,False,True
+821,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-3,True,True
+822,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-5,True,True
+823,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-7,False,True
+824,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-9,True,True
+825,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-11,True,True
+826,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-7,False,True
+827,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-9,True,True
+828,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-0,True,True
+829,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-2,False,True
+830,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-4,True,True
+831,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-6,True,True
+832,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-2,True,True
+833,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-4,True,True
+834,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-6,True,True
+835,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-8,False,True
+836,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-10,True,True
+837,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-0,True,True
+838,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-8,True,True
+839,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-10,False,True
+840,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-1,True,True
+841,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-3,False,True
+842,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-5,True,True
+843,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-7,True,True
+844,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-3,False,True
+845,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-5,True,True
+846,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-7,True,True
+847,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-9,False,True
+848,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-11,True,True
+849,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-1,True,True
+850,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-9,False,True
+851,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-11,False,True
+852,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-3,True,True
+853,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-5,False,True
+854,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-7,True,True
+855,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-3,True,True
+856,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,flower-node,node-5,False,True
+857,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-7,True,True
+858,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-9,True,True
+859,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-11,False,True
+860,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-1,True,True
+861,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-9,True,True
+862,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-11,False,True
+863,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-1,False,True
+864,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-4,True,True
+865,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-6,False,True
+866,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-8,True,True
+867,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-4,True,True
+868,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-6,False,True
+869,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-8,True,True
+870,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-10,True,True
+871,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-0,False,True
+872,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,flower-node,node-2,True,True
+873,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-10,True,True
+874,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-0,False,True
+875,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-2,False,True
+876,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-5,True,True
+877,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-7,False,True
+878,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-9,True,True
+879,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-5,True,True
+880,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,flower-node,node-7,False,True
+881,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-9,True,True
+882,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-11,True,True
+883,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-1,False,True
+884,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-3,True,True
+885,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-11,True,True
+886,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-1,False,True
+887,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-3,False,True
+888,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-6,True,True
+889,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-8,False,True
+890,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-10,True,True
+891,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-6,True,True
+892,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-8,False,True
+893,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-10,True,True
+894,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-0,True,True
+895,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-2,False,True
+896,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,flower-node,node-4,True,True
+897,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-0,True,True
+898,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-2,False,True
+899,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-4,False,True
+900,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-7,True,True
+901,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-9,False,True
+902,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-11,True,True
+903,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-7,True,True
+904,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,flower-node,node-9,False,True
+905,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-11,True,True
+906,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-1,True,True
+907,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-3,False,True
+908,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-5,True,True
+909,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-1,True,True
+910,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-3,False,True
+911,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-5,False,True
+912,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-8,True,True
+913,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-10,False,True
+914,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-0,True,True
+915,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-8,True,True
+916,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-10,False,True
+917,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-0,True,True
+918,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-2,True,True
+919,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-4,False,True
+920,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,flower-node,node-6,True,True
+921,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-2,True,True
+922,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-4,False,True
+923,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-6,False,True
+924,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-9,True,True
+925,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-11,False,True
+926,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-1,True,True
+927,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-9,True,True
+928,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,flower-node,node-11,False,True
+929,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-1,True,True
+930,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-3,True,True
+931,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-5,False,True
+932,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-7,True,True
+933,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-3,True,True
+934,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-5,False,True
+935,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-7,False,True
+936,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-10,True,True
+937,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-0,False,True
+938,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-2,True,True
+939,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-10,True,True
+940,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-0,False,True
+941,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-2,True,True
+942,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-4,True,True
+943,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-6,False,True
+944,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,flower-node,node-8,True,True
+945,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-4,True,True
+946,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-6,False,True
+947,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-8,False,True
+948,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-0,True,True
+949,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-2,False,True
+950,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-10,True,True
+951,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-0,True,True
+952,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-2,False,True
+953,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-4,True,True
+954,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-6,True,True
+955,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-8,False,True
+956,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-4,True,True
+957,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-6,True,True
+958,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-8,False,True
+959,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-10,False,True
+960,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-1,True,True
+961,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-3,False,True
+962,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-11,True,True
+963,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-1,True,True
+964,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-3,False,True
+965,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-5,True,True
+966,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-7,True,True
+967,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-9,False,True
+968,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,flower-node,node-5,True,True
+969,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-7,True,True
+970,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-9,False,True
+971,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-11,False,True
+972,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-2,True,True
+973,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-4,True,True
+974,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-0,True,True
+975,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-2,True,True
+976,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-4,False,True
+977,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-6,True,True
+978,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-8,True,True
+979,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-10,True,True
+980,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-6,True,True
+981,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-8,True,True
+982,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-10,False,True
+983,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-0,False,True
+984,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-3,True,True
+985,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-5,True,True
+986,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-1,True,True
+987,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-3,True,True
+988,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-5,False,True
+989,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-7,True,True
+990,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-9,True,True
+991,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-11,False,True
+992,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,flower-node,node-7,True,True
+993,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-9,True,True
+994,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-11,False,True
+995,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-1,False,True
+996,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-4,True,True
+997,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-6,False,True
+998,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-2,True,True
+999,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-4,True,True
+1000,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-6,False,True
+1001,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-8,True,True
+1002,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-10,True,True
+1003,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-0,False,True
+1004,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-8,True,True
+1005,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-10,True,True
+1006,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-0,False,True
+1007,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-2,True,True
+1008,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-5,True,True
+1009,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-7,False,True
+1010,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-3,True,True
+1011,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-5,True,True
+1012,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-7,True,True
+1013,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-9,True,True
+1014,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-11,True,True
+1015,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-1,False,True
+1016,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,flower-node,node-9,True,True
+1017,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-11,True,True
+1018,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-1,True,True
+1019,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-3,False,True
+1020,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-6,True,True
+1021,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-8,False,True
+1022,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-4,True,True
+1023,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-6,True,True
+1024,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,flower-node,node-8,False,True
+1025,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-10,True,True
+1026,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-0,True,True
+1027,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-2,False,True
+1028,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-10,True,True
+1029,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-0,True,True
+1030,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-2,False,True
+1031,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-4,False,True
+1032,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-7,True,True
+1033,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-9,False,True
+1034,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-5,True,True
+1035,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-7,True,True
+1036,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-9,False,True
+1037,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-11,True,True
+1038,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,animation-pulse,node-1,True,True
+1039,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-3,False,True
+1040,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-11,True,True
+1041,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,animation-pulse,node-1,True,True
+1042,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-3,False,True
+1043,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-5,False,True
+1044,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-9,True,True
+1045,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-5,False,True
+1046,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-7,True,True
+1047,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-9,True,True
+1048,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-11,False,True
+1049,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-1,True,True
+1050,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-3,True,True
+1051,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-11,False,True
+1052,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-1,True,True
+1053,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-3,True,True
+1054,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-5,False,True
+1055,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-7,False,True
+1056,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-10,True,True
+1057,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-6,False,True
+1058,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-8,True,True
+1059,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-10,True,True
+1060,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-0,False,True
+1061,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-2,True,True
+1062,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-4,True,True
+1063,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-0,False,True
+1064,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,flower-node,node-2,True,True
+1065,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-4,True,True
+1066,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-6,False,True
+1067,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-8,False,True
+1068,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-11,True,True
+1069,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-7,False,True
+1070,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-9,True,True
+1071,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-11,True,True
+1072,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-1,False,True
+1073,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-3,True,True
+1074,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-5,True,True
+1075,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-1,False,True
+1076,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-3,True,True
+1077,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-5,True,True
+1078,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-7,False,True
+1079,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-9,False,True
+1080,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-0,True,True
+1081,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-8,False,True
+1082,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-10,True,True
+1083,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-0,True,True
+1084,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-2,False,True
+1085,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-4,True,True
+1086,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-6,True,True
+1087,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-2,False,True
+1088,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,flower-node,node-4,True,True
+1089,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-6,True,True
+1090,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-8,False,True
+1091,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-10,False,True
+1092,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-1,True,True
+1093,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-9,False,True
+1094,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-11,True,True
+1095,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-1,True,True
+1096,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-3,False,True
+1097,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-5,True,True
+1098,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-7,True,True
+1099,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-3,False,True
+1100,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-5,True,True
+1101,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-7,True,True
+1102,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-9,False,True
+1103,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-11,False,True
+1104,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-2,True,True
+1105,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-10,False,True
+1106,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-0,True,True
+1107,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-2,True,True
+1108,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-4,False,True
+1109,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-6,True,True
+1110,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-8,True,True
+1111,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-4,False,True
+1112,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,flower-node,node-6,True,True
+1113,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-8,True,True
+1114,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-10,False,True
+1115,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-0,False,True
+1116,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-3,True,True
+1117,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-11,False,True
+1118,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-1,True,True
+1119,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-3,True,True
+1120,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,flower-node,node-5,False,True
+1121,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-7,True,True
+1122,central_repair_ring,Pax,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-9,True,True
+1123,riverbend_roofward,Fay,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-5,False,True
+1124,roofward_archive,Nia,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-7,True,True
+1125,archive_signal,Milo,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-9,True,True
+1126,signal_orchard,Ivo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-11,False,True
+1127,orchard_riverbend,Ari,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-1,False,True
+1128,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-4,True,True
+1129,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-0,False,True
+1130,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-2,True,True
+1131,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-4,True,True
+1132,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-6,False,True
+1133,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-8,True,True
+1134,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,animation-pulse,node-10,True,True
+1135,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,ambient-rate,node-6,False,True
+1136,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,flower-node,node-8,True,True
+1137,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,animation-pulse,node-10,True,True
+1138,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,ambient-rate,node-0,False,True
+1139,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-2,False,True
+1140,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-0,True,True
+1141,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-2,False,True
+1142,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-4,True,True
+1143,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-6,True,True
+1144,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,flower-node,node-8,False,True
+1145,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-10,True,True
+1146,riverbend_roofward,Ari,river slap under planks,cedar resin and rain,cold spray,animation-pulse,node-6,True,True
+1147,roofward_archive,Fay,hinges ticking,dry paper and thyme,warm draft,ambient-rate,node-8,False,True
+1148,archive_signal,Nia,soft page flutter,"ink, chalk, and dry linen",cool stone,ambient-rate,node-10,True,True
+1149,signal_orchard,Milo,crickets under static,lamp oil and wet grass,cool dusk,animation-pulse,node-0,True,True
+1150,orchard_riverbend,Ivo,cart wheels creaking,apple skin and wet soil,damp air,ambient-rate,node-2,False,True
+1151,central_repair_ring,Juno,bell hum through walls,hot copper and dust,warm metal,ambient-rate,node-4,False,True

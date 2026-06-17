@@ -1,0 +1,701 @@
+tick_id,day,route_id,agent,follows_body_reaction_tick,delay_ticks,dialogue_line,bounded_refusal_available,recovery_choice_available,dialogue_visible,localstorage_memory_key,memory_written,private_workspace_hidden
+6,1,riverbend_roofward,Fay,6,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+7,1,roofward_archive,Nia,7,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+8,1,archive_signal,Milo,8,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+9,1,signal_orchard,Ivo,9,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+11,1,central_repair_ring,Pax,5,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+12,2,riverbend_roofward,Fay,12,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+13,2,roofward_archive,Nia,7,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+14,2,archive_signal,Milo,14,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+15,2,signal_orchard,Ivo,15,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+18,2,riverbend_roofward,Ari,18,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+20,2,archive_signal,Nia,20,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+21,2,signal_orchard,Milo,21,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+23,2,central_repair_ring,Juno,17,1,The outer path gave me room. I can finish the wire without shaking.,True,True,False,ssrm.v34.memory.central_repair_ring,True,True
+24,3,riverbend_roofward,Ari,24,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+26,3,archive_signal,Nia,26,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+27,3,signal_orchard,Milo,27,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+30,3,riverbend_roofward,Fay,30,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+32,3,archive_signal,Milo,32,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+33,3,signal_orchard,Ivo,33,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+35,3,central_repair_ring,Pax,29,3,Back up. Sparks near my hands make me lose the thread.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+36,4,riverbend_roofward,Fay,36,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+38,4,archive_signal,Milo,38,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+39,4,signal_orchard,Ivo,39,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+42,4,riverbend_roofward,Ari,42,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+44,4,archive_signal,Nia,44,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+45,4,signal_orchard,Milo,45,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+47,4,central_repair_ring,Juno,41,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+48,5,riverbend_roofward,Ari,48,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+50,5,archive_signal,Nia,50,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+51,5,signal_orchard,Milo,51,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+54,5,riverbend_roofward,Fay,54,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+56,5,archive_signal,Milo,56,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+57,5,signal_orchard,Ivo,57,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+59,5,central_repair_ring,Pax,53,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+60,6,riverbend_roofward,Fay,60,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+62,6,archive_signal,Milo,62,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+63,6,signal_orchard,Ivo,63,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+66,6,riverbend_roofward,Ari,66,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+68,6,archive_signal,Nia,68,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+69,6,signal_orchard,Milo,69,2,The loop gave us light. I trust that more than the short road tonight.,True,True,False,ssrm.v34.memory.signal_orchard,True,True
+71,6,central_repair_ring,Juno,65,1,Back up. Sparks near my hands make me lose the thread.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+72,7,riverbend_roofward,Ari,72,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+74,7,archive_signal,Nia,74,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+75,7,signal_orchard,Milo,75,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+78,7,riverbend_roofward,Fay,78,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+80,7,archive_signal,Milo,80,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+81,7,signal_orchard,Ivo,81,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+83,7,central_repair_ring,Pax,77,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+85,8,archive_signal,Milo,80,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+86,8,signal_orchard,Ivo,86,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+89,8,riverbend_roofward,Fay,89,5,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+90,8,roofward_archive,Nia,90,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+92,8,signal_orchard,Ivo,92,1,The loop gave us light. I trust that more than the short road tonight.,True,True,False,ssrm.v34.memory.signal_orchard,True,True
+93,8,orchard_riverbend,Ari,93,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+95,8,riverbend_roofward,Fay,89,3,I will not cross the wet plank while my hands are numb.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+96,9,roofward_archive,Nia,96,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+98,9,signal_orchard,Ivo,98,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+99,9,orchard_riverbend,Ari,99,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+102,9,roofward_archive,Fay,102,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+104,9,signal_orchard,Milo,104,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+105,9,orchard_riverbend,Ivo,105,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+107,9,riverbend_roofward,Ari,101,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+108,10,roofward_archive,Fay,108,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+110,10,signal_orchard,Milo,110,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+111,10,orchard_riverbend,Ivo,111,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+114,10,roofward_archive,Nia,114,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+116,10,signal_orchard,Ivo,116,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+117,10,orchard_riverbend,Ari,117,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+119,10,riverbend_roofward,Fay,113,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+120,11,roofward_archive,Nia,120,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+122,11,signal_orchard,Ivo,122,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+123,11,orchard_riverbend,Ari,123,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+126,11,roofward_archive,Fay,126,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+128,11,signal_orchard,Milo,128,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+129,11,orchard_riverbend,Ivo,129,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+131,11,riverbend_roofward,Ari,125,1,I will not cross the wet plank while my hands are numb.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+132,12,roofward_archive,Fay,132,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+134,12,signal_orchard,Milo,134,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+135,12,orchard_riverbend,Ivo,135,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+138,12,roofward_archive,Nia,138,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,False,ssrm.v34.memory.roofward_archive,True,True
+140,12,signal_orchard,Ivo,140,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+141,12,orchard_riverbend,Ari,141,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+143,12,riverbend_roofward,Fay,137,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+144,13,roofward_archive,Nia,144,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+146,13,signal_orchard,Ivo,146,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+147,13,orchard_riverbend,Ari,147,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+150,13,roofward_archive,Fay,150,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+152,13,signal_orchard,Milo,152,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+153,13,orchard_riverbend,Ivo,153,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+155,13,riverbend_roofward,Ari,149,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+156,14,roofward_archive,Fay,156,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+158,14,signal_orchard,Milo,158,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+159,14,orchard_riverbend,Ivo,159,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+162,14,roofward_archive,Nia,162,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+164,14,signal_orchard,Ivo,164,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+165,14,orchard_riverbend,Ari,165,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+166,14,central_repair_ring,Pax,166,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+167,14,riverbend_roofward,Fay,161,1,I will not cross the wet plank while my hands are numb.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+168,15,roofward_archive,Nia,168,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+170,15,signal_orchard,Ivo,170,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+171,15,orchard_riverbend,Ari,171,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+172,15,central_repair_ring,Pax,166,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+174,15,roofward_archive,Fay,174,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+176,15,signal_orchard,Milo,176,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+177,15,orchard_riverbend,Ivo,177,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+179,15,riverbend_roofward,Ari,173,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+181,16,signal_orchard,Milo,181,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+185,16,roofward_archive,Fay,185,8,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+186,16,archive_signal,Nia,186,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+187,16,signal_orchard,Milo,187,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+188,16,orchard_riverbend,Ivo,188,5,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+189,16,central_repair_ring,Juno,189,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+191,16,roofward_archive,Fay,185,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+192,17,archive_signal,Nia,192,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+193,17,signal_orchard,Milo,187,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+194,17,orchard_riverbend,Ivo,194,9,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+195,17,central_repair_ring,Juno,195,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+198,17,archive_signal,Milo,198,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+200,17,orchard_riverbend,Ivo,200,9,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+201,17,central_repair_ring,Pax,201,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+203,17,roofward_archive,Nia,197,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+204,18,archive_signal,Milo,204,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+206,18,orchard_riverbend,Ari,206,8,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+207,18,central_repair_ring,Pax,207,1,The outer path gave me room. I can finish the wire without shaking.,True,True,False,ssrm.v34.memory.central_repair_ring,True,True
+210,18,archive_signal,Nia,210,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+212,18,orchard_riverbend,Ari,212,8,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+213,18,central_repair_ring,Juno,213,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+215,18,roofward_archive,Fay,215,1,I need a slower route before I carry the ledger.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+216,19,archive_signal,Nia,216,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+218,19,orchard_riverbend,Ivo,218,7,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+219,19,central_repair_ring,Juno,219,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+221,19,roofward_archive,Fay,221,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+222,19,archive_signal,Milo,222,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+224,19,orchard_riverbend,Ivo,224,7,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+225,19,central_repair_ring,Pax,225,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+226,19,riverbend_roofward,Fay,226,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+227,19,roofward_archive,Nia,221,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+228,20,archive_signal,Milo,228,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+230,20,orchard_riverbend,Ari,230,6,The seeds stayed dry. I will remember that route.,True,True,False,ssrm.v34.memory.orchard_riverbend,True,True
+231,20,central_repair_ring,Pax,231,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+232,20,riverbend_roofward,Fay,226,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+234,20,archive_signal,Nia,234,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+236,20,orchard_riverbend,Ari,236,6,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+237,20,central_repair_ring,Juno,237,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+239,20,roofward_archive,Fay,233,2,I need a slower route before I carry the ledger.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+240,21,archive_signal,Nia,240,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+242,21,orchard_riverbend,Ivo,242,9,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+243,21,central_repair_ring,Juno,243,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+246,21,archive_signal,Milo,246,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+248,21,orchard_riverbend,Ivo,248,9,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+249,21,central_repair_ring,Pax,249,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+251,21,roofward_archive,Nia,245,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+252,22,archive_signal,Milo,252,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+253,22,signal_orchard,Ivo,247,3,I am not walking blind while the lantern sputters.,True,True,False,ssrm.v34.memory.signal_orchard,True,True
+254,22,orchard_riverbend,Ari,254,8,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+255,22,central_repair_ring,Pax,255,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+258,22,archive_signal,Nia,258,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+260,22,orchard_riverbend,Ari,260,8,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+261,22,central_repair_ring,Juno,261,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+263,22,roofward_archive,Fay,257,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+264,23,archive_signal,Nia,264,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+266,23,orchard_riverbend,Ivo,266,7,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+267,23,central_repair_ring,Juno,267,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+270,23,archive_signal,Milo,270,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+272,23,orchard_riverbend,Ivo,272,7,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+273,23,central_repair_ring,Pax,273,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+275,23,roofward_archive,Nia,269,3,I need a slower route before I carry the ledger.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+277,24,orchard_riverbend,Ari,272,5,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+278,24,central_repair_ring,Pax,278,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+281,24,archive_signal,Milo,281,7,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+282,24,signal_orchard,Ivo,282,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+283,24,orchard_riverbend,Ari,272,5,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+284,24,central_repair_ring,Pax,284,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+285,24,riverbend_roofward,Fay,285,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+287,24,archive_signal,Milo,281,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+288,25,signal_orchard,Ivo,288,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+290,25,central_repair_ring,Pax,290,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+291,25,riverbend_roofward,Fay,291,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+294,25,signal_orchard,Milo,294,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+296,25,central_repair_ring,Juno,296,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+297,25,riverbend_roofward,Ari,297,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+299,25,archive_signal,Nia,293,1,That path kept the spool clean. I can explain the pattern now.,True,True,False,ssrm.v34.memory.archive_signal,True,True
+300,26,signal_orchard,Milo,300,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+302,26,central_repair_ring,Juno,302,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+303,26,riverbend_roofward,Ari,303,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+306,26,signal_orchard,Ivo,306,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+308,26,central_repair_ring,Pax,308,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+309,26,riverbend_roofward,Fay,309,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+311,26,archive_signal,Milo,305,3,Do not pull the spool from my hands. Ask first.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+312,27,signal_orchard,Ivo,312,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+314,27,central_repair_ring,Pax,314,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+315,27,riverbend_roofward,Fay,315,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+318,27,signal_orchard,Milo,318,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+320,27,central_repair_ring,Juno,320,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+321,27,riverbend_roofward,Ari,321,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+323,27,archive_signal,Nia,317,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+324,28,signal_orchard,Milo,324,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+326,28,central_repair_ring,Juno,326,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+327,28,riverbend_roofward,Ari,327,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+330,28,signal_orchard,Ivo,330,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+332,28,central_repair_ring,Pax,332,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+333,28,riverbend_roofward,Fay,333,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+335,28,archive_signal,Milo,329,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+336,29,signal_orchard,Ivo,336,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+338,29,central_repair_ring,Pax,338,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+339,29,riverbend_roofward,Fay,339,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+342,29,signal_orchard,Milo,342,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+344,29,central_repair_ring,Juno,344,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+345,29,riverbend_roofward,Ari,345,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,False,ssrm.v34.memory.riverbend_roofward,True,True
+347,29,archive_signal,Nia,341,1,Do not pull the spool from my hands. Ask first.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+348,30,signal_orchard,Milo,348,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+350,30,central_repair_ring,Juno,350,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+351,30,riverbend_roofward,Ari,351,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+354,30,signal_orchard,Ivo,354,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+356,30,central_repair_ring,Pax,356,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+357,30,riverbend_roofward,Fay,357,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+359,30,archive_signal,Milo,353,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+360,31,signal_orchard,Ivo,360,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+362,31,central_repair_ring,Pax,362,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+363,31,riverbend_roofward,Fay,363,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+366,31,signal_orchard,Milo,366,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+368,31,central_repair_ring,Juno,368,3,The outer path gave me room. I can finish the wire without shaking.,True,True,False,ssrm.v34.memory.central_repair_ring,True,True
+369,31,riverbend_roofward,Ari,369,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+371,31,archive_signal,Nia,365,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+373,32,central_repair_ring,Juno,368,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+377,32,signal_orchard,Milo,377,6,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+378,32,orchard_riverbend,Ivo,378,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+380,32,riverbend_roofward,Ari,380,5,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+381,32,roofward_archive,Fay,381,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+383,32,signal_orchard,Milo,377,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+384,33,orchard_riverbend,Ivo,384,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+386,33,riverbend_roofward,Ari,386,9,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+387,33,roofward_archive,Fay,387,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+390,33,orchard_riverbend,Ari,390,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+392,33,riverbend_roofward,Ari,392,9,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+393,33,roofward_archive,Nia,393,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+395,33,signal_orchard,Ivo,395,3,I am not walking blind while the lantern sputters.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+396,34,orchard_riverbend,Ari,396,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+398,34,riverbend_roofward,Fay,398,8,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+399,34,roofward_archive,Nia,399,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+401,34,signal_orchard,Ivo,401,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+402,34,orchard_riverbend,Ivo,402,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+404,34,riverbend_roofward,Fay,404,8,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+405,34,roofward_archive,Fay,405,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+406,34,archive_signal,Nia,406,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+407,34,signal_orchard,Milo,401,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+408,35,orchard_riverbend,Ivo,408,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+410,35,riverbend_roofward,Ari,410,7,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+411,35,roofward_archive,Fay,411,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+412,35,archive_signal,Nia,406,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+414,35,orchard_riverbend,Ari,414,1,The seeds stayed dry. I will remember that route.,True,True,False,ssrm.v34.memory.orchard_riverbend,True,True
+416,35,riverbend_roofward,Ari,416,7,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+417,35,roofward_archive,Nia,417,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+419,35,signal_orchard,Ivo,413,1,I am not walking blind while the lantern sputters.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+420,36,orchard_riverbend,Ari,420,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+422,36,riverbend_roofward,Fay,422,6,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+423,36,roofward_archive,Nia,423,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+426,36,orchard_riverbend,Ivo,426,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+428,36,riverbend_roofward,Fay,428,6,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+429,36,roofward_archive,Fay,429,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+431,36,signal_orchard,Milo,425,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+432,37,orchard_riverbend,Ivo,432,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+434,37,riverbend_roofward,Ari,434,9,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+435,37,roofward_archive,Fay,435,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+438,37,orchard_riverbend,Ari,438,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+440,37,riverbend_roofward,Ari,440,9,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+441,37,roofward_archive,Nia,441,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+443,37,signal_orchard,Ivo,437,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+444,38,orchard_riverbend,Ari,444,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+446,38,riverbend_roofward,Fay,446,8,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+447,38,roofward_archive,Nia,447,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+450,38,orchard_riverbend,Ivo,450,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+452,38,riverbend_roofward,Fay,452,8,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+453,38,roofward_archive,Fay,453,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+455,38,signal_orchard,Milo,449,2,I am not walking blind while the lantern sputters.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+456,39,orchard_riverbend,Ivo,456,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+458,39,riverbend_roofward,Ari,458,7,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+459,39,roofward_archive,Fay,459,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+462,39,orchard_riverbend,Ari,462,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+464,39,riverbend_roofward,Ari,464,7,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+465,39,roofward_archive,Nia,465,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+467,39,signal_orchard,Ivo,461,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+469,40,riverbend_roofward,Fay,464,5,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+470,40,roofward_archive,Nia,470,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+473,40,orchard_riverbend,Ari,473,5,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+474,40,central_repair_ring,Pax,474,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+475,40,riverbend_roofward,Fay,464,5,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+476,40,roofward_archive,Nia,476,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+477,40,archive_signal,Milo,477,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+479,40,orchard_riverbend,Ari,473,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+480,41,central_repair_ring,Pax,480,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+482,41,roofward_archive,Nia,482,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+483,41,archive_signal,Milo,483,1,That path kept the spool clean. I can explain the pattern now.,True,True,False,ssrm.v34.memory.archive_signal,True,True
+486,41,central_repair_ring,Juno,486,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+488,41,roofward_archive,Fay,488,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+489,41,archive_signal,Nia,489,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+491,41,orchard_riverbend,Ivo,485,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+492,42,central_repair_ring,Juno,492,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+494,42,roofward_archive,Fay,494,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+495,42,archive_signal,Nia,495,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+498,42,central_repair_ring,Pax,498,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+499,42,riverbend_roofward,Fay,493,1,I will not cross the wet plank while my hands are numb.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+500,42,roofward_archive,Nia,500,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+501,42,archive_signal,Milo,501,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+503,42,orchard_riverbend,Ari,497,1,I will not step into the fen with the satchel open.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+504,43,central_repair_ring,Pax,504,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+506,43,roofward_archive,Nia,506,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,False,ssrm.v34.memory.roofward_archive,True,True
+507,43,archive_signal,Milo,507,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+510,43,central_repair_ring,Juno,510,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+512,43,roofward_archive,Fay,512,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+513,43,archive_signal,Nia,513,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+515,43,orchard_riverbend,Ivo,509,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+516,44,central_repair_ring,Juno,516,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+518,44,roofward_archive,Fay,518,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+519,44,archive_signal,Nia,519,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+522,44,central_repair_ring,Pax,522,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+524,44,roofward_archive,Nia,524,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+525,44,archive_signal,Milo,525,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+527,44,orchard_riverbend,Ari,521,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+528,45,central_repair_ring,Pax,528,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+530,45,roofward_archive,Nia,530,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+531,45,archive_signal,Milo,531,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+534,45,central_repair_ring,Juno,534,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+536,45,roofward_archive,Fay,536,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+537,45,archive_signal,Nia,537,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+539,45,orchard_riverbend,Ivo,533,2,I will not step into the fen with the satchel open.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+540,46,central_repair_ring,Juno,540,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+542,46,roofward_archive,Fay,542,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+543,46,archive_signal,Nia,543,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+546,46,central_repair_ring,Pax,546,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+548,46,roofward_archive,Nia,548,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+549,46,archive_signal,Milo,549,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+551,46,orchard_riverbend,Ari,545,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+552,47,central_repair_ring,Pax,552,1,The outer path gave me room. I can finish the wire without shaking.,True,True,False,ssrm.v34.memory.central_repair_ring,True,True
+554,47,roofward_archive,Nia,554,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+555,47,archive_signal,Milo,555,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+558,47,central_repair_ring,Juno,558,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+560,47,roofward_archive,Fay,560,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+561,47,archive_signal,Nia,561,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+563,47,orchard_riverbend,Ivo,557,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+565,48,roofward_archive,Fay,560,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+566,48,archive_signal,Nia,566,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+569,48,central_repair_ring,Juno,569,8,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+570,48,riverbend_roofward,Ari,570,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+572,48,archive_signal,Nia,572,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+573,48,signal_orchard,Milo,573,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+575,48,central_repair_ring,Juno,575,2,The outer path gave me room. I can finish the wire without shaking.,True,True,False,ssrm.v34.memory.central_repair_ring,True,True
+576,49,riverbend_roofward,Ari,576,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+578,49,archive_signal,Nia,578,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+579,49,signal_orchard,Milo,579,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+581,49,central_repair_ring,Juno,581,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+582,49,riverbend_roofward,Fay,582,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+584,49,archive_signal,Milo,584,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+585,49,signal_orchard,Ivo,585,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+586,49,orchard_riverbend,Ari,586,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+587,49,central_repair_ring,Pax,581,1,Back up. Sparks near my hands make me lose the thread.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+588,50,riverbend_roofward,Fay,588,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+590,50,archive_signal,Milo,590,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+591,50,signal_orchard,Ivo,591,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+592,50,orchard_riverbend,Ari,586,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+594,50,riverbend_roofward,Ari,594,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+596,50,archive_signal,Nia,596,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+597,50,signal_orchard,Milo,597,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+599,50,central_repair_ring,Juno,593,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+600,51,riverbend_roofward,Ari,600,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+602,51,archive_signal,Nia,602,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+603,51,signal_orchard,Milo,603,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+606,51,riverbend_roofward,Fay,606,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+608,51,archive_signal,Milo,608,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+609,51,signal_orchard,Ivo,609,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+611,51,central_repair_ring,Pax,605,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+612,52,riverbend_roofward,Fay,612,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+614,52,archive_signal,Milo,614,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+615,52,signal_orchard,Ivo,615,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+618,52,riverbend_roofward,Ari,618,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+619,52,roofward_archive,Fay,619,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+620,52,archive_signal,Nia,620,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+621,52,signal_orchard,Milo,621,1,The loop gave us light. I trust that more than the short road tonight.,True,True,False,ssrm.v34.memory.signal_orchard,True,True
+623,52,central_repair_ring,Juno,617,2,Back up. Sparks near my hands make me lose the thread.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+624,53,riverbend_roofward,Ari,624,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+625,53,roofward_archive,Fay,619,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+626,53,archive_signal,Nia,626,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+627,53,signal_orchard,Milo,627,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+630,53,riverbend_roofward,Fay,630,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+632,53,archive_signal,Milo,632,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+633,53,signal_orchard,Ivo,633,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+635,53,central_repair_ring,Pax,629,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+636,54,riverbend_roofward,Fay,636,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+638,54,archive_signal,Milo,638,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+639,54,signal_orchard,Ivo,639,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+642,54,riverbend_roofward,Ari,642,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+644,54,archive_signal,Nia,644,3,That path kept the spool clean. I can explain the pattern now.,True,True,False,ssrm.v34.memory.archive_signal,True,True
+645,54,signal_orchard,Milo,645,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+647,54,central_repair_ring,Juno,641,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+648,55,riverbend_roofward,Ari,648,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+650,55,archive_signal,Nia,650,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+651,55,signal_orchard,Milo,651,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+654,55,riverbend_roofward,Fay,654,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+656,55,archive_signal,Milo,656,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+657,55,signal_orchard,Ivo,657,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+659,55,central_repair_ring,Pax,653,3,Back up. Sparks near my hands make me lose the thread.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+661,56,archive_signal,Milo,656,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+662,56,signal_orchard,Ivo,662,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+665,56,riverbend_roofward,Fay,665,5,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+666,56,roofward_archive,Nia,666,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+668,56,signal_orchard,Ivo,668,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+669,56,orchard_riverbend,Ari,669,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+671,56,riverbend_roofward,Fay,665,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+672,57,roofward_archive,Nia,672,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+674,57,signal_orchard,Ivo,674,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+675,57,orchard_riverbend,Ari,675,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+678,57,roofward_archive,Fay,678,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+680,57,signal_orchard,Milo,680,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+681,57,orchard_riverbend,Ivo,681,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+683,57,riverbend_roofward,Ari,677,2,I will not cross the wet plank while my hands are numb.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+684,58,roofward_archive,Fay,684,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+686,58,signal_orchard,Milo,686,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+687,58,orchard_riverbend,Ivo,687,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+690,58,roofward_archive,Nia,690,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,False,ssrm.v34.memory.roofward_archive,True,True
+692,58,signal_orchard,Ivo,692,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+693,58,orchard_riverbend,Ari,693,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+695,58,riverbend_roofward,Fay,689,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+696,59,roofward_archive,Nia,696,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+698,59,signal_orchard,Ivo,698,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+699,59,orchard_riverbend,Ari,699,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+702,59,roofward_archive,Fay,702,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+704,59,signal_orchard,Milo,704,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+705,59,orchard_riverbend,Ivo,705,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+707,59,riverbend_roofward,Ari,701,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+708,60,roofward_archive,Fay,708,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+710,60,signal_orchard,Milo,710,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+711,60,orchard_riverbend,Ivo,711,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+714,60,roofward_archive,Nia,714,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+716,60,signal_orchard,Ivo,716,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+717,60,orchard_riverbend,Ari,717,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+719,60,riverbend_roofward,Fay,713,3,I will not cross the wet plank while my hands are numb.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+720,61,roofward_archive,Nia,720,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+722,61,signal_orchard,Ivo,722,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+723,61,orchard_riverbend,Ari,723,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+726,61,roofward_archive,Fay,726,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+728,61,signal_orchard,Milo,728,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+729,61,orchard_riverbend,Ivo,729,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+731,61,riverbend_roofward,Ari,725,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+732,62,roofward_archive,Fay,732,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+734,62,signal_orchard,Milo,734,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+735,62,orchard_riverbend,Ivo,735,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+738,62,roofward_archive,Nia,738,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+740,62,signal_orchard,Ivo,740,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+741,62,orchard_riverbend,Ari,741,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+743,62,riverbend_roofward,Fay,737,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+744,63,roofward_archive,Nia,744,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+745,63,archive_signal,Milo,739,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+746,63,signal_orchard,Ivo,746,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+747,63,orchard_riverbend,Ari,747,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+750,63,roofward_archive,Fay,750,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+752,63,signal_orchard,Milo,752,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+753,63,orchard_riverbend,Ivo,753,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+755,63,riverbend_roofward,Ari,749,1,I will not cross the wet plank while my hands are numb.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+757,64,signal_orchard,Milo,752,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+761,64,roofward_archive,Fay,761,8,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+762,64,archive_signal,Nia,762,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+764,64,orchard_riverbend,Ivo,764,5,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+765,64,central_repair_ring,Juno,765,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+767,64,roofward_archive,Fay,761,2,I need a slower route before I carry the ledger.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+768,65,archive_signal,Nia,768,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+770,65,orchard_riverbend,Ivo,770,9,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+771,65,central_repair_ring,Juno,771,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+774,65,archive_signal,Milo,774,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+776,65,orchard_riverbend,Ivo,776,9,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+777,65,central_repair_ring,Pax,777,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+779,65,roofward_archive,Nia,773,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+780,66,archive_signal,Milo,780,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+782,66,orchard_riverbend,Ari,782,8,The seeds stayed dry. I will remember that route.,True,True,False,ssrm.v34.memory.orchard_riverbend,True,True
+783,66,central_repair_ring,Pax,783,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+786,66,archive_signal,Nia,786,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+788,66,orchard_riverbend,Ari,788,8,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+789,66,central_repair_ring,Juno,789,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+791,66,roofward_archive,Fay,785,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+792,67,archive_signal,Nia,792,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+794,67,orchard_riverbend,Ivo,794,7,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+795,67,central_repair_ring,Juno,795,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+798,67,archive_signal,Milo,798,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+799,67,signal_orchard,Ivo,799,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+800,67,orchard_riverbend,Ivo,800,7,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+801,67,central_repair_ring,Pax,801,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+803,67,roofward_archive,Nia,797,3,I need a slower route before I carry the ledger.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+804,68,archive_signal,Milo,804,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+805,68,signal_orchard,Ivo,799,1,The loop gave us light. I trust that more than the short road tonight.,True,True,False,ssrm.v34.memory.signal_orchard,True,True
+806,68,orchard_riverbend,Ari,806,6,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+807,68,central_repair_ring,Pax,807,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+810,68,archive_signal,Nia,810,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+812,68,orchard_riverbend,Ari,812,6,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+813,68,central_repair_ring,Juno,813,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+815,68,roofward_archive,Fay,809,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+816,69,archive_signal,Nia,816,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+818,69,orchard_riverbend,Ivo,818,9,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+819,69,central_repair_ring,Juno,819,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+822,69,archive_signal,Milo,822,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+824,69,orchard_riverbend,Ivo,824,9,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+825,69,central_repair_ring,Pax,825,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+827,69,roofward_archive,Nia,827,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+828,70,archive_signal,Milo,828,1,That path kept the spool clean. I can explain the pattern now.,True,True,False,ssrm.v34.memory.archive_signal,True,True
+830,70,orchard_riverbend,Ari,830,8,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+831,70,central_repair_ring,Pax,831,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+833,70,roofward_archive,Nia,833,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+834,70,archive_signal,Nia,834,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+836,70,orchard_riverbend,Ari,836,8,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+837,70,central_repair_ring,Juno,837,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+838,70,riverbend_roofward,Ari,838,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+839,70,roofward_archive,Fay,833,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+840,71,archive_signal,Nia,840,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+842,71,orchard_riverbend,Ivo,842,7,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+843,71,central_repair_ring,Juno,843,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+844,71,riverbend_roofward,Ari,838,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+846,71,archive_signal,Milo,846,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+848,71,orchard_riverbend,Ivo,848,7,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+849,71,central_repair_ring,Pax,849,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+851,71,roofward_archive,Nia,845,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,False,ssrm.v34.memory.roofward_archive,True,True
+853,72,orchard_riverbend,Ari,848,5,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+854,72,central_repair_ring,Pax,854,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+857,72,archive_signal,Milo,857,7,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+858,72,signal_orchard,Ivo,858,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+859,72,orchard_riverbend,Ari,848,5,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+860,72,central_repair_ring,Pax,860,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+861,72,riverbend_roofward,Fay,861,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+863,72,archive_signal,Milo,857,1,Do not pull the spool from my hands. Ask first.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+864,73,signal_orchard,Ivo,864,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+866,73,central_repair_ring,Pax,866,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+867,73,riverbend_roofward,Fay,867,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+870,73,signal_orchard,Milo,870,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+872,73,central_repair_ring,Juno,872,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+873,73,riverbend_roofward,Ari,873,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+875,73,archive_signal,Nia,869,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+876,74,signal_orchard,Milo,876,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+878,74,central_repair_ring,Juno,878,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+879,74,riverbend_roofward,Ari,879,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+882,74,signal_orchard,Ivo,882,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+884,74,central_repair_ring,Pax,884,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+885,74,riverbend_roofward,Fay,885,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+887,74,archive_signal,Milo,881,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+888,75,signal_orchard,Ivo,888,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+890,75,central_repair_ring,Pax,890,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+891,75,riverbend_roofward,Fay,891,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+894,75,signal_orchard,Milo,894,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+896,75,central_repair_ring,Juno,896,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+897,75,riverbend_roofward,Ari,897,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,False,ssrm.v34.memory.riverbend_roofward,True,True
+899,75,archive_signal,Nia,893,2,Do not pull the spool from my hands. Ask first.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+900,76,signal_orchard,Milo,900,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+902,76,central_repair_ring,Juno,902,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+903,76,riverbend_roofward,Ari,903,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+906,76,signal_orchard,Ivo,906,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+908,76,central_repair_ring,Pax,908,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+909,76,riverbend_roofward,Fay,909,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+911,76,archive_signal,Milo,905,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+912,77,signal_orchard,Ivo,912,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+914,77,central_repair_ring,Pax,914,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+915,77,riverbend_roofward,Fay,915,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+918,77,signal_orchard,Milo,918,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+920,77,central_repair_ring,Juno,920,1,The outer path gave me room. I can finish the wire without shaking.,True,True,False,ssrm.v34.memory.central_repair_ring,True,True
+921,77,riverbend_roofward,Ari,921,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+923,77,archive_signal,Nia,917,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+924,78,signal_orchard,Milo,924,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+926,78,central_repair_ring,Juno,926,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+927,78,riverbend_roofward,Ari,927,2,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+930,78,signal_orchard,Ivo,930,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+932,78,central_repair_ring,Pax,932,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+933,78,riverbend_roofward,Fay,933,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+935,78,archive_signal,Milo,929,3,Do not pull the spool from my hands. Ask first.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+936,79,signal_orchard,Ivo,936,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+938,79,central_repair_ring,Pax,938,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+939,79,riverbend_roofward,Fay,939,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+942,79,signal_orchard,Milo,942,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+944,79,central_repair_ring,Juno,944,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+945,79,riverbend_roofward,Ari,945,1,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+947,79,archive_signal,Nia,941,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+949,80,central_repair_ring,Juno,944,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+953,80,signal_orchard,Milo,953,6,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+954,80,orchard_riverbend,Ivo,954,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+956,80,riverbend_roofward,Ari,956,5,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+957,80,roofward_archive,Fay,957,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+959,80,signal_orchard,Milo,953,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+960,81,orchard_riverbend,Ivo,960,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+962,81,riverbend_roofward,Ari,962,9,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+963,81,roofward_archive,Fay,963,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+966,81,orchard_riverbend,Ari,966,2,The seeds stayed dry. I will remember that route.,True,True,False,ssrm.v34.memory.orchard_riverbend,True,True
+968,81,riverbend_roofward,Ari,968,9,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+969,81,roofward_archive,Nia,969,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+971,81,signal_orchard,Ivo,965,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+972,82,orchard_riverbend,Ari,972,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+974,82,riverbend_roofward,Fay,974,8,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+975,82,roofward_archive,Nia,975,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+978,82,orchard_riverbend,Ivo,978,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+979,82,central_repair_ring,Juno,979,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+980,82,riverbend_roofward,Fay,980,8,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+981,82,roofward_archive,Fay,981,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+983,82,signal_orchard,Milo,977,2,I am not walking blind while the lantern sputters.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+984,83,orchard_riverbend,Ivo,984,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+985,83,central_repair_ring,Juno,985,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+986,83,riverbend_roofward,Ari,986,7,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+987,83,roofward_archive,Fay,987,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+990,83,orchard_riverbend,Ari,990,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+991,83,central_repair_ring,Pax,985,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+992,83,riverbend_roofward,Ari,992,7,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+993,83,roofward_archive,Nia,993,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+995,83,signal_orchard,Ivo,989,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+996,84,orchard_riverbend,Ari,996,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+998,84,riverbend_roofward,Fay,998,6,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+999,84,roofward_archive,Nia,999,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1002,84,orchard_riverbend,Ivo,1002,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1004,84,riverbend_roofward,Fay,1004,6,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+1005,84,roofward_archive,Fay,1005,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1007,84,signal_orchard,Milo,1007,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+1008,85,orchard_riverbend,Ivo,1008,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1010,85,riverbend_roofward,Ari,1010,9,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+1011,85,roofward_archive,Fay,1011,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1013,85,signal_orchard,Milo,1013,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+1014,85,orchard_riverbend,Ari,1014,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1016,85,riverbend_roofward,Ari,1016,9,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+1017,85,roofward_archive,Nia,1017,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1018,85,archive_signal,Milo,1018,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1019,85,signal_orchard,Ivo,1013,3,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+1020,86,orchard_riverbend,Ari,1020,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1022,86,riverbend_roofward,Fay,1022,8,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+1023,86,roofward_archive,Nia,1023,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1024,86,archive_signal,Milo,1018,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1026,86,orchard_riverbend,Ivo,1026,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1028,86,riverbend_roofward,Fay,1028,8,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+1029,86,roofward_archive,Fay,1029,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1031,86,signal_orchard,Milo,1025,2,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+1032,87,orchard_riverbend,Ivo,1032,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1034,87,riverbend_roofward,Ari,1034,7,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+1035,87,roofward_archive,Fay,1035,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,False,ssrm.v34.memory.roofward_archive,True,True
+1038,87,orchard_riverbend,Ari,1038,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1040,87,riverbend_roofward,Ari,1040,7,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+1041,87,roofward_archive,Nia,1041,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1043,87,signal_orchard,Ivo,1037,1,I am not walking blind while the lantern sputters.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+1045,88,riverbend_roofward,Fay,1040,5,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+1046,88,roofward_archive,Nia,1046,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1049,88,orchard_riverbend,Ari,1049,5,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1050,88,central_repair_ring,Pax,1050,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1051,88,riverbend_roofward,Fay,1040,5,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+1052,88,roofward_archive,Nia,1052,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1053,88,archive_signal,Milo,1053,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1055,88,orchard_riverbend,Ari,1049,3,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1056,89,central_repair_ring,Pax,1056,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1058,89,roofward_archive,Nia,1058,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,False,ssrm.v34.memory.roofward_archive,True,True
+1059,89,archive_signal,Milo,1059,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1062,89,central_repair_ring,Juno,1062,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1064,89,roofward_archive,Fay,1064,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1065,89,archive_signal,Nia,1065,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1067,89,orchard_riverbend,Ivo,1061,2,I will not step into the fen with the satchel open.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1068,90,central_repair_ring,Juno,1068,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1070,90,roofward_archive,Fay,1070,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1071,90,archive_signal,Nia,1071,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1074,90,central_repair_ring,Pax,1074,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1076,90,roofward_archive,Nia,1076,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1077,90,archive_signal,Milo,1077,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1079,90,orchard_riverbend,Ari,1073,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1080,91,central_repair_ring,Pax,1080,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1082,91,roofward_archive,Nia,1082,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1083,91,archive_signal,Milo,1083,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1086,91,central_repair_ring,Juno,1086,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1088,91,roofward_archive,Fay,1088,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1089,91,archive_signal,Nia,1089,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1091,91,orchard_riverbend,Ivo,1085,1,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1092,92,central_repair_ring,Juno,1092,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1094,92,roofward_archive,Fay,1094,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1095,92,archive_signal,Nia,1095,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1098,92,central_repair_ring,Pax,1098,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1100,92,roofward_archive,Nia,1100,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1101,92,archive_signal,Milo,1101,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1103,92,orchard_riverbend,Ari,1097,3,I will not step into the fen with the satchel open.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1104,93,central_repair_ring,Pax,1104,2,The outer path gave me room. I can finish the wire without shaking.,True,True,False,ssrm.v34.memory.central_repair_ring,True,True
+1106,93,roofward_archive,Nia,1106,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1107,93,archive_signal,Milo,1107,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1110,93,central_repair_ring,Juno,1110,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1112,93,roofward_archive,Fay,1112,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1113,93,archive_signal,Nia,1113,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1115,93,orchard_riverbend,Ivo,1109,2,The seeds stayed dry. I will remember that route.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1116,94,central_repair_ring,Juno,1116,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1118,94,roofward_archive,Fay,1118,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1119,94,archive_signal,Nia,1119,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1122,94,central_repair_ring,Pax,1122,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1124,94,roofward_archive,Nia,1124,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1125,94,archive_signal,Milo,1125,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1127,94,orchard_riverbend,Ari,1121,1,The seeds stayed dry. I will remember that route.,True,True,False,ssrm.v34.memory.orchard_riverbend,True,True
+1128,95,central_repair_ring,Pax,1128,1,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1130,95,roofward_archive,Nia,1130,1,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1131,95,archive_signal,Milo,1131,3,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1134,95,central_repair_ring,Juno,1134,3,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1136,95,roofward_archive,Fay,1136,3,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1137,95,archive_signal,Nia,1137,2,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1139,95,orchard_riverbend,Ivo,1133,1,I will not step into the fen with the satchel open.,True,True,True,ssrm.v34.memory.orchard_riverbend,True,True
+1141,96,roofward_archive,Fay,1136,2,The warm lane helped. I remember you waited instead of rushing me.,True,True,True,ssrm.v34.memory.roofward_archive,True,True
+1142,96,archive_signal,Nia,1142,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1145,96,central_repair_ring,Juno,1145,8,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True
+1146,96,riverbend_roofward,Ari,1146,3,I noticed you chose the dry ridge. I can keep carrying the kit.,True,True,True,ssrm.v34.memory.riverbend_roofward,True,True
+1148,96,archive_signal,Nia,1148,1,That path kept the spool clean. I can explain the pattern now.,True,True,True,ssrm.v34.memory.archive_signal,True,True
+1149,96,signal_orchard,Milo,1149,1,The loop gave us light. I trust that more than the short road tonight.,True,True,True,ssrm.v34.memory.signal_orchard,True,True
+1151,96,central_repair_ring,Juno,1145,2,The outer path gave me room. I can finish the wire without shaking.,True,True,True,ssrm.v34.memory.central_repair_ring,True,True

@@ -1,0 +1,220 @@
+tick_id,route_id,reload_probe,localstorage_key,restored_branch,restored_animation_state,restored_snapshot_id,restored_followup_count,restore_notice_visible,restore_integrity
+0,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,0,True,True
+11,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,idle,initial:central_repair_ring,1,True,True
+12,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,2,True,True
+23,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,idle,initial:central_repair_ring,2,True,True
+24,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,4,True,True
+35,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,idle,initial:central_repair_ring,3,True,True
+36,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,6,True,True
+37,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,stepped,imported:roofward_archive:d4:t1,2,True,True
+47,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,idle,initial:central_repair_ring,4,True,True
+48,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,8,True,True
+59,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,idle,initial:central_repair_ring,5,True,True
+60,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,10,True,True
+71,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,idle,initial:central_repair_ring,6,True,True
+72,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,12,True,True
+74,archive_signal,True,ssrm.v34.route.archive_signal,stone kiosk path,idle,initial:archive_signal,12,True,True
+83,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,idle,initial:central_repair_ring,7,True,True
+84,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d7:t7,2,True,True
+95,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,15,True,True
+96,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d7:t7,4,True,True
+107,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,16,True,True
+108,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d7:t7,6,True,True
+111,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,paused,imported:orchard_riverbend:d7:t10,4,True,True
+119,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,17,True,True
+120,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d7:t7,8,True,True
+131,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,18,True,True
+132,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d7:t7,10,True,True
+143,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,19,True,True
+144,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d7:t7,12,True,True
+148,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,idle,snapshot:central_repair_ring:d13:t4,7,True,True
+155,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,20,True,True
+156,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d7:t7,14,True,True
+167,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,21,True,True
+168,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d7:t7,16,True,True
+179,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,initial:riverbend_roofward,22,True,True
+180,archive_signal,True,ssrm.v34.route.archive_signal,stone kiosk path,playing,snapshot:archive_signal:d15:t7,14,True,True
+185,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d7:t7,18,True,True
+191,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d7:t7,19,True,True
+192,archive_signal,True,ssrm.v34.route.archive_signal,stone kiosk path,playing,snapshot:archive_signal:d15:t7,16,True,True
+203,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d7:t7,20,True,True
+204,archive_signal,True,ssrm.v34.route.archive_signal,stone kiosk path,playing,snapshot:archive_signal:d15:t7,18,True,True
+215,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,stepped,snapshot:roofward_archive:d7:t7,21,True,True
+216,archive_signal,True,ssrm.v34.route.archive_signal,stone kiosk path,playing,snapshot:archive_signal:d15:t7,20,True,True
+222,archive_signal,True,ssrm.v34.route.archive_signal,stone kiosk path,playing,snapshot:archive_signal:d15:t7,21,True,True
+227,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,stepped,snapshot:roofward_archive:d7:t7,23,True,True
+228,archive_signal,True,ssrm.v34.route.archive_signal,stone kiosk path,playing,snapshot:archive_signal:d15:t7,22,True,True
+239,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,stepped,snapshot:roofward_archive:d7:t7,24,True,True
+240,archive_signal,True,ssrm.v34.route.archive_signal,stone kiosk path,playing,snapshot:archive_signal:d15:t7,24,True,True
+251,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,stepped,snapshot:roofward_archive:d7:t7,25,True,True
+252,archive_signal,True,ssrm.v34.route.archive_signal,stone kiosk path,playing,snapshot:archive_signal:d15:t7,26,True,True
+259,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,stepped,snapshot:signal_orchard:d22:t7,33,True,True
+263,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,stepped,snapshot:roofward_archive:d7:t7,26,True,True
+264,archive_signal,True,ssrm.v34.route.archive_signal,stone kiosk path,playing,snapshot:archive_signal:d15:t7,28,True,True
+275,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,stepped,snapshot:roofward_archive:d7:t7,27,True,True
+276,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d23:t7,33,True,True
+287,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d15:t7,31,True,True
+288,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d23:t7,35,True,True
+296,central_repair_ring,True,ssrm.v34.route.central_repair_ring,outer bell path,paused,imported:central_repair_ring:d15:t10,28,True,True
+299,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d15:t7,32,True,True
+300,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d23:t7,37,True,True
+311,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d15:t7,33,True,True
+312,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d23:t7,39,True,True
+323,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d15:t7,34,True,True
+324,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d23:t7,41,True,True
+333,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,paused,imported:riverbend_roofward:d23:t10,33,True,True
+335,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d15:t7,35,True,True
+336,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d23:t7,43,True,True
+347,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d15:t7,36,True,True
+348,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d23:t7,45,True,True
+359,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d15:t7,37,True,True
+360,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d23:t7,47,True,True
+370,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,stepped,imported:roofward_archive:d31:t10,27,True,True
+371,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d15:t7,38,True,True
+372,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d31:t7,32,True,True
+383,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d23:t7,50,True,True
+384,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d31:t7,34,True,True
+395,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,stepped,snapshot:signal_orchard:d23:t7,51,True,True
+396,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d31:t7,36,True,True
+407,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,stepped,snapshot:signal_orchard:d23:t7,53,True,True
+408,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d31:t7,38,True,True
+419,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,stepped,snapshot:signal_orchard:d23:t7,54,True,True
+420,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d31:t7,40,True,True
+431,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,stepped,snapshot:signal_orchard:d23:t7,55,True,True
+432,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d31:t7,42,True,True
+443,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,stepped,snapshot:signal_orchard:d23:t7,56,True,True
+444,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d31:t7,44,True,True
+455,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,stepped,snapshot:signal_orchard:d23:t7,57,True,True
+456,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d31:t7,46,True,True
+467,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,stepped,snapshot:signal_orchard:d23:t7,58,True,True
+468,central_repair_ring,True,ssrm.v34.route.central_repair_ring,outer bell path,playing,snapshot:central_repair_ring:d39:t7,41,True,True
+479,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d31:t7,49,True,True
+480,central_repair_ring,True,ssrm.v34.route.central_repair_ring,outer bell path,playing,snapshot:central_repair_ring:d39:t7,43,True,True
+481,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,lantern ridge detour,stepped,imported:riverbend_roofward:d41:t1,56,True,True
+491,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d31:t7,50,True,True
+492,central_repair_ring,True,ssrm.v34.route.central_repair_ring,outer bell path,playing,snapshot:central_repair_ring:d39:t7,45,True,True
+503,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d31:t7,51,True,True
+504,central_repair_ring,True,ssrm.v34.route.central_repair_ring,outer bell path,playing,snapshot:central_repair_ring:d39:t7,47,True,True
+515,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d31:t7,52,True,True
+516,central_repair_ring,True,ssrm.v34.route.central_repair_ring,outer bell path,playing,snapshot:central_repair_ring:d39:t7,49,True,True
+518,roofward_archive,True,ssrm.v34.route.roofward_archive,warm archive lane,paused,imported:roofward_archive:d31:t10,51,True,True
+527,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d31:t7,53,True,True
+528,central_repair_ring,True,ssrm.v34.route.central_repair_ring,outer bell path,playing,snapshot:central_repair_ring:d39:t7,51,True,True
+539,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d31:t7,54,True,True
+540,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,playing,snapshot:central_repair_ring:d39:t7,53,True,True
+551,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d31:t7,55,True,True
+552,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,playing,snapshot:central_repair_ring:d39:t7,55,True,True
+555,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,paused,imported:archive_signal:d39:t10,54,True,True
+563,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d31:t7,56,True,True
+564,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,57,True,True
+575,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,stepped,snapshot:central_repair_ring:d39:t7,58,True,True
+576,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,59,True,True
+587,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,stepped,snapshot:central_repair_ring:d39:t7,60,True,True
+588,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,61,True,True
+592,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,stepped,snapshot:orchard_riverbend:d50:t4,58,True,True
+599,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,stepped,snapshot:central_repair_ring:d39:t7,61,True,True
+600,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,63,True,True
+611,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,stepped,snapshot:central_repair_ring:d39:t7,62,True,True
+612,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,65,True,True
+623,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,stepped,snapshot:central_repair_ring:d39:t7,63,True,True
+624,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,67,True,True
+629,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,stepped,snapshot:central_repair_ring:d39:t7,63,True,True
+635,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,stepped,snapshot:central_repair_ring:d39:t7,64,True,True
+636,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,69,True,True
+647,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,stepped,snapshot:central_repair_ring:d39:t7,65,True,True
+648,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,71,True,True
+659,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,stepped,snapshot:central_repair_ring:d39:t7,66,True,True
+660,roofward_archive,True,ssrm.v34.route.roofward_archive,warm archive lane,playing,snapshot:roofward_archive:d55:t7,61,True,True
+666,roofward_archive,True,ssrm.v34.route.roofward_archive,warm archive lane,playing,snapshot:roofward_archive:d55:t7,62,True,True
+671,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,74,True,True
+672,roofward_archive,True,ssrm.v34.route.roofward_archive,warm archive lane,playing,snapshot:roofward_archive:d55:t7,63,True,True
+683,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,75,True,True
+684,roofward_archive,True,ssrm.v34.route.roofward_archive,warm archive lane,playing,snapshot:roofward_archive:d55:t7,65,True,True
+695,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,76,True,True
+696,roofward_archive,True,ssrm.v34.route.roofward_archive,warm archive lane,playing,snapshot:roofward_archive:d55:t7,67,True,True
+703,archive_signal,True,ssrm.v34.route.archive_signal,stone kiosk path,stepped,snapshot:archive_signal:d59:t7,72,True,True
+707,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,77,True,True
+708,roofward_archive,True,ssrm.v34.route.roofward_archive,warm archive lane,playing,snapshot:roofward_archive:d55:t7,69,True,True
+719,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,78,True,True
+720,roofward_archive,True,ssrm.v34.route.roofward_archive,warm archive lane,playing,snapshot:roofward_archive:d55:t7,71,True,True
+731,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,79,True,True
+732,roofward_archive,True,ssrm.v34.route.roofward_archive,warm archive lane,playing,snapshot:roofward_archive:d55:t7,73,True,True
+740,signal_orchard,True,ssrm.v34.route.signal_orchard,river lantern loop,paused,imported:signal_orchard:d47:t10,87,True,True
+743,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,80,True,True
+744,roofward_archive,True,ssrm.v34.route.roofward_archive,warm archive lane,playing,snapshot:roofward_archive:d55:t7,75,True,True
+755,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,snapshot:riverbend_roofward:d47:t7,81,True,True
+756,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,73,True,True
+767,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d55:t7,78,True,True
+768,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,75,True,True
+777,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,paused,snapshot:central_repair_ring:d63:t4,69,True,True
+779,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d55:t7,79,True,True
+780,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,77,True,True
+791,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d55:t7,80,True,True
+792,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,79,True,True
+803,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d55:t7,81,True,True
+804,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,81,True,True
+814,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,low plank crossing,playing,imported:riverbend_roofward:d68:t10,81,True,True
+815,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,playing,snapshot:roofward_archive:d55:t7,82,True,True
+816,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,83,True,True
+827,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,stepped,snapshot:roofward_archive:d55:t7,83,True,True
+828,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,85,True,True
+839,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,stepped,snapshot:roofward_archive:d55:t7,85,True,True
+840,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,87,True,True
+851,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,stepped,snapshot:roofward_archive:d55:t7,86,True,True
+852,signal_orchard,True,ssrm.v34.route.signal_orchard,river lantern loop,playing,snapshot:signal_orchard:d71:t7,92,True,True
+863,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,90,True,True
+864,signal_orchard,True,ssrm.v34.route.signal_orchard,river lantern loop,playing,snapshot:signal_orchard:d71:t7,94,True,True
+875,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,91,True,True
+876,signal_orchard,True,ssrm.v34.route.signal_orchard,river lantern loop,playing,snapshot:signal_orchard:d71:t7,96,True,True
+887,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,92,True,True
+888,signal_orchard,True,ssrm.v34.route.signal_orchard,river lantern loop,playing,snapshot:signal_orchard:d71:t7,98,True,True
+899,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,93,True,True
+900,signal_orchard,True,ssrm.v34.route.signal_orchard,river lantern loop,playing,snapshot:signal_orchard:d71:t7,100,True,True
+911,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,94,True,True
+912,signal_orchard,True,ssrm.v34.route.signal_orchard,river lantern loop,playing,snapshot:signal_orchard:d71:t7,102,True,True
+923,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,95,True,True
+924,signal_orchard,True,ssrm.v34.route.signal_orchard,river lantern loop,playing,snapshot:signal_orchard:d71:t7,104,True,True
+925,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,stepped,imported:orchard_riverbend:d78:t1,90,True,True
+935,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,96,True,True
+936,signal_orchard,True,ssrm.v34.route.signal_orchard,river lantern loop,playing,snapshot:signal_orchard:d71:t7,106,True,True
+947,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,playing,snapshot:archive_signal:d63:t7,97,True,True
+948,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d79:t7,90,True,True
+959,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d71:t7,109,True,True
+960,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d79:t7,92,True,True
+962,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,lantern ridge detour,paused,imported:riverbend_roofward:d71:t10,100,True,True
+971,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d71:t7,110,True,True
+972,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d79:t7,94,True,True
+983,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d71:t7,111,True,True
+984,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d79:t7,96,True,True
+995,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,playing,snapshot:signal_orchard:d71:t7,112,True,True
+996,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d79:t7,98,True,True
+999,roofward_archive,True,ssrm.v34.route.roofward_archive,glass stair,paused,imported:roofward_archive:d79:t10,94,True,True
+1007,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,stepped,snapshot:signal_orchard:d71:t7,113,True,True
+1008,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d79:t7,100,True,True
+1019,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,stepped,snapshot:signal_orchard:d71:t7,115,True,True
+1020,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,market plank route,playing,snapshot:orchard_riverbend:d79:t7,102,True,True
+1031,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,stepped,snapshot:signal_orchard:d71:t7,116,True,True
+1032,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d79:t7,104,True,True
+1036,archive_signal,True,ssrm.v34.route.archive_signal,paper lane,stepped,snapshot:archive_signal:d87:t4,99,True,True
+1043,signal_orchard,True,ssrm.v34.route.signal_orchard,dusk road,stepped,snapshot:signal_orchard:d71:t7,117,True,True
+1044,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,playing,snapshot:central_repair_ring:d87:t7,101,True,True
+1055,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d79:t7,107,True,True
+1056,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,playing,snapshot:central_repair_ring:d87:t7,103,True,True
+1067,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d79:t7,108,True,True
+1068,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,playing,snapshot:central_repair_ring:d87:t7,105,True,True
+1073,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d79:t7,108,True,True
+1079,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d79:t7,109,True,True
+1080,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,playing,snapshot:central_repair_ring:d87:t7,107,True,True
+1091,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d79:t7,110,True,True
+1092,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,playing,snapshot:central_repair_ring:d87:t7,109,True,True
+1103,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d79:t7,111,True,True
+1104,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,playing,snapshot:central_repair_ring:d87:t7,111,True,True
+1110,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,playing,snapshot:central_repair_ring:d87:t7,112,True,True
+1115,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d79:t7,112,True,True
+1116,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,playing,snapshot:central_repair_ring:d87:t7,113,True,True
+1127,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d79:t7,113,True,True
+1128,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,playing,snapshot:central_repair_ring:d87:t7,115,True,True
+1139,orchard_riverbend,True,ssrm.v34.route.orchard_riverbend,fen track,playing,snapshot:orchard_riverbend:d79:t7,114,True,True
+1140,riverbend_roofward,True,ssrm.v34.route.riverbend_roofward,lantern ridge detour,playing,snapshot:riverbend_roofward:d95:t7,115,True,True
+1147,roofward_archive,True,ssrm.v34.route.roofward_archive,warm archive lane,paused,snapshot:roofward_archive:d96:t7,118,True,True
+1151,central_repair_ring,True,ssrm.v34.route.central_repair_ring,inner repair yard,playing,snapshot:central_repair_ring:d87:t7,118,True,True

@@ -1,0 +1,153 @@
+{
+  "active_branch": {
+    "archive_signal": "stone kiosk path",
+    "central_repair_ring": "inner repair yard",
+    "orchard_riverbend": "fen track",
+    "riverbend_roofward": "lantern ridge detour",
+    "roofward_archive": "warm archive lane",
+    "signal_orchard": "dusk road"
+  },
+  "animation_state": {
+    "archive_signal": "paused",
+    "central_repair_ring": "playing",
+    "orchard_riverbend": "playing",
+    "riverbend_roofward": "playing",
+    "roofward_archive": "paused",
+    "signal_orchard": "paused"
+  },
+  "boundary": "Deterministic browser-local clickable-control scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "followup_memory_count": {
+    "archive_signal": 116,
+    "central_repair_ring": 118,
+    "orchard_riverbend": 114,
+    "riverbend_roofward": 116,
+    "roofward_archive": 118,
+    "signal_orchard": 118
+  },
+  "routes": [
+    {
+      "agents": [
+        "Ari",
+        "Fay"
+      ],
+      "detour_branch": "lantern ridge detour",
+      "direct_branch": "low plank crossing",
+      "followup_line": "I noticed you chose the dry ridge. I can keep carrying the kit.",
+      "hazard": "wet boards",
+      "home_place": "riverbend room",
+      "object_name": "cedar repair kit",
+      "refusal_line": "I will not cross the wet plank while my hands are numb.",
+      "route_id": "riverbend_roofward",
+      "smell_cue": "cedar resin and rain",
+      "sound_cue": "river slap under planks",
+      "temperature_cue": "cold spray",
+      "visible_body_reaction": "Ari shakes water from sleeves, then leans closer"
+    },
+    {
+      "agents": [
+        "Fay",
+        "Nia"
+      ],
+      "detour_branch": "warm archive lane",
+      "direct_branch": "glass stair",
+      "followup_line": "The warm lane helped. I remember you waited instead of rushing me.",
+      "hazard": "slick glass",
+      "home_place": "roofward sill",
+      "object_name": "herb ledger",
+      "refusal_line": "I need a slower route before I carry the ledger.",
+      "route_id": "roofward_archive",
+      "smell_cue": "dry paper and thyme",
+      "sound_cue": "hinges ticking",
+      "temperature_cue": "warm draft",
+      "visible_body_reaction": "Fay lowers her shoulders and uncurls her fingers"
+    },
+    {
+      "agents": [
+        "Nia",
+        "Milo"
+      ],
+      "detour_branch": "stone kiosk path",
+      "direct_branch": "paper lane",
+      "followup_line": "That path kept the spool clean. I can explain the pattern now.",
+      "hazard": "paper dust",
+      "home_place": "archive bench",
+      "object_name": "signal spool",
+      "refusal_line": "Do not pull the spool from my hands. Ask first.",
+      "route_id": "archive_signal",
+      "smell_cue": "ink, chalk, and dry linen",
+      "sound_cue": "soft page flutter",
+      "temperature_cue": "cool stone",
+      "visible_body_reaction": "Nia blinks twice, then points toward the kiosk"
+    },
+    {
+      "agents": [
+        "Milo",
+        "Ivo"
+      ],
+      "detour_branch": "river lantern loop",
+      "direct_branch": "dusk road",
+      "followup_line": "The loop gave us light. I trust that more than the short road tonight.",
+      "hazard": "low visibility",
+      "home_place": "signal mast",
+      "object_name": "oil lantern",
+      "refusal_line": "I am not walking blind while the lantern sputters.",
+      "route_id": "signal_orchard",
+      "smell_cue": "lamp oil and wet grass",
+      "sound_cue": "crickets under static",
+      "temperature_cue": "cool dusk",
+      "visible_body_reaction": "Milo lifts the lantern and scans the path twice"
+    },
+    {
+      "agents": [
+        "Ivo",
+        "Ari"
+      ],
+      "detour_branch": "market plank route",
+      "direct_branch": "fen track",
+      "followup_line": "The seeds stayed dry. I will remember that route.",
+      "hazard": "mud sink",
+      "home_place": "orchard gate",
+      "object_name": "seed satchel",
+      "refusal_line": "I will not step into the fen with the satchel open.",
+      "route_id": "orchard_riverbend",
+      "smell_cue": "apple skin and wet soil",
+      "sound_cue": "cart wheels creaking",
+      "temperature_cue": "damp air",
+      "visible_body_reaction": "Ivo pats the satchel, then moves nearer to the dry planks"
+    },
+    {
+      "agents": [
+        "Juno",
+        "Pax"
+      ],
+      "detour_branch": "outer bell path",
+      "direct_branch": "inner repair yard",
+      "followup_line": "The outer path gave me room. I can finish the wire without shaking.",
+      "hazard": "crowded sparks",
+      "home_place": "repair ring",
+      "object_name": "copper wire",
+      "refusal_line": "Back up. Sparks near my hands make me lose the thread.",
+      "route_id": "central_repair_ring",
+      "smell_cue": "hot copper and dust",
+      "sound_cue": "bell hum through walls",
+      "temperature_cue": "warm metal",
+      "visible_body_reaction": "Juno covers the wire, exhales, then nods once"
+    }
+  ],
+  "snapshot_id": {
+    "archive_signal": "imported:archive_signal:d87:t10",
+    "central_repair_ring": "snapshot:central_repair_ring:d87:t7",
+    "orchard_riverbend": "imported:orchard_riverbend:d96:t10",
+    "riverbend_roofward": "snapshot:riverbend_roofward:d95:t7",
+    "roofward_archive": "snapshot:roofward_archive:d96:t7",
+    "signal_orchard": "imported:signal_orchard:d95:t10"
+  },
+  "state_version": {
+    "archive_signal": 80,
+    "central_repair_ring": 82,
+    "orchard_riverbend": 81,
+    "riverbend_roofward": 81,
+    "roofward_archive": 81,
+    "signal_orchard": 80
+  }
+}

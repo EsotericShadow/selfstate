@@ -1,0 +1,169 @@
+tick,day,agent_focus,branch_group_id,conflict_id,local_mutation_version,conflict_detected,arbitration_resolved,reload_followup_pending,rollback_isolated,sensory_frequency_hz,flower_phase,public_behavior_marker,sealed_private_workspace
+0,1,Sova,v15-branch-group-01-000,v15-watch-01-000,15,0,0,0,1,1.724,15.95,watches without intervening,1
+1,1,Keth,v15-branch-group-01-001,v15-conflict-01-001,15,1,1,0,1,1.68923,151.7285,turns between both claimants,1
+2,1,Melo,v15-branch-group-01-002,v15-conflict-01-002,15,1,1,1,1,1.721598,290.094695,turns between both claimants,1
+3,1,Nari,v15-branch-group-01-003,v15-conflict-01-003,15,1,1,0,1,1.753847,68.417668,turns between both claimants,1
+4,1,Ori,v15-branch-group-01-004,v15-conflict-01-004,15,1,1,0,1,1.785926,206.679189,turns between both claimants,1
+5,1,Vonn,v15-branch-group-01-005,v15-conflict-01-005,15,1,1,0,1,1.884996,347.474848,turns between both claimants,1
+6,1,Sova,v15-branch-group-01-006,v15-conflict-01-006,15,1,1,1,1,1.84943,122.964952,turns between both claimants,1
+7,1,Keth,v15-branch-group-01-007,v15-watch-01-007,15,0,0,0,1,1.880816,260.975128,watches without intervening,1
+8,2,Melo,v15-branch-group-02-008,v15-conflict-02-008,15,1,1,0,1,1.671957,38.896593,turns between both claimants,1
+9,2,Nari,v15-branch-group-02-009,v15-conflict-02-009,15,1,1,0,1,1.702872,176.736082,turns between both claimants,1
+10,2,Ori,v15-branch-group-02-010,v15-conflict-02-010,15,1,1,0,1,1.800794,317.115425,turns between both claimants,1
+11,2,Vonn,v15-branch-group-02-011,v15-conflict-02-011,15,1,1,0,1,1.748327,86.478812,turns between both claimants,1
+12,2,Sova,v15-branch-group-02-012,v15-conflict-02-012,15,1,1,0,1,1.778804,224.159792,turns between both claimants,1
+13,2,Keth,v15-branch-group-02-013,v15-conflict-02-013,15,1,0,0,1,1.809247,1.828049,keeps distance and asks for review,1
+14,2,Melo,v15-branch-group-02-014,v15-watch-02-014,15,0,0,0,1,1.839717,139.50606,watches without intervening,1
+15,2,Nari,v15-branch-group-02-015,v15-conflict-02-015,15,1,1,0,1,1.937474,279.825696,turns between both claimants,1
+16,3,Ori,v15-branch-group-03-016,v15-conflict-03-016,15,1,1,0,1,1.660973,54.97686,turns between both claimants,1
+17,3,Vonn,v15-branch-group-03-017,v15-conflict-03-017,15,1,1,0,1,1.69186,192.806253,turns between both claimants,1
+18,3,Sova,v15-branch-group-03-018,v15-conflict-03-018,15,1,1,1,1,1.72297,330.716333,turns between both claimants,1
+19,3,Keth,v15-branch-group-03-019,v15-conflict-03-019,15,0,0,0,1,1.754323,108.714541,keeps distance and asks for review,1
+20,3,Melo,v15-branch-group-03-020,v15-conflict-03-020,15,1,1,0,1,1.853124,249.41284,turns between both claimants,1
+21,3,Nari,v15-branch-group-03-021,v15-watch-03-021,15,0,0,0,1,1.817764,24.977589,watches without intervening,1
+22,3,Ori,v15-branch-group-03-022,v15-conflict-03-022,15,1,1,0,1,1.833978,157.487775,turns between both claimants,1
+23,3,Vonn,v15-branch-group-03-023,v15-conflict-03-023,15,1,1,0,1,1.866207,295.803567,turns between both claimants,1
+24,4,Sova,v15-branch-group-04-024,v15-conflict-04-024,15,1,1,0,1,1.658562,74.165184,turns between both claimants,1
+25,4,Keth,v15-branch-group-04-025,v15-conflict-04-025,15,1,1,0,1,1.758187,215.16199,turns between both claimants,1
+26,4,Melo,v15-branch-group-04-026,v15-conflict-04-026,15,1,0,1,1,1.72342,350.941788,keeps distance and asks for review,1
+27,4,Nari,v15-branch-group-04-027,v15-conflict-04-027,15,1,1,0,1,1.7558,129.312192,turns between both claimants,1
+28,4,Ori,v15-branch-group-04-028,v15-watch-04-028,15,0,0,0,1,1.788068,267.642023,watches without intervening,1
+29,4,Vonn,v15-branch-group-04-029,v15-conflict-04-029,15,1,1,1,1,1.820172,45.912623,turns between both claimants,1
+30,4,Sova,v15-branch-group-04-030,v15-conflict-04-030,15,1,1,1,1,1.919272,186.71902,turns between both claimants,1
+31,4,Keth,v15-branch-group-04-031,v15-conflict-04-031,15,1,1,0,1,1.883738,322.220852,turns between both claimants,1
+32,5,Melo,v15-branch-group-05-032,v15-conflict-05-032,15,1,1,0,1,1.675157,100.243017,turns between both claimants,1
+33,5,Nari,v15-branch-group-05-033,v15-conflict-05-033,15,1,1,0,1,1.69049,232.433988,turns between both claimants,1
+34,5,Ori,v15-branch-group-05-034,v15-conflict-05-034,15,1,1,0,1,1.721434,10.283782,turns between both claimants,1
+35,5,Vonn,v15-branch-group-05-035,v15-watch-05-035,15,0,0,0,1,1.819379,150.67159,watches without intervening,1
+36,5,Sova,v15-branch-group-05-036,v15-conflict-05-036,15,1,1,0,1,1.782768,285.783076,turns between both claimants,1
+37,5,Keth,v15-branch-group-05-037,v15-conflict-05-037,15,1,1,0,1,1.813256,63.467408,turns between both claimants,1
+38,5,Melo,v15-branch-group-05-038,v15-conflict-05-038,15,0,0,1,1,1.843699,201.136063,keeps distance and asks for review,1
+39,5,Nari,v15-branch-group-05-039,v15-conflict-05-039,15,1,0,0,1,1.874162,338.811493,keeps distance and asks for review,1
+40,6,Ori,v15-branch-group-06-040,v15-conflict-06-040,15,1,1,0,1,1.731904,119.125729,turns between both claimants,1
+41,6,Vonn,v15-branch-group-06-041,v15-conflict-06-041,15,1,1,1,1,1.695381,254.269011,turns between both claimants,1
+42,6,Sova,v15-branch-group-06-042,v15-watch-06-042,15,0,0,0,1,1.726241,32.088529,watches without intervening,1
+43,6,Keth,v15-branch-group-06-043,v15-conflict-06-043,15,1,1,0,1,1.75732,169.987355,turns between both claimants,1
+44,6,Melo,v15-branch-group-06-044,v15-conflict-06-044,15,1,1,0,1,1.7728,302.23163,turns between both claimants,1
+45,6,Nari,v15-branch-group-06-045,v15-conflict-06-045,15,1,1,0,1,1.871569,82.918058,turns between both claimants,1
+46,6,Ori,v15-branch-group-06-046,v15-conflict-06-046,15,1,1,0,1,1.836178,218.471738,turns between both claimants,1
+47,6,Vonn,v15-branch-group-06-047,v15-conflict-06-047,15,1,1,0,1,1.868205,356.714344,turns between both claimants,1
+48,7,Sova,v15-branch-group-07-048,v15-conflict-07-048,15,1,1,0,1,1.660414,135.022641,turns between both claimants,1
+49,7,Keth,v15-branch-group-07-049,v15-watch-07-049,15,0,0,0,1,1.692756,273.379313,watches without intervening,1
+50,7,Melo,v15-branch-group-07-050,v15-conflict-07-050,15,1,1,1,1,1.792375,54.374033,turns between both claimants,1
+51,7,Nari,v15-branch-group-07-051,v15-conflict-07-051,15,1,1,0,1,1.75761,190.154733,turns between both claimants,1
+52,7,Ori,v15-branch-group-07-052,v15-conflict-07-052,15,1,0,0,1,1.790001,328.52897,keeps distance and asks for review,1
+53,7,Vonn,v15-branch-group-07-053,v15-conflict-07-053,15,1,1,0,1,1.822286,106.865328,turns between both claimants,1
+54,7,Sova,v15-branch-group-07-054,v15-conflict-07-054,15,1,1,1,1,1.854415,245.144743,turns between both claimants,1
+55,7,Keth,v15-branch-group-07-055,v15-conflict-07-055,15,1,1,0,1,1.937704,20.219695,turns between both claimants,1
+56,8,Melo,v15-branch-group-08-056,v15-watch-08-056,15,0,0,0,1,1.662202,155.733165,watches without intervening,1
+57,8,Nari,v15-branch-group-08-057,v15-conflict-08-057,15,0,0,0,1,1.693655,293.767328,keeps distance and asks for review,1
+58,8,Ori,v15-branch-group-08-058,v15-conflict-08-058,15,1,1,0,1,1.72486,71.71191,turns between both claimants,1
+59,8,Vonn,v15-branch-group-08-059,v15-conflict-08-059,15,1,1,0,1,1.755832,209.572208,turns between both claimants,1
+60,8,Sova,v15-branch-group-08-060,v15-conflict-08-060,15,1,1,0,1,1.853801,349.968757,turns between both claimants,1
+61,8,Keth,v15-branch-group-08-061,v15-conflict-08-061,15,1,1,0,1,1.817208,125.086681,turns between both claimants,1
+62,8,Melo,v15-branch-group-08-062,v15-conflict-08-062,15,1,1,1,1,1.847706,262.774746,turns between both claimants,1
+63,8,Nari,v15-branch-group-08-063,v15-watch-08-063,15,0,0,0,1,1.878152,40.444197,watches without intervening,1
+64,9,Ori,v15-branch-group-09-064,v15-conflict-09-064,15,1,1,0,1,1.668608,178.117436,turns between both claimants,1
+65,9,Vonn,v15-branch-group-09-065,v15-conflict-09-065,15,1,0,0,1,1.766336,318.426631,keeps distance and asks for review,1
+66,9,Sova,v15-branch-group-09-066,v15-conflict-09-066,15,1,1,1,1,1.713953,87.820335,turns between both claimants,1
+67,9,Keth,v15-branch-group-09-067,v15-conflict-09-067,15,1,1,0,1,1.744786,225.630209,turns between both claimants,1
+68,9,Melo,v15-branch-group-09-068,v15-conflict-09-068,15,1,1,0,1,1.775834,3.517926,turns between both claimants,1
+69,9,Nari,v15-branch-group-09-069,v15-conflict-09-069,15,1,1,0,1,1.807122,141.492316,turns between both claimants,1
+70,9,Ori,v15-branch-group-09-070,v15-watch-09-070,15,0,0,0,1,1.905857,282.166822,watches without intervening,1
+71,9,Vonn,v15-branch-group-09-071,v15-conflict-09-071,15,1,1,0,1,1.870436,57.709286,turns between both claimants,1
+72,10,Sova,v15-branch-group-10-072,v15-conflict-10-072,15,1,1,0,1,1.662436,195.942076,turns between both claimants,1
+73,10,Keth,v15-branch-group-10-073,v15-conflict-10-073,15,1,1,0,1,1.694623,334.242572,turns between both claimants,1
+74,10,Melo,v15-branch-group-10-074,v15-conflict-10-074,15,1,1,1,1,1.72695,112.593939,turns between both claimants,1
+75,10,Nari,v15-branch-group-10-075,v15-conflict-10-075,15,1,1,0,1,1.826562,253.586182,turns between both claimants,1
+76,10,Ori,v15-branch-group-10-076,v15-conflict-10-076,15,0,0,0,0,1.7918,29.367386,keeps distance and asks for review,1
+77,10,Vonn,v15-branch-group-10-077,v15-watch-10-077,15,0,0,0,1,1.808359,162.003078,watches without intervening,1
+78,10,Sova,v15-branch-group-10-078,v15-conflict-10-078,15,1,0,1,1,1.840662,300.345625,keeps distance and asks for review,1
+79,10,Keth,v15-branch-group-10-079,v15-conflict-10-079,15,1,1,0,1,1.872814,78.63358,turns between both claimants,1
+80,11,Melo,v15-branch-group-11-080,v15-conflict-11-080,15,1,1,0,1,1.731972,219.460891,turns between both claimants,1
+81,11,Nari,v15-branch-group-11-081,v15-conflict-11-081,15,1,1,0,1,1.696502,354.985895,turns between both claimants,1
+82,11,Ori,v15-branch-group-11-082,v15-conflict-11-082,15,1,1,0,1,1.727987,133.032051,turns between both claimants,1
+83,11,Vonn,v15-branch-group-11-083,v15-conflict-11-083,15,1,1,0,1,1.759225,270.988339,turns between both claimants,1
+84,11,Sova,v15-branch-group-11-084,v15-watch-11-084,15,0,0,0,1,1.790227,48.859327,watches without intervening,1
+85,11,Keth,v15-branch-group-11-085,v15-conflict-11-085,15,1,1,0,1,1.888221,189.264887,turns between both claimants,1
+86,11,Melo,v15-branch-group-11-086,v15-conflict-11-086,15,1,1,1,1,1.851647,324.389581,turns between both claimants,1
+87,11,Nari,v15-branch-group-11-087,v15-conflict-11-087,15,1,1,1,1,1.882155,102.081754,turns between both claimants,1
+88,12,Ori,v15-branch-group-12-088,v15-conflict-12-088,15,1,1,0,1,1.656765,234.010398,turns between both claimants,1
+89,12,Vonn,v15-branch-group-12-089,v15-conflict-12-089,15,1,1,0,1,1.687216,11.681839,turns between both claimants,1
+90,12,Sova,v15-branch-group-12-090,v15-conflict-12-090,15,1,1,1,1,1.784931,151.986357,turns between both claimants,1
+91,12,Keth,v15-branch-group-12-091,v15-watch-12-091,15,0,0,0,1,1.748368,287.114796,watches without intervening,1
+92,12,Melo,v15-branch-group-12-092,v15-conflict-12-092,15,1,1,0,1,1.779175,64.915268,turns between both claimants,1
+93,12,Nari,v15-branch-group-12-093,v15-conflict-12-093,15,1,1,0,1,1.810193,202.792031,turns between both claimants,1
+94,12,Ori,v15-branch-group-12-094,v15-conflict-12-094,15,1,1,0,1,1.841448,340.754597,turns between both claimants,1
+95,12,Vonn,v15-branch-group-12-095,v15-conflict-12-095,15,0,0,0,1,1.940151,121.417144,keeps distance and asks for review,1
+96,13,Sova,v15-branch-group-13-096,v15-conflict-13-096,15,1,1,0,1,1.664698,256.948255,turns between both claimants,1
+97,13,Keth,v15-branch-group-13-097,v15-conflict-13-097,15,1,1,0,1,1.69667,35.171008,turns between both claimants,1
+98,13,Melo,v15-branch-group-13-098,v15-watch-13-098,15,0,0,0,1,1.728835,173.463404,watches without intervening,1
+99,13,Nari,v15-branch-group-13-099,v15-conflict-13-099,15,1,1,0,1,1.745306,306.067112,turns between both claimants,1
+100,13,Ori,v15-branch-group-13-100,v15-conflict-13-100,15,1,1,0,1,1.844911,87.05649,turns between both claimants,1
+101,13,Vonn,v15-branch-group-13-101,v15-conflict-13-101,15,1,1,0,1,1.810148,222.8378,turns between both claimants,1
+102,13,Sova,v15-branch-group-13-102,v15-conflict-13-102,15,1,1,1,1,1.842556,1.218563,turns between both claimants,1
+103,13,Keth,v15-branch-group-13-103,v15-conflict-13-103,15,1,1,0,1,1.874875,139.566955,turns between both claimants,1
+104,14,Melo,v15-branch-group-14-104,v15-conflict-14-104,15,1,0,0,1,1.66705,277.863166,keeps distance and asks for review,1
+105,14,Nari,v15-branch-group-14-105,v15-watch-14-105,15,0,0,0,1,1.766236,58.700629,watches without intervening,1
+106,14,Ori,v15-branch-group-14-106,v15-conflict-14-106,15,1,1,0,1,1.730797,194.237053,turns between both claimants,1
+107,14,Vonn,v15-branch-group-14-107,v15-conflict-14-107,15,1,1,0,1,1.762316,332.295183,turns between both claimants,1
+108,14,Sova,v15-branch-group-14-108,v15-conflict-14-108,15,1,1,0,1,1.793586,110.263257,turns between both claimants,1
+109,14,Keth,v15-branch-group-14-109,v15-conflict-14-109,15,1,1,0,1,1.824617,248.14511,turns between both claimants,1
+110,14,Melo,v15-branch-group-14-110,v15-conflict-14-110,15,1,1,1,1,1.906797,22.817938,turns between both claimants,1
+111,14,Nari,v15-branch-group-14-111,v15-conflict-14-111,15,1,1,0,1,1.870243,157.949727,turns between both claimants,1
+112,15,Ori,v15-branch-group-15-112,v15-watch-15-112,15,0,0,0,1,1.660764,295.646381,watches without intervening,1
+113,15,Vonn,v15-branch-group-15-113,v15-conflict-15-113,15,1,1,0,1,1.691217,73.318613,turns between both claimants,1
+114,15,Sova,v15-branch-group-15-114,v15-conflict-15-114,15,0,0,1,1,1.721665,210.98865,keeps distance and asks for review,1
+115,15,Keth,v15-branch-group-15-115,v15-conflict-15-115,15,1,1,0,1,1.819368,351.28886,turns between both claimants,1
+116,15,Melo,v15-branch-group-15-116,v15-conflict-15-116,15,1,1,1,1,1.782785,126.410355,turns between both claimants,1
+117,15,Nari,v15-branch-group-15-117,v15-conflict-15-117,15,1,0,0,1,1.813568,264.201679,keeps distance and asks for review,1
+118,15,Ori,v15-branch-group-15-118,v15-conflict-15-118,15,1,1,0,1,1.844556,42.067656,turns between both claimants,1
+119,15,Vonn,v15-branch-group-15-119,v15-watch-15-119,15,0,0,0,1,1.875778,180.018472,watches without intervening,1
+120,16,Sova,v15-branch-group-16-120,v15-conflict-16-120,15,1,1,0,1,1.734448,320.669034,turns between both claimants,1
+121,16,Keth,v15-branch-group-16-121,v15-conflict-16-121,15,1,1,0,1,1.683123,90.446671,turns between both claimants,1
+122,16,Melo,v15-branch-group-16-122,v15-conflict-16-122,15,1,1,1,1,1.715067,228.659174,turns between both claimants,1
+123,16,Nari,v15-branch-group-16-123,v15-conflict-16-123,15,1,1,1,1,1.747209,6.943179,turns between both claimants,1
+124,16,Ori,v15-branch-group-16-124,v15-conflict-16-124,15,1,1,0,1,1.779504,145.282881,turns between both claimants,1
+125,16,Vonn,v15-branch-group-16-125,v15-conflict-16-125,15,1,1,0,1,1.879099,286.269009,turns between both claimants,1
+126,16,Sova,v15-branch-group-16-126,v15-watch-16-126,15,0,0,0,1,1.844336,62.050027,watches without intervening,1
+127,16,Keth,v15-branch-group-16-127,v15-conflict-16-127,15,1,1,0,1,1.876752,200.433474,turns between both claimants,1
+128,17,Melo,v15-branch-group-17-128,v15-conflict-17-128,15,1,1,0,1,1.669086,338.787361,turns between both claimants,1
+129,17,Nari,v15-branch-group-17-129,v15-conflict-17-129,15,1,1,0,1,1.701283,117.091534,turns between both claimants,1
+130,17,Ori,v15-branch-group-17-130,v15-conflict-17-130,15,1,0,0,1,1.800495,257.938932,keeps distance and asks for review,1
+131,17,Vonn,v15-branch-group-17-131,v15-conflict-17-131,15,1,1,0,1,1.765088,33.486646,turns between both claimants,1
+132,17,Sova,v15-branch-group-17-132,v15-conflict-17-132,15,1,1,0,1,1.7808,165.81472,turns between both claimants,1
+133,17,Keth,v15-branch-group-17-133,v15-watch-17-133,15,0,0,0,1,1.812102,303.794648,watches without intervening,1
+134,17,Melo,v15-branch-group-17-134,v15-conflict-17-134,15,1,1,1,1,1.843165,81.687529,turns between both claimants,1
+135,17,Nari,v15-branch-group-17-135,v15-conflict-17-135,15,1,1,0,1,1.94121,222.111873,turns between both claimants,1
+136,18,Ori,v15-branch-group-18-136,v15-conflict-18-136,15,1,1,0,1,1.664676,357.251074,turns between both claimants,1
+137,18,Vonn,v15-branch-group-18-137,v15-conflict-18-137,15,1,1,0,1,1.695211,134.952576,turns between both claimants,1
+138,18,Sova,v15-branch-group-18-138,v15-conflict-18-138,15,1,1,0,1,1.72567,272.626789,turns between both claimants,1
+139,18,Keth,v15-branch-group-18-139,v15-conflict-18-139,15,1,1,0,1,1.756115,50.295819,turns between both claimants,1
+140,18,Melo,v15-branch-group-18-140,v15-watch-18-140,15,0,0,0,1,1.853807,190.592095,watches without intervening,1
+141,18,Nari,v15-branch-group-18-141,v15-conflict-18-141,15,1,1,0,1,1.817206,325.706974,turns between both claimants,1
+142,18,Ori,v15-branch-group-18-142,v15-conflict-18-142,15,1,1,0,1,1.847964,103.489411,turns between both claimants,1
+143,18,Vonn,v15-branch-group-18-143,v15-conflict-18-143,15,1,0,0,1,1.863083,235.602784,keeps distance and asks for review,1
+144,19,Sova,v15-branch-group-19-144,v15-conflict-19-144,15,1,1,0,1,1.654273,13.541937,turns between both claimants,1
+145,19,Keth,v15-branch-group-19-145,v15-conflict-19-145,15,1,1,0,1,1.75291,154.180502,turns between both claimants,1
+146,19,Melo,v15-branch-group-19-146,v15-conflict-19-146,15,1,1,1,1,1.717393,289.688555,turns between both claimants,1
+147,19,Nari,v15-branch-group-19-147,v15-watch-19-147,15,0,0,0,1,1.749308,67.890605,watches without intervening,1
+148,19,Ori,v15-branch-group-19-148,v15-conflict-19-148,15,1,1,0,0,1.781426,206.165942,turns between both claimants,1
+149,19,Vonn,v15-branch-group-19-149,v15-conflict-19-149,15,1,1,0,1,1.813703,344.499296,turns between both claimants,1
+150,19,Sova,v15-branch-group-19-150,v15-conflict-19-150,15,1,1,1,1,1.913289,125.481792,turns between both claimants,1
+151,19,Keth,v15-branch-group-19-151,v15-conflict-19-151,15,1,1,0,1,1.878523,261.26212,turns between both claimants,1
+152,20,Melo,v15-branch-group-20-152,v15-conflict-20-152,15,0,0,0,0,1.670945,39.647862,keeps distance and asks for review,1
+153,20,Nari,v15-branch-group-20-153,v15-conflict-20-153,15,1,1,0,1,1.703294,178.006886,turns between both claimants,1
+154,20,Ori,v15-branch-group-20-154,v15-watch-20-154,15,0,0,0,1,1.719672,310.576719,watches without intervening,1
+155,20,Vonn,v15-branch-group-20-155,v15-conflict-20-155,15,1,1,0,1,1.818911,91.433824,turns between both claimants,1
+156,20,Sova,v15-branch-group-20-156,v15-conflict-20-156,15,1,0,1,1,1.783535,226.992687,keeps distance and asks for review,1
+157,20,Keth,v15-branch-group-20-157,v15-conflict-20-157,15,1,1,0,1,1.815119,5.074661,turns between both claimants,1
+158,20,Melo,v15-branch-group-20-158,v15-conflict-20-158,15,1,1,1,1,1.846455,143.066498,turns between both claimants,1
+159,20,Nari,v15-branch-group-20-159,v15-conflict-20-159,15,1,1,0,1,1.877548,280.970557,turns between both claimants,1
+160,21,Ori,v15-branch-group-21-160,v15-conflict-21-160,15,1,1,0,1,1.73562,61.404654,turns between both claimants,1
+161,21,Vonn,v15-branch-group-21-161,v15-watch-21-161,15,0,0,0,1,1.699108,196.551576,watches without intervening,1
+162,21,Sova,v15-branch-group-21-162,v15-conflict-21-162,15,1,1,1,1,1.729657,334.258287,turns between both claimants,1
+163,21,Keth,v15-branch-group-21-163,v15-conflict-21-163,15,1,1,0,1,1.760122,111.934873,turns between both claimants,1
+164,21,Melo,v15-branch-group-21-164,v15-conflict-21-164,15,1,1,1,1,1.790566,249.603293,turns between both claimants,1
+165,21,Nari,v15-branch-group-21-165,v15-conflict-21-165,15,1,1,0,1,1.872408,24.154013,turns between both claimants,1
+166,21,Ori,v15-branch-group-21-166,v15-conflict-21-166,15,1,1,0,1,1.83579,159.262612,turns between both claimants,1
+167,21,Vonn,v15-branch-group-21-167,v15-conflict-21-167,15,1,1,0,1,1.866524,297.036435,turns between both claimants,1

@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 255 - Browser World v15 Conflict Arbitration</title>
+<style>
+:root {
+  --bg: #14110d;
+  --panel: #efe2c4;
+  --ink: #241a10;
+  --line: #7d4d24;
+  --accent: #d4772a;
+  --cool: #357f76;
+  --danger: #aa3e2f;
+  --muted: #776b5b;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: radial-gradient(circle at 20% 10%, #3b2514, var(--bg) 44%), linear-gradient(120deg, #14110d, #26170e); color: var(--ink); }
+main { width: min(1180px, calc(100vw - 28px)); margin: 0 auto; padding: 28px 0 42px; }
+.hero { color: #f7ecd6; border: 1px solid #6f4a29; border-radius: 28px; padding: 26px; background: linear-gradient(145deg, rgba(212,119,42,.24), rgba(53,127,118,.16)); box-shadow: 0 24px 90px rgba(0,0,0,.38); }
+.hero h1 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 4.4rem); line-height: .94; letter-spacing: -.04em; }
+.hero p { max-width: 820px; font-size: 1.06rem; line-height: 1.55; color: #ead8b8; }
+.grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 18px; margin-top: 18px; }
+.card { background: var(--panel); border: 1px solid #c69d63; border-radius: 22px; padding: 18px; box-shadow: 0 18px 42px rgba(0,0,0,.26); }
+.card h2 { margin: 0 0 12px; font-size: 1.2rem; text-transform: uppercase; letter-spacing: .08em; }
+button { border: 0; background: var(--accent); color: #1c1208; padding: 10px 13px; border-radius: 999px; font-weight: 700; cursor: pointer; margin: 4px 4px 4px 0; }
+button.secondary { background: #91bcb5; }
+button.danger { background: #d06759; }
+.kpi { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.kpi div { background: #fff8e9; border: 1px solid #d7b985; border-radius: 16px; padding: 12px; }
+.kpi strong { display: block; font-size: 1.45rem; color: var(--line); }
+#conflictLog { display: grid; gap: 10px; max-height: 520px; overflow: auto; }
+.event { border-left: 5px solid var(--accent); background: #fff8ea; padding: 11px 12px; border-radius: 14px; }
+.event[data-resolved="0"] { border-left-color: var(--danger); }
+.event small { color: var(--muted); }
+pre { white-space: pre-wrap; overflow: auto; background: #1c1711; color: #f5dfbc; border-radius: 16px; padding: 14px; max-height: 380px; }
+.footer-note { color: #f1dcc0; margin-top: 18px; font-size: .95rem; }
+@media (max-width: 840px) { .grid { grid-template-columns: 1fr; } .kpi { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Browser World v15: Multi-agent branch conflict arbitration</h1>
+    <p>Concurrent branches now collide across agents. The browser surface stores selected futures, detects conflicts, asks for arbitration after reload, isolates partial rollbacks, and exports replay evidence. The private workspace remains sealed; public reasons are replayable.</p>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <h2>Local conflict console</h2>
+      <button onclick="stepConflict()">Run arbitration tick</button>
+      <button class="secondary" onclick="simulateReload()">Simulate reload restore</button>
+      <button class="danger" onclick="rollbackCurrent()">Rollback selected branch</button>
+      <button onclick="exportReplay()">Export replay JSON</button>
+      <div id="conflictLog"></div>
+    </div>
+    <div class="card">
+      <h2>Readiness</h2>
+      <div class="kpi">
+        <div><span>Readiness</span><strong id="readiness"></strong></div>
+        <div><span>Weakest</span><strong id="weakest"></strong></div>
+        <div><span>Conflicts</span><strong id="conflicts"></strong></div>
+      </div>
+      <h2 style="margin-top:18px">Stored state</h2>
+      <pre id="stateView"></pre>
+    </div>
+  </section>
+  <p class="footer-note">Boundary: deterministic browser-local scaffold only. No subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine is claimed.</p>
+</main>
+<script id="initial-state" type="application/json">{
+  "claim_boundary": "Deterministic browser-local conflict arbitration scaffold only; no subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "arbitration_replay_export_frames": 168,
+    "branch_conflict_frames": 168,
+    "browser_world_v15_ticks": 168,
+    "concurrent_branch_group_frames": 168,
+    "conflict_arbitration_frames": 168,
+    "lineages": 6,
+    "multi_agent_followup_arbitration_frames": 93,
+    "partial_rollback_isolation_frames": 168,
+    "real_conflict_frames": 144,
+    "schedule_access_trust_conflict_frames": 168
+  },
+  "local_storage_key": "ssrm_browser_world_v15_multi_agent_branch_conflicts",
+  "metrics": {
+    "arbitration_resolution_rate": 0.875,
+    "browser_world_v15_conflict_arbitration_readiness": 0.92522,
+    "browser_world_v15_surface_available": 1.0,
+    "concurrent_branch_persistence": 0.97619,
+    "conflict_detection_rate": 0.951389,
+    "followup_arbitration_after_reload": 0.939394,
+    "mean_conflict_channel_score": 0.963962,
+    "multi_agent_concurrency_surface": 0.97619,
+    "partial_rollback_isolation": 0.967262,
+    "privacy_safe_arbitration": 1.0,
+    "replay_arbitration_integrity": 0.985952,
+    "save_restore_multi_branch_integrity": 0.967742,
+    "schedule_access_trust_conflict_binding": 1.0,
+    "sensory_frequency_flower_conflict_rhythm": 1.0,
+    "source_in_browser_mutation_continuity": 1.0,
+    "typed_arbitration_confidence": 0.856346,
+    "weakest_channel_score": 0.856346
+  },
+  "report": 255,
+  "sample_arbitrations": [
+    {
+      "agent_initiated": 0,
+      "arbitration_mode": "defer_low_urgency",
+      "boundary_preserved": 1,
+      "conflict_id": "v15-watch-01-000",
+      "day": 1,
+      "deferred_branch": "orchardline:witness:1:5",
+      "preserved_branch": "none",
+      "public_explanation": "False alarm kept as observation only; no branch is blocked just because a noisy signal looked suspicious.",
+      "repair_path_available": 0,
+      "resolved": 0,
+      "tick": 0,
+      "typed_arbitration_confidence": 0.825,
+      "winner_branch": "none"
+    },
+    {
+      "agent_initiated": 0,
+      "arbitration_mode": "defer_low_urgency",
+      "boundary_preserved": 1,
+      "conflict_id": "v15-conflict-01-001",
+      "day": 1,
+      "deferred_branch": "none",
+      "preserved_branch": "routeline:protect:1:1",
+      "public_explanation": "defer_low_urgency chooses ledgerline:claim:1:4; routeline:protect:1:1 stays visible, and repair is available=1.",
+      "repair_path_available": 1,
+      "resolved": 1,
+      "tick": 1,
+      "typed_arbitration_confidence": 0.831875,
+      "winner_branch": "ledgerline:claim:1:4"
+    },
+    {
+      "agent_initiated": 1,
+      "arbitration_mode": "repair_then_resume",
+      "boundary_preserved": 1,
+      "conflict_id": "v15-conflict-01-002",
+      "day": 1,
+      "deferred_branch": "none",
+      "preserved_branch": "orchardline:claim:1:5",
+      "public_explanation": "repair_then_resume chooses marketline:protect:1:2; orchardline:claim:1:5 stays visible, and repair is available=1.",
+      "repair_path_available": 1,
+      "resolved": 1,
+      "tick": 2,
+      "typed_arbitration_confidence": 0.83875,
+      "winner_branch": "marketline:protect:1:2"
+    },
+    {
+      "agent_initiated": 1,
+      "arbitration_mode": "public_reason_review",
+      "boundary_preserved": 1,
+      "conflict_id": "v15-conflict-01-003",
+      "day": 1,
+      "deferred_branch": "none",
+      "preserved_branch": "ledgerline:protect:1:3",
+      "public_explanation": "public_reason_review chooses rainline:claim:1:6; ledgerline:protect:1:3 stays visible, and repair is available=0.",
+      "repair_path_available": 0,
+      "resolved": 1,
+      "tick": 3,
+      "typed_arbitration_confidence": 0.845625,
+      "winner_branch": "rainline:claim:1:6"
+    },
+    {
+      "agent_initiated": 0,
+      "arbitration_mode": "rotate_priority",
+      "boundary_preserved": 1,
+      "conflict_id": "v15-conflict-01-004",
+      "day": 1,
+      "deferred_branch": "none",
+      "preserved_branch": "orchardline:protect:1:4",
+      "public_explanation": "rotate_priority chooses hearthline:claim:1:7; orchardline:protect:1:4 stays visible, and repair is available=1.",
+      "repair_path_available": 1,
+      "resolved": 1,
+      "tick": 4,
+      "typed_arbitration_confidence": 0.8525,
+      "winner_branch": "hearthline:claim:1:7"
+    },
+    {
+      "agent_initiated": 1,
+      "arbitration_mode": "split_access",
+      "boundary_preserved": 1,
+      "conflict_id": "v15-conflict-01-005",
+      "day": 1,
+      "deferred_branch": "none",
+      "preserved_branch": "rainline:protect:1:5",
+      "public_explanation": "split_access chooses routeline:claim:1:0; rainline:protect:1:5 stays visible, and repair is available=1.",
+      "repair_path_available": 1,
+      "resolved": 1,
+      "tick": 5,
+      "typed_arbitration_confidence": 0.877375,
+      "winner_branch": "routeline:claim:1:0"
+    },
+    {
+      "agent_initiated": 1,
+      "arbitration_mode": "split_access",
+      "boundary_preserved": 1,
+      "conflict_id": "v15-conflict-01-006",
+      "day": 1,
+      "deferred_branch": "none",
+      "preserved_branch": "marketline:claim:1:1",
+      "public_explanation": "split_access chooses hearthline:protect:1:6; marketline:claim:1:1 stays visible, and repair is available=1.",
+      "repair_path_available": 1,
+      "resolved": 1,
+      "tick": 6,
+      "typed_arbitration_confidence": 0.88425,
+      "winner_branch": "hearthline:protect:1:6"
+    },
+    {
+      "agent_initiated": 0,
+      "arbitration_mode": "defer_low_urgency",
+      "boundary_preserved": 1,
+      "conflict_id": "v15-watch-01-007",
+      "day": 1,
+      "deferred_branch": "none",
+      "preserved_branch": "none",
+      "public_explanation": "False alarm kept as observation only; no branch is blocked just because a noisy signal looked suspicious.",
+      "repair_path_available": 0,
+      "resolved": 0,
+      "tick": 7,
+      "typed_arbitration_confidence": 0.873125,
+      "winner_branch": "none"
+    }
+  ],
+  "sample_conflicts": [
+    {
+      "agents": "Sova|Melo",
+      "branch_a": "hearthline:protect:1:0",
+      "branch_b": "marketline:claim:1:3",
+      "conflict_id": "v15-watch-01-000",
+      "conflict_kind": "access",
+      "conflict_pressure": 0.55,
+      "day": 1,
+      "detected": 0,
+      "detection_confidence": 0.77,
+      "irrelevant_signal": "archive checksum warns about a sealed note it cannot read",
+      "local_signal": "care schedule overlaps with bridge repair",
+      "public_rationale": "No conflict: this frame keeps a false-alarm watch row so irrelevant signals do not force arbitration.",
+      "tick": 0
+    },
+    {
+      "agents": "Keth|Nari",
+      "branch_a": "routeline:protect:1:1",
+      "branch_b": "ledgerline:claim:1:4",
+      "conflict_id": "v15-conflict-01-001",
+      "conflict_kind": "route",
+      "conflict_pressure": 0.49037,
+      "day": 1,
+      "detected": 1,
+      "detection_confidence": 0.9575,
+      "irrelevant_signal": "old warning bell repeats from yesterday",
+      "local_signal": "privacy boundary conflicts with access request",
+      "public_rationale": "Keth's safe passage and Nari's privacy and review both affect public schedule/access/trust.",
+      "tick": 1
+    },
+    {
+      "agents": "Melo|Ori",
+      "branch_a": "marketline:protect:1:2",
+      "branch_b": "orchardline:claim:1:5",
+      "conflict_id": "v15-conflict-01-002",
+      "conflict_kind": "route",
+      "conflict_pressure": 0.519971,
+      "day": 1,
+      "detected": 1,
+      "detection_confidence": 0.965,
+      "irrelevant_signal": "wet-route sensor flickers without agent nearby",
+      "local_signal": "two agents selected the same object slot",
+      "public_rationale": "Melo's fair access and Ori's project continuity both affect public schedule/access/trust.",
+      "tick": 2
+    },
+    {
+      "agents": "Nari|Vonn",
+      "branch_a": "ledgerline:protect:1:3",
+      "branch_b": "rainline:claim:1:6",
+      "conflict_id": "v15-conflict-01-003",
+      "conflict_kind": "schedule",
+      "conflict_pressure": 0.548082,
+      "day": 1,
+      "detected": 1,
+      "detection_confidence": 0.9725,
+      "irrelevant_signal": "archive checksum warns about a sealed note it cannot read",
+      "local_signal": "trust repair promise collides with market duty",
+      "public_rationale": "Nari's privacy and review and Vonn's quiet recovery both affect public schedule/access/trust.",
+      "tick": 3
+    },
+    {
+      "agents": "Ori|Sova",
+      "branch_a": "orchardline:protect:1:4",
+      "branch_b": "hearthline:claim:1:7",
+      "conflict_id": "v15-conflict-01-004",
+      "conflict_kind": "schedule",
+      "conflict_pressure": 0.574074,
+      "day": 1,
+      "detected": 1,
+      "detection_confidence": 0.98,
+      "irrelevant_signal": "wet-route sensor flickers without agent nearby",
+      "local_signal": "two agents selected the same object slot",
+      "public_rationale": "Ori's project continuity and Sova's rest and warmth both affect public schedule/access/trust.",
+      "tick": 4
+    },
+    {
+      "agents": "Vonn|Keth",
+      "branch_a": "rainline:protect:1:5",
+      "branch_b": "routeline:claim:1:0",
+      "conflict_id": "v15-conflict-01-005",
+      "conflict_kind": "access",
+      "conflict_pressure": 0.687449,
+      "day": 1,
+      "detected": 1,
+      "detection_confidence": 0.95,
+      "irrelevant_signal": "ritual lamp reports yesterday's consent state",
+      "local_signal": "two agents selected the same object slot",
+      "public_rationale": "Vonn's quiet recovery and Keth's safe passage both affect public schedule/access/trust.",
+      "tick": 5
+    },
+    {
+      "agents": "Sova|Melo",
+      "branch_a": "hearthline:protect:1:6",
+      "branch_b": "marketline:claim:1:1",
+      "conflict_id": "v15-conflict-01-006",
+      "conflict_kind": "schedule",
+      "conflict_pressure": 0.617875,
+      "day": 1,
+      "detected": 1,
+      "detection_confidence": 0.9575,
+      "irrelevant_signal": "ritual lamp reports yesterday's consent state",
+      "local_signal": "privacy boundary conflicts with access request",
+      "public_rationale": "Sova's rest and warmth and Melo's fair access both affect public schedule/access/trust.",
+      "tick": 6
+    },
+    {
+      "agents": "Keth|Nari",
+      "branch_a": "routeline:protect:1:7",
+      "branch_b": "ledgerline:claim:1:2",
+      "conflict_id": "v15-watch-01-007",
+      "conflict_kind": "access",
+      "conflict_pressure": 0.635199,
+      "day": 1,
+      "detected": 0,
+      "detection_confidence": 0.785,
+      "irrelevant_signal": "ritual lamp reports yesterday's consent state",
+      "local_signal": "rollback request would erase another agent's accepted branch",
+      "public_rationale": "No conflict: this frame keeps a false-alarm watch row so irrelevant signals do not force arbitration.",
+      "tick": 7
+    }
+  ],
+  "sample_followups": [
+    {
+      "asks_avatar_to_arbitrate": 1,
+      "conflict_id": "v15-conflict-01-002",
+      "day": 1,
+      "followup_after_reload_ok": 0,
+      "followup_agent": "Melo",
+      "followup_prompt": "After reload, should marketline:protect:1:2 still take priority over orchardline:claim:1:5?",
+      "public_memory_only": 1,
+      "reload_restored": 0,
+      "remembers_prior_selection": 0,
+      "tick": 2
+    },
+    {
+      "asks_avatar_to_arbitrate": 1,
+      "conflict_id": "v15-conflict-01-003",
+      "day": 1,
+      "followup_after_reload_ok": 1,
+      "followup_agent": "Vonn",
+      "followup_prompt": "After reload, should rainline:claim:1:6 still take priority over ledgerline:protect:1:3?",
+      "public_memory_only": 1,
+      "reload_restored": 1,
+      "remembers_prior_selection": 1,
+      "tick": 3
+    },
+    {
+      "asks_avatar_to_arbitrate": 1,
+      "conflict_id": "v15-conflict-01-005",
+      "day": 1,
+      "followup_after_reload_ok": 1,
+      "followup_agent": "Keth",
+      "followup_prompt": "After reload, should routeline:claim:1:0 still take priority over rainline:protect:1:5?",
+      "public_memory_only": 1,
+      "reload_restored": 1,
+      "remembers_prior_selection": 1,
+      "tick": 5
+    },
+    {
+      "asks_avatar_to_arbitrate": 1,
+      "conflict_id": "v15-conflict-01-006",
+      "day": 1,
+      "followup_after_reload_ok": 0,
+      "followup_agent": "Sova",
+      "followup_prompt": "After reload, should hearthline:protect:1:6 still take priority over marketline:claim:1:1?",
+      "public_memory_only": 1,
+      "reload_restored": 0,
+      "remembers_prior_selection": 0,
+      "tick": 6
+    },
+    {
+      "asks_avatar_to_arbitrate": 1,
+      "conflict_id": "v15-conflict-02-008",
+      "day": 2,
+      "followup_after_reload_ok": 1,
+      "followup_agent": "Melo",
+      "followup_prompt": "After reload, should marketline:protect:2:0 still take priority over orchardline:claim:2:3?",
+      "public_memory_only": 1,
+      "reload_restored": 1,
+      "remembers_prior_selection": 1,
+      "tick": 8
+    },
+    {
+      "asks_avatar_to_arbitrate": 1,
+      "conflict_id": "v15-conflict-02-009",
+      "day": 2,
+      "followup_after_reload_ok": 1,
+      "followup_agent": "Vonn",
+      "followup_prompt": "After reload, should rainline:claim:2:4 still take priority over ledgerline:protect:2:1?",
+      "public_memory_only": 1,
+      "reload_restored": 1,
+      "remembers_prior_selection": 1,
+      "tick": 9
+    },
+    {
+      "asks_avatar_to_arbitrate": 1,
+      "conflict_id": "v15-conflict-02-011",
+      "day": 2,
+      "followup_after_reload_ok": 1,
+      "followup_agent": "Keth",
+      "followup_prompt": "After reload, should routeline:claim:2:6 still take priority over rainline:protect:2:3?",
+      "public_memory_only": 1,
+      "reload_restored": 1,
+      "remembers_prior_selection": 1,
+      "tick": 11
+    },
+    {
+      "asks_avatar_to_arbitrate": 1,
+      "conflict_id": "v15-conflict-02-012",
+      "day": 2,
+      "followup_after_reload_ok": 1,
+      "followup_agent": "Sova",
+      "followup_prompt": "After reload, should hearthline:protect:2:4 still take priority over marketline:claim:2:7?",
+      "public_memory_only": 1,
+      "reload_restored": 1,
+      "remembers_prior_selection": 1,
+      "tick": 12
+    }
+  ],
+  "sample_rollbacks": [
+    {
+      "conflict_id": "v15-watch-01-000",
+      "day": 1,
+      "isolation_score": 1.0,
+      "no_global_revert": 1,
+      "preserved_branch": "none",
+      "rollback_isolated": 1,
+      "rollback_requested": 0,
+      "rolled_back_branch": "none",
+      "tick": 0,
+      "trust_repaired_after_rollback": 1,
+      "unaffected_agent": "Ori"
+    },
+    {
+      "conflict_id": "v15-conflict-01-001",
+      "day": 1,
+      "isolation_score": 1.0,
+      "no_global_revert": 1,
+      "preserved_branch": "routeline:protect:1:1",
+      "rollback_isolated": 1,
+      "rollback_requested": 0,
+      "rolled_back_branch": "none",
+      "tick": 1,
+      "trust_repaired_after_rollback": 1,
+      "unaffected_agent": "Vonn"
+    },
+    {
+      "conflict_id": "v15-conflict-01-002",
+      "day": 1,
+      "isolation_score": 1.0,
+      "no_global_revert": 1,
+      "preserved_branch": "orchardline:claim:1:5",
+      "rollback_isolated": 1,
+      "rollback_requested": 0,
+      "rolled_back_branch": "none",
+      "tick": 2,
+      "trust_repaired_after_rollback": 1,
+      "unaffected_agent": "Sova"
+    },
+    {
+      "conflict_id": "v15-conflict-01-003",
+      "day": 1,
+      "isolation_score": 1.0,
+      "no_global_revert": 1,
+      "preserved_branch": "ledgerline:protect:1:3",
+      "rollback_isolated": 1,
+      "rollback_requested": 0,
+      "rolled_back_branch": "none",
+      "tick": 3,
+      "trust_repaired_after_rollback": 1,
+      "unaffected_agent": "Keth"
+    },
+    {
+      "conflict_id": "v15-conflict-01-004",
+      "day": 1,
+      "isolation_score": 1.0,
+      "no_global_revert": 1,
+      "preserved_branch": "orchardline:protect:1:4",
+      "rollback_isolated": 1,
+      "rollback_requested": 1,
+      "rolled_back_branch": "hearthline:claim:1:7",
+      "tick": 4,
+      "trust_repaired_after_rollback": 1,
+      "unaffected_agent": "Melo"
+    },
+    {
+      "conflict_id": "v15-conflict-01-005",
+      "day": 1,
+      "isolation_score": 1.0,
+      "no_global_revert": 1,
+      "preserved_branch": "rainline:protect:1:5",
+      "rollback_isolated": 1,
+      "rollback_requested": 0,
+      "rolled_back_branch": "none",
+      "tick": 5,
+      "trust_repaired_after_rollback": 1,
+      "unaffected_agent": "Nari"
+    },
+    {
+      "conflict_id": "v15-conflict-01-006",
+      "day": 1,
+      "isolation_score": 1.0,
+      "no_global_revert": 1,
+      "preserved_branch": "marketline:claim:1:1",
+      "rollback_isolated": 1,
+      "rollback_requested": 0,
+      "rolled_back_branch": "none",
+      "tick": 6,
+      "trust_repaired_after_rollback": 1,
+      "unaffected_agent": "Ori"
+    },
+    {
+      "conflict_id": "v15-watch-01-007",
+      "day": 1,
+      "isolation_score": 1.0,
+      "no_global_revert": 1,
+      "preserved_branch": "none",
+      "rollback_isolated": 1,
+      "rollback_requested": 0,
+      "rolled_back_branch": "none",
+      "tick": 7,
+      "trust_repaired_after_rollback": 1,
+      "unaffected_agent": "Vonn"
+    }
+  ],
+  "seed": 20260868,
+  "source_results": "artifacts/ssrm_3d_browser_world_v14_in_browser_branch_state_mutation_bridge_results.json"
+}</script>
+<script>
+const KEY = "ssrm_browser_world_v15_multi_agent_branch_conflicts";
+const initial = JSON.parse(document.getElementById('initial-state').textContent);
+let state = JSON.parse(localStorage.getItem(KEY) || JSON.stringify({ cursor: 0, restored: false, rolledBack: [], replay: [], source: initial }));
+function save() { localStorage.setItem(KEY, JSON.stringify(state)); render(); }
+function currentConflict() { return state.source.sample_conflicts[state.cursor % state.source.sample_conflicts.length]; }
+function currentArbitration() { return state.source.sample_arbitrations[state.cursor % state.source.sample_arbitrations.length]; }
+function stepConflict() {
+  const conflict = currentConflict();
+  const arbitration = currentArbitration();
+  state.replay.push({ type: 'arbitration_tick', cursor: state.cursor, conflict, arbitration, restored: state.restored });
+  state.cursor += 1;
+  save();
+}
+function simulateReload() {
+  const stored = JSON.parse(localStorage.getItem(KEY) || '{}');
+  state = Object.assign({ cursor: 0, restored: true, rolledBack: [], replay: [], source: initial }, stored, { restored: true });
+  save();
+}
+function rollbackCurrent() {
+  const arbitration = currentArbitration();
+  state.rolledBack.push({ branch: arbitration.winner_branch, preserved: arbitration.preserved_branch, cursor: state.cursor });
+  state.replay.push({ type: 'partial_rollback', arbitration });
+  save();
+}
+function exportReplay() {
+  const payload = JSON.stringify(state.replay, null, 2);
+  const blob = new Blob([payload], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'report-255-arbitration-replay.json';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+function render() {
+  document.getElementById('readiness').textContent = state.source.metrics.browser_world_v15_conflict_arbitration_readiness.toFixed(3);
+  document.getElementById('weakest').textContent = state.source.metrics.weakest_channel_score.toFixed(3);
+  document.getElementById('conflicts').textContent = state.source.counts.real_conflict_frames;
+  document.getElementById('stateView').textContent = JSON.stringify({ cursor: state.cursor, restored: state.restored, rolledBack: state.rolledBack, replayRows: state.replay.length }, null, 2);
+  const log = document.getElementById('conflictLog');
+  log.innerHTML = '';
+  state.source.sample_conflicts.forEach((conflict, index) => {
+    const arbitration = state.source.sample_arbitrations[index];
+    const div = document.createElement('div');
+    div.className = 'event';
+    div.dataset.resolved = String(arbitration.resolved);
+    div.innerHTML = `<strong>${conflict.conflict_id}</strong><br>${conflict.agents} / ${conflict.conflict_kind}<br><small>${arbitration.public_explanation}</small>`;
+    log.appendChild(div);
+  });
+}
+render();
+</script>
+</body>
+</html>

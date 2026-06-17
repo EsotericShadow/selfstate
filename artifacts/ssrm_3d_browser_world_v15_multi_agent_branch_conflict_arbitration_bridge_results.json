@@ -1,0 +1,95 @@
+{
+  "ablations": [
+    {
+      "ablation": "no_multi_agent_concurrency",
+      "interpretation": "Concurrent branches collapse back into a single-user future selector.",
+      "readiness_after_ablation": 0.59522,
+      "readiness_loss": 0.33
+    },
+    {
+      "ablation": "no_conflict_detection",
+      "interpretation": "Branch conflicts remain latent, so follow-up cannot explain why schedules/trust changed.",
+      "readiness_after_ablation": 0.62522,
+      "readiness_loss": 0.3
+    },
+    {
+      "ablation": "no_reload_followup",
+      "interpretation": "Agents stop asking about remembered conflicts after reload.",
+      "readiness_after_ablation": 0.68022,
+      "readiness_loss": 0.245
+    },
+    {
+      "ablation": "no_partial_rollback_isolation",
+      "interpretation": "Rollback becomes a global revert and erases other agents' accepted branches.",
+      "readiness_after_ablation": 0.70022,
+      "readiness_loss": 0.225
+    },
+    {
+      "ablation": "no_schedule_access_trust_binding",
+      "interpretation": "Arbitration no longer mutates the channels that make consequences legible.",
+      "readiness_after_ablation": 0.72022,
+      "readiness_loss": 0.205
+    },
+    {
+      "ablation": "no_privacy_boundary",
+      "interpretation": "Arbitration leaks private workspace instead of using public reasons.",
+      "readiness_after_ablation": 0.74522,
+      "readiness_loss": 0.18
+    }
+  ],
+  "artifacts": {
+    "arbitration_replay_exports_csv": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_arbitration_replay_exports.csv",
+    "branch_conflicts_csv": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_branch_conflicts.csv",
+    "browser_ticks_csv": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_browser_ticks.csv",
+    "concurrent_branch_groups_csv": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_concurrent_branch_groups.csv",
+    "conflict_arbitrations_csv": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_conflict_arbitrations.csv",
+    "followup_arbitrations_csv": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_followup_arbitrations.csv",
+    "partial_rollback_isolations_csv": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_partial_rollback_isolations.csv",
+    "results_json": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_results.json",
+    "schedule_access_trust_conflicts_csv": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_schedule_access_trust_conflicts.csv",
+    "state_json": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_state.json",
+    "summary_csv": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_summary.csv",
+    "verdict_csv": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_verdict.csv",
+    "visualization_html": "visualizations/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge.html"
+  },
+  "claim_boundary": "Deterministic browser-local conflict arbitration scaffold only; no subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "arbitration_replay_export_frames": 168,
+    "branch_conflict_frames": 168,
+    "browser_world_v15_ticks": 168,
+    "concurrent_branch_group_frames": 168,
+    "conflict_arbitration_frames": 168,
+    "lineages": 6,
+    "multi_agent_followup_arbitration_frames": 93,
+    "partial_rollback_isolation_frames": 168,
+    "real_conflict_frames": 144,
+    "schedule_access_trust_conflict_frames": 168
+  },
+  "metrics": {
+    "arbitration_resolution_rate": 0.875,
+    "browser_world_v15_conflict_arbitration_readiness": 0.92522,
+    "browser_world_v15_surface_available": 1.0,
+    "concurrent_branch_persistence": 0.97619,
+    "conflict_detection_rate": 0.951389,
+    "followup_arbitration_after_reload": 0.939394,
+    "mean_conflict_channel_score": 0.963962,
+    "multi_agent_concurrency_surface": 0.97619,
+    "partial_rollback_isolation": 0.967262,
+    "privacy_safe_arbitration": 1.0,
+    "replay_arbitration_integrity": 0.985952,
+    "save_restore_multi_branch_integrity": 0.967742,
+    "schedule_access_trust_conflict_binding": 1.0,
+    "sensory_frequency_flower_conflict_rhythm": 1.0,
+    "source_in_browser_mutation_continuity": 1.0,
+    "typed_arbitration_confidence": 0.856346,
+    "weakest_channel_score": 0.856346
+  },
+  "name": "SSRM-3D browser world v15 multi-agent branch conflict arbitration bridge",
+  "next_gate": "browser world v16 with persistent multi-agent branch conflict gameplay where user decisions resolve live conflicts over several days and agents remember arbitration outcomes",
+  "report": 255,
+  "seed": 20260868,
+  "source_dependency": "artifacts/ssrm_3d_browser_world_v14_in_browser_branch_state_mutation_bridge_results.json",
+  "source_verdict": "pass",
+  "ticks": 168,
+  "verdict": "pass"
+}

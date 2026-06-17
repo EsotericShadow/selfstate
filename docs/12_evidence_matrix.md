@@ -989,6 +989,24 @@ This is Report 155: a deterministic bridge attaching recurrent source-grounded d
 This is Report 156: a deterministic browser-loop bridge over the live dialogue-world integration state, with start/pause/step controls, typed avatar dialogue, source-gate feedback, body/world mutation, frequency rendering, UI persistence, and replay export. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
 
 
+### Report 157: SSRM-3D navigable embodied presence bridge
+
+| Condition | Readiness | Navigation | Place/object | Agents | Route costs | Source | Frequency | Body | Gate | Replay | Boundary | Trace |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `integrated_navigable_embodied_presence` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_avatar_navigation` | `0.760000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_place_object_render` | `0.880000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_agent_presence_binding` | `0.900000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_infrastructure_route_costs` | `0.900000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_source_dialogue_overlay` | `0.890000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_frequency_sensory_field` | `0.900000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_body_expenditure_model` | `0.890000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_affordance_collision_gate` | `0.920000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_replay_camera_timeline` | `0.930000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` |
+
+This is Report 157: a deterministic navigable embodied-presence bridge joining the interactive dialogue loop to the place/object/infrastructure graph, with avatar movement, local objects, agents, route costs, source overlays, frequency fields, body expenditure, affordance gates, and camera replay. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
+
+
 ## Reproducibility Artifacts
 
 | Script | Main artifact |
@@ -1080,6 +1098,7 @@ This is Report 156: a deterministic browser-loop bridge over the live dialogue-w
 | `experiments/ssrm_3d_recurrent_faction_dialogue_controller_bridge.py` | `artifacts/ssrm_3d_recurrent_faction_dialogue_controller_bridge_verdict.csv` |
 | `experiments/ssrm_3d_live_dialogue_world_integration_bridge.py` | `artifacts/ssrm_3d_live_dialogue_world_integration_bridge_verdict.csv` |
 | `experiments/ssrm_3d_interactive_avatar_dialogue_loop_bridge.py` | `artifacts/ssrm_3d_interactive_avatar_dialogue_loop_bridge_verdict.csv` |
+| `experiments/ssrm_3d_navigable_embodied_presence_bridge.py` | `artifacts/ssrm_3d_navigable_embodied_presence_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Navigable Embodied Presence Bridge</title>
+  <script src="../artifacts/ssrm_3d_navigable_embodied_presence_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_navigable_embodied_presence_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_navigable_embodied_presence_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #18130d;
+      --paper: #f1e6ce;
+      --clay: #9b593b;
+      --moss: #3f6d4e;
+      --water: #2d7180;
+      --ember: #c45d2f;
+      --line: rgba(24, 19, 13, 0.18);
+      --panel: rgba(255, 251, 240, 0.74);
+      --shadow: 0 24px 80px rgba(46, 31, 19, 0.24);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(196, 93, 47, 0.28), transparent 28rem),
+        radial-gradient(circle at 86% 14%, rgba(45, 113, 128, 0.22), transparent 30rem),
+        linear-gradient(135deg, #ead7b5 0%, #f7eedb 42%, #d7c19b 100%);
+      min-height: 100vh;
+    }
+    header {
+      padding: 28px clamp(18px, 4vw, 54px) 14px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 24px;
+      align-items: end;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.1rem, 5vw, 5.8rem);
+      line-height: 0.9;
+      letter-spacing: -0.06em;
+      max-width: 900px;
+    }
+    .subtitle { font-size: 1.02rem; line-height: 1.5; max-width: 760px; }
+    .verdict {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+      backdrop-filter: blur(10px);
+    }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .metric { border: 1px solid var(--line); border-radius: 18px; padding: 10px; background: rgba(255,255,255,0.42); }
+    .metric strong { display: block; font-size: 1.2rem; }
+    main {
+      display: grid;
+      grid-template-columns: minmax(320px, 1.15fr) minmax(320px, 0.85fr);
+      gap: 20px;
+      padding: 14px clamp(18px, 4vw, 54px) 42px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+      backdrop-filter: blur(10px);
+      overflow: hidden;
+    }
+    .map-wrap { min-height: 640px; position: relative; }
+    svg { width: 100%; height: 620px; display: block; border-radius: 24px; background: rgba(255, 248, 229, 0.52); }
+    .controls { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+    button, select {
+      border: 1px solid rgba(24,19,13,0.24);
+      background: #fff5df;
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font: inherit;
+      cursor: pointer;
+    }
+    button:hover { background: #ffe2b7; }
+    .readout { display: grid; gap: 12px; }
+    .bar { height: 10px; border-radius: 999px; background: rgba(24,19,13,0.12); overflow: hidden; }
+    .bar span { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, var(--moss), var(--water), var(--ember)); }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      margin: 0;
+      font-size: 0.86rem;
+      line-height: 1.38;
+      max-height: 230px;
+      overflow: auto;
+      background: rgba(24,19,13,0.06);
+      border-radius: 18px;
+      padding: 12px;
+    }
+    .pill-row { display: flex; gap: 8px; flex-wrap: wrap; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 6px 10px; background: rgba(255,255,255,0.45); font-size: 0.86rem; }
+    .boundary { border-left: 4px solid var(--ember); padding-left: 12px; font-size: 0.95rem; }
+    @media (max-width: 980px) {
+      header, main { grid-template-columns: 1fr; }
+      svg { height: 520px; }
+      .map-wrap { min-height: 540px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <section>
+      <h1>Navigable embodied presence bridge</h1>
+      <p class="subtitle">A deterministic local interface over the live dialogue world: move the avatar through places, objects, infrastructure, agents, source-grounded dialogue, and sensory-frequency state. No LLMs. No consciousness claim.</p>
+    </section>
+    <aside class="verdict">
+      <strong id="verdictLabel">loading</strong>
+      <div class="metric-grid" id="metricGrid"></div>
+    </aside>
+  </header>
+  <main>
+    <section class="panel map-wrap">
+      <div class="controls">
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="stepBtn">Step</button>
+        <select id="placeSelect"></select>
+        <button id="moveBtn">Move avatar</button>
+        <button id="sourceBtn">Talk near source</button>
+        <button id="exportBtn">Export replay JSON</button>
+      </div>
+      <svg id="map" viewBox="-14 -14 28 28" role="img" aria-label="navigable SSRM map"></svg>
+      <div class="pill-row" id="placePills"></div>
+    </section>
+    <section class="panel readout">
+      <div class="boundary">Boundary: this viewer demonstrates deterministic navigation and embodied-state coupling only. It does not prove subjective consciousness, open-ended language, or unscripted civilization.</div>
+      <div class="two">
+        <div>
+          <h3>Body rates</h3>
+          <div id="bodyBars"></div>
+        </div>
+        <div>
+          <h3>Frequency field</h3>
+          <div id="freqBars"></div>
+        </div>
+      </div>
+      <div>
+        <h3>Current place, objects, agents</h3>
+        <pre id="sceneText">loading</pre>
+      </div>
+      <div>
+        <h3>Source dialogue overlay</h3>
+        <pre id="sourceText">loading</pre>
+      </div>
+      <div>
+        <h3>Navigation event</h3>
+        <pre id="eventText">loading</pre>
+      </div>
+    </section>
+  </main>
+<script>
+(() => {
+  const results = window.SSRM_3D_NAVIGABLE_EMBODIED_PRESENCE_RESULTS || { verdict: {} };
+  const trace = window.SSRM_3D_NAVIGABLE_EMBODIED_PRESENCE_TRACE || [];
+  const state = window.SSRM_3D_NAVIGABLE_EMBODIED_PRESENCE_STATE || { places: {}, routes: {}, objects: {}, agents: {} };
+  let index = 0;
+  let timer = null;
+  let sourceOffset = 0;
+  const $ = (id) => document.getElementById(id);
+  const clamp = (n) => Math.max(0, Math.min(1, Number(n) || 0));
+  function metric(name, value) {
+    const div = document.createElement('div');
+    div.className = 'metric';
+    div.innerHTML = `<span>${name}</span><strong>${Number(value || 0).toFixed(3)}</strong>`;
+    return div;
+  }
+  function initMetrics() {
+    const v = results.verdict || {};
+    $('verdictLabel').textContent = `verdict: ${v.verdict || 'unknown'}`;
+    $('metricGrid').replaceChildren(
+      metric('readiness', v.full_navigable_presence_readiness),
+      metric('navigation', v.full_avatar_navigation_rate),
+      metric('source', v.full_source_dialogue_overlay_rate),
+      metric('body', v.full_body_expenditure_coupling_rate),
+      metric('frequency', v.full_frequency_sensory_field_rate),
+      metric('replay', v.full_replay_camera_timeline_rate)
+    );
+  }
+  function initPlaces() {
+    const select = $('placeSelect');
+    Object.keys(state.places || {}).sort().forEach((place) => {
+      const option = document.createElement('option');
+      option.value = place;
+      option.textContent = place.replaceAll('_', ' ');
+      select.appendChild(option);
+    });
+  }
+  function scaled(place) {
+    return { x: Number(place.x || 0), z: Number(place.z || 0) };
+  }
+  function drawMap(event) {
+    const svg = $('map');
+    const places = state.places || {};
+    const routes = state.routes || {};
+    const current = event.avatar_place;
+    const parts = [];
+    Object.values(routes).forEach((route) => {
+      const a = places[route.from];
+      const b = places[route.to];
+      if (!a || !b) return;
+      const pa = scaled(a), pb = scaled(b);
+      const width = 0.035 + clamp(route.infrastructure_bonus) * 0.08;
+      const color = route.id === (event.route || {}).id ? '#c45d2f' : 'rgba(24,19,13,0.18)';
+      parts.push(`<line x1="${pa.x}" y1="${pa.z}" x2="${pb.x}" y2="${pb.z}" stroke="${color}" stroke-width="${width}" />`);
+    });
+    Object.values(places).forEach((place) => {
+      const p = scaled(place);
+      const active = place.id === current;
+      const r = active ? 0.58 : 0.28 + clamp(place.hazard) * 0.24;
+      const fill = active ? '#c45d2f' : '#f7eedb';
+      parts.push(`<circle cx="${p.x}" cy="${p.z}" r="${r}" fill="${fill}" stroke="#18130d" stroke-width="0.06" />`);
+      parts.push(`<text x="${p.x + 0.36}" y="${p.z - 0.24}" font-size="0.42" fill="#18130d">${place.id.replaceAll('_', ' ')}</text>`);
+    });
+    (event.objects_visible || []).forEach((obj, i) => {
+      const place = places[obj.place];
+      if (!place) return;
+      const p = scaled(place);
+      parts.push(`<rect x="${p.x - 0.18 + i * 0.13}" y="${p.z + 0.48}" width="0.18" height="0.18" fill="#3f6d4e" />`);
+    });
+    (event.agents_visible || []).forEach((agent, i) => {
+      const place = places[agent.place] || places[current];
+      if (!place) return;
+      const p = scaled(place);
+      parts.push(`<path d="M ${p.x + 0.45 + i * 0.16} ${p.z + 0.08} l 0.12 0.3 l -0.24 0 z" fill="#2d7180" />`);
+    });
+    svg.innerHTML = parts.join('\n');
+  }
+  function bars(id, data) {
+    const root = $(id);
+    root.innerHTML = '';
+    Object.entries(data || {}).forEach(([key, value]) => {
+      const row = document.createElement('div');
+      row.innerHTML = `<div style="display:flex;justify-content:space-between;font-size:.88rem"><span>${key}</span><span>${Number(value || 0).toFixed(3)}</span></div><div class="bar"><span style="width:${clamp(value) * 100}%"></span></div>`;
+      root.appendChild(row);
+    });
+  }
+  function render() {
+    if (!trace.length) return;
+    const event = trace[index % trace.length];
+    $('placeSelect').value = event.avatar_place;
+    drawMap(event);
+    bars('bodyBars', event.body_state || {});
+    bars('freqBars', event.frequency_field || {});
+    const place = event.place_render || {};
+    $('sceneText').textContent = JSON.stringify({
+      tick: event.tick,
+      mode: event.mode,
+      place: place.id,
+      terrain: place.terrain,
+      route: event.route,
+      objects: (event.objects_visible || []).map(o => ({ id: o.id, affordances: o.affordances, integrity: o.integrity })),
+      agents: (event.agents_visible || []).map(a => ({ id: a.id, role: a.role, faction: a.faction, trust: a.trust })),
+      gate: event.affordance_gate
+    }, null, 2);
+    const source = event.source_dialogue_overlay || {};
+    const overlays = state.source_overlays || [];
+    const shifted = overlays.length ? overlays[(event.tick + sourceOffset) % overlays.length] : source;
+    $('sourceText').textContent = JSON.stringify(shifted || source, null, 2);
+    $('eventText').textContent = JSON.stringify(event, null, 2);
+    const pills = Object.keys(state.places || {}).sort().slice(0, 14).map((place) => {
+      const cls = place === event.avatar_place ? 'pill active' : 'pill';
+      return `<span class="${cls}">${place.replaceAll('_', ' ')}</span>`;
+    });
+    $('placePills').innerHTML = pills.join('');
+  }
+  function play() {
+    if (timer) return;
+    timer = setInterval(() => { index = (index + 1) % trace.length; render(); }, 420);
+  }
+  function pause() { if (timer) clearInterval(timer); timer = null; }
+  $('playBtn').onclick = play;
+  $('pauseBtn').onclick = pause;
+  $('stepBtn').onclick = () => { pause(); index = (index + 1) % trace.length; render(); };
+  $('moveBtn').onclick = () => {
+    const target = $('placeSelect').value;
+    const found = trace.findIndex((event) => event.avatar_place === target);
+    if (found >= 0) index = found;
+    render();
+  };
+  $('sourceBtn').onclick = () => { sourceOffset += 7; render(); };
+  $('exportBtn').onclick = () => {
+    const blob = new Blob([JSON.stringify({ results, state, trace }, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'ssrm_3d_navigable_embodied_presence_replay.json';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  };
+  initMetrics();
+  initPlaces();
+  render();
+})();
+</script>
+</body>
+</html>

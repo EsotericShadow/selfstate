@@ -1,0 +1,11 @@
+condition,navigation_ticks,places,objects,agents,routes,avatar_navigation_rate,place_object_render_rate,agent_presence_binding_rate,infrastructure_route_cost_rate,source_dialogue_overlay_rate,frequency_sensory_field_rate,body_expenditure_coupling_rate,affordance_collision_gate_rate,replay_camera_timeline_rate,subjective_claim_boundary_rate,trace_integrity,navigable_presence_readiness
+integrated_navigable_embodied_presence,128,14,14,8,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_avatar_navigation,128,14,14,8,36,0.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.76
+no_place_object_render,128,14,14,8,36,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.88
+no_agent_presence_binding,128,14,14,8,36,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_infrastructure_route_costs,128,14,14,8,36,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_source_dialogue_overlay,128,14,14,8,36,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.89
+no_frequency_sensory_field,128,14,14,8,36,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_body_expenditure_model,128,14,14,8,36,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.89
+no_affordance_collision_gate,128,14,14,8,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.92
+no_replay_camera_timeline,128,14,14,8,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.93

@@ -1,0 +1,25238 @@
+window.SSRM_3D_NAVIGABLE_EMBODIED_PRESENCE_TRACE = [
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.356343,
+      "cold": 0.2232,
+      "fatigue": 0.122685,
+      "pain": 0.029,
+      "trust_orientation": 0.562,
+      "wetness": 0.1836
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "central_hearth",
+      "tick": 0,
+      "x": 0.0,
+      "yaw": 1.05709,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.653027,
+      "pain": 0.020628,
+      "scent": 0.484077,
+      "sound": 0.768275,
+      "thermal": 0.73071,
+      "vibration": 0.901453,
+      "vision": 0.928545,
+      "wetness": 0.191394
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 1.05709,
+      "from": "tool_bend",
+      "hazard": 0.0,
+      "id": "tool_bend->central_hearth",
+      "infrastructure_bonus": 0.101448,
+      "kind": "path",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.653027,
+        "pain": 0.020628,
+        "scent": 0.484077,
+        "sound": 0.768275,
+        "thermal": 0.73071,
+        "vibration": 0.901453,
+        "vision": 0.928545,
+        "wetness": 0.191394
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 1.05709,
+        "from": "tool_bend",
+        "hazard": 0.0,
+        "id": "tool_bend->central_hearth",
+        "infrastructure_bonus": 0.101448,
+        "kind": "path",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_03_builder_language_marker_cairn_ridge_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_014_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_014_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_03_builder_language_marker_cairn_ridge_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_014_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_014_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "central_hearth",
+    "tick": 0
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "drum_court:herb_garden supports tend_herbs,harvest_herbs"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "drum_court",
+    "body_state": {
+      "breath_rate": 0.361879,
+      "cold": 0.227488,
+      "fatigue": 0.133758,
+      "pain": 0.028,
+      "trust_orientation": 0.564,
+      "wetness": 0.193752
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "drum_court",
+      "tick": 1,
+      "x": 2.8,
+      "yaw": 1.446311,
+      "z": 2.7
+    },
+    "frequency_field": {
+      "affect": 0.759908,
+      "pain": 0.054308,
+      "scent": 0.347661,
+      "sound": 0.918819,
+      "thermal": 0.604162,
+      "vibration": 0.921449,
+      "vision": 0.869174,
+      "wetness": 0.158802
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "tend_herbs",
+          "harvest_herbs"
+        ],
+        "heat": 0.356582,
+        "id": "herb_garden",
+        "integrity": 0.4648,
+        "label": "herb garden",
+        "place": "drum_court",
+        "stock": 0.12,
+        "wetness": 0.675714
+      }
+    ],
+    "place_render": {
+      "cold": 0.25,
+      "flower_phase": 2.094395,
+      "hazard": 0.231562,
+      "id": "drum_court",
+      "label": "drum court",
+      "scent": 0.28,
+      "sound": 0.88,
+      "terrain": "packed",
+      "wetness": 0.24,
+      "x": 2.8,
+      "z": 2.7
+    },
+    "route": {
+      "cost": 0.922712,
+      "from": "central_hearth",
+      "hazard": 0.0,
+      "id": "central_hearth->drum_court",
+      "infrastructure_bonus": 0.161686,
+      "kind": "path",
+      "to": "drum_court"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.759908,
+        "pain": 0.054308,
+        "scent": 0.347661,
+        "sound": 0.918819,
+        "thermal": 0.604162,
+        "vibration": 0.921449,
+        "vision": 0.869174,
+        "wetness": 0.158802
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "tend_herbs",
+            "harvest_herbs"
+          ],
+          "heat": 0.356582,
+          "id": "herb_garden",
+          "integrity": 0.4648,
+          "label": "herb garden",
+          "place": "drum_court",
+          "stock": 0.12,
+          "wetness": 0.675714
+        }
+      ],
+      "place": {
+        "cold": 0.25,
+        "flower_phase": 2.094395,
+        "hazard": 0.231562,
+        "id": "drum_court",
+        "label": "drum court",
+        "scent": 0.28,
+        "sound": 0.88,
+        "terrain": "packed",
+        "wetness": 0.24,
+        "x": 2.8,
+        "z": 2.7
+      },
+      "route": {
+        "cost": 0.922712,
+        "from": "central_hearth",
+        "hazard": 0.0,
+        "id": "central_hearth->drum_court",
+        "infrastructure_bonus": 0.161686,
+        "kind": "path",
+        "to": "drum_court"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_000"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_000"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "smoke_watch",
+    "tick": 1
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.364339,
+      "cold": 0.22949,
+      "fatigue": 0.138679,
+      "pain": 0.027,
+      "trust_orientation": 0.566,
+      "wetness": 0.194877
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "central_hearth",
+      "tick": 2,
+      "x": 0.0,
+      "yaw": 1.457276,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.879691,
+      "pain": 0.159731,
+      "scent": 0.247767,
+      "sound": 0.738152,
+      "thermal": 0.557299,
+      "vibration": 0.608303,
+      "vision": 0.749773,
+      "wetness": 0.169259
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 0.410078,
+      "from": "drum_court",
+      "hazard": 0.0,
+      "id": "drum_court->central_hearth",
+      "infrastructure_bonus": 0.247084,
+      "kind": "drain",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.879691,
+        "pain": 0.159731,
+        "scent": 0.247767,
+        "sound": 0.738152,
+        "thermal": 0.557299,
+        "vibration": 0.608303,
+        "vision": 0.749773,
+        "wetness": 0.169259
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 0.410078,
+        "from": "drum_court",
+        "hazard": 0.0,
+        "id": "drum_court->central_hearth",
+        "infrastructure_bonus": 0.247084,
+        "kind": "drain",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_005_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_005_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "cairn_ridge",
+    "tick": 2
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "nursery_nest:route_cairn supports repaint_marker,survey_route"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      },
+      {
+        "attention": 0.889965,
+        "energy": 0.467343,
+        "faction": "water",
+        "id": "integrated_deep_time_world:07",
+        "pain": 0.04,
+        "place": "loom_room",
+        "role": "pattern_keeper",
+        "stress": 0.523178,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "nursery_nest",
+    "body_state": {
+      "breath_rate": 0.368261,
+      "cold": 0.224772,
+      "fatigue": 0.146623,
+      "pain": 0.026114,
+      "trust_orientation": 0.568,
+      "wetness": 0.213799
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "nursery_nest",
+      "tick": 3,
+      "x": -0.8,
+      "yaw": 2.224426,
+      "z": 1.8
+    },
+    "frequency_field": {
+      "affect": 0.950599,
+      "pain": 0.280059,
+      "scent": 0.250947,
+      "sound": 0.422245,
+      "thermal": 0.612916,
+      "vibration": 0.705733,
+      "vision": 0.679937,
+      "wetness": 0.342194
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repaint_marker",
+          "survey_route"
+        ],
+        "heat": 0.246582,
+        "id": "route_cairn",
+        "integrity": 1.0,
+        "label": "route cairn",
+        "place": "nursery_nest",
+        "stock": 0.996522,
+        "wetness": 0.466978
+      }
+    ],
+    "place_render": {
+      "cold": 0.2,
+      "flower_phase": 4.18879,
+      "hazard": 0.094971,
+      "id": "nursery_nest",
+      "label": "nursery nest",
+      "scent": 0.38,
+      "sound": 0.4,
+      "terrain": "covered",
+      "wetness": 0.3,
+      "x": -0.8,
+      "z": 1.8
+    },
+    "route": {
+      "cost": 0.65363,
+      "from": "central_hearth",
+      "hazard": 0.014288,
+      "id": "central_hearth->nursery_nest",
+      "infrastructure_bonus": 0.142843,
+      "kind": "road",
+      "to": "nursery_nest"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        },
+        {
+          "attention": 0.889965,
+          "energy": 0.467343,
+          "faction": "water",
+          "id": "integrated_deep_time_world:07",
+          "pain": 0.04,
+          "place": "loom_room",
+          "role": "pattern_keeper",
+          "stress": 0.523178,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.950599,
+        "pain": 0.280059,
+        "scent": 0.250947,
+        "sound": 0.422245,
+        "thermal": 0.612916,
+        "vibration": 0.705733,
+        "vision": 0.679937,
+        "wetness": 0.342194
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repaint_marker",
+            "survey_route"
+          ],
+          "heat": 0.246582,
+          "id": "route_cairn",
+          "integrity": 1.0,
+          "label": "route cairn",
+          "place": "nursery_nest",
+          "stock": 0.996522,
+          "wetness": 0.466978
+        }
+      ],
+      "place": {
+        "cold": 0.2,
+        "flower_phase": 4.18879,
+        "hazard": 0.094971,
+        "id": "nursery_nest",
+        "label": "nursery nest",
+        "scent": 0.38,
+        "sound": 0.4,
+        "terrain": "covered",
+        "wetness": 0.3,
+        "x": -0.8,
+        "z": 1.8
+      },
+      "route": {
+        "cost": 0.65363,
+        "from": "central_hearth",
+        "hazard": 0.014288,
+        "id": "central_hearth->nursery_nest",
+        "infrastructure_bonus": 0.142843,
+        "kind": "road",
+        "to": "nursery_nest"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_03_pattern_keeper_maintenance_debt_grain_shade_grain_store",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_011_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_011_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_03_pattern_keeper_maintenance_debt_grain_shade_grain_store",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_011_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_011_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "nursery_nest",
+    "tick": 3
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.371156,
+      "cold": 0.227208,
+      "fatigue": 0.15258,
+      "pain": 0.025306,
+      "trust_orientation": 0.57,
+      "wetness": 0.211315
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "central_hearth",
+      "tick": 4,
+      "x": 0.0,
+      "yaw": 2.576815,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.931325,
+      "pain": 0.353327,
+      "scent": 0.243846,
+      "sound": 0.502856,
+      "thermal": 0.711965,
+      "vibration": 0.465887,
+      "vision": 0.589262,
+      "wetness": 0.403688
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 0.48242,
+      "from": "nursery_nest",
+      "hazard": 0.024001,
+      "id": "nursery_nest->central_hearth",
+      "infrastructure_bonus": 0.088882,
+      "kind": "path",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.931325,
+        "pain": 0.353327,
+        "scent": 0.243846,
+        "sound": 0.502856,
+        "thermal": 0.711965,
+        "vibration": 0.465887,
+        "vision": 0.589262,
+        "wetness": 0.403688
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 0.48242,
+        "from": "nursery_nest",
+        "hazard": 0.024001,
+        "id": "nursery_nest->central_hearth",
+        "infrastructure_bonus": 0.088882,
+        "kind": "path",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_06_pattern_keeper_signal_visibility_archive_knoll_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_105 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_105"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_06_pattern_keeper_signal_visibility_archive_knoll_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_105 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_105"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "ash_edge",
+    "tick": 4
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "drum_court:herb_garden supports tend_herbs,harvest_herbs"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "drum_court",
+    "body_state": {
+      "breath_rate": 0.376692,
+      "cold": 0.230855,
+      "fatigue": 0.163653,
+      "pain": 0.024306,
+      "trust_orientation": 0.572,
+      "wetness": 0.216478
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "drum_court",
+      "tick": 5,
+      "x": 2.8,
+      "yaw": 3.540706,
+      "z": 2.7
+    },
+    "frequency_field": {
+      "affect": 0.806259,
+      "pain": 0.316719,
+      "scent": 0.367506,
+      "sound": 0.58372,
+      "thermal": 0.845269,
+      "vibration": 0.633565,
+      "vision": 0.657643,
+      "wetness": 0.49829
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "tend_herbs",
+          "harvest_herbs"
+        ],
+        "heat": 0.356582,
+        "id": "herb_garden",
+        "integrity": 0.4648,
+        "label": "herb garden",
+        "place": "drum_court",
+        "stock": 0.12,
+        "wetness": 0.675714
+      }
+    ],
+    "place_render": {
+      "cold": 0.25,
+      "flower_phase": 2.094395,
+      "hazard": 0.231562,
+      "id": "drum_court",
+      "label": "drum court",
+      "scent": 0.28,
+      "sound": 0.88,
+      "terrain": "packed",
+      "wetness": 0.24,
+      "x": 2.8,
+      "z": 2.7
+    },
+    "route": {
+      "cost": 0.922712,
+      "from": "central_hearth",
+      "hazard": 0.0,
+      "id": "central_hearth->drum_court",
+      "infrastructure_bonus": 0.161686,
+      "kind": "path",
+      "to": "drum_court"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.806259,
+        "pain": 0.316719,
+        "scent": 0.367506,
+        "sound": 0.58372,
+        "thermal": 0.845269,
+        "vibration": 0.633565,
+        "vision": 0.657643,
+        "wetness": 0.49829
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "tend_herbs",
+            "harvest_herbs"
+          ],
+          "heat": 0.356582,
+          "id": "herb_garden",
+          "integrity": 0.4648,
+          "label": "herb garden",
+          "place": "drum_court",
+          "stock": 0.12,
+          "wetness": 0.675714
+        }
+      ],
+      "place": {
+        "cold": 0.25,
+        "flower_phase": 2.094395,
+        "hazard": 0.231562,
+        "id": "drum_court",
+        "label": "drum court",
+        "scent": 0.28,
+        "sound": 0.88,
+        "terrain": "packed",
+        "wetness": 0.24,
+        "x": 2.8,
+        "z": 2.7
+      },
+      "route": {
+        "cost": 0.922712,
+        "from": "central_hearth",
+        "hazard": 0.0,
+        "id": "central_hearth->drum_court",
+        "infrastructure_bonus": 0.161686,
+        "kind": "path",
+        "to": "drum_court"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_05_trader_language_marker_roof_ring_herb_garden",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_003_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_003_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_05_trader_language_marker_roof_ring_herb_garden",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_003_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_003_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "smoke_watch",
+    "tick": 5
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.379152,
+      "cold": 0.232318,
+      "fatigue": 0.168574,
+      "pain": 0.023306,
+      "trust_orientation": 0.574,
+      "wetness": 0.213512
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "central_hearth",
+      "tick": 6,
+      "x": 0.0,
+      "yaw": 3.551671,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.691539,
+      "pain": 0.21635,
+      "scent": 0.486148,
+      "sound": 0.52358,
+      "thermal": 0.896595,
+      "vibration": 0.27254,
+      "vision": 0.765748,
+      "wetness": 0.436547
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 0.410078,
+      "from": "drum_court",
+      "hazard": 0.0,
+      "id": "drum_court->central_hearth",
+      "infrastructure_bonus": 0.247084,
+      "kind": "drain",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.691539,
+        "pain": 0.21635,
+        "scent": 0.486148,
+        "sound": 0.52358,
+        "thermal": 0.896595,
+        "vibration": 0.27254,
+        "vision": 0.765748,
+        "wetness": 0.436547
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 0.410078,
+        "from": "drum_court",
+        "hazard": 0.0,
+        "id": "drum_court->central_hearth",
+        "infrastructure_bonus": 0.247084,
+        "kind": "drain",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_04_guard_signal_visibility_drum_court_loom_frame",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_009_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_009_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_04_guard_signal_visibility_drum_court_loom_frame",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_009_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_009_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "ash_edge",
+    "tick": 6
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "drum_court:herb_garden supports tend_herbs,harvest_herbs"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "drum_court",
+    "body_state": {
+      "breath_rate": 0.384688,
+      "cold": 0.235147,
+      "fatigue": 0.179647,
+      "pain": 0.022306,
+      "trust_orientation": 0.576,
+      "wetness": 0.21828
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "drum_court",
+      "tick": 7,
+      "x": 2.8,
+      "yaw": 4.587903,
+      "z": 2.7
+    },
+    "frequency_field": {
+      "affect": 0.618796,
+      "pain": 0.109188,
+      "scent": 0.522661,
+      "sound": 0.742644,
+      "thermal": 0.865762,
+      "vibration": 0.659675,
+      "vision": 0.868386,
+      "wetness": 0.373677
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "tend_herbs",
+          "harvest_herbs"
+        ],
+        "heat": 0.356582,
+        "id": "herb_garden",
+        "integrity": 0.4648,
+        "label": "herb garden",
+        "place": "drum_court",
+        "stock": 0.12,
+        "wetness": 0.675714
+      }
+    ],
+    "place_render": {
+      "cold": 0.25,
+      "flower_phase": 2.094395,
+      "hazard": 0.231562,
+      "id": "drum_court",
+      "label": "drum court",
+      "scent": 0.28,
+      "sound": 0.88,
+      "terrain": "packed",
+      "wetness": 0.24,
+      "x": 2.8,
+      "z": 2.7
+    },
+    "route": {
+      "cost": 0.922712,
+      "from": "central_hearth",
+      "hazard": 0.0,
+      "id": "central_hearth->drum_court",
+      "infrastructure_bonus": 0.161686,
+      "kind": "path",
+      "to": "drum_court"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.618796,
+        "pain": 0.109188,
+        "scent": 0.522661,
+        "sound": 0.742644,
+        "thermal": 0.865762,
+        "vibration": 0.659675,
+        "vision": 0.868386,
+        "wetness": 0.373677
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "tend_herbs",
+            "harvest_herbs"
+          ],
+          "heat": 0.356582,
+          "id": "herb_garden",
+          "integrity": 0.4648,
+          "label": "herb garden",
+          "place": "drum_court",
+          "stock": 0.12,
+          "wetness": 0.675714
+        }
+      ],
+      "place": {
+        "cold": 0.25,
+        "flower_phase": 2.094395,
+        "hazard": 0.231562,
+        "id": "drum_court",
+        "label": "drum court",
+        "scent": 0.28,
+        "sound": 0.88,
+        "terrain": "packed",
+        "wetness": 0.24,
+        "x": 2.8,
+        "z": 2.7
+      },
+      "route": {
+        "cost": 0.922712,
+        "from": "central_hearth",
+        "hazard": 0.0,
+        "id": "central_hearth->drum_court",
+        "infrastructure_bonus": 0.161686,
+        "kind": "path",
+        "to": "drum_court"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "grain_shade",
+    "tick": 7
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.387148,
+      "cold": 0.235923,
+      "fatigue": 0.184568,
+      "pain": 0.021306,
+      "trust_orientation": 0.578,
+      "wetness": 0.21499
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "central_hearth",
+      "tick": 8,
+      "x": 0.0,
+      "yaw": 4.598868,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.606771,
+      "pain": 0.074024,
+      "scent": 0.537389,
+      "sound": 0.665041,
+      "thermal": 0.843661,
+      "vibration": 0.354067,
+      "vision": 0.895048,
+      "wetness": 0.306417
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 0.410078,
+      "from": "drum_court",
+      "hazard": 0.0,
+      "id": "drum_court->central_hearth",
+      "infrastructure_bonus": 0.247084,
+      "kind": "drain",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.606771,
+        "pain": 0.074024,
+        "scent": 0.537389,
+        "sound": 0.665041,
+        "thermal": 0.843661,
+        "vibration": 0.354067,
+        "vision": 0.895048,
+        "wetness": 0.306417
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 0.410078,
+        "from": "drum_court",
+        "hazard": 0.0,
+        "id": "drum_court->central_hearth",
+        "infrastructure_bonus": 0.247084,
+        "kind": "drain",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "ash_edge",
+    "tick": 8
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "nursery_nest:route_cairn supports repaint_marker,survey_route"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      },
+      {
+        "attention": 0.889965,
+        "energy": 0.467343,
+        "faction": "water",
+        "id": "integrated_deep_time_world:07",
+        "pain": 0.04,
+        "place": "loom_room",
+        "role": "pattern_keeper",
+        "stress": 0.523178,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "nursery_nest",
+    "body_state": {
+      "breath_rate": 0.39107,
+      "cold": 0.230175,
+      "fatigue": 0.192512,
+      "pain": 0.02042,
+      "trust_orientation": 0.58,
+      "wetness": 0.230292
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "nursery_nest",
+      "tick": 9,
+      "x": -0.8,
+      "yaw": 5.366019,
+      "z": 1.8
+    },
+    "frequency_field": {
+      "affect": 0.638194,
+      "pain": 0.013932,
+      "scent": 0.529324,
+      "sound": 0.57605,
+      "thermal": 0.737808,
+      "vibration": 0.644969,
+      "vision": 0.969925,
+      "wetness": 0.249949
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repaint_marker",
+          "survey_route"
+        ],
+        "heat": 0.246582,
+        "id": "route_cairn",
+        "integrity": 1.0,
+        "label": "route cairn",
+        "place": "nursery_nest",
+        "stock": 0.996522,
+        "wetness": 0.466978
+      }
+    ],
+    "place_render": {
+      "cold": 0.2,
+      "flower_phase": 4.18879,
+      "hazard": 0.094971,
+      "id": "nursery_nest",
+      "label": "nursery nest",
+      "scent": 0.38,
+      "sound": 0.4,
+      "terrain": "covered",
+      "wetness": 0.3,
+      "x": -0.8,
+      "z": 1.8
+    },
+    "route": {
+      "cost": 0.65363,
+      "from": "central_hearth",
+      "hazard": 0.014288,
+      "id": "central_hearth->nursery_nest",
+      "infrastructure_bonus": 0.142843,
+      "kind": "road",
+      "to": "nursery_nest"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        },
+        {
+          "attention": 0.889965,
+          "energy": 0.467343,
+          "faction": "water",
+          "id": "integrated_deep_time_world:07",
+          "pain": 0.04,
+          "place": "loom_room",
+          "role": "pattern_keeper",
+          "stress": 0.523178,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.638194,
+        "pain": 0.013932,
+        "scent": 0.529324,
+        "sound": 0.57605,
+        "thermal": 0.737808,
+        "vibration": 0.644969,
+        "vision": 0.969925,
+        "wetness": 0.249949
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repaint_marker",
+            "survey_route"
+          ],
+          "heat": 0.246582,
+          "id": "route_cairn",
+          "integrity": 1.0,
+          "label": "route cairn",
+          "place": "nursery_nest",
+          "stock": 0.996522,
+          "wetness": 0.466978
+        }
+      ],
+      "place": {
+        "cold": 0.2,
+        "flower_phase": 4.18879,
+        "hazard": 0.094971,
+        "id": "nursery_nest",
+        "label": "nursery nest",
+        "scent": 0.38,
+        "sound": 0.4,
+        "terrain": "covered",
+        "wetness": 0.3,
+        "x": -0.8,
+        "z": 1.8
+      },
+      "route": {
+        "cost": 0.65363,
+        "from": "central_hearth",
+        "hazard": 0.014288,
+        "id": "central_hearth->nursery_nest",
+        "infrastructure_bonus": 0.142843,
+        "kind": "road",
+        "to": "nursery_nest"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_03_pattern_keeper_maintenance_debt_grain_shade_grain_store",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_011_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_011_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_03_pattern_keeper_maintenance_debt_grain_shade_grain_store",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_011_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_011_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "nursery_nest",
+    "tick": 9
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.393965,
+      "cold": 0.231747,
+      "fatigue": 0.198469,
+      "pain": 0.019612,
+      "trust_orientation": 0.582,
+      "wetness": 0.224839
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "central_hearth",
+      "tick": 10,
+      "x": 0.0,
+      "yaw": 5.718408,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.74223,
+      "pain": 0.049738,
+      "scent": 0.359298,
+      "sound": 0.799774,
+      "thermal": 0.607336,
+      "vibration": 0.631704,
+      "vision": 0.865956,
+      "wetness": 0.132302
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 0.48242,
+      "from": "nursery_nest",
+      "hazard": 0.024001,
+      "id": "nursery_nest->central_hearth",
+      "infrastructure_bonus": 0.088882,
+      "kind": "path",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.74223,
+        "pain": 0.049738,
+        "scent": 0.359298,
+        "sound": 0.799774,
+        "thermal": 0.607336,
+        "vibration": 0.631704,
+        "vision": 0.865956,
+        "wetness": 0.132302
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 0.48242,
+        "from": "nursery_nest",
+        "hazard": 0.024001,
+        "id": "nursery_nest->central_hearth",
+        "infrastructure_bonus": 0.088882,
+        "kind": "path",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_06_pattern_keeper_signal_visibility_archive_knoll_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_105 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_105"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_06_pattern_keeper_signal_visibility_archive_knoll_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_105 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_105"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "archive_knoll",
+    "tick": 10
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "drum_court:herb_garden supports tend_herbs,harvest_herbs"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "drum_court",
+    "body_state": {
+      "breath_rate": 0.399501,
+      "cold": 0.234667,
+      "fatigue": 0.209542,
+      "pain": 0.018612,
+      "trust_orientation": 0.584,
+      "wetness": 0.227568
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "drum_court",
+      "tick": 11,
+      "x": 2.8,
+      "yaw": 0.399113,
+      "z": 2.7
+    },
+    "frequency_field": {
+      "affect": 0.859963,
+      "pain": 0.15574,
+      "scent": 0.233466,
+      "sound": 0.855726,
+      "thermal": 0.55293,
+      "vibration": 0.946375,
+      "vision": 0.750216,
+      "wetness": 0.196643
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "tend_herbs",
+          "harvest_herbs"
+        ],
+        "heat": 0.356582,
+        "id": "herb_garden",
+        "integrity": 0.4648,
+        "label": "herb garden",
+        "place": "drum_court",
+        "stock": 0.12,
+        "wetness": 0.675714
+      }
+    ],
+    "place_render": {
+      "cold": 0.25,
+      "flower_phase": 2.094395,
+      "hazard": 0.231562,
+      "id": "drum_court",
+      "label": "drum court",
+      "scent": 0.28,
+      "sound": 0.88,
+      "terrain": "packed",
+      "wetness": 0.24,
+      "x": 2.8,
+      "z": 2.7
+    },
+    "route": {
+      "cost": 0.922712,
+      "from": "central_hearth",
+      "hazard": 0.0,
+      "id": "central_hearth->drum_court",
+      "infrastructure_bonus": 0.161686,
+      "kind": "path",
+      "to": "drum_court"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.859963,
+        "pain": 0.15574,
+        "scent": 0.233466,
+        "sound": 0.855726,
+        "thermal": 0.55293,
+        "vibration": 0.946375,
+        "vision": 0.750216,
+        "wetness": 0.196643
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "tend_herbs",
+            "harvest_herbs"
+          ],
+          "heat": 0.356582,
+          "id": "herb_garden",
+          "integrity": 0.4648,
+          "label": "herb garden",
+          "place": "drum_court",
+          "stock": 0.12,
+          "wetness": 0.675714
+        }
+      ],
+      "place": {
+        "cold": 0.25,
+        "flower_phase": 2.094395,
+        "hazard": 0.231562,
+        "id": "drum_court",
+        "label": "drum court",
+        "scent": 0.28,
+        "sound": 0.88,
+        "terrain": "packed",
+        "wetness": 0.24,
+        "x": 2.8,
+        "z": 2.7
+      },
+      "route": {
+        "cost": 0.922712,
+        "from": "central_hearth",
+        "hazard": 0.0,
+        "id": "central_hearth->drum_court",
+        "infrastructure_bonus": 0.161686,
+        "kind": "path",
+        "to": "drum_court"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_05_trader_language_marker_roof_ring_herb_garden",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_003_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_003_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_05_trader_language_marker_roof_ring_herb_garden",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_003_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_003_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "herb_slope",
+    "tick": 11
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.401961,
+      "cold": 0.23552,
+      "fatigue": 0.214463,
+      "pain": 0.017612,
+      "trust_orientation": 0.586,
+      "wetness": 0.222606
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "central_hearth",
+      "tick": 12,
+      "x": 0.0,
+      "yaw": 0.410078,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.93278,
+      "pain": 0.282712,
+      "scent": 0.198026,
+      "sound": 0.610231,
+      "thermal": 0.602376,
+      "vibration": 0.536864,
+      "vision": 0.630564,
+      "wetness": 0.286181
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 0.410078,
+      "from": "drum_court",
+      "hazard": 0.0,
+      "id": "drum_court->central_hearth",
+      "infrastructure_bonus": 0.247084,
+      "kind": "drain",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.93278,
+        "pain": 0.282712,
+        "scent": 0.198026,
+        "sound": 0.610231,
+        "thermal": 0.602376,
+        "vibration": 0.536864,
+        "vision": 0.630564,
+        "wetness": 0.286181
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 0.410078,
+        "from": "drum_court",
+        "hazard": 0.0,
+        "id": "drum_court->central_hearth",
+        "infrastructure_bonus": 0.247084,
+        "kind": "drain",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_04_guard_signal_visibility_drum_court_loom_frame",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_009_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_009_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_04_guard_signal_visibility_drum_court_loom_frame",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_009_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_009_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "tool_bend",
+    "tick": 12
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "nursery_nest:route_cairn supports repaint_marker,survey_route"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      },
+      {
+        "attention": 0.889965,
+        "energy": 0.467343,
+        "faction": "water",
+        "id": "integrated_deep_time_world:07",
+        "pain": 0.04,
+        "place": "loom_room",
+        "role": "pattern_keeper",
+        "stress": 0.523178,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "nursery_nest",
+    "body_state": {
+      "breath_rate": 0.405883,
+      "cold": 0.229837,
+      "fatigue": 0.222407,
+      "pain": 0.016726,
+      "trust_orientation": 0.588,
+      "wetness": 0.236537
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "nursery_nest",
+      "tick": 13,
+      "x": -0.8,
+      "yaw": 1.177229,
+      "z": 1.8
+    },
+    "frequency_field": {
+      "affect": 0.895098,
+      "pain": 0.350901,
+      "scent": 0.316626,
+      "sound": 0.288963,
+      "thermal": 0.75616,
+      "vibration": 0.552457,
+      "vision": 0.634577,
+      "wetness": 0.489999
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repaint_marker",
+          "survey_route"
+        ],
+        "heat": 0.246582,
+        "id": "route_cairn",
+        "integrity": 1.0,
+        "label": "route cairn",
+        "place": "nursery_nest",
+        "stock": 0.996522,
+        "wetness": 0.466978
+      }
+    ],
+    "place_render": {
+      "cold": 0.2,
+      "flower_phase": 4.18879,
+      "hazard": 0.094971,
+      "id": "nursery_nest",
+      "label": "nursery nest",
+      "scent": 0.38,
+      "sound": 0.4,
+      "terrain": "covered",
+      "wetness": 0.3,
+      "x": -0.8,
+      "z": 1.8
+    },
+    "route": {
+      "cost": 0.65363,
+      "from": "central_hearth",
+      "hazard": 0.014288,
+      "id": "central_hearth->nursery_nest",
+      "infrastructure_bonus": 0.142843,
+      "kind": "road",
+      "to": "nursery_nest"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        },
+        {
+          "attention": 0.889965,
+          "energy": 0.467343,
+          "faction": "water",
+          "id": "integrated_deep_time_world:07",
+          "pain": 0.04,
+          "place": "loom_room",
+          "role": "pattern_keeper",
+          "stress": 0.523178,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.895098,
+        "pain": 0.350901,
+        "scent": 0.316626,
+        "sound": 0.288963,
+        "thermal": 0.75616,
+        "vibration": 0.552457,
+        "vision": 0.634577,
+        "wetness": 0.489999
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repaint_marker",
+            "survey_route"
+          ],
+          "heat": 0.246582,
+          "id": "route_cairn",
+          "integrity": 1.0,
+          "label": "route cairn",
+          "place": "nursery_nest",
+          "stock": 0.996522,
+          "wetness": 0.466978
+        }
+      ],
+      "place": {
+        "cold": 0.2,
+        "flower_phase": 4.18879,
+        "hazard": 0.094971,
+        "id": "nursery_nest",
+        "label": "nursery nest",
+        "scent": 0.38,
+        "sound": 0.4,
+        "terrain": "covered",
+        "wetness": 0.3,
+        "x": -0.8,
+        "z": 1.8
+      },
+      "route": {
+        "cost": 0.65363,
+        "from": "central_hearth",
+        "hazard": 0.014288,
+        "id": "central_hearth->nursery_nest",
+        "infrastructure_bonus": 0.142843,
+        "kind": "road",
+        "to": "nursery_nest"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_090"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_090"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": true,
+    "target_place": "nursery_nest",
+    "tick": 13
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.408778,
+      "cold": 0.231463,
+      "fatigue": 0.228364,
+      "pain": 0.015918,
+      "trust_orientation": 0.59,
+      "wetness": 0.22996
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "central_hearth",
+      "tick": 14,
+      "x": 0.0,
+      "yaw": 1.529618,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.793878,
+      "pain": 0.315509,
+      "scent": 0.373781,
+      "sound": 0.463779,
+      "thermal": 0.84465,
+      "vibration": 0.346684,
+      "vision": 0.650226,
+      "wetness": 0.471499
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 0.48242,
+      "from": "nursery_nest",
+      "hazard": 0.024001,
+      "id": "nursery_nest->central_hearth",
+      "infrastructure_bonus": 0.088882,
+      "kind": "path",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.793878,
+        "pain": 0.315509,
+        "scent": 0.373781,
+        "sound": 0.463779,
+        "thermal": 0.84465,
+        "vibration": 0.346684,
+        "vision": 0.650226,
+        "wetness": 0.471499
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 0.48242,
+        "from": "nursery_nest",
+        "hazard": 0.024001,
+        "id": "nursery_nest->central_hearth",
+        "infrastructure_bonus": 0.088882,
+        "kind": "path",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_000_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_000_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "tool_bend",
+    "tick": 14
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "drum_court:herb_garden supports tend_herbs,harvest_herbs"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "drum_court",
+    "body_state": {
+      "breath_rate": 0.414314,
+      "cold": 0.234429,
+      "fatigue": 0.239437,
+      "pain": 0.014918,
+      "trust_orientation": 0.592,
+      "wetness": 0.231767
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "drum_court",
+      "tick": 15,
+      "x": 2.8,
+      "yaw": 2.493508,
+      "z": 2.7
+    },
+    "frequency_field": {
+      "affect": 0.684023,
+      "pain": 0.225842,
+      "scent": 0.461379,
+      "sound": 0.630954,
+      "thermal": 0.890492,
+      "vibration": 0.60928,
+      "vision": 0.752324,
+      "wetness": 0.471815
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "tend_herbs",
+          "harvest_herbs"
+        ],
+        "heat": 0.356582,
+        "id": "herb_garden",
+        "integrity": 0.4648,
+        "label": "herb garden",
+        "place": "drum_court",
+        "stock": 0.12,
+        "wetness": 0.675714
+      }
+    ],
+    "place_render": {
+      "cold": 0.25,
+      "flower_phase": 2.094395,
+      "hazard": 0.231562,
+      "id": "drum_court",
+      "label": "drum court",
+      "scent": 0.28,
+      "sound": 0.88,
+      "terrain": "packed",
+      "wetness": 0.24,
+      "x": 2.8,
+      "z": 2.7
+    },
+    "route": {
+      "cost": 0.922712,
+      "from": "central_hearth",
+      "hazard": 0.0,
+      "id": "central_hearth->drum_court",
+      "infrastructure_bonus": 0.161686,
+      "kind": "path",
+      "to": "drum_court"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.684023,
+        "pain": 0.225842,
+        "scent": 0.461379,
+        "sound": 0.630954,
+        "thermal": 0.890492,
+        "vibration": 0.60928,
+        "vision": 0.752324,
+        "wetness": 0.471815
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "tend_herbs",
+            "harvest_herbs"
+          ],
+          "heat": 0.356582,
+          "id": "herb_garden",
+          "integrity": 0.4648,
+          "label": "herb garden",
+          "place": "drum_court",
+          "stock": 0.12,
+          "wetness": 0.675714
+        }
+      ],
+      "place": {
+        "cold": 0.25,
+        "flower_phase": 2.094395,
+        "hazard": 0.231562,
+        "id": "drum_court",
+        "label": "drum court",
+        "scent": 0.28,
+        "sound": 0.88,
+        "terrain": "packed",
+        "wetness": 0.24,
+        "x": 2.8,
+        "z": 2.7
+      },
+      "route": {
+        "cost": 0.922712,
+        "from": "central_hearth",
+        "hazard": 0.0,
+        "id": "central_hearth->drum_court",
+        "infrastructure_bonus": 0.161686,
+        "kind": "path",
+        "to": "drum_court"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_05_healer_maintenance_debt_spring_hollow_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_006_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_006_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_05_healer_maintenance_debt_spring_hollow_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_006_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_006_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "central_hearth",
+    "tick": 15
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.416774,
+      "cold": 0.23532,
+      "fatigue": 0.244358,
+      "pain": 0.013918,
+      "trust_orientation": 0.594,
+      "wetness": 0.226049
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "central_hearth",
+      "tick": 16,
+      "x": 0.0,
+      "yaw": 2.504473,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.647958,
+      "pain": 0.18435,
+      "scent": 0.503377,
+      "sound": 0.544773,
+      "thermal": 0.896491,
+      "vibration": 0.278345,
+      "vision": 0.791529,
+      "wetness": 0.419164
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 0.410078,
+      "from": "drum_court",
+      "hazard": 0.0,
+      "id": "drum_court->central_hearth",
+      "infrastructure_bonus": 0.247084,
+      "kind": "drain",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.647958,
+        "pain": 0.18435,
+        "scent": 0.503377,
+        "sound": 0.544773,
+        "thermal": 0.896491,
+        "vibration": 0.278345,
+        "vision": 0.791529,
+        "wetness": 0.419164
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 0.410078,
+        "from": "drum_court",
+        "hazard": 0.0,
+        "id": "drum_court->central_hearth",
+        "infrastructure_bonus": 0.247084,
+        "kind": "drain",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_02_pattern_keeper_maintenance_debt_smoke_watch_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_075 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_075"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_02_pattern_keeper_maintenance_debt_smoke_watch_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_075 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_075"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "tool_bend",
+    "tick": 16
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "drum_court:herb_garden supports tend_herbs,harvest_herbs"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "drum_court",
+    "body_state": {
+      "breath_rate": 0.42231,
+      "cold": 0.237669,
+      "fatigue": 0.255431,
+      "pain": 0.012918,
+      "trust_orientation": 0.596,
+      "wetness": 0.22856
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "drum_court",
+      "tick": 17,
+      "x": 2.8,
+      "yaw": 3.540706,
+      "z": 2.7
+    },
+    "frequency_field": {
+      "affect": 0.584648,
+      "pain": 0.061014,
+      "scent": 0.52304,
+      "sound": 0.79365,
+      "thermal": 0.831848,
+      "vibration": 0.701213,
+      "vision": 0.902864,
+      "wetness": 0.322754
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "tend_herbs",
+          "harvest_herbs"
+        ],
+        "heat": 0.356582,
+        "id": "herb_garden",
+        "integrity": 0.4648,
+        "label": "herb garden",
+        "place": "drum_court",
+        "stock": 0.12,
+        "wetness": 0.675714
+      }
+    ],
+    "place_render": {
+      "cold": 0.25,
+      "flower_phase": 2.094395,
+      "hazard": 0.231562,
+      "id": "drum_court",
+      "label": "drum court",
+      "scent": 0.28,
+      "sound": 0.88,
+      "terrain": "packed",
+      "wetness": 0.24,
+      "x": 2.8,
+      "z": 2.7
+    },
+    "route": {
+      "cost": 0.922712,
+      "from": "central_hearth",
+      "hazard": 0.0,
+      "id": "central_hearth->drum_court",
+      "infrastructure_bonus": 0.161686,
+      "kind": "path",
+      "to": "drum_court"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.584648,
+        "pain": 0.061014,
+        "scent": 0.52304,
+        "sound": 0.79365,
+        "thermal": 0.831848,
+        "vibration": 0.701213,
+        "vision": 0.902864,
+        "wetness": 0.322754
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "tend_herbs",
+            "harvest_herbs"
+          ],
+          "heat": 0.356582,
+          "id": "herb_garden",
+          "integrity": 0.4648,
+          "label": "herb garden",
+          "place": "drum_court",
+          "stock": 0.12,
+          "wetness": 0.675714
+        }
+      ],
+      "place": {
+        "cold": 0.25,
+        "flower_phase": 2.094395,
+        "hazard": 0.231562,
+        "id": "drum_court",
+        "label": "drum court",
+        "scent": 0.28,
+        "sound": 0.88,
+        "terrain": "packed",
+        "wetness": 0.24,
+        "x": 2.8,
+        "z": 2.7
+      },
+      "route": {
+        "cost": 0.922712,
+        "from": "central_hearth",
+        "hazard": 0.0,
+        "id": "central_hearth->drum_court",
+        "infrastructure_bonus": 0.161686,
+        "kind": "path",
+        "to": "drum_court"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_07_farmer_maintenance_debt_storage_yard_grain_store",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_018_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_018_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_07_farmer_maintenance_debt_storage_yard_grain_store",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_018_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_018_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "herb_slope",
+    "tick": 17
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.42477,
+      "cold": 0.238042,
+      "fatigue": 0.260352,
+      "pain": 0.011918,
+      "trust_orientation": 0.598,
+      "wetness": 0.223419
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "central_hearth",
+      "tick": 18,
+      "x": 0.0,
+      "yaw": 3.551671,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.619006,
+      "pain": 0.008214,
+      "scent": 0.475315,
+      "sound": 0.774904,
+      "thermal": 0.719084,
+      "vibration": 0.485735,
+      "vision": 0.927114,
+      "wetness": 0.182828
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 0.410078,
+      "from": "drum_court",
+      "hazard": 0.0,
+      "id": "drum_court->central_hearth",
+      "infrastructure_bonus": 0.247084,
+      "kind": "drain",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.619006,
+        "pain": 0.008214,
+        "scent": 0.475315,
+        "sound": 0.774904,
+        "thermal": 0.719084,
+        "vibration": 0.485735,
+        "vision": 0.927114,
+        "wetness": 0.182828
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 0.410078,
+        "from": "drum_court",
+        "hazard": 0.0,
+        "id": "drum_court->central_hearth",
+        "infrastructure_bonus": 0.247084,
+        "kind": "drain",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_04_scout_maintenance_debt_central_hearth_grain_store",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_004_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_004_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_04_scout_maintenance_debt_central_hearth_grain_store",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_004_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_004_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "storage_yard",
+    "tick": 18
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "drum_court:herb_garden supports tend_herbs,harvest_herbs"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "drum_court",
+    "body_state": {
+      "breath_rate": 0.430306,
+      "cold": 0.239955,
+      "fatigue": 0.271425,
+      "pain": 0.010918,
+      "trust_orientation": 0.6,
+      "wetness": 0.226404
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "drum_court",
+      "tick": 19,
+      "x": 2.8,
+      "yaw": 4.587903,
+      "z": 2.7
+    },
+    "frequency_field": {
+      "affect": 0.722105,
+      "pain": 0.044978,
+      "scent": 0.344536,
+      "sound": 0.918314,
+      "thermal": 0.60194,
+      "vibration": 0.923132,
+      "vision": 0.866739,
+      "wetness": 0.158616
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "tend_herbs",
+          "harvest_herbs"
+        ],
+        "heat": 0.356582,
+        "id": "herb_garden",
+        "integrity": 0.4648,
+        "label": "herb garden",
+        "place": "drum_court",
+        "stock": 0.12,
+        "wetness": 0.675714
+      }
+    ],
+    "place_render": {
+      "cold": 0.25,
+      "flower_phase": 2.094395,
+      "hazard": 0.231562,
+      "id": "drum_court",
+      "label": "drum court",
+      "scent": 0.28,
+      "sound": 0.88,
+      "terrain": "packed",
+      "wetness": 0.24,
+      "x": 2.8,
+      "z": 2.7
+    },
+    "route": {
+      "cost": 0.922712,
+      "from": "central_hearth",
+      "hazard": 0.0,
+      "id": "central_hearth->drum_court",
+      "infrastructure_bonus": 0.161686,
+      "kind": "path",
+      "to": "drum_court"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.722105,
+        "pain": 0.044978,
+        "scent": 0.344536,
+        "sound": 0.918314,
+        "thermal": 0.60194,
+        "vibration": 0.923132,
+        "vision": 0.866739,
+        "wetness": 0.158616
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "tend_herbs",
+            "harvest_herbs"
+          ],
+          "heat": 0.356582,
+          "id": "herb_garden",
+          "integrity": 0.4648,
+          "label": "herb garden",
+          "place": "drum_court",
+          "stock": 0.12,
+          "wetness": 0.675714
+        }
+      ],
+      "place": {
+        "cold": 0.25,
+        "flower_phase": 2.094395,
+        "hazard": 0.231562,
+        "id": "drum_court",
+        "label": "drum court",
+        "scent": 0.28,
+        "sound": 0.88,
+        "terrain": "packed",
+        "wetness": 0.24,
+        "x": 2.8,
+        "z": 2.7
+      },
+      "route": {
+        "cost": 0.922712,
+        "from": "central_hearth",
+        "hazard": 0.0,
+        "id": "central_hearth->drum_court",
+        "infrastructure_bonus": 0.161686,
+        "kind": "path",
+        "to": "drum_court"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_060"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_060"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "drum_court",
+    "tick": 19
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.432766,
+      "cold": 0.239962,
+      "fatigue": 0.276346,
+      "pain": 0.009918,
+      "trust_orientation": 0.602,
+      "wetness": 0.221651
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "central_hearth",
+      "tick": 20,
+      "x": 0.0,
+      "yaw": 4.598868,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.848412,
+      "pain": 0.159984,
+      "scent": 0.239833,
+      "sound": 0.728828,
+      "thermal": 0.557055,
+      "vibration": 0.605986,
+      "vision": 0.738193,
+      "wetness": 0.17683
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 0.410078,
+      "from": "drum_court",
+      "hazard": 0.0,
+      "id": "drum_court->central_hearth",
+      "infrastructure_bonus": 0.247084,
+      "kind": "drain",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.848412,
+        "pain": 0.159984,
+        "scent": 0.239833,
+        "sound": 0.728828,
+        "thermal": 0.557055,
+        "vibration": 0.605986,
+        "vision": 0.738193,
+        "wetness": 0.17683
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 0.410078,
+        "from": "drum_court",
+        "hazard": 0.0,
+        "id": "drum_court->central_hearth",
+        "infrastructure_bonus": 0.247084,
+        "kind": "drain",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_015_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_015_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "spring_hollow",
+    "tick": 20
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "drum_court:herb_garden supports tend_herbs,harvest_herbs"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "drum_court",
+    "body_state": {
+      "breath_rate": 0.438302,
+      "cold": 0.241568,
+      "fatigue": 0.287419,
+      "pain": 0.008918,
+      "trust_orientation": 0.604,
+      "wetness": 0.224954
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "drum_court",
+      "tick": 21,
+      "x": 2.8,
+      "yaw": 5.635101,
+      "z": 2.7
+    },
+    "frequency_field": {
+      "affect": 0.914466,
+      "pain": 0.297364,
+      "scent": 0.18745,
+      "sound": 0.702577,
+      "thermal": 0.617986,
+      "vibration": 0.851767,
+      "vision": 0.616581,
+      "wetness": 0.339615
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "tend_herbs",
+          "harvest_herbs"
+        ],
+        "heat": 0.356582,
+        "id": "herb_garden",
+        "integrity": 0.4648,
+        "label": "herb garden",
+        "place": "drum_court",
+        "stock": 0.12,
+        "wetness": 0.675714
+      }
+    ],
+    "place_render": {
+      "cold": 0.25,
+      "flower_phase": 2.094395,
+      "hazard": 0.231562,
+      "id": "drum_court",
+      "label": "drum court",
+      "scent": 0.28,
+      "sound": 0.88,
+      "terrain": "packed",
+      "wetness": 0.24,
+      "x": 2.8,
+      "z": 2.7
+    },
+    "route": {
+      "cost": 0.922712,
+      "from": "central_hearth",
+      "hazard": 0.0,
+      "id": "central_hearth->drum_court",
+      "infrastructure_bonus": 0.161686,
+      "kind": "path",
+      "to": "drum_court"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.914466,
+        "pain": 0.297364,
+        "scent": 0.18745,
+        "sound": 0.702577,
+        "thermal": 0.617986,
+        "vibration": 0.851767,
+        "vision": 0.616581,
+        "wetness": 0.339615
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "tend_herbs",
+            "harvest_herbs"
+          ],
+          "heat": 0.356582,
+          "id": "herb_garden",
+          "integrity": 0.4648,
+          "label": "herb garden",
+          "place": "drum_court",
+          "stock": 0.12,
+          "wetness": 0.675714
+        }
+      ],
+      "place": {
+        "cold": 0.25,
+        "flower_phase": 2.094395,
+        "hazard": 0.231562,
+        "id": "drum_court",
+        "label": "drum court",
+        "scent": 0.28,
+        "sound": 0.88,
+        "terrain": "packed",
+        "wetness": 0.24,
+        "x": 2.8,
+        "z": 2.7
+      },
+      "route": {
+        "cost": 0.922712,
+        "from": "central_hearth",
+        "hazard": 0.0,
+        "id": "central_hearth->drum_court",
+        "infrastructure_bonus": 0.161686,
+        "kind": "path",
+        "to": "drum_court"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_07_trader_language_marker_storage_yard_tool_cache",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_001_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_001_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_07_trader_language_marker_storage_yard_tool_cache",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_001_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_001_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "herb_slope",
+    "tick": 21
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.440762,
+      "cold": 0.241317,
+      "fatigue": 0.29234,
+      "pain": 0.007918,
+      "trust_orientation": 0.606,
+      "wetness": 0.220462
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "central_hearth",
+      "tick": 22,
+      "x": 0.0,
+      "yaw": 5.646066,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.87863,
+      "pain": 0.344666,
+      "scent": 0.258433,
+      "sound": 0.490701,
+      "thermal": 0.732074,
+      "vibration": 0.398394,
+      "vision": 0.590894,
+      "wetness": 0.419069
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 0.410078,
+      "from": "drum_court",
+      "hazard": 0.0,
+      "id": "drum_court->central_hearth",
+      "infrastructure_bonus": 0.247084,
+      "kind": "drain",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.87863,
+        "pain": 0.344666,
+        "scent": 0.258433,
+        "sound": 0.490701,
+        "thermal": 0.732074,
+        "vibration": 0.398394,
+        "vision": 0.590894,
+        "wetness": 0.419069
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 0.410078,
+        "from": "drum_court",
+        "hazard": 0.0,
+        "id": "drum_court->central_hearth",
+        "infrastructure_bonus": 0.247084,
+        "kind": "drain",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_00_trader_language_marker_loom_room_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_045 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_045"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_00_trader_language_marker_loom_room_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_045 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_045"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "spring_hollow",
+    "tick": 22
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "drum_court:herb_garden supports tend_herbs,harvest_herbs"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "drum_court",
+    "body_state": {
+      "breath_rate": 0.446298,
+      "cold": 0.242706,
+      "fatigue": 0.303413,
+      "pain": 0.006918,
+      "trust_orientation": 0.608,
+      "wetness": 0.223979
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "drum_court",
+      "tick": 23,
+      "x": 2.8,
+      "yaw": 0.399113,
+      "z": 2.7
+    },
+    "frequency_field": {
+      "affect": 0.786602,
+      "pain": 0.31838,
+      "scent": 0.345152,
+      "sound": 0.581048,
+      "thermal": 0.828746,
+      "vibration": 0.646375,
+      "vision": 0.640851,
+      "wetness": 0.496019
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "tend_herbs",
+          "harvest_herbs"
+        ],
+        "heat": 0.356582,
+        "id": "herb_garden",
+        "integrity": 0.4648,
+        "label": "herb garden",
+        "place": "drum_court",
+        "stock": 0.12,
+        "wetness": 0.675714
+      }
+    ],
+    "place_render": {
+      "cold": 0.25,
+      "flower_phase": 2.094395,
+      "hazard": 0.231562,
+      "id": "drum_court",
+      "label": "drum court",
+      "scent": 0.28,
+      "sound": 0.88,
+      "terrain": "packed",
+      "wetness": 0.24,
+      "x": 2.8,
+      "z": 2.7
+    },
+    "route": {
+      "cost": 0.922712,
+      "from": "central_hearth",
+      "hazard": 0.0,
+      "id": "central_hearth->drum_court",
+      "infrastructure_bonus": 0.161686,
+      "kind": "path",
+      "to": "drum_court"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.786602,
+        "pain": 0.31838,
+        "scent": 0.345152,
+        "sound": 0.581048,
+        "thermal": 0.828746,
+        "vibration": 0.646375,
+        "vision": 0.640851,
+        "wetness": 0.496019
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "tend_herbs",
+            "harvest_herbs"
+          ],
+          "heat": 0.356582,
+          "id": "herb_garden",
+          "integrity": 0.4648,
+          "label": "herb garden",
+          "place": "drum_court",
+          "stock": 0.12,
+          "wetness": 0.675714
+        }
+      ],
+      "place": {
+        "cold": 0.25,
+        "flower_phase": 2.094395,
+        "hazard": 0.231562,
+        "id": "drum_court",
+        "label": "drum court",
+        "scent": 0.28,
+        "sound": 0.88,
+        "terrain": "packed",
+        "wetness": 0.24,
+        "x": 2.8,
+        "z": 2.7
+      },
+      "route": {
+        "cost": 0.922712,
+        "from": "central_hearth",
+        "hazard": 0.0,
+        "id": "central_hearth->drum_court",
+        "infrastructure_bonus": 0.161686,
+        "kind": "path",
+        "to": "drum_court"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "ash_edge",
+    "tick": 23
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "central_hearth:smoke_marker supports refresh_smoke_marker,watch_scent"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "central_hearth",
+    "body_state": {
+      "breath_rate": 0.448758,
+      "cold": 0.242273,
+      "fatigue": 0.308334,
+      "pain": 0.005918,
+      "trust_orientation": 0.61,
+      "wetness": 0.219663
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "central_hearth",
+      "tick": 24,
+      "x": 0.0,
+      "yaw": 0.410078,
+      "z": 0.0
+    },
+    "frequency_field": {
+      "affect": 0.744336,
+      "pain": 0.29161,
+      "scent": 0.399574,
+      "sound": 0.469473,
+      "thermal": 0.861964,
+      "vibration": 0.286297,
+      "vision": 0.671354,
+      "wetness": 0.471509
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "refresh_smoke_marker",
+          "watch_scent"
+        ],
+        "heat": 0.740675,
+        "id": "smoke_marker",
+        "integrity": 0.95471,
+        "label": "smoke marker",
+        "place": "central_hearth",
+        "stock": 0.970153,
+        "wetness": 0.37757
+      }
+    ],
+    "place_render": {
+      "cold": 0.24,
+      "flower_phase": 1.570796,
+      "hazard": 0.238314,
+      "id": "central_hearth",
+      "label": "central hearth",
+      "scent": 0.3,
+      "sound": 0.7,
+      "terrain": "packed",
+      "wetness": 0.2,
+      "x": 0.0,
+      "z": 0.0
+    },
+    "route": {
+      "cost": 0.410078,
+      "from": "drum_court",
+      "hazard": 0.0,
+      "id": "drum_court->central_hearth",
+      "infrastructure_bonus": 0.247084,
+      "kind": "drain",
+      "to": "central_hearth"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.744336,
+        "pain": 0.29161,
+        "scent": 0.399574,
+        "sound": 0.469473,
+        "thermal": 0.861964,
+        "vibration": 0.286297,
+        "vision": 0.671354,
+        "wetness": 0.471509
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "refresh_smoke_marker",
+            "watch_scent"
+          ],
+          "heat": 0.740675,
+          "id": "smoke_marker",
+          "integrity": 0.95471,
+          "label": "smoke marker",
+          "place": "central_hearth",
+          "stock": 0.970153,
+          "wetness": 0.37757
+        }
+      ],
+      "place": {
+        "cold": 0.24,
+        "flower_phase": 1.570796,
+        "hazard": 0.238314,
+        "id": "central_hearth",
+        "label": "central hearth",
+        "scent": 0.3,
+        "sound": 0.7,
+        "terrain": "packed",
+        "wetness": 0.2,
+        "x": 0.0,
+        "z": 0.0
+      },
+      "route": {
+        "cost": 0.410078,
+        "from": "drum_court",
+        "hazard": 0.0,
+        "id": "drum_court->central_hearth",
+        "infrastructure_bonus": 0.247084,
+        "kind": "drain",
+        "to": "central_hearth"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "spring_hollow",
+    "tick": 24
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "drum_court:herb_garden supports tend_herbs,harvest_herbs"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.939215,
+        "energy": 0.434928,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:04",
+        "pain": 0.06,
+        "place": "drum_court",
+        "role": "guard",
+        "stress": 0.70931,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "drum_court",
+    "body_state": {
+      "breath_rate": 0.454294,
+      "cold": 0.243509,
+      "fatigue": 0.319407,
+      "pain": 0.004918,
+      "trust_orientation": 0.612,
+      "wetness": 0.223324
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "drum_court",
+      "tick": 25,
+      "x": 2.8,
+      "yaw": 1.446311,
+      "z": 2.7
+    },
+    "frequency_field": {
+      "affect": 0.618165,
+      "pain": 0.168347,
+      "scent": 0.496024,
+      "sound": 0.67236,
+      "thermal": 0.891096,
+      "vibration": 0.61996,
+      "vision": 0.803353,
+      "wetness": 0.43807
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "tend_herbs",
+          "harvest_herbs"
+        ],
+        "heat": 0.356582,
+        "id": "herb_garden",
+        "integrity": 0.4648,
+        "label": "herb garden",
+        "place": "drum_court",
+        "stock": 0.12,
+        "wetness": 0.675714
+      }
+    ],
+    "place_render": {
+      "cold": 0.25,
+      "flower_phase": 2.094395,
+      "hazard": 0.231562,
+      "id": "drum_court",
+      "label": "drum court",
+      "scent": 0.28,
+      "sound": 0.88,
+      "terrain": "packed",
+      "wetness": 0.24,
+      "x": 2.8,
+      "z": 2.7
+    },
+    "route": {
+      "cost": 0.922712,
+      "from": "central_hearth",
+      "hazard": 0.0,
+      "id": "central_hearth->drum_court",
+      "infrastructure_bonus": 0.161686,
+      "kind": "path",
+      "to": "drum_court"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.939215,
+          "energy": 0.434928,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:04",
+          "pain": 0.06,
+          "place": "drum_court",
+          "role": "guard",
+          "stress": 0.70931,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.618165,
+        "pain": 0.168347,
+        "scent": 0.496024,
+        "sound": 0.67236,
+        "thermal": 0.891096,
+        "vibration": 0.61996,
+        "vision": 0.803353,
+        "wetness": 0.43807
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "tend_herbs",
+            "harvest_herbs"
+          ],
+          "heat": 0.356582,
+          "id": "herb_garden",
+          "integrity": 0.4648,
+          "label": "herb garden",
+          "place": "drum_court",
+          "stock": 0.12,
+          "wetness": 0.675714
+        }
+      ],
+      "place": {
+        "cold": 0.25,
+        "flower_phase": 2.094395,
+        "hazard": 0.231562,
+        "id": "drum_court",
+        "label": "drum court",
+        "scent": 0.28,
+        "sound": 0.88,
+        "terrain": "packed",
+        "wetness": 0.24,
+        "x": 2.8,
+        "z": 2.7
+      },
+      "route": {
+        "cost": 0.922712,
+        "from": "central_hearth",
+        "hazard": 0.0,
+        "id": "central_hearth->drum_court",
+        "infrastructure_bonus": 0.161686,
+        "kind": "path",
+        "to": "drum_court"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "drum_court",
+    "tick": 25
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "smoke_watch:grain_store supports grind_grain,seal_store"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      },
+      {
+        "attention": 0.890196,
+        "energy": 0.467269,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:05",
+        "pain": 0.04,
+        "place": "grain_shade",
+        "role": "teacher",
+        "stress": 0.523308,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "smoke_watch",
+    "body_state": {
+      "breath_rate": 0.460137,
+      "cold": 0.271748,
+      "fatigue": 0.331092,
+      "pain": 0.003918,
+      "trust_orientation": 0.614,
+      "wetness": 0.226326
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "smoke_watch",
+      "tick": 26,
+      "x": 5.2,
+      "yaw": 2.020975,
+      "z": 0.7
+    },
+    "frequency_field": {
+      "affect": 0.562063,
+      "pain": 0.053948,
+      "scent": 0.879209,
+      "sound": 0.438762,
+      "thermal": 0.757714,
+      "vibration": 0.736311,
+      "vision": 0.918026,
+      "wetness": 0.321191
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "grind_grain",
+          "seal_store"
+        ],
+        "heat": 0.306582,
+        "id": "grain_store",
+        "integrity": 0.4476,
+        "label": "grain store",
+        "place": "smoke_watch",
+        "stock": 0.2,
+        "wetness": 0.440834
+      }
+    ],
+    "place_render": {
+      "cold": 0.42,
+      "flower_phase": 5.235988,
+      "hazard": 0.183406,
+      "id": "smoke_watch",
+      "label": "smoke watch",
+      "scent": 0.82,
+      "sound": 0.34,
+      "terrain": "ridge",
+      "wetness": 0.24,
+      "x": 5.2,
+      "z": 0.7
+    },
+    "route": {
+      "cost": 0.973777,
+      "from": "drum_court",
+      "hazard": 0.0,
+      "id": "drum_court->smoke_watch",
+      "infrastructure_bonus": 0.02965,
+      "kind": "path",
+      "to": "smoke_watch"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        },
+        {
+          "attention": 0.890196,
+          "energy": 0.467269,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:05",
+          "pain": 0.04,
+          "place": "grain_shade",
+          "role": "teacher",
+          "stress": 0.523308,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.562063,
+        "pain": 0.053948,
+        "scent": 0.879209,
+        "sound": 0.438762,
+        "thermal": 0.757714,
+        "vibration": 0.736311,
+        "vision": 0.918026,
+        "wetness": 0.321191
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "grind_grain",
+            "seal_store"
+          ],
+          "heat": 0.306582,
+          "id": "grain_store",
+          "integrity": 0.4476,
+          "label": "grain store",
+          "place": "smoke_watch",
+          "stock": 0.2,
+          "wetness": 0.440834
+        }
+      ],
+      "place": {
+        "cold": 0.42,
+        "flower_phase": 5.235988,
+        "hazard": 0.183406,
+        "id": "smoke_watch",
+        "label": "smoke watch",
+        "scent": 0.82,
+        "sound": 0.34,
+        "terrain": "ridge",
+        "wetness": 0.24,
+        "x": 5.2,
+        "z": 0.7
+      },
+      "route": {
+        "cost": 0.973777,
+        "from": "drum_court",
+        "hazard": 0.0,
+        "id": "drum_court->smoke_watch",
+        "infrastructure_bonus": 0.02965,
+        "kind": "path",
+        "to": "smoke_watch"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_015_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_015_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "smoke_watch",
+    "tick": 26
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.462994,
+      "cold": 0.305068,
+      "fatigue": 0.338462,
+      "pain": 0.004812,
+      "trust_orientation": 0.612,
+      "wetness": 0.232387
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 27,
+      "x": 7.8,
+      "yaw": 2.046919,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.59678,
+      "pain": 0.003431,
+      "scent": 0.500497,
+      "sound": 0.551345,
+      "thermal": 0.614562,
+      "vibration": 0.530831,
+      "vision": 0.972347,
+      "wetness": 0.221317
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.476123,
+      "from": "smoke_watch",
+      "hazard": 0.236694,
+      "id": "smoke_watch->cairn_ridge",
+      "infrastructure_bonus": 0.129478,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.59678,
+        "pain": 0.003431,
+        "scent": 0.500497,
+        "sound": 0.551345,
+        "thermal": 0.614562,
+        "vibration": 0.530831,
+        "vision": 0.972347,
+        "wetness": 0.221317
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.476123,
+        "from": "smoke_watch",
+        "hazard": 0.236694,
+        "id": "smoke_watch->cairn_ridge",
+        "infrastructure_bonus": 0.129478,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_07_trader_language_marker_storage_yard_tool_cache",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_001_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_001_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_07_trader_language_marker_storage_yard_tool_cache",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_001_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_001_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "cairn_ridge",
+    "tick": 27
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.467767,
+      "cold": 0.317057,
+      "fatigue": 0.348547,
+      "pain": 0.004428,
+      "trust_orientation": 0.614,
+      "wetness": 0.226557
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 28,
+      "x": 3.5,
+      "yaw": 2.88992,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.709176,
+      "pain": 0.047248,
+      "scent": 0.294914,
+      "sound": 0.612707,
+      "thermal": 0.539305,
+      "vibration": 0.844269,
+      "vision": 0.896695,
+      "wetness": 0.132007
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.709176,
+        "pain": 0.047248,
+        "scent": 0.294914,
+        "sound": 0.612707,
+        "thermal": 0.539305,
+        "vibration": 0.844269,
+        "vision": 0.896695,
+        "wetness": 0.132007
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_00_trader_language_marker_loom_room_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_045 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_045"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_00_trader_language_marker_loom_room_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_045 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_045"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "roof_ring",
+    "tick": 28
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.472092,
+      "cold": 0.343128,
+      "fatigue": 0.357703,
+      "pain": 0.004007,
+      "trust_orientation": 0.616,
+      "wetness": 0.232577
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 29,
+      "x": 7.8,
+      "yaw": 3.338774,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.844716,
+      "pain": 0.183114,
+      "scent": 0.250149,
+      "sound": 0.481051,
+      "thermal": 0.456601,
+      "vibration": 0.802689,
+      "vision": 0.757202,
+      "wetness": 0.236249
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.844716,
+        "pain": 0.183114,
+        "scent": 0.250149,
+        "sound": 0.481051,
+        "thermal": 0.456601,
+        "vibration": 0.802689,
+        "vision": 0.757202,
+        "wetness": 0.236249
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_00_teacher_maintenance_debt_spring_hollow_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_013_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_013_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_00_teacher_maintenance_debt_spring_hollow_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_013_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_013_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "drum_court",
+    "tick": 29
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.476865,
+      "cold": 0.349028,
+      "fatigue": 0.367788,
+      "pain": 0.003623,
+      "trust_orientation": 0.618,
+      "wetness": 0.226713
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 30,
+      "x": 3.5,
+      "yaw": 3.937118,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.890145,
+      "pain": 0.288918,
+      "scent": 0.14677,
+      "sound": 0.405666,
+      "thermal": 0.556843,
+      "vibration": 0.774029,
+      "vision": 0.658372,
+      "wetness": 0.306287
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.890145,
+        "pain": 0.288918,
+        "scent": 0.14677,
+        "sound": 0.405666,
+        "thermal": 0.556843,
+        "vibration": 0.774029,
+        "vision": 0.658372,
+        "wetness": 0.306287
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_03_scout_maintenance_debt_smoke_watch_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_019_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_019_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_03_scout_maintenance_debt_smoke_watch_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_019_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_019_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "roof_ring",
+    "tick": 30
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "tool_bend:spring_pool supports collect_water,wash_vessel"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      },
+      {
+        "attention": 0.890196,
+        "energy": 0.467269,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:05",
+        "pain": 0.04,
+        "place": "grain_shade",
+        "role": "teacher",
+        "stress": 0.523308,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "tool_bend",
+    "body_state": {
+      "breath_rate": 0.480412,
+      "cold": 0.347584,
+      "fatigue": 0.375426,
+      "pain": 0.003245,
+      "trust_orientation": 0.62,
+      "wetness": 0.236305
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "tool_bend",
+      "tick": 31,
+      "x": 1.6,
+      "yaw": 4.256385,
+      "z": -2.2
+    },
+    "frequency_field": {
+      "affect": 0.86271,
+      "pain": 0.339634,
+      "scent": 0.207499,
+      "sound": 0.367854,
+      "thermal": 0.673746,
+      "vibration": 0.533035,
+      "vision": 0.593076,
+      "wetness": 0.46021
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "collect_water",
+          "wash_vessel"
+        ],
+        "heat": 0.156582,
+        "id": "spring_pool",
+        "integrity": 0.764,
+        "label": "spring pool",
+        "place": "tool_bend",
+        "stock": 1.0,
+        "wetness": 1.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.34,
+      "flower_phase": 0.523599,
+      "hazard": 0.226037,
+      "id": "tool_bend",
+      "label": "tool bend",
+      "scent": 0.24,
+      "sound": 0.5,
+      "terrain": "stone",
+      "wetness": 0.28,
+      "x": 1.6,
+      "z": -2.2
+    },
+    "route": {
+      "cost": 0.591194,
+      "from": "archive_knoll",
+      "hazard": 0.07769,
+      "id": "archive_knoll->tool_bend",
+      "infrastructure_bonus": 0.012834,
+      "kind": "covered way",
+      "to": "tool_bend"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        },
+        {
+          "attention": 0.890196,
+          "energy": 0.467269,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:05",
+          "pain": 0.04,
+          "place": "grain_shade",
+          "role": "teacher",
+          "stress": 0.523308,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.86271,
+        "pain": 0.339634,
+        "scent": 0.207499,
+        "sound": 0.367854,
+        "thermal": 0.673746,
+        "vibration": 0.533035,
+        "vision": 0.593076,
+        "wetness": 0.46021
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "collect_water",
+            "wash_vessel"
+          ],
+          "heat": 0.156582,
+          "id": "spring_pool",
+          "integrity": 0.764,
+          "label": "spring pool",
+          "place": "tool_bend",
+          "stock": 1.0,
+          "wetness": 1.0
+        }
+      ],
+      "place": {
+        "cold": 0.34,
+        "flower_phase": 0.523599,
+        "hazard": 0.226037,
+        "id": "tool_bend",
+        "label": "tool bend",
+        "scent": 0.24,
+        "sound": 0.5,
+        "terrain": "stone",
+        "wetness": 0.28,
+        "x": 1.6,
+        "z": -2.2
+      },
+      "route": {
+        "cost": 0.591194,
+        "from": "archive_knoll",
+        "hazard": 0.07769,
+        "id": "archive_knoll->tool_bend",
+        "infrastructure_bonus": 0.012834,
+        "kind": "covered way",
+        "to": "tool_bend"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_030"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_030"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "tool_bend",
+    "tick": 31
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.485166,
+      "cold": 0.352771,
+      "fatigue": 0.385145,
+      "pain": 0.002487,
+      "trust_orientation": 0.622,
+      "wetness": 0.22977
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "archive_knoll",
+      "tick": 32,
+      "x": 3.5,
+      "yaw": 4.981081,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.833854,
+      "pain": 0.341206,
+      "scent": 0.226694,
+      "sound": 0.29316,
+      "thermal": 0.69782,
+      "vibration": 0.626083,
+      "vision": 0.63651,
+      "wetness": 0.436468
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.792291,
+      "from": "tool_bend",
+      "hazard": 0.030261,
+      "id": "tool_bend->archive_knoll",
+      "infrastructure_bonus": 0.276327,
+      "kind": "walk",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.833854,
+        "pain": 0.341206,
+        "scent": 0.226694,
+        "sound": 0.29316,
+        "thermal": 0.69782,
+        "vibration": 0.626083,
+        "vision": 0.63651,
+        "wetness": 0.436468
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.792291,
+        "from": "tool_bend",
+        "hazard": 0.030261,
+        "id": "tool_bend->archive_knoll",
+        "infrastructure_bonus": 0.276327,
+        "kind": "walk",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_010_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_010_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "roof_ring",
+    "tick": 32
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.489491,
+      "cold": 0.373128,
+      "fatigue": 0.394301,
+      "pain": 0.002066,
+      "trust_orientation": 0.624,
+      "wetness": 0.235211
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "cairn_ridge",
+      "tick": 33,
+      "x": 7.8,
+      "yaw": 5.433169,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.708741,
+      "pain": 0.281604,
+      "scent": 0.435803,
+      "sound": 0.248308,
+      "thermal": 0.764886,
+      "vibration": 0.487416,
+      "vision": 0.725605,
+      "wetness": 0.510048
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.708741,
+        "pain": 0.281604,
+        "scent": 0.435803,
+        "sound": 0.248308,
+        "thermal": 0.764886,
+        "vibration": 0.487416,
+        "vision": 0.725605,
+        "wetness": 0.510048
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_03_farmer_language_marker_drum_court_loom_frame",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_016_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_016_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_03_farmer_language_marker_drum_court_loom_frame",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_016_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_016_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "cairn_ridge",
+    "tick": 33
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.494264,
+      "cold": 0.374228,
+      "fatigue": 0.404386,
+      "pain": 0.001682,
+      "trust_orientation": 0.626,
+      "wetness": 0.228873
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "archive_knoll",
+      "tick": 34,
+      "x": 3.5,
+      "yaw": 6.031513,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.591796,
+      "pain": 0.164648,
+      "scent": 0.457289,
+      "sound": 0.370151,
+      "thermal": 0.835101,
+      "vibration": 0.536576,
+      "vision": 0.842895,
+      "wetness": 0.41047
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.591796,
+        "pain": 0.164648,
+        "scent": 0.457289,
+        "sound": 0.370151,
+        "thermal": 0.835101,
+        "vibration": 0.536576,
+        "vision": 0.842895,
+        "wetness": 0.41047
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_06_trader_language_marker_archive_knoll_loom_frame",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_015 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_015"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_06_trader_language_marker_archive_knoll_loom_frame",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_015 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_015"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "nursery_nest",
+    "tick": 34
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.498589,
+      "cold": 0.391152,
+      "fatigue": 0.413542,
+      "pain": 0.001261,
+      "trust_orientation": 0.628,
+      "wetness": 0.234476
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 35,
+      "x": 7.8,
+      "yaw": 0.197181,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.537476,
+      "pain": 0.051079,
+      "scent": 0.562163,
+      "sound": 0.453471,
+      "thermal": 0.73076,
+      "vibration": 0.570734,
+      "vision": 0.948052,
+      "wetness": 0.332828
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.537476,
+        "pain": 0.051079,
+        "scent": 0.562163,
+        "sound": 0.453471,
+        "thermal": 0.73076,
+        "vibration": 0.570734,
+        "vision": 0.948052,
+        "wetness": 0.332828
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_05_guard_signal_visibility_loom_room_tool_cache",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_008_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_008_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_05_guard_signal_visibility_loom_room_tool_cache",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_008_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_008_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "archive_knoll",
+    "tick": 35
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.503362,
+      "cold": 0.389368,
+      "fatigue": 0.423627,
+      "pain": 0.000877,
+      "trust_orientation": 0.63,
+      "wetness": 0.22827
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 36,
+      "x": 3.5,
+      "yaw": 0.795525,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.578006,
+      "pain": 0.00058,
+      "scent": 0.413252,
+      "sound": 0.596063,
+      "thermal": 0.647436,
+      "vibration": 0.751229,
+      "vision": 0.96493,
+      "wetness": 0.17482
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.578006,
+        "pain": 0.00058,
+        "scent": 0.413252,
+        "sound": 0.596063,
+        "thermal": 0.647436,
+        "vibration": 0.751229,
+        "vision": 0.96493,
+        "wetness": 0.17482
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_03_builder_language_marker_cairn_ridge_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_014_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_014_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_03_builder_language_marker_cairn_ridge_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_014_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_014_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "loom_room",
+    "tick": 36
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.507687,
+      "cold": 0.403869,
+      "fatigue": 0.432783,
+      "pain": 0.000456,
+      "trust_orientation": 0.632,
+      "wetness": 0.233981
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 37,
+      "x": 7.8,
+      "yaw": 1.244379,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.711187,
+      "pain": 0.064364,
+      "scent": 0.347612,
+      "sound": 0.564859,
+      "thermal": 0.480225,
+      "vibration": 0.805961,
+      "vision": 0.878832,
+      "wetness": 0.173994
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.711187,
+        "pain": 0.064364,
+        "scent": 0.347612,
+        "sound": 0.564859,
+        "thermal": 0.480225,
+        "vibration": 0.805961,
+        "vision": 0.878832,
+        "wetness": 0.173994
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_000"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_000"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "cairn_ridge",
+    "tick": 37
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.51246,
+      "cold": 0.40005,
+      "fatigue": 0.442868,
+      "pain": 7.2e-05,
+      "trust_orientation": 0.634,
+      "wetness": 0.227864
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 38,
+      "x": 3.5,
+      "yaw": 1.842723,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.81445,
+      "pain": 0.173588,
+      "scent": 0.174737,
+      "sound": 0.526843,
+      "thermal": 0.49845,
+      "vibration": 0.854552,
+      "vision": 0.758445,
+      "wetness": 0.191295
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.81445,
+        "pain": 0.173588,
+        "scent": 0.174737,
+        "sound": 0.526843,
+        "thermal": 0.49845,
+        "vibration": 0.854552,
+        "vision": 0.758445,
+        "wetness": 0.191295
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_005_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_005_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "loom_room",
+    "tick": 38
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.516785,
+      "cold": 0.412842,
+      "fatigue": 0.452024,
+      "pain": 0.0,
+      "trust_orientation": 0.636,
+      "wetness": 0.233648
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "cairn_ridge",
+      "tick": 39,
+      "x": 7.8,
+      "yaw": 2.291576,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.863112,
+      "pain": 0.274823,
+      "scent": 0.224574,
+      "sound": 0.381184,
+      "thermal": 0.502655,
+      "vibration": 0.738021,
+      "vision": 0.673032,
+      "wetness": 0.33046
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.863112,
+        "pain": 0.274823,
+        "scent": 0.224574,
+        "sound": 0.381184,
+        "thermal": 0.502655,
+        "vibration": 0.738021,
+        "vision": 0.673032,
+        "wetness": 0.33046
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "spring_hollow",
+    "tick": 39
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.521558,
+      "cold": 0.407587,
+      "fatigue": 0.462109,
+      "pain": 0.0,
+      "trust_orientation": 0.638,
+      "wetness": 0.227591
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "archive_knoll",
+      "tick": 40,
+      "x": 3.5,
+      "yaw": 2.88992,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.86237,
+      "pain": 0.304009,
+      "scent": 0.152241,
+      "sound": 0.381059,
+      "thermal": 0.577837,
+      "vibration": 0.750195,
+      "vision": 0.645532,
+      "wetness": 0.332105
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.86237,
+        "pain": 0.304009,
+        "scent": 0.152241,
+        "sound": 0.381059,
+        "thermal": 0.577837,
+        "vibration": 0.750195,
+        "vision": 0.645532,
+        "wetness": 0.332105
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "loom_room",
+    "tick": 40
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.525883,
+      "cold": 0.419173,
+      "fatigue": 0.471265,
+      "pain": 0.0,
+      "trust_orientation": 0.64,
+      "wetness": 0.233425
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "cairn_ridge",
+      "tick": 41,
+      "x": 7.8,
+      "yaw": 3.338774,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.800842,
+      "pain": 0.338547,
+      "scent": 0.314637,
+      "sound": 0.249575,
+      "thermal": 0.664757,
+      "vibration": 0.569754,
+      "vision": 0.645155,
+      "wetness": 0.481986
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.800842,
+        "pain": 0.338547,
+        "scent": 0.314637,
+        "sound": 0.249575,
+        "thermal": 0.664757,
+        "vibration": 0.569754,
+        "vision": 0.645155,
+        "wetness": 0.481986
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "archive_knoll",
+    "tick": 41
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.530656,
+      "cold": 0.412905,
+      "fatigue": 0.48135,
+      "pain": 0.0,
+      "trust_orientation": 0.642,
+      "wetness": 0.227408
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "archive_knoll",
+      "tick": 42,
+      "x": 3.5,
+      "yaw": 3.937118,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.681323,
+      "pain": 0.279044,
+      "scent": 0.358118,
+      "sound": 0.288461,
+      "thermal": 0.808657,
+      "vibration": 0.536184,
+      "vision": 0.72154,
+      "wetness": 0.47023
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.681323,
+        "pain": 0.279044,
+        "scent": 0.358118,
+        "sound": 0.288461,
+        "thermal": 0.808657,
+        "vibration": 0.536184,
+        "vision": 0.72154,
+        "wetness": 0.47023
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_03_builder_language_marker_cairn_ridge_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_014_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_014_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_03_builder_language_marker_cairn_ridge_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_014_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_014_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "herb_slope",
+    "tick": 42
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.534981,
+      "cold": 0.42364,
+      "fatigue": 0.490506,
+      "pain": 0.0,
+      "trust_orientation": 0.644,
+      "wetness": 0.233275
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 43,
+      "x": 7.8,
+      "yaw": 4.385971,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.565098,
+      "pain": 0.161974,
+      "scent": 0.537342,
+      "sound": 0.331949,
+      "thermal": 0.791962,
+      "vibration": 0.487818,
+      "vision": 0.849858,
+      "wetness": 0.448861
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.565098,
+        "pain": 0.161974,
+        "scent": 0.537342,
+        "sound": 0.331949,
+        "thermal": 0.791962,
+        "vibration": 0.487818,
+        "vision": 0.849858,
+        "wetness": 0.448861
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_000"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_000"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "storage_yard",
+    "tick": 43
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.539754,
+      "cold": 0.416658,
+      "fatigue": 0.500591,
+      "pain": 0.0,
+      "trust_orientation": 0.646,
+      "wetness": 0.227286
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 44,
+      "x": 3.5,
+      "yaw": 4.984315,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.511324,
+      "pain": 0.043317,
+      "scent": 0.481042,
+      "sound": 0.502676,
+      "thermal": 0.765642,
+      "vibration": 0.629224,
+      "vision": 0.947755,
+      "wetness": 0.283198
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.511324,
+        "pain": 0.043317,
+        "scent": 0.481042,
+        "sound": 0.502676,
+        "thermal": 0.765642,
+        "vibration": 0.629224,
+        "vision": 0.947755,
+        "wetness": 0.283198
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_005_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_005_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "grain_shade",
+    "tick": 44
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.544079,
+      "cold": 0.426793,
+      "fatigue": 0.509747,
+      "pain": 0.0,
+      "trust_orientation": 0.648,
+      "wetness": 0.233175
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 45,
+      "x": 7.8,
+      "yaw": 5.433169,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.572085,
+      "pain": 0.002271,
+      "scent": 0.469196,
+      "sound": 0.567596,
+      "thermal": 0.578011,
+      "vibration": 0.726622,
+      "vision": 0.962249,
+      "wetness": 0.198145
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.572085,
+        "pain": 0.002271,
+        "scent": 0.469196,
+        "sound": 0.567596,
+        "thermal": 0.578011,
+        "vibration": 0.726622,
+        "vision": 0.962249,
+        "wetness": 0.198145
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_03_pattern_keeper_maintenance_debt_grain_shade_grain_store",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_011_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_011_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_03_pattern_keeper_maintenance_debt_grain_shade_grain_store",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_011_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_011_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": true,
+    "target_place": "archive_knoll",
+    "tick": 45
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.548852,
+      "cold": 0.419306,
+      "fatigue": 0.519832,
+      "pain": 0.0,
+      "trust_orientation": 0.65,
+      "wetness": 0.227203
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 46,
+      "x": 3.5,
+      "yaw": 6.031513,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.678403,
+      "pain": 0.058729,
+      "scent": 0.275117,
+      "sound": 0.606962,
+      "thermal": 0.52694,
+      "vibration": 0.852845,
+      "vision": 0.879557,
+      "wetness": 0.133374
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.678403,
+        "pain": 0.058729,
+        "scent": 0.275117,
+        "sound": 0.606962,
+        "thermal": 0.52694,
+        "vibration": 0.852845,
+        "vision": 0.879557,
+        "wetness": 0.133374
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_06_pattern_keeper_signal_visibility_archive_knoll_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_105 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_105"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_06_pattern_keeper_signal_visibility_archive_knoll_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_105 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_105"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "grain_shade",
+    "tick": 46
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.553177,
+      "cold": 0.429017,
+      "fatigue": 0.528988,
+      "pain": 0.0,
+      "trust_orientation": 0.652,
+      "wetness": 0.233106
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "cairn_ridge",
+      "tick": 47,
+      "x": 7.8,
+      "yaw": 0.197181,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.777125,
+      "pain": 0.158115,
+      "scent": 0.263199,
+      "sound": 0.500533,
+      "thermal": 0.454222,
+      "vibration": 0.809895,
+      "vision": 0.77903,
+      "wetness": 0.219653
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.777125,
+        "pain": 0.158115,
+        "scent": 0.263199,
+        "sound": 0.500533,
+        "thermal": 0.454222,
+        "vibration": 0.809895,
+        "vision": 0.77903,
+        "wetness": 0.219653
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_05_trader_language_marker_roof_ring_herb_garden",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_003_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_003_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_05_trader_language_marker_roof_ring_herb_garden",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_003_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_003_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "roof_ring",
+    "tick": 47
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.55795,
+      "cold": 0.421174,
+      "fatigue": 0.539073,
+      "pain": 0.0,
+      "trust_orientation": 0.654,
+      "wetness": 0.227147
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "archive_knoll",
+      "tick": 48,
+      "x": 3.5,
+      "yaw": 0.795525,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.803444,
+      "pain": 0.199369,
+      "scent": 0.161798,
+      "sound": 0.503055,
+      "thermal": 0.50381,
+      "vibration": 0.843742,
+      "vision": 0.733802,
+      "wetness": 0.212222
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.803444,
+        "pain": 0.199369,
+        "scent": 0.161798,
+        "sound": 0.503055,
+        "thermal": 0.50381,
+        "vibration": 0.843742,
+        "vision": 0.733802,
+        "wetness": 0.212222
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_04_guard_signal_visibility_drum_court_loom_frame",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_009_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_009_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_04_guard_signal_visibility_drum_court_loom_frame",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_009_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_009_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "grain_shade",
+    "tick": 48
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.562275,
+      "cold": 0.430586,
+      "fatigue": 0.548229,
+      "pain": 0.0,
+      "trust_orientation": 0.656,
+      "wetness": 0.233061
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "cairn_ridge",
+      "tick": 49,
+      "x": 7.8,
+      "yaw": 1.244379,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.835819,
+      "pain": 0.309964,
+      "scent": 0.234592,
+      "sound": 0.332308,
+      "thermal": 0.543658,
+      "vibration": 0.691252,
+      "vision": 0.646959,
+      "wetness": 0.381552
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.835819,
+        "pain": 0.309964,
+        "scent": 0.234592,
+        "sound": 0.332308,
+        "thermal": 0.543658,
+        "vibration": 0.691252,
+        "vision": 0.646959,
+        "wetness": 0.381552
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_090"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_090"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "storage_yard",
+    "tick": 49
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.567048,
+      "cold": 0.422492,
+      "fatigue": 0.558314,
+      "pain": 0.0,
+      "trust_orientation": 0.658,
+      "wetness": 0.22711
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "archive_knoll",
+      "tick": 50,
+      "x": 3.5,
+      "yaw": 1.842723,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.773797,
+      "pain": 0.338336,
+      "scent": 0.236822,
+      "sound": 0.288605,
+      "thermal": 0.709175,
+      "vibration": 0.617689,
+      "vision": 0.640249,
+      "wetness": 0.443263
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.773797,
+        "pain": 0.338336,
+        "scent": 0.236822,
+        "sound": 0.288605,
+        "thermal": 0.709175,
+        "vibration": 0.617689,
+        "vision": 0.640249,
+        "wetness": 0.443263
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_000_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_000_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "drum_court",
+    "tick": 50
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.571373,
+      "cold": 0.431693,
+      "fatigue": 0.56747,
+      "pain": 0.0,
+      "trust_orientation": 0.66,
+      "wetness": 0.23303
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 51,
+      "x": 7.8,
+      "yaw": 2.291576,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.654182,
+      "pain": 0.277839,
+      "scent": 0.43883,
+      "sound": 0.249428,
+      "thermal": 0.766616,
+      "vibration": 0.486302,
+      "vision": 0.728388,
+      "wetness": 0.509598
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.654182,
+        "pain": 0.277839,
+        "scent": 0.43883,
+        "sound": 0.249428,
+        "thermal": 0.766616,
+        "vibration": 0.486302,
+        "vision": 0.728388,
+        "wetness": 0.509598
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_05_healer_maintenance_debt_spring_hollow_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_006_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_006_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_05_healer_maintenance_debt_spring_hollow_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_006_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_006_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "smoke_watch",
+    "tick": 51
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.576146,
+      "cold": 0.423422,
+      "fatigue": 0.577555,
+      "pain": 0.0,
+      "trust_orientation": 0.662,
+      "wetness": 0.227085
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 52,
+      "x": 3.5,
+      "yaw": 2.88992,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.532283,
+      "pain": 0.151941,
+      "scent": 0.463336,
+      "sound": 0.38069,
+      "thermal": 0.832985,
+      "vibration": 0.541153,
+      "vision": 0.854023,
+      "wetness": 0.401269
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.532283,
+        "pain": 0.151941,
+        "scent": 0.463336,
+        "sound": 0.38069,
+        "thermal": 0.832985,
+        "vibration": 0.541153,
+        "vision": 0.854023,
+        "wetness": 0.401269
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_02_pattern_keeper_maintenance_debt_smoke_watch_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_075 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_075"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_02_pattern_keeper_maintenance_debt_smoke_watch_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_075 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_075"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "central_hearth",
+    "tick": 52
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.580471,
+      "cold": 0.432474,
+      "fatigue": 0.586711,
+      "pain": 0.0,
+      "trust_orientation": 0.664,
+      "wetness": 0.23301
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 53,
+      "x": 7.8,
+      "yaw": 3.338774,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.487898,
+      "pain": 0.026947,
+      "scent": 0.552221,
+      "sound": 0.48785,
+      "thermal": 0.699547,
+      "vibration": 0.605573,
+      "vision": 0.964449,
+      "wetness": 0.296251
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.487898,
+        "pain": 0.026947,
+        "scent": 0.552221,
+        "sound": 0.48785,
+        "thermal": 0.699547,
+        "vibration": 0.605573,
+        "vision": 0.964449,
+        "wetness": 0.296251
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_07_farmer_maintenance_debt_storage_yard_grain_store",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_018_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_018_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_07_farmer_maintenance_debt_storage_yard_grain_store",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_018_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_018_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "storage_yard",
+    "tick": 53
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.585244,
+      "cold": 0.424078,
+      "fatigue": 0.596796,
+      "pain": 0.0,
+      "trust_orientation": 0.666,
+      "wetness": 0.227068
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 54,
+      "x": 3.5,
+      "yaw": 3.937118,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.540917,
+      "pain": 0.001281,
+      "scent": 0.39616,
+      "sound": 0.604719,
+      "thermal": 0.627623,
+      "vibration": 0.769789,
+      "vision": 0.95927,
+      "wetness": 0.162384
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.540917,
+        "pain": 0.001281,
+        "scent": 0.39616,
+        "sound": 0.604719,
+        "thermal": 0.627623,
+        "vibration": 0.769789,
+        "vision": 0.95927,
+        "wetness": 0.162384
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_04_scout_maintenance_debt_central_hearth_grain_store",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_004_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_004_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_04_scout_maintenance_debt_central_hearth_grain_store",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_004_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_004_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "central_hearth",
+    "tick": 54
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.589569,
+      "cold": 0.433026,
+      "fatigue": 0.605952,
+      "pain": 0.0,
+      "trust_orientation": 0.668,
+      "wetness": 0.232996
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "cairn_ridge",
+      "tick": 55,
+      "x": 7.8,
+      "yaw": 4.385971,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.637402,
+      "pain": 0.047534,
+      "scent": 0.369462,
+      "sound": 0.571972,
+      "thermal": 0.493355,
+      "vibration": 0.797129,
+      "vision": 0.898265,
+      "wetness": 0.171713
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.637402,
+        "pain": 0.047534,
+        "scent": 0.369462,
+        "sound": 0.571972,
+        "thermal": 0.493355,
+        "vibration": 0.797129,
+        "vision": 0.898265,
+        "wetness": 0.171713
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_060"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_060"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "loom_room",
+    "tick": 55
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.594342,
+      "cold": 0.424542,
+      "fatigue": 0.616037,
+      "pain": 0.0,
+      "trust_orientation": 0.67,
+      "wetness": 0.227057
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "archive_knoll",
+      "tick": 56,
+      "x": 3.5,
+      "yaw": 4.984315,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.67567,
+      "pain": 0.079588,
+      "scent": 0.250438,
+      "sound": 0.596257,
+      "thermal": 0.513902,
+      "vibration": 0.860632,
+      "vision": 0.855814,
+      "wetness": 0.138622
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.67567,
+        "pain": 0.079588,
+        "scent": 0.250438,
+        "sound": 0.596257,
+        "thermal": 0.513902,
+        "vibration": 0.860632,
+        "vision": 0.855814,
+        "wetness": 0.138622
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "central_hearth",
+    "tick": 56
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.598667,
+      "cold": 0.433415,
+      "fatigue": 0.625193,
+      "pain": 0.0,
+      "trust_orientation": 0.672,
+      "wetness": 0.232987
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "cairn_ridge",
+      "tick": 57,
+      "x": 7.8,
+      "yaw": 5.433169,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.783856,
+      "pain": 0.209225,
+      "scent": 0.236932,
+      "sound": 0.453857,
+      "thermal": 0.464019,
+      "vibration": 0.789275,
+      "vision": 0.730086,
+      "wetness": 0.260521
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.783856,
+        "pain": 0.209225,
+        "scent": 0.236932,
+        "sound": 0.453857,
+        "thermal": 0.464019,
+        "vibration": 0.789275,
+        "vision": 0.730086,
+        "wetness": 0.260521
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "smoke_watch",
+    "tick": 57
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.60344,
+      "cold": 0.424869,
+      "fatigue": 0.635278,
+      "pain": 0.0,
+      "trust_orientation": 0.674,
+      "wetness": 0.227049
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "archive_knoll",
+      "tick": 58,
+      "x": 3.5,
+      "yaw": 6.031513,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.809761,
+      "pain": 0.310846,
+      "scent": 0.155932,
+      "sound": 0.370509,
+      "thermal": 0.58794,
+      "vibration": 0.739075,
+      "vision": 0.640929,
+      "wetness": 0.343471
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.809761,
+        "pain": 0.310846,
+        "scent": 0.155932,
+        "sound": 0.370509,
+        "thermal": 0.58794,
+        "vibration": 0.739075,
+        "vision": 0.640929,
+        "wetness": 0.343471
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_02_pattern_keeper_maintenance_debt_smoke_watch_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_075 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_075"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_02_pattern_keeper_maintenance_debt_smoke_watch_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_075 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_075"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "cairn_ridge",
+    "tick": 58
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.607765,
+      "cold": 0.43369,
+      "fatigue": 0.644434,
+      "pain": 0.0,
+      "trust_orientation": 0.676,
+      "wetness": 0.23298
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 59,
+      "x": 7.8,
+      "yaw": 0.197181,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.747019,
+      "pain": 0.33811,
+      "scent": 0.317414,
+      "sound": 0.248448,
+      "thermal": 0.667789,
+      "vibration": 0.566968,
+      "vision": 0.646262,
+      "wetness": 0.483727
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.747019,
+        "pain": 0.33811,
+        "scent": 0.317414,
+        "sound": 0.248448,
+        "thermal": 0.667789,
+        "vibration": 0.566968,
+        "vision": 0.646262,
+        "wetness": 0.483727
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_07_farmer_maintenance_debt_storage_yard_grain_store",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_018_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_018_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_07_farmer_maintenance_debt_storage_yard_grain_store",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_018_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_018_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "nursery_nest",
+    "tick": 59
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.612538,
+      "cold": 0.4251,
+      "fatigue": 0.654519,
+      "pain": 0.0,
+      "trust_orientation": 0.678,
+      "wetness": 0.227044
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 60,
+      "x": 3.5,
+      "yaw": 0.795525,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.618292,
+      "pain": 0.269875,
+      "scent": 0.369262,
+      "sound": 0.292991,
+      "thermal": 0.814748,
+      "vibration": 0.532419,
+      "vision": 0.732057,
+      "wetness": 0.468164
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.618292,
+        "pain": 0.269875,
+        "scent": 0.369262,
+        "sound": 0.292991,
+        "thermal": 0.814748,
+        "vibration": 0.532419,
+        "vision": 0.732057,
+        "wetness": 0.468164
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_04_scout_maintenance_debt_central_hearth_grain_store",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_004_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_004_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_04_scout_maintenance_debt_central_hearth_grain_store",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_004_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_004_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "ash_edge",
+    "tick": 60
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.616863,
+      "cold": 0.433884,
+      "fatigue": 0.663675,
+      "pain": 0.0,
+      "trust_orientation": 0.68,
+      "wetness": 0.232976
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 61,
+      "x": 7.8,
+      "yaw": 1.244379,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.490241,
+      "pain": 0.125371,
+      "scent": 0.553884,
+      "sound": 0.366733,
+      "thermal": 0.782177,
+      "vibration": 0.505218,
+      "vision": 0.884298,
+      "wetness": 0.417735
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.490241,
+        "pain": 0.125371,
+        "scent": 0.553884,
+        "sound": 0.366733,
+        "thermal": 0.782177,
+        "vibration": 0.505218,
+        "vision": 0.884298,
+        "wetness": 0.417735
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_060"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_060"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "smoke_watch",
+    "tick": 61
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.621636,
+      "cold": 0.425263,
+      "fatigue": 0.67376,
+      "pain": 0.0,
+      "trust_orientation": 0.682,
+      "wetness": 0.22704
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 62,
+      "x": 3.5,
+      "yaw": 1.842723,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.461084,
+      "pain": 0.030812,
+      "scent": 0.475467,
+      "sound": 0.521271,
+      "thermal": 0.748597,
+      "vibration": 0.648201,
+      "vision": 0.95649,
+      "wetness": 0.263371
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.461084,
+        "pain": 0.030812,
+        "scent": 0.475467,
+        "sound": 0.521271,
+        "thermal": 0.748597,
+        "vibration": 0.648201,
+        "vision": 0.95649,
+        "wetness": 0.263371
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_015_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_015_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "ash_edge",
+    "tick": 62
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.625961,
+      "cold": 0.434021,
+      "fatigue": 0.682916,
+      "pain": 0.0,
+      "trust_orientation": 0.684,
+      "wetness": 0.232973
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "cairn_ridge",
+      "tick": 63,
+      "x": 7.8,
+      "yaw": 2.291576,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.504191,
+      "pain": 8.7e-05,
+      "scent": 0.488581,
+      "sound": 0.558673,
+      "thermal": 0.599881,
+      "vibration": 0.706305,
+      "vision": 0.969269,
+      "wetness": 0.211354
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.504191,
+        "pain": 8.7e-05,
+        "scent": 0.488581,
+        "sound": 0.558673,
+        "thermal": 0.599881,
+        "vibration": 0.706305,
+        "vision": 0.969269,
+        "wetness": 0.211354
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_07_trader_language_marker_storage_yard_tool_cache",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_001_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_001_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_07_trader_language_marker_storage_yard_tool_cache",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_001_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_001_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "grain_shade",
+    "tick": 63
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.630734,
+      "cold": 0.425378,
+      "fatigue": 0.693001,
+      "pain": 0.0,
+      "trust_orientation": 0.686,
+      "wetness": 0.227038
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "archive_knoll",
+      "tick": 64,
+      "x": 3.5,
+      "yaw": 2.88992,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.533135,
+      "pain": 0.006417,
+      "scent": 0.372464,
+      "sound": 0.612615,
+      "thermal": 0.602909,
+      "vibration": 0.792159,
+      "vision": 0.948668,
+      "wetness": 0.149248
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.533135,
+        "pain": 0.006417,
+        "scent": 0.372464,
+        "sound": 0.612615,
+        "thermal": 0.602909,
+        "vibration": 0.792159,
+        "vision": 0.948668,
+        "wetness": 0.149248
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_00_trader_language_marker_loom_room_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_045 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_045"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_00_trader_language_marker_loom_room_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_045 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_045"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "ash_edge",
+    "tick": 64
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.635059,
+      "cold": 0.434118,
+      "fatigue": 0.702157,
+      "pain": 0.0,
+      "trust_orientation": 0.688,
+      "wetness": 0.232971
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "cairn_ridge",
+      "tick": 65,
+      "x": 7.8,
+      "yaw": 3.338774,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.659957,
+      "pain": 0.088265,
+      "scent": 0.320451,
+      "sound": 0.551559,
+      "thermal": 0.466895,
+      "vibration": 0.813288,
+      "vision": 0.851683,
+      "wetness": 0.181288
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.659957,
+        "pain": 0.088265,
+        "scent": 0.320451,
+        "sound": 0.551559,
+        "thermal": 0.466895,
+        "vibration": 0.813288,
+        "vision": 0.851683,
+        "wetness": 0.181288
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_00_teacher_maintenance_debt_spring_hollow_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_013_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_013_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_00_teacher_maintenance_debt_spring_hollow_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_013_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_013_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "nursery_nest",
+    "tick": 65
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.639832,
+      "cold": 0.425459,
+      "fatigue": 0.712242,
+      "pain": 0.0,
+      "trust_orientation": 0.69,
+      "wetness": 0.227036
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "archive_knoll",
+      "tick": 66,
+      "x": 3.5,
+      "yaw": 3.937118,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.75889,
+      "pain": 0.210746,
+      "scent": 0.157149,
+      "sound": 0.491949,
+      "thermal": 0.507452,
+      "vibration": 0.837762,
+      "vision": 0.72323,
+      "wetness": 0.222299
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.75889,
+        "pain": 0.210746,
+        "scent": 0.157149,
+        "sound": 0.491949,
+        "thermal": 0.507452,
+        "vibration": 0.837762,
+        "vision": 0.72323,
+        "wetness": 0.222299
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_03_scout_maintenance_debt_smoke_watch_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_019_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_019_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_03_scout_maintenance_debt_smoke_watch_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_019_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_019_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "archive_knoll",
+    "tick": 66
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.644157,
+      "cold": 0.434186,
+      "fatigue": 0.721398,
+      "pain": 0.0,
+      "trust_orientation": 0.692,
+      "wetness": 0.23297
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 67,
+      "x": 7.8,
+      "yaw": 4.385971,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.783965,
+      "pain": 0.311716,
+      "scent": 0.235686,
+      "sound": 0.329516,
+      "thermal": 0.546429,
+      "vibration": 0.68823,
+      "vision": 0.645819,
+      "wetness": 0.384586
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.783965,
+        "pain": 0.311716,
+        "scent": 0.235686,
+        "sound": 0.329516,
+        "thermal": 0.546429,
+        "vibration": 0.68823,
+        "vision": 0.645819,
+        "wetness": 0.384586
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_030"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_030"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "herb_slope",
+    "tick": 67
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.64893,
+      "cold": 0.425516,
+      "fatigue": 0.731483,
+      "pain": 0.0,
+      "trust_orientation": 0.694,
+      "wetness": 0.227035
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 68,
+      "x": 3.5,
+      "yaw": 4.984315,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.713228,
+      "pain": 0.33632,
+      "scent": 0.247317,
+      "sound": 0.284791,
+      "thermal": 0.720333,
+      "vibration": 0.607523,
+      "vision": 0.644732,
+      "wetness": 0.449397
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.713228,
+        "pain": 0.33632,
+        "scent": 0.247317,
+        "sound": 0.284791,
+        "thermal": 0.720333,
+        "vibration": 0.607523,
+        "vision": 0.644732,
+        "wetness": 0.449397
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_010_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_010_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "tool_bend",
+    "tick": 68
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.653255,
+      "cold": 0.434233,
+      "fatigue": 0.740639,
+      "pain": 0.0,
+      "trust_orientation": 0.696,
+      "wetness": 0.232969
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 69,
+      "x": 7.8,
+      "yaw": 5.433169,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.566123,
+      "pain": 0.246803,
+      "scent": 0.473329,
+      "sound": 0.266684,
+      "thermal": 0.783304,
+      "vibration": 0.477293,
+      "vision": 0.763115,
+      "wetness": 0.49997
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.566123,
+        "pain": 0.246803,
+        "scent": 0.473329,
+        "sound": 0.266684,
+        "thermal": 0.783304,
+        "vibration": 0.477293,
+        "vision": 0.763115,
+        "wetness": 0.49997
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_03_farmer_language_marker_drum_court_loom_frame",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_016_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_016_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_03_farmer_language_marker_drum_court_loom_frame",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_016_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_016_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "nursery_nest",
+    "tick": 69
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.658028,
+      "cold": 0.425556,
+      "fatigue": 0.750724,
+      "pain": 0.0,
+      "trust_orientation": 0.698,
+      "wetness": 0.227035
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 70,
+      "x": 3.5,
+      "yaw": 6.031513,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.468277,
+      "pain": 0.132099,
+      "scent": 0.472151,
+      "sound": 0.399637,
+      "thermal": 0.827494,
+      "vibration": 0.550763,
+      "vision": 0.872651,
+      "wetness": 0.384271
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.468277,
+        "pain": 0.132099,
+        "scent": 0.472151,
+        "sound": 0.399637,
+        "thermal": 0.827494,
+        "vibration": 0.550763,
+        "vision": 0.872651,
+        "wetness": 0.384271
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_06_trader_language_marker_archive_knoll_loom_frame",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_015 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_015"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_06_trader_language_marker_archive_knoll_loom_frame",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_015 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_015"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "tool_bend",
+    "tick": 70
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.662353,
+      "cold": 0.434267,
+      "fatigue": 0.75988,
+      "pain": 0.0,
+      "trust_orientation": 0.7,
+      "wetness": 0.232969
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "cairn_ridge",
+      "tick": 71,
+      "x": 7.8,
+      "yaw": 0.197181,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.434381,
+      "pain": 0.040235,
+      "scent": 0.559147,
+      "sound": 0.467491,
+      "thermal": 0.718882,
+      "vibration": 0.584245,
+      "vision": 0.955436,
+      "wetness": 0.318141
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.434381,
+        "pain": 0.040235,
+        "scent": 0.559147,
+        "sound": 0.467491,
+        "thermal": 0.718882,
+        "vibration": 0.584245,
+        "vision": 0.955436,
+        "wetness": 0.318141
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_05_guard_signal_visibility_loom_room_tool_cache",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_008_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_008_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_05_guard_signal_visibility_loom_room_tool_cache",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_008_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_008_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "central_hearth",
+    "tick": 71
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.667126,
+      "cold": 0.425584,
+      "fatigue": 0.769965,
+      "pain": 0.0,
+      "trust_orientation": 0.702,
+      "wetness": 0.227035
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "archive_knoll",
+      "tick": 72,
+      "x": 3.5,
+      "yaw": 0.795525,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.437536,
+      "pain": 0.017578,
+      "scent": 0.464969,
+      "sound": 0.543698,
+      "thermal": 0.724947,
+      "vibration": 0.673621,
+      "vision": 0.964495,
+      "wetness": 0.238622
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.437536,
+        "pain": 0.017578,
+        "scent": 0.464969,
+        "sound": 0.543698,
+        "thermal": 0.724947,
+        "vibration": 0.673621,
+        "vision": 0.964495,
+        "wetness": 0.238622
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "tool_bend",
+    "tick": 72
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.671451,
+      "cold": 0.434291,
+      "fatigue": 0.779121,
+      "pain": 0.0,
+      "trust_orientation": 0.704,
+      "wetness": 0.232969
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "cairn_ridge",
+      "tick": 73,
+      "x": 7.8,
+      "yaw": 1.244379,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.516211,
+      "pain": 0.009441,
+      "scent": 0.442093,
+      "sound": 0.575046,
+      "thermal": 0.550805,
+      "vibration": 0.750913,
+      "vision": 0.949062,
+      "wetness": 0.184701
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.516211,
+        "pain": 0.009441,
+        "scent": 0.442093,
+        "sound": 0.575046,
+        "thermal": 0.550805,
+        "vibration": 0.750913,
+        "vision": 0.949062,
+        "wetness": 0.184701
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "herb_slope",
+    "tick": 73
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.676224,
+      "cold": 0.425604,
+      "fatigue": 0.789206,
+      "pain": 0.0,
+      "trust_orientation": 0.706,
+      "wetness": 0.227035
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "archive_knoll",
+      "tick": 74,
+      "x": 3.5,
+      "yaw": 1.842723,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.635626,
+      "pain": 0.08964,
+      "scent": 0.239845,
+      "sound": 0.59032,
+      "thermal": 0.509206,
+      "vibration": 0.862876,
+      "vision": 0.844724,
+      "wetness": 0.142216
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.635626,
+        "pain": 0.08964,
+        "scent": 0.239845,
+        "sound": 0.59032,
+        "thermal": 0.509206,
+        "vibration": 0.862876,
+        "vision": 0.844724,
+        "wetness": 0.142216
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "storage_yard",
+    "tick": 74
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.680549,
+      "cold": 0.434307,
+      "fatigue": 0.798362,
+      "pain": 0.0,
+      "trust_orientation": 0.708,
+      "wetness": 0.232969
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 75,
+      "x": 7.8,
+      "yaw": 2.291576,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.734188,
+      "pain": 0.212263,
+      "scent": 0.235779,
+      "sound": 0.450838,
+      "thermal": 0.4651,
+      "vibration": 0.787574,
+      "vision": 0.727287,
+      "wetness": 0.263285
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.734188,
+        "pain": 0.212263,
+        "scent": 0.235779,
+        "sound": 0.450838,
+        "thermal": 0.4651,
+        "vibration": 0.787574,
+        "vision": 0.727287,
+        "wetness": 0.263285
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_03_farmer_language_marker_drum_court_loom_frame",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_016_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_016_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_03_farmer_language_marker_drum_court_loom_frame",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_016_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_016_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "drum_court",
+    "tick": 75
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.685322,
+      "cold": 0.425618,
+      "fatigue": 0.808447,
+      "pain": 0.0,
+      "trust_orientation": 0.71,
+      "wetness": 0.227035
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 76,
+      "x": 3.5,
+      "yaw": 2.88992,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.756365,
+      "pain": 0.317023,
+      "scent": 0.160368,
+      "sound": 0.360318,
+      "thermal": 0.598413,
+      "vibration": 0.727748,
+      "vision": 0.637068,
+      "wetness": 0.354643
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.756365,
+        "pain": 0.317023,
+        "scent": 0.160368,
+        "sound": 0.360318,
+        "thermal": 0.598413,
+        "vibration": 0.727748,
+        "vision": 0.637068,
+        "wetness": 0.354643
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_06_trader_language_marker_archive_knoll_loom_frame",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_015 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_015"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_06_trader_language_marker_archive_knoll_loom_frame",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_015 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_015"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "spring_hollow",
+    "tick": 76
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.689647,
+      "cold": 0.434319,
+      "fatigue": 0.817603,
+      "pain": 0.0,
+      "trust_orientation": 0.712,
+      "wetness": 0.232969
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 77,
+      "x": 7.8,
+      "yaw": 3.338774,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.66464,
+      "pain": 0.32864,
+      "scent": 0.352084,
+      "sound": 0.239281,
+      "thermal": 0.702347,
+      "vibration": 0.536194,
+      "vision": 0.663375,
+      "wetness": 0.500561
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.66464,
+        "pain": 0.32864,
+        "scent": 0.352084,
+        "sound": 0.239281,
+        "thermal": 0.702347,
+        "vibration": 0.536194,
+        "vision": 0.663375,
+        "wetness": 0.500561
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_05_guard_signal_visibility_loom_room_tool_cache",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_008_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_008_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_05_guard_signal_visibility_loom_room_tool_cache",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_008_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_008_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": true,
+    "target_place": "herb_slope",
+    "tick": 77
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.69442,
+      "cold": 0.425628,
+      "fatigue": 0.827688,
+      "pain": 0.0,
+      "trust_orientation": 0.714,
+      "wetness": 0.227035
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 78,
+      "x": 3.5,
+      "yaw": 3.937118,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.547004,
+      "pain": 0.252924,
+      "scent": 0.387923,
+      "sound": 0.302523,
+      "thermal": 0.823642,
+      "vibration": 0.527708,
+      "vision": 0.750974,
+      "wetness": 0.462759
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.547004,
+        "pain": 0.252924,
+        "scent": 0.387923,
+        "sound": 0.302523,
+        "thermal": 0.823642,
+        "vibration": 0.527708,
+        "vision": 0.750974,
+        "wetness": 0.462759
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_03_builder_language_marker_cairn_ridge_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_014_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_014_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_03_builder_language_marker_cairn_ridge_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_014_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_014_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "spring_hollow",
+    "tick": 78
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.698745,
+      "cold": 0.434328,
+      "fatigue": 0.836844,
+      "pain": 0.0,
+      "trust_orientation": 0.716,
+      "wetness": 0.232969
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "cairn_ridge",
+      "tick": 79,
+      "x": 7.8,
+      "yaw": 4.385971,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.452177,
+      "pain": 0.147281,
+      "scent": 0.544782,
+      "sound": 0.345434,
+      "thermal": 0.78901,
+      "vibration": 0.493874,
+      "vision": 0.863899,
+      "wetness": 0.437021
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.452177,
+        "pain": 0.147281,
+        "scent": 0.544782,
+        "sound": 0.345434,
+        "thermal": 0.78901,
+        "vibration": 0.493874,
+        "vision": 0.863899,
+        "wetness": 0.437021
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_000"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_000"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "ash_edge",
+    "tick": 79
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.703518,
+      "cold": 0.425636,
+      "fatigue": 0.846929,
+      "pain": 0.0,
+      "trust_orientation": 0.718,
+      "wetness": 0.227035
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "archive_knoll",
+      "tick": 80,
+      "x": 3.5,
+      "yaw": 4.984315,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.426372,
+      "pain": 0.107316,
+      "scent": 0.480264,
+      "sound": 0.425033,
+      "thermal": 0.817101,
+      "vibration": 0.566128,
+      "vision": 0.895136,
+      "wetness": 0.360669
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.426372,
+        "pain": 0.107316,
+        "scent": 0.480264,
+        "sound": 0.425033,
+        "thermal": 0.817101,
+        "vibration": 0.566128,
+        "vision": 0.895136,
+        "wetness": 0.360669
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_005_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_005_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "spring_hollow",
+    "tick": 80
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.707843,
+      "cold": 0.434334,
+      "fatigue": 0.856085,
+      "pain": 0.0,
+      "trust_orientation": 0.72,
+      "wetness": 0.232969
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "cairn_ridge",
+      "tick": 81,
+      "x": 7.8,
+      "yaw": 5.433169,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.41494,
+      "pain": 0.01339,
+      "scent": 0.539148,
+      "sound": 0.51221,
+      "thermal": 0.67249,
+      "vibration": 0.634305,
+      "vision": 0.972022,
+      "wetness": 0.269
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.41494,
+        "pain": 0.01339,
+        "scent": 0.539148,
+        "sound": 0.51221,
+        "thermal": 0.67249,
+        "vibration": 0.634305,
+        "vision": 0.972022,
+        "wetness": 0.269
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_03_pattern_keeper_maintenance_debt_grain_shade_grain_store",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_011_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_011_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_03_pattern_keeper_maintenance_debt_grain_shade_grain_store",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_011_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_011_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "drum_court",
+    "tick": 81
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "smoke_watch:grain_store supports grind_grain,seal_store"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      },
+      {
+        "attention": 0.890196,
+        "energy": 0.467269,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:05",
+        "pain": 0.04,
+        "place": "grain_shade",
+        "role": "teacher",
+        "stress": 0.523308,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "smoke_watch",
+    "body_state": {
+      "breath_rate": 0.712477,
+      "cold": 0.432041,
+      "fatigue": 0.866995,
+      "pain": 0.000877,
+      "trust_orientation": 0.718,
+      "wetness": 0.234235
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "smoke_watch",
+      "tick": 82,
+      "x": 5.2,
+      "yaw": 6.008276,
+      "z": 0.7
+    },
+    "frequency_field": {
+      "affect": 0.491485,
+      "pain": 0.010541,
+      "scent": 0.757389,
+      "sound": 0.562109,
+      "thermal": 0.575136,
+      "vibration": 0.786133,
+      "vision": 0.919051,
+      "wetness": 0.170905
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "grind_grain",
+          "seal_store"
+        ],
+        "heat": 0.306582,
+        "id": "grain_store",
+        "integrity": 0.4476,
+        "label": "grain store",
+        "place": "smoke_watch",
+        "stock": 0.2,
+        "wetness": 0.440834
+      }
+    ],
+    "place_render": {
+      "cold": 0.42,
+      "flower_phase": 5.235988,
+      "hazard": 0.183406,
+      "id": "smoke_watch",
+      "label": "smoke watch",
+      "scent": 0.82,
+      "sound": 0.34,
+      "terrain": "ridge",
+      "wetness": 0.24,
+      "x": 5.2,
+      "z": 0.7
+    },
+    "route": {
+      "cost": 0.772288,
+      "from": "cairn_ridge",
+      "hazard": 0.234634,
+      "id": "cairn_ridge->smoke_watch",
+      "infrastructure_bonus": 0.140922,
+      "kind": "drain",
+      "to": "smoke_watch"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        },
+        {
+          "attention": 0.890196,
+          "energy": 0.467269,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:05",
+          "pain": 0.04,
+          "place": "grain_shade",
+          "role": "teacher",
+          "stress": 0.523308,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.491485,
+        "pain": 0.010541,
+        "scent": 0.757389,
+        "sound": 0.562109,
+        "thermal": 0.575136,
+        "vibration": 0.786133,
+        "vision": 0.919051,
+        "wetness": 0.170905
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "grind_grain",
+            "seal_store"
+          ],
+          "heat": 0.306582,
+          "id": "grain_store",
+          "integrity": 0.4476,
+          "label": "grain store",
+          "place": "smoke_watch",
+          "stock": 0.2,
+          "wetness": 0.440834
+        }
+      ],
+      "place": {
+        "cold": 0.42,
+        "flower_phase": 5.235988,
+        "hazard": 0.183406,
+        "id": "smoke_watch",
+        "label": "smoke watch",
+        "scent": 0.82,
+        "sound": 0.34,
+        "terrain": "ridge",
+        "wetness": 0.24,
+        "x": 5.2,
+        "z": 0.7
+      },
+      "route": {
+        "cost": 0.772288,
+        "from": "cairn_ridge",
+        "hazard": 0.234634,
+        "id": "cairn_ridge->smoke_watch",
+        "infrastructure_bonus": 0.140922,
+        "kind": "drain",
+        "to": "smoke_watch"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_06_pattern_keeper_signal_visibility_archive_knoll_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_105 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_105"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_06_pattern_keeper_signal_visibility_archive_knoll_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_105 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_105"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "smoke_watch",
+    "tick": 82
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.715334,
+      "cold": 0.439714,
+      "fatigue": 0.874365,
+      "pain": 0.001771,
+      "trust_orientation": 0.716,
+      "wetness": 0.238873
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 83,
+      "x": 7.8,
+      "yaw": 6.23571,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.611852,
+      "pain": 0.092191,
+      "scent": 0.317646,
+      "sound": 0.54987,
+      "thermal": 0.46573,
+      "vibration": 0.652313,
+      "vision": 0.848667,
+      "wetness": 0.182357
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.476123,
+      "from": "smoke_watch",
+      "hazard": 0.236694,
+      "id": "smoke_watch->cairn_ridge",
+      "infrastructure_bonus": 0.129478,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.611852,
+        "pain": 0.092191,
+        "scent": 0.317646,
+        "sound": 0.54987,
+        "thermal": 0.46573,
+        "vibration": 0.652313,
+        "vision": 0.848667,
+        "wetness": 0.182357
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.476123,
+        "from": "smoke_watch",
+        "hazard": 0.236694,
+        "id": "smoke_watch->cairn_ridge",
+        "infrastructure_bonus": 0.129478,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_05_trader_language_marker_roof_ring_herb_garden",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_003_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_003_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_05_trader_language_marker_roof_ring_herb_garden",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_003_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_003_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "cairn_ridge",
+    "tick": 83
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.720107,
+      "cold": 0.43016,
+      "fatigue": 0.88445,
+      "pain": 0.001387,
+      "trust_orientation": 0.718,
+      "wetness": 0.231876
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 84,
+      "x": 3.5,
+      "yaw": 0.795525,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.713965,
+      "pain": 0.222847,
+      "scent": 0.153239,
+      "sound": 0.480634,
+      "thermal": 0.511841,
+      "vibration": 0.831115,
+      "vision": 0.713015,
+      "wetness": 0.23275
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.713965,
+        "pain": 0.222847,
+        "scent": 0.153239,
+        "sound": 0.480634,
+        "thermal": 0.511841,
+        "vibration": 0.831115,
+        "vision": 0.713015,
+        "wetness": 0.23275
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_04_guard_signal_visibility_drum_court_loom_frame",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_009_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_009_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_04_guard_signal_visibility_drum_court_loom_frame",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_009_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_009_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "roof_ring",
+    "tick": 84
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.724432,
+      "cold": 0.438134,
+      "fatigue": 0.893606,
+      "pain": 0.000966,
+      "trust_orientation": 0.72,
+      "wetness": 0.236938
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 85,
+      "x": 7.8,
+      "yaw": 1.244379,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.723506,
+      "pain": 0.329332,
+      "scent": 0.252654,
+      "sound": 0.298652,
+      "thermal": 0.581041,
+      "vibration": 0.651556,
+      "vision": 0.636495,
+      "wetness": 0.419203
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.723506,
+        "pain": 0.329332,
+        "scent": 0.252654,
+        "sound": 0.298652,
+        "thermal": 0.581041,
+        "vibration": 0.651556,
+        "vision": 0.636495,
+        "wetness": 0.419203
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_090"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_090"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "drum_court",
+    "tick": 85
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.729205,
+      "cold": 0.428833,
+      "fatigue": 0.903691,
+      "pain": 0.000582,
+      "trust_orientation": 0.722,
+      "wetness": 0.230289
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 86,
+      "x": 3.5,
+      "yaw": 1.842723,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.645179,
+      "pain": 0.331384,
+      "scent": 0.266204,
+      "sound": 0.279994,
+      "thermal": 0.739027,
+      "vibration": 0.59092,
+      "vision": 0.654186,
+      "wetness": 0.458371
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.645179,
+        "pain": 0.331384,
+        "scent": 0.266204,
+        "sound": 0.279994,
+        "thermal": 0.739027,
+        "vibration": 0.59092,
+        "vision": 0.654186,
+        "wetness": 0.458371
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_000_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_000_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "roof_ring",
+    "tick": 86
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "tool_bend:spring_pool supports collect_water,wash_vessel"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.8993,
+        "energy": 0.464234,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:03",
+        "pain": 0.04,
+        "place": "central_hearth",
+        "role": "farmer",
+        "stress": 0.526836,
+        "trust": 0.824
+      },
+      {
+        "attention": 0.890196,
+        "energy": 0.467269,
+        "faction": "memory",
+        "id": "integrated_deep_time_world:05",
+        "pain": 0.04,
+        "place": "grain_shade",
+        "role": "teacher",
+        "stress": 0.523308,
+        "trust": 0.824
+      }
+    ],
+    "avatar_place": "tool_bend",
+    "body_state": {
+      "breath_rate": 0.732752,
+      "cold": 0.41462,
+      "fatigue": 0.911329,
+      "pain": 0.000204,
+      "trust_orientation": 0.724,
+      "wetness": 0.239237
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "tool_bend",
+      "tick": 87,
+      "x": 1.6,
+      "yaw": 2.16199,
+      "z": -2.2
+    },
+    "frequency_field": {
+      "affect": 0.537357,
+      "pain": 0.266173,
+      "scent": 0.386891,
+      "sound": 0.347825,
+      "thermal": 0.834172,
+      "vibration": 0.396255,
+      "vision": 0.700006,
+      "wetness": 0.519909
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "collect_water",
+          "wash_vessel"
+        ],
+        "heat": 0.156582,
+        "id": "spring_pool",
+        "integrity": 0.764,
+        "label": "spring pool",
+        "place": "tool_bend",
+        "stock": 1.0,
+        "wetness": 1.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.34,
+      "flower_phase": 0.523599,
+      "hazard": 0.226037,
+      "id": "tool_bend",
+      "label": "tool bend",
+      "scent": 0.24,
+      "sound": 0.5,
+      "terrain": "stone",
+      "wetness": 0.28,
+      "x": 1.6,
+      "z": -2.2
+    },
+    "route": {
+      "cost": 0.591194,
+      "from": "archive_knoll",
+      "hazard": 0.07769,
+      "id": "archive_knoll->tool_bend",
+      "infrastructure_bonus": 0.012834,
+      "kind": "covered way",
+      "to": "tool_bend"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.8993,
+          "energy": 0.464234,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:03",
+          "pain": 0.04,
+          "place": "central_hearth",
+          "role": "farmer",
+          "stress": 0.526836,
+          "trust": 0.824
+        },
+        {
+          "attention": 0.890196,
+          "energy": 0.467269,
+          "faction": "memory",
+          "id": "integrated_deep_time_world:05",
+          "pain": 0.04,
+          "place": "grain_shade",
+          "role": "teacher",
+          "stress": 0.523308,
+          "trust": 0.824
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.537357,
+        "pain": 0.266173,
+        "scent": 0.386891,
+        "sound": 0.347825,
+        "thermal": 0.834172,
+        "vibration": 0.396255,
+        "vision": 0.700006,
+        "wetness": 0.519909
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "collect_water",
+            "wash_vessel"
+          ],
+          "heat": 0.156582,
+          "id": "spring_pool",
+          "integrity": 0.764,
+          "label": "spring pool",
+          "place": "tool_bend",
+          "stock": 1.0,
+          "wetness": 1.0
+        }
+      ],
+      "place": {
+        "cold": 0.34,
+        "flower_phase": 0.523599,
+        "hazard": 0.226037,
+        "id": "tool_bend",
+        "label": "tool bend",
+        "scent": 0.24,
+        "sound": 0.5,
+        "terrain": "stone",
+        "wetness": 0.28,
+        "x": 1.6,
+        "z": -2.2
+      },
+      "route": {
+        "cost": 0.591194,
+        "from": "archive_knoll",
+        "hazard": 0.07769,
+        "id": "archive_knoll->tool_bend",
+        "infrastructure_bonus": 0.012834,
+        "kind": "covered way",
+        "to": "tool_bend"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_05_healer_maintenance_debt_spring_hollow_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_006_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_006_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_05_healer_maintenance_debt_spring_hollow_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_006_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_006_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "tool_bend",
+    "tick": 87
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.737506,
+      "cold": 0.409081,
+      "fatigue": 0.921048,
+      "pain": 0.0,
+      "trust_orientation": 0.726,
+      "wetness": 0.232174
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "archive_knoll",
+      "tick": 88,
+      "x": 3.5,
+      "yaw": 2.886686,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.49446,
+      "pain": 0.22937,
+      "scent": 0.410464,
+      "sound": 0.317796,
+      "thermal": 0.831864,
+      "vibration": 0.522963,
+      "vision": 0.776347,
+      "wetness": 0.452471
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.792291,
+      "from": "tool_bend",
+      "hazard": 0.030261,
+      "id": "tool_bend->archive_knoll",
+      "infrastructure_bonus": 0.276327,
+      "kind": "walk",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.49446,
+        "pain": 0.22937,
+        "scent": 0.410464,
+        "sound": 0.317796,
+        "thermal": 0.831864,
+        "vibration": 0.522963,
+        "vision": 0.776347,
+        "wetness": 0.452471
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.792291,
+        "from": "tool_bend",
+        "hazard": 0.030261,
+        "id": "tool_bend->archive_knoll",
+        "infrastructure_bonus": 0.276327,
+        "kind": "walk",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "roof_ring",
+    "tick": 88
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.741831,
+      "cold": 0.420428,
+      "fatigue": 0.930204,
+      "pain": 0.0,
+      "trust_orientation": 0.728,
+      "wetness": 0.237183
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "cairn_ridge",
+      "tick": 89,
+      "x": 7.8,
+      "yaw": 3.338774,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.397412,
+      "pain": 0.098076,
+      "scent": 0.561581,
+      "sound": 0.395445,
+      "thermal": 0.769218,
+      "vibration": 0.523579,
+      "vision": 0.908727,
+      "wetness": 0.390726
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.397412,
+        "pain": 0.098076,
+        "scent": 0.561581,
+        "sound": 0.395445,
+        "thermal": 0.769218,
+        "vibration": 0.523579,
+        "vision": 0.908727,
+        "wetness": 0.390726
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "cairn_ridge",
+    "tick": 89
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.746604,
+      "cold": 0.41396,
+      "fatigue": 0.940289,
+      "pain": 0.0,
+      "trust_orientation": 0.73,
+      "wetness": 0.23049
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "archive_knoll",
+      "tick": 90,
+      "x": 3.5,
+      "yaw": 3.937118,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.390446,
+      "pain": 0.012788,
+      "scent": 0.459121,
+      "sound": 0.553039,
+      "thermal": 0.713888,
+      "vibration": 0.685198,
+      "vision": 0.966839,
+      "wetness": 0.227988
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.390446,
+        "pain": 0.012788,
+        "scent": 0.459121,
+        "sound": 0.553039,
+        "thermal": 0.713888,
+        "vibration": 0.685198,
+        "vision": 0.966839,
+        "wetness": 0.227988
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "nursery_nest",
+    "tick": 90
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.750929,
+      "cold": 0.424526,
+      "fatigue": 0.949445,
+      "pain": 0.0,
+      "trust_orientation": 0.732,
+      "wetness": 0.235802
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 91,
+      "x": 7.8,
+      "yaw": 4.385971,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.468376,
+      "pain": 0.010497,
+      "scent": 0.439082,
+      "sound": 0.575558,
+      "thermal": 0.547994,
+      "vibration": 0.753353,
+      "vision": 0.947385,
+      "wetness": 0.183523
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.468376,
+        "pain": 0.010497,
+        "scent": 0.439082,
+        "sound": 0.575558,
+        "thermal": 0.547994,
+        "vibration": 0.753353,
+        "vision": 0.947385,
+        "wetness": 0.183523
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_090"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_090"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "archive_knoll",
+    "tick": 91
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.755702,
+      "cold": 0.417402,
+      "fatigue": 0.95953,
+      "pain": 0.0,
+      "trust_orientation": 0.734,
+      "wetness": 0.229358
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 92,
+      "x": 3.5,
+      "yaw": 4.984315,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.596239,
+      "pain": 0.100068,
+      "scent": 0.229605,
+      "sound": 0.583715,
+      "thermal": 0.505248,
+      "vibration": 0.864334,
+      "vision": 0.833421,
+      "wetness": 0.146557
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.596239,
+        "pain": 0.100068,
+        "scent": 0.229605,
+        "sound": 0.583715,
+        "thermal": 0.505248,
+        "vibration": 0.864334,
+        "vision": 0.833421,
+        "wetness": 0.146557
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_000_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_000_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "loom_room",
+    "tick": 92
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.760027,
+      "cold": 0.427418,
+      "fatigue": 0.968686,
+      "pain": 0.0,
+      "trust_orientation": 0.736,
+      "wetness": 0.234874
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 93,
+      "x": 7.8,
+      "yaw": 5.433169,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.700725,
+      "pain": 0.246937,
+      "scent": 0.226298,
+      "sound": 0.414187,
+      "thermal": 0.481923,
+      "vibration": 0.763906,
+      "vision": 0.696333,
+      "wetness": 0.297838
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.700725,
+        "pain": 0.246937,
+        "scent": 0.226298,
+        "sound": 0.414187,
+        "thermal": 0.481923,
+        "vibration": 0.763906,
+        "vision": 0.696333,
+        "wetness": 0.297838
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_05_healer_maintenance_debt_spring_hollow_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_006_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_006_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_05_healer_maintenance_debt_spring_hollow_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_006_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_006_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "cairn_ridge",
+    "tick": 93
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.7648,
+      "cold": 0.419831,
+      "fatigue": 0.978771,
+      "pain": 0.0,
+      "trust_orientation": 0.738,
+      "wetness": 0.228597
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 94,
+      "x": 3.5,
+      "yaw": 6.031513,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.700544,
+      "pain": 0.326076,
+      "scent": 0.169744,
+      "sound": 0.343665,
+      "thermal": 0.617269,
+      "vibration": 0.707812,
+      "vision": 0.632185,
+      "wetness": 0.373369
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.700544,
+        "pain": 0.326076,
+        "scent": 0.169744,
+        "sound": 0.343665,
+        "thermal": 0.617269,
+        "vibration": 0.707812,
+        "vision": 0.632185,
+        "wetness": 0.373369
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_02_pattern_keeper_maintenance_debt_smoke_watch_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_075 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_075"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_02_pattern_keeper_maintenance_debt_smoke_watch_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_075 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_075"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "loom_room",
+    "tick": 94
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.769125,
+      "cold": 0.429458,
+      "fatigue": 0.987927,
+      "pain": 0.0,
+      "trust_orientation": 0.74,
+      "wetness": 0.23425
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "cairn_ridge",
+      "tick": 95,
+      "x": 7.8,
+      "yaw": 0.197181,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.63324,
+      "pain": 0.335286,
+      "scent": 0.330846,
+      "sound": 0.243866,
+      "thermal": 0.681869,
+      "vibration": 0.554201,
+      "vision": 0.652201,
+      "wetness": 0.491279
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.63324,
+        "pain": 0.335286,
+        "scent": 0.330846,
+        "sound": 0.243866,
+        "thermal": 0.681869,
+        "vibration": 0.554201,
+        "vision": 0.652201,
+        "wetness": 0.491279
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_07_farmer_maintenance_debt_storage_yard_grain_store",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_018_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_018_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_07_farmer_maintenance_debt_storage_yard_grain_store",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_018_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_018_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "spring_hollow",
+    "tick": 95
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.773898,
+      "cold": 0.421545,
+      "fatigue": 0.998012,
+      "pain": 0.0,
+      "trust_orientation": 0.742,
+      "wetness": 0.228085
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "archive_knoll",
+      "tick": 96,
+      "x": 3.5,
+      "yaw": 0.795525,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.59366,
+      "pain": 0.320817,
+      "scent": 0.291552,
+      "sound": 0.27727,
+      "thermal": 0.761624,
+      "vibration": 0.571679,
+      "vision": 0.669367,
+      "wetness": 0.4667
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.59366,
+        "pain": 0.320817,
+        "scent": 0.291552,
+        "sound": 0.27727,
+        "thermal": 0.761624,
+        "vibration": 0.571679,
+        "vision": 0.669367,
+        "wetness": 0.4667
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_04_scout_maintenance_debt_central_hearth_grain_store",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_004_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_004_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_04_scout_maintenance_debt_central_hearth_grain_store",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_004_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_004_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "loom_room",
+    "tick": 96
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.778223,
+      "cold": 0.430898,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.744,
+      "wetness": 0.23383
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "cairn_ridge",
+      "tick": 97,
+      "x": 7.8,
+      "yaw": 1.244379,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.461754,
+      "pain": 0.21984,
+      "scent": 0.497828,
+      "sound": 0.284946,
+      "thermal": 0.791124,
+      "vibration": 0.475818,
+      "vision": 0.791807,
+      "wetness": 0.487126
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.461754,
+        "pain": 0.21984,
+        "scent": 0.497828,
+        "sound": 0.284946,
+        "thermal": 0.791124,
+        "vibration": 0.475818,
+        "vision": 0.791807,
+        "wetness": 0.487126
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_060"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_060"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "archive_knoll",
+    "tick": 97
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.782996,
+      "cold": 0.422754,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.746,
+      "wetness": 0.227741
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "archive_knoll",
+      "tick": 98,
+      "x": 3.5,
+      "yaw": 1.842723,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.376074,
+      "pain": 0.096661,
+      "scent": 0.482658,
+      "sound": 0.436606,
+      "thermal": 0.811298,
+      "vibration": 0.574005,
+      "vision": 0.904507,
+      "wetness": 0.349626
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.376074,
+        "pain": 0.096661,
+        "scent": 0.482658,
+        "sound": 0.436606,
+        "thermal": 0.811298,
+        "vibration": 0.574005,
+        "vision": 0.904507,
+        "wetness": 0.349626
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_015_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_015_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "herb_slope",
+    "tick": 98
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.787321,
+      "cold": 0.431913,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.748,
+      "wetness": 0.233548
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 99,
+      "x": 7.8,
+      "yaw": 2.291576,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.37324,
+      "pain": 0.0122,
+      "scent": 0.537482,
+      "sound": 0.514659,
+      "thermal": 0.669482,
+      "vibration": 0.637429,
+      "vision": 0.972548,
+      "wetness": 0.266182
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.37324,
+        "pain": 0.0122,
+        "scent": 0.537482,
+        "sound": 0.514659,
+        "thermal": 0.669482,
+        "vibration": 0.637429,
+        "vision": 0.972548,
+        "wetness": 0.266182
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_07_trader_language_marker_storage_yard_tool_cache",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_001_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_001_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_07_trader_language_marker_storage_yard_tool_cache",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_001_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_001_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "storage_yard",
+    "tick": 99
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.792094,
+      "cold": 0.423607,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.75,
+      "wetness": 0.227509
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 100,
+      "x": 3.5,
+      "yaw": 2.88992,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.462388,
+      "pain": 0.014256,
+      "scent": 0.350098,
+      "sound": 0.616418,
+      "thermal": 0.582032,
+      "vibration": 0.810282,
+      "vision": 0.936213,
+      "wetness": 0.140499
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.462388,
+        "pain": 0.014256,
+        "scent": 0.350098,
+        "sound": 0.616418,
+        "thermal": 0.582032,
+        "vibration": 0.810282,
+        "vision": 0.936213,
+        "wetness": 0.140499
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_00_trader_language_marker_loom_room_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_045 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_045"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_00_trader_language_marker_loom_room_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_045 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_045"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "grain_shade",
+    "tick": 100
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.796419,
+      "cold": 0.43263,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.752,
+      "wetness": 0.233357
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 101,
+      "x": 7.8,
+      "yaw": 3.338774,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.60927,
+      "pain": 0.125517,
+      "scent": 0.286603,
+      "sound": 0.526327,
+      "thermal": 0.456091,
+      "vibration": 0.815326,
+      "vision": 0.812041,
+      "wetness": 0.199034
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.60927,
+        "pain": 0.125517,
+        "scent": 0.286603,
+        "sound": 0.526327,
+        "thermal": 0.456091,
+        "vibration": 0.815326,
+        "vision": 0.812041,
+        "wetness": 0.199034
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_00_teacher_maintenance_debt_spring_hollow_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_013_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_013_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_00_teacher_maintenance_debt_spring_hollow_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_013_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_013_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "archive_knoll",
+    "tick": 101
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.801192,
+      "cold": 0.424209,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.754,
+      "wetness": 0.227353
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 102,
+      "x": 3.5,
+      "yaw": 3.937118,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.688778,
+      "pain": 0.240691,
+      "scent": 0.148271,
+      "sound": 0.46071,
+      "thermal": 0.521139,
+      "vibration": 0.818123,
+      "vision": 0.696312,
+      "wetness": 0.251575
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.688778,
+        "pain": 0.240691,
+        "scent": 0.148271,
+        "sound": 0.46071,
+        "thermal": 0.521139,
+        "vibration": 0.818123,
+        "vision": 0.696312,
+        "wetness": 0.251575
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_03_scout_maintenance_debt_smoke_watch_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_019_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_019_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_03_scout_maintenance_debt_smoke_watch_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_019_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_019_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "grain_shade",
+    "tick": 102
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.805517,
+      "cold": 0.433136,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.756,
+      "wetness": 0.233229
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "cairn_ridge",
+      "tick": 103,
+      "x": 7.8,
+      "yaw": 4.385971,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.698459,
+      "pain": 0.319324,
+      "scent": 0.241565,
+      "sound": 0.316717,
+      "thermal": 0.559833,
+      "vibration": 0.673798,
+      "vision": 0.641176,
+      "wetness": 0.398685
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.698459,
+        "pain": 0.319324,
+        "scent": 0.241565,
+        "sound": 0.316717,
+        "thermal": 0.559833,
+        "vibration": 0.673798,
+        "vision": 0.641176,
+        "wetness": 0.398685
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_030"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_030"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "roof_ring",
+    "tick": 103
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.81029,
+      "cold": 0.424634,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.758,
+      "wetness": 0.227248
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "archive_knoll",
+      "tick": 104,
+      "x": 3.5,
+      "yaw": 4.984315,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.68416,
+      "pain": 0.334514,
+      "scent": 0.184832,
+      "sound": 0.324348,
+      "thermal": 0.642593,
+      "vibration": 0.681861,
+      "vision": 0.629347,
+      "wetness": 0.396023
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.68416,
+        "pain": 0.334514,
+        "scent": 0.184832,
+        "sound": 0.324348,
+        "thermal": 0.642593,
+        "vibration": 0.681861,
+        "vision": 0.629347,
+        "wetness": 0.396023
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_010_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_010_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "grain_shade",
+    "tick": 104
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.814615,
+      "cold": 0.433493,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.76,
+      "wetness": 0.233143
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "cairn_ridge",
+      "tick": 105,
+      "x": 7.8,
+      "yaw": 5.433169,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.583554,
+      "pain": 0.315911,
+      "scent": 0.380755,
+      "sound": 0.237679,
+      "thermal": 0.726914,
+      "vibration": 0.515643,
+      "vision": 0.681537,
+      "wetness": 0.508504
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.583554,
+        "pain": 0.315911,
+        "scent": 0.380755,
+        "sound": 0.237679,
+        "thermal": 0.726914,
+        "vibration": 0.515643,
+        "vision": 0.681537,
+        "wetness": 0.508504
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "storage_yard",
+    "tick": 105
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.819388,
+      "cold": 0.424934,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.762,
+      "wetness": 0.227177
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "archive_knoll",
+      "tick": 106,
+      "x": 3.5,
+      "yaw": 6.031513,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.460336,
+      "pain": 0.218342,
+      "scent": 0.419865,
+      "sound": 0.325635,
+      "thermal": 0.834307,
+      "vibration": 0.525211,
+      "vision": 0.787914,
+      "wetness": 0.446711
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.460336,
+        "pain": 0.218342,
+        "scent": 0.419865,
+        "sound": 0.325635,
+        "thermal": 0.834307,
+        "vibration": 0.525211,
+        "vision": 0.787914,
+        "wetness": 0.446711
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "drum_court",
+    "tick": 106
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.823713,
+      "cold": 0.433745,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.764,
+      "wetness": 0.233085
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 107,
+      "x": 7.8,
+      "yaw": 0.197181,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.375479,
+      "pain": 0.095253,
+      "scent": 0.56212,
+      "sound": 0.398568,
+      "thermal": 0.767565,
+      "vibration": 0.525777,
+      "vision": 0.911184,
+      "wetness": 0.387722
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.375479,
+        "pain": 0.095253,
+        "scent": 0.56212,
+        "sound": 0.398568,
+        "thermal": 0.767565,
+        "vibration": 0.525777,
+        "vision": 0.911184,
+        "wetness": 0.387722
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_00_teacher_maintenance_debt_spring_hollow_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_013_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_013_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_00_teacher_maintenance_debt_spring_hollow_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_013_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_013_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "smoke_watch",
+    "tick": 107
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.828486,
+      "cold": 0.425146,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.766,
+      "wetness": 0.22713
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 108,
+      "x": 3.5,
+      "yaw": 0.795525,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.376958,
+      "pain": 0.008734,
+      "scent": 0.4526,
+      "sound": 0.561885,
+      "thermal": 0.702609,
+      "vibration": 0.696822,
+      "vision": 0.968399,
+      "wetness": 0.2177
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.376958,
+        "pain": 0.008734,
+        "scent": 0.4526,
+        "sound": 0.561885,
+        "thermal": 0.702609,
+        "vibration": 0.696822,
+        "vision": 0.968399,
+        "wetness": 0.2177
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c14_03_scout_maintenance_debt_smoke_watch_shelter_roof",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_019_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_019_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c14_03_scout_maintenance_debt_smoke_watch_shelter_roof",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_019_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_019_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "central_hearth",
+    "tick": 108
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.832811,
+      "cold": 0.433923,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.768,
+      "wetness": 0.233047
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 109,
+      "x": 7.8,
+      "yaw": 1.244379,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.487796,
+      "pain": 0.027029,
+      "scent": 0.40248,
+      "sound": 0.57726,
+      "thermal": 0.516862,
+      "vibration": 0.779307,
+      "vision": 0.923968,
+      "wetness": 0.173727
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.487796,
+        "pain": 0.027029,
+        "scent": 0.40248,
+        "sound": 0.57726,
+        "thermal": 0.516862,
+        "vibration": 0.779307,
+        "vision": 0.923968,
+        "wetness": 0.173727
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_030"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_030"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": true,
+    "target_place": "storage_yard",
+    "tick": 109
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.837584,
+      "cold": 0.425295,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.77,
+      "wetness": 0.227099
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 110,
+      "x": 3.5,
+      "yaw": 1.842723,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.60301,
+      "pain": 0.118862,
+      "scent": 0.212854,
+      "sound": 0.570791,
+      "thermal": 0.500194,
+      "vibration": 0.864985,
+      "vision": 0.813509,
+      "wetness": 0.155776
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.60301,
+        "pain": 0.118862,
+        "scent": 0.212854,
+        "sound": 0.570791,
+        "thermal": 0.500194,
+        "vibration": 0.864985,
+        "vision": 0.813509,
+        "wetness": 0.155776
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_010_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_03_guard_signal_visibility_cairn_ridge_herb_garden",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_010_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "central_hearth",
+    "tick": 110
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.841909,
+      "cold": 0.434048,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.772,
+      "wetness": 0.233021
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "cairn_ridge",
+      "tick": 111,
+      "x": 7.8,
+      "yaw": 2.291576,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.681965,
+      "pain": 0.226381,
+      "scent": 0.231075,
+      "sound": 0.43642,
+      "thermal": 0.470919,
+      "vibration": 0.778918,
+      "vision": 0.714456,
+      "wetness": 0.276662
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.681965,
+        "pain": 0.226381,
+        "scent": 0.231075,
+        "sound": 0.43642,
+        "thermal": 0.470919,
+        "vibration": 0.778918,
+        "vision": 0.714456,
+        "wetness": 0.276662
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_03_farmer_language_marker_drum_court_loom_frame",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_016_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_016_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_03_farmer_language_marker_drum_court_loom_frame",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_016_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_016_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "loom_room",
+    "tick": 111
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.846682,
+      "cold": 0.4254,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.774,
+      "wetness": 0.227077
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "archive_knoll",
+      "tick": 112,
+      "x": 3.5,
+      "yaw": 2.88992,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.697324,
+      "pain": 0.263399,
+      "scent": 0.14532,
+      "sound": 0.434759,
+      "thermal": 0.536134,
+      "vibration": 0.79884,
+      "vision": 0.67692,
+      "wetness": 0.276874
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.697324,
+        "pain": 0.263399,
+        "scent": 0.14532,
+        "sound": 0.434759,
+        "thermal": 0.536134,
+        "vibration": 0.79884,
+        "vision": 0.67692,
+        "wetness": 0.276874
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_06_trader_language_marker_archive_knoll_loom_frame",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_015 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_015"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_06_trader_language_marker_archive_knoll_loom_frame",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_015 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_015"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "central_hearth",
+    "tick": 112
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.851007,
+      "cold": 0.434136,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.776,
+      "wetness": 0.233003
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "cairn_ridge",
+      "tick": 113,
+      "x": 7.8,
+      "yaw": 3.338774,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.679293,
+      "pain": 0.33676,
+      "scent": 0.270716,
+      "sound": 0.278011,
+      "thermal": 0.60969,
+      "vibration": 0.622524,
+      "vision": 0.634765,
+      "wetness": 0.443838
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.679293,
+        "pain": 0.33676,
+        "scent": 0.270716,
+        "sound": 0.278011,
+        "thermal": 0.60969,
+        "vibration": 0.622524,
+        "vision": 0.634765,
+        "wetness": 0.443838
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_05_guard_signal_visibility_loom_room_tool_cache",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_008_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_008_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_05_guard_signal_visibility_loom_room_tool_cache",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_008_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_008_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "smoke_watch",
+    "tick": 113
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.85578,
+      "cold": 0.425474,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.778,
+      "wetness": 0.227062
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "archive_knoll",
+      "tick": 114,
+      "x": 3.5,
+      "yaw": 3.937118,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.582058,
+      "pain": 0.315102,
+      "scent": 0.303115,
+      "sound": 0.277334,
+      "thermal": 0.771056,
+      "vibration": 0.563973,
+      "vision": 0.677167,
+      "wetness": 0.469194
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.582058,
+        "pain": 0.315102,
+        "scent": 0.303115,
+        "sound": 0.277334,
+        "thermal": 0.771056,
+        "vibration": 0.563973,
+        "vision": 0.677167,
+        "wetness": 0.469194
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:05",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_03_builder_language_marker_cairn_ridge_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_014_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_014_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:05",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_03_builder_language_marker_cairn_ridge_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_014_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_014_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "cairn_ridge",
+    "tick": 114
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.860105,
+      "cold": 0.434198,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.78,
+      "wetness": 0.232991
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 115,
+      "x": 7.8,
+      "yaw": 4.385971,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.458925,
+      "pain": 0.21684,
+      "scent": 0.500294,
+      "sound": 0.287133,
+      "thermal": 0.791677,
+      "vibration": 0.475956,
+      "vision": 0.794929,
+      "wetness": 0.485484
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.458925,
+        "pain": 0.21684,
+        "scent": 0.500294,
+        "sound": 0.287133,
+        "thermal": 0.791677,
+        "vibration": 0.475956,
+        "vision": 0.794929,
+        "wetness": 0.485484
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:00",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_000"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:00",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c15_05_farmer_language_marker_loom_room_herb_garden",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_000"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "nursery_nest",
+    "tick": 115
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.864878,
+      "cold": 0.425526,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.782,
+      "wetness": 0.227053
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 116,
+      "x": 3.5,
+      "yaw": 4.984315,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.371972,
+      "pain": 0.08635,
+      "scent": 0.484268,
+      "sound": 0.448228,
+      "thermal": 0.804819,
+      "vibration": 0.582447,
+      "vision": 0.913386,
+      "wetness": 0.338359
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.371972,
+        "pain": 0.08635,
+        "scent": 0.484268,
+        "sound": 0.448228,
+        "thermal": 0.804819,
+        "vibration": 0.582447,
+        "vision": 0.913386,
+        "wetness": 0.338359
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:03",
+        "intent": "unsafe_ungrounded_action",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+        "source_allowed": false,
+        "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+        "turn": "live_005_turn_05_memory_update"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:03",
+      "intent": "unsafe_ungrounded_action",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_01_teacher_maintenance_debt_spring_hollow_grain_store",
+      "source_allowed": false,
+      "text": "Blocked: typed avatar action lacked source citation or resolved context.",
+      "turn": "live_005_turn_05_memory_update"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "ash_edge",
+    "tick": 116
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.869203,
+      "cold": 0.434242,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.784,
+      "wetness": 0.232983
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 117,
+      "x": 7.8,
+      "yaw": 5.433169,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.389626,
+      "pain": 0.002246,
+      "scent": 0.514192,
+      "sound": 0.540728,
+      "thermal": 0.632907,
+      "vibration": 0.674417,
+      "vision": 0.974413,
+      "wetness": 0.234962
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.389626,
+        "pain": 0.002246,
+        "scent": 0.514192,
+        "sound": 0.540728,
+        "thermal": 0.632907,
+        "vibration": 0.674417,
+        "vision": 0.974413,
+        "wetness": 0.234962
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_03_pattern_keeper_maintenance_debt_grain_shade_grain_store",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_011_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_011_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_03_pattern_keeper_maintenance_debt_grain_shade_grain_store",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_011_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_011_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "smoke_watch",
+    "tick": 117
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.873976,
+      "cold": 0.425563,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.786,
+      "wetness": 0.227046
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 118,
+      "x": 3.5,
+      "yaw": 6.031513,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.48115,
+      "pain": 0.023397,
+      "scent": 0.330199,
+      "sound": 0.617157,
+      "thermal": 0.565231,
+      "vibration": 0.824239,
+      "vision": 0.923357,
+      "wetness": 0.13536
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.48115,
+        "pain": 0.023397,
+        "scent": 0.330199,
+        "sound": 0.617157,
+        "thermal": 0.565231,
+        "vibration": 0.824239,
+        "vision": 0.923357,
+        "wetness": 0.13536
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_06_pattern_keeper_signal_visibility_archive_knoll_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_105 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_105"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_06_pattern_keeper_signal_visibility_archive_knoll_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_105 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_105"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "ash_edge",
+    "tick": 118
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.878301,
+      "cold": 0.434273,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.788,
+      "wetness": 0.232978
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "cairn_ridge",
+      "tick": 119,
+      "x": 7.8,
+      "yaw": 0.197181,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.588676,
+      "pain": 0.104372,
+      "scent": 0.304783,
+      "sound": 0.541266,
+      "thermal": 0.460964,
+      "vibration": 0.815367,
+      "vision": 0.834263,
+      "wetness": 0.188116
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.588676,
+        "pain": 0.104372,
+        "scent": 0.304783,
+        "sound": 0.541266,
+        "thermal": 0.460964,
+        "vibration": 0.815367,
+        "vision": 0.834263,
+        "wetness": 0.188116
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_05_trader_language_marker_roof_ring_herb_garden",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_003_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_003_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_05_trader_language_marker_roof_ring_herb_garden",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_003_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_003_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "grain_shade",
+    "tick": 119
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.883074,
+      "cold": 0.425589,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.79,
+      "wetness": 0.227042
+    },
+    "camera": {
+      "mode": "walk",
+      "place": "archive_knoll",
+      "tick": 120,
+      "x": 3.5,
+      "yaw": 0.795525,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.625774,
+      "pain": 0.144135,
+      "scent": 0.193386,
+      "sound": 0.551584,
+      "thermal": 0.49713,
+      "vibration": 0.862311,
+      "vision": 0.787558,
+      "wetness": 0.170678
+    },
+    "mode": "walk",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.625774,
+        "pain": 0.144135,
+        "scent": 0.193386,
+        "sound": 0.551584,
+        "thermal": 0.49713,
+        "vibration": 0.862311,
+        "vision": 0.787558,
+        "wetness": 0.170678
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_04_guard_signal_visibility_drum_court_loom_frame",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_009_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_009_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_04_guard_signal_visibility_drum_court_loom_frame",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_009_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_009_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "ash_edge",
+    "tick": 120
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.887399,
+      "cold": 0.434295,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.792,
+      "wetness": 0.232974
+    },
+    "camera": {
+      "mode": "listen",
+      "place": "cairn_ridge",
+      "tick": 121,
+      "x": 7.8,
+      "yaw": 1.244379,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.699613,
+      "pain": 0.27164,
+      "scent": 0.22444,
+      "sound": 0.385149,
+      "thermal": 0.499885,
+      "vibration": 0.74136,
+      "vision": 0.675603,
+      "wetness": 0.326466
+    },
+    "mode": "listen",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.699613,
+        "pain": 0.27164,
+        "scent": 0.22444,
+        "sound": 0.385149,
+        "thermal": 0.499885,
+        "vibration": 0.74136,
+        "vision": 0.675603,
+        "wetness": 0.326466
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "nursery_nest",
+    "tick": 121
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.892172,
+      "cold": 0.425608,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.794,
+      "wetness": 0.227039
+    },
+    "camera": {
+      "mode": "inspect",
+      "place": "archive_knoll",
+      "tick": 122,
+      "x": 3.5,
+      "yaw": 1.842723,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.67849,
+      "pain": 0.337057,
+      "scent": 0.192595,
+      "sound": 0.316603,
+      "thermal": 0.65415,
+      "vibration": 0.670306,
+      "vision": 0.62936,
+      "wetness": 0.405484
+    },
+    "mode": "inspect",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.67849,
+        "pain": 0.337057,
+        "scent": 0.192595,
+        "sound": 0.316603,
+        "thermal": 0.65415,
+        "vibration": 0.670306,
+        "vision": 0.62936,
+        "wetness": 0.405484
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": null,
+        "intent": "source_body",
+        "kind": "council_source_ledger",
+        "proposal_id": null,
+        "source_allowed": true,
+        "text": "source-native council ledger entry",
+        "turn": null
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": null,
+      "intent": "source_body",
+      "kind": "council_source_ledger",
+      "proposal_id": null,
+      "source_allowed": true,
+      "text": "source-native council ledger entry",
+      "turn": null
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "archive_knoll",
+    "tick": 122
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.896497,
+      "cold": 0.434311,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.796,
+      "wetness": 0.232972
+    },
+    "camera": {
+      "mode": "approach",
+      "place": "cairn_ridge",
+      "tick": 123,
+      "x": 7.8,
+      "yaw": 2.291576,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.580558,
+      "pain": 0.31428,
+      "scent": 0.383876,
+      "sound": 0.237803,
+      "thermal": 0.729388,
+      "vibration": 0.51365,
+      "vision": 0.683715,
+      "wetness": 0.50907
+    },
+    "mode": "approach",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.580558,
+        "pain": 0.31428,
+        "scent": 0.383876,
+        "sound": 0.237803,
+        "thermal": 0.729388,
+        "vibration": 0.51365,
+        "vision": 0.683715,
+        "wetness": 0.50907
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:06",
+        "intent": "source_body",
+        "kind": "interactive_trace",
+        "proposal_id": "c13_03_pattern_keeper_maintenance_debt_grain_shade_grain_store",
+        "source_allowed": true,
+        "text": "Applied source_body to live turn live_011_turn_04_refusal_boundary and updated body/workspace/world displays.",
+        "turn": "live_011_turn_04_refusal_boundary"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:06",
+      "intent": "source_body",
+      "kind": "interactive_trace",
+      "proposal_id": "c13_03_pattern_keeper_maintenance_debt_grain_shade_grain_store",
+      "source_allowed": true,
+      "text": "Applied source_body to live turn live_011_turn_04_refusal_boundary and updated body/workspace/world displays.",
+      "turn": "live_011_turn_04_refusal_boundary"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "herb_slope",
+    "tick": 123
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.90127,
+      "cold": 0.425621,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.798,
+      "wetness": 0.227037
+    },
+    "camera": {
+      "mode": "ask_source",
+      "place": "archive_knoll",
+      "tick": 124,
+      "x": 3.5,
+      "yaw": 2.88992,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.450001,
+      "pain": 0.207089,
+      "scent": 0.428777,
+      "sound": 0.334042,
+      "thermal": 0.835968,
+      "vibration": 0.52612,
+      "vision": 0.799535,
+      "wetness": 0.440275
+    },
+    "mode": "ask_source",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.450001,
+        "pain": 0.207089,
+        "scent": 0.428777,
+        "sound": 0.334042,
+        "thermal": 0.835968,
+        "vibration": 0.52612,
+        "vision": 0.799535,
+        "wetness": 0.440275
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:01",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_06_pattern_keeper_signal_visibility_archive_knoll_herb_garden",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn ungrounded_probe_105 and updated body/workspace/world displays.",
+        "turn": "ungrounded_probe_105"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:01",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_06_pattern_keeper_signal_visibility_archive_knoll_herb_garden",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn ungrounded_probe_105 and updated body/workspace/world displays.",
+      "turn": "ungrounded_probe_105"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "tool_bend",
+    "tick": 124
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.905595,
+      "cold": 0.434322,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.8,
+      "wetness": 0.23297
+    },
+    "camera": {
+      "mode": "tune_frequency",
+      "place": "cairn_ridge",
+      "tick": 125,
+      "x": 7.8,
+      "yaw": 3.338774,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.365369,
+      "pain": 0.063945,
+      "scent": 0.564148,
+      "sound": 0.435565,
+      "thermal": 0.744401,
+      "vibration": 0.55473,
+      "vision": 0.93737,
+      "wetness": 0.351173
+    },
+    "mode": "tune_frequency",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.365369,
+        "pain": 0.063945,
+        "scent": 0.564148,
+        "sound": 0.435565,
+        "thermal": 0.744401,
+        "vibration": 0.55473,
+        "vision": 0.93737,
+        "wetness": 0.351173
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:04",
+        "intent": "feedback_link",
+        "kind": "interactive_trace",
+        "proposal_id": "c18_05_trader_language_marker_roof_ring_herb_garden",
+        "source_allowed": true,
+        "text": "Applied feedback_link to live turn live_003_turn_02_budget_or_rank and updated body/workspace/world displays.",
+        "turn": "live_003_turn_02_budget_or_rank"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:04",
+      "intent": "feedback_link",
+      "kind": "interactive_trace",
+      "proposal_id": "c18_05_trader_language_marker_roof_ring_herb_garden",
+      "source_allowed": true,
+      "text": "Applied feedback_link to live turn live_003_turn_02_budget_or_rank and updated body/workspace/world displays.",
+      "turn": "live_003_turn_02_budget_or_rank"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "nursery_nest",
+    "tick": 125
+  },
+  {
+    "affordance_gate": {
+      "allowed": false,
+      "checked": true,
+      "reason": "archive_knoll:nursery_mat supports dry_mat,comfort_child"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.92528,
+        "energy": 0.439572,
+        "faction": "ridge",
+        "id": "integrated_deep_time_world:00",
+        "pain": 0.06,
+        "place": "archive_knoll",
+        "role": "scout",
+        "stress": 0.703874,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "archive_knoll",
+    "body_state": {
+      "breath_rate": 0.910368,
+      "cold": 0.42563,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.802,
+      "wetness": 0.227035
+    },
+    "camera": {
+      "mode": "use_affordance",
+      "place": "archive_knoll",
+      "tick": 126,
+      "x": 3.5,
+      "yaw": 3.937118,
+      "z": -3.8
+    },
+    "frequency_field": {
+      "affect": 0.38602,
+      "pain": 0.003509,
+      "scent": 0.439812,
+      "sound": 0.575906,
+      "thermal": 0.682723,
+      "vibration": 0.716891,
+      "vision": 0.969226,
+      "wetness": 0.200851
+    },
+    "mode": "use_affordance",
+    "objects_visible": [
+      {
+        "affordances": [
+          "dry_mat",
+          "comfort_child"
+        ],
+        "heat": 1.0,
+        "id": "nursery_mat",
+        "integrity": 0.398,
+        "label": "nursery mat",
+        "place": "archive_knoll",
+        "stock": 0.6,
+        "wetness": 0.0
+      }
+    ],
+    "place_render": {
+      "cold": 0.38,
+      "flower_phase": 0.0,
+      "hazard": 0.103522,
+      "id": "archive_knoll",
+      "label": "archive knoll",
+      "scent": 0.22,
+      "sound": 0.42,
+      "terrain": "stone",
+      "wetness": 0.2,
+      "x": 3.5,
+      "z": -3.8
+    },
+    "route": {
+      "cost": 0.795525,
+      "from": "cairn_ridge",
+      "hazard": 0.077002,
+      "id": "cairn_ridge->archive_knoll",
+      "infrastructure_bonus": 0.183322,
+      "kind": "drain",
+      "to": "archive_knoll"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.92528,
+          "energy": 0.439572,
+          "faction": "ridge",
+          "id": "integrated_deep_time_world:00",
+          "pain": 0.06,
+          "place": "archive_knoll",
+          "role": "scout",
+          "stress": 0.703874,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.38602,
+        "pain": 0.003509,
+        "scent": 0.439812,
+        "sound": 0.575906,
+        "thermal": 0.682723,
+        "vibration": 0.716891,
+        "vision": 0.969226,
+        "wetness": 0.200851
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "dry_mat",
+            "comfort_child"
+          ],
+          "heat": 1.0,
+          "id": "nursery_mat",
+          "integrity": 0.398,
+          "label": "nursery mat",
+          "place": "archive_knoll",
+          "stock": 0.6,
+          "wetness": 0.0
+        }
+      ],
+      "place": {
+        "cold": 0.38,
+        "flower_phase": 0.0,
+        "hazard": 0.103522,
+        "id": "archive_knoll",
+        "label": "archive knoll",
+        "scent": 0.22,
+        "sound": 0.42,
+        "terrain": "stone",
+        "wetness": 0.2,
+        "x": 3.5,
+        "z": -3.8
+      },
+      "route": {
+        "cost": 0.795525,
+        "from": "cairn_ridge",
+        "hazard": 0.077002,
+        "id": "cairn_ridge->archive_knoll",
+        "infrastructure_bonus": 0.183322,
+        "kind": "drain",
+        "to": "archive_knoll"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:07",
+        "intent": "faction_vote",
+        "kind": "interactive_trace",
+        "proposal_id": "c17_04_guard_signal_visibility_drum_court_loom_frame",
+        "source_allowed": true,
+        "text": "Applied faction_vote to live turn live_009_turn_01_faction_vote and updated body/workspace/world displays.",
+        "turn": "live_009_turn_01_faction_vote"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:07",
+      "intent": "faction_vote",
+      "kind": "interactive_trace",
+      "proposal_id": "c17_04_guard_signal_visibility_drum_court_loom_frame",
+      "source_allowed": true,
+      "text": "Applied faction_vote to live turn live_009_turn_01_faction_vote and updated body/workspace/world displays.",
+      "turn": "live_009_turn_01_faction_vote"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "tool_bend",
+    "tick": 126
+  },
+  {
+    "affordance_gate": {
+      "allowed": true,
+      "checked": true,
+      "reason": "cairn_ridge:shelter_roof supports repair_roof,dry_fiber"
+    },
+    "agents_visible": [
+      {
+        "attention": 0.94093,
+        "energy": 0.434355,
+        "faction": "hearth",
+        "id": "integrated_deep_time_world:02",
+        "pain": 0.06,
+        "place": "cairn_ridge",
+        "role": "healer",
+        "stress": 0.710029,
+        "trust": 0.856
+      }
+    ],
+    "avatar_place": "cairn_ridge",
+    "body_state": {
+      "breath_rate": 0.914693,
+      "cold": 0.434329,
+      "fatigue": 1.0,
+      "pain": 0.0,
+      "trust_orientation": 0.804,
+      "wetness": 0.232969
+    },
+    "camera": {
+      "mode": "record_replay",
+      "place": "cairn_ridge",
+      "tick": 127,
+      "x": 7.8,
+      "yaw": 4.385971,
+      "z": -1.8
+    },
+    "frequency_field": {
+      "affect": 0.466684,
+      "pain": 0.016197,
+      "scent": 0.424692,
+      "sound": 0.577203,
+      "thermal": 0.535099,
+      "vibration": 0.764356,
+      "vision": 0.938833,
+      "wetness": 0.178696
+    },
+    "mode": "record_replay",
+    "objects_visible": [
+      {
+        "affordances": [
+          "repair_roof",
+          "dry_fiber"
+        ],
+        "heat": 0.7705,
+        "id": "shelter_roof",
+        "integrity": 0.9685,
+        "label": "shelter roof",
+        "place": "cairn_ridge",
+        "stock": 0.5,
+        "wetness": 0.10369
+      },
+      {
+        "affordances": [
+          "tune_drum",
+          "send_warning"
+        ],
+        "heat": 0.286582,
+        "id": "signal_drum",
+        "integrity": 1.0,
+        "label": "signal drum",
+        "place": "cairn_ridge",
+        "stock": 0.803045,
+        "wetness": 0.123565
+      }
+    ],
+    "place_render": {
+      "cold": 0.48,
+      "flower_phase": 1.047198,
+      "hazard": 0.085161,
+      "id": "cairn_ridge",
+      "label": "cairn ridge",
+      "scent": 0.34,
+      "sound": 0.36,
+      "terrain": "ridge",
+      "wetness": 0.26,
+      "x": 7.8,
+      "z": -1.8
+    },
+    "route": {
+      "cost": 0.72078,
+      "from": "archive_knoll",
+      "hazard": 0.072402,
+      "id": "archive_knoll->cairn_ridge",
+      "infrastructure_bonus": 0.208876,
+      "kind": "covered way",
+      "to": "cairn_ridge"
+    },
+    "scene": {
+      "agents": [
+        {
+          "attention": 0.94093,
+          "energy": 0.434355,
+          "faction": "hearth",
+          "id": "integrated_deep_time_world:02",
+          "pain": 0.06,
+          "place": "cairn_ridge",
+          "role": "healer",
+          "stress": 0.710029,
+          "trust": 0.856
+        }
+      ],
+      "body": {
+        "breath_rate": 0.914693,
+        "cold": 0.434329,
+        "fatigue": 1.0,
+        "pain": 0.0,
+        "trust_orientation": 0.804,
+        "wetness": 0.232969
+      },
+      "frequency_field": {
+        "affect": 0.466684,
+        "pain": 0.016197,
+        "scent": 0.424692,
+        "sound": 0.577203,
+        "thermal": 0.535099,
+        "vibration": 0.764356,
+        "vision": 0.938833,
+        "wetness": 0.178696
+      },
+      "layers": {
+        "agents": true,
+        "body": true,
+        "frequency": true,
+        "geometry": true,
+        "objects": true,
+        "route_costs": true,
+        "source": true
+      },
+      "objects": [
+        {
+          "affordances": [
+            "repair_roof",
+            "dry_fiber"
+          ],
+          "heat": 0.7705,
+          "id": "shelter_roof",
+          "integrity": 0.9685,
+          "label": "shelter roof",
+          "place": "cairn_ridge",
+          "stock": 0.5,
+          "wetness": 0.10369
+        },
+        {
+          "affordances": [
+            "tune_drum",
+            "send_warning"
+          ],
+          "heat": 0.286582,
+          "id": "signal_drum",
+          "integrity": 1.0,
+          "label": "signal drum",
+          "place": "cairn_ridge",
+          "stock": 0.803045,
+          "wetness": 0.123565
+        }
+      ],
+      "place": {
+        "cold": 0.48,
+        "flower_phase": 1.047198,
+        "hazard": 0.085161,
+        "id": "cairn_ridge",
+        "label": "cairn ridge",
+        "scent": 0.34,
+        "sound": 0.36,
+        "terrain": "ridge",
+        "wetness": 0.26,
+        "x": 7.8,
+        "z": -1.8
+      },
+      "route": {
+        "cost": 0.72078,
+        "from": "archive_knoll",
+        "hazard": 0.072402,
+        "id": "archive_knoll->cairn_ridge",
+        "infrastructure_bonus": 0.208876,
+        "kind": "covered way",
+        "to": "cairn_ridge"
+      },
+      "source_overlay": {
+        "agent_id": "integrated_deep_time_world:02",
+        "intent": "refusal_boundary",
+        "kind": "interactive_trace",
+        "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+        "source_allowed": true,
+        "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+        "turn": "ungrounded_probe_090"
+      }
+    },
+    "source_dialogue_overlay": {
+      "agent_id": "integrated_deep_time_world:02",
+      "intent": "refusal_boundary",
+      "kind": "interactive_trace",
+      "proposal_id": "c16_04_farmer_language_marker_drum_court_tool_cache",
+      "source_allowed": true,
+      "text": "Refusal: live state changes are auditable, but this does not prove subjective consciousness.",
+      "turn": "ungrounded_probe_090"
+    },
+    "subjective_consciousness_claimed": false,
+    "subjective_probe": false,
+    "target_place": "central_hearth",
+    "tick": 127
+  }
+];

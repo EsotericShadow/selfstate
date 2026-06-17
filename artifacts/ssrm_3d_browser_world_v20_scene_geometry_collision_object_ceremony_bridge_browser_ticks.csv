@@ -1,0 +1,337 @@
+tick,day,scene_id,focus_agent,avatar_scene_visible,sprite_layers_visible,collision_probe_visible,object_ceremony_visible,input_affordance_visible,sensory_frequency_hz,flower_phase,public_behavior_marker,private_workspace_sealed
+0,1,v20-scene-d01,Keth,1,0,1,0,1,1.19,73.113968,collision probe redirects avatar step,1
+1,1,v20-scene-d01,Melo,1,1,1,0,1,1.15,210.901732,avatar shifts around negotiation ring,1
+2,1,v20-scene-d01,Nari,1,1,1,0,1,1.15,348.979496,avatar shifts around negotiation ring,1
+3,1,v20-scene-d01,Ori,1,1,1,0,1,1.05,123.95726,avatar shifts around negotiation ring,1
+4,1,v20-scene-d01,Vonn,1,0,1,1,1,1.12,264.425024,object ceremony path clears and handoff animates,1
+5,1,v20-scene-d01,Sova,1,1,1,1,1,1.12,42.502788,object ceremony path clears and handoff animates,1
+6,1,v20-scene-d01,Keth,1,1,1,1,1,1.12,179.630552,object ceremony path clears and handoff animates,1
+7,1,v20-scene-d01,Melo,1,1,1,1,1,1.22,321.758316,object ceremony path clears and handoff animates,1
+8,1,v20-scene-d01,Nari,1,1,1,0,0,1.15,97.44608,avatar shifts around negotiation ring,1
+9,1,v20-scene-d01,Ori,1,1,1,1,1,1.22,237.913844,object ceremony path clears and handoff animates,1
+10,1,v20-scene-d01,Vonn,1,1,1,1,1,1.22,15.991608,object ceremony path clears and handoff animates,1
+11,1,v20-scene-d01,Sova,1,1,1,1,1,1.12,150.969372,object ceremony path clears and handoff animates,1
+12,1,v20-scene-d01,Keth,1,1,1,1,1,1.12,289.047136,object ceremony path clears and handoff animates,1
+13,1,v20-scene-d01,Melo,1,1,1,1,1,1.12,67.1249,object ceremony path clears and handoff animates,1
+14,2,v20-scene-d02,Ori,1,1,1,1,1,1.22,200.450781,object ceremony path clears and handoff animates,1
+15,2,v20-scene-d02,Vonn,1,1,1,0,1,1.15,336.138545,avatar shifts around negotiation ring,1
+16,2,v20-scene-d02,Sova,1,1,1,1,1,1.22,116.606309,object ceremony path clears and handoff animates,1
+17,2,v20-scene-d02,Keth,1,1,1,1,1,1.22,254.684073,object ceremony path clears and handoff animates,1
+18,2,v20-scene-d02,Melo,1,1,1,1,1,1.16,30.901837,object ceremony path clears and handoff animates,1
+19,2,v20-scene-d02,Nari,1,1,1,1,1,1.12,167.739601,object ceremony path clears and handoff animates,1
+20,2,v20-scene-d02,Ori,1,1,1,1,1,1.12,305.817365,object ceremony path clears and handoff animates,1
+21,2,v20-scene-d02,Vonn,1,1,1,1,1,1.12,82.945129,object ceremony path clears and handoff animates,1
+22,2,v20-scene-d02,Sova,1,1,1,0,1,1.15,222.682893,avatar shifts around negotiation ring,1
+23,2,v20-scene-d02,Keth,1,1,1,1,1,1.22,3.150657,object ceremony path clears and handoff animates,1
+24,2,v20-scene-d02,Melo,1,1,1,1,1,1.22,141.228421,object ceremony path clears and handoff animates,1
+25,2,v20-scene-d02,Nari,1,1,1,1,1,1.26,280.546185,object ceremony path clears and handoff animates,1
+26,2,v20-scene-d02,Ori,1,1,1,1,1,1.16,55.523949,object ceremony path clears and handoff animates,1
+27,2,v20-scene-d02,Vonn,1,0,1,1,1,1.16,193.601713,object ceremony path clears and handoff animates,1
+28,3,v20-scene-d03,Keth,1,0,1,1,1,1.16,322.847641,object ceremony path clears and handoff animates,1
+29,3,v20-scene-d03,Melo,1,1,1,0,1,1.19,102.585405,collision probe redirects avatar step,1
+30,3,v20-scene-d03,Nari,1,1,1,1,1,1.22,241.813169,object ceremony path clears and handoff animates,1
+31,3,v20-scene-d03,Ori,1,1,1,0,0,1.19,18.740933,collision probe redirects avatar step,1
+32,3,v20-scene-d03,Vonn,1,1,1,1,1,1.22,157.968697,object ceremony path clears and handoff animates,1
+33,3,v20-scene-d03,Sova,1,1,1,1,1,1.12,292.946461,object ceremony path clears and handoff animates,1
+34,3,v20-scene-d03,Keth,1,1,1,1,1,1.12,71.024225,object ceremony path clears and handoff animates,1
+35,3,v20-scene-d03,Melo,1,1,1,1,1,1.12,209.101989,object ceremony path clears and handoff animates,1
+36,3,v20-scene-d03,Nari,1,1,1,0,1,1.09,345.079753,collision probe redirects avatar step,1
+37,3,v20-scene-d03,Ori,1,0,1,1,1,1.22,128.357517,object ceremony path clears and handoff animates,1
+38,3,v20-scene-d03,Vonn,1,1,1,1,1,1.22,266.435281,object ceremony path clears and handoff animates,1
+39,3,v20-scene-d03,Sova,1,1,1,1,1,1.22,44.513045,object ceremony path clears and handoff animates,1
+40,3,v20-scene-d03,Keth,1,1,1,0,1,1.15,180.200809,avatar shifts around negotiation ring,1
+41,3,v20-scene-d03,Melo,1,0,1,1,1,1.12,317.568573,object ceremony path clears and handoff animates,1
+42,4,v20-scene-d04,Ori,1,1,1,1,1,1.12,87.723746,object ceremony path clears and handoff animates,1
+43,4,v20-scene-d04,Vonn,1,0,1,0,1,1.05,222.46151,avatar shifts around negotiation ring,1
+44,4,v20-scene-d04,Sova,1,1,1,1,1,1.22,6.979274,object ceremony path clears and handoff animates,1
+45,4,v20-scene-d04,Keth,1,1,1,1,1,1.26,146.297038,object ceremony path clears and handoff animates,1
+46,4,v20-scene-d04,Melo,1,1,1,1,1,1.22,283.134802,object ceremony path clears and handoff animates,1
+47,4,v20-scene-d04,Nari,1,1,1,1,1,1.22,61.212566,object ceremony path clears and handoff animates,1
+48,4,v20-scene-d04,Ori,1,1,1,1,1,1.12,196.19033,object ceremony path clears and handoff animates,1
+49,4,v20-scene-d04,Vonn,1,1,1,1,1,1.12,334.268094,object ceremony path clears and handoff animates,1
+50,4,v20-scene-d04,Sova,1,1,1,0,1,1.05,109.955858,avatar shifts around negotiation ring,1
+51,4,v20-scene-d04,Keth,1,1,1,1,1,1.12,249.473622,object ceremony path clears and handoff animates,1
+52,4,v20-scene-d04,Melo,1,1,1,1,1,1.22,31.601386,object ceremony path clears and handoff animates,1
+53,4,v20-scene-d04,Nari,1,1,1,1,1,1.22,169.67915,object ceremony path clears and handoff animates,1
+54,4,v20-scene-d04,Ori,1,1,1,1,0,1.26,308.996914,object ceremony path clears and handoff animates,1
+55,4,v20-scene-d04,Vonn,1,0,1,1,1,1.26,87.074678,object ceremony path clears and handoff animates,1
+56,5,v20-scene-d05,Keth,1,0,1,1,1,1.16,214.08276,object ceremony path clears and handoff animates,1
+57,5,v20-scene-d05,Melo,1,0,1,0,1,1.09,349.770524,collision probe redirects avatar step,1
+58,5,v20-scene-d05,Nari,1,0,1,1,1,1.16,129.288288,object ceremony path clears and handoff animates,1
+59,5,v20-scene-d05,Ori,1,0,1,1,1,1.22,270.176052,object ceremony path clears and handoff animates,1
+60,5,v20-scene-d05,Vonn,1,1,1,0,1,1.15,45.863816,avatar shifts around negotiation ring,1
+61,5,v20-scene-d05,Sova,1,1,1,1,1,1.22,186.33158,object ceremony path clears and handoff animates,1
+62,5,v20-scene-d05,Keth,1,1,1,0,1,1.15,322.019344,avatar shifts around negotiation ring,1
+63,5,v20-scene-d05,Melo,1,1,1,1,1,1.12,99.387108,object ceremony path clears and handoff animates,1
+64,5,v20-scene-d05,Nari,1,1,1,0,1,1.05,235.074872,avatar shifts around negotiation ring,1
+65,5,v20-scene-d05,Ori,1,1,1,1,1,1.12,15.542636,object ceremony path clears and handoff animates,1
+66,5,v20-scene-d05,Vonn,1,1,1,1,1,1.12,152.6704,object ceremony path clears and handoff animates,1
+67,5,v20-scene-d05,Sova,1,1,1,1,1,1.22,294.798164,object ceremony path clears and handoff animates,1
+68,5,v20-scene-d05,Keth,1,1,1,1,1,1.22,72.875928,object ceremony path clears and handoff animates,1
+69,5,v20-scene-d05,Melo,1,1,1,1,1,1.22,210.953692,object ceremony path clears and handoff animates,1
+70,6,v20-scene-d06,Ori,1,1,1,1,1,1.12,337.913572,object ceremony path clears and handoff animates,1
+71,6,v20-scene-d06,Vonn,1,1,1,0,1,1.05,113.601336,avatar shifts around negotiation ring,1
+72,6,v20-scene-d06,Sova,1,1,1,1,1,1.16,255.3091,object ceremony path clears and handoff animates,1
+73,6,v20-scene-d06,Keth,1,1,1,1,1,1.12,31.196864,object ceremony path clears and handoff animates,1
+74,6,v20-scene-d06,Melo,1,0,1,1,1,1.22,173.324628,object ceremony path clears and handoff animates,1
+75,6,v20-scene-d06,Nari,1,1,1,1,1,1.22,311.402392,object ceremony path clears and handoff animates,1
+76,6,v20-scene-d06,Ori,1,1,1,1,1,1.22,89.480156,object ceremony path clears and handoff animates,1
+77,6,v20-scene-d06,Vonn,1,1,1,0,0,1.15,225.16792,avatar shifts around negotiation ring,1
+78,6,v20-scene-d06,Sova,1,0,1,0,1,1.05,0.145684,avatar shifts around negotiation ring,1
+79,6,v20-scene-d06,Keth,1,1,1,1,1,1.12,140.613448,object ceremony path clears and handoff animates,1
+80,6,v20-scene-d06,Melo,1,1,1,1,1,1.12,278.691212,object ceremony path clears and handoff animates,1
+81,6,v20-scene-d06,Nari,1,1,1,1,1,1.16,57.058976,object ceremony path clears and handoff animates,1
+82,6,v20-scene-d06,Ori,1,1,1,1,1,1.22,197.94674,object ceremony path clears and handoff animates,1
+83,6,v20-scene-d06,Vonn,1,1,1,1,1,1.22,336.024504,object ceremony path clears and handoff animates,1
+84,7,v20-scene-d07,Keth,1,1,1,1,1,1.26,107.280329,object ceremony path clears and handoff animates,1
+85,7,v20-scene-d07,Melo,1,1,1,0,1,1.09,239.868093,collision probe redirects avatar step,1
+86,7,v20-scene-d07,Nari,1,0,1,1,1,1.16,20.335857,object ceremony path clears and handoff animates,1
+87,7,v20-scene-d07,Ori,1,0,1,1,1,1.16,158.413621,object ceremony path clears and handoff animates,1
+88,7,v20-scene-d07,Vonn,1,1,1,1,1,1.16,295.541385,object ceremony path clears and handoff animates,1
+89,7,v20-scene-d07,Sova,1,1,1,0,1,1.19,75.279149,collision probe redirects avatar step,1
+90,7,v20-scene-d07,Keth,1,1,1,1,1,1.26,215.746913,object ceremony path clears and handoff animates,1
+91,7,v20-scene-d07,Melo,1,1,1,1,1,1.22,352.584677,object ceremony path clears and handoff animates,1
+92,7,v20-scene-d07,Nari,1,1,1,0,1,1.15,128.272441,avatar shifts around negotiation ring,1
+93,7,v20-scene-d07,Ori,1,1,1,0,1,1.05,263.250205,avatar shifts around negotiation ring,1
+94,7,v20-scene-d07,Vonn,1,1,1,1,1,1.12,43.717969,object ceremony path clears and handoff animates,1
+95,7,v20-scene-d07,Sova,1,1,1,1,1,1.12,181.795733,object ceremony path clears and handoff animates,1
+96,7,v20-scene-d07,Keth,1,1,1,1,1,1.12,318.923497,object ceremony path clears and handoff animates,1
+97,7,v20-scene-d07,Melo,1,1,1,1,1,1.22,101.051261,object ceremony path clears and handoff animates,1
+98,8,v20-scene-d08,Ori,1,1,1,1,1,1.22,231.032073,object ceremony path clears and handoff animates,1
+99,8,v20-scene-d08,Vonn,1,1,1,0,1,1.19,7.959837,collision probe redirects avatar step,1
+100,8,v20-scene-d08,Sova,1,1,1,1,0,1.12,144.087601,object ceremony path clears and handoff animates,1
+101,8,v20-scene-d08,Keth,1,1,1,1,1,1.12,282.165365,object ceremony path clears and handoff animates,1
+102,8,v20-scene-d08,Melo,1,1,1,1,1,1.12,60.243129,object ceremony path clears and handoff animates,1
+103,8,v20-scene-d08,Nari,1,1,1,1,1,1.12,197.370893,object ceremony path clears and handoff animates,1
+104,8,v20-scene-d08,Ori,1,1,1,1,1,1.22,339.498657,object ceremony path clears and handoff animates,1
+105,8,v20-scene-d08,Vonn,1,1,1,1,1,1.22,117.576421,object ceremony path clears and handoff animates,1
+106,8,v20-scene-d08,Sova,1,1,1,0,1,1.15,253.264185,avatar shifts around negotiation ring,1
+107,8,v20-scene-d08,Keth,1,1,1,1,1,1.22,33.731949,object ceremony path clears and handoff animates,1
+108,8,v20-scene-d08,Melo,1,1,1,1,1,1.16,169.949713,object ceremony path clears and handoff animates,1
+109,8,v20-scene-d08,Nari,1,1,1,1,1,1.12,306.787477,object ceremony path clears and handoff animates,1
+110,8,v20-scene-d08,Ori,1,1,1,1,1,1.12,84.865241,object ceremony path clears and handoff animates,1
+111,8,v20-scene-d08,Vonn,1,0,1,1,1,1.12,221.993005,object ceremony path clears and handoff animates,1
+112,9,v20-scene-d09,Keth,1,1,1,1,1,1.22,356.001663,object ceremony path clears and handoff animates,1
+113,9,v20-scene-d09,Melo,1,1,1,0,1,1.15,131.689427,avatar shifts around negotiation ring,1
+114,9,v20-scene-d09,Nari,1,1,1,0,1,1.19,270.057191,collision probe redirects avatar step,1
+115,9,v20-scene-d09,Ori,1,0,1,1,1,1.16,48.374955,object ceremony path clears and handoff animates,1
+116,9,v20-scene-d09,Vonn,1,0,1,1,1,1.16,186.452719,object ceremony path clears and handoff animates,1
+117,9,v20-scene-d09,Sova,1,0,1,1,1,1.16,324.530483,object ceremony path clears and handoff animates,1
+118,9,v20-scene-d09,Keth,1,0,1,0,1,1.09,99.268247,collision probe redirects avatar step,1
+119,9,v20-scene-d09,Melo,1,1,1,1,1,1.22,242.546011,object ceremony path clears and handoff animates,1
+120,9,v20-scene-d09,Nari,1,1,1,0,1,1.15,18.233775,avatar shifts around negotiation ring,1
+121,9,v20-scene-d09,Ori,1,1,1,1,1,1.22,158.701539,object ceremony path clears and handoff animates,1
+122,9,v20-scene-d09,Vonn,1,1,1,1,1,1.22,296.779303,object ceremony path clears and handoff animates,1
+123,9,v20-scene-d09,Sova,1,1,1,1,0,1.12,71.757067,object ceremony path clears and handoff animates,1
+124,9,v20-scene-d09,Keth,1,1,1,0,1,1.05,207.444831,avatar shifts around negotiation ring,1
+125,9,v20-scene-d09,Melo,1,1,1,1,1,1.12,347.912595,object ceremony path clears and handoff animates,1
+126,10,v20-scene-d10,Ori,1,1,1,1,1,1.26,122.204411,object ceremony path clears and handoff animates,1
+127,10,v20-scene-d10,Vonn,1,1,1,0,1,1.15,256.652175,avatar shifts around negotiation ring,1
+128,10,v20-scene-d10,Sova,1,1,1,1,1,1.22,37.119939,object ceremony path clears and handoff animates,1
+129,10,v20-scene-d10,Keth,1,0,1,1,1,1.22,175.197703,object ceremony path clears and handoff animates,1
+130,10,v20-scene-d10,Melo,1,1,1,1,1,1.12,310.175467,object ceremony path clears and handoff animates,1
+131,10,v20-scene-d10,Nari,1,1,1,1,1,1.12,88.253231,object ceremony path clears and handoff animates,1
+132,10,v20-scene-d10,Ori,1,1,1,1,1,1.12,226.330995,object ceremony path clears and handoff animates,1
+133,10,v20-scene-d10,Vonn,1,1,1,1,1,1.12,3.458759,object ceremony path clears and handoff animates,1
+134,10,v20-scene-d10,Sova,1,1,1,0,1,1.15,143.196523,avatar shifts around negotiation ring,1
+135,10,v20-scene-d10,Keth,1,1,1,1,1,1.22,283.664287,object ceremony path clears and handoff animates,1
+136,10,v20-scene-d10,Melo,1,1,1,1,1,1.22,61.742051,object ceremony path clears and handoff animates,1
+137,10,v20-scene-d10,Nari,1,1,1,1,1,1.22,199.819815,object ceremony path clears and handoff animates,1
+138,10,v20-scene-d10,Ori,1,1,1,1,1,1.12,334.797579,object ceremony path clears and handoff animates,1
+139,10,v20-scene-d10,Vonn,1,1,1,1,1,1.12,112.875343,object ceremony path clears and handoff animates,1
+140,11,v20-scene-d11,Keth,1,1,1,1,1,1.12,241.886399,object ceremony path clears and handoff animates,1
+141,11,v20-scene-d11,Melo,1,1,1,0,1,1.15,21.624163,avatar shifts around negotiation ring,1
+142,11,v20-scene-d11,Nari,1,1,1,1,1,1.22,162.091927,object ceremony path clears and handoff animates,1
+143,11,v20-scene-d11,Ori,1,1,1,1,1,1.22,300.169691,object ceremony path clears and handoff animates,1
+144,11,v20-scene-d11,Vonn,1,0,1,1,1,1.26,79.487455,object ceremony path clears and handoff animates,1
+145,11,v20-scene-d11,Sova,1,1,1,1,1,1.12,213.225219,object ceremony path clears and handoff animates,1
+146,11,v20-scene-d11,Keth,1,0,1,1,0,1.16,352.542983,object ceremony path clears and handoff animates,1
+147,11,v20-scene-d11,Melo,1,0,1,0,1,1.09,128.230747,collision probe redirects avatar step,1
+148,11,v20-scene-d11,Nari,1,0,1,0,1,1.09,265.358511,collision probe redirects avatar step,1
+149,11,v20-scene-d11,Ori,1,1,1,1,1,1.26,49.876275,object ceremony path clears and handoff animates,1
+150,11,v20-scene-d11,Vonn,1,1,1,1,1,1.22,186.714039,object ceremony path clears and handoff animates,1
+151,11,v20-scene-d11,Sova,1,1,1,0,1,1.15,322.401803,avatar shifts around negotiation ring,1
+152,11,v20-scene-d11,Keth,1,0,1,1,1,1.22,102.869567,object ceremony path clears and handoff animates,1
+153,11,v20-scene-d11,Melo,1,1,1,1,1,1.16,239.087331,object ceremony path clears and handoff animates,1
+154,12,v20-scene-d12,Ori,1,1,1,1,1,1.12,7.832664,object ceremony path clears and handoff animates,1
+155,12,v20-scene-d12,Vonn,1,1,1,0,1,1.05,142.570428,avatar shifts around negotiation ring,1
+156,12,v20-scene-d12,Sova,1,1,1,1,1,1.22,287.088192,object ceremony path clears and handoff animates,1
+157,12,v20-scene-d12,Keth,1,1,1,1,1,1.22,65.165956,object ceremony path clears and handoff animates,1
+158,12,v20-scene-d12,Melo,1,1,1,1,1,1.22,203.24372,object ceremony path clears and handoff animates,1
+159,12,v20-scene-d12,Nari,1,1,1,1,1,1.22,341.321484,object ceremony path clears and handoff animates,1
+160,12,v20-scene-d12,Ori,1,1,1,1,1,1.12,116.299248,object ceremony path clears and handoff animates,1
+161,12,v20-scene-d12,Vonn,1,1,1,1,1,1.12,254.377012,object ceremony path clears and handoff animates,1
+162,12,v20-scene-d12,Sova,1,1,1,0,1,1.09,31.304776,collision probe redirects avatar step,1
+163,12,v20-scene-d12,Keth,1,1,1,1,1,1.12,169.58254,object ceremony path clears and handoff animates,1
+164,12,v20-scene-d12,Melo,1,1,1,1,1,1.22,311.710304,object ceremony path clears and handoff animates,1
+165,12,v20-scene-d12,Nari,1,1,1,1,1,1.22,89.788068,object ceremony path clears and handoff animates,1
+166,12,v20-scene-d12,Ori,1,1,1,1,1,1.22,227.865832,object ceremony path clears and handoff animates,1
+167,12,v20-scene-d12,Vonn,1,1,1,1,1,1.22,5.943596,object ceremony path clears and handoff animates,1
+168,13,v20-scene-d13,Keth,1,1,1,1,1,1.12,132.865581,object ceremony path clears and handoff animates,1
+169,13,v20-scene-d13,Melo,1,1,1,0,0,1.05,268.553345,avatar shifts around negotiation ring,1
+170,13,v20-scene-d13,Nari,1,1,1,1,1,1.12,48.071109,object ceremony path clears and handoff animates,1
+171,13,v20-scene-d13,Ori,1,1,1,1,1,1.22,190.198873,object ceremony path clears and handoff animates,1
+172,13,v20-scene-d13,Vonn,1,0,1,1,1,1.22,328.276637,object ceremony path clears and handoff animates,1
+173,13,v20-scene-d13,Sova,1,1,1,1,1,1.22,106.354401,object ceremony path clears and handoff animates,1
+174,13,v20-scene-d13,Keth,1,1,1,1,1,1.26,245.672165,object ceremony path clears and handoff animates,1
+175,13,v20-scene-d13,Melo,1,0,1,1,1,1.16,20.649929,object ceremony path clears and handoff animates,1
+176,13,v20-scene-d13,Nari,1,0,1,0,1,1.09,156.337693,collision probe redirects avatar step,1
+177,13,v20-scene-d13,Ori,1,0,1,1,1,1.16,296.805457,object ceremony path clears and handoff animates,1
+178,13,v20-scene-d13,Vonn,1,1,1,1,1,1.16,73.933221,object ceremony path clears and handoff animates,1
+179,13,v20-scene-d13,Sova,1,1,1,1,1,1.26,216.060985,object ceremony path clears and handoff animates,1
+180,13,v20-scene-d13,Keth,1,1,1,1,1,1.22,352.898749,object ceremony path clears and handoff animates,1
+181,13,v20-scene-d13,Melo,1,1,1,1,1,1.22,130.976513,object ceremony path clears and handoff animates,1
+182,14,v20-scene-d14,Ori,1,1,1,1,1,1.12,257.94351,object ceremony path clears and handoff animates,1
+183,14,v20-scene-d14,Vonn,1,1,1,0,1,1.05,33.631274,avatar shifts around negotiation ring,1
+184,14,v20-scene-d14,Sova,1,1,1,1,1,1.12,174.099038,object ceremony path clears and handoff animates,1
+185,14,v20-scene-d14,Keth,1,0,1,1,1,1.12,311.226802,object ceremony path clears and handoff animates,1
+186,14,v20-scene-d14,Melo,1,1,1,0,1,1.15,90.964566,avatar shifts around negotiation ring,1
+187,14,v20-scene-d14,Nari,1,1,1,1,1,1.22,231.43233,object ceremony path clears and handoff animates,1
+188,14,v20-scene-d14,Ori,1,1,1,0,1,1.15,7.120094,avatar shifts around negotiation ring,1
+189,14,v20-scene-d14,Vonn,1,0,1,1,1,1.22,147.587858,object ceremony path clears and handoff animates,1
+190,14,v20-scene-d14,Sova,1,1,1,0,1,1.05,280.175622,avatar shifts around negotiation ring,1
+191,14,v20-scene-d14,Keth,1,1,1,1,1,1.12,60.643386,object ceremony path clears and handoff animates,1
+192,14,v20-scene-d14,Melo,1,1,1,1,0,1.12,198.72115,object ceremony path clears and handoff animates,1
+193,14,v20-scene-d14,Nari,1,1,1,1,1,1.12,335.848914,object ceremony path clears and handoff animates,1
+194,14,v20-scene-d14,Ori,1,1,1,1,1,1.22,117.976678,object ceremony path clears and handoff animates,1
+195,14,v20-scene-d14,Vonn,1,1,1,1,1,1.22,256.054442,object ceremony path clears and handoff animates,1
+196,15,v20-scene-d15,Keth,1,1,1,1,1,1.22,26.169817,object ceremony path clears and handoff animates,1
+197,15,v20-scene-d15,Melo,1,1,1,0,1,1.05,158.757581,avatar shifts around negotiation ring,1
+198,15,v20-scene-d15,Nari,1,1,1,1,1,1.16,300.465345,object ceremony path clears and handoff animates,1
+199,15,v20-scene-d15,Ori,1,1,1,1,1,1.12,77.303109,object ceremony path clears and handoff animates,1
+200,15,v20-scene-d15,Vonn,1,1,1,1,1,1.12,214.430873,object ceremony path clears and handoff animates,1
+201,15,v20-scene-d15,Sova,1,1,1,1,1,1.22,356.558637,object ceremony path clears and handoff animates,1
+202,15,v20-scene-d15,Keth,1,1,1,1,1,1.22,134.636401,object ceremony path clears and handoff animates,1
+203,15,v20-scene-d15,Melo,1,1,1,1,1,1.22,272.714165,object ceremony path clears and handoff animates,1
+204,15,v20-scene-d15,Nari,1,1,1,0,1,1.19,49.641929,collision probe redirects avatar step,1
+205,15,v20-scene-d15,Ori,1,0,1,0,1,1.09,184.619693,collision probe redirects avatar step,1
+206,15,v20-scene-d15,Vonn,1,0,1,1,1,1.16,325.087457,object ceremony path clears and handoff animates,1
+207,15,v20-scene-d15,Sova,1,0,1,1,1,1.16,103.165221,object ceremony path clears and handoff animates,1
+208,15,v20-scene-d15,Keth,1,1,1,1,1,1.16,240.292985,object ceremony path clears and handoff animates,1
+209,15,v20-scene-d15,Melo,1,1,1,0,1,1.19,19.080749,collision probe redirects avatar step,1
+210,16,v20-scene-d16,Ori,1,1,1,1,1,1.22,151.342577,object ceremony path clears and handoff animates,1
+211,16,v20-scene-d16,Vonn,1,1,1,0,1,1.15,287.030341,avatar shifts around negotiation ring,1
+212,16,v20-scene-d16,Sova,1,1,1,1,1,1.12,64.398105,object ceremony path clears and handoff animates,1
+213,16,v20-scene-d16,Keth,1,1,1,1,1,1.12,202.475869,object ceremony path clears and handoff animates,1
+214,16,v20-scene-d16,Melo,1,1,1,1,1,1.12,340.553633,object ceremony path clears and handoff animates,1
+215,16,v20-scene-d16,Nari,1,0,1,1,0,1.12,117.681397,object ceremony path clears and handoff animates,1
+216,16,v20-scene-d16,Ori,1,1,1,1,1,1.26,261.049161,object ceremony path clears and handoff animates,1
+217,16,v20-scene-d16,Vonn,1,1,1,0,1,1.15,35.496925,avatar shifts around negotiation ring,1
+218,16,v20-scene-d16,Sova,1,1,1,0,1,1.15,173.574689,avatar shifts around negotiation ring,1
+219,16,v20-scene-d16,Keth,1,1,1,1,1,1.22,314.042453,object ceremony path clears and handoff animates,1
+220,16,v20-scene-d16,Melo,1,1,1,1,1,1.12,89.020217,object ceremony path clears and handoff animates,1
+221,16,v20-scene-d16,Nari,1,1,1,1,1,1.12,227.097981,object ceremony path clears and handoff animates,1
+222,16,v20-scene-d16,Ori,1,0,1,1,1,1.12,5.175745,object ceremony path clears and handoff animates,1
+223,16,v20-scene-d16,Vonn,1,1,1,1,1,1.12,142.303509,object ceremony path clears and handoff animates,1
+224,17,v20-scene-d17,Keth,1,1,1,1,1,1.22,276.554728,object ceremony path clears and handoff animates,1
+225,17,v20-scene-d17,Melo,1,1,1,0,1,1.19,53.482492,collision probe redirects avatar step,1
+226,17,v20-scene-d17,Nari,1,0,1,1,1,1.22,192.710256,object ceremony path clears and handoff animates,1
+227,17,v20-scene-d17,Ori,1,1,1,1,1,1.12,327.68802,object ceremony path clears and handoff animates,1
+228,17,v20-scene-d17,Vonn,1,1,1,1,1,1.12,105.765784,object ceremony path clears and handoff animates,1
+229,17,v20-scene-d17,Sova,1,1,1,1,1,1.12,243.843548,object ceremony path clears and handoff animates,1
+230,17,v20-scene-d17,Keth,1,1,1,1,1,1.12,20.971312,object ceremony path clears and handoff animates,1
+231,17,v20-scene-d17,Melo,1,1,1,1,1,1.22,163.099076,object ceremony path clears and handoff animates,1
+232,17,v20-scene-d17,Nari,1,1,1,0,1,1.15,298.78684,avatar shifts around negotiation ring,1
+233,17,v20-scene-d17,Ori,1,1,1,1,1,1.22,79.254604,object ceremony path clears and handoff animates,1
+234,17,v20-scene-d17,Vonn,1,0,1,0,1,1.19,216.182368,collision probe redirects avatar step,1
+235,17,v20-scene-d17,Sova,1,1,1,1,1,1.16,353.550132,object ceremony path clears and handoff animates,1
+236,17,v20-scene-d17,Keth,1,0,1,1,1,1.16,131.627896,object ceremony path clears and handoff animates,1
+237,17,v20-scene-d17,Melo,1,0,1,1,1,1.16,269.70566,object ceremony path clears and handoff animates,1
+238,18,v20-scene-d18,Ori,1,1,1,1,0,1.26,43.034885,object ceremony path clears and handoff animates,1
+239,18,v20-scene-d18,Vonn,1,1,1,0,1,1.15,177.482649,avatar shifts around negotiation ring,1
+240,18,v20-scene-d18,Sova,1,1,1,1,1,1.22,317.950413,object ceremony path clears and handoff animates,1
+241,18,v20-scene-d18,Keth,1,1,1,1,1,1.22,96.028177,object ceremony path clears and handoff animates,1
+242,18,v20-scene-d18,Melo,1,1,1,1,1,1.12,231.005941,object ceremony path clears and handoff animates,1
+243,18,v20-scene-d18,Nari,1,1,1,1,1,1.16,10.323705,object ceremony path clears and handoff animates,1
+244,18,v20-scene-d18,Ori,1,1,1,1,1,1.12,147.161469,object ceremony path clears and handoff animates,1
+245,18,v20-scene-d18,Vonn,1,1,1,1,1,1.12,284.289233,object ceremony path clears and handoff animates,1
+246,18,v20-scene-d18,Sova,1,1,1,0,1,1.15,64.026997,avatar shifts around negotiation ring,1
+247,18,v20-scene-d18,Keth,1,1,1,1,1,1.22,204.494761,object ceremony path clears and handoff animates,1
+248,18,v20-scene-d18,Melo,1,1,1,0,1,1.15,340.182525,avatar shifts around negotiation ring,1
+249,18,v20-scene-d18,Nari,1,1,1,1,1,1.22,120.650289,object ceremony path clears and handoff animates,1
+250,18,v20-scene-d18,Ori,1,1,1,1,1,1.12,255.628053,object ceremony path clears and handoff animates,1
+251,18,v20-scene-d18,Vonn,1,1,1,1,1,1.12,33.705817,object ceremony path clears and handoff animates,1
+252,19,v20-scene-d19,Keth,1,1,1,1,1,1.12,162.998583,object ceremony path clears and handoff animates,1
+253,19,v20-scene-d19,Melo,1,1,1,0,1,1.15,302.736347,avatar shifts around negotiation ring,1
+254,19,v20-scene-d19,Nari,1,1,1,1,1,1.22,83.204111,object ceremony path clears and handoff animates,1
+255,19,v20-scene-d19,Ori,1,1,1,1,1,1.22,221.281875,object ceremony path clears and handoff animates,1
+256,19,v20-scene-d19,Vonn,1,1,1,1,1,1.22,359.359639,object ceremony path clears and handoff animates,1
+257,19,v20-scene-d19,Sova,1,1,1,1,1,1.12,134.337403,object ceremony path clears and handoff animates,1
+258,19,v20-scene-d19,Keth,1,0,1,1,1,1.12,272.415167,object ceremony path clears and handoff animates,1
+259,19,v20-scene-d19,Melo,1,0,1,1,1,1.12,50.492931,object ceremony path clears and handoff animates,1
+260,19,v20-scene-d19,Nari,1,1,1,0,1,1.05,185.230695,avatar shifts around negotiation ring,1
+261,19,v20-scene-d19,Ori,1,1,1,1,0,1.26,330.988459,object ceremony path clears and handoff animates,1
+262,19,v20-scene-d19,Vonn,1,1,1,0,1,1.19,106.676223,collision probe redirects avatar step,1
+263,19,v20-scene-d19,Sova,1,0,1,0,1,1.15,243.513987,avatar shifts around negotiation ring,1
+264,19,v20-scene-d19,Keth,1,0,1,1,1,1.26,25.221751,object ceremony path clears and handoff animates,1
+265,19,v20-scene-d19,Melo,1,0,1,1,1,1.16,160.199515,object ceremony path clears and handoff animates,1
+266,20,v20-scene-d20,Ori,1,0,1,0,1,1.09,288.04985,collision probe redirects avatar step,1
+267,20,v20-scene-d20,Vonn,1,1,1,0,1,1.05,63.937614,avatar shifts around negotiation ring,1
+268,20,v20-scene-d20,Sova,1,1,1,1,1,1.26,209.695378,object ceremony path clears and handoff animates,1
+269,20,v20-scene-d20,Keth,1,1,1,1,1,1.22,346.533142,object ceremony path clears and handoff animates,1
+270,20,v20-scene-d20,Melo,1,1,1,1,1,1.26,125.850906,object ceremony path clears and handoff animates,1
+271,20,v20-scene-d20,Nari,1,1,1,1,1,1.22,262.68867,object ceremony path clears and handoff animates,1
+272,20,v20-scene-d20,Ori,1,1,1,1,1,1.12,37.666434,object ceremony path clears and handoff animates,1
+273,20,v20-scene-d20,Vonn,1,1,1,1,1,1.12,175.744198,object ceremony path clears and handoff animates,1
+274,20,v20-scene-d20,Sova,1,1,1,0,1,1.05,311.431962,avatar shifts around negotiation ring,1
+275,20,v20-scene-d20,Keth,1,1,1,1,1,1.12,90.949726,object ceremony path clears and handoff animates,1
+276,20,v20-scene-d20,Melo,1,1,1,1,1,1.22,233.07749,object ceremony path clears and handoff animates,1
+277,20,v20-scene-d20,Nari,1,1,1,1,1,1.22,11.155254,object ceremony path clears and handoff animates,1
+278,20,v20-scene-d20,Ori,1,1,1,1,1,1.22,149.233018,object ceremony path clears and handoff animates,1
+279,20,v20-scene-d20,Vonn,1,1,1,0,1,1.19,286.160782,collision probe redirects avatar step,1
+280,21,v20-scene-d21,Keth,1,1,1,1,1,1.12,54.432989,object ceremony path clears and handoff animates,1
+281,21,v20-scene-d21,Melo,1,1,1,0,1,1.05,190.120753,avatar shifts around negotiation ring,1
+282,21,v20-scene-d21,Nari,1,1,1,1,1,1.12,329.638517,object ceremony path clears and handoff animates,1
+283,21,v20-scene-d21,Ori,1,1,1,1,1,1.22,111.766281,object ceremony path clears and handoff animates,1
+284,21,v20-scene-d21,Vonn,1,1,1,1,0,1.22,249.844045,object ceremony path clears and handoff animates,1
+285,21,v20-scene-d21,Sova,1,1,1,1,1,1.22,27.921809,object ceremony path clears and handoff animates,1
+286,21,v20-scene-d21,Keth,1,1,1,1,1,1.22,165.999573,object ceremony path clears and handoff animates,1
+287,21,v20-scene-d21,Melo,1,1,1,1,1,1.12,300.977337,object ceremony path clears and handoff animates,1
+288,21,v20-scene-d21,Nari,1,1,1,0,1,1.09,77.905101,collision probe redirects avatar step,1
+289,21,v20-scene-d21,Ori,1,1,1,1,1,1.12,217.132865,object ceremony path clears and handoff animates,1
+290,21,v20-scene-d21,Vonn,1,1,1,1,1,1.12,354.260629,object ceremony path clears and handoff animates,1
+291,21,v20-scene-d21,Sova,1,1,1,1,1,1.22,136.388393,object ceremony path clears and handoff animates,1
+292,21,v20-scene-d21,Keth,1,1,1,0,1,1.15,272.076157,avatar shifts around negotiation ring,1
+293,21,v20-scene-d21,Melo,1,1,1,1,1,1.22,52.543921,object ceremony path clears and handoff animates,1
+294,22,v20-scene-d22,Ori,1,0,1,1,1,1.16,180.874316,object ceremony path clears and handoff animates,1
+295,22,v20-scene-d22,Vonn,1,0,1,0,1,1.09,316.56208,collision probe redirects avatar step,1
+296,22,v20-scene-d22,Sova,1,0,1,1,1,1.16,97.029844,object ceremony path clears and handoff animates,1
+297,22,v20-scene-d22,Keth,1,0,1,1,1,1.16,234.157608,object ceremony path clears and handoff animates,1
+298,22,v20-scene-d22,Melo,1,1,1,1,1,1.26,16.285372,object ceremony path clears and handoff animates,1
+299,22,v20-scene-d22,Nari,1,1,1,0,1,1.15,150.733136,avatar shifts around negotiation ring,1
+300,22,v20-scene-d22,Ori,1,0,1,1,1,1.22,291.2009,object ceremony path clears and handoff animates,1
+301,22,v20-scene-d22,Vonn,1,0,1,1,1,1.22,69.278664,object ceremony path clears and handoff animates,1
+302,22,v20-scene-d22,Sova,1,1,1,0,1,1.05,201.866428,avatar shifts around negotiation ring,1
+303,22,v20-scene-d22,Keth,1,1,1,1,1,1.12,342.334192,object ceremony path clears and handoff animates,1
+304,22,v20-scene-d22,Melo,1,1,1,1,1,1.12,120.411956,object ceremony path clears and handoff animates,1
+305,22,v20-scene-d22,Nari,1,1,1,1,1,1.12,257.53972,object ceremony path clears and handoff animates,1
+306,22,v20-scene-d22,Ori,1,1,1,1,1,1.22,39.667484,object ceremony path clears and handoff animates,1
+307,22,v20-scene-d22,Vonn,1,1,1,1,0,1.22,177.745248,object ceremony path clears and handoff animates,1
+308,23,v20-scene-d23,Keth,1,1,1,1,1,1.22,307.893612,object ceremony path clears and handoff animates,1
+309,23,v20-scene-d23,Melo,1,1,1,0,1,1.05,80.481376,avatar shifts around negotiation ring,1
+310,23,v20-scene-d23,Nari,1,1,1,0,1,1.05,218.55914,avatar shifts around negotiation ring,1
+311,23,v20-scene-d23,Ori,1,1,1,1,1,1.12,359.026904,object ceremony path clears and handoff animates,1
+312,23,v20-scene-d23,Vonn,1,1,1,1,1,1.12,136.154668,object ceremony path clears and handoff animates,1
+313,23,v20-scene-d23,Sova,1,1,1,1,1,1.22,278.282432,object ceremony path clears and handoff animates,1
+314,23,v20-scene-d23,Keth,1,1,1,1,1,1.22,56.360196,object ceremony path clears and handoff animates,1
+315,23,v20-scene-d23,Melo,1,1,1,1,1,1.22,194.43796,object ceremony path clears and handoff animates,1
+316,23,v20-scene-d23,Nari,1,1,1,0,1,1.15,330.125724,avatar shifts around negotiation ring,1
+317,23,v20-scene-d23,Ori,1,1,1,1,1,1.12,107.493488,object ceremony path clears and handoff animates,1
+318,23,v20-scene-d23,Vonn,1,1,1,1,1,1.12,245.571252,object ceremony path clears and handoff animates,1
+319,23,v20-scene-d23,Sova,1,1,1,1,1,1.12,23.649016,object ceremony path clears and handoff animates,1
+320,23,v20-scene-d23,Keth,1,1,1,1,1,1.12,160.77678,object ceremony path clears and handoff animates,1
+321,23,v20-scene-d23,Melo,1,1,1,0,1,1.15,300.514544,avatar shifts around negotiation ring,1
+322,24,v20-scene-d24,Ori,1,1,1,1,1,1.22,73.005322,object ceremony path clears and handoff animates,1
+323,24,v20-scene-d24,Vonn,1,0,1,0,1,1.19,208.983086,collision probe redirects avatar step,1
+324,24,v20-scene-d24,Sova,1,1,1,1,1,1.16,347.30085,object ceremony path clears and handoff animates,1
+325,24,v20-scene-d24,Keth,1,0,1,1,1,1.16,125.378614,object ceremony path clears and handoff animates,1
+326,24,v20-scene-d24,Melo,1,0,1,1,1,1.16,263.456378,object ceremony path clears and handoff animates,1
+327,24,v20-scene-d24,Nari,1,1,1,1,1,1.12,39.344142,object ceremony path clears and handoff animates,1
+328,24,v20-scene-d24,Ori,1,1,1,1,1,1.26,182.711906,object ceremony path clears and handoff animates,1
+329,24,v20-scene-d24,Vonn,1,1,1,1,1,1.22,319.54967,object ceremony path clears and handoff animates,1
+330,24,v20-scene-d24,Sova,1,1,1,0,0,1.15,95.237434,avatar shifts around negotiation ring,1
+331,24,v20-scene-d24,Keth,1,1,1,1,1,1.22,235.705198,object ceremony path clears and handoff animates,1
+332,24,v20-scene-d24,Melo,1,1,1,1,1,1.12,10.682962,object ceremony path clears and handoff animates,1
+333,24,v20-scene-d24,Nari,1,0,1,1,1,1.16,150.000726,object ceremony path clears and handoff animates,1
+334,24,v20-scene-d24,Ori,1,1,1,1,1,1.12,286.83849,object ceremony path clears and handoff animates,1
+335,24,v20-scene-d24,Vonn,1,1,1,1,1,1.12,63.966254,object ceremony path clears and handoff animates,1

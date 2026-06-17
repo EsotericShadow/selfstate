@@ -1,0 +1,112 @@
+{
+  "ablations": [
+    {
+      "ablation": "no_scene_geometry",
+      "interpretation": "Positions, object motion, and collision checks lose a shared spatial frame.",
+      "readiness_after_ablation": 0.548596,
+      "readiness_loss": 0.35
+    },
+    {
+      "ablation": "no_sprite_body_layers",
+      "interpretation": "Agents stop having visible layered bodies in the browser scene.",
+      "readiness_after_ablation": 0.593596,
+      "readiness_loss": 0.305
+    },
+    {
+      "ablation": "no_collision_probes",
+      "interpretation": "Object ceremonies and avatar steps can overlap agents or obstacles.",
+      "readiness_after_ablation": 0.613596,
+      "readiness_loss": 0.285
+    },
+    {
+      "ablation": "no_object_motion",
+      "interpretation": "Ceremony objects no longer move through traceable handoff arcs.",
+      "readiness_after_ablation": 0.643596,
+      "readiness_loss": 0.255
+    },
+    {
+      "ablation": "no_input_affordances",
+      "interpretation": "The avatar cannot select agents, objects, or ceremony handoff targets in scene space.",
+      "readiness_after_ablation": 0.678596,
+      "readiness_loss": 0.22
+    },
+    {
+      "ablation": "no_depth_camera_cues",
+      "interpretation": "The 2D/3D-ish scene loses depth sorting, shadows, and camera cues.",
+      "readiness_after_ablation": 0.713596,
+      "readiness_loss": 0.185
+    }
+  ],
+  "artifacts": {
+    "avatar_agent_positions_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_avatar_agent_positions.csv",
+    "browser_ticks_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_browser_ticks.csv",
+    "collision_aware_object_ceremonies_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_collision_aware_object_ceremonies.csv",
+    "depth_camera_cues_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_depth_camera_cues.csv",
+    "local_collision_probes_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_local_collision_probes.csv",
+    "multi_sensory_scene_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_multi_sensory_scene.csv",
+    "results_json": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_results.json",
+    "scene_geometry_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_scene_geometry.csv",
+    "scene_input_affordances_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_scene_input_affordances.csv",
+    "scene_object_motion_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_scene_object_motion.csv",
+    "scene_replays_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_scene_replays.csv",
+    "sprite_body_layers_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_sprite_body_layers.csv",
+    "state_json": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_state.json",
+    "summary_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_summary.csv",
+    "verdict_csv": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_verdict.csv",
+    "visualization_html": "visualizations/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge.html"
+  },
+  "claim_boundary": "Deterministic browser-local scene geometry scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "agents": 6,
+    "avatar_agent_position_frames": 336,
+    "browser_world_v20_ticks": 336,
+    "collision_aware_object_ceremony_frames": 336,
+    "depth_camera_cue_frames": 336,
+    "local_collision_probe_frames": 336,
+    "multi_sensory_scene_frames": 336,
+    "scene_geometry_frames": 336,
+    "scene_input_affordance_frames": 336,
+    "scene_object_motion_frames": 336,
+    "scene_replay_frames": 336,
+    "sprite_body_layer_frames": 336
+  },
+  "days": 24,
+  "metrics": {
+    "animated_body_layer_visibility": 0.94494,
+    "avatar_agent_scene_position_binding": 0.872024,
+    "avatar_input_to_scene_binding": 0.982887,
+    "body_scene_visibility": 0.827381,
+    "browser_world_v20_scene_geometry_readiness": 0.898596,
+    "browser_world_v20_surface_available": 1.0,
+    "ceremony_attempt_count": 312.0,
+    "collision_aware_object_ceremony": 0.991987,
+    "collision_event_count": 80.0,
+    "comfort_pain_scene_bounds": 1.0,
+    "depth_camera_cue_integrity": 0.986607,
+    "frequency_flower_scene_rhythm": 1.0,
+    "input_feedback_visibility": 0.955357,
+    "local_collision_avoidance": 0.925,
+    "local_coordinate_integrity": 1.0,
+    "mean_scene_channel_score": 0.950497,
+    "multi_sensory_scene_binding": 0.967262,
+    "object_ceremony_completion": 0.826923,
+    "object_motion_traceability": 0.895833,
+    "object_owner_preservation": 0.973214,
+    "object_scene_visibility": 0.826923,
+    "personal_space_scene_preservation": 0.982143,
+    "privacy_safe_scene_state": 1.0,
+    "replay_scene_integrity": 0.950574,
+    "scene_geometry_surface": 0.97619,
+    "source_embodied_animation_continuity": 1.0,
+    "sprite_body_layer_integrity": 0.97619,
+    "weakest_channel_score": 0.826923
+  },
+  "name": "SSRM-3D browser world v20 scene geometry collision object ceremony bridge",
+  "next_gate": "browser world v21 with live playable scene state mutation, keyboard avatar movement, collision-aware proximity prompts, and object ceremony state persistence in localStorage",
+  "report": 260,
+  "seed": 20260873,
+  "source_dependency": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_results.json",
+  "source_verdict": "pass",
+  "ticks_per_day": 14,
+  "verdict": "pass"
+}

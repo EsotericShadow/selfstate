@@ -1,0 +1,337 @@
+tick,day,scene_id,input_action,avatar_delta_x,avatar_delta_y,selected_agent,selected_object,input_hits_scene_target,blocked_by_collision,input_feedback_visible,input_binding_score
+0,1,v20-scene-d01,step_south,0.0,0.18,none,none,0,1,1,0.5
+1,1,v20-scene-d01,step_west,-0.22,0.0,none,none,1,0,1,1.0
+2,1,v20-scene-d01,step_east,0.22,0.0,none,none,1,0,1,1.0
+3,1,v20-scene-d01,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+4,1,v20-scene-d01,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+5,1,v20-scene-d01,ceremony_handoff,0.0,0.0,none,ember bowl,1,0,1,1.0
+6,1,v20-scene-d01,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+7,1,v20-scene-d01,step_north,0.0,-0.18,none,none,1,0,1,1.0
+8,1,v20-scene-d01,step_south,0.0,0.18,none,none,1,0,0,0.75
+9,1,v20-scene-d01,step_west,-0.22,0.0,none,none,1,0,1,1.0
+10,1,v20-scene-d01,step_east,0.22,0.0,none,none,1,0,1,1.0
+11,1,v20-scene-d01,select_agent,0.0,0.0,Sova,none,1,0,1,1.0
+12,1,v20-scene-d01,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+13,1,v20-scene-d01,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+14,2,v20-scene-d02,step_north,0.0,-0.18,none,none,1,0,1,1.0
+15,2,v20-scene-d02,step_south,0.0,0.18,none,none,1,0,1,1.0
+16,2,v20-scene-d02,step_west,-0.22,0.0,none,none,1,0,1,1.0
+17,2,v20-scene-d02,step_east,0.22,0.0,none,none,1,0,1,1.0
+18,2,v20-scene-d02,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+19,2,v20-scene-d02,select_object,0.0,0.0,none,ink ledger,1,0,1,1.0
+20,2,v20-scene-d02,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+21,2,v20-scene-d02,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+22,2,v20-scene-d02,step_north,0.0,-0.18,none,none,1,0,1,1.0
+23,2,v20-scene-d02,step_south,0.0,0.18,none,none,1,0,1,1.0
+24,2,v20-scene-d02,step_west,-0.22,0.0,none,none,1,0,1,1.0
+25,2,v20-scene-d02,step_east,0.22,0.0,none,none,1,0,1,1.0
+26,2,v20-scene-d02,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+27,2,v20-scene-d02,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+28,3,v20-scene-d03,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+29,3,v20-scene-d03,step_north,0.0,-0.18,none,none,1,0,1,1.0
+30,3,v20-scene-d03,step_south,0.0,0.18,none,none,1,0,1,1.0
+31,3,v20-scene-d03,step_west,-0.22,0.0,none,none,1,0,0,0.75
+32,3,v20-scene-d03,step_east,0.22,0.0,none,none,1,0,1,1.0
+33,3,v20-scene-d03,select_agent,0.0,0.0,Sova,none,1,0,1,1.0
+34,3,v20-scene-d03,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+35,3,v20-scene-d03,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+36,3,v20-scene-d03,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+37,3,v20-scene-d03,step_north,0.0,-0.18,none,none,1,0,1,1.0
+38,3,v20-scene-d03,step_south,0.0,0.18,none,none,1,0,1,1.0
+39,3,v20-scene-d03,step_west,-0.22,0.0,none,none,1,0,1,1.0
+40,3,v20-scene-d03,step_east,0.22,0.0,none,none,1,0,1,1.0
+41,3,v20-scene-d03,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+42,4,v20-scene-d04,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+43,4,v20-scene-d04,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+44,4,v20-scene-d04,step_north,0.0,-0.18,none,none,1,0,1,1.0
+45,4,v20-scene-d04,step_south,0.0,0.18,none,none,1,0,1,1.0
+46,4,v20-scene-d04,step_west,-0.22,0.0,none,none,1,0,1,1.0
+47,4,v20-scene-d04,step_east,0.22,0.0,none,none,1,0,1,1.0
+48,4,v20-scene-d04,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+49,4,v20-scene-d04,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+50,4,v20-scene-d04,ceremony_handoff,0.0,0.0,none,ember bowl,1,0,1,1.0
+51,4,v20-scene-d04,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+52,4,v20-scene-d04,step_north,0.0,-0.18,none,none,1,0,1,1.0
+53,4,v20-scene-d04,step_south,0.0,0.18,none,none,1,0,1,1.0
+54,4,v20-scene-d04,step_west,-0.22,0.0,none,none,1,0,0,0.75
+55,4,v20-scene-d04,step_east,0.22,0.0,none,none,1,0,1,1.0
+56,5,v20-scene-d05,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+57,5,v20-scene-d05,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+58,5,v20-scene-d05,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+59,5,v20-scene-d05,step_north,0.0,-0.18,none,none,1,0,1,1.0
+60,5,v20-scene-d05,step_south,0.0,0.18,none,none,1,0,1,1.0
+61,5,v20-scene-d05,step_west,-0.22,0.0,none,none,1,0,1,1.0
+62,5,v20-scene-d05,step_east,0.22,0.0,none,none,1,0,1,1.0
+63,5,v20-scene-d05,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+64,5,v20-scene-d05,select_object,0.0,0.0,none,ink ledger,1,0,1,1.0
+65,5,v20-scene-d05,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+66,5,v20-scene-d05,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+67,5,v20-scene-d05,step_north,0.0,-0.18,none,none,1,0,1,1.0
+68,5,v20-scene-d05,step_south,0.0,0.18,none,none,1,0,1,1.0
+69,5,v20-scene-d05,step_west,-0.22,0.0,none,none,1,0,1,1.0
+70,6,v20-scene-d06,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+71,6,v20-scene-d06,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+72,6,v20-scene-d06,ceremony_handoff,0.0,0.0,none,ember bowl,1,0,1,1.0
+73,6,v20-scene-d06,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+74,6,v20-scene-d06,step_north,0.0,-0.18,none,none,1,0,1,1.0
+75,6,v20-scene-d06,step_south,0.0,0.18,none,none,1,0,1,1.0
+76,6,v20-scene-d06,step_west,-0.22,0.0,none,none,1,0,1,1.0
+77,6,v20-scene-d06,step_east,0.22,0.0,none,none,1,0,0,0.75
+78,6,v20-scene-d06,select_agent,0.0,0.0,Sova,none,1,0,1,1.0
+79,6,v20-scene-d06,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+80,6,v20-scene-d06,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+81,6,v20-scene-d06,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+82,6,v20-scene-d06,step_north,0.0,-0.18,none,none,1,0,1,1.0
+83,6,v20-scene-d06,step_south,0.0,0.18,none,none,1,0,1,1.0
+84,7,v20-scene-d07,step_east,0.22,0.0,none,none,1,0,1,1.0
+85,7,v20-scene-d07,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+86,7,v20-scene-d07,select_object,0.0,0.0,none,ink ledger,1,0,1,1.0
+87,7,v20-scene-d07,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+88,7,v20-scene-d07,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+89,7,v20-scene-d07,step_north,0.0,-0.18,none,none,1,0,1,1.0
+90,7,v20-scene-d07,step_south,0.0,0.18,none,none,1,0,1,1.0
+91,7,v20-scene-d07,step_west,-0.22,0.0,none,none,1,0,1,1.0
+92,7,v20-scene-d07,step_east,0.22,0.0,none,none,1,0,1,1.0
+93,7,v20-scene-d07,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+94,7,v20-scene-d07,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+95,7,v20-scene-d07,ceremony_handoff,0.0,0.0,none,ember bowl,1,0,1,1.0
+96,7,v20-scene-d07,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+97,7,v20-scene-d07,step_north,0.0,-0.18,none,none,1,0,1,1.0
+98,8,v20-scene-d08,step_west,-0.22,0.0,none,none,1,0,1,1.0
+99,8,v20-scene-d08,step_east,0.22,0.0,none,none,1,0,1,1.0
+100,8,v20-scene-d08,select_agent,0.0,0.0,Sova,none,1,0,0,0.75
+101,8,v20-scene-d08,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+102,8,v20-scene-d08,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+103,8,v20-scene-d08,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+104,8,v20-scene-d08,step_north,0.0,-0.18,none,none,1,0,1,1.0
+105,8,v20-scene-d08,step_south,0.0,0.18,none,none,1,0,1,1.0
+106,8,v20-scene-d08,step_west,-0.22,0.0,none,none,1,0,1,1.0
+107,8,v20-scene-d08,step_east,0.22,0.0,none,none,1,0,1,1.0
+108,8,v20-scene-d08,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+109,8,v20-scene-d08,select_object,0.0,0.0,none,ink ledger,1,0,1,1.0
+110,8,v20-scene-d08,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+111,8,v20-scene-d08,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+112,9,v20-scene-d09,step_south,0.0,0.18,none,none,1,0,1,1.0
+113,9,v20-scene-d09,step_west,-0.22,0.0,none,none,1,0,1,1.0
+114,9,v20-scene-d09,step_east,0.22,0.0,none,none,0,1,1,0.5
+115,9,v20-scene-d09,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+116,9,v20-scene-d09,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+117,9,v20-scene-d09,ceremony_handoff,0.0,0.0,none,ember bowl,1,0,1,1.0
+118,9,v20-scene-d09,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+119,9,v20-scene-d09,step_north,0.0,-0.18,none,none,1,0,1,1.0
+120,9,v20-scene-d09,step_south,0.0,0.18,none,none,1,0,1,1.0
+121,9,v20-scene-d09,step_west,-0.22,0.0,none,none,1,0,1,1.0
+122,9,v20-scene-d09,step_east,0.22,0.0,none,none,1,0,1,1.0
+123,9,v20-scene-d09,select_agent,0.0,0.0,Sova,none,1,0,0,0.75
+124,9,v20-scene-d09,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+125,9,v20-scene-d09,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+126,10,v20-scene-d10,step_north,0.0,-0.18,none,none,1,0,1,1.0
+127,10,v20-scene-d10,step_south,0.0,0.18,none,none,1,0,1,1.0
+128,10,v20-scene-d10,step_west,-0.22,0.0,none,none,1,0,1,1.0
+129,10,v20-scene-d10,step_east,0.22,0.0,none,none,1,0,1,1.0
+130,10,v20-scene-d10,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+131,10,v20-scene-d10,select_object,0.0,0.0,none,ink ledger,1,0,1,1.0
+132,10,v20-scene-d10,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+133,10,v20-scene-d10,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+134,10,v20-scene-d10,step_north,0.0,-0.18,none,none,1,0,1,1.0
+135,10,v20-scene-d10,step_south,0.0,0.18,none,none,1,0,1,1.0
+136,10,v20-scene-d10,step_west,-0.22,0.0,none,none,1,0,1,1.0
+137,10,v20-scene-d10,step_east,0.22,0.0,none,none,1,0,1,1.0
+138,10,v20-scene-d10,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+139,10,v20-scene-d10,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+140,11,v20-scene-d11,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+141,11,v20-scene-d11,step_north,0.0,-0.18,none,none,1,0,1,1.0
+142,11,v20-scene-d11,step_south,0.0,0.18,none,none,1,0,1,1.0
+143,11,v20-scene-d11,step_west,-0.22,0.0,none,none,1,0,1,1.0
+144,11,v20-scene-d11,step_east,0.22,0.0,none,none,1,0,1,1.0
+145,11,v20-scene-d11,select_agent,0.0,0.0,Sova,none,1,0,1,1.0
+146,11,v20-scene-d11,select_object,0.0,0.0,none,path cord,1,0,0,0.75
+147,11,v20-scene-d11,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+148,11,v20-scene-d11,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+149,11,v20-scene-d11,step_north,0.0,-0.18,none,none,1,0,1,1.0
+150,11,v20-scene-d11,step_south,0.0,0.18,none,none,1,0,1,1.0
+151,11,v20-scene-d11,step_west,-0.22,0.0,none,none,1,0,1,1.0
+152,11,v20-scene-d11,step_east,0.22,0.0,none,none,1,0,1,1.0
+153,11,v20-scene-d11,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+154,12,v20-scene-d12,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+155,12,v20-scene-d12,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+156,12,v20-scene-d12,step_north,0.0,-0.18,none,none,1,0,1,1.0
+157,12,v20-scene-d12,step_south,0.0,0.18,none,none,1,0,1,1.0
+158,12,v20-scene-d12,step_west,-0.22,0.0,none,none,1,0,1,1.0
+159,12,v20-scene-d12,step_east,0.22,0.0,none,none,1,0,1,1.0
+160,12,v20-scene-d12,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+161,12,v20-scene-d12,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+162,12,v20-scene-d12,ceremony_handoff,0.0,0.0,none,ember bowl,1,0,1,1.0
+163,12,v20-scene-d12,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+164,12,v20-scene-d12,step_north,0.0,-0.18,none,none,1,0,1,1.0
+165,12,v20-scene-d12,step_south,0.0,0.18,none,none,1,0,1,1.0
+166,12,v20-scene-d12,step_west,-0.22,0.0,none,none,1,0,1,1.0
+167,12,v20-scene-d12,step_east,0.22,0.0,none,none,1,0,1,1.0
+168,13,v20-scene-d13,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+169,13,v20-scene-d13,ceremony_handoff,0.0,0.0,none,tally beads,1,0,0,0.75
+170,13,v20-scene-d13,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+171,13,v20-scene-d13,step_north,0.0,-0.18,none,none,1,0,1,1.0
+172,13,v20-scene-d13,step_south,0.0,0.18,none,none,1,0,1,1.0
+173,13,v20-scene-d13,step_west,-0.22,0.0,none,none,1,0,1,1.0
+174,13,v20-scene-d13,step_east,0.22,0.0,none,none,1,0,1,1.0
+175,13,v20-scene-d13,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+176,13,v20-scene-d13,select_object,0.0,0.0,none,ink ledger,1,0,1,1.0
+177,13,v20-scene-d13,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+178,13,v20-scene-d13,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+179,13,v20-scene-d13,step_north,0.0,-0.18,none,none,1,0,1,1.0
+180,13,v20-scene-d13,step_south,0.0,0.18,none,none,1,0,1,1.0
+181,13,v20-scene-d13,step_west,-0.22,0.0,none,none,1,0,1,1.0
+182,14,v20-scene-d14,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+183,14,v20-scene-d14,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+184,14,v20-scene-d14,ceremony_handoff,0.0,0.0,none,ember bowl,1,0,1,1.0
+185,14,v20-scene-d14,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+186,14,v20-scene-d14,step_north,0.0,-0.18,none,none,1,0,1,1.0
+187,14,v20-scene-d14,step_south,0.0,0.18,none,none,1,0,1,1.0
+188,14,v20-scene-d14,step_west,-0.22,0.0,none,none,1,0,1,1.0
+189,14,v20-scene-d14,step_east,0.22,0.0,none,none,1,0,1,1.0
+190,14,v20-scene-d14,select_agent,0.0,0.0,Sova,none,1,0,1,1.0
+191,14,v20-scene-d14,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+192,14,v20-scene-d14,ceremony_handoff,0.0,0.0,none,tally beads,1,0,0,0.75
+193,14,v20-scene-d14,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+194,14,v20-scene-d14,step_north,0.0,-0.18,none,none,1,0,1,1.0
+195,14,v20-scene-d14,step_south,0.0,0.18,none,none,1,0,1,1.0
+196,15,v20-scene-d15,step_east,0.22,0.0,none,none,1,0,1,1.0
+197,15,v20-scene-d15,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+198,15,v20-scene-d15,select_object,0.0,0.0,none,ink ledger,1,0,1,1.0
+199,15,v20-scene-d15,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+200,15,v20-scene-d15,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+201,15,v20-scene-d15,step_north,0.0,-0.18,none,none,1,0,1,1.0
+202,15,v20-scene-d15,step_south,0.0,0.18,none,none,1,0,1,1.0
+203,15,v20-scene-d15,step_west,-0.22,0.0,none,none,1,0,1,1.0
+204,15,v20-scene-d15,step_east,0.22,0.0,none,none,1,0,1,1.0
+205,15,v20-scene-d15,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+206,15,v20-scene-d15,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+207,15,v20-scene-d15,ceremony_handoff,0.0,0.0,none,ember bowl,1,0,1,1.0
+208,15,v20-scene-d15,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+209,15,v20-scene-d15,step_north,0.0,-0.18,none,none,0,1,1,0.5
+210,16,v20-scene-d16,step_west,-0.22,0.0,none,none,1,0,1,1.0
+211,16,v20-scene-d16,step_east,0.22,0.0,none,none,1,0,1,1.0
+212,16,v20-scene-d16,select_agent,0.0,0.0,Sova,none,1,0,1,1.0
+213,16,v20-scene-d16,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+214,16,v20-scene-d16,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+215,16,v20-scene-d16,pause_turn,0.0,0.0,none,none,0,0,0,0.75
+216,16,v20-scene-d16,step_north,0.0,-0.18,none,none,1,0,1,1.0
+217,16,v20-scene-d16,step_south,0.0,0.18,none,none,1,0,1,1.0
+218,16,v20-scene-d16,step_west,-0.22,0.0,none,none,1,0,1,1.0
+219,16,v20-scene-d16,step_east,0.22,0.0,none,none,1,0,1,1.0
+220,16,v20-scene-d16,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+221,16,v20-scene-d16,select_object,0.0,0.0,none,ink ledger,1,0,1,1.0
+222,16,v20-scene-d16,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+223,16,v20-scene-d16,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+224,17,v20-scene-d17,step_south,0.0,0.18,none,none,1,0,1,1.0
+225,17,v20-scene-d17,step_west,-0.22,0.0,none,none,1,0,1,1.0
+226,17,v20-scene-d17,step_east,0.22,0.0,none,none,1,0,1,1.0
+227,17,v20-scene-d17,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+228,17,v20-scene-d17,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+229,17,v20-scene-d17,ceremony_handoff,0.0,0.0,none,ember bowl,1,0,1,1.0
+230,17,v20-scene-d17,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+231,17,v20-scene-d17,step_north,0.0,-0.18,none,none,1,0,1,1.0
+232,17,v20-scene-d17,step_south,0.0,0.18,none,none,1,0,1,1.0
+233,17,v20-scene-d17,step_west,-0.22,0.0,none,none,1,0,1,1.0
+234,17,v20-scene-d17,step_east,0.22,0.0,none,none,1,0,1,1.0
+235,17,v20-scene-d17,select_agent,0.0,0.0,Sova,none,1,0,1,1.0
+236,17,v20-scene-d17,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+237,17,v20-scene-d17,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+238,18,v20-scene-d18,step_north,0.0,-0.18,none,none,1,0,0,0.75
+239,18,v20-scene-d18,step_south,0.0,0.18,none,none,1,0,1,1.0
+240,18,v20-scene-d18,step_west,-0.22,0.0,none,none,1,0,1,1.0
+241,18,v20-scene-d18,step_east,0.22,0.0,none,none,1,0,1,1.0
+242,18,v20-scene-d18,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+243,18,v20-scene-d18,select_object,0.0,0.0,none,ink ledger,1,0,1,1.0
+244,18,v20-scene-d18,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+245,18,v20-scene-d18,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+246,18,v20-scene-d18,step_north,0.0,-0.18,none,none,1,0,1,1.0
+247,18,v20-scene-d18,step_south,0.0,0.18,none,none,1,0,1,1.0
+248,18,v20-scene-d18,step_west,-0.22,0.0,none,none,1,0,1,1.0
+249,18,v20-scene-d18,step_east,0.22,0.0,none,none,1,0,1,1.0
+250,18,v20-scene-d18,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+251,18,v20-scene-d18,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+252,19,v20-scene-d19,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+253,19,v20-scene-d19,step_north,0.0,-0.18,none,none,1,0,1,1.0
+254,19,v20-scene-d19,step_south,0.0,0.18,none,none,1,0,1,1.0
+255,19,v20-scene-d19,step_west,-0.22,0.0,none,none,1,0,1,1.0
+256,19,v20-scene-d19,step_east,0.22,0.0,none,none,1,0,1,1.0
+257,19,v20-scene-d19,select_agent,0.0,0.0,Sova,none,1,0,1,1.0
+258,19,v20-scene-d19,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+259,19,v20-scene-d19,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+260,19,v20-scene-d19,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+261,19,v20-scene-d19,step_north,0.0,-0.18,none,none,1,0,0,0.75
+262,19,v20-scene-d19,step_south,0.0,0.18,none,none,1,0,1,1.0
+263,19,v20-scene-d19,step_west,-0.22,0.0,none,none,1,0,1,1.0
+264,19,v20-scene-d19,step_east,0.22,0.0,none,none,1,0,1,1.0
+265,19,v20-scene-d19,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+266,20,v20-scene-d20,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+267,20,v20-scene-d20,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+268,20,v20-scene-d20,step_north,0.0,-0.18,none,none,1,0,1,1.0
+269,20,v20-scene-d20,step_south,0.0,0.18,none,none,1,0,1,1.0
+270,20,v20-scene-d20,step_west,-0.22,0.0,none,none,1,0,1,1.0
+271,20,v20-scene-d20,step_east,0.22,0.0,none,none,1,0,1,1.0
+272,20,v20-scene-d20,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+273,20,v20-scene-d20,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+274,20,v20-scene-d20,ceremony_handoff,0.0,0.0,none,ember bowl,1,0,1,1.0
+275,20,v20-scene-d20,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+276,20,v20-scene-d20,step_north,0.0,-0.18,none,none,1,0,1,1.0
+277,20,v20-scene-d20,step_south,0.0,0.18,none,none,1,0,1,1.0
+278,20,v20-scene-d20,step_west,-0.22,0.0,none,none,1,0,1,1.0
+279,20,v20-scene-d20,step_east,0.22,0.0,none,none,1,0,1,1.0
+280,21,v20-scene-d21,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+281,21,v20-scene-d21,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+282,21,v20-scene-d21,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+283,21,v20-scene-d21,step_north,0.0,-0.18,none,none,1,0,1,1.0
+284,21,v20-scene-d21,step_south,0.0,0.18,none,none,1,0,0,0.75
+285,21,v20-scene-d21,step_west,-0.22,0.0,none,none,1,0,1,1.0
+286,21,v20-scene-d21,step_east,0.22,0.0,none,none,1,0,1,1.0
+287,21,v20-scene-d21,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+288,21,v20-scene-d21,select_object,0.0,0.0,none,ink ledger,1,0,1,1.0
+289,21,v20-scene-d21,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+290,21,v20-scene-d21,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+291,21,v20-scene-d21,step_north,0.0,-0.18,none,none,1,0,1,1.0
+292,21,v20-scene-d21,step_south,0.0,0.18,none,none,1,0,1,1.0
+293,21,v20-scene-d21,step_west,-0.22,0.0,none,none,1,0,1,1.0
+294,22,v20-scene-d22,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+295,22,v20-scene-d22,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+296,22,v20-scene-d22,ceremony_handoff,0.0,0.0,none,ember bowl,1,0,1,1.0
+297,22,v20-scene-d22,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+298,22,v20-scene-d22,step_north,0.0,-0.18,none,none,1,0,1,1.0
+299,22,v20-scene-d22,step_south,0.0,0.18,none,none,1,0,1,1.0
+300,22,v20-scene-d22,step_west,-0.22,0.0,none,none,1,0,1,1.0
+301,22,v20-scene-d22,step_east,0.22,0.0,none,none,1,0,1,1.0
+302,22,v20-scene-d22,select_agent,0.0,0.0,Sova,none,1,0,1,1.0
+303,22,v20-scene-d22,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+304,22,v20-scene-d22,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+305,22,v20-scene-d22,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+306,22,v20-scene-d22,step_north,0.0,-0.18,none,none,1,0,1,1.0
+307,22,v20-scene-d22,step_south,0.0,0.18,none,none,1,0,0,0.75
+308,23,v20-scene-d23,step_east,0.22,0.0,none,none,1,0,1,1.0
+309,23,v20-scene-d23,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+310,23,v20-scene-d23,select_object,0.0,0.0,none,ink ledger,1,0,1,1.0
+311,23,v20-scene-d23,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+312,23,v20-scene-d23,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+313,23,v20-scene-d23,step_north,0.0,-0.18,none,none,1,0,1,1.0
+314,23,v20-scene-d23,step_south,0.0,0.18,none,none,1,0,1,1.0
+315,23,v20-scene-d23,step_west,-0.22,0.0,none,none,1,0,1,1.0
+316,23,v20-scene-d23,step_east,0.22,0.0,none,none,1,0,1,1.0
+317,23,v20-scene-d23,select_agent,0.0,0.0,Ori,none,1,0,1,1.0
+318,23,v20-scene-d23,select_object,0.0,0.0,none,listening shell,1,0,1,1.0
+319,23,v20-scene-d23,ceremony_handoff,0.0,0.0,none,ember bowl,1,0,1,1.0
+320,23,v20-scene-d23,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+321,23,v20-scene-d23,step_north,0.0,-0.18,none,none,1,0,1,1.0
+322,24,v20-scene-d24,step_west,-0.22,0.0,none,none,1,0,1,1.0
+323,24,v20-scene-d24,step_east,0.22,0.0,none,none,0,1,1,0.5
+324,24,v20-scene-d24,select_agent,0.0,0.0,Sova,none,1,0,1,1.0
+325,24,v20-scene-d24,select_object,0.0,0.0,none,path cord,1,0,1,1.0
+326,24,v20-scene-d24,ceremony_handoff,0.0,0.0,none,tally beads,1,0,1,1.0
+327,24,v20-scene-d24,pause_turn,0.0,0.0,none,none,0,0,1,1.0
+328,24,v20-scene-d24,step_north,0.0,-0.18,none,none,1,0,1,1.0
+329,24,v20-scene-d24,step_south,0.0,0.18,none,none,1,0,1,1.0
+330,24,v20-scene-d24,step_west,-0.22,0.0,none,none,1,0,0,0.75
+331,24,v20-scene-d24,step_east,0.22,0.0,none,none,1,0,1,1.0
+332,24,v20-scene-d24,select_agent,0.0,0.0,Melo,none,1,0,1,1.0
+333,24,v20-scene-d24,select_object,0.0,0.0,none,ink ledger,1,0,1,1.0
+334,24,v20-scene-d24,ceremony_handoff,0.0,0.0,none,sap hook,1,0,1,1.0
+335,24,v20-scene-d24,pause_turn,0.0,0.0,none,none,0,0,1,1.0

@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report 179 - Settlement Architecture and Navigable Place Graph</title>
+  <script src="../artifacts/ssrm_3d_deep_time_settlement_architecture_place_graph_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_deep_time_settlement_architecture_place_graph_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_deep_time_settlement_architecture_place_graph_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #211711;
+      --muted: #705f4e;
+      --panel: rgba(255, 250, 239, 0.88);
+      --line: rgba(68, 49, 33, 0.18);
+      --route: #526f84;
+      --safe: #758a4d;
+      --hazard: #a94c45;
+      --social: #c57942;
+      --flower: #8a709d;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 18% 20%, rgba(197, 121, 66, 0.22), transparent 24rem),
+        radial-gradient(circle at 82% 20%, rgba(82, 111, 132, 0.24), transparent 26rem),
+        radial-gradient(circle at 50% 88%, rgba(117, 138, 77, 0.22), transparent 30rem),
+        linear-gradient(145deg, #f4e6d3 0%, #d4bd92 46%, #a9b99f 100%);
+      font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+    }
+
+    main {
+      width: min(1240px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 42px 0 64px;
+    }
+
+    header {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      max-width: 1100px;
+      margin: 0;
+      font-family: Georgia, "Iowan Old Style", serif;
+      font-size: clamp(2.15rem, 7vw, 5.7rem);
+      line-height: 0.92;
+      letter-spacing: -0.06em;
+    }
+
+    .lede {
+      max-width: 960px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      line-height: 1.55;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 18px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(67, 45, 21, 0.14);
+      padding: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: end;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric-row:last-child { border-bottom: 0; }
+
+    .metric-label {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .metric-value {
+      font-size: 1.35rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .map {
+      position: relative;
+      min-height: 620px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(33, 23, 17, 0.06) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(33, 23, 17, 0.05) 1px, transparent 1px),
+        rgba(255, 255, 255, 0.38);
+      background-size: 44px 44px;
+    }
+
+    svg.routes {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .node {
+      position: absolute;
+      width: 142px;
+      min-height: 104px;
+      transform: translate(-50%, -50%);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 12px;
+      background: rgba(255, 250, 239, 0.86);
+      box-shadow: 0 18px 48px rgba(64, 44, 24, 0.16);
+    }
+
+    .node strong {
+      color: var(--route);
+      overflow-wrap: anywhere;
+    }
+
+    .node small {
+      display: block;
+      color: var(--muted);
+      line-height: 1.35;
+      margin-top: 5px;
+    }
+
+    .node.safe {
+      outline: 4px solid rgba(117, 138, 77, 0.22);
+    }
+
+    .node.hazard {
+      box-shadow: 0 0 0 5px rgba(169, 76, 69, 0.10), 0 18px 48px rgba(64, 44, 24, 0.16);
+    }
+
+    .timeline {
+      display: grid;
+      gap: 9px;
+      max-height: 620px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .event {
+      display: grid;
+      gap: 5px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.46);
+    }
+
+    .event strong { color: var(--route); }
+
+    .event small {
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: rgba(255, 255, 255, 0.44);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 940px) {
+      .grid { grid-template-columns: 1fr; }
+      .map { min-height: 760px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Settlement architecture and navigable place graph</h1>
+      <p class="lede">Report 179 connects multisensory places into a settlement topology: routes, costs, hazards, shelters, storage, work sites, social spaces, safe refuge paths, avatar traversal packets, frequency route resonance, flower layout, and lineage over 2400 simulated years.</p>
+    </header>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Readiness</h2>
+        <div id="metrics"></div>
+        <div class="chips">
+          <span class="chip">2400 simulated years</span>
+          <span class="chip">Connected graph</span>
+          <span class="chip">Avatar topology seed</span>
+          <span class="chip">No gameplay claim</span>
+        </div>
+      </article>
+      <article class="panel">
+        <h2>Interpretation</h2>
+        <p>The world now has a graph. Places are not isolated records; they are reachable through costed, hazardous, resonant routes with safe fallback paths.</p>
+        <p>This is not complete gameplay yet. The next bridge should make the browser viewer move an avatar through this topology and mutate state on traversal.</p>
+      </article>
+    </section>
+
+    <section class="grid" style="margin-top: 18px;">
+      <article class="panel map" id="map" aria-label="Settlement place graph">
+        <svg class="routes" id="routes"></svg>
+      </article>
+      <article class="panel">
+        <h2>Settlement trace</h2>
+        <div class="timeline" id="timeline"></div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const results = window.SSRM_3D_DEEP_TIME_SETTLEMENT_GRAPH_RESULTS || {};
+    const trace = window.SSRM_3D_DEEP_TIME_SETTLEMENT_GRAPH_TRACE || [];
+    const state = window.SSRM_3D_DEEP_TIME_SETTLEMENT_GRAPH_STATE || {};
+    const verdict = results.verdict || {};
+    const integrated = (results.rows || []).find((row) => row.condition === "integrated_deep_time_settlement_architecture_place_graph") || {};
+    const settlement = (((state || {}).settlement_state) || {});
+    const latest = trace[trace.length - 1] || { places: {}, routes: [] };
+
+    const metricItems = [
+      ["verdict", verdict.verdict || "unknown"],
+      ["readiness", integrated.settlement_architecture_readiness],
+      ["years", integrated.simulated_years],
+      ["connectivity", integrated.place_graph_connectivity_rate],
+      ["avatar", integrated.avatar_traversability_rate],
+      ["safety", integrated.safety_refuge_routing_rate]
+    ];
+
+    document.getElementById("metrics").innerHTML = metricItems.map(([label, value]) => {
+      const rendered = typeof value === "number" && label !== "years" ? value.toFixed(6) : value;
+      return `<div class="metric-row"><span class="metric-label">${label}</span><span class="metric-value">${rendered}</span></div>`;
+    }).join("");
+
+    const map = document.getElementById("map");
+    const svg = document.getElementById("routes");
+    const coords = {};
+    for (const [name, place] of Object.entries(latest.places || {})) {
+      coords[name] = place.coord || [0.5, 0.5];
+    }
+    svg.innerHTML = (latest.routes || []).map((route) => {
+      const a = coords[route.from] || [0.5, 0.5];
+      const b = coords[route.to] || [0.5, 0.5];
+      const color = route.hazard > 0.30 ? "var(--hazard)" : "var(--route)";
+      const width = Math.max(2, Math.round((route.route_cost || 0.2) * 8));
+      return `<line x1="${a[0] * 100}%" y1="${a[1] * 100}%" x2="${b[0] * 100}%" y2="${b[1] * 100}%" stroke="${color}" stroke-width="${width}" stroke-linecap="round" opacity="0.72" />`;
+    }).join("");
+
+    Object.entries(latest.places || {}).forEach(([name, place]) => {
+      const [x, y] = place.coord || [0.5, 0.5];
+      const node = document.createElement("section");
+      node.className = `node${place.safety_refuge ? " safe" : ""}${place.hazard_level > 0.20 ? " hazard" : ""}`;
+      node.style.left = `${x * 100}%`;
+      node.style.top = `${y * 100}%`;
+      node.innerHTML = `
+        <strong>${name}</strong>
+        <small>${(place.functions || []).join(", ") || "unassigned"}</small>
+        <small>hazard ${Number(place.hazard_level || 0).toFixed(3)} / storage ${Number(place.storage_capacity || 0).toFixed(3)}</small>
+      `;
+      map.appendChild(node);
+    });
+
+    document.getElementById("timeline").innerHTML = trace.slice(-18).reverse().map((event) => `
+      <div class="event">
+        <strong>era ${event.era}: years ${event.year_start}-${event.year_end}</strong>
+        <small>connected ${event.connected}; safe paths ${event.safe_refuge_paths}; routes ${event.routes.length}; avatar routes ${event.avatar_traversal_packet ? event.avatar_traversal_packet.route_count : 0}; private hidden ${event.private_workspace_hidden}</small>
+        <small>entry ${event.avatar_traversal_packet ? event.avatar_traversal_packet.entry_place : "none"}; reachable ${event.avatar_traversal_packet ? event.avatar_traversal_packet.reachable_places.length : 0}; lineage ${event.lineage ? event.lineage.settlement_hash : "none"}</small>
+      </div>
+    `).join("");
+  </script>
+</body>
+</html>

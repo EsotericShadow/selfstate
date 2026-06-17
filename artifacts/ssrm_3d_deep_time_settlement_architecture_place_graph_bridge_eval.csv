@@ -1,0 +1,15 @@
+condition,place_count,route_count,simulated_years,settlement_events,place_graph_connectivity_rate,route_cost_binding_rate,shelter_node_rate,storage_site_rate,work_site_rate,social_space_rate,hazard_mapping_rate,avatar_traversability_rate,safety_refuge_routing_rate,settlement_lineage_integrity_rate,frequency_route_resonance_rate,flower_layout_rate,deep_time_continuity_rate,privacy_preservation_rate,trace_integrity,no_complete_world_or_consciousness_claim_rate,settlement_architecture_readiness
+integrated_deep_time_settlement_architecture_place_graph,6,8,2400,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_place_graph,6,0,2400,12,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.75
+no_route_costs,6,8,2400,12,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_shelter_nodes,6,8,2400,12,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_storage_sites,6,8,2400,12,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_work_sites,6,8,2400,12,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_social_spaces,6,8,2400,12,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_hazard_mapping,6,8,2400,12,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_avatar_traversal,6,8,2400,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.83
+no_safety_routing,6,8,2400,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_settlement_lineage,6,8,2400,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_frequency_route_resonance,6,8,2400,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_flower_layout,6,8,2400,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.94
+no_privacy_filter,6,8,2400,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.95

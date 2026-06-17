@@ -1,0 +1,10378 @@
+window.SSRM_3D_PERSISTENT_CRAFT_ECOLOGY_WEAR_MAINTENANCE_SUPPLY_SHOCK_STATE = {
+  "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+  "config": {
+    "days": 7,
+    "seed": 20260730,
+    "source_state": "artifacts/ssrm_3d_project_economy_resource_negotiation_toolchain_bridge_state.json"
+  },
+  "craft_state": {
+    "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+    "craft_kernel": {
+      "breakage_threshold": 0.45,
+      "maintenance_restores": 0.34,
+      "not_subjective_suffering": true,
+      "wear_threshold": 0.55
+    },
+    "events": [
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 0,
+        "event_id": 0,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.241,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.67,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.11
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.78,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 0,
+          "wear_rate": 0.11
+        },
+        "item_id": "clay_patch_kit",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 0,
+          "durability": 0.67,
+          "item_id": "clay_patch_kit",
+          "kind": "use_wear",
+          "replay_index": 0,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 1,
+          "wear_delta": -0.11
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 0,
+        "event_id": 1,
+        "event_kind": "use_wear",
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.76,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.88,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 0,
+          "wear_rate": 0.12
+        },
+        "item_id": "dry_bedding_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 0,
+          "durability": 0.76,
+          "item_id": "dry_bedding_ready",
+          "kind": "use_wear",
+          "replay_index": 1,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 1,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 0,
+        "event_id": 2,
+        "event_kind": "use_wear",
+        "flower_node": "return_petal",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.66,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.1
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.76,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 0,
+          "wear_rate": 0.1
+        },
+        "item_id": "dry_cloak",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 0,
+          "durability": 0.66,
+          "item_id": "dry_cloak",
+          "kind": "use_wear",
+          "replay_index": 2,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 1,
+          "wear_delta": -0.1
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 0,
+        "event_id": 3,
+        "event_kind": "use_wear",
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.271,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.59,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.72,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 0,
+          "wear_rate": 0.13
+        },
+        "item_id": "glass_lens",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 0,
+          "durability": 0.59,
+          "item_id": "glass_lens",
+          "kind": "use_wear",
+          "replay_index": 3,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 1,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 0,
+        "event_id": 4,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.75,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.88,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 0,
+          "wear_rate": 0.13
+        },
+        "item_id": "hearth_latch_repaired",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 0,
+          "durability": 0.75,
+          "item_id": "hearth_latch_repaired",
+          "kind": "use_wear",
+          "replay_index": 4,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 1,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 0,
+        "event_id": 5,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.259,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.74,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.14
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.88,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 0,
+          "wear_rate": 0.14
+        },
+        "item_id": "route_warning_signal_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 0,
+          "durability": 0.74,
+          "item_id": "route_warning_signal_ready",
+          "kind": "use_wear",
+          "replay_index": 5,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 1,
+          "wear_delta": -0.14
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 0,
+        "event_id": 6,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.63,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.75,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 0,
+          "wear_rate": 0.12
+        },
+        "item_id": "signal_shell",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 0,
+          "durability": 0.63,
+          "item_id": "signal_shell",
+          "kind": "use_wear",
+          "replay_index": 6,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 1,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 1,
+        "event_id": 7,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.241,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.56,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.11
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.67,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.11
+        },
+        "item_id": "clay_patch_kit",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 1,
+          "durability": 0.56,
+          "item_id": "clay_patch_kit",
+          "kind": "use_wear",
+          "replay_index": 7,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 2,
+          "wear_delta": -0.11
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 1,
+        "event_id": 8,
+        "event_kind": "use_wear",
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.64,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.76,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.12
+        },
+        "item_id": "dry_bedding_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 1,
+          "durability": 0.64,
+          "item_id": "dry_bedding_ready",
+          "kind": "use_wear",
+          "replay_index": 8,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 2,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 1,
+        "event_id": 9,
+        "event_kind": "use_wear",
+        "flower_node": "return_petal",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.56,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.1
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.66,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.1
+        },
+        "item_id": "dry_cloak",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 1,
+          "durability": 0.56,
+          "item_id": "dry_cloak",
+          "kind": "use_wear",
+          "replay_index": 9,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 2,
+          "wear_delta": -0.1
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 1,
+        "event_id": 10,
+        "event_kind": "use_wear",
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.271,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.46,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.59,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.13
+        },
+        "item_id": "glass_lens",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 1,
+          "durability": 0.46,
+          "item_id": "glass_lens",
+          "kind": "use_wear",
+          "replay_index": 10,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 2,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 1,
+        "event_id": 11,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.62,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.75,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.13
+        },
+        "item_id": "hearth_latch_repaired",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 1,
+          "durability": 0.62,
+          "item_id": "hearth_latch_repaired",
+          "kind": "use_wear",
+          "replay_index": 11,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 2,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 1,
+        "event_id": 12,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.259,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.6,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.14
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.74,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.14
+        },
+        "item_id": "route_warning_signal_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 1,
+          "durability": 0.6,
+          "item_id": "route_warning_signal_ready",
+          "kind": "use_wear",
+          "replay_index": 12,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 2,
+          "wear_delta": -0.14
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 1,
+        "event_id": 13,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.51,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.63,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 1,
+          "wear_rate": 0.12
+        },
+        "item_id": "signal_shell",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 1,
+          "durability": 0.51,
+          "item_id": "signal_shell",
+          "kind": "use_wear",
+          "replay_index": 13,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 2,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 2,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 1,
+        "event_id": 14,
+        "event_kind": "maintenance",
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.271,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.8,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.46,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.13
+        },
+        "item_id": "glass_lens",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "glass_reading"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 1,
+          "durability": 0.8,
+          "item_id": "glass_lens",
+          "kind": "maintenance",
+          "replay_index": 14,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 2,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 1,
+        "event_id": 15,
+        "event_kind": "maintenance",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.85,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.51,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.12
+        },
+        "item_id": "signal_shell",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "signal_charge"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 1,
+          "durability": 0.85,
+          "item_id": "signal_shell",
+          "kind": "maintenance",
+          "replay_index": 15,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 6
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 2,
+        "event_id": 16,
+        "event_kind": "supply_shock",
+        "flower_node": null,
+        "frequency_hz": null,
+        "item_after": null,
+        "item_before": null,
+        "item_id": null,
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 2,
+          "durability": null,
+          "item_id": null,
+          "kind": "supply_shock",
+          "replay_index": 16,
+          "shock": "reed_flood"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 5
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "reed_bundle": 1,
+            "repair_fiber": 1
+          },
+          "place": "reed_wetland",
+          "shock_id": "reed_flood"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": true,
+          "detected": true,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 2,
+        "event_id": 17,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.241,
+        "item_after": {
+          "blocked_project": true,
+          "broken": true,
+          "durability": 0.45,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.11
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.56,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.11
+        },
+        "item_id": "clay_patch_kit",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 2,
+          "durability": 0.45,
+          "item_id": "clay_patch_kit",
+          "kind": "use_wear",
+          "replay_index": 17,
+          "shock": "reed_flood"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 5
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "reed_bundle": 1,
+            "repair_fiber": 1
+          },
+          "place": "reed_wetland",
+          "shock_id": "reed_flood"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 3,
+          "wear_delta": -0.11
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 2,
+        "event_id": 18,
+        "event_kind": "use_wear",
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.52,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.64,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.12
+        },
+        "item_id": "dry_bedding_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 2,
+          "durability": 0.52,
+          "item_id": "dry_bedding_ready",
+          "kind": "use_wear",
+          "replay_index": 18,
+          "shock": "reed_flood"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 5
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "reed_bundle": 1,
+            "repair_fiber": 1
+          },
+          "place": "reed_wetland",
+          "shock_id": "reed_flood"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 3,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 2,
+        "event_id": 19,
+        "event_kind": "use_wear",
+        "flower_node": "return_petal",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.46,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.1
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.56,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.1
+        },
+        "item_id": "dry_cloak",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 2,
+          "durability": 0.46,
+          "item_id": "dry_cloak",
+          "kind": "use_wear",
+          "replay_index": 19,
+          "shock": "reed_flood"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 5
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "reed_bundle": 1,
+            "repair_fiber": 1
+          },
+          "place": "reed_wetland",
+          "shock_id": "reed_flood"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 3,
+          "wear_delta": -0.1
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 2,
+        "event_id": 20,
+        "event_kind": "use_wear",
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.271,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.67,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.8,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.13
+        },
+        "item_id": "glass_lens",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 2,
+          "durability": 0.67,
+          "item_id": "glass_lens",
+          "kind": "use_wear",
+          "replay_index": 20,
+          "shock": "reed_flood"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 5
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "reed_bundle": 1,
+            "repair_fiber": 1
+          },
+          "place": "reed_wetland",
+          "shock_id": "reed_flood"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 3,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 2,
+        "event_id": 21,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.49,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.62,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.13
+        },
+        "item_id": "hearth_latch_repaired",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 2,
+          "durability": 0.49,
+          "item_id": "hearth_latch_repaired",
+          "kind": "use_wear",
+          "replay_index": 21,
+          "shock": "reed_flood"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 5
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "reed_bundle": 1,
+            "repair_fiber": 1
+          },
+          "place": "reed_wetland",
+          "shock_id": "reed_flood"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 3,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 2,
+        "event_id": 22,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.259,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.46,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.14
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.6,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.14
+        },
+        "item_id": "route_warning_signal_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 2,
+          "durability": 0.46,
+          "item_id": "route_warning_signal_ready",
+          "kind": "use_wear",
+          "replay_index": 22,
+          "shock": "reed_flood"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 5
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "reed_bundle": 1,
+            "repair_fiber": 1
+          },
+          "place": "reed_wetland",
+          "shock_id": "reed_flood"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 3,
+          "wear_delta": -0.14
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 2,
+        "event_id": 23,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.73,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.85,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 2,
+          "wear_rate": 0.12
+        },
+        "item_id": "signal_shell",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 2,
+          "durability": 0.73,
+          "item_id": "signal_shell",
+          "kind": "use_wear",
+          "replay_index": 23,
+          "shock": "reed_flood"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 5
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "reed_bundle": 1,
+            "repair_fiber": 1
+          },
+          "place": "reed_wetland",
+          "shock_id": "reed_flood"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 3,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 5,
+          "same_resource_pressure": true,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 2,
+        "event_id": 24,
+        "event_kind": "maintenance",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.241,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.79,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.11
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": true,
+          "durability": 0.45,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.11
+        },
+        "item_id": "clay_patch_kit",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "repair_fiber"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 2,
+          "durability": 0.79,
+          "item_id": "clay_patch_kit",
+          "kind": "maintenance",
+          "replay_index": 24,
+          "shock": "reed_flood"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 0,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 4
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "reed_bundle": 1,
+            "repair_fiber": 1
+          },
+          "place": "reed_wetland",
+          "shock_id": "reed_flood"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 5,
+          "same_resource_pressure": true,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 2,
+        "event_id": 25,
+        "event_kind": "maintenance",
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.86,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.52,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.12
+        },
+        "item_id": "dry_bedding_ready",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "dry_moss",
+            "reed_bundle"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 2,
+          "durability": 0.86,
+          "item_id": "dry_bedding_ready",
+          "kind": "maintenance",
+          "replay_index": 25,
+          "shock": "reed_flood"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 4
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "reed_bundle": 1,
+            "repair_fiber": 1
+          },
+          "place": "reed_wetland",
+          "shock_id": "reed_flood"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 5,
+          "same_resource_pressure": true,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 2,
+        "event_id": 26,
+        "event_kind": "maintenance",
+        "flower_node": "return_petal",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.8,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.1
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.46,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 0,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.1
+        },
+        "item_id": "dry_cloak",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "dry_moss"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 2,
+          "durability": 0.8,
+          "item_id": "dry_cloak",
+          "kind": "maintenance",
+          "replay_index": 26,
+          "shock": "reed_flood"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 5
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 4
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "reed_bundle": 1,
+            "repair_fiber": 1
+          },
+          "place": "reed_wetland",
+          "shock_id": "reed_flood"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 5,
+          "same_resource_pressure": true,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 2,
+        "event_id": 27,
+        "event_kind": "maintenance",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.83,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.49,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.13
+        },
+        "item_id": "hearth_latch_repaired",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "repair_fiber",
+            "clay_mass"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 2,
+          "durability": 0.83,
+          "item_id": "hearth_latch_repaired",
+          "kind": "maintenance",
+          "replay_index": 27,
+          "shock": "reed_flood"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "reed_bundle": 1,
+            "repair_fiber": 1
+          },
+          "place": "reed_wetland",
+          "shock_id": "reed_flood"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 3,
+        "event_id": 28,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.241,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.68,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.11
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.79,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.11
+        },
+        "item_id": "clay_patch_kit",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 3,
+          "durability": 0.68,
+          "item_id": "clay_patch_kit",
+          "kind": "use_wear",
+          "replay_index": 28,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 4,
+          "wear_delta": -0.11
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 3,
+        "event_id": 29,
+        "event_kind": "use_wear",
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.74,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.86,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.12
+        },
+        "item_id": "dry_bedding_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 3,
+          "durability": 0.74,
+          "item_id": "dry_bedding_ready",
+          "kind": "use_wear",
+          "replay_index": 29,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 4,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 3,
+        "event_id": 30,
+        "event_kind": "use_wear",
+        "flower_node": "return_petal",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.7,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.1
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.8,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.1
+        },
+        "item_id": "dry_cloak",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 3,
+          "durability": 0.7,
+          "item_id": "dry_cloak",
+          "kind": "use_wear",
+          "replay_index": 30,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 4,
+          "wear_delta": -0.1
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 3,
+        "event_id": 31,
+        "event_kind": "use_wear",
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.271,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.54,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.67,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.13
+        },
+        "item_id": "glass_lens",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 3,
+          "durability": 0.54,
+          "item_id": "glass_lens",
+          "kind": "use_wear",
+          "replay_index": 31,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 4,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 3,
+        "event_id": 32,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.7,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.83,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.13
+        },
+        "item_id": "hearth_latch_repaired",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 3,
+          "durability": 0.7,
+          "item_id": "hearth_latch_repaired",
+          "kind": "use_wear",
+          "replay_index": 32,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 4,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": true,
+          "detected": true,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 3,
+        "event_id": 33,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.259,
+        "item_after": {
+          "blocked_project": true,
+          "broken": true,
+          "durability": 0.32,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.14
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.46,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.14
+        },
+        "item_id": "route_warning_signal_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 3,
+          "durability": 0.32,
+          "item_id": "route_warning_signal_ready",
+          "kind": "use_wear",
+          "replay_index": 33,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 4,
+          "wear_delta": -0.14
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 3,
+        "event_id": 34,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.61,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.73,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 3,
+          "wear_rate": 0.12
+        },
+        "item_id": "signal_shell",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 3,
+          "durability": 0.61,
+          "item_id": "signal_shell",
+          "kind": "use_wear",
+          "replay_index": 34,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 4,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 2,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 3,
+        "event_id": 35,
+        "event_kind": "maintenance",
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.271,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.88,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.54,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.13
+        },
+        "item_id": "glass_lens",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "glass_reading"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 3,
+          "durability": 0.88,
+          "item_id": "glass_lens",
+          "kind": "maintenance",
+          "replay_index": 35,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 2
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 2,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 3,
+        "event_id": 36,
+        "event_kind": "maintenance",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.259,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.66,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.14
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": true,
+          "durability": 0.32,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 0,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.14
+        },
+        "item_id": "route_warning_signal_ready",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "signal_charge",
+            "glass_reading"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 3,
+          "durability": 0.66,
+          "item_id": "route_warning_signal_ready",
+          "kind": "maintenance",
+          "replay_index": 36,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 0,
+            "stock": 1
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 4,
+        "event_id": 37,
+        "event_kind": "supply_shock",
+        "flower_node": null,
+        "frequency_hz": null,
+        "item_after": null,
+        "item_before": null,
+        "item_id": null,
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 4,
+          "durability": null,
+          "item_id": null,
+          "kind": "supply_shock",
+          "replay_index": 37,
+          "shock": "glass_mire_slick"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "glass_reading": 1
+          },
+          "place": "glass_mire",
+          "shock_id": "glass_mire_slick"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 4,
+        "event_id": 38,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.241,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.57,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.11
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.68,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.11
+        },
+        "item_id": "clay_patch_kit",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 4,
+          "durability": 0.57,
+          "item_id": "clay_patch_kit",
+          "kind": "use_wear",
+          "replay_index": 38,
+          "shock": "glass_mire_slick"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "glass_reading": 1
+          },
+          "place": "glass_mire",
+          "shock_id": "glass_mire_slick"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 5,
+          "wear_delta": -0.11
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 4,
+        "event_id": 39,
+        "event_kind": "use_wear",
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.62,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.74,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.12
+        },
+        "item_id": "dry_bedding_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 4,
+          "durability": 0.62,
+          "item_id": "dry_bedding_ready",
+          "kind": "use_wear",
+          "replay_index": 39,
+          "shock": "glass_mire_slick"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "glass_reading": 1
+          },
+          "place": "glass_mire",
+          "shock_id": "glass_mire_slick"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 5,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 4,
+        "event_id": 40,
+        "event_kind": "use_wear",
+        "flower_node": "return_petal",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.6,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.1
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.7,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.1
+        },
+        "item_id": "dry_cloak",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 4,
+          "durability": 0.6,
+          "item_id": "dry_cloak",
+          "kind": "use_wear",
+          "replay_index": 40,
+          "shock": "glass_mire_slick"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "glass_reading": 1
+          },
+          "place": "glass_mire",
+          "shock_id": "glass_mire_slick"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 5,
+          "wear_delta": -0.1
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 4,
+        "event_id": 41,
+        "event_kind": "use_wear",
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.271,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.75,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.88,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.13
+        },
+        "item_id": "glass_lens",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 4,
+          "durability": 0.75,
+          "item_id": "glass_lens",
+          "kind": "use_wear",
+          "replay_index": 41,
+          "shock": "glass_mire_slick"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "glass_reading": 1
+          },
+          "place": "glass_mire",
+          "shock_id": "glass_mire_slick"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 5,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 4,
+        "event_id": 42,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.57,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.7,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.13
+        },
+        "item_id": "hearth_latch_repaired",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 4,
+          "durability": 0.57,
+          "item_id": "hearth_latch_repaired",
+          "kind": "use_wear",
+          "replay_index": 42,
+          "shock": "glass_mire_slick"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "glass_reading": 1
+          },
+          "place": "glass_mire",
+          "shock_id": "glass_mire_slick"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 5,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 4,
+        "event_id": 43,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.259,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.52,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.14
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.66,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.14
+        },
+        "item_id": "route_warning_signal_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 4,
+          "durability": 0.52,
+          "item_id": "route_warning_signal_ready",
+          "kind": "use_wear",
+          "replay_index": 43,
+          "shock": "glass_mire_slick"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "glass_reading": 1
+          },
+          "place": "glass_mire",
+          "shock_id": "glass_mire_slick"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 5,
+          "wear_delta": -0.14
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 4,
+        "event_id": 44,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.49,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.61,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 4,
+          "wear_rate": 0.12
+        },
+        "item_id": "signal_shell",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 4,
+          "durability": 0.49,
+          "item_id": "signal_shell",
+          "kind": "use_wear",
+          "replay_index": 44,
+          "shock": "glass_mire_slick"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "glass_reading": 1
+          },
+          "place": "glass_mire",
+          "shock_id": "glass_mire_slick"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 5,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 2,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 4,
+        "event_id": 45,
+        "event_kind": "maintenance",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.259,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.52,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.14
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.52,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.14
+        },
+        "item_id": "route_warning_signal_ready",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [
+            "glass_reading"
+          ],
+          "success": false,
+          "used_resources": [
+            "signal_charge"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 4,
+          "durability": 0.52,
+          "item_id": "route_warning_signal_ready",
+          "kind": "maintenance",
+          "replay_index": 45,
+          "shock": "glass_mire_slick"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 3,
+            "lost_to_shock": 0,
+            "stock": 2
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "glass_reading": 1
+          },
+          "place": "glass_mire",
+          "shock_id": "glass_mire_slick"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 2,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 4,
+        "event_id": 46,
+        "event_kind": "maintenance",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.83,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.49,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.12
+        },
+        "item_id": "signal_shell",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "signal_charge"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 4,
+          "durability": 0.83,
+          "item_id": "signal_shell",
+          "kind": "maintenance",
+          "replay_index": 46,
+          "shock": "glass_mire_slick"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 0,
+            "stock": 1
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "glass_reading": 1
+          },
+          "place": "glass_mire",
+          "shock_id": "glass_mire_slick"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 5,
+        "event_id": 47,
+        "event_kind": "supply_shock",
+        "flower_node": null,
+        "frequency_hz": null,
+        "item_after": null,
+        "item_before": null,
+        "item_id": null,
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 5,
+          "durability": null,
+          "item_id": null,
+          "kind": "supply_shock",
+          "replay_index": 47,
+          "shock": "ridge_silence"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "signal_charge": 1
+          },
+          "place": "stone_ridge",
+          "shock_id": "ridge_silence"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 5,
+        "event_id": 48,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.241,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.46,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.11
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.57,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.11
+        },
+        "item_id": "clay_patch_kit",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 5,
+          "durability": 0.46,
+          "item_id": "clay_patch_kit",
+          "kind": "use_wear",
+          "replay_index": 48,
+          "shock": "ridge_silence"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "signal_charge": 1
+          },
+          "place": "stone_ridge",
+          "shock_id": "ridge_silence"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 6,
+          "wear_delta": -0.11
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 5,
+        "event_id": 49,
+        "event_kind": "use_wear",
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.5,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.62,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.12
+        },
+        "item_id": "dry_bedding_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 5,
+          "durability": 0.5,
+          "item_id": "dry_bedding_ready",
+          "kind": "use_wear",
+          "replay_index": 49,
+          "shock": "ridge_silence"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "signal_charge": 1
+          },
+          "place": "stone_ridge",
+          "shock_id": "ridge_silence"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 6,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 5,
+        "event_id": 50,
+        "event_kind": "use_wear",
+        "flower_node": "return_petal",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.5,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.1
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.6,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.1
+        },
+        "item_id": "dry_cloak",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 5,
+          "durability": 0.5,
+          "item_id": "dry_cloak",
+          "kind": "use_wear",
+          "replay_index": 50,
+          "shock": "ridge_silence"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "signal_charge": 1
+          },
+          "place": "stone_ridge",
+          "shock_id": "ridge_silence"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 6,
+          "wear_delta": -0.1
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 5,
+        "event_id": 51,
+        "event_kind": "use_wear",
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.271,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.62,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.75,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.13
+        },
+        "item_id": "glass_lens",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 5,
+          "durability": 0.62,
+          "item_id": "glass_lens",
+          "kind": "use_wear",
+          "replay_index": 51,
+          "shock": "ridge_silence"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "signal_charge": 1
+          },
+          "place": "stone_ridge",
+          "shock_id": "ridge_silence"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 6,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": true,
+          "detected": true,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 5,
+        "event_id": 52,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "item_after": {
+          "blocked_project": true,
+          "broken": true,
+          "durability": 0.44,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.57,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.13
+        },
+        "item_id": "hearth_latch_repaired",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 5,
+          "durability": 0.44,
+          "item_id": "hearth_latch_repaired",
+          "kind": "use_wear",
+          "replay_index": 52,
+          "shock": "ridge_silence"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "signal_charge": 1
+          },
+          "place": "stone_ridge",
+          "shock_id": "ridge_silence"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 6,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": true,
+          "detected": true,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 5,
+        "event_id": 53,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.259,
+        "item_after": {
+          "blocked_project": true,
+          "broken": true,
+          "durability": 0.38,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.14
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.52,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.14
+        },
+        "item_id": "route_warning_signal_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 5,
+          "durability": 0.38,
+          "item_id": "route_warning_signal_ready",
+          "kind": "use_wear",
+          "replay_index": 53,
+          "shock": "ridge_silence"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "signal_charge": 1
+          },
+          "place": "stone_ridge",
+          "shock_id": "ridge_silence"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 6,
+          "wear_delta": -0.14
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 5,
+        "event_id": 54,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.71,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.83,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 5,
+          "wear_rate": 0.12
+        },
+        "item_id": "signal_shell",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 5,
+          "durability": 0.71,
+          "item_id": "signal_shell",
+          "kind": "use_wear",
+          "replay_index": 54,
+          "shock": "ridge_silence"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 3
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "signal_charge": 1
+          },
+          "place": "stone_ridge",
+          "shock_id": "ridge_silence"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 6,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 5,
+          "same_resource_pressure": true,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 5,
+        "event_id": 55,
+        "event_kind": "maintenance",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.241,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.8,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.11
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.46,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.11
+        },
+        "item_id": "clay_patch_kit",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "repair_fiber"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 5,
+          "durability": 0.8,
+          "item_id": "clay_patch_kit",
+          "kind": "maintenance",
+          "replay_index": 55,
+          "shock": "ridge_silence"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 1,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "signal_charge": 1
+          },
+          "place": "stone_ridge",
+          "shock_id": "ridge_silence"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 5,
+          "same_resource_pressure": true,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 5,
+        "event_id": 56,
+        "event_kind": "maintenance",
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.84,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 2,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.5,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.12
+        },
+        "item_id": "dry_bedding_ready",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "dry_moss",
+            "reed_bundle"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 5,
+          "durability": 0.84,
+          "item_id": "dry_bedding_ready",
+          "kind": "maintenance",
+          "replay_index": 56,
+          "shock": "ridge_silence"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 3,
+            "lost_to_shock": 0,
+            "stock": 2
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "signal_charge": 1
+          },
+          "place": "stone_ridge",
+          "shock_id": "ridge_silence"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 5,
+          "same_resource_pressure": true,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 5,
+        "event_id": 57,
+        "event_kind": "maintenance",
+        "flower_node": "return_petal",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.84,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.1
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.5,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 1,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.1
+        },
+        "item_id": "dry_cloak",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "dry_moss"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 5,
+          "durability": 0.84,
+          "item_id": "dry_cloak",
+          "kind": "maintenance",
+          "replay_index": 57,
+          "shock": "ridge_silence"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 1,
+            "lost_to_shock": 0,
+            "stock": 4
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 4,
+            "lost_to_shock": 0,
+            "stock": 1
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 2
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "signal_charge": 1
+          },
+          "place": "stone_ridge",
+          "shock_id": "ridge_silence"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 5,
+          "same_resource_pressure": true,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 5,
+        "event_id": 58,
+        "event_kind": "maintenance",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.78,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 2,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": true,
+          "durability": 0.44,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.13
+        },
+        "item_id": "hearth_latch_repaired",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [],
+          "success": true,
+          "used_resources": [
+            "repair_fiber",
+            "clay_mass"
+          ]
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 5,
+          "durability": 0.78,
+          "item_id": "hearth_latch_repaired",
+          "kind": "maintenance",
+          "replay_index": 58,
+          "shock": "ridge_silence"
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 4,
+            "lost_to_shock": 0,
+            "stock": 1
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": true,
+          "losses": {
+            "signal_charge": 1
+          },
+          "place": "stone_ridge",
+          "shock_id": "ridge_silence"
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 6,
+        "event_id": 59,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.241,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.69,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 7,
+          "wear_rate": 0.11
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.8,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_durability": 0.78,
+          "item_id": "clay_patch_kit",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Ari",
+          "place": "clay_basin",
+          "repair": [
+            "repair_fiber"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.11
+        },
+        "item_id": "clay_patch_kit",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 6,
+          "durability": 0.69,
+          "item_id": "clay_patch_kit",
+          "kind": "use_wear",
+          "replay_index": 59,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 4,
+            "lost_to_shock": 0,
+            "stock": 1
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 7,
+          "wear_delta": -0.11
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 6,
+        "event_id": 60,
+        "event_kind": "use_wear",
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.72,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 2,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 7,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.84,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.88,
+          "item_id": "dry_bedding_ready",
+          "kind": "output",
+          "maintenance_events": 2,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss",
+            "reed_bundle"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.12
+        },
+        "item_id": "dry_bedding_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 6,
+          "durability": 0.72,
+          "item_id": "dry_bedding_ready",
+          "kind": "use_wear",
+          "replay_index": 60,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 4,
+            "lost_to_shock": 0,
+            "stock": 1
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 7,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 6,
+        "event_id": 61,
+        "event_kind": "use_wear",
+        "flower_node": "return_petal",
+        "frequency_hz": 0.219,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.74,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 7,
+          "wear_rate": 0.1
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.84,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.219,
+          "initial_durability": 0.76,
+          "item_id": "dry_cloak",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Fay",
+          "place": "moss_hollow",
+          "repair": [
+            "dry_moss"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.1
+        },
+        "item_id": "dry_cloak",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 6,
+          "durability": 0.74,
+          "item_id": "dry_cloak",
+          "kind": "use_wear",
+          "replay_index": 61,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 4,
+            "lost_to_shock": 0,
+            "stock": 1
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 7,
+          "wear_delta": -0.1
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 6,
+        "event_id": 62,
+        "event_kind": "use_wear",
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.271,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.49,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 7,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.62,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.13
+        },
+        "item_id": "glass_lens",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 6,
+          "durability": 0.49,
+          "item_id": "glass_lens",
+          "kind": "use_wear",
+          "replay_index": 62,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 4,
+            "lost_to_shock": 0,
+            "stock": 1
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 7,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 6,
+        "event_id": 63,
+        "event_kind": "use_wear",
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.65,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 2,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 7,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.78,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "initial_durability": 0.88,
+          "item_id": "hearth_latch_repaired",
+          "kind": "output",
+          "maintenance_events": 2,
+          "owner": "Ari",
+          "place": "hearth_vale",
+          "repair": [
+            "repair_fiber",
+            "clay_mass"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.13
+        },
+        "item_id": "hearth_latch_repaired",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 6,
+          "durability": 0.65,
+          "item_id": "hearth_latch_repaired",
+          "kind": "use_wear",
+          "replay_index": 63,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 4,
+            "lost_to_shock": 0,
+            "stock": 1
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 7,
+          "wear_delta": -0.13
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": true,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 6,
+        "event_id": 64,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.259,
+        "item_after": {
+          "blocked_project": true,
+          "broken": true,
+          "durability": 0.24,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 7,
+          "wear_rate": 0.14
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": true,
+          "durability": 0.38,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.14
+        },
+        "item_id": "route_warning_signal_ready",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 6,
+          "durability": 0.24,
+          "item_id": "route_warning_signal_ready",
+          "kind": "use_wear",
+          "replay_index": 64,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 4,
+            "lost_to_shock": 0,
+            "stock": 1
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "output",
+          "project_blocked": true
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 7,
+          "wear_delta": -0.14
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 0,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 6,
+        "event_id": 65,
+        "event_kind": "use_wear",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "item_after": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.59,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 7,
+          "wear_rate": 0.12
+        },
+        "item_before": {
+          "blocked_project": false,
+          "broken": false,
+          "durability": 0.71,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_durability": 0.75,
+          "item_id": "signal_shell",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge"
+          ],
+          "wear_events": 6,
+          "wear_rate": 0.12
+        },
+        "item_id": "signal_shell",
+        "maintenance_packet": {
+          "attempted": false,
+          "missing_resources": [],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": false,
+          "enabled": true,
+          "maintenance_priority": "none"
+        },
+        "replay_frame": {
+          "day": 6,
+          "durability": 0.59,
+          "item_id": "signal_shell",
+          "kind": "use_wear",
+          "replay_index": 65,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 4,
+            "lost_to_shock": 0,
+            "stock": 1
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "item_kind": "tool",
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "use_count": 7,
+          "wear_delta": -0.12
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 2,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 6,
+        "event_id": 66,
+        "event_kind": "maintenance",
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.271,
+        "item_after": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.49,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 7,
+          "wear_rate": 0.13
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": false,
+          "durability": 0.49,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_durability": 0.72,
+          "item_id": "glass_lens",
+          "kind": "tool",
+          "maintenance_events": 2,
+          "owner": "Milo",
+          "place": "glass_mire",
+          "repair": [
+            "glass_reading"
+          ],
+          "wear_events": 7,
+          "wear_rate": 0.13
+        },
+        "item_id": "glass_lens",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [
+            "glass_reading"
+          ],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 6,
+          "durability": 0.49,
+          "item_id": "glass_lens",
+          "kind": "maintenance",
+          "replay_index": 66,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 4,
+            "lost_to_shock": 0,
+            "stock": 1
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      },
+      {
+        "breakage_packet": {
+          "became_broken": false,
+          "detected": false,
+          "threshold": 0.45
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "complete_playable_world": false,
+          "moral_patienthood": false,
+          "natural_language_emergence": false,
+          "subjective_consciousness": false
+        },
+        "competition_packet": {
+          "enabled": true,
+          "queue_size": 2,
+          "same_resource_pressure": false,
+          "substitute_used": false
+        },
+        "condition": "integrated_persistent_craft_ecology_wear_maintenance_supply_shock",
+        "day": 6,
+        "event_id": 67,
+        "event_kind": "maintenance",
+        "flower_node": "social_petal",
+        "frequency_hz": 0.259,
+        "item_after": {
+          "blocked_project": true,
+          "broken": true,
+          "durability": 0.24,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 7,
+          "wear_rate": 0.14
+        },
+        "item_before": {
+          "blocked_project": true,
+          "broken": true,
+          "durability": 0.24,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.259,
+          "initial_durability": 0.88,
+          "item_id": "route_warning_signal_ready",
+          "kind": "output",
+          "maintenance_events": 1,
+          "owner": "Milo",
+          "place": "stone_ridge",
+          "repair": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "wear_events": 7,
+          "wear_rate": 0.14
+        },
+        "item_id": "route_warning_signal_ready",
+        "maintenance_packet": {
+          "attempted": true,
+          "missing_resources": [
+            "signal_charge",
+            "glass_reading"
+          ],
+          "success": false,
+          "used_resources": []
+        },
+        "private_maintenance_hidden": true,
+        "replan_packet": {
+          "delayed_new_work": true,
+          "enabled": true,
+          "maintenance_priority": "repair_before_new_work"
+        },
+        "replay_frame": {
+          "day": 6,
+          "durability": 0.24,
+          "item_id": "route_warning_signal_ready",
+          "kind": "maintenance",
+          "replay_index": 67,
+          "shock": null
+        },
+        "resource_packet": {
+          "clay_mass": {
+            "consumed": 2,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "clay_scrap": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "dry_moss": {
+            "consumed": 4,
+            "lost_to_shock": 0,
+            "stock": 1
+          },
+          "glass_reading": {
+            "consumed": 3,
+            "lost_to_shock": 1,
+            "stock": 0
+          },
+          "reed_bundle": {
+            "consumed": 2,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "reed_offcut": {
+            "consumed": 0,
+            "lost_to_shock": 0,
+            "stock": 3
+          },
+          "repair_fiber": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 1
+          },
+          "signal_charge": {
+            "consumed": 4,
+            "lost_to_shock": 1,
+            "stock": 0
+          }
+        },
+        "supply_shock_packet": {
+          "detected": false,
+          "losses": {}
+        },
+        "toolchain_packet": {
+          "coupled": true,
+          "project_blocked": false
+        },
+        "wear_packet": {
+          "tracked": true,
+          "wear_delta": 0.0
+        }
+      }
+    ],
+    "items": {
+      "clay_patch_kit": {
+        "blocked_project": false,
+        "broken": false,
+        "durability": 0.69,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.241,
+        "initial_durability": 0.78,
+        "item_id": "clay_patch_kit",
+        "kind": "tool",
+        "maintenance_events": 2,
+        "owner": "Ari",
+        "place": "clay_basin",
+        "repair": [
+          "repair_fiber"
+        ],
+        "wear_events": 7,
+        "wear_rate": 0.11
+      },
+      "dry_bedding_ready": {
+        "blocked_project": false,
+        "broken": false,
+        "durability": 0.72,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "initial_durability": 0.88,
+        "item_id": "dry_bedding_ready",
+        "kind": "output",
+        "maintenance_events": 2,
+        "owner": "Fay",
+        "place": "moss_hollow",
+        "repair": [
+          "dry_moss",
+          "reed_bundle"
+        ],
+        "wear_events": 7,
+        "wear_rate": 0.12
+      },
+      "dry_cloak": {
+        "blocked_project": false,
+        "broken": false,
+        "durability": 0.74,
+        "flower_node": "return_petal",
+        "frequency_hz": 0.219,
+        "initial_durability": 0.76,
+        "item_id": "dry_cloak",
+        "kind": "tool",
+        "maintenance_events": 2,
+        "owner": "Fay",
+        "place": "moss_hollow",
+        "repair": [
+          "dry_moss"
+        ],
+        "wear_events": 7,
+        "wear_rate": 0.1
+      },
+      "glass_lens": {
+        "blocked_project": true,
+        "broken": false,
+        "durability": 0.49,
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.271,
+        "initial_durability": 0.72,
+        "item_id": "glass_lens",
+        "kind": "tool",
+        "maintenance_events": 2,
+        "owner": "Milo",
+        "place": "glass_mire",
+        "repair": [
+          "glass_reading"
+        ],
+        "wear_events": 7,
+        "wear_rate": 0.13
+      },
+      "hearth_latch_repaired": {
+        "blocked_project": false,
+        "broken": false,
+        "durability": 0.65,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "initial_durability": 0.88,
+        "item_id": "hearth_latch_repaired",
+        "kind": "output",
+        "maintenance_events": 2,
+        "owner": "Ari",
+        "place": "hearth_vale",
+        "repair": [
+          "repair_fiber",
+          "clay_mass"
+        ],
+        "wear_events": 7,
+        "wear_rate": 0.13
+      },
+      "route_warning_signal_ready": {
+        "blocked_project": true,
+        "broken": true,
+        "durability": 0.24,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.259,
+        "initial_durability": 0.88,
+        "item_id": "route_warning_signal_ready",
+        "kind": "output",
+        "maintenance_events": 1,
+        "owner": "Milo",
+        "place": "stone_ridge",
+        "repair": [
+          "signal_charge",
+          "glass_reading"
+        ],
+        "wear_events": 7,
+        "wear_rate": 0.14
+      },
+      "signal_shell": {
+        "blocked_project": false,
+        "broken": false,
+        "durability": 0.59,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "initial_durability": 0.75,
+        "item_id": "signal_shell",
+        "kind": "tool",
+        "maintenance_events": 2,
+        "owner": "Milo",
+        "place": "stone_ridge",
+        "repair": [
+          "signal_charge"
+        ],
+        "wear_events": 7,
+        "wear_rate": 0.12
+      }
+    },
+    "replay": [
+      {
+        "day": 0,
+        "durability": 0.67,
+        "item_id": "clay_patch_kit",
+        "kind": "use_wear",
+        "replay_index": 0,
+        "shock": null
+      },
+      {
+        "day": 0,
+        "durability": 0.76,
+        "item_id": "dry_bedding_ready",
+        "kind": "use_wear",
+        "replay_index": 1,
+        "shock": null
+      },
+      {
+        "day": 0,
+        "durability": 0.66,
+        "item_id": "dry_cloak",
+        "kind": "use_wear",
+        "replay_index": 2,
+        "shock": null
+      },
+      {
+        "day": 0,
+        "durability": 0.59,
+        "item_id": "glass_lens",
+        "kind": "use_wear",
+        "replay_index": 3,
+        "shock": null
+      },
+      {
+        "day": 0,
+        "durability": 0.75,
+        "item_id": "hearth_latch_repaired",
+        "kind": "use_wear",
+        "replay_index": 4,
+        "shock": null
+      },
+      {
+        "day": 0,
+        "durability": 0.74,
+        "item_id": "route_warning_signal_ready",
+        "kind": "use_wear",
+        "replay_index": 5,
+        "shock": null
+      },
+      {
+        "day": 0,
+        "durability": 0.63,
+        "item_id": "signal_shell",
+        "kind": "use_wear",
+        "replay_index": 6,
+        "shock": null
+      },
+      {
+        "day": 1,
+        "durability": 0.56,
+        "item_id": "clay_patch_kit",
+        "kind": "use_wear",
+        "replay_index": 7,
+        "shock": null
+      },
+      {
+        "day": 1,
+        "durability": 0.64,
+        "item_id": "dry_bedding_ready",
+        "kind": "use_wear",
+        "replay_index": 8,
+        "shock": null
+      },
+      {
+        "day": 1,
+        "durability": 0.56,
+        "item_id": "dry_cloak",
+        "kind": "use_wear",
+        "replay_index": 9,
+        "shock": null
+      },
+      {
+        "day": 1,
+        "durability": 0.46,
+        "item_id": "glass_lens",
+        "kind": "use_wear",
+        "replay_index": 10,
+        "shock": null
+      },
+      {
+        "day": 1,
+        "durability": 0.62,
+        "item_id": "hearth_latch_repaired",
+        "kind": "use_wear",
+        "replay_index": 11,
+        "shock": null
+      },
+      {
+        "day": 1,
+        "durability": 0.6,
+        "item_id": "route_warning_signal_ready",
+        "kind": "use_wear",
+        "replay_index": 12,
+        "shock": null
+      },
+      {
+        "day": 1,
+        "durability": 0.51,
+        "item_id": "signal_shell",
+        "kind": "use_wear",
+        "replay_index": 13,
+        "shock": null
+      },
+      {
+        "day": 1,
+        "durability": 0.8,
+        "item_id": "glass_lens",
+        "kind": "maintenance",
+        "replay_index": 14,
+        "shock": null
+      },
+      {
+        "day": 1,
+        "durability": 0.85,
+        "item_id": "signal_shell",
+        "kind": "maintenance",
+        "replay_index": 15,
+        "shock": null
+      },
+      {
+        "day": 2,
+        "durability": null,
+        "item_id": null,
+        "kind": "supply_shock",
+        "replay_index": 16,
+        "shock": "reed_flood"
+      },
+      {
+        "day": 2,
+        "durability": 0.45,
+        "item_id": "clay_patch_kit",
+        "kind": "use_wear",
+        "replay_index": 17,
+        "shock": "reed_flood"
+      },
+      {
+        "day": 2,
+        "durability": 0.52,
+        "item_id": "dry_bedding_ready",
+        "kind": "use_wear",
+        "replay_index": 18,
+        "shock": "reed_flood"
+      },
+      {
+        "day": 2,
+        "durability": 0.46,
+        "item_id": "dry_cloak",
+        "kind": "use_wear",
+        "replay_index": 19,
+        "shock": "reed_flood"
+      },
+      {
+        "day": 2,
+        "durability": 0.67,
+        "item_id": "glass_lens",
+        "kind": "use_wear",
+        "replay_index": 20,
+        "shock": "reed_flood"
+      },
+      {
+        "day": 2,
+        "durability": 0.49,
+        "item_id": "hearth_latch_repaired",
+        "kind": "use_wear",
+        "replay_index": 21,
+        "shock": "reed_flood"
+      },
+      {
+        "day": 2,
+        "durability": 0.46,
+        "item_id": "route_warning_signal_ready",
+        "kind": "use_wear",
+        "replay_index": 22,
+        "shock": "reed_flood"
+      },
+      {
+        "day": 2,
+        "durability": 0.73,
+        "item_id": "signal_shell",
+        "kind": "use_wear",
+        "replay_index": 23,
+        "shock": "reed_flood"
+      },
+      {
+        "day": 2,
+        "durability": 0.79,
+        "item_id": "clay_patch_kit",
+        "kind": "maintenance",
+        "replay_index": 24,
+        "shock": "reed_flood"
+      },
+      {
+        "day": 2,
+        "durability": 0.86,
+        "item_id": "dry_bedding_ready",
+        "kind": "maintenance",
+        "replay_index": 25,
+        "shock": "reed_flood"
+      },
+      {
+        "day": 2,
+        "durability": 0.8,
+        "item_id": "dry_cloak",
+        "kind": "maintenance",
+        "replay_index": 26,
+        "shock": "reed_flood"
+      },
+      {
+        "day": 2,
+        "durability": 0.83,
+        "item_id": "hearth_latch_repaired",
+        "kind": "maintenance",
+        "replay_index": 27,
+        "shock": "reed_flood"
+      },
+      {
+        "day": 3,
+        "durability": 0.68,
+        "item_id": "clay_patch_kit",
+        "kind": "use_wear",
+        "replay_index": 28,
+        "shock": null
+      },
+      {
+        "day": 3,
+        "durability": 0.74,
+        "item_id": "dry_bedding_ready",
+        "kind": "use_wear",
+        "replay_index": 29,
+        "shock": null
+      },
+      {
+        "day": 3,
+        "durability": 0.7,
+        "item_id": "dry_cloak",
+        "kind": "use_wear",
+        "replay_index": 30,
+        "shock": null
+      },
+      {
+        "day": 3,
+        "durability": 0.54,
+        "item_id": "glass_lens",
+        "kind": "use_wear",
+        "replay_index": 31,
+        "shock": null
+      },
+      {
+        "day": 3,
+        "durability": 0.7,
+        "item_id": "hearth_latch_repaired",
+        "kind": "use_wear",
+        "replay_index": 32,
+        "shock": null
+      },
+      {
+        "day": 3,
+        "durability": 0.32,
+        "item_id": "route_warning_signal_ready",
+        "kind": "use_wear",
+        "replay_index": 33,
+        "shock": null
+      },
+      {
+        "day": 3,
+        "durability": 0.61,
+        "item_id": "signal_shell",
+        "kind": "use_wear",
+        "replay_index": 34,
+        "shock": null
+      },
+      {
+        "day": 3,
+        "durability": 0.88,
+        "item_id": "glass_lens",
+        "kind": "maintenance",
+        "replay_index": 35,
+        "shock": null
+      },
+      {
+        "day": 3,
+        "durability": 0.66,
+        "item_id": "route_warning_signal_ready",
+        "kind": "maintenance",
+        "replay_index": 36,
+        "shock": null
+      },
+      {
+        "day": 4,
+        "durability": null,
+        "item_id": null,
+        "kind": "supply_shock",
+        "replay_index": 37,
+        "shock": "glass_mire_slick"
+      },
+      {
+        "day": 4,
+        "durability": 0.57,
+        "item_id": "clay_patch_kit",
+        "kind": "use_wear",
+        "replay_index": 38,
+        "shock": "glass_mire_slick"
+      },
+      {
+        "day": 4,
+        "durability": 0.62,
+        "item_id": "dry_bedding_ready",
+        "kind": "use_wear",
+        "replay_index": 39,
+        "shock": "glass_mire_slick"
+      },
+      {
+        "day": 4,
+        "durability": 0.6,
+        "item_id": "dry_cloak",
+        "kind": "use_wear",
+        "replay_index": 40,
+        "shock": "glass_mire_slick"
+      },
+      {
+        "day": 4,
+        "durability": 0.75,
+        "item_id": "glass_lens",
+        "kind": "use_wear",
+        "replay_index": 41,
+        "shock": "glass_mire_slick"
+      },
+      {
+        "day": 4,
+        "durability": 0.57,
+        "item_id": "hearth_latch_repaired",
+        "kind": "use_wear",
+        "replay_index": 42,
+        "shock": "glass_mire_slick"
+      },
+      {
+        "day": 4,
+        "durability": 0.52,
+        "item_id": "route_warning_signal_ready",
+        "kind": "use_wear",
+        "replay_index": 43,
+        "shock": "glass_mire_slick"
+      },
+      {
+        "day": 4,
+        "durability": 0.49,
+        "item_id": "signal_shell",
+        "kind": "use_wear",
+        "replay_index": 44,
+        "shock": "glass_mire_slick"
+      },
+      {
+        "day": 4,
+        "durability": 0.52,
+        "item_id": "route_warning_signal_ready",
+        "kind": "maintenance",
+        "replay_index": 45,
+        "shock": "glass_mire_slick"
+      },
+      {
+        "day": 4,
+        "durability": 0.83,
+        "item_id": "signal_shell",
+        "kind": "maintenance",
+        "replay_index": 46,
+        "shock": "glass_mire_slick"
+      },
+      {
+        "day": 5,
+        "durability": null,
+        "item_id": null,
+        "kind": "supply_shock",
+        "replay_index": 47,
+        "shock": "ridge_silence"
+      },
+      {
+        "day": 5,
+        "durability": 0.46,
+        "item_id": "clay_patch_kit",
+        "kind": "use_wear",
+        "replay_index": 48,
+        "shock": "ridge_silence"
+      },
+      {
+        "day": 5,
+        "durability": 0.5,
+        "item_id": "dry_bedding_ready",
+        "kind": "use_wear",
+        "replay_index": 49,
+        "shock": "ridge_silence"
+      },
+      {
+        "day": 5,
+        "durability": 0.5,
+        "item_id": "dry_cloak",
+        "kind": "use_wear",
+        "replay_index": 50,
+        "shock": "ridge_silence"
+      },
+      {
+        "day": 5,
+        "durability": 0.62,
+        "item_id": "glass_lens",
+        "kind": "use_wear",
+        "replay_index": 51,
+        "shock": "ridge_silence"
+      },
+      {
+        "day": 5,
+        "durability": 0.44,
+        "item_id": "hearth_latch_repaired",
+        "kind": "use_wear",
+        "replay_index": 52,
+        "shock": "ridge_silence"
+      },
+      {
+        "day": 5,
+        "durability": 0.38,
+        "item_id": "route_warning_signal_ready",
+        "kind": "use_wear",
+        "replay_index": 53,
+        "shock": "ridge_silence"
+      },
+      {
+        "day": 5,
+        "durability": 0.71,
+        "item_id": "signal_shell",
+        "kind": "use_wear",
+        "replay_index": 54,
+        "shock": "ridge_silence"
+      },
+      {
+        "day": 5,
+        "durability": 0.8,
+        "item_id": "clay_patch_kit",
+        "kind": "maintenance",
+        "replay_index": 55,
+        "shock": "ridge_silence"
+      },
+      {
+        "day": 5,
+        "durability": 0.84,
+        "item_id": "dry_bedding_ready",
+        "kind": "maintenance",
+        "replay_index": 56,
+        "shock": "ridge_silence"
+      },
+      {
+        "day": 5,
+        "durability": 0.84,
+        "item_id": "dry_cloak",
+        "kind": "maintenance",
+        "replay_index": 57,
+        "shock": "ridge_silence"
+      },
+      {
+        "day": 5,
+        "durability": 0.78,
+        "item_id": "hearth_latch_repaired",
+        "kind": "maintenance",
+        "replay_index": 58,
+        "shock": "ridge_silence"
+      },
+      {
+        "day": 6,
+        "durability": 0.69,
+        "item_id": "clay_patch_kit",
+        "kind": "use_wear",
+        "replay_index": 59,
+        "shock": null
+      },
+      {
+        "day": 6,
+        "durability": 0.72,
+        "item_id": "dry_bedding_ready",
+        "kind": "use_wear",
+        "replay_index": 60,
+        "shock": null
+      },
+      {
+        "day": 6,
+        "durability": 0.74,
+        "item_id": "dry_cloak",
+        "kind": "use_wear",
+        "replay_index": 61,
+        "shock": null
+      },
+      {
+        "day": 6,
+        "durability": 0.49,
+        "item_id": "glass_lens",
+        "kind": "use_wear",
+        "replay_index": 62,
+        "shock": null
+      },
+      {
+        "day": 6,
+        "durability": 0.65,
+        "item_id": "hearth_latch_repaired",
+        "kind": "use_wear",
+        "replay_index": 63,
+        "shock": null
+      },
+      {
+        "day": 6,
+        "durability": 0.24,
+        "item_id": "route_warning_signal_ready",
+        "kind": "use_wear",
+        "replay_index": 64,
+        "shock": null
+      },
+      {
+        "day": 6,
+        "durability": 0.59,
+        "item_id": "signal_shell",
+        "kind": "use_wear",
+        "replay_index": 65,
+        "shock": null
+      },
+      {
+        "day": 6,
+        "durability": 0.49,
+        "item_id": "glass_lens",
+        "kind": "maintenance",
+        "replay_index": 66,
+        "shock": null
+      },
+      {
+        "day": 6,
+        "durability": 0.24,
+        "item_id": "route_warning_signal_ready",
+        "kind": "maintenance",
+        "replay_index": 67,
+        "shock": null
+      }
+    ],
+    "resources": {
+      "clay_mass": {
+        "consumed": 2,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.241,
+        "initial_stock": 5,
+        "lost_to_shock": 0,
+        "place": "clay_basin",
+        "produced": 0,
+        "resource_id": "clay_mass",
+        "stock": 3
+      },
+      "clay_scrap": {
+        "consumed": 0,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.244,
+        "initial_stock": 3,
+        "lost_to_shock": 0,
+        "place": "clay_basin",
+        "produced": 0,
+        "resource_id": "clay_scrap",
+        "stock": 3
+      },
+      "dry_moss": {
+        "consumed": 4,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.218,
+        "initial_stock": 5,
+        "lost_to_shock": 0,
+        "place": "moss_hollow",
+        "produced": 0,
+        "resource_id": "dry_moss",
+        "stock": 1
+      },
+      "glass_reading": {
+        "consumed": 3,
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.271,
+        "initial_stock": 4,
+        "lost_to_shock": 1,
+        "place": "glass_mire",
+        "produced": 0,
+        "resource_id": "glass_reading",
+        "stock": 0
+      },
+      "reed_bundle": {
+        "consumed": 2,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.233,
+        "initial_stock": 4,
+        "lost_to_shock": 1,
+        "place": "reed_wetland",
+        "produced": 0,
+        "resource_id": "reed_bundle",
+        "stock": 1
+      },
+      "reed_offcut": {
+        "consumed": 0,
+        "flower_node": "return_petal",
+        "frequency_hz": 0.236,
+        "initial_stock": 3,
+        "lost_to_shock": 0,
+        "place": "moss_hollow",
+        "produced": 0,
+        "resource_id": "reed_offcut",
+        "stock": 3
+      },
+      "repair_fiber": {
+        "consumed": 4,
+        "flower_node": "return_petal",
+        "frequency_hz": 0.229,
+        "initial_stock": 6,
+        "lost_to_shock": 1,
+        "place": "reed_wetland",
+        "produced": 0,
+        "resource_id": "repair_fiber",
+        "stock": 1
+      },
+      "signal_charge": {
+        "consumed": 4,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "initial_stock": 5,
+        "lost_to_shock": 1,
+        "place": "stone_ridge",
+        "produced": 0,
+        "resource_id": "signal_charge",
+        "stock": 0
+      }
+    },
+    "source_condition": "integrated_project_economy_resource_negotiation_toolchain",
+    "supply_shocks": {
+      "2": {
+        "losses": {
+          "reed_bundle": 1,
+          "repair_fiber": 1
+        },
+        "place": "reed_wetland",
+        "shock_id": "reed_flood"
+      },
+      "4": {
+        "losses": {
+          "glass_reading": 1
+        },
+        "place": "glass_mire",
+        "shock_id": "glass_mire_slick"
+      },
+      "5": {
+        "losses": {
+          "signal_charge": 1
+        },
+        "place": "stone_ridge",
+        "shock_id": "ridge_silence"
+      }
+    }
+  },
+  "moral_boundary": {
+    "craft_ecology_seed_not_complete_gameplay": true,
+    "maintenance_policy_not_moral_patienthood": true,
+    "no_moral_patienthood_claim": true,
+    "no_subjective_consciousness_claim": true,
+    "private_workspace_not_debug_leaked": true,
+    "supply_shock_not_subjective_deprivation": true,
+    "wear_breakage_not_subjective_suffering": true
+  },
+  "source_condition": "integrated_project_economy_resource_negotiation_toolchain",
+  "trace_events": 68
+};

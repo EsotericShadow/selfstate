@@ -1566,6 +1566,14 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_persistent_craft_ecology_wear_maintenance_supply_shock_bridge.py",
+        "--seed",
+        "20260730",
+        "--days",
+        "7",
+    ],
+    [
+        sys.executable,
         "experiments/ssrm_3d_learned_multiday_maturation_controller.py",
         "--train-seeds",
         "20260911,20260912,20260913,20260914,20260915,20260916",

@@ -1,0 +1,14 @@
+condition,item_count,resource_count,simulated_days,craft_events,wear_tracking_rate,breakage_detection_rate,maintenance_action_rate,supply_shock_response_rate,repair_resource_competition_rate,output_degradation_rate,toolchain_degradation_coupling_rate,replan_from_shock_rate,craft_state_persistence_rate,resource_conservation_rate,frequency_flower_maintenance_binding_rate,browser_craft_replay_rate,privacy_preservation_rate,trace_integrity,craft_ecology_readiness
+integrated_persistent_craft_ecology_wear_maintenance_supply_shock,7,8,7,68,1.0,1.0,0.8125,1.0,0.5,1.0,1.0,1.0,1.0,1.0,0.955882,1.0,1.0,1.0,0.931544
+no_wear_tracking,7,8,7,52,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,0.942308,1.0,1.0,1.0,0.397115
+no_breakage_detection,7,8,7,68,1.0,0.0,0.8125,1.0,0.5,1.0,1.0,1.0,1.0,1.0,0.955882,1.0,1.0,1.0,0.841544
+no_maintenance,7,8,7,74,1.0,1.0,0.0,1.0,0.909091,1.0,1.0,1.0,0.690141,1.0,0.959459,1.0,1.0,1.0,0.825912
+no_supply_shocks,7,8,7,64,1.0,1.0,0.933333,0.0,0.533333,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.833333
+no_repair_competition,7,8,7,68,1.0,1.0,0.8125,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.955882,1.0,1.0,1.0,0.891544
+no_output_degradation,7,8,7,61,0.571429,1.0,1.0,1.0,0.0,0.0,1.0,1.0,0.637931,1.0,0.95082,1.0,1.0,1.0,0.802861
+no_toolchain_coupling,7,8,7,68,1.0,1.0,0.8125,1.0,0.5,1.0,0.0,1.0,1.0,1.0,0.955882,1.0,1.0,1.0,0.841544
+no_replan_from_shock,7,8,7,68,1.0,1.0,0.8125,1.0,0.5,1.0,1.0,0.0,1.0,1.0,0.955882,1.0,1.0,1.0,0.851544
+no_craft_persistence,7,8,7,52,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.942308,1.0,1.0,1.0,0.517115
+no_frequency_flower_binding,7,8,7,68,1.0,1.0,0.8125,1.0,0.5,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.88375
+no_replay_timeline,7,8,7,68,1.0,1.0,0.8125,1.0,0.5,1.0,1.0,1.0,1.0,1.0,0.955882,0.0,1.0,1.0,0.891544
+no_privacy_filter,7,8,7,68,1.0,1.0,0.8125,1.0,0.5,1.0,1.0,1.0,1.0,1.0,0.955882,1.0,0.0,1.0,0.911544

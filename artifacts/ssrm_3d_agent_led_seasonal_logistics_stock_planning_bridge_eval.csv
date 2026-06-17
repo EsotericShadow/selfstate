@@ -1,0 +1,17 @@
+condition,agent_count,simulated_days,logistics_events,seasonal_forecast_binding_rate,food_stock_planning_rate,water_stock_planning_rate,shelter_stock_planning_rate,medicine_stock_planning_rate,rationing_policy_rate,replenishment_route_rate,spoilage_waste_accounting_rate,multi_agent_allocation_rate,emergency_reserve_rate,stockout_avoidance_rate,long_horizon_memory_rate,frequency_flower_seasonal_rhythm_rate,browser_logistics_replay_rate,privacy_preservation_rate,trace_integrity,seasonal_logistics_readiness
+integrated_agent_led_seasonal_logistics_stock_planning,3,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_seasonal_forecast,3,24,72,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_food_planning,3,24,72,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.347222,1.0,1.0,1.0,1.0,1.0,1.0,0.874306
+no_water_planning,3,24,72,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.375,1.0,1.0,1.0,1.0,1.0,1.0,0.87625
+no_shelter_planning,3,24,72,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.652778,1.0,1.0,1.0,1.0,1.0,1.0,0.895694
+no_medicine_planning,3,24,72,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_rationing_policy,3,24,72,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_replenishment_routes,3,24,72,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.305556,1.0,1.0,1.0,1.0,1.0,1.0,0.881389
+no_spoilage_waste_accounting,3,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.916667,1.0,1.0,1.0,1.0,1.0,1.0,0.924167
+no_multi_agent_allocation,3,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_emergency_reserve,3,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_stockout_avoidance,3,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_long_horizon_memory,3,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.94
+no_frequency_flower_binding,3,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.96
+no_browser_replay,3,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.96
+no_privacy_filter,3,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.98

@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 261 - Live Scene State Mutation</title>
+<style>
+:root { --bg:#101210; --panel:#efe4c8; --ink:#21180f; --accent:#c87c2e; --leaf:#4e765f; --rain:#678ea3; --warn:#a94834; }
+* { box-sizing:border-box; }
+body { margin:0; background:radial-gradient(circle at 15% 8%, #2f493c, transparent 35%), radial-gradient(circle at 82% 22%, rgba(103,142,163,.26), transparent 30%), linear-gradient(135deg,#101210,#28190e 78%); color:var(--ink); font-family: Georgia, 'Times New Roman', serif; }
+main { width:min(1180px, calc(100vw - 28px)); margin:0 auto; padding:28px 0 44px; }
+.hero { color:#f8ecd6; border:1px solid rgba(239,228,200,.35); border-radius:30px; padding:28px; background:linear-gradient(140deg, rgba(78,118,95,.62), rgba(200,124,46,.22)); box-shadow:0 26px 100px rgba(0,0,0,.36); }
+.hero h1 { margin:0 0 10px; font-size:clamp(2rem,5vw,4.3rem); line-height:.94; letter-spacing:-.045em; }
+.hero p { max-width:910px; color:#ecdcc1; line-height:1.55; font-size:1.05rem; }
+.grid { display:grid; grid-template-columns:1.08fr .92fr; gap:18px; margin-top:18px; }
+.card { background:var(--panel); border:1px solid #ccb884; border-radius:24px; padding:18px; box-shadow:0 18px 45px rgba(0,0,0,.25); }
+h2 { margin:0 0 12px; font-size:1.05rem; text-transform:uppercase; letter-spacing:.09em; color:#5b4b2b; }
+button { border:0; border-radius:999px; padding:10px 14px; background:var(--accent); color:#170d06; font-weight:700; cursor:pointer; margin:4px 5px 4px 0; }
+button.alt { background:#9cbea9; }
+button.warn { background:#d57e70; }
+.kpis { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.kpis div { background:#fff8e8; border:1px solid #d8c28e; border-radius:16px; padding:12px; }
+.kpis strong { display:block; font-size:1.45rem; color:#5b4b2b; }
+.scene { width:100%; aspect-ratio:4/3; border-radius:22px; background:linear-gradient(180deg,#d9c8a6,#bda47b); border:1px solid #a98955; position:relative; overflow:hidden; margin-bottom:12px; outline:0; }
+.entity { position:absolute; width:28px; height:38px; border-radius:18px 18px 12px 12px; transform:translate(-50%,-50%); box-shadow:0 10px 18px rgba(0,0,0,.25); transition:left .12s linear, top .12s linear; }
+.avatar { background:#25221b; border:3px solid #f8ecd6; }
+.agent { background:#4e765f; border:2px solid #1f3329; }
+.object { position:absolute; width:18px; height:18px; border-radius:50%; background:#c87c2e; transform:translate(-50%,-50%); box-shadow:0 8px 12px rgba(0,0,0,.25); }
+.table { position:absolute; left:50%; top:48%; width:120px; height:54px; border-radius:50%; background:rgba(87,57,31,.42); transform:translate(-50%,-50%); }
+.row { border-left:5px solid var(--accent); background:#fff8e8; padding:11px 12px; border-radius:14px; margin-bottom:10px; }
+#log { max-height:340px; overflow:auto; }
+pre { white-space:pre-wrap; overflow:auto; background:#151711; color:#f4e3c4; padding:14px; border-radius:16px; max-height:360px; }
+.footer { color:#eadfc8; margin-top:18px; }
+@media (max-width:840px) { .grid { grid-template-columns:1fr; } .kpis { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Browser World v21: live scene state mutation</h1>
+    <p>Keyboard movement now mutates local scene state. Collision prompts, object ceremony phases, save/restore positions, and replay rows persist through localStorage.</p>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <h2>Live scene controls</h2>
+      <button onclick="stepKey('ArrowUp')">Up</button><button onclick="stepKey('ArrowLeft')">Left</button><button onclick="stepKey('ArrowRight')">Right</button><button onclick="stepKey('ArrowDown')">Down</button>
+      <button class="alt" onclick="stepKey('KeyE')">Ceremony</button><button class="alt" onclick="saveScene()">Save</button><button class="warn" onclick="restoreScene()">Restore</button><button onclick="exportReplay()">Export replay</button>
+      <div class="scene" id="scene" tabindex="0"><div class="table"></div></div>
+      <div id="log"></div>
+    </div>
+    <div class="card">
+      <h2>Run metrics</h2>
+      <div class="kpis">
+        <div><span>Readiness</span><strong id="readiness"></strong></div>
+        <div><span>Weakest</span><strong id="weakest"></strong></div>
+        <div><span>Frames</span><strong id="frames"></strong></div>
+      </div>
+      <h2 style="margin-top:18px">Local state</h2>
+      <pre id="state"></pre>
+    </div>
+  </section>
+  <p class="footer">Boundary: deterministic browser-local scaffold only. No LLM, subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine is claimed.</p>
+</main>
+<script id="initial-state" type="application/json">{
+  "claim_boundary": "Deterministic browser-local live scene mutation scaffold only; no subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "agents": 6,
+    "browser_world_v21_ticks": 360,
+    "collision_proximity_prompt_frames": 360,
+    "keyboard_movement_frames": 360,
+    "live_scene_replay_frames": 360,
+    "local_storage_snapshot_frames": 360,
+    "multi_sensory_live_scene_frames": 360,
+    "object_ceremony_persistence_frames": 360,
+    "save_restore_position_frames": 360,
+    "scene_state_mutation_frames": 360
+  },
+  "local_storage_key": "ssrm_browser_world_v21_live_scene_state",
+  "metrics": {
+    "arrow_movement_application": 0.936782,
+    "browser_world_v21_live_scene_mutation_readiness": 0.952769,
+    "browser_world_v21_surface_available": 1.0,
+    "collision_blocking_integrity": 1.0,
+    "collision_prompt_count": 18.0,
+    "collision_proximity_prompt_surface": 0.922222,
+    "comfort_pain_live_scene_bounds": 1.0,
+    "frequency_flower_live_scene_rhythm": 1.0,
+    "keyboard_avatar_movement_binding": 1.0,
+    "live_scene_replay_integrity": 0.983975,
+    "live_scene_state_mutation": 0.991667,
+    "local_storage_scene_snapshot_integrity": 0.974444,
+    "mean_live_scene_channel_score": 0.97489,
+    "multi_sensory_live_scene_binding": 0.966667,
+    "object_ceremony_state_persistence": 0.976458,
+    "object_ceremony_storage_write": 0.933333,
+    "object_ceremony_visible_surface": 0.933333,
+    "object_owner_preservation": 0.975,
+    "privacy_safe_live_scene_state": 1.0,
+    "proximity_prompt_accuracy": 0.95637,
+    "proximity_prompt_visibility": 0.922222,
+    "restore_attempt_count": 42.0,
+    "save_restore_position_integrity": 0.988889,
+    "scene_bounds_integrity": 1.0,
+    "source_scene_geometry_continuity": 1.0,
+    "visible_restore_feedback": 1.0,
+    "visible_scene_mutation_surface": 0.961111,
+    "weakest_channel_score": 0.922222
+  },
+  "report": 261,
+  "sample_ceremonies": [
+    {
+      "ceremony_id": "v21-ceremony-d01-t00",
+      "ceremony_phase_after": "prompt",
+      "ceremony_phase_before": "approach",
+      "ceremony_state_score": 1.0,
+      "day": 1,
+      "object_name": "path cord",
+      "object_x": 7.84,
+      "object_y": 3.4,
+      "owner_preserved": 1,
+      "persisted_to_storage": 1,
+      "restored_from_storage": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 0
+    },
+    {
+      "ceremony_id": "v21-ceremony-d01-t01",
+      "ceremony_phase_after": "prompt",
+      "ceremony_phase_before": "prompt",
+      "ceremony_state_score": 1.0,
+      "day": 1,
+      "object_name": "tally beads",
+      "object_x": 6.935216,
+      "object_y": 5.229861,
+      "owner_preserved": 1,
+      "persisted_to_storage": 1,
+      "restored_from_storage": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 1
+    },
+    {
+      "ceremony_id": "v21-ceremony-d01-t02",
+      "ceremony_phase_after": "prompt",
+      "ceremony_phase_before": "handoff",
+      "ceremony_state_score": 0.75,
+      "day": 1,
+      "object_name": "ink ledger",
+      "object_x": 5.021055,
+      "object_y": 5.458895,
+      "owner_preserved": 1,
+      "persisted_to_storage": 0,
+      "restored_from_storage": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 2
+    },
+    {
+      "ceremony_id": "v21-ceremony-d01-t03",
+      "ceremony_phase_after": "prompt",
+      "ceremony_phase_before": "marked",
+      "ceremony_state_score": 1.0,
+      "day": 1,
+      "object_name": "sap hook",
+      "object_x": 8.398081,
+      "object_y": 5.986297,
+      "owner_preserved": 1,
+      "persisted_to_storage": 1,
+      "restored_from_storage": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 3
+    },
+    {
+      "ceremony_id": "v21-ceremony-d01-t04",
+      "ceremony_phase_after": "prompt",
+      "ceremony_phase_before": "restored",
+      "ceremony_state_score": 1.0,
+      "day": 1,
+      "object_name": "listening shell",
+      "object_x": 4.06721,
+      "object_y": 4.311307,
+      "owner_preserved": 1,
+      "persisted_to_storage": 1,
+      "restored_from_storage": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 4
+    },
+    {
+      "ceremony_id": "v21-ceremony-d01-t05",
+      "ceremony_phase_after": "prompt",
+      "ceremony_phase_before": "repair",
+      "ceremony_state_score": 0.75,
+      "day": 1,
+      "object_name": "ember bowl",
+      "object_x": 4.829673,
+      "object_y": 3.133232,
+      "owner_preserved": 0,
+      "persisted_to_storage": 1,
+      "restored_from_storage": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 5
+    },
+    {
+      "ceremony_id": "v21-ceremony-d01-t06",
+      "ceremony_phase_after": "handoff",
+      "ceremony_phase_before": "idle",
+      "ceremony_state_score": 1.0,
+      "day": 1,
+      "object_name": "path cord",
+      "object_x": 7.686966,
+      "object_y": 3.551465,
+      "owner_preserved": 1,
+      "persisted_to_storage": 1,
+      "restored_from_storage": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 6
+    },
+    {
+      "ceremony_id": "v21-ceremony-d01-t07",
+      "ceremony_phase_after": "restored",
+      "ceremony_phase_before": "approach",
+      "ceremony_state_score": 1.0,
+      "day": 1,
+      "object_name": "tally beads",
+      "object_x": 6.740792,
+      "object_y": 5.3655,
+      "owner_preserved": 1,
+      "persisted_to_storage": 1,
+      "restored_from_storage": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 7
+    },
+    {
+      "ceremony_id": "v21-ceremony-d01-t08",
+      "ceremony_phase_after": "prompt",
+      "ceremony_phase_before": "prompt",
+      "ceremony_state_score": 1.0,
+      "day": 1,
+      "object_name": "ink ledger",
+      "object_x": 4.792992,
+      "object_y": 5.574949,
+      "owner_preserved": 1,
+      "persisted_to_storage": 1,
+      "restored_from_storage": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 8
+    },
+    {
+      "ceremony_id": "v21-ceremony-d01-t09",
+      "ceremony_phase_after": "restored",
+      "ceremony_phase_before": "handoff",
+      "ceremony_state_score": 1.0,
+      "day": 1,
+      "object_name": "sap hook",
+      "object_x": 8.145471,
+      "object_y": 6.079549,
+      "owner_preserved": 1,
+      "persisted_to_storage": 1,
+      "restored_from_storage": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 9
+    },
+    {
+      "ceremony_id": "v21-ceremony-d01-t10",
+      "ceremony_phase_after": "prompt",
+      "ceremony_phase_before": "marked",
+      "ceremony_state_score": 1.0,
+      "day": 1,
+      "object_name": "listening shell",
+      "object_x": 3.800125,
+      "object_y": 4.379173,
+      "owner_preserved": 1,
+      "persisted_to_storage": 1,
+      "restored_from_storage": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 10
+    },
+    {
+      "ceremony_id": "v21-ceremony-d01-t11",
+      "ceremony_phase_after": "prompt",
+      "ceremony_phase_before": "restored",
+      "ceremony_state_score": 1.0,
+      "day": 1,
+      "object_name": "ember bowl",
+      "object_x": 4.55876,
+      "object_y": 3.173832,
+      "owner_preserved": 1,
+      "persisted_to_storage": 1,
+      "restored_from_storage": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 11
+    }
+  ],
+  "sample_movement": [
+    {
+      "avatar_x_after": 6.0,
+      "avatar_x_before": 6.0,
+      "avatar_y_after": 4.0,
+      "avatar_y_before": 4.0,
+      "day": 1,
+      "intended_dx": 0.0,
+      "intended_dy": 0.0,
+      "key": "Space",
+      "keyboard_binding_valid": 1,
+      "movement_applied": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 0
+    },
+    {
+      "avatar_x_after": 6.28,
+      "avatar_x_before": 6.0,
+      "avatar_y_after": 4.0,
+      "avatar_y_before": 4.0,
+      "day": 1,
+      "intended_dx": 0.28,
+      "intended_dy": 0.0,
+      "key": "ArrowRight",
+      "keyboard_binding_valid": 1,
+      "movement_applied": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 1
+    },
+    {
+      "avatar_x_after": 6.28,
+      "avatar_x_before": 6.28,
+      "avatar_y_after": 4.0,
+      "avatar_y_before": 4.0,
+      "day": 1,
+      "intended_dx": 0.0,
+      "intended_dy": 0.0,
+      "key": "KeyQ",
+      "keyboard_binding_valid": 1,
+      "movement_applied": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 2
+    },
+    {
+      "avatar_x_after": 6.28,
+      "avatar_x_before": 6.28,
+      "avatar_y_after": 4.24,
+      "avatar_y_before": 4.0,
+      "day": 1,
+      "intended_dx": 0.0,
+      "intended_dy": 0.24,
+      "key": "ArrowDown",
+      "keyboard_binding_valid": 1,
+      "movement_applied": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 3
+    },
+    {
+      "avatar_x_after": 6.28,
+      "avatar_x_before": 6.28,
+      "avatar_y_after": 4.24,
+      "avatar_y_before": 4.24,
+      "day": 1,
+      "intended_dx": 0.0,
+      "intended_dy": 0.0,
+      "key": "Space",
+      "keyboard_binding_valid": 1,
+      "movement_applied": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 4
+    },
+    {
+      "avatar_x_after": 6.28,
+      "avatar_x_before": 6.28,
+      "avatar_y_after": 4.0,
+      "avatar_y_before": 4.24,
+      "day": 1,
+      "intended_dx": 0.0,
+      "intended_dy": -0.24,
+      "key": "ArrowUp",
+      "keyboard_binding_valid": 1,
+      "movement_applied": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 5
+    },
+    {
+      "avatar_x_after": 6.28,
+      "avatar_x_before": 6.28,
+      "avatar_y_after": 4.0,
+      "avatar_y_before": 4.0,
+      "day": 1,
+      "intended_dx": 0.0,
+      "intended_dy": 0.0,
+      "key": "KeyE",
+      "keyboard_binding_valid": 1,
+      "movement_applied": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 6
+    },
+    {
+      "avatar_x_after": 6.28,
+      "avatar_x_before": 6.28,
+      "avatar_y_after": 4.0,
+      "avatar_y_before": 4.0,
+      "day": 1,
+      "intended_dx": 0.0,
+      "intended_dy": 0.0,
+      "key": "KeyR",
+      "keyboard_binding_valid": 1,
+      "movement_applied": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 7
+    },
+    {
+      "avatar_x_after": 6.0,
+      "avatar_x_before": 6.28,
+      "avatar_y_after": 4.0,
+      "avatar_y_before": 4.0,
+      "day": 1,
+      "intended_dx": -0.28,
+      "intended_dy": 0.0,
+      "key": "ArrowLeft",
+      "keyboard_binding_valid": 1,
+      "movement_applied": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 8
+    },
+    {
+      "avatar_x_after": 6.0,
+      "avatar_x_before": 6.0,
+      "avatar_y_after": 4.0,
+      "avatar_y_before": 4.0,
+      "day": 1,
+      "intended_dx": 0.0,
+      "intended_dy": 0.0,
+      "key": "KeyR",
+      "keyboard_binding_valid": 1,
+      "movement_applied": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 9
+    },
+    {
+      "avatar_x_after": 6.0,
+      "avatar_x_before": 6.0,
+      "avatar_y_after": 4.0,
+      "avatar_y_before": 4.0,
+      "day": 1,
+      "intended_dx": 0.0,
+      "intended_dy": 0.0,
+      "key": "Space",
+      "keyboard_binding_valid": 1,
+      "movement_applied": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 10
+    },
+    {
+      "avatar_x_after": 6.0,
+      "avatar_x_before": 6.0,
+      "avatar_y_after": 3.76,
+      "avatar_y_before": 4.0,
+      "day": 1,
+      "intended_dx": 0.0,
+      "intended_dy": -0.24,
+      "key": "ArrowUp",
+      "keyboard_binding_valid": 1,
+      "movement_applied": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 11
+    }
+  ],
+  "sample_mutations": [
+    {
+      "avatar_x": 6.0,
+      "avatar_y": 4.0,
+      "ceremony_phase": "prompt",
+      "day": 1,
+      "mutation_id": "v21-mutation-0000",
+      "mutation_version": 21,
+      "scene_bounds_valid": 1,
+      "scene_id": "v21-scene-d01",
+      "selected_agent": "Keth",
+      "selected_object": "path cord",
+      "state_changed": 1,
+      "tick": 0
+    },
+    {
+      "avatar_x": 6.28,
+      "avatar_y": 4.0,
+      "ceremony_phase": "prompt",
+      "day": 1,
+      "mutation_id": "v21-mutation-0001",
+      "mutation_version": 21,
+      "scene_bounds_valid": 1,
+      "scene_id": "v21-scene-d01",
+      "selected_agent": "Melo",
+      "selected_object": "tally beads",
+      "state_changed": 1,
+      "tick": 1
+    },
+    {
+      "avatar_x": 6.28,
+      "avatar_y": 4.0,
+      "ceremony_phase": "prompt",
+      "day": 1,
+      "mutation_id": "v21-mutation-0002",
+      "mutation_version": 21,
+      "scene_bounds_valid": 1,
+      "scene_id": "v21-scene-d01",
+      "selected_agent": "Nari",
+      "selected_object": "ink ledger",
+      "state_changed": 1,
+      "tick": 2
+    },
+    {
+      "avatar_x": 6.28,
+      "avatar_y": 4.24,
+      "ceremony_phase": "prompt",
+      "day": 1,
+      "mutation_id": "v21-mutation-0003",
+      "mutation_version": 21,
+      "scene_bounds_valid": 1,
+      "scene_id": "v21-scene-d01",
+      "selected_agent": "Ori",
+      "selected_object": "none",
+      "state_changed": 1,
+      "tick": 3
+    },
+    {
+      "avatar_x": 6.28,
+      "avatar_y": 4.24,
+      "ceremony_phase": "prompt",
+      "day": 1,
+      "mutation_id": "v21-mutation-0004",
+      "mutation_version": 21,
+      "scene_bounds_valid": 1,
+      "scene_id": "v21-scene-d01",
+      "selected_agent": "Vonn",
+      "selected_object": "listening shell",
+      "state_changed": 1,
+      "tick": 4
+    },
+    {
+      "avatar_x": 6.28,
+      "avatar_y": 4.0,
+      "ceremony_phase": "prompt",
+      "day": 1,
+      "mutation_id": "v21-mutation-0005",
+      "mutation_version": 21,
+      "scene_bounds_valid": 1,
+      "scene_id": "v21-scene-d01",
+      "selected_agent": "Sova",
+      "selected_object": "ember bowl",
+      "state_changed": 1,
+      "tick": 5
+    },
+    {
+      "avatar_x": 6.28,
+      "avatar_y": 4.0,
+      "ceremony_phase": "handoff",
+      "day": 1,
+      "mutation_id": "v21-mutation-0006",
+      "mutation_version": 21,
+      "scene_bounds_valid": 1,
+      "scene_id": "v21-scene-d01",
+      "selected_agent": "Keth",
+      "selected_object": "path cord",
+      "state_changed": 1,
+      "tick": 6
+    },
+    {
+      "avatar_x": 6.28,
+      "avatar_y": 4.0,
+      "ceremony_phase": "restored",
+      "day": 1,
+      "mutation_id": "v21-mutation-0007",
+      "mutation_version": 21,
+      "scene_bounds_valid": 1,
+      "scene_id": "v21-scene-d01",
+      "selected_agent": "Melo",
+      "selected_object": "tally beads",
+      "state_changed": 1,
+      "tick": 7
+    },
+    {
+      "avatar_x": 6.0,
+      "avatar_y": 4.0,
+      "ceremony_phase": "prompt",
+      "day": 1,
+      "mutation_id": "v21-mutation-0008",
+      "mutation_version": 21,
+      "scene_bounds_valid": 1,
+      "scene_id": "v21-scene-d01",
+      "selected_agent": "Nari",
+      "selected_object": "ink ledger",
+      "state_changed": 1,
+      "tick": 8
+    },
+    {
+      "avatar_x": 6.0,
+      "avatar_y": 4.0,
+      "ceremony_phase": "restored",
+      "day": 1,
+      "mutation_id": "v21-mutation-0009",
+      "mutation_version": 21,
+      "scene_bounds_valid": 1,
+      "scene_id": "v21-scene-d01",
+      "selected_agent": "Ori",
+      "selected_object": "none",
+      "state_changed": 1,
+      "tick": 9
+    },
+    {
+      "avatar_x": 6.0,
+      "avatar_y": 4.0,
+      "ceremony_phase": "prompt",
+      "day": 1,
+      "mutation_id": "v21-mutation-0010",
+      "mutation_version": 21,
+      "scene_bounds_valid": 1,
+      "scene_id": "v21-scene-d01",
+      "selected_agent": "Vonn",
+      "selected_object": "listening shell",
+      "state_changed": 1,
+      "tick": 10
+    },
+    {
+      "avatar_x": 6.0,
+      "avatar_y": 3.76,
+      "ceremony_phase": "prompt",
+      "day": 1,
+      "mutation_id": "v21-mutation-0011",
+      "mutation_version": 21,
+      "scene_bounds_valid": 1,
+      "scene_id": "v21-scene-d01",
+      "selected_agent": "Sova",
+      "selected_object": "ember bowl",
+      "state_changed": 1,
+      "tick": 11
+    }
+  ],
+  "sample_prompts": [
+    {
+      "agent": "Keth",
+      "collision_blocked": 0,
+      "collision_detected": 1,
+      "day": 1,
+      "distance_to_avatar": 1.708801,
+      "prompt_accuracy": 1.0,
+      "prompt_kind": "boundary",
+      "prompt_text": "Keth: keep warning path visible before path cord.",
+      "proximity_prompt_visible": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 0
+    },
+    {
+      "agent": "Melo",
+      "collision_blocked": 0,
+      "collision_detected": 0,
+      "day": 1,
+      "distance_to_avatar": 1.271377,
+      "prompt_accuracy": 1.0,
+      "prompt_kind": "ceremony",
+      "prompt_text": "Melo: keep fair turn visible before tally beads.",
+      "proximity_prompt_visible": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 1
+    },
+    {
+      "agent": "Nari",
+      "collision_blocked": 0,
+      "collision_detected": 0,
+      "day": 1,
+      "distance_to_avatar": 2.037253,
+      "prompt_accuracy": 1.0,
+      "prompt_kind": "yield",
+      "prompt_text": "Nari: keep sealed note visible before ink ledger.",
+      "proximity_prompt_visible": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 2
+    },
+    {
+      "agent": "Ori",
+      "collision_blocked": 0,
+      "collision_detected": 0,
+      "day": 1,
+      "distance_to_avatar": 2.53811,
+      "prompt_accuracy": 1.0,
+      "prompt_kind": "repair",
+      "prompt_text": "Ori: keep repair warning visible before sap hook.",
+      "proximity_prompt_visible": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 3
+    },
+    {
+      "agent": "Vonn",
+      "collision_blocked": 0,
+      "collision_detected": 0,
+      "day": 1,
+      "distance_to_avatar": 2.380336,
+      "prompt_accuracy": 0.666667,
+      "prompt_kind": "observe",
+      "prompt_text": "Vonn: keep quiet distance visible before listening shell.",
+      "proximity_prompt_visible": 0,
+      "scene_id": "v21-scene-d01",
+      "tick": 4
+    },
+    {
+      "agent": "Sova",
+      "collision_blocked": 0,
+      "collision_detected": 0,
+      "day": 1,
+      "distance_to_avatar": 1.869866,
+      "prompt_accuracy": 1.0,
+      "prompt_kind": "talk",
+      "prompt_text": "Sova: keep rest space visible before ember bowl.",
+      "proximity_prompt_visible": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 5
+    },
+    {
+      "agent": "Keth",
+      "collision_blocked": 0,
+      "collision_detected": 0,
+      "day": 1,
+      "distance_to_avatar": 1.449966,
+      "prompt_accuracy": 1.0,
+      "prompt_kind": "boundary",
+      "prompt_text": "Keth: keep warning path visible before path cord.",
+      "proximity_prompt_visible": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 6
+    },
+    {
+      "agent": "Melo",
+      "collision_blocked": 0,
+      "collision_detected": 0,
+      "day": 1,
+      "distance_to_avatar": 1.271377,
+      "prompt_accuracy": 1.0,
+      "prompt_kind": "ceremony",
+      "prompt_text": "Melo: keep fair turn visible before tally beads.",
+      "proximity_prompt_visible": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 7
+    },
+    {
+      "agent": "Nari",
+      "collision_blocked": 0,
+      "collision_detected": 0,
+      "day": 1,
+      "distance_to_avatar": 1.843909,
+      "prompt_accuracy": 1.0,
+      "prompt_kind": "yield",
+      "prompt_text": "Nari: keep sealed note visible before ink ledger.",
+      "proximity_prompt_visible": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 8
+    },
+    {
+      "agent": "Ori",
+      "collision_blocked": 0,
+      "collision_detected": 0,
+      "day": 1,
+      "distance_to_avatar": 2.906888,
+      "prompt_accuracy": 1.0,
+      "prompt_kind": "repair",
+      "prompt_text": "Ori: keep repair warning visible before sap hook.",
+      "proximity_prompt_visible": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 9
+    },
+    {
+      "agent": "Vonn",
+      "collision_blocked": 0,
+      "collision_detected": 0,
+      "day": 1,
+      "distance_to_avatar": 2.109502,
+      "prompt_accuracy": 1.0,
+      "prompt_kind": "observe",
+      "prompt_text": "Vonn: keep quiet distance visible before listening shell.",
+      "proximity_prompt_visible": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 10
+    },
+    {
+      "agent": "Sova",
+      "collision_blocked": 0,
+      "collision_detected": 0,
+      "day": 1,
+      "distance_to_avatar": 1.505855,
+      "prompt_accuracy": 1.0,
+      "prompt_kind": "talk",
+      "prompt_text": "Sova: keep rest space visible before ember bowl.",
+      "proximity_prompt_visible": 1,
+      "scene_id": "v21-scene-d01",
+      "tick": 11
+    }
+  ],
+  "sample_snapshots": [
+    {
+      "day": 1,
+      "scene_id": "v21-scene-d01",
+      "snapshot_id": "v21-snapshot-0000",
+      "snapshot_integrity": 1.0,
+      "storage_key": "ssrm_browser_world_v21_live_scene_state",
+      "stores_agent_positions": 1,
+      "stores_avatar_position": 1,
+      "stores_object_states": 1,
+      "stores_prompt_state": 1,
+      "stores_replay_cursor": 1,
+      "tick": 0
+    },
+    {
+      "day": 1,
+      "scene_id": "v21-scene-d01",
+      "snapshot_id": "v21-snapshot-0001",
+      "snapshot_integrity": 1.0,
+      "storage_key": "ssrm_browser_world_v21_live_scene_state",
+      "stores_agent_positions": 1,
+      "stores_avatar_position": 1,
+      "stores_object_states": 1,
+      "stores_prompt_state": 1,
+      "stores_replay_cursor": 1,
+      "tick": 1
+    },
+    {
+      "day": 1,
+      "scene_id": "v21-scene-d01",
+      "snapshot_id": "v21-snapshot-0002",
+      "snapshot_integrity": 1.0,
+      "storage_key": "ssrm_browser_world_v21_live_scene_state",
+      "stores_agent_positions": 1,
+      "stores_avatar_position": 1,
+      "stores_object_states": 1,
+      "stores_prompt_state": 1,
+      "stores_replay_cursor": 1,
+      "tick": 2
+    },
+    {
+      "day": 1,
+      "scene_id": "v21-scene-d01",
+      "snapshot_id": "v21-snapshot-0003",
+      "snapshot_integrity": 1.0,
+      "storage_key": "ssrm_browser_world_v21_live_scene_state",
+      "stores_agent_positions": 1,
+      "stores_avatar_position": 1,
+      "stores_object_states": 1,
+      "stores_prompt_state": 1,
+      "stores_replay_cursor": 1,
+      "tick": 3
+    },
+    {
+      "day": 1,
+      "scene_id": "v21-scene-d01",
+      "snapshot_id": "v21-snapshot-0004",
+      "snapshot_integrity": 0.8,
+      "storage_key": "ssrm_browser_world_v21_live_scene_state",
+      "stores_agent_positions": 1,
+      "stores_avatar_position": 1,
+      "stores_object_states": 1,
+      "stores_prompt_state": 0,
+      "stores_replay_cursor": 1,
+      "tick": 4
+    },
+    {
+      "day": 1,
+      "scene_id": "v21-scene-d01",
+      "snapshot_id": "v21-snapshot-0005",
+      "snapshot_integrity": 1.0,
+      "storage_key": "ssrm_browser_world_v21_live_scene_state",
+      "stores_agent_positions": 1,
+      "stores_avatar_position": 1,
+      "stores_object_states": 1,
+      "stores_prompt_state": 1,
+      "stores_replay_cursor": 1,
+      "tick": 5
+    },
+    {
+      "day": 1,
+      "scene_id": "v21-scene-d01",
+      "snapshot_id": "v21-snapshot-0006",
+      "snapshot_integrity": 1.0,
+      "storage_key": "ssrm_browser_world_v21_live_scene_state",
+      "stores_agent_positions": 1,
+      "stores_avatar_position": 1,
+      "stores_object_states": 1,
+      "stores_prompt_state": 1,
+      "stores_replay_cursor": 1,
+      "tick": 6
+    },
+    {
+      "day": 1,
+      "scene_id": "v21-scene-d01",
+      "snapshot_id": "v21-snapshot-0007",
+      "snapshot_integrity": 0.8,
+      "storage_key": "ssrm_browser_world_v21_live_scene_state",
+      "stores_agent_positions": 1,
+      "stores_avatar_position": 0,
+      "stores_object_states": 1,
+      "stores_prompt_state": 1,
+      "stores_replay_cursor": 1,
+      "tick": 7
+    },
+    {
+      "day": 1,
+      "scene_id": "v21-scene-d01",
+      "snapshot_id": "v21-snapshot-0008",
+      "snapshot_integrity": 1.0,
+      "storage_key": "ssrm_browser_world_v21_live_scene_state",
+      "stores_agent_positions": 1,
+      "stores_avatar_position": 1,
+      "stores_object_states": 1,
+      "stores_prompt_state": 1,
+      "stores_replay_cursor": 1,
+      "tick": 8
+    },
+    {
+      "day": 1,
+      "scene_id": "v21-scene-d01",
+      "snapshot_id": "v21-snapshot-0009",
+      "snapshot_integrity": 0.8,
+      "storage_key": "ssrm_browser_world_v21_live_scene_state",
+      "stores_agent_positions": 0,
+      "stores_avatar_position": 1,
+      "stores_object_states": 1,
+      "stores_prompt_state": 1,
+      "stores_replay_cursor": 1,
+      "tick": 9
+    },
+    {
+      "day": 1,
+      "scene_id": "v21-scene-d01",
+      "snapshot_id": "v21-snapshot-0010",
+      "snapshot_integrity": 1.0,
+      "storage_key": "ssrm_browser_world_v21_live_scene_state",
+      "stores_agent_positions": 1,
+      "stores_avatar_position": 1,
+      "stores_object_states": 1,
+      "stores_prompt_state": 1,
+      "stores_replay_cursor": 1,
+      "tick": 10
+    },
+    {
+      "day": 1,
+      "scene_id": "v21-scene-d01",
+      "snapshot_id": "v21-snapshot-0011",
+      "snapshot_integrity": 0.8,
+      "storage_key": "ssrm_browser_world_v21_live_scene_state",
+      "stores_agent_positions": 1,
+      "stores_avatar_position": 1,
+      "stores_object_states": 1,
+      "stores_prompt_state": 1,
+      "stores_replay_cursor": 0,
+      "tick": 11
+    }
+  ],
+  "seed": 20260874,
+  "source_results": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_results.json"
+}</script>
+<script>
+const KEY = "ssrm_browser_world_v21_live_scene_state";
+const source = JSON.parse(document.getElementById('initial-state').textContent);
+let state = JSON.parse(localStorage.getItem(KEY) || JSON.stringify({ x:6, y:4, saved:{x:6,y:4}, cursor:0, ceremonyPhase:'idle', replay:[], source }));
+function persist() { localStorage.setItem(KEY, JSON.stringify(state)); render(); }
+function pctX(x) { return (x / 12 * 100).toFixed(2) + '%'; }
+function pctY(y) { return (y / 8 * 100).toFixed(2) + '%'; }
+function stepKey(key) { const deltas = { ArrowUp:[0,-.24], ArrowDown:[0,.24], ArrowLeft:[-.28,0], ArrowRight:[.28,0] }; const d = deltas[key] || [0,0]; state.x = Math.max(.7, Math.min(11.3, state.x + d[0])); state.y = Math.max(.7, Math.min(7.3, state.y + d[1])); if (key === 'KeyE') state.ceremonyPhase = 'handoff'; state.cursor++; state.replay.push({ type:'key', key, x:state.x, y:state.y, ceremonyPhase:state.ceremonyPhase }); persist(); }
+function saveScene() { state.saved = { x:state.x, y:state.y, ceremonyPhase:state.ceremonyPhase }; state.replay.push({ type:'save', saved:state.saved }); persist(); }
+function restoreScene() { state.x = state.saved.x; state.y = state.saved.y; state.ceremonyPhase = state.saved.ceremonyPhase || 'restored'; state.replay.push({ type:'restore', x:state.x, y:state.y, ceremonyPhase:state.ceremonyPhase }); persist(); }
+function exportReplay() { const blob = new Blob([JSON.stringify(state.replay, null, 2)], { type:'application/json' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = 'report-261-live-scene-replay.json'; a.click(); URL.revokeObjectURL(url); }
+document.addEventListener('keydown', (event) => { if (['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','KeyE','KeyR'].includes(event.code)) { event.preventDefault(); if (event.code === 'KeyR') restoreScene(); else stepKey(event.code); }});
+function render() {
+  document.getElementById('readiness').textContent = source.metrics.browser_world_v21_live_scene_mutation_readiness.toFixed(3);
+  document.getElementById('weakest').textContent = source.metrics.weakest_channel_score.toFixed(3);
+  document.getElementById('frames').textContent = source.counts.browser_world_v21_ticks;
+  document.getElementById('state').textContent = JSON.stringify({ x:+state.x.toFixed(2), y:+state.y.toFixed(2), saved:state.saved, ceremonyPhase:state.ceremonyPhase, replayRows:state.replay.length }, null, 2);
+  const scene = document.getElementById('scene'); scene.querySelectorAll('.entity,.object').forEach(n => n.remove());
+  const avatar = document.createElement('div'); avatar.className = 'entity avatar'; avatar.style.left = pctX(state.x); avatar.style.top = pctY(state.y); scene.appendChild(avatar);
+  const mutation = source.sample_mutations[state.cursor % source.sample_mutations.length];
+  const ceremony = source.sample_ceremonies[state.cursor % source.sample_ceremonies.length];
+  const agent = document.createElement('div'); agent.className = 'entity agent'; agent.style.left = pctX(ceremony.object_x + .4); agent.style.top = pctY(ceremony.object_y + .3); scene.appendChild(agent);
+  const object = document.createElement('div'); object.className = 'object'; object.style.left = pctX(ceremony.object_x); object.style.top = pctY(ceremony.object_y); scene.appendChild(object);
+  const log = document.getElementById('log'); log.innerHTML = '';
+  source.sample_prompts.forEach((prompt) => { const div = document.createElement('div'); div.className = 'row'; div.innerHTML = `<strong>${prompt.prompt_kind}</strong><br>${prompt.prompt_text}<br><small>visible=${prompt.proximity_prompt_visible} distance=${prompt.distance_to_avatar}</small>`; log.appendChild(div); });
+}
+render();
+</script>
+</body>
+</html>

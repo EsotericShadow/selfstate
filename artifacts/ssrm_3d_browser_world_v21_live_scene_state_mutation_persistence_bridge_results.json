@@ -1,0 +1,108 @@
+{
+  "ablations": [
+    {
+      "ablation": "no_keyboard_movement",
+      "interpretation": "The avatar cannot mutate scene position through keyboard input.",
+      "readiness_after_ablation": 0.607769,
+      "readiness_loss": 0.345
+    },
+    {
+      "ablation": "no_collision_prompts",
+      "interpretation": "Movement can overlap agents without visible proximity feedback.",
+      "readiness_after_ablation": 0.647769,
+      "readiness_loss": 0.305
+    },
+    {
+      "ablation": "no_local_storage_snapshots",
+      "interpretation": "Scene state cannot survive reload or save/restore.",
+      "readiness_after_ablation": 0.667769,
+      "readiness_loss": 0.285
+    },
+    {
+      "ablation": "no_object_ceremony_persistence",
+      "interpretation": "Ceremony objects change visually but do not persist as state.",
+      "readiness_after_ablation": 0.692769,
+      "readiness_loss": 0.26
+    },
+    {
+      "ablation": "no_save_restore_positions",
+      "interpretation": "Avatar and agent positions cannot be restored visibly.",
+      "readiness_after_ablation": 0.737769,
+      "readiness_loss": 0.215
+    },
+    {
+      "ablation": "no_live_scene_replay",
+      "interpretation": "Scene mutation cannot be replayed deterministically.",
+      "readiness_after_ablation": 0.767769,
+      "readiness_loss": 0.185
+    }
+  ],
+  "artifacts": {
+    "browser_ticks_csv": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_browser_ticks.csv",
+    "collision_proximity_prompts_csv": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_collision_proximity_prompts.csv",
+    "keyboard_movement_csv": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_keyboard_movement.csv",
+    "live_scene_replays_csv": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_live_scene_replays.csv",
+    "local_storage_snapshots_csv": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_local_storage_snapshots.csv",
+    "multi_sensory_live_scene_csv": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_multi_sensory_live_scene.csv",
+    "object_ceremony_persistence_csv": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_object_ceremony_persistence.csv",
+    "results_json": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_results.json",
+    "save_restore_positions_csv": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_save_restore_positions.csv",
+    "scene_state_mutations_csv": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_scene_state_mutations.csv",
+    "state_json": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_state.json",
+    "summary_csv": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_summary.csv",
+    "verdict_csv": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_verdict.csv",
+    "visualization_html": "visualizations/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge.html"
+  },
+  "claim_boundary": "Deterministic browser-local live scene mutation scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "agents": 6,
+    "browser_world_v21_ticks": 360,
+    "collision_proximity_prompt_frames": 360,
+    "keyboard_movement_frames": 360,
+    "live_scene_replay_frames": 360,
+    "local_storage_snapshot_frames": 360,
+    "multi_sensory_live_scene_frames": 360,
+    "object_ceremony_persistence_frames": 360,
+    "save_restore_position_frames": 360,
+    "scene_state_mutation_frames": 360
+  },
+  "days": 24,
+  "metrics": {
+    "arrow_movement_application": 0.936782,
+    "browser_world_v21_live_scene_mutation_readiness": 0.952769,
+    "browser_world_v21_surface_available": 1.0,
+    "collision_blocking_integrity": 1.0,
+    "collision_prompt_count": 18.0,
+    "collision_proximity_prompt_surface": 0.922222,
+    "comfort_pain_live_scene_bounds": 1.0,
+    "frequency_flower_live_scene_rhythm": 1.0,
+    "keyboard_avatar_movement_binding": 1.0,
+    "live_scene_replay_integrity": 0.983975,
+    "live_scene_state_mutation": 0.991667,
+    "local_storage_scene_snapshot_integrity": 0.974444,
+    "mean_live_scene_channel_score": 0.97489,
+    "multi_sensory_live_scene_binding": 0.966667,
+    "object_ceremony_state_persistence": 0.976458,
+    "object_ceremony_storage_write": 0.933333,
+    "object_ceremony_visible_surface": 0.933333,
+    "object_owner_preservation": 0.975,
+    "privacy_safe_live_scene_state": 1.0,
+    "proximity_prompt_accuracy": 0.95637,
+    "proximity_prompt_visibility": 0.922222,
+    "restore_attempt_count": 42.0,
+    "save_restore_position_integrity": 0.988889,
+    "scene_bounds_integrity": 1.0,
+    "source_scene_geometry_continuity": 1.0,
+    "visible_restore_feedback": 1.0,
+    "visible_scene_mutation_surface": 0.961111,
+    "weakest_channel_score": 0.922222
+  },
+  "name": "SSRM-3D browser world v21 live scene state mutation persistence bridge",
+  "next_gate": "browser world v22 with free-move proximity-triggered dialogue prompts, persistent multi-object ceremony inventory, and reload-stable agent reaction state in the playable browser scene",
+  "report": 261,
+  "seed": 20260874,
+  "source_dependency": "artifacts/ssrm_3d_browser_world_v20_scene_geometry_collision_object_ceremony_bridge_results.json",
+  "source_verdict": "pass",
+  "ticks_per_day": 15,
+  "verdict": "pass"
+}

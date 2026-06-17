@@ -1468,6 +1468,16 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_deep_time_cultural_memory_proto_language_bridge.py",
+        "--seed",
+        "20260719",
+        "--eras",
+        "12",
+        "--generations-per-era",
+        "200",
+    ],
+    [
+        sys.executable,
         "experiments/ssrm_3d_learned_multiday_maturation_controller.py",
         "--train-seeds",
         "20260911,20260912,20260913,20260914,20260915,20260916",

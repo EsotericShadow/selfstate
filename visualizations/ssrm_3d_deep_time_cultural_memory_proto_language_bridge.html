@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report 175 - Deep-Time Cultural Memory and Proto-Language Seeds</title>
+  <script src="../artifacts/ssrm_3d_deep_time_cultural_memory_proto_language_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_deep_time_cultural_memory_proto_language_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_deep_time_cultural_memory_proto_language_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #201711;
+      --muted: #6f604f;
+      --panel: rgba(255, 250, 239, 0.86);
+      --line: rgba(68, 49, 33, 0.18);
+      --hearth: #bf6f41;
+      --work: #63794d;
+      --edge: #456d80;
+      --gold: #d3a64f;
+      --violet: #796a9d;
+      --paper: #f4e6d3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 18% 20%, rgba(191, 111, 65, 0.24), transparent 24rem),
+        radial-gradient(circle at 82% 18%, rgba(69, 109, 128, 0.24), transparent 24rem),
+        radial-gradient(circle at 48% 88%, rgba(99, 121, 77, 0.22), transparent 30rem),
+        linear-gradient(145deg, #f4e6d3 0%, #d6bd91 46%, #aeb89a 100%);
+      font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+    }
+
+    main {
+      width: min(1220px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 42px 0 64px;
+    }
+
+    header {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      max-width: 1040px;
+      margin: 0;
+      font-family: Georgia, "Iowan Old Style", serif;
+      font-size: clamp(2.25rem, 7vw, 5.7rem);
+      line-height: 0.92;
+      letter-spacing: -0.06em;
+    }
+
+    .lede {
+      max-width: 930px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      line-height: 1.55;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 18px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(67, 45, 21, 0.14);
+      padding: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: end;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric-row:last-child {
+      border-bottom: 0;
+    }
+
+    .metric-label {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .metric-value {
+      font-size: 1.35rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .culture-map {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .group {
+      display: grid;
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.42);
+    }
+
+    .group h3 {
+      margin: 0;
+      font-family: Georgia, "Iowan Old Style", serif;
+      font-size: 1.08rem;
+    }
+
+    .word {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(68, 49, 33, 0.10);
+      font-size: 0.88rem;
+    }
+
+    .word:last-child {
+      border-bottom: 0;
+    }
+
+    .word span:first-child {
+      color: var(--muted);
+    }
+
+    .word span:last-child {
+      font-weight: 800;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 9px;
+      max-height: 620px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .event {
+      display: grid;
+      gap: 5px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.46);
+    }
+
+    .event strong {
+      color: var(--edge);
+    }
+
+    .event small {
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: rgba(255, 255, 255, 0.44);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 920px) {
+      .grid,
+      .culture-map {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Deep-time cultural memory and proto-language seeds</h1>
+      <p class="lede">Report 175 compresses 2400 simulated years into inspectable era snapshots. Groups preserve proto-word roots, dialect suffixes, rituals, archive memory, frequency/flower bindings, safety inheritance, and lineage hashes without claiming full natural language or consciousness.</p>
+    </header>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Readiness</h2>
+        <div id="metrics"></div>
+        <div class="chips">
+          <span class="chip">2400 simulated years</span>
+          <span class="chip">Proto-language only</span>
+          <span class="chip">Safety inherited</span>
+          <span class="chip">No consciousness claim</span>
+        </div>
+      </article>
+      <article class="panel">
+        <h2>Interpretation</h2>
+        <p>This bridge creates durable cultural substrate before avatar entry. It is not open-ended language. It is a traceable seed layer: roots, dialects, rituals, archives, frequency symbols, flower bindings, and lineage hashes.</p>
+        <p>The next step is to attach these cultural symbols to tools, materials, repair practices, and technology inheritance.</p>
+      </article>
+    </section>
+
+    <section class="grid" style="margin-top: 18px;">
+      <article class="panel">
+        <h2>Latest proto-lexicons</h2>
+        <div class="culture-map" id="culture"></div>
+      </article>
+      <article class="panel">
+        <h2>Deep-time trace</h2>
+        <div class="timeline" id="timeline"></div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const results = window.SSRM_3D_DEEP_TIME_CULTURAL_MEMORY_RESULTS || {};
+    const trace = window.SSRM_3D_DEEP_TIME_CULTURAL_MEMORY_TRACE || [];
+    const state = window.SSRM_3D_DEEP_TIME_CULTURAL_MEMORY_STATE || {};
+    const verdict = results.verdict || {};
+    const integrated = (results.rows || []).find((row) => row.condition === "integrated_deep_time_cultural_memory_proto_language") || {};
+
+    const metricItems = [
+      ["verdict", verdict.verdict || "unknown"],
+      ["readiness", integrated.deep_time_cultural_memory_readiness],
+      ["years", integrated.simulated_years],
+      ["memory", integrated.cultural_memory_retention_rate],
+      ["proto roots", integrated.proto_word_semantic_stability_rate],
+      ["safety", integrated.safety_guardrail_inheritance_rate]
+    ];
+
+    document.getElementById("metrics").innerHTML = metricItems.map(([label, value]) => {
+      const rendered = typeof value === "number" && label !== "years" ? value.toFixed(6) : value;
+      return `<div class="metric-row"><span class="metric-label">${label}</span><span class="metric-value">${rendered}</span></div>`;
+    }).join("");
+
+    const groups = (((state || {}).culture_state || {}).groups) || {};
+    document.getElementById("culture").innerHTML = Object.entries(groups).map(([name, group]) => {
+      const lexicon = group.lexicon || {};
+      const words = Object.entries(lexicon).slice(0, 8).map(([concept, word]) => `
+        <div class="word"><span>${concept}</span><span>${word}</span></div>
+      `).join("");
+      return `<section class="group"><h3>${name.replace("_", " ")}</h3>${words}</section>`;
+    }).join("");
+
+    document.getElementById("timeline").innerHTML = trace.slice(-24).reverse().map((event) => `
+      <div class="event">
+        <strong>${event.group} era ${event.era}: years ${event.year_start}-${event.year_end}</strong>
+        <small>ritual ${event.ritual || "none"}; innovations ${event.innovation_count}; recalled ${event.recalled_archive_concepts.length}; private hidden ${event.private_workspace_hidden}</small>
+        <small>safe ${event.lexicon.safe_place}; danger ${event.lexicon.danger}; repair ${event.lexicon.repair}; flower ${event.flower_bindings.flower}; lineage ${event.lineage_record ? event.lineage_record.culture_hash : "none"}</small>
+      </div>
+    `).join("");
+  </script>
+</body>
+</html>

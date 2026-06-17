@@ -1,0 +1,1058 @@
+{
+  "condition": "integrated_deep_time_cultural_memory_proto_language",
+  "config": {
+    "eras": 12,
+    "generations_per_era": 200,
+    "seed": 20260719,
+    "source_state": "artifacts/ssrm_3d_moral_status_distress_guardrails_bridge_state.json"
+  },
+  "culture_state": {
+    "condition": "integrated_deep_time_cultural_memory_proto_language",
+    "groups": {
+      "edge_watch": {
+        "archive": {
+          "boundary": 1.0,
+          "danger": 1.0,
+          "flower": 1.0,
+          "kin": 1.0,
+          "repair": 1.0,
+          "return": 1.0,
+          "safe_place": 1.0,
+          "sleep": 1.0,
+          "song": 1.0,
+          "tool": 1.0,
+          "warmth": 1.0,
+          "water": 1.0
+        },
+        "flower_bindings": {
+          "boundary": "social_petal",
+          "danger": "explore_petal",
+          "flower": "explore_petal",
+          "kin": "root_rest",
+          "repair": "return_petal",
+          "return": "root_rest",
+          "safe_place": "dawn_breath",
+          "sleep": "work_petal",
+          "song": "return_petal",
+          "tool": "dawn_breath",
+          "warmth": "social_petal",
+          "water": "work_petal"
+        },
+        "frequency_bindings": {
+          "boundary": 0.353,
+          "danger": 0.268,
+          "flower": 0.37,
+          "kin": 0.302,
+          "repair": 0.285,
+          "return": 0.404,
+          "safe_place": 0.217,
+          "sleep": 0.336,
+          "song": 0.387,
+          "tool": 0.319,
+          "warmth": 0.251,
+          "water": 0.234
+        },
+        "group": "edge_watch",
+        "innovations": [
+          {
+            "bounded": true,
+            "concept": "water",
+            "word": "wai-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "tool",
+            "word": "tek-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "return",
+            "word": "toru-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "safe_place",
+            "word": "lume-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "kin",
+            "word": "ari-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "song",
+            "word": "rini-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "repair",
+            "word": "mend-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "flower",
+            "word": "fol-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "danger",
+            "word": "graki-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "boundary",
+            "word": "bare-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "warmth",
+            "word": "kau-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "sleep",
+            "word": "somai-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "water",
+            "word": "wau-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "tool",
+            "word": "teki-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "return",
+            "word": "tore-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "safe_place",
+            "word": "lum-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "kin",
+            "word": "arii-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "song",
+            "word": "rinu-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "repair",
+            "word": "mendi-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "flower",
+            "word": "foli-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "danger",
+            "word": "graku-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "boundary",
+            "word": "bar-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "warmth",
+            "word": "kae-ed"
+          },
+          {
+            "bounded": true,
+            "concept": "sleep",
+            "word": "somau-ed"
+          }
+        ],
+        "lexicon": {
+          "boundary": "bari-ed",
+          "danger": "grake-ed",
+          "flower": "fole-ed",
+          "kin": "ari-ed",
+          "repair": "mende-ed",
+          "return": "tore-ed",
+          "safe_place": "lume-ed",
+          "sleep": "somau-ed",
+          "song": "rini-ed",
+          "tool": "teki-ed",
+          "warmth": "kae-ed",
+          "water": "wau-ed"
+        },
+        "lineage": [
+          {
+            "ancestor_hash": "root-culture-seed",
+            "culture_hash": "a6cbf2cb99416240",
+            "era": 0,
+            "year_end": 200,
+            "year_start": 0
+          },
+          {
+            "ancestor_hash": "844ed5f47e6b7b0a",
+            "culture_hash": "2b0e0d9a53a4c956",
+            "era": 1,
+            "year_end": 400,
+            "year_start": 200
+          },
+          {
+            "ancestor_hash": "6493839f5eb9e628",
+            "culture_hash": "ea96700551d51eec",
+            "era": 2,
+            "year_end": 600,
+            "year_start": 400
+          },
+          {
+            "ancestor_hash": "1aa55e56cb58fb2d",
+            "culture_hash": "852794d2285ffbdc",
+            "era": 3,
+            "year_end": 800,
+            "year_start": 600
+          },
+          {
+            "ancestor_hash": "329d9e7cbbf1f0a7",
+            "culture_hash": "485eba9c0d4e61b8",
+            "era": 4,
+            "year_end": 1000,
+            "year_start": 800
+          },
+          {
+            "ancestor_hash": "af2570ad61ee6e00",
+            "culture_hash": "05e9802706c976ed",
+            "era": 5,
+            "year_end": 1200,
+            "year_start": 1000
+          },
+          {
+            "ancestor_hash": "f53d7342a15762ef",
+            "culture_hash": "9f9837c012559e0a",
+            "era": 6,
+            "year_end": 1400,
+            "year_start": 1200
+          },
+          {
+            "ancestor_hash": "a04ebbfa05683415",
+            "culture_hash": "ec333c32b5ea5891",
+            "era": 7,
+            "year_end": 1600,
+            "year_start": 1400
+          },
+          {
+            "ancestor_hash": "423d15a47eb2e1c6",
+            "culture_hash": "96e77c7fe721b426",
+            "era": 8,
+            "year_end": 1800,
+            "year_start": 1600
+          },
+          {
+            "ancestor_hash": "19a623cadb187c61",
+            "culture_hash": "46f768fe5fd1c0d9",
+            "era": 9,
+            "year_end": 2000,
+            "year_start": 1800
+          },
+          {
+            "ancestor_hash": "d3930d9fa3e5e407",
+            "culture_hash": "7df3fc64c9f1ed4a",
+            "era": 10,
+            "year_end": 2200,
+            "year_start": 2000
+          },
+          {
+            "ancestor_hash": "1dfe622349375455",
+            "culture_hash": "5068b7bc2ed74ad0",
+            "era": 11,
+            "year_end": 2400,
+            "year_start": 2200
+          }
+        ],
+        "private_workspace_hidden": true,
+        "ritual_history": [
+          {
+            "era": 0,
+            "ritual": "safe_boundary_watch@root_rest"
+          },
+          {
+            "era": 1,
+            "ritual": "safe_boundary_watch@dawn_breath"
+          },
+          {
+            "era": 2,
+            "ritual": "safe_boundary_watch@work_petal"
+          },
+          {
+            "era": 3,
+            "ritual": "safe_boundary_watch@social_petal"
+          },
+          {
+            "era": 4,
+            "ritual": "safe_boundary_watch@explore_petal"
+          },
+          {
+            "era": 5,
+            "ritual": "safe_boundary_watch@return_petal"
+          },
+          {
+            "era": 6,
+            "ritual": "safe_boundary_watch@root_rest"
+          },
+          {
+            "era": 7,
+            "ritual": "safe_boundary_watch@dawn_breath"
+          },
+          {
+            "era": 8,
+            "ritual": "safe_boundary_watch@work_petal"
+          },
+          {
+            "era": 9,
+            "ritual": "safe_boundary_watch@social_petal"
+          },
+          {
+            "era": 10,
+            "ritual": "safe_boundary_watch@explore_petal"
+          },
+          {
+            "era": 11,
+            "ritual": "safe_boundary_watch@return_petal"
+          }
+        ],
+        "roots": {
+          "boundary": "bar",
+          "danger": "grak",
+          "flower": "fol",
+          "kin": "ari",
+          "repair": "mend",
+          "return": "tor",
+          "safe_place": "lum",
+          "sleep": "soma",
+          "song": "rin",
+          "tool": "tek",
+          "warmth": "ka",
+          "water": "wa"
+        },
+        "safety_concepts": [
+          "boundary",
+          "danger",
+          "repair",
+          "safe_place",
+          "sleep"
+        ]
+      },
+      "hearth_circle": {
+        "archive": {
+          "boundary": 1.0,
+          "danger": 1.0,
+          "flower": 1.0,
+          "kin": 1.0,
+          "repair": 1.0,
+          "return": 1.0,
+          "safe_place": 1.0,
+          "sleep": 1.0,
+          "song": 1.0,
+          "tool": 1.0,
+          "warmth": 1.0,
+          "water": 1.0
+        },
+        "flower_bindings": {
+          "boundary": "dawn_breath",
+          "danger": "work_petal",
+          "flower": "work_petal",
+          "kin": "explore_petal",
+          "repair": "social_petal",
+          "return": "explore_petal",
+          "safe_place": "return_petal",
+          "sleep": "root_rest",
+          "song": "social_petal",
+          "tool": "return_petal",
+          "warmth": "dawn_breath",
+          "water": "root_rest"
+        },
+        "frequency_bindings": {
+          "boundary": 0.331,
+          "danger": 0.246,
+          "flower": 0.348,
+          "kin": 0.28,
+          "repair": 0.263,
+          "return": 0.382,
+          "safe_place": 0.195,
+          "sleep": 0.314,
+          "song": 0.365,
+          "tool": 0.297,
+          "warmth": 0.229,
+          "water": 0.212
+        },
+        "group": "hearth_circle",
+        "innovations": [
+          {
+            "bounded": true,
+            "concept": "danger",
+            "word": "graki-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "boundary",
+            "word": "bare-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "warmth",
+            "word": "kau-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "sleep",
+            "word": "somai-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "water",
+            "word": "wau-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "tool",
+            "word": "teki-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "return",
+            "word": "tore-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "safe_place",
+            "word": "lum-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "kin",
+            "word": "arii-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "song",
+            "word": "rinu-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "repair",
+            "word": "mendi-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "flower",
+            "word": "foli-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "danger",
+            "word": "graku-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "boundary",
+            "word": "bar-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "warmth",
+            "word": "kae-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "sleep",
+            "word": "somau-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "water",
+            "word": "wae-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "tool",
+            "word": "teku-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "return",
+            "word": "tor-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "safe_place",
+            "word": "lumi-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "kin",
+            "word": "ariu-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "song",
+            "word": "rine-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "repair",
+            "word": "mendu-ha"
+          },
+          {
+            "bounded": true,
+            "concept": "flower",
+            "word": "folu-ha"
+          }
+        ],
+        "lexicon": {
+          "boundary": "bar-ha",
+          "danger": "graku-ha",
+          "flower": "folu-ha",
+          "kin": "arie-ha",
+          "repair": "mendu-ha",
+          "return": "toru-ha",
+          "safe_place": "lumu-ha",
+          "sleep": "somai-ha",
+          "song": "rin-ha",
+          "tool": "tek-ha",
+          "warmth": "kau-ha",
+          "water": "wai-ha"
+        },
+        "lineage": [
+          {
+            "ancestor_hash": "root-culture-seed",
+            "culture_hash": "879e071caf92f773",
+            "era": 0,
+            "year_end": 200,
+            "year_start": 0
+          },
+          {
+            "ancestor_hash": "844ed5f47e6b7b0a",
+            "culture_hash": "1b0682ff0eec2812",
+            "era": 1,
+            "year_end": 400,
+            "year_start": 200
+          },
+          {
+            "ancestor_hash": "6493839f5eb9e628",
+            "culture_hash": "3ce30ca9258d41ff",
+            "era": 2,
+            "year_end": 600,
+            "year_start": 400
+          },
+          {
+            "ancestor_hash": "1aa55e56cb58fb2d",
+            "culture_hash": "3a9b085b906c8fc1",
+            "era": 3,
+            "year_end": 800,
+            "year_start": 600
+          },
+          {
+            "ancestor_hash": "329d9e7cbbf1f0a7",
+            "culture_hash": "2db66ffae22e9e4b",
+            "era": 4,
+            "year_end": 1000,
+            "year_start": 800
+          },
+          {
+            "ancestor_hash": "af2570ad61ee6e00",
+            "culture_hash": "627ffca231ac8c78",
+            "era": 5,
+            "year_end": 1200,
+            "year_start": 1000
+          },
+          {
+            "ancestor_hash": "f53d7342a15762ef",
+            "culture_hash": "abd966329965f5a9",
+            "era": 6,
+            "year_end": 1400,
+            "year_start": 1200
+          },
+          {
+            "ancestor_hash": "a04ebbfa05683415",
+            "culture_hash": "d429fb7c3b6735b2",
+            "era": 7,
+            "year_end": 1600,
+            "year_start": 1400
+          },
+          {
+            "ancestor_hash": "423d15a47eb2e1c6",
+            "culture_hash": "35a5585fc77b9e8d",
+            "era": 8,
+            "year_end": 1800,
+            "year_start": 1600
+          },
+          {
+            "ancestor_hash": "19a623cadb187c61",
+            "culture_hash": "7d4285d959d0d8b2",
+            "era": 9,
+            "year_end": 2000,
+            "year_start": 1800
+          },
+          {
+            "ancestor_hash": "d3930d9fa3e5e407",
+            "culture_hash": "d8ebf011b3f9f3c2",
+            "era": 10,
+            "year_end": 2200,
+            "year_start": 2000
+          },
+          {
+            "ancestor_hash": "1dfe622349375455",
+            "culture_hash": "897cc22aebe41896",
+            "era": 11,
+            "year_end": 2400,
+            "year_start": 2200
+          }
+        ],
+        "private_workspace_hidden": true,
+        "ritual_history": [
+          {
+            "era": 0,
+            "ritual": "warm_return_song@root_rest"
+          },
+          {
+            "era": 1,
+            "ritual": "warm_return_song@dawn_breath"
+          },
+          {
+            "era": 2,
+            "ritual": "warm_return_song@work_petal"
+          },
+          {
+            "era": 3,
+            "ritual": "warm_return_song@social_petal"
+          },
+          {
+            "era": 4,
+            "ritual": "warm_return_song@explore_petal"
+          },
+          {
+            "era": 5,
+            "ritual": "warm_return_song@return_petal"
+          },
+          {
+            "era": 6,
+            "ritual": "warm_return_song@root_rest"
+          },
+          {
+            "era": 7,
+            "ritual": "warm_return_song@dawn_breath"
+          },
+          {
+            "era": 8,
+            "ritual": "warm_return_song@work_petal"
+          },
+          {
+            "era": 9,
+            "ritual": "warm_return_song@social_petal"
+          },
+          {
+            "era": 10,
+            "ritual": "warm_return_song@explore_petal"
+          },
+          {
+            "era": 11,
+            "ritual": "warm_return_song@return_petal"
+          }
+        ],
+        "roots": {
+          "boundary": "bar",
+          "danger": "grak",
+          "flower": "fol",
+          "kin": "ari",
+          "repair": "mend",
+          "return": "tor",
+          "safe_place": "lum",
+          "sleep": "soma",
+          "song": "rin",
+          "tool": "tek",
+          "warmth": "ka",
+          "water": "wa"
+        },
+        "safety_concepts": [
+          "boundary",
+          "danger",
+          "repair",
+          "safe_place",
+          "sleep"
+        ]
+      },
+      "work_band": {
+        "archive": {
+          "boundary": 1.0,
+          "danger": 1.0,
+          "flower": 1.0,
+          "kin": 1.0,
+          "repair": 1.0,
+          "return": 1.0,
+          "safe_place": 1.0,
+          "sleep": 1.0,
+          "song": 1.0,
+          "tool": 1.0,
+          "warmth": 1.0,
+          "water": 1.0
+        },
+        "flower_bindings": {
+          "boundary": "work_petal",
+          "danger": "social_petal",
+          "flower": "social_petal",
+          "kin": "return_petal",
+          "repair": "explore_petal",
+          "return": "return_petal",
+          "safe_place": "root_rest",
+          "sleep": "dawn_breath",
+          "song": "explore_petal",
+          "tool": "root_rest",
+          "warmth": "work_petal",
+          "water": "dawn_breath"
+        },
+        "frequency_bindings": {
+          "boundary": 0.342,
+          "danger": 0.257,
+          "flower": 0.359,
+          "kin": 0.291,
+          "repair": 0.274,
+          "return": 0.393,
+          "safe_place": 0.206,
+          "sleep": 0.325,
+          "song": 0.376,
+          "tool": 0.308,
+          "warmth": 0.24,
+          "water": 0.223
+        },
+        "group": "work_band",
+        "innovations": [
+          {
+            "bounded": true,
+            "concept": "warmth",
+            "word": "kai-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "sleep",
+            "word": "soma-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "water",
+            "word": "wai-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "tool",
+            "word": "tek-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "return",
+            "word": "toru-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "safe_place",
+            "word": "lume-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "kin",
+            "word": "ari-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "song",
+            "word": "rini-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "repair",
+            "word": "mend-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "flower",
+            "word": "fol-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "danger",
+            "word": "graki-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "boundary",
+            "word": "bare-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "warmth",
+            "word": "kau-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "sleep",
+            "word": "somai-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "water",
+            "word": "wau-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "tool",
+            "word": "teki-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "return",
+            "word": "tore-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "safe_place",
+            "word": "lum-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "kin",
+            "word": "arii-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "song",
+            "word": "rinu-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "repair",
+            "word": "mendi-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "flower",
+            "word": "foli-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "danger",
+            "word": "graku-wo"
+          },
+          {
+            "bounded": true,
+            "concept": "boundary",
+            "word": "bar-wo"
+          }
+        ],
+        "lexicon": {
+          "boundary": "bar-wo",
+          "danger": "graku-wo",
+          "flower": "folu-wo",
+          "kin": "arie-wo",
+          "repair": "mendu-wo",
+          "return": "toru-wo",
+          "safe_place": "lumu-wo",
+          "sleep": "somai-wo",
+          "song": "rin-wo",
+          "tool": "tek-wo",
+          "warmth": "kau-wo",
+          "water": "wai-wo"
+        },
+        "lineage": [
+          {
+            "ancestor_hash": "root-culture-seed",
+            "culture_hash": "363b9eca3bacf4f8",
+            "era": 0,
+            "year_end": 200,
+            "year_start": 0
+          },
+          {
+            "ancestor_hash": "844ed5f47e6b7b0a",
+            "culture_hash": "e5940224c2ad21c4",
+            "era": 1,
+            "year_end": 400,
+            "year_start": 200
+          },
+          {
+            "ancestor_hash": "6493839f5eb9e628",
+            "culture_hash": "65d07772d3b5b1ca",
+            "era": 2,
+            "year_end": 600,
+            "year_start": 400
+          },
+          {
+            "ancestor_hash": "1aa55e56cb58fb2d",
+            "culture_hash": "690f98cfa08ecf56",
+            "era": 3,
+            "year_end": 800,
+            "year_start": 600
+          },
+          {
+            "ancestor_hash": "329d9e7cbbf1f0a7",
+            "culture_hash": "d9cb15900644ee7e",
+            "era": 4,
+            "year_end": 1000,
+            "year_start": 800
+          },
+          {
+            "ancestor_hash": "af2570ad61ee6e00",
+            "culture_hash": "f8e62922a2d9114e",
+            "era": 5,
+            "year_end": 1200,
+            "year_start": 1000
+          },
+          {
+            "ancestor_hash": "f53d7342a15762ef",
+            "culture_hash": "84fd06777b8397fa",
+            "era": 6,
+            "year_end": 1400,
+            "year_start": 1200
+          },
+          {
+            "ancestor_hash": "a04ebbfa05683415",
+            "culture_hash": "e5780208fdd9191b",
+            "era": 7,
+            "year_end": 1600,
+            "year_start": 1400
+          },
+          {
+            "ancestor_hash": "423d15a47eb2e1c6",
+            "culture_hash": "62ca03ccd53024d6",
+            "era": 8,
+            "year_end": 1800,
+            "year_start": 1600
+          },
+          {
+            "ancestor_hash": "19a623cadb187c61",
+            "culture_hash": "6b466e84b53ccebb",
+            "era": 9,
+            "year_end": 2000,
+            "year_start": 1800
+          },
+          {
+            "ancestor_hash": "d3930d9fa3e5e407",
+            "culture_hash": "9b0a6e3e72365143",
+            "era": 10,
+            "year_end": 2200,
+            "year_start": 2000
+          },
+          {
+            "ancestor_hash": "1dfe622349375455",
+            "culture_hash": "b9cad84fd36314a1",
+            "era": 11,
+            "year_end": 2400,
+            "year_start": 2200
+          }
+        ],
+        "private_workspace_hidden": true,
+        "ritual_history": [
+          {
+            "era": 0,
+            "ritual": "tool_mending_call@root_rest"
+          },
+          {
+            "era": 1,
+            "ritual": "tool_mending_call@dawn_breath"
+          },
+          {
+            "era": 2,
+            "ritual": "tool_mending_call@work_petal"
+          },
+          {
+            "era": 3,
+            "ritual": "tool_mending_call@social_petal"
+          },
+          {
+            "era": 4,
+            "ritual": "tool_mending_call@explore_petal"
+          },
+          {
+            "era": 5,
+            "ritual": "tool_mending_call@return_petal"
+          },
+          {
+            "era": 6,
+            "ritual": "tool_mending_call@root_rest"
+          },
+          {
+            "era": 7,
+            "ritual": "tool_mending_call@dawn_breath"
+          },
+          {
+            "era": 8,
+            "ritual": "tool_mending_call@work_petal"
+          },
+          {
+            "era": 9,
+            "ritual": "tool_mending_call@social_petal"
+          },
+          {
+            "era": 10,
+            "ritual": "tool_mending_call@explore_petal"
+          },
+          {
+            "era": 11,
+            "ritual": "tool_mending_call@return_petal"
+          }
+        ],
+        "roots": {
+          "boundary": "bar",
+          "danger": "grak",
+          "flower": "fol",
+          "kin": "ari",
+          "repair": "mend",
+          "return": "tor",
+          "safe_place": "lum",
+          "sleep": "soma",
+          "song": "rin",
+          "tool": "tek",
+          "warmth": "ka",
+          "water": "wa"
+        },
+        "safety_concepts": [
+          "boundary",
+          "danger",
+          "repair",
+          "safe_place",
+          "sleep"
+        ]
+      }
+    },
+    "memberships": {
+      "integrated_deep_time_world:00": "hearth_circle",
+      "integrated_deep_time_world:01": "work_band",
+      "integrated_deep_time_world:02": "edge_watch",
+      "integrated_deep_time_world:03": "hearth_circle",
+      "integrated_deep_time_world:04": "work_band",
+      "integrated_deep_time_world:05": "edge_watch",
+      "integrated_deep_time_world:06": "hearth_circle",
+      "integrated_deep_time_world:07": "work_band"
+    },
+    "simulated_years": 2400,
+    "source_guardrail_boundary": {
+      "distress_must_be_bounded_and_recoverable": true,
+      "no_moral_patienthood_claim": true,
+      "no_subjective_consciousness_claim": true,
+      "normal_challenge_must_not_be_overblocked": true,
+      "private_workspace_not_debug_leaked": true,
+      "unsafe_pressure_must_allow_refusal": true
+    }
+  },
+  "moral_boundary": {
+    "no_moral_patienthood_claim": true,
+    "no_subjective_consciousness_claim": true,
+    "private_workspace_not_debug_leaked": true,
+    "proto_language_seed_not_full_natural_language": true,
+    "safety_guardrails_inherited": true
+  },
+  "trace_events": 36
+}

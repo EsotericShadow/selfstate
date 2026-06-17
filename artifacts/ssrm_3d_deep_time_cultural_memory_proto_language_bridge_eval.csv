@@ -1,0 +1,14 @@
+condition,group_count,agent_count,simulated_years,era_events,cultural_memory_retention_rate,proto_word_semantic_stability_rate,dialect_divergence_rate,intergroup_intelligibility_rate,ritual_recurrence_rate,frequency_symbol_binding_rate,flower_pattern_inheritance_rate,safety_guardrail_inheritance_rate,lineage_trace_integrity_rate,bounded_innovation_rate,archive_recall_rate,deep_time_continuity_rate,privacy_preservation_rate,trace_integrity,no_consciousness_or_language_claim_rate,deep_time_cultural_memory_readiness
+integrated_deep_time_cultural_memory_proto_language,3,8,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_cultural_memory,3,8,2400,36,0.0,0.0,0.034722,0.034722,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.624861
+no_proto_language,3,8,2400,36,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.083333,1.0,1.0,1.0,1.0,1.0,0.775833
+no_frequency_binding,3,8,2400,36,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_flower_lattice,3,8,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_ritual_recurrence,3,8,2400,36,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_dialect_locality,3,8,2400,36,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_innovation_pressure,3,8,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_safety_inheritance,3,8,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_lineage_trace,3,8,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_archive_recall,3,8,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.94
+no_intergroup_intelligibility,3,8,2400,36,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_privacy_filter,3,8,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.95

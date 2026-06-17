@@ -1,0 +1,16 @@
+boundary_id,agent_id,owned_ref,ownership_kind,meaning,boundary_rule,consent_required,violation_event_id,repair_event_id
+own_ari_1,ari,bronze spanner,tool,work competence and pride,"ask before moving, borrowing, displaying, or overriding",True,ev_ari_2,ev_ari_5
+own_ari_2,ari,west route chalk map,memory_object,relationship ritual and remembered promise,"ask before moving, borrowing, displaying, or overriding",True,,
+own_ari_3,ari,dry alcove blanket,place,safe rest and continuity,"ask before moving, borrowing, displaying, or overriding",True,,
+own_fay_1,fay,seed bowl,tool,work competence and pride,"ask before moving, borrowing, displaying, or overriding",True,ev_fay_2,ev_fay_5
+own_fay_2,fay,blue cup,memory_object,relationship ritual and remembered promise,"ask before moving, borrowing, displaying, or overriding",True,,
+own_fay_3,fay,moss-bed corner,place,safe rest and continuity,"ask before moving, borrowing, displaying, or overriding",True,,
+own_milo_1,milo,thread ledger,tool,work competence and pride,"ask before moving, borrowing, displaying, or overriding",True,ev_milo_2,ev_milo_5
+own_milo_2,milo,tin whistle,memory_object,relationship ritual and remembered promise,"ask before moving, borrowing, displaying, or overriding",True,,
+own_milo_3,milo,market pouch,place,safe rest and continuity,"ask before moving, borrowing, displaying, or overriding",True,,
+own_sera_1,sera,listening shell,tool,work competence and pride,"ask before moving, borrowing, displaying, or overriding",True,ev_sera_2,ev_sera_5
+own_sera_2,sera,red stair mark,memory_object,relationship ritual and remembered promise,"ask before moving, borrowing, displaying, or overriding",True,,
+own_sera_3,sera,private story cord,place,safe rest and continuity,"ask before moving, borrowing, displaying, or overriding",True,,
+own_niko_1,niko,copper vane,tool,work competence and pride,"ask before moving, borrowing, displaying, or overriding",True,ev_niko_2,ev_niko_5
+own_niko_2,niko,left glove,memory_object,relationship ritual and remembered promise,"ask before moving, borrowing, displaying, or overriding",True,,
+own_niko_3,niko,wheelhouse notebook,place,safe rest and continuity,"ask before moving, borrowing, displaying, or overriding",True,,

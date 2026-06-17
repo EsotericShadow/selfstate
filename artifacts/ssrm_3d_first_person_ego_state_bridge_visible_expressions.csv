@@ -1,0 +1,31 @@
+expression_id,snapshot_id,agent_id,tick,ego_condition,posture,movement,gaze,proximity,dialogue_marker,readable_behavior_score
+expr_ev_ari_1,snap_ev_ari_1,ari,10,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_ari_2,snap_ev_ari_2,ari,17,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_ari_3,snap_ev_ari_3,ari,24,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_ari_4,snap_ev_ari_4,ari,31,boundary,feet angled toward exit,slow guarded drift,looks away before answering,keeps edge of room,offers a safer alternative,0.88
+expr_ev_ari_5,snap_ev_ari_5,ari,38,repair,"shoulders lower, stance reopens",steps closer by one tile,brief direct look,allows shared workspace distance,acknowledges repair and returns to work,0.93
+expr_ev_ari_6,snap_ev_ari_6,ari,45,repair,"shoulders lower, stance reopens",steps closer by one tile,brief direct look,allows shared workspace distance,acknowledges repair and returns to work,0.93
+expr_ev_fay_1,snap_ev_fay_1,fay,52,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_fay_2,snap_ev_fay_2,fay,59,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_fay_3,snap_ev_fay_3,fay,66,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_fay_4,snap_ev_fay_4,fay,73,boundary,feet angled toward exit,slow guarded drift,looks away before answering,keeps edge of room,offers a safer alternative,0.88
+expr_ev_fay_5,snap_ev_fay_5,fay,80,repair,"shoulders lower, stance reopens",steps closer by one tile,brief direct look,allows shared workspace distance,acknowledges repair and returns to work,0.93
+expr_ev_fay_6,snap_ev_fay_6,fay,87,repair,"shoulders lower, stance reopens",steps closer by one tile,brief direct look,allows shared workspace distance,acknowledges repair and returns to work,0.93
+expr_ev_milo_1,snap_ev_milo_1,milo,94,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_milo_2,snap_ev_milo_2,milo,101,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_milo_3,snap_ev_milo_3,milo,108,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_milo_4,snap_ev_milo_4,milo,115,boundary,feet angled toward exit,slow guarded drift,looks away before answering,keeps edge of room,offers a safer alternative,0.88
+expr_ev_milo_5,snap_ev_milo_5,milo,122,repair,"shoulders lower, stance reopens",steps closer by one tile,brief direct look,allows shared workspace distance,acknowledges repair and returns to work,0.93
+expr_ev_milo_6,snap_ev_milo_6,milo,129,repair,"shoulders lower, stance reopens",steps closer by one tile,brief direct look,allows shared workspace distance,acknowledges repair and returns to work,0.93
+expr_ev_sera_1,snap_ev_sera_1,sera,136,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_sera_2,snap_ev_sera_2,sera,143,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_sera_3,snap_ev_sera_3,sera,150,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_sera_4,snap_ev_sera_4,sera,157,boundary,feet angled toward exit,slow guarded drift,looks away before answering,keeps edge of room,offers a safer alternative,0.88
+expr_ev_sera_5,snap_ev_sera_5,sera,164,repair,"shoulders lower, stance reopens",steps closer by one tile,brief direct look,allows shared workspace distance,acknowledges repair and returns to work,0.93
+expr_ev_sera_6,snap_ev_sera_6,sera,171,repair,"shoulders lower, stance reopens",steps closer by one tile,brief direct look,allows shared workspace distance,acknowledges repair and returns to work,0.93
+expr_ev_niko_1,snap_ev_niko_1,niko,178,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_niko_2,snap_ev_niko_2,niko,185,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_niko_3,snap_ev_niko_3,niko,192,wound,"shoulders narrow, hands near owned object",half-step back,glances from actor to object,keeps two body-lengths,names one boundary without explaining private story,0.91
+expr_ev_niko_4,snap_ev_niko_4,niko,199,boundary,feet angled toward exit,slow guarded drift,looks away before answering,keeps edge of room,offers a safer alternative,0.88
+expr_ev_niko_5,snap_ev_niko_5,niko,206,repair,"shoulders lower, stance reopens",steps closer by one tile,brief direct look,allows shared workspace distance,acknowledges repair and returns to work,0.93
+expr_ev_niko_6,snap_ev_niko_6,niko,213,repair,"shoulders lower, stance reopens",steps closer by one tile,brief direct look,allows shared workspace distance,acknowledges repair and returns to work,0.93

@@ -245,3 +245,7 @@ Report 230 adds playable local project-loop continuity with typed multi-turn dia
 
 Report 231 extends the playable local SSRM-3D agent bridge from short project loops to many-day personal arcs with bounded learned preferences, richer multi-turn dialogue continuity, craft/economy consequences, persistent economy ledgers, body-recovery carryover, and phase/rhythm scaffolding. The result passes with readiness 0.930870 and weakest-channel score 0.818667, while keeping the boundary explicit: deterministic scaffold only, not subjective consciousness or open-ended language. The next controller target is first-person ego/interior state with self-boundary, ownership, bounded refusal, self-story, and recoverable ego repair.
 
+## Report 232 First-Person Ego State Bridge Note
+
+Report 232 adds the first explicit functional ego layer to the playable SSRM-3D stack: self-boundary, ownership, self/other attribution, private workspace frames, bounded refusal, self-story updates, visible expression, and recoverable ego wound/repair. The deterministic run passes with readiness 0.983242 and weakest-channel score 0.911667. The controller boundary remains strict: this is inspectable ego scaffolding, not subjective consciousness, legal consent, moral patienthood, or open-ended language. The next target is a many-day first-person interior loop with ownership generalization, relationship-specific attachment, and richer readable body language.
+

@@ -1,0 +1,31 @@
+memory_id,event_id,agent_id,person_ref,episode_summary,emotional_weight,trust_delta,resentment_delta,gratitude_delta,familiarity_delta,self_story_update
+mem_ev_ari_1,ev_ari_1,ari,Gabriel,Gabriel made command_pressure happen around wet crossing.,0.67,0.0,0.1256,0.0,0.05,I remember Gabriel crossed a boundary.
+mem_ev_ari_2,ev_ari_2,ari,Gabriel,Gabriel made ownership_violation happen around bronze spanner.,0.69,0.0,0.149,0.0,0.05,I remember Gabriel crossed a boundary.
+mem_ev_ari_3,ev_ari_3,ari,Mara,Mara made public_misread happen around west-route repair keeper.,0.63,0.0,0.1476,0.0,0.05,I remember Mara crossed a boundary.
+mem_ev_ari_4,ev_ari_4,ari,loose shutter,I checked the noise and did not attach it to a person.,0.1,0.0,0.0,0.0,0.0,Not every nearby signal is about me.
+mem_ev_ari_5,ev_ari_5,ari,Gabriel,Gabriel made repair_respect happen around bronze spanner.,0.8,0.171,0.0,0.1228,0.05,I remember Gabriel respected me.
+mem_ev_ari_6,ev_ari_6,ari,Fay,Fay made trusted_help happen around west-route repair keeper project.,0.47,0.1053,0.0,0.1304,0.05,I remember Fay respected me.
+mem_ev_fay_1,ev_fay_1,fay,Gabriel,Gabriel made command_pressure happen around wet crossing.,0.67,0.0,0.1256,0.0,0.05,I remember Gabriel crossed a boundary.
+mem_ev_fay_2,ev_fay_2,fay,Gabriel,Gabriel made ownership_violation happen around seed bowl.,0.69,0.0,0.149,0.0,0.05,I remember Gabriel crossed a boundary.
+mem_ev_fay_3,ev_fay_3,fay,Mara,Mara made public_misread happen around shelter garden caretaker.,0.63,0.0,0.1476,0.0,0.05,I remember Mara crossed a boundary.
+mem_ev_fay_4,ev_fay_4,fay,loose shutter,I checked the noise and did not attach it to a person.,0.1,0.0,0.0,0.0,0.0,Not every nearby signal is about me.
+mem_ev_fay_5,ev_fay_5,fay,Gabriel,Gabriel made repair_respect happen around seed bowl.,0.8,0.171,0.0,0.1228,0.05,I remember Gabriel respected me.
+mem_ev_fay_6,ev_fay_6,fay,Fay,Fay made trusted_help happen around shelter garden caretaker project.,0.47,0.1053,0.0,0.1304,0.05,I remember Fay respected me.
+mem_ev_milo_1,ev_milo_1,milo,Gabriel,Gabriel made command_pressure happen around wet crossing.,0.67,0.0,0.1256,0.0,0.05,I remember Gabriel crossed a boundary.
+mem_ev_milo_2,ev_milo_2,milo,Gabriel,Gabriel made ownership_violation happen around thread ledger.,0.69,0.0,0.149,0.0,0.05,I remember Gabriel crossed a boundary.
+mem_ev_milo_3,ev_milo_3,milo,Mara,Mara made public_misread happen around market ledger runner.,0.63,0.0,0.1476,0.0,0.05,I remember Mara crossed a boundary.
+mem_ev_milo_4,ev_milo_4,milo,loose shutter,I checked the noise and did not attach it to a person.,0.1,0.0,0.0,0.0,0.0,Not every nearby signal is about me.
+mem_ev_milo_5,ev_milo_5,milo,Gabriel,Gabriel made repair_respect happen around thread ledger.,0.8,0.171,0.0,0.1228,0.05,I remember Gabriel respected me.
+mem_ev_milo_6,ev_milo_6,milo,Fay,Fay made trusted_help happen around market ledger runner project.,0.47,0.1053,0.0,0.1304,0.05,I remember Fay respected me.
+mem_ev_sera_1,ev_sera_1,sera,Gabriel,Gabriel made command_pressure happen around wet crossing.,0.67,0.0,0.1256,0.0,0.05,I remember Gabriel crossed a boundary.
+mem_ev_sera_2,ev_sera_2,sera,Gabriel,Gabriel made ownership_violation happen around listening shell.,0.69,0.0,0.149,0.0,0.05,I remember Gabriel crossed a boundary.
+mem_ev_sera_3,ev_sera_3,sera,Mara,Mara made public_misread happen around boundary listener.,0.63,0.0,0.1476,0.0,0.05,I remember Mara crossed a boundary.
+mem_ev_sera_4,ev_sera_4,sera,loose shutter,I checked the noise and did not attach it to a person.,0.1,0.0,0.0,0.0,0.0,Not every nearby signal is about me.
+mem_ev_sera_5,ev_sera_5,sera,Gabriel,Gabriel made repair_respect happen around listening shell.,0.8,0.171,0.0,0.1228,0.05,I remember Gabriel respected me.
+mem_ev_sera_6,ev_sera_6,sera,Fay,Fay made trusted_help happen around boundary listener project.,0.47,0.1053,0.0,0.1304,0.05,I remember Fay respected me.
+mem_ev_niko_1,ev_niko_1,niko,Gabriel,Gabriel made command_pressure happen around wet crossing.,0.67,0.0,0.1256,0.0,0.05,I remember Gabriel crossed a boundary.
+mem_ev_niko_2,ev_niko_2,niko,Gabriel,Gabriel made ownership_violation happen around copper vane.,0.69,0.0,0.149,0.0,0.05,I remember Gabriel crossed a boundary.
+mem_ev_niko_3,ev_niko_3,niko,Mara,Mara made public_misread happen around waterwheel apprentice.,0.63,0.0,0.1476,0.0,0.05,I remember Mara crossed a boundary.
+mem_ev_niko_4,ev_niko_4,niko,loose shutter,I checked the noise and did not attach it to a person.,0.1,0.0,0.0,0.0,0.0,Not every nearby signal is about me.
+mem_ev_niko_5,ev_niko_5,niko,Gabriel,Gabriel made repair_respect happen around copper vane.,0.8,0.171,0.0,0.1228,0.05,I remember Gabriel respected me.
+mem_ev_niko_6,ev_niko_6,niko,Fay,Fay made trusted_help happen around waterwheel apprentice project.,0.47,0.1053,0.0,0.1304,0.05,I remember Fay respected me.

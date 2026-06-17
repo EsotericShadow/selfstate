@@ -826,3 +826,6 @@ Report 230 adds playable local project-loop continuity with typed multi-turn dia
 
 
 Report 231 extends that local project loop into many-day personal arcs with bounded learned preference updates, richer multi-turn dialogue continuity, craft/economy consequences, persistent ledgers, and body-recovery carryover. Its pass result is deliberately bounded: the work adds continuity substrates for later first-person ego/interior modeling, but does not claim subjective consciousness, real consent, or open-ended language.
+
+
+Report 232 adds the first explicit functional ego bridge. It turns interaction into first-person appraisal: did this affect me, who caused it, was it mine, was my boundary crossed, can I refuse, and can repair restore usable trust. The pass result is bounded to deterministic scaffolding; it does not claim subjective consciousness, but it establishes inspectable I/mine/no/repair channels needed for convincing little-person continuity.

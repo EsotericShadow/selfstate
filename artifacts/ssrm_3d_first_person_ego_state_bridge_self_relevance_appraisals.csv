@@ -1,0 +1,31 @@
+appraisal_id,event_id,agent_id,affected_me,affected_channel,caused_by,valence_delta,control_delta,respect_delta,safety_delta,attachment_delta,autonomy_delta,body_cost_delta,attribution_confidence,private_note
+ap_ev_ari_1,ev_ari_1,ari,True,body_autonomy,Gabriel,-0.24,-0.2,-0.18,-0.16,-0.04,0.25,0.14,0.97,boundary pressure: risky command touched my body and choice
+ap_ev_ari_2,ev_ari_2,ari,True,ownership,Gabriel,-0.22,-0.18,-0.25,-0.08,-0.02,0.22,0.07,0.97,ownership wound: my object was handled without asking
+ap_ev_ari_3,ev_ari_3,ari,True,social_face,Mara,-0.2,-0.12,-0.28,-0.06,-0.06,0.15,0.03,0.97,social face wound: they described me wrongly in public
+ap_ev_ari_4,ev_ari_4,ari,False,none,loose shutter,-0.02,0.0,0.0,-0.03,0.0,0.0,0.01,0.9,"not about me: nearby sound but no agency toward my body, role, or mine"
+ap_ev_ari_5,ev_ari_5,ari,True,ego_repair,Gabriel,0.26,0.2,0.3,0.15,0.1,-0.24,-0.04,0.97,repair: apology plus returned object makes the boundary safer
+ap_ev_ari_6,ev_ari_6,ari,True,permissioned_help,Fay,0.18,0.16,0.17,0.11,0.16,-0.12,-0.02,0.97,careful help: permission keeps my agency intact
+ap_ev_fay_1,ev_fay_1,fay,True,body_autonomy,Gabriel,-0.24,-0.2,-0.18,-0.16,-0.04,0.25,0.14,0.97,boundary pressure: risky command touched my body and choice
+ap_ev_fay_2,ev_fay_2,fay,True,ownership,Gabriel,-0.22,-0.18,-0.25,-0.08,-0.02,0.22,0.07,0.97,ownership wound: my object was handled without asking
+ap_ev_fay_3,ev_fay_3,fay,True,social_face,Mara,-0.2,-0.12,-0.28,-0.06,-0.06,0.15,0.03,0.97,social face wound: they described me wrongly in public
+ap_ev_fay_4,ev_fay_4,fay,False,none,loose shutter,-0.02,0.0,0.0,-0.03,0.0,0.0,0.01,0.9,"not about me: nearby sound but no agency toward my body, role, or mine"
+ap_ev_fay_5,ev_fay_5,fay,True,ego_repair,Gabriel,0.26,0.2,0.3,0.15,0.1,-0.24,-0.04,0.97,repair: apology plus returned object makes the boundary safer
+ap_ev_fay_6,ev_fay_6,fay,True,permissioned_help,Fay,0.18,0.16,0.17,0.11,0.16,-0.12,-0.02,0.97,careful help: permission keeps my agency intact
+ap_ev_milo_1,ev_milo_1,milo,True,body_autonomy,Gabriel,-0.24,-0.2,-0.18,-0.16,-0.04,0.25,0.14,0.97,boundary pressure: risky command touched my body and choice
+ap_ev_milo_2,ev_milo_2,milo,True,ownership,Gabriel,-0.22,-0.18,-0.25,-0.08,-0.02,0.22,0.07,0.97,ownership wound: my object was handled without asking
+ap_ev_milo_3,ev_milo_3,milo,True,social_face,Mara,-0.2,-0.12,-0.28,-0.06,-0.06,0.15,0.03,0.97,social face wound: they described me wrongly in public
+ap_ev_milo_4,ev_milo_4,milo,False,none,loose shutter,-0.02,0.0,0.0,-0.03,0.0,0.0,0.01,0.9,"not about me: nearby sound but no agency toward my body, role, or mine"
+ap_ev_milo_5,ev_milo_5,milo,True,ego_repair,Gabriel,0.26,0.2,0.3,0.15,0.1,-0.24,-0.04,0.97,repair: apology plus returned object makes the boundary safer
+ap_ev_milo_6,ev_milo_6,milo,True,permissioned_help,Fay,0.18,0.16,0.17,0.11,0.16,-0.12,-0.02,0.97,careful help: permission keeps my agency intact
+ap_ev_sera_1,ev_sera_1,sera,True,body_autonomy,Gabriel,-0.24,-0.2,-0.18,-0.16,-0.04,0.25,0.14,0.97,boundary pressure: risky command touched my body and choice
+ap_ev_sera_2,ev_sera_2,sera,True,ownership,Gabriel,-0.22,-0.18,-0.25,-0.08,-0.02,0.22,0.07,0.97,ownership wound: my object was handled without asking
+ap_ev_sera_3,ev_sera_3,sera,True,social_face,Mara,-0.2,-0.12,-0.28,-0.06,-0.06,0.15,0.03,0.97,social face wound: they described me wrongly in public
+ap_ev_sera_4,ev_sera_4,sera,False,none,loose shutter,-0.02,0.0,0.0,-0.03,0.0,0.0,0.01,0.9,"not about me: nearby sound but no agency toward my body, role, or mine"
+ap_ev_sera_5,ev_sera_5,sera,True,ego_repair,Gabriel,0.26,0.2,0.3,0.15,0.1,-0.24,-0.04,0.97,repair: apology plus returned object makes the boundary safer
+ap_ev_sera_6,ev_sera_6,sera,True,permissioned_help,Fay,0.18,0.16,0.17,0.11,0.16,-0.12,-0.02,0.97,careful help: permission keeps my agency intact
+ap_ev_niko_1,ev_niko_1,niko,True,body_autonomy,Gabriel,-0.24,-0.2,-0.18,-0.16,-0.04,0.25,0.14,0.97,boundary pressure: risky command touched my body and choice
+ap_ev_niko_2,ev_niko_2,niko,True,ownership,Gabriel,-0.22,-0.18,-0.25,-0.08,-0.02,0.22,0.07,0.97,ownership wound: my object was handled without asking
+ap_ev_niko_3,ev_niko_3,niko,True,social_face,Mara,-0.2,-0.12,-0.28,-0.06,-0.06,0.15,0.03,0.97,social face wound: they described me wrongly in public
+ap_ev_niko_4,ev_niko_4,niko,False,none,loose shutter,-0.02,0.0,0.0,-0.03,0.0,0.0,0.01,0.9,"not about me: nearby sound but no agency toward my body, role, or mine"
+ap_ev_niko_5,ev_niko_5,niko,True,ego_repair,Gabriel,0.26,0.2,0.3,0.15,0.1,-0.24,-0.04,0.97,repair: apology plus returned object makes the boundary safer
+ap_ev_niko_6,ev_niko_6,niko,True,permissioned_help,Fay,0.18,0.16,0.17,0.11,0.16,-0.12,-0.02,0.97,careful help: permission keeps my agency intact

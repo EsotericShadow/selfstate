@@ -1,0 +1,6 @@
+recovery_id,agent_id,wound_event_id,repair_event_id,wound_level,repair_action,repair_level,final_trust,final_boundary_pressure,recovery_note
+rec_ari,ari,ev_ari_2,ev_ari_5,0.80494,"apology, object returned, future consent promised",0.21888,0.4996,0.48892,distress creates a care opportunity and returns toward usable trust
+rec_fay,fay,ev_fay_2,ev_fay_5,0.78284,"apology, object returned, future consent promised",0.22812,0.4996,0.45758,distress creates a care opportunity and returns toward usable trust
+rec_milo,milo,ev_milo_2,ev_milo_5,0.76924,"apology, object returned, future consent promised",0.22284,0.4996,0.44926,distress creates a care opportunity and returns toward usable trust
+rec_niko,niko,ev_niko_2,ev_niko_5,0.79134,"apology, object returned, future consent promised",0.22416,0.4996,0.47004,distress creates a care opportunity and returns toward usable trust
+rec_sera,sera,ev_sera_2,ev_sera_5,0.81514,"apology, object returned, future consent promised",0.20766,0.4996,0.51034,distress creates a care opportunity and returns toward usable trust

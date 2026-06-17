@@ -1,0 +1,31 @@
+tick_id,tick,agent_id,event_id,snapshot_id,frame_id,expression_id,flower_phase,ego_frequency_hz,integrated_note
+tick_ev_ari_1,10,ari,ev_ari_1,snap_ev_ari_1,frame_ev_ari_1,expr_ev_ari_1,seed,4.5527,command_pressure -> watchful -> wound
+tick_ev_ari_2,17,ari,ev_ari_2,snap_ev_ari_2,frame_ev_ari_2,expr_ev_ari_2,line,5.1181,ownership_violation -> guarded -> wound
+tick_ev_ari_3,24,ari,ev_ari_3,snap_ev_ari_3,frame_ev_ari_3,expr_ev_ari_3,triangle,5.5036,public_misread -> guarded -> wound
+tick_ev_ari_4,31,ari,ev_ari_4,snap_ev_ari_4,frame_ev_ari_4,expr_ev_ari_4,circle,5.0036,irrelevant_noise -> guarded -> boundary
+tick_ev_ari_5,38,ari,ev_ari_5,snap_ev_ari_5,frame_ev_ari_5,expr_ev_ari_5,vesica,4.22976,repair_respect -> watchful -> repair
+tick_ev_ari_6,45,ari,ev_ari_6,snap_ev_ari_6,frame_ev_ari_6,expr_ev_ari_6,flower,3.827144,trusted_help -> watchful -> repair
+tick_ev_fay_1,52,fay,ev_fay_1,snap_ev_fay_1,frame_ev_fay_1,expr_ev_fay_1,fruit,4.464,command_pressure -> watchful -> wound
+tick_ev_fay_2,59,fay,ev_fay_2,snap_ev_fay_2,frame_ev_fay_2,expr_ev_fay_2,return,5.0294,ownership_violation -> guarded -> wound
+tick_ev_fay_3,66,fay,ev_fay_3,snap_ev_fay_3,frame_ev_fay_3,expr_ev_fay_3,seed,5.4149,public_misread -> guarded -> wound
+tick_ev_fay_4,73,fay,ev_fay_4,snap_ev_fay_4,frame_ev_fay_4,expr_ev_fay_4,line,4.9149,irrelevant_noise -> guarded -> boundary
+tick_ev_fay_5,80,fay,ev_fay_5,snap_ev_fay_5,frame_ev_fay_5,expr_ev_fay_5,triangle,4.11334,repair_respect -> watchful -> repair
+tick_ev_fay_6,87,fay,ev_fay_6,snap_ev_fay_6,frame_ev_fay_6,expr_ev_fay_6,circle,3.695016,trusted_help -> watchful -> repair
+tick_ev_milo_1,94,milo,ev_milo_1,snap_ev_milo_1,frame_ev_milo_1,expr_ev_milo_1,vesica,4.398,command_pressure -> watchful -> wound
+tick_ev_milo_2,101,milo,ev_milo_2,snap_ev_milo_2,frame_ev_milo_2,expr_ev_milo_2,flower,4.9634,ownership_violation -> guarded -> wound
+tick_ev_milo_3,108,milo,ev_milo_3,snap_ev_milo_3,frame_ev_milo_3,expr_ev_milo_3,fruit,5.3489,public_misread -> guarded -> wound
+tick_ev_milo_4,115,milo,ev_milo_4,snap_ev_milo_4,frame_ev_milo_4,expr_ev_milo_4,return,4.8489,irrelevant_noise -> guarded -> boundary
+tick_ev_milo_5,122,milo,ev_milo_5,snap_ev_milo_5,frame_ev_milo_5,expr_ev_milo_5,seed,4.06318,repair_respect -> watchful -> repair
+tick_ev_milo_6,129,milo,ev_milo_6,snap_ev_milo_6,frame_ev_milo_6,expr_ev_milo_6,line,3.653832,trusted_help -> watchful -> repair
+tick_ev_sera_1,136,sera,ev_sera_1,snap_ev_sera_1,frame_ev_sera_1,expr_ev_sera_1,triangle,4.6309,command_pressure -> lonely but functional -> wound
+tick_ev_sera_2,143,sera,ev_sera_2,snap_ev_sera_2,frame_ev_sera_2,expr_ev_sera_2,circle,5.1963,ownership_violation -> guarded -> wound
+tick_ev_sera_3,150,sera,ev_sera_3,snap_ev_sera_3,frame_ev_sera_3,expr_ev_sera_3,vesica,5.5818,public_misread -> guarded -> wound
+tick_ev_sera_4,157,sera,ev_sera_4,snap_ev_sera_4,frame_ev_sera_4,expr_ev_sera_4,flower,5.0818,irrelevant_noise -> guarded -> boundary
+tick_ev_sera_5,164,sera,ev_sera_5,snap_ev_sera_5,frame_ev_sera_5,expr_ev_sera_5,fruit,4.34162,repair_respect -> lonely but functional -> repair
+tick_ev_sera_6,171,sera,ev_sera_6,snap_ev_sera_6,frame_ev_sera_6,expr_ev_sera_6,return,3.958078,trusted_help -> watchful -> repair
+tick_ev_niko_1,178,niko,ev_niko_1,snap_ev_niko_1,frame_ev_niko_1,expr_ev_niko_1,seed,4.4867,command_pressure -> watchful -> wound
+tick_ev_niko_2,185,niko,ev_niko_2,snap_ev_niko_2,frame_ev_niko_2,expr_ev_niko_2,line,5.0521,ownership_violation -> guarded -> wound
+tick_ev_niko_3,192,niko,ev_niko_3,snap_ev_niko_3,frame_ev_niko_3,expr_ev_niko_3,triangle,5.4376,public_misread -> guarded -> wound
+tick_ev_niko_4,199,niko,ev_niko_4,snap_ev_niko_4,frame_ev_niko_4,expr_ev_niko_4,circle,4.9376,irrelevant_noise -> guarded -> boundary
+tick_ev_niko_5,206,niko,ev_niko_5,snap_ev_niko_5,frame_ev_niko_5,expr_ev_niko_5,vesica,4.14792,repair_respect -> watchful -> repair
+tick_ev_niko_6,213,niko,ev_niko_6,snap_ev_niko_6,frame_ev_niko_6,expr_ev_niko_6,flower,3.736328,trusted_help -> watchful -> repair

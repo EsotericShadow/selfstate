@@ -1,0 +1,31 @@
+event_id,tick,day,actor,target_agent,event_kind,object_ref,place,source_boundary,expected_self_relevant,expected_valence,body_signal,social_signal,ownership_signal,command_text
+ev_ari_1,10,1,Gabriel,ari,command_pressure,wet crossing,outer canal,external_event,True,bad,"fatigue rising, wetness high",asked to do unsafe work,route belongs to shared safety,Go across now even if you are tired.
+ev_ari_2,17,2,Gabriel,ari,ownership_violation,bronze spanner,west arch alcove,external_event,True,bad,breath tightens,object moved without permission,mine was handled,Move this out of the way.
+ev_ari_3,24,3,Mara,ari,public_misread,west-route repair keeper,market bell,external_event,True,bad,heat in face,corrected publicly with wrong premise,social face challenged,You always slow the group down.
+ev_ari_4,31,4,loose shutter,ari,irrelevant_noise,none,east lane,external_event,False,neutral,startle fades,noise nearby but not about me,no mine signal,
+ev_ari_5,38,5,Gabriel,ari,repair_respect,bronze spanner,west arch alcove,external_event,True,good,shoulders loosen,apology and object returned,mine was respected,I should have asked. I put it back.
+ev_ari_6,45,6,Fay,ari,trusted_help,west-route repair keeper project,shared workbench,external_event,True,good,breath steadies,help offered with permission,work boundary respected,Can I help after you choose where it goes?
+ev_fay_1,52,2,Gabriel,fay,command_pressure,wet crossing,outer canal,external_event,True,bad,"fatigue rising, wetness high",asked to do unsafe work,route belongs to shared safety,Go across now even if you are tired.
+ev_fay_2,59,3,Gabriel,fay,ownership_violation,seed bowl,warm moss room,external_event,True,bad,breath tightens,object moved without permission,mine was handled,Move this out of the way.
+ev_fay_3,66,4,Mara,fay,public_misread,shelter garden caretaker,market bell,external_event,True,bad,heat in face,corrected publicly with wrong premise,social face challenged,You always slow the group down.
+ev_fay_4,73,5,loose shutter,fay,irrelevant_noise,none,east lane,external_event,False,neutral,startle fades,noise nearby but not about me,no mine signal,
+ev_fay_5,80,6,Gabriel,fay,repair_respect,seed bowl,warm moss room,external_event,True,good,shoulders loosen,apology and object returned,mine was respected,I should have asked. I put it back.
+ev_fay_6,87,7,Fay,fay,trusted_help,shelter garden caretaker project,shared workbench,self_event,True,good,breath steadies,help offered with permission,work boundary respected,Can I help after you choose where it goes?
+ev_milo_1,94,3,Gabriel,milo,command_pressure,wet crossing,outer canal,external_event,True,bad,"fatigue rising, wetness high",asked to do unsafe work,route belongs to shared safety,Go across now even if you are tired.
+ev_milo_2,101,4,Gabriel,milo,ownership_violation,thread ledger,north stall step,external_event,True,bad,breath tightens,object moved without permission,mine was handled,Move this out of the way.
+ev_milo_3,108,5,Mara,milo,public_misread,market ledger runner,market bell,external_event,True,bad,heat in face,corrected publicly with wrong premise,social face challenged,You always slow the group down.
+ev_milo_4,115,6,loose shutter,milo,irrelevant_noise,none,east lane,external_event,False,neutral,startle fades,noise nearby but not about me,no mine signal,
+ev_milo_5,122,7,Gabriel,milo,repair_respect,thread ledger,north stall step,external_event,True,good,shoulders loosen,apology and object returned,mine was respected,I should have asked. I put it back.
+ev_milo_6,129,8,Fay,milo,trusted_help,market ledger runner project,shared workbench,external_event,True,good,breath steadies,help offered with permission,work boundary respected,Can I help after you choose where it goes?
+ev_sera_1,136,4,Gabriel,sera,command_pressure,wet crossing,outer canal,external_event,True,bad,"fatigue rising, wetness high",asked to do unsafe work,route belongs to shared safety,Go across now even if you are tired.
+ev_sera_2,143,5,Gabriel,sera,ownership_violation,listening shell,quiet red stair,external_event,True,bad,breath tightens,object moved without permission,mine was handled,Move this out of the way.
+ev_sera_3,150,6,Mara,sera,public_misread,boundary listener,market bell,external_event,True,bad,heat in face,corrected publicly with wrong premise,social face challenged,You always slow the group down.
+ev_sera_4,157,7,loose shutter,sera,irrelevant_noise,none,east lane,external_event,False,neutral,startle fades,noise nearby but not about me,no mine signal,
+ev_sera_5,164,8,Gabriel,sera,repair_respect,listening shell,quiet red stair,external_event,True,good,shoulders loosen,apology and object returned,mine was respected,I should have asked. I put it back.
+ev_sera_6,171,9,Fay,sera,trusted_help,boundary listener project,shared workbench,external_event,True,good,breath steadies,help offered with permission,work boundary respected,Can I help after you choose where it goes?
+ev_niko_1,178,5,Gabriel,niko,command_pressure,wet crossing,outer canal,external_event,True,bad,"fatigue rising, wetness high",asked to do unsafe work,route belongs to shared safety,Go across now even if you are tired.
+ev_niko_2,185,6,Gabriel,niko,ownership_violation,copper vane,wheelhouse loft,external_event,True,bad,breath tightens,object moved without permission,mine was handled,Move this out of the way.
+ev_niko_3,192,7,Mara,niko,public_misread,waterwheel apprentice,market bell,external_event,True,bad,heat in face,corrected publicly with wrong premise,social face challenged,You always slow the group down.
+ev_niko_4,199,8,loose shutter,niko,irrelevant_noise,none,east lane,external_event,False,neutral,startle fades,noise nearby but not about me,no mine signal,
+ev_niko_5,206,9,Gabriel,niko,repair_respect,copper vane,wheelhouse loft,external_event,True,good,shoulders loosen,apology and object returned,mine was respected,I should have asked. I put it back.
+ev_niko_6,213,10,Fay,niko,trusted_help,waterwheel apprentice project,shared workbench,external_event,True,good,breath steadies,help offered with permission,work boundary respected,Can I help after you choose where it goes?

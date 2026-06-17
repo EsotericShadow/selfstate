@@ -1,0 +1,289 @@
+event_id,household,ritual_name,ritual_source,adoption_level,variation_level,rhythm_hz,flower_alignment,welfare_benefit,learned_boundary_clause
+1,Marketroof,lum-circle,Hearthnest,0.291807,0.145,2.510767,0.760925,0.48085,invite without pressure
+2,Quietledger,tek-circle,Routehall,0.34645,0.265,2.092099,0.761161,0.495899,invite without pressure
+3,Orchardring,melo-circle,Marketroof,0.34685,0.265,2.458197,0.761233,0.627531,invite without pressure
+4,Rainloft,nari-circle,Quietledger,0.291534,0.145,2.168567,0.760876,0.47976,invite without pressure
+5,Hearthnest,tek-circle,Orchardring,0.371613,0.145,2.378199,0.77529,0.504036,invite without pressure
+6,Routehall,sova-circle,Rainloft,0.346642,0.265,2.237656,0.761196,0.496713,invite without pressure
+7,Quietledger,lum-circle,Hearthnest,0.3579,0.145,2.108152,0.772822,0.499334,invite without pressure
+8,Orchardring,tek-circle,Routehall,0.358696,0.145,2.465975,0.772965,0.501085,invite without pressure
+9,Rainloft,melo-circle,Marketroof,0.358068,0.265,2.171988,0.763252,0.49972,invite without pressure
+10,Hearthnest,nari-circle,Quietledger,0.438215,0.265,2.373011,0.777679,0.654017,invite without pressure
+11,Routehall,melo-circle,Orchardring,0.358293,0.145,2.220113,0.772893,0.500208,invite without pressure
+12,Marketroof,sova-circle,Rainloft,0.303601,0.145,2.508522,0.763048,0.484388,invite without pressure
+13,Orchardring,ori-circle,Hearthnest,0.425548,0.265,2.440798,0.815399,0.65114,invite without pressure
+14,Rainloft,tek-circle,Routehall,0.369602,0.145,2.139045,0.774928,0.503181,invite without pressure
+15,Hearthnest,melo-circle,Marketroof,0.449827,0.145,2.338839,0.789369,0.5275,invite without pressure
+16,Routehall,nari-circle,Quietledger,0.424938,0.265,2.191291,0.775289,0.520201,invite without pressure
+17,Marketroof,lum-circle,Orchardring,0.370408,0.265,2.482783,0.765473,0.63443,invite without pressure
+18,Quietledger,sova-circle,Rainloft,0.369348,0.145,2.050222,0.774883,0.502768,invite without pressure
+19,Rainloft,lum-circle,Hearthnest,0.436136,0.265,2.124912,0.777304,0.523141,invite without pressure
+20,Hearthnest,tek-circle,Routehall,0.516434,0.265,2.332547,0.791758,0.677482,invite without pressure
+21,Routehall,melo-circle,Marketroof,0.436588,0.145,2.189159,0.786986,0.523697,invite without pressure
+22,Marketroof,nari-circle,Quietledger,0.382205,0.145,2.48941,0.777197,0.50797,invite without pressure
+23,Quietledger,lum-circle,Orchardring,0.435798,0.265,2.069615,0.777244,0.522703,invite without pressure
+24,Orchardring,sova-circle,Rainloft,0.492385,0.265,2.441008,0.787429,0.671192,invite without pressure
+25,Routehall,lum-circle,Hearthnest,0.448239,0.145,2.214864,0.789083,0.527192,invite without pressure
+26,Marketroof,tek-circle,Routehall,0.449008,0.265,2.522374,0.779621,0.52801,invite without pressure
+27,Quietledger,melo-circle,Marketroof,0.502248,0.265,2.103681,0.789205,0.672638,invite without pressure
+28,Orchardring,nari-circle,Quietledger,0.504226,0.145,2.470048,0.799161,0.544744,invite without pressure
+29,Rainloft,tek-circle,Orchardring,0.447669,0.145,2.180506,0.788981,0.526601,invite without pressure
+30,Hearthnest,sova-circle,Rainloft,0.583033,0.265,2.394783,0.803746,0.567462,invite without pressure
+31,Routehall,lum-circle,Hearthnest,0.459889,0.145,2.246629,0.79118,0.530687,invite without pressure
+32,Marketroof,tek-circle,Routehall,0.46081,0.145,2.546546,0.791346,0.531551,invite without pressure
+33,Quietledger,melo-circle,Marketroof,0.568698,0.265,2.123174,0.801166,0.562573,invite without pressure
+34,Orchardring,nari-circle,Quietledger,0.571067,0.265,2.47964,0.801592,0.694796,invite without pressure
+35,Rainloft,melo-circle,Orchardring,0.459203,0.145,2.175478,0.791057,0.530061,invite without pressure
+36,Hearthnest,sova-circle,Rainloft,0.594632,0.145,2.379934,0.815434,0.570941,invite without pressure
+37,Quietledger,vonn-na-circle,Hearthnest,0.594512,0.22,2.102778,0.809412,0.546518,pause if sleep debt or boundary warning appears
+38,Orchardring,tek-ri-circle,Routehall,0.637888,0.29,2.458777,0.81162,0.714842,invite without pressure
+39,Rainloft,vonn-so-circle,Marketroof,0.485103,0.22,2.149223,0.789719,0.514031,pause if sleep debt or boundary warning appears
+40,Hearthnest,vonn-v-circle,Quietledger,0.620596,0.22,2.353327,0.814107,0.554931,pause if sleep debt or boundary warning appears
+41,Routehall,vonn-na-circle,Orchardring,0.485897,0.22,2.196831,0.789861,0.514689,pause if sleep debt or boundary warning appears
+42,Marketroof,sova-ri-circle,Rainloft,0.527579,0.29,2.495815,0.791764,0.681582,invite without pressure
+43,Orchardring,vonn-v-circle,Hearthnest,0.66409,0.22,2.434027,0.821936,0.568903,pause if sleep debt or boundary warning appears
+44,Rainloft,nari-na-circle,Routehall,0.511003,0.22,2.130881,0.794381,0.521801,pause if sleep debt or boundary warning appears
+45,Hearthnest,melo-ri-circle,Marketroof,0.687183,0.29,2.34594,0.820493,0.728707,invite without pressure
+46,Routehall,sova-so-circle,Quietledger,0.511905,0.22,2.194689,0.794543,0.522491,pause if sleep debt or boundary warning appears
+47,Marketroof,vonn-v-circle,Orchardring,0.553739,0.22,2.502439,0.802073,0.53563,pause if sleep debt or boundary warning appears
+48,Quietledger,nari-na-circle,Rainloft,0.620325,0.22,2.083529,0.814059,0.554262,pause if sleep debt or boundary warning appears
+49,Rainloft,sova-so-circle,Hearthnest,0.536903,0.22,2.153619,0.799043,0.529571,pause if sleep debt or boundary warning appears
+50,Hearthnest,keth-v-circle,Routehall,0.713148,0.22,2.375062,0.830767,0.582696,pause if sleep debt or boundary warning appears
+51,Routehall,vonn-na-circle,Marketroof,0.537913,0.22,2.228511,0.799224,0.530294,pause if sleep debt or boundary warning appears
+52,Marketroof,nari-ri-circle,Quietledger,0.620512,0.29,2.542246,0.808492,0.709461,invite without pressure
+53,Quietledger,vonn-so-circle,Orchardring,0.646139,0.22,2.120639,0.818705,0.562006,pause if sleep debt or boundary warning appears
+54,Orchardring,vonn-v-circle,Rainloft,0.690293,0.22,2.489337,0.826653,0.576764,pause if sleep debt or boundary warning appears
+55,Routehall,ori-ri-circle,Hearthnest,0.604539,0.29,2.256143,0.845617,0.704082,invite without pressure
+56,Marketroof,vonn-so-circle,Routehall,0.646671,0.22,2.561452,0.818801,0.563509,pause if sleep debt or boundary warning appears
+57,Quietledger,keth-v-circle,Marketroof,0.671953,0.22,2.133565,0.823351,0.56975,pause if sleep debt or boundary warning appears
+58,Orchardring,nari-na-circle,Quietledger,0.716495,0.22,2.495366,0.831369,0.584625,pause if sleep debt or boundary warning appears
+59,Rainloft,lum-ri-circle,Orchardring,0.603413,0.29,2.192814,0.805414,0.703324,invite without pressure
+60,Hearthnest,sova-so-circle,Rainloft,0.739113,0.22,2.398638,0.83544,0.590486,pause if sleep debt or boundary warning appears
+61,Routehall,vonn-na-circle,Hearthnest,0.630547,0.22,2.243707,0.815898,0.558084,pause if sleep debt or boundary warning appears
+62,Marketroof,tek-ri-circle,Routehall,0.713448,0.29,2.54327,0.825221,0.737343,invite without pressure
+63,Quietledger,vonn-so-circle,Marketroof,0.697766,0.22,2.104561,0.827998,0.577494,pause if sleep debt or boundary warning appears
+64,Orchardring,vonn-v-circle,Quietledger,0.742698,0.22,2.460779,0.836086,0.592485,pause if sleep debt or boundary warning appears
+65,Rainloft,vonn-na-circle,Orchardring,0.629313,0.22,2.154869,0.815676,0.557294,pause if sleep debt or boundary warning appears
+66,Hearthnest,sova-ri-circle,Rainloft,0.805688,0.29,2.363101,0.841824,0.764258,invite without pressure
+67,Marketroof,vonn-v-circle,Hearthnest,0.739608,0.22,2.513266,0.835529,0.59139,pause if sleep debt or boundary warning appears
+68,Quietledger,nari-na-circle,Routehall,0.72358,0.22,2.079044,0.832644,0.585238,pause if sleep debt or boundary warning appears
+69,Orchardring,melo-ri-circle,Marketroof,0.809523,0.29,2.444774,0.842514,0.766333,invite without pressure
+70,Rainloft,sova-so-circle,Quietledger,0.655213,0.22,2.143148,0.820338,0.565064,pause if sleep debt or boundary warning appears
+71,Hearthnest,vonn-v-circle,Orchardring,0.831652,0.22,2.359802,0.852097,0.618248,pause if sleep debt or boundary warning appears
+72,Routehall,nari-na-circle,Rainloft,0.656555,0.22,2.209995,0.82058,0.565886,pause if sleep debt or boundary warning appears
+73,Orchardring,lum-a-circle,Hearthnest,0.876326,0.315,2.463178,0.852539,0.656374,invite without pressure
+74,Rainloft,tek-a-circle,Routehall,0.721698,0.315,2.167461,0.824706,0.738809,invite without pressure
+75,Hearthnest,melo-a-circle,Marketroof,0.843215,0.195,2.384475,0.856179,0.645516,invite without pressure
+76,Routehall,nari-a-circle,Quietledger,0.668151,0.195,2.237948,0.824667,0.593165,invite without pressure
+77,Marketroof,lum-a-circle,Orchardring,0.806365,0.315,2.556204,0.839946,0.635218,invite without pressure
+78,Quietledger,sova-a-circle,Rainloft,0.789978,0.315,2.131364,0.836996,0.758957,invite without pressure
+79,Rainloft,lum-a-circle,Hearthnest,0.733183,0.195,2.202163,0.836373,0.612255,invite without pressure
+80,Hearthnest,tek-a-circle,Routehall,0.909773,0.315,2.42017,0.858559,0.665484,invite without pressure
+81,Routehall,melo-a-circle,Marketroof,0.734752,0.315,2.268346,0.827055,0.743146,invite without pressure
+82,Marketroof,nari-a-circle,Quietledger,0.818114,0.195,2.575354,0.851661,0.638742,invite without pressure
+83,Quietledger,tek-a-circle,Orchardring,0.801379,0.195,2.142495,0.848648,0.632378,invite without pressure
+84,Orchardring,sova-a-circle,Rainloft,0.943115,0.315,2.510549,0.864561,0.67641,invite without pressure
+85,Routehall,lum-a-circle,Hearthnest,0.746354,0.195,2.259962,0.838744,0.616626,invite without pressure
+86,Marketroof,tek-a-circle,Routehall,0.829867,0.195,2.560539,0.853776,0.642268,invite without pressure
+87,Quietledger,melo-a-circle,Marketroof,0.86778,0.315,2.126587,0.851,0.652298,invite without pressure
+88,Orchardring,nari-a-circle,Quietledger,1.0,0.315,2.489734,0.8748,0.823476,invite without pressure
+89,Rainloft,melo-a-circle,Orchardring,0.744667,0.195,2.171894,0.83844,0.6157,invite without pressure
+90,Hearthnest,sova-a-circle,Rainloft,0.921323,0.195,2.379091,0.870238,0.668949,invite without pressure
+91,Routehall,ori-a-circle,Hearthnest,0.812955,0.315,2.224394,0.881132,0.766606,invite without pressure
+92,Marketroof,tek-a-circle,Routehall,0.84162,0.195,2.521943,0.855892,0.645794,invite without pressure
+93,Quietledger,melo-a-circle,Marketroof,0.879182,0.195,2.091782,0.862653,0.655718,invite without pressure
+94,Orchardring,nari-a-circle,Quietledger,1.0,0.315,2.460058,0.8748,0.693476,invite without pressure
+95,Rainloft,lum-a-circle,Orchardring,0.811152,0.315,2.155421,0.840807,0.765646,invite without pressure
+96,Hearthnest,sova-a-circle,Rainloft,0.932873,0.195,2.367462,0.872317,0.672414,invite without pressure
+97,Marketroof,lum-a-circle,Hearthnest,0.908378,0.315,2.529496,0.858308,0.665821,invite without pressure
+98,Quietledger,tek-a-circle,Routehall,0.945583,0.315,2.107906,0.865005,0.805639,invite without pressure
+99,Orchardring,melo-a-circle,Marketroof,1.0,0.195,2.478796,0.8844,0.693476,invite without pressure
+100,Rainloft,nari-a-circle,Quietledger,0.822637,0.195,2.18184,0.852475,0.639091,invite without pressure
+101,Hearthnest,lum-a-circle,Orchardring,0.999437,0.315,2.403465,0.874699,0.692383,invite without pressure
+102,Routehall,sova-a-circle,Rainloft,0.879548,0.315,2.261136,0.853119,0.786584,invite without pressure
+103,Quietledger,lum-a-circle,Hearthnest,0.956984,0.195,2.143923,0.876657,0.679059,invite without pressure
+104,Orchardring,tek-a-circle,Routehall,1.0,0.315,2.512877,0.8748,0.693476,invite without pressure
+105,Rainloft,melo-a-circle,Marketroof,0.889122,0.315,2.218097,0.854842,0.789037,invite without pressure
+106,Hearthnest,nari-a-circle,Quietledger,1.0,0.195,2.429381,0.8844,0.692552,invite without pressure
+107,Routehall,tek-a-circle,Orchardring,0.891149,0.195,2.28126,0.864807,0.660065,invite without pressure
+108,Marketroof,sova-a-circle,Rainloft,0.975123,0.315,2.586701,0.870322,0.685845,invite without pressure
+109,Rainloft,ori-ri-circle,Hearthnest,0.955582,0.34,2.222078,0.904805,0.808975,invite without pressure
+110,Hearthnest,vonn-so-circle,Routehall,1.0,0.27,2.420977,0.8784,0.668752,pause if sleep debt or boundary warning appears
+111,Routehall,keth-v-circle,Marketroof,0.917157,0.27,2.268392,0.863488,0.644067,pause if sleep debt or boundary warning appears
+112,Marketroof,nari-na-circle,Quietledger,1.0,0.27,2.568127,0.8784,0.669508,pause if sleep debt or boundary warning appears
+113,Quietledger,lum-ri-circle,Orchardring,1.0,0.34,2.13073,0.8728,0.821964,invite without pressure
+114,Orchardring,sova-so-circle,Rainloft,1.0,0.27,2.483287,0.8784,0.669676,pause if sleep debt or boundary warning appears
+115,Routehall,vonn-na-circle,Hearthnest,0.943165,0.27,2.241715,0.86817,0.65187,pause if sleep debt or boundary warning appears
+116,Marketroof,tek-ri-circle,Routehall,1.0,0.34,2.540091,0.8728,0.823308,invite without pressure
+117,Quietledger,vonn-so-circle,Marketroof,1.0,0.27,2.105158,0.8784,0.668164,pause if sleep debt or boundary warning appears
+118,Orchardring,vonn-v-circle,Quietledger,1.0,0.27,2.461769,0.8784,0.669676,pause if sleep debt or boundary warning appears
+119,Rainloft,vonn-na-circle,Orchardring,0.981482,0.27,2.168654,0.875067,0.662945,pause if sleep debt or boundary warning appears
+120,Hearthnest,sova-ri-circle,Rainloft,1.0,0.34,2.370359,0.8728,0.822552,invite without pressure
+121,Routehall,vonn-v-circle,Hearthnest,0.969173,0.27,2.229959,0.872851,0.659672,pause if sleep debt or boundary warning appears
+122,Marketroof,nari-na-circle,Routehall,1.0,0.27,2.536206,0.8784,0.669508,pause if sleep debt or boundary warning appears
+123,Quietledger,melo-ri-circle,Marketroof,1.0,0.34,2.111466,0.8728,0.821964,invite without pressure
+124,Orchardring,sova-so-circle,Quietledger,1.0,0.27,2.477879,0.8784,0.669676,pause if sleep debt or boundary warning appears
+125,Rainloft,vonn-v-circle,Orchardring,1.0,0.27,2.195045,0.8784,0.6685,pause if sleep debt or boundary warning appears
+126,Hearthnest,nari-na-circle,Rainloft,1.0,0.27,2.402519,0.8784,0.668752,pause if sleep debt or boundary warning appears
+127,Marketroof,sova-so-circle,Hearthnest,1.0,0.27,2.569837,0.8784,0.669508,pause if sleep debt or boundary warning appears
+128,Quietledger,keth-v-circle,Routehall,1.0,0.27,2.146543,0.8784,0.668164,pause if sleep debt or boundary warning appears
+129,Orchardring,vonn-na-circle,Marketroof,1.0,0.27,2.51222,0.8784,0.669676,pause if sleep debt or boundary warning appears
+130,Rainloft,nari-ri-circle,Quietledger,1.0,0.34,2.226516,0.8728,0.8223,invite without pressure
+131,Hearthnest,vonn-so-circle,Orchardring,1.0,0.27,2.429163,0.8784,0.668752,pause if sleep debt or boundary warning appears
+132,Routehall,vonn-v-circle,Rainloft,0.995181,0.27,2.289612,0.877533,0.667474,pause if sleep debt or boundary warning appears
+133,Quietledger,ori-ri-circle,Hearthnest,1.0,0.34,2.158966,0.9128,0.821964,invite without pressure
+134,Orchardring,vonn-so-circle,Routehall,1.0,0.27,2.516134,0.8784,0.669676,pause if sleep debt or boundary warning appears
+135,Rainloft,keth-v-circle,Marketroof,1.0,0.27,2.221677,0.8784,0.6685,pause if sleep debt or boundary warning appears
+136,Hearthnest,nari-na-circle,Quietledger,1.0,0.27,2.415872,0.8784,0.668752,pause if sleep debt or boundary warning appears
+137,Routehall,lum-ri-circle,Orchardring,1.0,0.34,2.269081,0.8728,0.82272,invite without pressure
+138,Marketroof,sova-so-circle,Rainloft,1.0,0.27,2.561725,0.8784,0.669508,pause if sleep debt or boundary warning appears
+139,Orchardring,vonn-na-circle,Hearthnest,1.0,0.27,2.484261,0.8784,0.669676,pause if sleep debt or boundary warning appears
+140,Rainloft,tek-ri-circle,Routehall,1.0,0.34,2.187155,0.8728,0.8223,invite without pressure
+141,Hearthnest,vonn-so-circle,Marketroof,1.0,0.27,2.380847,0.8784,0.668752,pause if sleep debt or boundary warning appears
+142,Routehall,vonn-v-circle,Quietledger,1.0,0.27,2.235729,0.8784,0.66892,pause if sleep debt or boundary warning appears
+143,Marketroof,vonn-na-circle,Orchardring,1.0,0.27,2.532121,0.8784,0.669508,pause if sleep debt or boundary warning appears
+144,Quietledger,sova-ri-circle,Rainloft,1.0,0.34,2.100247,0.8728,0.821964,invite without pressure
+145,Routehall,ori-a-circle,Hearthnest,1.0,0.365,2.230222,0.9108,0.82272,invite without pressure
+146,Marketroof,tek-a-circle,Routehall,1.0,0.245,2.532048,0.8804,0.693308,invite without pressure
+147,Quietledger,melo-a-circle,Marketroof,1.0,0.245,2.105613,0.8804,0.691964,invite without pressure
+148,Orchardring,nari-a-circle,Quietledger,1.0,0.365,2.470694,0.8708,0.693476,invite without pressure
+149,Rainloft,lum-a-circle,Orchardring,1.0,0.365,2.186975,0.8708,0.8223,invite without pressure
+150,Hearthnest,sova-a-circle,Rainloft,1.0,0.245,2.394066,0.8804,0.692552,invite without pressure
+151,Routehall,lum-a-circle,Hearthnest,1.0,0.365,2.261526,0.8708,0.69272,invite without pressure
+152,Marketroof,tek-a-circle,Routehall,1.0,0.365,2.568891,0.8708,0.823308,invite without pressure
+153,Quietledger,melo-a-circle,Marketroof,1.0,0.245,2.145703,0.8804,0.691964,invite without pressure
+154,Orchardring,nari-a-circle,Quietledger,1.0,0.245,2.511539,0.8804,0.693476,invite without pressure
+155,Rainloft,lum-a-circle,Orchardring,1.0,0.365,2.226036,0.8708,0.6923,invite without pressure
+156,Hearthnest,sova-a-circle,Rainloft,1.0,0.365,2.428914,0.8708,0.822552,invite without pressure
+157,Marketroof,lum-a-circle,Hearthnest,1.0,0.245,2.589994,0.8804,0.693308,invite without pressure
+158,Quietledger,tek-a-circle,Routehall,1.0,0.365,2.159209,0.8708,0.691964,invite without pressure
+159,Orchardring,melo-a-circle,Marketroof,1.0,0.365,2.516609,0.8708,0.823476,invite without pressure
+160,Rainloft,nari-a-circle,Quietledger,1.0,0.245,2.222353,0.8804,0.6923,invite without pressure
+161,Hearthnest,tek-a-circle,Orchardring,1.0,0.245,2.416708,0.8804,0.692552,invite without pressure
+162,Routehall,sova-a-circle,Rainloft,1.0,0.365,2.270025,0.8708,0.69272,invite without pressure
+163,Quietledger,lum-a-circle,Hearthnest,1.0,0.245,2.132717,0.8804,0.691964,invite without pressure
+164,Orchardring,tek-a-circle,Routehall,1.0,0.245,2.485241,0.8804,0.693476,invite without pressure
+165,Rainloft,melo-a-circle,Marketroof,1.0,0.365,2.188061,0.8708,0.6923,invite without pressure
+166,Hearthnest,nari-a-circle,Quietledger,1.0,0.365,2.381623,0.8708,0.822552,invite without pressure
+167,Routehall,melo-a-circle,Orchardring,1.0,0.245,2.236328,0.8804,0.69272,invite without pressure
+168,Marketroof,sova-a-circle,Rainloft,1.0,0.245,2.532504,0.8804,0.693308,invite without pressure
+169,Orchardring,ori-a-circle,Hearthnest,1.0,0.365,2.46039,0.9108,0.823476,invite without pressure
+170,Rainloft,tek-a-circle,Routehall,1.0,0.245,2.170117,0.8804,0.6923,invite without pressure
+171,Hearthnest,melo-a-circle,Marketroof,1.0,0.245,2.371702,0.8804,0.692552,invite without pressure
+172,Routehall,nari-a-circle,Quietledger,1.0,0.365,2.235047,0.8708,0.69272,invite without pressure
+173,Marketroof,lum-a-circle,Orchardring,1.0,0.365,2.539943,0.8708,0.823308,invite without pressure
+174,Quietledger,sova-a-circle,Rainloft,1.0,0.245,2.116086,0.8804,0.691964,invite without pressure
+175,Rainloft,lum-a-circle,Hearthnest,1.0,0.365,2.193094,0.8708,0.6923,invite without pressure
+176,Hearthnest,tek-a-circle,Routehall,1.0,0.365,2.400531,0.8708,0.822552,invite without pressure
+177,Routehall,melo-a-circle,Marketroof,1.0,0.245,2.267936,0.8804,0.69272,invite without pressure
+178,Marketroof,nari-a-circle,Quietledger,1.0,0.245,2.574847,0.8804,0.693308,invite without pressure
+179,Quietledger,lum-a-circle,Orchardring,1.0,0.365,2.150835,0.8708,0.691964,invite without pressure
+180,Orchardring,sova-a-circle,Rainloft,1.0,0.365,2.515527,0.8708,0.823476,invite without pressure
+181,Routehall,sova-so-circle,Hearthnest,1.0,0.32,2.288633,0.8744,0.66892,pause if sleep debt or boundary warning appears
+182,Marketroof,keth-v-circle,Routehall,1.0,0.32,2.589958,0.8744,0.669508,pause if sleep debt or boundary warning appears
+183,Quietledger,vonn-na-circle,Marketroof,1.0,0.32,2.15942,0.8744,0.668164,pause if sleep debt or boundary warning appears
+184,Orchardring,nari-ri-circle,Quietledger,1.0,0.39,2.517054,0.8688,0.823476,invite without pressure
+185,Rainloft,vonn-so-circle,Orchardring,1.0,0.32,2.223005,0.8744,0.6685,pause if sleep debt or boundary warning appears
+186,Hearthnest,vonn-v-circle,Rainloft,1.0,0.32,2.417526,0.8744,0.668752,pause if sleep debt or boundary warning appears
+187,Marketroof,ori-ri-circle,Hearthnest,1.0,0.39,2.570957,0.9088,0.823308,invite without pressure
+188,Quietledger,vonn-so-circle,Routehall,1.0,0.32,2.133707,0.8744,0.668164,pause if sleep debt or boundary warning appears
+189,Orchardring,keth-v-circle,Marketroof,1.0,0.32,2.486227,0.8744,0.669676,pause if sleep debt or boundary warning appears
+190,Rainloft,nari-na-circle,Quietledger,1.0,0.32,2.188981,0.8744,0.6685,pause if sleep debt or boundary warning appears
+191,Hearthnest,lum-ri-circle,Orchardring,1.0,0.39,2.38242,0.8688,0.822552,invite without pressure
+192,Routehall,sova-so-circle,Rainloft,1.0,0.32,2.236952,0.8744,0.66892,pause if sleep debt or boundary warning appears
+193,Quietledger,vonn-na-circle,Hearthnest,1.0,0.32,2.102918,0.8744,0.668164,pause if sleep debt or boundary warning appears
+194,Orchardring,tek-ri-circle,Routehall,1.0,0.39,2.460567,0.8688,0.823476,invite without pressure
+195,Rainloft,vonn-so-circle,Marketroof,1.0,0.32,2.170046,0.8744,0.6685,pause if sleep debt or boundary warning appears
+196,Hearthnest,vonn-v-circle,Quietledger,1.0,0.32,2.371387,0.8744,0.668752,pause if sleep debt or boundary warning appears
+197,Routehall,vonn-na-circle,Orchardring,1.0,0.32,2.234508,0.8744,0.66892,pause if sleep debt or boundary warning appears
+198,Marketroof,sova-ri-circle,Rainloft,1.0,0.39,2.539213,0.8688,0.823308,invite without pressure
+199,Orchardring,vonn-v-circle,Hearthnest,1.0,0.32,2.475211,0.8744,0.669676,pause if sleep debt or boundary warning appears
+200,Rainloft,nari-na-circle,Routehall,1.0,0.32,2.192129,0.8744,0.6685,pause if sleep debt or boundary warning appears
+201,Hearthnest,melo-ri-circle,Marketroof,1.0,0.39,2.399536,0.8688,0.822552,invite without pressure
+202,Routehall,sova-so-circle,Quietledger,1.0,0.32,2.266971,0.8744,0.66892,pause if sleep debt or boundary warning appears
+203,Marketroof,vonn-v-circle,Orchardring,1.0,0.32,2.573973,0.8744,0.669508,pause if sleep debt or boundary warning appears
+204,Quietledger,nari-na-circle,Rainloft,1.0,0.32,2.150107,0.8744,0.668164,pause if sleep debt or boundary warning appears
+205,Rainloft,sova-so-circle,Hearthnest,1.0,0.32,2.22499,0.8744,0.6685,pause if sleep debt or boundary warning appears
+206,Hearthnest,keth-v-circle,Routehall,1.0,0.32,2.42832,0.8744,0.668752,pause if sleep debt or boundary warning appears
+207,Routehall,vonn-na-circle,Marketroof,1.0,0.32,2.289888,0.8744,0.66892,pause if sleep debt or boundary warning appears
+208,Marketroof,nari-ri-circle,Quietledger,1.0,0.39,2.589599,0.8688,0.823308,invite without pressure
+209,Quietledger,vonn-so-circle,Orchardring,1.0,0.32,2.157469,0.8744,0.668164,pause if sleep debt or boundary warning appears
+210,Orchardring,vonn-v-circle,Rainloft,1.0,0.32,2.513631,0.8744,0.669676,pause if sleep debt or boundary warning appears
+211,Routehall,ori-ri-circle,Hearthnest,1.0,0.39,2.278324,0.9088,0.82272,invite without pressure
+212,Marketroof,vonn-so-circle,Routehall,1.0,0.32,2.571878,0.8744,0.669508,pause if sleep debt or boundary warning appears
+213,Quietledger,keth-v-circle,Marketroof,1.0,0.32,2.134693,0.8744,0.668164,pause if sleep debt or boundary warning appears
+214,Orchardring,nari-na-circle,Quietledger,1.0,0.32,2.487216,0.8744,0.669676,pause if sleep debt or boundary warning appears
+215,Rainloft,lum-ri-circle,Orchardring,1.0,0.39,2.189913,0.8688,0.8223,invite without pressure
+216,Hearthnest,sova-so-circle,Rainloft,1.0,0.32,2.383236,0.8744,0.668752,pause if sleep debt or boundary warning appears
+217,Marketroof,lum-a-circle,Hearthnest,1.0,0.295,2.537602,0.8764,0.693308,invite without pressure
+218,Quietledger,tek-a-circle,Routehall,1.0,0.295,2.103361,0.8764,0.691964,invite without pressure
+219,Orchardring,melo-a-circle,Marketroof,1.0,0.415,2.460776,0.8668,0.693476,invite without pressure
+220,Rainloft,nari-a-circle,Quietledger,1.0,0.415,2.170007,0.8668,0.8223,invite without pressure
+221,Hearthnest,melo-a-circle,Orchardring,1.0,0.295,2.371104,0.8764,0.692552,invite without pressure
+222,Routehall,sova-a-circle,Rainloft,1.0,0.295,2.233997,0.8764,0.69272,invite without pressure
+223,Quietledger,ori-a-circle,Hearthnest,1.0,0.415,2.108507,0.9068,0.821964,invite without pressure
+224,Orchardring,tek-a-circle,Routehall,1.0,0.295,2.474353,0.8764,0.693476,invite without pressure
+225,Rainloft,melo-a-circle,Marketroof,1.0,0.295,2.191173,0.8764,0.6923,invite without pressure
+226,Hearthnest,nari-a-circle,Quietledger,1.0,0.415,2.398541,0.8668,0.692552,invite without pressure
+227,Routehall,lum-a-circle,Orchardring,1.0,0.415,2.265999,0.8668,0.82272,invite without pressure
+228,Marketroof,sova-a-circle,Rainloft,1.0,0.295,2.573085,0.8764,0.693308,invite without pressure
+229,Orchardring,lum-a-circle,Hearthnest,1.0,0.415,2.509357,0.8668,0.693476,invite without pressure
+230,Rainloft,tek-a-circle,Routehall,1.0,0.415,2.224426,0.8668,0.8223,invite without pressure
+231,Hearthnest,melo-a-circle,Marketroof,1.0,0.295,2.427976,0.8764,0.692552,invite without pressure
+232,Routehall,nari-a-circle,Quietledger,1.0,0.295,2.289786,0.8764,0.69272,invite without pressure
+233,Marketroof,lum-a-circle,Orchardring,1.0,0.415,2.589745,0.8668,0.693308,invite without pressure
+234,Quietledger,sova-a-circle,Rainloft,1.0,0.415,2.157854,0.8668,0.821964,invite without pressure
+235,Rainloft,lum-a-circle,Hearthnest,1.0,0.295,2.224231,0.8764,0.6923,invite without pressure
+236,Hearthnest,tek-a-circle,Routehall,1.0,0.415,2.419102,0.8668,0.692552,invite without pressure
+237,Routehall,melo-a-circle,Marketroof,1.0,0.415,2.272785,0.8668,0.82272,invite without pressure
+238,Marketroof,nari-a-circle,Quietledger,1.0,0.295,2.565673,0.8764,0.693308,invite without pressure
+239,Quietledger,tek-a-circle,Orchardring,1.0,0.295,2.128209,0.8764,0.691964,invite without pressure
+240,Orchardring,sova-a-circle,Rainloft,1.0,0.415,2.480856,0.8668,0.693476,invite without pressure
+241,Routehall,lum-a-circle,Hearthnest,1.0,0.295,2.244071,0.8764,0.69272,invite without pressure
+242,Marketroof,tek-a-circle,Routehall,1.0,0.295,2.538277,0.8764,0.693308,invite without pressure
+243,Quietledger,melo-a-circle,Marketroof,1.0,0.415,2.103833,0.8668,0.691964,invite without pressure
+244,Orchardring,nari-a-circle,Quietledger,1.0,0.415,2.461016,0.8668,0.823476,invite without pressure
+245,Rainloft,melo-a-circle,Orchardring,1.0,0.295,2.170002,0.8764,0.6923,invite without pressure
+246,Hearthnest,sova-a-circle,Rainloft,1.0,0.295,2.370852,0.8764,0.692552,invite without pressure
+247,Routehall,ori-a-circle,Hearthnest,1.0,0.415,2.233515,0.9068,0.82272,invite without pressure
+248,Marketroof,tek-a-circle,Routehall,1.0,0.295,2.537825,0.8764,0.693308,invite without pressure
+249,Quietledger,melo-a-circle,Marketroof,1.0,0.295,2.113513,0.8764,0.691964,invite without pressure
+250,Orchardring,nari-a-circle,Quietledger,1.0,0.415,2.480226,0.8668,0.693476,invite without pressure
+251,Rainloft,lum-a-circle,Orchardring,1.0,0.415,2.197547,0.8668,0.8223,invite without pressure
+252,Hearthnest,sova-a-circle,Rainloft,1.0,0.295,2.405021,0.8764,0.692552,invite without pressure
+253,Quietledger,vonn-v-circle,Hearthnest,1.0,0.37,2.142182,0.8704,0.668164,pause if sleep debt or boundary warning appears
+254,Orchardring,nari-na-circle,Routehall,1.0,0.37,2.508586,0.8704,0.669676,pause if sleep debt or boundary warning appears
+255,Rainloft,melo-ri-circle,Marketroof,1.0,0.44,2.223834,0.8648,0.8223,invite without pressure
+256,Hearthnest,sova-so-circle,Quietledger,1.0,0.37,2.427601,0.8704,0.668752,pause if sleep debt or boundary warning appears
+257,Routehall,vonn-v-circle,Orchardring,1.0,0.37,2.289651,0.8704,0.66892,pause if sleep debt or boundary warning appears
+258,Marketroof,nari-na-circle,Rainloft,1.0,0.37,2.589858,0.8704,0.669508,pause if sleep debt or boundary warning appears
+259,Orchardring,sova-so-circle,Hearthnest,1.0,0.37,2.518208,0.8704,0.669676,pause if sleep debt or boundary warning appears
+260,Rainloft,keth-v-circle,Routehall,1.0,0.37,2.224805,0.8704,0.6685,pause if sleep debt or boundary warning appears
+261,Hearthnest,vonn-na-circle,Marketroof,1.0,0.37,2.419859,0.8704,0.668752,pause if sleep debt or boundary warning appears
+262,Routehall,nari-ri-circle,Quietledger,1.0,0.44,2.273679,0.8648,0.82272,invite without pressure
+263,Marketroof,vonn-so-circle,Orchardring,1.0,0.37,2.566648,0.8704,0.669508,pause if sleep debt or boundary warning appears
+264,Quietledger,vonn-v-circle,Rainloft,1.0,0.37,2.129203,0.8704,0.668164,pause if sleep debt or boundary warning appears
+265,Rainloft,ori-ri-circle,Hearthnest,1.0,0.44,2.191809,0.9048,0.8223,invite without pressure
+266,Hearthnest,vonn-so-circle,Routehall,1.0,0.37,2.384923,0.8704,0.668752,pause if sleep debt or boundary warning appears
+267,Routehall,keth-v-circle,Marketroof,1.0,0.37,2.238975,0.8704,0.66892,pause if sleep debt or boundary warning appears
+268,Marketroof,nari-na-circle,Quietledger,1.0,0.37,2.534334,0.8704,0.669508,pause if sleep debt or boundary warning appears
+269,Quietledger,lum-ri-circle,Orchardring,1.0,0.44,2.101289,0.8648,0.821964,invite without pressure
+270,Orchardring,sova-so-circle,Rainloft,1.0,0.37,2.460029,0.8704,0.669676,pause if sleep debt or boundary warning appears
+271,Routehall,vonn-na-circle,Hearthnest,1.0,0.37,2.230633,0.8704,0.66892,pause if sleep debt or boundary warning appears
+272,Marketroof,tek-ri-circle,Routehall,1.0,0.44,2.533062,0.8648,0.823308,invite without pressure
+273,Quietledger,vonn-so-circle,Marketroof,1.0,0.37,2.107166,0.8704,0.668164,pause if sleep debt or boundary warning appears
+274,Orchardring,vonn-v-circle,Quietledger,1.0,0.37,2.47269,0.8704,0.669676,pause if sleep debt or boundary warning appears
+275,Rainloft,vonn-na-circle,Orchardring,1.0,0.37,2.18929,0.8704,0.6685,pause if sleep debt or boundary warning appears
+276,Hearthnest,sova-ri-circle,Rainloft,1.0,0.44,2.396556,0.8648,0.822552,invite without pressure
+277,Routehall,vonn-v-circle,Hearthnest,1.0,0.37,2.264037,0.8704,0.66892,pause if sleep debt or boundary warning appears
+278,Marketroof,nari-na-circle,Routehall,1.0,0.37,2.571266,0.8704,0.669508,pause if sleep debt or boundary warning appears
+279,Quietledger,melo-ri-circle,Marketroof,1.0,0.44,2.147794,0.8648,0.821964,invite without pressure
+280,Orchardring,sova-so-circle,Quietledger,1.0,0.37,2.513217,0.8704,0.669676,pause if sleep debt or boundary warning appears
+281,Rainloft,vonn-v-circle,Orchardring,1.0,0.37,2.227196,0.8704,0.6685,pause if sleep debt or boundary warning appears
+282,Hearthnest,nari-na-circle,Rainloft,1.0,0.37,2.429483,0.8704,0.668752,pause if sleep debt or boundary warning appears
+283,Marketroof,sova-so-circle,Hearthnest,1.0,0.37,2.589938,0.8704,0.669508,pause if sleep debt or boundary warning appears
+284,Quietledger,keth-v-circle,Routehall,1.0,0.37,2.158532,0.8704,0.668164,pause if sleep debt or boundary warning appears
+285,Orchardring,vonn-na-circle,Marketroof,1.0,0.37,2.515351,0.8704,0.669676,pause if sleep debt or boundary warning appears
+286,Rainloft,nari-ri-circle,Quietledger,1.0,0.44,2.220594,0.8648,0.8223,invite without pressure
+287,Hearthnest,vonn-so-circle,Orchardring,1.0,0.37,2.414557,0.8704,0.668752,pause if sleep debt or boundary warning appears
+288,Routehall,vonn-v-circle,Rainloft,1.0,0.37,2.267615,0.8704,0.66892,pause if sleep debt or boundary warning appears

@@ -1,0 +1,61 @@
+{
+  "ablations": {
+    "no_avatar_reputation_propagation": 0.784229,
+    "no_boundary_social_propagation": 0.814229,
+    "no_frequency_flower_cultural_rhythm": 0.914229,
+    "no_household_network": 0.694229,
+    "no_learned_rituals": 0.764229,
+    "no_meaning_grounding": 0.734229,
+    "no_proto_language_spread": 0.674229,
+    "no_replay_cultural_integrity": 0.854229,
+    "no_social_spread_continuity": 0.684229,
+    "no_welfare_guardrails": 0.704229
+  },
+  "counts": {
+    "browser_world_v5_ticks": 288,
+    "cultural_diffusion_events": 288,
+    "household_network_frames": 288,
+    "learned_ritual_frames": 288,
+    "replay_cultural_frames": 288,
+    "reputation_propagation_frames": 288,
+    "welfare_guardrail_frames": 288
+  },
+  "honest_limits": [
+    "This is deterministic population-level cultural diffusion, not subjective consciousness.",
+    "Proto-language spread is rule-based household adoption, not autonomous natural language emergence.",
+    "Ritual learning is simulated cultural continuity, not real religion or moral agency.",
+    "Avatar reputation propagation is functional social memory, not real consent or moral patienthood.",
+    "Welfare guardrails are bounded simulation constraints, not proof of welfare experience.",
+    "Frequency and flower phase are rhythm variables, not metaphysical proof.",
+    "The browser world v5 visualization is a scaffold, not a finished 3D game engine."
+  ],
+  "metrics": {
+    "avatar_social_propagation_binding": 1.0,
+    "boundary_respect_social_propagation": 1.0,
+    "browser_world_v5_population_cultural_diffusion_readiness": 0.984229,
+    "browser_world_v5_surface_available": 1.0,
+    "cultural_diffusion_without_collapse": 1.0,
+    "frequency_flower_cultural_rhythm": 1.0,
+    "household_network_connectivity": 1.0,
+    "household_proto_language_spread": 1.0,
+    "learned_ritual_adoption": 0.965278,
+    "mean_cultural_diffusion_channel_score": 0.990205,
+    "meaning_grounding_retention": 0.974854,
+    "population_span_coverage": 1.0,
+    "private_cultural_trace_boundary": 1.0,
+    "replay_checkpoint_coverage": 1.0,
+    "replay_cultural_integrity": 1.0,
+    "reputation_balance": 1.0,
+    "ritual_variation_stability": 1.0,
+    "social_spread_continuity": 0.88356,
+    "source_learned_adaptation_continuity": 1.0,
+    "weakest_channel_score": 0.88356,
+    "welfare_guardrail_preservation": 1.0
+  },
+  "name": "SSRM-3D Browser World v5 Population Cultural Diffusion Bridge",
+  "next_gate": "browser world v6 with generational cultural inheritance, child-to-adult learning arcs, household lineage memory, and avatar-entry effects that persist across simulated generations without breaking welfare guardrails",
+  "report": 245,
+  "seed": 20260858,
+  "source_results": "artifacts/ssrm_3d_browser_world_v4_learned_routine_proto_language_adaptation_bridge_results.json",
+  "verdict": "pass"
+}

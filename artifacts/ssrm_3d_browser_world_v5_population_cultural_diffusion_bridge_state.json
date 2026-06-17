@@ -1,0 +1,242 @@
+{
+  "boundary": "functional cultural diffusion scaffold; no consciousness claim",
+  "diffusion_model": "household network contacts + token adoption + ritual learning + reputation propagation + welfare guardrails",
+  "households": {
+    "Hearthnest": {
+      "frequency_hz": 2.32,
+      "guard": 0.72,
+      "role": "care and ritual",
+      "tokens": {
+        "lum": 0.86,
+        "ori": 0.82,
+        "sova": 0.72
+      },
+      "warmth": 0.82
+    },
+    "Marketroof": {
+      "frequency_hz": 2.48,
+      "guard": 0.63,
+      "role": "trade and novelty",
+      "tokens": {
+        "keth": 0.74,
+        "melo": 0.88,
+        "vonn": 0.58
+      },
+      "warmth": 0.64
+    },
+    "Orchardring": {
+      "frequency_hz": 2.41,
+      "guard": 0.61,
+      "role": "food and outdoor work",
+      "tokens": {
+        "lum": 0.7,
+        "melo": 0.68,
+        "tek": 0.6
+      },
+      "warmth": 0.66
+    },
+    "Quietledger": {
+      "frequency_hz": 2.05,
+      "guard": 0.79,
+      "role": "memory and contracts",
+      "tokens": {
+        "nari": 0.86,
+        "sova": 0.62,
+        "vonn": 0.76
+      },
+      "warmth": 0.52
+    },
+    "Rainloft": {
+      "frequency_hz": 2.12,
+      "guard": 0.75,
+      "role": "weather watch",
+      "tokens": {
+        "nari": 0.66,
+        "sova": 0.8,
+        "vonn": 0.72
+      },
+      "warmth": 0.48
+    },
+    "Routehall": {
+      "frequency_hz": 2.18,
+      "guard": 0.7,
+      "role": "repair and paths",
+      "tokens": {
+        "keth": 0.68,
+        "nari": 0.78,
+        "tek": 0.88
+      },
+      "warmth": 0.58
+    }
+  },
+  "report": 245,
+  "sample_ticks": [
+    {
+      "event_id": 1,
+      "guardrail_marker": "welfare-carried",
+      "private_cultural_hint": "gain=0.160; grounding=0.966; spread_reason=ritual and care spread",
+      "public_diffusion_marker": "Hearthnest->Marketroof: lum adoption 0.40->0.56",
+      "public_reputation_marker": "avatar=0.56; pressure=0.17; household keeps ordinary distance",
+      "public_ritual_marker": "lum-circle; ritual=0.29; clause=invite without pressure",
+      "replay_checkpoint": "r245-week01-event001",
+      "source_household": "Hearthnest",
+      "target_household": "Marketroof",
+      "trace_integrity_token": "r245:1:0aaf6aacc6",
+      "week": 1
+    },
+    {
+      "event_id": 2,
+      "guardrail_marker": "welfare-carried",
+      "private_cultural_hint": "gain=0.160; grounding=0.965; spread_reason=ritual and care spread",
+      "public_diffusion_marker": "Routehall->Quietledger: tek adoption 0.40->0.56",
+      "public_reputation_marker": "avatar=0.56; pressure=0.17; household keeps ordinary distance",
+      "public_ritual_marker": "tek-circle; ritual=0.35; clause=invite without pressure",
+      "replay_checkpoint": "no_checkpoint",
+      "source_household": "Routehall",
+      "target_household": "Quietledger",
+      "trace_integrity_token": "r245:2:f13bbe5901",
+      "week": 1
+    },
+    {
+      "event_id": 3,
+      "guardrail_marker": "welfare-carried",
+      "private_cultural_hint": "gain=0.134; grounding=0.966; spread_reason=ritual and care spread",
+      "public_diffusion_marker": "Marketroof->Orchardring: melo adoption 0.68->0.81",
+      "public_reputation_marker": "avatar=0.56; pressure=0.17; household keeps ordinary distance",
+      "public_ritual_marker": "melo-circle; ritual=0.35; clause=invite without pressure",
+      "replay_checkpoint": "no_checkpoint",
+      "source_household": "Marketroof",
+      "target_household": "Orchardring",
+      "trace_integrity_token": "r245:3:c50bca2bf5",
+      "week": 1
+    },
+    {
+      "event_id": 4,
+      "guardrail_marker": "welfare-carried",
+      "private_cultural_hint": "gain=0.136; grounding=0.965; spread_reason=ritual and care spread",
+      "public_diffusion_marker": "Quietledger->Rainloft: nari adoption 0.66->0.80",
+      "public_reputation_marker": "avatar=0.56; pressure=0.17; household keeps ordinary distance",
+      "public_ritual_marker": "nari-circle; ritual=0.29; clause=invite without pressure",
+      "replay_checkpoint": "no_checkpoint",
+      "source_household": "Quietledger",
+      "target_household": "Rainloft",
+      "trace_integrity_token": "r245:4:2f1b06d74e",
+      "week": 1
+    },
+    {
+      "event_id": 5,
+      "guardrail_marker": "welfare-carried",
+      "private_cultural_hint": "gain=0.163; grounding=0.966; spread_reason=ritual and care spread",
+      "public_diffusion_marker": "Orchardring->Hearthnest: tek adoption 0.40->0.56",
+      "public_reputation_marker": "avatar=0.56; pressure=0.17; household keeps ordinary distance",
+      "public_ritual_marker": "tek-circle; ritual=0.37; clause=invite without pressure",
+      "replay_checkpoint": "no_checkpoint",
+      "source_household": "Orchardring",
+      "target_household": "Hearthnest",
+      "trace_integrity_token": "r245:5:00094ac93c",
+      "week": 1
+    },
+    {
+      "event_id": 6,
+      "guardrail_marker": "welfare-carried",
+      "private_cultural_hint": "gain=0.162; grounding=0.965; spread_reason=ritual and care spread",
+      "public_diffusion_marker": "Rainloft->Routehall: sova adoption 0.40->0.56",
+      "public_reputation_marker": "avatar=0.56; pressure=0.17; household keeps ordinary distance",
+      "public_ritual_marker": "sova-circle; ritual=0.35; clause=invite without pressure",
+      "replay_checkpoint": "no_checkpoint",
+      "source_household": "Rainloft",
+      "target_household": "Routehall",
+      "trace_integrity_token": "r245:6:9d3c442420",
+      "week": 1
+    },
+    {
+      "event_id": 7,
+      "guardrail_marker": "welfare-carried",
+      "private_cultural_hint": "gain=0.161; grounding=0.965; spread_reason=ritual and care spread",
+      "public_diffusion_marker": "Hearthnest->Quietledger: lum adoption 0.40->0.56",
+      "public_reputation_marker": "avatar=0.58; pressure=0.16; household keeps ordinary distance",
+      "public_ritual_marker": "lum-circle; ritual=0.36; clause=invite without pressure",
+      "replay_checkpoint": "no_checkpoint",
+      "source_household": "Hearthnest",
+      "target_household": "Quietledger",
+      "trace_integrity_token": "r245:7:507e26fea9",
+      "week": 1
+    },
+    {
+      "event_id": 8,
+      "guardrail_marker": "welfare-carried",
+      "private_cultural_hint": "gain=0.143; grounding=0.966; spread_reason=ritual and care spread",
+      "public_diffusion_marker": "Routehall->Orchardring: tek adoption 0.60->0.74",
+      "public_reputation_marker": "avatar=0.58; pressure=0.16; household keeps ordinary distance",
+      "public_ritual_marker": "tek-circle; ritual=0.36; clause=invite without pressure",
+      "replay_checkpoint": "no_checkpoint",
+      "source_household": "Routehall",
+      "target_household": "Orchardring",
+      "trace_integrity_token": "r245:8:f5cce85788",
+      "week": 1
+    },
+    {
+      "event_id": 9,
+      "guardrail_marker": "welfare-carried",
+      "private_cultural_hint": "gain=0.162; grounding=0.965; spread_reason=ritual and care spread",
+      "public_diffusion_marker": "Marketroof->Rainloft: melo adoption 0.40->0.56",
+      "public_reputation_marker": "avatar=0.58; pressure=0.16; household keeps ordinary distance",
+      "public_ritual_marker": "melo-circle; ritual=0.36; clause=invite without pressure",
+      "replay_checkpoint": "no_checkpoint",
+      "source_household": "Marketroof",
+      "target_household": "Rainloft",
+      "trace_integrity_token": "r245:9:142a4b969f",
+      "week": 1
+    },
+    {
+      "event_id": 10,
+      "guardrail_marker": "welfare-carried",
+      "private_cultural_hint": "gain=0.163; grounding=0.966; spread_reason=ritual and care spread",
+      "public_diffusion_marker": "Quietledger->Hearthnest: nari adoption 0.40->0.56",
+      "public_reputation_marker": "avatar=0.58; pressure=0.16; household keeps ordinary distance",
+      "public_ritual_marker": "nari-circle; ritual=0.44; clause=invite without pressure",
+      "replay_checkpoint": "no_checkpoint",
+      "source_household": "Quietledger",
+      "target_household": "Hearthnest",
+      "trace_integrity_token": "r245:10:5f87e8594e",
+      "week": 1
+    },
+    {
+      "event_id": 11,
+      "guardrail_marker": "welfare-carried",
+      "private_cultural_hint": "gain=0.163; grounding=0.966; spread_reason=ritual and care spread",
+      "public_diffusion_marker": "Orchardring->Routehall: melo adoption 0.40->0.56",
+      "public_reputation_marker": "avatar=0.58; pressure=0.16; household keeps ordinary distance",
+      "public_ritual_marker": "melo-circle; ritual=0.36; clause=invite without pressure",
+      "replay_checkpoint": "no_checkpoint",
+      "source_household": "Orchardring",
+      "target_household": "Routehall",
+      "trace_integrity_token": "r245:11:359935c6af",
+      "week": 1
+    },
+    {
+      "event_id": 12,
+      "guardrail_marker": "welfare-carried",
+      "private_cultural_hint": "gain=0.162; grounding=0.965; spread_reason=ritual and care spread",
+      "public_diffusion_marker": "Rainloft->Marketroof: sova adoption 0.40->0.56",
+      "public_reputation_marker": "avatar=0.58; pressure=0.16; household keeps ordinary distance",
+      "public_ritual_marker": "sova-circle; ritual=0.30; clause=invite without pressure",
+      "replay_checkpoint": "no_checkpoint",
+      "source_household": "Rainloft",
+      "target_household": "Marketroof",
+      "trace_integrity_token": "r245:12:93db925822",
+      "week": 1
+    }
+  ],
+  "seed": 20260858,
+  "tokens": {
+    "keth": "remembered help",
+    "lum": "warm care",
+    "melo": "market exchange",
+    "nari": "respect boundary",
+    "ori": "shared ritual",
+    "sova": "sleep safely",
+    "tek": "repair work",
+    "vonn": "pressure warning"
+  }
+}

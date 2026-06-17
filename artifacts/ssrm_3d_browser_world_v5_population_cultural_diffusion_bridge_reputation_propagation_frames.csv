@@ -1,0 +1,289 @@
+event_id,household,avatar_reputation,pressure_warning,care_reputation,boundary_reputation,propagated_story,later_social_consequence
+1,Marketroof,0.56,0.169147,0.353512,0.42378,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+2,Quietledger,0.56,0.169378,0.353416,0.42474,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+3,Orchardring,0.56,0.169118,0.353512,0.42366,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+4,Rainloft,0.56,0.16932,0.353384,0.4245,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+5,Hearthnest,0.56,0.169277,0.353528,0.42432,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+6,Routehall,0.56,0.169248,0.353384,0.4242,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+7,Quietledger,0.58,0.158755,0.386832,0.42948,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+8,Orchardring,0.58,0.158237,0.386976,0.42732,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+9,Rainloft,0.58,0.15864,0.386768,0.429,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+10,Hearthnest,0.58,0.158554,0.386944,0.42864,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+11,Routehall,0.58,0.158496,0.386848,0.4284,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+12,Marketroof,0.58,0.158294,0.386896,0.42756,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+13,Orchardring,0.6,0.147355,0.420504,0.43098,avatar care travels as a help story,household allows warmer greeting
+14,Rainloft,0.6,0.14796,0.420152,0.4335,avatar care travels as a help story,household allows warmer greeting
+15,Hearthnest,0.6,0.14783,0.420456,0.43296,avatar care travels as a help story,household allows warmer greeting
+16,Routehall,0.6,0.147744,0.420264,0.4326,avatar care travels as a help story,household allows warmer greeting
+17,Marketroof,0.6,0.147442,0.420408,0.43134,avatar care travels as a help story,household allows warmer greeting
+18,Quietledger,0.6,0.148133,0.420216,0.43422,avatar care travels as a help story,household allows warmer greeting
+19,Rainloft,0.62,0.13728,0.453536,0.438,avatar care travels as a help story,household allows warmer greeting
+20,Hearthnest,0.62,0.137107,0.45392,0.43728,avatar care travels as a help story,household allows warmer greeting
+21,Routehall,0.62,0.136992,0.453728,0.4368,avatar care travels as a help story,household allows warmer greeting
+22,Marketroof,0.62,0.136589,0.453824,0.43512,avatar care travels as a help story,household allows warmer greeting
+23,Quietledger,0.62,0.13751,0.453632,0.43896,avatar care travels as a help story,household allows warmer greeting
+24,Orchardring,0.62,0.136474,0.453888,0.43464,avatar care travels as a help story,household allows warmer greeting
+25,Routehall,0.64,0.12624,0.487192,0.441,avatar care travels as a help story,household allows warmer greeting
+26,Marketroof,0.64,0.125736,0.487288,0.4389,avatar care travels as a help story,household allows warmer greeting
+27,Quietledger,0.64,0.126888,0.487048,0.4437,avatar care travels as a help story,household allows warmer greeting
+28,Orchardring,0.64,0.125592,0.487304,0.4383,avatar care travels as a help story,household allows warmer greeting
+29,Rainloft,0.64,0.1266,0.48692,0.4425,avatar care travels as a help story,household allows warmer greeting
+30,Hearthnest,0.64,0.126384,0.487304,0.4416,avatar care travels as a help story,household allows warmer greeting
+31,Routehall,0.66,0.115488,0.520656,0.4452,avatar care travels as a help story,household allows warmer greeting
+32,Marketroof,0.66,0.114883,0.520752,0.44268,avatar care travels as a help story,household allows warmer greeting
+33,Quietledger,0.66,0.116266,0.520464,0.44844,avatar care travels as a help story,household allows warmer greeting
+34,Orchardring,0.66,0.11471,0.52072,0.44196,avatar care travels as a help story,household allows warmer greeting
+35,Rainloft,0.66,0.11592,0.520304,0.447,avatar care travels as a help story,household allows warmer greeting
+36,Hearthnest,0.66,0.115661,0.520688,0.44592,avatar care travels as a help story,household allows warmer greeting
+37,Quietledger,0.642,0.156723,0.52468,0.49318,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+38,Orchardring,0.68,0.103829,0.554184,0.44562,avatar care travels as a help story,household allows warmer greeting
+39,Rainloft,0.66,0.12132,0.525288,0.4515,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+40,Hearthnest,0.642,0.156018,0.525704,0.46024,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+41,Routehall,0.642,0.155816,0.52492,0.4894,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+42,Marketroof,0.68,0.10403,0.554136,0.44646,avatar care travels as a help story,household allows warmer greeting
+43,Orchardring,0.662,0.144027,0.559312,0.45928,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+44,Rainloft,0.642,0.16172,0.529472,0.496,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+45,Hearthnest,0.662,0.145294,0.559216,0.46456,avatar care travels as a help story,household allows warmer greeting
+46,Routehall,0.642,0.161144,0.529936,0.4936,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+47,Marketroof,0.662,0.144258,0.559248,0.46024,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+48,Quietledger,0.624,0.197181,0.528864,0.53792,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+49,Rainloft,0.642,0.16712,0.534456,0.5005,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+50,Hearthnest,0.644,0.185651,0.56428,0.47888,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+51,Routehall,0.624,0.201472,0.5342,0.5378,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+52,Marketroof,0.682,0.133405,0.592664,0.46402,avatar care travels as a help story,household allows warmer greeting
+53,Quietledger,0.624,0.202638,0.53388,0.54266,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+54,Orchardring,0.644,0.184226,0.564296,0.47294,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+55,Routehall,0.644,0.19072,0.567664,0.542,avatar care travels as a help story,household allows warmer greeting
+56,Marketroof,0.682,0.138632,0.597728,0.4678,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+57,Quietledger,0.606,0.243096,0.538896,0.5574,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+58,Orchardring,0.626,0.224424,0.568512,0.5166,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+59,Rainloft,0.662,0.15644,0.56784,0.505,avatar care travels as a help story,household allows warmer greeting
+60,Hearthnest,0.644,0.191008,0.569264,0.4832,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+61,Routehall,0.626,0.231048,0.571928,0.5862,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+62,Marketroof,0.702,0.127779,0.631192,0.47158,avatar care travels as a help story,household allows warmer greeting
+63,Quietledger,0.606,0.248554,0.543912,0.56214,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+64,Orchardring,0.608,0.264622,0.573528,0.53026,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+65,Rainloft,0.644,0.19684,0.572024,0.5495,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+66,Hearthnest,0.664,0.180285,0.602648,0.48752,avatar care travels as a help story,household allows warmer greeting
+67,Marketroof,0.684,0.168006,0.636304,0.48536,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+68,Quietledger,0.588,0.289011,0.548128,0.60688,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+69,Orchardring,0.628,0.253741,0.60704,0.53392,avatar care travels as a help story,household allows warmer greeting
+70,Rainloft,0.644,0.20224,0.577008,0.554,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+71,Hearthnest,0.646,0.220642,0.607776,0.50184,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+72,Routehall,0.608,0.271376,0.576112,0.6304,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+73,Orchardring,0.648,0.242859,0.640568,0.53758,avatar care travels as a help story,household allows warmer greeting
+74,Rainloft,0.664,0.19156,0.610392,0.5585,avatar care travels as a help story,household allows warmer greeting
+75,Hearthnest,0.666,0.209918,0.641288,0.50616,avatar care travels as a help story,household allows warmer greeting
+76,Routehall,0.628,0.260624,0.609528,0.6346,avatar care travels as a help story,household allows warmer greeting
+77,Marketroof,0.704,0.157154,0.669816,0.48914,avatar care travels as a help story,household allows warmer greeting
+78,Quietledger,0.608,0.278389,0.581512,0.61162,avatar care travels as a help story,household allows warmer greeting
+79,Rainloft,0.684,0.18088,0.643776,0.563,avatar care travels as a help story,household allows warmer greeting
+80,Hearthnest,0.686,0.199195,0.674752,0.51048,avatar care travels as a help story,household allows warmer greeting
+81,Routehall,0.648,0.249872,0.642992,0.6388,avatar care travels as a help story,household allows warmer greeting
+82,Marketroof,0.724,0.146301,0.703232,0.49292,avatar care travels as a help story,household allows warmer greeting
+83,Quietledger,0.628,0.267766,0.614928,0.61636,avatar care travels as a help story,household allows warmer greeting
+84,Orchardring,0.668,0.231978,0.673952,0.54124,avatar care travels as a help story,household allows warmer greeting
+85,Routehall,0.668,0.23912,0.676456,0.643,avatar care travels as a help story,household allows warmer greeting
+86,Marketroof,0.744,0.135448,0.736696,0.4967,avatar care travels as a help story,household allows warmer greeting
+87,Quietledger,0.648,0.257144,0.648344,0.6211,avatar care travels as a help story,household allows warmer greeting
+88,Orchardring,0.688,0.221096,0.707368,0.5449,avatar care travels as a help story,household allows warmer greeting
+89,Rainloft,0.704,0.1702,0.67716,0.5675,avatar care travels as a help story,household allows warmer greeting
+90,Hearthnest,0.706,0.188472,0.708136,0.5148,avatar care travels as a help story,household allows warmer greeting
+91,Routehall,0.688,0.228368,0.70992,0.6472,avatar care travels as a help story,household allows warmer greeting
+92,Marketroof,0.764,0.124595,0.77016,0.50048,avatar care travels as a help story,household allows warmer greeting
+93,Quietledger,0.668,0.246522,0.68176,0.62584,avatar care travels as a help story,household allows warmer greeting
+94,Orchardring,0.708,0.210214,0.740784,0.54856,avatar care travels as a help story,household allows warmer greeting
+95,Rainloft,0.724,0.15952,0.710544,0.572,avatar care travels as a help story,household allows warmer greeting
+96,Hearthnest,0.726,0.177749,0.74152,0.51912,avatar care travels as a help story,household allows warmer greeting
+97,Marketroof,0.784,0.113742,0.803672,0.50426,avatar care travels as a help story,household allows warmer greeting
+98,Quietledger,0.688,0.235899,0.715176,0.63058,avatar care travels as a help story,household allows warmer greeting
+99,Orchardring,0.728,0.199333,0.774296,0.55222,avatar care travels as a help story,household allows warmer greeting
+100,Rainloft,0.744,0.14884,0.743928,0.5765,avatar care travels as a help story,household allows warmer greeting
+101,Hearthnest,0.746,0.167026,0.775048,0.52344,avatar care travels as a help story,household allows warmer greeting
+102,Routehall,0.708,0.217616,0.743304,0.6514,avatar care travels as a help story,household allows warmer greeting
+103,Quietledger,0.708,0.225277,0.748592,0.63532,avatar care travels as a help story,household allows warmer greeting
+104,Orchardring,0.748,0.188451,0.80776,0.55588,avatar care travels as a help story,household allows warmer greeting
+105,Rainloft,0.764,0.13816,0.777312,0.581,avatar care travels as a help story,household allows warmer greeting
+106,Hearthnest,0.766,0.156302,0.808464,0.52776,avatar care travels as a help story,household allows warmer greeting
+107,Routehall,0.728,0.206864,0.776768,0.6556,avatar care travels as a help story,household allows warmer greeting
+108,Marketroof,0.804,0.10289,0.837056,0.50804,avatar care travels as a help story,household allows warmer greeting
+109,Rainloft,0.784,0.12748,0.810696,0.5855,avatar care travels as a help story,household allows warmer greeting
+110,Hearthnest,0.766,0.161659,0.813528,0.53208,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+111,Routehall,0.71,0.247192,0.781832,0.6698,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+112,Marketroof,0.786,0.143117,0.841272,0.55182,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+113,Quietledger,0.728,0.214654,0.782008,0.64006,avatar care travels as a help story,household allows warmer greeting
+114,Orchardring,0.748,0.19365,0.812744,0.55954,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+115,Routehall,0.692,0.28752,0.786096,0.714,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+116,Marketroof,0.806,0.132264,0.874736,0.5556,avatar care travels as a help story,household allows warmer greeting
+117,Quietledger,0.728,0.220112,0.787024,0.6448,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+118,Orchardring,0.73,0.233848,0.81776,0.5732,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+119,Rainloft,0.766,0.16788,0.81488,0.63,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+120,Hearthnest,0.786,0.150936,0.846912,0.5364,avatar care travels as a help story,household allows warmer greeting
+121,Routehall,0.674,0.327848,0.79116,0.7282,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+122,Marketroof,0.788,0.172491,0.879,0.59938,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+123,Quietledger,0.748,0.20949,0.82044,0.64954,avatar care travels as a help story,household allows warmer greeting
+124,Orchardring,0.73,0.239046,0.822776,0.57686,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+125,Rainloft,0.748,0.20828,0.819864,0.6445,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+126,Hearthnest,0.768,0.191293,0.851096,0.58072,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+127,Marketroof,0.788,0.177718,0.884112,0.60316,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+128,Quietledger,0.73,0.249947,0.825456,0.66428,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+129,Orchardring,0.712,0.279245,0.827088,0.62052,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+130,Rainloft,0.768,0.1976,0.853248,0.649,avatar care travels as a help story,household allows warmer greeting
+131,Hearthnest,0.768,0.19665,0.856224,0.58504,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+132,Routehall,0.646,0.368176,0.796144,0.7424,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+133,Quietledger,0.75,0.239325,0.858872,0.66902,avatar care travels as a help story,household allows warmer greeting
+134,Orchardring,0.712,0.284443,0.832152,0.62418,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+135,Rainloft,0.75,0.238,0.858232,0.6635,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+136,Hearthnest,0.75,0.237006,0.86044,0.62936,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+137,Routehall,0.656,0.357424,0.829608,0.7466,avatar care travels as a help story,household allows warmer greeting
+138,Marketroof,0.788,0.182946,0.889096,0.60694,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+139,Orchardring,0.694,0.324642,0.83648,0.66784,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+140,Rainloft,0.77,0.22732,0.891616,0.668,avatar care travels as a help story,household allows warmer greeting
+141,Hearthnest,0.75,0.242363,0.865552,0.63368,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+142,Routehall,0.628,0.397752,0.834624,0.7608,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+143,Marketroof,0.77,0.223173,0.893408,0.65072,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+144,Quietledger,0.77,0.228702,0.892256,0.67376,avatar care travels as a help story,household allows warmer greeting
+145,Routehall,0.638,0.387,0.868088,0.765,avatar care travels as a help story,household allows warmer greeting
+146,Marketroof,0.79,0.21232,0.926872,0.6545,avatar care travels as a help story,household allows warmer greeting
+147,Quietledger,0.79,0.21808,0.925672,0.6785,avatar care travels as a help story,household allows warmer greeting
+148,Orchardring,0.714,0.31376,0.869896,0.6715,avatar care travels as a help story,household allows warmer greeting
+149,Rainloft,0.79,0.21664,0.925,0.6725,avatar care travels as a help story,household allows warmer greeting
+150,Hearthnest,0.77,0.23164,0.898936,0.638,avatar care travels as a help story,household allows warmer greeting
+151,Routehall,0.648,0.376248,0.901552,0.7692,avatar care travels as a help story,household allows warmer greeting
+152,Marketroof,0.81,0.201467,0.960336,0.65828,avatar care travels as a help story,household allows warmer greeting
+153,Quietledger,0.81,0.207458,0.959088,0.68324,avatar care travels as a help story,household allows warmer greeting
+154,Orchardring,0.734,0.302878,0.903312,0.67516,avatar care travels as a help story,household allows warmer greeting
+155,Rainloft,0.81,0.20596,0.958384,0.677,avatar care travels as a help story,household allows warmer greeting
+156,Hearthnest,0.79,0.220917,0.93232,0.64232,avatar care travels as a help story,household allows warmer greeting
+157,Marketroof,0.83,0.190614,0.993848,0.66206,avatar care travels as a help story,household allows warmer greeting
+158,Quietledger,0.83,0.196835,0.992504,0.68798,avatar care travels as a help story,household allows warmer greeting
+159,Orchardring,0.754,0.291997,0.936824,0.67882,avatar care travels as a help story,household allows warmer greeting
+160,Rainloft,0.83,0.19528,0.991768,0.6815,avatar care travels as a help story,household allows warmer greeting
+161,Hearthnest,0.81,0.210194,0.965848,0.64664,avatar care travels as a help story,household allows warmer greeting
+162,Routehall,0.658,0.365496,0.934936,0.7734,avatar care travels as a help story,household allows warmer greeting
+163,Quietledger,0.85,0.186213,1.0,0.69272,avatar care travels as a help story,household allows warmer greeting
+164,Orchardring,0.774,0.281115,0.970288,0.68248,avatar care travels as a help story,household allows warmer greeting
+165,Rainloft,0.85,0.1846,1.0,0.686,avatar care travels as a help story,household allows warmer greeting
+166,Hearthnest,0.83,0.19947,0.999264,0.65096,avatar care travels as a help story,household allows warmer greeting
+167,Routehall,0.668,0.354744,0.9684,0.7776,avatar care travels as a help story,household allows warmer greeting
+168,Marketroof,0.85,0.179762,1.0,0.66584,avatar care travels as a help story,household allows warmer greeting
+169,Orchardring,0.794,0.270234,1.0,0.68614,avatar care travels as a help story,household allows warmer greeting
+170,Rainloft,0.87,0.17392,1.0,0.6905,avatar care travels as a help story,household allows warmer greeting
+171,Hearthnest,0.85,0.188747,1.0,0.65528,avatar care travels as a help story,household allows warmer greeting
+172,Routehall,0.688,0.343992,1.0,0.7818,avatar care travels as a help story,household allows warmer greeting
+173,Marketroof,0.87,0.168909,1.0,0.66962,avatar care travels as a help story,household allows warmer greeting
+174,Quietledger,0.87,0.17559,1.0,0.69746,avatar care travels as a help story,household allows warmer greeting
+175,Rainloft,0.89,0.16324,1.0,0.695,avatar care travels as a help story,household allows warmer greeting
+176,Hearthnest,0.87,0.178024,1.0,0.6596,avatar care travels as a help story,household allows warmer greeting
+177,Routehall,0.708,0.33324,1.0,0.786,avatar care travels as a help story,household allows warmer greeting
+178,Marketroof,0.89,0.158056,1.0,0.6734,avatar care travels as a help story,household allows warmer greeting
+179,Quietledger,0.89,0.164968,1.0,0.7022,avatar care travels as a help story,household allows warmer greeting
+180,Orchardring,0.814,0.259352,1.0,0.6898,avatar care travels as a help story,household allows warmer greeting
+181,Routehall,0.708,0.338568,1.0,0.7902,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+182,Marketroof,0.872,0.198283,1.0,0.68718,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+183,Quietledger,0.872,0.205426,1.0,0.74694,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+184,Orchardring,0.834,0.24847,1.0,0.69346,avatar care travels as a help story,household allows warmer greeting
+185,Rainloft,0.89,0.16864,1.0,0.6995,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+186,Hearthnest,0.852,0.218381,1.0,0.67392,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+187,Marketroof,0.892,0.18743,1.0,0.69096,avatar care travels as a help story,household allows warmer greeting
+188,Quietledger,0.872,0.210883,1.0,0.75168,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+189,Orchardring,0.816,0.288669,1.0,0.70712,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+190,Rainloft,0.872,0.20904,1.0,0.744,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+191,Hearthnest,0.872,0.207658,1.0,0.67824,avatar care travels as a help story,household allows warmer greeting
+192,Routehall,0.708,0.343896,1.0,0.7944,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+193,Quietledger,0.854,0.251341,1.0,0.79642,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+194,Orchardring,0.836,0.277787,1.0,0.71078,avatar care travels as a help story,household allows warmer greeting
+195,Rainloft,0.872,0.21444,1.0,0.7485,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+196,Hearthnest,0.854,0.248014,1.0,0.69256,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+197,Routehall,0.68,0.384224,1.0,0.8386,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+198,Marketroof,0.912,0.176578,1.0,0.69474,avatar care travels as a help story,household allows warmer greeting
+199,Orchardring,0.818,0.317986,1.0,0.72444,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+200,Rainloft,0.854,0.25484,1.0,0.793,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+201,Hearthnest,0.874,0.237291,1.0,0.69688,avatar care travels as a help story,household allows warmer greeting
+202,Routehall,0.67,0.389552,1.0,0.8428,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+203,Marketroof,0.894,0.216805,1.0,0.70852,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+204,Quietledger,0.836,0.291798,1.0,0.84116,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+205,Rainloft,0.854,0.26024,1.0,0.7975,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+206,Hearthnest,0.856,0.277648,1.0,0.7112,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+207,Routehall,0.642,0.42988,1.0,0.887,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+208,Marketroof,0.914,0.205952,1.0,0.7123,avatar care travels as a help story,household allows warmer greeting
+209,Quietledger,0.836,0.297256,1.0,0.8459,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+210,Orchardring,0.79,0.358184,1.0,0.7381,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+211,Routehall,0.652,0.419128,1.0,0.8912,avatar care travels as a help story,household allows warmer greeting
+212,Marketroof,0.914,0.211179,1.0,0.71608,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+213,Quietledger,0.818,0.337714,1.0,0.86064,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+214,Orchardring,0.762,0.398382,1.0,0.78176,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+215,Rainloft,0.874,0.24956,1.0,0.802,avatar care travels as a help story,household allows warmer greeting
+216,Hearthnest,0.856,0.283005,1.0,0.71552,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+217,Marketroof,0.934,0.200326,1.0,0.71986,avatar care travels as a help story,household allows warmer greeting
+218,Quietledger,0.838,0.327091,1.0,0.86538,avatar care travels as a help story,household allows warmer greeting
+219,Orchardring,0.772,0.387501,1.0,0.78542,avatar care travels as a help story,household allows warmer greeting
+220,Rainloft,0.894,0.23888,1.0,0.8065,avatar care travels as a help story,household allows warmer greeting
+221,Hearthnest,0.876,0.272282,1.0,0.71984,avatar care travels as a help story,household allows warmer greeting
+222,Routehall,0.662,0.408376,1.0,0.8954,avatar care travels as a help story,household allows warmer greeting
+223,Quietledger,0.858,0.316469,1.0,0.87012,avatar care travels as a help story,household allows warmer greeting
+224,Orchardring,0.782,0.376619,1.0,0.78908,avatar care travels as a help story,household allows warmer greeting
+225,Rainloft,0.914,0.2282,1.0,0.811,avatar care travels as a help story,household allows warmer greeting
+226,Hearthnest,0.896,0.261558,1.0,0.72416,avatar care travels as a help story,household allows warmer greeting
+227,Routehall,0.672,0.397624,1.0,0.8996,avatar care travels as a help story,household allows warmer greeting
+228,Marketroof,0.954,0.189474,1.0,0.72364,avatar care travels as a help story,household allows warmer greeting
+229,Orchardring,0.792,0.365738,1.0,0.79274,avatar care travels as a help story,household allows warmer greeting
+230,Rainloft,0.934,0.21752,1.0,0.8155,avatar care travels as a help story,household allows warmer greeting
+231,Hearthnest,0.916,0.250835,1.0,0.72848,avatar care travels as a help story,household allows warmer greeting
+232,Routehall,0.682,0.386872,1.0,0.9038,avatar care travels as a help story,household allows warmer greeting
+233,Marketroof,0.974,0.178621,1.0,0.72742,avatar care travels as a help story,household allows warmer greeting
+234,Quietledger,0.878,0.305846,1.0,0.87486,avatar care travels as a help story,household allows warmer greeting
+235,Rainloft,0.954,0.20684,1.0,0.82,avatar care travels as a help story,household allows warmer greeting
+236,Hearthnest,0.936,0.240112,1.0,0.7328,avatar care travels as a help story,household allows warmer greeting
+237,Routehall,0.692,0.37612,1.0,0.908,avatar care travels as a help story,household allows warmer greeting
+238,Marketroof,0.994,0.167768,1.0,0.7312,avatar care travels as a help story,household allows warmer greeting
+239,Quietledger,0.898,0.295224,1.0,0.8796,avatar care travels as a help story,household allows warmer greeting
+240,Orchardring,0.802,0.354856,1.0,0.7964,avatar care travels as a help story,household allows warmer greeting
+241,Routehall,0.702,0.365368,1.0,0.9122,avatar care travels as a help story,household allows warmer greeting
+242,Marketroof,1.0,0.156915,1.0,0.73498,avatar care travels as a help story,household allows warmer greeting
+243,Quietledger,0.918,0.284602,1.0,0.88434,avatar care travels as a help story,household allows warmer greeting
+244,Orchardring,0.822,0.343974,1.0,0.80006,avatar care travels as a help story,household allows warmer greeting
+245,Rainloft,0.974,0.19616,1.0,0.8245,avatar care travels as a help story,household allows warmer greeting
+246,Hearthnest,0.956,0.229389,1.0,0.73712,avatar care travels as a help story,household allows warmer greeting
+247,Routehall,0.712,0.354616,1.0,0.9164,avatar care travels as a help story,household allows warmer greeting
+248,Marketroof,1.0,0.146062,1.0,0.73876,avatar care travels as a help story,household allows warmer greeting
+249,Quietledger,0.938,0.273979,1.0,0.88908,avatar care travels as a help story,household allows warmer greeting
+250,Orchardring,0.842,0.333093,1.0,0.80372,avatar care travels as a help story,household allows warmer greeting
+251,Rainloft,0.994,0.18548,1.0,0.829,avatar care travels as a help story,household allows warmer greeting
+252,Hearthnest,0.976,0.218666,1.0,0.74144,avatar care travels as a help story,household allows warmer greeting
+253,Quietledger,0.92,0.314437,1.0,0.90382,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+254,Orchardring,0.814,0.373291,1.0,0.84738,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+255,Rainloft,1.0,0.1748,1.0,0.8335,avatar care travels as a help story,household allows warmer greeting
+256,Hearthnest,0.976,0.224022,1.0,0.74576,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+257,Routehall,0.684,0.394944,1.0,0.9306,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+258,Marketroof,0.982,0.18629,1.0,0.78254,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+259,Orchardring,0.804,0.37849,1.0,0.85104,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+260,Rainloft,0.982,0.2152,1.0,0.848,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+261,Hearthnest,0.958,0.264379,1.0,0.79008,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+262,Routehall,0.694,0.384192,1.0,0.9348,avatar care travels as a help story,household allows warmer greeting
+263,Marketroof,0.982,0.191517,1.0,0.78632,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+264,Quietledger,0.892,0.354894,1.0,0.91856,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+265,Rainloft,1.0,0.20452,1.0,0.8525,avatar care travels as a help story,household allows warmer greeting
+266,Hearthnest,0.958,0.269736,1.0,0.7944,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+267,Routehall,0.666,0.42452,1.0,0.949,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+268,Marketroof,0.964,0.231744,1.0,0.8301,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+269,Quietledger,0.912,0.344272,1.0,0.9233,avatar care travels as a help story,household allows warmer greeting
+270,Orchardring,0.794,0.383688,1.0,0.8547,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+271,Routehall,0.638,0.464848,1.0,0.9932,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+272,Marketroof,0.984,0.220891,1.0,0.83388,avatar care travels as a help story,household allows warmer greeting
+273,Quietledger,0.912,0.34973,1.0,0.92804,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+274,Orchardring,0.766,0.423886,1.0,0.86836,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+275,Rainloft,0.982,0.24492,1.0,0.897,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+276,Hearthnest,0.978,0.259013,1.0,0.79872,avatar care travels as a help story,household allows warmer greeting
+277,Routehall,0.61,0.505176,1.0,1.0,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+278,Marketroof,0.966,0.261118,1.0,0.87766,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+279,Quietledger,0.932,0.339107,1.0,0.93278,avatar care travels as a help story,household allows warmer greeting
+280,Orchardring,0.756,0.429085,1.0,0.87202,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+281,Rainloft,0.964,0.28532,1.0,0.9115,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+282,Hearthnest,0.96,0.29937,1.0,0.84304,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+283,Marketroof,0.966,0.266346,1.0,0.88144,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+284,Quietledger,0.904,0.379565,1.0,0.94752,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+285,Orchardring,0.728,0.469283,1.0,0.91568,avatar pressure travels as a caution story,household asks for boundary proof before cooperation
+286,Rainloft,0.984,0.27464,1.0,0.916,avatar care travels as a help story,household allows warmer greeting
+287,Hearthnest,0.96,0.304726,1.0,0.84736,ordinary contact travels as neutral familiarity,household keeps ordinary distance
+288,Routehall,0.582,0.545504,1.0,1.0,avatar pressure travels as a caution story,household asks for boundary proof before cooperation

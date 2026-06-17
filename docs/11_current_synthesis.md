@@ -865,3 +865,6 @@ Report 243 turns embodied affect into long-horizon continuity. It generates 672 
 
 
 Report 244 adds multi-week learned adaptation. It generates 168 adaptation episodes across six weeks, 168 routine policy updates, 168 proto-language drift frames, 168 sleep/boundary respect frames, 168 relationship learning frames, 168 avatar-entry consequence frames, 168 replay adaptation frames, and 168 browser-world v4 ticks. The run passes with readiness 0.954412 and weakest-channel score 0.824143. The weakest channel is social spread continuity, correctly marking that local token drift is present but population-level cultural diffusion is the next pressure point.
+
+
+Report 245 moves from local adaptation to population-level cultural diffusion. It generates 288 household network frames, 288 cultural diffusion events, 288 learned ritual frames, 288 reputation propagation frames, 288 welfare guardrail frames, 288 replay cultural frames, and 288 browser-world v5 ticks. The run passes with readiness 0.984229 and weakest-channel score 0.883560. Social spread continuity improves from Report 244's 0.824143 to 0.883560, while welfare guardrail preservation reaches 1.000000.

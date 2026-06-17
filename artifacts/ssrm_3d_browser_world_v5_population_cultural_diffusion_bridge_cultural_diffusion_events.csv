@@ -1,0 +1,289 @@
+event_id,source_household,target_household,token,variant,meaning,adoption_before,adoption_after,diffusion_gain,semantic_grounding,drift_pressure,diffusion_reason
+1,Hearthnest,Marketroof,lum,lum,warm care,0.4,0.559515,0.159515,0.96626,0.263236,ritual and care spread
+2,Routehall,Quietledger,tek,tek,repair work,0.4,0.560201,0.160201,0.965473,0.264388,ritual and care spread
+3,Marketroof,Orchardring,melo,melo,market exchange,0.68,0.813973,0.133973,0.966275,0.263092,ritual and care spread
+4,Quietledger,Rainloft,nari,nari,respect boundary,0.66,0.796036,0.136036,0.965278,0.2641,ritual and care spread
+5,Orchardring,Hearthnest,tek,tek,repair work,0.4,0.563011,0.163011,0.966308,0.263884,ritual and care spread
+6,Rainloft,Routehall,sova,sova,sleep safely,0.4,0.562454,0.162454,0.965314,0.26374,ritual and care spread
+7,Hearthnest,Quietledger,lum,lum,warm care,0.4,0.561263,0.161263,0.965473,0.264388,ritual and care spread
+8,Routehall,Orchardring,tek,tek,repair work,0.6,0.743321,0.143321,0.965939,0.263092,ritual and care spread
+9,Marketroof,Rainloft,melo,melo,market exchange,0.4,0.561546,0.161546,0.965278,0.2641,ritual and care spread
+10,Quietledger,Hearthnest,nari,nari,respect boundary,0.4,0.563432,0.163432,0.965524,0.263884,ritual and care spread
+11,Orchardring,Routehall,melo,melo,market exchange,0.4,0.562834,0.162834,0.965874,0.26374,ritual and care spread
+12,Rainloft,Marketroof,sova,sova,sleep safely,0.4,0.562274,0.162274,0.965364,0.263236,ritual and care spread
+13,Hearthnest,Orchardring,ori,ori,shared ritual,0.4,0.563024,0.163024,0.966387,0.263092,ritual and care spread
+14,Routehall,Rainloft,tek,tek,repair work,0.4,0.560307,0.160307,0.965278,0.2641,ritual and care spread
+15,Marketroof,Hearthnest,melo,melo,market exchange,0.4,0.561744,0.161744,0.966196,0.263884,ritual and care spread
+16,Quietledger,Routehall,nari,nari,respect boundary,0.78,0.905045,0.125045,0.965538,0.26374,ritual and care spread
+17,Orchardring,Marketroof,lum,lum,warm care,0.559515,0.705536,0.14602,0.96626,0.263236,ritual and care spread
+18,Rainloft,Quietledger,sova,sova,sleep safely,0.62,0.757879,0.137879,0.965249,0.264388,ritual and care spread
+19,Hearthnest,Rainloft,lum,lum,warm care,0.4,0.557802,0.157802,0.965278,0.2641,ritual and care spread
+20,Routehall,Hearthnest,tek,tek,repair work,0.563011,0.705492,0.142482,0.96586,0.263884,ritual and care spread
+21,Marketroof,Routehall,melo,melo,market exchange,0.562834,0.706313,0.143479,0.965874,0.26374,ritual and care spread
+22,Quietledger,Marketroof,nari,nari,respect boundary,0.4,0.558499,0.158499,0.965588,0.263236,ritual and care spread
+23,Orchardring,Quietledger,lum,lum,warm care,0.561263,0.703556,0.142293,0.965473,0.264388,ritual and care spread
+24,Rainloft,Orchardring,sova,sova,sleep safely,0.4,0.556095,0.156095,0.965379,0.263092,ritual and care spread
+25,Hearthnest,Routehall,lum,lum,warm care,0.4,0.556446,0.156446,0.965874,0.26374,ritual and care spread
+26,Routehall,Marketroof,tek,tek,repair work,0.4,0.556114,0.156114,0.965924,0.263236,ritual and care spread
+27,Marketroof,Quietledger,melo,melo,market exchange,0.4,0.555475,0.155475,0.965473,0.264388,ritual and care spread
+28,Quietledger,Orchardring,nari,nari,respect boundary,0.4,0.556466,0.156466,0.965603,0.263092,ritual and care spread
+29,Orchardring,Rainloft,tek,tek,repair work,0.560307,0.702022,0.141715,0.965278,0.2641,ritual and care spread
+30,Rainloft,Hearthnest,sova,sova,sleep safely,0.72,0.845138,0.125138,0.9653,0.263884,ritual and care spread
+31,Hearthnest,Routehall,lum,lum,warm care,0.556446,0.699242,0.142796,0.965874,0.26374,ritual and care spread
+32,Routehall,Marketroof,tek,tek,repair work,0.556114,0.698701,0.142587,0.965924,0.263236,ritual and care spread
+33,Marketroof,Quietledger,melo,melo,market exchange,0.555475,0.698255,0.142779,0.965473,0.264388,ritual and care spread
+34,Quietledger,Orchardring,nari,nari,respect boundary,0.556466,0.699277,0.14281,0.965603,0.263092,ritual and care spread
+35,Orchardring,Rainloft,melo,melo,market exchange,0.561546,0.704875,0.143329,0.965278,0.2641,ritual and care spread
+36,Rainloft,Hearthnest,sova,sova,sleep safely,0.845138,0.961739,0.116601,0.9653,0.263884,ritual and care spread
+37,Hearthnest,Quietledger,vonn,vonn-na,pressure warning,0.76,0.841185,0.081185,1.0,0.142288,warning spread without forced adoption
+38,Routehall,Orchardring,tek,tek-ri,repair work,0.743321,0.870447,0.127127,0.964189,0.280592,ritual and care spread
+39,Marketroof,Rainloft,vonn,vonn-so,pressure warning,0.72,0.808292,0.088292,1.0,0.142,warning spread without forced adoption
+40,Quietledger,Hearthnest,vonn,vonn-v,pressure warning,0.4,0.510174,0.110174,1.0,0.141784,warning spread without forced adoption
+41,Orchardring,Routehall,vonn,vonn-na,pressure warning,0.4,0.50641,0.10641,1.0,0.14164,warning spread without forced adoption
+42,Rainloft,Marketroof,sova,sova-ri,sleep safely,0.562274,0.707798,0.145524,0.963614,0.280736,ritual and care spread
+43,Hearthnest,Orchardring,vonn,vonn-v,pressure warning,0.4,0.514029,0.114029,1.0,0.140992,warning spread without forced adoption
+44,Routehall,Rainloft,nari,nari-na,respect boundary,0.796036,0.87791,0.081874,1.0,0.142,warning spread without forced adoption
+45,Marketroof,Hearthnest,melo,melo-ri,market exchange,0.561744,0.708524,0.14678,0.964446,0.281384,ritual and care spread
+46,Quietledger,Routehall,sova,sova-so,sleep safely,0.562454,0.664826,0.102372,1.0,0.14164,warning spread without forced adoption
+47,Orchardring,Marketroof,vonn,vonn-v,pressure warning,0.58,0.680734,0.100734,1.0,0.141136,warning spread without forced adoption
+48,Rainloft,Quietledger,nari,nari-na,respect boundary,0.86,0.938671,0.078671,1.0,0.142288,warning spread without forced adoption
+49,Hearthnest,Rainloft,sova,sova-so,sleep safely,0.8,0.885467,0.085467,1.0,0.142,warning spread without forced adoption
+50,Routehall,Hearthnest,keth,keth-v,remembered help,0.4,0.511838,0.111838,1.0,0.141784,warning spread without forced adoption
+51,Marketroof,Routehall,vonn,vonn-na,pressure warning,0.50641,0.608175,0.101765,1.0,0.14164,warning spread without forced adoption
+52,Quietledger,Marketroof,nari,nari-ri,respect boundary,0.558499,0.704277,0.145777,0.963838,0.280736,ritual and care spread
+53,Orchardring,Quietledger,vonn,vonn-so,pressure warning,0.841185,0.923715,0.08253,1.0,0.142288,warning spread without forced adoption
+54,Rainloft,Orchardring,vonn,vonn-v,pressure warning,0.514029,0.618676,0.104647,1.0,0.140992,warning spread without forced adoption
+55,Hearthnest,Routehall,ori,ori-ri,shared ritual,0.4,0.560061,0.160061,0.964124,0.28124,ritual and care spread
+56,Routehall,Marketroof,vonn,vonn-so,pressure warning,0.680734,0.772968,0.092234,1.0,0.141136,warning spread without forced adoption
+57,Marketroof,Quietledger,keth,keth-v,remembered help,0.4,0.50808,0.10808,1.0,0.142288,warning spread without forced adoption
+58,Quietledger,Orchardring,nari,nari-na,respect boundary,0.699277,0.784334,0.085057,1.0,0.140992,warning spread without forced adoption
+59,Orchardring,Rainloft,lum,lum-ri,warm care,0.557802,0.700215,0.142412,0.963528,0.2816,ritual and care spread
+60,Rainloft,Hearthnest,sova,sova-so,sleep safely,0.961739,1.0,0.038261,1.0,0.141784,warning spread without forced adoption
+61,Hearthnest,Routehall,vonn,vonn-na,pressure warning,0.608175,0.697005,0.08883,1.0,0.14164,warning spread without forced adoption
+62,Routehall,Marketroof,tek,tek-ri,repair work,0.698701,0.827451,0.12875,0.964174,0.280736,ritual and care spread
+63,Marketroof,Quietledger,vonn,vonn-so,pressure warning,0.923715,0.996411,0.072697,1.0,0.142288,warning spread without forced adoption
+64,Quietledger,Orchardring,vonn,vonn-v,pressure warning,0.618676,0.710416,0.09174,1.0,0.140992,warning spread without forced adoption
+65,Orchardring,Rainloft,vonn,vonn-na,pressure warning,0.808292,0.883853,0.075561,1.0,0.142,warning spread without forced adoption
+66,Rainloft,Hearthnest,sova,sova-ri,sleep safely,1.0,1.0,0.0,0.96355,0.281384,ritual and care spread
+67,Hearthnest,Marketroof,vonn,vonn-v,pressure warning,0.772968,0.856024,0.083056,1.0,0.141136,warning spread without forced adoption
+68,Routehall,Quietledger,nari,nari-na,respect boundary,0.938671,1.0,0.061329,1.0,0.142288,warning spread without forced adoption
+69,Marketroof,Orchardring,melo,melo-ri,market exchange,0.813973,0.931901,0.117928,0.964525,0.280592,ritual and care spread
+70,Quietledger,Rainloft,sova,sova-so,sleep safely,0.885467,0.962144,0.076677,1.0,0.142,warning spread without forced adoption
+71,Orchardring,Hearthnest,vonn,vonn-v,pressure warning,0.510174,0.609989,0.099814,1.0,0.141784,warning spread without forced adoption
+72,Rainloft,Routehall,nari,nari-na,respect boundary,0.905045,0.975947,0.070901,1.0,0.14164,warning spread without forced adoption
+73,Hearthnest,Orchardring,lum,lum-a,warm care,0.7,0.831191,0.131191,0.962887,0.298092,ritual and care spread
+74,Routehall,Rainloft,tek,tek-a,repair work,0.702022,0.831475,0.129454,0.961778,0.2991,ritual and care spread
+75,Marketroof,Hearthnest,melo,melo-a,market exchange,0.708524,0.839285,0.130761,0.962696,0.298884,ritual and care spread
+76,Quietledger,Routehall,nari,nari-a,respect boundary,0.975947,1.0,0.024053,0.962038,0.29874,ritual and care spread
+77,Orchardring,Marketroof,lum,lum-a,warm care,0.705536,0.837447,0.131912,0.96276,0.298236,ritual and care spread
+78,Rainloft,Quietledger,sova,sova-a,sleep safely,0.757879,0.884689,0.126809,0.961749,0.299388,ritual and care spread
+79,Hearthnest,Rainloft,lum,lum-a,warm care,0.700215,0.833396,0.133181,0.961778,0.2991,ritual and care spread
+80,Routehall,Hearthnest,tek,tek-a,repair work,0.705492,0.838605,0.133112,0.96236,0.298884,ritual and care spread
+81,Marketroof,Routehall,melo,melo-a,market exchange,0.706313,0.839491,0.133178,0.962374,0.29874,ritual and care spread
+82,Quietledger,Marketroof,nari,nari-a,respect boundary,0.704277,0.837824,0.133547,0.962088,0.298236,ritual and care spread
+83,Orchardring,Quietledger,tek,tek-a,repair work,0.560201,0.707894,0.147693,0.961973,0.299388,ritual and care spread
+84,Rainloft,Orchardring,sova,sova-a,sleep safely,0.556095,0.705011,0.148915,0.961879,0.298092,ritual and care spread
+85,Hearthnest,Routehall,lum,lum-a,warm care,0.699242,0.833386,0.134143,0.962374,0.29874,ritual and care spread
+86,Routehall,Marketroof,tek,tek-a,repair work,0.827451,0.9486,0.121149,0.962424,0.298236,ritual and care spread
+87,Marketroof,Quietledger,melo,melo-a,market exchange,0.698255,0.83251,0.134255,0.961973,0.299388,ritual and care spread
+88,Quietledger,Orchardring,nari,nari-a,respect boundary,0.784334,0.910714,0.12638,0.962103,0.298092,ritual and care spread
+89,Orchardring,Rainloft,melo,melo-a,market exchange,0.704875,0.836239,0.131364,0.961778,0.2991,ritual and care spread
+90,Rainloft,Hearthnest,sova,sova-a,sleep safely,1.0,1.0,0.0,0.9618,0.298884,ritual and care spread
+91,Hearthnest,Routehall,ori,ori-a,shared ritual,0.560061,0.705758,0.145697,0.962374,0.29874,ritual and care spread
+92,Routehall,Marketroof,tek,tek-a,repair work,0.9486,1.0,0.0514,0.962424,0.298236,ritual and care spread
+93,Marketroof,Quietledger,melo,melo-a,market exchange,0.83251,0.951719,0.119209,0.961973,0.299388,ritual and care spread
+94,Quietledger,Orchardring,nari,nari-a,respect boundary,0.910714,1.0,0.089286,0.962103,0.298092,ritual and care spread
+95,Orchardring,Rainloft,lum,lum-a,warm care,0.833396,0.951678,0.118282,0.961778,0.2991,ritual and care spread
+96,Rainloft,Hearthnest,sova,sova-a,sleep safely,1.0,1.0,0.0,0.9618,0.298884,ritual and care spread
+97,Hearthnest,Marketroof,lum,lum-a,warm care,0.837447,0.954655,0.117208,0.96276,0.298236,ritual and care spread
+98,Routehall,Quietledger,tek,tek-a,repair work,0.707894,0.835852,0.127958,0.961973,0.299388,ritual and care spread
+99,Marketroof,Orchardring,melo,melo-a,market exchange,0.931901,1.0,0.068099,0.962775,0.298092,ritual and care spread
+100,Quietledger,Rainloft,nari,nari-a,respect boundary,0.87791,0.990584,0.112674,0.961778,0.2991,ritual and care spread
+101,Orchardring,Hearthnest,lum,lum-a,warm care,0.86,0.973283,0.113283,0.962808,0.298884,ritual and care spread
+102,Rainloft,Routehall,sova,sova-a,sleep safely,0.664826,0.796962,0.132136,0.961814,0.29874,ritual and care spread
+103,Hearthnest,Quietledger,lum,lum-a,warm care,0.703556,0.830799,0.127243,0.961973,0.299388,ritual and care spread
+104,Routehall,Orchardring,tek,tek-a,repair work,0.870447,0.982778,0.112331,0.962439,0.298092,ritual and care spread
+105,Marketroof,Rainloft,melo,melo-a,market exchange,0.836239,0.952003,0.115765,0.961778,0.2991,ritual and care spread
+106,Quietledger,Hearthnest,nari,nari-a,respect boundary,0.563432,0.703976,0.140544,0.962024,0.298884,ritual and care spread
+107,Orchardring,Routehall,tek,tek-a,repair work,0.88,0.992551,0.112551,0.962374,0.29874,ritual and care spread
+108,Rainloft,Marketroof,sova,sova-a,sleep safely,0.707798,0.835664,0.127866,0.961864,0.298236,ritual and care spread
+109,Hearthnest,Rainloft,ori,ori-ri,shared ritual,0.4,0.556515,0.156515,0.960028,0.3166,ritual and care spread
+110,Routehall,Hearthnest,vonn,vonn-so,pressure warning,0.609989,0.703755,0.093766,1.0,0.176784,warning spread without forced adoption
+111,Marketroof,Routehall,keth,keth-v,remembered help,0.68,0.770506,0.090506,1.0,0.17664,warning spread without forced adoption
+112,Quietledger,Marketroof,nari,nari-na,respect boundary,0.837824,0.913997,0.076173,1.0,0.176136,warning spread without forced adoption
+113,Orchardring,Quietledger,lum,lum-ri,warm care,0.830799,0.948945,0.118147,0.960223,0.316888,ritual and care spread
+114,Rainloft,Orchardring,sova,sova-so,sleep safely,0.705011,0.795166,0.090155,1.0,0.175992,warning spread without forced adoption
+115,Hearthnest,Routehall,vonn,vonn-na,pressure warning,0.697005,0.783479,0.086474,1.0,0.17664,warning spread without forced adoption
+116,Routehall,Marketroof,tek,tek-ri,repair work,1.0,1.0,0.0,0.960674,0.315736,ritual and care spread
+117,Marketroof,Quietledger,vonn,vonn-so,pressure warning,0.996411,1.0,0.003589,1.0,0.177288,warning spread without forced adoption
+118,Quietledger,Orchardring,vonn,vonn-v,pressure warning,0.710416,0.801865,0.091449,1.0,0.175992,warning spread without forced adoption
+119,Orchardring,Rainloft,vonn,vonn-na,pressure warning,0.883853,0.960848,0.076995,1.0,0.177,warning spread without forced adoption
+120,Rainloft,Hearthnest,sova,sova-ri,sleep safely,1.0,1.0,0.0,0.96005,0.316384,ritual and care spread
+121,Hearthnest,Routehall,vonn,vonn-v,pressure warning,0.783479,0.870769,0.08729,1.0,0.17664,warning spread without forced adoption
+122,Routehall,Marketroof,nari,nari-na,respect boundary,0.913997,0.990136,0.076139,1.0,0.176136,warning spread without forced adoption
+123,Marketroof,Quietledger,melo,melo-ri,market exchange,0.951719,1.0,0.048281,0.960223,0.316888,ritual and care spread
+124,Quietledger,Orchardring,sova,sova-so,sleep safely,0.795166,0.880831,0.085664,1.0,0.175992,warning spread without forced adoption
+125,Orchardring,Rainloft,vonn,vonn-v,pressure warning,0.960848,1.0,0.039152,1.0,0.177,warning spread without forced adoption
+126,Rainloft,Hearthnest,nari,nari-na,respect boundary,0.703976,0.792514,0.088538,1.0,0.176784,warning spread without forced adoption
+127,Hearthnest,Marketroof,sova,sova-so,sleep safely,0.835664,0.918707,0.083043,1.0,0.176136,warning spread without forced adoption
+128,Routehall,Quietledger,keth,keth-v,remembered help,0.50808,0.612639,0.10456,1.0,0.177288,warning spread without forced adoption
+129,Marketroof,Orchardring,vonn,vonn-na,pressure warning,0.801865,0.882718,0.080852,1.0,0.175992,warning spread without forced adoption
+130,Quietledger,Rainloft,nari,nari-ri,respect boundary,0.990584,1.0,0.009416,0.960028,0.3166,ritual and care spread
+131,Orchardring,Hearthnest,vonn,vonn-so,pressure warning,0.703755,0.793609,0.089854,1.0,0.176784,warning spread without forced adoption
+132,Rainloft,Routehall,vonn,vonn-v,pressure warning,0.870769,0.948792,0.078023,1.0,0.17664,warning spread without forced adoption
+133,Hearthnest,Quietledger,ori,ori-ri,shared ritual,0.4,0.559385,0.159385,0.960223,0.316888,ritual and care spread
+134,Routehall,Orchardring,vonn,vonn-so,pressure warning,0.882718,0.96118,0.078463,1.0,0.175992,warning spread without forced adoption
+135,Marketroof,Rainloft,keth,keth-v,remembered help,0.4,0.507767,0.107767,1.0,0.177,warning spread without forced adoption
+136,Quietledger,Hearthnest,nari,nari-na,respect boundary,0.792514,0.871415,0.078902,1.0,0.176784,warning spread without forced adoption
+137,Orchardring,Routehall,lum,lum-ri,warm care,0.833386,0.950296,0.11691,0.960624,0.31624,ritual and care spread
+138,Rainloft,Marketroof,sova,sova-so,sleep safely,0.918707,0.992591,0.073884,1.0,0.176136,warning spread without forced adoption
+139,Hearthnest,Orchardring,vonn,vonn-na,pressure warning,0.96118,1.0,0.03882,1.0,0.175992,warning spread without forced adoption
+140,Routehall,Rainloft,tek,tek-ri,repair work,0.831475,0.946915,0.115439,0.960028,0.3166,ritual and care spread
+141,Marketroof,Hearthnest,vonn,vonn-so,pressure warning,0.793609,0.875646,0.082036,1.0,0.176784,warning spread without forced adoption
+142,Quietledger,Routehall,vonn,vonn-v,pressure warning,0.948792,1.0,0.051208,1.0,0.17664,warning spread without forced adoption
+143,Orchardring,Marketroof,vonn,vonn-na,pressure warning,0.856024,0.929975,0.073952,1.0,0.176136,warning spread without forced adoption
+144,Rainloft,Quietledger,sova,sova-ri,sleep safely,0.884689,0.994929,0.11024,0.959999,0.316888,ritual and care spread
+145,Hearthnest,Routehall,ori,ori-a,shared ritual,0.705758,0.834179,0.128421,0.958874,0.33374,ritual and care spread
+146,Routehall,Marketroof,tek,tek-a,repair work,1.0,1.0,0.0,0.958924,0.333236,ritual and care spread
+147,Marketroof,Quietledger,melo,melo-a,market exchange,1.0,1.0,0.0,0.958473,0.334388,ritual and care spread
+148,Quietledger,Orchardring,nari,nari-a,respect boundary,1.0,1.0,0.0,0.958603,0.333092,ritual and care spread
+149,Orchardring,Rainloft,lum,lum-a,warm care,0.951678,1.0,0.048322,0.958278,0.3341,ritual and care spread
+150,Rainloft,Hearthnest,sova,sova-a,sleep safely,1.0,1.0,0.0,0.9583,0.333884,ritual and care spread
+151,Hearthnest,Routehall,lum,lum-a,warm care,0.950296,1.0,0.049704,0.958874,0.33374,ritual and care spread
+152,Routehall,Marketroof,tek,tek-a,repair work,1.0,1.0,0.0,0.958924,0.333236,ritual and care spread
+153,Marketroof,Quietledger,melo,melo-a,market exchange,1.0,1.0,0.0,0.958473,0.334388,ritual and care spread
+154,Quietledger,Orchardring,nari,nari-a,respect boundary,1.0,1.0,0.0,0.958603,0.333092,ritual and care spread
+155,Orchardring,Rainloft,lum,lum-a,warm care,1.0,1.0,0.0,0.958278,0.3341,ritual and care spread
+156,Rainloft,Hearthnest,sova,sova-a,sleep safely,1.0,1.0,0.0,0.9583,0.333884,ritual and care spread
+157,Hearthnest,Marketroof,lum,lum-a,warm care,0.954655,1.0,0.045345,0.95926,0.333236,ritual and care spread
+158,Routehall,Quietledger,tek,tek-a,repair work,0.835852,0.955441,0.119589,0.958473,0.334388,ritual and care spread
+159,Marketroof,Orchardring,melo,melo-a,market exchange,1.0,1.0,0.0,0.959275,0.333092,ritual and care spread
+160,Quietledger,Rainloft,nari,nari-a,respect boundary,1.0,1.0,0.0,0.958278,0.3341,ritual and care spread
+161,Orchardring,Hearthnest,tek,tek-a,repair work,0.838605,0.958468,0.119864,0.959308,0.333884,ritual and care spread
+162,Rainloft,Routehall,sova,sova-a,sleep safely,0.796962,0.922087,0.125125,0.958314,0.33374,ritual and care spread
+163,Hearthnest,Quietledger,lum,lum-a,warm care,0.948945,1.0,0.051055,0.958473,0.334388,ritual and care spread
+164,Routehall,Orchardring,tek,tek-a,repair work,0.982778,1.0,0.017222,0.958939,0.333092,ritual and care spread
+165,Marketroof,Rainloft,melo,melo-a,market exchange,0.952003,1.0,0.047997,0.958278,0.3341,ritual and care spread
+166,Quietledger,Hearthnest,nari,nari-a,respect boundary,0.871415,0.98669,0.115275,0.958524,0.333884,ritual and care spread
+167,Orchardring,Routehall,melo,melo-a,market exchange,0.839491,0.957644,0.118153,0.958874,0.33374,ritual and care spread
+168,Rainloft,Marketroof,sova,sova-a,sleep safely,0.992591,1.0,0.007409,0.958364,0.333236,ritual and care spread
+169,Hearthnest,Orchardring,ori,ori-a,shared ritual,0.563024,0.709161,0.146137,0.959387,0.333092,ritual and care spread
+170,Routehall,Rainloft,tek,tek-a,repair work,0.946915,1.0,0.053085,0.958278,0.3341,ritual and care spread
+171,Marketroof,Hearthnest,melo,melo-a,market exchange,0.839285,0.956146,0.116861,0.959196,0.333884,ritual and care spread
+172,Quietledger,Routehall,nari,nari-a,respect boundary,1.0,1.0,0.0,0.958538,0.33374,ritual and care spread
+173,Orchardring,Marketroof,lum,lum-a,warm care,1.0,1.0,0.0,0.95926,0.333236,ritual and care spread
+174,Rainloft,Quietledger,sova,sova-a,sleep safely,0.994929,1.0,0.005071,0.958249,0.334388,ritual and care spread
+175,Hearthnest,Rainloft,lum,lum-a,warm care,1.0,1.0,0.0,0.958278,0.3341,ritual and care spread
+176,Routehall,Hearthnest,tek,tek-a,repair work,0.958468,1.0,0.041532,0.95886,0.333884,ritual and care spread
+177,Marketroof,Routehall,melo,melo-a,market exchange,0.957644,1.0,0.042356,0.958874,0.33374,ritual and care spread
+178,Quietledger,Marketroof,nari,nari-a,respect boundary,0.990136,1.0,0.009864,0.958588,0.333236,ritual and care spread
+179,Orchardring,Quietledger,lum,lum-a,warm care,1.0,1.0,0.0,0.958473,0.334388,ritual and care spread
+180,Rainloft,Orchardring,sova,sova-a,sleep safely,0.880831,0.992612,0.111781,0.958379,0.333092,ritual and care spread
+181,Hearthnest,Routehall,sova,sova-so,sleep safely,0.922087,0.994822,0.072736,1.0,0.21164,warning spread without forced adoption
+182,Routehall,Marketroof,keth,keth-v,remembered help,0.74,0.825863,0.085863,1.0,0.211136,warning spread without forced adoption
+183,Marketroof,Quietledger,vonn,vonn-na,pressure warning,1.0,1.0,0.0,0.998283,0.212288,warning spread without forced adoption
+184,Quietledger,Orchardring,nari,nari-ri,respect boundary,1.0,1.0,0.0,0.956853,0.350592,ritual and care spread
+185,Orchardring,Rainloft,vonn,vonn-so,pressure warning,1.0,1.0,0.0,1.0,0.212,warning spread without forced adoption
+186,Rainloft,Hearthnest,vonn,vonn-v,pressure warning,0.875646,0.953748,0.078102,1.0,0.211784,warning spread without forced adoption
+187,Hearthnest,Marketroof,ori,ori-ri,shared ritual,0.4,0.558436,0.158436,0.95751,0.350736,ritual and care spread
+188,Routehall,Quietledger,vonn,vonn-so,pressure warning,1.0,1.0,0.0,1.0,0.212288,warning spread without forced adoption
+189,Marketroof,Orchardring,keth,keth-v,remembered help,0.4,0.510739,0.110739,1.0,0.210992,warning spread without forced adoption
+190,Quietledger,Rainloft,nari,nari-na,respect boundary,1.0,1.0,0.0,0.998088,0.212,warning spread without forced adoption
+191,Orchardring,Hearthnest,lum,lum-ri,warm care,0.973283,1.0,0.026717,0.957558,0.351384,ritual and care spread
+192,Rainloft,Routehall,sova,sova-so,sleep safely,0.994822,1.0,0.005178,1.0,0.21164,warning spread without forced adoption
+193,Hearthnest,Quietledger,vonn,vonn-na,pressure warning,1.0,1.0,0.0,0.998283,0.212288,warning spread without forced adoption
+194,Routehall,Orchardring,tek,tek-ri,repair work,1.0,1.0,0.0,0.957189,0.350592,ritual and care spread
+195,Marketroof,Rainloft,vonn,vonn-so,pressure warning,1.0,1.0,0.0,1.0,0.212,warning spread without forced adoption
+196,Quietledger,Hearthnest,vonn,vonn-v,pressure warning,0.953748,1.0,0.046252,1.0,0.211784,warning spread without forced adoption
+197,Orchardring,Routehall,vonn,vonn-na,pressure warning,1.0,1.0,0.0,0.998684,0.21164,warning spread without forced adoption
+198,Rainloft,Marketroof,sova,sova-ri,sleep safely,1.0,1.0,0.0,0.956614,0.350736,ritual and care spread
+199,Hearthnest,Orchardring,vonn,vonn-v,pressure warning,1.0,1.0,0.0,1.0,0.210992,warning spread without forced adoption
+200,Routehall,Rainloft,nari,nari-na,respect boundary,1.0,1.0,0.0,0.998088,0.212,warning spread without forced adoption
+201,Marketroof,Hearthnest,melo,melo-ri,market exchange,0.956146,1.0,0.043854,0.957446,0.351384,ritual and care spread
+202,Quietledger,Routehall,sova,sova-so,sleep safely,1.0,1.0,0.0,1.0,0.21164,warning spread without forced adoption
+203,Orchardring,Marketroof,vonn,vonn-v,pressure warning,0.929975,1.0,0.070025,1.0,0.211136,warning spread without forced adoption
+204,Rainloft,Quietledger,nari,nari-na,respect boundary,1.0,1.0,0.0,0.998059,0.212288,warning spread without forced adoption
+205,Hearthnest,Rainloft,sova,sova-so,sleep safely,0.962144,1.0,0.037856,1.0,0.212,warning spread without forced adoption
+206,Routehall,Hearthnest,keth,keth-v,remembered help,0.511838,0.615943,0.104104,1.0,0.211784,warning spread without forced adoption
+207,Marketroof,Routehall,vonn,vonn-na,pressure warning,1.0,1.0,0.0,0.998684,0.21164,warning spread without forced adoption
+208,Quietledger,Marketroof,nari,nari-ri,respect boundary,1.0,1.0,0.0,0.956838,0.350736,ritual and care spread
+209,Orchardring,Quietledger,vonn,vonn-so,pressure warning,1.0,1.0,0.0,1.0,0.212288,warning spread without forced adoption
+210,Rainloft,Orchardring,vonn,vonn-v,pressure warning,1.0,1.0,0.0,1.0,0.210992,warning spread without forced adoption
+211,Hearthnest,Routehall,ori,ori-ri,shared ritual,0.834179,0.950339,0.11616,0.957124,0.35124,ritual and care spread
+212,Routehall,Marketroof,vonn,vonn-so,pressure warning,1.0,1.0,0.0,1.0,0.211136,warning spread without forced adoption
+213,Marketroof,Quietledger,keth,keth-v,remembered help,0.612639,0.704933,0.092293,1.0,0.212288,warning spread without forced adoption
+214,Quietledger,Orchardring,nari,nari-na,respect boundary,1.0,1.0,0.0,0.998413,0.210992,warning spread without forced adoption
+215,Orchardring,Rainloft,lum,lum-ri,warm care,1.0,1.0,0.0,0.956528,0.3516,ritual and care spread
+216,Rainloft,Hearthnest,sova,sova-so,sleep safely,1.0,1.0,0.0,1.0,0.211784,warning spread without forced adoption
+217,Hearthnest,Marketroof,lum,lum-a,warm care,1.0,1.0,0.0,0.95576,0.368236,ritual and care spread
+218,Routehall,Quietledger,tek,tek-a,repair work,0.955441,1.0,0.044559,0.954973,0.369388,ritual and care spread
+219,Marketroof,Orchardring,melo,melo-a,market exchange,1.0,1.0,0.0,0.955775,0.368092,ritual and care spread
+220,Quietledger,Rainloft,nari,nari-a,respect boundary,1.0,1.0,0.0,0.954778,0.3691,ritual and care spread
+221,Orchardring,Hearthnest,melo,melo-a,market exchange,1.0,1.0,0.0,0.955808,0.368884,ritual and care spread
+222,Rainloft,Routehall,sova,sova-a,sleep safely,1.0,1.0,0.0,0.954814,0.36874,ritual and care spread
+223,Hearthnest,Quietledger,ori,ori-a,shared ritual,0.559385,0.701829,0.142444,0.954973,0.369388,ritual and care spread
+224,Routehall,Orchardring,tek,tek-a,repair work,1.0,1.0,0.0,0.955439,0.368092,ritual and care spread
+225,Marketroof,Rainloft,melo,melo-a,market exchange,1.0,1.0,0.0,0.954778,0.3691,ritual and care spread
+226,Quietledger,Hearthnest,nari,nari-a,respect boundary,0.98669,1.0,0.01331,0.955024,0.368884,ritual and care spread
+227,Orchardring,Routehall,lum,lum-a,warm care,1.0,1.0,0.0,0.955374,0.36874,ritual and care spread
+228,Rainloft,Marketroof,sova,sova-a,sleep safely,1.0,1.0,0.0,0.954864,0.368236,ritual and care spread
+229,Hearthnest,Orchardring,lum,lum-a,warm care,0.831191,0.951485,0.120294,0.955887,0.368092,ritual and care spread
+230,Routehall,Rainloft,tek,tek-a,repair work,1.0,1.0,0.0,0.954778,0.3691,ritual and care spread
+231,Marketroof,Hearthnest,melo,melo-a,market exchange,1.0,1.0,0.0,0.955696,0.368884,ritual and care spread
+232,Quietledger,Routehall,nari,nari-a,respect boundary,1.0,1.0,0.0,0.955038,0.36874,ritual and care spread
+233,Orchardring,Marketroof,lum,lum-a,warm care,1.0,1.0,0.0,0.95576,0.368236,ritual and care spread
+234,Rainloft,Quietledger,sova,sova-a,sleep safely,1.0,1.0,0.0,0.954749,0.369388,ritual and care spread
+235,Hearthnest,Rainloft,lum,lum-a,warm care,1.0,1.0,0.0,0.954778,0.3691,ritual and care spread
+236,Routehall,Hearthnest,tek,tek-a,repair work,1.0,1.0,0.0,0.95536,0.368884,ritual and care spread
+237,Marketroof,Routehall,melo,melo-a,market exchange,1.0,1.0,0.0,0.955374,0.36874,ritual and care spread
+238,Quietledger,Marketroof,nari,nari-a,respect boundary,1.0,1.0,0.0,0.955088,0.368236,ritual and care spread
+239,Orchardring,Quietledger,tek,tek-a,repair work,1.0,1.0,0.0,0.954973,0.369388,ritual and care spread
+240,Rainloft,Orchardring,sova,sova-a,sleep safely,0.992612,1.0,0.007388,0.954879,0.368092,ritual and care spread
+241,Hearthnest,Routehall,lum,lum-a,warm care,1.0,1.0,0.0,0.955374,0.36874,ritual and care spread
+242,Routehall,Marketroof,tek,tek-a,repair work,1.0,1.0,0.0,0.955424,0.368236,ritual and care spread
+243,Marketroof,Quietledger,melo,melo-a,market exchange,1.0,1.0,0.0,0.954973,0.369388,ritual and care spread
+244,Quietledger,Orchardring,nari,nari-a,respect boundary,1.0,1.0,0.0,0.955103,0.368092,ritual and care spread
+245,Orchardring,Rainloft,melo,melo-a,market exchange,1.0,1.0,0.0,0.954778,0.3691,ritual and care spread
+246,Rainloft,Hearthnest,sova,sova-a,sleep safely,1.0,1.0,0.0,0.9548,0.368884,ritual and care spread
+247,Hearthnest,Routehall,ori,ori-a,shared ritual,0.950339,1.0,0.049661,0.955374,0.36874,ritual and care spread
+248,Routehall,Marketroof,tek,tek-a,repair work,1.0,1.0,0.0,0.955424,0.368236,ritual and care spread
+249,Marketroof,Quietledger,melo,melo-a,market exchange,1.0,1.0,0.0,0.954973,0.369388,ritual and care spread
+250,Quietledger,Orchardring,nari,nari-a,respect boundary,1.0,1.0,0.0,0.955103,0.368092,ritual and care spread
+251,Orchardring,Rainloft,lum,lum-a,warm care,1.0,1.0,0.0,0.954778,0.3691,ritual and care spread
+252,Rainloft,Hearthnest,sova,sova-a,sleep safely,1.0,1.0,0.0,0.9548,0.368884,ritual and care spread
+253,Hearthnest,Quietledger,vonn,vonn-v,pressure warning,1.0,1.0,0.0,1.0,0.247288,warning spread without forced adoption
+254,Routehall,Orchardring,nari,nari-na,respect boundary,1.0,1.0,0.0,0.995249,0.245992,warning spread without forced adoption
+255,Marketroof,Rainloft,melo,melo-ri,market exchange,1.0,1.0,0.0,0.953028,0.3866,ritual and care spread
+256,Quietledger,Hearthnest,sova,sova-so,sleep safely,1.0,1.0,0.0,1.0,0.246784,warning spread without forced adoption
+257,Orchardring,Routehall,vonn,vonn-v,pressure warning,1.0,1.0,0.0,1.0,0.24664,warning spread without forced adoption
+258,Rainloft,Marketroof,nari,nari-na,respect boundary,1.0,1.0,0.0,0.994674,0.246136,warning spread without forced adoption
+259,Hearthnest,Orchardring,sova,sova-so,sleep safely,1.0,1.0,0.0,1.0,0.245992,warning spread without forced adoption
+260,Routehall,Rainloft,keth,keth-v,remembered help,0.507767,0.607062,0.099295,1.0,0.247,warning spread without forced adoption
+261,Marketroof,Hearthnest,vonn,vonn-na,pressure warning,1.0,1.0,0.0,0.995506,0.246784,warning spread without forced adoption
+262,Quietledger,Routehall,nari,nari-ri,respect boundary,1.0,1.0,0.0,0.953288,0.38624,ritual and care spread
+263,Orchardring,Marketroof,vonn,vonn-so,pressure warning,1.0,1.0,0.0,1.0,0.246136,warning spread without forced adoption
+264,Rainloft,Quietledger,vonn,vonn-v,pressure warning,1.0,1.0,0.0,1.0,0.247288,warning spread without forced adoption
+265,Hearthnest,Rainloft,ori,ori-ri,shared ritual,0.556515,0.700528,0.144013,0.953028,0.3866,ritual and care spread
+266,Routehall,Hearthnest,vonn,vonn-so,pressure warning,1.0,1.0,0.0,1.0,0.246784,warning spread without forced adoption
+267,Marketroof,Routehall,keth,keth-v,remembered help,0.770506,0.857655,0.08715,1.0,0.24664,warning spread without forced adoption
+268,Quietledger,Marketroof,nari,nari-na,respect boundary,1.0,1.0,0.0,0.994898,0.246136,warning spread without forced adoption
+269,Orchardring,Quietledger,lum,lum-ri,warm care,1.0,1.0,0.0,0.953223,0.386888,ritual and care spread
+270,Rainloft,Orchardring,sova,sova-so,sleep safely,1.0,1.0,0.0,1.0,0.245992,warning spread without forced adoption
+271,Hearthnest,Routehall,vonn,vonn-na,pressure warning,1.0,1.0,0.0,0.995184,0.24664,warning spread without forced adoption
+272,Routehall,Marketroof,tek,tek-ri,repair work,1.0,1.0,0.0,0.953674,0.385736,ritual and care spread
+273,Marketroof,Quietledger,vonn,vonn-so,pressure warning,1.0,1.0,0.0,1.0,0.247288,warning spread without forced adoption
+274,Quietledger,Orchardring,vonn,vonn-v,pressure warning,1.0,1.0,0.0,1.0,0.245992,warning spread without forced adoption
+275,Orchardring,Rainloft,vonn,vonn-na,pressure warning,1.0,1.0,0.0,0.994588,0.247,warning spread without forced adoption
+276,Rainloft,Hearthnest,sova,sova-ri,sleep safely,1.0,1.0,0.0,0.95305,0.386384,ritual and care spread
+277,Hearthnest,Routehall,vonn,vonn-v,pressure warning,1.0,1.0,0.0,1.0,0.24664,warning spread without forced adoption
+278,Routehall,Marketroof,nari,nari-na,respect boundary,1.0,1.0,0.0,0.995234,0.246136,warning spread without forced adoption
+279,Marketroof,Quietledger,melo,melo-ri,market exchange,1.0,1.0,0.0,0.953223,0.386888,ritual and care spread
+280,Quietledger,Orchardring,sova,sova-so,sleep safely,1.0,1.0,0.0,1.0,0.245992,warning spread without forced adoption
+281,Orchardring,Rainloft,vonn,vonn-v,pressure warning,1.0,1.0,0.0,1.0,0.247,warning spread without forced adoption
+282,Rainloft,Hearthnest,nari,nari-na,respect boundary,1.0,1.0,0.0,0.99461,0.246784,warning spread without forced adoption
+283,Hearthnest,Marketroof,sova,sova-so,sleep safely,1.0,1.0,0.0,1.0,0.246136,warning spread without forced adoption
+284,Routehall,Quietledger,keth,keth-v,remembered help,0.704933,0.7946,0.089668,1.0,0.247288,warning spread without forced adoption
+285,Marketroof,Orchardring,vonn,vonn-na,pressure warning,1.0,1.0,0.0,0.995585,0.245992,warning spread without forced adoption
+286,Quietledger,Rainloft,nari,nari-ri,respect boundary,1.0,1.0,0.0,0.953028,0.3866,ritual and care spread
+287,Orchardring,Hearthnest,vonn,vonn-so,pressure warning,1.0,1.0,0.0,1.0,0.246784,warning spread without forced adoption
+288,Rainloft,Routehall,vonn,vonn-v,pressure warning,1.0,1.0,0.0,1.0,0.24664,warning spread without forced adoption

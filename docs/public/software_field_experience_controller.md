@@ -296,3 +296,7 @@ Report 243 carries embodied affect across 21 deterministic days. It generates 67
 ## Report 244 Browser World v4 Learned Routine Proto-Language Adaptation Bridge Note
 
 Report 244 adds six-week learned adaptation to the browser-world line. It generates 168 adaptation episodes, 168 routine policy update frames, 168 proto-language drift frames, 168 boundary/sleep respect frames, 168 relationship learning frames, 168 avatar-entry consequence frames, 168 replay adaptation frames, and 168 browser-world v4 ticks. The run passes with readiness 0.954412 and weakest-channel score 0.824143. The weakest channel is social spread continuity, correctly identifying population-level cultural diffusion as the next pressure point.
+
+## Report 245 Browser World v5 Population Cultural Diffusion Bridge Note
+
+Report 245 adds population-level cultural diffusion across six households. It generates 288 household network frames, 288 cultural diffusion events, 288 learned ritual frames, 288 reputation propagation frames, 288 welfare guardrail frames, 288 replay cultural frames, and 288 browser-world v5 ticks. The run passes with readiness 0.984229 and weakest-channel score 0.883560. Social spread continuity improves from 0.824143 to 0.883560, while welfare guardrail preservation reaches 1.000000.

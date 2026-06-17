@@ -1,0 +1,2 @@
+report,module,verdict,readiness,weakest_channel_score,next_gate
+227,ssrm_3d_playable_local_multiday_free_move_avatar_life_object_affordance_agent_request_reputation_bridge,pass,0.929458,0.604167,"playable local 3D continuous life loop with real-time free movement, agent-initiated interruptions, deeper affordance lattice, and multi-day autonomous background ticks"

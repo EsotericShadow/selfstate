@@ -1,0 +1,13 @@
+frame_id,day,step,avatar_x,avatar_y,place,movement_input,collision_state,nearest_agent,nearest_object,sensory_packet,body_cost,frequency_hz,flower_node
+move-01,1,1,48,72,south path,W,clear,roka,blue stone,"cool damp grass, reed smell, low rain ticks",0.02,181.399,3
+move-02,1,2,35,65,reed lane edge,A,boundary_slow,roka,loose reeds,"wet reed smell, soft mud drag, child breath nearby",0.04,188.653,4
+move-03,1,3,50,54,bridge arc,D,clear,ariq,chalk cord,"chalk dust, hollow stone scrape, warmer air",0.05,196.173,5
+move-04,1,4,34,43,shade pause,S,routine_hold,fayen,water cups,"herb shade, cup clink, slow breathing",0.03,204.176,6
+move-05,2,1,68,49,knot board,D,clear,noro,public knot board,"dry cord rasp, smoke thread, board tap",0.02,211.139,7
+move-06,2,2,43,25,archive threshold,W,threshold_stop,nian,archive flap,"still air, cloth flap, low voice",0.02,219.323,8
+move-07,2,3,28,62,rain slow lane,A,boundary_slow,roka,tied bundle,"tight reed cord, quick breath, colder rain",0.04,226.172,9
+move-08,3,1,58,45,stone lift edge,D,clear,ariq,flat stone,"shoulder strain, bell tone, dust",0.07,234.159,10
+move-09,3,2,31,36,care bell,W,clear,fayen,care bell,"low bell, warm hands, herb smoke",0.02,241.753,11
+move-10,3,3,72,58,evening ledger,D,circle_edge,noro,debt knot,"ash smell, knot board tap, cooling dusk",0.02,249.162,12
+move-11,4,1,23,60,reed lane return,A,clear,roka,loose reeds,"dry reed snap, blue stone warmth, quiet voice",0.03,256.887,1
+move-12,4,2,51,52,bridge path,D,clear,ariq,stone arc,"firm chalk line, less mud, cart creak",0.05,263.836,2

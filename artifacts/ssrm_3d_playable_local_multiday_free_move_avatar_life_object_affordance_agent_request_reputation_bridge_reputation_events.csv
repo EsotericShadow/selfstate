@@ -1,0 +1,7 @@
+event_id,day,source_ref,reputation_axis,before,after,public_label,access_effect,ui_marker,persists_after_restore,frequency_hz,flower_node
+rep-careful-helper,1,req-fayen-cups,carefulness,0.56,0.68,careful helper,Fayen offers care tasks sooner,care +0.12,True,424.5,12
+rep-work-accountable,1,task-day1-chalk,work_trust,0.52,0.66,work-accountable,Ariq permits cord holding,work +0.14,True,431.0,1
+rep-privacy-learner,2,req-nian-grammar,privacy,0.48,0.7,privacy learner,Nian allows public digest reading,privacy +0.22,True,437.5,2
+rep-debt-visible,2,task-day2-shade,debt,0.42,0.58,debt visible,Noro requires debt read before more timber,debt +0.16,True,444.0,3
+rep-boundary-tested,3,req-roka-distance,boundary_respect,0.44,0.61,boundary-tested,Roka allows watching from blue stone,boundary +0.17,True,450.5,4
+rep-reed-partial,4,task-day4-reed,learning_access,0.38,0.56,loose-reed trusted,"loose reeds open, tied bundle closed",reed +0.18,True,457.0,5

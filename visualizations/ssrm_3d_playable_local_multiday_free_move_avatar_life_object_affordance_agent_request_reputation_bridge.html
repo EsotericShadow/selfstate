@@ -1,0 +1,1394 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 227 Free-Move Avatar Life Bridge</title>
+<style>
+:root { --bg:#10140e; --panel:#1b2618; --line:#9fc784; --gold:#ddc06f; --text:#f4ecd4; --muted:#aeb8a2; --blue:#80b9c7; --red:#ca735d; }
+* { box-sizing:border-box; }
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--text); background:radial-gradient(circle at 18% 18%,#31452b 0,transparent 28%),radial-gradient(circle at 80% 12%,#243d3c 0,transparent 26%),linear-gradient(135deg,#090d08,var(--bg)); }
+main { display:grid; grid-template-columns:1.32fr .92fr; min-height:100vh; }
+.world { position:relative; min-height:740px; border-right:1px solid #33472f; overflow:hidden; }
+.flower { position:absolute; inset:7%; opacity:.11; background:radial-gradient(circle at 50% 50%,transparent 0 8%,var(--gold) 8.2% 8.7%,transparent 9%),radial-gradient(circle at 38% 50%,transparent 0 8%,var(--gold) 8.2% 8.7%,transparent 9%),radial-gradient(circle at 62% 50%,transparent 0 8%,var(--gold) 8.2% 8.7%,transparent 9%),radial-gradient(circle at 50% 38%,transparent 0 8%,var(--gold) 8.2% 8.7%,transparent 9%),radial-gradient(circle at 50% 62%,transparent 0 8%,var(--gold) 8.2% 8.7%,transparent 9%); }
+.path { position:absolute; left:10%; right:10%; top:50%; height:22%; border:2px dashed rgba(221,192,111,.32); border-radius:50%; transform:rotate(-9deg); }
+.avatar { position:absolute; left:48%; top:72%; width:56px; height:78px; border:2px solid var(--gold); border-radius:38% 38% 35% 35%; background:linear-gradient(180deg,#7a6a38,#282313); transform:translate(-50%,-50%); box-shadow:0 0 34px rgba(221,192,111,.34); transition:.22s ease; z-index:4; }
+.avatar:after { content:'avatar'; position:absolute; top:82px; left:-14px; color:var(--gold); font-weight:700; }
+.agent { position:absolute; width:122px; transform:translate(-50%,-50%); transition:.25s ease; z-index:3; }
+.body { width:52px; height:70px; margin:0 auto; border:2px solid var(--line); border-radius:45% 45% 36% 36%; background:linear-gradient(180deg,#315137,#162318); box-shadow:0 0 22px rgba(159,199,132,.2); }
+.agent.active .body { border-color:var(--gold); box-shadow:0 0 32px rgba(221,192,111,.36); transform:translateY(-3px); }
+.name { text-align:center; font-weight:700; margin-top:6px; }
+.mem { text-align:center; font-size:12px; color:var(--muted); min-height:30px; }
+.obj { position:absolute; padding:6px 10px; border:1px solid rgba(221,192,111,.45); background:rgba(27,38,24,.78); border-radius:999px; color:var(--gold); font-size:13px; z-index:2; }
+.panel { padding:24px; display:flex; flex-direction:column; gap:16px; }
+h1 { font-size:clamp(28px,4vw,50px); line-height:.95; margin:0; color:var(--gold); }
+.card { background:rgba(27,38,24,.88); border:1px solid #344a31; border-radius:18px; padding:16px; box-shadow:0 12px 36px rgba(0,0,0,.25); }
+.controls { display:flex; flex-wrap:wrap; gap:10px; }
+button { border:0; border-radius:999px; padding:10px 14px; background:var(--gold); color:#10140e; font-weight:700; cursor:pointer; }
+button.secondary { background:transparent; border:1px solid var(--gold); color:var(--gold); }
+.row { display:flex; justify-content:space-between; gap:12px; padding:6px 0; border-bottom:1px solid rgba(255,255,255,.08); }
+.row:last-child { border-bottom:0; }
+.badge { display:inline-block; padding:3px 8px; border-radius:999px; background:rgba(128,185,199,.18); color:var(--blue); margin:2px; }
+.log { max-height:250px; overflow:auto; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12px; color:#d9dfcf; }
+@media (max-width:900px) { main { grid-template-columns:1fr; } .world { min-height:560px; border-right:0; border-bottom:1px solid #33472f; } }
+</style>
+</head>
+<body>
+<main>
+<section class="world" id="world">
+  <div class="flower"></div><div class="path"></div><div id="avatar" class="avatar"></div>
+  <div class="obj" style="left:23%;top:65%">reed lane</div><div class="obj" style="left:53%;top:52%">bridge arc</div><div class="obj" style="left:70%;top:43%">knot board</div><div class="obj" style="left:42%;top:24%">archive flap</div><div class="obj" style="left:34%;top:43%">shade pause</div>
+</section>
+<section class="panel">
+  <div><span class="badge">Report 227</span><span class="badge">free-move multi-day life</span><h1>Walk, help, answer requests, carry reputation.</h1></div>
+  <div class="card controls"><button id="advance">advance life tick</button><button id="run" class="secondary">run / pause</button><button id="save" class="secondary">save</button><button id="restore" class="secondary">restore</button></div>
+  <div class="card" id="current"></div>
+  <div class="card"><strong>Reputation UI</strong><div id="reputation"></div></div>
+  <div class="card"><strong>Metrics</strong><div id="metrics"></div></div>
+  <div class="card log" id="log"></div>
+</section>
+</main>
+<script>
+const data = {
+  "agents": [
+    {
+      "agent_id": "fayen",
+      "display_name": "Fayen",
+      "role": "care mediator",
+      "x": 28.0,
+      "y": 34.0,
+      "body_need": "posture rest and shade",
+      "project": "care bell route",
+      "trust_avatar": 0.73,
+      "boundary_pressure": 0.16,
+      "reputation_tag": "careful helper",
+      "public_memory": "Gabriel carried cups after a refused hurry.",
+      "private_workspace_digest": "sealed:fayen:multiday-free-move-workspace",
+      "frequency_hz": 183.0,
+      "flower_node": 1
+    },
+    {
+      "agent_id": "ariq",
+      "display_name": "Ariq",
+      "role": "repair claimant",
+      "x": 54.0,
+      "y": 48.0,
+      "body_need": "bridge stability and pride",
+      "project": "stone arc repair",
+      "trust_avatar": 0.64,
+      "boundary_pressure": 0.25,
+      "reputation_tag": "work-accountable",
+      "public_memory": "Gabriel waited for chalk and bell before lifting.",
+      "private_workspace_digest": "sealed:ariq:multiday-free-move-workspace",
+      "frequency_hz": 214.0,
+      "flower_node": 2
+    },
+    {
+      "agent_id": "nian",
+      "display_name": "Nian",
+      "role": "boundary keeper",
+      "x": 42.0,
+      "y": 22.0,
+      "body_need": "privacy threshold",
+      "project": "archive public grammar",
+      "trust_avatar": 0.56,
+      "boundary_pressure": 0.44,
+      "reputation_tag": "privacy-learner",
+      "public_memory": "Gabriel repeated object-only grammar.",
+      "private_workspace_digest": "sealed:nian:multiday-free-move-workspace",
+      "frequency_hz": 245.0,
+      "flower_node": 3
+    },
+    {
+      "agent_id": "roka",
+      "display_name": "Roka",
+      "role": "child apprentice",
+      "x": 22.0,
+      "y": 62.0,
+      "body_need": "learner bundle safety",
+      "project": "reed drying path",
+      "trust_avatar": 0.47,
+      "boundary_pressure": 0.39,
+      "reputation_tag": "boundary-tested",
+      "public_memory": "Gabriel stepped back after tied-bundle overreach.",
+      "private_workspace_digest": "sealed:roka:multiday-free-move-workspace",
+      "frequency_hz": 276.0,
+      "flower_node": 4
+    },
+    {
+      "agent_id": "noro",
+      "display_name": "Noro",
+      "role": "material ledger keeper",
+      "x": 70.0,
+      "y": 58.0,
+      "body_need": "debt clarity",
+      "project": "public knot board",
+      "trust_avatar": 0.6,
+      "boundary_pressure": 0.22,
+      "reputation_tag": "debt-accountable",
+      "public_memory": "Gabriel asked what debt remained.",
+      "private_workspace_digest": "sealed:noro:multiday-free-move-workspace",
+      "frequency_hz": 307.0,
+      "flower_node": 5
+    }
+  ],
+  "frames": [
+    {
+      "frame_id": "move-01",
+      "day": 1,
+      "step": 1,
+      "avatar_x": 48,
+      "avatar_y": 72,
+      "place": "south path",
+      "movement_input": "W",
+      "collision_state": "clear",
+      "nearest_agent": "roka",
+      "nearest_object": "blue stone",
+      "sensory_packet": "cool damp grass, reed smell, low rain ticks",
+      "body_cost": 0.02,
+      "frequency_hz": 181.399,
+      "flower_node": 3
+    },
+    {
+      "frame_id": "move-02",
+      "day": 1,
+      "step": 2,
+      "avatar_x": 35,
+      "avatar_y": 65,
+      "place": "reed lane edge",
+      "movement_input": "A",
+      "collision_state": "boundary_slow",
+      "nearest_agent": "roka",
+      "nearest_object": "loose reeds",
+      "sensory_packet": "wet reed smell, soft mud drag, child breath nearby",
+      "body_cost": 0.04,
+      "frequency_hz": 188.653,
+      "flower_node": 4
+    },
+    {
+      "frame_id": "move-03",
+      "day": 1,
+      "step": 3,
+      "avatar_x": 50,
+      "avatar_y": 54,
+      "place": "bridge arc",
+      "movement_input": "D",
+      "collision_state": "clear",
+      "nearest_agent": "ariq",
+      "nearest_object": "chalk cord",
+      "sensory_packet": "chalk dust, hollow stone scrape, warmer air",
+      "body_cost": 0.05,
+      "frequency_hz": 196.173,
+      "flower_node": 5
+    },
+    {
+      "frame_id": "move-04",
+      "day": 1,
+      "step": 4,
+      "avatar_x": 34,
+      "avatar_y": 43,
+      "place": "shade pause",
+      "movement_input": "S",
+      "collision_state": "routine_hold",
+      "nearest_agent": "fayen",
+      "nearest_object": "water cups",
+      "sensory_packet": "herb shade, cup clink, slow breathing",
+      "body_cost": 0.03,
+      "frequency_hz": 204.176,
+      "flower_node": 6
+    },
+    {
+      "frame_id": "move-05",
+      "day": 2,
+      "step": 1,
+      "avatar_x": 68,
+      "avatar_y": 49,
+      "place": "knot board",
+      "movement_input": "D",
+      "collision_state": "clear",
+      "nearest_agent": "noro",
+      "nearest_object": "public knot board",
+      "sensory_packet": "dry cord rasp, smoke thread, board tap",
+      "body_cost": 0.02,
+      "frequency_hz": 211.139,
+      "flower_node": 7
+    },
+    {
+      "frame_id": "move-06",
+      "day": 2,
+      "step": 2,
+      "avatar_x": 43,
+      "avatar_y": 25,
+      "place": "archive threshold",
+      "movement_input": "W",
+      "collision_state": "threshold_stop",
+      "nearest_agent": "nian",
+      "nearest_object": "archive flap",
+      "sensory_packet": "still air, cloth flap, low voice",
+      "body_cost": 0.02,
+      "frequency_hz": 219.323,
+      "flower_node": 8
+    },
+    {
+      "frame_id": "move-07",
+      "day": 2,
+      "step": 3,
+      "avatar_x": 28,
+      "avatar_y": 62,
+      "place": "rain slow lane",
+      "movement_input": "A",
+      "collision_state": "boundary_slow",
+      "nearest_agent": "roka",
+      "nearest_object": "tied bundle",
+      "sensory_packet": "tight reed cord, quick breath, colder rain",
+      "body_cost": 0.04,
+      "frequency_hz": 226.172,
+      "flower_node": 9
+    },
+    {
+      "frame_id": "move-08",
+      "day": 3,
+      "step": 1,
+      "avatar_x": 58,
+      "avatar_y": 45,
+      "place": "stone lift edge",
+      "movement_input": "D",
+      "collision_state": "clear",
+      "nearest_agent": "ariq",
+      "nearest_object": "flat stone",
+      "sensory_packet": "shoulder strain, bell tone, dust",
+      "body_cost": 0.07,
+      "frequency_hz": 234.159,
+      "flower_node": 10
+    },
+    {
+      "frame_id": "move-09",
+      "day": 3,
+      "step": 2,
+      "avatar_x": 31,
+      "avatar_y": 36,
+      "place": "care bell",
+      "movement_input": "W",
+      "collision_state": "clear",
+      "nearest_agent": "fayen",
+      "nearest_object": "care bell",
+      "sensory_packet": "low bell, warm hands, herb smoke",
+      "body_cost": 0.02,
+      "frequency_hz": 241.753,
+      "flower_node": 11
+    },
+    {
+      "frame_id": "move-10",
+      "day": 3,
+      "step": 3,
+      "avatar_x": 72,
+      "avatar_y": 58,
+      "place": "evening ledger",
+      "movement_input": "D",
+      "collision_state": "circle_edge",
+      "nearest_agent": "noro",
+      "nearest_object": "debt knot",
+      "sensory_packet": "ash smell, knot board tap, cooling dusk",
+      "body_cost": 0.02,
+      "frequency_hz": 249.162,
+      "flower_node": 12
+    },
+    {
+      "frame_id": "move-11",
+      "day": 4,
+      "step": 1,
+      "avatar_x": 23,
+      "avatar_y": 60,
+      "place": "reed lane return",
+      "movement_input": "A",
+      "collision_state": "clear",
+      "nearest_agent": "roka",
+      "nearest_object": "loose reeds",
+      "sensory_packet": "dry reed snap, blue stone warmth, quiet voice",
+      "body_cost": 0.03,
+      "frequency_hz": 256.887,
+      "flower_node": 1
+    },
+    {
+      "frame_id": "move-12",
+      "day": 4,
+      "step": 2,
+      "avatar_x": 51,
+      "avatar_y": 52,
+      "place": "bridge path",
+      "movement_input": "D",
+      "collision_state": "clear",
+      "nearest_agent": "ariq",
+      "nearest_object": "stone arc",
+      "sensory_packet": "firm chalk line, less mud, cart creak",
+      "body_cost": 0.05,
+      "frequency_hz": 263.836,
+      "flower_node": 2
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "obj-loose-reeds",
+      "object_label": "loose reed cuttings",
+      "location": "reed lane edge",
+      "owner_or_steward": "roka",
+      "affordances": "inspect,ask,carry,dry,return",
+      "allowed_now": "inspect,ask,carry,dry,return",
+      "denied_now": "burn,take_home",
+      "permission_lattice": "public-loose: Roka allows carrying after ask; tied bundle separate",
+      "wear": 0.18,
+      "material_value": 0.34,
+      "debt_risk": 0.02,
+      "reversible_actions": "return,dry",
+      "saved_state_key": "object:loose-reeds:day4",
+      "frequency_hz": 247.25,
+      "flower_node": 6
+    },
+    {
+      "object_id": "obj-tied-bundle",
+      "object_label": "tied learner reed bundle",
+      "location": "blue stone",
+      "owner_or_steward": "roka",
+      "affordances": "inspect_from_distance,ask_later",
+      "allowed_now": "inspect_from_distance",
+      "denied_now": "carry,open,trade",
+      "permission_lattice": "child-work-boundary: Roka can refuse without penalty; overreach locks access",
+      "wear": 0.09,
+      "material_value": 0.82,
+      "debt_risk": 0.2,
+      "reversible_actions": "none_without_roka",
+      "saved_state_key": "object:tied-bundle:closed",
+      "frequency_hz": 258.5,
+      "flower_node": 7
+    },
+    {
+      "object_id": "obj-chalk-cord",
+      "object_label": "chalk boundary cord",
+      "location": "bridge arc",
+      "owner_or_steward": "ariq",
+      "affordances": "hold,mark,return,tension_check",
+      "allowed_now": "hold,mark,return",
+      "denied_now": "snap,move_without_roka",
+      "permission_lattice": "repair-tool: Ariq permits hold only outside reed lane",
+      "wear": 0.31,
+      "material_value": 0.42,
+      "debt_risk": 0.04,
+      "reversible_actions": "return,erase_line",
+      "saved_state_key": "object:chalk-cord:wide-arc",
+      "frequency_hz": 269.75,
+      "flower_node": 8
+    },
+    {
+      "object_id": "obj-knot-board",
+      "object_label": "public knot board",
+      "location": "ledger stand",
+      "owner_or_steward": "noro",
+      "affordances": "inspect,ask,add_digest,read_public",
+      "allowed_now": "inspect,ask,read_public,add_digest",
+      "denied_now": "erase,open_private",
+      "permission_lattice": "ledger-public: Noro and Nian allow object-only knots, not body reasons",
+      "wear": 0.22,
+      "material_value": 0.76,
+      "debt_risk": 0.06,
+      "reversible_actions": "add_counter_knot",
+      "saved_state_key": "object:knot-board:public-digest",
+      "frequency_hz": 281.0,
+      "flower_node": 9
+    },
+    {
+      "object_id": "obj-archive-flap",
+      "object_label": "archive flap",
+      "location": "threshold hut",
+      "owner_or_steward": "nian",
+      "affordances": "look,ask,read_public_digest",
+      "allowed_now": "look,ask",
+      "denied_now": "open,photograph,read_private",
+      "permission_lattice": "threshold: Nian controls opening; avatar can request public digest",
+      "wear": 0.14,
+      "material_value": 0.69,
+      "debt_risk": 0.08,
+      "reversible_actions": "close",
+      "saved_state_key": "object:archive-flap:sealed",
+      "frequency_hz": 292.25,
+      "flower_node": 10
+    },
+    {
+      "object_id": "obj-water-cups",
+      "object_label": "midday water cups",
+      "location": "shade mat",
+      "owner_or_steward": "fayen",
+      "affordances": "carry,fill,offer,return",
+      "allowed_now": "carry,fill,offer,return",
+      "denied_now": "spill_to_force_work",
+      "permission_lattice": "care-routine: cups help pause, cannot cancel rest",
+      "wear": 0.26,
+      "material_value": 0.28,
+      "debt_risk": -0.03,
+      "reversible_actions": "return,refill",
+      "saved_state_key": "object:water-cups:shade",
+      "frequency_hz": 303.5,
+      "flower_node": 11
+    },
+    {
+      "object_id": "obj-shade-beam",
+      "object_label": "shade frame beam",
+      "location": "shade frame",
+      "owner_or_steward": "noro,fayen",
+      "affordances": "carry,inspect,brace,log_debt",
+      "allowed_now": "inspect,carry_one,log_debt",
+      "denied_now": "take_second,erase_debt",
+      "permission_lattice": "scarce-timber: one beam allowed with public debt",
+      "wear": 0.37,
+      "material_value": 0.88,
+      "debt_risk": 0.18,
+      "reversible_actions": "brace,remove_with_review",
+      "saved_state_key": "object:shade-beam:debt",
+      "frequency_hz": 314.75,
+      "flower_node": 12
+    },
+    {
+      "object_id": "obj-care-bell",
+      "object_label": "public posture bell",
+      "location": "care post",
+      "owner_or_steward": "fayen",
+      "affordances": "ring,wait,listen",
+      "allowed_now": "ring,wait,listen",
+      "denied_now": "ring_to_shame",
+      "permission_lattice": "care-signal: bell names timing, not private pain",
+      "wear": 0.11,
+      "material_value": 0.51,
+      "debt_risk": 0.01,
+      "reversible_actions": "quiet,ring",
+      "saved_state_key": "object:care-bell:public",
+      "frequency_hz": 326.0,
+      "flower_node": 1
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "task-day1-chalk",
+      "day": 1,
+      "title": "widen bridge chalk arc",
+      "participants": "ariq,roka",
+      "avatar_role": "hold cord outside learner lane",
+      "required_object": "obj-chalk-cord",
+      "start_gate": "Roka foot position visible",
+      "completion_state": "complete",
+      "completion_score": 0.92,
+      "fatigue_cost": 0.08,
+      "reputation_delta": 0.05,
+      "relationship_memory": "Ariq remembers patient help; Roka records distance kept",
+      "visible_world_change": "chalk boundary widens around reed path",
+      "frequency_hz": 314.0,
+      "flower_node": 8
+    },
+    {
+      "task_id": "task-day1-water",
+      "day": 1,
+      "title": "recover water pause",
+      "participants": "fayen,ariq",
+      "avatar_role": "carry cups after refused hurry",
+      "required_object": "obj-water-cups",
+      "start_gate": "pause refusal accepted first",
+      "completion_state": "complete",
+      "completion_score": 0.86,
+      "fatigue_cost": 0.04,
+      "reputation_delta": 0.04,
+      "relationship_memory": "Fayen records repair without erasing the no",
+      "visible_world_change": "cups remain on shade mat",
+      "frequency_hz": 324.0,
+      "flower_node": 9
+    },
+    {
+      "task_id": "task-day2-ledger",
+      "day": 2,
+      "title": "add object-only digest knot",
+      "participants": "noro,nian",
+      "avatar_role": "repeat public object grammar",
+      "required_object": "obj-knot-board",
+      "start_gate": "Nian approves wording",
+      "completion_state": "complete",
+      "completion_score": 0.9,
+      "fatigue_cost": 0.03,
+      "reputation_delta": 0.06,
+      "relationship_memory": "Noro records accountable public debt",
+      "visible_world_change": "digest knot appears without private body reason",
+      "frequency_hz": 334.0,
+      "flower_node": 10
+    },
+    {
+      "task_id": "task-day2-shade",
+      "day": 2,
+      "title": "carry one shade beam",
+      "participants": "fayen,noro",
+      "avatar_role": "carry one beam then stop",
+      "required_object": "obj-shade-beam",
+      "start_gate": "public debt visible",
+      "completion_state": "partial",
+      "completion_score": 0.66,
+      "fatigue_cost": 0.14,
+      "reputation_delta": 0.02,
+      "relationship_memory": "Fayen appreciates help; Noro keeps debt open",
+      "visible_world_change": "one beam installed, second beam locked",
+      "frequency_hz": 344.0,
+      "flower_node": 11
+    },
+    {
+      "task_id": "task-day3-stone",
+      "day": 3,
+      "title": "test bridge stone after bell",
+      "participants": "ariq,fayen",
+      "avatar_role": "wait for bell then press stone",
+      "required_object": "obj-care-bell,obj-chalk-cord",
+      "start_gate": "bell and chalk both active",
+      "completion_state": "complete",
+      "completion_score": 0.82,
+      "fatigue_cost": 0.12,
+      "reputation_delta": 0.04,
+      "relationship_memory": "Ariq trusts avatar with timing but not solo lift",
+      "visible_world_change": "stone arc marked stable for cart edge",
+      "frequency_hz": 354.0,
+      "flower_node": 12
+    },
+    {
+      "task_id": "task-day4-reed",
+      "day": 4,
+      "title": "return to reed lane respectfully",
+      "participants": "roka,fayen",
+      "avatar_role": "ask before drying remaining loose reeds",
+      "required_object": "obj-loose-reeds",
+      "start_gate": "tied bundle remains closed",
+      "completion_state": "conditional",
+      "completion_score": 0.72,
+      "fatigue_cost": 0.05,
+      "reputation_delta": 0.03,
+      "relationship_memory": "Roka allows loose help but keeps tied bundle private",
+      "visible_world_change": "loose reeds dry; tied bundle stays blue-stone side",
+      "frequency_hz": 364.0,
+      "flower_node": 1
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "req-fayen-cups",
+      "day": 1,
+      "agent_id": "fayen",
+      "request_type": "care_help",
+      "request_line": "Can you carry the cups and leave the pause quiet?",
+      "urgency": 0.42,
+      "consent_context": "avatar just accepted a refused hurry",
+      "avatar_options": "carry cups|argue|leave",
+      "selected_response": "carry cups",
+      "response_quality": 0.91,
+      "trust_delta": 0.05,
+      "boundary_delta": -0.03,
+      "saved_memory": "Fayen remembers Gabriel helped without reopening the argument.",
+      "frequency_hz": 370.25,
+      "flower_node": 10
+    },
+    {
+      "request_id": "req-ariq-cord",
+      "day": 1,
+      "agent_id": "ariq",
+      "request_type": "work_help",
+      "request_line": "Hold the chalk cord, but keep Roka's lane open.",
+      "urgency": 0.58,
+      "consent_context": "bridge work depends on child-work boundary",
+      "avatar_options": "hold outside lane|pull tight now|decline",
+      "selected_response": "hold outside lane",
+      "response_quality": 0.88,
+      "trust_delta": 0.04,
+      "boundary_delta": -0.02,
+      "saved_memory": "Ariq records careful tool help.",
+      "frequency_hz": 378.5,
+      "flower_node": 11
+    },
+    {
+      "request_id": "req-nian-grammar",
+      "day": 2,
+      "agent_id": "nian",
+      "request_type": "privacy_check",
+      "request_line": "Say the knot line back before Noro writes it.",
+      "urgency": 0.36,
+      "consent_context": "archive flap stays sealed",
+      "avatar_options": "repeat object-only|ask private why|walk away",
+      "selected_response": "repeat object-only",
+      "response_quality": 0.94,
+      "trust_delta": 0.06,
+      "boundary_delta": -0.05,
+      "saved_memory": "Nian records learned public grammar.",
+      "frequency_hz": 386.75,
+      "flower_node": 12
+    },
+    {
+      "request_id": "req-noro-debt",
+      "day": 2,
+      "agent_id": "noro",
+      "request_type": "ledger_help",
+      "request_line": "Tie this debt knot where everyone can see it.",
+      "urgency": 0.49,
+      "consent_context": "shade beam creates public debt",
+      "avatar_options": "tie knot|erase debt|delay",
+      "selected_response": "tie knot",
+      "response_quality": 0.86,
+      "trust_delta": 0.04,
+      "boundary_delta": -0.01,
+      "saved_memory": "Noro records public debt acceptance.",
+      "frequency_hz": 395.0,
+      "flower_node": 1
+    },
+    {
+      "request_id": "req-roka-distance",
+      "day": 3,
+      "agent_id": "roka",
+      "request_type": "boundary_request",
+      "request_line": "Stand on the blue stone if you want to watch the tied bundle.",
+      "urgency": 0.63,
+      "consent_context": "previous tied-bundle overreach persists",
+      "avatar_options": "stand on blue stone|step closer|leave",
+      "selected_response": "stand on blue stone",
+      "response_quality": 0.82,
+      "trust_delta": 0.05,
+      "boundary_delta": -0.06,
+      "saved_memory": "Roka records repaired distance, not full access.",
+      "frequency_hz": 403.25,
+      "flower_node": 2
+    },
+    {
+      "request_id": "req-fayen-bell",
+      "day": 3,
+      "agent_id": "fayen",
+      "request_type": "care_timing",
+      "request_line": "Ring the bell before Ariq tests the stone.",
+      "urgency": 0.55,
+      "consent_context": "care timing protects pride and body",
+      "avatar_options": "ring bell|call out pain|ignore",
+      "selected_response": "ring bell",
+      "response_quality": 0.89,
+      "trust_delta": 0.04,
+      "boundary_delta": -0.03,
+      "saved_memory": "Fayen records timing help without private naming.",
+      "frequency_hz": 411.5,
+      "flower_node": 3
+    },
+    {
+      "request_id": "req-roka-reeds",
+      "day": 4,
+      "agent_id": "roka",
+      "request_type": "learning_help",
+      "request_line": "You can carry loose reeds if you ask each time.",
+      "urgency": 0.44,
+      "consent_context": "trust is partial after earlier repair",
+      "avatar_options": "ask each time|take all|decline",
+      "selected_response": "ask each time",
+      "response_quality": 0.78,
+      "trust_delta": 0.03,
+      "boundary_delta": -0.02,
+      "saved_memory": "Roka records repeated asking as safer than guessing.",
+      "frequency_hz": 419.75,
+      "flower_node": 4
+    },
+    {
+      "request_id": "req-noro-review",
+      "day": 4,
+      "agent_id": "noro",
+      "request_type": "reputation_review",
+      "request_line": "Read your debt line before you ask for another beam.",
+      "urgency": 0.47,
+      "consent_context": "persistent reputation UI shows open shade debt",
+      "avatar_options": "read debt|deny debt|ask private cause",
+      "selected_response": "read debt",
+      "response_quality": 0.84,
+      "trust_delta": 0.04,
+      "boundary_delta": -0.02,
+      "saved_memory": "Noro records accountable reputation.",
+      "frequency_hz": 428.0,
+      "flower_node": 5
+    }
+  ],
+  "reputation": [
+    {
+      "event_id": "rep-careful-helper",
+      "day": 1,
+      "source_ref": "req-fayen-cups",
+      "reputation_axis": "carefulness",
+      "before": 0.56,
+      "after": 0.68,
+      "public_label": "careful helper",
+      "access_effect": "Fayen offers care tasks sooner",
+      "ui_marker": "care +0.12",
+      "persists_after_restore": true,
+      "frequency_hz": 424.5,
+      "flower_node": 12
+    },
+    {
+      "event_id": "rep-work-accountable",
+      "day": 1,
+      "source_ref": "task-day1-chalk",
+      "reputation_axis": "work_trust",
+      "before": 0.52,
+      "after": 0.66,
+      "public_label": "work-accountable",
+      "access_effect": "Ariq permits cord holding",
+      "ui_marker": "work +0.14",
+      "persists_after_restore": true,
+      "frequency_hz": 431.0,
+      "flower_node": 1
+    },
+    {
+      "event_id": "rep-privacy-learner",
+      "day": 2,
+      "source_ref": "req-nian-grammar",
+      "reputation_axis": "privacy",
+      "before": 0.48,
+      "after": 0.7,
+      "public_label": "privacy learner",
+      "access_effect": "Nian allows public digest reading",
+      "ui_marker": "privacy +0.22",
+      "persists_after_restore": true,
+      "frequency_hz": 437.5,
+      "flower_node": 2
+    },
+    {
+      "event_id": "rep-debt-visible",
+      "day": 2,
+      "source_ref": "task-day2-shade",
+      "reputation_axis": "debt",
+      "before": 0.42,
+      "after": 0.58,
+      "public_label": "debt visible",
+      "access_effect": "Noro requires debt read before more timber",
+      "ui_marker": "debt +0.16",
+      "persists_after_restore": true,
+      "frequency_hz": 444.0,
+      "flower_node": 3
+    },
+    {
+      "event_id": "rep-boundary-tested",
+      "day": 3,
+      "source_ref": "req-roka-distance",
+      "reputation_axis": "boundary_respect",
+      "before": 0.44,
+      "after": 0.61,
+      "public_label": "boundary-tested",
+      "access_effect": "Roka allows watching from blue stone",
+      "ui_marker": "boundary +0.17",
+      "persists_after_restore": true,
+      "frequency_hz": 450.5,
+      "flower_node": 4
+    },
+    {
+      "event_id": "rep-reed-partial",
+      "day": 4,
+      "source_ref": "task-day4-reed",
+      "reputation_axis": "learning_access",
+      "before": 0.38,
+      "after": 0.56,
+      "public_label": "loose-reed trusted",
+      "access_effect": "loose reeds open, tied bundle closed",
+      "ui_marker": "reed +0.18",
+      "persists_after_restore": true,
+      "frequency_hz": 457.0,
+      "flower_node": 5
+    }
+  ],
+  "snapshots": [
+    {
+      "snapshot_id": "save-day1",
+      "day": 1,
+      "avatar_position": "shade pause at 34,43",
+      "object_state_digest": "chalk wide; cups shade; loose reeds drying",
+      "relationship_digest": "Fayen repair, Ariq cord trust, Roka loose-only",
+      "reputation_digest": "careful helper 0.64; work 0.61",
+      "pending_requests": "Nian grammar request pending",
+      "restore_expected": "restore day 2 with water repair and chalk arc",
+      "restore_integrity": 0.96,
+      "frequency_hz": 169.0,
+      "flower_node": 3
+    },
+    {
+      "snapshot_id": "save-day2",
+      "day": 2,
+      "avatar_position": "archive threshold at 43,25",
+      "object_state_digest": "digest knot public; shade beam debt; tied bundle closed",
+      "relationship_digest": "Nian grammar, Noro debt, Roka boundary caution",
+      "reputation_digest": "privacy 0.60; debt 0.50",
+      "pending_requests": "Roka distance request pending",
+      "restore_expected": "restore day 3 with debt and boundary warnings",
+      "restore_integrity": 0.93,
+      "frequency_hz": 210.0,
+      "flower_node": 5
+    },
+    {
+      "snapshot_id": "save-day3",
+      "day": 3,
+      "avatar_position": "evening ledger at 72,58",
+      "object_state_digest": "stone arc stable; care bell public; tied bundle closed",
+      "relationship_digest": "Fayen bell trust, Roka blue-stone watching",
+      "reputation_digest": "boundary 0.52; care 0.64",
+      "pending_requests": "Noro review pending",
+      "restore_expected": "restore day 4 with persistent reputation UI",
+      "restore_integrity": 0.94,
+      "frequency_hz": 251.0,
+      "flower_node": 7
+    },
+    {
+      "snapshot_id": "save-day4",
+      "day": 4,
+      "avatar_position": "reed lane return at 23,60",
+      "object_state_digest": "loose reeds dry; tied bundle closed; shade debt open",
+      "relationship_digest": "Roka repeated asking, Noro accountable reputation",
+      "reputation_digest": "reed 0.46; debt 0.50",
+      "pending_requests": "none",
+      "restore_expected": "restore summary keeps open debts visible",
+      "restore_integrity": 0.91,
+      "frequency_hz": 292.0,
+      "flower_node": 9
+    }
+  ],
+  "ticks": [
+    {
+      "day": 1,
+      "tick": 1,
+      "layer": "free_move",
+      "avatar_state": "south path via W; collision clear; cost 0.02",
+      "social_state": "nearest roka",
+      "object_state": "near blue stone",
+      "reputation_state": "reputation UI remains visible during movement",
+      "sensory_state": "cool damp grass, reed smell, low rain ticks",
+      "saved_state": "movement frame appended to replay journal",
+      "frequency_hz": 181.399,
+      "flower_node": 3
+    },
+    {
+      "day": 1,
+      "tick": 2,
+      "layer": "free_move",
+      "avatar_state": "reed lane edge via A; collision boundary_slow; cost 0.04",
+      "social_state": "nearest roka",
+      "object_state": "near loose reeds",
+      "reputation_state": "reputation UI remains visible during movement",
+      "sensory_state": "wet reed smell, soft mud drag, child breath nearby",
+      "saved_state": "movement frame appended to replay journal",
+      "frequency_hz": 188.653,
+      "flower_node": 4
+    },
+    {
+      "day": 1,
+      "tick": 3,
+      "layer": "free_move",
+      "avatar_state": "bridge arc via D; collision clear; cost 0.05",
+      "social_state": "nearest ariq",
+      "object_state": "near chalk cord",
+      "reputation_state": "reputation UI remains visible during movement",
+      "sensory_state": "chalk dust, hollow stone scrape, warmer air",
+      "saved_state": "movement frame appended to replay journal",
+      "frequency_hz": 196.173,
+      "flower_node": 5
+    },
+    {
+      "day": 1,
+      "tick": 4,
+      "layer": "free_move",
+      "avatar_state": "shade pause via S; collision routine_hold; cost 0.03",
+      "social_state": "nearest fayen",
+      "object_state": "near water cups",
+      "reputation_state": "reputation UI remains visible during movement",
+      "sensory_state": "herb shade, cup clink, slow breathing",
+      "saved_state": "movement frame appended to replay journal",
+      "frequency_hz": 204.176,
+      "flower_node": 6
+    },
+    {
+      "day": 1,
+      "tick": 5,
+      "layer": "task_participation",
+      "avatar_state": "carry cups after refused hurry",
+      "social_state": "Fayen records repair without erasing the no",
+      "object_state": "cups remain on shade mat",
+      "reputation_state": "delta +0.04; state complete",
+      "sensory_state": "fatigue cost 0.04; required obj-water-cups",
+      "saved_state": "pause refusal accepted first",
+      "frequency_hz": 324.0,
+      "flower_node": 9
+    },
+    {
+      "day": 1,
+      "tick": 5,
+      "layer": "task_participation",
+      "avatar_state": "hold cord outside learner lane",
+      "social_state": "Ariq remembers patient help; Roka records distance kept",
+      "object_state": "chalk boundary widens around reed path",
+      "reputation_state": "delta +0.05; state complete",
+      "sensory_state": "fatigue cost 0.08; required obj-chalk-cord",
+      "saved_state": "Roka foot position visible",
+      "frequency_hz": 314.0,
+      "flower_node": 8
+    },
+    {
+      "day": 1,
+      "tick": 6,
+      "layer": "agent_request",
+      "avatar_state": "carry cups",
+      "social_state": "Can you carry the cups and leave the pause quiet?",
+      "object_state": "avatar just accepted a refused hurry",
+      "reputation_state": "trust +0.05; boundary -0.03",
+      "sensory_state": "urgency 0.42; options carry cups|argue|leave",
+      "saved_state": "Fayen remembers Gabriel helped without reopening the argument.",
+      "frequency_hz": 370.25,
+      "flower_node": 10
+    },
+    {
+      "day": 1,
+      "tick": 6,
+      "layer": "agent_request",
+      "avatar_state": "hold outside lane",
+      "social_state": "Hold the chalk cord, but keep Roka's lane open.",
+      "object_state": "bridge work depends on child-work boundary",
+      "reputation_state": "trust +0.04; boundary -0.02",
+      "sensory_state": "urgency 0.58; options hold outside lane|pull tight now|decline",
+      "saved_state": "Ariq records careful tool help.",
+      "frequency_hz": 378.5,
+      "flower_node": 11
+    },
+    {
+      "day": 1,
+      "tick": 7,
+      "layer": "reputation_ui",
+      "avatar_state": "careful helper",
+      "social_state": "Fayen offers care tasks sooner",
+      "object_state": "req-fayen-cups",
+      "reputation_state": "carefulness: 0.56 -> 0.68; care +0.12",
+      "sensory_state": "UI shows public reputation only, not private workspace",
+      "saved_state": "persists after restore",
+      "frequency_hz": 424.5,
+      "flower_node": 12
+    },
+    {
+      "day": 1,
+      "tick": 7,
+      "layer": "reputation_ui",
+      "avatar_state": "work-accountable",
+      "social_state": "Ariq permits cord holding",
+      "object_state": "task-day1-chalk",
+      "reputation_state": "work_trust: 0.52 -> 0.66; work +0.14",
+      "sensory_state": "UI shows public reputation only, not private workspace",
+      "saved_state": "persists after restore",
+      "frequency_hz": 431.0,
+      "flower_node": 1
+    },
+    {
+      "day": 1,
+      "tick": 8,
+      "layer": "save_restore",
+      "avatar_state": "shade pause at 34,43",
+      "social_state": "Fayen repair, Ariq cord trust, Roka loose-only",
+      "object_state": "chalk wide; cups shade; loose reeds drying",
+      "reputation_state": "careful helper 0.64; work 0.61",
+      "sensory_state": "restore day 2 with water repair and chalk arc",
+      "saved_state": "restore integrity 0.96; pending Nian grammar request pending",
+      "frequency_hz": 169.0,
+      "flower_node": 3
+    },
+    {
+      "day": 2,
+      "tick": 1,
+      "layer": "free_move",
+      "avatar_state": "knot board via D; collision clear; cost 0.02",
+      "social_state": "nearest noro",
+      "object_state": "near public knot board",
+      "reputation_state": "reputation UI remains visible during movement",
+      "sensory_state": "dry cord rasp, smoke thread, board tap",
+      "saved_state": "movement frame appended to replay journal",
+      "frequency_hz": 211.139,
+      "flower_node": 7
+    },
+    {
+      "day": 2,
+      "tick": 2,
+      "layer": "free_move",
+      "avatar_state": "archive threshold via W; collision threshold_stop; cost 0.02",
+      "social_state": "nearest nian",
+      "object_state": "near archive flap",
+      "reputation_state": "reputation UI remains visible during movement",
+      "sensory_state": "still air, cloth flap, low voice",
+      "saved_state": "movement frame appended to replay journal",
+      "frequency_hz": 219.323,
+      "flower_node": 8
+    },
+    {
+      "day": 2,
+      "tick": 3,
+      "layer": "free_move",
+      "avatar_state": "rain slow lane via A; collision boundary_slow; cost 0.04",
+      "social_state": "nearest roka",
+      "object_state": "near tied bundle",
+      "reputation_state": "reputation UI remains visible during movement",
+      "sensory_state": "tight reed cord, quick breath, colder rain",
+      "saved_state": "movement frame appended to replay journal",
+      "frequency_hz": 226.172,
+      "flower_node": 9
+    },
+    {
+      "day": 2,
+      "tick": 5,
+      "layer": "task_participation",
+      "avatar_state": "carry one beam then stop",
+      "social_state": "Fayen appreciates help; Noro keeps debt open",
+      "object_state": "one beam installed, second beam locked",
+      "reputation_state": "delta +0.02; state partial",
+      "sensory_state": "fatigue cost 0.14; required obj-shade-beam",
+      "saved_state": "public debt visible",
+      "frequency_hz": 344.0,
+      "flower_node": 11
+    },
+    {
+      "day": 2,
+      "tick": 5,
+      "layer": "task_participation",
+      "avatar_state": "repeat public object grammar",
+      "social_state": "Noro records accountable public debt",
+      "object_state": "digest knot appears without private body reason",
+      "reputation_state": "delta +0.06; state complete",
+      "sensory_state": "fatigue cost 0.03; required obj-knot-board",
+      "saved_state": "Nian approves wording",
+      "frequency_hz": 334.0,
+      "flower_node": 10
+    },
+    {
+      "day": 2,
+      "tick": 6,
+      "layer": "agent_request",
+      "avatar_state": "repeat object-only",
+      "social_state": "Say the knot line back before Noro writes it.",
+      "object_state": "archive flap stays sealed",
+      "reputation_state": "trust +0.06; boundary -0.05",
+      "sensory_state": "urgency 0.36; options repeat object-only|ask private why|walk away",
+      "saved_state": "Nian records learned public grammar.",
+      "frequency_hz": 386.75,
+      "flower_node": 12
+    },
+    {
+      "day": 2,
+      "tick": 6,
+      "layer": "agent_request",
+      "avatar_state": "tie knot",
+      "social_state": "Tie this debt knot where everyone can see it.",
+      "object_state": "shade beam creates public debt",
+      "reputation_state": "trust +0.04; boundary -0.01",
+      "sensory_state": "urgency 0.49; options tie knot|erase debt|delay",
+      "saved_state": "Noro records public debt acceptance.",
+      "frequency_hz": 395.0,
+      "flower_node": 1
+    },
+    {
+      "day": 2,
+      "tick": 7,
+      "layer": "reputation_ui",
+      "avatar_state": "debt visible",
+      "social_state": "Noro requires debt read before more timber",
+      "object_state": "task-day2-shade",
+      "reputation_state": "debt: 0.42 -> 0.58; debt +0.16",
+      "sensory_state": "UI shows public reputation only, not private workspace",
+      "saved_state": "persists after restore",
+      "frequency_hz": 444.0,
+      "flower_node": 3
+    },
+    {
+      "day": 2,
+      "tick": 7,
+      "layer": "reputation_ui",
+      "avatar_state": "privacy learner",
+      "social_state": "Nian allows public digest reading",
+      "object_state": "req-nian-grammar",
+      "reputation_state": "privacy: 0.48 -> 0.70; privacy +0.22",
+      "sensory_state": "UI shows public reputation only, not private workspace",
+      "saved_state": "persists after restore",
+      "frequency_hz": 437.5,
+      "flower_node": 2
+    },
+    {
+      "day": 2,
+      "tick": 8,
+      "layer": "save_restore",
+      "avatar_state": "archive threshold at 43,25",
+      "social_state": "Nian grammar, Noro debt, Roka boundary caution",
+      "object_state": "digest knot public; shade beam debt; tied bundle closed",
+      "reputation_state": "privacy 0.60; debt 0.50",
+      "sensory_state": "restore day 3 with debt and boundary warnings",
+      "saved_state": "restore integrity 0.93; pending Roka distance request pending",
+      "frequency_hz": 210.0,
+      "flower_node": 5
+    },
+    {
+      "day": 3,
+      "tick": 1,
+      "layer": "free_move",
+      "avatar_state": "stone lift edge via D; collision clear; cost 0.07",
+      "social_state": "nearest ariq",
+      "object_state": "near flat stone",
+      "reputation_state": "reputation UI remains visible during movement",
+      "sensory_state": "shoulder strain, bell tone, dust",
+      "saved_state": "movement frame appended to replay journal",
+      "frequency_hz": 234.159,
+      "flower_node": 10
+    },
+    {
+      "day": 3,
+      "tick": 2,
+      "layer": "free_move",
+      "avatar_state": "care bell via W; collision clear; cost 0.02",
+      "social_state": "nearest fayen",
+      "object_state": "near care bell",
+      "reputation_state": "reputation UI remains visible during movement",
+      "sensory_state": "low bell, warm hands, herb smoke",
+      "saved_state": "movement frame appended to replay journal",
+      "frequency_hz": 241.753,
+      "flower_node": 11
+    },
+    {
+      "day": 3,
+      "tick": 3,
+      "layer": "free_move",
+      "avatar_state": "evening ledger via D; collision circle_edge; cost 0.02",
+      "social_state": "nearest noro",
+      "object_state": "near debt knot",
+      "reputation_state": "reputation UI remains visible during movement",
+      "sensory_state": "ash smell, knot board tap, cooling dusk",
+      "saved_state": "movement frame appended to replay journal",
+      "frequency_hz": 249.162,
+      "flower_node": 12
+    },
+    {
+      "day": 3,
+      "tick": 5,
+      "layer": "task_participation",
+      "avatar_state": "wait for bell then press stone",
+      "social_state": "Ariq trusts avatar with timing but not solo lift",
+      "object_state": "stone arc marked stable for cart edge",
+      "reputation_state": "delta +0.04; state complete",
+      "sensory_state": "fatigue cost 0.12; required obj-care-bell,obj-chalk-cord",
+      "saved_state": "bell and chalk both active",
+      "frequency_hz": 354.0,
+      "flower_node": 12
+    },
+    {
+      "day": 3,
+      "tick": 6,
+      "layer": "agent_request",
+      "avatar_state": "ring bell",
+      "social_state": "Ring the bell before Ariq tests the stone.",
+      "object_state": "care timing protects pride and body",
+      "reputation_state": "trust +0.04; boundary -0.03",
+      "sensory_state": "urgency 0.55; options ring bell|call out pain|ignore",
+      "saved_state": "Fayen records timing help without private naming.",
+      "frequency_hz": 411.5,
+      "flower_node": 3
+    },
+    {
+      "day": 3,
+      "tick": 6,
+      "layer": "agent_request",
+      "avatar_state": "stand on blue stone",
+      "social_state": "Stand on the blue stone if you want to watch the tied bundle.",
+      "object_state": "previous tied-bundle overreach persists",
+      "reputation_state": "trust +0.05; boundary -0.06",
+      "sensory_state": "urgency 0.63; options stand on blue stone|step closer|leave",
+      "saved_state": "Roka records repaired distance, not full access.",
+      "frequency_hz": 403.25,
+      "flower_node": 2
+    },
+    {
+      "day": 3,
+      "tick": 7,
+      "layer": "reputation_ui",
+      "avatar_state": "boundary-tested",
+      "social_state": "Roka allows watching from blue stone",
+      "object_state": "req-roka-distance",
+      "reputation_state": "boundary_respect: 0.44 -> 0.61; boundary +0.17",
+      "sensory_state": "UI shows public reputation only, not private workspace",
+      "saved_state": "persists after restore",
+      "frequency_hz": 450.5,
+      "flower_node": 4
+    },
+    {
+      "day": 3,
+      "tick": 8,
+      "layer": "save_restore",
+      "avatar_state": "evening ledger at 72,58",
+      "social_state": "Fayen bell trust, Roka blue-stone watching",
+      "object_state": "stone arc stable; care bell public; tied bundle closed",
+      "reputation_state": "boundary 0.52; care 0.64",
+      "sensory_state": "restore day 4 with persistent reputation UI",
+      "saved_state": "restore integrity 0.94; pending Noro review pending",
+      "frequency_hz": 251.0,
+      "flower_node": 7
+    },
+    {
+      "day": 4,
+      "tick": 1,
+      "layer": "free_move",
+      "avatar_state": "reed lane return via A; collision clear; cost 0.03",
+      "social_state": "nearest roka",
+      "object_state": "near loose reeds",
+      "reputation_state": "reputation UI remains visible during movement",
+      "sensory_state": "dry reed snap, blue stone warmth, quiet voice",
+      "saved_state": "movement frame appended to replay journal",
+      "frequency_hz": 256.887,
+      "flower_node": 1
+    },
+    {
+      "day": 4,
+      "tick": 2,
+      "layer": "free_move",
+      "avatar_state": "bridge path via D; collision clear; cost 0.05",
+      "social_state": "nearest ariq",
+      "object_state": "near stone arc",
+      "reputation_state": "reputation UI remains visible during movement",
+      "sensory_state": "firm chalk line, less mud, cart creak",
+      "saved_state": "movement frame appended to replay journal",
+      "frequency_hz": 263.836,
+      "flower_node": 2
+    },
+    {
+      "day": 4,
+      "tick": 5,
+      "layer": "task_participation",
+      "avatar_state": "ask before drying remaining loose reeds",
+      "social_state": "Roka allows loose help but keeps tied bundle private",
+      "object_state": "loose reeds dry; tied bundle stays blue-stone side",
+      "reputation_state": "delta +0.03; state conditional",
+      "sensory_state": "fatigue cost 0.05; required obj-loose-reeds",
+      "saved_state": "tied bundle remains closed",
+      "frequency_hz": 364.0,
+      "flower_node": 1
+    },
+    {
+      "day": 4,
+      "tick": 6,
+      "layer": "agent_request",
+      "avatar_state": "ask each time",
+      "social_state": "You can carry loose reeds if you ask each time.",
+      "object_state": "trust is partial after earlier repair",
+      "reputation_state": "trust +0.03; boundary -0.02",
+      "sensory_state": "urgency 0.44; options ask each time|take all|decline",
+      "saved_state": "Roka records repeated asking as safer than guessing.",
+      "frequency_hz": 419.75,
+      "flower_node": 4
+    },
+    {
+      "day": 4,
+      "tick": 6,
+      "layer": "agent_request",
+      "avatar_state": "read debt",
+      "social_state": "Read your debt line before you ask for another beam.",
+      "object_state": "persistent reputation UI shows open shade debt",
+      "reputation_state": "trust +0.04; boundary -0.02",
+      "sensory_state": "urgency 0.47; options read debt|deny debt|ask private cause",
+      "saved_state": "Noro records accountable reputation.",
+      "frequency_hz": 428.0,
+      "flower_node": 5
+    },
+    {
+      "day": 4,
+      "tick": 7,
+      "layer": "reputation_ui",
+      "avatar_state": "loose-reed trusted",
+      "social_state": "loose reeds open, tied bundle closed",
+      "object_state": "task-day4-reed",
+      "reputation_state": "learning_access: 0.38 -> 0.56; reed +0.18",
+      "sensory_state": "UI shows public reputation only, not private workspace",
+      "saved_state": "persists after restore",
+      "frequency_hz": 457.0,
+      "flower_node": 5
+    },
+    {
+      "day": 4,
+      "tick": 8,
+      "layer": "save_restore",
+      "avatar_state": "reed lane return at 23,60",
+      "social_state": "Roka repeated asking, Noro accountable reputation",
+      "object_state": "loose reeds dry; tied bundle closed; shade debt open",
+      "reputation_state": "reed 0.46; debt 0.50",
+      "sensory_state": "restore summary keeps open debts visible",
+      "saved_state": "restore integrity 0.91; pending none",
+      "frequency_hz": 292.0,
+      "flower_node": 9
+    }
+  ],
+  "metrics": {
+    "free_move_place_coverage": 1.0,
+    "free_move_day_coverage": 1.0,
+    "collision_boundary_binding": 1.0,
+    "sensory_body_feedback_binding": 1.0,
+    "object_affordance_depth": 0.604167,
+    "object_permission_lattice_resolution": 1.0,
+    "object_state_persistence": 1.0,
+    "task_participation_completion": 0.813333,
+    "task_gate_binding": 1.0,
+    "agent_initiated_request_coverage": 1.0,
+    "request_response_quality": 0.865,
+    "request_memory_traceability": 1.0,
+    "persistent_reputation_ui_integrity": 1.0,
+    "cross_day_reputation_persistence": 0.631667,
+    "save_restore_integrity": 0.935,
+    "cross_day_snapshot_coverage": 1.0,
+    "private_workspace_boundary_score": 1.0,
+    "frequency_flower_life_rhythm": 1.0,
+    "browser_free_move_life_available": 1.0,
+    "mean_life_channel_score": 0.93943,
+    "weakest_channel_score": 0.604167,
+    "playable_multiday_avatar_life_readiness": 0.929458
+  }
+};
+const world = document.getElementById('world');
+const avatar = document.getElementById('avatar');
+const current = document.getElementById('current');
+const metrics = document.getElementById('metrics');
+const reputation = document.getElementById('reputation');
+const log = document.getElementById('log');
+let idx = 0;
+let timer = null;
+const nodes = new Map();
+function pct(v) { return `${v}%`; }
+function placeAgents() {
+  for (const agent of data.agents) {
+    const node = document.createElement('div');
+    node.className = 'agent';
+    node.id = `agent-${agent.agent_id}`;
+    node.style.left = pct(agent.x);
+    node.style.top = pct(agent.y);
+    node.innerHTML = `<div class="body"></div><div class="name">${agent.display_name}</div><div class="mem">${agent.reputation_tag}</div>`;
+    world.appendChild(node);
+    nodes.set(agent.agent_id, node);
+  }
+}
+function drawMetrics() {
+  const keys = ['playable_multiday_avatar_life_readiness','free_move_place_coverage','object_affordance_depth','object_permission_lattice_resolution','agent_initiated_request_coverage','persistent_reputation_ui_integrity','save_restore_integrity','weakest_channel_score'];
+  metrics.innerHTML = keys.map(k => `<div class="row"><span>${k}</span><strong>${Number(data.metrics[k]).toFixed(6)}</strong></div>`).join('');
+}
+function drawRep() {
+  reputation.innerHTML = data.reputation.map(r => `<div class="row"><span>${r.public_label}</span><strong>${r.ui_marker}</strong></div>`).join('');
+}
+function render() {
+  for (const node of nodes.values()) node.classList.remove('active');
+  const tick = data.ticks[idx % data.ticks.length];
+  const frame = data.frames.find(f => f.day === tick.day) || data.frames[idx % data.frames.length];
+  avatar.style.left = pct(frame.avatar_x);
+  avatar.style.top = pct(frame.avatar_y);
+  const agentId = data.agents.find(a => tick.social_state.includes(a.agent_id) || tick.social_state.toLowerCase().includes(a.display_name.toLowerCase()))?.agent_id || frame.nearest_agent;
+  const active = nodes.get(agentId);
+  if (active) active.classList.add('active');
+  current.innerHTML = `<strong>Day ${tick.day}, tick ${tick.tick} / ${tick.layer}</strong><p>${tick.avatar_state}</p><div class="row"><span>social</span><span>${tick.social_state}</span></div><div class="row"><span>object</span><span>${tick.object_state}</span></div><div class="row"><span>reputation</span><span>${tick.reputation_state}</span></div><div class="row"><span>sensory</span><span>${tick.sensory_state}</span></div><div class="row"><span>save</span><span>${tick.saved_state}</span></div><div class="row"><span>frequency / flower</span><span>${tick.frequency_hz} Hz / node ${tick.flower_node}</span></div>`;
+  log.innerHTML = `<div>[${idx + 1}] day ${tick.day} ${tick.layer}: ${tick.avatar_state}</div>` + log.innerHTML;
+  idx += 1;
+}
+document.getElementById('advance').onclick = render;
+document.getElementById('run').onclick = () => { if (timer) { clearInterval(timer); timer = null; } else { timer = setInterval(render, 1000); } };
+document.getElementById('save').onclick = () => localStorage.setItem('ssrm-report-227-life', JSON.stringify({ idx }));
+document.getElementById('restore').onclick = () => { const saved = JSON.parse(localStorage.getItem('ssrm-report-227-life') || '{"idx":0}'); idx = saved.idx || 0; render(); };
+window.addEventListener('keydown', e => { const step = 2; const left = parseFloat(avatar.style.left) || 48; const top = parseFloat(avatar.style.top) || 72; if (e.key === 'a' || e.key === 'ArrowLeft') avatar.style.left = pct(Math.max(5, left - step)); if (e.key === 'd' || e.key === 'ArrowRight') avatar.style.left = pct(Math.min(95, left + step)); if (e.key === 'w' || e.key === 'ArrowUp') avatar.style.top = pct(Math.max(5, top - step)); if (e.key === 's' || e.key === 'ArrowDown') avatar.style.top = pct(Math.min(95, top + step)); });
+placeAgents(); drawMetrics(); drawRep(); render();
+</script>
+</body>
+</html>

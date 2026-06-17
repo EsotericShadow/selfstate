@@ -1,0 +1,7 @@
+project_id,year,location,structure,materials_used,labor_days,weather_pressure,comfort_gain,safety_gain,maintenance_debt,community_rule,frequency_hz,flower_node
+hab-warm-alcove,180,hearth-north,insulated warm alcove,"stone, moss, wool",46,wet winter,0.26,0.18,0.08,children and elders rest first,144.0,2
+hab-dry-route,540,west crossing,raised dry route,"stone, reed mats",88,river flood,0.18,0.32,0.19,runner labor counted as care,176.0,5
+hab-cistern-filter,900,cistern-low,reed-charcoal filter hut,"reed, charcoal, clay",61,water sickness scare,0.11,0.29,0.15,water shame requires shared duty,203.0,8
+hab-archive-flap,1260,archive-hill,sealed archive alcove,"wax, cloth, cedar",39,dust wind,0.09,0.2,0.11,private care histories stay closed,231.0,11
+hab-field-terrace,1740,field-east,grain terrace,"stone, compost, water channel",104,dry spring,0.14,0.23,0.27,"food ledger public, hunger details sealed",264.0,3
+hab-storm-school,2480,threshold-school,storm-safe teaching house,"timber, clay, replay glass",132,dark winter storms,0.22,0.36,0.3,boundary lessons move indoors during storms,302.0,9

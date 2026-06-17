@@ -1,0 +1,9 @@
+exchange_id,year,from_household,to_household,material,quantity,purpose,scarcity_pressure,reciprocity_memory,fairness_score,repair_or_spoilage_debt,ledger_visibility
+mat-wool-blanket,190,hearth-north,archive-hill,wool blanket,3,elder warmth,0.42,archive will copy winter story,0.86,0.08,"public quantity, private recipient details sealed"
+mat-reed-route,560,river-bank,west crossing,reed mats,12,dry route repair,0.58,runner route debt recorded,0.78,0.16,public route ledger
+mat-charcoal-filter,920,tool-south,cistern-low,charcoal,7,water filter,0.49,water duty returned in labor,0.81,0.12,public material ledger
+mat-wax-flap,1280,market-ring,archive-hill,wax seal,5,private archive flap,0.35,archive copies trade knot,0.88,0.06,private story contents sealed
+mat-stone-terrace,1760,bridge-house,field-east,flat stone,18,grain terrace,0.66,field feeds bridge workers later,0.73,0.22,public debt visible
+mat-herb-clinic,2188,clinic-garden,hearth-south,winter root,9,recovery broth,0.51,hearth dries herbs next season,0.82,0.1,"public batch, private symptoms sealed"
+mat-timber-school,2488,runner-road,threshold-school,timber beams,14,storm-safe school,0.61,threshold teaches runner children,0.76,0.24,public delivery ledger
+mat-glass-replay,2868,market-ring,threshold-school,replay glass,4,avatar briefing wall,0.72,market receives archive copy rights,0.69,0.31,authorship debt remains noted

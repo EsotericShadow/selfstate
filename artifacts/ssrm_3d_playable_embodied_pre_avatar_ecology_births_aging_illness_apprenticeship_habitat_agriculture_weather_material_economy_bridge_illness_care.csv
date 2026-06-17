@@ -1,0 +1,9 @@
+care_id,year,person_id,trigger,symptoms_public,body_rate_signal,care_action,recovery_ticks,recovered,relapse_risk,stigma_guardrail,private_body_digest,trust_delta
+care-wet-cough-luma,132,luma,wet cold crossing,cough and low warmth,breath rate + cough count,warm-stone rest and dry cup,3,True,0.12,child symptoms are aggregate only,sealed:luma:care-wet-cough-luma:body-detail,0.04
+care-tool-strain-kavi,322,kavi,overlong tool hauling,shoulder pain after route work,movement effort spike,mentor swaps load and logs rest debt,5,True,0.18,apprentice strain is not laziness,sealed:kavi:care-tool-strain-kavi:body-detail,0.02
+care-water-fever-sena,501,sena,cistern fever scare,warm face and fatigue,temperature chime + slow gait,water duty pair covers shift,7,True,0.22,water steward is not blamed for fever,sealed:sena:care-water-fever-sena:body-detail,0.03
+care-elder-dust-oro,676,oro,archive dust season,eye irritation and cough,blink rate + breath roughness,archive flap rest and reed filter,6,False,0.34,elder private discomfort sealed,sealed:oro:care-elder-dust-oro:body-detail,-0.01
+care-field-cut-mira,793,mira,seed knife slip,small hand cut,pain flinch + hand withdrawal,"wash, wrap, and tool lesson pause",2,True,0.08,child injury detail sealed,sealed:mira:care-field-cut-mira:body-detail,0.03
+care-repair-knee-tov,964,tov,bridge kneeling fatigue,knee pain,posture stiffness,work bench height adjusted,4,True,0.16,repair pain does not reduce status,sealed:tov:care-repair-knee-tov:body-detail,0.02
+care-grain-mold-vara,2110,vara,moldy grain store,nausea cluster,smell avoidance + hunger drop,grain batch sealed and composted,8,False,0.41,food illness not moral blame,sealed:vara:care-grain-mold-vara:body-detail,-0.02
+care-storm-chill-savi,2882,savi,threshold storm lesson,cold shock and shaking,temperature drop + tremor,storm lesson moved indoors,3,True,0.14,threshold learner fear is private,sealed:savi:care-storm-chill-savi:body-detail,0.04

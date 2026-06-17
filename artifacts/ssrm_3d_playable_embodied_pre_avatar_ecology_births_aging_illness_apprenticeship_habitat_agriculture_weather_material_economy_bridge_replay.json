@@ -1,0 +1,645 @@
+{
+  "frames": [
+    {
+      "agent_markers": "agents turn shoulders against weather before working",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "weather-wet-120 / year 120",
+      "flower_overlay": "flower node 1 in ecology ring",
+      "frequency_overlay": "118.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "weather sensory wall",
+      "tick": 1
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "luma / year 126",
+      "flower_overlay": "flower node 1 in ecology ring",
+      "frequency_overlay": "113.551Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 10
+    },
+    {
+      "agent_markers": "agent seeks warmth or withdraws from work without public shaming",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "luma / year 132",
+      "flower_overlay": "flower node 5 in ecology ring",
+      "frequency_overlay": "203.200Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "care and recovery board",
+      "tick": 28
+    },
+    {
+      "agent_markers": "agents gather under new structure and adjust routes",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "hearth-north / year 180",
+      "flower_overlay": "flower node 2 in ecology ring",
+      "frequency_overlay": "144.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "habitat construction map",
+      "tick": 42
+    },
+    {
+      "agent_markers": "agent ties or unties a trade knot at public ledger",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "mat-wool-blanket / year 190",
+      "flower_overlay": "flower node 9 in ecology ring",
+      "frequency_overlay": "310.600Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "material exchange knot board",
+      "tick": 56
+    },
+    {
+      "agent_markers": "agents smell crop before deciding storage or compost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "river-bank / year 260",
+      "flower_overlay": "flower node 1 in ecology ring",
+      "frequency_overlay": "279.400Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "field and storage ledger",
+      "tick": 48
+    },
+    {
+      "agent_markers": "agents turn shoulders against weather before working",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "weather-spring-300 / year 300",
+      "flower_overlay": "flower node 2 in ecology ring",
+      "frequency_overlay": "132.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "weather sensory wall",
+      "tick": 2
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "kavi / year 318",
+      "flower_overlay": "flower node 2 in ecology ring",
+      "frequency_overlay": "122.281Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 11
+    },
+    {
+      "agent_markers": "keeps one hand on map knot",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "kavi / year 318",
+      "flower_overlay": "flower node 1 in ecology ring",
+      "frequency_overlay": "237.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "apprenticeship yard",
+      "tick": 36
+    },
+    {
+      "agent_markers": "agent seeks warmth or withdraws from work without public shaming",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "kavi / year 322",
+      "flower_overlay": "flower node 6 in ecology ring",
+      "frequency_overlay": "205.100Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "care and recovery board",
+      "tick": 29
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "sena / year 491",
+      "flower_overlay": "flower node 3 in ecology ring",
+      "frequency_overlay": "131.350Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 12
+    },
+    {
+      "agent_markers": "agent seeks warmth or withdraws from work without public shaming",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "sena / year 501",
+      "flower_overlay": "flower node 7 in ecology ring",
+      "frequency_overlay": "207.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "care and recovery board",
+      "tick": 30
+    },
+    {
+      "agent_markers": "agents gather under new structure and adjust routes",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "west crossing / year 540",
+      "flower_overlay": "flower node 5 in ecology ring",
+      "frequency_overlay": "176.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "habitat construction map",
+      "tick": 43
+    },
+    {
+      "agent_markers": "agent ties or unties a trade knot at public ledger",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "mat-reed-route / year 560",
+      "flower_overlay": "flower node 10 in ecology ring",
+      "frequency_overlay": "311.950Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "material exchange knot board",
+      "tick": 57
+    },
+    {
+      "agent_markers": "agents turn shoulders against weather before working",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "weather-dry-620 / year 620",
+      "flower_overlay": "flower node 4 in ecology ring",
+      "frequency_overlay": "166.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "weather sensory wall",
+      "tick": 3
+    },
+    {
+      "agent_markers": "agents smell crop before deciding storage or compost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "field-east / year 620",
+      "flower_overlay": "flower node 2 in ecology ring",
+      "frequency_overlay": "280.950Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "field and storage ledger",
+      "tick": 49
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "oro / year 671",
+      "flower_overlay": "flower node 4 in ecology ring",
+      "frequency_overlay": "140.081Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 13
+    },
+    {
+      "agent_markers": "agent seeks warmth or withdraws from work without public shaming",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "oro / year 676",
+      "flower_overlay": "flower node 8 in ecology ring",
+      "frequency_overlay": "208.900Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "care and recovery board",
+      "tick": 31
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "mira / year 787",
+      "flower_overlay": "flower node 5 in ecology ring",
+      "frequency_overlay": "150.263Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 14
+    },
+    {
+      "agent_markers": "agent seeks warmth or withdraws from work without public shaming",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "mira / year 793",
+      "flower_overlay": "flower node 9 in ecology ring",
+      "frequency_overlay": "210.800Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "care and recovery board",
+      "tick": 32
+    },
+    {
+      "agent_markers": "agents gather under new structure and adjust routes",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "cistern-low / year 900",
+      "flower_overlay": "flower node 8 in ecology ring",
+      "frequency_overlay": "203.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "habitat construction map",
+      "tick": 44
+    },
+    {
+      "agent_markers": "agent ties or unties a trade knot at public ledger",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "mat-charcoal-filter / year 920",
+      "flower_overlay": "flower node 11 in ecology ring",
+      "frequency_overlay": "313.300Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "material exchange knot board",
+      "tick": 58
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "tov / year 958",
+      "flower_overlay": "flower node 6 in ecology ring",
+      "frequency_overlay": "159.488Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 15
+    },
+    {
+      "agent_markers": "sets tool down before pain rises",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "tov / year 958",
+      "flower_overlay": "flower node 2 in ecology ring",
+      "frequency_overlay": "238.750Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "apprenticeship yard",
+      "tick": 37
+    },
+    {
+      "agent_markers": "agent seeks warmth or withdraws from work without public shaming",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "tov / year 964",
+      "flower_overlay": "flower node 10 in ecology ring",
+      "frequency_overlay": "212.700Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "care and recovery board",
+      "tick": 33
+    },
+    {
+      "agent_markers": "agents turn shoulders against weather before working",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "weather-wind-980 / year 980",
+      "flower_overlay": "flower node 6 in ecology ring",
+      "frequency_overlay": "189.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "weather sensory wall",
+      "tick": 4
+    },
+    {
+      "agent_markers": "agents smell crop before deciding storage or compost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "clinic-garden / year 980",
+      "flower_overlay": "flower node 3 in ecology ring",
+      "frequency_overlay": "282.500Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "field and storage ledger",
+      "tick": 50
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "ena / year 1136",
+      "flower_overlay": "flower node 7 in ecology ring",
+      "frequency_overlay": "169.193Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 16
+    },
+    {
+      "agent_markers": "agents gather under new structure and adjust routes",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "archive-hill / year 1260",
+      "flower_overlay": "flower node 11 in ecology ring",
+      "frequency_overlay": "231.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "habitat construction map",
+      "tick": 45
+    },
+    {
+      "agent_markers": "agent ties or unties a trade knot at public ledger",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "mat-wax-flap / year 1280",
+      "flower_overlay": "flower node 12 in ecology ring",
+      "frequency_overlay": "314.650Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "material exchange knot board",
+      "tick": 59
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "solen / year 1324",
+      "flower_overlay": "flower node 8 in ecology ring",
+      "frequency_overlay": "177.794Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 17
+    },
+    {
+      "agent_markers": "agents turn shoulders against weather before working",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "weather-flood-1340 / year 1340",
+      "flower_overlay": "flower node 8 in ecology ring",
+      "frequency_overlay": "211.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "weather sensory wall",
+      "tick": 5
+    },
+    {
+      "agent_markers": "agents smell crop before deciding storage or compost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "terrace-west / year 1340",
+      "flower_overlay": "flower node 4 in ecology ring",
+      "frequency_overlay": "284.050Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "field and storage ledger",
+      "tick": 51
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "ariq / year 1438",
+      "flower_overlay": "flower node 9 in ecology ring",
+      "frequency_overlay": "187.792Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 18
+    },
+    {
+      "agent_markers": "tilts ear to bridge stone",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "ariq / year 1438",
+      "flower_overlay": "flower node 3 in ecology ring",
+      "frequency_overlay": "240.500Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "apprenticeship yard",
+      "tick": 38
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "fayen / year 1607",
+      "flower_overlay": "flower node 10 in ecology ring",
+      "frequency_overlay": "196.978Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 19
+    },
+    {
+      "agent_markers": "agents gather under new structure and adjust routes",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "field-east / year 1740",
+      "flower_overlay": "flower node 3 in ecology ring",
+      "frequency_overlay": "264.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "habitat construction map",
+      "tick": 46
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "milom / year 1751",
+      "flower_overlay": "flower node 11 in ecology ring",
+      "frequency_overlay": "206.971Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 20
+    },
+    {
+      "agent_markers": "agent ties or unties a trade knot at public ledger",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "mat-stone-terrace / year 1760",
+      "flower_overlay": "flower node 1 in ecology ring",
+      "frequency_overlay": "316.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "material exchange knot board",
+      "tick": 60
+    },
+    {
+      "agent_markers": "agents turn shoulders against weather before working",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "weather-dark-1780 / year 1780",
+      "flower_overlay": "flower node 10 in ecology ring",
+      "frequency_overlay": "244.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "weather sensory wall",
+      "tick": 6
+    },
+    {
+      "agent_markers": "agents smell crop before deciding storage or compost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "field-east / year 1780",
+      "flower_overlay": "flower node 5 in ecology ring",
+      "frequency_overlay": "285.600Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "field and storage ledger",
+      "tick": 52
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "nian / year 1920",
+      "flower_overlay": "flower node 12 in ecology ring",
+      "frequency_overlay": "215.676Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 21
+    },
+    {
+      "agent_markers": "touches archive flap before speaking",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "nian / year 1920",
+      "flower_overlay": "flower node 4 in ecology ring",
+      "frequency_overlay": "242.250Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "apprenticeship yard",
+      "tick": 39
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "vara / year 2102",
+      "flower_overlay": "flower node 1 in ecology ring",
+      "frequency_overlay": "225.556Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 22
+    },
+    {
+      "agent_markers": "agent seeks warmth or withdraws from work without public shaming",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "vara / year 2110",
+      "flower_overlay": "flower node 11 in ecology ring",
+      "frequency_overlay": "214.600Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "care and recovery board",
+      "tick": 34
+    },
+    {
+      "agent_markers": "agents turn shoulders against weather before working",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "weather-storm-2180 / year 2180",
+      "flower_overlay": "flower node 12 in ecology ring",
+      "frequency_overlay": "277.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "weather sensory wall",
+      "tick": 7
+    },
+    {
+      "agent_markers": "agents smell crop before deciding storage or compost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "north root bed / year 2180",
+      "flower_overlay": "flower node 6 in ecology ring",
+      "frequency_overlay": "287.150Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "field and storage ledger",
+      "tick": 53
+    },
+    {
+      "agent_markers": "agent ties or unties a trade knot at public ledger",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "mat-herb-clinic / year 2188",
+      "flower_overlay": "flower node 2 in ecology ring",
+      "frequency_overlay": "317.350Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "material exchange knot board",
+      "tick": 61
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "esh / year 2287",
+      "flower_overlay": "flower node 2 in ecology ring",
+      "frequency_overlay": "234.357Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 23
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "roka / year 2392",
+      "flower_overlay": "flower node 3 in ecology ring",
+      "frequency_overlay": "244.136Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 24
+    },
+    {
+      "agent_markers": "holds reed to nose then shoulder",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "roka / year 2392",
+      "flower_overlay": "flower node 5 in ecology ring",
+      "frequency_overlay": "244.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "apprenticeship yard",
+      "tick": 40
+    },
+    {
+      "agent_markers": "agents gather under new structure and adjust routes",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "threshold-school / year 2480",
+      "flower_overlay": "flower node 9 in ecology ring",
+      "frequency_overlay": "302.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "habitat construction map",
+      "tick": 47
+    },
+    {
+      "agent_markers": "agent ties or unties a trade knot at public ledger",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "mat-timber-school / year 2488",
+      "flower_overlay": "flower node 3 in ecology ring",
+      "frequency_overlay": "318.700Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "material exchange knot board",
+      "tick": 62
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "tali / year 2561",
+      "flower_overlay": "flower node 4 in ecology ring",
+      "frequency_overlay": "253.715Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 25
+    },
+    {
+      "agent_markers": "agents turn shoulders against weather before working",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "weather-mild-2580 / year 2580",
+      "flower_overlay": "flower node 3 in ecology ring",
+      "frequency_overlay": "303.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "weather sensory wall",
+      "tick": 8
+    },
+    {
+      "agent_markers": "agents smell crop before deciding storage or compost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "hearth roof / year 2580",
+      "flower_overlay": "flower node 7 in ecology ring",
+      "frequency_overlay": "288.700Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "field and storage ledger",
+      "tick": 54
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "noro / year 2728",
+      "flower_overlay": "flower node 5 in ecology ring",
+      "frequency_overlay": "263.219Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 26
+    },
+    {
+      "agent_markers": "agent ties or unties a trade knot at public ledger",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "mat-glass-replay / year 2868",
+      "flower_overlay": "flower node 4 in ecology ring",
+      "frequency_overlay": "320.050Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "material exchange knot board",
+      "tick": 63
+    },
+    {
+      "agent_markers": "posture and movement speed reflect body cost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "savi / year 2878",
+      "flower_overlay": "flower node 6 in ecology ring",
+      "frequency_overlay": "272.154Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "life-stage body ledger",
+      "tick": 27
+    },
+    {
+      "agent_markers": "stands between gate and archive",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "savi / year 2878",
+      "flower_overlay": "flower node 6 in ecology ring",
+      "frequency_overlay": "245.750Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "apprenticeship yard",
+      "tick": 41
+    },
+    {
+      "agent_markers": "agent seeks warmth or withdraws from work without public shaming",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "savi / year 2882",
+      "flower_overlay": "flower node 12 in ecology ring",
+      "frequency_overlay": "216.500Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "care and recovery board",
+      "tick": 35
+    },
+    {
+      "agent_markers": "avatar waits outside the storm school until embodied ecology briefing finishes",
+      "avatar_position": "storm-school threshold after ecology briefing",
+      "camera_focus": "late-avatar-entry-after-embodied-ecology / year 2938",
+      "flower_overlay": "flower node 12 in ecology ring",
+      "frequency_overlay": "333.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "embodied avatar gate",
+      "tick": 64
+    },
+    {
+      "agent_markers": "agents turn shoulders against weather before working",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "weather-threshold-2940 / year 2940",
+      "flower_overlay": "flower node 12 in ecology ring",
+      "frequency_overlay": "333.000Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "weather sensory wall",
+      "tick": 9
+    },
+    {
+      "agent_markers": "agents smell crop before deciding storage or compost",
+      "avatar_position": "outside world as noninterfering ecology replay observer",
+      "camera_focus": "clinic-garden / year 2940",
+      "flower_overlay": "flower node 8 in ecology ring",
+      "frequency_overlay": "290.250Hz embodied ecology pulse",
+      "private_boundary": "private pain, illness, child, family, and workspace contents remain sealed digests",
+      "public_panel": "field and storage ledger",
+      "tick": 55
+    }
+  ],
+  "report": 220
+}

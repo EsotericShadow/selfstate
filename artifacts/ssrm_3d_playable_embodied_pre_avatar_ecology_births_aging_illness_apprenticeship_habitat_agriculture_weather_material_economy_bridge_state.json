@@ -1,0 +1,13 @@
+{
+  "agriculture_yield_stability": 0.75,
+  "birth_aging_traceability": 1.0,
+  "condition": "integrated_playable_embodied_pre_avatar_ecology_births_aging_illness_apprenticeship_habitat_agriculture_weather_material_economy",
+  "embodied_pre_avatar_ecology_readiness": 0.855896,
+  "illness_care_recovery_rate": 0.75,
+  "late_avatar_entry_integrity": 1.0,
+  "next_gate": "playable local 3D ecology scene with spatialized bodies, sensory fields, weather volumes, crop plots, habitat interiors, material objects, and avatar conversation entry",
+  "private_boundary": "sealed private pain, illness, child, family, and workspace digests only",
+  "report": 220,
+  "simulated_pre_avatar_years": 2758.0,
+  "source_condition": "integrated_playable_pre_avatar_civilization_autonomous_generations_child_learning_cultural_mutation_institution_competition_late_avatar_entry"
+}

@@ -1,0 +1,19 @@
+person_id,birth_year,observed_year,age,life_stage,household,lineage_role,energy,fatigue,hunger,cold_exposure,wetness,pain,apprenticeship_track,private_workspace_digest,frequency_hz,flower_node
+luma,120,126,6,child,hearth-north,warmth learner,0.868248,0.240631,0.216968,0.187341,0.125894,0.073728,warmth-stone,sealed:luma:body-workspace-private,113.550732,1
+kavi,300,318,18,apprentice,route-west,runner apprentice,0.807335,0.409206,0.268595,0.25064,0.19643,0.110163,route-work,sealed:kavi:body-workspace-private,122.280681,2
+sena,460,491,31,adult,cistern-low,water steward,0.777265,0.363526,0.320588,0.33078,0.254182,0.158712,water-care,sealed:sena:body-workspace-private,131.349917,3
+oro,620,671,51,elder,archive-hill,story keeper,0.716444,0.453288,0.371806,0.425248,0.32942,0.237903,archive-seal,sealed:oro:body-workspace-private,140.080886,4
+mira,780,787,7,child,field-east,seed learner,0.78753,0.245599,0.416509,0.492604,0.12556,0.081719,field-seed,sealed:mira:body-workspace-private,150.262825,5
+tov,940,958,18,apprentice,tool-south,repair apprentice,0.771616,0.428726,0.460925,0.182161,0.185564,0.206622,tool-repair,sealed:tov:body-workspace-private,159.487779,6
+ena,1100,1136,36,adult,hearth-south,care maker,0.799337,0.381633,0.215546,0.245584,0.263314,0.180227,care-ledger,sealed:ena:body-workspace-private,169.192703,7
+solen,1260,1324,64,elder,cistern-low,water memory,0.72669,0.521168,0.269793,0.352522,0.341841,0.266665,cistern-rule,sealed:solen:body-workspace-private,177.793585,8
+ariq,1420,1438,18,apprentice,bridge-house,bridge repair,0.781123,0.401302,0.323922,0.434567,0.125027,0.118238,stone-join,sealed:ariq:body-workspace-private,187.792355,9
+fayen,1580,1607,27,adult,clinic-hearth,medicine grower,0.761641,0.350548,0.360537,0.487849,0.184404,0.144606,medicine-garden,sealed:fayen:body-workspace-private,196.978048,10
+milom,1740,1751,11,child,runner-road,map learner,0.815537,0.247347,0.411301,0.165498,0.269646,0.088662,map-chant,sealed:milom:body-workspace-private,206.970909,11
+nian,1900,1920,20,apprentice,archive-hill,boundary speaker,0.752356,0.408482,0.477617,0.250108,0.325744,0.125511,boundary-song,sealed:nian:body-workspace-private,215.675915,12
+vara,2060,2102,42,adult,field-east,grain keeper,0.796011,0.421342,0.220613,0.33767,0.1198,0.208199,grain-ledger,sealed:vara:body-workspace-private,225.556118,1
+esh,2220,2287,67,elder,tool-south,repair memory,0.741533,0.521493,0.259009,0.408464,0.180093,0.28778,tool-return,sealed:esh:body-workspace-private,234.356864,2
+roka,2380,2392,12,child,river-bank,reed learner,0.776018,0.262332,0.32518,0.508031,0.258548,0.081691,reed-weave,sealed:roka:body-workspace-private,244.136196,3
+tali,2540,2561,21,adult,weather-tower,storm watcher,0.792229,0.309442,0.380244,0.178667,0.335754,0.127757,weather-chime,sealed:tali:body-workspace-private,253.714521,4
+noro,2700,2728,28,adult,market-ring,material ledger,0.80176,0.320127,0.426841,0.25699,0.129119,0.137694,trade-knot,sealed:noro:body-workspace-private,263.219356,5
+savi,2860,2878,18,apprentice,threshold-school,avatar briefing learner,0.759497,0.398884,0.484476,0.348692,0.190361,0.119274,threshold-brief,sealed:savi:body-workspace-private,272.154465,6

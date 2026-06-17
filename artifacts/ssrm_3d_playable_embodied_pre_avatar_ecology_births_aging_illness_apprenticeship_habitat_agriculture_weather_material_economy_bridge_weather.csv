@@ -1,0 +1,10 @@
+season_id,year,season,temperature_index,rainfall_index,wind_index,soundscape,smellscape,body_cost,crop_effect,shelter_effect,frequency_hz,flower_node
+weather-wet-120,120,wet winter,0.22,0.86,0.58,roof drip and low wind,wet wool and smoke,0.41,"reed grows, grain waits",warm alcove crowded,118.0,1
+weather-spring-300,300,cold spring,0.38,0.64,0.44,water over stones,green reed,0.28,seed delay,dry route useful,132.0,2
+weather-dry-620,620,short dry summer,0.73,0.24,0.35,insect hum,warm dust,0.22,grain rises then dries,shade debt grows,166.0,4
+weather-wind-980,980,dust wind,0.61,0.31,0.82,flap snap,dust and wax,0.33,herb leaves bruise,archive flap needed,189.0,6
+weather-flood-1340,1340,flood season,0.47,0.92,0.67,river roar,mud and reed rot,0.46,beans at risk,raised route saves travel,211.0,8
+weather-dark-1780,1780,dark winter,0.18,0.55,0.71,low storm pulse,cold clay,0.52,root stores matter,school indoors,244.0,10
+weather-storm-2180,2180,storm spring,0.35,0.77,0.88,teaching bell drowned,ozone and wet timber,0.49,root bed survives,storm house tested,277.0,12
+weather-mild-2580,2580,mild autumn,0.58,0.48,0.39,soft rain,moss and leaf,0.18,moss harvest strong,maintenance window,303.0,3
+weather-threshold-2940,2940,threshold storm,0.31,0.81,0.93,replay glass rattle,wet stone and fear sweat,0.55,calm herb stressed,avatar briefing moves indoors,333.0,12

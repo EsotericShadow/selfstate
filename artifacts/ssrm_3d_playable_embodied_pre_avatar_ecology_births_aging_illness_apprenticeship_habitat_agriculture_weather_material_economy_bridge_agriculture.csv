@@ -1,0 +1,9 @@
+cycle_id,year,field,crop_or_food,season,water_need,labor_need,yield_score,spoilage_risk,storage_method,ritual_or_institution_link,sensory_marker
+ag-reed-260,260,river-bank,reed bundles,wet spring,0.72,0.44,0.81,0.16,dry rack,reed-carrying-duty,wet reed smell
+ag-grain-620,620,field-east,stone grain,short summer,0.66,0.58,0.74,0.22,clay bin,grain-ledger,dust and warm husk
+ag-herb-980,980,clinic-garden,fever herb,cool spring,0.51,0.37,0.69,0.18,sealed medicine drawer,sealed-care-flap,sharp green smell
+ag-bean-1340,1340,terrace-west,ridge beans,wind summer,0.59,0.63,0.77,0.2,hanging basket,child-boundary-song,dry pod rattle
+ag-grain-1780,1780,field-east,stone grain,dry spring,0.78,0.66,0.63,0.31,clay bin and compost watch,food-ledger,mold warning smell
+ag-root-2180,2180,north root bed,winter root,dark winter,0.48,0.52,0.71,0.19,cold pit,warm-stone-near-rest,earth and frost
+ag-moss-2580,2580,hearth roof,insulation moss,wet autumn,0.42,0.49,0.83,0.12,roof braid,warm-alcove,rain moss smell
+ag-herb-2940,2940,clinic-garden,calm herb,storm season,0.57,0.46,0.67,0.28,sealed medicine drawer,threshold-school,bitter leaf

@@ -1,0 +1,14 @@
+condition,group_count,tool_kind_count,simulated_years,era_events,material_affordance_binding_rate,tool_lineage_continuity_rate,repair_practice_retention_rate,cultural_tool_symbol_binding_rate,resource_cost_accounting_rate,frequency_tool_resonance_rate,flower_design_inheritance_rate,safety_constraint_inheritance_rate,bounded_technical_innovation_rate,technology_diversity_rate,intergroup_transfer_rate,failure_recovery_rate,deep_time_continuity_rate,privacy_preservation_rate,trace_integrity,no_civilization_or_consciousness_claim_rate,deep_time_tool_ecology_readiness
+integrated_deep_time_tool_ecology_technology_lineage,3,9,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_material_affordances,3,9,2400,36,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.694444,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.838611
+no_tool_lineage,3,9,2400,36,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_repair_practices,3,9,2400,36,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.694444,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.908611
+no_cultural_symbol_binding,3,9,2400,36,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_resource_costs,3,9,2400,36,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_frequency_tool_resonance,3,9,2400,36,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_flower_design,3,9,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_safety_constraints,3,9,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.333333,1.0,1.0,1.0,0.111111,1.0,1.0,1.0,1.0,0.884444
+no_bounded_innovation,3,9,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_intergroup_transfer,3,9,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.95
+no_failure_recovery,3,9,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_privacy_filter,3,9,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.95

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report 171 - Daily Routine Sleep-Wake Bridge</title>
+  <script src="../artifacts/ssrm_3d_daily_routine_sleep_wake_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_daily_routine_sleep_wake_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_daily_routine_sleep_wake_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #21190f;
+      --muted: #6d604f;
+      --paper: #f4ead8;
+      --panel: rgba(255, 250, 240, 0.82);
+      --line: rgba(71, 52, 33, 0.18);
+      --night: #263b4e;
+      --dawn: #c9894d;
+      --leaf: #6c7b47;
+      --rose: #bb6e63;
+      --gold: #d6a449;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 50% 18%, rgba(214, 164, 73, 0.28), transparent 20rem),
+        radial-gradient(circle at 10% 82%, rgba(38, 59, 78, 0.22), transparent 26rem),
+        radial-gradient(circle at 90% 72%, rgba(108, 123, 71, 0.18), transparent 24rem),
+        linear-gradient(145deg, #f4ead8 0%, #dac49e 48%, #aeb58d 100%);
+      min-height: 100vh;
+      font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+    }
+
+    main {
+      width: min(1180px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 42px 0 64px;
+    }
+
+    header {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      max-width: 960px;
+      margin: 0;
+      font-family: Georgia, "Iowan Old Style", serif;
+      font-size: clamp(2.4rem, 7vw, 5.9rem);
+      line-height: 0.92;
+      letter-spacing: -0.06em;
+    }
+
+    .lede {
+      max-width: 880px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      line-height: 1.55;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 18px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(67, 45, 21, 0.14);
+      padding: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: end;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric-row:last-child {
+      border-bottom: 0;
+    }
+
+    .metric-label {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .metric-value {
+      font-size: 1.35rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .clock {
+      position: relative;
+      min-height: 520px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.36), transparent 32%),
+        conic-gradient(from -90deg, rgba(38, 59, 78, 0.26), rgba(201, 137, 77, 0.24), rgba(108, 123, 71, 0.22), rgba(187, 110, 99, 0.20), rgba(38, 59, 78, 0.26));
+    }
+
+    .orbit {
+      position: absolute;
+      inset: 44px;
+      border: 1px solid rgba(33, 25, 15, 0.16);
+      border-radius: 50%;
+    }
+
+    .petal {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 38%;
+      height: 19%;
+      transform-origin: 0 50%;
+      border: 1px solid rgba(33, 25, 15, 0.12);
+      border-radius: 999px;
+      background: rgba(255, 250, 240, 0.30);
+    }
+
+    .agent {
+      position: absolute;
+      width: 86px;
+      min-height: 92px;
+      transform: translate(-50%, -50%);
+      display: grid;
+      justify-items: center;
+      gap: 5px;
+      padding: 9px;
+      border: 1px solid rgba(73, 45, 22, 0.14);
+      border-radius: 24px;
+      background: rgba(255, 252, 244, 0.78);
+      box-shadow: 0 18px 38px rgba(75, 48, 25, 0.14);
+    }
+
+    .agent.asleep {
+      background: rgba(224, 233, 237, 0.88);
+      filter: saturate(0.82);
+    }
+
+    .agent.interrupted {
+      outline: 3px dashed rgba(187, 110, 99, 0.42);
+    }
+
+    .body {
+      width: 38px;
+      height: 42px;
+      border-radius: 48% 48% 38% 38%;
+      background: linear-gradient(160deg, var(--gold), var(--dawn));
+    }
+
+    .agent.asleep .body {
+      transform: rotate(82deg) scaleX(1.16);
+      background: linear-gradient(160deg, #8da5b1, var(--night));
+    }
+
+    .agent-name {
+      max-width: 100%;
+      color: var(--muted);
+      font-size: 0.68rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .agent-state {
+      display: inline-flex;
+      max-width: 100%;
+      padding: 4px 7px;
+      border-radius: 999px;
+      color: white;
+      background: var(--leaf);
+      font-size: 0.66rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 9px;
+      max-height: 520px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .event {
+      display: grid;
+      gap: 5px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .event strong {
+      color: var(--night);
+    }
+
+    .event small {
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: rgba(255, 255, 255, 0.44);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .clock {
+        min-height: 620px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Daily routine sleep-wake continuity</h1>
+      <p class="lede">Report 171 gives the agents a repeating day: sleep pressure, recovery, work, social return, home return, night ritual, dream-like rehearsal, interruption costs, and frequency/flower rhythm. It preserves the no-subjective-consciousness-claim boundary.</p>
+    </header>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Readiness</h2>
+        <div id="metrics"></div>
+        <div class="chips">
+          <span class="chip">Circadian phase</span>
+          <span class="chip">Rest recovery</span>
+          <span class="chip">Flower rhythm</span>
+          <span class="chip">Private workspace hidden</span>
+        </div>
+      </article>
+      <article class="panel">
+        <h2>Why this matters</h2>
+        <p>A convincing little person needs time continuity. This bridge makes body cost accumulate, sleep repair state, routines recur, familiar places pull agents home, and interruptions leave bounded recoverable consequences.</p>
+        <p>The flower-cycle layer is structural rhythm, not a consciousness claim. It gives later sensory, music, ritual, and group mood systems a shared harmonic grammar.</p>
+      </article>
+    </section>
+
+    <section class="grid" style="margin-top: 18px;">
+      <article class="panel clock" id="clock" aria-label="Daily rhythm stage">
+        <div class="orbit"></div>
+      </article>
+      <article class="panel">
+        <h2>Recent daily trace</h2>
+        <div class="timeline" id="timeline"></div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const results = window.SSRM_3D_DAILY_ROUTINE_SLEEP_WAKE_RESULTS || {};
+    const trace = window.SSRM_3D_DAILY_ROUTINE_SLEEP_WAKE_TRACE || [];
+    const verdict = results.verdict || {};
+    const integrated = (results.rows || []).find((row) => row.condition === "integrated_daily_routine_sleep_wake") || {};
+
+    const metricItems = [
+      ["verdict", verdict.verdict || "unknown"],
+      ["readiness", integrated.daily_routine_sleep_wake_readiness],
+      ["circadian", integrated.circadian_phase_binding],
+      ["rest recovery", integrated.rest_recovery_rate],
+      ["frequency", integrated.frequency_rhythm_coherence],
+      ["trace", integrated.trace_integrity]
+    ];
+
+    document.getElementById("metrics").innerHTML = metricItems.map(([label, value]) => {
+      const rendered = typeof value === "number" ? value.toFixed(6) : value;
+      return `<div class="metric-row"><span class="metric-label">${label}</span><span class="metric-value">${rendered}</span></div>`;
+    }).join("");
+
+    const clock = document.getElementById("clock");
+    for (let i = 0; i < 6; i += 1) {
+      const petal = document.createElement("div");
+      petal.className = "petal";
+      petal.style.transform = `rotate(${i * 60}deg) translate(0, -50%)`;
+      clock.appendChild(petal);
+    }
+
+    const latestByAgent = new Map();
+    for (const event of trace) {
+      latestByAgent.set(event.agent_id, event);
+    }
+
+    [...latestByAgent.entries()].slice(0, 8).forEach(([agentId, event], index) => {
+      const angle = (index / Math.max(1, latestByAgent.size)) * Math.PI * 2 - Math.PI / 2;
+      const radius = event.asleep ? 24 : 36;
+      const left = 50 + Math.cos(angle) * radius;
+      const top = 50 + Math.sin(angle) * radius;
+      const node = document.createElement("div");
+      node.className = `agent${event.asleep ? " asleep" : ""}${event.interrupted ? " interrupted" : ""}`;
+      node.style.left = `${left}%`;
+      node.style.top = `${top}%`;
+      node.innerHTML = `
+        <div class="body"></div>
+        <div class="agent-name">${agentId}</div>
+        <div class="agent-state">${event.phase} / ${event.action}</div>
+      `;
+      clock.appendChild(node);
+    });
+
+    document.getElementById("timeline").innerHTML = trace.slice(-36).reverse().map((event) => `
+      <div class="event">
+        <strong>day ${event.day} ${event.phase}: ${event.agent_id}</strong>
+        <small>${event.action} at ${event.place}; sleep ${event.asleep}; social ${event.social_contact || "none"}; dream rehearsal ${event.dream_memory_rehearsal}</small>
+        <small>energy ${Number(event.energy || 0).toFixed(3)}; fatigue ${Number(event.fatigue || 0).toFixed(3)}; rest debt ${Number(event.rest_debt || 0).toFixed(3)}; frequency ${Number(event.frequency_hz || 0).toFixed(3)}; flower ${event.flower_node}</small>
+      </div>
+    `).join("");
+  </script>
+</body>
+</html>

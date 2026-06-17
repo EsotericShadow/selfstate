@@ -1,0 +1,12 @@
+condition,agent_count,trace_events,circadian_phase_binding,sleep_pressure_coupling,rest_recovery_rate,routine_completion_rate,place_return_rate,social_return_rate,interruption_consequence_rate,dream_memory_rehearsal_rate,wake_transition_stability,fatigue_boundedness_rate,frequency_rhythm_coherence,flower_cycle_alignment,privacy_preservation_rate,replay_continuity_rate,trace_integrity,daily_routine_sleep_wake_readiness
+integrated_daily_routine_sleep_wake,8,256,1.0,0.96875,0.224805,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.935797
+no_circadian_clock,8,256,0.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.324219,1.0,1.0,1.0,1.0,1.0,0.802695
+no_body_recovery,8,256,1.0,1.0,0.0,1.0,1.0,1.0,0.980469,1.0,1.0,0.28125,1.0,1.0,1.0,1.0,1.0,0.86832
+no_routine_memory,8,256,0.167969,0.96875,0.224805,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.807555
+no_place_affinity,8,256,1.0,0.96875,0.224805,1.0,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.900797
+no_social_return,8,256,1.0,0.96875,0.224805,1.0,1.0,0.75,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.920797
+no_interrupt_consequence,8,256,1.0,0.957031,0.220898,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.934664
+no_dream_rehearsal,8,256,1.0,0.96875,0.224805,1.0,1.0,1.0,1.0,0.773438,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.922203
+no_replay_continuity,8,256,1.0,0.96875,0.224805,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.885797
+no_frequency_phase,8,256,1.0,0.96875,0.224805,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,0.805797
+no_sleep_safety_guard,8,256,1.0,0.96875,0.224805,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.935797

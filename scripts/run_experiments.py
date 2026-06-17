@@ -1434,6 +1434,16 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_daily_routine_sleep_wake_bridge.py",
+        "--seed",
+        "20260715",
+        "--days",
+        "4",
+        "--ticks-per-day",
+        "8",
+    ],
+    [
+        sys.executable,
         "experiments/ssrm_3d_learned_multiday_maturation_controller.py",
         "--train-seeds",
         "20260911,20260912,20260913,20260914,20260915,20260916",

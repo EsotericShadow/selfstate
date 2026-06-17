@@ -1,0 +1,10 @@
+condition,councils,generated_proposals,accepted_proposals,rejected_proposals,source_rejected_body_rate,council_queue_persistence_rate,decision_reason_coverage,budget_failure_evidence_rate,faction_vote_memory_rate,dialogue_grounding_rate,source_feedback_link_rate,source_originality_status_rate,replay_trace_integrity,source_native_readiness
+integrated_source_native_council_ledger,18,144,67,77,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_source_rejected_body_storage,18,144,67,77,0.0,1.0,0.465278,0.0,0.465278,1.0,1.0,0.465278,1.0,0.588889
+no_council_queue_persistence,18,144,67,77,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.89
+no_rank_decision_trace,18,144,67,77,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_budget_failure_evidence,18,144,67,77,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_faction_vote_memory,18,144,67,77,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.9
+no_dialogue_grounding,18,144,67,77,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.87
+no_source_mutation_feedback,18,144,54,90,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.9
+no_trace_replay,18,144,67,77,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.9

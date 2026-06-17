@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Source-Native Council Ledger Bridge</title>
+  <style>
+    :root {
+      --ink: #201b14;
+      --muted: #6a604e;
+      --paper: #f7ead0;
+      --panel: rgba(255, 250, 236, 0.9);
+      --line: rgba(54, 39, 19, 0.2);
+      --rust: #a34f23;
+      --teal: #315f67;
+      --green: #607642;
+      --gold: #b5872d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "Iowan Old Style", Georgia, serif;
+      background:
+        radial-gradient(circle at 15% 12%, rgba(163,79,35,0.28), transparent 28rem),
+        radial-gradient(circle at 86% 10%, rgba(49,95,103,0.24), transparent 30rem),
+        repeating-radial-gradient(circle at 50% 50%, rgba(32,27,20,0.035) 0 1px, transparent 1px 24px),
+        linear-gradient(132deg, #d7bc82 0%, #f8edcf 48%, #c79b5b 100%);
+    }
+    header { padding: 44px clamp(18px, 5vw, 72px) 18px; }
+    h1 { margin: 0; max-width: 1120px; font-size: clamp(2.2rem, 5.6vw, 5.6rem); line-height: 0.9; letter-spacing: -0.06em; }
+    .subtitle { max-width: 960px; color: var(--muted); margin-top: 18px; font-size: 1.06rem; }
+    main { display: grid; grid-template-columns: minmax(300px, 0.9fr) minmax(340px, 1.15fr); gap: 18px; padding: 18px clamp(18px, 5vw, 72px) 54px; }
+    section, .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 24px; box-shadow: 0 24px 80px rgba(46,34,18,0.16); backdrop-filter: blur(9px); }
+    section { padding: 18px; }
+    h2 { margin: 0 0 12px; font-size: 1.12rem; letter-spacing: -0.02em; }
+    .metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .metric { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.43); }
+    .metric b { display: block; color: var(--rust); font-size: 1.35rem; }
+    .metric span { color: var(--muted); font-size: 0.8rem; }
+    select, textarea, button { width: 100%; border: 1px solid var(--line); border-radius: 16px; padding: 11px 12px; background: rgba(255,255,255,0.72); color: var(--ink); font: inherit; }
+    textarea { min-height: 92px; resize: vertical; margin: 10px 0; }
+    button { background: var(--ink); color: var(--paper); cursor: pointer; }
+    .answer { margin-top: 12px; padding: 14px; border-radius: 18px; background: rgba(32,27,20,0.065); white-space: pre-wrap; }
+    .tag { display: inline-block; padding: 4px 8px; border-radius: 999px; margin: 2px; background: rgba(163,79,35,0.13); color: var(--rust); font-size: 0.78rem; }
+    .small { color: var(--muted); font-size: 0.88rem; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+    .trace-list { max-height: 560px; overflow: auto; display: grid; gap: 10px; padding-right: 6px; }
+    .trace-item { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.42); }
+    .trace-item strong { color: var(--teal); }
+    @media (max-width: 880px) { main, .grid { grid-template-columns: 1fr; } .metrics { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rejected proposals are now stored at the source decision loop.</h1>
+    <p class="subtitle">Report 152 records proposal bodies before and during council decisions, then lets the avatar audit source-native rejected bodies, ranks, budget deficits, faction votes, feedback, and originality status.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Bridge verdict</h2>
+      <div class="metrics" id="metrics"></div>
+      <div class="grid">
+        <div class="tile" style="padding:14px">
+          <h2>Ledger objects</h2>
+          <div id="objects" class="small"></div>
+        </div>
+        <div class="tile" style="padding:14px">
+          <h2>Ledger counts</h2>
+          <div id="counts" class="small"></div>
+        </div>
+      </div>
+      <h2 style="margin-top:18px">Replay source-grounded question</h2>
+      <select id="sessionSelect"></select>
+      <textarea id="questionBox"></textarea>
+      <button id="askButton">Replay deterministic answer</button>
+      <div class="answer" id="answerBox"></div>
+    </section>
+    <section>
+      <h2>Trace</h2>
+      <div class="trace-list" id="traceList"></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_source_native_council_ledger_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_source_native_council_ledger_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_source_native_council_ledger_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_SOURCE_NATIVE_COUNCIL_LEDGER_RESULTS || { verdict: {} };
+    const trace = window.SSRM_3D_SOURCE_NATIVE_COUNCIL_LEDGER_TRACE || [];
+    const state = window.SSRM_3D_SOURCE_NATIVE_COUNCIL_LEDGER_STATE || {};
+    const verdict = results.verdict || {};
+    const metricKeys = [
+      ['full_source_native_readiness', 'source-native readiness'],
+      ['full_source_rejected_body_rate', 'rejected bodies'],
+      ['full_council_queue_persistence_rate', 'queue persistence'],
+      ['full_budget_failure_evidence_rate', 'budget evidence'],
+      ['full_faction_vote_memory_rate', 'faction votes'],
+      ['full_source_originality_status_rate', 'source originality']
+    ];
+    document.getElementById('metrics').innerHTML = metricKeys.map(([key, label]) => `<div class="metric"><b>${Number(verdict[key] || 0).toFixed(3)}</b><span>${label}</span></div>`).join('');
+    const objects = state.ledger_objects || {};
+    document.getElementById('objects').innerHTML = Object.entries(objects).map(([key, value]) => `<span class="tag">${key}</span><br>${value}`).join('<br><br>');
+    const proposals = state.source_proposals || [];
+    const accepted = proposals.filter(p => p.decision === 'accepted').length;
+    const rejected = proposals.filter(p => p.decision === 'rejected').length;
+    document.getElementById('counts').innerHTML = `<span class="tag">councils ${(state.council_source_ledger || []).length}</span><span class="tag">accepted ${accepted}</span><span class="tag">rejected ${rejected}</span><span class="tag">dialogue ${(state.dialogue_trace || []).length}</span>`;
+    const dialogue = state.dialogue_trace || [];
+    const select = document.getElementById('sessionSelect');
+    dialogue.forEach((item, idx) => {
+      const option = document.createElement('option');
+      option.value = String(idx);
+      option.textContent = `${item.session_id}: ${item.intent} / ${item.proposal_decision}`;
+      select.appendChild(option);
+    });
+    const questionBox = document.getElementById('questionBox');
+    const answerBox = document.getElementById('answerBox');
+    function renderSelected() {
+      const item = dialogue[Number(select.value || 0)] || dialogue[0] || {};
+      questionBox.value = item.question || '';
+      answerBox.textContent = item.answer || 'No dialogue trace loaded.';
+    }
+    select.addEventListener('change', renderSelected);
+    document.getElementById('askButton').addEventListener('click', () => {
+      const text = questionBox.value.toLowerCase();
+      const found = dialogue.find(item => (item.question || '').toLowerCase() === text) || dialogue.find(item => text.includes(item.intent));
+      answerBox.textContent = found ? found.answer : 'This viewer only replays generated source-native ledger sessions. It does not synthesize open dialogue.';
+    });
+    const flatTrace = trace.filter(item => item.session_id).slice(0, 120);
+    document.getElementById('traceList').innerHTML = flatTrace.map(item => `<div class="trace-item"><strong>${item.session_id}</strong> <span class="tag">${item.intent}</span> <span class="tag">${item.proposal_decision}</span><div class="small">${item.question}</div><p>${item.answer}</p></div>`).join('');
+    renderSelected();
+  </script>
+</body>
+</html>

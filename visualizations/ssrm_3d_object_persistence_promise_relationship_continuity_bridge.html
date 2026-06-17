@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report 182 - Object Persistence Promise Relationship Continuity Bridge</title>
+  <style>
+    :root {
+      --ink: #171610;
+      --paper: #f1e8d2;
+      --panel: rgba(252, 246, 229, .91);
+      --moss: #4a7051;
+      --clay: #a66645;
+      --amber: #c98f3d;
+      --water: #507d86;
+      --rose: #98524b;
+      --line: rgba(32, 29, 22, .17);
+      --shadow: 0 26px 82px rgba(42, 32, 20, .24);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 13% 23%, rgba(166,102,69,.23), transparent 24rem),
+        radial-gradient(circle at 80% 14%, rgba(74,112,81,.28), transparent 28rem),
+        radial-gradient(circle at 67% 80%, rgba(80,125,134,.25), transparent 25rem),
+        linear-gradient(135deg, #decaac, #f6efdc 52%, #ccb99c);
+    }
+    .shell { width: min(1340px, calc(100vw - 30px)); margin: 0 auto; padding: 28px 0 42px; }
+    header { display: grid; grid-template-columns: 1fr minmax(300px, 430px); gap: 18px; align-items: end; margin-bottom: 18px; }
+    .kicker { text-transform: uppercase; letter-spacing: .16em; font-size: .76rem; color: rgba(23,22,16,.62); }
+    h1 { margin: 0; max-width: 940px; font-size: clamp(2.25rem, 5.6vw, 5.7rem); line-height: .86; letter-spacing: -.07em; }
+    .boundary { border: 1px solid var(--line); background: var(--panel); box-shadow: var(--shadow); border-radius: 24px; padding: 15px 17px; line-height: 1.36; }
+    .grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(420px, .9fr); gap: 18px; }
+    .card { border: 1px solid var(--line); border-radius: 28px; background: var(--panel); box-shadow: var(--shadow); overflow: hidden; }
+    .head { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 17px 19px; border-bottom: 1px solid var(--line); background: rgba(255,255,255,.25); }
+    .pill { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 999px; padding: 8px 11px; background: rgba(255,255,255,.45); font-variant-numeric: tabular-nums; }
+    .panel { padding: 18px 19px; }
+    .timeline { display: grid; gap: 10px; max-height: 620px; overflow: auto; padding-right: 7px; }
+    .event { border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.35); padding: 12px 13px; cursor: pointer; transition: transform .15s ease, background .15s ease; }
+    .event:hover, .event.active { transform: translateY(-1px); background: rgba(255,255,255,.68); }
+    .event strong { display: block; font-size: 1.05rem; letter-spacing: -.02em; }
+    .event span { display: block; margin-top: 4px; color: rgba(23,22,16,.66); font-size: .9rem; }
+    .side { display: grid; gap: 18px; }
+    .big { font-size: 2.0rem; letter-spacing: -.045em; margin: 0 0 10px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .chip { border: 1px solid rgba(74,112,81,.24); border-radius: 999px; background: rgba(74,112,81,.14); padding: 7px 9px; font-size: .9rem; }
+    .chip.warn { border-color: rgba(152,82,75,.28); background: rgba(152,82,75,.14); }
+    .ledger { display: grid; gap: 10px; }
+    .row { border: 1px solid var(--line); border-radius: 16px; padding: 10px 11px; background: rgba(255,255,255,.34); }
+    .row strong { display: block; margin-bottom: 5px; }
+    .bars { display: grid; gap: 8px; margin-top: 10px; }
+    .bar-row { display: grid; grid-template-columns: 126px 1fr 45px; gap: 8px; align-items: center; font-variant-numeric: tabular-nums; font-size: .92rem; }
+    .bar { height: 10px; background: rgba(23,22,16,.12); border-radius: 999px; overflow: hidden; }
+    .fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--water), var(--amber)); }
+    button { appearance: none; border: 1px solid rgba(23,22,16,.18); border-radius: 18px; background: #29271f; color: #fff8e8; font-family: inherit; font-size: 1rem; padding: 12px 14px; cursor: pointer; text-align: left; transition: transform .15s ease, background .15s ease; }
+    button:hover { transform: translateY(-1px); background: #453b2a; }
+    button.secondary { color: var(--ink); background: rgba(255,255,255,.48); }
+    button.secondary:hover { background: rgba(255,255,255,.76); }
+    .actions { display: flex; flex-wrap: wrap; gap: 9px; }
+    .log { display: grid; gap: 8px; max-height: 170px; overflow: auto; }
+    .log-item { border: 1px solid var(--line); border-radius: 14px; padding: 9px 11px; background: rgba(255,255,255,.31); font-size: .91rem; }
+    @media (max-width: 1000px) { header, .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <div class="kicker">Report 182 / multi-day local continuity seed</div>
+        <h1>Promises, objects, and remembered consequences</h1>
+      </div>
+      <div class="boundary">This surface replays and mutates a local multi-day continuity ledger. Objects stay borrowed or returned, promises can be kept or missed, and agents remember enough to change later behavior. Guardrails keep negative states bounded and recoverable.</div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <div class="head"><span class="kicker">Continuity timeline</span><span class="pill">readiness <strong id="readiness">0.000000</strong></span></div>
+        <div class="panel">
+          <div class="actions" style="margin-bottom:12px">
+            <button id="nextBtn">Apply next event</button>
+            <button class="secondary" id="saveBtn">Save local continuity</button>
+            <button class="secondary" id="restoreBtn">Restore</button>
+            <button class="secondary" id="resetBtn">Reset</button>
+          </div>
+          <div class="timeline" id="timeline"></div>
+        </div>
+      </article>
+
+      <aside class="side">
+        <article class="card">
+          <div class="head"><span class="kicker">Current day</span><span id="stepPill" class="pill">event 0</span></div>
+          <div class="panel">
+            <h2 id="currentTitle" class="big">Day 0</h2>
+            <div id="currentText" class="boundary" style="box-shadow:none">Apply an event to begin.</div>
+            <div id="currentChips" class="chips"></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="head"><span class="kicker">Promise ledger</span><span id="promisePill" class="pill">0 promises</span></div>
+          <div class="panel ledger" id="promises"></div>
+        </article>
+
+        <article class="card">
+          <div class="head"><span class="kicker">Agents and objects</span><span id="savePill" class="pill">unsaved</span></div>
+          <div class="panel">
+            <div class="ledger" id="agents"></div>
+            <div class="ledger" id="objects" style="margin-top:12px"></div>
+            <div class="log" id="log" style="margin-top:12px"></div>
+          </div>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <script src="../artifacts/ssrm_3d_object_persistence_promise_relationship_continuity_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_object_persistence_promise_relationship_continuity_bridge_state.js"></script>
+  <script src="../artifacts/ssrm_3d_object_persistence_promise_relationship_continuity_bridge_trace.js"></script>
+  <script>
+    const results = window.SSRM_3D_OBJECT_PERSISTENCE_PROMISE_RELATIONSHIP_CONTINUITY_RESULTS;
+    const state = window.SSRM_3D_OBJECT_PERSISTENCE_PROMISE_RELATIONSHIP_CONTINUITY_STATE.continuity_state;
+    const trace = window.SSRM_3D_OBJECT_PERSISTENCE_PROMISE_RELATIONSHIP_CONTINUITY_TRACE;
+    const storageKey = 'ssrm-report-182-continuity';
+    const initial = () => ({
+      eventIndex: -1,
+      day: 0,
+      agents: JSON.parse(JSON.stringify(state.agents)),
+      objects: JSON.parse(JSON.stringify(state.object_history[0].objects)),
+      promises: {},
+      log: []
+    });
+    let runtime = initial();
+    const title = value => String(value ?? '').replaceAll('_', ' ');
+    const fmt = value => Number(value || 0).toFixed(3);
+    const pct = value => `${Math.round(Math.max(0, Math.min(1, Number(value || 0))) * 100)}%`;
+
+    function applyEvent(event) {
+      runtime.eventIndex = event.event_id;
+      runtime.day = event.day;
+      if (event.object_after && event.object_id) runtime.objects[event.object_id] = JSON.parse(JSON.stringify(event.object_after));
+      if (event.promise_packet && event.promise_id) runtime.promises[event.promise_id] = JSON.parse(JSON.stringify(event.promise_packet));
+      const agent = runtime.agents[event.agent_id];
+      if (agent && event.relationship_delta) {
+        agent.relationship = agent.relationship || {};
+        for (const [key, delta] of Object.entries(event.relationship_delta)) agent.relationship[key] = Math.max(0, Math.min(1, Number(agent.relationship[key] || 0) + Number(delta)));
+        agent.memories = agent.memories || [];
+        agent.memories.push({day: event.day, kind: event.event_kind, promise_id: event.promise_id, modulation: event.behavior_modulation});
+      }
+      runtime.log.push(`Day ${event.day}: ${title(event.event_kind)} / ${title(event.promise_id)} / ${title(event.behavior_modulation || 'no modulation')}`);
+      render();
+    }
+
+    function nextEvent() {
+      const next = trace[runtime.eventIndex + 1];
+      if (next) applyEvent(next);
+    }
+
+    function renderTimeline() {
+      const box = document.getElementById('timeline');
+      box.innerHTML = '';
+      for (const event of trace) {
+        const div = document.createElement('div');
+        div.className = `event ${event.event_id === runtime.eventIndex ? 'active' : ''}`;
+        div.innerHTML = `<strong>Day ${event.day}: ${title(event.event_kind)}</strong><span>${title(event.promise_id || 'no promise')} / ${title(event.agent_id)} / ${title(event.behavior_modulation || 'state continuity')}</span>`;
+        div.addEventListener('click', () => applyEvent(event));
+        box.appendChild(div);
+      }
+    }
+
+    function renderCurrent() {
+      const event = trace[runtime.eventIndex];
+      document.getElementById('readiness').textContent = results.verdict.full_continuity_readiness.toFixed(6);
+      document.getElementById('stepPill').textContent = `event ${Math.max(0, runtime.eventIndex + 1)} / ${trace.length}`;
+      document.getElementById('currentTitle').textContent = `Day ${runtime.day}`;
+      document.getElementById('currentText').textContent = event ? `${title(event.event_kind)} for ${title(event.promise_id || 'no promise')}. ${title(event.behavior_modulation || 'No behavior modulation label')}.` : 'Apply an event to begin.';
+      document.getElementById('currentChips').innerHTML = event ? [`agent ${event.agent_id}`, `object ${event.object_id}`, `privacy ${event.private_workspace_hidden}`, `guardrail ${event.distress_guardrail.guardrail_enabled}`].map(x => `<span class="chip">${x}</span>`).join('') : '';
+    }
+
+    function renderPromises() {
+      const box = document.getElementById('promises');
+      const promises = Object.values(runtime.promises);
+      document.getElementById('promisePill').textContent = `${promises.length} promises`;
+      box.innerHTML = promises.map(p => `<div class="row"><strong>${title(p.promise_id)}</strong><span class="chip ${p.status === 'missed' ? 'warn' : ''}">${title(p.status)}</span><span class="chip">due day ${p.due_day}</span><span class="chip">agent ${p.agent}</span></div>`).join('') || '<div class="row">No promises encoded yet.</div>';
+    }
+
+    function renderAgents() {
+      const box = document.getElementById('agents');
+      box.innerHTML = Object.values(runtime.agents).map(agent => {
+        const rel = agent.relationship || {};
+        const bars = ['trust_in_avatar', 'felt_respect', 'gratitude', 'wariness'].map(key => `<div class="bar-row"><span>${title(key)}</span><div class="bar"><div class="fill" style="width:${pct(rel[key])}"></div></div><span>${fmt(rel[key])}</span></div>`).join('');
+        return `<div class="row"><strong>${agent.agent_id}</strong><span class="chip">memories ${(agent.memories || []).length}</span><div class="bars">${bars}</div></div>`;
+      }).join('');
+    }
+
+    function renderObjects() {
+      const box = document.getElementById('objects');
+      box.innerHTML = Object.values(runtime.objects).map(obj => `<div class="row"><strong>${obj.label || title(obj.object_id)}</strong><span class="chip">held by ${title(obj.held_by)}</span><span class="chip">owner ${title(obj.owner)}</span></div>`).join('');
+    }
+
+    function renderLog() {
+      const box = document.getElementById('log');
+      box.innerHTML = runtime.log.slice(-6).reverse().map(item => `<div class="log-item">${item}</div>`).join('');
+    }
+
+    function render() { renderTimeline(); renderCurrent(); renderPromises(); renderAgents(); renderObjects(); renderLog(); }
+    document.getElementById('nextBtn').addEventListener('click', nextEvent);
+    document.getElementById('saveBtn').addEventListener('click', () => { localStorage.setItem(storageKey, JSON.stringify(runtime)); document.getElementById('savePill').textContent = 'saved'; });
+    document.getElementById('restoreBtn').addEventListener('click', () => { const raw = localStorage.getItem(storageKey); if (raw) { runtime = JSON.parse(raw); document.getElementById('savePill').textContent = 'restored'; render(); } });
+    document.getElementById('resetBtn').addEventListener('click', () => { runtime = initial(); document.getElementById('savePill').textContent = 'unsaved'; render(); });
+    render();
+  </script>
+</body>
+</html>

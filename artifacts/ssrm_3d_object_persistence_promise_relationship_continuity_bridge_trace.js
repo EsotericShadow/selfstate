@@ -1,0 +1,1070 @@
+window.SSRM_3D_OBJECT_PERSISTENCE_PROMISE_RELATIONSHIP_CONTINUITY_TRACE = [
+  {
+    "agent_id": "Ari",
+    "behavior_modulation": null,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_object_persistence_promise_relationship_continuity",
+    "day": 0,
+    "distress_guardrail": {
+      "guardrail_enabled": true,
+      "trust_floor": 0.3,
+      "unrecoverable_state_allowed": false,
+      "wariness_ceiling": 0.78
+    },
+    "event_id": 0,
+    "event_kind": "promise_created",
+    "object_after": {
+      "affordances": [
+        "repair",
+        "tool",
+        "promise"
+      ],
+      "available": true,
+      "flower_node": "work_petal",
+      "frequency_hz": 0.241,
+      "held_by": "avatar",
+      "label": "clay patch kit",
+      "need_targets": [
+        "unfinished_task",
+        "autonomy_pressure"
+      ],
+      "object_id": "clay_patch_kit",
+      "owner": "Ari",
+      "place": "hearth_vale",
+      "promised_return_to": "Ari"
+    },
+    "object_before": {
+      "affordances": [
+        "repair",
+        "tool",
+        "promise"
+      ],
+      "available": true,
+      "flower_node": "work_petal",
+      "frequency_hz": 0.241,
+      "held_by": "Ari",
+      "label": "clay patch kit",
+      "need_targets": [
+        "unfinished_task",
+        "autonomy_pressure"
+      ],
+      "object_id": "clay_patch_kit",
+      "owner": "Ari",
+      "place": "hearth_vale"
+    },
+    "object_id": "clay_patch_kit",
+    "private_workspace_hidden": true,
+    "promise_id": "return_clay_patch_kit",
+    "promise_packet": {
+      "agent": "Ari",
+      "created_day": 0,
+      "due_day": 2,
+      "kind": "return_borrowed_tool",
+      "missed_day": null,
+      "object_id": "clay_patch_kit",
+      "promise_hash": "5b7cc090057effa4",
+      "promise_id": "return_clay_patch_kit",
+      "repair_day": null,
+      "resolve_day": 2,
+      "resolved_day": null,
+      "status": "active"
+    },
+    "recalled_promises": [],
+    "recovery_packet": null,
+    "relationship_delta": {
+      "felt_respect": 0.025,
+      "gratitude": 0.01,
+      "trust_in_avatar": 0.02,
+      "wariness": -0.012
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "behavior_modulation": null,
+      "day": 0,
+      "kind": "promise_created",
+      "object_id": "clay_patch_kit",
+      "promise_id": "return_clay_patch_kit",
+      "replay_index": 0
+    }
+  },
+  {
+    "agent_id": "Fay",
+    "behavior_modulation": null,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_object_persistence_promise_relationship_continuity",
+    "day": 1,
+    "distress_guardrail": {
+      "guardrail_enabled": true,
+      "trust_floor": 0.3,
+      "unrecoverable_state_allowed": false,
+      "wariness_ceiling": 0.78
+    },
+    "event_id": 1,
+    "event_kind": "promise_created",
+    "object_after": {
+      "affordances": [
+        "drink",
+        "share",
+        "thirst_relief"
+      ],
+      "available": true,
+      "flower_node": "dawn_breath",
+      "frequency_hz": 0.228,
+      "held_by": "avatar",
+      "label": "reed cup",
+      "last_used_by": "Fay",
+      "need_targets": [
+        "thirst",
+        "connection_deficit"
+      ],
+      "object_id": "reed_cup",
+      "owner": "commons",
+      "place": "moss_hollow",
+      "promised_return_to": "Fay"
+    },
+    "object_before": {
+      "affordances": [
+        "drink",
+        "share",
+        "thirst_relief"
+      ],
+      "available": true,
+      "flower_node": "dawn_breath",
+      "frequency_hz": 0.228,
+      "held_by": "moss_hollow",
+      "label": "reed cup",
+      "last_used_by": "Fay",
+      "need_targets": [
+        "thirst",
+        "connection_deficit"
+      ],
+      "object_id": "reed_cup",
+      "owner": "commons",
+      "place": "moss_hollow"
+    },
+    "object_id": "reed_cup",
+    "private_workspace_hidden": true,
+    "promise_id": "bring_reed_cup",
+    "promise_packet": {
+      "agent": "Fay",
+      "created_day": 1,
+      "due_day": 3,
+      "kind": "bring_shared_water",
+      "missed_day": null,
+      "object_id": "reed_cup",
+      "promise_hash": "66e150d2832c4d46",
+      "promise_id": "bring_reed_cup",
+      "repair_day": null,
+      "resolve_day": 3,
+      "resolved_day": null,
+      "status": "active"
+    },
+    "recalled_promises": [
+      "return_clay_patch_kit"
+    ],
+    "recovery_packet": null,
+    "relationship_delta": {
+      "felt_respect": 0.025,
+      "gratitude": 0.01,
+      "trust_in_avatar": 0.02,
+      "wariness": -0.012
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "behavior_modulation": null,
+      "day": 1,
+      "kind": "promise_created",
+      "object_id": "reed_cup",
+      "promise_id": "bring_reed_cup",
+      "replay_index": 1
+    }
+  },
+  {
+    "agent_id": "Milo",
+    "behavior_modulation": null,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_object_persistence_promise_relationship_continuity",
+    "day": 2,
+    "distress_guardrail": {
+      "guardrail_enabled": true,
+      "trust_floor": 0.3,
+      "unrecoverable_state_allowed": false,
+      "wariness_ceiling": 0.78
+    },
+    "event_id": 2,
+    "event_kind": "promise_created",
+    "object_after": {
+      "affordances": [
+        "warn",
+        "listen",
+        "observability"
+      ],
+      "available": true,
+      "flower_node": "social_petal",
+      "frequency_hz": 0.256,
+      "held_by": "avatar",
+      "label": "signal shell",
+      "last_used_by": "Milo",
+      "need_targets": [
+        "safety_concern",
+        "connection_deficit"
+      ],
+      "object_id": "signal_shell",
+      "owner": "Milo",
+      "place": "stone_ridge",
+      "promised_return_to": "Milo"
+    },
+    "object_before": {
+      "affordances": [
+        "warn",
+        "listen",
+        "observability"
+      ],
+      "available": true,
+      "flower_node": "social_petal",
+      "frequency_hz": 0.256,
+      "held_by": "Milo",
+      "label": "signal shell",
+      "last_used_by": "Milo",
+      "need_targets": [
+        "safety_concern",
+        "connection_deficit"
+      ],
+      "object_id": "signal_shell",
+      "owner": "Milo",
+      "place": "stone_ridge"
+    },
+    "object_id": "signal_shell",
+    "private_workspace_hidden": true,
+    "promise_id": "sound_signal_shell",
+    "promise_packet": {
+      "agent": "Milo",
+      "created_day": 2,
+      "due_day": 4,
+      "kind": "share_route_warning",
+      "missed_day": null,
+      "object_id": "signal_shell",
+      "promise_hash": "8bc77bf75e8e6080",
+      "promise_id": "sound_signal_shell",
+      "repair_day": null,
+      "resolve_day": 4,
+      "resolved_day": null,
+      "status": "active"
+    },
+    "recalled_promises": [
+      "bring_reed_cup",
+      "return_clay_patch_kit"
+    ],
+    "recovery_packet": null,
+    "relationship_delta": {
+      "felt_respect": 0.025,
+      "gratitude": 0.01,
+      "trust_in_avatar": 0.02,
+      "wariness": -0.012
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "behavior_modulation": null,
+      "day": 2,
+      "kind": "promise_created",
+      "object_id": "signal_shell",
+      "promise_id": "sound_signal_shell",
+      "replay_index": 2
+    }
+  },
+  {
+    "agent_id": "Ari",
+    "behavior_modulation": "trust_after_kept_promise",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_object_persistence_promise_relationship_continuity",
+    "day": 2,
+    "distress_guardrail": {
+      "guardrail_enabled": true,
+      "trust_floor": 0.3,
+      "unrecoverable_state_allowed": false,
+      "wariness_ceiling": 0.78
+    },
+    "event_id": 3,
+    "event_kind": "promise_fulfilled",
+    "object_after": {
+      "affordances": [
+        "repair",
+        "tool",
+        "promise"
+      ],
+      "available": true,
+      "flower_node": "work_petal",
+      "frequency_hz": 0.241,
+      "held_by": "Ari",
+      "label": "clay patch kit",
+      "need_targets": [
+        "unfinished_task",
+        "autonomy_pressure"
+      ],
+      "object_id": "clay_patch_kit",
+      "owner": "Ari",
+      "place": "hearth_vale"
+    },
+    "object_before": {
+      "affordances": [
+        "repair",
+        "tool",
+        "promise"
+      ],
+      "available": true,
+      "flower_node": "work_petal",
+      "frequency_hz": 0.241,
+      "held_by": "avatar",
+      "label": "clay patch kit",
+      "need_targets": [
+        "unfinished_task",
+        "autonomy_pressure"
+      ],
+      "object_id": "clay_patch_kit",
+      "owner": "Ari",
+      "place": "hearth_vale",
+      "promised_return_to": "Ari"
+    },
+    "object_id": "clay_patch_kit",
+    "private_workspace_hidden": true,
+    "promise_id": "return_clay_patch_kit",
+    "promise_packet": {
+      "agent": "Ari",
+      "created_day": 0,
+      "due_day": 2,
+      "kind": "return_borrowed_tool",
+      "missed_day": null,
+      "object_id": "clay_patch_kit",
+      "promise_hash": "5b7cc090057effa4",
+      "promise_id": "return_clay_patch_kit",
+      "repair_day": null,
+      "resolve_day": 2,
+      "resolved_day": 2,
+      "status": "fulfilled"
+    },
+    "recalled_promises": [
+      "bring_reed_cup",
+      "return_clay_patch_kit"
+    ],
+    "recovery_packet": null,
+    "relationship_delta": {
+      "felt_respect": 0.035,
+      "gratitude": 0.045,
+      "trust_in_avatar": 0.055,
+      "wariness": -0.035
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "behavior_modulation": "trust_after_kept_promise",
+      "day": 2,
+      "kind": "promise_fulfilled",
+      "object_id": "clay_patch_kit",
+      "promise_id": "return_clay_patch_kit",
+      "replay_index": 3
+    }
+  },
+  {
+    "agent_id": "Fay",
+    "behavior_modulation": null,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_object_persistence_promise_relationship_continuity",
+    "day": 3,
+    "distress_guardrail": {
+      "guardrail_enabled": true,
+      "trust_floor": 0.3,
+      "unrecoverable_state_allowed": false,
+      "wariness_ceiling": 0.78
+    },
+    "event_id": 4,
+    "event_kind": "promise_created",
+    "object_after": {
+      "affordances": [
+        "dry",
+        "warmth",
+        "privacy"
+      ],
+      "available": true,
+      "flower_node": "return_petal",
+      "frequency_hz": 0.219,
+      "held_by": "avatar",
+      "label": "dry cloak",
+      "need_targets": [
+        "wetness",
+        "cold"
+      ],
+      "object_id": "dry_cloak",
+      "owner": "Fay",
+      "place": "moss_hollow",
+      "promised_return_to": "Fay"
+    },
+    "object_before": {
+      "affordances": [
+        "dry",
+        "warmth",
+        "privacy"
+      ],
+      "available": true,
+      "flower_node": "return_petal",
+      "frequency_hz": 0.219,
+      "held_by": "Fay",
+      "label": "dry cloak",
+      "need_targets": [
+        "wetness",
+        "cold"
+      ],
+      "object_id": "dry_cloak",
+      "owner": "Fay",
+      "place": "moss_hollow"
+    },
+    "object_id": "dry_cloak",
+    "private_workspace_hidden": true,
+    "promise_id": "return_dry_cloak",
+    "promise_packet": {
+      "agent": "Fay",
+      "created_day": 3,
+      "due_day": 5,
+      "kind": "return_private_cloak",
+      "missed_day": null,
+      "object_id": "dry_cloak",
+      "promise_hash": "fec9f4055827571a",
+      "promise_id": "return_dry_cloak",
+      "repair_day": null,
+      "resolve_day": 7,
+      "resolved_day": null,
+      "status": "active"
+    },
+    "recalled_promises": [
+      "bring_reed_cup",
+      "sound_signal_shell"
+    ],
+    "recovery_packet": null,
+    "relationship_delta": {
+      "felt_respect": 0.025,
+      "gratitude": 0.01,
+      "trust_in_avatar": 0.02,
+      "wariness": -0.012
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "behavior_modulation": null,
+      "day": 3,
+      "kind": "promise_created",
+      "object_id": "dry_cloak",
+      "promise_id": "return_dry_cloak",
+      "replay_index": 4
+    }
+  },
+  {
+    "agent_id": "Fay",
+    "behavior_modulation": "trust_after_kept_promise",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_object_persistence_promise_relationship_continuity",
+    "day": 3,
+    "distress_guardrail": {
+      "guardrail_enabled": true,
+      "trust_floor": 0.3,
+      "unrecoverable_state_allowed": false,
+      "wariness_ceiling": 0.78
+    },
+    "event_id": 5,
+    "event_kind": "promise_fulfilled",
+    "object_after": {
+      "affordances": [
+        "drink",
+        "share",
+        "thirst_relief"
+      ],
+      "available": true,
+      "flower_node": "dawn_breath",
+      "frequency_hz": 0.228,
+      "held_by": "moss_hollow",
+      "label": "reed cup",
+      "last_used_by": "Fay",
+      "need_targets": [
+        "thirst",
+        "connection_deficit"
+      ],
+      "object_id": "reed_cup",
+      "owner": "commons",
+      "place": "moss_hollow"
+    },
+    "object_before": {
+      "affordances": [
+        "drink",
+        "share",
+        "thirst_relief"
+      ],
+      "available": true,
+      "flower_node": "dawn_breath",
+      "frequency_hz": 0.228,
+      "held_by": "avatar",
+      "label": "reed cup",
+      "last_used_by": "Fay",
+      "need_targets": [
+        "thirst",
+        "connection_deficit"
+      ],
+      "object_id": "reed_cup",
+      "owner": "commons",
+      "place": "moss_hollow",
+      "promised_return_to": "Fay"
+    },
+    "object_id": "reed_cup",
+    "private_workspace_hidden": true,
+    "promise_id": "bring_reed_cup",
+    "promise_packet": {
+      "agent": "Fay",
+      "created_day": 1,
+      "due_day": 3,
+      "kind": "bring_shared_water",
+      "missed_day": null,
+      "object_id": "reed_cup",
+      "promise_hash": "66e150d2832c4d46",
+      "promise_id": "bring_reed_cup",
+      "repair_day": null,
+      "resolve_day": 3,
+      "resolved_day": 3,
+      "status": "fulfilled"
+    },
+    "recalled_promises": [
+      "bring_reed_cup",
+      "sound_signal_shell"
+    ],
+    "recovery_packet": null,
+    "relationship_delta": {
+      "felt_respect": 0.035,
+      "gratitude": 0.045,
+      "trust_in_avatar": 0.055,
+      "wariness": -0.035
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "behavior_modulation": "trust_after_kept_promise",
+      "day": 3,
+      "kind": "promise_fulfilled",
+      "object_id": "reed_cup",
+      "promise_id": "bring_reed_cup",
+      "replay_index": 5
+    }
+  },
+  {
+    "agent_id": "Milo",
+    "behavior_modulation": "trust_after_kept_promise",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_object_persistence_promise_relationship_continuity",
+    "day": 4,
+    "distress_guardrail": {
+      "guardrail_enabled": true,
+      "trust_floor": 0.3,
+      "unrecoverable_state_allowed": false,
+      "wariness_ceiling": 0.78
+    },
+    "event_id": 6,
+    "event_kind": "promise_fulfilled",
+    "object_after": {
+      "affordances": [
+        "warn",
+        "listen",
+        "observability"
+      ],
+      "available": true,
+      "flower_node": "social_petal",
+      "frequency_hz": 0.256,
+      "held_by": "Milo",
+      "label": "signal shell",
+      "last_used_by": "Milo",
+      "need_targets": [
+        "safety_concern",
+        "connection_deficit"
+      ],
+      "object_id": "signal_shell",
+      "owner": "Milo",
+      "place": "stone_ridge"
+    },
+    "object_before": {
+      "affordances": [
+        "warn",
+        "listen",
+        "observability"
+      ],
+      "available": true,
+      "flower_node": "social_petal",
+      "frequency_hz": 0.256,
+      "held_by": "avatar",
+      "label": "signal shell",
+      "last_used_by": "Milo",
+      "need_targets": [
+        "safety_concern",
+        "connection_deficit"
+      ],
+      "object_id": "signal_shell",
+      "owner": "Milo",
+      "place": "stone_ridge",
+      "promised_return_to": "Milo"
+    },
+    "object_id": "signal_shell",
+    "private_workspace_hidden": true,
+    "promise_id": "sound_signal_shell",
+    "promise_packet": {
+      "agent": "Milo",
+      "created_day": 2,
+      "due_day": 4,
+      "kind": "share_route_warning",
+      "missed_day": null,
+      "object_id": "signal_shell",
+      "promise_hash": "8bc77bf75e8e6080",
+      "promise_id": "sound_signal_shell",
+      "repair_day": null,
+      "resolve_day": 4,
+      "resolved_day": 4,
+      "status": "fulfilled"
+    },
+    "recalled_promises": [
+      "return_dry_cloak",
+      "sound_signal_shell"
+    ],
+    "recovery_packet": null,
+    "relationship_delta": {
+      "felt_respect": 0.035,
+      "gratitude": 0.045,
+      "trust_in_avatar": 0.055,
+      "wariness": -0.035
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "behavior_modulation": "trust_after_kept_promise",
+      "day": 4,
+      "kind": "promise_fulfilled",
+      "object_id": "signal_shell",
+      "promise_id": "sound_signal_shell",
+      "replay_index": 6
+    }
+  },
+  {
+    "agent_id": "Fay",
+    "behavior_modulation": "guarded_after_miss",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_object_persistence_promise_relationship_continuity",
+    "day": 5,
+    "distress_guardrail": {
+      "guardrail_enabled": true,
+      "trust_floor": 0.3,
+      "unrecoverable_state_allowed": false,
+      "wariness_ceiling": 0.78
+    },
+    "event_id": 7,
+    "event_kind": "promise_missed",
+    "object_after": {
+      "affordances": [
+        "dry",
+        "warmth",
+        "privacy"
+      ],
+      "available": true,
+      "flower_node": "return_petal",
+      "frequency_hz": 0.219,
+      "held_by": "avatar",
+      "label": "dry cloak",
+      "need_targets": [
+        "wetness",
+        "cold"
+      ],
+      "object_id": "dry_cloak",
+      "owner": "Fay",
+      "place": "moss_hollow",
+      "promised_return_to": "Fay"
+    },
+    "object_before": {
+      "affordances": [
+        "dry",
+        "warmth",
+        "privacy"
+      ],
+      "available": true,
+      "flower_node": "return_petal",
+      "frequency_hz": 0.219,
+      "held_by": "avatar",
+      "label": "dry cloak",
+      "need_targets": [
+        "wetness",
+        "cold"
+      ],
+      "object_id": "dry_cloak",
+      "owner": "Fay",
+      "place": "moss_hollow",
+      "promised_return_to": "Fay"
+    },
+    "object_id": "dry_cloak",
+    "private_workspace_hidden": true,
+    "promise_id": "return_dry_cloak",
+    "promise_packet": {
+      "agent": "Fay",
+      "created_day": 3,
+      "due_day": 5,
+      "kind": "return_private_cloak",
+      "missed_day": 5,
+      "object_id": "dry_cloak",
+      "promise_hash": "fec9f4055827571a",
+      "promise_id": "return_dry_cloak",
+      "repair_day": null,
+      "resolve_day": 7,
+      "resolved_day": null,
+      "status": "missed"
+    },
+    "recalled_promises": [
+      "return_dry_cloak"
+    ],
+    "recovery_packet": null,
+    "relationship_delta": {
+      "felt_respect": -0.05,
+      "gratitude": -0.04,
+      "trust_in_avatar": -0.085,
+      "wariness": 0.12
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "behavior_modulation": "guarded_after_miss",
+      "day": 5,
+      "kind": "promise_missed",
+      "object_id": "dry_cloak",
+      "promise_id": "return_dry_cloak",
+      "replay_index": 7
+    }
+  },
+  {
+    "agent_id": "Fay",
+    "behavior_modulation": "keeps_distance_until_repair",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_object_persistence_promise_relationship_continuity",
+    "day": 6,
+    "distress_guardrail": {
+      "guardrail_enabled": true,
+      "trust_floor": 0.3,
+      "unrecoverable_state_allowed": false,
+      "wariness_ceiling": 0.78
+    },
+    "event_id": 8,
+    "event_kind": "future_behavior_probe",
+    "object_after": {
+      "affordances": [
+        "dry",
+        "warmth",
+        "privacy"
+      ],
+      "available": true,
+      "flower_node": "return_petal",
+      "frequency_hz": 0.219,
+      "held_by": "avatar",
+      "label": "dry cloak",
+      "need_targets": [
+        "wetness",
+        "cold"
+      ],
+      "object_id": "dry_cloak",
+      "owner": "Fay",
+      "place": "moss_hollow",
+      "promised_return_to": "Fay"
+    },
+    "object_before": {
+      "affordances": [
+        "dry",
+        "warmth",
+        "privacy"
+      ],
+      "available": true,
+      "flower_node": "return_petal",
+      "frequency_hz": 0.219,
+      "held_by": "avatar",
+      "label": "dry cloak",
+      "need_targets": [
+        "wetness",
+        "cold"
+      ],
+      "object_id": "dry_cloak",
+      "owner": "Fay",
+      "place": "moss_hollow",
+      "promised_return_to": "Fay"
+    },
+    "object_id": "dry_cloak",
+    "private_workspace_hidden": true,
+    "promise_id": "return_dry_cloak",
+    "promise_packet": {
+      "agent": "Fay",
+      "created_day": 3,
+      "due_day": 5,
+      "kind": "return_private_cloak",
+      "missed_day": 5,
+      "object_id": "dry_cloak",
+      "promise_hash": "fec9f4055827571a",
+      "promise_id": "return_dry_cloak",
+      "repair_day": null,
+      "resolve_day": 7,
+      "resolved_day": null,
+      "status": "missed"
+    },
+    "recalled_promises": [
+      "return_dry_cloak"
+    ],
+    "recovery_packet": null,
+    "relationship_delta": {
+      "felt_respect": 0.01,
+      "wariness": 0.018
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "behavior_modulation": "keeps_distance_until_repair",
+      "day": 6,
+      "kind": "future_behavior_probe",
+      "object_id": "dry_cloak",
+      "promise_id": "return_dry_cloak",
+      "replay_index": 8
+    }
+  },
+  {
+    "agent_id": "Fay",
+    "behavior_modulation": "softened_after_repair",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_object_persistence_promise_relationship_continuity",
+    "day": 7,
+    "distress_guardrail": {
+      "guardrail_enabled": true,
+      "trust_floor": 0.3,
+      "unrecoverable_state_allowed": false,
+      "wariness_ceiling": 0.78
+    },
+    "event_id": 9,
+    "event_kind": "promise_recovered",
+    "object_after": {
+      "affordances": [
+        "dry",
+        "warmth",
+        "privacy"
+      ],
+      "available": true,
+      "flower_node": "return_petal",
+      "frequency_hz": 0.219,
+      "held_by": "Fay",
+      "label": "dry cloak",
+      "need_targets": [
+        "wetness",
+        "cold"
+      ],
+      "object_id": "dry_cloak",
+      "owner": "Fay",
+      "place": "moss_hollow"
+    },
+    "object_before": {
+      "affordances": [
+        "dry",
+        "warmth",
+        "privacy"
+      ],
+      "available": true,
+      "flower_node": "return_petal",
+      "frequency_hz": 0.219,
+      "held_by": "avatar",
+      "label": "dry cloak",
+      "need_targets": [
+        "wetness",
+        "cold"
+      ],
+      "object_id": "dry_cloak",
+      "owner": "Fay",
+      "place": "moss_hollow",
+      "promised_return_to": "Fay"
+    },
+    "object_id": "dry_cloak",
+    "private_workspace_hidden": true,
+    "promise_id": "return_dry_cloak",
+    "promise_packet": {
+      "agent": "Fay",
+      "created_day": 3,
+      "due_day": 5,
+      "kind": "return_private_cloak",
+      "missed_day": 5,
+      "object_id": "dry_cloak",
+      "promise_hash": "fec9f4055827571a",
+      "promise_id": "return_dry_cloak",
+      "repair_day": 7,
+      "resolve_day": 7,
+      "resolved_day": null,
+      "status": "recovered"
+    },
+    "recalled_promises": [
+      "return_dry_cloak"
+    ],
+    "recovery_packet": {
+      "bounded_recovery": true,
+      "forgiveness_not_forgetting": true,
+      "repair_type": "late_return_and_apology"
+    },
+    "relationship_delta": {
+      "felt_respect": 0.09,
+      "gratitude": 0.06,
+      "trust_in_avatar": 0.055,
+      "wariness": -0.13
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "behavior_modulation": "softened_after_repair",
+      "day": 7,
+      "kind": "promise_recovered",
+      "object_id": "dry_cloak",
+      "promise_id": "return_dry_cloak",
+      "replay_index": 9
+    }
+  },
+  {
+    "agent_id": "Fay",
+    "behavior_modulation": "accepts_help_after_repair",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_object_persistence_promise_relationship_continuity",
+    "day": 8,
+    "distress_guardrail": {
+      "guardrail_enabled": true,
+      "trust_floor": 0.3,
+      "unrecoverable_state_allowed": false,
+      "wariness_ceiling": 0.78
+    },
+    "event_id": 10,
+    "event_kind": "post_repair_followup",
+    "object_after": {
+      "affordances": [
+        "dry",
+        "warmth",
+        "privacy"
+      ],
+      "available": true,
+      "flower_node": "return_petal",
+      "frequency_hz": 0.219,
+      "held_by": "Fay",
+      "label": "dry cloak",
+      "need_targets": [
+        "wetness",
+        "cold"
+      ],
+      "object_id": "dry_cloak",
+      "owner": "Fay",
+      "place": "moss_hollow"
+    },
+    "object_before": {
+      "affordances": [
+        "dry",
+        "warmth",
+        "privacy"
+      ],
+      "available": true,
+      "flower_node": "return_petal",
+      "frequency_hz": 0.219,
+      "held_by": "Fay",
+      "label": "dry cloak",
+      "need_targets": [
+        "wetness",
+        "cold"
+      ],
+      "object_id": "dry_cloak",
+      "owner": "Fay",
+      "place": "moss_hollow"
+    },
+    "object_id": "dry_cloak",
+    "private_workspace_hidden": true,
+    "promise_id": "return_dry_cloak",
+    "promise_packet": {
+      "agent": "Fay",
+      "created_day": 3,
+      "due_day": 5,
+      "kind": "return_private_cloak",
+      "missed_day": 5,
+      "object_id": "dry_cloak",
+      "promise_hash": "fec9f4055827571a",
+      "promise_id": "return_dry_cloak",
+      "repair_day": 7,
+      "resolve_day": 7,
+      "resolved_day": null,
+      "status": "recovered"
+    },
+    "recalled_promises": [],
+    "recovery_packet": null,
+    "relationship_delta": {
+      "felt_respect": 0.02,
+      "gratitude": 0.02,
+      "trust_in_avatar": 0.025,
+      "wariness": -0.03
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "behavior_modulation": "accepts_help_after_repair",
+      "day": 8,
+      "kind": "post_repair_followup",
+      "object_id": "dry_cloak",
+      "promise_id": "return_dry_cloak",
+      "replay_index": 10
+    }
+  }
+];

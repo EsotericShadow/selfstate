@@ -1025,6 +1025,26 @@ This is Report 157: a deterministic navigable embodied-presence bridge joining t
 This is Report 158: a deterministic same-loop co-presence bridge where avatar place and mode perturb nearby agents' autonomous choices, workspaces, social memories, sensory-frequency state, source-boundary behavior, world consequences, bidirectional responses, and replay. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
 
 
+### Report 159: SSRM-3D interactive typed co-presence bridge
+
+| Condition | Readiness | Input | Routing | Parse | Response | Workspace | Social | World | Source | Frequency | Thread | Replay | Trace |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `integrated_interactive_typed_copresence` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_live_typed_input` | `0.050000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `1.000000` | `1.000000` |
+| `no_nearby_agent_routing` | `0.330000` | `1.000000` | `0.000000` | `1.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_deterministic_intent_parser` | `0.230000` | `1.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_agent_response_generation` | `0.900000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_workspace_thread_write` | `0.900000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_social_memory_update` | `0.920000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_world_feedback` | `0.900000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_source_boundary` | `0.900000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_frequency_retuning` | `0.920000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_persistent_thread` | `0.940000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` |
+| `no_replay_export` | `0.970000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` |
+
+This is Report 159: a deterministic interactive typed co-presence bridge where browser-side utterances route to nearby agents and mutate workspace, social memory, world feedback, source boundaries, frequency state, persistent thread, and replay without regenerating the benchmark trace. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
+
+
 ## Reproducibility Artifacts
 
 | Script | Main artifact |
@@ -1118,6 +1138,7 @@ This is Report 158: a deterministic same-loop co-presence bridge where avatar pl
 | `experiments/ssrm_3d_interactive_avatar_dialogue_loop_bridge.py` | `artifacts/ssrm_3d_interactive_avatar_dialogue_loop_bridge_verdict.csv` |
 | `experiments/ssrm_3d_navigable_embodied_presence_bridge.py` | `artifacts/ssrm_3d_navigable_embodied_presence_bridge_verdict.csv` |
 | `experiments/ssrm_3d_continuous_copresence_bridge.py` | `artifacts/ssrm_3d_continuous_copresence_bridge_verdict.csv` |
+| `experiments/ssrm_3d_interactive_typed_copresence_bridge.py` | `artifacts/ssrm_3d_interactive_typed_copresence_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

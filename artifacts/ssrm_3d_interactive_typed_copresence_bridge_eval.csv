@@ -1,0 +1,13 @@
+condition,typed_turns,routed_agent_opportunities,live_typed_input_rate,nearby_agent_routing_rate,deterministic_intent_parse_rate,agent_response_generation_rate,workspace_thread_write_rate,social_memory_update_rate,world_feedback_rate,source_boundary_rate,frequency_retuning_rate,persistent_thread_rate,replay_export_rate,trace_integrity,typed_copresence_readiness
+integrated_interactive_typed_copresence,144,153,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_live_typed_input,144,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.05
+no_nearby_agent_routing,144,0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,0.33
+no_deterministic_intent_parser,144,0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,0.23
+no_agent_response_generation,144,153,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_workspace_thread_write,144,153,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_social_memory_update,144,153,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_world_feedback,144,153,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_source_boundary,144,153,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.9
+no_frequency_retuning,144,153,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.92
+no_persistent_thread,144,153,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.94
+no_replay_export,144,153,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.97

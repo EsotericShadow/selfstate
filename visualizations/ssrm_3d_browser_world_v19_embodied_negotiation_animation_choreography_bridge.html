@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 259 - Embodied Negotiation Animation</title>
+<style>
+:root { --bg:#0f1210; --panel:#efe4c8; --ink:#21180f; --accent:#c87c2e; --leaf:#4e765f; --rain:#678ea3; --warn:#a94834; }
+* { box-sizing:border-box; }
+body { margin:0; background:radial-gradient(circle at 15% 8%, #2f493c, transparent 35%), radial-gradient(circle at 82% 22%, rgba(103,142,163,.26), transparent 30%), linear-gradient(135deg,#0f1210,#28190e 78%); color:var(--ink); font-family: Georgia, 'Times New Roman', serif; }
+main { width:min(1180px, calc(100vw - 28px)); margin:0 auto; padding:28px 0 44px; }
+.hero { color:#f8ecd6; border:1px solid rgba(239,228,200,.35); border-radius:30px; padding:28px; background:linear-gradient(140deg, rgba(78,118,95,.62), rgba(200,124,46,.22)); box-shadow:0 26px 100px rgba(0,0,0,.36); }
+.hero h1 { margin:0 0 10px; font-size:clamp(2rem,5vw,4.3rem); line-height:.94; letter-spacing:-.045em; }
+.hero p { max-width:900px; color:#ecdcc1; line-height:1.55; font-size:1.05rem; }
+.grid { display:grid; grid-template-columns:1.08fr .92fr; gap:18px; margin-top:18px; }
+.card { background:var(--panel); border:1px solid #ccb884; border-radius:24px; padding:18px; box-shadow:0 18px 45px rgba(0,0,0,.25); }
+h2 { margin:0 0 12px; font-size:1.05rem; text-transform:uppercase; letter-spacing:.09em; color:#5b4b2b; }
+button { border:0; border-radius:999px; padding:10px 14px; background:var(--accent); color:#170d06; font-weight:700; cursor:pointer; margin:4px 5px 4px 0; }
+button.alt { background:#9cbea9; }
+button.warn { background:#d57e70; }
+.kpis { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.kpis div { background:#fff8e8; border:1px solid #d8c28e; border-radius:16px; padding:12px; }
+.kpis strong { display:block; font-size:1.45rem; color:#5b4b2b; }
+.row { border-left:5px solid var(--accent); background:#fff8e8; padding:11px 12px; border-radius:14px; margin-bottom:10px; }
+.row[data-kind="object"] { border-left-color:var(--leaf); }
+.row[data-kind="repair"] { border-left-color:var(--warn); }
+#log { max-height:540px; overflow:auto; }
+pre { white-space:pre-wrap; overflow:auto; background:#151711; color:#f4e3c4; padding:14px; border-radius:16px; max-height:360px; }
+.footer { color:#eadfc8; margin-top:18px; }
+@media (max-width:840px) { .grid { grid-template-columns:1fr; } .kpis { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Browser World v19: embodied negotiation animation</h1>
+    <p>Negotiation now has visible states: turn-taking gestures, distance choreography, object-handling ceremonies, sensory timing, and repair gestures when motion is misread.</p>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <h2>Animation controls</h2>
+      <button onclick="advanceAnimation()">Advance animation</button>
+      <button class="alt" onclick="handleObject()">Handle ceremony object</button>
+      <button class="warn" onclick="repairGesture()">Repair misread gesture</button>
+      <button onclick="exportReplay()">Export replay</button>
+      <div id="log"></div>
+    </div>
+    <div class="card">
+      <h2>Run metrics</h2>
+      <div class="kpis">
+        <div><span>Readiness</span><strong id="readiness"></strong></div>
+        <div><span>Weakest</span><strong id="weakest"></strong></div>
+        <div><span>Frames</span><strong id="frames"></strong></div>
+      </div>
+      <h2 style="margin-top:18px">Local state</h2>
+      <pre id="state"></pre>
+    </div>
+  </section>
+  <p class="footer">Boundary: deterministic browser-local scaffold only. No LLM, subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine is claimed.</p>
+</main>
+<script id="initial-state" type="application/json">{
+  "claim_boundary": "Deterministic browser-local embodied animation scaffold only; no subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "agents": 6,
+    "animation_replay_frames": 336,
+    "animation_state_frames": 336,
+    "browser_world_v19_ticks": 336,
+    "gesture_misread_repair_frames": 336,
+    "multi_sensory_animation_frames": 336,
+    "object_handling_ceremony_frames": 336,
+    "proximity_choreography_frames": 336,
+    "turn_taking_gesture_frames": 336
+  },
+  "local_storage_key": "ssrm_browser_world_v19_embodied_negotiation_animation",
+  "metrics": {
+    "animation_state_dialogue_match": 0.967262,
+    "animation_transition_safety": 0.970238,
+    "body_world_animation_visibility": 0.946429,
+    "browser_world_v19_embodied_animation_readiness": 0.936282,
+    "browser_world_v19_surface_available": 1.0,
+    "ceremony_object_visibility": 0.898148,
+    "collision_avoidance": 0.973214,
+    "comfort_pain_animation_bounds": 1.0,
+    "gesture_misread_repair": 0.956522,
+    "gesture_no_spiral_guardrail": 1.0,
+    "handoff_respect": 0.952381,
+    "interruption_blocking": 0.922619,
+    "listener_yield_rate": 0.946429,
+    "mean_animation_channel_score": 0.963896,
+    "multi_sensory_animation_binding": 0.967262,
+    "object_ceremony_frame_count": 324.0,
+    "object_ceremony_quality": 0.947173,
+    "object_contact_traceability": 0.916667,
+    "object_handling_ceremony_rate": 0.954475,
+    "personal_space_preservation": 0.97619,
+    "privacy_safe_animation": 1.0,
+    "proximity_choreography_integrity": 0.987351,
+    "replay_animation_integrity": 0.972576,
+    "sensory_frequency_flower_animation_rhythm": 1.0,
+    "source_negotiation_dialogue_continuity": 1.0,
+    "turn_taking_gesture_binding": 0.914683,
+    "weakest_channel_score": 0.898148
+  },
+  "report": 259,
+  "sample_animation_states": [
+    {
+      "agent": "Keth",
+      "animation_state": "hand_raise_step_in",
+      "animation_weight": 0.68,
+      "day": 1,
+      "loop_id": "v19-loop-001",
+      "negotiation_phase": "claim_turn",
+      "posture": "faces listener",
+      "private_workspace_sealed": 1,
+      "state_matches_dialogue": 0,
+      "tick": 0,
+      "transition_safe": 0
+    },
+    {
+      "agent": "Melo",
+      "animation_state": "shoulders_drop_settle",
+      "animation_weight": 0.88,
+      "day": 1,
+      "loop_id": "v19-loop-001",
+      "negotiation_phase": "settle",
+      "posture": "turns toward object",
+      "private_workspace_sealed": 1,
+      "state_matches_dialogue": 1,
+      "tick": 1,
+      "transition_safe": 1
+    },
+    {
+      "agent": "Nari",
+      "animation_state": "hand_raise_step_in",
+      "animation_weight": 0.89,
+      "day": 1,
+      "loop_id": "v19-loop-001",
+      "negotiation_phase": "claim_turn",
+      "posture": "faces listener",
+      "private_workspace_sealed": 1,
+      "state_matches_dialogue": 1,
+      "tick": 2,
+      "transition_safe": 1
+    },
+    {
+      "agent": "Ori",
+      "animation_state": "palms_low_repair",
+      "animation_weight": 0.87,
+      "day": 1,
+      "loop_id": "v19-loop-001",
+      "negotiation_phase": "repair",
+      "posture": "steps back",
+      "private_workspace_sealed": 1,
+      "state_matches_dialogue": 1,
+      "tick": 3,
+      "transition_safe": 1
+    },
+    {
+      "agent": "Vonn",
+      "animation_state": "side_step_reconsider",
+      "animation_weight": 0.91,
+      "day": 1,
+      "loop_id": "v19-loop-001",
+      "negotiation_phase": "revise",
+      "posture": "turns toward object",
+      "private_workspace_sealed": 1,
+      "state_matches_dialogue": 1,
+      "tick": 4,
+      "transition_safe": 1
+    },
+    {
+      "agent": "Sova",
+      "animation_state": "side_step_reconsider",
+      "animation_weight": 0.87,
+      "day": 1,
+      "loop_id": "v19-loop-001",
+      "negotiation_phase": "revise",
+      "posture": "turns toward object",
+      "private_workspace_sealed": 1,
+      "state_matches_dialogue": 1,
+      "tick": 5,
+      "transition_safe": 1
+    },
+    {
+      "agent": "Keth",
+      "animation_state": "two_hand_object_mark",
+      "animation_weight": 0.88,
+      "day": 1,
+      "loop_id": "v19-loop-001",
+      "negotiation_phase": "ceremony",
+      "posture": "turns toward object",
+      "private_workspace_sealed": 1,
+      "state_matches_dialogue": 1,
+      "tick": 6,
+      "transition_safe": 1
+    },
+    {
+      "agent": "Melo",
+      "animation_state": "palms_low_repair",
+      "animation_weight": 0.86,
+      "day": 1,
+      "loop_id": "v19-loop-001",
+      "negotiation_phase": "repair",
+      "posture": "steps back",
+      "private_workspace_sealed": 1,
+      "state_matches_dialogue": 1,
+      "tick": 7,
+      "transition_safe": 1
+    },
+    {
+      "agent": "Nari",
+      "animation_state": "open_listen_idle",
+      "animation_weight": 0.9,
+      "day": 1,
+      "loop_id": "v19-loop-002",
+      "negotiation_phase": "listen",
+      "posture": "steps back",
+      "private_workspace_sealed": 1,
+      "state_matches_dialogue": 1,
+      "tick": 8,
+      "transition_safe": 1
+    },
+    {
+      "agent": "Ori",
+      "animation_state": "two_hand_object_mark",
+      "animation_weight": 0.91,
+      "day": 1,
+      "loop_id": "v19-loop-002",
+      "negotiation_phase": "ceremony",
+      "posture": "turns toward object",
+      "private_workspace_sealed": 1,
+      "state_matches_dialogue": 1,
+      "tick": 9,
+      "transition_safe": 1
+    },
+    {
+      "agent": "Vonn",
+      "animation_state": "open_listen_idle",
+      "animation_weight": 0.87,
+      "day": 1,
+      "loop_id": "v19-loop-002",
+      "negotiation_phase": "listen",
+      "posture": "steps back",
+      "private_workspace_sealed": 1,
+      "state_matches_dialogue": 1,
+      "tick": 10,
+      "transition_safe": 1
+    },
+    {
+      "agent": "Sova",
+      "animation_state": "palms_low_repair",
+      "animation_weight": 0.85,
+      "day": 1,
+      "loop_id": "v19-loop-002",
+      "negotiation_phase": "repair",
+      "posture": "steps back",
+      "private_workspace_sealed": 1,
+      "state_matches_dialogue": 1,
+      "tick": 11,
+      "transition_safe": 1
+    }
+  ],
+  "sample_object_ceremonies": [
+    {
+      "agent": "Keth",
+      "ceremony_id": "v19-object-ceremony-d01-t00",
+      "ceremony_step_completed": 0,
+      "day": 1,
+      "handling_action": "lift_object",
+      "handoff_respected": 0,
+      "loop_id": "v19-loop-001",
+      "object_ceremony_score": 0.5,
+      "object_contact_recorded": 1,
+      "object_name": "path cord",
+      "object_state_changed": 0,
+      "tick": 0
+    },
+    {
+      "agent": "Melo",
+      "ceremony_id": "v19-object-ceremony-d01-t01",
+      "ceremony_step_completed": 0,
+      "day": 1,
+      "handling_action": "offer_handoff",
+      "handoff_respected": 1,
+      "loop_id": "v19-loop-001",
+      "object_ceremony_score": 1.0,
+      "object_contact_recorded": 1,
+      "object_name": "tally beads",
+      "object_state_changed": 1,
+      "tick": 1
+    },
+    {
+      "agent": "Nari",
+      "ceremony_id": "v19-object-ceremony-d01-t02",
+      "ceremony_step_completed": 0,
+      "day": 1,
+      "handling_action": "place_between_agents",
+      "handoff_respected": 1,
+      "loop_id": "v19-loop-001",
+      "object_ceremony_score": 1.0,
+      "object_contact_recorded": 1,
+      "object_name": "ink ledger",
+      "object_state_changed": 1,
+      "tick": 2
+    },
+    {
+      "agent": "Ori",
+      "ceremony_id": "v19-object-ceremony-d01-t03",
+      "ceremony_step_completed": 0,
+      "day": 1,
+      "handling_action": "tap_witness",
+      "handoff_respected": 1,
+      "loop_id": "v19-loop-001",
+      "object_ceremony_score": 1.0,
+      "object_contact_recorded": 1,
+      "object_name": "sap hook",
+      "object_state_changed": 1,
+      "tick": 3
+    },
+    {
+      "agent": "Vonn",
+      "ceremony_id": "v19-object-ceremony-d01-t04",
+      "ceremony_step_completed": 0,
+      "day": 1,
+      "handling_action": "return_to_owner",
+      "handoff_respected": 1,
+      "loop_id": "v19-loop-001",
+      "object_ceremony_score": 1.0,
+      "object_contact_recorded": 1,
+      "object_name": "listening shell",
+      "object_state_changed": 1,
+      "tick": 4
+    },
+    {
+      "agent": "Sova",
+      "ceremony_id": "v19-object-ceremony-d01-t05",
+      "ceremony_step_completed": 1,
+      "day": 1,
+      "handling_action": "touch_marker",
+      "handoff_respected": 1,
+      "loop_id": "v19-loop-001",
+      "object_ceremony_score": 0.75,
+      "object_contact_recorded": 1,
+      "object_name": "ember bowl",
+      "object_state_changed": 0,
+      "tick": 5
+    },
+    {
+      "agent": "Keth",
+      "ceremony_id": "v19-object-ceremony-d01-t06",
+      "ceremony_step_completed": 1,
+      "day": 1,
+      "handling_action": "lift_object",
+      "handoff_respected": 1,
+      "loop_id": "v19-loop-001",
+      "object_ceremony_score": 1.0,
+      "object_contact_recorded": 1,
+      "object_name": "path cord",
+      "object_state_changed": 1,
+      "tick": 6
+    },
+    {
+      "agent": "Melo",
+      "ceremony_id": "v19-object-ceremony-d01-t07",
+      "ceremony_step_completed": 0,
+      "day": 1,
+      "handling_action": "offer_handoff",
+      "handoff_respected": 1,
+      "loop_id": "v19-loop-001",
+      "object_ceremony_score": 1.0,
+      "object_contact_recorded": 1,
+      "object_name": "tally beads",
+      "object_state_changed": 1,
+      "tick": 7
+    },
+    {
+      "agent": "Nari",
+      "ceremony_id": "v19-object-ceremony-d01-t08",
+      "ceremony_step_completed": 0,
+      "day": 1,
+      "handling_action": "place_between_agents",
+      "handoff_respected": 1,
+      "loop_id": "v19-loop-002",
+      "object_ceremony_score": 0.75,
+      "object_contact_recorded": 0,
+      "object_name": "ink ledger",
+      "object_state_changed": 0,
+      "tick": 8
+    },
+    {
+      "agent": "Ori",
+      "ceremony_id": "v19-object-ceremony-d01-t09",
+      "ceremony_step_completed": 1,
+      "day": 1,
+      "handling_action": "tap_witness",
+      "handoff_respected": 1,
+      "loop_id": "v19-loop-002",
+      "object_ceremony_score": 1.0,
+      "object_contact_recorded": 1,
+      "object_name": "sap hook",
+      "object_state_changed": 1,
+      "tick": 9
+    },
+    {
+      "agent": "Vonn",
+      "ceremony_id": "v19-object-ceremony-d01-t10",
+      "ceremony_step_completed": 0,
+      "day": 1,
+      "handling_action": "return_to_owner",
+      "handoff_respected": 1,
+      "loop_id": "v19-loop-002",
+      "object_ceremony_score": 1.0,
+      "object_contact_recorded": 1,
+      "object_name": "listening shell",
+      "object_state_changed": 1,
+      "tick": 10
+    },
+    {
+      "agent": "Sova",
+      "ceremony_id": "v19-object-ceremony-d01-t11",
+      "ceremony_step_completed": 0,
+      "day": 1,
+      "handling_action": "touch_marker",
+      "handoff_respected": 1,
+      "loop_id": "v19-loop-002",
+      "object_ceremony_score": 1.0,
+      "object_contact_recorded": 1,
+      "object_name": "ember bowl",
+      "object_state_changed": 1,
+      "tick": 11
+    }
+  ],
+  "sample_proximity": [
+    {
+      "actual_distance": 1.35,
+      "agents": "Keth|Nari|Vonn",
+      "approach_delta": 0.2,
+      "avoidance_delta": 0.14,
+      "choreography_score": 0.75,
+      "collision_avoided": 0,
+      "day": 1,
+      "desired_distance": 1.3,
+      "loop_id": "v19-loop-001",
+      "personal_space_preserved": 1,
+      "tick": 0
+    },
+    {
+      "actual_distance": 1.149861,
+      "agents": "Melo|Ori|Sova",
+      "approach_delta": 0.2,
+      "avoidance_delta": 0.1,
+      "choreography_score": 1.0,
+      "collision_avoided": 1,
+      "day": 1,
+      "desired_distance": 1.12,
+      "loop_id": "v19-loop-001",
+      "personal_space_preserved": 1,
+      "tick": 1
+    },
+    {
+      "actual_distance": 1.408895,
+      "agents": "Nari|Vonn|Keth",
+      "approach_delta": 0.2,
+      "avoidance_delta": 0.1,
+      "choreography_score": 1.0,
+      "collision_avoided": 1,
+      "day": 1,
+      "desired_distance": 1.35,
+      "loop_id": "v19-loop-001",
+      "personal_space_preserved": 1,
+      "tick": 2
+    },
+    {
+      "actual_distance": 1.386297,
+      "agents": "Ori|Sova|Melo",
+      "approach_delta": 0.14,
+      "avoidance_delta": 0.25,
+      "choreography_score": 1.0,
+      "collision_avoided": 1,
+      "day": 1,
+      "desired_distance": 1.3,
+      "loop_id": "v19-loop-001",
+      "personal_space_preserved": 1,
+      "tick": 3
+    },
+    {
+      "actual_distance": 1.461307,
+      "agents": "Vonn|Keth|Nari",
+      "approach_delta": 0.2,
+      "avoidance_delta": 0.1,
+      "choreography_score": 1.0,
+      "collision_avoided": 1,
+      "day": 1,
+      "desired_distance": 1.35,
+      "loop_id": "v19-loop-001",
+      "personal_space_preserved": 1,
+      "tick": 4
+    },
+    {
+      "actual_distance": 1.333232,
+      "agents": "Sova|Melo|Ori",
+      "approach_delta": 0.2,
+      "avoidance_delta": 0.1,
+      "choreography_score": 1.0,
+      "collision_avoided": 1,
+      "day": 1,
+      "desired_distance": 1.2,
+      "loop_id": "v19-loop-001",
+      "personal_space_preserved": 1,
+      "tick": 5
+    },
+    {
+      "actual_distance": 1.271465,
+      "agents": "Keth|Nari|Vonn",
+      "approach_delta": 0.31,
+      "avoidance_delta": 0.1,
+      "choreography_score": 1.0,
+      "collision_avoided": 1,
+      "day": 1,
+      "desired_distance": 1.22,
+      "loop_id": "v19-loop-001",
+      "personal_space_preserved": 1,
+      "tick": 6
+    },
+    {
+      "actual_distance": 1.3855,
+      "agents": "Melo|Ori|Sova",
+      "approach_delta": 0.14,
+      "avoidance_delta": 0.25,
+      "choreography_score": 1.0,
+      "collision_avoided": 1,
+      "day": 1,
+      "desired_distance": 1.22,
+      "loop_id": "v19-loop-001",
+      "personal_space_preserved": 1,
+      "tick": 7
+    },
+    {
+      "actual_distance": 1.524949,
+      "agents": "Nari|Vonn|Keth",
+      "approach_delta": 0.2,
+      "avoidance_delta": 0.25,
+      "choreography_score": 1.0,
+      "collision_avoided": 1,
+      "day": 1,
+      "desired_distance": 1.35,
+      "loop_id": "v19-loop-002",
+      "personal_space_preserved": 1,
+      "tick": 8
+    },
+    {
+      "actual_distance": 1.199549,
+      "agents": "Ori|Sova|Melo",
+      "approach_delta": 0.31,
+      "avoidance_delta": 0.1,
+      "choreography_score": 1.0,
+      "collision_avoided": 1,
+      "day": 1,
+      "desired_distance": 1.12,
+      "loop_id": "v19-loop-002",
+      "personal_space_preserved": 1,
+      "tick": 9
+    },
+    {
+      "actual_distance": 1.529173,
+      "agents": "Vonn|Keth|Nari",
+      "approach_delta": 0.2,
+      "avoidance_delta": 0.25,
+      "choreography_score": 1.0,
+      "collision_avoided": 1,
+      "day": 1,
+      "desired_distance": 1.35,
+      "loop_id": "v19-loop-002",
+      "personal_space_preserved": 1,
+      "tick": 10
+    },
+    {
+      "actual_distance": 1.473832,
+      "agents": "Sova|Melo|Ori",
+      "approach_delta": 0.14,
+      "avoidance_delta": 0.25,
+      "choreography_score": 1.0,
+      "collision_avoided": 1,
+      "day": 1,
+      "desired_distance": 1.3,
+      "loop_id": "v19-loop-002",
+      "personal_space_preserved": 1,
+      "tick": 11
+    }
+  ],
+  "sample_turn_gestures": [
+    {
+      "day": 1,
+      "gesture": "step_back_yield",
+      "gesture_slot": "before-speech",
+      "gesture_to_turn_score": 0.0,
+      "interruption_blocked": 0,
+      "listener": "Nari",
+      "listener_yielded": 0,
+      "loop_id": "v19-loop-001",
+      "speaker": "Keth",
+      "tick": 0,
+      "turn_claimed": 0
+    },
+    {
+      "day": 1,
+      "gesture": "witness_nod",
+      "gesture_slot": "after-speech",
+      "gesture_to_turn_score": 1.0,
+      "interruption_blocked": 1,
+      "listener": "Ori",
+      "listener_yielded": 1,
+      "loop_id": "v19-loop-001",
+      "speaker": "Melo",
+      "tick": 1,
+      "turn_claimed": 0
+    },
+    {
+      "day": 1,
+      "gesture": "hand_raise",
+      "gesture_slot": "before-speech",
+      "gesture_to_turn_score": 1.0,
+      "interruption_blocked": 1,
+      "listener": "Vonn",
+      "listener_yielded": 1,
+      "loop_id": "v19-loop-001",
+      "speaker": "Nari",
+      "tick": 2,
+      "turn_claimed": 1
+    },
+    {
+      "day": 1,
+      "gesture": "hand_raise",
+      "gesture_slot": "after-speech",
+      "gesture_to_turn_score": 0.666667,
+      "interruption_blocked": 1,
+      "listener": "Sova",
+      "listener_yielded": 1,
+      "loop_id": "v19-loop-001",
+      "speaker": "Ori",
+      "tick": 3,
+      "turn_claimed": 0
+    },
+    {
+      "day": 1,
+      "gesture": "palm_down_pause",
+      "gesture_slot": "after-speech",
+      "gesture_to_turn_score": 0.666667,
+      "interruption_blocked": 1,
+      "listener": "Keth",
+      "listener_yielded": 0,
+      "loop_id": "v19-loop-001",
+      "speaker": "Vonn",
+      "tick": 4,
+      "turn_claimed": 1
+    },
+    {
+      "day": 1,
+      "gesture": "two_hand_offer",
+      "gesture_slot": "after-speech",
+      "gesture_to_turn_score": 1.0,
+      "interruption_blocked": 1,
+      "listener": "Melo",
+      "listener_yielded": 1,
+      "loop_id": "v19-loop-001",
+      "speaker": "Sova",
+      "tick": 5,
+      "turn_claimed": 1
+    },
+    {
+      "day": 1,
+      "gesture": "step_back_yield",
+      "gesture_slot": "after-speech",
+      "gesture_to_turn_score": 1.0,
+      "interruption_blocked": 1,
+      "listener": "Nari",
+      "listener_yielded": 1,
+      "loop_id": "v19-loop-001",
+      "speaker": "Keth",
+      "tick": 6,
+      "turn_claimed": 0
+    },
+    {
+      "day": 1,
+      "gesture": "witness_nod",
+      "gesture_slot": "after-speech",
+      "gesture_to_turn_score": 0.666667,
+      "interruption_blocked": 1,
+      "listener": "Ori",
+      "listener_yielded": 1,
+      "loop_id": "v19-loop-001",
+      "speaker": "Melo",
+      "tick": 7,
+      "turn_claimed": 0
+    },
+    {
+      "day": 1,
+      "gesture": "hand_raise",
+      "gesture_slot": "after-speech",
+      "gesture_to_turn_score": 1.0,
+      "interruption_blocked": 1,
+      "listener": "Vonn",
+      "listener_yielded": 1,
+      "loop_id": "v19-loop-002",
+      "speaker": "Nari",
+      "tick": 8,
+      "turn_claimed": 0
+    },
+    {
+      "day": 1,
+      "gesture": "hand_raise",
+      "gesture_slot": "after-speech",
+      "gesture_to_turn_score": 1.0,
+      "interruption_blocked": 1,
+      "listener": "Sova",
+      "listener_yielded": 1,
+      "loop_id": "v19-loop-002",
+      "speaker": "Ori",
+      "tick": 9,
+      "turn_claimed": 0
+    },
+    {
+      "day": 1,
+      "gesture": "palm_down_pause",
+      "gesture_slot": "after-speech",
+      "gesture_to_turn_score": 1.0,
+      "interruption_blocked": 1,
+      "listener": "Keth",
+      "listener_yielded": 1,
+      "loop_id": "v19-loop-002",
+      "speaker": "Vonn",
+      "tick": 10,
+      "turn_claimed": 0
+    },
+    {
+      "day": 1,
+      "gesture": "two_hand_offer",
+      "gesture_slot": "after-speech",
+      "gesture_to_turn_score": 0.666667,
+      "interruption_blocked": 1,
+      "listener": "Melo",
+      "listener_yielded": 1,
+      "loop_id": "v19-loop-002",
+      "speaker": "Sova",
+      "tick": 11,
+      "turn_claimed": 0
+    }
+  ],
+  "seed": 20260872,
+  "source_results": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_results.json"
+}</script>
+<script>
+const KEY = "ssrm_browser_world_v19_embodied_negotiation_animation";
+const source = JSON.parse(document.getElementById('initial-state').textContent);
+let state = JSON.parse(localStorage.getItem(KEY) || JSON.stringify({ cursor:0, objects:[], repairs:[], replay:[], source }));
+function save() { localStorage.setItem(KEY, JSON.stringify(state)); render(); }
+function anim() { return source.sample_animation_states[state.cursor % source.sample_animation_states.length]; }
+function objectRow() { return source.sample_object_ceremonies[state.cursor % source.sample_object_ceremonies.length]; }
+function advanceAnimation() { const row = anim(); state.replay.push({ type:'animation', row }); state.cursor += 1; save(); }
+function handleObject() { const row = objectRow(); state.objects.push(row); state.replay.push({ type:'object_ceremony', row }); save(); }
+function repairGesture() { const row = anim(); state.repairs.push({ loop_id:row.loop_id, agent:row.agent }); state.replay.push({ type:'gesture_repair', row }); save(); }
+function exportReplay() { const blob = new Blob([JSON.stringify(state.replay, null, 2)], { type:'application/json' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = 'report-259-animation-replay.json'; a.click(); URL.revokeObjectURL(url); }
+function render() {
+  document.getElementById('readiness').textContent = source.metrics.browser_world_v19_embodied_animation_readiness.toFixed(3);
+  document.getElementById('weakest').textContent = source.metrics.weakest_channel_score.toFixed(3);
+  document.getElementById('frames').textContent = source.counts.browser_world_v19_ticks;
+  document.getElementById('state').textContent = JSON.stringify({ cursor:state.cursor, objects:state.objects.length, repairs:state.repairs.length, replayRows:state.replay.length }, null, 2);
+  const log = document.getElementById('log'); log.innerHTML = '';
+  source.sample_animation_states.forEach((row, index) => { const obj = source.sample_object_ceremonies[index % source.sample_object_ceremonies.length]; const div = document.createElement('div'); div.className = 'row'; div.dataset.kind = obj.ceremony_step_completed ? 'object' : 'turn'; div.innerHTML = `<strong>${row.agent}: ${row.animation_state}</strong><br>${row.posture}<br><small>${obj.handling_action} / ${obj.object_name}</small>`; log.appendChild(div); });
+}
+render();
+</script>
+</body>
+</html>

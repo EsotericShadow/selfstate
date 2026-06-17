@@ -1,0 +1,105 @@
+{
+  "ablations": [
+    {
+      "ablation": "no_animation_states",
+      "interpretation": "Dialogue has no visible posture or animation state.",
+      "readiness_after_ablation": 0.591282,
+      "readiness_loss": 0.345
+    },
+    {
+      "ablation": "no_turn_taking_gestures",
+      "interpretation": "Agents cannot claim/yield turns through body motion.",
+      "readiness_after_ablation": 0.631282,
+      "readiness_loss": 0.305
+    },
+    {
+      "ablation": "no_proximity_choreography",
+      "interpretation": "Negotiation ignores distance, approach, avoidance, and personal space.",
+      "readiness_after_ablation": 0.656282,
+      "readiness_loss": 0.28
+    },
+    {
+      "ablation": "no_object_handling_ceremonies",
+      "interpretation": "Compromises are spoken but not anchored in handled objects.",
+      "readiness_after_ablation": 0.681282,
+      "readiness_loss": 0.255
+    },
+    {
+      "ablation": "no_multi_sensory_animation",
+      "interpretation": "Animation loses sound/movement/smell/temperature/wetness timing.",
+      "readiness_after_ablation": 0.716282,
+      "readiness_loss": 0.22
+    },
+    {
+      "ablation": "no_gesture_repair",
+      "interpretation": "Misread gestures cannot be repaired before social residue accumulates.",
+      "readiness_after_ablation": 0.746282,
+      "readiness_loss": 0.19
+    }
+  ],
+  "artifacts": {
+    "animation_replays_csv": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_animation_replays.csv",
+    "animation_states_csv": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_animation_states.csv",
+    "browser_ticks_csv": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_browser_ticks.csv",
+    "gesture_misread_repairs_csv": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_gesture_misread_repairs.csv",
+    "multi_sensory_animation_csv": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_multi_sensory_animation.csv",
+    "object_handling_ceremonies_csv": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_object_handling_ceremonies.csv",
+    "proximity_choreography_csv": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_proximity_choreography.csv",
+    "results_json": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_results.json",
+    "state_json": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_state.json",
+    "summary_csv": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_summary.csv",
+    "turn_taking_gestures_csv": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_turn_taking_gestures.csv",
+    "verdict_csv": "artifacts/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge_verdict.csv",
+    "visualization_html": "visualizations/ssrm_3d_browser_world_v19_embodied_negotiation_animation_choreography_bridge.html"
+  },
+  "claim_boundary": "Deterministic browser-local embodied animation scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "agents": 6,
+    "animation_replay_frames": 336,
+    "animation_state_frames": 336,
+    "browser_world_v19_ticks": 336,
+    "gesture_misread_repair_frames": 336,
+    "multi_sensory_animation_frames": 336,
+    "object_handling_ceremony_frames": 336,
+    "proximity_choreography_frames": 336,
+    "turn_taking_gesture_frames": 336
+  },
+  "days": 28,
+  "metrics": {
+    "animation_state_dialogue_match": 0.967262,
+    "animation_transition_safety": 0.970238,
+    "body_world_animation_visibility": 0.946429,
+    "browser_world_v19_embodied_animation_readiness": 0.936282,
+    "browser_world_v19_surface_available": 1.0,
+    "ceremony_object_visibility": 0.898148,
+    "collision_avoidance": 0.973214,
+    "comfort_pain_animation_bounds": 1.0,
+    "gesture_misread_repair": 0.956522,
+    "gesture_no_spiral_guardrail": 1.0,
+    "handoff_respect": 0.952381,
+    "interruption_blocking": 0.922619,
+    "listener_yield_rate": 0.946429,
+    "mean_animation_channel_score": 0.963896,
+    "multi_sensory_animation_binding": 0.967262,
+    "object_ceremony_frame_count": 324.0,
+    "object_ceremony_quality": 0.947173,
+    "object_contact_traceability": 0.916667,
+    "object_handling_ceremony_rate": 0.954475,
+    "personal_space_preservation": 0.97619,
+    "privacy_safe_animation": 1.0,
+    "proximity_choreography_integrity": 0.987351,
+    "replay_animation_integrity": 0.972576,
+    "sensory_frequency_flower_animation_rhythm": 1.0,
+    "source_negotiation_dialogue_continuity": 1.0,
+    "turn_taking_gesture_binding": 0.914683,
+    "weakest_channel_score": 0.898148
+  },
+  "name": "SSRM-3D browser world v19 embodied negotiation animation choreography bridge",
+  "next_gate": "browser world v20 with playable 2D/3D avatar-agent negotiation scene geometry, animated sprite/body layers, and local collision-aware object ceremonies",
+  "report": 259,
+  "seed": 20260872,
+  "source_dependency": "artifacts/ssrm_3d_browser_world_v18_agent_led_negotiation_dialogue_ceremony_bridge_results.json",
+  "source_verdict": "pass",
+  "ticks_per_day": 12,
+  "verdict": "pass"
+}

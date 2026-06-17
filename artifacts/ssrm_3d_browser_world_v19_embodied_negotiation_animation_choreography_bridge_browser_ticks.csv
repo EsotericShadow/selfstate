@@ -1,0 +1,337 @@
+tick,day,loop_id,focus_agent,animation_state_visible,gesture_visible,proximity_choreography_visible,object_ceremony_visible,sensory_frequency_hz,flower_phase,public_behavior_marker,private_workspace_sealed
+0,1,v19-loop-001,Keth,0,0,1,0,1.132,56.968,repairs misread gesture slowly,1
+1,1,v19-loop-001,Melo,1,1,1,0,1.132,194.645764,holds space and listens,1
+2,1,v19-loop-001,Nari,1,1,1,0,1.212,336.173528,steps into turn with gesture,1
+3,1,v19-loop-001,Ori,1,1,1,0,1.1224,110.402892,holds space and listens,1
+4,1,v19-loop-001,Vonn,1,1,1,0,1.212,250.169056,repairs misread gesture slowly,1
+5,1,v19-loop-001,Sova,1,1,1,1,1.262,30.48682,handles ceremony object between agents,1
+6,1,v19-loop-001,Keth,1,1,1,1,1.1996,166.694984,handles ceremony object between agents,1
+7,1,v19-loop-001,Melo,1,1,1,0,1.1224,302.473948,holds space and listens,1
+8,1,v19-loop-002,Nari,1,1,1,0,1.132,80.770112,holds space and listens,1
+9,1,v19-loop-002,Ori,1,1,1,1,1.1996,220.748276,handles ceremony object between agents,1
+10,1,v19-loop-002,Vonn,1,1,1,0,1.132,356.80564,holds space and listens,1
+11,1,v19-loop-002,Sova,1,1,1,0,1.1224,134.545004,holds space and listens,1
+12,2,v19-loop-002,Melo,1,1,1,0,1.212,270.231168,steps into turn with gesture,1
+13,2,v19-loop-002,Nari,1,1,1,0,1.212,47.058932,steps into turn with gesture,1
+14,2,v19-loop-002,Ori,1,1,1,1,1.1996,184.717096,handles ceremony object between agents,1
+15,2,v19-loop-002,Vonn,1,1,1,1,1.1996,322.73486,handles ceremony object between agents,1
+16,2,v19-loop-003,Sova,1,1,1,0,1.132,98.792224,holds space and listens,1
+17,2,v19-loop-003,Keth,1,1,1,1,1.1996,238.770388,handles ceremony object between agents,1
+18,2,v19-loop-003,Melo,1,1,1,0,1.212,18.337752,steps into turn with gesture,1
+19,2,v19-loop-003,Nari,1,1,1,0,1.2296,155.675916,steps into turn with gesture,1
+20,2,v19-loop-003,Ori,1,1,1,0,1.182,292.31328,holds space and listens,1
+21,2,v19-loop-003,Vonn,1,1,1,0,1.212,71.201044,steps into turn with gesture,1
+22,2,v19-loop-003,Sova,1,1,1,0,1.1224,206.620408,repairs misread gesture slowly,1
+23,2,v19-loop-003,Keth,1,1,1,0,1.212,347.236572,steps into turn with gesture,1
+24,3,v19-loop-004,Nari,1,1,1,0,1.212,120.324336,steps into turn with gesture,1
+25,3,v19-loop-004,Ori,1,1,1,0,1.132,254.8321,holds space and listens,1
+26,3,v19-loop-004,Vonn,1,1,1,0,1.212,36.359864,steps into turn with gesture,1
+27,3,v19-loop-004,Sova,1,1,1,0,1.132,170.867628,holds space and listens,1
+28,3,v19-loop-004,Keth,1,1,1,0,1.132,308.885392,holds space and listens,1
+29,3,v19-loop-004,Melo,1,0,1,0,1.132,87.243156,holds space and listens,1
+30,3,v19-loop-004,Nari,1,1,1,1,1.1996,226.88132,handles ceremony object between agents,1
+31,3,v19-loop-004,Ori,0,1,1,0,1.2296,5.769084,steps into turn with gesture,1
+32,3,v19-loop-005,Vonn,1,1,1,0,1.212,144.466448,steps into turn with gesture,1
+33,3,v19-loop-005,Sova,1,0,1,1,1.1996,280.084612,handles ceremony object between agents,1
+34,3,v19-loop-005,Keth,1,1,1,0,1.132,56.991976,holds space and listens,1
+35,3,v19-loop-005,Melo,1,1,1,0,1.212,198.51974,steps into turn with gesture,1
+36,4,v19-loop-005,Ori,1,1,1,0,1.1224,326.629104,holds space and listens,1
+37,4,v19-loop-005,Vonn,1,1,1,0,1.1224,104.646868,holds space and listens,1
+38,4,v19-loop-005,Sova,1,1,1,0,1.2296,245.773432,steps into turn with gesture,1
+39,4,v19-loop-005,Keth,1,1,1,0,1.212,24.470796,steps into turn with gesture,1
+40,4,v19-loop-006,Melo,1,1,1,0,1.212,162.48856,steps into turn with gesture,1
+41,4,v19-loop-006,Nari,1,1,1,0,1.2296,299.826724,steps into turn with gesture,1
+42,4,v19-loop-006,Ori,1,1,1,0,1.212,78.524088,steps into turn with gesture,1
+43,4,v19-loop-006,Vonn,1,1,1,0,1.2296,215.862252,steps into turn with gesture,1
+44,4,v19-loop-006,Sova,1,1,1,0,1.212,354.559616,repairs misread gesture slowly,1
+45,4,v19-loop-006,Keth,1,1,1,0,1.132,129.06738,holds space and listens,1
+46,4,v19-loop-006,Melo,1,1,1,0,1.212,270.595144,steps into turn with gesture,1
+47,4,v19-loop-006,Nari,1,1,1,0,1.132,45.102908,holds space and listens,1
+48,5,v19-loop-007,Vonn,1,1,1,1,1.1996,178.961072,handles ceremony object between agents,1
+49,5,v19-loop-007,Sova,1,1,1,0,1.212,318.528436,steps into turn with gesture,1
+50,5,v19-loop-007,Keth,1,1,1,0,1.212,96.5462,steps into turn with gesture,1
+51,5,v19-loop-007,Melo,1,1,1,0,1.132,231.053964,holds space and listens,1
+52,5,v19-loop-007,Nari,1,1,1,0,1.212,12.581728,steps into turn with gesture,1
+53,5,v19-loop-007,Ori,1,1,1,1,1.1996,149.049892,handles ceremony object between agents,1
+54,5,v19-loop-007,Vonn,1,1,1,0,1.212,288.617256,steps into turn with gesture,1
+55,5,v19-loop-007,Sova,1,1,1,1,1.2796,67.40542,handles ceremony object between agents,1
+56,5,v19-loop-008,Keth,1,1,1,0,1.132,201.142784,holds space and listens,1
+57,5,v19-loop-008,Melo,1,1,1,0,1.132,339.160548,holds space and listens,1
+58,5,v19-loop-008,Nari,1,0,1,0,1.132,117.518312,holds space and listens,1
+59,5,v19-loop-008,Ori,1,1,1,0,1.132,255.196076,holds space and listens,1
+60,6,v19-loop-008,Sova,1,1,1,1,1.2796,31.37424,handles ceremony object between agents,1
+61,6,v19-loop-008,Keth,1,1,1,0,1.132,165.111604,holds space and listens,1
+62,6,v19-loop-008,Melo,0,1,1,0,1.212,305.789368,repairs misread gesture slowly,1
+63,6,v19-loop-008,Nari,1,1,1,0,1.212,83.467132,steps into turn with gesture,1
+64,6,v19-loop-009,Ori,1,1,1,0,1.132,219.164896,holds space and listens,1
+65,6,v19-loop-009,Vonn,1,1,1,1,1.1996,359.14306,handles ceremony object between agents,1
+66,6,v19-loop-009,Sova,1,1,1,0,1.2296,138.030824,repairs misread gesture slowly,1
+67,6,v19-loop-009,Keth,1,1,1,0,1.2296,276.048588,steps into turn with gesture,1
+68,6,v19-loop-009,Melo,1,1,1,0,1.212,53.555952,steps into turn with gesture,1
+69,6,v19-loop-009,Nari,1,1,1,0,1.132,189.253716,holds space and listens,1
+70,6,v19-loop-009,Ori,1,1,1,1,1.1996,329.23188,handles ceremony object between agents,1
+71,6,v19-loop-009,Vonn,1,1,1,0,1.212,107.609244,steps into turn with gesture,1
+72,7,v19-loop-010,Keth,1,1,1,0,1.212,239.507008,steps into turn with gesture,1
+73,7,v19-loop-010,Melo,1,1,1,0,1.212,18.714772,steps into turn with gesture,1
+74,7,v19-loop-010,Nari,1,1,1,0,1.212,155.542536,steps into turn with gesture,1
+75,7,v19-loop-010,Ori,1,1,1,1,1.1996,293.2007,handles ceremony object between agents,1
+76,7,v19-loop-010,Vonn,1,1,1,0,1.132,69.258064,holds space and listens,1
+77,7,v19-loop-010,Sova,1,1,1,0,1.132,207.275828,holds space and listens,1
+78,7,v19-loop-010,Keth,1,1,1,0,1.2296,348.123992,steps into turn with gesture,1
+79,7,v19-loop-010,Melo,1,1,1,0,1.132,123.311356,holds space and listens,1
+80,7,v19-loop-011,Nari,1,1,1,1,1.262,265.09912,handles ceremony object between agents,1
+81,7,v19-loop-011,Ori,1,1,1,0,1.212,42.856884,steps into turn with gesture,1
+82,7,v19-loop-011,Vonn,1,1,1,0,1.132,177.364648,holds space and listens,1
+83,7,v19-loop-011,Sova,1,1,1,0,1.132,315.382412,holds space and listens,1
+84,8,v19-loop-011,Melo,1,1,1,0,1.212,90.790176,steps into turn with gesture,1
+85,8,v19-loop-011,Nari,1,1,1,1,1.182,226.74794,handles ceremony object between agents,1
+86,8,v19-loop-011,Ori,1,1,1,1,1.1996,5.276104,handles ceremony object between agents,1
+87,8,v19-loop-011,Vonn,1,0,1,0,1.1496,140.993868,holds space and listens,1
+88,8,v19-loop-012,Sova,1,1,1,0,1.212,281.671232,repairs misread gesture slowly,1
+89,8,v19-loop-012,Keth,1,1,1,0,1.1224,57.090596,holds space and listens,1
+90,8,v19-loop-012,Melo,1,1,1,0,1.1224,195.10836,holds space and listens,1
+91,8,v19-loop-012,Nari,1,1,1,0,1.212,336.064524,repairs misread gesture slowly,1
+92,8,v19-loop-012,Ori,1,1,1,0,1.132,111.422288,holds space and listens,1
+93,8,v19-loop-012,Vonn,0,1,1,0,1.132,249.440052,holds space and listens,1
+94,8,v19-loop-012,Sova,1,1,1,0,1.132,27.457816,holds space and listens,1
+95,8,v19-loop-012,Keth,1,1,1,0,1.132,165.47558,holds space and listens,1
+96,9,v19-loop-013,Nari,1,1,1,0,1.1224,297.094944,holds space and listens,1
+97,9,v19-loop-013,Ori,1,1,1,0,1.2296,78.221508,steps into turn with gesture,1
+98,9,v19-loop-013,Vonn,1,1,1,0,1.212,215.728872,steps into turn with gesture,1
+99,9,v19-loop-013,Sova,1,1,1,0,1.1224,351.148236,holds space and listens,1
+100,9,v19-loop-013,Keth,1,1,1,0,1.132,129.4444,holds space and listens,1
+101,9,v19-loop-013,Melo,1,1,1,0,1.132,267.462164,holds space and listens,1
+102,9,v19-loop-013,Nari,1,1,1,0,1.132,45.479928,holds space and listens,1
+103,9,v19-loop-013,Ori,1,1,1,0,1.132,183.497692,holds space and listens,1
+104,9,v19-loop-014,Vonn,1,1,1,0,1.132,321.515456,holds space and listens,1
+105,9,v19-loop-014,Sova,1,1,1,1,1.262,103.30322,handles ceremony object between agents,1
+106,9,v19-loop-014,Keth,1,1,1,0,1.2296,240.381384,steps into turn with gesture,1
+107,9,v19-loop-014,Melo,1,1,1,0,1.1224,15.290348,holds space and listens,1
+108,10,v19-loop-014,Ori,1,1,1,1,1.1996,149.426912,handles ceremony object between agents,1
+109,10,v19-loop-014,Vonn,1,1,1,0,1.132,285.484276,holds space and listens,1
+110,10,v19-loop-014,Sova,1,1,1,1,1.2796,67.78244,handles ceremony object between agents,1
+111,10,v19-loop-014,Keth,1,1,1,0,1.2296,204.350204,steps into turn with gesture,1
+112,10,v19-loop-015,Melo,1,1,1,0,1.212,343.047568,steps into turn with gesture,1
+113,10,v19-loop-015,Nari,1,1,1,0,1.2296,120.385732,steps into turn with gesture,1
+114,10,v19-loop-015,Ori,1,1,1,0,1.212,259.083096,steps into turn with gesture,1
+115,10,v19-loop-015,Vonn,1,1,1,0,1.1996,35.55126,holds space and listens,1
+116,10,v19-loop-015,Sova,1,1,1,1,1.1996,173.569024,handles ceremony object between agents,1
+117,10,v19-loop-015,Keth,1,1,1,0,1.212,311.946388,steps into turn with gesture,1
+118,10,v19-loop-015,Melo,1,1,1,0,1.212,91.154152,steps into turn with gesture,1
+119,10,v19-loop-015,Nari,1,1,1,0,1.132,225.661916,holds space and listens,1
+120,11,v19-loop-016,Vonn,1,1,1,1,1.1996,358.67008,handles ceremony object between agents,1
+121,11,v19-loop-016,Sova,1,1,1,0,1.132,135.577444,holds space and listens,1
+122,11,v19-loop-016,Keth,1,1,1,0,1.212,275.915208,steps into turn with gesture,1
+123,11,v19-loop-016,Melo,1,1,1,0,1.1224,51.334572,holds space and listens,1
+124,11,v19-loop-016,Nari,0,1,1,0,1.2296,192.461136,steps into turn with gesture,1
+125,11,v19-loop-016,Ori,1,1,1,1,1.182,329.0985,handles ceremony object between agents,1
+126,11,v19-loop-016,Vonn,1,1,1,0,1.1224,105.387864,holds space and listens,1
+127,11,v19-loop-016,Sova,1,1,1,0,1.132,243.684028,holds space and listens,1
+128,11,v19-loop-017,Keth,1,1,1,0,1.212,25.211792,steps into turn with gesture,1
+129,11,v19-loop-017,Melo,1,1,1,0,1.1224,159.441156,holds space and listens,1
+130,11,v19-loop-017,Nari,1,1,1,0,1.1224,297.45892,holds space and listens,1
+131,11,v19-loop-017,Ori,1,1,1,0,1.212,78.075084,steps into turn with gesture,1
+132,12,v19-loop-017,Sova,1,1,1,0,1.212,209.972848,repairs misread gesture slowly,1
+133,12,v19-loop-017,Keth,1,1,1,0,1.132,345.670612,holds space and listens,1
+134,12,v19-loop-017,Melo,1,1,1,0,1.132,123.688376,holds space and listens,1
+135,12,v19-loop-017,Nari,1,1,1,0,1.212,265.21614,steps into turn with gesture,1
+136,12,v19-loop-018,Ori,1,1,1,0,1.212,42.043904,steps into turn with gesture,1
+137,12,v19-loop-018,Vonn,1,1,1,0,1.2296,180.572068,steps into turn with gesture,1
+138,12,v19-loop-018,Sova,1,1,1,0,1.212,318.079432,steps into turn with gesture,1
+139,12,v19-loop-018,Keth,1,1,1,0,1.2296,96.607596,steps into turn with gesture,1
+140,12,v19-loop-018,Melo,1,1,1,1,1.2796,236.07536,handles ceremony object between agents,1
+141,12,v19-loop-018,Nari,1,1,1,0,1.212,13.322724,steps into turn with gesture,1
+142,12,v19-loop-018,Ori,1,1,1,0,1.132,147.830488,holds space and listens,1
+143,12,v19-loop-018,Vonn,1,1,1,1,1.1996,287.808652,handles ceremony object between agents,1
+144,13,v19-loop-019,Keth,1,1,1,0,1.132,57.746016,holds space and listens,1
+145,13,v19-loop-019,Melo,1,1,1,1,1.182,197.21378,handles ceremony object between agents,1
+146,13,v19-loop-019,Nari,1,1,1,0,1.212,337.291544,steps into turn with gesture,1
+147,13,v19-loop-019,Ori,1,1,1,1,1.1996,113.759708,handles ceremony object between agents,1
+148,13,v19-loop-019,Vonn,1,1,1,0,1.132,249.817072,holds space and listens,1
+149,13,v19-loop-019,Sova,1,1,1,0,1.132,26.984836,holds space and listens,1
+150,13,v19-loop-019,Keth,1,1,1,0,1.212,169.3626,steps into turn with gesture,1
+151,13,v19-loop-019,Melo,1,1,1,0,1.132,303.870364,holds space and listens,1
+152,13,v19-loop-020,Nari,1,1,1,0,1.212,84.208128,steps into turn with gesture,1
+153,13,v19-loop-020,Ori,1,1,1,0,1.212,223.415892,steps into turn with gesture,1
+154,13,v19-loop-020,Vonn,1,1,1,0,1.132,357.923656,repairs misread gesture slowly,1
+155,13,v19-loop-020,Sova,0,1,1,1,1.1996,137.90182,handles ceremony object between agents,1
+156,14,v19-loop-020,Melo,1,1,1,0,1.132,267.839184,holds space and listens,1
+157,14,v19-loop-020,Nari,1,1,1,0,1.132,45.856948,holds space and listens,1
+158,14,v19-loop-020,Ori,1,1,1,0,1.132,183.874712,holds space and listens,1
+159,14,v19-loop-020,Vonn,1,1,1,0,1.132,321.892476,holds space and listens,1
+160,14,v19-loop-021,Sova,1,1,1,1,1.1996,101.87064,handles ceremony object between agents,1
+161,14,v19-loop-021,Keth,1,1,1,0,1.1224,237.649604,holds space and listens,1
+162,14,v19-loop-021,Melo,1,1,1,1,1.1996,17.906168,handles ceremony object between agents,1
+163,14,v19-loop-021,Nari,1,1,1,1,1.1996,155.923932,handles ceremony object between agents,1
+164,14,v19-loop-021,Ori,1,1,1,0,1.212,295.491296,steps into turn with gesture,1
+165,14,v19-loop-021,Vonn,1,1,1,1,1.2796,74.27946,handles ceremony object between agents,1
+166,14,v19-loop-021,Sova,1,1,1,0,1.132,208.016824,holds space and listens,1
+167,14,v19-loop-021,Keth,1,1,1,0,1.132,346.034588,holds space and listens,1
+168,15,v19-loop-022,Nari,1,1,1,0,1.132,117.932352,holds space and listens,1
+169,15,v19-loop-022,Ori,1,1,1,1,1.1996,257.910516,handles ceremony object between agents,1
+170,15,v19-loop-022,Vonn,1,1,1,0,1.132,33.96788,holds space and listens,1
+171,15,v19-loop-022,Sova,1,1,1,0,1.132,171.985644,holds space and listens,1
+172,15,v19-loop-022,Keth,1,1,1,0,1.1224,309.725008,holds space and listens,1
+173,15,v19-loop-022,Melo,1,1,1,0,1.212,91.531172,steps into turn with gesture,1
+174,15,v19-loop-022,Nari,1,1,1,0,1.132,226.038936,holds space and listens,1
+175,15,v19-loop-022,Ori,1,1,1,0,1.1224,3.7783,holds space and listens,1
+176,15,v19-loop-023,Vonn,1,1,1,0,1.2296,144.904864,repairs misread gesture slowly,1
+177,15,v19-loop-023,Sova,1,1,1,0,1.132,280.092228,holds space and listens,1
+178,15,v19-loop-023,Keth,1,1,1,0,1.132,57.259992,holds space and listens,1
+179,15,v19-loop-023,Melo,1,1,1,0,1.132,196.127756,holds space and listens,1
+180,16,v19-loop-023,Ori,1,1,1,1,1.2796,332.30592,handles ceremony object between agents,1
+181,16,v19-loop-023,Vonn,1,1,1,0,1.212,109.553284,steps into turn with gesture,1
+182,16,v19-loop-023,Sova,1,1,1,1,1.1996,246.021448,handles ceremony object between agents,1
+183,16,v19-loop-023,Keth,1,1,1,0,1.212,25.588812,steps into turn with gesture,1
+184,16,v19-loop-024,Melo,1,1,1,1,1.1996,162.056976,handles ceremony object between agents,1
+185,16,v19-loop-024,Nari,1,1,1,1,1.182,299.56434,handles ceremony object between agents,1
+186,16,v19-loop-024,Ori,0,1,1,0,1.212,79.642104,steps into turn with gesture,1
+187,16,v19-loop-024,Vonn,1,1,1,1,1.1996,216.110268,handles ceremony object between agents,1
+188,16,v19-loop-024,Sova,1,1,1,0,1.132,352.167632,holds space and listens,1
+189,16,v19-loop-024,Keth,1,1,1,0,1.132,130.185396,holds space and listens,1
+190,16,v19-loop-024,Melo,1,1,1,0,1.132,268.20316,holds space and listens,1
+191,16,v19-loop-024,Nari,1,1,1,0,1.212,49.730924,steps into turn with gesture,1
+192,17,v19-loop-025,Vonn,1,1,1,0,1.132,178.118688,holds space and listens,1
+193,17,v19-loop-025,Sova,1,1,1,0,1.132,316.136452,holds space and listens,1
+194,17,v19-loop-025,Keth,1,1,1,0,1.212,97.664216,steps into turn with gesture,1
+195,17,v19-loop-025,Melo,1,1,1,0,1.212,235.68198,steps into turn with gesture,1
+196,17,v19-loop-025,Nari,1,1,1,0,1.132,10.189744,holds space and listens,1
+197,17,v19-loop-025,Ori,1,1,1,0,1.2296,151.037908,steps into turn with gesture,1
+198,17,v19-loop-025,Vonn,1,1,1,0,1.132,286.225272,repairs misread gesture slowly,1
+199,17,v19-loop-025,Sova,1,1,1,0,1.132,64.243036,holds space and listens,1
+200,17,v19-loop-026,Keth,1,1,1,1,1.182,203.7108,handles ceremony object between agents,1
+201,17,v19-loop-026,Melo,1,1,1,0,1.212,343.788564,steps into turn with gesture,1
+202,17,v19-loop-026,Nari,1,1,1,0,1.212,121.806328,steps into turn with gesture,1
+203,17,v19-loop-026,Ori,1,0,1,0,1.132,255.464092,holds space and listens,1
+204,18,v19-loop-026,Sova,1,1,1,0,1.2296,31.042256,steps into turn with gesture,1
+205,18,v19-loop-026,Keth,1,1,1,1,1.1996,168.19002,handles ceremony object between agents,1
+206,18,v19-loop-026,Melo,1,1,1,0,1.132,304.247384,holds space and listens,1
+207,18,v19-loop-026,Nari,1,0,1,0,1.1224,81.136748,holds space and listens,1
+208,18,v19-loop-027,Ori,1,1,1,0,1.212,222.602912,steps into turn with gesture,1
+209,18,v19-loop-027,Vonn,1,1,1,0,1.132,358.300676,holds space and listens,1
+210,18,v19-loop-027,Sova,1,1,1,0,1.1224,136.04004,holds space and listens,1
+211,18,v19-loop-027,Keth,1,1,1,0,1.1224,274.057804,holds space and listens,1
+212,18,v19-loop-027,Melo,1,1,1,0,1.2296,55.184368,steps into turn with gesture,1
+213,18,v19-loop-027,Nari,1,1,1,0,1.212,192.691732,steps into turn with gesture,1
+214,18,v19-loop-027,Ori,1,1,1,0,1.2296,331.219896,steps into turn with gesture,1
+215,18,v19-loop-027,Vonn,1,1,1,1,1.1996,108.36766,handles ceremony object between agents,1
+216,19,v19-loop-028,Keth,1,1,1,1,1.1996,240.265424,handles ceremony object between agents,1
+217,19,v19-loop-028,Melo,0,1,1,0,1.132,16.322788,holds space and listens,1
+218,19,v19-loop-028,Nari,1,1,1,0,1.2296,157.170952,steps into turn with gesture,1
+219,19,v19-loop-028,Ori,1,1,1,0,1.132,292.358316,holds space and listens,1
+220,19,v19-loop-028,Vonn,1,1,1,0,1.1224,70.09768,repairs misread gesture slowly,1
+221,19,v19-loop-028,Sova,1,1,1,0,1.132,208.393844,holds space and listens,1
+222,19,v19-loop-028,Keth,1,1,1,0,1.212,348.731608,steps into turn with gesture,1
+223,19,v19-loop-028,Melo,1,1,1,1,1.1996,126.389772,handles ceremony object between agents,1
+224,19,v19-loop-029,Nari,1,1,1,0,1.132,262.447136,holds space and listens,1
+225,19,v19-loop-029,Ori,1,1,1,1,1.182,41.9149,handles ceremony object between agents,1
+226,19,v19-loop-029,Vonn,1,1,1,0,1.212,181.992664,steps into turn with gesture,1
+227,19,v19-loop-029,Sova,1,1,1,0,1.132,316.500428,holds space and listens,1
+228,20,v19-loop-029,Melo,1,1,1,0,1.132,88.398192,holds space and listens,1
+229,20,v19-loop-029,Nari,1,1,1,0,1.1996,228.376356,holds space and listens,1
+230,20,v19-loop-029,Ori,1,1,1,0,1.1224,4.15532,holds space and listens,1
+231,20,v19-loop-029,Vonn,1,1,1,0,1.212,145.961484,steps into turn with gesture,1
+232,20,v19-loop-030,Sova,1,1,1,0,1.132,280.469248,holds space and listens,1
+233,20,v19-loop-030,Keth,1,1,1,0,1.2296,61.317412,steps into turn with gesture,1
+234,20,v19-loop-030,Melo,1,1,1,0,1.132,196.504776,holds space and listens,1
+235,20,v19-loop-030,Nari,1,1,1,0,1.1224,334.24414,holds space and listens,1
+236,20,v19-loop-030,Ori,1,1,1,0,1.212,114.010304,repairs misread gesture slowly,1
+237,20,v19-loop-030,Vonn,1,1,1,0,1.212,254.068068,steps into turn with gesture,1
+238,20,v19-loop-030,Sova,1,1,1,0,1.2296,31.406232,steps into turn with gesture,1
+239,20,v19-loop-030,Keth,1,1,1,0,1.2296,169.423996,steps into turn with gesture,1
+240,21,v19-loop-031,Nari,1,1,1,1,1.1996,300.45176,handles ceremony object between agents,1
+241,21,v19-loop-031,Ori,1,1,1,0,1.132,76.509124,holds space and listens,1
+242,21,v19-loop-031,Vonn,1,1,1,1,1.1996,216.487288,handles ceremony object between agents,1
+243,21,v19-loop-031,Sova,1,1,1,1,1.1996,354.505052,handles ceremony object between agents,1
+244,21,v19-loop-031,Keth,1,1,1,0,1.132,130.562416,holds space and listens,1
+245,21,v19-loop-031,Melo,1,1,1,0,1.132,268.58018,holds space and listens,1
+246,21,v19-loop-031,Nari,1,1,1,0,1.212,50.107944,steps into turn with gesture,1
+247,21,v19-loop-031,Ori,1,1,1,0,1.2296,187.446108,steps into turn with gesture,1
+248,21,v19-loop-032,Vonn,0,1,1,0,1.132,322.633472,holds space and listens,1
+249,21,v19-loop-032,Sova,1,1,1,0,1.132,100.651236,holds space and listens,1
+250,21,v19-loop-032,Keth,1,1,1,1,1.262,242.439,handles ceremony object between agents,1
+251,21,v19-loop-032,Melo,1,1,1,0,1.212,20.196764,steps into turn with gesture,1
+252,22,v19-loop-032,Ori,1,1,1,0,1.212,152.094528,steps into turn with gesture,1
+253,22,v19-loop-032,Vonn,1,1,1,0,1.132,286.602292,holds space and listens,1
+254,22,v19-loop-032,Sova,1,1,1,0,1.132,64.620056,holds space and listens,1
+255,22,v19-loop-032,Keth,1,1,1,1,1.1996,204.59822,handles ceremony object between agents,1
+256,22,v19-loop-033,Melo,1,1,1,0,1.1224,340.377184,holds space and listens,1
+257,22,v19-loop-033,Nari,1,1,1,0,1.1224,118.394948,holds space and listens,1
+258,22,v19-loop-033,Ori,1,1,1,1,1.1996,258.651512,handles ceremony object between agents,1
+259,22,v19-loop-033,Vonn,1,1,1,0,1.132,34.708876,holds space and listens,1
+260,22,v19-loop-033,Sova,1,1,1,1,1.2796,177.00704,handles ceremony object between agents,1
+261,22,v19-loop-033,Keth,1,0,1,0,1.132,311.084404,holds space and listens,1
+262,22,v19-loop-033,Melo,1,1,1,1,1.1996,90.722568,handles ceremony object between agents,1
+263,22,v19-loop-033,Nari,1,1,1,1,1.1996,228.740332,handles ceremony object between agents,1
+264,23,v19-loop-034,Vonn,1,1,1,0,1.212,2.187696,repairs misread gesture slowly,1
+265,23,v19-loop-034,Sova,1,1,1,0,1.212,139.35546,repairs misread gesture slowly,1
+266,23,v19-loop-034,Keth,1,1,1,0,1.132,274.713224,holds space and listens,1
+267,23,v19-loop-034,Melo,1,1,1,0,1.132,52.730988,holds space and listens,1
+268,23,v19-loop-034,Nari,1,1,1,0,1.132,190.748752,holds space and listens,1
+269,23,v19-loop-034,Ori,1,1,1,0,1.212,331.086516,steps into turn with gesture,1
+270,23,v19-loop-034,Vonn,1,1,1,1,1.2796,111.06468,handles ceremony object between agents,1
+271,23,v19-loop-034,Sova,1,1,1,0,1.212,247.122044,steps into turn with gesture,1
+272,23,v19-loop-035,Keth,1,1,1,0,1.212,26.329808,steps into turn with gesture,1
+273,23,v19-loop-035,Melo,1,1,1,1,1.1996,162.797972,handles ceremony object between agents,1
+274,23,v19-loop-035,Nari,1,1,1,1,1.1996,300.815736,handles ceremony object between agents,1
+275,23,v19-loop-035,Ori,1,1,1,1,1.2796,81.1535,handles ceremony object between agents,1
+276,24,v19-loop-035,Sova,1,1,1,0,1.2296,211.601264,steps into turn with gesture,1
+277,24,v19-loop-035,Keth,1,1,1,0,1.2296,349.619028,steps into turn with gesture,1
+278,24,v19-loop-035,Melo,1,1,1,0,1.132,124.806392,holds space and listens,1
+279,24,v19-loop-035,Nari,0,1,1,0,1.1224,262.545756,holds space and listens,1
+280,24,v19-loop-036,Ori,1,1,1,1,1.262,44.61192,handles ceremony object between agents,1
+281,24,v19-loop-036,Vonn,1,1,1,0,1.1224,178.581284,holds space and listens,1
+282,24,v19-loop-036,Sova,1,1,1,0,1.132,316.877448,holds space and listens,1
+283,24,v19-loop-036,Keth,1,1,1,0,1.132,94.895212,holds space and listens,1
+284,24,v19-loop-036,Melo,1,1,1,0,1.2296,235.743376,steps into turn with gesture,1
+285,24,v19-loop-036,Nari,1,1,1,1,1.262,14.70074,handles ceremony object between agents,1
+286,24,v19-loop-036,Ori,1,1,1,0,1.2296,151.778904,repairs misread gesture slowly,1
+287,24,v19-loop-036,Vonn,1,1,1,0,1.2296,289.796668,steps into turn with gesture,1
+288,25,v19-loop-037,Keth,1,1,1,0,1.212,62.374032,steps into turn with gesture,1
+289,25,v19-loop-037,Melo,1,1,1,0,1.1224,196.603396,holds space and listens,1
+290,25,v19-loop-037,Nari,1,1,1,0,1.132,334.89956,holds space and listens,1
+291,25,v19-loop-037,Ori,1,1,1,0,1.212,115.237324,steps into turn with gesture,1
+292,25,v19-loop-037,Vonn,1,1,1,0,1.132,250.935088,holds space and listens,1
+293,25,v19-loop-037,Sova,1,1,1,0,1.132,28.952852,holds space and listens,1
+294,25,v19-loop-037,Keth,1,1,1,0,1.2296,168.951016,repairs misread gesture slowly,1
+295,25,v19-loop-037,Melo,1,1,1,0,1.132,304.98838,holds space and listens,1
+296,25,v19-loop-038,Nari,1,1,1,0,1.212,85.326144,steps into turn with gesture,1
+297,25,v19-loop-038,Ori,1,1,1,0,1.1224,220.745508,holds space and listens,1
+298,25,v19-loop-038,Vonn,1,1,1,1,1.1996,1.002072,handles ceremony object between agents,1
+299,25,v19-loop-038,Sova,1,1,1,0,1.1224,136.781036,holds space and listens,1
+300,26,v19-loop-038,Melo,1,1,1,1,1.262,272.7272,handles ceremony object between agents,1
+301,26,v19-loop-038,Nari,1,1,1,0,1.132,46.974964,holds space and listens,1
+302,26,v19-loop-038,Ori,1,1,1,0,1.212,188.502728,steps into turn with gesture,1
+303,26,v19-loop-038,Vonn,1,1,1,0,1.2296,325.840892,steps into turn with gesture,1
+304,26,v19-loop-039,Sova,1,1,1,0,1.2296,103.858656,steps into turn with gesture,1
+305,26,v19-loop-039,Keth,1,1,1,0,1.2796,243.32642,steps into turn with gesture,1
+306,26,v19-loop-039,Melo,1,1,1,0,1.132,17.063784,holds space and listens,1
+307,26,v19-loop-039,Nari,1,1,1,1,1.1996,157.041948,handles ceremony object between agents,1
+308,26,v19-loop-039,Ori,1,1,1,0,1.132,293.099312,repairs misread gesture slowly,1
+309,26,v19-loop-039,Vonn,1,1,1,0,1.132,71.117076,holds space and listens,1
+310,26,v19-loop-039,Sova,0,1,1,0,1.1224,208.85644,holds space and listens,1
+311,26,v19-loop-039,Keth,1,1,1,0,1.212,349.472604,steps into turn with gesture,1
+312,27,v19-loop-040,Nari,1,1,1,0,1.212,121.370368,steps into turn with gesture,1
+313,27,v19-loop-040,Ori,1,1,1,0,1.212,259.388132,steps into turn with gesture,1
+314,27,v19-loop-040,Vonn,1,1,1,1,1.1996,37.046296,handles ceremony object between agents,1
+315,27,v19-loop-040,Sova,1,1,1,0,1.1224,172.82526,holds space and listens,1
+316,27,v19-loop-040,Keth,1,1,1,0,1.132,311.121424,holds space and listens,1
+317,27,v19-loop-040,Melo,1,1,1,0,1.132,89.139188,holds space and listens,1
+318,27,v19-loop-040,Nari,1,1,1,0,1.212,229.476952,steps into turn with gesture,1
+319,27,v19-loop-040,Ori,1,1,1,0,1.132,5.174716,holds space and listens,1
+320,27,v19-loop-041,Vonn,1,1,1,1,1.182,144.64248,handles ceremony object between agents,1
+321,27,v19-loop-041,Sova,1,1,1,0,1.132,281.210244,holds space and listens,1
+322,27,v19-loop-041,Keth,1,1,1,0,1.2296,62.058408,steps into turn with gesture,1
+323,27,v19-loop-041,Melo,1,1,1,0,1.212,198.715772,repairs misread gesture slowly,1
+324,28,v19-loop-041,Ori,1,1,1,0,1.1224,328.865136,holds space and listens,1
+325,28,v19-loop-041,Vonn,1,1,1,0,1.1224,106.8829,holds space and listens,1
+326,28,v19-loop-041,Sova,1,1,1,0,1.212,247.499064,steps into turn with gesture,1
+327,28,v19-loop-041,Keth,1,1,1,0,1.1224,22.918428,holds space and listens,1
+328,28,v19-loop-042,Melo,1,1,1,0,1.212,163.534592,steps into turn with gesture,1
+329,28,v19-loop-042,Nari,1,1,1,0,1.2296,302.062756,steps into turn with gesture,1
+330,28,v19-loop-042,Ori,1,1,1,1,1.2796,81.53052,handles ceremony object between agents,1
+331,28,v19-loop-042,Vonn,1,1,1,1,1.1996,217.228284,handles ceremony object between agents,1
+332,28,v19-loop-042,Sova,1,1,1,0,1.132,353.285648,holds space and listens,1
+333,28,v19-loop-042,Keth,1,1,1,1,1.1996,133.263812,handles ceremony object between agents,1
+334,28,v19-loop-042,Melo,1,1,1,0,1.132,269.321176,holds space and listens,1
+335,28,v19-loop-042,Nari,1,1,1,1,1.1996,49.29934,handles ceremony object between agents,1

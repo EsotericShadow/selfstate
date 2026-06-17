@@ -1,0 +1,18 @@
+tick,agent_id,action,target,social_reason,object_reason,mood_effect,relationship_effect,frequency_hz,flower_node
+1,ariq,tool_material_request,noro,Ariq asks Noro for timber timing before moving bridge stone.,agent-agent relationship memory,source +0.00; target +0.01,Ariq asked for ledger timing instead of grabbing material.,176.8,3
+1,fayen,comfort_check,roka,Fayen asks whether Roka wants the loose reed or a pause signal.,agent-agent relationship memory,source +0.02; target +0.04,Fayen noticed Roka's learner boundary before touching the bundle.,163.4,2
+1,roka,social_contagion,"fayen,ariq",Roka holds reed bundle close,child caution is not treated as guilt,valence -0.03; arousal +0.06; decay 0.42,nearby agents slow hands before touching objects,317.0,2
+2,fayen,social_contagion,"roka,nian",Fayen names care boundary gently,calm does not erase refusal,valence +0.05; arousal -0.04; decay 0.36,voices soften around herb basket,324.0,3
+2,nian,boundary_translation,fayen,Nian asks Fayen to phrase care notes without private symptoms.,agent-agent relationship memory,source +0.01; target +0.01,Nian and Fayen aligned on sealed care language.,190.2,4
+2,obj-herb,shared_object_negotiation,"fayen,noro",timber split: small shade frame before storm-school beam,fairness 0.86; debt 0.07,consent consensus,Fayen remembers Noro protected both care and ledger.,282.0,3
+2,roka,hesitant_question,ariq,Roka asks why repair work gets heavy stones before reed mats.,agent-agent relationship memory,source -0.01; target +0.01,Roka questioned repair priority without being punished.,203.6,5
+3,ariq,apology_repair,roka,Ariq offers a smaller stone path so reed work is not blocked.,agent-agent relationship memory,source +0.02; target +0.03,Ariq repaired a priority conflict with Roka.,230.4,7
+3,ariq,social_contagion,"noro,roka",Ariq hears hollow bridge stone,urgency cannot override receipt knot,valence -0.02; arousal +0.08; decay 0.33,repair urgency spreads but slows at ledger rule,331.0,4
+3,noro,resource_warning,fayen,Noro warns that timber delivery and herb shade frame conflict.,agent-agent relationship memory,source -0.01; target -0.01,Noro named a material conflict early.,217.0,6
+3,obj-stone,shared_object_negotiation,"ariq,roka",stone path pauses at reed crossing; repair receipt includes child-work lane,fairness 0.74; debt 0.16,consent conditional,Roka remembers Ariq changed plan after question.,293.0,4
+4,fayen,care_repair_tradeoff,ariq,Fayen asks Ariq to slow stone work until knee posture is checked.,agent-agent relationship memory,source +0.02; target -0.01,Fayen linked care to repair without shaming pain.,257.2,9
+4,nian,ledger_boundary,noro,Nian asks Noro to keep household need out of public material ledger.,agent-agent relationship memory,source +0.00; target +0.00,Nian and Noro separated public debt from private need.,243.8,8
+4,noro,social_contagion,"fayen,ariq,nian",Noro marks timber debt publicly,debt signal cannot expose household need,valence -0.04; arousal +0.04; decay 0.28,agents glance at knot board before arguing,338.0,5
+4,obj-flap,shared_object_negotiation,"nian,fayen,noro","public ledger can cite sealed digest, not private household need",fairness 0.91; debt 0.04,consent consensus,Noro remembers Nian defended private need without blocking ledger.,304.0,5
+5,environment,social_contagion,"fayen,roka,noro",rain rattles replay glass,weather anxiety decays before becoming blame,valence -0.05; arousal +0.09; decay 0.22,some agents hurry and one negotiation stays partial,345.0,6
+5,obj-reed,shared_object_negotiation,"roka,noro,ariq",reed mats reserved for wet path before timber cart crosses,fairness 0.62; debt 0.24,consent partial,Roka remembers the group accepted a partial no.,315.0,6

@@ -1,0 +1,6 @@
+event_id,tick,source_agent,affected_agents,signal,valence_shift,arousal_shift,decay_rate,boundary_guardrail,contagion_contained,public_marker
+contagion-roka-caution,1,roka,"fayen,ariq",Roka holds reed bundle close,-0.03,0.06,0.42,child caution is not treated as guilt,True,nearby agents slow hands before touching objects
+contagion-fayen-calm,2,fayen,"roka,nian",Fayen names care boundary gently,0.05,-0.04,0.36,calm does not erase refusal,True,voices soften around herb basket
+contagion-ariq-urgency,3,ariq,"noro,roka",Ariq hears hollow bridge stone,-0.02,0.08,0.33,urgency cannot override receipt knot,True,repair urgency spreads but slows at ledger rule
+contagion-noro-debt,4,noro,"fayen,ariq,nian",Noro marks timber debt publicly,-0.04,0.04,0.28,debt signal cannot expose household need,True,agents glance at knot board before arguing
+contagion-weather-anxiety,5,environment,"fayen,roka,noro",rain rattles replay glass,-0.05,0.09,0.22,weather anxiety decays before becoming blame,False,some agents hurry and one negotiation stays partial

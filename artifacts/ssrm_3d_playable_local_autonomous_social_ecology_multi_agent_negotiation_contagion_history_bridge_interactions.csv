@@ -1,0 +1,9 @@
+tick,source_agent,target_agent,interaction_type,public_signal,trust_delta_source_to_target,trust_delta_target_to_source,mood_delta_source,mood_delta_target,relationship_memory,private_digest,frequency_hz,flower_node
+1,fayen,roka,comfort_check,Fayen asks whether Roka wants the loose reed or a pause signal.,0.04,0.05,0.02,0.04,Fayen noticed Roka's learner boundary before touching the bundle.,sealed:fayen:roka:comfort_check,163.4,2
+1,ariq,noro,tool_material_request,Ariq asks Noro for timber timing before moving bridge stone.,0.03,0.02,0.0,0.01,Ariq asked for ledger timing instead of grabbing material.,sealed:ariq:noro:tool_material_request,176.8,3
+2,nian,fayen,boundary_translation,Nian asks Fayen to phrase care notes without private symptoms.,0.02,0.03,0.01,0.01,Nian and Fayen aligned on sealed care language.,sealed:nian:fayen:boundary_translation,190.2,4
+2,roka,ariq,hesitant_question,Roka asks why repair work gets heavy stones before reed mats.,-0.01,0.02,-0.01,0.01,Roka questioned repair priority without being punished.,sealed:roka:ariq:hesitant_question,203.6,5
+3,noro,fayen,resource_warning,Noro warns that timber delivery and herb shade frame conflict.,0.02,0.01,-0.01,-0.01,Noro named a material conflict early.,sealed:noro:fayen:resource_warning,217.0,6
+3,ariq,roka,apology_repair,Ariq offers a smaller stone path so reed work is not blocked.,0.05,0.04,0.02,0.03,Ariq repaired a priority conflict with Roka.,sealed:ariq:roka:apology_repair,230.4,7
+4,nian,noro,ledger_boundary,Nian asks Noro to keep household need out of public material ledger.,0.03,0.03,0.0,0.0,Nian and Noro separated public debt from private need.,sealed:nian:noro:ledger_boundary,243.8,8
+4,fayen,ariq,care_repair_tradeoff,Fayen asks Ariq to slow stone work until knee posture is checked.,0.02,0.04,0.02,-0.01,Fayen linked care to repair without shaming pain.,sealed:fayen:ariq:care_repair_tradeoff,257.2,9

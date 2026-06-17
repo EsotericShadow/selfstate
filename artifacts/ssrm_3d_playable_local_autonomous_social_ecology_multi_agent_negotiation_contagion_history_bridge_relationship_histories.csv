@@ -1,0 +1,6 @@
+history_id,agent_a,agent_b,prior_memory,new_memory,trust_before,trust_after,reciprocity_debt,continuity_score,private_detail_digest,visible_future_behavior
+hist-fayen-roka,fayen,roka,Fayen once asked before touching learner materials.,Fayen noticed Roka's boundary again during reed negotiation.,0.62,0.7,0.05,0.93,sealed:fayen-roka:private-detail,Roka lets Fayen stand closer to the reed lane.
+hist-ariq-roka,ariq,roka,Roka worried repair work would crowd reed learning.,Ariq changed stone plan and accepted a partial no.,0.48,0.58,0.14,0.82,sealed:ariq-roka:private-detail,Ariq points before crossing the reed lane.
+hist-nian-noro,nian,noro,Noro's ledgers sometimes pressure private need boundaries.,Noro accepted public digest without private household detail.,0.56,0.64,0.07,0.88,sealed:nian-noro:private-detail,Noro asks Nian for boundary wording before ledger posts.
+hist-fayen-ariq,fayen,ariq,Fayen has reminded Ariq that pain is not shame.,Ariq slowed stone work for posture check.,0.6,0.66,0.09,0.86,sealed:fayen-ariq:private-detail,Ariq waits for Fayen's posture signal before heavy lift.
+hist-fayen-noro,fayen,noro,Fayen and Noro often trade care material against ledger debt.,Timber split leaves small debt but preserves both care and school repair.,0.57,0.61,0.18,0.74,sealed:fayen-noro:private-detail,Fayen checks timber ledger before asking for more shade beams.

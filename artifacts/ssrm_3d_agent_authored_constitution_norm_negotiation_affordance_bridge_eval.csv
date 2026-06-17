@@ -1,0 +1,16 @@
+condition,agent_count,constitution_cycles,constitution_events,constitution_authorship_rate,proposal_diversity_rate,deliberation_turn_rate,preference_vote_rate,norm_negotiation_rate,minority_protection_rate,consent_affordance_rate,affordance_enforcement_rate,revision_loop_rate,constitution_memory_rate,avatar_ui_binding_rate,dignity_continuity_rate,privacy_claim_boundary_rate,frequency_flower_constitution_rhythm_rate,browser_constitution_replay_rate,trace_integrity,constitution_affordance_readiness
+integrated_agent_authored_constitution_norm_negotiation_affordance,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.99125
+no_agent_authorship,3,8,24,0.0,0.0,0.0,0.0,0.0,0.375,0.0,0.0,0.0,0.0,0.0,0.375,1.0,1.0,1.0,1.0,0.16875
+no_proposal_deliberation,3,8,24,1.0,1.0,0.0,0.0,0.0,0.375,0.0,0.0,0.0,0.0,0.0,0.375,1.0,1.0,1.0,1.0,0.31875
+no_preference_vote,3,8,24,1.0,1.0,1.0,0.0,0.0,0.375,0.0,0.0,0.0,0.0,0.0,0.375,1.0,1.0,1.0,1.0,0.37875
+no_norm_negotiation,3,8,24,1.0,1.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.375,1.0,1.0,1.0,1.0,0.4925
+no_minority_protection,3,8,24,1.0,1.0,1.0,1.0,0.375,0.0,0.375,0.375,0.375,0.625,0.375,0.375,1.0,1.0,1.0,1.0,0.61625
+no_consent_affordances,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.875,1.0,0.0,0.375,1.0,1.0,1.0,1.0,0.70375
+no_affordance_enforcement,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.875,1.0,0.0,0.375,1.0,1.0,1.0,1.0,0.79375
+no_revision_loop,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,0.125,0.125,0.0,1.0,0.125,0.5,1.0,1.0,1.0,1.0,0.68125
+no_constitution_memory,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92125
+no_avatar_ui_binding,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.92125
+no_dignity_continuity,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.93125
+no_privacy_claim_boundary,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,0.0,0.0,1.0,1.0,1.0,0.87125
+no_frequency_flower_binding,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.96125
+no_browser_replay,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.97125

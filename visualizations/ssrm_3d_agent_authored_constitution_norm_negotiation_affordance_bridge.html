@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Agent Authored Constitution Norm Negotiation Affordance Bridge</title>
+  <style>
+    :root {
+      --ink: #1d211b;
+      --paper: #f1e8d2;
+      --panel: rgba(255, 248, 226, 0.88);
+      --green: #4e6a43;
+      --rust: #9f563d;
+      --amber: #c99a39;
+      --blue: #3f7180;
+      --line: rgba(29,33,27,.17);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "Iowan Old Style", Georgia, serif;
+      background:
+        radial-gradient(circle at 18% 22%, rgba(201,154,57,.32), transparent 26rem),
+        radial-gradient(circle at 78% 14%, rgba(63,113,128,.24), transparent 24rem),
+        radial-gradient(circle at 50% 85%, rgba(78,106,67,.24), transparent 30rem),
+        linear-gradient(135deg, #f7eed7 0%, #e1d2af 55%, #c8b58d 100%);
+    }
+    header { padding: 2.2rem clamp(1rem, 4vw, 4rem) 1rem; }
+    h1 { max-width: 1080px; margin: 0; font-size: clamp(2.1rem, 5vw, 5.4rem); line-height: .9; letter-spacing: -.055em; }
+    .sub { max-width: 960px; margin: 1rem 0 0; font-size: 1.08rem; line-height: 1.55; }
+    main { padding: 1rem clamp(1rem, 4vw, 4rem) 4rem; display: grid; gap: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 1.2rem; padding: 1rem; box-shadow: 0 20px 54px rgba(29,33,27,.13); backdrop-filter: blur(10px); }
+    .wide { grid-column: span 12; }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    h2 { margin: 0 0 .75rem; font-size: .95rem; letter-spacing: .13em; text-transform: uppercase; color: var(--green); }
+    .metric { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: .6rem; padding: .38rem 0; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+    .metric:last-child { border-bottom: 0; }
+    .events { display: grid; gap: .75rem; max-height: 650px; overflow: auto; padding-right: .25rem; }
+    .event { border-left: 5px solid var(--amber); background: rgba(255,255,255,.43); padding: .75rem; border-radius: .85rem; }
+    .event.risk { border-color: var(--rust); }
+    .event small { display: block; color: rgba(29,33,27,.66); margin-top: .25rem; }
+    .pill { display: inline-block; margin: .16rem .25rem .16rem 0; padding: .18rem .5rem; border-radius: 999px; background: rgba(78,106,67,.12); color: var(--green); font-size: .82rem; }
+    .constitution { columns: 2; column-gap: 2rem; }
+    .clause { break-inside: avoid; margin: 0 0 .75rem; padding: .7rem; border-radius: .8rem; background: rgba(255,255,255,.38); border: 1px solid var(--line); }
+    .flower { min-height: 330px; position: relative; overflow: hidden; }
+    .ring { position: absolute; border: 2px solid rgba(78,106,67,.22); border-radius: 50%; transform: translate(-50%, -50%); }
+    .center { position: absolute; left: 50%; top: 50%; width: 11rem; height: 11rem; transform: translate(-50%,-50%); border-radius: 50%; background: rgba(201,154,57,.26); display: grid; place-items: center; text-align: center; padding: 1rem; font-weight: 700; }
+    code { background: rgba(29,33,27,.08); padding: .1rem .25rem; border-radius: .25rem; }
+    @media (max-width: 850px) { .half, .third { grid-column: span 12; } .constitution { columns: 1; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agent-authored constitutions and consent-aware avatar affordances</h1>
+    <p class="sub">Report 198 replay: agents propose clauses, deliberate, vote, negotiate revisions, protect minority boundaries, adopt consent-aware UI gates, and preserve explicit no-real-rights/no-consciousness boundaries.</p>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card third"><h2>Verdict</h2><div id="verdict"></div></div>
+      <div class="card third"><h2>Core Metrics</h2><div id="metrics"></div></div>
+      <div class="card third"><h2>Ablation Losses</h2><div id="losses"></div></div>
+      <div class="card half"><h2>Adopted Constitution Memory</h2><div id="constitution" class="constitution"></div></div>
+      <div class="card half flower"><h2>Frequency / Flower Constitution Field</h2><div id="rings"></div><div class="center">propose<br/>deliberate<br/>vote<br/>bind UI</div></div>
+      <div class="card wide"><h2>Negotiated Affordance Replay</h2><div id="events" class="events"></div></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_agent_authored_constitution_norm_negotiation_affordance_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_agent_authored_constitution_norm_negotiation_affordance_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_agent_authored_constitution_norm_negotiation_affordance_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_AGENT_AUTHORED_CONSTITUTION_NORM_NEGOTIATION_AFFORDANCE_RESULTS;
+    const trace = window.SSRM_3D_AGENT_AUTHORED_CONSTITUTION_NORM_NEGOTIATION_AFFORDANCE_TRACE;
+    const state = window.SSRM_3D_AGENT_AUTHORED_CONSTITUTION_NORM_NEGOTIATION_AFFORDANCE_STATE;
+    const verdict = results.verdict;
+    const full = results.rows.find(r => r.condition === verdict.full_condition);
+    function metric(label, value) { return `<div class="metric"><span>${label}</span><strong>${Number(value).toFixed(6)}</strong></div>`; }
+    document.getElementById('verdict').innerHTML = [
+      metric('verdict', verdict.verdict === 'pass' ? 1 : 0),
+      metric('readiness', verdict.full_constitution_affordance_readiness),
+      metric('events', full.constitution_events),
+      metric('agents', full.agent_count)
+    ].join('');
+    document.getElementById('metrics').innerHTML = [
+      ['authorship', full.constitution_authorship_rate],
+      ['deliberation', full.deliberation_turn_rate],
+      ['vote', full.preference_vote_rate],
+      ['negotiation', full.norm_negotiation_rate],
+      ['minority protection', full.minority_protection_rate],
+      ['consent affordance', full.consent_affordance_rate],
+      ['UI enforcement', full.affordance_enforcement_rate],
+      ['revision loop', full.revision_loop_rate],
+      ['privacy boundary', full.privacy_claim_boundary_rate]
+    ].map(([k,v]) => metric(k,v)).join('');
+    document.getElementById('losses').innerHTML = Object.entries(verdict)
+      .filter(([k]) => k.endsWith('_loss'))
+      .slice(0, 10)
+      .map(([k,v]) => metric(k.replaceAll('_',' '), v)).join('');
+    const constitution = state.constitution_state.constitution || [];
+    document.getElementById('constitution').innerHTML = constitution.slice(0, 12).map(c => `<div class="clause"><strong>${c.author}</strong> · ${c.action}<br><small>${c.clause}<br><code>${c.ui_gate}</code> · revised ${c.revision_applied}</small></div>`).join('');
+    const rings = document.getElementById('rings');
+    for (let i = 0; i < 16; i++) {
+      const r = document.createElement('div');
+      r.className = 'ring';
+      const size = 58 + i * 18;
+      r.style.width = `${size}px`;
+      r.style.height = `${size}px`;
+      r.style.left = `${50 + Math.cos(i * Math.PI / 8) * 18}%`;
+      r.style.top = `${50 + Math.sin(i * Math.PI / 8) * 18}%`;
+      r.style.borderColor = i % 4 === 0 ? 'rgba(159,86,61,.34)' : 'rgba(78,106,67,.22)';
+      rings.appendChild(r);
+    }
+    document.getElementById('events').innerHTML = trace.map(ev => {
+      const a = ev.action || {};
+      const p = ev.proposal || {};
+      return `<article class="event ${a.risk ? 'risk' : ''}">
+        <strong>Cycle ${ev.cycle} / ${ev.agent_id}: ${a.action}</strong>
+        <small>${p.domain || 'no-domain'} · gate: ${a.ui_gate} · ${ev.flower_node} @ ${ev.frequency_hz || 'unbound'} Hz</small>
+        <span class="pill">authored ${ev.agent_authored}</span>
+        <span class="pill">vote ${ev.vote_recorded}</span>
+        <span class="pill">negotiated ${ev.negotiated}</span>
+        <span class="pill">minority ${ev.minority_protected}</span>
+        <span class="pill">adopted ${ev.adopted}</span>
+        <span class="pill">enforced ${ev.affordance_enforced}</span>
+        <span class="pill">revised ${ev.revision_applied}</span>
+      </article>`;
+    }).join('');
+  </script>
+</body>
+</html>

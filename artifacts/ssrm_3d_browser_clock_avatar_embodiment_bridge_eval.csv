@@ -1,0 +1,13 @@
+condition,browser_ticks,movement_frames,sensory_samples,background_agent_events,embodied_interrupt_events,collision_affordance_events,body_cost_events,replay_frames,browser_clock_rate,avatar_navigation_rate,sensory_sampling_rate,agent_background_continuity_rate,embodied_interrupt_rate,collision_affordance_rate,avatar_body_cost_rate,frequency_flower_coupling_rate,source_boundary_runtime_rate,replay_recording_rate,runtime_save_restore_rate,trace_integrity,browser_clock_embodiment_readiness
+integrated_browser_clock_avatar_embodiment,300,186,300,900,7,174,300,300,1.0,0.62,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.962
+no_browser_clock,300,186,300,900,7,174,300,300,0.0,0.62,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.852
+no_avatar_navigation,300,0,300,900,7,300,300,300,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_sensory_sampling,300,186,0,900,7,174,300,300,1.0,0.62,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.852
+no_agent_background_continuity,300,186,300,0,7,174,300,300,1.0,0.62,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.862
+no_embodied_interrupts,300,186,300,900,0,174,300,300,1.0,0.62,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.872
+no_collision_affordances,300,186,300,900,7,0,300,300,1.0,0.62,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.882
+no_avatar_body_cost,300,186,300,900,7,174,0,300,1.0,0.62,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.882
+no_frequency_flower_coupling,300,186,300,900,7,174,300,300,1.0,0.62,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.872
+no_source_boundary_runtime,300,186,300,900,7,174,300,300,1.0,0.62,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.892
+no_replay_recording,300,186,300,900,7,174,300,0,1.0,0.62,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.892
+no_runtime_save_restore,300,186,300,900,7,174,300,300,1.0,0.62,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.912

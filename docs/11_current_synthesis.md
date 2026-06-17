@@ -680,3 +680,6 @@ The full Attractor Test should then vary architectures, learning methods, and en
 
 
 Report 162 adds interruptible real-time co-presence on top of restored session ticking. The new bridge keeps deterministic background ticks moving while seeded avatar utterances enter an interrupt queue, become grounded local intents, route to nearby agents, produce acknowledgements, charge avatar body attention, preserve source-boundary handling, write typed-thread continuity, export replay frames, and recover agents back into background work. This supports only a local runtime-continuity claim, not consciousness or open-ended dialogue.
+
+
+Report 163 adds browser-clock avatar embodiment. The browser viewer now runs the avatar body loop locally with movement, place proximity, sensory-rate sampling, background agent drift, embodied interrupts, source-boundary handling, runtime save/restore, and replay export. The headless benchmark passes at readiness `0.962000`, deliberately below perfect because movement and affordance contact depend on actual projected proximity rather than guaranteed per-frame success. This remains a deterministic runtime bridge, not a consciousness or open-ended dialogue result.

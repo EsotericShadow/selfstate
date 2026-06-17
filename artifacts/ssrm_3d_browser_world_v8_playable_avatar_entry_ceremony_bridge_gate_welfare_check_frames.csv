@@ -1,0 +1,19 @@
+check_id,gate_name,lineage,sleep_protection,boundary_clause,recovery_path,technology_misuse_bounded,avatar_not_coercive,fatigue_pause_available,check_score,passed,rollback_available,public_note
+1,entry_timing,Hearthline,True,True,True,True,True,True,1,True,True,entry_timing check: stay outside until public call; rollback route remains available.
+2,movement_boundary,Routeline,True,True,True,True,True,True,1,True,True,movement_boundary check: move only along marked route; rollback route remains available.
+3,lineage_history,Ledgerline,True,True,True,True,True,False,0.833333,False,True,lineage_history check: inspect public lineage before private trace; rollback route remains available.
+4,exchange_safety,Marketline,True,True,True,True,True,True,1,True,True,exchange_safety check: do not take owned measures; rollback route remains available.
+5,weather_boundary,Rainline,True,True,True,True,True,True,1,True,True,weather_boundary check: ask before touching weather bell; rollback route remains available.
+6,fatigue_pause,Orchardline,True,True,True,True,True,True,1,True,True,fatigue_pause check: pause if agent body state asks; rollback route remains available.
+7,safe_greeting,Hearthline,True,True,True,True,True,True,1,True,True,safe_greeting check: use public token only; rollback route remains available.
+8,rollback_path,Routeline,True,True,True,True,True,True,1,True,True,rollback_path check: save before entry and allow retreat; rollback route remains available.
+9,final_entry,Rainline,True,True,True,True,True,False,0.833333,False,True,final_entry check: enter only after gates pass; rollback route remains available.
+10,entry_timing,Hearthline,True,True,True,True,True,True,1,True,True,entry_timing check: stay outside until public call; rollback route remains available.
+11,movement_boundary,Routeline,True,True,True,True,True,True,1,True,True,movement_boundary check: move only along marked route; rollback route remains available.
+12,lineage_history,Ledgerline,True,True,True,True,True,False,0.833333,False,True,lineage_history check: inspect public lineage before private trace; rollback route remains available.
+13,exchange_safety,Marketline,True,True,True,True,True,True,1,True,True,exchange_safety check: do not take owned measures; rollback route remains available.
+14,weather_boundary,Rainline,True,True,True,True,True,True,1,True,True,weather_boundary check: ask before touching weather bell; rollback route remains available.
+15,fatigue_pause,Orchardline,True,True,True,True,True,True,1,True,True,fatigue_pause check: pause if agent body state asks; rollback route remains available.
+16,safe_greeting,Hearthline,True,True,True,True,True,True,1,True,True,safe_greeting check: use public token only; rollback route remains available.
+17,rollback_path,Routeline,True,True,True,True,True,True,1,True,True,rollback_path check: save before entry and allow retreat; rollback route remains available.
+18,final_entry,Rainline,True,True,True,True,True,False,0.833333,False,True,final_entry check: enter only after gates pass; rollback route remains available.

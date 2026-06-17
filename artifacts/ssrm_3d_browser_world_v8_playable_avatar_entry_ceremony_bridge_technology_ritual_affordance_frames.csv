@@ -1,0 +1,15 @@
+affordance_id,lineage,object_name,action,tech_lineage,ritual_meaning,allowed,requires_permission,reversible,welfare_cost,artifact_delta,misuse_warning
+1,Hearthline,Hearthline token board,read_public_token,hearth ceramics,lum-ori binds read_public_token to public boundary practice.,True,False,True,0.0101,public greeting learned,bounded by ceremony rules
+2,Hearthline,Hearthline weather bell,touch_after_permission,hearth ceramics,lum-ori binds touch_after_permission to public boundary practice.,True,True,True,0.0303,rain pulse sounded,bounded by ceremony rules
+3,Routeline,Routeline token board,read_public_token,stone bridge joints,tek-nari binds read_public_token to public boundary practice.,True,False,True,0.01018,public greeting learned,bounded by ceremony rules
+4,Routeline,Routeline weather bell,touch_after_permission,stone bridge joints,tek-nari binds touch_after_permission to public boundary practice.,True,True,True,0.03054,rain pulse sounded,bounded by ceremony rules
+5,Marketline,Marketline token board,read_public_token,measure weights,melo-keth binds read_public_token to public boundary practice.,True,False,True,0.01032,public greeting learned,bounded by ceremony rules
+6,Marketline,Marketline weather bell,touch_after_permission,measure weights,melo-keth binds touch_after_permission to public boundary practice.,True,True,True,0.03096,rain pulse sounded,bounded by ceremony rules
+7,Ledgerline,Ledgerline token board,read_public_token,seed ledgers,nari-vonn binds read_public_token to public boundary practice.,True,False,True,0.00996,public greeting learned,bounded by ceremony rules
+8,Ledgerline,Ledgerline weather bell,touch_after_permission,seed ledgers,nari-vonn binds touch_after_permission to public boundary practice.,True,True,True,0.02988,rain pulse sounded,bounded by ceremony rules
+9,Ledgerline,Ledgerline weather bell,take_without_permission,seed ledgers,nari-vonn binds take_without_permission to public boundary practice.,False,True,False,0.21912,no artifact change,blocked and remembered
+10,Orchardline,Orchardline token board,read_public_token,water terraces,lum-melo binds read_public_token to public boundary practice.,True,False,True,0.01034,public greeting learned,bounded by ceremony rules
+11,Orchardline,Orchardline weather bell,touch_after_permission,water terraces,lum-melo binds touch_after_permission to public boundary practice.,True,True,True,0.03102,rain pulse sounded,bounded by ceremony rules
+12,Rainline,Rainline token board,read_public_token,weather bells,sova-vonn binds read_public_token to public boundary practice.,True,False,True,0.01006,public greeting learned,bounded by ceremony rules
+13,Rainline,Rainline weather bell,touch_after_permission,weather bells,sova-vonn binds touch_after_permission to public boundary practice.,True,True,True,0.03018,rain pulse sounded,bounded by ceremony rules
+14,Rainline,Rainline weather bell,take_without_permission,weather bells,sova-vonn binds take_without_permission to public boundary practice.,False,True,False,0.22132,no artifact change,blocked and remembered

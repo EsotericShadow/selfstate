@@ -1,0 +1,61 @@
+{
+  "ablations": {
+    "no_avatar_movement": 0.678633,
+    "no_ceremony_gates": 0.708633,
+    "no_culture_conditioned_responses": 0.758633,
+    "no_frequency_flower_ceremony_rhythm": 0.928633,
+    "no_lineage_history_inspection": 0.798633,
+    "no_private_trace_boundary": 0.868633,
+    "no_save_restore_replay": 0.818633,
+    "no_source_epoch_continuity": 0.748633,
+    "no_typed_local_acts": 0.828633,
+    "no_welfare_boundary_checks": 0.718633
+  },
+  "counts": {
+    "avatar_entry_ceremony_steps": 9,
+    "browser_world_v8_ticks": 72,
+    "ceremony_agent_response_frames": 36,
+    "gate_welfare_check_frames": 18,
+    "lineage_history_inspection_frames": 6,
+    "live_avatar_movement_frames": 72,
+    "replay_entry_ceremony_frames": 72,
+    "technology_ritual_affordance_frames": 14
+  },
+  "honest_limits": [
+    "This is a deterministic browser-playable avatar-entry scaffold, not subjective consciousness.",
+    "Agent responses use local parser rules and seeded culture records; no LLM or autonomous natural language is called.",
+    "Consent and refusal are simulated functional boundaries, not real consent or moral standing.",
+    "The browser view is a playable 2D/2.5D ceremony surface, not a finished 3D engine or physics simulation.",
+    "Lineage histories are public summaries conditioned on Report 247 artifacts, not autonomous anthropology.",
+    "Welfare and rollback gates are bounded checks, not proof of experienced welfare.",
+    "Frequency and flower phase are deterministic rhythm variables, not metaphysical proof."
+  ],
+  "metrics": {
+    "agent_response_culture_conditioning": 1.0,
+    "boundary_response_calibration": 1.0,
+    "browser_save_restore_integrity": 1.0,
+    "browser_world_v8_playable_entry_readiness": 0.988633,
+    "browser_world_v8_surface_available": 1.0,
+    "ceremony_gate_binding": 0.986127,
+    "culture_conditioned_agent_response_diversity": 1.0,
+    "frequency_flower_ceremony_rhythm": 1.0,
+    "lineage_history_inspection": 1.0,
+    "live_movement_binding": 1.0,
+    "mean_entry_channel_score": 0.990518,
+    "playable_avatar_entry_surface": 1,
+    "private_trace_boundary": 1.0,
+    "replay_import_export_integrity": 1.0,
+    "source_thousands_year_epoch_continuity": 1.0,
+    "technology_ritual_affordance_binding": 1.0,
+    "typed_local_act_handling": 0.889722,
+    "weakest_channel_score": 0.889722,
+    "welfare_boundary_respect": 0.962963,
+    "welfare_rollback_safety": 1.0
+  },
+  "name": "SSRM-3D Browser World v8 Playable Avatar-Entry Ceremony Bridge",
+  "next_gate": "browser world v9 with post-entry live society consequences where avatar movement and typed acts modify lineage memory, technologies, relationships, welfare, and routine schedules across multiple days",
+  "report": 248,
+  "seed": 20260861,
+  "source_results": "artifacts/ssrm_3d_browser_world_v7_thousands_year_pre_avatar_epoch_bridge_results.json",
+  "verdict": "pass"
+}

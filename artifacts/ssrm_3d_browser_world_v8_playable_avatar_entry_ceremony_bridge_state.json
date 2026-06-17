@@ -1,0 +1,250 @@
+{
+  "boundary": "functional playable entry scaffold; no consciousness claim",
+  "entry_model": "source epoch continuity + playable movement + public lineage inspection + culture-conditioned response + welfare gate + replay",
+  "lineages": {
+    "Hearthline": {
+      "agent": "Sova",
+      "branch": "hearthline-lum-84",
+      "care": 0.86,
+      "freq": 2.31,
+      "guard": 0.77,
+      "place": "Hearth Archive",
+      "tech": "hearth ceramics",
+      "token": "lum-ori"
+    },
+    "Ledgerline": {
+      "agent": "Nari",
+      "branch": "ledgerline-vonn-84",
+      "care": 0.62,
+      "freq": 2.06,
+      "guard": 0.84,
+      "place": "Hearth Archive",
+      "tech": "seed ledgers",
+      "token": "nari-vonn"
+    },
+    "Marketline": {
+      "agent": "Melo",
+      "branch": "marketline-melo-84",
+      "care": 0.7,
+      "freq": 2.47,
+      "guard": 0.66,
+      "place": "Market Measure",
+      "tech": "measure weights",
+      "token": "melo-keth"
+    },
+    "Orchardline": {
+      "agent": "Ori",
+      "branch": "orchardline-lum-84",
+      "care": 0.74,
+      "freq": 2.4,
+      "guard": 0.65,
+      "place": "Ceremony Center",
+      "tech": "water terraces",
+      "token": "lum-melo"
+    },
+    "Rainline": {
+      "agent": "Vonn",
+      "branch": "rainline-sova-84",
+      "care": 0.64,
+      "freq": 2.12,
+      "guard": 0.79,
+      "place": "Rainwalk Threshold",
+      "tech": "weather bells",
+      "token": "sova-vonn"
+    },
+    "Routeline": {
+      "agent": "Keth",
+      "branch": "routeline-tek-84",
+      "care": 0.66,
+      "freq": 2.17,
+      "guard": 0.73,
+      "place": "Gate Ring",
+      "tech": "stone bridge joints",
+      "token": "tek-nari"
+    }
+  },
+  "places": {
+    "Ceremony Center": {
+      "scent": "flower resin and lamp wax",
+      "sound": "shared consent rhythm",
+      "temperature": 0.63,
+      "wetness": 0.16,
+      "x": 50,
+      "y": 54
+    },
+    "Gate Ring": {
+      "scent": "stone dust and warm oil",
+      "sound": "six lineage pulses",
+      "temperature": 0.56,
+      "wetness": 0.22,
+      "x": 25,
+      "y": 47
+    },
+    "Hearth Archive": {
+      "scent": "smoke, seed paper, cedar",
+      "sound": "low archive hum",
+      "temperature": 0.68,
+      "wetness": 0.05,
+      "x": 44,
+      "y": 28
+    },
+    "Market Measure": {
+      "scent": "grain chalk and bright copper",
+      "sound": "measured token clicks",
+      "temperature": 0.61,
+      "wetness": 0.12,
+      "x": 62,
+      "y": 51
+    },
+    "Outer Quiet": {
+      "scent": "cold clay and rain fern",
+      "sound": "distant bell harmonics",
+      "temperature": 0.52,
+      "wetness": 0.18,
+      "x": 8,
+      "y": 48
+    },
+    "Rainwalk Threshold": {
+      "scent": "wet wool and river stone",
+      "sound": "weather bells",
+      "temperature": 0.48,
+      "wetness": 0.51,
+      "x": 77,
+      "y": 72
+    }
+  },
+  "report": 248,
+  "sample_world_ticks": [
+    {
+      "agent_focus": "Sova/Hearthline: public explanation",
+      "avatar_state": "cmd=wait; energy=0.92; breath=0.25; boundary=clear",
+      "ceremony_marker": "entry-allowed",
+      "day": 1,
+      "lineage_panel": "Hearthline offers public history: token lum-ori, branch hearthline-lum-84, technology hearth ceramics.",
+      "local_storage_key": "ssrm248_browser_world_v8_entry",
+      "private_trace_visible": false,
+      "public_state": "day 1 tick 1: avatar at Outer Quiet; ceremony phase outer_wait; gate entry_timing=0.99",
+      "sensory_marker": "sound=distant bell harmonics; smell=cold clay and rain fern; temp=0.52; wet=0.18; pulse=2.31Hz",
+      "tick": 1,
+      "trace_integrity_token": "43d8f339120aa08bbb"
+    },
+    {
+      "agent_focus": "Keth/Routeline: public explanation",
+      "avatar_state": "cmd=forward; energy=0.91; breath=0.26; boundary=clear",
+      "ceremony_marker": "entry-allowed",
+      "day": 1,
+      "lineage_panel": "Routeline offers public history: token tek-nari, branch routeline-tek-84, technology stone bridge joints.",
+      "local_storage_key": "ssrm248_browser_world_v8_entry",
+      "private_trace_visible": false,
+      "public_state": "day 1 tick 2: avatar at Gate Ring; ceremony phase boundary_recital; gate movement_boundary=1.00",
+      "sensory_marker": "sound=six lineage pulses; smell=stone dust and warm oil; temp=0.56; wet=0.22; pulse=2.17Hz",
+      "tick": 2,
+      "trace_integrity_token": "e0b6db2cd37c8fe540"
+    },
+    {
+      "agent_focus": "Melo/Marketline: conditional welcome",
+      "avatar_state": "cmd=right; energy=0.89; breath=0.25; boundary=clear",
+      "ceremony_marker": "entry-held-for-care",
+      "day": 1,
+      "lineage_panel": "Marketline offers public history: token melo-keth, branch marketline-melo-84, technology measure weights.",
+      "local_storage_key": "ssrm248_browser_world_v8_entry",
+      "private_trace_visible": false,
+      "public_state": "day 1 tick 3: avatar at Market Measure; ceremony phase public_history; gate lineage_history=1.00",
+      "sensory_marker": "sound=measured token clicks; smell=grain chalk and bright copper; temp=0.61; wet=0.12; pulse=2.06Hz",
+      "tick": 3,
+      "trace_integrity_token": "8d0894070405b2c663"
+    },
+    {
+      "agent_focus": "Nari/Ledgerline: firm boundary",
+      "avatar_state": "cmd=forward; energy=0.88; breath=0.29; boundary=clear",
+      "ceremony_marker": "entry-allowed",
+      "day": 1,
+      "lineage_panel": "Ledgerline offers public history: token nari-vonn, branch ledgerline-vonn-84, technology seed ledgers.",
+      "local_storage_key": "ssrm248_browser_world_v8_entry",
+      "private_trace_visible": false,
+      "public_state": "day 1 tick 4: avatar at Rainwalk Threshold; ceremony phase market_witness; gate exchange_safety=1.00",
+      "sensory_marker": "sound=weather bells; smell=wet wool and river stone; temp=0.48; wet=0.51; pulse=2.47Hz",
+      "tick": 4,
+      "trace_integrity_token": "7d7a46a4ac1f0853ff"
+    },
+    {
+      "agent_focus": "Ori/Orchardline: teaching",
+      "avatar_state": "cmd=inspect; energy=0.87; breath=0.29; boundary=clear",
+      "ceremony_marker": "entry-allowed",
+      "day": 1,
+      "lineage_panel": "Orchardline offers public history: token lum-melo, branch orchardline-lum-84, technology water terraces.",
+      "local_storage_key": "ssrm248_browser_world_v8_entry",
+      "private_trace_visible": false,
+      "public_state": "day 1 tick 5: avatar at Rainwalk Threshold; ceremony phase rain_permission; gate weather_boundary=1.00",
+      "sensory_marker": "sound=weather bells; smell=wet wool and river stone; temp=0.48; wet=0.51; pulse=2.12Hz",
+      "tick": 5,
+      "trace_integrity_token": "5e735e4d7145383455"
+    },
+    {
+      "agent_focus": "Vonn/Rainline: softening repair",
+      "avatar_state": "cmd=left; energy=0.85; breath=0.29; boundary=clear",
+      "ceremony_marker": "entry-allowed",
+      "day": 1,
+      "lineage_panel": "Rainline offers public history: token sova-vonn, branch rainline-sova-84, technology weather bells.",
+      "local_storage_key": "ssrm248_browser_world_v8_entry",
+      "private_trace_visible": false,
+      "public_state": "day 1 tick 6: avatar at Rainwalk Threshold; ceremony phase care_pause; gate fatigue_pause=0.98",
+      "sensory_marker": "sound=weather bells; smell=wet wool and river stone; temp=0.48; wet=0.51; pulse=2.40Hz",
+      "tick": 6,
+      "trace_integrity_token": "4244e37940f6640d5f"
+    },
+    {
+      "agent_focus": "Sova/Hearthline: public explanation",
+      "avatar_state": "cmd=forward; energy=0.84; breath=0.27; boundary=clear",
+      "ceremony_marker": "entry-allowed",
+      "day": 1,
+      "lineage_panel": "Hearthline offers public history: token lum-ori, branch hearthline-lum-84, technology hearth ceramics.",
+      "local_storage_key": "ssrm248_browser_world_v8_entry",
+      "private_trace_visible": false,
+      "public_state": "day 1 tick 7: avatar at Ceremony Center; ceremony phase shared_token; gate safe_greeting=0.98",
+      "sensory_marker": "sound=shared consent rhythm; smell=flower resin and lamp wax; temp=0.63; wet=0.16; pulse=2.31Hz",
+      "tick": 7,
+      "trace_integrity_token": "898714c8a3b78e47b1"
+    },
+    {
+      "agent_focus": "Keth/Routeline: conditional welcome",
+      "avatar_state": "cmd=ask; energy=0.83; breath=0.27; boundary=clear",
+      "ceremony_marker": "entry-allowed",
+      "day": 1,
+      "lineage_panel": "Routeline offers public history: token tek-nari, branch routeline-tek-84, technology stone bridge joints.",
+      "local_storage_key": "ssrm248_browser_world_v8_entry",
+      "private_trace_visible": false,
+      "public_state": "day 1 tick 8: avatar at Ceremony Center; ceremony phase rollback_vow; gate rollback_path=0.97",
+      "sensory_marker": "sound=shared consent rhythm; smell=flower resin and lamp wax; temp=0.63; wet=0.16; pulse=2.17Hz",
+      "tick": 8,
+      "trace_integrity_token": "782c05a9204564f469"
+    },
+    {
+      "agent_focus": "Melo/Marketline: firm boundary",
+      "avatar_state": "cmd=offer_help; energy=0.82; breath=0.27; boundary=clear",
+      "ceremony_marker": "entry-held-for-care",
+      "day": 1,
+      "lineage_panel": "Marketline offers public history: token melo-keth, branch marketline-melo-84, technology measure weights.",
+      "local_storage_key": "ssrm248_browser_world_v8_entry",
+      "private_trace_visible": false,
+      "public_state": "day 1 tick 9: avatar at Ceremony Center; ceremony phase entry_allowed; gate final_entry=0.96",
+      "sensory_marker": "sound=shared consent rhythm; smell=flower resin and lamp wax; temp=0.63; wet=0.16; pulse=2.12Hz",
+      "tick": 9,
+      "trace_integrity_token": "f55ad131ea75d0aacc"
+    },
+    {
+      "agent_focus": "Nari/Ledgerline: public explanation",
+      "avatar_state": "cmd=back; energy=0.81; breath=0.30; boundary=clear",
+      "ceremony_marker": "entry-allowed",
+      "day": 1,
+      "lineage_panel": "Ledgerline offers public history: token nari-vonn, branch ledgerline-vonn-84, technology seed ledgers.",
+      "local_storage_key": "ssrm248_browser_world_v8_entry",
+      "private_trace_visible": false,
+      "public_state": "day 1 tick 10: avatar at Rainwalk Threshold; ceremony phase outer_wait; gate entry_timing=0.99",
+      "sensory_marker": "sound=weather bells; smell=wet wool and river stone; temp=0.48; wet=0.51; pulse=2.31Hz",
+      "tick": 10,
+      "trace_integrity_token": "08d3b22ff0ca30a670"
+    }
+  ],
+  "seed": 20260861
+}

@@ -874,3 +874,6 @@ Report 246 carries culture across 18 simulated generations. It generates 108 gen
 
 
 Report 247 compresses a 4,200-year pre-avatar epoch into inspectable browser-world v7 rows. It generates 84 epoch compression frames, 504 lineage divergence frames, 504 technology inheritance frames, 504 welfare guardrail frames, 7 avatar-entry ceremony gates, 84 replay epoch frames, and 84 browser-world v7 ticks. The run passes with readiness 0.972949 and weakest-channel score 0.843209. All final avatar-entry gates pass, while ritual-boundary retention and technology inheritance continuity remain the next pressure points.
+
+
+Report 248 turns the final Report 247 gate into a deterministic browser-playable avatar-entry ceremony. It generates 9 ceremony steps, 72 live avatar movement frames, 6 lineage history inspection frames, 36 culture-conditioned response frames, 18 welfare gate checks, 14 technology/ritual affordance frames, 72 replay entry frames, and 72 browser-world v8 ticks. The run passes with readiness 0.988633 and weakest-channel score 0.889722. The weakest channel is typed local-act handling, correctly marking that the page accepts deterministic parser-routed text but still does not provide open-ended natural language, subjective consciousness, or real consent.

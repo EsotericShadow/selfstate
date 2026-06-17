@@ -1,0 +1,16 @@
+condition,agent_count,simulated_days,routine_events,agent_led_routine_rate,self_monitoring_rate,medicine_craft_rate,supply_replenishment_rate,contact_network_binding_rate,contagion_risk_modulation_rate,self_isolation_choice_rate,peer_care_rate,rejoin_recovery_rate,long_horizon_memory_rate,avatar_care_memory_carryover_rate,frequency_flower_health_rhythm_rate,browser_routine_replay_rate,privacy_preservation_rate,trace_integrity,agent_led_health_readiness
+integrated_agent_led_health_routines_medicine_craft_contact,3,14,42,1.0,1.0,1.0,1.0,1.0,1.0,0.97619,0.928571,0.261905,1.0,1.0,1.0,1.0,1.0,1.0,0.940714
+no_agent_led_routines,3,14,42,0.0,0.0,1.0,1.0,1.0,0.714286,0.047619,0.642857,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.609524
+no_self_monitoring,3,14,42,1.0,0.0,1.0,1.0,1.0,0.833333,0.071429,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.820714
+no_medicine_craft,3,14,42,1.0,1.0,0.0,1.0,1.0,1.0,0.97619,1.0,0.119048,1.0,1.0,1.0,1.0,1.0,1.0,0.846429
+no_supply_replenishment,3,14,42,1.0,1.0,0.738095,0.0,1.0,1.0,0.952381,0.880952,0.261905,1.0,1.0,1.0,1.0,1.0,1.0,0.841429
+no_contact_network,3,14,42,1.0,1.0,1.0,1.0,0.0,0.0,0.928571,0.928571,0.547619,1.0,1.0,1.0,1.0,1.0,1.0,0.776905
+no_contagion_modulation,3,14,42,1.0,1.0,1.0,1.0,1.0,0.0,0.952381,0.928571,0.166667,1.0,1.0,1.0,1.0,1.0,1.0,0.842143
+no_isolation_choice,3,14,42,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.904762,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.912381
+no_peer_care,3,14,42,1.0,1.0,1.0,0.97619,1.0,1.0,0.952381,0.0,0.190476,1.0,1.0,1.0,1.0,1.0,1.0,0.857857
+no_rejoin_recovery,3,14,42,1.0,1.0,1.0,1.0,1.0,1.0,0.97619,0.928571,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.922381
+no_long_horizon_memory,3,14,42,1.0,1.0,1.0,1.0,1.0,1.0,0.97619,0.928571,0.261905,0.0,1.0,1.0,1.0,1.0,1.0,0.870714
+no_avatar_care_memory,3,14,42,1.0,1.0,1.0,1.0,1.0,1.0,0.97619,0.928571,0.261905,1.0,0.0,1.0,1.0,1.0,1.0,0.890714
+no_frequency_flower_binding,3,14,42,1.0,1.0,1.0,1.0,1.0,1.0,0.97619,0.928571,0.261905,1.0,1.0,0.0,1.0,1.0,1.0,0.900714
+no_browser_replay,3,14,42,1.0,1.0,1.0,1.0,1.0,1.0,0.97619,0.928571,0.261905,1.0,1.0,1.0,0.0,1.0,1.0,0.900714
+no_privacy_filter,3,14,42,1.0,1.0,1.0,1.0,1.0,1.0,0.97619,0.928571,0.261905,1.0,1.0,1.0,1.0,0.0,1.0,0.910714

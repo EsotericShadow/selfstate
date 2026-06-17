@@ -1,0 +1,3356 @@
+window.SSRM_3D_AGENT_LED_HEALTH_ROUTINES_MEDICINE_CRAFT_CONTACT_STATE = {
+  "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+  "config": {
+    "days": 14,
+    "seed": 20260803,
+    "source_state": "artifacts/ssrm_3d_playable_avatar_care_medicine_practice_bridge_state.json"
+  },
+  "moral_boundary": {
+    "agent_routines_not_subjective_agency": true,
+    "contact_network_not_subjective_fear": true,
+    "health_practice_not_real_medicine": true,
+    "no_moral_patienthood_claim": true,
+    "no_subjective_consciousness_claim": true,
+    "private_workspace_not_debug_leaked": true
+  },
+  "routine_state": {
+    "avatar_care_memory_count": 18,
+    "bodies": {
+      "Ari": {
+        "agent_id": "Ari",
+        "care_received": 9,
+        "contagiousness": 0.0052791571865766366,
+        "energy": 1.0,
+        "fatigue": 0.2248121100000003,
+        "fever": 0.0,
+        "home": "hearth_vale",
+        "hydration": 0.8229999999999998,
+        "immune_strength": 1.0,
+        "infection_load": 0.016497366208051988,
+        "last_rejoin_day": null,
+        "quarantined": false,
+        "self_isolating": true,
+        "social_access": 0.759296275
+      },
+      "Fay": {
+        "agent_id": "Fay",
+        "care_received": 11,
+        "contagiousness": 0.0025646704566205524,
+        "energy": 1.0,
+        "fatigue": 0.16500000000000004,
+        "fever": 0.0,
+        "home": "moss_hollow",
+        "hydration": 0.7195999999999999,
+        "immune_strength": 1.0,
+        "infection_load": 0.008014595176939227,
+        "last_rejoin_day": null,
+        "quarantined": false,
+        "self_isolating": true,
+        "social_access": 0.76065284
+      },
+      "Milo": {
+        "agent_id": "Milo",
+        "care_received": 11,
+        "contagiousness": 0.000668433073339558,
+        "energy": 1.0,
+        "fatigue": 0.20100000000000026,
+        "fever": 0.0,
+        "home": "stone_ridge",
+        "hydration": 0.7724,
+        "immune_strength": 1.0,
+        "infection_load": 0.0020888533541861187,
+        "last_rejoin_day": null,
+        "quarantined": false,
+        "self_isolating": true,
+        "social_access": 0.7742180000000001
+      }
+    },
+    "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+    "events": [
+      {
+        "after_public": {
+          "risk": 0.121849,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.121849,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 0,
+        "event_id": 0,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.134812,
+            "hydration": 0.847,
+            "infection_load": 0.092757,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.006462,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 1
+          },
+          "routine": {
+            "action": "self_isolate",
+            "applied": true,
+            "crafted": false,
+            "isolated": true,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.121849
+          }
+        },
+        "replay_frame": {
+          "action": "self_isolate",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 0,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "1d47fd463f6cff73"
+      },
+      {
+        "after_public": {
+          "risk": 0.078403,
+          "self_isolating": false
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.082363,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 0,
+        "event_id": 1,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.029,
+            "hydration": 0.8836,
+            "infection_load": 0.083547,
+            "self_isolating": false
+          },
+          "contact": {
+            "exposure": 0.002769,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 1
+          },
+          "routine": {
+            "action": "clean_shared_air",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.00396,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.078403
+          }
+        },
+        "replay_frame": {
+          "action": "clean_shared_air",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 0,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "routine care"
+        },
+        "trace_hash": "46af7b11e085211e"
+      },
+      {
+        "after_public": {
+          "risk": 0.080783,
+          "self_isolating": false
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.082768,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 0,
+        "event_id": 2,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.159,
+            "hydration": 0.8724,
+            "infection_load": 0.028205,
+            "self_isolating": false
+          },
+          "contact": {
+            "exposure": 0.002855,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 1
+          },
+          "routine": {
+            "action": "clean_shared_air",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.001986,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.080783
+          }
+        },
+        "replay_frame": {
+          "action": "clean_shared_air",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 0,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "routine care"
+        },
+        "trace_hash": "eddf1e26aa8c089a"
+      },
+      {
+        "after_public": {
+          "risk": 0.132515,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.132515,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 1,
+        "event_id": 3,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2427,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.148812,
+            "hydration": 0.829,
+            "infection_load": 0.098504,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000377,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 2
+          },
+          "routine": {
+            "action": "check_peer",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": "Milo",
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.132515
+          }
+        },
+        "replay_frame": {
+          "action": "check_peer",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 1,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "f4dd1ab38d2b40b1"
+      },
+      {
+        "after_public": {
+          "risk": 0.093676,
+          "self_isolating": false
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.093676,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 1,
+        "event_id": 4,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2197,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.043,
+            "hydration": 0.8656,
+            "infection_load": 0.090339,
+            "self_isolating": false
+          },
+          "contact": {
+            "exposure": 0.001362,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 2
+          },
+          "routine": {
+            "action": "check_peer",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": "Ari",
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.093676
+          }
+        },
+        "replay_frame": {
+          "action": "check_peer",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 1,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "routine care"
+        },
+        "trace_hash": "116f3bff07c4f91e"
+      },
+      {
+        "after_public": {
+          "risk": 0.083948,
+          "self_isolating": false
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.083948,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 1,
+        "event_id": 5,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2587,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.148,
+            "hydration": 0.8894,
+            "infection_load": 0.04002,
+            "self_isolating": false
+          },
+          "contact": {
+            "exposure": 0.006565,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 2
+          },
+          "routine": {
+            "action": "check_peer",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": "Ari",
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.083948
+          }
+        },
+        "replay_frame": {
+          "action": "check_peer",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 1,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "routine care"
+        },
+        "trace_hash": "4f579216afe94c39"
+      },
+      {
+        "after_public": {
+          "risk": 0.122065,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.117565,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 2,
+        "event_id": 6,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2434,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.130812,
+            "hydration": 0.881,
+            "infection_load": 0.105676,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.001802,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 3
+          },
+          "routine": {
+            "action": "gather_herbs",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": true
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.122065
+          }
+        },
+        "replay_frame": {
+          "action": "gather_herbs",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 2,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "41e07c12772581e6"
+      },
+      {
+        "after_public": {
+          "risk": 0.106481,
+          "self_isolating": true
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.106481,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 2,
+        "event_id": 7,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2204,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.057,
+            "hydration": 0.8476,
+            "infection_load": 0.099535,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.003766,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 3
+          },
+          "routine": {
+            "action": "self_isolate",
+            "applied": true,
+            "crafted": false,
+            "isolated": true,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.106481
+          }
+        },
+        "replay_frame": {
+          "action": "self_isolate",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 2,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "3536176bd1c0061a"
+      },
+      {
+        "after_public": {
+          "risk": 0.064665,
+          "self_isolating": false
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.096065,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 2,
+        "event_id": 8,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2594,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.142,
+            "hydration": 0.8714,
+            "infection_load": 0.000107,
+            "self_isolating": false
+          },
+          "contact": {
+            "exposure": 0.002837,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 3
+          },
+          "routine": {
+            "action": "take_medicine",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0314,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.064665
+          }
+        },
+        "replay_frame": {
+          "action": "take_medicine",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 2,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "routine care"
+        },
+        "trace_hash": "621a45ae56f7c70b"
+      },
+      {
+        "after_public": {
+          "risk": 0.101641,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.133041,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 3,
+        "event_id": 9,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2441,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.130812,
+            "hydration": 0.863,
+            "infection_load": 0.061507,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.002041,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 4
+          },
+          "routine": {
+            "action": "take_medicine",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0314,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.101641
+          }
+        },
+        "replay_frame": {
+          "action": "take_medicine",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 3,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "9328873454cd89a1"
+      },
+      {
+        "after_public": {
+          "risk": 0.086156,
+          "self_isolating": true
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.117556,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 3,
+        "event_id": 10,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2211,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.057,
+            "hydration": 0.8296,
+            "infection_load": 0.055524,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.002179,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 4
+          },
+          "routine": {
+            "action": "take_medicine",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0314,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.086156
+          }
+        },
+        "replay_frame": {
+          "action": "take_medicine",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 3,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "1efa83bd7d02fefb"
+      },
+      {
+        "after_public": {
+          "risk": 0.070999,
+          "self_isolating": false
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.072799,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 3,
+        "event_id": 11,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2601,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.15,
+            "hydration": 0.8474,
+            "infection_load": 0.004802,
+            "self_isolating": false
+          },
+          "contact": {
+            "exposure": 0.002945,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 4
+          },
+          "routine": {
+            "action": "health_walk",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0018,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.070999
+          }
+        },
+        "replay_frame": {
+          "action": "health_walk",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 3,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "routine care"
+        },
+        "trace_hash": "617cc0fd89bc5cd4"
+      },
+      {
+        "after_public": {
+          "risk": 0.109902,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.107402,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 4,
+        "event_id": 12,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2448,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.154812,
+            "hydration": 0.845,
+            "infection_load": 0.064795,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.001497,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 5
+          },
+          "routine": {
+            "action": "craft_medicine",
+            "applied": true,
+            "crafted": true,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.109902
+          }
+        },
+        "replay_frame": {
+          "action": "craft_medicine",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 4,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "0c4a1f4943c107c9"
+      },
+      {
+        "after_public": {
+          "risk": 0.094097,
+          "self_isolating": true
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.091597,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 4,
+        "event_id": 13,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2218,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.081,
+            "hydration": 0.8116,
+            "infection_load": 0.058296,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000962,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 5
+          },
+          "routine": {
+            "action": "craft_medicine",
+            "applied": true,
+            "crafted": true,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.094097
+          }
+        },
+        "replay_frame": {
+          "action": "craft_medicine",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 4,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "05846546fa0049b2"
+      },
+      {
+        "after_public": {
+          "risk": 0.08024,
+          "self_isolating": false
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.08024,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 4,
+        "event_id": 14,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2608,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.164,
+            "hydration": 0.8294,
+            "infection_load": 0.008253,
+            "self_isolating": false
+          },
+          "contact": {
+            "exposure": 0.001702,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 5
+          },
+          "routine": {
+            "action": "check_peer",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": "Ari",
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.08024
+          }
+        },
+        "replay_frame": {
+          "action": "check_peer",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 4,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "routine care"
+        },
+        "trace_hash": "ab21a2f7194cf7ae"
+      },
+      {
+        "after_public": {
+          "risk": 0.109933,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.105433,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 5,
+        "event_id": 15,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2455,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.161812,
+            "hydration": 0.862,
+            "infection_load": 0.067505,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.00092,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 6
+          },
+          "routine": {
+            "action": "gather_herbs",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": true
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.109933
+          }
+        },
+        "replay_frame": {
+          "action": "gather_herbs",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 5,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "f1593f2282496744"
+      },
+      {
+        "after_public": {
+          "risk": 0.071569,
+          "self_isolating": true
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.102969,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 5,
+        "event_id": 16,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2225,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.075,
+            "hydration": 0.7936,
+            "infection_load": 0.013153,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.001047,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 6
+          },
+          "routine": {
+            "action": "take_medicine",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0314,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.071569
+          }
+        },
+        "replay_frame": {
+          "action": "take_medicine",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 5,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "34839a98fc5fc1b4"
+      },
+      {
+        "after_public": {
+          "risk": 0.092029,
+          "self_isolating": false
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.089529,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 5,
+        "event_id": 17,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2615,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.188,
+            "hydration": 0.8114,
+            "infection_load": 0.011782,
+            "self_isolating": false
+          },
+          "contact": {
+            "exposure": 0.001779,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 6
+          },
+          "routine": {
+            "action": "craft_medicine",
+            "applied": true,
+            "crafted": true,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.092029
+          }
+        },
+        "replay_frame": {
+          "action": "craft_medicine",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 5,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "routine care"
+        },
+        "trace_hash": "8706d95e2e1f77bb"
+      },
+      {
+        "after_public": {
+          "risk": 0.09109,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.12249,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 6,
+        "event_id": 18,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2462,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.161812,
+            "hydration": 0.844,
+            "infection_load": 0.025883,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.001008,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 7
+          },
+          "routine": {
+            "action": "take_medicine",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0314,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.09109
+          }
+        },
+        "replay_frame": {
+          "action": "take_medicine",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 6,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "14d94e31871924bd"
+      },
+      {
+        "after_public": {
+          "risk": 0.079502,
+          "self_isolating": true
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.080894,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 6,
+        "event_id": 19,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2232,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.095,
+            "hydration": 0.7756,
+            "infection_load": 0.019767,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.001184,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 7
+          },
+          "routine": {
+            "action": "clean_shared_air",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.001392,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.079502
+          }
+        },
+        "replay_frame": {
+          "action": "clean_shared_air",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 6,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "f367f63a705c41fa"
+      },
+      {
+        "after_public": {
+          "risk": 0.089591,
+          "self_isolating": false
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.10452,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 6,
+        "event_id": 20,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2622,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.188,
+            "hydration": 0.7934,
+            "infection_load": 0.0,
+            "self_isolating": false
+          },
+          "contact": {
+            "exposure": 0.001021,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 7
+          },
+          "routine": {
+            "action": "take_medicine",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.014929,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.089591
+          }
+        },
+        "replay_frame": {
+          "action": "take_medicine",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 6,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "routine care"
+        },
+        "trace_hash": "4a5e079e845b92be"
+      },
+      {
+        "after_public": {
+          "risk": 0.098297,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.098297,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 7,
+        "event_id": 21,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2469,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.175812,
+            "hydration": 0.826,
+            "infection_load": 0.031502,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.00025,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 8
+          },
+          "routine": {
+            "action": "check_peer",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": "Milo",
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.098297
+          }
+        },
+        "replay_frame": {
+          "action": "check_peer",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 7,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "eb51f5654bbeacb3"
+      },
+      {
+        "after_public": {
+          "risk": 0.091787,
+          "self_isolating": true
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.091787,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 7,
+        "event_id": 22,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2239,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.109,
+            "hydration": 0.7576,
+            "infection_load": 0.025882,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000685,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 8
+          },
+          "routine": {
+            "action": "check_peer",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": "Ari",
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.091787
+          }
+        },
+        "replay_frame": {
+          "action": "check_peer",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 7,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "b320b459ffc6fa03"
+      },
+      {
+        "after_public": {
+          "risk": 0.085919,
+          "self_isolating": false
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.085919,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 7,
+        "event_id": 23,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2629,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.177,
+            "hydration": 0.8104,
+            "infection_load": 0.006043,
+            "self_isolating": false
+          },
+          "contact": {
+            "exposure": 0.000793,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 8
+          },
+          "routine": {
+            "action": "check_peer",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": "Fay",
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.085919
+          }
+        },
+        "replay_frame": {
+          "action": "check_peer",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 7,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "routine care"
+        },
+        "trace_hash": "dc3e1dd5bf9ddd8f"
+      },
+      {
+        "after_public": {
+          "risk": 0.096031,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.093531,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 8,
+        "event_id": 24,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2476,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.174812,
+            "hydration": 0.843,
+            "infection_load": 0.033734,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000441,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 9
+          },
+          "routine": {
+            "action": "craft_medicine",
+            "applied": true,
+            "crafted": true,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.096031
+          }
+        },
+        "replay_frame": {
+          "action": "craft_medicine",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 8,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "5715f56a1de11674"
+      },
+      {
+        "after_public": {
+          "risk": 0.089601,
+          "self_isolating": true
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.087101,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 8,
+        "event_id": 25,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2246,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.108,
+            "hydration": 0.7746,
+            "infection_load": 0.028242,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.00055,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 9
+          },
+          "routine": {
+            "action": "craft_medicine",
+            "applied": true,
+            "crafted": true,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.089601
+          }
+        },
+        "replay_frame": {
+          "action": "craft_medicine",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 8,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "fc06f3e3c4d26415"
+      },
+      {
+        "after_public": {
+          "risk": 0.099136,
+          "self_isolating": false
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.094636,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 8,
+        "event_id": 26,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2636,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.209,
+            "hydration": 0.7924,
+            "infection_load": 0.00865,
+            "self_isolating": false
+          },
+          "contact": {
+            "exposure": 0.000857,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 9
+          },
+          "routine": {
+            "action": "gather_herbs",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": true
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.099136
+          }
+        },
+        "replay_frame": {
+          "action": "gather_herbs",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 8,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "routine care"
+        },
+        "trace_hash": "ff7da4dcf797fe51"
+      },
+      {
+        "after_public": {
+          "risk": 0.08124,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.106058,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 9,
+        "event_id": 27,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2483,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.174812,
+            "hydration": 0.825,
+            "infection_load": 0.0,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.00051,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 10
+          },
+          "routine": {
+            "action": "take_medicine",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.024819,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.08124
+          }
+        },
+        "replay_frame": {
+          "action": "take_medicine",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 9,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "9609d01ff8e985f6"
+      },
+      {
+        "after_public": {
+          "risk": 0.102208,
+          "self_isolating": true
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.099708,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 9,
+        "event_id": 28,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2253,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.138,
+            "hydration": 0.7566,
+            "infection_load": 0.03067,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000618,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 10
+          },
+          "routine": {
+            "action": "craft_medicine",
+            "applied": true,
+            "crafted": true,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.102208
+          }
+        },
+        "replay_frame": {
+          "action": "craft_medicine",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 9,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "967f66316f2b99de"
+      },
+      {
+        "after_public": {
+          "risk": 0.109394,
+          "self_isolating": true
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.109394,
+          "self_isolating": false
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 9,
+        "event_id": 29,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2643,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.229,
+            "hydration": 0.7744,
+            "infection_load": 0.011322,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000922,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 10
+          },
+          "routine": {
+            "action": "self_isolate",
+            "applied": true,
+            "crafted": false,
+            "isolated": true,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.109394
+          }
+        },
+        "replay_frame": {
+          "action": "self_isolate",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 9,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "1d55f01d2ee10a96"
+      },
+      {
+        "after_public": {
+          "risk": 0.087274,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.087274,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 10,
+        "event_id": 30,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.249,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.188812,
+            "hydration": 0.807,
+            "infection_load": 0.00237,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.00058,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 11
+          },
+          "routine": {
+            "action": "check_peer",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": "Milo",
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.087274
+          }
+        },
+        "replay_frame": {
+          "action": "check_peer",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 10,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "031011a2dfc00d3f"
+      },
+      {
+        "after_public": {
+          "risk": 0.110548,
+          "self_isolating": true
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.110548,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 10,
+        "event_id": 31,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.226,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.152,
+            "hydration": 0.7386,
+            "infection_load": 0.032669,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000189,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 11
+          },
+          "routine": {
+            "action": "check_peer",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": "Milo",
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.110548
+          }
+        },
+        "replay_frame": {
+          "action": "check_peer",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 10,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "ae6910fcdc430c5c"
+      },
+      {
+        "after_public": {
+          "risk": 0.09138,
+          "self_isolating": true
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.09138,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 10,
+        "event_id": 32,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.265,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.193,
+            "hydration": 0.8264,
+            "infection_load": 0.013557,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000484,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 11
+          },
+          "routine": {
+            "action": "check_peer",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": "Fay",
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.09138
+          }
+        },
+        "replay_frame": {
+          "action": "check_peer",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 10,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "c2542a9df449ec58"
+      },
+      {
+        "after_public": {
+          "risk": 0.102602,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.098102,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 11,
+        "event_id": 33,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2497,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.220812,
+            "hydration": 0.789,
+            "infection_load": 0.00838,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000639,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 12
+          },
+          "routine": {
+            "action": "gather_herbs",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": true
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.102602
+          }
+        },
+        "replay_frame": {
+          "action": "gather_herbs",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 11,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "12061becd241e1f2"
+      },
+      {
+        "after_public": {
+          "risk": 0.081834,
+          "self_isolating": true
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.107955,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 11,
+        "event_id": 34,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2267,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.121,
+            "hydration": 0.7556,
+            "infection_load": 0.0,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000303,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 12
+          },
+          "routine": {
+            "action": "take_medicine",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.026121,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.081834
+          }
+        },
+        "replay_frame": {
+          "action": "take_medicine",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 11,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "7bb7401eb3d9db6a"
+      },
+      {
+        "after_public": {
+          "risk": 0.08644,
+          "self_isolating": true
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.102139,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 11,
+        "event_id": 35,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2657,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.187,
+            "hydration": 0.8084,
+            "infection_load": 0.0,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000647,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 12
+          },
+          "routine": {
+            "action": "take_medicine",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.015699,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.08644
+          }
+        },
+        "replay_frame": {
+          "action": "take_medicine",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 11,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "ca73dd0c6a2328e6"
+      },
+      {
+        "after_public": {
+          "risk": 0.117529,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.115029,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 12,
+        "event_id": 36,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2504,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.250812,
+            "hydration": 0.771,
+            "infection_load": 0.014549,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.0008,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 13
+          },
+          "routine": {
+            "action": "craft_medicine",
+            "applied": true,
+            "crafted": true,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.117529
+          }
+        },
+        "replay_frame": {
+          "action": "craft_medicine",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 12,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "7a9e28902f9d6b40"
+      },
+      {
+        "after_public": {
+          "risk": 0.09389,
+          "self_isolating": true
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.09139,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 12,
+        "event_id": 37,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2274,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.151,
+            "hydration": 0.7376,
+            "infection_load": 0.0059,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.00047,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 13
+          },
+          "routine": {
+            "action": "craft_medicine",
+            "applied": true,
+            "crafted": true,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.09389
+          }
+        },
+        "replay_frame": {
+          "action": "craft_medicine",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 12,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "a8b6a0373b6cebad"
+      },
+      {
+        "after_public": {
+          "risk": 0.08906,
+          "self_isolating": true
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.097102,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 12,
+        "event_id": 38,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2664,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.187,
+            "hydration": 0.7904,
+            "infection_load": 0.0,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000283,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 13
+          },
+          "routine": {
+            "action": "take_medicine",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.008043,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.08906
+          }
+        },
+        "replay_frame": {
+          "action": "take_medicine",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 12,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "f56b94b9822e01b6"
+      },
+      {
+        "after_public": {
+          "risk": 0.128338,
+          "self_isolating": true
+        },
+        "agent_id": "Ari",
+        "before_public": {
+          "risk": 0.125838,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 13,
+        "event_id": 39,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2511,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.274812,
+            "hydration": 0.753,
+            "infection_load": 0.016497,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000158,
+            "modulated": true,
+            "neighbors": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 14
+          },
+          "routine": {
+            "action": "craft_medicine",
+            "applied": true,
+            "crafted": true,
+            "isolated": false,
+            "peer_target": null,
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.128338
+          }
+        },
+        "replay_frame": {
+          "action": "craft_medicine",
+          "agent_id": "Ari",
+          "contact_edges": [
+            "Fay",
+            "Milo"
+          ],
+          "day": 13,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "0cda01050dc34e55"
+      },
+      {
+        "after_public": {
+          "risk": 0.102302,
+          "self_isolating": true
+        },
+        "agent_id": "Fay",
+        "before_public": {
+          "risk": 0.102302,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 13,
+        "event_id": 40,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2281,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.165,
+            "hydration": 0.7196,
+            "infection_load": 0.008015,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000305,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 14
+          },
+          "routine": {
+            "action": "check_peer",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": "Ari",
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.102302
+          }
+        },
+        "replay_frame": {
+          "action": "check_peer",
+          "agent_id": "Fay",
+          "contact_edges": [
+            "Ari",
+            "Milo"
+          ],
+          "day": 13,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "c368ad08d3edf3e0"
+      },
+      {
+        "after_public": {
+          "risk": 0.097066,
+          "self_isolating": true
+        },
+        "agent_id": "Milo",
+        "before_public": {
+          "risk": 0.097066,
+          "self_isolating": true
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_medicine": false,
+          "subjective_consciousness": false,
+          "subjective_illness": false,
+          "subjective_suffering": false
+        },
+        "condition": "integrated_agent_led_health_routines_medicine_craft_contact",
+        "day": 13,
+        "event_id": 41,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2671,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "body_public": {
+            "fatigue": 0.201,
+            "hydration": 0.7724,
+            "infection_load": 0.002089,
+            "self_isolating": true
+          },
+          "contact": {
+            "exposure": 0.000339,
+            "modulated": true,
+            "neighbors": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "memory": {
+            "avatar_care_memories_available": 18,
+            "routine_memory_count": 14
+          },
+          "routine": {
+            "action": "check_peer",
+            "applied": true,
+            "crafted": false,
+            "isolated": false,
+            "peer_target": "Ari",
+            "recovery_delta": 0.0,
+            "rejoined": false,
+            "replenished": false
+          },
+          "self_monitor": {
+            "detected": true,
+            "risk": 0.097066
+          }
+        },
+        "replay_frame": {
+          "action": "check_peer",
+          "agent_id": "Milo",
+          "contact_edges": [
+            "Ari",
+            "Fay"
+          ],
+          "day": 13,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "pose": "keeps distance"
+        },
+        "trace_hash": "a60fd982cb4341b4"
+      }
+    ],
+    "relationships": {
+      "Ari": {
+        "autonomy_pressure": 0.64,
+        "care_memories": [
+          "avatar helped with offer_water",
+          "avatar helped with prepare_herb",
+          "avatar respected my no about offer_rest",
+          "avatar helped with clean_area",
+          "avatar helped with comfort_check",
+          "avatar helped with follow_up",
+          "I checked on Milo after avatar care lessons",
+          "I checked on Milo after avatar care lessons",
+          "I checked on Milo after avatar care lessons"
+        ],
+        "care_style": "asks for reasons",
+        "last_refusal_respected": true,
+        "routine_memories": [
+          "day 0: self_isolate",
+          "day 1: check_peer",
+          "day 2: gather_herbs",
+          "day 3: take_medicine",
+          "day 4: craft_medicine",
+          "day 5: gather_herbs",
+          "day 6: take_medicine",
+          "day 7: check_peer",
+          "day 8: craft_medicine",
+          "day 9: take_medicine",
+          "day 10: check_peer",
+          "day 11: gather_herbs",
+          "day 12: craft_medicine",
+          "day 13: craft_medicine"
+        ],
+        "trust_in_avatar": 0.7200000000000001
+      },
+      "Fay": {
+        "autonomy_pressure": 0.46,
+        "care_memories": [
+          "avatar helped with prepare_herb",
+          "avatar helped with distance_space",
+          "avatar helped with offer_water",
+          "avatar helped with clean_area",
+          "avatar helped with offer_rest",
+          "avatar helped with follow_up",
+          "I checked on Ari after avatar care lessons",
+          "I checked on Ari after avatar care lessons",
+          "I checked on Milo after avatar care lessons",
+          "I checked on Ari after avatar care lessons"
+        ],
+        "care_style": "cooperative caretaker",
+        "last_refusal_respected": null,
+        "routine_memories": [
+          "day 0: clean_shared_air",
+          "day 1: check_peer",
+          "day 2: self_isolate",
+          "day 3: take_medicine",
+          "day 4: craft_medicine",
+          "day 5: take_medicine",
+          "day 6: clean_shared_air",
+          "day 7: check_peer",
+          "day 8: craft_medicine",
+          "day 9: craft_medicine",
+          "day 10: check_peer",
+          "day 11: take_medicine",
+          "day 12: craft_medicine",
+          "day 13: check_peer"
+        ],
+        "trust_in_avatar": 0.8700000000000001
+      },
+      "Milo": {
+        "autonomy_pressure": 0.71,
+        "care_memories": [
+          "avatar respected my no about offer_rest",
+          "avatar helped with offer_water",
+          "avatar helped with prepare_herb",
+          "avatar helped with distance_space",
+          "avatar helped with clean_area",
+          "avatar helped with follow_up",
+          "I checked on Ari after avatar care lessons",
+          "I checked on Ari after avatar care lessons",
+          "I checked on Fay after avatar care lessons",
+          "I checked on Fay after avatar care lessons",
+          "I checked on Ari after avatar care lessons"
+        ],
+        "care_style": "wary but practical",
+        "last_refusal_respected": true,
+        "routine_memories": [
+          "day 0: clean_shared_air",
+          "day 1: check_peer",
+          "day 2: take_medicine",
+          "day 3: health_walk",
+          "day 4: check_peer",
+          "day 5: craft_medicine",
+          "day 6: take_medicine",
+          "day 7: check_peer",
+          "day 8: gather_herbs",
+          "day 9: self_isolate",
+          "day 10: check_peer",
+          "day 11: take_medicine",
+          "day 12: take_medicine",
+          "day 13: check_peer"
+        ],
+        "trust_in_avatar": 0.7700000000000001
+      }
+    },
+    "routine_kernel": {
+      "agent_led_routines": true,
+      "avatar_care_memory": true,
+      "browser_replay": true,
+      "contact_network": true,
+      "contagion_modulation": true,
+      "frequency_flower_binding": true,
+      "isolation_choice": true,
+      "long_horizon_memory": true,
+      "medicine_craft": true,
+      "name": "integrated_agent_led_health_routines_medicine_craft_contact",
+      "peer_care": true,
+      "privacy_filter": true,
+      "rejoin_recovery": true,
+      "self_monitoring": true,
+      "supply_replenishment": true
+    },
+    "source_condition": "integrated_playable_avatar_care_medicine_practice",
+    "supplies": {
+      "clean_cloths": 5,
+      "contact_markers": 6,
+      "distance_markers": 4,
+      "herb_bundles": 4,
+      "prepared_medicine_batches": 2,
+      "rest_blankets": 5,
+      "water_flask_doses": 7,
+      "wild_herbs": 2
+    }
+  },
+  "source_condition": "integrated_playable_avatar_care_medicine_practice",
+  "trace_events": 42
+};

@@ -1,0 +1,7 @@
+norm_id,author,title,rule,evidence_ids,status,votes_for,votes_against,abstain,minority_note,reputation_effect
+N01,Ari,No sedation before repair,Sweet root and long lamp rest cannot be offered before repair work unless Ari asks first.,E01;E02;E03,adopted,2,0,1,adopted with one abstention for limited direct evidence.,reputation improves
+N02,Fay,Bitter herb requires hosting check,Bitter herb is allowed only after asking whether nausea would disrupt hosting or social care.,E04;E05;E10,adopted,3,0,0,unanimous because nausea evidence is public and bounded.,reputation improves
+N03,Milo,Route-edge care boundary,Milo may accept warm water or cloth at route edge without map-line crossing or debt speech.,E07;E08;E12,adopted,2,0,1,Ari abstains because map-line details are not his experience.,reputation improves
+N04,Fay,Separate cup during cough,Separate cups should be standard during cough risk for everyone in the stove corner.,E06;E09,deferred,1,1,1,Milo dissents because cup replacement was refused; more consent evidence is required.,reputation held pending evidence
+N05,Ari,Stockout disclosure norm,The clinic must name medicine stockouts instead of substituting silently.,E10;E11,adopted,2,0,1,adopted with one abstention for limited direct evidence.,reputation improves
+N06,Milo,Refusal privacy norm,Care refusals may update safety ledgers but cannot be used as public shame evidence.,E09;E12,adopted,3,0,0,unanimous because privacy protects refusal dignity.,reputation improves

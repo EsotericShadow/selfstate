@@ -1,0 +1,49 @@
+{
+  "agents": {
+    "Ari": {
+      "authored_norms": [
+        "N01",
+        "N05"
+      ],
+      "care_authority": 0.62,
+      "private_workspace_digest": "sealed",
+      "temperament": "cautious-proud repair keeper",
+      "trust": 0.887
+    },
+    "Fay": {
+      "authored_norms": [
+        "N02",
+        "N04"
+      ],
+      "care_authority": 0.74,
+      "private_workspace_digest": "sealed",
+      "temperament": "social ritual keeper",
+      "trust": 0.973
+    },
+    "Milo": {
+      "authored_norms": [
+        "N03",
+        "N06"
+      ],
+      "care_authority": 0.58,
+      "private_workspace_digest": "sealed",
+      "temperament": "guarded map carrier",
+      "trust": 0.832
+    }
+  },
+  "claim_boundary": "Deterministic treatment-norm and clinic-governance substrate only: not real medicine, not real care, not real consent, not subjective suffering, not subjective consciousness, and not moral patienthood.",
+  "governance_events": 6,
+  "module": "ssrm_3d_agent_authored_treatment_norms_clinic_reputation_medicine_evidence_governance_bridge",
+  "next_gate": "playable public health governance with outbreaks, quarantine consent, clinic appeals, and community trust recovery",
+  "reputation": {
+    "boundary_respect": 0.75,
+    "consent_respect": 0.86,
+    "evidence_transparency": 0.795,
+    "followup_reliability": 0.5,
+    "side_effect_honesty": 0.78,
+    "stock_reliability": 0.61
+  },
+  "seed": 20260828,
+  "source_condition": "integrated_agent_authored_care_plans_clinic_scheduling_medicine_learning_followup_negotiation",
+  "source_state_loaded": true
+}

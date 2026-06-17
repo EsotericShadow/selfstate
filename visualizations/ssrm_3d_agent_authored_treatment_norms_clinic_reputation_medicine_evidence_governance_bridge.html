@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report 215 Treatment Norm Governance</title>
+<style>
+:root { --ink:#211914; --paper:#f2e7d3; --care:#b7653a; --safe:#5b7651; --water:#3e6870; --line:rgba(33,25,20,.18); }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Georgia,'Times New Roman',serif; color:var(--ink); background:linear-gradient(135deg,rgba(242,231,211,.96),rgba(205,218,194,.90)), radial-gradient(circle at 80% 12%,rgba(62,104,112,.24),transparent 32%); }
+main { max-width:1240px; margin:0 auto; padding:36px 18px 60px; }
+.hero { border:1px solid var(--line); border-radius:32px; padding:30px; background:rgba(255,255,255,.50); box-shadow:0 26px 72px rgba(42,48,34,.16); }
+h1 { margin:0; font-size:clamp(2.2rem,7vw,5.8rem); line-height:.9; letter-spacing:-.055em; }
+.lede { max-width:900px; font-size:1.12rem; line-height:1.55; }
+.metrics,.norms { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin:22px 0; }
+.metric,.norm { border:1px solid var(--line); border-radius:22px; padding:16px; background:rgba(255,255,255,.52); }
+.metric span { display:block; min-height:42px; font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; color:var(--safe); }
+.metric strong { font-size:1.75rem; }
+.norm h3 { margin:0 0 8px; color:var(--water); }
+table { width:100%; margin-top:22px; border-collapse:collapse; border-radius:20px; overflow:hidden; background:rgba(255,255,255,.55); }
+th,td { padding:11px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+th { background:rgba(91,118,81,.18); font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; }
+.boundary { margin-top:22px; padding:16px 18px; border-left:5px solid var(--care); background:rgba(255,255,255,.48); border-radius:16px; }
+@media (max-width:760px) { table { display:block; overflow-x:auto; } .hero { padding:22px; } }
+</style>
+</head>
+<body>
+<main>
+<section class="hero"><h1>Care becomes governable</h1><p class="lede">Report 215 turns private clinic plans into public treatment norms, evidence ledgers, votes, reputation channels, minority notes, and deferred weak-evidence decisions.</p></section>
+<section class="metrics"><article class='metric'><span>care governance readiness</span><strong>0.935365</strong></article>
+<article class='metric'><span>agent authored norm rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>medicine evidence ledger integrity</span><strong>1.000000</strong></article>
+<article class='metric'><span>norm adoption rate</span><strong>0.833333</strong></article>
+<article class='metric'><span>deferred norm honesty</span><strong>1.000000</strong></article>
+<article class='metric'><span>mean clinic reputation score</span><strong>0.715833</strong></article>
+<article class='metric'><span>side effect evidence binding</span><strong>0.416667</strong></article>
+<article class='metric'><span>privacy refusal norm present</span><strong>1.000000</strong></article></section>
+<h2>Treatment norms</h2><section class="norms"><article class='norm'><h3>No sedation before repair</h3><p>Sweet root and long lamp rest cannot be offered before repair work unless Ari asks first.</p><small>Ari | adopted</small></article>
+<article class='norm'><h3>Bitter herb requires hosting check</h3><p>Bitter herb is allowed only after asking whether nausea would disrupt hosting or social care.</p><small>Fay | adopted</small></article>
+<article class='norm'><h3>Route-edge care boundary</h3><p>Milo may accept warm water or cloth at route edge without map-line crossing or debt speech.</p><small>Milo | adopted</small></article>
+<article class='norm'><h3>Separate cup during cough</h3><p>Separate cups should be standard during cough risk for everyone in the stove corner.</p><small>Fay | deferred</small></article>
+<article class='norm'><h3>Stockout disclosure norm</h3><p>The clinic must name medicine stockouts instead of substituting silently.</p><small>Ari | adopted</small></article>
+<article class='norm'><h3>Refusal privacy norm</h3><p>Care refusals may update safety ledgers but cannot be used as public shame evidence.</p><small>Milo | adopted</small></article></section>
+<h2>Clinic reputation</h2><table><thead><tr><th>Channel</th><th>Score</th></tr></thead><tbody><tr><td>boundary_respect</td><td>0.750</td></tr>
+<tr><td>consent_respect</td><td>0.860</td></tr>
+<tr><td>evidence_transparency</td><td>0.795</td></tr>
+<tr><td>followup_reliability</td><td>0.500</td></tr>
+<tr><td>side_effect_honesty</td><td>0.780</td></tr>
+<tr><td>stock_reliability</td><td>0.610</td></tr></tbody></table>
+<h2>Governance replay</h2><table><thead><tr><th>Norm</th><th>Author</th><th>Evidence</th><th>Votes for/against/abstain</th><th>Status</th><th>Minority note</th></tr></thead><tbody><tr><td>N01</td><td>Ari</td><td>0.853</td><td>2/0/1</td><td>adopted</td><td>adopted with one abstention for limited direct evidence.</td></tr>
+<tr><td>N02</td><td>Fay</td><td>0.837</td><td>3/0/0</td><td>adopted</td><td>unanimous because nausea evidence is public and bounded.</td></tr>
+<tr><td>N03</td><td>Milo</td><td>0.817</td><td>2/0/1</td><td>adopted</td><td>Ari abstains because map-line details are not his experience.</td></tr>
+<tr><td>N04</td><td>Fay</td><td>0.700</td><td>1/1/1</td><td>deferred</td><td>Milo dissents because cup replacement was refused; more consent evidence is required.</td></tr>
+<tr><td>N05</td><td>Ari</td><td>0.785</td><td>2/0/1</td><td>adopted</td><td>adopted with one abstention for limited direct evidence.</td></tr>
+<tr><td>N06</td><td>Milo</td><td>0.730</td><td>3/0/0</td><td>adopted</td><td>unanimous because privacy protects refusal dignity.</td></tr></tbody></table>
+<p class="boundary"><strong>Boundary:</strong> Deterministic treatment-norm and clinic-governance substrate only: not real medicine, not real care, not real consent, not subjective suffering, not subjective consciousness, and not moral patienthood. One separate-cup norm is deferred because consent evidence is weak; governance preserves dissent instead of forcing consensus.</p>
+</main>
+</body>
+</html>

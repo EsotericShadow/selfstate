@@ -1,0 +1,13 @@
+evidence_id,agent,medicine,outcome,side_effect,consent_state,boundary,confidence,public_note,private_workspace_sealed
+E01,Ari,sweet_root,pain lowered but evening work lost,sleepy,accepted,ask before wrist care,0.860,Ari became sleepy after sweet root and requested no sedation before repair.,True
+E02,Ari,lamp_rest,fatigue lowered but inventory timing slipped,lost_time,accepted,short rest only if inventory stays ordered,0.790,Lamp rest helped Ari but affected task order.,True
+E03,Ari,dry_wrap,wetness and wrist discomfort lowered,none,accepted,ask before touch,0.910,Dry wrap worked when touch consent was explicit.,True
+E04,Fay,bitter_herb,symptoms lowered but hosting nausea appeared,nausea,conditional,ask about hosting before herb,0.840,Bitter herb helped Fay's cough but caused nausea before hosting.,True
+E05,Fay,warm_water,comfort improved without side effects,none,accepted,low-light cup consent,0.900,Warm water was stable for Fay across repeated visits.,True
+E06,Fay,clean_cloth,contagion risk lowered,none,accepted,separate cup accepted,0.820,Fay accepted clean cloth and separate cup during cough risk.,True
+E07,Milo,clean_cloth,cloth accepted only at route edge,none,conditional,"spacing yes, cup replacement no",0.740,Milo accepted cloth but refused cup replacement.,True
+E08,Milo,warm_water,hunger and guardedness lowered,none,conditional,map line must not be crossed,0.830,Warm water helped Milo when debt speech was omitted.,True
+E09,Milo,separate_cup,boundary partly failed,relationship strain,refused,"spacing kept, cup refused",0.580,Separate-cup norm lacks consent from Milo and needs more evidence.,True
+E10,Clinic,bitter_herb,stockout delayed care,trust dip,wanted_but_stockout,stock disclosure,0.770,Stockout was safer when named publicly.,True
+E11,Clinic,followup,Ari unresolved counter-time remained visible,none,refused_counter,do not force counter-time,0.800,Ari's unresolved follow-up proved conflict honesty.,True
+E12,Clinic,refusal_record,private refusal stayed non-public,none,refused,refusal privacy,0.880,Care refusal can be counted without public shaming.,True

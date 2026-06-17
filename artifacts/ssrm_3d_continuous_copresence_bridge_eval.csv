@@ -1,0 +1,11 @@
+condition,copresence_ticks,agent_opportunities,avatar_perturbation_rate,autonomous_agent_choice_rate,proximity_binding_rate,internal_workspace_update_rate,social_memory_update_rate,sensory_frequency_coupling_rate,world_consequence_rate,source_boundary_preservation_rate,bidirectional_response_rate,replay_timeline_rate,trace_integrity,copresence_readiness
+integrated_continuous_copresence,160,168,0.797619,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.971667
+no_avatar_perturbation,160,168,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.86
+no_autonomous_agent_choice,160,168,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.815476,0.0,1.0,1.0,0.323393
+no_proximity_binding,160,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.05
+no_internal_workspace_update,160,168,0.797619,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.861667
+no_social_memory_update,160,168,0.797619,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.871667
+no_sensory_frequency_coupling,160,168,0.797619,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.871667
+no_world_consequence,160,168,0.797619,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.851667
+no_source_boundary_preservation,160,168,0.761905,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.876667
+no_replay_timeline,160,168,0.797619,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.941667

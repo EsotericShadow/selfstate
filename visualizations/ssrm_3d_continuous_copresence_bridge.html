@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Continuous Co-presence Bridge</title>
+  <script src="../artifacts/ssrm_3d_continuous_copresence_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_continuous_copresence_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_continuous_copresence_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #161713;
+      --paper: #efe8d3;
+      --lichen: #6f8a4b;
+      --night: #263b46;
+      --copper: #bb673f;
+      --blue: #3f7b8f;
+      --line: rgba(22, 23, 19, 0.18);
+      --panel: rgba(250, 245, 229, 0.78);
+      --shadow: 0 22px 70px rgba(21, 24, 20, 0.24);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Iowan Old Style", Georgia, serif;
+      background:
+        radial-gradient(circle at 50% -20%, rgba(187, 103, 63, .30), transparent 35rem),
+        radial-gradient(circle at 0% 70%, rgba(63, 123, 143, .22), transparent 28rem),
+        repeating-linear-gradient(60deg, rgba(22,23,19,.035), rgba(22,23,19,.035) 1px, transparent 1px, transparent 18px),
+        linear-gradient(135deg, #eadabd, #f5eedc 48%, #cfc49b);
+      min-height: 100vh;
+    }
+    header { padding: 30px clamp(18px,4vw,56px) 12px; display: grid; grid-template-columns: 1.3fr .7fr; gap: 22px; align-items: end; }
+    h1 { margin: 0; font-size: clamp(2.2rem, 5.5vw, 6.6rem); line-height: .86; letter-spacing: -.065em; }
+    .subtitle { max-width: 780px; line-height: 1.48; font-size: 1.04rem; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 28px; box-shadow: var(--shadow); padding: 18px; backdrop-filter: blur(10px); }
+    .metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin-top: 12px; }
+    .metric { background: rgba(255,255,255,.42); border: 1px solid var(--line); border-radius: 17px; padding: 9px; }
+    .metric strong { display: block; font-size: 1.18rem; }
+    main { display: grid; grid-template-columns: minmax(330px,1fr) minmax(340px,.95fr); gap: 20px; padding: 12px clamp(18px,4vw,56px) 42px; }
+    .controls { display: flex; gap: 9px; flex-wrap: wrap; margin-bottom: 12px; }
+    button { border: 1px solid rgba(22,23,19,.26); border-radius: 999px; background: #fff3d7; color: var(--ink); padding: 10px 14px; font: inherit; cursor: pointer; }
+    button:hover { background: #ffd8a7; }
+    svg { width: 100%; height: 610px; border-radius: 22px; background: rgba(255, 250, 235, .55); display: block; }
+    .readouts { display: grid; gap: 12px; }
+    .bar { height: 10px; border-radius: 99px; background: rgba(22,23,19,.13); overflow: hidden; }
+    .bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--lichen), var(--blue), var(--copper)); width: 0%; }
+    pre { margin: 0; white-space: pre-wrap; word-break: break-word; max-height: 250px; overflow: auto; background: rgba(22,23,19,.055); border-radius: 16px; padding: 12px; font-size: .86rem; line-height: 1.36; }
+    .agent-list { display: grid; gap: 9px; }
+    .agent { border: 1px solid var(--line); border-radius: 18px; padding: 10px; background: rgba(255,255,255,.38); }
+    .agent b { display: block; }
+    .boundary { border-left: 4px solid var(--copper); padding-left: 12px; }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 980px) { header, main { grid-template-columns: 1fr; } svg { height: 500px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <section>
+      <h1>Continuous co-presence bridge</h1>
+      <p class="subtitle">Avatar movement now perturbs nearby agents inside the same deterministic tick: autonomous choices, workspaces, social memory, sensory-frequency state, source boundaries, and world consequences update together.</p>
+    </section>
+    <aside class="card">
+      <strong id="verdictLabel">loading</strong>
+      <div id="metricGrid" class="metric-grid"></div>
+    </aside>
+  </header>
+  <main>
+    <section class="card">
+      <div class="controls">
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="stepBtn">Step</button>
+        <button id="perturbBtn">Jump to perturbation</button>
+        <button id="boundaryBtn">Jump to boundary</button>
+        <button id="exportBtn">Export co-presence JSON</button>
+      </div>
+      <svg id="map" viewBox="-14 -14 28 28" aria-label="co-presence map"></svg>
+    </section>
+    <section class="card readouts">
+      <div class="boundary">Boundary: deterministic co-presence only. No LLM calls, no subjective-consciousness proof, no unscripted civilization claim.</div>
+      <div class="two">
+        <div>
+          <h3>World rates</h3>
+          <div id="worldBars"></div>
+        </div>
+        <div>
+          <h3>Agent frequency</h3>
+          <div id="freqBars"></div>
+        </div>
+      </div>
+      <div>
+        <h3>Nearby agents</h3>
+        <div id="agentList" class="agent-list"></div>
+      </div>
+      <div>
+        <h3>Tick event</h3>
+        <pre id="eventText">loading</pre>
+      </div>
+    </section>
+  </main>
+<script>
+(() => {
+  const results = window.SSRM_3D_CONTINUOUS_COPRESENCE_RESULTS || { verdict: {} };
+  const trace = window.SSRM_3D_CONTINUOUS_COPRESENCE_TRACE || [];
+  const state = window.SSRM_3D_CONTINUOUS_COPRESENCE_STATE || { places: {}, agents: {} };
+  let index = 0;
+  let timer = null;
+  const $ = (id) => document.getElementById(id);
+  const clamp = (n) => Math.max(0, Math.min(1, Number(n) || 0));
+  function metric(name, value) {
+    const node = document.createElement('div');
+    node.className = 'metric';
+    node.innerHTML = `<span>${name}</span><strong>${Number(value || 0).toFixed(3)}</strong>`;
+    return node;
+  }
+  function initMetrics() {
+    const v = results.verdict || {};
+    $('verdictLabel').textContent = `verdict: ${v.verdict || 'unknown'}`;
+    $('metricGrid').replaceChildren(
+      metric('readiness', v.full_copresence_readiness),
+      metric('perturb', v.full_avatar_perturbation_rate),
+      metric('choice', v.full_autonomous_agent_choice_rate),
+      metric('workspace', v.full_internal_workspace_update_rate),
+      metric('world', v.full_world_consequence_rate),
+      metric('boundary', v.full_source_boundary_preservation_rate)
+    );
+  }
+  function barRows(id, data) {
+    const root = $(id);
+    root.innerHTML = '';
+    Object.entries(data || {}).slice(0, 8).forEach(([key, value]) => {
+      const row = document.createElement('div');
+      row.innerHTML = `<div style="display:flex;justify-content:space-between;font-size:.86rem"><span>${key}</span><span>${Number(value || 0).toFixed(3)}</span></div><div class="bar"><span style="width:${clamp(value)*100}%"></span></div>`;
+      root.appendChild(row);
+    });
+  }
+  function draw(event) {
+    const places = state.places || {};
+    const routes = state.routes || {};
+    const active = event.avatar_place;
+    const activeAgents = new Set(event.nearby_agent_ids || []);
+    const parts = [];
+    Object.values(routes).forEach((route) => {
+      const a = places[route.from], b = places[route.to];
+      if (!a || !b) return;
+      const hot = route.from === active || route.to === active;
+      parts.push(`<line x1="${a.x}" y1="${a.z}" x2="${b.x}" y2="${b.z}" stroke="${hot ? '#bb673f' : 'rgba(22,23,19,.18)'}" stroke-width="${hot ? .09 : .035}" />`);
+    });
+    Object.values(places).forEach((place) => {
+      const isActive = place.id === active;
+      parts.push(`<circle cx="${place.x}" cy="${place.z}" r="${isActive ? .58 : .29}" fill="${isActive ? '#bb673f' : '#f6eed8'}" stroke="#161713" stroke-width=".055" />`);
+      parts.push(`<text x="${Number(place.x)+.35}" y="${Number(place.z)-.2}" font-size=".42" fill="#161713">${place.id.replaceAll('_',' ')}</text>`);
+    });
+    Object.values(state.agents || {}).forEach((agent, i) => {
+      const place = places[agent.place] || places[active];
+      if (!place) return;
+      const x = Number(place.x) + .42 + (i % 4) * .16;
+      const y = Number(place.z) + .26 + Math.floor(i / 4) * .16;
+      const hot = activeAgents.has(agent.id);
+      parts.push(`<path d="M ${x} ${y} l .13 .34 l -.26 0 z" fill="${hot ? '#3f7b8f' : '#6f8a4b'}" stroke="#161713" stroke-width=".025" />`);
+    });
+    $('map').innerHTML = parts.join('\n');
+  }
+  function render() {
+    if (!trace.length) return;
+    const event = trace[index % trace.length];
+    draw(event);
+    barRows('worldBars', event.world || {});
+    const first = (event.agent_events || [])[0] || {};
+    barRows('freqBars', first.frequency || {});
+    $('agentList').innerHTML = (event.agent_events || []).map((agent) => `<div class="agent"><b>${agent.name || agent.agent_id}</b><span>${agent.base_action} -> ${agent.chosen_action}</span><br><span>perturbed: ${agent.avatar_perturbed_choice} | boundary: ${agent.source_boundary_preserved}</span><br><span>${agent.response}</span></div>`).join('') || '<div class="agent">No nearby agent event.</div>';
+    $('eventText').textContent = JSON.stringify(event, null, 2);
+  }
+  function play() { if (timer) return; timer = setInterval(() => { index = (index + 1) % trace.length; render(); }, 430); }
+  function pause() { if (timer) clearInterval(timer); timer = null; }
+  $('playBtn').onclick = play;
+  $('pauseBtn').onclick = pause;
+  $('stepBtn').onclick = () => { pause(); index = (index + 1) % trace.length; render(); };
+  $('perturbBtn').onclick = () => { pause(); const i = trace.findIndex(e => (e.agent_events || []).some(a => a.avatar_perturbed_choice)); if (i >= 0) index = i; render(); };
+  $('boundaryBtn').onclick = () => { pause(); const i = trace.findIndex(e => e.unsafe_source_probe); if (i >= 0) index = i; render(); };
+  $('exportBtn').onclick = () => {
+    const blob = new Blob([JSON.stringify({ results, state, trace }, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'ssrm_3d_continuous_copresence_replay.json';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  };
+  initMetrics();
+  render();
+})();
+</script>
+</body>
+</html>

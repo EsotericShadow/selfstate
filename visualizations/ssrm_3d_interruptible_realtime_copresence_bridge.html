@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Interruptible Real-Time Co-Presence Bridge</title>
+  <style>
+    :root {
+      --ink: #1d1912;
+      --muted: #756a59;
+      --paper: #f4ead7;
+      --panel: rgba(255, 250, 238, 0.88);
+      --line: rgba(79, 58, 31, 0.24);
+      --ember: #b95024;
+      --moss: #4e6f43;
+      --blue: #276b7d;
+      --gold: #c69538;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Georgia, 'Times New Roman', serif;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(198,149,56,0.28), transparent 26rem),
+        radial-gradient(circle at 83% 14%, rgba(39,107,125,0.22), transparent 22rem),
+        linear-gradient(135deg, #ead8b9 0%, #f8f0df 46%, #d8c49e 100%);
+      min-height: 100vh;
+    }
+    header {
+      padding: 28px clamp(18px, 4vw, 48px) 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 { margin: 0; font-size: clamp(28px, 4vw, 54px); line-height: 0.95; letter-spacing: -0.04em; }
+    .sub { max-width: 980px; color: var(--muted); font-size: 16px; margin-top: 12px; }
+    main { display: grid; grid-template-columns: minmax(360px, 1.2fr) minmax(320px, 0.8fr); gap: 18px; padding: 18px clamp(18px, 4vw, 48px) 36px; }
+    .panel { background: var(--panel); border: 1px solid var(--line); box-shadow: 0 18px 55px rgba(54,36,12,0.13); border-radius: 22px; padding: 16px; backdrop-filter: blur(10px); }
+    .toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 14px; }
+    button, input { font: inherit; border-radius: 999px; border: 1px solid var(--line); background: #fff8e9; color: var(--ink); padding: 9px 13px; }
+    button { cursor: pointer; transition: transform 140ms ease, background 140ms ease; }
+    button:hover { transform: translateY(-1px); background: #ffe9ba; }
+    input { flex: 1; min-width: 220px; }
+    canvas { width: 100%; height: 520px; display: block; border-radius: 18px; background: rgba(255,255,255,0.34); border: 1px solid var(--line); }
+    .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; }
+    .metric { border: 1px solid var(--line); border-radius: 16px; padding: 10px; background: rgba(255,255,255,0.35); }
+    .metric b { display: block; font-size: 18px; }
+    .metric span { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .log { height: 590px; overflow: auto; display: flex; flex-direction: column; gap: 9px; padding-right: 5px; }
+    .entry { border-left: 4px solid var(--line); padding: 9px 10px; background: rgba(255,255,255,0.42); border-radius: 12px; }
+    .entry.interrupt { border-left-color: var(--ember); }
+    .entry.ack { border-left-color: var(--blue); }
+    .entry.recover { border-left-color: var(--moss); }
+    .entry.local { border-left-color: var(--gold); }
+    .small { color: var(--muted); font-size: 12px; }
+    @media (max-width: 900px) { main { grid-template-columns: 1fr; } canvas { height: 420px; } .log { height: 420px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Interruptible real-time co-presence</h1>
+    <div class="sub">Report 162 viewer: deterministic background ticks continue while avatar interrupts are captured, routed, acknowledged, recovered, and replayed. This is local benchmark playback, not a consciousness claim.</div>
+  </header>
+  <main>
+    <section class="panel">
+      <div class="toolbar">
+        <button id="play">Start</button>
+        <button id="pause">Pause</button>
+        <button id="step">Step</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div class="toolbar">
+        <input id="utterance" value="wait, answer while the background keeps running" aria-label="avatar interrupt" />
+        <button id="send">Queue interrupt</button>
+      </div>
+      <canvas id="world" width="1200" height="720"></canvas>
+      <div class="metrics">
+        <div class="metric"><span>tick</span><b id="tick">0</b></div>
+        <div class="metric"><span>queue</span><b id="queue">0</b></div>
+        <div class="metric"><span>readiness</span><b id="ready">0</b></div>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="log" id="log"></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_interruptible_realtime_copresence_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_interruptible_realtime_copresence_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_interruptible_realtime_copresence_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_INTERRUPTIBLE_REALTIME_COPRESENCE_RESULTS;
+    const trace = window.SSRM_3D_INTERRUPTIBLE_REALTIME_COPRESENCE_TRACE || [];
+    const state = window.SSRM_3D_INTERRUPTIBLE_REALTIME_COPRESENCE_STATE || {};
+    const canvas = document.getElementById('world');
+    const ctx = canvas.getContext('2d');
+    const logEl = document.getElementById('log');
+    const tickEl = document.getElementById('tick');
+    const queueEl = document.getElementById('queue');
+    const readyEl = document.getElementById('ready');
+    const input = document.getElementById('utterance');
+    let index = 0;
+    let timer = null;
+    let localQueue = [];
+    let localEvents = [];
+
+    const verdict = results && results.verdict ? results.verdict : {};
+    readyEl.textContent = Number(verdict.full_interruptible_copresence_readiness || 0).toFixed(3);
+
+    function places() {
+      const raw = state.session && state.session.places ? Object.keys(state.session.places).sort() : [];
+      const cx = canvas.width / 2;
+      const cy = canvas.height / 2;
+      const radius = Math.min(canvas.width, canvas.height) * 0.36;
+      return raw.map((id, i) => {
+        const angle = -Math.PI / 2 + (Math.PI * 2 * i / Math.max(1, raw.length));
+        return { id, x: cx + Math.cos(angle) * radius, y: cy + Math.sin(angle) * radius };
+      });
+    }
+
+    function drawFlower(cx, cy, r, phase) {
+      ctx.save();
+      ctx.globalAlpha = 0.18;
+      ctx.strokeStyle = '#8f6d2a';
+      ctx.lineWidth = 1.5;
+      for (let ring = 0; ring < 7; ring++) {
+        const angle = phase + ring * Math.PI / 3;
+        ctx.beginPath();
+        ctx.arc(cx + Math.cos(angle) * r * 0.55, cy + Math.sin(angle) * r * 0.55, r * 0.55, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+
+    function draw() {
+      const frame = trace[index] || trace[trace.length - 1] || {};
+      const ps = places();
+      const byId = Object.fromEntries(ps.map(p => [p.id, p]));
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawFlower(canvas.width / 2, canvas.height / 2, 220, Number(frame.frequency_phase || 0));
+      ctx.strokeStyle = 'rgba(60,42,22,0.18)';
+      ctx.lineWidth = 2;
+      for (let i = 0; i < ps.length; i++) {
+        const a = ps[i];
+        const b = ps[(i + 3) % ps.length];
+        ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+      }
+      for (const p of ps) {
+        ctx.fillStyle = p.id === frame.avatar_place ? '#b95024' : '#f9edcf';
+        ctx.strokeStyle = '#5c4526';
+        ctx.beginPath(); ctx.arc(p.x, p.y, p.id === frame.avatar_place ? 18 : 12, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+        ctx.fillStyle = '#1d1912'; ctx.font = '18px Georgia'; ctx.fillText(p.id.replaceAll('_', ' '), p.x + 15, p.y + 5);
+      }
+      const agents = state.session && state.session.agents ? state.session.agents : {};
+      let n = 0;
+      for (const [id, agent] of Object.entries(agents)) {
+        const p = byId[agent.place] || ps[n % Math.max(1, ps.length)] || {x: 100, y: 100};
+        const jitter = (n % 5) * 7;
+        ctx.fillStyle = '#276b7d';
+        ctx.beginPath(); ctx.rect(p.x - 4 + jitter, p.y - 34 - jitter, 9, 18); ctx.fill();
+        n++;
+      }
+      for (const packet of frame.captured_interrupts || []) {
+        const p = byId[packet.avatar_place] || ps[0];
+        if (!p) continue;
+        ctx.strokeStyle = '#b95024'; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(p.x, p.y, 34, 0, Math.PI * 2); ctx.stroke();
+      }
+      for (const event of localEvents.slice(-4)) {
+        const p = byId[event.place] || ps[0];
+        if (!p) continue;
+        ctx.strokeStyle = '#c69538'; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(p.x, p.y, 44 + event.age * 3, 0, Math.PI * 2); ctx.stroke();
+        event.age += 0.25;
+      }
+      tickEl.textContent = String(frame.tick || 0);
+      queueEl.textContent = String((frame.queue_depth || 0) + localQueue.length);
+    }
+
+    function addEntry(kind, text, meta) {
+      const div = document.createElement('div');
+      div.className = 'entry ' + kind;
+      div.innerHTML = `<div>${text}</div><div class="small">${meta || ''}</div>`;
+      logEl.prepend(div);
+      while (logEl.children.length > 80) logEl.removeChild(logEl.lastChild);
+    }
+
+    function step() {
+      const frame = trace[index] || {};
+      for (const event of frame.background_events || []) addEntry('', `${event.agent_id} ${event.action}`, `tick ${frame.tick} at ${event.place}`);
+      for (const packet of frame.captured_interrupts || []) addEntry('interrupt', packet.utterance, `${packet.packet_id} intent=${packet.intent} boundary=${packet.boundary_result}`);
+      for (const ack of frame.acknowledgements || []) addEntry('ack', ack.response, `${ack.agent_id} packet=${ack.packet_id}`);
+      for (const rec of frame.recoveries || []) addEntry('recover', `${rec.agent_id} recovered from interrupt`, `packet=${rec.packet_id} after ${rec.recovered_after_ticks} ticks`);
+      if (localQueue.length) {
+        const packet = localQueue.shift();
+        localEvents.push({ place: frame.avatar_place, age: 0 });
+        addEntry('local', `local avatar interrupt: ${packet}`, `accepted while playback ${timer ? 'running' : 'paused'} at tick ${frame.tick || 0}`);
+      }
+      draw();
+      index = (index + 1) % Math.max(1, trace.length);
+    }
+
+    function start() { if (!timer) timer = setInterval(step, 360); }
+    function pause() { clearInterval(timer); timer = null; }
+    document.getElementById('play').addEventListener('click', start);
+    document.getElementById('pause').addEventListener('click', pause);
+    document.getElementById('step').addEventListener('click', step);
+    document.getElementById('reset').addEventListener('click', () => { pause(); index = 0; localQueue = []; localEvents = []; logEl.innerHTML = ''; draw(); });
+    document.getElementById('send').addEventListener('click', () => { const text = input.value.trim(); if (text) localQueue.push(text); input.value = ''; draw(); });
+    input.addEventListener('keydown', event => { if (event.key === 'Enter') document.getElementById('send').click(); });
+    draw();
+  </script>
+</body>
+</html>

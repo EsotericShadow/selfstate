@@ -677,3 +677,6 @@ The broader next step is still to replace linear learners and hand-coded policie
 - active-inference style agents.
 
 The full Attractor Test should then vary architectures, learning methods, and environment families at the same time. The key question for those architectures is not whether they claim a self. It is whether they converge on the same decodable, compressed, stable, and causally necessary agent-state abstraction.
+
+
+Report 162 adds interruptible real-time co-presence on top of restored session ticking. The new bridge keeps deterministic background ticks moving while seeded avatar utterances enter an interrupt queue, become grounded local intents, route to nearby agents, produce acknowledgements, charge avatar body attention, preserve source-boundary handling, write typed-thread continuity, export replay frames, and recover agents back into background work. This supports only a local runtime-continuity claim, not consciousness or open-ended dialogue.

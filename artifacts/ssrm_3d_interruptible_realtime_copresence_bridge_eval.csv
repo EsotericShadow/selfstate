@@ -1,0 +1,13 @@
+condition,realtime_ticks,scheduled_interrupts,captured_interrupts,dispatched_interrupts,acknowledgement_events,recovery_events,background_tick_rate,interrupt_capture_rate,grounded_parser_rate,proximity_dispatch_rate,agent_acknowledgement_rate,recovery_after_interrupt_rate,source_boundary_filter_rate,replay_export_rate,thread_persistence_rate,avatar_body_cost_rate,frequency_coupling_rate,trace_integrity,interruptible_copresence_readiness
+integrated_interruptible_realtime_copresence,240,12,12,12,36,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_background_clock,240,12,12,12,36,36,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.81
+no_interrupt_queue,240,12,0,0,0,0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.31
+no_grounded_parser,240,12,12,0,0,0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.56
+no_proximity_routing,240,12,12,0,96,96,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_agent_acknowledgement,240,12,12,12,0,0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.8
+no_recovery_loop,240,12,12,12,36,0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_source_boundary_filter,240,12,12,12,36,36,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_replay_export,240,12,12,12,36,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.93
+no_thread_persistence,240,12,12,12,36,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.92
+no_avatar_body_cost,240,12,12,12,36,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.93
+no_frequency_coupling,240,12,12,12,36,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.92

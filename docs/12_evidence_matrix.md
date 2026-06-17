@@ -1179,6 +1179,7 @@ This is Report 161: a deterministic restored autonomous session-tick bridge wher
 | `experiments/ssrm_3d_interactive_typed_copresence_bridge.py` | `artifacts/ssrm_3d_interactive_typed_copresence_bridge_verdict.csv` |
 | `experiments/ssrm_3d_persistent_session_state_bridge.py` | `artifacts/ssrm_3d_persistent_session_state_bridge_verdict.csv` |
 | `experiments/ssrm_3d_restored_autonomous_session_tick_bridge.py` | `artifacts/ssrm_3d_restored_autonomous_session_tick_bridge_verdict.csv` |
+| SSRM-3D interruptible real-time co-presence bridge | Supported as deterministic runtime bridge | `ssrm_3d_interruptible_realtime_copresence_bridge.py`; `docs/162_ssrm_3d_interruptible_realtime_copresence_bridge_report.md` | Browser-clock runtime, LLM dialogue, or unscripted civilization replaces the seeded interrupt trace and still preserves background continuity, source boundaries, replay, and recovery. |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

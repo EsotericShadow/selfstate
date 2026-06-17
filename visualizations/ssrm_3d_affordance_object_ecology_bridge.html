@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Affordance Object Ecology Bridge</title>
+  <script src="../artifacts/ssrm_3d_affordance_object_ecology_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_affordance_object_ecology_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_affordance_object_ecology_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #17221c;
+      --paper: #eadfc3;
+      --panel: #fff8e8;
+      --line: #c7ad72;
+      --moss: #3d6548;
+      --clay: #9b4e2d;
+      --water: #3e7386;
+      --gold: #c18b28;
+      --danger: #8d372b;
+      --muted: #687064;
+      --shadow: rgba(23, 34, 28, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 14% 12%, rgba(193, 139, 40, 0.24), transparent 24%),
+        radial-gradient(circle at 85% 15%, rgba(62, 115, 134, 0.22), transparent 28%),
+        linear-gradient(135deg, rgba(61, 101, 72, 0.24), transparent 46%),
+        var(--paper);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+
+    .shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(560px, 1fr) 460px;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    .stage,
+    .panel {
+      border: 1px solid var(--line);
+      background: rgba(255, 248, 232, 0.94);
+      box-shadow: 0 22px 50px var(--shadow);
+      overflow: hidden;
+    }
+
+    .stage { display: grid; grid-template-rows: auto minmax(520px, 1fr) auto; }
+
+    header,
+    .hud,
+    .panel-head,
+    .controls,
+    .inventory {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      flex-wrap: wrap;
+    }
+
+    header { justify-content: space-between; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-family: Georgia, serif; font-size: clamp(1.35rem, 2.5vw, 2.4rem); }
+    h2 { font-size: 1rem; }
+    h3 { font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+
+    .badge,
+    button {
+      border: 1px solid var(--line);
+      background: #f3e5c5;
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
+    .badge { padding: 6px 8px; }
+    button { min-height: 38px; padding: 8px 10px; cursor: pointer; }
+    button:hover, button.active { background: var(--moss); border-color: var(--moss); color: #fff8e8; }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      min-height: 520px;
+      display: block;
+      background:
+        linear-gradient(rgba(23, 34, 28, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 34, 28, 0.05) 1px, transparent 1px),
+        #e2d3af;
+      background-size: 34px 34px;
+    }
+
+    .hud { border-top: 1px solid var(--line); border-bottom: 0; }
+    .metric { min-width: 112px; display: grid; gap: 4px; color: var(--muted); font-size: 0.74rem; }
+    .metric strong { color: var(--ink); font-size: 1rem; }
+
+    .panel { display: grid; grid-template-rows: auto auto auto minmax(300px, 1fr); min-height: calc(100vh - 32px); }
+    .controls button { flex: 1 1 28%; }
+    .inventory span { padding: 4px 7px; background: #ead8aa; border: 1px solid var(--line); font-size: 0.76rem; }
+    .detail { overflow: auto; display: grid; align-content: start; gap: 12px; padding: 14px; }
+    .object-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    .object-card { border: 1px solid var(--line); background: rgba(255, 252, 242, 0.78); padding: 9px; cursor: pointer; }
+    .object-card.active { border-color: var(--clay); box-shadow: inset 0 0 0 2px rgba(155, 78, 45, 0.20); }
+    .bar-row { display: grid; grid-template-columns: 86px 1fr 42px; gap: 8px; align-items: center; font-size: 0.80rem; }
+    .bar { height: 8px; background: #dac596; overflow: hidden; }
+    .bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--water), var(--gold), var(--clay)); }
+    .log { display: grid; gap: 8px; border-top: 1px solid var(--line); background: #e5d4ae; padding: 12px; }
+    .line { border-left: 3px solid var(--moss); background: rgba(255, 248, 232, 0.9); padding: 8px 10px; font-size: 0.84rem; line-height: 1.35; }
+
+    @media (max-width: 980px) {
+      .shell { grid-template-columns: 1fr; }
+      .panel { min-height: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <main class="stage">
+      <header>
+        <div>
+          <h1>Affordance Object Ecology</h1>
+          <p>Persistent objects with affordances, decay, ownership, inventory costs, repair/crafting, and sensory bindings.</p>
+        </div>
+        <span class="badge" id="verdict">loading</span>
+      </header>
+      <canvas id="world" width="1080" height="740"></canvas>
+      <section class="hud" id="hud"></section>
+    </main>
+
+    <aside class="panel">
+      <div class="panel-head">
+        <h2>Object Ecology Console</h2>
+        <span class="badge">Report 146</span>
+        <span class="badge" id="selectedBadge">object</span>
+      </div>
+      <div class="controls">
+        <button id="repair">repair/craft</button>
+        <button id="gather">gather/use</button>
+        <button id="decay">advance decay</button>
+      </div>
+      <div class="inventory" id="inventory"></div>
+      <div class="detail" id="detail"></div>
+    </aside>
+  </div>
+
+  <script>
+    const payload = window.SSRM_3D_AFFORDANCE_OBJECT_ECOLOGY_BRIDGE_RESULTS || { verdict: {}, final_state: { objects: {}, agents: {}, world: {} } };
+    const generated = window.SSRM_3D_AFFORDANCE_OBJECT_ECOLOGY_BRIDGE_STATE || payload.final_state || { objects: {}, agents: {}, world: {} };
+    const state = {
+      selected: 0,
+      objects: Object.values(structuredClone(generated.objects || {})),
+      agents: Object.values(structuredClone(generated.agents || {})),
+      world: structuredClone(generated.world || {}),
+      log: []
+    };
+
+    const colors = {
+      water: "#3e7386", storage: "#597d72", tool: "#7f5a35", shelter: "#9b4e2d", fire: "#c18b28",
+      medicine: "#5f7d3f", food: "#927032", sanitation: "#5d635b", route: "#536e88", signal: "#7d6140",
+      clothing: "#8c7657", memory: "#656b43", care: "#8b5d64", observability: "#6d7342"
+    };
+
+    function clamp(value, low = 0, high = 1) { return Math.max(low, Math.min(high, value)); }
+    function fmt(value) { return Number(value || 0).toFixed(3); }
+    function obj() { return state.objects[state.selected] || state.objects[0] || {}; }
+    function actor() { return state.agents[state.selected % Math.max(1, state.agents.length)] || { name: "avatar", inventory: {} }; }
+
+    function act(kind) {
+      const object = obj();
+      const agent = actor();
+      if (!object.id) return;
+      const repair = kind === "repair";
+      object.integrity = clamp((object.integrity || 0.5) + (repair ? 0.035 : 0.010));
+      object.stock = clamp((object.stock || 0.5) + (repair ? 0.012 : 0.025));
+      object.pathogen = clamp((object.pathogen || 0.1) - (repair ? 0.012 : 0.006));
+      object.wetness = clamp((object.wetness || 0.4) - (repair ? 0.010 : 0.002));
+      object.uses = (object.uses || 0) + 1;
+      object.history = object.history || [];
+      object.history.push({ tick: object.history.length + 1, agent: agent.name, task: repair ? "local_repair" : "local_use" });
+      agent.inventory = agent.inventory || {};
+      if (repair) {
+        ["wood", "fiber", "clay", "charcoal"].forEach((key) => { if (agent.inventory[key] > 0) agent.inventory[key] -= 1; });
+      }
+      state.world.trace_integrity = clamp((state.world.trace_integrity || 0) + 0.01);
+      state.log.unshift(`${agent.name || "avatar"} ${repair ? "repairs/crafts at" : "uses/gathers from"} ${object.name}`);
+      renderAll();
+    }
+
+    function decay() {
+      state.objects.forEach((object, index) => {
+        object.integrity = clamp((object.integrity || 0.5) - 0.010 - (index % 3) * 0.002);
+        object.wetness = clamp((object.wetness || 0.4) + 0.006);
+        object.pathogen = clamp((object.pathogen || 0.1) + 0.004);
+        object.heat = clamp((object.heat || 0.4) - 0.004);
+      });
+      state.log.unshift("rain, cold, and use decay the object ecology");
+      renderAll();
+    }
+
+    function renderHud() {
+      const v = payload.verdict || {};
+      document.getElementById("verdict").textContent = `verdict: ${v.verdict || "local"}`;
+      const rows = [
+        ["readiness", v.full_affordance_ecology_readiness || 0],
+        ["objects", v.full_object_interaction_rate || 0],
+        ["expend", v.full_inventory_expenditure_rate || 0],
+        ["repair", v.full_craft_repair_success_rate || 0],
+        ["binding", v.full_sensory_object_binding_score || 0],
+        ["trace", v.full_trace_completeness || 0]
+      ];
+      document.getElementById("hud").innerHTML = rows.map(([label, value]) => `<div class="metric">${label}<strong>${fmt(value)}</strong></div>`).join("");
+    }
+
+    function renderInventory() {
+      const inv = actor().inventory || {};
+      const html = Object.entries(inv).filter(([, value]) => Number(value) > 0).slice(0, 14).map(([key, value]) => `<span>${key}: ${value}</span>`).join("");
+      document.getElementById("inventory").innerHTML = html || "<span>no inventory</span>";
+    }
+
+    function renderDetail() {
+      const object = obj();
+      document.getElementById("selectedBadge").textContent = object.name || "object";
+      const bars = [["integrity", object.integrity], ["stock", object.stock], ["wetness", object.wetness], ["heat", object.heat], ["pathogen", object.pathogen]].map(([name, value]) => `<div class="bar-row"><span>${name}</span><div class="bar"><span style="width:${clamp(value) * 100}%"></span></div><strong>${fmt(value)}</strong></div>`).join("");
+      const cards = state.objects.map((item, index) => `<div class="object-card ${index === state.selected ? "active" : ""}" data-index="${index}"><strong>${item.name}</strong><br><small>${item.kind} / ${item.owner}</small></div>`).join("");
+      const log = state.log.slice(0, 8).map((line) => `<div class="line">${line}</div>`).join("");
+      document.getElementById("detail").innerHTML = `
+        <h2>${object.name || "object"}</h2>
+        <p>kind: ${object.kind || "unknown"}; owner: ${object.owner || "shared"}</p>
+        <p>affordances: ${(object.affordances || []).join(", ")}</p>
+        ${bars}
+        <h3>Objects</h3>
+        <div class="object-grid">${cards}</div>
+        <h3>Local trace</h3>
+        <div class="log">${log || "<div class='line'>Use the controls to mutate object state locally.</div>"}</div>
+      `;
+      document.querySelectorAll(".object-card").forEach((card) => card.addEventListener("click", () => { state.selected = Number(card.dataset.index); renderAll(); }));
+    }
+
+    function drawWorld() {
+      const canvas = document.getElementById("world");
+      const ctx = canvas.getContext("2d");
+      const w = canvas.width;
+      const h = canvas.height;
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = "#e2d3af";
+      ctx.fillRect(0, 0, w, h);
+      const cx = w * 0.5;
+      const cy = h * 0.52;
+      ctx.strokeStyle = "rgba(61, 101, 72, 0.30)";
+      ctx.lineWidth = 2;
+      [0, 1, 2, 3, 4, 5, 6].forEach((i) => {
+        const angle = i / 6 * Math.PI * 2;
+        ctx.beginPath();
+        ctx.arc(cx + Math.cos(angle) * 95, cy + Math.sin(angle) * 95, 128, 0, Math.PI * 2);
+        ctx.stroke();
+      });
+      state.objects.forEach((object, index) => {
+        const px = cx + Number(object.x || 0) * 34;
+        const py = cy + Number(object.z || 0) * 34;
+        const health = ((object.integrity || 0) + (object.stock || 0) + (1 - (object.pathogen || 0))) / 3;
+        ctx.fillStyle = colors[object.kind] || "#3d6548";
+        ctx.globalAlpha = 0.45 + health * 0.55;
+        ctx.beginPath();
+        ctx.rect(px - 14, py - 14, 28 + health * 14, 28 + health * 14);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+        ctx.fillStyle = index === state.selected ? "#9b4e2d" : "#17221c";
+        ctx.font = "700 12px Avenir Next, sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText(object.name.split(" ")[0], px, py - 20);
+      });
+      ctx.fillStyle = "#17221c";
+      ctx.textAlign = "left";
+      ctx.font = "700 22px Georgia";
+      ctx.fillText(`persistent objects: ${state.objects.length}`, 32, 48);
+    }
+
+    function renderAll() { renderHud(); renderInventory(); renderDetail(); drawWorld(); }
+    document.getElementById("repair").addEventListener("click", () => act("repair"));
+    document.getElementById("gather").addEventListener("click", () => act("gather"));
+    document.getElementById("decay").addEventListener("click", decay);
+    renderAll();
+  </script>
+</body>
+</html>

@@ -140,7 +140,7 @@ This boundary is not evidence that selfhood exists. It defines how future langua
 | Compressed packets are sufficient for language reasoning | Packet-fed LLMs match full-world LLMs on abstract recommendation quality when the state layers are healthy. | Full-world access consistently beats packet access without control costs, implying the packet omits essential state. |
 | Simulation-distilled critics can improve LLM reasoning | A sim-distilled critic improves held-out LLM planning, repair, and cascade-avoidance tasks while ablations identify which critic matters. | LLM search plus generic reward models match or beat sim-distilled critics, or the critics only transfer simulation artifacts. |
 | Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. Report 139 is the first structured toy bridge; Report 141 is its dynamic extension with held-out families and noisy multi-channel conditions. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
-| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years. Report 143 adds stateful avatar interventions. Report 144 adds typed embodied avatar input. Report 145 adds autonomous multi-rate live-agent ticks with scheduler, sensory, workspace, social, world-consequence, player-interrupt, and trace ablations; integrated readiness is `0.857642`. | A claim of mature live agents, true conversation, open-ended language/culture, unscripted civilization, or subjective consciousness appears before action selection is learned/open-ended and before agents sustain richer object/task affordances beyond the deterministic bridge policy. |
+| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years. Report 143 adds stateful avatar interventions. Report 144 adds typed embodied avatar input. Report 145 adds autonomous multi-rate live-agent ticks. Report 146 adds persistent object affordances with inventory expenditure, ownership, decay, repair/crafting, sensory binding, object histories, and trace ablations; capped readiness is `1.000000`. | A claim of mature live agents, true conversation, open-ended language/culture, unscripted civilization, or subjective consciousness appears before action selection is learned/open-ended and before larger object graphs, navigation, and language grounding exceed deterministic bridge policies. |
 
 ## Candidate Hypotheses
 
@@ -810,6 +810,24 @@ This is Report 144: a deterministic bridge from scripted interventions to typed 
 This is Report 145: a deterministic bridge from typed benchmark rows to autonomous live-agent ticks. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
 
 
+### Report 146: SSRM-3D affordance object ecology bridge
+
+| Condition | Readiness | Object | Validity | Expenditure | Repair | Decay | Ownership | Sensory | Persistence | Chains | Depth | Trace |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `integrated_affordance_object_ecology` | `1.000000` | `0.987868` | `1.000000` | `1.000000` | `0.961538` | `0.626719` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.920009` | `1.000000` |
+| `no_persistent_objects` | `0.105180` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.800000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.228907` | `0.000000` |
+| `no_inventory_expenditures` | `0.911018` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `0.501098` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.826437` | `1.000000` |
+| `no_affordance_dependencies` | `0.972067` | `1.000000` | `0.300000` | `1.000000` | `1.000000` | `0.531991` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.898802` | `1.000000` |
+| `no_decay_pressure` | `0.980009` | `0.974003` | `1.000000` | `1.000000` | `0.923469` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.930114` | `1.000000` |
+| `no_sensory_object_binding` | `0.960643` | `0.989601` | `1.000000` | `1.000000` | `0.967914` | `0.633192` | `1.000000` | `0.121500` | `1.000000` | `1.000000` | `0.911567` | `1.000000` |
+| `no_social_ownership` | `0.854407` | `0.504333` | `1.000000` | `1.000000` | `0.373206` | `0.467450` | `0.504333` | `1.000000` | `1.000000` | `1.000000` | `0.836462` | `1.000000` |
+| `no_repair_crafting_loop` | `0.660611` | `0.091854` | `1.000000` | `1.000000` | `0.000000` | `0.350000` | `1.000000` | `0.562143` | `0.850000` | `0.600000` | `0.489761` | `1.000000` |
+| `no_trace_replay` | `0.967802` | `0.987868` | `1.000000` | `1.000000` | `0.961538` | `0.626719` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.920009` | `0.000000` |
+
+This is Report 146: a deterministic bridge from scalar live-agent state to persistent object affordances, inventory expenditure, object histories, ownership, decay, and repair/crafting loops. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
+
+
+
 
 ## Reproducibility Artifacts
 
@@ -891,6 +909,7 @@ This is Report 145: a deterministic bridge from typed benchmark rows to autonomo
 | `experiments/ssrm_3d_live_avatar_intervention_bridge.py` | `artifacts/ssrm_3d_live_avatar_intervention_bridge_verdict.csv` |
 | `experiments/ssrm_3d_embodied_avatar_input_bridge.py` | `artifacts/ssrm_3d_embodied_avatar_input_bridge_verdict.csv` |
 | `experiments/ssrm_3d_autonomous_live_agent_loop_bridge.py` | `artifacts/ssrm_3d_autonomous_live_agent_loop_bridge_verdict.csv` |
+| `experiments/ssrm_3d_affordance_object_ecology_bridge.py` | `artifacts/ssrm_3d_affordance_object_ecology_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

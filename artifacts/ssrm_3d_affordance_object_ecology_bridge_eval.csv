@@ -1,0 +1,10 @@
+condition,ticks,object_count,scheduled_attempts,successful_interactions,object_interaction_rate,affordance_validity_rate,inventory_expenditure_rate,craft_repair_success_rate,decay_recovery_rate,social_ownership_respect_rate,sensory_object_binding_score,object_state_persistence,task_chain_completion_rate,world_depth_score,trace_completeness,affordance_ecology_readiness
+integrated_affordance_object_ecology,128,14,577,570,0.987868,1.0,1.0,0.961538,0.626719,1.0,1.0,1.0,1.0,0.920009,1.0,1.0
+no_persistent_objects,128,0,577,0,0.0,0.0,0.0,0.0,0.8,0.0,0.0,0.0,0.0,0.228907,0.0,0.10518
+no_inventory_expenditures,128,14,577,577,1.0,1.0,0.0,1.0,0.501098,1.0,1.0,1.0,1.0,0.826437,1.0,0.911018
+no_affordance_dependencies,128,14,577,577,1.0,0.3,1.0,1.0,0.531991,1.0,1.0,1.0,1.0,0.898802,1.0,0.972067
+no_decay_pressure,128,14,577,562,0.974003,1.0,1.0,0.923469,0.0,1.0,1.0,1.0,1.0,0.930114,1.0,0.980009
+no_sensory_object_binding,128,14,577,571,0.989601,1.0,1.0,0.967914,0.633192,1.0,0.1215,1.0,1.0,0.911567,1.0,0.960643
+no_social_ownership,128,14,577,291,0.504333,1.0,1.0,0.373206,0.46745,0.504333,1.0,1.0,1.0,0.836462,1.0,0.854407
+no_repair_crafting_loop,128,14,577,53,0.091854,1.0,1.0,0.0,0.35,1.0,0.562143,0.85,0.6,0.489761,1.0,0.660611
+no_trace_replay,128,14,577,570,0.987868,1.0,1.0,0.961538,0.626719,1.0,1.0,1.0,1.0,0.920009,0.0,0.967802

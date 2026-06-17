@@ -28,7 +28,9 @@ Report 143 adds the first live-state bridge: player interventions alter agent at
 
 Report 144 adds typed embodied player input: the avatar has a body position, the local parser grounds typed text into action kinds, proximity can block actions, sensory context changes update strength, workspace memories are written, world state changes, and replay traces remain inspectable.
 
-This is still not a completed playable civilization. Report 145 adds autonomous live-agent ticks: agents keep sensing, updating internal workspaces, choosing actions, affecting body state, exchanging native tokens, repairing or degrading world variables, and responding to sparse avatar interrupts. Integrated autonomous-live readiness is `0.857642`. The next gate is richer object/task affordances and learned/open-ended interpretation rather than a deterministic bridge policy.
+Report 145 adds autonomous live-agent ticks: agents keep sensing, updating internal workspaces, choosing actions, affecting body state, exchanging native tokens, repairing or degrading world variables, and responding to sparse avatar interrupts.
+
+This is still not a completed playable civilization. Report 146 adds persistent object affordances: named objects have locations, integrity, stock, wetness, heat, pathogen risk, owners, affordance lists, required materials, inventory costs, repair/crafting loops, sensory bindings, and object histories. Capped affordance-ecology readiness is `1.000000`. The next gate is larger place-based object graphs with navigation and learned/open-ended interpretation rather than deterministic bridge policies.
 
 ## What The Testbed Can Study
 

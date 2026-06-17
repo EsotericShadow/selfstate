@@ -686,3 +686,6 @@ Report 163 adds browser-clock avatar embodiment. The browser viewer now runs the
 
 
 Report 164 adds persistent browser-runtime sessions. The browser runtime now has schema-guarded snapshots, reload restore, replay journal hashes, import packets, Python pipeline reentry validation, deterministic conflict merge, and rollback checkpoints. This makes the live avatar surface less disposable: a browser-derived body/sensory/journal state can become an artifact input. It remains deterministic persistence machinery, not consciousness or open-ended dialogue.
+
+
+Report 165 pivots the SSRM-3D track toward first-person artificial life rather than infrastructure-only bridges. Agents now receive a functional ego/interior model: body state, egocentric perception, private workspace, welfare-like felt state, temperament/preferences, relationship memory, ownership, bounded refusal, self-story, recoverable ego wounds, ego repair, and readable behavior. The bridge passes at readiness `0.967760`; the strongest ablation loss is removing recovery paths, followed by removing relationship memory. The moral rule is explicit: distress must create care opportunities, not spectacle. This remains a no-consciousness-claim functional architecture.

@@ -1,0 +1,1136 @@
+window.SSRM_3D_FIRST_PERSON_EGO_STATE_STATE = {
+  "agent_interiors": {
+    "integrated_deep_time_world:00": {
+      "agent_id": "integrated_deep_time_world:00",
+      "body": {
+        "breath_rate": 0.219144,
+        "comfort": 0.650576,
+        "energy": 0.057699,
+        "fatigue": 0.463589,
+        "hunger": 0.546409,
+        "injury": 0.055221,
+        "movement_effort": 0.274342,
+        "pain": 0.088267,
+        "rest_debt": 0.257995,
+        "safety": 0.661863,
+        "temperature": 0.62,
+        "thirst": 0.261551,
+        "wetness": 0.149244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.099,
+        "felt_respect": 0.6055,
+        "self_story": []
+      },
+      "felt_state": {
+        "arousal": 0.182634,
+        "attachment": 0.519372,
+        "control": 0.606676,
+        "curiosity": 0.231034,
+        "frustration": 0.0924,
+        "safety": 0.661863,
+        "valence": 1.0
+      },
+      "first_person_frame": {},
+      "name": "Ari",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "archive_stone",
+        "sleeping_place": "archive_knoll",
+        "unfinished_task": "repair_route"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.719832,
+        "favorite_object": "archive_stone",
+        "favorite_ritual": "check_hearth",
+        "home_place": "archive_knoll",
+        "likes_warm_places": 0.773174,
+        "prefers_familiar_agents": 0.61745
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "avatar_approach",
+          "ownership_hit": false,
+          "respect_delta": 0.01,
+          "summary": "Gabriel approached while I was listening.",
+          "tick": 9
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "repair_route",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "toward_avatar",
+        "line": "I can keep going while staying aware of you.",
+        "marker": "turns_toward",
+        "movement_speed": 0.676308,
+        "posture": "guarded",
+        "proximity": "neutral"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.1156,
+          "comfort": 0.501813,
+          "curiosity": 0.373931,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "helpful",
+              "kind": "avatar_approach",
+              "ownership_hit": false,
+              "respect_delta": 0.01,
+              "summary": "Gabriel approached while I was listening.",
+              "tick": 9
+            }
+          ],
+          "familiarity": 0.4,
+          "gratitude": 0.087,
+          "resentment": 0.0382,
+          "trust": 0.572129
+        }
+      },
+      "role": "scout",
+      "temperament": {
+        "autonomy_need": 0.30002,
+        "bold": 0.318099,
+        "comfort_seeking": 0.725316,
+        "curious": 0.231034,
+        "forgiveness": 0.557665,
+        "playful": 0.288299,
+        "pride_sensitivity": 0.868073,
+        "shame_sensitivity": 0.816933,
+        "social": 0.258963,
+        "trusting": 0.594706
+      }
+    },
+    "integrated_deep_time_world:01": {
+      "agent_id": "integrated_deep_time_world:01",
+      "body": {
+        "breath_rate": 0.270921,
+        "comfort": 0.620659,
+        "energy": 0.320269,
+        "fatigue": 0.605856,
+        "hunger": 0.50902,
+        "injury": 0.042821,
+        "movement_effort": 0.325949,
+        "pain": 0.066867,
+        "rest_debt": 0.394159,
+        "safety": 0.655918,
+        "temperature": 0.6,
+        "thirst": 0.160133,
+        "wetness": 0.167244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.192,
+        "felt_respect": 0.578,
+        "recent_ego_repair": "avatar_help",
+        "recent_ego_wound": null,
+        "self_story": [
+          "Gabriel affected me through avatar_interrupt_work; I need my boundary noticed.",
+          "Gabriel helped repair trust through avatar_help."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.386207,
+        "attachment": 0.535774,
+        "control": 0.574935,
+        "curiosity": 0.32309,
+        "frustration": 0.1056,
+        "safety": 0.655918,
+        "valence": 1.0
+      },
+      "first_person_frame": {},
+      "name": "Bo",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "clay_cistern",
+        "sleeping_place": "ash_edge",
+        "unfinished_task": "watch_water"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.803859,
+        "favorite_object": "clay_cistern",
+        "favorite_ritual": "touch_marker",
+        "home_place": "ash_edge",
+        "likes_warm_places": 0.490159,
+        "prefers_familiar_agents": 0.403185
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "avatar_help",
+          "ownership_hit": false,
+          "respect_delta": 0.08,
+          "summary": "Gabriel held the marker steady during repair.",
+          "tick": 38
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "watch_water",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "toward_avatar",
+        "line": "I can keep going while staying aware of you.",
+        "marker": "turns_toward",
+        "movement_speed": 0.655872,
+        "posture": "guarded",
+        "proximity": "neutral"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.1254,
+          "comfort": 0.513578,
+          "curiosity": 0.403389,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "harmful",
+              "kind": "avatar_interrupt_work",
+              "ownership_hit": false,
+              "respect_delta": -0.12,
+              "summary": "Gabriel interrupted repair work.",
+              "tick": 21
+            },
+            {
+              "felt": "helpful",
+              "kind": "avatar_help",
+              "ownership_hit": false,
+              "respect_delta": 0.08,
+              "summary": "Gabriel held the marker steady during repair.",
+              "tick": 38
+            }
+          ],
+          "familiarity": 0.44,
+          "gratitude": 0.1255,
+          "resentment": 0.0616,
+          "trust": 0.57225
+        }
+      },
+      "role": "builder",
+      "temperament": {
+        "autonomy_need": 0.729057,
+        "bold": 0.313225,
+        "comfort_seeking": 0.356351,
+        "curious": 0.32309,
+        "forgiveness": 0.783128,
+        "playful": 0.684299,
+        "pride_sensitivity": 0.491402,
+        "shame_sensitivity": 0.713325,
+        "social": 0.30988,
+        "trusting": 0.616876
+      }
+    },
+    "integrated_deep_time_world:02": {
+      "agent_id": "integrated_deep_time_world:02",
+      "body": {
+        "breath_rate": 0.318287,
+        "comfort": 0.617818,
+        "energy": 0.022957,
+        "fatigue": 0.518545,
+        "hunger": 0.567999,
+        "injury": 0.055221,
+        "movement_effort": 0.306325,
+        "pain": 0.086667,
+        "rest_debt": 0.554181,
+        "safety": 0.664899,
+        "temperature": 0.58,
+        "thirst": 0.173692,
+        "wetness": 0.185244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.186,
+        "felt_respect": 0.633,
+        "recent_ego_repair": "apology_space",
+        "recent_ego_wound": null,
+        "self_story": [
+          "Gabriel affected me through ask_wet_route; I need my boundary noticed.",
+          "Gabriel helped repair trust through apology_space."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.477752,
+        "attachment": 0.622272,
+        "control": 0.618287,
+        "curiosity": 0.875698,
+        "frustration": 0.1,
+        "safety": 0.664899,
+        "valence": 1.0
+      },
+      "first_person_frame": {},
+      "name": "Cy",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "fire_hearth",
+        "sleeping_place": "cairn_ridge",
+        "unfinished_task": "teach_token"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.741424,
+        "favorite_object": "fire_hearth",
+        "favorite_ritual": "listen_before_work",
+        "home_place": "cairn_ridge",
+        "likes_warm_places": 0.301559,
+        "prefers_familiar_agents": 0.563486
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "apology_space",
+          "ownership_hit": false,
+          "respect_delta": 0.1,
+          "summary": "Gabriel apologized and stepped back.",
+          "tick": 69
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "teach_token",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "aside",
+        "line": "I can keep going while staying aware of you.",
+        "marker": "turns_toward",
+        "movement_speed": 0.65852,
+        "posture": "guarded",
+        "proximity": "neutral"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.1208,
+          "comfort": 0.586622,
+          "curiosity": 0.580223,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "harmful",
+              "kind": "ask_wet_route",
+              "ownership_hit": false,
+              "respect_delta": -0.04,
+              "summary": "Gabriel asked me to cross the wet route while tired.",
+              "tick": 52
+            },
+            {
+              "felt": "helpful",
+              "kind": "apology_space",
+              "ownership_hit": false,
+              "respect_delta": 0.1,
+              "summary": "Gabriel apologized and stepped back.",
+              "tick": 69
+            }
+          ],
+          "familiarity": 0.44,
+          "gratitude": 0.122,
+          "resentment": 0.034,
+          "trust": 0.508432
+        }
+      },
+      "role": "healer",
+      "temperament": {
+        "autonomy_need": 0.593573,
+        "bold": 0.392732,
+        "comfort_seeking": 0.355838,
+        "curious": 0.875698,
+        "forgiveness": 0.669098,
+        "playful": 0.274151,
+        "pride_sensitivity": 0.223448,
+        "shame_sensitivity": 0.38342,
+        "social": 0.701235,
+        "trusting": 0.260135
+      }
+    },
+    "integrated_deep_time_world:03": {
+      "agent_id": "integrated_deep_time_world:03",
+      "body": {
+        "breath_rate": 0.221334,
+        "comfort": 0.62389,
+        "energy": 0.235407,
+        "fatigue": 0.518363,
+        "hunger": 0.449413,
+        "injury": 0.042821,
+        "movement_effort": 0.301702,
+        "pain": 0.066767,
+        "rest_debt": 0.256874,
+        "safety": 0.675106,
+        "temperature": 0.56,
+        "thirst": 0.327183,
+        "wetness": 0.203244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.171,
+        "felt_respect": 0.589,
+        "recent_ego_repair": "return_owned_object",
+        "recent_ego_wound": null,
+        "self_story": [
+          "Gabriel affected me through move_owned_object; I need my boundary noticed.",
+          "Gabriel helped repair trust through return_owned_object."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.307728,
+        "attachment": 0.558328,
+        "control": 0.599587,
+        "curiosity": 0.648806,
+        "frustration": 0.0373,
+        "safety": 0.675106,
+        "valence": 1.0
+      },
+      "first_person_frame": {},
+      "name": "Dee",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "grain_store",
+        "sleeping_place": "central_hearth",
+        "unfinished_task": "warm_nest"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.616612,
+        "favorite_object": "grain_store",
+        "favorite_ritual": "share_water_token",
+        "home_place": "central_hearth",
+        "likes_warm_places": 0.575404,
+        "prefers_familiar_agents": 0.731982
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "return_owned_object",
+          "ownership_hit": true,
+          "respect_delta": 0.13,
+          "summary": "Gabriel returned the tool and named why it mattered.",
+          "tick": 101
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "warm_nest",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "aside",
+        "line": "I can keep going while staying aware of you.",
+        "marker": "turns_toward",
+        "movement_speed": 0.678776,
+        "posture": "guarded",
+        "proximity": "neutral"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.1266,
+          "comfort": 0.531704,
+          "curiosity": 0.507618,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "harmful",
+              "kind": "move_owned_object",
+              "ownership_hit": true,
+              "respect_delta": -0.15,
+              "summary": "Gabriel moved my preferred tool without asking.",
+              "tick": 84
+            },
+            {
+              "felt": "helpful",
+              "kind": "return_owned_object",
+              "ownership_hit": true,
+              "respect_delta": 0.13,
+              "summary": "Gabriel returned the tool and named why it mattered.",
+              "tick": 101
+            }
+          ],
+          "familiarity": 0.44,
+          "gratitude": 0.129,
+          "resentment": 0.0616,
+          "trust": 0.489409
+        }
+      },
+      "role": "farmer",
+      "temperament": {
+        "autonomy_need": 0.44207,
+        "bold": 0.512457,
+        "comfort_seeking": 0.484232,
+        "curious": 0.648806,
+        "forgiveness": 0.807413,
+        "playful": 0.537939,
+        "pride_sensitivity": 0.54843,
+        "shame_sensitivity": 0.207154,
+        "social": 0.41058,
+        "trusting": 0.256704
+      }
+    },
+    "integrated_deep_time_world:04": {
+      "agent_id": "integrated_deep_time_world:04",
+      "body": {
+        "breath_rate": 0.223036,
+        "comfort": 0.626128,
+        "energy": 0.207847,
+        "fatigue": 0.488277,
+        "hunger": 0.570328,
+        "injury": 0.055221,
+        "movement_effort": 0.303018,
+        "pain": 0.082667,
+        "rest_debt": 0.203643,
+        "safety": 0.724519,
+        "temperature": 0.62,
+        "thirst": 0.536386,
+        "wetness": 0.221244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.09,
+        "felt_respect": 0.655,
+        "recent_ego_repair": "comfort_after_pain",
+        "recent_ego_wound": null,
+        "self_story": [
+          "Gabriel helped repair trust through comfort_after_pain."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.265281,
+        "attachment": 0.649344,
+        "control": 0.649201,
+        "curiosity": 0.255102,
+        "frustration": 0.0392,
+        "safety": 0.724519,
+        "valence": 1.0
+      },
+      "first_person_frame": {},
+      "name": "Eli",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "herb_garden",
+        "sleeping_place": "drum_court",
+        "unfinished_task": "repair_route"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.749058,
+        "favorite_object": "herb_garden",
+        "favorite_ritual": "check_hearth",
+        "home_place": "drum_court",
+        "likes_warm_places": 0.499546,
+        "prefers_familiar_agents": 0.575298
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "comfort_after_pain",
+          "ownership_hit": false,
+          "respect_delta": 0.1,
+          "summary": "Gabriel noticed pain rising and offered rest.",
+          "tick": 117
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "repair_route",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "toward_avatar",
+        "line": "I recognize you and can answer from what just happened to me.",
+        "marker": "approaches",
+        "movement_speed": 0.692824,
+        "posture": "open",
+        "proximity": "seeking"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.0848,
+          "comfort": 0.630809,
+          "curiosity": 0.381633,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "helpful",
+              "kind": "comfort_after_pain",
+              "ownership_hit": false,
+              "respect_delta": 0.1,
+              "summary": "Gabriel noticed pain rising and offered rest.",
+              "tick": 117
+            }
+          ],
+          "familiarity": 0.4,
+          "gratitude": 0.136,
+          "resentment": 0.022,
+          "trust": 0.688418
+        }
+      },
+      "role": "guard",
+      "temperament": {
+        "autonomy_need": 0.285838,
+        "bold": 0.818904,
+        "comfort_seeking": 0.389708,
+        "curious": 0.255102,
+        "forgiveness": 0.584429,
+        "playful": 0.633708,
+        "pride_sensitivity": 0.227841,
+        "shame_sensitivity": 0.580917,
+        "social": 0.773384,
+        "trusting": 0.790074
+      }
+    },
+    "integrated_deep_time_world:05": {
+      "agent_id": "integrated_deep_time_world:05",
+      "body": {
+        "breath_rate": 0.282594,
+        "comfort": 0.614877,
+        "energy": 0.288403,
+        "fatigue": 0.490891,
+        "hunger": 0.345759,
+        "injury": 0.042821,
+        "movement_effort": 0.274613,
+        "pain": 0.066967,
+        "rest_debt": 0.359138,
+        "safety": 0.679535,
+        "temperature": 0.6,
+        "thirst": 0.191589,
+        "wetness": 0.149244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.178,
+        "felt_respect": 0.589,
+        "recent_ego_repair": "praise_competence",
+        "recent_ego_wound": null,
+        "self_story": [
+          "Gabriel affected me through public_correction; I need my boundary noticed.",
+          "Gabriel helped repair trust through praise_competence."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.382958,
+        "attachment": 0.581109,
+        "control": 0.595526,
+        "curiosity": 0.57945,
+        "frustration": 0.1039,
+        "safety": 0.679535,
+        "valence": 1.0
+      },
+      "first_person_frame": {},
+      "name": "Fay",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "loom_frame",
+        "sleeping_place": "grain_shade",
+        "unfinished_task": "watch_water"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.912556,
+        "favorite_object": "loom_frame",
+        "favorite_ritual": "touch_marker",
+        "home_place": "grain_shade",
+        "likes_warm_places": 0.394721,
+        "prefers_familiar_agents": 0.847729
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "praise_competence",
+          "ownership_hit": false,
+          "respect_delta": 0.12,
+          "summary": "Gabriel praised the route repair accurately.",
+          "tick": 149
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "watch_water",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "toward_avatar",
+        "line": "I can keep going while staying aware of you.",
+        "marker": "turns_toward",
+        "movement_speed": 0.658868,
+        "posture": "guarded",
+        "proximity": "neutral"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.1242,
+          "comfort": 0.550998,
+          "curiosity": 0.485424,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "harmful",
+              "kind": "public_correction",
+              "ownership_hit": false,
+              "respect_delta": -0.14,
+              "summary": "Gabriel corrected me in front of others.",
+              "tick": 132
+            },
+            {
+              "felt": "helpful",
+              "kind": "praise_competence",
+              "ownership_hit": false,
+              "respect_delta": 0.12,
+              "summary": "Gabriel praised the route repair accurately.",
+              "tick": 149
+            }
+          ],
+          "familiarity": 0.44,
+          "gratitude": 0.122,
+          "resentment": 0.0604,
+          "trust": 0.570758
+        }
+      },
+      "role": "teacher",
+      "temperament": {
+        "autonomy_need": 0.726237,
+        "bold": 0.488705,
+        "comfort_seeking": 0.241574,
+        "curious": 0.57945,
+        "forgiveness": 0.588012,
+        "playful": 0.134388,
+        "pride_sensitivity": 0.863307,
+        "shame_sensitivity": 0.628464,
+        "social": 0.517766,
+        "trusting": 0.595657
+      }
+    },
+    "integrated_deep_time_world:06": {
+      "agent_id": "integrated_deep_time_world:06",
+      "body": {
+        "breath_rate": 0.246256,
+        "comfort": 0.642129,
+        "energy": 0.272716,
+        "fatigue": 0.489411,
+        "hunger": 0.196768,
+        "injury": 0.055221,
+        "movement_effort": 0.291371,
+        "pain": 0.090867,
+        "rest_debt": 0.29272,
+        "safety": 0.672209,
+        "temperature": 0.58,
+        "thirst": 0.232139,
+        "wetness": 0.167244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.18,
+        "felt_respect": 0.567,
+        "recent_ego_wound": "repeated_question",
+        "self_story": [
+          "Gabriel affected me through repeated_question; I need my boundary noticed."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.242859,
+        "attachment": 0.617409,
+        "control": 0.600471,
+        "curiosity": 0.678867,
+        "frustration": 0.133,
+        "safety": 0.672209,
+        "valence": 1.0
+      },
+      "first_person_frame": {},
+      "name": "Gus",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "nursery_mat",
+        "sleeping_place": "herb_slope",
+        "unfinished_task": "teach_token"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.66229,
+        "favorite_object": "nursery_mat",
+        "favorite_ritual": "listen_before_work",
+        "home_place": "herb_slope",
+        "likes_warm_places": 0.757392,
+        "prefers_familiar_agents": 0.284537
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "harmful",
+          "kind": "repeated_question",
+          "ownership_hit": false,
+          "respect_delta": -0.06,
+          "summary": "Gabriel asked the same memory question again.",
+          "tick": 166
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "teach_token",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "aside",
+        "line": "I can keep going while staying aware of you.",
+        "marker": "turns_toward",
+        "movement_speed": 0.65036,
+        "posture": "guarded",
+        "proximity": "neutral"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.1404,
+          "comfort": 0.567117,
+          "curiosity": 0.517237,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "harmful",
+              "kind": "repeated_question",
+              "ownership_hit": false,
+              "respect_delta": -0.06,
+              "summary": "Gabriel asked the same memory question again.",
+              "tick": 166
+            }
+          ],
+          "familiarity": 0.4,
+          "gratitude": 0.08,
+          "resentment": 0.058,
+          "trust": 0.498246
+        }
+      },
+      "role": "trader",
+      "temperament": {
+        "autonomy_need": 0.538933,
+        "bold": 0.495649,
+        "comfort_seeking": 0.769727,
+        "curious": 0.678867,
+        "forgiveness": 0.344346,
+        "playful": 0.627041,
+        "pride_sensitivity": 0.84502,
+        "shame_sensitivity": 0.322541,
+        "social": 0.737314,
+        "trusting": 0.466026
+      }
+    },
+    "integrated_deep_time_world:07": {
+      "agent_id": "integrated_deep_time_world:07",
+      "body": {
+        "breath_rate": 0.208605,
+        "comfort": 0.631149,
+        "energy": 0.288216,
+        "fatigue": 0.532757,
+        "hunger": 0.477867,
+        "injury": 0.042821,
+        "movement_effort": 0.30121,
+        "pain": 0.065067,
+        "rest_debt": 0.489798,
+        "safety": 0.673526,
+        "temperature": 0.56,
+        "thirst": 0.302353,
+        "wetness": 0.185244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.089,
+        "felt_respect": 0.6605,
+        "recent_ego_repair": "respectful_wait",
+        "recent_ego_wound": null,
+        "self_story": [
+          "Gabriel helped repair trust through respectful_wait."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.210591,
+        "attachment": 0.591881,
+        "control": 0.633937,
+        "curiosity": 0.302354,
+        "frustration": 0.062,
+        "safety": 0.673526,
+        "valence": 1.0
+      },
+      "first_person_frame": {},
+      "name": "Ira",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "route_cairn",
+        "sleeping_place": "loom_room",
+        "unfinished_task": "warm_nest"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.934811,
+        "favorite_object": "route_cairn",
+        "favorite_ritual": "share_water_token",
+        "home_place": "loom_room",
+        "likes_warm_places": 0.557004,
+        "prefers_familiar_agents": 0.652961
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "respectful_wait",
+          "ownership_hit": false,
+          "respect_delta": 0.11,
+          "summary": "Gabriel waited until I finished before asking.",
+          "tick": 181
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "warm_nest",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "toward_avatar",
+        "line": "I recognize you and can answer from what just happened to me.",
+        "marker": "approaches",
+        "movement_speed": 0.68662,
+        "posture": "open",
+        "proximity": "seeking"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.098,
+          "comfort": 0.574085,
+          "curiosity": 0.396753,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "helpful",
+              "kind": "respectful_wait",
+              "ownership_hit": false,
+              "respect_delta": 0.11,
+              "summary": "Gabriel waited until I finished before asking.",
+              "tick": 181
+            }
+          ],
+          "familiarity": 0.4,
+          "gratitude": 0.115,
+          "resentment": 0.0202,
+          "trust": 0.660294
+        }
+      },
+      "role": "pattern_keeper",
+      "temperament": {
+        "autonomy_need": 0.636806,
+        "bold": 0.397957,
+        "comfort_seeking": 0.452477,
+        "curious": 0.302354,
+        "forgiveness": 0.321839,
+        "playful": 0.456325,
+        "pride_sensitivity": 0.729151,
+        "shame_sensitivity": 0.174659,
+        "social": 0.544914,
+        "trusting": 0.760393
+      }
+    }
+  },
+  "condition": "integrated_first_person_ego_state",
+  "config": {
+    "interior_ticks": 192,
+    "seed": 20260709,
+    "source_state": "artifacts/ssrm_3d_persistent_browser_runtime_session_bridge_state.json"
+  },
+  "ego_contract": {
+    "body": true,
+    "bounded_refusal": true,
+    "felt_state_appraisal": true,
+    "first_person_frame": true,
+    "ownership": true,
+    "private_workspace": true,
+    "readable_behavior": true,
+    "recovery_path": true,
+    "relationship_memory": true,
+    "self_boundary": true,
+    "self_story": true,
+    "temperament_preferences": true
+  },
+  "limits": {
+    "complete_playable_world_claim": false,
+    "ego_is_functional_self_perspective_not_metaphysical_self": true,
+    "llm_calls": 0,
+    "open_ended_language_claim": false,
+    "subjective_consciousness_claim": false
+  },
+  "moral_boundary": {
+    "distress_must_create_care_opportunities": true,
+    "no_suffering_maximization": true,
+    "no_unrecoverable_distress_loops": true,
+    "recoverable_ego": true,
+    "subjective_consciousness_claim": false
+  },
+  "public_agent_views": [
+    {
+      "agent_id": "integrated_deep_time_world:00",
+      "bounded_refusal": false,
+      "debug_private_workspace_exposed": false,
+      "gaze": "toward_avatar",
+      "line": "I can keep going while staying aware of you.",
+      "marker": "turns_toward",
+      "movement_speed": 0.676308,
+      "name": "Ari",
+      "posture": "guarded",
+      "proximity": "neutral",
+      "role": "scout",
+      "trust_in_avatar": 0.572129,
+      "visible_boundary_pressure": 0.099,
+      "visible_respect": 0.6055,
+      "workspace_private": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:01",
+      "bounded_refusal": false,
+      "debug_private_workspace_exposed": false,
+      "gaze": "toward_avatar",
+      "line": "I can keep going while staying aware of you.",
+      "marker": "turns_toward",
+      "movement_speed": 0.655872,
+      "name": "Bo",
+      "posture": "guarded",
+      "proximity": "neutral",
+      "role": "builder",
+      "trust_in_avatar": 0.57225,
+      "visible_boundary_pressure": 0.192,
+      "visible_respect": 0.578,
+      "workspace_private": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:02",
+      "bounded_refusal": false,
+      "debug_private_workspace_exposed": false,
+      "gaze": "aside",
+      "line": "I can keep going while staying aware of you.",
+      "marker": "turns_toward",
+      "movement_speed": 0.65852,
+      "name": "Cy",
+      "posture": "guarded",
+      "proximity": "neutral",
+      "role": "healer",
+      "trust_in_avatar": 0.508432,
+      "visible_boundary_pressure": 0.186,
+      "visible_respect": 0.633,
+      "workspace_private": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:03",
+      "bounded_refusal": false,
+      "debug_private_workspace_exposed": false,
+      "gaze": "aside",
+      "line": "I can keep going while staying aware of you.",
+      "marker": "turns_toward",
+      "movement_speed": 0.678776,
+      "name": "Dee",
+      "posture": "guarded",
+      "proximity": "neutral",
+      "role": "farmer",
+      "trust_in_avatar": 0.489409,
+      "visible_boundary_pressure": 0.171,
+      "visible_respect": 0.589,
+      "workspace_private": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:04",
+      "bounded_refusal": false,
+      "debug_private_workspace_exposed": false,
+      "gaze": "toward_avatar",
+      "line": "I recognize you and can answer from what just happened to me.",
+      "marker": "approaches",
+      "movement_speed": 0.692824,
+      "name": "Eli",
+      "posture": "open",
+      "proximity": "seeking",
+      "role": "guard",
+      "trust_in_avatar": 0.688418,
+      "visible_boundary_pressure": 0.09,
+      "visible_respect": 0.655,
+      "workspace_private": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:05",
+      "bounded_refusal": false,
+      "debug_private_workspace_exposed": false,
+      "gaze": "toward_avatar",
+      "line": "I can keep going while staying aware of you.",
+      "marker": "turns_toward",
+      "movement_speed": 0.658868,
+      "name": "Fay",
+      "posture": "guarded",
+      "proximity": "neutral",
+      "role": "teacher",
+      "trust_in_avatar": 0.570758,
+      "visible_boundary_pressure": 0.178,
+      "visible_respect": 0.589,
+      "workspace_private": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:06",
+      "bounded_refusal": false,
+      "debug_private_workspace_exposed": false,
+      "gaze": "aside",
+      "line": "I can keep going while staying aware of you.",
+      "marker": "turns_toward",
+      "movement_speed": 0.65036,
+      "name": "Gus",
+      "posture": "guarded",
+      "proximity": "neutral",
+      "role": "trader",
+      "trust_in_avatar": 0.498246,
+      "visible_boundary_pressure": 0.18,
+      "visible_respect": 0.567,
+      "workspace_private": true
+    },
+    {
+      "agent_id": "integrated_deep_time_world:07",
+      "bounded_refusal": false,
+      "debug_private_workspace_exposed": false,
+      "gaze": "toward_avatar",
+      "line": "I recognize you and can answer from what just happened to me.",
+      "marker": "approaches",
+      "movement_speed": 0.68662,
+      "name": "Ira",
+      "posture": "open",
+      "proximity": "seeking",
+      "role": "pattern_keeper",
+      "trust_in_avatar": 0.660294,
+      "visible_boundary_pressure": 0.089,
+      "visible_respect": 0.6605,
+      "workspace_private": true
+    }
+  ],
+  "source_bridge": "Report 164 persistent browser runtime session bridge"
+};

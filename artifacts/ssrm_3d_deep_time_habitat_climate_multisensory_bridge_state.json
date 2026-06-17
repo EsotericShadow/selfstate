@@ -1,0 +1,538 @@
+{
+  "condition": "integrated_deep_time_habitat_climate_multisensory",
+  "config": {
+    "eras": 12,
+    "generations_per_era": 200,
+    "seed": 20260722,
+    "source_state": "artifacts/ssrm_3d_deep_time_economy_resource_metabolism_bridge_state.json"
+  },
+  "habitat_climate_state": {
+    "condition": "integrated_deep_time_habitat_climate_multisensory",
+    "places": {
+      "clay_basin": {
+        "biome": "clay_heat_basin",
+        "body_exposure": {
+          "cold": 0.0,
+          "effort": 0.527617,
+          "heat": 0.0,
+          "pain_risk": 0.231104,
+          "wet": 0.389169
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "subjective_consciousness": false
+        },
+        "condition": "integrated_deep_time_habitat_climate_multisensory",
+        "ecological_pressure": 0.0,
+        "era": 11,
+        "event_id": 69,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.22023,
+        "group": "work_band",
+        "local_resource_ratios": {
+          "clay": 1.18,
+          "heat": 1.18,
+          "water": 1.18
+        },
+        "micro_temperature": 0.5344,
+        "micro_wetness": 0.389169,
+        "place": "clay_basin",
+        "place_hash": "4e6fe1c6708cce57",
+        "private_workspace_hidden": true,
+        "route_cost": 0.527617,
+        "safety_refuge": true,
+        "season": "cold_return",
+        "seasonal_yield": 1.0,
+        "sensory_channels": {
+          "light": "red_gold@0.34",
+          "smell": "warm_clay_rain@wet0.39",
+          "sound": "mud_bubble_pop@wind0.42",
+          "temperature": 0.5344,
+          "terrain_resistance": 0.527617,
+          "wetness": 0.389169
+        },
+        "temperature": 0.5072,
+        "terrain": 0.46,
+        "weather": {
+          "light": 0.34,
+          "rain": 0.38,
+          "wind": 0.42
+        },
+        "wetness": 0.454,
+        "year_end": 2400,
+        "year_start": 2200
+      },
+      "glass_mire": {
+        "biome": "glass_reed_mire",
+        "body_exposure": {
+          "cold": 0.07576,
+          "effort": 0.693441,
+          "heat": 0.0,
+          "pain_risk": 0.337858,
+          "wet": 0.72473
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "subjective_consciousness": false
+        },
+        "condition": "integrated_deep_time_habitat_climate_multisensory",
+        "ecological_pressure": 0.0,
+        "era": 11,
+        "event_id": 71,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.229263,
+        "group": "edge_watch",
+        "local_resource_ratios": {
+          "fiber": 1.18,
+          "glass_reed": 0.909029,
+          "water": 1.18
+        },
+        "micro_temperature": 0.34424,
+        "micro_wetness": 0.72473,
+        "place": "glass_mire",
+        "place_hash": "9a96cf80cc1e630b",
+        "private_workspace_hidden": true,
+        "route_cost": 0.693441,
+        "safety_refuge": false,
+        "season": "cold_return",
+        "seasonal_yield": 1.0,
+        "sensory_channels": {
+          "light": "silver_blue@0.34",
+          "smell": "sharp_water_silt@wet0.72",
+          "sound": "thin_glass_reed@wind0.42",
+          "temperature": 0.34424,
+          "terrain_resistance": 0.693441,
+          "wetness": 0.72473
+        },
+        "temperature": 0.3372,
+        "terrain": 0.66,
+        "weather": {
+          "light": 0.34,
+          "rain": 0.38,
+          "wind": 0.42
+        },
+        "wetness": 0.784,
+        "year_end": 2400,
+        "year_start": 2200
+      },
+      "hearth_vale": {
+        "biome": "warm_shelter_vale",
+        "body_exposure": {
+          "cold": 0.0,
+          "effort": 0.394743,
+          "heat": 0.0,
+          "pain_risk": 0.165549,
+          "wet": 0.245194
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "subjective_consciousness": false
+        },
+        "condition": "integrated_deep_time_habitat_climate_multisensory",
+        "ecological_pressure": 0.0,
+        "era": 11,
+        "event_id": 66,
+        "flower_node": "return_petal",
+        "frequency_hz": 0.21549,
+        "group": "hearth_circle",
+        "local_resource_ratios": {
+          "fiber": 1.18,
+          "food": 1.18,
+          "heat": 1.18,
+          "wood": 1.18
+        },
+        "micro_temperature": 0.5128,
+        "micro_wetness": 0.245194,
+        "place": "hearth_vale",
+        "place_hash": "d8a5670b5958c2f7",
+        "private_workspace_hidden": true,
+        "route_cost": 0.394743,
+        "safety_refuge": true,
+        "season": "cold_return",
+        "seasonal_yield": 1.0,
+        "sensory_channels": {
+          "light": "amber@0.34",
+          "smell": "smoke_grain_moss@wet0.25",
+          "sound": "low_hearth_hum@wind0.42",
+          "temperature": 0.5128,
+          "terrain_resistance": 0.394743,
+          "wetness": 0.245194
+        },
+        "temperature": 0.4472,
+        "terrain": 0.24,
+        "weather": {
+          "light": 0.34,
+          "rain": 0.38,
+          "wind": 0.42
+        },
+        "wetness": 0.374,
+        "year_end": 2400,
+        "year_start": 2200
+      },
+      "moss_hollow": {
+        "biome": "soft_moss_hollow",
+        "body_exposure": {
+          "cold": 0.0,
+          "effort": 0.488498,
+          "heat": 0.0,
+          "pain_risk": 0.236973,
+          "wet": 0.504084
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "subjective_consciousness": false
+        },
+        "condition": "integrated_deep_time_habitat_climate_multisensory",
+        "ecological_pressure": 0.0,
+        "era": 11,
+        "event_id": 70,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.221981,
+        "group": "hearth_circle",
+        "local_resource_ratios": {
+          "food": 1.18,
+          "soft_moss": 1.18,
+          "water": 1.18
+        },
+        "micro_temperature": 0.43864,
+        "micro_wetness": 0.504084,
+        "place": "moss_hollow",
+        "place_hash": "9f3554850ada839e",
+        "private_workspace_hidden": true,
+        "route_cost": 0.488498,
+        "safety_refuge": true,
+        "season": "cold_return",
+        "seasonal_yield": 1.0,
+        "sensory_channels": {
+          "light": "deep_green@0.34",
+          "smell": "moss_food_rain@wet0.50",
+          "sound": "muffled_leaf_drip@wind0.42",
+          "temperature": 0.43864,
+          "terrain_resistance": 0.488498,
+          "wetness": 0.504084
+        },
+        "temperature": 0.3872,
+        "terrain": 0.32,
+        "weather": {
+          "light": 0.34,
+          "rain": 0.38,
+          "wind": 0.42
+        },
+        "wetness": 0.714,
+        "year_end": 2400,
+        "year_start": 2200
+      },
+      "reed_wetland": {
+        "biome": "water_reed_marsh",
+        "body_exposure": {
+          "cold": 0.04976,
+          "effort": 0.631503,
+          "heat": 0.0,
+          "pain_risk": 0.319828,
+          "wet": 0.735922
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "subjective_consciousness": false
+        },
+        "condition": "integrated_deep_time_habitat_climate_multisensory",
+        "ecological_pressure": 0.0,
+        "era": 11,
+        "event_id": 67,
+        "flower_node": "dawn_breath",
+        "frequency_hz": 0.228619,
+        "group": "work_band",
+        "local_resource_ratios": {
+          "clay": 1.18,
+          "fiber": 1.18,
+          "soft_moss": 1.18,
+          "water": 1.18
+        },
+        "micro_temperature": 0.37024,
+        "micro_wetness": 0.735922,
+        "place": "reed_wetland",
+        "place_hash": "15cb3a61a65ba73f",
+        "private_workspace_hidden": true,
+        "route_cost": 0.631503,
+        "safety_refuge": true,
+        "season": "cold_return",
+        "seasonal_yield": 1.0,
+        "sensory_channels": {
+          "light": "green_reflect@0.34",
+          "smell": "wet_reed_clay@wet0.74",
+          "sound": "reed_water_click@wind0.42",
+          "temperature": 0.37024,
+          "terrain_resistance": 0.631503,
+          "wetness": 0.735922
+        },
+        "temperature": 0.3572,
+        "terrain": 0.52,
+        "weather": {
+          "light": 0.34,
+          "rain": 0.38,
+          "wind": 0.42
+        },
+        "wetness": 0.834,
+        "year_end": 2400,
+        "year_start": 2200
+      },
+      "stone_ridge": {
+        "biome": "wind_stone_ridge",
+        "body_exposure": {
+          "cold": 0.1052,
+          "effort": 0.624297,
+          "heat": 0.0,
+          "pain_risk": 0.245373,
+          "wet": 0.284986
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "subjective_consciousness": false
+        },
+        "condition": "integrated_deep_time_habitat_climate_multisensory",
+        "ecological_pressure": 0.0,
+        "era": 11,
+        "event_id": 68,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2195,
+        "group": "edge_watch",
+        "local_resource_ratios": {
+          "glass_reed": 0.909029,
+          "metal_seed": 0.888204,
+          "stone": 0.987411
+        },
+        "micro_temperature": 0.3148,
+        "micro_wetness": 0.284986,
+        "place": "stone_ridge",
+        "place_hash": "aa9952047ee8d446",
+        "private_workspace_hidden": true,
+        "route_cost": 0.624297,
+        "safety_refuge": false,
+        "season": "cold_return",
+        "seasonal_yield": 0.928215,
+        "sensory_channels": {
+          "light": "white_sky@0.34",
+          "smell": "dry_stone_metal@wet0.28",
+          "sound": "ridge_wind_tone@wind0.42",
+          "temperature": 0.3148,
+          "terrain_resistance": 0.624297,
+          "wetness": 0.284986
+        },
+        "temperature": 0.2972,
+        "terrain": 0.72,
+        "weather": {
+          "light": 0.34,
+          "rain": 0.38,
+          "wind": 0.42
+        },
+        "wetness": 0.314,
+        "year_end": 2400,
+        "year_start": 2200
+      }
+    },
+    "season_history": [
+      {
+        "era": 0,
+        "places": [
+          "hearth_vale",
+          "reed_wetland",
+          "stone_ridge",
+          "clay_basin",
+          "moss_hollow",
+          "glass_mire"
+        ],
+        "season": "wet_dawn",
+        "weather_hash": "4329ff5215d134c6",
+        "year_end": 200,
+        "year_start": 0
+      },
+      {
+        "era": 1,
+        "places": [
+          "hearth_vale",
+          "reed_wetland",
+          "stone_ridge",
+          "clay_basin",
+          "moss_hollow",
+          "glass_mire"
+        ],
+        "season": "green_heat",
+        "weather_hash": "b2812b934a287256",
+        "year_end": 400,
+        "year_start": 200
+      },
+      {
+        "era": 2,
+        "places": [
+          "hearth_vale",
+          "reed_wetland",
+          "stone_ridge",
+          "clay_basin",
+          "moss_hollow",
+          "glass_mire"
+        ],
+        "season": "dry_wind",
+        "weather_hash": "e01265f7b2de1c39",
+        "year_end": 600,
+        "year_start": 400
+      },
+      {
+        "era": 3,
+        "places": [
+          "hearth_vale",
+          "reed_wetland",
+          "stone_ridge",
+          "clay_basin",
+          "moss_hollow",
+          "glass_mire"
+        ],
+        "season": "cold_return",
+        "weather_hash": "30cd957f2ddf0164",
+        "year_end": 800,
+        "year_start": 600
+      },
+      {
+        "era": 4,
+        "places": [
+          "hearth_vale",
+          "reed_wetland",
+          "stone_ridge",
+          "clay_basin",
+          "moss_hollow",
+          "glass_mire"
+        ],
+        "season": "wet_dawn",
+        "weather_hash": "2753bc81f15acced",
+        "year_end": 1000,
+        "year_start": 800
+      },
+      {
+        "era": 5,
+        "places": [
+          "hearth_vale",
+          "reed_wetland",
+          "stone_ridge",
+          "clay_basin",
+          "moss_hollow",
+          "glass_mire"
+        ],
+        "season": "green_heat",
+        "weather_hash": "08a82626ac75b815",
+        "year_end": 1200,
+        "year_start": 1000
+      },
+      {
+        "era": 6,
+        "places": [
+          "hearth_vale",
+          "reed_wetland",
+          "stone_ridge",
+          "clay_basin",
+          "moss_hollow",
+          "glass_mire"
+        ],
+        "season": "dry_wind",
+        "weather_hash": "1a4892f147f5fc53",
+        "year_end": 1400,
+        "year_start": 1200
+      },
+      {
+        "era": 7,
+        "places": [
+          "hearth_vale",
+          "reed_wetland",
+          "stone_ridge",
+          "clay_basin",
+          "moss_hollow",
+          "glass_mire"
+        ],
+        "season": "cold_return",
+        "weather_hash": "08083cf7afad44dc",
+        "year_end": 1600,
+        "year_start": 1400
+      },
+      {
+        "era": 8,
+        "places": [
+          "hearth_vale",
+          "reed_wetland",
+          "stone_ridge",
+          "clay_basin",
+          "moss_hollow",
+          "glass_mire"
+        ],
+        "season": "wet_dawn",
+        "weather_hash": "f11196806f82ad87",
+        "year_end": 1800,
+        "year_start": 1600
+      },
+      {
+        "era": 9,
+        "places": [
+          "hearth_vale",
+          "reed_wetland",
+          "stone_ridge",
+          "clay_basin",
+          "moss_hollow",
+          "glass_mire"
+        ],
+        "season": "green_heat",
+        "weather_hash": "bc9125b1bb65defa",
+        "year_end": 2000,
+        "year_start": 1800
+      },
+      {
+        "era": 10,
+        "places": [
+          "hearth_vale",
+          "reed_wetland",
+          "stone_ridge",
+          "clay_basin",
+          "moss_hollow",
+          "glass_mire"
+        ],
+        "season": "dry_wind",
+        "weather_hash": "5d3ad381adc88218",
+        "year_end": 2200,
+        "year_start": 2000
+      },
+      {
+        "era": 11,
+        "places": [
+          "hearth_vale",
+          "reed_wetland",
+          "stone_ridge",
+          "clay_basin",
+          "moss_hollow",
+          "glass_mire"
+        ],
+        "season": "cold_return",
+        "weather_hash": "77f413acc9aaa085",
+        "year_end": 2400,
+        "year_start": 2200
+      }
+    ],
+    "simulated_years": 2400,
+    "source_economy_boundary": {
+      "economy_seed_not_full_civilization": true,
+      "no_moral_patienthood_claim": true,
+      "no_subjective_consciousness_claim": true,
+      "private_workspace_not_debug_leaked": true,
+      "resource_scarcity_requires_feedback": true
+    }
+  },
+  "moral_boundary": {
+    "body_exposure_requires_safety_refuge": true,
+    "no_moral_patienthood_claim": true,
+    "no_subjective_consciousness_claim": true,
+    "private_workspace_not_debug_leaked": true,
+    "world_metabolism_seed_not_complete_3d_world": true
+  },
+  "trace_events": 72
+}

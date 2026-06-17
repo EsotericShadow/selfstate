@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report 178 - Deep-Time Habitat, Climate, and Multisensory World Metabolism</title>
+  <script src="../artifacts/ssrm_3d_deep_time_habitat_climate_multisensory_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_deep_time_habitat_climate_multisensory_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_deep_time_habitat_climate_multisensory_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #211711;
+      --muted: #705f4e;
+      --panel: rgba(255, 250, 239, 0.87);
+      --line: rgba(68, 49, 33, 0.18);
+      --water: #4b7c92;
+      --moss: #738a4c;
+      --heat: #c57942;
+      --stone: #686d6c;
+      --wet: #5a8fa2;
+      --risk: #a94c45;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 18% 20%, rgba(197, 121, 66, 0.22), transparent 24rem),
+        radial-gradient(circle at 82% 20%, rgba(75, 124, 146, 0.24), transparent 26rem),
+        radial-gradient(circle at 50% 88%, rgba(115, 138, 76, 0.24), transparent 30rem),
+        linear-gradient(145deg, #f4e6d3 0%, #d4bd92 46%, #a9b99f 100%);
+      font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+    }
+
+    main {
+      width: min(1240px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 42px 0 64px;
+    }
+
+    header {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      max-width: 1100px;
+      margin: 0;
+      font-family: Georgia, "Iowan Old Style", serif;
+      font-size: clamp(2.15rem, 7vw, 5.7rem);
+      line-height: 0.92;
+      letter-spacing: -0.06em;
+    }
+
+    .lede {
+      max-width: 960px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      line-height: 1.55;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 18px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(67, 45, 21, 0.14);
+      padding: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: end;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric-row:last-child { border-bottom: 0; }
+
+    .metric-label {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .metric-value {
+      font-size: 1.35rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .place-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .place {
+      display: grid;
+      gap: 8px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 13px;
+      background: rgba(255, 255, 255, 0.44);
+    }
+
+    .place strong {
+      color: var(--water);
+    }
+
+    .place small {
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .bars {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .bar {
+      height: 9px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(33, 23, 17, 0.11);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+    }
+
+    .temp span { background: var(--heat); }
+    .wet span { background: var(--wet); }
+    .route span { background: var(--stone); }
+    .risk span { background: var(--risk); }
+
+    .timeline {
+      display: grid;
+      gap: 9px;
+      max-height: 660px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .event {
+      display: grid;
+      gap: 5px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.46);
+    }
+
+    .event strong { color: var(--water); }
+
+    .event small {
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: rgba(255, 255, 255, 0.44);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 940px) {
+      .grid,
+      .place-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Deep-time habitat, climate, and multisensory world metabolism</h1>
+      <p class="lede">Report 178 turns resource metabolism into inhabited places: climate cycles, weather, wetness, temperature, smells, sounds, light, terrain costs, body exposure, shelter microclimates, refuge availability, frequency weather resonance, and flower-biome patterns over 2400 simulated years.</p>
+    </header>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Readiness</h2>
+        <div id="metrics"></div>
+        <div class="chips">
+          <span class="chip">2400 simulated years</span>
+          <span class="chip">Multisensory places</span>
+          <span class="chip">Body exposure</span>
+          <span class="chip">No complete-world claim</span>
+        </div>
+      </article>
+      <article class="panel">
+        <h2>Interpretation</h2>
+        <p>Resources now live inside places. Places have seasons, weather, wetness, terrain, sensory signatures, exposure risks, and shelters. This is still a seed layer, but it makes the world physically legible.</p>
+        <p>Safety refuges are imperfect by design. Not every place is safe in every condition, which gives shelter, routes, planning, and care a reason to exist.</p>
+      </article>
+    </section>
+
+    <section class="grid" style="margin-top: 18px;">
+      <article class="panel">
+        <h2>Latest place states</h2>
+        <div class="place-grid" id="places"></div>
+      </article>
+      <article class="panel">
+        <h2>Habitat trace</h2>
+        <div class="timeline" id="timeline"></div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const results = window.SSRM_3D_DEEP_TIME_HABITAT_CLIMATE_RESULTS || {};
+    const trace = window.SSRM_3D_DEEP_TIME_HABITAT_CLIMATE_TRACE || [];
+    const state = window.SSRM_3D_DEEP_TIME_HABITAT_CLIMATE_STATE || {};
+    const verdict = results.verdict || {};
+    const integrated = (results.rows || []).find((row) => row.condition === "integrated_deep_time_habitat_climate_multisensory") || {};
+
+    const metricItems = [
+      ["verdict", verdict.verdict || "unknown"],
+      ["readiness", integrated.deep_time_habitat_climate_readiness],
+      ["years", integrated.simulated_years],
+      ["resources", integrated.habitat_resource_binding_rate],
+      ["senses", integrated.multisensory_channel_rate],
+      ["exposure", integrated.body_exposure_binding_rate]
+    ];
+
+    document.getElementById("metrics").innerHTML = metricItems.map(([label, value]) => {
+      const rendered = typeof value === "number" && label !== "years" ? value.toFixed(6) : value;
+      return `<div class="metric-row"><span class="metric-label">${label}</span><span class="metric-value">${rendered}</span></div>`;
+    }).join("");
+
+    const places = ((((state || {}).habitat_climate_state || {}).places) || {});
+    document.getElementById("places").innerHTML = Object.values(places).map((place) => {
+      const pain = (place.body_exposure || {}).pain_risk || 0;
+      return `
+        <section class="place">
+          <strong>${place.place}</strong>
+          <small>${place.biome}; ${place.season}; ${place.group}</small>
+          <div class="bars">
+            <div class="bar temp"><span style="width:${Math.round((place.micro_temperature || 0) * 100)}%"></span></div>
+            <div class="bar wet"><span style="width:${Math.round((place.micro_wetness || 0) * 100)}%"></span></div>
+            <div class="bar route"><span style="width:${Math.round((place.route_cost || 0) * 100)}%"></span></div>
+            <div class="bar risk"><span style="width:${Math.round(pain * 100)}%"></span></div>
+          </div>
+          <small>sound ${place.sensory_channels.sound || "none"}; smell ${place.sensory_channels.smell || "none"}</small>
+          <small>refuge ${place.safety_refuge}; flower ${place.flower_node}; frequency ${place.frequency_hz == null ? "none" : Number(place.frequency_hz).toFixed(3)}</small>
+        </section>
+      `;
+    }).join("");
+
+    document.getElementById("timeline").innerHTML = trace.slice(-30).reverse().map((event) => `
+      <div class="event">
+        <strong>${event.place} era ${event.era}: ${event.season}</strong>
+        <small>years ${event.year_start}-${event.year_end}; temp ${Number(event.micro_temperature || 0).toFixed(3)}; wet ${Number(event.micro_wetness || 0).toFixed(3)}; route ${Number(event.route_cost || 0).toFixed(3)}; refuge ${event.safety_refuge}</small>
+        <small>resources ${Object.keys(event.local_resource_ratios || {}).join(", ") || "none"}; flower ${event.flower_node}; private hidden ${event.private_workspace_hidden}; hash ${event.place_hash}</small>
+      </div>
+    `).join("");
+  </script>
+</body>
+</html>

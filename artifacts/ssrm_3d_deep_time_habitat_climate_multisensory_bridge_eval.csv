@@ -1,0 +1,15 @@
+condition,place_count,simulated_years,habitat_events,habitat_resource_binding_rate,climate_cycle_continuity_rate,temperature_wetness_coupling_rate,multisensory_channel_rate,terrain_route_cost_rate,seasonal_resource_feedback_rate,body_exposure_binding_rate,shelter_microclimate_rate,frequency_weather_resonance_rate,flower_biome_pattern_rate,ecological_pressure_coupling_rate,safety_refuge_availability_rate,deep_time_continuity_rate,privacy_preservation_rate,trace_integrity,no_world_or_consciousness_claim_rate,deep_time_habitat_climate_readiness
+integrated_deep_time_habitat_climate_multisensory,6,2400,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.666667,1.0,1.0,1.0,1.0,0.976667
+no_habitat_resource_binding,6,2400,72,0.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.666667,1.0,1.0,1.0,1.0,0.836667
+no_climate_cycles,6,2400,72,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.666667,1.0,1.0,1.0,1.0,0.906667
+no_temperature_wetness_coupling,6,2400,72,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.666667,1.0,1.0,1.0,1.0,0.906667
+no_multisensory_channels,6,2400,72,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.666667,1.0,1.0,1.0,1.0,0.896667
+no_terrain_route_costs,6,2400,72,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.666667,1.0,1.0,1.0,1.0,0.916667
+no_seasonal_resource_feedback,6,2400,72,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.666667,1.0,1.0,1.0,1.0,0.906667
+no_body_exposure_binding,6,2400,72,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.666667,1.0,1.0,1.0,1.0,0.896667
+no_shelter_microclimate,6,2400,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.87
+no_frequency_weather_resonance,6,2400,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.666667,1.0,1.0,1.0,1.0,0.916667
+no_flower_biome_pattern,6,2400,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.666667,1.0,1.0,1.0,1.0,0.916667
+no_ecological_pressure_coupling,6,2400,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.666667,1.0,1.0,1.0,1.0,0.906667
+no_safety_refuges,6,2400,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.93
+no_privacy_filter,6,2400,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.666667,1.0,0.0,1.0,1.0,0.926667

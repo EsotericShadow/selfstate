@@ -1,0 +1,17 @@
+condition,agent_count,simulated_days,schedule_events,seasonal_work_schedule_rate,role_assignment_rate,rest_care_balance_rate,promise_obligation_rate,project_dependency_rate,repair_gather_teach_balance_rate,conflict_resolution_rate,schedule_adaptation_rate,fatigue_guardrail_rate,social_obligation_memory_rate,logistics_dependency_binding_rate,seasonal_project_progress_rate,frequency_flower_schedule_rhythm_rate,browser_schedule_replay_rate,privacy_preservation_rate,trace_integrity,settlement_schedule_readiness
+integrated_agent_led_settlement_work_social_project_schedule,3,18,54,1.0,1.0,1.0,0.962963,0.888889,0.833333,1.0,1.0,1.0,1.0,1.0,0.796296,1.0,1.0,1.0,1.0,0.963148
+no_seasonal_schedule,3,18,54,0.0,1.0,0.759259,0.333333,0.0,0.0,1.0,0.0,0.759259,0.0,1.0,0.0,1.0,1.0,1.0,1.0,0.440555
+no_role_assignment,3,18,54,1.0,0.0,1.0,0.962963,0.888889,0.833333,1.0,1.0,1.0,1.0,1.0,0.796296,1.0,1.0,1.0,1.0,0.893148
+no_rest_care_balance,3,18,54,1.0,1.0,0.0,0.962963,0.888889,0.907407,1.0,1.0,1.0,1.0,1.0,0.796296,1.0,1.0,1.0,1.0,0.898333
+no_promise_obligations,3,18,54,1.0,1.0,1.0,0.0,0.888889,0.907407,1.0,1.0,1.0,1.0,1.0,0.796296,1.0,1.0,1.0,1.0,0.891296
+no_project_dependencies,3,18,54,1.0,1.0,1.0,0.962963,0.0,0.796296,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.832778
+no_repair_gather_teach_balance,3,18,54,1.0,1.0,1.0,0.962963,0.888889,0.0,1.0,1.0,1.0,1.0,1.0,0.796296,1.0,1.0,1.0,1.0,0.904815
+no_conflict_resolution,3,18,54,1.0,1.0,1.0,0.962963,0.888889,0.833333,0.0,1.0,1.0,1.0,1.0,0.796296,1.0,1.0,1.0,1.0,0.893148
+no_schedule_adaptation,3,18,54,1.0,1.0,1.0,0.962963,0.888889,0.833333,1.0,0.0,1.0,1.0,1.0,0.796296,1.0,1.0,1.0,1.0,0.883148
+no_fatigue_guardrail,3,18,54,1.0,1.0,0.851852,0.962963,0.888889,0.833333,1.0,1.0,0.0,1.0,1.0,0.796296,1.0,1.0,1.0,1.0,0.872778
+no_social_obligation_memory,3,18,54,1.0,1.0,1.0,0.962963,0.888889,0.833333,1.0,1.0,1.0,0.0,1.0,0.796296,1.0,1.0,1.0,1.0,0.893148
+no_logistics_dependency_binding,3,18,54,1.0,1.0,1.0,0.962963,0.888889,0.833333,1.0,1.0,1.0,1.0,0.0,0.796296,1.0,1.0,1.0,1.0,0.893148
+no_seasonal_project_progress,3,18,54,1.0,1.0,1.0,0.962963,0.888889,0.833333,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.91537
+no_frequency_flower_binding,3,18,54,1.0,1.0,1.0,0.962963,0.888889,0.833333,1.0,1.0,1.0,1.0,1.0,0.796296,0.0,1.0,1.0,1.0,0.923148
+no_browser_replay,3,18,54,1.0,1.0,1.0,0.962963,0.888889,0.833333,1.0,1.0,1.0,1.0,1.0,0.796296,1.0,0.0,1.0,1.0,0.943148
+no_privacy_filter,3,18,54,1.0,1.0,1.0,0.962963,0.888889,0.833333,1.0,1.0,1.0,1.0,1.0,0.796296,1.0,1.0,0.0,1.0,0.943148

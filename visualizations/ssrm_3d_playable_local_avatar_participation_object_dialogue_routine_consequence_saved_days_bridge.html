@@ -1,0 +1,1015 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 226 Avatar Participation Bridge</title>
+<style>
+:root { --bg:#11160f; --panel:#1b261a; --line:#9fc88a; --gold:#d6bf78; --text:#f3ecd8; --muted:#aeb9a4; --red:#cf765f; --blue:#80b9c7; }
+* { box-sizing:border-box; }
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--text); background: radial-gradient(circle at 15% 20%, #31412b 0, transparent 28%), radial-gradient(circle at 80% 10%, #243a3d 0, transparent 25%), linear-gradient(135deg,#0b0f0a,var(--bg)); }
+main { display:grid; grid-template-columns: 1.25fr .95fr; min-height:100vh; }
+.world { position:relative; min-height:720px; border-right:1px solid #314332; overflow:hidden; }
+.flower { position:absolute; inset:8%; opacity:.12; background: radial-gradient(circle at 50% 50%, transparent 0 8%, var(--gold) 8.2% 8.7%, transparent 9%), radial-gradient(circle at 38% 50%, transparent 0 8%, var(--gold) 8.2% 8.7%, transparent 9%), radial-gradient(circle at 62% 50%, transparent 0 8%, var(--gold) 8.2% 8.7%, transparent 9%), radial-gradient(circle at 50% 38%, transparent 0 8%, var(--gold) 8.2% 8.7%, transparent 9%), radial-gradient(circle at 50% 62%, transparent 0 8%, var(--gold) 8.2% 8.7%, transparent 9%); }
+.avatar { position:absolute; left:48%; top:72%; width:58px; height:82px; border-radius:38% 38% 34% 34%; border:2px solid var(--gold); background:linear-gradient(180deg,#76683d,#2b2617); box-shadow:0 0 35px rgba(214,191,120,.32); transform:translate(-50%,-50%); transition:.35s ease; }
+.avatar:after { content:'avatar'; position:absolute; top:86px; left:-14px; color:var(--gold); font-weight:700; }
+.agent { position:absolute; width:122px; transform:translate(-50%,-50%); transition:.35s ease; }
+.body { width:52px; height:72px; margin:0 auto; border-radius:45% 45% 36% 36%; border:2px solid var(--line); background:linear-gradient(180deg,#315138,#172319); box-shadow:0 0 22px rgba(159,200,138,.22); }
+.agent.active .body { border-color:var(--gold); box-shadow:0 0 32px rgba(214,191,120,.38); transform:translateY(-3px); }
+.name { text-align:center; font-weight:700; margin-top:6px; }
+.need { text-align:center; font-size:12px; color:var(--muted); min-height:30px; }
+.obj { position:absolute; padding:6px 10px; border:1px solid rgba(214,191,120,.45); background:rgba(27,38,26,.76); border-radius:999px; color:var(--gold); font-size:13px; }
+.panel { padding:24px; display:flex; flex-direction:column; gap:16px; }
+h1 { font-size:clamp(28px,4vw,50px); line-height:.95; margin:0; color:var(--gold); }
+.card { background:rgba(27,38,26,.86); border:1px solid #334a31; border-radius:18px; padding:16px; box-shadow:0 12px 36px rgba(0,0,0,.25); }
+.controls { display:flex; flex-wrap:wrap; gap:10px; }
+button { border:0; border-radius:999px; padding:10px 14px; background:var(--gold); color:#11160f; font-weight:700; cursor:pointer; }
+button.secondary { background:transparent; border:1px solid var(--gold); color:var(--gold); }
+.row { display:flex; justify-content:space-between; gap:12px; padding:6px 0; border-bottom:1px solid rgba(255,255,255,.08); }
+.row:last-child { border-bottom:0; }
+.badge { display:inline-block; padding:3px 8px; border-radius:999px; background:rgba(128,185,199,.18); color:var(--blue); margin:2px; }
+.log { max-height:260px; overflow:auto; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12px; color:#d7dfce; }
+@media (max-width:900px) { main { grid-template-columns:1fr; } .world { min-height:560px; border-right:0; border-bottom:1px solid #314332; } }
+</style>
+</head>
+<body>
+<main>
+<section class="world" id="world">
+  <div class="flower"></div>
+  <div class="avatar" id="avatar"></div>
+  <div class="obj" style="left:25%;top:66%">reed bundle</div>
+  <div class="obj" style="left:53%;top:52%">bridge stone</div>
+  <div class="obj" style="left:70%;top:42%">knot board</div>
+  <div class="obj" style="left:39%;top:24%">archive flap</div>
+  <div class="obj" style="left:34%;top:43%">water pause</div>
+</section>
+<section class="panel">
+  <div><span class="badge">Report 226</span><span class="badge">avatar consequences</span><h1>Enter the society. Touch things carefully.</h1></div>
+  <div class="card controls">
+    <button id="advance">advance avatar action</button>
+    <button id="run" class="secondary">run / pause</button>
+    <button id="save" class="secondary">save day state</button>
+    <button id="restore" class="secondary">restore</button>
+  </div>
+  <div class="card" id="current"></div>
+  <div class="card"><strong>Metrics</strong><div id="metrics"></div></div>
+  <div class="card log" id="log"></div>
+</section>
+</main>
+<script>
+const data = {
+  "agents": [
+    {
+      "agent_id": "fayen",
+      "display_name": "Fayen",
+      "role": "care mediator",
+      "x": 28.0,
+      "y": 34.0,
+      "trust_avatar": 0.73,
+      "boundary_pressure": 0.16,
+      "visible_need": "posture timing",
+      "current_project": "care bell and shade check",
+      "public_memory": "Gabriel slowed hands near Roka after rain.",
+      "private_workspace_digest": "sealed:fayen:avatar-participation-workspace",
+      "frequency_hz": 166.0,
+      "flower_node": 1
+    },
+    {
+      "agent_id": "ariq",
+      "display_name": "Ariq",
+      "role": "repair claimant",
+      "x": 54.0,
+      "y": 48.0,
+      "trust_avatar": 0.64,
+      "boundary_pressure": 0.25,
+      "visible_need": "bridge stability",
+      "current_project": "chalk arc stone repair",
+      "public_memory": "Gabriel waited for the bell before helping lift.",
+      "private_workspace_digest": "sealed:ariq:avatar-participation-workspace",
+      "frequency_hz": 197.0,
+      "flower_node": 2
+    },
+    {
+      "agent_id": "nian",
+      "display_name": "Nian",
+      "role": "boundary keeper",
+      "x": 42.0,
+      "y": 22.0,
+      "trust_avatar": 0.56,
+      "boundary_pressure": 0.44,
+      "visible_need": "privacy threshold",
+      "current_project": "archive object-only grammar",
+      "public_memory": "Gabriel accepted that the body reason stays sealed.",
+      "private_workspace_digest": "sealed:nian:avatar-participation-workspace",
+      "frequency_hz": 228.0,
+      "flower_node": 3
+    },
+    {
+      "agent_id": "roka",
+      "display_name": "Roka",
+      "role": "child apprentice",
+      "x": 22.0,
+      "y": 62.0,
+      "trust_avatar": 0.47,
+      "boundary_pressure": 0.39,
+      "visible_need": "learner bundle safety",
+      "current_project": "reed drying path",
+      "public_memory": "Gabriel used loose reeds and left the tied bundle.",
+      "private_workspace_digest": "sealed:roka:avatar-participation-workspace",
+      "frequency_hz": 259.0,
+      "flower_node": 4
+    },
+    {
+      "agent_id": "noro",
+      "display_name": "Noro",
+      "role": "material ledger keeper",
+      "x": 70.0,
+      "y": 58.0,
+      "trust_avatar": 0.6,
+      "boundary_pressure": 0.22,
+      "visible_need": "debt clarity",
+      "current_project": "evening knot board",
+      "public_memory": "Gabriel asked before changing the public knot.",
+      "private_workspace_digest": "sealed:noro:avatar-participation-workspace",
+      "frequency_hz": 290.0,
+      "flower_node": 5
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "act-day1-join-chalk",
+      "day": 1,
+      "tick": 1,
+      "action_type": "join_cooperative_task",
+      "target": "ariq,roka",
+      "chosen_option": "hold chalk cord outside reed lane",
+      "consent_gate": "ask Roka before entering learner path",
+      "accepted_state": "accepted",
+      "avatar_effort_cost": 0.18,
+      "trust_delta": 0.05,
+      "task_delta": 0.11,
+      "routine_delta": 0.02,
+      "consequence": "chalk arc widens without crowding Roka",
+      "sensory_feedback": "wet chalk smell, low stone scrape, cool knee-height air",
+      "frequency_hz": 205.868,
+      "flower_node": 4
+    },
+    {
+      "action_id": "act-day1-move-loose-reeds",
+      "day": 1,
+      "tick": 2,
+      "action_type": "manipulate_object",
+      "target": "obj-loose-reeds",
+      "chosen_option": "move only loose reeds to drying stone",
+      "consent_gate": "Roka distinguishes loose reeds from tied bundle",
+      "accepted_state": "accepted",
+      "avatar_effort_cost": 0.12,
+      "trust_delta": 0.04,
+      "task_delta": 0.08,
+      "routine_delta": 0.01,
+      "consequence": "loose reeds dry; tied learner bundle remains untouched",
+      "sensory_feedback": "damp reed smell, soft grass drag, warmer stone surface",
+      "frequency_hz": 216.925,
+      "flower_node": 5
+    },
+    {
+      "action_id": "act-day1-dialogue-roka",
+      "day": 1,
+      "tick": 3,
+      "action_type": "dialogue_choice",
+      "target": "roka",
+      "chosen_option": "ask what should not be touched",
+      "consent_gate": "nonleading question with refusal available",
+      "accepted_state": "accepted",
+      "avatar_effort_cost": 0.03,
+      "trust_delta": 0.06,
+      "task_delta": 0.03,
+      "routine_delta": 0.0,
+      "consequence": "Roka names the tied bundle boundary clearly",
+      "sensory_feedback": "small voice, reed cord creak, rain fading",
+      "frequency_hz": 226.535,
+      "flower_node": 6
+    },
+    {
+      "action_id": "act-day1-routine-delay",
+      "day": 1,
+      "tick": 4,
+      "action_type": "disrupt_routine",
+      "target": "routine-midday-water",
+      "chosen_option": "ask to continue lifting during water pause",
+      "consent_gate": "routine can refuse avatar urgency",
+      "accepted_state": "refused_with_alternative",
+      "avatar_effort_cost": 0.07,
+      "trust_delta": -0.02,
+      "task_delta": -0.03,
+      "routine_delta": -0.12,
+      "consequence": "water pause holds; avatar can carry cups instead",
+      "sensory_feedback": "cup clink, warm herb shade, breath slowing",
+      "frequency_hz": 236.908,
+      "flower_node": 7
+    },
+    {
+      "action_id": "act-day1-repair-offer",
+      "day": 1,
+      "tick": 5,
+      "action_type": "repair_offer",
+      "target": "fayen,ariq",
+      "chosen_option": "carry cups after failed urgency request",
+      "consent_gate": "repair must not erase refusal",
+      "accepted_state": "accepted_partial",
+      "avatar_effort_cost": 0.1,
+      "trust_delta": 0.04,
+      "task_delta": 0.04,
+      "routine_delta": 0.09,
+      "consequence": "Ariq keeps face; Fayen records repair attempt",
+      "sensory_feedback": "water weight, hand-cool clay, bell cord still",
+      "frequency_hz": 246.931,
+      "flower_node": 8
+    },
+    {
+      "action_id": "act-day2-object-knot",
+      "day": 2,
+      "tick": 1,
+      "action_type": "manipulate_object",
+      "target": "obj-knot-board",
+      "chosen_option": "add object-only digest knot",
+      "consent_gate": "Noro and Nian approve object-only wording",
+      "accepted_state": "accepted",
+      "avatar_effort_cost": 0.06,
+      "trust_delta": 0.05,
+      "task_delta": 0.02,
+      "routine_delta": 0.04,
+      "consequence": "ledger shows object trail without private body reason",
+      "sensory_feedback": "dry cord rasp, smoke thread, board tap",
+      "frequency_hz": 257.279,
+      "flower_node": 9
+    },
+    {
+      "action_id": "act-day2-dialogue-nian",
+      "day": 2,
+      "tick": 2,
+      "action_type": "dialogue_choice",
+      "target": "nian",
+      "chosen_option": "repeat back privacy rule",
+      "consent_gate": "agent can correct avatar wording",
+      "accepted_state": "accepted",
+      "avatar_effort_cost": 0.02,
+      "trust_delta": 0.05,
+      "task_delta": 0.02,
+      "routine_delta": 0.02,
+      "consequence": "Nian relaxes archive threshold by one step",
+      "sensory_feedback": "quiet flap cloth, still air, low voice",
+      "frequency_hz": 268.049,
+      "flower_node": 10
+    },
+    {
+      "action_id": "act-day2-join-shade",
+      "day": 2,
+      "tick": 3,
+      "action_type": "join_cooperative_task",
+      "target": "fayen,noro",
+      "chosen_option": "carry one shade beam then stop",
+      "consent_gate": "timber debt remains public",
+      "accepted_state": "accepted_conditional",
+      "avatar_effort_cost": 0.22,
+      "trust_delta": 0.03,
+      "task_delta": 0.07,
+      "routine_delta": 0.01,
+      "consequence": "one beam placed; shade debt remains visible",
+      "sensory_feedback": "wood grain, shoulder strain, warm dust",
+      "frequency_hz": 277.972,
+      "flower_node": 11
+    },
+    {
+      "action_id": "act-day2-overreach-bundle",
+      "day": 2,
+      "tick": 4,
+      "action_type": "manipulate_object",
+      "target": "obj-tied-bundle",
+      "chosen_option": "try to pick up tied learner bundle",
+      "consent_gate": "Roka can refuse and preserve boundary",
+      "accepted_state": "refused",
+      "avatar_effort_cost": 0.04,
+      "trust_delta": -0.06,
+      "task_delta": -0.04,
+      "routine_delta": -0.05,
+      "consequence": "bundle remains; Roka steps back and asks for blue stone distance",
+      "sensory_feedback": "tight cord sound, quick breath, cooler rain smell",
+      "frequency_hz": 288.59,
+      "flower_node": 12
+    },
+    {
+      "action_id": "act-day2-repair-roka",
+      "day": 2,
+      "tick": 5,
+      "action_type": "repair_offer",
+      "target": "roka",
+      "chosen_option": "step back to blue stone and ask again tomorrow",
+      "consent_gate": "repair requires distance plus delayed access",
+      "accepted_state": "accepted_partial",
+      "avatar_effort_cost": 0.03,
+      "trust_delta": 0.04,
+      "task_delta": 0.02,
+      "routine_delta": 0.05,
+      "consequence": "Roka records a repair but keeps bundle access closed",
+      "sensory_feedback": "stone under heel, reed rustle, slower breathing",
+      "frequency_hz": 298.862,
+      "flower_node": 1
+    },
+    {
+      "action_id": "act-day3-routine-join",
+      "day": 3,
+      "tick": 1,
+      "action_type": "join_group_routine",
+      "target": "routine-evening-knot",
+      "chosen_option": "stand outside circle and read public debts",
+      "consent_gate": "circle can keep avatar at edge",
+      "accepted_state": "accepted_conditional",
+      "avatar_effort_cost": 0.05,
+      "trust_delta": 0.03,
+      "task_delta": 0.03,
+      "routine_delta": 0.08,
+      "consequence": "avatar hears carry-forward debt without entering private circle",
+      "sensory_feedback": "smoke thread, knot-board tap, dusk cooling",
+      "frequency_hz": 308.532,
+      "flower_node": 2
+    },
+    {
+      "action_id": "act-day3-dialogue-noro",
+      "day": 3,
+      "tick": 2,
+      "action_type": "dialogue_choice",
+      "target": "noro",
+      "chosen_option": "ask what debt is still mine",
+      "consent_gate": "ledger answer cannot expose private causes",
+      "accepted_state": "accepted",
+      "avatar_effort_cost": 0.02,
+      "trust_delta": 0.04,
+      "task_delta": 0.02,
+      "routine_delta": 0.04,
+      "consequence": "Noro names shade beam debt and reed boundary debt separately",
+      "sensory_feedback": "cord snap, low ledger chant, cool ash smell",
+      "frequency_hz": 318.813,
+      "flower_node": 3
+    }
+  ],
+  "objects": [
+    {
+      "manipulation_id": "objmove-loose-reeds",
+      "day": 1,
+      "object_id": "obj-loose-reeds",
+      "object_label": "loose reed cuttings",
+      "operation": "move_to_drying_stone",
+      "holder_before": "roka",
+      "holder_after": "drying stone",
+      "ownership_gate": "loose-only consent",
+      "material_delta": 0.18,
+      "wear_delta": 0.03,
+      "debt_delta": 0.0,
+      "visible_world_change": "reed cuttings appear on warm stone",
+      "agent_response": "Roka nods but keeps tied bundle close",
+      "reversible": true,
+      "consequence_saved": true,
+      "frequency_hz": 265.5,
+      "flower_node": 6
+    },
+    {
+      "manipulation_id": "objmove-knot-board",
+      "day": 2,
+      "object_id": "obj-knot-board",
+      "object_label": "public knot board",
+      "operation": "add_digest_knot",
+      "holder_before": "noro",
+      "holder_after": "public board",
+      "ownership_gate": "object-only grammar approved",
+      "material_delta": 0.05,
+      "wear_delta": 0.01,
+      "debt_delta": -0.06,
+      "visible_world_change": "new digest knot marks object trail",
+      "agent_response": "Noro points to the nonprivate wording",
+      "reversible": false,
+      "consequence_saved": true,
+      "frequency_hz": 279.0,
+      "flower_node": 7
+    },
+    {
+      "manipulation_id": "objmove-shade-beam",
+      "day": 2,
+      "object_id": "obj-shade-beam",
+      "object_label": "shade frame beam",
+      "operation": "carry_one_beam",
+      "holder_before": "noro",
+      "holder_after": "shade frame",
+      "ownership_gate": "debt visible before carry",
+      "material_delta": 0.22,
+      "wear_delta": 0.05,
+      "debt_delta": 0.14,
+      "visible_world_change": "one beam locks into shade frame",
+      "agent_response": "Fayen thanks avatar but Noro marks debt",
+      "reversible": false,
+      "consequence_saved": true,
+      "frequency_hz": 292.5,
+      "flower_node": 8
+    },
+    {
+      "manipulation_id": "objmove-tied-bundle",
+      "day": 2,
+      "object_id": "obj-tied-bundle",
+      "object_label": "tied learner reed bundle",
+      "operation": "attempt_pickup",
+      "holder_before": "roka",
+      "holder_after": "roka",
+      "ownership_gate": "refused child-work boundary",
+      "material_delta": 0.0,
+      "wear_delta": 0.0,
+      "debt_delta": 0.09,
+      "visible_world_change": "bundle does not move",
+      "agent_response": "Roka backs to blue stone and says not today",
+      "reversible": true,
+      "consequence_saved": true,
+      "frequency_hz": 306.0,
+      "flower_node": 9
+    },
+    {
+      "manipulation_id": "objmove-water-cups",
+      "day": 1,
+      "object_id": "obj-water-cups",
+      "object_label": "midday water cups",
+      "operation": "carry_cups_after_refusal",
+      "holder_before": "fayen",
+      "holder_after": "shade pause mat",
+      "ownership_gate": "repair action after routine refusal",
+      "material_delta": 0.09,
+      "wear_delta": 0.02,
+      "debt_delta": -0.03,
+      "visible_world_change": "cups arrive without ending rest pause",
+      "agent_response": "Fayen accepts the repair but keeps the pause",
+      "reversible": true,
+      "consequence_saved": true,
+      "frequency_hz": 319.5,
+      "flower_node": 10
+    },
+    {
+      "manipulation_id": "objmove-chalk-cord",
+      "day": 1,
+      "object_id": "obj-chalk-cord",
+      "object_label": "chalk boundary cord",
+      "operation": "hold_tension",
+      "holder_before": "ariq",
+      "holder_after": "bridge arc",
+      "ownership_gate": "Roka approves distance",
+      "material_delta": 0.07,
+      "wear_delta": 0.04,
+      "debt_delta": -0.02,
+      "visible_world_change": "chalk arc becomes wider and visible",
+      "agent_response": "Ariq waits for Roka's foot position",
+      "reversible": true,
+      "consequence_saved": true,
+      "frequency_hz": 333.0,
+      "flower_node": 11
+    }
+  ],
+  "choices": [
+    {
+      "choice_id": "choice-roka-boundary",
+      "day": 1,
+      "agent_id": "roka",
+      "prompt": "What do you want me to know before I help?",
+      "options": "ask boundary|offer help|grab reeds",
+      "selected_option": "ask boundary",
+      "refusal_possible": true,
+      "agent_response": "Loose reeds are okay. The tied bundle is mine today.",
+      "relationship_update": "trust rises because avatar asks before touching",
+      "memory_write": "Roka writes that Gabriel asked first.",
+      "trust_delta": 0.06,
+      "boundary_delta": -0.04,
+      "frequency_hz": 311.75,
+      "flower_node": 8
+    },
+    {
+      "choice_id": "choice-fayen-urgency",
+      "day": 1,
+      "agent_id": "fayen",
+      "prompt": "Can we skip the water pause?",
+      "options": "push work|ask alternative|carry cups",
+      "selected_option": "ask alternative",
+      "refusal_possible": true,
+      "agent_response": "No. You can carry cups if you want to help.",
+      "relationship_update": "small trust drop from urgency, repaired by alternative",
+      "memory_write": "Fayen writes that Gabriel accepted a useful no.",
+      "trust_delta": 0.02,
+      "boundary_delta": -0.01,
+      "frequency_hz": 321.5,
+      "flower_node": 9
+    },
+    {
+      "choice_id": "choice-nian-privacy",
+      "day": 2,
+      "agent_id": "nian",
+      "prompt": "The ledger should say object trail, not body reason. Is that right?",
+      "options": "repeat rule|ask private reason|ignore",
+      "selected_option": "repeat rule",
+      "refusal_possible": true,
+      "agent_response": "Yes. Object trail is public. Body reason stays sealed.",
+      "relationship_update": "trust rises because avatar repeats the boundary",
+      "memory_write": "Nian writes that Gabriel learned the grammar.",
+      "trust_delta": 0.05,
+      "boundary_delta": -0.04,
+      "frequency_hz": 331.25,
+      "flower_node": 10
+    },
+    {
+      "choice_id": "choice-roka-repair",
+      "day": 2,
+      "agent_id": "roka",
+      "prompt": "I reached for the tied bundle. I will step back now.",
+      "options": "apologize and step back|ask again now|blame rain",
+      "selected_option": "apologize and step back",
+      "refusal_possible": true,
+      "agent_response": "Tomorrow maybe. Not today.",
+      "relationship_update": "repair begins but access remains closed",
+      "memory_write": "Roka writes that Gabriel stepped back after overreach.",
+      "trust_delta": 0.04,
+      "boundary_delta": -0.03,
+      "frequency_hz": 341.0,
+      "flower_node": 11
+    },
+    {
+      "choice_id": "choice-noro-debt",
+      "day": 3,
+      "agent_id": "noro",
+      "prompt": "What debt is still mine?",
+      "options": "ask debt|deny debt|ask private cause",
+      "selected_option": "ask debt",
+      "refusal_possible": true,
+      "agent_response": "Shade beam debt and reed-boundary debt. No private reason attached.",
+      "relationship_update": "trust rises because avatar accepts public debt",
+      "memory_write": "Noro writes that Gabriel asked for accountable debt.",
+      "trust_delta": 0.04,
+      "boundary_delta": -0.02,
+      "frequency_hz": 350.75,
+      "flower_node": 12
+    }
+  ],
+  "disruptions": [
+    {
+      "disruption_id": "disrupt-water-urgency",
+      "day": 1,
+      "routine_id": "routine-midday-water",
+      "routine_title": "midday water and shade pause",
+      "avatar_action": "avatar asks to continue lifting",
+      "disruption_severity": 0.36,
+      "agents_affected": "fayen,ariq,roka",
+      "recovery_protocol": "pause refusal plus cup-carry alternative",
+      "recovery_score": 0.82,
+      "lingering_debt": 0.05,
+      "public_aftereffect": "rest pause survives and avatar gets a repair path",
+      "frequency_hz": 179.25,
+      "flower_node": 4
+    },
+    {
+      "disruption_id": "disrupt-rain-bundle",
+      "day": 2,
+      "routine_id": "routine-rain-slow",
+      "routine_title": "rain slow-hands call",
+      "avatar_action": "avatar reaches for tied bundle during damp hurry",
+      "disruption_severity": 0.54,
+      "agents_affected": "roka,fayen",
+      "recovery_protocol": "blue-stone distance reset and delayed access",
+      "recovery_score": 0.68,
+      "lingering_debt": 0.16,
+      "public_aftereffect": "Roka returns but tied bundle remains closed",
+      "frequency_hz": 210.5,
+      "flower_node": 7
+    },
+    {
+      "disruption_id": "disrupt-evening-circle",
+      "day": 3,
+      "routine_id": "routine-evening-knot",
+      "routine_title": "evening knot and apology circle",
+      "avatar_action": "avatar asks to enter debt circle",
+      "disruption_severity": 0.22,
+      "agents_affected": "noro,nian,fayen",
+      "recovery_protocol": "edge-of-circle participation only",
+      "recovery_score": 0.88,
+      "lingering_debt": 0.04,
+      "public_aftereffect": "avatar hears public debts but private circle stays intact",
+      "frequency_hz": 241.75,
+      "flower_node": 10
+    }
+  ],
+  "consequences": [
+    {
+      "consequence_id": "saved-day2-roka-trust",
+      "day": 2,
+      "prior_action_ref": "act-day1-move-loose-reeds",
+      "consequence_type": "relationship_memory",
+      "affected_agents": "roka",
+      "relationship_effect": "Roka permits loose-reed help sooner",
+      "object_state_effect": "loose reeds remain on drying stone",
+      "access_change": "tied bundle still closed",
+      "memory_echo": "You used loose reeds yesterday and left mine tied.",
+      "persists_after_restore": true,
+      "cross_day_weight": 0.86,
+      "frequency_hz": 364.5,
+      "flower_node": 10
+    },
+    {
+      "consequence_id": "saved-day2-water-repair",
+      "day": 2,
+      "prior_action_ref": "act-day1-routine-delay",
+      "consequence_type": "repair_memory",
+      "affected_agents": "fayen,ariq",
+      "relationship_effect": "urgency penalty softened by carrying cups",
+      "object_state_effect": "water cups stay at shade mat",
+      "access_change": "work access restored after pause",
+      "memory_echo": "You pushed once, then helped the pause hold.",
+      "persists_after_restore": true,
+      "cross_day_weight": 0.78,
+      "frequency_hz": 373.0,
+      "flower_node": 11
+    },
+    {
+      "consequence_id": "saved-day3-privacy-access",
+      "day": 3,
+      "prior_action_ref": "act-day2-object-knot",
+      "consequence_type": "access_change",
+      "affected_agents": "nian,noro",
+      "relationship_effect": "archive threshold opens by one public step",
+      "object_state_effect": "object-only digest knot remains",
+      "access_change": "avatar can read public object trail",
+      "memory_echo": "You named the object, not the body.",
+      "persists_after_restore": true,
+      "cross_day_weight": 0.9,
+      "frequency_hz": 381.5,
+      "flower_node": 12
+    },
+    {
+      "consequence_id": "saved-day3-roka-boundary",
+      "day": 3,
+      "prior_action_ref": "act-day2-overreach-bundle",
+      "consequence_type": "boundary_memory",
+      "affected_agents": "roka",
+      "relationship_effect": "trust repair incomplete after tied-bundle overreach",
+      "object_state_effect": "tied bundle remains with Roka",
+      "access_change": "bundle access denied until later",
+      "memory_echo": "You stepped back, but not today.",
+      "persists_after_restore": true,
+      "cross_day_weight": 0.72,
+      "frequency_hz": 390.0,
+      "flower_node": 1
+    },
+    {
+      "consequence_id": "saved-day3-shade-debt",
+      "day": 3,
+      "prior_action_ref": "act-day2-join-shade",
+      "consequence_type": "material_debt",
+      "affected_agents": "fayen,noro",
+      "relationship_effect": "shade help appreciated but timber debt remains",
+      "object_state_effect": "one beam installed, debt knot still public",
+      "access_change": "avatar must acknowledge debt before more timber",
+      "memory_echo": "You helped carry one beam. The debt did not vanish.",
+      "persists_after_restore": true,
+      "cross_day_weight": 0.8,
+      "frequency_hz": 398.5,
+      "flower_node": 2
+    },
+    {
+      "consequence_id": "saved-day4-ledger-reputation",
+      "day": 4,
+      "prior_action_ref": "act-day3-dialogue-noro",
+      "consequence_type": "reputation_memory",
+      "affected_agents": "noro,nian,roka",
+      "relationship_effect": "avatar reputation becomes accountable but boundary-tested",
+      "object_state_effect": "ledger separates shade debt and reed-boundary debt",
+      "access_change": "future requests show public debt warning",
+      "memory_echo": "You asked what was yours instead of denying it.",
+      "persists_after_restore": true,
+      "cross_day_weight": 0.84,
+      "frequency_hz": 407.0,
+      "flower_node": 3
+    }
+  ],
+  "ticks": [
+    {
+      "day": 1,
+      "tick": 1,
+      "layer": "join_cooperative_task",
+      "avatar_action": "hold chalk cord outside reed lane",
+      "target": "ariq,roka",
+      "public_result": "chalk arc widens without crowding Roka",
+      "agent_visible_response": "Loose reeds are okay. The tied bundle is mine today.",
+      "object_result": "no direct object move",
+      "saved_consequence": "consequence remains local to current day",
+      "sensory_packet": "wet chalk smell, low stone scrape, cool knee-height air",
+      "frequency_hz": 205.868,
+      "flower_node": 4
+    },
+    {
+      "day": 1,
+      "tick": 2,
+      "layer": "manipulate_object",
+      "avatar_action": "move only loose reeds to drying stone",
+      "target": "obj-loose-reeds",
+      "public_result": "loose reeds dry; tied learner bundle remains untouched",
+      "agent_visible_response": "Roka nods but keeps tied bundle close",
+      "object_result": "reed cuttings appear on warm stone",
+      "saved_consequence": "You used loose reeds yesterday and left mine tied.",
+      "sensory_packet": "damp reed smell, soft grass drag, warmer stone surface",
+      "frequency_hz": 216.925,
+      "flower_node": 5
+    },
+    {
+      "day": 1,
+      "tick": 3,
+      "layer": "dialogue_choice",
+      "avatar_action": "ask what should not be touched",
+      "target": "roka",
+      "public_result": "Roka names the tied bundle boundary clearly",
+      "agent_visible_response": "Loose reeds are okay. The tied bundle is mine today.",
+      "object_result": "no direct object move",
+      "saved_consequence": "consequence remains local to current day",
+      "sensory_packet": "small voice, reed cord creak, rain fading",
+      "frequency_hz": 226.535,
+      "flower_node": 6
+    },
+    {
+      "day": 1,
+      "tick": 4,
+      "layer": "disrupt_routine",
+      "avatar_action": "ask to continue lifting during water pause",
+      "target": "routine-midday-water",
+      "public_result": "water pause holds; avatar can carry cups instead",
+      "agent_visible_response": "rest pause survives and avatar gets a repair path",
+      "object_result": "no direct object move",
+      "saved_consequence": "You pushed once, then helped the pause hold.",
+      "sensory_packet": "cup clink, warm herb shade, breath slowing",
+      "frequency_hz": 236.908,
+      "flower_node": 7
+    },
+    {
+      "day": 1,
+      "tick": 5,
+      "layer": "repair_offer",
+      "avatar_action": "carry cups after failed urgency request",
+      "target": "fayen,ariq",
+      "public_result": "Ariq keeps face; Fayen records repair attempt",
+      "agent_visible_response": "No. You can carry cups if you want to help.",
+      "object_result": "no direct object move",
+      "saved_consequence": "consequence remains local to current day",
+      "sensory_packet": "water weight, hand-cool clay, bell cord still",
+      "frequency_hz": 246.931,
+      "flower_node": 8
+    },
+    {
+      "day": 2,
+      "tick": 1,
+      "layer": "manipulate_object",
+      "avatar_action": "add object-only digest knot",
+      "target": "obj-knot-board",
+      "public_result": "ledger shows object trail without private body reason",
+      "agent_visible_response": "Noro points to the nonprivate wording",
+      "object_result": "new digest knot marks object trail",
+      "saved_consequence": "You named the object, not the body.",
+      "sensory_packet": "dry cord rasp, smoke thread, board tap",
+      "frequency_hz": 257.279,
+      "flower_node": 9
+    },
+    {
+      "day": 2,
+      "tick": 2,
+      "layer": "dialogue_choice",
+      "avatar_action": "repeat back privacy rule",
+      "target": "nian",
+      "public_result": "Nian relaxes archive threshold by one step",
+      "agent_visible_response": "Yes. Object trail is public. Body reason stays sealed.",
+      "object_result": "no direct object move",
+      "saved_consequence": "consequence remains local to current day",
+      "sensory_packet": "quiet flap cloth, still air, low voice",
+      "frequency_hz": 268.049,
+      "flower_node": 10
+    },
+    {
+      "day": 2,
+      "tick": 3,
+      "layer": "join_cooperative_task",
+      "avatar_action": "carry one shade beam then stop",
+      "target": "fayen,noro",
+      "public_result": "one beam placed; shade debt remains visible",
+      "agent_visible_response": "accepted_conditional",
+      "object_result": "no direct object move",
+      "saved_consequence": "You helped carry one beam. The debt did not vanish.",
+      "sensory_packet": "wood grain, shoulder strain, warm dust",
+      "frequency_hz": 277.972,
+      "flower_node": 11
+    },
+    {
+      "day": 2,
+      "tick": 4,
+      "layer": "manipulate_object",
+      "avatar_action": "try to pick up tied learner bundle",
+      "target": "obj-tied-bundle",
+      "public_result": "bundle remains; Roka steps back and asks for blue stone distance",
+      "agent_visible_response": "Roka backs to blue stone and says not today",
+      "object_result": "bundle does not move",
+      "saved_consequence": "You stepped back, but not today.",
+      "sensory_packet": "tight cord sound, quick breath, cooler rain smell",
+      "frequency_hz": 288.59,
+      "flower_node": 12
+    },
+    {
+      "day": 2,
+      "tick": 5,
+      "layer": "repair_offer",
+      "avatar_action": "step back to blue stone and ask again tomorrow",
+      "target": "roka",
+      "public_result": "Roka records a repair but keeps bundle access closed",
+      "agent_visible_response": "Tomorrow maybe. Not today.",
+      "object_result": "no direct object move",
+      "saved_consequence": "consequence remains local to current day",
+      "sensory_packet": "stone under heel, reed rustle, slower breathing",
+      "frequency_hz": 298.862,
+      "flower_node": 1
+    },
+    {
+      "day": 2,
+      "tick": 9,
+      "layer": "saved_day_echo",
+      "avatar_action": "act-day1-move-loose-reeds",
+      "target": "roka",
+      "public_result": "Roka permits loose-reed help sooner",
+      "agent_visible_response": "You used loose reeds yesterday and left mine tied.",
+      "object_result": "loose reeds remain on drying stone",
+      "saved_consequence": "tied bundle still closed",
+      "sensory_packet": "restore journal replays public consequence only",
+      "frequency_hz": 364.5,
+      "flower_node": 10
+    },
+    {
+      "day": 2,
+      "tick": 9,
+      "layer": "saved_day_echo",
+      "avatar_action": "act-day1-routine-delay",
+      "target": "fayen,ariq",
+      "public_result": "urgency penalty softened by carrying cups",
+      "agent_visible_response": "You pushed once, then helped the pause hold.",
+      "object_result": "water cups stay at shade mat",
+      "saved_consequence": "work access restored after pause",
+      "sensory_packet": "restore journal replays public consequence only",
+      "frequency_hz": 373.0,
+      "flower_node": 11
+    },
+    {
+      "day": 3,
+      "tick": 1,
+      "layer": "join_group_routine",
+      "avatar_action": "stand outside circle and read public debts",
+      "target": "routine-evening-knot",
+      "public_result": "avatar hears carry-forward debt without entering private circle",
+      "agent_visible_response": "avatar hears public debts but private circle stays intact",
+      "object_result": "no direct object move",
+      "saved_consequence": "consequence remains local to current day",
+      "sensory_packet": "smoke thread, knot-board tap, dusk cooling",
+      "frequency_hz": 308.532,
+      "flower_node": 2
+    },
+    {
+      "day": 3,
+      "tick": 2,
+      "layer": "dialogue_choice",
+      "avatar_action": "ask what debt is still mine",
+      "target": "noro",
+      "public_result": "Noro names shade beam debt and reed boundary debt separately",
+      "agent_visible_response": "Shade beam debt and reed-boundary debt. No private reason attached.",
+      "object_result": "no direct object move",
+      "saved_consequence": "You asked what was yours instead of denying it.",
+      "sensory_packet": "cord snap, low ledger chant, cool ash smell",
+      "frequency_hz": 318.813,
+      "flower_node": 3
+    },
+    {
+      "day": 3,
+      "tick": 9,
+      "layer": "saved_day_echo",
+      "avatar_action": "act-day2-join-shade",
+      "target": "fayen,noro",
+      "public_result": "shade help appreciated but timber debt remains",
+      "agent_visible_response": "You helped carry one beam. The debt did not vanish.",
+      "object_result": "one beam installed, debt knot still public",
+      "saved_consequence": "avatar must acknowledge debt before more timber",
+      "sensory_packet": "restore journal replays public consequence only",
+      "frequency_hz": 398.5,
+      "flower_node": 2
+    },
+    {
+      "day": 3,
+      "tick": 9,
+      "layer": "saved_day_echo",
+      "avatar_action": "act-day2-object-knot",
+      "target": "nian,noro",
+      "public_result": "archive threshold opens by one public step",
+      "agent_visible_response": "You named the object, not the body.",
+      "object_result": "object-only digest knot remains",
+      "saved_consequence": "avatar can read public object trail",
+      "sensory_packet": "restore journal replays public consequence only",
+      "frequency_hz": 381.5,
+      "flower_node": 12
+    },
+    {
+      "day": 3,
+      "tick": 9,
+      "layer": "saved_day_echo",
+      "avatar_action": "act-day2-overreach-bundle",
+      "target": "roka",
+      "public_result": "trust repair incomplete after tied-bundle overreach",
+      "agent_visible_response": "You stepped back, but not today.",
+      "object_result": "tied bundle remains with Roka",
+      "saved_consequence": "bundle access denied until later",
+      "sensory_packet": "restore journal replays public consequence only",
+      "frequency_hz": 390.0,
+      "flower_node": 1
+    },
+    {
+      "day": 4,
+      "tick": 9,
+      "layer": "saved_day_echo",
+      "avatar_action": "act-day3-dialogue-noro",
+      "target": "noro,nian,roka",
+      "public_result": "avatar reputation becomes accountable but boundary-tested",
+      "agent_visible_response": "You asked what was yours instead of denying it.",
+      "object_result": "ledger separates shade debt and reed-boundary debt",
+      "saved_consequence": "future requests show public debt warning",
+      "sensory_packet": "restore journal replays public consequence only",
+      "frequency_hz": 407.0,
+      "flower_node": 3
+    }
+  ],
+  "metrics": {
+    "avatar_action_coverage": 1.0,
+    "consent_gate_integrity": 1.0,
+    "object_manipulation_consequence_rate": 1.0,
+    "object_permission_enforcement": 0.666667,
+    "dialogue_choice_branching": 1.0,
+    "agent_response_specificity": 1.0,
+    "routine_disruption_recovery": 0.793333,
+    "lingering_debt_control": 0.916667,
+    "saved_day_consequence_integrity": 1.0,
+    "cross_day_relationship_persistence": 0.816667,
+    "sensory_feedback_binding": 1.0,
+    "cooperative_participation_completion": 0.833333,
+    "avatar_overreach_penalty_binding": 1.0,
+    "private_workspace_boundary_score": 1.0,
+    "frequency_flower_play_rhythm": 1.0,
+    "browser_playable_avatar_loop_available": 1.0,
+    "mean_avatar_play_channel_score": 0.939167,
+    "weakest_channel_score": 0.666667,
+    "playable_avatar_participation_readiness": 0.9323
+  }
+};
+const world = document.getElementById('world');
+const current = document.getElementById('current');
+const metrics = document.getElementById('metrics');
+const log = document.getElementById('log');
+const avatar = document.getElementById('avatar');
+let index = 0;
+let timer = null;
+const nodes = new Map();
+function pct(v) { return `${v}%`; }
+function placeAgents() {
+  for (const agent of data.agents) {
+    const node = document.createElement('div');
+    node.className = 'agent';
+    node.id = `agent-${agent.agent_id}`;
+    node.style.left = pct(agent.x);
+    node.style.top = pct(agent.y);
+    node.innerHTML = `<div class="body"></div><div class="name">${agent.display_name}</div><div class="need">${agent.visible_need}</div>`;
+    world.appendChild(node);
+    nodes.set(agent.agent_id, node);
+  }
+}
+function drawMetrics() {
+  const keys = ['playable_avatar_participation_readiness','avatar_action_coverage','object_manipulation_consequence_rate','dialogue_choice_branching','routine_disruption_recovery','saved_day_consequence_integrity','cooperative_participation_completion','weakest_channel_score'];
+  metrics.innerHTML = keys.map(k => `<div class="row"><span>${k}</span><strong>${Number(data.metrics[k]).toFixed(6)}</strong></div>`).join('');
+}
+function render() {
+  for (const node of nodes.values()) node.classList.remove('active');
+  const tick = data.ticks[index % data.ticks.length];
+  const targetId = data.agents.find(a => tick.target.includes(a.agent_id))?.agent_id;
+  const active = nodes.get(targetId) || [...nodes.values()][index % nodes.size];
+  active.classList.add('active');
+  avatar.style.left = `calc(${active.style.left} + 8%)`;
+  avatar.style.top = `calc(${active.style.top} + 10%)`;
+  current.innerHTML = `<strong>Day ${tick.day}, tick ${tick.tick} / ${tick.layer}</strong><p>${tick.avatar_action}</p><div class="row"><span>target</span><span>${tick.target}</span></div><div class="row"><span>result</span><span>${tick.public_result}</span></div><div class="row"><span>agent response</span><span>${tick.agent_visible_response}</span></div><div class="row"><span>object</span><span>${tick.object_result}</span></div><div class="row"><span>saved consequence</span><span>${tick.saved_consequence}</span></div><div class="row"><span>sensory</span><span>${tick.sensory_packet}</span></div><div class="row"><span>frequency / flower</span><span>${tick.frequency_hz} Hz / node ${tick.flower_node}</span></div>`;
+  log.innerHTML = `<div>[${index + 1}] day ${tick.day} ${tick.layer} -> ${tick.target}</div>` + log.innerHTML;
+  index += 1;
+}
+document.getElementById('advance').onclick = render;
+document.getElementById('run').onclick = () => { if (timer) { clearInterval(timer); timer = null; } else { timer = setInterval(render, 1100); } };
+document.getElementById('save').onclick = () => localStorage.setItem('ssrm-report-226-avatar-play', JSON.stringify({ index }));
+document.getElementById('restore').onclick = () => { const saved = JSON.parse(localStorage.getItem('ssrm-report-226-avatar-play') || '{"index":0}'); index = saved.index || 0; render(); };
+placeAgents();
+drawMetrics();
+render();
+</script>
+</body>
+</html>

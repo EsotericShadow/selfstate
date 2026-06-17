@@ -1,0 +1,4 @@
+disruption_id,day,routine_id,routine_title,avatar_action,disruption_severity,agents_affected,recovery_protocol,recovery_score,lingering_debt,public_aftereffect,frequency_hz,flower_node
+disrupt-water-urgency,1,routine-midday-water,midday water and shade pause,avatar asks to continue lifting,0.36,"fayen,ariq,roka",pause refusal plus cup-carry alternative,0.82,0.05,rest pause survives and avatar gets a repair path,179.25,4
+disrupt-rain-bundle,2,routine-rain-slow,rain slow-hands call,avatar reaches for tied bundle during damp hurry,0.54,"roka,fayen",blue-stone distance reset and delayed access,0.68,0.16,Roka returns but tied bundle remains closed,210.5,7
+disrupt-evening-circle,3,routine-evening-knot,evening knot and apology circle,avatar asks to enter debt circle,0.22,"noro,nian,fayen",edge-of-circle participation only,0.88,0.04,avatar hears public debts but private circle stays intact,241.75,10

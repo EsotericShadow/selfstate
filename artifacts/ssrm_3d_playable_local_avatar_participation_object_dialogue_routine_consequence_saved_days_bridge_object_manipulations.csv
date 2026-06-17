@@ -1,0 +1,7 @@
+manipulation_id,day,object_id,object_label,operation,holder_before,holder_after,ownership_gate,material_delta,wear_delta,debt_delta,visible_world_change,agent_response,reversible,consequence_saved,frequency_hz,flower_node
+objmove-loose-reeds,1,obj-loose-reeds,loose reed cuttings,move_to_drying_stone,roka,drying stone,loose-only consent,0.18,0.03,0.0,reed cuttings appear on warm stone,Roka nods but keeps tied bundle close,True,True,265.5,6
+objmove-knot-board,2,obj-knot-board,public knot board,add_digest_knot,noro,public board,object-only grammar approved,0.05,0.01,-0.06,new digest knot marks object trail,Noro points to the nonprivate wording,False,True,279.0,7
+objmove-shade-beam,2,obj-shade-beam,shade frame beam,carry_one_beam,noro,shade frame,debt visible before carry,0.22,0.05,0.14,one beam locks into shade frame,Fayen thanks avatar but Noro marks debt,False,True,292.5,8
+objmove-tied-bundle,2,obj-tied-bundle,tied learner reed bundle,attempt_pickup,roka,roka,refused child-work boundary,0.0,0.0,0.09,bundle does not move,Roka backs to blue stone and says not today,True,True,306.0,9
+objmove-water-cups,1,obj-water-cups,midday water cups,carry_cups_after_refusal,fayen,shade pause mat,repair action after routine refusal,0.09,0.02,-0.03,cups arrive without ending rest pause,Fayen accepts the repair but keeps the pause,True,True,319.5,10
+objmove-chalk-cord,1,obj-chalk-cord,chalk boundary cord,hold_tension,ariq,bridge arc,Roka approves distance,0.07,0.04,-0.02,chalk arc becomes wider and visible,Ariq waits for Roka's foot position,True,True,333.0,11

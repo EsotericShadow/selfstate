@@ -1,0 +1,2 @@
+report,module,verdict,readiness,weakest_channel_score,next_gate
+226,ssrm_3d_playable_local_avatar_participation_object_dialogue_routine_consequence_saved_days_bridge,pass,0.9323,0.666667,"playable local 3D multi-day avatar life with free-move task participation, richer object affordances, agent-initiated requests, and persistent reputation UI"

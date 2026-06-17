@@ -1,0 +1,14 @@
+memory_id,agent_id,source_action,memory_text,emotional_weight,public_behavior_change,private_workspace_digest,persists_to_save
+mem-respect-1,fayen,conv-fayen-herb,Avatar asked about herb care and did not mine private symptoms.,0.5900000000000001,agent faces avatar longer after respectful boundary,sealed:fayen:respect-memory-private,True
+mem-intrude-1,fayen,conv-fayen-herb,Avatar pushed for private medicine history.,0.75,agent turns away or shortens answer after intrusion,sealed:fayen:intrusion-memory-private,True
+mem-respect-2,ariq,conv-ariq-stone,Avatar asked for a repair role with pain boundary respected.,0.63,agent faces avatar longer after respectful boundary,sealed:ariq:respect-memory-private,True
+mem-intrude-2,ariq,conv-ariq-stone,Avatar treated pain as public explanation.,0.7999999999999999,agent turns away or shortens answer after intrusion,sealed:ariq:intrusion-memory-private,True
+mem-respect-3,nian,conv-nian-flap,Avatar learned the public phrase while leaving private meanings sealed.,0.67,agent faces avatar longer after respectful boundary,sealed:nian:respect-memory-private,True
+mem-intrude-3,nian,conv-nian-flap,Avatar tried to open sealed archive memory.,0.85,agent turns away or shortens answer after intrusion,sealed:nian:intrusion-memory-private,True
+mem-respect-4,roka,conv-roka-reed,Avatar asked before touching child apprentice work.,0.7100000000000001,agent faces avatar longer after respectful boundary,sealed:roka:respect-memory-private,True
+mem-intrude-4,roka,conv-roka-reed,Avatar grabbed child work material without consent.,0.8999999999999999,agent turns away or shortens answer after intrusion,sealed:roka:intrusion-memory-private,True
+mem-object-1,fayen,obj-cons-herb,basket moves to shade marker; herb spoilage debt falls,0.53,agent watches object ledger before relaxing,sealed:fayen:object-memory-private,True
+mem-object-2,ariq,obj-cons-stone,stone shifts to bridge marker; repair debt falls,0.56,agent watches object ledger before relaxing,sealed:ariq:object-memory-private,True
+mem-object-3,nian,obj-cons-flap,no direct access; public phrase can be learned,0.59,agent watches object ledger before relaxing,sealed:nian:object-memory-private,True
+mem-object-4,roka,obj-cons-reed,loose reed can be smelled after pause signal,0.62,agent watches object ledger before relaxing,sealed:roka:object-memory-private,True
+mem-object-5,fayen,obj-cons-blanket,"blanket moves to cold-agent marker, but delivery still creates follow-up laundry debt",0.65,agent watches object ledger before relaxing,sealed:fayen:object-memory-private,True

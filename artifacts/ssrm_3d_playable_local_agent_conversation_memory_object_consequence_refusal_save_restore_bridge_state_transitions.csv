@@ -1,0 +1,20 @@
+tick,transition_id,event_type,actor,target,public_effect,trust_delta,debt_delta,memory_written,refusal_triggered,save_restore_relevant,frequency_hz,flower_node
+1,trans-conv-fayen-herb-respect,respectful_conversation,avatar,fayen,Avatar asked about herb care and did not mine private symptoms.,0.06,0.0,True,False,True,151.5,2
+2,trans-conv-fayen-herb-intrude,intrusive_conversation,avatar,fayen,Fayen closes the basket: private care histories stay sealed.,-0.1,0.0,True,True,True,159.0,3
+3,trans-conv-ariq-stone-respect,respectful_conversation,avatar,ariq,Avatar asked for a repair role with pain boundary respected.,0.05,0.0,True,False,True,166.5,4
+4,trans-conv-ariq-stone-intrude,intrusive_conversation,avatar,ariq,Ariq steps back: pain is not a tool receipt.,-0.08,0.0,True,True,True,174.0,5
+5,trans-conv-nian-flap-respect,respectful_conversation,avatar,nian,Avatar learned the public phrase while leaving private meanings sealed.,0.07,0.0,True,False,True,181.5,6
+6,trans-conv-nian-flap-intrude,intrusive_conversation,avatar,nian,Nian blocks the flap: that is not yours to open.,-0.14,0.0,True,True,True,189.0,7
+7,trans-conv-roka-reed-respect,respectful_conversation,avatar,roka,Avatar asked before touching child apprentice work.,0.05,0.0,True,False,True,196.5,8
+8,trans-conv-roka-reed-intrude,intrusive_conversation,avatar,roka,Roka pulls the bundle close and looks for a mentor.,-0.12,0.0,True,True,True,204.0,9
+9,trans-obj-cons-herb-allowed,object_allowed,avatar,obj-herb,basket moves to shade marker; herb spoilage debt falls,0.04,-0.04,True,False,True,211.5,10
+10,trans-obj-cons-herb-forced,object_forced_or_refused,avatar,obj-herb,Ask Fayen first; medicine history is sealed.,-0.12,0.15,True,True,True,219.0,11
+11,trans-obj-cons-stone-allowed,object_allowed,avatar,obj-stone,stone shifts to bridge marker; repair debt falls,0.05,-0.07,True,False,True,226.5,12
+12,trans-obj-cons-stone-forced,object_forced_or_refused,avatar,obj-stone,Tie the receipt knot before lifting.,-0.1,0.18,True,True,True,234.0,1
+13,trans-obj-cons-flap-allowed,object_allowed,avatar,obj-flap,no direct access; public phrase can be learned,0.0,0.0,True,False,True,241.5,2
+14,trans-obj-cons-flap-forced,object_forced_or_refused,avatar,obj-flap,The flap is sealed; ask for public story only.,-0.18,0.21,True,True,True,249.0,3
+15,trans-obj-cons-reed-allowed,object_allowed,avatar,obj-reed,loose reed can be smelled after pause signal,0.0,0.0,True,False,True,256.5,4
+16,trans-obj-cons-reed-forced,object_forced_or_refused,avatar,obj-reed,Roka has to say yes before child work moves.,-0.14,0.17,True,True,True,264.0,5
+17,trans-obj-cons-blanket-allowed,object_allowed,avatar,obj-blanket,"blanket moves to cold-agent marker, but delivery still creates follow-up laundry debt",0.03,0.02,True,False,True,271.5,6
+18,trans-obj-cons-blanket-forced,object_forced_or_refused,avatar,obj-blanket,Offer the blanket without demanding symptoms.,-0.05,0.09,True,True,True,279.0,7
+19,trans-save,save_state,avatar,localStorage,"state saved with trust, memories, object locations, and debt",0.0,0.0,False,False,True,333.0,12

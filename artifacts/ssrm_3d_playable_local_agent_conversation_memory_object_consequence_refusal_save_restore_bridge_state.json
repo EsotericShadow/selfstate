@@ -1,0 +1,11 @@
+{
+  "bounded_refusal_rate": 1.0,
+  "condition": "integrated_playable_local_agent_conversation_memory_object_consequence_refusal_save_restore",
+  "conversation_memory_update_rate": 1.0,
+  "local_agent_conversation_loop_readiness": 0.98,
+  "next_gate": "playable local 3D social memory loop with autonomous agent ticks, need-driven approach/avoidance, object planning, and cross-session relationship continuity",
+  "private_boundary": "sealed private workspaces plus functional boundary/refusal lines only",
+  "report": 222,
+  "save_restore_snapshot_integrity": 1.0,
+  "source_condition": "integrated_playable_local_3d_ecology_scene_spatial_bodies_sensory_weather_crop_habitat_material_conversation"
+}

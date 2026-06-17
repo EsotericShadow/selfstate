@@ -1,0 +1,6 @@
+object_id,label,x,y,owner_agent,permission,current_location,material_debt,care_value,can_move_with_consent,private_reason_digest
+obj-herb,calm herb basket,27,33,fayen,ask_before_touch,medicine garden,0.1,0.72,True,sealed:herb:private-care-reasons
+obj-stone,flat bridge stone,57,50,ariq,receipt_required,west bridge,0.22,0.61,True,sealed:stone:repair-pain-private
+obj-flap,archive flap,39,18,nian,look_only,archive room,0.06,0.44,False,sealed:flap:private-story-map
+obj-reed,reed bundle,18,60,roka,child_consent_required,river bank,0.16,0.39,False,sealed:reed:child-learning-private
+obj-blanket,wool blanket,33,43,community,public_care_use,warm alcove,0.08,0.8,True,sealed:blanket:recipient-private

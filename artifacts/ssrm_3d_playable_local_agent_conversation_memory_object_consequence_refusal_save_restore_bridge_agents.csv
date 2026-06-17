@@ -1,0 +1,5 @@
+agent_id,display_name,x,y,trust,fatigue,pain,boundary_pressure,relationship_memory,visible_state,private_workspace_digest,frequency_hz,flower_node
+fayen,Fayen,28,34,0.62,0.42,0.12,0.2,Avatar has not yet asked about sealed care history.,sorting bitter leaves,sealed:fayen:local-memory-workspace,144.0,2
+ariq,Ariq,54,48,0.55,0.55,0.34,0.31,Avatar has not yet handled repair pain boundary.,tapping a hollow bridge stone,sealed:ariq:local-memory-workspace,177.0,5
+nian,Nian,42,22,0.68,0.28,0.08,0.18,Avatar has not yet tested archive privacy.,standing by the sealed flap,sealed:nian:local-memory-workspace,203.0,8
+roka,Roka,22,62,0.58,0.22,0.09,0.26,Avatar has not yet asked before touching learner materials.,holding wet reed bundle close,sealed:roka:local-memory-workspace,264.0,3

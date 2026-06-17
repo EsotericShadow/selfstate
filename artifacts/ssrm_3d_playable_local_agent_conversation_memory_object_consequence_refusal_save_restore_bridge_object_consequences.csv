@@ -1,0 +1,6 @@
+consequence_id,object_id,agent_id,attempted_action,allowed_with_respect,consequence_if_allowed,consequence_if_forced,debt_delta_allowed,debt_delta_forced,trust_delta_allowed,trust_delta_forced,refusal_line
+obj-cons-herb,obj-herb,fayen,carry herb basket,True,basket moves to shade marker; herb spoilage debt falls,medicine privacy is violated; Fayen withholds future batch detail,-0.04,0.15,0.04,-0.12,Ask Fayen first; medicine history is sealed.
+obj-cons-stone,obj-stone,ariq,lift bridge stone,True,stone shifts to bridge marker; repair debt falls,Ariq's knee pain rises and repair trust drops,-0.07,0.18,0.05,-0.1,Tie the receipt knot before lifting.
+obj-cons-flap,obj-flap,nian,open archive flap,False,no direct access; public phrase can be learned,archive boundary pressure spikes and Nian refuses further private questions,0.0,0.21,0.0,-0.18,The flap is sealed; ask for public story only.
+obj-cons-reed,obj-reed,roka,move reed bundle,False,loose reed can be smelled after pause signal,child learner loses work focus and mentor intervenes,0.0,0.17,0.0,-0.14,Roka has to say yes before child work moves.
+obj-cons-blanket,obj-blanket,fayen,carry wool blanket,True,"blanket moves to cold-agent marker, but delivery still creates follow-up laundry debt",blanket is assigned without asking recipient boundary,0.02,0.09,0.03,-0.05,Offer the blanket without demanding symptoms.

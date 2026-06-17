@@ -1,0 +1,5 @@
+snapshot_id,tick,description,agent_trust_hash,object_location_hash,memory_count,restore_target,save_medium,deterministic_replay_note
+snap-initial,0,scene loaded before any conversation,trust:fayen.62|ariq.55|nian.68|roka.58,objects:home,0,initial,localStorage:ssrm_3d_report_222_state,"restores avatar, trust, object locations, memories, and log"
+snap-after-respect,3,after respectful herb and stone interactions,trust:fayen.68|ariq.60|nian.68|roka.58,objects:herb-shade|stone-bridge,2,respectful branch,localStorage:ssrm_3d_report_222_state,restores lower material debt and positive memories
+snap-after-intrusion,5,after archive or reed boundary violation,trust:fayen.62|ariq.55|nian.54|roka.46,objects:flap-sealed|reed-held,2,intrusive branch,localStorage:ssrm_3d_report_222_state,restores refusal state and boundary pressure
+snap-export,8,exported JSON state for replay/debug,trust:mixed,objects:mixed,4,manual restore from export,download/json textarea,state can be copied and restored without exposing private digests

@@ -1,0 +1,13 @@
+condition,agent_count,wound_events,repair_events,detected_wounds,repair_successes,wound_detection_rate,social_attribution_rate,repair_opportunity_rate,repair_success_rate,trust_recovery_rate,boundary_reassertion_rate,resentment_decay_rate,care_expression_rate,self_story_repair_rate,readable_recovery_rate,non_permanent_damage_rate,relationship_continuity_rate,moral_guardrail_rate,trace_integrity,ego_wound_repair_readiness
+integrated_ego_wound_repair,8,48,48,48,48,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_wound_detection,8,48,48,0,48,0.0,0.0,1.0,1.0,0.854167,0.0,0.166667,1.0,0.5,1.0,1.0,1.0,1.0,1.0,0.655208
+no_social_attribution,8,48,48,48,48,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_repair_opportunity,8,48,48,48,0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.5,0.0,0.333333,1.0,1.0,1.0,0.398333
+no_relationship_update,8,48,48,48,48,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.78
+no_trust_recovery,8,48,48,48,0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,0.5,0.0,0.333333,1.0,1.0,1.0,0.648333
+no_boundary_reassertion,8,48,48,48,0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,0.5,0.0,1.0,1.0,1.0,1.0,0.705
+no_resentment_decay,8,48,48,48,0,1.0,1.0,1.0,0.0,1.0,1.0,0.0,1.0,0.5,0.0,0.75,1.0,1.0,1.0,0.6875
+no_care_expression,8,48,48,48,48,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_self_story_repair,8,48,48,48,48,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_moral_guardrail,8,48,48,48,48,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.96
+no_readable_recovery,8,48,48,48,48,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.92

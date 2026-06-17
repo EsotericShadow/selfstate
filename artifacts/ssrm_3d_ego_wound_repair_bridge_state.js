@@ -1,0 +1,1741 @@
+window.SSRM_3D_EGO_WOUND_REPAIR_STATE = {
+  "agent_repair_states": {
+    "integrated_deep_time_world:00": {
+      "agent_id": "integrated_deep_time_world:00",
+      "body": {
+        "breath_rate": 0.219144,
+        "comfort": 0.686576,
+        "energy": 0.057699,
+        "fatigue": 0.463589,
+        "hunger": 0.546409,
+        "injury": 0.055221,
+        "movement_effort": 0.274342,
+        "pain": 0.118267,
+        "rest_debt": 0.257995,
+        "safety": 0.661863,
+        "temperature": 0.62,
+        "thirst": 0.261551,
+        "wetness": 0.149244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.179,
+        "felt_respect": 0.5755,
+        "self_story": [
+          "I was affected by moved_owned_object; I need repair, not punishment.",
+          "Repair through return_object changed what I expect from Gabriel.",
+          "I was affected by public_correction; I need repair, not punishment.",
+          "Repair through accurate_praise changed what I expect from Gabriel.",
+          "I was affected by repeated_question; I need repair, not punishment.",
+          "Repair through patient_waiting changed what I expect from Gabriel.",
+          "I was affected by unsafe_request; I need repair, not punishment.",
+          "Repair through safer_alternative changed what I expect from Gabriel.",
+          "I was affected by misnamed_agent; I need repair, not punishment.",
+          "Repair through name_repair changed what I expect from Gabriel."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.182634,
+        "attachment": 0.519372,
+        "control": 0.606676,
+        "curiosity": 0.231034,
+        "frustration": 0.0424,
+        "safety": 0.961863,
+        "valence": 1.0
+      },
+      "first_person_frame": {},
+      "name": "Ari",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "archive_stone",
+        "sleeping_place": "archive_knoll",
+        "unfinished_task": "repair_route"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.719832,
+        "favorite_object": "archive_stone",
+        "favorite_ritual": "check_hearth",
+        "home_place": "archive_knoll",
+        "likes_warm_places": 0.773174,
+        "prefers_familiar_agents": 0.61745
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "avatar_approach",
+          "ownership_hit": false,
+          "respect_delta": 0.01,
+          "summary": "Gabriel approached while I was listening.",
+          "tick": 9
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "repair_route",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "toward_avatar",
+        "line": "I can keep going while staying aware of you.",
+        "marker": "turns_toward",
+        "movement_speed": 0.676308,
+        "posture": "guarded",
+        "proximity": "neutral"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.1116,
+          "comfort": 0.501813,
+          "curiosity": 0.373931,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "helpful",
+              "kind": "avatar_approach",
+              "ownership_hit": false,
+              "respect_delta": 0.01,
+              "summary": "Gabriel approached while I was listening.",
+              "tick": 9
+            },
+            {
+              "actor": "avatar",
+              "kind": "interrupted_work",
+              "tick": 0,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "apology_and_space",
+              "tick": 3,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "moved_owned_object",
+              "tick": 32,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "return_object",
+              "tick": 35,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "public_correction",
+              "tick": 64,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "accurate_praise",
+              "tick": 67,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "repeated_question",
+              "tick": 96,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "patient_waiting",
+              "tick": 99,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "unsafe_request",
+              "tick": 128,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "safer_alternative",
+              "tick": 131,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "misnamed_agent",
+              "tick": 160,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "name_repair",
+              "tick": 163,
+              "valence": "repair"
+            }
+          ],
+          "familiarity": 0.55,
+          "gratitude": 0.657,
+          "resentment": 0.0,
+          "trust": 0.702129
+        }
+      },
+      "role": "scout",
+      "temperament": {
+        "autonomy_need": 0.30002,
+        "bold": 0.318099,
+        "comfort_seeking": 0.725316,
+        "curious": 0.231034,
+        "forgiveness": 0.557665,
+        "playful": 0.288299,
+        "pride_sensitivity": 0.868073,
+        "shame_sensitivity": 0.816933,
+        "social": 0.258963,
+        "trusting": 0.594706
+      }
+    },
+    "integrated_deep_time_world:01": {
+      "agent_id": "integrated_deep_time_world:01",
+      "body": {
+        "breath_rate": 0.270921,
+        "comfort": 0.656659,
+        "energy": 0.320269,
+        "fatigue": 0.605856,
+        "hunger": 0.50902,
+        "injury": 0.042821,
+        "movement_effort": 0.325949,
+        "pain": 0.096867,
+        "rest_debt": 0.394159,
+        "safety": 0.655918,
+        "temperature": 0.6,
+        "thirst": 0.160133,
+        "wetness": 0.167244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.272,
+        "felt_respect": 0.548,
+        "recent_ego_repair": "avatar_help",
+        "recent_ego_wound": null,
+        "self_story": [
+          "I was affected by public_correction; I need repair, not punishment.",
+          "Repair through accurate_praise changed what I expect from Gabriel.",
+          "I was affected by repeated_question; I need repair, not punishment.",
+          "Repair through patient_waiting changed what I expect from Gabriel.",
+          "I was affected by unsafe_request; I need repair, not punishment.",
+          "Repair through safer_alternative changed what I expect from Gabriel.",
+          "I was affected by misnamed_agent; I need repair, not punishment.",
+          "Repair through name_repair changed what I expect from Gabriel.",
+          "I was affected by interrupted_work; I need repair, not punishment.",
+          "Repair through apology_and_space changed what I expect from Gabriel."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.386207,
+        "attachment": 0.535774,
+        "control": 0.574935,
+        "curiosity": 0.32309,
+        "frustration": 0.0556,
+        "safety": 0.955918,
+        "valence": 0.996
+      },
+      "first_person_frame": {},
+      "name": "Bo",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "clay_cistern",
+        "sleeping_place": "ash_edge",
+        "unfinished_task": "watch_water"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.803859,
+        "favorite_object": "clay_cistern",
+        "favorite_ritual": "touch_marker",
+        "home_place": "ash_edge",
+        "likes_warm_places": 0.490159,
+        "prefers_familiar_agents": 0.403185
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "avatar_help",
+          "ownership_hit": false,
+          "respect_delta": 0.08,
+          "summary": "Gabriel held the marker steady during repair.",
+          "tick": 38
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "watch_water",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "toward_avatar",
+        "line": "I can keep going while staying aware of you.",
+        "marker": "turns_toward",
+        "movement_speed": 0.655872,
+        "posture": "guarded",
+        "proximity": "neutral"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.1214,
+          "comfort": 0.513578,
+          "curiosity": 0.403389,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "harmful",
+              "kind": "avatar_interrupt_work",
+              "ownership_hit": false,
+              "respect_delta": -0.12,
+              "summary": "Gabriel interrupted repair work.",
+              "tick": 21
+            },
+            {
+              "felt": "helpful",
+              "kind": "avatar_help",
+              "ownership_hit": false,
+              "respect_delta": 0.08,
+              "summary": "Gabriel held the marker steady during repair.",
+              "tick": 38
+            },
+            {
+              "actor": "avatar",
+              "kind": "moved_owned_object",
+              "tick": 4,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "return_object",
+              "tick": 7,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "public_correction",
+              "tick": 36,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "accurate_praise",
+              "tick": 39,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "repeated_question",
+              "tick": 68,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "patient_waiting",
+              "tick": 71,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "unsafe_request",
+              "tick": 100,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "safer_alternative",
+              "tick": 103,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "misnamed_agent",
+              "tick": 132,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "name_repair",
+              "tick": 135,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "interrupted_work",
+              "tick": 164,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "apology_and_space",
+              "tick": 167,
+              "valence": "repair"
+            }
+          ],
+          "familiarity": 0.59,
+          "gratitude": 0.6955,
+          "resentment": 0.0,
+          "trust": 0.70225
+        }
+      },
+      "role": "builder",
+      "temperament": {
+        "autonomy_need": 0.729057,
+        "bold": 0.313225,
+        "comfort_seeking": 0.356351,
+        "curious": 0.32309,
+        "forgiveness": 0.783128,
+        "playful": 0.684299,
+        "pride_sensitivity": 0.491402,
+        "shame_sensitivity": 0.713325,
+        "social": 0.30988,
+        "trusting": 0.616876
+      }
+    },
+    "integrated_deep_time_world:02": {
+      "agent_id": "integrated_deep_time_world:02",
+      "body": {
+        "breath_rate": 0.318287,
+        "comfort": 0.653818,
+        "energy": 0.022957,
+        "fatigue": 0.518545,
+        "hunger": 0.567999,
+        "injury": 0.055221,
+        "movement_effort": 0.306325,
+        "pain": 0.116667,
+        "rest_debt": 0.554181,
+        "safety": 0.664899,
+        "temperature": 0.58,
+        "thirst": 0.173692,
+        "wetness": 0.185244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.266,
+        "felt_respect": 0.603,
+        "recent_ego_repair": "apology_space",
+        "recent_ego_wound": null,
+        "self_story": [
+          "I was affected by repeated_question; I need repair, not punishment.",
+          "Repair through patient_waiting changed what I expect from Gabriel.",
+          "I was affected by unsafe_request; I need repair, not punishment.",
+          "Repair through safer_alternative changed what I expect from Gabriel.",
+          "I was affected by misnamed_agent; I need repair, not punishment.",
+          "Repair through name_repair changed what I expect from Gabriel.",
+          "I was affected by interrupted_work; I need repair, not punishment.",
+          "Repair through apology_and_space changed what I expect from Gabriel.",
+          "I was affected by moved_owned_object; I need repair, not punishment.",
+          "Repair through return_object changed what I expect from Gabriel."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.477752,
+        "attachment": 0.622272,
+        "control": 0.618287,
+        "curiosity": 0.875698,
+        "frustration": 0.05,
+        "safety": 0.964899,
+        "valence": 0.964
+      },
+      "first_person_frame": {},
+      "name": "Cy",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "fire_hearth",
+        "sleeping_place": "cairn_ridge",
+        "unfinished_task": "teach_token"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.741424,
+        "favorite_object": "fire_hearth",
+        "favorite_ritual": "listen_before_work",
+        "home_place": "cairn_ridge",
+        "likes_warm_places": 0.301559,
+        "prefers_familiar_agents": 0.563486
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "apology_space",
+          "ownership_hit": false,
+          "respect_delta": 0.1,
+          "summary": "Gabriel apologized and stepped back.",
+          "tick": 69
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "teach_token",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "aside",
+        "line": "I can keep going while staying aware of you.",
+        "marker": "turns_toward",
+        "movement_speed": 0.65852,
+        "posture": "guarded",
+        "proximity": "neutral"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.1168,
+          "comfort": 0.586622,
+          "curiosity": 0.580223,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "harmful",
+              "kind": "ask_wet_route",
+              "ownership_hit": false,
+              "respect_delta": -0.04,
+              "summary": "Gabriel asked me to cross the wet route while tired.",
+              "tick": 52
+            },
+            {
+              "felt": "helpful",
+              "kind": "apology_space",
+              "ownership_hit": false,
+              "respect_delta": 0.1,
+              "summary": "Gabriel apologized and stepped back.",
+              "tick": 69
+            },
+            {
+              "actor": "avatar",
+              "kind": "public_correction",
+              "tick": 8,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "accurate_praise",
+              "tick": 11,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "repeated_question",
+              "tick": 40,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "patient_waiting",
+              "tick": 43,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "unsafe_request",
+              "tick": 72,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "safer_alternative",
+              "tick": 75,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "misnamed_agent",
+              "tick": 104,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "name_repair",
+              "tick": 107,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "interrupted_work",
+              "tick": 136,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "apology_and_space",
+              "tick": 139,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "moved_owned_object",
+              "tick": 168,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "return_object",
+              "tick": 171,
+              "valence": "repair"
+            }
+          ],
+          "familiarity": 0.59,
+          "gratitude": 0.692,
+          "resentment": 0.0,
+          "trust": 0.638432
+        }
+      },
+      "role": "healer",
+      "temperament": {
+        "autonomy_need": 0.593573,
+        "bold": 0.392732,
+        "comfort_seeking": 0.355838,
+        "curious": 0.875698,
+        "forgiveness": 0.669098,
+        "playful": 0.274151,
+        "pride_sensitivity": 0.223448,
+        "shame_sensitivity": 0.38342,
+        "social": 0.701235,
+        "trusting": 0.260135
+      }
+    },
+    "integrated_deep_time_world:03": {
+      "agent_id": "integrated_deep_time_world:03",
+      "body": {
+        "breath_rate": 0.221334,
+        "comfort": 0.65989,
+        "energy": 0.235407,
+        "fatigue": 0.518363,
+        "hunger": 0.449413,
+        "injury": 0.042821,
+        "movement_effort": 0.301702,
+        "pain": 0.096767,
+        "rest_debt": 0.256874,
+        "safety": 0.675106,
+        "temperature": 0.56,
+        "thirst": 0.327183,
+        "wetness": 0.203244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.251,
+        "felt_respect": 0.559,
+        "recent_ego_repair": "return_owned_object",
+        "recent_ego_wound": null,
+        "self_story": [
+          "I was affected by unsafe_request; I need repair, not punishment.",
+          "Repair through safer_alternative changed what I expect from Gabriel.",
+          "I was affected by misnamed_agent; I need repair, not punishment.",
+          "Repair through name_repair changed what I expect from Gabriel.",
+          "I was affected by interrupted_work; I need repair, not punishment.",
+          "Repair through apology_and_space changed what I expect from Gabriel.",
+          "I was affected by moved_owned_object; I need repair, not punishment.",
+          "Repair through return_object changed what I expect from Gabriel.",
+          "I was affected by public_correction; I need repair, not punishment.",
+          "Repair through accurate_praise changed what I expect from Gabriel."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.307728,
+        "attachment": 0.558328,
+        "control": 0.599587,
+        "curiosity": 0.648806,
+        "frustration": 0.0875,
+        "safety": 0.975106,
+        "valence": 0.939
+      },
+      "first_person_frame": {},
+      "name": "Dee",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "grain_store",
+        "sleeping_place": "central_hearth",
+        "unfinished_task": "warm_nest"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.616612,
+        "favorite_object": "grain_store",
+        "favorite_ritual": "share_water_token",
+        "home_place": "central_hearth",
+        "likes_warm_places": 0.575404,
+        "prefers_familiar_agents": 0.731982
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "return_owned_object",
+          "ownership_hit": true,
+          "respect_delta": 0.13,
+          "summary": "Gabriel returned the tool and named why it mattered.",
+          "tick": 101
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "warm_nest",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "aside",
+        "line": "I can keep going while staying aware of you.",
+        "marker": "turns_toward",
+        "movement_speed": 0.678776,
+        "posture": "guarded",
+        "proximity": "neutral"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.1226,
+          "comfort": 0.531704,
+          "curiosity": 0.507618,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "harmful",
+              "kind": "move_owned_object",
+              "ownership_hit": true,
+              "respect_delta": -0.15,
+              "summary": "Gabriel moved my preferred tool without asking.",
+              "tick": 84
+            },
+            {
+              "felt": "helpful",
+              "kind": "return_owned_object",
+              "ownership_hit": true,
+              "respect_delta": 0.13,
+              "summary": "Gabriel returned the tool and named why it mattered.",
+              "tick": 101
+            },
+            {
+              "actor": "avatar",
+              "kind": "repeated_question",
+              "tick": 12,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "patient_waiting",
+              "tick": 15,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "unsafe_request",
+              "tick": 44,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "safer_alternative",
+              "tick": 47,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "misnamed_agent",
+              "tick": 76,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "name_repair",
+              "tick": 79,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "interrupted_work",
+              "tick": 108,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "apology_and_space",
+              "tick": 111,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "moved_owned_object",
+              "tick": 140,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "return_object",
+              "tick": 143,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "public_correction",
+              "tick": 172,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "accurate_praise",
+              "tick": 175,
+              "valence": "repair"
+            }
+          ],
+          "familiarity": 0.59,
+          "gratitude": 0.699,
+          "resentment": 0.0,
+          "trust": 0.619409
+        }
+      },
+      "role": "farmer",
+      "temperament": {
+        "autonomy_need": 0.44207,
+        "bold": 0.512457,
+        "comfort_seeking": 0.484232,
+        "curious": 0.648806,
+        "forgiveness": 0.807413,
+        "playful": 0.537939,
+        "pride_sensitivity": 0.54843,
+        "shame_sensitivity": 0.207154,
+        "social": 0.41058,
+        "trusting": 0.256704
+      }
+    },
+    "integrated_deep_time_world:04": {
+      "agent_id": "integrated_deep_time_world:04",
+      "body": {
+        "breath_rate": 0.223036,
+        "comfort": 0.662128,
+        "energy": 0.207847,
+        "fatigue": 0.488277,
+        "hunger": 0.570328,
+        "injury": 0.055221,
+        "movement_effort": 0.303018,
+        "pain": 0.112667,
+        "rest_debt": 0.203643,
+        "safety": 0.724519,
+        "temperature": 0.62,
+        "thirst": 0.536386,
+        "wetness": 0.221244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.17,
+        "felt_respect": 0.625,
+        "recent_ego_repair": "comfort_after_pain",
+        "recent_ego_wound": null,
+        "self_story": [
+          "I was affected by misnamed_agent; I need repair, not punishment.",
+          "Repair through name_repair changed what I expect from Gabriel.",
+          "I was affected by interrupted_work; I need repair, not punishment.",
+          "Repair through apology_and_space changed what I expect from Gabriel.",
+          "I was affected by moved_owned_object; I need repair, not punishment.",
+          "Repair through return_object changed what I expect from Gabriel.",
+          "I was affected by public_correction; I need repair, not punishment.",
+          "Repair through accurate_praise changed what I expect from Gabriel.",
+          "I was affected by repeated_question; I need repair, not punishment.",
+          "Repair through patient_waiting changed what I expect from Gabriel."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.265281,
+        "attachment": 0.649344,
+        "control": 0.649201,
+        "curiosity": 0.255102,
+        "frustration": 0.0375,
+        "safety": 1.0,
+        "valence": 0.963
+      },
+      "first_person_frame": {},
+      "name": "Eli",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "herb_garden",
+        "sleeping_place": "drum_court",
+        "unfinished_task": "repair_route"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.749058,
+        "favorite_object": "herb_garden",
+        "favorite_ritual": "check_hearth",
+        "home_place": "drum_court",
+        "likes_warm_places": 0.499546,
+        "prefers_familiar_agents": 0.575298
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "comfort_after_pain",
+          "ownership_hit": false,
+          "respect_delta": 0.1,
+          "summary": "Gabriel noticed pain rising and offered rest.",
+          "tick": 117
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "repair_route",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "toward_avatar",
+        "line": "I recognize you and can answer from what just happened to me.",
+        "marker": "approaches",
+        "movement_speed": 0.692824,
+        "posture": "open",
+        "proximity": "seeking"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.0808,
+          "comfort": 0.630809,
+          "curiosity": 0.381633,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "helpful",
+              "kind": "comfort_after_pain",
+              "ownership_hit": false,
+              "respect_delta": 0.1,
+              "summary": "Gabriel noticed pain rising and offered rest.",
+              "tick": 117
+            },
+            {
+              "actor": "avatar",
+              "kind": "unsafe_request",
+              "tick": 16,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "safer_alternative",
+              "tick": 19,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "misnamed_agent",
+              "tick": 48,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "name_repair",
+              "tick": 51,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "interrupted_work",
+              "tick": 80,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "apology_and_space",
+              "tick": 83,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "moved_owned_object",
+              "tick": 112,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "return_object",
+              "tick": 115,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "public_correction",
+              "tick": 144,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "accurate_praise",
+              "tick": 147,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "repeated_question",
+              "tick": 176,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "patient_waiting",
+              "tick": 179,
+              "valence": "repair"
+            }
+          ],
+          "familiarity": 0.55,
+          "gratitude": 0.706,
+          "resentment": 0.0,
+          "trust": 0.818418
+        }
+      },
+      "role": "guard",
+      "temperament": {
+        "autonomy_need": 0.285838,
+        "bold": 0.818904,
+        "comfort_seeking": 0.389708,
+        "curious": 0.255102,
+        "forgiveness": 0.584429,
+        "playful": 0.633708,
+        "pride_sensitivity": 0.227841,
+        "shame_sensitivity": 0.580917,
+        "social": 0.773384,
+        "trusting": 0.790074
+      }
+    },
+    "integrated_deep_time_world:05": {
+      "agent_id": "integrated_deep_time_world:05",
+      "body": {
+        "breath_rate": 0.282594,
+        "comfort": 0.650877,
+        "energy": 0.288403,
+        "fatigue": 0.490891,
+        "hunger": 0.345759,
+        "injury": 0.042821,
+        "movement_effort": 0.274613,
+        "pain": 0.096967,
+        "rest_debt": 0.359138,
+        "safety": 0.679535,
+        "temperature": 0.6,
+        "thirst": 0.191589,
+        "wetness": 0.149244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.258,
+        "felt_respect": 0.559,
+        "recent_ego_repair": "praise_competence",
+        "recent_ego_wound": null,
+        "self_story": [
+          "I was affected by interrupted_work; I need repair, not punishment.",
+          "Repair through apology_and_space changed what I expect from Gabriel.",
+          "I was affected by moved_owned_object; I need repair, not punishment.",
+          "Repair through return_object changed what I expect from Gabriel.",
+          "I was affected by public_correction; I need repair, not punishment.",
+          "Repair through accurate_praise changed what I expect from Gabriel.",
+          "I was affected by repeated_question; I need repair, not punishment.",
+          "Repair through patient_waiting changed what I expect from Gabriel.",
+          "I was affected by unsafe_request; I need repair, not punishment.",
+          "Repair through safer_alternative changed what I expect from Gabriel."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.382958,
+        "attachment": 0.581109,
+        "control": 0.595526,
+        "curiosity": 0.57945,
+        "frustration": 0.0539,
+        "safety": 0.979535,
+        "valence": 0.994
+      },
+      "first_person_frame": {},
+      "name": "Fay",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "loom_frame",
+        "sleeping_place": "grain_shade",
+        "unfinished_task": "watch_water"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.912556,
+        "favorite_object": "loom_frame",
+        "favorite_ritual": "touch_marker",
+        "home_place": "grain_shade",
+        "likes_warm_places": 0.394721,
+        "prefers_familiar_agents": 0.847729
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "praise_competence",
+          "ownership_hit": false,
+          "respect_delta": 0.12,
+          "summary": "Gabriel praised the route repair accurately.",
+          "tick": 149
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "watch_water",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "toward_avatar",
+        "line": "I can keep going while staying aware of you.",
+        "marker": "turns_toward",
+        "movement_speed": 0.658868,
+        "posture": "guarded",
+        "proximity": "neutral"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.1202,
+          "comfort": 0.550998,
+          "curiosity": 0.485424,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "harmful",
+              "kind": "public_correction",
+              "ownership_hit": false,
+              "respect_delta": -0.14,
+              "summary": "Gabriel corrected me in front of others.",
+              "tick": 132
+            },
+            {
+              "felt": "helpful",
+              "kind": "praise_competence",
+              "ownership_hit": false,
+              "respect_delta": 0.12,
+              "summary": "Gabriel praised the route repair accurately.",
+              "tick": 149
+            },
+            {
+              "actor": "avatar",
+              "kind": "misnamed_agent",
+              "tick": 20,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "name_repair",
+              "tick": 23,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "interrupted_work",
+              "tick": 52,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "apology_and_space",
+              "tick": 55,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "moved_owned_object",
+              "tick": 84,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "return_object",
+              "tick": 87,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "public_correction",
+              "tick": 116,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "accurate_praise",
+              "tick": 119,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "repeated_question",
+              "tick": 148,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "patient_waiting",
+              "tick": 151,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "unsafe_request",
+              "tick": 180,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "safer_alternative",
+              "tick": 183,
+              "valence": "repair"
+            }
+          ],
+          "familiarity": 0.59,
+          "gratitude": 0.692,
+          "resentment": 0.0,
+          "trust": 0.700758
+        }
+      },
+      "role": "teacher",
+      "temperament": {
+        "autonomy_need": 0.726237,
+        "bold": 0.488705,
+        "comfort_seeking": 0.241574,
+        "curious": 0.57945,
+        "forgiveness": 0.588012,
+        "playful": 0.134388,
+        "pride_sensitivity": 0.863307,
+        "shame_sensitivity": 0.628464,
+        "social": 0.517766,
+        "trusting": 0.595657
+      }
+    },
+    "integrated_deep_time_world:06": {
+      "agent_id": "integrated_deep_time_world:06",
+      "body": {
+        "breath_rate": 0.246256,
+        "comfort": 0.678129,
+        "energy": 0.272716,
+        "fatigue": 0.489411,
+        "hunger": 0.196768,
+        "injury": 0.055221,
+        "movement_effort": 0.291371,
+        "pain": 0.120867,
+        "rest_debt": 0.29272,
+        "safety": 0.672209,
+        "temperature": 0.58,
+        "thirst": 0.232139,
+        "wetness": 0.167244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.26,
+        "felt_respect": 0.537,
+        "recent_ego_wound": "repeated_question",
+        "self_story": [
+          "I was affected by moved_owned_object; I need repair, not punishment.",
+          "Repair through return_object changed what I expect from Gabriel.",
+          "I was affected by public_correction; I need repair, not punishment.",
+          "Repair through accurate_praise changed what I expect from Gabriel.",
+          "I was affected by repeated_question; I need repair, not punishment.",
+          "Repair through patient_waiting changed what I expect from Gabriel.",
+          "I was affected by unsafe_request; I need repair, not punishment.",
+          "Repair through safer_alternative changed what I expect from Gabriel.",
+          "I was affected by misnamed_agent; I need repair, not punishment.",
+          "Repair through name_repair changed what I expect from Gabriel."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.242859,
+        "attachment": 0.617409,
+        "control": 0.600471,
+        "curiosity": 0.678867,
+        "frustration": 0.083,
+        "safety": 0.972209,
+        "valence": 1.0
+      },
+      "first_person_frame": {},
+      "name": "Gus",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "nursery_mat",
+        "sleeping_place": "herb_slope",
+        "unfinished_task": "teach_token"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.66229,
+        "favorite_object": "nursery_mat",
+        "favorite_ritual": "listen_before_work",
+        "home_place": "herb_slope",
+        "likes_warm_places": 0.757392,
+        "prefers_familiar_agents": 0.284537
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "harmful",
+          "kind": "repeated_question",
+          "ownership_hit": false,
+          "respect_delta": -0.06,
+          "summary": "Gabriel asked the same memory question again.",
+          "tick": 166
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "teach_token",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "aside",
+        "line": "I can keep going while staying aware of you.",
+        "marker": "turns_toward",
+        "movement_speed": 0.65036,
+        "posture": "guarded",
+        "proximity": "neutral"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.1364,
+          "comfort": 0.567117,
+          "curiosity": 0.517237,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "harmful",
+              "kind": "repeated_question",
+              "ownership_hit": false,
+              "respect_delta": -0.06,
+              "summary": "Gabriel asked the same memory question again.",
+              "tick": 166
+            },
+            {
+              "actor": "avatar",
+              "kind": "interrupted_work",
+              "tick": 24,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "apology_and_space",
+              "tick": 27,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "moved_owned_object",
+              "tick": 56,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "return_object",
+              "tick": 59,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "public_correction",
+              "tick": 88,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "accurate_praise",
+              "tick": 91,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "repeated_question",
+              "tick": 120,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "patient_waiting",
+              "tick": 123,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "unsafe_request",
+              "tick": 152,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "safer_alternative",
+              "tick": 155,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "misnamed_agent",
+              "tick": 184,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "name_repair",
+              "tick": 187,
+              "valence": "repair"
+            }
+          ],
+          "familiarity": 0.55,
+          "gratitude": 0.65,
+          "resentment": 0.0,
+          "trust": 0.628246
+        }
+      },
+      "role": "trader",
+      "temperament": {
+        "autonomy_need": 0.538933,
+        "bold": 0.495649,
+        "comfort_seeking": 0.769727,
+        "curious": 0.678867,
+        "forgiveness": 0.344346,
+        "playful": 0.627041,
+        "pride_sensitivity": 0.84502,
+        "shame_sensitivity": 0.322541,
+        "social": 0.737314,
+        "trusting": 0.466026
+      }
+    },
+    "integrated_deep_time_world:07": {
+      "agent_id": "integrated_deep_time_world:07",
+      "body": {
+        "breath_rate": 0.208605,
+        "comfort": 0.667149,
+        "energy": 0.288216,
+        "fatigue": 0.532757,
+        "hunger": 0.477867,
+        "injury": 0.042821,
+        "movement_effort": 0.30121,
+        "pain": 0.095067,
+        "rest_debt": 0.489798,
+        "safety": 0.673526,
+        "temperature": 0.56,
+        "thirst": 0.302353,
+        "wetness": 0.185244
+      },
+      "ego_state": {
+        "boundary_pressure": 0.169,
+        "felt_respect": 0.6305,
+        "recent_ego_repair": "respectful_wait",
+        "recent_ego_wound": null,
+        "self_story": [
+          "I was affected by public_correction; I need repair, not punishment.",
+          "Repair through accurate_praise changed what I expect from Gabriel.",
+          "I was affected by repeated_question; I need repair, not punishment.",
+          "Repair through patient_waiting changed what I expect from Gabriel.",
+          "I was affected by unsafe_request; I need repair, not punishment.",
+          "Repair through safer_alternative changed what I expect from Gabriel.",
+          "I was affected by misnamed_agent; I need repair, not punishment.",
+          "Repair through name_repair changed what I expect from Gabriel.",
+          "I was affected by interrupted_work; I need repair, not punishment.",
+          "Repair through apology_and_space changed what I expect from Gabriel."
+        ]
+      },
+      "felt_state": {
+        "arousal": 0.210591,
+        "attachment": 0.591881,
+        "control": 0.633937,
+        "curiosity": 0.302354,
+        "frustration": 0.012,
+        "safety": 0.973526,
+        "valence": 0.996
+      },
+      "first_person_frame": {},
+      "name": "Ira",
+      "owned_things": {
+        "boundary": "may refuse unsafe or disrespectful requests",
+        "favorite_object": "route_cairn",
+        "sleeping_place": "loom_room",
+        "unfinished_task": "warm_nest"
+      },
+      "preferences": {
+        "avoids_wet_routes": 0.934811,
+        "favorite_object": "route_cairn",
+        "favorite_ritual": "share_water_token",
+        "home_place": "loom_room",
+        "likes_warm_places": 0.557004,
+        "prefers_familiar_agents": 0.652961
+      },
+      "private_workspace": {
+        "active_memory": {
+          "felt": "helpful",
+          "kind": "respectful_wait",
+          "ownership_hit": false,
+          "respect_delta": 0.11,
+          "summary": "Gabriel waited until I finished before asking.",
+          "tick": 181
+        },
+        "active_relationship_concern": "avatar",
+        "current_focus": "warm_nest",
+        "current_intention": "continue task",
+        "dominant_feeling": "valence",
+        "dominant_need": "rest",
+        "predicted_next_event": "continue my routine",
+        "private": true,
+        "self_note": "Keep my routine coherent.",
+        "suppressed_alternative_action": "withdraw"
+      },
+      "public_behavior": {
+        "bounded_refusal": false,
+        "debug_private_workspace_exposed": false,
+        "gaze": "toward_avatar",
+        "line": "I recognize you and can answer from what just happened to me.",
+        "marker": "approaches",
+        "movement_speed": 0.68662,
+        "posture": "open",
+        "proximity": "seeking"
+      },
+      "relationship_memory": {
+        "avatar": {
+          "avoidance": 0.094,
+          "comfort": 0.574085,
+          "curiosity": 0.396753,
+          "dependency": 0.08,
+          "episodes": [
+            {
+              "felt": "helpful",
+              "kind": "respectful_wait",
+              "ownership_hit": false,
+              "respect_delta": 0.11,
+              "summary": "Gabriel waited until I finished before asking.",
+              "tick": 181
+            },
+            {
+              "actor": "avatar",
+              "kind": "moved_owned_object",
+              "tick": 28,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "return_object",
+              "tick": 31,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "public_correction",
+              "tick": 60,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "accurate_praise",
+              "tick": 63,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "repeated_question",
+              "tick": 92,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "patient_waiting",
+              "tick": 95,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "unsafe_request",
+              "tick": 124,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "safer_alternative",
+              "tick": 127,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "misnamed_agent",
+              "tick": 156,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "name_repair",
+              "tick": 159,
+              "valence": "repair"
+            },
+            {
+              "actor": "avatar",
+              "kind": "interrupted_work",
+              "tick": 188,
+              "valence": "wound"
+            },
+            {
+              "actor": "avatar",
+              "kind": "apology_and_space",
+              "tick": 191,
+              "valence": "repair"
+            }
+          ],
+          "familiarity": 0.55,
+          "gratitude": 0.685,
+          "resentment": 0.0,
+          "trust": 0.790294
+        }
+      },
+      "role": "pattern_keeper",
+      "temperament": {
+        "autonomy_need": 0.636806,
+        "bold": 0.397957,
+        "comfort_seeking": 0.452477,
+        "curious": 0.302354,
+        "forgiveness": 0.321839,
+        "playful": 0.456325,
+        "pride_sensitivity": 0.729151,
+        "shame_sensitivity": 0.174659,
+        "social": 0.544914,
+        "trusting": 0.760393
+      }
+    }
+  },
+  "condition": "integrated_ego_wound_repair",
+  "config": {
+    "cycles": 6,
+    "seed": 20260710,
+    "source_state": "artifacts/ssrm_3d_first_person_ego_state_bridge_state.json"
+  },
+  "limits": {
+    "complete_playable_world_claim": false,
+    "literal_suffering_claim": false,
+    "llm_calls": 0,
+    "subjective_consciousness_claim": false
+  },
+  "moral_boundary": {
+    "distress_must_create_care_opportunities": true,
+    "literal_suffering_claim": false,
+    "no_suffering_maximization": true,
+    "no_unrecoverable_distress_loops": true,
+    "recoverable_ego": true,
+    "subjective_consciousness_claim": false
+  },
+  "public_agent_views": [
+    {
+      "agent_id": "integrated_deep_time_world:00",
+      "boundary_pressure": 0.179,
+      "felt_respect": 0.5755,
+      "frustration": 0.0424,
+      "line": "I remember the wound, but repair changed what I expect.",
+      "name": "Ari",
+      "resentment": 0.0,
+      "role": "scout",
+      "trust_in_avatar": 0.702129,
+      "visible_marker": "softened"
+    },
+    {
+      "agent_id": "integrated_deep_time_world:01",
+      "boundary_pressure": 0.272,
+      "felt_respect": 0.548,
+      "frustration": 0.0556,
+      "line": "I remember the wound, but repair changed what I expect.",
+      "name": "Bo",
+      "resentment": 0.0,
+      "role": "builder",
+      "trust_in_avatar": 0.70225,
+      "visible_marker": "softened"
+    },
+    {
+      "agent_id": "integrated_deep_time_world:02",
+      "boundary_pressure": 0.266,
+      "felt_respect": 0.603,
+      "frustration": 0.05,
+      "line": "I remember the wound, but repair changed what I expect.",
+      "name": "Cy",
+      "resentment": 0.0,
+      "role": "healer",
+      "trust_in_avatar": 0.638432,
+      "visible_marker": "softened"
+    },
+    {
+      "agent_id": "integrated_deep_time_world:03",
+      "boundary_pressure": 0.251,
+      "felt_respect": 0.559,
+      "frustration": 0.0875,
+      "line": "I remember the wound, but repair changed what I expect.",
+      "name": "Dee",
+      "resentment": 0.0,
+      "role": "farmer",
+      "trust_in_avatar": 0.619409,
+      "visible_marker": "softened"
+    },
+    {
+      "agent_id": "integrated_deep_time_world:04",
+      "boundary_pressure": 0.17,
+      "felt_respect": 0.625,
+      "frustration": 0.0375,
+      "line": "I remember the wound, but repair changed what I expect.",
+      "name": "Eli",
+      "resentment": 0.0,
+      "role": "guard",
+      "trust_in_avatar": 0.818418,
+      "visible_marker": "softened"
+    },
+    {
+      "agent_id": "integrated_deep_time_world:05",
+      "boundary_pressure": 0.258,
+      "felt_respect": 0.559,
+      "frustration": 0.0539,
+      "line": "I remember the wound, but repair changed what I expect.",
+      "name": "Fay",
+      "resentment": 0.0,
+      "role": "teacher",
+      "trust_in_avatar": 0.700758,
+      "visible_marker": "softened"
+    },
+    {
+      "agent_id": "integrated_deep_time_world:06",
+      "boundary_pressure": 0.26,
+      "felt_respect": 0.537,
+      "frustration": 0.083,
+      "line": "I remember the wound, but repair changed what I expect.",
+      "name": "Gus",
+      "resentment": 0.0,
+      "role": "trader",
+      "trust_in_avatar": 0.628246,
+      "visible_marker": "softened"
+    },
+    {
+      "agent_id": "integrated_deep_time_world:07",
+      "boundary_pressure": 0.169,
+      "felt_respect": 0.6305,
+      "frustration": 0.012,
+      "line": "I remember the wound, but repair changed what I expect.",
+      "name": "Ira",
+      "resentment": 0.0,
+      "role": "pattern_keeper",
+      "trust_in_avatar": 0.790294,
+      "visible_marker": "softened"
+    }
+  ],
+  "repair_contract": {
+    "boundary_reassertion": true,
+    "care_expression": true,
+    "moral_guardrail": true,
+    "readable_recovery": true,
+    "relationship_update": true,
+    "repair_opportunity": true,
+    "resentment_decay": true,
+    "self_story_repair": true,
+    "social_attribution": true,
+    "trust_recovery": true,
+    "wound_detection": true
+  },
+  "source_bridge": "Report 165 first-person ego state bridge"
+};

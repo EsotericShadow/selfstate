@@ -1,0 +1,9 @@
+carryover_id,agent_id,day,trigger,recovery_action,residual_need,body_score_before,body_score_after,affects_project,affects_preference,saved_body_key,frequency_hz,flower_node
+carry-01,fayen,3,care fatigue after cup station,delegated refill and seated shade,cloth wash remains,0.62,0.75,care kit standard,delegated_care_help,body-carry:fayen:3,158.75,6
+carry-02,ariq,5,stone effort after brace test,bell timing and no solo lift,bridge still partial,0.54,0.68,cart-safe bridge edge,timed_tool_help,body-carry:ariq:5,169.5,7
+carry-03,roka,5,rain wetness during reed tray,dry cloth and blue stone rest,tied bundle closed,0.5,0.63,reed lesson tray,rain_named_not_blamed,body-carry:roka:5,180.25,8
+carry-04,nian,8,wording stress before posting,untie phrase and repeat grammar,threshold vigilance remains,0.66,0.78,privacy ledger grammar,correction_before_posting,body-carry:nian:8,191.0,9
+carry-05,noro,13,debt review pressure,public debt read and board closure,open debt tail remains,0.58,0.7,shade debt review,partial_repayment_patience,body-carry:noro:13,201.75,10
+carry-06,ariq,21,bridge delay frustration,schedule catchup and visible project note,second brace delayed,0.49,0.6,cart-safe bridge edge,delay_without_project_loss,body-carry:ariq:21,212.5,11
+carry-07,fayen,21,care teaching fatigue,short teaching turn and rest,next class delayed,0.61,0.71,public care kit standard,quiet_posture_language,body-carry:fayen:21,223.25,12
+carry-08,roka,21,lesson confidence dip,ask-each-time success memory,watching still conditional,0.52,0.66,reed lesson tray,ask_each_time,body-carry:roka:21,234.0,1

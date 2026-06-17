@@ -1,0 +1,16 @@
+event_id,day,actor,project_link,craft_action,inputs,outputs,waste,labor_cost,material_cost,quality,trade_or_debt,market_effect,saved_economy_key,frequency_hz,flower_node
+econ-01,1,roka,reed lesson tray,sort loose reeds,"loose reeds,rain cloth",sorted strips,mud flecks,0.12,0.08,0.82,loose tray labor credit,reed training access improves,economy:roka:1,203.25,11
+econ-02,3,roka,reed lesson tray,dry loose strips,"sorted strips,blue stone",dry strips,wet cloth,0.1,0.04,0.78,cloth use debt,care cloth temporarily scarce,economy:roka:2,210.5,12
+econ-03,5,roka,reed lesson tray,tie loose tray,"dry strips,teaching cord",lesson tray,short reeds,0.18,0.1,0.74,teaching credit,loose tray trade opens,economy:roka:3,217.75,1
+econ-04,1,ariq,cart-safe bridge edge,draw chalk arc,"chalk cord,flat stone",wide arc,chalk dust,0.2,0.05,0.88,repair labor credit,bridge access improves,economy:ariq:4,225.0,2
+econ-05,5,ariq,cart-safe bridge edge,tap and brace stone,"flat stone,brace timber",cart-safe half edge,stone grit,0.34,0.18,0.69,timber debt remains,second brace locked,economy:ariq:5,232.25,3
+econ-06,13,ariq,cart-safe bridge edge,review second brace,"debt note,brace timber",review-approved brace,wood splinter,0.28,0.16,0.76,repayment slot assigned,cart route opens partially,economy:ariq:6,239.5,4
+econ-07,1,fayen,public care kit standard,stage cup station,"water cups,cloth",cup station,used water,0.08,0.03,0.91,care chore credit,rest pause protected,economy:fayen:7,246.75,5
+econ-08,8,fayen,public care kit standard,wash and standardize cloth,"damp cloth,shade line",standard cloth,greywater,0.16,0.04,0.83,cloth debt repaid,care kit stability improves,economy:fayen:8,254.0,6
+econ-09,13,fayen,public care kit standard,teach posture card,"posture card,care bell",public care card,discarded phrase,0.14,0.02,0.86,teaching credit,privacy-safe care spreads,economy:fayen:9,261.25,7
+econ-10,3,nian,privacy ledger grammar,repair digest phrase,"draft knot,archive flap",object-place-day phrase,discarded detail,0.1,0.02,0.9,privacy approval,public posting safer,economy:nian:10,268.5,8
+econ-11,8,nian,privacy ledger grammar,teach public knot grammar,"phrase card,knot board",grammar card,ink scrap,0.12,0.03,0.84,teaching credit,ledger speed improves,economy:nian:11,275.75,9
+econ-12,21,nian,privacy ledger grammar,audit public knots,"knot board,grammar card",audit mark,frayed cord,0.2,0.05,0.88,audit credit,privacy confidence rises,economy:nian:12,283.0,10
+econ-13,5,noro,shade debt review,read open debt,"debt knot,ledger cord",debt line,cord fray,0.08,0.02,0.87,debt acknowledgement,review allowed,economy:noro:13,290.25,11
+econ-14,13,noro,shade debt review,post partial repayment,"labor credit,debt line",partial repayment mark,extra cord,0.18,0.06,0.8,partial repayment,second beam still locked,economy:noro:14,297.5,12
+econ-15,21,noro,shade debt review,close review slot,"review knot,repayment mark",review close note,open debt tail,0.22,0.08,0.72,debt carried forward,timber access remains conditional,economy:noro:15,304.75,1

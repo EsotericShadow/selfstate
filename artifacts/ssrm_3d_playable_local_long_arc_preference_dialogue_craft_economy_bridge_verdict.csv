@@ -1,0 +1,2 @@
+report,module,verdict,readiness,weakest_channel_score,next_gate
+231,ssrm_3d_playable_local_long_arc_preference_dialogue_craft_economy_bridge,pass,0.93087,0.818667,"playable local 3D continuous life with learned preference generalization tests, multi-agent economy markets, richer typed dialogue memory, and project arcs beyond twenty-one days"

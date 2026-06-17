@@ -1,0 +1,2 @@
+report,module,verdict,readiness,weakest_channel_score,next_gate
+229,ssrm_3d_playable_local_compositional_transform_schedule_body_dialogue_realtime_bridge,pass,0.9874,0.7,"playable local 3D continuous life with typed multi-turn dialogue, compositional crafting chains, schedule conflicts, richer body recovery, and persistent personal projects"

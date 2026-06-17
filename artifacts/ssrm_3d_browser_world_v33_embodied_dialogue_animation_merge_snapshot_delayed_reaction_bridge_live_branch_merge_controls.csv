@@ -1,0 +1,1009 @@
+tick_id,day,route_id,control_id,active_branch_before,requested_action,merge_clicked,rollback_clicked,merge_success,rollback_success,active_branch_after,browser_state_version,mutation_visible
+0,1,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,1,False
+1,1,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,1,False
+2,1,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,2,True
+3,1,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,1,False
+4,1,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,1,False
+5,1,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,1,False
+6,1,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,2,True
+7,1,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,2,True
+8,1,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,3,True
+9,1,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,2,True
+10,1,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,1,False
+11,1,central_repair_ring,merge-control:central_repair_ring,inner repair yard,rollback to repair yard,False,True,False,True,inner repair yard,2,True
+12,2,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,2,False
+13,2,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,2,False
+14,2,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,4,True
+15,2,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,3,True
+16,2,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,1,False
+17,2,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,2,False
+18,2,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,3,True
+19,2,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,2,False
+20,2,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,5,True
+21,2,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,4,True
+22,2,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,1,False
+23,2,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,2,False
+24,3,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,3,False
+25,3,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,2,False
+26,3,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,6,True
+27,3,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,5,True
+28,3,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,2,True
+29,3,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,2,False
+30,3,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,4,True
+31,3,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,2,False
+32,3,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,7,True
+33,3,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,6,True
+34,3,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,2,False
+35,3,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,2,False
+36,4,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,4,False
+37,4,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,2,False
+38,4,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,False,False,paper lane,7,True
+39,4,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,7,True
+40,4,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,2,False
+41,4,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,2,False
+42,4,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,5,True
+43,4,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,2,False
+44,4,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,7,False
+45,4,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,8,True
+46,4,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,2,False
+47,4,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,2,False
+48,5,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,5,False
+49,5,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,2,False
+50,5,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,8,True
+51,5,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,9,True
+52,5,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,2,False
+53,5,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,2,False
+54,5,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,6,True
+55,5,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,2,False
+56,5,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,9,True
+57,5,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,False,False,dusk road,9,True
+58,5,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,2,False
+59,5,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,2,False
+60,6,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,2,False
+61,6,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,9,False
+62,6,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,10,True
+63,6,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,3,True
+64,6,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,2,False
+65,6,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,6,False
+66,6,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,3,True
+67,6,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,9,False
+68,6,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,11,True
+69,6,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,4,True
+70,6,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,3,True
+71,6,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,7,True
+72,7,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,3,False
+73,7,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,9,False
+74,7,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,12,True
+75,7,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,5,True
+76,7,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,3,False
+77,7,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,7,False
+78,7,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,4,True
+79,7,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,9,False
+80,7,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,13,True
+81,7,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,6,True
+82,7,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,3,False
+83,7,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,7,False
+84,8,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,4,False
+85,8,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,9,False
+86,8,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,14,True
+87,8,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,7,True
+88,8,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,3,False
+89,8,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,7,False
+90,8,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,5,True
+91,8,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,10,True
+92,8,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,False,river lantern loop,14,True
+93,8,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,8,True
+94,8,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,3,False
+95,8,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,7,False
+96,9,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,5,False
+97,9,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,10,False
+98,9,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,15,True
+99,9,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,9,True
+100,9,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,3,False
+101,9,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,7,False
+102,9,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,6,True
+103,9,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,10,False
+104,9,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,16,True
+105,9,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,10,True
+106,9,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,3,False
+107,9,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,7,False
+108,10,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,6,False
+109,10,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,10,False
+110,10,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,17,True
+111,10,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,11,True
+112,10,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,3,False
+113,10,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,7,False
+114,10,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,False,False,cool archive lane,6,True
+115,10,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,10,False
+116,10,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,18,True
+117,10,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,12,True
+118,10,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,3,False
+119,10,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,7,False
+120,11,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,6,False
+121,11,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,10,False
+122,11,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,19,True
+123,11,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,13,True
+124,11,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,3,False
+125,11,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,7,False
+126,11,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,7,True
+127,11,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,10,False
+128,11,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,20,True
+129,11,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,14,True
+130,11,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,3,False
+131,11,riverbend_roofward,merge-control:riverbend_roofward,river ford,rollback to river ford,False,True,False,True,river ford,8,True
+132,12,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,10,False
+133,12,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,False,False,dusk road,20,True
+134,12,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,15,True
+135,12,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,4,True
+136,12,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,8,False
+137,12,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,7,False
+138,12,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,11,True
+139,12,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,20,False
+140,12,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,16,True
+141,12,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,5,True
+142,12,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,8,False
+143,12,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,8,True
+144,13,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,11,False
+145,13,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,20,False
+146,13,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,17,True
+147,13,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,6,True
+148,13,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,8,False
+149,13,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,8,False
+150,13,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,12,True
+151,13,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,20,False
+152,13,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,18,True
+153,13,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,7,True
+154,13,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,9,True
+155,13,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,8,False
+156,14,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,12,False
+157,14,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,20,False
+158,14,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,19,True
+159,14,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,8,True
+160,14,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,9,False
+161,14,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,8,False
+162,14,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,13,True
+163,14,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,20,False
+164,14,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,20,True
+165,14,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,9,True
+166,14,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,9,False
+167,14,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,8,False
+168,15,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,13,False
+169,15,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,20,False
+170,15,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,21,True
+171,15,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,10,True
+172,15,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,9,False
+173,15,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,8,False
+174,15,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,14,True
+175,15,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,21,True
+176,15,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,22,True
+177,15,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,11,True
+178,15,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,9,False
+179,15,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,8,False
+180,16,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,14,False
+181,16,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,21,False
+182,16,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,23,True
+183,16,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,12,True
+184,16,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,9,False
+185,16,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,8,False
+186,16,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,15,True
+187,16,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,21,False
+188,16,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,24,True
+189,16,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,13,True
+190,16,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,9,False
+191,16,roofward_archive,merge-control:roofward_archive,glass stair,rollback to glass stair,False,True,False,True,glass stair,9,True
+192,17,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,15,False
+193,17,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,21,False
+194,17,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,25,True
+195,17,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,14,True
+196,17,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,9,False
+197,17,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,9,False
+198,17,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,16,True
+199,17,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,21,False
+200,17,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,26,True
+201,17,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,15,True
+202,17,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,9,False
+203,17,roofward_archive,merge-control:roofward_archive,glass stair,rollback to glass stair,True,True,True,True,glass stair,11,True
+204,18,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,21,False
+205,18,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,26,False
+206,18,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,16,True
+207,18,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,False,orchard ridge detour,9,True
+208,18,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,11,False
+209,18,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,16,False
+210,18,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,22,True
+211,18,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,26,False
+212,18,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,17,True
+213,18,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,10,True
+214,18,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,11,False
+215,18,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,17,True
+216,19,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,22,False
+217,19,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,27,True
+218,19,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,18,True
+219,19,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,11,True
+220,19,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,11,False
+221,19,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,17,False
+222,19,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,23,True
+223,19,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,27,False
+224,19,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,19,True
+225,19,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,12,True
+226,19,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,11,False
+227,19,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,17,False
+228,20,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,23,False
+229,20,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,27,False
+230,20,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,20,True
+231,20,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,13,True
+232,20,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,11,False
+233,20,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,17,False
+234,20,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,24,True
+235,20,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,27,False
+236,20,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,21,True
+237,20,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,14,True
+238,20,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,12,True
+239,20,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,17,False
+240,21,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,24,False
+241,21,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,27,False
+242,21,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,22,True
+243,21,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,15,True
+244,21,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,12,False
+245,21,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,17,False
+246,21,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,25,True
+247,21,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,27,False
+248,21,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,23,True
+249,21,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,16,True
+250,21,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,12,False
+251,21,archive_signal,merge-control:archive_signal,paper lane,rollback to paper lane,False,True,False,True,paper lane,18,True
+252,22,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,25,False
+253,22,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,27,False
+254,22,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,24,True
+255,22,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,17,True
+256,22,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,12,False
+257,22,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,18,False
+258,22,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,26,True
+259,22,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,27,False
+260,22,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,25,True
+261,22,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,18,True
+262,22,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,12,False
+263,22,archive_signal,merge-control:archive_signal,paper lane,rollback to paper lane,False,True,False,True,paper lane,19,True
+264,23,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,26,False
+265,23,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,27,False
+266,23,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,False,False,inner repair yard,25,True
+267,23,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,19,True
+268,23,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,12,False
+269,23,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,19,False
+270,23,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,27,True
+271,23,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,27,False
+272,23,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,25,False
+273,23,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,20,True
+274,23,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,12,False
+275,23,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,19,False
+276,24,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,27,False
+277,24,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,25,False
+278,24,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,21,True
+279,24,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,13,True
+280,24,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,20,True
+281,24,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,27,False
+282,24,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,28,True
+283,24,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,25,False
+284,24,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,22,True
+285,24,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,False,False,glass stair,13,True
+286,24,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,20,False
+287,24,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,28,True
+288,25,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,28,False
+289,25,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,25,False
+290,25,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,23,True
+291,25,roofward_archive,merge-control:roofward_archive,glass stair,rollback to glass stair,False,True,False,True,glass stair,14,True
+292,25,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,20,False
+293,25,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,28,False
+294,25,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,29,True
+295,25,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,25,False
+296,25,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,24,True
+297,25,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,15,True
+298,25,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,20,False
+299,25,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,28,False
+300,26,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,29,False
+301,26,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,26,True
+302,26,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,25,True
+303,26,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,16,True
+304,26,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,20,False
+305,26,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,28,False
+306,26,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,30,True
+307,26,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,26,False
+308,26,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,26,True
+309,26,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,17,True
+310,26,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,20,False
+311,26,signal_orchard,merge-control:signal_orchard,dusk road,rollback to dusk road,False,True,False,True,dusk road,29,True
+312,27,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,30,False
+313,27,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,26,False
+314,27,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,27,True
+315,27,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,18,True
+316,27,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,20,False
+317,27,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,29,False
+318,27,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,31,True
+319,27,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,26,False
+320,27,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,28,True
+321,27,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,19,True
+322,27,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,20,False
+323,27,signal_orchard,merge-control:signal_orchard,dusk road,rollback to dusk road,False,True,False,True,dusk road,30,True
+324,28,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,31,False
+325,28,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,26,False
+326,28,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,29,True
+327,28,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,20,True
+328,28,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,20,False
+329,28,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,30,False
+330,28,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,32,True
+331,28,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,26,False
+332,28,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,30,True
+333,28,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,21,True
+334,28,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,20,False
+335,28,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,30,False
+336,29,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,32,False
+337,29,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,26,False
+338,29,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,31,True
+339,29,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,22,True
+340,29,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,20,False
+341,29,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,30,False
+342,29,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,False,False,market plank route,32,True
+343,29,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,26,False
+344,29,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,32,True
+345,29,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,23,True
+346,29,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,20,False
+347,29,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,30,False
+348,30,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,26,False
+349,30,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,32,False
+350,30,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,24,True
+351,30,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,21,True
+352,30,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,30,False
+353,30,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,32,False
+354,30,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,27,True
+355,30,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,32,False
+356,30,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,25,True
+357,30,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,22,True
+358,30,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,30,False
+359,30,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,33,True
+360,31,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,27,False
+361,31,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,32,False
+362,31,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,26,True
+363,31,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,23,True
+364,31,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,31,True
+365,31,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,33,False
+366,31,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,28,True
+367,31,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,32,False
+368,31,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,False,cool archive lane,26,True
+369,31,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,24,True
+370,31,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,31,False
+371,31,orchard_riverbend,merge-control:orchard_riverbend,fen track,rollback to fen track,False,True,False,True,fen track,34,True
+372,32,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,28,False
+373,32,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,32,False
+374,32,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,27,True
+375,32,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,25,True
+376,32,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,31,False
+377,32,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,34,False
+378,32,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,29,True
+379,32,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,32,False
+380,32,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,28,True
+381,32,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,26,True
+382,32,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,31,False
+383,32,orchard_riverbend,merge-control:orchard_riverbend,fen track,rollback to fen track,False,True,False,True,fen track,35,True
+384,33,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,29,False
+385,33,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,33,True
+386,33,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,29,True
+387,33,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,27,True
+388,33,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,31,False
+389,33,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,35,False
+390,33,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,30,True
+391,33,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,33,False
+392,33,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,30,True
+393,33,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,28,True
+394,33,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,31,False
+395,33,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,35,False
+396,34,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,30,False
+397,34,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,33,False
+398,34,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,31,True
+399,34,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,29,True
+400,34,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,31,False
+401,34,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,35,False
+402,34,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,31,True
+403,34,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,33,False
+404,34,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,32,True
+405,34,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,30,True
+406,34,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,31,False
+407,34,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,35,False
+408,35,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,31,False
+409,35,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,33,False
+410,35,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,33,True
+411,35,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,31,True
+412,35,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,31,False
+413,35,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,35,False
+414,35,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,32,True
+415,35,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,33,False
+416,35,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,34,True
+417,35,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,32,True
+418,35,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,31,False
+419,35,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,35,False
+420,36,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,33,False
+421,36,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,34,False
+422,36,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,33,True
+423,36,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,32,True
+424,36,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,35,False
+425,36,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,32,False
+426,36,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,34,True
+427,36,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,35,True
+428,36,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,34,True
+429,36,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,33,True
+430,36,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,35,False
+431,36,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,33,True
+432,37,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,34,False
+433,37,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,35,False
+434,37,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,35,True
+435,37,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,34,True
+436,37,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,35,False
+437,37,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,33,False
+438,37,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,35,True
+439,37,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,35,False
+440,37,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,36,True
+441,37,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,35,True
+442,37,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,35,False
+443,37,central_repair_ring,merge-control:central_repair_ring,inner repair yard,rollback to repair yard,False,True,False,True,inner repair yard,34,True
+444,38,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,35,False
+445,38,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,35,False
+446,38,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,37,True
+447,38,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,36,True
+448,38,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,36,True
+449,38,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+450,38,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,36,True
+451,38,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,35,False
+452,38,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,38,True
+453,38,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,37,True
+454,38,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,36,False
+455,38,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+456,39,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,36,False
+457,39,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,35,False
+458,39,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,39,True
+459,39,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,38,True
+460,39,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,36,False
+461,39,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+462,39,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,37,True
+463,39,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,35,False
+464,39,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,40,True
+465,39,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,39,True
+466,39,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,36,False
+467,39,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+468,40,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,37,False
+469,40,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,35,False
+470,40,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,41,True
+471,40,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,40,True
+472,40,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,36,False
+473,40,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+474,40,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,38,True
+475,40,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,35,False
+476,40,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,42,True
+477,40,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,41,True
+478,40,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,36,False
+479,40,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+480,41,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,38,False
+481,41,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,35,False
+482,41,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,43,True
+483,41,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,False,river lantern loop,41,True
+484,41,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,36,False
+485,41,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+486,41,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,39,True
+487,41,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,35,False
+488,41,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,44,True
+489,41,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,42,True
+490,41,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,36,False
+491,41,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+492,42,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,35,False
+493,42,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,44,False
+494,42,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,False,False,river lantern loop,42,True
+495,42,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,37,True
+496,42,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+497,42,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,39,False
+498,42,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,36,True
+499,42,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,44,False
+500,42,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,43,True
+501,42,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,38,True
+502,42,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+503,42,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,40,True
+504,43,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,36,False
+505,43,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,44,False
+506,43,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,44,True
+507,43,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,39,True
+508,43,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+509,43,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,40,False
+510,43,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,37,True
+511,43,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,45,True
+512,43,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,45,True
+513,43,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,False,False,fen track,39,True
+514,43,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+515,43,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,40,False
+516,44,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,37,False
+517,44,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,45,False
+518,44,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,46,True
+519,44,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,39,False
+520,44,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+521,44,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,40,False
+522,44,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,38,True
+523,44,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,45,False
+524,44,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,47,True
+525,44,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,40,True
+526,44,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+527,44,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,40,False
+528,45,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,38,False
+529,45,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,45,False
+530,45,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,48,True
+531,45,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,41,True
+532,45,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,False,False,inner repair yard,34,True
+533,45,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,40,False
+534,45,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,39,True
+535,45,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,45,False
+536,45,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,49,True
+537,45,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,42,True
+538,45,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+539,45,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,41,True
+540,46,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,39,False
+541,46,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,45,False
+542,46,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,50,True
+543,46,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,43,True
+544,46,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+545,46,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,41,False
+546,46,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,40,True
+547,46,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,45,False
+548,46,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,51,True
+549,46,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,44,True
+550,46,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+551,46,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,42,True
+552,47,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,40,False
+553,47,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,45,False
+554,47,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,52,True
+555,47,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,45,True
+556,47,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+557,47,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,42,False
+558,47,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,41,True
+559,47,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,45,False
+560,47,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,53,True
+561,47,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,46,True
+562,47,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+563,47,riverbend_roofward,merge-control:riverbend_roofward,river ford,rollback to river ford,False,True,False,True,river ford,43,True
+564,48,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,45,False
+565,48,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,53,False
+566,48,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,47,True
+567,48,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,34,False
+568,48,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,43,False
+569,48,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,41,False
+570,48,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,False,False,stone kiosk path,45,True
+571,48,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,53,False
+572,48,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,48,True
+573,48,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,35,True
+574,48,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,44,True
+575,48,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,False,cool archive lane,41,True
+576,49,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,45,False
+577,49,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,53,False
+578,49,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,49,True
+579,49,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,36,True
+580,49,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,44,False
+581,49,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,41,False
+582,49,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,46,True
+583,49,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,53,False
+584,49,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,50,True
+585,49,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,37,True
+586,49,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,44,False
+587,49,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,42,True
+588,50,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,46,False
+589,50,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,53,False
+590,50,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,51,True
+591,50,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,38,True
+592,50,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,44,False
+593,50,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,42,False
+594,50,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,47,True
+595,50,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,54,True
+596,50,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,52,True
+597,50,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,39,True
+598,50,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,44,False
+599,50,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,42,False
+600,51,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,47,False
+601,51,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,54,False
+602,51,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,53,True
+603,51,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,40,True
+604,51,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,44,False
+605,51,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,42,False
+606,51,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,48,True
+607,51,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,54,False
+608,51,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,54,True
+609,51,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,41,True
+610,51,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,44,False
+611,51,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,42,False
+612,52,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,48,False
+613,52,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,54,False
+614,52,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,55,True
+615,52,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,42,True
+616,52,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,44,False
+617,52,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,42,False
+618,52,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,49,True
+619,52,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,54,False
+620,52,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,56,True
+621,52,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,43,True
+622,52,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,44,False
+623,52,roofward_archive,merge-control:roofward_archive,glass stair,rollback to glass stair,False,True,False,True,glass stair,43,True
+624,53,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,49,False
+625,53,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,54,False
+626,53,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,57,True
+627,53,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,44,True
+628,53,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,44,False
+629,53,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,43,False
+630,53,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,50,True
+631,53,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,54,False
+632,53,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,58,True
+633,53,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,45,True
+634,53,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,44,False
+635,53,roofward_archive,merge-control:roofward_archive,glass stair,rollback to glass stair,False,True,False,True,glass stair,44,True
+636,54,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,54,False
+637,54,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,59,True
+638,54,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,46,True
+639,54,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,45,True
+640,54,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,44,False
+641,54,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,50,False
+642,54,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,55,True
+643,54,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,59,False
+644,54,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,False,outer bell path,46,True
+645,54,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,46,True
+646,54,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,44,False
+647,54,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,51,True
+648,55,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,55,False
+649,55,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,59,False
+650,55,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,47,True
+651,55,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,47,True
+652,55,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,44,False
+653,55,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,51,False
+654,55,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,56,True
+655,55,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,59,False
+656,55,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,48,True
+657,55,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,48,True
+658,55,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,45,True
+659,55,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,51,False
+660,56,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,56,False
+661,56,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,59,False
+662,56,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,49,True
+663,56,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,49,True
+664,56,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,45,False
+665,56,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,51,False
+666,56,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,57,True
+667,56,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,59,False
+668,56,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,50,True
+669,56,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,50,True
+670,56,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,45,False
+671,56,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,51,False
+672,57,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,57,False
+673,57,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,59,False
+674,57,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,51,True
+675,57,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,51,True
+676,57,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,45,False
+677,57,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,51,False
+678,57,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,58,True
+679,57,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,59,False
+680,57,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,52,True
+681,57,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,52,True
+682,57,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,45,False
+683,57,archive_signal,merge-control:archive_signal,paper lane,rollback to paper lane,False,True,False,True,paper lane,52,True
+684,58,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,58,False
+685,58,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,59,False
+686,58,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,53,True
+687,58,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,53,True
+688,58,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,45,False
+689,58,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,52,False
+690,58,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,59,True
+691,58,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,59,False
+692,58,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,54,True
+693,58,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,54,True
+694,58,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,45,False
+695,58,archive_signal,merge-control:archive_signal,paper lane,rollback to paper lane,False,True,False,True,paper lane,53,True
+696,59,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,59,False
+697,59,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,59,False
+698,59,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,55,True
+699,59,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,55,True
+700,59,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,45,False
+701,59,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,53,False
+702,59,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,60,True
+703,59,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,59,False
+704,59,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,56,True
+705,59,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,56,True
+706,59,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,45,False
+707,59,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,53,False
+708,60,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,59,False
+709,60,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,56,False
+710,60,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,57,True
+711,60,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,46,True
+712,60,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,53,False
+713,60,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,60,False
+714,60,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,60,True
+715,60,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,56,False
+716,60,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,58,True
+717,60,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,47,True
+718,60,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,53,False
+719,60,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,61,True
+720,61,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,60,False
+721,61,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,57,True
+722,61,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,False,False,river ford,58,True
+723,61,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,48,True
+724,61,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,53,False
+725,61,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,61,False
+726,61,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,61,True
+727,61,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,57,False
+728,61,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,58,False
+729,61,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,49,True
+730,61,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,53,False
+731,61,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,61,False
+732,62,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,61,False
+733,62,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,57,False
+734,62,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,59,True
+735,62,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,50,True
+736,62,archive_signal,merge-control:archive_signal,paper lane,none,False,False,False,False,paper lane,53,False
+737,62,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,61,False
+738,62,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,62,True
+739,62,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,57,False
+740,62,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,60,True
+741,62,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,False,False,glass stair,50,True
+742,62,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,54,True
+743,62,signal_orchard,merge-control:signal_orchard,dusk road,rollback to dusk road,False,True,False,True,dusk road,62,True
+744,63,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,62,False
+745,63,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,57,False
+746,63,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,61,True
+747,63,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,50,False
+748,63,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,54,False
+749,63,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,62,False
+750,63,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,63,True
+751,63,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,57,False
+752,63,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,62,True
+753,63,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,51,True
+754,63,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,54,False
+755,63,signal_orchard,merge-control:signal_orchard,dusk road,rollback to dusk road,False,True,False,True,dusk road,63,True
+756,64,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,63,False
+757,64,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,57,False
+758,64,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,63,True
+759,64,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,False,cool archive lane,51,True
+760,64,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,54,False
+761,64,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,63,False
+762,64,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,64,True
+763,64,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,57,False
+764,64,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,64,True
+765,64,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,52,True
+766,64,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,54,False
+767,64,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,63,False
+768,65,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,64,False
+769,65,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,57,False
+770,65,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,65,True
+771,65,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,53,True
+772,65,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,54,False
+773,65,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,63,False
+774,65,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,65,True
+775,65,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,57,False
+776,65,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,66,True
+777,65,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,54,True
+778,65,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,54,False
+779,65,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,63,False
+780,66,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,57,False
+781,66,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,66,False
+782,66,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,55,True
+783,66,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,55,True
+784,66,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,64,True
+785,66,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,65,False
+786,66,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,58,True
+787,66,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,66,False
+788,66,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,56,True
+789,66,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,56,True
+790,66,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,64,False
+791,66,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,66,True
+792,67,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,58,False
+793,67,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,66,False
+794,67,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,57,True
+795,67,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,57,True
+796,67,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,64,False
+797,67,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,66,False
+798,67,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,False,False,outer bell path,58,True
+799,67,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,66,False
+800,67,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,58,True
+801,67,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,58,True
+802,67,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,64,False
+803,67,orchard_riverbend,merge-control:orchard_riverbend,fen track,rollback to fen track,False,True,False,True,fen track,67,True
+804,68,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,58,False
+805,68,riverbend_roofward,merge-control:riverbend_roofward,river ford,merge detour with bridge watch,True,False,True,False,orchard ridge detour,67,True
+806,68,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,59,True
+807,68,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,59,True
+808,68,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,64,False
+809,68,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,67,False
+810,68,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,59,True
+811,68,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,67,False
+812,68,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,60,True
+813,68,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,60,True
+814,68,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,64,False
+815,68,orchard_riverbend,merge-control:orchard_riverbend,fen track,rollback to fen track,False,True,False,True,fen track,68,True
+816,69,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,59,False
+817,69,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,67,False
+818,69,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,61,True
+819,69,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,61,True
+820,69,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,64,False
+821,69,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,68,False
+822,69,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,60,True
+823,69,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,67,False
+824,69,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,62,True
+825,69,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,62,True
+826,69,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,64,False
+827,69,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,68,False
+828,70,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,60,False
+829,70,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,67,False
+830,70,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,63,True
+831,70,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,63,True
+832,70,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,64,False
+833,70,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,68,False
+834,70,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,61,True
+835,70,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,67,False
+836,70,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,64,True
+837,70,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,64,True
+838,70,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,64,False
+839,70,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,68,False
+840,71,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,61,False
+841,71,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,67,False
+842,71,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,65,True
+843,71,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,65,True
+844,71,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,64,False
+845,71,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,68,False
+846,71,central_repair_ring,merge-control:central_repair_ring,outer bell path,merge bell route,True,False,True,False,outer bell path,62,True
+847,71,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,67,False
+848,71,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,66,True
+849,71,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,66,True
+850,71,signal_orchard,merge-control:signal_orchard,river lantern loop,none,False,False,False,False,river lantern loop,64,False
+851,71,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,68,False
+852,72,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,67,False
+853,72,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,66,False
+854,72,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,67,True
+855,72,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,65,True
+856,72,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,68,False
+857,72,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,62,False
+858,72,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,68,True
+859,72,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,66,False
+860,72,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,68,True
+861,72,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,66,True
+862,72,orchard_riverbend,merge-control:orchard_riverbend,fen track,none,False,False,False,False,fen track,68,False
+863,72,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,63,True
+864,73,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,68,False
+865,73,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,66,False
+866,73,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,69,True
+867,73,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,67,True
+868,73,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,69,True
+869,73,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,63,False
+870,73,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,69,True
+871,73,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,66,False
+872,73,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,70,True
+873,73,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,68,True
+874,73,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,69,False
+875,73,central_repair_ring,merge-control:central_repair_ring,inner repair yard,rollback to repair yard,False,True,False,True,inner repair yard,64,True
+876,74,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,69,False
+877,74,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,66,False
+878,74,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,71,True
+879,74,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,69,True
+880,74,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,69,False
+881,74,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,64,False
+882,74,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,70,True
+883,74,roofward_archive,merge-control:roofward_archive,glass stair,none,False,False,False,False,glass stair,66,False
+884,74,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,72,True
+885,74,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,70,True
+886,74,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,69,False
+887,74,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,64,False
+888,75,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,70,False
+889,75,roofward_archive,merge-control:roofward_archive,glass stair,merge shade route,True,False,True,False,cool archive lane,67,True
+890,75,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,73,True
+891,75,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,71,True
+892,75,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,69,False
+893,75,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,64,False
+894,75,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,71,True
+895,75,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,67,False
+896,75,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,74,True
+897,75,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,72,True
+898,75,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,69,False
+899,75,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,64,False
+900,76,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,71,False
+901,76,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,67,False
+902,76,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,75,True
+903,76,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,73,True
+904,76,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,69,False
+905,76,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,64,False
+906,76,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,72,True
+907,76,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,67,False
+908,76,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,True,paper lane,76,True
+909,76,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,74,True
+910,76,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,69,False
+911,76,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,64,False
+912,77,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,72,False
+913,77,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,67,False
+914,77,archive_signal,merge-control:archive_signal,paper lane,merge stone route,True,False,True,False,stone kiosk path,77,True
+915,77,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,75,True
+916,77,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,69,False
+917,77,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,64,False
+918,77,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,merge detour with bridge watch,True,False,True,False,orchard ridge detour,73,True
+919,77,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,67,False
+920,77,archive_signal,merge-control:archive_signal,stone kiosk path,rollback to paper lane,False,True,False,False,stone kiosk path,77,True
+921,77,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,76,True
+922,77,orchard_riverbend,merge-control:orchard_riverbend,market plank route,none,False,False,False,False,market plank route,69,False
+923,77,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,64,False
+924,78,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,67,False
+925,78,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+926,78,signal_orchard,merge-control:signal_orchard,river lantern loop,merge lantern loop,True,False,True,False,river lantern loop,77,True
+927,78,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,70,True
+928,78,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,64,False
+929,78,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,none,False,False,False,False,orchard ridge detour,73,False
+930,78,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,68,True
+931,78,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+932,78,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,78,True
+933,78,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,71,True
+934,78,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,64,False
+935,78,riverbend_roofward,merge-control:riverbend_roofward,orchard ridge detour,rollback to river ford,False,True,False,True,river ford,74,True
+936,79,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,68,False
+937,79,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+938,79,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,79,True
+939,79,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,72,True
+940,79,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,64,False
+941,79,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,74,False
+942,79,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,69,True
+943,79,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+944,79,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,80,True
+945,79,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,73,True
+946,79,central_repair_ring,merge-control:central_repair_ring,inner repair yard,none,False,False,False,False,inner repair yard,64,False
+947,79,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,74,False
+948,80,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,69,False
+949,80,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+950,80,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,False,False,dusk road,80,True
+951,80,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,74,True
+952,80,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,65,True
+953,80,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,74,False
+954,80,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,70,True
+955,80,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+956,80,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,80,False
+957,80,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,75,True
+958,80,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,65,False
+959,80,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,74,False
+960,81,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,70,False
+961,81,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+962,81,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,81,True
+963,81,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,76,True
+964,81,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,65,False
+965,81,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,74,False
+966,81,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,71,True
+967,81,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+968,81,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,82,True
+969,81,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,False,False,fen track,76,True
+970,81,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,65,False
+971,81,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,74,False
+972,82,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,71,False
+973,82,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+974,82,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,83,True
+975,82,orchard_riverbend,merge-control:orchard_riverbend,fen track,rollback to fen track,False,True,False,True,fen track,77,True
+976,82,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,65,False
+977,82,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,74,False
+978,82,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,72,True
+979,82,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+980,82,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,84,True
+981,82,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,78,True
+982,82,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,65,False
+983,82,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,74,False
+984,83,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,72,False
+985,83,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+986,83,signal_orchard,merge-control:signal_orchard,dusk road,merge lantern loop,True,False,True,False,river lantern loop,85,True
+987,83,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,79,True
+988,83,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,65,False
+989,83,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,74,False
+990,83,roofward_archive,merge-control:roofward_archive,cool archive lane,merge shade route,True,False,True,False,cool archive lane,73,True
+991,83,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+992,83,signal_orchard,merge-control:signal_orchard,river lantern loop,rollback to dusk road,False,True,False,True,dusk road,86,True
+993,83,orchard_riverbend,merge-control:orchard_riverbend,fen track,merge plank route,True,False,True,False,market plank route,80,True
+994,83,central_repair_ring,merge-control:central_repair_ring,outer bell path,none,False,False,False,False,outer bell path,65,False
+995,83,riverbend_roofward,merge-control:riverbend_roofward,river ford,rollback to river ford,False,True,False,True,river ford,75,True
+996,84,archive_signal,merge-control:archive_signal,stone kiosk path,none,False,False,False,False,stone kiosk path,77,False
+997,84,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,86,False
+998,84,orchard_riverbend,merge-control:orchard_riverbend,market plank route,merge plank route,True,False,True,False,market plank route,81,True
+999,84,central_repair_ring,merge-control:central_repair_ring,outer bell path,rollback to repair yard,False,True,False,True,inner repair yard,66,True
+1000,84,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,75,False
+1001,84,roofward_archive,merge-control:roofward_archive,cool archive lane,none,False,False,False,False,cool archive lane,73,False
+1002,84,archive_signal,merge-control:archive_signal,stone kiosk path,merge stone route,True,False,True,False,stone kiosk path,78,True
+1003,84,signal_orchard,merge-control:signal_orchard,dusk road,none,False,False,False,False,dusk road,86,False
+1004,84,orchard_riverbend,merge-control:orchard_riverbend,market plank route,rollback to fen track,False,True,False,True,fen track,82,True
+1005,84,central_repair_ring,merge-control:central_repair_ring,inner repair yard,merge bell route,True,False,True,False,outer bell path,67,True
+1006,84,riverbend_roofward,merge-control:riverbend_roofward,river ford,none,False,False,False,False,river ford,75,False
+1007,84,roofward_archive,merge-control:roofward_archive,cool archive lane,rollback to glass stair,False,True,False,True,glass stair,74,True

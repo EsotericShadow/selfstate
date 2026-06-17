@@ -1,0 +1,1009 @@
+tick_id,day,route_id,agent,source_decision_day,delay_days,reaction_due,trust_before,trust_delta,trust_after,posture_reaction,proximity_delta,delayed_reaction_visible,persists_after_reload
+0,1,riverbend_roofward,Ari,1,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+1,1,roofward_archive,Nia,1,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+2,1,archive_signal,Nia,1,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+3,1,signal_orchard,Ivo,1,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+4,1,orchard_riverbend,Ivo,1,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+5,1,central_repair_ring,Pax,1,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+6,1,riverbend_roofward,Ari,1,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+7,1,roofward_archive,Nia,1,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+8,1,archive_signal,Nia,1,0,True,0.58,0.01,0.59,guarded crossed arms,0.07,True,True
+9,1,signal_orchard,Ivo,1,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+10,1,orchard_riverbend,Ivo,1,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+11,1,central_repair_ring,Pax,1,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+12,2,riverbend_roofward,Ari,2,1,True,0.58,0.018,0.598,open forward lean,-0.055,True,True
+13,2,roofward_archive,Nia,2,1,True,0.58,0.018,0.598,open forward lean,-0.055,False,False
+14,2,archive_signal,Nia,2,0,True,0.59,0.018,0.608,open forward lean,-0.055,True,True
+15,2,signal_orchard,Ivo,2,0,True,0.58,0.01,0.59,guarded crossed arms,0.07,True,True
+16,2,orchard_riverbend,Ivo,1,1,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+17,2,central_repair_ring,Pax,2,1,True,0.58,0.01,0.59,guarded crossed arms,0.07,True,True
+18,2,riverbend_roofward,Ari,2,0,False,0.598,0.0,0.598,open forward lean,0.0,False,False
+19,2,roofward_archive,Nia,2,0,False,0.598,0.0,0.598,listening tilt,0.0,False,False
+20,2,archive_signal,Nia,2,0,True,0.608,0.01,0.618,guarded crossed arms,0.07,True,True
+21,2,signal_orchard,Ivo,2,0,True,0.59,0.018,0.608,open forward lean,-0.055,True,True
+22,2,orchard_riverbend,Ivo,1,1,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+23,2,central_repair_ring,Pax,2,0,False,0.59,0.0,0.59,guarded crossed arms,0.0,False,False
+24,3,riverbend_roofward,Ari,3,1,True,0.598,0.018,0.616,open forward lean,-0.055,True,True
+25,3,roofward_archive,Nia,2,1,False,0.598,0.0,0.598,route-board reach,0.0,False,False
+26,3,archive_signal,Nia,3,0,True,0.618,0.018,0.636,open forward lean,-0.055,False,False
+27,3,signal_orchard,Ivo,3,0,True,0.608,0.01,0.618,guarded crossed arms,0.07,True,True
+28,3,orchard_riverbend,Ivo,3,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+29,3,central_repair_ring,Pax,2,1,False,0.59,0.0,0.59,guarded crossed arms,0.0,False,False
+30,3,riverbend_roofward,Ari,3,0,False,0.616,0.0,0.616,open forward lean,0.0,False,False
+31,3,roofward_archive,Nia,2,1,False,0.598,0.0,0.598,route-board reach,0.0,False,False
+32,3,archive_signal,Nia,3,0,True,0.636,0.01,0.646,guarded crossed arms,0.07,True,True
+33,3,signal_orchard,Ivo,3,0,True,0.618,0.018,0.636,open forward lean,-0.055,True,True
+34,3,orchard_riverbend,Ivo,3,0,True,0.58,0.018,0.598,open forward lean,-0.055,True,True
+35,3,central_repair_ring,Pax,2,1,False,0.59,0.0,0.59,guarded crossed arms,0.0,False,False
+36,4,riverbend_roofward,Ari,4,1,True,0.616,0.018,0.634,open forward lean,-0.055,True,True
+37,4,roofward_archive,Nia,2,2,False,0.598,0.0,0.598,open forward lean,0.0,False,False
+38,4,archive_signal,Nia,4,1,True,0.646,0.01,0.656,guarded crossed arms,0.07,True,True
+39,4,signal_orchard,Ivo,4,0,True,0.636,0.01,0.646,guarded crossed arms,0.07,False,False
+40,4,orchard_riverbend,Ivo,3,1,False,0.598,0.0,0.598,open forward lean,0.0,False,False
+41,4,central_repair_ring,Pax,2,2,False,0.59,0.0,0.59,relieved reset stance,0.0,False,False
+42,4,riverbend_roofward,Ari,4,0,False,0.634,0.0,0.634,open forward lean,0.0,False,False
+43,4,roofward_archive,Nia,2,2,False,0.598,0.0,0.598,open forward lean,0.0,False,False
+44,4,archive_signal,Nia,4,0,False,0.656,0.0,0.656,open forward lean,0.0,False,False
+45,4,signal_orchard,Ivo,4,0,True,0.646,0.018,0.664,open forward lean,-0.055,True,True
+46,4,orchard_riverbend,Ivo,3,1,False,0.598,0.0,0.598,open forward lean,0.0,False,False
+47,4,central_repair_ring,Pax,2,2,False,0.59,0.0,0.59,relieved reset stance,0.0,False,False
+48,5,riverbend_roofward,Ari,5,1,True,0.634,0.018,0.652,open forward lean,-0.055,True,True
+49,5,roofward_archive,Nia,2,3,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+50,5,archive_signal,Nia,5,0,False,0.656,0.0,0.656,guarded crossed arms,0.0,False,False
+51,5,signal_orchard,Ivo,5,0,True,0.664,0.01,0.674,guarded crossed arms,0.07,True,True
+52,5,orchard_riverbend,Ivo,3,2,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+53,5,central_repair_ring,Pax,2,3,False,0.59,0.0,0.59,relieved reset stance,0.0,False,False
+54,5,riverbend_roofward,Ari,5,0,False,0.652,0.0,0.652,open forward lean,0.0,False,False
+55,5,roofward_archive,Nia,2,3,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+56,5,archive_signal,Nia,5,0,True,0.656,0.01,0.666,guarded crossed arms,0.07,True,True
+57,5,signal_orchard,Ivo,5,0,True,0.674,0.01,0.684,guarded crossed arms,0.07,True,True
+58,5,orchard_riverbend,Ivo,3,2,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+59,5,central_repair_ring,Pax,2,3,False,0.59,0.0,0.59,relieved reset stance,0.0,False,False
+60,6,roofward_archive,Fay,2,4,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+61,6,archive_signal,Milo,5,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+62,6,signal_orchard,Milo,6,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+63,6,orchard_riverbend,Ari,6,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+64,6,central_repair_ring,Juno,2,4,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+65,6,riverbend_roofward,Fay,5,1,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+66,6,roofward_archive,Fay,6,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+67,6,archive_signal,Milo,5,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+68,6,signal_orchard,Milo,6,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+69,6,orchard_riverbend,Ari,6,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+70,6,central_repair_ring,Juno,6,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+71,6,riverbend_roofward,Fay,6,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+72,7,roofward_archive,Fay,6,1,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+73,7,archive_signal,Milo,5,2,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+74,7,signal_orchard,Milo,7,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+75,7,orchard_riverbend,Ari,7,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+76,7,central_repair_ring,Juno,6,1,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+77,7,riverbend_roofward,Fay,6,1,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+78,7,roofward_archive,Fay,7,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+79,7,archive_signal,Milo,5,2,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+80,7,signal_orchard,Milo,7,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+81,7,orchard_riverbend,Ari,7,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+82,7,central_repair_ring,Juno,6,1,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+83,7,riverbend_roofward,Fay,6,1,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+84,8,roofward_archive,Fay,7,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+85,8,archive_signal,Milo,5,3,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+86,8,signal_orchard,Milo,8,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+87,8,orchard_riverbend,Ari,8,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+88,8,central_repair_ring,Juno,6,2,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+89,8,riverbend_roofward,Fay,6,2,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+90,8,roofward_archive,Fay,8,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+91,8,archive_signal,Milo,8,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+92,8,signal_orchard,Milo,8,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+93,8,orchard_riverbend,Ari,8,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+94,8,central_repair_ring,Juno,6,2,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+95,8,riverbend_roofward,Fay,6,2,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+96,9,roofward_archive,Fay,8,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+97,9,archive_signal,Milo,8,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+98,9,signal_orchard,Milo,9,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+99,9,orchard_riverbend,Ari,9,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+100,9,central_repair_ring,Juno,6,3,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+101,9,riverbend_roofward,Fay,6,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+102,9,roofward_archive,Fay,9,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+103,9,archive_signal,Milo,8,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+104,9,signal_orchard,Milo,9,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+105,9,orchard_riverbend,Ari,9,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+106,9,central_repair_ring,Juno,6,3,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+107,9,riverbend_roofward,Fay,6,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+108,10,roofward_archive,Fay,9,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+109,10,archive_signal,Milo,8,2,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+110,10,signal_orchard,Milo,10,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+111,10,orchard_riverbend,Ari,10,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+112,10,central_repair_ring,Juno,6,4,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+113,10,riverbend_roofward,Fay,6,4,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+114,10,roofward_archive,Fay,9,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+115,10,archive_signal,Milo,8,2,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+116,10,signal_orchard,Milo,10,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+117,10,orchard_riverbend,Ari,10,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+118,10,central_repair_ring,Juno,6,4,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+119,10,riverbend_roofward,Fay,6,4,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+120,11,roofward_archive,Fay,9,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+121,11,archive_signal,Milo,8,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+122,11,signal_orchard,Milo,11,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+123,11,orchard_riverbend,Ari,11,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+124,11,central_repair_ring,Juno,6,5,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+125,11,riverbend_roofward,Fay,6,5,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+126,11,roofward_archive,Fay,11,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+127,11,archive_signal,Milo,8,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+128,11,signal_orchard,Milo,11,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+129,11,orchard_riverbend,Ari,11,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+130,11,central_repair_ring,Juno,6,5,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+131,11,riverbend_roofward,Fay,11,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+132,12,archive_signal,Nia,8,4,False,0.666,0.0,0.666,guarded crossed arms,0.0,False,False
+133,12,signal_orchard,Ivo,11,1,False,0.684,0.0,0.684,listening tilt,0.0,False,False
+134,12,orchard_riverbend,Ivo,12,0,False,0.598,0.0,0.598,listening tilt,0.0,False,False
+135,12,central_repair_ring,Pax,12,0,False,0.59,0.0,0.59,relieved reset stance,0.0,False,False
+136,12,riverbend_roofward,Ari,11,1,False,0.652,0.0,0.652,listening tilt,0.0,False,False
+137,12,roofward_archive,Nia,11,1,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+138,12,archive_signal,Nia,12,0,False,0.666,0.0,0.666,guarded crossed arms,0.0,False,False
+139,12,signal_orchard,Ivo,11,1,False,0.684,0.0,0.684,listening tilt,0.0,False,False
+140,12,orchard_riverbend,Ivo,12,0,False,0.598,0.0,0.598,listening tilt,0.0,False,False
+141,12,central_repair_ring,Pax,12,0,False,0.59,0.0,0.59,relieved reset stance,0.0,False,False
+142,12,riverbend_roofward,Ari,11,1,False,0.652,0.0,0.652,listening tilt,0.0,False,False
+143,12,roofward_archive,Nia,12,0,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+144,13,archive_signal,Nia,12,1,False,0.666,0.0,0.666,guarded crossed arms,0.0,False,False
+145,13,signal_orchard,Ivo,11,2,False,0.684,0.0,0.684,route-board reach,0.0,False,False
+146,13,orchard_riverbend,Ivo,13,0,False,0.598,0.0,0.598,route-board reach,0.0,False,False
+147,13,central_repair_ring,Pax,13,0,False,0.59,0.0,0.59,careful pointing,0.0,False,False
+148,13,riverbend_roofward,Ari,11,2,False,0.652,0.0,0.652,route-board reach,0.0,False,False
+149,13,roofward_archive,Nia,12,1,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+150,13,archive_signal,Nia,13,0,False,0.666,0.0,0.666,guarded crossed arms,0.0,False,False
+151,13,signal_orchard,Ivo,11,2,False,0.684,0.0,0.684,route-board reach,0.0,False,False
+152,13,orchard_riverbend,Ivo,13,0,False,0.598,0.0,0.598,route-board reach,0.0,False,False
+153,13,central_repair_ring,Pax,13,0,False,0.59,0.0,0.59,careful pointing,0.0,False,False
+154,13,riverbend_roofward,Ari,13,0,False,0.652,0.0,0.652,route-board reach,0.0,False,False
+155,13,roofward_archive,Nia,12,1,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+156,14,archive_signal,Nia,13,1,False,0.666,0.0,0.666,guarded crossed arms,0.0,False,False
+157,14,signal_orchard,Ivo,11,3,False,0.684,0.0,0.684,open forward lean,0.0,False,False
+158,14,orchard_riverbend,Ivo,14,0,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+159,14,central_repair_ring,Pax,14,0,False,0.59,0.0,0.59,careful pointing,0.0,False,False
+160,14,riverbend_roofward,Ari,13,1,False,0.652,0.0,0.652,open forward lean,0.0,False,False
+161,14,roofward_archive,Nia,12,2,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+162,14,archive_signal,Nia,14,0,False,0.666,0.0,0.666,guarded crossed arms,0.0,False,False
+163,14,signal_orchard,Ivo,11,3,False,0.684,0.0,0.684,open forward lean,0.0,False,False
+164,14,orchard_riverbend,Ivo,14,0,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+165,14,central_repair_ring,Pax,14,0,False,0.59,0.0,0.59,careful pointing,0.0,False,False
+166,14,riverbend_roofward,Ari,13,1,False,0.652,0.0,0.652,open forward lean,0.0,False,False
+167,14,roofward_archive,Nia,12,2,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+168,15,archive_signal,Nia,14,1,False,0.666,0.0,0.666,guarded crossed arms,0.0,False,False
+169,15,signal_orchard,Ivo,11,4,False,0.684,0.0,0.684,guarded crossed arms,0.0,False,False
+170,15,orchard_riverbend,Ivo,15,0,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+171,15,central_repair_ring,Pax,15,0,False,0.59,0.0,0.59,careful pointing,0.0,False,False
+172,15,riverbend_roofward,Ari,13,2,False,0.652,0.0,0.652,guarded crossed arms,0.0,False,False
+173,15,roofward_archive,Nia,12,3,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+174,15,archive_signal,Nia,15,0,False,0.666,0.0,0.666,guarded crossed arms,0.0,False,False
+175,15,signal_orchard,Ivo,15,0,False,0.684,0.0,0.684,guarded crossed arms,0.0,False,False
+176,15,orchard_riverbend,Ivo,15,0,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+177,15,central_repair_ring,Pax,15,0,False,0.59,0.0,0.59,careful pointing,0.0,False,False
+178,15,riverbend_roofward,Ari,13,2,False,0.652,0.0,0.652,guarded crossed arms,0.0,False,False
+179,15,roofward_archive,Nia,12,3,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+180,16,archive_signal,Nia,15,1,False,0.666,0.0,0.666,open forward lean,0.0,False,False
+181,16,signal_orchard,Ivo,15,1,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+182,16,orchard_riverbend,Ivo,16,0,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+183,16,central_repair_ring,Pax,16,0,False,0.59,0.0,0.59,careful pointing,0.0,False,False
+184,16,riverbend_roofward,Ari,13,3,False,0.652,0.0,0.652,relieved reset stance,0.0,False,False
+185,16,roofward_archive,Nia,12,4,False,0.598,0.0,0.598,open forward lean,0.0,False,False
+186,16,archive_signal,Nia,16,0,False,0.666,0.0,0.666,open forward lean,0.0,False,False
+187,16,signal_orchard,Ivo,15,1,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+188,16,orchard_riverbend,Ivo,16,0,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+189,16,central_repair_ring,Pax,16,0,False,0.59,0.0,0.59,careful pointing,0.0,False,False
+190,16,riverbend_roofward,Ari,13,3,False,0.652,0.0,0.652,relieved reset stance,0.0,False,False
+191,16,roofward_archive,Nia,16,0,False,0.598,0.0,0.598,open forward lean,0.0,False,False
+192,17,archive_signal,Nia,16,1,False,0.666,0.0,0.666,open forward lean,0.0,False,False
+193,17,signal_orchard,Ivo,15,2,False,0.684,0.0,0.684,careful pointing,0.0,False,False
+194,17,orchard_riverbend,Ivo,17,0,False,0.598,0.0,0.598,careful pointing,0.0,False,False
+195,17,central_repair_ring,Pax,17,0,False,0.59,0.0,0.59,careful pointing,0.0,False,False
+196,17,riverbend_roofward,Ari,13,4,False,0.652,0.0,0.652,careful pointing,0.0,False,False
+197,17,roofward_archive,Nia,16,1,False,0.598,0.0,0.598,route-board reach,0.0,False,False
+198,17,archive_signal,Nia,17,0,False,0.666,0.0,0.666,route-board reach,0.0,False,False
+199,17,signal_orchard,Ivo,15,2,False,0.684,0.0,0.684,careful pointing,0.0,False,False
+200,17,orchard_riverbend,Ivo,17,0,False,0.598,0.0,0.598,careful pointing,0.0,False,False
+201,17,central_repair_ring,Pax,17,0,False,0.59,0.0,0.59,careful pointing,0.0,False,False
+202,17,riverbend_roofward,Ari,13,4,False,0.652,0.0,0.652,careful pointing,0.0,False,False
+203,17,roofward_archive,Nia,17,0,False,0.598,0.0,0.598,route-board reach,0.0,False,False
+204,18,signal_orchard,Milo,15,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+205,18,orchard_riverbend,Ari,17,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+206,18,central_repair_ring,Juno,18,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+207,18,riverbend_roofward,Fay,13,5,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+208,18,roofward_archive,Fay,17,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+209,18,archive_signal,Milo,17,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+210,18,signal_orchard,Milo,18,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+211,18,orchard_riverbend,Ari,17,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+212,18,central_repair_ring,Juno,18,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+213,18,riverbend_roofward,Fay,18,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+214,18,roofward_archive,Fay,17,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+215,18,archive_signal,Milo,18,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+216,19,signal_orchard,Milo,18,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+217,19,orchard_riverbend,Ari,19,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+218,19,central_repair_ring,Juno,19,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+219,19,riverbend_roofward,Fay,19,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+220,19,roofward_archive,Fay,17,2,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+221,19,archive_signal,Milo,18,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+222,19,signal_orchard,Milo,19,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+223,19,orchard_riverbend,Ari,19,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+224,19,central_repair_ring,Juno,19,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+225,19,riverbend_roofward,Fay,19,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+226,19,roofward_archive,Fay,17,2,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+227,19,archive_signal,Milo,18,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+228,20,signal_orchard,Milo,19,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+229,20,orchard_riverbend,Ari,19,1,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+230,20,central_repair_ring,Juno,20,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+231,20,riverbend_roofward,Fay,20,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+232,20,roofward_archive,Fay,17,3,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+233,20,archive_signal,Milo,18,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+234,20,signal_orchard,Milo,20,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+235,20,orchard_riverbend,Ari,19,1,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+236,20,central_repair_ring,Juno,20,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+237,20,riverbend_roofward,Fay,20,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+238,20,roofward_archive,Fay,20,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+239,20,archive_signal,Milo,18,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+240,21,signal_orchard,Milo,20,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+241,21,orchard_riverbend,Ari,19,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+242,21,central_repair_ring,Juno,21,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+243,21,riverbend_roofward,Fay,21,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+244,21,roofward_archive,Fay,20,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+245,21,archive_signal,Milo,18,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+246,21,signal_orchard,Milo,21,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+247,21,orchard_riverbend,Ari,19,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+248,21,central_repair_ring,Juno,21,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+249,21,riverbend_roofward,Fay,21,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+250,21,roofward_archive,Fay,20,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+251,21,archive_signal,Milo,21,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+252,22,signal_orchard,Milo,21,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+253,22,orchard_riverbend,Ari,19,3,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+254,22,central_repair_ring,Juno,22,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+255,22,riverbend_roofward,Fay,22,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+256,22,roofward_archive,Fay,20,2,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+257,22,archive_signal,Milo,21,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+258,22,signal_orchard,Milo,22,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+259,22,orchard_riverbend,Ari,19,3,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+260,22,central_repair_ring,Juno,22,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+261,22,riverbend_roofward,Fay,22,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+262,22,roofward_archive,Fay,20,2,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+263,22,archive_signal,Milo,22,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+264,23,signal_orchard,Milo,22,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+265,23,orchard_riverbend,Ari,19,4,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+266,23,central_repair_ring,Juno,22,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+267,23,riverbend_roofward,Fay,23,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+268,23,roofward_archive,Fay,20,3,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+269,23,archive_signal,Milo,22,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+270,23,signal_orchard,Milo,23,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+271,23,orchard_riverbend,Ari,19,4,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+272,23,central_repair_ring,Juno,22,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+273,23,riverbend_roofward,Fay,23,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+274,23,roofward_archive,Fay,20,3,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+275,23,archive_signal,Milo,22,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+276,24,orchard_riverbend,Ivo,19,5,False,0.598,0.0,0.598,careful pointing,0.0,False,False
+277,24,central_repair_ring,Pax,22,2,False,0.59,0.0,0.59,open forward lean,0.0,False,False
+278,24,riverbend_roofward,Ari,24,0,False,0.652,0.0,0.652,listening tilt,0.0,False,False
+279,24,roofward_archive,Nia,24,0,False,0.598,0.0,0.598,route-board reach,0.0,False,False
+280,24,archive_signal,Nia,24,0,False,0.666,0.0,0.666,open forward lean,0.0,False,False
+281,24,signal_orchard,Ivo,23,1,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+282,24,orchard_riverbend,Ivo,24,0,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+283,24,central_repair_ring,Pax,22,2,False,0.59,0.0,0.59,open forward lean,0.0,False,False
+284,24,riverbend_roofward,Ari,24,0,False,0.652,0.0,0.652,listening tilt,0.0,False,False
+285,24,roofward_archive,Nia,24,0,False,0.598,0.0,0.598,open forward lean,0.0,False,False
+286,24,archive_signal,Nia,24,0,False,0.666,0.0,0.666,open forward lean,0.0,False,False
+287,24,signal_orchard,Ivo,24,0,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+288,25,orchard_riverbend,Ivo,24,1,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+289,25,central_repair_ring,Pax,22,3,False,0.59,0.0,0.59,guarded crossed arms,0.0,False,False
+290,25,riverbend_roofward,Ari,25,0,False,0.652,0.0,0.652,listening tilt,0.0,False,False
+291,25,roofward_archive,Nia,25,0,False,0.598,0.0,0.598,open forward lean,0.0,False,False
+292,25,archive_signal,Nia,24,1,False,0.666,0.0,0.666,guarded crossed arms,0.0,False,False
+293,25,signal_orchard,Ivo,24,1,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+294,25,orchard_riverbend,Ivo,25,0,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+295,25,central_repair_ring,Pax,22,3,False,0.59,0.0,0.59,guarded crossed arms,0.0,False,False
+296,25,riverbend_roofward,Ari,25,0,False,0.652,0.0,0.652,listening tilt,0.0,False,False
+297,25,roofward_archive,Nia,25,0,False,0.598,0.0,0.598,guarded crossed arms,0.0,False,False
+298,25,archive_signal,Nia,24,1,False,0.666,0.0,0.666,guarded crossed arms,0.0,False,False
+299,25,signal_orchard,Ivo,24,1,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+300,26,orchard_riverbend,Ivo,25,1,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+301,26,central_repair_ring,Pax,26,0,False,0.59,0.0,0.59,relieved reset stance,0.0,False,False
+302,26,riverbend_roofward,Ari,26,0,False,0.652,0.0,0.652,listening tilt,0.0,False,False
+303,26,roofward_archive,Nia,26,0,False,0.598,0.0,0.598,open forward lean,0.0,False,False
+304,26,archive_signal,Nia,24,2,False,0.666,0.0,0.666,relieved reset stance,0.0,False,False
+305,26,signal_orchard,Ivo,24,2,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+306,26,orchard_riverbend,Ivo,26,0,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+307,26,central_repair_ring,Pax,26,0,False,0.59,0.0,0.59,relieved reset stance,0.0,False,False
+308,26,riverbend_roofward,Ari,26,0,False,0.652,0.0,0.652,listening tilt,0.0,False,False
+309,26,roofward_archive,Nia,26,0,False,0.598,0.0,0.598,open forward lean,0.0,False,False
+310,26,archive_signal,Nia,24,2,False,0.666,0.0,0.666,relieved reset stance,0.0,False,False
+311,26,signal_orchard,Ivo,26,0,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+312,27,orchard_riverbend,Ivo,26,1,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+313,27,central_repair_ring,Pax,26,1,False,0.59,0.0,0.59,careful pointing,0.0,False,False
+314,27,riverbend_roofward,Ari,27,0,False,0.652,0.0,0.652,route-board reach,0.0,False,False
+315,27,roofward_archive,Nia,27,0,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+316,27,archive_signal,Nia,24,3,False,0.666,0.0,0.666,careful pointing,0.0,False,False
+317,27,signal_orchard,Ivo,26,1,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+318,27,orchard_riverbend,Ivo,27,0,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+319,27,central_repair_ring,Pax,26,1,False,0.59,0.0,0.59,careful pointing,0.0,False,False
+320,27,riverbend_roofward,Ari,27,0,False,0.652,0.0,0.652,route-board reach,0.0,False,False
+321,27,roofward_archive,Nia,27,0,False,0.598,0.0,0.598,careful pointing,0.0,False,False
+322,27,archive_signal,Nia,24,3,False,0.666,0.0,0.666,careful pointing,0.0,False,False
+323,27,signal_orchard,Ivo,27,0,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+324,28,orchard_riverbend,Ivo,27,1,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+325,28,central_repair_ring,Pax,26,2,False,0.59,0.0,0.59,listening tilt,0.0,False,False
+326,28,riverbend_roofward,Ari,28,0,False,0.652,0.0,0.652,route-board reach,0.0,False,False
+327,28,roofward_archive,Nia,28,0,False,0.598,0.0,0.598,careful pointing,0.0,False,False
+328,28,archive_signal,Nia,24,4,False,0.666,0.0,0.666,listening tilt,0.0,False,False
+329,28,signal_orchard,Ivo,27,1,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+330,28,orchard_riverbend,Ivo,28,0,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+331,28,central_repair_ring,Pax,26,2,False,0.59,0.0,0.59,listening tilt,0.0,False,False
+332,28,riverbend_roofward,Ari,28,0,False,0.652,0.0,0.652,route-board reach,0.0,False,False
+333,28,roofward_archive,Nia,28,0,False,0.598,0.0,0.598,listening tilt,0.0,False,False
+334,28,archive_signal,Nia,24,4,False,0.666,0.0,0.666,listening tilt,0.0,False,False
+335,28,signal_orchard,Ivo,27,1,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+336,29,orchard_riverbend,Ivo,28,1,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+337,29,central_repair_ring,Pax,26,3,False,0.59,0.0,0.59,route-board reach,0.0,False,False
+338,29,riverbend_roofward,Ari,29,0,False,0.652,0.0,0.652,route-board reach,0.0,False,False
+339,29,roofward_archive,Nia,29,0,False,0.598,0.0,0.598,listening tilt,0.0,False,False
+340,29,archive_signal,Nia,24,5,False,0.666,0.0,0.666,route-board reach,0.0,False,False
+341,29,signal_orchard,Ivo,27,2,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+342,29,orchard_riverbend,Ivo,28,1,False,0.598,0.0,0.598,relieved reset stance,0.0,False,False
+343,29,central_repair_ring,Pax,26,3,False,0.59,0.0,0.59,route-board reach,0.0,False,False
+344,29,riverbend_roofward,Ari,29,0,False,0.652,0.0,0.652,route-board reach,0.0,False,False
+345,29,roofward_archive,Nia,29,0,False,0.598,0.0,0.598,route-board reach,0.0,False,False
+346,29,archive_signal,Nia,24,5,False,0.666,0.0,0.666,route-board reach,0.0,False,False
+347,29,signal_orchard,Ivo,27,2,False,0.684,0.0,0.684,relieved reset stance,0.0,False,False
+348,30,central_repair_ring,Juno,26,4,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+349,30,riverbend_roofward,Fay,29,1,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+350,30,roofward_archive,Fay,30,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+351,30,archive_signal,Milo,30,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+352,30,signal_orchard,Milo,27,3,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+353,30,orchard_riverbend,Ari,28,2,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+354,30,central_repair_ring,Juno,30,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+355,30,riverbend_roofward,Fay,29,1,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+356,30,roofward_archive,Fay,30,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+357,30,archive_signal,Milo,30,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+358,30,signal_orchard,Milo,27,3,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+359,30,orchard_riverbend,Ari,30,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+360,31,central_repair_ring,Juno,30,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+361,31,riverbend_roofward,Fay,29,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+362,31,roofward_archive,Fay,31,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+363,31,archive_signal,Milo,31,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+364,31,signal_orchard,Milo,31,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+365,31,orchard_riverbend,Ari,30,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+366,31,central_repair_ring,Juno,31,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+367,31,riverbend_roofward,Fay,29,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+368,31,roofward_archive,Fay,31,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+369,31,archive_signal,Milo,31,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+370,31,signal_orchard,Milo,31,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+371,31,orchard_riverbend,Ari,31,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+372,32,central_repair_ring,Juno,31,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+373,32,riverbend_roofward,Fay,29,3,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+374,32,roofward_archive,Fay,32,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+375,32,archive_signal,Milo,32,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+376,32,signal_orchard,Milo,31,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+377,32,orchard_riverbend,Ari,31,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+378,32,central_repair_ring,Juno,32,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+379,32,riverbend_roofward,Fay,29,3,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+380,32,roofward_archive,Fay,32,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+381,32,archive_signal,Milo,32,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+382,32,signal_orchard,Milo,31,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+383,32,orchard_riverbend,Ari,32,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+384,33,central_repair_ring,Juno,32,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+385,33,riverbend_roofward,Fay,33,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+386,33,roofward_archive,Fay,33,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+387,33,archive_signal,Milo,33,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+388,33,signal_orchard,Milo,31,2,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+389,33,orchard_riverbend,Ari,32,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+390,33,central_repair_ring,Juno,33,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+391,33,riverbend_roofward,Fay,33,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+392,33,roofward_archive,Fay,33,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+393,33,archive_signal,Milo,33,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+394,33,signal_orchard,Milo,31,2,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+395,33,orchard_riverbend,Ari,32,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+396,34,central_repair_ring,Juno,33,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+397,34,riverbend_roofward,Fay,33,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+398,34,roofward_archive,Fay,34,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+399,34,archive_signal,Milo,34,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+400,34,signal_orchard,Milo,31,3,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+401,34,orchard_riverbend,Ari,32,2,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+402,34,central_repair_ring,Juno,34,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+403,34,riverbend_roofward,Fay,33,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+404,34,roofward_archive,Fay,34,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+405,34,archive_signal,Milo,34,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+406,34,signal_orchard,Milo,31,3,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+407,34,orchard_riverbend,Ari,32,2,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+408,35,central_repair_ring,Juno,34,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+409,35,riverbend_roofward,Fay,33,2,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+410,35,roofward_archive,Fay,35,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+411,35,archive_signal,Milo,35,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+412,35,signal_orchard,Milo,31,4,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+413,35,orchard_riverbend,Ari,32,3,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+414,35,central_repair_ring,Juno,35,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+415,35,riverbend_roofward,Fay,33,2,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+416,35,roofward_archive,Fay,35,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+417,35,archive_signal,Milo,35,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+418,35,signal_orchard,Milo,31,4,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+419,35,orchard_riverbend,Ari,32,3,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+420,36,riverbend_roofward,Ari,36,3,True,0.652,0.018,0.67,open forward lean,-0.055,True,True
+421,36,roofward_archive,Nia,36,1,True,0.598,0.01,0.608,guarded crossed arms,0.07,True,True
+422,36,archive_signal,Nia,36,0,True,0.666,0.018,0.684,open forward lean,-0.055,True,True
+423,36,signal_orchard,Ivo,36,0,True,0.684,0.01,0.694,guarded crossed arms,0.07,True,True
+424,36,orchard_riverbend,Ivo,36,4,True,0.598,0.01,0.608,guarded crossed arms,0.07,True,True
+425,36,central_repair_ring,Pax,36,1,True,0.59,0.018,0.608,open forward lean,-0.055,True,True
+426,36,riverbend_roofward,Ari,36,0,True,0.67,0.018,0.688,open forward lean,-0.055,True,True
+427,36,roofward_archive,Nia,36,0,True,0.608,0.018,0.626,open forward lean,-0.055,True,True
+428,36,archive_signal,Nia,36,0,True,0.684,0.01,0.694,guarded crossed arms,0.07,True,True
+429,36,signal_orchard,Ivo,36,0,True,0.694,0.018,0.712,open forward lean,-0.055,False,False
+430,36,orchard_riverbend,Ivo,36,0,True,0.608,0.01,0.618,guarded crossed arms,0.07,True,True
+431,36,central_repair_ring,Pax,36,0,True,0.608,0.01,0.618,guarded crossed arms,0.07,True,True
+432,37,riverbend_roofward,Ari,37,1,True,0.688,0.018,0.706,open forward lean,-0.055,True,True
+433,37,roofward_archive,Nia,37,1,True,0.626,0.018,0.644,open forward lean,-0.055,True,True
+434,37,archive_signal,Nia,37,0,True,0.694,0.018,0.712,open forward lean,-0.055,True,True
+435,37,signal_orchard,Ivo,37,0,True,0.712,0.01,0.722,guarded crossed arms,0.07,True,True
+436,37,orchard_riverbend,Ivo,37,1,True,0.618,0.01,0.628,guarded crossed arms,0.07,True,True
+437,37,central_repair_ring,Pax,37,1,True,0.618,0.01,0.628,guarded crossed arms,0.07,True,True
+438,37,riverbend_roofward,Ari,37,0,True,0.706,0.018,0.724,open forward lean,-0.055,True,True
+439,37,roofward_archive,Nia,37,0,True,0.644,0.018,0.662,open forward lean,-0.055,True,True
+440,37,archive_signal,Nia,37,0,True,0.712,0.01,0.722,guarded crossed arms,0.07,True,True
+441,37,signal_orchard,Ivo,37,0,True,0.722,0.018,0.74,open forward lean,-0.055,True,True
+442,37,orchard_riverbend,Ivo,37,0,False,0.628,0.0,0.628,careful pointing,0.0,False,False
+443,37,central_repair_ring,Pax,37,0,True,0.628,0.01,0.638,guarded crossed arms,0.07,True,True
+444,38,riverbend_roofward,Ari,38,1,True,0.724,0.018,0.742,open forward lean,-0.055,True,True
+445,38,roofward_archive,Nia,37,1,False,0.662,0.0,0.662,listening tilt,0.0,False,False
+446,38,archive_signal,Nia,38,0,True,0.722,0.018,0.74,open forward lean,-0.055,True,True
+447,38,signal_orchard,Ivo,38,0,True,0.74,0.01,0.75,guarded crossed arms,0.07,True,True
+448,38,orchard_riverbend,Ivo,38,0,False,0.628,0.0,0.628,listening tilt,0.0,False,False
+449,38,central_repair_ring,Pax,38,1,True,0.638,0.01,0.648,guarded crossed arms,0.07,True,True
+450,38,riverbend_roofward,Ari,38,0,False,0.742,0.0,0.742,open forward lean,0.0,False,False
+451,38,roofward_archive,Nia,37,1,False,0.662,0.0,0.662,listening tilt,0.0,False,False
+452,38,archive_signal,Nia,38,0,True,0.74,0.01,0.75,guarded crossed arms,0.07,True,True
+453,38,signal_orchard,Ivo,38,0,True,0.75,0.018,0.768,open forward lean,-0.055,True,True
+454,38,orchard_riverbend,Ivo,38,0,True,0.628,0.018,0.646,open forward lean,-0.055,True,True
+455,38,central_repair_ring,Pax,38,0,False,0.648,0.0,0.648,guarded crossed arms,0.0,False,False
+456,39,riverbend_roofward,Ari,39,1,True,0.742,0.018,0.76,open forward lean,-0.055,True,True
+457,39,roofward_archive,Nia,37,2,False,0.662,0.0,0.662,route-board reach,0.0,False,False
+458,39,archive_signal,Nia,39,0,True,0.75,0.018,0.768,open forward lean,-0.055,True,True
+459,39,signal_orchard,Ivo,39,0,True,0.768,0.01,0.778,guarded crossed arms,0.07,True,True
+460,39,orchard_riverbend,Ivo,38,1,False,0.646,0.0,0.646,route-board reach,0.0,False,False
+461,39,central_repair_ring,Pax,38,1,False,0.648,0.0,0.648,guarded crossed arms,0.0,False,False
+462,39,riverbend_roofward,Ari,39,0,False,0.76,0.0,0.76,open forward lean,0.0,False,False
+463,39,roofward_archive,Nia,37,2,False,0.662,0.0,0.662,route-board reach,0.0,False,False
+464,39,archive_signal,Nia,39,0,True,0.768,0.01,0.778,guarded crossed arms,0.07,True,True
+465,39,signal_orchard,Ivo,39,0,True,0.778,0.018,0.796,open forward lean,-0.055,True,True
+466,39,orchard_riverbend,Ivo,38,1,False,0.646,0.0,0.646,route-board reach,0.0,False,False
+467,39,central_repair_ring,Pax,38,1,False,0.648,0.0,0.648,guarded crossed arms,0.0,False,False
+468,40,riverbend_roofward,Ari,40,1,True,0.76,0.018,0.778,open forward lean,-0.055,False,False
+469,40,roofward_archive,Nia,37,3,False,0.662,0.0,0.662,open forward lean,0.0,False,False
+470,40,archive_signal,Nia,40,0,True,0.778,0.018,0.796,open forward lean,-0.055,True,True
+471,40,signal_orchard,Ivo,40,0,True,0.796,0.01,0.806,guarded crossed arms,0.07,True,True
+472,40,orchard_riverbend,Ivo,38,2,False,0.646,0.0,0.646,open forward lean,0.0,False,False
+473,40,central_repair_ring,Pax,38,2,False,0.648,0.0,0.648,relieved reset stance,0.0,False,False
+474,40,riverbend_roofward,Ari,40,0,False,0.778,0.0,0.778,open forward lean,0.0,False,False
+475,40,roofward_archive,Nia,37,3,False,0.662,0.0,0.662,open forward lean,0.0,False,False
+476,40,archive_signal,Nia,40,0,True,0.796,0.01,0.806,guarded crossed arms,0.07,True,True
+477,40,signal_orchard,Ivo,40,0,True,0.806,0.018,0.824,open forward lean,-0.055,True,True
+478,40,orchard_riverbend,Ivo,38,2,False,0.646,0.0,0.646,open forward lean,0.0,False,False
+479,40,central_repair_ring,Pax,38,2,False,0.648,0.0,0.648,relieved reset stance,0.0,False,False
+480,41,riverbend_roofward,Ari,41,1,True,0.778,0.018,0.796,open forward lean,-0.055,True,True
+481,41,roofward_archive,Nia,37,4,False,0.662,0.0,0.662,guarded crossed arms,0.0,False,False
+482,41,archive_signal,Nia,41,0,True,0.806,0.018,0.824,open forward lean,-0.055,True,True
+483,41,signal_orchard,Ivo,41,1,True,0.824,0.018,0.842,open forward lean,-0.055,True,True
+484,41,orchard_riverbend,Ivo,38,3,False,0.646,0.0,0.646,guarded crossed arms,0.0,False,False
+485,41,central_repair_ring,Pax,38,3,False,0.648,0.0,0.648,relieved reset stance,0.0,False,False
+486,41,riverbend_roofward,Ari,41,0,False,0.796,0.0,0.796,open forward lean,0.0,False,False
+487,41,roofward_archive,Nia,37,4,False,0.662,0.0,0.662,guarded crossed arms,0.0,False,False
+488,41,archive_signal,Nia,41,0,True,0.824,0.01,0.834,guarded crossed arms,0.07,True,True
+489,41,signal_orchard,Ivo,41,0,True,0.842,0.018,0.86,open forward lean,-0.055,True,True
+490,41,orchard_riverbend,Ivo,38,3,False,0.646,0.0,0.646,guarded crossed arms,0.0,False,False
+491,41,central_repair_ring,Pax,38,3,False,0.648,0.0,0.648,relieved reset stance,0.0,False,False
+492,42,roofward_archive,Fay,37,5,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+493,42,archive_signal,Milo,41,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+494,42,signal_orchard,Milo,41,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+495,42,orchard_riverbend,Ari,42,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+496,42,central_repair_ring,Juno,38,4,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+497,42,riverbend_roofward,Fay,41,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+498,42,roofward_archive,Fay,42,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+499,42,archive_signal,Milo,41,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+500,42,signal_orchard,Milo,42,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+501,42,orchard_riverbend,Ari,42,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+502,42,central_repair_ring,Juno,38,4,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+503,42,riverbend_roofward,Fay,42,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+504,43,roofward_archive,Fay,42,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+505,43,archive_signal,Milo,41,2,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+506,43,signal_orchard,Milo,43,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+507,43,orchard_riverbend,Ari,43,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+508,43,central_repair_ring,Juno,38,5,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+509,43,riverbend_roofward,Fay,42,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+510,43,roofward_archive,Fay,43,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+511,43,archive_signal,Milo,43,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+512,43,signal_orchard,Milo,43,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+513,43,orchard_riverbend,Ari,43,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+514,43,central_repair_ring,Juno,38,5,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+515,43,riverbend_roofward,Fay,42,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+516,44,roofward_archive,Fay,43,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+517,44,archive_signal,Milo,43,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+518,44,signal_orchard,Milo,44,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+519,44,orchard_riverbend,Ari,43,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+520,44,central_repair_ring,Juno,38,6,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+521,44,riverbend_roofward,Fay,42,2,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+522,44,roofward_archive,Fay,44,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+523,44,archive_signal,Milo,43,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+524,44,signal_orchard,Milo,44,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+525,44,orchard_riverbend,Ari,44,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+526,44,central_repair_ring,Juno,38,6,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+527,44,riverbend_roofward,Fay,42,2,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+528,45,roofward_archive,Fay,44,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+529,45,archive_signal,Milo,43,2,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+530,45,signal_orchard,Milo,45,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+531,45,orchard_riverbend,Ari,45,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+532,45,central_repair_ring,Juno,38,7,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+533,45,riverbend_roofward,Fay,42,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+534,45,roofward_archive,Fay,45,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+535,45,archive_signal,Milo,43,2,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+536,45,signal_orchard,Milo,45,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+537,45,orchard_riverbend,Ari,45,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+538,45,central_repair_ring,Juno,38,7,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+539,45,riverbend_roofward,Fay,45,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+540,46,roofward_archive,Fay,45,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+541,46,archive_signal,Milo,43,3,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+542,46,signal_orchard,Milo,46,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+543,46,orchard_riverbend,Ari,46,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+544,46,central_repair_ring,Juno,38,8,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+545,46,riverbend_roofward,Fay,45,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+546,46,roofward_archive,Fay,46,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+547,46,archive_signal,Milo,43,3,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+548,46,signal_orchard,Milo,46,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+549,46,orchard_riverbend,Ari,46,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+550,46,central_repair_ring,Juno,38,8,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+551,46,riverbend_roofward,Fay,46,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+552,47,roofward_archive,Fay,46,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+553,47,archive_signal,Milo,43,4,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+554,47,signal_orchard,Milo,47,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+555,47,orchard_riverbend,Ari,47,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+556,47,central_repair_ring,Juno,38,9,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+557,47,riverbend_roofward,Fay,46,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+558,47,roofward_archive,Fay,47,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+559,47,archive_signal,Milo,43,4,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+560,47,signal_orchard,Milo,47,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+561,47,orchard_riverbend,Ari,47,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+562,47,central_repair_ring,Juno,38,9,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+563,47,riverbend_roofward,Fay,47,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+564,48,archive_signal,Nia,43,5,False,0.834,0.0,0.834,guarded crossed arms,0.0,False,False
+565,48,signal_orchard,Ivo,47,1,False,0.86,0.0,0.86,listening tilt,0.0,False,False
+566,48,orchard_riverbend,Ivo,48,0,False,0.646,0.0,0.646,listening tilt,0.0,False,False
+567,48,central_repair_ring,Pax,38,10,False,0.648,0.0,0.648,relieved reset stance,0.0,False,False
+568,48,riverbend_roofward,Ari,47,1,False,0.796,0.0,0.796,listening tilt,0.0,False,False
+569,48,roofward_archive,Nia,47,1,False,0.662,0.0,0.662,guarded crossed arms,0.0,False,False
+570,48,archive_signal,Nia,43,5,False,0.834,0.0,0.834,guarded crossed arms,0.0,False,False
+571,48,signal_orchard,Ivo,47,1,False,0.86,0.0,0.86,listening tilt,0.0,False,False
+572,48,orchard_riverbend,Ivo,48,0,False,0.646,0.0,0.646,listening tilt,0.0,False,False
+573,48,central_repair_ring,Pax,48,0,False,0.648,0.0,0.648,relieved reset stance,0.0,False,False
+574,48,riverbend_roofward,Ari,48,0,False,0.796,0.0,0.796,listening tilt,0.0,False,False
+575,48,roofward_archive,Nia,47,1,False,0.662,0.0,0.662,guarded crossed arms,0.0,False,False
+576,49,archive_signal,Nia,43,6,False,0.834,0.0,0.834,guarded crossed arms,0.0,False,False
+577,49,signal_orchard,Ivo,47,2,False,0.86,0.0,0.86,route-board reach,0.0,False,False
+578,49,orchard_riverbend,Ivo,49,0,False,0.646,0.0,0.646,route-board reach,0.0,False,False
+579,49,central_repair_ring,Pax,49,0,False,0.648,0.0,0.648,careful pointing,0.0,False,False
+580,49,riverbend_roofward,Ari,48,1,False,0.796,0.0,0.796,route-board reach,0.0,False,False
+581,49,roofward_archive,Nia,47,2,False,0.662,0.0,0.662,guarded crossed arms,0.0,False,False
+582,49,archive_signal,Nia,49,0,False,0.834,0.0,0.834,guarded crossed arms,0.0,False,False
+583,49,signal_orchard,Ivo,47,2,False,0.86,0.0,0.86,route-board reach,0.0,False,False
+584,49,orchard_riverbend,Ivo,49,0,False,0.646,0.0,0.646,route-board reach,0.0,False,False
+585,49,central_repair_ring,Pax,49,0,False,0.648,0.0,0.648,careful pointing,0.0,False,False
+586,49,riverbend_roofward,Ari,48,1,False,0.796,0.0,0.796,route-board reach,0.0,False,False
+587,49,roofward_archive,Nia,49,0,False,0.662,0.0,0.662,guarded crossed arms,0.0,False,False
+588,50,archive_signal,Nia,49,1,False,0.834,0.0,0.834,guarded crossed arms,0.0,False,False
+589,50,signal_orchard,Ivo,47,3,False,0.86,0.0,0.86,open forward lean,0.0,False,False
+590,50,orchard_riverbend,Ivo,50,0,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+591,50,central_repair_ring,Pax,50,0,False,0.648,0.0,0.648,careful pointing,0.0,False,False
+592,50,riverbend_roofward,Ari,48,2,False,0.796,0.0,0.796,open forward lean,0.0,False,False
+593,50,roofward_archive,Nia,49,1,False,0.662,0.0,0.662,guarded crossed arms,0.0,False,False
+594,50,archive_signal,Nia,50,0,False,0.834,0.0,0.834,guarded crossed arms,0.0,False,False
+595,50,signal_orchard,Ivo,50,0,False,0.86,0.0,0.86,open forward lean,0.0,False,False
+596,50,orchard_riverbend,Ivo,50,0,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+597,50,central_repair_ring,Pax,50,0,False,0.648,0.0,0.648,careful pointing,0.0,False,False
+598,50,riverbend_roofward,Ari,48,2,False,0.796,0.0,0.796,open forward lean,0.0,False,False
+599,50,roofward_archive,Nia,49,1,False,0.662,0.0,0.662,guarded crossed arms,0.0,False,False
+600,51,archive_signal,Nia,50,1,False,0.834,0.0,0.834,guarded crossed arms,0.0,False,False
+601,51,signal_orchard,Ivo,50,1,False,0.86,0.0,0.86,guarded crossed arms,0.0,False,False
+602,51,orchard_riverbend,Ivo,51,0,False,0.646,0.0,0.646,guarded crossed arms,0.0,False,False
+603,51,central_repair_ring,Pax,51,0,False,0.648,0.0,0.648,careful pointing,0.0,False,False
+604,51,riverbend_roofward,Ari,48,3,False,0.796,0.0,0.796,guarded crossed arms,0.0,False,False
+605,51,roofward_archive,Nia,49,2,False,0.662,0.0,0.662,guarded crossed arms,0.0,False,False
+606,51,archive_signal,Nia,51,0,False,0.834,0.0,0.834,guarded crossed arms,0.0,False,False
+607,51,signal_orchard,Ivo,50,1,False,0.86,0.0,0.86,guarded crossed arms,0.0,False,False
+608,51,orchard_riverbend,Ivo,51,0,False,0.646,0.0,0.646,guarded crossed arms,0.0,False,False
+609,51,central_repair_ring,Pax,51,0,False,0.648,0.0,0.648,careful pointing,0.0,False,False
+610,51,riverbend_roofward,Ari,48,3,False,0.796,0.0,0.796,guarded crossed arms,0.0,False,False
+611,51,roofward_archive,Nia,49,2,False,0.662,0.0,0.662,guarded crossed arms,0.0,False,False
+612,52,archive_signal,Nia,51,1,False,0.834,0.0,0.834,open forward lean,0.0,False,False
+613,52,signal_orchard,Ivo,50,2,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+614,52,orchard_riverbend,Ivo,52,0,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+615,52,central_repair_ring,Pax,52,0,False,0.648,0.0,0.648,careful pointing,0.0,False,False
+616,52,riverbend_roofward,Ari,48,4,False,0.796,0.0,0.796,relieved reset stance,0.0,False,False
+617,52,roofward_archive,Nia,49,3,False,0.662,0.0,0.662,open forward lean,0.0,False,False
+618,52,archive_signal,Nia,52,0,False,0.834,0.0,0.834,open forward lean,0.0,False,False
+619,52,signal_orchard,Ivo,50,2,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+620,52,orchard_riverbend,Ivo,52,0,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+621,52,central_repair_ring,Pax,52,0,False,0.648,0.0,0.648,careful pointing,0.0,False,False
+622,52,riverbend_roofward,Ari,48,4,False,0.796,0.0,0.796,relieved reset stance,0.0,False,False
+623,52,roofward_archive,Nia,52,0,False,0.662,0.0,0.662,open forward lean,0.0,False,False
+624,53,archive_signal,Nia,52,1,False,0.834,0.0,0.834,open forward lean,0.0,False,False
+625,53,signal_orchard,Ivo,50,3,False,0.86,0.0,0.86,careful pointing,0.0,False,False
+626,53,orchard_riverbend,Ivo,53,0,False,0.646,0.0,0.646,careful pointing,0.0,False,False
+627,53,central_repair_ring,Pax,53,0,False,0.648,0.0,0.648,careful pointing,0.0,False,False
+628,53,riverbend_roofward,Ari,48,5,False,0.796,0.0,0.796,careful pointing,0.0,False,False
+629,53,roofward_archive,Nia,52,1,False,0.662,0.0,0.662,route-board reach,0.0,False,False
+630,53,archive_signal,Nia,53,0,False,0.834,0.0,0.834,route-board reach,0.0,False,False
+631,53,signal_orchard,Ivo,50,3,False,0.86,0.0,0.86,careful pointing,0.0,False,False
+632,53,orchard_riverbend,Ivo,53,0,False,0.646,0.0,0.646,careful pointing,0.0,False,False
+633,53,central_repair_ring,Pax,53,0,False,0.648,0.0,0.648,careful pointing,0.0,False,False
+634,53,riverbend_roofward,Ari,48,5,False,0.796,0.0,0.796,careful pointing,0.0,False,False
+635,53,roofward_archive,Nia,53,0,False,0.662,0.0,0.662,route-board reach,0.0,False,False
+636,54,signal_orchard,Milo,50,4,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+637,54,orchard_riverbend,Ari,54,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+638,54,central_repair_ring,Juno,54,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+639,54,riverbend_roofward,Fay,54,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+640,54,roofward_archive,Fay,53,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+641,54,archive_signal,Milo,53,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+642,54,signal_orchard,Milo,54,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+643,54,orchard_riverbend,Ari,54,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+644,54,central_repair_ring,Juno,54,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+645,54,riverbend_roofward,Fay,54,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+646,54,roofward_archive,Fay,53,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+647,54,archive_signal,Milo,54,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+648,55,signal_orchard,Milo,54,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+649,55,orchard_riverbend,Ari,54,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+650,55,central_repair_ring,Juno,55,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+651,55,riverbend_roofward,Fay,55,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+652,55,roofward_archive,Fay,53,2,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+653,55,archive_signal,Milo,54,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+654,55,signal_orchard,Milo,55,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+655,55,orchard_riverbend,Ari,54,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+656,55,central_repair_ring,Juno,55,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+657,55,riverbend_roofward,Fay,55,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+658,55,roofward_archive,Fay,55,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+659,55,archive_signal,Milo,54,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+660,56,signal_orchard,Milo,55,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+661,56,orchard_riverbend,Ari,54,2,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+662,56,central_repair_ring,Juno,56,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+663,56,riverbend_roofward,Fay,56,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+664,56,roofward_archive,Fay,55,1,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+665,56,archive_signal,Milo,54,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+666,56,signal_orchard,Milo,56,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+667,56,orchard_riverbend,Ari,54,2,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+668,56,central_repair_ring,Juno,56,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+669,56,riverbend_roofward,Fay,56,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+670,56,roofward_archive,Fay,55,1,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+671,56,archive_signal,Milo,54,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+672,57,signal_orchard,Milo,56,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+673,57,orchard_riverbend,Ari,54,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+674,57,central_repair_ring,Juno,57,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+675,57,riverbend_roofward,Fay,57,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+676,57,roofward_archive,Fay,55,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+677,57,archive_signal,Milo,54,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+678,57,signal_orchard,Milo,57,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+679,57,orchard_riverbend,Ari,54,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+680,57,central_repair_ring,Juno,57,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+681,57,riverbend_roofward,Fay,57,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+682,57,roofward_archive,Fay,55,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+683,57,archive_signal,Milo,57,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+684,58,signal_orchard,Milo,57,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+685,58,orchard_riverbend,Ari,54,4,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+686,58,central_repair_ring,Juno,58,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+687,58,riverbend_roofward,Fay,58,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+688,58,roofward_archive,Fay,55,3,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+689,58,archive_signal,Milo,57,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+690,58,signal_orchard,Milo,58,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+691,58,orchard_riverbend,Ari,54,4,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+692,58,central_repair_ring,Juno,58,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+693,58,riverbend_roofward,Fay,58,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+694,58,roofward_archive,Fay,55,3,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+695,58,archive_signal,Milo,58,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+696,59,signal_orchard,Milo,58,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+697,59,orchard_riverbend,Ari,54,5,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+698,59,central_repair_ring,Juno,59,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+699,59,riverbend_roofward,Fay,59,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+700,59,roofward_archive,Fay,55,4,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+701,59,archive_signal,Milo,58,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+702,59,signal_orchard,Milo,59,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+703,59,orchard_riverbend,Ari,54,5,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+704,59,central_repair_ring,Juno,59,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+705,59,riverbend_roofward,Fay,59,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+706,59,roofward_archive,Fay,55,4,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+707,59,archive_signal,Milo,58,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+708,60,orchard_riverbend,Ivo,54,6,False,0.646,0.0,0.646,careful pointing,0.0,False,False
+709,60,central_repair_ring,Pax,59,1,False,0.648,0.0,0.648,open forward lean,0.0,False,False
+710,60,riverbend_roofward,Ari,60,0,False,0.796,0.0,0.796,listening tilt,0.0,False,False
+711,60,roofward_archive,Nia,60,0,False,0.662,0.0,0.662,route-board reach,0.0,False,False
+712,60,archive_signal,Nia,58,2,False,0.834,0.0,0.834,open forward lean,0.0,False,False
+713,60,signal_orchard,Ivo,59,1,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+714,60,orchard_riverbend,Ivo,60,0,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+715,60,central_repair_ring,Pax,59,1,False,0.648,0.0,0.648,open forward lean,0.0,False,False
+716,60,riverbend_roofward,Ari,60,0,False,0.796,0.0,0.796,listening tilt,0.0,False,False
+717,60,roofward_archive,Nia,60,0,False,0.662,0.0,0.662,open forward lean,0.0,False,False
+718,60,archive_signal,Nia,58,2,False,0.834,0.0,0.834,open forward lean,0.0,False,False
+719,60,signal_orchard,Ivo,60,0,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+720,61,orchard_riverbend,Ivo,60,1,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+721,61,central_repair_ring,Pax,61,0,False,0.648,0.0,0.648,guarded crossed arms,0.0,False,False
+722,61,riverbend_roofward,Ari,60,1,False,0.796,0.0,0.796,listening tilt,0.0,False,False
+723,61,roofward_archive,Nia,61,0,False,0.662,0.0,0.662,open forward lean,0.0,False,False
+724,61,archive_signal,Nia,58,3,False,0.834,0.0,0.834,guarded crossed arms,0.0,False,False
+725,61,signal_orchard,Ivo,60,1,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+726,61,orchard_riverbend,Ivo,61,0,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+727,61,central_repair_ring,Pax,61,0,False,0.648,0.0,0.648,guarded crossed arms,0.0,False,False
+728,61,riverbend_roofward,Ari,60,1,False,0.796,0.0,0.796,listening tilt,0.0,False,False
+729,61,roofward_archive,Nia,61,0,False,0.662,0.0,0.662,guarded crossed arms,0.0,False,False
+730,61,archive_signal,Nia,58,3,False,0.834,0.0,0.834,guarded crossed arms,0.0,False,False
+731,61,signal_orchard,Ivo,60,1,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+732,62,orchard_riverbend,Ivo,61,1,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+733,62,central_repair_ring,Pax,61,1,False,0.648,0.0,0.648,relieved reset stance,0.0,False,False
+734,62,riverbend_roofward,Ari,62,0,False,0.796,0.0,0.796,listening tilt,0.0,False,False
+735,62,roofward_archive,Nia,62,0,False,0.662,0.0,0.662,open forward lean,0.0,False,False
+736,62,archive_signal,Nia,58,4,False,0.834,0.0,0.834,relieved reset stance,0.0,False,False
+737,62,signal_orchard,Ivo,60,2,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+738,62,orchard_riverbend,Ivo,62,0,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+739,62,central_repair_ring,Pax,61,1,False,0.648,0.0,0.648,relieved reset stance,0.0,False,False
+740,62,riverbend_roofward,Ari,62,0,False,0.796,0.0,0.796,listening tilt,0.0,False,False
+741,62,roofward_archive,Nia,62,0,False,0.662,0.0,0.662,open forward lean,0.0,False,False
+742,62,archive_signal,Nia,62,0,False,0.834,0.0,0.834,relieved reset stance,0.0,False,False
+743,62,signal_orchard,Ivo,62,0,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+744,63,orchard_riverbend,Ivo,62,1,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+745,63,central_repair_ring,Pax,61,2,False,0.648,0.0,0.648,careful pointing,0.0,False,False
+746,63,riverbend_roofward,Ari,63,0,False,0.796,0.0,0.796,route-board reach,0.0,False,False
+747,63,roofward_archive,Nia,62,1,False,0.662,0.0,0.662,relieved reset stance,0.0,False,False
+748,63,archive_signal,Nia,62,1,False,0.834,0.0,0.834,careful pointing,0.0,False,False
+749,63,signal_orchard,Ivo,62,1,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+750,63,orchard_riverbend,Ivo,63,0,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+751,63,central_repair_ring,Pax,61,2,False,0.648,0.0,0.648,careful pointing,0.0,False,False
+752,63,riverbend_roofward,Ari,63,0,False,0.796,0.0,0.796,route-board reach,0.0,False,False
+753,63,roofward_archive,Nia,63,0,False,0.662,0.0,0.662,careful pointing,0.0,False,False
+754,63,archive_signal,Nia,62,1,False,0.834,0.0,0.834,careful pointing,0.0,False,False
+755,63,signal_orchard,Ivo,63,0,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+756,64,orchard_riverbend,Ivo,63,1,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+757,64,central_repair_ring,Pax,61,3,False,0.648,0.0,0.648,listening tilt,0.0,False,False
+758,64,riverbend_roofward,Ari,64,0,False,0.796,0.0,0.796,route-board reach,0.0,False,False
+759,64,roofward_archive,Nia,63,1,False,0.662,0.0,0.662,careful pointing,0.0,False,False
+760,64,archive_signal,Nia,62,2,False,0.834,0.0,0.834,listening tilt,0.0,False,False
+761,64,signal_orchard,Ivo,63,1,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+762,64,orchard_riverbend,Ivo,64,0,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+763,64,central_repair_ring,Pax,61,3,False,0.648,0.0,0.648,listening tilt,0.0,False,False
+764,64,riverbend_roofward,Ari,64,0,False,0.796,0.0,0.796,route-board reach,0.0,False,False
+765,64,roofward_archive,Nia,64,0,False,0.662,0.0,0.662,listening tilt,0.0,False,False
+766,64,archive_signal,Nia,62,2,False,0.834,0.0,0.834,listening tilt,0.0,False,False
+767,64,signal_orchard,Ivo,63,1,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+768,65,orchard_riverbend,Ivo,64,1,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+769,65,central_repair_ring,Pax,61,4,False,0.648,0.0,0.648,route-board reach,0.0,False,False
+770,65,riverbend_roofward,Ari,65,0,False,0.796,0.0,0.796,route-board reach,0.0,False,False
+771,65,roofward_archive,Nia,65,0,False,0.662,0.0,0.662,listening tilt,0.0,False,False
+772,65,archive_signal,Nia,62,3,False,0.834,0.0,0.834,route-board reach,0.0,False,False
+773,65,signal_orchard,Ivo,63,2,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+774,65,orchard_riverbend,Ivo,65,0,False,0.646,0.0,0.646,relieved reset stance,0.0,False,False
+775,65,central_repair_ring,Pax,61,4,False,0.648,0.0,0.648,route-board reach,0.0,False,False
+776,65,riverbend_roofward,Ari,65,0,False,0.796,0.0,0.796,route-board reach,0.0,False,False
+777,65,roofward_archive,Nia,65,0,False,0.662,0.0,0.662,route-board reach,0.0,False,False
+778,65,archive_signal,Nia,62,3,False,0.834,0.0,0.834,route-board reach,0.0,False,False
+779,65,signal_orchard,Ivo,63,2,False,0.86,0.0,0.86,relieved reset stance,0.0,False,False
+780,66,central_repair_ring,Juno,61,5,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+781,66,riverbend_roofward,Fay,65,1,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+782,66,roofward_archive,Fay,66,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+783,66,archive_signal,Milo,66,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+784,66,signal_orchard,Milo,66,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+785,66,orchard_riverbend,Ari,65,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+786,66,central_repair_ring,Juno,66,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+787,66,riverbend_roofward,Fay,65,1,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+788,66,roofward_archive,Fay,66,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+789,66,archive_signal,Milo,66,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+790,66,signal_orchard,Milo,66,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+791,66,orchard_riverbend,Ari,66,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+792,67,central_repair_ring,Juno,66,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+793,67,riverbend_roofward,Fay,65,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+794,67,roofward_archive,Fay,67,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+795,67,archive_signal,Milo,67,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+796,67,signal_orchard,Milo,66,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+797,67,orchard_riverbend,Ari,66,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+798,67,central_repair_ring,Juno,66,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+799,67,riverbend_roofward,Fay,65,2,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+800,67,roofward_archive,Fay,67,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+801,67,archive_signal,Milo,67,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+802,67,signal_orchard,Milo,66,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+803,67,orchard_riverbend,Ari,67,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+804,68,central_repair_ring,Juno,66,2,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+805,68,riverbend_roofward,Fay,68,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+806,68,roofward_archive,Fay,68,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+807,68,archive_signal,Milo,68,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+808,68,signal_orchard,Milo,66,2,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+809,68,orchard_riverbend,Ari,67,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+810,68,central_repair_ring,Juno,68,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+811,68,riverbend_roofward,Fay,68,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+812,68,roofward_archive,Fay,68,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+813,68,archive_signal,Milo,68,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+814,68,signal_orchard,Milo,66,2,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+815,68,orchard_riverbend,Ari,68,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+816,69,central_repair_ring,Juno,68,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+817,69,riverbend_roofward,Fay,68,1,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+818,69,roofward_archive,Fay,69,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+819,69,archive_signal,Milo,69,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+820,69,signal_orchard,Milo,66,3,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+821,69,orchard_riverbend,Ari,68,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+822,69,central_repair_ring,Juno,69,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+823,69,riverbend_roofward,Fay,68,1,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+824,69,roofward_archive,Fay,69,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+825,69,archive_signal,Milo,69,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+826,69,signal_orchard,Milo,66,3,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+827,69,orchard_riverbend,Ari,68,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+828,70,central_repair_ring,Juno,69,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+829,70,riverbend_roofward,Fay,68,2,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+830,70,roofward_archive,Fay,70,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+831,70,archive_signal,Milo,70,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+832,70,signal_orchard,Milo,66,4,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+833,70,orchard_riverbend,Ari,68,2,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+834,70,central_repair_ring,Juno,70,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+835,70,riverbend_roofward,Fay,68,2,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+836,70,roofward_archive,Fay,70,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+837,70,archive_signal,Milo,70,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+838,70,signal_orchard,Milo,66,4,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+839,70,orchard_riverbend,Ari,68,2,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+840,71,central_repair_ring,Juno,70,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+841,71,riverbend_roofward,Fay,68,3,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+842,71,roofward_archive,Fay,71,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+843,71,archive_signal,Milo,71,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+844,71,signal_orchard,Milo,66,5,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+845,71,orchard_riverbend,Ari,68,3,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+846,71,central_repair_ring,Juno,71,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+847,71,riverbend_roofward,Fay,68,3,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+848,71,roofward_archive,Fay,71,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+849,71,archive_signal,Milo,71,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+850,71,signal_orchard,Milo,66,5,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+851,71,orchard_riverbend,Ari,68,3,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+852,72,riverbend_roofward,Ari,72,4,True,0.796,0.018,0.814,open forward lean,-0.055,True,True
+853,72,roofward_archive,Nia,72,1,True,0.662,0.01,0.672,guarded crossed arms,0.07,True,True
+854,72,archive_signal,Nia,72,0,True,0.834,0.018,0.852,open forward lean,-0.055,True,True
+855,72,signal_orchard,Ivo,72,0,True,0.86,0.01,0.87,guarded crossed arms,0.07,True,True
+856,72,orchard_riverbend,Ivo,72,4,True,0.646,0.01,0.656,guarded crossed arms,0.07,True,True
+857,72,central_repair_ring,Pax,72,1,True,0.648,0.018,0.666,open forward lean,-0.055,True,True
+858,72,riverbend_roofward,Ari,72,0,True,0.814,0.018,0.832,open forward lean,-0.055,False,False
+859,72,roofward_archive,Nia,72,0,True,0.672,0.01,0.682,guarded crossed arms,0.07,True,True
+860,72,archive_signal,Nia,72,0,True,0.852,0.01,0.862,guarded crossed arms,0.07,True,True
+861,72,signal_orchard,Ivo,72,0,True,0.87,0.018,0.888,open forward lean,-0.055,True,True
+862,72,orchard_riverbend,Ivo,72,0,True,0.656,0.01,0.666,guarded crossed arms,0.07,True,True
+863,72,central_repair_ring,Pax,72,0,True,0.666,0.01,0.676,guarded crossed arms,0.07,True,True
+864,73,riverbend_roofward,Ari,73,1,True,0.832,0.018,0.85,open forward lean,-0.055,True,True
+865,73,roofward_archive,Nia,73,1,True,0.682,0.01,0.692,guarded crossed arms,0.07,True,True
+866,73,archive_signal,Nia,73,0,True,0.862,0.018,0.88,open forward lean,-0.055,True,True
+867,73,signal_orchard,Ivo,73,0,True,0.888,0.01,0.898,guarded crossed arms,0.07,True,True
+868,73,orchard_riverbend,Ivo,73,0,True,0.666,0.018,0.684,open forward lean,-0.055,True,True
+869,73,central_repair_ring,Pax,73,1,True,0.676,0.01,0.686,guarded crossed arms,0.07,True,True
+870,73,riverbend_roofward,Ari,73,0,True,0.85,0.018,0.868,open forward lean,-0.055,True,True
+871,73,roofward_archive,Nia,73,0,False,0.692,0.0,0.692,careful pointing,0.0,False,False
+872,73,archive_signal,Nia,73,0,True,0.88,0.01,0.89,guarded crossed arms,0.07,True,True
+873,73,signal_orchard,Ivo,73,0,True,0.898,0.018,0.916,open forward lean,-0.055,True,True
+874,73,orchard_riverbend,Ivo,73,0,True,0.684,0.018,0.702,open forward lean,-0.055,True,True
+875,73,central_repair_ring,Pax,73,0,True,0.686,0.01,0.696,guarded crossed arms,0.07,True,True
+876,74,riverbend_roofward,Ari,74,1,True,0.868,0.018,0.886,open forward lean,-0.055,True,True
+877,74,roofward_archive,Nia,73,1,False,0.692,0.0,0.692,listening tilt,0.0,False,False
+878,74,archive_signal,Nia,74,0,True,0.89,0.018,0.908,open forward lean,-0.055,True,True
+879,74,signal_orchard,Ivo,74,0,True,0.916,0.01,0.92,guarded crossed arms,0.07,True,True
+880,74,orchard_riverbend,Ivo,73,1,False,0.702,0.0,0.702,listening tilt,0.0,False,False
+881,74,central_repair_ring,Pax,74,1,True,0.696,0.01,0.706,guarded crossed arms,0.07,True,True
+882,74,riverbend_roofward,Ari,74,0,False,0.886,0.0,0.886,open forward lean,0.0,False,False
+883,74,roofward_archive,Nia,73,1,False,0.692,0.0,0.692,listening tilt,0.0,False,False
+884,74,archive_signal,Nia,74,0,True,0.908,0.01,0.918,guarded crossed arms,0.07,False,False
+885,74,signal_orchard,Ivo,74,0,True,0.92,0.018,0.92,open forward lean,-0.055,True,True
+886,74,orchard_riverbend,Ivo,73,1,False,0.702,0.0,0.702,listening tilt,0.0,False,False
+887,74,central_repair_ring,Pax,74,0,False,0.706,0.0,0.706,guarded crossed arms,0.0,False,False
+888,75,riverbend_roofward,Ari,75,1,True,0.886,0.018,0.904,open forward lean,-0.055,True,True
+889,75,roofward_archive,Nia,75,0,False,0.692,0.0,0.692,route-board reach,0.0,False,False
+890,75,archive_signal,Nia,75,0,True,0.918,0.018,0.92,open forward lean,-0.055,True,True
+891,75,signal_orchard,Ivo,75,0,True,0.92,0.01,0.92,guarded crossed arms,0.07,True,True
+892,75,orchard_riverbend,Ivo,73,2,False,0.702,0.0,0.702,route-board reach,0.0,False,False
+893,75,central_repair_ring,Pax,74,1,False,0.706,0.0,0.706,guarded crossed arms,0.0,False,False
+894,75,riverbend_roofward,Ari,75,0,False,0.904,0.0,0.904,open forward lean,0.0,False,False
+895,75,roofward_archive,Nia,75,0,True,0.692,0.018,0.71,open forward lean,-0.055,True,True
+896,75,archive_signal,Nia,75,0,True,0.92,0.01,0.92,guarded crossed arms,0.07,True,True
+897,75,signal_orchard,Ivo,75,0,True,0.92,0.018,0.92,open forward lean,-0.055,False,False
+898,75,orchard_riverbend,Ivo,73,2,False,0.702,0.0,0.702,route-board reach,0.0,False,False
+899,75,central_repair_ring,Pax,74,1,False,0.706,0.0,0.706,guarded crossed arms,0.0,False,False
+900,76,riverbend_roofward,Ari,76,1,True,0.904,0.018,0.92,open forward lean,-0.055,True,True
+901,76,roofward_archive,Nia,75,1,False,0.71,0.0,0.71,open forward lean,0.0,False,False
+902,76,archive_signal,Nia,76,0,True,0.92,0.018,0.92,open forward lean,-0.055,True,True
+903,76,signal_orchard,Ivo,76,0,True,0.92,0.01,0.92,guarded crossed arms,0.07,True,True
+904,76,orchard_riverbend,Ivo,73,3,False,0.702,0.0,0.702,open forward lean,0.0,False,False
+905,76,central_repair_ring,Pax,74,2,False,0.706,0.0,0.706,relieved reset stance,0.0,False,False
+906,76,riverbend_roofward,Ari,76,0,False,0.92,0.0,0.92,open forward lean,0.0,False,False
+907,76,roofward_archive,Nia,75,1,False,0.71,0.0,0.71,open forward lean,0.0,False,False
+908,76,archive_signal,Nia,76,0,True,0.92,0.01,0.92,guarded crossed arms,0.07,True,True
+909,76,signal_orchard,Ivo,76,0,True,0.92,0.018,0.92,open forward lean,-0.055,True,True
+910,76,orchard_riverbend,Ivo,73,3,False,0.702,0.0,0.702,open forward lean,0.0,False,False
+911,76,central_repair_ring,Pax,74,2,False,0.706,0.0,0.706,relieved reset stance,0.0,False,False
+912,77,riverbend_roofward,Ari,77,1,True,0.92,0.018,0.92,open forward lean,-0.055,True,True
+913,77,roofward_archive,Nia,75,2,False,0.71,0.0,0.71,guarded crossed arms,0.0,False,False
+914,77,archive_signal,Nia,77,0,True,0.92,0.018,0.92,open forward lean,-0.055,True,True
+915,77,signal_orchard,Ivo,77,0,True,0.92,0.01,0.92,guarded crossed arms,0.07,True,True
+916,77,orchard_riverbend,Ivo,73,4,False,0.702,0.0,0.702,guarded crossed arms,0.0,False,False
+917,77,central_repair_ring,Pax,74,3,False,0.706,0.0,0.706,relieved reset stance,0.0,False,False
+918,77,riverbend_roofward,Ari,77,0,False,0.92,0.0,0.92,open forward lean,0.0,False,False
+919,77,roofward_archive,Nia,75,2,False,0.71,0.0,0.71,guarded crossed arms,0.0,False,False
+920,77,archive_signal,Nia,77,0,True,0.92,0.018,0.92,open forward lean,-0.055,True,True
+921,77,signal_orchard,Ivo,77,0,True,0.92,0.018,0.92,open forward lean,-0.055,True,True
+922,77,orchard_riverbend,Ivo,73,4,False,0.702,0.0,0.702,guarded crossed arms,0.0,False,False
+923,77,central_repair_ring,Pax,74,3,False,0.706,0.0,0.706,relieved reset stance,0.0,False,False
+924,78,roofward_archive,Fay,75,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+925,78,archive_signal,Milo,77,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+926,78,signal_orchard,Milo,78,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+927,78,orchard_riverbend,Ari,78,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+928,78,central_repair_ring,Juno,74,4,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+929,78,riverbend_roofward,Fay,77,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+930,78,roofward_archive,Fay,78,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+931,78,archive_signal,Milo,77,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+932,78,signal_orchard,Milo,78,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+933,78,orchard_riverbend,Ari,78,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+934,78,central_repair_ring,Juno,74,4,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+935,78,riverbend_roofward,Fay,78,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+936,79,roofward_archive,Fay,78,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+937,79,archive_signal,Milo,77,2,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+938,79,signal_orchard,Milo,79,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+939,79,orchard_riverbend,Ari,79,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+940,79,central_repair_ring,Juno,74,5,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+941,79,riverbend_roofward,Fay,78,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+942,79,roofward_archive,Fay,79,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+943,79,archive_signal,Milo,77,2,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+944,79,signal_orchard,Milo,79,0,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+945,79,orchard_riverbend,Ari,79,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+946,79,central_repair_ring,Juno,74,5,False,0.58,0.0,0.58,listening tilt,0.0,False,False
+947,79,riverbend_roofward,Fay,78,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+948,80,roofward_archive,Fay,79,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+949,80,archive_signal,Milo,77,3,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+950,80,signal_orchard,Milo,79,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+951,80,orchard_riverbend,Ari,80,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+952,80,central_repair_ring,Juno,80,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+953,80,riverbend_roofward,Fay,78,2,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+954,80,roofward_archive,Fay,80,0,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+955,80,archive_signal,Milo,77,3,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+956,80,signal_orchard,Milo,79,1,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+957,80,orchard_riverbend,Ari,80,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+958,80,central_repair_ring,Juno,80,0,False,0.58,0.0,0.58,route-board reach,0.0,False,False
+959,80,riverbend_roofward,Fay,78,2,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+960,81,roofward_archive,Fay,80,1,False,0.58,0.0,0.58,careful pointing,0.0,False,False
+961,81,archive_signal,Milo,77,4,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+962,81,signal_orchard,Milo,81,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+963,81,orchard_riverbend,Ari,81,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+964,81,central_repair_ring,Juno,80,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+965,81,riverbend_roofward,Fay,78,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+966,81,roofward_archive,Fay,81,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+967,81,archive_signal,Milo,77,4,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+968,81,signal_orchard,Milo,81,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+969,81,orchard_riverbend,Ari,81,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+970,81,central_repair_ring,Juno,80,1,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+971,81,riverbend_roofward,Fay,78,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+972,82,roofward_archive,Fay,81,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+973,82,archive_signal,Milo,77,5,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+974,82,signal_orchard,Milo,82,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+975,82,orchard_riverbend,Ari,82,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+976,82,central_repair_ring,Juno,80,2,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+977,82,riverbend_roofward,Fay,78,4,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+978,82,roofward_archive,Fay,82,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+979,82,archive_signal,Milo,77,5,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+980,82,signal_orchard,Milo,82,0,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+981,82,orchard_riverbend,Ari,82,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+982,82,central_repair_ring,Juno,80,2,False,0.58,0.0,0.58,guarded crossed arms,0.0,False,False
+983,82,riverbend_roofward,Fay,78,4,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+984,83,roofward_archive,Fay,82,1,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+985,83,archive_signal,Milo,77,6,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+986,83,signal_orchard,Milo,83,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+987,83,orchard_riverbend,Ari,83,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+988,83,central_repair_ring,Juno,80,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+989,83,riverbend_roofward,Fay,78,5,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+990,83,roofward_archive,Fay,83,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+991,83,archive_signal,Milo,77,6,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+992,83,signal_orchard,Milo,83,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+993,83,orchard_riverbend,Ari,83,0,False,0.58,0.0,0.58,open forward lean,0.0,False,False
+994,83,central_repair_ring,Juno,80,3,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+995,83,riverbend_roofward,Fay,83,0,False,0.58,0.0,0.58,relieved reset stance,0.0,False,False
+996,84,archive_signal,Nia,77,7,False,0.92,0.0,0.92,open forward lean,0.0,False,False
+997,84,signal_orchard,Ivo,83,1,False,0.92,0.0,0.92,listening tilt,0.0,False,False
+998,84,orchard_riverbend,Ivo,84,0,False,0.702,0.0,0.702,listening tilt,0.0,False,False
+999,84,central_repair_ring,Pax,84,0,False,0.706,0.0,0.706,relieved reset stance,0.0,False,False
+1000,84,riverbend_roofward,Ari,83,1,False,0.92,0.0,0.92,listening tilt,0.0,False,False
+1001,84,roofward_archive,Nia,83,1,False,0.71,0.0,0.71,open forward lean,0.0,False,False
+1002,84,archive_signal,Nia,84,0,False,0.92,0.0,0.92,open forward lean,0.0,False,False
+1003,84,signal_orchard,Ivo,83,1,False,0.92,0.0,0.92,listening tilt,0.0,False,False
+1004,84,orchard_riverbend,Ivo,84,0,False,0.702,0.0,0.702,listening tilt,0.0,False,False
+1005,84,central_repair_ring,Pax,84,0,False,0.706,0.0,0.706,relieved reset stance,0.0,False,False
+1006,84,riverbend_roofward,Ari,83,1,False,0.92,0.0,0.92,listening tilt,0.0,False,False
+1007,84,roofward_archive,Nia,84,0,False,0.71,0.0,0.71,open forward lean,0.0,False,False

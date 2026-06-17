@@ -1,0 +1,1009 @@
+tick_id,day,route_id,sight_cue,sound_cue,smell_cue,temperature_cue,wetness_cue,body_cue,rhythm_marker,sensory_bound_to_animation
+0,1,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,listening tilt,flower-node,True
+1,1,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+2,1,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+3,1,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,listening tilt,ambient-rate,True
+4,1,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,flower-node,True
+5,1,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,listening tilt,ambient-rate,True
+6,1,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+7,1,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+8,1,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+9,1,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+10,1,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+11,1,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,listening tilt,animation-pulse,True
+12,2,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+13,2,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+14,2,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+15,2,signal_orchard,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+16,2,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,flower-node,True
+17,2,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+18,2,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+19,2,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+20,2,archive_signal,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+21,2,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+22,2,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+23,2,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+24,3,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+25,3,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+26,3,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+27,3,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+28,3,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,flower-node,True
+29,3,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+30,3,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+31,3,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+32,3,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+33,3,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+34,3,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+35,3,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+36,4,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+37,4,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+38,4,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+39,4,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+40,4,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+41,4,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+42,4,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+43,4,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+44,4,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,open forward lean,flower-node,True
+45,4,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+46,4,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+47,4,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+48,5,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+49,5,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+50,5,archive_signal,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+51,5,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+52,5,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,flower-node,True
+53,5,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+54,5,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+55,5,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+56,5,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+57,5,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+58,5,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+59,5,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+60,6,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,listening tilt,flower-node,True
+61,6,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+62,6,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+63,6,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+64,6,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,flower-node,True
+65,6,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,listening tilt,ambient-rate,True
+66,6,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+67,6,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+68,6,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,cool shared-session air,dry floor,route-board reach,flower-node,True
+69,6,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+70,6,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+71,6,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,listening tilt,animation-pulse,True
+72,7,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,flower-node,True
+73,7,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+74,7,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+75,7,orchard_riverbend,idle route poses,map room hum,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+76,7,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,flower-node,True
+77,7,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,ambient-rate,True
+78,7,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+79,7,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+80,7,signal_orchard,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,listening tilt,flower-node,True
+81,7,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+82,7,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+83,7,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,ambient-rate,True
+84,8,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,flower-node,True
+85,8,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+86,8,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+87,8,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+88,8,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,flower-node,True
+89,8,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,ambient-rate,True
+90,8,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+91,8,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+92,8,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,route-board reach,flower-node,True
+93,8,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+94,8,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+95,8,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,careful pointing,ambient-rate,True
+96,9,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,flower-node,True
+97,9,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+98,9,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+99,9,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+100,9,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+101,9,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+102,9,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+103,9,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+104,9,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,open forward lean,flower-node,True
+105,9,orchard_riverbend,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+106,9,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+107,9,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+108,10,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+109,10,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+110,10,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+111,10,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+112,10,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+113,10,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+114,10,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+115,10,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+116,10,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+117,10,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+118,10,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+119,10,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+120,11,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+121,11,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+122,11,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+123,11,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+124,11,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+125,11,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+126,11,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+127,11,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+128,11,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+129,11,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+130,11,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+131,11,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,relieved reset stance,animation-pulse,True
+132,12,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+133,12,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+134,12,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+135,12,central_repair_ring,idle route poses,map room hum,warm wire,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+136,12,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,flower-node,True
+137,12,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+138,12,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+139,12,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+140,12,orchard_riverbend,idle route poses,map room hum,wet wood,cool shared-session air,damp route cue,listening tilt,flower-node,True
+141,12,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+142,12,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+143,12,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+144,13,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+145,13,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+146,13,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+147,13,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+148,13,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,flower-node,True
+149,13,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+150,13,archive_signal,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+151,13,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+152,13,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,flower-node,True
+153,13,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+154,13,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+155,13,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+156,14,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+157,14,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+158,14,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+159,14,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+160,14,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+161,14,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+162,14,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+163,14,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+164,14,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,cool shared-session air,damp route cue,relieved reset stance,flower-node,True
+165,14,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+166,14,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+167,14,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+168,15,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+169,15,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+170,15,orchard_riverbend,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+171,15,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+172,15,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,flower-node,True
+173,15,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+174,15,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+175,15,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+176,15,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,guarded crossed arms,flower-node,True
+177,15,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+178,15,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+179,15,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+180,16,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,flower-node,True
+181,16,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+182,16,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+183,16,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+184,16,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,flower-node,True
+185,16,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,open forward lean,ambient-rate,True
+186,16,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+187,16,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+188,16,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,relieved reset stance,flower-node,True
+189,16,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+190,16,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+191,16,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,open forward lean,animation-pulse,True
+192,17,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,flower-node,True
+193,17,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+194,17,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+195,17,central_repair_ring,idle route poses,map room hum,warm wire,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+196,17,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,flower-node,True
+197,17,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+198,17,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+199,17,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+200,17,orchard_riverbend,idle route poses,map room hum,wet wood,cool shared-session air,damp route cue,careful pointing,flower-node,True
+201,17,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+202,17,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+203,17,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,cool shared-session air,dry floor,route-board reach,animation-pulse,True
+204,18,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+205,18,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+206,18,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+207,18,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,cool shared-session air,damp route cue,careful pointing,animation-pulse,True
+208,18,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,flower-node,True
+209,18,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+210,18,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+211,18,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+212,18,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+213,18,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+214,18,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+215,18,archive_signal,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+216,19,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+217,19,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+218,19,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+219,19,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,animation-pulse,True
+220,19,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+221,19,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+222,19,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+223,19,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+224,19,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+225,19,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+226,19,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+227,19,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+228,20,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+229,20,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+230,20,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+231,20,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+232,20,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+233,20,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+234,20,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+235,20,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+236,20,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+237,20,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+238,20,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+239,20,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+240,21,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+241,21,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+242,21,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+243,21,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,guarded crossed arms,animation-pulse,True
+244,21,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+245,21,archive_signal,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+246,21,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+247,21,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+248,21,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+249,21,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+250,21,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+251,21,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+252,22,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+253,22,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+254,22,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+255,22,riverbend_roofward,idle route poses,map room hum,wet wood,cool shared-session air,damp route cue,relieved reset stance,animation-pulse,True
+256,22,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,flower-node,True
+257,22,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+258,22,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+259,22,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+260,22,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,cool shared-session air,dry floor,route-board reach,flower-node,True
+261,22,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+262,22,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+263,22,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+264,23,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+265,23,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+266,23,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+267,23,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,careful pointing,animation-pulse,True
+268,23,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,flower-node,True
+269,23,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+270,23,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+271,23,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+272,23,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,route-board reach,flower-node,True
+273,23,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+274,23,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+275,23,archive_signal,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+276,24,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,flower-node,True
+277,24,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+278,24,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+279,24,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,route-board reach,animation-pulse,True
+280,24,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,flower-node,True
+281,24,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+282,24,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+283,24,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+284,24,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,listening tilt,flower-node,True
+285,24,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+286,24,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+287,24,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+288,25,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,flower-node,True
+289,25,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+290,25,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+291,25,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,open forward lean,animation-pulse,True
+292,25,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+293,25,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+294,25,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+295,25,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+296,25,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,listening tilt,flower-node,True
+297,25,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+298,25,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+299,25,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+300,26,orchard_riverbend,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,relieved reset stance,flower-node,True
+301,26,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+302,26,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+303,26,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,cool shared-session air,dry floor,open forward lean,animation-pulse,True
+304,26,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+305,26,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+306,26,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+307,26,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+308,26,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,listening tilt,flower-node,True
+309,26,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+310,26,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+311,26,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+312,27,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,flower-node,True
+313,27,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+314,27,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+315,27,roofward_archive,idle route poses,map room hum,warm wire,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+316,27,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,flower-node,True
+317,27,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+318,27,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+319,27,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+320,27,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,flower-node,True
+321,27,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+322,27,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+323,27,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+324,28,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,flower-node,True
+325,28,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+326,28,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+327,28,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+328,28,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,flower-node,True
+329,28,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+330,28,orchard_riverbend,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+331,28,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+332,28,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,flower-node,True
+333,28,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+334,28,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+335,28,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+336,29,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,flower-node,True
+337,29,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+338,29,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+339,29,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,listening tilt,animation-pulse,True
+340,29,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,flower-node,True
+341,29,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+342,29,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+343,29,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+344,29,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,flower-node,True
+345,29,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+346,29,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+347,29,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+348,30,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,flower-node,True
+349,30,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+350,30,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+351,30,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+352,30,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+353,30,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+354,30,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+355,30,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+356,30,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+357,30,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+358,30,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+359,30,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,animation-pulse,True
+360,31,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+361,31,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+362,31,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+363,31,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+364,31,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+365,31,orchard_riverbend,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+366,31,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+367,31,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+368,31,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+369,31,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+370,31,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+371,31,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,animation-pulse,True
+372,32,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+373,32,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+374,32,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+375,32,archive_signal,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+376,32,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,flower-node,True
+377,32,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+378,32,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+379,32,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+380,32,roofward_archive,idle route poses,map room hum,warm wire,cool shared-session air,dry floor,careful pointing,flower-node,True
+381,32,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+382,32,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+383,32,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,animation-pulse,True
+384,33,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+385,33,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+386,33,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+387,33,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+388,33,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,flower-node,True
+389,33,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+390,33,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+391,33,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+392,33,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,listening tilt,flower-node,True
+393,33,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+394,33,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+395,33,orchard_riverbend,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+396,34,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+397,34,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+398,34,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+399,34,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+400,34,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,flower-node,True
+401,34,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+402,34,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+403,34,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+404,34,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,route-board reach,flower-node,True
+405,34,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+406,34,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+407,34,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+408,35,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+409,35,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+410,35,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+411,35,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,route-board reach,animation-pulse,True
+412,35,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,flower-node,True
+413,35,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+414,35,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+415,35,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+416,35,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+417,35,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+418,35,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+419,35,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+420,36,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+421,36,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+422,36,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+423,36,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+424,36,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,flower-node,True
+425,36,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+426,36,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+427,36,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+428,36,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+429,36,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+430,36,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+431,36,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+432,37,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+433,37,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+434,37,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+435,37,signal_orchard,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+436,37,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,flower-node,True
+437,37,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+438,37,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+439,37,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+440,37,archive_signal,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+441,37,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+442,37,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+443,37,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+444,38,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+445,38,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+446,38,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+447,38,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+448,38,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,flower-node,True
+449,38,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+450,38,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+451,38,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+452,38,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+453,38,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+454,38,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+455,38,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+456,39,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+457,39,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+458,39,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+459,39,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+460,39,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,flower-node,True
+461,39,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+462,39,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+463,39,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+464,39,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+465,39,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+466,39,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+467,39,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+468,40,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+469,40,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+470,40,archive_signal,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+471,40,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+472,40,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+473,40,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+474,40,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+475,40,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+476,40,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+477,40,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+478,40,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+479,40,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+480,41,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+481,41,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+482,41,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+483,41,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,open forward lean,animation-pulse,True
+484,41,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,flower-node,True
+485,41,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+486,41,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+487,41,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+488,41,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+489,41,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+490,41,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+491,41,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+492,42,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+493,42,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+494,42,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+495,42,orchard_riverbend,idle route poses,map room hum,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+496,42,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,flower-node,True
+497,42,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+498,42,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+499,42,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+500,42,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,cool shared-session air,dry floor,route-board reach,flower-node,True
+501,42,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+502,42,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+503,42,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,relieved reset stance,animation-pulse,True
+504,43,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+505,43,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+506,43,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+507,43,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+508,43,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,flower-node,True
+509,43,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+510,43,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+511,43,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+512,43,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,listening tilt,flower-node,True
+513,43,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+514,43,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+515,43,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+516,44,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,flower-node,True
+517,44,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+518,44,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+519,44,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,ambient-rate,True
+520,44,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,flower-node,True
+521,44,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,ambient-rate,True
+522,44,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+523,44,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+524,44,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,route-board reach,flower-node,True
+525,44,orchard_riverbend,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+526,44,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+527,44,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,ambient-rate,True
+528,45,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,flower-node,True
+529,45,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+530,45,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+531,45,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+532,45,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+533,45,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+534,45,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+535,45,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+536,45,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,open forward lean,flower-node,True
+537,45,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+538,45,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+539,45,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+540,46,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+541,46,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+542,46,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+543,46,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+544,46,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+545,46,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+546,46,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+547,46,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+548,46,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+549,46,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+550,46,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+551,46,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,relieved reset stance,animation-pulse,True
+552,47,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+553,47,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+554,47,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+555,47,orchard_riverbend,idle route poses,map room hum,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+556,47,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+557,47,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+558,47,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+559,47,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+560,47,signal_orchard,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+561,47,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+562,47,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+563,47,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,relieved reset stance,animation-pulse,True
+564,48,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+565,48,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+566,48,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+567,48,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,ambient-rate,True
+568,48,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,flower-node,True
+569,48,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+570,48,archive_signal,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+571,48,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+572,48,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,listening tilt,flower-node,True
+573,48,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+574,48,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+575,48,roofward_archive,idle route poses,map room hum,warm wire,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+576,49,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+577,49,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+578,49,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+579,49,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+580,49,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,flower-node,True
+581,49,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+582,49,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+583,49,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+584,49,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,flower-node,True
+585,49,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+586,49,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+587,49,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+588,50,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+589,50,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+590,50,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+591,50,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+592,50,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+593,50,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+594,50,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+595,50,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+596,50,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,cool shared-session air,damp route cue,relieved reset stance,flower-node,True
+597,50,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+598,50,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+599,50,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+600,51,archive_signal,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+601,51,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+602,51,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+603,51,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+604,51,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,flower-node,True
+605,51,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+606,51,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+607,51,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+608,51,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,guarded crossed arms,flower-node,True
+609,51,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+610,51,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+611,51,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+612,52,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,flower-node,True
+613,52,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+614,52,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+615,52,central_repair_ring,idle route poses,map room hum,warm wire,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+616,52,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,flower-node,True
+617,52,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,ambient-rate,True
+618,52,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+619,52,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+620,52,orchard_riverbend,idle route poses,map room hum,wet wood,cool shared-session air,damp route cue,relieved reset stance,flower-node,True
+621,52,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+622,52,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+623,52,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,open forward lean,animation-pulse,True
+624,53,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,flower-node,True
+625,53,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+626,53,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+627,53,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+628,53,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,flower-node,True
+629,53,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+630,53,archive_signal,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+631,53,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+632,53,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,careful pointing,flower-node,True
+633,53,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+634,53,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+635,53,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,cool shared-session air,dry floor,route-board reach,animation-pulse,True
+636,54,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+637,54,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+638,54,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+639,54,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,cool shared-session air,damp route cue,careful pointing,animation-pulse,True
+640,54,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,flower-node,True
+641,54,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+642,54,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+643,54,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+644,54,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+645,54,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+646,54,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+647,54,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+648,55,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+649,55,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+650,55,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+651,55,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,animation-pulse,True
+652,55,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+653,55,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+654,55,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+655,55,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+656,55,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+657,55,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+658,55,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+659,55,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+660,56,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+661,56,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+662,56,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+663,56,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+664,56,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+665,56,archive_signal,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+666,56,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+667,56,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+668,56,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+669,56,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+670,56,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+671,56,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+672,57,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+673,57,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+674,57,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+675,57,riverbend_roofward,idle route poses,map room hum,wet wood,cool shared-session air,damp route cue,guarded crossed arms,animation-pulse,True
+676,57,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+677,57,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+678,57,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+679,57,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+680,57,central_repair_ring,idle route poses,map room hum,warm wire,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+681,57,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+682,57,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+683,57,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+684,58,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+685,58,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+686,58,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+687,58,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,relieved reset stance,animation-pulse,True
+688,58,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,flower-node,True
+689,58,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+690,58,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+691,58,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+692,58,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,cool shared-session air,dry floor,route-board reach,flower-node,True
+693,58,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+694,58,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+695,58,archive_signal,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+696,59,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+697,59,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+698,59,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+699,59,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,careful pointing,animation-pulse,True
+700,59,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,flower-node,True
+701,59,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+702,59,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+703,59,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+704,59,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,route-board reach,flower-node,True
+705,59,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+706,59,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+707,59,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+708,60,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,flower-node,True
+709,60,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+710,60,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+711,60,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,route-board reach,animation-pulse,True
+712,60,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,flower-node,True
+713,60,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+714,60,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+715,60,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+716,60,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,listening tilt,flower-node,True
+717,60,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+718,60,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+719,60,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+720,61,orchard_riverbend,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,relieved reset stance,flower-node,True
+721,61,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+722,61,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+723,61,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,open forward lean,animation-pulse,True
+724,61,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+725,61,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+726,61,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+727,61,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+728,61,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,listening tilt,flower-node,True
+729,61,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+730,61,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+731,61,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+732,62,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,flower-node,True
+733,62,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+734,62,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+735,62,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,cool shared-session air,dry floor,open forward lean,animation-pulse,True
+736,62,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+737,62,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+738,62,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+739,62,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+740,62,riverbend_roofward,idle route poses,map room hum,wet wood,cool shared-session air,damp route cue,listening tilt,flower-node,True
+741,62,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+742,62,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+743,62,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+744,63,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,flower-node,True
+745,63,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+746,63,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+747,63,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,ambient-rate,True
+748,63,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,flower-node,True
+749,63,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+750,63,orchard_riverbend,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+751,63,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+752,63,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,flower-node,True
+753,63,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+754,63,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+755,63,signal_orchard,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+756,64,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,flower-node,True
+757,64,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+758,64,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+759,64,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+760,64,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,flower-node,True
+761,64,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+762,64,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+763,64,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+764,64,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,flower-node,True
+765,64,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+766,64,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+767,64,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+768,65,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,flower-node,True
+769,65,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+770,65,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+771,65,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,listening tilt,animation-pulse,True
+772,65,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,flower-node,True
+773,65,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+774,65,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+775,65,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+776,65,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,flower-node,True
+777,65,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+778,65,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+779,65,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+780,66,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,route-board reach,flower-node,True
+781,66,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+782,66,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+783,66,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+784,66,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+785,66,orchard_riverbend,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+786,66,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+787,66,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+788,66,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+789,66,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+790,66,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+791,66,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,animation-pulse,True
+792,67,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+793,67,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+794,67,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+795,67,archive_signal,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+796,67,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+797,67,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+798,67,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+799,67,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+800,67,roofward_archive,idle route poses,map room hum,warm wire,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+801,67,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+802,67,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+803,67,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,animation-pulse,True
+804,68,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+805,68,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+806,68,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+807,68,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+808,68,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,flower-node,True
+809,68,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+810,68,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+811,68,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,animation-pulse,True
+812,68,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,careful pointing,flower-node,True
+813,68,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+814,68,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+815,68,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,cool shared-session air,damp route cue,route-board reach,animation-pulse,True
+816,69,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+817,69,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+818,69,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+819,69,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+820,69,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,flower-node,True
+821,69,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+822,69,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+823,69,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+824,69,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,listening tilt,flower-node,True
+825,69,archive_signal,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+826,69,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+827,69,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+828,70,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+829,70,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+830,70,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+831,70,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,cool shared-session air,dry floor,careful pointing,animation-pulse,True
+832,70,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,flower-node,True
+833,70,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+834,70,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+835,70,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+836,70,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,route-board reach,flower-node,True
+837,70,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+838,70,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+839,70,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+840,71,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+841,71,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+842,71,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+843,71,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,route-board reach,animation-pulse,True
+844,71,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,flower-node,True
+845,71,orchard_riverbend,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+846,71,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+847,71,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+848,71,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+849,71,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+850,71,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+851,71,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,ambient-rate,True
+852,72,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+853,72,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+854,72,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+855,72,signal_orchard,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+856,72,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,flower-node,True
+857,72,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+858,72,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+859,72,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+860,72,archive_signal,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+861,72,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+862,72,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+863,72,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+864,73,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+865,73,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+866,73,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+867,73,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+868,73,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+869,73,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+870,73,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+871,73,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+872,73,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+873,73,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+874,73,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+875,73,central_repair_ring,idle route poses,map room hum,warm wire,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+876,74,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+877,74,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+878,74,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+879,74,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+880,74,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,flower-node,True
+881,74,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+882,74,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+883,74,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+884,74,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+885,74,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+886,74,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+887,74,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+888,75,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+889,75,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+890,75,archive_signal,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+891,75,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+892,75,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,flower-node,True
+893,75,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+894,75,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+895,75,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+896,75,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+897,75,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+898,75,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,route-board reach,animation-pulse,True
+899,75,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,ambient-rate,True
+900,76,riverbend_roofward,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+901,76,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+902,76,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+903,76,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+904,76,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+905,76,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+906,76,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+907,76,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+908,76,archive_signal,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+909,76,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+910,76,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+911,76,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+912,77,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,flower-node,True
+913,77,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+914,77,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+915,77,signal_orchard,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,guarded crossed arms,animation-pulse,True
+916,77,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,flower-node,True
+917,77,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+918,77,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+919,77,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+920,77,archive_signal,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,open forward lean,flower-node,True
+921,77,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+922,77,orchard_riverbend,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,guarded crossed arms,animation-pulse,True
+923,77,central_repair_ring,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,ambient-rate,True
+924,78,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+925,78,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+926,78,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+927,78,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+928,78,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,flower-node,True
+929,78,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+930,78,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+931,78,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+932,78,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,cool shared-session air,dry floor,route-board reach,flower-node,True
+933,78,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+934,78,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+935,78,riverbend_roofward,idle route poses,map room hum,wet wood,cool shared-session air,damp route cue,relieved reset stance,animation-pulse,True
+936,79,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+937,79,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+938,79,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+939,79,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+940,79,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,flower-node,True
+941,79,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+942,79,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+943,79,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+944,79,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,listening tilt,flower-node,True
+945,79,orchard_riverbend,idle route poses,map room hum,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+946,79,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+947,79,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+948,80,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,flower-node,True
+949,80,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+950,80,signal_orchard,idle route poses,map room hum,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+951,80,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+952,80,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,flower-node,True
+953,80,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,ambient-rate,True
+954,80,roofward_archive,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,careful pointing,animation-pulse,True
+955,80,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+956,80,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,route-board reach,flower-node,True
+957,80,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+958,80,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,route-board reach,animation-pulse,True
+959,80,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,careful pointing,ambient-rate,True
+960,81,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,careful pointing,flower-node,True
+961,81,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+962,81,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+963,81,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+964,81,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,flower-node,True
+965,81,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+966,81,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+967,81,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+968,81,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,open forward lean,flower-node,True
+969,81,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+970,81,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+971,81,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,animation-pulse,True
+972,82,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+973,82,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+974,82,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+975,82,orchard_riverbend,idle route poses,map room hum,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+976,82,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,flower-node,True
+977,82,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+978,82,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+979,82,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+980,82,signal_orchard,idle route poses,map room hum,oil paper,cool shared-session air,dry floor,guarded crossed arms,flower-node,True
+981,82,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+982,82,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,guarded crossed arms,animation-pulse,True
+983,82,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+984,83,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+985,83,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+986,83,signal_orchard,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+987,83,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,open forward lean,animation-pulse,True
+988,83,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,flower-node,True
+989,83,riverbend_roofward,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,relieved reset stance,ambient-rate,True
+990,83,roofward_archive,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+991,83,archive_signal,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+992,83,signal_orchard,idle route poses,gesture cloth shift,oil paper,cool shared-session air,dry floor,relieved reset stance,flower-node,True
+993,83,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,open forward lean,animation-pulse,True
+994,83,central_repair_ring,animated dialogue keyframes,gesture cloth shift,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+995,83,riverbend_roofward,idle route poses,map room hum,wet wood,cool shared-session air,damp route cue,relieved reset stance,animation-pulse,True
+996,84,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,flower-node,True
+997,84,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+998,84,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+999,84,central_repair_ring,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,relieved reset stance,animation-pulse,True
+1000,84,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,flower-node,True
+1001,84,roofward_archive,idle route poses,gesture cloth shift,warm wire,warm dialogue room,dry floor,open forward lean,ambient-rate,True
+1002,84,archive_signal,idle route poses,gesture cloth shift,oil paper,warm dialogue room,dry floor,open forward lean,animation-pulse,True
+1003,84,signal_orchard,animated dialogue keyframes,gesture cloth shift,oil paper,warm dialogue room,dry floor,listening tilt,animation-pulse,True
+1004,84,orchard_riverbend,idle route poses,gesture cloth shift,wet wood,cool shared-session air,damp route cue,listening tilt,flower-node,True
+1005,84,central_repair_ring,idle route poses,map room hum,warm wire,warm dialogue room,dry floor,relieved reset stance,animation-pulse,True
+1006,84,riverbend_roofward,animated dialogue keyframes,gesture cloth shift,wet wood,warm dialogue room,damp route cue,listening tilt,animation-pulse,True
+1007,84,roofward_archive,idle route poses,gesture cloth shift,warm wire,cool shared-session air,dry floor,open forward lean,animation-pulse,True

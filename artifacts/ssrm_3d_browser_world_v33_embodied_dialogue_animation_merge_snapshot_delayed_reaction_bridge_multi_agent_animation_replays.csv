@@ -1,0 +1,1009 @@
+tick_id,day,route_id,replay_event,state_hash,includes_dialogue_animation,includes_merge_control,includes_snapshot_exchange,includes_delayed_reaction,includes_reload_persistence,replay_exportable
+0,1,riverbend_roofward,riverbend_roofward:river ford:listening tilt:exchange pending,v33-625054,False,False,True,False,True,True
+1,1,roofward_archive,roofward_archive:glass stair:careful pointing:idle,v33-637256,True,False,False,False,False,True
+2,1,archive_signal,archive_signal:stone kiosk path:careful pointing:snapshot shared,v33-675802,True,True,True,False,False,True
+3,1,signal_orchard,signal_orchard:dusk road:listening tilt:snapshot shared,v33-545390,True,False,True,False,False,True
+4,1,orchard_riverbend,orchard_riverbend:fen track:careful pointing:idle,v33-617646,True,False,False,False,False,True
+5,1,central_repair_ring,central_repair_ring:inner repair yard:listening tilt:snapshot shared,v33-740888,False,False,True,False,False,True
+6,1,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:snapshot shared,v33-774541,True,True,True,False,False,True
+7,1,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-719757,True,True,True,False,False,True
+8,1,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-638038,True,True,True,True,False,True
+9,1,signal_orchard,signal_orchard:river lantern loop:careful pointing:snapshot shared,v33-709906,True,True,True,False,False,True
+10,1,orchard_riverbend,orchard_riverbend:fen track:careful pointing:snapshot shared,v33-627222,True,False,True,False,False,True
+11,1,central_repair_ring,central_repair_ring:inner repair yard:listening tilt:snapshot shared,v33-751438,True,True,True,False,True,True
+12,2,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-820961,True,False,True,True,True,True
+13,2,roofward_archive,roofward_archive:cool archive lane:open forward lean:idle,v33-734652,True,False,False,True,False,True
+14,2,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-691439,True,True,True,True,False,True
+15,2,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-634089,False,True,True,True,False,True
+16,2,orchard_riverbend,orchard_riverbend:fen track:listening tilt:idle,v33-599244,True,False,False,False,False,True
+17,2,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:exchange pending,v33-837655,True,False,True,True,False,True
+18,2,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-821831,True,True,True,False,False,True
+19,2,roofward_archive,roofward_archive:cool archive lane:listening tilt:idle,v33-700561,True,False,False,False,False,True
+20,2,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-647831,False,True,True,True,False,True
+21,2,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-724958,True,True,True,True,False,True
+22,2,orchard_riverbend,orchard_riverbend:fen track:listening tilt:snapshot shared,v33-599079,True,False,True,False,False,True
+23,2,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:idle,v33-837360,True,False,False,False,True,True
+24,3,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-821678,True,False,True,True,True,True
+25,3,roofward_archive,roofward_archive:cool archive lane:route-board reach:idle,v33-734746,True,False,False,False,False,True
+26,3,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-692264,True,True,True,True,False,True
+27,3,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-634886,True,True,True,True,False,True
+28,3,orchard_riverbend,orchard_riverbend:market plank route:route-board reach:snapshot shared,v33-772863,True,True,True,False,False,True
+29,3,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:snapshot shared,v33-838088,True,False,True,False,False,True
+30,3,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-821665,False,True,True,False,False,True
+31,3,roofward_archive,roofward_archive:cool archive lane:route-board reach:idle,v33-734451,True,False,False,False,True,True
+32,3,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-648632,True,True,True,True,False,True
+33,3,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-725791,True,True,True,True,False,True
+34,3,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:exchange pending,v33-772767,True,False,True,True,False,True
+35,3,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:idle,v33-837793,False,False,False,False,True,True
+36,4,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-822395,True,False,True,True,True,True
+37,4,roofward_archive,roofward_archive:cool archive lane:open forward lean:idle,v33-735238,True,False,False,False,False,True
+38,4,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-649348,True,True,True,True,False,True
+39,4,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-635683,True,True,True,True,False,True
+40,4,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:idle,v33-772472,True,False,False,False,False,True
+41,4,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-855383,True,False,True,False,False,True
+42,4,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-822382,True,True,True,False,False,True
+43,4,roofward_archive,roofward_archive:cool archive lane:open forward lean:idle,v33-734943,True,False,False,False,False,True
+44,4,archive_signal,archive_signal:paper lane:open forward lean:snapshot shared,v33-602674,True,False,True,False,False,True
+45,4,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-726624,False,True,True,True,False,True
+46,4,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-773199,True,False,True,False,False,True
+47,4,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:idle,v33-855971,True,False,False,False,True,True
+48,5,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-823112,True,False,True,True,True,True
+49,5,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:idle,v33-784873,True,False,False,False,False,True
+50,5,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-748548,False,True,True,False,False,True
+51,5,signal_orchard,signal_orchard:dusk road:guarded crossed arms:exchange pending,v33-635470,True,True,True,True,False,True
+52,5,orchard_riverbend,orchard_riverbend:market plank route:guarded crossed arms:idle,v33-822876,True,False,False,False,False,True
+53,5,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-855816,True,False,True,False,False,True
+54,5,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-830480,True,True,True,False,False,True
+55,5,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:idle,v33-784578,True,False,False,False,False,True
+56,5,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-657133,True,True,True,True,False,True
+57,5,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-643296,True,True,True,True,False,True
+58,5,orchard_riverbend,orchard_riverbend:market plank route:guarded crossed arms:snapshot shared,v33-823603,True,False,True,False,False,True
+59,5,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:idle,v33-856404,True,False,False,False,True,True
+60,6,roofward_archive,roofward_archive:cool archive lane:listening tilt:snapshot shared,v33-700301,False,False,True,False,True,True
+61,6,archive_signal,archive_signal:paper lane:careful pointing:idle,v33-605381,True,False,False,False,False,True
+62,6,signal_orchard,signal_orchard:river lantern loop:route-board reach:snapshot shared,v33-741304,True,True,True,False,True,True
+63,6,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-633473,True,True,True,False,False,True
+64,6,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:idle,v33-783123,True,False,False,False,False,True
+65,6,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:snapshot shared,v33-794813,False,False,True,False,False,True
+66,6,roofward_archive,roofward_archive:cool archive lane:listening tilt:snapshot shared,v33-701161,True,True,True,False,False,True
+67,6,archive_signal,archive_signal:paper lane:careful pointing:idle,v33-605969,True,False,False,False,False,True
+68,6,signal_orchard,signal_orchard:dusk road:route-board reach:exchange pending,v33-604104,True,True,True,False,False,True
+69,6,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-774378,True,True,True,False,False,True
+70,6,central_repair_ring,central_repair_ring:outer bell path:careful pointing:snapshot shared,v33-750167,True,True,True,False,False,True
+71,6,riverbend_roofward,riverbend_roofward:river ford:listening tilt:snapshot shared,v33-644642,True,True,True,False,True,True
+72,7,roofward_archive,roofward_archive:cool archive lane:listening tilt:snapshot shared,v33-701003,True,False,True,False,True,True
+73,7,archive_signal,archive_signal:paper lane:listening tilt:idle,v33-577300,True,False,False,False,False,True
+74,7,signal_orchard,signal_orchard:river lantern loop:listening tilt:snapshot shared,v33-707304,True,True,True,False,False,True
+75,7,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-634282,False,True,True,False,False,True
+76,7,central_repair_ring,central_repair_ring:outer bell path:listening tilt:idle,v33-720653,True,False,False,False,False,True
+77,7,riverbend_roofward,riverbend_roofward:river ford:listening tilt:snapshot shared,v33-645363,True,False,True,False,False,True
+78,7,roofward_archive,roofward_archive:cool archive lane:listening tilt:snapshot shared,v33-701863,True,True,True,False,False,True
+79,7,archive_signal,archive_signal:paper lane:listening tilt:idle,v33-577888,True,False,False,False,False,True
+80,7,signal_orchard,signal_orchard:dusk road:listening tilt:snapshot shared,v33-571312,False,True,True,False,False,True
+81,7,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-781604,True,True,True,False,False,True
+82,7,central_repair_ring,central_repair_ring:outer bell path:listening tilt:snapshot shared,v33-720496,True,False,True,False,False,True
+83,7,riverbend_roofward,riverbend_roofward:river ford:listening tilt:idle,v33-645068,True,False,False,False,True,True
+84,8,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-731615,True,False,True,False,True,True
+85,8,archive_signal,archive_signal:paper lane:route-board reach:idle,v33-610305,True,False,False,False,False,True
+86,8,signal_orchard,signal_orchard:river lantern loop:route-board reach:snapshot shared,v33-742844,True,True,True,False,False,True
+87,8,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-642005,True,True,True,False,False,True
+88,8,central_repair_ring,central_repair_ring:outer bell path:route-board reach:idle,v33-755785,True,False,False,False,False,True
+89,8,riverbend_roofward,riverbend_roofward:river ford:careful pointing:snapshot shared,v33-674931,True,False,True,False,False,True
+90,8,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-731592,True,True,True,False,False,True
+91,8,archive_signal,archive_signal:stone kiosk path:route-board reach:snapshot shared,v33-707871,True,True,True,False,False,True
+92,8,signal_orchard,signal_orchard:river lantern loop:route-board reach:snapshot shared,v33-742687,True,True,True,False,False,True
+93,8,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-782451,True,True,True,False,True,True
+94,8,central_repair_ring,central_repair_ring:outer bell path:route-board reach:snapshot shared,v33-755628,True,False,True,False,False,True
+95,8,riverbend_roofward,riverbend_roofward:river ford:careful pointing:idle,v33-674636,False,False,False,False,True,True
+96,9,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-732317,True,False,True,False,True,True
+97,9,archive_signal,archive_signal:stone kiosk path:open forward lean:idle,v33-708658,True,False,False,False,False,True
+98,9,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-743747,True,True,True,False,False,True
+99,9,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-642816,True,True,True,False,False,True
+100,9,central_repair_ring,central_repair_ring:outer bell path:open forward lean:idle,v33-765287,True,False,False,False,False,True
+101,9,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-753866,True,False,True,False,False,True
+102,9,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:exchange pending,v33-813737,True,True,True,False,False,True
+103,9,archive_signal,archive_signal:stone kiosk path:open forward lean:idle,v33-717794,True,False,False,False,False,True
+104,9,signal_orchard,signal_orchard:dusk road:open forward lean:snapshot shared,v33-614449,True,True,True,False,False,True
+105,9,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-800678,False,True,True,False,False,True
+106,9,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-773284,True,False,True,False,False,True
+107,9,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:idle,v33-754460,True,False,False,False,True,True
+108,10,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-822120,True,False,True,False,True,True
+109,10,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:idle,v33-767730,True,False,False,False,False,True
+110,10,signal_orchard,signal_orchard:river lantern loop:guarded crossed arms:snapshot shared,v33-803341,False,True,True,False,False,True
+111,10,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-658851,True,True,True,False,False,True
+112,10,central_repair_ring,central_repair_ring:outer bell path:guarded crossed arms:idle,v33-823273,True,False,False,False,False,True
+113,10,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-754296,True,False,True,False,False,True
+114,10,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-821961,True,True,True,False,False,True
+115,10,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:idle,v33-767432,True,False,False,False,False,True
+116,10,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-662396,True,True,True,False,False,True
+117,10,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-801536,True,True,True,False,False,True
+118,10,central_repair_ring,central_repair_ring:outer bell path:guarded crossed arms:snapshot shared,v33-824007,True,False,True,False,False,True
+119,10,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:idle,v33-754890,True,False,False,False,True,True
+120,11,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-821802,False,False,True,False,True,True
+121,11,archive_signal,archive_signal:stone kiosk path:relieved reset stance:idle,v33-784546,True,False,False,False,False,True
+122,11,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-820569,True,True,True,False,False,True
+123,11,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-659673,True,True,True,False,False,True
+124,11,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:idle,v33-841454,True,False,False,False,True,True
+125,11,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-754726,False,False,True,False,False,True
+126,11,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-822671,True,True,True,False,False,True
+127,11,archive_signal,archive_signal:stone kiosk path:relieved reset stance:idle,v33-785140,True,False,False,False,False,True
+128,11,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-677526,True,True,True,False,False,True
+129,11,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-802394,True,True,True,False,False,True
+130,11,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-841296,True,False,True,False,False,True
+131,11,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-754693,True,True,True,False,True,True
+132,12,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-767468,True,False,True,False,True,True
+133,12,signal_orchard,signal_orchard:dusk road:listening tilt:snapshot shared,v33-580355,True,True,True,False,False,True
+134,12,orchard_riverbend,orchard_riverbend:market plank route:listening tilt:snapshot shared,v33-766494,True,True,True,False,False,True
+135,12,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-876221,False,True,True,False,False,True
+136,12,riverbend_roofward,riverbend_roofward:river ford:listening tilt:idle,v33-655696,True,False,False,False,False,True
+137,12,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:snapshot shared,v33-805373,True,False,True,False,False,True
+138,12,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-768333,True,True,True,False,False,True
+139,12,signal_orchard,signal_orchard:dusk road:listening tilt:idle,v33-580949,True,False,False,False,False,True
+140,12,orchard_riverbend,orchard_riverbend:fen track:listening tilt:snapshot shared,v33-625368,False,True,True,False,False,True
+141,12,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-842047,True,True,True,False,False,True
+142,12,riverbend_roofward,riverbend_roofward:river ford:listening tilt:snapshot shared,v33-655532,True,False,True,False,False,True
+143,12,roofward_archive,roofward_archive:glass stair:guarded crossed arms:snapshot shared,v33-720217,True,True,True,False,True,True
+144,13,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-768172,True,False,True,False,True,True
+145,13,signal_orchard,signal_orchard:dusk road:route-board reach:idle,v33-613584,True,False,False,False,False,True
+146,13,orchard_riverbend,orchard_riverbend:market plank route:route-board reach:snapshot shared,v33-801658,True,True,True,False,False,True
+147,13,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:snapshot shared,v33-803281,True,True,True,False,False,True
+148,13,riverbend_roofward,riverbend_roofward:river ford:route-board reach:idle,v33-689943,True,False,False,False,False,True
+149,13,roofward_archive,roofward_archive:glass stair:guarded crossed arms:snapshot shared,v33-720944,True,False,True,False,False,True
+150,13,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-768145,False,True,True,False,False,True
+151,13,signal_orchard,signal_orchard:dusk road:route-board reach:idle,v33-613286,True,False,False,False,False,True
+152,13,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-659786,True,True,True,False,False,True
+153,13,central_repair_ring,central_repair_ring:outer bell path:careful pointing:exchange pending,v33-769869,True,True,True,False,False,True
+154,13,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:snapshot shared,v33-842056,True,True,True,False,False,True
+155,13,roofward_archive,roofward_archive:glass stair:guarded crossed arms:idle,v33-720646,False,False,False,False,True,True
+156,14,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-768876,True,False,True,False,True,True
+157,14,signal_orchard,signal_orchard:dusk road:open forward lean:idle,v33-614079,True,False,False,False,False,True
+158,14,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-871599,True,True,True,False,False,True
+159,14,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:snapshot shared,v33-803997,True,True,True,False,False,True
+160,14,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:idle,v33-841957,True,False,False,False,False,True
+161,14,roofward_archive,roofward_archive:glass stair:guarded crossed arms:snapshot shared,v33-720481,True,False,True,False,False,True
+162,14,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-768849,True,True,True,False,False,True
+163,14,signal_orchard,signal_orchard:dusk road:open forward lean:idle,v33-613781,True,False,False,False,False,True
+164,14,orchard_riverbend,orchard_riverbend:fen track:relieved reset stance:snapshot shared,v33-724686,True,True,True,False,False,True
+165,14,central_repair_ring,central_repair_ring:outer bell path:careful pointing:snapshot shared,v33-770719,False,True,True,False,False,True
+166,14,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-842695,True,False,True,False,False,True
+167,14,roofward_archive,roofward_archive:glass stair:guarded crossed arms:idle,v33-721075,True,False,False,False,True,True
+168,15,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-769580,True,False,True,False,True,True
+169,15,signal_orchard,signal_orchard:dusk road:guarded crossed arms:idle,v33-661512,True,False,False,False,False,True
+170,15,orchard_riverbend,orchard_riverbend:market plank route:guarded crossed arms:exchange pending,v33-852204,False,True,True,False,False,True
+171,15,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:snapshot shared,v33-811427,True,True,True,False,False,True
+172,15,riverbend_roofward,riverbend_roofward:orchard ridge detour:guarded crossed arms:idle,v33-893944,True,False,False,False,False,True
+173,15,roofward_archive,roofward_archive:glass stair:guarded crossed arms:snapshot shared,v33-720910,True,False,True,False,False,True
+174,15,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-768319,True,True,True,False,False,True
+175,15,signal_orchard,signal_orchard:river lantern loop:guarded crossed arms:snapshot shared,v33-803186,True,True,True,False,False,True
+176,15,orchard_riverbend,orchard_riverbend:fen track:guarded crossed arms:snapshot shared,v33-708407,True,True,True,False,False,True
+177,15,central_repair_ring,central_repair_ring:outer bell path:careful pointing:snapshot shared,v33-778957,True,True,True,False,False,True
+178,15,riverbend_roofward,riverbend_roofward:orchard ridge detour:guarded crossed arms:snapshot shared,v33-894682,True,False,True,False,False,True
+179,15,roofward_archive,roofward_archive:glass stair:guarded crossed arms:idle,v33-721504,True,False,False,False,True,True
+180,16,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-718816,True,False,True,False,True,True
+181,16,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:idle,v33-820522,True,False,False,False,False,True
+182,16,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-871029,True,True,True,False,False,True
+183,16,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:snapshot shared,v33-811001,True,True,True,False,False,True
+184,16,riverbend_roofward,riverbend_roofward:orchard ridge detour:relieved reset stance:idle,v33-912573,True,False,False,False,False,True
+185,16,roofward_archive,roofward_archive:glass stair:open forward lean:snapshot shared,v33-673257,False,False,True,False,False,True
+186,16,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-719681,True,True,True,False,True,True
+187,16,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:idle,v33-821116,True,False,False,False,False,True
+188,16,orchard_riverbend,orchard_riverbend:fen track:relieved reset stance:snapshot shared,v33-726197,True,True,True,False,False,True
+189,16,central_repair_ring,central_repair_ring:outer bell path:careful pointing:snapshot shared,v33-778541,True,True,True,False,False,True
+190,16,riverbend_roofward,riverbend_roofward:orchard ridge detour:relieved reset stance:snapshot shared,v33-912419,True,False,True,False,False,True
+191,16,roofward_archive,roofward_archive:glass stair:open forward lean:snapshot shared,v33-672024,True,True,True,False,True,True
+192,17,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-719520,True,False,True,False,True,True
+193,17,signal_orchard,signal_orchard:river lantern loop:careful pointing:idle,v33-748385,True,False,False,False,False,True
+194,17,orchard_riverbend,orchard_riverbend:market plank route:careful pointing:snapshot shared,v33-798089,True,True,True,False,False,True
+195,17,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:snapshot shared,v33-811863,False,True,True,False,False,True
+196,17,riverbend_roofward,riverbend_roofward:orchard ridge detour:careful pointing:idle,v33-838305,True,False,False,False,False,True
+197,17,roofward_archive,roofward_archive:glass stair:route-board reach:snapshot shared,v33-672552,True,False,True,False,False,True
+198,17,archive_signal,archive_signal:stone kiosk path:route-board reach:snapshot shared,v33-720186,True,True,True,False,False,True
+199,17,signal_orchard,signal_orchard:river lantern loop:careful pointing:idle,v33-748979,True,False,False,False,False,True
+200,17,orchard_riverbend,orchard_riverbend:fen track:careful pointing:snapshot shared,v33-655541,False,True,True,False,False,True
+201,17,central_repair_ring,central_repair_ring:outer bell path:careful pointing:snapshot shared,v33-777620,True,True,True,False,False,True
+202,17,riverbend_roofward,riverbend_roofward:orchard ridge detour:careful pointing:snapshot shared,v33-837268,True,False,True,False,False,True
+203,17,roofward_archive,roofward_archive:glass stair:route-board reach:snapshot shared,v33-678902,True,True,True,False,True,True
+204,18,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:exchange pending,v33-820132,True,False,True,False,True,True
+205,18,orchard_riverbend,orchard_riverbend:fen track:route-board reach:idle,v33-660490,True,False,False,False,False,True
+206,18,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-851737,True,True,True,False,False,True
+207,18,riverbend_roofward,riverbend_roofward:orchard ridge detour:careful pointing:snapshot shared,v33-837907,True,True,True,False,False,True
+208,18,roofward_archive,roofward_archive:glass stair:route-board reach:idle,v33-679397,True,False,False,False,False,True
+209,18,archive_signal,archive_signal:stone kiosk path:relieved reset stance:snapshot shared,v33-786590,True,False,True,False,False,True
+210,18,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-820109,False,True,True,False,False,True
+211,18,orchard_riverbend,orchard_riverbend:fen track:route-board reach:idle,v33-660192,True,False,False,False,False,True
+212,18,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-885981,True,True,True,False,False,True
+213,18,riverbend_roofward,riverbend_roofward:orchard ridge detour:careful pointing:snapshot shared,v33-845435,True,True,True,False,False,True
+214,18,roofward_archive,roofward_archive:glass stair:route-board reach:snapshot shared,v33-679233,True,False,True,False,False,True
+215,18,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-692702,False,True,True,False,True,True
+216,19,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-820842,True,False,True,False,True,True
+217,19,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-801896,True,True,True,False,True,True
+218,19,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-852591,True,True,True,False,False,True
+219,19,riverbend_roofward,riverbend_roofward:river ford:route-board reach:snapshot shared,v33-697285,True,True,True,False,False,True
+220,19,roofward_archive,roofward_archive:glass stair:open forward lean:idle,v33-679134,True,False,False,False,False,True
+221,19,archive_signal,archive_signal:paper lane:relieved reset stance:exchange pending,v33-692404,True,False,True,False,False,True
+222,19,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-820819,True,True,True,False,False,True
+223,19,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:idle,v33-801598,True,False,False,False,False,True
+224,19,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-886843,True,True,True,False,False,True
+225,19,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-851306,False,True,True,False,False,True
+226,19,roofward_archive,roofward_archive:glass stair:open forward lean:snapshot shared,v33-679862,True,False,True,False,False,True
+227,19,archive_signal,archive_signal:paper lane:relieved reset stance:idle,v33-692998,True,False,False,False,True,True
+228,20,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-821552,True,False,True,False,True,True
+229,20,orchard_riverbend,orchard_riverbend:market plank route:guarded crossed arms:idle,v33-853109,True,False,False,False,False,True
+230,20,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-851310,False,True,True,False,False,True
+231,20,riverbend_roofward,riverbend_roofward:river ford:open forward lean:snapshot shared,v33-697422,True,True,True,False,False,True
+232,20,roofward_archive,roofward_archive:glass stair:guarded crossed arms:idle,v33-727961,True,False,False,False,False,True
+233,20,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-692831,True,False,True,False,False,True
+234,20,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-821529,True,True,True,False,False,True
+235,20,orchard_riverbend,orchard_riverbend:market plank route:guarded crossed arms:idle,v33-852811,True,False,False,False,False,True
+236,20,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-886444,True,True,True,False,False,True
+237,20,riverbend_roofward,riverbend_roofward:orchard ridge detour:guarded crossed arms:snapshot shared,v33-902732,True,True,True,False,False,True
+238,20,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:exchange pending,v33-814077,True,True,True,False,False,True
+239,20,archive_signal,archive_signal:paper lane:relieved reset stance:idle,v33-693425,True,False,False,False,True,True
+240,21,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-821370,False,False,True,False,True,True
+241,21,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:idle,v33-870480,True,False,False,False,False,True
+242,21,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-850894,True,True,True,False,False,True
+243,21,riverbend_roofward,riverbend_roofward:river ford:guarded crossed arms:snapshot shared,v33-745748,True,True,True,False,False,True
+244,21,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:idle,v33-831524,True,False,False,False,False,True
+245,21,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-693258,False,False,True,False,False,True
+246,21,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-820987,True,True,True,False,False,True
+247,21,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:idle,v33-871074,True,False,False,False,False,True
+248,21,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-886018,True,True,True,False,True,True
+249,21,riverbend_roofward,riverbend_roofward:orchard ridge detour:relieved reset stance:snapshot shared,v33-921902,True,True,True,False,False,True
+250,21,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-831366,True,False,True,False,False,True
+251,21,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-693219,True,True,True,False,True,True
+252,22,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-820828,True,False,True,False,True,True
+253,22,orchard_riverbend,orchard_riverbend:market plank route:careful pointing:idle,v33-796978,True,False,False,False,False,True
+254,22,central_repair_ring,central_repair_ring:outer bell path:route-board reach:snapshot shared,v33-783091,True,True,True,False,False,True
+255,22,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:exchange pending,v33-763633,False,True,True,False,False,True
+256,22,roofward_archive,roofward_archive:cool archive lane:careful pointing:idle,v33-759072,True,False,False,False,False,True
+257,22,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-692764,True,False,True,False,False,True
+258,22,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-821697,True,True,True,False,False,True
+259,22,orchard_riverbend,orchard_riverbend:market plank route:careful pointing:idle,v33-797572,True,False,False,False,False,True
+260,22,central_repair_ring,central_repair_ring:inner repair yard:route-board reach:snapshot shared,v33-816479,True,True,True,False,False,True
+261,22,riverbend_roofward,riverbend_roofward:orchard ridge detour:careful pointing:snapshot shared,v33-846572,True,True,True,False,False,True
+262,22,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-758914,True,False,True,False,False,True
+263,22,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-692725,True,True,True,False,True,True
+264,23,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-821538,True,False,True,False,True,True
+265,23,orchard_riverbend,orchard_riverbend:market plank route:listening tilt:idle,v33-766404,True,False,False,False,False,True
+266,23,central_repair_ring,central_repair_ring:inner repair yard:route-board reach:snapshot shared,v33-817216,True,True,True,False,False,True
+267,23,riverbend_roofward,riverbend_roofward:river ford:careful pointing:snapshot shared,v33-693850,True,True,True,False,False,True
+268,23,roofward_archive,roofward_archive:cool archive lane:listening tilt:idle,v33-729022,True,False,False,False,False,True
+269,23,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-693450,True,False,True,False,False,True
+270,23,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-821515,False,True,True,False,False,True
+271,23,orchard_riverbend,orchard_riverbend:market plank route:listening tilt:idle,v33-766106,True,False,False,False,False,True
+272,23,central_repair_ring,central_repair_ring:inner repair yard:route-board reach:exchange pending,v33-816918,True,False,True,False,False,True
+273,23,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:snapshot shared,v33-814717,True,True,True,False,False,True
+274,23,roofward_archive,roofward_archive:cool archive lane:listening tilt:snapshot shared,v33-728864,True,False,True,False,False,True
+275,23,archive_signal,archive_signal:paper lane:relieved reset stance:idle,v33-693152,False,False,False,False,True,True
+276,24,orchard_riverbend,orchard_riverbend:market plank route:careful pointing:snapshot shared,v33-797613,True,False,True,False,True,True
+277,24,central_repair_ring,central_repair_ring:inner repair yard:open forward lean:idle,v33-817612,True,False,False,False,False,True
+278,24,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:snapshot shared,v33-815499,True,True,True,False,False,True
+279,24,roofward_archive,roofward_archive:glass stair:route-board reach:snapshot shared,v33-681248,True,True,True,False,True,True
+280,24,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-718920,True,True,True,False,False,True
+281,24,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-821851,True,False,True,False,False,True
+282,24,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-871394,True,True,True,False,False,True
+283,24,central_repair_ring,central_repair_ring:inner repair yard:open forward lean:idle,v33-817314,True,False,False,False,False,True
+284,24,riverbend_roofward,riverbend_roofward:river ford:listening tilt:snapshot shared,v33-663835,True,True,True,False,False,True
+285,24,roofward_archive,roofward_archive:glass stair:open forward lean:snapshot shared,v33-681283,False,True,True,False,False,True
+286,24,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-719651,True,False,True,False,False,True
+287,24,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-679907,True,True,True,False,True,True
+288,25,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-872130,True,False,True,False,True,True
+289,25,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:idle,v33-869140,True,False,False,False,False,True
+290,25,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:snapshot shared,v33-815477,False,True,True,False,False,True
+291,25,roofward_archive,roofward_archive:glass stair:open forward lean:snapshot shared,v33-680043,True,True,True,False,False,True
+292,25,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:idle,v33-768695,True,False,False,False,False,True
+293,25,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-679739,True,False,True,False,False,True
+294,25,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-872113,True,True,True,False,False,True
+295,25,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:idle,v33-868842,True,False,False,False,False,True
+296,25,riverbend_roofward,riverbend_roofward:river ford:listening tilt:snapshot shared,v33-664665,True,True,True,False,False,True
+297,25,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:snapshot shared,v33-814696,True,True,True,False,False,True
+298,25,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-769426,True,False,True,False,False,True
+299,25,signal_orchard,signal_orchard:dusk road:relieved reset stance:idle,v33-680333,True,False,False,False,True,True
+300,26,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-871074,False,False,True,False,True,True
+301,26,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-851757,True,True,True,False,False,True
+302,26,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:snapshot shared,v33-814158,True,True,True,False,False,True
+303,26,roofward_archive,roofward_archive:glass stair:open forward lean:snapshot shared,v33-679986,True,True,True,False,False,True
+304,26,archive_signal,archive_signal:stone kiosk path:relieved reset stance:idle,v33-785657,True,False,False,False,False,True
+305,26,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-679282,False,False,True,False,False,True
+306,26,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:exchange pending,v33-870555,True,True,True,False,False,True
+307,26,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:idle,v33-852351,True,False,False,False,False,True
+308,26,riverbend_roofward,riverbend_roofward:river ford:listening tilt:snapshot shared,v33-663396,True,True,True,False,False,True
+309,26,roofward_archive,roofward_archive:cool archive lane:open forward lean:snapshot shared,v33-764376,True,True,True,False,False,True
+310,26,archive_signal,archive_signal:stone kiosk path:relieved reset stance:snapshot shared,v33-785496,True,False,True,False,True,True
+311,26,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-679241,True,True,True,False,True,True
+312,27,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-870399,True,False,True,False,True,True
+313,27,central_repair_ring,central_repair_ring:outer bell path:careful pointing:idle,v33-778710,True,False,False,False,False,True
+314,27,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:snapshot shared,v33-851276,True,True,True,False,False,True
+315,27,roofward_archive,roofward_archive:glass stair:relieved reset stance:snapshot shared,v33-746288,False,True,True,False,False,True
+316,27,archive_signal,archive_signal:stone kiosk path:careful pointing:idle,v33-714567,True,False,False,False,False,True
+317,27,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-678794,True,False,True,False,False,True
+318,27,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-871274,True,True,True,False,False,True
+319,27,central_repair_ring,central_repair_ring:outer bell path:careful pointing:idle,v33-779304,True,False,False,False,False,True
+320,27,riverbend_roofward,riverbend_roofward:river ford:route-board reach:snapshot shared,v33-697372,True,True,True,False,False,True
+321,27,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-759478,True,True,True,False,False,True
+322,27,archive_signal,archive_signal:stone kiosk path:careful pointing:snapshot shared,v33-714406,True,False,True,False,False,True
+323,27,signal_orchard,signal_orchard:dusk road:relieved reset stance:exchange pending,v33-677479,True,True,True,False,True,True
+324,28,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-871118,True,False,True,False,True,True
+325,28,central_repair_ring,central_repair_ring:outer bell path:listening tilt:idle,v33-748328,True,False,False,False,False,True
+326,28,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:snapshot shared,v33-852146,True,True,True,False,False,True
+327,28,roofward_archive,roofward_archive:glass stair:careful pointing:snapshot shared,v33-675776,True,True,True,False,False,True
+328,28,archive_signal,archive_signal:stone kiosk path:listening tilt:idle,v33-685090,True,False,False,False,False,True
+329,28,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-678203,True,False,True,False,False,True
+330,28,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-871101,False,True,True,False,False,True
+331,28,central_repair_ring,central_repair_ring:outer bell path:listening tilt:idle,v33-748030,True,False,False,False,False,True
+332,28,riverbend_roofward,riverbend_roofward:river ford:route-board reach:snapshot shared,v33-697013,True,True,True,False,False,True
+333,28,roofward_archive,roofward_archive:cool archive lane:listening tilt:snapshot shared,v33-728608,True,True,True,False,False,True
+334,28,archive_signal,archive_signal:stone kiosk path:listening tilt:snapshot shared,v33-684929,True,False,True,False,False,True
+335,28,signal_orchard,signal_orchard:dusk road:relieved reset stance:idle,v33-677905,False,False,False,False,True,True
+336,29,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-870558,True,False,True,False,True,True
+337,29,central_repair_ring,central_repair_ring:outer bell path:route-board reach:idle,v33-783988,True,False,False,False,False,True
+338,29,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:snapshot shared,v33-851737,True,True,True,False,False,True
+339,29,roofward_archive,roofward_archive:glass stair:listening tilt:snapshot shared,v33-647268,True,True,True,False,False,True
+340,29,archive_signal,archive_signal:stone kiosk path:route-board reach:idle,v33-719111,True,False,False,False,False,True
+341,29,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-677737,True,False,True,False,True,True
+342,29,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-870402,True,True,True,False,False,True
+343,29,central_repair_ring,central_repair_ring:outer bell path:route-board reach:idle,v33-783690,True,False,False,False,False,True
+344,29,riverbend_roofward,riverbend_roofward:river ford:route-board reach:snapshot shared,v33-697843,True,True,True,False,False,True
+345,29,roofward_archive,roofward_archive:cool archive lane:route-board reach:snapshot shared,v33-764601,False,True,True,False,False,True
+346,29,archive_signal,archive_signal:stone kiosk path:route-board reach:snapshot shared,v33-719842,True,False,True,False,False,True
+347,29,signal_orchard,signal_orchard:dusk road:relieved reset stance:idle,v33-678331,True,False,False,False,True,True
+348,30,central_repair_ring,central_repair_ring:outer bell path:route-board reach:snapshot shared,v33-784326,True,False,True,False,True,True
+349,30,riverbend_roofward,riverbend_roofward:river ford:guarded crossed arms:idle,v33-747249,True,False,False,False,False,True
+350,30,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:snapshot shared,v33-813706,False,True,True,False,False,True
+351,30,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-691628,True,True,True,False,False,True
+352,30,signal_orchard,signal_orchard:dusk road:guarded crossed arms:idle,v33-661299,True,False,False,False,False,True
+353,30,orchard_riverbend,orchard_riverbend:market plank route:route-board reach:snapshot shared,v33-801658,True,False,True,False,False,True
+354,30,central_repair_ring,central_repair_ring:outer bell path:route-board reach:snapshot shared,v33-784307,True,True,True,False,False,True
+355,30,riverbend_roofward,riverbend_roofward:river ford:guarded crossed arms:idle,v33-746951,True,False,False,False,False,True
+356,30,roofward_archive,roofward_archive:glass stair:guarded crossed arms:snapshot shared,v33-729168,True,True,True,False,False,True
+357,30,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:exchange pending,v33-768751,True,True,True,False,False,True
+358,30,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-662023,True,False,True,False,False,True
+359,30,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-660678,True,True,True,False,True,True
+360,31,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-784349,True,False,True,False,True,True
+361,31,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:idle,v33-763843,True,False,False,False,False,True
+362,31,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-832301,True,True,True,False,False,True
+363,31,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-675565,True,True,True,False,False,True
+364,31,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-821367,True,True,True,False,False,True
+365,31,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-660513,False,False,True,False,False,True
+366,31,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-785222,True,True,True,False,False,True
+367,31,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:idle,v33-764437,True,False,False,False,False,True
+368,31,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-833035,True,True,True,False,False,True
+369,31,archive_signal,archive_signal:stone kiosk path:relieved reset stance:snapshot shared,v33-787001,True,True,True,False,False,True
+370,31,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-821208,True,False,True,False,False,True
+371,31,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-660478,True,True,True,False,True,True
+372,32,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-783795,True,False,True,False,True,True
+373,32,riverbend_roofward,riverbend_roofward:river ford:careful pointing:idle,v33-693526,True,False,False,False,False,True
+374,32,roofward_archive,roofward_archive:cool archive lane:careful pointing:exchange pending,v33-759986,True,True,True,False,False,True
+375,32,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-693125,False,True,True,False,False,True
+376,32,signal_orchard,signal_orchard:river lantern loop:careful pointing:idle,v33-749369,True,False,False,False,False,True
+377,32,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-661205,True,False,True,False,False,True
+378,32,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-784668,True,True,True,False,False,True
+379,32,riverbend_roofward,riverbend_roofward:river ford:careful pointing:idle,v33-694120,True,False,False,False,False,True
+380,32,roofward_archive,roofward_archive:glass stair:careful pointing:snapshot shared,v33-676584,False,True,True,False,False,True
+381,32,archive_signal,archive_signal:stone kiosk path:careful pointing:snapshot shared,v33-715424,True,True,True,False,False,True
+382,32,signal_orchard,signal_orchard:river lantern loop:careful pointing:snapshot shared,v33-749210,True,False,True,False,False,True
+383,32,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-661170,True,True,True,False,True,True
+384,33,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-784511,True,False,True,False,True,True
+385,33,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:snapshot shared,v33-816256,True,True,True,False,False,True
+386,33,roofward_archive,roofward_archive:cool archive lane:listening tilt:snapshot shared,v33-730350,True,True,True,False,False,True
+387,33,archive_signal,archive_signal:paper lane:careful pointing:snapshot shared,v33-625146,True,True,True,False,False,True
+388,33,signal_orchard,signal_orchard:river lantern loop:listening tilt:idle,v33-719510,True,False,False,False,False,True
+389,33,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-661897,True,False,True,False,False,True
+390,33,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-783249,False,True,True,False,False,True
+391,33,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:idle,v33-815958,True,False,False,False,False,True
+392,33,roofward_archive,roofward_archive:glass stair:listening tilt:snapshot shared,v33-646896,True,True,True,False,False,True
+393,33,archive_signal,archive_signal:stone kiosk path:listening tilt:snapshot shared,v33-686352,True,True,True,False,False,True
+394,33,signal_orchard,signal_orchard:river lantern loop:listening tilt:snapshot shared,v33-719351,True,False,True,False,False,True
+395,33,orchard_riverbend,orchard_riverbend:fen track:route-board reach:idle,v33-661599,False,False,False,False,True,True
+396,34,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-783984,True,False,True,False,True,True
+397,34,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:idle,v33-852800,True,False,False,False,False,True
+398,34,roofward_archive,roofward_archive:cool archive lane:route-board reach:snapshot shared,v33-765109,True,True,True,False,False,True
+399,34,archive_signal,archive_signal:paper lane:careful pointing:snapshot shared,v33-625960,True,True,True,False,False,True
+400,34,signal_orchard,signal_orchard:river lantern loop:route-board reach:idle,v33-753092,True,False,False,False,False,True
+401,34,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-660551,True,False,True,False,False,True
+402,34,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-783082,True,True,True,False,False,True
+403,34,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:idle,v33-851619,True,False,False,False,True,True
+404,34,roofward_archive,roofward_archive:glass stair:route-board reach:snapshot shared,v33-680656,True,True,True,False,False,True
+405,34,archive_signal,archive_signal:stone kiosk path:careful pointing:snapshot shared,v33-715010,True,True,True,False,False,True
+406,34,signal_orchard,signal_orchard:river lantern loop:route-board reach:snapshot shared,v33-753825,True,False,True,False,False,True
+407,34,orchard_riverbend,orchard_riverbend:fen track:route-board reach:idle,v33-661145,True,False,False,False,True,True
+408,35,central_repair_ring,central_repair_ring:outer bell path:open forward lean:exchange pending,v33-783676,True,False,True,False,True,True
+409,35,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:idle,v33-852412,True,False,False,False,False,True
+410,35,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-832415,True,True,True,False,False,True
+411,35,archive_signal,archive_signal:paper lane:route-board reach:snapshot shared,v33-628242,True,True,True,False,False,True
+412,35,signal_orchard,signal_orchard:river lantern loop:open forward lean:idle,v33-753726,True,False,False,False,False,True
+413,35,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-659782,True,False,True,False,False,True
+414,35,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-783657,True,True,True,False,False,True
+415,35,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:idle,v33-852114,True,False,False,False,False,True
+416,35,roofward_archive,roofward_archive:glass stair:relieved reset stance:snapshot shared,v33-745950,True,True,True,False,False,True
+417,35,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-719383,True,True,True,False,False,True
+418,35,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-754459,True,False,True,False,False,True
+419,35,orchard_riverbend,orchard_riverbend:fen track:route-board reach:idle,v33-660376,True,False,False,False,True,True
+420,36,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-851862,True,False,True,True,True,True
+421,36,roofward_archive,roofward_archive:glass stair:guarded crossed arms:idle,v33-728474,True,False,False,True,False,True
+422,36,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-719257,True,True,True,True,False,True
+423,36,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-661324,True,True,True,True,False,True
+424,36,orchard_riverbend,orchard_riverbend:fen track:guarded crossed arms:idle,v33-708260,True,False,False,True,False,True
+425,36,central_repair_ring,central_repair_ring:outer bell path:open forward lean:exchange pending,v33-783854,False,False,True,True,False,True
+426,36,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-851437,True,True,True,True,False,True
+427,36,roofward_archive,roofward_archive:cool archive lane:open forward lean:snapshot shared,v33-764467,True,True,True,True,False,True
+428,36,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-676281,True,True,True,True,False,True
+429,36,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-753954,True,True,True,True,False,True
+430,36,orchard_riverbend,orchard_riverbend:fen track:guarded crossed arms:snapshot shared,v33-708095,True,False,True,True,False,True
+431,36,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:snapshot shared,v33-868482,True,True,True,True,True,True
+432,37,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-851284,True,False,True,True,True,True
+433,37,roofward_archive,roofward_archive:cool archive lane:open forward lean:idle,v33-764169,True,False,False,True,False,True
+434,37,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-720095,True,True,True,True,True,True
+435,37,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-662134,False,True,True,True,False,True
+436,37,orchard_riverbend,orchard_riverbend:fen track:guarded crossed arms:idle,v33-708689,True,False,False,True,False,True
+437,37,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:snapshot shared,v33-869219,True,False,True,True,False,True
+438,37,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-852165,True,True,True,True,False,True
+439,37,roofward_archive,roofward_archive:cool archive lane:open forward lean:idle,v33-764763,True,False,False,True,False,True
+440,37,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-676203,False,True,True,True,False,True
+441,37,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-753908,True,True,True,True,False,True
+442,37,orchard_riverbend,orchard_riverbend:fen track:careful pointing:exchange pending,v33-655656,True,False,True,False,False,True
+443,37,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:snapshot shared,v33-869204,True,True,True,True,True,True
+444,38,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-852012,True,False,True,True,True,True
+445,38,roofward_archive,roofward_archive:cool archive lane:listening tilt:idle,v33-729123,True,False,False,False,False,True
+446,38,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-720933,True,True,True,True,False,True
+447,38,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-662944,True,True,True,True,False,True
+448,38,orchard_riverbend,orchard_riverbend:market plank route:listening tilt:snapshot shared,v33-767264,True,True,True,False,False,True
+449,38,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:snapshot shared,v33-868653,True,False,True,True,False,True
+450,38,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-852001,False,True,True,False,False,True
+451,38,roofward_archive,roofward_archive:cool archive lane:listening tilt:idle,v33-728825,True,False,False,False,False,True
+452,38,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-677017,True,True,True,True,False,True
+453,38,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-754754,True,True,True,True,False,True
+454,38,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-802892,True,False,True,True,False,True
+455,38,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:idle,v33-868355,False,False,False,False,True,True
+456,39,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-852740,True,False,True,True,True,True
+457,39,roofward_archive,roofward_archive:cool archive lane:route-board reach:idle,v33-764562,True,False,False,False,False,True
+458,39,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-721771,True,True,True,True,False,True
+459,39,signal_orchard,signal_orchard:dusk road:guarded crossed arms:exchange pending,v33-663624,True,True,True,True,False,True
+460,39,orchard_riverbend,orchard_riverbend:market plank route:route-board reach:idle,v33-802395,True,False,False,False,False,True
+461,39,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:snapshot shared,v33-868200,True,False,True,False,False,True
+462,39,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-852729,True,True,True,False,False,True
+463,39,roofward_archive,roofward_archive:cool archive lane:route-board reach:idle,v33-764264,True,False,False,False,False,True
+464,39,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-676678,True,True,True,True,False,True
+465,39,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-755461,False,True,True,True,True,True
+466,39,orchard_riverbend,orchard_riverbend:market plank route:route-board reach:snapshot shared,v33-803131,True,False,True,False,False,True
+467,39,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:idle,v33-868794,True,False,False,False,True,True
+468,40,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-853468,True,False,True,True,True,True
+469,40,roofward_archive,roofward_archive:cool archive lane:open forward lean:idle,v33-765057,True,False,False,False,False,True
+470,40,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-720510,False,True,True,True,False,True
+471,40,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-662398,True,True,True,True,False,True
+472,40,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:idle,v33-803032,True,False,False,False,False,True
+473,40,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-886717,True,False,True,False,False,True
+474,40,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-853457,True,True,True,False,False,True
+475,40,roofward_archive,roofward_archive:cool archive lane:open forward lean:idle,v33-764759,True,False,False,False,False,True
+476,40,archive_signal,archive_signal:paper lane:guarded crossed arms:exchange pending,v33-677361,True,True,True,True,False,True
+477,40,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-755082,True,True,True,True,False,True
+478,40,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-803768,True,False,True,False,False,True
+479,40,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:idle,v33-887311,True,False,False,False,True,True
+480,41,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-853304,False,False,True,True,True,True
+481,41,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:idle,v33-814748,True,False,False,False,False,True
+482,41,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-719977,True,True,True,True,False,True
+483,41,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-754923,True,True,True,True,False,True
+484,41,orchard_riverbend,orchard_riverbend:market plank route:guarded crossed arms:idle,v33-854387,True,False,False,False,False,True
+485,41,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-887156,False,False,True,False,False,True
+486,41,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-852879,True,True,True,False,False,True
+487,41,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:idle,v33-815342,True,False,False,False,False,True
+488,41,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-676995,True,True,True,True,False,True
+489,41,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-754540,True,True,True,True,False,True
+490,41,orchard_riverbend,orchard_riverbend:market plank route:guarded crossed arms:snapshot shared,v33-854231,True,False,True,False,False,True
+491,41,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:idle,v33-886858,True,False,False,False,True,True
+492,42,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-832830,True,False,True,False,True,True
+493,42,archive_signal,archive_signal:paper lane:careful pointing:idle,v33-624551,True,False,False,False,False,True
+494,42,signal_orchard,signal_orchard:river lantern loop:route-board reach:snapshot shared,v33-754083,True,True,True,False,False,True
+495,42,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-662154,False,True,True,False,False,True
+496,42,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:idle,v33-813100,True,False,False,False,True,True
+497,42,riverbend_roofward,riverbend_roofward:orchard ridge detour:relieved reset stance:snapshot shared,v33-923383,True,False,True,False,False,True
+498,42,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-833701,True,True,True,False,False,True
+499,42,archive_signal,archive_signal:paper lane:careful pointing:idle,v33-625145,True,False,False,False,False,True
+500,42,signal_orchard,signal_orchard:dusk road:route-board reach:snapshot shared,v33-614234,True,True,True,False,False,True
+501,42,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-803190,True,True,True,False,False,True
+502,42,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:snapshot shared,v33-812062,True,False,True,False,False,True
+503,42,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-763107,True,True,True,False,True,True
+504,43,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-832660,True,False,True,False,True,True
+505,43,archive_signal,archive_signal:paper lane:listening tilt:idle,v33-595206,True,False,False,False,False,True
+506,43,signal_orchard,signal_orchard:river lantern loop:listening tilt:snapshot shared,v33-719124,True,True,True,False,False,True
+507,43,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-662093,True,True,True,False,False,True
+508,43,central_repair_ring,central_repair_ring:inner repair yard:listening tilt:idle,v33-781594,True,False,False,False,False,True
+509,43,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-763836,True,False,True,False,False,True
+510,43,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:exchange pending,v33-832499,False,True,True,False,False,True
+511,43,archive_signal,archive_signal:stone kiosk path:listening tilt:snapshot shared,v33-685152,True,True,True,False,False,True
+512,43,signal_orchard,signal_orchard:dusk road:listening tilt:snapshot shared,v33-582111,True,True,True,False,False,True
+513,43,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-660730,True,True,True,False,False,True
+514,43,central_repair_ring,central_repair_ring:inner repair yard:listening tilt:snapshot shared,v33-781439,True,False,True,False,False,True
+515,43,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:idle,v33-763538,False,False,False,False,True,True
+516,44,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-760345,True,False,True,False,True,True
+517,44,archive_signal,archive_signal:stone kiosk path:route-board reach:idle,v33-720226,True,False,False,False,False,True
+518,44,signal_orchard,signal_orchard:river lantern loop:route-board reach:snapshot shared,v33-754892,True,True,True,False,False,True
+519,44,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-661457,True,False,True,False,False,True
+520,44,central_repair_ring,central_repair_ring:inner repair yard:route-board reach:idle,v33-816947,True,False,False,False,False,True
+521,44,riverbend_roofward,riverbend_roofward:river ford:careful pointing:snapshot shared,v33-692762,True,False,True,False,False,True
+522,44,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-760324,True,True,True,False,False,True
+523,44,archive_signal,archive_signal:stone kiosk path:route-board reach:idle,v33-719928,True,False,False,False,False,True
+524,44,signal_orchard,signal_orchard:dusk road:route-board reach:snapshot shared,v33-615854,True,True,True,False,False,True
+525,44,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-802097,False,True,True,False,False,True
+526,44,central_repair_ring,central_repair_ring:inner repair yard:route-board reach:snapshot shared,v33-817684,True,False,True,False,False,True
+527,44,riverbend_roofward,riverbend_roofward:river ford:careful pointing:idle,v33-693356,True,False,False,False,True,True
+528,45,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-761058,True,False,True,False,True,True
+529,45,archive_signal,archive_signal:stone kiosk path:open forward lean:idle,v33-720721,True,False,False,False,False,True
+530,45,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-755045,False,True,True,False,False,True
+531,45,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-660216,True,True,True,False,False,True
+532,45,central_repair_ring,central_repair_ring:inner repair yard:open forward lean:snapshot shared,v33-817728,True,True,True,False,False,True
+533,45,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-763806,True,False,True,False,False,True
+534,45,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-833925,True,True,True,False,False,True
+535,45,archive_signal,archive_signal:stone kiosk path:open forward lean:idle,v33-720423,True,False,False,False,False,True
+536,45,signal_orchard,signal_orchard:dusk road:open forward lean:snapshot shared,v33-616863,True,True,True,False,False,True
+537,45,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-802955,True,True,True,False,False,True
+538,45,central_repair_ring,central_repair_ring:inner repair yard:open forward lean:snapshot shared,v33-818465,True,False,True,False,False,True
+539,45,riverbend_roofward,riverbend_roofward:orchard ridge detour:relieved reset stance:snapshot shared,v33-922820,True,True,True,False,True,True
+540,46,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-833767,False,False,True,False,True,True
+541,46,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:idle,v33-769467,True,False,False,False,False,True
+542,46,signal_orchard,signal_orchard:river lantern loop:guarded crossed arms:snapshot shared,v33-804638,True,True,True,False,False,True
+543,46,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-661038,True,True,True,False,False,True
+544,46,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:idle,v33-869399,True,False,False,False,False,True
+545,46,riverbend_roofward,riverbend_roofward:orchard ridge detour:relieved reset stance:snapshot shared,v33-922667,False,False,True,False,False,True
+546,46,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-832143,True,True,True,False,False,True
+547,46,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:idle,v33-770061,True,False,False,False,False,True
+548,46,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-662495,True,True,True,False,False,True
+549,46,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-803813,True,True,True,False,False,True
+550,46,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:snapshot shared,v33-869244,True,False,True,False,False,True
+551,46,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-764473,True,True,True,False,True,True
+552,47,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-831985,True,False,True,False,True,True
+553,47,archive_signal,archive_signal:stone kiosk path:relieved reset stance:idle,v33-787175,True,False,False,False,False,True
+554,47,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-821866,True,True,True,False,False,True
+555,47,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-661860,False,True,True,False,False,True
+556,47,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:idle,v33-887916,True,False,False,False,False,True
+557,47,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-765202,True,False,True,False,False,True
+558,47,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-832856,True,True,True,False,True,True
+559,47,archive_signal,archive_signal:stone kiosk path:relieved reset stance:idle,v33-787769,True,False,False,False,False,True
+560,47,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-679048,False,True,True,False,False,True
+561,47,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:exchange pending,v33-803637,True,True,True,False,False,True
+562,47,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-886473,True,False,True,False,False,True
+563,47,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-763955,True,True,True,False,True,True
+564,48,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-770097,True,False,True,False,True,True
+565,48,signal_orchard,signal_orchard:dusk road:listening tilt:idle,v33-582639,True,False,False,False,False,True
+566,48,orchard_riverbend,orchard_riverbend:market plank route:listening tilt:snapshot shared,v33-768629,True,True,True,False,False,True
+567,48,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-887111,True,False,True,False,False,True
+568,48,riverbend_roofward,riverbend_roofward:river ford:listening tilt:idle,v33-664311,True,False,False,False,False,True
+569,48,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:snapshot shared,v33-815448,True,False,True,False,False,True
+570,48,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-769936,False,True,True,False,False,True
+571,48,signal_orchard,signal_orchard:dusk road:listening tilt:idle,v33-582341,True,False,False,False,False,True
+572,48,orchard_riverbend,orchard_riverbend:fen track:listening tilt:snapshot shared,v33-628620,True,True,True,False,False,True
+573,48,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-852831,True,True,True,False,False,True
+574,48,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:snapshot shared,v33-815953,True,True,True,False,False,True
+575,48,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:snapshot shared,v33-815290,False,True,True,False,True,True
+576,49,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-770667,True,False,True,False,True,True
+577,49,signal_orchard,signal_orchard:dusk road:route-board reach:idle,v33-615868,True,False,False,False,False,True
+578,49,orchard_riverbend,orchard_riverbend:market plank route:route-board reach:exchange pending,v33-804930,True,True,True,False,False,True
+579,49,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:snapshot shared,v33-813720,True,True,True,False,False,True
+580,49,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:idle,v33-851903,True,False,False,False,False,True
+581,49,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:snapshot shared,v33-815132,True,False,True,False,False,True
+582,49,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-770640,True,True,True,False,False,True
+583,49,signal_orchard,signal_orchard:dusk road:route-board reach:idle,v33-615570,True,False,False,False,False,True
+584,49,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-660536,True,True,True,False,False,True
+585,49,central_repair_ring,central_repair_ring:outer bell path:careful pointing:snapshot shared,v33-780342,True,True,True,False,False,True
+586,49,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:snapshot shared,v33-852642,True,False,True,False,False,True
+587,49,roofward_archive,roofward_archive:glass stair:guarded crossed arms:snapshot shared,v33-730558,True,True,True,False,True,True
+588,50,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-771371,True,False,True,False,True,True
+589,50,signal_orchard,signal_orchard:dusk road:open forward lean:idle,v33-616363,True,False,False,False,True,True
+590,50,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-871448,True,True,True,False,False,True
+591,50,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:snapshot shared,v33-813690,True,True,True,False,False,True
+592,50,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:idle,v33-852543,True,False,False,False,False,True
+593,50,roofward_archive,roofward_archive:glass stair:guarded crossed arms:snapshot shared,v33-730394,True,False,True,False,False,True
+594,50,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-771344,True,True,True,False,False,True
+595,50,signal_orchard,signal_orchard:river lantern loop:open forward lean:exchange pending,v33-755162,True,True,True,False,False,True
+596,50,orchard_riverbend,orchard_riverbend:fen track:relieved reset stance:snapshot shared,v33-726607,True,True,True,False,False,True
+597,50,central_repair_ring,central_repair_ring:outer bell path:careful pointing:snapshot shared,v33-781196,True,True,True,False,False,True
+598,50,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-853282,True,False,True,False,False,True
+599,50,roofward_archive,roofward_archive:glass stair:guarded crossed arms:idle,v33-730988,True,False,False,False,True,True
+600,51,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-770300,False,False,True,False,True,True
+601,51,signal_orchard,signal_orchard:river lantern loop:guarded crossed arms:idle,v33-803953,True,False,False,False,False,True
+602,51,orchard_riverbend,orchard_riverbend:market plank route:guarded crossed arms:snapshot shared,v33-853456,True,True,True,False,False,True
+603,51,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:snapshot shared,v33-812408,True,True,True,False,False,True
+604,51,riverbend_roofward,riverbend_roofward:orchard ridge detour:guarded crossed arms:idle,v33-903963,True,False,False,False,False,True
+605,51,roofward_archive,roofward_archive:glass stair:guarded crossed arms:snapshot shared,v33-729941,False,False,True,False,False,True
+606,51,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-769931,True,True,True,False,False,True
+607,51,signal_orchard,signal_orchard:river lantern loop:guarded crossed arms:idle,v33-804547,True,False,False,False,False,True
+608,51,orchard_riverbend,orchard_riverbend:fen track:guarded crossed arms:snapshot shared,v33-709578,True,True,True,False,False,True
+609,51,central_repair_ring,central_repair_ring:outer bell path:careful pointing:snapshot shared,v33-779924,True,True,True,False,False,True
+610,51,riverbend_roofward,riverbend_roofward:orchard ridge detour:guarded crossed arms:snapshot shared,v33-903810,True,False,True,False,False,True
+611,51,roofward_archive,roofward_archive:glass stair:guarded crossed arms:idle,v33-729643,True,False,False,False,True,True
+612,52,archive_signal,archive_signal:stone kiosk path:open forward lean:exchange pending,v33-720291,True,False,True,False,True,True
+613,52,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:idle,v33-821883,True,False,False,False,False,True
+614,52,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-872281,True,True,True,False,False,True
+615,52,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:snapshot shared,v33-813270,False,True,True,False,False,True
+616,52,riverbend_roofward,riverbend_roofward:orchard ridge detour:relieved reset stance:idle,v33-922704,True,False,False,False,False,True
+617,52,roofward_archive,roofward_archive:glass stair:open forward lean:snapshot shared,v33-681974,True,False,True,False,False,True
+618,52,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-721156,True,True,True,False,False,True
+619,52,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:idle,v33-822477,True,False,False,False,False,True
+620,52,orchard_riverbend,orchard_riverbend:fen track:relieved reset stance:snapshot shared,v33-726476,False,True,True,False,True,True
+621,52,central_repair_ring,central_repair_ring:outer bell path:careful pointing:snapshot shared,v33-778616,True,True,True,False,False,True
+622,52,riverbend_roofward,riverbend_roofward:orchard ridge detour:relieved reset stance:snapshot shared,v33-922551,True,False,True,False,False,True
+623,52,roofward_archive,roofward_archive:glass stair:open forward lean:snapshot shared,v33-680734,True,True,True,False,True,True
+624,53,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-720995,True,False,True,False,True,True
+625,53,signal_orchard,signal_orchard:river lantern loop:careful pointing:idle,v33-749746,True,False,False,False,False,True
+626,53,orchard_riverbend,orchard_riverbend:market plank route:careful pointing:snapshot shared,v33-799341,True,True,True,False,False,True
+627,53,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:snapshot shared,v33-812844,True,True,True,False,False,True
+628,53,riverbend_roofward,riverbend_roofward:orchard ridge detour:careful pointing:idle,v33-847982,True,False,False,False,False,True
+629,53,roofward_archive,roofward_archive:glass stair:route-board reach:exchange pending,v33-681129,True,False,True,False,False,True
+630,53,archive_signal,archive_signal:stone kiosk path:route-board reach:snapshot shared,v33-719562,False,True,True,False,False,True
+631,53,signal_orchard,signal_orchard:river lantern loop:careful pointing:idle,v33-749448,True,False,False,False,False,True
+632,53,orchard_riverbend,orchard_riverbend:fen track:careful pointing:snapshot shared,v33-657595,True,True,True,False,False,True
+633,53,central_repair_ring,central_repair_ring:outer bell path:careful pointing:snapshot shared,v33-779470,True,True,True,False,False,True
+634,53,riverbend_roofward,riverbend_roofward:orchard ridge detour:careful pointing:snapshot shared,v33-847829,True,False,True,False,False,True
+635,53,roofward_archive,roofward_archive:glass stair:route-board reach:snapshot shared,v33-681096,True,True,True,False,True,True
+636,54,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-822515,True,False,True,False,True,True
+637,54,orchard_riverbend,orchard_riverbend:market plank route:route-board reach:snapshot shared,v33-804815,True,True,True,False,False,True
+638,54,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-853587,True,True,True,False,False,True
+639,54,riverbend_roofward,riverbend_roofward:river ford:careful pointing:snapshot shared,v33-694948,True,True,True,False,False,True
+640,54,roofward_archive,roofward_archive:glass stair:route-board reach:idle,v33-680699,True,False,False,False,False,True
+641,54,archive_signal,archive_signal:stone kiosk path:relieved reset stance:snapshot shared,v33-786849,True,False,True,False,False,True
+642,54,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-822492,True,True,True,False,False,True
+643,54,orchard_riverbend,orchard_riverbend:market plank route:route-board reach:idle,v33-804517,True,False,False,False,False,True
+644,54,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-853430,True,True,True,False,False,True
+645,54,riverbend_roofward,riverbend_roofward:orchard ridge detour:careful pointing:snapshot shared,v33-848600,True,True,True,False,False,True
+646,54,roofward_archive,roofward_archive:glass stair:route-board reach:exchange pending,v33-681293,True,False,True,False,False,True
+647,54,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-693841,True,True,True,False,True,True
+648,55,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-823225,True,False,True,False,True,True
+649,55,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:idle,v33-805310,True,False,False,False,False,True
+650,55,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-853411,False,True,True,False,False,True
+651,55,riverbend_roofward,riverbend_roofward:river ford:route-board reach:snapshot shared,v33-699398,True,True,True,False,True,True
+652,55,roofward_archive,roofward_archive:glass stair:open forward lean:idle,v33-681194,True,False,False,False,False,True
+653,55,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-693674,True,False,True,False,False,True
+654,55,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-823202,True,True,True,False,False,True
+655,55,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:idle,v33-805012,True,False,False,False,False,True
+656,55,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-888567,True,True,True,False,False,True
+657,55,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-853165,True,True,True,False,False,True
+658,55,roofward_archive,roofward_archive:cool archive lane:open forward lean:snapshot shared,v33-765608,True,True,True,False,False,True
+659,55,archive_signal,archive_signal:paper lane:relieved reset stance:idle,v33-694268,True,False,False,False,True,True
+660,56,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-823043,False,False,True,False,True,True
+661,56,orchard_riverbend,orchard_riverbend:market plank route:guarded crossed arms:idle,v33-855631,True,False,False,False,False,True
+662,56,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-854265,True,True,True,False,False,True
+663,56,riverbend_roofward,riverbend_roofward:river ford:open forward lean:exchange pending,v33-699076,True,True,True,False,False,True
+664,56,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:idle,v33-815597,True,False,False,False,False,True
+665,56,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-694101,False,False,True,False,False,True
+666,56,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-823912,True,True,True,False,False,True
+667,56,orchard_riverbend,orchard_riverbend:market plank route:guarded crossed arms:idle,v33-856225,True,False,False,False,False,True
+668,56,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-888168,True,True,True,False,False,True
+669,56,riverbend_roofward,riverbend_roofward:orchard ridge detour:guarded crossed arms:snapshot shared,v33-904473,True,True,True,False,False,True
+670,56,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:snapshot shared,v33-815439,True,False,True,False,False,True
+671,56,archive_signal,archive_signal:paper lane:relieved reset stance:idle,v33-693803,True,False,False,False,True,True
+672,57,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-823753,True,False,True,False,True,True
+673,57,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:idle,v33-873894,True,False,False,False,False,True
+674,57,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-853876,True,True,True,False,False,True
+675,57,riverbend_roofward,riverbend_roofward:river ford:guarded crossed arms:snapshot shared,v33-747429,False,True,True,False,False,True
+676,57,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:idle,v33-833778,True,False,False,False,False,True
+677,57,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-694528,True,False,True,False,False,True
+678,57,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-823370,True,True,True,False,False,True
+679,57,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:idle,v33-874488,True,False,False,False,False,True
+680,57,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:exchange pending,v33-887995,False,True,True,False,False,True
+681,57,riverbend_roofward,riverbend_roofward:orchard ridge detour:relieved reset stance:snapshot shared,v33-922751,True,True,True,False,False,True
+682,57,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-833620,True,False,True,False,True,True
+683,57,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-694489,True,True,True,False,True,True
+684,58,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-823211,True,False,True,False,True,True
+685,58,orchard_riverbend,orchard_riverbend:market plank route:careful pointing:idle,v33-800392,True,False,False,False,False,True
+686,58,central_repair_ring,central_repair_ring:outer bell path:route-board reach:snapshot shared,v33-784662,True,True,True,False,False,True
+687,58,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-765449,True,True,True,False,False,True
+688,58,roofward_archive,roofward_archive:cool archive lane:careful pointing:idle,v33-761326,True,False,False,False,False,True
+689,58,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-694034,True,False,True,False,False,True
+690,58,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-823188,False,True,True,False,False,True
+691,58,orchard_riverbend,orchard_riverbend:market plank route:careful pointing:idle,v33-800094,True,False,False,False,False,True
+692,58,central_repair_ring,central_repair_ring:inner repair yard:route-board reach:snapshot shared,v33-818060,True,True,True,False,False,True
+693,58,riverbend_roofward,riverbend_roofward:orchard ridge detour:careful pointing:snapshot shared,v33-848458,True,True,True,False,False,True
+694,58,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-761168,True,False,True,False,False,True
+695,58,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-693995,False,True,True,False,True,True
+696,59,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-823921,True,False,True,False,True,True
+697,59,orchard_riverbend,orchard_riverbend:market plank route:listening tilt:idle,v33-769818,True,False,False,False,False,True
+698,59,central_repair_ring,central_repair_ring:outer bell path:route-board reach:snapshot shared,v33-785516,True,True,True,False,False,True
+699,59,riverbend_roofward,riverbend_roofward:river ford:careful pointing:snapshot shared,v33-695666,True,True,True,False,False,True
+700,59,roofward_archive,roofward_archive:cool archive lane:listening tilt:idle,v33-729501,True,False,False,False,False,True
+701,59,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-692945,True,False,True,False,False,True
+702,59,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-821790,True,True,True,False,False,True
+703,59,orchard_riverbend,orchard_riverbend:market plank route:listening tilt:idle,v33-768637,True,False,False,False,False,True
+704,59,central_repair_ring,central_repair_ring:inner repair yard:route-board reach:snapshot shared,v33-818039,True,True,True,False,False,True
+705,59,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:snapshot shared,v33-816999,False,True,True,False,False,True
+706,59,roofward_archive,roofward_archive:cool archive lane:listening tilt:snapshot shared,v33-730235,True,False,True,False,False,True
+707,59,archive_signal,archive_signal:paper lane:relieved reset stance:idle,v33-693539,True,False,False,False,True,True
+708,60,orchard_riverbend,orchard_riverbend:market plank route:careful pointing:snapshot shared,v33-798865,True,False,True,False,True,True
+709,60,central_repair_ring,central_repair_ring:inner repair yard:open forward lean:idle,v33-818733,True,False,False,False,False,True
+710,60,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:snapshot shared,v33-816889,False,True,True,False,False,True
+711,60,roofward_archive,roofward_archive:glass stair:route-board reach:snapshot shared,v33-681667,True,True,True,False,False,True
+712,60,archive_signal,archive_signal:paper lane:open forward lean:idle,v33-628944,True,False,False,False,False,True
+713,60,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-822126,True,False,True,False,True,True
+714,60,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:exchange pending,v33-871252,True,True,True,False,False,True
+715,60,central_repair_ring,central_repair_ring:inner repair yard:open forward lean:idle,v33-818435,True,False,False,False,False,True
+716,60,riverbend_roofward,riverbend_roofward:river ford:listening tilt:snapshot shared,v33-665957,True,True,True,False,False,True
+717,60,roofward_archive,roofward_archive:cool archive lane:open forward lean:snapshot shared,v33-766328,True,True,True,False,False,True
+718,60,archive_signal,archive_signal:paper lane:open forward lean:snapshot shared,v33-629669,True,False,True,False,False,True
+719,60,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-680164,True,True,True,False,True,True
+720,61,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-871096,False,False,True,False,True,True
+721,61,central_repair_ring,central_repair_ring:outer bell path:guarded crossed arms:snapshot shared,v33-835593,True,True,True,False,False,True
+722,61,riverbend_roofward,riverbend_roofward:river ford:listening tilt:snapshot shared,v33-664578,True,True,True,False,False,True
+723,61,roofward_archive,roofward_archive:glass stair:open forward lean:snapshot shared,v33-682692,True,True,True,False,False,True
+724,61,archive_signal,archive_signal:paper lane:guarded crossed arms:idle,v33-676823,True,False,False,False,False,True
+725,61,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-679996,False,False,True,False,False,True
+726,61,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-871971,True,True,True,False,False,True
+727,61,central_repair_ring,central_repair_ring:outer bell path:guarded crossed arms:idle,v33-836187,True,False,False,False,False,True
+728,61,riverbend_roofward,riverbend_roofward:river ford:listening tilt:snapshot shared,v33-665307,True,False,True,False,False,True
+729,61,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:snapshot shared,v33-816204,True,True,True,False,False,True
+730,61,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-676656,True,False,True,False,False,True
+731,61,signal_orchard,signal_orchard:dusk road:relieved reset stance:idle,v33-679698,True,False,False,False,True,True
+732,62,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-871815,True,False,True,False,True,True
+733,62,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:idle,v33-853745,True,False,False,False,False,True
+734,62,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:snapshot shared,v33-817039,True,True,True,False,False,True
+735,62,roofward_archive,roofward_archive:glass stair:open forward lean:snapshot shared,v33-681131,True,True,True,False,False,True
+736,62,archive_signal,archive_signal:paper lane:relieved reset stance:idle,v33-693996,True,False,False,False,False,True
+737,62,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-680422,True,False,True,False,False,True
+738,62,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-872690,True,True,True,False,False,True
+739,62,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:idle,v33-854339,True,False,False,False,False,True
+740,62,riverbend_roofward,riverbend_roofward:river ford:listening tilt:snapshot shared,v33-664056,False,True,True,False,False,True
+741,62,roofward_archive,roofward_archive:glass stair:open forward lean:snapshot shared,v33-680967,True,True,True,False,False,True
+742,62,archive_signal,archive_signal:stone kiosk path:relieved reset stance:snapshot shared,v33-787854,True,True,True,False,False,True
+743,62,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-680381,True,True,True,False,True,True
+744,63,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-872534,True,False,True,False,True,True
+745,63,central_repair_ring,central_repair_ring:outer bell path:careful pointing:idle,v33-780698,True,False,False,False,False,True
+746,63,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:snapshot shared,v33-852878,True,True,True,False,False,True
+747,63,roofward_archive,roofward_archive:glass stair:relieved reset stance:snapshot shared,v33-747171,True,False,True,False,False,True
+748,63,archive_signal,archive_signal:stone kiosk path:careful pointing:idle,v33-716925,True,False,False,False,False,True
+749,63,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-679934,True,False,True,False,False,True
+750,63,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-872517,False,True,True,False,False,True
+751,63,central_repair_ring,central_repair_ring:outer bell path:careful pointing:idle,v33-780400,True,False,False,False,False,True
+752,63,riverbend_roofward,riverbend_roofward:river ford:route-board reach:snapshot shared,v33-698924,True,True,True,False,False,True
+753,63,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-760361,True,True,True,False,False,True
+754,63,archive_signal,archive_signal:stone kiosk path:careful pointing:snapshot shared,v33-716764,True,False,True,False,False,True
+755,63,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-679893,False,True,True,False,True,True
+756,64,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-873253,True,False,True,False,True,True
+757,64,central_repair_ring,central_repair_ring:outer bell path:listening tilt:idle,v33-750316,True,False,False,False,False,True
+758,64,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:snapshot shared,v33-853748,True,True,True,False,False,True
+759,64,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-761095,True,True,True,False,False,True
+760,64,archive_signal,archive_signal:stone kiosk path:listening tilt:idle,v33-686556,True,False,False,False,False,True
+761,64,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-679725,True,False,True,False,False,True
+762,64,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-873236,True,True,True,False,False,True
+763,64,central_repair_ring,central_repair_ring:outer bell path:listening tilt:idle,v33-750018,True,False,False,False,False,True
+764,64,riverbend_roofward,riverbend_roofward:river ford:route-board reach:snapshot shared,v33-699754,True,True,True,False,False,True
+765,64,roofward_archive,roofward_archive:cool archive lane:listening tilt:exchange pending,v33-730448,False,True,True,False,False,True
+766,64,archive_signal,archive_signal:stone kiosk path:listening tilt:snapshot shared,v33-687287,True,False,True,False,False,True
+767,64,signal_orchard,signal_orchard:dusk road:relieved reset stance:idle,v33-680319,True,False,False,False,True,True
+768,65,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-873972,True,False,True,False,True,True
+769,65,central_repair_ring,central_repair_ring:outer bell path:route-board reach:idle,v33-785976,True,False,False,False,False,True
+770,65,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:snapshot shared,v33-853726,False,True,True,False,False,True
+771,65,roofward_archive,roofward_archive:glass stair:listening tilt:snapshot shared,v33-648174,True,True,True,False,False,True
+772,65,archive_signal,archive_signal:stone kiosk path:route-board reach:idle,v33-721469,True,False,False,False,False,True
+773,65,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-680151,True,False,True,False,False,True
+774,65,orchard_riverbend,orchard_riverbend:market plank route:relieved reset stance:snapshot shared,v33-872676,True,True,True,False,False,True
+775,65,central_repair_ring,central_repair_ring:outer bell path:route-board reach:idle,v33-785678,True,False,False,False,True,True
+776,65,riverbend_roofward,riverbend_roofward:river ford:route-board reach:snapshot shared,v33-700584,True,True,True,False,False,True
+777,65,roofward_archive,roofward_archive:cool archive lane:route-board reach:snapshot shared,v33-766441,True,True,True,False,False,True
+778,65,archive_signal,archive_signal:stone kiosk path:route-board reach:snapshot shared,v33-722200,True,False,True,False,False,True
+779,65,signal_orchard,signal_orchard:dusk road:relieved reset stance:idle,v33-680745,True,False,False,False,True,True
+780,66,central_repair_ring,central_repair_ring:outer bell path:route-board reach:snapshot shared,v33-785422,False,False,True,False,True,True
+781,66,riverbend_roofward,riverbend_roofward:river ford:guarded crossed arms:idle,v33-749098,True,False,False,False,False,True
+782,66,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:exchange pending,v33-816667,True,True,True,False,False,True
+783,66,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-695100,True,True,True,False,False,True
+784,66,signal_orchard,signal_orchard:river lantern loop:guarded crossed arms:snapshot shared,v33-805820,True,True,True,False,False,True
+785,66,orchard_riverbend,orchard_riverbend:market plank route:route-board reach:snapshot shared,v33-803932,False,False,True,False,False,True
+786,66,central_repair_ring,central_repair_ring:outer bell path:route-board reach:snapshot shared,v33-786295,True,True,True,False,False,True
+787,66,riverbend_roofward,riverbend_roofward:river ford:guarded crossed arms:idle,v33-749692,True,False,False,False,False,True
+788,66,roofward_archive,roofward_archive:glass stair:guarded crossed arms:snapshot shared,v33-732039,True,True,True,False,False,True
+789,66,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:snapshot shared,v33-771246,True,True,True,False,False,True
+790,66,signal_orchard,signal_orchard:river lantern loop:guarded crossed arms:snapshot shared,v33-805661,True,False,True,False,False,True
+791,66,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-661970,True,True,True,False,True,True
+792,67,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-786337,True,False,True,False,True,True
+793,67,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:idle,v33-766584,True,False,False,False,False,True
+794,67,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-835262,True,True,True,False,False,True
+795,67,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-677988,False,True,True,False,False,True
+796,67,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:idle,v33-823889,True,False,False,False,False,True
+797,67,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-662697,True,False,True,False,False,True
+798,67,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-787072,True,True,True,False,False,True
+799,67,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:idle,v33-767178,True,False,False,False,False,True
+800,67,roofward_archive,roofward_archive:glass stair:relieved reset stance:snapshot shared,v33-746962,False,True,True,False,False,True
+801,67,archive_signal,archive_signal:stone kiosk path:relieved reset stance:snapshot shared,v33-787721,True,True,True,False,False,True
+802,67,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:snapshot shared,v33-822847,True,False,True,False,False,True
+803,67,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-661779,True,True,True,False,True,True
+804,68,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-786032,True,False,True,False,True,True
+805,68,riverbend_roofward,riverbend_roofward:orchard ridge detour:careful pointing:snapshot shared,v33-855576,True,True,True,False,False,True
+806,68,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-761080,True,True,True,False,True,True
+807,68,archive_signal,archive_signal:paper lane:relieved reset stance:snapshot shared,v33-694665,True,True,True,False,False,True
+808,68,signal_orchard,signal_orchard:river lantern loop:careful pointing:idle,v33-751008,True,False,False,False,False,True
+809,68,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-662506,True,False,True,False,False,True
+810,68,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-784743,False,True,True,False,False,True
+811,68,riverbend_roofward,riverbend_roofward:orchard ridge detour:careful pointing:idle,v33-855278,True,False,False,False,False,True
+812,68,roofward_archive,roofward_archive:glass stair:careful pointing:snapshot shared,v33-676450,True,True,True,False,False,True
+813,68,archive_signal,archive_signal:stone kiosk path:careful pointing:snapshot shared,v33-715829,True,True,True,False,False,True
+814,68,signal_orchard,signal_orchard:river lantern loop:careful pointing:snapshot shared,v33-750849,True,False,True,False,False,True
+815,68,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-662471,True,True,True,False,True,True
+816,69,central_repair_ring,central_repair_ring:outer bell path:open forward lean:exchange pending,v33-785337,True,False,True,False,True,True
+817,69,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:idle,v33-824234,True,False,False,False,False,True
+818,69,roofward_archive,roofward_archive:cool archive lane:listening tilt:snapshot shared,v33-730210,True,True,True,False,False,True
+819,69,archive_signal,archive_signal:paper lane:careful pointing:snapshot shared,v33-625533,True,True,True,False,False,True
+820,69,signal_orchard,signal_orchard:river lantern loop:listening tilt:idle,v33-720257,True,False,False,False,False,True
+821,69,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-662306,True,False,True,False,False,True
+822,69,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-784075,True,True,True,False,False,True
+823,69,riverbend_roofward,riverbend_roofward:orchard ridge detour:listening tilt:idle,v33-823936,True,False,False,False,False,True
+824,69,roofward_archive,roofward_archive:glass stair:listening tilt:snapshot shared,v33-647942,True,True,True,False,False,True
+825,69,archive_signal,archive_signal:stone kiosk path:listening tilt:snapshot shared,v33-686757,False,True,True,False,False,True
+826,69,signal_orchard,signal_orchard:river lantern loop:listening tilt:snapshot shared,v33-720990,True,False,True,False,False,True
+827,69,orchard_riverbend,orchard_riverbend:fen track:route-board reach:idle,v33-662900,True,False,False,False,True,True
+828,70,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-784810,True,False,True,False,True,True
+829,70,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:idle,v33-860999,True,False,False,False,False,True
+830,70,roofward_archive,roofward_archive:cool archive lane:route-board reach:snapshot shared,v33-765311,False,True,True,False,False,True
+831,70,archive_signal,archive_signal:paper lane:careful pointing:snapshot shared,v33-625455,True,True,True,False,False,True
+832,70,signal_orchard,signal_orchard:river lantern loop:route-board reach:idle,v33-755614,True,False,False,False,False,True
+833,70,orchard_riverbend,orchard_riverbend:fen track:route-board reach:exchange pending,v33-662602,True,False,True,False,False,True
+834,70,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-784791,True,True,True,False,False,True
+835,70,riverbend_roofward,riverbend_roofward:orchard ridge detour:route-board reach:idle,v33-860701,True,False,False,False,False,True
+836,70,roofward_archive,roofward_archive:glass stair:route-board reach:snapshot shared,v33-682585,True,True,True,False,False,True
+837,70,archive_signal,archive_signal:stone kiosk path:careful pointing:snapshot shared,v33-717505,True,True,True,False,True,True
+838,70,signal_orchard,signal_orchard:river lantern loop:route-board reach:snapshot shared,v33-756347,True,False,True,False,False,True
+839,70,orchard_riverbend,orchard_riverbend:fen track:route-board reach:idle,v33-663196,True,False,False,False,True,True
+840,71,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-784634,False,False,True,False,True,True
+841,71,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:idle,v33-860602,True,False,False,False,False,True
+842,71,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-834392,True,True,True,False,False,True
+843,71,archive_signal,archive_signal:paper lane:route-board reach:snapshot shared,v33-630665,True,True,True,False,False,True
+844,71,signal_orchard,signal_orchard:river lantern loop:open forward lean:idle,v33-756248,True,False,False,False,False,True
+845,71,orchard_riverbend,orchard_riverbend:fen track:route-board reach:snapshot shared,v33-663031,False,False,True,False,False,True
+846,71,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-785507,True,True,True,False,False,True
+847,71,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:idle,v33-861196,True,False,False,False,False,True
+848,71,roofward_archive,roofward_archive:glass stair:relieved reset stance:snapshot shared,v33-749086,True,True,True,False,False,True
+849,71,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-729073,True,True,True,False,False,True
+850,71,signal_orchard,signal_orchard:river lantern loop:open forward lean:exchange pending,v33-755950,True,False,True,False,False,True
+851,71,orchard_riverbend,orchard_riverbend:fen track:route-board reach:idle,v33-662733,True,False,False,False,True,True
+852,72,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-860945,True,False,True,True,True,True
+853,72,roofward_archive,roofward_archive:glass stair:guarded crossed arms:idle,v33-731610,True,False,False,True,False,True
+854,72,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-728948,True,True,True,True,False,True
+855,72,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-670845,False,True,True,True,False,True
+856,72,orchard_riverbend,orchard_riverbend:fen track:guarded crossed arms:idle,v33-711509,True,False,False,True,False,True
+857,72,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-785845,True,False,True,True,False,True
+858,72,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-861827,True,True,True,True,False,True
+859,72,roofward_archive,roofward_archive:glass stair:guarded crossed arms:idle,v33-732204,True,False,False,True,False,True
+860,72,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-685090,False,True,True,True,False,True
+861,72,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-762719,True,True,True,True,False,True
+862,72,orchard_riverbend,orchard_riverbend:fen track:guarded crossed arms:snapshot shared,v33-711344,True,False,True,True,False,True
+863,72,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:snapshot shared,v33-870489,True,True,True,True,True,True
+864,73,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-861675,True,False,True,True,True,True
+865,73,roofward_archive,roofward_archive:glass stair:guarded crossed arms:idle,v33-731906,True,False,False,True,False,True
+866,73,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-729788,True,True,True,True,False,True
+867,73,signal_orchard,signal_orchard:dusk road:guarded crossed arms:exchange pending,v33-671526,True,True,True,True,False,True
+868,73,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-812274,True,True,True,True,True,True
+869,73,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:snapshot shared,v33-871226,True,False,True,True,False,True
+870,73,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-861665,False,True,True,True,False,True
+871,73,roofward_archive,roofward_archive:glass stair:careful pointing:idle,v33-678529,True,False,False,False,False,True
+872,73,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-684753,True,True,True,True,False,True
+873,73,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-763427,True,True,True,True,False,True
+874,73,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-812119,True,False,True,True,False,True
+875,73,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:snapshot shared,v33-871211,False,True,True,True,True,True
+876,74,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-862405,True,False,True,True,True,True
+877,74,roofward_archive,roofward_archive:glass stair:listening tilt:idle,v33-649789,True,False,False,False,False,True
+878,74,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-729421,True,True,True,True,False,True
+879,74,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-672338,True,True,True,True,False,True
+880,74,orchard_riverbend,orchard_riverbend:market plank route:listening tilt:idle,v33-775816,True,False,False,False,False,True
+881,74,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:snapshot shared,v33-877512,True,False,True,True,False,True
+882,74,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-861116,True,True,True,False,False,True
+883,74,roofward_archive,roofward_archive:glass stair:listening tilt:idle,v33-649491,True,False,False,False,False,True
+884,74,archive_signal,archive_signal:paper lane:guarded crossed arms:exchange pending,v33-685437,True,True,True,True,False,True
+885,74,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-763050,False,True,True,True,False,True
+886,74,orchard_riverbend,orchard_riverbend:market plank route:listening tilt:snapshot shared,v33-776553,True,False,True,False,False,True
+887,74,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:idle,v33-878106,True,False,False,False,True,True
+888,75,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-861856,True,False,True,True,True,True
+889,75,roofward_archive,roofward_archive:cool archive lane:route-board reach:snapshot shared,v33-767800,True,True,True,False,False,True
+890,75,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-729231,False,True,True,True,False,True
+891,75,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-671114,True,True,True,True,False,True
+892,75,orchard_riverbend,orchard_riverbend:market plank route:route-board reach:idle,v33-812061,True,False,False,False,False,True
+893,75,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:snapshot shared,v33-877952,True,False,True,False,False,True
+894,75,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-861846,True,True,True,False,False,True
+895,75,roofward_archive,roofward_archive:cool archive lane:open forward lean:idle,v33-767701,True,False,False,True,False,True
+896,75,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-686253,True,True,True,True,False,True
+897,75,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-763898,True,True,True,True,False,True
+898,75,orchard_riverbend,orchard_riverbend:market plank route:route-board reach:snapshot shared,v33-812798,True,False,True,False,False,True
+899,75,central_repair_ring,central_repair_ring:inner repair yard:guarded crossed arms:idle,v33-878546,True,False,False,False,True,True
+900,76,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-860811,False,False,True,True,True,True
+901,76,roofward_archive,roofward_archive:cool archive lane:open forward lean:idle,v33-766520,True,False,False,False,False,True
+902,76,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-729188,True,True,True,True,False,True
+903,76,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-671043,True,True,True,True,False,True
+904,76,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:idle,v33-811816,True,False,False,False,False,True
+905,76,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-895698,True,False,True,False,False,True
+906,76,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-860378,True,True,True,False,False,True
+907,76,roofward_archive,roofward_archive:cool archive lane:open forward lean:idle,v33-767114,True,False,False,False,False,True
+908,76,archive_signal,archive_signal:paper lane:guarded crossed arms:snapshot shared,v33-686186,True,True,True,True,False,True
+909,76,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-763863,True,True,True,True,False,True
+910,76,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-811661,True,False,True,False,False,True
+911,76,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:idle,v33-895400,True,False,False,False,True,True
+912,77,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:snapshot shared,v33-860226,True,False,True,True,True,True
+913,77,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:idle,v33-817103,True,False,False,False,False,True
+914,77,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-728785,True,True,True,True,False,True
+915,77,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-671855,False,True,True,True,False,True
+916,77,orchard_riverbend,orchard_riverbend:market plank route:guarded crossed arms:idle,v33-863487,True,False,False,False,False,True
+917,77,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-896138,True,False,True,False,False,True
+918,77,riverbend_roofward,riverbend_roofward:orchard ridge detour:open forward lean:exchange pending,v33-860962,True,True,True,False,False,True
+919,77,roofward_archive,roofward_archive:cool archive lane:guarded crossed arms:idle,v33-817697,True,False,False,False,False,True
+920,77,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-728625,False,True,True,True,False,True
+921,77,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-762558,True,True,True,True,False,True
+922,77,orchard_riverbend,orchard_riverbend:market plank route:guarded crossed arms:snapshot shared,v33-863332,True,False,True,False,False,True
+923,77,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:idle,v33-895840,True,False,False,False,True,True
+924,78,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-841662,True,False,True,False,True,True
+925,78,archive_signal,archive_signal:stone kiosk path:careful pointing:idle,v33-724322,True,False,False,False,False,True
+926,78,signal_orchard,signal_orchard:river lantern loop:route-board reach:snapshot shared,v33-763130,True,True,True,False,False,True
+927,78,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-669329,True,True,True,False,False,True
+928,78,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:idle,v33-821627,True,False,False,False,False,True
+929,78,riverbend_roofward,riverbend_roofward:orchard ridge detour:relieved reset stance:snapshot shared,v33-931893,True,False,True,False,False,True
+930,78,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-841642,False,True,True,False,True,True
+931,78,archive_signal,archive_signal:stone kiosk path:careful pointing:idle,v33-724024,True,False,False,False,False,True
+932,78,signal_orchard,signal_orchard:dusk road:route-board reach:snapshot shared,v33-623697,True,True,True,False,False,True
+933,78,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-811609,True,True,True,False,False,True
+934,78,central_repair_ring,central_repair_ring:inner repair yard:careful pointing:snapshot shared,v33-821473,True,False,True,False,False,True
+935,78,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:exchange pending,v33-773124,False,True,True,False,True,True
+936,79,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-842377,True,False,True,False,True,True
+937,79,archive_signal,archive_signal:stone kiosk path:listening tilt:idle,v33-694516,True,False,False,False,False,True
+938,79,signal_orchard,signal_orchard:river lantern loop:listening tilt:snapshot shared,v33-728835,True,True,True,False,False,True
+939,79,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-670153,True,True,True,False,False,True
+940,79,central_repair_ring,central_repair_ring:inner repair yard:listening tilt:idle,v33-789921,True,False,False,False,False,True
+941,79,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-772962,True,False,True,False,False,True
+942,79,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-842357,True,True,True,False,False,True
+943,79,archive_signal,archive_signal:stone kiosk path:listening tilt:idle,v33-694218,True,False,False,False,False,True
+944,79,signal_orchard,signal_orchard:dusk road:listening tilt:snapshot shared,v33-590211,True,True,True,False,False,True
+945,79,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-812469,False,True,True,False,False,True
+946,79,central_repair_ring,central_repair_ring:inner repair yard:listening tilt:snapshot shared,v33-790659,True,False,True,False,False,True
+947,79,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:idle,v33-773556,True,False,False,False,True,True
+948,80,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-769749,True,False,True,False,True,True
+949,80,archive_signal,archive_signal:stone kiosk path:route-board reach:idle,v33-729513,True,False,False,False,False,True
+950,80,signal_orchard,signal_orchard:dusk road:route-board reach:snapshot shared,v33-623198,False,True,True,False,False,True
+951,80,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-668878,True,True,True,False,False,True
+952,80,central_repair_ring,central_repair_ring:outer bell path:route-board reach:exchange pending,v33-793017,True,True,True,False,False,True
+953,80,riverbend_roofward,riverbend_roofward:river ford:careful pointing:snapshot shared,v33-702326,True,False,True,False,False,True
+954,80,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-768495,True,True,True,False,False,True
+955,80,archive_signal,archive_signal:stone kiosk path:route-board reach:idle,v33-729215,True,False,False,False,False,True
+956,80,signal_orchard,signal_orchard:dusk road:route-board reach:snapshot shared,v33-623923,True,False,True,False,False,True
+957,80,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-812041,True,True,True,False,False,True
+958,80,central_repair_ring,central_repair_ring:outer bell path:route-board reach:snapshot shared,v33-793753,True,False,True,False,False,True
+959,80,riverbend_roofward,riverbend_roofward:river ford:careful pointing:idle,v33-702920,True,False,False,False,True,True
+960,81,roofward_archive,roofward_archive:cool archive lane:careful pointing:snapshot shared,v33-768338,False,False,True,False,True,True
+961,81,archive_signal,archive_signal:stone kiosk path:open forward lean:idle,v33-729116,True,False,False,False,True,True
+962,81,signal_orchard,signal_orchard:river lantern loop:open forward lean:snapshot shared,v33-763484,True,True,True,False,False,True
+963,81,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-669702,True,True,True,False,False,True
+964,81,central_repair_ring,central_repair_ring:outer bell path:open forward lean:idle,v33-793654,True,False,False,False,False,True
+965,81,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-773826,True,False,True,False,False,True
+966,81,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-842553,True,True,True,False,False,True
+967,81,archive_signal,archive_signal:stone kiosk path:open forward lean:idle,v33-729710,True,False,False,False,False,True
+968,81,signal_orchard,signal_orchard:dusk road:open forward lean:snapshot shared,v33-624934,True,True,True,False,False,True
+969,81,orchard_riverbend,orchard_riverbend:fen track:open forward lean:exchange pending,v33-670296,True,True,True,False,False,True
+970,81,central_repair_ring,central_repair_ring:outer bell path:open forward lean:snapshot shared,v33-793498,True,False,True,False,False,True
+971,81,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:idle,v33-773528,True,False,False,False,True,True
+972,82,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-842396,True,False,True,False,True,True
+973,82,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:idle,v33-779069,True,False,False,False,False,True
+974,82,signal_orchard,signal_orchard:river lantern loop:guarded crossed arms:snapshot shared,v33-814619,True,True,True,False,False,True
+975,82,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-670262,False,True,True,False,False,True
+976,82,central_repair_ring,central_repair_ring:outer bell path:guarded crossed arms:idle,v33-845009,True,False,False,False,False,True
+977,82,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-774258,True,False,True,False,False,True
+978,82,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-843268,True,True,True,False,False,True
+979,82,archive_signal,archive_signal:stone kiosk path:guarded crossed arms:idle,v33-779663,True,False,False,False,False,True
+980,82,signal_orchard,signal_orchard:dusk road:guarded crossed arms:snapshot shared,v33-671126,False,True,True,False,False,True
+981,82,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-812587,True,True,True,False,False,True
+982,82,central_repair_ring,central_repair_ring:outer bell path:guarded crossed arms:snapshot shared,v33-844853,True,False,True,False,False,True
+983,82,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:idle,v33-773960,True,False,False,False,True,True
+984,83,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-841841,True,False,True,False,True,True
+985,83,archive_signal,archive_signal:stone kiosk path:relieved reset stance:idle,v33-796888,True,False,False,False,False,True
+986,83,signal_orchard,signal_orchard:river lantern loop:relieved reset stance:exchange pending,v33-831811,True,True,True,False,False,True
+987,83,orchard_riverbend,orchard_riverbend:fen track:open forward lean:snapshot shared,v33-671086,True,True,True,False,False,True
+988,83,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:idle,v33-863414,True,False,False,False,False,True
+989,83,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-774690,True,False,True,False,False,True
+990,83,roofward_archive,roofward_archive:cool archive lane:relieved reset stance:snapshot shared,v33-841821,False,True,True,False,False,True
+991,83,archive_signal,archive_signal:stone kiosk path:relieved reset stance:idle,v33-796590,True,False,False,False,False,True
+992,83,signal_orchard,signal_orchard:dusk road:relieved reset stance:snapshot shared,v33-688553,True,True,True,False,True,True
+993,83,orchard_riverbend,orchard_riverbend:market plank route:open forward lean:snapshot shared,v33-812195,True,True,True,False,False,True
+994,83,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-863258,True,False,True,False,False,True
+995,83,riverbend_roofward,riverbend_roofward:river ford:relieved reset stance:snapshot shared,v33-774660,False,True,True,False,True,True
+996,84,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-730043,True,False,True,False,True,True
+997,84,signal_orchard,signal_orchard:dusk road:listening tilt:idle,v33-591497,True,False,False,False,False,True
+998,84,orchard_riverbend,orchard_riverbend:market plank route:listening tilt:snapshot shared,v33-776967,True,True,True,False,False,True
+999,84,central_repair_ring,central_repair_ring:inner repair yard:relieved reset stance:snapshot shared,v33-897111,True,True,True,False,False,True
+1000,84,riverbend_roofward,riverbend_roofward:river ford:listening tilt:idle,v33-681788,True,False,False,False,False,True
+1001,84,roofward_archive,roofward_archive:cool archive lane:open forward lean:snapshot shared,v33-782639,True,False,True,False,False,True
+1002,84,archive_signal,archive_signal:stone kiosk path:open forward lean:snapshot shared,v33-738676,True,True,True,False,False,True
+1003,84,signal_orchard,signal_orchard:dusk road:listening tilt:idle,v33-598939,True,False,False,False,False,True
+1004,84,orchard_riverbend,orchard_riverbend:fen track:listening tilt:snapshot shared,v33-644641,True,True,True,False,False,True
+1005,84,central_repair_ring,central_repair_ring:outer bell path:relieved reset stance:snapshot shared,v33-872235,False,True,True,False,False,True
+1006,84,riverbend_roofward,riverbend_roofward:river ford:listening tilt:snapshot shared,v33-682525,True,False,True,False,False,True
+1007,84,roofward_archive,roofward_archive:glass stair:open forward lean:snapshot shared,v33-699158,True,True,True,False,True,True

@@ -1,0 +1,145 @@
+{
+  "active_branch": {
+    "archive_signal": "stone kiosk path",
+    "central_repair_ring": "outer bell path",
+    "orchard_riverbend": "fen track",
+    "riverbend_roofward": "river ford",
+    "roofward_archive": "glass stair",
+    "signal_orchard": "dusk road"
+  },
+  "boundary": "deterministic browser-local embodied-dialogue-animation/merge-control/snapshot-exchange/delayed-reaction scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, complete 3D engine, or metaphysical frequency claim",
+  "browser_state_version": {
+    "archive_signal": 78,
+    "central_repair_ring": 67,
+    "orchard_riverbend": 82,
+    "riverbend_roofward": 75,
+    "roofward_archive": 74,
+    "signal_orchard": 86
+  },
+  "current_pose": {
+    "Ari": "listening tilt",
+    "Fay": "relieved reset stance",
+    "Ivo": "listening tilt",
+    "Juno": "relieved reset stance",
+    "Milo": "relieved reset stance",
+    "Nia": "open forward lean",
+    "Pax": "relieved reset stance"
+  },
+  "days": 84,
+  "delayed_queue": {
+    "archive_signal": 5,
+    "central_repair_ring": 5,
+    "orchard_riverbend": 3,
+    "riverbend_roofward": 3,
+    "roofward_archive": 2,
+    "signal_orchard": 2
+  },
+  "last_decision_day": {
+    "archive_signal": 84,
+    "central_repair_ring": 84,
+    "orchard_riverbend": 84,
+    "riverbend_roofward": 83,
+    "roofward_archive": 84,
+    "signal_orchard": 83
+  },
+  "routes": [
+    {
+      "cargo": "planks",
+      "destination": "roofward",
+      "detour_branch": "orchard ridge detour",
+      "direct_branch": "river ford",
+      "merge_label": "merge detour with bridge watch",
+      "rollback_label": "rollback to river ford",
+      "route_id": "riverbend_roofward",
+      "source": "riverbend",
+      "speaker_a": "Ari",
+      "speaker_b": "Fay"
+    },
+    {
+      "cargo": "herbs",
+      "destination": "archive_quarter",
+      "detour_branch": "cool archive lane",
+      "direct_branch": "glass stair",
+      "merge_label": "merge shade route",
+      "rollback_label": "rollback to glass stair",
+      "route_id": "roofward_archive",
+      "source": "roofward",
+      "speaker_a": "Fay",
+      "speaker_b": "Nia"
+    },
+    {
+      "cargo": "paper",
+      "destination": "signal_ridge",
+      "detour_branch": "stone kiosk path",
+      "direct_branch": "paper lane",
+      "merge_label": "merge stone route",
+      "rollback_label": "rollback to paper lane",
+      "route_id": "archive_signal",
+      "source": "archive_quarter",
+      "speaker_a": "Nia",
+      "speaker_b": "Milo"
+    },
+    {
+      "cargo": "oil",
+      "destination": "orchard_fen",
+      "detour_branch": "river lantern loop",
+      "direct_branch": "dusk road",
+      "merge_label": "merge lantern loop",
+      "rollback_label": "rollback to dusk road",
+      "route_id": "signal_orchard",
+      "source": "signal_ridge",
+      "speaker_a": "Milo",
+      "speaker_b": "Ivo"
+    },
+    {
+      "cargo": "seeds",
+      "destination": "riverbend",
+      "detour_branch": "market plank route",
+      "direct_branch": "fen track",
+      "merge_label": "merge plank route",
+      "rollback_label": "rollback to fen track",
+      "route_id": "orchard_riverbend",
+      "source": "orchard_fen",
+      "speaker_a": "Ivo",
+      "speaker_b": "Ari"
+    },
+    {
+      "cargo": "wire",
+      "destination": "repair_hall",
+      "detour_branch": "outer bell path",
+      "direct_branch": "inner repair yard",
+      "merge_label": "merge bell route",
+      "rollback_label": "rollback to repair yard",
+      "route_id": "central_repair_ring",
+      "source": "central_exchange",
+      "speaker_a": "Juno",
+      "speaker_b": "Pax"
+    }
+  ],
+  "seed": 20260886,
+  "snapshot_version": {
+    "archive_signal": 113,
+    "central_repair_ring": 111,
+    "orchard_riverbend": 118,
+    "riverbend_roofward": 119,
+    "roofward_archive": 113,
+    "signal_orchard": 121
+  },
+  "source_v32_next_gate": "browser world v33 with embodied multi-agent dialogue animation, live branch merge controls wired into browser state, shared-session snapshot exchange, and delayed social/body reactions after avatar logistics choices",
+  "source_v32_verdict": "pass",
+  "ticks_per_day": 12,
+  "trust": {
+    "Ari:orchard_riverbend": 0.58,
+    "Ari:riverbend_roofward": 0.92,
+    "Fay:riverbend_roofward": 0.58,
+    "Fay:roofward_archive": 0.58,
+    "Ivo:orchard_riverbend": 0.702,
+    "Ivo:signal_orchard": 0.92,
+    "Juno:central_repair_ring": 0.58,
+    "Milo:archive_signal": 0.58,
+    "Milo:signal_orchard": 0.58,
+    "Nia:archive_signal": 0.92,
+    "Nia:roofward_archive": 0.71,
+    "Pax:central_repair_ring": 0.706
+  }
+}

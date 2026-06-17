@@ -1,0 +1,1009 @@
+tick_id,day,route_id,replay_event,state_hash,includes_dialogue_choice,includes_merge_or_rollback,includes_snapshot,includes_body_language,includes_reload_probe,replay_exportable
+0,1,riverbend_roofward,riverbend_roofward:river ford:snap2:watchful neutral stance,v32-791189,False,False,True,True,True,True
+1,1,roofward_archive,roofward_archive:glass stair:snap2:watchful neutral stance,v32-773096,True,False,True,True,False,True
+2,1,archive_signal,archive_signal:paper lane:snap2:relieved reset stance,v32-688919,True,True,True,True,False,True
+3,1,signal_orchard,signal_orchard:dusk road:snap2:watchful neutral stance,v32-708827,False,False,True,False,False,True
+4,1,orchard_riverbend,orchard_riverbend:fen track:snap1:watchful neutral stance,v32-754187,True,False,False,True,False,True
+5,1,central_repair_ring,central_repair_ring:inner repair yard:snap2:relieved reset stance,v32-876226,True,True,True,True,False,True
+6,1,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap3:watchful neutral stance,v32-945747,False,True,True,True,False,True
+7,1,roofward_archive,roofward_archive:glass stair:snap3:watchful neutral stance,v32-773900,False,False,True,False,False,True
+8,1,archive_signal,archive_signal:paper lane:snap2:watchful neutral stance,v32-722324,True,False,False,True,False,True
+9,1,signal_orchard,signal_orchard:dusk road:snap2:watchful neutral stance,v32-708318,False,False,False,False,False,True
+10,1,orchard_riverbend,orchard_riverbend:market plank route:snap2:watchful neutral stance,v32-907177,False,True,True,True,False,True
+11,1,central_repair_ring,central_repair_ring:inner repair yard:snap3:watchful neutral stance,v32-914548,True,False,True,True,False,True
+12,1,riverbend_roofward,riverbend_roofward:river ford:snap4:watchful neutral stance,v32-793586,True,True,True,True,False,True
+13,1,roofward_archive,roofward_archive:glass stair:snap4:watchful neutral stance,v32-783095,False,False,True,False,False,True
+14,2,archive_signal,archive_signal:paper lane:snap3:watchful neutral stance,v32-732231,False,False,True,True,True,True
+15,2,signal_orchard,signal_orchard:dusk road:snap2:watchful neutral stance,v32-717554,True,False,False,True,False,True
+16,2,orchard_riverbend,orchard_riverbend:fen track:snap3:watchful neutral stance,v32-757669,False,True,True,True,False,True
+17,2,central_repair_ring,central_repair_ring:inner repair yard:snap4:watchful neutral stance,v32-922484,False,False,True,False,False,True
+18,2,riverbend_roofward,riverbend_roofward:river ford:snap4:watchful neutral stance,v32-801509,True,False,False,True,False,True
+19,2,roofward_archive,roofward_archive:glass stair:snap4:watchful neutral stance,v32-784086,False,False,False,False,False,True
+20,2,archive_signal,archive_signal:stone kiosk path:snap4:watchful neutral stance,v32-825532,False,True,True,True,False,True
+21,2,signal_orchard,signal_orchard:dusk road:snap3:watchful neutral stance,v32-718896,False,False,True,False,False,True
+22,2,orchard_riverbend,orchard_riverbend:fen track:snap3:watchful neutral stance,v32-765014,True,False,False,True,False,True
+23,2,central_repair_ring,central_repair_ring:inner repair yard:snap4:watchful neutral stance,v32-922055,False,False,False,False,False,True
+24,2,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap5:watchful neutral stance,v32-957979,False,True,True,True,False,True
+25,2,roofward_archive,roofward_archive:glass stair:snap5:watchful neutral stance,v32-783789,False,False,True,False,False,True
+26,2,archive_signal,archive_signal:paper lane:snap5:watchful neutral stance,v32-732454,True,True,True,True,False,True
+27,2,signal_orchard,signal_orchard:dusk road:snap3:watchful neutral stance,v32-718078,False,False,False,False,False,True
+28,3,orchard_riverbend,orchard_riverbend:fen track:snap4:watchful neutral stance,v32-765063,False,False,True,True,True,True
+29,3,central_repair_ring,central_repair_ring:inner repair yard:snap4:watchful neutral stance,v32-923088,True,False,False,False,False,True
+30,3,riverbend_roofward,riverbend_roofward:river ford:snap6:watchful neutral stance,v32-801368,True,True,True,True,False,True
+31,3,roofward_archive,roofward_archive:glass stair:snap6:watchful neutral stance,v32-775835,False,False,True,True,True,True
+32,3,archive_signal,archive_signal:paper lane:snap5:watchful neutral stance,v32-731110,True,False,False,True,False,True
+33,3,signal_orchard,signal_orchard:dusk road:snap4:relieved reset stance,v32-676084,True,True,True,True,False,True
+34,3,orchard_riverbend,orchard_riverbend:fen track:snap5:watchful neutral stance,v32-764427,False,True,True,True,False,True
+35,3,central_repair_ring,central_repair_ring:inner repair yard:snap5:watchful neutral stance,v32-922629,False,False,True,False,False,True
+36,3,riverbend_roofward,riverbend_roofward:river ford:snap6:watchful neutral stance,v32-802525,True,False,False,True,False,True
+37,3,roofward_archive,roofward_archive:glass stair:snap6:watchful neutral stance,v32-785577,False,False,False,False,False,True
+38,3,archive_signal,archive_signal:stone kiosk path:snap6:watchful neutral stance,v32-825172,False,True,True,True,False,True
+39,3,signal_orchard,signal_orchard:dusk road:snap5:watchful neutral stance,v32-718733,True,False,True,True,False,True
+40,3,orchard_riverbend,orchard_riverbend:fen track:snap5:watchful neutral stance,v32-763559,True,False,False,True,False,True
+41,3,central_repair_ring,central_repair_ring:inner repair yard:snap5:watchful neutral stance,v32-915561,False,False,False,False,False,True
+42,4,riverbend_roofward,riverbend_roofward:river ford:snap7:watchful neutral stance,v32-803610,False,False,True,True,True,True
+43,4,roofward_archive,roofward_archive:glass stair:snap6:watchful neutral stance,v32-784517,True,False,False,True,False,True
+44,4,archive_signal,archive_signal:paper lane:snap7:watchful neutral stance,v32-733580,False,True,True,True,False,True
+45,4,signal_orchard,signal_orchard:dusk road:snap6:watchful neutral stance,v32-719328,False,False,True,False,False,True
+46,4,orchard_riverbend,orchard_riverbend:fen track:snap6:watchful neutral stance,v32-764521,True,False,True,True,False,True
+47,4,central_repair_ring,central_repair_ring:inner repair yard:snap5:watchful neutral stance,v32-922066,False,False,False,False,False,True
+48,4,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap8:watchful neutral stance,v32-958728,False,True,True,True,False,True
+49,4,roofward_archive,roofward_archive:glass stair:snap7:watchful neutral stance,v32-786714,False,False,True,False,False,True
+50,4,archive_signal,archive_signal:paper lane:snap7:watchful neutral stance,v32-734799,True,False,False,True,False,True
+51,4,signal_orchard,signal_orchard:dusk road:snap6:watchful neutral stance,v32-718912,False,False,False,False,False,True
+52,4,orchard_riverbend,orchard_riverbend:market plank route:snap7:watchful neutral stance,v32-908668,False,True,True,True,False,True
+53,4,central_repair_ring,central_repair_ring:inner repair yard:snap6:watchful neutral stance,v32-923887,False,False,True,False,False,True
+54,4,riverbend_roofward,riverbend_roofward:river ford:snap9:watchful neutral stance,v32-804413,True,True,True,True,False,True
+55,4,roofward_archive,roofward_archive:glass stair:snap7:watchful neutral stance,v32-786445,False,False,False,False,False,True
+56,5,archive_signal,archive_signal:paper lane:snap8:watchful neutral stance,v32-734855,False,False,True,True,True,True
+57,5,signal_orchard,signal_orchard:dusk road:snap6:watchful neutral stance,v32-719749,True,False,False,True,False,True
+58,5,orchard_riverbend,orchard_riverbend:fen track:snap8:watchful neutral stance,v32-757571,True,True,True,True,False,True
+59,5,central_repair_ring,central_repair_ring:inner repair yard:snap7:watchful neutral stance,v32-923423,False,False,True,False,False,True
+60,5,riverbend_roofward,riverbend_roofward:river ford:snap9:watchful neutral stance,v32-804446,True,False,False,True,False,True
+61,5,roofward_archive,roofward_archive:glass stair:snap8:relieved reset stance,v32-751104,True,True,True,True,False,True
+62,5,archive_signal,archive_signal:stone kiosk path:snap9:watchful neutral stance,v32-826516,False,True,True,True,True,True
+63,5,signal_orchard,signal_orchard:dusk road:snap7:watchful neutral stance,v32-710638,False,False,True,False,False,True
+64,5,orchard_riverbend,orchard_riverbend:fen track:snap8:watchful neutral stance,v32-756522,True,False,False,True,False,True
+65,5,central_repair_ring,central_repair_ring:inner repair yard:snap8:watchful neutral stance,v32-925075,False,False,True,False,False,True
+66,5,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap10:watchful neutral stance,v32-967839,False,True,True,True,False,True
+67,5,roofward_archive,roofward_archive:glass stair:snap9:watchful neutral stance,v32-786167,True,False,True,True,False,True
+68,5,archive_signal,archive_signal:stone kiosk path:snap10:watchful neutral stance,v32-835379,True,True,True,True,False,True
+69,5,signal_orchard,signal_orchard:dusk road:snap7:watchful neutral stance,v32-719524,False,False,False,False,False,True
+70,6,central_repair_ring,central_repair_ring:inner repair yard:snap9:watchful neutral stance,v32-916090,True,False,True,True,True,True
+71,6,riverbend_roofward,riverbend_roofward:river ford:snap11:watchful neutral stance,v32-811143,True,True,True,True,False,True
+72,6,roofward_archive,roofward_archive:cool archive lane:snap10:watchful neutral stance,v32-880546,False,True,True,True,False,True
+73,6,archive_signal,archive_signal:paper lane:snap11:relieved reset stance,v32-707306,True,True,True,True,False,True
+74,6,signal_orchard,signal_orchard:dusk road:snap7:watchful neutral stance,v32-720508,True,False,False,True,False,True
+75,6,orchard_riverbend,orchard_riverbend:fen track:snap8:watchful neutral stance,v32-757769,False,False,False,False,False,True
+76,6,central_repair_ring,central_repair_ring:outer bell path:snap10:watchful neutral stance,v32-896928,True,True,True,True,False,True
+77,6,riverbend_roofward,riverbend_roofward:river ford:snap12:watchful neutral stance,v32-812580,False,False,True,False,False,True
+78,6,roofward_archive,roofward_archive:glass stair:snap11:watchful neutral stance,v32-793430,True,True,True,True,False,True
+79,6,archive_signal,archive_signal:paper lane:snap12:relieved reset stance,v32-709008,True,True,True,True,False,True
+80,6,signal_orchard,signal_orchard:river lantern loop:snap8:watchful neutral stance,v32-860257,False,True,True,True,False,True
+81,6,orchard_riverbend,orchard_riverbend:fen track:snap9:watchful neutral stance,v32-756860,False,False,True,False,False,True
+82,6,central_repair_ring,central_repair_ring:outer bell path:snap10:watchful neutral stance,v32-900868,True,False,False,True,False,True
+83,6,riverbend_roofward,riverbend_roofward:river ford:snap12:watchful neutral stance,v32-813092,False,False,False,False,False,True
+84,7,roofward_archive,roofward_archive:glass stair:snap12:watchful neutral stance,v32-792815,False,False,True,True,True,True
+85,7,archive_signal,archive_signal:paper lane:snap12:watchful neutral stance,v32-742978,True,False,False,True,False,True
+86,7,signal_orchard,signal_orchard:dusk road:snap9:watchful neutral stance,v32-721300,False,True,True,True,False,True
+87,7,orchard_riverbend,orchard_riverbend:fen track:snap10:watchful neutral stance,v32-765808,False,False,True,False,False,True
+88,7,central_repair_ring,central_repair_ring:inner repair yard:snap11:watchful neutral stance,v32-933187,True,True,True,True,False,True
+89,7,riverbend_roofward,riverbend_roofward:river ford:snap12:watchful neutral stance,v32-812857,False,False,False,False,False,True
+90,7,roofward_archive,roofward_archive:cool archive lane:snap13:watchful neutral stance,v32-880603,False,True,True,True,False,True
+91,7,archive_signal,archive_signal:paper lane:snap13:watchful neutral stance,v32-741307,False,False,True,False,False,True
+92,7,signal_orchard,signal_orchard:dusk road:snap9:watchful neutral stance,v32-719531,True,False,False,True,False,True
+93,7,orchard_riverbend,orchard_riverbend:fen track:snap10:watchful neutral stance,v32-766470,False,False,False,True,True,True
+94,7,central_repair_ring,central_repair_ring:outer bell path:snap12:watchful neutral stance,v32-899114,False,True,True,True,False,True
+95,7,riverbend_roofward,riverbend_roofward:river ford:snap13:watchful neutral stance,v32-812855,False,False,True,False,False,True
+96,7,roofward_archive,roofward_archive:glass stair:snap14:watchful neutral stance,v32-794397,True,True,True,True,False,True
+97,7,archive_signal,archive_signal:paper lane:snap13:watchful neutral stance,v32-741697,False,False,False,False,False,True
+98,8,signal_orchard,signal_orchard:dusk road:snap10:watchful neutral stance,v32-728542,True,False,True,True,True,True
+99,8,orchard_riverbend,orchard_riverbend:fen track:snap10:watchful neutral stance,v32-767001,True,False,False,True,False,True
+100,8,central_repair_ring,central_repair_ring:inner repair yard:snap13:watchful neutral stance,v32-944781,False,True,True,True,False,True
+101,8,riverbend_roofward,riverbend_roofward:river ford:snap14:relieved reset stance,v32-788515,True,True,True,True,False,True
+102,8,roofward_archive,roofward_archive:glass stair:snap14:watchful neutral stance,v32-804136,True,False,False,True,False,True
+103,8,archive_signal,archive_signal:paper lane:snap13:watchful neutral stance,v32-752148,False,False,False,False,False,True
+104,8,signal_orchard,signal_orchard:river lantern loop:snap11:watchful neutral stance,v32-878965,True,True,True,True,False,True
+105,8,orchard_riverbend,orchard_riverbend:fen track:snap11:watchful neutral stance,v32-777449,False,False,True,False,False,True
+106,8,central_repair_ring,central_repair_ring:inner repair yard:snap13:watchful neutral stance,v32-945651,True,False,False,True,False,True
+107,8,riverbend_roofward,riverbend_roofward:river ford:snap15:relieved reset stance,v32-788858,True,True,True,True,False,True
+108,8,roofward_archive,roofward_archive:cool archive lane:snap15:watchful neutral stance,v32-893173,False,True,True,True,False,True
+109,8,archive_signal,archive_signal:paper lane:snap14:watchful neutral stance,v32-752056,False,False,True,False,False,True
+110,8,signal_orchard,signal_orchard:dusk road:snap12:watchful neutral stance,v32-736281,True,True,True,True,False,True
+111,8,orchard_riverbend,orchard_riverbend:fen track:snap11:watchful neutral stance,v32-776557,False,False,False,False,False,True
+112,9,central_repair_ring,central_repair_ring:inner repair yard:snap14:watchful neutral stance,v32-945013,False,False,True,True,True,True
+113,9,riverbend_roofward,riverbend_roofward:river ford:snap15:watchful neutral stance,v32-831873,True,False,False,True,False,True
+114,9,roofward_archive,roofward_archive:glass stair:snap16:watchful neutral stance,v32-804667,False,True,True,True,False,True
+115,9,archive_signal,archive_signal:paper lane:snap15:watchful neutral stance,v32-752354,False,False,True,False,False,True
+116,9,signal_orchard,signal_orchard:dusk road:snap12:watchful neutral stance,v32-738811,True,False,False,False,False,True
+117,9,orchard_riverbend,orchard_riverbend:fen track:snap11:watchful neutral stance,v32-776324,False,False,False,False,False,True
+118,9,central_repair_ring,central_repair_ring:outer bell path:snap15:watchful neutral stance,v32-911209,False,True,True,True,False,True
+119,9,riverbend_roofward,riverbend_roofward:river ford:snap16:watchful neutral stance,v32-832378,False,False,True,False,False,True
+120,9,roofward_archive,roofward_archive:glass stair:snap16:watchful neutral stance,v32-804222,True,False,False,True,False,True
+121,9,archive_signal,archive_signal:paper lane:snap15:watchful neutral stance,v32-751629,False,False,False,False,False,True
+122,9,signal_orchard,signal_orchard:river lantern loop:snap13:watchful neutral stance,v32-880330,False,True,True,True,False,True
+123,9,orchard_riverbend,orchard_riverbend:fen track:snap12:watchful neutral stance,v32-777722,False,False,True,False,False,True
+124,9,central_repair_ring,central_repair_ring:inner repair yard:snap16:watchful neutral stance,v32-946688,True,True,True,True,True,True
+125,9,riverbend_roofward,riverbend_roofward:river ford:snap16:watchful neutral stance,v32-831948,False,False,False,False,False,True
+126,10,roofward_archive,roofward_archive:glass stair:snap17:watchful neutral stance,v32-805512,True,False,True,True,True,True
+127,10,archive_signal,archive_signal:paper lane:snap15:watchful neutral stance,v32-759821,True,False,False,True,False,True
+128,10,signal_orchard,signal_orchard:dusk road:snap14:watchful neutral stance,v32-738859,False,True,True,True,False,True
+129,10,orchard_riverbend,orchard_riverbend:fen track:snap13:relieved reset stance,v32-744603,True,True,True,True,False,True
+130,10,central_repair_ring,central_repair_ring:inner repair yard:snap16:watchful neutral stance,v32-944937,True,False,False,True,False,True
+131,10,riverbend_roofward,riverbend_roofward:river ford:snap16:watchful neutral stance,v32-831363,False,False,False,False,False,True
+132,10,roofward_archive,roofward_archive:cool archive lane:snap18:watchful neutral stance,v32-900232,True,True,True,True,False,True
+133,10,archive_signal,archive_signal:paper lane:snap16:watchful neutral stance,v32-760431,False,False,True,False,False,True
+134,10,signal_orchard,signal_orchard:dusk road:snap14:watchful neutral stance,v32-743732,True,False,False,True,False,True
+135,10,orchard_riverbend,orchard_riverbend:fen track:snap14:relieved reset stance,v32-742768,True,True,True,True,False,True
+136,10,central_repair_ring,central_repair_ring:inner repair yard:snap17:watchful neutral stance,v32-946590,False,True,True,True,False,True
+137,10,riverbend_roofward,riverbend_roofward:river ford:snap17:watchful neutral stance,v32-832664,False,False,True,False,False,True
+138,10,roofward_archive,roofward_archive:glass stair:snap19:open forward lean,v32-715022,True,True,True,True,False,True
+139,10,archive_signal,archive_signal:paper lane:snap16:watchful neutral stance,v32-760363,False,False,False,False,False,True
+140,11,signal_orchard,signal_orchard:dusk road:snap15:watchful neutral stance,v32-745873,False,False,True,True,True,True
+141,11,orchard_riverbend,orchard_riverbend:fen track:snap14:watchful neutral stance,v32-775934,True,False,False,True,False,True
+142,11,central_repair_ring,central_repair_ring:outer bell path:snap18:watchful neutral stance,v32-910987,False,True,True,True,False,True
+143,11,riverbend_roofward,riverbend_roofward:river ford:snap18:watchful neutral stance,v32-831558,False,False,True,False,False,True
+144,11,roofward_archive,roofward_archive:glass stair:snap19:open forward lean,v32-713832,True,False,False,True,False,True
+145,11,archive_signal,archive_signal:paper lane:snap16:watchful neutral stance,v32-759315,False,False,False,False,False,True
+146,11,signal_orchard,signal_orchard:river lantern loop:snap16:watchful neutral stance,v32-888316,False,True,True,True,False,True
+147,11,orchard_riverbend,orchard_riverbend:fen track:snap15:watchful neutral stance,v32-777854,False,False,True,False,False,True
+148,11,central_repair_ring,central_repair_ring:inner repair yard:snap19:watchful neutral stance,v32-953719,True,True,True,True,False,True
+149,11,riverbend_roofward,riverbend_roofward:river ford:snap18:watchful neutral stance,v32-831629,False,False,False,False,False,True
+150,11,roofward_archive,roofward_archive:cool archive lane:snap20:open forward lean,v32-797655,False,True,True,True,False,True
+151,11,archive_signal,archive_signal:paper lane:snap17:watchful neutral stance,v32-759314,False,False,True,False,False,True
+152,11,signal_orchard,signal_orchard:dusk road:snap17:watchful neutral stance,v32-744709,True,True,True,True,False,True
+153,11,orchard_riverbend,orchard_riverbend:fen track:snap15:watchful neutral stance,v32-777418,False,False,False,False,False,True
+154,12,riverbend_roofward,riverbend_roofward:river ford:snap19:watchful neutral stance,v32-831554,False,False,True,True,True,True
+155,12,roofward_archive,roofward_archive:glass stair:snap21:watchful neutral stance,v32-813157,True,True,True,True,True,True
+156,12,archive_signal,archive_signal:stone kiosk path:snap18:watchful neutral stance,v32-853270,False,True,True,True,False,True
+157,12,signal_orchard,signal_orchard:dusk road:snap18:watchful neutral stance,v32-745426,False,False,True,False,False,True
+158,12,orchard_riverbend,orchard_riverbend:fen track:snap15:watchful neutral stance,v32-784318,True,False,False,True,False,True
+159,12,central_repair_ring,central_repair_ring:inner repair yard:snap19:watchful neutral stance,v32-953727,False,False,False,False,False,True
+160,12,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap20:watchful neutral stance,v32-988411,False,True,True,True,False,True
+161,12,roofward_archive,roofward_archive:glass stair:snap22:watchful neutral stance,v32-811120,False,False,True,False,False,True
+162,12,archive_signal,archive_signal:paper lane:snap19:open forward lean,v32-662061,True,True,True,True,False,True
+163,12,signal_orchard,signal_orchard:dusk road:snap18:watchful neutral stance,v32-745770,False,False,False,False,False,True
+164,12,orchard_riverbend,orchard_riverbend:market plank route:snap16:watchful neutral stance,v32-929831,False,True,True,True,False,True
+165,12,central_repair_ring,central_repair_ring:inner repair yard:snap20:watchful neutral stance,v32-951736,False,False,True,False,False,True
+166,12,riverbend_roofward,riverbend_roofward:river ford:snap21:open forward lean,v32-731182,True,True,True,True,False,True
+167,12,roofward_archive,roofward_archive:glass stair:snap22:watchful neutral stance,v32-812617,False,False,False,False,False,True
+168,13,archive_signal,archive_signal:paper lane:snap20:open forward lean,v32-664012,False,False,True,True,True,True
+169,13,signal_orchard,signal_orchard:dusk road:snap18:watchful neutral stance,v32-745538,True,False,False,True,False,True
+170,13,orchard_riverbend,orchard_riverbend:market plank route:snap17:watchful neutral stance,v32-929195,False,True,True,True,False,True
+171,13,central_repair_ring,central_repair_ring:inner repair yard:snap21:watchful neutral stance,v32-952257,False,False,True,False,False,True
+172,13,riverbend_roofward,riverbend_roofward:river ford:snap21:open forward lean,v32-698870,True,False,False,True,False,True
+173,13,roofward_archive,roofward_archive:glass stair:snap23:watchful neutral stance,v32-812776,False,False,True,False,False,True
+174,13,archive_signal,archive_signal:stone kiosk path:snap21:open forward lean,v32-753176,False,True,True,True,False,True
+175,13,signal_orchard,signal_orchard:dusk road:snap19:watchful neutral stance,v32-747361,True,False,True,True,False,True
+176,13,orchard_riverbend,orchard_riverbend:fen track:snap18:watchful neutral stance,v32-793660,True,True,True,True,False,True
+177,13,central_repair_ring,central_repair_ring:inner repair yard:snap21:watchful neutral stance,v32-952476,False,False,False,False,False,True
+178,13,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap22:open forward lean,v32-848966,True,True,True,True,False,True
+179,13,roofward_archive,roofward_archive:glass stair:snap24:watchful neutral stance,v32-813755,False,False,True,False,False,True
+180,13,archive_signal,archive_signal:paper lane:snap22:open forward lean,v32-663708,True,True,True,True,False,True
+181,13,signal_orchard,signal_orchard:dusk road:snap20:relieved reset stance,v32-713294,True,True,True,True,False,True
+182,14,orchard_riverbend,orchard_riverbend:fen track:snap19:watchful neutral stance,v32-794138,False,False,True,True,True,True
+183,14,central_repair_ring,central_repair_ring:inner repair yard:snap21:watchful neutral stance,v32-953842,True,False,False,True,False,True
+184,14,riverbend_roofward,riverbend_roofward:river ford:snap23:open forward lean,v32-699535,False,True,True,True,False,True
+185,14,roofward_archive,roofward_archive:glass stair:snap25:watchful neutral stance,v32-812346,False,False,True,False,False,True
+186,14,archive_signal,archive_signal:paper lane:snap23:open forward lean,v32-662735,True,False,True,True,True,True
+187,14,signal_orchard,signal_orchard:dusk road:snap20:watchful neutral stance,v32-746215,False,False,False,False,False,True
+188,14,orchard_riverbend,orchard_riverbend:market plank route:snap20:watchful neutral stance,v32-936562,False,True,True,True,False,True
+189,14,central_repair_ring,central_repair_ring:inner repair yard:snap22:watchful neutral stance,v32-954030,False,False,True,False,False,True
+190,14,riverbend_roofward,riverbend_roofward:river ford:snap23:open forward lean,v32-699406,True,False,False,True,False,True
+191,14,roofward_archive,roofward_archive:glass stair:snap25:watchful neutral stance,v32-812706,False,False,False,False,False,True
+192,14,archive_signal,archive_signal:stone kiosk path:snap24:open forward lean,v32-721257,False,True,True,True,False,True
+193,14,signal_orchard,signal_orchard:dusk road:snap21:watchful neutral stance,v32-746821,False,False,True,False,False,True
+194,14,orchard_riverbend,orchard_riverbend:fen track:snap21:open forward lean,v32-693304,True,True,True,True,False,True
+195,14,central_repair_ring,central_repair_ring:inner repair yard:snap22:watchful neutral stance,v32-953257,False,False,False,False,False,True
+196,15,riverbend_roofward,riverbend_roofward:river ford:snap24:open forward lean,v32-724394,False,False,True,True,True,True
+197,15,roofward_archive,roofward_archive:glass stair:snap25:watchful neutral stance,v32-815282,True,False,False,True,False,True
+198,15,archive_signal,archive_signal:paper lane:snap25:open forward lean,v32-633548,False,True,True,True,False,True
+199,15,signal_orchard,signal_orchard:dusk road:snap22:watchful neutral stance,v32-746728,False,False,True,False,False,True
+200,15,orchard_riverbend,orchard_riverbend:fen track:snap21:open forward lean,v32-692816,True,False,False,True,False,True
+201,15,central_repair_ring,central_repair_ring:inner repair yard:snap22:watchful neutral stance,v32-951510,False,False,False,False,False,True
+202,15,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap25:open forward lean,v32-848436,False,True,True,True,False,True
+203,15,roofward_archive,roofward_archive:glass stair:snap26:watchful neutral stance,v32-812281,True,False,True,False,False,True
+204,15,archive_signal,archive_signal:paper lane:snap25:open forward lean,v32-632604,True,False,False,True,False,True
+205,15,signal_orchard,signal_orchard:dusk road:snap23:watchful neutral stance,v32-746373,False,False,True,False,False,True
+206,15,orchard_riverbend,orchard_riverbend:market plank route:snap22:open forward lean,v32-833284,True,True,True,True,False,True
+207,15,central_repair_ring,central_repair_ring:inner repair yard:snap23:watchful neutral stance,v32-952516,False,False,True,False,False,True
+208,15,riverbend_roofward,riverbend_roofward:river ford:snap26:open forward lean,v32-699930,True,True,True,True,False,True
+209,15,roofward_archive,roofward_archive:glass stair:snap26:watchful neutral stance,v32-814857,True,False,False,True,False,True
+210,16,archive_signal,archive_signal:paper lane:snap26:open forward lean,v32-655684,False,False,True,True,True,True
+211,16,signal_orchard,signal_orchard:dusk road:snap23:watchful neutral stance,v32-746240,True,False,False,True,False,True
+212,16,orchard_riverbend,orchard_riverbend:fen track:snap23:open forward lean,v32-694653,False,True,True,True,False,True
+213,16,central_repair_ring,central_repair_ring:inner repair yard:snap24:watchful neutral stance,v32-952548,False,False,True,False,False,True
+214,16,riverbend_roofward,riverbend_roofward:river ford:snap26:open forward lean,v32-699801,True,False,False,True,False,True
+215,16,roofward_archive,roofward_archive:glass stair:snap26:watchful neutral stance,v32-813014,False,False,False,False,False,True
+216,16,archive_signal,archive_signal:stone kiosk path:snap27:open forward lean,v32-721515,False,True,True,True,False,True
+217,16,signal_orchard,signal_orchard:dusk road:snap24:watchful neutral stance,v32-745067,False,False,True,True,True,True
+218,16,orchard_riverbend,orchard_riverbend:fen track:snap24:open forward lean,v32-695323,True,False,True,True,False,True
+219,16,central_repair_ring,central_repair_ring:inner repair yard:snap24:watchful neutral stance,v32-953746,False,False,False,False,False,True
+220,16,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap27:open forward lean,v32-849012,False,True,True,True,False,True
+221,16,roofward_archive,roofward_archive:glass stair:snap27:watchful neutral stance,v32-813644,False,False,True,False,False,True
+222,16,archive_signal,archive_signal:paper lane:snap28:open forward lean,v32-633103,True,True,True,True,False,True
+223,16,signal_orchard,signal_orchard:dusk road:snap24:watchful neutral stance,v32-747089,False,False,False,False,False,True
+224,17,orchard_riverbend,orchard_riverbend:fen track:snap25:open forward lean,v32-694858,False,False,True,True,True,True
+225,17,central_repair_ring,central_repair_ring:inner repair yard:snap25:watchful neutral stance,v32-953769,True,False,True,True,False,True
+226,17,riverbend_roofward,riverbend_roofward:river ford:snap28:open forward lean,v32-700321,False,True,True,True,False,True
+227,17,roofward_archive,roofward_archive:glass stair:snap28:watchful neutral stance,v32-781244,False,False,True,False,False,True
+228,17,archive_signal,archive_signal:paper lane:snap28:open forward lean,v32-633790,True,False,False,True,False,True
+229,17,signal_orchard,signal_orchard:dusk road:snap24:watchful neutral stance,v32-747025,False,False,False,False,False,True
+230,17,orchard_riverbend,orchard_riverbend:market plank route:snap26:open forward lean,v32-833677,False,True,True,True,False,True
+231,17,central_repair_ring,central_repair_ring:inner repair yard:snap26:watchful neutral stance,v32-955278,True,False,True,True,False,True
+232,17,riverbend_roofward,riverbend_roofward:river ford:snap28:open forward lean,v32-716110,True,False,False,False,False,True
+233,17,roofward_archive,roofward_archive:glass stair:snap28:watchful neutral stance,v32-806088,False,False,False,False,False,True
+234,17,archive_signal,archive_signal:stone kiosk path:snap29:open forward lean,v32-722206,True,True,True,True,False,True
+235,17,signal_orchard,signal_orchard:dusk road:snap25:watchful neutral stance,v32-745803,False,False,True,False,False,True
+236,17,orchard_riverbend,orchard_riverbend:fen track:snap27:open forward lean,v32-694036,True,True,True,True,False,True
+237,17,central_repair_ring,central_repair_ring:inner repair yard:snap27:relieved reset stance,v32-916762,True,True,True,True,False,True
+238,18,roofward_archive,roofward_archive:glass stair:snap29:open forward lean,v32-707710,False,False,True,True,True,True
+239,18,archive_signal,archive_signal:paper lane:snap30:watchful neutral stance,v32-728856,True,True,True,True,False,True
+240,18,signal_orchard,signal_orchard:river lantern loop:snap26:open forward lean,v32-786506,True,True,True,True,False,True
+241,18,orchard_riverbend,orchard_riverbend:fen track:snap28:watchful neutral stance,v32-793432,False,False,True,False,False,True
+242,18,central_repair_ring,central_repair_ring:inner repair yard:snap27:open forward lean,v32-849055,True,False,False,True,False,True
+243,18,riverbend_roofward,riverbend_roofward:river ford:snap29:relieved reset stance,v32-763933,True,True,True,True,False,True
+244,18,roofward_archive,roofward_archive:cool archive lane:snap30:open forward lean,v32-764118,False,True,True,True,False,True
+245,18,archive_signal,archive_signal:paper lane:snap31:watchful neutral stance,v32-753340,False,False,True,False,False,True
+246,18,signal_orchard,signal_orchard:river lantern loop:snap26:open forward lean,v32-787985,True,False,False,True,False,True
+247,18,orchard_riverbend,orchard_riverbend:fen track:snap28:watchful neutral stance,v32-793356,False,False,False,False,False,True
+248,18,central_repair_ring,central_repair_ring:outer bell path:snap28:open forward lean,v32-818049,False,True,True,True,True,True
+249,18,riverbend_roofward,riverbend_roofward:river ford:snap30:watchful neutral stance,v32-798263,True,False,True,True,False,True
+250,18,roofward_archive,roofward_archive:glass stair:snap31:open forward lean,v32-682888,True,True,True,True,False,True
+251,18,archive_signal,archive_signal:paper lane:snap31:watchful neutral stance,v32-752763,False,False,False,False,False,True
+252,19,signal_orchard,signal_orchard:river lantern loop:snap27:open forward lean,v32-787685,False,False,True,True,True,True
+253,19,orchard_riverbend,orchard_riverbend:fen track:snap28:watchful neutral stance,v32-794325,True,False,False,True,False,True
+254,19,central_repair_ring,central_repair_ring:inner repair yard:snap29:open forward lean,v32-850223,False,True,True,True,False,True
+255,19,riverbend_roofward,riverbend_roofward:river ford:snap31:watchful neutral stance,v32-798113,False,False,True,False,False,True
+256,19,roofward_archive,roofward_archive:glass stair:snap31:open forward lean,v32-683578,True,False,False,True,False,True
+257,19,archive_signal,archive_signal:paper lane:snap31:watchful neutral stance,v32-744019,False,False,False,False,False,True
+258,19,signal_orchard,signal_orchard:dusk road:snap28:open forward lean,v32-651768,False,True,True,True,False,True
+259,19,orchard_riverbend,orchard_riverbend:fen track:snap29:watchful neutral stance,v32-792804,False,False,True,False,False,True
+260,19,central_repair_ring,central_repair_ring:inner repair yard:snap29:open forward lean,v32-850106,True,False,False,True,False,True
+261,19,riverbend_roofward,riverbend_roofward:river ford:snap31:watchful neutral stance,v32-823281,False,False,False,False,False,True
+262,19,roofward_archive,roofward_archive:cool archive lane:snap32:open forward lean,v32-764674,False,True,True,True,False,True
+263,19,archive_signal,archive_signal:paper lane:snap32:watchful neutral stance,v32-753156,False,False,True,False,False,True
+264,19,signal_orchard,signal_orchard:dusk road:snap28:open forward lean,v32-653259,True,False,False,True,False,True
+265,19,orchard_riverbend,orchard_riverbend:fen track:snap29:watchful neutral stance,v32-794556,False,False,False,False,False,True
+266,20,central_repair_ring,central_repair_ring:inner repair yard:snap30:open forward lean,v32-851830,False,False,True,True,True,True
+267,20,riverbend_roofward,riverbend_roofward:river ford:snap31:watchful neutral stance,v32-798536,True,False,False,True,False,True
+268,20,roofward_archive,roofward_archive:glass stair:snap33:open forward lean,v32-684240,True,True,True,True,False,True
+269,20,archive_signal,archive_signal:paper lane:snap33:watchful neutral stance,v32-754126,False,False,True,False,False,True
+270,20,signal_orchard,signal_orchard:dusk road:snap28:open forward lean,v32-650634,True,False,False,True,False,True
+271,20,orchard_riverbend,orchard_riverbend:fen track:snap30:relieved reset stance,v32-758394,True,True,True,True,False,True
+272,20,central_repair_ring,central_repair_ring:inner repair yard:snap31:open forward lean,v32-851210,False,True,True,True,False,True
+273,20,riverbend_roofward,riverbend_roofward:river ford:snap32:watchful neutral stance,v32-823664,False,False,True,False,False,True
+274,20,roofward_archive,roofward_archive:glass stair:snap33:open forward lean,v32-684110,True,False,False,True,False,True
+275,20,archive_signal,archive_signal:paper lane:snap33:watchful neutral stance,v32-753238,False,False,False,False,False,True
+276,20,signal_orchard,signal_orchard:river lantern loop:snap29:open forward lean,v32-787389,False,True,True,True,False,True
+277,20,orchard_riverbend,orchard_riverbend:fen track:snap31:watchful neutral stance,v32-761404,True,False,True,True,False,True
+278,20,central_repair_ring,central_repair_ring:inner repair yard:snap31:open forward lean,v32-849808,True,False,False,True,False,True
+279,20,riverbend_roofward,riverbend_roofward:river ford:snap32:watchful neutral stance,v32-823899,False,False,False,True,True,True
+280,21,roofward_archive,roofward_archive:glass stair:snap34:open forward lean,v32-708274,False,False,True,True,True,True
+281,21,archive_signal,archive_signal:paper lane:snap33:watchful neutral stance,v32-729085,True,False,False,True,False,True
+282,21,signal_orchard,signal_orchard:dusk road:snap30:open forward lean,v32-651985,False,True,True,True,False,True
+283,21,orchard_riverbend,orchard_riverbend:fen track:snap32:watchful neutral stance,v32-761252,False,False,True,False,False,True
+284,21,central_repair_ring,central_repair_ring:inner repair yard:snap31:open forward lean,v32-850167,True,False,False,True,False,True
+285,21,riverbend_roofward,riverbend_roofward:river ford:snap32:watchful neutral stance,v32-814095,False,False,False,False,False,True
+286,21,roofward_archive,roofward_archive:cool archive lane:snap35:open forward lean,v32-765905,False,True,True,True,False,True
+287,21,archive_signal,archive_signal:paper lane:snap34:watchful neutral stance,v32-753927,False,False,True,False,False,True
+288,21,signal_orchard,signal_orchard:dusk road:snap30:open forward lean,v32-619552,True,False,False,True,False,True
+289,21,orchard_riverbend,orchard_riverbend:fen track:snap32:watchful neutral stance,v32-786918,False,False,False,False,False,True
+290,21,central_repair_ring,central_repair_ring:outer bell path:snap32:open forward lean,v32-817396,False,True,True,True,False,True
+291,21,riverbend_roofward,riverbend_roofward:river ford:snap33:watchful neutral stance,v32-823476,False,False,True,False,False,True
+292,21,roofward_archive,roofward_archive:glass stair:snap36:open forward lean,v32-683324,True,True,True,True,False,True
+293,21,archive_signal,archive_signal:paper lane:snap34:watchful neutral stance,v32-754275,False,False,False,False,False,True
+294,22,signal_orchard,signal_orchard:dusk road:snap31:open forward lean,v32-635514,False,False,True,True,True,True
+295,22,orchard_riverbend,orchard_riverbend:fen track:snap32:watchful neutral stance,v32-760331,True,False,False,True,False,True
+296,22,central_repair_ring,central_repair_ring:inner repair yard:snap33:open forward lean,v32-850079,True,True,True,True,False,True
+297,22,riverbend_roofward,riverbend_roofward:river ford:snap34:watchful neutral stance,v32-824458,False,False,True,False,False,True
+298,22,roofward_archive,roofward_archive:glass stair:snap36:open forward lean,v32-684014,True,False,False,True,False,True
+299,22,archive_signal,archive_signal:paper lane:snap35:relieved reset stance,v32-695272,True,True,True,True,False,True
+300,22,signal_orchard,signal_orchard:river lantern loop:snap32:open forward lean,v32-752877,False,True,True,True,False,True
+301,22,orchard_riverbend,orchard_riverbend:fen track:snap33:watchful neutral stance,v32-784326,False,False,True,False,False,True
+302,22,central_repair_ring,central_repair_ring:inner repair yard:snap33:open forward lean,v32-849685,True,False,False,True,False,True
+303,22,riverbend_roofward,riverbend_roofward:river ford:snap34:watchful neutral stance,v32-822743,False,False,False,False,False,True
+304,22,roofward_archive,roofward_archive:cool archive lane:snap37:open forward lean,v32-764299,False,True,True,True,False,True
+305,22,archive_signal,archive_signal:paper lane:snap36:watchful neutral stance,v32-728148,True,False,True,True,False,True
+306,22,signal_orchard,signal_orchard:river lantern loop:snap33:open forward lean,v32-753700,True,True,True,True,False,True
+307,22,orchard_riverbend,orchard_riverbend:fen track:snap33:watchful neutral stance,v32-784565,False,False,False,False,False,True
+308,23,central_repair_ring,central_repair_ring:inner repair yard:snap34:open forward lean,v32-848764,False,False,True,True,True,True
+309,23,riverbend_roofward,riverbend_roofward:river ford:snap34:watchful neutral stance,v32-797430,True,False,False,True,False,True
+310,23,roofward_archive,roofward_archive:glass stair:snap38:open forward lean,v32-682901,False,True,True,True,True,True
+311,23,archive_signal,archive_signal:paper lane:snap37:watchful neutral stance,v32-727994,False,False,True,False,False,True
+312,23,signal_orchard,signal_orchard:dusk road:snap34:open forward lean,v32-619221,True,True,True,True,False,True
+313,23,orchard_riverbend,orchard_riverbend:fen track:snap33:watchful neutral stance,v32-774881,False,False,False,False,False,True
+314,23,central_repair_ring,central_repair_ring:outer bell path:snap35:open forward lean,v32-817101,False,True,True,True,False,True
+315,23,riverbend_roofward,riverbend_roofward:river ford:snap35:watchful neutral stance,v32-822084,False,False,True,False,False,True
+316,23,roofward_archive,roofward_archive:glass stair:snap38:open forward lean,v32-683591,True,False,False,True,False,True
+317,23,archive_signal,archive_signal:paper lane:snap37:watchful neutral stance,v32-753338,False,False,False,False,False,True
+318,23,signal_orchard,signal_orchard:river lantern loop:snap35:open forward lean,v32-754377,False,True,True,True,False,True
+319,23,orchard_riverbend,orchard_riverbend:fen track:snap34:watchful neutral stance,v32-784960,False,False,True,False,False,True
+320,23,central_repair_ring,central_repair_ring:inner repair yard:snap36:open forward lean,v32-815076,True,True,True,True,False,True
+321,23,riverbend_roofward,riverbend_roofward:river ford:snap35:watchful neutral stance,v32-822448,False,False,False,False,False,True
+322,24,archive_signal,archive_signal:paper lane:snap38:open forward lean,v32-656274,False,False,True,True,True,True
+323,24,signal_orchard,signal_orchard:river lantern loop:snap36:open forward lean,v32-754289,True,True,True,True,False,True
+324,24,orchard_riverbend,orchard_riverbend:market plank route:snap35:open forward lean,v32-800738,False,True,True,True,False,True
+325,24,central_repair_ring,central_repair_ring:inner repair yard:snap37:watchful neutral stance,v32-918943,False,False,True,False,False,True
+326,24,riverbend_roofward,riverbend_roofward:river ford:snap36:open forward lean,v32-699704,True,False,True,True,False,True
+327,24,roofward_archive,roofward_archive:glass stair:snap38:watchful neutral stance,v32-805801,False,False,False,False,False,True
+328,24,archive_signal,archive_signal:stone kiosk path:snap39:open forward lean,v32-721958,False,True,True,True,False,True
+329,24,signal_orchard,signal_orchard:river lantern loop:snap37:open forward lean,v32-787041,False,False,True,False,False,True
+330,24,orchard_riverbend,orchard_riverbend:fen track:snap36:open forward lean,v32-663342,True,True,True,True,False,True
+331,24,central_repair_ring,central_repair_ring:inner repair yard:snap37:watchful neutral stance,v32-945064,False,False,False,False,False,True
+332,24,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap37:open forward lean,v32-848885,False,True,True,True,False,True
+333,24,roofward_archive,roofward_archive:glass stair:snap39:watchful neutral stance,v32-781003,False,False,True,False,False,True
+334,24,archive_signal,archive_signal:paper lane:snap40:open forward lean,v32-632459,True,True,True,True,False,True
+335,24,signal_orchard,signal_orchard:river lantern loop:snap37:open forward lean,v32-787559,False,False,False,False,False,True
+336,25,orchard_riverbend,orchard_riverbend:fen track:snap37:open forward lean,v32-664153,True,False,True,True,True,True
+337,25,central_repair_ring,central_repair_ring:inner repair yard:snap37:watchful neutral stance,v32-919374,True,False,False,True,False,True
+338,25,riverbend_roofward,riverbend_roofward:river ford:snap38:open forward lean,v32-700224,False,True,True,True,False,True
+339,25,roofward_archive,roofward_archive:glass stair:snap40:relieved reset stance,v32-746324,True,True,True,True,False,True
+340,25,archive_signal,archive_signal:paper lane:snap40:open forward lean,v32-632326,True,False,False,True,False,True
+341,25,signal_orchard,signal_orchard:river lantern loop:snap37:open forward lean,v32-787748,False,False,False,True,True,True
+342,25,orchard_riverbend,orchard_riverbend:market plank route:snap38:open forward lean,v32-801585,True,True,True,True,False,True
+343,25,central_repair_ring,central_repair_ring:inner repair yard:snap38:watchful neutral stance,v32-937439,False,False,True,False,False,True
+344,25,riverbend_roofward,riverbend_roofward:river ford:snap38:open forward lean,v32-700095,True,False,False,True,False,True
+345,25,roofward_archive,roofward_archive:glass stair:snap41:relieved reset stance,v32-746321,True,True,True,True,False,True
+346,25,archive_signal,archive_signal:stone kiosk path:snap41:open forward lean,v32-721367,False,True,True,True,False,True
+347,25,signal_orchard,signal_orchard:river lantern loop:snap38:open forward lean,v32-779588,False,False,True,False,False,True
+348,25,orchard_riverbend,orchard_riverbend:market plank route:snap38:open forward lean,v32-825826,True,False,False,False,False,True
+349,25,central_repair_ring,central_repair_ring:inner repair yard:snap38:watchful neutral stance,v32-937323,False,False,False,False,False,True
+350,26,riverbend_roofward,riverbend_roofward:river ford:snap39:open forward lean,v32-724114,False,False,True,True,True,True
+351,26,roofward_archive,roofward_archive:glass stair:snap41:open forward lean,v32-683189,True,False,False,True,False,True
+352,26,archive_signal,archive_signal:paper lane:snap42:open forward lean,v32-632838,False,True,True,True,False,True
+353,26,signal_orchard,signal_orchard:river lantern loop:snap39:open forward lean,v32-788275,False,False,True,False,False,True
+354,26,orchard_riverbend,orchard_riverbend:fen track:snap39:open forward lean,v32-664681,True,True,True,True,False,True
+355,26,central_repair_ring,central_repair_ring:inner repair yard:snap38:watchful neutral stance,v32-945735,False,False,False,False,False,True
+356,26,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap40:open forward lean,v32-848779,False,True,True,True,False,True
+357,26,roofward_archive,roofward_archive:glass stair:snap42:open forward lean,v32-708173,False,False,True,False,False,True
+358,26,archive_signal,archive_signal:paper lane:snap43:open forward lean,v32-633645,True,False,True,True,False,True
+359,26,signal_orchard,signal_orchard:river lantern loop:snap39:open forward lean,v32-787735,False,False,False,False,False,True
+360,26,orchard_riverbend,orchard_riverbend:market plank route:snap40:open forward lean,v32-800817,False,True,True,True,False,True
+361,26,central_repair_ring,central_repair_ring:inner repair yard:snap39:watchful neutral stance,v32-945758,False,False,True,False,False,True
+362,26,riverbend_roofward,riverbend_roofward:river ford:snap41:open forward lean,v32-699493,True,True,True,True,False,True
+363,26,roofward_archive,roofward_archive:glass stair:snap42:open forward lean,v32-707750,False,False,False,False,False,True
+364,27,archive_signal,archive_signal:paper lane:snap44:open forward lean,v32-633632,True,False,True,True,True,True
+365,27,signal_orchard,signal_orchard:dusk road:snap40:open forward lean,v32-619866,True,True,True,True,False,True
+366,27,orchard_riverbend,orchard_riverbend:fen track:snap41:open forward lean,v32-664098,False,True,True,True,False,True
+367,27,central_repair_ring,central_repair_ring:inner repair yard:snap40:relieved reset stance,v32-882550,True,True,True,True,False,True
+368,27,riverbend_roofward,riverbend_roofward:river ford:snap41:open forward lean,v32-700184,True,False,False,True,False,True
+369,27,roofward_archive,roofward_archive:glass stair:snap42:open forward lean,v32-709350,False,False,False,False,False,True
+370,27,archive_signal,archive_signal:stone kiosk path:snap45:open forward lean,v32-722036,True,True,True,True,False,True
+371,27,signal_orchard,signal_orchard:dusk road:snap41:open forward lean,v32-619711,False,False,True,False,False,True
+372,27,orchard_riverbend,orchard_riverbend:fen track:snap41:open forward lean,v32-663967,True,False,False,True,True,True
+373,27,central_repair_ring,central_repair_ring:inner repair yard:snap41:relieved reset stance,v32-882565,True,True,True,True,False,True
+374,27,riverbend_roofward,riverbend_roofward:river ford:snap42:open forward lean,v32-716853,False,True,True,True,False,True
+375,27,roofward_archive,roofward_archive:glass stair:snap43:open forward lean,v32-699786,False,False,True,False,False,True
+376,27,archive_signal,archive_signal:paper lane:snap46:open forward lean,v32-634426,True,True,True,True,False,True
+377,27,signal_orchard,signal_orchard:dusk road:snap42:open forward lean,v32-620376,False,False,True,False,False,True
+378,28,orchard_riverbend,orchard_riverbend:fen track:snap42:open forward lean,v32-664635,False,False,True,True,True,True
+379,28,central_repair_ring,central_repair_ring:inner repair yard:snap41:open forward lean,v32-816428,True,False,False,True,False,True
+380,28,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap43:open forward lean,v32-849215,False,True,True,True,False,True
+381,28,roofward_archive,roofward_archive:glass stair:snap44:open forward lean,v32-707386,False,False,True,False,False,True
+382,28,archive_signal,archive_signal:paper lane:snap46:open forward lean,v32-634293,True,False,False,True,False,True
+383,28,signal_orchard,signal_orchard:dusk road:snap42:open forward lean,v32-643179,False,False,False,False,False,True
+384,28,orchard_riverbend,orchard_riverbend:market plank route:snap43:open forward lean,v32-801906,False,True,True,True,False,True
+385,28,central_repair_ring,central_repair_ring:inner repair yard:snap42:open forward lean,v32-842050,False,False,True,False,False,True
+386,28,riverbend_roofward,riverbend_roofward:river ford:snap44:open forward lean,v32-700699,True,True,True,True,False,True
+387,28,roofward_archive,roofward_archive:glass stair:snap44:open forward lean,v32-707478,False,False,False,False,False,True
+388,28,archive_signal,archive_signal:stone kiosk path:snap47:open forward lean,v32-723400,False,True,True,True,False,True
+389,28,signal_orchard,signal_orchard:dusk road:snap43:open forward lean,v32-620767,False,False,True,False,False,True
+390,28,orchard_riverbend,orchard_riverbend:fen track:snap44:open forward lean,v32-664474,True,True,True,True,False,True
+391,28,central_repair_ring,central_repair_ring:inner repair yard:snap42:open forward lean,v32-841618,False,False,False,False,False,True
+392,29,riverbend_roofward,riverbend_roofward:river ford:snap45:open forward lean,v32-700694,True,False,True,True,True,True
+393,29,roofward_archive,roofward_archive:glass stair:snap44:open forward lean,v32-684244,True,False,False,True,False,True
+394,29,archive_signal,archive_signal:paper lane:snap48:open forward lean,v32-634805,False,True,True,True,False,True
+395,29,signal_orchard,signal_orchard:dusk road:snap44:relieved reset stance,v32-682054,True,True,True,True,False,True
+396,29,orchard_riverbend,orchard_riverbend:fen track:snap44:open forward lean,v32-665163,True,False,False,True,False,True
+397,29,central_repair_ring,central_repair_ring:inner repair yard:snap43:open forward lean,v32-842935,False,False,True,False,False,True
+398,29,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap46:open forward lean,v32-850900,True,True,True,True,False,True
+399,29,roofward_archive,roofward_archive:glass stair:snap45:open forward lean,v32-701470,False,False,True,False,False,True
+400,29,archive_signal,archive_signal:paper lane:snap48:open forward lean,v32-633861,True,False,False,True,False,True
+401,29,signal_orchard,signal_orchard:dusk road:snap45:relieved reset stance,v32-681232,True,True,True,True,False,True
+402,29,orchard_riverbend,orchard_riverbend:market plank route:snap45:open forward lean,v32-801659,False,True,True,True,False,True
+403,29,central_repair_ring,central_repair_ring:inner repair yard:snap44:open forward lean,v32-833443,False,False,True,True,True,True
+404,29,riverbend_roofward,riverbend_roofward:river ford:snap47:open forward lean,v32-700693,True,True,True,True,False,True
+405,29,roofward_archive,roofward_archive:glass stair:snap45:open forward lean,v32-699783,False,False,False,False,False,True
+406,30,signal_orchard,signal_orchard:dusk road:snap46:open forward lean,v32-644018,False,False,True,True,True,True
+407,30,orchard_riverbend,orchard_riverbend:fen track:snap46:open forward lean,v32-664920,True,True,True,True,False,True
+408,30,central_repair_ring,central_repair_ring:inner repair yard:snap45:open forward lean,v32-833552,False,True,True,True,False,True
+409,30,riverbend_roofward,riverbend_roofward:river ford:snap48:watchful neutral stance,v32-799346,False,False,True,False,False,True
+410,30,roofward_archive,roofward_archive:glass stair:snap45:open forward lean,v32-707617,True,False,False,True,False,True
+411,30,archive_signal,archive_signal:paper lane:snap48:watchful neutral stance,v32-746385,False,False,False,False,False,True
+412,30,signal_orchard,signal_orchard:river lantern loop:snap47:open forward lean,v32-754899,False,True,True,True,False,True
+413,30,orchard_riverbend,orchard_riverbend:fen track:snap47:open forward lean,v32-664911,True,False,True,True,False,True
+414,30,central_repair_ring,central_repair_ring:inner repair yard:snap45:open forward lean,v32-849581,True,False,False,True,False,True
+415,30,riverbend_roofward,riverbend_roofward:river ford:snap48:watchful neutral stance,v32-824350,False,False,False,False,False,True
+416,30,roofward_archive,roofward_archive:cool archive lane:snap46:open forward lean,v32-765709,True,True,True,True,False,True
+417,30,archive_signal,archive_signal:paper lane:snap49:watchful neutral stance,v32-730164,False,False,True,False,False,True
+418,30,signal_orchard,signal_orchard:dusk road:snap48:open forward lean,v32-621150,True,True,True,True,False,True
+419,30,orchard_riverbend,orchard_riverbend:fen track:snap48:relieved reset stance,v32-726998,True,True,True,True,False,True
+420,31,central_repair_ring,central_repair_ring:inner repair yard:snap46:open forward lean,v32-849605,False,False,True,True,True,True
+421,31,riverbend_roofward,riverbend_roofward:river ford:snap48:open forward lean,v32-700869,True,False,False,True,False,True
+422,31,roofward_archive,roofward_archive:glass stair:snap47:open forward lean,v32-684269,False,True,True,True,False,True
+423,31,archive_signal,archive_signal:paper lane:snap50:watchful neutral stance,v32-728929,False,False,True,False,False,True
+424,31,signal_orchard,signal_orchard:dusk road:snap48:open forward lean,v32-621016,True,False,False,True,False,True
+425,31,orchard_riverbend,orchard_riverbend:fen track:snap48:open forward lean,v32-688314,False,False,False,False,False,True
+426,31,central_repair_ring,central_repair_ring:outer bell path:snap47:open forward lean,v32-784362,False,True,True,True,False,True
+427,31,riverbend_roofward,riverbend_roofward:river ford:snap49:open forward lean,v32-725708,False,False,True,False,False,True
+428,31,roofward_archive,roofward_archive:glass stair:snap47:open forward lean,v32-684959,True,False,False,True,False,True
+429,31,archive_signal,archive_signal:paper lane:snap50:watchful neutral stance,v32-753651,False,False,False,False,False,True
+430,31,signal_orchard,signal_orchard:river lantern loop:snap49:open forward lean,v32-755451,False,True,True,True,False,True
+431,31,orchard_riverbend,orchard_riverbend:fen track:snap49:open forward lean,v32-688908,False,False,True,False,False,True
+432,31,central_repair_ring,central_repair_ring:inner repair yard:snap48:open forward lean,v32-816750,True,True,True,True,False,True
+433,31,riverbend_roofward,riverbend_roofward:river ford:snap49:open forward lean,v32-724977,False,False,False,False,False,True
+434,32,roofward_archive,roofward_archive:glass stair:snap48:open forward lean,v32-708966,False,False,True,True,True,True
+435,32,archive_signal,archive_signal:paper lane:snap50:watchful neutral stance,v32-752773,True,False,False,False,False,True
+436,32,signal_orchard,signal_orchard:dusk road:snap50:open forward lean,v32-620454,False,True,True,True,False,True
+437,32,orchard_riverbend,orchard_riverbend:fen track:snap50:open forward lean,v32-663577,False,False,True,False,False,True
+438,32,central_repair_ring,central_repair_ring:inner repair yard:snap48:open forward lean,v32-817449,True,False,False,True,False,True
+439,32,riverbend_roofward,riverbend_roofward:river ford:snap49:open forward lean,v32-724917,False,False,False,False,False,True
+440,32,roofward_archive,roofward_archive:cool archive lane:snap49:open forward lean,v32-765970,False,True,True,True,False,True
+441,32,archive_signal,archive_signal:paper lane:snap51:watchful neutral stance,v32-751890,True,False,True,True,False,True
+442,32,signal_orchard,signal_orchard:dusk road:snap50:open forward lean,v32-620320,True,False,False,True,False,True
+443,32,orchard_riverbend,orchard_riverbend:fen track:snap50:open forward lean,v32-687301,False,False,False,False,False,True
+444,32,central_repair_ring,central_repair_ring:outer bell path:snap49:open forward lean,v32-785073,True,True,True,True,False,True
+445,32,riverbend_roofward,riverbend_roofward:river ford:snap50:open forward lean,v32-723950,False,False,True,False,False,True
+446,32,roofward_archive,roofward_archive:glass stair:snap50:open forward lean,v32-683065,True,True,True,True,False,True
+447,32,archive_signal,archive_signal:paper lane:snap52:relieved reset stance,v32-694985,True,True,True,True,False,True
+448,33,signal_orchard,signal_orchard:dusk road:snap51:open forward lean,v32-644062,False,False,True,True,True,True
+449,33,orchard_riverbend,orchard_riverbend:fen track:snap50:open forward lean,v32-663992,True,False,False,True,False,True
+450,33,central_repair_ring,central_repair_ring:inner repair yard:snap50:open forward lean,v32-816129,False,True,True,True,False,True
+451,33,riverbend_roofward,riverbend_roofward:river ford:snap51:open forward lean,v32-700394,False,False,True,False,False,True
+452,33,roofward_archive,roofward_archive:glass stair:snap50:open forward lean,v32-682935,True,False,False,True,False,True
+453,33,archive_signal,archive_signal:paper lane:snap52:open forward lean,v32-656827,False,False,False,False,False,True
+454,33,signal_orchard,signal_orchard:river lantern loop:snap52:open forward lean,v32-755375,False,True,True,True,False,True
+455,33,orchard_riverbend,orchard_riverbend:fen track:snap51:open forward lean,v32-687691,False,False,True,False,False,True
+456,33,central_repair_ring,central_repair_ring:inner repair yard:snap50:open forward lean,v32-815450,True,False,False,True,False,True
+457,33,riverbend_roofward,riverbend_roofward:river ford:snap51:open forward lean,v32-724802,False,False,False,False,False,True
+458,33,roofward_archive,roofward_archive:cool archive lane:snap51:open forward lean,v32-764833,False,True,True,True,False,True
+459,33,archive_signal,archive_signal:paper lane:snap53:open forward lean,v32-658229,False,False,True,False,False,True
+460,33,signal_orchard,signal_orchard:dusk road:snap53:open forward lean,v32-619554,True,True,True,True,False,True
+461,33,orchard_riverbend,orchard_riverbend:fen track:snap51:open forward lean,v32-686966,False,False,False,False,False,True
+462,34,central_repair_ring,central_repair_ring:inner repair yard:snap51:open forward lean,v32-840906,False,False,True,True,True,True
+463,34,riverbend_roofward,riverbend_roofward:river ford:snap51:open forward lean,v32-699505,True,False,False,True,False,True
+464,34,roofward_archive,roofward_archive:glass stair:snap52:open forward lean,v32-683453,False,True,True,True,False,True
+465,34,archive_signal,archive_signal:paper lane:snap54:open forward lean,v32-633507,False,False,True,True,True,True
+466,34,signal_orchard,signal_orchard:dusk road:snap53:open forward lean,v32-620240,True,False,False,True,False,True
+467,34,orchard_riverbend,orchard_riverbend:fen track:snap51:open forward lean,v32-686914,False,False,False,False,False,True
+468,34,central_repair_ring,central_repair_ring:outer bell path:snap52:open forward lean,v32-783627,False,True,True,True,False,True
+469,34,riverbend_roofward,riverbend_roofward:river ford:snap52:open forward lean,v32-700320,True,False,True,True,False,True
+470,34,roofward_archive,roofward_archive:glass stair:snap52:open forward lean,v32-683323,True,False,False,True,False,True
+471,34,archive_signal,archive_signal:paper lane:snap54:open forward lean,v32-656911,False,False,False,False,False,True
+472,34,signal_orchard,signal_orchard:river lantern loop:snap54:open forward lean,v32-754734,True,True,True,True,False,True
+473,34,orchard_riverbend,orchard_riverbend:fen track:snap52:open forward lean,v32-687058,False,False,True,False,False,True
+474,34,central_repair_ring,central_repair_ring:inner repair yard:snap53:open forward lean,v32-815997,True,True,True,True,False,True
+475,34,riverbend_roofward,riverbend_roofward:river ford:snap52:open forward lean,v32-700191,True,False,False,True,False,True
+476,35,roofward_archive,roofward_archive:glass stair:snap53:open forward lean,v32-707697,False,False,True,True,True,True
+477,35,archive_signal,archive_signal:paper lane:snap54:open forward lean,v32-633920,True,False,False,True,False,True
+478,35,signal_orchard,signal_orchard:dusk road:snap55:open forward lean,v32-620890,False,True,True,True,False,True
+479,35,orchard_riverbend,orchard_riverbend:fen track:snap53:open forward lean,v32-664628,False,False,True,False,False,True
+480,35,central_repair_ring,central_repair_ring:inner repair yard:snap53:open forward lean,v32-815876,True,False,False,True,False,True
+481,35,riverbend_roofward,riverbend_roofward:river ford:snap52:open forward lean,v32-724393,False,False,False,False,False,True
+482,35,roofward_archive,roofward_archive:cool archive lane:snap54:open forward lean,v32-765094,False,True,True,True,False,True
+483,35,archive_signal,archive_signal:paper lane:snap55:open forward lean,v32-657299,False,False,True,False,False,True
+484,35,signal_orchard,signal_orchard:dusk road:snap55:open forward lean,v32-620756,True,False,False,True,False,True
+485,35,orchard_riverbend,orchard_riverbend:fen track:snap53:open forward lean,v32-687902,False,False,False,False,False,True
+486,35,central_repair_ring,central_repair_ring:outer bell path:snap54:open forward lean,v32-784187,False,True,True,True,False,True
+487,35,riverbend_roofward,riverbend_roofward:river ford:snap53:open forward lean,v32-725819,False,False,True,False,False,True
+488,35,roofward_archive,roofward_archive:glass stair:snap55:open forward lean,v32-684654,True,True,True,True,False,True
+489,35,archive_signal,archive_signal:paper lane:snap55:open forward lean,v32-657400,False,False,False,False,False,True
+490,36,orchard_riverbend,orchard_riverbend:fen track:snap54:open forward lean,v32-687511,False,False,True,True,True,True
+491,36,central_repair_ring,central_repair_ring:inner repair yard:snap55:open forward lean,v32-816474,True,True,True,True,False,True
+492,36,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap54:open forward lean,v32-849687,False,True,True,True,False,True
+493,36,roofward_archive,roofward_archive:glass stair:snap56:open forward lean,v32-684412,False,False,True,False,False,True
+494,36,archive_signal,archive_signal:paper lane:snap55:open forward lean,v32-634088,True,False,False,True,False,True
+495,36,signal_orchard,signal_orchard:dusk road:snap55:open forward lean,v32-644311,False,False,False,False,False,True
+496,36,orchard_riverbend,orchard_riverbend:market plank route:snap55:open forward lean,v32-802202,False,True,True,True,True,True
+497,36,central_repair_ring,central_repair_ring:inner repair yard:snap56:open forward lean,v32-842270,False,False,True,False,False,True
+498,36,riverbend_roofward,riverbend_roofward:river ford:snap55:open forward lean,v32-701161,True,True,True,True,False,True
+499,36,roofward_archive,roofward_archive:glass stair:snap56:open forward lean,v32-709273,False,False,False,False,False,True
+500,36,archive_signal,archive_signal:stone kiosk path:snap56:open forward lean,v32-721540,False,True,True,True,False,True
+501,36,signal_orchard,signal_orchard:dusk road:snap56:open forward lean,v32-619971,False,False,True,False,False,True
+502,36,orchard_riverbend,orchard_riverbend:fen track:snap56:open forward lean,v32-663959,True,True,True,True,False,True
+503,36,central_repair_ring,central_repair_ring:inner repair yard:snap56:open forward lean,v32-841831,False,False,False,False,False,True
+504,37,riverbend_roofward,riverbend_roofward:river ford:snap56:open forward lean,v32-716867,False,False,True,True,True,True
+505,37,roofward_archive,roofward_archive:glass stair:snap57:open forward lean,v32-684140,True,False,True,True,False,True
+506,37,archive_signal,archive_signal:paper lane:snap57:open forward lean,v32-633930,True,True,True,True,False,True
+507,37,signal_orchard,signal_orchard:dusk road:snap57:open forward lean,v32-620636,False,False,True,False,False,True
+508,37,orchard_riverbend,orchard_riverbend:fen track:snap56:open forward lean,v32-664648,True,False,False,True,False,True
+509,37,central_repair_ring,central_repair_ring:inner repair yard:snap57:relieved reset stance,v32-883738,True,True,True,True,False,True
+510,37,riverbend_roofward,riverbend_roofward:river ford:snap57:open forward lean,v32-716263,False,True,True,True,False,True
+511,37,roofward_archive,roofward_archive:glass stair:snap58:open forward lean,v32-683989,False,False,True,False,False,True
+512,37,archive_signal,archive_signal:paper lane:snap57:open forward lean,v32-633797,True,False,False,True,False,True
+513,37,signal_orchard,signal_orchard:dusk road:snap57:open forward lean,v32-636479,False,False,False,False,False,True
+514,37,orchard_riverbend,orchard_riverbend:market plank route:snap57:open forward lean,v32-801955,False,True,True,True,False,True
+515,37,central_repair_ring,central_repair_ring:inner repair yard:snap58:open forward lean,v32-816909,True,False,True,True,False,True
+516,37,riverbend_roofward,riverbend_roofward:river ford:snap57:open forward lean,v32-732304,True,False,False,True,False,True
+517,37,roofward_archive,roofward_archive:glass stair:snap59:open forward lean,v32-684658,False,False,True,False,False,True
+518,38,archive_signal,archive_signal:paper lane:snap58:open forward lean,v32-634463,False,False,True,True,True,True
+519,38,signal_orchard,signal_orchard:dusk road:snap57:open forward lean,v32-621048,True,False,False,True,False,True
+520,38,orchard_riverbend,orchard_riverbend:fen track:snap58:open forward lean,v32-664344,False,True,True,True,False,True
+521,38,central_repair_ring,central_repair_ring:inner repair yard:snap59:open forward lean,v32-816767,False,False,True,False,False,True
+522,38,riverbend_roofward,riverbend_roofward:river ford:snap57:open forward lean,v32-731584,True,False,False,False,False,True
+523,38,roofward_archive,roofward_archive:glass stair:snap59:open forward lean,v32-708394,False,False,False,False,False,True
+524,38,archive_signal,archive_signal:stone kiosk path:snap59:open forward lean,v32-722756,False,True,True,True,False,True
+525,38,signal_orchard,signal_orchard:dusk road:snap58:open forward lean,v32-643970,False,False,True,False,False,True
+526,38,orchard_riverbend,orchard_riverbend:fen track:snap58:open forward lean,v32-665033,True,False,False,True,False,True
+527,38,central_repair_ring,central_repair_ring:inner repair yard:snap59:open forward lean,v32-843077,False,False,False,True,True,True
+528,38,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap58:open forward lean,v32-850538,False,True,True,True,False,True
+529,38,roofward_archive,roofward_archive:glass stair:snap60:open forward lean,v32-683945,False,False,True,False,False,True
+530,38,archive_signal,archive_signal:paper lane:snap60:open forward lean,v32-633215,True,True,True,True,False,True
+531,38,signal_orchard,signal_orchard:dusk road:snap58:open forward lean,v32-644290,False,False,False,False,False,True
+532,39,orchard_riverbend,orchard_riverbend:fen track:snap59:open forward lean,v32-681328,False,False,True,True,True,True
+533,39,central_repair_ring,central_repair_ring:inner repair yard:snap59:open forward lean,v32-834259,True,False,False,True,False,True
+534,39,riverbend_roofward,riverbend_roofward:river ford:snap59:open forward lean,v32-701132,True,True,True,True,False,True
+535,39,roofward_archive,roofward_archive:glass stair:snap61:open forward lean,v32-683794,False,False,True,False,False,True
+536,39,archive_signal,archive_signal:paper lane:snap60:open forward lean,v32-633902,True,False,False,True,False,True
+537,39,signal_orchard,signal_orchard:dusk road:snap59:relieved reset stance,v32-682730,True,True,True,True,False,True
+538,39,orchard_riverbend,orchard_riverbend:market plank route:snap60:open forward lean,v32-801864,False,True,True,True,False,True
+539,39,central_repair_ring,central_repair_ring:inner repair yard:snap60:open forward lean,v32-841161,False,False,True,False,False,True
+540,39,riverbend_roofward,riverbend_roofward:river ford:snap59:open forward lean,v32-701003,True,False,False,True,False,True
+541,39,roofward_archive,roofward_archive:glass stair:snap61:open forward lean,v32-700077,False,False,False,False,False,True
+542,39,archive_signal,archive_signal:stone kiosk path:snap61:open forward lean,v32-722165,False,True,True,True,False,True
+543,39,signal_orchard,signal_orchard:dusk road:snap60:open forward lean,v32-620337,True,False,True,True,False,True
+544,39,orchard_riverbend,orchard_riverbend:market plank route:snap61:open forward lean,v32-801873,True,True,True,True,False,True
+545,39,central_repair_ring,central_repair_ring:inner repair yard:snap60:open forward lean,v32-840572,False,False,False,False,False,True
+546,40,riverbend_roofward,riverbend_roofward:river ford:snap60:open forward lean,v32-725032,False,False,True,True,True,True
+547,40,roofward_archive,roofward_archive:glass stair:snap61:open forward lean,v32-684210,True,False,False,True,False,True
+548,40,archive_signal,archive_signal:paper lane:snap62:open forward lean,v32-634414,False,True,True,True,False,True
+549,40,signal_orchard,signal_orchard:dusk road:snap61:open forward lean,v32-621002,False,False,True,False,False,True
+550,40,orchard_riverbend,orchard_riverbend:fen track:snap62:open forward lean,v32-664432,True,True,True,True,False,True
+551,40,central_repair_ring,central_repair_ring:inner repair yard:snap60:open forward lean,v32-832089,False,False,False,False,False,True
+552,40,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap61:open forward lean,v32-849767,False,True,True,True,False,True
+553,40,roofward_archive,roofward_archive:glass stair:snap62:open forward lean,v32-707764,False,False,True,False,False,True
+554,40,archive_signal,archive_signal:paper lane:snap62:open forward lean,v32-634281,True,False,False,True,False,True
+555,40,signal_orchard,signal_orchard:dusk road:snap61:open forward lean,v32-644399,False,False,False,False,False,True
+556,40,orchard_riverbend,orchard_riverbend:market plank route:snap63:open forward lean,v32-802559,False,True,True,True,False,True
+557,40,central_repair_ring,central_repair_ring:inner repair yard:snap61:open forward lean,v32-842418,False,False,True,False,False,True
+558,40,riverbend_roofward,riverbend_roofward:river ford:snap62:open forward lean,v32-701221,True,True,True,True,True,True
+559,40,roofward_archive,roofward_archive:glass stair:snap62:open forward lean,v32-708920,False,False,False,False,False,True
+560,41,archive_signal,archive_signal:paper lane:snap63:open forward lean,v32-650354,False,False,True,True,True,True
+561,41,signal_orchard,signal_orchard:dusk road:snap61:open forward lean,v32-620594,True,False,False,True,False,True
+562,41,orchard_riverbend,orchard_riverbend:fen track:snap64:open forward lean,v32-665091,True,True,True,True,False,True
+563,41,central_repair_ring,central_repair_ring:inner repair yard:snap62:open forward lean,v32-842592,False,False,True,False,False,True
+564,41,riverbend_roofward,riverbend_roofward:river ford:snap62:open forward lean,v32-701092,True,False,False,True,False,True
+565,41,roofward_archive,roofward_archive:glass stair:snap63:relieved reset stance,v32-747612,True,True,True,True,False,True
+566,41,archive_signal,archive_signal:stone kiosk path:snap64:open forward lean,v32-723234,False,True,True,True,False,True
+567,41,signal_orchard,signal_orchard:dusk road:snap62:open forward lean,v32-644777,False,False,True,False,False,True
+568,41,orchard_riverbend,orchard_riverbend:fen track:snap64:open forward lean,v32-665780,True,False,False,True,False,True
+569,41,central_repair_ring,central_repair_ring:inner repair yard:snap63:open forward lean,v32-842154,False,False,True,False,False,True
+570,41,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap63:open forward lean,v32-850343,False,True,True,True,False,True
+571,41,roofward_archive,roofward_archive:glass stair:snap64:open forward lean,v32-684591,True,False,True,True,False,True
+572,41,archive_signal,archive_signal:paper lane:snap65:open forward lean,v32-634780,True,True,True,True,False,True
+573,41,signal_orchard,signal_orchard:dusk road:snap62:open forward lean,v32-644214,False,False,False,False,False,True
+574,42,central_repair_ring,central_repair_ring:inner repair yard:snap64:open forward lean,v32-833700,True,False,True,True,True,True
+575,42,riverbend_roofward,riverbend_roofward:river ford:snap64:open forward lean,v32-701666,True,True,True,True,False,True
+576,42,roofward_archive,roofward_archive:cool archive lane:snap65:open forward lean,v32-766464,False,True,True,True,False,True
+577,42,archive_signal,archive_signal:paper lane:snap66:relieved reset stance,v32-695942,True,True,True,True,False,True
+578,42,signal_orchard,signal_orchard:dusk road:snap62:open forward lean,v32-621580,True,False,False,True,False,True
+579,42,orchard_riverbend,orchard_riverbend:fen track:snap64:open forward lean,v32-689959,False,False,False,False,False,True
+580,42,central_repair_ring,central_repair_ring:outer bell path:snap65:open forward lean,v32-809395,True,True,True,True,False,True
+581,42,riverbend_roofward,riverbend_roofward:river ford:snap65:open forward lean,v32-718183,False,False,True,False,False,True
+582,42,roofward_archive,roofward_archive:glass stair:snap66:open forward lean,v32-685162,True,True,True,True,False,True
+583,42,archive_signal,archive_signal:paper lane:snap67:relieved reset stance,v32-695933,True,True,True,True,False,True
+584,42,signal_orchard,signal_orchard:river lantern loop:snap63:open forward lean,v32-755988,False,True,True,True,False,True
+585,42,orchard_riverbend,orchard_riverbend:fen track:snap65:open forward lean,v32-690406,False,False,True,False,False,True
+586,42,central_repair_ring,central_repair_ring:inner repair yard:snap66:open forward lean,v32-817956,True,True,True,True,False,True
+587,42,riverbend_roofward,riverbend_roofward:river ford:snap65:open forward lean,v32-718123,False,False,False,False,False,True
+588,43,roofward_archive,roofward_archive:glass stair:snap67:open forward lean,v32-709841,False,False,True,True,True,True
+589,43,archive_signal,archive_signal:paper lane:snap67:open forward lean,v32-634900,True,False,False,True,True,True
+590,43,signal_orchard,signal_orchard:dusk road:snap64:open forward lean,v32-621270,False,True,True,True,False,True
+591,43,orchard_riverbend,orchard_riverbend:fen track:snap66:open forward lean,v32-665657,False,False,True,False,False,True
+592,43,central_repair_ring,central_repair_ring:inner repair yard:snap66:open forward lean,v32-817835,True,False,False,True,False,True
+593,43,riverbend_roofward,riverbend_roofward:river ford:snap65:open forward lean,v32-725807,False,False,False,False,False,True
+594,43,roofward_archive,roofward_archive:cool archive lane:snap68:open forward lean,v32-766999,False,True,True,True,False,True
+595,43,archive_signal,archive_signal:paper lane:snap68:open forward lean,v32-658578,False,False,True,False,False,True
+596,43,signal_orchard,signal_orchard:dusk road:snap64:open forward lean,v32-621956,True,False,False,True,False,True
+597,43,orchard_riverbend,orchard_riverbend:fen track:snap66:open forward lean,v32-690054,False,False,False,False,False,True
+598,43,central_repair_ring,central_repair_ring:outer bell path:snap67:open forward lean,v32-786124,False,True,True,True,False,True
+599,43,riverbend_roofward,riverbend_roofward:river ford:snap66:open forward lean,v32-726628,False,False,True,False,False,True
+600,43,roofward_archive,roofward_archive:glass stair:snap69:open forward lean,v32-684862,True,True,True,True,False,True
+601,43,archive_signal,archive_signal:paper lane:snap68:open forward lean,v32-657347,False,False,False,False,False,True
+602,44,signal_orchard,signal_orchard:dusk road:snap65:open forward lean,v32-619869,True,False,True,True,True,True
+603,44,orchard_riverbend,orchard_riverbend:fen track:snap66:open forward lean,v32-665261,True,False,False,True,False,True
+604,44,central_repair_ring,central_repair_ring:inner repair yard:snap68:open forward lean,v32-817560,False,True,True,True,False,True
+605,44,riverbend_roofward,riverbend_roofward:river ford:snap67:relieved reset stance,v32-763756,True,True,True,True,False,True
+606,44,roofward_archive,roofward_archive:glass stair:snap69:open forward lean,v32-684255,True,False,False,True,False,True
+607,44,archive_signal,archive_signal:paper lane:snap68:open forward lean,v32-658926,False,False,False,False,False,True
+608,44,signal_orchard,signal_orchard:river lantern loop:snap66:open forward lean,v32-755210,True,True,True,True,False,True
+609,44,orchard_riverbend,orchard_riverbend:fen track:snap67:open forward lean,v32-682376,False,False,True,False,False,True
+610,44,central_repair_ring,central_repair_ring:inner repair yard:snap68:open forward lean,v32-816061,True,False,False,True,False,True
+611,44,riverbend_roofward,riverbend_roofward:river ford:snap68:relieved reset stance,v32-763755,True,True,True,True,False,True
+612,44,roofward_archive,roofward_archive:glass stair:snap70:open forward lean,v32-699704,False,True,True,True,False,True
+613,44,archive_signal,archive_signal:paper lane:snap69:open forward lean,v32-649545,False,False,True,False,False,True
+614,44,signal_orchard,signal_orchard:dusk road:snap67:open forward lean,v32-620659,True,True,True,True,False,True
+615,44,orchard_riverbend,orchard_riverbend:fen track:snap67:open forward lean,v32-681504,False,False,False,False,False,True
+616,45,central_repair_ring,central_repair_ring:inner repair yard:snap69:open forward lean,v32-842180,False,False,True,True,True,True
+617,45,riverbend_roofward,riverbend_roofward:river ford:snap68:open forward lean,v32-701022,True,False,False,True,False,True
+618,45,roofward_archive,roofward_archive:cool archive lane:snap71:open forward lean,v32-764906,False,True,True,True,False,True
+619,45,archive_signal,archive_signal:paper lane:snap70:open forward lean,v32-656728,False,False,True,False,False,True
+620,45,signal_orchard,signal_orchard:dusk road:snap67:open forward lean,v32-620525,True,False,False,True,True,True
+621,45,orchard_riverbend,orchard_riverbend:fen track:snap67:open forward lean,v32-689084,False,False,False,False,False,True
+622,45,central_repair_ring,central_repair_ring:outer bell path:snap70:open forward lean,v32-783047,False,True,True,True,False,True
+623,45,riverbend_roofward,riverbend_roofward:river ford:snap69:open forward lean,v32-725348,False,False,True,False,False,True
+624,45,roofward_archive,roofward_archive:glass stair:snap72:open forward lean,v32-683658,True,True,True,True,False,True
+625,45,archive_signal,archive_signal:paper lane:snap70:open forward lean,v32-656009,False,False,False,False,False,True
+626,45,signal_orchard,signal_orchard:river lantern loop:snap68:open forward lean,v32-755762,False,True,True,True,False,True
+627,45,orchard_riverbend,orchard_riverbend:fen track:snap68:open forward lean,v32-689901,False,False,True,False,False,True
+628,45,central_repair_ring,central_repair_ring:inner repair yard:snap71:open forward lean,v32-816239,True,True,True,True,False,True
+629,45,riverbend_roofward,riverbend_roofward:river ford:snap69:open forward lean,v32-725744,False,False,False,False,False,True
+630,46,roofward_archive,roofward_archive:glass stair:snap73:open forward lean,v32-683651,True,False,True,True,True,True
+631,46,archive_signal,archive_signal:paper lane:snap70:open forward lean,v32-633231,True,False,False,True,False,True
+632,46,signal_orchard,signal_orchard:dusk road:snap69:open forward lean,v32-621035,False,True,True,True,False,True
+633,46,orchard_riverbend,orchard_riverbend:fen track:snap69:relieved reset stance,v32-727320,True,True,True,True,False,True
+634,46,central_repair_ring,central_repair_ring:inner repair yard:snap71:open forward lean,v32-816118,True,False,False,True,False,True
+635,46,riverbend_roofward,riverbend_roofward:river ford:snap69:open forward lean,v32-726531,False,False,False,False,False,True
+636,46,roofward_archive,roofward_archive:cool archive lane:snap74:open forward lean,v32-765741,True,True,True,True,False,True
+637,46,archive_signal,archive_signal:paper lane:snap71:open forward lean,v32-650124,False,False,True,False,False,True
+638,46,signal_orchard,signal_orchard:dusk road:snap69:open forward lean,v32-644515,True,False,False,False,False,True
+639,46,orchard_riverbend,orchard_riverbend:fen track:snap70:relieved reset stance,v32-727036,True,True,True,True,False,True
+640,46,central_repair_ring,central_repair_ring:outer bell path:snap72:open forward lean,v32-783607,False,True,True,True,False,True
+641,46,riverbend_roofward,riverbend_roofward:river ford:snap70:open forward lean,v32-715789,False,False,True,False,False,True
+642,46,roofward_archive,roofward_archive:glass stair:snap75:open forward lean,v32-684457,True,True,True,True,False,True
+643,46,archive_signal,archive_signal:paper lane:snap71:open forward lean,v32-649260,False,False,False,False,False,True
+644,47,signal_orchard,signal_orchard:dusk road:snap70:open forward lean,v32-642855,False,False,True,True,True,True
+645,47,orchard_riverbend,orchard_riverbend:fen track:snap70:open forward lean,v32-664333,True,False,False,True,False,True
+646,47,central_repair_ring,central_repair_ring:outer bell path:snap73:open forward lean,v32-807831,False,True,True,True,False,True
+647,47,riverbend_roofward,riverbend_roofward:river ford:snap71:open forward lean,v32-724261,False,False,True,False,False,True
+648,47,roofward_archive,roofward_archive:glass stair:snap75:open forward lean,v32-685147,True,False,False,True,False,True
+649,47,archive_signal,archive_signal:paper lane:snap71:open forward lean,v32-657556,False,False,False,False,False,True
+650,47,signal_orchard,signal_orchard:river lantern loop:snap71:open forward lean,v32-754717,False,True,True,True,False,True
+651,47,orchard_riverbend,orchard_riverbend:fen track:snap71:open forward lean,v32-688335,False,False,True,True,True,True
+652,47,central_repair_ring,central_repair_ring:inner repair yard:snap74:open forward lean,v32-816665,True,True,True,True,False,True
+653,47,riverbend_roofward,riverbend_roofward:river ford:snap71:open forward lean,v32-723530,False,False,False,False,False,True
+654,47,roofward_archive,roofward_archive:cool archive lane:snap76:open forward lean,v32-766297,False,True,True,True,False,True
+655,47,archive_signal,archive_signal:paper lane:snap72:open forward lean,v32-657549,False,False,True,False,False,True
+656,47,signal_orchard,signal_orchard:river lantern loop:snap71:open forward lean,v32-779597,True,False,False,True,False,True
+657,47,orchard_riverbend,orchard_riverbend:fen track:snap71:open forward lean,v32-688733,False,False,False,False,False,True
+658,48,riverbend_roofward,riverbend_roofward:river ford:snap72:open forward lean,v32-725629,False,False,True,True,True,True
+659,48,roofward_archive,roofward_archive:glass stair:snap77:open forward lean,v32-685718,True,True,True,True,False,True
+660,48,archive_signal,archive_signal:stone kiosk path:snap73:open forward lean,v32-722187,False,True,True,True,False,True
+661,48,signal_orchard,signal_orchard:river lantern loop:snap72:open forward lean,v32-771970,False,False,True,False,False,True
+662,48,orchard_riverbend,orchard_riverbend:fen track:snap71:open forward lean,v32-664505,True,False,False,True,False,True
+663,48,central_repair_ring,central_repair_ring:inner repair yard:snap74:open forward lean,v32-842610,False,False,False,False,False,True
+664,48,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap73:open forward lean,v32-850063,False,True,True,True,False,True
+665,48,roofward_archive,roofward_archive:glass stair:snap78:open forward lean,v32-709577,False,False,True,False,False,True
+666,48,archive_signal,archive_signal:paper lane:snap74:open forward lean,v32-634577,True,True,True,True,False,True
+667,48,signal_orchard,signal_orchard:river lantern loop:snap72:open forward lean,v32-780682,False,False,False,False,False,True
+668,48,orchard_riverbend,orchard_riverbend:market plank route:snap72:open forward lean,v32-802614,False,True,True,True,False,True
+669,48,central_repair_ring,central_repair_ring:inner repair yard:snap75:open forward lean,v32-844084,False,False,True,False,False,True
+670,48,riverbend_roofward,riverbend_roofward:river ford:snap74:open forward lean,v32-700697,True,True,True,True,False,True
+671,48,roofward_archive,roofward_archive:glass stair:snap78:open forward lean,v32-708849,False,False,False,False,False,True
+672,49,archive_signal,archive_signal:paper lane:snap75:open forward lean,v32-658101,False,False,True,True,True,True
+673,49,signal_orchard,signal_orchard:dusk road:snap73:open forward lean,v32-621170,True,True,True,True,False,True
+674,49,orchard_riverbend,orchard_riverbend:fen track:snap73:open forward lean,v32-665021,False,True,True,True,False,True
+675,49,central_repair_ring,central_repair_ring:inner repair yard:snap76:open forward lean,v32-817382,False,False,True,False,False,True
+676,49,riverbend_roofward,riverbend_roofward:river ford:snap74:open forward lean,v32-701388,True,False,False,True,False,True
+677,49,roofward_archive,roofward_archive:glass stair:snap79:open forward lean,v32-709816,False,False,True,False,False,True
+678,49,archive_signal,archive_signal:stone kiosk path:snap76:open forward lean,v32-723530,False,True,True,True,False,True
+679,49,signal_orchard,signal_orchard:dusk road:snap74:open forward lean,v32-621975,True,False,True,True,False,True
+680,49,orchard_riverbend,orchard_riverbend:fen track:snap73:open forward lean,v32-664890,True,False,False,True,False,True
+681,49,central_repair_ring,central_repair_ring:inner repair yard:snap76:open forward lean,v32-842706,False,False,False,False,False,True
+682,49,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap75:open forward lean,v32-850794,True,True,True,True,True,True
+683,49,roofward_archive,roofward_archive:glass stair:snap80:open forward lean,v32-684703,False,False,True,False,False,True
+684,49,archive_signal,archive_signal:paper lane:snap77:open forward lean,v32-635076,True,True,True,True,False,True
+685,49,signal_orchard,signal_orchard:dusk road:snap75:relieved reset stance,v32-683278,True,True,True,True,False,True
+686,50,orchard_riverbend,orchard_riverbend:fen track:snap74:open forward lean,v32-689106,False,False,True,True,True,True
+687,50,central_repair_ring,central_repair_ring:inner repair yard:snap76:open forward lean,v32-817807,True,False,False,True,False,True
+688,50,riverbend_roofward,riverbend_roofward:river ford:snap76:open forward lean,v32-702053,False,True,True,True,False,True
+689,50,roofward_archive,roofward_archive:glass stair:snap81:open forward lean,v32-685372,False,False,True,False,False,True
+690,50,archive_signal,archive_signal:paper lane:snap78:open forward lean,v32-635063,True,False,True,True,False,True
+691,50,signal_orchard,signal_orchard:dusk road:snap75:open forward lean,v32-645357,False,False,False,False,False,True
+692,50,orchard_riverbend,orchard_riverbend:market plank route:snap75:open forward lean,v32-802883,False,True,True,True,False,True
+693,50,central_repair_ring,central_repair_ring:inner repair yard:snap77:open forward lean,v32-843106,False,False,True,False,False,True
+694,50,riverbend_roofward,riverbend_roofward:river ford:snap76:open forward lean,v32-701924,True,False,False,True,False,True
+695,50,roofward_archive,roofward_archive:glass stair:snap81:open forward lean,v32-708803,False,False,False,False,False,True
+696,50,archive_signal,archive_signal:stone kiosk path:snap79:open forward lean,v32-724200,False,True,True,True,False,True
+697,50,signal_orchard,signal_orchard:dusk road:snap76:open forward lean,v32-646753,False,False,True,False,False,True
+698,50,orchard_riverbend,orchard_riverbend:fen track:snap76:open forward lean,v32-666217,True,True,True,True,False,True
+699,50,central_repair_ring,central_repair_ring:inner repair yard:snap77:open forward lean,v32-843171,False,False,False,False,False,True
+700,51,riverbend_roofward,riverbend_roofward:river ford:snap77:open forward lean,v32-725281,False,False,True,True,True,True
+701,51,roofward_archive,roofward_archive:glass stair:snap81:open forward lean,v32-684157,True,False,False,True,False,True
+702,51,archive_signal,archive_signal:paper lane:snap80:open forward lean,v32-633683,False,True,True,True,False,True
+703,51,signal_orchard,signal_orchard:dusk road:snap77:open forward lean,v32-621385,False,False,True,False,False,True
+704,51,orchard_riverbend,orchard_riverbend:fen track:snap76:open forward lean,v32-665275,True,False,False,True,False,True
+705,51,central_repair_ring,central_repair_ring:inner repair yard:snap77:open forward lean,v32-841448,False,False,False,False,False,True
+706,51,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap78:open forward lean,v32-851084,False,True,True,True,False,True
+707,51,roofward_archive,roofward_archive:glass stair:snap82:open forward lean,v32-684970,True,False,True,True,False,True
+708,51,archive_signal,archive_signal:paper lane:snap80:open forward lean,v32-634370,True,False,False,True,False,True
+709,51,signal_orchard,signal_orchard:dusk road:snap78:open forward lean,v32-622050,False,False,True,False,False,True
+710,51,orchard_riverbend,orchard_riverbend:market plank route:snap77:open forward lean,v32-802788,True,True,True,True,False,True
+711,51,central_repair_ring,central_repair_ring:inner repair yard:snap78:open forward lean,v32-841622,False,False,True,False,False,True
+712,51,riverbend_roofward,riverbend_roofward:river ford:snap79:open forward lean,v32-701628,True,True,True,True,False,True
+713,51,roofward_archive,roofward_archive:glass stair:snap83:relieved reset stance,v32-747993,True,True,True,True,True,True
+714,52,archive_signal,archive_signal:paper lane:snap81:open forward lean,v32-657450,False,False,True,True,True,True
+715,52,signal_orchard,signal_orchard:dusk road:snap78:open forward lean,v32-621916,True,False,False,True,False,True
+716,52,orchard_riverbend,orchard_riverbend:fen track:snap78:open forward lean,v32-665934,False,True,True,True,False,True
+717,52,central_repair_ring,central_repair_ring:inner repair yard:snap79:open forward lean,v32-817662,False,False,True,False,False,True
+718,52,riverbend_roofward,riverbend_roofward:river ford:snap79:open forward lean,v32-702319,True,False,False,True,False,True
+719,52,roofward_archive,roofward_archive:glass stair:snap83:open forward lean,v32-709824,False,False,False,False,False,True
+720,52,archive_signal,archive_signal:stone kiosk path:snap82:open forward lean,v32-722503,False,True,True,True,False,True
+721,52,signal_orchard,signal_orchard:dusk road:snap79:open forward lean,v32-645135,False,False,True,False,False,True
+722,52,orchard_riverbend,orchard_riverbend:fen track:snap79:open forward lean,v32-665925,True,False,True,True,False,True
+723,52,central_repair_ring,central_repair_ring:inner repair yard:snap79:open forward lean,v32-842506,False,False,False,False,False,True
+724,52,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap80:open forward lean,v32-850453,False,True,True,True,False,True
+725,52,roofward_archive,roofward_archive:glass stair:snap84:open forward lean,v32-710424,False,False,True,False,False,True
+726,52,archive_signal,archive_signal:paper lane:snap83:open forward lean,v32-634869,True,True,True,True,False,True
+727,52,signal_orchard,signal_orchard:dusk road:snap79:open forward lean,v32-645239,False,False,False,False,False,True
+728,53,orchard_riverbend,orchard_riverbend:fen track:snap80:open forward lean,v32-689492,False,False,True,True,True,True
+729,53,central_repair_ring,central_repair_ring:inner repair yard:snap80:open forward lean,v32-817030,True,False,True,True,False,True
+730,53,riverbend_roofward,riverbend_roofward:river ford:snap81:open forward lean,v32-700902,False,True,True,True,False,True
+731,53,roofward_archive,roofward_archive:glass stair:snap85:open forward lean,v32-685207,False,False,True,False,False,True
+732,53,archive_signal,archive_signal:paper lane:snap83:open forward lean,v32-634736,True,False,False,True,False,True
+733,53,signal_orchard,signal_orchard:dusk road:snap79:open forward lean,v32-644379,False,False,False,False,False,True
+734,53,orchard_riverbend,orchard_riverbend:market plank route:snap81:open forward lean,v32-802828,False,True,True,True,False,True
+735,53,central_repair_ring,central_repair_ring:inner repair yard:snap81:open forward lean,v32-817041,True,False,True,True,False,True
+736,53,riverbend_roofward,riverbend_roofward:river ford:snap81:open forward lean,v32-701593,True,False,False,True,False,True
+737,53,roofward_archive,roofward_archive:glass stair:snap85:open forward lean,v32-709911,False,False,False,False,False,True
+738,53,archive_signal,archive_signal:stone kiosk path:snap84:open forward lean,v32-722690,True,True,True,True,False,True
+739,53,signal_orchard,signal_orchard:dusk road:snap80:open forward lean,v32-644262,False,False,True,False,False,True
+740,53,orchard_riverbend,orchard_riverbend:fen track:snap82:open forward lean,v32-665333,True,True,True,True,False,True
+741,53,central_repair_ring,central_repair_ring:inner repair yard:snap82:open forward lean,v32-817052,True,False,True,True,False,True
+742,54,roofward_archive,roofward_archive:glass stair:snap86:open forward lean,v32-709067,False,False,True,True,True,True
+743,54,archive_signal,archive_signal:paper lane:snap85:open forward lean,v32-634169,True,True,True,True,False,True
+744,54,signal_orchard,signal_orchard:river lantern loop:snap81:open forward lean,v32-756101,True,True,True,True,True,True
+745,54,orchard_riverbend,orchard_riverbend:fen track:snap83:open forward lean,v32-665910,False,False,True,False,False,True
+746,54,central_repair_ring,central_repair_ring:inner repair yard:snap82:open forward lean,v32-817660,True,False,False,True,False,True
+747,54,riverbend_roofward,riverbend_roofward:river ford:snap82:relieved reset stance,v32-764161,True,True,True,True,False,True
+748,54,roofward_archive,roofward_archive:glass stair:snap87:open forward lean,v32-709285,False,True,True,True,False,True
+749,54,archive_signal,archive_signal:paper lane:snap86:open forward lean,v32-658513,False,False,True,False,False,True
+750,54,signal_orchard,signal_orchard:dusk road:snap82:open forward lean,v32-620244,True,True,True,True,False,True
+751,54,orchard_riverbend,orchard_riverbend:fen track:snap83:open forward lean,v32-682083,False,False,False,False,False,True
+752,54,central_repair_ring,central_repair_ring:outer bell path:snap83:open forward lean,v32-785133,False,True,True,True,False,True
+753,54,riverbend_roofward,riverbend_roofward:river ford:snap83:open forward lean,v32-700732,True,False,True,True,False,True
+754,54,roofward_archive,roofward_archive:glass stair:snap87:open forward lean,v32-717267,True,False,False,False,False,True
+755,54,archive_signal,archive_signal:paper lane:snap86:open forward lean,v32-657948,False,False,False,False,False,True
+756,55,signal_orchard,signal_orchard:dusk road:snap83:open forward lean,v32-644580,False,False,True,True,True,True
+757,55,orchard_riverbend,orchard_riverbend:fen track:snap83:open forward lean,v32-665037,True,False,False,True,False,True
+758,55,central_repair_ring,central_repair_ring:inner repair yard:snap84:open forward lean,v32-818196,False,True,True,True,False,True
+759,55,riverbend_roofward,riverbend_roofward:river ford:snap84:open forward lean,v32-701402,False,False,True,False,False,True
+760,55,roofward_archive,roofward_archive:glass stair:snap87:open forward lean,v32-716446,True,False,False,True,False,True
+761,55,archive_signal,archive_signal:paper lane:snap86:open forward lean,v32-648744,False,False,False,False,False,True
+762,55,signal_orchard,signal_orchard:river lantern loop:snap84:open forward lean,v32-755290,False,True,True,True,False,True
+763,55,orchard_riverbend,orchard_riverbend:fen track:snap84:open forward lean,v32-688433,False,False,True,False,False,True
+764,55,central_repair_ring,central_repair_ring:inner repair yard:snap84:open forward lean,v32-818075,True,False,False,True,False,True
+765,55,riverbend_roofward,riverbend_roofward:river ford:snap84:open forward lean,v32-725604,False,False,False,False,False,True
+766,55,roofward_archive,roofward_archive:cool archive lane:snap88:open forward lean,v32-766443,False,True,True,True,False,True
+767,55,archive_signal,archive_signal:paper lane:snap87:open forward lean,v32-658341,False,False,True,False,False,True
+768,55,signal_orchard,signal_orchard:dusk road:snap85:open forward lean,v32-621559,True,True,True,True,False,True
+769,55,orchard_riverbend,orchard_riverbend:fen track:snap84:open forward lean,v32-689585,False,False,False,False,False,True
+770,56,central_repair_ring,central_repair_ring:inner repair yard:snap85:open forward lean,v32-835480,False,False,True,True,True,True
+771,56,riverbend_roofward,riverbend_roofward:river ford:snap84:open forward lean,v32-700999,True,False,False,True,False,True
+772,56,roofward_archive,roofward_archive:glass stair:snap89:open forward lean,v32-685141,True,True,True,True,False,True
+773,56,archive_signal,archive_signal:paper lane:snap88:open forward lean,v32-658479,False,False,True,False,False,True
+774,56,signal_orchard,signal_orchard:dusk road:snap85:open forward lean,v32-621425,True,False,False,True,False,True
+775,56,orchard_riverbend,orchard_riverbend:fen track:snap85:relieved reset stance,v32-727998,True,True,True,True,True,True
+776,56,central_repair_ring,central_repair_ring:outer bell path:snap86:open forward lean,v32-786218,False,True,True,True,False,True
+777,56,riverbend_roofward,riverbend_roofward:river ford:snap85:open forward lean,v32-725987,False,False,True,False,False,True
+778,56,roofward_archive,roofward_archive:glass stair:snap89:open forward lean,v32-685831,True,False,False,True,False,True
+779,56,archive_signal,archive_signal:paper lane:snap88:open forward lean,v32-658435,False,False,False,False,False,True
+780,56,signal_orchard,signal_orchard:river lantern loop:snap86:open forward lean,v32-755842,False,True,True,True,False,True
+781,56,orchard_riverbend,orchard_riverbend:fen track:snap86:open forward lean,v32-665413,True,False,True,True,False,True
+782,56,central_repair_ring,central_repair_ring:outer bell path:snap87:open forward lean,v32-784865,True,True,True,True,False,True
+783,56,riverbend_roofward,riverbend_roofward:river ford:snap85:open forward lean,v32-725414,False,False,False,False,False,True
+784,57,roofward_archive,roofward_archive:glass stair:snap90:open forward lean,v32-708887,False,False,True,True,True,True
+785,57,archive_signal,archive_signal:paper lane:snap88:open forward lean,v32-635212,True,False,False,True,False,True
+786,57,signal_orchard,signal_orchard:dusk road:snap87:open forward lean,v32-621935,False,True,True,True,False,True
+787,57,orchard_riverbend,orchard_riverbend:fen track:snap87:open forward lean,v32-666081,False,False,True,False,False,True
+788,57,central_repair_ring,central_repair_ring:inner repair yard:snap88:open forward lean,v32-818075,True,True,True,True,False,True
+789,57,riverbend_roofward,riverbend_roofward:river ford:snap85:open forward lean,v32-716790,False,False,False,False,False,True
+790,57,roofward_archive,roofward_archive:cool archive lane:snap91:open forward lean,v32-765692,False,True,True,True,False,True
+791,57,archive_signal,archive_signal:paper lane:snap89:open forward lean,v32-658292,False,False,True,False,False,True
+792,57,signal_orchard,signal_orchard:dusk road:snap87:open forward lean,v32-621801,True,False,False,True,False,True
+793,57,orchard_riverbend,orchard_riverbend:fen track:snap87:open forward lean,v32-689961,False,False,False,False,False,True
+794,57,central_repair_ring,central_repair_ring:outer bell path:snap89:open forward lean,v32-785548,False,True,True,True,False,True
+795,57,riverbend_roofward,riverbend_roofward:river ford:snap86:open forward lean,v32-725811,False,False,True,False,False,True
+796,57,roofward_archive,roofward_archive:glass stair:snap92:open forward lean,v32-685234,True,True,True,True,False,True
+797,57,archive_signal,archive_signal:paper lane:snap89:open forward lean,v32-659436,False,False,False,False,False,True
+798,58,signal_orchard,signal_orchard:dusk road:snap88:open forward lean,v32-638583,False,False,True,True,True,True
+799,58,orchard_riverbend,orchard_riverbend:fen track:snap87:open forward lean,v32-666496,True,False,False,True,False,True
+800,58,central_repair_ring,central_repair_ring:inner repair yard:snap90:open forward lean,v32-815944,True,True,True,True,False,True
+801,58,riverbend_roofward,riverbend_roofward:river ford:snap87:open forward lean,v32-725150,False,False,True,False,False,True
+802,58,roofward_archive,roofward_archive:glass stair:snap92:open forward lean,v32-684293,True,False,False,True,False,True
+803,58,archive_signal,archive_signal:paper lane:snap90:relieved reset stance,v32-695431,True,True,True,True,False,True
+804,58,signal_orchard,signal_orchard:river lantern loop:snap89:open forward lean,v32-756108,False,True,True,True,False,True
+805,58,orchard_riverbend,orchard_riverbend:fen track:snap88:open forward lean,v32-689531,False,False,True,False,False,True
+806,58,central_repair_ring,central_repair_ring:inner repair yard:snap90:open forward lean,v32-816643,True,False,False,True,True,True
+807,58,riverbend_roofward,riverbend_roofward:river ford:snap87:open forward lean,v32-725090,False,False,False,False,False,True
+808,58,roofward_archive,roofward_archive:cool archive lane:snap93:open forward lean,v32-766257,False,True,True,True,False,True
+809,58,archive_signal,archive_signal:paper lane:snap91:open forward lean,v32-634506,True,False,True,True,False,True
+810,58,signal_orchard,signal_orchard:dusk road:snap90:open forward lean,v32-620413,True,True,True,True,False,True
+811,58,orchard_riverbend,orchard_riverbend:fen track:snap88:open forward lean,v32-688962,False,False,False,False,False,True
+812,59,central_repair_ring,central_repair_ring:inner repair yard:snap91:open forward lean,v32-842265,False,False,True,True,True,True
+813,59,riverbend_roofward,riverbend_roofward:river ford:snap87:open forward lean,v32-701247,True,False,False,True,False,True
+814,59,roofward_archive,roofward_archive:glass stair:snap94:open forward lean,v32-684811,False,True,True,True,False,True
+815,59,archive_signal,archive_signal:paper lane:snap92:open forward lean,v32-634352,False,False,True,False,False,True
+816,59,signal_orchard,signal_orchard:dusk road:snap90:open forward lean,v32-621099,True,False,False,True,False,True
+817,59,orchard_riverbend,orchard_riverbend:fen track:snap88:open forward lean,v32-680458,False,False,False,False,False,True
+818,59,central_repair_ring,central_repair_ring:outer bell path:snap92:open forward lean,v32-784802,False,True,True,True,False,True
+819,59,riverbend_roofward,riverbend_roofward:river ford:snap88:open forward lean,v32-725779,False,False,True,False,False,True
+820,59,roofward_archive,roofward_archive:glass stair:snap94:open forward lean,v32-708091,True,False,False,True,False,True
+821,59,archive_signal,archive_signal:paper lane:snap92:open forward lean,v32-657910,False,False,False,False,False,True
+822,59,signal_orchard,signal_orchard:river lantern loop:snap91:open forward lean,v32-755507,False,True,True,True,False,True
+823,59,orchard_riverbend,orchard_riverbend:fen track:snap89:open forward lean,v32-689357,False,False,True,False,False,True
+824,59,central_repair_ring,central_repair_ring:inner repair yard:snap93:open forward lean,v32-817190,True,True,True,True,False,True
+825,59,riverbend_roofward,riverbend_roofward:river ford:snap88:open forward lean,v32-726119,False,False,False,False,False,True
+826,60,archive_signal,archive_signal:paper lane:snap93:open forward lean,v32-658040,False,False,True,True,True,True
+827,60,signal_orchard,signal_orchard:dusk road:snap92:open forward lean,v32-621658,True,True,True,True,False,True
+828,60,orchard_riverbend,orchard_riverbend:market plank route:snap90:open forward lean,v32-802581,False,True,True,True,False,True
+829,60,central_repair_ring,central_repair_ring:inner repair yard:snap94:open forward lean,v32-817777,False,False,True,False,False,True
+830,60,riverbend_roofward,riverbend_roofward:river ford:snap89:open forward lean,v32-701547,True,False,True,True,False,True
+831,60,roofward_archive,roofward_archive:glass stair:snap94:open forward lean,v32-700217,False,False,False,False,False,True
+832,60,archive_signal,archive_signal:stone kiosk path:snap94:open forward lean,v32-722946,False,True,True,True,False,True
+833,60,signal_orchard,signal_orchard:dusk road:snap93:open forward lean,v32-645174,False,False,True,False,False,True
+834,60,orchard_riverbend,orchard_riverbend:fen track:snap91:open forward lean,v32-665122,True,True,True,True,False,True
+835,60,central_repair_ring,central_repair_ring:inner repair yard:snap94:open forward lean,v32-842944,False,False,False,False,False,True
+836,60,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap90:open forward lean,v32-850481,False,True,True,True,False,True
+837,60,roofward_archive,roofward_archive:glass stair:snap95:open forward lean,v32-709692,False,False,True,True,True,True
+838,60,archive_signal,archive_signal:paper lane:snap95:open forward lean,v32-635306,True,True,True,True,False,True
+839,60,signal_orchard,signal_orchard:dusk road:snap93:open forward lean,v32-645575,False,False,False,False,False,True
+840,61,orchard_riverbend,orchard_riverbend:fen track:snap92:open forward lean,v32-665113,True,False,True,True,True,True
+841,61,central_repair_ring,central_repair_ring:inner repair yard:snap94:open forward lean,v32-841396,True,False,False,False,False,True
+842,61,riverbend_roofward,riverbend_roofward:river ford:snap91:open forward lean,v32-700950,False,True,True,True,False,True
+843,61,roofward_archive,roofward_archive:glass stair:snap96:relieved reset stance,v32-748546,True,True,True,True,False,True
+844,61,archive_signal,archive_signal:paper lane:snap95:open forward lean,v32-635173,True,False,False,True,False,True
+845,61,signal_orchard,signal_orchard:dusk road:snap93:open forward lean,v32-646327,False,False,False,False,False,True
+846,61,orchard_riverbend,orchard_riverbend:market plank route:snap93:open forward lean,v32-803428,True,True,True,True,False,True
+847,61,central_repair_ring,central_repair_ring:inner repair yard:snap95:open forward lean,v32-844309,False,False,True,False,False,True
+848,61,riverbend_roofward,riverbend_roofward:river ford:snap91:open forward lean,v32-701641,True,False,False,True,False,True
+849,61,roofward_archive,roofward_archive:glass stair:snap97:relieved reset stance,v32-749363,True,True,True,True,False,True
+850,61,archive_signal,archive_signal:paper lane:snap96:open forward lean,v32-651394,False,True,True,True,False,True
+851,61,signal_orchard,signal_orchard:dusk road:snap94:open forward lean,v32-637007,False,False,True,False,False,True
+852,61,orchard_riverbend,orchard_riverbend:fen track:snap94:open forward lean,v32-665915,True,True,True,True,False,True
+853,61,central_repair_ring,central_repair_ring:inner repair yard:snap95:open forward lean,v32-843397,False,False,False,False,False,True
+854,62,riverbend_roofward,riverbend_roofward:river ford:snap92:open forward lean,v32-725660,False,False,True,True,True,True
+855,62,roofward_archive,roofward_archive:glass stair:snap97:open forward lean,v32-686207,True,False,False,True,False,True
+856,62,archive_signal,archive_signal:stone kiosk path:snap97:open forward lean,v32-724162,False,True,True,True,False,True
+857,62,signal_orchard,signal_orchard:dusk road:snap95:open forward lean,v32-645219,False,False,True,False,False,True
+858,62,orchard_riverbend,orchard_riverbend:fen track:snap94:open forward lean,v32-666604,True,False,False,True,False,True
+859,62,central_repair_ring,central_repair_ring:inner repair yard:snap95:open forward lean,v32-826290,False,False,False,False,False,True
+860,62,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap93:open forward lean,v32-850762,False,True,True,True,False,True
+861,62,roofward_archive,roofward_archive:glass stair:snap98:open forward lean,v32-710371,False,False,True,False,False,True
+862,62,archive_signal,archive_signal:paper lane:snap98:open forward lean,v32-635672,True,True,True,True,False,True
+863,62,signal_orchard,signal_orchard:dusk road:snap95:open forward lean,v32-644503,False,False,False,False,False,True
+864,62,orchard_riverbend,orchard_riverbend:market plank route:snap95:open forward lean,v32-803992,False,True,True,True,False,True
+865,62,central_repair_ring,central_repair_ring:inner repair yard:snap96:open forward lean,v32-843156,False,False,True,False,False,True
+866,62,riverbend_roofward,riverbend_roofward:river ford:snap94:open forward lean,v32-702156,True,True,True,True,False,True
+867,62,roofward_archive,roofward_archive:glass stair:snap98:open forward lean,v32-710768,False,False,False,False,False,True
+868,63,archive_signal,archive_signal:paper lane:snap99:open forward lean,v32-636479,True,False,True,True,True,True
+869,63,signal_orchard,signal_orchard:dusk road:snap96:open forward lean,v32-622816,True,False,True,True,False,True
+870,63,orchard_riverbend,orchard_riverbend:fen track:snap96:open forward lean,v32-666300,False,True,True,True,False,True
+871,63,central_repair_ring,central_repair_ring:inner repair yard:snap97:relieved reset stance,v32-884900,True,True,True,True,False,True
+872,63,riverbend_roofward,riverbend_roofward:river ford:snap94:open forward lean,v32-702027,True,False,False,True,False,True
+873,63,roofward_archive,roofward_archive:glass stair:snap98:open forward lean,v32-711548,False,False,False,False,False,True
+874,63,archive_signal,archive_signal:stone kiosk path:snap100:open forward lean,v32-731171,True,True,True,True,False,True
+875,63,signal_orchard,signal_orchard:dusk road:snap97:open forward lean,v32-638194,False,False,True,False,False,True
+876,63,orchard_riverbend,orchard_riverbend:fen track:snap96:open forward lean,v32-666989,True,False,False,True,False,True
+877,63,central_repair_ring,central_repair_ring:inner repair yard:snap98:relieved reset stance,v32-885735,True,True,True,True,False,True
+878,63,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap95:open forward lean,v32-852158,False,True,True,True,False,True
+879,63,roofward_archive,roofward_archive:glass stair:snap99:open forward lean,v32-702804,False,False,True,False,False,True
+880,63,archive_signal,archive_signal:paper lane:snap101:open forward lean,v32-641188,True,True,True,True,False,True
+881,63,signal_orchard,signal_orchard:dusk road:snap98:open forward lean,v32-638329,False,False,True,False,False,True
+882,64,orchard_riverbend,orchard_riverbend:fen track:snap97:open forward lean,v32-666837,False,False,True,True,True,True
+883,64,central_repair_ring,central_repair_ring:inner repair yard:snap98:open forward lean,v32-818758,True,False,False,True,False,True
+884,64,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap96:open forward lean,v32-876162,False,True,True,True,False,True
+885,64,roofward_archive,roofward_archive:glass stair:snap100:open forward lean,v32-716661,False,False,True,False,False,True
+886,64,archive_signal,archive_signal:paper lane:snap101:open forward lean,v32-641876,True,False,False,True,False,True
+887,64,signal_orchard,signal_orchard:dusk road:snap98:open forward lean,v32-646573,False,False,False,False,False,True
+888,64,orchard_riverbend,orchard_riverbend:market plank route:snap98:open forward lean,v32-805081,False,True,True,True,False,True
+889,64,central_repair_ring,central_repair_ring:inner repair yard:snap99:open forward lean,v32-845200,False,False,True,False,False,True
+890,64,riverbend_roofward,riverbend_roofward:river ford:snap97:open forward lean,v32-702542,True,True,True,True,False,True
+891,64,roofward_archive,roofward_archive:glass stair:snap100:open forward lean,v32-715930,False,False,False,False,False,True
+892,64,archive_signal,archive_signal:stone kiosk path:snap102:open forward lean,v32-730386,False,True,True,True,False,True
+893,64,signal_orchard,signal_orchard:dusk road:snap99:open forward lean,v32-622897,False,False,True,False,False,True
+894,64,orchard_riverbend,orchard_riverbend:fen track:snap99:open forward lean,v32-666208,True,True,True,True,False,True
+895,64,central_repair_ring,central_repair_ring:inner repair yard:snap99:open forward lean,v32-844768,False,False,False,False,False,True
+896,65,riverbend_roofward,riverbend_roofward:river ford:snap98:open forward lean,v32-703357,True,False,True,True,True,True
+897,65,roofward_archive,roofward_archive:glass stair:snap100:open forward lean,v32-693364,True,False,False,True,False,True
+898,65,archive_signal,archive_signal:paper lane:snap103:open forward lean,v32-642390,False,True,True,True,False,True
+899,65,signal_orchard,signal_orchard:dusk road:snap100:relieved reset stance,v32-691290,True,True,True,True,True,True
+900,65,orchard_riverbend,orchard_riverbend:fen track:snap99:open forward lean,v32-665266,True,False,False,True,False,True
+901,65,central_repair_ring,central_repair_ring:inner repair yard:snap100:open forward lean,v32-850988,False,False,True,False,False,True
+902,65,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap99:open forward lean,v32-850676,True,True,True,True,False,True
+903,65,roofward_archive,roofward_archive:glass stair:snap101:open forward lean,v32-709070,False,False,True,False,False,True
+904,65,archive_signal,archive_signal:paper lane:snap103:open forward lean,v32-641447,True,False,False,True,False,True
+905,65,signal_orchard,signal_orchard:dusk road:snap101:relieved reset stance,v32-690470,True,True,True,True,False,True
+906,65,orchard_riverbend,orchard_riverbend:market plank route:snap100:open forward lean,v32-809800,False,True,True,True,False,True
+907,65,central_repair_ring,central_repair_ring:inner repair yard:snap101:open forward lean,v32-843075,False,False,True,False,False,True
+908,65,riverbend_roofward,riverbend_roofward:river ford:snap100:open forward lean,v32-708175,True,True,True,True,False,True
+909,65,roofward_archive,roofward_archive:glass stair:snap101:open forward lean,v32-709010,False,False,False,False,False,True
+910,66,signal_orchard,signal_orchard:dusk road:snap102:open forward lean,v32-652151,False,False,True,True,True,True
+911,66,orchard_riverbend,orchard_riverbend:fen track:snap101:open forward lean,v32-671901,True,True,True,True,False,True
+912,66,central_repair_ring,central_repair_ring:outer bell path:snap102:open forward lean,v32-792561,False,True,True,True,False,True
+913,66,riverbend_roofward,riverbend_roofward:river ford:snap101:open forward lean,v32-707935,False,False,True,False,False,True
+914,66,roofward_archive,roofward_archive:glass stair:snap101:open forward lean,v32-691423,True,False,False,True,False,True
+915,66,archive_signal,archive_signal:paper lane:snap103:open forward lean,v32-657965,False,False,False,False,False,True
+916,66,signal_orchard,signal_orchard:river lantern loop:snap103:open forward lean,v32-764107,False,True,True,True,False,True
+917,66,orchard_riverbend,orchard_riverbend:fen track:snap102:open forward lean,v32-672714,True,False,True,True,False,True
+918,66,central_repair_ring,central_repair_ring:outer bell path:snap103:open forward lean,v32-793390,True,True,True,True,False,True
+919,66,riverbend_roofward,riverbend_roofward:river ford:snap101:open forward lean,v32-732959,False,False,False,False,False,True
+920,66,roofward_archive,roofward_archive:cool archive lane:snap102:open forward lean,v32-772935,True,True,True,True,False,True
+921,66,archive_signal,archive_signal:paper lane:snap104:open forward lean,v32-641475,False,False,True,False,False,True
+922,66,signal_orchard,signal_orchard:dusk road:snap104:open forward lean,v32-629126,True,True,True,True,False,True
+923,66,orchard_riverbend,orchard_riverbend:fen track:snap103:relieved reset stance,v32-735725,True,True,True,True,False,True
+924,67,central_repair_ring,central_repair_ring:outer bell path:snap104:open forward lean,v32-826739,False,False,True,True,True,True
+925,67,riverbend_roofward,riverbend_roofward:river ford:snap101:open forward lean,v32-708353,True,False,False,True,False,True
+926,67,roofward_archive,roofward_archive:glass stair:snap103:open forward lean,v32-692088,False,True,True,True,False,True
+927,67,archive_signal,archive_signal:paper lane:snap105:open forward lean,v32-642142,False,False,True,False,False,True
+928,67,signal_orchard,signal_orchard:dusk road:snap104:open forward lean,v32-652617,True,False,False,False,False,True
+929,67,orchard_riverbend,orchard_riverbend:fen track:snap103:open forward lean,v32-697568,False,False,False,False,False,True
+930,67,central_repair_ring,central_repair_ring:inner repair yard:snap105:open forward lean,v32-825577,False,True,True,True,True,True
+931,67,riverbend_roofward,riverbend_roofward:river ford:snap102:open forward lean,v32-732532,False,False,True,False,False,True
+932,67,roofward_archive,roofward_archive:glass stair:snap103:open forward lean,v32-691959,True,False,False,True,False,True
+933,67,archive_signal,archive_signal:paper lane:snap105:open forward lean,v32-665259,False,False,False,False,False,True
+934,67,signal_orchard,signal_orchard:river lantern loop:snap105:open forward lean,v32-764513,False,True,True,True,False,True
+935,67,orchard_riverbend,orchard_riverbend:fen track:snap104:open forward lean,v32-698168,False,False,True,False,False,True
+936,67,central_repair_ring,central_repair_ring:inner repair yard:snap105:open forward lean,v32-826277,True,False,False,True,False,True
+937,67,riverbend_roofward,riverbend_roofward:river ford:snap102:open forward lean,v32-732618,False,False,False,False,False,True
+938,68,roofward_archive,roofward_archive:glass stair:snap104:open forward lean,v32-716947,False,False,True,True,True,True
+939,68,archive_signal,archive_signal:paper lane:snap105:open forward lean,v32-642556,True,False,False,True,False,True
+940,68,signal_orchard,signal_orchard:dusk road:snap106:open forward lean,v32-629364,False,True,True,True,False,True
+941,68,orchard_riverbend,orchard_riverbend:fen track:snap105:open forward lean,v32-672951,False,False,True,False,False,True
+942,68,central_repair_ring,central_repair_ring:inner repair yard:snap105:open forward lean,v32-824770,True,False,False,True,False,True
+943,68,riverbend_roofward,riverbend_roofward:river ford:snap102:open forward lean,v32-731734,False,False,False,False,False,True
+944,68,roofward_archive,roofward_archive:cool archive lane:snap105:open forward lean,v32-774020,False,True,True,True,False,True
+945,68,archive_signal,archive_signal:paper lane:snap106:open forward lean,v32-642545,True,False,True,True,False,True
+946,68,signal_orchard,signal_orchard:dusk road:snap106:open forward lean,v32-628781,True,False,False,True,False,True
+947,68,orchard_riverbend,orchard_riverbend:fen track:snap105:open forward lean,v32-697655,False,False,False,False,False,True
+948,68,central_repair_ring,central_repair_ring:outer bell path:snap106:open forward lean,v32-793140,True,True,True,True,False,True
+949,68,riverbend_roofward,riverbend_roofward:river ford:snap103:open forward lean,v32-732707,False,False,True,False,False,True
+950,68,roofward_archive,roofward_archive:glass stair:snap106:open forward lean,v32-692474,True,True,True,True,False,True
+951,68,archive_signal,archive_signal:paper lane:snap107:relieved reset stance,v32-704704,True,True,True,True,False,True
+952,69,signal_orchard,signal_orchard:dusk road:snap107:open forward lean,v32-651861,False,False,True,True,True,True
+953,69,orchard_riverbend,orchard_riverbend:fen track:snap105:open forward lean,v32-673367,True,False,False,True,False,True
+954,69,central_repair_ring,central_repair_ring:inner repair yard:snap107:open forward lean,v32-825462,False,True,True,True,False,True
+955,69,riverbend_roofward,riverbend_roofward:river ford:snap104:open forward lean,v32-708998,False,False,True,False,False,True
+956,69,roofward_archive,roofward_archive:glass stair:snap106:open forward lean,v32-693165,True,False,False,True,False,True
+957,69,archive_signal,archive_signal:paper lane:snap107:open forward lean,v32-667073,False,False,False,False,False,True
+958,69,signal_orchard,signal_orchard:river lantern loop:snap108:open forward lean,v32-764243,False,True,True,True,False,True
+959,69,orchard_riverbend,orchard_riverbend:fen track:snap106:open forward lean,v32-698046,False,False,True,False,False,True
+960,69,central_repair_ring,central_repair_ring:inner repair yard:snap107:open forward lean,v32-825342,True,False,False,True,False,True
+961,69,riverbend_roofward,riverbend_roofward:river ford:snap104:open forward lean,v32-732743,False,False,False,True,True,True
+962,69,roofward_archive,roofward_archive:cool archive lane:snap107:open forward lean,v32-774580,False,True,True,True,False,True
+963,69,archive_signal,archive_signal:paper lane:snap108:open forward lean,v32-667661,False,False,True,False,False,True
+964,69,signal_orchard,signal_orchard:dusk road:snap109:open forward lean,v32-629280,True,True,True,True,False,True
+965,69,orchard_riverbend,orchard_riverbend:fen track:snap106:open forward lean,v32-697318,False,False,False,False,False,True
+966,70,central_repair_ring,central_repair_ring:inner repair yard:snap108:open forward lean,v32-851779,False,False,True,True,True,True
+967,70,riverbend_roofward,riverbend_roofward:river ford:snap104:open forward lean,v32-709416,True,False,False,True,False,True
+968,70,roofward_archive,roofward_archive:glass stair:snap108:open forward lean,v32-693685,False,True,True,True,False,True
+969,70,archive_signal,archive_signal:paper lane:snap109:open forward lean,v32-643594,False,False,True,False,False,True
+970,70,signal_orchard,signal_orchard:dusk road:snap109:open forward lean,v32-629147,True,False,False,True,False,True
+971,70,orchard_riverbend,orchard_riverbend:fen track:snap106:open forward lean,v32-696442,False,False,False,False,False,True
+972,70,central_repair_ring,central_repair_ring:outer bell path:snap109:open forward lean,v32-793409,False,True,True,True,False,True
+973,70,riverbend_roofward,riverbend_roofward:river ford:snap105:open forward lean,v32-709413,True,False,True,True,False,True
+974,70,roofward_archive,roofward_archive:glass stair:snap108:open forward lean,v32-693556,True,False,False,True,False,True
+975,70,archive_signal,archive_signal:paper lane:snap109:open forward lean,v32-667158,False,False,False,False,False,True
+976,70,signal_orchard,signal_orchard:river lantern loop:snap110:open forward lean,v32-763787,True,True,True,True,False,True
+977,70,orchard_riverbend,orchard_riverbend:fen track:snap107:open forward lean,v32-697409,False,False,True,False,False,True
+978,70,central_repair_ring,central_repair_ring:inner repair yard:snap110:open forward lean,v32-825515,True,True,True,True,False,True
+979,70,riverbend_roofward,riverbend_roofward:river ford:snap106:relieved reset stance,v32-774104,True,True,True,True,False,True
+980,71,roofward_archive,roofward_archive:glass stair:snap109:open forward lean,v32-717268,False,False,True,True,True,True
+981,71,archive_signal,archive_signal:paper lane:snap109:open forward lean,v32-643188,True,False,False,True,False,True
+982,71,signal_orchard,signal_orchard:dusk road:snap111:open forward lean,v32-628719,False,True,True,True,False,True
+983,71,orchard_riverbend,orchard_riverbend:fen track:snap108:open forward lean,v32-674006,False,False,True,False,False,True
+984,71,central_repair_ring,central_repair_ring:inner repair yard:snap110:open forward lean,v32-850355,True,False,False,True,False,True
+985,71,riverbend_roofward,riverbend_roofward:river ford:snap106:open forward lean,v32-734593,False,False,False,False,False,True
+986,71,roofward_archive,roofward_archive:glass stair:snap110:open forward lean,v32-717587,False,True,True,True,False,True
+987,71,archive_signal,archive_signal:paper lane:snap110:open forward lean,v32-666457,False,False,True,False,False,True
+988,71,signal_orchard,signal_orchard:dusk road:snap111:open forward lean,v32-629406,True,False,False,True,False,True
+989,71,orchard_riverbend,orchard_riverbend:fen track:snap108:open forward lean,v32-698257,False,False,False,False,False,True
+990,71,central_repair_ring,central_repair_ring:outer bell path:snap111:open forward lean,v32-792793,False,True,True,True,False,True
+991,71,riverbend_roofward,riverbend_roofward:river ford:snap107:open forward lean,v32-735205,False,False,True,False,False,True
+992,71,roofward_archive,roofward_archive:glass stair:snap110:open forward lean,v32-725306,True,False,False,True,True,True
+993,71,archive_signal,archive_signal:paper lane:snap110:open forward lean,v32-665735,False,False,False,False,False,True
+994,72,orchard_riverbend,orchard_riverbend:fen track:snap109:open forward lean,v32-697866,False,False,True,True,True,True
+995,72,central_repair_ring,central_repair_ring:inner repair yard:snap112:open forward lean,v32-825996,True,True,True,True,False,True
+996,72,riverbend_roofward,riverbend_roofward:orchard ridge detour:snap108:open forward lean,v32-860268,False,True,True,True,False,True
+997,72,roofward_archive,roofward_archive:glass stair:snap111:open forward lean,v32-693409,False,False,True,False,False,True
+998,72,archive_signal,archive_signal:paper lane:snap110:open forward lean,v32-643088,True,False,False,True,False,True
+999,72,signal_orchard,signal_orchard:dusk road:snap111:open forward lean,v32-653120,False,False,False,False,False,True
+1000,72,orchard_riverbend,orchard_riverbend:market plank route:snap110:open forward lean,v32-820168,False,True,True,True,False,True
+1001,72,central_repair_ring,central_repair_ring:inner repair yard:snap113:open forward lean,v32-860655,False,False,True,False,False,True
+1002,72,riverbend_roofward,riverbend_roofward:river ford:snap109:open forward lean,v32-719005,True,True,True,True,False,True
+1003,72,roofward_archive,roofward_archive:glass stair:snap111:open forward lean,v32-733096,False,False,False,False,False,True
+1004,72,archive_signal,archive_signal:stone kiosk path:snap111:open forward lean,v32-740378,False,True,True,True,False,True
+1005,72,signal_orchard,signal_orchard:dusk road:snap112:open forward lean,v32-637479,False,False,True,False,False,True
+1006,72,orchard_riverbend,orchard_riverbend:fen track:snap111:open forward lean,v32-682220,True,True,True,True,False,True
+1007,72,central_repair_ring,central_repair_ring:inner repair yard:snap113:open forward lean,v32-861861,False,False,False,False,False,True

@@ -1,0 +1,1009 @@
+tick_id,day,route_id,snapshot_id,session_id,snapshot_version,exported,imported,shared_across_session,snapshot_hash,restored_branch,restored_recovery,sync_visible
+0,1,riverbend_roofward,snap:riverbend_roofward:v2,session:1,2,True,False,False,v32-510428,river ford,0.637598,True
+1,1,roofward_archive,snap:roofward_archive:v2,session:1,2,False,True,True,v32-495263,glass stair,0.634718,True
+2,1,archive_signal,snap:archive_signal:v2,session:1,2,True,False,True,v32-550485,paper lane,0.637838,True
+3,1,signal_orchard,snap:signal_orchard:v2,session:1,2,False,True,True,v32-437830,dusk road,0.583598,True
+4,1,orchard_riverbend,snap:orchard_riverbend:v1,session:1,1,False,False,False,v32-477035,fen track,0.568718,False
+5,1,central_repair_ring,snap:central_repair_ring:v2,session:1,2,True,False,False,v32-726478,inner repair yard,0.559838,True
+6,1,riverbend_roofward,snap:riverbend_roofward:v3,session:1,3,True,False,True,v32-795674,orchard ridge detour,0.653197,True
+7,1,roofward_archive,snap:roofward_archive:v3,session:1,3,True,True,True,v32-525492,glass stair,0.637437,True
+8,1,archive_signal,snap:archive_signal:v2,session:1,2,False,False,False,v32-591238,paper lane,0.645835,False
+9,1,signal_orchard,snap:signal_orchard:v2,session:1,2,False,False,False,v32-467479,dusk road,0.581197,False
+10,1,orchard_riverbend,snap:orchard_riverbend:v2,session:1,2,True,False,False,v32-748493,market plank route,0.583437,True
+11,1,central_repair_ring,snap:central_repair_ring:v3,session:1,3,False,True,True,v32-762665,inner repair yard,0.57377,True
+12,1,riverbend_roofward,snap:riverbend_roofward:v4,session:1,4,True,False,True,v32-648723,river ford,0.68086,True
+13,1,roofward_archive,snap:roofward_archive:v4,session:1,4,False,True,True,v32-525867,glass stair,0.640155,True
+14,2,archive_signal,snap:archive_signal:v3,session:1,3,True,True,True,v32-590962,paper lane,0.648272,True
+15,2,signal_orchard,snap:signal_orchard:v2,session:1,2,False,False,False,v32-466590,dusk road,0.591235,False
+16,2,orchard_riverbend,snap:orchard_riverbend:v3,session:1,3,True,False,True,v32-613182,fen track,0.59866,True
+17,2,central_repair_ring,snap:central_repair_ring:v4,session:1,4,False,True,True,v32-753615,inner repair yard,0.576142,True
+18,2,riverbend_roofward,snap:riverbend_roofward:v4,session:1,4,False,False,False,v32-640658,river ford,0.691028,False
+19,2,roofward_archive,snap:roofward_archive:v4,session:1,4,False,False,False,v32-524691,glass stair,0.637314,False
+20,2,archive_signal,snap:archive_signal:v4,session:1,4,True,True,True,v32-552834,stone kiosk path,0.668709,True
+21,2,signal_orchard,snap:signal_orchard:v3,session:1,3,True,False,True,v32-466057,dusk road,0.589274,True
+22,2,orchard_riverbend,snap:orchard_riverbend:v3,session:1,3,False,False,False,v32-606132,fen track,0.607948,False
+23,2,central_repair_ring,snap:central_repair_ring:v4,session:1,4,False,False,False,v32-761092,inner repair yard,0.572514,False
+24,2,riverbend_roofward,snap:riverbend_roofward:v5,session:1,5,True,False,True,v32-802470,orchard ridge detour,0.707196,True
+25,2,roofward_archive,snap:roofward_archive:v5,session:1,5,False,True,True,v32-525320,glass stair,0.640472,True
+26,2,archive_signal,snap:archive_signal:v5,session:1,5,True,True,True,v32-472742,paper lane,0.701189,True
+27,2,signal_orchard,snap:signal_orchard:v3,session:1,3,False,False,False,v32-467323,dusk road,0.587312,False
+28,3,orchard_riverbend,snap:orchard_riverbend:v4,session:1,4,True,False,True,v32-613961,fen track,0.605676,True
+29,3,central_repair_ring,snap:central_repair_ring:v4,session:1,4,False,False,False,v32-760957,inner repair yard,0.565326,False
+30,3,riverbend_roofward,snap:riverbend_roofward:v6,session:1,6,True,False,False,v32-534027,river ford,0.733229,True
+31,3,roofward_archive,snap:roofward_archive:v6,session:1,6,False,True,True,v32-525443,glass stair,0.64407,True
+32,3,archive_signal,snap:archive_signal:v5,session:1,5,False,False,False,v32-471486,paper lane,0.710109,False
+33,3,signal_orchard,snap:signal_orchard:v4,session:1,4,True,True,True,v32-571202,dusk road,0.61315,True
+34,3,orchard_riverbend,snap:orchard_riverbend:v5,session:1,5,True,False,True,v32-614245,fen track,0.595404,True
+35,3,central_repair_ring,snap:central_repair_ring:v5,session:1,5,True,False,False,v32-761640,inner repair yard,0.562138,True
+36,3,riverbend_roofward,snap:riverbend_roofward:v6,session:1,6,False,False,False,v32-533496,river ford,0.741269,False
+37,3,roofward_archive,snap:roofward_archive:v6,session:1,6,False,False,False,v32-518292,glass stair,0.641669,False
+38,3,archive_signal,snap:archive_signal:v6,session:1,6,True,False,True,v32-551874,stone kiosk path,0.725029,True
+39,3,signal_orchard,snap:signal_orchard:v5,session:1,5,False,True,True,v32-562772,dusk road,0.627082,True
+40,3,orchard_riverbend,snap:orchard_riverbend:v5,session:1,5,False,False,False,v32-613829,fen track,0.605074,False
+41,3,central_repair_ring,snap:central_repair_ring:v5,session:1,5,False,False,False,v32-761368,inner repair yard,0.55895,False
+42,4,riverbend_roofward,snap:riverbend_roofward:v7,session:1,7,True,False,True,v32-534146,river ford,0.737749,True
+43,4,roofward_archive,snap:roofward_archive:v6,session:1,6,False,False,False,v32-526634,glass stair,0.651707,False
+44,4,archive_signal,snap:archive_signal:v7,session:1,7,True,False,True,v32-471828,paper lane,0.740389,True
+45,4,signal_orchard,snap:signal_orchard:v6,session:1,6,False,True,True,v32-571573,dusk road,0.629454,True
+46,4,orchard_riverbend,snap:orchard_riverbend:v6,session:1,6,False,True,True,v32-613448,fen track,0.621185,True
+47,4,central_repair_ring,snap:central_repair_ring:v5,session:1,5,False,False,False,v32-754290,inner repair yard,0.556202,False
+48,4,riverbend_roofward,snap:riverbend_roofward:v8,session:1,8,True,False,True,v32-672813,orchard ridge detour,0.752229,True
+49,4,roofward_archive,snap:roofward_archive:v7,session:1,7,True,False,True,v32-526083,glass stair,0.649746,True
+50,4,archive_signal,snap:archive_signal:v7,session:1,7,False,False,False,v32-472603,paper lane,0.749749,False
+51,4,signal_orchard,snap:signal_orchard:v6,session:1,6,False,False,False,v32-572207,dusk road,0.625826,False
+52,4,orchard_riverbend,snap:orchard_riverbend:v7,session:1,7,True,True,True,v32-756397,market plank route,0.643295,True
+53,4,central_repair_ring,snap:central_repair_ring:v6,session:1,6,False,True,True,v32-760910,inner repair yard,0.559454,True
+54,4,riverbend_roofward,snap:riverbend_roofward:v9,session:1,9,True,False,True,v32-534375,river ford,0.778709,True
+55,4,roofward_archive,snap:roofward_archive:v7,session:1,7,False,False,False,v32-527389,glass stair,0.647784,False
+56,5,archive_signal,snap:archive_signal:v8,session:1,8,True,False,True,v32-473984,paper lane,0.747549,True
+57,5,signal_orchard,snap:signal_orchard:v6,session:1,6,False,False,False,v32-572085,dusk road,0.634638,False
+58,5,orchard_riverbend,snap:orchard_riverbend:v8,session:1,8,True,False,True,v32-657014,fen track,0.65327,True
+59,5,central_repair_ring,snap:central_repair_ring:v7,session:1,7,False,True,True,v32-762855,inner repair yard,0.563146,True
+60,5,riverbend_roofward,snap:riverbend_roofward:v9,session:1,9,False,False,False,v32-535815,river ford,0.787629,False
+61,5,roofward_archive,snap:roofward_archive:v8,session:1,8,True,False,True,v32-635339,glass stair,0.667622,True
+62,5,archive_signal,snap:archive_signal:v9,session:1,9,True,False,True,v32-555021,stone kiosk path,0.763349,True
+63,5,signal_orchard,snap:signal_orchard:v7,session:1,7,True,False,True,v32-572457,dusk road,0.63145,True
+64,5,orchard_riverbend,snap:orchard_riverbend:v8,session:1,8,False,False,False,v32-648383,fen track,0.66131,False
+65,5,central_repair_ring,snap:central_repair_ring:v8,session:1,8,False,True,True,v32-762141,inner repair yard,0.566838,True
+66,5,riverbend_roofward,snap:riverbend_roofward:v10,session:1,10,True,False,True,v32-687248,orchard ridge detour,0.802549,True
+67,5,roofward_archive,snap:roofward_archive:v9,session:1,9,False,True,True,v32-634655,glass stair,0.681554,True
+68,5,archive_signal,snap:archive_signal:v10,session:1,10,True,False,True,v32-575047,stone kiosk path,0.765149,True
+69,5,signal_orchard,snap:signal_orchard:v7,session:1,7,False,False,False,v32-563631,dusk road,0.628262,False
+70,6,central_repair_ring,snap:central_repair_ring:v9,session:1,9,True,False,False,v32-763940,inner repair yard,0.57477,True
+71,6,riverbend_roofward,snap:riverbend_roofward:v11,session:1,11,True,False,True,v32-547287,river ford,0.830349,True
+72,6,roofward_archive,snap:roofward_archive:v10,session:1,10,True,False,True,v32-735023,cool archive lane,0.696366,True
+73,6,archive_signal,snap:archive_signal:v11,session:1,11,True,True,True,v32-485622,paper lane,0.809131,True
+74,6,signal_orchard,snap:signal_orchard:v7,session:1,7,False,False,False,v32-571938,dusk road,0.637954,False
+75,6,orchard_riverbend,snap:orchard_riverbend:v8,session:1,8,False,False,False,v32-647597,fen track,0.65823,False
+76,6,central_repair_ring,snap:central_repair_ring:v10,session:1,10,True,False,True,v32-745306,outer bell path,0.600702,True
+77,6,riverbend_roofward,snap:riverbend_roofward:v12,session:1,12,True,False,True,v32-547403,river ford,0.828149,True
+78,6,roofward_archive,snap:roofward_archive:v11,session:1,11,True,False,True,v32-533221,glass stair,0.723243,True
+79,6,archive_signal,snap:archive_signal:v12,session:1,12,True,False,True,v32-484565,paper lane,0.829171,True
+80,6,signal_orchard,snap:signal_orchard:v8,session:1,8,True,False,False,v32-711010,river lantern loop,0.653646,True
+81,6,orchard_riverbend,snap:orchard_riverbend:v9,session:1,9,False,True,True,v32-648750,fen track,0.66115,True
+82,6,central_repair_ring,snap:central_repair_ring:v10,session:1,10,False,False,False,v32-751311,outer bell path,0.592699,False
+83,6,riverbend_roofward,snap:riverbend_roofward:v12,session:1,12,False,False,False,v32-548062,river ford,0.825949,False
+84,7,roofward_archive,snap:roofward_archive:v12,session:1,12,True,False,True,v32-531497,glass stair,0.720603,True
+85,7,archive_signal,snap:archive_signal:v12,session:1,12,False,False,False,v32-485339,paper lane,0.837651,False
+86,7,signal_orchard,snap:signal_orchard:v9,session:1,9,True,False,True,v32-460937,dusk road,0.669843,True
+87,7,orchard_riverbend,snap:orchard_riverbend:v10,session:1,10,False,True,True,v32-662385,fen track,0.66451,True
+88,7,central_repair_ring,snap:central_repair_ring:v11,session:1,11,True,False,True,v32-656177,inner repair yard,0.619136,True
+89,7,riverbend_roofward,snap:riverbend_roofward:v12,session:1,12,False,False,False,v32-548730,river ford,0.824189,False
+90,7,roofward_archive,snap:roofward_archive:v13,session:1,13,True,False,False,v32-605881,cool archive lane,0.735963,True
+91,7,archive_signal,snap:archive_signal:v13,session:1,13,True,False,True,v32-485840,paper lane,0.834131,True
+92,7,signal_orchard,snap:signal_orchard:v9,session:1,9,False,False,False,v32-461685,dusk road,0.680083,False
+93,7,orchard_riverbend,snap:orchard_riverbend:v10,session:1,10,False,False,False,v32-662771,fen track,0.66187,False
+94,7,central_repair_ring,snap:central_repair_ring:v12,session:1,12,True,False,True,v32-624142,outer bell path,0.633616,True
+95,7,riverbend_roofward,snap:riverbend_roofward:v13,session:1,13,False,True,True,v32-548323,river ford,0.828429,True
+96,7,roofward_archive,snap:roofward_archive:v14,session:1,14,True,False,True,v32-533579,glass stair,0.763323,True
+97,7,archive_signal,snap:archive_signal:v13,session:1,13,False,False,False,v32-484551,paper lane,0.830611,False
+98,8,signal_orchard,snap:signal_orchard:v10,session:2,10,True,False,True,v32-472334,dusk road,0.688123,True
+99,8,orchard_riverbend,snap:orchard_riverbend:v10,session:2,10,False,False,False,v32-663566,fen track,0.67167,False
+100,8,central_repair_ring,snap:central_repair_ring:v13,session:2,13,True,False,False,v32-654580,inner repair yard,0.648536,True
+101,8,riverbend_roofward,snap:riverbend_roofward:v14,session:2,14,True,True,True,v32-548699,river ford,0.854469,True
+102,8,roofward_archive,snap:roofward_archive:v14,session:2,14,False,False,False,v32-532383,glass stair,0.773123,False
+103,8,archive_signal,snap:archive_signal:v13,session:2,13,False,False,False,v32-484424,paper lane,0.827531,False
+104,8,signal_orchard,snap:signal_orchard:v11,session:2,11,True,False,True,v32-598076,river lantern loop,0.714163,True
+105,8,orchard_riverbend,snap:orchard_riverbend:v11,session:2,11,True,False,False,v32-663682,fen track,0.66947,True
+106,8,central_repair_ring,snap:central_repair_ring:v13,session:2,13,False,False,False,v32-655562,inner repair yard,0.657456,False
+107,8,riverbend_roofward,snap:riverbend_roofward:v15,session:2,15,True,False,True,v32-549353,river ford,0.874509,True
+108,8,roofward_archive,snap:roofward_archive:v15,session:2,15,True,False,True,v32-607072,cool archive lane,0.788923,True
+109,8,archive_signal,snap:archive_signal:v14,session:2,14,False,True,True,v32-485569,paper lane,0.830451,True
+110,8,signal_orchard,snap:signal_orchard:v12,session:2,12,True,False,False,v32-472443,dusk road,0.740203,True
+111,8,orchard_riverbend,snap:orchard_riverbend:v11,session:2,11,False,False,False,v32-664331,fen track,0.66727,False
+112,9,central_repair_ring,snap:central_repair_ring:v14,session:2,14,True,False,True,v32-655966,inner repair yard,0.654816,True
+113,9,riverbend_roofward,snap:riverbend_roofward:v15,session:2,15,False,False,False,v32-548944,river ford,0.882989,False
+114,9,roofward_archive,snap:roofward_archive:v16,session:2,16,True,False,True,v32-534590,glass stair,0.805163,True
+115,9,archive_signal,snap:archive_signal:v15,session:2,15,False,True,True,v32-485176,paper lane,0.833811,True
+116,9,signal_orchard,snap:signal_orchard:v12,session:2,12,False,False,False,v32-471667,dusk road,0.732683,False
+117,9,orchard_riverbend,snap:orchard_riverbend:v11,session:2,11,False,False,False,v32-663809,fen track,0.66551,False
+118,9,central_repair_ring,snap:central_repair_ring:v15,session:2,15,True,False,True,v32-625473,outer bell path,0.670176,True
+119,9,riverbend_roofward,snap:riverbend_roofward:v16,session:2,16,True,False,True,v32-550668,river ford,0.879469,True
+120,9,roofward_archive,snap:roofward_archive:v16,session:2,16,False,False,False,v32-532762,glass stair,0.815403,False
+121,9,archive_signal,snap:archive_signal:v15,session:2,15,False,False,False,v32-485556,paper lane,0.831171,False
+122,9,signal_orchard,snap:signal_orchard:v13,session:2,13,True,False,True,v32-598738,river lantern loop,0.747163,True
+123,9,orchard_riverbend,snap:orchard_riverbend:v12,session:2,12,False,True,True,v32-663399,fen track,0.66975,True
+124,9,central_repair_ring,snap:central_repair_ring:v16,session:2,16,True,False,True,v32-655649,inner repair yard,0.697536,True
+125,9,riverbend_roofward,snap:riverbend_roofward:v16,session:2,16,False,False,False,v32-550528,river ford,0.875949,False
+126,10,roofward_archive,snap:roofward_archive:v17,session:2,17,True,False,True,v32-532740,glass stair,0.823443,True
+127,10,archive_signal,snap:archive_signal:v15,session:2,15,False,False,False,v32-485177,paper lane,0.840971,False
+128,10,signal_orchard,snap:signal_orchard:v14,session:2,14,True,False,True,v32-473690,dusk road,0.762083,True
+129,10,orchard_riverbend,snap:orchard_riverbend:v13,session:2,13,True,True,True,v32-507668,fen track,0.69579,True
+130,10,central_repair_ring,snap:central_repair_ring:v16,session:2,16,False,False,False,v32-656903,inner repair yard,0.707336,False
+131,10,riverbend_roofward,snap:riverbend_roofward:v16,session:2,16,False,False,False,v32-550397,river ford,0.872869,False
+132,10,roofward_archive,snap:roofward_archive:v18,session:2,18,True,False,True,v32-607987,cool archive lane,0.849483,True
+133,10,archive_signal,snap:archive_signal:v16,session:2,16,True,False,True,v32-486453,paper lane,0.838771,True
+134,10,signal_orchard,snap:signal_orchard:v14,session:2,14,False,False,False,v32-473437,dusk road,0.771003,False
+135,10,orchard_riverbend,snap:orchard_riverbend:v14,session:2,14,True,False,False,v32-508312,fen track,0.71583,True
+136,10,central_repair_ring,snap:central_repair_ring:v17,session:2,17,True,False,True,v32-663622,inner repair yard,0.697136,True
+137,10,riverbend_roofward,snap:riverbend_roofward:v17,session:2,17,False,True,True,v32-550389,river ford,0.875789,True
+138,10,roofward_archive,snap:roofward_archive:v19,session:2,19,True,False,True,v32-535218,glass stair,0.875523,True
+139,10,archive_signal,snap:archive_signal:v16,session:2,16,False,False,False,v32-487092,paper lane,0.836571,False
+140,11,signal_orchard,snap:signal_orchard:v15,session:2,15,True,False,False,v32-472648,dusk road,0.768363,True
+141,11,orchard_riverbend,snap:orchard_riverbend:v14,session:2,14,False,False,False,v32-506747,fen track,0.72431,False
+142,11,central_repair_ring,snap:central_repair_ring:v18,session:2,18,True,False,True,v32-626522,outer bell path,0.713318,True
+143,11,riverbend_roofward,snap:riverbend_roofward:v18,session:2,18,False,True,True,v32-551173,river ford,0.879149,True
+144,11,roofward_archive,snap:roofward_archive:v19,session:2,19,False,False,False,v32-534418,glass stair,0.884003,False
+145,11,archive_signal,snap:archive_signal:v16,session:2,16,False,False,False,v32-486578,paper lane,0.834811,False
+146,11,signal_orchard,snap:signal_orchard:v16,session:2,16,True,False,True,v32-600031,river lantern loop,0.783723,True
+147,11,orchard_riverbend,snap:orchard_riverbend:v15,session:2,15,True,False,True,v32-506076,fen track,0.72079,True
+148,11,central_repair_ring,snap:central_repair_ring:v19,session:2,19,True,False,True,v32-655875,inner repair yard,0.741558,True
+149,11,riverbend_roofward,snap:riverbend_roofward:v18,session:2,18,False,False,False,v32-550367,river ford,0.876509,False
+150,11,roofward_archive,snap:roofward_archive:v20,session:2,20,True,False,False,v32-606038,cool archive lane,0.898483,True
+151,11,archive_signal,snap:archive_signal:v17,session:2,17,False,True,True,v32-486174,paper lane,0.839051,True
+152,11,signal_orchard,snap:signal_orchard:v17,session:2,17,True,False,True,v32-474670,dusk road,0.811083,True
+153,11,orchard_riverbend,snap:orchard_riverbend:v15,session:2,15,False,False,False,v32-507136,fen track,0.71727,False
+154,12,riverbend_roofward,snap:riverbend_roofward:v19,session:2,19,True,True,True,v32-550220,river ford,0.880749,True
+155,12,roofward_archive,snap:roofward_archive:v21,session:2,21,True,False,False,v32-533985,glass stair,0.925843,True
+156,12,archive_signal,snap:archive_signal:v18,session:2,18,True,False,True,v32-568687,stone kiosk path,0.853531,True
+157,12,signal_orchard,snap:signal_orchard:v18,session:2,18,False,True,True,v32-473781,dusk road,0.815323,True
+158,12,orchard_riverbend,snap:orchard_riverbend:v15,session:2,15,False,False,False,v32-506998,fen track,0.72663,False
+159,12,central_repair_ring,snap:central_repair_ring:v19,session:2,19,False,False,False,v32-656862,inner repair yard,0.738038,False
+160,12,riverbend_roofward,snap:riverbend_roofward:v20,session:2,20,True,True,True,v32-687086,orchard ridge detour,0.902989,True
+161,12,roofward_archive,snap:roofward_archive:v22,session:2,22,True,False,True,v32-533057,glass stair,0.923203,True
+162,12,archive_signal,snap:archive_signal:v19,session:2,19,True,False,True,v32-486663,paper lane,0.880011,True
+163,12,signal_orchard,snap:signal_orchard:v18,session:2,18,False,False,False,v32-473899,dusk road,0.813563,False
+164,12,orchard_riverbend,snap:orchard_riverbend:v16,session:2,16,True,False,True,v32-634871,market plank route,0.74199,True
+165,12,central_repair_ring,snap:central_repair_ring:v20,session:2,20,False,True,True,v32-654616,inner repair yard,0.740518,True
+166,12,riverbend_roofward,snap:riverbend_roofward:v21,session:2,21,True,True,True,v32-548736,river ford,0.937229,True
+167,12,roofward_archive,snap:roofward_archive:v22,session:2,22,False,False,False,v32-531471,glass stair,0.920563,False
+168,13,archive_signal,snap:archive_signal:v20,session:2,20,True,False,True,v32-483793,paper lane,0.876931,True
+169,13,signal_orchard,snap:signal_orchard:v18,session:2,18,False,False,False,v32-474417,dusk road,0.821603,False
+170,13,orchard_riverbend,snap:orchard_riverbend:v17,session:2,17,True,False,False,v32-643724,market plank route,0.73179,True
+171,13,central_repair_ring,snap:central_repair_ring:v21,session:2,21,False,True,True,v32-654318,inner repair yard,0.743438,True
+172,13,riverbend_roofward,snap:riverbend_roofward:v21,session:2,21,False,False,False,v32-548054,river ford,0.94,False
+173,13,roofward_archive,snap:roofward_archive:v23,session:2,23,False,True,True,v32-532522,glass stair,0.924363,True
+174,13,archive_signal,snap:archive_signal:v21,session:2,21,True,False,True,v32-568252,stone kiosk path,0.891851,True
+175,13,signal_orchard,snap:signal_orchard:v19,session:2,19,True,False,False,v32-473887,dusk road,0.829643,True
+176,13,orchard_riverbend,snap:orchard_riverbend:v18,session:2,18,True,False,True,v32-508142,fen track,0.759533,True
+177,13,central_repair_ring,snap:central_repair_ring:v21,session:2,21,False,False,False,v32-654881,inner repair yard,0.740358,False
+178,13,riverbend_roofward,snap:riverbend_roofward:v22,session:2,22,True,False,True,v32-654794,orchard ridge detour,0.94,True
+179,13,roofward_archive,snap:roofward_archive:v24,session:2,24,False,True,True,v32-533032,glass stair,0.928163,True
+180,13,archive_signal,snap:archive_signal:v22,session:2,22,True,False,False,v32-486090,paper lane,0.918771,True
+181,13,signal_orchard,snap:signal_orchard:v20,session:2,20,True,False,True,v32-473465,dusk road,0.849683,True
+182,14,orchard_riverbend,snap:orchard_riverbend:v19,session:2,19,True,False,True,v32-515914,fen track,0.757773,True
+183,14,central_repair_ring,snap:central_repair_ring:v21,session:2,21,False,False,False,v32-654604,inner repair yard,0.749718,False
+184,14,riverbend_roofward,snap:riverbend_roofward:v23,session:2,23,True,False,True,v32-518422,river ford,0.94,True
+185,14,roofward_archive,snap:roofward_archive:v25,session:2,25,False,True,True,v32-533542,glass stair,0.932403,True
+186,14,archive_signal,snap:archive_signal:v23,session:2,23,False,True,True,v32-486472,paper lane,0.934131,True
+187,14,signal_orchard,snap:signal_orchard:v20,session:2,20,False,False,False,v32-474233,dusk road,0.846163,False
+188,14,orchard_riverbend,snap:orchard_riverbend:v20,session:2,20,True,False,True,v32-642566,market plank route,0.774013,True
+189,14,central_repair_ring,snap:central_repair_ring:v22,session:2,22,True,False,True,v32-656122,inner repair yard,0.747078,True
+190,14,riverbend_roofward,snap:riverbend_roofward:v23,session:2,23,False,False,False,v32-518422,river ford,0.94,False
+191,14,roofward_archive,snap:roofward_archive:v25,session:2,25,False,False,False,v32-532484,glass stair,0.930643,False
+192,14,archive_signal,snap:archive_signal:v24,session:2,24,True,True,True,v32-567257,stone kiosk path,0.94,True
+193,14,signal_orchard,snap:signal_orchard:v21,session:2,21,False,True,True,v32-473198,dusk road,0.848643,True
+194,14,orchard_riverbend,snap:orchard_riverbend:v21,session:2,21,True,False,True,v32-512851,fen track,0.802253,True
+195,14,central_repair_ring,snap:central_repair_ring:v22,session:2,22,False,False,False,v32-655707,inner repair yard,0.744438,False
+196,15,riverbend_roofward,snap:riverbend_roofward:v24,session:2,24,True,False,True,v32-518671,river ford,0.93692,True
+197,15,roofward_archive,snap:roofward_archive:v25,session:2,25,False,False,False,v32-533018,glass stair,0.938683,False
+198,15,archive_signal,snap:archive_signal:v25,session:2,25,True,False,True,v32-457539,paper lane,0.94,True
+199,15,signal_orchard,snap:signal_orchard:v22,session:2,22,False,True,True,v32-474078,dusk road,0.851563,True
+200,15,orchard_riverbend,snap:orchard_riverbend:v21,session:2,21,False,False,False,v32-512606,fen track,0.810293,False
+201,15,central_repair_ring,snap:central_repair_ring:v22,session:2,22,False,False,False,v32-655283,inner repair yard,0.742238,False
+202,15,riverbend_roofward,snap:riverbend_roofward:v25,session:2,25,True,False,True,v32-679928,orchard ridge detour,0.94,True
+203,15,roofward_archive,snap:roofward_archive:v26,session:2,26,True,False,True,v32-534848,glass stair,0.930723,True
+204,15,archive_signal,snap:archive_signal:v25,session:2,25,False,False,False,v32-457539,paper lane,0.94,False
+205,15,signal_orchard,snap:signal_orchard:v23,session:2,23,False,True,True,v32-473689,dusk road,0.854483,True
+206,15,orchard_riverbend,snap:orchard_riverbend:v22,session:2,22,True,False,True,v32-641278,market plank route,0.836333,True
+207,15,central_repair_ring,snap:central_repair_ring:v23,session:2,23,False,True,True,v32-654983,inner repair yard,0.746038,True
+208,15,riverbend_roofward,snap:riverbend_roofward:v26,session:2,26,True,False,True,v32-519169,river ford,0.94,True
+209,15,roofward_archive,snap:roofward_archive:v26,session:2,26,False,False,False,v32-533134,glass stair,0.938763,False
+210,16,archive_signal,snap:archive_signal:v26,session:3,26,True,False,False,v32-457780,paper lane,0.93824,True
+211,16,signal_orchard,snap:signal_orchard:v23,session:3,23,False,False,False,v32-474200,dusk road,0.863843,False
+212,16,orchard_riverbend,snap:orchard_riverbend:v23,session:3,23,True,True,True,v32-513880,fen track,0.856813,True
+213,16,central_repair_ring,snap:central_repair_ring:v24,session:3,24,False,True,True,v32-655523,inner repair yard,0.750278,True
+214,16,riverbend_roofward,snap:riverbend_roofward:v26,session:3,26,False,False,False,v32-519169,river ford,0.94,False
+215,16,roofward_archive,snap:roofward_archive:v26,session:3,26,False,False,False,v32-534714,glass stair,0.935243,False
+216,16,archive_signal,snap:archive_signal:v27,session:3,27,True,False,True,v32-561609,stone kiosk path,0.94,True
+217,16,signal_orchard,snap:signal_orchard:v24,session:3,24,True,False,True,v32-474439,dusk road,0.861203,True
+218,16,orchard_riverbend,snap:orchard_riverbend:v24,session:3,24,False,True,True,v32-514779,fen track,0.871293,True
+219,16,central_repair_ring,snap:central_repair_ring:v24,session:3,24,False,False,False,v32-655672,inner repair yard,0.748518,False
+220,16,riverbend_roofward,snap:riverbend_roofward:v27,session:3,27,True,False,False,v32-656089,orchard ridge detour,0.94,True
+221,16,roofward_archive,snap:roofward_archive:v27,session:3,27,False,True,True,v32-533645,glass stair,0.937723,True
+222,16,archive_signal,snap:archive_signal:v28,session:3,28,True,False,True,v32-458262,paper lane,0.94,True
+223,16,signal_orchard,snap:signal_orchard:v24,session:3,24,False,False,False,v32-472901,dusk road,0.858563,False
+224,17,orchard_riverbend,snap:orchard_riverbend:v25,session:3,25,True,False,True,v32-514907,fen track,0.868213,True
+225,17,central_repair_ring,snap:central_repair_ring:v25,session:3,25,False,True,True,v32-656486,inner repair yard,0.762558,True
+226,17,riverbend_roofward,snap:riverbend_roofward:v28,session:3,28,True,False,True,v32-519667,river ford,0.94,True
+227,17,roofward_archive,snap:roofward_archive:v28,session:3,28,False,True,True,v32-534551,glass stair,0.94,True
+228,17,archive_signal,snap:archive_signal:v28,session:3,28,False,False,False,v32-458262,paper lane,0.94,False
+229,17,signal_orchard,snap:signal_orchard:v24,session:3,24,False,False,False,v32-474822,dusk road,0.856363,False
+230,17,orchard_riverbend,snap:orchard_riverbend:v26,session:3,26,True,False,False,v32-642988,market plank route,0.883133,True
+231,17,central_repair_ring,snap:central_repair_ring:v26,session:3,26,True,True,True,v32-656754,inner repair yard,0.776598,True
+232,17,riverbend_roofward,snap:riverbend_roofward:v28,session:3,28,False,False,False,v32-519667,river ford,0.9338,False
+233,17,roofward_archive,snap:roofward_archive:v28,session:3,28,False,False,False,v32-504748,glass stair,0.93692,False
+234,17,archive_signal,snap:archive_signal:v29,session:3,29,True,False,True,v32-539425,stone kiosk path,0.94,True
+235,17,signal_orchard,snap:signal_orchard:v25,session:3,25,False,True,True,v32-474556,dusk road,0.860163,True
+236,17,orchard_riverbend,snap:orchard_riverbend:v27,session:3,27,True,False,True,v32-514873,fen track,0.910053,True
+237,17,central_repair_ring,snap:central_repair_ring:v27,session:3,27,True,True,True,v32-658283,inner repair yard,0.802638,True
+238,18,roofward_archive,snap:roofward_archive:v29,session:3,29,True,False,True,v32-527603,glass stair,0.93472,True
+239,18,archive_signal,snap:archive_signal:v30,session:3,30,True,False,True,v32-456573,paper lane,0.94,True
+240,18,signal_orchard,snap:signal_orchard:v26,session:3,26,True,False,False,v32-599054,river lantern loop,0.886203,True
+241,18,orchard_riverbend,snap:orchard_riverbend:v28,session:3,28,False,True,True,v32-514091,fen track,0.913853,True
+242,18,central_repair_ring,snap:central_repair_ring:v27,session:3,27,False,False,False,v32-656177,inner repair yard,0.811558,False
+243,18,riverbend_roofward,snap:riverbend_roofward:v29,session:3,29,True,False,True,v32-534959,river ford,0.94,True
+244,18,roofward_archive,snap:roofward_archive:v30,session:3,30,True,False,True,v32-599362,cool archive lane,0.94,True
+245,18,archive_signal,snap:archive_signal:v31,session:3,31,True,False,False,v32-456814,paper lane,0.93692,True
+246,18,signal_orchard,snap:signal_orchard:v26,session:3,26,False,False,False,v32-599449,river lantern loop,0.878243,False
+247,18,orchard_riverbend,snap:orchard_riverbend:v28,session:3,28,False,False,False,v32-515529,fen track,0.911653,False
+248,18,central_repair_ring,snap:central_repair_ring:v28,session:3,28,True,False,True,v32-626246,outer bell path,0.826478,True
+249,18,riverbend_roofward,snap:riverbend_roofward:v30,session:3,30,False,True,True,v32-517922,river ford,0.94,True
+250,18,roofward_archive,snap:roofward_archive:v31,session:3,31,True,False,False,v32-503270,glass stair,0.94,True
+251,18,archive_signal,snap:archive_signal:v31,session:3,31,False,False,False,v32-478922,paper lane,0.93384,False
+252,19,signal_orchard,snap:signal_orchard:v27,session:3,27,True,False,True,v32-600391,river lantern loop,0.874723,True
+253,19,orchard_riverbend,snap:orchard_riverbend:v28,session:3,28,False,False,False,v32-515007,fen track,0.921893,False
+254,19,central_repair_ring,snap:central_repair_ring:v29,session:3,29,True,False,True,v32-657825,inner repair yard,0.841838,True
+255,19,riverbend_roofward,snap:riverbend_roofward:v31,session:3,31,False,True,True,v32-518171,river ford,0.94,True
+256,19,roofward_archive,snap:roofward_archive:v31,session:3,31,False,False,False,v32-503270,glass stair,0.94,False
+257,19,archive_signal,snap:archive_signal:v31,session:3,31,False,False,False,v32-478669,paper lane,0.9312,False
+258,19,signal_orchard,snap:signal_orchard:v28,session:3,28,True,False,True,v32-475282,dusk road,0.889203,True
+259,19,orchard_riverbend,snap:orchard_riverbend:v29,session:3,29,True,False,True,v32-516176,fen track,0.920133,True
+260,19,central_repair_ring,snap:central_repair_ring:v29,session:3,29,False,False,False,v32-657399,inner repair yard,0.851198,False
+261,19,riverbend_roofward,snap:riverbend_roofward:v31,session:3,31,False,False,False,v32-518171,river ford,0.93648,False
+262,19,roofward_archive,snap:roofward_archive:v32,session:3,32,True,False,True,v32-576871,cool archive lane,0.94,True
+263,19,archive_signal,snap:archive_signal:v32,session:3,32,False,True,True,v32-470632,paper lane,0.93456,True
+264,19,signal_orchard,snap:signal_orchard:v28,session:3,28,False,False,False,v32-475145,dusk road,0.897683,False
+265,19,orchard_riverbend,snap:orchard_riverbend:v29,session:3,29,False,False,False,v32-514337,fen track,0.918373,False
+266,20,central_repair_ring,snap:central_repair_ring:v30,session:3,30,True,False,True,v32-655305,inner repair yard,0.848998,True
+267,20,riverbend_roofward,snap:riverbend_roofward:v31,session:3,31,False,False,False,v32-541058,river ford,0.94,False
+268,20,roofward_archive,snap:roofward_archive:v33,session:3,33,True,False,True,v32-503762,glass stair,0.94,True
+269,20,archive_signal,snap:archive_signal:v33,session:3,33,False,True,True,v32-479158,paper lane,0.93836,True
+270,20,signal_orchard,snap:signal_orchard:v28,session:3,28,False,False,False,v32-476561,dusk road,0.906603,False
+271,20,orchard_riverbend,snap:orchard_riverbend:v30,session:3,30,True,False,True,v32-514036,fen track,0.938413,True
+272,20,central_repair_ring,snap:central_repair_ring:v31,session:3,31,True,False,True,v32-665388,inner repair yard,0.838798,True
+273,20,riverbend_roofward,snap:riverbend_roofward:v32,session:3,32,True,False,True,v32-518420,river ford,0.93692,True
+274,20,roofward_archive,snap:roofward_archive:v33,session:3,33,False,False,False,v32-503762,glass stair,0.94,False
+275,20,archive_signal,snap:archive_signal:v33,session:3,33,False,False,False,v32-479412,paper lane,0.93616,False
+276,20,signal_orchard,snap:signal_orchard:v29,session:3,29,True,False,True,v32-599810,river lantern loop,0.921523,True
+277,20,orchard_riverbend,snap:orchard_riverbend:v31,session:3,31,False,True,True,v32-513883,fen track,0.94,True
+278,20,central_repair_ring,snap:central_repair_ring:v31,session:3,31,False,False,False,v32-664967,inner repair yard,0.848541,False
+279,20,riverbend_roofward,snap:riverbend_roofward:v32,session:3,32,False,False,False,v32-541171,river ford,0.93384,False
+280,21,roofward_archive,snap:roofward_archive:v34,session:3,34,True,False,False,v32-504008,glass stair,0.93648,True
+281,21,archive_signal,snap:archive_signal:v33,session:3,33,False,False,False,v32-478898,paper lane,0.94,False
+282,21,signal_orchard,snap:signal_orchard:v30,session:3,30,True,False,True,v32-472430,dusk road,0.936883,True
+283,21,orchard_riverbend,snap:orchard_riverbend:v32,session:3,32,False,True,True,v32-484955,fen track,0.94,True
+284,21,central_repair_ring,snap:central_repair_ring:v31,session:3,31,False,False,False,v32-663113,inner repair yard,0.858723,False
+285,21,riverbend_roofward,snap:riverbend_roofward:v32,session:3,32,False,False,False,v32-540910,river ford,0.9312,False
+286,21,roofward_archive,snap:roofward_archive:v35,session:3,35,True,False,True,v32-601331,cool archive lane,0.94,True
+287,21,archive_signal,snap:archive_signal:v34,session:3,34,True,False,True,v32-457537,paper lane,0.93824,True
+288,21,signal_orchard,snap:signal_orchard:v30,session:3,30,False,False,False,v32-474349,dusk road,0.94,False
+289,21,orchard_riverbend,snap:orchard_riverbend:v32,session:3,32,False,False,False,v32-484955,fen track,0.93648,False
+290,21,central_repair_ring,snap:central_repair_ring:v32,session:3,32,True,False,False,v32-625611,outer bell path,0.874906,True
+291,21,riverbend_roofward,snap:riverbend_roofward:v33,session:3,33,False,True,True,v32-532640,river ford,0.93456,True
+292,21,roofward_archive,snap:roofward_archive:v36,session:3,36,True,False,True,v32-504500,glass stair,0.94,True
+293,21,archive_signal,snap:archive_signal:v34,session:3,34,False,False,False,v32-479267,paper lane,0.93648,False
+294,22,signal_orchard,snap:signal_orchard:v31,session:3,31,True,False,True,v32-444879,dusk road,0.9378,True
+295,22,orchard_riverbend,snap:orchard_riverbend:v32,session:3,32,False,False,False,v32-507523,fen track,0.94,False
+296,22,central_repair_ring,snap:central_repair_ring:v33,session:3,33,True,False,True,v32-656353,inner repair yard,0.900946,True
+297,22,riverbend_roofward,snap:riverbend_roofward:v34,session:3,34,False,True,True,v32-541415,river ford,0.93836,True
+298,22,roofward_archive,snap:roofward_archive:v36,session:3,36,False,False,False,v32-504500,glass stair,0.94,False
+299,22,archive_signal,snap:archive_signal:v35,session:3,35,True,False,True,v32-480033,paper lane,0.94,True
+300,22,signal_orchard,snap:signal_orchard:v32,session:3,32,True,False,False,v32-584410,river lantern loop,0.94,True
+301,22,orchard_riverbend,snap:orchard_riverbend:v33,session:3,33,True,False,True,v32-485201,fen track,0.93692,True
+302,22,central_repair_ring,snap:central_repair_ring:v33,session:3,33,False,False,False,v32-655526,inner repair yard,0.908986,False
+303,22,riverbend_roofward,snap:riverbend_roofward:v34,session:3,34,False,False,False,v32-541677,river ford,0.93616,False
+304,22,roofward_archive,snap:roofward_archive:v37,session:3,37,True,False,True,v32-578131,cool archive lane,0.94,True
+305,22,archive_signal,snap:archive_signal:v36,session:3,36,False,True,True,v32-458019,paper lane,0.94,True
+306,22,signal_orchard,snap:signal_orchard:v33,session:3,33,True,False,True,v32-576096,river lantern loop,0.94,True
+307,22,orchard_riverbend,snap:orchard_riverbend:v33,session:3,33,False,False,False,v32-507635,fen track,0.93384,False
+308,23,central_repair_ring,snap:central_repair_ring:v34,session:3,34,True,False,True,v32-657476,inner repair yard,0.905466,True
+309,23,riverbend_roofward,snap:riverbend_roofward:v34,session:3,34,False,False,False,v32-541147,river ford,0.94,False
+310,23,roofward_archive,snap:roofward_archive:v38,session:3,38,True,False,False,v32-504992,glass stair,0.94,True
+311,23,archive_signal,snap:archive_signal:v37,session:3,37,False,True,True,v32-458260,paper lane,0.94,True
+312,23,signal_orchard,snap:signal_orchard:v34,session:3,34,True,False,True,v32-445599,dusk road,0.94,True
+313,23,orchard_riverbend,snap:orchard_riverbend:v33,session:3,33,False,False,False,v32-507378,fen track,0.9312,False
+314,23,central_repair_ring,snap:central_repair_ring:v35,session:3,35,True,False,True,v32-625994,outer bell path,0.919946,True
+315,23,riverbend_roofward,snap:riverbend_roofward:v35,session:3,35,True,False,False,v32-519167,river ford,0.93824,True
+316,23,roofward_archive,snap:roofward_archive:v38,session:3,38,False,False,False,v32-504992,glass stair,0.94,False
+317,23,archive_signal,snap:archive_signal:v37,session:3,37,False,False,False,v32-458260,paper lane,0.93648,False
+318,23,signal_orchard,snap:signal_orchard:v35,session:3,35,True,False,True,v32-569158,river lantern loop,0.94,True
+319,23,orchard_riverbend,snap:orchard_riverbend:v34,session:3,34,False,True,True,v32-499224,fen track,0.93456,True
+320,23,central_repair_ring,snap:central_repair_ring:v36,session:3,36,True,False,False,v32-657711,inner repair yard,0.94,True
+321,23,riverbend_roofward,snap:riverbend_roofward:v35,session:3,35,False,False,False,v32-541528,river ford,0.93648,False
+322,24,archive_signal,snap:archive_signal:v38,session:4,38,True,False,True,v32-480765,paper lane,0.93384,True
+323,24,signal_orchard,snap:signal_orchard:v36,session:4,36,True,False,True,v32-576843,river lantern loop,0.94,True
+324,24,orchard_riverbend,snap:orchard_riverbend:v35,session:4,35,True,False,True,v32-635542,market plank route,0.94,True
+325,24,central_repair_ring,snap:central_repair_ring:v37,session:4,37,False,True,True,v32-625283,inner repair yard,0.94,True
+326,24,riverbend_roofward,snap:riverbend_roofward:v36,session:4,36,False,True,True,v32-542318,river ford,0.94,True
+327,24,roofward_archive,snap:roofward_archive:v38,session:4,38,False,False,False,v32-504992,glass stair,0.93824,False
+328,24,archive_signal,snap:archive_signal:v39,session:4,39,True,False,True,v32-562497,stone kiosk path,0.94,True
+329,24,signal_orchard,snap:signal_orchard:v37,session:4,37,True,False,True,v32-577092,river lantern loop,0.936422,True
+330,24,orchard_riverbend,snap:orchard_riverbend:v36,session:4,36,True,False,False,v32-485939,fen track,0.94,True
+331,24,central_repair_ring,snap:central_repair_ring:v37,session:4,37,False,False,False,v32-625283,inner repair yard,0.93736,False
+332,24,riverbend_roofward,snap:riverbend_roofward:v37,session:4,37,True,True,True,v32-656346,orchard ridge detour,0.94,True
+333,24,roofward_archive,snap:roofward_archive:v39,session:4,39,False,True,True,v32-527454,glass stair,0.94,True
+334,24,archive_signal,snap:archive_signal:v40,session:4,40,True,False,True,v32-456812,paper lane,0.94,True
+335,24,signal_orchard,snap:signal_orchard:v37,session:4,37,False,False,False,v32-607467,river lantern loop,0.932845,False
+336,25,orchard_riverbend,snap:orchard_riverbend:v37,session:4,37,True,False,True,v32-486185,fen track,0.94,True
+337,25,central_repair_ring,snap:central_repair_ring:v37,session:4,37,False,False,False,v32-649191,inner repair yard,0.94,False
+338,25,riverbend_roofward,snap:riverbend_roofward:v38,session:4,38,True,False,True,v32-519914,river ford,0.94,True
+339,25,roofward_archive,snap:roofward_archive:v40,session:4,40,True,True,True,v32-503268,glass stair,0.94,True
+340,25,archive_signal,snap:archive_signal:v40,session:4,40,False,False,False,v32-456812,paper lane,0.94,False
+341,25,signal_orchard,snap:signal_orchard:v37,session:4,37,False,False,False,v32-608164,river lantern loop,0.929707,False
+342,25,orchard_riverbend,snap:orchard_riverbend:v38,session:4,38,True,False,True,v32-612701,market plank route,0.94,True
+343,25,central_repair_ring,snap:central_repair_ring:v38,session:4,38,True,False,True,v32-625541,inner repair yard,0.9378,True
+344,25,riverbend_roofward,snap:riverbend_roofward:v38,session:4,38,False,False,False,v32-519914,river ford,0.94,False
+345,25,roofward_archive,snap:roofward_archive:v41,session:4,41,True,True,True,v32-503514,glass stair,0.94,True
+346,25,archive_signal,snap:archive_signal:v41,session:4,41,True,False,True,v32-537939,stone kiosk path,0.94,True
+347,25,signal_orchard,snap:signal_orchard:v38,session:4,38,False,True,True,v32-608823,river lantern loop,0.93257,True
+348,25,orchard_riverbend,snap:orchard_riverbend:v38,session:4,38,False,False,False,v32-612701,market plank route,0.93204,False
+349,25,central_repair_ring,snap:central_repair_ring:v38,session:4,38,False,False,False,v32-641992,inner repair yard,0.9356,False
+350,26,riverbend_roofward,snap:riverbend_roofward:v39,session:4,39,True,False,False,v32-520163,river ford,0.93736,True
+351,26,roofward_archive,snap:roofward_archive:v41,session:4,41,False,False,False,v32-503514,glass stair,0.94,False
+352,26,archive_signal,snap:archive_signal:v42,session:4,42,True,True,True,v32-457294,paper lane,0.94,True
+353,26,signal_orchard,snap:signal_orchard:v39,session:4,39,False,True,True,v32-600756,river lantern loop,0.935872,True
+354,26,orchard_riverbend,snap:orchard_riverbend:v39,session:4,39,True,False,True,v32-507694,fen track,0.94,True
+355,26,central_repair_ring,snap:central_repair_ring:v38,session:4,38,False,False,False,v32-641430,inner repair yard,0.93384,False
+356,26,riverbend_roofward,snap:riverbend_roofward:v40,session:4,40,True,False,True,v32-678998,orchard ridge detour,0.94,True
+357,26,roofward_archive,snap:roofward_archive:v42,session:4,42,True,False,True,v32-503760,glass stair,0.93648,True
+358,26,archive_signal,snap:archive_signal:v43,session:4,43,False,True,True,v32-457535,paper lane,0.94,True
+359,26,signal_orchard,snap:signal_orchard:v39,session:4,39,False,False,False,v32-609075,river lantern loop,0.933174,False
+360,26,orchard_riverbend,snap:orchard_riverbend:v40,session:4,40,True,False,False,v32-610914,market plank route,0.94,True
+361,26,central_repair_ring,snap:central_repair_ring:v39,session:4,39,False,True,True,v32-649574,inner repair yard,0.93808,True
+362,26,riverbend_roofward,snap:riverbend_roofward:v41,session:4,41,True,False,True,v32-518418,river ford,0.94,True
+363,26,roofward_archive,snap:roofward_archive:v42,session:4,42,False,False,False,v32-526492,glass stair,0.93296,False
+364,27,archive_signal,snap:archive_signal:v44,session:4,44,True,False,True,v32-457776,paper lane,0.94,True
+365,27,signal_orchard,snap:signal_orchard:v40,session:4,40,True,True,True,v32-473315,dusk road,0.94,True
+366,27,orchard_riverbend,snap:orchard_riverbend:v41,session:4,41,True,False,True,v32-484953,fen track,0.94,True
+367,27,central_repair_ring,snap:central_repair_ring:v40,session:4,40,True,True,True,v32-647624,inner repair yard,0.94,True
+368,27,riverbend_roofward,snap:riverbend_roofward:v41,session:4,41,False,False,False,v32-518418,river ford,0.94,False
+369,27,roofward_archive,snap:roofward_archive:v42,session:4,42,False,False,False,v32-526362,glass stair,0.92988,False
+370,27,archive_signal,snap:archive_signal:v45,session:4,45,True,False,False,v32-538927,stone kiosk path,0.94,True
+371,27,signal_orchard,snap:signal_orchard:v41,session:4,41,True,True,True,v32-445117,dusk road,0.94,True
+372,27,orchard_riverbend,snap:orchard_riverbend:v41,session:4,41,False,False,False,v32-484953,fen track,0.94,False
+373,27,central_repair_ring,snap:central_repair_ring:v41,session:4,41,True,False,True,v32-623991,inner repair yard,0.94,True
+374,27,riverbend_roofward,snap:riverbend_roofward:v42,session:4,42,True,False,True,v32-525895,river ford,0.9298,True
+375,27,roofward_archive,snap:roofward_archive:v43,session:4,43,False,True,True,v32-527532,glass stair,0.9328,True
+376,27,archive_signal,snap:archive_signal:v46,session:4,46,True,False,True,v32-458258,paper lane,0.94,True
+377,27,signal_orchard,snap:signal_orchard:v42,session:4,42,False,True,True,v32-445357,dusk road,0.94,True
+378,28,orchard_riverbend,snap:orchard_riverbend:v42,session:4,42,True,True,True,v32-485199,fen track,0.94,True
+379,28,central_repair_ring,snap:central_repair_ring:v41,session:4,41,False,False,False,v32-623991,inner repair yard,0.94,False
+380,28,riverbend_roofward,snap:riverbend_roofward:v43,session:4,43,True,False,False,v32-672373,orchard ridge detour,0.94,True
+381,28,roofward_archive,snap:roofward_archive:v44,session:4,44,False,True,True,v32-519052,glass stair,0.93616,True
+382,28,archive_signal,snap:archive_signal:v46,session:4,46,False,False,False,v32-458258,paper lane,0.94,False
+383,28,signal_orchard,snap:signal_orchard:v42,session:4,42,False,False,False,v32-445357,dusk road,0.93824,False
+384,28,orchard_riverbend,snap:orchard_riverbend:v43,session:4,43,True,True,True,v32-611679,market plank route,0.94,True
+385,28,central_repair_ring,snap:central_repair_ring:v42,session:4,42,True,False,False,v32-624249,inner repair yard,0.93648,True
+386,28,riverbend_roofward,snap:riverbend_roofward:v44,session:4,44,True,False,True,v32-519165,river ford,0.94,True
+387,28,roofward_archive,snap:roofward_archive:v44,session:4,44,False,False,False,v32-526328,glass stair,0.93352,False
+388,28,archive_signal,snap:archive_signal:v47,session:4,47,True,False,True,v32-539421,stone kiosk path,0.94,True
+389,28,signal_orchard,snap:signal_orchard:v43,session:4,43,False,True,True,v32-467170,dusk road,0.94,True
+390,28,orchard_riverbend,snap:orchard_riverbend:v44,session:4,44,True,True,True,v32-485691,fen track,0.94,True
+391,28,central_repair_ring,snap:central_repair_ring:v42,session:4,42,False,False,False,v32-648430,inner repair yard,0.93296,False
+392,29,riverbend_roofward,snap:riverbend_roofward:v45,session:4,45,True,False,True,v32-519414,river ford,0.94,True
+393,29,roofward_archive,snap:roofward_archive:v44,session:4,44,False,False,False,v32-525931,glass stair,0.94,False
+394,29,archive_signal,snap:archive_signal:v48,session:4,48,True,False,True,v32-458740,paper lane,0.94,True
+395,29,signal_orchard,snap:signal_orchard:v44,session:4,44,True,True,True,v32-445837,dusk road,0.94,True
+396,29,orchard_riverbend,snap:orchard_riverbend:v44,session:4,44,False,False,False,v32-485691,fen track,0.94,False
+397,29,central_repair_ring,snap:central_repair_ring:v43,session:4,43,False,True,True,v32-648552,inner repair yard,0.93588,True
+398,29,riverbend_roofward,snap:riverbend_roofward:v46,session:4,46,True,False,True,v32-656344,orchard ridge detour,0.94,True
+399,29,roofward_archive,snap:roofward_archive:v45,session:4,45,True,False,True,v32-504498,glass stair,0.9378,True
+400,29,archive_signal,snap:archive_signal:v48,session:4,48,False,False,False,v32-458740,paper lane,0.94,False
+401,29,signal_orchard,snap:signal_orchard:v45,session:4,45,True,False,True,v32-446077,dusk road,0.94,True
+402,29,orchard_riverbend,snap:orchard_riverbend:v45,session:4,45,True,False,True,v32-612189,market plank route,0.94,True
+403,29,central_repair_ring,snap:central_repair_ring:v44,session:4,44,False,True,True,v32-649376,inner repair yard,0.9388,True
+404,29,riverbend_roofward,snap:riverbend_roofward:v47,session:4,47,True,False,True,v32-519912,river ford,0.94,True
+405,29,roofward_archive,snap:roofward_archive:v45,session:4,45,False,False,False,v32-519955,glass stair,0.9356,False
+406,30,signal_orchard,snap:signal_orchard:v46,session:4,46,True,False,True,v32-446317,dusk road,0.93692,True
+407,30,orchard_riverbend,snap:orchard_riverbend:v46,session:4,46,True,False,True,v32-486183,fen track,0.94,True
+408,30,central_repair_ring,snap:central_repair_ring:v45,session:4,45,True,False,True,v32-649358,inner repair yard,0.9286,True
+409,30,riverbend_roofward,snap:riverbend_roofward:v48,session:4,48,False,True,True,v32-520161,river ford,0.94,True
+410,30,roofward_archive,snap:roofward_archive:v45,session:4,45,False,False,False,v32-519429,glass stair,0.92764,False
+411,30,archive_signal,snap:archive_signal:v48,session:4,48,False,False,False,v32-458740,paper lane,0.9378,False
+412,30,signal_orchard,snap:signal_orchard:v47,session:4,47,True,False,True,v32-593312,river lantern loop,0.94,True
+413,30,orchard_riverbend,snap:orchard_riverbend:v47,session:4,47,True,False,True,v32-486429,fen track,0.94,True
+414,30,central_repair_ring,snap:central_repair_ring:v45,session:4,45,False,False,False,v32-648937,inner repair yard,0.938342,False
+415,30,riverbend_roofward,snap:riverbend_roofward:v48,session:4,48,False,False,False,v32-520161,river ford,0.93692,False
+416,30,roofward_archive,snap:roofward_archive:v46,session:4,46,True,False,True,v32-601560,cool archive lane,0.94,True
+417,30,archive_signal,snap:archive_signal:v49,session:4,49,False,True,True,v32-474116,paper lane,0.94,True
+418,30,signal_orchard,snap:signal_orchard:v48,session:4,48,True,False,True,v32-446797,dusk road,0.94,True
+419,30,orchard_riverbend,snap:orchard_riverbend:v48,session:4,48,True,False,True,v32-486675,fen track,0.94,True
+420,31,central_repair_ring,snap:central_repair_ring:v46,session:4,46,True,False,False,v32-664543,inner repair yard,0.936525,True
+421,31,riverbend_roofward,snap:riverbend_roofward:v48,session:4,48,False,False,False,v32-542933,river ford,0.94,False
+422,31,roofward_archive,snap:roofward_archive:v47,session:4,47,True,False,True,v32-504990,glass stair,0.94,True
+423,31,archive_signal,snap:archive_signal:v50,session:4,50,False,True,True,v32-457051,paper lane,0.94,True
+424,31,signal_orchard,snap:signal_orchard:v48,session:4,48,False,False,False,v32-446797,dusk road,0.94,False
+425,31,orchard_riverbend,snap:orchard_riverbend:v48,session:4,48,False,False,False,v32-486675,fen track,0.93648,False
+426,31,central_repair_ring,snap:central_repair_ring:v47,session:4,47,True,False,True,v32-626759,outer bell path,0.94,True
+427,31,riverbend_roofward,snap:riverbend_roofward:v49,session:4,49,True,False,True,v32-520410,river ford,0.93736,True
+428,31,roofward_archive,snap:roofward_archive:v47,session:4,47,False,False,False,v32-504990,glass stair,0.94,False
+429,31,archive_signal,snap:archive_signal:v50,session:4,50,False,False,False,v32-457051,paper lane,0.93824,False
+430,31,signal_orchard,snap:signal_orchard:v49,session:4,49,True,False,False,v32-570401,river lantern loop,0.94,True
+431,31,orchard_riverbend,snap:orchard_riverbend:v49,session:4,49,False,True,True,v32-509513,fen track,0.93896,True
+432,31,central_repair_ring,snap:central_repair_ring:v48,session:4,48,True,False,True,v32-625797,inner repair yard,0.94,True
+433,31,riverbend_roofward,snap:riverbend_roofward:v49,session:4,49,False,False,False,v32-543055,river ford,0.93472,False
+434,32,roofward_archive,snap:roofward_archive:v48,session:5,48,True,False,True,v32-505236,glass stair,0.93692,True
+435,32,archive_signal,snap:archive_signal:v50,session:5,50,False,False,False,v32-478775,paper lane,0.93028,False
+436,32,signal_orchard,snap:signal_orchard:v50,session:5,50,True,False,True,v32-445115,dusk road,0.94,True
+437,32,orchard_riverbend,snap:orchard_riverbend:v50,session:5,50,False,True,True,v32-508170,fen track,0.94,True
+438,32,central_repair_ring,snap:central_repair_ring:v48,session:5,48,False,False,False,v32-625797,inner repair yard,0.94,False
+439,32,riverbend_roofward,snap:riverbend_roofward:v49,session:5,49,False,False,False,v32-542655,river ford,0.93252,False
+440,32,roofward_archive,snap:roofward_archive:v49,session:5,49,True,False,False,v32-602460,cool archive lane,0.94,True
+441,32,archive_signal,snap:archive_signal:v51,session:5,51,True,False,True,v32-478515,paper lane,0.93832,True
+442,32,signal_orchard,snap:signal_orchard:v50,session:5,50,False,False,False,v32-445115,dusk road,0.94,False
+443,32,orchard_riverbend,snap:orchard_riverbend:v50,session:5,50,False,False,False,v32-484951,fen track,0.93692,False
+444,32,central_repair_ring,snap:central_repair_ring:v49,session:5,49,True,False,True,v32-596128,outer bell path,0.94,True
+445,32,riverbend_roofward,snap:riverbend_roofward:v50,session:5,50,False,True,True,v32-540107,river ford,0.93632,True
+446,32,roofward_archive,snap:roofward_archive:v50,session:5,50,True,False,True,v32-503512,glass stair,0.94,True
+447,32,archive_signal,snap:archive_signal:v52,session:5,52,True,False,True,v32-479132,paper lane,0.94,True
+448,33,signal_orchard,snap:signal_orchard:v51,session:5,51,True,False,True,v32-445355,dusk road,0.93824,True
+449,33,orchard_riverbend,snap:orchard_riverbend:v50,session:5,50,False,False,False,v32-507382,fen track,0.94,False
+450,33,central_repair_ring,snap:central_repair_ring:v50,session:5,50,True,False,False,v32-623989,inner repair yard,0.94,True
+451,33,riverbend_roofward,snap:riverbend_roofward:v51,session:5,51,False,True,True,v32-540621,river ford,0.94,True
+452,33,roofward_archive,snap:roofward_archive:v50,session:5,50,False,False,False,v32-503512,glass stair,0.94,False
+453,33,archive_signal,snap:archive_signal:v52,session:5,52,False,False,False,v32-457533,paper lane,0.93648,False
+454,33,signal_orchard,snap:signal_orchard:v52,session:5,52,True,False,True,v32-591891,river lantern loop,0.94,True
+455,33,orchard_riverbend,snap:orchard_riverbend:v51,session:5,51,True,False,False,v32-485197,fen track,0.93736,True
+456,33,central_repair_ring,snap:central_repair_ring:v50,session:5,50,False,False,False,v32-623989,inner repair yard,0.94,False
+457,33,riverbend_roofward,snap:riverbend_roofward:v51,session:5,51,False,False,False,v32-518665,river ford,0.93824,False
+458,33,roofward_archive,snap:roofward_archive:v51,session:5,51,True,False,True,v32-577119,cool archive lane,0.94,True
+459,33,archive_signal,snap:archive_signal:v53,session:5,53,False,True,True,v32-480029,paper lane,0.93896,True
+460,33,signal_orchard,snap:signal_orchard:v53,session:5,53,True,False,False,v32-445835,dusk road,0.94,True
+461,33,orchard_riverbend,snap:orchard_riverbend:v51,session:5,51,False,False,False,v32-507503,fen track,0.93472,False
+462,34,central_repair_ring,snap:central_repair_ring:v51,session:5,51,True,False,True,v32-624247,inner repair yard,0.93692,True
+463,34,riverbend_roofward,snap:riverbend_roofward:v51,session:5,51,False,False,False,v32-541020,river ford,0.94,False
+464,34,roofward_archive,snap:roofward_archive:v52,session:5,52,True,False,True,v32-504004,glass stair,0.94,True
+465,34,archive_signal,snap:archive_signal:v54,session:5,54,False,True,True,v32-480914,paper lane,0.94,True
+466,34,signal_orchard,snap:signal_orchard:v53,session:5,53,False,False,False,v32-445835,dusk road,0.94,False
+467,34,orchard_riverbend,snap:orchard_riverbend:v51,session:5,51,False,False,False,v32-507109,fen track,0.93252,False
+468,34,central_repair_ring,snap:central_repair_ring:v52,session:5,52,True,False,True,v32-618307,outer bell path,0.94,True
+469,34,riverbend_roofward,snap:riverbend_roofward:v52,session:5,52,True,False,True,v32-518914,river ford,0.94,True
+470,34,roofward_archive,snap:roofward_archive:v52,session:5,52,False,False,False,v32-504004,glass stair,0.94,False
+471,34,archive_signal,snap:archive_signal:v54,session:5,54,False,False,False,v32-458015,paper lane,0.93692,False
+472,34,signal_orchard,snap:signal_orchard:v54,session:5,54,True,False,True,v32-569403,river lantern loop,0.94,True
+473,34,orchard_riverbend,snap:orchard_riverbend:v52,session:5,52,False,True,True,v32-506836,fen track,0.93632,True
+474,34,central_repair_ring,snap:central_repair_ring:v53,session:5,53,True,False,True,v32-624763,inner repair yard,0.94,True
+475,34,riverbend_roofward,snap:riverbend_roofward:v52,session:5,52,False,False,False,v32-518914,river ford,0.94,False
+476,35,roofward_archive,snap:roofward_archive:v53,session:5,53,True,False,True,v32-504250,glass stair,0.93824,True
+477,35,archive_signal,snap:archive_signal:v54,session:5,54,False,False,False,v32-480138,paper lane,0.94,False
+478,35,signal_orchard,snap:signal_orchard:v55,session:5,55,True,False,True,v32-446315,dusk road,0.94,True
+479,35,orchard_riverbend,snap:orchard_riverbend:v53,session:5,53,False,True,True,v32-507343,fen track,0.94,True
+480,35,central_repair_ring,snap:central_repair_ring:v53,session:5,53,False,False,False,v32-624763,inner repair yard,0.94,False
+481,35,riverbend_roofward,snap:riverbend_roofward:v52,session:5,52,False,False,False,v32-518914,river ford,0.93648,False
+482,35,roofward_archive,snap:roofward_archive:v54,session:5,54,True,False,True,v32-601024,cool archive lane,0.94,True
+483,35,archive_signal,snap:archive_signal:v55,session:5,55,True,False,True,v32-458256,paper lane,0.93736,True
+484,35,signal_orchard,snap:signal_orchard:v55,session:5,55,False,False,False,v32-446315,dusk road,0.94,False
+485,35,orchard_riverbend,snap:orchard_riverbend:v53,session:5,53,False,False,False,v32-485689,fen track,0.93824,False
+486,35,central_repair_ring,snap:central_repair_ring:v54,session:5,54,True,False,True,v32-595102,outer bell path,0.94,True
+487,35,riverbend_roofward,snap:riverbend_roofward:v53,session:5,53,False,True,True,v32-542062,river ford,0.93896,True
+488,35,roofward_archive,snap:roofward_archive:v55,session:5,55,True,False,True,v32-504742,glass stair,0.94,True
+489,35,archive_signal,snap:archive_signal:v55,session:5,55,False,False,False,v32-480256,paper lane,0.93472,False
+490,36,orchard_riverbend,snap:orchard_riverbend:v54,session:5,54,True,False,False,v32-507985,fen track,0.93472,True
+491,36,central_repair_ring,snap:central_repair_ring:v55,session:5,55,True,False,True,v32-625279,inner repair yard,0.94,True
+492,36,riverbend_roofward,snap:riverbend_roofward:v54,session:5,54,True,True,True,v32-681306,orchard ridge detour,0.94,True
+493,36,roofward_archive,snap:roofward_archive:v56,session:5,56,False,True,True,v32-504988,glass stair,0.94,True
+494,36,archive_signal,snap:archive_signal:v55,session:5,55,False,False,False,v32-479868,paper lane,0.94,False
+495,36,signal_orchard,snap:signal_orchard:v55,session:5,55,False,False,False,v32-446315,dusk road,0.93736,False
+496,36,orchard_riverbend,snap:orchard_riverbend:v55,session:5,55,True,False,True,v32-635770,market plank route,0.94,True
+497,36,central_repair_ring,snap:central_repair_ring:v56,session:5,56,True,False,True,v32-625537,inner repair yard,0.93824,True
+498,36,riverbend_roofward,snap:riverbend_roofward:v55,session:5,55,True,True,True,v32-519661,river ford,0.94,True
+499,36,roofward_archive,snap:roofward_archive:v56,session:5,56,False,False,False,v32-504988,glass stair,0.93648,False
+500,36,archive_signal,snap:archive_signal:v56,session:5,56,True,False,False,v32-539419,stone kiosk path,0.94,True
+501,36,signal_orchard,snap:signal_orchard:v56,session:5,56,False,True,True,v32-468399,dusk road,0.94,True
+502,36,orchard_riverbend,snap:orchard_riverbend:v56,session:5,56,True,False,True,v32-486427,fen track,0.94,True
+503,36,central_repair_ring,snap:central_repair_ring:v56,session:5,56,False,False,False,v32-649163,inner repair yard,0.93648,False
+504,37,riverbend_roofward,snap:riverbend_roofward:v56,session:5,56,True,False,True,v32-519910,river ford,0.9378,True
+505,37,roofward_archive,snap:roofward_archive:v57,session:5,57,False,True,True,v32-527984,glass stair,0.94,True
+506,37,archive_signal,snap:archive_signal:v57,session:5,57,True,False,True,v32-458738,paper lane,0.94,True
+507,37,signal_orchard,snap:signal_orchard:v57,session:5,57,False,True,True,v32-446795,dusk road,0.94,True
+508,37,orchard_riverbend,snap:orchard_riverbend:v56,session:5,56,False,False,False,v32-486427,fen track,0.94,False
+509,37,central_repair_ring,snap:central_repair_ring:v57,session:5,57,True,False,True,v32-649994,inner repair yard,0.94,True
+510,37,riverbend_roofward,snap:riverbend_roofward:v57,session:5,57,True,False,False,v32-543064,river ford,0.9276,True
+511,37,roofward_archive,snap:roofward_archive:v58,session:5,58,True,True,True,v32-505480,glass stair,0.94,True
+512,37,archive_signal,snap:archive_signal:v57,session:5,57,False,False,False,v32-458738,paper lane,0.94,False
+513,37,signal_orchard,snap:signal_orchard:v57,session:5,57,False,False,False,v32-446795,dusk road,0.9378,False
+514,37,orchard_riverbend,snap:orchard_riverbend:v57,session:5,57,True,False,True,v32-612952,market plank route,0.94,True
+515,37,central_repair_ring,snap:central_repair_ring:v58,session:5,58,False,True,True,v32-626053,inner repair yard,0.94,True
+516,37,riverbend_roofward,snap:riverbend_roofward:v57,session:5,57,False,False,False,v32-542667,river ford,0.937342,False
+517,37,roofward_archive,snap:roofward_archive:v59,session:5,59,False,True,True,v32-505726,glass stair,0.94,True
+518,38,archive_signal,snap:archive_signal:v58,session:5,58,True,True,True,v32-458979,paper lane,0.94,True
+519,38,signal_orchard,snap:signal_orchard:v57,session:5,57,False,False,False,v32-461818,dusk road,0.94,False
+520,38,orchard_riverbend,snap:orchard_riverbend:v58,session:5,58,True,False,False,v32-486919,fen track,0.94,True
+521,38,central_repair_ring,snap:central_repair_ring:v59,session:5,59,False,True,True,v32-626311,inner repair yard,0.94,True
+522,38,riverbend_roofward,snap:riverbend_roofward:v57,session:5,57,False,False,False,v32-557217,river ford,0.931525,False
+523,38,roofward_archive,snap:roofward_archive:v59,session:5,59,False,False,False,v32-505726,glass stair,0.93736,False
+524,38,archive_signal,snap:archive_signal:v59,session:5,59,True,True,True,v32-540160,stone kiosk path,0.94,True
+525,38,signal_orchard,snap:signal_orchard:v58,session:5,58,True,False,False,v32-447035,dusk road,0.93824,True
+526,38,orchard_riverbend,snap:orchard_riverbend:v58,session:5,58,False,False,False,v32-486919,fen track,0.94,False
+527,38,central_repair_ring,snap:central_repair_ring:v59,session:5,59,False,False,False,v32-626311,inner repair yard,0.93648,False
+528,38,riverbend_roofward,snap:riverbend_roofward:v58,session:5,58,True,False,True,v32-688396,orchard ridge detour,0.94,True
+529,38,roofward_archive,snap:roofward_archive:v60,session:5,60,False,True,True,v32-526221,glass stair,0.94,True
+530,38,archive_signal,snap:archive_signal:v60,session:5,60,True,True,True,v32-457290,paper lane,0.94,True
+531,38,signal_orchard,snap:signal_orchard:v58,session:5,58,False,False,False,v32-468626,dusk road,0.93648,False
+532,39,orchard_riverbend,snap:orchard_riverbend:v59,session:5,59,True,False,True,v32-487165,fen track,0.9378,True
+533,39,central_repair_ring,snap:central_repair_ring:v59,session:5,59,False,False,False,v32-650516,inner repair yard,0.9294,False
+534,39,riverbend_roofward,snap:riverbend_roofward:v59,session:5,59,True,False,True,v32-520657,river ford,0.94,True
+535,39,roofward_archive,snap:roofward_archive:v61,session:5,61,False,True,True,v32-504002,glass stair,0.94,True
+536,39,archive_signal,snap:archive_signal:v60,session:5,60,False,False,False,v32-457290,paper lane,0.94,False
+537,39,signal_orchard,snap:signal_orchard:v59,session:5,59,True,True,True,v32-469387,dusk road,0.94,True
+538,39,orchard_riverbend,snap:orchard_riverbend:v60,session:5,60,True,False,True,v32-627751,market plank route,0.94,True
+539,39,central_repair_ring,snap:central_repair_ring:v60,session:5,60,True,False,True,v32-640263,inner repair yard,0.92632,True
+540,39,riverbend_roofward,snap:riverbend_roofward:v59,session:5,59,False,False,False,v32-520657,river ford,0.94,False
+541,39,roofward_archive,snap:roofward_archive:v61,session:5,61,False,False,False,v32-504002,glass stair,0.9378,False
+542,39,archive_signal,snap:archive_signal:v61,session:5,61,True,False,True,v32-538429,stone kiosk path,0.94,True
+543,39,signal_orchard,snap:signal_orchard:v60,session:5,60,False,True,True,v32-445353,dusk road,0.94,True
+544,39,orchard_riverbend,snap:orchard_riverbend:v61,session:5,61,True,False,True,v32-619267,market plank route,0.94,True
+545,39,central_repair_ring,snap:central_repair_ring:v60,session:5,60,False,False,False,v32-647294,inner repair yard,0.92324,False
+546,40,riverbend_roofward,snap:riverbend_roofward:v60,session:6,60,True,False,True,v32-518663,river ford,0.93648,True
+547,40,roofward_archive,snap:roofward_archive:v61,session:6,61,False,False,False,v32-519455,glass stair,0.94,False
+548,40,archive_signal,snap:archive_signal:v62,session:6,62,True,False,True,v32-457772,paper lane,0.94,True
+549,40,signal_orchard,snap:signal_orchard:v61,session:6,61,False,True,True,v32-445593,dusk road,0.94,True
+550,40,orchard_riverbend,snap:orchard_riverbend:v62,session:6,62,True,True,True,v32-485687,fen track,0.94,True
+551,40,central_repair_ring,snap:central_repair_ring:v60,session:6,60,False,False,False,v32-647017,inner repair yard,0.9206,False
+552,40,riverbend_roofward,snap:riverbend_roofward:v61,session:6,61,True,False,True,v32-680069,orchard ridge detour,0.94,True
+553,40,roofward_archive,snap:roofward_archive:v62,session:6,62,True,False,True,v32-504248,glass stair,0.93824,True
+554,40,archive_signal,snap:archive_signal:v62,session:6,62,False,False,False,v32-457772,paper lane,0.94,False
+555,40,signal_orchard,snap:signal_orchard:v61,session:6,61,False,False,False,v32-445593,dusk road,0.93648,False
+556,40,orchard_riverbend,snap:orchard_riverbend:v63,session:6,63,True,True,True,v32-612185,market plank route,0.94,True
+557,40,central_repair_ring,snap:central_repair_ring:v61,session:6,61,False,True,True,v32-639545,inner repair yard,0.92396,True
+558,40,riverbend_roofward,snap:riverbend_roofward:v62,session:6,62,True,False,True,v32-519161,river ford,0.94,True
+559,40,roofward_archive,snap:roofward_archive:v62,session:6,62,False,False,False,v32-526452,glass stair,0.93648,False
+560,41,archive_signal,snap:archive_signal:v63,session:6,63,True,False,False,v32-458013,paper lane,0.9378,True
+561,41,signal_orchard,snap:signal_orchard:v61,session:6,61,False,False,False,v32-467684,dusk road,0.94,False
+562,41,orchard_riverbend,snap:orchard_riverbend:v64,session:6,64,True,False,True,v32-486179,fen track,0.94,True
+563,41,central_repair_ring,snap:central_repair_ring:v62,session:6,62,False,True,True,v32-648810,inner repair yard,0.92776,True
+564,41,riverbend_roofward,snap:riverbend_roofward:v62,session:6,62,False,False,False,v32-519161,river ford,0.94,False
+565,41,roofward_archive,snap:roofward_archive:v63,session:6,63,True,False,False,v32-527235,glass stair,0.94,True
+566,41,archive_signal,snap:archive_signal:v64,session:6,64,True,False,True,v32-554959,stone kiosk path,0.94,True
+567,41,signal_orchard,snap:signal_orchard:v62,session:6,62,True,False,True,v32-445833,dusk road,0.93692,True
+568,41,orchard_riverbend,snap:orchard_riverbend:v64,session:6,64,False,False,False,v32-486179,fen track,0.94,False
+569,41,central_repair_ring,snap:central_repair_ring:v63,session:6,63,False,True,True,v32-649349,inner repair yard,0.93156,True
+570,41,riverbend_roofward,snap:riverbend_roofward:v63,session:6,63,True,False,False,v32-656081,orchard ridge detour,0.94,True
+571,41,roofward_archive,snap:roofward_archive:v64,session:6,64,False,True,True,v32-504740,glass stair,0.94,True
+572,41,archive_signal,snap:archive_signal:v65,session:6,65,True,False,True,v32-458495,paper lane,0.94,True
+573,41,signal_orchard,snap:signal_orchard:v62,session:6,62,False,False,False,v32-467793,dusk road,0.93384,False
+574,42,central_repair_ring,snap:central_repair_ring:v64,session:6,64,True,False,True,v32-648627,inner repair yard,0.9236,True
+575,42,riverbend_roofward,snap:riverbend_roofward:v64,session:6,64,True,False,False,v32-519659,river ford,0.94,True
+576,42,roofward_archive,snap:roofward_archive:v65,session:6,65,True,False,True,v32-578377,cool archive lane,0.94,True
+577,42,archive_signal,snap:archive_signal:v66,session:6,66,True,True,True,v32-458736,paper lane,0.94,True
+578,42,signal_orchard,snap:signal_orchard:v62,session:6,62,False,False,False,v32-467542,dusk road,0.94,False
+579,42,orchard_riverbend,snap:orchard_riverbend:v64,session:6,64,False,False,False,v32-486179,fen track,0.93692,False
+580,42,central_repair_ring,snap:central_repair_ring:v65,session:6,65,True,False,False,v32-610876,outer bell path,0.93364,True
+581,42,riverbend_roofward,snap:riverbend_roofward:v65,session:6,65,True,False,True,v32-519908,river ford,0.9378,True
+582,42,roofward_archive,snap:roofward_archive:v66,session:6,66,True,False,True,v32-505232,glass stair,0.94,True
+583,42,archive_signal,snap:archive_signal:v67,session:6,67,True,False,True,v32-458977,paper lane,0.94,True
+584,42,signal_orchard,snap:signal_orchard:v63,session:6,63,True,False,True,v32-569401,river lantern loop,0.94,True
+585,42,orchard_riverbend,snap:orchard_riverbend:v65,session:6,65,False,True,True,v32-508874,fen track,0.93984,True
+586,42,central_repair_ring,snap:central_repair_ring:v66,session:6,66,True,False,True,v32-649286,inner repair yard,0.94,True
+587,42,riverbend_roofward,snap:riverbend_roofward:v65,session:6,65,False,False,False,v32-535479,river ford,0.9356,False
+588,43,roofward_archive,snap:roofward_archive:v67,session:6,67,True,False,True,v32-505478,glass stair,0.93736,True
+589,43,archive_signal,snap:archive_signal:v67,session:6,67,False,False,False,v32-458977,paper lane,0.94,False
+590,43,signal_orchard,snap:signal_orchard:v64,session:6,64,True,False,False,v32-446313,dusk road,0.94,True
+591,43,orchard_riverbend,snap:orchard_riverbend:v66,session:6,66,False,True,True,v32-509646,fen track,0.94,True
+592,43,central_repair_ring,snap:central_repair_ring:v66,session:6,66,False,False,False,v32-625793,inner repair yard,0.94,False
+593,43,riverbend_roofward,snap:riverbend_roofward:v65,session:6,65,False,False,False,v32-534949,river ford,0.93384,False
+594,43,roofward_archive,snap:roofward_archive:v68,session:6,68,True,False,True,v32-602576,cool archive lane,0.94,True
+595,43,archive_signal,snap:archive_signal:v68,session:6,68,True,False,False,v32-459218,paper lane,0.93648,True
+596,43,signal_orchard,snap:signal_orchard:v64,session:6,64,False,False,False,v32-446313,dusk road,0.94,False
+597,43,orchard_riverbend,snap:orchard_riverbend:v66,session:6,66,False,False,False,v32-486671,fen track,0.93736,False
+598,43,central_repair_ring,snap:central_repair_ring:v67,session:6,67,True,False,True,v32-596124,outer bell path,0.94,True
+599,43,riverbend_roofward,snap:riverbend_roofward:v66,session:6,66,False,True,True,v32-542668,river ford,0.93808,True
+600,43,roofward_archive,snap:roofward_archive:v69,session:6,69,True,False,False,v32-505970,glass stair,0.94,True
+601,43,archive_signal,snap:archive_signal:v68,session:6,68,False,False,False,v32-481491,paper lane,0.93296,False
+602,44,signal_orchard,snap:signal_orchard:v65,session:6,65,True,False,True,v32-446553,dusk road,0.94,True
+603,44,orchard_riverbend,snap:orchard_riverbend:v66,session:6,66,False,False,False,v32-508995,fen track,0.94,False
+604,44,central_repair_ring,snap:central_repair_ring:v68,session:6,68,True,False,True,v32-626309,inner repair yard,0.94,True
+605,44,riverbend_roofward,snap:riverbend_roofward:v67,session:6,67,True,True,True,v32-543052,river ford,0.94,True
+606,44,roofward_archive,snap:roofward_archive:v69,session:6,69,False,False,False,v32-505970,glass stair,0.94,False
+607,44,archive_signal,snap:archive_signal:v68,session:6,68,False,False,False,v32-481364,paper lane,0.92988,False
+608,44,signal_orchard,snap:signal_orchard:v66,session:6,66,True,False,True,v32-570148,river lantern loop,0.94,True
+609,44,orchard_riverbend,snap:orchard_riverbend:v67,session:6,67,True,False,True,v32-486917,fen track,0.9378,True
+610,44,central_repair_ring,snap:central_repair_ring:v68,session:6,68,False,False,False,v32-626309,inner repair yard,0.94,False
+611,44,riverbend_roofward,snap:riverbend_roofward:v68,session:6,68,True,False,True,v32-520655,river ford,0.94,True
+612,44,roofward_archive,snap:roofward_archive:v70,session:6,70,True,False,True,v32-511176,glass stair,0.9298,True
+613,44,archive_signal,snap:archive_signal:v69,session:6,69,False,True,True,v32-482508,paper lane,0.9328,True
+614,44,signal_orchard,snap:signal_orchard:v67,session:6,67,True,False,True,v32-447033,dusk road,0.94,True
+615,44,orchard_riverbend,snap:orchard_riverbend:v67,session:6,67,False,False,False,v32-502272,fen track,0.9356,False
+616,45,central_repair_ring,snap:central_repair_ring:v69,session:6,69,True,False,True,v32-626567,inner repair yard,0.93736,True
+617,45,riverbend_roofward,snap:riverbend_roofward:v68,session:6,68,False,False,False,v32-520655,river ford,0.94,False
+618,45,roofward_archive,snap:roofward_archive:v71,session:6,71,True,False,True,v32-593872,cool archive lane,0.94,True
+619,45,archive_signal,snap:archive_signal:v70,session:6,70,False,True,True,v32-472012,paper lane,0.93616,True
+620,45,signal_orchard,snap:signal_orchard:v67,session:6,67,False,False,False,v32-447033,dusk road,0.94,False
+621,45,orchard_riverbend,snap:orchard_riverbend:v67,session:6,67,False,False,False,v32-501750,fen track,0.93384,False
+622,45,central_repair_ring,snap:central_repair_ring:v70,session:6,70,True,False,True,v32-618167,outer bell path,0.94,True
+623,45,riverbend_roofward,snap:riverbend_roofward:v69,session:6,69,True,False,True,v32-520904,river ford,0.93648,True
+624,45,roofward_archive,snap:roofward_archive:v72,session:6,72,True,False,True,v32-504492,glass stair,0.94,True
+625,45,archive_signal,snap:archive_signal:v70,session:6,70,False,False,False,v32-479134,paper lane,0.93352,False
+626,45,signal_orchard,snap:signal_orchard:v68,session:6,68,True,False,True,v32-570646,river lantern loop,0.94,True
+627,45,orchard_riverbend,snap:orchard_riverbend:v68,session:6,68,False,True,True,v32-509364,fen track,0.93808,True
+628,45,central_repair_ring,snap:central_repair_ring:v71,session:6,71,True,False,True,v32-624759,inner repair yard,0.94,True
+629,45,riverbend_roofward,snap:riverbend_roofward:v69,session:6,69,False,False,False,v32-543824,river ford,0.93296,False
+630,46,roofward_archive,snap:roofward_archive:v73,session:6,73,True,False,False,v32-504738,glass stair,0.94,True
+631,46,archive_signal,snap:archive_signal:v70,session:6,70,False,False,False,v32-478746,paper lane,0.94,False
+632,46,signal_orchard,snap:signal_orchard:v69,session:6,69,True,False,True,v32-447513,dusk road,0.94,True
+633,46,orchard_riverbend,snap:orchard_riverbend:v69,session:6,69,True,True,True,v32-509743,fen track,0.94,True
+634,46,central_repair_ring,snap:central_repair_ring:v71,session:6,71,False,False,False,v32-624759,inner repair yard,0.94,False
+635,46,riverbend_roofward,snap:riverbend_roofward:v69,session:6,69,False,False,False,v32-543693,river ford,0.92988,False
+636,46,roofward_archive,snap:roofward_archive:v74,session:6,74,True,False,True,v32-578375,cool archive lane,0.94,True
+637,46,archive_signal,snap:archive_signal:v71,session:6,71,True,False,True,v32-457770,paper lane,0.9378,True
+638,46,signal_orchard,snap:signal_orchard:v69,session:6,69,False,False,False,v32-447513,dusk road,0.93292,False
+639,46,orchard_riverbend,snap:orchard_riverbend:v70,session:6,70,True,False,True,v32-485439,fen track,0.94,True
+640,46,central_repair_ring,snap:central_repair_ring:v72,session:6,72,True,False,False,v32-595098,outer bell path,0.94,True
+641,46,riverbend_roofward,snap:riverbend_roofward:v70,session:6,70,False,True,True,v32-542603,river ford,0.9328,True
+642,46,roofward_archive,snap:roofward_archive:v75,session:6,75,True,False,True,v32-505230,glass stair,0.94,True
+643,46,archive_signal,snap:archive_signal:v71,session:6,71,False,False,False,v32-472895,paper lane,0.9356,False
+644,47,signal_orchard,snap:signal_orchard:v70,session:6,70,True,False,True,v32-467040,dusk road,0.93028,True
+645,47,orchard_riverbend,snap:orchard_riverbend:v70,session:6,70,False,False,False,v32-485439,fen track,0.94,False
+646,47,central_repair_ring,snap:central_repair_ring:v73,session:6,73,True,False,True,v32-602894,outer bell path,0.93024,True
+647,47,riverbend_roofward,snap:riverbend_roofward:v71,session:6,71,False,True,True,v32-534064,river ford,0.93616,True
+648,47,roofward_archive,snap:roofward_archive:v75,session:6,75,False,False,False,v32-505230,glass stair,0.94,False
+649,47,archive_signal,snap:archive_signal:v71,session:6,71,False,False,False,v32-472381,paper lane,0.93384,False
+650,47,signal_orchard,snap:signal_orchard:v71,session:6,71,True,False,False,v32-591603,river lantern loop,0.94,True
+651,47,orchard_riverbend,snap:orchard_riverbend:v71,session:6,71,True,False,True,v32-485685,fen track,0.93648,True
+652,47,central_repair_ring,snap:central_repair_ring:v74,session:6,74,True,False,True,v32-648039,inner repair yard,0.94,True
+653,47,riverbend_roofward,snap:riverbend_roofward:v71,session:6,71,False,False,False,v32-541391,river ford,0.93352,False
+654,47,roofward_archive,snap:roofward_archive:v76,session:6,76,True,False,True,v32-578879,cool archive lane,0.94,True
+655,47,archive_signal,snap:archive_signal:v72,session:6,72,False,True,True,v32-479881,paper lane,0.93808,True
+656,47,signal_orchard,snap:signal_orchard:v71,session:6,71,False,False,False,v32-569150,river lantern loop,0.93336,False
+657,47,orchard_riverbend,snap:orchard_riverbend:v71,session:6,71,False,False,False,v32-508262,fen track,0.93296,False
+658,48,riverbend_roofward,snap:riverbend_roofward:v72,session:7,72,True,True,True,v32-541243,river ford,0.93776,True
+659,48,roofward_archive,snap:roofward_archive:v77,session:7,77,True,False,True,v32-505722,glass stair,0.94,True
+660,48,archive_signal,snap:archive_signal:v73,session:7,73,True,False,False,v32-562123,stone kiosk path,0.94,True
+661,48,signal_orchard,snap:signal_orchard:v72,session:7,72,False,True,True,v32-592124,river lantern loop,0.9376,True
+662,48,orchard_riverbend,snap:orchard_riverbend:v71,session:7,71,False,False,False,v32-508133,fen track,0.94,False
+663,48,central_repair_ring,snap:central_repair_ring:v74,session:7,74,False,False,False,v32-625533,inner repair yard,0.93648,False
+664,48,riverbend_roofward,snap:riverbend_roofward:v73,session:7,73,True,True,True,v32-681136,orchard ridge detour,0.94,True
+665,48,roofward_archive,snap:roofward_archive:v78,session:7,78,True,False,False,v32-505968,glass stair,0.93736,True
+666,48,archive_signal,snap:archive_signal:v74,session:7,74,True,False,True,v32-458493,paper lane,0.94,True
+667,48,signal_orchard,snap:signal_orchard:v72,session:7,72,False,False,False,v32-585132,river lantern loop,0.93584,False
+668,48,orchard_riverbend,snap:orchard_riverbend:v72,session:7,72,True,False,True,v32-612183,market plank route,0.94,True
+669,48,central_repair_ring,snap:central_repair_ring:v75,session:7,75,False,True,True,v32-649990,inner repair yard,0.93896,True
+670,48,riverbend_roofward,snap:riverbend_roofward:v74,session:7,74,True,True,True,v32-519906,river ford,0.94,True
+671,48,roofward_archive,snap:roofward_archive:v78,session:7,78,False,False,False,v32-528460,glass stair,0.93472,False
+672,49,archive_signal,snap:archive_signal:v75,session:7,75,True,False,True,v32-458734,paper lane,0.93692,True
+673,49,signal_orchard,snap:signal_orchard:v73,session:7,73,True,False,True,v32-468280,dusk road,0.94,True
+674,49,orchard_riverbend,snap:orchard_riverbend:v73,session:7,73,True,False,True,v32-486177,fen track,0.94,True
+675,49,central_repair_ring,snap:central_repair_ring:v76,session:7,76,False,True,True,v32-650952,inner repair yard,0.94,True
+676,49,riverbend_roofward,snap:riverbend_roofward:v74,session:7,74,False,False,False,v32-519906,river ford,0.94,False
+677,49,roofward_archive,snap:roofward_archive:v79,session:7,79,False,True,True,v32-528312,glass stair,0.93852,True
+678,49,archive_signal,snap:archive_signal:v76,session:7,76,True,False,True,v32-563004,stone kiosk path,0.94,True
+679,49,signal_orchard,snap:signal_orchard:v74,session:7,74,True,False,True,v32-446551,dusk road,0.94,True
+680,49,orchard_riverbend,snap:orchard_riverbend:v73,session:7,73,False,False,False,v32-486177,fen track,0.94,False
+681,49,central_repair_ring,snap:central_repair_ring:v76,session:7,76,False,False,False,v32-626049,inner repair yard,0.93692,False
+682,49,riverbend_roofward,snap:riverbend_roofward:v75,session:7,75,True,False,True,v32-656856,orchard ridge detour,0.94,True
+683,49,roofward_archive,snap:roofward_archive:v80,session:7,80,False,True,True,v32-526578,glass stair,0.94,True
+684,49,archive_signal,snap:archive_signal:v77,session:7,77,True,False,True,v32-459216,paper lane,0.94,True
+685,49,signal_orchard,snap:signal_orchard:v75,session:7,75,True,False,False,v32-446791,dusk road,0.94,True
+686,50,orchard_riverbend,snap:orchard_riverbend:v74,session:7,74,True,False,True,v32-486423,fen track,0.93824,True
+687,50,central_repair_ring,snap:central_repair_ring:v76,session:7,76,False,False,False,v32-650104,inner repair yard,0.94,False
+688,50,riverbend_roofward,snap:riverbend_roofward:v76,session:7,76,True,False,True,v32-520404,river ford,0.94,True
+689,50,roofward_archive,snap:roofward_archive:v81,session:7,81,False,True,True,v32-504490,glass stair,0.94,True
+690,50,archive_signal,snap:archive_signal:v78,session:7,78,False,True,True,v32-459457,paper lane,0.94,True
+691,50,signal_orchard,snap:signal_orchard:v75,session:7,75,False,False,False,v32-446791,dusk road,0.93648,False
+692,50,orchard_riverbend,snap:orchard_riverbend:v75,session:7,75,True,False,True,v32-636420,market plank route,0.94,True
+693,50,central_repair_ring,snap:central_repair_ring:v77,session:7,77,True,False,True,v32-626307,inner repair yard,0.93736,True
+694,50,riverbend_roofward,snap:riverbend_roofward:v76,session:7,76,False,False,False,v32-520404,river ford,0.94,False
+695,50,roofward_archive,snap:roofward_archive:v81,session:7,81,False,False,False,v32-504490,glass stair,0.93824,False
+696,50,archive_signal,snap:archive_signal:v79,session:7,79,True,True,True,v32-540650,stone kiosk path,0.94,True
+697,50,signal_orchard,snap:signal_orchard:v76,session:7,76,False,True,True,v32-469140,dusk road,0.93896,True
+698,50,orchard_riverbend,snap:orchard_riverbend:v76,session:7,76,True,False,True,v32-486915,fen track,0.94,True
+699,50,central_repair_ring,snap:central_repair_ring:v77,session:7,77,False,False,False,v32-650227,inner repair yard,0.93472,False
+700,51,riverbend_roofward,snap:riverbend_roofward:v77,session:7,77,True,False,False,v32-520653,river ford,0.93692,True
+701,51,roofward_archive,snap:roofward_archive:v81,session:7,81,False,False,False,v32-526697,glass stair,0.94,False
+702,51,archive_signal,snap:archive_signal:v80,session:7,80,True,False,True,v32-457768,paper lane,0.94,True
+703,51,signal_orchard,snap:signal_orchard:v77,session:7,77,False,True,True,v32-470019,dusk road,0.94,True
+704,51,orchard_riverbend,snap:orchard_riverbend:v76,session:7,76,False,False,False,v32-486915,fen track,0.94,False
+705,51,central_repair_ring,snap:central_repair_ring:v77,session:7,77,False,False,False,v32-649803,inner repair yard,0.93252,False
+706,51,riverbend_roofward,snap:riverbend_roofward:v78,session:7,78,True,False,True,v32-682014,orchard ridge detour,0.94,True
+707,51,roofward_archive,snap:roofward_archive:v82,session:7,82,True,False,True,v32-504736,glass stair,0.94,True
+708,51,archive_signal,snap:archive_signal:v80,session:7,80,False,False,False,v32-457768,paper lane,0.94,False
+709,51,signal_orchard,snap:signal_orchard:v78,session:7,78,False,True,True,v32-447511,dusk road,0.94,True
+710,51,orchard_riverbend,snap:orchard_riverbend:v77,session:7,77,True,False,False,v32-613458,market plank route,0.94,True
+711,51,central_repair_ring,snap:central_repair_ring:v78,session:7,78,False,True,True,v32-649502,inner repair yard,0.93632,True
+712,51,riverbend_roofward,snap:riverbend_roofward:v79,session:7,79,True,False,True,v32-521151,river ford,0.94,True
+713,51,roofward_archive,snap:roofward_archive:v83,session:7,83,True,False,True,v32-504982,glass stair,0.94,True
+714,52,archive_signal,snap:archive_signal:v81,session:7,81,True,False,True,v32-458009,paper lane,0.93824,True
+715,52,signal_orchard,snap:signal_orchard:v78,session:7,78,False,False,False,v32-447511,dusk road,0.94,False
+716,52,orchard_riverbend,snap:orchard_riverbend:v78,session:7,78,True,True,True,v32-487407,fen track,0.94,True
+717,52,central_repair_ring,snap:central_repair_ring:v79,session:7,79,False,True,True,v32-650041,inner repair yard,0.94,True
+718,52,riverbend_roofward,snap:riverbend_roofward:v79,session:7,79,False,False,False,v32-521151,river ford,0.94,False
+719,52,roofward_archive,snap:roofward_archive:v83,session:7,83,False,False,False,v32-504982,glass stair,0.93648,False
+720,52,archive_signal,snap:archive_signal:v82,session:7,82,True,False,False,v32-561847,stone kiosk path,0.94,True
+721,52,signal_orchard,snap:signal_orchard:v79,session:7,79,True,False,True,v32-447751,dusk road,0.93736,True
+722,52,orchard_riverbend,snap:orchard_riverbend:v79,session:7,79,False,True,True,v32-487653,fen track,0.94,True
+723,52,central_repair_ring,snap:central_repair_ring:v79,session:7,79,False,False,False,v32-626823,inner repair yard,0.93824,False
+724,52,riverbend_roofward,snap:riverbend_roofward:v80,session:7,80,True,False,True,v32-655818,orchard ridge detour,0.94,True
+725,52,roofward_archive,snap:roofward_archive:v84,session:7,84,False,True,True,v32-527978,glass stair,0.93896,True
+726,52,archive_signal,snap:archive_signal:v83,session:7,83,True,False,True,v32-458491,paper lane,0.94,True
+727,52,signal_orchard,snap:signal_orchard:v79,session:7,79,False,False,False,v32-469610,dusk road,0.93472,False
+728,53,orchard_riverbend,snap:orchard_riverbend:v80,session:7,80,True,False,True,v32-485683,fen track,0.93692,True
+729,53,central_repair_ring,snap:central_repair_ring:v80,session:7,80,False,True,True,v32-648374,inner repair yard,0.94,True
+730,53,riverbend_roofward,snap:riverbend_roofward:v81,session:7,81,True,False,False,v32-519406,river ford,0.94,True
+731,53,roofward_archive,snap:roofward_archive:v85,session:7,85,False,True,True,v32-528883,glass stair,0.94,True
+732,53,archive_signal,snap:archive_signal:v83,session:7,83,False,False,False,v32-458491,paper lane,0.94,False
+733,53,signal_orchard,snap:signal_orchard:v79,session:7,79,False,False,False,v32-469225,dusk road,0.93252,False
+734,53,orchard_riverbend,snap:orchard_riverbend:v81,session:7,81,True,False,True,v32-636064,market plank route,0.94,True
+735,53,central_repair_ring,snap:central_repair_ring:v81,session:7,81,True,True,False,v32-625015,inner repair yard,0.94,True
+736,53,riverbend_roofward,snap:riverbend_roofward:v81,session:7,81,False,False,False,v32-519406,river ford,0.94,False
+737,53,roofward_archive,snap:roofward_archive:v85,session:7,85,False,False,False,v32-505474,glass stair,0.93692,False
+738,53,archive_signal,snap:archive_signal:v84,session:7,84,True,False,True,v32-539660,stone kiosk path,0.94,True
+739,53,signal_orchard,snap:signal_orchard:v80,session:7,80,False,True,True,v32-466769,dusk road,0.93632,True
+740,53,orchard_riverbend,snap:orchard_riverbend:v82,session:7,82,True,False,False,v32-486175,fen track,0.94,True
+741,53,central_repair_ring,snap:central_repair_ring:v82,session:7,82,False,True,True,v32-625273,inner repair yard,0.94,True
+742,54,roofward_archive,snap:roofward_archive:v86,session:7,86,True,False,True,v32-528338,glass stair,0.93472,True
+743,54,archive_signal,snap:archive_signal:v85,session:7,85,True,False,True,v32-458973,paper lane,0.94,True
+744,54,signal_orchard,snap:signal_orchard:v81,session:7,81,True,False,True,v32-591978,river lantern loop,0.94,True
+745,54,orchard_riverbend,snap:orchard_riverbend:v83,session:7,83,False,True,True,v32-486421,fen track,0.94,True
+746,54,central_repair_ring,snap:central_repair_ring:v82,session:7,82,False,False,False,v32-625273,inner repair yard,0.94,False
+747,54,riverbend_roofward,snap:riverbend_roofward:v82,session:7,82,True,False,True,v32-519655,river ford,0.94,True
+748,54,roofward_archive,snap:roofward_archive:v87,session:7,87,True,False,True,v32-535393,glass stair,0.92452,True
+749,54,archive_signal,snap:archive_signal:v86,session:7,86,True,False,True,v32-459214,paper lane,0.93692,True
+750,54,signal_orchard,snap:signal_orchard:v82,session:7,82,True,False,False,v32-446309,dusk road,0.94,True
+751,54,orchard_riverbend,snap:orchard_riverbend:v83,session:7,83,False,False,False,v32-486421,fen track,0.9378,False
+752,54,central_repair_ring,snap:central_repair_ring:v83,session:7,83,True,False,True,v32-595608,outer bell path,0.94,True
+753,54,riverbend_roofward,snap:riverbend_roofward:v83,session:7,83,False,True,True,v32-519904,river ford,0.94,True
+754,54,roofward_archive,snap:roofward_archive:v87,session:7,87,False,False,False,v32-534999,glass stair,0.918262,False
+755,54,archive_signal,snap:archive_signal:v86,session:7,86,False,False,False,v32-481352,paper lane,0.93384,False
+756,55,signal_orchard,snap:signal_orchard:v83,session:7,83,True,False,True,v32-446549,dusk road,0.93648,True
+757,55,orchard_riverbend,snap:orchard_riverbend:v83,session:7,83,False,False,False,v32-501772,fen track,0.94,False
+758,55,central_repair_ring,snap:central_repair_ring:v84,session:7,84,True,False,True,v32-625789,inner repair yard,0.94,True
+759,55,riverbend_roofward,snap:riverbend_roofward:v84,session:7,84,False,True,True,v32-520153,river ford,0.94,True
+760,55,roofward_archive,snap:roofward_archive:v87,session:7,87,False,False,False,v32-542782,glass stair,0.928445,False
+761,55,archive_signal,snap:archive_signal:v86,session:7,86,False,False,False,v32-481099,paper lane,0.9312,False
+762,55,signal_orchard,snap:signal_orchard:v84,session:7,84,True,False,True,v32-593699,river lantern loop,0.94,True
+763,55,orchard_riverbend,snap:orchard_riverbend:v84,session:7,84,True,False,True,v32-486667,fen track,0.93824,True
+764,55,central_repair_ring,snap:central_repair_ring:v84,session:7,84,False,False,False,v32-625789,inner repair yard,0.94,False
+765,55,riverbend_roofward,snap:riverbend_roofward:v84,session:7,84,False,False,False,v32-520153,river ford,0.93648,False
+766,55,roofward_archive,snap:roofward_archive:v88,session:7,88,True,False,True,v32-610865,cool archive lane,0.94,True
+767,55,archive_signal,snap:archive_signal:v87,session:7,87,False,True,True,v32-473052,paper lane,0.93456,True
+768,55,signal_orchard,snap:signal_orchard:v85,session:7,85,True,False,True,v32-447029,dusk road,0.94,True
+769,55,orchard_riverbend,snap:orchard_riverbend:v84,session:7,84,False,False,False,v32-508726,fen track,0.93648,False
+770,56,central_repair_ring,snap:central_repair_ring:v85,session:8,85,True,False,False,v32-626047,inner repair yard,0.9378,True
+771,56,riverbend_roofward,snap:riverbend_roofward:v84,session:8,84,False,False,False,v32-543064,river ford,0.94,False
+772,56,roofward_archive,snap:roofward_archive:v89,session:8,89,True,False,True,v32-506458,glass stair,0.94,True
+773,56,archive_signal,snap:archive_signal:v88,session:8,88,False,True,True,v32-481588,paper lane,0.93836,True
+774,56,signal_orchard,snap:signal_orchard:v85,session:8,85,False,False,False,v32-447029,dusk road,0.94,False
+775,56,orchard_riverbend,snap:orchard_riverbend:v85,session:8,85,True,False,False,v32-509505,fen track,0.94,True
+776,56,central_repair_ring,snap:central_repair_ring:v86,session:8,86,True,False,True,v32-612613,outer bell path,0.94,True
+777,56,riverbend_roofward,snap:riverbend_roofward:v85,session:8,85,True,False,True,v32-520402,river ford,0.93692,True
+778,56,roofward_archive,snap:roofward_archive:v89,session:8,89,False,False,False,v32-506458,glass stair,0.94,False
+779,56,archive_signal,snap:archive_signal:v88,session:8,88,False,False,False,v32-481842,paper lane,0.93616,False
+780,56,signal_orchard,snap:signal_orchard:v86,session:8,86,True,False,False,v32-570642,river lantern loop,0.94,True
+781,56,orchard_riverbend,snap:orchard_riverbend:v86,session:8,86,False,True,True,v32-487159,fen track,0.94,True
+782,56,central_repair_ring,snap:central_repair_ring:v87,session:8,87,True,False,True,v32-604172,outer bell path,0.94,True
+783,56,riverbend_roofward,snap:riverbend_roofward:v85,session:8,85,False,False,False,v32-543177,river ford,0.93384,False
+784,57,roofward_archive,snap:roofward_archive:v90,session:8,90,True,False,True,v32-504488,glass stair,0.93648,True
+785,57,archive_signal,snap:archive_signal:v88,session:8,88,False,False,False,v32-481328,paper lane,0.94,False
+786,57,signal_orchard,snap:signal_orchard:v87,session:8,87,True,False,True,v32-447509,dusk road,0.94,True
+787,57,orchard_riverbend,snap:orchard_riverbend:v87,session:8,87,False,True,True,v32-487405,fen track,0.94,True
+788,57,central_repair_ring,snap:central_repair_ring:v88,session:8,88,True,False,True,v32-626821,inner repair yard,0.94,True
+789,57,riverbend_roofward,snap:riverbend_roofward:v85,session:8,85,False,False,False,v32-542916,river ford,0.9312,False
+790,57,roofward_archive,snap:roofward_archive:v91,session:8,91,True,False,False,v32-601829,cool archive lane,0.94,True
+791,57,archive_signal,snap:archive_signal:v89,session:8,89,True,False,True,v32-459937,paper lane,0.93824,True
+792,57,signal_orchard,snap:signal_orchard:v87,session:8,87,False,False,False,v32-447509,dusk road,0.94,False
+793,57,orchard_riverbend,snap:orchard_riverbend:v87,session:8,87,False,False,False,v32-487405,fen track,0.93648,False
+794,57,central_repair_ring,snap:central_repair_ring:v89,session:8,89,True,False,True,v32-597144,outer bell path,0.94,True
+795,57,riverbend_roofward,snap:riverbend_roofward:v86,session:8,86,False,True,True,v32-534638,river ford,0.93456,True
+796,57,roofward_archive,snap:roofward_archive:v92,session:8,92,True,False,True,v32-504980,glass stair,0.94,True
+797,57,archive_signal,snap:archive_signal:v89,session:8,89,False,False,False,v32-481697,paper lane,0.93648,False
+798,58,signal_orchard,snap:signal_orchard:v88,session:8,88,True,False,True,v32-447749,dusk road,0.9378,True
+799,58,orchard_riverbend,snap:orchard_riverbend:v87,session:8,87,False,False,False,v32-510003,fen track,0.94,False
+800,58,central_repair_ring,snap:central_repair_ring:v90,session:8,90,True,False,False,v32-625013,inner repair yard,0.94,True
+801,58,riverbend_roofward,snap:riverbend_roofward:v87,session:8,87,False,True,True,v32-543421,river ford,0.93836,True
+802,58,roofward_archive,snap:roofward_archive:v92,session:8,92,False,False,False,v32-504980,glass stair,0.94,False
+803,58,archive_signal,snap:archive_signal:v90,session:8,90,True,False,True,v32-480265,paper lane,0.94,True
+804,58,signal_orchard,snap:signal_orchard:v89,session:8,89,True,False,True,v32-587412,river lantern loop,0.94,True
+805,58,orchard_riverbend,snap:orchard_riverbend:v88,session:8,88,True,False,False,v32-487651,fen track,0.93692,True
+806,58,central_repair_ring,snap:central_repair_ring:v90,session:8,90,False,False,False,v32-625013,inner repair yard,0.94,False
+807,58,riverbend_roofward,snap:riverbend_roofward:v87,session:8,87,False,False,False,v32-543683,river ford,0.93616,False
+808,58,roofward_archive,snap:roofward_archive:v93,session:8,93,True,False,True,v32-578623,cool archive lane,0.94,True
+809,58,archive_signal,snap:archive_signal:v91,session:8,91,False,True,True,v32-458248,paper lane,0.94,True
+810,58,signal_orchard,snap:signal_orchard:v90,session:8,90,True,False,False,v32-446067,dusk road,0.94,True
+811,58,orchard_riverbend,snap:orchard_riverbend:v88,session:8,88,False,False,False,v32-510115,fen track,0.93384,False
+812,59,central_repair_ring,snap:central_repair_ring:v91,session:8,91,True,False,True,v32-625271,inner repair yard,0.93648,True
+813,59,riverbend_roofward,snap:riverbend_roofward:v87,session:8,87,False,False,False,v32-543153,river ford,0.94,False
+814,59,roofward_archive,snap:roofward_archive:v94,session:8,94,True,False,True,v32-505472,glass stair,0.94,True
+815,59,archive_signal,snap:archive_signal:v92,session:8,92,False,True,True,v32-458489,paper lane,0.94,True
+816,59,signal_orchard,snap:signal_orchard:v90,session:8,90,False,False,False,v32-446067,dusk road,0.94,False
+817,59,orchard_riverbend,snap:orchard_riverbend:v88,session:8,88,False,False,False,v32-509858,fen track,0.9312,False
+818,59,central_repair_ring,snap:central_repair_ring:v92,session:8,92,True,False,True,v32-619480,outer bell path,0.94,True
+819,59,riverbend_roofward,snap:riverbend_roofward:v88,session:8,88,True,False,True,v32-521149,river ford,0.93824,True
+820,59,roofward_archive,snap:roofward_archive:v94,session:8,94,False,False,False,v32-505472,glass stair,0.93336,False
+821,59,archive_signal,snap:archive_signal:v92,session:8,92,False,False,False,v32-458489,paper lane,0.93648,False
+822,59,signal_orchard,snap:signal_orchard:v91,session:8,91,True,False,True,v32-569644,river lantern loop,0.94,True
+823,59,orchard_riverbend,snap:orchard_riverbend:v89,session:8,89,False,True,True,v32-501694,fen track,0.93456,True
+824,59,central_repair_ring,snap:central_repair_ring:v93,session:8,93,True,False,True,v32-625787,inner repair yard,0.94,True
+825,59,riverbend_roofward,snap:riverbend_roofward:v88,session:8,88,False,False,False,v32-543534,river ford,0.93648,False
+826,60,archive_signal,snap:archive_signal:v93,session:8,93,True,False,True,v32-480997,paper lane,0.93384,True
+827,60,signal_orchard,snap:signal_orchard:v92,session:8,92,True,False,True,v32-446547,dusk road,0.94,True
+828,60,orchard_riverbend,snap:orchard_riverbend:v90,session:8,90,True,False,True,v32-635788,market plank route,0.94,True
+829,60,central_repair_ring,snap:central_repair_ring:v94,session:8,94,False,True,True,v32-626045,inner repair yard,0.94,True
+830,60,riverbend_roofward,snap:riverbend_roofward:v89,session:8,89,False,True,True,v32-544324,river ford,0.94,True
+831,60,roofward_archive,snap:roofward_archive:v94,session:8,94,False,False,False,v32-527434,glass stair,0.9316,False
+832,60,archive_signal,snap:archive_signal:v94,session:8,94,True,False,True,v32-562735,stone kiosk path,0.94,True
+833,60,signal_orchard,snap:signal_orchard:v93,session:8,93,True,False,True,v32-446787,dusk road,0.93648,True
+834,60,orchard_riverbend,snap:orchard_riverbend:v91,session:8,91,True,False,True,v32-486173,fen track,0.94,True
+835,60,central_repair_ring,snap:central_repair_ring:v94,session:8,94,False,False,False,v32-626045,inner repair yard,0.93736,False
+836,60,riverbend_roofward,snap:riverbend_roofward:v90,session:8,90,True,True,True,v32-656075,orchard ridge detour,0.94,True
+837,60,roofward_archive,snap:roofward_archive:v95,session:8,95,False,True,True,v32-520135,glass stair,0.93584,True
+838,60,archive_signal,snap:archive_signal:v95,session:8,95,True,False,True,v32-459212,paper lane,0.94,True
+839,60,signal_orchard,snap:signal_orchard:v93,session:8,93,False,False,False,v32-468893,dusk road,0.93296,False
+840,61,orchard_riverbend,snap:orchard_riverbend:v92,session:8,92,True,False,False,v32-486419,fen track,0.94,True
+841,61,central_repair_ring,snap:central_repair_ring:v94,session:8,94,False,False,False,v32-649962,inner repair yard,0.93116,False
+842,61,riverbend_roofward,snap:riverbend_roofward:v91,session:8,91,True,False,True,v32-519653,river ford,0.94,True
+843,61,roofward_archive,snap:roofward_archive:v96,session:8,96,True,True,True,v32-528588,glass stair,0.94,True
+844,61,archive_signal,snap:archive_signal:v95,session:8,95,False,False,False,v32-459212,paper lane,0.94,False
+845,61,signal_orchard,snap:signal_orchard:v93,session:8,93,False,False,False,v32-468767,dusk road,0.92988,False
+846,61,orchard_riverbend,snap:orchard_riverbend:v93,session:8,93,True,False,True,v32-612944,market plank route,0.94,True
+847,61,central_repair_ring,snap:central_repair_ring:v95,session:8,95,True,False,True,v32-649101,inner repair yard,0.92896,True
+848,61,riverbend_roofward,snap:riverbend_roofward:v91,session:8,91,False,False,False,v32-519653,river ford,0.94,False
+849,61,roofward_archive,snap:roofward_archive:v97,session:8,97,True,True,True,v32-506210,glass stair,0.94,True
+850,61,archive_signal,snap:archive_signal:v96,session:8,96,True,False,False,v32-466473,paper lane,0.9298,True
+851,61,signal_orchard,snap:signal_orchard:v94,session:8,94,False,True,True,v32-469903,dusk road,0.9328,True
+852,61,orchard_riverbend,snap:orchard_riverbend:v94,session:8,94,True,False,True,v32-486911,fen track,0.94,True
+853,61,central_repair_ring,snap:central_repair_ring:v95,session:8,95,False,False,False,v32-651070,inner repair yard,0.92676,False
+854,62,riverbend_roofward,snap:riverbend_roofward:v92,session:8,92,True,False,True,v32-519902,river ford,0.93736,True
+855,62,roofward_archive,snap:roofward_archive:v97,session:8,97,False,False,False,v32-506210,glass stair,0.94,False
+856,62,archive_signal,snap:archive_signal:v97,session:8,97,True,True,True,v32-556582,stone kiosk path,0.94,True
+857,62,signal_orchard,snap:signal_orchard:v95,session:8,95,False,True,True,v32-461659,dusk road,0.93616,True
+858,62,orchard_riverbend,snap:orchard_riverbend:v94,session:8,94,False,False,False,v32-486911,fen track,0.94,False
+859,62,central_repair_ring,snap:central_repair_ring:v95,session:8,95,False,False,False,v32-650508,inner repair yard,0.925,False
+860,62,riverbend_roofward,snap:riverbend_roofward:v93,session:8,93,True,False,False,v32-681084,orchard ridge detour,0.94,True
+861,62,roofward_archive,snap:roofward_archive:v98,session:8,98,True,False,True,v32-506456,glass stair,0.93648,True
+862,62,archive_signal,snap:archive_signal:v98,session:8,98,True,True,True,v32-459935,paper lane,0.94,True
+863,62,signal_orchard,snap:signal_orchard:v95,session:8,95,False,False,False,v32-468737,dusk road,0.93352,False
+864,62,orchard_riverbend,snap:orchard_riverbend:v95,session:8,95,True,False,True,v32-613454,market plank route,0.94,True
+865,62,central_repair_ring,snap:central_repair_ring:v96,session:8,96,False,True,True,v32-634204,inner repair yard,0.92924,True
+866,62,riverbend_roofward,snap:riverbend_roofward:v94,session:8,94,True,False,True,v32-520400,river ford,0.94,True
+867,62,roofward_archive,snap:roofward_archive:v98,session:8,98,False,False,False,v32-529221,glass stair,0.93296,False
+868,63,archive_signal,snap:archive_signal:v99,session:8,99,True,False,True,v32-460176,paper lane,0.94,True
+869,63,signal_orchard,snap:signal_orchard:v96,session:8,96,False,True,True,v32-468595,dusk road,0.94,True
+870,63,orchard_riverbend,snap:orchard_riverbend:v96,session:8,96,True,False,False,v32-487403,fen track,0.94,True
+871,63,central_repair_ring,snap:central_repair_ring:v97,session:8,97,True,True,True,v32-650461,inner repair yard,0.94,True
+872,63,riverbend_roofward,snap:riverbend_roofward:v94,session:8,94,False,False,False,v32-520400,river ford,0.94,False
+873,63,roofward_archive,snap:roofward_archive:v98,session:8,98,False,False,False,v32-529091,glass stair,0.92988,False
+874,63,archive_signal,snap:archive_signal:v100,session:8,100,True,False,True,v32-551752,stone kiosk path,0.94,True
+875,63,signal_orchard,snap:signal_orchard:v97,session:8,97,True,True,False,v32-447747,dusk road,0.9338,True
+876,63,orchard_riverbend,snap:orchard_riverbend:v96,session:8,96,False,False,False,v32-487403,fen track,0.94,False
+877,63,central_repair_ring,snap:central_repair_ring:v98,session:8,98,True,False,True,v32-627077,inner repair yard,0.94,True
+878,63,riverbend_roofward,snap:riverbend_roofward:v95,session:8,95,True,False,True,v32-657370,orchard ridge detour,0.94,True
+879,63,roofward_archive,snap:roofward_archive:v99,session:8,99,False,True,True,v32-530261,glass stair,0.9328,True
+880,63,archive_signal,snap:archive_signal:v101,session:8,101,True,False,False,v32-470239,paper lane,0.94,True
+881,63,signal_orchard,snap:signal_orchard:v98,session:8,98,False,True,True,v32-462512,dusk road,0.9376,True
+882,64,orchard_riverbend,snap:orchard_riverbend:v97,session:9,97,True,True,True,v32-487649,fen track,0.94,True
+883,64,central_repair_ring,snap:central_repair_ring:v98,session:9,98,False,False,False,v32-627077,inner repair yard,0.94,False
+884,64,riverbend_roofward,snap:riverbend_roofward:v96,session:9,96,True,False,True,v32-665377,orchard ridge detour,0.93024,True
+885,64,roofward_archive,snap:roofward_archive:v100,session:9,100,False,True,True,v32-531796,glass stair,0.93616,True
+886,64,archive_signal,snap:archive_signal:v101,session:9,101,False,False,False,v32-470239,paper lane,0.94,False
+887,64,signal_orchard,snap:signal_orchard:v98,session:9,98,False,False,False,v32-462764,dusk road,0.93584,False
+888,64,orchard_riverbend,snap:orchard_riverbend:v98,session:9,98,True,True,True,v32-614219,market plank route,0.94,True
+889,64,central_repair_ring,snap:central_repair_ring:v99,session:9,99,True,False,True,v32-627335,inner repair yard,0.93648,True
+890,64,riverbend_roofward,snap:riverbend_roofward:v97,session:9,97,True,False,False,v32-542476,river ford,0.94,True
+891,64,roofward_archive,snap:roofward_archive:v100,session:9,100,False,False,False,v32-539164,glass stair,0.93352,False
+892,64,archive_signal,snap:archive_signal:v102,session:9,102,True,False,True,v32-552252,stone kiosk path,0.94,True
+893,64,signal_orchard,snap:signal_orchard:v99,session:9,99,False,True,True,v32-470220,dusk road,0.94,True
+894,64,orchard_riverbend,snap:orchard_riverbend:v99,session:9,99,True,True,True,v32-488141,fen track,0.94,True
+895,64,central_repair_ring,snap:central_repair_ring:v99,session:9,99,False,False,False,v32-651552,inner repair yard,0.93296,False
+896,65,riverbend_roofward,snap:riverbend_roofward:v98,session:9,98,True,False,True,v32-521396,river ford,0.94,True
+897,65,roofward_archive,snap:roofward_archive:v100,session:9,100,False,False,False,v32-538764,glass stair,0.94,False
+898,65,archive_signal,snap:archive_signal:v103,session:9,103,True,False,True,v32-470727,paper lane,0.94,True
+899,65,signal_orchard,snap:signal_orchard:v100,session:9,100,True,True,True,v32-457924,dusk road,0.94,True
+900,65,orchard_riverbend,snap:orchard_riverbend:v99,session:9,99,False,False,False,v32-488141,fen track,0.94,False
+901,65,central_repair_ring,snap:central_repair_ring:v100,session:9,100,False,True,True,v32-662707,inner repair yard,0.93588,True
+902,65,riverbend_roofward,snap:riverbend_roofward:v99,session:9,99,True,False,True,v32-658406,orchard ridge detour,0.94,True
+903,65,roofward_archive,snap:roofward_archive:v101,session:9,101,True,False,True,v32-517058,glass stair,0.9378,True
+904,65,archive_signal,snap:archive_signal:v103,session:9,103,False,False,False,v32-470727,paper lane,0.94,False
+905,65,signal_orchard,snap:signal_orchard:v101,session:9,101,True,False,False,v32-458167,dusk road,0.94,True
+906,65,orchard_riverbend,snap:orchard_riverbend:v100,session:9,100,True,False,True,v32-625544,market plank route,0.94,True
+907,65,central_repair_ring,snap:central_repair_ring:v101,session:9,101,False,True,True,v32-663538,inner repair yard,0.9388,True
+908,65,riverbend_roofward,snap:riverbend_roofward:v100,session:9,100,True,False,True,v32-531739,river ford,0.94,True
+909,65,roofward_archive,snap:roofward_archive:v101,session:9,101,False,False,False,v32-532707,glass stair,0.9356,False
+910,66,signal_orchard,snap:signal_orchard:v102,session:9,102,True,False,False,v32-458410,dusk road,0.93692,True
+911,66,orchard_riverbend,snap:orchard_riverbend:v101,session:9,101,True,False,True,v32-498258,fen track,0.94,True
+912,66,central_repair_ring,snap:central_repair_ring:v102,session:9,102,True,False,True,v32-625243,outer bell path,0.94,True
+913,66,riverbend_roofward,snap:riverbend_roofward:v101,session:9,101,False,True,True,v32-531991,river ford,0.94,True
+914,66,roofward_archive,snap:roofward_archive:v101,session:9,101,False,False,False,v32-532177,glass stair,0.94,False
+915,66,archive_signal,snap:archive_signal:v103,session:9,103,False,False,False,v32-470727,paper lane,0.9378,False
+916,66,signal_orchard,snap:signal_orchard:v103,session:9,103,True,False,True,v32-606981,river lantern loop,0.94,True
+917,66,orchard_riverbend,snap:orchard_riverbend:v102,session:9,102,True,False,True,v32-498507,fen track,0.94,True
+918,66,central_repair_ring,snap:central_repair_ring:v103,session:9,103,True,False,True,v32-616586,outer bell path,0.94,True
+919,66,riverbend_roofward,snap:riverbend_roofward:v101,session:9,101,False,False,False,v32-531991,river ford,0.93692,False
+920,66,roofward_archive,snap:roofward_archive:v102,session:9,102,True,False,False,v32-591468,cool archive lane,0.94,True
+921,66,archive_signal,snap:archive_signal:v104,session:9,104,False,True,True,v32-486296,paper lane,0.94,True
+922,66,signal_orchard,snap:signal_orchard:v104,session:9,104,True,False,True,v32-458896,dusk road,0.94,True
+923,66,orchard_riverbend,snap:orchard_riverbend:v103,session:9,103,True,False,True,v32-498756,fen track,0.94,True
+924,67,central_repair_ring,snap:central_repair_ring:v104,session:9,104,True,False,True,v32-616845,outer bell path,0.938182,True
+925,67,riverbend_roofward,snap:riverbend_roofward:v101,session:9,101,False,False,False,v32-555037,river ford,0.94,False
+926,67,roofward_archive,snap:roofward_archive:v103,session:9,103,True,False,True,v32-517556,glass stair,0.94,True
+927,67,archive_signal,snap:archive_signal:v105,session:9,105,False,True,True,v32-471215,paper lane,0.94,True
+928,67,signal_orchard,snap:signal_orchard:v104,session:9,104,False,False,False,v32-458896,dusk road,0.93336,False
+929,67,orchard_riverbend,snap:orchard_riverbend:v103,session:9,103,False,False,False,v32-498756,fen track,0.93648,False
+930,67,central_repair_ring,snap:central_repair_ring:v105,session:9,105,True,False,False,v32-671763,inner repair yard,0.94,True
+931,67,riverbend_roofward,snap:riverbend_roofward:v102,session:9,102,True,False,True,v32-532243,river ford,0.93736,True
+932,67,roofward_archive,snap:roofward_archive:v103,session:9,103,False,False,False,v32-517556,glass stair,0.94,False
+933,67,archive_signal,snap:archive_signal:v105,session:9,105,False,False,False,v32-471215,paper lane,0.93824,False
+934,67,signal_orchard,snap:signal_orchard:v105,session:9,105,True,False,True,v32-606808,river lantern loop,0.94,True
+935,67,orchard_riverbend,snap:orchard_riverbend:v104,session:9,104,False,True,True,v32-521878,fen track,0.93896,True
+936,67,central_repair_ring,snap:central_repair_ring:v105,session:9,105,False,False,False,v32-639681,inner repair yard,0.94,False
+937,67,riverbend_roofward,snap:riverbend_roofward:v102,session:9,102,False,False,False,v32-555161,river ford,0.93472,False
+938,68,roofward_archive,snap:roofward_archive:v104,session:9,104,True,False,True,v32-517805,glass stair,0.93692,True
+939,68,archive_signal,snap:archive_signal:v105,session:9,105,False,False,False,v32-493243,paper lane,0.94,False
+940,68,signal_orchard,snap:signal_orchard:v106,session:9,106,True,False,False,v32-459382,dusk road,0.94,True
+941,68,orchard_riverbend,snap:orchard_riverbend:v105,session:9,105,False,True,True,v32-522786,fen track,0.94,True
+942,68,central_repair_ring,snap:central_repair_ring:v105,session:9,105,False,False,False,v32-639681,inner repair yard,0.94,False
+943,68,riverbend_roofward,snap:riverbend_roofward:v102,session:9,102,False,False,False,v32-554758,river ford,0.93252,False
+944,68,roofward_archive,snap:roofward_archive:v105,session:9,105,True,False,True,v32-616091,cool archive lane,0.94,True
+945,68,archive_signal,snap:archive_signal:v106,session:9,106,True,False,False,v32-471459,paper lane,0.94,True
+946,68,signal_orchard,snap:signal_orchard:v106,session:9,106,False,False,False,v32-459382,dusk road,0.94,False
+947,68,orchard_riverbend,snap:orchard_riverbend:v105,session:9,105,False,False,False,v32-499254,fen track,0.93692,False
+948,68,central_repair_ring,snap:central_repair_ring:v106,session:9,106,True,False,True,v32-609719,outer bell path,0.94,True
+949,68,riverbend_roofward,snap:riverbend_roofward:v103,session:9,103,False,True,True,v32-554479,river ford,0.93632,True
+950,68,roofward_archive,snap:roofward_archive:v106,session:9,106,True,False,False,v32-518303,glass stair,0.94,True
+951,68,archive_signal,snap:archive_signal:v107,session:9,107,True,False,True,v32-471703,paper lane,0.94,True
+952,69,signal_orchard,snap:signal_orchard:v107,session:9,107,True,False,True,v32-459625,dusk road,0.93824,True
+953,69,orchard_riverbend,snap:orchard_riverbend:v105,session:9,105,False,False,False,v32-521992,fen track,0.94,False
+954,69,central_repair_ring,snap:central_repair_ring:v107,session:9,107,True,False,True,v32-640203,inner repair yard,0.94,True
+955,69,riverbend_roofward,snap:riverbend_roofward:v104,session:9,104,False,True,True,v32-554998,river ford,0.94,True
+956,69,roofward_archive,snap:roofward_archive:v106,session:9,106,False,False,False,v32-518303,glass stair,0.94,False
+957,69,archive_signal,snap:archive_signal:v107,session:9,107,False,False,False,v32-471703,paper lane,0.93648,False
+958,69,signal_orchard,snap:signal_orchard:v108,session:9,108,True,False,True,v32-607842,river lantern loop,0.94,True
+959,69,orchard_riverbend,snap:orchard_riverbend:v106,session:9,106,True,False,True,v32-499503,fen track,0.93736,True
+960,69,central_repair_ring,snap:central_repair_ring:v107,session:9,107,False,False,False,v32-640203,inner repair yard,0.94,False
+961,69,riverbend_roofward,snap:riverbend_roofward:v104,session:9,104,False,False,False,v32-532747,river ford,0.93824,False
+962,69,roofward_archive,snap:roofward_archive:v107,session:9,107,True,False,True,v32-592743,cool archive lane,0.94,True
+963,69,archive_signal,snap:archive_signal:v108,session:9,108,False,True,True,v32-494510,paper lane,0.93896,True
+964,69,signal_orchard,snap:signal_orchard:v109,session:9,109,True,False,True,v32-460111,dusk road,0.94,True
+965,69,orchard_riverbend,snap:orchard_riverbend:v106,session:9,106,False,False,False,v32-522115,fen track,0.93472,False
+966,70,central_repair_ring,snap:central_repair_ring:v108,session:9,108,True,False,True,v32-640464,inner repair yard,0.93692,True
+967,70,riverbend_roofward,snap:riverbend_roofward:v104,session:9,104,False,False,False,v32-555400,river ford,0.94,False
+968,70,roofward_archive,snap:roofward_archive:v108,session:9,108,True,False,True,v32-518801,glass stair,0.94,True
+969,70,archive_signal,snap:archive_signal:v109,session:9,109,False,True,True,v32-495403,paper lane,0.94,True
+970,70,signal_orchard,snap:signal_orchard:v109,session:9,109,False,False,False,v32-460111,dusk road,0.94,False
+971,70,orchard_riverbend,snap:orchard_riverbend:v106,session:9,106,False,False,False,v32-521718,fen track,0.93252,False
+972,70,central_repair_ring,snap:central_repair_ring:v109,session:9,109,True,False,True,v32-634526,outer bell path,0.94,True
+973,70,riverbend_roofward,snap:riverbend_roofward:v105,session:9,105,True,False,True,v32-532999,river ford,0.94,True
+974,70,roofward_archive,snap:roofward_archive:v108,session:9,108,False,False,False,v32-518801,glass stair,0.94,False
+975,70,archive_signal,snap:archive_signal:v109,session:9,109,False,False,False,v32-472191,paper lane,0.93692,False
+976,70,signal_orchard,snap:signal_orchard:v110,session:9,110,True,False,True,v32-582783,river lantern loop,0.94,True
+977,70,orchard_riverbend,snap:orchard_riverbend:v107,session:9,107,False,True,True,v32-521444,fen track,0.93632,True
+978,70,central_repair_ring,snap:central_repair_ring:v110,session:9,110,True,False,True,v32-638635,inner repair yard,0.94,True
+979,70,riverbend_roofward,snap:riverbend_roofward:v106,session:9,106,True,False,True,v32-533251,river ford,0.94,True
+980,71,roofward_archive,snap:roofward_archive:v109,session:9,109,True,False,False,v32-519050,glass stair,0.93824,True
+981,71,archive_signal,snap:archive_signal:v109,session:9,109,False,False,False,v32-494621,paper lane,0.94,False
+982,71,signal_orchard,snap:signal_orchard:v111,session:9,111,True,False,True,v32-458408,dusk road,0.94,True
+983,71,orchard_riverbend,snap:orchard_riverbend:v108,session:9,108,False,True,True,v32-521956,fen track,0.94,True
+984,71,central_repair_ring,snap:central_repair_ring:v110,session:9,110,False,False,False,v32-638635,inner repair yard,0.93336,False
+985,71,riverbend_roofward,snap:riverbend_roofward:v106,session:9,106,False,False,False,v32-533251,river ford,0.93648,False
+986,71,roofward_archive,snap:roofward_archive:v110,session:9,110,True,False,True,v32-546979,glass stair,0.92848,True
+987,71,archive_signal,snap:archive_signal:v110,session:9,110,True,False,True,v32-470237,paper lane,0.93736,True
+988,71,signal_orchard,snap:signal_orchard:v111,session:9,111,False,False,False,v32-458408,dusk road,0.94,False
+989,71,orchard_riverbend,snap:orchard_riverbend:v108,session:9,108,False,False,False,v32-500001,fen track,0.93824,False
+990,71,central_repair_ring,snap:central_repair_ring:v111,session:9,111,True,False,False,v32-631997,outer bell path,0.94,True
+991,71,riverbend_roofward,snap:riverbend_roofward:v107,session:9,107,False,True,True,v32-556707,river ford,0.93896,True
+992,71,roofward_archive,snap:roofward_archive:v110,session:9,110,False,False,False,v32-547650,glass stair,0.938662,False
+993,71,archive_signal,snap:archive_signal:v110,session:9,110,False,False,False,v32-492516,paper lane,0.93472,False
+994,72,orchard_riverbend,snap:orchard_riverbend:v109,session:10,109,True,False,True,v32-522604,fen track,0.93472,True
+995,72,central_repair_ring,snap:central_repair_ring:v112,session:10,112,True,False,False,v32-639157,inner repair yard,0.94,True
+996,72,riverbend_roofward,snap:riverbend_roofward:v108,session:10,108,True,True,True,v32-697413,orchard ridge detour,0.94,True
+997,72,roofward_archive,snap:roofward_archive:v111,session:10,111,False,True,True,v32-555370,glass stair,0.94,True
+998,72,archive_signal,snap:archive_signal:v110,session:10,110,False,False,False,v32-492125,paper lane,0.94,False
+999,72,signal_orchard,snap:signal_orchard:v111,session:10,111,False,False,False,v32-458408,dusk road,0.93736,False
+1000,72,orchard_riverbend,snap:orchard_riverbend:v110,session:10,110,True,False,False,v32-649404,market plank route,0.94,True
+1001,72,central_repair_ring,snap:central_repair_ring:v113,session:10,113,True,False,True,v32-639418,inner repair yard,0.93824,True
+1002,72,riverbend_roofward,snap:riverbend_roofward:v109,session:10,109,True,True,True,v32-534007,river ford,0.94,True
+1003,72,roofward_archive,snap:roofward_archive:v111,session:10,111,False,False,False,v32-524585,glass stair,0.936422,False
+1004,72,archive_signal,snap:archive_signal:v111,session:10,111,True,False,True,v32-552250,stone kiosk path,0.94,True
+1005,72,signal_orchard,snap:signal_orchard:v112,session:10,112,False,True,True,v32-480777,dusk road,0.94,True
+1006,72,orchard_riverbend,snap:orchard_riverbend:v111,session:10,111,True,False,True,v32-498505,fen track,0.94,True
+1007,72,central_repair_ring,snap:central_repair_ring:v113,session:10,113,False,False,False,v32-663327,inner repair yard,0.93648,False

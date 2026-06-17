@@ -1,0 +1,1009 @@
+tick_id,day,route_id,branch_a,branch_b,active_branch_before,merge_attempted,merge_success,rollback_available,rollback_taken,active_branch_after,conflict_reason,merge_ui_visible
+0,1,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+1,1,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+2,1,archive_signal,paper lane,stone kiosk path,paper lane,True,True,True,True,paper lane,none,True
+3,1,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+4,1,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+5,1,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,True,True,inner repair yard,none,True
+6,1,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+7,1,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+8,1,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+9,1,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+10,1,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+11,1,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+12,1,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+13,1,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+14,2,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+15,2,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+16,2,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+17,2,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+18,2,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+19,2,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+20,2,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+21,2,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+22,2,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+23,2,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+24,2,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+25,2,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+26,2,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+27,2,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+28,3,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+29,3,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+30,3,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+31,3,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+32,3,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+33,3,signal_orchard,dusk road,river lantern loop,dusk road,False,False,True,True,dusk road,none,True
+34,3,orchard_riverbend,fen track,market plank route,fen track,True,False,False,False,fen track,agent route priorities conflict,True
+35,3,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+36,3,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+37,3,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+38,3,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+39,3,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+40,3,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+41,3,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+42,4,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+43,4,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+44,4,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+45,4,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+46,4,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+47,4,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+48,4,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+49,4,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+50,4,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+51,4,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+52,4,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+53,4,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+54,4,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+55,4,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+56,5,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+57,5,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+58,5,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+59,5,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+60,5,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+61,5,roofward_archive,glass stair,cool archive lane,glass stair,False,False,True,True,glass stair,none,True
+62,5,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+63,5,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+64,5,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+65,5,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+66,5,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+67,5,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+68,5,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,False,False,False,stone kiosk path,agent route priorities conflict,True
+69,5,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+70,6,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+71,6,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+72,6,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+73,6,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,True,True,paper lane,none,True
+74,6,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+75,6,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+76,6,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+77,6,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+78,6,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+79,6,archive_signal,paper lane,stone kiosk path,paper lane,False,False,True,True,paper lane,none,False
+80,6,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+81,6,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+82,6,central_repair_ring,inner repair yard,outer bell path,outer bell path,False,False,False,False,outer bell path,none,False
+83,6,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+84,7,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+85,7,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+86,7,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+87,7,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+88,7,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+89,7,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+90,7,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+91,7,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+92,7,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+93,7,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+94,7,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+95,7,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+96,7,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+97,7,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+98,8,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+99,8,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+100,8,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+101,8,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,True,True,river ford,none,False
+102,8,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+103,8,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+104,8,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+105,8,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+106,8,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+107,8,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,True,True,river ford,none,False
+108,8,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+109,8,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+110,8,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+111,8,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+112,9,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+113,9,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+114,9,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+115,9,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+116,9,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+117,9,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+118,9,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+119,9,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+120,9,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+121,9,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+122,9,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+123,9,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+124,9,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+125,9,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+126,10,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+127,10,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+128,10,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+129,10,orchard_riverbend,fen track,market plank route,fen track,False,False,True,True,fen track,none,False
+130,10,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+131,10,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+132,10,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+133,10,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+134,10,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+135,10,orchard_riverbend,fen track,market plank route,fen track,False,False,True,True,fen track,none,False
+136,10,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,False,False,False,inner repair yard,agent route priorities conflict,True
+137,10,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+138,10,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+139,10,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+140,11,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+141,11,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+142,11,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+143,11,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+144,11,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+145,11,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+146,11,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+147,11,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+148,11,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+149,11,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+150,11,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+151,11,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+152,11,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+153,11,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+154,12,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+155,12,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+156,12,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+157,12,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+158,12,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+159,12,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+160,12,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+161,12,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+162,12,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+163,12,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+164,12,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+165,12,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+166,12,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+167,12,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+168,13,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+169,13,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+170,13,orchard_riverbend,fen track,market plank route,market plank route,True,False,False,False,market plank route,agent route priorities conflict,True
+171,13,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+172,13,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+173,13,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+174,13,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+175,13,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+176,13,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+177,13,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+178,13,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+179,13,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+180,13,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+181,13,signal_orchard,dusk road,river lantern loop,dusk road,False,False,True,True,dusk road,none,False
+182,14,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+183,14,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+184,14,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+185,14,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+186,14,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+187,14,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+188,14,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+189,14,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+190,14,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+191,14,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+192,14,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+193,14,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+194,14,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+195,14,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+196,15,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+197,15,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+198,15,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+199,15,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+200,15,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+201,15,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+202,15,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+203,15,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+204,15,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+205,15,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+206,15,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+207,15,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+208,15,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+209,15,roofward_archive,glass stair,cool archive lane,glass stair,False,False,True,False,glass stair,none,False
+210,16,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+211,16,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+212,16,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+213,16,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+214,16,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+215,16,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+216,16,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+217,16,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+218,16,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+219,16,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+220,16,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+221,16,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+222,16,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+223,16,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+224,17,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+225,17,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+226,17,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+227,17,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+228,17,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+229,17,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+230,17,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+231,17,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+232,17,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+233,17,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+234,17,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+235,17,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+236,17,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+237,17,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,True,True,inner repair yard,none,False
+238,18,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+239,18,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+240,18,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+241,18,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+242,18,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+243,18,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,True,True,river ford,none,False
+244,18,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+245,18,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+246,18,signal_orchard,dusk road,river lantern loop,river lantern loop,False,False,False,False,river lantern loop,none,False
+247,18,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+248,18,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+249,18,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+250,18,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+251,18,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+252,19,signal_orchard,dusk road,river lantern loop,river lantern loop,False,False,False,False,river lantern loop,none,False
+253,19,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+254,19,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+255,19,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+256,19,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+257,19,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+258,19,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+259,19,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+260,19,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+261,19,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+262,19,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+263,19,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+264,19,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+265,19,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+266,20,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+267,20,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+268,20,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+269,20,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+270,20,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+271,20,orchard_riverbend,fen track,market plank route,fen track,False,False,True,True,fen track,none,False
+272,20,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,False,False,False,inner repair yard,agent route priorities conflict,True
+273,20,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+274,20,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+275,20,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+276,20,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+277,20,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+278,20,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+279,20,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+280,21,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+281,21,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+282,21,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+283,21,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+284,21,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+285,21,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+286,21,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+287,21,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+288,21,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+289,21,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+290,21,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+291,21,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+292,21,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+293,21,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+294,22,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+295,22,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+296,22,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+297,22,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+298,22,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+299,22,archive_signal,paper lane,stone kiosk path,paper lane,False,False,True,True,paper lane,none,False
+300,22,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+301,22,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+302,22,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+303,22,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+304,22,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+305,22,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+306,22,signal_orchard,dusk road,river lantern loop,river lantern loop,True,False,False,False,river lantern loop,agent route priorities conflict,True
+307,22,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+308,23,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+309,23,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+310,23,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+311,23,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+312,23,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+313,23,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+314,23,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+315,23,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+316,23,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+317,23,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+318,23,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+319,23,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+320,23,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+321,23,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+322,24,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+323,24,signal_orchard,dusk road,river lantern loop,river lantern loop,True,False,False,False,river lantern loop,agent route priorities conflict,True
+324,24,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+325,24,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+326,24,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+327,24,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+328,24,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+329,24,signal_orchard,dusk road,river lantern loop,river lantern loop,False,False,False,False,river lantern loop,none,False
+330,24,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+331,24,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+332,24,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+333,24,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+334,24,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+335,24,signal_orchard,dusk road,river lantern loop,river lantern loop,False,False,False,False,river lantern loop,none,False
+336,25,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+337,25,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+338,25,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+339,25,roofward_archive,glass stair,cool archive lane,glass stair,False,False,True,True,glass stair,none,False
+340,25,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+341,25,signal_orchard,dusk road,river lantern loop,river lantern loop,False,False,False,False,river lantern loop,none,False
+342,25,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+343,25,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+344,25,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+345,25,roofward_archive,glass stair,cool archive lane,glass stair,False,False,True,True,glass stair,none,False
+346,25,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+347,25,signal_orchard,dusk road,river lantern loop,river lantern loop,False,False,False,False,river lantern loop,none,False
+348,25,orchard_riverbend,fen track,market plank route,market plank route,False,False,False,False,market plank route,none,False
+349,25,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+350,26,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+351,26,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+352,26,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+353,26,signal_orchard,dusk road,river lantern loop,river lantern loop,False,False,False,False,river lantern loop,none,False
+354,26,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+355,26,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+356,26,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+357,26,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+358,26,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+359,26,signal_orchard,dusk road,river lantern loop,river lantern loop,False,False,False,False,river lantern loop,none,False
+360,26,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+361,26,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+362,26,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+363,26,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+364,27,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+365,27,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+366,27,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+367,27,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,True,True,inner repair yard,none,False
+368,27,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+369,27,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+370,27,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+371,27,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+372,27,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+373,27,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,True,True,inner repair yard,none,False
+374,27,riverbend_roofward,river ford,orchard ridge detour,river ford,True,False,False,False,river ford,agent route priorities conflict,True
+375,27,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+376,27,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+377,27,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+378,28,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+379,28,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+380,28,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+381,28,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+382,28,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+383,28,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+384,28,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+385,28,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+386,28,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+387,28,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+388,28,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+389,28,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+390,28,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+391,28,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+392,29,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+393,29,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+394,29,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+395,29,signal_orchard,dusk road,river lantern loop,dusk road,False,False,True,True,dusk road,none,False
+396,29,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+397,29,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+398,29,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+399,29,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+400,29,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+401,29,signal_orchard,dusk road,river lantern loop,dusk road,False,False,True,True,dusk road,none,False
+402,29,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+403,29,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+404,29,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+405,29,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+406,30,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+407,30,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+408,30,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,False,False,False,inner repair yard,agent route priorities conflict,True
+409,30,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+410,30,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+411,30,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+412,30,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+413,30,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+414,30,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+415,30,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+416,30,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+417,30,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+418,30,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+419,30,orchard_riverbend,fen track,market plank route,fen track,False,False,True,True,fen track,none,False
+420,31,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+421,31,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+422,31,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+423,31,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+424,31,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+425,31,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+426,31,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+427,31,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+428,31,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+429,31,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+430,31,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+431,31,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+432,31,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+433,31,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+434,32,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+435,32,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+436,32,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+437,32,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+438,32,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+439,32,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+440,32,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+441,32,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+442,32,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+443,32,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+444,32,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+445,32,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+446,32,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+447,32,archive_signal,paper lane,stone kiosk path,paper lane,False,False,True,True,paper lane,none,False
+448,33,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+449,33,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+450,33,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+451,33,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+452,33,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+453,33,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+454,33,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+455,33,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+456,33,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+457,33,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+458,33,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+459,33,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+460,33,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+461,33,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+462,34,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+463,34,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+464,34,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+465,34,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+466,34,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+467,34,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+468,34,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+469,34,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+470,34,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+471,34,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+472,34,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+473,34,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+474,34,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+475,34,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,True,False,river ford,none,False
+476,35,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+477,35,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+478,35,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+479,35,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+480,35,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+481,35,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+482,35,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+483,35,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+484,35,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+485,35,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+486,35,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+487,35,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+488,35,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+489,35,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+490,36,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+491,36,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+492,36,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+493,36,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+494,36,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+495,36,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+496,36,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+497,36,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+498,36,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+499,36,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+500,36,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+501,36,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+502,36,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+503,36,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+504,37,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+505,37,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+506,37,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+507,37,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+508,37,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+509,37,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,True,True,inner repair yard,none,False
+510,37,riverbend_roofward,river ford,orchard ridge detour,river ford,True,False,False,False,river ford,agent route priorities conflict,True
+511,37,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+512,37,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+513,37,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+514,37,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+515,37,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+516,37,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+517,37,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+518,38,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+519,38,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+520,38,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+521,38,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+522,38,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+523,38,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+524,38,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+525,38,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+526,38,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+527,38,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+528,38,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+529,38,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+530,38,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+531,38,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+532,39,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+533,39,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+534,39,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+535,39,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+536,39,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+537,39,signal_orchard,dusk road,river lantern loop,dusk road,False,False,True,True,dusk road,none,False
+538,39,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+539,39,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+540,39,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+541,39,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+542,39,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+543,39,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+544,39,orchard_riverbend,fen track,market plank route,market plank route,True,False,False,False,market plank route,agent route priorities conflict,True
+545,39,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+546,40,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+547,40,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+548,40,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+549,40,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+550,40,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+551,40,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+552,40,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+553,40,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+554,40,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+555,40,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+556,40,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+557,40,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+558,40,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+559,40,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+560,41,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+561,41,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+562,41,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+563,41,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+564,41,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+565,41,roofward_archive,glass stair,cool archive lane,glass stair,False,False,True,True,glass stair,none,False
+566,41,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+567,41,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+568,41,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+569,41,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+570,41,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+571,41,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+572,41,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+573,41,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+574,42,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+575,42,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+576,42,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+577,42,archive_signal,paper lane,stone kiosk path,paper lane,False,False,True,True,paper lane,none,False
+578,42,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+579,42,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+580,42,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+581,42,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+582,42,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+583,42,archive_signal,paper lane,stone kiosk path,paper lane,False,False,True,True,paper lane,none,False
+584,42,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+585,42,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+586,42,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+587,42,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+588,43,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+589,43,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+590,43,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+591,43,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+592,43,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+593,43,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+594,43,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+595,43,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+596,43,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+597,43,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+598,43,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+599,43,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+600,43,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+601,43,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+602,44,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+603,44,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+604,44,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+605,44,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,True,True,river ford,none,False
+606,44,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+607,44,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+608,44,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+609,44,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+610,44,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+611,44,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,True,True,river ford,none,False
+612,44,roofward_archive,glass stair,cool archive lane,glass stair,True,False,False,False,glass stair,agent route priorities conflict,True
+613,44,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+614,44,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+615,44,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+616,45,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+617,45,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+618,45,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+619,45,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+620,45,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+621,45,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+622,45,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+623,45,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+624,45,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+625,45,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+626,45,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+627,45,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+628,45,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+629,45,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+630,46,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+631,46,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+632,46,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+633,46,orchard_riverbend,fen track,market plank route,fen track,False,False,True,True,fen track,none,False
+634,46,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+635,46,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+636,46,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+637,46,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+638,46,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+639,46,orchard_riverbend,fen track,market plank route,fen track,False,False,True,True,fen track,none,False
+640,46,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+641,46,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+642,46,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+643,46,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+644,47,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+645,47,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+646,47,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,False,False,False,outer bell path,agent route priorities conflict,True
+647,47,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+648,47,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+649,47,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+650,47,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+651,47,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+652,47,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+653,47,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+654,47,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+655,47,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+656,47,signal_orchard,dusk road,river lantern loop,river lantern loop,False,False,False,False,river lantern loop,none,False
+657,47,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+658,48,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+659,48,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+660,48,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+661,48,signal_orchard,dusk road,river lantern loop,river lantern loop,False,False,False,False,river lantern loop,none,False
+662,48,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+663,48,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+664,48,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+665,48,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+666,48,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+667,48,signal_orchard,dusk road,river lantern loop,river lantern loop,False,False,False,False,river lantern loop,none,False
+668,48,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+669,48,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+670,48,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+671,48,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+672,49,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+673,49,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+674,49,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+675,49,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+676,49,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+677,49,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+678,49,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+679,49,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+680,49,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+681,49,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+682,49,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+683,49,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+684,49,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+685,49,signal_orchard,dusk road,river lantern loop,dusk road,False,False,True,True,dusk road,none,False
+686,50,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+687,50,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+688,50,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+689,50,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+690,50,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+691,50,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+692,50,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+693,50,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+694,50,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+695,50,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+696,50,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+697,50,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+698,50,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+699,50,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+700,51,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+701,51,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+702,51,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+703,51,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+704,51,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+705,51,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+706,51,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+707,51,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+708,51,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+709,51,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+710,51,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+711,51,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+712,51,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+713,51,roofward_archive,glass stair,cool archive lane,glass stair,False,False,True,True,glass stair,none,False
+714,52,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+715,52,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+716,52,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+717,52,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+718,52,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+719,52,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+720,52,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+721,52,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+722,52,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+723,52,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+724,52,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+725,52,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+726,52,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+727,52,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+728,53,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+729,53,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+730,53,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+731,53,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+732,53,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+733,53,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+734,53,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+735,53,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+736,53,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+737,53,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+738,53,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+739,53,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+740,53,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+741,53,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,True,False,inner repair yard,none,False
+742,54,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+743,54,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+744,54,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+745,54,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+746,54,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+747,54,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,True,True,river ford,none,False
+748,54,roofward_archive,glass stair,cool archive lane,glass stair,True,False,False,False,glass stair,agent route priorities conflict,True
+749,54,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+750,54,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+751,54,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+752,54,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+753,54,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+754,54,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+755,54,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+756,55,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+757,55,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+758,55,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+759,55,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+760,55,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+761,55,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+762,55,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+763,55,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+764,55,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+765,55,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+766,55,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+767,55,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+768,55,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+769,55,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+770,56,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+771,56,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+772,56,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+773,56,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+774,56,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+775,56,orchard_riverbend,fen track,market plank route,fen track,False,False,True,True,fen track,none,False
+776,56,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+777,56,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+778,56,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+779,56,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+780,56,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+781,56,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+782,56,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,False,False,False,outer bell path,agent route priorities conflict,True
+783,56,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+784,57,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+785,57,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+786,57,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+787,57,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+788,57,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+789,57,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+790,57,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+791,57,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+792,57,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+793,57,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+794,57,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+795,57,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+796,57,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+797,57,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+798,58,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+799,58,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+800,58,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+801,58,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+802,58,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+803,58,archive_signal,paper lane,stone kiosk path,paper lane,False,False,True,True,paper lane,none,False
+804,58,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+805,58,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+806,58,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+807,58,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+808,58,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+809,58,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+810,58,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+811,58,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+812,59,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+813,59,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+814,59,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+815,59,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+816,59,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+817,59,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+818,59,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+819,59,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+820,59,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+821,59,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+822,59,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+823,59,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+824,59,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+825,59,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+826,60,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+827,60,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+828,60,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+829,60,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+830,60,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+831,60,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+832,60,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+833,60,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+834,60,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+835,60,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+836,60,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+837,60,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+838,60,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+839,60,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+840,61,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+841,61,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+842,61,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+843,61,roofward_archive,glass stair,cool archive lane,glass stair,False,False,True,True,glass stair,none,False
+844,61,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+845,61,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+846,61,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+847,61,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+848,61,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+849,61,roofward_archive,glass stair,cool archive lane,glass stair,False,False,True,True,glass stair,none,False
+850,61,archive_signal,paper lane,stone kiosk path,paper lane,True,False,False,False,paper lane,agent route priorities conflict,True
+851,61,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+852,61,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+853,61,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+854,62,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+855,62,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+856,62,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+857,62,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+858,62,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+859,62,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+860,62,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+861,62,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+862,62,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+863,62,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+864,62,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+865,62,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+866,62,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+867,62,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+868,63,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+869,63,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+870,63,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+871,63,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,True,True,inner repair yard,none,False
+872,63,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+873,63,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+874,63,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+875,63,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+876,63,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+877,63,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,True,True,inner repair yard,none,False
+878,63,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+879,63,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+880,63,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+881,63,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+882,64,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+883,64,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+884,64,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,False,False,False,orchard ridge detour,agent route priorities conflict,True
+885,64,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+886,64,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+887,64,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+888,64,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+889,64,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+890,64,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+891,64,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+892,64,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+893,64,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+894,64,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+895,64,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+896,65,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+897,65,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+898,65,archive_signal,paper lane,stone kiosk path,stone kiosk path,True,True,False,False,paper lane,none,True
+899,65,signal_orchard,dusk road,river lantern loop,dusk road,False,False,True,True,dusk road,none,False
+900,65,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+901,65,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+902,65,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+903,65,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+904,65,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+905,65,signal_orchard,dusk road,river lantern loop,dusk road,False,False,True,True,dusk road,none,False
+906,65,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+907,65,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+908,65,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+909,65,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+910,66,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+911,66,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+912,66,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+913,66,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+914,66,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+915,66,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+916,66,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+917,66,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+918,66,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,False,False,False,outer bell path,agent route priorities conflict,True
+919,66,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+920,66,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+921,66,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+922,66,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+923,66,orchard_riverbend,fen track,market plank route,fen track,False,False,True,True,fen track,none,False
+924,67,central_repair_ring,inner repair yard,outer bell path,outer bell path,False,False,False,False,outer bell path,none,False
+925,67,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+926,67,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+927,67,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+928,67,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+929,67,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+930,67,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+931,67,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+932,67,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+933,67,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+934,67,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+935,67,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+936,67,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+937,67,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+938,68,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+939,68,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+940,68,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+941,68,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+942,68,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+943,68,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+944,68,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+945,68,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+946,68,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+947,68,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+948,68,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+949,68,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+950,68,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+951,68,archive_signal,paper lane,stone kiosk path,paper lane,False,False,True,True,paper lane,none,False
+952,69,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+953,69,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+954,69,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+955,69,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+956,69,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+957,69,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+958,69,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+959,69,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+960,69,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+961,69,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+962,69,roofward_archive,glass stair,cool archive lane,glass stair,True,True,False,False,cool archive lane,none,True
+963,69,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+964,69,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+965,69,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+966,70,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+967,70,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+968,70,roofward_archive,glass stair,cool archive lane,cool archive lane,True,True,False,False,glass stair,none,True
+969,70,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+970,70,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+971,70,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+972,70,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+973,70,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+974,70,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+975,70,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+976,70,signal_orchard,dusk road,river lantern loop,dusk road,True,True,False,False,river lantern loop,none,True
+977,70,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+978,70,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+979,70,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,True,True,river ford,none,False
+980,71,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+981,71,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+982,71,signal_orchard,dusk road,river lantern loop,river lantern loop,True,True,False,False,dusk road,none,True
+983,71,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+984,71,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+985,71,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+986,71,roofward_archive,glass stair,cool archive lane,glass stair,True,False,False,False,glass stair,agent route priorities conflict,True
+987,71,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+988,71,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+989,71,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+990,71,central_repair_ring,inner repair yard,outer bell path,inner repair yard,True,True,False,False,outer bell path,none,True
+991,71,riverbend_roofward,river ford,orchard ridge detour,river ford,False,False,False,False,river ford,none,False
+992,71,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+993,71,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+994,72,orchard_riverbend,fen track,market plank route,fen track,False,False,False,False,fen track,none,False
+995,72,central_repair_ring,inner repair yard,outer bell path,outer bell path,True,True,False,False,inner repair yard,none,True
+996,72,riverbend_roofward,river ford,orchard ridge detour,river ford,True,True,False,False,orchard ridge detour,none,True
+997,72,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+998,72,archive_signal,paper lane,stone kiosk path,paper lane,False,False,False,False,paper lane,none,False
+999,72,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+1000,72,orchard_riverbend,fen track,market plank route,fen track,True,True,False,False,market plank route,none,True
+1001,72,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False
+1002,72,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,True,True,False,False,river ford,none,True
+1003,72,roofward_archive,glass stair,cool archive lane,glass stair,False,False,False,False,glass stair,none,False
+1004,72,archive_signal,paper lane,stone kiosk path,paper lane,True,True,False,False,stone kiosk path,none,True
+1005,72,signal_orchard,dusk road,river lantern loop,dusk road,False,False,False,False,dusk road,none,False
+1006,72,orchard_riverbend,fen track,market plank route,market plank route,True,True,False,False,fen track,none,True
+1007,72,central_repair_ring,inner repair yard,outer bell path,inner repair yard,False,False,False,False,inner repair yard,none,False

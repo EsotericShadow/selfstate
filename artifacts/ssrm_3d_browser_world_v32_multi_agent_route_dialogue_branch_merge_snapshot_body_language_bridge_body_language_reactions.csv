@@ -1,0 +1,1009 @@
+tick_id,day,route_id,agent,posture_before,posture_after,gaze,distance,gesture,reaction_trigger,body_language_visible,persists_after_reload
+0,1,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,reload,True,True
+1,1,roofward_archive,Nia,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+2,1,archive_signal,Nia,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+3,1,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+4,1,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+5,1,central_repair_ring,Pax,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+6,1,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+7,1,roofward_archive,Nia,relieved reset stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+8,1,archive_signal,Nia,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+9,1,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+10,1,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+11,1,central_repair_ring,Pax,relieved reset stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+12,1,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+13,1,roofward_archive,Nia,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+14,2,archive_signal,Nia,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,reload,True,True
+15,2,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+16,2,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+17,2,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+18,2,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+19,2,roofward_archive,Nia,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+20,2,archive_signal,Nia,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+21,2,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+22,2,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+23,2,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+24,2,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+25,2,roofward_archive,Nia,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+26,2,archive_signal,Nia,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+27,2,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+28,3,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,reload,True,True
+29,3,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+30,3,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+31,3,roofward_archive,Nia,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,reload,True,True
+32,3,archive_signal,Nia,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+33,3,signal_orchard,Ivo,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+34,3,orchard_riverbend,Ivo,relieved reset stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+35,3,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+36,3,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+37,3,roofward_archive,Nia,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+38,3,archive_signal,Nia,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+39,3,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+40,3,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+41,3,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+42,4,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,reload,True,True
+43,4,roofward_archive,Nia,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+44,4,archive_signal,Nia,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+45,4,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+46,4,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+47,4,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+48,4,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+49,4,roofward_archive,Nia,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+50,4,archive_signal,Nia,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+51,4,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+52,4,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+53,4,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+54,4,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+55,4,roofward_archive,Nia,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+56,5,archive_signal,Nia,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,reload,True,True
+57,5,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+58,5,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+59,5,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+60,5,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,toward avatar,0.34,open palm,dialogue,True,False
+61,5,roofward_archive,Nia,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+62,5,archive_signal,Nia,relieved reset stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,True
+63,5,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+64,5,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+65,5,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+66,5,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,toward route board,0.34,open palm,merge,True,False
+67,5,roofward_archive,Nia,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+68,5,archive_signal,Nia,watchful neutral stance,watchful neutral stance,toward avatar,0.34,open palm,dialogue,True,False
+69,5,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+70,6,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,True
+71,6,riverbend_roofward,Fay,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+72,6,roofward_archive,Fay,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+73,6,archive_signal,Milo,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+74,6,signal_orchard,Milo,relieved reset stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+75,6,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+76,6,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+77,6,riverbend_roofward,Fay,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+78,6,roofward_archive,Fay,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+79,6,archive_signal,Milo,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+80,6,signal_orchard,Milo,relieved reset stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+81,6,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+82,6,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+83,6,riverbend_roofward,Fay,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+84,7,roofward_archive,Fay,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,reload,True,True
+85,7,archive_signal,Milo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+86,7,signal_orchard,Milo,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+87,7,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+88,7,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+89,7,riverbend_roofward,Fay,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+90,7,roofward_archive,Fay,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+91,7,archive_signal,Milo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+92,7,signal_orchard,Milo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+93,7,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,reload,True,True
+94,7,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+95,7,riverbend_roofward,Fay,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+96,7,roofward_archive,Fay,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+97,7,archive_signal,Milo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+98,8,signal_orchard,Milo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,True
+99,8,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+100,8,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+101,8,riverbend_roofward,Fay,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+102,8,roofward_archive,Fay,relieved reset stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+103,8,archive_signal,Milo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+104,8,signal_orchard,Milo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+105,8,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+106,8,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+107,8,riverbend_roofward,Fay,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+108,8,roofward_archive,Fay,relieved reset stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+109,8,archive_signal,Milo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+110,8,signal_orchard,Milo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+111,8,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+112,9,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,reload,True,True
+113,9,riverbend_roofward,Fay,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+114,9,roofward_archive,Fay,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+115,9,archive_signal,Milo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+116,9,signal_orchard,Milo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+117,9,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+118,9,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+119,9,riverbend_roofward,Fay,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+120,9,roofward_archive,Fay,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+121,9,archive_signal,Milo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+122,9,signal_orchard,Milo,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+123,9,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+124,9,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,True
+125,9,riverbend_roofward,Fay,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+126,10,roofward_archive,Fay,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,True
+127,10,archive_signal,Milo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+128,10,signal_orchard,Milo,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+129,10,orchard_riverbend,Ari,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+130,10,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+131,10,riverbend_roofward,Fay,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+132,10,roofward_archive,Fay,watchful neutral stance,watchful neutral stance,toward avatar,0.34,open palm,dialogue,True,False
+133,10,archive_signal,Milo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+134,10,signal_orchard,Milo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+135,10,orchard_riverbend,Ari,relieved reset stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+136,10,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+137,10,riverbend_roofward,Fay,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+138,10,roofward_archive,Fay,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+139,10,archive_signal,Milo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+140,11,signal_orchard,Milo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,reload,True,True
+141,11,orchard_riverbend,Ari,relieved reset stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+142,11,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+143,11,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+144,11,roofward_archive,Fay,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+145,11,archive_signal,Milo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+146,11,signal_orchard,Milo,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+147,11,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+148,11,central_repair_ring,Juno,watchful neutral stance,watchful neutral stance,toward avatar,0.34,open palm,dialogue,True,False
+149,11,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+150,11,roofward_archive,Fay,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+151,11,archive_signal,Milo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+152,11,signal_orchard,Milo,watchful neutral stance,watchful neutral stance,toward avatar,0.34,open palm,dialogue,True,False
+153,11,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+154,12,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,side glance,0.34,open palm,reload,True,True
+155,12,roofward_archive,Nia,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,True
+156,12,archive_signal,Nia,watchful neutral stance,watchful neutral stance,toward route board,0.34,open palm,merge,True,False
+157,12,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+158,12,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+159,12,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+160,12,riverbend_roofward,Ari,watchful neutral stance,watchful neutral stance,toward route board,0.34,open palm,merge,True,False
+161,12,roofward_archive,Nia,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+162,12,archive_signal,Nia,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+163,12,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+164,12,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+165,12,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+166,12,riverbend_roofward,Ari,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+167,12,roofward_archive,Nia,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+168,13,archive_signal,Nia,watchful neutral stance,open forward lean,side glance,0.34,open palm,reload,True,True
+169,13,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+170,13,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward route board,0.42,small nod,merge,True,False
+171,13,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+172,13,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+173,13,roofward_archive,Nia,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+174,13,archive_signal,Nia,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+175,13,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+176,13,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward avatar,0.34,open palm,dialogue,True,False
+177,13,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+178,13,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+179,13,roofward_archive,Nia,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+180,13,archive_signal,Nia,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+181,13,signal_orchard,Ivo,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+182,14,orchard_riverbend,Ivo,relieved reset stance,watchful neutral stance,side glance,0.34,open palm,reload,True,True
+183,14,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+184,14,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+185,14,roofward_archive,Nia,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+186,14,archive_signal,Nia,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+187,14,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+188,14,orchard_riverbend,Ivo,watchful neutral stance,watchful neutral stance,toward route board,0.34,open palm,merge,True,False
+189,14,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+190,14,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+191,14,roofward_archive,Nia,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+192,14,archive_signal,Nia,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+193,14,signal_orchard,Ivo,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+194,14,orchard_riverbend,Ivo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+195,14,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+196,15,riverbend_roofward,Ari,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+197,15,roofward_archive,Nia,open forward lean,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+198,15,archive_signal,Nia,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+199,15,signal_orchard,Ivo,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+200,15,orchard_riverbend,Ivo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+201,15,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+202,15,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+203,15,roofward_archive,Nia,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+204,15,archive_signal,Nia,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+205,15,signal_orchard,Ivo,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+206,15,orchard_riverbend,Ivo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+207,15,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+208,15,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+209,15,roofward_archive,Nia,open forward lean,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+210,16,archive_signal,Nia,watchful neutral stance,open forward lean,side glance,0.34,open palm,reload,True,True
+211,16,signal_orchard,Ivo,open forward lean,watchful neutral stance,toward avatar,0.34,open palm,dialogue,True,False
+212,16,orchard_riverbend,Ivo,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+213,16,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+214,16,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+215,16,roofward_archive,Nia,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+216,16,archive_signal,Nia,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+217,16,signal_orchard,Ivo,open forward lean,watchful neutral stance,side glance,0.34,open palm,reload,True,True
+218,16,orchard_riverbend,Ivo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+219,16,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+220,16,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+221,16,roofward_archive,Nia,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+222,16,archive_signal,Nia,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+223,16,signal_orchard,Ivo,open forward lean,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+224,17,orchard_riverbend,Ivo,watchful neutral stance,open forward lean,side glance,0.34,open palm,reload,True,True
+225,17,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+226,17,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+227,17,roofward_archive,Nia,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+228,17,archive_signal,Nia,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+229,17,signal_orchard,Ivo,open forward lean,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+230,17,orchard_riverbend,Ivo,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+231,17,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+232,17,riverbend_roofward,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+233,17,roofward_archive,Nia,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+234,17,archive_signal,Nia,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+235,17,signal_orchard,Ivo,open forward lean,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+236,17,orchard_riverbend,Ivo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+237,17,central_repair_ring,Pax,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+238,18,roofward_archive,Fay,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+239,18,archive_signal,Milo,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+240,18,signal_orchard,Milo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+241,18,orchard_riverbend,Ari,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+242,18,central_repair_ring,Juno,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+243,18,riverbend_roofward,Fay,open forward lean,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+244,18,roofward_archive,Fay,relieved reset stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+245,18,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+246,18,signal_orchard,Milo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+247,18,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+248,18,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,True
+249,18,riverbend_roofward,Fay,open forward lean,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+250,18,roofward_archive,Fay,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+251,18,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+252,19,signal_orchard,Milo,watchful neutral stance,open forward lean,side glance,0.34,open palm,reload,True,True
+253,19,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+254,19,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+255,19,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+256,19,roofward_archive,Fay,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+257,19,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+258,19,signal_orchard,Milo,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+259,19,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+260,19,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+261,19,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+262,19,roofward_archive,Fay,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+263,19,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+264,19,signal_orchard,Milo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+265,19,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+266,20,central_repair_ring,Juno,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+267,20,riverbend_roofward,Fay,open forward lean,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+268,20,roofward_archive,Fay,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+269,20,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+270,20,signal_orchard,Milo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+271,20,orchard_riverbend,Ari,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+272,20,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+273,20,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+274,20,roofward_archive,Fay,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+275,20,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+276,20,signal_orchard,Milo,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+277,20,orchard_riverbend,Ari,relieved reset stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+278,20,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+279,20,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.42,small nod,reload,True,True
+280,21,roofward_archive,Fay,watchful neutral stance,open forward lean,side glance,0.34,open palm,reload,True,True
+281,21,archive_signal,Milo,open forward lean,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+282,21,signal_orchard,Milo,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+283,21,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+284,21,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+285,21,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+286,21,roofward_archive,Fay,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+287,21,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+288,21,signal_orchard,Milo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+289,21,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+290,21,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+291,21,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+292,21,roofward_archive,Fay,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+293,21,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+294,22,signal_orchard,Milo,watchful neutral stance,open forward lean,side glance,0.34,open palm,reload,True,True
+295,22,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,toward avatar,0.34,open palm,dialogue,True,False
+296,22,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+297,22,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+298,22,roofward_archive,Fay,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+299,22,archive_signal,Milo,open forward lean,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+300,22,signal_orchard,Milo,relieved reset stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+301,22,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+302,22,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+303,22,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+304,22,roofward_archive,Fay,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+305,22,archive_signal,Milo,open forward lean,watchful neutral stance,toward avatar,0.34,open palm,dialogue,True,False
+306,22,signal_orchard,Milo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+307,22,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+308,23,central_repair_ring,Juno,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+309,23,riverbend_roofward,Fay,open forward lean,watchful neutral stance,toward avatar,0.34,open palm,dialogue,True,False
+310,23,roofward_archive,Fay,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,True
+311,23,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+312,23,signal_orchard,Milo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+313,23,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+314,23,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+315,23,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+316,23,roofward_archive,Fay,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+317,23,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+318,23,signal_orchard,Milo,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+319,23,orchard_riverbend,Ari,watchful neutral stance,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+320,23,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+321,23,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+322,24,archive_signal,Nia,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+323,24,signal_orchard,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+324,24,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+325,24,central_repair_ring,Pax,relieved reset stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+326,24,riverbend_roofward,Ari,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+327,24,roofward_archive,Nia,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+328,24,archive_signal,Nia,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+329,24,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+330,24,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+331,24,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+332,24,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+333,24,roofward_archive,Nia,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+334,24,archive_signal,Nia,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+335,24,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+336,25,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+337,25,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,toward avatar,0.42,small nod,dialogue,True,False
+338,25,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+339,25,roofward_archive,Nia,open forward lean,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+340,25,archive_signal,Nia,relieved reset stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+341,25,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+342,25,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+343,25,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+344,25,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+345,25,roofward_archive,Nia,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+346,25,archive_signal,Nia,relieved reset stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+347,25,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+348,25,orchard_riverbend,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+349,25,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+350,26,riverbend_roofward,Ari,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+351,26,roofward_archive,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+352,26,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+353,26,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+354,26,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+355,26,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+356,26,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+357,26,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+358,26,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+359,26,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+360,26,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+361,26,central_repair_ring,Pax,watchful neutral stance,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+362,26,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+363,26,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+364,27,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+365,27,signal_orchard,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+366,27,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+367,27,central_repair_ring,Pax,watchful neutral stance,relieved reset stance,toward avatar,0.42,small nod,dialogue,True,False
+368,27,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+369,27,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+370,27,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+371,27,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+372,27,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+373,27,central_repair_ring,Pax,relieved reset stance,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+374,27,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+375,27,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+376,27,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+377,27,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+378,28,orchard_riverbend,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+379,28,central_repair_ring,Pax,relieved reset stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+380,28,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+381,28,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+382,28,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+383,28,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+384,28,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+385,28,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+386,28,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+387,28,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+388,28,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+389,28,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+390,28,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+391,28,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+392,29,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+393,29,roofward_archive,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+394,29,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+395,29,signal_orchard,Ivo,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+396,29,orchard_riverbend,Ivo,relieved reset stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+397,29,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+398,29,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+399,29,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+400,29,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+401,29,signal_orchard,Ivo,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+402,29,orchard_riverbend,Ivo,relieved reset stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+403,29,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+404,29,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+405,29,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+406,30,signal_orchard,Milo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+407,30,orchard_riverbend,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+408,30,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+409,30,riverbend_roofward,Fay,watchful neutral stance,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+410,30,roofward_archive,Fay,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+411,30,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+412,30,signal_orchard,Milo,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+413,30,orchard_riverbend,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+414,30,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+415,30,riverbend_roofward,Fay,open forward lean,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+416,30,roofward_archive,Fay,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+417,30,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+418,30,signal_orchard,Milo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+419,30,orchard_riverbend,Ari,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+420,31,central_repair_ring,Juno,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+421,31,riverbend_roofward,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+422,31,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+423,31,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+424,31,signal_orchard,Milo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+425,31,orchard_riverbend,Ari,relieved reset stance,open forward lean,side glance,0.34,open palm,ambient,False,False
+426,31,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+427,31,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+428,31,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+429,31,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.34,open palm,ambient,False,False
+430,31,signal_orchard,Milo,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+431,31,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+432,31,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+433,31,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+434,32,roofward_archive,Fay,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+435,32,archive_signal,Milo,open forward lean,watchful neutral stance,side glance,0.42,small nod,ambient,False,False
+436,32,signal_orchard,Milo,watchful neutral stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+437,32,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+438,32,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+439,32,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+440,32,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+441,32,archive_signal,Milo,open forward lean,watchful neutral stance,toward avatar,0.34,open palm,dialogue,True,False
+442,32,signal_orchard,Milo,watchful neutral stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+443,32,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+444,32,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+445,32,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+446,32,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+447,32,archive_signal,Milo,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+448,33,signal_orchard,Milo,relieved reset stance,open forward lean,side glance,0.34,open palm,reload,True,True
+449,33,orchard_riverbend,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+450,33,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+451,33,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+452,33,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+453,33,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+454,33,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+455,33,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+456,33,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+457,33,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+458,33,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+459,33,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+460,33,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+461,33,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+462,34,central_repair_ring,Juno,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+463,34,riverbend_roofward,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+464,34,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+465,34,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+466,34,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+467,34,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+468,34,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+469,34,riverbend_roofward,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+470,34,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+471,34,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+472,34,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+473,34,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+474,34,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+475,34,riverbend_roofward,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+476,35,roofward_archive,Fay,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+477,35,archive_signal,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+478,35,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+479,35,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+480,35,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+481,35,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+482,35,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+483,35,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+484,35,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+485,35,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+486,35,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+487,35,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+488,35,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+489,35,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+490,36,orchard_riverbend,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+491,36,central_repair_ring,Pax,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+492,36,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+493,36,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+494,36,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+495,36,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+496,36,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,True
+497,36,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+498,36,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+499,36,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+500,36,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+501,36,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+502,36,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+503,36,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+504,37,riverbend_roofward,Ari,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+505,37,roofward_archive,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+506,37,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+507,37,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+508,37,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+509,37,central_repair_ring,Pax,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+510,37,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+511,37,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+512,37,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+513,37,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+514,37,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+515,37,central_repair_ring,Pax,relieved reset stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+516,37,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+517,37,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+518,38,archive_signal,Nia,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+519,38,signal_orchard,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+520,38,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+521,38,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+522,38,riverbend_roofward,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+523,38,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+524,38,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+525,38,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+526,38,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+527,38,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+528,38,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+529,38,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+530,38,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+531,38,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+532,39,orchard_riverbend,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+533,39,central_repair_ring,Pax,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+534,39,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+535,39,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+536,39,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+537,39,signal_orchard,Ivo,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+538,39,orchard_riverbend,Ivo,relieved reset stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+539,39,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+540,39,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+541,39,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+542,39,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+543,39,signal_orchard,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+544,39,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+545,39,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+546,40,riverbend_roofward,Ari,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+547,40,roofward_archive,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+548,40,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+549,40,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+550,40,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+551,40,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+552,40,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+553,40,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+554,40,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+555,40,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+556,40,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+557,40,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+558,40,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+559,40,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+560,41,archive_signal,Nia,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+561,41,signal_orchard,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+562,41,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+563,41,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+564,41,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+565,41,roofward_archive,Nia,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+566,41,archive_signal,Nia,relieved reset stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+567,41,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+568,41,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+569,41,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+570,41,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+571,41,roofward_archive,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+572,41,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+573,41,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+574,42,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+575,42,riverbend_roofward,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+576,42,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+577,42,archive_signal,Milo,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+578,42,signal_orchard,Milo,relieved reset stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+579,42,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+580,42,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+581,42,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+582,42,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+583,42,archive_signal,Milo,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+584,42,signal_orchard,Milo,relieved reset stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+585,42,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+586,42,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+587,42,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+588,43,roofward_archive,Fay,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+589,43,archive_signal,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+590,43,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+591,43,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+592,43,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+593,43,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+594,43,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+595,43,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+596,43,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+597,43,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+598,43,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+599,43,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+600,43,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+601,43,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+602,44,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+603,44,orchard_riverbend,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+604,44,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+605,44,riverbend_roofward,Fay,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+606,44,roofward_archive,Fay,relieved reset stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+607,44,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+608,44,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+609,44,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+610,44,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+611,44,riverbend_roofward,Fay,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+612,44,roofward_archive,Fay,relieved reset stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+613,44,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+614,44,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+615,44,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+616,45,central_repair_ring,Juno,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+617,45,riverbend_roofward,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+618,45,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+619,45,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+620,45,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+621,45,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+622,45,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+623,45,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+624,45,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+625,45,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+626,45,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+627,45,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+628,45,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+629,45,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+630,46,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+631,46,archive_signal,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+632,46,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+633,46,orchard_riverbend,Ari,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+634,46,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+635,46,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+636,46,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+637,46,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+638,46,signal_orchard,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+639,46,orchard_riverbend,Ari,relieved reset stance,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+640,46,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+641,46,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+642,46,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+643,46,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+644,47,signal_orchard,Milo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+645,47,orchard_riverbend,Ari,relieved reset stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+646,47,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+647,47,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+648,47,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+649,47,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+650,47,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+651,47,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+652,47,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+653,47,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+654,47,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+655,47,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+656,47,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+657,47,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+658,48,riverbend_roofward,Ari,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+659,48,roofward_archive,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+660,48,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+661,48,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+662,48,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+663,48,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+664,48,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+665,48,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+666,48,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+667,48,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+668,48,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+669,48,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+670,48,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+671,48,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+672,49,archive_signal,Nia,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+673,49,signal_orchard,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+674,49,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+675,49,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+676,49,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+677,49,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+678,49,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+679,49,signal_orchard,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+680,49,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+681,49,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+682,49,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+683,49,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+684,49,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+685,49,signal_orchard,Ivo,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+686,50,orchard_riverbend,Ivo,relieved reset stance,open forward lean,side glance,0.34,open palm,reload,True,True
+687,50,central_repair_ring,Pax,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+688,50,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+689,50,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+690,50,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+691,50,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+692,50,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+693,50,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+694,50,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+695,50,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+696,50,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+697,50,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+698,50,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+699,50,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+700,51,riverbend_roofward,Ari,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+701,51,roofward_archive,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+702,51,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+703,51,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+704,51,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+705,51,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+706,51,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+707,51,roofward_archive,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+708,51,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+709,51,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+710,51,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+711,51,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+712,51,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+713,51,roofward_archive,Nia,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,True
+714,52,archive_signal,Nia,relieved reset stance,open forward lean,side glance,0.34,open palm,reload,True,True
+715,52,signal_orchard,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+716,52,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+717,52,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+718,52,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+719,52,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+720,52,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+721,52,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+722,52,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+723,52,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+724,52,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+725,52,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+726,52,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+727,52,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+728,53,orchard_riverbend,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+729,53,central_repair_ring,Pax,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+730,53,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+731,53,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+732,53,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+733,53,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+734,53,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+735,53,central_repair_ring,Pax,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+736,53,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+737,53,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+738,53,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+739,53,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+740,53,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+741,53,central_repair_ring,Pax,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+742,54,roofward_archive,Fay,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+743,54,archive_signal,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+744,54,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+745,54,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+746,54,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+747,54,riverbend_roofward,Fay,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+748,54,roofward_archive,Fay,relieved reset stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+749,54,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+750,54,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+751,54,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+752,54,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+753,54,riverbend_roofward,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+754,54,roofward_archive,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+755,54,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+756,55,signal_orchard,Milo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+757,55,orchard_riverbend,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+758,55,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+759,55,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+760,55,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+761,55,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+762,55,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+763,55,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+764,55,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+765,55,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+766,55,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+767,55,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+768,55,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+769,55,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+770,56,central_repair_ring,Juno,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+771,56,riverbend_roofward,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+772,56,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+773,56,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+774,56,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+775,56,orchard_riverbend,Ari,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,True
+776,56,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+777,56,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+778,56,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+779,56,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+780,56,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+781,56,orchard_riverbend,Ari,relieved reset stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+782,56,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+783,56,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+784,57,roofward_archive,Fay,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+785,57,archive_signal,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+786,57,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+787,57,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+788,57,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+789,57,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+790,57,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+791,57,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+792,57,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+793,57,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+794,57,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+795,57,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+796,57,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+797,57,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+798,58,signal_orchard,Milo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+799,58,orchard_riverbend,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+800,58,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+801,58,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+802,58,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+803,58,archive_signal,Milo,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+804,58,signal_orchard,Milo,relieved reset stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+805,58,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+806,58,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+807,58,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+808,58,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+809,58,archive_signal,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+810,58,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+811,58,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+812,59,central_repair_ring,Juno,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+813,59,riverbend_roofward,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+814,59,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+815,59,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+816,59,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+817,59,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+818,59,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+819,59,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+820,59,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+821,59,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+822,59,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+823,59,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+824,59,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+825,59,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+826,60,archive_signal,Nia,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+827,60,signal_orchard,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+828,60,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+829,60,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+830,60,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+831,60,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+832,60,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+833,60,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+834,60,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+835,60,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+836,60,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+837,60,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+838,60,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+839,60,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+840,61,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+841,61,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+842,61,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+843,61,roofward_archive,Nia,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+844,61,archive_signal,Nia,relieved reset stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+845,61,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+846,61,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+847,61,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+848,61,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+849,61,roofward_archive,Nia,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+850,61,archive_signal,Nia,relieved reset stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+851,61,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+852,61,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+853,61,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+854,62,riverbend_roofward,Ari,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+855,62,roofward_archive,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+856,62,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+857,62,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+858,62,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+859,62,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+860,62,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+861,62,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+862,62,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+863,62,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+864,62,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+865,62,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+866,62,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+867,62,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+868,63,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+869,63,signal_orchard,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+870,63,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+871,63,central_repair_ring,Pax,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+872,63,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+873,63,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+874,63,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+875,63,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+876,63,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+877,63,central_repair_ring,Pax,relieved reset stance,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+878,63,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+879,63,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+880,63,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+881,63,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+882,64,orchard_riverbend,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+883,64,central_repair_ring,Pax,relieved reset stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+884,64,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+885,64,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+886,64,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+887,64,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+888,64,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+889,64,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+890,64,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+891,64,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+892,64,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+893,64,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+894,64,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+895,64,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+896,65,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+897,65,roofward_archive,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+898,65,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+899,65,signal_orchard,Ivo,open forward lean,relieved reset stance,side glance,0.34,open palm,rollback,True,True
+900,65,orchard_riverbend,Ivo,relieved reset stance,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+901,65,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+902,65,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+903,65,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+904,65,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+905,65,signal_orchard,Ivo,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+906,65,orchard_riverbend,Ivo,relieved reset stance,open forward lean,toward route board,0.34,open palm,merge,True,False
+907,65,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+908,65,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+909,65,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+910,66,signal_orchard,Milo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+911,66,orchard_riverbend,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+912,66,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+913,66,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+914,66,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+915,66,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+916,66,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+917,66,orchard_riverbend,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+918,66,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+919,66,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+920,66,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+921,66,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+922,66,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+923,66,orchard_riverbend,Ari,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+924,67,central_repair_ring,Juno,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+925,67,riverbend_roofward,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+926,67,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+927,67,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+928,67,signal_orchard,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+929,67,orchard_riverbend,Ari,relieved reset stance,open forward lean,side glance,0.34,open palm,ambient,False,False
+930,67,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,True
+931,67,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+932,67,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+933,67,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+934,67,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+935,67,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+936,67,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+937,67,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+938,68,roofward_archive,Fay,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+939,68,archive_signal,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+940,68,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+941,68,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+942,68,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+943,68,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+944,68,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+945,68,archive_signal,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+946,68,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+947,68,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+948,68,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+949,68,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+950,68,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+951,68,archive_signal,Milo,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+952,69,signal_orchard,Milo,relieved reset stance,open forward lean,side glance,0.34,open palm,reload,True,True
+953,69,orchard_riverbend,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+954,69,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+955,69,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+956,69,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+957,69,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+958,69,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+959,69,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+960,69,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+961,69,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+962,69,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+963,69,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+964,69,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+965,69,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+966,70,central_repair_ring,Juno,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+967,70,riverbend_roofward,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+968,70,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+969,70,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+970,70,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+971,70,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+972,70,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+973,70,riverbend_roofward,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+974,70,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+975,70,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+976,70,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+977,70,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+978,70,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+979,70,riverbend_roofward,Fay,open forward lean,relieved reset stance,toward avatar,0.34,open palm,dialogue,True,False
+980,71,roofward_archive,Fay,relieved reset stance,open forward lean,side glance,0.34,open palm,reload,True,True
+981,71,archive_signal,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+982,71,signal_orchard,Milo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+983,71,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+984,71,central_repair_ring,Juno,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+985,71,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+986,71,roofward_archive,Fay,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+987,71,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+988,71,signal_orchard,Milo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+989,71,orchard_riverbend,Ari,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+990,71,central_repair_ring,Juno,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+991,71,riverbend_roofward,Fay,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+992,71,roofward_archive,Fay,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,True
+993,71,archive_signal,Milo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+994,72,orchard_riverbend,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,reload,True,True
+995,72,central_repair_ring,Pax,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+996,72,riverbend_roofward,Ari,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+997,72,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+998,72,archive_signal,Nia,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+999,72,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+1000,72,orchard_riverbend,Ivo,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+1001,72,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+1002,72,riverbend_roofward,Ari,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+1003,72,roofward_archive,Nia,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+1004,72,archive_signal,Nia,open forward lean,open forward lean,toward route board,0.34,open palm,merge,True,False
+1005,72,signal_orchard,Ivo,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False
+1006,72,orchard_riverbend,Ivo,open forward lean,open forward lean,toward avatar,0.34,open palm,dialogue,True,False
+1007,72,central_repair_ring,Pax,open forward lean,open forward lean,side glance,0.34,open palm,ambient,False,False

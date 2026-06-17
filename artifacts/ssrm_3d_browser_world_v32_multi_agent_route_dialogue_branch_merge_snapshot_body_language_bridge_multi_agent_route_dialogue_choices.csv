@@ -1,0 +1,1009 @@
+tick_id,day,tick,route_id,speaker,listener,dialogue_choice_id,choice_label,selected,choice_valid,consequence_kind,public_text,private_workspace_sealed,visible_choice_button
+0,1,0,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:1:0:Ari,ask to keep direct route,False,False,none,none,True,False
+1,1,1,roofward_archive,Nia,Fay,choice:roofward_archive:1:1:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+2,1,2,archive_signal,Nia,Milo,choice:archive_signal:1:2:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+3,1,3,signal_orchard,Ivo,Milo,choice:signal_orchard:1:3:Ivo,ask to keep direct route,False,False,none,none,True,False
+4,1,4,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:1:4:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+5,1,5,central_repair_ring,Pax,Juno,choice:central_repair_ring:1:5:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+6,1,6,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:1:6:Ari,ask to keep direct route,False,False,none,none,True,False
+7,1,7,roofward_archive,Nia,Fay,choice:roofward_archive:1:7:Nia,ask to keep direct route,False,False,none,none,True,False
+8,1,8,archive_signal,Nia,Milo,choice:archive_signal:1:8:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+9,1,9,signal_orchard,Ivo,Milo,choice:signal_orchard:1:9:Ivo,ask to keep direct route,False,False,none,none,True,False
+10,1,10,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:1:10:Ivo,ask to keep direct route,False,False,none,none,True,False
+11,1,11,central_repair_ring,Pax,Juno,choice:central_repair_ring:1:11:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+12,1,12,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:1:12:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+13,1,13,roofward_archive,Nia,Fay,choice:roofward_archive:1:13:Nia,ask to keep direct route,False,False,none,none,True,False
+14,2,0,archive_signal,Nia,Milo,choice:archive_signal:2:0:Nia,ask to keep direct route,False,False,none,none,True,False
+15,2,1,signal_orchard,Ivo,Milo,choice:signal_orchard:2:1:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+16,2,2,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:2:2:Ivo,ask to merge detour,False,False,none,none,True,False
+17,2,3,central_repair_ring,Pax,Juno,choice:central_repair_ring:2:3:Pax,ask to keep direct route,False,False,none,none,True,False
+18,2,4,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:2:4:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+19,2,5,roofward_archive,Nia,Fay,choice:roofward_archive:2:5:Nia,ask to keep direct route,False,False,none,none,True,False
+20,2,6,archive_signal,Nia,Milo,choice:archive_signal:2:6:Nia,ask to keep direct route,False,False,none,none,True,False
+21,2,7,signal_orchard,Ivo,Milo,choice:signal_orchard:2:7:Ivo,ask to keep direct route,False,False,none,none,True,False
+22,2,8,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:2:8:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+23,2,9,central_repair_ring,Pax,Juno,choice:central_repair_ring:2:9:Pax,ask to keep direct route,False,False,none,none,True,False
+24,2,10,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:2:10:Ari,ask to keep direct route,False,False,none,none,True,False
+25,2,11,roofward_archive,Nia,Fay,choice:roofward_archive:2:11:Nia,ask to keep direct route,False,False,none,none,True,False
+26,2,12,archive_signal,Nia,Milo,choice:archive_signal:2:12:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+27,2,13,signal_orchard,Ivo,Milo,choice:signal_orchard:2:13:Ivo,ask to keep direct route,False,False,none,none,True,False
+28,3,0,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:3:0:Ivo,ask to keep direct route,False,False,none,none,True,False
+29,3,1,central_repair_ring,Pax,Juno,choice:central_repair_ring:3:1:Pax,ask to keep direct route,False,False,none,none,True,True
+30,3,2,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:3:2:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+31,3,3,roofward_archive,Nia,Fay,choice:roofward_archive:3:3:Nia,ask to keep direct route,False,False,none,none,True,False
+32,3,4,archive_signal,Nia,Milo,choice:archive_signal:3:4:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+33,3,5,signal_orchard,Ivo,Milo,choice:signal_orchard:3:5:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+34,3,6,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:3:6:Ivo,ask to keep direct route,False,False,none,none,True,False
+35,3,7,central_repair_ring,Pax,Juno,choice:central_repair_ring:3:7:Pax,ask to keep direct route,False,False,none,none,True,False
+36,3,8,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:3:8:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+37,3,9,roofward_archive,Nia,Fay,choice:roofward_archive:3:9:Nia,ask to keep direct route,False,False,none,none,True,False
+38,3,10,archive_signal,Nia,Milo,choice:archive_signal:3:10:Nia,ask to keep direct route,False,False,none,none,True,False
+39,3,11,signal_orchard,Ivo,Milo,choice:signal_orchard:3:11:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+40,3,12,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:3:12:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+41,3,13,central_repair_ring,Pax,Juno,choice:central_repair_ring:3:13:Pax,ask to keep direct route,False,False,none,none,True,False
+42,4,0,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:4:0:Ari,ask to keep direct route,False,False,none,none,True,False
+43,4,1,roofward_archive,Nia,Fay,choice:roofward_archive:4:1:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+44,4,2,archive_signal,Nia,Milo,choice:archive_signal:4:2:Nia,ask to merge detour,False,False,none,none,True,False
+45,4,3,signal_orchard,Ivo,Milo,choice:signal_orchard:4:3:Ivo,ask to keep direct route,False,False,none,none,True,False
+46,4,4,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:4:4:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+47,4,5,central_repair_ring,Pax,Juno,choice:central_repair_ring:4:5:Pax,ask to keep direct route,False,False,none,none,True,False
+48,4,6,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:4:6:Ari,ask to keep direct route,False,False,none,none,True,False
+49,4,7,roofward_archive,Nia,Fay,choice:roofward_archive:4:7:Nia,ask to keep direct route,False,False,none,none,True,False
+50,4,8,archive_signal,Nia,Milo,choice:archive_signal:4:8:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+51,4,9,signal_orchard,Ivo,Milo,choice:signal_orchard:4:9:Ivo,ask to keep direct route,False,False,none,none,True,False
+52,4,10,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:4:10:Ivo,ask to keep direct route,False,False,none,none,True,False
+53,4,11,central_repair_ring,Pax,Juno,choice:central_repair_ring:4:11:Pax,ask to keep direct route,False,False,none,none,True,False
+54,4,12,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:4:12:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+55,4,13,roofward_archive,Nia,Fay,choice:roofward_archive:4:13:Nia,ask to keep direct route,False,False,none,none,True,False
+56,5,0,archive_signal,Nia,Milo,choice:archive_signal:5:0:Nia,ask to keep direct route,False,False,none,none,True,False
+57,5,1,signal_orchard,Ivo,Milo,choice:signal_orchard:5:1:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+58,5,2,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:5:2:Ivo,ask to merge detour,False,False,none,none,True,True
+59,5,3,central_repair_ring,Pax,Juno,choice:central_repair_ring:5:3:Pax,ask to keep direct route,False,False,none,none,True,False
+60,5,4,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:5:4:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+61,5,5,roofward_archive,Nia,Fay,choice:roofward_archive:5:5:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+62,5,6,archive_signal,Nia,Milo,choice:archive_signal:5:6:Nia,ask to keep direct route,False,False,none,none,True,False
+63,5,7,signal_orchard,Ivo,Milo,choice:signal_orchard:5:7:Ivo,ask to keep direct route,False,False,none,none,True,False
+64,5,8,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:5:8:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+65,5,9,central_repair_ring,Pax,Juno,choice:central_repair_ring:5:9:Pax,ask to keep direct route,False,False,none,none,True,False
+66,5,10,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:5:10:Ari,ask to keep direct route,False,False,none,none,True,False
+67,5,11,roofward_archive,Nia,Fay,choice:roofward_archive:5:11:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+68,5,12,archive_signal,Nia,Milo,choice:archive_signal:5:12:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+69,5,13,signal_orchard,Ivo,Milo,choice:signal_orchard:5:13:Ivo,ask to keep direct route,False,False,none,none,True,False
+70,6,0,central_repair_ring,Juno,Pax,choice:central_repair_ring:6:0:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+71,6,1,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:6:1:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose orchard ridge detour for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+72,6,2,roofward_archive,Fay,Nia,choice:roofward_archive:6:2:Fay,ask to keep direct route,False,False,none,none,True,False
+73,6,3,archive_signal,Milo,Nia,choice:archive_signal:6:3:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+74,6,4,signal_orchard,Milo,Ivo,choice:signal_orchard:6:4:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+75,6,5,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:6:5:Ari,ask to keep direct route,False,False,none,none,True,False
+76,6,6,central_repair_ring,Juno,Pax,choice:central_repair_ring:6:6:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+77,6,7,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:6:7:Fay,ask to keep direct route,False,False,none,none,True,False
+78,6,8,roofward_archive,Fay,Nia,choice:roofward_archive:6:8:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+79,6,9,archive_signal,Milo,Nia,choice:archive_signal:6:9:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+80,6,10,signal_orchard,Milo,Ivo,choice:signal_orchard:6:10:Milo,ask to keep direct route,False,False,none,none,True,False
+81,6,11,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:6:11:Ari,ask to keep direct route,False,False,none,none,True,False
+82,6,12,central_repair_ring,Juno,Pax,choice:central_repair_ring:6:12:Juno,ask to merge detour,True,False,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+83,6,13,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:6:13:Fay,ask to keep direct route,False,False,none,none,True,False
+84,7,0,roofward_archive,Fay,Nia,choice:roofward_archive:7:0:Fay,ask to keep direct route,False,False,none,none,True,False
+85,7,1,archive_signal,Milo,Nia,choice:archive_signal:7:1:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+86,7,2,signal_orchard,Milo,Ivo,choice:signal_orchard:7:2:Milo,ask to merge detour,False,False,none,none,True,False
+87,7,3,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:7:3:Ari,ask to keep direct route,False,False,none,none,True,False
+88,7,4,central_repair_ring,Juno,Pax,choice:central_repair_ring:7:4:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+89,7,5,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:7:5:Fay,ask to keep direct route,False,False,none,none,True,False
+90,7,6,roofward_archive,Fay,Nia,choice:roofward_archive:7:6:Fay,ask to keep direct route,False,False,none,none,True,False
+91,7,7,archive_signal,Milo,Nia,choice:archive_signal:7:7:Milo,ask to keep direct route,False,False,none,none,True,False
+92,7,8,signal_orchard,Milo,Ivo,choice:signal_orchard:7:8:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+93,7,9,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:7:9:Ari,ask to keep direct route,False,False,none,none,True,False
+94,7,10,central_repair_ring,Juno,Pax,choice:central_repair_ring:7:10:Juno,ask to keep direct route,False,False,none,none,True,False
+95,7,11,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:7:11:Fay,ask to keep direct route,False,False,none,none,True,False
+96,7,12,roofward_archive,Fay,Nia,choice:roofward_archive:7:12:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+97,7,13,archive_signal,Milo,Nia,choice:archive_signal:7:13:Milo,ask to keep direct route,False,False,none,none,True,False
+98,8,0,signal_orchard,Milo,Ivo,choice:signal_orchard:8:0:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+99,8,1,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:8:1:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+100,8,2,central_repair_ring,Juno,Pax,choice:central_repair_ring:8:2:Juno,ask to merge detour,False,False,none,none,True,False
+101,8,3,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:8:3:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+102,8,4,roofward_archive,Fay,Nia,choice:roofward_archive:8:4:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+103,8,5,archive_signal,Milo,Nia,choice:archive_signal:8:5:Milo,ask to keep direct route,False,False,none,none,True,False
+104,8,6,signal_orchard,Milo,Ivo,choice:signal_orchard:8:6:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+105,8,7,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:8:7:Ari,ask to keep direct route,False,False,none,none,True,False
+106,8,8,central_repair_ring,Juno,Pax,choice:central_repair_ring:8:8:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+107,8,9,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:8:9:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+108,8,10,roofward_archive,Fay,Nia,choice:roofward_archive:8:10:Fay,ask to keep direct route,False,False,none,none,True,False
+109,8,11,archive_signal,Milo,Nia,choice:archive_signal:8:11:Milo,ask to keep direct route,False,False,none,none,True,False
+110,8,12,signal_orchard,Milo,Ivo,choice:signal_orchard:8:12:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+111,8,13,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:8:13:Ari,ask to keep direct route,False,False,none,none,True,False
+112,9,0,central_repair_ring,Juno,Pax,choice:central_repair_ring:9:0:Juno,ask to keep direct route,False,False,none,none,True,False
+113,9,1,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:9:1:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+114,9,2,roofward_archive,Fay,Nia,choice:roofward_archive:9:2:Fay,ask to merge detour,False,False,none,none,True,False
+115,9,3,archive_signal,Milo,Nia,choice:archive_signal:9:3:Milo,ask to keep direct route,False,False,none,none,True,False
+116,9,4,signal_orchard,Milo,Ivo,choice:signal_orchard:9:4:Milo,ask to keep direct route,False,False,none,none,True,True
+117,9,5,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:9:5:Ari,ask to keep direct route,False,False,none,none,True,False
+118,9,6,central_repair_ring,Juno,Pax,choice:central_repair_ring:9:6:Juno,ask to keep direct route,False,False,none,none,True,False
+119,9,7,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:9:7:Fay,ask to keep direct route,False,False,none,none,True,False
+120,9,8,roofward_archive,Fay,Nia,choice:roofward_archive:9:8:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+121,9,9,archive_signal,Milo,Nia,choice:archive_signal:9:9:Milo,ask to keep direct route,False,False,none,none,True,False
+122,9,10,signal_orchard,Milo,Ivo,choice:signal_orchard:9:10:Milo,ask to keep direct route,False,False,none,none,True,False
+123,9,11,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:9:11:Ari,ask to keep direct route,False,False,none,none,True,False
+124,9,12,central_repair_ring,Juno,Pax,choice:central_repair_ring:9:12:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+125,9,13,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:9:13:Fay,ask to keep direct route,False,False,none,none,True,False
+126,10,0,roofward_archive,Fay,Nia,choice:roofward_archive:10:0:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+127,10,1,archive_signal,Milo,Nia,choice:archive_signal:10:1:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+128,10,2,signal_orchard,Milo,Ivo,choice:signal_orchard:10:2:Milo,ask to merge detour,False,False,none,none,True,False
+129,10,3,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:10:3:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+130,10,4,central_repair_ring,Juno,Pax,choice:central_repair_ring:10:4:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+131,10,5,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:10:5:Fay,ask to keep direct route,False,False,none,none,True,False
+132,10,6,roofward_archive,Fay,Nia,choice:roofward_archive:10:6:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+133,10,7,archive_signal,Milo,Nia,choice:archive_signal:10:7:Milo,ask to keep direct route,False,False,none,none,True,False
+134,10,8,signal_orchard,Milo,Ivo,choice:signal_orchard:10:8:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+135,10,9,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:10:9:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+136,10,10,central_repair_ring,Juno,Pax,choice:central_repair_ring:10:10:Juno,ask to keep direct route,False,False,none,none,True,False
+137,10,11,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:10:11:Fay,ask to keep direct route,False,False,none,none,True,False
+138,10,12,roofward_archive,Fay,Nia,choice:roofward_archive:10:12:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+139,10,13,archive_signal,Milo,Nia,choice:archive_signal:10:13:Milo,ask to keep direct route,False,False,none,none,True,False
+140,11,0,signal_orchard,Milo,Ivo,choice:signal_orchard:11:0:Milo,ask to keep direct route,False,False,none,none,True,False
+141,11,1,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:11:1:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+142,11,2,central_repair_ring,Juno,Pax,choice:central_repair_ring:11:2:Juno,ask to keep direct route,False,False,none,none,True,False
+143,11,3,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:11:3:Fay,ask to keep direct route,False,False,none,none,True,False
+144,11,4,roofward_archive,Fay,Nia,choice:roofward_archive:11:4:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+145,11,5,archive_signal,Milo,Nia,choice:archive_signal:11:5:Milo,ask to keep direct route,False,False,none,none,True,False
+146,11,6,signal_orchard,Milo,Ivo,choice:signal_orchard:11:6:Milo,ask to keep direct route,False,False,none,none,True,False
+147,11,7,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:11:7:Ari,ask to keep direct route,False,False,none,none,True,False
+148,11,8,central_repair_ring,Juno,Pax,choice:central_repair_ring:11:8:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+149,11,9,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:11:9:Fay,ask to keep direct route,False,False,none,none,True,False
+150,11,10,roofward_archive,Fay,Nia,choice:roofward_archive:11:10:Fay,ask to keep direct route,False,False,none,none,True,False
+151,11,11,archive_signal,Milo,Nia,choice:archive_signal:11:11:Milo,ask to keep direct route,False,False,none,none,True,False
+152,11,12,signal_orchard,Milo,Ivo,choice:signal_orchard:11:12:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+153,11,13,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:11:13:Ari,ask to keep direct route,False,False,none,none,True,False
+154,12,0,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:12:0:Ari,ask to keep direct route,False,False,none,none,True,False
+155,12,1,roofward_archive,Nia,Fay,choice:roofward_archive:12:1:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose cool archive lane for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+156,12,2,archive_signal,Nia,Milo,choice:archive_signal:12:2:Nia,ask to keep direct route,False,False,none,none,True,False
+157,12,3,signal_orchard,Ivo,Milo,choice:signal_orchard:12:3:Ivo,ask to keep direct route,False,False,none,none,True,False
+158,12,4,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:12:4:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+159,12,5,central_repair_ring,Pax,Juno,choice:central_repair_ring:12:5:Pax,ask to keep direct route,False,False,none,none,True,False
+160,12,6,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:12:6:Ari,ask to keep direct route,False,False,none,none,True,False
+161,12,7,roofward_archive,Nia,Fay,choice:roofward_archive:12:7:Nia,ask to keep direct route,False,False,none,none,True,False
+162,12,8,archive_signal,Nia,Milo,choice:archive_signal:12:8:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+163,12,9,signal_orchard,Ivo,Milo,choice:signal_orchard:12:9:Ivo,ask to keep direct route,False,False,none,none,True,False
+164,12,10,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:12:10:Ivo,ask to keep direct route,False,False,none,none,True,False
+165,12,11,central_repair_ring,Pax,Juno,choice:central_repair_ring:12:11:Pax,ask to keep direct route,False,False,none,none,True,False
+166,12,12,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:12:12:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+167,12,13,roofward_archive,Nia,Fay,choice:roofward_archive:12:13:Nia,ask to keep direct route,False,False,none,none,True,False
+168,13,0,archive_signal,Nia,Milo,choice:archive_signal:13:0:Nia,ask to keep direct route,False,False,none,none,True,False
+169,13,1,signal_orchard,Ivo,Milo,choice:signal_orchard:13:1:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+170,13,2,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:13:2:Ivo,ask to merge detour,False,False,none,none,True,False
+171,13,3,central_repair_ring,Pax,Juno,choice:central_repair_ring:13:3:Pax,ask to keep direct route,False,False,none,none,True,False
+172,13,4,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:13:4:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+173,13,5,roofward_archive,Nia,Fay,choice:roofward_archive:13:5:Nia,ask to keep direct route,False,False,none,none,True,False
+174,13,6,archive_signal,Nia,Milo,choice:archive_signal:13:6:Nia,ask to keep direct route,False,False,none,none,True,False
+175,13,7,signal_orchard,Ivo,Milo,choice:signal_orchard:13:7:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+176,13,8,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:13:8:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+177,13,9,central_repair_ring,Pax,Juno,choice:central_repair_ring:13:9:Pax,ask to keep direct route,False,False,none,none,True,False
+178,13,10,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:13:10:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+179,13,11,roofward_archive,Nia,Fay,choice:roofward_archive:13:11:Nia,ask to keep direct route,False,False,none,none,True,False
+180,13,12,archive_signal,Nia,Milo,choice:archive_signal:13:12:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+181,13,13,signal_orchard,Ivo,Milo,choice:signal_orchard:13:13:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+182,14,0,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:14:0:Ivo,ask to keep direct route,False,False,none,none,True,False
+183,14,1,central_repair_ring,Pax,Juno,choice:central_repair_ring:14:1:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+184,14,2,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:14:2:Ari,ask to merge detour,False,False,none,none,True,False
+185,14,3,roofward_archive,Nia,Fay,choice:roofward_archive:14:3:Nia,ask to keep direct route,False,False,none,none,True,False
+186,14,4,archive_signal,Nia,Milo,choice:archive_signal:14:4:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+187,14,5,signal_orchard,Ivo,Milo,choice:signal_orchard:14:5:Ivo,ask to keep direct route,False,False,none,none,True,False
+188,14,6,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:14:6:Ivo,ask to keep direct route,False,False,none,none,True,False
+189,14,7,central_repair_ring,Pax,Juno,choice:central_repair_ring:14:7:Pax,ask to keep direct route,False,False,none,none,True,False
+190,14,8,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:14:8:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+191,14,9,roofward_archive,Nia,Fay,choice:roofward_archive:14:9:Nia,ask to keep direct route,False,False,none,none,True,False
+192,14,10,archive_signal,Nia,Milo,choice:archive_signal:14:10:Nia,ask to keep direct route,False,False,none,none,True,False
+193,14,11,signal_orchard,Ivo,Milo,choice:signal_orchard:14:11:Ivo,ask to keep direct route,False,False,none,none,True,False
+194,14,12,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:14:12:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+195,14,13,central_repair_ring,Pax,Juno,choice:central_repair_ring:14:13:Pax,ask to keep direct route,False,False,none,none,True,False
+196,15,0,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:15:0:Ari,ask to keep direct route,False,False,none,none,True,False
+197,15,1,roofward_archive,Nia,Fay,choice:roofward_archive:15:1:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+198,15,2,archive_signal,Nia,Milo,choice:archive_signal:15:2:Nia,ask to merge detour,False,False,none,none,True,False
+199,15,3,signal_orchard,Ivo,Milo,choice:signal_orchard:15:3:Ivo,ask to keep direct route,False,False,none,none,True,False
+200,15,4,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:15:4:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+201,15,5,central_repair_ring,Pax,Juno,choice:central_repair_ring:15:5:Pax,ask to keep direct route,False,False,none,none,True,False
+202,15,6,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:15:6:Ari,ask to keep direct route,False,False,none,none,True,False
+203,15,7,roofward_archive,Nia,Fay,choice:roofward_archive:15:7:Nia,ask to keep direct route,False,False,none,none,True,True
+204,15,8,archive_signal,Nia,Milo,choice:archive_signal:15:8:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+205,15,9,signal_orchard,Ivo,Milo,choice:signal_orchard:15:9:Ivo,ask to keep direct route,False,False,none,none,True,False
+206,15,10,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:15:10:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+207,15,11,central_repair_ring,Pax,Juno,choice:central_repair_ring:15:11:Pax,ask to keep direct route,False,False,none,none,True,False
+208,15,12,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:15:12:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+209,15,13,roofward_archive,Nia,Fay,choice:roofward_archive:15:13:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+210,16,0,archive_signal,Nia,Milo,choice:archive_signal:16:0:Nia,ask to keep direct route,False,False,none,none,True,False
+211,16,1,signal_orchard,Ivo,Milo,choice:signal_orchard:16:1:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+212,16,2,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:16:2:Ivo,ask to merge detour,False,False,none,none,True,False
+213,16,3,central_repair_ring,Pax,Juno,choice:central_repair_ring:16:3:Pax,ask to keep direct route,False,False,none,none,True,False
+214,16,4,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:16:4:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+215,16,5,roofward_archive,Nia,Fay,choice:roofward_archive:16:5:Nia,ask to keep direct route,False,False,none,none,True,False
+216,16,6,archive_signal,Nia,Milo,choice:archive_signal:16:6:Nia,ask to keep direct route,False,False,none,none,True,False
+217,16,7,signal_orchard,Ivo,Milo,choice:signal_orchard:16:7:Ivo,ask to keep direct route,False,False,none,none,True,False
+218,16,8,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:16:8:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+219,16,9,central_repair_ring,Pax,Juno,choice:central_repair_ring:16:9:Pax,ask to keep direct route,False,False,none,none,True,False
+220,16,10,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:16:10:Ari,ask to keep direct route,False,False,none,none,True,False
+221,16,11,roofward_archive,Nia,Fay,choice:roofward_archive:16:11:Nia,ask to keep direct route,False,False,none,none,True,False
+222,16,12,archive_signal,Nia,Milo,choice:archive_signal:16:12:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+223,16,13,signal_orchard,Ivo,Milo,choice:signal_orchard:16:13:Ivo,ask to keep direct route,False,False,none,none,True,False
+224,17,0,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:17:0:Ivo,ask to keep direct route,False,False,none,none,True,False
+225,17,1,central_repair_ring,Pax,Juno,choice:central_repair_ring:17:1:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+226,17,2,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:17:2:Ari,ask to merge detour,False,False,none,none,True,False
+227,17,3,roofward_archive,Nia,Fay,choice:roofward_archive:17:3:Nia,ask to keep direct route,False,False,none,none,True,False
+228,17,4,archive_signal,Nia,Milo,choice:archive_signal:17:4:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+229,17,5,signal_orchard,Ivo,Milo,choice:signal_orchard:17:5:Ivo,ask to keep direct route,False,False,none,none,True,False
+230,17,6,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:17:6:Ivo,ask to keep direct route,False,False,none,none,True,False
+231,17,7,central_repair_ring,Pax,Juno,choice:central_repair_ring:17:7:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+232,17,8,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:17:8:Ari,ask to keep direct route,False,False,none,none,True,True
+233,17,9,roofward_archive,Nia,Fay,choice:roofward_archive:17:9:Nia,ask to keep direct route,False,False,none,none,True,False
+234,17,10,archive_signal,Nia,Milo,choice:archive_signal:17:10:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+235,17,11,signal_orchard,Ivo,Milo,choice:signal_orchard:17:11:Ivo,ask to keep direct route,False,False,none,none,True,False
+236,17,12,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:17:12:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+237,17,13,central_repair_ring,Pax,Juno,choice:central_repair_ring:17:13:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+238,18,0,roofward_archive,Fay,Nia,choice:roofward_archive:18:0:Fay,ask to keep direct route,False,False,none,none,True,False
+239,18,1,archive_signal,Milo,Nia,choice:archive_signal:18:1:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+240,18,2,signal_orchard,Milo,Ivo,choice:signal_orchard:18:2:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+241,18,3,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:18:3:Ari,ask to keep direct route,False,False,none,none,True,False
+242,18,4,central_repair_ring,Juno,Pax,choice:central_repair_ring:18:4:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+243,18,5,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:18:5:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+244,18,6,roofward_archive,Fay,Nia,choice:roofward_archive:18:6:Fay,ask to keep direct route,False,False,none,none,True,False
+245,18,7,archive_signal,Milo,Nia,choice:archive_signal:18:7:Milo,ask to keep direct route,False,False,none,none,True,False
+246,18,8,signal_orchard,Milo,Ivo,choice:signal_orchard:18:8:Milo,ask to merge detour,True,False,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+247,18,9,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:18:9:Ari,ask to keep direct route,False,False,none,none,True,False
+248,18,10,central_repair_ring,Juno,Pax,choice:central_repair_ring:18:10:Juno,ask to keep direct route,False,False,none,none,True,False
+249,18,11,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:18:11:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+250,18,12,roofward_archive,Fay,Nia,choice:roofward_archive:18:12:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+251,18,13,archive_signal,Milo,Nia,choice:archive_signal:18:13:Milo,ask to keep direct route,False,False,none,none,True,False
+252,19,0,signal_orchard,Milo,Ivo,choice:signal_orchard:19:0:Milo,ask to merge detour,False,False,none,none,True,False
+253,19,1,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:19:1:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+254,19,2,central_repair_ring,Juno,Pax,choice:central_repair_ring:19:2:Juno,ask to merge detour,False,False,none,none,True,False
+255,19,3,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:19:3:Fay,ask to keep direct route,False,False,none,none,True,False
+256,19,4,roofward_archive,Fay,Nia,choice:roofward_archive:19:4:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+257,19,5,archive_signal,Milo,Nia,choice:archive_signal:19:5:Milo,ask to keep direct route,False,False,none,none,True,False
+258,19,6,signal_orchard,Milo,Ivo,choice:signal_orchard:19:6:Milo,ask to merge detour,False,False,none,none,True,False
+259,19,7,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:19:7:Ari,ask to keep direct route,False,False,none,none,True,False
+260,19,8,central_repair_ring,Juno,Pax,choice:central_repair_ring:19:8:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+261,19,9,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:19:9:Fay,ask to keep direct route,False,False,none,none,True,False
+262,19,10,roofward_archive,Fay,Nia,choice:roofward_archive:19:10:Fay,ask to keep direct route,False,False,none,none,True,False
+263,19,11,archive_signal,Milo,Nia,choice:archive_signal:19:11:Milo,ask to keep direct route,False,False,none,none,True,False
+264,19,12,signal_orchard,Milo,Ivo,choice:signal_orchard:19:12:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+265,19,13,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:19:13:Ari,ask to keep direct route,False,False,none,none,True,False
+266,20,0,central_repair_ring,Juno,Pax,choice:central_repair_ring:20:0:Juno,ask to keep direct route,False,False,none,none,True,False
+267,20,1,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:20:1:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+268,20,2,roofward_archive,Fay,Nia,choice:roofward_archive:20:2:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+269,20,3,archive_signal,Milo,Nia,choice:archive_signal:20:3:Milo,ask to keep direct route,False,False,none,none,True,False
+270,20,4,signal_orchard,Milo,Ivo,choice:signal_orchard:20:4:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+271,20,5,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:20:5:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+272,20,6,central_repair_ring,Juno,Pax,choice:central_repair_ring:20:6:Juno,ask to keep direct route,False,False,none,none,True,False
+273,20,7,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:20:7:Fay,ask to keep direct route,False,False,none,none,True,False
+274,20,8,roofward_archive,Fay,Nia,choice:roofward_archive:20:8:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+275,20,9,archive_signal,Milo,Nia,choice:archive_signal:20:9:Milo,ask to keep direct route,False,False,none,none,True,False
+276,20,10,signal_orchard,Milo,Ivo,choice:signal_orchard:20:10:Milo,ask to keep direct route,False,False,none,none,True,False
+277,20,11,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:20:11:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+278,20,12,central_repair_ring,Juno,Pax,choice:central_repair_ring:20:12:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+279,20,13,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:20:13:Fay,ask to keep direct route,False,False,none,none,True,False
+280,21,0,roofward_archive,Fay,Nia,choice:roofward_archive:21:0:Fay,ask to keep direct route,False,False,none,none,True,False
+281,21,1,archive_signal,Milo,Nia,choice:archive_signal:21:1:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+282,21,2,signal_orchard,Milo,Ivo,choice:signal_orchard:21:2:Milo,ask to merge detour,False,False,none,none,True,False
+283,21,3,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:21:3:Ari,ask to keep direct route,False,False,none,none,True,False
+284,21,4,central_repair_ring,Juno,Pax,choice:central_repair_ring:21:4:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+285,21,5,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:21:5:Fay,ask to keep direct route,False,False,none,none,True,False
+286,21,6,roofward_archive,Fay,Nia,choice:roofward_archive:21:6:Fay,ask to keep direct route,False,False,none,none,True,False
+287,21,7,archive_signal,Milo,Nia,choice:archive_signal:21:7:Milo,ask to keep direct route,False,False,none,none,True,False
+288,21,8,signal_orchard,Milo,Ivo,choice:signal_orchard:21:8:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+289,21,9,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:21:9:Ari,ask to keep direct route,False,False,none,none,True,False
+290,21,10,central_repair_ring,Juno,Pax,choice:central_repair_ring:21:10:Juno,ask to keep direct route,False,False,none,none,True,False
+291,21,11,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:21:11:Fay,ask to keep direct route,False,False,none,none,True,False
+292,21,12,roofward_archive,Fay,Nia,choice:roofward_archive:21:12:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+293,21,13,archive_signal,Milo,Nia,choice:archive_signal:21:13:Milo,ask to keep direct route,False,False,none,none,True,False
+294,22,0,signal_orchard,Milo,Ivo,choice:signal_orchard:22:0:Milo,ask to keep direct route,False,False,none,none,True,False
+295,22,1,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:22:1:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+296,22,2,central_repair_ring,Juno,Pax,choice:central_repair_ring:22:2:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+297,22,3,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:22:3:Fay,ask to keep direct route,False,False,none,none,True,False
+298,22,4,roofward_archive,Fay,Nia,choice:roofward_archive:22:4:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+299,22,5,archive_signal,Milo,Nia,choice:archive_signal:22:5:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+300,22,6,signal_orchard,Milo,Ivo,choice:signal_orchard:22:6:Milo,ask to keep direct route,False,False,none,none,True,False
+301,22,7,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:22:7:Ari,ask to keep direct route,False,False,none,none,True,False
+302,22,8,central_repair_ring,Juno,Pax,choice:central_repair_ring:22:8:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+303,22,9,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:22:9:Fay,ask to keep direct route,False,False,none,none,True,False
+304,22,10,roofward_archive,Fay,Nia,choice:roofward_archive:22:10:Fay,ask to keep direct route,False,False,none,none,True,False
+305,22,11,archive_signal,Milo,Nia,choice:archive_signal:22:11:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+306,22,12,signal_orchard,Milo,Ivo,choice:signal_orchard:22:12:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+307,22,13,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:22:13:Ari,ask to keep direct route,False,False,none,none,True,False
+308,23,0,central_repair_ring,Juno,Pax,choice:central_repair_ring:23:0:Juno,ask to keep direct route,False,False,none,none,True,False
+309,23,1,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:23:1:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+310,23,2,roofward_archive,Fay,Nia,choice:roofward_archive:23:2:Fay,ask to merge detour,False,False,none,none,True,False
+311,23,3,archive_signal,Milo,Nia,choice:archive_signal:23:3:Milo,ask to keep direct route,False,False,none,none,True,False
+312,23,4,signal_orchard,Milo,Ivo,choice:signal_orchard:23:4:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+313,23,5,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:23:5:Ari,ask to keep direct route,False,False,none,none,True,False
+314,23,6,central_repair_ring,Juno,Pax,choice:central_repair_ring:23:6:Juno,ask to keep direct route,False,False,none,none,True,False
+315,23,7,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:23:7:Fay,ask to keep direct route,False,False,none,none,True,False
+316,23,8,roofward_archive,Fay,Nia,choice:roofward_archive:23:8:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+317,23,9,archive_signal,Milo,Nia,choice:archive_signal:23:9:Milo,ask to keep direct route,False,False,none,none,True,False
+318,23,10,signal_orchard,Milo,Ivo,choice:signal_orchard:23:10:Milo,ask to keep direct route,False,False,none,none,True,False
+319,23,11,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:23:11:Ari,ask to keep direct route,False,False,none,none,True,False
+320,23,12,central_repair_ring,Juno,Pax,choice:central_repair_ring:23:12:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+321,23,13,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:23:13:Fay,ask to keep direct route,False,False,none,none,True,False
+322,24,0,archive_signal,Nia,Milo,choice:archive_signal:24:0:Nia,ask to keep direct route,False,False,none,none,True,False
+323,24,1,signal_orchard,Ivo,Milo,choice:signal_orchard:24:1:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+324,24,2,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:24:2:Ivo,ask to keep direct route,False,False,none,none,True,False
+325,24,3,central_repair_ring,Pax,Juno,choice:central_repair_ring:24:3:Pax,ask to keep direct route,False,False,none,none,True,False
+326,24,4,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:24:4:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+327,24,5,roofward_archive,Nia,Fay,choice:roofward_archive:24:5:Nia,ask to keep direct route,False,False,none,none,True,False
+328,24,6,archive_signal,Nia,Milo,choice:archive_signal:24:6:Nia,ask to keep direct route,False,False,none,none,True,False
+329,24,7,signal_orchard,Ivo,Milo,choice:signal_orchard:24:7:Ivo,ask to merge detour,False,False,none,none,True,False
+330,24,8,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:24:8:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+331,24,9,central_repair_ring,Pax,Juno,choice:central_repair_ring:24:9:Pax,ask to keep direct route,False,False,none,none,True,False
+332,24,10,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:24:10:Ari,ask to keep direct route,False,False,none,none,True,False
+333,24,11,roofward_archive,Nia,Fay,choice:roofward_archive:24:11:Nia,ask to keep direct route,False,False,none,none,True,False
+334,24,12,archive_signal,Nia,Milo,choice:archive_signal:24:12:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+335,24,13,signal_orchard,Ivo,Milo,choice:signal_orchard:24:13:Ivo,ask to merge detour,False,False,none,none,True,False
+336,25,0,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:25:0:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+337,25,1,central_repair_ring,Pax,Juno,choice:central_repair_ring:25:1:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+338,25,2,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:25:2:Ari,ask to merge detour,False,False,none,none,True,False
+339,25,3,roofward_archive,Nia,Fay,choice:roofward_archive:25:3:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+340,25,4,archive_signal,Nia,Milo,choice:archive_signal:25:4:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+341,25,5,signal_orchard,Ivo,Milo,choice:signal_orchard:25:5:Ivo,ask to merge detour,False,False,none,none,True,False
+342,25,6,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:25:6:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+343,25,7,central_repair_ring,Pax,Juno,choice:central_repair_ring:25:7:Pax,ask to keep direct route,False,False,none,none,True,False
+344,25,8,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:25:8:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+345,25,9,roofward_archive,Nia,Fay,choice:roofward_archive:25:9:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+346,25,10,archive_signal,Nia,Milo,choice:archive_signal:25:10:Nia,ask to keep direct route,False,False,none,none,True,False
+347,25,11,signal_orchard,Ivo,Milo,choice:signal_orchard:25:11:Ivo,ask to merge detour,False,False,none,none,True,False
+348,25,12,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:25:12:Ivo,ask to merge detour,False,False,none,none,True,True
+349,25,13,central_repair_ring,Pax,Juno,choice:central_repair_ring:25:13:Pax,ask to keep direct route,False,False,none,none,True,False
+350,26,0,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:26:0:Ari,ask to keep direct route,False,False,none,none,True,False
+351,26,1,roofward_archive,Nia,Fay,choice:roofward_archive:26:1:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+352,26,2,archive_signal,Nia,Milo,choice:archive_signal:26:2:Nia,ask to merge detour,False,False,none,none,True,False
+353,26,3,signal_orchard,Ivo,Milo,choice:signal_orchard:26:3:Ivo,ask to merge detour,False,False,none,none,True,False
+354,26,4,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:26:4:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+355,26,5,central_repair_ring,Pax,Juno,choice:central_repair_ring:26:5:Pax,ask to keep direct route,False,False,none,none,True,False
+356,26,6,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:26:6:Ari,ask to keep direct route,False,False,none,none,True,False
+357,26,7,roofward_archive,Nia,Fay,choice:roofward_archive:26:7:Nia,ask to keep direct route,False,False,none,none,True,False
+358,26,8,archive_signal,Nia,Milo,choice:archive_signal:26:8:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+359,26,9,signal_orchard,Ivo,Milo,choice:signal_orchard:26:9:Ivo,ask to merge detour,False,False,none,none,True,False
+360,26,10,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:26:10:Ivo,ask to keep direct route,False,False,none,none,True,False
+361,26,11,central_repair_ring,Pax,Juno,choice:central_repair_ring:26:11:Pax,ask to keep direct route,False,False,none,none,True,False
+362,26,12,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:26:12:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+363,26,13,roofward_archive,Nia,Fay,choice:roofward_archive:26:13:Nia,ask to keep direct route,False,False,none,none,True,False
+364,27,0,archive_signal,Nia,Milo,choice:archive_signal:27:0:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+365,27,1,signal_orchard,Ivo,Milo,choice:signal_orchard:27:1:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+366,27,2,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:27:2:Ivo,ask to merge detour,False,False,none,none,True,False
+367,27,3,central_repair_ring,Pax,Juno,choice:central_repair_ring:27:3:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+368,27,4,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:27:4:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+369,27,5,roofward_archive,Nia,Fay,choice:roofward_archive:27:5:Nia,ask to keep direct route,False,False,none,none,True,False
+370,27,6,archive_signal,Nia,Milo,choice:archive_signal:27:6:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+371,27,7,signal_orchard,Ivo,Milo,choice:signal_orchard:27:7:Ivo,ask to keep direct route,False,False,none,none,True,False
+372,27,8,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:27:8:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+373,27,9,central_repair_ring,Pax,Juno,choice:central_repair_ring:27:9:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+374,27,10,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:27:10:Ari,ask to keep direct route,False,False,none,none,True,False
+375,27,11,roofward_archive,Nia,Fay,choice:roofward_archive:27:11:Nia,ask to keep direct route,False,False,none,none,True,False
+376,27,12,archive_signal,Nia,Milo,choice:archive_signal:27:12:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+377,27,13,signal_orchard,Ivo,Milo,choice:signal_orchard:27:13:Ivo,ask to keep direct route,False,False,none,none,True,False
+378,28,0,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:28:0:Ivo,ask to keep direct route,False,False,none,none,True,False
+379,28,1,central_repair_ring,Pax,Juno,choice:central_repair_ring:28:1:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+380,28,2,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:28:2:Ari,ask to keep direct route,False,False,none,none,True,False
+381,28,3,roofward_archive,Nia,Fay,choice:roofward_archive:28:3:Nia,ask to keep direct route,False,False,none,none,True,False
+382,28,4,archive_signal,Nia,Milo,choice:archive_signal:28:4:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+383,28,5,signal_orchard,Ivo,Milo,choice:signal_orchard:28:5:Ivo,ask to keep direct route,False,False,none,none,True,False
+384,28,6,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:28:6:Ivo,ask to keep direct route,False,False,none,none,True,False
+385,28,7,central_repair_ring,Pax,Juno,choice:central_repair_ring:28:7:Pax,ask to keep direct route,False,False,none,none,True,False
+386,28,8,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:28:8:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+387,28,9,roofward_archive,Nia,Fay,choice:roofward_archive:28:9:Nia,ask to keep direct route,False,False,none,none,True,False
+388,28,10,archive_signal,Nia,Milo,choice:archive_signal:28:10:Nia,ask to keep direct route,False,False,none,none,True,False
+389,28,11,signal_orchard,Ivo,Milo,choice:signal_orchard:28:11:Ivo,ask to keep direct route,False,False,none,none,True,False
+390,28,12,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:28:12:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+391,28,13,central_repair_ring,Pax,Juno,choice:central_repair_ring:28:13:Pax,ask to keep direct route,False,False,none,none,True,False
+392,29,0,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:29:0:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+393,29,1,roofward_archive,Nia,Fay,choice:roofward_archive:29:1:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+394,29,2,archive_signal,Nia,Milo,choice:archive_signal:29:2:Nia,ask to merge detour,False,False,none,none,True,False
+395,29,3,signal_orchard,Ivo,Milo,choice:signal_orchard:29:3:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+396,29,4,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:29:4:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+397,29,5,central_repair_ring,Pax,Juno,choice:central_repair_ring:29:5:Pax,ask to keep direct route,False,False,none,none,True,False
+398,29,6,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:29:6:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+399,29,7,roofward_archive,Nia,Fay,choice:roofward_archive:29:7:Nia,ask to keep direct route,False,False,none,none,True,False
+400,29,8,archive_signal,Nia,Milo,choice:archive_signal:29:8:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+401,29,9,signal_orchard,Ivo,Milo,choice:signal_orchard:29:9:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+402,29,10,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:29:10:Ivo,ask to keep direct route,False,False,none,none,True,False
+403,29,11,central_repair_ring,Pax,Juno,choice:central_repair_ring:29:11:Pax,ask to keep direct route,False,False,none,none,True,False
+404,29,12,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:29:12:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+405,29,13,roofward_archive,Nia,Fay,choice:roofward_archive:29:13:Nia,ask to keep direct route,False,False,none,none,True,False
+406,30,0,signal_orchard,Milo,Ivo,choice:signal_orchard:30:0:Milo,ask to keep direct route,False,False,none,none,True,False
+407,30,1,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:30:1:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose market plank route for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+408,30,2,central_repair_ring,Juno,Pax,choice:central_repair_ring:30:2:Juno,ask to keep direct route,False,False,none,none,True,False
+409,30,3,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:30:3:Fay,ask to keep direct route,False,False,none,none,True,False
+410,30,4,roofward_archive,Fay,Nia,choice:roofward_archive:30:4:Fay,ask to keep direct route,True,False,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+411,30,5,archive_signal,Milo,Nia,choice:archive_signal:30:5:Milo,ask to keep direct route,False,False,none,none,True,False
+412,30,6,signal_orchard,Milo,Ivo,choice:signal_orchard:30:6:Milo,ask to keep direct route,False,False,none,none,True,False
+413,30,7,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:30:7:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+414,30,8,central_repair_ring,Juno,Pax,choice:central_repair_ring:30:8:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+415,30,9,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:30:9:Fay,ask to keep direct route,False,False,none,none,True,False
+416,30,10,roofward_archive,Fay,Nia,choice:roofward_archive:30:10:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+417,30,11,archive_signal,Milo,Nia,choice:archive_signal:30:11:Milo,ask to keep direct route,False,False,none,none,True,False
+418,30,12,signal_orchard,Milo,Ivo,choice:signal_orchard:30:12:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+419,30,13,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:30:13:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+420,31,0,central_repair_ring,Juno,Pax,choice:central_repair_ring:31:0:Juno,ask to keep direct route,False,False,none,none,True,False
+421,31,1,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:31:1:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+422,31,2,roofward_archive,Fay,Nia,choice:roofward_archive:31:2:Fay,ask to merge detour,False,False,none,none,True,False
+423,31,3,archive_signal,Milo,Nia,choice:archive_signal:31:3:Milo,ask to keep direct route,False,False,none,none,True,False
+424,31,4,signal_orchard,Milo,Ivo,choice:signal_orchard:31:4:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+425,31,5,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:31:5:Ari,ask to keep direct route,False,False,none,none,True,False
+426,31,6,central_repair_ring,Juno,Pax,choice:central_repair_ring:31:6:Juno,ask to keep direct route,False,False,none,none,True,False
+427,31,7,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:31:7:Fay,ask to keep direct route,False,False,none,none,True,False
+428,31,8,roofward_archive,Fay,Nia,choice:roofward_archive:31:8:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+429,31,9,archive_signal,Milo,Nia,choice:archive_signal:31:9:Milo,ask to keep direct route,False,False,none,none,True,False
+430,31,10,signal_orchard,Milo,Ivo,choice:signal_orchard:31:10:Milo,ask to keep direct route,False,False,none,none,True,False
+431,31,11,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:31:11:Ari,ask to keep direct route,False,False,none,none,True,False
+432,31,12,central_repair_ring,Juno,Pax,choice:central_repair_ring:31:12:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+433,31,13,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:31:13:Fay,ask to keep direct route,False,False,none,none,True,False
+434,32,0,roofward_archive,Fay,Nia,choice:roofward_archive:32:0:Fay,ask to keep direct route,False,False,none,none,True,False
+435,32,1,archive_signal,Milo,Nia,choice:archive_signal:32:1:Milo,ask to keep direct route,False,False,none,none,True,True
+436,32,2,signal_orchard,Milo,Ivo,choice:signal_orchard:32:2:Milo,ask to merge detour,False,False,none,none,True,False
+437,32,3,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:32:3:Ari,ask to keep direct route,False,False,none,none,True,False
+438,32,4,central_repair_ring,Juno,Pax,choice:central_repair_ring:32:4:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+439,32,5,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:32:5:Fay,ask to keep direct route,False,False,none,none,True,False
+440,32,6,roofward_archive,Fay,Nia,choice:roofward_archive:32:6:Fay,ask to keep direct route,False,False,none,none,True,False
+441,32,7,archive_signal,Milo,Nia,choice:archive_signal:32:7:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+442,32,8,signal_orchard,Milo,Ivo,choice:signal_orchard:32:8:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+443,32,9,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:32:9:Ari,ask to keep direct route,False,False,none,none,True,False
+444,32,10,central_repair_ring,Juno,Pax,choice:central_repair_ring:32:10:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+445,32,11,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:32:11:Fay,ask to keep direct route,False,False,none,none,True,False
+446,32,12,roofward_archive,Fay,Nia,choice:roofward_archive:32:12:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+447,32,13,archive_signal,Milo,Nia,choice:archive_signal:32:13:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+448,33,0,signal_orchard,Milo,Ivo,choice:signal_orchard:33:0:Milo,ask to keep direct route,False,False,none,none,True,False
+449,33,1,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:33:1:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+450,33,2,central_repair_ring,Juno,Pax,choice:central_repair_ring:33:2:Juno,ask to merge detour,False,False,none,none,True,False
+451,33,3,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:33:3:Fay,ask to keep direct route,False,False,none,none,True,False
+452,33,4,roofward_archive,Fay,Nia,choice:roofward_archive:33:4:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+453,33,5,archive_signal,Milo,Nia,choice:archive_signal:33:5:Milo,ask to keep direct route,False,False,none,none,True,False
+454,33,6,signal_orchard,Milo,Ivo,choice:signal_orchard:33:6:Milo,ask to keep direct route,False,False,none,none,True,False
+455,33,7,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:33:7:Ari,ask to keep direct route,False,False,none,none,True,False
+456,33,8,central_repair_ring,Juno,Pax,choice:central_repair_ring:33:8:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+457,33,9,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:33:9:Fay,ask to keep direct route,False,False,none,none,True,False
+458,33,10,roofward_archive,Fay,Nia,choice:roofward_archive:33:10:Fay,ask to keep direct route,False,False,none,none,True,False
+459,33,11,archive_signal,Milo,Nia,choice:archive_signal:33:11:Milo,ask to keep direct route,False,False,none,none,True,False
+460,33,12,signal_orchard,Milo,Ivo,choice:signal_orchard:33:12:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+461,33,13,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:33:13:Ari,ask to keep direct route,False,False,none,none,True,False
+462,34,0,central_repair_ring,Juno,Pax,choice:central_repair_ring:34:0:Juno,ask to keep direct route,False,False,none,none,True,False
+463,34,1,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:34:1:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+464,34,2,roofward_archive,Fay,Nia,choice:roofward_archive:34:2:Fay,ask to merge detour,False,False,none,none,True,False
+465,34,3,archive_signal,Milo,Nia,choice:archive_signal:34:3:Milo,ask to keep direct route,False,False,none,none,True,False
+466,34,4,signal_orchard,Milo,Ivo,choice:signal_orchard:34:4:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+467,34,5,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:34:5:Ari,ask to keep direct route,False,False,none,none,True,False
+468,34,6,central_repair_ring,Juno,Pax,choice:central_repair_ring:34:6:Juno,ask to keep direct route,False,False,none,none,True,False
+469,34,7,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:34:7:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+470,34,8,roofward_archive,Fay,Nia,choice:roofward_archive:34:8:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+471,34,9,archive_signal,Milo,Nia,choice:archive_signal:34:9:Milo,ask to keep direct route,False,False,none,none,True,False
+472,34,10,signal_orchard,Milo,Ivo,choice:signal_orchard:34:10:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+473,34,11,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:34:11:Ari,ask to keep direct route,False,False,none,none,True,False
+474,34,12,central_repair_ring,Juno,Pax,choice:central_repair_ring:34:12:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+475,34,13,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:34:13:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+476,35,0,roofward_archive,Fay,Nia,choice:roofward_archive:35:0:Fay,ask to keep direct route,False,False,none,none,True,False
+477,35,1,archive_signal,Milo,Nia,choice:archive_signal:35:1:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+478,35,2,signal_orchard,Milo,Ivo,choice:signal_orchard:35:2:Milo,ask to merge detour,False,False,none,none,True,False
+479,35,3,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:35:3:Ari,ask to keep direct route,False,False,none,none,True,False
+480,35,4,central_repair_ring,Juno,Pax,choice:central_repair_ring:35:4:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+481,35,5,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:35:5:Fay,ask to keep direct route,False,False,none,none,True,False
+482,35,6,roofward_archive,Fay,Nia,choice:roofward_archive:35:6:Fay,ask to keep direct route,False,False,none,none,True,False
+483,35,7,archive_signal,Milo,Nia,choice:archive_signal:35:7:Milo,ask to keep direct route,False,False,none,none,True,False
+484,35,8,signal_orchard,Milo,Ivo,choice:signal_orchard:35:8:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+485,35,9,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:35:9:Ari,ask to keep direct route,False,False,none,none,True,False
+486,35,10,central_repair_ring,Juno,Pax,choice:central_repair_ring:35:10:Juno,ask to keep direct route,False,False,none,none,True,False
+487,35,11,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:35:11:Fay,ask to keep direct route,False,False,none,none,True,False
+488,35,12,roofward_archive,Fay,Nia,choice:roofward_archive:35:12:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+489,35,13,archive_signal,Milo,Nia,choice:archive_signal:35:13:Milo,ask to keep direct route,False,False,none,none,True,False
+490,36,0,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:36:0:Ivo,ask to keep direct route,False,False,none,none,True,False
+491,36,1,central_repair_ring,Pax,Juno,choice:central_repair_ring:36:1:Pax,ask to merge detour,True,True,support_detour,"Pax: I saw the avatar choose outer bell path for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+492,36,2,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:36:2:Ari,ask to keep direct route,False,False,none,none,True,False
+493,36,3,roofward_archive,Nia,Fay,choice:roofward_archive:36:3:Nia,ask to keep direct route,False,False,none,none,True,False
+494,36,4,archive_signal,Nia,Milo,choice:archive_signal:36:4:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+495,36,5,signal_orchard,Ivo,Milo,choice:signal_orchard:36:5:Ivo,ask to keep direct route,False,False,none,none,True,False
+496,36,6,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:36:6:Ivo,ask to keep direct route,False,False,none,none,True,False
+497,36,7,central_repair_ring,Pax,Juno,choice:central_repair_ring:36:7:Pax,ask to keep direct route,False,False,none,none,True,False
+498,36,8,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:36:8:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+499,36,9,roofward_archive,Nia,Fay,choice:roofward_archive:36:9:Nia,ask to keep direct route,False,False,none,none,True,False
+500,36,10,archive_signal,Nia,Milo,choice:archive_signal:36:10:Nia,ask to keep direct route,False,False,none,none,True,False
+501,36,11,signal_orchard,Ivo,Milo,choice:signal_orchard:36:11:Ivo,ask to keep direct route,False,False,none,none,True,False
+502,36,12,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:36:12:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+503,36,13,central_repair_ring,Pax,Juno,choice:central_repair_ring:36:13:Pax,ask to keep direct route,False,False,none,none,True,False
+504,37,0,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:37:0:Ari,ask to keep direct route,False,False,none,none,True,False
+505,37,1,roofward_archive,Nia,Fay,choice:roofward_archive:37:1:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+506,37,2,archive_signal,Nia,Milo,choice:archive_signal:37:2:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+507,37,3,signal_orchard,Ivo,Milo,choice:signal_orchard:37:3:Ivo,ask to keep direct route,False,False,none,none,True,False
+508,37,4,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:37:4:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+509,37,5,central_repair_ring,Pax,Juno,choice:central_repair_ring:37:5:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+510,37,6,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:37:6:Ari,ask to keep direct route,False,False,none,none,True,False
+511,37,7,roofward_archive,Nia,Fay,choice:roofward_archive:37:7:Nia,ask to keep direct route,False,False,none,none,True,False
+512,37,8,archive_signal,Nia,Milo,choice:archive_signal:37:8:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+513,37,9,signal_orchard,Ivo,Milo,choice:signal_orchard:37:9:Ivo,ask to keep direct route,False,False,none,none,True,False
+514,37,10,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:37:10:Ivo,ask to keep direct route,False,False,none,none,True,False
+515,37,11,central_repair_ring,Pax,Juno,choice:central_repair_ring:37:11:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+516,37,12,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:37:12:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+517,37,13,roofward_archive,Nia,Fay,choice:roofward_archive:37:13:Nia,ask to keep direct route,False,False,none,none,True,False
+518,38,0,archive_signal,Nia,Milo,choice:archive_signal:38:0:Nia,ask to keep direct route,False,False,none,none,True,False
+519,38,1,signal_orchard,Ivo,Milo,choice:signal_orchard:38:1:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+520,38,2,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:38:2:Ivo,ask to merge detour,False,False,none,none,True,False
+521,38,3,central_repair_ring,Pax,Juno,choice:central_repair_ring:38:3:Pax,ask to keep direct route,False,False,none,none,True,False
+522,38,4,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:38:4:Ari,ask to keep direct route,False,False,none,none,True,True
+523,38,5,roofward_archive,Nia,Fay,choice:roofward_archive:38:5:Nia,ask to keep direct route,False,False,none,none,True,False
+524,38,6,archive_signal,Nia,Milo,choice:archive_signal:38:6:Nia,ask to keep direct route,False,False,none,none,True,False
+525,38,7,signal_orchard,Ivo,Milo,choice:signal_orchard:38:7:Ivo,ask to keep direct route,False,False,none,none,True,False
+526,38,8,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:38:8:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+527,38,9,central_repair_ring,Pax,Juno,choice:central_repair_ring:38:9:Pax,ask to keep direct route,False,False,none,none,True,False
+528,38,10,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:38:10:Ari,ask to keep direct route,False,False,none,none,True,False
+529,38,11,roofward_archive,Nia,Fay,choice:roofward_archive:38:11:Nia,ask to keep direct route,False,False,none,none,True,False
+530,38,12,archive_signal,Nia,Milo,choice:archive_signal:38:12:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+531,38,13,signal_orchard,Ivo,Milo,choice:signal_orchard:38:13:Ivo,ask to keep direct route,False,False,none,none,True,False
+532,39,0,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:39:0:Ivo,ask to keep direct route,False,False,none,none,True,False
+533,39,1,central_repair_ring,Pax,Juno,choice:central_repair_ring:39:1:Pax,ask to keep direct route,True,False,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+534,39,2,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:39:2:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+535,39,3,roofward_archive,Nia,Fay,choice:roofward_archive:39:3:Nia,ask to keep direct route,False,False,none,none,True,False
+536,39,4,archive_signal,Nia,Milo,choice:archive_signal:39:4:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+537,39,5,signal_orchard,Ivo,Milo,choice:signal_orchard:39:5:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+538,39,6,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:39:6:Ivo,ask to keep direct route,False,False,none,none,True,False
+539,39,7,central_repair_ring,Pax,Juno,choice:central_repair_ring:39:7:Pax,ask to keep direct route,False,False,none,none,True,False
+540,39,8,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:39:8:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+541,39,9,roofward_archive,Nia,Fay,choice:roofward_archive:39:9:Nia,ask to keep direct route,False,False,none,none,True,False
+542,39,10,archive_signal,Nia,Milo,choice:archive_signal:39:10:Nia,ask to keep direct route,False,False,none,none,True,False
+543,39,11,signal_orchard,Ivo,Milo,choice:signal_orchard:39:11:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+544,39,12,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:39:12:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+545,39,13,central_repair_ring,Pax,Juno,choice:central_repair_ring:39:13:Pax,ask to keep direct route,False,False,none,none,True,False
+546,40,0,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:40:0:Ari,ask to keep direct route,False,False,none,none,True,False
+547,40,1,roofward_archive,Nia,Fay,choice:roofward_archive:40:1:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+548,40,2,archive_signal,Nia,Milo,choice:archive_signal:40:2:Nia,ask to merge detour,False,False,none,none,True,False
+549,40,3,signal_orchard,Ivo,Milo,choice:signal_orchard:40:3:Ivo,ask to keep direct route,False,False,none,none,True,False
+550,40,4,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:40:4:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+551,40,5,central_repair_ring,Pax,Juno,choice:central_repair_ring:40:5:Pax,ask to keep direct route,False,False,none,none,True,False
+552,40,6,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:40:6:Ari,ask to keep direct route,False,False,none,none,True,False
+553,40,7,roofward_archive,Nia,Fay,choice:roofward_archive:40:7:Nia,ask to keep direct route,False,False,none,none,True,False
+554,40,8,archive_signal,Nia,Milo,choice:archive_signal:40:8:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+555,40,9,signal_orchard,Ivo,Milo,choice:signal_orchard:40:9:Ivo,ask to keep direct route,False,False,none,none,True,False
+556,40,10,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:40:10:Ivo,ask to keep direct route,False,False,none,none,True,False
+557,40,11,central_repair_ring,Pax,Juno,choice:central_repair_ring:40:11:Pax,ask to keep direct route,False,False,none,none,True,False
+558,40,12,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:40:12:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+559,40,13,roofward_archive,Nia,Fay,choice:roofward_archive:40:13:Nia,ask to keep direct route,False,False,none,none,True,False
+560,41,0,archive_signal,Nia,Milo,choice:archive_signal:41:0:Nia,ask to keep direct route,False,False,none,none,True,False
+561,41,1,signal_orchard,Ivo,Milo,choice:signal_orchard:41:1:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+562,41,2,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:41:2:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+563,41,3,central_repair_ring,Pax,Juno,choice:central_repair_ring:41:3:Pax,ask to keep direct route,False,False,none,none,True,False
+564,41,4,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:41:4:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+565,41,5,roofward_archive,Nia,Fay,choice:roofward_archive:41:5:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+566,41,6,archive_signal,Nia,Milo,choice:archive_signal:41:6:Nia,ask to keep direct route,False,False,none,none,True,False
+567,41,7,signal_orchard,Ivo,Milo,choice:signal_orchard:41:7:Ivo,ask to keep direct route,False,False,none,none,True,False
+568,41,8,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:41:8:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+569,41,9,central_repair_ring,Pax,Juno,choice:central_repair_ring:41:9:Pax,ask to keep direct route,False,False,none,none,True,False
+570,41,10,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:41:10:Ari,ask to keep direct route,False,False,none,none,True,False
+571,41,11,roofward_archive,Nia,Fay,choice:roofward_archive:41:11:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+572,41,12,archive_signal,Nia,Milo,choice:archive_signal:41:12:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+573,41,13,signal_orchard,Ivo,Milo,choice:signal_orchard:41:13:Ivo,ask to keep direct route,False,False,none,none,True,False
+574,42,0,central_repair_ring,Juno,Pax,choice:central_repair_ring:42:0:Juno,ask to keep direct route,True,False,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+575,42,1,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:42:1:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose orchard ridge detour for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+576,42,2,roofward_archive,Fay,Nia,choice:roofward_archive:42:2:Fay,ask to keep direct route,False,False,none,none,True,False
+577,42,3,archive_signal,Milo,Nia,choice:archive_signal:42:3:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+578,42,4,signal_orchard,Milo,Ivo,choice:signal_orchard:42:4:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+579,42,5,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:42:5:Ari,ask to keep direct route,False,False,none,none,True,False
+580,42,6,central_repair_ring,Juno,Pax,choice:central_repair_ring:42:6:Juno,ask to keep direct route,False,False,none,none,True,True
+581,42,7,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:42:7:Fay,ask to keep direct route,False,False,none,none,True,False
+582,42,8,roofward_archive,Fay,Nia,choice:roofward_archive:42:8:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+583,42,9,archive_signal,Milo,Nia,choice:archive_signal:42:9:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+584,42,10,signal_orchard,Milo,Ivo,choice:signal_orchard:42:10:Milo,ask to keep direct route,False,False,none,none,True,False
+585,42,11,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:42:11:Ari,ask to keep direct route,False,False,none,none,True,False
+586,42,12,central_repair_ring,Juno,Pax,choice:central_repair_ring:42:12:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+587,42,13,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:42:13:Fay,ask to keep direct route,False,False,none,none,True,False
+588,43,0,roofward_archive,Fay,Nia,choice:roofward_archive:43:0:Fay,ask to keep direct route,False,False,none,none,True,False
+589,43,1,archive_signal,Milo,Nia,choice:archive_signal:43:1:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+590,43,2,signal_orchard,Milo,Ivo,choice:signal_orchard:43:2:Milo,ask to merge detour,False,False,none,none,True,False
+591,43,3,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:43:3:Ari,ask to keep direct route,False,False,none,none,True,False
+592,43,4,central_repair_ring,Juno,Pax,choice:central_repair_ring:43:4:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+593,43,5,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:43:5:Fay,ask to keep direct route,False,False,none,none,True,False
+594,43,6,roofward_archive,Fay,Nia,choice:roofward_archive:43:6:Fay,ask to keep direct route,False,False,none,none,True,False
+595,43,7,archive_signal,Milo,Nia,choice:archive_signal:43:7:Milo,ask to keep direct route,False,False,none,none,True,False
+596,43,8,signal_orchard,Milo,Ivo,choice:signal_orchard:43:8:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+597,43,9,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:43:9:Ari,ask to keep direct route,False,False,none,none,True,False
+598,43,10,central_repair_ring,Juno,Pax,choice:central_repair_ring:43:10:Juno,ask to keep direct route,False,False,none,none,True,False
+599,43,11,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:43:11:Fay,ask to keep direct route,False,False,none,none,True,False
+600,43,12,roofward_archive,Fay,Nia,choice:roofward_archive:43:12:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+601,43,13,archive_signal,Milo,Nia,choice:archive_signal:43:13:Milo,ask to keep direct route,False,False,none,none,True,False
+602,44,0,signal_orchard,Milo,Ivo,choice:signal_orchard:44:0:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+603,44,1,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:44:1:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+604,44,2,central_repair_ring,Juno,Pax,choice:central_repair_ring:44:2:Juno,ask to merge detour,False,False,none,none,True,False
+605,44,3,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:44:3:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+606,44,4,roofward_archive,Fay,Nia,choice:roofward_archive:44:4:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+607,44,5,archive_signal,Milo,Nia,choice:archive_signal:44:5:Milo,ask to keep direct route,False,False,none,none,True,False
+608,44,6,signal_orchard,Milo,Ivo,choice:signal_orchard:44:6:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+609,44,7,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:44:7:Ari,ask to keep direct route,False,False,none,none,True,False
+610,44,8,central_repair_ring,Juno,Pax,choice:central_repair_ring:44:8:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+611,44,9,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:44:9:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+612,44,10,roofward_archive,Fay,Nia,choice:roofward_archive:44:10:Fay,ask to keep direct route,False,False,none,none,True,False
+613,44,11,archive_signal,Milo,Nia,choice:archive_signal:44:11:Milo,ask to keep direct route,False,False,none,none,True,False
+614,44,12,signal_orchard,Milo,Ivo,choice:signal_orchard:44:12:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+615,44,13,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:44:13:Ari,ask to keep direct route,False,False,none,none,True,False
+616,45,0,central_repair_ring,Juno,Pax,choice:central_repair_ring:45:0:Juno,ask to keep direct route,False,False,none,none,True,False
+617,45,1,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:45:1:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+618,45,2,roofward_archive,Fay,Nia,choice:roofward_archive:45:2:Fay,ask to keep direct route,False,False,none,none,True,False
+619,45,3,archive_signal,Milo,Nia,choice:archive_signal:45:3:Milo,ask to keep direct route,False,False,none,none,True,False
+620,45,4,signal_orchard,Milo,Ivo,choice:signal_orchard:45:4:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+621,45,5,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:45:5:Ari,ask to keep direct route,False,False,none,none,True,False
+622,45,6,central_repair_ring,Juno,Pax,choice:central_repair_ring:45:6:Juno,ask to keep direct route,False,False,none,none,True,False
+623,45,7,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:45:7:Fay,ask to keep direct route,False,False,none,none,True,False
+624,45,8,roofward_archive,Fay,Nia,choice:roofward_archive:45:8:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+625,45,9,archive_signal,Milo,Nia,choice:archive_signal:45:9:Milo,ask to keep direct route,False,False,none,none,True,False
+626,45,10,signal_orchard,Milo,Ivo,choice:signal_orchard:45:10:Milo,ask to keep direct route,False,False,none,none,True,False
+627,45,11,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:45:11:Ari,ask to keep direct route,False,False,none,none,True,False
+628,45,12,central_repair_ring,Juno,Pax,choice:central_repair_ring:45:12:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+629,45,13,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:45:13:Fay,ask to keep direct route,False,False,none,none,True,False
+630,46,0,roofward_archive,Fay,Nia,choice:roofward_archive:46:0:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+631,46,1,archive_signal,Milo,Nia,choice:archive_signal:46:1:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+632,46,2,signal_orchard,Milo,Ivo,choice:signal_orchard:46:2:Milo,ask to merge detour,False,False,none,none,True,False
+633,46,3,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:46:3:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+634,46,4,central_repair_ring,Juno,Pax,choice:central_repair_ring:46:4:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+635,46,5,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:46:5:Fay,ask to keep direct route,False,False,none,none,True,False
+636,46,6,roofward_archive,Fay,Nia,choice:roofward_archive:46:6:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+637,46,7,archive_signal,Milo,Nia,choice:archive_signal:46:7:Milo,ask to keep direct route,False,False,none,none,True,False
+638,46,8,signal_orchard,Milo,Ivo,choice:signal_orchard:46:8:Milo,ask to keep direct route,False,False,none,none,True,True
+639,46,9,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:46:9:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+640,46,10,central_repair_ring,Juno,Pax,choice:central_repair_ring:46:10:Juno,ask to keep direct route,False,False,none,none,True,False
+641,46,11,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:46:11:Fay,ask to keep direct route,False,False,none,none,True,False
+642,46,12,roofward_archive,Fay,Nia,choice:roofward_archive:46:12:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+643,46,13,archive_signal,Milo,Nia,choice:archive_signal:46:13:Milo,ask to keep direct route,False,False,none,none,True,False
+644,47,0,signal_orchard,Milo,Ivo,choice:signal_orchard:47:0:Milo,ask to keep direct route,False,False,none,none,True,False
+645,47,1,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:47:1:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+646,47,2,central_repair_ring,Juno,Pax,choice:central_repair_ring:47:2:Juno,ask to merge detour,False,False,none,none,True,False
+647,47,3,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:47:3:Fay,ask to keep direct route,False,False,none,none,True,False
+648,47,4,roofward_archive,Fay,Nia,choice:roofward_archive:47:4:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+649,47,5,archive_signal,Milo,Nia,choice:archive_signal:47:5:Milo,ask to keep direct route,False,False,none,none,True,False
+650,47,6,signal_orchard,Milo,Ivo,choice:signal_orchard:47:6:Milo,ask to keep direct route,False,False,none,none,True,False
+651,47,7,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:47:7:Ari,ask to keep direct route,False,False,none,none,True,False
+652,47,8,central_repair_ring,Juno,Pax,choice:central_repair_ring:47:8:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+653,47,9,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:47:9:Fay,ask to keep direct route,False,False,none,none,True,False
+654,47,10,roofward_archive,Fay,Nia,choice:roofward_archive:47:10:Fay,ask to keep direct route,False,False,none,none,True,False
+655,47,11,archive_signal,Milo,Nia,choice:archive_signal:47:11:Milo,ask to keep direct route,False,False,none,none,True,False
+656,47,12,signal_orchard,Milo,Ivo,choice:signal_orchard:47:12:Milo,ask to merge detour,True,False,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+657,47,13,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:47:13:Ari,ask to keep direct route,False,False,none,none,True,False
+658,48,0,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:48:0:Ari,ask to keep direct route,False,False,none,none,True,False
+659,48,1,roofward_archive,Nia,Fay,choice:roofward_archive:48:1:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose cool archive lane for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+660,48,2,archive_signal,Nia,Milo,choice:archive_signal:48:2:Nia,ask to keep direct route,False,False,none,none,True,False
+661,48,3,signal_orchard,Ivo,Milo,choice:signal_orchard:48:3:Ivo,ask to merge detour,False,False,none,none,True,False
+662,48,4,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:48:4:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+663,48,5,central_repair_ring,Pax,Juno,choice:central_repair_ring:48:5:Pax,ask to keep direct route,False,False,none,none,True,False
+664,48,6,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:48:6:Ari,ask to keep direct route,False,False,none,none,True,False
+665,48,7,roofward_archive,Nia,Fay,choice:roofward_archive:48:7:Nia,ask to keep direct route,False,False,none,none,True,False
+666,48,8,archive_signal,Nia,Milo,choice:archive_signal:48:8:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+667,48,9,signal_orchard,Ivo,Milo,choice:signal_orchard:48:9:Ivo,ask to merge detour,False,False,none,none,True,False
+668,48,10,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:48:10:Ivo,ask to keep direct route,False,False,none,none,True,False
+669,48,11,central_repair_ring,Pax,Juno,choice:central_repair_ring:48:11:Pax,ask to keep direct route,False,False,none,none,True,False
+670,48,12,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:48:12:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+671,48,13,roofward_archive,Nia,Fay,choice:roofward_archive:48:13:Nia,ask to keep direct route,False,False,none,none,True,False
+672,49,0,archive_signal,Nia,Milo,choice:archive_signal:49:0:Nia,ask to keep direct route,False,False,none,none,True,False
+673,49,1,signal_orchard,Ivo,Milo,choice:signal_orchard:49:1:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+674,49,2,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:49:2:Ivo,ask to merge detour,False,False,none,none,True,False
+675,49,3,central_repair_ring,Pax,Juno,choice:central_repair_ring:49:3:Pax,ask to keep direct route,False,False,none,none,True,False
+676,49,4,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:49:4:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+677,49,5,roofward_archive,Nia,Fay,choice:roofward_archive:49:5:Nia,ask to keep direct route,False,False,none,none,True,False
+678,49,6,archive_signal,Nia,Milo,choice:archive_signal:49:6:Nia,ask to keep direct route,False,False,none,none,True,False
+679,49,7,signal_orchard,Ivo,Milo,choice:signal_orchard:49:7:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+680,49,8,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:49:8:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+681,49,9,central_repair_ring,Pax,Juno,choice:central_repair_ring:49:9:Pax,ask to keep direct route,False,False,none,none,True,False
+682,49,10,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:49:10:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+683,49,11,roofward_archive,Nia,Fay,choice:roofward_archive:49:11:Nia,ask to keep direct route,False,False,none,none,True,False
+684,49,12,archive_signal,Nia,Milo,choice:archive_signal:49:12:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+685,49,13,signal_orchard,Ivo,Milo,choice:signal_orchard:49:13:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+686,50,0,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:50:0:Ivo,ask to keep direct route,False,False,none,none,True,False
+687,50,1,central_repair_ring,Pax,Juno,choice:central_repair_ring:50:1:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+688,50,2,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:50:2:Ari,ask to merge detour,False,False,none,none,True,False
+689,50,3,roofward_archive,Nia,Fay,choice:roofward_archive:50:3:Nia,ask to keep direct route,False,False,none,none,True,False
+690,50,4,archive_signal,Nia,Milo,choice:archive_signal:50:4:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+691,50,5,signal_orchard,Ivo,Milo,choice:signal_orchard:50:5:Ivo,ask to keep direct route,False,False,none,none,True,False
+692,50,6,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:50:6:Ivo,ask to keep direct route,False,False,none,none,True,False
+693,50,7,central_repair_ring,Pax,Juno,choice:central_repair_ring:50:7:Pax,ask to keep direct route,False,False,none,none,True,False
+694,50,8,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:50:8:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+695,50,9,roofward_archive,Nia,Fay,choice:roofward_archive:50:9:Nia,ask to keep direct route,False,False,none,none,True,False
+696,50,10,archive_signal,Nia,Milo,choice:archive_signal:50:10:Nia,ask to keep direct route,False,False,none,none,True,False
+697,50,11,signal_orchard,Ivo,Milo,choice:signal_orchard:50:11:Ivo,ask to keep direct route,False,False,none,none,True,False
+698,50,12,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:50:12:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+699,50,13,central_repair_ring,Pax,Juno,choice:central_repair_ring:50:13:Pax,ask to keep direct route,False,False,none,none,True,False
+700,51,0,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:51:0:Ari,ask to keep direct route,False,False,none,none,True,False
+701,51,1,roofward_archive,Nia,Fay,choice:roofward_archive:51:1:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+702,51,2,archive_signal,Nia,Milo,choice:archive_signal:51:2:Nia,ask to merge detour,False,False,none,none,True,False
+703,51,3,signal_orchard,Ivo,Milo,choice:signal_orchard:51:3:Ivo,ask to keep direct route,False,False,none,none,True,False
+704,51,4,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:51:4:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+705,51,5,central_repair_ring,Pax,Juno,choice:central_repair_ring:51:5:Pax,ask to keep direct route,False,False,none,none,True,False
+706,51,6,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:51:6:Ari,ask to keep direct route,False,False,none,none,True,False
+707,51,7,roofward_archive,Nia,Fay,choice:roofward_archive:51:7:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+708,51,8,archive_signal,Nia,Milo,choice:archive_signal:51:8:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+709,51,9,signal_orchard,Ivo,Milo,choice:signal_orchard:51:9:Ivo,ask to keep direct route,False,False,none,none,True,False
+710,51,10,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:51:10:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+711,51,11,central_repair_ring,Pax,Juno,choice:central_repair_ring:51:11:Pax,ask to keep direct route,False,False,none,none,True,False
+712,51,12,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:51:12:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+713,51,13,roofward_archive,Nia,Fay,choice:roofward_archive:51:13:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+714,52,0,archive_signal,Nia,Milo,choice:archive_signal:52:0:Nia,ask to keep direct route,False,False,none,none,True,False
+715,52,1,signal_orchard,Ivo,Milo,choice:signal_orchard:52:1:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+716,52,2,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:52:2:Ivo,ask to merge detour,False,False,none,none,True,False
+717,52,3,central_repair_ring,Pax,Juno,choice:central_repair_ring:52:3:Pax,ask to keep direct route,False,False,none,none,True,False
+718,52,4,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:52:4:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+719,52,5,roofward_archive,Nia,Fay,choice:roofward_archive:52:5:Nia,ask to keep direct route,False,False,none,none,True,False
+720,52,6,archive_signal,Nia,Milo,choice:archive_signal:52:6:Nia,ask to keep direct route,False,False,none,none,True,False
+721,52,7,signal_orchard,Ivo,Milo,choice:signal_orchard:52:7:Ivo,ask to keep direct route,False,False,none,none,True,False
+722,52,8,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:52:8:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+723,52,9,central_repair_ring,Pax,Juno,choice:central_repair_ring:52:9:Pax,ask to keep direct route,False,False,none,none,True,False
+724,52,10,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:52:10:Ari,ask to keep direct route,False,False,none,none,True,False
+725,52,11,roofward_archive,Nia,Fay,choice:roofward_archive:52:11:Nia,ask to keep direct route,False,False,none,none,True,False
+726,52,12,archive_signal,Nia,Milo,choice:archive_signal:52:12:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+727,52,13,signal_orchard,Ivo,Milo,choice:signal_orchard:52:13:Ivo,ask to keep direct route,False,False,none,none,True,False
+728,53,0,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:53:0:Ivo,ask to keep direct route,False,False,none,none,True,False
+729,53,1,central_repair_ring,Pax,Juno,choice:central_repair_ring:53:1:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+730,53,2,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:53:2:Ari,ask to merge detour,False,False,none,none,True,False
+731,53,3,roofward_archive,Nia,Fay,choice:roofward_archive:53:3:Nia,ask to keep direct route,False,False,none,none,True,False
+732,53,4,archive_signal,Nia,Milo,choice:archive_signal:53:4:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+733,53,5,signal_orchard,Ivo,Milo,choice:signal_orchard:53:5:Ivo,ask to keep direct route,False,False,none,none,True,False
+734,53,6,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:53:6:Ivo,ask to keep direct route,False,False,none,none,True,False
+735,53,7,central_repair_ring,Pax,Juno,choice:central_repair_ring:53:7:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+736,53,8,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:53:8:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+737,53,9,roofward_archive,Nia,Fay,choice:roofward_archive:53:9:Nia,ask to keep direct route,False,False,none,none,True,False
+738,53,10,archive_signal,Nia,Milo,choice:archive_signal:53:10:Nia,ask to keep direct route,True,False,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+739,53,11,signal_orchard,Ivo,Milo,choice:signal_orchard:53:11:Ivo,ask to keep direct route,False,False,none,none,True,False
+740,53,12,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:53:12:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+741,53,13,central_repair_ring,Pax,Juno,choice:central_repair_ring:53:13:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+742,54,0,roofward_archive,Fay,Nia,choice:roofward_archive:54:0:Fay,ask to keep direct route,False,False,none,none,True,False
+743,54,1,archive_signal,Milo,Nia,choice:archive_signal:54:1:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+744,54,2,signal_orchard,Milo,Ivo,choice:signal_orchard:54:2:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+745,54,3,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:54:3:Ari,ask to keep direct route,False,False,none,none,True,False
+746,54,4,central_repair_ring,Juno,Pax,choice:central_repair_ring:54:4:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+747,54,5,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:54:5:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+748,54,6,roofward_archive,Fay,Nia,choice:roofward_archive:54:6:Fay,ask to keep direct route,False,False,none,none,True,False
+749,54,7,archive_signal,Milo,Nia,choice:archive_signal:54:7:Milo,ask to keep direct route,False,False,none,none,True,False
+750,54,8,signal_orchard,Milo,Ivo,choice:signal_orchard:54:8:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+751,54,9,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:54:9:Ari,ask to keep direct route,False,False,none,none,True,False
+752,54,10,central_repair_ring,Juno,Pax,choice:central_repair_ring:54:10:Juno,ask to keep direct route,False,False,none,none,True,False
+753,54,11,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:54:11:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+754,54,12,roofward_archive,Fay,Nia,choice:roofward_archive:54:12:Fay,ask to keep direct route,False,False,none,none,True,True
+755,54,13,archive_signal,Milo,Nia,choice:archive_signal:54:13:Milo,ask to keep direct route,False,False,none,none,True,False
+756,55,0,signal_orchard,Milo,Ivo,choice:signal_orchard:55:0:Milo,ask to keep direct route,False,False,none,none,True,False
+757,55,1,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:55:1:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+758,55,2,central_repair_ring,Juno,Pax,choice:central_repair_ring:55:2:Juno,ask to merge detour,False,False,none,none,True,False
+759,55,3,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:55:3:Fay,ask to keep direct route,False,False,none,none,True,False
+760,55,4,roofward_archive,Fay,Nia,choice:roofward_archive:55:4:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+761,55,5,archive_signal,Milo,Nia,choice:archive_signal:55:5:Milo,ask to keep direct route,False,False,none,none,True,False
+762,55,6,signal_orchard,Milo,Ivo,choice:signal_orchard:55:6:Milo,ask to keep direct route,False,False,none,none,True,False
+763,55,7,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:55:7:Ari,ask to keep direct route,False,False,none,none,True,False
+764,55,8,central_repair_ring,Juno,Pax,choice:central_repair_ring:55:8:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+765,55,9,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:55:9:Fay,ask to keep direct route,False,False,none,none,True,False
+766,55,10,roofward_archive,Fay,Nia,choice:roofward_archive:55:10:Fay,ask to keep direct route,False,False,none,none,True,False
+767,55,11,archive_signal,Milo,Nia,choice:archive_signal:55:11:Milo,ask to keep direct route,False,False,none,none,True,False
+768,55,12,signal_orchard,Milo,Ivo,choice:signal_orchard:55:12:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+769,55,13,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:55:13:Ari,ask to keep direct route,False,False,none,none,True,False
+770,56,0,central_repair_ring,Juno,Pax,choice:central_repair_ring:56:0:Juno,ask to keep direct route,False,False,none,none,True,False
+771,56,1,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:56:1:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+772,56,2,roofward_archive,Fay,Nia,choice:roofward_archive:56:2:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+773,56,3,archive_signal,Milo,Nia,choice:archive_signal:56:3:Milo,ask to keep direct route,False,False,none,none,True,False
+774,56,4,signal_orchard,Milo,Ivo,choice:signal_orchard:56:4:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+775,56,5,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:56:5:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+776,56,6,central_repair_ring,Juno,Pax,choice:central_repair_ring:56:6:Juno,ask to keep direct route,False,False,none,none,True,False
+777,56,7,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:56:7:Fay,ask to keep direct route,False,False,none,none,True,False
+778,56,8,roofward_archive,Fay,Nia,choice:roofward_archive:56:8:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+779,56,9,archive_signal,Milo,Nia,choice:archive_signal:56:9:Milo,ask to keep direct route,False,False,none,none,True,False
+780,56,10,signal_orchard,Milo,Ivo,choice:signal_orchard:56:10:Milo,ask to keep direct route,False,False,none,none,True,False
+781,56,11,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:56:11:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+782,56,12,central_repair_ring,Juno,Pax,choice:central_repair_ring:56:12:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+783,56,13,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:56:13:Fay,ask to keep direct route,False,False,none,none,True,False
+784,57,0,roofward_archive,Fay,Nia,choice:roofward_archive:57:0:Fay,ask to keep direct route,False,False,none,none,True,False
+785,57,1,archive_signal,Milo,Nia,choice:archive_signal:57:1:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+786,57,2,signal_orchard,Milo,Ivo,choice:signal_orchard:57:2:Milo,ask to merge detour,False,False,none,none,True,False
+787,57,3,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:57:3:Ari,ask to keep direct route,False,False,none,none,True,False
+788,57,4,central_repair_ring,Juno,Pax,choice:central_repair_ring:57:4:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+789,57,5,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:57:5:Fay,ask to keep direct route,False,False,none,none,True,False
+790,57,6,roofward_archive,Fay,Nia,choice:roofward_archive:57:6:Fay,ask to keep direct route,False,False,none,none,True,False
+791,57,7,archive_signal,Milo,Nia,choice:archive_signal:57:7:Milo,ask to keep direct route,False,False,none,none,True,False
+792,57,8,signal_orchard,Milo,Ivo,choice:signal_orchard:57:8:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+793,57,9,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:57:9:Ari,ask to keep direct route,False,False,none,none,True,False
+794,57,10,central_repair_ring,Juno,Pax,choice:central_repair_ring:57:10:Juno,ask to keep direct route,False,False,none,none,True,False
+795,57,11,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:57:11:Fay,ask to keep direct route,False,False,none,none,True,False
+796,57,12,roofward_archive,Fay,Nia,choice:roofward_archive:57:12:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+797,57,13,archive_signal,Milo,Nia,choice:archive_signal:57:13:Milo,ask to keep direct route,False,False,none,none,True,False
+798,58,0,signal_orchard,Milo,Ivo,choice:signal_orchard:58:0:Milo,ask to keep direct route,False,False,none,none,True,False
+799,58,1,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:58:1:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+800,58,2,central_repair_ring,Juno,Pax,choice:central_repair_ring:58:2:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+801,58,3,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:58:3:Fay,ask to keep direct route,False,False,none,none,True,False
+802,58,4,roofward_archive,Fay,Nia,choice:roofward_archive:58:4:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+803,58,5,archive_signal,Milo,Nia,choice:archive_signal:58:5:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+804,58,6,signal_orchard,Milo,Ivo,choice:signal_orchard:58:6:Milo,ask to keep direct route,False,False,none,none,True,False
+805,58,7,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:58:7:Ari,ask to keep direct route,False,False,none,none,True,False
+806,58,8,central_repair_ring,Juno,Pax,choice:central_repair_ring:58:8:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+807,58,9,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:58:9:Fay,ask to keep direct route,False,False,none,none,True,False
+808,58,10,roofward_archive,Fay,Nia,choice:roofward_archive:58:10:Fay,ask to keep direct route,False,False,none,none,True,False
+809,58,11,archive_signal,Milo,Nia,choice:archive_signal:58:11:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+810,58,12,signal_orchard,Milo,Ivo,choice:signal_orchard:58:12:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+811,58,13,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:58:13:Ari,ask to keep direct route,False,False,none,none,True,False
+812,59,0,central_repair_ring,Juno,Pax,choice:central_repair_ring:59:0:Juno,ask to keep direct route,False,False,none,none,True,False
+813,59,1,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:59:1:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+814,59,2,roofward_archive,Fay,Nia,choice:roofward_archive:59:2:Fay,ask to merge detour,False,False,none,none,True,False
+815,59,3,archive_signal,Milo,Nia,choice:archive_signal:59:3:Milo,ask to keep direct route,False,False,none,none,True,False
+816,59,4,signal_orchard,Milo,Ivo,choice:signal_orchard:59:4:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+817,59,5,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:59:5:Ari,ask to keep direct route,False,False,none,none,True,False
+818,59,6,central_repair_ring,Juno,Pax,choice:central_repair_ring:59:6:Juno,ask to keep direct route,False,False,none,none,True,False
+819,59,7,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:59:7:Fay,ask to keep direct route,False,False,none,none,True,False
+820,59,8,roofward_archive,Fay,Nia,choice:roofward_archive:59:8:Fay,ask to keep direct route,True,False,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+821,59,9,archive_signal,Milo,Nia,choice:archive_signal:59:9:Milo,ask to keep direct route,False,False,none,none,True,False
+822,59,10,signal_orchard,Milo,Ivo,choice:signal_orchard:59:10:Milo,ask to keep direct route,False,False,none,none,True,False
+823,59,11,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:59:11:Ari,ask to keep direct route,False,False,none,none,True,False
+824,59,12,central_repair_ring,Juno,Pax,choice:central_repair_ring:59:12:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+825,59,13,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:59:13:Fay,ask to keep direct route,False,False,none,none,True,False
+826,60,0,archive_signal,Nia,Milo,choice:archive_signal:60:0:Nia,ask to keep direct route,False,False,none,none,True,False
+827,60,1,signal_orchard,Ivo,Milo,choice:signal_orchard:60:1:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+828,60,2,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:60:2:Ivo,ask to keep direct route,False,False,none,none,True,False
+829,60,3,central_repair_ring,Pax,Juno,choice:central_repair_ring:60:3:Pax,ask to keep direct route,False,False,none,none,True,False
+830,60,4,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:60:4:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+831,60,5,roofward_archive,Nia,Fay,choice:roofward_archive:60:5:Nia,ask to keep direct route,False,False,none,none,True,False
+832,60,6,archive_signal,Nia,Milo,choice:archive_signal:60:6:Nia,ask to keep direct route,False,False,none,none,True,False
+833,60,7,signal_orchard,Ivo,Milo,choice:signal_orchard:60:7:Ivo,ask to keep direct route,False,False,none,none,True,False
+834,60,8,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:60:8:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+835,60,9,central_repair_ring,Pax,Juno,choice:central_repair_ring:60:9:Pax,ask to keep direct route,False,False,none,none,True,False
+836,60,10,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:60:10:Ari,ask to keep direct route,False,False,none,none,True,False
+837,60,11,roofward_archive,Nia,Fay,choice:roofward_archive:60:11:Nia,ask to keep direct route,False,False,none,none,True,False
+838,60,12,archive_signal,Nia,Milo,choice:archive_signal:60:12:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+839,60,13,signal_orchard,Ivo,Milo,choice:signal_orchard:60:13:Ivo,ask to keep direct route,False,False,none,none,True,False
+840,61,0,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:61:0:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+841,61,1,central_repair_ring,Pax,Juno,choice:central_repair_ring:61:1:Pax,ask to keep direct route,False,False,none,none,True,True
+842,61,2,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:61:2:Ari,ask to merge detour,False,False,none,none,True,False
+843,61,3,roofward_archive,Nia,Fay,choice:roofward_archive:61:3:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+844,61,4,archive_signal,Nia,Milo,choice:archive_signal:61:4:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+845,61,5,signal_orchard,Ivo,Milo,choice:signal_orchard:61:5:Ivo,ask to keep direct route,False,False,none,none,True,False
+846,61,6,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:61:6:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+847,61,7,central_repair_ring,Pax,Juno,choice:central_repair_ring:61:7:Pax,ask to keep direct route,False,False,none,none,True,False
+848,61,8,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:61:8:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+849,61,9,roofward_archive,Nia,Fay,choice:roofward_archive:61:9:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+850,61,10,archive_signal,Nia,Milo,choice:archive_signal:61:10:Nia,ask to keep direct route,False,False,none,none,True,False
+851,61,11,signal_orchard,Ivo,Milo,choice:signal_orchard:61:11:Ivo,ask to keep direct route,False,False,none,none,True,False
+852,61,12,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:61:12:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+853,61,13,central_repair_ring,Pax,Juno,choice:central_repair_ring:61:13:Pax,ask to keep direct route,False,False,none,none,True,False
+854,62,0,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:62:0:Ari,ask to keep direct route,False,False,none,none,True,False
+855,62,1,roofward_archive,Nia,Fay,choice:roofward_archive:62:1:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+856,62,2,archive_signal,Nia,Milo,choice:archive_signal:62:2:Nia,ask to keep direct route,False,False,none,none,True,False
+857,62,3,signal_orchard,Ivo,Milo,choice:signal_orchard:62:3:Ivo,ask to keep direct route,False,False,none,none,True,False
+858,62,4,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:62:4:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+859,62,5,central_repair_ring,Pax,Juno,choice:central_repair_ring:62:5:Pax,ask to keep direct route,False,False,none,none,True,False
+860,62,6,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:62:6:Ari,ask to keep direct route,False,False,none,none,True,False
+861,62,7,roofward_archive,Nia,Fay,choice:roofward_archive:62:7:Nia,ask to keep direct route,False,False,none,none,True,False
+862,62,8,archive_signal,Nia,Milo,choice:archive_signal:62:8:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+863,62,9,signal_orchard,Ivo,Milo,choice:signal_orchard:62:9:Ivo,ask to keep direct route,False,False,none,none,True,False
+864,62,10,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:62:10:Ivo,ask to keep direct route,False,False,none,none,True,False
+865,62,11,central_repair_ring,Pax,Juno,choice:central_repair_ring:62:11:Pax,ask to keep direct route,False,False,none,none,True,False
+866,62,12,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:62:12:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+867,62,13,roofward_archive,Nia,Fay,choice:roofward_archive:62:13:Nia,ask to keep direct route,False,False,none,none,True,False
+868,63,0,archive_signal,Nia,Milo,choice:archive_signal:63:0:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+869,63,1,signal_orchard,Ivo,Milo,choice:signal_orchard:63:1:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+870,63,2,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:63:2:Ivo,ask to merge detour,False,False,none,none,True,False
+871,63,3,central_repair_ring,Pax,Juno,choice:central_repair_ring:63:3:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+872,63,4,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:63:4:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+873,63,5,roofward_archive,Nia,Fay,choice:roofward_archive:63:5:Nia,ask to keep direct route,False,False,none,none,True,False
+874,63,6,archive_signal,Nia,Milo,choice:archive_signal:63:6:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+875,63,7,signal_orchard,Ivo,Milo,choice:signal_orchard:63:7:Ivo,ask to keep direct route,False,False,none,none,True,False
+876,63,8,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:63:8:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+877,63,9,central_repair_ring,Pax,Juno,choice:central_repair_ring:63:9:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+878,63,10,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:63:10:Ari,ask to keep direct route,False,False,none,none,True,False
+879,63,11,roofward_archive,Nia,Fay,choice:roofward_archive:63:11:Nia,ask to keep direct route,False,False,none,none,True,False
+880,63,12,archive_signal,Nia,Milo,choice:archive_signal:63:12:Nia,ask to merge detour,True,True,support_detour,"Nia: I saw the avatar choose stone kiosk path for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+881,63,13,signal_orchard,Ivo,Milo,choice:signal_orchard:63:13:Ivo,ask to keep direct route,False,False,none,none,True,False
+882,64,0,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:64:0:Ivo,ask to keep direct route,False,False,none,none,True,False
+883,64,1,central_repair_ring,Pax,Juno,choice:central_repair_ring:64:1:Pax,ask to keep direct route,True,True,support_direct,"Pax: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+884,64,2,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:64:2:Ari,ask to merge detour,False,False,none,none,True,False
+885,64,3,roofward_archive,Nia,Fay,choice:roofward_archive:64:3:Nia,ask to keep direct route,False,False,none,none,True,False
+886,64,4,archive_signal,Nia,Milo,choice:archive_signal:64:4:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+887,64,5,signal_orchard,Ivo,Milo,choice:signal_orchard:64:5:Ivo,ask to keep direct route,False,False,none,none,True,False
+888,64,6,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:64:6:Ivo,ask to keep direct route,False,False,none,none,True,False
+889,64,7,central_repair_ring,Pax,Juno,choice:central_repair_ring:64:7:Pax,ask to keep direct route,False,False,none,none,True,False
+890,64,8,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:64:8:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+891,64,9,roofward_archive,Nia,Fay,choice:roofward_archive:64:9:Nia,ask to keep direct route,False,False,none,none,True,False
+892,64,10,archive_signal,Nia,Milo,choice:archive_signal:64:10:Nia,ask to keep direct route,False,False,none,none,True,False
+893,64,11,signal_orchard,Ivo,Milo,choice:signal_orchard:64:11:Ivo,ask to keep direct route,False,False,none,none,True,False
+894,64,12,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:64:12:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+895,64,13,central_repair_ring,Pax,Juno,choice:central_repair_ring:64:13:Pax,ask to keep direct route,False,False,none,none,True,False
+896,65,0,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:65:0:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+897,65,1,roofward_archive,Nia,Fay,choice:roofward_archive:65:1:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose glass stair for roofward->archive_quarter. Fay, can we agree on the recovery branch?",True,True
+898,65,2,archive_signal,Nia,Milo,choice:archive_signal:65:2:Nia,ask to merge detour,False,False,none,none,True,False
+899,65,3,signal_orchard,Ivo,Milo,choice:signal_orchard:65:3:Ivo,ask to keep direct route,False,False,none,none,True,True
+900,65,4,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:65:4:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose fen track for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+901,65,5,central_repair_ring,Pax,Juno,choice:central_repair_ring:65:5:Pax,ask to keep direct route,False,False,none,none,True,False
+902,65,6,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:65:6:Ari,ask to keep direct route,True,False,support_direct,"Ari: I saw the avatar choose river ford for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+903,65,7,roofward_archive,Nia,Fay,choice:roofward_archive:65:7:Nia,ask to keep direct route,False,False,none,none,True,False
+904,65,8,archive_signal,Nia,Milo,choice:archive_signal:65:8:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+905,65,9,signal_orchard,Ivo,Milo,choice:signal_orchard:65:9:Ivo,ask to keep direct route,True,True,support_direct,"Ivo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Milo, can we agree on the recovery branch?",True,True
+906,65,10,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:65:10:Ivo,ask to keep direct route,False,False,none,none,True,False
+907,65,11,central_repair_ring,Pax,Juno,choice:central_repair_ring:65:11:Pax,ask to keep direct route,False,False,none,none,True,False
+908,65,12,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:65:12:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+909,65,13,roofward_archive,Nia,Fay,choice:roofward_archive:65:13:Nia,ask to keep direct route,False,False,none,none,True,False
+910,66,0,signal_orchard,Milo,Ivo,choice:signal_orchard:66:0:Milo,ask to keep direct route,False,False,none,none,True,False
+911,66,1,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:66:1:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose market plank route for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+912,66,2,central_repair_ring,Juno,Pax,choice:central_repair_ring:66:2:Juno,ask to keep direct route,False,False,none,none,True,False
+913,66,3,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:66:3:Fay,ask to keep direct route,False,False,none,none,True,False
+914,66,4,roofward_archive,Fay,Nia,choice:roofward_archive:66:4:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+915,66,5,archive_signal,Milo,Nia,choice:archive_signal:66:5:Milo,ask to keep direct route,False,False,none,none,True,False
+916,66,6,signal_orchard,Milo,Ivo,choice:signal_orchard:66:6:Milo,ask to keep direct route,False,False,none,none,True,False
+917,66,7,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:66:7:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+918,66,8,central_repair_ring,Juno,Pax,choice:central_repair_ring:66:8:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+919,66,9,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:66:9:Fay,ask to keep direct route,False,False,none,none,True,False
+920,66,10,roofward_archive,Fay,Nia,choice:roofward_archive:66:10:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+921,66,11,archive_signal,Milo,Nia,choice:archive_signal:66:11:Milo,ask to keep direct route,False,False,none,none,True,False
+922,66,12,signal_orchard,Milo,Ivo,choice:signal_orchard:66:12:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+923,66,13,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:66:13:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+924,67,0,central_repair_ring,Juno,Pax,choice:central_repair_ring:67:0:Juno,ask to merge detour,False,False,none,none,True,False
+925,67,1,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:67:1:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+926,67,2,roofward_archive,Fay,Nia,choice:roofward_archive:67:2:Fay,ask to merge detour,False,False,none,none,True,False
+927,67,3,archive_signal,Milo,Nia,choice:archive_signal:67:3:Milo,ask to keep direct route,False,False,none,none,True,False
+928,67,4,signal_orchard,Milo,Ivo,choice:signal_orchard:67:4:Milo,ask to keep direct route,False,False,none,none,True,True
+929,67,5,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:67:5:Ari,ask to keep direct route,False,False,none,none,True,False
+930,67,6,central_repair_ring,Juno,Pax,choice:central_repair_ring:67:6:Juno,ask to merge detour,False,False,none,none,True,False
+931,67,7,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:67:7:Fay,ask to keep direct route,False,False,none,none,True,False
+932,67,8,roofward_archive,Fay,Nia,choice:roofward_archive:67:8:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+933,67,9,archive_signal,Milo,Nia,choice:archive_signal:67:9:Milo,ask to keep direct route,False,False,none,none,True,False
+934,67,10,signal_orchard,Milo,Ivo,choice:signal_orchard:67:10:Milo,ask to keep direct route,False,False,none,none,True,False
+935,67,11,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:67:11:Ari,ask to keep direct route,False,False,none,none,True,False
+936,67,12,central_repair_ring,Juno,Pax,choice:central_repair_ring:67:12:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+937,67,13,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:67:13:Fay,ask to keep direct route,False,False,none,none,True,False
+938,68,0,roofward_archive,Fay,Nia,choice:roofward_archive:68:0:Fay,ask to keep direct route,False,False,none,none,True,False
+939,68,1,archive_signal,Milo,Nia,choice:archive_signal:68:1:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+940,68,2,signal_orchard,Milo,Ivo,choice:signal_orchard:68:2:Milo,ask to merge detour,False,False,none,none,True,False
+941,68,3,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:68:3:Ari,ask to keep direct route,False,False,none,none,True,False
+942,68,4,central_repair_ring,Juno,Pax,choice:central_repair_ring:68:4:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+943,68,5,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:68:5:Fay,ask to keep direct route,False,False,none,none,True,False
+944,68,6,roofward_archive,Fay,Nia,choice:roofward_archive:68:6:Fay,ask to keep direct route,False,False,none,none,True,False
+945,68,7,archive_signal,Milo,Nia,choice:archive_signal:68:7:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+946,68,8,signal_orchard,Milo,Ivo,choice:signal_orchard:68:8:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+947,68,9,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:68:9:Ari,ask to keep direct route,False,False,none,none,True,False
+948,68,10,central_repair_ring,Juno,Pax,choice:central_repair_ring:68:10:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+949,68,11,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:68:11:Fay,ask to keep direct route,False,False,none,none,True,False
+950,68,12,roofward_archive,Fay,Nia,choice:roofward_archive:68:12:Fay,ask to merge detour,True,True,support_detour,"Fay: I saw the avatar choose cool archive lane for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+951,68,13,archive_signal,Milo,Nia,choice:archive_signal:68:13:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+952,69,0,signal_orchard,Milo,Ivo,choice:signal_orchard:69:0:Milo,ask to keep direct route,False,False,none,none,True,False
+953,69,1,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:69:1:Ari,ask to keep direct route,True,True,support_direct,"Ari: I saw the avatar choose fen track for orchard_fen->riverbend. Ivo, can we agree on the recovery branch?",True,True
+954,69,2,central_repair_ring,Juno,Pax,choice:central_repair_ring:69:2:Juno,ask to merge detour,False,False,none,none,True,False
+955,69,3,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:69:3:Fay,ask to keep direct route,False,False,none,none,True,False
+956,69,4,roofward_archive,Fay,Nia,choice:roofward_archive:69:4:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+957,69,5,archive_signal,Milo,Nia,choice:archive_signal:69:5:Milo,ask to keep direct route,False,False,none,none,True,False
+958,69,6,signal_orchard,Milo,Ivo,choice:signal_orchard:69:6:Milo,ask to keep direct route,False,False,none,none,True,False
+959,69,7,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:69:7:Ari,ask to keep direct route,False,False,none,none,True,False
+960,69,8,central_repair_ring,Juno,Pax,choice:central_repair_ring:69:8:Juno,ask to keep direct route,True,True,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+961,69,9,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:69:9:Fay,ask to keep direct route,False,False,none,none,True,False
+962,69,10,roofward_archive,Fay,Nia,choice:roofward_archive:69:10:Fay,ask to keep direct route,False,False,none,none,True,False
+963,69,11,archive_signal,Milo,Nia,choice:archive_signal:69:11:Milo,ask to keep direct route,False,False,none,none,True,False
+964,69,12,signal_orchard,Milo,Ivo,choice:signal_orchard:69:12:Milo,ask to merge detour,True,True,support_detour,"Milo: I saw the avatar choose river lantern loop for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+965,69,13,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:69:13:Ari,ask to keep direct route,False,False,none,none,True,False
+966,70,0,central_repair_ring,Juno,Pax,choice:central_repair_ring:70:0:Juno,ask to keep direct route,False,False,none,none,True,False
+967,70,1,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:70:1:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+968,70,2,roofward_archive,Fay,Nia,choice:roofward_archive:70:2:Fay,ask to merge detour,False,False,none,none,True,False
+969,70,3,archive_signal,Milo,Nia,choice:archive_signal:70:3:Milo,ask to keep direct route,False,False,none,none,True,False
+970,70,4,signal_orchard,Milo,Ivo,choice:signal_orchard:70:4:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+971,70,5,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:70:5:Ari,ask to keep direct route,False,False,none,none,True,False
+972,70,6,central_repair_ring,Juno,Pax,choice:central_repair_ring:70:6:Juno,ask to keep direct route,False,False,none,none,True,False
+973,70,7,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:70:7:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+974,70,8,roofward_archive,Fay,Nia,choice:roofward_archive:70:8:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+975,70,9,archive_signal,Milo,Nia,choice:archive_signal:70:9:Milo,ask to keep direct route,False,False,none,none,True,False
+976,70,10,signal_orchard,Milo,Ivo,choice:signal_orchard:70:10:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+977,70,11,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:70:11:Ari,ask to keep direct route,False,False,none,none,True,False
+978,70,12,central_repair_ring,Juno,Pax,choice:central_repair_ring:70:12:Juno,ask to merge detour,True,True,support_detour,"Juno: I saw the avatar choose outer bell path for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+979,70,13,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:70:13:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose river ford for riverbend->roofward. Ari, can we agree on the recovery branch?",True,True
+980,71,0,roofward_archive,Fay,Nia,choice:roofward_archive:71:0:Fay,ask to keep direct route,False,False,none,none,True,False
+981,71,1,archive_signal,Milo,Nia,choice:archive_signal:71:1:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Nia, can we agree on the recovery branch?",True,True
+982,71,2,signal_orchard,Milo,Ivo,choice:signal_orchard:71:2:Milo,ask to merge detour,False,False,none,none,True,False
+983,71,3,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:71:3:Ari,ask to keep direct route,False,False,none,none,True,False
+984,71,4,central_repair_ring,Juno,Pax,choice:central_repair_ring:71:4:Juno,ask to keep direct route,True,False,support_direct,"Juno: I saw the avatar choose inner repair yard for central_exchange->repair_hall. Pax, can we agree on the recovery branch?",True,True
+985,71,5,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:71:5:Fay,ask to keep direct route,False,False,none,none,True,False
+986,71,6,roofward_archive,Fay,Nia,choice:roofward_archive:71:6:Fay,ask to keep direct route,False,False,none,none,True,False
+987,71,7,archive_signal,Milo,Nia,choice:archive_signal:71:7:Milo,ask to keep direct route,False,False,none,none,True,False
+988,71,8,signal_orchard,Milo,Ivo,choice:signal_orchard:71:8:Milo,ask to keep direct route,True,True,support_direct,"Milo: I saw the avatar choose dusk road for signal_ridge->orchard_fen. Ivo, can we agree on the recovery branch?",True,True
+989,71,9,orchard_riverbend,Ari,Ivo,choice:orchard_riverbend:71:9:Ari,ask to keep direct route,False,False,none,none,True,False
+990,71,10,central_repair_ring,Juno,Pax,choice:central_repair_ring:71:10:Juno,ask to keep direct route,False,False,none,none,True,False
+991,71,11,riverbend_roofward,Fay,Ari,choice:riverbend_roofward:71:11:Fay,ask to keep direct route,False,False,none,none,True,False
+992,71,12,roofward_archive,Fay,Nia,choice:roofward_archive:71:12:Fay,ask to keep direct route,True,True,support_direct,"Fay: I saw the avatar choose glass stair for roofward->archive_quarter. Nia, can we agree on the recovery branch?",True,True
+993,71,13,archive_signal,Milo,Nia,choice:archive_signal:71:13:Milo,ask to keep direct route,False,False,none,none,True,False
+994,72,0,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:72:0:Ivo,ask to keep direct route,False,False,none,none,True,False
+995,72,1,central_repair_ring,Pax,Juno,choice:central_repair_ring:72:1:Pax,ask to merge detour,True,True,support_detour,"Pax: I saw the avatar choose outer bell path for central_exchange->repair_hall. Juno, can we agree on the recovery branch?",True,True
+996,72,2,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:72:2:Ari,ask to keep direct route,False,False,none,none,True,False
+997,72,3,roofward_archive,Nia,Fay,choice:roofward_archive:72:3:Nia,ask to keep direct route,False,False,none,none,True,False
+998,72,4,archive_signal,Nia,Milo,choice:archive_signal:72:4:Nia,ask to keep direct route,True,True,support_direct,"Nia: I saw the avatar choose paper lane for archive_quarter->signal_ridge. Milo, can we agree on the recovery branch?",True,True
+999,72,5,signal_orchard,Ivo,Milo,choice:signal_orchard:72:5:Ivo,ask to keep direct route,False,False,none,none,True,False
+1000,72,6,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:72:6:Ivo,ask to keep direct route,False,False,none,none,True,False
+1001,72,7,central_repair_ring,Pax,Juno,choice:central_repair_ring:72:7:Pax,ask to keep direct route,False,False,none,none,True,False
+1002,72,8,riverbend_roofward,Ari,Fay,choice:riverbend_roofward:72:8:Ari,ask to merge detour,True,True,support_detour,"Ari: I saw the avatar choose orchard ridge detour for riverbend->roofward. Fay, can we agree on the recovery branch?",True,True
+1003,72,9,roofward_archive,Nia,Fay,choice:roofward_archive:72:9:Nia,ask to keep direct route,False,False,none,none,True,False
+1004,72,10,archive_signal,Nia,Milo,choice:archive_signal:72:10:Nia,ask to keep direct route,False,False,none,none,True,False
+1005,72,11,signal_orchard,Ivo,Milo,choice:signal_orchard:72:11:Ivo,ask to keep direct route,False,False,none,none,True,False
+1006,72,12,orchard_riverbend,Ivo,Ari,choice:orchard_riverbend:72:12:Ivo,ask to merge detour,True,True,support_detour,"Ivo: I saw the avatar choose market plank route for orchard_fen->riverbend. Ari, can we agree on the recovery branch?",True,True
+1007,72,13,central_repair_ring,Pax,Juno,choice:central_repair_ring:72:13:Pax,ask to keep direct route,False,False,none,none,True,False

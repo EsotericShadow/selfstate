@@ -1,0 +1,125 @@
+{
+  "active_branch": {
+    "archive_signal": "stone kiosk path",
+    "central_repair_ring": "inner repair yard",
+    "orchard_riverbend": "fen track",
+    "riverbend_roofward": "river ford",
+    "roofward_archive": "glass stair",
+    "signal_orchard": "dusk road"
+  },
+  "boundary": "deterministic browser-local multi-agent route-dialogue/branch-merge/snapshot/body-language scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, complete 3D engine, or metaphysical frequency claim",
+  "branch_conflict_debt": {
+    "archive_signal": 0.0,
+    "central_repair_ring": 0.0,
+    "orchard_riverbend": 0.0,
+    "riverbend_roofward": 0.0,
+    "roofward_archive": 0.04,
+    "signal_orchard": 0.0
+  },
+  "days": 72,
+  "dialogue_turns": {
+    "archive_signal": 67,
+    "central_repair_ring": 65,
+    "orchard_riverbend": 66,
+    "riverbend_roofward": 66,
+    "roofward_archive": 66,
+    "signal_orchard": 64
+  },
+  "posture": {
+    "Ari": "open forward lean",
+    "Fay": "open forward lean",
+    "Ivo": "open forward lean",
+    "Juno": "open forward lean",
+    "Milo": "open forward lean",
+    "Nia": "open forward lean",
+    "Pax": "open forward lean"
+  },
+  "recovery": {
+    "archive_signal": 0.94,
+    "central_repair_ring": 0.93648,
+    "orchard_riverbend": 0.94,
+    "riverbend_roofward": 0.94,
+    "roofward_archive": 0.936422,
+    "signal_orchard": 0.94
+  },
+  "routes": [
+    {
+      "cargo": "planks",
+      "destination": "roofward",
+      "detour_choice": "orchard ridge detour",
+      "direct_choice": "river ford",
+      "guild": "Bridgewright Guild",
+      "route_id": "riverbend_roofward",
+      "second_agent": "Fay",
+      "source": "riverbend",
+      "steward": "Ari"
+    },
+    {
+      "cargo": "herbs",
+      "destination": "archive_quarter",
+      "detour_choice": "cool archive lane",
+      "direct_choice": "glass stair",
+      "guild": "Glassgarden Guild",
+      "route_id": "roofward_archive",
+      "second_agent": "Nia",
+      "source": "roofward",
+      "steward": "Fay"
+    },
+    {
+      "cargo": "paper",
+      "destination": "signal_ridge",
+      "detour_choice": "stone kiosk path",
+      "direct_choice": "paper lane",
+      "guild": "Index Guild",
+      "route_id": "archive_signal",
+      "second_agent": "Milo",
+      "source": "archive_quarter",
+      "steward": "Nia"
+    },
+    {
+      "cargo": "oil",
+      "destination": "orchard_fen",
+      "detour_choice": "river lantern loop",
+      "direct_choice": "dusk road",
+      "guild": "Signal Guild",
+      "route_id": "signal_orchard",
+      "second_agent": "Ivo",
+      "source": "signal_ridge",
+      "steward": "Milo"
+    },
+    {
+      "cargo": "seeds",
+      "destination": "riverbend",
+      "detour_choice": "market plank route",
+      "direct_choice": "fen track",
+      "guild": "Seed Guild",
+      "route_id": "orchard_riverbend",
+      "second_agent": "Ari",
+      "source": "orchard_fen",
+      "steward": "Ivo"
+    },
+    {
+      "cargo": "wire",
+      "destination": "repair_hall",
+      "detour_choice": "outer bell path",
+      "direct_choice": "inner repair yard",
+      "guild": "Repair Circle",
+      "route_id": "central_repair_ring",
+      "second_agent": "Pax",
+      "source": "central_exchange",
+      "steward": "Juno"
+    }
+  ],
+  "seed": 20260885,
+  "snapshot_version": {
+    "archive_signal": 111,
+    "central_repair_ring": 113,
+    "orchard_riverbend": 111,
+    "riverbend_roofward": 109,
+    "roofward_archive": 111,
+    "signal_orchard": 112
+  },
+  "source_v31_next_gate": "browser world v32 with live multi-agent route dialogue choices, concurrent branch merge/rollback UI, editable world-state snapshots shared across sessions, and body-language reactions to avatar logistics decisions",
+  "source_v31_verdict": "pass",
+  "ticks_per_day": 14
+}

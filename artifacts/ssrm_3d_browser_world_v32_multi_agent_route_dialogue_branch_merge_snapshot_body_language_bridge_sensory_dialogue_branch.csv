@@ -1,0 +1,1009 @@
+tick_id,day,route_id,sight_cue,sound_cue,smell_cue,temperature_cue,wetness_cue,body_cue,rhythm_marker,sensory_bound_to_dialogue_branch
+0,1,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,flower-node,True
+1,1,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+2,1,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+3,1,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+4,1,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+5,1,central_repair_ring,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,flower-node,True
+6,1,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,watchful neutral stance,dialogue-pulse,True
+7,1,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+8,1,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+9,1,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+10,1,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,watchful neutral stance,flower-node,True
+11,1,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+12,1,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+13,1,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+14,2,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+15,2,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+16,2,orchard_riverbend,shared route board,merge click,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+17,2,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+18,2,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+19,2,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+20,2,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+21,2,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+22,2,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+23,2,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+24,2,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,watchful neutral stance,flower-node,True
+25,2,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+26,2,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+27,2,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+28,3,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,flower-node,True
+29,3,central_repair_ring,two-agent route dialogue buttons,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+30,3,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+31,3,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+32,3,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+33,3,signal_orchard,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,flower-node,True
+34,3,orchard_riverbend,shared route board,merge click,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+35,3,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+36,3,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+37,3,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+38,3,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,watchful neutral stance,flower-node,True
+39,3,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+40,3,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+41,3,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+42,4,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,flower-node,True
+43,4,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+44,4,archive_signal,shared route board,merge click,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+45,4,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+46,4,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+47,4,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+48,4,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,watchful neutral stance,dialogue-pulse,True
+49,4,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+50,4,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+51,4,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+52,4,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,watchful neutral stance,flower-node,True
+53,4,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+54,4,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+55,4,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+56,5,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+57,5,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+58,5,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+59,5,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+60,5,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+61,5,roofward_archive,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,flower-node,True
+62,5,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+63,5,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+64,5,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+65,5,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+66,5,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,watchful neutral stance,flower-node,True
+67,5,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+68,5,archive_signal,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+69,5,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+70,6,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+71,6,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+72,6,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+73,6,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+74,6,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+75,6,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,flower-node,True
+76,6,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+77,6,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+78,6,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+79,6,archive_signal,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+80,6,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,watchful neutral stance,flower-node,True
+81,6,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+82,6,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+83,6,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+84,7,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+85,7,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+86,7,signal_orchard,shared route board,merge click,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+87,7,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+88,7,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+89,7,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,flower-node,True
+90,7,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+91,7,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+92,7,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+93,7,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+94,7,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,watchful neutral stance,flower-node,True
+95,7,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+96,7,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+97,7,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+98,8,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+99,8,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+100,8,central_repair_ring,shared route board,merge click,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+101,8,riverbend_roofward,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,dialogue-pulse,True
+102,8,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+103,8,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+104,8,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+105,8,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+106,8,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+107,8,riverbend_roofward,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,dialogue-pulse,True
+108,8,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,watchful neutral stance,flower-node,True
+109,8,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+110,8,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+111,8,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+112,9,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+113,9,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+114,9,roofward_archive,shared route board,merge click,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+115,9,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+116,9,signal_orchard,two-agent route dialogue buttons,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+117,9,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,flower-node,True
+118,9,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+119,9,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+120,9,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+121,9,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+122,9,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,watchful neutral stance,flower-node,True
+123,9,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+124,9,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+125,9,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+126,10,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+127,10,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+128,10,signal_orchard,shared route board,merge click,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+129,10,orchard_riverbend,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,dialogue-pulse,True
+130,10,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+131,10,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,flower-node,True
+132,10,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+133,10,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+134,10,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+135,10,orchard_riverbend,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,dialogue-pulse,True
+136,10,central_repair_ring,shared route board,merge click,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+137,10,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+138,10,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+139,10,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+140,11,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+141,11,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+142,11,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+143,11,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+144,11,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+145,11,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+146,11,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+147,11,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+148,11,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+149,11,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+150,11,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+151,11,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+152,11,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+153,11,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+154,12,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,flower-node,True
+155,12,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+156,12,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,watchful neutral stance,dialogue-pulse,True
+157,12,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+158,12,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+159,12,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+160,12,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,watchful neutral stance,dialogue-pulse,True
+161,12,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+162,12,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+163,12,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+164,12,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,watchful neutral stance,flower-node,True
+165,12,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+166,12,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+167,12,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+168,13,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+169,13,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+170,13,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,watchful neutral stance,dialogue-pulse,True
+171,13,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+172,13,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+173,13,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+174,13,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+175,13,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+176,13,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+177,13,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+178,13,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+179,13,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+180,13,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+181,13,signal_orchard,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+182,14,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,flower-node,True
+183,14,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+184,14,riverbend_roofward,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+185,14,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+186,14,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+187,14,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+188,14,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,watchful neutral stance,dialogue-pulse,True
+189,14,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+190,14,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+191,14,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+192,14,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+193,14,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+194,14,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+195,14,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+196,15,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+197,15,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+198,15,archive_signal,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+199,15,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+200,15,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+201,15,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+202,15,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+203,15,roofward_archive,two-agent route dialogue buttons,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+204,15,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+205,15,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+206,15,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+207,15,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+208,15,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+209,15,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+210,16,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+211,16,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+212,16,orchard_riverbend,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+213,16,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+214,16,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+215,16,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+216,16,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+217,16,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+218,16,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+219,16,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+220,16,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+221,16,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+222,16,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+223,16,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+224,17,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+225,17,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+226,17,riverbend_roofward,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+227,17,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+228,17,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+229,17,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+230,17,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+231,17,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+232,17,riverbend_roofward,two-agent route dialogue buttons,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+233,17,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+234,17,archive_signal,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+235,17,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+236,17,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+237,17,central_repair_ring,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+238,18,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+239,18,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+240,18,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+241,18,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+242,18,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+243,18,riverbend_roofward,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,flower-node,True
+244,18,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+245,18,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+246,18,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+247,18,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+248,18,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+249,18,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+250,18,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+251,18,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+252,19,signal_orchard,shared route board,map room hum,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+253,19,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+254,19,central_repair_ring,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+255,19,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+256,19,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+257,19,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+258,19,signal_orchard,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+259,19,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+260,19,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+261,19,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+262,19,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+263,19,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+264,19,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+265,19,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+266,20,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+267,20,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+268,20,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+269,20,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+270,20,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+271,20,orchard_riverbend,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,flower-node,True
+272,20,central_repair_ring,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+273,20,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+274,20,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+275,20,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+276,20,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+277,20,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+278,20,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+279,20,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+280,21,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+281,21,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+282,21,signal_orchard,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+283,21,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+284,21,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+285,21,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,flower-node,True
+286,21,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+287,21,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+288,21,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+289,21,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+290,21,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+291,21,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+292,21,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+293,21,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+294,22,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+295,22,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+296,22,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+297,22,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+298,22,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+299,22,archive_signal,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,flower-node,True
+300,22,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+301,22,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+302,22,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+303,22,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+304,22,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+305,22,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+306,22,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+307,22,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+308,23,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+309,23,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+310,23,roofward_archive,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+311,23,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+312,23,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+313,23,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,flower-node,True
+314,23,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+315,23,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,dialogue-pulse,True
+316,23,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+317,23,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+318,23,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+319,23,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+320,23,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+321,23,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+322,24,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+323,24,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+324,24,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+325,24,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+326,24,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+327,24,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+328,24,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+329,24,signal_orchard,shared route board,map room hum,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+330,24,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+331,24,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+332,24,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+333,24,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+334,24,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+335,24,signal_orchard,shared route board,map room hum,oil paper,cool detour air,dry route markers,open forward lean,ambient-rate,True
+336,25,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+337,25,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+338,25,riverbend_roofward,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+339,25,roofward_archive,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+340,25,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+341,25,signal_orchard,shared route board,map room hum,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+342,25,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+343,25,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+344,25,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+345,25,roofward_archive,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+346,25,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+347,25,signal_orchard,shared route board,map room hum,oil paper,cool detour air,dry route markers,open forward lean,ambient-rate,True
+348,25,orchard_riverbend,two-agent route dialogue buttons,map room hum,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+349,25,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+350,26,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+351,26,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+352,26,archive_signal,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+353,26,signal_orchard,shared route board,map room hum,oil paper,cool detour air,dry route markers,open forward lean,ambient-rate,True
+354,26,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+355,26,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+356,26,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+357,26,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+358,26,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+359,26,signal_orchard,shared route board,map room hum,oil paper,cool detour air,dry route markers,open forward lean,ambient-rate,True
+360,26,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+361,26,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+362,26,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+363,26,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+364,27,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+365,27,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+366,27,orchard_riverbend,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+367,27,central_repair_ring,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+368,27,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+369,27,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+370,27,archive_signal,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+371,27,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+372,27,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+373,27,central_repair_ring,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+374,27,riverbend_roofward,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+375,27,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+376,27,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+377,27,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+378,28,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+379,28,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+380,28,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+381,28,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+382,28,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+383,28,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+384,28,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+385,28,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+386,28,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+387,28,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+388,28,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+389,28,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+390,28,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+391,28,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+392,29,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+393,29,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+394,29,archive_signal,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+395,29,signal_orchard,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+396,29,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+397,29,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+398,29,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+399,29,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+400,29,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+401,29,signal_orchard,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+402,29,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+403,29,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+404,29,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+405,29,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+406,30,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+407,30,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+408,30,central_repair_ring,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+409,30,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+410,30,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+411,30,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,flower-node,True
+412,30,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+413,30,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+414,30,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+415,30,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,watchful neutral stance,ambient-rate,True
+416,30,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+417,30,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+418,30,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+419,30,orchard_riverbend,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,dialogue-pulse,True
+420,31,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+421,31,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+422,31,roofward_archive,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+423,31,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+424,31,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+425,31,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+426,31,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+427,31,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+428,31,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+429,31,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,ambient-rate,True
+430,31,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+431,31,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+432,31,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+433,31,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+434,32,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+435,32,archive_signal,two-agent route dialogue buttons,map room hum,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+436,32,signal_orchard,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+437,32,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+438,32,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+439,32,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+440,32,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+441,32,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,watchful neutral stance,dialogue-pulse,True
+442,32,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+443,32,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+444,32,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+445,32,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+446,32,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+447,32,archive_signal,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+448,33,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+449,33,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+450,33,central_repair_ring,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+451,33,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+452,33,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+453,33,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+454,33,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+455,33,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+456,33,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+457,33,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+458,33,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+459,33,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+460,33,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+461,33,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+462,34,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+463,34,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+464,34,roofward_archive,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+465,34,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+466,34,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+467,34,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+468,34,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+469,34,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+470,34,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+471,34,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+472,34,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+473,34,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+474,34,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+475,34,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+476,35,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+477,35,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+478,35,signal_orchard,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+479,35,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+480,35,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+481,35,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+482,35,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+483,35,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+484,35,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+485,35,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+486,35,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+487,35,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+488,35,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+489,35,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+490,36,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+491,36,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+492,36,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+493,36,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+494,36,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+495,36,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+496,36,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+497,36,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+498,36,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+499,36,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+500,36,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+501,36,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+502,36,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+503,36,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+504,37,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+505,37,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+506,37,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+507,37,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+508,37,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+509,37,central_repair_ring,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,flower-node,True
+510,37,riverbend_roofward,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+511,37,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+512,37,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+513,37,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+514,37,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+515,37,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+516,37,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+517,37,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+518,38,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+519,38,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+520,38,orchard_riverbend,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+521,38,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+522,38,riverbend_roofward,two-agent route dialogue buttons,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+523,38,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+524,38,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+525,38,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+526,38,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+527,38,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+528,38,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+529,38,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+530,38,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+531,38,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+532,39,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+533,39,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+534,39,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+535,39,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+536,39,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+537,39,signal_orchard,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,flower-node,True
+538,39,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+539,39,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+540,39,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+541,39,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+542,39,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+543,39,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+544,39,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+545,39,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+546,40,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+547,40,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+548,40,archive_signal,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+549,40,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+550,40,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+551,40,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+552,40,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+553,40,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+554,40,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+555,40,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+556,40,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+557,40,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+558,40,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+559,40,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+560,41,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+561,41,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+562,41,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+563,41,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+564,41,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+565,41,roofward_archive,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,flower-node,True
+566,41,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+567,41,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+568,41,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+569,41,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+570,41,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+571,41,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+572,41,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+573,41,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+574,42,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+575,42,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+576,42,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+577,42,archive_signal,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+578,42,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+579,42,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+580,42,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+581,42,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+582,42,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+583,42,archive_signal,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+584,42,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+585,42,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+586,42,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+587,42,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+588,43,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+589,43,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+590,43,signal_orchard,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+591,43,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+592,43,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+593,43,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+594,43,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+595,43,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+596,43,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+597,43,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+598,43,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+599,43,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+600,43,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+601,43,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+602,44,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+603,44,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+604,44,central_repair_ring,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+605,44,riverbend_roofward,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,dialogue-pulse,True
+606,44,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+607,44,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+608,44,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+609,44,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+610,44,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+611,44,riverbend_roofward,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,dialogue-pulse,True
+612,44,roofward_archive,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+613,44,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+614,44,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+615,44,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+616,45,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+617,45,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+618,45,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+619,45,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+620,45,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+621,45,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+622,45,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+623,45,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+624,45,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+625,45,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+626,45,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+627,45,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+628,45,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+629,45,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+630,46,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+631,46,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+632,46,signal_orchard,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+633,46,orchard_riverbend,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,dialogue-pulse,True
+634,46,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+635,46,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+636,46,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+637,46,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+638,46,signal_orchard,two-agent route dialogue buttons,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+639,46,orchard_riverbend,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,dialogue-pulse,True
+640,46,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+641,46,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+642,46,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+643,46,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+644,47,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+645,47,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+646,47,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+647,47,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+648,47,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+649,47,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+650,47,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+651,47,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+652,47,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+653,47,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+654,47,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+655,47,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+656,47,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+657,47,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+658,48,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+659,48,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+660,48,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+661,48,signal_orchard,shared route board,map room hum,oil paper,cool detour air,dry route markers,open forward lean,ambient-rate,True
+662,48,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+663,48,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+664,48,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+665,48,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+666,48,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+667,48,signal_orchard,shared route board,map room hum,oil paper,cool detour air,dry route markers,open forward lean,ambient-rate,True
+668,48,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+669,48,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+670,48,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+671,48,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+672,49,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+673,49,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+674,49,orchard_riverbend,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+675,49,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+676,49,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+677,49,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+678,49,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+679,49,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+680,49,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+681,49,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+682,49,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+683,49,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+684,49,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+685,49,signal_orchard,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+686,50,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+687,50,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+688,50,riverbend_roofward,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+689,50,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+690,50,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+691,50,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+692,50,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+693,50,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+694,50,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+695,50,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+696,50,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+697,50,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+698,50,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+699,50,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+700,51,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+701,51,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+702,51,archive_signal,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+703,51,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+704,51,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+705,51,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+706,51,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+707,51,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+708,51,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+709,51,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+710,51,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+711,51,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+712,51,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+713,51,roofward_archive,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+714,52,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+715,52,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+716,52,orchard_riverbend,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+717,52,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+718,52,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+719,52,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+720,52,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+721,52,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+722,52,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+723,52,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+724,52,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+725,52,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+726,52,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+727,52,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+728,53,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+729,53,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+730,53,riverbend_roofward,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+731,53,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+732,53,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+733,53,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+734,53,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+735,53,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+736,53,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+737,53,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+738,53,archive_signal,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+739,53,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+740,53,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+741,53,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+742,54,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+743,54,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+744,54,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+745,54,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+746,54,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+747,54,riverbend_roofward,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,flower-node,True
+748,54,roofward_archive,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+749,54,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+750,54,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+751,54,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+752,54,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+753,54,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+754,54,roofward_archive,two-agent route dialogue buttons,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+755,54,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+756,55,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+757,55,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+758,55,central_repair_ring,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+759,55,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+760,55,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+761,55,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+762,55,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+763,55,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+764,55,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+765,55,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+766,55,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+767,55,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+768,55,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+769,55,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+770,56,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+771,56,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+772,56,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+773,56,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+774,56,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+775,56,orchard_riverbend,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,flower-node,True
+776,56,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+777,56,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+778,56,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+779,56,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+780,56,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+781,56,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+782,56,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+783,56,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+784,57,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+785,57,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+786,57,signal_orchard,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+787,57,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+788,57,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+789,57,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+790,57,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+791,57,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+792,57,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+793,57,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+794,57,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+795,57,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+796,57,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+797,57,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+798,58,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+799,58,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+800,58,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+801,58,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+802,58,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+803,58,archive_signal,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,flower-node,True
+804,58,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+805,58,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+806,58,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+807,58,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+808,58,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+809,58,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+810,58,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+811,58,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+812,59,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+813,59,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+814,59,roofward_archive,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+815,59,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+816,59,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+817,59,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+818,59,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+819,59,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+820,59,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+821,59,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+822,59,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+823,59,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+824,59,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+825,59,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+826,60,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+827,60,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+828,60,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+829,60,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+830,60,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+831,60,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+832,60,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+833,60,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+834,60,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+835,60,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+836,60,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+837,60,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+838,60,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+839,60,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+840,61,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+841,61,central_repair_ring,two-agent route dialogue buttons,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+842,61,riverbend_roofward,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+843,61,roofward_archive,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+844,61,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+845,61,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+846,61,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+847,61,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+848,61,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+849,61,roofward_archive,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+850,61,archive_signal,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+851,61,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+852,61,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+853,61,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+854,62,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+855,62,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+856,62,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+857,62,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+858,62,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+859,62,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+860,62,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+861,62,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+862,62,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+863,62,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+864,62,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+865,62,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+866,62,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+867,62,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+868,63,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+869,63,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+870,63,orchard_riverbend,shared route board,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+871,63,central_repair_ring,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+872,63,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+873,63,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+874,63,archive_signal,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+875,63,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+876,63,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+877,63,central_repair_ring,two-agent route dialogue buttons,rollback bell,warm wire,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+878,63,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+879,63,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+880,63,archive_signal,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+881,63,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+882,64,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+883,64,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+884,64,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+885,64,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+886,64,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+887,64,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+888,64,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+889,64,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+890,64,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+891,64,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+892,64,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+893,64,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+894,64,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+895,64,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+896,65,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+897,65,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+898,65,archive_signal,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+899,65,signal_orchard,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+900,65,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+901,65,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+902,65,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+903,65,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+904,65,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+905,65,signal_orchard,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+906,65,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,flower-node,True
+907,65,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+908,65,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+909,65,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+910,66,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+911,66,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+912,66,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+913,66,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+914,66,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+915,66,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+916,66,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+917,66,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+918,66,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+919,66,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+920,66,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+921,66,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+922,66,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+923,66,orchard_riverbend,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,dialogue-pulse,True
+924,67,central_repair_ring,shared route board,map room hum,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+925,67,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+926,67,roofward_archive,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+927,67,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+928,67,signal_orchard,two-agent route dialogue buttons,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+929,67,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+930,67,central_repair_ring,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+931,67,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+932,67,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+933,67,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+934,67,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+935,67,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+936,67,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+937,67,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+938,68,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+939,68,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+940,68,signal_orchard,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+941,68,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+942,68,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+943,68,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+944,68,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+945,68,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+946,68,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+947,68,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+948,68,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+949,68,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+950,68,roofward_archive,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+951,68,archive_signal,two-agent route dialogue buttons,rollback bell,oil paper,warm direct route air,dry route markers,relieved reset stance,dialogue-pulse,True
+952,69,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+953,69,orchard_riverbend,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+954,69,central_repair_ring,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+955,69,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+956,69,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+957,69,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+958,69,signal_orchard,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+959,69,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+960,69,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+961,69,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+962,69,roofward_archive,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+963,69,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+964,69,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+965,69,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+966,70,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+967,70,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+968,70,roofward_archive,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+969,70,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+970,70,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+971,70,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+972,70,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,dialogue-pulse,True
+973,70,riverbend_roofward,two-agent route dialogue buttons,soft dialogue tone,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+974,70,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+975,70,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+976,70,signal_orchard,two-agent route dialogue buttons,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+977,70,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+978,70,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+979,70,riverbend_roofward,two-agent route dialogue buttons,rollback bell,wet cargo,warm direct route air,damp boards,relieved reset stance,dialogue-pulse,True
+980,71,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,flower-node,True
+981,71,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+982,71,signal_orchard,shared route board,merge click,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+983,71,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+984,71,central_repair_ring,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+985,71,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+986,71,roofward_archive,shared route board,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+987,71,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+988,71,signal_orchard,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+989,71,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+990,71,central_repair_ring,shared route board,merge click,warm wire,cool detour air,dry route markers,open forward lean,flower-node,True
+991,71,riverbend_roofward,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,ambient-rate,True
+992,71,roofward_archive,two-agent route dialogue buttons,soft dialogue tone,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+993,71,archive_signal,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+994,72,orchard_riverbend,shared route board,map room hum,wet cargo,warm direct route air,damp boards,open forward lean,flower-node,True
+995,72,central_repair_ring,two-agent route dialogue buttons,merge click,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+996,72,riverbend_roofward,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+997,72,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+998,72,archive_signal,two-agent route dialogue buttons,soft dialogue tone,oil paper,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+999,72,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,flower-node,True
+1000,72,orchard_riverbend,shared route board,merge click,wet cargo,cool detour air,damp boards,open forward lean,dialogue-pulse,True
+1001,72,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,dialogue-pulse,True
+1002,72,riverbend_roofward,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+1003,72,roofward_archive,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+1004,72,archive_signal,shared route board,merge click,oil paper,cool detour air,dry route markers,open forward lean,flower-node,True
+1005,72,signal_orchard,shared route board,map room hum,oil paper,warm direct route air,dry route markers,open forward lean,ambient-rate,True
+1006,72,orchard_riverbend,two-agent route dialogue buttons,merge click,wet cargo,warm direct route air,damp boards,open forward lean,dialogue-pulse,True
+1007,72,central_repair_ring,shared route board,map room hum,warm wire,warm direct route air,dry route markers,open forward lean,ambient-rate,True

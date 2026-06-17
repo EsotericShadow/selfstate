@@ -1,0 +1,62 @@
+{
+  "ablations": {
+    "no_avatar_absence": 0.707682,
+    "no_avatar_reentry": 0.687682,
+    "no_long_horizon_days": 0.647682,
+    "no_relationship_after_absence": 0.757682,
+    "no_replay_save_restore": 0.827682,
+    "no_rest_debt_recovery": 0.727682,
+    "no_sleep_wake_cycles": 0.667682,
+    "no_source_autonomous_continuity": 0.787682,
+    "no_stored_rehearsal": 0.747682,
+    "no_welfare_sleep_guardrails": 0.697682
+  },
+  "counts": {
+    "avatar_absence_reentry_frames": 5,
+    "browser_world_v11_ticks": 336,
+    "circadian_schedule_carryover_frames": 336,
+    "long_horizon_day_frames": 56,
+    "reentry_relationship_consequence_frames": 30,
+    "replay_long_horizon_frames": 56,
+    "rest_debt_recovery_frames": 336,
+    "sleep_wake_cycle_frames": 336,
+    "stored_rehearsal_frames": 336,
+    "welfare_sleep_guardrail_frames": 336
+  },
+  "honest_limits": [
+    "This is deterministic long-horizon sleep and re-entry scaffolding, not subjective consciousness.",
+    "Dream/rehearsal frames are stored public-plan rehearsal traces, not claims of inner experience.",
+    "Avatar absence and re-entry are generated scenarios, not open-ended society history.",
+    "No LLM is called and no autonomous natural language is provided.",
+    "Consent, welfare, sleep protection, and recovery are simulated functional guardrails, not real consent or moral standing.",
+    "The browser page is a playable 2D/2.5D state surface, not complete 3D physics.",
+    "Frequency and flower phase are rhythm variables, not metaphysical proof."
+  ],
+  "metrics": {
+    "avatar_absence_continuity": 1.0,
+    "avatar_reentry_consequence_binding": 1.0,
+    "browser_world_v11_sleep_reentry_readiness": 0.967682,
+    "browser_world_v11_surface_available": 1.0,
+    "long_horizon_day_coverage": 1.0,
+    "mean_sleep_reentry_channel_score": 0.975549,
+    "private_workspace_boundary": 1.0,
+    "reentry_disruption_recovery": 0.933333,
+    "relationship_memory_after_absence": 1.0,
+    "replay_long_horizon_integrity": 1.0,
+    "rest_debt_recovery": 1.0,
+    "save_restore_reentry_integrity": 1.0,
+    "schedule_circadian_carryover": 1.0,
+    "sensory_frequency_flower_sleep_rhythm": 1.0,
+    "sleep_wake_cycle_integrity": 1.0,
+    "source_autonomous_society_continuity": 1.0,
+    "stored_rehearsal_binding": 0.842111,
+    "weakest_channel_score": 0.833333,
+    "welfare_sleep_guardrails": 0.833333
+  },
+  "name": "SSRM-3D Browser World v11 Long-Horizon Sleep/Re-Entry Bridge",
+  "next_gate": "browser world v12 with remembered avatar re-entry dialogue, absence summaries, and multi-turn repair/renegotiation after the society has changed without the avatar",
+  "report": 251,
+  "seed": 20260864,
+  "source_results": "artifacts/ssrm_3d_browser_world_v10_autonomous_post_entry_society_tick_bridge_results.json",
+  "verdict": "pass"
+}

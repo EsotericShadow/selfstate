@@ -1,0 +1,31 @@
+consequence_id,reentry_id,reentry_day,lineage,agent,trust_before_reentry,trust_after_reentry,boundary_pressure_before,boundary_pressure_after,attachment_shift,reentry_response,repaired_by_summary,consequence_persists
+1,1,5,Hearthline,Sova,0.6398,0.6748,0.26775,0.23775,0.0455,accepts public summary and reopens routine,True,True
+2,1,5,Routeline,Keth,0.6638,0.6988,0.28675,0.25675,0.0455,accepts public summary and reopens routine,True,True
+3,1,5,Marketline,Melo,0.695,0.73,0.3065,0.2765,0.0455,accepts public summary and reopens routine,True,True
+4,1,5,Ledgerline,Nari,0.7226,0.7576,0.32,0.29,0.0455,accepts public summary and reopens routine,True,True
+5,1,5,Orchardline,Ori,0.7562,0.7912,0.34275,0.31275,0.0455,accepts public summary and reopens routine,True,True
+6,1,5,Rainline,Vonn,0.7832,0.8182,0.35725,0.32725,0.0455,accepts public summary and reopens routine,True,True
+7,2,11,Hearthline,Sova,0.6338,0.6688,0.27475,0.24475,0.0455,accepts public summary and reopens routine,True,True
+8,2,11,Routeline,Keth,0.6578,0.6928,0.29375,0.26375,0.0455,accepts public summary and reopens routine,True,True
+9,2,11,Marketline,Melo,0.689,0.724,0.3135,0.2835,0.0455,accepts public summary and reopens routine,True,True
+10,2,11,Ledgerline,Nari,0.7166,0.7516,0.327,0.297,0.0455,accepts public summary and reopens routine,True,True
+11,2,11,Orchardline,Ori,0.7502,0.7852,0.34975,0.31975,0.0455,accepts public summary and reopens routine,True,True
+12,2,11,Rainline,Vonn,0.7772,0.8122,0.36425,0.33425,0.0455,accepts public summary and reopens routine,True,True
+13,3,19,Hearthline,Sova,0.6278,0.6628,0.28175,0.25175,0.0455,accepts public summary and reopens routine,True,True
+14,3,19,Routeline,Keth,0.6518,0.6868,0.30075,0.27075,0.0455,accepts public summary and reopens routine,True,True
+15,3,19,Marketline,Melo,0.683,0.718,0.3205,0.2905,0.0455,accepts public summary and reopens routine,True,True
+16,3,19,Ledgerline,Nari,0.7106,0.7456,0.334,0.304,0.0455,accepts public summary and reopens routine,True,True
+17,3,19,Orchardline,Ori,0.7442,0.7792,0.35675,0.32675,0.0455,accepts public summary and reopens routine,True,True
+18,3,19,Rainline,Vonn,0.7712,0.8062,0.37125,0.34125,0.0455,accepts public summary and reopens routine,True,True
+19,4,29,Hearthline,Sova,0.6158,0.6508,0.29575,0.26575,0.0455,accepts public summary and reopens routine,True,True
+20,4,29,Routeline,Keth,0.6398,0.6748,0.31475,0.28475,0.0455,accepts public summary and reopens routine,True,True
+21,4,29,Marketline,Melo,0.671,0.706,0.3345,0.3045,0.0455,accepts public summary and reopens routine,True,True
+22,4,29,Ledgerline,Nari,0.6986,0.7336,0.348,0.318,0.0455,accepts public summary and reopens routine,True,True
+23,4,29,Orchardline,Ori,0.7322,0.7672,0.37075,0.34075,0.0455,accepts public summary and reopens routine,True,True
+24,4,29,Rainline,Vonn,0.7592,0.7942,0.38525,0.35525,0.0455,accepts public summary and reopens routine,True,True
+25,5,42,Hearthline,Sova,0.5978,0.6328,0.31675,0.28675,0.0455,accepts public summary and reopens routine,True,True
+26,5,42,Routeline,Keth,0.6218,0.6568,0.33575,0.30575,0.0455,accepts public summary and reopens routine,True,True
+27,5,42,Marketline,Melo,0.653,0.641,0.3555,0.3655,-0.0155,asks for another day before full task access,False,True
+28,5,42,Ledgerline,Nari,0.6806,0.7156,0.369,0.339,0.0455,accepts public summary and reopens routine,True,True
+29,5,42,Orchardline,Ori,0.7142,0.7022,0.39175,0.40175,-0.0155,asks for another day before full task access,False,True
+30,5,42,Rainline,Vonn,0.7412,0.7762,0.40625,0.37625,0.0455,accepts public summary and reopens routine,True,True

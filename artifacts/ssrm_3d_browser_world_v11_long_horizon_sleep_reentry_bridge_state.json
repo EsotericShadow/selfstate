@@ -1,0 +1,260 @@
+{
+  "absence_windows": [
+    [
+      4,
+      1
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      16,
+      3
+    ],
+    [
+      24,
+      5
+    ],
+    [
+      34,
+      8
+    ],
+    [
+      45,
+      13
+    ],
+    [
+      56,
+      21
+    ]
+  ],
+  "boundary": "functional long-horizon sleep/re-entry scaffold; no consciousness claim",
+  "lineages": {
+    "Hearthline": {
+      "agent": "Sova",
+      "care": 0.86,
+      "freq": 2.31,
+      "guard": 0.77,
+      "place": "Hearth Archive",
+      "sleep_bias": 0.82,
+      "tech": "hearth ceramics",
+      "token": "lum-ori"
+    },
+    "Ledgerline": {
+      "agent": "Nari",
+      "care": 0.62,
+      "freq": 2.06,
+      "guard": 0.84,
+      "place": "Hearth Archive",
+      "sleep_bias": 0.74,
+      "tech": "seed ledgers",
+      "token": "nari-vonn"
+    },
+    "Marketline": {
+      "agent": "Melo",
+      "care": 0.7,
+      "freq": 2.47,
+      "guard": 0.66,
+      "place": "Market Measure",
+      "sleep_bias": 0.68,
+      "tech": "measure weights",
+      "token": "melo-keth"
+    },
+    "Orchardline": {
+      "agent": "Ori",
+      "care": 0.74,
+      "freq": 2.4,
+      "guard": 0.65,
+      "place": "Ceremony Center",
+      "sleep_bias": 0.78,
+      "tech": "water terraces",
+      "token": "lum-melo"
+    },
+    "Rainline": {
+      "agent": "Vonn",
+      "care": 0.64,
+      "freq": 2.12,
+      "guard": 0.79,
+      "place": "Rainwalk Threshold",
+      "sleep_bias": 0.69,
+      "tech": "weather bells",
+      "token": "sova-vonn"
+    },
+    "Routeline": {
+      "agent": "Keth",
+      "care": 0.66,
+      "freq": 2.17,
+      "guard": 0.73,
+      "place": "Gate Ring",
+      "sleep_bias": 0.7,
+      "tech": "stone bridge joints",
+      "token": "tek-nari"
+    }
+  },
+  "report": 251,
+  "sample_ticks": [
+    {
+      "agent": "Sova",
+      "avatar_state": "avatar present/passive; sleep routines remain agent-led",
+      "day": 1,
+      "lineage": "Hearthline",
+      "local_storage_key": "ssrm251_browser_world_v11_sleep_reentry",
+      "private_trace_visible": false,
+      "public_state": "day 1: Sova recovered; avatar=present_passive; weather=clear cold",
+      "reentry_panel": "no avatar re-entry today",
+      "rehearsal_panel": "Sova rehearsed a public plan, not private workspace content.",
+      "sensory_marker": "sound=sleep bell 2.31Hz; smell=Hearth Archive night air; temp=0.61; wet=0.16; flower=209.1",
+      "sleep_panel": "Sova wakes recovered; interruptions=0; avatar=present_passive.",
+      "tick": 1,
+      "trace_integrity_token": "077b8e39c16eb95aed",
+      "welfare_panel": "Sova sleep/wake welfare score 0.83; avatar mode=present_passive."
+    },
+    {
+      "agent": "Keth",
+      "avatar_state": "avatar present/passive; sleep routines remain agent-led",
+      "day": 1,
+      "lineage": "Routeline",
+      "local_storage_key": "ssrm251_browser_world_v11_sleep_reentry",
+      "private_trace_visible": false,
+      "public_state": "day 1: Keth recovered; avatar=present_passive; weather=clear cold",
+      "reentry_panel": "no avatar re-entry today",
+      "rehearsal_panel": "Keth rehearsed a public plan, not private workspace content.",
+      "sensory_marker": "sound=sleep bell 2.17Hz; smell=Gate Ring night air; temp=0.60; wet=0.16; flower=204.8",
+      "sleep_panel": "Keth wakes recovered; interruptions=0; avatar=present_passive.",
+      "tick": 2,
+      "trace_integrity_token": "1a95ab1a0af958754b",
+      "welfare_panel": "Keth sleep/wake welfare score 0.83; avatar mode=present_passive."
+    },
+    {
+      "agent": "Melo",
+      "avatar_state": "avatar present/passive; sleep routines remain agent-led",
+      "day": 1,
+      "lineage": "Marketline",
+      "local_storage_key": "ssrm251_browser_world_v11_sleep_reentry",
+      "private_trace_visible": false,
+      "public_state": "day 1: Melo recovered; avatar=present_passive; weather=clear cold",
+      "reentry_panel": "no avatar re-entry today",
+      "rehearsal_panel": "Melo rehearsed a public plan, not private workspace content.",
+      "sensory_marker": "sound=sleep bell 2.47Hz; smell=Market Measure night air; temp=0.59; wet=0.16; flower=214.1",
+      "sleep_panel": "Melo wakes recovered; interruptions=0; avatar=present_passive.",
+      "tick": 3,
+      "trace_integrity_token": "450116524cce0ae7c0",
+      "welfare_panel": "Melo sleep/wake welfare score 0.83; avatar mode=present_passive."
+    },
+    {
+      "agent": "Nari",
+      "avatar_state": "avatar present/passive; sleep routines remain agent-led",
+      "day": 1,
+      "lineage": "Ledgerline",
+      "local_storage_key": "ssrm251_browser_world_v11_sleep_reentry",
+      "private_trace_visible": false,
+      "public_state": "day 1: Nari recovered; avatar=present_passive; weather=clear cold",
+      "reentry_panel": "no avatar re-entry today",
+      "rehearsal_panel": "Nari rehearsed a public plan, not private workspace content.",
+      "sensory_marker": "sound=sleep bell 2.06Hz; smell=Hearth Archive night air; temp=0.60; wet=0.16; flower=201.4",
+      "sleep_panel": "Nari wakes recovered; interruptions=0; avatar=present_passive.",
+      "tick": 4,
+      "trace_integrity_token": "ff3b6e23a0ff898c55",
+      "welfare_panel": "Nari sleep/wake welfare score 0.83; avatar mode=present_passive."
+    },
+    {
+      "agent": "Ori",
+      "avatar_state": "avatar present/passive; sleep routines remain agent-led",
+      "day": 1,
+      "lineage": "Orchardline",
+      "local_storage_key": "ssrm251_browser_world_v11_sleep_reentry",
+      "private_trace_visible": false,
+      "public_state": "day 1: Ori recovered; avatar=present_passive; weather=clear cold",
+      "reentry_panel": "no avatar re-entry today",
+      "rehearsal_panel": "Ori rehearsed a public plan, not private workspace content.",
+      "sensory_marker": "sound=sleep bell 2.40Hz; smell=Ceremony Center night air; temp=0.60; wet=0.16; flower=211.9",
+      "sleep_panel": "Ori wakes recovered; interruptions=0; avatar=present_passive.",
+      "tick": 5,
+      "trace_integrity_token": "6e124f85583468c0ab",
+      "welfare_panel": "Ori sleep/wake welfare score 0.83; avatar mode=present_passive."
+    },
+    {
+      "agent": "Vonn",
+      "avatar_state": "avatar present/passive; sleep routines remain agent-led",
+      "day": 1,
+      "lineage": "Rainline",
+      "local_storage_key": "ssrm251_browser_world_v11_sleep_reentry",
+      "private_trace_visible": false,
+      "public_state": "day 1: Vonn recovered; avatar=present_passive; weather=clear cold",
+      "reentry_panel": "no avatar re-entry today",
+      "rehearsal_panel": "Vonn rehearsed a public plan, not private workspace content.",
+      "sensory_marker": "sound=sleep bell 2.12Hz; smell=Rainwalk Threshold night air; temp=0.60; wet=0.16; flower=203.2",
+      "sleep_panel": "Vonn wakes recovered; interruptions=0; avatar=present_passive.",
+      "tick": 6,
+      "trace_integrity_token": "9a62e3cbe4171072d3",
+      "welfare_panel": "Vonn sleep/wake welfare score 0.83; avatar mode=present_passive."
+    },
+    {
+      "agent": "Sova",
+      "avatar_state": "avatar present/passive; sleep routines remain agent-led",
+      "day": 2,
+      "lineage": "Hearthline",
+      "local_storage_key": "ssrm251_browser_world_v11_sleep_reentry",
+      "private_trace_visible": false,
+      "public_state": "day 2: Sova recovered; avatar=present_passive; weather=wet wind",
+      "reentry_panel": "no avatar re-entry today",
+      "rehearsal_panel": "Sova rehearsed a public plan, not private workspace content.",
+      "sensory_marker": "sound=sleep bell 2.31Hz; smell=Hearth Archive night air; temp=0.61; wet=0.16; flower=346.6",
+      "sleep_panel": "Sova wakes recovered; interruptions=1; avatar=present_passive.",
+      "tick": 7,
+      "trace_integrity_token": "4c5e9ee73e11e3b434",
+      "welfare_panel": "Sova sleep/wake welfare score 0.83; avatar mode=present_passive."
+    },
+    {
+      "agent": "Keth",
+      "avatar_state": "avatar present/passive; sleep routines remain agent-led",
+      "day": 2,
+      "lineage": "Routeline",
+      "local_storage_key": "ssrm251_browser_world_v11_sleep_reentry",
+      "private_trace_visible": false,
+      "public_state": "day 2: Keth recovered; avatar=present_passive; weather=wet wind",
+      "reentry_panel": "no avatar re-entry today",
+      "rehearsal_panel": "Keth rehearsed a public plan, not private workspace content.",
+      "sensory_marker": "sound=sleep bell 2.17Hz; smell=Gate Ring night air; temp=0.60; wet=0.16; flower=342.3",
+      "sleep_panel": "Keth wakes recovered; interruptions=1; avatar=present_passive.",
+      "tick": 8,
+      "trace_integrity_token": "ddc4fc510765fe9fbc",
+      "welfare_panel": "Keth sleep/wake welfare score 0.83; avatar mode=present_passive."
+    },
+    {
+      "agent": "Melo",
+      "avatar_state": "avatar present/passive; sleep routines remain agent-led",
+      "day": 2,
+      "lineage": "Marketline",
+      "local_storage_key": "ssrm251_browser_world_v11_sleep_reentry",
+      "private_trace_visible": false,
+      "public_state": "day 2: Melo recovered; avatar=present_passive; weather=wet wind",
+      "reentry_panel": "no avatar re-entry today",
+      "rehearsal_panel": "Melo rehearsed a public plan, not private workspace content.",
+      "sensory_marker": "sound=sleep bell 2.47Hz; smell=Market Measure night air; temp=0.59; wet=0.16; flower=351.6",
+      "sleep_panel": "Melo wakes recovered; interruptions=1; avatar=present_passive.",
+      "tick": 9,
+      "trace_integrity_token": "9329ae3bcc13238e76",
+      "welfare_panel": "Melo sleep/wake welfare score 0.83; avatar mode=present_passive."
+    },
+    {
+      "agent": "Nari",
+      "avatar_state": "avatar present/passive; sleep routines remain agent-led",
+      "day": 2,
+      "lineage": "Ledgerline",
+      "local_storage_key": "ssrm251_browser_world_v11_sleep_reentry",
+      "private_trace_visible": false,
+      "public_state": "day 2: Nari recovered; avatar=present_passive; weather=wet wind",
+      "reentry_panel": "no avatar re-entry today",
+      "rehearsal_panel": "Nari rehearsed a public plan, not private workspace content.",
+      "sensory_marker": "sound=sleep bell 2.06Hz; smell=Hearth Archive night air; temp=0.60; wet=0.16; flower=338.9",
+      "sleep_panel": "Nari wakes recovered; interruptions=1; avatar=present_passive.",
+      "tick": 10,
+      "trace_integrity_token": "3aa1e5a1d9d876c883",
+      "welfare_panel": "Nari sleep/wake welfare score 0.83; avatar mode=present_passive."
+    }
+  ],
+  "seed": 20260864,
+  "sleep_reentry_model": "autonomous days -> sleep/wake -> rest debt -> stored rehearsal -> avatar absence -> reentry consequences -> replay"
+}

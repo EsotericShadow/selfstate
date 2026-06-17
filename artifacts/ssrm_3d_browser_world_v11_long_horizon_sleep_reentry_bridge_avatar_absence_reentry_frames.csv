@@ -1,0 +1,6 @@
+reentry_id,reentry_day,absence_length_days,avatar_return_place,society_changed_while_absent,summary_given_to_avatar,surprise_level,continuity_score,reentry_protocol,rollback_checkpoint
+1,5,1,Gate Ring,True,"You were away 1 days. Society continued: sleep, work, care, rehearsal, and memory changed.",0.205,0.934,"pause avatar control, summarize public changes, ask before resuming tasks",r251-reentry-day05
+2,11,2,Hearth Archive,True,"You were away 2 days. Society continued: sleep, work, care, rehearsal, and memory changed.",0.23,0.928,"pause avatar control, summarize public changes, ask before resuming tasks",r251-reentry-day11
+3,19,3,Market Measure,True,"You were away 3 days. Society continued: sleep, work, care, rehearsal, and memory changed.",0.255,0.922,"pause avatar control, summarize public changes, ask before resuming tasks",r251-reentry-day19
+4,29,5,Rainwalk Threshold,True,"You were away 5 days. Society continued: sleep, work, care, rehearsal, and memory changed.",0.305,0.91,"pause avatar control, summarize public changes, ask before resuming tasks",r251-reentry-day29
+5,42,8,Ceremony Center,True,"You were away 8 days. Society continued: sleep, work, care, rehearsal, and memory changed.",0.38,0.892,"pause avatar control, summarize public changes, ask before resuming tasks",r251-reentry-day42

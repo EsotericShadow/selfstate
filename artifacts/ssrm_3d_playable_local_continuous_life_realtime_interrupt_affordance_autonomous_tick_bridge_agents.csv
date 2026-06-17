@@ -1,0 +1,6 @@
+agent_id,display_name,role,x,y,current_need,current_task,interrupt_style,trust_avatar,boundary_pressure,public_reputation_link,private_workspace_digest,frequency_hz,flower_node
+fayen,Fayen,care mediator,28.0,34.0,rest timing,care bell watch,soft interrupt before body-cost mistakes,0.73,0.16,careful helper,sealed:fayen:continuous-life-workspace,202.0,1
+ariq,Ariq,repair claimant,54.0,48.0,bridge load,stone arc test,urgent but accepts timed pause,0.64,0.25,work-accountable,sealed:ariq:continuous-life-workspace,233.0,2
+nian,Nian,boundary keeper,42.0,22.0,privacy threshold,archive public digest,short precision correction,0.56,0.44,privacy learner,sealed:nian:continuous-life-workspace,264.0,3
+roka,Roka,child apprentice,22.0,62.0,learner bundle safety,reed drying lesson,distance-first request,0.47,0.39,boundary-tested,sealed:roka:continuous-life-workspace,295.0,4
+noro,Noro,material ledger keeper,70.0,58.0,debt clarity,knot board close,ledger ping with public debt,0.6,0.22,debt-accountable,sealed:noro:continuous-life-workspace,326.0,5

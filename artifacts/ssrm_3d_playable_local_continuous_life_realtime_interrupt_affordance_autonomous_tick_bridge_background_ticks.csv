@@ -1,0 +1,25 @@
+tick_id,day,time_s,agent_id,autonomous_action,need_shift,object_effect,relationship_effect,visible_marker,runs_during_avatar_idle,saved_to_day_journal,frequency_hz,flower_node
+bg-001,1,48.0,fayen,checks water cups,fatigue -0.02,cups cleaned,care trust stable,Fayen sets cups back on shade mat,True,True,122.75,10
+bg-002,1,56.0,ariq,taps bridge stone,arousal +0.03,stone marked hollow,asks Noro before lift,Ariq kneels by chalk arc,True,True,127.5,11
+bg-003,1,64.0,nian,rewrites public wording,control +0.02,archive flap sealed,privacy boundary stable,Nian folds the flap cord,True,True,132.25,12
+bg-004,1,72.0,roka,turns loose reeds,confidence +0.03,loose reeds dry,trust cautiously rises,Roka checks blue stone distance,True,True,137.0,1
+bg-005,1,80.0,noro,counts debt knots,focus +0.02,knot board updated,debt remains public,Noro taps the board twice,True,True,141.75,2
+bg-006,1,88.0,environment,rain pressure shifts,wetness +0.04,path mud thickens,agents slow routines,rain rattles the slow-hands cloth,False,True,146.5,3
+bg-007,2,948.0,fayen,checks water cups,fatigue -0.02,cups cleaned,care trust stable,Fayen sets cups back on shade mat,True,True,151.25,4
+bg-008,2,956.0,ariq,taps bridge stone,arousal +0.03,stone marked hollow,asks Noro before lift,Ariq kneels by chalk arc,True,True,156.0,5
+bg-009,2,964.0,nian,rewrites public wording,control +0.02,archive flap sealed,privacy boundary stable,Nian folds the flap cord,True,True,160.75,6
+bg-010,2,972.0,roka,turns loose reeds,confidence +0.03,loose reeds dry,trust cautiously rises,Roka checks blue stone distance,True,True,165.5,7
+bg-011,2,980.0,noro,counts debt knots,focus +0.02,knot board updated,debt remains public,Noro taps the board twice,True,True,170.25,8
+bg-012,2,988.0,environment,rain pressure shifts,wetness +0.04,path mud thickens,none,rain rattles the slow-hands cloth,True,True,175.0,9
+bg-013,3,1848.0,fayen,checks water cups,fatigue -0.02,cups cleaned,care trust stable,Fayen sets cups back on shade mat,True,True,179.75,10
+bg-014,3,1856.0,ariq,taps bridge stone,arousal +0.03,stone marked hollow,asks Noro before lift,Ariq kneels by chalk arc,True,True,184.5,11
+bg-015,3,1864.0,nian,rewrites public wording,control +0.02,archive flap sealed,privacy boundary stable,Nian folds the flap cord,True,True,189.25,12
+bg-016,3,1872.0,roka,turns loose reeds,confidence +0.03,loose reeds dry,trust cautiously rises,Roka checks blue stone distance,True,True,194.0,1
+bg-017,3,1880.0,noro,counts debt knots,focus +0.02,knot board updated,debt remains public,Noro taps the board twice,True,True,198.75,2
+bg-018,3,1888.0,environment,rain pressure shifts,wetness +0.04,path mud thickens,agents slow routines,rain rattles the slow-hands cloth,True,True,203.5,3
+bg-019,4,2748.0,fayen,checks water cups,fatigue -0.02,cups cleaned,care trust stable,Fayen sets cups back on shade mat,True,True,208.25,4
+bg-020,4,2756.0,ariq,taps bridge stone,arousal +0.03,stone marked hollow,asks Noro before lift,Ariq kneels by chalk arc,True,True,213.0,5
+bg-021,4,2764.0,nian,rewrites public wording,control +0.02,archive flap sealed,privacy boundary stable,Nian folds the flap cord,True,True,217.75,6
+bg-022,4,2772.0,roka,turns loose reeds,confidence +0.03,loose reeds dry,trust cautiously rises,Roka checks blue stone distance,True,True,222.5,7
+bg-023,4,2780.0,noro,counts debt knots,focus +0.02,knot board updated,debt remains public,Noro taps the board twice,True,True,227.25,8
+bg-024,4,2788.0,environment,rain pressure shifts,wetness +0.04,none,agents slow routines,rain rattles the slow-hands cloth,True,False,232.0,9

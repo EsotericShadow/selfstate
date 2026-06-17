@@ -1,0 +1,2 @@
+report,module,verdict,readiness,weakest_channel_score,next_gate
+228,ssrm_3d_playable_local_continuous_life_realtime_interrupt_affordance_autonomous_tick_bridge,pass,0.998395,0.842857,"playable local 3D continuous life with compositional object transformations, autonomous agent schedules, richer body-state dynamics, and typed dialogue inside the realtime loop"

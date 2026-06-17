@@ -972,6 +972,23 @@ This is Report 154: a deterministic recurrent controller for source-ledger avata
 This is Report 155: a deterministic bridge attaching recurrent source-grounded dialogue to live agent body/affect, internal workspace, embodied avatar, world state, and sensory frequency packets. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
 
 
+### Report 156: SSRM-3D interactive avatar dialogue loop bridge
+
+| Condition | Readiness | Start/pause | Parse | Mutation | Render | Source gate | Frequency | UI state | Replay | Specificity | Trace |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `integrated_interactive_avatar_dialogue_loop` | `0.978611` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.694444` | `1.000000` |
+| `no_start_pause_scheduler` | `0.878611` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.694444` | `1.000000` |
+| `no_typed_avatar_input` | `0.498333` | `1.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `0.833333` | `1.000000` |
+| `no_live_mutation_runtime` | `0.738333` | `1.000000` | `1.000000` | `0.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.833333` | `1.000000` |
+| `no_body_world_render_binding` | `0.858611` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.694444` | `1.000000` |
+| `no_source_gate_feedback` | `0.856667` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `0.666667` | `1.000000` |
+| `no_frequency_feedback_render` | `0.886389` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `0.805556` | `1.000000` |
+| `no_replay_export` | `0.898611` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `0.694444` | `1.000000` |
+| `no_persistent_ui_state` | `0.888611` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `0.694444` | `1.000000` |
+
+This is Report 156: a deterministic browser-loop bridge over the live dialogue-world integration state, with start/pause/step controls, typed avatar dialogue, source-gate feedback, body/world mutation, frequency rendering, UI persistence, and replay export. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
+
+
 ## Reproducibility Artifacts
 
 | Script | Main artifact |
@@ -1062,6 +1079,7 @@ This is Report 155: a deterministic bridge attaching recurrent source-grounded d
 | `experiments/ssrm_3d_learned_faction_dialogue_policy_bridge.py` | `artifacts/ssrm_3d_learned_faction_dialogue_policy_bridge_verdict.csv` |
 | `experiments/ssrm_3d_recurrent_faction_dialogue_controller_bridge.py` | `artifacts/ssrm_3d_recurrent_faction_dialogue_controller_bridge_verdict.csv` |
 | `experiments/ssrm_3d_live_dialogue_world_integration_bridge.py` | `artifacts/ssrm_3d_live_dialogue_world_integration_bridge_verdict.csv` |
+| `experiments/ssrm_3d_interactive_avatar_dialogue_loop_bridge.py` | `artifacts/ssrm_3d_interactive_avatar_dialogue_loop_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

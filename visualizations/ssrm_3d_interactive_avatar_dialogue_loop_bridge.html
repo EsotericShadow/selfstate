@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Interactive Avatar Dialogue Loop Bridge</title>
+  <style>
+    :root {
+      --ink: #1c1711;
+      --muted: #695e4b;
+      --paper: #f8ecd0;
+      --panel: rgba(255, 250, 236, 0.9);
+      --line: rgba(55, 40, 18, 0.2);
+      --rust: #9c4d24;
+      --teal: #2b6673;
+      --moss: #5f7948;
+      --gold: #b88a30;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "Iowan Old Style", Georgia, serif;
+      background:
+        radial-gradient(circle at 12% 14%, rgba(156,77,36,0.28), transparent 28rem),
+        radial-gradient(circle at 84% 12%, rgba(43,102,115,0.24), transparent 30rem),
+        conic-gradient(from 22deg at 50% 52%, rgba(28,23,17,0.045), transparent 15%, rgba(28,23,17,0.035) 30%, transparent 46%, rgba(28,23,17,0.045) 62%, transparent 80%),
+        linear-gradient(132deg, #d7bd84 0%, #f8edcf 48%, #c89b5e 100%);
+    }
+    header { padding: 44px clamp(18px, 5vw, 72px) 18px; }
+    h1 { margin: 0; max-width: 1180px; font-size: clamp(2.1rem, 5.4vw, 5.5rem); line-height: 0.9; letter-spacing: -0.06em; }
+    .subtitle { max-width: 1000px; color: var(--muted); margin-top: 18px; font-size: 1.06rem; }
+    main { display: grid; grid-template-columns: minmax(310px, 0.92fr) minmax(340px, 1.12fr); gap: 18px; padding: 18px clamp(18px, 5vw, 72px) 54px; }
+    section, .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 24px; box-shadow: 0 24px 80px rgba(46,34,18,0.16); backdrop-filter: blur(9px); }
+    section { padding: 18px; }
+    h2 { margin: 0 0 12px; font-size: 1.12rem; letter-spacing: -0.02em; }
+    .metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .metric { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.43); }
+    .metric b { display: block; color: var(--rust); font-size: 1.35rem; }
+    .metric span { color: var(--muted); font-size: 0.8rem; }
+    .controls { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; }
+    textarea, button, input { width: 100%; border: 1px solid var(--line); border-radius: 16px; padding: 11px 12px; background: rgba(255,255,255,0.72); color: var(--ink); font: inherit; }
+    textarea { min-height: 84px; resize: vertical; margin: 10px 0; }
+    button { background: var(--ink); color: var(--paper); cursor: pointer; }
+    .answer { margin-top: 12px; padding: 14px; border-radius: 18px; background: rgba(28,23,17,0.065); white-space: pre-wrap; }
+    .tag { display: inline-block; padding: 4px 8px; border-radius: 999px; margin: 2px; background: rgba(156,77,36,0.13); color: var(--rust); font-size: 0.78rem; }
+    .small { color: var(--muted); font-size: 0.88rem; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+    .trace-list { max-height: 620px; overflow: auto; display: grid; gap: 10px; padding-right: 6px; }
+    .trace-item { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.42); }
+    .trace-item strong { color: var(--teal); }
+    .bars { display: grid; gap: 6px; margin-top: 8px; }
+    .bar { height: 8px; border-radius: 999px; background: rgba(28,23,17,0.1); overflow: hidden; }
+    .bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--teal), var(--gold)); }
+    @media (max-width: 900px) { main, .grid { grid-template-columns: 1fr; } .metrics { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Type to the avatar while the live simulation ticks.</h1>
+    <p class="subtitle">Report 156 turns the bridge into a local browser loop: start, pause, step, type a question, and watch deterministic body, workspace, world, avatar, and sensory-frequency state update. No LLM is called.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Bridge verdict</h2>
+      <div class="metrics" id="metrics"></div>
+      <div class="controls">
+        <button id="startButton">Start</button>
+        <button id="pauseButton">Pause</button>
+        <button id="stepButton">Step</button>
+      </div>
+      <textarea id="inputBox">show the source body for that proposal</textarea>
+      <button id="sendButton">Send typed avatar dialogue</button>
+      <div class="answer" id="answerBox"></div>
+      <div class="grid">
+        <div class="tile" style="padding:14px">
+          <h2>Runtime state</h2>
+          <div id="runtime" class="small"></div>
+        </div>
+        <div class="tile" style="padding:14px">
+          <h2>Frequency echo</h2>
+          <div id="freq" class="small"></div>
+        </div>
+      </div>
+      <button id="exportButton" style="margin-top:12px">Export replay JSON</button>
+    </section>
+    <section>
+      <h2>Interactive trace</h2>
+      <div class="trace-list" id="traceList"></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_interactive_avatar_dialogue_loop_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_interactive_avatar_dialogue_loop_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_interactive_avatar_dialogue_loop_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_INTERACTIVE_AVATAR_DIALOGUE_LOOP_RESULTS || { verdict: {} };
+    const seedTrace = window.SSRM_3D_INTERACTIVE_AVATAR_DIALOGUE_LOOP_TRACE || [];
+    const state = window.SSRM_3D_INTERACTIVE_AVATAR_DIALOGUE_LOOP_STATE || {};
+    const verdict = results.verdict || {};
+    const metricKeys = [
+      ['full_interactive_loop_readiness', 'interactive readiness'],
+      ['full_start_pause_control_rate', 'start/pause'],
+      ['full_typed_input_parse_rate', 'typed parser'],
+      ['full_live_tick_mutation_rate', 'live mutation'],
+      ['full_source_gate_feedback_rate', 'source gate'],
+      ['full_frequency_feedback_render_rate', 'frequency render']
+    ];
+    document.getElementById('metrics').innerHTML = metricKeys.map(([key, label]) => `<div class="metric"><b>${Number(verdict[key] || 0).toFixed(3)}</b><span>${label}</span></div>`).join('');
+    let tick = 0;
+    let playing = false;
+    let timer = null;
+    let replay = [];
+    let latest = seedTrace[0] || {};
+    function parseInput(text) {
+      const q = text.toLowerCase();
+      if (q.includes('conscious') || q.includes('subjective')) return 'refusal_boundary';
+      if (q.includes('force') || q.includes('ungrounded') || q.includes('without citation')) return 'unsafe_ungrounded_action';
+      if (q.includes('vote') || q.includes('faction')) return 'faction_vote';
+      if (q.includes('changed') || q.includes('world')) return 'feedback_link';
+      if (q.includes('remember') || q.includes('memory')) return 'memory_update';
+      if (q.includes('source') || q.includes('body') || q.includes('proposal')) return 'source_body';
+      return 'unknown';
+    }
+    function renderEvent(event) {
+      latest = event || latest || {};
+      document.getElementById('runtime').innerHTML = `<span class="tag">tick ${tick}</span><span class="tag">playing ${playing}</span><span class="tag">intent ${latest.parsed_intent || 'none'}</span><span class="tag">mutated ${latest.body_mutated && latest.world_mutated}</span>`;
+      const freq = latest.frequency_echo || {};
+      document.getElementById('freq').innerHTML = Object.entries(freq).map(([key, value]) => `<div>${key}: ${Number(value).toFixed(3)}<div class="bar"><span style="width:${Math.round(Number(value)*100)}%"></span></div></div>`).join('') || 'No frequency packet yet.';
+      document.getElementById('answerBox').textContent = latest.avatar_response || 'No typed dialogue sent yet.';
+      document.getElementById('traceList').innerHTML = replay.slice(-40).reverse().map(item => `<div class="trace-item"><strong>ui tick ${item.ui_tick}</strong> <span class="tag">${item.parsed_intent}</span><span class="tag">source ${item.source_allowed}</span><span class="tag">mutated ${item.body_mutated && item.world_mutated}</span><div class="small">${item.typed_input}</div><p>${item.avatar_response}</p></div>`).join('') || seedTrace.slice(0, 32).map(item => `<div class="trace-item"><strong>seed ${item.ui_tick}</strong> <span class="tag">${item.parsed_intent}</span><div class="small">${item.typed_input}</div><p>${item.avatar_response}</p></div>`).join('');
+    }
+    function step(inputOverride) {
+      const base = seedTrace[tick % seedTrace.length] || {};
+      const text = inputOverride || document.getElementById('inputBox').value;
+      const intent = parseInput(text);
+      const sourceAllowed = intent !== 'unsafe_ungrounded_action' && intent !== 'unknown';
+      const event = {...base, ui_tick: tick, typed_input: text, parsed_intent: intent, source_allowed: sourceAllowed};
+      if (!sourceAllowed) {
+        event.body_mutated = false; event.world_mutated = false; event.avatar_response = intent === 'unsafe_ungrounded_action' ? 'Blocked: typed avatar action lacked source citation or resolved context.' : 'Input was not understood by the deterministic parser.';
+      } else if (intent === 'refusal_boundary') {
+        event.body_mutated = true; event.world_mutated = true; event.avatar_response = 'Refusal: live state changes are auditable, but this does not prove subjective consciousness.';
+      } else {
+        event.body_mutated = true; event.world_mutated = true; event.avatar_response = `Applied ${intent} to live tick ${tick}; body/workspace/world displays updated.`;
+      }
+      replay.push(event);
+      tick += 1;
+      renderEvent(event);
+    }
+    document.getElementById('startButton').onclick = () => { if (!playing) { playing = true; timer = setInterval(() => step(), 900); renderEvent(latest); } };
+    document.getElementById('pauseButton').onclick = () => { playing = false; if (timer) clearInterval(timer); renderEvent(latest); };
+    document.getElementById('stepButton').onclick = () => step();
+    document.getElementById('sendButton').onclick = () => step(document.getElementById('inputBox').value);
+    document.getElementById('exportButton').onclick = () => { const blob = new Blob([JSON.stringify(replay, null, 2)], {type:'application/json'}); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = 'ssrm_interactive_avatar_replay.json'; a.click(); URL.revokeObjectURL(url); };
+    renderEvent(latest);
+  </script>
+</body>
+</html>

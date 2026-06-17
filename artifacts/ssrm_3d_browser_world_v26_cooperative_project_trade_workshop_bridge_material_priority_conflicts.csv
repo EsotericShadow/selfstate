@@ -1,0 +1,841 @@
+tick_id,day,material,claimant_project,claimant_agent,competing_project,competing_agent,claimant_priority,competing_priority,conflict,winner_project,loser_project,compromise,visible_conflict_marker
+0,1,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.49,0.59,False,none,none,none,False
+1,1,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.63,0.63,False,none,none,none,False
+2,1,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.42,0.45,False,none,none,none,False
+3,1,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.56,0.57,False,none,none,none,False
+4,1,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.42,0.53,False,none,none,none,False
+5,1,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.56,0.57,False,none,none,none,False
+6,1,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.7,0.39,False,none,none,none,False
+7,1,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.49,0.51,False,none,none,none,False
+8,1,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.7,0.47,False,none,none,none,False
+9,1,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.49,0.51,False,none,none,none,False
+10,1,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.63,0.63,False,none,none,none,False
+11,1,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.42,0.45,False,none,none,none,False
+12,1,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.63,0.71,False,none,none,none,False
+13,1,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.42,0.45,False,none,none,none,False
+14,1,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.56,0.57,False,none,none,none,False
+15,1,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.7,0.39,False,none,none,none,False
+16,1,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.56,0.65,False,none,none,none,False
+17,1,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.7,0.39,False,none,none,none,False
+18,1,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.49,0.51,False,none,none,none,False
+19,1,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.63,0.63,False,none,none,none,False
+20,2,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.68,0.71,False,none,none,none,False
+21,2,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.82,0.45,False,none,none,none,False
+22,2,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.49,0.57,False,none,none,none,False
+23,2,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.75,0.39,False,none,none,none,False
+24,2,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.61,0.65,False,none,none,none,False
+25,2,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.75,0.39,False,none,none,none,False
+26,2,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.42,0.51,False,none,none,none,False
+27,2,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.68,0.63,False,none,none,none,False
+28,2,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.54,0.59,False,none,none,none,False
+29,2,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.68,0.63,False,none,none,none,False
+30,2,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.7,0.45,False,none,none,none,False
+31,2,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.61,0.57,False,none,none,none,False
+32,2,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.82,0.53,False,none,none,none,False
+33,2,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.61,0.57,False,none,none,none,False
+34,2,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.63,0.39,False,none,none,none,False
+35,2,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.54,0.51,False,none,none,none,False
+36,2,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.75,0.47,False,none,none,none,False
+37,2,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.54,0.51,False,none,none,none,False
+38,2,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.56,0.63,False,none,none,none,False
+39,2,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.82,0.45,False,none,none,none,False
+40,3,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.63,0.53,False,none,none,none,False
+41,3,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.42,0.57,False,none,none,none,False
+42,3,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.56,0.39,False,none,none,none,False
+43,3,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.7,0.51,False,none,none,none,False
+44,3,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.56,0.47,False,none,none,none,False
+45,3,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.7,0.51,False,none,none,none,False
+46,3,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.49,0.63,False,none,none,none,False
+47,3,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.63,0.45,False,none,none,none,False
+48,3,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.49,0.71,False,none,none,none,False
+49,3,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.63,0.45,False,none,none,none,False
+50,3,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.42,0.57,False,none,none,none,False
+51,3,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.56,0.39,False,none,none,none,False
+52,3,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.42,0.65,False,none,none,none,False
+53,3,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.56,0.39,False,none,none,none,False
+54,3,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.7,0.51,False,none,none,none,False
+55,3,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.49,0.63,False,none,none,none,False
+56,3,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.7,0.59,False,none,none,none,False
+57,3,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.49,0.63,False,none,none,none,False
+58,3,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.63,0.45,False,none,none,none,False
+59,3,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.42,0.57,False,none,none,none,False
+60,4,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.82,0.65,False,none,none,none,False
+61,4,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.49,0.39,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+62,4,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.75,0.51,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+63,4,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.42,0.63,False,none,none,none,False
+64,4,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.75,0.59,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+65,4,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.42,0.63,False,none,none,none,False
+66,4,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.68,0.45,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+67,4,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.7,0.57,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+68,4,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.68,0.53,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+69,4,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.7,0.57,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+70,4,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.61,0.39,False,none,none,none,False
+71,4,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.63,0.51,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+72,4,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.61,0.47,False,none,none,none,False
+73,4,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.63,0.51,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+74,4,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.54,0.63,True,dusk_signal_court,archive_public_kiosk,split stock and schedule appeal,True
+75,4,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.56,0.45,False,none,none,none,False
+76,4,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.54,0.71,True,flood_bridge_market_route,greenhouse_heat_loop,winner receives current slot,True
+77,4,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.56,0.45,False,none,none,none,False
+78,4,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.82,0.57,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+79,4,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.49,0.39,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+80,5,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.49,0.53,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+81,5,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.75,0.57,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+82,5,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.42,0.39,False,none,none,none,False
+83,5,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.75,0.57,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+84,5,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.42,0.47,False,none,none,none,False
+85,5,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.68,0.51,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+86,5,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.7,0.63,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+87,5,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.68,0.51,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,False
+88,5,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.7,0.71,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+89,5,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.61,0.45,False,none,none,none,False
+90,5,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.63,0.57,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+91,5,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.61,0.45,False,none,none,none,False
+92,5,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.63,0.65,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+93,5,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.54,0.39,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+94,5,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.56,0.51,False,none,none,none,False
+95,5,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.54,0.39,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+96,5,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.56,0.59,False,none,none,none,False
+97,5,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.82,0.63,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+98,5,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.49,0.45,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+99,5,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.82,0.63,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+100,6,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.56,0.65,True,archive_public_kiosk,flood_bridge_market_route,split stock and schedule appeal,True
+101,6,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.7,0.39,False,none,none,none,False
+102,6,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.49,0.51,False,none,none,none,False
+103,6,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.7,0.39,False,none,none,none,False
+104,6,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.49,0.59,False,none,none,none,False
+105,6,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.63,0.63,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+106,6,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.42,0.45,False,none,none,none,False
+107,6,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.63,0.63,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+108,6,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.42,0.53,False,none,none,none,False
+109,6,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.56,0.57,False,none,none,none,False
+110,6,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.7,0.39,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+111,6,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.56,0.57,False,none,none,none,False
+112,6,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.7,0.47,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+113,6,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.49,0.51,False,none,none,none,False
+114,6,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.63,0.63,False,none,none,none,False
+115,6,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.49,0.51,False,none,none,none,False
+116,6,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.63,0.71,False,none,none,none,False
+117,6,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.42,0.45,True,dusk_signal_court,archive_public_kiosk,split stock and schedule appeal,True
+118,6,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.56,0.57,False,none,none,none,False
+119,6,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.42,0.45,True,flood_bridge_market_route,greenhouse_heat_loop,split stock and schedule appeal,True
+120,7,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.75,0.47,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+121,7,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.42,0.51,False,none,none,none,False
+122,7,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.68,0.63,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+123,7,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.54,0.51,False,none,none,none,False
+124,7,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.68,0.71,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+125,7,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.7,0.45,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+126,7,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.61,0.57,False,none,none,none,False
+127,7,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.82,0.45,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+128,7,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.61,0.65,False,none,none,none,False
+129,7,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.63,0.39,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+130,7,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.54,0.51,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+131,7,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.75,0.39,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+132,7,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.54,0.59,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+133,7,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.56,0.63,False,none,none,none,False
+134,7,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.82,0.45,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+135,7,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.68,0.63,False,none,none,none,False
+136,7,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.82,0.53,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+137,7,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.49,0.57,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+138,7,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.75,0.39,False,none,none,none,False
+139,7,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.61,0.57,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+140,8,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.7,0.59,False,none,none,none,False
+141,8,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.49,0.63,False,none,none,none,False
+142,8,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.63,0.45,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+143,8,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.61,0.63,False,none,none,none,False
+144,8,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.63,0.53,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+145,8,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.42,0.57,False,none,none,none,False
+146,8,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.56,0.39,False,none,none,none,False
+147,8,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.54,0.57,False,none,none,none,False
+148,8,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.56,0.47,False,none,none,none,False
+149,8,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.7,0.51,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+150,8,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.49,0.63,False,none,none,none,False
+151,8,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.82,0.51,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+152,8,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.49,0.71,False,none,none,none,False
+153,8,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.63,0.45,False,none,none,none,False
+154,8,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.42,0.57,True,greenhouse_heat_loop,dusk_signal_court,winner receives current slot,True
+155,8,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.75,0.45,False,none,none,none,False
+156,8,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.42,0.65,True,archive_public_kiosk,flood_bridge_market_route,winner receives current slot,True
+157,8,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.56,0.39,False,none,none,none,False
+158,8,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.7,0.51,False,none,none,none,False
+159,8,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.68,0.39,False,none,none,none,False
+160,9,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.42,0.71,False,none,none,none,False
+161,9,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.68,0.45,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+162,9,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.7,0.57,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+163,9,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.68,0.45,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+164,9,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.7,0.65,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+165,9,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.61,0.39,False,none,none,none,False
+166,9,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.63,0.51,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+167,9,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.61,0.39,False,none,none,none,False
+168,9,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.63,0.59,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+169,9,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.54,0.63,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+170,9,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.56,0.45,False,none,none,none,False
+171,9,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.54,0.63,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+172,9,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.56,0.53,False,none,none,none,False
+173,9,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.82,0.57,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+174,9,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.49,0.39,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,False
+175,9,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.82,0.57,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+176,9,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.49,0.47,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+177,9,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.75,0.51,False,none,none,none,False
+178,9,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.42,0.63,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+179,9,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.75,0.51,False,none,none,none,False
+180,10,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.68,0.59,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+181,10,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.7,0.63,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+182,10,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.68,0.51,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+183,10,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.7,0.63,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+184,10,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.61,0.53,False,none,none,none,False
+185,10,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.63,0.57,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+186,10,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.61,0.45,False,none,none,none,False
+187,10,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.63,0.57,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+188,10,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.54,0.47,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+189,10,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.56,0.51,False,none,none,none,False
+190,10,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.54,0.39,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+191,10,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.56,0.51,False,none,none,none,False
+192,10,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.82,0.71,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+193,10,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.49,0.45,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+194,10,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.82,0.63,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+195,10,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.49,0.45,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+196,10,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.75,0.65,False,none,none,none,False
+197,10,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.42,0.39,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+198,10,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.75,0.57,False,none,none,none,False
+199,10,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.42,0.39,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+200,11,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.75,0.71,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+201,11,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.42,0.45,False,none,none,none,False
+202,11,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.75,0.63,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+203,11,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.42,0.45,False,none,none,none,False
+204,11,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.68,0.65,False,none,none,none,False
+205,11,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.7,0.39,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+206,11,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.68,0.57,False,none,none,none,False
+207,11,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.7,0.39,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+208,11,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.61,0.59,False,none,none,none,False
+209,11,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.63,0.63,False,none,none,none,False
+210,11,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.61,0.51,False,none,none,none,False
+211,11,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.63,0.63,False,none,none,none,False
+212,11,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.54,0.53,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+213,11,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.56,0.57,False,none,none,none,False
+214,11,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.54,0.45,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+215,11,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.56,0.57,False,none,none,none,False
+216,11,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.82,0.47,False,none,none,none,False
+217,11,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.49,0.51,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+218,11,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.82,0.39,False,none,none,none,False
+219,11,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.49,0.51,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+220,12,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.82,0.53,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+221,12,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.61,0.57,False,none,none,none,False
+222,12,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.82,0.45,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+223,12,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.61,0.57,False,none,none,none,False
+224,12,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.75,0.47,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+225,12,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.54,0.51,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+226,12,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.75,0.39,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+227,12,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.54,0.51,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+228,12,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.68,0.71,False,none,none,none,False
+229,12,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.82,0.45,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+230,12,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.68,0.63,False,none,none,none,False
+231,12,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.82,0.45,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+232,12,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.61,0.65,True,dusk_signal_court,archive_public_kiosk,split stock and schedule appeal,False
+233,12,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.75,0.39,False,none,none,none,False
+234,12,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.61,0.57,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+235,12,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.75,0.39,False,none,none,none,False
+236,12,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.54,0.59,True,dusk_signal_court,archive_public_kiosk,split stock and schedule appeal,True
+237,12,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.68,0.63,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+238,12,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.54,0.51,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+239,12,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.68,0.63,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+240,13,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.42,0.65,False,none,none,none,False
+241,13,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.68,0.39,False,none,none,none,False
+242,13,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.54,0.57,False,none,none,none,False
+243,13,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.68,0.39,False,none,none,none,False
+244,13,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.7,0.59,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+245,13,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.61,0.63,False,none,none,none,False
+246,13,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.82,0.51,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+247,13,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.61,0.63,False,none,none,none,False
+248,13,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.63,0.53,False,none,none,none,False
+249,13,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.54,0.57,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+250,13,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.75,0.45,False,none,none,none,False
+251,13,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.54,0.57,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+252,13,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.56,0.47,False,none,none,none,False
+253,13,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.82,0.51,False,none,none,none,False
+254,13,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.68,0.39,False,none,none,none,False
+255,13,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.82,0.51,False,none,none,none,False
+256,13,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.49,0.71,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+257,13,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.75,0.45,False,none,none,none,False
+258,13,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.61,0.63,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+259,13,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.75,0.45,False,none,none,none,False
+260,14,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.61,0.47,False,none,none,none,False
+261,14,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.63,0.51,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,False
+262,14,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.61,0.39,False,none,none,none,False
+263,14,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.63,0.51,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+264,14,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.54,0.71,True,dusk_signal_court,archive_public_kiosk,winner receives current slot,True
+265,14,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.56,0.45,False,none,none,none,False
+266,14,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.54,0.63,True,flood_bridge_market_route,greenhouse_heat_loop,split stock and schedule appeal,True
+267,14,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.56,0.45,False,none,none,none,False
+268,14,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.82,0.65,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+269,14,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.49,0.39,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+270,14,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.82,0.57,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+271,14,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.49,0.39,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+272,14,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.75,0.59,False,none,none,none,False
+273,14,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.42,0.63,True,greenhouse_heat_loop,dusk_signal_court,winner receives current slot,True
+274,14,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.75,0.51,False,none,none,none,False
+275,14,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.42,0.63,True,archive_public_kiosk,flood_bridge_market_route,winner receives current slot,True
+276,14,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.68,0.53,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+277,14,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.7,0.57,False,none,none,none,False
+278,14,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.68,0.45,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+279,14,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.7,0.57,False,none,none,none,False
+280,15,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.63,0.65,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+281,15,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.61,0.45,False,none,none,none,False
+282,15,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.63,0.57,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+283,15,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.54,0.39,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+284,15,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.56,0.59,False,none,none,none,False
+285,15,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.54,0.39,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+286,15,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.56,0.51,False,none,none,none,False
+287,15,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.82,0.63,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+288,15,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.49,0.53,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+289,15,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.82,0.63,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+290,15,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.49,0.45,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,False
+291,15,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.75,0.57,False,none,none,none,False
+292,15,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.42,0.47,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+293,15,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.75,0.57,False,none,none,none,False
+294,15,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.42,0.39,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+295,15,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.68,0.51,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+296,15,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.7,0.71,False,none,none,none,False
+297,15,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.68,0.51,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+298,15,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.7,0.63,False,none,none,none,False
+299,15,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.61,0.45,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+300,16,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.82,0.47,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+301,16,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.68,0.57,False,none,none,none,False
+302,16,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.7,0.39,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+303,16,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.61,0.51,False,none,none,none,False
+304,16,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.75,0.71,False,none,none,none,False
+305,16,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.61,0.51,False,none,none,none,False
+306,16,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.63,0.63,False,none,none,none,False
+307,16,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.54,0.45,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+308,16,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.68,0.65,False,none,none,none,False
+309,16,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.54,0.45,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+310,16,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.56,0.57,False,none,none,none,False
+311,16,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.82,0.39,False,none,none,none,False
+312,16,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.61,0.59,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+313,16,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.82,0.39,False,none,none,none,False
+314,16,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.49,0.51,True,archive_public_kiosk,flood_bridge_market_route,split stock and schedule appeal,True
+315,16,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.75,0.63,False,none,none,none,False
+316,16,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.54,0.53,False,none,none,none,False
+317,16,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.75,0.63,False,none,none,none,False
+318,16,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.42,0.45,False,none,none,none,False
+319,16,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.68,0.57,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,False
+320,17,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.54,0.59,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+321,17,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.75,0.39,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+322,17,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.54,0.51,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+323,17,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.68,0.63,False,none,none,none,False
+324,17,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.82,0.53,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+325,17,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.68,0.63,False,none,none,none,False
+326,17,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.82,0.45,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+327,17,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.61,0.57,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+328,17,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.75,0.47,False,none,none,none,False
+329,17,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.61,0.57,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+330,17,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.75,0.39,False,none,none,none,False
+331,17,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.54,0.51,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+332,17,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.68,0.71,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+333,17,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.54,0.51,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+334,17,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.68,0.63,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+335,17,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.82,0.45,False,none,none,none,False
+336,17,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.61,0.65,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+337,17,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.82,0.45,False,none,none,none,False
+338,17,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.61,0.57,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+339,17,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.75,0.39,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+340,18,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.61,0.71,False,none,none,none,False
+341,18,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.82,0.51,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+342,18,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.61,0.63,False,none,none,none,False
+343,18,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.75,0.45,False,none,none,none,False
+344,18,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.54,0.65,True,greenhouse_heat_loop,dusk_signal_court,split stock and schedule appeal,True
+345,18,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.75,0.45,False,none,none,none,False
+346,18,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.54,0.57,True,archive_public_kiosk,flood_bridge_market_route,split stock and schedule appeal,True
+347,18,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.68,0.39,False,none,none,none,False
+348,18,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.82,0.59,False,none,none,none,False
+349,18,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.68,0.39,False,none,none,none,False
+350,18,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.82,0.51,False,none,none,none,False
+351,18,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.61,0.63,True,dusk_signal_court,archive_public_kiosk,split stock and schedule appeal,True
+352,18,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.75,0.53,False,none,none,none,False
+353,18,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.61,0.63,True,flood_bridge_market_route,greenhouse_heat_loop,split stock and schedule appeal,True
+354,18,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.75,0.45,False,none,none,none,False
+355,18,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.54,0.57,False,none,none,none,False
+356,18,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.68,0.47,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+357,18,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.54,0.57,False,none,none,none,False
+358,18,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.68,0.39,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+359,18,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.82,0.51,False,none,none,none,False
+360,19,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.56,0.53,False,none,none,none,False
+361,19,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.54,0.63,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+362,19,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.56,0.45,False,none,none,none,False
+363,19,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.82,0.57,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+364,19,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.49,0.47,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+365,19,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.82,0.57,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+366,19,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.49,0.39,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+367,19,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.75,0.51,False,none,none,none,False
+368,19,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.42,0.71,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+369,19,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.75,0.51,False,none,none,none,False
+370,19,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.42,0.63,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+371,19,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.68,0.45,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+372,19,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.7,0.65,False,none,none,none,False
+373,19,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.68,0.45,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+374,19,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.7,0.57,False,none,none,none,False
+375,19,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.61,0.39,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+376,19,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.63,0.59,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+377,19,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.61,0.39,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,False
+378,19,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.63,0.51,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+379,19,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.54,0.63,False,none,none,none,False
+380,20,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.54,0.47,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+381,20,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.56,0.51,False,none,none,none,False
+382,20,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.82,0.63,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+383,20,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.49,0.45,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+384,20,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.82,0.71,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+385,20,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.49,0.45,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+386,20,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.75,0.57,False,none,none,none,False
+387,20,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.42,0.39,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+388,20,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.75,0.65,False,none,none,none,False
+389,20,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.42,0.39,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+390,20,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.68,0.51,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+391,20,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.7,0.63,False,none,none,none,False
+392,20,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.68,0.59,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+393,20,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.7,0.63,False,none,none,none,False
+394,20,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.61,0.45,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+395,20,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.63,0.57,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+396,20,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.61,0.53,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+397,20,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.63,0.57,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+398,20,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.54,0.39,False,none,none,none,False
+399,20,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.56,0.51,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+400,21,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.61,0.59,False,none,none,none,False
+401,21,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.63,0.63,False,none,none,none,False
+402,21,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.54,0.45,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+403,21,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.68,0.57,False,none,none,none,False
+404,21,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.54,0.53,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+405,21,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.56,0.57,False,none,none,none,False
+406,21,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.82,0.39,False,none,none,none,False
+407,21,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.61,0.51,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+408,21,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.82,0.47,False,none,none,none,False
+409,21,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.49,0.51,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+410,21,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.75,0.63,False,none,none,none,False
+411,21,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.54,0.45,False,none,none,none,False
+412,21,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.75,0.71,False,none,none,none,False
+413,21,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.42,0.45,False,none,none,none,False
+414,21,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.68,0.57,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+415,21,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.82,0.39,False,none,none,none,False
+416,21,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.68,0.65,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+417,21,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.7,0.39,False,none,none,none,False
+418,21,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.61,0.51,False,none,none,none,False
+419,21,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.75,0.63,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+420,22,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.68,0.71,False,none,none,none,False
+421,22,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.82,0.45,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+422,22,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.61,0.57,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+423,22,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.75,0.39,False,none,none,none,False
+424,22,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.61,0.65,True,flood_bridge_market_route,greenhouse_heat_loop,split stock and schedule appeal,True
+425,22,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.75,0.39,False,none,none,none,False
+426,22,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.54,0.51,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+427,22,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.68,0.63,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+428,22,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.54,0.59,True,flood_bridge_market_route,greenhouse_heat_loop,split stock and schedule appeal,True
+429,22,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.68,0.63,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+430,22,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.82,0.45,False,none,none,none,False
+431,22,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.61,0.57,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+432,22,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.82,0.53,False,none,none,none,False
+433,22,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.61,0.57,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+434,22,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.75,0.39,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+435,22,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.54,0.51,False,none,none,none,False
+436,22,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.75,0.47,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+437,22,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.54,0.51,False,none,none,none,False
+438,22,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.68,0.63,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+439,22,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.82,0.45,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+440,23,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.75,0.53,False,none,none,none,False
+441,23,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.54,0.57,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+442,23,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.68,0.39,False,none,none,none,False
+443,23,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.82,0.51,False,none,none,none,False
+444,23,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.68,0.47,False,none,none,none,False
+445,23,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.82,0.51,False,none,none,none,False
+446,23,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.61,0.63,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+447,23,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.75,0.45,False,none,none,none,False
+448,23,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.61,0.71,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+449,23,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.75,0.45,False,none,none,none,False
+450,23,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.54,0.57,False,none,none,none,False
+451,23,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.68,0.39,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+452,23,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.54,0.65,False,none,none,none,False
+453,23,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.68,0.39,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+454,23,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.82,0.51,False,none,none,none,False
+455,23,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.61,0.63,False,none,none,none,False
+456,23,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.82,0.59,False,none,none,none,False
+457,23,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.61,0.63,False,none,none,none,False
+458,23,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.75,0.45,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+459,23,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.54,0.57,False,none,none,none,False
+460,24,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.82,0.65,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+461,24,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.49,0.39,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+462,24,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.75,0.51,False,none,none,none,False
+463,24,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.54,0.63,True,greenhouse_heat_loop,dusk_signal_court,split stock and schedule appeal,True
+464,24,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.75,0.59,False,none,none,none,False
+465,24,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.42,0.63,True,archive_public_kiosk,flood_bridge_market_route,winner receives current slot,True
+466,24,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.68,0.45,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+467,24,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.82,0.57,False,none,none,none,False
+468,24,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.68,0.53,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+469,24,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.7,0.57,False,none,none,none,False
+470,24,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.61,0.39,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+471,24,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.75,0.51,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+472,24,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.61,0.47,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+473,24,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.63,0.51,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+474,24,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.54,0.63,False,none,none,none,False
+475,24,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.68,0.45,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+476,24,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.54,0.71,False,none,none,none,False
+477,24,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.56,0.45,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+478,24,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.82,0.57,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+479,24,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.61,0.39,False,none,none,none,False
+480,25,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.49,0.53,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+481,25,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.75,0.57,False,none,none,none,False
+482,25,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.54,0.39,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+483,25,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.75,0.57,False,none,none,none,False
+484,25,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.42,0.47,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+485,25,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.68,0.51,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+486,25,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.82,0.63,False,none,none,none,False
+487,25,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.68,0.51,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+488,25,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.7,0.71,False,none,none,none,False
+489,25,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.61,0.45,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+490,25,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.75,0.57,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+491,25,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.61,0.45,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+492,25,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.63,0.65,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+493,25,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.54,0.39,False,none,none,none,False
+494,25,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.68,0.51,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+495,25,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.54,0.39,False,none,none,none,False
+496,25,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.56,0.59,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+497,25,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.82,0.63,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+498,25,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.61,0.45,False,none,none,none,False
+499,25,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.82,0.63,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+500,26,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.56,0.65,False,none,none,none,False
+501,26,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.82,0.39,False,none,none,none,False
+502,26,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.61,0.51,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+503,26,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.82,0.39,False,none,none,none,False
+504,26,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.49,0.59,True,archive_public_kiosk,flood_bridge_market_route,split stock and schedule appeal,True
+505,26,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.75,0.63,False,none,none,none,False
+506,26,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.54,0.45,False,none,none,none,False
+507,26,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.75,0.63,False,none,none,none,False
+508,26,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.42,0.53,False,none,none,none,False
+509,26,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.68,0.57,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+510,26,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.82,0.39,False,none,none,none,False
+511,26,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.68,0.57,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+512,26,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.7,0.47,False,none,none,none,False
+513,26,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.61,0.51,False,none,none,none,False
+514,26,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.75,0.63,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+515,26,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.61,0.51,False,none,none,none,False
+516,26,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.63,0.71,True,archive_public_kiosk,flood_bridge_market_route,split stock and schedule appeal,True
+517,26,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.54,0.45,False,none,none,none,False
+518,26,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.68,0.57,False,none,none,none,False
+519,26,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.54,0.45,False,none,none,none,False
+520,27,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.75,0.47,False,none,none,none,False
+521,27,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.54,0.51,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+522,27,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.68,0.63,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,False
+523,27,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.54,0.51,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+524,27,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.68,0.71,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+525,27,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.82,0.45,False,none,none,none,False
+526,27,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.61,0.57,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+527,27,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.82,0.45,False,none,none,none,False
+528,27,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.61,0.65,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+529,27,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.75,0.39,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+530,27,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.54,0.51,False,none,none,none,False
+531,27,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.75,0.39,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+532,27,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.54,0.59,False,none,none,none,False
+533,27,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.68,0.63,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+534,27,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.82,0.45,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+535,27,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.68,0.63,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+536,27,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.82,0.53,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+537,27,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.61,0.57,False,none,none,none,False
+538,27,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.75,0.39,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+539,27,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.61,0.57,False,none,none,none,False
+540,28,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.82,0.59,False,none,none,none,False
+541,28,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.61,0.63,True,dusk_signal_court,archive_public_kiosk,split stock and schedule appeal,True
+542,28,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.75,0.45,False,none,none,none,False
+543,28,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.61,0.63,True,flood_bridge_market_route,greenhouse_heat_loop,split stock and schedule appeal,True
+544,28,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.75,0.53,False,none,none,none,False
+545,28,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.54,0.57,False,none,none,none,False
+546,28,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.68,0.39,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+547,28,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.54,0.57,False,none,none,none,False
+548,28,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.68,0.47,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+549,28,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.82,0.51,False,none,none,none,False
+550,28,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.61,0.63,False,none,none,none,False
+551,28,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.82,0.51,False,none,none,none,False
+552,28,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.61,0.71,False,none,none,none,False
+553,28,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.75,0.45,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+554,28,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.54,0.57,False,none,none,none,False
+555,28,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.75,0.45,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+556,28,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.54,0.65,False,none,none,none,False
+557,28,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.68,0.39,False,none,none,none,False
+558,28,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.82,0.51,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+559,28,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.68,0.39,False,none,none,none,False
+560,29,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.54,0.71,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+561,29,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.68,0.45,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+562,29,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.82,0.57,False,none,none,none,False
+563,29,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.68,0.45,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+564,29,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.82,0.65,False,none,none,none,False
+565,29,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.61,0.39,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+566,29,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.75,0.51,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+567,29,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.61,0.39,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+568,29,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.75,0.59,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+569,29,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.54,0.63,False,none,none,none,False
+570,29,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.68,0.45,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+571,29,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.54,0.63,False,none,none,none,False
+572,29,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.68,0.53,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+573,29,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.82,0.57,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+574,29,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.61,0.39,False,none,none,none,False
+575,29,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.82,0.57,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+576,29,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.61,0.47,False,none,none,none,False
+577,29,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.75,0.51,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+578,29,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.54,0.63,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+579,29,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.75,0.51,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+580,30,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.68,0.59,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,False
+581,30,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.82,0.63,False,none,none,none,False
+582,30,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.68,0.51,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+583,30,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.82,0.63,False,none,none,none,False
+584,30,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.61,0.53,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+585,30,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.75,0.57,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+586,30,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.61,0.45,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+587,30,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.75,0.57,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+588,30,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.54,0.47,False,none,none,none,False
+589,30,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.68,0.51,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+590,30,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.54,0.39,False,none,none,none,False
+591,30,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.68,0.51,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+592,30,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.82,0.71,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+593,30,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.61,0.45,False,none,none,none,False
+594,30,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.82,0.63,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+595,30,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.61,0.45,False,none,none,none,False
+596,30,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.75,0.65,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+597,30,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.54,0.39,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+598,30,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.75,0.57,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+599,30,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.54,0.39,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+600,31,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.75,0.71,False,none,none,none,False
+601,31,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.54,0.45,False,none,none,none,False
+602,31,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.75,0.63,False,none,none,none,False
+603,31,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.42,0.45,False,none,none,none,False
+604,31,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.68,0.65,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+605,31,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.82,0.39,False,none,none,none,False
+606,31,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.68,0.57,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+607,31,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.7,0.39,False,none,none,none,False
+608,31,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.61,0.59,False,none,none,none,False
+609,31,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.75,0.63,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,False
+610,31,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.61,0.51,False,none,none,none,False
+611,31,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.63,0.63,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+612,31,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.54,0.53,False,none,none,none,False
+613,31,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.68,0.57,False,none,none,none,False
+614,31,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.54,0.45,False,none,none,none,False
+615,31,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.56,0.57,False,none,none,none,False
+616,31,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.82,0.47,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+617,31,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.61,0.51,False,none,none,none,False
+618,31,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.82,0.39,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+619,31,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.49,0.51,False,none,none,none,False
+620,32,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.82,0.53,False,none,none,none,False
+621,32,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.61,0.57,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+622,32,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.82,0.45,False,none,none,none,False
+623,32,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.61,0.57,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+624,32,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.75,0.47,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+625,32,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.54,0.51,False,none,none,none,False
+626,32,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.75,0.39,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+627,32,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.54,0.51,False,none,none,none,False
+628,32,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.68,0.71,True,dusk_signal_court,archive_public_kiosk,split stock and schedule appeal,True
+629,32,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.82,0.45,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+630,32,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.68,0.63,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+631,32,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.82,0.45,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+632,32,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.61,0.65,False,none,none,none,False
+633,32,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.75,0.39,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+634,32,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.61,0.57,False,none,none,none,False
+635,32,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.75,0.39,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+636,32,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.54,0.59,True,dusk_signal_court,archive_public_kiosk,split stock and schedule appeal,True
+637,32,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.68,0.63,False,none,none,none,False
+638,32,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.54,0.51,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,False
+639,32,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.68,0.63,False,none,none,none,False
+640,33,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.54,0.65,False,none,none,none,False
+641,33,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.68,0.39,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+642,33,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.54,0.57,False,none,none,none,False
+643,33,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.68,0.39,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+644,33,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.82,0.59,False,none,none,none,False
+645,33,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.61,0.63,False,none,none,none,False
+646,33,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.82,0.51,False,none,none,none,False
+647,33,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.61,0.63,False,none,none,none,False
+648,33,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.75,0.53,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+649,33,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.54,0.57,False,none,none,none,False
+650,33,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.75,0.45,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+651,33,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.54,0.57,False,none,none,none,False
+652,33,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.68,0.47,False,none,none,none,False
+653,33,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.82,0.51,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+654,33,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.68,0.39,False,none,none,none,False
+655,33,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.82,0.51,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+656,33,glass,archive_public_kiosk,Milo,greenhouse_heat_loop,Fay,0.61,0.71,False,none,none,none,False
+657,33,wire,dusk_signal_court,Milo,flood_bridge_market_route,Ari,0.75,0.45,False,none,none,none,False
+658,33,compost,greenhouse_heat_loop,Nia,archive_public_kiosk,Nia,0.61,0.63,False,none,none,none,False
+659,33,resin,flood_bridge_market_route,Ari,dusk_signal_court,Milo,0.75,0.45,False,none,none,none,False
+660,34,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.61,0.47,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+661,34,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.75,0.51,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+662,34,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.61,0.39,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+663,34,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.75,0.51,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+664,34,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.54,0.71,False,none,none,none,False
+665,34,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.68,0.45,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+666,34,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.54,0.63,False,none,none,none,False
+667,34,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.68,0.45,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,False
+668,34,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.82,0.65,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+669,34,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.61,0.39,False,none,none,none,False
+670,34,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.82,0.57,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+671,34,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.61,0.39,False,none,none,none,False
+672,34,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.75,0.59,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+673,34,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.54,0.63,True,greenhouse_heat_loop,dusk_signal_court,split stock and schedule appeal,True
+674,34,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.75,0.51,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+675,34,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.54,0.63,True,archive_public_kiosk,flood_bridge_market_route,split stock and schedule appeal,True
+676,34,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.68,0.53,False,none,none,none,False
+677,34,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.82,0.57,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+678,34,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.68,0.45,False,none,none,none,False
+679,34,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.82,0.57,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+680,35,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.75,0.65,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+681,35,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.61,0.45,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+682,35,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.75,0.57,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+683,35,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.54,0.39,False,none,none,none,False
+684,35,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.68,0.59,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+685,35,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.54,0.39,False,none,none,none,False
+686,35,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.68,0.51,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+687,35,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.82,0.63,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+688,35,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.61,0.53,False,none,none,none,False
+689,35,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.82,0.63,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+690,35,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.61,0.45,False,none,none,none,False
+691,35,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.75,0.57,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+692,35,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.54,0.47,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+693,35,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.75,0.57,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+694,35,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.54,0.39,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+695,35,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.68,0.51,False,none,none,none,False
+696,35,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.82,0.71,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,False
+697,35,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.68,0.51,False,none,none,none,False
+698,35,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.82,0.63,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+699,35,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.61,0.45,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+700,36,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.82,0.47,False,none,none,none,False
+701,36,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.68,0.57,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+702,36,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.82,0.39,False,none,none,none,False
+703,36,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.61,0.51,False,none,none,none,False
+704,36,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.75,0.71,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+705,36,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.61,0.51,False,none,none,none,False
+706,36,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.75,0.63,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+707,36,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.54,0.45,False,none,none,none,False
+708,36,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.68,0.65,False,none,none,none,False
+709,36,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.54,0.45,False,none,none,none,False
+710,36,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.68,0.57,False,none,none,none,False
+711,36,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.82,0.39,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+712,36,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.61,0.59,False,none,none,none,False
+713,36,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.82,0.39,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+714,36,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.61,0.51,False,none,none,none,False
+715,36,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.75,0.63,False,none,none,none,False
+716,36,rope,dusk_signal_court,Fay,greenhouse_heat_loop,Fay,0.54,0.53,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+717,36,copper,greenhouse_heat_loop,Milo,flood_bridge_market_route,Ari,0.75,0.63,False,none,none,none,False
+718,36,oil,flood_bridge_market_route,Milo,archive_public_kiosk,Nia,0.54,0.45,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+719,36,ink,archive_public_kiosk,Ari,dusk_signal_court,Milo,0.68,0.57,False,none,none,none,False
+720,37,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.54,0.59,False,none,none,none,False
+721,37,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.75,0.39,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+722,37,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.54,0.51,False,none,none,none,False
+723,37,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.68,0.63,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+724,37,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.82,0.53,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+725,37,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.68,0.63,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,False
+726,37,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.82,0.45,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+727,37,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.61,0.57,False,none,none,none,False
+728,37,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.75,0.47,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+729,37,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.61,0.57,False,none,none,none,False
+730,37,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.75,0.39,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+731,37,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.54,0.51,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+732,37,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.68,0.71,False,none,none,none,False
+733,37,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.54,0.51,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+734,37,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.68,0.63,False,none,none,none,False
+735,37,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.82,0.45,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+736,37,oil,dusk_signal_court,Ari,flood_bridge_market_route,Ari,0.61,0.65,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+737,37,water,greenhouse_heat_loop,Fay,archive_public_kiosk,Nia,0.82,0.45,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+738,37,planks,flood_bridge_market_route,Nia,dusk_signal_court,Milo,0.61,0.57,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+739,37,thread,archive_public_kiosk,Fay,greenhouse_heat_loop,Fay,0.75,0.39,False,none,none,none,False
+740,38,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.61,0.71,False,none,none,none,False
+741,38,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.82,0.51,False,none,none,none,False
+742,38,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.61,0.63,False,none,none,none,False
+743,38,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.75,0.45,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+744,38,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.54,0.65,False,none,none,none,False
+745,38,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.75,0.45,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+746,38,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.54,0.57,False,none,none,none,False
+747,38,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.68,0.39,False,none,none,none,False
+748,38,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.82,0.59,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+749,38,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.68,0.39,False,none,none,none,False
+750,38,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.82,0.51,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+751,38,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.61,0.63,False,none,none,none,False
+752,38,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.75,0.53,False,none,none,none,False
+753,38,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.61,0.63,False,none,none,none,False
+754,38,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.75,0.45,False,none,none,none,False
+755,38,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.54,0.57,True,dusk_signal_court,archive_public_kiosk,split stock and schedule appeal,True
+756,38,wire,dusk_signal_court,Milo,greenhouse_heat_loop,Fay,0.68,0.47,False,none,none,none,False
+757,38,compost,greenhouse_heat_loop,Nia,flood_bridge_market_route,Ari,0.54,0.57,True,flood_bridge_market_route,greenhouse_heat_loop,split stock and schedule appeal,True
+758,38,resin,flood_bridge_market_route,Ari,archive_public_kiosk,Nia,0.68,0.39,False,none,none,none,False
+759,38,glass,archive_public_kiosk,Milo,dusk_signal_court,Milo,0.82,0.51,False,none,none,none,False
+760,39,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.68,0.53,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+761,39,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.54,0.63,False,none,none,none,False
+762,39,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.68,0.45,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+763,39,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.82,0.57,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+764,39,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.61,0.47,False,none,none,none,False
+765,39,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.82,0.57,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+766,39,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.61,0.39,False,none,none,none,False
+767,39,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.75,0.51,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+768,39,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.54,0.71,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+769,39,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.75,0.51,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+770,39,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.54,0.63,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+771,39,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.68,0.45,False,none,none,none,False
+772,39,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.82,0.65,True,dusk_signal_court,flood_bridge_market_route,winner receives current slot,True
+773,39,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.68,0.45,False,none,none,none,False
+774,39,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.82,0.57,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+775,39,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.61,0.39,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+776,39,glass,dusk_signal_court,Nia,flood_bridge_market_route,Ari,0.75,0.59,False,none,none,none,False
+777,39,glass,greenhouse_heat_loop,Ari,archive_public_kiosk,Nia,0.61,0.39,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+778,39,rope,flood_bridge_market_route,Fay,dusk_signal_court,Milo,0.75,0.51,False,none,none,none,False
+779,39,paper,archive_public_kiosk,Nia,greenhouse_heat_loop,Fay,0.54,0.63,True,greenhouse_heat_loop,archive_public_kiosk,split stock and schedule appeal,True
+780,40,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.54,0.47,False,none,none,none,False
+781,40,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.68,0.51,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+782,40,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.82,0.63,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+783,40,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.61,0.45,False,none,none,none,False
+784,40,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.82,0.71,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+785,40,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.61,0.45,False,none,none,none,False
+786,40,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.75,0.57,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+787,40,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.54,0.39,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+788,40,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.75,0.65,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+789,40,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.54,0.39,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+790,40,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.68,0.51,False,none,none,none,False
+791,40,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.82,0.63,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+792,40,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.68,0.59,False,none,none,none,False
+793,40,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.82,0.63,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+794,40,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.61,0.45,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+795,40,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.75,0.57,False,none,none,none,False
+796,40,glass,greenhouse_heat_loop,Ari,flood_bridge_market_route,Ari,0.61,0.53,True,greenhouse_heat_loop,flood_bridge_market_route,split stock and schedule appeal,True
+797,40,rope,flood_bridge_market_route,Fay,archive_public_kiosk,Nia,0.75,0.57,False,none,none,none,False
+798,40,paper,archive_public_kiosk,Nia,dusk_signal_court,Milo,0.54,0.39,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+799,40,glass,dusk_signal_court,Nia,greenhouse_heat_loop,Fay,0.68,0.51,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+800,41,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.61,0.59,False,none,none,none,False
+801,41,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.75,0.63,True,flood_bridge_market_route,dusk_signal_court,winner receives current slot,True
+802,41,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.54,0.45,False,none,none,none,False
+803,41,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.68,0.57,False,none,none,none,False
+804,41,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.54,0.53,False,none,none,none,False
+805,41,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.68,0.57,False,none,none,none,False
+806,41,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.82,0.39,True,archive_public_kiosk,greenhouse_heat_loop,winner receives current slot,True
+807,41,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.61,0.51,False,none,none,none,False
+808,41,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.82,0.47,True,greenhouse_heat_loop,archive_public_kiosk,winner receives current slot,True
+809,41,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.61,0.51,False,none,none,none,False
+810,41,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.75,0.63,False,none,none,none,False
+811,41,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.54,0.45,True,dusk_signal_court,flood_bridge_market_route,split stock and schedule appeal,True
+812,41,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.75,0.71,False,none,none,none,False
+813,41,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.54,0.45,True,flood_bridge_market_route,dusk_signal_court,split stock and schedule appeal,True
+814,41,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.68,0.57,False,none,none,none,False
+815,41,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.82,0.39,False,none,none,none,False
+816,41,copper,greenhouse_heat_loop,Milo,archive_public_kiosk,Nia,0.68,0.65,False,none,none,none,False
+817,41,oil,flood_bridge_market_route,Milo,dusk_signal_court,Milo,0.82,0.39,False,none,none,none,False
+818,41,ink,archive_public_kiosk,Ari,greenhouse_heat_loop,Fay,0.61,0.51,True,archive_public_kiosk,greenhouse_heat_loop,split stock and schedule appeal,True
+819,41,rope,dusk_signal_court,Fay,flood_bridge_market_route,Ari,0.75,0.63,False,none,none,none,False
+820,42,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.68,0.71,True,flood_bridge_market_route,greenhouse_heat_loop,split stock and schedule appeal,True
+821,42,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.82,0.45,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+822,42,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.61,0.57,False,none,none,none,False
+823,42,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.75,0.39,True,dusk_signal_court,greenhouse_heat_loop,winner receives current slot,True
+824,42,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.61,0.65,False,none,none,none,False
+825,42,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.75,0.39,True,flood_bridge_market_route,archive_public_kiosk,winner receives current slot,True
+826,42,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.54,0.51,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+827,42,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.68,0.63,False,none,none,none,False
+828,42,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.54,0.59,True,flood_bridge_market_route,greenhouse_heat_loop,split stock and schedule appeal,True
+829,42,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.68,0.63,False,none,none,none,False
+830,42,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.82,0.45,True,archive_public_kiosk,dusk_signal_court,winner receives current slot,True
+831,42,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.61,0.57,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+832,42,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.82,0.53,True,greenhouse_heat_loop,flood_bridge_market_route,winner receives current slot,True
+833,42,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.61,0.57,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+834,42,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.75,0.39,False,none,none,none,False
+835,42,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.54,0.51,True,dusk_signal_court,greenhouse_heat_loop,split stock and schedule appeal,True
+836,42,water,greenhouse_heat_loop,Fay,flood_bridge_market_route,Ari,0.75,0.47,False,none,none,none,False
+837,42,planks,flood_bridge_market_route,Nia,archive_public_kiosk,Nia,0.54,0.51,True,flood_bridge_market_route,archive_public_kiosk,split stock and schedule appeal,True
+838,42,thread,archive_public_kiosk,Fay,dusk_signal_court,Milo,0.68,0.63,True,archive_public_kiosk,dusk_signal_court,split stock and schedule appeal,True
+839,42,oil,dusk_signal_court,Ari,greenhouse_heat_loop,Fay,0.82,0.45,False,none,none,none,False

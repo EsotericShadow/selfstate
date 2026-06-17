@@ -1,0 +1,841 @@
+tick_id,day,tick,workshop_id,project_id,requested_by,requested_slot,capacity,occupancy,over_capacity,admitted,queue_position,safety_guardrail
+0,1,0,warm workshop,greenhouse_heat_loop,Milo,day1-slot0,2,1,False,True,0,normal clearance
+1,1,1,wood bay,flood_bridge_market_route,Milo,day1-slot0,2,1,False,True,0,normal clearance
+2,1,2,archive bench,archive_public_kiosk,Ari,day1-slot1,2,1,False,True,0,normal clearance
+3,1,3,signal yard,dusk_signal_court,Fay,day1-slot1,2,2,False,True,0,normal clearance
+4,1,4,warm workshop,greenhouse_heat_loop,Milo,day1-slot2,2,1,False,True,0,normal clearance
+5,1,5,wood bay,flood_bridge_market_route,Milo,day1-slot2,2,1,False,True,0,normal clearance
+6,1,6,archive bench,archive_public_kiosk,Ari,day1-slot3,2,1,False,True,0,normal clearance
+7,1,7,signal yard,dusk_signal_court,Fay,day1-slot3,2,2,False,True,0,normal clearance
+8,1,8,warm workshop,greenhouse_heat_loop,Milo,day1-slot4,2,1,False,True,0,normal clearance
+9,1,9,wood bay,flood_bridge_market_route,Milo,day1-slot4,2,1,False,True,0,normal clearance
+10,1,10,archive bench,archive_public_kiosk,Ari,day1-slot5,2,1,False,True,0,normal clearance
+11,1,11,signal yard,dusk_signal_court,Fay,day1-slot5,2,2,False,True,0,normal clearance
+12,1,12,warm workshop,greenhouse_heat_loop,Milo,day1-slot6,2,1,False,True,0,normal clearance
+13,1,13,wood bay,flood_bridge_market_route,Milo,day1-slot6,2,1,False,True,0,normal clearance
+14,1,14,archive bench,archive_public_kiosk,Ari,day1-slot7,2,1,False,True,0,normal clearance
+15,1,15,signal yard,dusk_signal_court,Fay,day1-slot7,2,2,False,True,0,normal clearance
+16,1,16,warm workshop,greenhouse_heat_loop,Milo,day1-slot8,2,1,False,True,0,normal clearance
+17,1,17,wood bay,flood_bridge_market_route,Milo,day1-slot8,2,1,False,True,0,normal clearance
+18,1,18,archive bench,archive_public_kiosk,Ari,day1-slot9,2,1,False,True,0,normal clearance
+19,1,19,signal yard,dusk_signal_court,Fay,day1-slot9,2,2,False,True,0,normal clearance
+20,2,0,warm workshop,greenhouse_heat_loop,Fay,day2-slot0,2,1,False,True,0,normal clearance
+21,2,1,wood bay,flood_bridge_market_route,Nia,day2-slot0,2,1,False,True,0,normal clearance
+22,2,2,archive bench,archive_public_kiosk,Fay,day2-slot1,2,2,False,True,0,normal clearance
+23,2,3,signal yard,dusk_signal_court,Ari,day2-slot1,2,1,False,True,0,normal clearance
+24,2,4,warm workshop,greenhouse_heat_loop,Fay,day2-slot2,2,1,False,True,0,normal clearance
+25,2,5,wood bay,flood_bridge_market_route,Nia,day2-slot2,2,1,False,True,0,normal clearance
+26,2,6,archive bench,archive_public_kiosk,Fay,day2-slot3,2,2,False,True,0,normal clearance
+27,2,7,signal yard,dusk_signal_court,Ari,day2-slot3,2,1,False,True,0,normal clearance
+28,2,8,warm workshop,greenhouse_heat_loop,Fay,day2-slot4,2,1,False,True,0,normal clearance
+29,2,9,wood bay,flood_bridge_market_route,Nia,day2-slot4,2,1,False,True,0,normal clearance
+30,2,10,archive bench,archive_public_kiosk,Fay,day2-slot5,2,2,False,True,0,normal clearance
+31,2,11,signal yard,dusk_signal_court,Ari,day2-slot5,2,1,False,True,0,normal clearance
+32,2,12,warm workshop,greenhouse_heat_loop,Fay,day2-slot6,2,1,False,True,0,normal clearance
+33,2,13,wood bay,flood_bridge_market_route,Nia,day2-slot6,2,1,False,True,0,normal clearance
+34,2,14,archive bench,archive_public_kiosk,Fay,day2-slot7,2,2,False,True,0,normal clearance
+35,2,15,signal yard,dusk_signal_court,Ari,day2-slot7,2,1,False,True,0,normal clearance
+36,2,16,warm workshop,greenhouse_heat_loop,Fay,day2-slot8,2,1,False,True,0,normal clearance
+37,2,17,wood bay,flood_bridge_market_route,Nia,day2-slot8,2,1,False,True,0,normal clearance
+38,2,18,archive bench,archive_public_kiosk,Fay,day2-slot9,2,2,False,True,0,normal clearance
+39,2,19,signal yard,dusk_signal_court,Ari,day2-slot9,2,1,False,True,0,normal clearance
+40,3,0,warm workshop,greenhouse_heat_loop,Nia,day3-slot0,2,1,False,True,0,normal clearance
+41,3,1,wood bay,flood_bridge_market_route,Ari,day3-slot0,2,2,False,True,0,normal clearance
+42,3,2,archive bench,archive_public_kiosk,Milo,day3-slot1,2,1,False,True,0,normal clearance
+43,3,3,signal yard,dusk_signal_court,Milo,day3-slot1,2,1,False,True,0,normal clearance
+44,3,4,warm workshop,greenhouse_heat_loop,Nia,day3-slot2,2,1,False,True,0,normal clearance
+45,3,5,wood bay,flood_bridge_market_route,Ari,day3-slot2,2,2,False,True,0,normal clearance
+46,3,6,archive bench,archive_public_kiosk,Milo,day3-slot3,2,1,False,True,0,normal clearance
+47,3,7,signal yard,dusk_signal_court,Milo,day3-slot3,2,1,False,True,0,normal clearance
+48,3,8,warm workshop,greenhouse_heat_loop,Nia,day3-slot4,2,1,False,True,0,normal clearance
+49,3,9,wood bay,flood_bridge_market_route,Ari,day3-slot4,2,2,False,True,0,normal clearance
+50,3,10,archive bench,archive_public_kiosk,Milo,day3-slot5,2,1,False,True,0,normal clearance
+51,3,11,signal yard,dusk_signal_court,Milo,day3-slot5,2,1,False,True,0,normal clearance
+52,3,12,warm workshop,greenhouse_heat_loop,Nia,day3-slot6,2,1,False,True,0,normal clearance
+53,3,13,wood bay,flood_bridge_market_route,Ari,day3-slot6,2,2,False,True,0,normal clearance
+54,3,14,archive bench,archive_public_kiosk,Milo,day3-slot7,2,1,False,True,0,normal clearance
+55,3,15,signal yard,dusk_signal_court,Milo,day3-slot7,2,1,False,True,0,normal clearance
+56,3,16,warm workshop,greenhouse_heat_loop,Nia,day3-slot8,2,1,False,True,0,normal clearance
+57,3,17,wood bay,flood_bridge_market_route,Ari,day3-slot8,2,2,False,True,0,normal clearance
+58,3,18,archive bench,archive_public_kiosk,Milo,day3-slot9,2,1,False,True,0,normal clearance
+59,3,19,signal yard,dusk_signal_court,Milo,day3-slot9,2,1,False,True,0,normal clearance
+60,4,0,warm workshop,greenhouse_heat_loop,Ari,day4-slot0,2,2,False,True,0,normal clearance
+61,4,1,wood bay,flood_bridge_market_route,Fay,day4-slot0,2,2,False,True,0,normal clearance
+62,4,2,archive bench,archive_public_kiosk,Nia,day4-slot1,2,2,False,True,0,normal clearance
+63,4,3,signal yard,dusk_signal_court,Nia,day4-slot1,2,1,False,True,0,normal clearance
+64,4,4,warm workshop,greenhouse_heat_loop,Ari,day4-slot2,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+65,4,5,wood bay,flood_bridge_market_route,Fay,day4-slot2,2,1,False,True,0,normal clearance
+66,4,6,archive bench,archive_public_kiosk,Nia,day4-slot3,2,2,False,True,0,normal clearance
+67,4,7,signal yard,dusk_signal_court,Nia,day4-slot3,2,2,False,True,0,normal clearance
+68,4,8,warm workshop,greenhouse_heat_loop,Ari,day4-slot4,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+69,4,9,wood bay,flood_bridge_market_route,Fay,day4-slot4,2,2,False,True,0,normal clearance
+70,4,10,archive bench,archive_public_kiosk,Nia,day4-slot5,2,1,False,True,0,normal clearance
+71,4,11,signal yard,dusk_signal_court,Nia,day4-slot5,2,2,False,True,0,normal clearance
+72,4,12,warm workshop,greenhouse_heat_loop,Ari,day4-slot6,2,2,False,True,0,normal clearance
+73,4,13,wood bay,flood_bridge_market_route,Fay,day4-slot6,2,2,False,True,0,normal clearance
+74,4,14,archive bench,archive_public_kiosk,Nia,day4-slot7,2,2,False,True,0,normal clearance
+75,4,15,signal yard,dusk_signal_court,Nia,day4-slot7,2,1,False,True,0,normal clearance
+76,4,16,warm workshop,greenhouse_heat_loop,Ari,day4-slot8,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+77,4,17,wood bay,flood_bridge_market_route,Fay,day4-slot8,2,1,False,True,0,normal clearance
+78,4,18,archive bench,archive_public_kiosk,Nia,day4-slot9,2,2,False,True,0,normal clearance
+79,4,19,signal yard,dusk_signal_court,Nia,day4-slot9,2,2,False,True,0,normal clearance
+80,5,0,wood bay,flood_bridge_market_route,Fay,day5-slot0,2,2,False,True,0,normal clearance
+81,5,1,archive bench,archive_public_kiosk,Nia,day5-slot0,2,2,False,True,0,normal clearance
+82,5,2,signal yard,dusk_signal_court,Nia,day5-slot1,2,1,False,True,0,normal clearance
+83,5,3,warm workshop,greenhouse_heat_loop,Ari,day5-slot1,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+84,5,4,wood bay,flood_bridge_market_route,Fay,day5-slot2,2,1,False,True,0,normal clearance
+85,5,5,archive bench,archive_public_kiosk,Nia,day5-slot2,2,2,False,True,0,normal clearance
+86,5,6,signal yard,dusk_signal_court,Nia,day5-slot3,2,2,False,True,0,normal clearance
+87,5,7,warm workshop,greenhouse_heat_loop,Ari,day5-slot3,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+88,5,8,wood bay,flood_bridge_market_route,Fay,day5-slot4,2,2,False,True,0,normal clearance
+89,5,9,archive bench,archive_public_kiosk,Nia,day5-slot4,2,1,False,True,0,normal clearance
+90,5,10,signal yard,dusk_signal_court,Nia,day5-slot5,2,2,False,True,0,normal clearance
+91,5,11,warm workshop,greenhouse_heat_loop,Ari,day5-slot5,2,2,False,True,0,normal clearance
+92,5,12,wood bay,flood_bridge_market_route,Fay,day5-slot6,2,2,False,True,0,normal clearance
+93,5,13,archive bench,archive_public_kiosk,Nia,day5-slot6,2,2,False,True,0,normal clearance
+94,5,14,signal yard,dusk_signal_court,Nia,day5-slot7,2,1,False,True,0,normal clearance
+95,5,15,warm workshop,greenhouse_heat_loop,Ari,day5-slot7,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+96,5,16,wood bay,flood_bridge_market_route,Fay,day5-slot8,2,1,False,True,0,normal clearance
+97,5,17,archive bench,archive_public_kiosk,Nia,day5-slot8,2,2,False,True,0,normal clearance
+98,5,18,signal yard,dusk_signal_court,Nia,day5-slot9,2,2,False,True,0,normal clearance
+99,5,19,warm workshop,greenhouse_heat_loop,Ari,day5-slot9,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+100,6,0,wood bay,flood_bridge_market_route,Milo,day6-slot0,2,2,False,True,0,normal clearance
+101,6,1,archive bench,archive_public_kiosk,Ari,day6-slot0,2,1,False,True,0,normal clearance
+102,6,2,signal yard,dusk_signal_court,Fay,day6-slot1,2,2,False,True,0,normal clearance
+103,6,3,warm workshop,greenhouse_heat_loop,Milo,day6-slot1,2,1,False,True,0,normal clearance
+104,6,4,wood bay,flood_bridge_market_route,Milo,day6-slot2,2,1,False,True,0,normal clearance
+105,6,5,archive bench,archive_public_kiosk,Ari,day6-slot2,2,2,False,True,0,normal clearance
+106,6,6,signal yard,dusk_signal_court,Fay,day6-slot3,2,2,False,True,0,normal clearance
+107,6,7,warm workshop,greenhouse_heat_loop,Milo,day6-slot3,2,2,False,True,0,normal clearance
+108,6,8,wood bay,flood_bridge_market_route,Milo,day6-slot4,2,1,False,True,0,normal clearance
+109,6,9,archive bench,archive_public_kiosk,Ari,day6-slot4,2,1,False,True,0,normal clearance
+110,6,10,signal yard,dusk_signal_court,Fay,day6-slot5,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+111,6,11,warm workshop,greenhouse_heat_loop,Milo,day6-slot5,2,1,False,True,0,normal clearance
+112,6,12,wood bay,flood_bridge_market_route,Milo,day6-slot6,2,2,False,True,0,normal clearance
+113,6,13,archive bench,archive_public_kiosk,Ari,day6-slot6,2,1,False,True,0,normal clearance
+114,6,14,signal yard,dusk_signal_court,Fay,day6-slot7,2,2,False,True,0,normal clearance
+115,6,15,warm workshop,greenhouse_heat_loop,Milo,day6-slot7,2,1,False,True,0,normal clearance
+116,6,16,wood bay,flood_bridge_market_route,Milo,day6-slot8,2,1,False,True,0,normal clearance
+117,6,17,archive bench,archive_public_kiosk,Ari,day6-slot8,2,2,False,True,0,normal clearance
+118,6,18,signal yard,dusk_signal_court,Fay,day6-slot9,2,2,False,True,0,normal clearance
+119,6,19,warm workshop,greenhouse_heat_loop,Milo,day6-slot9,2,2,False,True,0,normal clearance
+120,7,0,wood bay,flood_bridge_market_route,Nia,day7-slot0,2,2,False,True,0,normal clearance
+121,7,1,archive bench,archive_public_kiosk,Fay,day7-slot0,2,2,False,True,0,normal clearance
+122,7,2,signal yard,dusk_signal_court,Ari,day7-slot1,2,2,False,True,0,normal clearance
+123,7,3,warm workshop,greenhouse_heat_loop,Fay,day7-slot1,2,1,False,True,0,normal clearance
+124,7,4,wood bay,flood_bridge_market_route,Nia,day7-slot2,2,2,False,True,0,normal clearance
+125,7,5,archive bench,archive_public_kiosk,Fay,day7-slot2,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+126,7,6,signal yard,dusk_signal_court,Ari,day7-slot3,2,1,False,True,0,normal clearance
+127,7,7,warm workshop,greenhouse_heat_loop,Fay,day7-slot3,2,2,False,True,0,normal clearance
+128,7,8,wood bay,flood_bridge_market_route,Nia,day7-slot4,2,1,False,True,0,normal clearance
+129,7,9,archive bench,archive_public_kiosk,Fay,day7-slot4,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+130,7,10,signal yard,dusk_signal_court,Ari,day7-slot5,2,2,False,True,0,normal clearance
+131,7,11,warm workshop,greenhouse_heat_loop,Fay,day7-slot5,2,2,False,True,0,normal clearance
+132,7,12,wood bay,flood_bridge_market_route,Nia,day7-slot6,2,2,False,True,0,normal clearance
+133,7,13,archive bench,archive_public_kiosk,Fay,day7-slot6,2,2,False,True,0,normal clearance
+134,7,14,signal yard,dusk_signal_court,Ari,day7-slot7,2,2,False,True,0,normal clearance
+135,7,15,warm workshop,greenhouse_heat_loop,Fay,day7-slot7,2,1,False,True,0,normal clearance
+136,7,16,wood bay,flood_bridge_market_route,Nia,day7-slot8,2,2,False,True,0,normal clearance
+137,7,17,archive bench,archive_public_kiosk,Fay,day7-slot8,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+138,7,18,signal yard,dusk_signal_court,Ari,day7-slot9,2,1,False,True,0,normal clearance
+139,7,19,warm workshop,greenhouse_heat_loop,Fay,day7-slot9,2,2,False,True,0,normal clearance
+140,8,0,wood bay,flood_bridge_market_route,Ari,day8-slot0,2,2,False,True,0,normal clearance
+141,8,1,archive bench,archive_public_kiosk,Milo,day8-slot0,2,1,False,True,0,normal clearance
+142,8,2,signal yard,dusk_signal_court,Milo,day8-slot1,2,2,False,True,0,normal clearance
+143,8,3,warm workshop,greenhouse_heat_loop,Nia,day8-slot1,2,1,False,True,0,normal clearance
+144,8,4,wood bay,flood_bridge_market_route,Ari,day8-slot2,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+145,8,5,archive bench,archive_public_kiosk,Milo,day8-slot2,2,1,False,True,0,normal clearance
+146,8,6,signal yard,dusk_signal_court,Milo,day8-slot3,2,1,False,True,0,normal clearance
+147,8,7,warm workshop,greenhouse_heat_loop,Nia,day8-slot3,2,1,False,True,0,normal clearance
+148,8,8,wood bay,flood_bridge_market_route,Ari,day8-slot4,2,2,False,True,0,normal clearance
+149,8,9,archive bench,archive_public_kiosk,Milo,day8-slot4,2,2,False,True,0,normal clearance
+150,8,10,signal yard,dusk_signal_court,Milo,day8-slot5,2,1,False,True,0,normal clearance
+151,8,11,warm workshop,greenhouse_heat_loop,Nia,day8-slot5,2,2,False,True,0,normal clearance
+152,8,12,wood bay,flood_bridge_market_route,Ari,day8-slot6,2,2,False,True,0,normal clearance
+153,8,13,archive bench,archive_public_kiosk,Milo,day8-slot6,2,1,False,True,0,normal clearance
+154,8,14,signal yard,dusk_signal_court,Milo,day8-slot7,2,2,False,True,0,normal clearance
+155,8,15,warm workshop,greenhouse_heat_loop,Nia,day8-slot7,2,1,False,True,0,normal clearance
+156,8,16,wood bay,flood_bridge_market_route,Ari,day8-slot8,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+157,8,17,archive bench,archive_public_kiosk,Milo,day8-slot8,2,1,False,True,0,normal clearance
+158,8,18,signal yard,dusk_signal_court,Milo,day8-slot9,2,1,False,True,0,normal clearance
+159,8,19,warm workshop,greenhouse_heat_loop,Nia,day8-slot9,2,1,False,True,0,normal clearance
+160,9,0,wood bay,flood_bridge_market_route,Fay,day9-slot0,2,1,False,True,0,normal clearance
+161,9,1,archive bench,archive_public_kiosk,Nia,day9-slot0,2,2,False,True,0,normal clearance
+162,9,2,signal yard,dusk_signal_court,Nia,day9-slot1,2,2,False,True,0,normal clearance
+163,9,3,warm workshop,greenhouse_heat_loop,Ari,day9-slot1,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+164,9,4,wood bay,flood_bridge_market_route,Fay,day9-slot2,2,2,False,True,0,normal clearance
+165,9,5,archive bench,archive_public_kiosk,Nia,day9-slot2,2,1,False,True,0,normal clearance
+166,9,6,signal yard,dusk_signal_court,Nia,day9-slot3,2,2,False,True,0,normal clearance
+167,9,7,warm workshop,greenhouse_heat_loop,Ari,day9-slot3,2,2,False,True,0,normal clearance
+168,9,8,wood bay,flood_bridge_market_route,Fay,day9-slot4,2,2,False,True,0,normal clearance
+169,9,9,archive bench,archive_public_kiosk,Nia,day9-slot4,2,2,False,True,0,normal clearance
+170,9,10,signal yard,dusk_signal_court,Nia,day9-slot5,2,1,False,True,0,normal clearance
+171,9,11,warm workshop,greenhouse_heat_loop,Ari,day9-slot5,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+172,9,12,wood bay,flood_bridge_market_route,Fay,day9-slot6,2,1,False,True,0,normal clearance
+173,9,13,archive bench,archive_public_kiosk,Nia,day9-slot6,2,2,False,True,0,normal clearance
+174,9,14,signal yard,dusk_signal_court,Nia,day9-slot7,2,2,False,True,0,normal clearance
+175,9,15,warm workshop,greenhouse_heat_loop,Ari,day9-slot7,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+176,9,16,wood bay,flood_bridge_market_route,Fay,day9-slot8,2,2,False,True,0,normal clearance
+177,9,17,archive bench,archive_public_kiosk,Nia,day9-slot8,2,1,False,True,0,normal clearance
+178,9,18,signal yard,dusk_signal_court,Nia,day9-slot9,2,2,False,True,0,normal clearance
+179,9,19,warm workshop,greenhouse_heat_loop,Ari,day9-slot9,2,2,False,True,0,normal clearance
+180,10,0,archive bench,archive_public_kiosk,Nia,day10-slot0,2,2,False,True,0,normal clearance
+181,10,1,signal yard,dusk_signal_court,Nia,day10-slot0,2,2,False,True,0,normal clearance
+182,10,2,warm workshop,greenhouse_heat_loop,Ari,day10-slot1,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+183,10,3,wood bay,flood_bridge_market_route,Fay,day10-slot1,2,2,False,True,0,normal clearance
+184,10,4,archive bench,archive_public_kiosk,Nia,day10-slot2,2,1,False,True,0,normal clearance
+185,10,5,signal yard,dusk_signal_court,Nia,day10-slot2,2,2,False,True,0,normal clearance
+186,10,6,warm workshop,greenhouse_heat_loop,Ari,day10-slot3,2,2,False,True,0,normal clearance
+187,10,7,wood bay,flood_bridge_market_route,Fay,day10-slot3,2,2,False,True,0,normal clearance
+188,10,8,archive bench,archive_public_kiosk,Nia,day10-slot4,2,2,False,True,0,normal clearance
+189,10,9,signal yard,dusk_signal_court,Nia,day10-slot4,2,1,False,True,0,normal clearance
+190,10,10,warm workshop,greenhouse_heat_loop,Ari,day10-slot5,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+191,10,11,wood bay,flood_bridge_market_route,Fay,day10-slot5,2,1,False,True,0,normal clearance
+192,10,12,archive bench,archive_public_kiosk,Nia,day10-slot6,2,2,False,True,0,normal clearance
+193,10,13,signal yard,dusk_signal_court,Nia,day10-slot6,2,2,False,True,0,normal clearance
+194,10,14,warm workshop,greenhouse_heat_loop,Ari,day10-slot7,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+195,10,15,wood bay,flood_bridge_market_route,Fay,day10-slot7,2,2,False,True,0,normal clearance
+196,10,16,archive bench,archive_public_kiosk,Nia,day10-slot8,2,1,False,True,0,normal clearance
+197,10,17,signal yard,dusk_signal_court,Nia,day10-slot8,2,2,False,True,0,normal clearance
+198,10,18,warm workshop,greenhouse_heat_loop,Ari,day10-slot9,2,2,False,True,0,normal clearance
+199,10,19,wood bay,flood_bridge_market_route,Fay,day10-slot9,2,2,False,True,0,normal clearance
+200,11,0,archive bench,archive_public_kiosk,Ari,day11-slot0,2,2,False,True,0,normal clearance
+201,11,1,signal yard,dusk_signal_court,Fay,day11-slot0,2,2,False,True,0,normal clearance
+202,11,2,warm workshop,greenhouse_heat_loop,Milo,day11-slot1,2,2,False,True,0,normal clearance
+203,11,3,wood bay,flood_bridge_market_route,Milo,day11-slot1,2,1,False,True,0,normal clearance
+204,11,4,archive bench,archive_public_kiosk,Ari,day11-slot2,2,1,False,True,0,normal clearance
+205,11,5,signal yard,dusk_signal_court,Fay,day11-slot2,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+206,11,6,warm workshop,greenhouse_heat_loop,Milo,day11-slot3,2,1,False,True,0,normal clearance
+207,11,7,wood bay,flood_bridge_market_route,Milo,day11-slot3,2,2,False,True,0,normal clearance
+208,11,8,archive bench,archive_public_kiosk,Ari,day11-slot4,2,1,False,True,0,normal clearance
+209,11,9,signal yard,dusk_signal_court,Fay,day11-slot4,2,2,False,True,0,normal clearance
+210,11,10,warm workshop,greenhouse_heat_loop,Milo,day11-slot5,2,1,False,True,0,normal clearance
+211,11,11,wood bay,flood_bridge_market_route,Milo,day11-slot5,2,1,False,True,0,normal clearance
+212,11,12,archive bench,archive_public_kiosk,Ari,day11-slot6,2,2,False,True,0,normal clearance
+213,11,13,signal yard,dusk_signal_court,Fay,day11-slot6,2,2,False,True,0,normal clearance
+214,11,14,warm workshop,greenhouse_heat_loop,Milo,day11-slot7,2,2,False,True,0,normal clearance
+215,11,15,wood bay,flood_bridge_market_route,Milo,day11-slot7,2,1,False,True,0,normal clearance
+216,11,16,archive bench,archive_public_kiosk,Ari,day11-slot8,2,1,False,True,0,normal clearance
+217,11,17,signal yard,dusk_signal_court,Fay,day11-slot8,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+218,11,18,warm workshop,greenhouse_heat_loop,Milo,day11-slot9,2,1,False,True,0,normal clearance
+219,11,19,wood bay,flood_bridge_market_route,Milo,day11-slot9,2,2,False,True,0,normal clearance
+220,12,0,archive bench,archive_public_kiosk,Fay,day12-slot0,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+221,12,1,signal yard,dusk_signal_court,Ari,day12-slot0,2,1,False,True,0,normal clearance
+222,12,2,warm workshop,greenhouse_heat_loop,Fay,day12-slot1,2,2,False,True,0,normal clearance
+223,12,3,wood bay,flood_bridge_market_route,Nia,day12-slot1,2,1,False,True,0,normal clearance
+224,12,4,archive bench,archive_public_kiosk,Fay,day12-slot2,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+225,12,5,signal yard,dusk_signal_court,Ari,day12-slot2,2,2,False,True,0,normal clearance
+226,12,6,warm workshop,greenhouse_heat_loop,Fay,day12-slot3,2,2,False,True,0,normal clearance
+227,12,7,wood bay,flood_bridge_market_route,Nia,day12-slot3,2,2,False,True,0,normal clearance
+228,12,8,archive bench,archive_public_kiosk,Fay,day12-slot4,2,2,False,True,0,normal clearance
+229,12,9,signal yard,dusk_signal_court,Ari,day12-slot4,2,2,False,True,0,normal clearance
+230,12,10,warm workshop,greenhouse_heat_loop,Fay,day12-slot5,2,1,False,True,0,normal clearance
+231,12,11,wood bay,flood_bridge_market_route,Nia,day12-slot5,2,2,False,True,0,normal clearance
+232,12,12,archive bench,archive_public_kiosk,Fay,day12-slot6,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+233,12,13,signal yard,dusk_signal_court,Ari,day12-slot6,2,1,False,True,0,normal clearance
+234,12,14,warm workshop,greenhouse_heat_loop,Fay,day12-slot7,2,2,False,True,0,normal clearance
+235,12,15,wood bay,flood_bridge_market_route,Nia,day12-slot7,2,1,False,True,0,normal clearance
+236,12,16,archive bench,archive_public_kiosk,Fay,day12-slot8,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+237,12,17,signal yard,dusk_signal_court,Ari,day12-slot8,2,2,False,True,0,normal clearance
+238,12,18,warm workshop,greenhouse_heat_loop,Fay,day12-slot9,2,2,False,True,0,normal clearance
+239,12,19,wood bay,flood_bridge_market_route,Nia,day12-slot9,2,2,False,True,0,normal clearance
+240,13,0,archive bench,archive_public_kiosk,Milo,day13-slot0,2,1,False,True,0,normal clearance
+241,13,1,signal yard,dusk_signal_court,Milo,day13-slot0,2,1,False,True,0,normal clearance
+242,13,2,warm workshop,greenhouse_heat_loop,Nia,day13-slot1,2,1,False,True,0,normal clearance
+243,13,3,wood bay,flood_bridge_market_route,Ari,day13-slot1,2,2,False,True,0,normal clearance
+244,13,4,archive bench,archive_public_kiosk,Milo,day13-slot2,2,2,False,True,0,normal clearance
+245,13,5,signal yard,dusk_signal_court,Milo,day13-slot2,2,1,False,True,0,normal clearance
+246,13,6,warm workshop,greenhouse_heat_loop,Nia,day13-slot3,2,2,False,True,0,normal clearance
+247,13,7,wood bay,flood_bridge_market_route,Ari,day13-slot3,2,2,False,True,0,normal clearance
+248,13,8,archive bench,archive_public_kiosk,Milo,day13-slot4,2,1,False,True,0,normal clearance
+249,13,9,signal yard,dusk_signal_court,Milo,day13-slot4,2,2,False,True,0,normal clearance
+250,13,10,warm workshop,greenhouse_heat_loop,Nia,day13-slot5,2,1,False,True,0,normal clearance
+251,13,11,wood bay,flood_bridge_market_route,Ari,day13-slot5,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+252,13,12,archive bench,archive_public_kiosk,Milo,day13-slot6,2,1,False,True,0,normal clearance
+253,13,13,signal yard,dusk_signal_court,Milo,day13-slot6,2,1,False,True,0,normal clearance
+254,13,14,warm workshop,greenhouse_heat_loop,Nia,day13-slot7,2,1,False,True,0,normal clearance
+255,13,15,wood bay,flood_bridge_market_route,Ari,day13-slot7,2,2,False,True,0,normal clearance
+256,13,16,archive bench,archive_public_kiosk,Milo,day13-slot8,2,2,False,True,0,normal clearance
+257,13,17,signal yard,dusk_signal_court,Milo,day13-slot8,2,1,False,True,0,normal clearance
+258,13,18,warm workshop,greenhouse_heat_loop,Nia,day13-slot9,2,2,False,True,0,normal clearance
+259,13,19,wood bay,flood_bridge_market_route,Ari,day13-slot9,2,2,False,True,0,normal clearance
+260,14,0,archive bench,archive_public_kiosk,Nia,day14-slot0,2,1,False,True,0,normal clearance
+261,14,1,signal yard,dusk_signal_court,Nia,day14-slot0,2,2,False,True,0,normal clearance
+262,14,2,warm workshop,greenhouse_heat_loop,Ari,day14-slot1,2,2,False,True,0,normal clearance
+263,14,3,wood bay,flood_bridge_market_route,Fay,day14-slot1,2,2,False,True,0,normal clearance
+264,14,4,archive bench,archive_public_kiosk,Nia,day14-slot2,2,2,False,True,0,normal clearance
+265,14,5,signal yard,dusk_signal_court,Nia,day14-slot2,2,1,False,True,0,normal clearance
+266,14,6,warm workshop,greenhouse_heat_loop,Ari,day14-slot3,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+267,14,7,wood bay,flood_bridge_market_route,Fay,day14-slot3,2,1,False,True,0,normal clearance
+268,14,8,archive bench,archive_public_kiosk,Nia,day14-slot4,2,2,False,True,0,normal clearance
+269,14,9,signal yard,dusk_signal_court,Nia,day14-slot4,2,2,False,True,0,normal clearance
+270,14,10,warm workshop,greenhouse_heat_loop,Ari,day14-slot5,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+271,14,11,wood bay,flood_bridge_market_route,Fay,day14-slot5,2,2,False,True,0,normal clearance
+272,14,12,archive bench,archive_public_kiosk,Nia,day14-slot6,2,1,False,True,0,normal clearance
+273,14,13,signal yard,dusk_signal_court,Nia,day14-slot6,2,2,False,True,0,normal clearance
+274,14,14,warm workshop,greenhouse_heat_loop,Ari,day14-slot7,2,2,False,True,0,normal clearance
+275,14,15,wood bay,flood_bridge_market_route,Fay,day14-slot7,2,2,False,True,0,normal clearance
+276,14,16,archive bench,archive_public_kiosk,Nia,day14-slot8,2,2,False,True,0,normal clearance
+277,14,17,signal yard,dusk_signal_court,Nia,day14-slot8,2,1,False,True,0,normal clearance
+278,14,18,warm workshop,greenhouse_heat_loop,Ari,day14-slot9,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+279,14,19,wood bay,flood_bridge_market_route,Fay,day14-slot9,2,1,False,True,0,normal clearance
+280,15,0,signal yard,dusk_signal_court,Nia,day15-slot0,2,2,False,True,0,normal clearance
+281,15,1,warm workshop,greenhouse_heat_loop,Ari,day15-slot0,2,2,False,True,0,normal clearance
+282,15,2,wood bay,flood_bridge_market_route,Fay,day15-slot1,2,2,False,True,0,normal clearance
+283,15,3,archive bench,archive_public_kiosk,Nia,day15-slot1,2,2,False,True,0,normal clearance
+284,15,4,signal yard,dusk_signal_court,Nia,day15-slot2,2,1,False,True,0,normal clearance
+285,15,5,warm workshop,greenhouse_heat_loop,Ari,day15-slot2,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+286,15,6,wood bay,flood_bridge_market_route,Fay,day15-slot3,2,1,False,True,0,normal clearance
+287,15,7,archive bench,archive_public_kiosk,Nia,day15-slot3,2,2,False,True,0,normal clearance
+288,15,8,signal yard,dusk_signal_court,Nia,day15-slot4,2,2,False,True,0,normal clearance
+289,15,9,warm workshop,greenhouse_heat_loop,Ari,day15-slot4,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+290,15,10,wood bay,flood_bridge_market_route,Fay,day15-slot5,2,2,False,True,0,normal clearance
+291,15,11,archive bench,archive_public_kiosk,Nia,day15-slot5,2,1,False,True,0,normal clearance
+292,15,12,signal yard,dusk_signal_court,Nia,day15-slot6,2,2,False,True,0,normal clearance
+293,15,13,warm workshop,greenhouse_heat_loop,Ari,day15-slot6,2,2,False,True,0,normal clearance
+294,15,14,wood bay,flood_bridge_market_route,Fay,day15-slot7,2,2,False,True,0,normal clearance
+295,15,15,archive bench,archive_public_kiosk,Nia,day15-slot7,2,2,False,True,0,normal clearance
+296,15,16,signal yard,dusk_signal_court,Nia,day15-slot8,2,1,False,True,0,normal clearance
+297,15,17,warm workshop,greenhouse_heat_loop,Ari,day15-slot8,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+298,15,18,wood bay,flood_bridge_market_route,Fay,day15-slot9,2,1,False,True,0,normal clearance
+299,15,19,archive bench,archive_public_kiosk,Nia,day15-slot9,2,2,False,True,0,normal clearance
+300,16,0,signal yard,dusk_signal_court,Fay,day16-slot0,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+301,16,1,warm workshop,greenhouse_heat_loop,Milo,day16-slot0,2,1,False,True,0,normal clearance
+302,16,2,wood bay,flood_bridge_market_route,Milo,day16-slot1,2,2,False,True,0,normal clearance
+303,16,3,archive bench,archive_public_kiosk,Ari,day16-slot1,2,1,False,True,0,normal clearance
+304,16,4,signal yard,dusk_signal_court,Fay,day16-slot2,2,2,False,True,0,normal clearance
+305,16,5,warm workshop,greenhouse_heat_loop,Milo,day16-slot2,2,1,False,True,0,normal clearance
+306,16,6,wood bay,flood_bridge_market_route,Milo,day16-slot3,2,1,False,True,0,normal clearance
+307,16,7,archive bench,archive_public_kiosk,Ari,day16-slot3,2,2,False,True,0,normal clearance
+308,16,8,signal yard,dusk_signal_court,Fay,day16-slot4,2,2,False,True,0,normal clearance
+309,16,9,warm workshop,greenhouse_heat_loop,Milo,day16-slot4,2,2,False,True,0,normal clearance
+310,16,10,wood bay,flood_bridge_market_route,Milo,day16-slot5,2,1,False,True,0,normal clearance
+311,16,11,archive bench,archive_public_kiosk,Ari,day16-slot5,2,1,False,True,0,normal clearance
+312,16,12,signal yard,dusk_signal_court,Fay,day16-slot6,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+313,16,13,warm workshop,greenhouse_heat_loop,Milo,day16-slot6,2,1,False,True,0,normal clearance
+314,16,14,wood bay,flood_bridge_market_route,Milo,day16-slot7,2,2,False,True,0,normal clearance
+315,16,15,archive bench,archive_public_kiosk,Ari,day16-slot7,2,1,False,True,0,normal clearance
+316,16,16,signal yard,dusk_signal_court,Fay,day16-slot8,2,2,False,True,0,normal clearance
+317,16,17,warm workshop,greenhouse_heat_loop,Milo,day16-slot8,2,1,False,True,0,normal clearance
+318,16,18,wood bay,flood_bridge_market_route,Milo,day16-slot9,2,1,False,True,0,normal clearance
+319,16,19,archive bench,archive_public_kiosk,Ari,day16-slot9,2,2,False,True,0,normal clearance
+320,17,0,signal yard,dusk_signal_court,Ari,day17-slot0,2,2,False,True,0,normal clearance
+321,17,1,warm workshop,greenhouse_heat_loop,Fay,day17-slot0,2,2,False,True,0,normal clearance
+322,17,2,wood bay,flood_bridge_market_route,Nia,day17-slot1,2,2,False,True,0,normal clearance
+323,17,3,archive bench,archive_public_kiosk,Fay,day17-slot1,2,2,False,True,0,normal clearance
+324,17,4,signal yard,dusk_signal_court,Ari,day17-slot2,2,2,False,True,0,normal clearance
+325,17,5,warm workshop,greenhouse_heat_loop,Fay,day17-slot2,2,1,False,True,0,normal clearance
+326,17,6,wood bay,flood_bridge_market_route,Nia,day17-slot3,2,2,False,True,0,normal clearance
+327,17,7,archive bench,archive_public_kiosk,Fay,day17-slot3,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+328,17,8,signal yard,dusk_signal_court,Ari,day17-slot4,2,1,False,True,0,normal clearance
+329,17,9,warm workshop,greenhouse_heat_loop,Fay,day17-slot4,2,2,False,True,0,normal clearance
+330,17,10,wood bay,flood_bridge_market_route,Nia,day17-slot5,2,1,False,True,0,normal clearance
+331,17,11,archive bench,archive_public_kiosk,Fay,day17-slot5,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+332,17,12,signal yard,dusk_signal_court,Ari,day17-slot6,2,2,False,True,0,normal clearance
+333,17,13,warm workshop,greenhouse_heat_loop,Fay,day17-slot6,2,2,False,True,0,normal clearance
+334,17,14,wood bay,flood_bridge_market_route,Nia,day17-slot7,2,2,False,True,0,normal clearance
+335,17,15,archive bench,archive_public_kiosk,Fay,day17-slot7,2,2,False,True,0,normal clearance
+336,17,16,signal yard,dusk_signal_court,Ari,day17-slot8,2,2,False,True,0,normal clearance
+337,17,17,warm workshop,greenhouse_heat_loop,Fay,day17-slot8,2,1,False,True,0,normal clearance
+338,17,18,wood bay,flood_bridge_market_route,Nia,day17-slot9,2,2,False,True,0,normal clearance
+339,17,19,archive bench,archive_public_kiosk,Fay,day17-slot9,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+340,18,0,signal yard,dusk_signal_court,Milo,day18-slot0,2,1,False,True,0,normal clearance
+341,18,1,warm workshop,greenhouse_heat_loop,Nia,day18-slot0,2,2,False,True,0,normal clearance
+342,18,2,wood bay,flood_bridge_market_route,Ari,day18-slot1,2,2,False,True,0,normal clearance
+343,18,3,archive bench,archive_public_kiosk,Milo,day18-slot1,2,1,False,True,0,normal clearance
+344,18,4,signal yard,dusk_signal_court,Milo,day18-slot2,2,2,False,True,0,normal clearance
+345,18,5,warm workshop,greenhouse_heat_loop,Nia,day18-slot2,2,1,False,True,0,normal clearance
+346,18,6,wood bay,flood_bridge_market_route,Ari,day18-slot3,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+347,18,7,archive bench,archive_public_kiosk,Milo,day18-slot3,2,1,False,True,0,normal clearance
+348,18,8,signal yard,dusk_signal_court,Milo,day18-slot4,2,1,False,True,0,normal clearance
+349,18,9,warm workshop,greenhouse_heat_loop,Nia,day18-slot4,2,1,False,True,0,normal clearance
+350,18,10,wood bay,flood_bridge_market_route,Ari,day18-slot5,2,2,False,True,0,normal clearance
+351,18,11,archive bench,archive_public_kiosk,Milo,day18-slot5,2,2,False,True,0,normal clearance
+352,18,12,signal yard,dusk_signal_court,Milo,day18-slot6,2,1,False,True,0,normal clearance
+353,18,13,warm workshop,greenhouse_heat_loop,Nia,day18-slot6,2,2,False,True,0,normal clearance
+354,18,14,wood bay,flood_bridge_market_route,Ari,day18-slot7,2,2,False,True,0,normal clearance
+355,18,15,archive bench,archive_public_kiosk,Milo,day18-slot7,2,1,False,True,0,normal clearance
+356,18,16,signal yard,dusk_signal_court,Milo,day18-slot8,2,2,False,True,0,normal clearance
+357,18,17,warm workshop,greenhouse_heat_loop,Nia,day18-slot8,2,1,False,True,0,normal clearance
+358,18,18,wood bay,flood_bridge_market_route,Ari,day18-slot9,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+359,18,19,archive bench,archive_public_kiosk,Milo,day18-slot9,2,1,False,True,0,normal clearance
+360,19,0,signal yard,dusk_signal_court,Nia,day19-slot0,2,1,False,True,0,normal clearance
+361,19,1,warm workshop,greenhouse_heat_loop,Ari,day19-slot0,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+362,19,2,wood bay,flood_bridge_market_route,Fay,day19-slot1,2,1,False,True,0,normal clearance
+363,19,3,archive bench,archive_public_kiosk,Nia,day19-slot1,2,2,False,True,0,normal clearance
+364,19,4,signal yard,dusk_signal_court,Nia,day19-slot2,2,2,False,True,0,normal clearance
+365,19,5,warm workshop,greenhouse_heat_loop,Ari,day19-slot2,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+366,19,6,wood bay,flood_bridge_market_route,Fay,day19-slot3,2,2,False,True,0,normal clearance
+367,19,7,archive bench,archive_public_kiosk,Nia,day19-slot3,2,1,False,True,0,normal clearance
+368,19,8,signal yard,dusk_signal_court,Nia,day19-slot4,2,2,False,True,0,normal clearance
+369,19,9,warm workshop,greenhouse_heat_loop,Ari,day19-slot4,2,2,False,True,0,normal clearance
+370,19,10,wood bay,flood_bridge_market_route,Fay,day19-slot5,2,2,False,True,0,normal clearance
+371,19,11,archive bench,archive_public_kiosk,Nia,day19-slot5,2,2,False,True,0,normal clearance
+372,19,12,signal yard,dusk_signal_court,Nia,day19-slot6,2,1,False,True,0,normal clearance
+373,19,13,warm workshop,greenhouse_heat_loop,Ari,day19-slot6,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+374,19,14,wood bay,flood_bridge_market_route,Fay,day19-slot7,2,1,False,True,0,normal clearance
+375,19,15,archive bench,archive_public_kiosk,Nia,day19-slot7,2,2,False,True,0,normal clearance
+376,19,16,signal yard,dusk_signal_court,Nia,day19-slot8,2,2,False,True,0,normal clearance
+377,19,17,warm workshop,greenhouse_heat_loop,Ari,day19-slot8,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+378,19,18,wood bay,flood_bridge_market_route,Fay,day19-slot9,2,2,False,True,0,normal clearance
+379,19,19,archive bench,archive_public_kiosk,Nia,day19-slot9,2,1,False,True,0,normal clearance
+380,20,0,warm workshop,greenhouse_heat_loop,Ari,day20-slot0,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+381,20,1,wood bay,flood_bridge_market_route,Fay,day20-slot0,2,1,False,True,0,normal clearance
+382,20,2,archive bench,archive_public_kiosk,Nia,day20-slot1,2,2,False,True,0,normal clearance
+383,20,3,signal yard,dusk_signal_court,Nia,day20-slot1,2,2,False,True,0,normal clearance
+384,20,4,warm workshop,greenhouse_heat_loop,Ari,day20-slot2,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+385,20,5,wood bay,flood_bridge_market_route,Fay,day20-slot2,2,2,False,True,0,normal clearance
+386,20,6,archive bench,archive_public_kiosk,Nia,day20-slot3,2,1,False,True,0,normal clearance
+387,20,7,signal yard,dusk_signal_court,Nia,day20-slot3,2,2,False,True,0,normal clearance
+388,20,8,warm workshop,greenhouse_heat_loop,Ari,day20-slot4,2,2,False,True,0,normal clearance
+389,20,9,wood bay,flood_bridge_market_route,Fay,day20-slot4,2,2,False,True,0,normal clearance
+390,20,10,archive bench,archive_public_kiosk,Nia,day20-slot5,2,2,False,True,0,normal clearance
+391,20,11,signal yard,dusk_signal_court,Nia,day20-slot5,2,1,False,True,0,normal clearance
+392,20,12,warm workshop,greenhouse_heat_loop,Ari,day20-slot6,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+393,20,13,wood bay,flood_bridge_market_route,Fay,day20-slot6,2,1,False,True,0,normal clearance
+394,20,14,archive bench,archive_public_kiosk,Nia,day20-slot7,2,2,False,True,0,normal clearance
+395,20,15,signal yard,dusk_signal_court,Nia,day20-slot7,2,2,False,True,0,normal clearance
+396,20,16,warm workshop,greenhouse_heat_loop,Ari,day20-slot8,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+397,20,17,wood bay,flood_bridge_market_route,Fay,day20-slot8,2,2,False,True,0,normal clearance
+398,20,18,archive bench,archive_public_kiosk,Nia,day20-slot9,2,1,False,True,0,normal clearance
+399,20,19,signal yard,dusk_signal_court,Nia,day20-slot9,2,2,False,True,0,normal clearance
+400,21,0,warm workshop,greenhouse_heat_loop,Milo,day21-slot0,2,1,False,True,0,normal clearance
+401,21,1,wood bay,flood_bridge_market_route,Milo,day21-slot0,2,1,False,True,0,normal clearance
+402,21,2,archive bench,archive_public_kiosk,Ari,day21-slot1,2,2,False,True,0,normal clearance
+403,21,3,signal yard,dusk_signal_court,Fay,day21-slot1,2,2,False,True,0,normal clearance
+404,21,4,warm workshop,greenhouse_heat_loop,Milo,day21-slot2,2,2,False,True,0,normal clearance
+405,21,5,wood bay,flood_bridge_market_route,Milo,day21-slot2,2,1,False,True,0,normal clearance
+406,21,6,archive bench,archive_public_kiosk,Ari,day21-slot3,2,1,False,True,0,normal clearance
+407,21,7,signal yard,dusk_signal_court,Fay,day21-slot3,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+408,21,8,warm workshop,greenhouse_heat_loop,Milo,day21-slot4,2,1,False,True,0,normal clearance
+409,21,9,wood bay,flood_bridge_market_route,Milo,day21-slot4,2,2,False,True,0,normal clearance
+410,21,10,archive bench,archive_public_kiosk,Ari,day21-slot5,2,1,False,True,0,normal clearance
+411,21,11,signal yard,dusk_signal_court,Fay,day21-slot5,2,2,False,True,0,normal clearance
+412,21,12,warm workshop,greenhouse_heat_loop,Milo,day21-slot6,2,1,False,True,0,normal clearance
+413,21,13,wood bay,flood_bridge_market_route,Milo,day21-slot6,2,1,False,True,0,normal clearance
+414,21,14,archive bench,archive_public_kiosk,Ari,day21-slot7,2,2,False,True,0,normal clearance
+415,21,15,signal yard,dusk_signal_court,Fay,day21-slot7,2,2,False,True,0,normal clearance
+416,21,16,warm workshop,greenhouse_heat_loop,Milo,day21-slot8,2,2,False,True,0,normal clearance
+417,21,17,wood bay,flood_bridge_market_route,Milo,day21-slot8,2,1,False,True,0,normal clearance
+418,21,18,archive bench,archive_public_kiosk,Ari,day21-slot9,2,1,False,True,0,normal clearance
+419,21,19,signal yard,dusk_signal_court,Fay,day21-slot9,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+420,22,0,warm workshop,greenhouse_heat_loop,Fay,day22-slot0,2,1,False,True,0,normal clearance
+421,22,1,wood bay,flood_bridge_market_route,Nia,day22-slot0,2,2,False,True,0,normal clearance
+422,22,2,archive bench,archive_public_kiosk,Fay,day22-slot1,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+423,22,3,signal yard,dusk_signal_court,Ari,day22-slot1,2,1,False,True,0,normal clearance
+424,22,4,warm workshop,greenhouse_heat_loop,Fay,day22-slot2,2,2,False,True,0,normal clearance
+425,22,5,wood bay,flood_bridge_market_route,Nia,day22-slot2,2,1,False,True,0,normal clearance
+426,22,6,archive bench,archive_public_kiosk,Fay,day22-slot3,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+427,22,7,signal yard,dusk_signal_court,Ari,day22-slot3,2,2,False,True,0,normal clearance
+428,22,8,warm workshop,greenhouse_heat_loop,Fay,day22-slot4,2,2,False,True,0,normal clearance
+429,22,9,wood bay,flood_bridge_market_route,Nia,day22-slot4,2,2,False,True,0,normal clearance
+430,22,10,archive bench,archive_public_kiosk,Fay,day22-slot5,2,2,False,True,0,normal clearance
+431,22,11,signal yard,dusk_signal_court,Ari,day22-slot5,2,2,False,True,0,normal clearance
+432,22,12,warm workshop,greenhouse_heat_loop,Fay,day22-slot6,2,1,False,True,0,normal clearance
+433,22,13,wood bay,flood_bridge_market_route,Nia,day22-slot6,2,2,False,True,0,normal clearance
+434,22,14,archive bench,archive_public_kiosk,Fay,day22-slot7,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+435,22,15,signal yard,dusk_signal_court,Ari,day22-slot7,2,1,False,True,0,normal clearance
+436,22,16,warm workshop,greenhouse_heat_loop,Fay,day22-slot8,2,2,False,True,0,normal clearance
+437,22,17,wood bay,flood_bridge_market_route,Nia,day22-slot8,2,1,False,True,0,normal clearance
+438,22,18,archive bench,archive_public_kiosk,Fay,day22-slot9,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+439,22,19,signal yard,dusk_signal_court,Ari,day22-slot9,2,2,False,True,0,normal clearance
+440,23,0,warm workshop,greenhouse_heat_loop,Nia,day23-slot0,2,1,False,True,0,normal clearance
+441,23,1,wood bay,flood_bridge_market_route,Ari,day23-slot0,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+442,23,2,archive bench,archive_public_kiosk,Milo,day23-slot1,2,1,False,True,0,normal clearance
+443,23,3,signal yard,dusk_signal_court,Milo,day23-slot1,2,1,False,True,0,normal clearance
+444,23,4,warm workshop,greenhouse_heat_loop,Nia,day23-slot2,2,1,False,True,0,normal clearance
+445,23,5,wood bay,flood_bridge_market_route,Ari,day23-slot2,2,2,False,True,0,normal clearance
+446,23,6,archive bench,archive_public_kiosk,Milo,day23-slot3,2,2,False,True,0,normal clearance
+447,23,7,signal yard,dusk_signal_court,Milo,day23-slot3,2,1,False,True,0,normal clearance
+448,23,8,warm workshop,greenhouse_heat_loop,Nia,day23-slot4,2,2,False,True,0,normal clearance
+449,23,9,wood bay,flood_bridge_market_route,Ari,day23-slot4,2,2,False,True,0,normal clearance
+450,23,10,archive bench,archive_public_kiosk,Milo,day23-slot5,2,1,False,True,0,normal clearance
+451,23,11,signal yard,dusk_signal_court,Milo,day23-slot5,2,2,False,True,0,normal clearance
+452,23,12,warm workshop,greenhouse_heat_loop,Nia,day23-slot6,2,1,False,True,0,normal clearance
+453,23,13,wood bay,flood_bridge_market_route,Ari,day23-slot6,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+454,23,14,archive bench,archive_public_kiosk,Milo,day23-slot7,2,1,False,True,0,normal clearance
+455,23,15,signal yard,dusk_signal_court,Milo,day23-slot7,2,1,False,True,0,normal clearance
+456,23,16,warm workshop,greenhouse_heat_loop,Nia,day23-slot8,2,1,False,True,0,normal clearance
+457,23,17,wood bay,flood_bridge_market_route,Ari,day23-slot8,2,2,False,True,0,normal clearance
+458,23,18,archive bench,archive_public_kiosk,Milo,day23-slot9,2,2,False,True,0,normal clearance
+459,23,19,signal yard,dusk_signal_court,Milo,day23-slot9,2,1,False,True,0,normal clearance
+460,24,0,warm workshop,greenhouse_heat_loop,Ari,day24-slot0,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+461,24,1,wood bay,flood_bridge_market_route,Fay,day24-slot0,2,2,False,True,0,normal clearance
+462,24,2,archive bench,archive_public_kiosk,Nia,day24-slot1,2,1,False,True,0,normal clearance
+463,24,3,signal yard,dusk_signal_court,Nia,day24-slot1,2,2,False,True,0,normal clearance
+464,24,4,warm workshop,greenhouse_heat_loop,Ari,day24-slot2,2,2,False,True,0,normal clearance
+465,24,5,wood bay,flood_bridge_market_route,Fay,day24-slot2,2,2,False,True,0,normal clearance
+466,24,6,archive bench,archive_public_kiosk,Nia,day24-slot3,2,2,False,True,0,normal clearance
+467,24,7,signal yard,dusk_signal_court,Nia,day24-slot3,2,1,False,True,0,normal clearance
+468,24,8,warm workshop,greenhouse_heat_loop,Ari,day24-slot4,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+469,24,9,wood bay,flood_bridge_market_route,Fay,day24-slot4,2,1,False,True,0,normal clearance
+470,24,10,archive bench,archive_public_kiosk,Nia,day24-slot5,2,2,False,True,0,normal clearance
+471,24,11,signal yard,dusk_signal_court,Nia,day24-slot5,2,2,False,True,0,normal clearance
+472,24,12,warm workshop,greenhouse_heat_loop,Ari,day24-slot6,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+473,24,13,wood bay,flood_bridge_market_route,Fay,day24-slot6,2,2,False,True,0,normal clearance
+474,24,14,archive bench,archive_public_kiosk,Nia,day24-slot7,2,1,False,True,0,normal clearance
+475,24,15,signal yard,dusk_signal_court,Nia,day24-slot7,2,2,False,True,0,normal clearance
+476,24,16,warm workshop,greenhouse_heat_loop,Ari,day24-slot8,2,2,False,True,0,normal clearance
+477,24,17,wood bay,flood_bridge_market_route,Fay,day24-slot8,2,2,False,True,0,normal clearance
+478,24,18,archive bench,archive_public_kiosk,Nia,day24-slot9,2,2,False,True,0,normal clearance
+479,24,19,signal yard,dusk_signal_court,Nia,day24-slot9,2,1,False,True,0,normal clearance
+480,25,0,wood bay,flood_bridge_market_route,Fay,day25-slot0,2,2,False,True,0,normal clearance
+481,25,1,archive bench,archive_public_kiosk,Nia,day25-slot0,2,1,False,True,0,normal clearance
+482,25,2,signal yard,dusk_signal_court,Nia,day25-slot1,2,2,False,True,0,normal clearance
+483,25,3,warm workshop,greenhouse_heat_loop,Ari,day25-slot1,2,2,False,True,0,normal clearance
+484,25,4,wood bay,flood_bridge_market_route,Fay,day25-slot2,2,2,False,True,0,normal clearance
+485,25,5,archive bench,archive_public_kiosk,Nia,day25-slot2,2,2,False,True,0,normal clearance
+486,25,6,signal yard,dusk_signal_court,Nia,day25-slot3,2,1,False,True,0,normal clearance
+487,25,7,warm workshop,greenhouse_heat_loop,Ari,day25-slot3,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+488,25,8,wood bay,flood_bridge_market_route,Fay,day25-slot4,2,1,False,True,0,normal clearance
+489,25,9,archive bench,archive_public_kiosk,Nia,day25-slot4,2,2,False,True,0,normal clearance
+490,25,10,signal yard,dusk_signal_court,Nia,day25-slot5,2,2,False,True,0,normal clearance
+491,25,11,warm workshop,greenhouse_heat_loop,Ari,day25-slot5,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+492,25,12,wood bay,flood_bridge_market_route,Fay,day25-slot6,2,2,False,True,0,normal clearance
+493,25,13,archive bench,archive_public_kiosk,Nia,day25-slot6,2,1,False,True,0,normal clearance
+494,25,14,signal yard,dusk_signal_court,Nia,day25-slot7,2,2,False,True,0,normal clearance
+495,25,15,warm workshop,greenhouse_heat_loop,Ari,day25-slot7,2,2,False,True,0,normal clearance
+496,25,16,wood bay,flood_bridge_market_route,Fay,day25-slot8,2,2,False,True,0,normal clearance
+497,25,17,archive bench,archive_public_kiosk,Nia,day25-slot8,2,2,False,True,0,normal clearance
+498,25,18,signal yard,dusk_signal_court,Nia,day25-slot9,2,1,False,True,0,normal clearance
+499,25,19,warm workshop,greenhouse_heat_loop,Ari,day25-slot9,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+500,26,0,wood bay,flood_bridge_market_route,Milo,day26-slot0,2,1,False,True,0,normal clearance
+501,26,1,archive bench,archive_public_kiosk,Ari,day26-slot0,2,1,False,True,0,normal clearance
+502,26,2,signal yard,dusk_signal_court,Fay,day26-slot1,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+503,26,3,warm workshop,greenhouse_heat_loop,Milo,day26-slot1,2,1,False,True,0,normal clearance
+504,26,4,wood bay,flood_bridge_market_route,Milo,day26-slot2,2,2,False,True,0,normal clearance
+505,26,5,archive bench,archive_public_kiosk,Ari,day26-slot2,2,1,False,True,0,normal clearance
+506,26,6,signal yard,dusk_signal_court,Fay,day26-slot3,2,2,False,True,0,normal clearance
+507,26,7,warm workshop,greenhouse_heat_loop,Milo,day26-slot3,2,1,False,True,0,normal clearance
+508,26,8,wood bay,flood_bridge_market_route,Milo,day26-slot4,2,1,False,True,0,normal clearance
+509,26,9,archive bench,archive_public_kiosk,Ari,day26-slot4,2,2,False,True,0,normal clearance
+510,26,10,signal yard,dusk_signal_court,Fay,day26-slot5,2,2,False,True,0,normal clearance
+511,26,11,warm workshop,greenhouse_heat_loop,Milo,day26-slot5,2,2,False,True,0,normal clearance
+512,26,12,wood bay,flood_bridge_market_route,Milo,day26-slot6,2,1,False,True,0,normal clearance
+513,26,13,archive bench,archive_public_kiosk,Ari,day26-slot6,2,1,False,True,0,normal clearance
+514,26,14,signal yard,dusk_signal_court,Fay,day26-slot7,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+515,26,15,warm workshop,greenhouse_heat_loop,Milo,day26-slot7,2,1,False,True,0,normal clearance
+516,26,16,wood bay,flood_bridge_market_route,Milo,day26-slot8,2,2,False,True,0,normal clearance
+517,26,17,archive bench,archive_public_kiosk,Ari,day26-slot8,2,1,False,True,0,normal clearance
+518,26,18,signal yard,dusk_signal_court,Fay,day26-slot9,2,2,False,True,0,normal clearance
+519,26,19,warm workshop,greenhouse_heat_loop,Milo,day26-slot9,2,1,False,True,0,normal clearance
+520,27,0,wood bay,flood_bridge_market_route,Nia,day27-slot0,2,1,False,True,0,normal clearance
+521,27,1,archive bench,archive_public_kiosk,Fay,day27-slot0,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+522,27,2,signal yard,dusk_signal_court,Ari,day27-slot1,2,2,False,True,0,normal clearance
+523,27,3,warm workshop,greenhouse_heat_loop,Fay,day27-slot1,2,2,False,True,0,normal clearance
+524,27,4,wood bay,flood_bridge_market_route,Nia,day27-slot2,2,2,False,True,0,normal clearance
+525,27,5,archive bench,archive_public_kiosk,Fay,day27-slot2,2,2,False,True,0,normal clearance
+526,27,6,signal yard,dusk_signal_court,Ari,day27-slot3,2,2,False,True,0,normal clearance
+527,27,7,warm workshop,greenhouse_heat_loop,Fay,day27-slot3,2,1,False,True,0,normal clearance
+528,27,8,wood bay,flood_bridge_market_route,Nia,day27-slot4,2,2,False,True,0,normal clearance
+529,27,9,archive bench,archive_public_kiosk,Fay,day27-slot4,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+530,27,10,signal yard,dusk_signal_court,Ari,day27-slot5,2,1,False,True,0,normal clearance
+531,27,11,warm workshop,greenhouse_heat_loop,Fay,day27-slot5,2,2,False,True,0,normal clearance
+532,27,12,wood bay,flood_bridge_market_route,Nia,day27-slot6,2,1,False,True,0,normal clearance
+533,27,13,archive bench,archive_public_kiosk,Fay,day27-slot6,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+534,27,14,signal yard,dusk_signal_court,Ari,day27-slot7,2,2,False,True,0,normal clearance
+535,27,15,warm workshop,greenhouse_heat_loop,Fay,day27-slot7,2,2,False,True,0,normal clearance
+536,27,16,wood bay,flood_bridge_market_route,Nia,day27-slot8,2,2,False,True,0,normal clearance
+537,27,17,archive bench,archive_public_kiosk,Fay,day27-slot8,2,2,False,True,0,normal clearance
+538,27,18,signal yard,dusk_signal_court,Ari,day27-slot9,2,2,False,True,0,normal clearance
+539,27,19,warm workshop,greenhouse_heat_loop,Fay,day27-slot9,2,1,False,True,0,normal clearance
+540,28,0,wood bay,flood_bridge_market_route,Ari,day28-slot0,2,2,False,True,0,normal clearance
+541,28,1,archive bench,archive_public_kiosk,Milo,day28-slot0,2,2,False,True,0,normal clearance
+542,28,2,signal yard,dusk_signal_court,Milo,day28-slot1,2,1,False,True,0,normal clearance
+543,28,3,warm workshop,greenhouse_heat_loop,Nia,day28-slot1,2,2,False,True,0,normal clearance
+544,28,4,wood bay,flood_bridge_market_route,Ari,day28-slot2,2,2,False,True,0,normal clearance
+545,28,5,archive bench,archive_public_kiosk,Milo,day28-slot2,2,1,False,True,0,normal clearance
+546,28,6,signal yard,dusk_signal_court,Milo,day28-slot3,2,2,False,True,0,normal clearance
+547,28,7,warm workshop,greenhouse_heat_loop,Nia,day28-slot3,2,1,False,True,0,normal clearance
+548,28,8,wood bay,flood_bridge_market_route,Ari,day28-slot4,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+549,28,9,archive bench,archive_public_kiosk,Milo,day28-slot4,2,1,False,True,0,normal clearance
+550,28,10,signal yard,dusk_signal_court,Milo,day28-slot5,2,1,False,True,0,normal clearance
+551,28,11,warm workshop,greenhouse_heat_loop,Nia,day28-slot5,2,1,False,True,0,normal clearance
+552,28,12,wood bay,flood_bridge_market_route,Ari,day28-slot6,2,2,False,True,0,normal clearance
+553,28,13,archive bench,archive_public_kiosk,Milo,day28-slot6,2,2,False,True,0,normal clearance
+554,28,14,signal yard,dusk_signal_court,Milo,day28-slot7,2,1,False,True,0,normal clearance
+555,28,15,warm workshop,greenhouse_heat_loop,Nia,day28-slot7,2,2,False,True,0,normal clearance
+556,28,16,wood bay,flood_bridge_market_route,Ari,day28-slot8,2,2,False,True,0,normal clearance
+557,28,17,archive bench,archive_public_kiosk,Milo,day28-slot8,2,1,False,True,0,normal clearance
+558,28,18,signal yard,dusk_signal_court,Milo,day28-slot9,2,2,False,True,0,normal clearance
+559,28,19,warm workshop,greenhouse_heat_loop,Nia,day28-slot9,2,1,False,True,0,normal clearance
+560,29,0,wood bay,flood_bridge_market_route,Fay,day29-slot0,2,2,False,True,0,normal clearance
+561,29,1,archive bench,archive_public_kiosk,Nia,day29-slot0,2,2,False,True,0,normal clearance
+562,29,2,signal yard,dusk_signal_court,Nia,day29-slot1,2,1,False,True,0,normal clearance
+563,29,3,warm workshop,greenhouse_heat_loop,Ari,day29-slot1,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+564,29,4,wood bay,flood_bridge_market_route,Fay,day29-slot2,2,1,False,True,0,normal clearance
+565,29,5,archive bench,archive_public_kiosk,Nia,day29-slot2,2,2,False,True,0,normal clearance
+566,29,6,signal yard,dusk_signal_court,Nia,day29-slot3,2,2,False,True,0,normal clearance
+567,29,7,warm workshop,greenhouse_heat_loop,Ari,day29-slot3,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+568,29,8,wood bay,flood_bridge_market_route,Fay,day29-slot4,2,2,False,True,0,normal clearance
+569,29,9,archive bench,archive_public_kiosk,Nia,day29-slot4,2,1,False,True,0,normal clearance
+570,29,10,signal yard,dusk_signal_court,Nia,day29-slot5,2,2,False,True,0,normal clearance
+571,29,11,warm workshop,greenhouse_heat_loop,Ari,day29-slot5,2,2,False,True,0,normal clearance
+572,29,12,wood bay,flood_bridge_market_route,Fay,day29-slot6,2,2,False,True,0,normal clearance
+573,29,13,archive bench,archive_public_kiosk,Nia,day29-slot6,2,2,False,True,0,normal clearance
+574,29,14,signal yard,dusk_signal_court,Nia,day29-slot7,2,1,False,True,0,normal clearance
+575,29,15,warm workshop,greenhouse_heat_loop,Ari,day29-slot7,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+576,29,16,wood bay,flood_bridge_market_route,Fay,day29-slot8,2,1,False,True,0,normal clearance
+577,29,17,archive bench,archive_public_kiosk,Nia,day29-slot8,2,2,False,True,0,normal clearance
+578,29,18,signal yard,dusk_signal_court,Nia,day29-slot9,2,2,False,True,0,normal clearance
+579,29,19,warm workshop,greenhouse_heat_loop,Ari,day29-slot9,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+580,30,0,archive bench,archive_public_kiosk,Nia,day30-slot0,2,2,False,True,0,normal clearance
+581,30,1,signal yard,dusk_signal_court,Nia,day30-slot0,2,1,False,True,0,normal clearance
+582,30,2,warm workshop,greenhouse_heat_loop,Ari,day30-slot1,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+583,30,3,wood bay,flood_bridge_market_route,Fay,day30-slot1,2,1,False,True,0,normal clearance
+584,30,4,archive bench,archive_public_kiosk,Nia,day30-slot2,2,2,False,True,0,normal clearance
+585,30,5,signal yard,dusk_signal_court,Nia,day30-slot2,2,2,False,True,0,normal clearance
+586,30,6,warm workshop,greenhouse_heat_loop,Ari,day30-slot3,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+587,30,7,wood bay,flood_bridge_market_route,Fay,day30-slot3,2,2,False,True,0,normal clearance
+588,30,8,archive bench,archive_public_kiosk,Nia,day30-slot4,2,1,False,True,0,normal clearance
+589,30,9,signal yard,dusk_signal_court,Nia,day30-slot4,2,2,False,True,0,normal clearance
+590,30,10,warm workshop,greenhouse_heat_loop,Ari,day30-slot5,2,2,False,True,0,normal clearance
+591,30,11,wood bay,flood_bridge_market_route,Fay,day30-slot5,2,2,False,True,0,normal clearance
+592,30,12,archive bench,archive_public_kiosk,Nia,day30-slot6,2,2,False,True,0,normal clearance
+593,30,13,signal yard,dusk_signal_court,Nia,day30-slot6,2,1,False,True,0,normal clearance
+594,30,14,warm workshop,greenhouse_heat_loop,Ari,day30-slot7,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+595,30,15,wood bay,flood_bridge_market_route,Fay,day30-slot7,2,1,False,True,0,normal clearance
+596,30,16,archive bench,archive_public_kiosk,Nia,day30-slot8,2,2,False,True,0,normal clearance
+597,30,17,signal yard,dusk_signal_court,Nia,day30-slot8,2,2,False,True,0,normal clearance
+598,30,18,warm workshop,greenhouse_heat_loop,Ari,day30-slot9,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+599,30,19,wood bay,flood_bridge_market_route,Fay,day30-slot9,2,2,False,True,0,normal clearance
+600,31,0,archive bench,archive_public_kiosk,Ari,day31-slot0,2,1,False,True,0,normal clearance
+601,31,1,signal yard,dusk_signal_court,Fay,day31-slot0,2,2,False,True,0,normal clearance
+602,31,2,warm workshop,greenhouse_heat_loop,Milo,day31-slot1,2,1,False,True,0,normal clearance
+603,31,3,wood bay,flood_bridge_market_route,Milo,day31-slot1,2,1,False,True,0,normal clearance
+604,31,4,archive bench,archive_public_kiosk,Ari,day31-slot2,2,2,False,True,0,normal clearance
+605,31,5,signal yard,dusk_signal_court,Fay,day31-slot2,2,2,False,True,0,normal clearance
+606,31,6,warm workshop,greenhouse_heat_loop,Milo,day31-slot3,2,2,False,True,0,normal clearance
+607,31,7,wood bay,flood_bridge_market_route,Milo,day31-slot3,2,1,False,True,0,normal clearance
+608,31,8,archive bench,archive_public_kiosk,Ari,day31-slot4,2,1,False,True,0,normal clearance
+609,31,9,signal yard,dusk_signal_court,Fay,day31-slot4,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+610,31,10,warm workshop,greenhouse_heat_loop,Milo,day31-slot5,2,1,False,True,0,normal clearance
+611,31,11,wood bay,flood_bridge_market_route,Milo,day31-slot5,2,2,False,True,0,normal clearance
+612,31,12,archive bench,archive_public_kiosk,Ari,day31-slot6,2,1,False,True,0,normal clearance
+613,31,13,signal yard,dusk_signal_court,Fay,day31-slot6,2,2,False,True,0,normal clearance
+614,31,14,warm workshop,greenhouse_heat_loop,Milo,day31-slot7,2,1,False,True,0,normal clearance
+615,31,15,wood bay,flood_bridge_market_route,Milo,day31-slot7,2,1,False,True,0,normal clearance
+616,31,16,archive bench,archive_public_kiosk,Ari,day31-slot8,2,2,False,True,0,normal clearance
+617,31,17,signal yard,dusk_signal_court,Fay,day31-slot8,2,2,False,True,0,normal clearance
+618,31,18,warm workshop,greenhouse_heat_loop,Milo,day31-slot9,2,2,False,True,0,normal clearance
+619,31,19,wood bay,flood_bridge_market_route,Milo,day31-slot9,2,1,False,True,0,normal clearance
+620,32,0,archive bench,archive_public_kiosk,Fay,day32-slot0,2,2,False,True,0,normal clearance
+621,32,1,signal yard,dusk_signal_court,Ari,day32-slot0,2,2,False,True,0,normal clearance
+622,32,2,warm workshop,greenhouse_heat_loop,Fay,day32-slot1,2,1,False,True,0,normal clearance
+623,32,3,wood bay,flood_bridge_market_route,Nia,day32-slot1,2,2,False,True,0,normal clearance
+624,32,4,archive bench,archive_public_kiosk,Fay,day32-slot2,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+625,32,5,signal yard,dusk_signal_court,Ari,day32-slot2,2,1,False,True,0,normal clearance
+626,32,6,warm workshop,greenhouse_heat_loop,Fay,day32-slot3,2,2,False,True,0,normal clearance
+627,32,7,wood bay,flood_bridge_market_route,Nia,day32-slot3,2,1,False,True,0,normal clearance
+628,32,8,archive bench,archive_public_kiosk,Fay,day32-slot4,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+629,32,9,signal yard,dusk_signal_court,Ari,day32-slot4,2,2,False,True,0,normal clearance
+630,32,10,warm workshop,greenhouse_heat_loop,Fay,day32-slot5,2,2,False,True,0,normal clearance
+631,32,11,wood bay,flood_bridge_market_route,Nia,day32-slot5,2,2,False,True,0,normal clearance
+632,32,12,archive bench,archive_public_kiosk,Fay,day32-slot6,2,2,False,True,0,normal clearance
+633,32,13,signal yard,dusk_signal_court,Ari,day32-slot6,2,2,False,True,0,normal clearance
+634,32,14,warm workshop,greenhouse_heat_loop,Fay,day32-slot7,2,1,False,True,0,normal clearance
+635,32,15,wood bay,flood_bridge_market_route,Nia,day32-slot7,2,2,False,True,0,normal clearance
+636,32,16,archive bench,archive_public_kiosk,Fay,day32-slot8,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+637,32,17,signal yard,dusk_signal_court,Ari,day32-slot8,2,1,False,True,0,normal clearance
+638,32,18,warm workshop,greenhouse_heat_loop,Fay,day32-slot9,2,2,False,True,0,normal clearance
+639,32,19,wood bay,flood_bridge_market_route,Nia,day32-slot9,2,1,False,True,0,normal clearance
+640,33,0,archive bench,archive_public_kiosk,Milo,day33-slot0,2,1,False,True,0,normal clearance
+641,33,1,signal yard,dusk_signal_court,Milo,day33-slot0,2,2,False,True,0,normal clearance
+642,33,2,warm workshop,greenhouse_heat_loop,Nia,day33-slot1,2,1,False,True,0,normal clearance
+643,33,3,wood bay,flood_bridge_market_route,Ari,day33-slot1,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+644,33,4,archive bench,archive_public_kiosk,Milo,day33-slot2,2,1,False,True,0,normal clearance
+645,33,5,signal yard,dusk_signal_court,Milo,day33-slot2,2,1,False,True,0,normal clearance
+646,33,6,warm workshop,greenhouse_heat_loop,Nia,day33-slot3,2,1,False,True,0,normal clearance
+647,33,7,wood bay,flood_bridge_market_route,Ari,day33-slot3,2,2,False,True,0,normal clearance
+648,33,8,archive bench,archive_public_kiosk,Milo,day33-slot4,2,2,False,True,0,normal clearance
+649,33,9,signal yard,dusk_signal_court,Milo,day33-slot4,2,1,False,True,0,normal clearance
+650,33,10,warm workshop,greenhouse_heat_loop,Nia,day33-slot5,2,2,False,True,0,normal clearance
+651,33,11,wood bay,flood_bridge_market_route,Ari,day33-slot5,2,2,False,True,0,normal clearance
+652,33,12,archive bench,archive_public_kiosk,Milo,day33-slot6,2,1,False,True,0,normal clearance
+653,33,13,signal yard,dusk_signal_court,Milo,day33-slot6,2,2,False,True,0,normal clearance
+654,33,14,warm workshop,greenhouse_heat_loop,Nia,day33-slot7,2,1,False,True,0,normal clearance
+655,33,15,wood bay,flood_bridge_market_route,Ari,day33-slot7,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+656,33,16,archive bench,archive_public_kiosk,Milo,day33-slot8,2,1,False,True,0,normal clearance
+657,33,17,signal yard,dusk_signal_court,Milo,day33-slot8,2,1,False,True,0,normal clearance
+658,33,18,warm workshop,greenhouse_heat_loop,Nia,day33-slot9,2,1,False,True,0,normal clearance
+659,33,19,wood bay,flood_bridge_market_route,Ari,day33-slot9,2,2,False,True,0,normal clearance
+660,34,0,archive bench,archive_public_kiosk,Nia,day34-slot0,2,2,False,True,0,normal clearance
+661,34,1,signal yard,dusk_signal_court,Nia,day34-slot0,2,2,False,True,0,normal clearance
+662,34,2,warm workshop,greenhouse_heat_loop,Ari,day34-slot1,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+663,34,3,wood bay,flood_bridge_market_route,Fay,day34-slot1,2,2,False,True,0,normal clearance
+664,34,4,archive bench,archive_public_kiosk,Nia,day34-slot2,2,1,False,True,0,normal clearance
+665,34,5,signal yard,dusk_signal_court,Nia,day34-slot2,2,2,False,True,0,normal clearance
+666,34,6,warm workshop,greenhouse_heat_loop,Ari,day34-slot3,2,2,False,True,0,normal clearance
+667,34,7,wood bay,flood_bridge_market_route,Fay,day34-slot3,2,2,False,True,0,normal clearance
+668,34,8,archive bench,archive_public_kiosk,Nia,day34-slot4,2,2,False,True,0,normal clearance
+669,34,9,signal yard,dusk_signal_court,Nia,day34-slot4,2,1,False,True,0,normal clearance
+670,34,10,warm workshop,greenhouse_heat_loop,Ari,day34-slot5,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+671,34,11,wood bay,flood_bridge_market_route,Fay,day34-slot5,2,1,False,True,0,normal clearance
+672,34,12,archive bench,archive_public_kiosk,Nia,day34-slot6,2,2,False,True,0,normal clearance
+673,34,13,signal yard,dusk_signal_court,Nia,day34-slot6,2,2,False,True,0,normal clearance
+674,34,14,warm workshop,greenhouse_heat_loop,Ari,day34-slot7,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+675,34,15,wood bay,flood_bridge_market_route,Fay,day34-slot7,2,2,False,True,0,normal clearance
+676,34,16,archive bench,archive_public_kiosk,Nia,day34-slot8,2,1,False,True,0,normal clearance
+677,34,17,signal yard,dusk_signal_court,Nia,day34-slot8,2,2,False,True,0,normal clearance
+678,34,18,warm workshop,greenhouse_heat_loop,Ari,day34-slot9,2,2,False,True,0,normal clearance
+679,34,19,wood bay,flood_bridge_market_route,Fay,day34-slot9,2,2,False,True,0,normal clearance
+680,35,0,signal yard,dusk_signal_court,Nia,day35-slot0,2,2,False,True,0,normal clearance
+681,35,1,warm workshop,greenhouse_heat_loop,Ari,day35-slot0,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+682,35,2,wood bay,flood_bridge_market_route,Fay,day35-slot1,2,2,False,True,0,normal clearance
+683,35,3,archive bench,archive_public_kiosk,Nia,day35-slot1,2,1,False,True,0,normal clearance
+684,35,4,signal yard,dusk_signal_court,Nia,day35-slot2,2,2,False,True,0,normal clearance
+685,35,5,warm workshop,greenhouse_heat_loop,Ari,day35-slot2,2,2,False,True,0,normal clearance
+686,35,6,wood bay,flood_bridge_market_route,Fay,day35-slot3,2,2,False,True,0,normal clearance
+687,35,7,archive bench,archive_public_kiosk,Nia,day35-slot3,2,2,False,True,0,normal clearance
+688,35,8,signal yard,dusk_signal_court,Nia,day35-slot4,2,1,False,True,0,normal clearance
+689,35,9,warm workshop,greenhouse_heat_loop,Ari,day35-slot4,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+690,35,10,wood bay,flood_bridge_market_route,Fay,day35-slot5,2,1,False,True,0,normal clearance
+691,35,11,archive bench,archive_public_kiosk,Nia,day35-slot5,2,2,False,True,0,normal clearance
+692,35,12,signal yard,dusk_signal_court,Nia,day35-slot6,2,2,False,True,0,normal clearance
+693,35,13,warm workshop,greenhouse_heat_loop,Ari,day35-slot6,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+694,35,14,wood bay,flood_bridge_market_route,Fay,day35-slot7,2,2,False,True,0,normal clearance
+695,35,15,archive bench,archive_public_kiosk,Nia,day35-slot7,2,1,False,True,0,normal clearance
+696,35,16,signal yard,dusk_signal_court,Nia,day35-slot8,2,2,False,True,0,normal clearance
+697,35,17,warm workshop,greenhouse_heat_loop,Ari,day35-slot8,2,2,False,True,0,normal clearance
+698,35,18,wood bay,flood_bridge_market_route,Fay,day35-slot9,2,2,False,True,0,normal clearance
+699,35,19,archive bench,archive_public_kiosk,Nia,day35-slot9,2,2,False,True,0,normal clearance
+700,36,0,signal yard,dusk_signal_court,Fay,day36-slot0,2,2,False,True,0,normal clearance
+701,36,1,warm workshop,greenhouse_heat_loop,Milo,day36-slot0,2,2,False,True,0,normal clearance
+702,36,2,wood bay,flood_bridge_market_route,Milo,day36-slot1,2,1,False,True,0,normal clearance
+703,36,3,archive bench,archive_public_kiosk,Ari,day36-slot1,2,1,False,True,0,normal clearance
+704,36,4,signal yard,dusk_signal_court,Fay,day36-slot2,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+705,36,5,warm workshop,greenhouse_heat_loop,Milo,day36-slot2,2,1,False,True,0,normal clearance
+706,36,6,wood bay,flood_bridge_market_route,Milo,day36-slot3,2,2,False,True,0,normal clearance
+707,36,7,archive bench,archive_public_kiosk,Ari,day36-slot3,2,1,False,True,0,normal clearance
+708,36,8,signal yard,dusk_signal_court,Fay,day36-slot4,2,2,False,True,0,normal clearance
+709,36,9,warm workshop,greenhouse_heat_loop,Milo,day36-slot4,2,1,False,True,0,normal clearance
+710,36,10,wood bay,flood_bridge_market_route,Milo,day36-slot5,2,1,False,True,0,normal clearance
+711,36,11,archive bench,archive_public_kiosk,Ari,day36-slot5,2,2,False,True,0,normal clearance
+712,36,12,signal yard,dusk_signal_court,Fay,day36-slot6,2,2,False,True,0,normal clearance
+713,36,13,warm workshop,greenhouse_heat_loop,Milo,day36-slot6,2,2,False,True,0,normal clearance
+714,36,14,wood bay,flood_bridge_market_route,Milo,day36-slot7,2,1,False,True,0,normal clearance
+715,36,15,archive bench,archive_public_kiosk,Ari,day36-slot7,2,1,False,True,0,normal clearance
+716,36,16,signal yard,dusk_signal_court,Fay,day36-slot8,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+717,36,17,warm workshop,greenhouse_heat_loop,Milo,day36-slot8,2,1,False,True,0,normal clearance
+718,36,18,wood bay,flood_bridge_market_route,Milo,day36-slot9,2,2,False,True,0,normal clearance
+719,36,19,archive bench,archive_public_kiosk,Ari,day36-slot9,2,1,False,True,0,normal clearance
+720,37,0,signal yard,dusk_signal_court,Ari,day37-slot0,2,1,False,True,0,normal clearance
+721,37,1,warm workshop,greenhouse_heat_loop,Fay,day37-slot0,2,2,False,True,0,normal clearance
+722,37,2,wood bay,flood_bridge_market_route,Nia,day37-slot1,2,1,False,True,0,normal clearance
+723,37,3,archive bench,archive_public_kiosk,Fay,day37-slot1,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+724,37,4,signal yard,dusk_signal_court,Ari,day37-slot2,2,2,False,True,0,normal clearance
+725,37,5,warm workshop,greenhouse_heat_loop,Fay,day37-slot2,2,2,False,True,0,normal clearance
+726,37,6,wood bay,flood_bridge_market_route,Nia,day37-slot3,2,2,False,True,0,normal clearance
+727,37,7,archive bench,archive_public_kiosk,Fay,day37-slot3,2,2,False,True,0,normal clearance
+728,37,8,signal yard,dusk_signal_court,Ari,day37-slot4,2,2,False,True,0,normal clearance
+729,37,9,warm workshop,greenhouse_heat_loop,Fay,day37-slot4,2,1,False,True,0,normal clearance
+730,37,10,wood bay,flood_bridge_market_route,Nia,day37-slot5,2,2,False,True,0,normal clearance
+731,37,11,archive bench,archive_public_kiosk,Fay,day37-slot5,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+732,37,12,signal yard,dusk_signal_court,Ari,day37-slot6,2,1,False,True,0,normal clearance
+733,37,13,warm workshop,greenhouse_heat_loop,Fay,day37-slot6,2,2,False,True,0,normal clearance
+734,37,14,wood bay,flood_bridge_market_route,Nia,day37-slot7,2,1,False,True,0,normal clearance
+735,37,15,archive bench,archive_public_kiosk,Fay,day37-slot7,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+736,37,16,signal yard,dusk_signal_court,Ari,day37-slot8,2,2,False,True,0,normal clearance
+737,37,17,warm workshop,greenhouse_heat_loop,Fay,day37-slot8,2,2,False,True,0,normal clearance
+738,37,18,wood bay,flood_bridge_market_route,Nia,day37-slot9,2,2,False,True,0,normal clearance
+739,37,19,archive bench,archive_public_kiosk,Fay,day37-slot9,2,2,False,True,0,normal clearance
+740,38,0,signal yard,dusk_signal_court,Milo,day38-slot0,2,1,False,True,0,normal clearance
+741,38,1,warm workshop,greenhouse_heat_loop,Nia,day38-slot0,2,1,False,True,0,normal clearance
+742,38,2,wood bay,flood_bridge_market_route,Ari,day38-slot1,2,2,False,True,0,normal clearance
+743,38,3,archive bench,archive_public_kiosk,Milo,day38-slot1,2,2,False,True,0,normal clearance
+744,38,4,signal yard,dusk_signal_court,Milo,day38-slot2,2,1,False,True,0,normal clearance
+745,38,5,warm workshop,greenhouse_heat_loop,Nia,day38-slot2,2,2,False,True,0,normal clearance
+746,38,6,wood bay,flood_bridge_market_route,Ari,day38-slot3,2,2,False,True,0,normal clearance
+747,38,7,archive bench,archive_public_kiosk,Milo,day38-slot3,2,1,False,True,0,normal clearance
+748,38,8,signal yard,dusk_signal_court,Milo,day38-slot4,2,2,False,True,0,normal clearance
+749,38,9,warm workshop,greenhouse_heat_loop,Nia,day38-slot4,2,1,False,True,0,normal clearance
+750,38,10,wood bay,flood_bridge_market_route,Ari,day38-slot5,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+751,38,11,archive bench,archive_public_kiosk,Milo,day38-slot5,2,1,False,True,0,normal clearance
+752,38,12,signal yard,dusk_signal_court,Milo,day38-slot6,2,1,False,True,0,normal clearance
+753,38,13,warm workshop,greenhouse_heat_loop,Nia,day38-slot6,2,1,False,True,0,normal clearance
+754,38,14,wood bay,flood_bridge_market_route,Ari,day38-slot7,2,2,False,True,0,normal clearance
+755,38,15,archive bench,archive_public_kiosk,Milo,day38-slot7,2,2,False,True,0,normal clearance
+756,38,16,signal yard,dusk_signal_court,Milo,day38-slot8,2,1,False,True,0,normal clearance
+757,38,17,warm workshop,greenhouse_heat_loop,Nia,day38-slot8,2,2,False,True,0,normal clearance
+758,38,18,wood bay,flood_bridge_market_route,Ari,day38-slot9,2,2,False,True,0,normal clearance
+759,38,19,archive bench,archive_public_kiosk,Milo,day38-slot9,2,1,False,True,0,normal clearance
+760,39,0,signal yard,dusk_signal_court,Nia,day39-slot0,2,2,False,True,0,normal clearance
+761,39,1,warm workshop,greenhouse_heat_loop,Ari,day39-slot0,2,2,False,True,0,normal clearance
+762,39,2,wood bay,flood_bridge_market_route,Fay,day39-slot1,2,2,False,True,0,normal clearance
+763,39,3,archive bench,archive_public_kiosk,Nia,day39-slot1,2,2,False,True,0,normal clearance
+764,39,4,signal yard,dusk_signal_court,Nia,day39-slot2,2,1,False,True,0,normal clearance
+765,39,5,warm workshop,greenhouse_heat_loop,Ari,day39-slot2,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+766,39,6,wood bay,flood_bridge_market_route,Fay,day39-slot3,2,1,False,True,0,normal clearance
+767,39,7,archive bench,archive_public_kiosk,Nia,day39-slot3,2,2,False,True,0,normal clearance
+768,39,8,signal yard,dusk_signal_court,Nia,day39-slot4,2,2,False,True,0,normal clearance
+769,39,9,warm workshop,greenhouse_heat_loop,Ari,day39-slot4,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+770,39,10,wood bay,flood_bridge_market_route,Fay,day39-slot5,2,2,False,True,0,normal clearance
+771,39,11,archive bench,archive_public_kiosk,Nia,day39-slot5,2,1,False,True,0,normal clearance
+772,39,12,signal yard,dusk_signal_court,Nia,day39-slot6,2,2,False,True,0,normal clearance
+773,39,13,warm workshop,greenhouse_heat_loop,Ari,day39-slot6,2,2,False,True,0,normal clearance
+774,39,14,wood bay,flood_bridge_market_route,Fay,day39-slot7,2,2,False,True,0,normal clearance
+775,39,15,archive bench,archive_public_kiosk,Nia,day39-slot7,2,2,False,True,0,normal clearance
+776,39,16,signal yard,dusk_signal_court,Nia,day39-slot8,2,1,False,True,0,normal clearance
+777,39,17,warm workshop,greenhouse_heat_loop,Ari,day39-slot8,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+778,39,18,wood bay,flood_bridge_market_route,Fay,day39-slot9,2,1,False,True,0,normal clearance
+779,39,19,archive bench,archive_public_kiosk,Nia,day39-slot9,2,2,False,True,0,normal clearance
+780,40,0,warm workshop,greenhouse_heat_loop,Ari,day40-slot0,2,2,False,True,0,normal clearance
+781,40,1,wood bay,flood_bridge_market_route,Fay,day40-slot0,2,2,False,True,0,normal clearance
+782,40,2,archive bench,archive_public_kiosk,Nia,day40-slot1,2,2,False,True,0,normal clearance
+783,40,3,signal yard,dusk_signal_court,Nia,day40-slot1,2,1,False,True,0,normal clearance
+784,40,4,warm workshop,greenhouse_heat_loop,Ari,day40-slot2,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+785,40,5,wood bay,flood_bridge_market_route,Fay,day40-slot2,2,1,False,True,0,normal clearance
+786,40,6,archive bench,archive_public_kiosk,Nia,day40-slot3,2,2,False,True,0,normal clearance
+787,40,7,signal yard,dusk_signal_court,Nia,day40-slot3,2,2,False,True,0,normal clearance
+788,40,8,warm workshop,greenhouse_heat_loop,Ari,day40-slot4,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+789,40,9,wood bay,flood_bridge_market_route,Fay,day40-slot4,2,2,False,True,0,normal clearance
+790,40,10,archive bench,archive_public_kiosk,Nia,day40-slot5,2,1,False,True,0,normal clearance
+791,40,11,signal yard,dusk_signal_court,Nia,day40-slot5,2,2,False,True,0,normal clearance
+792,40,12,warm workshop,greenhouse_heat_loop,Ari,day40-slot6,2,2,False,True,0,normal clearance
+793,40,13,wood bay,flood_bridge_market_route,Fay,day40-slot6,2,2,False,True,0,normal clearance
+794,40,14,archive bench,archive_public_kiosk,Nia,day40-slot7,2,2,False,True,0,normal clearance
+795,40,15,signal yard,dusk_signal_court,Nia,day40-slot7,2,1,False,True,0,normal clearance
+796,40,16,warm workshop,greenhouse_heat_loop,Ari,day40-slot8,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+797,40,17,wood bay,flood_bridge_market_route,Fay,day40-slot8,2,1,False,True,0,normal clearance
+798,40,18,archive bench,archive_public_kiosk,Nia,day40-slot9,2,2,False,True,0,normal clearance
+799,40,19,signal yard,dusk_signal_court,Nia,day40-slot9,2,2,False,True,0,normal clearance
+800,41,0,warm workshop,greenhouse_heat_loop,Milo,day41-slot0,2,1,False,True,0,normal clearance
+801,41,1,wood bay,flood_bridge_market_route,Milo,day41-slot0,2,2,False,True,0,normal clearance
+802,41,2,archive bench,archive_public_kiosk,Ari,day41-slot1,2,1,False,True,0,normal clearance
+803,41,3,signal yard,dusk_signal_court,Fay,day41-slot1,2,2,False,True,0,normal clearance
+804,41,4,warm workshop,greenhouse_heat_loop,Milo,day41-slot2,2,1,False,True,0,normal clearance
+805,41,5,wood bay,flood_bridge_market_route,Milo,day41-slot2,2,1,False,True,0,normal clearance
+806,41,6,archive bench,archive_public_kiosk,Ari,day41-slot3,2,2,False,True,0,normal clearance
+807,41,7,signal yard,dusk_signal_court,Fay,day41-slot3,2,2,False,True,0,normal clearance
+808,41,8,warm workshop,greenhouse_heat_loop,Milo,day41-slot4,2,2,False,True,0,normal clearance
+809,41,9,wood bay,flood_bridge_market_route,Milo,day41-slot4,2,1,False,True,0,normal clearance
+810,41,10,archive bench,archive_public_kiosk,Ari,day41-slot5,2,1,False,True,0,normal clearance
+811,41,11,signal yard,dusk_signal_court,Fay,day41-slot5,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+812,41,12,warm workshop,greenhouse_heat_loop,Milo,day41-slot6,2,1,False,True,0,normal clearance
+813,41,13,wood bay,flood_bridge_market_route,Milo,day41-slot6,2,2,False,True,0,normal clearance
+814,41,14,archive bench,archive_public_kiosk,Ari,day41-slot7,2,1,False,True,0,normal clearance
+815,41,15,signal yard,dusk_signal_court,Fay,day41-slot7,2,2,False,True,0,normal clearance
+816,41,16,warm workshop,greenhouse_heat_loop,Milo,day41-slot8,2,1,False,True,0,normal clearance
+817,41,17,wood bay,flood_bridge_market_route,Milo,day41-slot8,2,1,False,True,0,normal clearance
+818,41,18,archive bench,archive_public_kiosk,Ari,day41-slot9,2,2,False,True,0,normal clearance
+819,41,19,signal yard,dusk_signal_court,Fay,day41-slot9,2,2,False,True,0,normal clearance
+820,42,0,warm workshop,greenhouse_heat_loop,Fay,day42-slot0,2,2,False,True,0,normal clearance
+821,42,1,wood bay,flood_bridge_market_route,Nia,day42-slot0,2,2,False,True,0,normal clearance
+822,42,2,archive bench,archive_public_kiosk,Fay,day42-slot1,2,2,False,True,0,normal clearance
+823,42,3,signal yard,dusk_signal_court,Ari,day42-slot1,2,2,False,True,0,normal clearance
+824,42,4,warm workshop,greenhouse_heat_loop,Fay,day42-slot2,2,1,False,True,0,normal clearance
+825,42,5,wood bay,flood_bridge_market_route,Nia,day42-slot2,2,2,False,True,0,normal clearance
+826,42,6,archive bench,archive_public_kiosk,Fay,day42-slot3,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+827,42,7,signal yard,dusk_signal_court,Ari,day42-slot3,2,1,False,True,0,normal clearance
+828,42,8,warm workshop,greenhouse_heat_loop,Fay,day42-slot4,2,2,False,True,0,normal clearance
+829,42,9,wood bay,flood_bridge_market_route,Nia,day42-slot4,2,1,False,True,0,normal clearance
+830,42,10,archive bench,archive_public_kiosk,Fay,day42-slot5,2,3,True,True,0,queue noisy work; protect rest and tool clearance
+831,42,11,signal yard,dusk_signal_court,Ari,day42-slot5,2,2,False,True,0,normal clearance
+832,42,12,warm workshop,greenhouse_heat_loop,Fay,day42-slot6,2,2,False,True,0,normal clearance
+833,42,13,wood bay,flood_bridge_market_route,Nia,day42-slot6,2,2,False,True,0,normal clearance
+834,42,14,archive bench,archive_public_kiosk,Fay,day42-slot7,2,2,False,True,0,normal clearance
+835,42,15,signal yard,dusk_signal_court,Ari,day42-slot7,2,2,False,True,0,normal clearance
+836,42,16,warm workshop,greenhouse_heat_loop,Fay,day42-slot8,2,1,False,True,0,normal clearance
+837,42,17,wood bay,flood_bridge_market_route,Nia,day42-slot8,2,2,False,True,0,normal clearance
+838,42,18,archive bench,archive_public_kiosk,Fay,day42-slot9,2,3,True,False,1,queue noisy work; protect rest and tool clearance
+839,42,19,signal yard,dusk_signal_court,Ari,day42-slot9,2,1,False,True,0,normal clearance

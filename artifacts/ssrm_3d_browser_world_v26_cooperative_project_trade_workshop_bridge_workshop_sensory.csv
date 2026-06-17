@@ -1,0 +1,841 @@
+tick_id,day,project_id,workshop_id,sight_cue,sound_cue,smell_cue,temperature_cue,body_cue,rhythm_marker,sensory_bound_to_workshop
+0,1,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,flower-node,True
+1,1,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+2,1,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+3,1,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+4,1,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,pulse,True
+5,1,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+6,1,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+7,1,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+8,1,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,pulse,True
+9,1,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+10,1,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+11,1,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+12,1,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,pulse,True
+13,1,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+14,1,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+15,1,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+16,1,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,pulse,True
+17,1,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+18,1,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+19,1,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,ambient-rate,True
+20,2,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+21,2,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+22,2,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+23,2,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+24,2,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+25,2,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+26,2,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+27,2,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+28,2,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+29,2,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+30,2,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+31,2,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+32,2,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+33,2,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+34,2,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+35,2,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+36,2,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+37,2,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+38,2,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+39,2,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,ambient-rate,True
+40,3,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+41,3,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+42,3,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+43,3,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+44,3,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+45,3,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+46,3,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+47,3,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+48,3,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+49,3,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+50,3,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+51,3,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+52,3,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+53,3,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+54,3,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+55,3,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+56,3,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+57,3,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+58,3,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+59,3,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,ambient-rate,True
+60,4,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+61,4,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+62,4,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+63,4,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+64,4,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+65,4,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+66,4,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+67,4,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+68,4,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+69,4,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+70,4,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+71,4,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+72,4,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+73,4,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+74,4,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+75,4,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+76,4,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+77,4,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+78,4,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+79,4,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,ambient-rate,True
+80,5,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+81,5,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+82,5,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+83,5,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+84,5,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+85,5,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+86,5,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+87,5,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+88,5,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+89,5,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+90,5,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+91,5,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+92,5,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+93,5,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+94,5,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+95,5,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+96,5,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+97,5,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+98,5,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+99,5,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,ambient-rate,True
+100,6,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+101,6,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+102,6,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+103,6,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,pulse,True
+104,6,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+105,6,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+106,6,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+107,6,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,pulse,True
+108,6,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+109,6,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+110,6,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+111,6,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,pulse,True
+112,6,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+113,6,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+114,6,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+115,6,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,flower-node,True
+116,6,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+117,6,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+118,6,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+119,6,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,ambient-rate,True
+120,7,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+121,7,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+122,7,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+123,7,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+124,7,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+125,7,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+126,7,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+127,7,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+128,7,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+129,7,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+130,7,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+131,7,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+132,7,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+133,7,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+134,7,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+135,7,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+136,7,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+137,7,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+138,7,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+139,7,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,ambient-rate,True
+140,8,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+141,8,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+142,8,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+143,8,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+144,8,flood_bridge_market_route,wood bay,queued benches,hammer overlap,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+145,8,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+146,8,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+147,8,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+148,8,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+149,8,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+150,8,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+151,8,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+152,8,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+153,8,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+154,8,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+155,8,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+156,8,flood_bridge_market_route,wood bay,queued benches,hammer overlap,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+157,8,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+158,8,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+159,8,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,ambient-rate,True
+160,9,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+161,9,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+162,9,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+163,9,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+164,9,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+165,9,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+166,9,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+167,9,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+168,9,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+169,9,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+170,9,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+171,9,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+172,9,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+173,9,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+174,9,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+175,9,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+176,9,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+177,9,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+178,9,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+179,9,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,ambient-rate,True
+180,10,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+181,10,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+182,10,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+183,10,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+184,10,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+185,10,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+186,10,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+187,10,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+188,10,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+189,10,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+190,10,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+191,10,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+192,10,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+193,10,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+194,10,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+195,10,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+196,10,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+197,10,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+198,10,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+199,10,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,ambient-rate,True
+200,11,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+201,11,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+202,11,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+203,11,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+204,11,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+205,11,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+206,11,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+207,11,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+208,11,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+209,11,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+210,11,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+211,11,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+212,11,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+213,11,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+214,11,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+215,11,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+216,11,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+217,11,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+218,11,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+219,11,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,ambient-rate,True
+220,12,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+221,12,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+222,12,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+223,12,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+224,12,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+225,12,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+226,12,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+227,12,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+228,12,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+229,12,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+230,12,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+231,12,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+232,12,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+233,12,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+234,12,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+235,12,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+236,12,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+237,12,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+238,12,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+239,12,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+240,13,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+241,13,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+242,13,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+243,13,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+244,13,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+245,13,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+246,13,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+247,13,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+248,13,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+249,13,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+250,13,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+251,13,flood_bridge_market_route,wood bay,queued benches,hammer overlap,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+252,13,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+253,13,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+254,13,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+255,13,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+256,13,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+257,13,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+258,13,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+259,13,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,ambient-rate,True
+260,14,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+261,14,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+262,14,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+263,14,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+264,14,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+265,14,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+266,14,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+267,14,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+268,14,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+269,14,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+270,14,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+271,14,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+272,14,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+273,14,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+274,14,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+275,14,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+276,14,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+277,14,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+278,14,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+279,14,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,ambient-rate,True
+280,15,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+281,15,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+282,15,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+283,15,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+284,15,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+285,15,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+286,15,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+287,15,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+288,15,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+289,15,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+290,15,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+291,15,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+292,15,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+293,15,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+294,15,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+295,15,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+296,15,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+297,15,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+298,15,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+299,15,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+300,16,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+301,16,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+302,16,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+303,16,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+304,16,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+305,16,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+306,16,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+307,16,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+308,16,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+309,16,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+310,16,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+311,16,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+312,16,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+313,16,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+314,16,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+315,16,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+316,16,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+317,16,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+318,16,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+319,16,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+320,17,dusk_signal_court,signal yard,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,flower-node,True
+321,17,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+322,17,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+323,17,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+324,17,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+325,17,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+326,17,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+327,17,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+328,17,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+329,17,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+330,17,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+331,17,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+332,17,dusk_signal_court,signal yard,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,pulse,True
+333,17,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+334,17,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+335,17,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+336,17,dusk_signal_court,signal yard,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,pulse,True
+337,17,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+338,17,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+339,17,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+340,18,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+341,18,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+342,18,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+343,18,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+344,18,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+345,18,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+346,18,flood_bridge_market_route,wood bay,queued benches,hammer overlap,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+347,18,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+348,18,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+349,18,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+350,18,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+351,18,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+352,18,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+353,18,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+354,18,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+355,18,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+356,18,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+357,18,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+358,18,flood_bridge_market_route,wood bay,queued benches,hammer overlap,resin and warm copper,cool draft,shared carrying effort,pulse,True
+359,18,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+360,19,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+361,19,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+362,19,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+363,19,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+364,19,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+365,19,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+366,19,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+367,19,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+368,19,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+369,19,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+370,19,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+371,19,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+372,19,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+373,19,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+374,19,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+375,19,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+376,19,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+377,19,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+378,19,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+379,19,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+380,20,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+381,20,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+382,20,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+383,20,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+384,20,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+385,20,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+386,20,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+387,20,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+388,20,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+389,20,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+390,20,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+391,20,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+392,20,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+393,20,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+394,20,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+395,20,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+396,20,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+397,20,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+398,20,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+399,20,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,ambient-rate,True
+400,21,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+401,21,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+402,21,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+403,21,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+404,21,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+405,21,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+406,21,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+407,21,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+408,21,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+409,21,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+410,21,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+411,21,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+412,21,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+413,21,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+414,21,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+415,21,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+416,21,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+417,21,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+418,21,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+419,21,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,ambient-rate,True
+420,22,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+421,22,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+422,22,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+423,22,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+424,22,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+425,22,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+426,22,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+427,22,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+428,22,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+429,22,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+430,22,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+431,22,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+432,22,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+433,22,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+434,22,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+435,22,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+436,22,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+437,22,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+438,22,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+439,22,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,ambient-rate,True
+440,23,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+441,23,flood_bridge_market_route,wood bay,queued benches,hammer overlap,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+442,23,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+443,23,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+444,23,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+445,23,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+446,23,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+447,23,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+448,23,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+449,23,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+450,23,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+451,23,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+452,23,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+453,23,flood_bridge_market_route,wood bay,queued benches,hammer overlap,resin and warm copper,cool draft,shared carrying effort,pulse,True
+454,23,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+455,23,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+456,23,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+457,23,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+458,23,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+459,23,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,ambient-rate,True
+460,24,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+461,24,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+462,24,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+463,24,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+464,24,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+465,24,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+466,24,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+467,24,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+468,24,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+469,24,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+470,24,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+471,24,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+472,24,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+473,24,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+474,24,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+475,24,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+476,24,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+477,24,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+478,24,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+479,24,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,ambient-rate,True
+480,25,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+481,25,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+482,25,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+483,25,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+484,25,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+485,25,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+486,25,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+487,25,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+488,25,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+489,25,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+490,25,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+491,25,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+492,25,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+493,25,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+494,25,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+495,25,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+496,25,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+497,25,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+498,25,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+499,25,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,ambient-rate,True
+500,26,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+501,26,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+502,26,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+503,26,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+504,26,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+505,26,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+506,26,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+507,26,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+508,26,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+509,26,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+510,26,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+511,26,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+512,26,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+513,26,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+514,26,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+515,26,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+516,26,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+517,26,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+518,26,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+519,26,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,ambient-rate,True
+520,27,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+521,27,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+522,27,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+523,27,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+524,27,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+525,27,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+526,27,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+527,27,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+528,27,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+529,27,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+530,27,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+531,27,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+532,27,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+533,27,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+534,27,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+535,27,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+536,27,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+537,27,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+538,27,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+539,27,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,ambient-rate,True
+540,28,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+541,28,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+542,28,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+543,28,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+544,28,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+545,28,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+546,28,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+547,28,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+548,28,flood_bridge_market_route,wood bay,queued benches,hammer overlap,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+549,28,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+550,28,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+551,28,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+552,28,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+553,28,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+554,28,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+555,28,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+556,28,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+557,28,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+558,28,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+559,28,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,ambient-rate,True
+560,29,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+561,29,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+562,29,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+563,29,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+564,29,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+565,29,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+566,29,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+567,29,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+568,29,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+569,29,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+570,29,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+571,29,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+572,29,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+573,29,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+574,29,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+575,29,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+576,29,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+577,29,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+578,29,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+579,29,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,ambient-rate,True
+580,30,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+581,30,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+582,30,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+583,30,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+584,30,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+585,30,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+586,30,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+587,30,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+588,30,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+589,30,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+590,30,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+591,30,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+592,30,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+593,30,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+594,30,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+595,30,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+596,30,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+597,30,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+598,30,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+599,30,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+600,31,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+601,31,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+602,31,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+603,31,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+604,31,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+605,31,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+606,31,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+607,31,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+608,31,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+609,31,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+610,31,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+611,31,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,pulse,True
+612,31,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+613,31,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+614,31,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+615,31,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+616,31,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+617,31,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+618,31,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+619,31,flood_bridge_market_route,wood bay,open bench,quiet waiting,resin and warm copper,cool draft,slower cooperative posture,ambient-rate,True
+620,32,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+621,32,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+622,32,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+623,32,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+624,32,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+625,32,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+626,32,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+627,32,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+628,32,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+629,32,dusk_signal_court,signal yard,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,pulse,True
+630,32,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+631,32,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+632,32,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+633,32,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+634,32,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+635,32,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+636,32,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+637,32,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+638,32,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+639,32,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+640,33,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+641,33,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+642,33,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+643,33,flood_bridge_market_route,wood bay,queued benches,hammer overlap,resin and warm copper,cool draft,shared carrying effort,pulse,True
+644,33,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+645,33,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+646,33,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+647,33,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+648,33,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+649,33,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+650,33,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+651,33,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+652,33,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+653,33,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+654,33,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+655,33,flood_bridge_market_route,wood bay,queued benches,hammer overlap,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+656,33,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+657,33,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+658,33,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+659,33,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,ambient-rate,True
+660,34,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+661,34,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+662,34,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+663,34,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+664,34,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+665,34,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+666,34,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+667,34,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+668,34,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+669,34,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+670,34,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+671,34,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+672,34,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+673,34,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+674,34,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+675,34,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+676,34,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+677,34,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+678,34,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+679,34,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+680,35,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+681,35,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+682,35,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+683,35,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+684,35,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+685,35,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+686,35,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+687,35,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+688,35,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+689,35,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+690,35,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+691,35,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+692,35,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+693,35,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+694,35,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+695,35,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+696,35,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+697,35,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+698,35,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+699,35,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+700,36,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+701,36,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+702,36,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+703,36,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+704,36,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+705,36,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+706,36,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+707,36,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+708,36,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+709,36,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+710,36,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,flower-node,True
+711,36,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+712,36,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+713,36,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+714,36,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+715,36,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+716,36,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+717,36,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+718,36,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+719,36,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+720,37,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+721,37,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+722,37,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+723,37,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+724,37,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+725,37,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+726,37,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+727,37,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+728,37,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+729,37,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+730,37,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+731,37,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+732,37,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+733,37,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+734,37,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+735,37,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+736,37,dusk_signal_court,signal yard,open bench,quiet waiting,resin and warm copper,warm pulse,slower cooperative posture,pulse,True
+737,37,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+738,37,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+739,37,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+740,38,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+741,38,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+742,38,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+743,38,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+744,38,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+745,38,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+746,38,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+747,38,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+748,38,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+749,38,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+750,38,flood_bridge_market_route,wood bay,queued benches,hammer overlap,resin and warm copper,cool draft,slower cooperative posture,flower-node,True
+751,38,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+752,38,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+753,38,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+754,38,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+755,38,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+756,38,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+757,38,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+758,38,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+759,38,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,ambient-rate,True
+760,39,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+761,39,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+762,39,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+763,39,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+764,39,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+765,39,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+766,39,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+767,39,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+768,39,dusk_signal_court,signal yard,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+769,39,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+770,39,flood_bridge_market_route,wood bay,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+771,39,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+772,39,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+773,39,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+774,39,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+775,39,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+776,39,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+777,39,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+778,39,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+779,39,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,ambient-rate,True
+780,40,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+781,40,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+782,40,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+783,40,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+784,40,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+785,40,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+786,40,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+787,40,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+788,40,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+789,40,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+790,40,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,flower-node,True
+791,40,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+792,40,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+793,40,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+794,40,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+795,40,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+796,40,greenhouse_heat_loop,warm workshop,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+797,40,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+798,40,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+799,40,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,ambient-rate,True
+800,41,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+801,41,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+802,41,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+803,41,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+804,41,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+805,41,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,flower-node,True
+806,41,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+807,41,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+808,41,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+809,41,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+810,41,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+811,41,dusk_signal_court,signal yard,queued benches,hammer overlap,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+812,41,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+813,41,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+814,41,archive_public_kiosk,archive bench,open bench,quiet waiting,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+815,41,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,flower-node,True
+816,41,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+817,41,flood_bridge_market_route,wood bay,open bench,single tool rhythm,resin and warm copper,cool draft,shared carrying effort,pulse,True
+818,41,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+819,41,dusk_signal_court,signal yard,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,ambient-rate,True
+820,42,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,flower-node,True
+821,42,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+822,42,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+823,42,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+824,42,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+825,42,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+826,42,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+827,42,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+828,42,greenhouse_heat_loop,warm workshop,open bench,quiet waiting,paper dust and damp wood,warm pulse,slower cooperative posture,pulse,True
+829,42,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+830,42,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,shared carrying effort,flower-node,True
+831,42,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,pulse,True
+832,42,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+833,42,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+834,42,archive_public_kiosk,archive bench,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+835,42,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,flower-node,True
+836,42,greenhouse_heat_loop,warm workshop,open bench,single tool rhythm,paper dust and damp wood,warm pulse,shared carrying effort,pulse,True
+837,42,flood_bridge_market_route,wood bay,open bench,single tool rhythm,paper dust and damp wood,cool draft,shared carrying effort,pulse,True
+838,42,archive_public_kiosk,archive bench,queued benches,hammer overlap,paper dust and damp wood,cool draft,slower cooperative posture,pulse,True
+839,42,dusk_signal_court,signal yard,open bench,single tool rhythm,resin and warm copper,warm pulse,shared carrying effort,ambient-rate,True

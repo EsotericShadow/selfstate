@@ -1,0 +1,841 @@
+tick_id,day,agent,project_id,initiative_kind,message,tied_to_subproject,tied_to_debt,tied_to_conflict,tied_to_outcome,player_visible
+0,1,Milo,greenhouse_heat_loop,renegotiate_blocked_subproject,Milo: I can do coil_pipe after delegate asks for clearer terms.,True,False,False,False,True
+1,1,Milo,flood_bridge_market_route,none,none,True,False,False,False,False
+2,1,Ari,archive_public_kiosk,renegotiate_blocked_subproject,Ari: I can do build_frame after dependency not ready.,True,False,False,False,True
+3,1,Fay,dusk_signal_court,none,none,True,False,False,False,False
+4,1,Milo,greenhouse_heat_loop,renegotiate_blocked_subproject,Milo: I can do coil_pipe after dependency not ready.,True,False,False,False,True
+5,1,Milo,flood_bridge_market_route,none,none,True,False,False,False,False
+6,1,Ari,archive_public_kiosk,renegotiate_blocked_subproject,Ari: I can do build_frame after dependency not ready.,True,False,False,False,True
+7,1,Fay,dusk_signal_court,none,none,True,False,False,False,False
+8,1,Milo,greenhouse_heat_loop,renegotiate_blocked_subproject,Milo: I can do coil_pipe after dependency not ready.,True,False,False,False,True
+9,1,Milo,flood_bridge_market_route,none,none,True,False,False,False,False
+10,1,Ari,archive_public_kiosk,renegotiate_blocked_subproject,Ari: I can do build_frame after dependency not ready.,True,False,False,False,True
+11,1,Fay,dusk_signal_court,none,none,True,False,False,False,False
+12,1,Milo,greenhouse_heat_loop,renegotiate_blocked_subproject,Milo: I can do coil_pipe after dependency not ready.,True,False,False,False,True
+13,1,Milo,flood_bridge_market_route,none,none,True,False,False,False,False
+14,1,Ari,archive_public_kiosk,renegotiate_blocked_subproject,Ari: I can do build_frame after dependency not ready.,True,False,False,False,True
+15,1,Fay,dusk_signal_court,none,none,True,False,False,False,False
+16,1,Milo,greenhouse_heat_loop,renegotiate_blocked_subproject,Milo: I can do coil_pipe after dependency not ready.,True,False,False,False,True
+17,1,Milo,flood_bridge_market_route,none,none,True,False,False,False,False
+18,1,Ari,archive_public_kiosk,renegotiate_blocked_subproject,Ari: I can do build_frame after dependency not ready.,True,False,False,False,True
+19,1,Fay,dusk_signal_court,none,none,True,False,False,False,False
+20,2,Fay,greenhouse_heat_loop,renegotiate_blocked_subproject,Fay: I can do plant_bed after delegate asks for clearer terms.,True,False,False,False,True
+21,2,Nia,flood_bridge_market_route,none,none,True,False,False,False,False
+22,2,Fay,archive_public_kiosk,renegotiate_blocked_subproject,Fay: I can do weather_copy after dependency not ready.,True,False,False,False,True
+23,2,Ari,dusk_signal_court,none,none,True,False,False,False,False
+24,2,Fay,greenhouse_heat_loop,none,none,True,False,False,False,False
+25,2,Nia,flood_bridge_market_route,none,none,True,False,False,False,False
+26,2,Fay,archive_public_kiosk,renegotiate_blocked_subproject,Fay: I can do weather_copy after dependency not ready.,True,False,False,False,True
+27,2,Ari,dusk_signal_court,subproject_progress_notice,Ari: stake_posts moved forward for Dusk signal court.,True,False,False,False,True
+28,2,Fay,greenhouse_heat_loop,none,none,True,False,False,False,False
+29,2,Nia,flood_bridge_market_route,none,none,True,False,False,False,False
+30,2,Fay,archive_public_kiosk,renegotiate_blocked_subproject,Fay: I can do weather_copy after dependency not ready.,True,False,False,False,True
+31,2,Ari,dusk_signal_court,none,none,True,False,False,False,False
+32,2,Fay,greenhouse_heat_loop,none,none,True,False,False,False,False
+33,2,Nia,flood_bridge_market_route,none,none,True,False,False,False,False
+34,2,Fay,archive_public_kiosk,renegotiate_blocked_subproject,Fay: I can do weather_copy after dependency not ready.,True,False,False,False,True
+35,2,Ari,dusk_signal_court,none,none,True,False,False,False,False
+36,2,Fay,greenhouse_heat_loop,subproject_progress_notice,Fay: plant_bed moved forward for Greenhouse heat loop.,True,False,False,False,True
+37,2,Nia,flood_bridge_market_route,none,none,True,False,False,False,False
+38,2,Fay,archive_public_kiosk,renegotiate_blocked_subproject,Fay: I can do weather_copy after dependency not ready.,True,False,False,False,True
+39,2,Ari,dusk_signal_court,none,none,True,False,False,False,False
+40,3,Nia,greenhouse_heat_loop,renegotiate_blocked_subproject,Nia: I can do index_care after dependency not ready.,True,False,False,False,True
+41,3,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+42,3,Milo,archive_public_kiosk,renegotiate_blocked_subproject,Milo: I can do lamp_mount after dependency not ready.,True,False,False,False,True
+43,3,Milo,dusk_signal_court,none,none,True,False,False,False,False
+44,3,Nia,greenhouse_heat_loop,renegotiate_blocked_subproject,Nia: I can do index_care after dependency not ready.,True,False,False,False,True
+45,3,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+46,3,Milo,archive_public_kiosk,renegotiate_blocked_subproject,Milo: I can do lamp_mount after dependency not ready.,True,False,False,False,True
+47,3,Milo,dusk_signal_court,none,none,True,False,False,False,False
+48,3,Nia,greenhouse_heat_loop,renegotiate_blocked_subproject,Nia: I can do index_care after dependency not ready.,True,False,False,False,True
+49,3,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+50,3,Milo,archive_public_kiosk,renegotiate_blocked_subproject,Milo: I can do lamp_mount after dependency not ready.,True,False,False,False,True
+51,3,Milo,dusk_signal_court,none,none,True,False,False,False,False
+52,3,Nia,greenhouse_heat_loop,renegotiate_blocked_subproject,Nia: I can do index_care after dependency not ready.,True,False,False,False,True
+53,3,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+54,3,Milo,archive_public_kiosk,renegotiate_blocked_subproject,Milo: I can do lamp_mount after dependency not ready.,True,False,False,False,True
+55,3,Milo,dusk_signal_court,none,none,True,False,False,False,False
+56,3,Nia,greenhouse_heat_loop,renegotiate_blocked_subproject,Nia: I can do index_care after dependency not ready.,True,False,False,False,True
+57,3,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+58,3,Milo,archive_public_kiosk,renegotiate_blocked_subproject,Milo: I can do lamp_mount after dependency not ready.,True,False,False,False,True
+59,3,Milo,dusk_signal_court,none,none,True,False,False,False,False
+60,4,Ari,greenhouse_heat_loop,none,none,True,False,False,False,False
+61,4,Fay,flood_bridge_market_route,none,none,True,False,True,False,False
+62,4,Nia,archive_public_kiosk,none,none,True,False,True,False,False
+63,4,Nia,dusk_signal_court,none,none,True,False,False,False,False
+64,4,Ari,greenhouse_heat_loop,none,none,True,False,True,False,False
+65,4,Fay,flood_bridge_market_route,none,none,True,False,False,False,False
+66,4,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and dusk_signal_court.,True,True,True,False,True
+67,4,Nia,dusk_signal_court,none,none,True,False,True,False,False
+68,4,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+69,4,Fay,flood_bridge_market_route,material_priority_request,Fay: rope is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+70,4,Nia,archive_public_kiosk,renegotiate_blocked_subproject,Nia: I can do sort_index after delegate asks for clearer terms.,True,False,False,False,True
+71,4,Nia,dusk_signal_court,none,none,True,True,True,False,False
+72,4,Ari,greenhouse_heat_loop,subproject_progress_notice,Ari: fit_glass moved forward for Greenhouse heat loop.,True,False,False,False,True
+73,4,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+74,4,Nia,archive_public_kiosk,renegotiate_blocked_subproject,Nia: I can do sort_index after delegate asks for clearer terms.,True,False,True,False,True
+75,4,Nia,dusk_signal_court,none,none,True,False,False,False,False
+76,4,Ari,greenhouse_heat_loop,renegotiate_blocked_subproject,Ari: I can do fit_glass after material priority lost.,True,True,True,False,True
+77,4,Fay,flood_bridge_market_route,none,none,True,False,False,False,False
+78,4,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and dusk_signal_court.,True,True,True,False,True
+79,4,Nia,dusk_signal_court,none,none,True,True,True,False,False
+80,5,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,False,True,False,True
+81,5,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and greenhouse_heat_loop.,True,False,True,False,True
+82,5,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,False,False,False,True
+83,5,Ari,greenhouse_heat_loop,none,none,True,False,True,False,False
+84,5,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,False,False,False,True
+85,5,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+86,5,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,False,True,False,True
+87,5,Ari,greenhouse_heat_loop,none,none,True,False,True,False,False
+88,5,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+89,5,Nia,archive_public_kiosk,none,none,True,False,False,False,False
+90,5,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,True,False,True
+91,5,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+92,5,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+93,5,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+94,5,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,False,False,False,True
+95,5,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+96,5,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,False,False,True
+97,5,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+98,5,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,True,False,True
+99,5,Ari,greenhouse_heat_loop,material_priority_request,Ari: glass is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+100,6,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,False,True,False,True
+101,6,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+102,6,Fay,dusk_signal_court,renegotiate_blocked_subproject,Fay: I can do comfort_corner after dependency not ready.,True,False,False,False,True
+103,6,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+104,6,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,False,False,False,True
+105,6,Ari,archive_public_kiosk,material_priority_request,Ari: ink is contested between archive_public_kiosk and dusk_signal_court.,True,False,True,False,True
+106,6,Fay,dusk_signal_court,renegotiate_blocked_subproject,Fay: I can do comfort_corner after dependency not ready.,True,False,False,False,True
+107,6,Milo,greenhouse_heat_loop,none,none,True,False,True,False,False
+108,6,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,False,False,False,True
+109,6,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+110,6,Fay,dusk_signal_court,renegotiate_blocked_subproject,Fay: I can do comfort_corner after dependency not ready.,True,False,True,False,True
+111,6,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+112,6,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,False,True,False,True
+113,6,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+114,6,Fay,dusk_signal_court,renegotiate_blocked_subproject,Fay: I can do comfort_corner after dependency not ready.,True,False,False,False,True
+115,6,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+116,6,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,False,False,False,True
+117,6,Ari,archive_public_kiosk,material_priority_request,Ari: ink is contested between archive_public_kiosk and dusk_signal_court.,True,False,True,False,True
+118,6,Fay,dusk_signal_court,renegotiate_blocked_subproject,Fay: I can do comfort_corner after dependency not ready.,True,False,False,False,True
+119,6,Milo,greenhouse_heat_loop,none,none,True,False,True,False,False
+120,7,Nia,flood_bridge_market_route,material_priority_request,Nia: planks is contested between flood_bridge_market_route and dusk_signal_court.,True,False,True,False,True
+121,7,Fay,archive_public_kiosk,none,none,True,False,False,False,False
+122,7,Ari,dusk_signal_court,none,none,True,False,True,False,False
+123,7,Fay,greenhouse_heat_loop,none,none,True,False,False,False,False
+124,7,Nia,flood_bridge_market_route,renegotiate_blocked_subproject,Nia: I can do survey_piers after material priority lost.,True,False,True,False,True
+125,7,Fay,archive_public_kiosk,none,none,True,False,True,False,False
+126,7,Ari,dusk_signal_court,subproject_progress_notice,Ari: stake_posts moved forward for Dusk signal court.,True,False,False,False,True
+127,7,Fay,greenhouse_heat_loop,none,none,True,False,True,False,False
+128,7,Nia,flood_bridge_market_route,none,none,True,False,False,False,False
+129,7,Fay,archive_public_kiosk,material_priority_request,Fay: thread is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+130,7,Ari,dusk_signal_court,none,none,True,True,True,False,False
+131,7,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+132,7,Nia,flood_bridge_market_route,renegotiate_blocked_subproject,Nia: I can do survey_piers after material priority lost.,True,True,True,False,True
+133,7,Fay,archive_public_kiosk,none,none,True,False,False,False,False
+134,7,Ari,dusk_signal_court,debt_repair_notice,Fay settles part of the oil debt with Ari.,True,True,True,False,True
+135,7,Fay,greenhouse_heat_loop,none,none,True,False,False,False,False
+136,7,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+137,7,Fay,archive_public_kiosk,none,none,True,False,True,False,False
+138,7,Ari,dusk_signal_court,none,none,True,False,False,False,False
+139,7,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+140,8,Ari,flood_bridge_market_route,renegotiate_blocked_subproject,Ari: I can do cut_planks after delegate asks for clearer terms.,True,False,False,False,True
+141,8,Milo,archive_public_kiosk,none,none,True,False,False,False,False
+142,8,Milo,dusk_signal_court,renegotiate_blocked_subproject,Milo: I can do string_wire after dependency not ready.,True,False,True,False,True
+143,8,Nia,greenhouse_heat_loop,none,none,True,False,False,False,False
+144,8,Ari,flood_bridge_market_route,renegotiate_blocked_subproject,Ari: I can do cut_planks after dependency not ready.,True,False,True,False,True
+145,8,Milo,archive_public_kiosk,none,none,True,False,False,False,False
+146,8,Milo,dusk_signal_court,renegotiate_blocked_subproject,Milo: I can do string_wire after dependency not ready.,True,False,False,False,True
+147,8,Nia,greenhouse_heat_loop,none,none,True,False,False,False,False
+148,8,Ari,flood_bridge_market_route,renegotiate_blocked_subproject,Ari: I can do cut_planks after delegate asks for clearer terms.,True,False,False,False,True
+149,8,Milo,archive_public_kiosk,none,none,True,False,True,False,False
+150,8,Milo,dusk_signal_court,renegotiate_blocked_subproject,Milo: I can do string_wire after delegate asks for clearer terms.,True,False,False,False,True
+151,8,Nia,greenhouse_heat_loop,none,none,True,False,True,False,False
+152,8,Ari,flood_bridge_market_route,renegotiate_blocked_subproject,Ari: I can do cut_planks after dependency not ready.,True,False,False,False,True
+153,8,Milo,archive_public_kiosk,none,none,True,False,False,False,False
+154,8,Milo,dusk_signal_court,renegotiate_blocked_subproject,Milo: I can do string_wire after dependency not ready.,True,False,True,False,True
+155,8,Nia,greenhouse_heat_loop,none,none,True,False,False,False,False
+156,8,Ari,flood_bridge_market_route,renegotiate_blocked_subproject,Ari: I can do cut_planks after dependency not ready.,True,False,True,False,True
+157,8,Milo,archive_public_kiosk,none,none,True,False,False,False,False
+158,8,Milo,dusk_signal_court,renegotiate_blocked_subproject,Milo: I can do string_wire after dependency not ready.,True,False,False,False,True
+159,8,Nia,greenhouse_heat_loop,none,none,True,False,False,False,False
+160,9,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,False,False,True
+161,9,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+162,9,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,True,False,True
+163,9,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+164,9,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,False,True,False,True
+165,9,Nia,archive_public_kiosk,none,none,True,False,False,False,False
+166,9,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,True,False,True
+167,9,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+168,9,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+169,9,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+170,9,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,False,False,False,True
+171,9,Ari,greenhouse_heat_loop,material_priority_request,Ari: glass is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+172,9,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,False,False,True
+173,9,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+174,9,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,True,False,True
+175,9,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+176,9,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+177,9,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+178,9,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,True,False,True
+179,9,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+180,10,Nia,archive_public_kiosk,renegotiate_blocked_subproject,Nia: I can do sort_index after delegate asks for clearer terms.,True,True,True,False,True
+181,10,Nia,dusk_signal_court,none,none,True,True,True,False,False
+182,10,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+183,10,Fay,flood_bridge_market_route,material_priority_request,Fay: rope is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+184,10,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+185,10,Nia,dusk_signal_court,none,none,True,True,True,False,False
+186,10,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+187,10,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+188,10,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+189,10,Nia,dusk_signal_court,debt_repair_notice,Nia settles part of the glass debt with Milo.,True,True,False,False,True
+190,10,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+191,10,Fay,flood_bridge_market_route,none,none,True,False,False,False,False
+192,10,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and dusk_signal_court.,True,True,True,False,True
+193,10,Nia,dusk_signal_court,none,none,True,True,True,False,False
+194,10,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+195,10,Fay,flood_bridge_market_route,material_priority_request,Fay: rope is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+196,10,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+197,10,Nia,dusk_signal_court,none,none,True,True,True,False,False
+198,10,Ari,greenhouse_heat_loop,subproject_progress_notice,Ari: fit_glass moved forward for Greenhouse heat loop.,True,True,False,False,True
+199,10,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+200,11,Ari,archive_public_kiosk,none,none,True,False,True,False,False
+201,11,Fay,dusk_signal_court,none,none,True,True,False,False,False
+202,11,Milo,greenhouse_heat_loop,none,none,True,False,True,False,False
+203,11,Milo,flood_bridge_market_route,none,none,True,False,False,False,False
+204,11,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+205,11,Fay,dusk_signal_court,none,none,True,True,True,False,False
+206,11,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+207,11,Milo,flood_bridge_market_route,material_priority_request,Milo: oil is contested between flood_bridge_market_route and dusk_signal_court.,True,False,True,False,True
+208,11,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+209,11,Fay,dusk_signal_court,none,none,True,True,False,False,False
+210,11,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+211,11,Milo,flood_bridge_market_route,none,none,True,False,False,False,False
+212,11,Ari,archive_public_kiosk,none,none,True,True,True,False,False
+213,11,Fay,dusk_signal_court,none,none,True,True,False,False,False
+214,11,Milo,greenhouse_heat_loop,none,none,True,True,True,False,False
+215,11,Milo,flood_bridge_market_route,none,none,True,False,False,False,False
+216,11,Ari,archive_public_kiosk,subproject_progress_notice,Ari: build_frame moved forward for Archive public kiosk.,True,False,False,False,True
+217,11,Fay,dusk_signal_court,none,none,True,True,True,False,False
+218,11,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+219,11,Milo,flood_bridge_market_route,material_priority_request,Milo: oil is contested between flood_bridge_market_route and dusk_signal_court.,True,True,True,False,True
+220,12,Fay,archive_public_kiosk,renegotiate_blocked_subproject,Fay: I can do weather_copy after workshop over capacity.,True,False,True,False,True
+221,12,Ari,dusk_signal_court,none,none,True,False,False,False,False
+222,12,Fay,greenhouse_heat_loop,renegotiate_blocked_subproject,Fay: I can do plant_bed after delegate asks for clearer terms.,True,False,True,False,True
+223,12,Nia,flood_bridge_market_route,none,none,True,True,False,False,False
+224,12,Fay,archive_public_kiosk,none,none,True,True,True,False,False
+225,12,Ari,dusk_signal_court,material_priority_request,Ari: oil is contested between dusk_signal_court and greenhouse_heat_loop.,True,False,True,False,True
+226,12,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+227,12,Nia,flood_bridge_market_route,none,none,True,False,True,False,False
+228,12,Fay,archive_public_kiosk,none,none,True,False,False,False,False
+229,12,Ari,dusk_signal_court,none,none,True,True,True,False,False
+230,12,Fay,greenhouse_heat_loop,renegotiate_blocked_subproject,Fay: I can do plant_bed after delegate asks for clearer terms.,True,False,False,False,True
+231,12,Nia,flood_bridge_market_route,material_priority_request,Nia: planks is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+232,12,Fay,archive_public_kiosk,renegotiate_blocked_subproject,Fay: I can do weather_copy after workshop over capacity.,True,False,True,False,True
+233,12,Ari,dusk_signal_court,none,none,True,False,False,False,False
+234,12,Fay,greenhouse_heat_loop,material_priority_request,Fay: water is contested between greenhouse_heat_loop and flood_bridge_market_route.,True,True,True,False,True
+235,12,Nia,flood_bridge_market_route,none,none,True,True,False,False,False
+236,12,Fay,archive_public_kiosk,renegotiate_blocked_subproject,Fay: I can do weather_copy after material priority lost.,True,True,True,False,True
+237,12,Ari,dusk_signal_court,material_priority_request,Ari: oil is contested between dusk_signal_court and greenhouse_heat_loop.,True,True,True,False,True
+238,12,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+239,12,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+240,13,Milo,archive_public_kiosk,renegotiate_blocked_subproject,Milo: I can do lamp_mount after dependency not ready.,True,False,False,False,True
+241,13,Milo,dusk_signal_court,none,none,True,False,False,False,False
+242,13,Nia,greenhouse_heat_loop,none,none,True,False,False,False,False
+243,13,Ari,flood_bridge_market_route,subproject_progress_notice,Ari: cut_planks moved forward for Flood bridge market route.,True,False,False,False,True
+244,13,Milo,archive_public_kiosk,renegotiate_blocked_subproject,Milo: I can do lamp_mount after dependency not ready.,True,False,True,False,True
+245,13,Milo,dusk_signal_court,none,none,True,False,False,False,False
+246,13,Nia,greenhouse_heat_loop,material_priority_request,Nia: compost is contested between greenhouse_heat_loop and archive_public_kiosk.,True,False,True,False,True
+247,13,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+248,13,Milo,archive_public_kiosk,renegotiate_blocked_subproject,Milo: I can do lamp_mount after dependency not ready.,True,False,False,False,True
+249,13,Milo,dusk_signal_court,material_priority_request,Milo: wire is contested between dusk_signal_court and flood_bridge_market_route.,True,True,True,False,True
+250,13,Nia,greenhouse_heat_loop,none,none,True,False,False,False,False
+251,13,Ari,flood_bridge_market_route,none,none,True,True,True,False,False
+252,13,Milo,archive_public_kiosk,renegotiate_blocked_subproject,Milo: I can do lamp_mount after dependency not ready.,True,False,False,False,True
+253,13,Milo,dusk_signal_court,none,none,True,True,False,False,False
+254,13,Nia,greenhouse_heat_loop,none,none,True,False,False,False,False
+255,13,Ari,flood_bridge_market_route,none,none,True,True,False,False,False
+256,13,Milo,archive_public_kiosk,renegotiate_blocked_subproject,Milo: I can do lamp_mount after dependency not ready.,True,False,True,False,True
+257,13,Milo,dusk_signal_court,debt_repair_notice,Nia settles part of the wire debt with Milo.,True,True,False,False,True
+258,13,Nia,greenhouse_heat_loop,renegotiate_blocked_subproject,Nia: I can do index_care after material priority lost.,True,False,True,False,True
+259,13,Ari,flood_bridge_market_route,debt_repair_notice,Fay settles part of the resin debt with Ari.,True,True,False,False,True
+260,14,Nia,archive_public_kiosk,renegotiate_blocked_subproject,Nia: I can do sort_index after delegate asks for clearer terms.,True,True,False,False,True
+261,14,Nia,dusk_signal_court,none,none,True,True,True,False,False
+262,14,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+263,14,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+264,14,Nia,archive_public_kiosk,renegotiate_blocked_subproject,Nia: I can do sort_index after material priority lost.,True,True,True,False,True
+265,14,Nia,dusk_signal_court,none,none,True,False,False,False,False
+266,14,Ari,greenhouse_heat_loop,renegotiate_blocked_subproject,Ari: I can do fit_glass after material priority lost.,True,True,True,False,True
+267,14,Fay,flood_bridge_market_route,debt_repair_notice,Fay settles part of the rope debt with Ari.,True,True,False,False,True
+268,14,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+269,14,Nia,dusk_signal_court,none,none,True,True,True,False,False
+270,14,Ari,greenhouse_heat_loop,renegotiate_blocked_subproject,Ari: I can do fit_glass after workshop over capacity.,True,True,True,False,True
+271,14,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+272,14,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+273,14,Nia,dusk_signal_court,material_priority_request,Nia: glass is contested between dusk_signal_court and greenhouse_heat_loop.,True,True,True,False,True
+274,14,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+275,14,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+276,14,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and dusk_signal_court.,True,True,True,False,True
+277,14,Nia,dusk_signal_court,none,none,True,True,False,False,False
+278,14,Ari,greenhouse_heat_loop,debt_repair_notice,Fay settles part of the glass debt with Ari.,True,True,True,False,True
+279,14,Fay,flood_bridge_market_route,none,none,True,True,False,False,False
+280,15,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,True,False,True
+281,15,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+282,15,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+283,15,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+284,15,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,False,False,True
+285,15,Ari,greenhouse_heat_loop,material_priority_request,Ari: glass is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+286,15,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,False,False,True
+287,15,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+288,15,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,True,False,True
+289,15,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+290,15,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+291,15,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+292,15,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,True,False,True
+293,15,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+294,15,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+295,15,Nia,archive_public_kiosk,debt_repair_notice,Nia settles part of the paper debt with Fay.,True,True,True,False,True
+296,15,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after delegate asks for clearer terms.,True,True,False,False,True
+297,15,Ari,greenhouse_heat_loop,material_priority_request,Ari: glass is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+298,15,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,False,False,False,True
+299,15,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+300,16,Fay,dusk_signal_court,renegotiate_blocked_subproject,Fay: I can do comfort_corner after workshop over capacity.,True,True,True,False,True
+301,16,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+302,16,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,True,True,False,True
+303,16,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+304,16,Fay,dusk_signal_court,none,none,True,True,False,False,False
+305,16,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+306,16,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,True,False,False,True
+307,16,Ari,archive_public_kiosk,none,none,True,True,True,False,False
+308,16,Fay,dusk_signal_court,none,none,True,True,False,False,False
+309,16,Milo,greenhouse_heat_loop,material_priority_request,Milo: copper is contested between greenhouse_heat_loop and flood_bridge_market_route.,True,True,True,False,True
+310,16,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,True,False,False,True
+311,16,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+312,16,Fay,dusk_signal_court,renegotiate_blocked_subproject,Fay: I can do comfort_corner after workshop over capacity.,True,True,True,False,True
+313,16,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+314,16,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,True,True,False,True
+315,16,Ari,archive_public_kiosk,subproject_progress_notice,Ari: build_frame moved forward for Archive public kiosk.,True,False,False,False,True
+316,16,Fay,dusk_signal_court,debt_repair_notice,Fay settles part of the rope debt with Milo.,True,True,False,False,True
+317,16,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+318,16,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,True,False,False,True
+319,16,Ari,archive_public_kiosk,none,none,True,True,True,False,False
+320,17,Ari,dusk_signal_court,renegotiate_blocked_subproject,Ari: I can do stake_posts after material priority lost.,True,False,True,False,True
+321,17,Fay,greenhouse_heat_loop,material_priority_request,Fay: water is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+322,17,Nia,flood_bridge_market_route,debt_repair_notice,Nia settles part of the planks debt with Milo.,True,True,True,False,True
+323,17,Fay,archive_public_kiosk,none,none,True,True,False,False,False
+324,17,Ari,dusk_signal_court,material_priority_request,Ari: oil is contested between dusk_signal_court and flood_bridge_market_route.,True,True,True,False,True
+325,17,Fay,greenhouse_heat_loop,none,none,True,False,False,False,False
+326,17,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+327,17,Fay,archive_public_kiosk,material_priority_request,Fay: thread is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+328,17,Ari,dusk_signal_court,none,none,True,False,False,False,False
+329,17,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+330,17,Nia,flood_bridge_market_route,none,none,True,True,False,False,False
+331,17,Fay,archive_public_kiosk,none,none,True,True,True,False,False
+332,17,Ari,dusk_signal_court,renegotiate_blocked_subproject,Ari: I can do stake_posts after material priority lost.,True,True,True,False,True
+333,17,Fay,greenhouse_heat_loop,material_priority_request,Fay: water is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+334,17,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+335,17,Fay,archive_public_kiosk,debt_repair_notice,Fay settles part of the thread debt with Nia.,True,True,False,False,True
+336,17,Ari,dusk_signal_court,renegotiate_blocked_subproject,Ari: I can do stake_posts after material priority lost.,True,True,True,False,True
+337,17,Fay,greenhouse_heat_loop,routine_change_notice,Fay: morning greenhouse tending replaces one cold-route gather.,True,False,False,True,True
+338,17,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+339,17,Fay,archive_public_kiosk,material_priority_request,Fay: thread is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+340,18,Milo,dusk_signal_court,renegotiate_blocked_subproject,Milo: I can do string_wire after delegate asks for clearer terms.,True,False,False,False,True
+341,18,Nia,greenhouse_heat_loop,none,none,True,True,True,False,False
+342,18,Ari,flood_bridge_market_route,subproject_progress_notice,Ari: cut_planks moved forward for Flood bridge market route.,True,False,False,False,True
+343,18,Milo,archive_public_kiosk,none,none,True,False,False,False,False
+344,18,Milo,dusk_signal_court,renegotiate_blocked_subproject,Milo: I can do string_wire after material priority lost.,True,True,True,False,True
+345,18,Nia,greenhouse_heat_loop,none,none,True,False,False,False,False
+346,18,Ari,flood_bridge_market_route,renegotiate_blocked_subproject,Ari: I can do cut_planks after material priority lost.,True,False,True,False,True
+347,18,Milo,archive_public_kiosk,none,none,True,False,False,False,False
+348,18,Milo,dusk_signal_court,none,none,True,True,False,False,False
+349,18,Nia,greenhouse_heat_loop,none,none,True,False,False,False,False
+350,18,Ari,flood_bridge_market_route,renegotiate_blocked_subproject,Ari: I can do cut_planks after delegate asks for clearer terms.,True,False,False,False,True
+351,18,Milo,archive_public_kiosk,material_priority_request,Milo: glass is contested between archive_public_kiosk and dusk_signal_court.,True,True,True,False,True
+352,18,Milo,dusk_signal_court,none,none,True,True,False,False,False
+353,18,Nia,greenhouse_heat_loop,none,none,True,True,True,False,False
+354,18,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+355,18,Milo,archive_public_kiosk,none,none,True,True,False,False,False
+356,18,Milo,dusk_signal_court,none,none,True,True,True,False,False
+357,18,Nia,greenhouse_heat_loop,none,none,True,True,False,False,False
+358,18,Ari,flood_bridge_market_route,none,none,True,True,True,False,False
+359,18,Milo,archive_public_kiosk,none,none,True,True,False,False,False
+360,19,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,False,False,True
+361,19,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+362,19,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,False,False,False,True
+363,19,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+364,19,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,True,False,True
+365,19,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+366,19,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+367,19,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+368,19,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,True,False,True
+369,19,Ari,greenhouse_heat_loop,subproject_progress_notice,Ari: fit_glass moved forward for Greenhouse heat loop.,True,True,False,False,True
+370,19,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after delegate asks for clearer terms.,True,True,True,False,True
+371,19,Nia,archive_public_kiosk,debt_repair_notice,Nia settles part of the paper debt with Fay.,True,True,True,False,True
+372,19,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,False,False,True
+373,19,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+374,19,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,False,False,True
+375,19,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+376,19,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after dependency not ready.,True,True,True,False,True
+377,19,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+378,19,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+379,19,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+380,20,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+381,20,Fay,flood_bridge_market_route,none,none,True,True,False,False,False
+382,20,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+383,20,Nia,dusk_signal_court,none,none,True,True,True,False,False
+384,20,Ari,greenhouse_heat_loop,renegotiate_blocked_subproject,Ari: I can do fit_glass after workshop over capacity.,True,True,True,False,True
+385,20,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+386,20,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+387,20,Nia,dusk_signal_court,material_priority_request,Nia: glass is contested between dusk_signal_court and greenhouse_heat_loop.,True,True,True,False,True
+388,20,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+389,20,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+390,20,Nia,archive_public_kiosk,renegotiate_blocked_subproject,Nia: I can do sort_index after delegate asks for clearer terms.,True,True,True,False,True
+391,20,Nia,dusk_signal_court,none,none,True,True,False,False,False
+392,20,Ari,greenhouse_heat_loop,debt_repair_notice,Fay settles part of the glass debt with Ari.,True,True,True,False,True
+393,20,Fay,flood_bridge_market_route,none,none,True,True,False,False,False
+394,20,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+395,20,Nia,dusk_signal_court,none,none,True,True,True,False,False
+396,20,Ari,greenhouse_heat_loop,renegotiate_blocked_subproject,Ari: I can do fit_glass after workshop over capacity.,True,True,True,False,True
+397,20,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+398,20,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+399,20,Nia,dusk_signal_court,material_priority_request,Nia: glass is contested between dusk_signal_court and greenhouse_heat_loop.,True,True,True,False,True
+400,21,Milo,greenhouse_heat_loop,none,none,True,False,False,True,False
+401,21,Milo,flood_bridge_market_route,none,none,True,True,False,False,False
+402,21,Ari,archive_public_kiosk,material_priority_request,Ari: ink is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+403,21,Fay,dusk_signal_court,none,none,True,True,False,False,False
+404,21,Milo,greenhouse_heat_loop,none,none,True,True,True,True,False
+405,21,Milo,flood_bridge_market_route,none,none,True,True,False,False,False
+406,21,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+407,21,Fay,dusk_signal_court,none,none,True,True,True,False,False
+408,21,Milo,greenhouse_heat_loop,none,none,True,False,False,True,False
+409,21,Milo,flood_bridge_market_route,none,none,True,True,True,False,False
+410,21,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+411,21,Fay,dusk_signal_court,debt_repair_notice,Fay settles part of the rope debt with Milo.,True,True,False,False,True
+412,21,Milo,greenhouse_heat_loop,none,none,True,False,False,True,False
+413,21,Milo,flood_bridge_market_route,none,none,True,True,False,False,False
+414,21,Ari,archive_public_kiosk,material_priority_request,Ari: ink is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+415,21,Fay,dusk_signal_court,none,none,True,True,False,False,False
+416,21,Milo,greenhouse_heat_loop,none,none,True,True,True,True,False
+417,21,Milo,flood_bridge_market_route,none,none,True,True,False,False,False
+418,21,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+419,21,Fay,dusk_signal_court,none,none,True,True,True,False,False
+420,22,Fay,greenhouse_heat_loop,renegotiate_blocked_subproject,Fay: I can do plant_bed after delegate asks for clearer terms.,True,False,False,False,True
+421,22,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+422,22,Fay,archive_public_kiosk,none,none,True,True,True,False,False
+423,22,Ari,dusk_signal_court,subproject_progress_notice,Ari: stake_posts moved forward for Dusk signal court.,True,True,False,False,True
+424,22,Fay,greenhouse_heat_loop,renegotiate_blocked_subproject,Fay: I can do plant_bed after material priority lost.,True,False,True,False,True
+425,22,Nia,flood_bridge_market_route,none,none,True,True,False,False,False
+426,22,Fay,archive_public_kiosk,material_priority_request,Fay: thread is contested between archive_public_kiosk and dusk_signal_court.,True,True,True,False,True
+427,22,Ari,dusk_signal_court,none,none,True,True,True,False,False
+428,22,Fay,greenhouse_heat_loop,renegotiate_blocked_subproject,Fay: I can do plant_bed after material priority lost.,True,True,True,False,True
+429,22,Nia,flood_bridge_market_route,material_priority_request,Nia: planks is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+430,22,Fay,archive_public_kiosk,debt_repair_notice,Fay settles part of the thread debt with Nia.,True,True,False,False,True
+431,22,Ari,dusk_signal_court,debt_repair_notice,Ari settles part of the oil debt with Fay.,True,True,True,False,True
+432,22,Fay,greenhouse_heat_loop,subproject_progress_notice,Fay: plant_bed moved forward for Greenhouse heat loop.,True,True,False,False,True
+433,22,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+434,22,Fay,archive_public_kiosk,none,none,True,True,True,False,False
+435,22,Ari,dusk_signal_court,none,none,True,True,False,False,False
+436,22,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+437,22,Nia,flood_bridge_market_route,none,none,True,True,False,False,False
+438,22,Fay,archive_public_kiosk,material_priority_request,Fay: thread is contested between archive_public_kiosk and dusk_signal_court.,True,True,True,False,True
+439,22,Ari,dusk_signal_court,none,none,True,True,True,False,False
+440,23,Nia,greenhouse_heat_loop,none,none,True,True,False,False,False
+441,23,Ari,flood_bridge_market_route,material_priority_request,Ari: resin is contested between flood_bridge_market_route and dusk_signal_court.,True,True,True,False,True
+442,23,Milo,archive_public_kiosk,none,none,True,True,False,False,False
+443,23,Milo,dusk_signal_court,none,none,True,True,False,False,False
+444,23,Nia,greenhouse_heat_loop,renegotiate_blocked_subproject,Nia: I can do index_care after delegate asks for clearer terms.,True,True,False,False,True
+445,23,Ari,flood_bridge_market_route,none,none,True,True,False,False,False
+446,23,Milo,archive_public_kiosk,renegotiate_blocked_subproject,Milo: I can do lamp_mount after material priority lost.,True,True,True,False,True
+447,23,Milo,dusk_signal_court,none,none,True,True,False,False,False
+448,23,Nia,greenhouse_heat_loop,renegotiate_blocked_subproject,Nia: I can do index_care after material priority lost.,True,True,True,False,True
+449,23,Ari,flood_bridge_market_route,debt_repair_notice,Fay settles part of the resin debt with Ari.,True,True,False,False,True
+450,23,Milo,archive_public_kiosk,subproject_progress_notice,Milo: lamp_mount moved forward for Archive public kiosk.,True,True,False,False,True
+451,23,Milo,dusk_signal_court,none,none,True,False,True,False,False
+452,23,Nia,greenhouse_heat_loop,none,none,True,True,False,False,False
+453,23,Ari,flood_bridge_market_route,material_priority_request,Ari: resin is contested between flood_bridge_market_route and dusk_signal_court.,True,False,True,False,True
+454,23,Milo,archive_public_kiosk,none,none,True,True,False,False,False
+455,23,Milo,dusk_signal_court,none,none,True,True,False,False,False
+456,23,Nia,greenhouse_heat_loop,none,none,True,True,False,False,False
+457,23,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+458,23,Milo,archive_public_kiosk,none,none,True,True,True,False,False
+459,23,Milo,dusk_signal_court,subproject_progress_notice,Milo: string_wire moved forward for Dusk signal court.,True,True,False,False,True
+460,24,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+461,24,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+462,24,Nia,archive_public_kiosk,routine_change_notice,Nia: evening public index replaces repeated private archive requests.,True,True,False,True,True
+463,24,Nia,dusk_signal_court,none,none,True,True,True,False,False
+464,24,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+465,24,Fay,flood_bridge_market_route,material_priority_request,Fay: rope is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+466,24,Nia,archive_public_kiosk,debt_repair_notice,Nia settles part of the paper debt with Milo.,True,True,True,False,True
+467,24,Nia,dusk_signal_court,none,none,True,True,False,False,False
+468,24,Ari,greenhouse_heat_loop,renegotiate_blocked_subproject,Ari: I can do fit_glass after workshop over capacity.,True,True,True,False,True
+469,24,Fay,flood_bridge_market_route,none,none,True,True,False,False,False
+470,24,Nia,archive_public_kiosk,renegotiate_blocked_subproject,Nia: I can do sort_index after delegate asks for clearer terms.,True,True,True,False,True
+471,24,Nia,dusk_signal_court,material_priority_request,Nia: glass is contested between dusk_signal_court and greenhouse_heat_loop.,True,True,True,False,True
+472,24,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+473,24,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+474,24,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+475,24,Nia,dusk_signal_court,none,none,True,True,True,False,False
+476,24,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+477,24,Fay,flood_bridge_market_route,material_priority_request,Fay: rope is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+478,24,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+479,24,Nia,dusk_signal_court,none,none,True,True,False,False,False
+480,25,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+481,25,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+482,25,Nia,dusk_signal_court,none,none,True,True,True,False,False
+483,25,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+484,25,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+485,25,Nia,archive_public_kiosk,debt_repair_notice,Nia settles part of the paper debt with Fay.,True,True,True,False,True
+486,25,Nia,dusk_signal_court,subproject_progress_notice,Nia: signal_code moved forward for Dusk signal court.,True,True,False,False,True
+487,25,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+488,25,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,False,False,True
+489,25,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+490,25,Nia,dusk_signal_court,none,none,True,True,True,False,False
+491,25,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+492,25,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+493,25,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+494,25,Nia,dusk_signal_court,none,none,True,True,True,False,False
+495,25,Ari,greenhouse_heat_loop,subproject_progress_notice,Ari: fit_glass moved forward for Greenhouse heat loop.,True,True,False,False,True
+496,25,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after dependency not ready.,True,True,True,False,True
+497,25,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+498,25,Nia,dusk_signal_court,none,none,True,True,False,False,False
+499,25,Ari,greenhouse_heat_loop,debt_repair_notice,Ari settles part of the glass debt with Nia.,True,True,True,False,True
+500,26,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,True,False,False,True
+501,26,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+502,26,Fay,dusk_signal_court,none,none,True,True,True,False,False
+503,26,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+504,26,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,True,True,False,True
+505,26,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+506,26,Fay,dusk_signal_court,debt_repair_notice,Fay settles part of the rope debt with Milo.,True,True,False,False,True
+507,26,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+508,26,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,True,False,False,True
+509,26,Ari,archive_public_kiosk,none,none,True,True,True,False,False
+510,26,Fay,dusk_signal_court,none,none,True,True,False,False,False
+511,26,Milo,greenhouse_heat_loop,none,none,True,True,True,False,False
+512,26,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,True,False,False,True
+513,26,Ari,archive_public_kiosk,subproject_progress_notice,Ari: build_frame moved forward for Archive public kiosk.,True,False,False,False,True
+514,26,Fay,dusk_signal_court,none,none,True,True,True,False,False
+515,26,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+516,26,Milo,flood_bridge_market_route,renegotiate_blocked_subproject,Milo: I can do lamp_markers after dependency not ready.,True,True,True,False,True
+517,26,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+518,26,Fay,dusk_signal_court,renegotiate_blocked_subproject,Fay: I can do comfort_corner after delegate asks for clearer terms.,True,True,False,False,True
+519,26,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+520,27,Nia,flood_bridge_market_route,none,none,True,True,False,False,False
+521,27,Fay,archive_public_kiosk,none,none,True,True,True,False,False
+522,27,Ari,dusk_signal_court,subproject_progress_notice,Ari: stake_posts moved forward for Dusk signal court.,True,True,True,False,True
+523,27,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+524,27,Nia,flood_bridge_market_route,renegotiate_blocked_subproject,Nia: I can do survey_piers after material priority lost.,True,True,True,False,True
+525,27,Fay,archive_public_kiosk,none,none,True,False,False,False,False
+526,27,Ari,dusk_signal_court,none,none,True,True,True,False,False
+527,27,Fay,greenhouse_heat_loop,none,none,True,True,False,False,False
+528,27,Nia,flood_bridge_market_route,renegotiate_blocked_subproject,Nia: I can do survey_piers after material priority lost.,True,True,True,False,True
+529,27,Fay,archive_public_kiosk,none,none,True,True,True,False,False
+530,27,Ari,dusk_signal_court,none,none,True,True,False,False,False
+531,27,Fay,greenhouse_heat_loop,material_priority_request,Fay: water is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+532,27,Nia,flood_bridge_market_route,none,none,True,True,False,False,False
+533,27,Fay,archive_public_kiosk,none,none,True,True,True,False,False
+534,27,Ari,dusk_signal_court,material_priority_request,Ari: oil is contested between dusk_signal_court and flood_bridge_market_route.,True,True,True,False,True
+535,27,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+536,27,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+537,27,Fay,archive_public_kiosk,none,none,True,True,False,False,False
+538,27,Ari,dusk_signal_court,none,none,True,True,True,False,False
+539,27,Fay,greenhouse_heat_loop,none,none,True,True,False,False,False
+540,28,Ari,flood_bridge_market_route,renegotiate_blocked_subproject,Ari: I can do cut_planks after delegate asks for clearer terms.,True,False,False,False,True
+541,28,Milo,archive_public_kiosk,none,none,True,True,True,False,False
+542,28,Milo,dusk_signal_court,none,none,True,True,False,False,False
+543,28,Nia,greenhouse_heat_loop,material_priority_request,Nia: compost is contested between greenhouse_heat_loop and flood_bridge_market_route.,True,True,True,True,True
+544,28,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+545,28,Milo,archive_public_kiosk,none,none,True,True,False,False,False
+546,28,Milo,dusk_signal_court,material_priority_request,Milo: wire is contested between dusk_signal_court and greenhouse_heat_loop.,True,True,True,False,True
+547,28,Nia,greenhouse_heat_loop,none,none,True,True,False,True,False
+548,28,Ari,flood_bridge_market_route,renegotiate_blocked_subproject,Ari: I can do cut_planks after workshop over capacity.,True,True,True,False,True
+549,28,Milo,archive_public_kiosk,subproject_progress_notice,Milo: lamp_mount moved forward for Archive public kiosk.,True,True,False,False,True
+550,28,Milo,dusk_signal_court,renegotiate_blocked_subproject,Milo: I can do string_wire after delegate asks for clearer terms.,True,True,False,False,True
+551,28,Nia,greenhouse_heat_loop,none,none,True,True,False,True,False
+552,28,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+553,28,Milo,archive_public_kiosk,debt_repair_notice,Nia settles part of the glass debt with Milo.,True,True,True,False,True
+554,28,Milo,dusk_signal_court,none,none,True,True,False,False,False
+555,28,Nia,greenhouse_heat_loop,material_priority_request,Nia: compost is contested between greenhouse_heat_loop and flood_bridge_market_route.,True,True,True,True,True
+556,28,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+557,28,Milo,archive_public_kiosk,none,none,True,True,False,False,False
+558,28,Milo,dusk_signal_court,material_priority_request,Milo: wire is contested between dusk_signal_court and greenhouse_heat_loop.,True,True,True,False,True
+559,28,Nia,greenhouse_heat_loop,none,none,True,True,False,True,False
+560,29,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after material priority lost.,True,True,True,False,True
+561,29,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+562,29,Nia,dusk_signal_court,routine_change_notice,Milo: dusk patrol becomes shared signal practice twice a week.,True,True,False,True,True
+563,29,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+564,29,Fay,flood_bridge_market_route,none,none,True,True,False,False,False
+565,29,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+566,29,Nia,dusk_signal_court,none,none,True,True,True,False,False
+567,29,Ari,greenhouse_heat_loop,material_priority_request,Ari: glass is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+568,29,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+569,29,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+570,29,Nia,dusk_signal_court,material_priority_request,Nia: glass is contested between dusk_signal_court and flood_bridge_market_route.,True,True,True,False,True
+571,29,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+572,29,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+573,29,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+574,29,Nia,dusk_signal_court,none,none,True,True,False,False,False
+575,29,Ari,greenhouse_heat_loop,debt_repair_notice,Ari settles part of the glass debt with Nia.,True,True,True,False,True
+576,29,Fay,flood_bridge_market_route,subproject_progress_notice,Fay: seal_joints moved forward for Flood bridge market route.,True,True,False,False,True
+577,29,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+578,29,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after material priority lost.,True,True,True,False,True
+579,29,Ari,greenhouse_heat_loop,material_priority_request,Ari: glass is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+580,30,Nia,archive_public_kiosk,renegotiate_blocked_subproject,Nia: I can do sort_index after delegate asks for clearer terms.,True,True,True,True,True
+581,30,Nia,dusk_signal_court,none,none,True,True,False,False,False
+582,30,Ari,greenhouse_heat_loop,renegotiate_blocked_subproject,Ari: I can do fit_glass after workshop over capacity.,True,True,True,False,True
+583,30,Fay,flood_bridge_market_route,none,none,True,True,False,False,False
+584,30,Nia,archive_public_kiosk,none,none,True,True,True,True,False
+585,30,Nia,dusk_signal_court,material_priority_request,Nia: glass is contested between dusk_signal_court and greenhouse_heat_loop.,True,True,True,False,True
+586,30,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+587,30,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+588,30,Nia,archive_public_kiosk,none,none,True,True,False,True,False
+589,30,Nia,dusk_signal_court,none,none,True,True,True,False,False
+590,30,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+591,30,Fay,flood_bridge_market_route,material_priority_request,Fay: rope is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+592,30,Nia,archive_public_kiosk,renegotiate_blocked_subproject,Nia: I can do sort_index after delegate asks for clearer terms.,True,True,True,True,True
+593,30,Nia,dusk_signal_court,none,none,True,True,False,False,False
+594,30,Ari,greenhouse_heat_loop,renegotiate_blocked_subproject,Ari: I can do fit_glass after workshop over capacity.,True,True,True,False,True
+595,30,Fay,flood_bridge_market_route,none,none,True,True,False,False,False
+596,30,Nia,archive_public_kiosk,none,none,True,True,True,True,False
+597,30,Nia,dusk_signal_court,material_priority_request,Nia: glass is contested between dusk_signal_court and greenhouse_heat_loop.,True,True,True,False,True
+598,30,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+599,30,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+600,31,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+601,31,Fay,dusk_signal_court,debt_repair_notice,Fay settles part of the rope debt with Milo.,True,True,False,True,True
+602,31,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+603,31,Milo,flood_bridge_market_route,none,none,True,True,False,False,False
+604,31,Ari,archive_public_kiosk,none,none,True,True,True,False,False
+605,31,Fay,dusk_signal_court,none,none,True,True,False,True,False
+606,31,Milo,greenhouse_heat_loop,material_priority_request,Milo: copper is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+607,31,Milo,flood_bridge_market_route,none,none,True,True,False,False,False
+608,31,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+609,31,Fay,dusk_signal_court,none,none,True,True,True,True,False
+610,31,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+611,31,Milo,flood_bridge_market_route,none,none,True,True,True,False,False
+612,31,Ari,archive_public_kiosk,subproject_progress_notice,Ari: build_frame moved forward for Archive public kiosk.,True,False,False,False,True
+613,31,Fay,dusk_signal_court,none,none,True,True,False,True,False
+614,31,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+615,31,Milo,flood_bridge_market_route,none,none,True,True,False,False,False
+616,31,Ari,archive_public_kiosk,none,none,True,True,True,False,False
+617,31,Fay,dusk_signal_court,none,none,True,True,False,True,False
+618,31,Milo,greenhouse_heat_loop,material_priority_request,Milo: copper is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+619,31,Milo,flood_bridge_market_route,none,none,True,True,False,False,False
+620,32,Fay,archive_public_kiosk,debt_repair_notice,Fay settles part of the thread debt with Nia.,True,True,False,False,True
+621,32,Ari,dusk_signal_court,material_priority_request,Ari: oil is contested between dusk_signal_court and greenhouse_heat_loop.,True,True,True,False,True
+622,32,Fay,greenhouse_heat_loop,none,none,True,True,False,False,False
+623,32,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+624,32,Fay,archive_public_kiosk,material_priority_request,Fay: thread is contested between archive_public_kiosk and dusk_signal_court.,True,True,True,False,True
+625,32,Ari,dusk_signal_court,none,none,True,True,False,False,False
+626,32,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+627,32,Nia,flood_bridge_market_route,none,none,True,True,False,False,False
+628,32,Fay,archive_public_kiosk,renegotiate_blocked_subproject,Fay: I can do weather_copy after workshop over capacity.,True,True,True,False,True
+629,32,Ari,dusk_signal_court,none,none,True,True,True,False,False
+630,32,Fay,greenhouse_heat_loop,renegotiate_blocked_subproject,Fay: I can do plant_bed after delegate asks for clearer terms.,True,True,True,False,True
+631,32,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+632,32,Fay,archive_public_kiosk,none,none,True,True,False,False,False
+633,32,Ari,dusk_signal_court,material_priority_request,Ari: oil is contested between dusk_signal_court and greenhouse_heat_loop.,True,True,True,False,True
+634,32,Fay,greenhouse_heat_loop,none,none,True,True,False,False,False
+635,32,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+636,32,Fay,archive_public_kiosk,renegotiate_blocked_subproject,Fay: I can do weather_copy after material priority lost.,True,True,True,False,True
+637,32,Ari,dusk_signal_court,none,none,True,True,False,False,False
+638,32,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+639,32,Nia,flood_bridge_market_route,subproject_progress_notice,Nia: survey_piers moved forward for Flood bridge market route.,True,True,False,False,True
+640,33,Milo,archive_public_kiosk,none,none,True,True,False,False,False
+641,33,Milo,dusk_signal_court,none,none,True,True,True,False,False
+642,33,Nia,greenhouse_heat_loop,none,none,True,True,False,False,False
+643,33,Ari,flood_bridge_market_route,none,none,True,True,True,False,False
+644,33,Milo,archive_public_kiosk,none,none,True,True,False,False,False
+645,33,Milo,dusk_signal_court,none,none,True,True,False,False,False
+646,33,Nia,greenhouse_heat_loop,none,none,True,True,False,False,False
+647,33,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+648,33,Milo,archive_public_kiosk,material_priority_request,Milo: glass is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+649,33,Milo,dusk_signal_court,none,none,True,True,False,False,False
+650,33,Nia,greenhouse_heat_loop,none,none,True,True,True,False,False
+651,33,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+652,33,Milo,archive_public_kiosk,none,none,True,True,False,False,False
+653,33,Milo,dusk_signal_court,none,none,True,True,True,False,False
+654,33,Nia,greenhouse_heat_loop,none,none,True,True,False,False,False
+655,33,Ari,flood_bridge_market_route,none,none,True,True,True,False,False
+656,33,Milo,archive_public_kiosk,none,none,True,True,False,False,False
+657,33,Milo,dusk_signal_court,subproject_progress_notice,Milo: string_wire moved forward for Dusk signal court.,True,True,False,False,True
+658,33,Nia,greenhouse_heat_loop,none,none,True,True,False,False,False
+659,33,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+660,34,Nia,archive_public_kiosk,renegotiate_blocked_subproject,Nia: I can do sort_index after delegate asks for clearer terms.,True,True,True,False,True
+661,34,Nia,dusk_signal_court,none,none,True,True,True,False,False
+662,34,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+663,34,Fay,flood_bridge_market_route,material_priority_request,Fay: rope is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+664,34,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+665,34,Nia,dusk_signal_court,none,none,True,True,True,False,False
+666,34,Ari,greenhouse_heat_loop,renegotiate_blocked_subproject,Ari: I can do fit_glass after delegate asks for clearer terms.,True,True,False,False,True
+667,34,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+668,34,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+669,34,Nia,dusk_signal_court,none,none,True,True,False,False,False
+670,34,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+671,34,Fay,flood_bridge_market_route,routine_change_notice,Ari: market route becomes shorter but bridge watch is added after rain.,True,True,False,True,True
+672,34,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and dusk_signal_court.,True,True,True,False,True
+673,34,Nia,dusk_signal_court,none,none,True,True,True,False,False
+674,34,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+675,34,Fay,flood_bridge_market_route,material_priority_request,Fay: rope is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+676,34,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+677,34,Nia,dusk_signal_court,none,none,True,True,True,False,False
+678,34,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+679,34,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+680,35,Nia,dusk_signal_court,none,none,True,True,True,False,False
+681,35,Ari,greenhouse_heat_loop,material_priority_request,Ari: glass is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,True,True
+682,35,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+683,35,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+684,35,Nia,dusk_signal_court,material_priority_request,Nia: glass is contested between dusk_signal_court and flood_bridge_market_route.,True,True,True,False,True
+685,35,Ari,greenhouse_heat_loop,none,none,True,True,False,True,False
+686,35,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+687,35,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+688,35,Nia,dusk_signal_court,none,none,True,True,False,False,False
+689,35,Ari,greenhouse_heat_loop,debt_repair_notice,Ari settles part of the glass debt with Nia.,True,True,True,True,True
+690,35,Fay,flood_bridge_market_route,none,none,True,True,False,False,False
+691,35,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+692,35,Nia,dusk_signal_court,none,none,True,True,True,False,False
+693,35,Ari,greenhouse_heat_loop,material_priority_request,Ari: glass is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,True,True
+694,35,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+695,35,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+696,35,Nia,dusk_signal_court,none,none,True,True,True,False,False
+697,35,Ari,greenhouse_heat_loop,none,none,True,True,False,True,False
+698,35,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+699,35,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,False,True
+700,36,Fay,dusk_signal_court,none,none,True,True,False,False,False
+701,36,Milo,greenhouse_heat_loop,none,none,True,True,True,False,False
+702,36,Milo,flood_bridge_market_route,subproject_progress_notice,Milo: lamp_markers moved forward for Flood bridge market route.,True,True,False,True,True
+703,36,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+704,36,Fay,dusk_signal_court,none,none,True,True,True,False,False
+705,36,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+706,36,Milo,flood_bridge_market_route,debt_repair_notice,Milo settles part of the oil debt with Nia.,True,True,True,True,True
+707,36,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+708,36,Fay,dusk_signal_court,none,none,True,True,False,False,False
+709,36,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+710,36,Milo,flood_bridge_market_route,none,none,True,True,False,True,False
+711,36,Ari,archive_public_kiosk,material_priority_request,Ari: ink is contested between archive_public_kiosk and dusk_signal_court.,True,True,True,False,True
+712,36,Fay,dusk_signal_court,none,none,True,True,False,False,False
+713,36,Milo,greenhouse_heat_loop,none,none,True,True,True,False,False
+714,36,Milo,flood_bridge_market_route,none,none,True,True,False,True,False
+715,36,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+716,36,Fay,dusk_signal_court,none,none,True,True,True,False,False
+717,36,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+718,36,Milo,flood_bridge_market_route,none,none,True,True,True,True,False
+719,36,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+720,37,Ari,dusk_signal_court,subproject_progress_notice,Ari: stake_posts moved forward for Dusk signal court.,True,True,False,False,True
+721,37,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+722,37,Nia,flood_bridge_market_route,none,none,True,True,False,False,False
+723,37,Fay,archive_public_kiosk,material_priority_request,Fay: thread is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,True,True
+724,37,Ari,dusk_signal_court,none,none,True,True,True,False,False
+725,37,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+726,37,Nia,flood_bridge_market_route,material_priority_request,Nia: planks is contested between flood_bridge_market_route and dusk_signal_court.,True,True,True,False,True
+727,37,Fay,archive_public_kiosk,none,none,True,True,False,True,False
+728,37,Ari,dusk_signal_court,none,none,True,True,True,False,False
+729,37,Fay,greenhouse_heat_loop,subproject_progress_notice,Fay: plant_bed moved forward for Greenhouse heat loop.,True,True,False,False,True
+730,37,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+731,37,Fay,archive_public_kiosk,none,none,True,True,True,True,False
+732,37,Ari,dusk_signal_court,none,none,True,True,False,False,False
+733,37,Fay,greenhouse_heat_loop,none,none,True,True,True,False,False
+734,37,Nia,flood_bridge_market_route,none,none,True,True,False,False,False
+735,37,Fay,archive_public_kiosk,material_priority_request,Fay: thread is contested between archive_public_kiosk and greenhouse_heat_loop.,True,True,True,True,True
+736,37,Ari,dusk_signal_court,renegotiate_blocked_subproject,Ari: I can do stake_posts after material priority lost.,True,True,True,False,True
+737,37,Fay,greenhouse_heat_loop,debt_repair_notice,Fay settles part of the water debt with Nia.,True,True,True,False,True
+738,37,Nia,flood_bridge_market_route,material_priority_request,Nia: planks is contested between flood_bridge_market_route and dusk_signal_court.,True,True,True,False,True
+739,37,Fay,archive_public_kiosk,none,none,True,True,False,True,False
+740,38,Milo,dusk_signal_court,renegotiate_blocked_subproject,Milo: I can do string_wire after delegate asks for clearer terms.,True,True,False,True,True
+741,38,Nia,greenhouse_heat_loop,none,none,True,True,False,False,False
+742,38,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+743,38,Milo,archive_public_kiosk,debt_repair_notice,Nia settles part of the glass debt with Milo.,True,True,True,False,True
+744,38,Milo,dusk_signal_court,none,none,True,True,False,True,False
+745,38,Nia,greenhouse_heat_loop,none,none,True,True,True,False,False
+746,38,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+747,38,Milo,archive_public_kiosk,subproject_progress_notice,Milo: lamp_mount moved forward for Archive public kiosk.,True,True,False,False,True
+748,38,Milo,dusk_signal_court,none,none,True,True,True,True,False
+749,38,Nia,greenhouse_heat_loop,none,none,True,True,False,False,False
+750,38,Ari,flood_bridge_market_route,renegotiate_blocked_subproject,Ari: I can do cut_planks after delegate asks for clearer terms.,True,True,True,False,True
+751,38,Milo,archive_public_kiosk,none,none,True,True,False,False,False
+752,38,Milo,dusk_signal_court,none,none,True,True,False,True,False
+753,38,Nia,greenhouse_heat_loop,none,none,True,True,False,False,False
+754,38,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+755,38,Milo,archive_public_kiosk,debt_repair_notice,Milo settles part of the glass debt with Nia.,True,True,True,False,True
+756,38,Milo,dusk_signal_court,subproject_progress_notice,Milo: string_wire moved forward for Dusk signal court.,True,True,False,True,True
+757,38,Nia,greenhouse_heat_loop,none,none,True,True,True,False,False
+758,38,Ari,flood_bridge_market_route,none,none,True,False,False,False,False
+759,38,Milo,archive_public_kiosk,none,none,True,True,False,False,False
+760,39,Nia,dusk_signal_court,none,none,True,True,True,False,False
+761,39,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+762,39,Fay,flood_bridge_market_route,material_priority_request,Fay: rope is contested between flood_bridge_market_route and dusk_signal_court.,True,True,True,False,True
+763,39,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+764,39,Nia,dusk_signal_court,none,none,True,True,False,False,False
+765,39,Ari,greenhouse_heat_loop,material_priority_request,Ari: glass is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+766,39,Fay,flood_bridge_market_route,none,none,True,True,False,False,False
+767,39,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+768,39,Nia,dusk_signal_court,renegotiate_blocked_subproject,Nia: I can do signal_code after material priority lost.,True,True,True,False,True
+769,39,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+770,39,Fay,flood_bridge_market_route,renegotiate_blocked_subproject,Fay: I can do seal_joints after material priority lost.,True,True,True,False,True
+771,39,Nia,archive_public_kiosk,none,none,True,True,False,False,False
+772,39,Nia,dusk_signal_court,none,none,True,True,True,False,False
+773,39,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+774,39,Fay,flood_bridge_market_route,material_priority_request,Fay: rope is contested between flood_bridge_market_route and dusk_signal_court.,True,True,True,False,True
+775,39,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+776,39,Nia,dusk_signal_court,none,none,True,True,False,False,False
+777,39,Ari,greenhouse_heat_loop,material_priority_request,Ari: glass is contested between greenhouse_heat_loop and archive_public_kiosk.,True,True,True,False,True
+778,39,Fay,flood_bridge_market_route,none,none,True,True,False,False,False
+779,39,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+780,40,Ari,greenhouse_heat_loop,none,none,True,True,False,False,False
+781,40,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+782,40,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+783,40,Nia,dusk_signal_court,subproject_progress_notice,Nia: signal_code moved forward for Dusk signal court.,True,True,False,False,True
+784,40,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+785,40,Fay,flood_bridge_market_route,none,none,True,True,False,False,False
+786,40,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and dusk_signal_court.,True,True,True,False,True
+787,40,Nia,dusk_signal_court,none,none,True,True,True,False,False
+788,40,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+789,40,Fay,flood_bridge_market_route,material_priority_request,Fay: rope is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+790,40,Nia,archive_public_kiosk,renegotiate_blocked_subproject,Nia: I can do sort_index after delegate asks for clearer terms.,True,True,False,False,True
+791,40,Nia,dusk_signal_court,none,none,True,True,True,False,False
+792,40,Ari,greenhouse_heat_loop,subproject_progress_notice,Ari: fit_glass moved forward for Greenhouse heat loop.,True,True,False,False,True
+793,40,Fay,flood_bridge_market_route,none,none,True,True,True,False,False
+794,40,Nia,archive_public_kiosk,none,none,True,True,True,False,False
+795,40,Nia,dusk_signal_court,none,none,True,True,False,False,False
+796,40,Ari,greenhouse_heat_loop,none,none,True,True,True,False,False
+797,40,Fay,flood_bridge_market_route,none,none,True,True,False,False,False
+798,40,Nia,archive_public_kiosk,material_priority_request,Nia: paper is contested between archive_public_kiosk and dusk_signal_court.,True,True,True,False,True
+799,40,Nia,dusk_signal_court,none,none,True,True,True,False,False
+800,41,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+801,41,Milo,flood_bridge_market_route,material_priority_request,Milo: oil is contested between flood_bridge_market_route and dusk_signal_court.,True,True,True,False,True
+802,41,Ari,archive_public_kiosk,none,none,True,False,False,False,False
+803,41,Fay,dusk_signal_court,none,none,True,True,False,False,False
+804,41,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+805,41,Milo,flood_bridge_market_route,none,none,True,True,False,False,False
+806,41,Ari,archive_public_kiosk,none,none,True,True,True,False,False
+807,41,Fay,dusk_signal_court,none,none,True,True,False,False,False
+808,41,Milo,greenhouse_heat_loop,none,none,True,True,True,False,False
+809,41,Milo,flood_bridge_market_route,none,none,True,True,False,False,False
+810,41,Ari,archive_public_kiosk,subproject_progress_notice,Ari: build_frame moved forward for Archive public kiosk.,True,False,False,False,True
+811,41,Fay,dusk_signal_court,none,none,True,True,True,False,False
+812,41,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+813,41,Milo,flood_bridge_market_route,material_priority_request,Milo: oil is contested between flood_bridge_market_route and dusk_signal_court.,True,True,True,False,True
+814,41,Ari,archive_public_kiosk,renegotiate_blocked_subproject,Ari: I can do build_frame after delegate asks for clearer terms.,True,False,False,False,True
+815,41,Fay,dusk_signal_court,none,none,True,True,False,False,False
+816,41,Milo,greenhouse_heat_loop,none,none,True,False,False,False,False
+817,41,Milo,flood_bridge_market_route,none,none,True,True,False,False,False
+818,41,Ari,archive_public_kiosk,none,none,True,True,True,False,False
+819,41,Fay,dusk_signal_court,subproject_progress_notice,Fay: comfort_corner moved forward for Dusk signal court.,True,True,False,False,True
+820,42,Fay,greenhouse_heat_loop,renegotiate_blocked_subproject,Fay: I can do plant_bed after delegate asks for clearer terms.,True,True,True,True,True
+821,42,Nia,flood_bridge_market_route,none,none,True,True,True,False,False
+822,42,Fay,archive_public_kiosk,none,none,True,True,False,False,False
+823,42,Ari,dusk_signal_court,none,none,True,True,True,False,False
+824,42,Fay,greenhouse_heat_loop,none,none,True,True,False,True,False
+825,42,Nia,flood_bridge_market_route,material_priority_request,Nia: planks is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+826,42,Fay,archive_public_kiosk,renegotiate_blocked_subproject,Fay: I can do weather_copy after workshop over capacity.,True,True,True,False,True
+827,42,Ari,dusk_signal_court,none,none,True,True,False,False,False
+828,42,Fay,greenhouse_heat_loop,renegotiate_blocked_subproject,Fay: I can do plant_bed after material priority lost.,True,True,True,True,True
+829,42,Nia,flood_bridge_market_route,none,none,True,True,False,False,False
+830,42,Fay,archive_public_kiosk,none,none,True,True,True,False,False
+831,42,Ari,dusk_signal_court,material_priority_request,Ari: oil is contested between dusk_signal_court and greenhouse_heat_loop.,True,True,True,False,True
+832,42,Fay,greenhouse_heat_loop,debt_repair_notice,Fay settles part of the water debt with Ari.,True,True,True,True,True
+833,42,Nia,flood_bridge_market_route,debt_repair_notice,Ari settles part of the planks debt with Nia.,True,True,True,False,True
+834,42,Fay,archive_public_kiosk,none,none,True,True,False,False,False
+835,42,Ari,dusk_signal_court,none,none,True,True,True,False,False
+836,42,Fay,greenhouse_heat_loop,none,none,True,True,False,True,False
+837,42,Nia,flood_bridge_market_route,material_priority_request,Nia: planks is contested between flood_bridge_market_route and archive_public_kiosk.,True,True,True,False,True
+838,42,Fay,archive_public_kiosk,renegotiate_blocked_subproject,Fay: I can do weather_copy after workshop over capacity.,True,True,True,False,True
+839,42,Ari,dusk_signal_court,none,none,True,True,False,False,False

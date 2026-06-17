@@ -1,0 +1,841 @@
+tick_id,day,project_id,replay_event,state_hash,includes_delegation,includes_debt,includes_workshop,includes_conflict,includes_routine_mutation,replay_exportable
+0,1,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:blocked: delegate asks for clearer terms,v26-338309,True,False,True,False,False,True
+1,1,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-384293,True,False,True,False,False,True
+2,1,archive_public_kiosk,archive_public_kiosk:build_frame:blocked: dependency not ready,v26-326900,True,False,True,False,False,True
+3,1,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-340421,True,False,True,False,False,True
+4,1,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:blocked: dependency not ready,v26-338433,True,False,True,False,False,True
+5,1,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-384417,True,False,True,False,False,True
+6,1,archive_public_kiosk,archive_public_kiosk:build_frame:blocked: dependency not ready,v26-327024,True,False,True,False,False,True
+7,1,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-340545,True,False,True,False,False,True
+8,1,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:blocked: dependency not ready,v26-338557,True,False,True,False,False,True
+9,1,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-384541,True,False,True,False,False,True
+10,1,archive_public_kiosk,archive_public_kiosk:build_frame:blocked: dependency not ready,v26-333978,True,False,True,False,False,True
+11,1,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-347688,True,False,True,False,False,True
+12,1,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:blocked: dependency not ready,v26-345657,True,False,True,False,False,True
+13,1,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-392161,True,False,True,False,False,True
+14,1,archive_public_kiosk,archive_public_kiosk:build_frame:blocked: dependency not ready,v26-334106,True,False,True,False,False,True
+15,1,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-347816,True,False,True,False,False,True
+16,1,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:blocked: dependency not ready,v26-345785,True,False,True,False,False,True
+17,1,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-392289,True,False,True,False,False,True
+18,1,archive_public_kiosk,archive_public_kiosk:build_frame:blocked: dependency not ready,v26-334234,True,False,True,False,False,True
+19,1,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-347944,True,False,True,False,False,True
+20,2,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: delegate asks for clearer terms,v26-335928,True,False,True,False,False,True
+21,2,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-437834,True,False,True,False,False,True
+22,2,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: dependency not ready,v26-373096,True,False,True,False,False,True
+23,2,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-322754,True,False,True,False,False,True
+24,2,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-347232,True,False,True,False,False,True
+25,2,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-438574,True,False,True,False,False,True
+26,2,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: dependency not ready,v26-373224,True,False,True,False,False,True
+27,2,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-322811,True,False,True,False,False,True
+28,2,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-347908,True,False,True,False,False,True
+29,2,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-437935,True,False,True,False,False,True
+30,2,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: dependency not ready,v26-373063,True,False,True,False,False,True
+31,2,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-323192,True,False,True,False,False,True
+32,2,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-347060,True,False,True,False,False,True
+33,2,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-438386,True,False,True,False,False,True
+34,2,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: dependency not ready,v26-373191,True,False,True,False,False,True
+35,2,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-322645,True,False,True,False,False,True
+36,2,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-347736,True,False,True,False,False,True
+37,2,flood_bridge_market_route,flood_bridge_market_route:survey_piers:blocked: delegate asks for clearer terms,v26-438514,True,False,True,False,False,True
+38,2,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: dependency not ready,v26-373319,True,False,True,False,False,True
+39,2,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-317635,True,False,True,False,False,True
+40,3,greenhouse_heat_loop,greenhouse_heat_loop:index_care:blocked: dependency not ready,v26-364875,True,False,True,False,False,True
+41,3,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: dependency not ready,v26-393721,True,False,True,False,False,True
+42,3,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-346553,True,False,True,False,False,True
+43,3,dusk_signal_court,dusk_signal_court:string_wire:blocked: dependency not ready,v26-321342,True,False,True,False,False,True
+44,3,greenhouse_heat_loop,greenhouse_heat_loop:index_care:blocked: dependency not ready,v26-365003,True,False,True,False,False,True
+45,3,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: delegate asks for clearer terms,v26-393849,True,False,True,False,False,True
+46,3,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-346681,True,False,True,False,False,True
+47,3,dusk_signal_court,dusk_signal_court:string_wire:blocked: dependency not ready,v26-321470,True,False,True,False,False,True
+48,3,greenhouse_heat_loop,greenhouse_heat_loop:index_care:blocked: dependency not ready,v26-365131,True,False,True,False,False,True
+49,3,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: dependency not ready,v26-393977,True,False,True,False,False,True
+50,3,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-346520,True,False,True,False,False,True
+51,3,dusk_signal_court,dusk_signal_court:string_wire:blocked: dependency not ready,v26-321309,True,False,True,False,False,True
+52,3,greenhouse_heat_loop,greenhouse_heat_loop:index_care:blocked: dependency not ready,v26-364970,True,False,True,False,False,True
+53,3,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: dependency not ready,v26-393816,True,False,True,False,False,True
+54,3,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-346648,True,False,True,False,False,True
+55,3,dusk_signal_court,dusk_signal_court:string_wire:blocked: delegate asks for clearer terms,v26-321437,True,False,True,False,False,True
+56,3,greenhouse_heat_loop,greenhouse_heat_loop:index_care:blocked: dependency not ready,v26-365098,True,False,True,False,False,True
+57,3,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: dependency not ready,v26-393944,True,False,True,False,False,True
+58,3,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-346776,True,False,True,False,False,True
+59,3,dusk_signal_court,dusk_signal_court:string_wire:blocked: dependency not ready,v26-321565,True,False,True,False,False,True
+60,4,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-353071,True,True,True,False,False,True
+61,4,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-399249,True,True,True,True,False,True
+62,4,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-362866,True,True,True,True,False,True
+63,4,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-326943,True,False,True,False,False,True
+64,4,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-365246,True,True,True,True,False,True
+65,4,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-393585,True,False,True,False,False,True
+66,4,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-363325,True,True,True,True,False,True
+67,4,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-332471,True,True,True,True,False,True
+68,4,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-365889,True,True,True,True,False,True
+69,4,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-399167,True,True,True,True,False,True
+70,4,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-357622,True,False,True,False,False,True
+71,4,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-332463,True,True,True,True,False,True
+72,4,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-364884,True,True,True,False,False,True
+73,4,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-399677,True,True,True,True,False,True
+74,4,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-362888,True,True,True,True,False,True
+75,4,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-327038,True,False,True,False,False,True
+76,4,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: material priority lost,v26-365667,True,True,True,True,False,True
+77,4,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-393680,True,False,True,False,False,True
+78,4,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-364382,True,True,True,True,False,True
+79,4,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-332640,True,True,True,True,False,True
+80,5,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-399279,True,True,True,True,False,True
+81,5,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-362686,True,True,True,True,False,True
+82,5,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-326973,True,False,True,False,False,True
+83,5,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-365069,True,True,True,True,False,True
+84,5,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-399407,True,True,True,False,False,True
+85,5,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-363218,True,True,True,True,False,True
+86,5,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-332501,True,True,True,True,False,True
+87,5,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-365197,True,True,True,True,False,True
+88,5,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-399197,True,True,True,True,False,True
+89,5,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-357444,True,True,True,False,False,True
+90,5,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-332493,True,True,True,True,False,True
+91,5,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-365376,True,True,True,False,False,True
+92,5,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-399707,True,True,True,True,False,True
+93,5,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-363831,True,True,True,True,False,True
+94,5,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-327068,True,False,True,False,False,True
+95,5,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-365161,True,True,True,True,False,True
+96,5,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-399669,True,True,True,False,False,True
+97,5,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-358583,True,True,True,True,False,True
+98,5,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-332670,True,True,True,True,False,True
+99,5,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-365452,True,True,True,True,False,True
+100,6,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405223,True,True,True,True,False,True
+101,6,archive_public_kiosk,archive_public_kiosk:build_frame:blocked: dependency not ready,v26-341168,True,False,True,False,False,True
+102,6,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-355067,True,False,True,False,False,True
+103,6,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:blocked: dependency not ready,v26-352993,True,False,True,False,False,True
+104,6,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405355,True,True,True,False,False,True
+105,6,archive_public_kiosk,archive_public_kiosk:build_frame:blocked: dependency not ready,v26-346812,True,True,True,True,False,True
+106,6,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-355199,True,False,True,False,False,True
+107,6,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:blocked: dependency not ready,v26-358453,True,True,True,True,False,True
+108,6,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405487,True,True,True,False,False,True
+109,6,archive_public_kiosk,archive_public_kiosk:build_frame:blocked: dependency not ready,v26-341432,True,False,True,False,False,True
+110,6,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-360361,True,True,True,True,False,True
+111,6,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:blocked: delegate asks for clearer terms,v26-352959,True,False,True,False,False,True
+112,6,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405321,True,True,True,True,False,True
+113,6,archive_public_kiosk,archive_public_kiosk:build_frame:blocked: dependency not ready,v26-341266,True,False,True,False,False,True
+114,6,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-355165,True,False,True,False,False,True
+115,6,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:blocked: dependency not ready,v26-353091,True,False,True,False,False,True
+116,6,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405453,True,True,True,False,False,True
+117,6,archive_public_kiosk,archive_public_kiosk:build_frame:blocked: dependency not ready,v26-346910,True,True,True,True,False,True
+118,6,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-355297,True,False,True,False,False,True
+119,6,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:blocked: dependency not ready,v26-358551,True,True,True,True,False,True
+120,7,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-445753,True,True,True,True,False,True
+121,7,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: dependency not ready,v26-380709,True,False,True,False,False,True
+122,7,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-346082,True,True,True,True,False,True
+123,7,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-348860,True,False,True,False,False,True
+124,7,flood_bridge_market_route,flood_bridge_market_route:survey_piers:blocked: material priority lost,v26-446152,True,True,True,True,False,True
+125,7,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: dependency not ready,v26-386079,True,True,True,True,False,True
+126,7,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-341054,True,False,True,False,False,True
+127,7,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-360558,True,True,True,True,False,True
+128,7,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-452832,True,True,True,False,False,True
+129,7,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: dependency not ready,v26-386625,True,True,True,True,False,True
+130,7,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-347106,True,True,True,True,False,True
+131,7,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-360487,True,True,True,True,False,True
+132,7,flood_bridge_market_route,flood_bridge_market_route:survey_piers:blocked: material priority lost,v26-452304,True,True,True,True,False,True
+133,7,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: dependency not ready,v26-380807,True,False,True,False,False,True
+134,7,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-346394,True,True,True,True,False,True
+135,7,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: delegate asks for clearer terms,v26-354834,True,False,True,False,False,True
+136,7,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-452362,True,True,True,True,False,True
+137,7,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: dependency not ready,v26-386177,True,True,True,True,False,True
+138,7,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-341508,True,False,True,False,False,True
+139,7,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-372201,True,True,True,True,False,True
+140,8,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: delegate asks for clearer terms,v26-401563,True,False,True,False,False,True
+141,8,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-353868,True,False,True,False,False,True
+142,8,dusk_signal_court,dusk_signal_court:string_wire:blocked: dependency not ready,v26-333553,True,True,True,True,False,True
+143,8,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-384152,True,False,True,False,False,True
+144,8,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: dependency not ready,v26-407033,True,True,True,True,False,True
+145,8,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-354000,True,False,True,False,False,True
+146,8,dusk_signal_court,dusk_signal_court:string_wire:blocked: dependency not ready,v26-328516,True,False,True,False,False,True
+147,8,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-384636,True,False,True,False,False,True
+148,8,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: delegate asks for clearer terms,v26-401827,True,False,True,False,False,True
+149,8,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-359700,True,True,True,True,False,True
+150,8,dusk_signal_court,dusk_signal_court:string_wire:blocked: delegate asks for clearer terms,v26-328350,True,False,True,False,False,True
+151,8,greenhouse_heat_loop,greenhouse_heat_loop:index_care:material conflict: greenhouse_heat_loop priority,v26-390362,True,True,True,True,False,True
+152,8,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: dependency not ready,v26-401661,True,False,True,False,False,True
+153,8,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-353966,True,False,True,False,False,True
+154,8,dusk_signal_court,dusk_signal_court:string_wire:blocked: dependency not ready,v26-333651,True,True,True,True,False,True
+155,8,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-384675,True,False,True,False,False,True
+156,8,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: dependency not ready,v26-407131,True,True,True,True,False,True
+157,8,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-354098,True,False,True,False,False,True
+158,8,dusk_signal_court,dusk_signal_court:string_wire:blocked: dependency not ready,v26-333783,True,True,True,False,False,True
+159,8,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-378859,True,False,True,False,False,True
+160,9,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407314,True,True,True,False,False,True
+161,9,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-371129,True,True,True,True,False,True
+162,9,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339484,True,True,True,True,False,True
+163,9,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-367003,True,True,True,True,False,True
+164,9,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407022,True,True,True,True,False,True
+165,9,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-370610,True,True,True,False,False,True
+166,9,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339771,True,True,True,True,False,True
+167,9,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-366991,True,True,True,False,False,True
+168,9,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407067,True,True,True,True,False,True
+169,9,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: material priority lost,v26-370905,True,True,True,True,False,True
+170,9,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339455,True,True,True,False,False,True
+171,9,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-367480,True,True,True,True,False,True
+172,9,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-401479,True,True,True,False,False,True
+173,9,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-371562,True,True,True,True,False,True
+174,9,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339737,True,True,True,True,False,True
+175,9,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-373502,True,True,True,True,False,True
+176,9,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407457,True,True,True,True,False,True
+177,9,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-365248,True,True,True,False,False,True
+178,9,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339874,True,True,True,True,False,True
+179,9,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-373110,True,True,True,False,False,True
+180,10,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-365370,True,True,True,True,False,True
+181,10,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339515,True,True,True,True,False,True
+182,10,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-373437,True,True,True,True,False,True
+183,10,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407303,True,True,True,True,False,True
+184,10,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-371222,True,True,True,False,False,True
+185,10,dusk_signal_court,dusk_signal_court:signal_code:blocked: delegate asks for clearer terms,v26-339802,True,True,True,True,False,True
+186,10,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-368424,True,True,True,False,False,True
+187,10,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-408114,True,True,True,True,False,True
+188,10,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-382822,True,True,True,True,False,True
+189,10,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-334405,True,True,True,False,False,True
+190,10,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-372751,True,True,True,True,False,True
+191,10,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-401510,True,True,True,False,False,True
+192,10,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-383580,True,True,True,True,False,True
+193,10,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-334855,True,True,True,True,False,True
+194,10,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-373396,True,True,True,True,False,True
+195,10,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407738,True,True,True,True,False,True
+196,10,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-382719,True,True,True,False,False,True
+197,10,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339280,True,True,True,True,False,True
+198,10,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-373243,True,True,True,False,False,True
+199,10,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-401856,True,True,True,True,False,True
+200,11,archive_public_kiosk,archive_public_kiosk:build_frame:material conflict: archive_public_kiosk priority,v26-368965,True,True,True,True,False,True
+201,11,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-360710,True,True,True,False,False,True
+202,11,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:material conflict: greenhouse_heat_loop priority,v26-370120,True,True,True,True,False,True
+203,11,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405353,True,True,True,False,False,True
+204,11,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-369237,True,True,True,False,False,True
+205,11,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-360604,True,True,True,True,False,True
+206,11,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-370388,True,True,True,False,False,True
+207,11,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405485,True,True,True,True,False,True
+208,11,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-368869,True,True,True,False,False,True
+209,11,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-360974,True,True,True,False,False,True
+210,11,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-369736,True,True,True,False,False,True
+211,11,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405319,True,True,True,False,False,True
+212,11,archive_public_kiosk,archive_public_kiosk:build_frame:material conflict: archive_public_kiosk priority,v26-368908,True,True,True,True,False,True
+213,11,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-360808,True,True,True,False,False,True
+214,11,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:material conflict: greenhouse_heat_loop priority,v26-381795,True,True,True,True,False,True
+215,11,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405451,True,True,True,False,False,True
+216,11,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-369265,True,True,True,False,False,True
+217,11,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: dependency not ready,v26-361339,True,True,True,True,False,True
+218,11,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-381644,True,True,True,False,False,True
+219,11,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405752,True,True,True,True,False,True
+220,12,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: workshop over capacity,v26-385945,True,True,True,True,False,True
+221,12,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-341204,True,False,True,False,False,True
+222,12,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: delegate asks for clearer terms,v26-371889,True,True,True,True,False,True
+223,12,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-452179,True,True,True,False,False,True
+224,12,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-409856,True,True,True,True,False,True
+225,12,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-346755,True,True,True,True,False,True
+226,12,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-372742,True,True,True,True,False,True
+227,12,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-465659,True,True,True,True,False,True
+228,12,archive_public_kiosk,archive_public_kiosk:weather_copy:delegated progress,v26-410658,True,True,True,False,False,True
+229,12,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-346983,True,True,True,True,False,True
+230,12,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: delegate asks for clearer terms,v26-366675,True,False,True,False,False,True
+231,12,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-465325,True,True,True,True,False,True
+232,12,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: workshop over capacity,v26-410492,True,True,True,True,False,True
+233,12,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-341018,True,False,True,False,False,True
+234,12,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-371846,True,True,True,True,False,True
+235,12,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-465374,True,True,True,False,False,True
+236,12,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: material priority lost,v26-410274,True,True,True,True,False,True
+237,12,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-347286,True,True,True,True,False,True
+238,12,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-373277,True,True,True,True,False,True
+239,12,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-465100,True,True,True,True,False,True
+240,13,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-353866,True,False,True,False,False,True
+241,13,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-344411,True,True,True,False,False,True
+242,13,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-384639,True,False,True,False,False,True
+243,13,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-419260,True,True,True,False,False,True
+244,13,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-359566,True,True,True,True,False,True
+245,13,dusk_signal_court,dusk_signal_court:string_wire:blocked: delegate asks for clearer terms,v26-344543,True,True,True,False,False,True
+246,13,greenhouse_heat_loop,greenhouse_heat_loop:index_care:material conflict: greenhouse_heat_loop priority,v26-390032,True,True,True,True,False,True
+247,13,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-419540,True,True,True,False,False,True
+248,13,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-354130,True,False,True,False,False,True
+249,13,dusk_signal_court,dusk_signal_court:string_wire:blocked: material priority lost,v26-345069,True,True,True,True,False,True
+250,13,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-384678,True,False,True,False,False,True
+251,13,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: workshop over capacity,v26-419547,True,True,True,True,False,True
+252,13,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-353964,True,False,True,False,False,True
+253,13,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-345245,True,True,True,False,False,True
+254,13,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-385162,True,False,True,False,False,True
+255,13,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: delegate asks for clearer terms,v26-419679,True,True,True,False,False,True
+256,13,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: dependency not ready,v26-359664,True,True,True,True,False,True
+257,13,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-345405,True,True,True,False,False,True
+258,13,greenhouse_heat_loop,greenhouse_heat_loop:index_care:blocked: material priority lost,v26-390834,True,True,True,True,False,True
+259,13,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: delegate asks for clearer terms,v26-419639,True,True,True,False,False,True
+260,14,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-382456,True,True,True,False,False,True
+261,14,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339017,True,True,True,True,False,True
+262,14,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-373077,True,True,True,False,False,True
+263,14,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407441,True,True,True,True,False,True
+264,14,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: material priority lost,v26-382755,True,True,True,True,False,True
+265,14,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-334240,True,True,True,False,False,True
+266,14,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: material priority lost,v26-373872,True,True,True,True,False,True
+267,14,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407068,True,True,True,False,False,True
+268,14,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-383867,True,True,True,True,False,True
+269,14,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339904,True,True,True,True,False,True
+270,14,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-373459,True,True,True,True,False,True
+271,14,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407065,True,True,True,True,False,True
+272,14,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-382582,True,True,True,False,False,True
+273,14,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339194,True,True,True,True,False,True
+274,14,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-372573,True,True,True,False,False,True
+275,14,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-406947,True,True,True,True,False,True
+276,14,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-383695,True,True,True,True,False,True
+277,14,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339326,True,True,True,False,False,True
+278,14,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-367538,True,True,True,True,False,True
+279,14,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407079,True,True,True,False,False,True
+280,15,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339282,True,True,True,True,False,True
+281,15,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-366787,True,True,True,False,False,True
+282,15,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407725,True,True,True,True,False,True
+283,15,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-384058,True,True,True,True,False,True
+284,15,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339260,True,True,True,False,False,True
+285,15,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-367653,True,True,True,True,False,True
+286,15,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407014,True,True,True,False,False,True
+287,15,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-383029,True,True,True,True,False,True
+288,15,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-340015,True,True,True,True,False,True
+289,15,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-373849,True,True,True,True,False,True
+290,15,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407691,True,True,True,True,False,True
+291,15,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-382966,True,True,True,False,False,True
+292,15,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-334468,True,True,True,True,False,True
+293,15,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-372989,True,True,True,False,False,True
+294,15,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407736,True,True,True,True,False,True
+295,15,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-383848,True,True,True,True,False,True
+296,15,dusk_signal_court,dusk_signal_court:signal_code:blocked: delegate asks for clearer terms,v26-334600,True,True,True,False,False,True
+297,15,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-372706,True,True,True,True,False,True
+298,15,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407112,True,True,True,False,False,True
+299,15,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-377698,True,True,True,True,False,True
+300,16,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: workshop over capacity,v26-360790,True,True,True,True,False,True
+301,16,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-381557,True,True,True,False,False,True
+302,16,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405520,True,True,True,True,False,True
+303,16,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-369314,True,True,True,False,False,True
+304,16,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-373174,True,True,True,False,False,True
+305,16,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-381825,True,True,True,False,False,True
+306,16,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405652,True,True,True,False,False,True
+307,16,archive_public_kiosk,archive_public_kiosk:build_frame:material conflict: archive_public_kiosk priority,v26-369651,True,True,True,True,False,True
+308,16,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-372468,True,True,True,False,False,True
+309,16,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:material conflict: greenhouse_heat_loop priority,v26-382658,True,True,True,True,False,True
+310,16,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405486,True,True,True,False,False,True
+311,16,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-369710,True,True,True,False,False,True
+312,16,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: workshop over capacity,v26-372301,True,True,True,True,False,True
+313,16,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-381587,True,True,True,False,False,True
+314,16,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405787,True,True,True,True,False,True
+315,16,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-369342,True,True,True,False,False,True
+316,16,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-372256,True,True,True,False,False,True
+317,16,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-381855,True,True,True,False,False,True
+318,16,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405919,True,True,True,False,False,True
+319,16,archive_public_kiosk,archive_public_kiosk:build_frame:material conflict: archive_public_kiosk priority,v26-369679,True,True,True,True,False,True
+320,17,dusk_signal_court,dusk_signal_court:stake_posts:blocked: material priority lost,v26-346977,True,True,True,True,False,True
+321,17,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-372970,True,True,True,True,False,True
+322,17,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-465764,True,True,True,True,False,True
+323,17,archive_public_kiosk,archive_public_kiosk:weather_copy:delegated progress,v26-410620,True,True,True,False,False,True
+324,17,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-347818,True,True,True,True,False,True
+325,17,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: delegate asks for clearer terms,v26-367121,True,False,True,False,False,True
+326,17,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-460214,True,True,True,True,False,True
+327,17,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-417826,True,True,True,True,False,True
+328,17,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-347106,True,True,True,False,False,True
+329,17,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-402284,True,True,True,True,False,True
+330,17,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-465480,True,True,True,False,False,True
+331,17,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: workshop over capacity,v26-411993,True,True,True,True,False,True
+332,17,dusk_signal_court,dusk_signal_court:stake_posts:blocked: material priority lost,v26-346858,True,True,True,True,False,True
+333,17,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: delegate asks for clearer terms,v26-402283,True,True,True,True,False,True
+334,17,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-465899,True,True,True,True,False,True
+335,17,archive_public_kiosk,archive_public_kiosk:weather_copy:delegated progress,v26-416892,True,True,True,False,False,True
+336,17,dusk_signal_court,dusk_signal_court:stake_posts:blocked: material priority lost,v26-346991,True,True,True,True,False,True
+337,17,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:outcome changed routine,v26-458189,True,False,True,False,True,True
+338,17,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-459751,True,True,True,True,False,True
+339,17,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-416933,True,True,True,True,False,True
+340,18,dusk_signal_court,dusk_signal_court:string_wire:blocked: delegate asks for clearer terms,v26-345173,True,True,True,False,False,True
+341,18,greenhouse_heat_loop,greenhouse_heat_loop:index_care:material conflict: greenhouse_heat_loop priority,v26-414296,True,True,True,True,True,True
+342,18,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-418879,True,True,True,False,False,True
+343,18,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-371042,True,True,True,False,False,True
+344,18,dusk_signal_court,dusk_signal_court:string_wire:blocked: material priority lost,v26-340106,True,True,True,True,False,True
+345,18,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-420393,True,True,True,False,True,True
+346,18,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: material priority lost,v26-419184,True,True,True,True,False,True
+347,18,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-371738,True,True,True,False,False,True
+348,18,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-339967,True,True,True,False,False,True
+349,18,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-420877,True,True,True,False,True,True
+350,18,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: delegate asks for clearer terms,v26-419018,True,True,True,False,False,True
+351,18,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: material priority lost,v26-371488,True,True,True,True,False,True
+352,18,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-334289,True,True,True,False,False,True
+353,18,greenhouse_heat_loop,greenhouse_heat_loop:index_care:blocked: material priority lost,v26-421130,True,True,True,True,True,True
+354,18,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-419298,True,True,True,False,False,True
+355,18,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-370913,True,True,True,False,False,True
+356,18,dusk_signal_court,dusk_signal_court:string_wire:material conflict: dusk_signal_court priority,v26-345508,True,True,True,True,False,True
+357,18,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-420983,True,True,True,False,True,True
+358,18,flood_bridge_market_route,flood_bridge_market_route:cut_planks:material conflict: flood_bridge_market_route priority,v26-431867,True,True,True,True,False,True
+359,18,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-371609,True,True,True,False,False,True
+360,19,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339172,True,True,True,False,False,True
+361,19,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: material priority lost,v26-402685,True,True,True,True,True,True
+362,19,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-406849,True,True,True,False,False,True
+363,19,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-383541,True,True,True,True,False,True
+364,19,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-334854,True,True,True,True,False,True
+365,19,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-403640,True,True,True,True,True,True
+366,19,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407233,True,True,True,True,False,True
+367,19,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-383517,True,True,True,False,False,True
+368,19,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339591,True,True,True,True,False,True
+369,19,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-398647,True,True,True,False,True,True
+370,19,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: delegate asks for clearer terms,v26-401559,True,True,True,True,False,True
+371,19,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-382561,True,True,True,True,False,True
+372,19,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339425,True,True,True,False,False,True
+373,19,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-396927,True,True,True,True,True,True
+374,19,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-401691,True,True,True,False,False,True
+375,19,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-383112,True,True,True,True,False,True
+376,19,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339713,True,True,True,True,False,True
+377,19,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-403301,True,True,True,True,True,True
+378,19,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407755,True,True,True,True,False,True
+379,19,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-383476,True,True,True,False,False,True
+380,20,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-410170,True,True,True,True,True,True
+381,20,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-401624,True,True,True,False,False,True
+382,20,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-384037,True,True,True,True,False,True
+383,20,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339721,True,True,True,True,False,True
+384,20,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-409720,True,True,True,True,True,True
+385,20,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407684,True,True,True,True,False,True
+386,20,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-383901,True,True,True,False,False,True
+387,20,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-340008,True,True,True,True,False,True
+388,20,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-409993,True,True,True,False,True,True
+389,20,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407729,True,True,True,True,False,True
+390,20,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-384570,True,True,True,True,False,True
+391,20,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339456,True,True,True,False,False,True
+392,20,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-408964,True,True,True,True,True,True
+393,20,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-401722,True,True,True,False,False,True
+394,20,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-382910,True,True,True,True,False,True
+395,20,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-339894,True,True,True,True,False,True
+396,20,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-409263,True,True,True,True,True,True
+397,20,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-408119,True,True,True,True,False,True
+398,20,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-383220,True,True,True,False,False,True
+399,20,dusk_signal_court,dusk_signal_court:signal_code:blocked: dependency not ready,v26-340181,True,True,True,True,False,True
+400,21,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-568472,True,True,True,False,True,True
+401,21,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405687,True,True,True,False,False,True
+402,21,archive_public_kiosk,archive_public_kiosk:build_frame:material conflict: archive_public_kiosk priority,v26-364227,True,True,True,True,False,True
+403,21,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-372136,True,True,True,False,False,True
+404,21,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:material conflict: greenhouse_heat_loop priority,v26-568345,True,True,True,True,True,True
+405,21,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405819,True,True,True,False,False,True
+406,21,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-364027,True,True,True,False,False,True
+407,21,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: delegate asks for clearer terms,v26-372188,True,True,True,True,False,True
+408,21,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-568532,True,True,True,False,True,True
+409,21,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-406120,True,True,True,True,False,True
+410,21,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-364001,True,True,True,False,False,True
+411,21,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-366977,True,True,True,False,False,True
+412,21,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-567880,True,True,True,False,True,True
+413,21,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405954,True,True,True,False,False,True
+414,21,archive_public_kiosk,archive_public_kiosk:build_frame:material conflict: archive_public_kiosk priority,v26-370325,True,True,True,True,False,True
+415,21,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-372442,True,True,True,False,False,True
+416,21,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:material conflict: greenhouse_heat_loop priority,v26-568794,True,True,True,True,True,True
+417,21,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-406086,True,True,True,False,False,True
+418,21,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-369464,True,True,True,False,False,True
+419,21,dusk_signal_court,dusk_signal_court:comfort_corner:material conflict: dusk_signal_court priority,v26-384796,True,True,True,True,False,True
+420,22,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: delegate asks for clearer terms,v26-395733,True,False,True,False,True,True
+421,22,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-459446,True,True,True,True,False,True
+422,22,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-416882,True,True,True,True,False,True
+423,22,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-346819,True,True,True,False,False,True
+424,22,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: material priority lost,v26-401915,True,True,True,True,True,True
+425,22,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-459837,True,True,True,False,False,True
+426,22,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-406158,True,True,True,True,False,True
+427,22,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-340980,True,True,True,True,False,True
+428,22,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: material priority lost,v26-402212,True,True,True,True,True,True
+429,22,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-465966,True,True,True,True,False,True
+430,22,archive_public_kiosk,archive_public_kiosk:weather_copy:delegated progress,v26-410924,True,True,True,False,False,True
+431,22,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-347035,True,True,True,True,False,True
+432,22,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-401980,True,True,True,False,True,True
+433,22,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-466247,True,True,True,True,False,True
+434,22,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-410759,True,True,True,True,False,True
+435,22,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-346565,True,True,True,False,False,True
+436,22,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-402663,True,True,True,True,True,True
+437,22,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-466269,True,True,True,False,False,True
+438,22,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-417155,True,True,True,True,False,True
+439,22,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-347181,True,True,True,True,False,True
+440,23,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-421103,True,True,True,False,True,True
+441,23,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: material priority lost,v26-431813,True,True,True,True,False,True
+442,23,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-365190,True,True,True,False,False,True
+443,23,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-339624,True,True,True,False,False,True
+444,23,greenhouse_heat_loop,greenhouse_heat_loop:index_care:blocked: delegate asks for clearer terms,v26-421235,True,True,True,False,True,True
+445,23,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: delegate asks for clearer terms,v26-431945,True,True,True,False,False,True
+446,23,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: material priority lost,v26-365239,True,True,True,True,False,True
+447,23,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-340098,True,True,True,False,False,True
+448,23,greenhouse_heat_loop,greenhouse_heat_loop:index_care:blocked: material priority lost,v26-421029,True,True,True,True,True,True
+449,23,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-431551,True,True,True,False,False,True
+450,23,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-371116,True,True,True,False,False,True
+451,23,dusk_signal_court,dusk_signal_court:string_wire:material conflict: dusk_signal_court priority,v26-345393,True,True,True,True,False,True
+452,23,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-414547,True,True,True,False,True,True
+453,23,flood_bridge_market_route,flood_bridge_market_route:cut_planks:material conflict: flood_bridge_market_route priority,v26-431171,True,True,True,True,False,True
+454,23,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-371181,True,True,True,False,False,True
+455,23,dusk_signal_court,dusk_signal_court:string_wire:blocked: delegate asks for clearer terms,v26-340406,True,True,True,False,False,True
+456,23,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-420428,True,True,True,False,True,True
+457,23,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-431808,True,True,True,False,False,True
+458,23,archive_public_kiosk,archive_public_kiosk:lamp_mount:material conflict: archive_public_kiosk priority,v26-400919,True,True,True,True,False,True
+459,23,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-334413,True,True,True,False,False,True
+460,24,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-409506,True,True,True,True,True,True
+461,24,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-401587,True,True,True,True,False,True
+462,24,archive_public_kiosk,archive_public_kiosk:sort_index:outcome changed routine,v26-477237,True,True,True,False,True,True
+463,24,dusk_signal_court,dusk_signal_court:signal_code:blocked: material priority lost,v26-339612,True,True,True,True,False,True
+464,24,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-409267,True,True,True,False,True,True
+465,24,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407653,True,True,True,True,False,True
+466,24,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-414473,True,True,True,True,True,True
+467,24,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-351222,True,True,True,False,False,True
+468,24,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-409066,True,True,True,True,True,True
+469,24,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407785,True,True,True,False,False,True
+470,24,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-413977,True,True,True,True,True,True
+471,24,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-351422,True,True,True,True,False,True
+472,24,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-409433,True,True,True,True,True,True
+473,24,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407278,True,True,True,True,False,True
+474,24,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-413708,True,True,True,False,True,True
+475,24,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-350521,True,True,True,True,False,True
+476,24,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-410582,True,True,True,False,True,True
+477,24,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407323,True,True,True,True,False,True
+478,24,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-408077,True,True,True,True,True,True
+479,24,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-351109,True,True,True,False,False,True
+480,25,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407976,True,True,True,True,False,True
+481,25,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-413567,True,True,True,False,True,True
+482,25,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-345817,True,True,True,True,False,True
+483,25,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-409978,True,True,True,False,True,True
+484,25,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-408021,True,True,True,True,False,True
+485,25,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-413866,True,True,True,True,True,True
+486,25,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-351319,True,True,True,False,False,True
+487,25,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-410365,True,True,True,True,True,True
+488,25,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-408153,True,True,True,False,False,True
+489,25,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-408151,True,True,True,True,True,True
+490,25,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-351365,True,True,True,True,False,True
+491,25,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-378708,True,True,True,True,True,True
+492,25,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-401718,True,True,True,True,False,True
+493,25,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-414157,True,True,True,False,True,True
+494,25,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-351177,True,True,True,True,False,True
+495,25,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-373329,True,True,True,False,True,True
+496,25,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: dependency not ready,v26-407698,True,True,True,True,False,True
+497,25,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-413580,True,True,True,True,True,True
+498,25,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-351206,True,True,True,False,False,True
+499,25,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-378735,True,True,True,True,True,True
+500,26,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405854,True,True,True,False,False,True
+501,26,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-399933,True,True,True,False,True,True
+502,26,dusk_signal_court,dusk_signal_court:comfort_corner:material conflict: dusk_signal_court priority,v26-390067,True,True,True,True,False,True
+503,26,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-413105,True,True,True,False,True,True
+504,26,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-406155,True,True,True,True,False,True
+505,26,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-400205,True,True,True,False,True,True
+506,26,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-389106,True,True,True,False,False,True
+507,26,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-412751,True,True,True,False,True,True
+508,26,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-406287,True,True,True,False,False,True
+509,26,archive_public_kiosk,archive_public_kiosk:build_frame:material conflict: archive_public_kiosk priority,v26-399817,True,True,True,True,True,True
+510,26,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-390239,True,True,True,False,False,True
+511,26,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:material conflict: greenhouse_heat_loop priority,v26-406347,True,True,True,True,True,True
+512,26,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-406121,True,True,True,False,False,True
+513,26,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-399961,True,True,True,False,True,True
+514,26,dusk_signal_court,dusk_signal_court:comfort_corner:material conflict: dusk_signal_court priority,v26-385745,True,True,True,True,False,True
+515,26,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-406535,True,True,True,False,True,True
+516,26,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-406254,True,True,True,True,False,True
+517,26,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-400233,True,True,True,False,True,True
+518,26,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: delegate asks for clearer terms,v26-391305,True,True,True,False,False,True
+519,26,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-406181,True,True,True,False,True,True
+520,27,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-465260,True,True,True,False,False,True
+521,27,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-449056,True,True,True,True,True,True
+522,27,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-347124,True,True,True,True,False,True
+523,27,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-396889,True,True,True,True,True,True
+524,27,flood_bridge_market_route,flood_bridge_market_route:survey_piers:blocked: material priority lost,v26-465851,True,True,True,True,False,True
+525,27,archive_public_kiosk,archive_public_kiosk:weather_copy:delegated progress,v26-448766,True,True,True,False,True,True
+526,27,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-347888,True,True,True,True,False,True
+527,27,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-396634,True,True,True,False,True,True
+528,27,flood_bridge_market_route,flood_bridge_market_route:survey_piers:blocked: material priority lost,v26-465889,True,True,True,True,False,True
+529,27,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: workshop over capacity,v26-449419,True,True,True,True,True,True
+530,27,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-347251,True,True,True,False,False,True
+531,27,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-396530,True,True,True,True,True,True
+532,27,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-466343,True,True,True,False,False,True
+533,27,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-442471,True,True,True,True,True,True
+534,27,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-347015,True,True,True,True,False,True
+535,27,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: delegate asks for clearer terms,v26-396825,True,True,True,True,True,True
+536,27,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-440695,True,True,True,True,False,True
+537,27,archive_public_kiosk,archive_public_kiosk:weather_copy:delegated progress,v26-447858,True,True,True,False,True,True
+538,27,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-347856,True,True,True,True,False,True
+539,27,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-396591,True,True,True,False,True,True
+540,28,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: delegate asks for clearer terms,v26-431576,True,True,True,False,False,True
+541,28,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: material priority lost,v26-401258,True,True,True,True,True,True
+542,28,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-339755,True,True,True,False,False,True
+543,28,greenhouse_heat_loop,greenhouse_heat_loop:index_care:blocked: material priority lost,v26-576603,True,True,True,True,True,True
+544,28,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-431865,True,True,True,False,False,True
+545,28,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-401954,True,True,True,False,True,True
+546,28,dusk_signal_court,dusk_signal_court:string_wire:material conflict: dusk_signal_court priority,v26-345424,True,True,True,True,False,True
+547,28,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-577087,True,True,True,False,True,True
+548,28,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: workshop over capacity,v26-431994,True,True,True,True,False,True
+549,28,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-395578,True,True,True,False,True,True
+550,28,dusk_signal_court,dusk_signal_court:string_wire:blocked: delegate asks for clearer terms,v26-340063,True,True,True,False,False,True
+551,28,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-577273,True,True,True,False,True,True
+552,28,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-431979,True,True,True,False,False,True
+553,28,archive_public_kiosk,archive_public_kiosk:lamp_mount:material conflict: archive_public_kiosk priority,v26-401041,True,True,True,True,True,True
+554,28,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-339924,True,True,True,False,False,True
+555,28,greenhouse_heat_loop,greenhouse_heat_loop:index_care:blocked: delegate asks for clearer terms,v26-576986,True,True,True,True,True,True
+556,28,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-431583,True,True,True,False,False,True
+557,28,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-401842,True,True,True,False,True,True
+558,28,dusk_signal_court,dusk_signal_court:string_wire:material conflict: dusk_signal_court priority,v26-374643,True,True,True,True,False,True
+559,28,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-577258,True,True,True,False,True,True
+560,29,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: material priority lost,v26-407348,True,True,True,True,False,True
+561,29,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-413884,True,True,True,True,True,True
+562,29,dusk_signal_court,dusk_signal_court:signal_code:outcome changed routine,v26-434439,True,True,True,False,True,True
+563,29,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-379103,True,True,True,True,True,True
+564,29,flood_bridge_market_route,flood_bridge_market_route:seal_joints:delegated progress,v26-419386,True,True,True,False,False,True
+565,29,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-414435,True,True,True,True,True,True
+566,29,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-380477,True,True,True,True,True,True
+567,29,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-379392,True,True,True,True,True,True
+568,29,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-419179,True,True,True,True,False,True
+569,29,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-414077,True,True,True,False,True,True
+570,29,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-380604,True,True,True,True,True,True
+571,29,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-378833,True,True,True,False,True,True
+572,29,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-414273,True,True,True,True,False,True
+573,29,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-389006,True,True,True,True,True,True
+574,29,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-380316,True,True,True,False,True,True
+575,29,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-379279,True,True,True,True,True,True
+576,29,flood_bridge_market_route,flood_bridge_market_route:seal_joints:delegated progress,v26-419253,True,True,True,False,False,True
+577,29,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-388816,True,True,True,True,True,True
+578,29,dusk_signal_court,dusk_signal_court:signal_code:blocked: material priority lost,v26-381087,True,True,True,True,True,True
+579,29,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-378864,True,True,True,True,True,True
+580,30,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-538048,True,True,True,True,True,True
+581,30,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-380409,True,True,True,False,True,True
+582,30,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-378587,True,True,True,True,True,True
+583,30,flood_bridge_market_route,flood_bridge_market_route:seal_joints:delegated progress,v26-413436,True,True,True,False,False,True
+584,30,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-538579,True,True,True,True,True,True
+585,30,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-374890,True,True,True,True,True,True
+586,30,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-378876,True,True,True,True,True,True
+587,30,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-420023,True,True,True,True,False,True
+588,30,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-538552,True,True,True,False,True,True
+589,30,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-375063,True,True,True,True,True,True
+590,30,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-378626,True,True,True,False,True,True
+591,30,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-419688,True,True,True,True,False,True
+592,30,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-538704,True,True,True,True,True,True
+593,30,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-380918,True,True,True,False,True,True
+594,30,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-378761,True,True,True,True,True,True
+595,30,flood_bridge_market_route,flood_bridge_market_route:seal_joints:delegated progress,v26-419667,True,True,True,False,False,True
+596,30,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-538514,True,True,True,True,True,True
+597,30,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-381179,True,True,True,True,True,True
+598,30,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-379050,True,True,True,True,True,True
+599,30,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-420235,True,True,True,True,False,True
+600,31,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-400150,True,True,True,False,True,True
+601,31,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-578370,True,True,True,False,True,True
+602,31,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-406716,True,True,True,False,True,True
+603,31,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-406154,True,True,True,False,False,True
+604,31,archive_public_kiosk,archive_public_kiosk:build_frame:material conflict: archive_public_kiosk priority,v26-400980,True,True,True,True,True,True
+605,31,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-578386,True,True,True,False,True,True
+606,31,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:material conflict: greenhouse_heat_loop priority,v26-407808,True,True,True,True,True,True
+607,31,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-406286,True,True,True,False,False,True
+608,31,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-400844,True,True,True,False,True,True
+609,31,dusk_signal_court,dusk_signal_court:comfort_corner:blocked: workshop over capacity,v26-578772,True,True,True,True,True,True
+610,31,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-412429,True,True,True,False,True,True
+611,31,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-405612,True,True,True,True,False,True
+612,31,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-400178,True,True,True,False,True,True
+613,31,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-578362,True,True,True,False,True,True
+614,31,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-412697,True,True,True,False,True,True
+615,31,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-406252,True,True,True,False,False,True
+616,31,archive_public_kiosk,archive_public_kiosk:build_frame:material conflict: archive_public_kiosk priority,v26-400033,True,True,True,True,True,True
+617,31,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-578378,True,True,True,False,True,True
+618,31,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:material conflict: greenhouse_heat_loop priority,v26-413546,True,True,True,True,True,True
+619,31,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:blocked: dependency not ready,v26-406384,True,True,True,False,False,True
+620,32,archive_public_kiosk,archive_public_kiosk:weather_copy:delegated progress,v26-447287,True,True,True,False,True,True
+621,32,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-376535,True,True,True,True,True,True
+622,32,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-396915,True,True,True,False,True,True
+623,32,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-434318,True,True,True,True,False,True
+624,32,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-449057,True,True,True,True,True,True
+625,32,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-376038,True,True,True,False,True,True
+626,32,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-390922,True,True,True,True,True,True
+627,32,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-440289,True,True,True,False,False,True
+628,32,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: workshop over capacity,v26-448579,True,True,True,True,True,True
+629,32,dusk_signal_court,dusk_signal_court:stake_posts:blocked: delegate asks for clearer terms,v26-376645,True,True,True,True,True,True
+630,32,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: delegate asks for clearer terms,v26-395527,True,True,True,True,True,True
+631,32,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-440036,True,True,True,True,False,True
+632,32,archive_public_kiosk,archive_public_kiosk:weather_copy:delegated progress,v26-448730,True,True,True,False,True,True
+633,32,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-376575,True,True,True,True,True,True
+634,32,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-396872,True,True,True,False,True,True
+635,32,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-440078,True,True,True,True,False,True
+636,32,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: material priority lost,v26-449037,True,True,True,True,True,True
+637,32,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-376001,True,True,True,False,True,True
+638,32,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-402687,True,True,True,True,True,True
+639,32,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-440387,True,True,True,False,False,True
+640,33,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-401534,True,True,True,False,True,True
+641,33,dusk_signal_court,dusk_signal_court:string_wire:material conflict: dusk_signal_court priority,v26-368453,True,True,True,True,True,True
+642,33,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-414849,True,True,True,False,True,True
+643,33,flood_bridge_market_route,flood_bridge_market_route:cut_planks:material conflict: flood_bridge_market_route priority,v26-432149,True,True,True,True,False,True
+644,33,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-401599,True,True,True,False,True,True
+645,33,dusk_signal_court,dusk_signal_court:string_wire:blocked: delegate asks for clearer terms,v26-362814,True,True,True,False,True,True
+646,33,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-421366,True,True,True,False,True,True
+647,33,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-432609,True,True,True,False,False,True
+648,33,archive_public_kiosk,archive_public_kiosk:lamp_mount:material conflict: archive_public_kiosk priority,v26-395207,True,True,True,True,True,True
+649,33,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-368221,True,True,True,False,True,True
+650,33,greenhouse_heat_loop,greenhouse_heat_loop:index_care:material conflict: greenhouse_heat_loop priority,v26-420840,True,True,True,True,True,True
+651,33,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-431915,True,True,True,False,False,True
+652,33,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-401422,True,True,True,False,True,True
+653,33,dusk_signal_court,dusk_signal_court:string_wire:material conflict: dusk_signal_court priority,v26-373906,True,True,True,True,True,True
+654,33,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-421405,True,True,True,False,True,True
+655,33,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: delegate asks for clearer terms,v26-432044,True,True,True,True,False,True
+656,33,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-402118,True,True,True,False,True,True
+657,33,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-368871,True,True,True,False,True,True
+658,33,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-421889,True,True,True,False,True,True
+659,33,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-433012,True,True,True,False,False,True
+660,34,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-388746,True,True,True,True,True,True
+661,34,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-380355,True,True,True,True,True,True
+662,34,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-378944,True,True,True,True,True,True
+663,34,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-439193,True,True,True,True,False,True
+664,34,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-388483,True,True,True,False,True,True
+665,34,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-375075,True,True,True,True,True,True
+666,34,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: delegate asks for clearer terms,v26-378759,True,True,True,False,True,True
+667,34,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-445877,True,True,True,True,False,True
+668,34,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-389169,True,True,True,True,True,True
+669,34,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-381596,True,True,True,False,True,True
+670,34,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-378829,True,True,True,True,True,True
+671,34,flood_bridge_market_route,flood_bridge_market_route:seal_joints:outcome changed routine,v26-515743,True,True,True,False,True,True
+672,34,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-383438,True,True,True,True,True,True
+673,34,dusk_signal_court,dusk_signal_court:signal_code:blocked: material priority lost,v26-381348,True,True,True,True,True,True
+674,34,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-378414,True,True,True,True,True,True
+675,34,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: material priority lost,v26-450925,True,True,True,True,True,True
+676,34,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-388581,True,True,True,False,True,True
+677,34,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-381314,True,True,True,True,True,True
+678,34,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-379331,True,True,True,False,True,True
+679,34,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-451322,True,True,True,True,True,True
+680,35,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-392543,True,True,True,True,True,True
+681,35,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-519841,True,True,True,True,True,True
+682,35,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-451392,True,True,True,True,True,True
+683,35,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-388514,True,True,True,False,True,True
+684,35,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-392385,True,True,True,True,True,True
+685,35,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-527442,True,True,True,False,True,True
+686,35,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-445367,True,True,True,True,True,True
+687,35,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-389038,True,True,True,True,True,True
+688,35,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-392693,True,True,True,False,True,True
+689,35,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-527421,True,True,True,True,True,True
+690,35,flood_bridge_market_route,flood_bridge_market_route:seal_joints:delegated progress,v26-451207,True,True,True,False,True,True
+691,35,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-389271,True,True,True,True,True,True
+692,35,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-393427,True,True,True,True,True,True
+693,35,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-520017,True,True,True,True,True,True
+694,35,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-451604,True,True,True,True,True,True
+695,35,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-388612,True,True,True,False,True,True
+696,35,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-393837,True,True,True,True,True,True
+697,35,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-519915,True,True,True,False,True,True
+698,35,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-451485,True,True,True,True,True,True
+699,35,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-388981,True,True,True,True,True,True
+700,36,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-421251,True,True,True,False,True,True
+701,36,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:material conflict: greenhouse_heat_loop priority,v26-413524,True,True,True,True,True,True
+702,36,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:delegated progress,v26-609657,True,True,True,False,True,True
+703,36,archive_public_kiosk,archive_public_kiosk:build_frame:blocked: delegate asks for clearer terms,v26-400350,True,True,True,False,True,True
+704,36,dusk_signal_court,dusk_signal_court:comfort_corner:material conflict: dusk_signal_court priority,v26-420748,True,True,True,True,True,True
+705,36,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-413292,True,True,True,False,True,True
+706,36,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:material conflict: flood_bridge_market_route priority,v26-609596,True,True,True,True,True,True
+707,36,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-400631,True,True,True,False,True,True
+708,36,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-420936,True,True,True,False,True,True
+709,36,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-413560,True,True,True,False,True,True
+710,36,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:delegated progress,v26-609233,True,True,True,False,True,True
+711,36,archive_public_kiosk,archive_public_kiosk:build_frame:material conflict: archive_public_kiosk priority,v26-401098,True,True,True,True,True,True
+712,36,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-421303,True,True,True,False,True,True
+713,36,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:material conflict: greenhouse_heat_loop priority,v26-382486,True,True,True,True,True,True
+714,36,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:delegated progress,v26-609517,True,True,True,False,True,True
+715,36,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-400877,True,True,True,False,True,True
+716,36,dusk_signal_court,dusk_signal_court:comfort_corner:material conflict: dusk_signal_court priority,v26-421562,True,True,True,True,True,True
+717,36,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-387707,True,True,True,False,True,True
+718,36,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:material conflict: flood_bridge_market_route priority,v26-624745,True,True,True,True,True,True
+719,36,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-375886,True,True,True,False,True,True
+720,37,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-375697,True,True,True,False,True,True
+721,37,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-372164,True,True,True,True,True,True
+722,37,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-471637,True,True,True,False,True,True
+723,37,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-610107,True,True,True,True,True,True
+724,37,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-376773,True,True,True,True,True,True
+725,37,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: delegate asks for clearer terms,v26-372296,True,True,True,True,True,True
+726,37,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-472646,True,True,True,True,True,True
+727,37,archive_public_kiosk,archive_public_kiosk:weather_copy:delegated progress,v26-611349,True,True,True,False,True,True
+728,37,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-376379,True,True,True,True,True,True
+729,37,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-378023,True,True,True,False,True,True
+730,37,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-471605,True,True,True,True,True,True
+731,37,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-610756,True,True,True,True,True,True
+732,37,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-376210,True,True,True,False,True,True
+733,37,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-378088,True,True,True,True,True,True
+734,37,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-471735,True,True,True,False,True,True
+735,37,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-611240,True,True,True,True,True,True
+736,37,dusk_signal_court,dusk_signal_court:stake_posts:blocked: material priority lost,v26-376260,True,True,True,True,True,True
+737,37,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-378063,True,True,True,True,True,True
+738,37,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-465888,True,True,True,True,True,True
+739,37,archive_public_kiosk,archive_public_kiosk:weather_copy:delegated progress,v26-610945,True,True,True,False,True,True
+740,38,dusk_signal_court,dusk_signal_court:string_wire:blocked: delegate asks for clearer terms,v26-515567,True,True,True,False,True,True
+741,38,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-408720,True,True,True,False,True,True
+742,38,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-464724,True,True,True,False,True,True
+743,38,archive_public_kiosk,archive_public_kiosk:lamp_mount:material conflict: archive_public_kiosk priority,v26-401695,True,True,True,True,True,True
+744,38,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-515428,True,True,True,False,True,True
+745,38,greenhouse_heat_loop,greenhouse_heat_loop:index_care:material conflict: greenhouse_heat_loop priority,v26-421222,True,True,True,True,True,True
+746,38,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-464328,True,True,True,False,True,True
+747,38,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-402007,True,True,True,False,True,True
+748,38,dusk_signal_court,dusk_signal_court:string_wire:material conflict: dusk_signal_court priority,v26-508631,True,True,True,True,True,True
+749,38,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-421706,True,True,True,False,True,True
+750,38,flood_bridge_market_route,flood_bridge_market_route:cut_planks:blocked: delegate asks for clearer terms,v26-464336,True,True,True,True,True,True
+751,38,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-395964,True,True,True,False,True,True
+752,38,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-515456,True,True,True,False,True,True
+753,38,greenhouse_heat_loop,greenhouse_heat_loop:index_care:delegated progress,v26-421892,True,True,True,False,True,True
+754,38,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-464442,True,True,True,False,True,True
+755,38,archive_public_kiosk,archive_public_kiosk:lamp_mount:blocked: material priority lost,v26-396015,True,True,True,True,True,True
+756,38,dusk_signal_court,dusk_signal_court:string_wire:delegated progress,v26-515317,True,True,True,False,True,True
+757,38,greenhouse_heat_loop,greenhouse_heat_loop:index_care:blocked: material priority lost,v26-416251,True,True,True,True,True,True
+758,38,flood_bridge_market_route,flood_bridge_market_route:cut_planks:delegated progress,v26-464046,True,True,True,False,True,True
+759,38,archive_public_kiosk,archive_public_kiosk:lamp_mount:delegated progress,v26-401880,True,True,True,False,True,True
+760,39,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-362627,True,True,True,True,True,True
+761,39,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-378393,True,True,True,False,True,True
+762,39,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-451051,True,True,True,True,True,True
+763,39,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-388877,True,True,True,True,True,True
+764,39,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-368376,True,True,True,False,True,True
+765,39,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: workshop over capacity,v26-378602,True,True,True,True,True,True
+766,39,flood_bridge_market_route,flood_bridge_market_route:seal_joints:delegated progress,v26-445040,True,True,True,False,True,True
+767,39,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-388687,True,True,True,True,True,True
+768,39,dusk_signal_court,dusk_signal_court:signal_code:blocked: material priority lost,v26-368428,True,True,True,True,True,True
+769,39,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-378891,True,True,True,True,True,True
+770,39,flood_bridge_market_route,flood_bridge_market_route:seal_joints:blocked: material priority lost,v26-444528,True,True,True,True,True,True
+771,39,archive_public_kiosk,archive_public_kiosk:sort_index:delegated progress,v26-388447,True,True,True,False,True,True
+772,39,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-368027,True,True,True,True,True,True
+773,39,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-378253,True,True,True,False,True,True
+774,39,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-451693,True,True,True,True,True,True
+775,39,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-388812,True,True,True,True,True,True
+776,39,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-368394,True,True,True,False,True,True
+777,39,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:blocked: delegate asks for clearer terms,v26-378776,True,True,True,True,True,True
+778,39,flood_bridge_market_route,flood_bridge_market_route:seal_joints:delegated progress,v26-451311,True,True,True,False,True,True
+779,39,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: material priority lost,v26-389110,True,True,True,True,True,True
+780,40,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-378660,True,True,True,False,True,True
+781,40,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-451638,True,True,True,True,True,True
+782,40,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-388903,True,True,True,True,True,True
+783,40,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-368327,True,True,True,False,True,True
+784,40,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-378396,True,True,True,True,True,True
+785,40,flood_bridge_market_route,flood_bridge_market_route:seal_joints:delegated progress,v26-451093,True,True,True,False,True,True
+786,40,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-388721,True,True,True,True,True,True
+787,40,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-368147,True,True,True,True,True,True
+788,40,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-378685,True,True,True,True,True,True
+789,40,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-445502,True,True,True,True,True,True
+790,40,archive_public_kiosk,archive_public_kiosk:sort_index:blocked: delegate asks for clearer terms,v26-388877,True,True,True,False,True,True
+791,40,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-368136,True,True,True,True,True,True
+792,40,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:delegated progress,v26-378520,True,True,True,False,True,True
+793,40,flood_bridge_market_route,flood_bridge_market_route:seal_joints:material conflict: flood_bridge_market_route priority,v26-451850,True,True,True,True,True,True
+794,40,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-388846,True,True,True,True,True,True
+795,40,dusk_signal_court,dusk_signal_court:signal_code:delegated progress,v26-368425,True,True,True,False,True,True
+796,40,greenhouse_heat_loop,greenhouse_heat_loop:fit_glass:material conflict: greenhouse_heat_loop priority,v26-373375,True,True,True,True,True,True
+797,40,flood_bridge_market_route,flood_bridge_market_route:seal_joints:delegated progress,v26-450960,True,True,True,False,True,True
+798,40,archive_public_kiosk,archive_public_kiosk:sort_index:material conflict: archive_public_kiosk priority,v26-383413,True,True,True,True,True,True
+799,40,dusk_signal_court,dusk_signal_court:signal_code:material conflict: dusk_signal_court priority,v26-368320,True,True,True,True,True,True
+800,41,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-387475,True,True,True,False,True,True
+801,41,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:material conflict: flood_bridge_market_route priority,v26-461199,True,True,True,True,True,True
+802,41,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-375654,True,True,True,False,True,True
+803,41,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-421823,True,True,True,False,True,True
+804,41,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-387607,True,True,True,False,True,True
+805,41,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:delegated progress,v26-461838,True,True,True,False,True,True
+806,41,archive_public_kiosk,archive_public_kiosk:build_frame:material conflict: archive_public_kiosk priority,v26-376020,True,True,True,True,True,True
+807,41,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-416356,True,True,True,False,True,True
+808,41,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:material conflict: greenhouse_heat_loop priority,v26-388691,True,True,True,True,True,True
+809,41,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:delegated progress,v26-462122,True,True,True,False,True,True
+810,41,archive_public_kiosk,archive_public_kiosk:build_frame:delegated progress,v26-375620,True,True,True,False,True,True
+811,41,dusk_signal_court,dusk_signal_court:comfort_corner:material conflict: dusk_signal_court priority,v26-420956,True,True,True,True,True,True
+812,41,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-387573,True,True,True,False,True,True
+813,41,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:material conflict: flood_bridge_market_route priority,v26-461398,True,True,True,True,True,True
+814,41,archive_public_kiosk,archive_public_kiosk:build_frame:blocked: delegate asks for clearer terms,v26-375752,True,True,True,False,True,True
+815,41,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-421875,True,True,True,False,True,True
+816,41,greenhouse_heat_loop,greenhouse_heat_loop:coil_pipe:delegated progress,v26-387705,True,True,True,False,True,True
+817,41,flood_bridge_market_route,flood_bridge_market_route:lamp_markers:delegated progress,v26-461860,True,True,True,False,True,True
+818,41,archive_public_kiosk,archive_public_kiosk:build_frame:material conflict: archive_public_kiosk priority,v26-376037,True,True,True,True,True,True
+819,41,dusk_signal_court,dusk_signal_court:comfort_corner:delegated progress,v26-421891,True,True,True,False,True,True
+820,42,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: delegate asks for clearer terms,v26-525620,True,True,True,True,True,True
+821,42,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-471897,True,True,True,True,True,True
+822,42,archive_public_kiosk,archive_public_kiosk:weather_copy:delegated progress,v26-442946,True,True,True,False,True,True
+823,42,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-376963,True,True,True,True,True,True
+824,42,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-525752,True,True,True,False,True,True
+825,42,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-471939,True,True,True,True,True,True
+826,42,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: workshop over capacity,v26-449582,True,True,True,True,True,True
+827,42,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-375535,True,True,True,False,True,True
+828,42,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:blocked: material priority lost,v26-526515,True,True,True,True,True,True
+829,42,flood_bridge_market_route,flood_bridge_market_route:survey_piers:delegated progress,v26-471899,True,True,True,False,True,True
+830,42,archive_public_kiosk,archive_public_kiosk:weather_copy:material conflict: archive_public_kiosk priority,v26-447541,True,True,True,True,True,True
+831,42,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-369720,True,True,True,True,True,True
+832,42,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:material conflict: greenhouse_heat_loop priority,v26-526501,True,True,True,True,True,True
+833,42,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-472170,True,True,True,True,True,True
+834,42,archive_public_kiosk,archive_public_kiosk:weather_copy:delegated progress,v26-449045,True,True,True,False,True,True
+835,42,dusk_signal_court,dusk_signal_court:stake_posts:material conflict: dusk_signal_court priority,v26-376704,True,True,True,True,True,True
+836,42,greenhouse_heat_loop,greenhouse_heat_loop:plant_bed:delegated progress,v26-526481,True,True,True,False,True,True
+837,42,flood_bridge_market_route,flood_bridge_market_route:survey_piers:material conflict: flood_bridge_market_route priority,v26-472212,True,True,True,True,True,True
+838,42,archive_public_kiosk,archive_public_kiosk:weather_copy:blocked: workshop over capacity,v26-448562,True,True,True,True,True,True
+839,42,dusk_signal_court,dusk_signal_court:stake_posts:delegated progress,v26-376525,True,True,True,False,True,True

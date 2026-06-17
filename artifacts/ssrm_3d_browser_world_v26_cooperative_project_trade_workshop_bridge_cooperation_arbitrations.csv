@@ -1,0 +1,841 @@
+tick_id,day,conflict_id,parties,rule,selected_allocation,fairness_score,residual_resentment,appeal_available,overruled,calibrated_not_paranoid
+0,1,c01-00-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+1,1,c01-01-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+2,1,c01-02-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+3,1,c01-03-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+4,1,c01-04-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+5,1,c01-05-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+6,1,c01-06-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+7,1,c01-07-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+8,1,c01-08-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+9,1,c01-09-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+10,1,c01-10-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+11,1,c01-11-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+12,1,c01-12-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+13,1,c01-13-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+14,1,c01-14-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+15,1,c01-15-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+16,1,c01-16-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+17,1,c01-17-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+18,1,c01-18-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+19,1,c01-19-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+20,2,c02-00-greenhouse_heat_loop-water,"Fay,Ari",none,none,1.0,0.0,False,False,True
+21,2,c02-01-flood_bridge_market_route-planks,"Nia,Nia",none,none,1.0,0.0,False,False,True
+22,2,c02-02-archive_public_kiosk-thread,"Fay,Milo",none,none,1.0,0.0,False,False,True
+23,2,c02-03-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True
+24,2,c02-04-greenhouse_heat_loop-water,"Fay,Ari",none,none,1.0,0.0,False,False,True
+25,2,c02-05-flood_bridge_market_route-planks,"Nia,Nia",none,none,1.0,0.0,False,False,True
+26,2,c02-06-archive_public_kiosk-thread,"Fay,Milo",none,none,1.0,0.0,False,False,True
+27,2,c02-07-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True
+28,2,c02-08-greenhouse_heat_loop-water,"Fay,Ari",none,none,1.0,0.0,False,False,True
+29,2,c02-09-flood_bridge_market_route-planks,"Nia,Nia",none,none,1.0,0.0,False,False,True
+30,2,c02-10-archive_public_kiosk-thread,"Fay,Milo",none,none,1.0,0.0,False,False,True
+31,2,c02-11-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True
+32,2,c02-12-greenhouse_heat_loop-water,"Fay,Ari",none,none,1.0,0.0,False,False,True
+33,2,c02-13-flood_bridge_market_route-planks,"Nia,Nia",none,none,1.0,0.0,False,False,True
+34,2,c02-14-archive_public_kiosk-thread,"Fay,Milo",none,none,1.0,0.0,False,False,True
+35,2,c02-15-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True
+36,2,c02-16-greenhouse_heat_loop-water,"Fay,Ari",none,none,1.0,0.0,False,False,True
+37,2,c02-17-flood_bridge_market_route-planks,"Nia,Nia",none,none,1.0,0.0,False,False,True
+38,2,c02-18-archive_public_kiosk-thread,"Fay,Milo",none,none,1.0,0.0,False,False,True
+39,2,c02-19-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True
+40,3,c03-00-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+41,3,c03-01-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+42,3,c03-02-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+43,3,c03-03-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+44,3,c03-04-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+45,3,c03-05-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+46,3,c03-06-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+47,3,c03-07-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+48,3,c03-08-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+49,3,c03-09-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+50,3,c03-10-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+51,3,c03-11-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+52,3,c03-12-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+53,3,c03-13-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+54,3,c03-14-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+55,3,c03-15-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+56,3,c03-16-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+57,3,c03-17-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+58,3,c03-18-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+59,3,c03-19-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+60,4,c04-00-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+61,4,c04-01-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.3604,True,False,True
+62,4,c04-02-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.366,True,False,True
+63,4,c04-03-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+64,4,c04-04-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.338,True,False,True
+65,4,c04-05-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+66,4,c04-06-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.369074,True,False,True
+67,4,c04-07-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.3604,True,False,True
+68,4,c04-08-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.368839,True,True,True
+69,4,c04-09-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.363427,True,False,True
+70,4,c04-10-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+71,4,c04-11-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.363427,True,False,True
+72,4,c04-12-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+73,4,c04-13-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.36648,True,False,True
+74,4,c04-14-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.432175,True,False,True
+75,4,c04-15-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+76,4,c04-16-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.431937,True,False,True
+77,4,c04-17-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+78,4,c04-18-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.375805,False,False,True
+79,4,c04-19-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.36648,True,False,True
+80,5,c05-00-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.4372,True,False,True
+81,5,c05-01-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.369559,True,False,True
+82,5,c05-02-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+83,5,c05-03-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.3772,True,False,True
+84,5,c05-04-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+85,5,c05-05-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.372663,True,True,True
+86,5,c05-06-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.3772,True,False,True
+87,5,c05-07-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.7,0.380368,True,False,False
+88,5,c05-08-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.440872,True,False,True
+89,5,c05-09-archive_public_kiosk-paper,"Nia,Fay",none,none,1.0,0.0,False,False,True
+90,5,c05-10-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.380368,True,False,True
+91,5,c05-11-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+92,5,c05-12-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.444576,True,False,True
+93,5,c05-13-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.375793,True,False,True
+94,5,c05-14-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+95,5,c05-15-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.383564,True,False,True
+96,5,c05-16-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+97,5,c05-17-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.37895,True,False,True
+98,5,c05-18-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.383564,True,False,True
+99,5,c05-19-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.386786,True,False,True
+100,6,c06-00-flood_bridge_market_route-oil,"Milo,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.426,True,False,True
+101,6,c06-01-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+102,6,c06-02-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+103,6,c06-03-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+104,6,c06-04-flood_bridge_market_route-oil,"Milo,Nia",none,none,1.0,0.0,False,False,True
+105,6,c06-05-archive_public_kiosk-ink,"Ari,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.3716,True,False,True
+106,6,c06-06-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+107,6,c06-07-greenhouse_heat_loop-copper,"Milo,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.3716,True,False,True
+108,6,c06-08-flood_bridge_market_route-oil,"Milo,Nia",none,none,1.0,0.0,False,False,True
+109,6,c06-09-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+110,6,c06-10-dusk_signal_court-rope,"Fay,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.338,True,False,True
+111,6,c06-11-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+112,6,c06-12-flood_bridge_market_route-oil,"Milo,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.369578,True,False,True
+113,6,c06-13-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+114,6,c06-14-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+115,6,c06-15-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+116,6,c06-16-flood_bridge_market_route-oil,"Milo,Nia",none,none,1.0,0.0,False,False,True
+117,6,c06-17-archive_public_kiosk-ink,"Ari,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.434721,False,False,True
+118,6,c06-18-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+119,6,c06-19-greenhouse_heat_loop-copper,"Milo,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.434721,True,True,True
+120,7,c07-00-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.378962,True,False,True
+121,7,c07-01-archive_public_kiosk-thread,"Fay,Fay",none,none,1.0,0.0,False,False,True
+122,7,c07-02-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.375566,True,False,True
+123,7,c07-03-greenhouse_heat_loop-water,"Fay,Nia",none,none,1.0,0.0,False,False,True
+124,7,c07-04-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.442145,True,False,True
+125,7,c07-05-archive_public_kiosk-thread,"Fay,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.368839,True,False,True
+126,7,c07-06-dusk_signal_court-oil,"Ari,Ari",none,none,1.0,0.0,False,False,True
+127,7,c07-07-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.369559,True,False,True
+128,7,c07-08-flood_bridge_market_route-planks,"Nia,Milo",none,none,1.0,0.0,False,False,True
+129,7,c07-09-archive_public_kiosk-thread,"Fay,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.371937,True,False,True
+130,7,c07-10-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.37872,False,False,True
+131,7,c07-11-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.372663,True,False,True
+132,7,c07-12-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.445859,True,False,True
+133,7,c07-13-archive_public_kiosk-thread,"Fay,Fay",none,none,1.0,0.0,False,False,True
+134,7,c07-14-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.381902,True,False,True
+135,7,c07-15-greenhouse_heat_loop-water,"Fay,Nia",none,none,1.0,0.0,False,False,True
+136,7,c07-16-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.389604,True,True,True
+137,7,c07-17-archive_public_kiosk-thread,"Fay,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.435062,True,False,True
+138,7,c07-18-dusk_signal_court-oil,"Ari,Ari",none,none,1.0,0.0,False,False,True
+139,7,c07-19-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.375793,True,False,True
+140,8,c08-00-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+141,8,c08-01-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+142,8,c08-02-dusk_signal_court-wire,"Milo,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.3772,True,False,True
+143,8,c08-03-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+144,8,c08-04-flood_bridge_market_route-resin,"Ari,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.390035,True,False,True
+145,8,c08-05-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+146,8,c08-06-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+147,8,c08-07-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+148,8,c08-08-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+149,8,c08-09-archive_public_kiosk-glass,"Milo,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.338,True,False,True
+150,8,c08-10-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+151,8,c08-11-greenhouse_heat_loop-compost,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.386786,True,False,True
+152,8,c08-12-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+153,8,c08-13-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+154,8,c08-14-dusk_signal_court-wire,"Milo,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.440368,True,False,True
+155,8,c08-15-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+156,8,c08-16-flood_bridge_market_route-resin,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.453311,False,False,True
+157,8,c08-17-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+158,8,c08-18-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+159,8,c08-19-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+160,9,c09-00-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+161,9,c09-01-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.382133,True,False,True
+162,9,c09-02-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.390035,True,False,True
+163,9,c09-03-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.397119,True,False,True
+164,9,c09-04-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.38831,True,False,True
+165,9,c09-05-archive_public_kiosk-paper,"Nia,Fay",none,none,1.0,0.0,False,False,True
+166,9,c09-06-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.393311,True,False,True
+167,9,c09-07-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+168,9,c09-08-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.391572,True,False,True
+169,9,c09-09-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.445343,False,False,True
+170,9,c09-10-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+171,9,c09-11-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.460454,True,False,True
+172,9,c09-12-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+173,9,c09-13-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.389084,True,False,True
+174,9,c09-14-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.77,0.396615,True,False,False
+175,9,c09-15-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.404322,True,False,True
+176,9,c09-16-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.394861,True,False,True
+177,9,c09-17-archive_public_kiosk-paper,"Nia,Fay",none,none,1.0,0.0,False,False,True
+178,9,c09-18-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.459946,True,False,True
+179,9,c09-19-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+180,10,c10-00-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.392877,True,False,True
+181,10,c10-01-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.392352,True,False,True
+182,10,c10-02-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.37391,False,False,True
+183,10,c10-03-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.37895,True,False,True
+184,10,c10-04-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+185,10,c10-05-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.395648,True,False,True
+186,10,c10-06-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+187,10,c10-07-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.382133,True,True,True
+188,10,c10-08-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.396177,True,False,True
+189,10,c10-09-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+190,10,c10-10-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.377051,True,False,True
+191,10,c10-11-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+192,10,c10-12-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.399505,True,False,True
+193,10,c10-13-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.398971,True,False,True
+194,10,c10-14-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.380218,True,False,True
+195,10,c10-15-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.385343,False,False,True
+196,10,c10-16-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+197,10,c10-17-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.402323,True,False,True
+198,10,c10-18-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+199,10,c10-19-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.38858,True,False,True
+200,11,c11-00-archive_public_kiosk-ink,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.366,True,False,True
+201,11,c11-01-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+202,11,c11-02-greenhouse_heat_loop-copper,"Milo,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.372683,True,False,True
+203,11,c11-03-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+204,11,c11-04-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+205,11,c11-05-dusk_signal_court-rope,"Fay,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.366,True,False,True
+206,11,c11-06-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+207,11,c11-07-flood_bridge_market_route-oil,"Milo,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.368839,True,False,True
+208,11,c11-08-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+209,11,c11-09-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+210,11,c11-10-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+211,11,c11-11-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+212,11,c11-12-archive_public_kiosk-ink,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.369074,True,False,True
+213,11,c11-13-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+214,11,c11-14-greenhouse_heat_loop-copper,"Milo,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.375813,True,False,True
+215,11,c11-15-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+216,11,c11-16-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+217,11,c11-17-dusk_signal_court-rope,"Fay,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.429074,True,False,True
+218,11,c11-18-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+219,11,c11-19-flood_bridge_market_route-oil,"Milo,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.431937,True,False,True
+220,12,c12-00-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.398178,True,False,True
+221,12,c12-01-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True
+222,12,c12-02-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.372679,True,False,True
+223,12,c12-03-flood_bridge_market_route-planks,"Nia,Nia",none,none,1.0,0.0,False,False,True
+224,12,c12-04-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.401523,True,False,True
+225,12,c12-05-dusk_signal_court-oil,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.372175,True,False,True
+226,12,c12-06-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.375809,True,False,True
+227,12,c12-07-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.338,True,False,True
+228,12,c12-08-archive_public_kiosk-thread,"Fay,Milo",none,none,1.0,0.0,False,False,True
+229,12,c12-09-dusk_signal_court-oil,"Ari,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.375301,True,False,True
+230,12,c12-10-greenhouse_heat_loop-water,"Fay,Ari",none,none,1.0,0.0,False,False,True
+231,12,c12-11-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.368839,True,False,True
+232,12,c12-12-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.77,0.464896,True,False,False
+233,12,c12-13-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True
+234,12,c12-14-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.378966,False,False,True
+235,12,c12-15-flood_bridge_market_route-planks,"Nia,Nia",none,none,1.0,0.0,False,False,True
+236,12,c12-16-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.468801,True,False,True
+237,12,c12-17-dusk_signal_court-oil,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.378453,True,False,True
+238,12,c12-18-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.382149,True,True,True
+239,12,c12-19-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.371937,True,False,True
+240,13,c13-00-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+241,13,c13-01-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+242,13,c13-02-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+243,13,c13-03-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+244,13,c13-04-archive_public_kiosk-glass,"Milo,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.384068,True,False,True
+245,13,c13-05-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+246,13,c13-06-greenhouse_heat_loop-compost,"Nia,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.375062,True,False,True
+247,13,c13-07-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+248,13,c13-08-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+249,13,c13-09-dusk_signal_court-wire,"Milo,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.438373,True,False,True
+250,13,c13-10-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+251,13,c13-11-flood_bridge_market_route-resin,"Ari,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.438373,True,False,True
+252,13,c13-12-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+253,13,c13-13-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+254,13,c13-14-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+255,13,c13-15-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+256,13,c13-16-archive_public_kiosk-glass,"Milo,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.447294,True,False,True
+257,13,c13-17-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+258,13,c13-18-greenhouse_heat_loop-compost,"Nia,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.438212,True,False,True
+259,13,c13-19-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+260,14,c14-00-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+261,14,c14-01-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.7,0.405702,True,False,False
+262,14,c14-02-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+263,14,c14-03-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.391844,True,False,True
+264,14,c14-04-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.462861,True,False,True
+265,14,c14-05-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+266,14,c14-06-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.443412,True,False,True
+267,14,c14-07-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+268,14,c14-08-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.406749,True,False,True
+269,14,c14-09-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.40911,True,False,True
+270,14,c14-10-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.387136,True,False,True
+271,14,c14-11-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.395135,True,False,True
+272,14,c14-12-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+273,14,c14-13-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.472547,False,False,True
+274,14,c14-14-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+275,14,c14-15-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.458455,True,False,True
+276,14,c14-16-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.410165,True,False,True
+277,14,c14-17-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+278,14,c14-18-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.390388,True,False,True
+279,14,c14-19-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+280,15,c15-00-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.46381,True,False,True
+281,15,c15-01-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+282,15,c15-02-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.412739,True,False,True
+283,15,c15-03-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.416516,True,False,True
+284,15,c15-04-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+285,15,c15-05-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.407719,True,False,True
+286,15,c15-06-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+287,15,c15-07-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.420015,True,False,True
+288,15,c15-08-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.467706,True,False,True
+289,15,c15-09-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.411143,True,True,True
+290,15,c15-10-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.77,0.416206,True,False,False
+291,15,c15-11-archive_public_kiosk-paper,"Nia,Fay",none,none,1.0,0.0,False,False,True
+292,15,c15-12-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.471634,True,False,True
+293,15,c15-13-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+294,15,c15-14-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.419702,True,False,True
+295,15,c15-15-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.423543,True,False,True
+296,15,c15-16-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+297,15,c15-17-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.414597,True,False,True
+298,15,c15-18-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+299,15,c15-19-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.415901,False,False,True
+300,16,c16-00-dusk_signal_court-rope,"Fay,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.378716,True,False,True
+301,16,c16-01-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+302,16,c16-02-flood_bridge_market_route-oil,"Milo,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.37897,True,False,True
+303,16,c16-03-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+304,16,c16-04-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+305,16,c16-05-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+306,16,c16-06-flood_bridge_market_route-oil,"Milo,Nia",none,none,1.0,0.0,False,False,True
+307,16,c16-07-archive_public_kiosk-ink,"Ari,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.382055,True,False,True
+308,16,c16-08-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+309,16,c16-09-greenhouse_heat_loop-copper,"Milo,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.382055,True,False,True
+310,16,c16-10-flood_bridge_market_route-oil,"Milo,Nia",none,none,1.0,0.0,False,False,True
+311,16,c16-11-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+312,16,c16-12-dusk_signal_court-rope,"Fay,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.381897,False,False,True
+313,16,c16-13-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+314,16,c16-14-flood_bridge_market_route-oil,"Milo,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.442154,True,False,True
+315,16,c16-15-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+316,16,c16-16-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+317,16,c16-17-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+318,16,c16-18-flood_bridge_market_route-oil,"Milo,Nia",none,none,1.0,0.0,False,False,True
+319,16,c16-19-archive_public_kiosk-ink,"Ari,Milo",need + dependency + debt repair,split stock and schedule appeal,0.77,0.385265,True,False,False
+320,17,c17-00-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.442467,True,False,True
+321,17,c17-01-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.402306,True,False,True
+322,17,c17-02-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.402411,True,False,True
+323,17,c17-03-archive_public_kiosk-thread,"Fay,Fay",none,none,1.0,0.0,False,False,True
+324,17,c17-04-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.386184,True,False,True
+325,17,c17-05-greenhouse_heat_loop-water,"Fay,Nia",none,none,1.0,0.0,False,False,True
+326,17,c17-06-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.394591,True,False,True
+327,17,c17-07-archive_public_kiosk-thread,"Fay,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.385105,True,False,True
+328,17,c17-08-dusk_signal_court-oil,"Ari,Ari",none,none,1.0,0.0,False,False,True
+329,17,c17-09-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.405685,True,False,True
+330,17,c17-10-flood_bridge_market_route-planks,"Nia,Milo",none,none,1.0,0.0,False,False,True
+331,17,c17-11-archive_public_kiosk-thread,"Fay,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.38834,True,False,True
+332,17,c17-12-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.449428,True,False,True
+333,17,c17-13-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.409093,True,False,True
+334,17,c17-14-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.397906,True,False,True
+335,17,c17-15-archive_public_kiosk-thread,"Fay,Fay",none,none,1.0,0.0,False,False,True
+336,17,c17-16-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.453203,True,False,True
+337,17,c17-17-greenhouse_heat_loop-water,"Fay,Nia",none,none,1.0,0.0,False,False,True
+338,17,c17-18-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.401248,False,False,True
+339,17,c17-19-archive_public_kiosk-thread,"Fay,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.391602,True,False,True
+340,18,c18-00-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+341,18,c18-01-greenhouse_heat_loop-compost,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.415596,True,False,True
+342,18,c18-02-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+343,18,c18-03-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+344,18,c18-04-dusk_signal_court-wire,"Milo,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.451051,True,False,True
+345,18,c18-05-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+346,18,c18-06-flood_bridge_market_route-resin,"Ari,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.47808,True,False,True
+347,18,c18-07-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+348,18,c18-08-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+349,18,c18-09-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+350,18,c18-10-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+351,18,c18-11-archive_public_kiosk-glass,"Milo,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.435566,False,False,True
+352,18,c18-12-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+353,18,c18-13-greenhouse_heat_loop-compost,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.479087,True,False,True
+354,18,c18-14-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+355,18,c18-15-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+356,18,c18-16-dusk_signal_court-wire,"Milo,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.39484,True,False,True
+357,18,c18-17-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+358,18,c18-18-flood_bridge_market_route-resin,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.422095,True,False,True
+359,18,c18-19-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+360,19,c19-00-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+361,19,c19-01-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.485641,True,False,True
+362,19,c19-02-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+363,19,c19-03-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.419394,True,False,True
+364,19,c19-04-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.423112,False,False,True
+365,19,c19-05-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.42972,True,False,True
+366,19,c19-06-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.423227,True,False,True
+367,19,c19-07-archive_public_kiosk-paper,"Nia,Fay",none,none,1.0,0.0,False,False,True
+368,19,c19-08-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.486666,True,False,True
+369,19,c19-09-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+370,19,c19-10-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.486782,True,False,True
+371,19,c19-11-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.422917,True,False,True
+372,19,c19-12-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+373,19,c19-13-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.43333,True,False,True
+374,19,c19-14-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+375,19,c19-15-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.41527,True,False,True
+376,19,c19-16-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.430754,True,False,True
+377,19,c19-17-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.7,0.43697,False,False,False
+378,19,c19-18-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.430871,True,False,True
+379,19,c19-19-archive_public_kiosk-paper,"Nia,Fay",none,none,1.0,0.0,False,False,True
+380,20,c20-00-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.38581,True,False,True
+381,20,c20-01-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+382,20,c20-02-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.404619,True,False,True
+383,20,c20-03-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.418758,True,False,True
+384,20,c20-04-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.389051,True,False,True
+385,20,c20-05-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.412529,True,False,True
+386,20,c20-06-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+387,20,c20-07-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.422276,True,False,True
+388,20,c20-08-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+389,20,c20-09-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.415994,True,False,True
+390,20,c20-10-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.408017,False,False,True
+391,20,c20-11-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+392,20,c20-12-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.392319,True,False,True
+393,20,c20-13-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+394,20,c20-14-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.400245,True,False,True
+395,20,c20-15-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.425823,True,False,True
+396,20,c20-16-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.384415,True,False,True
+397,20,c20-17-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.419489,True,False,True
+398,20,c20-18-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+399,20,c20-19-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.4294,True,False,True
+400,21,c21-00-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+401,21,c21-01-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+402,21,c21-02-archive_public_kiosk-ink,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.381632,True,False,True
+403,21,c21-03-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+404,21,c21-04-greenhouse_heat_loop-copper,"Milo,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.385868,True,False,True
+405,21,c21-05-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+406,21,c21-06-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+407,21,c21-07-dusk_signal_court-rope,"Fay,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.385359,True,False,True
+408,21,c21-08-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+409,21,c21-09-flood_bridge_market_route-oil,"Milo,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.439224,True,False,True
+410,21,c21-10-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+411,21,c21-11-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+412,21,c21-12-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+413,21,c21-13-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+414,21,c21-14-archive_public_kiosk-ink,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.384838,True,False,True
+415,21,c21-15-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+416,21,c21-16-greenhouse_heat_loop-copper,"Milo,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.389109,False,False,True
+417,21,c21-17-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+418,21,c21-18-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+419,21,c21-19-dusk_signal_court-rope,"Fay,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.388596,True,False,True
+420,22,c22-00-greenhouse_heat_loop-water,"Fay,Ari",none,none,1.0,0.0,False,False,True
+421,22,c22-01-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.381893,True,False,True
+422,22,c22-02-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.434491,True,False,True
+423,22,c22-03-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True
+424,22,c22-04-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.451861,True,False,True
+425,22,c22-05-flood_bridge_market_route-planks,"Nia,Nia",none,none,1.0,0.0,False,False,True
+426,22,c22-06-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.43814,True,False,True
+427,22,c22-07-dusk_signal_court-oil,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.388071,True,False,True
+428,22,c22-08-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.455656,True,False,True
+429,22,c22-09-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.385101,False,False,True
+430,22,c22-10-archive_public_kiosk-thread,"Fay,Milo",none,none,1.0,0.0,False,False,True
+431,22,c22-11-dusk_signal_court-oil,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.391331,True,False,True
+432,22,c22-12-greenhouse_heat_loop-water,"Fay,Ari",none,none,1.0,0.0,False,False,True
+433,22,c22-13-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.388336,True,False,True
+434,22,c22-14-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.441821,True,False,True
+435,22,c22-15-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True
+436,22,c22-16-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.399484,True,False,True
+437,22,c22-17-flood_bridge_market_route-planks,"Nia,Nia",none,none,1.0,0.0,False,False,True
+438,22,c22-18-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.445532,True,False,True
+439,22,c22-19-dusk_signal_court-oil,"Ari,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.383418,True,False,True
+440,23,c23-00-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+441,23,c23-01-flood_bridge_market_route-resin,"Ari,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.448501,True,False,True
+442,23,c23-02-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+443,23,c23-03-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+444,23,c23-04-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+445,23,c23-05-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+446,23,c23-06-archive_public_kiosk-glass,"Milo,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.458156,True,False,True
+447,23,c23-07-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+448,23,c23-08-greenhouse_heat_loop-compost,"Nia,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.451598,True,False,True
+449,23,c23-09-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+450,23,c23-10-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+451,23,c23-11-dusk_signal_court-wire,"Milo,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.385265,True,False,True
+452,23,c23-12-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+453,23,c23-13-flood_bridge_market_route-resin,"Ari,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.392268,True,False,True
+454,23,c23-14-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+455,23,c23-15-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+456,23,c23-16-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+457,23,c23-17-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+458,23,c23-18-archive_public_kiosk-glass,"Milo,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.402005,True,False,True
+459,23,c23-19-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+460,24,c24-00-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.387644,True,False,True
+461,24,c24-01-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.423012,True,False,True
+462,24,c24-02-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+463,24,c24-03-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.493006,True,False,True
+464,24,c24-04-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+465,24,c24-05-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.486566,True,False,True
+466,24,c24-06-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.403607,True,False,True
+467,24,c24-07-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+468,24,c24-08-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.3909,False,False,True
+469,24,c24-09-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+470,24,c24-10-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.395797,True,False,True
+471,24,c24-11-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.437148,True,False,True
+472,24,c24-12-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.382983,True,False,True
+473,24,c24-13-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.430653,True,False,True
+474,24,c24-14-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+475,24,c24-15-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.44082,True,False,True
+476,24,c24-16-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+477,24,c24-17-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.43427,True,False,True
+478,24,c24-18-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.399122,True,False,True
+479,24,c24-19-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+480,25,c25-00-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.509275,True,False,True
+481,25,c25-01-archive_public_kiosk-paper,"Nia,Fay",none,none,1.0,0.0,False,False,True
+482,25,c25-02-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.434372,True,False,True
+483,25,c25-03-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+484,25,c25-04-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.513552,True,False,True
+485,25,c25-05-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.444523,True,False,True
+486,25,c25-06-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+487,25,c25-07-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.440641,True,False,True
+488,25,c25-08-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+489,25,c25-09-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.437057,True,False,True
+490,25,c25-10-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.438021,True,False,True
+491,25,c25-11-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.444342,True,False,True
+492,25,c25-12-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.517866,True,False,True
+493,25,c25-13-archive_public_kiosk-paper,"Nia,Fay",none,none,1.0,0.0,False,False,True
+494,25,c25-14-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.4417,False,False,True
+495,25,c25-15-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+496,25,c25-16-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.522216,True,False,True
+497,25,c25-17-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.440728,True,False,True
+498,25,c25-18-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+499,25,c25-19-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.448074,True,False,True
+500,26,c26-00-flood_bridge_market_route-oil,"Milo,Nia",none,none,1.0,0.0,False,False,True
+501,26,c26-01-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+502,26,c26-02-dusk_signal_court-rope,"Fay,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.394892,True,False,True
+503,26,c26-03-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+504,26,c26-04-flood_bridge_market_route-oil,"Milo,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.452377,True,False,True
+505,26,c26-05-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+506,26,c26-06-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+507,26,c26-07-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+508,26,c26-08-flood_bridge_market_route-oil,"Milo,Nia",none,none,1.0,0.0,False,False,True
+509,26,c26-09-archive_public_kiosk-ink,"Ari,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.395563,True,False,True
+510,26,c26-10-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+511,26,c26-11-greenhouse_heat_loop-copper,"Milo,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.388501,True,False,True
+512,26,c26-12-flood_bridge_market_route-oil,"Milo,Nia",none,none,1.0,0.0,False,False,True
+513,26,c26-13-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+514,26,c26-14-dusk_signal_court-rope,"Fay,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.398209,True,False,True
+515,26,c26-15-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+516,26,c26-16-flood_bridge_market_route-oil,"Milo,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.456177,True,False,True
+517,26,c26-17-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+518,26,c26-18-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+519,26,c26-19-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+520,27,c27-00-flood_bridge_market_route-planks,"Nia,Milo",none,none,1.0,0.0,False,False,True
+521,27,c27-01-archive_public_kiosk-thread,"Fay,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.401554,True,False,True
+522,27,c27-02-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.77,0.3862,True,False,False
+523,27,c27-03-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.437918,True,False,True
+524,27,c27-04-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.462474,True,False,True
+525,27,c27-05-archive_public_kiosk-thread,"Fay,Fay",none,none,1.0,0.0,False,False,True
+526,27,c27-06-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.389445,True,False,True
+527,27,c27-07-greenhouse_heat_loop-water,"Fay,Nia",none,none,1.0,0.0,False,False,True
+528,27,c27-08-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.466359,True,False,True
+529,27,c27-09-archive_public_kiosk-thread,"Fay,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.404927,True,False,True
+530,27,c27-10-dusk_signal_court-oil,"Ari,Ari",none,none,1.0,0.0,False,False,True
+531,27,c27-11-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.441597,True,False,True
+532,27,c27-12-flood_bridge_market_route-planks,"Nia,Milo",none,none,1.0,0.0,False,False,True
+533,27,c27-13-archive_public_kiosk-thread,"Fay,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.408328,False,False,True
+534,27,c27-14-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.392716,True,False,True
+535,27,c27-15-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.445306,True,False,True
+536,27,c27-16-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.410277,True,False,True
+537,27,c27-17-archive_public_kiosk-thread,"Fay,Fay",none,none,1.0,0.0,False,False,True
+538,27,c27-18-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.396015,True,False,True
+539,27,c27-19-greenhouse_heat_loop-water,"Fay,Nia",none,none,1.0,0.0,False,False,True
+540,28,c28-00-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+541,28,c28-01-archive_public_kiosk-glass,"Milo,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.442914,True,False,True
+542,28,c28-02-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+543,28,c28-03-greenhouse_heat_loop-compost,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.50541,True,False,True
+544,28,c28-04-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+545,28,c28-05-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+546,28,c28-06-dusk_signal_court-wire,"Milo,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.405382,False,False,True
+547,28,c28-07-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+548,28,c28-08-flood_bridge_market_route-resin,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.440638,True,False,True
+549,28,c28-09-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+550,28,c28-10-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+551,28,c28-11-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+552,28,c28-12-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+553,28,c28-13-archive_public_kiosk-glass,"Milo,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.386634,True,False,True
+554,28,c28-14-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+555,28,c28-15-greenhouse_heat_loop-compost,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.449656,True,False,True
+556,28,c28-16-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+557,28,c28-17-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+558,28,c28-18-dusk_signal_court-wire,"Milo,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.408787,True,False,True
+559,28,c28-19-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+560,29,c29-00-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.526603,True,False,True
+561,29,c29-01-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.44443,True,True,True
+562,29,c29-02-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+563,29,c29-03-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.44434,True,False,True
+564,29,c29-04-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+565,29,c29-05-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.436963,True,False,True
+566,29,c29-06-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.453433,True,False,True
+567,29,c29-07-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.448072,True,False,True
+568,29,c29-08-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.471026,True,False,True
+569,29,c29-09-archive_public_kiosk-paper,"Nia,Fay",none,none,1.0,0.0,False,False,True
+570,29,c29-10-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.457242,True,False,True
+571,29,c29-11-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+572,29,c29-12-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.474983,False,False,True
+573,29,c29-13-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.440634,True,False,True
+574,29,c29-14-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+575,29,c29-15-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.451836,True,False,True
+576,29,c29-16-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+577,29,c29-17-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.444335,True,False,True
+578,29,c29-18-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.521083,True,True,True
+579,29,c29-19-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.444431,True,False,True
+580,30,c30-00-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.77,0.413723,True,False,False
+581,30,c30-01-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+582,30,c30-02-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.399341,True,False,True
+583,30,c30-03-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+584,30,c30-04-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.405998,True,False,True
+585,30,c30-05-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.448067,False,False,True
+586,30,c30-06-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.391496,True,False,True
+587,30,c30-07-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.449047,True,False,True
+588,30,c30-08-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+589,30,c30-09-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.451831,True,False,True
+590,30,c30-10-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+591,30,c30-11-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.452819,True,False,True
+592,30,c30-12-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.409409,True,False,True
+593,30,c30-13-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+594,30,c30-14-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.394784,True,False,True
+595,30,c30-15-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+596,30,c30-16-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.412848,True,False,True
+597,30,c30-17-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.455627,True,False,True
+598,30,c30-18-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.3981,False,False,True
+599,30,c30-19-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.456622,True,False,True
+600,31,c31-00-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+601,31,c31-01-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+602,31,c31-02-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+603,31,c31-03-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+604,31,c31-04-archive_public_kiosk-ink,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.386638,True,False,True
+605,31,c31-05-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+606,31,c31-06-greenhouse_heat_loop-copper,"Milo,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.388809,True,False,True
+607,31,c31-07-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+608,31,c31-08-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+609,31,c31-09-dusk_signal_court-rope,"Fay,Ari",need + dependency + debt repair,winner receives current slot,0.7,0.402839,True,False,False
+610,31,c31-10-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+611,31,c31-11-flood_bridge_market_route-oil,"Milo,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.378682,False,False,True
+612,31,c31-12-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+613,31,c31-13-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+614,31,c31-14-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+615,31,c31-15-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+616,31,c31-16-archive_public_kiosk-ink,"Ari,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.389886,True,False,True
+617,31,c31-17-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+618,31,c31-18-greenhouse_heat_loop-copper,"Milo,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.392075,True,False,True
+619,31,c31-19-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+620,32,c32-00-archive_public_kiosk-thread,"Fay,Milo",none,none,1.0,0.0,False,False,True
+621,32,c32-01-dusk_signal_court-oil,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.393161,True,False,True
+622,32,c32-02-greenhouse_heat_loop-water,"Fay,Ari",none,none,1.0,0.0,False,False,True
+623,32,c32-03-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.395391,True,False,True
+624,32,c32-04-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.478973,False,False,True
+625,32,c32-05-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True
+626,32,c32-06-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.406223,True,False,True
+627,32,c32-07-flood_bridge_market_route-planks,"Nia,Nia",none,none,1.0,0.0,False,False,True
+628,32,c32-08-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.542996,True,False,True
+629,32,c32-09-dusk_signal_court-oil,"Ari,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.385264,True,True,True
+630,32,c32-10-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.409635,True,False,True
+631,32,c32-11-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.398713,True,False,True
+632,32,c32-12-archive_public_kiosk-thread,"Fay,Milo",none,none,1.0,0.0,False,False,True
+633,32,c32-13-dusk_signal_court-oil,"Ari,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.3885,True,False,True
+634,32,c32-14-greenhouse_heat_loop-water,"Fay,Ari",none,none,1.0,0.0,False,False,True
+635,32,c32-15-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.402062,True,False,True
+636,32,c32-16-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.547557,True,False,True
+637,32,c32-17-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True
+638,32,c32-18-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,split stock and schedule appeal,0.77,0.413076,True,False,False
+639,32,c32-19-flood_bridge_market_route-planks,"Nia,Nia",none,none,1.0,0.0,False,False,True
+640,33,c33-00-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+641,33,c33-01-dusk_signal_court-wire,"Milo,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.391764,True,False,True
+642,33,c33-02-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+643,33,c33-03-flood_bridge_market_route-resin,"Ari,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.398886,True,False,True
+644,33,c33-04-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+645,33,c33-05-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+646,33,c33-06-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+647,33,c33-07-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+648,33,c33-08-archive_public_kiosk-glass,"Milo,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.412221,True,False,True
+649,33,c33-09-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+650,33,c33-10-greenhouse_heat_loop-compost,"Nia,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.405439,False,False,True
+651,33,c33-11-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+652,33,c33-12-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+653,33,c33-13-dusk_signal_court-wire,"Milo,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.395055,True,False,True
+654,33,c33-14-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+655,33,c33-15-flood_bridge_market_route-resin,"Ari,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.402237,True,False,True
+656,33,c33-16-archive_public_kiosk-glass,"Milo,Fay",none,none,1.0,0.0,False,False,True
+657,33,c33-17-dusk_signal_court-wire,"Milo,Ari",none,none,1.0,0.0,False,False,True
+658,33,c33-18-greenhouse_heat_loop-compost,"Nia,Nia",none,none,1.0,0.0,False,False,True
+659,33,c33-19-flood_bridge_market_route-resin,"Ari,Milo",none,none,1.0,0.0,False,False,True
+660,34,c34-00-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.416315,True,False,True
+661,34,c34-01-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.459454,True,False,True
+662,34,c34-02-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.401444,True,False,True
+663,34,c34-03-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.460458,False,True,True
+664,34,c34-04-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+665,34,c34-05-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.463313,True,False,True
+666,34,c34-06-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+667,34,c34-07-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.7,0.464326,True,False,False
+668,34,c34-08-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.419813,True,False,True
+669,34,c34-09-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+670,34,c34-10-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.404817,True,False,True
+671,34,c34-11-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+672,34,c34-12-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.423339,True,False,True
+673,34,c34-13-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.527205,True,False,True
+674,34,c34-14-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.408217,True,False,True
+675,34,c34-15-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.528226,True,False,True
+676,34,c34-16-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+677,34,c34-17-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.471634,True,False,True
+678,34,c34-18-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+679,34,c34-19-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.472663,True,False,True
+680,35,c35-00-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.46546,True,True,True
+681,35,c35-01-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.448165,True,False,True
+682,35,c35-02-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.492157,True,False,True
+683,35,c35-03-archive_public_kiosk-paper,"Nia,Fay",none,none,1.0,0.0,False,False,True
+684,35,c35-04-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.46937,True,False,True
+685,35,c35-05-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+686,35,c35-06-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.496291,True,False,True
+687,35,c35-07-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.475595,True,False,True
+688,35,c35-08-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+689,35,c35-09-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.451929,False,False,True
+690,35,c35-10-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+691,35,c35-11-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.47959,True,False,True
+692,35,c35-12-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.473312,True,False,True
+693,35,c35-13-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.444525,True,False,True
+694,35,c35-14-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.50046,True,False,True
+695,35,c35-15-archive_public_kiosk-paper,"Nia,Fay",none,none,1.0,0.0,False,False,True
+696,35,c35-16-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.77,0.477288,True,False,False
+697,35,c35-17-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+698,35,c35-18-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.504664,True,False,True
+699,35,c35-19-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.483619,True,False,True
+700,36,c36-00-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+701,36,c36-01-greenhouse_heat_loop-copper,"Milo,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.398374,True,False,True
+702,36,c36-02-flood_bridge_market_route-oil,"Milo,Nia",none,none,1.0,0.0,False,False,True
+703,36,c36-03-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+704,36,c36-04-dusk_signal_court-rope,"Fay,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.411758,True,False,True
+705,36,c36-05-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+706,36,c36-06-flood_bridge_market_route-oil,"Milo,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.395369,True,False,True
+707,36,c36-07-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+708,36,c36-08-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+709,36,c36-09-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+710,36,c36-10-flood_bridge_market_route-oil,"Milo,Nia",none,none,1.0,0.0,False,False,True
+711,36,c36-11-archive_public_kiosk-ink,"Ari,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.405616,True,False,True
+712,36,c36-12-dusk_signal_court-rope,"Fay,Fay",none,none,1.0,0.0,False,False,True
+713,36,c36-13-greenhouse_heat_loop-copper,"Milo,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.40172,True,False,True
+714,36,c36-14-flood_bridge_market_route-oil,"Milo,Nia",none,none,1.0,0.0,False,False,True
+715,36,c36-15-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+716,36,c36-16-dusk_signal_court-rope,"Fay,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.415217,True,False,True
+717,36,c36-17-greenhouse_heat_loop-copper,"Milo,Ari",none,none,1.0,0.0,False,False,True
+718,36,c36-18-flood_bridge_market_route-oil,"Milo,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.38749,True,False,True
+719,36,c36-19-archive_public_kiosk-ink,"Ari,Milo",none,none,1.0,0.0,False,False,True
+720,37,c37-00-dusk_signal_court-oil,"Ari,Ari",none,none,1.0,0.0,False,False,True
+721,37,c37-01-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.476634,True,False,True
+722,37,c37-02-flood_bridge_market_route-planks,"Nia,Milo",none,none,1.0,0.0,False,False,True
+723,37,c37-03-archive_public_kiosk-thread,"Fay,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.418705,True,False,True
+724,37,c37-04-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.411646,True,False,True
+725,37,c37-05-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.77,0.480637,True,False,False
+726,37,c37-06-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.426895,True,False,True
+727,37,c37-07-archive_public_kiosk-thread,"Fay,Fay",none,none,1.0,0.0,False,False,True
+728,37,c37-08-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.415104,False,False,True
+729,37,c37-09-greenhouse_heat_loop-water,"Fay,Nia",none,none,1.0,0.0,False,False,True
+730,37,c37-10-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.430481,True,False,True
+731,37,c37-11-archive_public_kiosk-thread,"Fay,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.422222,True,True,True
+732,37,c37-12-dusk_signal_court-oil,"Ari,Ari",none,none,1.0,0.0,False,False,True
+733,37,c37-13-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.484675,True,False,True
+734,37,c37-14-flood_bridge_market_route-planks,"Nia,Milo",none,none,1.0,0.0,False,False,True
+735,37,c37-15-archive_public_kiosk-thread,"Fay,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.425769,True,False,True
+736,37,c37-16-dusk_signal_court-oil,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.478591,True,False,True
+737,37,c37-17-greenhouse_heat_loop-water,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.488746,True,False,True
+738,37,c37-18-flood_bridge_market_route-planks,"Nia,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.434097,True,False,True
+739,37,c37-19-archive_public_kiosk-thread,"Fay,Fay",none,none,1.0,0.0,False,False,True
+740,38,c38-00-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+741,38,c38-01-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+742,38,c38-02-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+743,38,c38-03-archive_public_kiosk-glass,"Milo,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.381863,True,False,True
+744,38,c38-04-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+745,38,c38-05-greenhouse_heat_loop-compost,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.481297,True,False,True
+746,38,c38-06-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+747,38,c38-07-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+748,38,c38-08-dusk_signal_court-wire,"Milo,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.415684,True,True,True
+749,38,c38-09-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+750,38,c38-10-flood_bridge_market_route-resin,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.448259,True,False,True
+751,38,c38-11-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+752,38,c38-12-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+753,38,c38-13-greenhouse_heat_loop-compost,"Nia,Ari",none,none,1.0,0.0,False,False,True
+754,38,c38-14-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+755,38,c38-15-archive_public_kiosk-glass,"Milo,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.433871,True,False,True
+756,38,c38-16-dusk_signal_court-wire,"Milo,Fay",none,none,1.0,0.0,False,False,True
+757,38,c38-17-greenhouse_heat_loop-compost,"Nia,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.54534,True,False,True
+758,38,c38-18-flood_bridge_market_route-resin,"Ari,Nia",none,none,1.0,0.0,False,False,True
+759,38,c38-19-archive_public_kiosk-glass,"Milo,Milo",none,none,1.0,0.0,False,False,True
+760,39,c39-00-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.489921,True,False,True
+761,39,c39-01-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+762,39,c39-02-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.508903,True,False,True
+763,39,c39-03-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.487681,True,False,True
+764,39,c39-04-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+765,39,c39-05-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.452025,True,True,True
+766,39,c39-06-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+767,39,c39-07-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.491778,False,False,True
+768,39,c39-08-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.554036,True,False,True
+769,39,c39-09-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.444622,True,False,True
+770,39,c39-10-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.573178,True,False,True
+771,39,c39-11-archive_public_kiosk-paper,"Nia,Fay",none,none,1.0,0.0,False,False,True
+772,39,c39-12-dusk_signal_court-glass,"Nia,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.49869,True,False,True
+773,39,c39-13-greenhouse_heat_loop-glass,"Ari,Nia",none,none,1.0,0.0,False,False,True
+774,39,c39-14-flood_bridge_market_route-rope,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.517992,True,False,True
+775,39,c39-15-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.495909,True,False,True
+776,39,c39-16-dusk_signal_court-glass,"Nia,Ari",none,none,1.0,0.0,False,False,True
+777,39,c39-17-greenhouse_heat_loop-glass,"Ari,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.448357,True,False,True
+778,39,c39-18-flood_bridge_market_route-rope,"Fay,Milo",none,none,1.0,0.0,False,False,True
+779,39,c39-19-archive_public_kiosk-paper,"Nia,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.560074,True,False,True
+780,40,c40-00-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+781,40,c40-01-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.481651,True,False,True
+782,40,c40-02-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.437743,True,True,True
+783,40,c40-03-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+784,40,c40-04-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.422611,True,False,True
+785,40,c40-05-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+786,40,c40-06-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.44142,True,False,True
+787,40,c40-07-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.504779,True,False,True
+788,40,c40-08-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.426161,True,False,True
+789,40,c40-09-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.485697,True,False,True
+790,40,c40-10-archive_public_kiosk-paper,"Nia,Milo",none,none,1.0,0.0,False,False,True
+791,40,c40-11-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.509019,True,False,True
+792,40,c40-12-greenhouse_heat_loop-glass,"Ari,Ari",none,none,1.0,0.0,False,False,True
+793,40,c40-13-flood_bridge_market_route-rope,"Fay,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.489777,False,False,True
+794,40,c40-14-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.445128,True,False,True
+795,40,c40-15-dusk_signal_court-glass,"Nia,Fay",none,none,1.0,0.0,False,False,True
+796,40,c40-16-greenhouse_heat_loop-glass,"Ari,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.429741,True,False,True
+797,40,c40-17-flood_bridge_market_route-rope,"Fay,Nia",none,none,1.0,0.0,False,False,True
+798,40,c40-18-archive_public_kiosk-paper,"Nia,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.448867,True,False,True
+799,40,c40-19-dusk_signal_court-glass,"Nia,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.513295,True,True,True
+800,41,c41-00-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+801,41,c41-01-flood_bridge_market_route-oil,"Milo,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.366315,True,False,True
+802,41,c41-02-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+803,41,c41-03-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+804,41,c41-04-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+805,41,c41-05-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+806,41,c41-06-archive_public_kiosk-ink,"Ari,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.391763,False,False,True
+807,41,c41-07-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+808,41,c41-08-greenhouse_heat_loop-copper,"Milo,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.390745,True,False,True
+809,41,c41-09-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+810,41,c41-10-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+811,41,c41-11-dusk_signal_court-rope,"Fay,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.416546,True,False,True
+812,41,c41-12-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+813,41,c41-13-flood_bridge_market_route-oil,"Milo,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.369392,True,False,True
+814,41,c41-14-archive_public_kiosk-ink,"Ari,Fay",none,none,1.0,0.0,False,False,True
+815,41,c41-15-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+816,41,c41-16-greenhouse_heat_loop-copper,"Milo,Nia",none,none,1.0,0.0,False,False,True
+817,41,c41-17-flood_bridge_market_route-oil,"Milo,Milo",none,none,1.0,0.0,False,False,True
+818,41,c41-18-archive_public_kiosk-ink,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.395054,True,False,True
+819,41,c41-19-dusk_signal_court-rope,"Fay,Ari",none,none,1.0,0.0,False,False,True
+820,42,c42-00-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.480045,True,False,True
+821,42,c42-01-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.408845,True,False,True
+822,42,c42-02-archive_public_kiosk-thread,"Fay,Milo",none,none,1.0,0.0,False,False,True
+823,42,c42-03-dusk_signal_court-oil,"Ari,Fay",need + dependency + debt repair,winner receives current slot,0.79,0.398373,True,False,True
+824,42,c42-04-greenhouse_heat_loop-water,"Fay,Ari",none,none,1.0,0.0,False,False,True
+825,42,c42-05-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,winner receives current slot,0.79,0.412279,True,False,True
+826,42,c42-06-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.522344,True,False,True
+827,42,c42-07-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True
+828,42,c42-08-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,split stock and schedule appeal,0.86,0.472878,True,False,True
+829,42,c42-09-flood_bridge_market_route-planks,"Nia,Nia",none,none,1.0,0.0,False,False,True
+830,42,c42-10-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,winner receives current slot,0.79,0.526731,True,False,True
+831,42,c42-11-dusk_signal_court-oil,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.401719,True,False,True
+832,42,c42-12-greenhouse_heat_loop-water,"Fay,Ari",need + dependency + debt repair,winner receives current slot,0.79,0.41685,False,False,True
+833,42,c42-13-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.415742,True,True,True
+834,42,c42-14-archive_public_kiosk-thread,"Fay,Milo",none,none,1.0,0.0,False,False,True
+835,42,c42-15-dusk_signal_court-oil,"Ari,Fay",need + dependency + debt repair,split stock and schedule appeal,0.86,0.405093,True,False,True
+836,42,c42-16-greenhouse_heat_loop-water,"Fay,Ari",none,none,1.0,0.0,False,False,True
+837,42,c42-17-flood_bridge_market_route-planks,"Nia,Nia",need + dependency + debt repair,split stock and schedule appeal,0.86,0.408035,True,False,True
+838,42,c42-18-archive_public_kiosk-thread,"Fay,Milo",need + dependency + debt repair,split stock and schedule appeal,0.86,0.531156,True,False,True
+839,42,c42-19-dusk_signal_court-oil,"Ari,Fay",none,none,1.0,0.0,False,False,True

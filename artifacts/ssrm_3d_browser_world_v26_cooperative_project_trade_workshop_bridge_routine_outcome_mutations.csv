@@ -1,0 +1,841 @@
+tick_id,day,agent,project_id,prior_routine,new_routine,outcome_state,routine_mutated,later_day_visible,rollback_note
+0,1,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+1,1,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+2,1,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+3,1,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+4,1,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+5,1,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+6,1,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+7,1,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+8,1,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+9,1,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+10,1,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+11,1,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+12,1,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+13,1,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+14,1,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+15,1,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+16,1,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+17,1,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+18,1,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+19,1,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+20,2,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+21,2,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+22,2,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+23,2,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+24,2,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+25,2,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+26,2,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+27,2,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+28,2,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+29,2,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+30,2,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+31,2,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+32,2,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+33,2,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+34,2,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+35,2,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+36,2,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+37,2,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+38,2,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+39,2,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+40,3,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+41,3,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+42,3,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+43,3,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+44,3,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+45,3,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+46,3,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+47,3,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+48,3,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+49,3,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+50,3,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+51,3,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+52,3,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+53,3,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+54,3,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+55,3,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+56,3,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+57,3,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+58,3,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+59,3,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+60,4,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+61,4,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+62,4,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+63,4,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+64,4,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+65,4,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+66,4,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+67,4,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+68,4,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+69,4,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+70,4,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+71,4,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+72,4,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+73,4,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+74,4,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+75,4,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+76,4,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+77,4,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+78,4,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+79,4,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+80,5,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+81,5,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+82,5,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+83,5,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+84,5,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+85,5,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+86,5,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+87,5,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+88,5,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+89,5,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+90,5,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+91,5,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+92,5,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+93,5,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+94,5,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+95,5,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+96,5,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+97,5,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+98,5,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+99,5,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+100,6,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+101,6,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+102,6,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+103,6,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+104,6,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+105,6,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+106,6,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+107,6,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+108,6,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+109,6,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+110,6,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+111,6,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+112,6,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+113,6,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+114,6,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+115,6,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+116,6,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+117,6,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+118,6,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+119,6,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+120,7,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+121,7,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+122,7,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+123,7,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+124,7,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+125,7,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+126,7,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+127,7,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+128,7,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+129,7,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+130,7,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+131,7,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+132,7,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+133,7,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+134,7,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+135,7,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+136,7,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+137,7,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+138,7,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+139,7,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+140,8,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+141,8,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+142,8,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+143,8,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+144,8,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+145,8,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+146,8,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+147,8,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+148,8,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+149,8,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+150,8,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+151,8,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+152,8,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+153,8,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+154,8,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+155,8,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+156,8,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+157,8,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+158,8,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+159,8,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+160,9,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+161,9,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+162,9,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+163,9,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+164,9,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+165,9,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+166,9,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+167,9,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+168,9,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+169,9,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+170,9,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+171,9,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+172,9,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+173,9,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+174,9,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+175,9,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+176,9,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+177,9,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+178,9,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+179,9,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+180,10,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+181,10,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+182,10,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+183,10,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+184,10,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+185,10,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+186,10,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+187,10,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+188,10,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+189,10,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+190,10,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+191,10,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+192,10,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+193,10,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+194,10,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+195,10,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+196,10,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+197,10,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+198,10,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+199,10,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+200,11,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+201,11,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+202,11,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+203,11,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+204,11,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+205,11,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+206,11,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+207,11,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+208,11,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+209,11,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+210,11,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+211,11,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+212,11,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+213,11,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+214,11,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+215,11,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+216,11,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+217,11,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+218,11,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+219,11,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+220,12,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+221,12,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+222,12,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+223,12,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+224,12,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+225,12,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+226,12,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+227,12,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+228,12,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+229,12,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+230,12,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+231,12,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+232,12,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+233,12,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+234,12,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+235,12,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+236,12,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+237,12,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+238,12,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+239,12,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+240,13,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+241,13,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+242,13,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+243,13,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+244,13,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+245,13,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+246,13,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+247,13,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+248,13,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+249,13,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+250,13,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+251,13,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+252,13,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+253,13,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+254,13,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+255,13,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+256,13,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+257,13,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+258,13,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+259,13,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+260,14,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+261,14,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+262,14,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+263,14,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+264,14,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+265,14,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+266,14,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+267,14,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+268,14,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+269,14,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+270,14,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+271,14,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+272,14,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+273,14,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+274,14,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+275,14,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+276,14,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+277,14,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+278,14,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+279,14,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+280,15,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+281,15,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+282,15,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+283,15,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+284,15,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+285,15,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+286,15,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+287,15,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+288,15,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+289,15,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+290,15,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+291,15,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+292,15,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+293,15,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+294,15,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+295,15,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+296,15,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+297,15,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+298,15,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+299,15,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+300,16,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+301,16,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+302,16,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+303,16,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+304,16,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+305,16,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+306,16,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+307,16,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+308,16,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+309,16,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+310,16,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+311,16,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+312,16,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+313,16,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+314,16,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+315,16,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+316,16,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+317,16,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+318,16,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+319,16,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+320,17,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+321,17,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+322,17,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+323,17,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+324,17,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+325,17,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,not_ready,False,False,none
+326,17,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+327,17,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+328,17,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+329,17,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,practice_run,False,False,none
+330,17,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+331,17,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+332,17,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+333,17,Fay,greenhouse_heat_loop,old single-agent routine,unchanged,practice_run,False,False,none
+334,17,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+335,17,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+336,17,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+337,17,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,partial_public_use,True,True,partial rollback available if trade debt blocks upkeep
+338,17,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+339,17,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+340,18,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+341,18,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+342,18,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+343,18,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+344,18,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+345,18,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+346,18,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+347,18,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+348,18,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+349,18,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+350,18,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+351,18,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+352,18,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+353,18,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+354,18,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+355,18,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+356,18,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+357,18,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+358,18,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+359,18,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+360,19,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+361,19,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+362,19,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+363,19,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+364,19,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+365,19,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+366,19,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+367,19,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+368,19,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+369,19,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+370,19,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+371,19,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+372,19,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+373,19,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+374,19,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+375,19,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+376,19,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+377,19,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+378,19,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+379,19,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+380,20,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+381,20,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+382,20,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+383,20,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+384,20,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+385,20,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+386,20,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+387,20,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+388,20,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+389,20,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+390,20,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+391,20,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+392,20,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+393,20,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+394,20,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+395,20,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+396,20,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+397,20,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+398,20,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+399,20,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+400,21,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+401,21,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+402,21,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+403,21,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+404,21,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+405,21,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+406,21,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+407,21,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+408,21,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+409,21,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+410,21,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+411,21,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+412,21,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+413,21,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+414,21,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+415,21,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+416,21,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+417,21,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+418,21,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+419,21,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+420,22,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+421,22,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+422,22,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+423,22,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+424,22,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+425,22,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+426,22,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+427,22,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+428,22,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+429,22,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+430,22,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+431,22,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+432,22,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+433,22,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+434,22,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+435,22,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+436,22,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+437,22,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+438,22,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+439,22,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+440,23,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+441,23,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+442,23,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+443,23,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+444,23,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+445,23,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+446,23,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+447,23,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+448,23,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+449,23,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+450,23,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+451,23,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+452,23,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+453,23,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+454,23,Nia,archive_public_kiosk,old single-agent routine,unchanged,not_ready,False,False,none
+455,23,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+456,23,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+457,23,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+458,23,Nia,archive_public_kiosk,old single-agent routine,unchanged,practice_run,False,False,none
+459,23,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+460,24,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+461,24,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+462,24,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,partial_public_use,True,True,partial rollback available if trade debt blocks upkeep
+463,24,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+464,24,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+465,24,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+466,24,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+467,24,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+468,24,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+469,24,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+470,24,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+471,24,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+472,24,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+473,24,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+474,24,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+475,24,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+476,24,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+477,24,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+478,24,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+479,24,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+480,25,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+481,25,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+482,25,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+483,25,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+484,25,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+485,25,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+486,25,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+487,25,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+488,25,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+489,25,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+490,25,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+491,25,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+492,25,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+493,25,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+494,25,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+495,25,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+496,25,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+497,25,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+498,25,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+499,25,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+500,26,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+501,26,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+502,26,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+503,26,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+504,26,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+505,26,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+506,26,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+507,26,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+508,26,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+509,26,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+510,26,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+511,26,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+512,26,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+513,26,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+514,26,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+515,26,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+516,26,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+517,26,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+518,26,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+519,26,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+520,27,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+521,27,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+522,27,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+523,27,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+524,27,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+525,27,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+526,27,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+527,27,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+528,27,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+529,27,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+530,27,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+531,27,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+532,27,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+533,27,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+534,27,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+535,27,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+536,27,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+537,27,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+538,27,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+539,27,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+540,28,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+541,28,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+542,28,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+543,28,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+544,28,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+545,28,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+546,28,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+547,28,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+548,28,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+549,28,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+550,28,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+551,28,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+552,28,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+553,28,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+554,28,Milo,dusk_signal_court,old single-agent routine,unchanged,not_ready,False,False,none
+555,28,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+556,28,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+557,28,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+558,28,Milo,dusk_signal_court,old single-agent routine,unchanged,practice_run,False,False,none
+559,28,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+560,29,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+561,29,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+562,29,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,partial_public_use,True,True,partial rollback available if trade debt blocks upkeep
+563,29,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+564,29,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+565,29,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+566,29,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+567,29,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+568,29,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+569,29,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+570,29,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+571,29,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+572,29,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+573,29,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+574,29,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+575,29,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+576,29,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+577,29,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+578,29,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+579,29,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+580,30,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+581,30,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+582,30,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+583,30,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+584,30,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+585,30,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+586,30,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+587,30,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+588,30,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+589,30,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+590,30,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+591,30,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+592,30,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+593,30,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+594,30,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+595,30,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+596,30,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+597,30,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+598,30,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+599,30,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+600,31,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+601,31,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+602,31,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+603,31,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+604,31,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+605,31,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+606,31,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+607,31,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+608,31,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+609,31,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+610,31,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+611,31,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+612,31,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+613,31,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+614,31,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+615,31,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+616,31,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+617,31,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+618,31,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+619,31,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+620,32,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+621,32,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+622,32,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+623,32,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+624,32,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+625,32,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+626,32,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+627,32,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+628,32,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+629,32,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+630,32,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+631,32,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+632,32,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+633,32,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+634,32,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+635,32,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+636,32,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+637,32,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+638,32,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+639,32,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+640,33,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+641,33,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+642,33,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+643,33,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+644,33,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+645,33,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+646,33,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+647,33,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+648,33,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+649,33,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+650,33,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+651,33,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+652,33,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+653,33,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+654,33,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+655,33,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+656,33,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+657,33,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+658,33,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+659,33,Ari,flood_bridge_market_route,old single-agent routine,unchanged,not_ready,False,False,none
+660,34,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+661,34,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+662,34,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+663,34,Ari,flood_bridge_market_route,old single-agent routine,unchanged,practice_run,False,False,none
+664,34,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+665,34,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+666,34,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+667,34,Ari,flood_bridge_market_route,old single-agent routine,unchanged,practice_run,False,False,none
+668,34,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+669,34,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+670,34,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+671,34,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,partial_public_use,True,True,partial rollback available if trade debt blocks upkeep
+672,34,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+673,34,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+674,34,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+675,34,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+676,34,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+677,34,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+678,34,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+679,34,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+680,35,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+681,35,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+682,35,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+683,35,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+684,35,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+685,35,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+686,35,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+687,35,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+688,35,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+689,35,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+690,35,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+691,35,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+692,35,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+693,35,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+694,35,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+695,35,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+696,35,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+697,35,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+698,35,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+699,35,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+700,36,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+701,36,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+702,36,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+703,36,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+704,36,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+705,36,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+706,36,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+707,36,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+708,36,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+709,36,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+710,36,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+711,36,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+712,36,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+713,36,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+714,36,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+715,36,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+716,36,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+717,36,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+718,36,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+719,36,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+720,37,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+721,37,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+722,37,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+723,37,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+724,37,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+725,37,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+726,37,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+727,37,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+728,37,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+729,37,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+730,37,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+731,37,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+732,37,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+733,37,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+734,37,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+735,37,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+736,37,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+737,37,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+738,37,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+739,37,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+740,38,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+741,38,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+742,38,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+743,38,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+744,38,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+745,38,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+746,38,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+747,38,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+748,38,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+749,38,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+750,38,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+751,38,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+752,38,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+753,38,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+754,38,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+755,38,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+756,38,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+757,38,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+758,38,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+759,38,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+760,39,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+761,39,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+762,39,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+763,39,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+764,39,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+765,39,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+766,39,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+767,39,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+768,39,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+769,39,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+770,39,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+771,39,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+772,39,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+773,39,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+774,39,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+775,39,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+776,39,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+777,39,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+778,39,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+779,39,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+780,40,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+781,40,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+782,40,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+783,40,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+784,40,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+785,40,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+786,40,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+787,40,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+788,40,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+789,40,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+790,40,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+791,40,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+792,40,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+793,40,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+794,40,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+795,40,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+796,40,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+797,40,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+798,40,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+799,40,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+800,41,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+801,41,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+802,41,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+803,41,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+804,41,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+805,41,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+806,41,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+807,41,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+808,41,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+809,41,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+810,41,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+811,41,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+812,41,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+813,41,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+814,41,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+815,41,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+816,41,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+817,41,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+818,41,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+819,41,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+820,42,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+821,42,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+822,42,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+823,42,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+824,42,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+825,42,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+826,42,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+827,42,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+828,42,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+829,42,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+830,42,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+831,42,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+832,42,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+833,42,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+834,42,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+835,42,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+836,42,Fay,greenhouse_heat_loop,old single-agent routine,morning greenhouse tending replaces one cold-route gather,carried_into_later_routine,False,True,partial rollback available if trade debt blocks upkeep
+837,42,Ari,flood_bridge_market_route,old single-agent routine,market route becomes shorter but bridge watch is added after rain,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+838,42,Nia,archive_public_kiosk,old single-agent routine,evening public index replaces repeated private archive requests,practice_run,False,True,partial rollback available if trade debt blocks upkeep
+839,42,Milo,dusk_signal_court,old single-agent routine,dusk patrol becomes shared signal practice twice a week,practice_run,False,True,partial rollback available if trade debt blocks upkeep

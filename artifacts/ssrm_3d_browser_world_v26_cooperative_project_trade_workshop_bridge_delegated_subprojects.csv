@@ -1,0 +1,841 @@
+tick_id,day,tick,project_id,subproject_id,assignee,delegated_by,role,dependency,dependency_ready,progress_before,progress_delta,progress_after,accepted,blocked_reason,visible_status
+0,1,0,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,False,0.0,0.0,0.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+1,1,1,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+2,1,2,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+3,1,3,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+4,1,4,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+5,1,5,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+6,1,6,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+7,1,7,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+8,1,8,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+9,1,9,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+10,1,10,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+11,1,11,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+12,1,12,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+13,1,13,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+14,1,14,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+15,1,15,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+16,1,16,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+17,1,17,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+18,1,18,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+19,1,19,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+20,2,0,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.0,0.0,0.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+21,2,1,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.0,0.044,0.044,True,none,delegated progress
+22,2,2,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+23,2,3,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.0,0.026,0.026,True,none,delegated progress
+24,2,4,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.0,0.044,0.044,True,none,delegated progress
+25,2,5,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.044,0.044,0.088,True,none,delegated progress
+26,2,6,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+27,2,7,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.026,0.026,0.052,True,none,delegated progress
+28,2,8,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.044,0.044,0.088,True,none,delegated progress
+29,2,9,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.088,0.044,0.132,True,none,delegated progress
+30,2,10,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+31,2,11,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.052,0.026,0.078,True,none,delegated progress
+32,2,12,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.088,0.044,0.132,True,none,delegated progress
+33,2,13,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.132,0.044,0.176,True,none,delegated progress
+34,2,14,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+35,2,15,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.078,0.026,0.104,True,none,delegated progress
+36,2,16,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.132,0.044,0.176,True,none,delegated progress
+37,2,17,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.176,0.0,0.176,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+38,2,18,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+39,2,19,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.104,0.026,0.13,True,none,delegated progress
+40,3,0,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+41,3,1,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+42,3,2,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+43,3,3,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+44,3,4,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+45,3,5,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,False,0.0,0.0,0.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+46,3,6,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+47,3,7,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+48,3,8,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+49,3,9,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+50,3,10,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+51,3,11,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+52,3,12,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+53,3,13,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+54,3,14,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+55,3,15,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,False,0.0,0.0,0.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+56,3,16,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+57,3,17,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+58,3,18,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+59,3,19,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+60,4,0,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.0,0.032,0.032,True,none,delegated progress
+61,4,1,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+62,4,2,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.0,0.026,0.026,True,none,material conflict: archive_public_kiosk priority
+63,4,3,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+64,4,4,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.032,0.02624,0.05824,True,none,material conflict: greenhouse_heat_loop priority
+65,4,5,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+66,4,6,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.026,0.026,0.052,True,none,material conflict: archive_public_kiosk priority
+67,4,7,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+68,4,8,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.05824,0.02624,0.08448,True,none,material conflict: greenhouse_heat_loop priority
+69,4,9,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+70,4,10,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.052,0.0,0.052,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+71,4,11,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+72,4,12,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.08448,0.032,0.11648,True,none,delegated progress
+73,4,13,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+74,4,14,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.052,0.0,0.052,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+75,4,15,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+76,4,16,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.11648,0.0,0.11648,True,material priority lost,blocked: material priority lost
+77,4,17,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+78,4,18,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.052,0.026,0.078,True,none,material conflict: archive_public_kiosk priority
+79,4,19,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+80,5,0,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+81,5,1,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.078,0.026,0.104,True,none,material conflict: archive_public_kiosk priority
+82,5,2,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+83,5,3,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.11648,0.02624,0.14272,True,none,material conflict: greenhouse_heat_loop priority
+84,5,4,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+85,5,5,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.104,0.0,0.104,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+86,5,6,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+87,5,7,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.14272,0.0,0.14272,True,workshop over capacity,blocked: workshop over capacity
+88,5,8,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+89,5,9,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.104,0.026,0.13,True,none,delegated progress
+90,5,10,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+91,5,11,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.14272,0.032,0.17472,True,none,delegated progress
+92,5,12,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+93,5,13,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.13,0.026,0.156,True,none,material conflict: archive_public_kiosk priority
+94,5,14,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+95,5,15,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.17472,0.02624,0.20096,True,none,material conflict: greenhouse_heat_loop priority
+96,5,16,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+97,5,17,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.156,0.026,0.182,True,none,material conflict: archive_public_kiosk priority
+98,5,18,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+99,5,19,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.20096,0.0,0.20096,True,workshop over capacity,blocked: workshop over capacity
+100,6,0,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+101,6,1,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+102,6,2,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+103,6,3,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+104,6,4,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+105,6,5,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+106,6,6,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+107,6,7,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+108,6,8,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+109,6,9,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+110,6,10,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+111,6,11,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,False,0.0,0.0,0.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+112,6,12,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+113,6,13,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+114,6,14,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+115,6,15,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+116,6,16,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+117,6,17,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+118,6,18,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+119,6,19,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+120,7,0,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.176,0.044,0.22,True,none,material conflict: flood_bridge_market_route priority
+121,7,1,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+122,7,2,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.13,0.01924,0.14924,True,none,material conflict: dusk_signal_court priority
+123,7,3,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.176,0.044,0.22,True,none,delegated progress
+124,7,4,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.22,0.0,0.22,True,material priority lost,blocked: material priority lost
+125,7,5,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+126,7,6,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.14924,0.026,0.17524,True,none,delegated progress
+127,7,7,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.22,0.044,0.264,True,none,material conflict: greenhouse_heat_loop priority
+128,7,8,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.22,0.044,0.264,True,none,delegated progress
+129,7,9,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+130,7,10,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.17524,0.01924,0.19448,True,none,material conflict: dusk_signal_court priority
+131,7,11,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.264,0.044,0.308,True,none,material conflict: greenhouse_heat_loop priority
+132,7,12,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.264,0.0,0.264,True,material priority lost,blocked: material priority lost
+133,7,13,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+134,7,14,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.19448,0.026,0.22048,True,none,material conflict: dusk_signal_court priority
+135,7,15,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.308,0.0,0.308,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+136,7,16,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.264,0.044,0.308,True,none,material conflict: flood_bridge_market_route priority
+137,7,17,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+138,7,18,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.22048,0.026,0.24648,True,none,delegated progress
+139,7,19,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.308,0.03256,0.34056,True,none,material conflict: greenhouse_heat_loop priority
+140,8,0,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,False,0.0,0.0,0.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+141,8,1,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+142,8,2,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+143,8,3,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.0,0.032,0.032,True,none,delegated progress
+144,8,4,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+145,8,5,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+146,8,6,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+147,8,7,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.032,0.032,0.064,True,none,delegated progress
+148,8,8,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,False,0.0,0.0,0.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+149,8,9,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+150,8,10,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,False,0.0,0.0,0.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+151,8,11,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.064,0.032,0.096,True,none,material conflict: greenhouse_heat_loop priority
+152,8,12,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+153,8,13,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+154,8,14,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+155,8,15,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.096,0.032,0.128,True,none,delegated progress
+156,8,16,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+157,8,17,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+158,8,18,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+159,8,19,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.128,0.032,0.16,True,none,delegated progress
+160,9,0,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+161,9,1,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.182,0.026,0.208,True,none,material conflict: archive_public_kiosk priority
+162,9,2,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+163,9,3,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.20096,0.02624,0.2272,True,none,material conflict: greenhouse_heat_loop priority
+164,9,4,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+165,9,5,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.208,0.0,0.208,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+166,9,6,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+167,9,7,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.2272,0.032,0.2592,True,none,delegated progress
+168,9,8,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+169,9,9,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.208,0.0,0.208,True,material priority lost,blocked: material priority lost
+170,9,10,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+171,9,11,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.2592,0.0,0.2592,True,workshop over capacity,blocked: workshop over capacity
+172,9,12,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+173,9,13,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.208,0.026,0.234,True,none,material conflict: archive_public_kiosk priority
+174,9,14,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+175,9,15,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.2592,0.02624,0.28544,True,none,material conflict: greenhouse_heat_loop priority
+176,9,16,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+177,9,17,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.234,0.026,0.26,True,none,delegated progress
+178,9,18,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+179,9,19,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.28544,0.032,0.31744,True,none,delegated progress
+180,10,0,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.26,0.0,0.26,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+181,10,1,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+182,10,2,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.31744,0.02624,0.34368,True,none,material conflict: greenhouse_heat_loop priority
+183,10,3,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+184,10,4,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.26,0.026,0.286,True,none,delegated progress
+185,10,5,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+186,10,6,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.34368,0.032,0.37568,True,none,delegated progress
+187,10,7,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+188,10,8,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.286,0.01924,0.30524,True,none,material conflict: archive_public_kiosk priority
+189,10,9,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+190,10,10,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.37568,0.02624,0.40192,True,none,material conflict: greenhouse_heat_loop priority
+191,10,11,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+192,10,12,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.30524,0.01924,0.32448,True,none,material conflict: archive_public_kiosk priority
+193,10,13,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+194,10,14,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.40192,0.02624,0.42816,True,none,material conflict: greenhouse_heat_loop priority
+195,10,15,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+196,10,16,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.32448,0.026,0.35048,True,none,delegated progress
+197,10,17,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+198,10,18,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.42816,0.032,0.46016,True,none,delegated progress
+199,10,19,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+200,11,0,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.0,0.02812,0.02812,True,none,material conflict: archive_public_kiosk priority
+201,11,1,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+202,11,2,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.0,0.038,0.038,True,none,material conflict: greenhouse_heat_loop priority
+203,11,3,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+204,11,4,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.02812,0.038,0.06612,True,none,delegated progress
+205,11,5,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+206,11,6,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.038,0.038,0.076,True,none,delegated progress
+207,11,7,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+208,11,8,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.06612,0.038,0.10412,True,none,delegated progress
+209,11,9,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+210,11,10,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.076,0.038,0.114,True,none,delegated progress
+211,11,11,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+212,11,12,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.10412,0.02812,0.13224,True,none,material conflict: archive_public_kiosk priority
+213,11,13,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+214,11,14,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.114,0.02812,0.14212,True,none,material conflict: greenhouse_heat_loop priority
+215,11,15,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+216,11,16,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.13224,0.038,0.17024,True,none,delegated progress
+217,11,17,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+218,11,18,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.14212,0.038,0.18012,True,none,delegated progress
+219,11,19,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+220,12,0,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.0,0.0,0.0,True,workshop over capacity,blocked: workshop over capacity
+221,12,1,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.24648,0.026,0.27248,True,none,delegated progress
+222,12,2,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.34056,0.0,0.34056,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+223,12,3,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.308,0.044,0.352,True,none,delegated progress
+224,12,4,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.0,0.02132,0.02132,True,none,material conflict: archive_public_kiosk priority
+225,12,5,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.27248,0.01924,0.29172,True,none,material conflict: dusk_signal_court priority
+226,12,6,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.34056,0.044,0.38456,True,none,material conflict: greenhouse_heat_loop priority
+227,12,7,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.352,0.03256,0.38456,True,none,material conflict: flood_bridge_market_route priority
+228,12,8,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.02132,0.026,0.04732,True,none,delegated progress
+229,12,9,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.29172,0.026,0.31772,True,none,material conflict: dusk_signal_court priority
+230,12,10,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.38456,0.0,0.38456,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+231,12,11,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.38456,0.044,0.42856,True,none,material conflict: flood_bridge_market_route priority
+232,12,12,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.04732,0.0,0.04732,True,workshop over capacity,blocked: workshop over capacity
+233,12,13,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.31772,0.026,0.34372,True,none,delegated progress
+234,12,14,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.38456,0.03256,0.41712,True,none,material conflict: greenhouse_heat_loop priority
+235,12,15,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.42856,0.044,0.47256,True,none,delegated progress
+236,12,16,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.04732,0.0,0.04732,True,material priority lost,blocked: material priority lost
+237,12,17,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.34372,0.01924,0.36296,True,none,material conflict: dusk_signal_court priority
+238,12,18,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.41712,0.03256,0.44968,True,none,material conflict: greenhouse_heat_loop priority
+239,12,19,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.47256,0.03256,0.50512,True,none,material conflict: flood_bridge_market_route priority
+240,13,0,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+241,13,1,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.0,0.032,0.032,True,none,delegated progress
+242,13,2,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.16,0.032,0.192,True,none,delegated progress
+243,13,3,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.0,0.038,0.038,True,none,delegated progress
+244,13,4,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+245,13,5,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.032,0.0,0.032,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+246,13,6,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.192,0.032,0.224,True,none,material conflict: greenhouse_heat_loop priority
+247,13,7,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.038,0.038,0.076,True,none,delegated progress
+248,13,8,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+249,13,9,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.032,0.0,0.032,True,material priority lost,blocked: material priority lost
+250,13,10,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.224,0.032,0.256,True,none,delegated progress
+251,13,11,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.076,0.0,0.076,True,workshop over capacity,blocked: workshop over capacity
+252,13,12,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+253,13,13,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.032,0.032,0.064,True,none,delegated progress
+254,13,14,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.256,0.032,0.288,True,none,delegated progress
+255,13,15,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.076,0.0,0.076,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+256,13,16,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+257,13,17,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.064,0.032,0.096,True,none,delegated progress
+258,13,18,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.288,0.0,0.288,True,material priority lost,blocked: material priority lost
+259,13,19,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.076,0.0,0.076,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+260,14,0,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.35048,0.0,0.35048,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+261,14,1,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+262,14,2,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.46016,0.032,0.49216,True,none,delegated progress
+263,14,3,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+264,14,4,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.35048,0.0,0.35048,True,material priority lost,blocked: material priority lost
+265,14,5,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+266,14,6,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.49216,0.0,0.49216,True,material priority lost,blocked: material priority lost
+267,14,7,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+268,14,8,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.35048,0.026,0.37648,True,none,material conflict: archive_public_kiosk priority
+269,14,9,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+270,14,10,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.49216,0.0,0.49216,True,workshop over capacity,blocked: workshop over capacity
+271,14,11,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+272,14,12,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.37648,0.026,0.40248,True,none,delegated progress
+273,14,13,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+274,14,14,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.49216,0.032,0.52416,True,none,delegated progress
+275,14,15,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+276,14,16,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.40248,0.026,0.42848,True,none,material conflict: archive_public_kiosk priority
+277,14,17,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+278,14,18,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.52416,0.02624,0.5504,True,none,material conflict: greenhouse_heat_loop priority
+279,14,19,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+280,15,0,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+281,15,1,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.5504,0.032,0.5824,True,none,delegated progress
+282,15,2,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+283,15,3,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.42848,0.026,0.45448,True,none,material conflict: archive_public_kiosk priority
+284,15,4,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+285,15,5,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.5824,0.0,0.5824,True,workshop over capacity,blocked: workshop over capacity
+286,15,6,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+287,15,7,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.45448,0.026,0.48048,True,none,material conflict: archive_public_kiosk priority
+288,15,8,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+289,15,9,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.5824,0.02624,0.60864,True,none,material conflict: greenhouse_heat_loop priority
+290,15,10,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+291,15,11,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.48048,0.026,0.50648,True,none,delegated progress
+292,15,12,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+293,15,13,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.60864,0.032,0.64064,True,none,delegated progress
+294,15,14,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+295,15,15,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.50648,0.0,0.50648,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+296,15,16,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+297,15,17,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.64064,0.0,0.64064,True,workshop over capacity,blocked: workshop over capacity
+298,15,18,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+299,15,19,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.50648,0.026,0.53248,True,none,material conflict: archive_public_kiosk priority
+300,16,0,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.0,0.0,0.0,True,workshop over capacity,blocked: workshop over capacity
+301,16,1,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.18012,0.038,0.21812,True,none,delegated progress
+302,16,2,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+303,16,3,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.17024,0.038,0.20824,True,none,delegated progress
+304,16,4,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.0,0.038,0.038,True,none,delegated progress
+305,16,5,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.21812,0.038,0.25612,True,none,delegated progress
+306,16,6,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+307,16,7,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.20824,0.02812,0.23636,True,none,material conflict: archive_public_kiosk priority
+308,16,8,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.038,0.038,0.076,True,none,delegated progress
+309,16,9,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.25612,0.02812,0.28424,True,none,material conflict: greenhouse_heat_loop priority
+310,16,10,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+311,16,11,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.23636,0.038,0.27436,True,none,delegated progress
+312,16,12,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.076,0.0,0.076,True,workshop over capacity,blocked: workshop over capacity
+313,16,13,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.28424,0.038,0.32224,True,none,delegated progress
+314,16,14,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+315,16,15,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.27436,0.038,0.31236,True,none,delegated progress
+316,16,16,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.076,0.038,0.114,True,none,delegated progress
+317,16,17,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.32224,0.038,0.36024,True,none,delegated progress
+318,16,18,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+319,16,19,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.31236,0.02812,0.34048,True,none,material conflict: archive_public_kiosk priority
+320,17,0,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.36296,0.0,0.36296,True,material priority lost,blocked: material priority lost
+321,17,1,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.44968,0.044,0.49368,True,none,material conflict: greenhouse_heat_loop priority
+322,17,2,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.50512,0.03256,0.53768,True,none,material conflict: flood_bridge_market_route priority
+323,17,3,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.04732,0.026,0.07332,True,none,delegated progress
+324,17,4,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.36296,0.026,0.38896,True,none,material conflict: dusk_signal_court priority
+325,17,5,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.49368,0.0,0.49368,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+326,17,6,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.53768,0.044,0.58168,True,none,material conflict: flood_bridge_market_route priority
+327,17,7,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.07332,0.015777,0.089097,True,none,material conflict: archive_public_kiosk priority
+328,17,8,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.38896,0.026,0.41496,True,none,delegated progress
+329,17,9,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.49368,0.03256,0.52624,True,none,material conflict: greenhouse_heat_loop priority
+330,17,10,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.58168,0.044,0.62568,True,none,delegated progress
+331,17,11,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.089097,0.0,0.089097,True,workshop over capacity,blocked: workshop over capacity
+332,17,12,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.41496,0.0,0.41496,True,material priority lost,blocked: material priority lost
+333,17,13,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.52624,0.0,0.52624,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+334,17,14,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.62568,0.03256,0.65824,True,none,material conflict: flood_bridge_market_route priority
+335,17,15,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.089097,0.026,0.115097,True,none,delegated progress
+336,17,16,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.41496,0.0,0.41496,True,material priority lost,blocked: material priority lost
+337,17,17,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.52624,0.044,0.57024,True,none,outcome changed routine
+338,17,18,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.65824,0.03256,0.6908,True,none,material conflict: flood_bridge_market_route priority
+339,17,19,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.115097,0.02132,0.136417,True,none,material conflict: archive_public_kiosk priority
+340,18,0,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.096,0.0,0.096,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+341,18,1,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.288,0.032,0.32,True,none,material conflict: greenhouse_heat_loop priority
+342,18,2,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.076,0.038,0.114,True,none,delegated progress
+343,18,3,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.0,0.044,0.044,True,none,delegated progress
+344,18,4,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.096,0.0,0.096,True,material priority lost,blocked: material priority lost
+345,18,5,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.32,0.032,0.352,True,none,delegated progress
+346,18,6,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.114,0.0,0.114,True,material priority lost,blocked: material priority lost
+347,18,7,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.044,0.044,0.088,True,none,delegated progress
+348,18,8,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.096,0.032,0.128,True,none,delegated progress
+349,18,9,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.352,0.032,0.384,True,none,delegated progress
+350,18,10,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.114,0.0,0.114,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+351,18,11,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.088,0.0,0.088,True,material priority lost,blocked: material priority lost
+352,18,12,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.128,0.032,0.16,True,none,delegated progress
+353,18,13,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.384,0.0,0.384,True,material priority lost,blocked: material priority lost
+354,18,14,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.114,0.038,0.152,True,none,delegated progress
+355,18,15,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.088,0.044,0.132,True,none,delegated progress
+356,18,16,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.16,0.032,0.192,True,none,material conflict: dusk_signal_court priority
+357,18,17,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.384,0.032,0.416,True,none,delegated progress
+358,18,18,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.152,0.03116,0.18316,True,none,material conflict: flood_bridge_market_route priority
+359,18,19,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.132,0.044,0.176,True,none,delegated progress
+360,19,0,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+361,19,1,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.64064,0.0,0.64064,True,material priority lost,blocked: material priority lost
+362,19,2,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+363,19,3,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.53248,0.026,0.55848,True,none,material conflict: archive_public_kiosk priority
+364,19,4,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+365,19,5,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.64064,0.02624,0.66688,True,none,material conflict: greenhouse_heat_loop priority
+366,19,6,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+367,19,7,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.55848,0.026,0.58448,True,none,delegated progress
+368,19,8,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+369,19,9,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.66688,0.032,0.69888,True,none,delegated progress
+370,19,10,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+371,19,11,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.58448,0.026,0.61048,True,none,material conflict: archive_public_kiosk priority
+372,19,12,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+373,19,13,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.69888,0.02624,0.72512,True,none,material conflict: greenhouse_heat_loop priority
+374,19,14,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+375,19,15,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.61048,0.0,0.61048,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+376,19,16,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+377,19,17,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.72512,0.02624,0.75136,True,none,material conflict: greenhouse_heat_loop priority
+378,19,18,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+379,19,19,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.61048,0.026,0.63648,True,none,delegated progress
+380,20,0,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.75136,0.019418,0.770778,True,none,material conflict: greenhouse_heat_loop priority
+381,20,1,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+382,20,2,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.63648,0.026,0.66248,True,none,material conflict: archive_public_kiosk priority
+383,20,3,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+384,20,4,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.770778,0.0,0.770778,True,workshop over capacity,blocked: workshop over capacity
+385,20,5,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+386,20,6,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.66248,0.026,0.68848,True,none,delegated progress
+387,20,7,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+388,20,8,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.770778,0.032,0.802778,True,none,delegated progress
+389,20,9,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+390,20,10,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.68848,0.0,0.68848,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+391,20,11,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+392,20,12,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.802778,0.019418,0.822195,True,none,material conflict: greenhouse_heat_loop priority
+393,20,13,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+394,20,14,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.68848,0.026,0.71448,True,none,material conflict: archive_public_kiosk priority
+395,20,15,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+396,20,16,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.822195,0.0,0.822195,True,workshop over capacity,blocked: workshop over capacity
+397,20,17,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+398,20,18,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.71448,0.026,0.74048,True,none,delegated progress
+399,20,19,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+400,21,0,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.36024,0.038,0.39824,True,none,delegated progress
+401,21,1,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+402,21,2,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.34048,0.02812,0.3686,True,none,material conflict: archive_public_kiosk priority
+403,21,3,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.114,0.038,0.152,True,none,delegated progress
+404,21,4,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.39824,0.02812,0.42636,True,none,material conflict: greenhouse_heat_loop priority
+405,21,5,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+406,21,6,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.3686,0.038,0.4066,True,none,delegated progress
+407,21,7,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.152,0.0,0.152,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+408,21,8,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.42636,0.038,0.46436,True,none,delegated progress
+409,21,9,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+410,21,10,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.4066,0.038,0.4446,True,none,delegated progress
+411,21,11,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.152,0.038,0.19,True,none,delegated progress
+412,21,12,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.46436,0.038,0.50236,True,none,delegated progress
+413,21,13,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+414,21,14,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.4446,0.02812,0.47272,True,none,material conflict: archive_public_kiosk priority
+415,21,15,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.19,0.038,0.228,True,none,delegated progress
+416,21,16,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.50236,0.02812,0.53048,True,none,material conflict: greenhouse_heat_loop priority
+417,21,17,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+418,21,18,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.47272,0.038,0.51072,True,none,delegated progress
+419,21,19,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.228,0.03116,0.25916,True,none,material conflict: dusk_signal_court priority
+420,22,0,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.57024,0.0,0.57024,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+421,22,1,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.6908,0.044,0.7348,True,none,material conflict: flood_bridge_market_route priority
+422,22,2,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.136417,0.015777,0.152194,True,none,material conflict: archive_public_kiosk priority
+423,22,3,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.41496,0.026,0.44096,True,none,delegated progress
+424,22,4,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.57024,0.0,0.57024,True,material priority lost,blocked: material priority lost
+425,22,5,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.7348,0.044,0.7788,True,none,delegated progress
+426,22,6,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.152194,0.015777,0.16797,True,none,material conflict: archive_public_kiosk priority
+427,22,7,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.44096,0.01924,0.4602,True,none,material conflict: dusk_signal_court priority
+428,22,8,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.57024,0.0,0.57024,True,material priority lost,blocked: material priority lost
+429,22,9,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.7788,0.03256,0.81136,True,none,material conflict: flood_bridge_market_route priority
+430,22,10,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.16797,0.026,0.19397,True,none,delegated progress
+431,22,11,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.4602,0.01924,0.47944,True,none,material conflict: dusk_signal_court priority
+432,22,12,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.57024,0.044,0.61424,True,none,delegated progress
+433,22,13,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.81136,0.03256,0.84392,True,none,material conflict: flood_bridge_market_route priority
+434,22,14,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.19397,0.02132,0.21529,True,none,material conflict: archive_public_kiosk priority
+435,22,15,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.47944,0.026,0.50544,True,none,delegated progress
+436,22,16,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.61424,0.044,0.65824,True,none,material conflict: greenhouse_heat_loop priority
+437,22,17,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.84392,0.044,0.88792,True,none,delegated progress
+438,22,18,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.21529,0.015777,0.231067,True,none,material conflict: archive_public_kiosk priority
+439,22,19,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.50544,0.026,0.53144,True,none,material conflict: dusk_signal_court priority
+440,23,0,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.416,0.032,0.448,True,none,delegated progress
+441,23,1,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.18316,0.0,0.18316,True,material priority lost,blocked: material priority lost
+442,23,2,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.176,0.044,0.22,True,none,delegated progress
+443,23,3,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.192,0.032,0.224,True,none,delegated progress
+444,23,4,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.448,0.0,0.448,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+445,23,5,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.18316,0.0,0.18316,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+446,23,6,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.22,0.0,0.22,True,material priority lost,blocked: material priority lost
+447,23,7,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.224,0.032,0.256,True,none,delegated progress
+448,23,8,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.448,0.0,0.448,True,material priority lost,blocked: material priority lost
+449,23,9,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.18316,0.038,0.22116,True,none,delegated progress
+450,23,10,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.22,0.044,0.264,True,none,delegated progress
+451,23,11,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.256,0.032,0.288,True,none,material conflict: dusk_signal_court priority
+452,23,12,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.448,0.032,0.48,True,none,delegated progress
+453,23,13,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.22116,0.03116,0.25232,True,none,material conflict: flood_bridge_market_route priority
+454,23,14,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.264,0.044,0.308,True,none,delegated progress
+455,23,15,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.288,0.0,0.288,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+456,23,16,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.48,0.032,0.512,True,none,delegated progress
+457,23,17,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.25232,0.038,0.29032,True,none,delegated progress
+458,23,18,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.308,0.044,0.352,True,none,material conflict: archive_public_kiosk priority
+459,23,19,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.288,0.032,0.32,True,none,delegated progress
+460,24,0,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.822195,0.02624,0.848435,True,none,material conflict: greenhouse_heat_loop priority
+461,24,1,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+462,24,2,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.74048,0.026,0.76648,True,none,outcome changed routine
+463,24,3,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.0,0.0,0.0,True,material priority lost,blocked: material priority lost
+464,24,4,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.848435,0.032,0.880435,True,none,delegated progress
+465,24,5,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+466,24,6,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.76648,0.026,0.79248,True,none,material conflict: archive_public_kiosk priority
+467,24,7,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.0,0.038,0.038,True,none,delegated progress
+468,24,8,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.880435,0.0,0.880435,True,workshop over capacity,blocked: workshop over capacity
+469,24,9,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+470,24,10,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.79248,0.0,0.79248,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+471,24,11,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.038,0.038,0.076,True,none,material conflict: dusk_signal_court priority
+472,24,12,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.880435,0.02624,0.906675,True,none,material conflict: greenhouse_heat_loop priority
+473,24,13,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+474,24,14,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.79248,0.026,0.81848,True,none,delegated progress
+475,24,15,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.076,0.038,0.114,True,none,material conflict: dusk_signal_court priority
+476,24,16,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.906675,0.032,0.938675,True,none,delegated progress
+477,24,17,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+478,24,18,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.81848,0.026,0.84448,True,none,material conflict: archive_public_kiosk priority
+479,24,19,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.114,0.038,0.152,True,none,delegated progress
+480,25,0,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+481,25,1,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.84448,0.0,0.84448,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+482,25,2,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.152,0.038,0.19,True,none,material conflict: dusk_signal_court priority
+483,25,3,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.938675,0.032,0.970675,True,none,delegated progress
+484,25,4,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+485,25,5,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.84448,0.0,0.84448,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+486,25,6,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.19,0.038,0.228,True,none,delegated progress
+487,25,7,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.970675,0.02624,0.996915,True,none,material conflict: greenhouse_heat_loop priority
+488,25,8,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+489,25,9,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.84448,0.026,0.87048,True,none,material conflict: archive_public_kiosk priority
+490,25,10,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.228,0.038,0.266,True,none,material conflict: dusk_signal_court priority
+491,25,11,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,0.996915,0.003085,1.0,True,none,material conflict: greenhouse_heat_loop priority
+492,25,12,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+493,25,13,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.87048,0.026,0.89648,True,none,delegated progress
+494,25,14,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.266,0.038,0.304,True,none,material conflict: dusk_signal_court priority
+495,25,15,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,delegated progress
+496,25,16,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+497,25,17,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.89648,0.026,0.92248,True,none,material conflict: archive_public_kiosk priority
+498,25,18,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.304,0.038,0.342,True,none,delegated progress
+499,25,19,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+500,26,0,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+501,26,1,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.51072,0.038,0.54872,True,none,delegated progress
+502,26,2,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.25916,0.023058,0.282218,True,none,material conflict: dusk_signal_court priority
+503,26,3,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.53048,0.038,0.56848,True,none,delegated progress
+504,26,4,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+505,26,5,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.54872,0.038,0.58672,True,none,delegated progress
+506,26,6,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.282218,0.038,0.320218,True,none,delegated progress
+507,26,7,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.56848,0.038,0.60648,True,none,delegated progress
+508,26,8,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+509,26,9,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.58672,0.02812,0.61484,True,none,material conflict: archive_public_kiosk priority
+510,26,10,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.320218,0.038,0.358218,True,none,delegated progress
+511,26,11,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.60648,0.02812,0.6346,True,none,material conflict: greenhouse_heat_loop priority
+512,26,12,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+513,26,13,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.61484,0.038,0.65284,True,none,delegated progress
+514,26,14,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.358218,0.03116,0.389378,True,none,material conflict: dusk_signal_court priority
+515,26,15,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.6346,0.038,0.6726,True,none,delegated progress
+516,26,16,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+517,26,17,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.65284,0.038,0.69084,True,none,delegated progress
+518,26,18,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.389378,0.0,0.389378,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+519,26,19,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.6726,0.038,0.7106,True,none,delegated progress
+520,27,0,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.88792,0.044,0.93192,True,none,delegated progress
+521,27,1,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.231067,0.015777,0.246844,True,none,material conflict: archive_public_kiosk priority
+522,27,2,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.53144,0.01924,0.55068,True,none,material conflict: dusk_signal_court priority
+523,27,3,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.65824,0.03256,0.6908,True,none,material conflict: greenhouse_heat_loop priority
+524,27,4,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.93192,0.0,0.93192,True,material priority lost,blocked: material priority lost
+525,27,5,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.246844,0.026,0.272844,True,none,delegated progress
+526,27,6,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.55068,0.01924,0.56992,True,none,material conflict: dusk_signal_court priority
+527,27,7,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.6908,0.044,0.7348,True,none,delegated progress
+528,27,8,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.93192,0.0,0.93192,True,material priority lost,blocked: material priority lost
+529,27,9,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.272844,0.0,0.272844,True,workshop over capacity,blocked: workshop over capacity
+530,27,10,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.56992,0.026,0.59592,True,none,delegated progress
+531,27,11,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.7348,0.044,0.7788,True,none,material conflict: greenhouse_heat_loop priority
+532,27,12,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.93192,0.044,0.97592,True,none,delegated progress
+533,27,13,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.272844,0.015777,0.288621,True,none,material conflict: archive_public_kiosk priority
+534,27,14,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.59592,0.026,0.62192,True,none,material conflict: dusk_signal_court priority
+535,27,15,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.7788,0.0,0.7788,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+536,27,16,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,0.97592,0.02408,1.0,True,none,material conflict: flood_bridge_market_route priority
+537,27,17,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.288621,0.026,0.314621,True,none,delegated progress
+538,27,18,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.62192,0.026,0.64792,True,none,material conflict: dusk_signal_court priority
+539,27,19,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.7788,0.044,0.8228,True,none,delegated progress
+540,28,0,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.29032,0.0,0.29032,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+541,28,1,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.352,0.0,0.352,True,material priority lost,blocked: material priority lost
+542,28,2,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.32,0.032,0.352,True,none,delegated progress
+543,28,3,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.512,0.0,0.512,True,material priority lost,blocked: material priority lost
+544,28,4,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.29032,0.038,0.32832,True,none,delegated progress
+545,28,5,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.352,0.044,0.396,True,none,delegated progress
+546,28,6,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.352,0.032,0.384,True,none,material conflict: dusk_signal_court priority
+547,28,7,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.512,0.032,0.544,True,none,delegated progress
+548,28,8,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.32832,0.0,0.32832,True,workshop over capacity,blocked: workshop over capacity
+549,28,9,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.396,0.044,0.44,True,none,delegated progress
+550,28,10,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.384,0.0,0.384,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+551,28,11,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.544,0.032,0.576,True,none,delegated progress
+552,28,12,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.32832,0.038,0.36632,True,none,delegated progress
+553,28,13,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.44,0.044,0.484,True,none,material conflict: archive_public_kiosk priority
+554,28,14,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.384,0.032,0.416,True,none,delegated progress
+555,28,15,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.576,0.0,0.576,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+556,28,16,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.36632,0.038,0.40432,True,none,delegated progress
+557,28,17,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.484,0.044,0.528,True,none,delegated progress
+558,28,18,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.416,0.032,0.448,True,none,material conflict: dusk_signal_court priority
+559,28,19,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.576,0.032,0.608,True,none,delegated progress
+560,29,0,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.0,0.0,0.0,True,material priority lost,blocked: material priority lost
+561,29,1,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.92248,0.026,0.94848,True,none,material conflict: archive_public_kiosk priority
+562,29,2,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.342,0.038,0.38,True,none,outcome changed routine
+563,29,3,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+564,29,4,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.0,0.026,0.026,True,none,delegated progress
+565,29,5,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.94848,0.0,0.94848,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+566,29,6,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.38,0.038,0.418,True,none,material conflict: dusk_signal_court priority
+567,29,7,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,workshop over capacity,blocked: workshop over capacity
+568,29,8,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.026,0.026,0.052,True,none,material conflict: flood_bridge_market_route priority
+569,29,9,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.94848,0.026,0.97448,True,none,delegated progress
+570,29,10,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.418,0.038,0.456,True,none,material conflict: dusk_signal_court priority
+571,29,11,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,delegated progress
+572,29,12,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.052,0.026,0.078,True,none,material conflict: flood_bridge_market_route priority
+573,29,13,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,0.97448,0.02552,1.0,True,none,material conflict: archive_public_kiosk priority
+574,29,14,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.456,0.038,0.494,True,none,delegated progress
+575,29,15,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+576,29,16,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.078,0.026,0.104,True,none,delegated progress
+577,29,17,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+578,29,18,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.494,0.0,0.494,True,material priority lost,blocked: material priority lost
+579,29,19,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,workshop over capacity,blocked: workshop over capacity
+580,30,0,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+581,30,1,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.494,0.038,0.532,True,none,delegated progress
+582,30,2,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,workshop over capacity,blocked: workshop over capacity
+583,30,3,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.104,0.026,0.13,True,none,delegated progress
+584,30,4,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+585,30,5,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.532,0.038,0.57,True,none,material conflict: dusk_signal_court priority
+586,30,6,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+587,30,7,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.13,0.026,0.156,True,none,material conflict: flood_bridge_market_route priority
+588,30,8,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,delegated progress
+589,30,9,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.57,0.038,0.608,True,none,material conflict: dusk_signal_court priority
+590,30,10,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,delegated progress
+591,30,11,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.156,0.026,0.182,True,none,material conflict: flood_bridge_market_route priority
+592,30,12,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+593,30,13,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.608,0.038,0.646,True,none,delegated progress
+594,30,14,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,workshop over capacity,blocked: workshop over capacity
+595,30,15,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.182,0.026,0.208,True,none,delegated progress
+596,30,16,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+597,30,17,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.646,0.038,0.684,True,none,material conflict: dusk_signal_court priority
+598,30,18,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+599,30,19,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.208,0.026,0.234,True,none,material conflict: flood_bridge_market_route priority
+600,31,0,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.69084,0.038,0.72884,True,none,delegated progress
+601,31,1,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.389378,0.038,0.427378,True,none,delegated progress
+602,31,2,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.7106,0.038,0.7486,True,none,delegated progress
+603,31,3,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+604,31,4,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.72884,0.02812,0.75696,True,none,material conflict: archive_public_kiosk priority
+605,31,5,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.427378,0.038,0.465378,True,none,delegated progress
+606,31,6,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.7486,0.02812,0.77672,True,none,material conflict: greenhouse_heat_loop priority
+607,31,7,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+608,31,8,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.75696,0.038,0.79496,True,none,delegated progress
+609,31,9,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.465378,0.0,0.465378,True,workshop over capacity,blocked: workshop over capacity
+610,31,10,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.77672,0.038,0.81472,True,none,delegated progress
+611,31,11,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+612,31,12,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.79496,0.038,0.83296,True,none,delegated progress
+613,31,13,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.465378,0.038,0.503378,True,none,delegated progress
+614,31,14,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.81472,0.038,0.85272,True,none,delegated progress
+615,31,15,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+616,31,16,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.83296,0.038,0.87096,True,none,material conflict: archive_public_kiosk priority
+617,31,17,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.503378,0.038,0.541378,True,none,delegated progress
+618,31,18,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.85272,0.038,0.89072,True,none,material conflict: greenhouse_heat_loop priority
+619,31,19,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,False,0.0,0.0,0.0,True,dependency not ready,blocked: dependency not ready
+620,32,0,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.314621,0.026,0.340621,True,none,delegated progress
+621,32,1,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.64792,0.01924,0.66716,True,none,material conflict: dusk_signal_court priority
+622,32,2,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.8228,0.044,0.8668,True,none,delegated progress
+623,32,3,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,material conflict: flood_bridge_market_route priority
+624,32,4,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.340621,0.02132,0.361941,True,none,material conflict: archive_public_kiosk priority
+625,32,5,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.66716,0.026,0.69316,True,none,delegated progress
+626,32,6,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.8668,0.044,0.9108,True,none,material conflict: greenhouse_heat_loop priority
+627,32,7,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,delegated progress
+628,32,8,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.361941,0.0,0.361941,True,workshop over capacity,blocked: workshop over capacity
+629,32,9,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.69316,0.0,0.69316,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+630,32,10,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.9108,0.0,0.9108,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+631,32,11,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,material conflict: flood_bridge_market_route priority
+632,32,12,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.361941,0.026,0.387941,True,none,delegated progress
+633,32,13,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.69316,0.026,0.71916,True,none,material conflict: dusk_signal_court priority
+634,32,14,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.9108,0.044,0.9548,True,none,delegated progress
+635,32,15,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,material conflict: flood_bridge_market_route priority
+636,32,16,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.387941,0.0,0.387941,True,material priority lost,blocked: material priority lost
+637,32,17,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.71916,0.026,0.74516,True,none,delegated progress
+638,32,18,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.9548,0.03256,0.98736,True,none,material conflict: greenhouse_heat_loop priority
+639,32,19,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,delegated progress
+640,33,0,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.528,0.044,0.572,True,none,delegated progress
+641,33,1,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.448,0.032,0.48,True,none,material conflict: dusk_signal_court priority
+642,33,2,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.608,0.032,0.64,True,none,delegated progress
+643,33,3,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.40432,0.03116,0.43548,True,none,material conflict: flood_bridge_market_route priority
+644,33,4,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.572,0.044,0.616,True,none,delegated progress
+645,33,5,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.48,0.0,0.48,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+646,33,6,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.64,0.032,0.672,True,none,delegated progress
+647,33,7,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.43548,0.038,0.47348,True,none,delegated progress
+648,33,8,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.616,0.044,0.66,True,none,material conflict: archive_public_kiosk priority
+649,33,9,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.48,0.032,0.512,True,none,delegated progress
+650,33,10,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.672,0.032,0.704,True,none,material conflict: greenhouse_heat_loop priority
+651,33,11,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.47348,0.038,0.51148,True,none,delegated progress
+652,33,12,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.66,0.044,0.704,True,none,delegated progress
+653,33,13,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.512,0.032,0.544,True,none,material conflict: dusk_signal_court priority
+654,33,14,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.704,0.032,0.736,True,none,delegated progress
+655,33,15,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.51148,0.0,0.51148,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+656,33,16,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.704,0.044,0.748,True,none,delegated progress
+657,33,17,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.544,0.032,0.576,True,none,delegated progress
+658,33,18,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.736,0.032,0.768,True,none,delegated progress
+659,33,19,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.51148,0.038,0.54948,True,none,delegated progress
+660,34,0,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+661,34,1,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.684,0.038,0.722,True,none,material conflict: dusk_signal_court priority
+662,34,2,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+663,34,3,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.234,0.026,0.26,True,none,material conflict: flood_bridge_market_route priority
+664,34,4,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,delegated progress
+665,34,5,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.722,0.038,0.76,True,none,material conflict: dusk_signal_court priority
+666,34,6,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+667,34,7,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.26,0.026,0.286,True,none,material conflict: flood_bridge_market_route priority
+668,34,8,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+669,34,9,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.76,0.038,0.798,True,none,delegated progress
+670,34,10,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+671,34,11,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.286,0.026,0.312,True,none,outcome changed routine
+672,34,12,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+673,34,13,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.798,0.0,0.798,True,material priority lost,blocked: material priority lost
+674,34,14,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+675,34,15,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.312,0.0,0.312,True,material priority lost,blocked: material priority lost
+676,34,16,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,delegated progress
+677,34,17,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.798,0.038,0.836,True,none,material conflict: dusk_signal_court priority
+678,34,18,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,delegated progress
+679,34,19,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.312,0.026,0.338,True,none,material conflict: flood_bridge_market_route priority
+680,35,0,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.836,0.02812,0.86412,True,none,material conflict: dusk_signal_court priority
+681,35,1,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,workshop over capacity,blocked: workshop over capacity
+682,35,2,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.338,0.026,0.364,True,none,material conflict: flood_bridge_market_route priority
+683,35,3,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,delegated progress
+684,35,4,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.86412,0.02812,0.89224,True,none,material conflict: dusk_signal_court priority
+685,35,5,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,delegated progress
+686,35,6,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.364,0.026,0.39,True,none,material conflict: flood_bridge_market_route priority
+687,35,7,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+688,35,8,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.89224,0.038,0.93024,True,none,delegated progress
+689,35,9,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+690,35,10,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.39,0.026,0.416,True,none,delegated progress
+691,35,11,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+692,35,12,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.93024,0.02812,0.95836,True,none,material conflict: dusk_signal_court priority
+693,35,13,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,workshop over capacity,blocked: workshop over capacity
+694,35,14,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.416,0.026,0.442,True,none,material conflict: flood_bridge_market_route priority
+695,35,15,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+696,35,16,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.95836,0.02812,0.98648,True,none,material conflict: dusk_signal_court priority
+697,35,17,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,delegated progress
+698,35,18,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.442,0.026,0.468,True,none,material conflict: flood_bridge_market_route priority
+699,35,19,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+700,36,0,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.541378,0.038,0.579378,True,none,delegated progress
+701,36,1,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.89072,0.02812,0.91884,True,none,material conflict: greenhouse_heat_loop priority
+702,36,2,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,True,0.0,0.038,0.038,True,none,delegated progress
+703,36,3,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.87096,0.0,0.87096,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+704,36,4,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.579378,0.023058,0.602437,True,none,material conflict: dusk_signal_court priority
+705,36,5,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.91884,0.038,0.95684,True,none,delegated progress
+706,36,6,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,True,0.038,0.038,0.076,True,none,material conflict: flood_bridge_market_route priority
+707,36,7,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.87096,0.038,0.90896,True,none,delegated progress
+708,36,8,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.602437,0.038,0.640437,True,none,delegated progress
+709,36,9,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.95684,0.038,0.99484,True,none,delegated progress
+710,36,10,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,True,0.076,0.038,0.114,True,none,delegated progress
+711,36,11,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.90896,0.038,0.94696,True,none,material conflict: archive_public_kiosk priority
+712,36,12,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.640437,0.038,0.678437,True,none,delegated progress
+713,36,13,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,0.99484,0.00516,1.0,True,none,material conflict: greenhouse_heat_loop priority
+714,36,14,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,True,0.114,0.038,0.152,True,none,delegated progress
+715,36,15,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.94696,0.038,0.98496,True,none,delegated progress
+716,36,16,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.678437,0.023058,0.701495,True,none,material conflict: dusk_signal_court priority
+717,36,17,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,1.0,0.0,1.0,True,none,delegated progress
+718,36,18,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,True,0.152,0.02812,0.18012,True,none,material conflict: flood_bridge_market_route priority
+719,36,19,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,0.98496,0.01504,1.0,True,none,delegated progress
+720,37,0,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.74516,0.026,0.77116,True,none,delegated progress
+721,37,1,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,0.98736,0.01264,1.0,True,none,material conflict: greenhouse_heat_loop priority
+722,37,2,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,delegated progress
+723,37,3,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.387941,0.015777,0.403718,True,none,material conflict: archive_public_kiosk priority
+724,37,4,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.77116,0.026,0.79716,True,none,material conflict: dusk_signal_court priority
+725,37,5,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,1.0,0.0,1.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+726,37,6,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,material conflict: flood_bridge_market_route priority
+727,37,7,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.403718,0.026,0.429718,True,none,delegated progress
+728,37,8,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.79716,0.026,0.82316,True,none,material conflict: dusk_signal_court priority
+729,37,9,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,1.0,0.0,1.0,True,none,delegated progress
+730,37,10,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,material conflict: flood_bridge_market_route priority
+731,37,11,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.429718,0.015777,0.445494,True,none,material conflict: archive_public_kiosk priority
+732,37,12,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.82316,0.026,0.84916,True,none,delegated progress
+733,37,13,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+734,37,14,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,delegated progress
+735,37,15,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.445494,0.02132,0.466814,True,none,material conflict: archive_public_kiosk priority
+736,37,16,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.84916,0.0,0.84916,True,material priority lost,blocked: material priority lost
+737,37,17,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+738,37,18,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,material conflict: flood_bridge_market_route priority
+739,37,19,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.466814,0.026,0.492814,True,none,delegated progress
+740,38,0,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.576,0.0,0.576,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+741,38,1,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.768,0.032,0.8,True,none,delegated progress
+742,38,2,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.54948,0.038,0.58748,True,none,delegated progress
+743,38,3,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.748,0.044,0.792,True,none,material conflict: archive_public_kiosk priority
+744,38,4,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.576,0.032,0.608,True,none,delegated progress
+745,38,5,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.8,0.032,0.832,True,none,material conflict: greenhouse_heat_loop priority
+746,38,6,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.58748,0.038,0.62548,True,none,delegated progress
+747,38,7,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.792,0.044,0.836,True,none,delegated progress
+748,38,8,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.608,0.032,0.64,True,none,material conflict: dusk_signal_court priority
+749,38,9,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.832,0.032,0.864,True,none,delegated progress
+750,38,10,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.62548,0.0,0.62548,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+751,38,11,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.836,0.044,0.88,True,none,delegated progress
+752,38,12,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.64,0.032,0.672,True,none,delegated progress
+753,38,13,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.864,0.032,0.896,True,none,delegated progress
+754,38,14,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.62548,0.038,0.66348,True,none,delegated progress
+755,38,15,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.88,0.0,0.88,True,material priority lost,blocked: material priority lost
+756,38,16,dusk_signal_court,string_wire,Milo,Milo,Milo owns string_wire,stake_posts,True,0.672,0.032,0.704,True,none,delegated progress
+757,38,17,greenhouse_heat_loop,index_care,Nia,Fay,Nia owns index_care,plant_bed,True,0.896,0.0,0.896,True,material priority lost,blocked: material priority lost
+758,38,18,flood_bridge_market_route,cut_planks,Ari,Ari,Ari owns cut_planks,survey_piers,True,0.66348,0.038,0.70148,True,none,delegated progress
+759,38,19,archive_public_kiosk,lamp_mount,Milo,Nia,Milo owns lamp_mount,build_frame,True,0.88,0.044,0.924,True,none,delegated progress
+760,39,0,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,0.98648,0.01352,1.0,True,none,material conflict: dusk_signal_court priority
+761,39,1,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,delegated progress
+762,39,2,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.468,0.026,0.494,True,none,material conflict: flood_bridge_market_route priority
+763,39,3,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+764,39,4,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,1.0,0.0,1.0,True,none,delegated progress
+765,39,5,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,workshop over capacity,blocked: workshop over capacity
+766,39,6,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.494,0.026,0.52,True,none,delegated progress
+767,39,7,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+768,39,8,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,1.0,0.0,1.0,True,material priority lost,blocked: material priority lost
+769,39,9,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+770,39,10,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.52,0.0,0.52,True,material priority lost,blocked: material priority lost
+771,39,11,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,delegated progress
+772,39,12,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,1.0,0.0,1.0,True,none,material conflict: dusk_signal_court priority
+773,39,13,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,delegated progress
+774,39,14,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.52,0.026,0.546,True,none,material conflict: flood_bridge_market_route priority
+775,39,15,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+776,39,16,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,1.0,0.0,1.0,True,none,delegated progress
+777,39,17,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+778,39,18,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.546,0.026,0.572,True,none,delegated progress
+779,39,19,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,material priority lost,blocked: material priority lost
+780,40,0,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,delegated progress
+781,40,1,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.572,0.026,0.598,True,none,material conflict: flood_bridge_market_route priority
+782,40,2,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+783,40,3,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,1.0,0.0,1.0,True,none,delegated progress
+784,40,4,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+785,40,5,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.598,0.026,0.624,True,none,delegated progress
+786,40,6,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+787,40,7,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,1.0,0.0,1.0,True,none,material conflict: dusk_signal_court priority
+788,40,8,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+789,40,9,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.624,0.026,0.65,True,none,material conflict: flood_bridge_market_route priority
+790,40,10,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+791,40,11,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,1.0,0.0,1.0,True,none,material conflict: dusk_signal_court priority
+792,40,12,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,delegated progress
+793,40,13,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.65,0.026,0.676,True,none,material conflict: flood_bridge_market_route priority
+794,40,14,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+795,40,15,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,1.0,0.0,1.0,True,none,delegated progress
+796,40,16,greenhouse_heat_loop,fit_glass,Ari,Fay,Ari owns fit_glass,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+797,40,17,flood_bridge_market_route,seal_joints,Fay,Ari,Fay owns seal_joints,cut_planks,True,0.676,0.026,0.702,True,none,delegated progress
+798,40,18,archive_public_kiosk,sort_index,Nia,Nia,Nia owns sort_index,none,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+799,40,19,dusk_signal_court,signal_code,Nia,Milo,Nia owns signal_code,string_wire,True,1.0,0.0,1.0,True,none,material conflict: dusk_signal_court priority
+800,41,0,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,1.0,0.0,1.0,True,none,delegated progress
+801,41,1,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,True,0.18012,0.038,0.21812,True,none,material conflict: flood_bridge_market_route priority
+802,41,2,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,1.0,0.0,1.0,True,none,delegated progress
+803,41,3,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.701495,0.038,0.739495,True,none,delegated progress
+804,41,4,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,1.0,0.0,1.0,True,none,delegated progress
+805,41,5,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,True,0.21812,0.038,0.25612,True,none,delegated progress
+806,41,6,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+807,41,7,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.739495,0.038,0.777495,True,none,delegated progress
+808,41,8,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+809,41,9,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,True,0.25612,0.038,0.29412,True,none,delegated progress
+810,41,10,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,1.0,0.0,1.0,True,none,delegated progress
+811,41,11,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.777495,0.023058,0.800554,True,none,material conflict: dusk_signal_court priority
+812,41,12,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,1.0,0.0,1.0,True,none,delegated progress
+813,41,13,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,True,0.29412,0.02812,0.32224,True,none,material conflict: flood_bridge_market_route priority
+814,41,14,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,1.0,0.0,1.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+815,41,15,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.800554,0.038,0.838554,True,none,delegated progress
+816,41,16,greenhouse_heat_loop,coil_pipe,Milo,Fay,Milo owns coil_pipe,fit_glass,True,1.0,0.0,1.0,True,none,delegated progress
+817,41,17,flood_bridge_market_route,lamp_markers,Milo,Ari,Milo owns lamp_markers,seal_joints,True,0.32224,0.038,0.36024,True,none,delegated progress
+818,41,18,archive_public_kiosk,build_frame,Ari,Nia,Ari owns build_frame,sort_index,True,1.0,0.0,1.0,True,none,material conflict: archive_public_kiosk priority
+819,41,19,dusk_signal_court,comfort_corner,Fay,Milo,Fay owns comfort_corner,stake_posts,True,0.838554,0.038,0.876554,True,none,delegated progress
+820,42,0,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,1.0,0.0,1.0,False,delegate asks for clearer terms,blocked: delegate asks for clearer terms
+821,42,1,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,material conflict: flood_bridge_market_route priority
+822,42,2,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.492814,0.026,0.518814,True,none,delegated progress
+823,42,3,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.84916,0.026,0.87516,True,none,material conflict: dusk_signal_court priority
+824,42,4,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,1.0,0.0,1.0,True,none,delegated progress
+825,42,5,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,material conflict: flood_bridge_market_route priority
+826,42,6,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.518814,0.0,0.518814,True,workshop over capacity,blocked: workshop over capacity
+827,42,7,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.87516,0.026,0.90116,True,none,delegated progress
+828,42,8,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,1.0,0.0,1.0,True,material priority lost,blocked: material priority lost
+829,42,9,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,delegated progress
+830,42,10,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.518814,0.02132,0.540134,True,none,material conflict: archive_public_kiosk priority
+831,42,11,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.90116,0.01924,0.9204,True,none,material conflict: dusk_signal_court priority
+832,42,12,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,1.0,0.0,1.0,True,none,material conflict: greenhouse_heat_loop priority
+833,42,13,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,material conflict: flood_bridge_market_route priority
+834,42,14,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.540134,0.026,0.566134,True,none,delegated progress
+835,42,15,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.9204,0.01924,0.93964,True,none,material conflict: dusk_signal_court priority
+836,42,16,greenhouse_heat_loop,plant_bed,Fay,Fay,Fay owns plant_bed,none,True,1.0,0.0,1.0,True,none,delegated progress
+837,42,17,flood_bridge_market_route,survey_piers,Nia,Ari,Nia owns survey_piers,none,True,1.0,0.0,1.0,True,none,material conflict: flood_bridge_market_route priority
+838,42,18,archive_public_kiosk,weather_copy,Fay,Nia,Fay owns weather_copy,sort_index,True,0.566134,0.0,0.566134,True,workshop over capacity,blocked: workshop over capacity
+839,42,19,dusk_signal_court,stake_posts,Ari,Milo,Ari owns stake_posts,none,True,0.93964,0.026,0.96564,True,none,delegated progress

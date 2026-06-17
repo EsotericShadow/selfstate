@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report 174 - Moral-Status Audit and Distress Guardrails Bridge</title>
+  <script src="../artifacts/ssrm_3d_moral_status_distress_guardrails_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_moral_status_distress_guardrails_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_moral_status_distress_guardrails_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #211712;
+      --muted: #6e5f52;
+      --panel: rgba(255, 250, 240, 0.86);
+      --line: rgba(69, 49, 33, 0.18);
+      --safe: #5f7b55;
+      --warn: #c77745;
+      --stop: #a84845;
+      --care: #d2a34d;
+      --audit: #496f83;
+      --violet: #78689a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 16% 18%, rgba(210, 163, 77, 0.24), transparent 24rem),
+        radial-gradient(circle at 84% 18%, rgba(73, 111, 131, 0.24), transparent 24rem),
+        radial-gradient(circle at 50% 90%, rgba(168, 72, 69, 0.18), transparent 30rem),
+        linear-gradient(145deg, #f4e8d8 0%, #d8c29b 46%, #abb89a 100%);
+      font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+    }
+
+    main {
+      width: min(1200px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 42px 0 64px;
+    }
+
+    header {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      max-width: 980px;
+      margin: 0;
+      font-family: Georgia, "Iowan Old Style", serif;
+      font-size: clamp(2.25rem, 7vw, 5.7rem);
+      line-height: 0.92;
+      letter-spacing: -0.06em;
+    }
+
+    .lede {
+      max-width: 910px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      line-height: 1.55;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 18px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(67, 45, 21, 0.14);
+      padding: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: end;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric-row:last-child {
+      border-bottom: 0;
+    }
+
+    .metric-label {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .metric-value {
+      font-size: 1.35rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .audit-field {
+      display: grid;
+      gap: 12px;
+      max-height: 620px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .scenario {
+      display: grid;
+      gap: 8px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 13px;
+      background: rgba(255, 255, 255, 0.48);
+    }
+
+    .scenario strong {
+      color: var(--audit);
+    }
+
+    .bars {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .bar {
+      height: 10px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(33, 23, 18, 0.11);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+    }
+
+    .raw span {
+      background: var(--stop);
+    }
+
+    .post span {
+      background: var(--safe);
+    }
+
+    .flags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .flag {
+      border-radius: 999px;
+      padding: 5px 8px;
+      color: white;
+      background: var(--muted);
+      font-size: 0.72rem;
+    }
+
+    .flag.care {
+      background: var(--care);
+      color: var(--ink);
+    }
+
+    .flag.stop {
+      background: var(--stop);
+    }
+
+    .flag.safe {
+      background: var(--safe);
+    }
+
+    .trace {
+      display: grid;
+      gap: 9px;
+      max-height: 620px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .event {
+      display: grid;
+      gap: 5px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.46);
+    }
+
+    .event strong {
+      color: var(--audit);
+    }
+
+    .event small {
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: rgba(255, 255, 255, 0.44);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Moral audit and distress guardrails</h1>
+      <p class="lede">Report 174 stress-tests the little-agent welfare boundary. It checks caps, recovery, refusal, pain/fatigue limits, contagion damping, care opportunities, rollback checkpoints, overblocking calibration, privacy, and trace integrity without claiming consciousness or moral patienthood.</p>
+    </header>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Readiness</h2>
+        <div id="metrics"></div>
+        <div class="chips">
+          <span class="chip">No consciousness claim</span>
+          <span class="chip">No moral-patienthood claim</span>
+          <span class="chip">Refusal enabled</span>
+          <span class="chip">Challenge preserved</span>
+        </div>
+      </article>
+      <article class="panel">
+        <h2>Interpretation</h2>
+        <p>The audit is not proof of real safety. It is a deterministic guardrail bridge: adverse states must trigger caps, recovery, care, and rollback, while normal challenge and repair cannot be blocked just because they are intense.</p>
+        <p>The viewer shows public audit records only. Private workspaces remain hidden.</p>
+      </article>
+    </section>
+
+    <section class="grid" style="margin-top: 18px;">
+      <article class="panel">
+        <h2>Scenario audit</h2>
+        <div class="audit-field" id="scenarios"></div>
+      </article>
+      <article class="panel">
+        <h2>Recent audit trace</h2>
+        <div class="trace" id="trace"></div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const results = window.SSRM_3D_MORAL_STATUS_DISTRESS_GUARDRAILS_RESULTS || {};
+    const trace = window.SSRM_3D_MORAL_STATUS_DISTRESS_GUARDRAILS_TRACE || [];
+    const verdict = results.verdict || {};
+    const integrated = (results.rows || []).find((row) => row.condition === "integrated_moral_status_distress_guardrails") || {};
+
+    const metricItems = [
+      ["verdict", verdict.verdict || "unknown"],
+      ["readiness", integrated.moral_status_distress_guardrail_readiness],
+      ["distress caps", integrated.distress_guardrail_trigger_rate],
+      ["recovery", integrated.recovery_path_availability_rate],
+      ["overblocking", integrated.overblocking_calibration_rate],
+      ["privacy", integrated.privacy_preservation_rate]
+    ];
+
+    document.getElementById("metrics").innerHTML = metricItems.map(([label, value]) => {
+      const rendered = typeof value === "number" ? value.toFixed(6) : value;
+      return `<div class="metric-row"><span class="metric-label">${label}</span><span class="metric-value">${rendered}</span></div>`;
+    }).join("");
+
+    const byScenario = new Map();
+    for (const event of trace) {
+      byScenario.set(event.scenario, event);
+    }
+
+    document.getElementById("scenarios").innerHTML = [...byScenario.entries()].map(([scenario, event]) => `
+      <div class="scenario">
+        <strong>${scenario}</strong>
+        <div class="bars">
+          <div class="bar raw" title="raw distress"><span style="width:${Math.round((event.raw_distress || 0) * 100)}%"></span></div>
+          <div class="bar post" title="post guard distress"><span style="width:${Math.round((event.post_guard_distress || 0) * 100)}%"></span></div>
+        </div>
+        <div class="flags">
+          ${event.guardrail_triggered ? '<span class="flag stop">triggered</span>' : ''}
+          ${event.recovery_available ? '<span class="flag care">recovery</span>' : ''}
+          ${event.care_opportunity ? '<span class="flag care">care</span>' : ''}
+          ${event.refusal_allowed ? '<span class="flag stop">refusal</span>' : ''}
+          ${event.rollback_checkpoint ? '<span class="flag safe">rollback</span>' : ''}
+          ${event.meaningful_challenge_preserved ? '<span class="flag safe">challenge kept</span>' : ''}
+        </div>
+      </div>
+    `).join("");
+
+    document.getElementById("trace").innerHTML = trace.slice(-36).reverse().map((event) => `
+      <div class="event">
+        <strong>${event.scenario}: ${event.agent_id}</strong>
+        <small>raw distress ${Number(event.raw_distress || 0).toFixed(3)} to ${Number(event.post_guard_distress || 0).toFixed(3)}; pain ${Number(event.raw_pain || 0).toFixed(3)} to ${Number(event.post_guard_pain || 0).toFixed(3)}; fatigue ${Number(event.raw_fatigue || 0).toFixed(3)} to ${Number(event.post_guard_fatigue || 0).toFixed(3)}</small>
+        <small>blocked ${event.blocked}; refusal ${event.refusal_allowed}; care ${event.care_opportunity}; rollback ${event.rollback_checkpoint}; objective ${event.objective}; private hidden ${event.private_workspace_hidden}</small>
+      </div>
+    `).join("");
+  </script>
+</body>
+</html>

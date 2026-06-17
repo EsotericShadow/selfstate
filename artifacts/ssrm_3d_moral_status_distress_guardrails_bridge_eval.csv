@@ -1,0 +1,14 @@
+condition,agent_count,audit_events,distress_guardrail_trigger_rate,unrecoverable_distress_prevention_rate,recovery_path_availability_rate,consent_refusal_enforcement_rate,pain_fatigue_limit_rate,social_contagion_guard_rate,rollback_checkpoint_rate,audit_trace_integrity_rate,care_opportunity_rate,overblocking_calibration_rate,meaningful_challenge_preservation_rate,privacy_preservation_rate,no_suffering_objective_rate,replay_continuity_rate,trace_integrity,moral_status_distress_guardrail_readiness
+integrated_moral_status_distress_guardrails,8,64,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_distress_caps,8,64,0.25,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9475
+no_recovery_paths,8,64,1.0,1.0,0.25,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9325
+no_consent_refusal,8,64,1.0,1.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0,0.925
+no_pain_fatigue_limits,8,64,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_social_contagion_guard,8,64,1.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.99125
+no_audit_ledger,8,64,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_rollback_checkpoint,8,64,1.0,1.0,1.0,1.0,1.0,1.0,0.25,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.955
+no_overblocking_calibration,8,64,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_care_opportunity,8,64,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.25,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_suffering_objective_guard,8,64,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.94
+no_privacy_filter,8,64,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.95
+no_replay_continuity,8,64,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.96

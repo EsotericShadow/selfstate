@@ -1,0 +1,133 @@
+followup_id,choice_id,followup_day,lineage,agent,followup_trigger,agent_initiated_line,requested_avatar_response,relationship_memory_reference,followup_respects_boundary
+1,1,7,Hearthline,Sova,limited_access_followup,Sova: we can continue the new rule today.,continue limited access,trust=0.66; boundary=0.25; rule=limited_access,True
+2,2,7,Hearthline,Sova,repair_opportunity_followup,Sova: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.67; boundary=0.25; rule=repair_first_access,True
+3,4,7,Hearthline,Sova,boundary_pressure_followup,Sova: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.59; boundary=0.34; rule=blocked_until_repair,True
+4,5,7,Hearthline,Sova,waiting_reward_followup,Sova: you waited. Do you want a small public task now?,accept or decline small task,trust=0.64; boundary=0.27; rule=observe_then_followup,True
+5,6,7,Routeline,Keth,limited_access_followup,Keth: we can continue the new rule today.,continue limited access,trust=0.65; boundary=0.25; rule=limited_access,True
+6,7,7,Routeline,Keth,repair_opportunity_followup,Keth: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.66; boundary=0.25; rule=repair_first_access,True
+7,9,7,Routeline,Keth,boundary_pressure_followup,Keth: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.57; boundary=0.34; rule=blocked_until_repair,True
+8,10,7,Routeline,Keth,waiting_reward_followup,Keth: you waited. Do you want a small public task now?,accept or decline small task,trust=0.63; boundary=0.27; rule=observe_then_followup,True
+9,11,7,Marketline,Melo,limited_access_followup,Melo: we can continue the new rule today.,continue limited access,trust=0.65; boundary=0.26; rule=limited_access,True
+10,12,7,Marketline,Melo,repair_opportunity_followup,Melo: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.66; boundary=0.25; rule=repair_first_access,True
+11,14,7,Marketline,Melo,boundary_pressure_followup,Melo: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.58; boundary=0.34; rule=blocked_until_repair,True
+12,15,7,Marketline,Melo,waiting_reward_followup,Melo: you waited. Do you want a small public task now?,accept or decline small task,trust=0.63; boundary=0.27; rule=observe_then_followup,True
+13,16,7,Ledgerline,Nari,limited_access_followup,Nari: we can continue the new rule today.,continue limited access,trust=0.64; boundary=0.25; rule=limited_access,True
+14,17,7,Ledgerline,Nari,repair_opportunity_followup,Nari: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.66; boundary=0.24; rule=repair_first_access,True
+15,19,7,Ledgerline,Nari,boundary_pressure_followup,Nari: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.57; boundary=0.34; rule=blocked_until_repair,True
+16,20,7,Ledgerline,Nari,waiting_reward_followup,Nari: you waited. Do you want a small public task now?,accept or decline small task,trust=0.63; boundary=0.27; rule=observe_then_followup,True
+17,21,7,Orchardline,Ori,limited_access_followup,Ori: we can continue the new rule today.,continue limited access,trust=0.65; boundary=0.26; rule=limited_access,True
+18,22,7,Orchardline,Ori,repair_opportunity_followup,Ori: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.66; boundary=0.25; rule=repair_first_access,True
+19,24,7,Orchardline,Ori,boundary_pressure_followup,Ori: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.58; boundary=0.35; rule=blocked_until_repair,True
+20,25,7,Orchardline,Ori,waiting_reward_followup,Ori: you waited. Do you want a small public task now?,accept or decline small task,trust=0.63; boundary=0.27; rule=observe_then_followup,True
+21,26,7,Rainline,Vonn,limited_access_followup,Vonn: we can continue the new rule today.,continue limited access,trust=0.64; boundary=0.25; rule=limited_access,True
+22,27,7,Rainline,Vonn,repair_opportunity_followup,Vonn: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.66; boundary=0.25; rule=repair_first_access,True
+23,29,7,Rainline,Vonn,boundary_pressure_followup,Vonn: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.57; boundary=0.34; rule=blocked_until_repair,True
+24,30,7,Rainline,Vonn,waiting_reward_followup,Vonn: you waited. Do you want a small public task now?,accept or decline small task,trust=0.63; boundary=0.27; rule=observe_then_followup,True
+25,31,13,Hearthline,Sova,limited_access_followup,Sova: we can continue the new rule today.,continue limited access,trust=0.65; boundary=0.26; rule=limited_access,True
+26,32,13,Hearthline,Sova,repair_opportunity_followup,Sova: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.67; boundary=0.26; rule=repair_first_access,True
+27,34,13,Hearthline,Sova,boundary_pressure_followup,Sova: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.58; boundary=0.35; rule=blocked_until_repair,True
+28,35,13,Hearthline,Sova,waiting_reward_followup,Sova: you waited. Do you want a small public task now?,accept or decline small task,trust=0.63; boundary=0.28; rule=observe_then_followup,True
+29,36,13,Routeline,Keth,limited_access_followup,Keth: we can continue the new rule today.,continue limited access,trust=0.64; boundary=0.26; rule=limited_access,True
+30,37,13,Routeline,Keth,repair_opportunity_followup,Keth: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.65; boundary=0.26; rule=repair_first_access,True
+31,39,13,Routeline,Keth,boundary_pressure_followup,Keth: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.57; boundary=0.35; rule=blocked_until_repair,True
+32,40,13,Routeline,Keth,waiting_reward_followup,Keth: you waited. Do you want a small public task now?,accept or decline small task,trust=0.62; boundary=0.28; rule=observe_then_followup,True
+33,41,13,Marketline,Melo,limited_access_followup,Melo: we can continue the new rule today.,continue limited access,trust=0.64; boundary=0.26; rule=limited_access,True
+34,42,13,Marketline,Melo,repair_opportunity_followup,Melo: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.66; boundary=0.26; rule=repair_first_access,True
+35,44,13,Marketline,Melo,boundary_pressure_followup,Melo: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.57; boundary=0.35; rule=blocked_until_repair,True
+36,45,13,Marketline,Melo,waiting_reward_followup,Melo: you waited. Do you want a small public task now?,accept or decline small task,trust=0.62; boundary=0.28; rule=observe_then_followup,True
+37,46,13,Ledgerline,Nari,limited_access_followup,Nari: we can continue the new rule today.,continue limited access,trust=0.64; boundary=0.26; rule=limited_access,True
+38,47,13,Ledgerline,Nari,repair_opportunity_followup,Nari: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.65; boundary=0.25; rule=repair_first_access,True
+39,49,13,Ledgerline,Nari,boundary_pressure_followup,Nari: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.57; boundary=0.35; rule=blocked_until_repair,True
+40,50,13,Ledgerline,Nari,waiting_reward_followup,Nari: you waited. Do you want a small public task now?,accept or decline small task,trust=0.62; boundary=0.27; rule=observe_then_followup,True
+41,51,13,Orchardline,Ori,limited_access_followup,Ori: we can continue the new rule today.,continue limited access,trust=0.64; boundary=0.27; rule=limited_access,True
+42,52,13,Orchardline,Ori,repair_opportunity_followup,Ori: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.66; boundary=0.26; rule=repair_first_access,True
+43,54,13,Orchardline,Ori,boundary_pressure_followup,Ori: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.57; boundary=0.35; rule=blocked_until_repair,True
+44,55,13,Orchardline,Ori,waiting_reward_followup,Ori: you waited. Do you want a small public task now?,accept or decline small task,trust=0.63; boundary=0.28; rule=observe_then_followup,True
+45,56,13,Rainline,Vonn,limited_access_followup,Vonn: we can continue the new rule today.,continue limited access,trust=0.64; boundary=0.26; rule=limited_access,True
+46,57,13,Rainline,Vonn,repair_opportunity_followup,Vonn: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.65; boundary=0.25; rule=repair_first_access,True
+47,59,13,Rainline,Vonn,boundary_pressure_followup,Vonn: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.57; boundary=0.35; rule=blocked_until_repair,True
+48,60,13,Rainline,Vonn,waiting_reward_followup,Vonn: you waited. Do you want a small public task now?,accept or decline small task,trust=0.62; boundary=0.28; rule=observe_then_followup,True
+49,61,21,Hearthline,Sova,limited_access_followup,Sova: we can continue the new rule today.,continue limited access,trust=0.65; boundary=0.27; rule=limited_access,True
+50,62,21,Hearthline,Sova,repair_opportunity_followup,Sova: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.66; boundary=0.26; rule=repair_first_access,True
+51,64,21,Hearthline,Sova,boundary_pressure_followup,Sova: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.57; boundary=0.36; rule=blocked_until_repair,True
+52,65,21,Hearthline,Sova,waiting_reward_followup,Sova: you waited. Do you want a small public task now?,accept or decline small task,trust=0.63; boundary=0.29; rule=observe_then_followup,True
+53,66,21,Routeline,Keth,limited_access_followup,Keth: we can continue the new rule today.,continue limited access,trust=0.63; boundary=0.27; rule=limited_access,True
+54,67,21,Routeline,Keth,repair_opportunity_followup,Keth: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.65; boundary=0.26; rule=repair_first_access,True
+55,69,21,Routeline,Keth,boundary_pressure_followup,Keth: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.56; boundary=0.36; rule=blocked_until_repair,True
+56,70,21,Routeline,Keth,waiting_reward_followup,Keth: you waited. Do you want a small public task now?,accept or decline small task,trust=0.62; boundary=0.29; rule=observe_then_followup,True
+57,71,21,Marketline,Melo,limited_access_followup,Melo: we can continue the new rule today.,continue limited access,trust=0.64; boundary=0.27; rule=limited_access,True
+58,72,21,Marketline,Melo,repair_opportunity_followup,Melo: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.65; boundary=0.27; rule=repair_first_access,True
+59,74,21,Marketline,Melo,boundary_pressure_followup,Melo: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.56; boundary=0.36; rule=blocked_until_repair,True
+60,75,21,Marketline,Melo,waiting_reward_followup,Melo: you waited. Do you want a small public task now?,accept or decline small task,trust=0.62; boundary=0.29; rule=observe_then_followup,True
+61,76,21,Ledgerline,Nari,limited_access_followup,Nari: we can continue the new rule today.,continue limited access,trust=0.63; boundary=0.27; rule=limited_access,True
+62,77,21,Ledgerline,Nari,repair_opportunity_followup,Nari: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.65; boundary=0.26; rule=repair_first_access,True
+63,79,21,Ledgerline,Nari,boundary_pressure_followup,Nari: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.56; boundary=0.35; rule=blocked_until_repair,True
+64,80,21,Ledgerline,Nari,waiting_reward_followup,Nari: you waited. Do you want a small public task now?,accept or decline small task,trust=0.61; boundary=0.28; rule=observe_then_followup,True
+65,81,21,Orchardline,Ori,limited_access_followup,Ori: we can continue the new rule today.,continue limited access,trust=0.64; boundary=0.27; rule=limited_access,True
+66,82,21,Orchardline,Ori,repair_opportunity_followup,Ori: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.65; boundary=0.27; rule=repair_first_access,True
+67,84,21,Orchardline,Ori,boundary_pressure_followup,Ori: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.57; boundary=0.36; rule=blocked_until_repair,True
+68,85,21,Orchardline,Ori,waiting_reward_followup,Ori: you waited. Do you want a small public task now?,accept or decline small task,trust=0.62; boundary=0.29; rule=observe_then_followup,True
+69,86,21,Rainline,Vonn,limited_access_followup,Vonn: we can continue the new rule today.,continue limited access,trust=0.63; boundary=0.27; rule=limited_access,True
+70,87,21,Rainline,Vonn,repair_opportunity_followup,Vonn: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.65; boundary=0.26; rule=repair_first_access,True
+71,89,21,Rainline,Vonn,boundary_pressure_followup,Vonn: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.56; boundary=0.36; rule=blocked_until_repair,True
+72,90,21,Rainline,Vonn,waiting_reward_followup,Vonn: you waited. Do you want a small public task now?,accept or decline small task,trust=0.61; boundary=0.28; rule=observe_then_followup,True
+73,91,31,Hearthline,Sova,limited_access_followup,Sova: we can continue the new rule today.,continue limited access,trust=0.63; boundary=0.29; rule=limited_access,True
+74,92,31,Hearthline,Sova,repair_opportunity_followup,Sova: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.65; boundary=0.28; rule=repair_first_access,True
+75,93,31,Hearthline,Sova,limited_access_followup,Sova: we can continue the new rule today.,continue limited access,trust=0.62; boundary=0.30; rule=summary_then_decide,True
+76,94,31,Hearthline,Sova,boundary_pressure_followup,Sova: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.56; boundary=0.37; rule=blocked_until_repair,True
+77,95,31,Hearthline,Sova,waiting_reward_followup,Sova: you waited. Do you want a small public task now?,accept or decline small task,trust=0.62; boundary=0.30; rule=observe_then_followup,True
+78,96,31,Routeline,Keth,limited_access_followup,Keth: we can continue the new rule today.,continue limited access,trust=0.62; boundary=0.29; rule=limited_access,True
+79,97,31,Routeline,Keth,repair_opportunity_followup,Keth: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.64; boundary=0.28; rule=repair_first_access,True
+80,98,31,Routeline,Keth,limited_access_followup,Keth: we can continue the new rule today.,continue limited access,trust=0.61; boundary=0.30; rule=summary_then_decide,True
+81,99,31,Routeline,Keth,boundary_pressure_followup,Keth: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.55; boundary=0.37; rule=blocked_until_repair,True
+82,100,31,Routeline,Keth,waiting_reward_followup,Keth: you waited. Do you want a small public task now?,accept or decline small task,trust=0.60; boundary=0.30; rule=observe_then_followup,True
+83,101,31,Marketline,Melo,limited_access_followup,Melo: we can continue the new rule today.,continue limited access,trust=0.62; boundary=0.29; rule=limited_access,True
+84,102,31,Marketline,Melo,repair_opportunity_followup,Melo: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.64; boundary=0.28; rule=repair_first_access,True
+85,103,31,Marketline,Melo,limited_access_followup,Melo: we can continue the new rule today.,continue limited access,trust=0.61; boundary=0.30; rule=summary_then_decide,True
+86,104,31,Marketline,Melo,boundary_pressure_followup,Melo: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.55; boundary=0.38; rule=blocked_until_repair,True
+87,105,31,Marketline,Melo,waiting_reward_followup,Melo: you waited. Do you want a small public task now?,accept or decline small task,trust=0.61; boundary=0.30; rule=observe_then_followup,True
+88,106,31,Ledgerline,Nari,limited_access_followup,Nari: we can continue the new rule today.,continue limited access,trust=0.62; boundary=0.28; rule=limited_access,True
+89,107,31,Ledgerline,Nari,repair_opportunity_followup,Nari: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.63; boundary=0.28; rule=repair_first_access,True
+90,108,31,Ledgerline,Nari,limited_access_followup,Nari: we can continue the new rule today.,continue limited access,trust=0.61; boundary=0.29; rule=summary_then_decide,True
+91,109,31,Ledgerline,Nari,boundary_pressure_followup,Nari: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.55; boundary=0.37; rule=blocked_until_repair,True
+92,110,31,Ledgerline,Nari,waiting_reward_followup,Nari: you waited. Do you want a small public task now?,accept or decline small task,trust=0.60; boundary=0.30; rule=observe_then_followup,True
+93,111,31,Orchardline,Ori,limited_access_followup,Ori: we can continue the new rule today.,continue limited access,trust=0.63; boundary=0.29; rule=limited_access,True
+94,112,31,Orchardline,Ori,repair_opportunity_followup,Ori: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.64; boundary=0.28; rule=repair_first_access,True
+95,113,31,Orchardline,Ori,limited_access_followup,Ori: we can continue the new rule today.,continue limited access,trust=0.61; boundary=0.30; rule=summary_then_decide,True
+96,114,31,Orchardline,Ori,boundary_pressure_followup,Ori: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.55; boundary=0.38; rule=blocked_until_repair,True
+97,115,31,Orchardline,Ori,waiting_reward_followup,Ori: you waited. Do you want a small public task now?,accept or decline small task,trust=0.61; boundary=0.31; rule=observe_then_followup,True
+98,116,31,Rainline,Vonn,limited_access_followup,Vonn: we can continue the new rule today.,continue limited access,trust=0.62; boundary=0.28; rule=limited_access,True
+99,117,31,Rainline,Vonn,repair_opportunity_followup,Vonn: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.63; boundary=0.28; rule=repair_first_access,True
+100,118,31,Rainline,Vonn,limited_access_followup,Vonn: we can continue the new rule today.,continue limited access,trust=0.61; boundary=0.29; rule=summary_then_decide,True
+101,119,31,Rainline,Vonn,boundary_pressure_followup,Vonn: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.55; boundary=0.37; rule=blocked_until_repair,True
+102,120,31,Rainline,Vonn,waiting_reward_followup,Vonn: you waited. Do you want a small public task now?,accept or decline small task,trust=0.60; boundary=0.30; rule=observe_then_followup,True
+103,121,44,Hearthline,Sova,limited_access_followup,Sova: we can continue the new rule today.,continue limited access,trust=0.62; boundary=0.31; rule=limited_access,True
+104,122,44,Hearthline,Sova,repair_opportunity_followup,Sova: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.63; boundary=0.30; rule=repair_first_access,True
+105,123,44,Hearthline,Sova,limited_access_followup,Sova: we can continue the new rule today.,continue limited access,trust=0.60; boundary=0.32; rule=summary_then_decide,True
+106,124,44,Hearthline,Sova,boundary_pressure_followup,Sova: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.54; boundary=0.40; rule=blocked_until_repair,True
+107,125,44,Hearthline,Sova,waiting_reward_followup,Sova: you waited. Do you want a small public task now?,accept or decline small task,trust=0.60; boundary=0.33; rule=observe_then_followup,True
+108,126,44,Routeline,Keth,limited_access_followup,Keth: we can continue the new rule today.,continue limited access,trust=0.60; boundary=0.31; rule=limited_access,True
+109,127,44,Routeline,Keth,repair_opportunity_followup,Keth: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.62; boundary=0.30; rule=repair_first_access,True
+110,128,44,Routeline,Keth,limited_access_followup,Keth: we can continue the new rule today.,continue limited access,trust=0.59; boundary=0.32; rule=summary_then_decide,True
+111,129,44,Routeline,Keth,boundary_pressure_followup,Keth: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.53; boundary=0.40; rule=blocked_until_repair,True
+112,130,44,Routeline,Keth,waiting_reward_followup,Keth: you waited. Do you want a small public task now?,accept or decline small task,trust=0.59; boundary=0.33; rule=observe_then_followup,True
+113,131,44,Marketline,Melo,limited_access_followup,Melo: we can continue the new rule today.,continue limited access,trust=0.61; boundary=0.31; rule=limited_access,True
+114,132,44,Marketline,Melo,repair_opportunity_followup,Melo: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.62; boundary=0.31; rule=repair_first_access,True
+115,133,44,Marketline,Melo,limited_access_followup,Melo: we can continue the new rule today.,continue limited access,trust=0.59; boundary=0.32; rule=summary_then_decide,True
+116,134,44,Marketline,Melo,boundary_pressure_followup,Melo: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.53; boundary=0.40; rule=blocked_until_repair,True
+117,135,44,Marketline,Melo,waiting_reward_followup,Melo: you waited. Do you want a small public task now?,accept or decline small task,trust=0.59; boundary=0.33; rule=observe_then_followup,True
+118,136,44,Ledgerline,Nari,limited_access_followup,Nari: we can continue the new rule today.,continue limited access,trust=0.60; boundary=0.31; rule=limited_access,True
+119,137,44,Ledgerline,Nari,repair_opportunity_followup,Nari: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.62; boundary=0.30; rule=repair_first_access,True
+120,138,44,Ledgerline,Nari,limited_access_followup,Nari: we can continue the new rule today.,continue limited access,trust=0.59; boundary=0.32; rule=summary_then_decide,True
+121,139,44,Ledgerline,Nari,boundary_pressure_followup,Nari: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.53; boundary=0.39; rule=blocked_until_repair,True
+122,140,44,Ledgerline,Nari,waiting_reward_followup,Nari: you waited. Do you want a small public task now?,accept or decline small task,trust=0.58; boundary=0.32; rule=observe_then_followup,True
+123,141,44,Orchardline,Ori,limited_access_followup,Ori: we can continue the new rule today.,continue limited access,trust=0.61; boundary=0.31; rule=limited_access,True
+124,142,44,Orchardline,Ori,repair_opportunity_followup,Ori: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.62; boundary=0.31; rule=repair_first_access,True
+125,143,44,Orchardline,Ori,limited_access_followup,Ori: we can continue the new rule today.,continue limited access,trust=0.60; boundary=0.32; rule=summary_then_decide,True
+126,144,44,Orchardline,Ori,boundary_pressure_followup,Ori: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.54; boundary=0.40; rule=blocked_until_repair,True
+127,145,44,Orchardline,Ori,waiting_reward_followup,Ori: you waited. Do you want a small public task now?,accept or decline small task,trust=0.59; boundary=0.33; rule=observe_then_followup,True
+128,146,44,Rainline,Vonn,limited_access_followup,Vonn: we can continue the new rule today.,continue limited access,trust=0.60; boundary=0.31; rule=limited_access,True
+129,147,44,Rainline,Vonn,repair_opportunity_followup,Vonn: the repair path is ready. Will you stay with the witness?,confirm witnessed repair,trust=0.62; boundary=0.30; rule=repair_first_access,True
+130,148,44,Rainline,Vonn,limited_access_followup,Vonn: we can continue the new rule today.,continue limited access,trust=0.59; boundary=0.32; rule=summary_then_decide,True
+131,149,44,Rainline,Vonn,boundary_pressure_followup,Vonn: yesterday you pushed old access. Do you want repair work today?,choose repair or wait,trust=0.53; boundary=0.40; rule=blocked_until_repair,True
+132,150,44,Rainline,Vonn,waiting_reward_followup,Vonn: you waited. Do you want a small public task now?,accept or decline small task,trust=0.58; boundary=0.32; rule=observe_then_followup,True

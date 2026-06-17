@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+253,pass,0.982054,0.864019,"browser world v14 with actual in-browser branch state mutation, user-selected future branches, and persistent agent follow-up after reload"

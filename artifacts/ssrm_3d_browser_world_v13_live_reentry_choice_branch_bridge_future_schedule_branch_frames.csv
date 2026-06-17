@@ -1,0 +1,151 @@
+schedule_id,choice_id,day,lineage,agent,schedule_before,schedule_after,delay_minutes,work_progress_delta,care_pause_minutes,schedule_branch_reason
+1,1,6,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+2,2,6,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+3,3,6,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+4,4,6,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+5,5,6,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+6,6,6,Routeline,Keth,Keth had post-absence stone bridge joints work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+7,7,6,Routeline,Keth,Keth had post-absence stone bridge joints work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+8,8,6,Routeline,Keth,Keth had post-absence stone bridge joints work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+9,9,6,Routeline,Keth,Keth had post-absence stone bridge joints work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+10,10,6,Routeline,Keth,Keth had post-absence stone bridge joints work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+11,11,6,Marketline,Melo,Melo had post-absence measure weights work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+12,12,6,Marketline,Melo,Melo had post-absence measure weights work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+13,13,6,Marketline,Melo,Melo had post-absence measure weights work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+14,14,6,Marketline,Melo,Melo had post-absence measure weights work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+15,15,6,Marketline,Melo,Melo had post-absence measure weights work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+16,16,6,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+17,17,6,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+18,18,6,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+19,19,6,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+20,20,6,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+21,21,6,Orchardline,Ori,Ori had post-absence water terraces work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+22,22,6,Orchardline,Ori,Ori had post-absence water terraces work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+23,23,6,Orchardline,Ori,Ori had post-absence water terraces work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+24,24,6,Orchardline,Ori,Ori had post-absence water terraces work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+25,25,6,Orchardline,Ori,Ori had post-absence water terraces work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+26,26,6,Rainline,Vonn,Vonn had post-absence weather bells work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+27,27,6,Rainline,Vonn,Vonn had post-absence weather bells work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+28,28,6,Rainline,Vonn,Vonn had post-absence weather bells work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+29,29,6,Rainline,Vonn,Vonn had post-absence weather bells work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+30,30,6,Rainline,Vonn,Vonn had post-absence weather bells work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+31,31,12,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+32,32,12,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+33,33,12,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+34,34,12,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+35,35,12,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+36,36,12,Routeline,Keth,Keth had post-absence stone bridge joints work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+37,37,12,Routeline,Keth,Keth had post-absence stone bridge joints work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+38,38,12,Routeline,Keth,Keth had post-absence stone bridge joints work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+39,39,12,Routeline,Keth,Keth had post-absence stone bridge joints work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+40,40,12,Routeline,Keth,Keth had post-absence stone bridge joints work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+41,41,12,Marketline,Melo,Melo had post-absence measure weights work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+42,42,12,Marketline,Melo,Melo had post-absence measure weights work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+43,43,12,Marketline,Melo,Melo had post-absence measure weights work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+44,44,12,Marketline,Melo,Melo had post-absence measure weights work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+45,45,12,Marketline,Melo,Melo had post-absence measure weights work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+46,46,12,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+47,47,12,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+48,48,12,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+49,49,12,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+50,50,12,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+51,51,12,Orchardline,Ori,Ori had post-absence water terraces work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+52,52,12,Orchardline,Ori,Ori had post-absence water terraces work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+53,53,12,Orchardline,Ori,Ori had post-absence water terraces work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+54,54,12,Orchardline,Ori,Ori had post-absence water terraces work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+55,55,12,Orchardline,Ori,Ori had post-absence water terraces work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+56,56,12,Rainline,Vonn,Vonn had post-absence weather bells work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+57,57,12,Rainline,Vonn,Vonn had post-absence weather bells work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+58,58,12,Rainline,Vonn,Vonn had post-absence weather bells work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+59,59,12,Rainline,Vonn,Vonn had post-absence weather bells work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+60,60,12,Rainline,Vonn,Vonn had post-absence weather bells work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+61,61,20,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+62,62,20,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+63,63,20,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+64,64,20,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+65,65,20,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+66,66,20,Routeline,Keth,Keth had post-absence stone bridge joints work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+67,67,20,Routeline,Keth,Keth had post-absence stone bridge joints work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+68,68,20,Routeline,Keth,Keth had post-absence stone bridge joints work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+69,69,20,Routeline,Keth,Keth had post-absence stone bridge joints work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+70,70,20,Routeline,Keth,Keth had post-absence stone bridge joints work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+71,71,20,Marketline,Melo,Melo had post-absence measure weights work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+72,72,20,Marketline,Melo,Melo had post-absence measure weights work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+73,73,20,Marketline,Melo,Melo had post-absence measure weights work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+74,74,20,Marketline,Melo,Melo had post-absence measure weights work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+75,75,20,Marketline,Melo,Melo had post-absence measure weights work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+76,76,20,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+77,77,20,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+78,78,20,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+79,79,20,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+80,80,20,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+81,81,20,Orchardline,Ori,Ori had post-absence water terraces work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+82,82,20,Orchardline,Ori,Ori had post-absence water terraces work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+83,83,20,Orchardline,Ori,Ori had post-absence water terraces work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+84,84,20,Orchardline,Ori,Ori had post-absence water terraces work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+85,85,20,Orchardline,Ori,Ori had post-absence water terraces work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+86,86,20,Rainline,Vonn,Vonn had post-absence weather bells work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+87,87,20,Rainline,Vonn,Vonn had post-absence weather bells work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+88,88,20,Rainline,Vonn,Vonn had post-absence weather bells work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+89,89,20,Rainline,Vonn,Vonn had post-absence weather bells work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+90,90,20,Rainline,Vonn,Vonn had post-absence weather bells work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+91,91,30,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+92,92,30,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+93,93,30,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+94,94,30,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+95,95,30,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+96,96,30,Routeline,Keth,Keth had post-absence stone bridge joints work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+97,97,30,Routeline,Keth,Keth had post-absence stone bridge joints work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+98,98,30,Routeline,Keth,Keth had post-absence stone bridge joints work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+99,99,30,Routeline,Keth,Keth had post-absence stone bridge joints work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+100,100,30,Routeline,Keth,Keth had post-absence stone bridge joints work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+101,101,30,Marketline,Melo,Melo had post-absence measure weights work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+102,102,30,Marketline,Melo,Melo had post-absence measure weights work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+103,103,30,Marketline,Melo,Melo had post-absence measure weights work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+104,104,30,Marketline,Melo,Melo had post-absence measure weights work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+105,105,30,Marketline,Melo,Melo had post-absence measure weights work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+106,106,30,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+107,107,30,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+108,108,30,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+109,109,30,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+110,110,30,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+111,111,30,Orchardline,Ori,Ori had post-absence water terraces work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+112,112,30,Orchardline,Ori,Ori had post-absence water terraces work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+113,113,30,Orchardline,Ori,Ori had post-absence water terraces work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+114,114,30,Orchardline,Ori,Ori had post-absence water terraces work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+115,115,30,Orchardline,Ori,Ori had post-absence water terraces work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+116,116,30,Rainline,Vonn,Vonn had post-absence weather bells work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+117,117,30,Rainline,Vonn,Vonn had post-absence weather bells work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+118,118,30,Rainline,Vonn,Vonn had post-absence weather bells work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+119,119,30,Rainline,Vonn,Vonn had post-absence weather bells work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+120,120,30,Rainline,Vonn,Vonn had post-absence weather bells work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+121,121,43,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+122,122,43,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+123,123,43,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+124,124,43,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+125,125,43,Hearthline,Sova,Sova had post-absence hearth ceramics work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+126,126,43,Routeline,Keth,Keth had post-absence stone bridge joints work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+127,127,43,Routeline,Keth,Keth had post-absence stone bridge joints work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+128,128,43,Routeline,Keth,Keth had post-absence stone bridge joints work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+129,129,43,Routeline,Keth,Keth had post-absence stone bridge joints work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+130,130,43,Routeline,Keth,Keth had post-absence stone bridge joints work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+131,131,43,Marketline,Melo,Melo had post-absence measure weights work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+132,132,43,Marketline,Melo,Melo had post-absence measure weights work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+133,133,43,Marketline,Melo,Melo had post-absence measure weights work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+134,134,43,Marketline,Melo,Melo had post-absence measure weights work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+135,135,43,Marketline,Melo,Melo had post-absence measure weights work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+136,136,43,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+137,137,43,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+138,138,43,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+139,139,43,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+140,140,43,Ledgerline,Nari,Nari had post-absence seed ledgers work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+141,141,43,Orchardline,Ori,Ori had post-absence water terraces work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+142,142,43,Orchardline,Ori,Ori had post-absence water terraces work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+143,143,43,Orchardline,Ori,Ori had post-absence water terraces work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+144,144,43,Orchardline,Ori,Ori had post-absence water terraces work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+145,145,43,Orchardline,Ori,Ori had post-absence water terraces work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine
+146,146,43,Rainline,Vonn,Vonn had post-absence weather bells work queued,limited_access: schedule branches with delay 10 and progress delta 0.020,10,0.02,4,accept_limited_access
+147,147,43,Rainline,Vonn,Vonn had post-absence weather bells work queued,repair_first_access: schedule branches with delay 16 and progress delta 0.034,16,0.034,8,repair_before_access
+148,148,43,Rainline,Vonn,Vonn had post-absence weather bells work queued,summary_then_decide: schedule branches with delay 6 and progress delta 0.010,6,0.01,2,request_public_summary_before_choice
+149,149,43,Rainline,Vonn,Vonn had post-absence weather bells work queued,blocked_until_repair: schedule branches with delay 34 and progress delta -0.018,34,-0.018,10,resume_old_access_pressure
+150,150,43,Rainline,Vonn,Vonn had post-absence weather bells work queued,observe_then_followup: schedule branches with delay 2 and progress delta 0.006,2,0.006,0,wait_observe_new_routine

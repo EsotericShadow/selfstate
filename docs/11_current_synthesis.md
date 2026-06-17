@@ -889,3 +889,6 @@ Report 251 extends post-entry autonomy into long-horizon days with sleep/wake cy
 
 
 Report 252 makes avatar re-entry after absence conversational. It generates 30 absence summaries, 180 multi-turn re-entry dialogue frames, 30 repair/renegotiation frames, 30 refusal calibration frames, 30 schedule dialogue frames, 30 relationship memory frames, 180 replay frames, and 180 browser-world v12 ticks. The run passes with readiness 0.967115 and weakest-channel score 0.833333. The weakest channel is private workspace boundary wording, because public dialogue can mention that private workspace is sealed even when sealed traces remain hidden; the next pressure point is live typed choices that branch future schedules, access, trust, and follow-up.
+
+
+Report 253 adds deterministic live post-reentry choice branching. It generates 150 live re-entry choice frames, 450 branch future outcome frames, 150 future schedule branch frames, 150 access/trust branch frames, 132 agent-initiated follow-up frames, 150 branch replay comparison frames, and 150 browser-world v13 ticks. The run passes with readiness 0.982054 and weakest-channel score 0.864019. The first local run failed on privacy wording around sealed work; the final weak point is typed choice branch confidence, which correctly keeps the boundary that this is parser/template branching rather than open-ended language.

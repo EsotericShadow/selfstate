@@ -140,7 +140,7 @@ This boundary is not evidence that selfhood exists. It defines how future langua
 | Compressed packets are sufficient for language reasoning | Packet-fed LLMs match full-world LLMs on abstract recommendation quality when the state layers are healthy. | Full-world access consistently beats packet access without control costs, implying the packet omits essential state. |
 | Simulation-distilled critics can improve LLM reasoning | A sim-distilled critic improves held-out LLM planning, repair, and cascade-avoidance tasks while ablations identify which critic matters. | LLM search plus generic reward models match or beat sim-distilled critics, or the critics only transfer simulation artifacts. |
 | Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. Report 139 is the first structured toy bridge; Report 141 is its dynamic extension with held-out families and noisy multi-channel conditions. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
-| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years. Report 143 adds stateful avatar interventions. Report 144 adds typed embodied avatar input. Report 145 adds autonomous multi-rate live-agent ticks. Report 146 adds persistent object affordances. Report 147 binds objects to a place graph. Report 148 adds agent-made infrastructure. Report 149 adds proposal governance. Report 150 adds deterministic avatar questioning over governance memory. Report 151 adds persistent faction dialogue over reconstructed rejected bodies. Report 152 stores accepted and rejected proposal bodies at source. Report 153 adds a learned deterministic faction-dialogue policy. Report 154 adds recurrent turn-by-turn avatar sessions with readiness `1.000000`, intent `1.000000`, follow-up context `1.000000`, persistent memory `1.000000`, learned faction updates `1.000000`, and refusal `1.000000`. | A claim of mature live agents, true open conversation, open-ended language/culture, unscripted civilization, or subjective consciousness appears before proposal generation, navigation, affordance choice, governance, political factions, source-native ledgers, dialogue policy, and recurrent live dialogue are integrated into the running embodied world rather than deterministic bridge policies. |
+| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years. Report 143 adds stateful avatar interventions. Report 144 adds typed embodied avatar input. Report 145 adds autonomous multi-rate live-agent ticks. Report 146 adds persistent object affordances. Report 147 binds objects to a place graph. Report 148 adds agent-made infrastructure. Report 149 adds proposal governance. Report 150 adds deterministic avatar questioning over governance memory. Report 151 adds persistent faction dialogue over reconstructed rejected bodies. Report 152 stores accepted and rejected proposal bodies at source. Report 153 adds a learned deterministic faction-dialogue policy. Report 154 adds recurrent turn-by-turn avatar sessions. Report 155 integrates recurrent dialogue into live body/workspace/world state with readiness `0.967800`, body `1.000000`, workspace `1.000000`, world `1.000000`, avatar `1.000000`, and sensory-frequency coupling `0.677999`. | A claim of mature live agents, true open conversation, open-ended language/culture, unscripted civilization, or subjective consciousness appears before proposal generation, navigation, affordance choice, governance, political factions, source-native ledgers, dialogue policy, recurrent live dialogue, and embodied world mutation are all learned/open-ended in live interactive sessions rather than deterministic bridge policies. |
 
 ## Candidate Hypotheses
 
@@ -954,6 +954,24 @@ This is Report 153: a deterministic learned local policy over source-native coun
 This is Report 154: a deterministic recurrent controller for source-ledger avatar dialogue, with persistent memory updates and learned faction-state deltas across held-out live sessions. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
 
 
+
+### Report 155: SSRM-3D live dialogue-world integration bridge
+
+| Condition | Readiness | Body | Workspace | World | Avatar | Source gate | Refusal | Frequency | Tick continuity | Memory | Replay |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `integrated_live_dialogue_world_integration` | `0.967800` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.677999` | `1.000000` | `1.000000` | `1.000000` |
+| `no_recurrent_dialogue_input` | `0.150000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `1.000000` | `0.000000` | `1.000000` |
+| `no_body_affect_mutation` | `0.847800` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.677999` | `1.000000` | `1.000000` | `1.000000` |
+| `no_internal_workspace_binding` | `0.757800` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.677999` | `1.000000` | `0.000000` | `1.000000` |
+| `no_world_state_mutation` | `0.847800` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `0.677999` | `1.000000` | `1.000000` | `1.000000` |
+| `no_avatar_embodiment_bridge` | `0.867800` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `0.677999` | `1.000000` | `1.000000` | `1.000000` |
+| `no_source_grounded_action_gate` | `0.959841` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.933333` | `1.000000` | `0.665074` | `1.000000` | `1.000000` | `1.000000` |
+| `no_sensory_frequency_coupling` | `0.900000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_persistent_replay_trace` | `0.897800` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `1.000000` | `0.677999` | `1.000000` | `1.000000` | `0.000000` |
+
+This is Report 155: a deterministic bridge attaching recurrent source-grounded dialogue to live agent body/affect, internal workspace, embodied avatar, world state, and sensory frequency packets. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
+
+
 ## Reproducibility Artifacts
 
 | Script | Main artifact |
@@ -1043,6 +1061,7 @@ This is Report 154: a deterministic recurrent controller for source-ledger avata
 | `experiments/ssrm_3d_source_native_council_ledger_bridge.py` | `artifacts/ssrm_3d_source_native_council_ledger_bridge_verdict.csv` |
 | `experiments/ssrm_3d_learned_faction_dialogue_policy_bridge.py` | `artifacts/ssrm_3d_learned_faction_dialogue_policy_bridge_verdict.csv` |
 | `experiments/ssrm_3d_recurrent_faction_dialogue_controller_bridge.py` | `artifacts/ssrm_3d_recurrent_faction_dialogue_controller_bridge_verdict.csv` |
+| `experiments/ssrm_3d_live_dialogue_world_integration_bridge.py` | `artifacts/ssrm_3d_live_dialogue_world_integration_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

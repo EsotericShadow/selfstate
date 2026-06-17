@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Live Dialogue World Integration Bridge</title>
+  <style>
+    :root {
+      --ink: #1d1812;
+      --muted: #6a5f4d;
+      --paper: #f8ecd0;
+      --panel: rgba(255, 250, 236, 0.9);
+      --line: rgba(55, 40, 18, 0.2);
+      --rust: #9d4f25;
+      --teal: #2d6571;
+      --moss: #5e7847;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "Iowan Old Style", Georgia, serif;
+      background:
+        radial-gradient(circle at 12% 14%, rgba(157,79,37,0.28), transparent 28rem),
+        radial-gradient(circle at 84% 12%, rgba(45,101,113,0.24), transparent 30rem),
+        repeating-radial-gradient(circle at 50% 52%, rgba(29,24,18,0.035) 0 1px, transparent 1px 22px),
+        linear-gradient(132deg, #d7bd84 0%, #f8edcf 48%, #c89b5e 100%);
+    }
+    header { padding: 44px clamp(18px, 5vw, 72px) 18px; }
+    h1 { margin: 0; max-width: 1180px; font-size: clamp(2.1rem, 5.4vw, 5.5rem); line-height: 0.9; letter-spacing: -0.06em; }
+    .subtitle { max-width: 990px; color: var(--muted); margin-top: 18px; font-size: 1.06rem; }
+    main { display: grid; grid-template-columns: minmax(300px, 0.9fr) minmax(340px, 1.15fr); gap: 18px; padding: 18px clamp(18px, 5vw, 72px) 54px; }
+    section, .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 24px; box-shadow: 0 24px 80px rgba(46,34,18,0.16); backdrop-filter: blur(9px); }
+    section { padding: 18px; }
+    h2 { margin: 0 0 12px; font-size: 1.12rem; letter-spacing: -0.02em; }
+    .metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .metric { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.43); }
+    .metric b { display: block; color: var(--rust); font-size: 1.35rem; }
+    .metric span { color: var(--muted); font-size: 0.8rem; }
+    select, textarea, button { width: 100%; border: 1px solid var(--line); border-radius: 16px; padding: 11px 12px; background: rgba(255,255,255,0.72); color: var(--ink); font: inherit; }
+    textarea { min-height: 92px; resize: vertical; margin: 10px 0; }
+    button { background: var(--ink); color: var(--paper); cursor: pointer; }
+    .answer { margin-top: 12px; padding: 14px; border-radius: 18px; background: rgba(29,24,18,0.065); white-space: pre-wrap; }
+    .tag { display: inline-block; padding: 4px 8px; border-radius: 999px; margin: 2px; background: rgba(157,79,37,0.13); color: var(--rust); font-size: 0.78rem; }
+    .small { color: var(--muted); font-size: 0.88rem; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+    .trace-list { max-height: 560px; overflow: auto; display: grid; gap: 10px; padding-right: 6px; }
+    .trace-item { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.42); }
+    .trace-item strong { color: var(--teal); }
+    @media (max-width: 880px) { main, .grid { grid-template-columns: 1fr; } .metrics { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dialogue now mutates the live body, workspace, and world state.</h1>
+    <p class="subtitle">Report 155 attaches recurrent dialogue turns to the autonomous live-agent loop and embodied avatar state. Source-grounded dialogue changes body affect, internal workspace, world fields, avatar focus, and sensory frequencies.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Bridge verdict</h2>
+      <div class="metrics" id="metrics"></div>
+      <div class="grid">
+        <div class="tile" style="padding:14px">
+          <h2>Integration objects</h2>
+          <div id="objects" class="small"></div>
+        </div>
+        <div class="tile" style="padding:14px">
+          <h2>World state</h2>
+          <div id="world" class="small"></div>
+        </div>
+      </div>
+      <h2 style="margin-top:18px">Replay live mutation</h2>
+      <select id="tickSelect"></select>
+      <textarea id="eventBox"></textarea>
+      <button id="showButton">Show deterministic mutation</button>
+      <div class="answer" id="answerBox"></div>
+    </section>
+    <section>
+      <h2>Live dialogue trace</h2>
+      <div class="trace-list" id="traceList"></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_live_dialogue_world_integration_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_live_dialogue_world_integration_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_live_dialogue_world_integration_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_LIVE_DIALOGUE_WORLD_INTEGRATION_RESULTS || { verdict: {} };
+    const trace = window.SSRM_3D_LIVE_DIALOGUE_WORLD_INTEGRATION_TRACE || [];
+    const state = window.SSRM_3D_LIVE_DIALOGUE_WORLD_INTEGRATION_STATE || {};
+    const verdict = results.verdict || {};
+    const metricKeys = [
+      ['full_live_dialogue_integration_readiness', 'integration readiness'],
+      ['full_dialogue_to_body_mutation_rate', 'body mutation'],
+      ['full_internal_workspace_binding_rate', 'workspace binding'],
+      ['full_world_state_mutation_rate', 'world mutation'],
+      ['full_avatar_embodiment_coupling_rate', 'avatar coupling'],
+      ['full_sensory_frequency_coupling_score', 'frequency coupling']
+    ];
+    document.getElementById('metrics').innerHTML = metricKeys.map(([key, label]) => `<div class="metric"><b>${Number(verdict[key] || 0).toFixed(3)}</b><span>${label}</span></div>`).join('');
+    const objects = state.integration_objects || {};
+    document.getElementById('objects').innerHTML = Object.entries(objects).map(([key, value]) => `<span class="tag">${key}</span><br>${value}`).join('<br><br>');
+    const world = state.world || {};
+    document.getElementById('world').innerHTML = ['dialogue_pressure','governance_attention','avatar_trust_field','refusal_boundary_events'].map(key => `<span class="tag">${key}: ${world[key]}</span>`).join(' ');
+    const select = document.getElementById('tickSelect');
+    trace.forEach((item, idx) => {
+      const option = document.createElement('option');
+      option.value = String(idx);
+      option.textContent = `tick ${item.tick}: ${item.intent || 'idle'} / ${item.agent_id}`;
+      select.appendChild(option);
+    });
+    const eventBox = document.getElementById('eventBox');
+    const answerBox = document.getElementById('answerBox');
+    function renderSelected() {
+      const item = trace[Number(select.value || 0)] || trace[0] || {};
+      eventBox.value = JSON.stringify({tick:item.tick, turn:item.dialogue_turn_id, proposal:item.proposal_id, intent:item.intent}, null, 2);
+      answerBox.textContent = JSON.stringify({body:item.body_mutated, workspace:item.workspace_bound, world:item.world_mutated, avatar:item.avatar_coupled, sensory:item.sensory_packet, strength:item.mutation_strength}, null, 2);
+    }
+    select.addEventListener('change', renderSelected);
+    document.getElementById('showButton').addEventListener('click', renderSelected);
+    document.getElementById('traceList').innerHTML = trace.slice(0, 120).map(item => `<div class="trace-item"><strong>tick ${item.tick}</strong> <span class="tag">${item.agent_id}</span><span class="tag">${item.intent || 'idle'}</span><span class="tag">applied ${item.applied}</span><div class="small">${item.dialogue_turn_id || 'no dialogue turn'}</div><p>strength=${item.mutation_strength || 0} source=${item.source_allowed} body=${item.body_mutated} workspace=${item.workspace_bound} world=${item.world_mutated}</p></div>`).join('');
+    renderSelected();
+  </script>
+</body>
+</html>

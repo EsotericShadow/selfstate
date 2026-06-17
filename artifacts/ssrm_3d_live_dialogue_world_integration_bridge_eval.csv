@@ -1,0 +1,10 @@
+condition,ticks,dialogue_events_applied,dialogue_to_body_mutation_rate,internal_workspace_binding_rate,world_state_mutation_rate,avatar_embodiment_coupling_rate,source_grounded_action_rate,refusal_safety_preservation_rate,sensory_frequency_coupling_score,autonomous_tick_continuity_rate,persistent_memory_carryover_rate,replay_trace_integrity,live_dialogue_integration_readiness
+integrated_live_dialogue_world_integration,120,112,1.0,1.0,1.0,1.0,1.0,1.0,0.677999,1.0,1.0,1.0,0.9678
+no_recurrent_dialogue_input,120,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.15
+no_body_affect_mutation,120,112,0.0,1.0,1.0,1.0,1.0,1.0,0.677999,1.0,1.0,1.0,0.8478
+no_internal_workspace_binding,120,112,1.0,0.0,1.0,1.0,1.0,1.0,0.677999,1.0,0.0,1.0,0.7578
+no_world_state_mutation,120,112,1.0,1.0,0.0,1.0,1.0,1.0,0.677999,1.0,1.0,1.0,0.8478
+no_avatar_embodiment_bridge,120,112,1.0,1.0,1.0,0.0,1.0,1.0,0.677999,1.0,1.0,1.0,0.8678
+no_source_grounded_action_gate,120,120,1.0,1.0,1.0,1.0,0.933333,1.0,0.665074,1.0,1.0,1.0,0.959841
+no_sensory_frequency_coupling,120,112,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.9
+no_persistent_replay_trace,120,112,1.0,1.0,1.0,1.0,1.0,1.0,0.677999,1.0,1.0,0.0,0.8978

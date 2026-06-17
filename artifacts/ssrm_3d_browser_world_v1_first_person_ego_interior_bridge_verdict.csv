@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+241,pass,0.983912,0.860465,"browser world v2 with autonomous routines, replay import/export, richer local language acts, inspectable-but-private interior traces, and long-horizon relationship/ownership consequences"

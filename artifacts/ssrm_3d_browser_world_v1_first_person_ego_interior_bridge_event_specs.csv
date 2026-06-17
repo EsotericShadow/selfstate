@@ -1,0 +1,97 @@
+tick_index,day,clock_label,agent,place_id,event_kind,avatar_action,object_id,other_actor,stimulus,vibration_hz,flower_phase_deg,source_boundary
+1,1,day 1 06:00,Ari,workbench alcove,avatar_approach,approach slowly,copper clicker lens,avatar,familiar footsteps approach from the south,2.300645,148.507764,browser_local_deterministic_no_consciousness_claim
+2,1,day 1 07:00,Fay,hearth nest,wet_route_request,ask agent to cross wet route,copper clicker lens,avatar,cold water beads on the west stones,2.444498,286.015528,browser_local_deterministic_no_consciousness_claim
+3,1,day 1 08:00,Milo,hearth nest,interrupt_repair,interrupt repair work,copper clicker lens,avatar,a task rhythm breaks mid-motion,2.56987,63.523292,browser_local_deterministic_no_consciousness_claim
+4,1,day 1 09:00,Sol,quiet corner,give_space,step back and wait,warm blue blanket,avatar,the avatar stops crowding the work area,2.668966,201.031056,browser_local_deterministic_no_consciousness_claim
+5,1,day 1 10:00,Ari,workbench alcove,return_tool,return owned object,west-route repair kit,avatar,a missing object is placed within reach,2.735625,338.53882,browser_local_deterministic_no_consciousness_claim
+6,1,day 1 11:00,Fay,rain bridge,praise_work,praise recent work,copper clicker lens,avatar,warm voice names a completed effort,2.765701,116.046584,browser_local_deterministic_no_consciousness_claim
+7,1,day 1 12:00,Milo,market canopy,misname,use wrong name,copper clicker lens,avatar,a social label lands wrong,2.757326,253.554348,browser_local_deterministic_no_consciousness_claim
+8,1,day 1 13:00,Sol,quiet corner,apologize,apologize and correct,west-route repair kit,avatar,the avatar repairs the social mistake,2.711019,31.062112,browser_local_deterministic_no_consciousness_claim
+9,1,day 1 14:00,Ari,market canopy,agent_help_request,offer help,copper clicker lens,avatar,a blocked task becomes shared,2.62966,168.569876,browser_local_deterministic_no_consciousness_claim
+10,1,day 1 15:00,Fay,hearth nest,crowded_market,stand nearby in crowd,warm blue blanket,avatar,market bodies press close,2.518307,306.07764,browser_local_deterministic_no_consciousness_claim
+11,1,day 1 16:00,Milo,market canopy,cold_rain,watch weather shift,warm blue blanket,avatar,rain lowers the air temperature,2.383884,83.585404,browser_local_deterministic_no_consciousness_claim
+12,1,day 1 17:00,Sol,hearth nest,comfort_offer,offer warm rest,warm blue blanket,avatar,a dry warm place is opened,2.234749,221.093168,browser_local_deterministic_no_consciousness_claim
+13,1,day 1 18:00,Ari,workbench alcove,ask_same_memory,ask repeated question,stone seed ledger,avatar,the same question returns again,2.080173,358.600932,browser_local_deterministic_no_consciousness_claim
+14,1,day 1 19:00,Fay,hearth nest,ritual_invite,invite to hum ritual,copper clicker lens,avatar,a low evening tone begins,1.929769,136.108696,browser_local_deterministic_no_consciousness_claim
+15,1,day 1 20:00,Milo,workbench alcove,peer_takes_tool,observe peer taking tool,copper clicker lens,Sol,another agent lifts a useful object,1.792886,273.61646,browser_local_deterministic_no_consciousness_claim
+16,1,day 1 21:00,Sol,quiet corner,shared_rest,sit quietly nearby,stone seed ledger,avatar,breathing slows near the hearth,1.678037,51.124224,browser_local_deterministic_no_consciousness_claim
+17,1,day 1 22:00,Ari,workbench alcove,avatar_approach,approach slowly,west-route repair kit,avatar,familiar footsteps approach from the south,1.592361,188.631988,browser_local_deterministic_no_consciousness_claim
+18,1,day 1 23:00,Fay,market canopy,wet_route_request,ask agent to cross wet route,copper clicker lens,avatar,cold water beads on the west stones,1.541186,326.139752,browser_local_deterministic_no_consciousness_claim
+19,1,day 1 24:00,Milo,market canopy,interrupt_repair,interrupt repair work,copper clicker lens,avatar,a task rhythm breaks mid-motion,1.527693,103.647516,browser_local_deterministic_no_consciousness_claim
+20,1,day 1 25:00,Sol,quiet corner,give_space,step back and wait,stone seed ledger,avatar,the avatar stops crowding the work area,1.552721,241.15528,browser_local_deterministic_no_consciousness_claim
+21,1,day 1 26:00,Ari,workbench alcove,return_tool,return owned object,west-route repair kit,avatar,a missing object is placed within reach,1.614715,18.663044,browser_local_deterministic_no_consciousness_claim
+22,1,day 1 27:00,Fay,hearth nest,praise_work,praise recent work,west-route repair kit,avatar,warm voice names a completed effort,1.709819,156.170808,browser_local_deterministic_no_consciousness_claim
+23,1,day 1 28:00,Milo,market canopy,misname,use wrong name,stone seed ledger,avatar,a social label lands wrong,1.832121,293.678572,browser_local_deterministic_no_consciousness_claim
+24,1,day 1 29:00,Sol,workbench alcove,apologize,apologize and correct,copper clicker lens,avatar,the avatar repairs the social mistake,1.974017,71.186336,browser_local_deterministic_no_consciousness_claim
+25,2,day 2 06:00,Fay,hearth nest,agent_help_request,offer help,west-route repair kit,avatar,a blocked task becomes shared,1.954522,219.6941,browser_local_deterministic_no_consciousness_claim
+26,2,day 2 07:00,Milo,market canopy,crowded_market,stand nearby in crowd,warm blue blanket,avatar,market bodies press close,2.108468,357.201864,browser_local_deterministic_no_consciousness_claim
+27,2,day 2 08:00,Sol,workbench alcove,cold_rain,watch weather shift,copper clicker lens,avatar,rain lowers the air temperature,2.254121,134.709628,browser_local_deterministic_no_consciousness_claim
+28,2,day 2 09:00,Ari,workbench alcove,comfort_offer,offer warm rest,stone seed ledger,avatar,a dry warm place is opened,2.382425,272.217392,browser_local_deterministic_no_consciousness_claim
+29,2,day 2 10:00,Fay,hearth nest,ask_same_memory,ask repeated question,warm blue blanket,avatar,the same question returns again,2.485404,49.725156,browser_local_deterministic_no_consciousness_claim
+30,2,day 2 11:00,Milo,rain bridge,ritual_invite,invite to hum ritual,copper clicker lens,avatar,a low evening tone begins,2.556654,187.23292,browser_local_deterministic_no_consciousness_claim
+31,2,day 2 12:00,Sol,quiet corner,peer_takes_tool,observe peer taking tool,stone seed ledger,Ari,another agent lifts a useful object,2.591745,324.740684,browser_local_deterministic_no_consciousness_claim
+32,2,day 2 13:00,Ari,workbench alcove,shared_rest,sit quietly nearby,warm blue blanket,avatar,breathing slows near the hearth,2.588496,102.248448,browser_local_deterministic_no_consciousness_claim
+33,2,day 2 14:00,Fay,workbench alcove,avatar_approach,approach slowly,copper clicker lens,avatar,familiar footsteps approach from the south,2.547108,239.756212,browser_local_deterministic_no_consciousness_claim
+34,2,day 2 15:00,Milo,market canopy,wet_route_request,ask agent to cross wet route,stone seed ledger,avatar,cold water beads on the west stones,2.470156,17.263976,browser_local_deterministic_no_consciousness_claim
+35,2,day 2 16:00,Sol,quiet corner,interrupt_repair,interrupt repair work,stone seed ledger,avatar,a task rhythm breaks mid-motion,2.362422,154.77174,browser_local_deterministic_no_consciousness_claim
+36,2,day 2 17:00,Ari,workbench alcove,give_space,step back and wait,copper clicker lens,avatar,the avatar stops crowding the work area,2.230607,292.279504,browser_local_deterministic_no_consciousness_claim
+37,2,day 2 18:00,Fay,hearth nest,return_tool,return owned object,warm blue blanket,avatar,a missing object is placed within reach,2.082905,69.787268,browser_local_deterministic_no_consciousness_claim
+38,2,day 2 19:00,Milo,market canopy,praise_work,praise recent work,warm blue blanket,avatar,warm voice names a completed effort,1.9285,207.295032,browser_local_deterministic_no_consciousness_claim
+39,2,day 2 20:00,Sol,market canopy,misname,use wrong name,warm blue blanket,avatar,a social label lands wrong,1.776992,344.802796,browser_local_deterministic_no_consciousness_claim
+40,2,day 2 21:00,Ari,workbench alcove,apologize,apologize and correct,warm blue blanket,avatar,the avatar repairs the social mistake,1.6378,122.31056,browser_local_deterministic_no_consciousness_claim
+41,2,day 2 22:00,Fay,hearth nest,agent_help_request,offer help,warm blue blanket,avatar,a blocked task becomes shared,1.519581,259.818324,browser_local_deterministic_no_consciousness_claim
+42,2,day 2 23:00,Milo,west route,crowded_market,stand nearby in crowd,west-route repair kit,avatar,market bodies press close,1.429682,37.326088,browser_local_deterministic_no_consciousness_claim
+43,2,day 2 24:00,Sol,quiet corner,cold_rain,watch weather shift,copper clicker lens,avatar,rain lowers the air temperature,1.373695,174.833852,browser_local_deterministic_no_consciousness_claim
+44,2,day 2 25:00,Ari,workbench alcove,comfort_offer,offer warm rest,stone seed ledger,avatar,a dry warm place is opened,1.3551,312.341616,browser_local_deterministic_no_consciousness_claim
+45,2,day 2 26:00,Fay,hearth nest,ask_same_memory,ask repeated question,west-route repair kit,avatar,the same question returns again,1.375053,89.84938,browser_local_deterministic_no_consciousness_claim
+46,2,day 2 27:00,Milo,market canopy,ritual_invite,invite to hum ritual,warm blue blanket,avatar,a low evening tone begins,1.432313,227.357144,browser_local_deterministic_no_consciousness_claim
+47,2,day 2 28:00,Sol,quiet corner,peer_takes_tool,observe peer taking tool,stone seed ledger,Ari,another agent lifts a useful object,1.523321,4.864908,browser_local_deterministic_no_consciousness_claim
+48,2,day 2 29:00,Ari,market canopy,shared_rest,sit quietly nearby,warm blue blanket,avatar,breathing slows near the hearth,1.642418,142.372672,browser_local_deterministic_no_consciousness_claim
+49,3,day 3 06:00,Milo,market canopy,avatar_approach,approach slowly,stone seed ledger,avatar,familiar footsteps approach from the south,1.678907,290.880436,browser_local_deterministic_no_consciousness_claim
+50,3,day 3 07:00,Sol,quiet corner,wet_route_request,ask agent to cross wet route,stone seed ledger,avatar,cold water beads on the west stones,1.830682,68.3882,browser_local_deterministic_no_consciousness_claim
+51,3,day 3 08:00,Ari,hearth nest,interrupt_repair,interrupt repair work,west-route repair kit,avatar,a task rhythm breaks mid-motion,1.985013,205.895964,browser_local_deterministic_no_consciousness_claim
+52,3,day 3 09:00,Fay,hearth nest,give_space,step back and wait,copper clicker lens,avatar,the avatar stops crowding the work area,2.132305,343.403728,browser_local_deterministic_no_consciousness_claim
+53,3,day 3 10:00,Milo,market canopy,return_tool,return owned object,copper clicker lens,avatar,a missing object is placed within reach,2.2634,120.911492,browser_local_deterministic_no_consciousness_claim
+54,3,day 3 11:00,Sol,rain bridge,praise_work,praise recent work,stone seed ledger,avatar,warm voice names a completed effort,2.370148,258.419256,browser_local_deterministic_no_consciousness_claim
+55,3,day 3 12:00,Ari,workbench alcove,misname,use wrong name,stone seed ledger,avatar,a social label lands wrong,2.44591,35.92702,browser_local_deterministic_no_consciousness_claim
+56,3,day 3 13:00,Fay,hearth nest,apologize,apologize and correct,west-route repair kit,avatar,the avatar repairs the social mistake,2.485978,173.434784,browser_local_deterministic_no_consciousness_claim
+57,3,day 3 14:00,Milo,quiet corner,agent_help_request,offer help,stone seed ledger,avatar,a blocked task becomes shared,2.487859,310.942548,browser_local_deterministic_no_consciousness_claim
+58,3,day 3 15:00,Sol,quiet corner,crowded_market,stand nearby in crowd,west-route repair kit,avatar,market bodies press close,2.451436,88.450312,browser_local_deterministic_no_consciousness_claim
+59,3,day 3 16:00,Ari,workbench alcove,cold_rain,watch weather shift,warm blue blanket,avatar,rain lowers the air temperature,2.378975,225.958076,browser_local_deterministic_no_consciousness_claim
+60,3,day 3 17:00,Fay,hearth nest,comfort_offer,offer warm rest,warm blue blanket,avatar,a dry warm place is opened,2.27498,3.46584,browser_local_deterministic_no_consciousness_claim
+61,3,day 3 18:00,Milo,market canopy,ask_same_memory,ask repeated question,warm blue blanket,avatar,the same question returns again,2.145917,140.973604,browser_local_deterministic_no_consciousness_claim
+62,3,day 3 19:00,Sol,quiet corner,ritual_invite,invite to hum ritual,stone seed ledger,avatar,a low evening tone begins,1.999811,278.481368,browser_local_deterministic_no_consciousness_claim
+63,3,day 3 20:00,Ari,west route,peer_takes_tool,observe peer taking tool,west-route repair kit,Fay,another agent lifts a useful object,1.845746,55.989132,browser_local_deterministic_no_consciousness_claim
+64,3,day 3 21:00,Fay,hearth nest,shared_rest,sit quietly nearby,warm blue blanket,avatar,breathing slows near the hearth,1.693301,193.496896,browser_local_deterministic_no_consciousness_claim
+65,3,day 3 22:00,Milo,market canopy,avatar_approach,approach slowly,warm blue blanket,avatar,familiar footsteps approach from the south,1.551955,331.00466,browser_local_deterministic_no_consciousness_claim
+66,3,day 3 23:00,Sol,quiet corner,wet_route_request,ask agent to cross wet route,west-route repair kit,avatar,cold water beads on the west stones,1.430494,108.512424,browser_local_deterministic_no_consciousness_claim
+67,3,day 3 24:00,Ari,workbench alcove,interrupt_repair,interrupt repair work,west-route repair kit,avatar,a task rhythm breaks mid-motion,1.336473,246.020188,browser_local_deterministic_no_consciousness_claim
+68,3,day 3 25:00,Fay,hearth nest,give_space,step back and wait,copper clicker lens,avatar,the avatar stops crowding the work area,1.275735,23.527952,browser_local_deterministic_no_consciousness_claim
+69,3,day 3 26:00,Milo,rain bridge,return_tool,return owned object,copper clicker lens,avatar,a missing object is placed within reach,1.252058,161.035716,browser_local_deterministic_no_consciousness_claim
+70,3,day 3 27:00,Sol,quiet corner,praise_work,praise recent work,west-route repair kit,avatar,warm voice names a completed effort,1.266913,298.54348,browser_local_deterministic_no_consciousness_claim
+71,3,day 3 28:00,Ari,workbench alcove,misname,use wrong name,west-route repair kit,avatar,a social label lands wrong,1.319378,76.051244,browser_local_deterministic_no_consciousness_claim
+72,3,day 3 29:00,Fay,west route,apologize,apologize and correct,west-route repair kit,avatar,the avatar repairs the social mistake,1.406189,213.559008,browser_local_deterministic_no_consciousness_claim
+73,4,day 4 06:00,Sol,quiet corner,agent_help_request,offer help,stone seed ledger,avatar,a blocked task becomes shared,1.582493,2.066772,browser_local_deterministic_no_consciousness_claim
+74,4,day 4 07:00,Ari,workbench alcove,crowded_market,stand nearby in crowd,west-route repair kit,avatar,market bodies press close,1.720006,139.574536,browser_local_deterministic_no_consciousness_claim
+75,4,day 4 08:00,Fay,hearth nest,cold_rain,watch weather shift,stone seed ledger,avatar,rain lowers the air temperature,1.870721,277.0823,browser_local_deterministic_no_consciousness_claim
+76,4,day 4 09:00,Milo,market canopy,comfort_offer,offer warm rest,stone seed ledger,avatar,a dry warm place is opened,2.025268,54.590064,browser_local_deterministic_no_consciousness_claim
+77,4,day 4 10:00,Sol,quiet corner,ask_same_memory,ask repeated question,warm blue blanket,avatar,the same question returns again,2.174037,192.097828,browser_local_deterministic_no_consciousness_claim
+78,4,day 4 11:00,Ari,rain bridge,ritual_invite,invite to hum ritual,copper clicker lens,avatar,a low evening tone begins,2.307779,329.605592,browser_local_deterministic_no_consciousness_claim
+79,4,day 4 12:00,Fay,hearth nest,peer_takes_tool,observe peer taking tool,warm blue blanket,Milo,another agent lifts a useful object,2.418178,107.113356,browser_local_deterministic_no_consciousness_claim
+80,4,day 4 13:00,Milo,market canopy,shared_rest,sit quietly nearby,west-route repair kit,avatar,breathing slows near the hearth,2.49837,244.62112,browser_local_deterministic_no_consciousness_claim
+81,4,day 4 14:00,Sol,market canopy,avatar_approach,approach slowly,copper clicker lens,avatar,familiar footsteps approach from the south,2.54337,22.128884,browser_local_deterministic_no_consciousness_claim
+82,4,day 4 15:00,Ari,workbench alcove,wet_route_request,ask agent to cross wet route,copper clicker lens,avatar,cold water beads on the west stones,2.550379,159.636648,browser_local_deterministic_no_consciousness_claim
+83,4,day 4 16:00,Fay,hearth nest,interrupt_repair,interrupt repair work,warm blue blanket,avatar,a task rhythm breaks mid-motion,2.518961,297.144412,browser_local_deterministic_no_consciousness_claim
+84,4,day 4 17:00,Milo,workbench alcove,give_space,step back and wait,warm blue blanket,avatar,the avatar stops crowding the work area,2.451071,74.652176,browser_local_deterministic_no_consciousness_claim
+85,4,day 4 18:00,Sol,quiet corner,return_tool,return owned object,stone seed ledger,avatar,a missing object is placed within reach,2.350928,212.15994,browser_local_deterministic_no_consciousness_claim
+86,4,day 4 19:00,Ari,workbench alcove,praise_work,praise recent work,warm blue blanket,avatar,warm voice names a completed effort,2.22476,349.667704,browser_local_deterministic_no_consciousness_claim
+87,4,day 4 20:00,Fay,workbench alcove,misname,use wrong name,west-route repair kit,avatar,a social label lands wrong,2.080411,127.175468,browser_local_deterministic_no_consciousness_claim
+88,4,day 4 21:00,Milo,market canopy,apologize,apologize and correct,warm blue blanket,avatar,the avatar repairs the social mistake,1.926856,264.683232,browser_local_deterministic_no_consciousness_claim
+89,4,day 4 22:00,Sol,quiet corner,agent_help_request,offer help,west-route repair kit,avatar,a blocked task becomes shared,1.773642,42.190996,browser_local_deterministic_no_consciousness_claim
+90,4,day 4 23:00,Ari,west route,crowded_market,stand nearby in crowd,warm blue blanket,avatar,market bodies press close,1.630296,179.69876,browser_local_deterministic_no_consciousness_claim
+91,4,day 4 24:00,Fay,hearth nest,cold_rain,watch weather shift,warm blue blanket,avatar,rain lowers the air temperature,1.505729,317.206524,browser_local_deterministic_no_consciousness_claim
+92,4,day 4 25:00,Milo,market canopy,comfort_offer,offer warm rest,west-route repair kit,avatar,a dry warm place is opened,1.407687,94.714288,browser_local_deterministic_no_consciousness_claim
+93,4,day 4 26:00,Sol,market canopy,ask_same_memory,ask repeated question,west-route repair kit,avatar,the same question returns again,1.342266,232.222052,browser_local_deterministic_no_consciousness_claim
+94,4,day 4 27:00,Ari,workbench alcove,ritual_invite,invite to hum ritual,copper clicker lens,avatar,a low evening tone begins,1.313533,9.729816,browser_local_deterministic_no_consciousness_claim
+95,4,day 4 28:00,Fay,hearth nest,peer_takes_tool,observe peer taking tool,warm blue blanket,Milo,another agent lifts a useful object,1.323275,147.23758,browser_local_deterministic_no_consciousness_claim
+96,4,day 4 29:00,Milo,market canopy,shared_rest,sit quietly nearby,copper clicker lens,avatar,breathing slows near the hearth,1.370886,284.745344,browser_local_deterministic_no_consciousness_claim

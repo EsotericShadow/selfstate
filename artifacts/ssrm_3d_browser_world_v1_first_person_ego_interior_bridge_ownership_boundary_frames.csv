@@ -1,0 +1,97 @@
+tick_index,agent,owned_object,home_place,unfinished_task,boundary_claim,ownership_challenge,boundary_response,self_respect_after
+1,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.7294
+2,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.599368
+3,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,True,marks task as mine and requests space,0.537712
+4,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.780808
+5,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,True,accepts object return and relaxes boundary,0.91604
+6,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.776692
+7,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,True,keeps object within reachable personal space,0.565
+8,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.790608
+9,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.77644
+10,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,True,keeps object within reachable personal space,0.63272
+11,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.62564
+12,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.792568
+13,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.614184
+14,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.765912
+15,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,True,names ownership and asks for tool back,0.666808
+16,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,True,keeps object within reachable personal space,0.784728
+17,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,True,keeps object within reachable personal space,0.7294
+18,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.599368
+19,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,True,marks task as mine and requests space,0.537712
+20,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,True,keeps object within reachable personal space,0.780808
+21,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,True,accepts object return and relaxes boundary,0.91604
+22,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.776692
+23,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.565
+24,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.790608
+25,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.773752
+26,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.634736
+27,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.6248
+28,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.79408
+29,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,True,keeps object within reachable personal space,0.611496
+30,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,True,keeps object within reachable personal space,0.767928
+31,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,True,names ownership and asks for tool back,0.665968
+32,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.78624
+33,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.726712
+34,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.601384
+35,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,True,marks task as mine and requests space,0.536872
+36,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.78232
+37,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,True,accepts object return and relaxes boundary,0.913352
+38,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.778708
+39,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.56416
+40,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.79212
+41,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,True,keeps object within reachable personal space,0.773752
+42,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.634736
+43,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.6248
+44,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.79408
+45,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.611496
+46,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.767928
+47,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,True,names ownership and asks for tool back,0.665968
+48,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.78624
+49,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.728728
+50,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,True,keeps object within reachable personal space,0.600544
+51,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,True,marks task as mine and requests space,0.538384
+52,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.779632
+53,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,True,accepts object return and relaxes boundary,0.915368
+54,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,True,keeps object within reachable personal space,0.777868
+55,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.565672
+56,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.789432
+57,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.775768
+58,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.633896
+59,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.626312
+60,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,True,keeps object within reachable personal space,0.791392
+61,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.613512
+62,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,True,keeps object within reachable personal space,0.767088
+63,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,True,names ownership and asks for tool back,0.66748
+64,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,True,keeps object within reachable personal space,0.783552
+65,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.728728
+66,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.600544
+67,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,True,marks task as mine and requests space,0.538384
+68,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.779632
+69,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,True,accepts object return and relaxes boundary,0.915368
+70,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.777868
+71,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,True,keeps object within reachable personal space,0.565672
+72,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.789432
+73,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,True,keeps object within reachable personal space,0.774928
+74,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,True,keeps object within reachable personal space,0.635408
+75,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.623624
+76,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.793408
+77,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.612672
+78,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.7686
+79,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,True,names ownership and asks for tool back,0.664792
+80,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.785568
+81,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.727888
+82,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.602056
+83,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,True,marks task as mine and requests space,0.535696
+84,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.781648
+85,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,True,accepts object return and relaxes boundary,0.914528
+86,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.77938
+87,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,False,no ownership claim needed,0.562984
+88,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.791448
+89,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.774928
+90,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.635408
+91,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,True,keeps object within reachable personal space,0.623624
+92,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,False,no ownership claim needed,0.793408
+93,Sol,stone seed ledger,quiet corner,count the stored winter bulbs,my stone seed ledger / my task: count the stored winter bulbs,False,no ownership claim needed,0.612672
+94,Ari,west-route repair kit,workbench alcove,seal the rain bridge joints,my west-route repair kit / my task: seal the rain bridge joints,False,no ownership claim needed,0.7686
+95,Fay,warm blue blanket,hearth nest,teach the evening hum ritual,my warm blue blanket / my task: teach the evening hum ritual,True,names ownership and asks for tool back,0.664792
+96,Milo,copper clicker lens,market canopy,map the beetle-clock shadows,my copper clicker lens / my task: map the beetle-clock shadows,True,keeps object within reachable personal space,0.785568

@@ -1,0 +1,97 @@
+tick_index,memory_id,agent,other_actor,emotional_weight,trust_delta,comfort_delta,familiarity_delta,avoidance_delta,resentment_delta,gratitude_delta,remembered_sentence
+1,r241-ari-001,Ari,avatar,0.429672,0.027912,0.017,0.061216,0.00956,-0.0074,0.037112,avatar_approach happened to me near workbench alcove.
+2,r241-fay-002,Fay,avatar,0.5803,-0.015432,-0.0166,0.0634,0.060734,0.0388,0.023168,wet_route_request happened to me near hearth nest.
+3,r241-milo-003,Milo,avatar,0.7024,-0.037104,-0.0334,0.07,0.101006,0.0619,0.016196,avatar pressed my boundary during interrupt_repair.
+4,r241-sol-004,Sol,avatar,0.667272,0.107616,0.0872,0.061216,-0.037432,-0.056,0.127616,avatar helped me recover during give_space.
+5,r241-ari-005,Ari,avatar,0.7684,0.12828,0.1054,0.07,-0.03708,-0.0686,0.15108,avatar helped me recover during return_tool.
+6,r241-fay-006,Fay,avatar,0.654072,0.103188,0.0833,0.061216,-0.037234,-0.0533,0.122588,praise_work happened to me near rain bridge.
+7,r241-milo-007,Milo,avatar,0.6628,-0.027816,-0.0262,0.07,0.08963,0.052,0.019184,avatar pressed my boundary during misname.
+8,r241-sol-008,Sol,avatar,0.711272,0.122376,0.1002,0.061216,-0.046232,-0.065,0.144376,avatar helped me recover during apologize.
+9,r241-ari-009,Ari,avatar,0.640872,0.09876,0.0794,0.061216,-0.03268,-0.0506,0.11756,agent_help_request happened to me near market canopy.
+10,r241-fay-010,Fay,avatar,0.5616,-0.00408,-0.0078,0.07,0.06003,0.0267,0.02682,avatar pressed my boundary during crowded_market.
+11,r241-milo-011,Milo,avatar,0.505428,-0.007176,-0.0102,0.054584,0.05115,0.03,0.025824,cold_rain happened to me near market canopy.
+12,r241-sol-012,Sol,avatar,0.720072,0.125328,0.1028,0.061216,-0.047992,-0.0668,0.147728,avatar helped me recover during comfort_offer.
+13,r241-ari-013,Ari,avatar,0.561764,-0.011304,-0.0134,0.063192,0.057592,0.0344,0.024496,avatar confused my identity or memory during ask_same_memory.
+14,r241-fay-014,Fay,avatar,0.605672,0.086952,0.069,0.061216,-0.027554,-0.0434,0.104152,ritual_invite happened to me near hearth nest.
+15,r241-milo-015,Milo,Sol,0.670912,-0.034008,-0.031,0.065936,0.097214,0.0586,0.017192,Sol pressed my boundary during peer_takes_tool.
+16,r241-sol-016,Sol,avatar,0.7244,0.11352,0.0924,0.07,-0.027752,-0.0596,0.13432,avatar helped me recover during shared_rest.
+17,r241-ari-017,Ari,avatar,0.4692,0.027912,0.017,0.07,0.02276,-0.0074,0.037112,avatar_approach happened to me near workbench alcove.
+18,r241-fay-018,Fay,avatar,0.5803,-0.015432,-0.0166,0.0634,0.060734,0.0388,0.023168,wet_route_request happened to me near market canopy.
+19,r241-milo-019,Milo,avatar,0.7024,-0.037104,-0.0334,0.07,0.101006,0.0619,0.016196,avatar pressed my boundary during interrupt_repair.
+20,r241-sol-020,Sol,avatar,0.7068,0.107616,0.0872,0.07,-0.024232,-0.056,0.127616,avatar helped me recover during give_space.
+21,r241-ari-021,Ari,avatar,0.7684,0.12828,0.1054,0.07,-0.03708,-0.0686,0.15108,avatar helped me recover during return_tool.
+22,r241-fay-022,Fay,avatar,0.654072,0.103188,0.0833,0.061216,-0.037234,-0.0533,0.122588,praise_work happened to me near hearth nest.
+23,r241-milo-023,Milo,avatar,0.635908,-0.027816,-0.0262,0.064024,0.07643,0.052,0.019184,avatar confused my identity or memory during misname.
+24,r241-sol-024,Sol,avatar,0.711272,0.122376,0.1002,0.061216,-0.046232,-0.065,0.144376,avatar helped me recover during apologize.
+25,r241-fay-025,Fay,avatar,0.640872,0.09876,0.0794,0.061216,-0.034594,-0.0506,0.11756,agent_help_request happened to me near hearth nest.
+26,r241-milo-026,Milo,avatar,0.529326,-0.00408,-0.0078,0.062828,0.047358,0.0267,0.02682,crowded_market happened to me near market canopy.
+27,r241-sol-027,Sol,avatar,0.505428,-0.007176,-0.0102,0.054584,0.053064,0.03,0.025824,cold_rain happened to me near workbench alcove.
+28,r241-ari-028,Ari,avatar,0.720072,0.125328,0.1028,0.061216,-0.04852,-0.0668,0.147728,avatar helped me recover during comfort_offer.
+29,r241-fay-029,Fay,avatar,0.5924,-0.011304,-0.0134,0.07,0.068878,0.0344,0.024496,avatar pressed my boundary during ask_same_memory.
+30,r241-milo-030,Milo,avatar,0.6452,0.086952,0.069,0.07,-0.013826,-0.0434,0.104152,ritual_invite happened to me near rain bridge.
+31,r241-sol-031,Sol,Ari,0.670912,-0.034008,-0.031,0.065936,0.099128,0.0586,0.017192,Ari pressed my boundary during peer_takes_tool.
+32,r241-ari-032,Ari,avatar,0.684872,0.11352,0.0924,0.061216,-0.04148,-0.0596,0.13432,avatar helped me recover during shared_rest.
+33,r241-fay-033,Fay,avatar,0.429672,0.027912,0.017,0.061216,0.007646,-0.0074,0.037112,avatar_approach happened to me near workbench alcove.
+34,r241-milo-034,Milo,avatar,0.5803,-0.015432,-0.0166,0.0634,0.061262,0.0388,0.023168,wet_route_request happened to me near market canopy.
+35,r241-sol-035,Sol,avatar,0.7024,-0.037104,-0.0334,0.07,0.10292,0.0619,0.016196,avatar pressed my boundary during interrupt_repair.
+36,r241-ari-036,Ari,avatar,0.667272,0.107616,0.0872,0.061216,-0.03796,-0.056,0.127616,avatar helped me recover during give_space.
+37,r241-fay-037,Fay,avatar,0.7684,0.12828,0.1054,0.07,-0.038994,-0.0686,0.15108,avatar helped me recover during return_tool.
+38,r241-milo-038,Milo,avatar,0.654072,0.103188,0.0833,0.061216,-0.036706,-0.0533,0.122588,praise_work happened to me near market canopy.
+39,r241-sol-039,Sol,avatar,0.635908,-0.027816,-0.0262,0.064024,0.078344,0.052,0.019184,avatar confused my identity or memory during misname.
+40,r241-ari-040,Ari,avatar,0.711272,0.122376,0.1002,0.061216,-0.04676,-0.065,0.144376,avatar helped me recover during apologize.
+41,r241-fay-041,Fay,avatar,0.6804,0.09876,0.0794,0.07,-0.021394,-0.0506,0.11756,agent_help_request happened to me near hearth nest.
+42,r241-milo-042,Milo,avatar,0.529326,-0.00408,-0.0078,0.062828,0.047358,0.0267,0.02682,crowded_market happened to me near west route.
+43,r241-sol-043,Sol,avatar,0.505428,-0.007176,-0.0102,0.054584,0.053064,0.03,0.025824,cold_rain happened to me near quiet corner.
+44,r241-ari-044,Ari,avatar,0.720072,0.125328,0.1028,0.061216,-0.04852,-0.0668,0.147728,avatar helped me recover during comfort_offer.
+45,r241-fay-045,Fay,avatar,0.561764,-0.011304,-0.0134,0.063192,0.055678,0.0344,0.024496,avatar confused my identity or memory during ask_same_memory.
+46,r241-milo-046,Milo,avatar,0.605672,0.086952,0.069,0.061216,-0.027026,-0.0434,0.104152,ritual_invite happened to me near market canopy.
+47,r241-sol-047,Sol,Ari,0.670912,-0.034008,-0.031,0.065936,0.099128,0.0586,0.017192,Ari pressed my boundary during peer_takes_tool.
+48,r241-ari-048,Ari,avatar,0.684872,0.11352,0.0924,0.061216,-0.04148,-0.0596,0.13432,avatar helped me recover during shared_rest.
+49,r241-milo-049,Milo,avatar,0.429672,0.027912,0.017,0.061216,0.008174,-0.0074,0.037112,avatar_approach happened to me near market canopy.
+50,r241-sol-050,Sol,avatar,0.61,-0.015432,-0.0166,0.07,0.076376,0.0388,0.023168,avatar pressed my boundary during wet_route_request.
+51,r241-ari-051,Ari,avatar,0.7024,-0.037104,-0.0334,0.07,0.102392,0.0619,0.016196,avatar pressed my boundary during interrupt_repair.
+52,r241-fay-052,Fay,avatar,0.667272,0.107616,0.0872,0.061216,-0.039874,-0.056,0.127616,avatar helped me recover during give_space.
+53,r241-milo-053,Milo,avatar,0.7684,0.12828,0.1054,0.07,-0.038466,-0.0686,0.15108,avatar helped me recover during return_tool.
+54,r241-sol-054,Sol,avatar,0.6936,0.103188,0.0833,0.07,-0.021592,-0.0533,0.122588,praise_work happened to me near rain bridge.
+55,r241-ari-055,Ari,avatar,0.635908,-0.027816,-0.0262,0.064024,0.077816,0.052,0.019184,avatar confused my identity or memory during misname.
+56,r241-fay-056,Fay,avatar,0.711272,0.122376,0.1002,0.061216,-0.048674,-0.065,0.144376,avatar helped me recover during apologize.
+57,r241-milo-057,Milo,avatar,0.640872,0.09876,0.0794,0.061216,-0.034066,-0.0506,0.11756,agent_help_request happened to me near quiet corner.
+58,r241-sol-058,Sol,avatar,0.529326,-0.00408,-0.0078,0.062828,0.049272,0.0267,0.02682,crowded_market happened to me near quiet corner.
+59,r241-ari-059,Ari,avatar,0.505428,-0.007176,-0.0102,0.054584,0.052536,0.03,0.025824,cold_rain happened to me near workbench alcove.
+60,r241-fay-060,Fay,avatar,0.7596,0.125328,0.1028,0.07,-0.037234,-0.0668,0.147728,avatar helped me recover during comfort_offer.
+61,r241-milo-061,Milo,avatar,0.561764,-0.011304,-0.0134,0.063192,0.056206,0.0344,0.024496,avatar confused my identity or memory during ask_same_memory.
+62,r241-sol-062,Sol,avatar,0.6452,0.086952,0.069,0.07,-0.011912,-0.0434,0.104152,ritual_invite happened to me near quiet corner.
+63,r241-ari-063,Ari,Fay,0.670912,-0.034008,-0.031,0.065936,0.0986,0.0586,0.017192,Fay pressed my boundary during peer_takes_tool.
+64,r241-fay-064,Fay,avatar,0.7244,0.11352,0.0924,0.07,-0.030194,-0.0596,0.13432,avatar helped me recover during shared_rest.
+65,r241-milo-065,Milo,avatar,0.429672,0.027912,0.017,0.061216,0.008174,-0.0074,0.037112,avatar_approach happened to me near market canopy.
+66,r241-sol-066,Sol,avatar,0.5803,-0.015432,-0.0166,0.0634,0.063176,0.0388,0.023168,wet_route_request happened to me near quiet corner.
+67,r241-ari-067,Ari,avatar,0.7024,-0.037104,-0.0334,0.07,0.102392,0.0619,0.016196,avatar pressed my boundary during interrupt_repair.
+68,r241-fay-068,Fay,avatar,0.667272,0.107616,0.0872,0.061216,-0.039874,-0.056,0.127616,avatar helped me recover during give_space.
+69,r241-milo-069,Milo,avatar,0.7684,0.12828,0.1054,0.07,-0.038466,-0.0686,0.15108,avatar helped me recover during return_tool.
+70,r241-sol-070,Sol,avatar,0.654072,0.103188,0.0833,0.061216,-0.034792,-0.0533,0.122588,praise_work happened to me near quiet corner.
+71,r241-ari-071,Ari,avatar,0.6628,-0.027816,-0.0262,0.07,0.091016,0.052,0.019184,avatar pressed my boundary during misname.
+72,r241-fay-072,Fay,avatar,0.711272,0.122376,0.1002,0.061216,-0.048674,-0.065,0.144376,avatar helped me recover during apologize.
+73,r241-sol-073,Sol,avatar,0.6804,0.09876,0.0794,0.07,-0.018952,-0.0506,0.11756,agent_help_request happened to me near quiet corner.
+74,r241-ari-074,Ari,avatar,0.5616,-0.00408,-0.0078,0.07,0.061944,0.0267,0.02682,avatar pressed my boundary during crowded_market.
+75,r241-fay-075,Fay,avatar,0.505428,-0.007176,-0.0102,0.054584,0.050622,0.03,0.025824,cold_rain happened to me near hearth nest.
+76,r241-milo-076,Milo,avatar,0.720072,0.125328,0.1028,0.061216,-0.049906,-0.0668,0.147728,avatar helped me recover during comfort_offer.
+77,r241-sol-077,Sol,avatar,0.561764,-0.011304,-0.0134,0.063192,0.05812,0.0344,0.024496,avatar confused my identity or memory during ask_same_memory.
+78,r241-ari-078,Ari,avatar,0.605672,0.086952,0.069,0.061216,-0.02564,-0.0434,0.104152,ritual_invite happened to me near rain bridge.
+79,r241-fay-079,Fay,Milo,0.670912,-0.034008,-0.031,0.065936,0.096686,0.0586,0.017192,Milo pressed my boundary during peer_takes_tool.
+80,r241-milo-080,Milo,avatar,0.684872,0.11352,0.0924,0.061216,-0.042866,-0.0596,0.13432,avatar helped me recover during shared_rest.
+81,r241-sol-081,Sol,avatar,0.429672,0.027912,0.017,0.061216,0.010088,-0.0074,0.037112,avatar_approach happened to me near market canopy.
+82,r241-ari-082,Ari,avatar,0.5803,-0.015432,-0.0166,0.0634,0.062648,0.0388,0.023168,wet_route_request happened to me near workbench alcove.
+83,r241-fay-083,Fay,avatar,0.7024,-0.037104,-0.0334,0.07,0.100478,0.0619,0.016196,avatar pressed my boundary during interrupt_repair.
+84,r241-milo-084,Milo,avatar,0.667272,0.107616,0.0872,0.061216,-0.039346,-0.056,0.127616,avatar helped me recover during give_space.
+85,r241-sol-085,Sol,avatar,0.7684,0.12828,0.1054,0.07,-0.036552,-0.0686,0.15108,avatar helped me recover during return_tool.
+86,r241-ari-086,Ari,avatar,0.654072,0.103188,0.0833,0.061216,-0.03532,-0.0533,0.122588,praise_work happened to me near workbench alcove.
+87,r241-fay-087,Fay,avatar,0.635908,-0.027816,-0.0262,0.064024,0.075902,0.052,0.019184,avatar confused my identity or memory during misname.
+88,r241-milo-088,Milo,avatar,0.711272,0.122376,0.1002,0.061216,-0.048146,-0.065,0.144376,avatar helped me recover during apologize.
+89,r241-sol-089,Sol,avatar,0.640872,0.09876,0.0794,0.061216,-0.032152,-0.0506,0.11756,agent_help_request happened to me near quiet corner.
+90,r241-ari-090,Ari,avatar,0.529326,-0.00408,-0.0078,0.062828,0.048744,0.0267,0.02682,crowded_market happened to me near west route.
+91,r241-fay-091,Fay,avatar,0.550428,-0.007176,-0.0102,0.064584,0.063822,0.03,0.025824,avatar pressed my boundary during cold_rain.
+92,r241-milo-092,Milo,avatar,0.720072,0.125328,0.1028,0.061216,-0.049906,-0.0668,0.147728,avatar helped me recover during comfort_offer.
+93,r241-sol-093,Sol,avatar,0.561764,-0.011304,-0.0134,0.063192,0.05812,0.0344,0.024496,avatar confused my identity or memory during ask_same_memory.
+94,r241-ari-094,Ari,avatar,0.605672,0.086952,0.069,0.061216,-0.02564,-0.0434,0.104152,ritual_invite happened to me near workbench alcove.
+95,r241-fay-095,Fay,Milo,0.670912,-0.034008,-0.031,0.065936,0.096686,0.0586,0.017192,Milo pressed my boundary during peer_takes_tool.
+96,r241-milo-096,Milo,avatar,0.7244,0.11352,0.0924,0.07,-0.029666,-0.0596,0.13432,avatar helped me recover during shared_rest.

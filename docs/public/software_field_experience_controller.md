@@ -280,3 +280,7 @@ Report 239 makes the post-entry browser page itself into a durable local game-lo
 ## Report 240 Integrated Browser World v0 Real-Time Tick Bridge Note
 
 Report 240 consolidates the durable browser loop into an integrated browser-world v0 scaffold. It generates 72 real-time tick specs, 72 avatar motion frames, 72 typed conversation events, 72 localStorage snapshots, 72 replay download events, 72 agent schedule/goal ticks, 72 sensory/body ticks, and 72 integrated world-loop ticks. The run passes with readiness 0.994090 and weakest-channel score 0.875882. The weakest channel is parser confidence, correctly preserving the boundary that typed interaction remains deterministic routing rather than open-ended understanding.
+
+## Report 241 Browser World v1 First-Person Ego Interior Bridge Note
+
+Report 241 adds a first-person ego/interior layer to the browser-world line. It generates 96 event specs, 96 body frames, 96 egocentric perception frames, 96 ego appraisals, 96 private workspace frames, 96 ownership boundary frames, 96 relationship memory episodes, 96 visible behavior frames, and 96 integrated interior loop ticks. The run passes with readiness 0.983912 and weakest-channel score 0.860465. The weakest channel is body-to-affect coupling, correctly marking that embodied affect needs deeper dynamics before the agents can feel like durable little people rather than table-driven interiors.

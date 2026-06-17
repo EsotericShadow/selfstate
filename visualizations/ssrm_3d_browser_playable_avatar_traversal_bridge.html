@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report 180 - SSRM-3D Browser-Playable Avatar Traversal Bridge</title>
+  <style>
+    :root {
+      --ink: #191712;
+      --paper: #f3ead7;
+      --panel: rgba(255, 249, 235, 0.86);
+      --clay: #b56b46;
+      --moss: #496f54;
+      --reed: #6f7c48;
+      --glass: #557f85;
+      --ridge: #6a5a46;
+      --danger: #9c3f34;
+      --safe: #3d7a5a;
+      --line: rgba(35, 30, 22, 0.18);
+      --shadow: 0 24px 80px rgba(51, 39, 23, 0.22);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(181, 107, 70, 0.22), transparent 28rem),
+        radial-gradient(circle at 80% 22%, rgba(85, 127, 133, 0.24), transparent 26rem),
+        linear-gradient(135deg, #ead7b8 0%, #f6eedc 48%, #d8cab0 100%);
+    }
+    .shell {
+      width: min(1240px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 28px 0 40px;
+    }
+    header {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 4.8rem);
+      letter-spacing: -0.065em;
+      line-height: 0.9;
+      max-width: 920px;
+    }
+    .claim {
+      max-width: 360px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      font-size: 0.96rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(340px, 0.7fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .map-card { position: relative; min-height: 640px; }
+    .map-head, .panel-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.24);
+    }
+    .kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: rgba(25, 23, 18, 0.62);
+    }
+    .metric-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 11px;
+      background: rgba(255,255,255,0.42);
+      font-variant-numeric: tabular-nums;
+    }
+    svg { width: 100%; height: 560px; display: block; }
+    .route-line { stroke: rgba(41, 36, 28, 0.36); stroke-width: 3.5; stroke-linecap: round; }
+    .route-line.blocked { stroke-dasharray: 6 9; opacity: 0.38; }
+    .route-line.hot { stroke: var(--clay); stroke-width: 5.5; filter: drop-shadow(0 0 10px rgba(181,107,70,.38)); }
+    .node circle { stroke: rgba(255,255,255,0.74); stroke-width: 4; filter: drop-shadow(0 10px 20px rgba(35,30,22,.18)); }
+    .node text { font-size: 15px; paint-order: stroke; stroke: rgba(246,238,220,.82); stroke-width: 5; stroke-linejoin: round; }
+    .avatar { filter: drop-shadow(0 12px 22px rgba(74, 52, 32, 0.4)); }
+    .avatar .body { fill: #f5c95a; stroke: #4c331a; stroke-width: 4; }
+    .avatar .eye { fill: #191712; }
+    .side { display: grid; gap: 18px; }
+    .panel { padding: 18px 20px; }
+    .place-title { font-size: 2rem; letter-spacing: -0.04em; margin: 0 0 8px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .chip { padding: 7px 9px; border-radius: 999px; background: rgba(73,111,84,.14); border: 1px solid rgba(73,111,84,.24); font-size: .9rem; }
+    .bars { display: grid; gap: 10px; margin-top: 12px; }
+    .bar-row { display: grid; grid-template-columns: 92px 1fr 48px; gap: 10px; align-items: center; font-variant-numeric: tabular-nums; }
+    .bar { height: 11px; border-radius: 999px; background: rgba(25,23,18,.12); overflow: hidden; }
+    .fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--moss), #d8a75e); }
+    .actions { display: grid; gap: 10px; }
+    button {
+      appearance: none;
+      border: 1px solid rgba(25,23,18,.18);
+      background: #2d2a21;
+      color: #fff7e7;
+      border-radius: 18px;
+      padding: 12px 14px;
+      font-family: inherit;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: left;
+      transition: transform .15s ease, background .15s ease;
+    }
+    button:hover { transform: translateY(-1px); background: #473d2c; }
+    button.secondary { background: rgba(255,255,255,.46); color: var(--ink); }
+    button.secondary:hover { background: rgba(255,255,255,.76); }
+    .route-meta { display: block; margin-top: 4px; color: rgba(255,247,231,.72); font-size: .86rem; }
+    .secondary .route-meta { color: rgba(25,23,18,.62); }
+    .log {
+      display: grid;
+      gap: 8px;
+      max-height: 210px;
+      overflow: auto;
+      padding-right: 6px;
+    }
+    .log-item { padding: 10px 12px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.34); font-size: .92rem; }
+    .sensory { line-height: 1.55; }
+    .footer-note { margin-top: 18px; color: rgba(25,23,18,.62); font-size: .93rem; }
+    @media (max-width: 920px) {
+      header, .grid { grid-template-columns: 1fr; }
+      .map-card { min-height: unset; }
+      svg { height: 440px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div>
+        <div class="kicker">Report 180 / local deterministic traversal</div>
+        <h1>Browser-playable avatar over settlement topology</h1>
+      </div>
+      <div class="claim">This viewer mutates local avatar place, body cost, sensory, route history, replay, and save/restore state. It is not a complete 3D world or consciousness claim.</div>
+    </header>
+
+    <section class="grid">
+      <article class="card map-card">
+        <div class="map-head">
+          <span class="kicker">Settlement graph</span>
+          <span class="metric-pill">Readiness <strong id="readiness">0.000000</strong></span>
+        </div>
+        <svg id="map" viewBox="0 0 900 560" role="img" aria-label="Interactive settlement topology"></svg>
+      </article>
+
+      <aside class="side">
+        <article class="card">
+          <div class="panel-head"><span class="kicker">Avatar state</span><span id="stepPill" class="metric-pill">step 0</span></div>
+          <div class="panel">
+            <h2 id="placeTitle" class="place-title">place</h2>
+            <div id="functions" class="chips"></div>
+            <div class="bars" id="bars"></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="panel-head"><span class="kicker">Route actions</span><span id="routeCount" class="metric-pill">0 routes</span></div>
+          <div class="panel actions" id="actions"></div>
+        </article>
+
+        <article class="card">
+          <div class="panel-head"><span class="kicker">Sensory + replay</span><span id="savePill" class="metric-pill">unsaved</span></div>
+          <div class="panel">
+            <div class="sensory" id="sensory">Move once to sample local sensory state.</div>
+            <div class="chips" style="margin-top:14px">
+              <button class="secondary" id="saveBtn">Save local state</button>
+              <button class="secondary" id="restoreBtn">Restore</button>
+              <button class="secondary" id="resetBtn">Reset</button>
+            </div>
+            <div class="log" id="log"></div>
+          </div>
+        </article>
+      </aside>
+    </section>
+    <p class="footer-note">Data source: deterministic Report 180 artifacts loaded from local JS files. Save/restore uses browser localStorage only.</p>
+  </div>
+
+  <script src="../artifacts/ssrm_3d_browser_playable_avatar_traversal_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_browser_playable_avatar_traversal_bridge_state.js"></script>
+  <script src="../artifacts/ssrm_3d_browser_playable_avatar_traversal_bridge_trace.js"></script>
+  <script>
+    const results = window.SSRM_3D_BROWSER_PLAYABLE_AVATAR_TRAVERSAL_RESULTS;
+    const state = window.SSRM_3D_BROWSER_PLAYABLE_AVATAR_TRAVERSAL_STATE.playable_state;
+    const trace = window.SSRM_3D_BROWSER_PLAYABLE_AVATAR_TRAVERSAL_TRACE;
+    const places = state.places;
+    const routes = state.routes;
+    const storageKey = 'ssrm-report-180-avatar-state';
+    const coords = Object.fromEntries(Object.entries(places).map(([name, place]) => [name, place.coord || [0.5, 0.5]]));
+    let runtime = {
+      place: state.avatar_runtime.entry_place,
+      body: JSON.parse(JSON.stringify(state.avatar_runtime.body_start)),
+      history: [],
+      sensory: null,
+      step: 0,
+      lastRouteHash: null
+    };
+
+    const clamp = (value, low = 0, high = 1) => Math.max(low, Math.min(high, value));
+    const pct = value => `${Math.round(clamp(value) * 100)}%`;
+    const fmt = value => Number(value || 0).toFixed(3);
+    const title = value => String(value || '').replaceAll('_', ' ');
+    const xy = coord => [80 + coord[0] * 740, 56 + coord[1] * 440];
+
+    function routeActions(place) {
+      return routes.filter(r => r.avatar_traversable && (r.from === place || r.to === place)).map(r => ({...r, action_to: r.from === place ? r.to : r.from}));
+    }
+
+    function applyMove(route) {
+      const destination = places[route.action_to];
+      const functions = new Set(destination.functions || []);
+      const hazard = Number(route.hazard || 0);
+      const routeCost = Number(route.route_cost || 0);
+      const refuge = Boolean(destination.safety_refuge);
+      const sheltering = functions.has('shelter') || functions.has('rest');
+      const wetPlace = functions.has('water') || functions.has('hazard') || route.action_to.endsWith('wetland') || route.action_to.endsWith('mire');
+      const effort = clamp(0.10 + routeCost * 0.46 + hazard * 0.34);
+      runtime.body.energy = clamp(runtime.body.energy - (0.035 + routeCost * 0.050 + hazard * 0.030));
+      runtime.body.fatigue = clamp(runtime.body.fatigue + (0.025 + routeCost * 0.045 + hazard * 0.035));
+      runtime.body.comfort = clamp(runtime.body.comfort + (sheltering ? 0.045 : -0.012) + (refuge ? 0.025 : -0.018) - hazard * 0.040);
+      runtime.body.wetness = clamp(runtime.body.wetness + (wetPlace ? 0.045 : -0.022));
+      runtime.body.safety = clamp(runtime.body.safety + (refuge ? 0.050 : -0.020) - hazard * 0.035);
+      runtime.body.breath_rate = clamp(0.24 + effort * 0.46 + runtime.body.fatigue * 0.10);
+      runtime.body.movement_effort = effort;
+      runtime.place = route.action_to;
+      runtime.step += 1;
+      runtime.lastRouteHash = route.route_hash;
+      runtime.sensory = makeSensory(destination, route);
+      runtime.history.push({step: runtime.step, from: route.from, to: route.action_to, kind: route.kind, route_cost: route.route_cost, hazard: route.hazard, frequency_hz: route.frequency_hz, flower_node: route.flower_node});
+      render();
+    }
+
+    function makeSensory(place, route) {
+      const functions = place.functions || [];
+      const visible = functions.slice(0, 4).map(title).join(', ') || 'plain path';
+      const refuge = place.safety_refuge ? 'refuge is available here' : 'no immediate refuge here';
+      return `You arrive at ${title(place.place)} by ${title(route.kind)}. Visible: ${visible}. Hazard ${fmt(route.hazard)}, cost ${fmt(route.route_cost)}, resonance ${fmt(route.frequency_hz)} Hz, flower node ${title(route.flower_node)}. ${refuge}.`;
+    }
+
+    function renderMap() {
+      const map = document.getElementById('map');
+      map.innerHTML = '';
+      for (const route of routes) {
+        const [x1, y1] = xy(coords[route.from]);
+        const [x2, y2] = xy(coords[route.to]);
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', x1); line.setAttribute('y1', y1); line.setAttribute('x2', x2); line.setAttribute('y2', y2);
+        line.setAttribute('class', `route-line ${route.avatar_traversable ? '' : 'blocked'} ${runtime.lastRouteHash === route.route_hash ? 'hot' : ''}`);
+        map.appendChild(line);
+      }
+      for (const [name, place] of Object.entries(places)) {
+        const [x, y] = xy(coords[name]);
+        const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        group.setAttribute('class', 'node');
+        const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        circle.setAttribute('cx', x); circle.setAttribute('cy', y); circle.setAttribute('r', name === runtime.place ? 25 : 18);
+        circle.setAttribute('fill', place.safety_refuge ? 'var(--safe)' : (place.functions || []).includes('hazard') ? 'var(--danger)' : 'var(--clay)');
+        const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        text.setAttribute('x', x + 25); text.setAttribute('y', y + 5); text.textContent = title(name);
+        group.appendChild(circle); group.appendChild(text); map.appendChild(group);
+      }
+      const [ax, ay] = xy(coords[runtime.place]);
+      const avatar = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      avatar.setAttribute('class', 'avatar');
+      avatar.innerHTML = `<circle class="body" cx="${ax}" cy="${ay - 42}" r="18"></circle><circle class="eye" cx="${ax - 6}" cy="${ay - 46}" r="2.8"></circle><circle class="eye" cx="${ax + 6}" cy="${ay - 46}" r="2.8"></circle><path d="M ${ax - 8} ${ay - 36} Q ${ax} ${ay - 30} ${ax + 8} ${ay - 36}" fill="none" stroke="#191712" stroke-width="3" stroke-linecap="round"></path>`;
+      map.appendChild(avatar);
+    }
+
+    function renderBars() {
+      const bars = document.getElementById('bars');
+      bars.innerHTML = '';
+      for (const key of ['energy', 'fatigue', 'comfort', 'wetness', 'safety', 'breath_rate', 'movement_effort']) {
+        const value = runtime.body[key] || 0;
+        const row = document.createElement('div');
+        row.className = 'bar-row';
+        row.innerHTML = `<span>${title(key)}</span><div class="bar"><div class="fill" style="width:${pct(value)}"></div></div><span>${fmt(value)}</span>`;
+        bars.appendChild(row);
+      }
+    }
+
+    function renderActions() {
+      const actions = document.getElementById('actions');
+      const available = routeActions(runtime.place);
+      document.getElementById('routeCount').textContent = `${available.length} routes`;
+      actions.innerHTML = '';
+      for (const route of available) {
+        const button = document.createElement('button');
+        button.innerHTML = `Move to ${title(route.action_to)}<span class="route-meta">${title(route.kind)} / cost ${fmt(route.route_cost)} / hazard ${fmt(route.hazard)} / ${title(route.flower_node)}</span>`;
+        button.addEventListener('click', () => applyMove(route));
+        actions.appendChild(button);
+      }
+    }
+
+    function renderLog() {
+      const log = document.getElementById('log');
+      log.innerHTML = '';
+      for (const item of runtime.history.slice(-6).reverse()) {
+        const div = document.createElement('div');
+        div.className = 'log-item';
+        div.textContent = `#${item.step}: ${title(item.from)} -> ${title(item.to)} by ${title(item.kind)}; cost ${fmt(item.route_cost)}, hazard ${fmt(item.hazard)}.`;
+        log.appendChild(div);
+      }
+    }
+
+    function render() {
+      const place = places[runtime.place];
+      document.getElementById('readiness').textContent = results.verdict.full_browser_playable_traversal_readiness.toFixed(6);
+      document.getElementById('stepPill').textContent = `step ${runtime.step}`;
+      document.getElementById('placeTitle').textContent = title(runtime.place);
+      document.getElementById('functions').innerHTML = (place.functions || []).map(fn => `<span class="chip">${title(fn)}</span>`).join('');
+      document.getElementById('sensory').textContent = runtime.sensory || `Entry at ${title(runtime.place)}. Choose a route to sample embodied traversal.`;
+      renderMap(); renderBars(); renderActions(); renderLog();
+    }
+
+    document.getElementById('saveBtn').addEventListener('click', () => {
+      localStorage.setItem(storageKey, JSON.stringify(runtime));
+      document.getElementById('savePill').textContent = 'saved';
+    });
+    document.getElementById('restoreBtn').addEventListener('click', () => {
+      const raw = localStorage.getItem(storageKey);
+      if (raw) {
+        runtime = JSON.parse(raw);
+        document.getElementById('savePill').textContent = 'restored';
+        render();
+      }
+    });
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      runtime = {place: state.avatar_runtime.entry_place, body: JSON.parse(JSON.stringify(state.avatar_runtime.body_start)), history: [], sensory: null, step: 0, lastRouteHash: null};
+      document.getElementById('savePill').textContent = 'unsaved';
+      render();
+    });
+
+    render();
+  </script>
+</body>
+</html>

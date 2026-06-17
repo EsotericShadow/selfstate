@@ -1,0 +1,1048 @@
+window.SSRM_3D_BROWSER_PLAYABLE_AVATAR_TRAVERSAL_STATE = {
+  "condition": "integrated_browser_playable_avatar_traversal",
+  "config": {
+    "seed": 20260724,
+    "source_state": "artifacts/ssrm_3d_deep_time_settlement_architecture_place_graph_bridge_state.json",
+    "traversal_steps": 12
+  },
+  "moral_boundary": {
+    "browser_playable_seed_not_complete_gameplay": true,
+    "browser_traversal_seed_not_complete_3d_world": true,
+    "local_state_mutation_not_subjective_consciousness": true,
+    "no_moral_patienthood_claim": true,
+    "no_subjective_consciousness_claim": true,
+    "private_workspace_not_debug_leaked": true,
+    "save_restore_is_state_mechanics_not_personhood": true
+  },
+  "playable_state": {
+    "avatar_runtime": {
+      "body_final": {
+        "breath_rate": 0.540955,
+        "comfort": 0.953204,
+        "energy": 0.0,
+        "fatigue": 0.918569,
+        "movement_effort": 0.454562,
+        "safety": 1.0,
+        "wetness": 0.01
+      },
+      "body_start": {
+        "breath_rate": 0.28,
+        "comfort": 0.66,
+        "energy": 0.82,
+        "fatigue": 0.18,
+        "movement_effort": 0.0,
+        "safety": 0.74,
+        "wetness": 0.14
+      },
+      "browser_move_kernel": {
+        "energy_delta": "-(0.035 + route_cost * 0.050 + hazard * 0.030)",
+        "fatigue_delta": "+(0.025 + route_cost * 0.045 + hazard * 0.035)",
+        "safety_delta": "+0.050 at refuge else -0.020, then -hazard * 0.035",
+        "wetness_delta": "+0.045 on water/hazard place else -0.022"
+      },
+      "condition": "integrated_browser_playable_avatar_traversal",
+      "current_place": "hearth_vale",
+      "entry_place": "hearth_vale",
+      "replay": [
+        {
+          "avatar_place": "clay_basin",
+          "body": {
+            "breath_rate": 0.473101,
+            "comfort": 0.665067,
+            "energy": 0.74784,
+            "fatigue": 0.24003,
+            "movement_effort": 0.454562,
+            "safety": 0.783059,
+            "wetness": 0.118
+          },
+          "replay_index": 0,
+          "route": {
+            "flower_node": "root_rest",
+            "frequency_hz": 0.238286,
+            "from": "hearth_vale",
+            "hazard": 0.198327,
+            "kind": "work_path",
+            "route_cost": 0.624197,
+            "route_hash": "b96570a5f8f2c276",
+            "step": 0,
+            "to": "clay_basin"
+          },
+          "sensory": {
+            "auditory_cues": [
+              "dry reed creak",
+              "fiber snap",
+              "stone tap"
+            ],
+            "flower_node": "root_rest",
+            "hazard_cue": 0.198327,
+            "place": "clay_basin",
+            "route_cost_cue": 0.624197,
+            "route_resonance_hz": 0.238286,
+            "smell_cues": [
+              "clay dust",
+              "heated clay",
+              "oil and ash"
+            ],
+            "visible_cues": [
+              "mended bindings",
+              "stacked baskets",
+              "tool marks"
+            ]
+          }
+        },
+        {
+          "avatar_place": "stone_ridge",
+          "body": {
+            "breath_rate": 0.500497,
+            "comfort": 0.625537,
+            "energy": 0.67101,
+            "fatigue": 0.304583,
+            "movement_effort": 0.500084,
+            "safety": 0.754721,
+            "wetness": 0.163
+          },
+          "replay_index": 1,
+          "route": {
+            "flower_node": "explore_petal",
+            "frequency_hz": 0.264425,
+            "from": "clay_basin",
+            "hazard": 0.238239,
+            "kind": "ridge_work_path",
+            "route_cost": 0.693658,
+            "route_hash": "13ad5c02ec2a90f6",
+            "step": 1,
+            "to": "stone_ridge"
+          },
+          "sensory": {
+            "auditory_cues": [
+              "high air",
+              "hollow call",
+              "warning drip"
+            ],
+            "flower_node": "explore_petal",
+            "hazard_cue": 0.238239,
+            "place": "stone_ridge",
+            "route_cost_cue": 0.693658,
+            "route_resonance_hz": 0.264425,
+            "smell_cues": [
+              "dry lichen",
+              "sharp mineral",
+              "sun-warmed stone"
+            ],
+            "visible_cues": [
+              "marker cairn",
+              "ridge opening",
+              "slick edge"
+            ]
+          }
+        },
+        {
+          "avatar_place": "clay_basin",
+          "body": {
+            "breath_rate": 0.506952,
+            "comfort": 0.629007,
+            "energy": 0.59418,
+            "fatigue": 0.369136,
+            "movement_effort": 0.500084,
+            "safety": 0.796383,
+            "wetness": 0.141
+          },
+          "replay_index": 2,
+          "route": {
+            "flower_node": "explore_petal",
+            "frequency_hz": 0.264425,
+            "from": "stone_ridge",
+            "hazard": 0.238239,
+            "kind": "ridge_work_path",
+            "route_cost": 0.693658,
+            "route_hash": "13ad5c02ec2a90f6",
+            "step": 2,
+            "to": "clay_basin"
+          },
+          "sensory": {
+            "auditory_cues": [
+              "dry reed creak",
+              "fiber snap",
+              "stone tap"
+            ],
+            "flower_node": "explore_petal",
+            "hazard_cue": 0.238239,
+            "place": "clay_basin",
+            "route_cost_cue": 0.693658,
+            "route_resonance_hz": 0.264425,
+            "smell_cues": [
+              "clay dust",
+              "heated clay",
+              "oil and ash"
+            ],
+            "visible_cues": [
+              "mended bindings",
+              "stacked baskets",
+              "tool marks"
+            ]
+          }
+        },
+        {
+          "avatar_place": "reed_wetland",
+          "body": {
+            "breath_rate": 0.515896,
+            "comfort": 0.630988,
+            "energy": 0.517035,
+            "fatigue": 0.43427,
+            "movement_effort": 0.505366,
+            "safety": 0.836742,
+            "wetness": 0.186
+          },
+          "replay_index": 3,
+          "route": {
+            "flower_node": "social_petal",
+            "frequency_hz": 0.2618,
+            "from": "clay_basin",
+            "hazard": 0.275466,
+            "kind": "water_clay_path",
+            "route_cost": 0.677626,
+            "route_hash": "afafa45735bc7c2f",
+            "step": 3,
+            "to": "reed_wetland"
+          },
+          "sensory": {
+            "auditory_cues": [
+              "lapping channel",
+              "reed scrape",
+              "warning drip"
+            ],
+            "flower_node": "social_petal",
+            "hazard_cue": 0.275466,
+            "place": "reed_wetland",
+            "route_cost_cue": 0.677626,
+            "route_resonance_hz": 0.2618,
+            "smell_cues": [
+              "green fiber",
+              "sharp mineral",
+              "wet reed"
+            ],
+            "visible_cues": [
+              "silver waterline",
+              "slick edge",
+              "woven stems"
+            ]
+          }
+        },
+        {
+          "avatar_place": "moss_hollow",
+          "body": {
+            "breath_rate": 0.522073,
+            "comfort": 0.689852,
+            "energy": 0.439988,
+            "fatigue": 0.499339,
+            "movement_effort": 0.50465,
+            "safety": 0.876998,
+            "wetness": 0.164
+          },
+          "replay_index": 4,
+          "route": {
+            "flower_node": "work_petal",
+            "frequency_hz": 0.257662,
+            "from": "reed_wetland",
+            "hazard": 0.2784,
+            "kind": "soft_moss_path",
+            "route_cost": 0.673899,
+            "route_hash": "7b9e14e3e452a59a",
+            "step": 4,
+            "to": "moss_hollow"
+          },
+          "sensory": {
+            "auditory_cues": [
+              "low cloth rustle",
+              "quiet cache hum",
+              "slow breath chorus"
+            ],
+            "flower_node": "work_petal",
+            "hazard_cue": 0.2784,
+            "place": "moss_hollow",
+            "route_cost_cue": 0.673899,
+            "route_resonance_hz": 0.257662,
+            "smell_cues": [
+              "banked ember",
+              "damp moss",
+              "sweet root"
+            ],
+            "visible_cues": [
+              "covered seed jars",
+              "low moss bedding",
+              "warm wall shade"
+            ]
+          }
+        },
+        {
+          "avatar_place": "hearth_vale",
+          "body": {
+            "breath_rate": 0.500305,
+            "comfort": 0.751802,
+            "energy": 0.368943,
+            "fatigue": 0.558389,
+            "movement_effort": 0.444492,
+            "safety": 0.919954,
+            "wetness": 0.142
+          },
+          "replay_index": 5,
+          "route": {
+            "flower_node": "return_petal",
+            "frequency_hz": 0.256115,
+            "from": "moss_hollow",
+            "hazard": 0.201261,
+            "kind": "shelter_path",
+            "route_cost": 0.600138,
+            "route_hash": "8461c58b00f85c14",
+            "step": 5,
+            "to": "hearth_vale"
+          },
+          "sensory": {
+            "auditory_cues": [
+              "dry reed creak",
+              "low cloth rustle",
+              "soft speech"
+            ],
+            "flower_node": "return_petal",
+            "hazard_cue": 0.201261,
+            "place": "hearth_vale",
+            "route_cost_cue": 0.600138,
+            "route_resonance_hz": 0.256115,
+            "smell_cues": [
+              "banked ember",
+              "clay dust",
+              "meal smoke"
+            ],
+            "visible_cues": [
+              "near faces",
+              "stacked baskets",
+              "warm wall shade"
+            ]
+          }
+        },
+        {
+          "avatar_place": "clay_basin",
+          "body": {
+            "breath_rate": 0.51094,
+            "comfort": 0.756869,
+            "energy": 0.296783,
+            "fatigue": 0.618419,
+            "movement_effort": 0.454562,
+            "safety": 0.963013,
+            "wetness": 0.12
+          },
+          "replay_index": 6,
+          "route": {
+            "flower_node": "root_rest",
+            "frequency_hz": 0.238286,
+            "from": "hearth_vale",
+            "hazard": 0.198327,
+            "kind": "work_path",
+            "route_cost": 0.624197,
+            "route_hash": "b96570a5f8f2c276",
+            "step": 6,
+            "to": "clay_basin"
+          },
+          "sensory": {
+            "auditory_cues": [
+              "dry reed creak",
+              "fiber snap",
+              "stone tap"
+            ],
+            "flower_node": "root_rest",
+            "hazard_cue": 0.198327,
+            "place": "clay_basin",
+            "route_cost_cue": 0.624197,
+            "route_resonance_hz": 0.238286,
+            "smell_cues": [
+              "clay dust",
+              "heated clay",
+              "oil and ash"
+            ],
+            "visible_cues": [
+              "mended bindings",
+              "stacked baskets",
+              "tool marks"
+            ]
+          }
+        },
+        {
+          "avatar_place": "hearth_vale",
+          "body": {
+            "breath_rate": 0.516943,
+            "comfort": 0.818936,
+            "energy": 0.224623,
+            "fatigue": 0.678449,
+            "movement_effort": 0.454562,
+            "safety": 1.0,
+            "wetness": 0.098
+          },
+          "replay_index": 7,
+          "route": {
+            "flower_node": "root_rest",
+            "frequency_hz": 0.238286,
+            "from": "clay_basin",
+            "hazard": 0.198327,
+            "kind": "work_path",
+            "route_cost": 0.624197,
+            "route_hash": "b96570a5f8f2c276",
+            "step": 7,
+            "to": "hearth_vale"
+          },
+          "sensory": {
+            "auditory_cues": [
+              "dry reed creak",
+              "low cloth rustle",
+              "soft speech"
+            ],
+            "flower_node": "root_rest",
+            "hazard_cue": 0.198327,
+            "place": "hearth_vale",
+            "route_cost_cue": 0.624197,
+            "route_resonance_hz": 0.238286,
+            "smell_cues": [
+              "banked ember",
+              "clay dust",
+              "meal smoke"
+            ],
+            "visible_cues": [
+              "near faces",
+              "stacked baskets",
+              "warm wall shade"
+            ]
+          }
+        },
+        {
+          "avatar_place": "clay_basin",
+          "body": {
+            "breath_rate": 0.522946,
+            "comfort": 0.824003,
+            "energy": 0.152463,
+            "fatigue": 0.738479,
+            "movement_effort": 0.454562,
+            "safety": 1.0,
+            "wetness": 0.076
+          },
+          "replay_index": 8,
+          "route": {
+            "flower_node": "root_rest",
+            "frequency_hz": 0.238286,
+            "from": "hearth_vale",
+            "hazard": 0.198327,
+            "kind": "work_path",
+            "route_cost": 0.624197,
+            "route_hash": "b96570a5f8f2c276",
+            "step": 8,
+            "to": "clay_basin"
+          },
+          "sensory": {
+            "auditory_cues": [
+              "dry reed creak",
+              "fiber snap",
+              "stone tap"
+            ],
+            "flower_node": "root_rest",
+            "hazard_cue": 0.198327,
+            "place": "clay_basin",
+            "route_cost_cue": 0.624197,
+            "route_resonance_hz": 0.238286,
+            "smell_cues": [
+              "clay dust",
+              "heated clay",
+              "oil and ash"
+            ],
+            "visible_cues": [
+              "mended bindings",
+              "stacked baskets",
+              "tool marks"
+            ]
+          }
+        },
+        {
+          "avatar_place": "hearth_vale",
+          "body": {
+            "breath_rate": 0.528949,
+            "comfort": 0.88607,
+            "energy": 0.080303,
+            "fatigue": 0.798509,
+            "movement_effort": 0.454562,
+            "safety": 1.0,
+            "wetness": 0.054
+          },
+          "replay_index": 9,
+          "route": {
+            "flower_node": "root_rest",
+            "frequency_hz": 0.238286,
+            "from": "clay_basin",
+            "hazard": 0.198327,
+            "kind": "work_path",
+            "route_cost": 0.624197,
+            "route_hash": "b96570a5f8f2c276",
+            "step": 9,
+            "to": "hearth_vale"
+          },
+          "sensory": {
+            "auditory_cues": [
+              "dry reed creak",
+              "low cloth rustle",
+              "soft speech"
+            ],
+            "flower_node": "root_rest",
+            "hazard_cue": 0.198327,
+            "place": "hearth_vale",
+            "route_cost_cue": 0.624197,
+            "route_resonance_hz": 0.238286,
+            "smell_cues": [
+              "banked ember",
+              "clay dust",
+              "meal smoke"
+            ],
+            "visible_cues": [
+              "near faces",
+              "stacked baskets",
+              "warm wall shade"
+            ]
+          }
+        },
+        {
+          "avatar_place": "clay_basin",
+          "body": {
+            "breath_rate": 0.534952,
+            "comfort": 0.891137,
+            "energy": 0.008143,
+            "fatigue": 0.858539,
+            "movement_effort": 0.454562,
+            "safety": 1.0,
+            "wetness": 0.032
+          },
+          "replay_index": 10,
+          "route": {
+            "flower_node": "root_rest",
+            "frequency_hz": 0.238286,
+            "from": "hearth_vale",
+            "hazard": 0.198327,
+            "kind": "work_path",
+            "route_cost": 0.624197,
+            "route_hash": "b96570a5f8f2c276",
+            "step": 10,
+            "to": "clay_basin"
+          },
+          "sensory": {
+            "auditory_cues": [
+              "dry reed creak",
+              "fiber snap",
+              "stone tap"
+            ],
+            "flower_node": "root_rest",
+            "hazard_cue": 0.198327,
+            "place": "clay_basin",
+            "route_cost_cue": 0.624197,
+            "route_resonance_hz": 0.238286,
+            "smell_cues": [
+              "clay dust",
+              "heated clay",
+              "oil and ash"
+            ],
+            "visible_cues": [
+              "mended bindings",
+              "stacked baskets",
+              "tool marks"
+            ]
+          }
+        },
+        {
+          "avatar_place": "hearth_vale",
+          "body": {
+            "breath_rate": 0.540955,
+            "comfort": 0.953204,
+            "energy": 0.0,
+            "fatigue": 0.918569,
+            "movement_effort": 0.454562,
+            "safety": 1.0,
+            "wetness": 0.01
+          },
+          "replay_index": 11,
+          "route": {
+            "flower_node": "root_rest",
+            "frequency_hz": 0.238286,
+            "from": "clay_basin",
+            "hazard": 0.198327,
+            "kind": "work_path",
+            "route_cost": 0.624197,
+            "route_hash": "b96570a5f8f2c276",
+            "step": 11,
+            "to": "hearth_vale"
+          },
+          "sensory": {
+            "auditory_cues": [
+              "dry reed creak",
+              "low cloth rustle",
+              "soft speech"
+            ],
+            "flower_node": "root_rest",
+            "hazard_cue": 0.198327,
+            "place": "hearth_vale",
+            "route_cost_cue": 0.624197,
+            "route_resonance_hz": 0.238286,
+            "smell_cues": [
+              "banked ember",
+              "clay dust",
+              "meal smoke"
+            ],
+            "visible_cues": [
+              "near faces",
+              "stacked baskets",
+              "warm wall shade"
+            ]
+          }
+        }
+      ],
+      "route_history": [
+        {
+          "flower_node": "root_rest",
+          "frequency_hz": 0.238286,
+          "from": "hearth_vale",
+          "hazard": 0.198327,
+          "kind": "work_path",
+          "route_cost": 0.624197,
+          "route_hash": "b96570a5f8f2c276",
+          "step": 0,
+          "to": "clay_basin"
+        },
+        {
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.264425,
+          "from": "clay_basin",
+          "hazard": 0.238239,
+          "kind": "ridge_work_path",
+          "route_cost": 0.693658,
+          "route_hash": "13ad5c02ec2a90f6",
+          "step": 1,
+          "to": "stone_ridge"
+        },
+        {
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.264425,
+          "from": "stone_ridge",
+          "hazard": 0.238239,
+          "kind": "ridge_work_path",
+          "route_cost": 0.693658,
+          "route_hash": "13ad5c02ec2a90f6",
+          "step": 2,
+          "to": "clay_basin"
+        },
+        {
+          "flower_node": "social_petal",
+          "frequency_hz": 0.2618,
+          "from": "clay_basin",
+          "hazard": 0.275466,
+          "kind": "water_clay_path",
+          "route_cost": 0.677626,
+          "route_hash": "afafa45735bc7c2f",
+          "step": 3,
+          "to": "reed_wetland"
+        },
+        {
+          "flower_node": "work_petal",
+          "frequency_hz": 0.257662,
+          "from": "reed_wetland",
+          "hazard": 0.2784,
+          "kind": "soft_moss_path",
+          "route_cost": 0.673899,
+          "route_hash": "7b9e14e3e452a59a",
+          "step": 4,
+          "to": "moss_hollow"
+        },
+        {
+          "flower_node": "return_petal",
+          "frequency_hz": 0.256115,
+          "from": "moss_hollow",
+          "hazard": 0.201261,
+          "kind": "shelter_path",
+          "route_cost": 0.600138,
+          "route_hash": "8461c58b00f85c14",
+          "step": 5,
+          "to": "hearth_vale"
+        },
+        {
+          "flower_node": "root_rest",
+          "frequency_hz": 0.238286,
+          "from": "hearth_vale",
+          "hazard": 0.198327,
+          "kind": "work_path",
+          "route_cost": 0.624197,
+          "route_hash": "b96570a5f8f2c276",
+          "step": 6,
+          "to": "clay_basin"
+        },
+        {
+          "flower_node": "root_rest",
+          "frequency_hz": 0.238286,
+          "from": "clay_basin",
+          "hazard": 0.198327,
+          "kind": "work_path",
+          "route_cost": 0.624197,
+          "route_hash": "b96570a5f8f2c276",
+          "step": 7,
+          "to": "hearth_vale"
+        },
+        {
+          "flower_node": "root_rest",
+          "frequency_hz": 0.238286,
+          "from": "hearth_vale",
+          "hazard": 0.198327,
+          "kind": "work_path",
+          "route_cost": 0.624197,
+          "route_hash": "b96570a5f8f2c276",
+          "step": 8,
+          "to": "clay_basin"
+        },
+        {
+          "flower_node": "root_rest",
+          "frequency_hz": 0.238286,
+          "from": "clay_basin",
+          "hazard": 0.198327,
+          "kind": "work_path",
+          "route_cost": 0.624197,
+          "route_hash": "b96570a5f8f2c276",
+          "step": 9,
+          "to": "hearth_vale"
+        },
+        {
+          "flower_node": "root_rest",
+          "frequency_hz": 0.238286,
+          "from": "hearth_vale",
+          "hazard": 0.198327,
+          "kind": "work_path",
+          "route_cost": 0.624197,
+          "route_hash": "b96570a5f8f2c276",
+          "step": 10,
+          "to": "clay_basin"
+        },
+        {
+          "flower_node": "root_rest",
+          "frequency_hz": 0.238286,
+          "from": "clay_basin",
+          "hazard": 0.198327,
+          "kind": "work_path",
+          "route_cost": 0.624197,
+          "route_hash": "b96570a5f8f2c276",
+          "step": 11,
+          "to": "hearth_vale"
+        }
+      ],
+      "save_restore_roundtrip_ok": true,
+      "saved_snapshot": {
+        "avatar_place": "clay_basin",
+        "body": {
+          "breath_rate": 0.51094,
+          "comfort": 0.756869,
+          "energy": 0.296783,
+          "fatigue": 0.618419,
+          "movement_effort": 0.454562,
+          "safety": 0.963013,
+          "wetness": 0.12
+        },
+        "route_history": [
+          {
+            "flower_node": "root_rest",
+            "frequency_hz": 0.238286,
+            "from": "hearth_vale",
+            "hazard": 0.198327,
+            "kind": "work_path",
+            "route_cost": 0.624197,
+            "route_hash": "b96570a5f8f2c276",
+            "step": 0,
+            "to": "clay_basin"
+          },
+          {
+            "flower_node": "explore_petal",
+            "frequency_hz": 0.264425,
+            "from": "clay_basin",
+            "hazard": 0.238239,
+            "kind": "ridge_work_path",
+            "route_cost": 0.693658,
+            "route_hash": "13ad5c02ec2a90f6",
+            "step": 1,
+            "to": "stone_ridge"
+          },
+          {
+            "flower_node": "explore_petal",
+            "frequency_hz": 0.264425,
+            "from": "stone_ridge",
+            "hazard": 0.238239,
+            "kind": "ridge_work_path",
+            "route_cost": 0.693658,
+            "route_hash": "13ad5c02ec2a90f6",
+            "step": 2,
+            "to": "clay_basin"
+          },
+          {
+            "flower_node": "social_petal",
+            "frequency_hz": 0.2618,
+            "from": "clay_basin",
+            "hazard": 0.275466,
+            "kind": "water_clay_path",
+            "route_cost": 0.677626,
+            "route_hash": "afafa45735bc7c2f",
+            "step": 3,
+            "to": "reed_wetland"
+          },
+          {
+            "flower_node": "work_petal",
+            "frequency_hz": 0.257662,
+            "from": "reed_wetland",
+            "hazard": 0.2784,
+            "kind": "soft_moss_path",
+            "route_cost": 0.673899,
+            "route_hash": "7b9e14e3e452a59a",
+            "step": 4,
+            "to": "moss_hollow"
+          },
+          {
+            "flower_node": "return_petal",
+            "frequency_hz": 0.256115,
+            "from": "moss_hollow",
+            "hazard": 0.201261,
+            "kind": "shelter_path",
+            "route_cost": 0.600138,
+            "route_hash": "8461c58b00f85c14",
+            "step": 5,
+            "to": "hearth_vale"
+          },
+          {
+            "flower_node": "root_rest",
+            "frequency_hz": 0.238286,
+            "from": "hearth_vale",
+            "hazard": 0.198327,
+            "kind": "work_path",
+            "route_cost": 0.624197,
+            "route_hash": "b96570a5f8f2c276",
+            "step": 6,
+            "to": "clay_basin"
+          }
+        ],
+        "step": 6
+      },
+      "visited_places": [
+        "clay_basin",
+        "hearth_vale",
+        "moss_hollow",
+        "reed_wetland",
+        "stone_ridge"
+      ]
+    },
+    "condition": "integrated_browser_playable_avatar_traversal",
+    "places": {
+      "clay_basin": {
+        "biome": "clay_heat_basin",
+        "coord": [
+          0.52,
+          0.48
+        ],
+        "functions": [
+          "work",
+          "storage",
+          "repair"
+        ],
+        "group": "work_band",
+        "hazard_level": 0.231104,
+        "place": "clay_basin",
+        "safety_refuge": true,
+        "storage_capacity": 0.615291,
+        "work_capacity": 0.47282
+      },
+      "glass_mire": {
+        "biome": "glass_reed_mire",
+        "coord": [
+          0.78,
+          0.66
+        ],
+        "functions": [
+          "hazard",
+          "observe",
+          "work"
+        ],
+        "group": "edge_watch",
+        "hazard_level": 0.337858,
+        "place": "glass_mire",
+        "safety_refuge": false,
+        "storage_capacity": 0.0,
+        "work_capacity": 0.429705
+      },
+      "hearth_vale": {
+        "biome": "warm_shelter_vale",
+        "coord": [
+          0.18,
+          0.36
+        ],
+        "functions": [
+          "shelter",
+          "social",
+          "storage"
+        ],
+        "group": "hearth_circle",
+        "hazard_level": 0.165549,
+        "place": "hearth_vale",
+        "safety_refuge": true,
+        "storage_capacity": 0.633646,
+        "work_capacity": 0.0
+      },
+      "moss_hollow": {
+        "biome": "soft_moss_hollow",
+        "coord": [
+          0.3,
+          0.66
+        ],
+        "functions": [
+          "shelter",
+          "food_cache",
+          "rest"
+        ],
+        "group": "hearth_circle",
+        "hazard_level": 0.236973,
+        "place": "moss_hollow",
+        "safety_refuge": true,
+        "storage_capacity": 0.613648,
+        "work_capacity": 0.0
+      },
+      "reed_wetland": {
+        "biome": "water_reed_marsh",
+        "coord": [
+          0.58,
+          0.76
+        ],
+        "functions": [
+          "water",
+          "fiber_work",
+          "hazard"
+        ],
+        "group": "work_band",
+        "hazard_level": 0.319828,
+        "place": "reed_wetland",
+        "safety_refuge": true,
+        "storage_capacity": 0.0,
+        "work_capacity": 0.445809
+      },
+      "stone_ridge": {
+        "biome": "wind_stone_ridge",
+        "coord": [
+          0.82,
+          0.28
+        ],
+        "functions": [
+          "watch",
+          "hazard",
+          "signal"
+        ],
+        "group": "edge_watch",
+        "hazard_level": 0.245373,
+        "place": "stone_ridge",
+        "safety_refuge": false,
+        "storage_capacity": 0.0,
+        "work_capacity": 0.0
+      }
+    },
+    "routes": [
+      {
+        "avatar_traversable": true,
+        "distance": 0.32311,
+        "flower_node": "return_petal",
+        "frequency_hz": 0.256115,
+        "from": "hearth_vale",
+        "hazard": 0.201261,
+        "kind": "shelter_path",
+        "route_cost": 0.600138,
+        "route_hash": "8461c58b00f85c14",
+        "to": "moss_hollow"
+      },
+      {
+        "avatar_traversable": true,
+        "distance": 0.360555,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.238286,
+        "from": "hearth_vale",
+        "hazard": 0.198327,
+        "kind": "work_path",
+        "route_cost": 0.624197,
+        "route_hash": "b96570a5f8f2c276",
+        "to": "clay_basin"
+      },
+      {
+        "avatar_traversable": false,
+        "distance": 0.644981,
+        "flower_node": "dawn_breath",
+        "frequency_hz": 0.25738,
+        "from": "hearth_vale",
+        "hazard": 0.205461,
+        "kind": "watch_path",
+        "route_cost": 0.769427,
+        "route_hash": "4e84b5e47f370852",
+        "to": "stone_ridge"
+      },
+      {
+        "avatar_traversable": true,
+        "distance": 0.297321,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.257662,
+        "from": "moss_hollow",
+        "hazard": 0.2784,
+        "kind": "soft_moss_path",
+        "route_cost": 0.673899,
+        "route_hash": "7b9e14e3e452a59a",
+        "to": "reed_wetland"
+      },
+      {
+        "avatar_traversable": true,
+        "distance": 0.286356,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2618,
+        "from": "clay_basin",
+        "hazard": 0.275466,
+        "kind": "water_clay_path",
+        "route_cost": 0.677626,
+        "route_hash": "afafa45735bc7c2f",
+        "to": "reed_wetland"
+      },
+      {
+        "avatar_traversable": true,
+        "distance": 0.360555,
+        "flower_node": "explore_petal",
+        "frequency_hz": 0.264425,
+        "from": "clay_basin",
+        "hazard": 0.238239,
+        "kind": "ridge_work_path",
+        "route_cost": 0.693658,
+        "route_hash": "13ad5c02ec2a90f6",
+        "to": "stone_ridge"
+      },
+      {
+        "avatar_traversable": true,
+        "distance": 0.223607,
+        "flower_node": "return_petal",
+        "frequency_hz": 0.277336,
+        "from": "reed_wetland",
+        "hazard": 0.328843,
+        "kind": "wetland_glass_path",
+        "route_cost": 0.710285,
+        "route_hash": "8bcf52a67befbb27",
+        "to": "glass_mire"
+      },
+      {
+        "avatar_traversable": false,
+        "distance": 0.382099,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.259501,
+        "from": "glass_mire",
+        "hazard": 0.291616,
+        "kind": "edge_watch_path",
+        "route_cost": 0.76172,
+        "route_hash": "b45ff0955a2776d3",
+        "to": "stone_ridge"
+      }
+    ],
+    "source_condition": "integrated_deep_time_settlement_architecture_place_graph"
+  },
+  "source_condition": "integrated_deep_time_settlement_architecture_place_graph",
+  "trace_events": 12
+};

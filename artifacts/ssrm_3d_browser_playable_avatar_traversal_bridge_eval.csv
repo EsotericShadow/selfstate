@@ -1,0 +1,13 @@
+condition,place_count,route_count,traversal_events,avatar_entry_binding_rate,reachable_route_action_rate,body_cost_application_rate,sensory_update_rate,hazard_refuge_feedback_rate,route_history_replay_rate,save_restore_state_rate,frequency_feedback_rate,flower_route_binding_rate,local_state_mutation_rate,privacy_preservation_rate,trace_integrity,browser_playable_traversal_readiness
+integrated_browser_playable_avatar_traversal,6,8,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_avatar_entry,6,8,12,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,0.22
+no_route_actions,6,8,12,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,0.31
+no_body_costs,6,8,12,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_sensory_updates,6,8,12,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_hazard_refuge_feedback,6,8,12,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.91
+no_replay_log,6,8,12,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_save_restore,6,8,12,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_frequency_feedback,6,8,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.93
+no_flower_route_binding,6,8,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.94
+no_local_mutation,6,8,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.92
+no_privacy_filter,6,8,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.94

@@ -1,0 +1,169 @@
+episode_id,agent,consequence_type,immediate_response,later_response,allowed_by_sleep,allowed_by_boundary,allowed_by_relationship,consequence_strength
+1,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,0.92
+2,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+3,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,0.92
+4,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,0.92
+5,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,0.92
+6,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+7,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,0.92
+8,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,0.92
+9,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,0.92
+10,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+11,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+12,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,0.92
+13,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+14,Fay,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+15,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+16,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,0.92
+17,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+18,Fay,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+19,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+20,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,0.92
+21,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+22,Fay,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+23,Milo,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+24,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,0.92
+25,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+26,Fay,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+27,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+28,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,0.92
+29,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+30,Fay,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+31,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+32,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+33,Ari,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+34,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+35,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+36,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+37,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+38,Fay,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+39,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+40,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+41,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+42,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+43,Milo,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+44,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+45,Ari,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+46,Fay,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+47,Milo,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+48,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+49,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+50,Fay,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+51,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+52,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+53,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+54,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+55,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+56,Sol,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+57,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+58,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+59,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+60,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+61,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+62,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+63,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+64,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+65,Ari,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+66,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+67,Milo,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+68,Sol,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+69,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+70,Fay,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+71,Milo,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+72,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+73,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+74,Fay,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+75,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+76,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+77,Ari,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+78,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+79,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+80,Sol,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+81,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+82,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+83,Milo,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+84,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+85,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+86,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+87,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+88,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+89,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+90,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+91,Milo,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+92,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+93,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+94,Fay,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+95,Milo,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+96,Sol,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+97,Ari,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+98,Fay,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+99,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+100,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+101,Ari,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+102,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+103,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+104,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+105,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+106,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+107,Milo,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+108,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+109,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+110,Fay,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+111,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+112,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+113,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+114,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+115,Milo,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+116,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+117,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+118,Fay,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+119,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+120,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+121,Ari,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+122,Fay,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+123,Milo,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+124,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+125,Ari,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+126,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+127,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+128,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+129,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+130,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+131,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+132,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+133,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+134,Fay,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+135,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+136,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+137,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+138,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+139,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+140,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+141,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+142,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+143,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+144,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+145,Ari,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+146,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+147,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+148,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+149,Ari,language_teaching_entry,teaches a local word variant,uses drifted token in later greeting,True,True,True,1.0
+150,Fay,sleep_blocked_entry,I need sleep before that. Ask after recovery.,returns after rest if trust holds,False,True,True,0.78
+151,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+152,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+153,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+154,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+155,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+156,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+157,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+158,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+159,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+160,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+161,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+162,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+163,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+164,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+165,Ari,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+166,Fay,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+167,Milo,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0
+168,Sol,routine_respecting_entry,accepts avatar inside current routine,routine adapts slightly next week,True,True,True,1.0

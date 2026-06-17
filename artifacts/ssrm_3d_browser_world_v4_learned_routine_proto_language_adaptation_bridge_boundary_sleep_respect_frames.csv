@@ -1,0 +1,169 @@
+episode_id,agent,request_allowed,sleep_respected,boundary_respected,refusal_needed,refusal_text,recovery_offer,welfare_guardrail
+1,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+2,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+3,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+4,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+5,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+6,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+7,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+8,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+9,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+10,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+11,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+12,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+13,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+14,Fay,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+15,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+16,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+17,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+18,Fay,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+19,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+20,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+21,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+22,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+23,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+24,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+25,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+26,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+27,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+28,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+29,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+30,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+31,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+32,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+33,Ari,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+34,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+35,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+36,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+37,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+38,Fay,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+39,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+40,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+41,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+42,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+43,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+44,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+45,Ari,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+46,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+47,Milo,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+48,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+49,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+50,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+51,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+52,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+53,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+54,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+55,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+56,Sol,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+57,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+58,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+59,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+60,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+61,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+62,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+63,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+64,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+65,Ari,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+66,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+67,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+68,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+69,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+70,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+71,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+72,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+73,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+74,Fay,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+75,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+76,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+77,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+78,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+79,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+80,Sol,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+81,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+82,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+83,Milo,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+84,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+85,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+86,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+87,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+88,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+89,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+90,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+91,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+92,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+93,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+94,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+95,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+96,Sol,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+97,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+98,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+99,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+100,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+101,Ari,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+102,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+103,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+104,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+105,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+106,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+107,Milo,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+108,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+109,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+110,Fay,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+111,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+112,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+113,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+114,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+115,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+116,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+117,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+118,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+119,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+120,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+121,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+122,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+123,Milo,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+124,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+125,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+126,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+127,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+128,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+129,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+130,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+131,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+132,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+133,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+134,Fay,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+135,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+136,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+137,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+138,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+139,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+140,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+141,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+142,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+143,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+144,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+145,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+146,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+147,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+148,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+149,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+150,Fay,False,False,True,True,I need sleep before that. Ask after recovery.,sleep first,sleep_and_boundary_constraints_precede_avatar_request
+151,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+152,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+153,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+154,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+155,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+156,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+157,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+158,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+159,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+160,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+161,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+162,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+163,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+164,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+165,Ari,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+166,Fay,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+167,Milo,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request
+168,Sol,True,True,True,False,,ordinary cooperation,sleep_and_boundary_constraints_precede_avatar_request

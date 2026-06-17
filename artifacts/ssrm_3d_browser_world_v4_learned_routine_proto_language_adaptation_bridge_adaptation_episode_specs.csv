@@ -1,0 +1,169 @@
+episode_id,week,day,agent,interaction_kind,avatar_action,base_token,sleep_debt,boundary_pressure,relationship_trust_before,relationship_respect_before,vibration_hz,flower_phase_deg
+1,1,1,Ari,ask_repair,avatar asks for route repair,tek,0.4024,0.3992,0.55,0.58,2.202017,210.507764
+2,1,1,Fay,interrupt_sleep,avatar requests action during rest,sova,0.5824,0.6588,0.64,0.58,2.537714,354.015528
+3,1,1,Milo,join_ritual,avatar joins ritual softly,ori,0.2224,0.2132,0.59,0.58,2.819618,136.523292
+4,1,1,Sol,repeat_pressure,avatar repeats request too soon,vonn,0.4724,0.6864,0.5,0.58,2.168519,260.631056
+5,1,2,Ari,interrupt_sleep,avatar requests action during rest,sova,0.797776,0.6792,0.55,0.58,2.309678,40.53882
+6,1,2,Fay,join_ritual,avatar joins ritual softly,ori,0.570976,0.1988,0.6,0.55,2.618251,184.046584
+7,1,2,Milo,repeat_pressure,avatar repeats request too soon,vonn,0.554576,0.6732,0.612,0.594,2.872129,326.554348
+8,1,2,Sol,trade_fairly,avatar trades at market value,melo,0.669576,0.2264,0.46,0.55,2.207448,90.662112
+9,1,3,Ari,join_ritual,avatar joins ritual softly,ori,0.510354,0.2192,0.51,0.55,2.318429,230.569876
+10,1,3,Fay,repeat_pressure,avatar repeats request too soon,vonn,0.592522,0.6588,0.622,0.564,2.621278,14.07764
+11,1,3,Milo,trade_fairly,avatar trades at market value,melo,0.510386,0.2132,0.572,0.564,2.842195,156.585404
+12,1,3,Sol,offer_warmth,avatar opens warm dry place,lum,0.415486,0.2264,0.482,0.564,2.154475,280.693168
+13,1,4,Ari,repeat_pressure,avatar repeats request too soon,vonn,0.657662,0.6792,0.532,0.564,2.261016,60.600932
+14,1,4,Fay,trade_fairly,avatar trades at market value,melo,0.648466,0.1988,0.582,0.534,2.530942,204.108696
+15,1,4,Milo,offer_warmth,avatar opens warm dry place,lum,0.407686,0.2132,0.594,0.578,2.746736,346.61646
+16,1,4,Sol,wait_respectfully,avatar waits until routine ends,nari,0.33746,0.0464,0.504,0.578,2.055907,110.724224
+17,1,5,Ari,trade_fairly,avatar trades at market value,melo,0.80667,0.2192,0.492,0.534,2.136195,250.631988
+18,1,5,Fay,offer_warmth,avatar opens warm dry place,lum,0.619865,0.1988,0.604,0.548,2.411516,34.139752
+19,1,5,Milo,wait_respectfully,avatar waits until routine ends,nari,0.441688,0.0332,0.616,0.592,2.646173,176.647516
+20,1,5,Sol,offer_help,avatar helps without taking ownership,keth,0.56972,0.0464,0.526,0.616,1.94886,300.75528
+21,1,6,Ari,offer_warmth,avatar opens warm dry place,lum,0.516936,0.2192,0.514,0.548,2.044726,80.663044
+22,1,6,Fay,wait_respectfully,avatar waits until routine ends,nari,0.3787,0.0188,0.626,0.562,2.329501,224.170808
+23,1,6,Milo,offer_help,avatar helps without taking ownership,keth,0.426849,0.0332,0.638,0.63,2.589015,6.678572
+24,1,6,Sol,ask_repair,avatar asks for route repair,tek,0.521593,0.4064,0.548,0.63,1.915999,130.786336
+25,1,7,Ari,wait_respectfully,avatar waits until routine ends,nari,0.412532,0.0392,0.536,0.562,2.030595,270.6941
+26,1,7,Fay,offer_help,avatar helps without taking ownership,keth,0.490238,0.0188,0.648,0.6,2.347701,54.201864
+27,1,7,Milo,ask_repair,avatar asks for route repair,tek,0.525868,0.3932,0.66,0.644,2.61922,196.709628
+28,1,7,Sol,interrupt_sleep,avatar requests action during rest,sova,0.775979,0.6864,0.548,0.63,1.955611,320.817392
+29,2,1,Ari,interrupt_sleep,avatar requests action during rest,sova,0.695274,0.6792,0.558,0.6,2.199662,131.725156
+30,2,1,Fay,join_ritual,avatar joins ritual softly,ori,0.392776,0.1988,0.67,0.614,2.509457,275.23292
+31,2,1,Milo,repeat_pressure,avatar repeats request too soon,vonn,0.669142,0.6732,0.66,0.644,2.800403,57.740684
+32,2,1,Sol,trade_fairly,avatar trades at market value,melo,0.784224,0.2264,0.508,0.6,2.157005,181.848448
+33,2,2,Ari,join_ritual,avatar joins ritual softly,ori,0.654503,0.2192,0.518,0.57,2.310193,321.756212
+34,2,2,Fay,repeat_pressure,avatar repeats request too soon,vonn,0.680654,0.6588,0.692,0.628,2.629702,105.263976
+35,2,2,Milo,trade_fairly,avatar trades at market value,melo,0.815165,0.2132,0.62,0.614,2.90793,247.77174
+36,2,2,Sol,offer_warmth,avatar opens warm dry place,lum,0.720326,0.2264,0.53,0.614,2.263507,11.879504
+37,2,3,Ari,repeat_pressure,avatar repeats request too soon,vonn,0.654332,0.6792,0.54,0.584,2.403003,151.787268
+38,2,3,Fay,trade_fairly,avatar trades at market value,melo,0.603684,0.1988,0.652,0.598,2.713611,295.295032
+39,2,3,Milo,offer_warmth,avatar opens warm dry place,lum,0.523222,0.2132,0.642,0.628,2.957549,77.802796
+40,2,3,Sol,wait_respectfully,avatar waits until routine ends,nari,0.453041,0.0464,0.552,0.628,2.296076,201.91056
+41,2,4,Ari,trade_fairly,avatar trades at market value,melo,0.694206,0.2192,0.5,0.554,2.410215,341.818324
+42,2,4,Fay,offer_warmth,avatar opens warm dry place,lum,0.476726,0.1988,0.674,0.612,2.680355,125.326088
+43,2,4,Milo,wait_respectfully,avatar waits until routine ends,nari,0.417185,0.0332,0.664,0.642,2.92443,267.833852
+44,2,4,Sol,offer_help,avatar helps without taking ownership,keth,0.545251,0.0464,0.574,0.666,2.21802,31.941616
+45,2,5,Ari,offer_warmth,avatar opens warm dry place,lum,0.653712,0.2192,0.522,0.568,2.321984,171.84938
+46,2,5,Fay,wait_respectfully,avatar waits until routine ends,nari,0.492778,0.0188,0.696,0.626,2.601985,315.357144
+47,2,5,Milo,offer_help,avatar helps without taking ownership,keth,0.628717,0.0332,0.686,0.68,2.807825,97.864908
+48,2,5,Sol,ask_repair,avatar asks for route repair,tek,0.723485,0.4064,0.596,0.68,2.123611,221.972672
+49,2,6,Ari,wait_respectfully,avatar waits until routine ends,nari,0.403747,0.0392,0.544,0.582,2.196492,1.880436
+50,2,6,Fay,offer_help,avatar helps without taking ownership,keth,0.464655,0.0188,0.718,0.664,2.477916,145.3882
+51,2,6,Milo,ask_repair,avatar asks for route repair,tek,0.56525,0.3932,0.708,0.694,2.712733,287.895964
+52,2,6,Sol,interrupt_sleep,avatar requests action during rest,sova,0.815379,0.6864,0.596,0.68,2.023399,52.003728
+53,2,7,Ari,offer_help,avatar helps without taking ownership,keth,0.508773,0.0392,0.566,0.62,2.130416,191.911492
+54,2,7,Fay,ask_repair,avatar asks for route repair,tek,0.553845,0.3788,0.74,0.678,2.410337,335.419256
+55,2,7,Milo,interrupt_sleep,avatar requests action during rest,sova,0.808285,0.6732,0.708,0.694,2.668345,117.92702
+56,2,7,Sol,join_ritual,avatar joins ritual softly,ori,0.633381,0.2264,0.556,0.65,1.983639,242.034784
+57,3,1,Ari,join_ritual,avatar joins ritual softly,ori,0.406492,0.2192,0.588,0.634,2.210942,52.942548
+58,3,1,Fay,repeat_pressure,avatar repeats request too soon,vonn,0.689845,0.6588,0.74,0.678,2.521662,196.450312
+59,3,1,Milo,trade_fairly,avatar trades at market value,melo,0.808131,0.2132,0.668,0.664,2.78223,338.958076
+60,3,1,Sol,offer_warmth,avatar opens warm dry place,lum,0.498702,0.2264,0.578,0.664,2.142965,103.06584
+61,3,2,Ari,repeat_pressure,avatar repeats request too soon,vonn,0.690804,0.6792,0.61,0.648,2.287482,242.973604
+62,3,2,Fay,trade_fairly,avatar trades at market value,melo,0.830486,0.1988,0.7,0.648,2.607449,26.481368
+63,3,2,Milo,offer_warmth,avatar opens warm dry place,lum,0.738017,0.2132,0.69,0.678,2.903857,168.989132
+64,3,2,Sol,wait_respectfully,avatar waits until routine ends,nari,0.509039,0.0464,0.6,0.678,2.255206,293.096896
+65,3,3,Ari,trade_fairly,avatar trades at market value,melo,0.611195,0.2192,0.57,0.618,2.400329,73.00466
+66,3,3,Fay,offer_warmth,avatar opens warm dry place,lum,0.534559,0.1988,0.722,0.662,2.73746,216.512424
+67,3,3,Milo,wait_respectfully,avatar waits until routine ends,nari,0.466133,0.0332,0.712,0.692,3.004502,359.020188
+68,3,3,Sol,offer_help,avatar helps without taking ownership,keth,0.476689,0.0464,0.622,0.716,2.351659,123.127952
+69,3,4,Ari,offer_warmth,avatar opens warm dry place,lum,0.482284,0.2192,0.592,0.632,2.486323,263.035716
+70,3,4,Fay,wait_respectfully,avatar waits until routine ends,nari,0.425574,0.0188,0.744,0.676,2.781465,46.54348
+71,3,4,Milo,offer_help,avatar helps without taking ownership,keth,0.554938,0.0332,0.734,0.73,3.033381,189.051244
+72,3,4,Sol,ask_repair,avatar asks for route repair,tek,0.56275,0.4064,0.644,0.73,2.361388,313.159008
+73,3,5,Ari,wait_respectfully,avatar waits until routine ends,nari,0.49689,0.0392,0.614,0.646,2.479903,93.066772
+74,3,5,Fay,offer_help,avatar helps without taking ownership,keth,0.634925,0.0188,0.766,0.714,2.758494,236.574536
+75,3,5,Milo,ask_repair,avatar asks for route repair,tek,0.730654,0.3932,0.756,0.744,2.985932,19.0823
+76,3,5,Sol,interrupt_sleep,avatar requests action during rest,sova,0.916435,0.6864,0.644,0.73,2.298425,143.190064
+77,3,6,Ari,offer_help,avatar helps without taking ownership,keth,0.467699,0.0392,0.636,0.684,2.393559,283.097828
+78,3,6,Fay,ask_repair,avatar asks for route repair,tek,0.569844,0.3788,0.788,0.728,2.650872,66.605592
+79,3,6,Milo,interrupt_sleep,avatar requests action during rest,sova,0.820684,0.6732,0.756,0.744,2.879588,209.113356
+80,3,6,Sol,join_ritual,avatar joins ritual softly,ori,0.598162,0.2264,0.604,0.7,2.172697,333.22112
+81,3,7,Ari,ask_repair,avatar asks for route repair,tek,0.556097,0.3992,0.658,0.698,2.264077,113.128884
+82,3,7,Fay,interrupt_sleep,avatar requests action during rest,sova,0.811685,0.6588,0.788,0.728,2.540669,256.636648
+83,3,7,Milo,join_ritual,avatar joins ritual softly,ori,0.637306,0.2132,0.716,0.714,2.766594,39.144412
+84,3,7,Sol,repeat_pressure,avatar repeats request too soon,vonn,0.72264,0.6864,0.626,0.714,2.077935,163.252176
+85,4,1,Ari,repeat_pressure,avatar repeats request too soon,vonn,0.691512,0.6792,0.658,0.698,2.276923,334.15994
+86,4,1,Fay,trade_fairly,avatar trades at market value,melo,0.810647,0.1988,0.748,0.698,2.579504,117.667704
+87,4,1,Milo,offer_warmth,avatar opens warm dry place,lum,0.501607,0.2132,0.738,0.728,2.817025,260.175468
+88,4,1,Sol,wait_respectfully,avatar waits until routine ends,nari,0.564753,0.0464,0.586,0.684,2.156529,24.283232
+89,4,2,Ari,trade_fairly,avatar trades at market value,melo,0.831719,0.2192,0.618,0.668,2.288827,164.190996
+90,4,2,Fay,offer_warmth,avatar opens warm dry place,lum,0.739879,0.1988,0.77,0.712,2.601197,307.69876
+91,4,2,Milo,wait_respectfully,avatar waits until routine ends,nari,0.511189,0.0332,0.76,0.742,2.870723,90.206524
+92,4,2,Sol,offer_help,avatar helps without taking ownership,keth,0.737918,0.0464,0.608,0.722,2.237196,214.314288
+93,4,3,Ari,offer_warmth,avatar opens warm dry place,lum,0.535472,0.2192,0.64,0.682,2.384525,354.222052
+94,4,3,Fay,wait_respectfully,avatar waits until routine ends,nari,0.46751,0.0188,0.792,0.726,2.718647,137.729816
+95,4,3,Milo,offer_help,avatar helps without taking ownership,keth,0.47828,0.0332,0.782,0.78,2.99665,280.23758
+96,4,3,Sol,ask_repair,avatar asks for route repair,tek,0.646059,0.4064,0.63,0.736,2.345975,44.345344
+97,4,4,Ari,wait_respectfully,avatar waits until routine ends,nari,0.426249,0.0392,0.662,0.696,2.490382,184.253108
+98,4,4,Fay,offer_help,avatar helps without taking ownership,keth,0.555958,0.0188,0.814,0.764,2.816757,327.760872
+99,4,4,Milo,ask_repair,avatar asks for route repair,tek,0.563927,0.3932,0.804,0.794,3.085639,110.268636
+100,4,4,Sol,interrupt_sleep,avatar requests action during rest,sova,0.868084,0.6864,0.63,0.736,2.437995,234.3764
+101,4,5,Ari,offer_help,avatar helps without taking ownership,keth,0.635424,0.0392,0.684,0.734,2.559021,14.284164
+102,4,5,Fay,ask_repair,avatar asks for route repair,tek,0.731409,0.3788,0.836,0.778,2.87829,157.791928
+103,4,5,Milo,interrupt_sleep,avatar requests action during rest,sova,0.917306,0.6732,0.804,0.794,3.114249,300.299692
+104,4,5,Sol,join_ritual,avatar joins ritual softly,ori,0.782382,0.2264,0.59,0.706,2.446502,64.407456
+105,4,6,Ari,ask_repair,avatar asks for route repair,tek,0.570214,0.3992,0.706,0.748,2.53788,204.31522
+106,4,6,Fay,interrupt_sleep,avatar requests action during rest,sova,0.821242,0.6588,0.836,0.778,2.820553,347.822984
+107,4,6,Milo,join_ritual,avatar joins ritual softly,ori,0.598806,0.2132,0.764,0.764,3.051599,130.330748
+108,4,6,Sol,repeat_pressure,avatar repeats request too soon,vonn,0.748963,0.6864,0.612,0.72,2.350624,254.438512
+109,4,7,Ari,interrupt_sleep,avatar requests action during rest,sova,0.811958,0.6792,0.706,0.748,2.449718,34.346276
+110,4,7,Fay,join_ritual,avatar joins ritual softly,ori,0.637719,0.1988,0.796,0.748,2.715896,177.85404
+111,4,7,Milo,repeat_pressure,avatar repeats request too soon,vonn,0.723117,0.6732,0.786,0.778,2.939399,320.361804
+112,4,7,Sol,trade_fairly,avatar trades at market value,melo,0.764232,0.2264,0.572,0.69,2.249261,84.469568
+113,5,1,Ari,trade_fairly,avatar trades at market value,melo,0.810849,0.2192,0.666,0.718,2.408599,255.377332
+114,5,1,Fay,offer_warmth,avatar opens warm dry place,lum,0.501912,0.1988,0.818,0.762,2.684812,38.885096
+115,5,1,Milo,wait_respectfully,avatar waits until routine ends,nari,0.565106,0.0332,0.746,0.748,2.914584,181.39286
+116,5,1,Sol,offer_help,avatar helps without taking ownership,keth,0.775532,0.0464,0.594,0.704,2.23399,305.500624
+117,5,2,Ari,offer_warmth,avatar opens warm dry place,lum,0.740028,0.2192,0.688,0.732,2.351809,85.408388
+118,5,2,Fay,wait_respectfully,avatar waits until routine ends,nari,0.511415,0.0188,0.84,0.776,2.647748,228.916152
+119,5,2,Milo,offer_help,avatar helps without taking ownership,keth,0.738179,0.0332,0.768,0.786,2.907568,11.423916
+120,5,2,Sol,ask_repair,avatar asks for route repair,tek,0.893894,0.4064,0.616,0.718,2.250901,135.53168
+121,5,3,Ari,wait_respectfully,avatar waits until routine ends,nari,0.467621,0.0392,0.71,0.746,2.383956,275.439444
+122,5,3,Fay,offer_help,avatar helps without taking ownership,keth,0.478447,0.0188,0.862,0.814,2.703273,58.947208
+123,5,3,Milo,ask_repair,avatar asks for route repair,tek,0.646252,0.3932,0.79,0.8,2.977129,201.454972
+124,5,3,Sol,interrupt_sleep,avatar requests action during rest,sova,0.941481,0.6864,0.616,0.718,2.332212,325.562736
+125,5,4,Ari,offer_help,avatar helps without taking ownership,keth,0.55604,0.0392,0.732,0.784,2.473806,105.4705
+126,5,4,Fay,ask_repair,avatar asks for route repair,tek,0.564051,0.3788,0.884,0.828,2.819024,248.978264
+127,5,4,Milo,interrupt_sleep,avatar requests action during rest,sova,0.868227,0.6732,0.79,0.8,3.08137,31.486028
+128,5,4,Sol,join_ritual,avatar joins ritual softly,ori,0.726696,0.2264,0.576,0.688,2.450684,155.593792
+129,5,5,Ari,ask_repair,avatar asks for route repair,tek,0.731469,0.3992,0.754,0.798,2.584919,295.501556
+130,5,5,Fay,interrupt_sleep,avatar requests action during rest,sova,0.917398,0.6588,0.884,0.828,2.910164,79.00932
+131,5,5,Milo,join_ritual,avatar joins ritual softly,ori,0.782488,0.2132,0.75,0.77,3.177436,221.517084
+132,5,5,Sol,repeat_pressure,avatar repeats request too soon,vonn,0.927755,0.6864,0.598,0.702,2.530478,345.624848
+133,5,6,Ari,interrupt_sleep,avatar requests action during rest,sova,0.821287,0.6792,0.754,0.798,2.656332,125.532612
+134,5,6,Fay,join_ritual,avatar joins ritual softly,ori,0.598874,0.1988,0.844,0.798,2.952415,269.040376
+135,5,6,Milo,repeat_pressure,avatar repeats request too soon,vonn,0.749041,0.6732,0.772,0.784,3.193542,51.54814
+136,5,6,Sol,trade_fairly,avatar trades at market value,melo,0.786539,0.2264,0.558,0.672,2.516321,175.655904
+137,5,7,Ari,join_ritual,avatar joins ritual softly,ori,0.637753,0.2192,0.714,0.768,2.608991,315.563668
+138,5,7,Fay,repeat_pressure,avatar repeats request too soon,vonn,0.723167,0.6588,0.866,0.812,2.896454,99.071432
+139,5,7,Milo,trade_fairly,avatar trades at market value,melo,0.76429,0.2132,0.732,0.754,3.119629,241.579196
+140,5,7,Sol,offer_warmth,avatar opens warm dry place,lum,0.612039,0.2264,0.58,0.686,2.428271,5.68696
+141,6,1,Ari,offer_warmth,avatar opens warm dry place,lum,0.501937,0.2192,0.736,0.782,2.58682,176.594724
+142,6,1,Fay,wait_respectfully,avatar waits until routine ends,nari,0.565144,0.0188,0.826,0.782,2.867768,320.102488
+143,6,1,Milo,offer_help,avatar helps without taking ownership,keth,0.775575,0.0332,0.754,0.768,3.079727,102.610252
+144,6,1,Sol,ask_repair,avatar asks for route repair,tek,0.662909,0.4064,0.602,0.7,2.383839,226.718016
+145,6,2,Ari,wait_respectfully,avatar waits until routine ends,nari,0.511433,0.0392,0.758,0.796,2.486578,6.62578
+146,6,2,Fay,offer_help,avatar helps without taking ownership,keth,0.738206,0.0188,0.848,0.82,2.769252,150.133544
+147,6,2,Milo,ask_repair,avatar asks for route repair,tek,0.893925,0.3932,0.776,0.782,3.001975,292.641308
+148,6,2,Sol,interrupt_sleep,avatar requests action during rest,sova,0.990552,0.6864,0.602,0.7,2.316262,56.749072
+149,6,3,Ari,offer_help,avatar helps without taking ownership,keth,0.478461,0.0392,0.78,0.834,2.428957,196.656836
+150,6,3,Fay,ask_repair,avatar asks for route repair,tek,0.646273,0.3788,0.87,0.834,2.726281,340.1646
+151,6,3,Milo,interrupt_sleep,avatar requests action during rest,sova,0.941505,0.6732,0.776,0.782,2.996279,122.672364
+152,6,3,Sol,join_ritual,avatar joins ritual softly,ori,0.653009,0.2264,0.562,0.67,2.331778,246.780128
+153,6,4,Ari,ask_repair,avatar asks for route repair,tek,0.564061,0.3992,0.802,0.848,2.467146,26.687892
+154,6,4,Fay,interrupt_sleep,avatar requests action during rest,sova,0.868242,0.6588,0.87,0.834,2.797918,170.195656
+155,6,4,Milo,join_ritual,avatar joins ritual softly,ori,0.726714,0.2132,0.736,0.752,3.069138,312.70342
+156,6,4,Sol,repeat_pressure,avatar repeats request too soon,vonn,0.763226,0.6864,0.584,0.684,2.437558,76.811184
+157,6,5,Ari,interrupt_sleep,avatar requests action during rest,sova,0.917405,0.6792,0.802,0.848,2.578491,216.718948
+158,6,5,Fay,join_ritual,avatar joins ritual softly,ori,0.782499,0.1988,0.83,0.804,2.914912,0.226712
+159,6,5,Milo,repeat_pressure,avatar repeats request too soon,vonn,0.927768,0.6732,0.758,0.766,3.178478,142.734476
+160,6,5,Sol,trade_fairly,avatar trades at market value,melo,0.884788,0.2264,0.544,0.654,2.53542,266.84224
+161,6,6,Ari,join_ritual,avatar joins ritual softly,ori,0.59888,0.2192,0.762,0.818,2.682049,46.750004
+162,6,6,Fay,repeat_pressure,avatar repeats request too soon,vonn,0.749049,0.6588,0.852,0.818,3.012475,190.257768
+163,6,6,Milo,trade_fairly,avatar trades at market value,melo,0.786548,0.2132,0.718,0.736,3.274418,332.765532
+164,6,6,Sol,offer_warmth,avatar opens warm dry place,lum,0.574743,0.2264,0.566,0.668,2.603747,96.873296
+165,6,7,Ari,repeat_pressure,avatar repeats request too soon,vonn,0.723171,0.6792,0.784,0.832,2.734991,236.78106
+166,6,7,Fay,trade_fairly,avatar trades at market value,melo,0.764296,0.1988,0.812,0.788,3.03045,20.288824
+167,6,7,Milo,offer_warmth,avatar opens warm dry place,lum,0.612046,0.2132,0.74,0.75,3.261655,162.796588
+168,6,7,Sol,wait_respectfully,avatar waits until routine ends,nari,0.45531,0.0464,0.588,0.682,2.587442,286.904352

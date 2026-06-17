@@ -292,3 +292,7 @@ Report 242 deepens the body-to-affect channel inside the browser-world line. It 
 ## Report 243 Browser World v3 Long-Horizon Routine Circadian Relationship Bridge Note
 
 Report 243 carries embodied affect across 21 deterministic days. It generates 672 autonomous routine ticks, 672 circadian sleep frames, 672 affect history frames, 672 relationship consequence frames, 672 routine consequence frames, 672 replay continuity frames, and 672 browser-world v3 ticks. The run passes with readiness 0.989287 and weakest-channel score 0.894351. The strongest ablations are removing circadian sleep debt, relationship consequences, autonomous routines, long-horizon span, and affect carryover.
+
+## Report 244 Browser World v4 Learned Routine Proto-Language Adaptation Bridge Note
+
+Report 244 adds six-week learned adaptation to the browser-world line. It generates 168 adaptation episodes, 168 routine policy update frames, 168 proto-language drift frames, 168 boundary/sleep respect frames, 168 relationship learning frames, 168 avatar-entry consequence frames, 168 replay adaptation frames, and 168 browser-world v4 ticks. The run passes with readiness 0.954412 and weakest-channel score 0.824143. The weakest channel is social spread continuity, correctly identifying population-level cultural diffusion as the next pressure point.

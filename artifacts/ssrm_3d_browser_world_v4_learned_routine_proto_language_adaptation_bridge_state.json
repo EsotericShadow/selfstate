@@ -1,0 +1,213 @@
+{
+  "adaptation_model": "routine policy weights + token drift + sleep/boundary constraints + relationship learning",
+  "agents": {
+    "Ari": {
+      "baseline_trust": 0.55,
+      "boundary_need": 0.66,
+      "home": "workbench alcove",
+      "learning_rate": 0.16,
+      "role": "route keeper",
+      "sleep_sensitivity": 0.62,
+      "voice_hz": 210.0
+    },
+    "Fay": {
+      "baseline_trust": 0.64,
+      "boundary_need": 0.49,
+      "home": "hearth nest",
+      "learning_rate": 0.18,
+      "role": "hearth ritualist",
+      "sleep_sensitivity": 0.48,
+      "voice_hz": 240.0
+    },
+    "Milo": {
+      "baseline_trust": 0.59,
+      "boundary_need": 0.61,
+      "home": "market canopy",
+      "learning_rate": 0.2,
+      "role": "pattern scout",
+      "sleep_sensitivity": 0.43,
+      "voice_hz": 265.0
+    },
+    "Sol": {
+      "baseline_trust": 0.5,
+      "boundary_need": 0.72,
+      "home": "quiet corner",
+      "learning_rate": 0.13,
+      "role": "seed ledger guardian",
+      "sleep_sensitivity": 0.68,
+      "voice_hz": 198.0
+    }
+  },
+  "base_lexicon": {
+    "keth": "remembered help",
+    "lum": "warm care",
+    "melo": "market exchange",
+    "nari": "respect boundary",
+    "ori": "shared ritual",
+    "sova": "sleep safely",
+    "tek": "repair work",
+    "vonn": "pressure warning"
+  },
+  "boundary": "functional adaptation scaffold; no consciousness claim",
+  "report": 244,
+  "sample_ticks": [
+    {
+      "agent": "Ari",
+      "boundary_or_recovery": "cooperation",
+      "day": 1,
+      "episode_id": 1,
+      "private_learning_hint": "policy_delta=0.01; grounding=0.94; reason=avatar is familiar but not decisive",
+      "public_language_marker": "tek->tek means repair work",
+      "public_relationship_marker": "trust=0.56; respect=0.59; neutral continuity",
+      "public_routine_marker": "week 1 day 1: Ari selects repair_route",
+      "replay_checkpoint": "r244-week01-episode001",
+      "trace_integrity_token": "r244:1:Ari:893827c898",
+      "week": 1
+    },
+    {
+      "agent": "Fay",
+      "boundary_or_recovery": "cooperation",
+      "day": 1,
+      "episode_id": 2,
+      "private_learning_hint": "policy_delta=0.20; grounding=0.92; reason=avatar is familiar but not decisive",
+      "public_language_marker": "sova->sova-s means sleep safely",
+      "public_relationship_marker": "trust=0.62; respect=0.57; neutral continuity",
+      "public_routine_marker": "week 1 day 1: Fay selects sleep_recovery",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r244:2:Fay:45fe3f8efa",
+      "week": 1
+    },
+    {
+      "agent": "Milo",
+      "boundary_or_recovery": "cooperation",
+      "day": 1,
+      "episode_id": 3,
+      "private_learning_hint": "policy_delta=0.11; grounding=0.94; reason=avatar can help without taking over",
+      "public_language_marker": "ori->ori means shared ritual",
+      "public_relationship_marker": "trust=0.63; respect=0.59; warmer later greeting",
+      "public_routine_marker": "week 1 day 1: Milo selects market_scan",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r244:3:Milo:b299463bf6",
+      "week": 1
+    },
+    {
+      "agent": "Sol",
+      "boundary_or_recovery": "cooperation",
+      "day": 1,
+      "episode_id": 4,
+      "private_learning_hint": "policy_delta=0.09; grounding=0.91; reason=avatar is familiar but not decisive",
+      "public_language_marker": "vonn->vonn-n means pressure warning",
+      "public_relationship_marker": "trust=0.48; respect=0.57; neutral continuity",
+      "public_routine_marker": "week 1 day 1: Sol selects boundary_pause",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r244:4:Sol:7fbbcb2329",
+      "week": 1
+    },
+    {
+      "agent": "Ari",
+      "boundary_or_recovery": "cooperation",
+      "day": 2,
+      "episode_id": 5,
+      "private_learning_hint": "policy_delta=0.17; grounding=0.91; reason=avatar is familiar but not decisive",
+      "public_language_marker": "sova->sova-s means sleep safely",
+      "public_relationship_marker": "trust=0.54; respect=0.58; neutral continuity",
+      "public_routine_marker": "week 1 day 2: Ari selects sleep_recovery",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r244:5:Ari:d5a186df2d",
+      "week": 1
+    },
+    {
+      "agent": "Fay",
+      "boundary_or_recovery": "cooperation",
+      "day": 2,
+      "episode_id": 6,
+      "private_learning_hint": "policy_delta=0.19; grounding=0.94; reason=avatar can help without taking over",
+      "public_language_marker": "ori->ori means shared ritual",
+      "public_relationship_marker": "trust=0.66; respect=0.58; warmer later greeting",
+      "public_routine_marker": "week 1 day 2: Fay selects hearth_care",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r244:6:Fay:7319e30540",
+      "week": 1
+    },
+    {
+      "agent": "Milo",
+      "boundary_or_recovery": "cooperation",
+      "day": 2,
+      "episode_id": 7,
+      "private_learning_hint": "policy_delta=0.12; grounding=0.91; reason=avatar is familiar but not decisive",
+      "public_language_marker": "vonn->vonn-n means pressure warning",
+      "public_relationship_marker": "trust=0.61; respect=0.58; neutral continuity",
+      "public_routine_marker": "week 1 day 2: Milo selects boundary_pause",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r244:7:Milo:be4b0bac1e",
+      "week": 1
+    },
+    {
+      "agent": "Sol",
+      "boundary_or_recovery": "cooperation",
+      "day": 2,
+      "episode_id": 8,
+      "private_learning_hint": "policy_delta=0.10; grounding=0.91; reason=avatar can help without taking over",
+      "public_language_marker": "melo->melo-s means market exchange",
+      "public_relationship_marker": "trust=0.52; respect=0.58; warmer later greeting",
+      "public_routine_marker": "week 1 day 2: Sol selects sleep_recovery",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r244:8:Sol:965be01d06",
+      "week": 1
+    },
+    {
+      "agent": "Ari",
+      "boundary_or_recovery": "cooperation",
+      "day": 3,
+      "episode_id": 9,
+      "private_learning_hint": "policy_delta=0.12; grounding=0.93; reason=avatar can help without taking over",
+      "public_language_marker": "ori->ori means shared ritual",
+      "public_relationship_marker": "trust=0.58; respect=0.59; warmer later greeting",
+      "public_routine_marker": "week 1 day 3: Ari selects repair_route",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r244:9:Ari:093c18b35f",
+      "week": 1
+    },
+    {
+      "agent": "Fay",
+      "boundary_or_recovery": "cooperation",
+      "day": 3,
+      "episode_id": 10,
+      "private_learning_hint": "policy_delta=0.39; grounding=0.91; reason=avatar is familiar but not decisive",
+      "public_language_marker": "vonn->vonn-n means pressure warning",
+      "public_relationship_marker": "trust=0.64; respect=0.57; neutral continuity",
+      "public_routine_marker": "week 1 day 3: Fay selects boundary_pause",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r244:10:Fay:883bb9f630",
+      "week": 1
+    },
+    {
+      "agent": "Milo",
+      "boundary_or_recovery": "cooperation",
+      "day": 3,
+      "episode_id": 11,
+      "private_learning_hint": "policy_delta=0.18; grounding=0.94; reason=avatar can help without taking over",
+      "public_language_marker": "melo->melo means market exchange",
+      "public_relationship_marker": "trust=0.64; respect=0.59; warmer later greeting",
+      "public_routine_marker": "week 1 day 3: Milo selects market_scan",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r244:11:Milo:7a79c104f3",
+      "week": 1
+    },
+    {
+      "agent": "Sol",
+      "boundary_or_recovery": "cooperation",
+      "day": 3,
+      "episode_id": 12,
+      "private_learning_hint": "policy_delta=0.08; grounding=0.94; reason=avatar can help without taking over",
+      "public_language_marker": "lum->lum means warm care",
+      "public_relationship_marker": "trust=0.55; respect=0.59; warmer later greeting",
+      "public_routine_marker": "week 1 day 3: Sol selects ledger_sort",
+      "replay_checkpoint": "no_checkpoint",
+      "trace_integrity_token": "r244:12:Sol:14c36c077d",
+      "week": 1
+    }
+  ],
+  "seed": 20260857,
+  "weeks": 6
+}

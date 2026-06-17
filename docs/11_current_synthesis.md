@@ -862,3 +862,6 @@ Report 242 deepens embodied affect dynamics inside browser world v2. It generate
 
 
 Report 243 turns embodied affect into long-horizon continuity. It generates 672 autonomous routine ticks across 21 days, 672 circadian sleep frames, 672 affect history frames, 672 relationship consequence frames, 672 routine consequence frames, 672 replay continuity frames, and 672 browser-world v3 ticks. The run passes with readiness 0.989287 and weakest-channel score 0.894351. The strongest ablations are removing circadian sleep debt, relationship consequences, autonomous routines, long-horizon span, and affect carryover, which correctly marks that continuity across days is now a core dependency.
+
+
+Report 244 adds multi-week learned adaptation. It generates 168 adaptation episodes across six weeks, 168 routine policy updates, 168 proto-language drift frames, 168 sleep/boundary respect frames, 168 relationship learning frames, 168 avatar-entry consequence frames, 168 replay adaptation frames, and 168 browser-world v4 ticks. The run passes with readiness 0.954412 and weakest-channel score 0.824143. The weakest channel is social spread continuity, correctly marking that local token drift is present but population-level cultural diffusion is the next pressure point.

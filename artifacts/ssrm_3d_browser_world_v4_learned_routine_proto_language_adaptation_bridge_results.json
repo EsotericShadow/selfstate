@@ -1,0 +1,62 @@
+{
+  "ablations": {
+    "no_avatar_entry_consequence_binding": 0.754412,
+    "no_frequency_flower_learning_rhythm": 0.884412,
+    "no_learned_routine_adaptation": 0.654412,
+    "no_meaning_grounding": 0.694412,
+    "no_multi_week_span": 0.724412,
+    "no_private_learning_trace": 0.844412,
+    "no_proto_language_drift": 0.734412,
+    "no_relationship_learning": 0.704412,
+    "no_replay_adaptation_integrity": 0.804412,
+    "no_sleep_boundary_respect": 0.664412
+  },
+  "counts": {
+    "adaptation_episode_specs": 168,
+    "avatar_entry_consequence_frames": 168,
+    "boundary_sleep_respect_frames": 168,
+    "browser_world_v4_ticks": 168,
+    "proto_language_drift_frames": 168,
+    "relationship_learning_frames": 168,
+    "replay_adaptation_frames": 168,
+    "routine_policy_update_frames": 168
+  },
+  "honest_limits": [
+    "This is deterministic learned adaptation, not subjective consciousness.",
+    "Proto-language drift is rule-based token adaptation, not autonomous natural language emergence.",
+    "Routine learning is bounded policy update scaffolding, not independent moral agency.",
+    "Sleep and boundary constraints are functional welfare guardrails, not real consent.",
+    "Relationship learning is simulated continuity, not real attachment or moral patienthood.",
+    "Frequency and flower phase are rhythm variables, not metaphysical proof.",
+    "The browser world v4 visualization is a scaffold, not a finished 3D game engine."
+  ],
+  "metrics": {
+    "adaptation_without_chaos": 1.0,
+    "avatar_entry_consequence_binding": 1.0,
+    "browser_world_v4_learned_adaptation_readiness": 0.954412,
+    "browser_world_v4_surface_available": 1.0,
+    "frequency_flower_learning_rhythm": 1.0,
+    "learned_routine_adaptation_rate": 0.994048,
+    "mean_adaptation_channel_score": 0.958442,
+    "meaning_grounding_retention": 0.907905,
+    "multi_week_span_coverage": 1.0,
+    "private_learning_trace_boundary": 1.0,
+    "proto_language_drift_rate": 0.875,
+    "proto_language_stability": 0.883,
+    "refusal_calibration": 1.0,
+    "relationship_learning_signal": 1.0,
+    "replay_adaptation_integrity": 1.0,
+    "replay_checkpoint_coverage": 0.875,
+    "sleep_boundary_respect_rate": 0.892857,
+    "social_spread_continuity": 0.824143,
+    "source_long_horizon_continuity": 1.0,
+    "weakest_channel_score": 0.824143,
+    "welfare_guardrail_preservation": 1.0
+  },
+  "name": "SSRM-3D Browser World v4 Learned Routine Proto-Language Adaptation Bridge",
+  "next_gate": "browser world v5 with population-level cultural diffusion, household-to-household proto-language spread, learned rituals, and avatar consequences that can propagate socially without breaking welfare guardrails",
+  "report": 244,
+  "seed": 20260857,
+  "source_results": "artifacts/ssrm_3d_browser_world_v3_long_horizon_routine_circadian_relationship_bridge_results.json",
+  "verdict": "pass"
+}

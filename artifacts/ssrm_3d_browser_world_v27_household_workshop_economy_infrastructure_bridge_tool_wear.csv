@@ -1,0 +1,865 @@
+tick_id,day,agent,tool_id,infrastructure_id,condition_before,wear_delta,maintenance_delta,condition_after,broken,tool_limits_work,repair_action
+0,1,Ari,drawknife,river_mill_bridge,0.84,0.002,0.10656,0.94456,False,False,sharpen / oil / recalibrate
+1,1,Fay,glass tongs,roof_greenhouse_cistern,0.815,0.002,0.0,0.813,False,False,none
+2,1,Nia,binding awl,archive_public_kiosk,0.79,0.009,0.0,0.781,False,False,none
+3,1,Milo,wire crimper,dusk_signal_workshop,0.765,0.002,0.0,0.763,False,False,none
+4,1,Ari,drawknife,river_mill_bridge,0.94456,0.002,0.0,0.94256,False,False,none
+5,1,Fay,glass tongs,roof_greenhouse_cistern,0.813,0.009,0.0,0.804,False,False,none
+6,1,Nia,binding awl,archive_public_kiosk,0.781,0.002,0.0,0.779,False,False,none
+7,1,Milo,wire crimper,dusk_signal_workshop,0.763,0.002,0.0,0.761,False,False,none
+8,1,Ari,drawknife,river_mill_bridge,0.94256,0.009,0.0,0.93356,False,False,none
+9,1,Fay,glass tongs,roof_greenhouse_cistern,0.804,0.002,0.0,0.802,False,False,none
+10,1,Nia,binding awl,archive_public_kiosk,0.779,0.002,0.0,0.777,False,False,none
+11,1,Milo,wire crimper,dusk_signal_workshop,0.761,0.009,0.0,0.752,False,False,none
+12,1,Ari,drawknife,river_mill_bridge,0.93356,0.002,0.0,0.93156,False,False,none
+13,1,Fay,glass tongs,roof_greenhouse_cistern,0.802,0.002,0.0,0.8,False,False,none
+14,1,Nia,binding awl,archive_public_kiosk,0.777,0.009,0.0,0.768,False,False,none
+15,1,Milo,wire crimper,dusk_signal_workshop,0.752,0.002,0.0,0.75,False,False,none
+16,1,Ari,drawknife,river_mill_bridge,0.93156,0.002,0.0,0.92956,False,False,none
+17,1,Fay,glass tongs,roof_greenhouse_cistern,0.8,0.002,0.0,0.798,False,False,none
+18,2,Nia,binding awl,archive_public_kiosk,0.768,0.002,0.0,0.766,False,False,none
+19,2,Milo,wire crimper,dusk_signal_workshop,0.75,0.002,0.0,0.748,False,False,none
+20,2,Ari,drawknife,river_mill_bridge,0.92956,0.009,0.0,0.92056,False,False,none
+21,2,Fay,glass tongs,roof_greenhouse_cistern,0.798,0.002,0.0,0.796,False,False,none
+22,2,Nia,binding awl,archive_public_kiosk,0.766,0.002,0.0,0.764,False,False,none
+23,2,Milo,wire crimper,dusk_signal_workshop,0.748,0.009,0.0,0.739,False,False,none
+24,2,Ari,drawknife,river_mill_bridge,0.92056,0.002,0.0,0.91856,False,False,none
+25,2,Fay,glass tongs,roof_greenhouse_cistern,0.796,0.009,0.0,0.787,False,False,none
+26,2,Nia,binding awl,archive_public_kiosk,0.764,0.009,0.0,0.755,False,False,none
+27,2,Milo,wire crimper,dusk_signal_workshop,0.739,0.002,0.0,0.737,False,False,none
+28,2,Ari,drawknife,river_mill_bridge,0.91856,0.002,0.0,0.91656,False,False,none
+29,2,Fay,glass tongs,roof_greenhouse_cistern,0.787,0.009,0.0,0.778,False,False,none
+30,2,Nia,binding awl,archive_public_kiosk,0.755,0.002,0.0,0.753,False,False,none
+31,2,Milo,wire crimper,dusk_signal_workshop,0.737,0.002,0.0,0.735,False,False,none
+32,2,Ari,drawknife,river_mill_bridge,0.91656,0.009,0.0,0.90756,False,False,none
+33,2,Fay,glass tongs,roof_greenhouse_cistern,0.778,0.002,0.0,0.776,False,False,none
+34,2,Nia,binding awl,archive_public_kiosk,0.753,0.009,0.0,0.744,False,False,none
+35,2,Milo,wire crimper,dusk_signal_workshop,0.735,0.002,0.0,0.733,False,False,none
+36,3,Ari,drawknife,river_mill_bridge,0.90756,0.002,0.0,0.90556,False,False,none
+37,3,Fay,glass tongs,roof_greenhouse_cistern,0.776,0.002,0.0,0.774,False,False,none
+38,3,Nia,binding awl,archive_public_kiosk,0.744,0.009,0.0,0.735,False,False,none
+39,3,Milo,wire crimper,dusk_signal_workshop,0.733,0.002,0.0,0.731,False,False,none
+40,3,Ari,drawknife,river_mill_bridge,0.90556,0.002,0.0,0.90356,False,False,none
+41,3,Fay,glass tongs,roof_greenhouse_cistern,0.774,0.009,0.0,0.765,False,False,none
+42,3,Nia,binding awl,archive_public_kiosk,0.735,0.002,0.0,0.733,False,False,none
+43,3,Milo,wire crimper,dusk_signal_workshop,0.731,0.002,0.0,0.729,False,False,none
+44,3,Ari,drawknife,river_mill_bridge,0.90356,0.009,0.0,0.89456,False,False,none
+45,3,Fay,glass tongs,roof_greenhouse_cistern,0.765,0.002,0.0,0.763,False,False,none
+46,3,Nia,binding awl,archive_public_kiosk,0.733,0.002,0.0,0.731,False,False,none
+47,3,Milo,wire crimper,dusk_signal_workshop,0.729,0.009,0.0,0.72,False,False,none
+48,3,Ari,drawknife,river_mill_bridge,0.89456,0.002,0.0,0.89256,False,False,none
+49,3,Fay,glass tongs,roof_greenhouse_cistern,0.763,0.002,0.0,0.761,False,False,none
+50,3,Nia,binding awl,archive_public_kiosk,0.731,0.009,0.0,0.722,False,False,none
+51,3,Milo,wire crimper,dusk_signal_workshop,0.72,0.002,0.0,0.718,False,False,none
+52,3,Ari,drawknife,river_mill_bridge,0.89256,0.002,0.0,0.89056,False,False,none
+53,3,Fay,glass tongs,roof_greenhouse_cistern,0.761,0.002,0.0,0.759,False,False,none
+54,4,Milo,wire crimper,dusk_signal_workshop,0.718,0.002,0.0,0.716,False,False,none
+55,4,Ari,drawknife,river_mill_bridge,0.89056,0.002,0.0,0.88856,False,False,none
+56,4,Fay,glass tongs,roof_greenhouse_cistern,0.759,0.009,0.0,0.75,False,False,none
+57,4,Nia,binding awl,archive_public_kiosk,0.722,0.002,0.0,0.72,False,False,none
+58,4,Milo,wire crimper,dusk_signal_workshop,0.716,0.002,0.0,0.714,False,False,none
+59,4,Ari,drawknife,river_mill_bridge,0.88856,0.009,0.0,0.87956,False,False,none
+60,4,Fay,glass tongs,roof_greenhouse_cistern,0.75,0.002,0.0,0.748,False,False,none
+61,4,Nia,binding awl,archive_public_kiosk,0.72,0.002,0.0,0.718,False,False,none
+62,4,Milo,wire crimper,dusk_signal_workshop,0.714,0.009,0.0,0.705,False,False,none
+63,4,Ari,drawknife,river_mill_bridge,0.87956,0.002,0.0,0.87756,False,False,none
+64,4,Fay,glass tongs,roof_greenhouse_cistern,0.748,0.002,0.0,0.746,False,False,none
+65,4,Nia,binding awl,archive_public_kiosk,0.718,0.009,0.0,0.709,False,False,none
+66,4,Milo,wire crimper,dusk_signal_workshop,0.705,0.002,0.0,0.703,False,False,none
+67,4,Ari,drawknife,river_mill_bridge,0.87756,0.002,0.0,0.87556,False,False,none
+68,4,Fay,glass tongs,roof_greenhouse_cistern,0.746,0.009,0.0,0.737,False,False,none
+69,4,Nia,binding awl,archive_public_kiosk,0.709,0.002,0.112034,0.819034,False,False,sharpen / oil / recalibrate
+70,4,Milo,wire crimper,dusk_signal_workshop,0.703,0.002,0.0,0.701,False,False,none
+71,4,Ari,drawknife,river_mill_bridge,0.87556,0.002,0.0,0.87356,False,False,none
+72,5,Fay,glass tongs,roof_greenhouse_cistern,0.737,0.002,0.0,0.735,False,False,none
+73,5,Nia,binding awl,archive_public_kiosk,0.819034,0.002,0.0,0.817034,False,False,none
+74,5,Milo,wire crimper,dusk_signal_workshop,0.701,0.009,0.0,0.692,False,False,none
+75,5,Ari,drawknife,river_mill_bridge,0.87356,0.002,0.0,0.87156,False,False,none
+76,5,Fay,glass tongs,roof_greenhouse_cistern,0.735,0.009,0.0,0.726,False,False,none
+77,5,Nia,binding awl,archive_public_kiosk,0.817034,0.009,0.0,0.808034,False,False,none
+78,5,Milo,wire crimper,dusk_signal_workshop,0.692,0.002,0.0,0.69,False,False,none
+79,5,Ari,drawknife,river_mill_bridge,0.87156,0.002,0.0,0.86956,False,False,none
+80,5,Fay,glass tongs,roof_greenhouse_cistern,0.726,0.009,0.0,0.717,False,False,none
+81,5,Nia,binding awl,archive_public_kiosk,0.808034,0.002,0.0,0.806034,False,False,none
+82,5,Milo,wire crimper,dusk_signal_workshop,0.69,0.002,0.0,0.688,False,False,none
+83,5,Ari,drawknife,river_mill_bridge,0.86956,0.009,0.0,0.86056,False,False,none
+84,5,Fay,glass tongs,roof_greenhouse_cistern,0.717,0.002,0.0,0.715,False,False,none
+85,5,Nia,binding awl,archive_public_kiosk,0.806034,0.009,0.0,0.797034,False,False,none
+86,5,Milo,wire crimper,dusk_signal_workshop,0.688,0.009,0.0,0.679,False,False,none
+87,5,Ari,drawknife,river_mill_bridge,0.86056,0.009,0.0,0.85156,False,False,none
+88,5,Fay,glass tongs,roof_greenhouse_cistern,0.715,0.002,0.0,0.713,False,False,none
+89,5,Nia,binding awl,archive_public_kiosk,0.797034,0.002,0.0,0.795034,False,False,none
+90,6,Milo,wire crimper,dusk_signal_workshop,0.679,0.002,0.113564,0.790564,False,False,sharpen / oil / recalibrate
+91,6,Ari,drawknife,river_mill_bridge,0.85156,0.002,0.0,0.84956,False,False,none
+92,6,Fay,glass tongs,roof_greenhouse_cistern,0.713,0.009,0.0,0.704,False,False,none
+93,6,Nia,binding awl,archive_public_kiosk,0.795034,0.002,0.0,0.793034,False,False,none
+94,6,Milo,wire crimper,dusk_signal_workshop,0.790564,0.002,0.0,0.788564,False,False,none
+95,6,Ari,drawknife,river_mill_bridge,0.84956,0.009,0.0,0.84056,False,False,none
+96,6,Fay,glass tongs,roof_greenhouse_cistern,0.704,0.002,0.0,0.702,False,False,none
+97,6,Nia,binding awl,archive_public_kiosk,0.793034,0.002,0.0,0.791034,False,False,none
+98,6,Milo,wire crimper,dusk_signal_workshop,0.788564,0.009,0.0,0.779564,False,False,none
+99,6,Ari,drawknife,river_mill_bridge,0.84056,0.002,0.0,0.83856,False,False,none
+100,6,Fay,glass tongs,roof_greenhouse_cistern,0.702,0.002,0.0,0.7,False,False,none
+101,6,Nia,binding awl,archive_public_kiosk,0.791034,0.009,0.0,0.782034,False,False,none
+102,6,Milo,wire crimper,dusk_signal_workshop,0.779564,0.002,0.0,0.777564,False,False,none
+103,6,Ari,drawknife,river_mill_bridge,0.83856,0.002,0.0,0.83656,False,False,none
+104,6,Fay,glass tongs,roof_greenhouse_cistern,0.7,0.009,0.0,0.691,False,False,none
+105,6,Nia,binding awl,archive_public_kiosk,0.782034,0.002,0.0,0.780034,False,False,none
+106,6,Milo,wire crimper,dusk_signal_workshop,0.777564,0.002,0.0,0.775564,False,False,none
+107,6,Ari,drawknife,river_mill_bridge,0.83656,0.002,0.0,0.83456,False,False,none
+108,7,Fay,glass tongs,roof_greenhouse_cistern,0.691,0.002,0.0,0.689,False,False,none
+109,7,Nia,binding awl,archive_public_kiosk,0.780034,0.009,0.0,0.771034,False,False,none
+110,7,Milo,wire crimper,dusk_signal_workshop,0.775564,0.009,0.0,0.766564,False,False,none
+111,7,Ari,drawknife,river_mill_bridge,0.83456,0.009,0.0,0.82556,False,False,none
+112,7,Fay,glass tongs,roof_greenhouse_cistern,0.689,0.002,0.0,0.687,False,False,none
+113,7,Nia,binding awl,archive_public_kiosk,0.771034,0.009,0.0,0.762034,False,False,none
+114,7,Milo,wire crimper,dusk_signal_workshop,0.766564,0.002,0.0,0.764564,False,False,none
+115,7,Ari,drawknife,river_mill_bridge,0.82556,0.002,0.0,0.82356,False,False,none
+116,7,Fay,glass tongs,roof_greenhouse_cistern,0.687,0.009,0.0,0.678,False,False,none
+117,7,Nia,binding awl,archive_public_kiosk,0.762034,0.002,0.0,0.760034,False,False,none
+118,7,Milo,wire crimper,dusk_signal_workshop,0.764564,0.009,0.0,0.755564,False,False,none
+119,7,Ari,drawknife,river_mill_bridge,0.82356,0.009,0.0,0.81456,False,False,none
+120,7,Fay,glass tongs,roof_greenhouse_cistern,0.678,0.009,0.0,0.669,False,False,none
+121,7,Nia,binding awl,archive_public_kiosk,0.760034,0.002,0.0,0.758034,False,False,none
+122,7,Milo,wire crimper,dusk_signal_workshop,0.755564,0.009,0.0,0.746564,False,False,none
+123,7,Ari,drawknife,river_mill_bridge,0.81456,0.002,0.0,0.81256,False,False,none
+124,7,Fay,glass tongs,roof_greenhouse_cistern,0.669,0.002,0.0,0.667,False,False,none
+125,7,Nia,binding awl,archive_public_kiosk,0.758034,0.002,0.0,0.756034,False,False,none
+126,8,Ari,drawknife,river_mill_bridge,0.81256,0.002,0.0,0.81056,False,False,none
+127,8,Fay,glass tongs,roof_greenhouse_cistern,0.667,0.009,0.0,0.658,False,False,none
+128,8,Nia,binding awl,archive_public_kiosk,0.756034,0.009,0.0,0.747034,False,False,none
+129,8,Milo,wire crimper,dusk_signal_workshop,0.746564,0.002,0.0,0.744564,False,False,none
+130,8,Ari,drawknife,river_mill_bridge,0.81056,0.002,0.0,0.80856,False,False,none
+131,8,Fay,glass tongs,roof_greenhouse_cistern,0.658,0.009,0.0,0.649,False,False,none
+132,8,Nia,binding awl,archive_public_kiosk,0.747034,0.002,0.0,0.745034,False,False,none
+133,8,Milo,wire crimper,dusk_signal_workshop,0.744564,0.002,0.0,0.742564,False,False,none
+134,8,Ari,drawknife,river_mill_bridge,0.80856,0.009,0.0,0.79956,False,False,none
+135,8,Fay,glass tongs,roof_greenhouse_cistern,0.649,0.002,0.113564,0.760564,False,False,sharpen / oil / recalibrate
+136,8,Nia,binding awl,archive_public_kiosk,0.745034,0.009,0.0,0.736034,False,False,none
+137,8,Milo,wire crimper,dusk_signal_workshop,0.742564,0.009,0.0,0.733564,False,False,none
+138,8,Ari,drawknife,river_mill_bridge,0.79956,0.009,0.0,0.79056,False,False,none
+139,8,Fay,glass tongs,roof_greenhouse_cistern,0.760564,0.002,0.0,0.758564,False,False,none
+140,8,Nia,binding awl,archive_public_kiosk,0.736034,0.009,0.0,0.727034,False,False,none
+141,8,Milo,wire crimper,dusk_signal_workshop,0.733564,0.002,0.0,0.731564,False,False,none
+142,8,Ari,drawknife,river_mill_bridge,0.79056,0.002,0.0,0.78856,False,False,none
+143,8,Fay,glass tongs,roof_greenhouse_cistern,0.758564,0.002,0.0,0.756564,False,False,none
+144,9,Nia,binding awl,archive_public_kiosk,0.727034,0.002,0.0,0.725034,False,False,none
+145,9,Milo,wire crimper,dusk_signal_workshop,0.731564,0.002,0.0,0.729564,False,False,none
+146,9,Ari,drawknife,river_mill_bridge,0.78856,0.009,0.0,0.77956,False,False,none
+147,9,Fay,glass tongs,roof_greenhouse_cistern,0.756564,0.002,0.0,0.754564,False,False,none
+148,9,Nia,binding awl,archive_public_kiosk,0.725034,0.002,0.0,0.723034,False,False,none
+149,9,Milo,wire crimper,dusk_signal_workshop,0.729564,0.009,0.0,0.720564,False,False,none
+150,9,Ari,drawknife,river_mill_bridge,0.77956,0.002,0.0,0.77756,False,False,none
+151,9,Fay,glass tongs,roof_greenhouse_cistern,0.754564,0.002,0.0,0.752564,False,False,none
+152,9,Nia,binding awl,archive_public_kiosk,0.723034,0.009,0.0,0.714034,False,False,none
+153,9,Milo,wire crimper,dusk_signal_workshop,0.720564,0.002,0.0,0.718564,False,False,none
+154,9,Ari,drawknife,river_mill_bridge,0.77756,0.002,0.0,0.77556,False,False,none
+155,9,Fay,glass tongs,roof_greenhouse_cistern,0.752564,0.009,0.0,0.743564,False,False,none
+156,9,Nia,binding awl,archive_public_kiosk,0.714034,0.002,0.0,0.712034,False,False,none
+157,9,Milo,wire crimper,dusk_signal_workshop,0.718564,0.002,0.0,0.716564,False,False,none
+158,9,Ari,drawknife,river_mill_bridge,0.77556,0.009,0.0,0.76656,False,False,none
+159,9,Fay,glass tongs,roof_greenhouse_cistern,0.743564,0.002,0.0,0.741564,False,False,none
+160,9,Nia,binding awl,archive_public_kiosk,0.712034,0.002,0.0,0.710034,False,False,none
+161,9,Milo,wire crimper,dusk_signal_workshop,0.716564,0.002,0.116148,0.830712,False,False,sharpen / oil / recalibrate
+162,10,Ari,drawknife,river_mill_bridge,0.76656,0.009,0.0,0.75756,False,False,none
+163,10,Fay,glass tongs,roof_greenhouse_cistern,0.741564,0.002,0.0,0.739564,False,False,none
+164,10,Nia,binding awl,archive_public_kiosk,0.710034,0.009,0.0,0.701034,False,False,none
+165,10,Milo,wire crimper,dusk_signal_workshop,0.830712,0.002,0.0,0.828712,False,False,none
+166,10,Ari,drawknife,river_mill_bridge,0.75756,0.002,0.0,0.75556,False,False,none
+167,10,Fay,glass tongs,roof_greenhouse_cistern,0.739564,0.009,0.0,0.730564,False,False,none
+168,10,Nia,binding awl,archive_public_kiosk,0.701034,0.002,0.0,0.699034,False,False,none
+169,10,Milo,wire crimper,dusk_signal_workshop,0.828712,0.009,0.0,0.819712,False,False,none
+170,10,Ari,drawknife,river_mill_bridge,0.75556,0.009,0.0,0.74656,False,False,none
+171,10,Fay,glass tongs,roof_greenhouse_cistern,0.730564,0.009,0.0,0.721564,False,False,none
+172,10,Nia,binding awl,archive_public_kiosk,0.699034,0.002,0.0,0.697034,False,False,none
+173,10,Milo,wire crimper,dusk_signal_workshop,0.819712,0.009,0.0,0.810712,False,False,none
+174,10,Ari,drawknife,river_mill_bridge,0.74656,0.002,0.0,0.74456,False,False,none
+175,10,Fay,glass tongs,roof_greenhouse_cistern,0.721564,0.002,0.0,0.719564,False,False,none
+176,10,Nia,binding awl,archive_public_kiosk,0.697034,0.009,0.0,0.688034,False,False,none
+177,10,Milo,wire crimper,dusk_signal_workshop,0.810712,0.002,0.0,0.808712,False,False,none
+178,10,Ari,drawknife,river_mill_bridge,0.74456,0.002,0.0,0.74256,False,False,none
+179,10,Fay,glass tongs,roof_greenhouse_cistern,0.719564,0.002,0.0,0.717564,False,False,none
+180,11,Nia,binding awl,archive_public_kiosk,0.688034,0.002,0.0,0.686034,False,False,none
+181,11,Milo,wire crimper,dusk_signal_workshop,0.808712,0.002,0.0,0.806712,False,False,none
+182,11,Ari,drawknife,river_mill_bridge,0.74256,0.009,0.0,0.73356,False,False,none
+183,11,Fay,glass tongs,roof_greenhouse_cistern,0.717564,0.002,0.0,0.715564,False,False,none
+184,11,Nia,binding awl,archive_public_kiosk,0.686034,0.002,0.0,0.684034,False,False,none
+185,11,Milo,wire crimper,dusk_signal_workshop,0.806712,0.009,0.0,0.797712,False,False,none
+186,11,Ari,drawknife,river_mill_bridge,0.73356,0.002,0.0,0.73156,False,False,none
+187,11,Fay,glass tongs,roof_greenhouse_cistern,0.715564,0.002,0.0,0.713564,False,False,none
+188,11,Nia,binding awl,archive_public_kiosk,0.684034,0.009,0.0,0.675034,False,False,none
+189,11,Milo,wire crimper,dusk_signal_workshop,0.797712,0.002,0.0,0.795712,False,False,none
+190,11,Ari,drawknife,river_mill_bridge,0.73156,0.002,0.0,0.72956,False,False,none
+191,11,Fay,glass tongs,roof_greenhouse_cistern,0.713564,0.009,0.0,0.704564,False,False,none
+192,11,Nia,binding awl,archive_public_kiosk,0.675034,0.002,0.0,0.673034,False,False,none
+193,11,Milo,wire crimper,dusk_signal_workshop,0.795712,0.002,0.0,0.793712,False,False,none
+194,11,Ari,drawknife,river_mill_bridge,0.72956,0.009,0.0,0.72056,False,False,none
+195,11,Fay,glass tongs,roof_greenhouse_cistern,0.704564,0.002,0.0,0.702564,False,False,none
+196,11,Nia,binding awl,archive_public_kiosk,0.673034,0.002,0.0,0.671034,False,False,none
+197,11,Milo,wire crimper,dusk_signal_workshop,0.793712,0.002,0.0,0.791712,False,False,none
+198,12,Fay,glass tongs,roof_greenhouse_cistern,0.702564,0.002,0.0,0.700564,False,False,none
+199,12,Nia,binding awl,archive_public_kiosk,0.671034,0.002,0.0,0.669034,False,False,none
+200,12,Milo,wire crimper,dusk_signal_workshop,0.791712,0.009,0.0,0.782712,False,False,none
+201,12,Ari,drawknife,river_mill_bridge,0.72056,0.002,0.0,0.71856,False,False,none
+202,12,Fay,glass tongs,roof_greenhouse_cistern,0.700564,0.002,0.0,0.698564,False,False,none
+203,12,Nia,binding awl,archive_public_kiosk,0.669034,0.009,0.0,0.660034,False,False,none
+204,12,Milo,wire crimper,dusk_signal_workshop,0.782712,0.002,0.0,0.780712,False,False,none
+205,12,Ari,drawknife,river_mill_bridge,0.71856,0.002,0.0,0.71656,False,False,none
+206,12,Fay,glass tongs,roof_greenhouse_cistern,0.698564,0.009,0.0,0.689564,False,False,none
+207,12,Nia,binding awl,archive_public_kiosk,0.660034,0.002,0.117508,0.775542,False,False,sharpen / oil / recalibrate
+208,12,Milo,wire crimper,dusk_signal_workshop,0.780712,0.002,0.0,0.778712,False,False,none
+209,12,Ari,drawknife,river_mill_bridge,0.71656,0.009,0.0,0.70756,False,False,none
+210,12,Fay,glass tongs,roof_greenhouse_cistern,0.689564,0.002,0.0,0.687564,False,False,none
+211,12,Nia,binding awl,archive_public_kiosk,0.775542,0.002,0.0,0.773542,False,False,none
+212,12,Milo,wire crimper,dusk_signal_workshop,0.778712,0.009,0.0,0.769712,False,False,none
+213,12,Ari,drawknife,river_mill_bridge,0.70756,0.002,0.0,0.70556,False,False,none
+214,12,Fay,glass tongs,roof_greenhouse_cistern,0.687564,0.002,0.0,0.685564,False,False,none
+215,12,Nia,binding awl,archive_public_kiosk,0.773542,0.002,0.0,0.771542,False,False,none
+216,13,Milo,wire crimper,dusk_signal_workshop,0.769712,0.002,0.0,0.767712,False,False,none
+217,13,Ari,drawknife,river_mill_bridge,0.70556,0.002,0.0,0.70356,False,False,none
+218,13,Fay,glass tongs,roof_greenhouse_cistern,0.685564,0.009,0.0,0.676564,False,False,none
+219,13,Nia,binding awl,archive_public_kiosk,0.771542,0.002,0.0,0.769542,False,False,none
+220,13,Milo,wire crimper,dusk_signal_workshop,0.767712,0.009,0.0,0.758712,False,False,none
+221,13,Ari,drawknife,river_mill_bridge,0.70356,0.009,0.0,0.69456,False,False,none
+222,13,Fay,glass tongs,roof_greenhouse_cistern,0.676564,0.009,0.0,0.667564,False,False,none
+223,13,Nia,binding awl,archive_public_kiosk,0.769542,0.002,0.0,0.767542,False,False,none
+224,13,Milo,wire crimper,dusk_signal_workshop,0.758712,0.009,0.0,0.749712,False,False,none
+225,13,Ari,drawknife,river_mill_bridge,0.69456,0.002,0.0,0.69256,False,False,none
+226,13,Fay,glass tongs,roof_greenhouse_cistern,0.667564,0.002,0.0,0.665564,False,False,none
+227,13,Nia,binding awl,archive_public_kiosk,0.767542,0.009,0.0,0.758542,False,False,none
+228,13,Milo,wire crimper,dusk_signal_workshop,0.749712,0.002,0.0,0.747712,False,False,none
+229,13,Ari,drawknife,river_mill_bridge,0.69256,0.002,0.0,0.69056,False,False,none
+230,13,Fay,glass tongs,roof_greenhouse_cistern,0.665564,0.009,0.0,0.656564,False,False,none
+231,13,Nia,binding awl,archive_public_kiosk,0.758542,0.009,0.0,0.749542,False,False,none
+232,13,Milo,wire crimper,dusk_signal_workshop,0.747712,0.002,0.0,0.745712,False,False,none
+233,13,Ari,drawknife,river_mill_bridge,0.69056,0.009,0.0,0.68156,False,False,none
+234,14,Fay,glass tongs,roof_greenhouse_cistern,0.656564,0.002,0.117168,0.771732,False,False,sharpen / oil / recalibrate
+235,14,Nia,binding awl,archive_public_kiosk,0.749542,0.002,0.0,0.747542,False,False,none
+236,14,Milo,wire crimper,dusk_signal_workshop,0.745712,0.009,0.0,0.736712,False,False,none
+237,14,Ari,drawknife,river_mill_bridge,0.68156,0.002,0.0,0.67956,False,False,none
+238,14,Fay,glass tongs,roof_greenhouse_cistern,0.771732,0.002,0.0,0.769732,False,False,none
+239,14,Nia,binding awl,archive_public_kiosk,0.747542,0.009,0.0,0.738542,False,False,none
+240,14,Milo,wire crimper,dusk_signal_workshop,0.736712,0.002,0.0,0.734712,False,False,none
+241,14,Ari,drawknife,river_mill_bridge,0.67956,0.002,0.0,0.67756,False,False,none
+242,14,Fay,glass tongs,roof_greenhouse_cistern,0.769732,0.009,0.0,0.760732,False,False,none
+243,14,Nia,binding awl,archive_public_kiosk,0.738542,0.002,0.0,0.736542,False,False,none
+244,14,Milo,wire crimper,dusk_signal_workshop,0.734712,0.002,0.0,0.732712,False,False,none
+245,14,Ari,drawknife,river_mill_bridge,0.67756,0.009,0.0,0.66856,False,False,none
+246,14,Fay,glass tongs,roof_greenhouse_cistern,0.760732,0.002,0.0,0.758732,False,False,none
+247,14,Nia,binding awl,archive_public_kiosk,0.736542,0.002,0.0,0.734542,False,False,none
+248,14,Milo,wire crimper,dusk_signal_workshop,0.732712,0.009,0.0,0.723712,False,False,none
+249,14,Ari,drawknife,river_mill_bridge,0.66856,0.002,0.0,0.66656,False,False,none
+250,14,Fay,glass tongs,roof_greenhouse_cistern,0.758732,0.002,0.0,0.756732,False,False,none
+251,14,Nia,binding awl,archive_public_kiosk,0.734542,0.002,0.0,0.732542,False,False,none
+252,15,Milo,wire crimper,dusk_signal_workshop,0.723712,0.002,0.0,0.721712,False,False,none
+253,15,Ari,drawknife,river_mill_bridge,0.66656,0.002,0.0,0.66456,False,False,none
+254,15,Fay,glass tongs,roof_greenhouse_cistern,0.756732,0.009,0.0,0.747732,False,False,none
+255,15,Nia,binding awl,archive_public_kiosk,0.732542,0.009,0.0,0.723542,False,False,none
+256,15,Milo,wire crimper,dusk_signal_workshop,0.721712,0.002,0.0,0.719712,False,False,none
+257,15,Ari,drawknife,river_mill_bridge,0.66456,0.009,0.0,0.65556,False,False,none
+258,15,Fay,glass tongs,roof_greenhouse_cistern,0.747732,0.002,0.0,0.745732,False,False,none
+259,15,Nia,binding awl,archive_public_kiosk,0.723542,0.002,0.0,0.721542,False,False,none
+260,15,Milo,wire crimper,dusk_signal_workshop,0.719712,0.009,0.0,0.710712,False,False,none
+261,15,Ari,drawknife,river_mill_bridge,0.65556,0.002,0.116454,0.770014,False,False,sharpen / oil / recalibrate
+262,15,Fay,glass tongs,roof_greenhouse_cistern,0.745732,0.002,0.0,0.743732,False,False,none
+263,15,Nia,binding awl,archive_public_kiosk,0.721542,0.009,0.0,0.712542,False,False,none
+264,15,Milo,wire crimper,dusk_signal_workshop,0.710712,0.009,0.0,0.701712,False,False,none
+265,15,Ari,drawknife,river_mill_bridge,0.770014,0.002,0.0,0.768014,False,False,none
+266,15,Fay,glass tongs,roof_greenhouse_cistern,0.743732,0.009,0.0,0.734732,False,False,none
+267,15,Nia,binding awl,archive_public_kiosk,0.712542,0.002,0.0,0.710542,False,False,none
+268,15,Milo,wire crimper,dusk_signal_workshop,0.701712,0.002,0.0,0.699712,False,False,none
+269,15,Ari,drawknife,river_mill_bridge,0.768014,0.002,0.0,0.766014,False,False,none
+270,16,Nia,binding awl,archive_public_kiosk,0.710542,0.002,0.0,0.708542,False,False,none
+271,16,Milo,wire crimper,dusk_signal_workshop,0.699712,0.009,0.0,0.690712,False,False,none
+272,16,Ari,drawknife,river_mill_bridge,0.766014,0.009,0.0,0.757014,False,False,none
+273,16,Fay,glass tongs,roof_greenhouse_cistern,0.734732,0.009,0.0,0.725732,False,False,none
+274,16,Nia,binding awl,archive_public_kiosk,0.708542,0.002,0.0,0.706542,False,False,none
+275,16,Milo,wire crimper,dusk_signal_workshop,0.690712,0.009,0.0,0.681712,False,False,none
+276,16,Ari,drawknife,river_mill_bridge,0.757014,0.002,0.116964,0.871978,False,False,sharpen / oil / recalibrate
+277,16,Fay,glass tongs,roof_greenhouse_cistern,0.725732,0.002,0.0,0.723732,False,False,none
+278,16,Nia,binding awl,archive_public_kiosk,0.706542,0.009,0.0,0.697542,False,False,none
+279,16,Milo,wire crimper,dusk_signal_workshop,0.681712,0.002,0.0,0.679712,False,False,none
+280,16,Ari,drawknife,river_mill_bridge,0.871978,0.002,0.0,0.869978,False,False,none
+281,16,Fay,glass tongs,roof_greenhouse_cistern,0.723732,0.009,0.0,0.714732,False,False,none
+282,16,Nia,binding awl,archive_public_kiosk,0.697542,0.009,0.0,0.688542,False,False,none
+283,16,Milo,wire crimper,dusk_signal_workshop,0.679712,0.002,0.0,0.677712,False,False,none
+284,16,Ari,drawknife,river_mill_bridge,0.869978,0.009,0.0,0.860978,False,False,none
+285,16,Fay,glass tongs,roof_greenhouse_cistern,0.714732,0.002,0.0,0.712732,False,False,none
+286,16,Nia,binding awl,archive_public_kiosk,0.688542,0.002,0.0,0.686542,False,False,none
+287,16,Milo,wire crimper,dusk_signal_workshop,0.677712,0.002,0.121418,0.79713,False,False,sharpen / oil / recalibrate
+288,17,Ari,drawknife,river_mill_bridge,0.860978,0.002,0.0,0.858978,False,False,none
+289,17,Fay,glass tongs,roof_greenhouse_cistern,0.712732,0.002,0.0,0.710732,False,False,none
+290,17,Nia,binding awl,archive_public_kiosk,0.686542,0.009,0.0,0.677542,False,False,none
+291,17,Milo,wire crimper,dusk_signal_workshop,0.79713,0.002,0.0,0.79513,False,False,none
+292,17,Ari,drawknife,river_mill_bridge,0.858978,0.002,0.0,0.856978,False,False,none
+293,17,Fay,glass tongs,roof_greenhouse_cistern,0.710732,0.009,0.0,0.701732,False,False,none
+294,17,Nia,binding awl,archive_public_kiosk,0.677542,0.002,0.0,0.675542,False,False,none
+295,17,Milo,wire crimper,dusk_signal_workshop,0.79513,0.002,0.0,0.79313,False,False,none
+296,17,Ari,drawknife,river_mill_bridge,0.856978,0.009,0.0,0.847978,False,False,none
+297,17,Fay,glass tongs,roof_greenhouse_cistern,0.701732,0.002,0.0,0.699732,False,False,none
+298,17,Nia,binding awl,archive_public_kiosk,0.675542,0.002,0.0,0.673542,False,False,none
+299,17,Milo,wire crimper,dusk_signal_workshop,0.79313,0.009,0.0,0.78413,False,False,none
+300,17,Ari,drawknife,river_mill_bridge,0.847978,0.002,0.0,0.845978,False,False,none
+301,17,Fay,glass tongs,roof_greenhouse_cistern,0.699732,0.002,0.0,0.697732,False,False,none
+302,17,Nia,binding awl,archive_public_kiosk,0.673542,0.009,0.0,0.664542,False,False,none
+303,17,Milo,wire crimper,dusk_signal_workshop,0.78413,0.002,0.0,0.78213,False,False,none
+304,17,Ari,drawknife,river_mill_bridge,0.845978,0.002,0.0,0.843978,False,False,none
+305,17,Fay,glass tongs,roof_greenhouse_cistern,0.697732,0.002,0.0,0.695732,False,False,none
+306,18,Nia,binding awl,archive_public_kiosk,0.664542,0.009,0.12135,0.776892,False,False,sharpen / oil / recalibrate
+307,18,Milo,wire crimper,dusk_signal_workshop,0.78213,0.002,0.0,0.78013,False,False,none
+308,18,Ari,drawknife,river_mill_bridge,0.843978,0.009,0.0,0.834978,False,False,none
+309,18,Fay,glass tongs,roof_greenhouse_cistern,0.695732,0.002,0.0,0.693732,False,False,none
+310,18,Nia,binding awl,archive_public_kiosk,0.776892,0.002,0.0,0.774892,False,False,none
+311,18,Milo,wire crimper,dusk_signal_workshop,0.78013,0.009,0.0,0.77113,False,False,none
+312,18,Ari,drawknife,river_mill_bridge,0.834978,0.002,0.0,0.832978,False,False,none
+313,18,Fay,glass tongs,roof_greenhouse_cistern,0.693732,0.002,0.0,0.691732,False,False,none
+314,18,Nia,binding awl,archive_public_kiosk,0.774892,0.009,0.0,0.765892,False,False,none
+315,18,Milo,wire crimper,dusk_signal_workshop,0.77113,0.009,0.0,0.76213,False,False,none
+316,18,Ari,drawknife,river_mill_bridge,0.832978,0.002,0.0,0.830978,False,False,none
+317,18,Fay,glass tongs,roof_greenhouse_cistern,0.691732,0.009,0.0,0.682732,False,False,none
+318,18,Nia,binding awl,archive_public_kiosk,0.765892,0.002,0.0,0.763892,False,False,none
+319,18,Milo,wire crimper,dusk_signal_workshop,0.76213,0.002,0.0,0.76013,False,False,none
+320,18,Ari,drawknife,river_mill_bridge,0.830978,0.009,0.0,0.821978,False,False,none
+321,18,Fay,glass tongs,roof_greenhouse_cistern,0.682732,0.002,0.0,0.680732,False,False,none
+322,18,Nia,binding awl,archive_public_kiosk,0.763892,0.002,0.0,0.761892,False,False,none
+323,18,Milo,wire crimper,dusk_signal_workshop,0.76013,0.002,0.0,0.75813,False,False,none
+324,19,Ari,drawknife,river_mill_bridge,0.821978,0.002,0.0,0.819978,False,False,none
+325,19,Fay,glass tongs,roof_greenhouse_cistern,0.680732,0.002,0.0,0.678732,False,False,none
+326,19,Nia,binding awl,archive_public_kiosk,0.761892,0.009,0.0,0.752892,False,False,none
+327,19,Milo,wire crimper,dusk_signal_workshop,0.75813,0.002,0.0,0.75613,False,False,none
+328,19,Ari,drawknife,river_mill_bridge,0.819978,0.002,0.0,0.817978,False,False,none
+329,19,Fay,glass tongs,roof_greenhouse_cistern,0.678732,0.009,0.0,0.669732,False,False,none
+330,19,Nia,binding awl,archive_public_kiosk,0.752892,0.002,0.0,0.750892,False,False,none
+331,19,Milo,wire crimper,dusk_signal_workshop,0.75613,0.002,0.0,0.75413,False,False,none
+332,19,Ari,drawknife,river_mill_bridge,0.817978,0.009,0.0,0.808978,False,False,none
+333,19,Fay,glass tongs,roof_greenhouse_cistern,0.669732,0.002,0.120704,0.788436,False,False,sharpen / oil / recalibrate
+334,19,Nia,binding awl,archive_public_kiosk,0.750892,0.002,0.0,0.748892,False,False,none
+335,19,Milo,wire crimper,dusk_signal_workshop,0.75413,0.009,0.0,0.74513,False,False,none
+336,19,Ari,drawknife,river_mill_bridge,0.808978,0.002,0.0,0.806978,False,False,none
+337,19,Fay,glass tongs,roof_greenhouse_cistern,0.788436,0.002,0.0,0.786436,False,False,none
+338,19,Nia,binding awl,archive_public_kiosk,0.748892,0.009,0.0,0.739892,False,False,none
+339,19,Milo,wire crimper,dusk_signal_workshop,0.74513,0.002,0.0,0.74313,False,False,none
+340,19,Ari,drawknife,river_mill_bridge,0.806978,0.002,0.0,0.804978,False,False,none
+341,19,Fay,glass tongs,roof_greenhouse_cistern,0.786436,0.002,0.0,0.784436,False,False,none
+342,20,Milo,wire crimper,dusk_signal_workshop,0.74313,0.002,0.0,0.74113,False,False,none
+343,20,Ari,drawknife,river_mill_bridge,0.804978,0.002,0.0,0.802978,False,False,none
+344,20,Fay,glass tongs,roof_greenhouse_cistern,0.784436,0.009,0.0,0.775436,False,False,none
+345,20,Nia,binding awl,archive_public_kiosk,0.739892,0.002,0.0,0.737892,False,False,none
+346,20,Milo,wire crimper,dusk_signal_workshop,0.74113,0.002,0.0,0.73913,False,False,none
+347,20,Ari,drawknife,river_mill_bridge,0.802978,0.009,0.0,0.793978,False,False,none
+348,20,Fay,glass tongs,roof_greenhouse_cistern,0.775436,0.002,0.0,0.773436,False,False,none
+349,20,Nia,binding awl,archive_public_kiosk,0.737892,0.002,0.0,0.735892,False,False,none
+350,20,Milo,wire crimper,dusk_signal_workshop,0.73913,0.009,0.0,0.73013,False,False,none
+351,20,Ari,drawknife,river_mill_bridge,0.793978,0.002,0.0,0.791978,False,False,none
+352,20,Fay,glass tongs,roof_greenhouse_cistern,0.773436,0.002,0.0,0.771436,False,False,none
+353,20,Nia,binding awl,archive_public_kiosk,0.735892,0.009,0.0,0.726892,False,False,none
+354,20,Milo,wire crimper,dusk_signal_workshop,0.73013,0.002,0.0,0.72813,False,False,none
+355,20,Ari,drawknife,river_mill_bridge,0.791978,0.002,0.0,0.789978,False,False,none
+356,20,Fay,glass tongs,roof_greenhouse_cistern,0.771436,0.009,0.0,0.762436,False,False,none
+357,20,Nia,binding awl,archive_public_kiosk,0.726892,0.002,0.0,0.724892,False,False,none
+358,20,Milo,wire crimper,dusk_signal_workshop,0.72813,0.002,0.0,0.72613,False,False,none
+359,20,Ari,drawknife,river_mill_bridge,0.789978,0.002,0.0,0.787978,False,False,none
+360,21,Fay,glass tongs,roof_greenhouse_cistern,0.762436,0.002,0.0,0.760436,False,False,none
+361,21,Nia,binding awl,archive_public_kiosk,0.724892,0.002,0.0,0.722892,False,False,none
+362,21,Milo,wire crimper,dusk_signal_workshop,0.72613,0.009,0.0,0.71713,False,False,none
+363,21,Ari,drawknife,river_mill_bridge,0.787978,0.002,0.0,0.785978,False,False,none
+364,21,Fay,glass tongs,roof_greenhouse_cistern,0.760436,0.002,0.0,0.758436,False,False,none
+365,21,Nia,binding awl,archive_public_kiosk,0.722892,0.009,0.0,0.713892,False,False,none
+366,21,Milo,wire crimper,dusk_signal_workshop,0.71713,0.009,0.0,0.70813,False,False,none
+367,21,Ari,drawknife,river_mill_bridge,0.785978,0.002,0.0,0.783978,False,False,none
+368,21,Fay,glass tongs,roof_greenhouse_cistern,0.758436,0.009,0.121792,0.871228,False,False,sharpen / oil / recalibrate
+369,21,Nia,binding awl,archive_public_kiosk,0.713892,0.002,0.0,0.711892,False,False,none
+370,21,Milo,wire crimper,dusk_signal_workshop,0.70813,0.002,0.0,0.70613,False,False,none
+371,21,Ari,drawknife,river_mill_bridge,0.783978,0.009,0.0,0.774978,False,False,none
+372,21,Fay,glass tongs,roof_greenhouse_cistern,0.871228,0.002,0.0,0.869228,False,False,none
+373,21,Nia,binding awl,archive_public_kiosk,0.711892,0.002,0.0,0.709892,False,False,none
+374,21,Milo,wire crimper,dusk_signal_workshop,0.70613,0.009,0.0,0.69713,False,False,none
+375,21,Ari,drawknife,river_mill_bridge,0.774978,0.002,0.0,0.772978,False,False,none
+376,21,Fay,glass tongs,roof_greenhouse_cistern,0.869228,0.002,0.0,0.867228,False,False,none
+377,21,Nia,binding awl,archive_public_kiosk,0.709892,0.009,0.0,0.700892,False,False,none
+378,22,Milo,wire crimper,dusk_signal_workshop,0.69713,0.002,0.0,0.69513,False,False,none
+379,22,Ari,drawknife,river_mill_bridge,0.772978,0.002,0.0,0.770978,False,False,none
+380,22,Fay,glass tongs,roof_greenhouse_cistern,0.867228,0.009,0.0,0.858228,False,False,none
+381,22,Nia,binding awl,archive_public_kiosk,0.700892,0.002,0.0,0.698892,False,False,none
+382,22,Milo,wire crimper,dusk_signal_workshop,0.69513,0.002,0.0,0.69313,False,False,none
+383,22,Ari,drawknife,river_mill_bridge,0.770978,0.009,0.0,0.761978,False,False,none
+384,22,Fay,glass tongs,roof_greenhouse_cistern,0.858228,0.002,0.0,0.856228,False,False,none
+385,22,Nia,binding awl,archive_public_kiosk,0.698892,0.002,0.0,0.696892,False,False,none
+386,22,Milo,wire crimper,dusk_signal_workshop,0.69313,0.009,0.0,0.68413,False,False,none
+387,22,Ari,drawknife,river_mill_bridge,0.761978,0.002,0.0,0.759978,False,False,none
+388,22,Fay,glass tongs,roof_greenhouse_cistern,0.856228,0.002,0.0,0.854228,False,False,none
+389,22,Nia,binding awl,archive_public_kiosk,0.696892,0.009,0.0,0.687892,False,False,none
+390,22,Milo,wire crimper,dusk_signal_workshop,0.68413,0.002,0.0,0.68213,False,False,none
+391,22,Ari,drawknife,river_mill_bridge,0.759978,0.002,0.12084,0.878818,False,False,sharpen / oil / recalibrate
+392,22,Fay,glass tongs,roof_greenhouse_cistern,0.854228,0.009,0.0,0.845228,False,False,none
+393,22,Nia,binding awl,archive_public_kiosk,0.687892,0.002,0.0,0.685892,False,False,none
+394,22,Milo,wire crimper,dusk_signal_workshop,0.68213,0.002,0.0,0.68013,False,False,none
+395,22,Ari,drawknife,river_mill_bridge,0.878818,0.002,0.0,0.876818,False,False,none
+396,23,Fay,glass tongs,roof_greenhouse_cistern,0.845228,0.002,0.0,0.843228,False,False,none
+397,23,Nia,binding awl,archive_public_kiosk,0.685892,0.002,0.0,0.683892,False,False,none
+398,23,Milo,wire crimper,dusk_signal_workshop,0.68013,0.009,0.0,0.67113,False,False,none
+399,23,Ari,drawknife,river_mill_bridge,0.876818,0.002,0.0,0.874818,False,False,none
+400,23,Fay,glass tongs,roof_greenhouse_cistern,0.843228,0.002,0.0,0.841228,False,False,none
+401,23,Nia,binding awl,archive_public_kiosk,0.683892,0.009,0.0,0.674892,False,False,none
+402,23,Milo,wire crimper,dusk_signal_workshop,0.67113,0.002,0.0,0.66913,False,False,none
+403,23,Ari,drawknife,river_mill_bridge,0.874818,0.009,0.0,0.865818,False,False,none
+404,23,Fay,glass tongs,roof_greenhouse_cistern,0.841228,0.009,0.0,0.832228,False,False,none
+405,23,Nia,binding awl,archive_public_kiosk,0.674892,0.002,0.125124,0.798016,False,False,sharpen / oil / recalibrate
+406,23,Milo,wire crimper,dusk_signal_workshop,0.66913,0.002,0.0,0.66713,False,False,none
+407,23,Ari,drawknife,river_mill_bridge,0.865818,0.009,0.0,0.856818,False,False,none
+408,23,Fay,glass tongs,roof_greenhouse_cistern,0.832228,0.002,0.0,0.830228,False,False,none
+409,23,Nia,binding awl,archive_public_kiosk,0.798016,0.002,0.0,0.796016,False,False,none
+410,23,Milo,wire crimper,dusk_signal_workshop,0.66713,0.009,0.0,0.65813,False,False,none
+411,23,Ari,drawknife,river_mill_bridge,0.856818,0.002,0.0,0.854818,False,False,none
+412,23,Fay,glass tongs,roof_greenhouse_cistern,0.830228,0.009,0.0,0.821228,False,False,none
+413,23,Nia,binding awl,archive_public_kiosk,0.796016,0.002,0.0,0.794016,False,False,none
+414,24,Ari,drawknife,river_mill_bridge,0.854818,0.002,0.121724,0.97,False,False,sharpen / oil / recalibrate
+415,24,Fay,glass tongs,roof_greenhouse_cistern,0.821228,0.002,0.0,0.819228,False,False,none
+416,24,Nia,binding awl,archive_public_kiosk,0.794016,0.009,0.0,0.785016,False,False,none
+417,24,Milo,wire crimper,dusk_signal_workshop,0.65813,0.009,0.0,0.64913,False,False,none
+418,24,Ari,drawknife,river_mill_bridge,0.97,0.002,0.0,0.968,False,False,none
+419,24,Fay,glass tongs,roof_greenhouse_cistern,0.819228,0.009,0.0,0.810228,False,False,none
+420,24,Nia,binding awl,archive_public_kiosk,0.785016,0.002,0.0,0.783016,False,False,none
+421,24,Milo,wire crimper,dusk_signal_workshop,0.64913,0.002,0.0,0.64713,False,False,none
+422,24,Ari,drawknife,river_mill_bridge,0.968,0.009,0.0,0.959,False,False,none
+423,24,Fay,glass tongs,roof_greenhouse_cistern,0.810228,0.002,0.0,0.808228,False,False,none
+424,24,Nia,binding awl,archive_public_kiosk,0.783016,0.002,0.0,0.781016,False,False,none
+425,24,Milo,wire crimper,dusk_signal_workshop,0.64713,0.009,0.0,0.63813,False,False,none
+426,24,Ari,drawknife,river_mill_bridge,0.959,0.002,0.0,0.957,False,False,none
+427,24,Fay,glass tongs,roof_greenhouse_cistern,0.808228,0.002,0.0,0.806228,False,False,none
+428,24,Nia,binding awl,archive_public_kiosk,0.781016,0.009,0.0,0.772016,False,False,none
+429,24,Milo,wire crimper,dusk_signal_workshop,0.63813,0.002,0.0,0.63613,False,False,none
+430,24,Ari,drawknife,river_mill_bridge,0.957,0.009,0.0,0.948,False,False,none
+431,24,Fay,glass tongs,roof_greenhouse_cistern,0.806228,0.002,0.0,0.804228,False,False,none
+432,25,Nia,binding awl,archive_public_kiosk,0.772016,0.002,0.0,0.770016,False,False,none
+433,25,Milo,wire crimper,dusk_signal_workshop,0.63613,0.002,0.0,0.63413,False,False,none
+434,25,Ari,drawknife,river_mill_bridge,0.948,0.009,0.0,0.939,False,False,none
+435,25,Fay,glass tongs,roof_greenhouse_cistern,0.804228,0.002,0.0,0.802228,False,False,none
+436,25,Nia,binding awl,archive_public_kiosk,0.770016,0.002,0.0,0.768016,False,False,none
+437,25,Milo,wire crimper,dusk_signal_workshop,0.63413,0.009,0.0,0.62513,False,False,none
+438,25,Ari,drawknife,river_mill_bridge,0.939,0.002,0.0,0.937,False,False,none
+439,25,Fay,glass tongs,roof_greenhouse_cistern,0.802228,0.002,0.0,0.800228,False,False,none
+440,25,Nia,binding awl,archive_public_kiosk,0.768016,0.009,0.0,0.759016,False,False,none
+441,25,Milo,wire crimper,dusk_signal_workshop,0.62513,0.002,0.12628,0.74941,False,False,sharpen / oil / recalibrate
+442,25,Ari,drawknife,river_mill_bridge,0.937,0.002,0.0,0.935,False,False,none
+443,25,Fay,glass tongs,roof_greenhouse_cistern,0.800228,0.009,0.0,0.791228,False,False,none
+444,25,Nia,binding awl,archive_public_kiosk,0.759016,0.002,0.0,0.757016,False,False,none
+445,25,Milo,wire crimper,dusk_signal_workshop,0.74941,0.002,0.0,0.74741,False,False,none
+446,25,Ari,drawknife,river_mill_bridge,0.935,0.009,0.0,0.926,False,False,none
+447,25,Fay,glass tongs,roof_greenhouse_cistern,0.791228,0.002,0.0,0.789228,False,False,none
+448,25,Nia,binding awl,archive_public_kiosk,0.757016,0.002,0.0,0.755016,False,False,none
+449,25,Milo,wire crimper,dusk_signal_workshop,0.74741,0.002,0.0,0.74541,False,False,none
+450,26,Ari,drawknife,river_mill_bridge,0.926,0.002,0.0,0.924,False,False,none
+451,26,Fay,glass tongs,roof_greenhouse_cistern,0.789228,0.002,0.0,0.787228,False,False,none
+452,26,Nia,binding awl,archive_public_kiosk,0.755016,0.009,0.0,0.746016,False,False,none
+453,26,Milo,wire crimper,dusk_signal_workshop,0.74541,0.002,0.0,0.74341,False,False,none
+454,26,Ari,drawknife,river_mill_bridge,0.924,0.009,0.0,0.915,False,False,none
+455,26,Fay,glass tongs,roof_greenhouse_cistern,0.787228,0.009,0.0,0.778228,False,False,none
+456,26,Nia,binding awl,archive_public_kiosk,0.746016,0.002,0.0,0.744016,False,False,none
+457,26,Milo,wire crimper,dusk_signal_workshop,0.74341,0.002,0.0,0.74141,False,False,none
+458,26,Ari,drawknife,river_mill_bridge,0.915,0.009,0.0,0.906,False,False,none
+459,26,Fay,glass tongs,roof_greenhouse_cistern,0.778228,0.002,0.0,0.776228,False,False,none
+460,26,Nia,binding awl,archive_public_kiosk,0.744016,0.002,0.0,0.742016,False,False,none
+461,26,Milo,wire crimper,dusk_signal_workshop,0.74141,0.009,0.0,0.73241,False,False,none
+462,26,Ari,drawknife,river_mill_bridge,0.906,0.002,0.0,0.904,False,False,none
+463,26,Fay,glass tongs,roof_greenhouse_cistern,0.776228,0.009,0.0,0.767228,False,False,none
+464,26,Nia,binding awl,archive_public_kiosk,0.742016,0.009,0.0,0.733016,False,False,none
+465,26,Milo,wire crimper,dusk_signal_workshop,0.73241,0.002,0.0,0.73041,False,False,none
+466,26,Ari,drawknife,river_mill_bridge,0.904,0.002,0.0,0.902,False,False,none
+467,26,Fay,glass tongs,roof_greenhouse_cistern,0.767228,0.002,0.0,0.765228,False,False,none
+468,27,Nia,binding awl,archive_public_kiosk,0.733016,0.002,0.0,0.731016,False,False,none
+469,27,Milo,wire crimper,dusk_signal_workshop,0.73041,0.002,0.0,0.72841,False,False,none
+470,27,Ari,drawknife,river_mill_bridge,0.902,0.009,0.0,0.893,False,False,none
+471,27,Fay,glass tongs,roof_greenhouse_cistern,0.765228,0.002,0.0,0.763228,False,False,none
+472,27,Nia,binding awl,archive_public_kiosk,0.731016,0.002,0.0,0.729016,False,False,none
+473,27,Milo,wire crimper,dusk_signal_workshop,0.72841,0.009,0.0,0.71941,False,False,none
+474,27,Ari,drawknife,river_mill_bridge,0.893,0.002,0.0,0.891,False,False,none
+475,27,Fay,glass tongs,roof_greenhouse_cistern,0.763228,0.002,0.0,0.761228,False,False,none
+476,27,Nia,binding awl,archive_public_kiosk,0.729016,0.009,0.0,0.720016,False,False,none
+477,27,Milo,wire crimper,dusk_signal_workshop,0.71941,0.002,0.0,0.71741,False,False,none
+478,27,Ari,drawknife,river_mill_bridge,0.891,0.002,0.0,0.889,False,False,none
+479,27,Fay,glass tongs,roof_greenhouse_cistern,0.761228,0.009,0.0,0.752228,False,False,none
+480,27,Nia,binding awl,archive_public_kiosk,0.720016,0.002,0.0,0.718016,False,False,none
+481,27,Milo,wire crimper,dusk_signal_workshop,0.71741,0.002,0.0,0.71541,False,False,none
+482,27,Ari,drawknife,river_mill_bridge,0.889,0.009,0.0,0.88,False,False,none
+483,27,Fay,glass tongs,roof_greenhouse_cistern,0.752228,0.002,0.126144,0.876372,False,False,sharpen / oil / recalibrate
+484,27,Nia,binding awl,archive_public_kiosk,0.718016,0.002,0.0,0.716016,False,False,none
+485,27,Milo,wire crimper,dusk_signal_workshop,0.71541,0.002,0.0,0.71341,False,False,none
+486,28,Fay,glass tongs,roof_greenhouse_cistern,0.876372,0.002,0.0,0.874372,False,False,none
+487,28,Nia,binding awl,archive_public_kiosk,0.716016,0.002,0.0,0.714016,False,False,none
+488,28,Milo,wire crimper,dusk_signal_workshop,0.71341,0.009,0.0,0.70441,False,False,none
+489,28,Ari,drawknife,river_mill_bridge,0.88,0.002,0.0,0.878,False,False,none
+490,28,Fay,glass tongs,roof_greenhouse_cistern,0.874372,0.002,0.0,0.872372,False,False,none
+491,28,Nia,binding awl,archive_public_kiosk,0.714016,0.009,0.0,0.705016,False,False,none
+492,28,Milo,wire crimper,dusk_signal_workshop,0.70441,0.002,0.0,0.70241,False,False,none
+493,28,Ari,drawknife,river_mill_bridge,0.878,0.002,0.0,0.876,False,False,none
+494,28,Fay,glass tongs,roof_greenhouse_cistern,0.872372,0.009,0.0,0.863372,False,False,none
+495,28,Nia,binding awl,archive_public_kiosk,0.705016,0.002,0.0,0.703016,False,False,none
+496,28,Milo,wire crimper,dusk_signal_workshop,0.70241,0.002,0.0,0.70041,False,False,none
+497,28,Ari,drawknife,river_mill_bridge,0.876,0.009,0.0,0.867,False,False,none
+498,28,Fay,glass tongs,roof_greenhouse_cistern,0.863372,0.002,0.0,0.861372,False,False,none
+499,28,Nia,binding awl,archive_public_kiosk,0.703016,0.002,0.0,0.701016,False,False,none
+500,28,Milo,wire crimper,dusk_signal_workshop,0.70041,0.009,0.0,0.69141,False,False,none
+501,28,Ari,drawknife,river_mill_bridge,0.867,0.002,0.0,0.865,False,False,none
+502,28,Fay,glass tongs,roof_greenhouse_cistern,0.861372,0.002,0.0,0.859372,False,False,none
+503,28,Nia,binding awl,archive_public_kiosk,0.701016,0.002,0.0,0.699016,False,False,none
+504,29,Milo,wire crimper,dusk_signal_workshop,0.69141,0.002,0.0,0.68941,False,False,none
+505,29,Ari,drawknife,river_mill_bridge,0.865,0.009,0.0,0.856,False,False,none
+506,29,Fay,glass tongs,roof_greenhouse_cistern,0.859372,0.009,0.0,0.850372,False,False,none
+507,29,Nia,binding awl,archive_public_kiosk,0.699016,0.002,0.0,0.697016,False,False,none
+508,29,Milo,wire crimper,dusk_signal_workshop,0.68941,0.002,0.0,0.68741,False,False,none
+509,29,Ari,drawknife,river_mill_bridge,0.856,0.009,0.0,0.847,False,False,none
+510,29,Fay,glass tongs,roof_greenhouse_cistern,0.850372,0.002,0.0,0.848372,False,False,none
+511,29,Nia,binding awl,archive_public_kiosk,0.697016,0.002,0.0,0.695016,False,False,none
+512,29,Milo,wire crimper,dusk_signal_workshop,0.68741,0.009,0.0,0.67841,False,False,none
+513,29,Ari,drawknife,river_mill_bridge,0.847,0.002,0.0,0.845,False,False,none
+514,29,Fay,glass tongs,roof_greenhouse_cistern,0.848372,0.009,0.0,0.839372,False,False,none
+515,29,Nia,binding awl,archive_public_kiosk,0.695016,0.009,0.0,0.686016,False,False,none
+516,29,Milo,wire crimper,dusk_signal_workshop,0.67841,0.002,0.0,0.67641,False,False,none
+517,29,Ari,drawknife,river_mill_bridge,0.845,0.002,0.0,0.843,False,False,none
+518,29,Fay,glass tongs,roof_greenhouse_cistern,0.839372,0.009,0.0,0.830372,False,False,none
+519,29,Nia,binding awl,archive_public_kiosk,0.686016,0.002,0.0,0.684016,False,False,none
+520,29,Milo,wire crimper,dusk_signal_workshop,0.67641,0.002,0.12628,0.80069,False,False,sharpen / oil / recalibrate
+521,29,Ari,drawknife,river_mill_bridge,0.843,0.002,0.0,0.841,False,False,none
+522,30,Fay,glass tongs,roof_greenhouse_cistern,0.830372,0.002,0.0,0.828372,False,False,none
+523,30,Nia,binding awl,archive_public_kiosk,0.684016,0.002,0.0,0.682016,False,False,none
+524,30,Milo,wire crimper,dusk_signal_workshop,0.80069,0.009,0.0,0.79169,False,False,none
+525,30,Ari,drawknife,river_mill_bridge,0.841,0.002,0.0,0.839,False,False,none
+526,30,Fay,glass tongs,roof_greenhouse_cistern,0.828372,0.002,0.0,0.826372,False,False,none
+527,30,Nia,binding awl,archive_public_kiosk,0.682016,0.009,0.0,0.673016,False,False,none
+528,30,Milo,wire crimper,dusk_signal_workshop,0.79169,0.002,0.0,0.78969,False,False,none
+529,30,Ari,drawknife,river_mill_bridge,0.839,0.002,0.0,0.837,False,False,none
+530,30,Fay,glass tongs,roof_greenhouse_cistern,0.826372,0.009,0.0,0.817372,False,False,none
+531,30,Nia,binding awl,archive_public_kiosk,0.673016,0.002,0.12628,0.797296,False,False,sharpen / oil / recalibrate
+532,30,Milo,wire crimper,dusk_signal_workshop,0.78969,0.002,0.0,0.78769,False,False,none
+533,30,Ari,drawknife,river_mill_bridge,0.837,0.009,0.0,0.828,False,False,none
+534,30,Fay,glass tongs,roof_greenhouse_cistern,0.817372,0.002,0.0,0.815372,False,False,none
+535,30,Nia,binding awl,archive_public_kiosk,0.797296,0.002,0.0,0.795296,False,False,none
+536,30,Milo,wire crimper,dusk_signal_workshop,0.78769,0.009,0.0,0.77869,False,False,none
+537,30,Ari,drawknife,river_mill_bridge,0.828,0.002,0.0,0.826,False,False,none
+538,30,Fay,glass tongs,roof_greenhouse_cistern,0.815372,0.002,0.0,0.813372,False,False,none
+539,30,Nia,binding awl,archive_public_kiosk,0.795296,0.002,0.0,0.793296,False,False,none
+540,31,Milo,wire crimper,dusk_signal_workshop,0.77869,0.002,0.0,0.77669,False,False,none
+541,31,Ari,drawknife,river_mill_bridge,0.826,0.002,0.0,0.824,False,False,none
+542,31,Fay,glass tongs,roof_greenhouse_cistern,0.813372,0.009,0.0,0.804372,False,False,none
+543,31,Nia,binding awl,archive_public_kiosk,0.793296,0.002,0.0,0.791296,False,False,none
+544,31,Milo,wire crimper,dusk_signal_workshop,0.77669,0.002,0.0,0.77469,False,False,none
+545,31,Ari,drawknife,river_mill_bridge,0.824,0.009,0.0,0.815,False,False,none
+546,31,Fay,glass tongs,roof_greenhouse_cistern,0.804372,0.002,0.0,0.802372,False,False,none
+547,31,Nia,binding awl,archive_public_kiosk,0.791296,0.009,0.0,0.782296,False,False,none
+548,31,Milo,wire crimper,dusk_signal_workshop,0.77469,0.009,0.0,0.76569,False,False,none
+549,31,Ari,drawknife,river_mill_bridge,0.815,0.009,0.0,0.806,False,False,none
+550,31,Fay,glass tongs,roof_greenhouse_cistern,0.802372,0.002,0.0,0.800372,False,False,none
+551,31,Nia,binding awl,archive_public_kiosk,0.782296,0.009,0.0,0.773296,False,False,none
+552,31,Milo,wire crimper,dusk_signal_workshop,0.76569,0.002,0.0,0.76369,False,False,none
+553,31,Ari,drawknife,river_mill_bridge,0.806,0.002,0.0,0.804,False,False,none
+554,31,Fay,glass tongs,roof_greenhouse_cistern,0.800372,0.009,0.0,0.791372,False,False,none
+555,31,Nia,binding awl,archive_public_kiosk,0.773296,0.002,0.0,0.771296,False,False,none
+556,31,Milo,wire crimper,dusk_signal_workshop,0.76369,0.009,0.0,0.75469,False,False,none
+557,31,Ari,drawknife,river_mill_bridge,0.804,0.002,0.0,0.802,False,False,none
+558,32,Nia,binding awl,archive_public_kiosk,0.771296,0.002,0.0,0.769296,False,False,none
+559,32,Milo,wire crimper,dusk_signal_workshop,0.75469,0.002,0.0,0.75269,False,False,none
+560,32,Ari,drawknife,river_mill_bridge,0.802,0.009,0.0,0.793,False,False,none
+561,32,Fay,glass tongs,roof_greenhouse_cistern,0.791372,0.002,0.0,0.789372,False,False,none
+562,32,Nia,binding awl,archive_public_kiosk,0.769296,0.002,0.0,0.767296,False,False,none
+563,32,Milo,wire crimper,dusk_signal_workshop,0.75269,0.009,0.0,0.74369,False,False,none
+564,32,Ari,drawknife,river_mill_bridge,0.793,0.002,0.0,0.791,False,False,none
+565,32,Fay,glass tongs,roof_greenhouse_cistern,0.789372,0.009,0.0,0.780372,False,False,none
+566,32,Nia,binding awl,archive_public_kiosk,0.767296,0.009,0.0,0.758296,False,False,none
+567,32,Milo,wire crimper,dusk_signal_workshop,0.74369,0.002,0.0,0.74169,False,False,none
+568,32,Ari,drawknife,river_mill_bridge,0.791,0.002,0.0,0.789,False,False,none
+569,32,Fay,glass tongs,roof_greenhouse_cistern,0.780372,0.009,0.0,0.771372,False,False,none
+570,32,Nia,binding awl,archive_public_kiosk,0.758296,0.002,0.0,0.756296,False,False,none
+571,32,Milo,wire crimper,dusk_signal_workshop,0.74169,0.002,0.0,0.73969,False,False,none
+572,32,Ari,drawknife,river_mill_bridge,0.789,0.009,0.0,0.78,False,False,none
+573,32,Fay,glass tongs,roof_greenhouse_cistern,0.771372,0.002,0.0,0.769372,False,False,none
+574,32,Nia,binding awl,archive_public_kiosk,0.756296,0.009,0.0,0.747296,False,False,none
+575,32,Milo,wire crimper,dusk_signal_workshop,0.73969,0.002,0.12628,0.86397,False,False,sharpen / oil / recalibrate
+576,33,Ari,drawknife,river_mill_bridge,0.78,0.002,0.0,0.778,False,False,none
+577,33,Fay,glass tongs,roof_greenhouse_cistern,0.769372,0.002,0.0,0.767372,False,False,none
+578,33,Nia,binding awl,archive_public_kiosk,0.747296,0.009,0.0,0.738296,False,False,none
+579,33,Milo,wire crimper,dusk_signal_workshop,0.86397,0.002,0.0,0.86197,False,False,none
+580,33,Ari,drawknife,river_mill_bridge,0.778,0.002,0.0,0.776,False,False,none
+581,33,Fay,glass tongs,roof_greenhouse_cistern,0.767372,0.009,0.0,0.758372,False,False,none
+582,33,Nia,binding awl,archive_public_kiosk,0.738296,0.002,0.0,0.736296,False,False,none
+583,33,Milo,wire crimper,dusk_signal_workshop,0.86197,0.002,0.0,0.85997,False,False,none
+584,33,Ari,drawknife,river_mill_bridge,0.776,0.009,0.0,0.767,False,False,none
+585,33,Fay,glass tongs,roof_greenhouse_cistern,0.758372,0.002,0.0,0.756372,False,False,none
+586,33,Nia,binding awl,archive_public_kiosk,0.736296,0.002,0.0,0.734296,False,False,none
+587,33,Milo,wire crimper,dusk_signal_workshop,0.85997,0.009,0.0,0.85097,False,False,none
+588,33,Ari,drawknife,river_mill_bridge,0.767,0.002,0.0,0.765,False,False,none
+589,33,Fay,glass tongs,roof_greenhouse_cistern,0.756372,0.002,0.0,0.754372,False,False,none
+590,33,Nia,binding awl,archive_public_kiosk,0.734296,0.009,0.0,0.725296,False,False,none
+591,33,Milo,wire crimper,dusk_signal_workshop,0.85097,0.002,0.0,0.84897,False,False,none
+592,33,Ari,drawknife,river_mill_bridge,0.765,0.002,0.0,0.763,False,False,none
+593,33,Fay,glass tongs,roof_greenhouse_cistern,0.754372,0.002,0.0,0.752372,False,False,none
+594,34,Nia,binding awl,archive_public_kiosk,0.725296,0.002,0.0,0.723296,False,False,none
+595,34,Milo,wire crimper,dusk_signal_workshop,0.84897,0.002,0.0,0.84697,False,False,none
+596,34,Ari,drawknife,river_mill_bridge,0.763,0.009,0.0,0.754,False,False,none
+597,34,Fay,glass tongs,roof_greenhouse_cistern,0.752372,0.002,0.0,0.750372,False,False,none
+598,34,Nia,binding awl,archive_public_kiosk,0.723296,0.009,0.0,0.714296,False,False,none
+599,34,Milo,wire crimper,dusk_signal_workshop,0.84697,0.009,0.0,0.83797,False,False,none
+600,34,Ari,drawknife,river_mill_bridge,0.754,0.009,0.0,0.745,False,False,none
+601,34,Fay,glass tongs,roof_greenhouse_cistern,0.750372,0.002,0.0,0.748372,False,False,none
+602,34,Nia,binding awl,archive_public_kiosk,0.714296,0.009,0.0,0.705296,False,False,none
+603,34,Milo,wire crimper,dusk_signal_workshop,0.83797,0.002,0.0,0.83597,False,False,none
+604,34,Ari,drawknife,river_mill_bridge,0.745,0.002,0.0,0.743,False,False,none
+605,34,Fay,glass tongs,roof_greenhouse_cistern,0.748372,0.009,0.0,0.739372,False,False,none
+606,34,Nia,binding awl,archive_public_kiosk,0.705296,0.002,0.0,0.703296,False,False,none
+607,34,Milo,wire crimper,dusk_signal_workshop,0.83597,0.009,0.0,0.82697,False,False,none
+608,34,Ari,drawknife,river_mill_bridge,0.743,0.009,0.0,0.734,False,False,none
+609,34,Fay,glass tongs,roof_greenhouse_cistern,0.739372,0.009,0.0,0.730372,False,False,none
+610,34,Nia,binding awl,archive_public_kiosk,0.703296,0.002,0.0,0.701296,False,False,none
+611,34,Milo,wire crimper,dusk_signal_workshop,0.82697,0.002,0.0,0.82497,False,False,none
+612,35,Ari,drawknife,river_mill_bridge,0.734,0.002,0.0,0.732,False,False,none
+613,35,Fay,glass tongs,roof_greenhouse_cistern,0.730372,0.002,0.0,0.728372,False,False,none
+614,35,Nia,binding awl,archive_public_kiosk,0.701296,0.009,0.0,0.692296,False,False,none
+615,35,Milo,wire crimper,dusk_signal_workshop,0.82497,0.002,0.0,0.82297,False,False,none
+616,35,Ari,drawknife,river_mill_bridge,0.732,0.002,0.0,0.73,False,False,none
+617,35,Fay,glass tongs,roof_greenhouse_cistern,0.728372,0.009,0.0,0.719372,False,False,none
+618,35,Nia,binding awl,archive_public_kiosk,0.692296,0.002,0.0,0.690296,False,False,none
+619,35,Milo,wire crimper,dusk_signal_workshop,0.82297,0.002,0.0,0.82097,False,False,none
+620,35,Ari,drawknife,river_mill_bridge,0.73,0.009,0.0,0.721,False,False,none
+621,35,Fay,glass tongs,roof_greenhouse_cistern,0.719372,0.002,0.12628,0.843652,False,False,sharpen / oil / recalibrate
+622,35,Nia,binding awl,archive_public_kiosk,0.690296,0.002,0.0,0.688296,False,False,none
+623,35,Milo,wire crimper,dusk_signal_workshop,0.82097,0.009,0.0,0.81197,False,False,none
+624,35,Ari,drawknife,river_mill_bridge,0.721,0.002,0.0,0.719,False,False,none
+625,35,Fay,glass tongs,roof_greenhouse_cistern,0.843652,0.002,0.0,0.841652,False,False,none
+626,35,Nia,binding awl,archive_public_kiosk,0.688296,0.009,0.0,0.679296,False,False,none
+627,35,Milo,wire crimper,dusk_signal_workshop,0.81197,0.002,0.0,0.80997,False,False,none
+628,35,Ari,drawknife,river_mill_bridge,0.719,0.002,0.0,0.717,False,False,none
+629,35,Fay,glass tongs,roof_greenhouse_cistern,0.841652,0.002,0.0,0.839652,False,False,none
+630,36,Milo,wire crimper,dusk_signal_workshop,0.80997,0.002,0.0,0.80797,False,False,none
+631,36,Ari,drawknife,river_mill_bridge,0.717,0.002,0.0,0.715,False,False,none
+632,36,Fay,glass tongs,roof_greenhouse_cistern,0.839652,0.009,0.0,0.830652,False,False,none
+633,36,Nia,binding awl,archive_public_kiosk,0.679296,0.002,0.0,0.677296,False,False,none
+634,36,Milo,wire crimper,dusk_signal_workshop,0.80797,0.002,0.0,0.80597,False,False,none
+635,36,Ari,drawknife,river_mill_bridge,0.715,0.009,0.0,0.706,False,False,none
+636,36,Fay,glass tongs,roof_greenhouse_cistern,0.830652,0.002,0.0,0.828652,False,False,none
+637,36,Nia,binding awl,archive_public_kiosk,0.677296,0.002,0.0,0.675296,False,False,none
+638,36,Milo,wire crimper,dusk_signal_workshop,0.80597,0.009,0.0,0.79697,False,False,none
+639,36,Ari,drawknife,river_mill_bridge,0.706,0.002,0.0,0.704,False,False,none
+640,36,Fay,glass tongs,roof_greenhouse_cistern,0.828652,0.002,0.0,0.826652,False,False,none
+641,36,Nia,binding awl,archive_public_kiosk,0.675296,0.009,0.0,0.666296,False,False,none
+642,36,Milo,wire crimper,dusk_signal_workshop,0.79697,0.002,0.0,0.79497,False,False,none
+643,36,Ari,drawknife,river_mill_bridge,0.704,0.002,0.0,0.702,False,False,none
+644,36,Fay,glass tongs,roof_greenhouse_cistern,0.826652,0.009,0.0,0.817652,False,False,none
+645,36,Nia,binding awl,archive_public_kiosk,0.666296,0.002,0.0,0.664296,False,False,none
+646,36,Milo,wire crimper,dusk_signal_workshop,0.79497,0.002,0.0,0.79297,False,False,none
+647,36,Ari,drawknife,river_mill_bridge,0.702,0.002,0.0,0.7,False,False,none
+648,37,Fay,glass tongs,roof_greenhouse_cistern,0.817652,0.002,0.0,0.815652,False,False,none
+649,37,Nia,binding awl,archive_public_kiosk,0.664296,0.009,0.0,0.655296,False,False,none
+650,37,Milo,wire crimper,dusk_signal_workshop,0.79297,0.009,0.0,0.78397,False,False,none
+651,37,Ari,drawknife,river_mill_bridge,0.7,0.009,0.0,0.691,False,False,none
+652,37,Fay,glass tongs,roof_greenhouse_cistern,0.815652,0.002,0.0,0.813652,False,False,none
+653,37,Nia,binding awl,archive_public_kiosk,0.655296,0.009,0.0,0.646296,False,False,none
+654,37,Milo,wire crimper,dusk_signal_workshop,0.78397,0.002,0.0,0.78197,False,False,none
+655,37,Ari,drawknife,river_mill_bridge,0.691,0.002,0.0,0.689,False,False,none
+656,37,Fay,glass tongs,roof_greenhouse_cistern,0.813652,0.009,0.0,0.804652,False,False,none
+657,37,Nia,binding awl,archive_public_kiosk,0.646296,0.002,0.12628,0.770576,False,False,sharpen / oil / recalibrate
+658,37,Milo,wire crimper,dusk_signal_workshop,0.78197,0.009,0.0,0.77297,False,False,none
+659,37,Ari,drawknife,river_mill_bridge,0.689,0.009,0.0,0.68,False,False,none
+660,37,Fay,glass tongs,roof_greenhouse_cistern,0.804652,0.009,0.0,0.795652,False,False,none
+661,37,Nia,binding awl,archive_public_kiosk,0.770576,0.002,0.0,0.768576,False,False,none
+662,37,Milo,wire crimper,dusk_signal_workshop,0.77297,0.009,0.0,0.76397,False,False,none
+663,37,Ari,drawknife,river_mill_bridge,0.68,0.002,0.0,0.678,False,False,none
+664,37,Fay,glass tongs,roof_greenhouse_cistern,0.795652,0.002,0.0,0.793652,False,False,none
+665,37,Nia,binding awl,archive_public_kiosk,0.768576,0.002,0.0,0.766576,False,False,none
+666,38,Milo,wire crimper,dusk_signal_workshop,0.76397,0.002,0.0,0.76197,False,False,none
+667,38,Ari,drawknife,river_mill_bridge,0.678,0.002,0.0,0.676,False,False,none
+668,38,Fay,glass tongs,roof_greenhouse_cistern,0.793652,0.009,0.0,0.784652,False,False,none
+669,38,Nia,binding awl,archive_public_kiosk,0.766576,0.002,0.0,0.764576,False,False,none
+670,38,Milo,wire crimper,dusk_signal_workshop,0.76197,0.002,0.0,0.75997,False,False,none
+671,38,Ari,drawknife,river_mill_bridge,0.676,0.009,0.0,0.667,False,False,none
+672,38,Fay,glass tongs,roof_greenhouse_cistern,0.784652,0.002,0.0,0.782652,False,False,none
+673,38,Nia,binding awl,archive_public_kiosk,0.764576,0.002,0.0,0.762576,False,False,none
+674,38,Milo,wire crimper,dusk_signal_workshop,0.75997,0.009,0.0,0.75097,False,False,none
+675,38,Ari,drawknife,river_mill_bridge,0.667,0.002,0.12628,0.79128,False,False,sharpen / oil / recalibrate
+676,38,Fay,glass tongs,roof_greenhouse_cistern,0.782652,0.002,0.0,0.780652,False,False,none
+677,38,Nia,binding awl,archive_public_kiosk,0.762576,0.009,0.0,0.753576,False,False,none
+678,38,Milo,wire crimper,dusk_signal_workshop,0.75097,0.002,0.0,0.74897,False,False,none
+679,38,Ari,drawknife,river_mill_bridge,0.79128,0.002,0.0,0.78928,False,False,none
+680,38,Fay,glass tongs,roof_greenhouse_cistern,0.780652,0.009,0.0,0.771652,False,False,none
+681,38,Nia,binding awl,archive_public_kiosk,0.753576,0.002,0.0,0.751576,False,False,none
+682,38,Milo,wire crimper,dusk_signal_workshop,0.74897,0.002,0.0,0.74697,False,False,none
+683,38,Ari,drawknife,river_mill_bridge,0.78928,0.002,0.0,0.78728,False,False,none
+684,39,Fay,glass tongs,roof_greenhouse_cistern,0.771652,0.009,0.0,0.762652,False,False,none
+685,39,Nia,binding awl,archive_public_kiosk,0.751576,0.002,0.0,0.749576,False,False,none
+686,39,Milo,wire crimper,dusk_signal_workshop,0.74697,0.009,0.0,0.73797,False,False,none
+687,39,Ari,drawknife,river_mill_bridge,0.78728,0.002,0.0,0.78528,False,False,none
+688,39,Fay,glass tongs,roof_greenhouse_cistern,0.762652,0.002,0.0,0.760652,False,False,none
+689,39,Nia,binding awl,archive_public_kiosk,0.749576,0.009,0.0,0.740576,False,False,none
+690,39,Milo,wire crimper,dusk_signal_workshop,0.73797,0.002,0.12628,0.86225,False,False,sharpen / oil / recalibrate
+691,39,Ari,drawknife,river_mill_bridge,0.78528,0.002,0.0,0.78328,False,False,none
+692,39,Fay,glass tongs,roof_greenhouse_cistern,0.760652,0.009,0.0,0.751652,False,False,none
+693,39,Nia,binding awl,archive_public_kiosk,0.740576,0.009,0.0,0.731576,False,False,none
+694,39,Milo,wire crimper,dusk_signal_workshop,0.86225,0.002,0.0,0.86025,False,False,none
+695,39,Ari,drawknife,river_mill_bridge,0.78328,0.009,0.0,0.77428,False,False,none
+696,39,Fay,glass tongs,roof_greenhouse_cistern,0.751652,0.002,0.0,0.749652,False,False,none
+697,39,Nia,binding awl,archive_public_kiosk,0.731576,0.002,0.0,0.729576,False,False,none
+698,39,Milo,wire crimper,dusk_signal_workshop,0.86025,0.009,0.0,0.85125,False,False,none
+699,39,Ari,drawknife,river_mill_bridge,0.77428,0.002,0.0,0.77228,False,False,none
+700,39,Fay,glass tongs,roof_greenhouse_cistern,0.749652,0.002,0.0,0.747652,False,False,none
+701,39,Nia,binding awl,archive_public_kiosk,0.729576,0.002,0.0,0.727576,False,False,none
+702,40,Ari,drawknife,river_mill_bridge,0.77228,0.009,0.0,0.76328,False,False,none
+703,40,Fay,glass tongs,roof_greenhouse_cistern,0.747652,0.002,0.0,0.745652,False,False,none
+704,40,Nia,binding awl,archive_public_kiosk,0.727576,0.009,0.0,0.718576,False,False,none
+705,40,Milo,wire crimper,dusk_signal_workshop,0.85125,0.002,0.0,0.84925,False,False,none
+706,40,Ari,drawknife,river_mill_bridge,0.76328,0.002,0.0,0.76128,False,False,none
+707,40,Fay,glass tongs,roof_greenhouse_cistern,0.745652,0.009,0.0,0.736652,False,False,none
+708,40,Nia,binding awl,archive_public_kiosk,0.718576,0.002,0.0,0.716576,False,False,none
+709,40,Milo,wire crimper,dusk_signal_workshop,0.84925,0.009,0.0,0.84025,False,False,none
+710,40,Ari,drawknife,river_mill_bridge,0.76128,0.009,0.0,0.75228,False,False,none
+711,40,Fay,glass tongs,roof_greenhouse_cistern,0.736652,0.009,0.0,0.727652,False,False,none
+712,40,Nia,binding awl,archive_public_kiosk,0.716576,0.002,0.0,0.714576,False,False,none
+713,40,Milo,wire crimper,dusk_signal_workshop,0.84025,0.009,0.0,0.83125,False,False,none
+714,40,Ari,drawknife,river_mill_bridge,0.75228,0.002,0.0,0.75028,False,False,none
+715,40,Fay,glass tongs,roof_greenhouse_cistern,0.727652,0.002,0.0,0.725652,False,False,none
+716,40,Nia,binding awl,archive_public_kiosk,0.714576,0.009,0.0,0.705576,False,False,none
+717,40,Milo,wire crimper,dusk_signal_workshop,0.83125,0.002,0.0,0.82925,False,False,none
+718,40,Ari,drawknife,river_mill_bridge,0.75028,0.002,0.0,0.74828,False,False,none
+719,40,Fay,glass tongs,roof_greenhouse_cistern,0.725652,0.002,0.0,0.723652,False,False,none
+720,41,Nia,binding awl,archive_public_kiosk,0.705576,0.002,0.0,0.703576,False,False,none
+721,41,Milo,wire crimper,dusk_signal_workshop,0.82925,0.002,0.0,0.82725,False,False,none
+722,41,Ari,drawknife,river_mill_bridge,0.74828,0.009,0.0,0.73928,False,False,none
+723,41,Fay,glass tongs,roof_greenhouse_cistern,0.723652,0.002,0.0,0.721652,False,False,none
+724,41,Nia,binding awl,archive_public_kiosk,0.703576,0.002,0.0,0.701576,False,False,none
+725,41,Milo,wire crimper,dusk_signal_workshop,0.82725,0.009,0.0,0.81825,False,False,none
+726,41,Ari,drawknife,river_mill_bridge,0.73928,0.002,0.0,0.73728,False,False,none
+727,41,Fay,glass tongs,roof_greenhouse_cistern,0.721652,0.002,0.0,0.719652,False,False,none
+728,41,Nia,binding awl,archive_public_kiosk,0.701576,0.009,0.0,0.692576,False,False,none
+729,41,Milo,wire crimper,dusk_signal_workshop,0.81825,0.002,0.0,0.81625,False,False,none
+730,41,Ari,drawknife,river_mill_bridge,0.73728,0.002,0.0,0.73528,False,False,none
+731,41,Fay,glass tongs,roof_greenhouse_cistern,0.719652,0.009,0.0,0.710652,False,False,none
+732,41,Nia,binding awl,archive_public_kiosk,0.692576,0.002,0.0,0.690576,False,False,none
+733,41,Milo,wire crimper,dusk_signal_workshop,0.81625,0.002,0.0,0.81425,False,False,none
+734,41,Ari,drawknife,river_mill_bridge,0.73528,0.009,0.0,0.72628,False,False,none
+735,41,Fay,glass tongs,roof_greenhouse_cistern,0.710652,0.002,0.0,0.708652,False,False,none
+736,41,Nia,binding awl,archive_public_kiosk,0.690576,0.002,0.0,0.688576,False,False,none
+737,41,Milo,wire crimper,dusk_signal_workshop,0.81425,0.002,0.0,0.81225,False,False,none
+738,42,Ari,drawknife,river_mill_bridge,0.72628,0.002,0.0,0.72428,False,False,none
+739,42,Fay,glass tongs,roof_greenhouse_cistern,0.708652,0.002,0.0,0.706652,False,False,none
+740,42,Nia,binding awl,archive_public_kiosk,0.688576,0.009,0.0,0.679576,False,False,none
+741,42,Milo,wire crimper,dusk_signal_workshop,0.81225,0.002,0.0,0.81025,False,False,none
+742,42,Ari,drawknife,river_mill_bridge,0.72428,0.002,0.0,0.72228,False,False,none
+743,42,Fay,glass tongs,roof_greenhouse_cistern,0.706652,0.009,0.0,0.697652,False,False,none
+744,42,Nia,binding awl,archive_public_kiosk,0.679576,0.009,0.0,0.670576,False,False,none
+745,42,Milo,wire crimper,dusk_signal_workshop,0.81025,0.002,0.0,0.80825,False,False,none
+746,42,Ari,drawknife,river_mill_bridge,0.72228,0.009,0.0,0.71328,False,False,none
+747,42,Fay,glass tongs,roof_greenhouse_cistern,0.697652,0.002,0.0,0.695652,False,False,none
+748,42,Nia,binding awl,archive_public_kiosk,0.670576,0.002,0.0,0.668576,False,False,none
+749,42,Milo,wire crimper,dusk_signal_workshop,0.80825,0.009,0.0,0.79925,False,False,none
+750,42,Ari,drawknife,river_mill_bridge,0.71328,0.002,0.0,0.71128,False,False,none
+751,42,Fay,glass tongs,roof_greenhouse_cistern,0.695652,0.002,0.0,0.693652,False,False,none
+752,42,Nia,binding awl,archive_public_kiosk,0.668576,0.009,0.0,0.659576,False,False,none
+753,42,Milo,wire crimper,dusk_signal_workshop,0.79925,0.009,0.0,0.79025,False,False,none
+754,42,Ari,drawknife,river_mill_bridge,0.71128,0.002,0.0,0.70928,False,False,none
+755,42,Fay,glass tongs,roof_greenhouse_cistern,0.693652,0.009,0.0,0.684652,False,False,none
+756,43,Nia,binding awl,archive_public_kiosk,0.659576,0.002,0.12628,0.783856,False,False,sharpen / oil / recalibrate
+757,43,Milo,wire crimper,dusk_signal_workshop,0.79025,0.002,0.0,0.78825,False,False,none
+758,43,Ari,drawknife,river_mill_bridge,0.70928,0.009,0.0,0.70028,False,False,none
+759,43,Fay,glass tongs,roof_greenhouse_cistern,0.684652,0.002,0.0,0.682652,False,False,none
+760,43,Nia,binding awl,archive_public_kiosk,0.783856,0.002,0.0,0.781856,False,False,none
+761,43,Milo,wire crimper,dusk_signal_workshop,0.78825,0.009,0.0,0.77925,False,False,none
+762,43,Ari,drawknife,river_mill_bridge,0.70028,0.002,0.0,0.69828,False,False,none
+763,43,Fay,glass tongs,roof_greenhouse_cistern,0.682652,0.002,0.0,0.680652,False,False,none
+764,43,Nia,binding awl,archive_public_kiosk,0.781856,0.009,0.0,0.772856,False,False,none
+765,43,Milo,wire crimper,dusk_signal_workshop,0.77925,0.002,0.0,0.77725,False,False,none
+766,43,Ari,drawknife,river_mill_bridge,0.69828,0.002,0.0,0.69628,False,False,none
+767,43,Fay,glass tongs,roof_greenhouse_cistern,0.680652,0.009,0.0,0.671652,False,False,none
+768,43,Nia,binding awl,archive_public_kiosk,0.772856,0.002,0.0,0.770856,False,False,none
+769,43,Milo,wire crimper,dusk_signal_workshop,0.77725,0.002,0.0,0.77525,False,False,none
+770,43,Ari,drawknife,river_mill_bridge,0.69628,0.009,0.0,0.68728,False,False,none
+771,43,Fay,glass tongs,roof_greenhouse_cistern,0.671652,0.002,0.0,0.669652,False,False,none
+772,43,Nia,binding awl,archive_public_kiosk,0.770856,0.002,0.0,0.768856,False,False,none
+773,43,Milo,wire crimper,dusk_signal_workshop,0.77525,0.002,0.0,0.77325,False,False,none
+774,44,Fay,glass tongs,roof_greenhouse_cistern,0.669652,0.002,0.12628,0.793932,False,False,sharpen / oil / recalibrate
+775,44,Nia,binding awl,archive_public_kiosk,0.768856,0.002,0.0,0.766856,False,False,none
+776,44,Milo,wire crimper,dusk_signal_workshop,0.77325,0.009,0.0,0.76425,False,False,none
+777,44,Ari,drawknife,river_mill_bridge,0.68728,0.002,0.0,0.68528,False,False,none
+778,44,Fay,glass tongs,roof_greenhouse_cistern,0.793932,0.002,0.0,0.791932,False,False,none
+779,44,Nia,binding awl,archive_public_kiosk,0.766856,0.009,0.0,0.757856,False,False,none
+780,44,Milo,wire crimper,dusk_signal_workshop,0.76425,0.002,0.0,0.76225,False,False,none
+781,44,Ari,drawknife,river_mill_bridge,0.68528,0.002,0.0,0.68328,False,False,none
+782,44,Fay,glass tongs,roof_greenhouse_cistern,0.791932,0.009,0.0,0.782932,False,False,none
+783,44,Nia,binding awl,archive_public_kiosk,0.757856,0.002,0.0,0.755856,False,False,none
+784,44,Milo,wire crimper,dusk_signal_workshop,0.76225,0.002,0.0,0.76025,False,False,none
+785,44,Ari,drawknife,river_mill_bridge,0.68328,0.009,0.0,0.67428,False,False,none
+786,44,Fay,glass tongs,roof_greenhouse_cistern,0.782932,0.002,0.0,0.780932,False,False,none
+787,44,Nia,binding awl,archive_public_kiosk,0.755856,0.002,0.0,0.753856,False,False,none
+788,44,Milo,wire crimper,dusk_signal_workshop,0.76025,0.009,0.0,0.75125,False,False,none
+789,44,Ari,drawknife,river_mill_bridge,0.67428,0.002,0.0,0.67228,False,False,none
+790,44,Fay,glass tongs,roof_greenhouse_cistern,0.780932,0.002,0.0,0.778932,False,False,none
+791,44,Nia,binding awl,archive_public_kiosk,0.753856,0.002,0.0,0.751856,False,False,none
+792,45,Milo,wire crimper,dusk_signal_workshop,0.75125,0.002,0.0,0.74925,False,False,none
+793,45,Ari,drawknife,river_mill_bridge,0.67228,0.002,0.0,0.67028,False,False,none
+794,45,Fay,glass tongs,roof_greenhouse_cistern,0.778932,0.009,0.0,0.769932,False,False,none
+795,45,Nia,binding awl,archive_public_kiosk,0.751856,0.009,0.0,0.742856,False,False,none
+796,45,Milo,wire crimper,dusk_signal_workshop,0.74925,0.002,0.0,0.74725,False,False,none
+797,45,Ari,drawknife,river_mill_bridge,0.67028,0.009,0.0,0.66128,False,False,none
+798,45,Fay,glass tongs,roof_greenhouse_cistern,0.769932,0.002,0.0,0.767932,False,False,none
+799,45,Nia,binding awl,archive_public_kiosk,0.742856,0.002,0.0,0.740856,False,False,none
+800,45,Milo,wire crimper,dusk_signal_workshop,0.74725,0.009,0.0,0.73825,False,False,none
+801,45,Ari,drawknife,river_mill_bridge,0.66128,0.002,0.12628,0.78556,False,False,sharpen / oil / recalibrate
+802,45,Fay,glass tongs,roof_greenhouse_cistern,0.767932,0.002,0.0,0.765932,False,False,none
+803,45,Nia,binding awl,archive_public_kiosk,0.740856,0.009,0.0,0.731856,False,False,none
+804,45,Milo,wire crimper,dusk_signal_workshop,0.73825,0.009,0.0,0.72925,False,False,none
+805,45,Ari,drawknife,river_mill_bridge,0.78556,0.002,0.0,0.78356,False,False,none
+806,45,Fay,glass tongs,roof_greenhouse_cistern,0.765932,0.009,0.0,0.756932,False,False,none
+807,45,Nia,binding awl,archive_public_kiosk,0.731856,0.002,0.0,0.729856,False,False,none
+808,45,Milo,wire crimper,dusk_signal_workshop,0.72925,0.002,0.0,0.72725,False,False,none
+809,45,Ari,drawknife,river_mill_bridge,0.78356,0.002,0.0,0.78156,False,False,none
+810,46,Fay,glass tongs,roof_greenhouse_cistern,0.756932,0.002,0.0,0.754932,False,False,none
+811,46,Nia,binding awl,archive_public_kiosk,0.729856,0.002,0.0,0.727856,False,False,none
+812,46,Milo,wire crimper,dusk_signal_workshop,0.72725,0.009,0.0,0.71825,False,False,none
+813,46,Ari,drawknife,river_mill_bridge,0.78156,0.002,0.0,0.77956,False,False,none
+814,46,Fay,glass tongs,roof_greenhouse_cistern,0.754932,0.002,0.0,0.752932,False,False,none
+815,46,Nia,binding awl,archive_public_kiosk,0.727856,0.009,0.0,0.718856,False,False,none
+816,46,Milo,wire crimper,dusk_signal_workshop,0.71825,0.002,0.0,0.71625,False,False,none
+817,46,Ari,drawknife,river_mill_bridge,0.77956,0.002,0.0,0.77756,False,False,none
+818,46,Fay,glass tongs,roof_greenhouse_cistern,0.752932,0.009,0.0,0.743932,False,False,none
+819,46,Nia,binding awl,archive_public_kiosk,0.718856,0.002,0.0,0.716856,False,False,none
+820,46,Milo,wire crimper,dusk_signal_workshop,0.71625,0.002,0.0,0.71425,False,False,none
+821,46,Ari,drawknife,river_mill_bridge,0.77756,0.009,0.0,0.76856,False,False,none
+822,46,Fay,glass tongs,roof_greenhouse_cistern,0.743932,0.002,0.0,0.741932,False,False,none
+823,46,Nia,binding awl,archive_public_kiosk,0.716856,0.002,0.0,0.714856,False,False,none
+824,46,Milo,wire crimper,dusk_signal_workshop,0.71425,0.009,0.0,0.70525,False,False,none
+825,46,Ari,drawknife,river_mill_bridge,0.76856,0.002,0.0,0.76656,False,False,none
+826,46,Fay,glass tongs,roof_greenhouse_cistern,0.741932,0.002,0.0,0.739932,False,False,none
+827,46,Nia,binding awl,archive_public_kiosk,0.714856,0.002,0.0,0.712856,False,False,none
+828,47,Milo,wire crimper,dusk_signal_workshop,0.70525,0.009,0.12628,0.82253,False,False,sharpen / oil / recalibrate
+829,47,Ari,drawknife,river_mill_bridge,0.76656,0.002,0.0,0.76456,False,False,none
+830,47,Fay,glass tongs,roof_greenhouse_cistern,0.739932,0.009,0.0,0.730932,False,False,none
+831,47,Nia,binding awl,archive_public_kiosk,0.712856,0.002,0.0,0.710856,False,False,none
+832,47,Milo,wire crimper,dusk_signal_workshop,0.82253,0.002,0.0,0.82053,False,False,none
+833,47,Ari,drawknife,river_mill_bridge,0.76456,0.009,0.0,0.75556,False,False,none
+834,47,Fay,glass tongs,roof_greenhouse_cistern,0.730932,0.002,0.0,0.728932,False,False,none
+835,47,Nia,binding awl,archive_public_kiosk,0.710856,0.002,0.0,0.708856,False,False,none
+836,47,Milo,wire crimper,dusk_signal_workshop,0.82053,0.009,0.0,0.81153,False,False,none
+837,47,Ari,drawknife,river_mill_bridge,0.75556,0.002,0.0,0.75356,False,False,none
+838,47,Fay,glass tongs,roof_greenhouse_cistern,0.728932,0.002,0.0,0.726932,False,False,none
+839,47,Nia,binding awl,archive_public_kiosk,0.708856,0.009,0.0,0.699856,False,False,none
+840,47,Milo,wire crimper,dusk_signal_workshop,0.81153,0.002,0.0,0.80953,False,False,none
+841,47,Ari,drawknife,river_mill_bridge,0.75356,0.009,0.0,0.74456,False,False,none
+842,47,Fay,glass tongs,roof_greenhouse_cistern,0.726932,0.009,0.0,0.717932,False,False,none
+843,47,Nia,binding awl,archive_public_kiosk,0.699856,0.002,0.0,0.697856,False,False,none
+844,47,Milo,wire crimper,dusk_signal_workshop,0.80953,0.002,0.0,0.80753,False,False,none
+845,47,Ari,drawknife,river_mill_bridge,0.74456,0.002,0.0,0.74256,False,False,none
+846,48,Nia,binding awl,archive_public_kiosk,0.697856,0.009,0.0,0.688856,False,False,none
+847,48,Milo,wire crimper,dusk_signal_workshop,0.80753,0.002,0.0,0.80553,False,False,none
+848,48,Ari,drawknife,river_mill_bridge,0.74256,0.009,0.0,0.73356,False,False,none
+849,48,Fay,glass tongs,roof_greenhouse_cistern,0.717932,0.002,0.0,0.715932,False,False,none
+850,48,Nia,binding awl,archive_public_kiosk,0.688856,0.002,0.0,0.686856,False,False,none
+851,48,Milo,wire crimper,dusk_signal_workshop,0.80553,0.009,0.0,0.79653,False,False,none
+852,48,Ari,drawknife,river_mill_bridge,0.73356,0.002,0.0,0.73156,False,False,none
+853,48,Fay,glass tongs,roof_greenhouse_cistern,0.715932,0.002,0.0,0.713932,False,False,none
+854,48,Nia,binding awl,archive_public_kiosk,0.686856,0.009,0.0,0.677856,False,False,none
+855,48,Milo,wire crimper,dusk_signal_workshop,0.79653,0.009,0.0,0.78753,False,False,none
+856,48,Ari,drawknife,river_mill_bridge,0.73156,0.002,0.0,0.72956,False,False,none
+857,48,Fay,glass tongs,roof_greenhouse_cistern,0.713932,0.009,0.0,0.704932,False,False,none
+858,48,Nia,binding awl,archive_public_kiosk,0.677856,0.002,0.0,0.675856,False,False,none
+859,48,Milo,wire crimper,dusk_signal_workshop,0.78753,0.002,0.0,0.78553,False,False,none
+860,48,Ari,drawknife,river_mill_bridge,0.72956,0.009,0.0,0.72056,False,False,none
+861,48,Fay,glass tongs,roof_greenhouse_cistern,0.704932,0.002,0.0,0.702932,False,False,none
+862,48,Nia,binding awl,archive_public_kiosk,0.675856,0.002,0.0,0.673856,False,False,none
+863,48,Milo,wire crimper,dusk_signal_workshop,0.78553,0.002,0.0,0.78353,False,False,none

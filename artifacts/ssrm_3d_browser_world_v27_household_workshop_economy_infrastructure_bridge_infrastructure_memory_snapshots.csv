@@ -1,0 +1,865 @@
+tick_id,day,agent,infrastructure_id,public_memory_key,remembered_stock,remembered_durability,remembered_tool,remembered_failure,private_workspace_sealed,replay_pointer
+0,1,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day1,planks:22.00,durability:0.85,drawknife:0.94,none,True,replay:0:river_mill_bridge
+1,1,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day1,water:42.00,durability:0.82,glass tongs:0.81,none,True,replay:1:roof_greenhouse_cistern
+2,1,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day1,paper:18.20,durability:0.79,binding awl:0.78,none,True,replay:2:archive_public_kiosk
+3,1,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day1,oil:16.00,durability:0.77,wire crimper:0.76,none,True,replay:3:dusk_signal_workshop
+4,1,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day1,planks:22.00,durability:0.85,drawknife:0.94,none,True,replay:4:river_mill_bridge
+5,1,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day1,water:42.17,durability:0.81,glass tongs:0.80,none,True,replay:5:roof_greenhouse_cistern
+6,1,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day1,paper:18.20,durability:0.78,binding awl:0.78,none,True,replay:6:archive_public_kiosk
+7,1,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day1,oil:16.00,durability:0.76,wire crimper:0.76,none,True,replay:7:dusk_signal_workshop
+8,1,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day1,planks:22.13,durability:0.83,drawknife:0.93,none,True,replay:8:river_mill_bridge
+9,1,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day1,water:42.17,durability:0.80,glass tongs:0.80,none,True,replay:9:roof_greenhouse_cistern
+10,1,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day1,paper:18.20,durability:0.78,binding awl:0.78,none,True,replay:10:archive_public_kiosk
+11,1,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day1,oil:16.10,durability:0.75,wire crimper:0.75,none,True,replay:11:dusk_signal_workshop
+12,1,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day1,planks:22.13,durability:0.83,drawknife:0.93,none,True,replay:12:river_mill_bridge
+13,1,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day1,water:42.17,durability:0.80,glass tongs:0.80,none,True,replay:13:roof_greenhouse_cistern
+14,1,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day1,paper:18.41,durability:0.77,binding awl:0.77,none,True,replay:14:archive_public_kiosk
+15,1,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day1,oil:16.10,durability:0.74,wire crimper:0.75,none,True,replay:15:dusk_signal_workshop
+16,1,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day1,planks:22.13,durability:0.82,drawknife:0.93,none,True,replay:16:river_mill_bridge
+17,1,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day1,water:42.17,durability:0.79,glass tongs:0.80,none,True,replay:17:roof_greenhouse_cistern
+18,2,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day2,paper:18.31,durability:0.84,binding awl:0.77,none,True,replay:18:archive_public_kiosk
+19,2,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day2,oil:16.10,durability:0.74,wire crimper:0.75,none,True,replay:19:dusk_signal_workshop
+20,2,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day2,planks:22.20,durability:0.81,drawknife:0.92,none,True,replay:20:river_mill_bridge
+21,2,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day2,water:42.17,durability:0.79,glass tongs:0.80,none,True,replay:21:roof_greenhouse_cistern
+22,2,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day2,paper:18.31,durability:0.83,binding awl:0.76,none,True,replay:22:archive_public_kiosk
+23,2,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day2,oil:16.28,durability:0.73,wire crimper:0.74,none,True,replay:23:dusk_signal_workshop
+24,2,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day2,planks:22.20,durability:0.80,drawknife:0.92,none,True,replay:24:river_mill_bridge
+25,2,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day2,water:42.30,durability:0.77,glass tongs:0.79,none,True,replay:25:roof_greenhouse_cistern
+26,2,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day2,paper:18.45,durability:0.82,binding awl:0.75,none,True,replay:26:archive_public_kiosk
+27,2,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day2,oil:16.18,durability:0.80,wire crimper:0.74,none,True,replay:27:dusk_signal_workshop
+28,2,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day2,planks:22.20,durability:0.80,drawknife:0.92,none,True,replay:28:river_mill_bridge
+29,2,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day2,water:42.41,durability:0.76,glass tongs:0.78,none,True,replay:29:roof_greenhouse_cistern
+30,2,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day2,paper:18.45,durability:0.81,binding awl:0.75,none,True,replay:30:archive_public_kiosk
+31,2,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day2,oil:16.18,durability:0.80,wire crimper:0.73,none,True,replay:31:dusk_signal_workshop
+32,2,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day2,planks:22.27,durability:0.79,drawknife:0.91,none,True,replay:32:river_mill_bridge
+33,2,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day2,water:42.41,durability:0.75,glass tongs:0.78,none,True,replay:33:roof_greenhouse_cistern
+34,2,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day2,paper:18.62,durability:0.79,binding awl:0.74,none,True,replay:34:archive_public_kiosk
+35,2,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day2,oil:16.18,durability:0.79,wire crimper:0.73,none,True,replay:35:dusk_signal_workshop
+36,3,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day3,planks:22.27,durability:0.78,drawknife:0.91,none,True,replay:36:river_mill_bridge
+37,3,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day3,water:42.41,durability:0.75,glass tongs:0.77,none,True,replay:37:roof_greenhouse_cistern
+38,3,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day3,paper:18.71,durability:0.78,binding awl:0.73,none,True,replay:38:archive_public_kiosk
+39,3,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day3,oil:16.18,durability:0.78,wire crimper:0.73,none,True,replay:39:dusk_signal_workshop
+40,3,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day3,planks:22.27,durability:0.78,drawknife:0.90,none,True,replay:40:river_mill_bridge
+41,3,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day3,water:42.41,durability:0.74,glass tongs:0.76,none,True,replay:41:roof_greenhouse_cistern
+42,3,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day3,paper:18.71,durability:0.77,binding awl:0.73,none,True,replay:42:archive_public_kiosk
+43,3,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day3,oil:16.18,durability:0.77,wire crimper:0.73,none,True,replay:43:dusk_signal_workshop
+44,3,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day3,planks:22.43,durability:0.77,drawknife:0.89,none,True,replay:44:river_mill_bridge
+45,3,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day3,water:42.41,durability:0.73,glass tongs:0.76,none,True,replay:45:roof_greenhouse_cistern
+46,3,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day3,paper:18.71,durability:0.77,binding awl:0.73,none,True,replay:46:archive_public_kiosk
+47,3,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day3,oil:16.30,durability:0.76,wire crimper:0.72,none,True,replay:47:dusk_signal_workshop
+48,3,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day3,planks:22.43,durability:0.76,drawknife:0.89,none,True,replay:48:river_mill_bridge
+49,3,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day3,water:42.41,durability:0.73,glass tongs:0.76,none,True,replay:49:roof_greenhouse_cistern
+50,3,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day3,paper:18.80,durability:0.76,binding awl:0.72,none,True,replay:50:archive_public_kiosk
+51,3,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day3,oil:16.30,durability:0.75,wire crimper:0.72,none,True,replay:51:dusk_signal_workshop
+52,3,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day3,planks:22.43,durability:0.75,drawknife:0.89,none,True,replay:52:river_mill_bridge
+53,3,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day3,water:42.41,durability:0.72,glass tongs:0.76,none,True,replay:53:roof_greenhouse_cistern
+54,4,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day4,oil:16.30,durability:0.75,wire crimper:0.72,none,True,replay:54:dusk_signal_workshop
+55,4,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day4,planks:22.43,durability:0.75,drawknife:0.89,none,True,replay:55:river_mill_bridge
+56,4,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day4,water:42.58,durability:0.71,glass tongs:0.75,none,True,replay:56:roof_greenhouse_cistern
+57,4,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day4,paper:18.80,durability:0.75,binding awl:0.72,none,True,replay:57:archive_public_kiosk
+58,4,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day4,oil:16.30,durability:0.74,wire crimper:0.71,none,True,replay:58:dusk_signal_workshop
+59,4,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day4,planks:22.56,durability:0.73,drawknife:0.88,none,True,replay:59:river_mill_bridge
+60,4,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day4,water:42.58,durability:0.70,glass tongs:0.75,none,True,replay:60:roof_greenhouse_cistern
+61,4,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day4,paper:18.80,durability:0.75,binding awl:0.72,none,True,replay:61:archive_public_kiosk
+62,4,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day4,oil:16.41,durability:0.73,wire crimper:0.70,none,True,replay:62:dusk_signal_workshop
+63,4,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day4,planks:22.56,durability:0.73,drawknife:0.88,none,True,replay:63:river_mill_bridge
+64,4,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day4,water:42.58,durability:0.70,glass tongs:0.75,none,True,replay:64:roof_greenhouse_cistern
+65,4,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day4,paper:19.00,durability:0.73,binding awl:0.71,none,True,replay:65:archive_public_kiosk
+66,4,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day4,oil:16.41,durability:0.73,wire crimper:0.70,none,True,replay:66:dusk_signal_workshop
+67,4,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day4,planks:22.56,durability:0.72,drawknife:0.88,none,True,replay:67:river_mill_bridge
+68,4,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day4,water:42.75,durability:0.68,glass tongs:0.74,none,True,replay:68:roof_greenhouse_cistern
+69,4,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day4,paper:19.00,durability:0.72,binding awl:0.82,none,True,replay:69:archive_public_kiosk
+70,4,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day4,oil:16.41,durability:0.72,wire crimper:0.70,none,True,replay:70:dusk_signal_workshop
+71,4,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day4,planks:22.56,durability:0.72,drawknife:0.87,none,True,replay:71:river_mill_bridge
+72,5,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day5,water:42.65,durability:0.75,glass tongs:0.73,none,True,replay:72:roof_greenhouse_cistern
+73,5,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day5,paper:19.00,durability:0.72,binding awl:0.82,none,True,replay:73:archive_public_kiosk
+74,5,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day5,oil:16.59,durability:0.71,wire crimper:0.69,none,True,replay:74:dusk_signal_workshop
+75,5,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day5,planks:22.56,durability:0.71,drawknife:0.87,none,True,replay:75:river_mill_bridge
+76,5,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day5,water:42.78,durability:0.74,glass tongs:0.73,none,True,replay:76:roof_greenhouse_cistern
+77,5,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day5,paper:19.15,durability:0.70,binding awl:0.81,none,True,replay:77:archive_public_kiosk
+78,5,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day5,oil:16.59,durability:0.71,wire crimper:0.69,none,True,replay:78:dusk_signal_workshop
+79,5,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day5,planks:22.56,durability:0.71,drawknife:0.87,none,True,replay:79:river_mill_bridge
+80,5,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day5,water:42.89,durability:0.73,glass tongs:0.72,none,True,replay:80:roof_greenhouse_cistern
+81,5,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day5,paper:19.15,durability:0.70,binding awl:0.81,none,True,replay:81:archive_public_kiosk
+82,5,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day5,oil:16.59,durability:0.70,wire crimper:0.69,none,True,replay:82:dusk_signal_workshop
+83,5,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day5,planks:22.63,durability:0.70,drawknife:0.86,none,True,replay:83:river_mill_bridge
+84,5,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day5,water:42.89,durability:0.72,glass tongs:0.71,none,True,replay:84:roof_greenhouse_cistern
+85,5,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day5,paper:19.32,durability:0.68,binding awl:0.80,none,True,replay:85:archive_public_kiosk
+86,5,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day5,oil:16.78,durability:0.69,wire crimper:0.68,none,True,replay:86:dusk_signal_workshop
+87,5,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day5,planks:22.68,durability:0.69,drawknife:0.85,none,True,replay:87:river_mill_bridge
+88,5,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day5,water:42.89,durability:0.72,glass tongs:0.71,none,True,replay:88:roof_greenhouse_cistern
+89,5,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day5,paper:19.32,durability:0.68,binding awl:0.80,none,True,replay:89:archive_public_kiosk
+90,6,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day6,oil:16.78,durability:0.68,wire crimper:0.79,none,True,replay:90:dusk_signal_workshop
+91,6,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day6,planks:22.68,durability:0.68,drawknife:0.85,none,True,replay:91:river_mill_bridge
+92,6,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day6,water:42.95,durability:0.71,glass tongs:0.70,none,True,replay:92:roof_greenhouse_cistern
+93,6,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day6,paper:19.32,durability:0.67,binding awl:0.79,none,True,replay:93:archive_public_kiosk
+94,6,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day6,oil:16.78,durability:0.67,wire crimper:0.79,none,True,replay:94:dusk_signal_workshop
+95,6,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day6,planks:22.84,durability:0.67,drawknife:0.84,none,True,replay:95:river_mill_bridge
+96,6,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day6,water:42.95,durability:0.70,glass tongs:0.70,none,True,replay:96:roof_greenhouse_cistern
+97,6,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day6,paper:19.32,durability:0.66,binding awl:0.79,none,True,replay:97:archive_public_kiosk
+98,6,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day6,oil:16.90,durability:0.66,wire crimper:0.78,none,True,replay:98:dusk_signal_workshop
+99,6,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day6,planks:22.74,durability:0.74,drawknife:0.84,none,True,replay:99:river_mill_bridge
+100,6,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day6,water:42.90,durability:0.69,glass tongs:0.70,none,True,replay:100:roof_greenhouse_cistern
+101,6,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day6,paper:19.41,durability:0.65,binding awl:0.78,none,True,replay:101:archive_public_kiosk
+102,6,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day6,oil:16.90,durability:0.65,wire crimper:0.78,none,True,replay:102:dusk_signal_workshop
+103,6,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day6,planks:22.74,durability:0.73,drawknife:0.84,none,True,replay:103:river_mill_bridge
+104,6,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day6,water:42.95,durability:0.68,glass tongs:0.69,none,True,replay:104:roof_greenhouse_cistern
+105,6,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day6,paper:19.41,durability:0.65,binding awl:0.78,none,True,replay:105:archive_public_kiosk
+106,6,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day6,oil:16.90,durability:0.65,wire crimper:0.78,none,True,replay:106:dusk_signal_workshop
+107,6,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day6,planks:22.64,durability:0.80,drawknife:0.83,none,True,replay:107:river_mill_bridge
+108,7,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day7,water:42.95,durability:0.68,glass tongs:0.69,none,True,replay:108:roof_greenhouse_cistern
+109,7,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day7,paper:19.47,durability:0.63,binding awl:0.77,none,True,replay:109:archive_public_kiosk
+110,7,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day7,oil:17.04,durability:0.63,wire crimper:0.77,none,True,replay:110:dusk_signal_workshop
+111,7,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day7,planks:22.78,durability:0.79,drawknife:0.83,none,True,replay:111:river_mill_bridge
+112,7,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day7,water:42.95,durability:0.67,glass tongs:0.69,none,True,replay:112:roof_greenhouse_cistern
+113,7,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day7,paper:19.57,durability:0.62,binding awl:0.76,none,True,replay:113:archive_public_kiosk
+114,7,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day7,oil:17.04,durability:0.63,wire crimper:0.76,none,True,replay:114:dusk_signal_workshop
+115,7,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day7,planks:22.78,durability:0.78,drawknife:0.82,none,True,replay:115:river_mill_bridge
+116,7,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day7,water:43.16,durability:0.66,glass tongs:0.68,none,True,replay:116:roof_greenhouse_cistern
+117,7,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day7,paper:19.57,durability:0.62,binding awl:0.76,none,True,replay:117:archive_public_kiosk
+118,7,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day7,oil:17.13,durability:0.62,wire crimper:0.76,none,True,replay:118:dusk_signal_workshop
+119,7,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day7,planks:22.95,durability:0.77,drawknife:0.81,none,True,replay:119:river_mill_bridge
+120,7,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day7,water:43.34,durability:0.65,glass tongs:0.67,none,True,replay:120:roof_greenhouse_cistern
+121,7,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day7,paper:19.57,durability:0.61,binding awl:0.76,none,True,replay:121:archive_public_kiosk
+122,7,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day7,oil:17.27,durability:0.60,wire crimper:0.75,none,True,replay:122:dusk_signal_workshop
+123,7,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day7,planks:22.85,durability:0.84,drawknife:0.81,none,True,replay:123:river_mill_bridge
+124,7,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day7,water:43.29,durability:0.64,glass tongs:0.67,none,True,replay:124:roof_greenhouse_cistern
+125,7,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day7,paper:19.47,durability:0.69,binding awl:0.76,none,True,replay:125:archive_public_kiosk
+126,8,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day8,planks:22.75,durability:0.91,drawknife:0.81,none,True,replay:126:river_mill_bridge
+127,8,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day8,water:43.43,durability:0.62,glass tongs:0.66,none,True,replay:127:roof_greenhouse_cistern
+128,8,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day8,paper:19.62,durability:0.67,binding awl:0.75,none,True,replay:128:archive_public_kiosk
+129,8,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day8,oil:17.27,durability:0.60,wire crimper:0.74,none,True,replay:129:dusk_signal_workshop
+130,8,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day8,planks:22.75,durability:0.91,drawknife:0.81,none,True,replay:130:river_mill_bridge
+131,8,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day8,water:43.54,durability:0.61,glass tongs:0.65,none,True,replay:131:roof_greenhouse_cistern
+132,8,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day8,paper:19.62,durability:0.67,binding awl:0.75,none,True,replay:132:archive_public_kiosk
+133,8,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day8,oil:17.27,durability:0.59,wire crimper:0.74,none,True,replay:133:dusk_signal_workshop
+134,8,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day8,planks:22.83,durability:0.90,drawknife:0.80,none,True,replay:134:river_mill_bridge
+135,8,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day8,water:43.49,durability:0.60,glass tongs:0.76,none,True,replay:135:roof_greenhouse_cistern
+136,8,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day8,paper:19.80,durability:0.65,binding awl:0.74,none,True,replay:136:archive_public_kiosk
+137,8,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day8,oil:17.36,durability:0.66,wire crimper:0.73,none,True,replay:137:dusk_signal_workshop
+138,8,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day8,planks:22.88,durability:0.89,drawknife:0.79,none,True,replay:138:river_mill_bridge
+139,8,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day8,water:43.49,durability:0.60,glass tongs:0.76,none,True,replay:139:roof_greenhouse_cistern
+140,8,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day8,paper:19.95,durability:0.64,binding awl:0.73,none,True,replay:140:archive_public_kiosk
+141,8,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day8,oil:17.36,durability:0.66,wire crimper:0.73,none,True,replay:141:dusk_signal_workshop
+142,8,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day8,planks:22.88,durability:0.88,drawknife:0.79,none,True,replay:142:river_mill_bridge
+143,8,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day8,water:43.39,durability:0.67,glass tongs:0.76,none,True,replay:143:roof_greenhouse_cistern
+144,9,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day9,paper:19.85,durability:0.72,binding awl:0.73,none,True,replay:144:archive_public_kiosk
+145,9,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day9,oil:17.36,durability:0.65,wire crimper:0.73,none,True,replay:145:dusk_signal_workshop
+146,9,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day9,planks:23.04,durability:0.87,drawknife:0.78,none,True,replay:146:river_mill_bridge
+147,9,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day9,water:43.39,durability:0.67,glass tongs:0.75,none,True,replay:147:roof_greenhouse_cistern
+148,9,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day9,paper:19.85,durability:0.71,binding awl:0.72,none,True,replay:148:archive_public_kiosk
+149,9,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day9,oil:17.49,durability:0.64,wire crimper:0.72,none,True,replay:149:dusk_signal_workshop
+150,9,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day9,planks:23.04,durability:0.86,drawknife:0.78,none,True,replay:150:river_mill_bridge
+151,9,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day9,water:43.29,durability:0.74,glass tongs:0.75,none,True,replay:151:roof_greenhouse_cistern
+152,9,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day9,paper:19.94,durability:0.70,binding awl:0.71,none,True,replay:152:archive_public_kiosk
+153,9,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day9,oil:17.49,durability:0.63,wire crimper:0.72,none,True,replay:153:dusk_signal_workshop
+154,9,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day9,planks:23.04,durability:0.85,drawknife:0.78,none,True,replay:154:river_mill_bridge
+155,9,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day9,water:43.35,durability:0.73,glass tongs:0.74,none,True,replay:155:roof_greenhouse_cistern
+156,9,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day9,paper:19.94,durability:0.69,binding awl:0.71,none,True,replay:156:archive_public_kiosk
+157,9,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day9,oil:17.49,durability:0.62,wire crimper:0.72,none,True,replay:157:dusk_signal_workshop
+158,9,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day9,planks:23.20,durability:0.84,drawknife:0.77,joint swelling blocks wheel,True,replay:158:river_mill_bridge
+159,9,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day9,water:43.30,durability:0.72,glass tongs:0.74,none,True,replay:159:roof_greenhouse_cistern
+160,9,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day9,paper:19.94,durability:0.69,binding awl:0.71,none,True,replay:160:archive_public_kiosk
+161,9,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day9,oil:17.49,durability:0.62,wire crimper:0.83,none,True,replay:161:dusk_signal_workshop
+162,10,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day10,planks:23.24,durability:0.92,drawknife:0.76,none,True,replay:162:river_mill_bridge
+163,10,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day10,water:43.30,durability:0.72,glass tongs:0.74,none,True,replay:163:roof_greenhouse_cistern
+164,10,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day10,paper:20.05,durability:0.68,binding awl:0.70,none,True,replay:164:archive_public_kiosk
+165,10,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day10,oil:17.49,durability:0.61,wire crimper:0.83,none,True,replay:165:dusk_signal_workshop
+166,10,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day10,planks:23.24,durability:0.91,drawknife:0.76,none,True,replay:166:river_mill_bridge
+167,10,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day10,water:43.51,durability:0.71,glass tongs:0.73,none,True,replay:167:roof_greenhouse_cistern
+168,10,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day10,paper:20.05,durability:0.67,binding awl:0.70,none,True,replay:168:archive_public_kiosk
+169,10,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day10,oil:17.58,durability:0.60,wire crimper:0.82,none,True,replay:169:dusk_signal_workshop
+170,10,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day10,planks:23.42,durability:0.90,drawknife:0.75,none,True,replay:170:river_mill_bridge
+171,10,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day10,water:43.59,durability:0.77,glass tongs:0.72,none,True,replay:171:roof_greenhouse_cistern
+172,10,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day10,paper:20.05,durability:0.67,binding awl:0.70,none,True,replay:172:archive_public_kiosk
+173,10,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day10,oil:17.72,durability:0.59,wire crimper:0.81,none,True,replay:173:dusk_signal_workshop
+174,10,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day10,planks:23.32,durability:0.97,drawknife:0.74,none,True,replay:174:river_mill_bridge
+175,10,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day10,water:43.59,durability:0.77,glass tongs:0.72,none,True,replay:175:roof_greenhouse_cistern
+176,10,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day10,paper:20.16,durability:0.66,binding awl:0.69,none,True,replay:176:archive_public_kiosk
+177,10,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day10,oil:17.72,durability:0.58,wire crimper:0.81,none,True,replay:177:dusk_signal_workshop
+178,10,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day10,planks:23.32,durability:0.97,drawknife:0.74,none,True,replay:178:river_mill_bridge
+179,10,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day10,water:43.49,durability:0.84,glass tongs:0.72,none,True,replay:179:roof_greenhouse_cistern
+180,11,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day11,paper:20.06,durability:0.74,binding awl:0.69,none,True,replay:180:archive_public_kiosk
+181,11,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day11,oil:17.67,durability:0.58,wire crimper:0.81,none,True,replay:181:dusk_signal_workshop
+182,11,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day11,planks:23.43,durability:0.96,drawknife:0.73,none,True,replay:182:river_mill_bridge
+183,11,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day11,water:43.49,durability:0.84,glass tongs:0.72,none,True,replay:183:roof_greenhouse_cistern
+184,11,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day11,paper:20.06,durability:0.73,binding awl:0.68,none,True,replay:184:archive_public_kiosk
+185,11,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day11,oil:17.76,durability:0.57,wire crimper:0.80,none,True,replay:185:dusk_signal_workshop
+186,11,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day11,planks:23.43,durability:0.95,drawknife:0.73,none,True,replay:186:river_mill_bridge
+187,11,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day11,water:43.49,durability:0.83,glass tongs:0.71,none,True,replay:187:roof_greenhouse_cistern
+188,11,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day11,paper:20.15,durability:0.80,binding awl:0.68,none,True,replay:188:archive_public_kiosk
+189,11,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day11,oil:17.66,durability:0.64,wire crimper:0.80,none,True,replay:189:dusk_signal_workshop
+190,11,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day11,planks:23.43,durability:0.95,drawknife:0.73,none,True,replay:190:river_mill_bridge
+191,11,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day11,water:43.65,durability:0.82,glass tongs:0.70,none,True,replay:191:roof_greenhouse_cistern
+192,11,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day11,paper:20.15,durability:0.79,binding awl:0.67,none,True,replay:192:archive_public_kiosk
+193,11,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day11,oil:17.66,durability:0.64,wire crimper:0.79,none,True,replay:193:dusk_signal_workshop
+194,11,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day11,planks:23.55,durability:0.93,drawknife:0.72,none,True,replay:194:river_mill_bridge
+195,11,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day11,water:43.65,durability:0.81,glass tongs:0.70,none,True,replay:195:roof_greenhouse_cistern
+196,11,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day11,paper:20.15,durability:0.78,binding awl:0.67,none,True,replay:196:archive_public_kiosk
+197,11,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day11,oil:17.66,durability:0.63,wire crimper:0.79,none,True,replay:197:dusk_signal_workshop
+198,12,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day12,water:43.55,durability:0.89,glass tongs:0.70,none,True,replay:198:roof_greenhouse_cistern
+199,12,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day12,paper:20.15,durability:0.78,binding awl:0.67,none,True,replay:199:archive_public_kiosk
+200,12,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day12,oil:17.79,durability:0.62,wire crimper:0.78,none,True,replay:200:dusk_signal_workshop
+201,12,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day12,planks:23.55,durability:0.93,drawknife:0.72,none,True,replay:201:river_mill_bridge
+202,12,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day12,water:43.45,durability:0.96,glass tongs:0.70,none,True,replay:202:roof_greenhouse_cistern
+203,12,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day12,paper:20.24,durability:0.77,binding awl:0.66,none,True,replay:203:archive_public_kiosk
+204,12,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day12,oil:17.79,durability:0.61,wire crimper:0.78,none,True,replay:204:dusk_signal_workshop
+205,12,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day12,planks:23.55,durability:0.92,drawknife:0.72,none,True,replay:205:river_mill_bridge
+206,12,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day12,water:43.50,durability:0.95,glass tongs:0.69,none,True,replay:206:roof_greenhouse_cistern
+207,12,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day12,paper:20.14,durability:0.85,binding awl:0.78,none,True,replay:207:archive_public_kiosk
+208,12,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day12,oil:17.79,durability:0.61,wire crimper:0.78,none,True,replay:208:dusk_signal_workshop
+209,12,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day12,planks:23.71,durability:0.91,drawknife:0.71,none,True,replay:209:river_mill_bridge
+210,12,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day12,water:43.50,durability:0.95,glass tongs:0.69,none,True,replay:210:roof_greenhouse_cistern
+211,12,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day12,paper:20.14,durability:0.84,binding awl:0.77,none,True,replay:211:archive_public_kiosk
+212,12,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day12,oil:17.92,durability:0.59,wire crimper:0.77,overbright relay startles patrol,True,replay:212:dusk_signal_workshop
+213,12,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day12,planks:23.71,durability:0.90,drawknife:0.71,none,True,replay:213:river_mill_bridge
+214,12,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day12,water:43.50,durability:0.94,glass tongs:0.69,none,True,replay:214:roof_greenhouse_cistern
+215,12,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day12,paper:20.04,durability:0.92,binding awl:0.77,none,True,replay:215:archive_public_kiosk
+216,13,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day13,oil:17.77,durability:0.68,wire crimper:0.77,none,True,replay:216:dusk_signal_workshop
+217,13,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day13,planks:23.71,durability:0.89,drawknife:0.70,none,True,replay:217:river_mill_bridge
+218,13,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day13,water:43.72,durability:0.93,glass tongs:0.68,none,True,replay:218:roof_greenhouse_cistern
+219,13,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day13,paper:20.04,durability:0.92,binding awl:0.77,none,True,replay:219:archive_public_kiosk
+220,13,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day13,oil:17.86,durability:0.67,wire crimper:0.76,none,True,replay:220:dusk_signal_workshop
+221,13,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day13,planks:23.88,durability:0.88,drawknife:0.69,none,True,replay:221:river_mill_bridge
+222,13,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day13,water:43.90,durability:0.91,glass tongs:0.67,none,True,replay:222:roof_greenhouse_cistern
+223,13,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day13,paper:20.04,durability:0.91,binding awl:0.77,none,True,replay:223:archive_public_kiosk
+224,13,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day13,oil:18.01,durability:0.66,wire crimper:0.75,none,True,replay:224:dusk_signal_workshop
+225,13,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day13,planks:23.88,durability:0.87,drawknife:0.69,none,True,replay:225:river_mill_bridge
+226,13,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day13,water:43.90,durability:0.91,glass tongs:0.67,none,True,replay:226:roof_greenhouse_cistern
+227,13,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day13,paper:20.15,durability:0.90,binding awl:0.76,none,True,replay:227:archive_public_kiosk
+228,13,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day13,oil:18.01,durability:0.66,wire crimper:0.75,none,True,replay:228:dusk_signal_workshop
+229,13,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day13,planks:23.88,durability:0.87,drawknife:0.69,none,True,replay:229:river_mill_bridge
+230,13,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day13,water:44.12,durability:0.89,glass tongs:0.66,none,True,replay:230:roof_greenhouse_cistern
+231,13,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day13,paper:20.24,durability:0.89,binding awl:0.75,none,True,replay:231:archive_public_kiosk
+232,13,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day13,oil:18.01,durability:0.65,wire crimper:0.75,none,True,replay:232:dusk_signal_workshop
+233,13,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day13,planks:24.06,durability:0.86,drawknife:0.68,none,True,replay:233:river_mill_bridge
+234,14,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day14,water:44.02,durability:0.97,glass tongs:0.77,none,True,replay:234:roof_greenhouse_cistern
+235,14,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day14,paper:20.24,durability:0.88,binding awl:0.75,none,True,replay:235:archive_public_kiosk
+236,14,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day14,oil:18.10,durability:0.64,wire crimper:0.74,none,True,replay:236:dusk_signal_workshop
+237,14,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day14,planks:24.06,durability:0.85,drawknife:0.68,none,True,replay:237:river_mill_bridge
+238,14,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day14,water:44.02,durability:0.96,glass tongs:0.77,none,True,replay:238:roof_greenhouse_cistern
+239,14,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day14,paper:20.33,durability:0.95,binding awl:0.74,index dampness erases route marks,True,replay:239:archive_public_kiosk
+240,14,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day14,oil:18.05,durability:0.63,wire crimper:0.73,none,True,replay:240:dusk_signal_workshop
+241,14,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day14,planks:24.06,durability:0.85,drawknife:0.68,none,True,replay:241:river_mill_bridge
+242,14,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day14,water:44.17,durability:0.95,glass tongs:0.76,none,True,replay:242:roof_greenhouse_cistern
+243,14,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day14,paper:20.23,durability:0.98,binding awl:0.74,none,True,replay:243:archive_public_kiosk
+244,14,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day14,oil:18.05,durability:0.63,wire crimper:0.73,none,True,replay:244:dusk_signal_workshop
+245,14,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day14,planks:24.18,durability:0.83,drawknife:0.67,none,True,replay:245:river_mill_bridge
+246,14,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day14,water:44.17,durability:0.95,glass tongs:0.76,none,True,replay:246:roof_greenhouse_cistern
+247,14,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day14,paper:20.23,durability:0.97,binding awl:0.73,none,True,replay:247:archive_public_kiosk
+248,14,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day14,oil:18.13,durability:0.61,wire crimper:0.72,none,True,replay:248:dusk_signal_workshop
+249,14,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day14,planks:24.18,durability:0.83,drawknife:0.67,none,True,replay:249:river_mill_bridge
+250,14,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day14,water:44.17,durability:0.94,glass tongs:0.76,none,True,replay:250:roof_greenhouse_cistern
+251,14,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day14,paper:20.23,durability:0.97,binding awl:0.73,none,True,replay:251:archive_public_kiosk
+252,15,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day15,oil:18.03,durability:0.69,wire crimper:0.72,none,True,replay:252:dusk_signal_workshop
+253,15,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day15,planks:24.18,durability:0.82,drawknife:0.66,none,True,replay:253:river_mill_bridge
+254,15,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day15,water:44.27,durability:0.93,glass tongs:0.75,none,True,replay:254:roof_greenhouse_cistern
+255,15,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day15,paper:20.41,durability:0.95,binding awl:0.72,none,True,replay:255:archive_public_kiosk
+256,15,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day15,oil:17.93,durability:0.77,wire crimper:0.72,none,True,replay:256:dusk_signal_workshop
+257,15,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day15,planks:24.24,durability:0.81,drawknife:0.66,none,True,replay:257:river_mill_bridge
+258,15,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day15,water:44.27,durability:0.93,glass tongs:0.75,none,True,replay:258:roof_greenhouse_cistern
+259,15,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day15,paper:20.41,durability:0.95,binding awl:0.72,none,True,replay:259:archive_public_kiosk
+260,15,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day15,oil:18.10,durability:0.76,wire crimper:0.71,none,True,replay:260:dusk_signal_workshop
+261,15,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day15,planks:24.24,durability:0.81,drawknife:0.77,none,True,replay:261:river_mill_bridge
+262,15,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day15,water:44.27,durability:0.92,glass tongs:0.74,none,True,replay:262:roof_greenhouse_cistern
+263,15,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day15,paper:20.54,durability:0.93,binding awl:0.71,none,True,replay:263:archive_public_kiosk
+264,15,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day15,oil:18.32,durability:0.75,wire crimper:0.70,none,True,replay:264:dusk_signal_workshop
+265,15,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day15,planks:24.24,durability:0.80,drawknife:0.77,none,True,replay:265:river_mill_bridge
+266,15,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day15,water:44.26,durability:0.98,glass tongs:0.73,none,True,replay:266:roof_greenhouse_cistern
+267,15,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day15,paper:20.54,durability:0.93,binding awl:0.71,none,True,replay:267:archive_public_kiosk
+268,15,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day15,oil:18.32,durability:0.74,wire crimper:0.70,none,True,replay:268:dusk_signal_workshop
+269,15,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day15,planks:24.24,durability:0.79,drawknife:0.77,none,True,replay:269:river_mill_bridge
+270,16,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day16,paper:20.54,durability:0.92,binding awl:0.71,none,True,replay:270:archive_public_kiosk
+271,16,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day16,oil:18.42,durability:0.73,wire crimper:0.69,none,True,replay:271:dusk_signal_workshop
+272,16,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day16,planks:24.42,durability:0.78,drawknife:0.76,none,True,replay:272:river_mill_bridge
+273,16,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day16,water:44.45,durability:0.96,glass tongs:0.73,none,True,replay:273:roof_greenhouse_cistern
+274,16,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day16,paper:20.54,durability:0.92,binding awl:0.71,none,True,replay:274:archive_public_kiosk
+275,16,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day16,oil:18.52,durability:0.72,wire crimper:0.68,none,True,replay:275:dusk_signal_workshop
+276,16,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day16,planks:24.42,durability:0.77,drawknife:0.87,none,True,replay:276:river_mill_bridge
+277,16,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day16,water:44.45,durability:0.96,glass tongs:0.72,none,True,replay:277:roof_greenhouse_cistern
+278,16,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day16,paper:20.66,durability:0.91,binding awl:0.70,none,True,replay:278:archive_public_kiosk
+279,16,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day16,oil:18.42,durability:0.80,wire crimper:0.68,none,True,replay:279:dusk_signal_workshop
+280,16,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day16,planks:24.42,durability:0.77,drawknife:0.87,none,True,replay:280:river_mill_bridge
+281,16,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day16,water:44.67,durability:0.94,glass tongs:0.71,cistern leak chills seedlings,True,replay:281:roof_greenhouse_cistern
+282,16,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day16,paper:20.74,durability:0.89,binding awl:0.69,none,True,replay:282:archive_public_kiosk
+283,16,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day16,oil:18.42,durability:0.79,wire crimper:0.68,none,True,replay:283:dusk_signal_workshop
+284,16,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day16,planks:24.59,durability:0.76,drawknife:0.86,none,True,replay:284:river_mill_bridge
+285,16,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day16,water:44.67,durability:0.94,glass tongs:0.71,cistern leak chills seedlings,True,replay:285:roof_greenhouse_cistern
+286,16,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day16,paper:20.74,durability:0.89,binding awl:0.69,none,True,replay:286:archive_public_kiosk
+287,16,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day16,oil:18.32,durability:0.88,wire crimper:0.80,none,True,replay:287:dusk_signal_workshop
+288,17,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day17,planks:24.59,durability:0.75,drawknife:0.86,none,True,replay:288:river_mill_bridge
+289,17,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day17,water:44.67,durability:0.93,glass tongs:0.71,cistern leak chills seedlings,True,replay:289:roof_greenhouse_cistern
+290,17,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day17,paper:20.94,durability:0.87,binding awl:0.68,none,True,replay:290:archive_public_kiosk
+291,17,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day17,oil:18.32,durability:0.87,wire crimper:0.80,none,True,replay:291:dusk_signal_workshop
+292,17,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day17,planks:24.59,durability:0.75,drawknife:0.86,none,True,replay:292:river_mill_bridge
+293,17,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day17,water:44.83,durability:0.92,glass tongs:0.70,cistern leak chills seedlings,True,replay:293:roof_greenhouse_cistern
+294,17,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day17,paper:20.94,durability:0.87,binding awl:0.68,none,True,replay:294:archive_public_kiosk
+295,17,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day17,oil:18.32,durability:0.87,wire crimper:0.79,none,True,replay:295:dusk_signal_workshop
+296,17,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day17,planks:24.71,durability:0.74,drawknife:0.85,none,True,replay:296:river_mill_bridge
+297,17,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day17,water:44.73,durability:0.98,glass tongs:0.70,none,True,replay:297:roof_greenhouse_cistern
+298,17,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day17,paper:20.94,durability:0.86,binding awl:0.67,none,True,replay:298:archive_public_kiosk
+299,17,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day17,oil:18.41,durability:0.85,wire crimper:0.78,none,True,replay:299:dusk_signal_workshop
+300,17,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day17,planks:24.71,durability:0.73,drawknife:0.85,none,True,replay:300:river_mill_bridge
+301,17,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day17,water:44.73,durability:0.97,glass tongs:0.70,none,True,replay:301:roof_greenhouse_cistern
+302,17,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day17,paper:21.13,durability:0.85,binding awl:0.66,none,True,replay:302:archive_public_kiosk
+303,17,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day17,oil:18.31,durability:0.94,wire crimper:0.78,none,True,replay:303:dusk_signal_workshop
+304,17,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day17,planks:24.71,durability:0.73,drawknife:0.84,none,True,replay:304:river_mill_bridge
+305,17,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day17,water:44.63,durability:0.98,glass tongs:0.70,none,True,replay:305:roof_greenhouse_cistern
+306,18,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day18,paper:21.32,durability:0.83,binding awl:0.78,none,True,replay:306:archive_public_kiosk
+307,18,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day18,oil:18.21,durability:0.98,wire crimper:0.78,none,True,replay:307:dusk_signal_workshop
+308,18,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day18,planks:24.78,durability:0.72,drawknife:0.83,none,True,replay:308:river_mill_bridge
+309,18,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day18,water:44.63,durability:0.97,glass tongs:0.69,none,True,replay:309:roof_greenhouse_cistern
+310,18,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day18,paper:21.32,durability:0.83,binding awl:0.77,none,True,replay:310:archive_public_kiosk
+311,18,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day18,oil:18.38,durability:0.97,wire crimper:0.77,none,True,replay:311:dusk_signal_workshop
+312,18,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day18,planks:24.78,durability:0.71,drawknife:0.83,none,True,replay:312:river_mill_bridge
+313,18,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day18,water:44.63,durability:0.97,glass tongs:0.69,none,True,replay:313:roof_greenhouse_cistern
+314,18,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day18,paper:21.45,durability:0.81,binding awl:0.77,none,True,replay:314:archive_public_kiosk
+315,18,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day18,oil:18.50,durability:0.98,wire crimper:0.76,none,True,replay:315:dusk_signal_workshop
+316,18,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day18,planks:24.78,durability:0.70,drawknife:0.83,none,True,replay:316:river_mill_bridge
+317,18,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day18,water:44.73,durability:0.96,glass tongs:0.68,none,True,replay:317:roof_greenhouse_cistern
+318,18,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day18,paper:21.45,durability:0.81,binding awl:0.76,none,True,replay:318:archive_public_kiosk
+319,18,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day18,oil:18.50,durability:0.97,wire crimper:0.76,none,True,replay:319:dusk_signal_workshop
+320,18,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day18,planks:24.84,durability:0.69,drawknife:0.82,joint swelling blocks wheel,True,replay:320:river_mill_bridge
+321,18,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day18,water:44.73,durability:0.95,glass tongs:0.68,none,True,replay:321:roof_greenhouse_cistern
+322,18,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day18,paper:21.45,durability:0.80,binding awl:0.76,none,True,replay:322:archive_public_kiosk
+323,18,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day18,oil:18.35,durability:0.98,wire crimper:0.76,none,True,replay:323:dusk_signal_workshop
+324,19,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day19,planks:24.74,durability:0.78,drawknife:0.82,none,True,replay:324:river_mill_bridge
+325,19,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day19,water:44.73,durability:0.95,glass tongs:0.68,none,True,replay:325:roof_greenhouse_cistern
+326,19,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day19,paper:21.60,durability:0.79,binding awl:0.75,none,True,replay:326:archive_public_kiosk
+327,19,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day19,oil:18.35,durability:0.97,wire crimper:0.76,none,True,replay:327:dusk_signal_workshop
+328,19,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day19,planks:24.74,durability:0.78,drawknife:0.82,none,True,replay:328:river_mill_bridge
+329,19,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day19,water:44.84,durability:0.94,glass tongs:0.67,none,True,replay:329:roof_greenhouse_cistern
+330,19,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day19,paper:21.60,durability:0.79,binding awl:0.75,none,True,replay:330:archive_public_kiosk
+331,19,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day19,oil:18.35,durability:0.97,wire crimper:0.75,none,True,replay:331:dusk_signal_workshop
+332,19,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day19,planks:24.95,durability:0.76,drawknife:0.81,none,True,replay:332:river_mill_bridge
+333,19,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day19,water:44.84,durability:0.93,glass tongs:0.79,none,True,replay:333:roof_greenhouse_cistern
+334,19,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day19,paper:21.60,durability:0.78,binding awl:0.75,none,True,replay:334:archive_public_kiosk
+335,19,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day19,oil:18.54,durability:0.96,wire crimper:0.75,none,True,replay:335:dusk_signal_workshop
+336,19,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day19,planks:24.95,durability:0.76,drawknife:0.81,none,True,replay:336:river_mill_bridge
+337,19,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day19,water:44.84,durability:0.92,glass tongs:0.79,none,True,replay:337:roof_greenhouse_cistern
+338,19,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day19,paper:21.75,durability:0.77,binding awl:0.74,none,True,replay:338:archive_public_kiosk
+339,19,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day19,oil:18.54,durability:0.95,wire crimper:0.74,none,True,replay:339:dusk_signal_workshop
+340,19,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day19,planks:24.85,durability:0.84,drawknife:0.80,none,True,replay:340:river_mill_bridge
+341,19,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day19,water:44.84,durability:0.91,glass tongs:0.78,none,True,replay:341:roof_greenhouse_cistern
+342,20,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day20,oil:18.44,durability:0.98,wire crimper:0.74,none,True,replay:342:dusk_signal_workshop
+343,20,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day20,planks:24.85,durability:0.83,drawknife:0.80,none,True,replay:343:river_mill_bridge
+344,20,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day20,water:45.00,durability:0.90,glass tongs:0.78,none,True,replay:344:roof_greenhouse_cistern
+345,20,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day20,paper:21.75,durability:0.76,binding awl:0.74,none,True,replay:345:archive_public_kiosk
+346,20,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day20,oil:18.44,durability:0.97,wire crimper:0.74,none,True,replay:346:dusk_signal_workshop
+347,20,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day20,planks:24.97,durability:0.82,drawknife:0.79,none,True,replay:347:river_mill_bridge
+348,20,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day20,water:45.00,durability:0.90,glass tongs:0.77,none,True,replay:348:roof_greenhouse_cistern
+349,20,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day20,paper:21.75,durability:0.75,binding awl:0.74,none,True,replay:349:archive_public_kiosk
+350,20,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day20,oil:18.53,durability:0.96,wire crimper:0.73,none,True,replay:350:dusk_signal_workshop
+351,20,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day20,planks:24.87,durability:0.90,drawknife:0.79,none,True,replay:351:river_mill_bridge
+352,20,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day20,water:45.00,durability:0.89,glass tongs:0.77,none,True,replay:352:roof_greenhouse_cistern
+353,20,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day20,paper:21.95,durability:0.74,binding awl:0.73,none,True,replay:353:archive_public_kiosk
+354,20,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day20,oil:18.43,durability:0.98,wire crimper:0.73,none,True,replay:354:dusk_signal_workshop
+355,20,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day20,planks:24.87,durability:0.90,drawknife:0.79,none,True,replay:355:river_mill_bridge
+356,20,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day20,water:45.16,durability:0.88,glass tongs:0.76,none,True,replay:356:roof_greenhouse_cistern
+357,20,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day20,paper:21.95,durability:0.74,binding awl:0.72,none,True,replay:357:archive_public_kiosk
+358,20,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day20,oil:18.43,durability:0.97,wire crimper:0.73,none,True,replay:358:dusk_signal_workshop
+359,20,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day20,planks:24.77,durability:0.97,drawknife:0.79,none,True,replay:359:river_mill_bridge
+360,21,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day21,water:45.16,durability:0.88,glass tongs:0.76,none,True,replay:360:roof_greenhouse_cistern
+361,21,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day21,paper:21.95,durability:0.73,binding awl:0.72,none,True,replay:361:archive_public_kiosk
+362,21,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day21,oil:18.60,durability:0.96,wire crimper:0.72,none,True,replay:362:dusk_signal_workshop
+363,21,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day21,planks:24.77,durability:0.97,drawknife:0.79,none,True,replay:363:river_mill_bridge
+364,21,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day21,water:45.16,durability:0.87,glass tongs:0.76,none,True,replay:364:roof_greenhouse_cistern
+365,21,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day21,paper:22.09,durability:0.72,binding awl:0.71,none,True,replay:365:archive_public_kiosk
+366,21,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day21,oil:18.83,durability:0.94,wire crimper:0.71,none,True,replay:366:dusk_signal_workshop
+367,21,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day21,planks:24.77,durability:0.96,drawknife:0.78,none,True,replay:367:river_mill_bridge
+368,21,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day21,water:45.26,durability:0.86,glass tongs:0.87,none,True,replay:368:roof_greenhouse_cistern
+369,21,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day21,paper:22.09,durability:0.71,binding awl:0.71,none,True,replay:369:archive_public_kiosk
+370,21,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day21,oil:18.83,durability:0.94,wire crimper:0.71,none,True,replay:370:dusk_signal_workshop
+371,21,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day21,planks:24.84,durability:0.95,drawknife:0.77,none,True,replay:371:river_mill_bridge
+372,21,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day21,water:45.26,durability:0.86,glass tongs:0.87,none,True,replay:372:roof_greenhouse_cistern
+373,21,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day21,paper:22.09,durability:0.71,binding awl:0.71,none,True,replay:373:archive_public_kiosk
+374,21,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day21,oil:19.00,durability:0.93,wire crimper:0.70,overbright relay startles patrol,True,replay:374:dusk_signal_workshop
+375,21,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day21,planks:24.84,durability:0.94,drawknife:0.77,none,True,replay:375:river_mill_bridge
+376,21,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day21,water:45.26,durability:0.85,glass tongs:0.87,none,True,replay:376:roof_greenhouse_cistern
+377,21,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day21,paper:22.23,durability:0.70,binding awl:0.70,none,True,replay:377:archive_public_kiosk
+378,22,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day22,oil:18.90,durability:0.98,wire crimper:0.70,none,True,replay:378:dusk_signal_workshop
+379,22,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day22,planks:24.84,durability:0.94,drawknife:0.77,none,True,replay:379:river_mill_bridge
+380,22,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day22,water:45.33,durability:0.83,glass tongs:0.86,none,True,replay:380:roof_greenhouse_cistern
+381,22,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day22,paper:22.23,durability:0.69,binding awl:0.70,none,True,replay:381:archive_public_kiosk
+382,22,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day22,oil:18.90,durability:0.97,wire crimper:0.69,none,True,replay:382:dusk_signal_workshop
+383,22,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day22,planks:25.06,durability:0.92,drawknife:0.76,none,True,replay:383:river_mill_bridge
+384,22,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day22,water:45.33,durability:0.82,glass tongs:0.86,none,True,replay:384:roof_greenhouse_cistern
+385,22,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day22,paper:22.23,durability:0.69,binding awl:0.70,none,True,replay:385:archive_public_kiosk
+386,22,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day22,oil:19.09,durability:0.96,wire crimper:0.68,none,True,replay:386:dusk_signal_workshop
+387,22,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day22,planks:24.96,durability:0.98,drawknife:0.76,none,True,replay:387:river_mill_bridge
+388,22,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day22,water:45.33,durability:0.82,glass tongs:0.85,none,True,replay:388:roof_greenhouse_cistern
+389,22,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day22,paper:22.38,durability:0.68,binding awl:0.69,none,True,replay:389:archive_public_kiosk
+390,22,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day22,oil:19.09,durability:0.96,wire crimper:0.68,none,True,replay:390:dusk_signal_workshop
+391,22,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day22,planks:24.86,durability:0.98,drawknife:0.88,none,True,replay:391:river_mill_bridge
+392,22,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day22,water:45.44,durability:0.80,glass tongs:0.85,none,True,replay:392:roof_greenhouse_cistern
+393,22,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day22,paper:22.38,durability:0.67,binding awl:0.69,none,True,replay:393:archive_public_kiosk
+394,22,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day22,oil:19.09,durability:0.95,wire crimper:0.68,none,True,replay:394:dusk_signal_workshop
+395,22,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day22,planks:24.76,durability:0.98,drawknife:0.88,none,True,replay:395:river_mill_bridge
+396,23,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day23,water:45.44,durability:0.80,glass tongs:0.84,none,True,replay:396:roof_greenhouse_cistern
+397,23,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day23,paper:22.38,durability:0.66,binding awl:0.68,none,True,replay:397:archive_public_kiosk
+398,23,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day23,oil:19.22,durability:0.94,wire crimper:0.67,none,True,replay:398:dusk_signal_workshop
+399,23,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day23,planks:24.76,durability:0.97,drawknife:0.87,none,True,replay:399:river_mill_bridge
+400,23,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day23,water:45.44,durability:0.79,glass tongs:0.84,none,True,replay:400:roof_greenhouse_cistern
+401,23,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day23,paper:22.48,durability:0.65,binding awl:0.67,index dampness erases route marks,True,replay:401:archive_public_kiosk
+402,23,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day23,oil:19.22,durability:0.94,wire crimper:0.67,none,True,replay:402:dusk_signal_workshop
+403,23,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day23,planks:24.94,durability:0.96,drawknife:0.87,none,True,replay:403:river_mill_bridge
+404,23,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day23,water:45.59,durability:0.78,glass tongs:0.83,none,True,replay:404:roof_greenhouse_cistern
+405,23,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day23,paper:22.38,durability:0.75,binding awl:0.80,none,True,replay:405:archive_public_kiosk
+406,23,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day23,oil:19.22,durability:0.93,wire crimper:0.67,none,True,replay:406:dusk_signal_workshop
+407,23,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day23,planks:25.10,durability:0.95,drawknife:0.86,none,True,replay:407:river_mill_bridge
+408,23,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day23,water:45.59,durability:0.77,glass tongs:0.83,none,True,replay:408:roof_greenhouse_cistern
+409,23,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day23,paper:22.38,durability:0.74,binding awl:0.80,none,True,replay:409:archive_public_kiosk
+410,23,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day23,oil:19.35,durability:0.92,wire crimper:0.66,none,True,replay:410:dusk_signal_workshop
+411,23,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day23,planks:25.10,durability:0.95,drawknife:0.85,none,True,replay:411:river_mill_bridge
+412,23,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day23,water:45.81,durability:0.76,glass tongs:0.82,none,True,replay:412:roof_greenhouse_cistern
+413,23,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day23,paper:22.28,durability:0.83,binding awl:0.79,none,True,replay:413:archive_public_kiosk
+414,24,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day24,planks:25.00,durability:0.98,drawknife:0.97,none,True,replay:414:river_mill_bridge
+415,24,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day24,water:45.76,durability:0.75,glass tongs:0.82,none,True,replay:415:roof_greenhouse_cistern
+416,24,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day24,paper:22.42,durability:0.81,binding awl:0.79,none,True,replay:416:archive_public_kiosk
+417,24,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day24,oil:19.58,durability:0.90,wire crimper:0.65,none,True,replay:417:dusk_signal_workshop
+418,24,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day24,planks:25.00,durability:0.97,drawknife:0.97,none,True,replay:418:river_mill_bridge
+419,24,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day24,water:45.87,durability:0.74,glass tongs:0.81,none,True,replay:419:roof_greenhouse_cistern
+420,24,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day24,paper:22.42,durability:0.81,binding awl:0.78,none,True,replay:420:archive_public_kiosk
+421,24,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day24,oil:19.58,durability:0.90,wire crimper:0.65,none,True,replay:421:dusk_signal_workshop
+422,24,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day24,planks:25.07,durability:0.96,drawknife:0.96,none,True,replay:422:river_mill_bridge
+423,24,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day24,water:45.87,durability:0.74,glass tongs:0.81,none,True,replay:423:roof_greenhouse_cistern
+424,24,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day24,paper:22.42,durability:0.80,binding awl:0.78,none,True,replay:424:archive_public_kiosk
+425,24,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day24,oil:19.76,durability:0.89,wire crimper:0.64,none,True,replay:425:dusk_signal_workshop
+426,24,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day24,planks:25.07,durability:0.95,drawknife:0.96,none,True,replay:426:river_mill_bridge
+427,24,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day24,water:45.87,durability:0.73,glass tongs:0.81,none,True,replay:427:roof_greenhouse_cistern
+428,24,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day24,paper:22.56,durability:0.79,binding awl:0.77,none,True,replay:428:archive_public_kiosk
+429,24,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day24,oil:19.76,durability:0.88,wire crimper:0.64,none,True,replay:429:dusk_signal_workshop
+430,24,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day24,planks:25.16,durability:0.94,drawknife:0.95,none,True,replay:430:river_mill_bridge
+431,24,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day24,water:45.87,durability:0.72,glass tongs:0.80,none,True,replay:431:roof_greenhouse_cistern
+432,25,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day25,paper:22.56,durability:0.79,binding awl:0.77,none,True,replay:432:archive_public_kiosk
+433,25,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day25,oil:19.76,durability:0.88,wire crimper:0.63,none,True,replay:433:dusk_signal_workshop
+434,25,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day25,planks:25.38,durability:0.92,drawknife:0.94,none,True,replay:434:river_mill_bridge
+435,25,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day25,water:45.87,durability:0.71,glass tongs:0.80,none,True,replay:435:roof_greenhouse_cistern
+436,25,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day25,paper:22.56,durability:0.78,binding awl:0.77,none,True,replay:436:archive_public_kiosk
+437,25,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day25,oil:19.95,durability:0.87,wire crimper:0.63,none,True,replay:437:dusk_signal_workshop
+438,25,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day25,planks:25.38,durability:0.92,drawknife:0.94,none,True,replay:438:river_mill_bridge
+439,25,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day25,water:45.82,durability:0.71,glass tongs:0.80,none,True,replay:439:roof_greenhouse_cistern
+440,25,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day25,paper:22.71,durability:0.77,binding awl:0.76,none,True,replay:440:archive_public_kiosk
+441,25,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day25,oil:19.85,durability:0.95,wire crimper:0.75,none,True,replay:441:dusk_signal_workshop
+442,25,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day25,planks:25.28,durability:0.98,drawknife:0.93,none,True,replay:442:river_mill_bridge
+443,25,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day25,water:45.93,durability:0.69,glass tongs:0.79,cistern leak chills seedlings,True,replay:443:roof_greenhouse_cistern
+444,25,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day25,paper:22.71,durability:0.76,binding awl:0.76,none,True,replay:444:archive_public_kiosk
+445,25,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day25,oil:19.85,durability:0.95,wire crimper:0.75,none,True,replay:445:dusk_signal_workshop
+446,25,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day25,planks:25.50,durability:0.97,drawknife:0.93,none,True,replay:446:river_mill_bridge
+447,25,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day25,water:45.93,durability:0.69,glass tongs:0.79,cistern leak chills seedlings,True,replay:447:roof_greenhouse_cistern
+448,25,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day25,paper:22.71,durability:0.76,binding awl:0.76,none,True,replay:448:archive_public_kiosk
+449,25,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day25,oil:19.85,durability:0.94,wire crimper:0.75,none,True,replay:449:dusk_signal_workshop
+450,26,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day26,planks:25.40,durability:0.98,drawknife:0.92,none,True,replay:450:river_mill_bridge
+451,26,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day26,water:45.93,durability:0.68,glass tongs:0.79,cistern leak chills seedlings,True,replay:451:roof_greenhouse_cistern
+452,26,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day26,paper:22.81,durability:0.74,binding awl:0.75,none,True,replay:452:archive_public_kiosk
+453,26,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day26,oil:19.85,durability:0.94,wire crimper:0.74,none,True,replay:453:dusk_signal_workshop
+454,26,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day26,planks:25.59,durability:0.97,drawknife:0.91,none,True,replay:454:river_mill_bridge
+455,26,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day26,water:46.13,durability:0.66,glass tongs:0.78,cistern leak chills seedlings,True,replay:455:roof_greenhouse_cistern
+456,26,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day26,paper:22.81,durability:0.74,binding awl:0.74,none,True,replay:456:archive_public_kiosk
+457,26,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day26,oil:19.85,durability:0.93,wire crimper:0.74,none,True,replay:457:dusk_signal_workshop
+458,26,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day26,planks:25.75,durability:0.96,drawknife:0.91,none,True,replay:458:river_mill_bridge
+459,26,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day26,water:46.03,durability:0.76,glass tongs:0.78,none,True,replay:459:roof_greenhouse_cistern
+460,26,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day26,paper:22.81,durability:0.73,binding awl:0.74,none,True,replay:460:archive_public_kiosk
+461,26,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day26,oil:19.98,durability:0.92,wire crimper:0.73,none,True,replay:461:dusk_signal_workshop
+462,26,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day26,planks:25.75,durability:0.95,drawknife:0.90,none,True,replay:462:river_mill_bridge
+463,26,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day26,water:46.21,durability:0.75,glass tongs:0.77,none,True,replay:463:roof_greenhouse_cistern
+464,26,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day26,paper:22.91,durability:0.72,binding awl:0.73,none,True,replay:464:archive_public_kiosk
+465,26,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day26,oil:19.98,durability:0.91,wire crimper:0.73,none,True,replay:465:dusk_signal_workshop
+466,26,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day26,planks:25.75,durability:0.95,drawknife:0.90,none,True,replay:466:river_mill_bridge
+467,26,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day26,water:46.11,durability:0.84,glass tongs:0.77,none,True,replay:467:roof_greenhouse_cistern
+468,27,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day27,paper:22.91,durability:0.71,binding awl:0.73,none,True,replay:468:archive_public_kiosk
+469,27,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day27,oil:19.98,durability:0.91,wire crimper:0.73,none,True,replay:469:dusk_signal_workshop
+470,27,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day27,planks:25.86,durability:0.94,drawknife:0.89,none,True,replay:470:river_mill_bridge
+471,27,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day27,water:46.11,durability:0.83,glass tongs:0.76,none,True,replay:471:roof_greenhouse_cistern
+472,27,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day27,paper:22.91,durability:0.70,binding awl:0.73,none,True,replay:472:archive_public_kiosk
+473,27,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day27,oil:20.05,durability:0.89,wire crimper:0.72,none,True,replay:473:dusk_signal_workshop
+474,27,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day27,planks:25.86,durability:0.93,drawknife:0.89,none,True,replay:474:river_mill_bridge
+475,27,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day27,water:46.11,durability:0.83,glass tongs:0.76,none,True,replay:475:roof_greenhouse_cistern
+476,27,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day27,paper:23.08,durability:0.69,binding awl:0.72,none,True,replay:476:archive_public_kiosk
+477,27,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day27,oil:20.05,durability:0.89,wire crimper:0.72,none,True,replay:477:dusk_signal_workshop
+478,27,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day27,planks:25.86,durability:0.92,drawknife:0.89,none,True,replay:478:river_mill_bridge
+479,27,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day27,water:46.25,durability:0.82,glass tongs:0.75,none,True,replay:479:roof_greenhouse_cistern
+480,27,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day27,paper:23.08,durability:0.69,binding awl:0.72,none,True,replay:480:archive_public_kiosk
+481,27,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day27,oil:20.05,durability:0.88,wire crimper:0.72,none,True,replay:481:dusk_signal_workshop
+482,27,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day27,planks:25.96,durability:0.91,drawknife:0.88,joint swelling blocks wheel,True,replay:482:river_mill_bridge
+483,27,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day27,water:46.25,durability:0.81,glass tongs:0.88,none,True,replay:483:roof_greenhouse_cistern
+484,27,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day27,paper:23.08,durability:0.68,binding awl:0.72,none,True,replay:484:archive_public_kiosk
+485,27,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day27,oil:20.05,durability:0.88,wire crimper:0.71,none,True,replay:485:dusk_signal_workshop
+486,28,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day28,water:46.25,durability:0.80,glass tongs:0.87,none,True,replay:486:roof_greenhouse_cistern
+487,28,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day28,paper:23.08,durability:0.68,binding awl:0.71,none,True,replay:487:archive_public_kiosk
+488,28,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day28,oil:20.24,durability:0.86,wire crimper:0.70,none,True,replay:488:dusk_signal_workshop
+489,28,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day28,planks:25.96,durability:0.90,drawknife:0.88,joint swelling blocks wheel,True,replay:489:river_mill_bridge
+490,28,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day28,water:46.25,durability:0.80,glass tongs:0.87,none,True,replay:490:roof_greenhouse_cistern
+491,28,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day28,paper:23.24,durability:0.66,binding awl:0.71,none,True,replay:491:archive_public_kiosk
+492,28,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day28,oil:20.24,durability:0.86,wire crimper:0.70,none,True,replay:492:dusk_signal_workshop
+493,28,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day28,planks:25.86,durability:0.98,drawknife:0.88,none,True,replay:493:river_mill_bridge
+494,28,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day28,water:46.37,durability:0.78,glass tongs:0.86,none,True,replay:494:roof_greenhouse_cistern
+495,28,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day28,paper:23.24,durability:0.66,binding awl:0.70,none,True,replay:495:archive_public_kiosk
+496,28,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day28,oil:20.24,durability:0.85,wire crimper:0.70,none,True,replay:496:dusk_signal_workshop
+497,28,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day28,planks:26.08,durability:0.97,drawknife:0.87,none,True,replay:497:river_mill_bridge
+498,28,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day28,water:46.32,durability:0.78,glass tongs:0.86,none,True,replay:498:roof_greenhouse_cistern
+499,28,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day28,paper:23.24,durability:0.65,binding awl:0.70,none,True,replay:499:archive_public_kiosk
+500,28,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day28,oil:20.43,durability:0.84,wire crimper:0.69,none,True,replay:500:dusk_signal_workshop
+501,28,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day28,planks:26.08,durability:0.96,drawknife:0.86,none,True,replay:501:river_mill_bridge
+502,28,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day28,water:46.32,durability:0.77,glass tongs:0.86,none,True,replay:502:roof_greenhouse_cistern
+503,28,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day28,paper:23.24,durability:0.64,binding awl:0.70,none,True,replay:503:archive_public_kiosk
+504,29,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day29,oil:20.43,durability:0.84,wire crimper:0.69,none,True,replay:504:dusk_signal_workshop
+505,29,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day29,planks:26.27,durability:0.95,drawknife:0.86,none,True,replay:505:river_mill_bridge
+506,29,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day29,water:46.52,durability:0.76,glass tongs:0.85,none,True,replay:506:roof_greenhouse_cistern
+507,29,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day29,paper:23.24,durability:0.64,binding awl:0.70,none,True,replay:507:archive_public_kiosk
+508,29,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day29,oil:20.43,durability:0.83,wire crimper:0.69,none,True,replay:508:dusk_signal_workshop
+509,29,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day29,planks:26.44,durability:0.94,drawknife:0.85,none,True,replay:509:river_mill_bridge
+510,29,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day29,water:46.52,durability:0.75,glass tongs:0.85,none,True,replay:510:roof_greenhouse_cistern
+511,29,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day29,paper:23.24,durability:0.63,binding awl:0.70,none,True,replay:511:archive_public_kiosk
+512,29,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day29,oil:20.56,durability:0.82,wire crimper:0.68,none,True,replay:512:dusk_signal_workshop
+513,29,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day29,planks:26.34,durability:0.98,drawknife:0.84,none,True,replay:513:river_mill_bridge
+514,29,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day29,water:46.75,durability:0.74,glass tongs:0.84,none,True,replay:514:roof_greenhouse_cistern
+515,29,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day29,paper:23.34,durability:0.62,binding awl:0.69,none,True,replay:515:archive_public_kiosk
+516,29,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day29,oil:20.56,durability:0.81,wire crimper:0.68,none,True,replay:516:dusk_signal_workshop
+517,29,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day29,planks:26.34,durability:0.97,drawknife:0.84,none,True,replay:517:river_mill_bridge
+518,29,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day29,water:46.95,durability:0.73,glass tongs:0.83,none,True,replay:518:roof_greenhouse_cistern
+519,29,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day29,paper:23.34,durability:0.61,binding awl:0.68,none,True,replay:519:archive_public_kiosk
+520,29,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day29,oil:20.56,durability:0.80,wire crimper:0.80,none,True,replay:520:dusk_signal_workshop
+521,29,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day29,planks:26.34,durability:0.97,drawknife:0.84,none,True,replay:521:river_mill_bridge
+522,30,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day30,water:46.95,durability:0.73,glass tongs:0.83,none,True,replay:522:roof_greenhouse_cistern
+523,30,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day30,paper:23.34,durability:0.61,binding awl:0.68,none,True,replay:523:archive_public_kiosk
+524,30,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day30,oil:20.64,durability:0.79,wire crimper:0.79,none,True,replay:524:dusk_signal_workshop
+525,30,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day30,planks:26.34,durability:0.96,drawknife:0.84,none,True,replay:525:river_mill_bridge
+526,30,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day30,water:46.95,durability:0.72,glass tongs:0.83,none,True,replay:526:roof_greenhouse_cistern
+527,30,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day30,paper:23.51,durability:0.60,binding awl:0.67,none,True,replay:527:archive_public_kiosk
+528,30,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day30,oil:20.64,durability:0.78,wire crimper:0.79,none,True,replay:528:dusk_signal_workshop
+529,30,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day30,planks:26.34,durability:0.95,drawknife:0.84,none,True,replay:529:river_mill_bridge
+530,30,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day30,water:47.09,durability:0.71,glass tongs:0.82,none,True,replay:530:roof_greenhouse_cistern
+531,30,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day30,paper:23.41,durability:0.68,binding awl:0.80,none,True,replay:531:archive_public_kiosk
+532,30,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day30,oil:20.64,durability:0.78,wire crimper:0.79,none,True,replay:532:dusk_signal_workshop
+533,30,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day30,planks:26.45,durability:0.94,drawknife:0.83,none,True,replay:533:river_mill_bridge
+534,30,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day30,water:47.09,durability:0.71,glass tongs:0.82,none,True,replay:534:roof_greenhouse_cistern
+535,30,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day30,paper:23.41,durability:0.68,binding awl:0.80,none,True,replay:535:archive_public_kiosk
+536,30,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day30,oil:20.71,durability:0.77,wire crimper:0.78,overbright relay startles patrol,True,replay:536:dusk_signal_workshop
+537,30,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day30,planks:26.45,durability:0.93,drawknife:0.83,none,True,replay:537:river_mill_bridge
+538,30,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day30,water:47.09,durability:0.70,glass tongs:0.81,none,True,replay:538:roof_greenhouse_cistern
+539,30,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day30,paper:23.41,durability:0.67,binding awl:0.79,none,True,replay:539:archive_public_kiosk
+540,31,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day31,oil:20.61,durability:0.87,wire crimper:0.78,none,True,replay:540:dusk_signal_workshop
+541,31,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day31,planks:26.45,durability:0.92,drawknife:0.82,none,True,replay:541:river_mill_bridge
+542,31,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day31,water:47.25,durability:0.69,glass tongs:0.80,none,True,replay:542:roof_greenhouse_cistern
+543,31,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day31,paper:23.41,durability:0.67,binding awl:0.79,none,True,replay:543:archive_public_kiosk
+544,31,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day31,oil:20.56,durability:0.86,wire crimper:0.77,none,True,replay:544:dusk_signal_workshop
+545,31,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day31,planks:26.57,durability:0.91,drawknife:0.81,none,True,replay:545:river_mill_bridge
+546,31,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day31,water:47.25,durability:0.68,glass tongs:0.80,none,True,replay:546:roof_greenhouse_cistern
+547,31,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day31,paper:23.55,durability:0.66,binding awl:0.78,none,True,replay:547:archive_public_kiosk
+548,31,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day31,oil:20.78,durability:0.85,wire crimper:0.77,none,True,replay:548:dusk_signal_workshop
+549,31,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day31,planks:26.66,durability:0.90,drawknife:0.81,none,True,replay:549:river_mill_bridge
+550,31,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day31,water:47.25,durability:0.67,glass tongs:0.80,none,True,replay:550:roof_greenhouse_cistern
+551,31,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day31,paper:23.74,durability:0.65,binding awl:0.77,none,True,replay:551:archive_public_kiosk
+552,31,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day31,oil:20.78,durability:0.85,wire crimper:0.76,none,True,replay:552:dusk_signal_workshop
+553,31,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day31,planks:26.66,durability:0.89,drawknife:0.80,none,True,replay:553:river_mill_bridge
+554,31,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day31,water:47.41,durability:0.66,glass tongs:0.79,none,True,replay:554:roof_greenhouse_cistern
+555,31,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day31,paper:23.74,durability:0.64,binding awl:0.77,none,True,replay:555:archive_public_kiosk
+556,31,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day31,oil:20.96,durability:0.83,wire crimper:0.75,none,True,replay:556:dusk_signal_workshop
+557,31,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day31,planks:26.66,durability:0.88,drawknife:0.80,none,True,replay:557:river_mill_bridge
+558,32,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day32,paper:23.74,durability:0.63,binding awl:0.77,none,True,replay:558:archive_public_kiosk
+559,32,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day32,oil:20.96,durability:0.83,wire crimper:0.75,none,True,replay:559:dusk_signal_workshop
+560,32,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day32,planks:26.83,durability:0.87,drawknife:0.79,none,True,replay:560:river_mill_bridge
+561,32,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day32,water:47.41,durability:0.65,glass tongs:0.79,none,True,replay:561:roof_greenhouse_cistern
+562,32,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day32,paper:23.74,durability:0.62,binding awl:0.77,none,True,replay:562:archive_public_kiosk
+563,32,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day32,oil:21.09,durability:0.81,wire crimper:0.74,none,True,replay:563:dusk_signal_workshop
+564,32,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day32,planks:26.83,durability:0.87,drawknife:0.79,none,True,replay:564:river_mill_bridge
+565,32,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day32,water:47.63,durability:0.64,glass tongs:0.78,none,True,replay:565:roof_greenhouse_cistern
+566,32,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day32,paper:23.84,durability:0.61,binding awl:0.76,index dampness erases route marks,True,replay:566:archive_public_kiosk
+567,32,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day32,oil:21.09,durability:0.81,wire crimper:0.74,none,True,replay:567:dusk_signal_workshop
+568,32,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day32,planks:26.83,durability:0.86,drawknife:0.79,none,True,replay:568:river_mill_bridge
+569,32,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day32,water:47.83,durability:0.63,glass tongs:0.77,none,True,replay:569:roof_greenhouse_cistern
+570,32,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day32,paper:23.84,durability:0.61,binding awl:0.76,index dampness erases route marks,True,replay:570:archive_public_kiosk
+571,32,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day32,oil:21.09,durability:0.80,wire crimper:0.74,none,True,replay:571:dusk_signal_workshop
+572,32,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day32,planks:27.00,durability:0.85,drawknife:0.78,none,True,replay:572:river_mill_bridge
+573,32,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day32,water:47.83,durability:0.63,glass tongs:0.77,none,True,replay:573:roof_greenhouse_cistern
+574,32,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day32,paper:23.96,durability:0.60,binding awl:0.75,index dampness erases route marks,True,replay:574:archive_public_kiosk
+575,32,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day32,oil:21.09,durability:0.80,wire crimper:0.86,none,True,replay:575:dusk_signal_workshop
+576,33,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day33,planks:27.00,durability:0.84,drawknife:0.78,none,True,replay:576:river_mill_bridge
+577,33,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day33,water:47.83,durability:0.62,glass tongs:0.77,none,True,replay:577:roof_greenhouse_cistern
+578,33,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day33,paper:24.14,durability:0.58,binding awl:0.74,index dampness erases route marks,True,replay:578:archive_public_kiosk
+579,33,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day33,oil:21.09,durability:0.79,wire crimper:0.86,none,True,replay:579:dusk_signal_workshop
+580,33,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day33,planks:27.00,durability:0.83,drawknife:0.78,none,True,replay:580:river_mill_bridge
+581,33,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day33,water:47.97,durability:0.61,glass tongs:0.76,none,True,replay:581:roof_greenhouse_cistern
+582,33,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day33,paper:24.14,durability:0.58,binding awl:0.74,index dampness erases route marks,True,replay:582:archive_public_kiosk
+583,33,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day33,oil:21.09,durability:0.78,wire crimper:0.86,none,True,replay:583:dusk_signal_workshop
+584,33,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day33,planks:27.10,durability:0.82,drawknife:0.77,none,True,replay:584:river_mill_bridge
+585,33,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day33,water:47.87,durability:0.70,glass tongs:0.76,none,True,replay:585:roof_greenhouse_cistern
+586,33,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day33,paper:24.14,durability:0.57,binding awl:0.73,index dampness erases route marks,True,replay:586:archive_public_kiosk
+587,33,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day33,oil:21.16,durability:0.77,wire crimper:0.85,none,True,replay:587:dusk_signal_workshop
+588,33,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day33,planks:27.10,durability:0.81,drawknife:0.76,none,True,replay:588:river_mill_bridge
+589,33,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day33,water:47.87,durability:0.69,glass tongs:0.75,none,True,replay:589:roof_greenhouse_cistern
+590,33,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day33,paper:24.32,durability:0.56,binding awl:0.73,index dampness erases route marks,True,replay:590:archive_public_kiosk
+591,33,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day33,oil:21.16,durability:0.77,wire crimper:0.85,none,True,replay:591:dusk_signal_workshop
+592,33,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day33,planks:27.10,durability:0.80,drawknife:0.76,none,True,replay:592:river_mill_bridge
+593,33,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day33,water:47.87,durability:0.68,glass tongs:0.75,none,True,replay:593:roof_greenhouse_cistern
+594,34,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day34,paper:24.22,durability:0.66,binding awl:0.72,none,True,replay:594:archive_public_kiosk
+595,34,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day34,oil:21.16,durability:0.76,wire crimper:0.85,none,True,replay:595:dusk_signal_workshop
+596,34,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day34,planks:27.22,durability:0.79,drawknife:0.75,none,True,replay:596:river_mill_bridge
+597,34,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day34,water:47.87,durability:0.67,glass tongs:0.75,none,True,replay:597:roof_greenhouse_cistern
+598,34,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day34,paper:24.36,durability:0.65,binding awl:0.71,none,True,replay:598:archive_public_kiosk
+599,34,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day34,oil:21.39,durability:0.75,wire crimper:0.84,none,True,replay:599:dusk_signal_workshop
+600,34,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day34,planks:27.32,durability:0.78,drawknife:0.74,none,True,replay:600:river_mill_bridge
+601,34,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day34,water:47.87,durability:0.67,glass tongs:0.75,none,True,replay:601:roof_greenhouse_cistern
+602,34,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day34,paper:24.55,durability:0.64,binding awl:0.71,none,True,replay:602:archive_public_kiosk
+603,34,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day34,oil:21.34,durability:0.74,wire crimper:0.84,none,True,replay:603:dusk_signal_workshop
+604,34,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day34,planks:27.32,durability:0.77,drawknife:0.74,none,True,replay:604:river_mill_bridge
+605,34,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day34,water:48.03,durability:0.65,glass tongs:0.74,cistern leak chills seedlings,True,replay:605:roof_greenhouse_cistern
+606,34,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day34,paper:24.55,durability:0.63,binding awl:0.70,none,True,replay:606:archive_public_kiosk
+607,34,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day34,oil:21.52,durability:0.73,wire crimper:0.83,none,True,replay:607:dusk_signal_workshop
+608,34,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day34,planks:27.44,durability:0.76,drawknife:0.73,none,True,replay:608:river_mill_bridge
+609,34,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day34,water:48.16,durability:0.64,glass tongs:0.73,cistern leak chills seedlings,True,replay:609:roof_greenhouse_cistern
+610,34,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day34,paper:24.55,durability:0.63,binding awl:0.70,none,True,replay:610:archive_public_kiosk
+611,34,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day34,oil:21.52,durability:0.73,wire crimper:0.82,none,True,replay:611:dusk_signal_workshop
+612,35,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day35,planks:27.44,durability:0.76,drawknife:0.73,none,True,replay:612:river_mill_bridge
+613,35,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day35,water:48.16,durability:0.63,glass tongs:0.73,cistern leak chills seedlings,True,replay:613:roof_greenhouse_cistern
+614,35,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day35,paper:24.68,durability:0.61,binding awl:0.69,none,True,replay:614:archive_public_kiosk
+615,35,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day35,oil:21.52,durability:0.72,wire crimper:0.82,none,True,replay:615:dusk_signal_workshop
+616,35,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day35,planks:27.44,durability:0.75,drawknife:0.73,none,True,replay:616:river_mill_bridge
+617,35,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day35,water:48.26,durability:0.62,glass tongs:0.72,cistern leak chills seedlings,True,replay:617:roof_greenhouse_cistern
+618,35,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day35,paper:24.68,durability:0.61,binding awl:0.69,none,True,replay:618:archive_public_kiosk
+619,35,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day35,oil:21.52,durability:0.72,wire crimper:0.82,none,True,replay:619:dusk_signal_workshop
+620,35,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day35,planks:27.64,durability:0.74,drawknife:0.72,none,True,replay:620:river_mill_bridge
+621,35,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day35,water:48.16,durability:0.72,glass tongs:0.84,none,True,replay:621:roof_greenhouse_cistern
+622,35,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day35,paper:24.58,durability:0.69,binding awl:0.69,none,True,replay:622:archive_public_kiosk
+623,35,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day35,oil:21.68,durability:0.70,wire crimper:0.81,none,True,replay:623:dusk_signal_workshop
+624,35,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day35,planks:27.64,durability:0.74,drawknife:0.72,none,True,replay:624:river_mill_bridge
+625,35,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day35,water:48.16,durability:0.72,glass tongs:0.84,none,True,replay:625:roof_greenhouse_cistern
+626,35,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day35,paper:24.71,durability:0.68,binding awl:0.68,none,True,replay:626:archive_public_kiosk
+627,35,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day35,oil:21.63,durability:0.69,wire crimper:0.81,none,True,replay:627:dusk_signal_workshop
+628,35,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day35,planks:27.64,durability:0.73,drawknife:0.72,none,True,replay:628:river_mill_bridge
+629,35,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day35,water:48.06,durability:0.81,glass tongs:0.84,none,True,replay:629:roof_greenhouse_cistern
+630,36,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day36,oil:21.63,durability:0.68,wire crimper:0.81,none,True,replay:630:dusk_signal_workshop
+631,36,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day36,planks:27.64,durability:0.72,drawknife:0.71,none,True,replay:631:river_mill_bridge
+632,36,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day36,water:48.20,durability:0.80,glass tongs:0.83,none,True,replay:632:roof_greenhouse_cistern
+633,36,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day36,paper:24.71,durability:0.67,binding awl:0.68,none,True,replay:633:archive_public_kiosk
+634,36,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day36,oil:21.63,durability:0.68,wire crimper:0.81,none,True,replay:634:dusk_signal_workshop
+635,36,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day36,planks:27.75,durability:0.71,drawknife:0.71,joint swelling blocks wheel,True,replay:635:river_mill_bridge
+636,36,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day36,water:48.20,durability:0.79,glass tongs:0.83,none,True,replay:636:roof_greenhouse_cistern
+637,36,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day36,paper:24.71,durability:0.67,binding awl:0.68,none,True,replay:637:archive_public_kiosk
+638,36,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day36,oil:21.65,durability:0.66,wire crimper:0.80,none,True,replay:638:dusk_signal_workshop
+639,36,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day36,planks:27.65,durability:0.81,drawknife:0.70,none,True,replay:639:river_mill_bridge
+640,36,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day36,water:48.20,durability:0.78,glass tongs:0.83,none,True,replay:640:roof_greenhouse_cistern
+641,36,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day36,paper:24.89,durability:0.66,binding awl:0.67,none,True,replay:641:archive_public_kiosk
+642,36,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day36,oil:21.65,durability:0.66,wire crimper:0.79,none,True,replay:642:dusk_signal_workshop
+643,36,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day36,planks:27.65,durability:0.80,drawknife:0.70,none,True,replay:643:river_mill_bridge
+644,36,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day36,water:48.34,durability:0.77,glass tongs:0.82,none,True,replay:644:roof_greenhouse_cistern
+645,36,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day36,paper:24.89,durability:0.65,binding awl:0.66,none,True,replay:645:archive_public_kiosk
+646,36,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day36,oil:21.65,durability:0.65,wire crimper:0.79,none,True,replay:646:dusk_signal_workshop
+647,36,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day36,planks:27.65,durability:0.80,drawknife:0.70,none,True,replay:647:river_mill_bridge
+648,37,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day37,water:48.34,durability:0.76,glass tongs:0.82,none,True,replay:648:roof_greenhouse_cistern
+649,37,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day37,paper:25.03,durability:0.64,binding awl:0.66,none,True,replay:649:archive_public_kiosk
+650,37,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day37,oil:21.88,durability:0.64,wire crimper:0.78,none,True,replay:650:dusk_signal_workshop
+651,37,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day37,planks:27.75,durability:0.79,drawknife:0.69,none,True,replay:651:river_mill_bridge
+652,37,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day37,water:48.34,durability:0.76,glass tongs:0.81,none,True,replay:652:roof_greenhouse_cistern
+653,37,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day37,paper:25.22,durability:0.63,binding awl:0.65,none,True,replay:653:archive_public_kiosk
+654,37,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day37,oil:21.88,durability:0.64,wire crimper:0.78,none,True,replay:654:dusk_signal_workshop
+655,37,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day37,planks:27.75,durability:0.78,drawknife:0.69,none,True,replay:655:river_mill_bridge
+656,37,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day37,water:48.50,durability:0.74,glass tongs:0.80,none,True,replay:656:roof_greenhouse_cistern
+657,37,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day37,paper:25.12,durability:0.71,binding awl:0.77,none,True,replay:657:archive_public_kiosk
+658,37,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day37,oil:22.06,durability:0.63,wire crimper:0.77,none,True,replay:658:dusk_signal_workshop
+659,37,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day37,planks:27.87,durability:0.77,drawknife:0.68,none,True,replay:659:river_mill_bridge
+660,37,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day37,water:48.63,durability:0.73,glass tongs:0.80,none,True,replay:660:roof_greenhouse_cistern
+661,37,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day37,paper:25.12,durability:0.71,binding awl:0.77,none,True,replay:661:archive_public_kiosk
+662,37,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day37,oil:22.23,durability:0.61,wire crimper:0.76,none,True,replay:662:dusk_signal_workshop
+663,37,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day37,planks:27.87,durability:0.77,drawknife:0.68,none,True,replay:663:river_mill_bridge
+664,37,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day37,water:48.63,durability:0.73,glass tongs:0.79,none,True,replay:664:roof_greenhouse_cistern
+665,37,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day37,paper:25.02,durability:0.79,binding awl:0.77,none,True,replay:665:archive_public_kiosk
+666,38,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day38,oil:22.13,durability:0.70,wire crimper:0.76,none,True,replay:666:dusk_signal_workshop
+667,38,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day38,planks:27.87,durability:0.76,drawknife:0.68,none,True,replay:667:river_mill_bridge
+668,38,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day38,water:48.73,durability:0.71,glass tongs:0.78,none,True,replay:668:roof_greenhouse_cistern
+669,38,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day38,paper:25.02,durability:0.79,binding awl:0.76,none,True,replay:669:archive_public_kiosk
+670,38,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day38,oil:22.13,durability:0.70,wire crimper:0.76,none,True,replay:670:dusk_signal_workshop
+671,38,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day38,planks:28.07,durability:0.75,drawknife:0.67,none,True,replay:671:river_mill_bridge
+672,38,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day38,water:48.73,durability:0.71,glass tongs:0.78,none,True,replay:672:roof_greenhouse_cistern
+673,38,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day38,paper:24.92,durability:0.87,binding awl:0.76,none,True,replay:673:archive_public_kiosk
+674,38,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day38,oil:22.30,durability:0.68,wire crimper:0.75,none,True,replay:674:dusk_signal_workshop
+675,38,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day38,planks:28.07,durability:0.75,drawknife:0.79,none,True,replay:675:river_mill_bridge
+676,38,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day38,water:48.73,durability:0.70,glass tongs:0.78,none,True,replay:676:roof_greenhouse_cistern
+677,38,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day38,paper:25.05,durability:0.86,binding awl:0.75,none,True,replay:677:archive_public_kiosk
+678,38,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day38,oil:22.30,durability:0.68,wire crimper:0.75,none,True,replay:678:dusk_signal_workshop
+679,38,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day38,planks:28.07,durability:0.74,drawknife:0.79,none,True,replay:679:river_mill_bridge
+680,38,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day38,water:48.82,durability:0.69,glass tongs:0.77,none,True,replay:680:roof_greenhouse_cistern
+681,38,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day38,paper:25.05,durability:0.85,binding awl:0.75,none,True,replay:681:archive_public_kiosk
+682,38,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day38,oil:22.30,durability:0.67,wire crimper:0.75,none,True,replay:682:dusk_signal_workshop
+683,38,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day38,planks:28.07,durability:0.73,drawknife:0.79,none,True,replay:683:river_mill_bridge
+684,39,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day39,water:49.00,durability:0.68,glass tongs:0.76,none,True,replay:684:roof_greenhouse_cistern
+685,39,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day39,paper:25.05,durability:0.85,binding awl:0.75,none,True,replay:685:archive_public_kiosk
+686,39,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day39,oil:22.41,durability:0.66,wire crimper:0.74,none,True,replay:686:dusk_signal_workshop
+687,39,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day39,planks:28.07,durability:0.73,drawknife:0.79,none,True,replay:687:river_mill_bridge
+688,39,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day39,water:49.00,durability:0.67,glass tongs:0.76,none,True,replay:688:roof_greenhouse_cistern
+689,39,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day39,paper:25.12,durability:0.84,binding awl:0.74,none,True,replay:689:archive_public_kiosk
+690,39,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day39,oil:22.31,durability:0.74,wire crimper:0.86,none,True,replay:690:dusk_signal_workshop
+691,39,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day39,planks:28.07,durability:0.72,drawknife:0.78,none,True,replay:691:river_mill_bridge
+692,39,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day39,water:49.17,durability:0.66,glass tongs:0.75,none,True,replay:692:roof_greenhouse_cistern
+693,39,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day39,paper:25.14,durability:0.92,binding awl:0.73,none,True,replay:693:archive_public_kiosk
+694,39,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day39,oil:22.31,durability:0.74,wire crimper:0.86,none,True,replay:694:dusk_signal_workshop
+695,39,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day39,planks:28.21,durability:0.71,drawknife:0.77,none,True,replay:695:river_mill_bridge
+696,39,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day39,water:49.17,durability:0.66,glass tongs:0.75,none,True,replay:696:roof_greenhouse_cistern
+697,39,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day39,paper:25.14,durability:0.91,binding awl:0.73,none,True,replay:697:archive_public_kiosk
+698,39,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day39,oil:22.41,durability:0.72,wire crimper:0.85,overbright relay startles patrol,True,replay:698:dusk_signal_workshop
+699,39,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day39,planks:28.21,durability:0.70,drawknife:0.77,none,True,replay:699:river_mill_bridge
+700,39,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day39,water:49.17,durability:0.65,glass tongs:0.75,none,True,replay:700:roof_greenhouse_cistern
+701,39,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day39,paper:25.04,durability:0.98,binding awl:0.73,none,True,replay:701:archive_public_kiosk
+702,40,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day40,planks:28.31,durability:0.69,drawknife:0.76,none,True,replay:702:river_mill_bridge
+703,40,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day40,water:49.17,durability:0.64,glass tongs:0.75,none,True,replay:703:roof_greenhouse_cistern
+704,40,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day40,paper:25.24,durability:0.97,binding awl:0.72,none,True,replay:704:archive_public_kiosk
+705,40,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day40,oil:22.41,durability:0.72,wire crimper:0.85,overbright relay startles patrol,True,replay:705:dusk_signal_workshop
+706,40,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day40,planks:28.31,durability:0.68,drawknife:0.76,none,True,replay:706:river_mill_bridge
+707,40,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day40,water:49.33,durability:0.63,glass tongs:0.74,none,True,replay:707:roof_greenhouse_cistern
+708,40,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day40,paper:25.24,durability:0.96,binding awl:0.72,none,True,replay:708:archive_public_kiosk
+709,40,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day40,oil:22.59,durability:0.71,wire crimper:0.84,overbright relay startles patrol,True,replay:709:dusk_signal_workshop
+710,40,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day40,planks:28.43,durability:0.67,drawknife:0.75,none,True,replay:710:river_mill_bridge
+711,40,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day40,water:49.46,durability:0.62,glass tongs:0.73,none,True,replay:711:roof_greenhouse_cistern
+712,40,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day40,paper:25.24,durability:0.95,binding awl:0.71,none,True,replay:712:archive_public_kiosk
+713,40,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day40,oil:22.81,durability:0.70,wire crimper:0.83,overbright relay startles patrol,True,replay:713:dusk_signal_workshop
+714,40,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day40,planks:28.43,durability:0.67,drawknife:0.75,none,True,replay:714:river_mill_bridge
+715,40,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day40,water:49.46,durability:0.61,glass tongs:0.73,none,True,replay:715:roof_greenhouse_cistern
+716,40,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day40,paper:25.43,durability:0.94,binding awl:0.71,none,True,replay:716:archive_public_kiosk
+717,40,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day40,oil:22.81,durability:0.69,wire crimper:0.83,overbright relay startles patrol,True,replay:717:dusk_signal_workshop
+718,40,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day40,planks:28.43,durability:0.66,drawknife:0.75,none,True,replay:718:river_mill_bridge
+719,40,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day40,water:49.36,durability:0.70,glass tongs:0.72,none,True,replay:719:roof_greenhouse_cistern
+720,41,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day41,paper:25.33,durability:0.98,binding awl:0.70,none,True,replay:720:archive_public_kiosk
+721,41,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day41,oil:22.81,durability:0.68,wire crimper:0.83,overbright relay startles patrol,True,replay:721:dusk_signal_workshop
+722,41,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day41,planks:28.63,durability:0.65,drawknife:0.74,none,True,replay:722:river_mill_bridge
+723,41,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day41,water:49.36,durability:0.70,glass tongs:0.72,none,True,replay:723:roof_greenhouse_cistern
+724,41,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day41,paper:25.23,durability:0.98,binding awl:0.70,none,True,replay:724:archive_public_kiosk
+725,41,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day41,oil:22.98,durability:0.67,wire crimper:0.82,overbright relay startles patrol,True,replay:725:dusk_signal_workshop
+726,41,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day41,planks:28.63,durability:0.64,drawknife:0.74,none,True,replay:726:river_mill_bridge
+727,41,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day41,water:49.36,durability:0.69,glass tongs:0.72,none,True,replay:727:roof_greenhouse_cistern
+728,41,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day41,paper:25.36,durability:0.97,binding awl:0.69,index dampness erases route marks,True,replay:728:archive_public_kiosk
+729,41,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day41,oil:22.88,durability:0.77,wire crimper:0.82,none,True,replay:729:dusk_signal_workshop
+730,41,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day41,planks:28.63,durability:0.64,drawknife:0.74,none,True,replay:730:river_mill_bridge
+731,41,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day41,water:49.46,durability:0.68,glass tongs:0.71,none,True,replay:731:roof_greenhouse_cistern
+732,41,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day41,paper:25.36,durability:0.96,binding awl:0.69,index dampness erases route marks,True,replay:732:archive_public_kiosk
+733,41,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day41,oil:22.88,durability:0.76,wire crimper:0.81,none,True,replay:733:dusk_signal_workshop
+734,41,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day41,planks:28.83,durability:0.62,drawknife:0.73,none,True,replay:734:river_mill_bridge
+735,41,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day41,water:49.46,durability:0.68,glass tongs:0.71,none,True,replay:735:roof_greenhouse_cistern
+736,41,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day41,paper:25.36,durability:0.95,binding awl:0.69,index dampness erases route marks,True,replay:736:archive_public_kiosk
+737,41,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day41,oil:22.78,durability:0.85,wire crimper:0.81,none,True,replay:737:dusk_signal_workshop
+738,42,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day42,planks:28.73,durability:0.71,drawknife:0.72,none,True,replay:738:river_mill_bridge
+739,42,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day42,water:49.46,durability:0.67,glass tongs:0.71,none,True,replay:739:roof_greenhouse_cistern
+740,42,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day42,paper:25.43,durability:0.94,binding awl:0.68,index dampness erases route marks,True,replay:740:archive_public_kiosk
+741,42,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day42,oil:22.78,durability:0.84,wire crimper:0.81,none,True,replay:741:dusk_signal_workshop
+742,42,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day42,planks:28.73,durability:0.70,drawknife:0.72,none,True,replay:742:river_mill_bridge
+743,42,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day42,water:49.59,durability:0.66,glass tongs:0.70,none,True,replay:743:roof_greenhouse_cistern
+744,42,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day42,paper:25.55,durability:0.93,binding awl:0.67,index dampness erases route marks,True,replay:744:archive_public_kiosk
+745,42,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day42,oil:22.78,durability:0.83,wire crimper:0.81,none,True,replay:745:dusk_signal_workshop
+746,42,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day42,planks:28.87,durability:0.69,drawknife:0.71,none,True,replay:746:river_mill_bridge
+747,42,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day42,water:49.49,durability:0.74,glass tongs:0.70,none,True,replay:747:roof_greenhouse_cistern
+748,42,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day42,paper:25.55,durability:0.93,binding awl:0.67,index dampness erases route marks,True,replay:748:archive_public_kiosk
+749,42,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day42,oil:22.89,durability:0.82,wire crimper:0.80,none,True,replay:749:dusk_signal_workshop
+750,42,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day42,planks:28.87,durability:0.68,drawknife:0.71,none,True,replay:750:river_mill_bridge
+751,42,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day42,water:49.49,durability:0.74,glass tongs:0.69,none,True,replay:751:roof_greenhouse_cistern
+752,42,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day42,paper:25.62,durability:0.91,binding awl:0.66,index dampness erases route marks,True,replay:752:archive_public_kiosk
+753,42,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day42,oil:23.04,durability:0.81,wire crimper:0.79,none,True,replay:753:dusk_signal_workshop
+754,42,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day42,planks:28.87,durability:0.68,drawknife:0.71,none,True,replay:754:river_mill_bridge
+755,42,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day42,water:49.66,durability:0.72,glass tongs:0.68,none,True,replay:755:roof_greenhouse_cistern
+756,43,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day43,paper:25.52,durability:0.98,binding awl:0.78,none,True,replay:756:archive_public_kiosk
+757,43,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day43,oil:23.04,durability:0.80,wire crimper:0.79,none,True,replay:757:dusk_signal_workshop
+758,43,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day43,planks:29.03,durability:0.66,drawknife:0.70,none,True,replay:758:river_mill_bridge
+759,43,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day43,water:49.66,durability:0.72,glass tongs:0.68,none,True,replay:759:roof_greenhouse_cistern
+760,43,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day43,paper:25.52,durability:0.97,binding awl:0.78,none,True,replay:760:archive_public_kiosk
+761,43,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day43,oil:23.17,durability:0.79,wire crimper:0.78,none,True,replay:761:dusk_signal_workshop
+762,43,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day43,planks:29.03,durability:0.66,drawknife:0.70,none,True,replay:762:river_mill_bridge
+763,43,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day43,water:49.66,durability:0.71,glass tongs:0.68,none,True,replay:763:roof_greenhouse_cistern
+764,43,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day43,paper:25.75,durability:0.96,binding awl:0.77,none,True,replay:764:archive_public_kiosk
+765,43,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day43,oil:23.17,durability:0.79,wire crimper:0.78,none,True,replay:765:dusk_signal_workshop
+766,43,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day43,planks:29.03,durability:0.65,drawknife:0.70,none,True,replay:766:river_mill_bridge
+767,43,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day43,water:49.85,durability:0.70,glass tongs:0.67,cistern leak chills seedlings,True,replay:767:roof_greenhouse_cistern
+768,43,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day43,paper:25.75,durability:0.95,binding awl:0.77,none,True,replay:768:archive_public_kiosk
+769,43,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day43,oil:23.17,durability:0.78,wire crimper:0.78,none,True,replay:769:dusk_signal_workshop
+770,43,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day43,planks:29.19,durability:0.64,drawknife:0.69,none,True,replay:770:river_mill_bridge
+771,43,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day43,water:49.85,durability:0.69,glass tongs:0.67,cistern leak chills seedlings,True,replay:771:roof_greenhouse_cistern
+772,43,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day43,paper:25.75,durability:0.95,binding awl:0.77,none,True,replay:772:archive_public_kiosk
+773,43,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day43,oil:23.17,durability:0.78,wire crimper:0.77,none,True,replay:773:dusk_signal_workshop
+774,44,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day44,water:49.75,durability:0.79,glass tongs:0.79,none,True,replay:774:roof_greenhouse_cistern
+775,44,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day44,paper:25.65,durability:0.98,binding awl:0.77,none,True,replay:775:archive_public_kiosk
+776,44,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day44,oil:23.33,durability:0.76,wire crimper:0.76,none,True,replay:776:dusk_signal_workshop
+777,44,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day44,planks:29.19,durability:0.64,drawknife:0.69,none,True,replay:777:river_mill_bridge
+778,44,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day44,water:49.70,durability:0.78,glass tongs:0.79,none,True,replay:778:roof_greenhouse_cistern
+779,44,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day44,paper:25.78,durability:0.97,binding awl:0.76,none,True,replay:779:archive_public_kiosk
+780,44,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day44,oil:23.33,durability:0.76,wire crimper:0.76,none,True,replay:780:dusk_signal_workshop
+781,44,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day44,planks:29.19,durability:0.63,drawknife:0.68,none,True,replay:781:river_mill_bridge
+782,44,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day44,water:49.80,durability:0.77,glass tongs:0.78,none,True,replay:782:roof_greenhouse_cistern
+783,44,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day44,paper:25.68,durability:0.98,binding awl:0.76,none,True,replay:783:archive_public_kiosk
+784,44,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day44,oil:23.33,durability:0.75,wire crimper:0.76,none,True,replay:784:dusk_signal_workshop
+785,44,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day44,planks:29.39,durability:0.62,drawknife:0.67,none,True,replay:785:river_mill_bridge
+786,44,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day44,water:49.80,durability:0.77,glass tongs:0.78,none,True,replay:786:roof_greenhouse_cistern
+787,44,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day44,paper:25.68,durability:0.97,binding awl:0.75,none,True,replay:787:archive_public_kiosk
+788,44,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day44,oil:23.50,durability:0.74,wire crimper:0.75,none,True,replay:788:dusk_signal_workshop
+789,44,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day44,planks:29.39,durability:0.61,drawknife:0.67,none,True,replay:789:river_mill_bridge
+790,44,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day44,water:49.80,durability:0.76,glass tongs:0.78,none,True,replay:790:roof_greenhouse_cistern
+791,44,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day44,paper:25.68,durability:0.97,binding awl:0.75,none,True,replay:791:archive_public_kiosk
+792,45,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day45,oil:23.50,durability:0.73,wire crimper:0.75,none,True,replay:792:dusk_signal_workshop
+793,45,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day45,planks:29.39,durability:0.60,drawknife:0.67,none,True,replay:793:river_mill_bridge
+794,45,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day45,water:49.98,durability:0.75,glass tongs:0.77,none,True,replay:794:roof_greenhouse_cistern
+795,45,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day45,paper:25.80,durability:0.96,binding awl:0.74,none,True,replay:795:archive_public_kiosk
+796,45,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day45,oil:23.50,durability:0.72,wire crimper:0.75,none,True,replay:796:dusk_signal_workshop
+797,45,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day45,planks:29.53,durability:0.59,drawknife:0.66,joint swelling blocks wheel,True,replay:797:river_mill_bridge
+798,45,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day45,water:49.98,durability:0.75,glass tongs:0.77,none,True,replay:798:roof_greenhouse_cistern
+799,45,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day45,paper:25.80,durability:0.95,binding awl:0.74,none,True,replay:799:archive_public_kiosk
+800,45,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day45,oil:23.60,durability:0.71,wire crimper:0.74,none,True,replay:800:dusk_signal_workshop
+801,45,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day45,planks:29.43,durability:0.69,drawknife:0.79,none,True,replay:801:river_mill_bridge
+802,45,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day45,water:49.88,durability:0.83,glass tongs:0.77,none,True,replay:802:roof_greenhouse_cistern
+803,45,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day45,paper:25.87,durability:0.94,binding awl:0.73,none,True,replay:803:archive_public_kiosk
+804,45,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day45,oil:23.76,durability:0.70,wire crimper:0.73,none,True,replay:804:dusk_signal_workshop
+805,45,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day45,planks:29.43,durability:0.69,drawknife:0.78,none,True,replay:805:river_mill_bridge
+806,45,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day45,water:50.05,durability:0.82,glass tongs:0.76,none,True,replay:806:roof_greenhouse_cistern
+807,45,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day45,paper:25.87,durability:0.93,binding awl:0.73,none,True,replay:807:archive_public_kiosk
+808,45,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day45,oil:23.76,durability:0.70,wire crimper:0.73,none,True,replay:808:dusk_signal_workshop
+809,45,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day45,planks:29.33,durability:0.77,drawknife:0.78,none,True,replay:809:river_mill_bridge
+810,46,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day46,water:49.95,durability:0.90,glass tongs:0.75,none,True,replay:810:roof_greenhouse_cistern
+811,46,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day46,paper:25.87,durability:0.93,binding awl:0.73,none,True,replay:811:archive_public_kiosk
+812,46,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day46,oil:23.88,durability:0.69,wire crimper:0.72,none,True,replay:812:dusk_signal_workshop
+813,46,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day46,planks:29.33,durability:0.77,drawknife:0.78,none,True,replay:813:river_mill_bridge
+814,46,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day46,water:49.95,durability:0.90,glass tongs:0.75,none,True,replay:814:roof_greenhouse_cistern
+815,46,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day46,paper:26.10,durability:0.92,binding awl:0.72,none,True,replay:815:archive_public_kiosk
+816,46,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day46,oil:23.88,durability:0.68,wire crimper:0.72,none,True,replay:816:dusk_signal_workshop
+817,46,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day46,planks:29.33,durability:0.76,drawknife:0.78,none,True,replay:817:river_mill_bridge
+818,46,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day46,water:50.14,durability:0.88,glass tongs:0.74,none,True,replay:818:roof_greenhouse_cistern
+819,46,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day46,paper:26.10,durability:0.91,binding awl:0.72,none,True,replay:819:archive_public_kiosk
+820,46,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day46,oil:23.88,durability:0.68,wire crimper:0.71,none,True,replay:820:dusk_signal_workshop
+821,46,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day46,planks:29.48,durability:0.75,drawknife:0.77,none,True,replay:821:river_mill_bridge
+822,46,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day46,water:50.14,durability:0.88,glass tongs:0.74,none,True,replay:822:roof_greenhouse_cistern
+823,46,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day46,paper:26.10,durability:0.90,binding awl:0.71,none,True,replay:823:archive_public_kiosk
+824,46,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day46,oil:24.00,durability:0.67,wire crimper:0.71,none,True,replay:824:dusk_signal_workshop
+825,46,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day46,planks:29.38,durability:0.84,drawknife:0.77,none,True,replay:825:river_mill_bridge
+826,46,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day46,water:50.09,durability:0.87,glass tongs:0.74,none,True,replay:826:roof_greenhouse_cistern
+827,46,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day46,paper:26.10,durability:0.90,binding awl:0.71,none,True,replay:827:archive_public_kiosk
+828,47,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day47,oil:24.08,durability:0.75,wire crimper:0.82,none,True,replay:828:dusk_signal_workshop
+829,47,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day47,planks:29.28,durability:0.93,drawknife:0.76,none,True,replay:829:river_mill_bridge
+830,47,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day47,water:50.23,durability:0.86,glass tongs:0.73,none,True,replay:830:roof_greenhouse_cistern
+831,47,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day47,paper:26.10,durability:0.89,binding awl:0.71,none,True,replay:831:archive_public_kiosk
+832,47,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day47,oil:24.08,durability:0.74,wire crimper:0.82,none,True,replay:832:dusk_signal_workshop
+833,47,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day47,planks:29.38,durability:0.91,drawknife:0.76,none,True,replay:833:river_mill_bridge
+834,47,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day47,water:50.23,durability:0.85,glass tongs:0.73,none,True,replay:834:roof_greenhouse_cistern
+835,47,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day47,paper:26.10,durability:0.88,binding awl:0.71,none,True,replay:835:archive_public_kiosk
+836,47,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day47,oil:24.28,durability:0.73,wire crimper:0.81,none,True,replay:836:dusk_signal_workshop
+837,47,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day47,planks:29.28,durability:0.98,drawknife:0.75,none,True,replay:837:river_mill_bridge
+838,47,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day47,water:50.23,durability:0.85,glass tongs:0.73,none,True,replay:838:roof_greenhouse_cistern
+839,47,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day47,paper:26.27,durability:0.87,binding awl:0.70,none,True,replay:839:archive_public_kiosk
+840,47,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day47,oil:24.28,durability:0.72,wire crimper:0.81,none,True,replay:840:dusk_signal_workshop
+841,47,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day47,planks:29.40,durability:0.97,drawknife:0.74,none,True,replay:841:river_mill_bridge
+842,47,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day47,water:50.36,durability:0.84,glass tongs:0.72,none,True,replay:842:roof_greenhouse_cistern
+843,47,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day47,paper:26.27,durability:0.87,binding awl:0.70,none,True,replay:843:archive_public_kiosk
+844,47,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day47,oil:24.28,durability:0.71,wire crimper:0.81,none,True,replay:844:dusk_signal_workshop
+845,47,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day47,planks:29.30,durability:0.98,drawknife:0.74,none,True,replay:845:river_mill_bridge
+846,48,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day48,paper:26.39,durability:0.85,binding awl:0.69,none,True,replay:846:archive_public_kiosk
+847,48,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day48,oil:24.28,durability:0.71,wire crimper:0.81,none,True,replay:847:dusk_signal_workshop
+848,48,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day48,planks:29.44,durability:0.97,drawknife:0.73,none,True,replay:848:river_mill_bridge
+849,48,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day48,water:50.36,durability:0.83,glass tongs:0.72,none,True,replay:849:roof_greenhouse_cistern
+850,48,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day48,paper:26.39,durability:0.85,binding awl:0.69,none,True,replay:850:archive_public_kiosk
+851,48,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day48,oil:24.39,durability:0.70,wire crimper:0.80,overbright relay startles patrol,True,replay:851:dusk_signal_workshop
+852,48,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day48,planks:29.44,durability:0.96,drawknife:0.73,none,True,replay:852:river_mill_bridge
+853,48,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day48,water:50.26,durability:0.92,glass tongs:0.71,none,True,replay:853:roof_greenhouse_cistern
+854,48,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day48,paper:26.46,durability:0.84,binding awl:0.68,none,True,replay:854:archive_public_kiosk
+855,48,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day48,oil:24.44,durability:0.79,wire crimper:0.79,none,True,replay:855:dusk_signal_workshop
+856,48,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day48,planks:29.44,durability:0.95,drawknife:0.73,none,True,replay:856:river_mill_bridge
+857,48,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day48,water:50.43,durability:0.91,glass tongs:0.70,none,True,replay:857:roof_greenhouse_cistern
+858,48,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day48,paper:26.46,durability:0.83,binding awl:0.68,none,True,replay:858:archive_public_kiosk
+859,48,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day48,oil:24.44,durability:0.79,wire crimper:0.79,none,True,replay:859:dusk_signal_workshop
+860,48,Ari,river_mill_bridge,v27:Ari:river_mill_bridge:day48,planks:29.59,durability:0.94,drawknife:0.72,none,True,replay:860:river_mill_bridge
+861,48,Fay,roof_greenhouse_cistern,v27:Fay:roof_greenhouse_cistern:day48,water:50.43,durability:0.90,glass tongs:0.70,none,True,replay:861:roof_greenhouse_cistern
+862,48,Nia,archive_public_kiosk,v27:Nia:archive_public_kiosk:day48,paper:26.46,durability:0.82,binding awl:0.67,none,True,replay:862:archive_public_kiosk
+863,48,Milo,dusk_signal_workshop,v27:Milo:dusk_signal_workshop:day48,oil:24.44,durability:0.78,wire crimper:0.78,none,True,replay:863:dusk_signal_workshop

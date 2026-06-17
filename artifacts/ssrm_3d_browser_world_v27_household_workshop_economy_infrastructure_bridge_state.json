@@ -1,0 +1,102 @@
+{
+  "boundary": "deterministic browser-local household/workshop economy infrastructure scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, complete 3D engine, or metaphysical frequency claim",
+  "days": 48,
+  "final_durability": {
+    "archive_public_kiosk": 0.825,
+    "dusk_signal_workshop": 0.78356,
+    "river_mill_bridge": 0.941,
+    "roof_greenhouse_cistern": 0.897556
+  },
+  "final_ecology": {
+    "bank_stability": 0.9096,
+    "humidity": 0.92,
+    "night_calm": 0.91252,
+    "notice_accuracy": 0.92
+  },
+  "final_skill": {
+    "Ari:carpentry": 0.92,
+    "Fay:cultivation": 0.92,
+    "Milo:signalcraft": 0.92,
+    "Nia:recordkeeping": 0.92
+  },
+  "final_stock": {
+    "fish": 11.0,
+    "herbs": 9.0,
+    "oil": 24.44434,
+    "paper": 26.4589,
+    "planks": 29.58532,
+    "seeds": 14.0,
+    "water": 50.432875,
+    "wire": 12.0
+  },
+  "final_tool_condition": {
+    "binding awl": 0.673856,
+    "drawknife": 0.72056,
+    "glass tongs": 0.702932,
+    "wire crimper": 0.78353
+  },
+  "infrastructure": [
+    {
+      "dignity_clause": "Ari can close the bridge when fatigue, water, or tool wear makes crossing unsafe.",
+      "ecology_effect": "fish passage and bank stability",
+      "failure_mode": "joint swelling blocks wheel",
+      "household": "West House",
+      "infrastructure_id": "river_mill_bridge",
+      "primary_tool": "drawknife",
+      "resource_loop": "planks->repairs->market access",
+      "skill_domain": "carpentry",
+      "steward": "Ari",
+      "title": "River mill bridge",
+      "workshop": "wood bay"
+    },
+    {
+      "dignity_clause": "Fay can limit crowding and preserve recovery paths for cold or wet work.",
+      "ecology_effect": "humidity and seed yield",
+      "failure_mode": "cistern leak chills seedlings",
+      "household": "Roof House",
+      "infrastructure_id": "roof_greenhouse_cistern",
+      "primary_tool": "glass tongs",
+      "resource_loop": "water->herbs->comfort meals",
+      "skill_domain": "cultivation",
+      "steward": "Fay",
+      "title": "Roof greenhouse cistern",
+      "workshop": "warm workshop"
+    },
+    {
+      "dignity_clause": "Nia publishes public summaries without exposing private workspace contents.",
+      "ecology_effect": "weather notice accuracy",
+      "failure_mode": "index dampness erases route marks",
+      "household": "Archive House",
+      "infrastructure_id": "archive_public_kiosk",
+      "primary_tool": "binding awl",
+      "resource_loop": "paper->public records->fewer private interruptions",
+      "skill_domain": "recordkeeping",
+      "steward": "Nia",
+      "title": "Archive public kiosk",
+      "workshop": "archive bench"
+    },
+    {
+      "dignity_clause": "Milo can reduce signal intensity when arousal or overstimulation is high.",
+      "ecology_effect": "night movement pressure",
+      "failure_mode": "overbright relay startles patrol",
+      "household": "Signal House",
+      "infrastructure_id": "dusk_signal_workshop",
+      "primary_tool": "wire crimper",
+      "resource_loop": "oil+wire->signals->safer dusk travel",
+      "skill_domain": "signalcraft",
+      "steward": "Milo",
+      "title": "Dusk signal workshop",
+      "workshop": "signal yard"
+    }
+  ],
+  "routine_changed": {
+    "archive_public_kiosk": true,
+    "dusk_signal_workshop": true,
+    "river_mill_bridge": true,
+    "roof_greenhouse_cistern": true
+  },
+  "seed": 20260880,
+  "source_v26_next_gate": "browser world v27 with household/workshop economy loops, durable buildings, tool wear, skill specialization, project failure states, and routine/ecology changes from built infrastructure",
+  "source_v26_verdict": "pass",
+  "ticks_per_day": 18
+}

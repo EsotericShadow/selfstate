@@ -1,0 +1,865 @@
+tick_id,day,infrastructure_id,sight_cue,sound_cue,smell_cue,temperature_cue,wetness_cue,body_cue,rhythm_marker,sensory_bound_to_infrastructure
+0,1,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+1,1,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+2,1,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+3,1,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+4,1,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+5,1,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+6,1,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,watchful idle,maintenance-pulse,True
+7,1,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+8,1,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,watchful idle,flower-node,True
+9,1,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+10,1,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+11,1,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+12,1,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+13,1,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+14,1,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+15,1,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+16,1,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+17,1,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,ambient-rate,True
+18,2,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+19,2,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+20,2,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+21,2,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+22,2,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+23,2,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+24,2,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+25,2,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+26,2,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,watchful idle,flower-node,True
+27,2,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+28,2,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+29,2,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+30,2,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,watchful idle,flower-node,True
+31,2,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+32,2,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+33,2,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+34,2,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,watchful idle,flower-node,True
+35,2,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,ambient-rate,True
+36,3,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+37,3,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+38,3,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+39,3,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+40,3,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+41,3,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,cold draft,wet surface,watchful idle,maintenance-pulse,True
+42,3,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+43,3,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+44,3,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,watchful idle,flower-node,True
+45,3,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+46,3,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+47,3,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+48,3,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+49,3,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+50,3,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+51,3,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+52,3,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+53,3,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,ambient-rate,True
+54,4,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+55,4,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+56,4,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+57,4,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+58,4,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+59,4,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+60,4,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+61,4,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+62,4,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+63,4,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+64,4,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+65,4,archive_public_kiosk,steady structure,work rhythm,oil and paper,cold draft,wet surface,skilled work posture,maintenance-pulse,True
+66,4,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+67,4,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+68,4,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+69,4,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+70,4,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+71,4,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,ambient-rate,True
+72,5,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+73,5,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+74,5,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+75,5,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+76,5,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,watchful idle,flower-node,True
+77,5,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+78,5,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+79,5,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+80,5,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+81,5,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+82,5,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+83,5,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+84,5,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+85,5,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+86,5,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+87,5,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+88,5,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+89,5,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,fatigued maintenance posture,ambient-rate,True
+90,6,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+91,6,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+92,6,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+93,6,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+94,6,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,flower-node,True
+95,6,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+96,6,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+97,6,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+98,6,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+99,6,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+100,6,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,cold draft,wet surface,fatigued maintenance posture,maintenance-pulse,True
+101,6,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+102,6,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,flower-node,True
+103,6,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+104,6,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+105,6,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+106,6,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+107,6,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,ambient-rate,True
+108,7,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,flower-node,True
+109,7,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+110,7,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+111,7,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+112,7,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,flower-node,True
+113,7,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+114,7,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+115,7,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+116,7,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,flower-node,True
+117,7,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+118,7,dusk_signal_workshop,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+119,7,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+120,7,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,fatigued maintenance posture,flower-node,True
+121,7,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+122,7,dusk_signal_workshop,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+123,7,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+124,7,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,cold draft,wet surface,fatigued maintenance posture,flower-node,True
+125,7,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,ambient-rate,True
+126,8,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+127,8,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+128,8,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+129,8,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+130,8,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+131,8,roof_greenhouse_cistern,visible cracks,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+132,8,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+133,8,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+134,8,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,flower-node,True
+135,8,roof_greenhouse_cistern,visible cracks,quiet upkeep,soil and water,cold draft,wet surface,fatigued maintenance posture,maintenance-pulse,True
+136,8,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+137,8,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+138,8,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,flower-node,True
+139,8,roof_greenhouse_cistern,visible cracks,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+140,8,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+141,8,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+142,8,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+143,8,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,ambient-rate,True
+144,9,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+145,9,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+146,9,river_mill_bridge,steady structure,work rhythm,soil and water,cold draft,wet surface,skilled work posture,maintenance-pulse,True
+147,9,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+148,9,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+149,9,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+150,9,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+151,9,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+152,9,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+153,9,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+154,9,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+155,9,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+156,9,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+157,9,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+158,9,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+159,9,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,maintenance-pulse,True
+160,9,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+161,9,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,ambient-rate,True
+162,10,river_mill_bridge,visible cracks,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,flower-node,True
+163,10,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+164,10,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+165,10,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+166,10,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+167,10,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+168,10,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+169,10,dusk_signal_workshop,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+170,10,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,flower-node,True
+171,10,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,skilled work posture,maintenance-pulse,True
+172,10,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+173,10,dusk_signal_workshop,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+174,10,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+175,10,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+176,10,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+177,10,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+178,10,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+179,10,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,ambient-rate,True
+180,11,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+181,11,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,cold draft,wet surface,fatigued maintenance posture,maintenance-pulse,True
+182,11,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+183,11,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+184,11,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+185,11,dusk_signal_workshop,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+186,11,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+187,11,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+188,11,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,flower-node,True
+189,11,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+190,11,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+191,11,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+192,11,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+193,11,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+194,11,river_mill_bridge,steady structure,work rhythm,soil and water,cold draft,wet surface,skilled work posture,maintenance-pulse,True
+195,11,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+196,11,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+197,11,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,ambient-rate,True
+198,12,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+199,12,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+200,12,dusk_signal_workshop,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+201,12,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+202,12,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+203,12,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+204,12,dusk_signal_workshop,visible cracks,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+205,12,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+206,12,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,flower-node,True
+207,12,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+208,12,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+209,12,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+210,12,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+211,12,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+212,12,dusk_signal_workshop,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+213,12,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+214,12,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,flower-node,True
+215,12,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,ambient-rate,True
+216,13,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,cold draft,wet surface,fatigued maintenance posture,flower-node,True
+217,13,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+218,13,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+219,13,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+220,13,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+221,13,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+222,13,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,skilled work posture,maintenance-pulse,True
+223,13,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+224,13,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+225,13,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+226,13,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+227,13,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+228,13,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+229,13,river_mill_bridge,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,maintenance-pulse,True
+230,13,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,skilled work posture,maintenance-pulse,True
+231,13,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+232,13,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+233,13,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+234,14,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+235,14,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+236,14,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+237,14,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+238,14,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,flower-node,True
+239,14,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+240,14,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,fatigued maintenance posture,maintenance-pulse,True
+241,14,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+242,14,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,flower-node,True
+243,14,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+244,14,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+245,14,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+246,14,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+247,14,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+248,14,dusk_signal_workshop,visible cracks,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+249,14,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+250,14,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+251,14,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,ambient-rate,True
+252,15,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+253,15,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+254,15,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+255,15,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+256,15,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+257,15,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+258,15,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+259,15,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+260,15,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+261,15,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+262,15,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+263,15,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+264,15,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,flower-node,True
+265,15,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+266,15,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+267,15,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+268,15,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+269,15,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,ambient-rate,True
+270,16,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+271,16,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+272,16,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+273,16,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,skilled work posture,maintenance-pulse,True
+274,16,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+275,16,dusk_signal_workshop,steady structure,work rhythm,oil and paper,cold draft,wet surface,skilled work posture,maintenance-pulse,True
+276,16,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+277,16,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+278,16,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+279,16,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+280,16,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+281,16,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,skilled work posture,maintenance-pulse,True
+282,16,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,flower-node,True
+283,16,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+284,16,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+285,16,roof_greenhouse_cistern,visible cracks,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+286,16,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+287,16,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,ambient-rate,True
+288,17,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+289,17,roof_greenhouse_cistern,visible cracks,quiet upkeep,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+290,17,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+291,17,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+292,17,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+293,17,roof_greenhouse_cistern,visible cracks,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+294,17,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+295,17,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+296,17,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,flower-node,True
+297,17,roof_greenhouse_cistern,visible cracks,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+298,17,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+299,17,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+300,17,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+301,17,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+302,17,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+303,17,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+304,17,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+305,17,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,ambient-rate,True
+306,18,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,flower-node,True
+307,18,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+308,18,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+309,18,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+310,18,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,watchful idle,flower-node,True
+311,18,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+312,18,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+313,18,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+314,18,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+315,18,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+316,18,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+317,18,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+318,18,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+319,18,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+320,18,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+321,18,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+322,18,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+323,18,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,watchful idle,ambient-rate,True
+324,19,river_mill_bridge,visible cracks,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,flower-node,True
+325,19,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+326,19,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+327,19,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+328,19,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+329,19,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+330,19,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+331,19,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+332,19,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,flower-node,True
+333,19,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+334,19,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,watchful idle,maintenance-pulse,True
+335,19,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+336,19,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+337,19,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+338,19,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+339,19,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+340,19,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+341,19,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,ambient-rate,True
+342,20,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+343,20,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+344,20,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+345,20,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,watchful idle,maintenance-pulse,True
+346,20,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+347,20,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+348,20,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+349,20,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+350,20,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,flower-node,True
+351,20,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+352,20,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+353,20,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+354,20,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+355,20,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+356,20,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+357,20,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+358,20,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+359,20,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,ambient-rate,True
+360,21,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+361,21,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+362,21,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+363,21,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+364,21,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+365,21,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+366,21,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+367,21,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+368,21,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,flower-node,True
+369,21,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,watchful idle,maintenance-pulse,True
+370,21,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+371,21,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+372,21,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+373,21,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+374,21,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+375,21,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+376,21,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,flower-node,True
+377,21,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+378,22,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+379,22,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+380,22,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,cold draft,wet surface,skilled work posture,maintenance-pulse,True
+381,22,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+382,22,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+383,22,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+384,22,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+385,22,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+386,22,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+387,22,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+388,22,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+389,22,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+390,22,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+391,22,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+392,22,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,skilled work posture,maintenance-pulse,True
+393,22,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+394,22,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+395,22,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,ambient-rate,True
+396,23,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+397,23,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+398,23,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+399,23,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+400,23,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,flower-node,True
+401,23,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+402,23,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+403,23,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+404,23,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,cold draft,wet surface,skilled work posture,flower-node,True
+405,23,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+406,23,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+407,23,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+408,23,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+409,23,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+410,23,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+411,23,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+412,23,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,flower-node,True
+413,23,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,ambient-rate,True
+414,24,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+415,24,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,maintenance-pulse,True
+416,24,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+417,24,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+418,24,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+419,24,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+420,24,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+421,24,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+422,24,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,flower-node,True
+423,24,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+424,24,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+425,24,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+426,24,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+427,24,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+428,24,archive_public_kiosk,steady structure,work rhythm,oil and paper,cold draft,wet surface,skilled work posture,maintenance-pulse,True
+429,24,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+430,24,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,flower-node,True
+431,24,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,ambient-rate,True
+432,25,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+433,25,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+434,25,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+435,25,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+436,25,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+437,25,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+438,25,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+439,25,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,maintenance-pulse,True
+440,25,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+441,25,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+442,25,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+443,25,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+444,25,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+445,25,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+446,25,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+447,25,roof_greenhouse_cistern,visible cracks,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+448,25,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+449,25,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,ambient-rate,True
+450,26,river_mill_bridge,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,flower-node,True
+451,26,roof_greenhouse_cistern,visible cracks,quiet upkeep,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+452,26,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+453,26,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+454,26,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,flower-node,True
+455,26,roof_greenhouse_cistern,visible cracks,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+456,26,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+457,26,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+458,26,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,flower-node,True
+459,26,roof_greenhouse_cistern,visible cracks,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+460,26,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+461,26,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+462,26,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+463,26,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,cold draft,wet surface,skilled work posture,maintenance-pulse,True
+464,26,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+465,26,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+466,26,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+467,26,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,ambient-rate,True
+468,27,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+469,27,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+470,27,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+471,27,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+472,27,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+473,27,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+474,27,river_mill_bridge,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,maintenance-pulse,True
+475,27,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+476,27,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+477,27,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+478,27,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+479,27,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+480,27,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+481,27,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+482,27,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+483,27,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+484,27,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+485,27,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,ambient-rate,True
+486,28,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,flower-node,True
+487,28,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+488,28,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+489,28,river_mill_bridge,visible cracks,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+490,28,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+491,28,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+492,28,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+493,28,river_mill_bridge,visible cracks,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+494,28,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,skilled work posture,flower-node,True
+495,28,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+496,28,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+497,28,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+498,28,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,flower-node,True
+499,28,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+500,28,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+501,28,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+502,28,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+503,28,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,ambient-rate,True
+504,29,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+505,29,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+506,29,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+507,29,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+508,29,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+509,29,river_mill_bridge,steady structure,work rhythm,soil and water,cold draft,wet surface,skilled work posture,maintenance-pulse,True
+510,29,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+511,29,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+512,29,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,flower-node,True
+513,29,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+514,29,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+515,29,archive_public_kiosk,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+516,29,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+517,29,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+518,29,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+519,29,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+520,29,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+521,29,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,ambient-rate,True
+522,30,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+523,30,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+524,30,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+525,30,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+526,30,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+527,30,archive_public_kiosk,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+528,30,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+529,30,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+530,30,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,flower-node,True
+531,30,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+532,30,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+533,30,river_mill_bridge,steady structure,work rhythm,soil and water,cold draft,wet surface,skilled work posture,maintenance-pulse,True
+534,30,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+535,30,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+536,30,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+537,30,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+538,30,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,fatigued maintenance posture,flower-node,True
+539,30,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,ambient-rate,True
+540,31,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+541,31,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+542,31,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+543,31,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+544,31,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,watchful idle,flower-node,True
+545,31,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+546,31,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+547,31,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+548,31,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+549,31,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+550,31,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+551,31,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+552,31,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+553,31,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+554,31,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+555,31,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+556,31,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+557,31,river_mill_bridge,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,ambient-rate,True
+558,32,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+559,32,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+560,32,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+561,32,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+562,32,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,flower-node,True
+563,32,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+564,32,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+565,32,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+566,32,archive_public_kiosk,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+567,32,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+568,32,river_mill_bridge,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,maintenance-pulse,True
+569,32,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+570,32,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+571,32,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+572,32,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+573,32,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+574,32,archive_public_kiosk,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+575,32,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,ambient-rate,True
+576,33,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+577,33,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+578,33,archive_public_kiosk,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+579,33,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+580,33,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+581,33,roof_greenhouse_cistern,visible cracks,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+582,33,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+583,33,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+584,33,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,flower-node,True
+585,33,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+586,33,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+587,33,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+588,33,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+589,33,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+590,33,archive_public_kiosk,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+591,33,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+592,33,river_mill_bridge,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,flower-node,True
+593,33,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,ambient-rate,True
+594,34,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+595,34,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+596,34,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+597,34,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+598,34,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+599,34,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+600,34,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+601,34,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+602,34,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+603,34,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,watchful idle,maintenance-pulse,True
+604,34,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+605,34,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+606,34,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,flower-node,True
+607,34,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+608,34,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+609,34,roof_greenhouse_cistern,visible cracks,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+610,34,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+611,34,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,ambient-rate,True
+612,35,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+613,35,roof_greenhouse_cistern,visible cracks,quiet upkeep,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+614,35,archive_public_kiosk,visible cracks,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+615,35,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+616,35,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+617,35,roof_greenhouse_cistern,visible cracks,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+618,35,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+619,35,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+620,35,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,flower-node,True
+621,35,roof_greenhouse_cistern,visible cracks,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+622,35,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+623,35,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+624,35,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+625,35,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+626,35,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+627,35,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,fatigued maintenance posture,maintenance-pulse,True
+628,35,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+629,35,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,ambient-rate,True
+630,36,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,flower-node,True
+631,36,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+632,36,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+633,36,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+634,36,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+635,36,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+636,36,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+637,36,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+638,36,dusk_signal_workshop,steady structure,work rhythm,oil and paper,cold draft,wet surface,fatigued maintenance posture,flower-node,True
+639,36,river_mill_bridge,visible cracks,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+640,36,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+641,36,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+642,36,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+643,36,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+644,36,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+645,36,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+646,36,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+647,36,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,ambient-rate,True
+648,37,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,flower-node,True
+649,37,archive_public_kiosk,steady structure,work rhythm,oil and paper,cold draft,wet surface,fatigued maintenance posture,maintenance-pulse,True
+650,37,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+651,37,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+652,37,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+653,37,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+654,37,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+655,37,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+656,37,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,skilled work posture,flower-node,True
+657,37,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+658,37,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+659,37,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+660,37,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,flower-node,True
+661,37,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+662,37,dusk_signal_workshop,visible cracks,work rhythm,oil and paper,cold draft,wet surface,fatigued maintenance posture,maintenance-pulse,True
+663,37,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+664,37,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+665,37,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,ambient-rate,True
+666,38,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+667,38,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+668,38,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+669,38,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+670,38,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+671,38,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+672,38,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+673,38,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+674,38,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,flower-node,True
+675,38,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+676,38,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+677,38,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+678,38,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+679,38,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+680,38,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+681,38,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+682,38,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,flower-node,True
+683,38,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,ambient-rate,True
+684,39,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,cold draft,wet surface,fatigued maintenance posture,flower-node,True
+685,39,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+686,39,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+687,39,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+688,39,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,flower-node,True
+689,39,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+690,39,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+691,39,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+692,39,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,flower-node,True
+693,39,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+694,39,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+695,39,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+696,39,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,flower-node,True
+697,39,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,watchful idle,maintenance-pulse,True
+698,39,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+699,39,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+700,39,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,fatigued maintenance posture,flower-node,True
+701,39,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,ambient-rate,True
+702,40,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,fatigued maintenance posture,flower-node,True
+703,40,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+704,40,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+705,40,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+706,40,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,flower-node,True
+707,40,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+708,40,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+709,40,dusk_signal_workshop,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+710,40,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,fatigued maintenance posture,flower-node,True
+711,40,roof_greenhouse_cistern,visible cracks,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+712,40,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+713,40,dusk_signal_workshop,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+714,40,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,flower-node,True
+715,40,roof_greenhouse_cistern,visible cracks,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+716,40,archive_public_kiosk,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+717,40,dusk_signal_workshop,visible cracks,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+718,40,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,flower-node,True
+719,40,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,ambient-rate,True
+720,41,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+721,41,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+722,41,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+723,41,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+724,41,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+725,41,dusk_signal_workshop,visible cracks,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+726,41,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+727,41,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+728,41,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+729,41,dusk_signal_workshop,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+730,41,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+731,41,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+732,41,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,cold draft,wet surface,fatigued maintenance posture,flower-node,True
+733,41,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+734,41,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+735,41,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+736,41,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+737,41,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,ambient-rate,True
+738,42,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,flower-node,True
+739,42,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+740,42,archive_public_kiosk,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+741,42,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+742,42,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+743,42,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,cold draft,wet surface,fatigued maintenance posture,maintenance-pulse,True
+744,42,archive_public_kiosk,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+745,42,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+746,42,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,fatigued maintenance posture,flower-node,True
+747,42,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+748,42,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+749,42,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+750,42,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,flower-node,True
+751,42,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+752,42,archive_public_kiosk,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+753,42,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+754,42,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,flower-node,True
+755,42,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+756,43,archive_public_kiosk,visible cracks,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+757,43,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+758,43,river_mill_bridge,steady structure,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+759,43,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+760,43,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+761,43,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+762,43,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+763,43,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+764,43,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+765,43,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+766,43,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+767,43,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+768,43,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,flower-node,True
+769,43,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+770,43,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+771,43,roof_greenhouse_cistern,visible cracks,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+772,43,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+773,43,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,ambient-rate,True
+774,44,roof_greenhouse_cistern,visible cracks,quiet upkeep,soil and water,warm work air,dry surface,fatigued maintenance posture,flower-node,True
+775,44,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+776,44,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,maintenance-pulse,True
+777,44,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+778,44,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,flower-node,True
+779,44,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+780,44,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+781,44,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+782,44,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,flower-node,True
+783,44,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+784,44,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+785,44,river_mill_bridge,visible cracks,work rhythm,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+786,44,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+787,44,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+788,44,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+789,44,river_mill_bridge,visible cracks,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+790,44,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+791,44,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,cold draft,wet surface,watchful idle,ambient-rate,True
+792,45,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+793,45,river_mill_bridge,visible cracks,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+794,45,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+795,45,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+796,45,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+797,45,river_mill_bridge,visible cracks,work rhythm,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+798,45,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+799,45,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+800,45,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+801,45,river_mill_bridge,visible cracks,quiet upkeep,wet wood,mild air,wet surface,fatigued maintenance posture,maintenance-pulse,True
+802,45,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+803,45,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+804,45,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+805,45,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+806,45,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+807,45,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+808,45,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,flower-node,True
+809,45,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,fatigued maintenance posture,ambient-rate,True
+810,46,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,flower-node,True
+811,46,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+812,46,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+813,46,river_mill_bridge,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,maintenance-pulse,True
+814,46,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+815,46,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+816,46,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+817,46,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+818,46,roof_greenhouse_cistern,steady structure,work rhythm,wet wood,warm work air,wet surface,skilled work posture,flower-node,True
+819,46,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+820,46,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+821,46,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+822,46,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,flower-node,True
+823,46,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+824,46,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+825,46,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+826,46,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,flower-node,True
+827,46,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,ambient-rate,True
+828,47,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+829,47,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+830,47,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+831,47,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+832,47,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+833,47,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+834,47,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+835,47,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+836,47,dusk_signal_workshop,steady structure,work rhythm,wet wood,mild air,wet surface,skilled work posture,flower-node,True
+837,47,river_mill_bridge,steady structure,quiet upkeep,soil and water,cold draft,wet surface,watchful idle,maintenance-pulse,True
+838,47,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+839,47,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,maintenance-pulse,True
+840,47,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+841,47,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+842,47,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+843,47,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+844,47,dusk_signal_workshop,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+845,47,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,ambient-rate,True
+846,48,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+847,48,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+848,48,river_mill_bridge,steady structure,work rhythm,soil and water,cold draft,wet surface,skilled work posture,maintenance-pulse,True
+849,48,roof_greenhouse_cistern,steady structure,quiet upkeep,soil and water,warm work air,dry surface,watchful idle,maintenance-pulse,True
+850,48,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+851,48,dusk_signal_workshop,steady structure,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+852,48,river_mill_bridge,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,maintenance-pulse,True
+853,48,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+854,48,archive_public_kiosk,steady structure,work rhythm,oil and paper,mild air,dry surface,skilled work posture,flower-node,True
+855,48,dusk_signal_workshop,visible cracks,work rhythm,oil and paper,mild air,dry surface,fatigued maintenance posture,maintenance-pulse,True
+856,48,river_mill_bridge,steady structure,quiet upkeep,soil and water,mild air,dry surface,watchful idle,maintenance-pulse,True
+857,48,roof_greenhouse_cistern,steady structure,work rhythm,soil and water,warm work air,dry surface,skilled work posture,maintenance-pulse,True
+858,48,archive_public_kiosk,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,flower-node,True
+859,48,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,maintenance-pulse,True
+860,48,river_mill_bridge,steady structure,work rhythm,soil and water,mild air,dry surface,skilled work posture,maintenance-pulse,True
+861,48,roof_greenhouse_cistern,steady structure,quiet upkeep,wet wood,warm work air,wet surface,watchful idle,maintenance-pulse,True
+862,48,archive_public_kiosk,steady structure,quiet upkeep,wet wood,mild air,wet surface,watchful idle,flower-node,True
+863,48,dusk_signal_workshop,steady structure,quiet upkeep,oil and paper,mild air,dry surface,watchful idle,ambient-rate,True

@@ -1,0 +1,865 @@
+tick_id,day,infrastructure_id,replay_event,state_hash,includes_household_economy,includes_building_decay,includes_tool_wear,includes_failure,includes_routine_ecology,replay_exportable
+0,1,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-317801,True,True,True,False,True,True
+1,1,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-355093,True,True,True,False,False,True
+2,1,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-341384,True,True,True,False,True,True
+3,1,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-307686,True,True,True,False,False,True
+4,1,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-318096,True,True,True,False,False,True
+5,1,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-378136,True,True,True,False,True,True
+6,1,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-341529,True,True,True,False,True,True
+7,1,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-302092,True,True,True,False,False,True
+8,1,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-339527,True,True,True,False,False,True
+9,1,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-378151,True,True,True,False,False,True
+10,1,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-348456,True,True,True,False,False,True
+11,1,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-335863,True,True,True,False,True,True
+12,1,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-346384,True,True,True,False,False,True
+13,1,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-361723,True,True,True,False,False,True
+14,1,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-360171,True,True,True,False,True,True
+15,1,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-330097,True,True,True,False,False,True
+16,1,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-346739,True,True,True,False,False,True
+17,1,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-386931,True,True,True,False,False,True
+18,2,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-378515,True,True,True,False,False,True
+19,2,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-336531,True,True,True,False,False,True
+20,2,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-345188,True,True,True,False,True,True
+21,2,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-386847,True,True,True,False,False,True
+22,2,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-377779,True,True,True,False,False,True
+23,2,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-341905,True,True,True,False,True,True
+24,2,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-352007,True,True,True,False,False,True
+25,2,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-390932,True,True,True,False,True,True
+26,2,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-378066,True,True,True,False,True,True
+27,2,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-359613,True,True,True,False,False,True
+28,2,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-340031,True,True,True,False,False,True
+29,2,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-385845,True,True,True,False,True,True
+30,2,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-377757,True,True,True,False,True,True
+31,2,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-360148,True,True,True,False,False,True
+32,2,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-353456,True,True,True,False,True,True
+33,2,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-391709,True,True,True,False,False,True
+34,2,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-371631,True,True,True,False,True,True
+35,2,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-360165,True,True,True,False,False,True
+36,3,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-353144,True,True,True,False,False,True
+37,3,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-385411,True,True,True,False,False,True
+38,3,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-373550,True,True,True,False,True,True
+39,3,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-359826,True,True,True,False,True,True
+40,3,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-353048,True,True,True,False,False,True
+41,3,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-385874,True,True,True,False,False,True
+42,3,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-373170,True,True,True,False,False,True
+43,3,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-360167,True,True,True,False,False,True
+44,3,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-347692,True,True,True,False,True,True
+45,3,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-385520,True,True,True,False,False,True
+46,3,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-373471,True,True,True,False,False,True
+47,3,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-353952,True,True,True,False,True,True
+48,3,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-347380,True,True,True,False,True,True
+49,3,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-385833,True,True,True,False,False,True
+50,3,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-378655,True,True,True,False,True,True
+51,3,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-359925,True,True,True,False,False,True
+52,3,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-347012,True,True,True,False,True,True
+53,3,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-385803,True,True,True,False,False,True
+54,4,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-360182,True,True,True,False,False,True
+55,4,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-347936,True,True,True,False,False,True
+56,4,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-373963,True,True,True,False,True,True
+57,4,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-372590,True,True,True,False,False,True
+58,4,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-359843,True,True,True,False,False,True
+59,4,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-348332,True,True,True,False,False,True
+60,4,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-385958,True,True,True,False,False,True
+61,4,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-379073,True,True,True,False,False,True
+62,4,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-354103,True,True,True,False,True,True
+63,4,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-348236,True,True,True,False,False,True
+64,4,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-386929,True,True,True,False,False,True
+65,4,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-377715,True,True,True,False,False,True
+66,4,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-354404,True,True,True,False,False,True
+67,4,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-347924,True,True,True,False,False,True
+68,4,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-392604,True,True,True,False,True,True
+69,4,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-396450,True,True,True,False,False,True
+70,4,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-353668,True,True,True,False,False,True
+71,4,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-347828,True,True,True,False,False,True
+72,5,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-411721,True,True,True,False,False,True
+73,5,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-396354,True,True,True,False,False,True
+74,5,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-354215,True,True,True,False,True,True
+75,5,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-347516,True,True,True,False,False,True
+76,5,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-412795,True,True,True,False,True,True
+77,5,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-389597,True,True,True,False,True,True
+78,5,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-348935,True,True,True,False,False,True
+79,5,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-348484,True,True,True,False,False,True
+80,5,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-406028,True,True,True,False,True,True
+81,5,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-390132,True,True,True,False,False,True
+82,5,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-354501,True,True,True,False,False,True
+83,5,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-352574,True,True,True,False,True,True
+84,5,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-405668,True,True,True,False,False,True
+85,5,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-391177,True,True,True,False,True,True
+86,5,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-361439,True,True,True,False,True,True
+87,5,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-353706,True,True,True,False,True,True
+88,5,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-405975,True,True,True,False,False,True
+89,5,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-391265,True,True,True,False,True,True
+90,6,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-378804,True,True,True,False,False,True
+91,6,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-353664,True,True,True,False,False,True
+92,6,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-405904,True,True,True,False,True,True
+93,6,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-390885,True,True,True,False,False,True
+94,6,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-379542,True,True,True,False,False,True
+95,6,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-347803,True,True,True,False,True,True
+96,6,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-405544,True,True,True,False,False,True
+97,6,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-390546,True,True,True,False,False,True
+98,6,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-378836,True,True,True,False,True,True
+99,6,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-366873,True,True,True,False,False,True
+100,6,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-401551,True,True,True,False,True,True
+101,6,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-402971,True,True,True,False,True,True
+102,6,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-385382,True,True,True,False,True,True
+103,6,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-373278,True,True,True,False,True,True
+104,6,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-419285,True,True,True,False,True,True
+105,6,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-403278,True,True,True,False,False,True
+106,6,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-385689,True,True,True,False,False,True
+107,6,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-373282,True,True,True,False,False,True
+108,7,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-420355,True,True,True,False,False,True
+109,7,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-404477,True,True,True,False,True,True
+110,7,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-379386,True,True,True,False,True,True
+111,7,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-373779,True,True,True,False,False,True
+112,7,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-419586,True,True,True,False,False,True
+113,7,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-397560,True,True,True,False,True,True
+114,7,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-379693,True,True,True,False,False,True
+115,7,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-373458,True,True,True,False,False,True
+116,7,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-419242,True,True,True,False,True,True
+117,7,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-397867,True,True,True,False,False,True
+118,7,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-379050,True,True,True,False,True,True
+119,7,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-378980,True,True,True,False,False,True
+120,7,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-413480,True,True,True,False,True,True
+121,7,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-397849,True,True,True,False,False,True
+122,7,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-385682,True,True,True,False,True,True
+123,7,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-377958,True,True,True,False,False,True
+124,7,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-413953,True,True,True,False,True,True
+125,7,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-398490,True,True,True,False,False,True
+126,8,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-377271,True,True,True,False,False,True
+127,8,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-413448,True,True,True,False,True,True
+128,8,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-398107,True,True,True,False,True,True
+129,8,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-386764,True,True,True,False,False,True
+130,8,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-377869,True,True,True,False,False,True
+131,8,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-418647,True,True,True,False,True,True
+132,8,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-398008,True,True,True,False,False,True
+133,8,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-386016,True,True,True,False,False,True
+134,8,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-380168,True,True,True,False,True,True
+135,8,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-438513,True,True,True,False,True,True
+136,8,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-404770,True,True,True,False,True,True
+137,8,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-386107,True,True,True,False,True,True
+138,8,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-373512,True,True,True,False,True,True
+139,8,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-440250,True,True,True,False,False,True
+140,8,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-403430,True,True,True,False,True,True
+141,8,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-386008,True,True,True,False,False,True
+142,8,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-373488,True,True,True,False,False,True
+143,8,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-439156,True,True,True,False,False,True
+144,9,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-403794,True,True,True,False,False,True
+145,9,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-386757,True,True,True,False,False,True
+146,9,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-373970,True,True,True,False,False,True
+147,9,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-439469,True,True,True,False,False,True
+148,9,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-403452,True,True,True,False,False,True
+149,9,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-380683,True,True,True,False,True,True
+150,9,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-373243,True,True,True,False,False,True
+151,9,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-437674,True,True,True,False,False,True
+152,9,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-399003,True,True,True,False,True,True
+153,9,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-381026,True,True,True,False,False,True
+154,9,river_mill_bridge,river_mill_bridge:stable:upkeep,v27-373268,True,True,True,False,True,True
+155,9,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-437094,True,True,True,False,True,True
+156,9,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-398661,True,True,True,False,False,True
+157,9,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-380684,True,True,True,False,False,True
+158,9,river_mill_bridge,river_mill_bridge:routine delayed by failure:failure,v27-600317,True,True,True,True,True,True
+159,9,roof_greenhouse_cistern,roof_greenhouse_cistern:stable:upkeep,v27-437579,True,True,True,False,True,True
+160,9,archive_public_kiosk,archive_public_kiosk:stable:upkeep,v27-398562,True,True,True,False,False,True
+161,9,dusk_signal_workshop,dusk_signal_workshop:stable:upkeep,v27-380081,True,True,True,False,False,True
+162,10,river_mill_bridge,river_mill_bridge:infrastructure adopted:upkeep,v27-566560,True,True,True,False,True,True
+163,10,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure adopted:upkeep,v27-635955,True,True,True,False,True,True
+164,10,archive_public_kiosk,archive_public_kiosk:infrastructure adopted:upkeep,v27-586944,True,True,True,False,True,True
+165,10,dusk_signal_workshop,dusk_signal_workshop:infrastructure adopted:upkeep,v27-568155,True,True,True,False,True,True
+166,10,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-665623,True,True,True,False,True,True
+167,10,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-730831,True,True,True,False,True,True
+168,10,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-689035,True,True,True,False,True,True
+169,10,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-667762,True,True,True,False,True,True
+170,10,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-658036,True,True,True,False,True,True
+171,10,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-722471,True,True,True,False,True,True
+172,10,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-688936,True,True,True,False,True,True
+173,10,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-674847,True,True,True,False,True,True
+174,10,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-658049,True,True,True,False,True,True
+175,10,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-723534,True,True,True,False,True,True
+176,10,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-698670,True,True,True,False,True,True
+177,10,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-675235,True,True,True,False,True,True
+178,10,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-658350,True,True,True,False,True,True
+179,10,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-731959,True,True,True,False,True,True
+180,11,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-688997,True,True,True,False,True,True
+181,11,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-675297,True,True,True,False,True,True
+182,11,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-657985,True,True,True,False,True,True
+183,11,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-731866,True,True,True,False,True,True
+184,11,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-688657,True,True,True,False,True,True
+185,11,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-677019,True,True,True,False,True,True
+186,11,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-657664,True,True,True,False,True,True
+187,11,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-731879,True,True,True,False,True,True
+188,11,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-699332,True,True,True,False,True,True
+189,11,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-676361,True,True,True,False,True,True
+190,11,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-658262,True,True,True,False,True,True
+191,11,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-739586,True,True,True,False,True,True
+192,11,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-698584,True,True,True,False,True,True
+193,11,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-676262,True,True,True,False,True,True
+194,11,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-666997,True,True,True,False,True,True
+195,11,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-739223,True,True,True,False,True,True
+196,11,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-698603,True,True,True,False,True,True
+197,11,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-675632,True,True,True,False,True,True
+198,12,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-731068,True,True,True,False,True,True
+199,12,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-699595,True,True,True,False,True,True
+200,12,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-666745,True,True,True,False,True,True
+201,12,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-667333,True,True,True,False,True,True
+202,12,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741220,True,True,True,False,True,True
+203,12,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-688494,True,True,True,False,True,True
+204,12,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-666115,True,True,True,False,True,True
+205,12,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-667358,True,True,True,False,True,True
+206,12,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741568,True,True,True,False,True,True
+207,12,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-680330,True,True,True,False,True,True
+208,12,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-667152,True,True,True,False,True,True
+209,12,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-666543,True,True,True,False,True,True
+210,12,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741475,True,True,True,False,True,True
+211,12,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-679584,True,True,True,False,True,True
+212,12,dusk_signal_workshop,dusk_signal_workshop:routine disrupted by failure:failure,v27-631928,True,True,True,True,True,True
+213,12,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-666775,True,True,True,False,True,True
+214,12,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741488,True,True,True,False,True,True
+215,12,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-688133,True,True,True,False,True,True
+216,13,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-668275,True,True,True,False,True,True
+217,13,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-666454,True,True,True,False,True,True
+218,13,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-733835,True,True,True,False,True,True
+219,13,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-689170,True,True,True,False,True,True
+220,13,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-676044,True,True,True,False,True,True
+221,13,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-659796,True,True,True,False,True,True
+222,13,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-732041,True,True,True,False,True,True
+223,13,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-688422,True,True,True,False,True,True
+224,13,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-674196,True,True,True,False,True,True
+225,13,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-659475,True,True,True,False,True,True
+226,13,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-732354,True,True,True,False,True,True
+227,13,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-689243,True,True,True,False,True,True
+228,13,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-674503,True,True,True,False,True,True
+229,13,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-659569,True,True,True,False,True,True
+230,13,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741051,True,True,True,False,True,True
+231,13,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-698002,True,True,True,False,True,True
+232,13,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-673755,True,True,True,False,True,True
+233,13,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-658095,True,True,True,False,True,True
+234,14,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-730629,True,True,True,False,True,True
+235,14,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-697660,True,True,True,False,True,True
+236,14,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-666788,True,True,True,False,True,True
+237,14,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-658477,True,True,True,False,True,True
+238,14,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-731392,True,True,True,False,True,True
+239,14,archive_public_kiosk,archive_public_kiosk:routine disrupted by failure:failure,v27-661961,True,True,True,True,True,True
+240,14,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-666003,True,True,True,False,True,True
+241,14,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-658372,True,True,True,False,True,True
+242,14,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-731063,True,True,True,False,True,True
+243,14,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-663080,True,True,True,False,True,True
+244,14,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-666310,True,True,True,False,True,True
+245,14,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-668009,True,True,True,False,True,True
+246,14,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-732126,True,True,True,False,True,True
+247,14,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-671563,True,True,True,False,True,True
+248,14,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-666157,True,True,True,False,True,True
+249,14,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-668310,True,True,True,False,True,True
+250,14,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-731359,True,True,True,False,True,True
+251,14,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-671470,True,True,True,False,True,True
+252,15,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-658046,True,True,True,False,True,True
+253,15,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-667583,True,True,True,False,True,True
+254,15,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-723451,True,True,True,False,True,True
+255,15,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-662191,True,True,True,False,True,True
+256,15,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-667675,True,True,True,False,True,True
+257,15,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-667063,True,True,True,False,True,True
+258,15,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-723766,True,True,True,False,True,True
+259,15,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-662504,True,True,True,False,True,True
+260,15,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-673680,True,True,True,False,True,True
+261,15,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-674965,True,True,True,False,True,True
+262,15,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-722999,True,True,True,False,True,True
+263,15,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-663076,True,True,True,False,True,True
+264,15,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-673684,True,True,True,False,True,True
+265,15,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-676306,True,True,True,False,True,True
+266,15,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-696437,True,True,True,False,True,True
+267,15,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-654340,True,True,True,False,True,True
+268,15,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-674793,True,True,True,False,True,True
+269,15,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-675985,True,True,True,False,True,True
+270,16,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-663305,True,True,True,False,True,True
+271,16,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-657146,True,True,True,False,True,True
+272,16,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-666825,True,True,True,False,True,True
+273,16,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713864,True,True,True,False,True,True
+274,16,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-654564,True,True,True,False,True,True
+275,16,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-667420,True,True,True,False,True,True
+276,16,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-667937,True,True,True,False,True,True
+277,16,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-704883,True,True,True,False,True,True
+278,16,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-672995,True,True,True,False,True,True
+279,16,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-668785,True,True,True,False,True,True
+280,16,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-668535,True,True,True,False,True,True
+281,16,roof_greenhouse_cistern,roof_greenhouse_cistern:routine disrupted by failure:failure,v27-676631,True,True,True,True,True,True
+282,16,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-673074,True,True,True,False,True,True
+283,16,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-668037,True,True,True,False,True,True
+284,16,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-660544,True,True,True,False,True,True
+285,16,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-722323,True,True,True,True,True,True
+286,16,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-673387,True,True,True,False,True,True
+287,16,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-659692,True,True,True,False,True,True
+288,17,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-660926,True,True,True,False,True,True
+289,17,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-722569,True,True,True,True,True,True
+290,17,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-664637,True,True,True,False,True,True
+291,17,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-658944,True,True,True,False,True,True
+292,17,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-660821,True,True,True,False,True,True
+293,17,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713548,True,True,True,True,True,True
+294,17,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-664950,True,True,True,False,True,True
+295,17,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-659251,True,True,True,False,True,True
+296,17,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-676706,True,True,True,False,True,True
+297,17,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-697491,True,True,True,False,True,True
+298,17,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-655911,True,True,True,False,True,True
+299,17,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-666983,True,True,True,False,True,True
+300,17,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-675582,True,True,True,False,True,True
+301,17,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-705589,True,True,True,False,True,True
+302,17,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-662331,True,True,True,False,True,True
+303,17,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-657819,True,True,True,False,True,True
+304,17,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-675883,True,True,True,False,True,True
+305,17,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-696634,True,True,True,False,True,True
+306,18,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-673202,True,True,True,False,True,True
+307,18,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-631978,True,True,True,False,True,True
+308,18,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-676204,True,True,True,False,True,True
+309,18,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-705530,True,True,True,False,True,True
+310,18,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-672893,True,True,True,False,True,True
+311,18,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-640448,True,True,True,False,True,True
+312,18,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-675477,True,True,True,False,True,True
+313,18,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-696194,True,True,True,False,True,True
+314,18,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-672161,True,True,True,False,True,True
+315,18,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-623780,True,True,True,False,True,True
+316,18,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-675502,True,True,True,False,True,True
+317,18,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-705673,True,True,True,False,True,True
+318,18,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-663358,True,True,True,False,True,True
+319,18,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-632237,True,True,True,False,True,True
+320,18,river_mill_bridge,river_mill_bridge:routine disrupted by failure:failure,v27-631637,True,True,True,True,True,True
+321,18,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-704910,True,True,True,False,True,True
+322,18,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-671732,True,True,True,False,True,True
+323,18,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-624389,True,True,True,False,True,True
+324,19,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649919,True,True,True,False,True,True
+325,19,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-705959,True,True,True,False,True,True
+326,19,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-663469,True,True,True,False,True,True
+327,19,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-632854,True,True,True,False,True,True
+328,19,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650224,True,True,True,False,True,True
+329,19,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713932,True,True,True,False,True,True
+330,19,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-663376,True,True,True,False,True,True
+331,19,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-623964,True,True,True,False,True,True
+332,19,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650049,True,True,True,False,True,True
+333,19,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713955,True,True,True,False,True,True
+334,19,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-663527,True,True,True,False,True,True
+335,19,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-633341,True,True,True,False,True,True
+336,19,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650354,True,True,True,False,True,True
+337,19,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713598,True,True,True,False,True,True
+338,19,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-656648,True,True,True,False,True,True
+339,19,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-633005,True,True,True,False,True,True
+340,19,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-667635,True,True,True,False,True,True
+341,19,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713211,True,True,True,False,True,True
+342,20,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-624265,True,True,True,False,True,True
+343,20,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-667269,True,True,True,False,True,True
+344,20,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-714841,True,True,True,False,True,True
+345,20,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-664901,True,True,True,False,True,True
+346,20,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-633430,True,True,True,False,True,True
+347,20,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-676801,True,True,True,False,True,True
+348,20,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-715827,True,True,True,False,True,True
+349,20,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-664926,True,True,True,False,True,True
+350,20,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-630899,True,True,True,False,True,True
+351,20,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-675752,True,True,True,False,True,True
+352,20,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-715064,True,True,True,False,True,True
+353,20,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-673117,True,True,True,False,True,True
+354,20,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-631673,True,True,True,False,True,True
+355,20,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-677369,True,True,True,False,True,True
+356,20,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-705220,True,True,True,False,True,True
+357,20,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-673430,True,True,True,False,True,True
+358,20,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-639891,True,True,True,False,True,True
+359,20,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-677732,True,True,True,False,True,True
+360,21,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-705133,True,True,True,False,True,True
+361,21,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-672688,True,True,True,False,True,True
+362,21,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-632153,True,True,True,False,True,True
+363,21,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-677627,True,True,True,False,True,True
+364,21,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-705506,True,True,True,False,True,True
+365,21,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-672830,True,True,True,False,True,True
+366,21,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-632615,True,True,True,False,True,True
+367,21,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-677030,True,True,True,False,True,True
+368,21,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-705319,True,True,True,False,True,True
+369,21,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-672927,True,True,True,False,True,True
+370,21,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-623727,True,True,True,False,True,True
+371,21,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-676717,True,True,True,False,True,True
+372,21,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-705962,True,True,True,False,True,True
+373,21,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-673537,True,True,True,False,True,True
+374,21,dusk_signal_workshop,dusk_signal_workshop:routine disrupted by failure:failure,v27-598026,True,True,True,True,True,True
+375,21,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-676120,True,True,True,False,True,True
+376,21,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-705981,True,True,True,False,True,True
+377,21,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-664865,True,True,True,False,True,True
+378,22,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-624824,True,True,True,False,True,True
+379,22,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-676421,True,True,True,False,True,True
+380,22,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713726,True,True,True,False,True,True
+381,22,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-665520,True,True,True,False,True,True
+382,22,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-632883,True,True,True,False,True,True
+383,22,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-667474,True,True,True,False,True,True
+384,22,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713745,True,True,True,False,True,True
+385,22,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-665833,True,True,True,False,True,True
+386,22,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-640393,True,True,True,False,True,True
+387,22,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-634299,True,True,True,False,True,True
+388,22,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-704762,True,True,True,False,True,True
+389,22,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-665670,True,True,True,False,True,True
+390,22,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-640300,True,True,True,False,True,True
+391,22,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-633597,True,True,True,False,True,True
+392,22,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713291,True,True,True,False,True,True
+393,22,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-665289,True,True,True,False,True,True
+394,22,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-639964,True,True,True,False,True,True
+395,22,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-633540,True,True,True,False,True,True
+396,23,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-695736,True,True,True,False,True,True
+397,23,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-664953,True,True,True,False,True,True
+398,23,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-640012,True,True,True,False,True,True
+399,23,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-642246,True,True,True,False,True,True
+400,23,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-712817,True,True,True,False,True,True
+401,23,archive_public_kiosk,archive_public_kiosk:routine disrupted by failure:failure,v27-636927,True,True,True,True,True,True
+402,23,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-640225,True,True,True,False,True,True
+403,23,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-640369,True,True,True,False,True,True
+404,23,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-697450,True,True,True,False,True,True
+405,23,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-699229,True,True,True,False,True,True
+406,23,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-639889,True,True,True,False,True,True
+407,23,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-648153,True,True,True,False,True,True
+408,23,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-697093,True,True,True,False,True,True
+409,23,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-699248,True,True,True,False,True,True
+410,23,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-632122,True,True,True,False,True,True
+411,23,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-648054,True,True,True,False,True,True
+412,23,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-703439,True,True,True,False,True,True
+413,23,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-698177,True,True,True,False,True,True
+414,24,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-605216,True,True,True,False,True,True
+415,24,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-704603,True,True,True,False,True,True
+416,24,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-698278,True,True,True,False,True,True
+417,24,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-633280,True,True,True,False,True,True
+418,24,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-622319,True,True,True,False,True,True
+419,24,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713016,True,True,True,False,True,True
+420,24,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-698179,True,True,True,False,True,True
+421,24,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-633827,True,True,True,False,True,True
+422,24,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614729,True,True,True,False,True,True
+423,24,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713659,True,True,True,False,True,True
+424,24,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-697837,True,True,True,False,True,True
+425,24,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-633038,True,True,True,False,True,True
+426,24,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-623046,True,True,True,False,True,True
+427,24,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713678,True,True,True,False,True,True
+428,24,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-690349,True,True,True,False,True,True
+429,24,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-632702,True,True,True,False,True,True
+430,24,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-606885,True,True,True,False,True,True
+431,24,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-712915,True,True,True,False,True,True
+432,25,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-690250,True,True,True,False,True,True
+433,25,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-632609,True,True,True,False,True,True
+434,25,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615135,True,True,True,False,True,True
+435,25,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-712934,True,True,True,False,True,True
+436,25,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-690638,True,True,True,False,True,True
+437,25,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-633194,True,True,True,False,True,True
+438,25,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-606589,True,True,True,False,True,True
+439,25,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-712548,True,True,True,False,True,True
+440,25,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681857,True,True,True,False,True,True
+441,25,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650038,True,True,True,False,True,True
+442,25,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-606537,True,True,True,False,True,True
+443,25,roof_greenhouse_cistern,roof_greenhouse_cistern:routine disrupted by failure:failure,v27-677568,True,True,True,True,True,True
+444,25,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681227,True,True,True,False,True,True
+445,25,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650347,True,True,True,False,True,True
+446,25,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-622742,True,True,True,False,True,True
+447,25,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-724011,True,True,True,True,True,True
+448,25,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681534,True,True,True,False,True,True
+449,25,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650007,True,True,True,False,True,True
+450,26,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-613525,True,True,True,False,True,True
+451,26,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-723851,True,True,True,True,True,True
+452,26,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681851,True,True,True,False,True,True
+453,26,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649910,True,True,True,False,True,True
+454,26,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-624597,True,True,True,False,True,True
+455,26,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-713374,True,True,True,True,True,True
+456,26,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682158,True,True,True,False,True,True
+457,26,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649570,True,True,True,False,True,True
+458,26,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615277,True,True,True,False,True,True
+459,26,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-722641,True,True,True,False,True,True
+460,26,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681771,True,True,True,False,True,True
+461,26,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650399,True,True,True,False,True,True
+462,26,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614556,True,True,True,False,True,True
+463,26,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-722941,True,True,True,False,True,True
+464,26,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681025,True,True,True,False,True,True
+465,26,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650059,True,True,True,False,True,True
+466,26,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614863,True,True,True,False,True,True
+467,26,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-732342,True,True,True,False,True,True
+468,27,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681044,True,True,True,False,True,True
+469,27,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650801,True,True,True,False,True,True
+470,27,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615343,True,True,True,False,True,True
+471,27,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-731573,True,True,True,False,True,True
+472,27,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681026,True,True,True,False,True,True
+473,27,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648049,True,True,True,False,True,True
+474,27,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615443,True,True,True,False,True,True
+475,27,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-731886,True,True,True,False,True,True
+476,27,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-680984,True,True,True,False,True,True
+477,27,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648070,True,True,True,False,True,True
+478,27,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-607290,True,True,True,False,True,True
+479,27,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740199,True,True,True,False,True,True
+480,27,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681615,True,True,True,False,True,True
+481,27,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-647324,True,True,True,False,True,True
+482,27,river_mill_bridge,river_mill_bridge:routine disrupted by failure:failure,v27-581702,True,True,True,True,True,True
+483,27,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740175,True,True,True,False,True,True
+484,27,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681273,True,True,True,False,True,True
+485,27,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-647633,True,True,True,False,True,True
+486,28,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740143,True,True,True,False,True,True
+487,28,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681535,True,True,True,False,True,True
+488,28,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648185,True,True,True,False,True,True
+489,28,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-632800,True,True,True,True,True,True
+490,28,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740717,True,True,True,False,True,True
+491,28,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-680968,True,True,True,False,True,True
+492,28,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648088,True,True,True,False,True,True
+493,28,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615759,True,True,True,False,True,True
+494,28,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741249,True,True,True,False,True,True
+495,28,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-680987,True,True,True,False,True,True
+496,28,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-647748,True,True,True,False,True,True
+497,28,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-624375,True,True,True,False,True,True
+498,28,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740842,True,True,True,False,True,True
+499,28,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-680645,True,True,True,False,True,True
+500,28,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-647407,True,True,True,False,True,True
+501,28,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-623257,True,True,True,False,True,True
+502,28,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740433,True,True,True,False,True,True
+503,28,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681312,True,True,True,False,True,True
+504,29,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648437,True,True,True,False,True,True
+505,29,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614560,True,True,True,False,True,True
+506,29,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740174,True,True,True,False,True,True
+507,29,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681619,True,True,True,False,True,True
+508,29,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648097,True,True,True,False,True,True
+509,29,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615735,True,True,True,False,True,True
+510,29,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740162,True,True,True,False,True,True
+511,29,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681232,True,True,True,False,True,True
+512,29,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648926,True,True,True,False,True,True
+513,29,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-606760,True,True,True,False,True,True
+514,29,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741592,True,True,True,False,True,True
+515,29,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681369,True,True,True,False,True,True
+516,29,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648586,True,True,True,False,True,True
+517,29,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615298,True,True,True,False,True,True
+518,29,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740666,True,True,True,False,True,True
+519,29,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681027,True,True,True,False,True,True
+520,29,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648302,True,True,True,False,True,True
+521,29,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614923,True,True,True,False,True,True
+522,30,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741330,True,True,True,False,True,True
+523,30,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-680928,True,True,True,False,True,True
+524,30,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649976,True,True,True,False,True,True
+525,30,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615284,True,True,True,False,True,True
+526,30,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740967,True,True,True,False,True,True
+527,30,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681608,True,True,True,False,True,True
+528,30,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650718,True,True,True,False,True,True
+529,30,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615315,True,True,True,False,True,True
+530,30,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-739797,True,True,True,False,True,True
+531,30,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682754,True,True,True,False,True,True
+532,30,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650621,True,True,True,False,True,True
+533,30,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614736,True,True,True,False,True,True
+534,30,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740110,True,True,True,False,True,True
+535,30,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683061,True,True,True,False,True,True
+536,30,dusk_signal_workshop,dusk_signal_workshop:routine disrupted by failure:failure,v27-615078,True,True,True,True,True,True
+537,30,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614767,True,True,True,False,True,True
+538,30,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740790,True,True,True,False,True,True
+539,30,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682719,True,True,True,False,True,True
+540,31,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650274,True,True,True,False,True,True
+541,31,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614046,True,True,True,False,True,True
+542,31,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741121,True,True,True,False,True,True
+543,31,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682620,True,True,True,False,True,True
+544,31,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650087,True,True,True,False,True,True
+545,31,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615148,True,True,True,False,True,True
+546,31,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741134,True,True,True,False,True,True
+547,31,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682743,True,True,True,False,True,True
+548,31,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650587,True,True,True,False,True,True
+549,31,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615896,True,True,True,False,True,True
+550,31,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740365,True,True,True,False,True,True
+551,31,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682958,True,True,True,False,True,True
+552,31,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650490,True,True,True,False,True,True
+553,31,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615175,True,True,True,False,True,True
+554,31,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740415,True,True,True,False,True,True
+555,31,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682977,True,True,True,False,True,True
+556,31,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649683,True,True,True,False,True,True
+557,31,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615275,True,True,True,False,True,True
+558,32,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683320,True,True,True,False,True,True
+559,32,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649947,True,True,True,False,True,True
+560,32,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614638,True,True,True,False,True,True
+561,32,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740538,True,True,True,False,True,True
+562,32,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682933,True,True,True,False,True,True
+563,32,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649306,True,True,True,False,True,True
+564,32,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614945,True,True,True,False,True,True
+565,32,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740310,True,True,True,False,True,True
+566,32,archive_public_kiosk,archive_public_kiosk:routine disrupted by failure:failure,v27-646293,True,True,True,True,True,True
+567,32,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649615,True,True,True,False,True,True
+568,32,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615099,True,True,True,False,True,True
+569,32,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741042,True,True,True,False,True,True
+570,32,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682308,True,True,True,True,True,True
+571,32,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649302,True,True,True,False,True,True
+572,32,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-607767,True,True,True,False,True,True
+573,32,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741706,True,True,True,False,True,True
+574,32,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683324,True,True,True,True,True,True
+575,32,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650325,True,True,True,False,True,True
+576,33,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-616277,True,True,True,False,True,True
+577,33,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741343,True,True,True,False,True,True
+578,33,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683601,True,True,True,True,True,True
+579,33,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650346,True,True,True,False,True,True
+580,33,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615902,True,True,True,False,True,True
+581,33,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741733,True,True,True,False,True,True
+582,33,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683064,True,True,True,True,True,True
+583,33,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650321,True,True,True,False,True,True
+584,33,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-613736,True,True,True,False,True,True
+585,33,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-742393,True,True,True,False,True,True
+586,33,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682942,True,True,True,True,True,True
+587,33,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649922,True,True,True,False,True,True
+588,33,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-613767,True,True,True,False,True,True
+589,33,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-742406,True,True,True,False,True,True
+590,33,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681913,True,True,True,True,True,True
+591,33,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650546,True,True,True,False,True,True
+592,33,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-613461,True,True,True,False,True,True
+593,33,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741637,True,True,True,False,True,True
+594,34,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681833,True,True,True,False,True,True
+595,34,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650206,True,True,True,False,True,True
+596,34,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-615176,True,True,True,False,True,True
+597,34,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741650,True,True,True,False,True,True
+598,34,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682839,True,True,True,False,True,True
+599,34,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-651346,True,True,True,False,True,True
+600,34,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614508,True,True,True,False,True,True
+601,34,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741917,True,True,True,False,True,True
+602,34,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681774,True,True,True,False,True,True
+603,34,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649527,True,True,True,False,True,True
+604,34,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614193,True,True,True,False,True,True
+605,34,roof_greenhouse_cistern,roof_greenhouse_cistern:routine disrupted by failure:failure,v27-703215,True,True,True,True,True,True
+606,34,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681793,True,True,True,False,True,True
+607,34,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649567,True,True,True,False,True,True
+608,34,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614138,True,True,True,False,True,True
+609,34,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740062,True,True,True,True,True,True
+610,34,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681694,True,True,True,False,True,True
+611,34,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649470,True,True,True,False,True,True
+612,35,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614039,True,True,True,False,True,True
+613,35,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740655,True,True,True,True,True,True
+614,35,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683037,True,True,True,False,True,True
+615,35,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649130,True,True,True,False,True,True
+616,35,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-605592,True,True,True,False,True,True
+617,35,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741234,True,True,True,True,True,True
+618,35,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683344,True,True,True,False,True,True
+619,35,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649439,True,True,True,False,True,True
+620,35,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-613985,True,True,True,False,True,True
+621,35,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740808,True,True,True,False,True,True
+622,35,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-684019,True,True,True,False,True,True
+623,35,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648675,True,True,True,False,True,True
+624,35,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614968,True,True,True,False,True,True
+625,35,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741121,True,True,True,False,True,True
+626,35,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683839,True,True,True,False,True,True
+627,35,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649669,True,True,True,False,True,True
+628,35,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614653,True,True,True,False,True,True
+629,35,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741186,True,True,True,False,True,True
+630,36,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649239,True,True,True,False,True,True
+631,36,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614233,True,True,True,False,True,True
+632,36,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741675,True,True,True,False,True,True
+633,36,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683226,True,True,True,False,True,True
+634,36,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649548,True,True,True,False,True,True
+635,36,river_mill_bridge,river_mill_bridge:routine disrupted by failure:failure,v27-579795,True,True,True,True,True,True
+636,36,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-742069,True,True,True,False,True,True
+637,36,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683533,True,True,True,False,True,True
+638,36,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650735,True,True,True,False,True,True
+639,36,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-631138,True,True,True,False,True,True
+640,36,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741676,True,True,True,False,True,True
+641,36,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-684023,True,True,True,False,True,True
+642,36,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650638,True,True,True,False,True,True
+643,36,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-630413,True,True,True,False,True,True
+644,36,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740003,True,True,True,False,True,True
+645,36,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683681,True,True,True,False,True,True
+646,36,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650298,True,True,True,False,True,True
+647,36,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-614923,True,True,True,False,True,True
+648,37,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740016,True,True,True,False,True,True
+649,37,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683398,True,True,True,False,True,True
+650,37,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-651230,True,True,True,False,True,True
+651,37,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-632565,True,True,True,False,True,True
+652,37,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-739923,True,True,True,False,True,True
+653,37,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681856,True,True,True,False,True,True
+654,37,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-651539,True,True,True,False,True,True
+655,37,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-632940,True,True,True,False,True,True
+656,37,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741252,True,True,True,False,True,True
+657,37,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-680975,True,True,True,False,True,True
+658,37,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649911,True,True,True,False,True,True
+659,37,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-624773,True,True,True,False,True,True
+660,37,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740723,True,True,True,False,True,True
+661,37,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681606,True,True,True,False,True,True
+662,37,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649329,True,True,True,False,True,True
+663,37,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-633609,True,True,True,False,True,True
+664,37,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741036,True,True,True,False,True,True
+665,37,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-681957,True,True,True,False,True,True
+666,38,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649334,True,True,True,False,True,True
+667,38,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-633290,True,True,True,False,True,True
+668,38,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741170,True,True,True,False,True,True
+669,38,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682264,True,True,True,False,True,True
+670,38,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650598,True,True,True,False,True,True
+671,38,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-631933,True,True,True,False,True,True
+672,38,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741077,True,True,True,False,True,True
+673,38,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682426,True,True,True,False,True,True
+674,38,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650357,True,True,True,False,True,True
+675,38,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649631,True,True,True,False,True,True
+676,38,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740714,True,True,True,False,True,True
+677,38,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683128,True,True,True,False,True,True
+678,38,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-651387,True,True,True,False,True,True
+679,38,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650006,True,True,True,False,True,True
+680,38,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741109,True,True,True,False,True,True
+681,38,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682380,True,True,True,False,True,True
+682,38,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-651002,True,True,True,False,True,True
+683,38,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649627,True,True,True,False,True,True
+684,39,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-742477,True,True,True,False,True,True
+685,39,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683417,True,True,True,False,True,True
+686,39,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650398,True,True,True,False,True,True
+687,39,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649930,True,True,True,False,True,True
+688,39,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-742114,True,True,True,False,True,True
+689,39,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683021,True,True,True,False,True,True
+690,39,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649053,True,True,True,False,True,True
+691,39,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649551,True,True,True,False,True,True
+692,39,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740858,True,True,True,False,True,True
+693,39,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-682238,True,True,True,False,True,True
+694,39,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649362,True,True,True,False,True,True
+695,39,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-648856,True,True,True,False,True,True
+696,39,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741928,True,True,True,False,True,True
+697,39,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-683059,True,True,True,False,True,True
+698,39,dusk_signal_workshop,dusk_signal_workshop:routine disrupted by failure:failure,v27-614569,True,True,True,True,True,True
+699,39,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649496,True,True,True,False,True,True
+700,39,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741138,True,True,True,False,True,True
+701,39,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-647175,True,True,True,False,True,True
+702,40,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-648778,True,True,True,False,True,True
+703,40,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740730,True,True,True,False,True,True
+704,40,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-656743,True,True,True,False,True,True
+705,40,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649511,True,True,True,True,True,True
+706,40,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-648459,True,True,True,False,True,True
+707,40,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740032,True,True,True,False,True,True
+708,40,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-647754,True,True,True,False,True,True
+709,40,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649870,True,True,True,True,True,True
+710,40,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-648841,True,True,True,False,True,True
+711,40,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740557,True,True,True,False,True,True
+712,40,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-656026,True,True,True,False,True,True
+713,40,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649337,True,True,True,True,True,True
+714,40,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649144,True,True,True,False,True,True
+715,40,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740194,True,True,True,False,True,True
+716,40,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-647125,True,True,True,False,True,True
+717,40,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650299,True,True,True,True,True,True
+718,40,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649519,True,True,True,False,True,True
+719,40,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740187,True,True,True,False,True,True
+720,41,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-646938,True,True,True,False,True,True
+721,41,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649773,True,True,True,True,True,True
+722,41,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650430,True,True,True,False,True,True
+723,41,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740761,True,True,True,False,True,True
+724,41,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-646873,True,True,True,False,True,True
+725,41,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649626,True,True,True,True,True,True
+726,41,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650111,True,True,True,False,True,True
+727,41,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741155,True,True,True,False,True,True
+728,41,archive_public_kiosk,archive_public_kiosk:routine disrupted by failure:failure,v27-622435,True,True,True,True,True,True
+729,41,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-641302,True,True,True,False,True,True
+730,41,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650008,True,True,True,False,True,True
+731,41,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741027,True,True,True,False,True,True
+732,41,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-665133,True,True,True,True,True,True
+733,41,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-640919,True,True,True,False,True,True
+734,41,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-648742,True,True,True,False,True,True
+735,41,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-742097,True,True,True,False,True,True
+736,41,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-666376,True,True,True,True,True,True
+737,41,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649163,True,True,True,False,True,True
+738,42,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-648750,True,True,True,False,True,True
+739,42,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741734,True,True,True,False,True,True
+740,42,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-665860,True,True,True,True,True,True
+741,42,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648778,True,True,True,False,True,True
+742,42,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-648371,True,True,True,False,True,True
+743,42,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-742048,True,True,True,False,True,True
+744,42,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-664445,True,True,True,True,True,True
+745,42,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649159,True,True,True,False,True,True
+746,42,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649956,True,True,True,False,True,True
+747,42,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-742041,True,True,True,False,True,True
+748,42,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-656614,True,True,True,True,True,True
+749,42,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650934,True,True,True,False,True,True
+750,42,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649577,True,True,True,False,True,True
+751,42,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741648,True,True,True,False,True,True
+752,42,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-665172,True,True,True,True,True,True
+753,42,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649491,True,True,True,False,True,True
+754,42,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650574,True,True,True,False,True,True
+755,42,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741682,True,True,True,False,True,True
+756,43,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-648305,True,True,True,False,True,True
+757,43,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649872,True,True,True,False,True,True
+758,43,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-648636,True,True,True,False,True,True
+759,43,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741695,True,True,True,False,True,True
+760,43,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-656581,True,True,True,False,True,True
+761,43,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650041,True,True,True,False,True,True
+762,43,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649912,True,True,True,False,True,True
+763,43,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740926,True,True,True,False,True,True
+764,43,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657077,True,True,True,False,True,True
+765,43,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650350,True,True,True,False,True,True
+766,43,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649593,True,True,True,False,True,True
+767,43,roof_greenhouse_cistern,roof_greenhouse_cistern:routine disrupted by failure:failure,v27-704338,True,True,True,True,True,True
+768,43,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657102,True,True,True,False,True,True
+769,43,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650010,True,True,True,False,True,True
+770,43,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649878,True,True,True,False,True,True
+771,43,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-742585,True,True,True,True,True,True
+772,43,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-648686,True,True,True,False,True,True
+773,43,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649913,True,True,True,False,True,True
+774,44,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741853,True,True,True,False,True,True
+775,44,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-648789,True,True,True,False,True,True
+776,44,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649528,True,True,True,False,True,True
+777,44,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650316,True,True,True,False,True,True
+778,44,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741446,True,True,True,False,True,True
+779,44,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657848,True,True,True,False,True,True
+780,44,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649431,True,True,True,False,True,True
+781,44,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649591,True,True,True,False,True,True
+782,44,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-742967,True,True,True,False,True,True
+783,44,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-648497,True,True,True,False,True,True
+784,44,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649452,True,True,True,False,True,True
+785,44,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650632,True,True,True,False,True,True
+786,44,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-743280,True,True,True,False,True,True
+787,44,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657181,True,True,True,False,True,True
+788,44,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650220,True,True,True,False,True,True
+789,44,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650313,True,True,True,False,True,True
+790,44,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-743268,True,True,True,False,True,True
+791,44,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-656872,True,True,True,False,True,True
+792,45,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650556,True,True,True,False,True,True
+793,45,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649934,True,True,True,False,True,True
+794,45,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-743302,True,True,True,False,True,True
+795,45,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-656824,True,True,True,False,True,True
+796,45,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650216,True,True,True,False,True,True
+797,45,river_mill_bridge,river_mill_bridge:routine disrupted by failure:failure,v27-614825,True,True,True,True,True,True
+798,45,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-743615,True,True,True,False,True,True
+799,45,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-656488,True,True,True,False,True,True
+800,45,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648809,True,True,True,False,True,True
+801,45,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649461,True,True,True,False,True,True
+802,45,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741811,True,True,True,False,True,True
+803,45,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-647625,True,True,True,False,True,True
+804,45,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649494,True,True,True,False,True,True
+805,45,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649764,True,True,True,False,True,True
+806,45,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-739862,True,True,True,False,True,True
+807,45,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657008,True,True,True,False,True,True
+808,45,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650443,True,True,True,False,True,True
+809,45,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649772,True,True,True,False,True,True
+810,46,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740898,True,True,True,False,True,True
+811,46,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-647894,True,True,True,False,True,True
+812,46,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649972,True,True,True,False,True,True
+813,46,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650156,True,True,True,False,True,True
+814,46,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-741878,True,True,True,False,True,True
+815,46,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657437,True,True,True,False,True,True
+816,46,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649632,True,True,True,False,True,True
+817,46,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649837,True,True,True,False,True,True
+818,46,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740462,True,True,True,False,True,True
+819,46,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-648438,True,True,True,False,True,True
+820,46,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649535,True,True,True,False,True,True
+821,46,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650744,True,True,True,False,True,True
+822,46,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740369,True,True,True,False,True,True
+823,46,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-656720,True,True,True,False,True,True
+824,46,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648667,True,True,True,False,True,True
+825,46,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-641673,True,True,True,False,True,True
+826,46,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740935,True,True,True,False,True,True
+827,46,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657385,True,True,True,False,True,True
+828,47,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648450,True,True,True,False,True,True
+829,47,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-650120,True,True,True,False,True,True
+830,47,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-739577,True,True,True,False,True,True
+831,47,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-656643,True,True,True,False,True,True
+832,47,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-647704,True,True,True,False,True,True
+833,47,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-649006,True,True,True,False,True,True
+834,47,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-739971,True,True,True,False,True,True
+835,47,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657371,True,True,True,False,True,True
+836,47,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648754,True,True,True,False,True,True
+837,47,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-623518,True,True,True,False,True,True
+838,47,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740284,True,True,True,False,True,True
+839,47,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657156,True,True,True,False,True,True
+840,47,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648729,True,True,True,False,True,True
+841,47,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-632024,True,True,True,False,True,True
+842,47,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740809,True,True,True,False,True,True
+843,47,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657063,True,True,True,False,True,True
+844,47,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-648750,True,True,True,False,True,True
+845,47,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-623155,True,True,True,False,True,True
+846,48,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657808,True,True,True,False,True,True
+847,48,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649014,True,True,True,False,True,True
+848,48,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-632802,True,True,True,False,True,True
+849,48,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740581,True,True,True,False,True,True
+850,48,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-648687,True,True,True,False,True,True
+851,48,dusk_signal_workshop,dusk_signal_workshop:routine disrupted by failure:failure,v27-616005,True,True,True,True,True,True
+852,48,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-632427,True,True,True,False,True,True
+853,48,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740544,True,True,True,False,True,True
+854,48,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-658040,True,True,True,False,True,True
+855,48,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650307,True,True,True,False,True,True
+856,48,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-632788,True,True,True,False,True,True
+857,48,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740578,True,True,True,False,True,True
+858,48,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657704,True,True,True,False,True,True
+859,48,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-650616,True,True,True,False,True,True
+860,48,river_mill_bridge,river_mill_bridge:infrastructure routine carried:upkeep,v27-631829,True,True,True,False,True,True
+861,48,roof_greenhouse_cistern,roof_greenhouse_cistern:infrastructure routine carried:upkeep,v27-740852,True,True,True,False,True,True
+862,48,archive_public_kiosk,archive_public_kiosk:infrastructure routine carried:upkeep,v27-657323,True,True,True,False,True,True
+863,48,dusk_signal_workshop,dusk_signal_workshop:infrastructure routine carried:upkeep,v27-649870,True,True,True,False,True,True

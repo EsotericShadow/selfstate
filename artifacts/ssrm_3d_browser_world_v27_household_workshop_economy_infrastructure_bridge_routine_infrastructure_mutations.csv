@@ -1,0 +1,865 @@
+tick_id,day,agent,infrastructure_id,old_routine,new_routine,mutation_kind,triggered_by_state,routine_changed,later_visible
+0,1,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.85; skill=0.34; ecology=0.57,False,False
+1,1,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.82; skill=0.38; ecology=0.52,False,False
+2,1,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.79; skill=0.43; ecology=0.51,False,False
+3,1,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.77; skill=0.46; ecology=0.55,False,False
+4,1,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.85; skill=0.34; ecology=0.57,False,False
+5,1,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.81; skill=0.39; ecology=0.54,False,False
+6,1,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.78; skill=0.43; ecology=0.50,False,False
+7,1,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.76; skill=0.46; ecology=0.56,False,False
+8,1,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.83; skill=0.35; ecology=0.57,False,False
+9,1,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.80; skill=0.39; ecology=0.54,False,False
+10,1,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.78; skill=0.43; ecology=0.50,False,False
+11,1,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.75; skill=0.47; ecology=0.57,False,False
+12,1,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.83; skill=0.36; ecology=0.57,False,False
+13,1,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.80; skill=0.40; ecology=0.54,False,False
+14,1,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.77; skill=0.44; ecology=0.51,False,False
+15,1,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.74; skill=0.48; ecology=0.57,False,False
+16,1,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.82; skill=0.36; ecology=0.57,False,False
+17,1,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.79; skill=0.40; ecology=0.55,False,False
+18,2,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.84; skill=0.44; ecology=0.52,False,False
+19,2,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.74; skill=0.48; ecology=0.58,False,False
+20,2,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.81; skill=0.37; ecology=0.59,False,False
+21,2,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.79; skill=0.40; ecology=0.55,False,False
+22,2,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.83; skill=0.45; ecology=0.52,False,False
+23,2,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.73; skill=0.49; ecology=0.59,False,False
+24,2,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.80; skill=0.37; ecology=0.59,False,False
+25,2,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.77; skill=0.41; ecology=0.57,False,False
+26,2,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.82; skill=0.46; ecology=0.54,False,False
+27,2,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.80; skill=0.49; ecology=0.60,False,False
+28,2,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.80; skill=0.37; ecology=0.59,False,False
+29,2,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.76; skill=0.42; ecology=0.58,False,False
+30,2,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.81; skill=0.46; ecology=0.54,False,False
+31,2,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.80; skill=0.49; ecology=0.60,False,False
+32,2,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.79; skill=0.38; ecology=0.61,False,False
+33,2,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.75; skill=0.42; ecology=0.58,False,False
+34,2,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.79; skill=0.47; ecology=0.56,False,False
+35,2,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.79; skill=0.49; ecology=0.60,False,False
+36,3,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.78; skill=0.38; ecology=0.61,False,False
+37,3,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.75; skill=0.42; ecology=0.59,False,False
+38,3,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.78; skill=0.48; ecology=0.58,False,False
+39,3,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.78; skill=0.49; ecology=0.62,False,False
+40,3,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.78; skill=0.38; ecology=0.62,False,False
+41,3,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.74; skill=0.43; ecology=0.59,False,False
+42,3,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.77; skill=0.48; ecology=0.58,False,False
+43,3,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.77; skill=0.50; ecology=0.63,False,False
+44,3,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.77; skill=0.39; ecology=0.63,False,False
+45,3,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.73; skill=0.43; ecology=0.59,False,False
+46,3,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.77; skill=0.48; ecology=0.58,False,False
+47,3,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.76; skill=0.51; ecology=0.64,False,False
+48,3,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.76; skill=0.39; ecology=0.65,False,False
+49,3,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.73; skill=0.43; ecology=0.60,False,False
+50,3,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.76; skill=0.49; ecology=0.60,False,False
+51,3,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.75; skill=0.51; ecology=0.65,False,False
+52,3,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.75; skill=0.40; ecology=0.64,False,False
+53,3,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.72; skill=0.44; ecology=0.60,False,False
+54,4,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.75; skill=0.51; ecology=0.65,False,False
+55,4,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.75; skill=0.40; ecology=0.64,False,False
+56,4,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.71; skill=0.45; ecology=0.61,False,False
+57,4,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.75; skill=0.49; ecology=0.60,False,False
+58,4,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.74; skill=0.51; ecology=0.65,False,False
+59,4,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.73; skill=0.41; ecology=0.64,False,False
+60,4,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.70; skill=0.45; ecology=0.62,False,False
+61,4,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.75; skill=0.49; ecology=0.60,False,False
+62,4,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.73; skill=0.52; ecology=0.67,False,False
+63,4,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.73; skill=0.41; ecology=0.64,False,False
+64,4,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.70; skill=0.45; ecology=0.62,False,False
+65,4,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.73; skill=0.50; ecology=0.61,False,False
+66,4,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.73; skill=0.52; ecology=0.67,False,False
+67,4,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.72; skill=0.41; ecology=0.65,False,False
+68,4,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.68; skill=0.46; ecology=0.64,False,False
+69,4,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.72; skill=0.50; ecology=0.61,False,False
+70,4,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.72; skill=0.52; ecology=0.67,False,False
+71,4,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.72; skill=0.41; ecology=0.65,False,False
+72,5,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.75; skill=0.46; ecology=0.64,False,False
+73,5,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.72; skill=0.51; ecology=0.61,False,False
+74,5,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.71; skill=0.53; ecology=0.69,False,False
+75,5,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.71; skill=0.42; ecology=0.65,False,False
+76,5,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.74; skill=0.47; ecology=0.66,False,False
+77,5,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.70; skill=0.51; ecology=0.63,False,False
+78,5,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.71; skill=0.54; ecology=0.69,False,False
+79,5,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.71; skill=0.42; ecology=0.65,False,False
+80,5,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.73; skill=0.48; ecology=0.67,False,False
+81,5,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.70; skill=0.52; ecology=0.63,False,False
+82,5,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.70; skill=0.54; ecology=0.70,False,False
+83,5,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.70; skill=0.43; ecology=0.67,False,False
+84,5,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.72; skill=0.48; ecology=0.67,False,False
+85,5,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.68; skill=0.53; ecology=0.65,False,False
+86,5,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.69; skill=0.55; ecology=0.71,False,False
+87,5,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.69; skill=0.44; ecology=0.69,False,False
+88,5,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.72; skill=0.48; ecology=0.68,False,False
+89,5,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.68; skill=0.53; ecology=0.64,False,False
+90,6,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.68; skill=0.55; ecology=0.72,False,False
+91,6,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.68; skill=0.44; ecology=0.69,False,False
+92,6,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.71; skill=0.49; ecology=0.69,False,False
+93,6,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.67; skill=0.53; ecology=0.64,False,False
+94,6,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.67; skill=0.55; ecology=0.72,False,False
+95,6,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.67; skill=0.45; ecology=0.70,False,False
+96,6,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.70; skill=0.49; ecology=0.70,False,False
+97,6,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.66; skill=0.53; ecology=0.64,False,False
+98,6,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.66; skill=0.56; ecology=0.73,False,False
+99,6,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.74; skill=0.45; ecology=0.71,False,False
+100,6,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.69; skill=0.50; ecology=0.69,False,False
+101,6,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.65; skill=0.54; ecology=0.66,False,False
+102,6,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.65; skill=0.56; ecology=0.76,False,False
+103,6,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.73; skill=0.45; ecology=0.69,False,False
+104,6,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.68; skill=0.50; ecology=0.70,False,False
+105,6,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.65; skill=0.54; ecology=0.66,False,False
+106,6,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.65; skill=0.56; ecology=0.76,False,False
+107,6,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.80; skill=0.45; ecology=0.70,False,False
+108,7,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.68; skill=0.51; ecology=0.70,False,False
+109,7,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.63; skill=0.55; ecology=0.68,False,False
+110,7,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.63; skill=0.57; ecology=0.78,False,False
+111,7,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.79; skill=0.46; ecology=0.69,False,False
+112,7,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.67; skill=0.51; ecology=0.71,False,False
+113,7,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.62; skill=0.56; ecology=0.70,False,False
+114,7,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.63; skill=0.57; ecology=0.78,False,False
+115,7,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.78; skill=0.46; ecology=0.70,False,False
+116,7,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.66; skill=0.52; ecology=0.72,False,False
+117,7,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.62; skill=0.56; ecology=0.70,False,False
+118,7,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.62; skill=0.58; ecology=0.79,False,False
+119,7,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.77; skill=0.47; ecology=0.70,False,False
+120,7,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.65; skill=0.53; ecology=0.76,False,False
+121,7,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.61; skill=0.56; ecology=0.70,False,False
+122,7,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.60; skill=0.59; ecology=0.81,False,False
+123,7,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.84; skill=0.47; ecology=0.70,False,False
+124,7,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.64; skill=0.53; ecology=0.75,False,False
+125,7,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.69; skill=0.57; ecology=0.70,False,False
+126,8,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.91; skill=0.48; ecology=0.70,False,False
+127,8,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.62; skill=0.54; ecology=0.76,False,False
+128,8,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.67; skill=0.58; ecology=0.72,False,False
+129,8,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.60; skill=0.59; ecology=0.81,False,False
+130,8,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.91; skill=0.48; ecology=0.71,False,False
+131,8,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.61; skill=0.55; ecology=0.78,False,False
+132,8,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.67; skill=0.58; ecology=0.72,False,False
+133,8,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.59; skill=0.60; ecology=0.82,False,False
+134,8,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.90; skill=0.49; ecology=0.72,False,False
+135,8,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.60; skill=0.55; ecology=0.77,False,False
+136,8,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.65; skill=0.59; ecology=0.74,False,False
+137,8,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.66; skill=0.61; ecology=0.83,False,False
+138,8,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.89; skill=0.50; ecology=0.74,False,False
+139,8,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.60; skill=0.55; ecology=0.77,False,False
+140,8,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.64; skill=0.60; ecology=0.76,False,False
+141,8,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.66; skill=0.61; ecology=0.84,False,False
+142,8,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.88; skill=0.50; ecology=0.74,False,False
+143,8,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.67; skill=0.55; ecology=0.78,False,False
+144,9,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.72; skill=0.60; ecology=0.76,False,False
+145,9,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.65; skill=0.61; ecology=0.84,False,False
+146,9,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.87; skill=0.51; ecology=0.74,False,False
+147,9,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.67; skill=0.55; ecology=0.78,False,False
+148,9,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.71; skill=0.60; ecology=0.76,False,False
+149,9,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.64; skill=0.62; ecology=0.86,False,False
+150,9,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.86; skill=0.51; ecology=0.75,False,False
+151,9,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.74; skill=0.56; ecology=0.78,False,False
+152,9,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.70; skill=0.61; ecology=0.78,False,False
+153,9,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.63; skill=0.62; ecology=0.86,False,False
+154,9,Ari,river_mill_bridge,manual household workaround,unchanged,stable,durability=0.85; skill=0.51; ecology=0.73,False,False
+155,9,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.73; skill=0.57; ecology=0.80,False,False
+156,9,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.69; skill=0.61; ecology=0.78,False,False
+157,9,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.62; skill=0.62; ecology=0.86,False,False
+158,9,Ari,river_mill_bridge,manual household workaround,unchanged,routine delayed by failure,durability=0.84; skill=0.52; ecology=0.70,False,False
+159,9,Fay,roof_greenhouse_cistern,manual household workaround,unchanged,stable,durability=0.72; skill=0.57; ecology=0.79,False,False
+160,9,Nia,archive_public_kiosk,manual household workaround,unchanged,stable,durability=0.69; skill=0.61; ecology=0.79,False,False
+161,9,Milo,dusk_signal_workshop,manual household workaround,unchanged,stable,durability=0.62; skill=0.62; ecology=0.87,False,False
+162,10,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure adopted,durability=0.92; skill=0.53; ecology=0.70,True,False
+163,10,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure adopted,durability=0.72; skill=0.57; ecology=0.79,True,False
+164,10,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure adopted,durability=0.68; skill=0.62; ecology=0.80,True,False
+165,10,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure adopted,durability=0.61; skill=0.63; ecology=0.87,True,False
+166,10,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.91; skill=0.53; ecology=0.70,False,False
+167,10,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.71; skill=0.58; ecology=0.81,False,False
+168,10,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.67; skill=0.62; ecology=0.81,False,False
+169,10,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.60; skill=0.64; ecology=0.89,False,False
+170,10,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.90; skill=0.54; ecology=0.70,False,False
+171,10,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.77; skill=0.59; ecology=0.83,False,False
+172,10,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.67; skill=0.63; ecology=0.81,False,False
+173,10,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.59; skill=0.64; ecology=0.90,False,False
+174,10,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.54; ecology=0.71,False,False
+175,10,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.77; skill=0.59; ecology=0.83,False,False
+176,10,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.66; skill=0.63; ecology=0.83,False,False
+177,10,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.58; skill=0.65; ecology=0.91,False,False
+178,10,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.54; ecology=0.71,False,False
+179,10,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.84; skill=0.59; ecology=0.83,False,False
+180,11,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.74; skill=0.64; ecology=0.83,False,False
+181,11,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.58; skill=0.65; ecology=0.90,False,False
+182,11,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.96; skill=0.55; ecology=0.72,False,False
+183,11,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.84; skill=0.59; ecology=0.83,False,False
+184,11,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.73; skill=0.64; ecology=0.83,False,False
+185,11,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.57; skill=0.66; ecology=0.91,False,False
+186,11,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.95; skill=0.56; ecology=0.73,False,False
+187,11,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.83; skill=0.60; ecology=0.84,False,False
+188,11,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.80; skill=0.65; ecology=0.85,False,False
+189,11,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.64; skill=0.66; ecology=0.92,False,False
+190,11,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.95; skill=0.56; ecology=0.73,False,False
+191,11,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.82; skill=0.60; ecology=0.85,False,False
+192,11,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.79; skill=0.65; ecology=0.87,False,False
+193,11,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.64; skill=0.66; ecology=0.92,False,False
+194,11,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.93; skill=0.57; ecology=0.73,False,False
+195,11,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.81; skill=0.61; ecology=0.86,False,False
+196,11,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.78; skill=0.65; ecology=0.87,False,False
+197,11,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.63; skill=0.66; ecology=0.92,False,False
+198,12,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.89; skill=0.61; ecology=0.86,False,False
+199,12,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.78; skill=0.65; ecology=0.88,False,False
+200,12,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.62; skill=0.67; ecology=0.92,False,False
+201,12,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.93; skill=0.57; ecology=0.75,False,False
+202,12,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.96; skill=0.61; ecology=0.86,False,False
+203,12,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.77; skill=0.66; ecology=0.89,False,False
+204,12,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.61; skill=0.67; ecology=0.92,False,False
+205,12,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.92; skill=0.57; ecology=0.74,False,False
+206,12,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.95; skill=0.62; ecology=0.88,False,False
+207,12,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.85; skill=0.66; ecology=0.90,False,False
+208,12,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.61; skill=0.68; ecology=0.92,False,False
+209,12,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.91; skill=0.58; ecology=0.76,False,False
+210,12,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.95; skill=0.62; ecology=0.88,False,False
+211,12,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.84; skill=0.67; ecology=0.90,False,False
+212,12,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,routine disrupted by failure,durability=0.59; skill=0.69; ecology=0.89,False,False
+213,12,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.90; skill=0.58; ecology=0.74,False,False
+214,12,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.94; skill=0.62; ecology=0.89,False,False
+215,12,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.92; skill=0.67; ecology=0.90,False,False
+216,13,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.68; skill=0.69; ecology=0.88,False,False
+217,13,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.89; skill=0.58; ecology=0.75,False,False
+218,13,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.93; skill=0.63; ecology=0.90,False,False
+219,13,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.92; skill=0.67; ecology=0.90,False,False
+220,13,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.67; skill=0.70; ecology=0.90,False,False
+221,13,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.88; skill=0.59; ecology=0.75,False,False
+222,13,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.91; skill=0.64; ecology=0.92,False,False
+223,13,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.91; skill=0.67; ecology=0.91,False,False
+224,13,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.66; skill=0.71; ecology=0.91,False,False
+225,13,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.87; skill=0.59; ecology=0.75,False,False
+226,13,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.91; skill=0.64; ecology=0.92,False,False
+227,13,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.90; skill=0.68; ecology=0.92,False,False
+228,13,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.66; skill=0.71; ecology=0.92,False,False
+229,13,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.87; skill=0.60; ecology=0.74,False,False
+230,13,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.89; skill=0.65; ecology=0.92,False,False
+231,13,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.89; skill=0.69; ecology=0.92,False,False
+232,13,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.65; skill=0.71; ecology=0.92,False,False
+233,13,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.86; skill=0.61; ecology=0.76,False,False
+234,14,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.97; skill=0.65; ecology=0.92,False,False
+235,14,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.88; skill=0.69; ecology=0.92,False,False
+236,14,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.64; skill=0.72; ecology=0.92,False,False
+237,14,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.85; skill=0.61; ecology=0.76,False,False
+238,14,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.96; skill=0.66; ecology=0.92,False,False
+239,14,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,routine disrupted by failure,durability=0.95; skill=0.70; ecology=0.89,False,False
+240,14,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.63; skill=0.72; ecology=0.91,False,False
+241,14,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.85; skill=0.61; ecology=0.76,False,False
+242,14,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.95; skill=0.67; ecology=0.92,False,False
+243,14,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.98; skill=0.70; ecology=0.89,False,False
+244,14,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.63; skill=0.72; ecology=0.91,False,False
+245,14,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.83; skill=0.62; ecology=0.78,False,False
+246,14,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.95; skill=0.67; ecology=0.92,False,False
+247,14,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.97; skill=0.71; ecology=0.89,False,False
+248,14,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.61; skill=0.73; ecology=0.92,False,False
+249,14,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.83; skill=0.62; ecology=0.78,False,False
+250,14,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.94; skill=0.67; ecology=0.92,False,False
+251,14,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.97; skill=0.71; ecology=0.90,False,False
+252,15,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.69; skill=0.73; ecology=0.92,False,False
+253,15,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.82; skill=0.62; ecology=0.78,False,False
+254,15,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.93; skill=0.68; ecology=0.92,False,False
+255,15,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.95; skill=0.72; ecology=0.91,False,False
+256,15,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.77; skill=0.74; ecology=0.92,False,False
+257,15,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.81; skill=0.63; ecology=0.80,False,False
+258,15,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.93; skill=0.68; ecology=0.92,False,False
+259,15,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.95; skill=0.72; ecology=0.92,False,False
+260,15,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.76; skill=0.74; ecology=0.92,False,False
+261,15,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.81; skill=0.63; ecology=0.80,False,False
+262,15,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.92; skill=0.68; ecology=0.92,False,False
+263,15,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.93; skill=0.73; ecology=0.92,False,False
+264,15,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.75; skill=0.75; ecology=0.92,False,False
+265,15,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.80; skill=0.64; ecology=0.79,False,False
+266,15,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.98; skill=0.69; ecology=0.92,False,False
+267,15,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.93; skill=0.73; ecology=0.92,False,False
+268,15,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.74; skill=0.76; ecology=0.92,False,False
+269,15,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.79; skill=0.64; ecology=0.79,False,False
+270,16,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.92; skill=0.73; ecology=0.92,False,True
+271,16,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.73; skill=0.76; ecology=0.92,False,True
+272,16,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.78; skill=0.65; ecology=0.79,False,True
+273,16,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.96; skill=0.70; ecology=0.92,False,True
+274,16,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.92; skill=0.73; ecology=0.92,False,True
+275,16,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.72; skill=0.77; ecology=0.92,False,True
+276,16,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.77; skill=0.65; ecology=0.80,False,True
+277,16,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.96; skill=0.70; ecology=0.92,False,True
+278,16,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.91; skill=0.74; ecology=0.92,False,True
+279,16,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.80; skill=0.78; ecology=0.92,False,True
+280,16,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.77; skill=0.65; ecology=0.80,False,True
+281,16,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,routine disrupted by failure,durability=0.94; skill=0.71; ecology=0.89,False,True
+282,16,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.89; skill=0.75; ecology=0.92,False,True
+283,16,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.79; skill=0.78; ecology=0.92,False,True
+284,16,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.76; skill=0.66; ecology=0.82,False,True
+285,16,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.94; skill=0.71; ecology=0.89,False,True
+286,16,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.89; skill=0.75; ecology=0.92,False,True
+287,16,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.88; skill=0.78; ecology=0.92,False,True
+288,17,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.75; skill=0.66; ecology=0.82,False,True
+289,17,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.93; skill=0.72; ecology=0.89,False,True
+290,17,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.87; skill=0.76; ecology=0.92,False,True
+291,17,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.87; skill=0.78; ecology=0.92,False,True
+292,17,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.75; skill=0.66; ecology=0.82,False,True
+293,17,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.92; skill=0.72; ecology=0.91,False,True
+294,17,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.87; skill=0.76; ecology=0.92,False,True
+295,17,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.87; skill=0.78; ecology=0.92,False,True
+296,17,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.74; skill=0.67; ecology=0.84,False,True
+297,17,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.98; skill=0.73; ecology=0.91,False,True
+298,17,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.86; skill=0.77; ecology=0.92,False,True
+299,17,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.85; skill=0.79; ecology=0.92,False,True
+300,17,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.73; skill=0.67; ecology=0.84,False,True
+301,17,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.97; skill=0.73; ecology=0.92,False,True
+302,17,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.85; skill=0.78; ecology=0.92,False,True
+303,17,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.94; skill=0.79; ecology=0.92,False,True
+304,17,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.73; skill=0.68; ecology=0.84,False,True
+305,17,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.98; skill=0.73; ecology=0.92,False,True
+306,18,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.83; skill=0.78; ecology=0.92,False,True
+307,18,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.98; skill=0.80; ecology=0.92,False,True
+308,18,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.72; skill=0.69; ecology=0.86,False,True
+309,18,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.97; skill=0.73; ecology=0.92,False,True
+310,18,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.83; skill=0.79; ecology=0.91,False,True
+311,18,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.97; skill=0.81; ecology=0.92,False,True
+312,18,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.71; skill=0.69; ecology=0.87,False,True
+313,18,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.97; skill=0.73; ecology=0.92,False,True
+314,18,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.81; skill=0.80; ecology=0.92,False,True
+315,18,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.98; skill=0.81; ecology=0.92,False,True
+316,18,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.70; skill=0.69; ecology=0.85,False,True
+317,18,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.96; skill=0.74; ecology=0.92,False,True
+318,18,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.81; skill=0.80; ecology=0.92,False,True
+319,18,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.97; skill=0.82; ecology=0.92,False,True
+320,18,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,routine disrupted by failure,durability=0.69; skill=0.70; ecology=0.82,False,True
+321,18,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.95; skill=0.75; ecology=0.92,False,True
+322,18,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.80; skill=0.80; ecology=0.92,False,True
+323,18,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.98; skill=0.82; ecology=0.91,False,True
+324,19,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.78; skill=0.70; ecology=0.81,False,True
+325,19,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.95; skill=0.75; ecology=0.92,False,True
+326,19,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.79; skill=0.81; ecology=0.92,False,True
+327,19,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.97; skill=0.82; ecology=0.91,False,True
+328,19,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.78; skill=0.70; ecology=0.81,False,True
+329,19,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.94; skill=0.76; ecology=0.92,False,True
+330,19,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.79; skill=0.81; ecology=0.92,False,True
+331,19,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.97; skill=0.82; ecology=0.92,False,True
+332,19,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.76; skill=0.71; ecology=0.81,False,True
+333,19,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.93; skill=0.76; ecology=0.92,False,True
+334,19,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.78; skill=0.81; ecology=0.91,False,True
+335,19,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.96; skill=0.83; ecology=0.92,False,True
+336,19,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.76; skill=0.71; ecology=0.81,False,True
+337,19,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.92; skill=0.76; ecology=0.92,False,True
+338,19,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.77; skill=0.82; ecology=0.92,False,True
+339,19,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.95; skill=0.83; ecology=0.92,False,True
+340,19,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.84; skill=0.72; ecology=0.81,False,True
+341,19,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.91; skill=0.76; ecology=0.92,False,True
+342,20,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.98; skill=0.84; ecology=0.92,False,True
+343,20,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.83; skill=0.72; ecology=0.82,False,True
+344,20,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.90; skill=0.77; ecology=0.92,False,True
+345,20,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.76; skill=0.82; ecology=0.92,False,True
+346,20,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.97; skill=0.84; ecology=0.92,False,True
+347,20,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.82; skill=0.73; ecology=0.83,False,True
+348,20,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.90; skill=0.77; ecology=0.92,False,True
+349,20,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.75; skill=0.83; ecology=0.92,False,True
+350,20,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.96; skill=0.85; ecology=0.92,False,True
+351,20,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.90; skill=0.73; ecology=0.84,False,True
+352,20,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.89; skill=0.78; ecology=0.92,False,True
+353,20,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.74; skill=0.83; ecology=0.92,False,True
+354,20,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.98; skill=0.85; ecology=0.92,False,True
+355,20,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.90; skill=0.73; ecology=0.84,False,True
+356,20,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.88; skill=0.78; ecology=0.92,False,True
+357,20,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.74; skill=0.84; ecology=0.92,False,True
+358,20,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.97; skill=0.85; ecology=0.92,False,True
+359,20,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.73; ecology=0.83,False,True
+360,21,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.88; skill=0.79; ecology=0.92,False,True
+361,21,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.73; skill=0.84; ecology=0.92,False,True
+362,21,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.96; skill=0.86; ecology=0.92,False,True
+363,21,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.73; ecology=0.85,False,True
+364,21,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.87; skill=0.79; ecology=0.92,False,True
+365,21,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.72; skill=0.85; ecology=0.92,False,True
+366,21,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.94; skill=0.87; ecology=0.92,False,True
+367,21,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.96; skill=0.74; ecology=0.83,False,True
+368,21,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.86; skill=0.80; ecology=0.92,False,True
+369,21,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.71; skill=0.85; ecology=0.91,False,True
+370,21,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.94; skill=0.87; ecology=0.92,False,True
+371,21,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.95; skill=0.75; ecology=0.85,False,True
+372,21,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.86; skill=0.80; ecology=0.92,False,True
+373,21,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.71; skill=0.85; ecology=0.91,False,True
+374,21,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,routine disrupted by failure,durability=0.93; skill=0.88; ecology=0.89,False,True
+375,21,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.94; skill=0.75; ecology=0.84,False,True
+376,21,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.85; skill=0.80; ecology=0.92,False,True
+377,21,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.70; skill=0.86; ecology=0.92,False,True
+378,22,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.98; skill=0.88; ecology=0.89,False,True
+379,22,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.94; skill=0.75; ecology=0.84,False,True
+380,22,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.83; skill=0.81; ecology=0.92,False,True
+381,22,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.69; skill=0.86; ecology=0.92,False,True
+382,22,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.97; skill=0.88; ecology=0.89,False,True
+383,22,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.92; skill=0.76; ecology=0.84,False,True
+384,22,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.82; skill=0.81; ecology=0.92,False,True
+385,22,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.69; skill=0.86; ecology=0.92,False,True
+386,22,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.96; skill=0.89; ecology=0.91,False,True
+387,22,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.98; skill=0.76; ecology=0.84,False,True
+388,22,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.82; skill=0.81; ecology=0.92,False,True
+389,22,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.68; skill=0.87; ecology=0.92,False,True
+390,22,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.96; skill=0.89; ecology=0.92,False,True
+391,22,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.98; skill=0.76; ecology=0.85,False,True
+392,22,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.80; skill=0.82; ecology=0.92,False,True
+393,22,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.67; skill=0.88; ecology=0.92,False,True
+394,22,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.95; skill=0.90; ecology=0.92,False,True
+395,22,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.98; skill=0.76; ecology=0.85,False,True
+396,23,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.80; skill=0.83; ecology=0.92,False,True
+397,23,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.66; skill=0.88; ecology=0.92,False,True
+398,23,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.94; skill=0.91; ecology=0.92,False,True
+399,23,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.77; ecology=0.85,False,True
+400,23,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.79; skill=0.83; ecology=0.92,False,True
+401,23,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,routine disrupted by failure,durability=0.65; skill=0.89; ecology=0.89,False,True
+402,23,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.94; skill=0.91; ecology=0.92,False,True
+403,23,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.96; skill=0.78; ecology=0.87,False,True
+404,23,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.78; skill=0.84; ecology=0.92,False,True
+405,23,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.75; skill=0.89; ecology=0.89,False,True
+406,23,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.93; skill=0.91; ecology=0.92,False,True
+407,23,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.95; skill=0.78; ecology=0.89,False,True
+408,23,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.77; skill=0.84; ecology=0.92,False,True
+409,23,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.74; skill=0.89; ecology=0.89,False,True
+410,23,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.92; skill=0.92; ecology=0.92,False,True
+411,23,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.95; skill=0.79; ecology=0.89,False,True
+412,23,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.76; skill=0.85; ecology=0.92,False,True
+413,23,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.83; skill=0.89; ecology=0.90,False,True
+414,24,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.98; skill=0.79; ecology=0.89,False,True
+415,24,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.75; skill=0.85; ecology=0.91,False,True
+416,24,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.81; skill=0.90; ecology=0.92,False,True
+417,24,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.90; skill=0.92; ecology=0.92,False,True
+418,24,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.79; ecology=0.88,False,True
+419,24,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.74; skill=0.86; ecology=0.92,False,True
+420,24,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.81; skill=0.90; ecology=0.92,False,True
+421,24,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.90; skill=0.92; ecology=0.92,False,True
+422,24,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.96; skill=0.80; ecology=0.90,False,True
+423,24,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.74; skill=0.86; ecology=0.92,False,True
+424,24,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.80; skill=0.91; ecology=0.92,False,True
+425,24,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.89; skill=0.92; ecology=0.92,False,True
+426,24,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.95; skill=0.80; ecology=0.90,False,True
+427,24,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.73; skill=0.86; ecology=0.92,False,True
+428,24,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.79; skill=0.91; ecology=0.92,False,True
+429,24,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.88; skill=0.92; ecology=0.92,False,True
+430,24,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.94; skill=0.81; ecology=0.92,False,True
+431,24,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.72; skill=0.86; ecology=0.92,False,True
+432,25,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.92,False,True
+433,25,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.88; skill=0.92; ecology=0.92,False,True
+434,25,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.92; skill=0.82; ecology=0.92,False,True
+435,25,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.71; skill=0.87; ecology=0.92,False,True
+436,25,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.92,False,True
+437,25,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.87; skill=0.92; ecology=0.92,False,True
+438,25,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.92; skill=0.82; ecology=0.92,False,True
+439,25,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.71; skill=0.87; ecology=0.91,False,True
+440,25,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.92,False,True
+441,25,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.95; skill=0.92; ecology=0.92,False,True
+442,25,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.98; skill=0.82; ecology=0.92,False,True
+443,25,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,routine disrupted by failure,durability=0.69; skill=0.88; ecology=0.88,False,True
+444,25,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.92,False,True
+445,25,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.95; skill=0.92; ecology=0.92,False,True
+446,25,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.83; ecology=0.92,False,True
+447,25,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.69; skill=0.88; ecology=0.88,False,True
+448,25,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.92,False,True
+449,25,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.94; skill=0.92; ecology=0.92,False,True
+450,26,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.98; skill=0.83; ecology=0.91,False,True
+451,26,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.68; skill=0.88; ecology=0.88,False,True
+452,26,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+453,26,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.94; skill=0.92; ecology=0.92,False,True
+454,26,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.84; ecology=0.92,False,True
+455,26,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.66; skill=0.89; ecology=0.90,False,True
+456,26,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+457,26,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.93; skill=0.92; ecology=0.92,False,True
+458,26,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.96; skill=0.85; ecology=0.92,False,True
+459,26,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.76; skill=0.89; ecology=0.91,False,True
+460,26,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.73; skill=0.92; ecology=0.92,False,True
+461,26,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.92; skill=0.92; ecology=0.92,False,True
+462,26,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.95; skill=0.85; ecology=0.92,False,True
+463,26,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.75; skill=0.90; ecology=0.91,False,True
+464,26,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.92,False,True
+465,26,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.91; skill=0.92; ecology=0.92,False,True
+466,26,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.95; skill=0.86; ecology=0.92,False,True
+467,26,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.84; skill=0.90; ecology=0.91,False,True
+468,27,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+469,27,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.91; skill=0.92; ecology=0.92,False,True
+470,27,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.94; skill=0.87; ecology=0.92,False,True
+471,27,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.83; skill=0.91; ecology=0.92,False,True
+472,27,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.92,False,True
+473,27,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.89; skill=0.92; ecology=0.92,False,True
+474,27,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.93; skill=0.87; ecology=0.91,False,True
+475,27,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.83; skill=0.91; ecology=0.92,False,True
+476,27,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.92,False,True
+477,27,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.89; skill=0.92; ecology=0.92,False,True
+478,27,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.92; skill=0.87; ecology=0.90,False,True
+479,27,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.82; skill=0.92; ecology=0.92,False,True
+480,27,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.92,False,True
+481,27,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.88; skill=0.92; ecology=0.92,False,True
+482,27,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,routine disrupted by failure,durability=0.91; skill=0.88; ecology=0.86,False,True
+483,27,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.81; skill=0.92; ecology=0.92,False,True
+484,27,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+485,27,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.88; skill=0.92; ecology=0.92,False,True
+486,28,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.80; skill=0.92; ecology=0.92,False,True
+487,28,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+488,28,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.86; skill=0.92; ecology=0.92,False,True
+489,28,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.90; skill=0.88; ecology=0.87,False,True
+490,28,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.80; skill=0.92; ecology=0.92,False,True
+491,28,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+492,28,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.86; skill=0.92; ecology=0.92,False,True
+493,28,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.98; skill=0.88; ecology=0.87,False,True
+494,28,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.92,False,True
+495,28,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+496,28,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.85; skill=0.92; ecology=0.92,False,True
+497,28,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.89; ecology=0.89,False,True
+498,28,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.92,False,True
+499,28,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.65; skill=0.92; ecology=0.92,False,True
+500,28,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.84; skill=0.92; ecology=0.92,False,True
+501,28,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.96; skill=0.89; ecology=0.89,False,True
+502,28,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.92,False,True
+503,28,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+504,29,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.84; skill=0.92; ecology=0.92,False,True
+505,29,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.95; skill=0.90; ecology=0.91,False,True
+506,29,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.92,False,True
+507,29,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+508,29,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.83; skill=0.92; ecology=0.92,False,True
+509,29,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.94; skill=0.91; ecology=0.92,False,True
+510,29,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.75; skill=0.92; ecology=0.92,False,True
+511,29,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.63; skill=0.92; ecology=0.92,False,True
+512,29,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.82; skill=0.92; ecology=0.92,False,True
+513,29,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.98; skill=0.91; ecology=0.92,False,True
+514,29,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+515,29,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.62; skill=0.92; ecology=0.92,False,True
+516,29,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.81; skill=0.92; ecology=0.92,False,True
+517,29,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.92; ecology=0.92,False,True
+518,29,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.73; skill=0.92; ecology=0.92,False,True
+519,29,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.61; skill=0.92; ecology=0.92,False,True
+520,29,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.80; skill=0.92; ecology=0.92,False,True
+521,29,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.92; ecology=0.91,False,True
+522,30,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.73; skill=0.92; ecology=0.92,False,True
+523,30,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.61; skill=0.92; ecology=0.92,False,True
+524,30,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.92,False,True
+525,30,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.96; skill=0.92; ecology=0.92,False,True
+526,30,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.92,False,True
+527,30,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.60; skill=0.92; ecology=0.92,False,True
+528,30,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.92,False,True
+529,30,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.95; skill=0.92; ecology=0.91,False,True
+530,30,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+531,30,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+532,30,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.92,False,True
+533,30,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.94; skill=0.92; ecology=0.91,False,True
+534,30,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+535,30,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+536,30,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,routine disrupted by failure,durability=0.77; skill=0.92; ecology=0.89,False,True
+537,30,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.93; skill=0.92; ecology=0.90,False,True
+538,30,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.92,False,True
+539,30,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+540,31,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.87; skill=0.92; ecology=0.89,False,True
+541,31,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.92; skill=0.92; ecology=0.90,False,True
+542,31,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.92,False,True
+543,31,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+544,31,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.86; skill=0.92; ecology=0.88,False,True
+545,31,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.91; skill=0.92; ecology=0.90,False,True
+546,31,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+547,31,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+548,31,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.85; skill=0.92; ecology=0.90,False,True
+549,31,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.90; skill=0.92; ecology=0.92,False,True
+550,31,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+551,31,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.65; skill=0.92; ecology=0.92,False,True
+552,31,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.85; skill=0.92; ecology=0.90,False,True
+553,31,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.89; skill=0.92; ecology=0.92,False,True
+554,31,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+555,31,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+556,31,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.83; skill=0.92; ecology=0.92,False,True
+557,31,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.88; skill=0.92; ecology=0.91,False,True
+558,32,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.63; skill=0.92; ecology=0.92,False,True
+559,32,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.83; skill=0.92; ecology=0.92,False,True
+560,32,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.87; skill=0.92; ecology=0.92,False,True
+561,32,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.65; skill=0.92; ecology=0.92,False,True
+562,32,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.62; skill=0.92; ecology=0.92,False,True
+563,32,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.81; skill=0.92; ecology=0.92,False,True
+564,32,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.87; skill=0.92; ecology=0.92,False,True
+565,32,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+566,32,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,routine disrupted by failure,durability=0.61; skill=0.92; ecology=0.89,False,True
+567,32,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.81; skill=0.92; ecology=0.92,False,True
+568,32,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.86; skill=0.92; ecology=0.91,False,True
+569,32,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.63; skill=0.92; ecology=0.92,False,True
+570,32,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.61; skill=0.92; ecology=0.91,False,True
+571,32,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.80; skill=0.92; ecology=0.92,False,True
+572,32,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.85; skill=0.92; ecology=0.91,False,True
+573,32,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.63; skill=0.92; ecology=0.92,False,True
+574,32,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.60; skill=0.92; ecology=0.92,False,True
+575,32,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.80; skill=0.92; ecology=0.92,False,True
+576,33,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.84; skill=0.92; ecology=0.91,False,True
+577,33,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.62; skill=0.92; ecology=0.92,False,True
+578,33,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.58; skill=0.92; ecology=0.92,False,True
+579,33,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.92,False,True
+580,33,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.83; skill=0.92; ecology=0.90,False,True
+581,33,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.61; skill=0.92; ecology=0.92,False,True
+582,33,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.58; skill=0.92; ecology=0.92,False,True
+583,33,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.92,False,True
+584,33,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.82; skill=0.92; ecology=0.92,False,True
+585,33,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.92,False,True
+586,33,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.57; skill=0.92; ecology=0.92,False,True
+587,33,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.92,False,True
+588,33,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.81; skill=0.92; ecology=0.92,False,True
+589,33,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.92,False,True
+590,33,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.56; skill=0.92; ecology=0.92,False,True
+591,33,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.92,False,True
+592,33,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.80; skill=0.92; ecology=0.91,False,True
+593,33,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+594,34,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+595,34,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.92,False,True
+596,34,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.91,False,True
+597,34,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+598,34,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.65; skill=0.92; ecology=0.92,False,True
+599,34,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.75; skill=0.92; ecology=0.92,False,True
+600,34,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.92,False,True
+601,34,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+602,34,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+603,34,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.91,False,True
+604,34,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.92,False,True
+605,34,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,routine disrupted by failure,durability=0.65; skill=0.92; ecology=0.89,False,True
+606,34,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.63; skill=0.92; ecology=0.92,False,True
+607,34,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.73; skill=0.92; ecology=0.92,False,True
+608,34,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.92,False,True
+609,34,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.91,False,True
+610,34,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.63; skill=0.92; ecology=0.92,False,True
+611,34,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.73; skill=0.92; ecology=0.92,False,True
+612,35,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.92,False,True
+613,35,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.63; skill=0.92; ecology=0.91,False,True
+614,35,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.61; skill=0.92; ecology=0.92,False,True
+615,35,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.92,False,True
+616,35,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.75; skill=0.92; ecology=0.92,False,True
+617,35,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.62; skill=0.92; ecology=0.92,False,True
+618,35,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.61; skill=0.92; ecology=0.92,False,True
+619,35,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.92,False,True
+620,35,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+621,35,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.92,False,True
+622,35,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.92,False,True
+623,35,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.92,False,True
+624,35,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+625,35,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.92,False,True
+626,35,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+627,35,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.91,False,True
+628,35,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.73; skill=0.92; ecology=0.92,False,True
+629,35,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.81; skill=0.92; ecology=0.92,False,True
+630,36,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.91,False,True
+631,36,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.91,False,True
+632,36,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.80; skill=0.92; ecology=0.92,False,True
+633,36,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+634,36,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+635,36,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,routine disrupted by failure,durability=0.71; skill=0.92; ecology=0.87,False,True
+636,36,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.92,False,True
+637,36,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+638,36,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+639,36,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.81; skill=0.92; ecology=0.86,False,True
+640,36,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.92,False,True
+641,36,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+642,36,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+643,36,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.80; skill=0.92; ecology=0.86,False,True
+644,36,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.92,False,True
+645,36,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.65; skill=0.92; ecology=0.92,False,True
+646,36,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.65; skill=0.92; ecology=0.92,False,True
+647,36,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.80; skill=0.92; ecology=0.87,False,True
+648,37,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.92,False,True
+649,37,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+650,37,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+651,37,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.88,False,True
+652,37,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.92,False,True
+653,37,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.63; skill=0.92; ecology=0.92,False,True
+654,37,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+655,37,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.89,False,True
+656,37,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+657,37,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+658,37,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.63; skill=0.92; ecology=0.92,False,True
+659,37,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.91,False,True
+660,37,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.73; skill=0.92; ecology=0.92,False,True
+661,37,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+662,37,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.61; skill=0.92; ecology=0.92,False,True
+663,37,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.91,False,True
+664,37,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.73; skill=0.92; ecology=0.92,False,True
+665,37,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.92,False,True
+666,38,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.92,False,True
+667,38,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.91,False,True
+668,38,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+669,38,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.92,False,True
+670,38,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.92,False,True
+671,38,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.75; skill=0.92; ecology=0.92,False,True
+672,38,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+673,38,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.87; skill=0.92; ecology=0.92,False,True
+674,38,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+675,38,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.75; skill=0.92; ecology=0.92,False,True
+676,38,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.92,False,True
+677,38,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.86; skill=0.92; ecology=0.92,False,True
+678,38,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+679,38,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+680,38,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.92,False,True
+681,38,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.85; skill=0.92; ecology=0.92,False,True
+682,38,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+683,38,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.73; skill=0.92; ecology=0.91,False,True
+684,39,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+685,39,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.85; skill=0.92; ecology=0.92,False,True
+686,39,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+687,39,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.73; skill=0.92; ecology=0.92,False,True
+688,39,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+689,39,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.84; skill=0.92; ecology=0.92,False,True
+690,39,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+691,39,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.91,False,True
+692,39,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+693,39,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.92; skill=0.92; ecology=0.92,False,True
+694,39,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+695,39,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+696,39,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+697,39,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.91; skill=0.92; ecology=0.91,False,True
+698,39,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,routine disrupted by failure,durability=0.72; skill=0.92; ecology=0.89,False,True
+699,39,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.91,False,True
+700,39,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.65; skill=0.92; ecology=0.92,False,True
+701,39,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.98; skill=0.92; ecology=0.91,False,True
+702,40,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.92,False,True
+703,40,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+704,40,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.97; skill=0.92; ecology=0.92,False,True
+705,40,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.89,False,True
+706,40,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+707,40,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.63; skill=0.92; ecology=0.92,False,True
+708,40,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.96; skill=0.92; ecology=0.92,False,True
+709,40,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.91,False,True
+710,40,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+711,40,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.62; skill=0.92; ecology=0.92,False,True
+712,40,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.95; skill=0.92; ecology=0.92,False,True
+713,40,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.92,False,True
+714,40,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+715,40,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.61; skill=0.92; ecology=0.92,False,True
+716,40,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.94; skill=0.92; ecology=0.92,False,True
+717,40,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.92,False,True
+718,40,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+719,40,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.92,False,True
+720,41,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.98; skill=0.92; ecology=0.92,False,True
+721,41,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+722,41,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.65; skill=0.92; ecology=0.92,False,True
+723,41,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.92,False,True
+724,41,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.98; skill=0.92; ecology=0.92,False,True
+725,41,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+726,41,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+727,41,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.92,False,True
+728,41,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,routine disrupted by failure,durability=0.97; skill=0.92; ecology=0.89,False,True
+729,41,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.92,False,True
+730,41,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+731,41,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+732,41,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.96; skill=0.92; ecology=0.90,False,True
+733,41,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.92,False,True
+734,41,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.62; skill=0.92; ecology=0.92,False,True
+735,41,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+736,41,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.95; skill=0.92; ecology=0.90,False,True
+737,41,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.85; skill=0.92; ecology=0.92,False,True
+738,42,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+739,42,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+740,42,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.94; skill=0.92; ecology=0.92,False,True
+741,42,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.84; skill=0.92; ecology=0.92,False,True
+742,42,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.91,False,True
+743,42,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+744,42,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.93; skill=0.92; ecology=0.92,False,True
+745,42,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.83; skill=0.92; ecology=0.92,False,True
+746,42,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.92,False,True
+747,42,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+748,42,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.93; skill=0.92; ecology=0.92,False,True
+749,42,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.82; skill=0.92; ecology=0.92,False,True
+750,42,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+751,42,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+752,42,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.91; skill=0.92; ecology=0.92,False,True
+753,42,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.81; skill=0.92; ecology=0.92,False,True
+754,42,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+755,42,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.92,False,True
+756,43,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.98; skill=0.92; ecology=0.92,False,True
+757,43,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.80; skill=0.92; ecology=0.92,False,True
+758,43,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+759,43,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.92,False,True
+760,43,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.97; skill=0.92; ecology=0.92,False,True
+761,43,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.92,False,True
+762,43,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.66; skill=0.92; ecology=0.92,False,True
+763,43,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+764,43,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.96; skill=0.92; ecology=0.92,False,True
+765,43,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.92,False,True
+766,43,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.65; skill=0.92; ecology=0.92,False,True
+767,43,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,routine disrupted by failure,durability=0.70; skill=0.92; ecology=0.89,False,True
+768,43,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.95; skill=0.92; ecology=0.92,False,True
+769,43,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.92,False,True
+770,43,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+771,43,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.89,False,True
+772,43,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.95; skill=0.92; ecology=0.92,False,True
+773,43,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.92,False,True
+774,44,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.89,False,True
+775,44,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.98; skill=0.92; ecology=0.92,False,True
+776,44,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.92,False,True
+777,44,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.64; skill=0.92; ecology=0.92,False,True
+778,44,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.88,False,True
+779,44,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.97; skill=0.92; ecology=0.92,False,True
+780,44,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.92,False,True
+781,44,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.63; skill=0.92; ecology=0.92,False,True
+782,44,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.90,False,True
+783,44,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.98; skill=0.92; ecology=0.92,False,True
+784,44,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.75; skill=0.92; ecology=0.92,False,True
+785,44,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.62; skill=0.92; ecology=0.92,False,True
+786,44,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.91,False,True
+787,44,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.97; skill=0.92; ecology=0.92,False,True
+788,44,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+789,44,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.61; skill=0.92; ecology=0.92,False,True
+790,44,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.91,False,True
+791,44,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.97; skill=0.92; ecology=0.91,False,True
+792,45,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.73; skill=0.92; ecology=0.92,False,True
+793,45,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.60; skill=0.92; ecology=0.91,False,True
+794,45,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.75; skill=0.92; ecology=0.92,False,True
+795,45,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.96; skill=0.92; ecology=0.92,False,True
+796,45,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.92,False,True
+797,45,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,routine disrupted by failure,durability=0.59; skill=0.92; ecology=0.87,False,True
+798,45,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.75; skill=0.92; ecology=0.92,False,True
+799,45,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.95; skill=0.92; ecology=0.92,False,True
+800,45,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+801,45,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.86,False,True
+802,45,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.83; skill=0.92; ecology=0.92,False,True
+803,45,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.94; skill=0.92; ecology=0.92,False,True
+804,45,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.92,False,True
+805,45,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.86,False,True
+806,45,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.82; skill=0.92; ecology=0.92,False,True
+807,45,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.93; skill=0.92; ecology=0.92,False,True
+808,45,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.70; skill=0.92; ecology=0.92,False,True
+809,45,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.87,False,True
+810,46,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.90; skill=0.92; ecology=0.92,False,True
+811,46,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.93; skill=0.92; ecology=0.92,False,True
+812,46,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.69; skill=0.92; ecology=0.92,False,True
+813,46,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.77; skill=0.92; ecology=0.86,False,True
+814,46,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.90; skill=0.92; ecology=0.92,False,True
+815,46,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.92; skill=0.92; ecology=0.92,False,True
+816,46,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+817,46,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.76; skill=0.92; ecology=0.86,False,True
+818,46,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.88; skill=0.92; ecology=0.92,False,True
+819,46,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.91; skill=0.92; ecology=0.92,False,True
+820,46,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.68; skill=0.92; ecology=0.92,False,True
+821,46,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.75; skill=0.92; ecology=0.88,False,True
+822,46,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.88; skill=0.92; ecology=0.92,False,True
+823,46,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.90; skill=0.92; ecology=0.92,False,True
+824,46,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.67; skill=0.92; ecology=0.92,False,True
+825,46,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.84; skill=0.92; ecology=0.88,False,True
+826,46,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.87; skill=0.92; ecology=0.91,False,True
+827,46,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.90; skill=0.92; ecology=0.92,False,True
+828,47,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.75; skill=0.92; ecology=0.92,False,True
+829,47,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.93; skill=0.92; ecology=0.88,False,True
+830,47,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.86; skill=0.92; ecology=0.92,False,True
+831,47,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.89; skill=0.92; ecology=0.92,False,True
+832,47,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.74; skill=0.92; ecology=0.92,False,True
+833,47,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.91; skill=0.92; ecology=0.90,False,True
+834,47,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.85; skill=0.92; ecology=0.92,False,True
+835,47,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.88; skill=0.92; ecology=0.92,False,True
+836,47,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.73; skill=0.92; ecology=0.92,False,True
+837,47,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.98; skill=0.92; ecology=0.89,False,True
+838,47,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.85; skill=0.92; ecology=0.92,False,True
+839,47,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.87; skill=0.92; ecology=0.92,False,True
+840,47,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.72; skill=0.92; ecology=0.92,False,True
+841,47,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.92; ecology=0.91,False,True
+842,47,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.84; skill=0.92; ecology=0.92,False,True
+843,47,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.87; skill=0.92; ecology=0.92,False,True
+844,47,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+845,47,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.98; skill=0.92; ecology=0.90,False,True
+846,48,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.85; skill=0.92; ecology=0.92,False,True
+847,48,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.71; skill=0.92; ecology=0.92,False,True
+848,48,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.97; skill=0.92; ecology=0.90,False,True
+849,48,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.83; skill=0.92; ecology=0.92,False,True
+850,48,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.85; skill=0.92; ecology=0.92,False,True
+851,48,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,routine disrupted by failure,durability=0.70; skill=0.92; ecology=0.89,False,True
+852,48,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.96; skill=0.92; ecology=0.89,False,True
+853,48,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.92; skill=0.92; ecology=0.92,False,True
+854,48,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.84; skill=0.92; ecology=0.92,False,True
+855,48,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.91,False,True
+856,48,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.95; skill=0.92; ecology=0.89,False,True
+857,48,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.91; skill=0.92; ecology=0.92,False,True
+858,48,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.83; skill=0.92; ecology=0.92,False,True
+859,48,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.79; skill=0.92; ecology=0.91,False,True
+860,48,Ari,river_mill_bridge,manual household workaround,planks->repairs->market access,infrastructure routine carried,durability=0.94; skill=0.92; ecology=0.91,False,True
+861,48,Fay,roof_greenhouse_cistern,manual household workaround,water->herbs->comfort meals,infrastructure routine carried,durability=0.90; skill=0.92; ecology=0.92,False,True
+862,48,Nia,archive_public_kiosk,manual household workaround,paper->public records->fewer private interruptions,infrastructure routine carried,durability=0.82; skill=0.92; ecology=0.92,False,True
+863,48,Milo,dusk_signal_workshop,manual household workaround,oil+wire->signals->safer dusk travel,infrastructure routine carried,durability=0.78; skill=0.92; ecology=0.91,False,True

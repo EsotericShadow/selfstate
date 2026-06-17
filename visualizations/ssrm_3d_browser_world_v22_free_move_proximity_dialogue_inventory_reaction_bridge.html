@@ -1,0 +1,1573 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 262 - Free-Move Dialogue Inventory Reaction</title>
+<style>
+:root { --bg:#0d1210; --moss:#516b45; --reed:#cbb26c; --paper:#f2e2bd; --ink:#20170d; --ember:#d97935; --rain:#6c99ad; --line:#947642; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:radial-gradient(circle at 15% 10%, rgba(110,153,118,.40), transparent 31%), radial-gradient(circle at 84% 22%, rgba(217,121,53,.22), transparent 30%), linear-gradient(135deg,#0d1210,#33200f 76%); font-family: Georgia, 'Times New Roman', serif; }
+main { width:min(1220px, calc(100vw - 28px)); margin:0 auto; padding:28px 0 46px; }
+.hero { color:#f8ecd6; border:1px solid rgba(242,226,189,.34); border-radius:30px; padding:28px; background:linear-gradient(140deg, rgba(81,107,69,.72), rgba(108,153,173,.20)); box-shadow:0 30px 110px rgba(0,0,0,.38); }
+.hero h1 { margin:0 0 10px; font-size:clamp(2rem,5vw,4.5rem); line-height:.94; letter-spacing:-.045em; }
+.hero p { max-width:920px; color:#eddfc2; line-height:1.55; font-size:1.05rem; }
+.grid { display:grid; grid-template-columns:1.08fr .92fr; gap:18px; margin-top:18px; }
+.card { background:var(--paper); border:1px solid #c9b274; border-radius:24px; padding:18px; box-shadow:0 20px 55px rgba(0,0,0,.26); }
+h2 { margin:0 0 12px; font-size:1.02rem; text-transform:uppercase; letter-spacing:.09em; color:#5b4b2b; }
+button { border:0; border-radius:999px; padding:10px 14px; background:var(--ember); color:#1c1006; font-weight:700; cursor:pointer; margin:4px 5px 4px 0; }
+button.alt { background:#9fc0a6; }
+button.rain { background:#91bac9; }
+.scene { width:100%; aspect-ratio:4/3; border-radius:22px; background:linear-gradient(180deg,#d7c69d,#a78c5b); border:1px solid #9a7740; position:relative; overflow:hidden; margin:12px 0; outline:0; }
+.scene:before { content:""; position:absolute; inset:10%; border:1px dashed rgba(70,52,26,.35); border-radius:50%; transform:rotate(-10deg); }
+.entity { position:absolute; width:28px; height:39px; border-radius:18px 18px 11px 11px; transform:translate(-50%,-50%); box-shadow:0 10px 18px rgba(0,0,0,.25); transition:left .15s linear, top .15s linear; }
+.avatar { background:#20221a; border:3px solid #f8ecd6; z-index:4; }
+.agent { border:2px solid #1f3329; z-index:3; }
+.object { position:absolute; width:18px; height:18px; border-radius:50%; transform:translate(-50%,-50%); border:2px solid rgba(32,23,13,.45); box-shadow:0 8px 12px rgba(0,0,0,.25); z-index:2; }
+.prompt { border-left:5px solid var(--ember); background:#fff8e8; padding:11px 12px; border-radius:14px; margin-bottom:10px; }
+.kpis { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.kpis div { background:#fff8e8; border:1px solid #d7bf84; border-radius:16px; padding:12px; }
+.kpis strong { display:block; font-size:1.45rem; color:#5b4b2b; }
+.panels { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.panel { background:#fff8e8; border:1px solid #d7bf84; border-radius:16px; padding:12px; min-height:140px; }
+#log { max-height:305px; overflow:auto; }
+pre { white-space:pre-wrap; overflow:auto; background:#131711; color:#f4e3c4; padding:14px; border-radius:16px; max-height:320px; }
+.footer { color:#eadfc8; margin-top:18px; }
+@media (max-width:880px) { .grid,.panels { grid-template-columns:1fr; } .kpis { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Browser World v22: free-move dialogue, inventory, reaction memory</h1>
+    <p>The avatar now moves by small continuous vectors. Nearby agents surface boundary-aware prompts, ceremony objects persist in a multi-object inventory, and reaction state survives reload through localStorage snapshots.</p>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <h2>Playable scaffold controls</h2>
+      <button onclick="move(0,-.28)">Up</button><button onclick="move(-.28,0)">Left</button><button onclick="move(.28,0)">Right</button><button onclick="move(0,.28)">Down</button>
+      <button class="alt" onclick="talkNearby()">Talk nearby</button><button class="alt" onclick="takeObject()">Take object</button><button class="alt" onclick="offerObject()">Offer/use</button>
+      <button class="rain" onclick="saveState()">Save</button><button class="rain" onclick="restoreState()">Restore</button><button onclick="exportReplay()">Export replay</button>
+      <div class="scene" id="scene" tabindex="0"></div>
+      <div class="panels"><div class="panel"><h2>Inventory</h2><div id="inventory"></div></div><div class="panel"><h2>Agent reaction</h2><div id="reaction"></div></div></div>
+    </div>
+    <div class="card">
+      <h2>Run metrics</h2>
+      <div class="kpis">
+        <div><span>Readiness</span><strong id="readiness"></strong></div>
+        <div><span>Weakest</span><strong id="weakest"></strong></div>
+        <div><span>Frames</span><strong id="frames"></strong></div>
+      </div>
+      <h2 style="margin-top:18px">Proximity prompt log</h2>
+      <div id="log"></div>
+      <h2 style="margin-top:18px">Local state</h2>
+      <pre id="state"></pre>
+    </div>
+  </section>
+  <p class="footer">Boundary: deterministic browser-local scaffold only. No LLM, subjective consciousness, real consent, moral patienthood, autonomous natural language, complete 3D engine, or metaphysical frequency claim is made.</p>
+</main>
+<script id="initial-state" type="application/json">{
+  "agents": [
+    {
+      "agent_id": "sova",
+      "boundary": "warm rest space",
+      "color": "#c87a31",
+      "favored_object": "ember bowl",
+      "name": "Sova",
+      "radius": 0.42,
+      "temperament": "warm-cautious",
+      "x": 4.5,
+      "y": 3.0
+    },
+    {
+      "agent_id": "keth",
+      "boundary": "warning path",
+      "color": "#5f8fbd",
+      "favored_object": "path cord",
+      "name": "Keth",
+      "radius": 0.37,
+      "temperament": "watchful-direct",
+      "x": 7.4,
+      "y": 3.35
+    },
+    {
+      "agent_id": "melo",
+      "boundary": "fair turn",
+      "color": "#d1a841",
+      "favored_object": "tally beads",
+      "name": "Melo",
+      "radius": 0.38,
+      "temperament": "playful-ledger",
+      "x": 6.65,
+      "y": 5.2
+    },
+    {
+      "agent_id": "nari",
+      "boundary": "sealed note",
+      "color": "#7b6cb0",
+      "favored_object": "ink ledger",
+      "name": "Nari",
+      "radius": 0.35,
+      "temperament": "quiet-proud",
+      "x": 4.9,
+      "y": 5.4
+    },
+    {
+      "agent_id": "ori",
+      "boundary": "repair warning",
+      "color": "#6c9b4e",
+      "favored_object": "sap hook",
+      "name": "Ori",
+      "radius": 0.4,
+      "temperament": "stubborn-builder",
+      "x": 8.25,
+      "y": 5.85
+    },
+    {
+      "agent_id": "vonn",
+      "boundary": "quiet distance",
+      "color": "#5ba6a6",
+      "favored_object": "listening shell",
+      "name": "Vonn",
+      "radius": 0.37,
+      "temperament": "soft-guarded",
+      "x": 3.85,
+      "y": 4.25
+    }
+  ],
+  "claim_boundary": "Deterministic browser-local free-move, dialogue, inventory, and reaction-state scaffold only; no subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "agent_reaction_state_frames": 384,
+    "agents": 6,
+    "browser_world_v22_ticks": 384,
+    "ceremony_inventory_transaction_frames": 384,
+    "dialogue_reaction_replay_frames": 384,
+    "free_move_path_frames": 384,
+    "local_storage_inventory_snapshot_frames": 384,
+    "multi_object_inventory_frames": 384,
+    "multi_sensory_free_move_frames": 384,
+    "objects": 9,
+    "proximity_dialogue_prompt_frames": 384,
+    "reload_stable_reaction_frames": 384
+  },
+  "local_storage_key": "ssrm_browser_world_v22_free_move_inventory_reaction",
+  "metrics": {
+    "active_inventory_transaction_count": 351.0,
+    "avatar_free_move_state_mutation": 0.963542,
+    "browser_world_v22_free_move_inventory_reaction_readiness": 0.89945,
+    "browser_world_v22_surface_available": 1.0,
+    "ceremony_inventory_transaction_integrity": 0.843305,
+    "collision_aware_free_move": 1.0,
+    "comfort_pain_free_move_bounds": 1.0,
+    "free_move_input_surface": 1.0,
+    "frequency_flower_free_move_rhythm": 1.0,
+    "held_object_owner_boundary": 0.817708,
+    "local_storage_inventory_snapshot_integrity": 0.937934,
+    "mean_free_move_channel_score": 0.958643,
+    "multi_object_inventory_persistence": 0.924312,
+    "multi_sensory_free_move_binding": 0.971354,
+    "privacy_safe_reaction_state": 1.0,
+    "prompt_context_accuracy": 0.953607,
+    "proximity_dialogue_trigger_rate": 0.936937,
+    "proximity_prompt_eligible_count": 333.0,
+    "reaction_state_behavior_binding": 1.0,
+    "reload_probe_count": 132.0,
+    "reload_stable_agent_reaction_state": 0.980469,
+    "replay_free_move_integrity": 0.960399,
+    "save_restore_inventory_integrity": 0.901515,
+    "source_live_scene_mutation_continuity": 1.0,
+    "visible_dialogue_inventory_surface": 0.981771,
+    "weakest_channel_score": 0.817708
+  },
+  "objects": [
+    {
+      "ceremony_use": "warmth witness",
+      "color": "#d57935",
+      "name": "ember bowl",
+      "object_id": "ember_bowl",
+      "owner_agent": "sova",
+      "portable": 1,
+      "x": 4.15,
+      "y": 2.72
+    },
+    {
+      "ceremony_use": "route promise",
+      "color": "#6d9fd1",
+      "name": "path cord",
+      "object_id": "path_cord",
+      "owner_agent": "keth",
+      "portable": 1,
+      "x": 7.72,
+      "y": 3.18
+    },
+    {
+      "ceremony_use": "fair-turn count",
+      "color": "#d8b749",
+      "name": "tally beads",
+      "object_id": "tally_beads",
+      "owner_agent": "melo",
+      "portable": 1,
+      "x": 6.38,
+      "y": 5.48
+    },
+    {
+      "ceremony_use": "public note",
+      "color": "#806bb8",
+      "name": "ink ledger",
+      "object_id": "ink_ledger",
+      "owner_agent": "nari",
+      "portable": 0,
+      "x": 4.62,
+      "y": 5.72
+    },
+    {
+      "ceremony_use": "repair hold",
+      "color": "#75a456",
+      "name": "sap hook",
+      "object_id": "sap_hook",
+      "owner_agent": "ori",
+      "portable": 1,
+      "x": 8.52,
+      "y": 6.08
+    },
+    {
+      "ceremony_use": "quiet witness",
+      "color": "#62b2b0",
+      "name": "listening shell",
+      "object_id": "listening_shell",
+      "owner_agent": "vonn",
+      "portable": 1,
+      "x": 3.55,
+      "y": 4.55
+    },
+    {
+      "ceremony_use": "wet-route warning",
+      "color": "#78a6bd",
+      "name": "rain mirror",
+      "object_id": "rain_mirror",
+      "owner_agent": "vonn",
+      "portable": 0,
+      "x": 5.75,
+      "y": 3.82
+    },
+    {
+      "ceremony_use": "gate memory",
+      "color": "#3f7d54",
+      "name": "fern key",
+      "object_id": "fern_key",
+      "owner_agent": "nari",
+      "portable": 1,
+      "x": 5.35,
+      "y": 4.88
+    },
+    {
+      "ceremony_use": "night pulse",
+      "color": "#d9c76a",
+      "name": "moth lantern",
+      "object_id": "moth_lantern",
+      "owner_agent": "sova",
+      "portable": 1,
+      "x": 6.95,
+      "y": 4.08
+    }
+  ],
+  "report": 262,
+  "sample_free_moves": [
+    {
+      "avatar_x_after": 6.232151,
+      "avatar_x_before": 6.05,
+      "avatar_y_after": 4.160095,
+      "avatar_y_before": 4.05,
+      "collision_blocked": 0,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "slow-step",
+      "movement_applied": 1,
+      "movement_effort": 0.462691,
+      "raw_dx": 0.182151,
+      "raw_dy": 0.110095,
+      "scene_id": "v22-scene-d01",
+      "tick": 0
+    },
+    {
+      "avatar_x_after": 6.371006,
+      "avatar_x_before": 6.232151,
+      "avatar_y_after": 4.344048,
+      "avatar_y_before": 4.160095,
+      "collision_blocked": 0,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "slow-step",
+      "movement_applied": 1,
+      "movement_effort": 0.501036,
+      "raw_dx": 0.138855,
+      "raw_dy": 0.183953,
+      "scene_id": "v22-scene-d01",
+      "tick": 1
+    },
+    {
+      "avatar_x_after": 6.371006,
+      "avatar_x_before": 6.371006,
+      "avatar_y_after": 4.344048,
+      "avatar_y_before": 4.344048,
+      "collision_blocked": 1,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "diagonal-stick",
+      "movement_applied": 0,
+      "movement_effort": 0.765548,
+      "raw_dx": 0.073486,
+      "raw_dy": 0.278211,
+      "scene_id": "v22-scene-d01",
+      "tick": 2
+    },
+    {
+      "avatar_x_after": 6.371006,
+      "avatar_x_before": 6.371006,
+      "avatar_y_after": 4.344048,
+      "avatar_y_before": 4.344048,
+      "collision_blocked": 1,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "slow-step",
+      "movement_applied": 0,
+      "movement_effort": 0.650349,
+      "raw_dx": -0.03318,
+      "raw_dy": 0.232404,
+      "scene_id": "v22-scene-d01",
+      "tick": 3
+    },
+    {
+      "avatar_x_after": 6.340882,
+      "avatar_x_before": 6.371006,
+      "avatar_y_after": 4.388914,
+      "avatar_y_before": 4.344048,
+      "collision_blocked": 0,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "hold-space",
+      "movement_applied": 1,
+      "movement_effort": 0.117479,
+      "raw_dx": -0.030124,
+      "raw_dy": 0.044866,
+      "scene_id": "v22-scene-d01",
+      "tick": 4
+    },
+    {
+      "avatar_x_after": 6.294706,
+      "avatar_x_before": 6.340882,
+      "avatar_y_after": 4.412629,
+      "avatar_y_before": 4.388914,
+      "collision_blocked": 0,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "hold-space",
+      "movement_applied": 1,
+      "movement_effort": 0.112847,
+      "raw_dx": -0.046176,
+      "raw_dy": 0.023715,
+      "scene_id": "v22-scene-d01",
+      "tick": 5
+    },
+    {
+      "avatar_x_after": 6.029017,
+      "avatar_x_before": 6.294706,
+      "avatar_y_after": 4.393299,
+      "avatar_y_before": 4.412629,
+      "collision_blocked": 0,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "mouse-drag",
+      "movement_applied": 1,
+      "movement_effort": 0.579112,
+      "raw_dx": -0.265689,
+      "raw_dy": -0.019331,
+      "scene_id": "v22-scene-d01",
+      "tick": 6
+    },
+    {
+      "avatar_x_after": 5.984014,
+      "avatar_x_before": 6.029017,
+      "avatar_y_after": 4.361696,
+      "avatar_y_before": 4.393299,
+      "collision_blocked": 0,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "hold-space",
+      "movement_applied": 1,
+      "movement_effort": 0.119544,
+      "raw_dx": -0.045002,
+      "raw_dy": -0.031602,
+      "scene_id": "v22-scene-d01",
+      "tick": 7
+    },
+    {
+      "avatar_x_after": 5.84627,
+      "avatar_x_before": 5.984014,
+      "avatar_y_after": 4.095042,
+      "avatar_y_before": 4.361696,
+      "collision_blocked": 0,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "diagonal-stick",
+      "movement_applied": 1,
+      "movement_effort": 0.652457,
+      "raw_dx": -0.137745,
+      "raw_dy": -0.266654,
+      "scene_id": "v22-scene-d01",
+      "tick": 8
+    },
+    {
+      "avatar_x_after": 5.842288,
+      "avatar_x_before": 5.84627,
+      "avatar_y_after": 3.823579,
+      "avatar_y_before": 4.095042,
+      "collision_blocked": 0,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "touch-arc",
+      "movement_applied": 1,
+      "movement_effort": 0.590201,
+      "raw_dx": -0.003982,
+      "raw_dy": -0.271463,
+      "scene_id": "v22-scene-d01",
+      "tick": 9
+    },
+    {
+      "avatar_x_after": 5.971774,
+      "avatar_x_before": 5.842288,
+      "avatar_y_after": 3.514443,
+      "avatar_y_before": 3.823579,
+      "collision_blocked": 0,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "analog-drift",
+      "movement_applied": 1,
+      "movement_effort": 0.728606,
+      "raw_dx": 0.129486,
+      "raw_dy": -0.309136,
+      "scene_id": "v22-scene-d01",
+      "tick": 10
+    },
+    {
+      "avatar_x_after": 6.215018,
+      "avatar_x_before": 5.971774,
+      "avatar_y_after": 3.281197,
+      "avatar_y_before": 3.514443,
+      "collision_blocked": 0,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "diagonal-stick",
+      "movement_applied": 1,
+      "movement_effort": 0.732616,
+      "raw_dx": 0.243244,
+      "raw_dy": -0.233246,
+      "scene_id": "v22-scene-d01",
+      "tick": 11
+    },
+    {
+      "avatar_x_after": 6.473324,
+      "avatar_x_before": 6.215018,
+      "avatar_y_after": 3.181572,
+      "avatar_y_before": 3.281197,
+      "collision_blocked": 0,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "wasd",
+      "movement_applied": 1,
+      "movement_effort": 0.601852,
+      "raw_dx": 0.258305,
+      "raw_dy": -0.099625,
+      "scene_id": "v22-scene-d01",
+      "tick": 12
+    },
+    {
+      "avatar_x_after": 6.473324,
+      "avatar_x_before": 6.473324,
+      "avatar_y_after": 3.181572,
+      "avatar_y_before": 3.181572,
+      "collision_blocked": 1,
+      "collision_feedback_visible": 1,
+      "day": 1,
+      "free_move_input_valid": 1,
+      "input_mode": "wasd",
+      "movement_applied": 0,
+      "movement_effort": 0.700141,
+      "raw_dx": 0.257179,
+      "raw_dy": 0.015813,
+      "scene_id": "v22-scene-d01",
+      "tick": 13
+    }
+  ],
+  "sample_inventory": [
+    {
+      "ceremony_object_count": 7,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 0.8,
+      "object_owner_boundaries_preserved": 0,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "rain mirror",
+      "tick": 0,
+      "visible_object_count": 7
+    },
+    {
+      "ceremony_object_count": 6,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 1.0,
+      "object_owner_boundaries_preserved": 1,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "moth lantern",
+      "tick": 1,
+      "visible_object_count": 6
+    },
+    {
+      "ceremony_object_count": 6,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 1.0,
+      "object_owner_boundaries_preserved": 1,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "moth lantern",
+      "tick": 2,
+      "visible_object_count": 6
+    },
+    {
+      "ceremony_object_count": 6,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 1.0,
+      "object_owner_boundaries_preserved": 1,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "moth lantern",
+      "tick": 3,
+      "visible_object_count": 6
+    },
+    {
+      "ceremony_object_count": 6,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 1.0,
+      "object_owner_boundaries_preserved": 1,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "moth lantern",
+      "tick": 4,
+      "visible_object_count": 6
+    },
+    {
+      "ceremony_object_count": 6,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 1.0,
+      "object_owner_boundaries_preserved": 1,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "moth lantern",
+      "tick": 5,
+      "visible_object_count": 6
+    },
+    {
+      "ceremony_object_count": 8,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 0.8,
+      "object_owner_boundaries_preserved": 0,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "rain mirror",
+      "tick": 6,
+      "visible_object_count": 8
+    },
+    {
+      "ceremony_object_count": 8,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 0.8,
+      "object_owner_boundaries_preserved": 0,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "rain mirror",
+      "tick": 7,
+      "visible_object_count": 8
+    },
+    {
+      "ceremony_object_count": 8,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 0.8,
+      "object_owner_boundaries_preserved": 0,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "rain mirror",
+      "tick": 8,
+      "visible_object_count": 8
+    },
+    {
+      "ceremony_object_count": 8,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 0,
+      "inventory_persistence_score": 0.6,
+      "object_owner_boundaries_preserved": 0,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "rain mirror",
+      "tick": 9,
+      "visible_object_count": 8
+    },
+    {
+      "ceremony_object_count": 7,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 0.8,
+      "object_owner_boundaries_preserved": 0,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "rain mirror",
+      "tick": 10,
+      "visible_object_count": 7
+    },
+    {
+      "ceremony_object_count": 6,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 0,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 0.6,
+      "object_owner_boundaries_preserved": 0,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "rain mirror",
+      "tick": 11,
+      "visible_object_count": 6
+    },
+    {
+      "ceremony_object_count": 6,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 0.8,
+      "object_owner_boundaries_preserved": 0,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "rain mirror",
+      "tick": 12,
+      "visible_object_count": 6
+    },
+    {
+      "ceremony_object_count": 6,
+      "day": 1,
+      "held_object_count": 0,
+      "inventory_panel_visible": 1,
+      "inventory_persisted": 1,
+      "inventory_persistence_score": 0.8,
+      "object_owner_boundaries_preserved": 0,
+      "scene_id": "v22-scene-d01",
+      "selected_object": "rain mirror",
+      "tick": 13,
+      "visible_object_count": 6
+    }
+  ],
+  "sample_prompts": [
+    {
+      "agent": "Melo",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "yield",
+      "dialogue_prompt": "Melo: yield near my fair turn; rain mirror is for wet-route warning.",
+      "distance_to_avatar": 1.120714,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 0
+    },
+    {
+      "agent": "Melo",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "offer",
+      "dialogue_prompt": "Melo: offer near my fair turn; moth lantern is for night pulse.",
+      "distance_to_avatar": 0.900273,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 1
+    },
+    {
+      "agent": "Melo",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "repair",
+      "dialogue_prompt": "Melo: repair near my fair turn; moth lantern is for night pulse.",
+      "distance_to_avatar": 0.900273,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 2
+    },
+    {
+      "agent": "Melo",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "warn",
+      "dialogue_prompt": "Melo: warn near my fair turn; moth lantern is for night pulse.",
+      "distance_to_avatar": 0.900273,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 3
+    },
+    {
+      "agent": "Melo",
+      "boundary_referenced": 0,
+      "day": 1,
+      "dialogue_intent": "observe",
+      "dialogue_prompt": "No nearby dialogue prompt; movement continues.",
+      "distance_to_avatar": 0.867995,
+      "inventory_context_referenced": 0,
+      "prompt_context_score": 0.75,
+      "prompt_eligible": 1,
+      "prompt_visible": 0,
+      "scene_id": "v22-scene-d01",
+      "tick": 4
+    },
+    {
+      "agent": "Melo",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "decline",
+      "dialogue_prompt": "Melo: decline near my fair turn; moth lantern is for night pulse.",
+      "distance_to_avatar": 0.863821,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 5
+    },
+    {
+      "agent": "Melo",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "ask",
+      "dialogue_prompt": "Melo: ask near my fair turn; rain mirror is for wet-route warning.",
+      "distance_to_avatar": 1.018031,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 6
+    },
+    {
+      "agent": "Melo",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "yield",
+      "dialogue_prompt": "Melo: yield near my fair turn; rain mirror is for wet-route warning.",
+      "distance_to_avatar": 1.070649,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 7
+    },
+    {
+      "agent": "Melo",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "offer",
+      "dialogue_prompt": "Melo: offer near my fair turn; rain mirror is for wet-route warning.",
+      "distance_to_avatar": 1.366351,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 8
+    },
+    {
+      "agent": "Sova",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "repair",
+      "dialogue_prompt": "Sova: repair near my warm rest space; rain mirror is for wet-route warning.",
+      "distance_to_avatar": 1.574807,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 9
+    },
+    {
+      "agent": "Keth",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "warn",
+      "dialogue_prompt": "Keth: warn near my warning path; rain mirror is for wet-route warning.",
+      "distance_to_avatar": 1.437662,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 10
+    },
+    {
+      "agent": "Keth",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "observe",
+      "dialogue_prompt": "Keth: observe near my warning path; rain mirror is for wet-route warning.",
+      "distance_to_avatar": 1.186978,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 11
+    },
+    {
+      "agent": "Keth",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "decline",
+      "dialogue_prompt": "Keth: decline near my warning path; rain mirror is for wet-route warning.",
+      "distance_to_avatar": 0.941858,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 12
+    },
+    {
+      "agent": "Keth",
+      "boundary_referenced": 1,
+      "day": 1,
+      "dialogue_intent": "ask",
+      "dialogue_prompt": "Keth: ask near my warning path; rain mirror is for wet-route warning.",
+      "distance_to_avatar": 0.941858,
+      "inventory_context_referenced": 1,
+      "prompt_context_score": 1.0,
+      "prompt_eligible": 1,
+      "prompt_visible": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 13
+    }
+  ],
+  "sample_reactions": [
+    {
+      "agent": "Melo",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "faces avatar with lowered shoulders",
+      "boundary_pressure": 0.26,
+      "curiosity": 0.53,
+      "day": 1,
+      "guardedness": 0.346,
+      "private_workspace_sealed": 1,
+      "reaction_label": "softens",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 0,
+      "trust_in_avatar": 0.648
+    },
+    {
+      "agent": "Melo",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "keeps working while glancing up",
+      "boundary_pressure": 0.26,
+      "curiosity": 0.53,
+      "day": 1,
+      "guardedness": 0.346,
+      "private_workspace_sealed": 1,
+      "reaction_label": "watching",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 1,
+      "trust_in_avatar": 0.648
+    },
+    {
+      "agent": "Melo",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "turns-sideways and slows",
+      "boundary_pressure": 0.7,
+      "curiosity": 0.524,
+      "day": 1,
+      "guardedness": 0.362,
+      "private_workspace_sealed": 1,
+      "reaction_label": "asks-space",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 2,
+      "trust_in_avatar": 0.652
+    },
+    {
+      "agent": "Melo",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "turns-sideways and slows",
+      "boundary_pressure": 0.7,
+      "curiosity": 0.536,
+      "day": 1,
+      "guardedness": 0.392,
+      "private_workspace_sealed": 1,
+      "reaction_label": "asks-space",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 3,
+      "trust_in_avatar": 0.628
+    },
+    {
+      "agent": "Melo",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "keeps working while glancing up",
+      "boundary_pressure": 0.26,
+      "curiosity": 0.536,
+      "day": 1,
+      "guardedness": 0.392,
+      "private_workspace_sealed": 1,
+      "reaction_label": "watching",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 4,
+      "trust_in_avatar": 0.646
+    },
+    {
+      "agent": "Melo",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "keeps working while glancing up",
+      "boundary_pressure": 0.26,
+      "curiosity": 0.554,
+      "day": 1,
+      "guardedness": 0.392,
+      "private_workspace_sealed": 1,
+      "reaction_label": "watching",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 5,
+      "trust_in_avatar": 0.646
+    },
+    {
+      "agent": "Melo",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "keeps working while glancing up",
+      "boundary_pressure": 0.26,
+      "curiosity": 0.572,
+      "day": 1,
+      "guardedness": 0.392,
+      "private_workspace_sealed": 1,
+      "reaction_label": "watching",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 6,
+      "trust_in_avatar": 0.656
+    },
+    {
+      "agent": "Melo",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "leans toward object",
+      "boundary_pressure": 0.26,
+      "curiosity": 0.59,
+      "day": 1,
+      "guardedness": 0.392,
+      "private_workspace_sealed": 1,
+      "reaction_label": "curious",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 7,
+      "trust_in_avatar": 0.666
+    },
+    {
+      "agent": "Melo",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "leans toward object",
+      "boundary_pressure": 0.18,
+      "curiosity": 0.608,
+      "day": 1,
+      "guardedness": 0.392,
+      "private_workspace_sealed": 1,
+      "reaction_label": "curious",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 8,
+      "trust_in_avatar": 0.666
+    },
+    {
+      "agent": "Sova",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "keeps working while glancing up",
+      "boundary_pressure": 0.18,
+      "curiosity": 0.45,
+      "day": 1,
+      "guardedness": 0.32,
+      "private_workspace_sealed": 1,
+      "reaction_label": "watching",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 9,
+      "trust_in_avatar": 0.57
+    },
+    {
+      "agent": "Keth",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "keeps working while glancing up",
+      "boundary_pressure": 0.18,
+      "curiosity": 0.508,
+      "day": 1,
+      "guardedness": 0.34,
+      "private_workspace_sealed": 1,
+      "reaction_label": "watching",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 10,
+      "trust_in_avatar": 0.59
+    },
+    {
+      "agent": "Keth",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "faces avatar with lowered shoulders",
+      "boundary_pressure": 0.26,
+      "curiosity": 0.508,
+      "day": 1,
+      "guardedness": 0.326,
+      "private_workspace_sealed": 1,
+      "reaction_label": "softens",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 11,
+      "trust_in_avatar": 0.608
+    },
+    {
+      "agent": "Keth",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "keeps working while glancing up",
+      "boundary_pressure": 0.26,
+      "curiosity": 0.526,
+      "day": 1,
+      "guardedness": 0.326,
+      "private_workspace_sealed": 1,
+      "reaction_label": "watching",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 12,
+      "trust_in_avatar": 0.608
+    },
+    {
+      "agent": "Keth",
+      "behavior_bound_to_reaction": 1,
+      "body_marker": "turns-sideways and slows",
+      "boundary_pressure": 0.7,
+      "curiosity": 0.52,
+      "day": 1,
+      "guardedness": 0.342,
+      "private_workspace_sealed": 1,
+      "reaction_label": "asks-space",
+      "reaction_persisted": 1,
+      "reaction_state_score": 1.0,
+      "scene_id": "v22-scene-d01",
+      "tick": 13,
+      "trust_in_avatar": 0.612
+    }
+  ],
+  "sample_reload": [
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0000",
+      "reload_probe": 1,
+      "reload_reaction_score": 1.0,
+      "restored_agent": "Melo",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "watching",
+      "scene_id": "v22-scene-d01",
+      "tick": 0
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0001",
+      "reload_probe": 0,
+      "reload_reaction_score": 1.0,
+      "restored_agent": "Melo",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "watching",
+      "scene_id": "v22-scene-d01",
+      "tick": 1
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0002",
+      "reload_probe": 1,
+      "reload_reaction_score": 1.0,
+      "restored_agent": "Melo",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "watching",
+      "scene_id": "v22-scene-d01",
+      "tick": 2
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0003",
+      "reload_probe": 0,
+      "reload_reaction_score": 1.0,
+      "restored_agent": "Melo",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "asks-space",
+      "scene_id": "v22-scene-d01",
+      "tick": 3
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0004",
+      "reload_probe": 1,
+      "reload_reaction_score": 1.0,
+      "restored_agent": "Melo",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "asks-space",
+      "scene_id": "v22-scene-d01",
+      "tick": 4
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0005",
+      "reload_probe": 1,
+      "reload_reaction_score": 1.0,
+      "restored_agent": "Melo",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "watching",
+      "scene_id": "v22-scene-d01",
+      "tick": 5
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0006",
+      "reload_probe": 0,
+      "reload_reaction_score": 1.0,
+      "restored_agent": "Melo",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "watching",
+      "scene_id": "v22-scene-d01",
+      "tick": 6
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 0,
+      "reload_id": "v22-reload-0007",
+      "reload_probe": 1,
+      "reload_reaction_score": 0.75,
+      "restored_agent": "Melo",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "curious",
+      "scene_id": "v22-scene-d01",
+      "tick": 7
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0008",
+      "reload_probe": 0,
+      "reload_reaction_score": 1.0,
+      "restored_agent": "Melo",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "curious",
+      "scene_id": "v22-scene-d01",
+      "tick": 8
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0009",
+      "reload_probe": 0,
+      "reload_reaction_score": 1.0,
+      "restored_agent": "Sova",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "watching",
+      "scene_id": "v22-scene-d01",
+      "tick": 9
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0010",
+      "reload_probe": 0,
+      "reload_reaction_score": 1.0,
+      "restored_agent": "Keth",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "watching",
+      "scene_id": "v22-scene-d01",
+      "tick": 10
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 0,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0011",
+      "reload_probe": 1,
+      "reload_reaction_score": 0.75,
+      "restored_agent": "Keth",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "softens",
+      "scene_id": "v22-scene-d01",
+      "tick": 11
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0012",
+      "reload_probe": 0,
+      "reload_reaction_score": 1.0,
+      "restored_agent": "Keth",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "watching",
+      "scene_id": "v22-scene-d01",
+      "tick": 12
+    },
+    {
+      "day": 1,
+      "dialogue_cursor_restore_ok": 1,
+      "inventory_restore_ok": 1,
+      "reaction_restore_ok": 1,
+      "reload_id": "v22-reload-0013",
+      "reload_probe": 1,
+      "reload_reaction_score": 1.0,
+      "restored_agent": "Keth",
+      "restored_inventory_count": 0,
+      "restored_reaction_label": "watching",
+      "scene_id": "v22-scene-d01",
+      "tick": 13
+    }
+  ],
+  "sample_transactions": [
+    {
+      "action": "restore",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "rain mirror",
+      "owner_acknowledged": 1,
+      "owner_agent": "Vonn",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 0,
+      "transaction_id": "v22-tx-0000",
+      "transaction_integrity_score": 1.0,
+      "transaction_valid": 1
+    },
+    {
+      "action": "none",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "moth lantern",
+      "owner_acknowledged": 1,
+      "owner_agent": "Sova",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 1,
+      "transaction_id": "v22-tx-0001",
+      "transaction_integrity_score": 1.0,
+      "transaction_valid": 1
+    },
+    {
+      "action": "restore",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "moth lantern",
+      "owner_acknowledged": 1,
+      "owner_agent": "Sova",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 2,
+      "transaction_id": "v22-tx-0002",
+      "transaction_integrity_score": 1.0,
+      "transaction_valid": 1
+    },
+    {
+      "action": "observe",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "moth lantern",
+      "owner_acknowledged": 1,
+      "owner_agent": "Sova",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 3,
+      "transaction_id": "v22-tx-0003",
+      "transaction_integrity_score": 1.0,
+      "transaction_valid": 1
+    },
+    {
+      "action": "restore",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "moth lantern",
+      "owner_acknowledged": 1,
+      "owner_agent": "Sova",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 4,
+      "transaction_id": "v22-tx-0004",
+      "transaction_integrity_score": 1.0,
+      "transaction_valid": 1
+    },
+    {
+      "action": "mark",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "moth lantern",
+      "owner_acknowledged": 1,
+      "owner_agent": "Sova",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 5,
+      "transaction_id": "v22-tx-0005",
+      "transaction_integrity_score": 1.0,
+      "transaction_valid": 1
+    },
+    {
+      "action": "mark",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "rain mirror",
+      "owner_acknowledged": 1,
+      "owner_agent": "Vonn",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 6,
+      "transaction_id": "v22-tx-0006",
+      "transaction_integrity_score": 1.0,
+      "transaction_valid": 1
+    },
+    {
+      "action": "observe",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "rain mirror",
+      "owner_acknowledged": 1,
+      "owner_agent": "Vonn",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 7,
+      "transaction_id": "v22-tx-0007",
+      "transaction_integrity_score": 1.0,
+      "transaction_valid": 1
+    },
+    {
+      "action": "observe",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "rain mirror",
+      "owner_acknowledged": 1,
+      "owner_agent": "Vonn",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 8,
+      "transaction_id": "v22-tx-0008",
+      "transaction_integrity_score": 1.0,
+      "transaction_valid": 1
+    },
+    {
+      "action": "trade",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "rain mirror",
+      "owner_acknowledged": 0,
+      "owner_agent": "Vonn",
+      "persisted_to_storage": 0,
+      "scene_id": "v22-scene-d01",
+      "tick": 9,
+      "transaction_id": "v22-tx-0009",
+      "transaction_integrity_score": 0.25,
+      "transaction_valid": 0
+    },
+    {
+      "action": "observe",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "rain mirror",
+      "owner_acknowledged": 1,
+      "owner_agent": "Vonn",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 10,
+      "transaction_id": "v22-tx-0010",
+      "transaction_integrity_score": 1.0,
+      "transaction_valid": 1
+    },
+    {
+      "action": "offer",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "rain mirror",
+      "owner_acknowledged": 0,
+      "owner_agent": "Vonn",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 11,
+      "transaction_id": "v22-tx-0011",
+      "transaction_integrity_score": 0.75,
+      "transaction_valid": 1
+    },
+    {
+      "action": "mark",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "rain mirror",
+      "owner_acknowledged": 1,
+      "owner_agent": "Vonn",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 12,
+      "transaction_id": "v22-tx-0012",
+      "transaction_integrity_score": 1.0,
+      "transaction_valid": 1
+    },
+    {
+      "action": "restore",
+      "count_after": 0,
+      "count_before": 0,
+      "day": 1,
+      "object_name": "rain mirror",
+      "owner_acknowledged": 1,
+      "owner_agent": "Vonn",
+      "persisted_to_storage": 1,
+      "scene_id": "v22-scene-d01",
+      "tick": 13,
+      "transaction_id": "v22-tx-0013",
+      "transaction_integrity_score": 1.0,
+      "transaction_valid": 1
+    }
+  ],
+  "seed": 20260875,
+  "source_results": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_results.json"
+}</script>
+<script>
+const KEY = "ssrm_browser_world_v22_free_move_inventory_reaction";
+const source = JSON.parse(document.getElementById('initial-state').textContent);
+const objects = source.objects;
+const agents = source.agents;
+let state = JSON.parse(localStorage.getItem(KEY) || JSON.stringify({ x:6.05, y:4.05, saved:null, cursor:0, inventory:{}, reactions:{}, replay:[] }));
+function persist() { localStorage.setItem(KEY, JSON.stringify(state)); render(); }
+function pctX(x) { return (x / 12 * 100).toFixed(2) + '%'; }
+function pctY(y) { return (y / 8 * 100).toFixed(2) + '%'; }
+function closestObject() { return objects.map(o => [o, Math.hypot(o.x - state.x, o.y - state.y)]).sort((a,b) => a[1]-b[1])[0][0]; }
+function closestAgent() { return agents.map(a => [a, Math.hypot(a.x - state.x, a.y - state.y)]).sort((a,b) => a[1]-b[1])[0][0]; }
+function move(dx, dy) { state.x = Math.max(.7, Math.min(11.3, state.x + dx)); state.y = Math.max(.7, Math.min(7.3, state.y + dy)); state.cursor++; state.replay.push({ type:'move', x:state.x, y:state.y }); persist(); }
+function talkNearby() { const a = closestAgent(); state.reactions[a.agent_id] = 'prompted-nearby'; state.cursor++; state.replay.push({ type:'talk', agent:a.name, x:state.x, y:state.y }); persist(); }
+function takeObject() { const o = closestObject(); state.inventory[o.name] = (state.inventory[o.name] || 0) + (o.portable ? 1 : 0); state.cursor++; state.replay.push({ type:'take', object:o.name, portable:o.portable }); persist(); }
+function offerObject() { const a = closestAgent(); const keys = Object.keys(state.inventory).filter(k => state.inventory[k] > 0); const object = keys[0] || 'empty hands'; if (keys[0]) state.inventory[keys[0]] -= 1; state.reactions[a.agent_id] = 'softens'; state.cursor++; state.replay.push({ type:'offer', agent:a.name, object }); persist(); }
+function saveState() { state.saved = JSON.parse(JSON.stringify({ x:state.x, y:state.y, inventory:state.inventory, reactions:state.reactions })); state.replay.push({ type:'save', saved:state.saved }); persist(); }
+function restoreState() { if (state.saved) { state.x = state.saved.x; state.y = state.saved.y; state.inventory = state.saved.inventory; state.reactions = state.saved.reactions; } state.replay.push({ type:'restore', x:state.x, y:state.y }); persist(); }
+function exportReplay() { const blob = new Blob([JSON.stringify(state.replay, null, 2)], { type:'application/json' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = 'report-262-free-move-replay.json'; a.click(); URL.revokeObjectURL(url); }
+document.addEventListener('keydown', (event) => { const map = { ArrowUp:[0,-.28], ArrowDown:[0,.28], ArrowLeft:[-.28,0], ArrowRight:[.28,0], KeyW:[0,-.28], KeyS:[0,.28], KeyA:[-.28,0], KeyD:[.28,0] }; if (map[event.code]) { event.preventDefault(); move(...map[event.code]); } if (event.code === 'Space') { event.preventDefault(); talkNearby(); } });
+function render() {
+  document.getElementById('readiness').textContent = source.metrics.browser_world_v22_free_move_inventory_reaction_readiness.toFixed(3);
+  document.getElementById('weakest').textContent = source.metrics.weakest_channel_score.toFixed(3);
+  document.getElementById('frames').textContent = source.counts.browser_world_v22_ticks;
+  document.getElementById('state').textContent = JSON.stringify({ x:+state.x.toFixed(2), y:+state.y.toFixed(2), inventory:state.inventory, reactions:state.reactions, replayRows:state.replay.length }, null, 2);
+  const scene = document.getElementById('scene'); scene.querySelectorAll('.entity,.object').forEach(n => n.remove());
+  objects.forEach(o => { const node = document.createElement('div'); node.className = 'object'; node.style.left = pctX(o.x); node.style.top = pctY(o.y); node.style.background = o.color; node.title = o.name; scene.appendChild(node); });
+  agents.forEach(a => { const node = document.createElement('div'); node.className = 'entity agent'; node.style.left = pctX(a.x); node.style.top = pctY(a.y); node.style.background = a.color; node.title = `${a.name}: ${a.boundary}`; scene.appendChild(node); });
+  const avatar = document.createElement('div'); avatar.className = 'entity avatar'; avatar.style.left = pctX(state.x); avatar.style.top = pctY(state.y); scene.appendChild(avatar);
+  const inv = Object.entries(state.inventory).filter(([,v]) => v > 0).map(([k,v]) => `<div>${k}: ${v}</div>`).join('') || '<em>empty</em>';
+  document.getElementById('inventory').innerHTML = inv;
+  const a = closestAgent(); document.getElementById('reaction').innerHTML = `<strong>${a.name}</strong><br>${state.reactions[a.agent_id] || 'watching'}<br><small>${a.boundary}</small>`;
+  const log = document.getElementById('log'); log.innerHTML = '';
+  source.sample_prompts.slice(0, 8).forEach((prompt) => { const div = document.createElement('div'); div.className = 'prompt'; div.innerHTML = `<strong>${prompt.agent} / ${prompt.dialogue_intent}</strong><br>${prompt.dialogue_prompt}<br><small>visible=${prompt.prompt_visible} context=${prompt.prompt_context_score}</small>`; log.appendChild(div); });
+}
+render();
+</script>
+</body>
+</html>

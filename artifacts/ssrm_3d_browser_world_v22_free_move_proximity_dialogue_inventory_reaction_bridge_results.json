@@ -1,0 +1,109 @@
+{
+  "ablations": [
+    {
+      "ablation": "no_free_move_vectors",
+      "interpretation": "The avatar falls back to discrete movement and proximity timing becomes less readable.",
+      "readiness_after_ablation": 0.56445,
+      "readiness_loss": 0.335
+    },
+    {
+      "ablation": "no_proximity_dialogue_prompts",
+      "interpretation": "Nearby agents stop expressing boundaries or object context from spatial approach.",
+      "readiness_after_ablation": 0.58945,
+      "readiness_loss": 0.31
+    },
+    {
+      "ablation": "no_multi_object_inventory",
+      "interpretation": "Ceremony objects become visual props rather than persistent playable resources.",
+      "readiness_after_ablation": 0.60445,
+      "readiness_loss": 0.295
+    },
+    {
+      "ablation": "no_reload_stable_reactions",
+      "interpretation": "Agent reaction state changes but cannot survive reload or restore.",
+      "readiness_after_ablation": 0.62945,
+      "readiness_loss": 0.27
+    },
+    {
+      "ablation": "no_owner_boundary_inventory",
+      "interpretation": "The avatar can take objects without owner-aware consequence or acknowledgement.",
+      "readiness_after_ablation": 0.65945,
+      "readiness_loss": 0.24
+    },
+    {
+      "ablation": "no_behavior_expression",
+      "interpretation": "Reaction JSON remains stored but stops showing in readable body markers.",
+      "readiness_after_ablation": 0.68445,
+      "readiness_loss": 0.215
+    }
+  ],
+  "artifacts": {
+    "agent_reaction_states_csv": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_agent_reaction_states.csv",
+    "browser_ticks_csv": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_browser_ticks.csv",
+    "ceremony_inventory_transactions_csv": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_ceremony_inventory_transactions.csv",
+    "dialogue_reaction_replays_csv": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_dialogue_reaction_replays.csv",
+    "free_move_paths_csv": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_free_move_paths.csv",
+    "local_storage_inventory_snapshots_csv": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_local_storage_inventory_snapshots.csv",
+    "multi_object_inventory_csv": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_multi_object_inventory.csv",
+    "multi_sensory_free_move_csv": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_multi_sensory_free_move.csv",
+    "proximity_dialogue_prompts_csv": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_proximity_dialogue_prompts.csv",
+    "reload_stable_reactions_csv": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_reload_stable_reactions.csv",
+    "results_json": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_results.json",
+    "state_json": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_state.json",
+    "summary_csv": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_summary.csv",
+    "verdict_csv": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_verdict.csv",
+    "visualization_html": "visualizations/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge.html"
+  },
+  "claim_boundary": "Deterministic browser-local free-move, proximity dialogue, multi-object inventory, and reload-stable reaction-state scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "agent_reaction_state_frames": 384,
+    "agents": 6,
+    "browser_world_v22_ticks": 384,
+    "ceremony_inventory_transaction_frames": 384,
+    "dialogue_reaction_replay_frames": 384,
+    "free_move_path_frames": 384,
+    "local_storage_inventory_snapshot_frames": 384,
+    "multi_object_inventory_frames": 384,
+    "multi_sensory_free_move_frames": 384,
+    "objects": 9,
+    "proximity_dialogue_prompt_frames": 384,
+    "reload_stable_reaction_frames": 384
+  },
+  "days": 24,
+  "metrics": {
+    "active_inventory_transaction_count": 351.0,
+    "avatar_free_move_state_mutation": 0.963542,
+    "browser_world_v22_free_move_inventory_reaction_readiness": 0.89945,
+    "browser_world_v22_surface_available": 1.0,
+    "ceremony_inventory_transaction_integrity": 0.843305,
+    "collision_aware_free_move": 1.0,
+    "comfort_pain_free_move_bounds": 1.0,
+    "free_move_input_surface": 1.0,
+    "frequency_flower_free_move_rhythm": 1.0,
+    "held_object_owner_boundary": 0.817708,
+    "local_storage_inventory_snapshot_integrity": 0.937934,
+    "mean_free_move_channel_score": 0.958643,
+    "multi_object_inventory_persistence": 0.924312,
+    "multi_sensory_free_move_binding": 0.971354,
+    "privacy_safe_reaction_state": 1.0,
+    "prompt_context_accuracy": 0.953607,
+    "proximity_dialogue_trigger_rate": 0.936937,
+    "proximity_prompt_eligible_count": 333.0,
+    "reaction_state_behavior_binding": 1.0,
+    "reload_probe_count": 132.0,
+    "reload_stable_agent_reaction_state": 0.980469,
+    "replay_free_move_integrity": 0.960399,
+    "save_restore_inventory_integrity": 0.901515,
+    "source_live_scene_mutation_continuity": 1.0,
+    "visible_dialogue_inventory_surface": 0.981771,
+    "weakest_channel_score": 0.817708
+  },
+  "name": "SSRM-3D browser world v22 free-move proximity dialogue inventory reaction bridge",
+  "next_gate": "browser world v23 with object-specific proximity dialogue, agent-owned inventory requests, and reaction-state changes that alter later scene behavior rather than only panel text",
+  "report": 262,
+  "seed": 20260875,
+  "source_dependency": "artifacts/ssrm_3d_browser_world_v21_live_scene_state_mutation_persistence_bridge_results.json",
+  "source_verdict": "pass",
+  "ticks_per_day": 16,
+  "verdict": "pass"
+}

@@ -1,0 +1,10 @@
+condition,sessions,rejected_proposal_body_coverage,faction_memory_persistence,audited_question_route_rate,evidence_citation_rate,cross_faction_counterargument_rate,concession_tradeoff_recall_rate,refusal_boundary_accuracy,dialogue_policy_adaptation_rate,answer_specificity_score,replay_trace_integrity,faction_dialogue_readiness
+integrated_persistent_faction_rejected_dialogue,128,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.854167,1.0,0.986875
+no_rejected_proposal_ledger,128,0.0,1.0,1.0,0.125,1.0,1.0,1.0,1.0,0.734375,1.0,0.751094
+no_persistent_faction_memory,128,1.0,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.677083,1.0,0.550937
+no_audited_question_router,128,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.17
+no_cross_faction_counterargument,128,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.833333,1.0,0.885
+no_concession_tradeoff_memory,128,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.833333,1.0,0.885
+no_evidence_refusal_boundary,128,1.0,1.0,1.0,0.875,1.0,1.0,0.0,1.0,0.822917,1.0,0.869062
+no_dialogue_policy_adaptation,128,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.833333,1.0,0.885
+no_trace_replay,128,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.854167,0.0,0.936875

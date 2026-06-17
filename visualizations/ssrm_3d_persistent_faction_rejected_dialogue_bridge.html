@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Persistent Faction Rejected Dialogue Bridge</title>
+  <style>
+    :root {
+      --ink: #211b13;
+      --muted: #665c4a;
+      --sand: #f4e7c7;
+      --card: rgba(255, 249, 232, 0.9);
+      --line: rgba(58, 40, 18, 0.2);
+      --rust: #a85024;
+      --moss: #5c7341;
+      --slate: #305c66;
+      --gold: #bc8a2c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Iowan Old Style", Georgia, serif;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(168, 80, 36, 0.28), transparent 26rem),
+        radial-gradient(circle at 84% 12%, rgba(48, 92, 102, 0.24), transparent 28rem),
+        repeating-linear-gradient(60deg, rgba(33,27,19,0.035) 0 1px, transparent 1px 26px),
+        linear-gradient(130deg, #dec690 0%, #f6ebd0 48%, #cda86a 100%);
+      min-height: 100vh;
+    }
+    header { padding: 42px clamp(18px, 5vw, 70px) 18px; }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 5.8vw, 5.8rem);
+      line-height: 0.9;
+      letter-spacing: -0.06em;
+      max-width: 1120px;
+    }
+    .subtitle { max-width: 980px; color: var(--muted); font-size: 1.06rem; margin-top: 18px; }
+    main { display: grid; grid-template-columns: minmax(300px, 0.9fr) minmax(340px, 1.15fr); gap: 18px; padding: 18px clamp(18px, 5vw, 70px) 54px; }
+    section, .tile { background: var(--card); border: 1px solid var(--line); border-radius: 24px; box-shadow: 0 24px 80px rgba(48, 37, 20, 0.16); backdrop-filter: blur(9px); }
+    section { padding: 18px; }
+    h2 { margin: 0 0 12px; font-size: 1.12rem; letter-spacing: -0.02em; }
+    .metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .metric { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.42); }
+    .metric b { display: block; color: var(--rust); font-size: 1.35rem; }
+    .metric span { color: var(--muted); font-size: 0.8rem; }
+    select, textarea, button { width: 100%; border: 1px solid var(--line); border-radius: 16px; padding: 11px 12px; background: rgba(255,255,255,0.7); color: var(--ink); font: inherit; }
+    textarea { min-height: 92px; resize: vertical; margin: 10px 0; }
+    button { background: var(--ink); color: var(--sand); cursor: pointer; }
+    .answer { margin-top: 12px; padding: 14px; border-radius: 18px; background: rgba(33, 27, 19, 0.065); white-space: pre-wrap; }
+    .tag { display: inline-block; padding: 4px 8px; border-radius: 999px; margin: 2px; background: rgba(168, 80, 36, 0.13); color: var(--rust); font-size: 0.78rem; }
+    .small { color: var(--muted); font-size: 0.88rem; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+    .trace-list { max-height: 540px; overflow: auto; display: grid; gap: 10px; padding-right: 6px; }
+    .trace-item { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.42); }
+    .trace-item strong { color: var(--slate); }
+    .faction { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.34); margin-top: 10px; }
+    @media (max-width: 880px) { main, .grid { grid-template-columns: 1fr; } .metrics { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rejected proposals now have bodies, but they are marked reconstructions.</h1>
+    <p class="subtitle">Report 151 adds persistent faction positions and a wider audited question router. It answers political-memory questions while refusing exact lost-original transcript and consciousness claims.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Bridge verdict</h2>
+      <div class="metrics" id="metrics"></div>
+      <div class="grid">
+        <div class="tile" style="padding:14px">
+          <h2>Unconventional objects</h2>
+          <div id="objects" class="small"></div>
+        </div>
+        <div class="tile" style="padding:14px">
+          <h2>Factions</h2>
+          <div id="factions"></div>
+        </div>
+      </div>
+      <h2 style="margin-top:18px">Replay audited question</h2>
+      <select id="sessionSelect"></select>
+      <textarea id="questionBox"></textarea>
+      <button id="askButton">Replay deterministic answer</button>
+      <div class="answer" id="answerBox"></div>
+    </section>
+    <section>
+      <h2>Trace</h2>
+      <div class="trace-list" id="traceList"></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_persistent_faction_rejected_dialogue_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_persistent_faction_rejected_dialogue_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_persistent_faction_rejected_dialogue_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_PERSISTENT_FACTION_REJECTED_DIALOGUE_RESULTS || { verdict: {} };
+    const trace = window.SSRM_3D_PERSISTENT_FACTION_REJECTED_DIALOGUE_TRACE || [];
+    const state = window.SSRM_3D_PERSISTENT_FACTION_REJECTED_DIALOGUE_STATE || {};
+    const verdict = results.verdict || {};
+    const metricKeys = [
+      ['full_faction_dialogue_readiness', 'faction dialogue readiness'],
+      ['full_rejected_proposal_body_coverage', 'rejected body coverage'],
+      ['full_faction_memory_persistence', 'faction persistence'],
+      ['full_evidence_citation_rate', 'evidence citation'],
+      ['full_refusal_boundary_accuracy', 'refusal boundary'],
+      ['full_answer_specificity_score', 'specificity']
+    ];
+    document.getElementById('metrics').innerHTML = metricKeys.map(([key, label]) => `<div class="metric"><b>${Number(verdict[key] || 0).toFixed(3)}</b><span>${label}</span></div>`).join('');
+    const objects = state.unconventional_objects || {};
+    document.getElementById('objects').innerHTML = Object.entries(objects).map(([key, value]) => `<span class="tag">${key}</span><br>${value}`).join('<br><br>');
+    const factions = state.persistent_factions || {};
+    document.getElementById('factions').innerHTML = Object.values(factions).map(f => `<div class="faction"><strong>${f.faction}</strong><div class="small">${f.motto}</div><span class="tag">memory ${f.memory.length}</span><span class="tag">concessions ${f.concessions.length}</span><span class="tag">counter ${f.counterarguments.length}</span></div>`).join('');
+    const select = document.getElementById('sessionSelect');
+    trace.forEach((item, idx) => {
+      const option = document.createElement('option');
+      option.value = String(idx);
+      option.textContent = `${item.session_id}: ${item.faction} / ${item.parsed_intent}`;
+      select.appendChild(option);
+    });
+    const questionBox = document.getElementById('questionBox');
+    const answerBox = document.getElementById('answerBox');
+    function renderSelected() {
+      const item = trace[Number(select.value || 0)] || trace[0] || {};
+      questionBox.value = item.question || '';
+      answerBox.textContent = item.answer || 'No trace loaded.';
+    }
+    select.addEventListener('change', renderSelected);
+    document.getElementById('askButton').addEventListener('click', () => {
+      const text = questionBox.value.toLowerCase();
+      const found = trace.find(item => (item.question || '').toLowerCase() === text) || trace.find(item => text.includes(item.parsed_intent));
+      answerBox.textContent = found ? found.answer : 'The audited browser replay only answers generated deterministic sessions. It does not synthesize new open dialogue.';
+    });
+    document.getElementById('traceList').innerHTML = trace.slice(0, 96).map(item => `<div class="trace-item"><strong>${item.session_id}</strong> <span class="tag">${item.faction}</span> <span class="tag">${item.parsed_intent}</span><div class="small">${item.question}</div><p>${item.answer}</p></div>`).join('');
+    renderSelected();
+  </script>
+</body>
+</html>

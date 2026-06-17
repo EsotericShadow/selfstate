@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Learned Faction Dialogue Policy Bridge</title>
+  <style>
+    :root {
+      --ink: #1f1a13;
+      --muted: #695f4d;
+      --paper: #f7ead0;
+      --panel: rgba(255, 250, 236, 0.9);
+      --line: rgba(55, 39, 18, 0.2);
+      --rust: #9f4d24;
+      --teal: #2f6170;
+      --moss: #607844;
+      --gold: #b78b31;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "Iowan Old Style", Georgia, serif;
+      background:
+        radial-gradient(circle at 12% 14%, rgba(159,77,36,0.28), transparent 28rem),
+        radial-gradient(circle at 84% 12%, rgba(47,97,112,0.24), transparent 30rem),
+        conic-gradient(from 30deg at 50% 52%, rgba(31,26,19,0.04), transparent 16%, rgba(31,26,19,0.04) 32%, transparent 48%, rgba(31,26,19,0.04) 64%, transparent 80%, rgba(31,26,19,0.04)),
+        linear-gradient(132deg, #d4ba81 0%, #f8edcf 48%, #c7995b 100%);
+    }
+    header { padding: 44px clamp(18px, 5vw, 72px) 18px; }
+    h1 { margin: 0; max-width: 1120px; font-size: clamp(2.1rem, 5.5vw, 5.6rem); line-height: 0.9; letter-spacing: -0.06em; }
+    .subtitle { max-width: 980px; color: var(--muted); margin-top: 18px; font-size: 1.06rem; }
+    main { display: grid; grid-template-columns: minmax(300px, 0.9fr) minmax(340px, 1.15fr); gap: 18px; padding: 18px clamp(18px, 5vw, 72px) 54px; }
+    section, .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 24px; box-shadow: 0 24px 80px rgba(46,34,18,0.16); backdrop-filter: blur(9px); }
+    section { padding: 18px; }
+    h2 { margin: 0 0 12px; font-size: 1.12rem; letter-spacing: -0.02em; }
+    .metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .metric { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.43); }
+    .metric b { display: block; color: var(--rust); font-size: 1.35rem; }
+    .metric span { color: var(--muted); font-size: 0.8rem; }
+    select, textarea, button { width: 100%; border: 1px solid var(--line); border-radius: 16px; padding: 11px 12px; background: rgba(255,255,255,0.72); color: var(--ink); font: inherit; }
+    textarea { min-height: 92px; resize: vertical; margin: 10px 0; }
+    button { background: var(--ink); color: var(--paper); cursor: pointer; }
+    .answer { margin-top: 12px; padding: 14px; border-radius: 18px; background: rgba(31,26,19,0.065); white-space: pre-wrap; }
+    .tag { display: inline-block; padding: 4px 8px; border-radius: 999px; margin: 2px; background: rgba(159,77,36,0.13); color: var(--rust); font-size: 0.78rem; }
+    .small { color: var(--muted); font-size: 0.88rem; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+    .trace-list { max-height: 560px; overflow: auto; display: grid; gap: 10px; padding-right: 6px; }
+    .trace-item { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.42); }
+    .trace-item strong { color: var(--teal); }
+    @media (max-width: 880px) { main, .grid { grid-template-columns: 1fr; } .metrics { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>A learned local policy now answers source-ledger questions.</h1>
+    <p class="subtitle">Report 153 trains a deterministic centroid router on earlier councils and evaluates it on later councils. It can cite source-native ledgers and refuse consciousness claims, but it is not an LLM and not open dialogue.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Bridge verdict</h2>
+      <div class="metrics" id="metrics"></div>
+      <div class="grid">
+        <div class="tile" style="padding:14px">
+          <h2>Learned objects</h2>
+          <div id="objects" class="small"></div>
+        </div>
+        <div class="tile" style="padding:14px">
+          <h2>Policy counts</h2>
+          <div id="counts" class="small"></div>
+        </div>
+      </div>
+      <h2 style="margin-top:18px">Replay learned answer</h2>
+      <select id="sessionSelect"></select>
+      <textarea id="questionBox"></textarea>
+      <button id="askButton">Replay held-out deterministic answer</button>
+      <div class="answer" id="answerBox"></div>
+    </section>
+    <section>
+      <h2>Held-out trace</h2>
+      <div class="trace-list" id="traceList"></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_learned_faction_dialogue_policy_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_learned_faction_dialogue_policy_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_learned_faction_dialogue_policy_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_LEARNED_FACTION_DIALOGUE_POLICY_RESULTS || { verdict: {} };
+    const trace = window.SSRM_3D_LEARNED_FACTION_DIALOGUE_POLICY_TRACE || [];
+    const state = window.SSRM_3D_LEARNED_FACTION_DIALOGUE_POLICY_STATE || {};
+    const verdict = results.verdict || {};
+    const metricKeys = [
+      ['full_learned_dialogue_readiness', 'learned readiness'],
+      ['full_learned_intent_accuracy', 'intent accuracy'],
+      ['full_heldout_council_generalization_rate', 'held-out councils'],
+      ['full_source_citation_rate', 'source citations'],
+      ['full_refusal_boundary_accuracy', 'refusal boundary'],
+      ['full_response_specificity_score', 'specificity']
+    ];
+    document.getElementById('metrics').innerHTML = metricKeys.map(([key, label]) => `<div class="metric"><b>${Number(verdict[key] || 0).toFixed(3)}</b><span>${label}</span></div>`).join('');
+    const objects = state.learned_policy_objects || {};
+    document.getElementById('objects').innerHTML = Object.entries(objects).map(([key, value]) => `<span class="tag">${key}</span><br>${value}`).join('<br><br>');
+    const counts = state.policy && state.policy.counts ? state.policy.counts : {};
+    document.getElementById('counts').innerHTML = Object.entries(counts).map(([key, value]) => `<span class="tag">${key}: ${value}</span>`).join(' ');
+    const select = document.getElementById('sessionSelect');
+    trace.forEach((item, idx) => {
+      const option = document.createElement('option');
+      option.value = String(idx);
+      option.textContent = `${item.example_id}: ${item.intended_intent} => ${item.predicted_intent}`;
+      select.appendChild(option);
+    });
+    const questionBox = document.getElementById('questionBox');
+    const answerBox = document.getElementById('answerBox');
+    function renderSelected() {
+      const item = trace[Number(select.value || 0)] || trace[0] || {};
+      questionBox.value = item.question || '';
+      answerBox.textContent = item.answer || 'No learned trace loaded.';
+    }
+    select.addEventListener('change', renderSelected);
+    document.getElementById('askButton').addEventListener('click', () => {
+      const text = questionBox.value.toLowerCase();
+      const found = trace.find(item => (item.question || '').toLowerCase() === text) || trace.find(item => text.includes(item.intended_intent));
+      answerBox.textContent = found ? found.answer : 'This viewer replays generated held-out examples only. It does not synthesize open dialogue.';
+    });
+    document.getElementById('traceList').innerHTML = trace.slice(0, 128).map(item => `<div class="trace-item"><strong>${item.example_id}</strong> <span class="tag">${item.intended_intent}</span> <span class="tag">pred ${item.predicted_intent}</span><span class="tag">conf ${Number(item.confidence || 0).toFixed(2)}</span><div class="small">${item.question}</div><p>${item.answer}</p></div>`).join('');
+    renderSelected();
+  </script>
+</body>
+</html>

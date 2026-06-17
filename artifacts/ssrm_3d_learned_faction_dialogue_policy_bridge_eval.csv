@@ -1,0 +1,10 @@
+condition,train_examples,eval_sessions,learned_intent_accuracy,heldout_council_generalization_rate,source_citation_rate,faction_stance_accuracy,budget_reason_accuracy,feedback_link_accuracy,refusal_boundary_accuracy,source_originality_accuracy,response_specificity_score,replay_trace_integrity,learned_dialogue_readiness
+integrated_learned_faction_dialogue_policy,192,192,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.6875,1.0,0.975
+no_learned_router,192,192,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.17
+no_source_native_ledger_features,192,192,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.575,1.0,0.746
+no_faction_vote_features,192,192,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.6625,1.0,0.873
+no_budget_evidence_features,192,192,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.6625,1.0,0.873
+no_feedback_features,192,192,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.6625,1.0,0.883
+no_refusal_training,192,192,0.875,1.0,0.875,1.0,1.0,1.0,0.0,1.0,0.6625,1.0,0.8405
+no_heldout_council_split,288,192,0.84375,0.0,0.84375,1.0,1.0,1.0,0.0,1.0,0.654687,1.0,0.73175
+no_trace_replay,192,192,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.6875,0.0,0.905

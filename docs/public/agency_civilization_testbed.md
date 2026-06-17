@@ -36,7 +36,7 @@ Report 147 adds place-based object navigation: objects are bound to places, rout
 
 Report 148 adds agent-made infrastructure: agents spend materials and coordinate labor to build roads, drains, watch posts, signs, covered walks, channels, and route improvements that mutate route cost, route hazard, object accessibility, and maintenance histories.
 
-This is still not a completed playable civilization. Report 149 adds infrastructure governance. Report 150 adds deterministic avatar questioning. Report 151 adds persistent faction dialogue over reconstructed rejected bodies. Report 152 stores accepted and rejected proposal bodies at source during the council loop, with source-native readiness `1.000000`. The next gate is learned faction/dialogue policy over persistent political histories, using source-native ledgers instead of scripted answers over deterministic records.
+This is still not a completed playable civilization. Report 149 adds infrastructure governance. Report 150 adds deterministic avatar questioning. Report 151 adds persistent faction dialogue over reconstructed rejected bodies. Report 152 stores accepted and rejected proposal bodies at source. Report 153 trains a deterministic learned faction-dialogue policy over source-native ledgers and reaches learned readiness `0.975000`. The next gate is a recurrent dialogue controller with persistent agent memory, turn-by-turn avatar interaction, and learned updates to faction state across live sessions.
 
 ## What The Testbed Can Study
 

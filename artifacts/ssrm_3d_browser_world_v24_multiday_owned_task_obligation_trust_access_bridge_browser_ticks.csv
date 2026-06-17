@@ -1,0 +1,541 @@
+tick,day,scene_id,focus_agent,obligation_visible,return_obligation_visible,trust_access_visible,followup_visible,repair_deferral_visible,residual_debt_visible,sensory_frequency_hz,flower_phase,public_behavior_marker,private_workspace_sealed
+0,1,v24-scene-d01,Ori,1,1,1,0,0,0,1.12,93.96,Ori accepts repair for sap hook; access begins recovering,1
+1,1,v24-scene-d01,Nari,0,0,1,0,0,0,1.12,225.241764,Nari carries owned-task state across this visit,1
+2,1,v24-scene-d01,Ori,1,1,1,1,0,1,1.23,16.663528,Ori follows up on sap hook; unresolved duty changes options,1
+3,1,v24-scene-d01,Nari,1,1,1,0,0,0,1.12,141.045292,Nari accepts repair for ink ledger; access begins recovering,1
+4,1,v24-scene-d01,Ori,1,1,1,0,0,0,1.12,277.547056,Ori accepts repair for sap hook; access begins recovering,1
+5,1,v24-scene-d01,Ori,0,0,1,0,0,0,1.12,58.50882,Ori carries owned-task state across this visit,1
+6,1,v24-scene-d01,Sova,1,1,1,0,0,0,1.12,200.230584,Sova accepts repair for moth lantern; access begins recovering,1
+7,1,v24-scene-d01,Nari,1,1,1,0,0,1,1.18,350.952348,Nari carries owned-task state across this visit,1
+8,1,v24-scene-d01,Melo,0,1,1,0,0,0,1.12,116.864112,Melo accepts repair for tally beads; access begins recovering,1
+9,1,v24-scene-d01,Keth,0,0,1,0,0,0,1.12,255.405876,Keth carries owned-task state across this visit,1
+10,1,v24-scene-d01,Melo,1,1,1,0,0,0,1.12,22.60764,Melo accepts repair for tally beads; access begins recovering,1
+11,1,v24-scene-d01,Ori,1,1,1,0,0,0,1.12,169.999404,Ori accepts repair for sap hook; access begins recovering,1
+12,1,v24-scene-d01,Vonn,1,0,1,0,1,0,1.18,313.111168,Vonn carries owned-task state across this visit,1
+13,1,v24-scene-d01,Ori,0,0,1,0,0,0,1.12,77.782932,Ori carries owned-task state across this visit,1
+14,1,v24-scene-d01,Ori,1,1,1,0,0,0,1.12,214.664696,Ori accepts repair for sap hook; access begins recovering,1
+15,1,v24-scene-d01,Keth,1,1,1,0,0,0,1.12,354.79646,Keth accepts repair for path cord; access begins recovering,1
+16,1,v24-scene-d01,Sova,1,1,1,1,1,1,1.23,160.148224,Sova follows up on moth lantern; unresolved duty changes options,1
+17,1,v24-scene-d01,Melo,0,0,1,0,0,0,1.12,277.099988,Melo carries owned-task state across this visit,1
+18,2,v24-scene-d02,Sova,1,1,1,0,0,0,1.12,39.419752,Sova accepts repair for moth lantern; access begins recovering,1
+19,2,v24-scene-d02,Nari,1,1,1,1,0,1,1.23,204.981516,Nari follows up on ink ledger; unresolved duty changes options,1
+20,2,v24-scene-d02,Sova,1,1,1,1,1,1,1.23,337.64328,Sova follows up on ember bowl; unresolved duty changes options,1
+21,2,v24-scene-d02,Ori,0,0,1,0,0,0,1.12,105.485044,Ori carries owned-task state across this visit,1
+22,2,v24-scene-d02,Vonn,1,0,1,1,0,1,1.29,260.596808,Vonn follows up on rain mirror; unresolved duty changes options,1
+23,2,v24-scene-d02,Keth,1,1,1,1,1,1,1.23,33.198572,Keth follows up on path cord; unresolved duty changes options,1
+24,2,v24-scene-d02,Melo,1,1,1,1,0,1,1.23,168.700336,Melo follows up on tally beads; unresolved duty changes options,1
+25,2,v24-scene-d02,Melo,1,1,1,0,0,0,1.12,290.6621,Melo accepts repair for tally beads; access begins recovering,1
+26,2,v24-scene-d02,Nari,1,1,1,0,0,0,1.12,68.373864,Nari accepts repair for ink ledger; access begins recovering,1
+27,2,v24-scene-d02,Sova,1,1,1,1,1,1,1.23,230.095628,Sova follows up on ember bowl; unresolved duty changes options,1
+28,2,v24-scene-d02,Melo,1,1,1,0,0,0,1.12,347.427392,Melo accepts repair for tally beads; access begins recovering,1
+29,2,v24-scene-d02,Sova,1,1,1,0,0,0,1.12,125.139156,Sova accepts repair for ember bowl; access begins recovering,1
+30,2,v24-scene-d02,Sova,1,1,1,0,0,0,1.12,251.96092,Sova accepts repair for ember bowl; access begins recovering,1
+31,2,v24-scene-d02,Ori,1,1,1,0,0,1,1.18,54.782684,Ori carries owned-task state across this visit,1
+32,2,v24-scene-d02,Sova,1,1,1,0,0,0,1.12,169.804448,Sova accepts repair for ember bowl; access begins recovering,1
+33,2,v24-scene-d02,Sova,0,0,1,0,0,0,1.12,313.186212,Sova carries owned-task state across this visit,1
+34,2,v24-scene-d02,Nari,1,1,1,1,1,1,1.23,110.447976,Nari follows up on ink ledger; unresolved duty changes options,1
+35,2,v24-scene-d02,Keth,1,1,1,0,0,0,1.12,225.35974,Keth accepts repair for path cord; access begins recovering,1
+36,3,v24-scene-d03,Melo,1,1,1,0,0,1,1.18,17.249504,Melo carries owned-task state across this visit,1
+37,3,v24-scene-d03,Melo,0,1,1,0,0,0,1.12,141.951268,Melo accepts repair for tally beads; access begins recovering,1
+38,3,v24-scene-d03,Vonn,1,0,1,1,0,1,1.29,311.953032,Vonn follows up on rain mirror; unresolved duty changes options,1
+39,3,v24-scene-d03,Nari,1,1,1,0,0,0,1.12,58.584796,Nari accepts repair for ink ledger; access begins recovering,1
+40,3,v24-scene-d03,Ori,1,1,1,0,0,0,1.12,195.08656,Ori accepts repair for sap hook; access begins recovering,1
+41,3,v24-scene-d03,Vonn,1,0,1,1,0,1,1.29,356.618324,Vonn follows up on rain mirror; unresolved duty changes options,1
+42,3,v24-scene-d03,Vonn,1,0,1,1,0,1,1.29,141.380088,Vonn follows up on rain mirror; unresolved duty changes options,1
+43,3,v24-scene-d03,Vonn,1,0,1,1,0,1,1.29,280.301852,Vonn follows up on rain mirror; unresolved duty changes options,1
+44,3,v24-scene-d03,Keth,1,1,1,0,0,0,1.12,19.883616,Keth accepts repair for path cord; access begins recovering,1
+45,3,v24-scene-d03,Melo,0,0,1,0,0,0,1.12,163.26538,Melo carries owned-task state across this visit,1
+46,3,v24-scene-d03,Nari,1,1,1,0,0,0,1.12,296.517144,Nari accepts repair for fern key; access begins recovering,1
+47,3,v24-scene-d03,Vonn,1,0,1,1,0,1,1.29,115.988908,Vonn follows up on rain mirror; unresolved duty changes options,1
+48,3,v24-scene-d03,Nari,1,1,1,0,0,0,1.12,214.360672,Nari accepts repair for fern key; access begins recovering,1
+49,3,v24-scene-d03,Sova,0,0,1,0,0,0,1.12,357.742436,Sova carries owned-task state across this visit,1
+50,3,v24-scene-d03,Vonn,1,0,1,1,0,1,1.29,160.6542,Vonn follows up on rain mirror; unresolved duty changes options,1
+51,3,v24-scene-d03,Melo,1,1,1,0,0,0,1.12,262.655964,Melo accepts repair for tally beads; access begins recovering,1
+52,3,v24-scene-d03,Nari,1,1,1,0,0,0,1.12,37.947728,Nari accepts repair for fern key; access begins recovering,1
+53,3,v24-scene-d03,Ori,0,0,1,0,0,0,1.12,178.909492,Ori carries owned-task state across this visit,1
+54,4,v24-scene-d04,Vonn,1,0,1,1,1,0,1.27,333.849256,Vonn accepts repair for rain mirror; access begins recovering,1
+55,4,v24-scene-d04,Keth,1,1,1,0,0,0,1.12,92.25102,Keth accepts repair for path cord; access begins recovering,1
+56,4,v24-scene-d04,Keth,1,1,1,0,0,1,1.18,245.392784,Keth carries owned-task state across this visit,1
+57,4,v24-scene-d04,Keth,1,1,1,0,0,0,1.12,10.094548,Keth accepts repair for path cord; access begins recovering,1
+58,4,v24-scene-d04,Sova,1,1,1,0,0,1,1.18,164.446312,Sova carries owned-task state across this visit,1
+59,4,v24-scene-d04,Vonn,1,1,1,0,0,0,1.12,283.098076,Vonn accepts repair for listening shell; access begins recovering,1
+60,4,v24-scene-d04,Keth,1,1,1,0,0,0,1.12,66.85984,Keth accepts repair for path cord; access begins recovering,1
+61,4,v24-scene-d04,Melo,0,0,1,0,0,0,1.12,198.141604,Melo carries owned-task state across this visit,1
+62,4,v24-scene-d04,Melo,1,1,1,0,0,0,1.12,335.023368,Melo accepts repair for tally beads; access begins recovering,1
+63,4,v24-scene-d04,Sova,1,1,1,0,0,0,1.12,112.735132,Sova accepts repair for ember bowl; access begins recovering,1
+64,4,v24-scene-d04,Vonn,1,1,1,1,1,1,1.23,280.506896,Vonn follows up on listening shell; unresolved duty changes options,1
+65,4,v24-scene-d04,Keth,0,0,1,0,0,0,1.12,31.40866,Keth carries owned-task state across this visit,1
+66,4,v24-scene-d04,Melo,0,1,1,0,0,0,1.12,170.710424,Melo accepts repair for tally beads; access begins recovering,1
+67,4,v24-scene-d04,Keth,1,1,1,0,0,0,1.12,307.212188,Keth accepts repair for path cord; access begins recovering,1
+68,4,v24-scene-d04,Nari,1,1,1,0,0,0,1.12,87.343952,Nari accepts repair for ink ledger; access begins recovering,1
+69,4,v24-scene-d04,Ori,0,0,1,0,0,0,1.12,225.885716,Ori carries owned-task state across this visit,1
+70,4,v24-scene-d04,Nari,1,0,1,0,1,0,1.16,353.44748,Nari accepts repair for ink ledger; access begins recovering,1
+71,4,v24-scene-d04,Vonn,1,1,1,0,1,0,1.16,139.299244,Vonn accepts repair for listening shell; access begins recovering,1
+72,5,v24-scene-d05,Nari,1,1,1,0,0,0,1.12,264.839008,Nari accepts repair for fern key; access begins recovering,1
+73,5,v24-scene-d05,Keth,0,0,1,0,0,0,1.12,47.010772,Keth carries owned-task state across this visit,1
+74,5,v24-scene-d05,Sova,1,1,1,0,0,0,1.12,187.522536,Sova accepts repair for moth lantern; access begins recovering,1
+75,5,v24-scene-d05,Sova,1,1,1,1,1,1,1.27,342.2243,Sova follows up on ember bowl; unresolved duty changes options,1
+76,5,v24-scene-d05,Melo,1,1,1,0,0,0,1.12,104.156064,Melo accepts repair for tally beads; access begins recovering,1
+77,5,v24-scene-d05,Vonn,0,0,1,0,0,0,1.12,237.857828,Vonn carries owned-task state across this visit,1
+78,5,v24-scene-d05,Sova,1,1,1,1,1,1,1.23,43.589592,Sova follows up on ember bowl; unresolved duty changes options,1
+79,5,v24-scene-d05,Melo,1,1,1,0,0,0,1.12,148.821356,Melo accepts repair for tally beads; access begins recovering,1
+80,5,v24-scene-d05,Ori,1,1,1,0,0,0,1.12,296.21312,Ori accepts repair for sap hook; access begins recovering,1
+81,5,v24-scene-d05,Keth,0,0,1,0,0,0,1.12,66.284884,Keth carries owned-task state across this visit,1
+82,5,v24-scene-d05,Melo,1,1,1,1,0,1,1.23,222.546648,Melo follows up on tally beads; unresolved duty changes options,1
+83,5,v24-scene-d05,Vonn,1,1,1,0,0,0,1.12,349.348412,Vonn accepts repair for listening shell; access begins recovering,1
+84,5,v24-scene-d05,Keth,1,1,1,0,0,0,1.12,121.010176,Keth accepts repair for path cord; access begins recovering,1
+85,5,v24-scene-d05,Sova,1,1,1,0,0,0,1.12,261.14194,Sova accepts repair for ember bowl; access begins recovering,1
+86,5,v24-scene-d05,Ori,1,1,1,1,1,0,1.23,59.763704,Ori follows up on sap hook; unresolved duty changes options,1
+87,5,v24-scene-d05,Keth,1,1,1,0,0,1,1.18,191.995468,Keth carries owned-task state across this visit,1
+88,5,v24-scene-d05,Keth,1,1,1,0,0,0,1.12,316.697232,Keth accepts repair for path cord; access begins recovering,1
+89,5,v24-scene-d05,Ori,1,1,1,1,0,1,1.23,117.208996,Ori follows up on sap hook; unresolved duty changes options,1
+90,6,v24-scene-d06,Melo,1,1,1,0,0,0,1.18,231.80876,Melo accepts repair for tally beads; access begins recovering,1
+91,6,v24-scene-d06,Ori,1,1,1,0,0,0,1.12,8.580524,Ori accepts repair for sap hook; access begins recovering,1
+92,6,v24-scene-d06,Melo,1,1,1,1,0,1,1.23,155.992288,Melo follows up on tally beads; unresolved duty changes options,1
+93,6,v24-scene-d06,Keth,0,0,1,0,0,0,1.12,277.574052,Keth carries owned-task state across this visit,1
+94,6,v24-scene-d06,Keth,1,1,1,0,0,0,1.12,54.455816,Keth accepts repair for path cord; access begins recovering,1
+95,6,v24-scene-d06,Ori,0,1,1,0,0,0,1.12,192.16758,Ori accepts repair for sap hook; access begins recovering,1
+96,6,v24-scene-d06,Melo,1,1,1,0,0,0,1.12,334.719344,Melo accepts repair for tally beads; access begins recovering,1
+97,6,v24-scene-d06,Melo,0,0,1,0,0,0,1.12,115.681108,Melo carries owned-task state across this visit,1
+98,6,v24-scene-d06,Ori,1,1,1,0,0,0,1.12,248.932872,Ori accepts repair for sap hook; access begins recovering,1
+99,6,v24-scene-d06,Ori,1,1,1,0,0,0,1.12,27.854636,Ori accepts repair for sap hook; access begins recovering,1
+100,6,v24-scene-d06,Melo,1,1,1,1,1,1,1.23,181.1064,Melo follows up on tally beads; unresolved duty changes options,1
+101,6,v24-scene-d06,Melo,1,1,1,0,0,0,1.12,297.228164,Melo accepts repair for tally beads; access begins recovering,1
+102,6,v24-scene-d06,Vonn,1,1,1,0,0,0,1.12,80.989928,Vonn accepts repair for listening shell; access begins recovering,1
+103,6,v24-scene-d06,Melo,1,1,1,0,0,0,1.12,215.071692,Melo accepts repair for tally beads; access begins recovering,1
+104,6,v24-scene-d06,Sova,1,1,1,1,1,1,1.23,15.583456,Sova follows up on ember bowl; unresolved duty changes options,1
+105,6,v24-scene-d06,Sova,1,1,1,1,0,0,1.23,145.06522,Sova accepts repair for ember bowl; access begins recovering,1
+106,6,v24-scene-d06,Sova,1,1,1,0,0,0,1.12,273.046984,Sova accepts repair for moth lantern; access begins recovering,1
+107,6,v24-scene-d06,Ori,1,1,1,0,0,0,1.12,47.128748,Ori accepts repair for sap hook; access begins recovering,1
+108,7,v24-scene-d07,Nari,1,1,1,0,1,0,1.16,183.618512,Nari accepts repair for fern key; access begins recovering,1
+109,7,v24-scene-d07,Vonn,0,0,1,0,0,0,1.12,319.710276,Vonn carries owned-task state across this visit,1
+110,7,v24-scene-d07,Vonn,1,0,1,0,0,1,1.18,105.09204,Vonn carries owned-task state across this visit,1
+111,7,v24-scene-d07,Keth,1,1,1,0,1,1,1.18,248.313804,Keth accepts a deferral but keeps residual debt visible,1
+112,7,v24-scene-d07,Nari,1,1,1,0,0,0,1.12,5.965568,Nari accepts repair for fern key; access begins recovering,1
+113,7,v24-scene-d07,Melo,0,0,1,0,0,0,1.12,150.557332,Melo carries owned-task state across this visit,1
+114,7,v24-scene-d07,Ori,1,1,1,0,0,0,1.12,283.809096,Ori accepts repair for sap hook; access begins recovering,1
+115,7,v24-scene-d07,Melo,1,1,1,0,1,1,1.22,81.82086,Melo carries owned-task state across this visit,1
+116,7,v24-scene-d07,Ori,1,1,1,0,0,0,1.12,201.652624,Ori accepts repair for sap hook; access begins recovering,1
+117,7,v24-scene-d07,Keth,1,1,1,0,0,0,1.12,341.784388,Keth accepts repair for path cord; access begins recovering,1
+118,7,v24-scene-d07,Melo,1,1,1,0,0,0,1.12,123.126152,Melo accepts repair for tally beads; access begins recovering,1
+119,7,v24-scene-d07,Keth,1,1,1,1,1,1,1.23,282.427916,Keth follows up on path cord; unresolved duty changes options,1
+120,7,v24-scene-d07,Nari,1,1,1,0,0,0,1.12,37.33968,Nari accepts repair for fern key; access begins recovering,1
+121,7,v24-scene-d07,Melo,0,0,1,0,0,0,1.12,169.831444,Melo carries owned-task state across this visit,1
+122,7,v24-scene-d07,Ori,1,1,1,0,0,1,1.18,317.303208,Ori carries owned-task state across this visit,1
+123,7,v24-scene-d07,Ori,1,1,1,0,0,0,1.12,82.004972,Ori accepts repair for sap hook; access begins recovering,1
+124,7,v24-scene-d07,Vonn,0,0,1,1,0,1,1.23,240.636736,Vonn follows up on rain mirror; unresolved duty changes options,1
+125,7,v24-scene-d07,Nari,0,0,1,0,0,0,1.12,4.3085,Nari carries owned-task state across this visit,1
+126,8,v24-scene-d08,Melo,1,1,1,1,1,1,1.23,161.528264,Melo follows up on tally beads; unresolved duty changes options,1
+127,8,v24-scene-d08,Keth,1,1,1,0,0,0,1.12,275.230028,Keth accepts repair for path cord; access begins recovering,1
+128,8,v24-scene-d08,Sova,1,1,1,0,0,0,1.12,55.361792,Sova accepts repair for ember bowl; access begins recovering,1
+129,8,v24-scene-d08,Sova,0,0,1,0,0,0,1.12,186.643556,Sova carries owned-task state across this visit,1
+130,8,v24-scene-d08,Sova,1,1,1,0,0,0,1.12,321.10532,Sova accepts repair for ember bowl; access begins recovering,1
+131,8,v24-scene-d08,Keth,1,1,1,0,0,0,1.12,98.817084,Keth accepts repair for path cord; access begins recovering,1
+132,8,v24-scene-d08,Ori,1,1,1,0,0,0,1.12,236.528848,Ori accepts repair for sap hook; access begins recovering,1
+133,8,v24-scene-d08,Sova,0,0,1,0,0,0,1.12,22.330612,Sova carries owned-task state across this visit,1
+134,8,v24-scene-d08,Nari,1,0,1,0,1,0,1.16,157.152376,Nari accepts repair for ink ledger; access begins recovering,1
+135,8,v24-scene-d08,Sova,1,1,1,0,0,0,1.12,298.13414,Sova accepts repair for moth lantern; access begins recovering,1
+136,8,v24-scene-d08,Ori,1,1,1,0,0,0,1.12,72.215904,Ori accepts repair for sap hook; access begins recovering,1
+137,8,v24-scene-d08,Ori,0,0,1,0,0,0,1.12,213.177668,Ori carries owned-task state across this visit,1
+138,8,v24-scene-d08,Vonn,1,0,1,0,0,1,1.18,7.029432,Vonn carries owned-task state across this visit,1
+139,8,v24-scene-d08,Melo,1,1,1,0,0,0,1.12,120.511196,Melo accepts repair for tally beads; access begins recovering,1
+140,8,v24-scene-d08,Keth,1,1,1,0,0,0,1.12,269.11296,Keth accepts repair for path cord; access begins recovering,1
+141,8,v24-scene-d08,Sova,0,0,1,0,0,0,1.12,41.604724,Sova carries owned-task state across this visit,1
+142,8,v24-scene-d08,Sova,1,1,1,0,0,0,1.12,176.066488,Sova accepts repair for ember bowl; access begins recovering,1
+143,8,v24-scene-d08,Ori,1,1,1,1,0,1,1.23,329.528252,Ori follows up on sap hook; unresolved duty changes options,1
+144,9,v24-scene-d09,Melo,1,1,1,1,1,1,1.23,114.248016,Melo follows up on tally beads; unresolved duty changes options,1
+145,9,v24-scene-d09,Sova,0,0,1,0,0,0,1.12,231.19978,Sova carries owned-task state across this visit,1
+146,9,v24-scene-d09,Melo,1,1,1,0,0,0,1.12,9.291544,Melo accepts repair for tally beads; access begins recovering,1
+147,9,v24-scene-d09,Melo,1,1,1,0,0,0,1.12,148.213308,Melo accepts repair for tally beads; access begins recovering,1
+148,9,v24-scene-d09,Ori,1,1,1,0,0,1,1.24,308.345072,Ori carries owned-task state across this visit,1
+149,9,v24-scene-d09,Melo,0,0,1,0,0,0,1.12,55.996836,Melo carries owned-task state across this visit,1
+150,9,v24-scene-d09,Keth,1,1,1,0,0,0,1.12,202.5586,Keth accepts repair for path cord; access begins recovering,1
+151,9,v24-scene-d09,Sova,1,1,1,0,0,0,1.12,330.590364,Sova accepts repair for ember bowl; access begins recovering,1
+152,9,v24-scene-d09,Melo,1,1,1,1,0,1,1.23,127.682128,Melo follows up on tally beads; unresolved duty changes options,1
+153,9,v24-scene-d09,Vonn,0,0,1,1,0,1,1.23,265.723892,Vonn follows up on rain mirror; unresolved duty changes options,1
+154,9,v24-scene-d09,Keth,1,1,1,0,0,0,1.12,26.145656,Keth accepts repair for path cord; access begins recovering,1
+155,9,v24-scene-d09,Nari,1,1,1,0,1,1,1.22,181.73742,Nari carries owned-task state across this visit,1
+156,9,v24-scene-d09,Keth,1,1,1,0,0,0,1.12,303.989184,Keth accepts repair for path cord; access begins recovering,1
+157,9,v24-scene-d09,Nari,1,1,1,0,0,0,1.12,84.120948,Nari accepts repair for ink ledger; access begins recovering,1
+158,9,v24-scene-d09,Vonn,1,0,1,0,0,1,1.18,237.592712,Vonn carries owned-task state across this visit,1
+159,9,v24-scene-d09,Sova,1,1,1,0,0,1,1.18,16.184476,Sova carries owned-task state across this visit,1
+160,9,v24-scene-d09,Keth,1,1,1,1,0,0,1.23,155.95624,Keth follows up on path cord; unresolved duty changes options,1
+161,9,v24-scene-d09,Ori,1,1,1,0,0,0,1.18,288.008004,Ori accepts repair for sap hook; access begins recovering,1
+162,10,v24-scene-d10,Ori,1,1,1,0,0,0,1.12,40.537768,Ori accepts repair for sap hook; access begins recovering,1
+163,10,v24-scene-d10,Melo,1,1,1,1,1,1,1.23,205.889532,Melo follows up on tally beads; unresolved duty changes options,1
+164,10,v24-scene-d10,Keth,1,1,1,0,0,0,1.12,319.591296,Keth accepts repair for path cord; access begins recovering,1
+165,10,v24-scene-d10,Keth,0,0,1,0,0,0,1.12,100.55306,Keth carries owned-task state across this visit,1
+166,10,v24-scene-d10,Ori,1,1,1,1,0,1,1.23,253.184824,Ori follows up on sap hook; unresolved duty changes options,1
+167,10,v24-scene-d10,Sova,1,1,1,0,0,0,1.12,17.566588,Sova accepts repair for ember bowl; access begins recovering,1
+168,10,v24-scene-d10,Melo,1,1,1,0,0,0,1.12,157.698352,Melo accepts repair for tally beads; access begins recovering,1
+169,10,v24-scene-d10,Nari,0,0,1,0,0,0,1.12,295.030116,Nari carries owned-task state across this visit,1
+170,10,v24-scene-d10,Nari,1,1,1,1,1,1,1.23,85.03188,Nari follows up on ink ledger; unresolved duty changes options,1
+171,10,v24-scene-d10,Melo,1,1,1,0,0,0,1.12,202.363644,Melo accepts repair for tally beads; access begins recovering,1
+172,10,v24-scene-d10,Ori,1,1,1,0,0,1,1.18,351.875408,Ori carries owned-task state across this visit,1
+173,10,v24-scene-d10,Ori,1,1,1,0,0,0,1.12,116.577172,Ori accepts repair for sap hook; access begins recovering,1
+174,10,v24-scene-d10,Keth,1,1,1,1,1,1,1.23,279.508936,Keth follows up on path cord; unresolved duty changes options,1
+175,10,v24-scene-d10,Vonn,1,0,1,1,0,1,1.23,54.1307,Vonn follows up on rain mirror; unresolved duty changes options,1
+176,10,v24-scene-d10,Keth,1,1,1,0,0,0,1.12,174.552464,Keth accepts repair for path cord; access begins recovering,1
+177,10,v24-scene-d10,Ori,0,0,1,0,0,0,1.12,314.304228,Ori carries owned-task state across this visit,1
+178,10,v24-scene-d10,Vonn,1,0,1,0,1,0,1.16,95.175992,Vonn accepts repair for rain mirror; access begins recovering,1
+179,10,v24-scene-d10,Sova,1,1,1,0,0,0,1.12,222.847756,Sova accepts repair for moth lantern; access begins recovering,1
+180,11,v24-scene-d11,Melo,1,1,1,0,0,0,1.12,356.88752,Melo accepts repair for tally beads; access begins recovering,1
+181,11,v24-scene-d11,Sova,0,0,1,0,0,0,1.12,136.639284,Sova carries owned-task state across this visit,1
+182,11,v24-scene-d11,Ori,0,1,1,0,0,0,1.12,271.101048,Ori accepts repair for sap hook; access begins recovering,1
+183,11,v24-scene-d11,Vonn,1,1,1,0,0,0,1.12,58.492812,Vonn accepts repair for listening shell; access begins recovering,1
+184,11,v24-scene-d11,Melo,1,1,1,0,0,0,1.12,192.574576,Melo accepts repair for tally beads; access begins recovering,1
+185,11,v24-scene-d11,Nari,1,1,1,1,0,1,1.23,353.08634,Nari follows up on ink ledger; unresolved duty changes options,1
+186,11,v24-scene-d11,Sova,1,1,1,0,0,0,1.12,111.628104,Sova accepts repair for moth lantern; access begins recovering,1
+187,11,v24-scene-d11,Nari,1,1,1,0,0,0,1.12,248.129868,Nari accepts repair for ink ledger; access begins recovering,1
+188,11,v24-scene-d11,Vonn,1,0,1,1,1,1,1.23,50.181632,Vonn follows up on rain mirror; unresolved duty changes options,1
+189,11,v24-scene-d11,Melo,0,0,1,0,0,0,1.12,157.123396,Melo carries owned-task state across this visit,1
+190,11,v24-scene-d11,Vonn,1,0,1,1,0,1,1.23,315.92516,Vonn follows up on rain mirror; unresolved duty changes options,1
+191,11,v24-scene-d11,Ori,1,1,1,0,0,0,1.12,81.396924,Ori accepts repair for sap hook; access begins recovering,1
+192,11,v24-scene-d11,Ori,1,1,1,0,1,1,1.18,222.438688,Ori carries owned-task state across this visit,1
+193,11,v24-scene-d11,Keth,0,0,1,0,0,0,1.12,350.390452,Keth carries owned-task state across this visit,1
+194,11,v24-scene-d11,Nari,1,1,1,0,0,1,1.18,140.282216,Nari carries owned-task state across this visit,1
+195,11,v24-scene-d11,Keth,1,1,1,0,0,0,1.12,266.19398,Keth accepts repair for path cord; access begins recovering,1
+196,11,v24-scene-d11,Keth,1,1,1,0,1,0,1.16,46.355744,Keth accepts repair for path cord; access begins recovering,1
+197,11,v24-scene-d11,Keth,0,0,1,0,0,0,1.12,186.077508,Keth carries owned-task state across this visit,1
+198,12,v24-scene-d12,Melo,1,1,1,0,0,0,1.12,321.707272,Melo accepts repair for tally beads; access begins recovering,1
+199,12,v24-scene-d12,Nari,1,1,1,1,0,1,1.23,113.959036,Nari follows up on fern key; unresolved duty changes options,1
+200,12,v24-scene-d12,Keth,1,1,1,0,0,0,1.12,237.1308,Keth accepts repair for path cord; access begins recovering,1
+201,12,v24-scene-d12,Vonn,1,0,1,1,0,1,1.23,28.292564,Vonn follows up on rain mirror; unresolved duty changes options,1
+202,12,v24-scene-d12,Melo,1,1,1,0,0,0,1.12,145.294328,Melo accepts repair for tally beads; access begins recovering,1
+203,12,v24-scene-d12,Nari,1,1,1,0,0,1,1.24,305.426092,Nari carries owned-task state across this visit,1
+204,12,v24-scene-d12,Vonn,1,0,1,0,0,1,1.18,82.317856,Vonn carries owned-task state across this visit,1
+205,12,v24-scene-d12,Keth,0,0,1,0,0,0,1.12,201.67962,Keth carries owned-task state across this visit,1
+206,12,v24-scene-d12,Ori,1,1,1,0,0,1,1.18,351.571384,Ori carries owned-task state across this visit,1
+207,12,v24-scene-d12,Ori,1,1,1,1,0,1,1.23,133.233148,Ori follows up on sap hook; unresolved duty changes options,1
+208,12,v24-scene-d12,Sova,1,1,1,0,0,0,1.12,257.614912,Sova accepts repair for ember bowl; access begins recovering,1
+209,12,v24-scene-d12,Melo,0,0,1,0,0,0,1.12,27.686676,Melo carries owned-task state across this visit,1
+210,12,v24-scene-d12,Vonn,1,0,1,1,0,1,1.23,186.48844,Vonn follows up on rain mirror; unresolved duty changes options,1
+211,12,v24-scene-d12,Sova,0,1,1,0,0,1,1.18,318.920204,Sova carries owned-task state across this visit,1
+212,12,v24-scene-d12,Sova,1,1,1,1,0,0,1.23,96.981968,Sova accepts repair for moth lantern; access begins recovering,1
+213,12,v24-scene-d12,Keth,1,1,1,0,0,0,1.12,218.913732,Keth accepts repair for path cord; access begins recovering,1
+214,12,v24-scene-d12,Ori,1,1,1,0,0,0,1.12,356.625496,Ori accepts repair for sap hook; access begins recovering,1
+215,12,v24-scene-d12,Keth,1,1,1,0,0,0,1.12,136.75726,Keth accepts repair for path cord; access begins recovering,1
+216,13,v24-scene-d13,Sova,1,1,1,0,0,0,1.12,273.217024,Sova accepts repair for ember bowl; access begins recovering,1
+217,13,v24-scene-d13,Ori,0,0,1,0,0,0,1.12,51.758788,Ori carries owned-task state across this visit,1
+218,13,v24-scene-d13,Ori,1,1,1,0,1,1,1.22,204.100552,Ori carries owned-task state across this visit,1
+219,13,v24-scene-d13,Sova,1,1,1,0,0,0,1.12,329.982316,Sova accepts repair for ember bowl; access begins recovering,1
+220,13,v24-scene-d13,Nari,1,1,1,1,0,0,1.23,119.84408,Nari accepts repair for fern key; access begins recovering,1
+221,13,v24-scene-d13,Keth,0,0,1,0,0,0,1.12,236.555844,Keth carries owned-task state across this visit,1
+222,13,v24-scene-d13,Nari,1,1,1,0,0,0,1.12,12.227608,Nari accepts repair for fern key; access begins recovering,1
+223,13,v24-scene-d13,Nari,1,1,1,0,0,1,1.18,167.789372,Nari carries owned-task state across this visit,1
+224,13,v24-scene-d13,Ori,1,1,1,0,0,0,1.12,290.071136,Ori accepts repair for sap hook; access begins recovering,1
+225,13,v24-scene-d13,Nari,1,1,1,0,0,1,1.18,85.6329,Nari carries owned-task state across this visit,1
+226,13,v24-scene-d13,Nari,1,1,1,0,0,0,1.12,210.334664,Nari accepts repair for ink ledger; access begins recovering,1
+227,13,v24-scene-d13,Melo,1,1,1,0,0,0,1.12,350.466428,Melo accepts repair for tally beads; access begins recovering,1
+228,13,v24-scene-d13,Melo,1,1,1,0,0,1,1.18,143.608192,Melo carries owned-task state across this visit,1
+229,13,v24-scene-d13,Keth,0,0,1,0,0,0,1.12,267.929956,Keth carries owned-task state across this visit,1
+230,13,v24-scene-d13,Nari,1,1,1,0,0,0,1.12,43.60172,Nari accepts repair for fern key; access begins recovering,1
+231,13,v24-scene-d13,Melo,1,1,1,0,0,0,1.12,174.053484,Melo accepts repair for tally beads; access begins recovering,1
+232,13,v24-scene-d13,Ori,1,1,1,0,1,0,1.16,310.585248,Ori accepts repair for sap hook; access begins recovering,1
+233,13,v24-scene-d13,Nari,0,0,1,0,0,0,1.12,92.727012,Nari carries owned-task state across this visit,1
+234,14,v24-scene-d14,Ori,1,1,1,0,0,0,1.12,223.516776,Ori accepts repair for sap hook; access begins recovering,1
+235,14,v24-scene-d14,Vonn,1,0,1,0,0,1,1.18,25.24854,Vonn carries owned-task state across this visit,1
+236,14,v24-scene-d14,Ori,1,1,1,0,1,1,1.22,156.820304,Ori carries owned-task state across this visit,1
+237,14,v24-scene-d14,Keth,0,0,1,0,0,0,1.12,283.532068,Keth carries owned-task state across this visit,1
+238,14,v24-scene-d14,Keth,1,1,1,0,0,0,1.12,60.413832,Keth accepts repair for path cord; access begins recovering,1
+239,14,v24-scene-d14,Keth,1,1,1,0,0,0,1.12,199.335596,Keth accepts repair for path cord; access begins recovering,1
+240,14,v24-scene-d14,Keth,0,1,1,1,1,1,1.23,1.05736,Keth follows up on path cord; unresolved duty changes options,1
+241,14,v24-scene-d14,Sova,0,0,1,0,0,0,1.12,110.749124,Sova carries owned-task state across this visit,1
+242,14,v24-scene-d14,Melo,1,1,1,0,0,0,1.12,246.420888,Melo accepts repair for tally beads; access begins recovering,1
+243,14,v24-scene-d14,Nari,1,1,1,1,1,1,1.23,44.512652,Nari follows up on fern key; unresolved duty changes options,1
+244,14,v24-scene-d14,Melo,1,1,1,0,0,0,1.12,164.264416,Melo accepts repair for tally beads; access begins recovering,1
+245,14,v24-scene-d14,Sova,0,0,1,0,0,0,1.12,306.43618,Sova carries owned-task state across this visit,1
+246,14,v24-scene-d14,Vonn,1,0,1,1,0,1,1.23,104.027944,Vonn follows up on rain mirror; unresolved duty changes options,1
+247,14,v24-scene-d14,Melo,1,1,1,0,1,1,1.18,235.249708,Melo carries owned-task state across this visit,1
+248,14,v24-scene-d14,Nari,1,1,1,0,0,0,1.12,356.321472,Nari accepts repair for fern key; access begins recovering,1
+249,14,v24-scene-d14,Ori,1,1,1,0,0,0,1.12,135.243236,Ori accepts repair for sap hook; access begins recovering,1
+250,14,v24-scene-d14,Sova,1,1,1,0,0,0,1.12,264.485,Sova accepts repair for ember bowl; access begins recovering,1
+251,14,v24-scene-d14,Sova,1,1,1,1,1,1,1.23,68.626764,Sova follows up on moth lantern; unresolved duty changes options,1
+252,15,v24-scene-d15,Nari,1,1,1,0,0,0,1.12,176.236528,Nari accepts repair for fern key; access begins recovering,1
+253,15,v24-scene-d15,Keth,1,1,1,0,0,0,1.12,316.368292,Keth accepts repair for path cord; access begins recovering,1
+254,15,v24-scene-d15,Keth,1,1,1,0,1,1,1.18,115.350056,Keth accepts a deferral but keeps residual debt visible,1
+255,15,v24-scene-d15,Keth,1,1,1,0,0,0,1.12,234.21182,Keth accepts repair for path cord; access begins recovering,1
+256,15,v24-scene-d15,Melo,1,1,1,0,0,0,1.12,15.553584,Melo accepts repair for tally beads; access begins recovering,1
+257,15,v24-scene-d15,Keth,0,0,1,0,0,0,1.12,154.095348,Keth carries owned-task state across this visit,1
+258,15,v24-scene-d15,Melo,1,1,1,1,1,1,1.23,316.197112,Melo follows up on tally beads; unresolved duty changes options,1
+259,15,v24-scene-d15,Melo,1,1,1,0,0,0,1.12,60.218876,Melo accepts repair for tally beads; access begins recovering,1
+260,15,v24-scene-d15,Ori,1,1,1,0,0,0,1.12,207.61064,Ori accepts repair for sap hook; access begins recovering,1
+261,15,v24-scene-d15,Keth,0,0,1,0,0,0,1.12,337.682404,Keth carries owned-task state across this visit,1
+262,15,v24-scene-d15,Melo,1,1,1,0,0,1,1.18,131.204168,Melo carries owned-task state across this visit,1
+263,15,v24-scene-d15,Melo,1,1,1,0,0,0,1.12,255.905932,Melo accepts repair for tally beads; access begins recovering,1
+264,15,v24-scene-d15,Keth,1,1,1,0,0,0,1.12,32.407696,Keth accepts repair for path cord; access begins recovering,1
+265,15,v24-scene-d15,Nari,0,0,1,0,0,0,1.12,174.57946,Nari carries owned-task state across this visit,1
+266,15,v24-scene-d15,Keth,1,1,1,0,0,0,1.12,310.251224,Keth accepts repair for path cord; access begins recovering,1
+267,15,v24-scene-d15,Melo,1,1,1,0,0,0,1.12,91.592988,Melo accepts repair for tally beads; access begins recovering,1
+268,15,v24-scene-d15,Melo,1,1,1,0,0,0,1.12,230.514752,Melo accepts repair for tally beads; access begins recovering,1
+269,15,v24-scene-d15,Vonn,0,0,1,0,1,0,1.16,2.076516,Vonn accepts repair for rain mirror; access begins recovering,1
+270,16,v24-scene-d16,Ori,1,1,1,0,0,0,1.12,141.05628,Ori accepts repair for sap hook; access begins recovering,1
+271,16,v24-scene-d16,Keth,1,1,1,0,0,0,1.12,269.088044,Keth accepts repair for path cord; access begins recovering,1
+272,16,v24-scene-d16,Keth,1,1,1,0,0,0,1.12,48.009808,Keth accepts repair for path cord; access begins recovering,1
+273,16,v24-scene-d16,Vonn,0,0,1,0,0,0,1.12,191.391572,Vonn carries owned-task state across this visit,1
+274,16,v24-scene-d16,Keth,1,1,1,1,0,1,1.23,342.813336,Keth follows up on path cord; unresolved duty changes options,1
+275,16,v24-scene-d16,Ori,1,1,1,0,0,0,1.12,103.5651,Ori accepts repair for sap hook; access begins recovering,1
+276,16,v24-scene-d16,Nari,1,1,1,0,0,0,1.12,244.906864,Nari accepts repair for ink ledger; access begins recovering,1
+277,16,v24-scene-d16,Keth,1,1,1,0,0,0,1.18,33.238628,Keth accepts repair for path cord; access begins recovering,1
+278,16,v24-scene-d16,Vonn,1,1,1,0,0,0,1.12,156.700392,Vonn accepts repair for listening shell; access begins recovering,1
+279,16,v24-scene-d16,Melo,1,1,1,0,0,1,1.18,305.002156,Melo carries owned-task state across this visit,1
+280,16,v24-scene-d16,Ori,1,1,1,1,0,1,1.23,95.13392,Ori follows up on sap hook; unresolved duty changes options,1
+281,16,v24-scene-d16,Sova,1,1,1,0,0,0,1.12,209.835684,Sova accepts repair for moth lantern; access begins recovering,1
+282,16,v24-scene-d16,Sova,1,1,1,0,0,0,1.12,346.337448,Sova accepts repair for ember bowl; access begins recovering,1
+283,16,v24-scene-d16,Vonn,1,0,1,0,1,0,1.16,126.829212,Vonn accepts repair for rain mirror; access begins recovering,1
+284,16,v24-scene-d16,Nari,1,1,1,1,1,1,1.23,286.980976,Nari follows up on ink ledger; unresolved duty changes options,1
+285,16,v24-scene-d16,Melo,1,1,1,0,0,0,1.12,44.31274,Melo accepts repair for tally beads; access begins recovering,1
+286,16,v24-scene-d16,Vonn,1,1,1,0,0,0,1.12,175.974504,Vonn accepts repair for listening shell; access begins recovering,1
+287,16,v24-scene-d16,Keth,1,1,1,0,1,0,1.16,320.976268,Keth accepts repair for path cord; access begins recovering,1
+288,17,v24-scene-d17,Melo,1,1,1,0,0,0,1.12,97.406032,Melo accepts repair for tally beads; access begins recovering,1
+289,17,v24-scene-d17,Keth,0,0,1,0,0,0,1.12,235.947796,Keth carries owned-task state across this visit,1
+290,17,v24-scene-d17,Melo,1,1,1,0,0,0,1.12,3.14956,Melo accepts repair for tally beads; access begins recovering,1
+291,17,v24-scene-d17,Vonn,1,1,1,1,1,1,1.23,169.711324,Vonn follows up on listening shell; unresolved duty changes options,1
+292,17,v24-scene-d17,Sova,1,1,1,0,0,0,1.12,282.203088,Sova accepts repair for moth lantern; access begins recovering,1
+293,17,v24-scene-d17,Vonn,1,1,1,0,0,0,1.12,64.754852,Vonn accepts repair for listening shell; access begins recovering,1
+294,17,v24-scene-d17,Nari,1,1,1,0,0,0,1.12,197.626616,Nari accepts repair for ink ledger; access begins recovering,1
+295,17,v24-scene-d17,Vonn,1,1,1,0,1,0,1.16,331.73838,Vonn accepts repair for listening shell; access begins recovering,1
+296,17,v24-scene-d17,Vonn,1,0,1,1,1,1,1.23,138.600144,Vonn follows up on rain mirror; unresolved duty changes options,1
+297,17,v24-scene-d17,Ori,1,1,1,0,0,0,1.12,251.971908,Ori accepts repair for sap hook; access begins recovering,1
+298,17,v24-scene-d17,Vonn,0,0,1,1,0,1,1.23,56.443672,Vonn follows up on rain mirror; unresolved duty changes options,1
+299,17,v24-scene-d17,Vonn,1,0,1,1,0,1,1.23,183.265436,Vonn follows up on rain mirror; unresolved duty changes options,1
+300,17,v24-scene-d17,Vonn,1,0,1,1,0,1,1.23,322.1872,Vonn follows up on rain mirror; unresolved duty changes options,1
+301,17,v24-scene-d17,Nari,0,0,1,0,0,0,1.12,80.018964,Nari carries owned-task state across this visit,1
+302,17,v24-scene-d17,Ori,1,1,1,0,0,0,1.12,214.480728,Ori accepts repair for sap hook; access begins recovering,1
+303,17,v24-scene-d17,Nari,1,1,1,1,1,1,1.23,18.622492,Nari follows up on ink ledger; unresolved duty changes options,1
+304,17,v24-scene-d17,Keth,1,1,1,0,0,0,1.12,133.534256,Keth accepts repair for path cord; access begins recovering,1
+305,17,v24-scene-d17,Vonn,1,0,1,1,0,1,1.23,296.79602,Vonn follows up on rain mirror; unresolved duty changes options,1
+306,18,v24-scene-d18,Sova,1,1,1,1,1,1,1.27,67.115784,Sova follows up on ember bowl; unresolved duty changes options,1
+307,18,v24-scene-d18,Keth,1,1,1,0,0,0,1.12,186.627548,Keth accepts repair for path cord; access begins recovering,1
+308,18,v24-scene-d18,Ori,1,1,1,0,0,0,1.18,337.879312,Ori carries owned-task state across this visit,1
+309,18,v24-scene-d18,Keth,0,0,1,0,0,0,1.12,106.511076,Keth carries owned-task state across this visit,1
+310,18,v24-scene-d18,Keth,1,1,1,0,0,0,1.12,243.39284,Keth accepts repair for path cord; access begins recovering,1
+311,18,v24-scene-d18,Ori,1,1,1,1,0,0,1.23,34.464604,Ori accepts repair for sap hook; access begins recovering,1
+312,18,v24-scene-d18,Vonn,1,0,1,1,0,1,1.23,173.476368,Vonn follows up on rain mirror; unresolved duty changes options,1
+313,18,v24-scene-d18,Nari,1,1,1,1,1,1,1.27,313.308132,Nari follows up on ink ledger; unresolved duty changes options,1
+314,18,v24-scene-d18,Keth,1,1,1,0,0,0,1.12,66.979896,Keth accepts repair for path cord; access begins recovering,1
+315,18,v24-scene-d18,Vonn,1,0,1,1,0,1,1.23,230.24166,Vonn follows up on rain mirror; unresolved duty changes options,1
+316,18,v24-scene-d18,Sova,1,1,1,0,0,0,1.18,356.653424,Sova accepts repair for ember bowl; access begins recovering,1
+317,18,v24-scene-d18,Melo,0,0,1,0,0,0,1.12,128.205188,Melo carries owned-task state across this visit,1
+318,18,v24-scene-d18,Keth,1,1,1,0,0,0,1.12,262.666952,Keth accepts repair for path cord; access begins recovering,1
+319,18,v24-scene-d18,Vonn,1,0,1,1,0,1,1.23,53.828716,Vonn follows up on rain mirror; unresolved duty changes options,1
+320,18,v24-scene-d18,Keth,1,1,1,1,1,1,1.23,203.31048,Keth follows up on path cord; unresolved duty changes options,1
+321,18,v24-scene-d18,Melo,1,1,1,0,0,0,1.12,309.752244,Melo accepts repair for tally beads; access begins recovering,1
+322,18,v24-scene-d18,Ori,1,1,1,0,0,0,1.12,85.044008,Ori accepts repair for sap hook; access begins recovering,1
+323,18,v24-scene-d18,Sova,1,1,1,0,0,0,1.12,226.385772,Sova accepts repair for ember bowl; access begins recovering,1
+324,19,v24-scene-d19,Melo,1,1,1,1,1,1,1.23,25.645536,Melo follows up on tally beads; unresolved duty changes options,1
+325,19,v24-scene-d19,Melo,1,1,1,1,0,1,1.23,164.5673,Melo follows up on tally beads; unresolved duty changes options,1
+326,19,v24-scene-d19,Ori,1,1,1,0,0,0,1.12,277.059064,Ori accepts repair for sap hook; access begins recovering,1
+327,19,v24-scene-d19,Sova,0,1,1,0,0,0,1.12,58.400828,Sova accepts repair for ember bowl; access begins recovering,1
+328,19,v24-scene-d19,Nari,1,1,1,0,1,1,1.18,217.382592,Nari accepts a deferral but keeps residual debt visible,1
+329,19,v24-scene-d19,Sova,0,0,1,0,0,0,1.12,338.284356,Sova carries owned-task state across this visit,1
+330,19,v24-scene-d19,Vonn,1,0,1,1,1,1,1.23,126.19612,Vonn follows up on rain mirror; unresolved duty changes options,1
+331,19,v24-scene-d19,Keth,1,1,1,1,1,1,1.23,263.577884,Keth follows up on path cord; unresolved duty changes options,1
+332,19,v24-scene-d19,Vonn,1,0,1,0,1,0,1.16,22.479648,Vonn accepts repair for rain mirror; access begins recovering,1
+333,19,v24-scene-d19,Ori,0,0,1,0,0,0,1.12,159.451412,Ori carries owned-task state across this visit,1
+334,19,v24-scene-d19,Keth,1,1,1,1,0,0,1.23,310.903176,Keth accepts repair for path cord; access begins recovering,1
+335,19,v24-scene-d19,Melo,1,1,1,1,1,1,1.23,101.68494,Melo follows up on tally beads; unresolved duty changes options,1
+336,19,v24-scene-d19,Sova,1,1,1,0,0,0,1.12,219.016704,Sova accepts repair for moth lantern; access begins recovering,1
+337,19,v24-scene-d19,Nari,1,1,1,0,0,0,1.12,355.518468,Nari accepts repair for ink ledger; access begins recovering,1
+338,19,v24-scene-d19,Keth,1,1,1,0,0,0,1.18,143.850232,Keth accepts repair for path cord; access begins recovering,1
+339,19,v24-scene-d19,Ori,1,1,1,1,0,1,1.23,287.901996,Ori follows up on sap hook; unresolved duty changes options,1
+340,19,v24-scene-d19,Sova,1,1,1,0,0,0,1.12,42.60376,Sova accepts repair for moth lantern; access begins recovering,1
+341,19,v24-scene-d19,Nari,0,0,1,0,0,0,1.12,181.145524,Nari carries owned-task state across this visit,1
+342,20,v24-scene-d20,Keth,1,1,1,1,1,1,1.23,330.105288,Keth follows up on path cord; unresolved duty changes options,1
+343,20,v24-scene-d20,Ori,1,1,1,0,0,0,1.18,101.477052,Ori accepts repair for sap hook; access begins recovering,1
+344,20,v24-scene-d20,Keth,1,1,1,0,0,0,1.12,230.988816,Keth accepts repair for path cord; access begins recovering,1
+345,20,v24-scene-d20,Vonn,0,0,1,0,0,0,1.12,14.37058,Vonn carries owned-task state across this visit,1
+346,20,v24-scene-d20,Melo,1,1,1,0,1,0,1.16,152.492344,Melo accepts repair for tally beads; access begins recovering,1
+347,20,v24-scene-d20,Vonn,1,0,1,0,1,1,1.18,303.514108,Vonn carries owned-task state across this visit,1
+348,20,v24-scene-d20,Vonn,1,0,1,0,1,0,1.16,69.455872,Vonn accepts repair for rain mirror; access begins recovering,1
+349,20,v24-scene-d20,Sova,0,0,1,0,0,0,1.12,199.167636,Sova carries owned-task state across this visit,1
+350,20,v24-scene-d20,Sova,1,1,1,1,0,1,1.23,350.5894,Sova follows up on ember bowl; unresolved duty changes options,1
+351,20,v24-scene-d20,Sova,1,1,1,0,0,0,1.12,112.551164,Sova accepts repair for ember bowl; access begins recovering,1
+352,20,v24-scene-d20,Melo,1,1,1,0,0,0,1.12,252.682928,Melo accepts repair for tally beads; access begins recovering,1
+353,20,v24-scene-d20,Ori,1,1,1,1,0,1,1.29,55.554692,Ori follows up on sap hook; unresolved duty changes options,1
+354,20,v24-scene-d20,Vonn,1,1,1,0,0,0,1.12,175.366456,Vonn accepts repair for listening shell; access begins recovering,1
+355,20,v24-scene-d20,Ori,1,1,1,0,0,0,1.18,316.43822,Ori accepts repair for sap hook; access begins recovering,1
+356,20,v24-scene-d20,Melo,0,1,1,0,0,0,1.12,88.369984,Melo accepts repair for tally beads; access begins recovering,1
+357,20,v24-scene-d20,Melo,0,0,1,0,0,0,1.12,229.331748,Melo carries owned-task state across this visit,1
+358,20,v24-scene-d20,Sova,1,1,1,0,0,0,1.12,5.003512,Sova accepts repair for ember bowl; access begins recovering,1
+359,20,v24-scene-d20,Sova,1,1,1,0,0,1,1.18,148.465276,Sova carries owned-task state across this visit,1
+360,21,v24-scene-d21,Sova,1,1,1,0,0,0,1.12,269.49504,Sova accepts repair for moth lantern; access begins recovering,1
+361,21,v24-scene-d21,Sova,0,0,1,0,0,0,1.12,48.036804,Sova carries owned-task state across this visit,1
+362,21,v24-scene-d21,Sova,1,1,1,0,0,0,1.12,187.338568,Sova accepts repair for moth lantern; access begins recovering,1
+363,21,v24-scene-d21,Ori,1,1,1,0,0,0,1.12,321.420332,Ori accepts repair for sap hook; access begins recovering,1
+364,21,v24-scene-d21,Keth,1,1,1,1,0,1,1.23,118.512096,Keth follows up on path cord; unresolved duty changes options,1
+365,21,v24-scene-d21,Melo,0,0,1,0,0,0,1.12,244.93386,Melo carries owned-task state across this visit,1
+366,21,v24-scene-d21,Melo,1,1,1,0,0,0,1.12,21.815624,Melo accepts repair for tally beads; access begins recovering,1
+367,21,v24-scene-d21,Keth,1,1,1,0,0,0,1.12,158.317388,Keth accepts repair for path cord; access begins recovering,1
+368,21,v24-scene-d21,Ori,1,1,1,0,0,0,1.12,296.029152,Ori accepts repair for sap hook; access begins recovering,1
+369,21,v24-scene-d21,Melo,0,0,1,0,0,0,1.12,68.520916,Melo carries owned-task state across this visit,1
+370,21,v24-scene-d21,Vonn,1,1,1,0,0,0,1.12,205.40268,Vonn accepts repair for rain mirror; access begins recovering,1
+371,21,v24-scene-d21,Vonn,1,1,1,0,0,0,1.12,349.164444,Vonn accepts repair for listening shell; access begins recovering,1
+372,21,v24-scene-d21,Ori,1,1,1,1,1,1,1.27,137.816208,Ori follows up on sap hook; unresolved duty changes options,1
+373,21,v24-scene-d21,Ori,1,1,1,0,0,0,1.12,258.537972,Ori accepts repair for sap hook; access begins recovering,1
+374,21,v24-scene-d21,Ori,1,1,1,0,0,0,1.12,37.459736,Ori accepts repair for sap hook; access begins recovering,1
+375,21,v24-scene-d21,Sova,1,1,1,0,0,0,1.12,178.8015,Sova accepts repair for ember bowl; access begins recovering,1
+376,21,v24-scene-d21,Nari,1,1,1,1,0,1,1.23,332.263264,Nari follows up on fern key; unresolved duty changes options,1
+377,21,v24-scene-d21,Sova,0,0,1,0,0,0,1.12,98.685028,Sova carries owned-task state across this visit,1
+378,22,v24-scene-d22,Keth,1,1,1,0,0,0,1.12,230.684792,Keth accepts repair for path cord; access begins recovering,1
+379,22,v24-scene-d22,Ori,1,1,1,0,1,1,1.22,23.856556,Ori carries owned-task state across this visit,1
+380,22,v24-scene-d22,Nari,1,1,1,0,0,0,1.12,147.31832,Nari accepts repair for fern key; access begins recovering,1
+381,22,v24-scene-d22,Nari,0,0,1,0,0,0,1.12,288.280084,Nari carries owned-task state across this visit,1
+382,22,v24-scene-d22,Nari,1,1,1,0,0,0,1.12,55.481848,Nari accepts repair for ink ledger; access begins recovering,1
+383,22,v24-scene-d22,Melo,1,1,1,0,1,0,1.16,196.853612,Melo accepts repair for tally beads; access begins recovering,1
+384,22,v24-scene-d22,Sova,1,1,1,0,0,0,1.12,333.325376,Sova accepts repair for ember bowl; access begins recovering,1
+385,22,v24-scene-d22,Ori,0,1,1,0,0,0,1.12,109.82714,Ori accepts repair for sap hook; access begins recovering,1
+386,22,v24-scene-d22,Keth,1,1,1,0,0,1,1.18,264.178904,Keth carries owned-task state across this visit,1
+387,22,v24-scene-d22,Keth,1,1,1,0,0,0,1.12,28.880668,Keth accepts repair for path cord; access begins recovering,1
+388,22,v24-scene-d22,Melo,1,1,1,0,0,0,1.12,170.222432,Melo accepts repair for tally beads; access begins recovering,1
+389,22,v24-scene-d22,Vonn,0,0,1,0,0,0,1.12,299.084196,Vonn carries owned-task state across this visit,1
+390,22,v24-scene-d22,Nari,1,1,1,0,0,1,1.18,88.97596,Nari carries owned-task state across this visit,1
+391,22,v24-scene-d22,Sova,1,1,1,0,0,0,1.12,216.097724,Sova accepts repair for moth lantern; access begins recovering,1
+392,22,v24-scene-d22,Ori,1,1,1,0,0,0,1.12,350.179488,Ori accepts repair for sap hook; access begins recovering,1
+393,22,v24-scene-d22,Ori,0,0,1,0,0,0,1.12,131.141252,Ori carries owned-task state across this visit,1
+394,22,v24-scene-d22,Keth,1,1,1,1,1,1,1.23,292.033016,Keth follows up on path cord; unresolved duty changes options,1
+395,22,v24-scene-d22,Melo,1,1,1,0,0,0,1.12,50.57478,Melo accepts repair for tally beads; access begins recovering,1
+396,23,v24-scene-d23,Sova,1,1,1,0,0,0,1.12,187.034544,Sova accepts repair for moth lantern; access begins recovering,1
+397,23,v24-scene-d23,Melo,0,0,1,0,0,0,1.12,326.786308,Melo carries owned-task state across this visit,1
+398,23,v24-scene-d23,Melo,1,1,1,0,0,1,1.18,117.888072,Melo carries owned-task state across this visit,1
+399,23,v24-scene-d23,Melo,1,1,1,0,0,0,1.12,230.489836,Melo accepts repair for tally beads; access begins recovering,1
+400,23,v24-scene-d23,Melo,1,1,1,0,0,0,1.12,9.4116,Melo accepts repair for tally beads; access begins recovering,1
+401,23,v24-scene-d23,Nari,1,1,1,1,1,1,1.23,169.923364,Nari follows up on ink ledger; unresolved duty changes options,1
+402,23,v24-scene-d23,Vonn,1,0,1,0,1,0,1.16,287.615128,Vonn accepts repair for rain mirror; access begins recovering,1
+403,23,v24-scene-d23,Sova,1,1,1,0,0,0,1.12,64.966892,Sova accepts repair for ember bowl; access begins recovering,1
+404,23,v24-scene-d23,Sova,1,1,1,0,0,0,1.12,206.308656,Sova accepts repair for moth lantern; access begins recovering,1
+405,23,v24-scene-d23,Keth,1,1,1,1,1,1,1.23,4.40042,Keth follows up on path cord; unresolved duty changes options,1
+406,23,v24-scene-d23,Ori,1,1,1,0,0,0,1.12,119.312184,Ori accepts repair for sap hook; access begins recovering,1
+407,23,v24-scene-d23,Melo,1,1,1,0,0,0,1.12,261.863948,Melo accepts repair for tally beads; access begins recovering,1
+408,23,v24-scene-d23,Ori,1,1,1,1,1,1,1.23,59.955712,Ori follows up on sap hook; unresolved duty changes options,1
+409,23,v24-scene-d23,Melo,0,0,1,0,0,0,1.12,169.647476,Melo carries owned-task state across this visit,1
+410,23,v24-scene-d23,Nari,1,1,1,1,0,1,1.23,328.11924,Nari follows up on ink ledger; unresolved duty changes options,1
+411,23,v24-scene-d23,Vonn,1,1,1,0,0,0,1.12,90.291004,Vonn accepts repair for listening shell; access begins recovering,1
+412,23,v24-scene-d23,Keth,1,1,1,1,1,1,1.23,244.752768,Keth follows up on path cord; unresolved duty changes options,1
+413,23,v24-scene-d23,Vonn,1,1,1,0,0,0,1.12,8.134532,Vonn accepts repair for listening shell; access begins recovering,1
+414,24,v24-scene-d24,Keth,0,1,1,1,0,0,1.23,149.484296,Keth accepts repair for path cord; access begins recovering,1
+415,24,v24-scene-d24,Sova,1,1,1,1,0,1,1.23,295.63606,Sova follows up on moth lantern; unresolved duty changes options,1
+416,24,v24-scene-d24,Ori,1,1,1,1,1,1,1.27,76.797824,Ori follows up on sap hook; unresolved duty changes options,1
+417,24,v24-scene-d24,Ori,1,1,1,0,0,0,1.12,191.679588,Ori accepts repair for sap hook; access begins recovering,1
+418,24,v24-scene-d24,Nari,1,1,1,1,0,1,1.23,355.821352,Nari follows up on ink ledger; unresolved duty changes options,1
+419,24,v24-scene-d24,Sova,1,1,1,1,1,0,1.29,135.003116,Sova follows up on moth lantern; unresolved duty changes options,1
+420,24,v24-scene-d24,Melo,1,1,1,0,0,0,1.12,239.97488,Melo accepts repair for tally beads; access begins recovering,1
+421,24,v24-scene-d24,Nari,1,1,1,0,0,0,1.12,17.686644,Nari accepts repair for ink ledger; access begins recovering,1
+422,24,v24-scene-d24,Nari,1,1,1,0,0,0,1.12,156.608408,Nari accepts repair for ink ledger; access begins recovering,1
+423,24,v24-scene-d24,Melo,1,1,1,0,0,1,1.18,310.960172,Melo carries owned-task state across this visit,1
+424,24,v24-scene-d24,Ori,1,1,1,0,0,0,1.12,72.031936,Ori accepts repair for sap hook; access begins recovering,1
+425,24,v24-scene-d24,Nari,0,0,1,0,0,0,1.12,212.9937,Nari carries owned-task state across this visit,1
+426,24,v24-scene-d24,Ori,1,1,1,0,0,0,1.12,349.875464,Ori accepts repair for sap hook; access begins recovering,1
+427,24,v24-scene-d24,Melo,1,1,1,1,0,1,1.23,149.387228,Melo follows up on tally beads; unresolved duty changes options,1
+428,24,v24-scene-d24,Ori,1,1,1,0,0,0,1.12,267.718992,Ori accepts repair for sap hook; access begins recovering,1
+429,24,v24-scene-d24,Nari,1,1,1,0,0,0,1.12,46.640756,Nari accepts repair for fern key; access begins recovering,1
+430,24,v24-scene-d24,Vonn,1,1,1,1,0,1,1.23,198.89252,Vonn follows up on listening shell; unresolved duty changes options,1
+431,24,v24-scene-d24,Melo,1,1,1,0,0,0,1.12,316.014284,Melo accepts repair for tally beads; access begins recovering,1
+432,25,v24-scene-d25,Sova,1,1,1,1,0,1,1.29,125.894048,Sova follows up on moth lantern; unresolved duty changes options,1
+433,25,v24-scene-d25,Melo,0,0,1,0,0,0,1.12,232.225812,Melo carries owned-task state across this visit,1
+434,25,v24-scene-d25,Nari,1,1,1,0,1,0,1.16,6.717576,Nari accepts repair for fern key; access begins recovering,1
+435,25,v24-scene-d25,Nari,1,1,1,0,0,0,1.12,146.81934,Nari accepts repair for ink ledger; access begins recovering,1
+436,25,v24-scene-d25,Vonn,1,1,1,0,0,0,1.12,279.691104,Vonn accepts repair for listening shell; access begins recovering,1
+437,25,v24-scene-d25,Sova,1,1,1,0,0,0,1.18,77.702868,Sova accepts repair for moth lantern; access begins recovering,1
+438,25,v24-scene-d25,Ori,1,1,1,0,0,0,1.12,201.164632,Ori accepts repair for sap hook; access begins recovering,1
+439,25,v24-scene-d25,Ori,1,1,1,0,0,0,1.12,340.086396,Ori accepts repair for sap hook; access begins recovering,1
+440,25,v24-scene-d25,Melo,1,1,1,0,0,0,1.12,110.53816,Melo accepts repair for tally beads; access begins recovering,1
+441,25,v24-scene-d25,Sova,1,1,1,0,1,0,1.16,251.909924,Sova accepts repair for moth lantern; access begins recovering,1
+442,25,v24-scene-d25,Keth,1,1,1,0,0,0,1.12,25.961688,Keth accepts repair for path cord; access begins recovering,1
+443,25,v24-scene-d25,Keth,0,1,1,0,0,0,1.12,164.883452,Keth accepts repair for path cord; access begins recovering,1
+444,25,v24-scene-d25,Sova,1,1,1,0,0,1,1.18,321.655216,Sova carries owned-task state across this visit,1
+445,25,v24-scene-d25,Sova,1,1,1,0,0,0,1.12,86.35698,Sova accepts repair for moth lantern; access begins recovering,1
+446,25,v24-scene-d25,Ori,1,1,1,0,0,0,1.12,220.438744,Ori accepts repair for sap hook; access begins recovering,1
+447,25,v24-scene-d25,Sova,1,1,1,0,0,0,1.12,1.780508,Sova accepts repair for ember bowl; access begins recovering,1
+448,25,v24-scene-d25,Melo,1,1,1,0,0,0,1.12,141.912272,Melo accepts repair for tally beads; access begins recovering,1
+449,25,v24-scene-d25,Melo,0,0,1,0,0,0,1.12,270.774036,Melo carries owned-task state across this visit,1
+450,26,v24-scene-d26,Melo,1,1,1,0,0,0,1.12,43.9838,Melo accepts repair for tally beads; access begins recovering,1
+451,26,v24-scene-d26,Ori,1,1,1,0,0,0,1.12,191.375564,Ori accepts repair for sap hook; access begins recovering,1
+452,26,v24-scene-d26,Ori,1,1,1,0,0,0,1.12,318.197328,Ori accepts repair for sap hook; access begins recovering,1
+453,26,v24-scene-d26,Keth,0,0,1,0,0,0,1.12,100.369092,Keth carries owned-task state across this visit,1
+454,26,v24-scene-d26,Vonn,1,1,1,0,0,0,1.12,244.510856,Vonn accepts repair for listening shell; access begins recovering,1
+455,26,v24-scene-d26,Nari,1,1,1,0,0,0,1.12,14.96262,Nari accepts repair for fern key; access begins recovering,1
+456,26,v24-scene-d26,Vonn,1,1,1,0,1,0,1.22,165.034384,Vonn carries owned-task state across this visit,1
+457,26,v24-scene-d26,Melo,0,0,1,0,0,0,1.12,298.476148,Melo carries owned-task state across this visit,1
+458,26,v24-scene-d26,Sova,1,1,1,0,0,0,1.12,74.147912,Sova accepts repair for ember bowl; access begins recovering,1
+459,26,v24-scene-d26,Ori,1,1,1,0,0,0,1.12,210.649676,Ori accepts repair for sap hook; access begins recovering,1
+460,26,v24-scene-d26,Nari,1,0,1,0,1,1,1.22,354.47144,Nari carries owned-task state across this visit,1
+461,26,v24-scene-d26,Keth,1,1,1,1,0,1,1.23,134.563204,Keth follows up on path cord; unresolved duty changes options,1
+462,26,v24-scene-d26,Nari,1,0,1,1,0,1,1.23,273.814968,Nari follows up on ink ledger; unresolved duty changes options,1
+463,26,v24-scene-d26,Sova,1,1,1,0,1,0,1.16,40.316732,Sova accepts repair for moth lantern; access begins recovering,1
+464,26,v24-scene-d26,Melo,1,1,1,0,0,0,1.12,176.788496,Melo accepts repair for tally beads; access begins recovering,1
+465,26,v24-scene-d26,Nari,1,0,1,0,0,1,1.18,327.84026,Nari carries owned-task state across this visit,1
+466,26,v24-scene-d26,Melo,1,1,1,0,0,1,1.18,108.852024,Melo carries owned-task state across this visit,1
+467,26,v24-scene-d26,Nari,1,0,1,0,1,0,1.16,232.703788,Nari accepts repair for ink ledger; access begins recovering,1
+468,27,v24-scene-d27,Vonn,1,1,1,0,0,0,1.12,1.543552,Vonn accepts repair for listening shell; access begins recovering,1
+469,27,v24-scene-d27,Ori,0,0,1,0,0,0,1.12,146.135316,Ori carries owned-task state across this visit,1
+470,27,v24-scene-d27,Nari,1,1,1,0,0,0,1.12,283.01708,Nari accepts repair for fern key; access begins recovering,1
+471,27,v24-scene-d27,Nari,1,0,1,0,1,1,1.18,71.438844,Nari accepts a deferral but keeps residual debt visible,1
+472,27,v24-scene-d27,Keth,0,1,1,0,0,0,1.12,189.970608,Keth accepts repair for path cord; access begins recovering,1
+473,27,v24-scene-d27,Sova,1,1,1,0,0,0,1.12,330.102372,Sova accepts repair for ember bowl; access begins recovering,1
+474,27,v24-scene-d27,Melo,1,1,1,1,1,1,1.23,133.034136,Melo follows up on tally beads; unresolved duty changes options,1
+475,27,v24-scene-d27,Melo,1,1,1,0,0,0,1.12,249.1559,Melo accepts repair for tally beads; access begins recovering,1
+476,27,v24-scene-d27,Vonn,1,0,1,0,1,1,1.22,42.657664,Vonn carries owned-task state across this visit,1
+477,27,v24-scene-d27,Vonn,1,0,1,0,1,0,1.16,167.359428,Vonn accepts repair for rain mirror; access begins recovering,1
+478,27,v24-scene-d27,Keth,1,1,1,1,1,1,1.23,326.301192,Keth follows up on path cord; unresolved duty changes options,1
+479,27,v24-scene-d27,Ori,1,1,1,0,0,0,1.12,81.212956,Ori accepts repair for sap hook; access begins recovering,1
+480,27,v24-scene-d27,Sova,1,1,1,0,0,0,1.12,212.87472,Sova accepts repair for moth lantern; access begins recovering,1
+481,27,v24-scene-d27,Keth,1,1,1,0,0,0,1.12,348.166484,Keth accepts repair for path cord; access begins recovering,1
+482,27,v24-scene-d27,Ori,1,1,1,1,1,1,1.23,142.838248,Ori follows up on sap hook; unresolved duty changes options,1
+483,27,v24-scene-d27,Sova,1,1,1,0,0,1,1.18,281.440012,Sova carries owned-task state across this visit,1
+484,27,v24-scene-d27,Vonn,1,0,1,0,1,0,1.16,47.711776,Vonn accepts repair for rain mirror; access begins recovering,1
+485,27,v24-scene-d27,Ori,1,1,1,1,1,1,1.23,205.44354,Ori follows up on sap hook; unresolved duty changes options,1
+486,28,v24-scene-d28,Sova,1,1,1,0,0,0,1.12,320.313304,Sova accepts repair for ember bowl; access begins recovering,1
+487,28,v24-scene-d28,Ori,1,1,1,0,0,0,1.12,96.815068,Ori accepts repair for sap hook; access begins recovering,1
+488,28,v24-scene-d28,Keth,1,1,1,0,0,0,1.12,236.946832,Keth accepts repair for path cord; access begins recovering,1
+489,28,v24-scene-d28,Ori,0,0,1,0,0,0,1.12,16.698596,Ori carries owned-task state across this visit,1
+490,28,v24-scene-d28,Nari,1,0,1,0,1,0,1.16,144.26036,Nari accepts repair for ink ledger; access begins recovering,1
+491,28,v24-scene-d28,Keth,1,1,1,0,0,0,1.12,281.612124,Keth accepts repair for path cord; access begins recovering,1
+492,28,v24-scene-d28,Melo,1,1,1,0,0,0,1.12,62.953888,Melo accepts repair for tally beads; access begins recovering,1
+493,28,v24-scene-d28,Keth,0,0,1,0,0,0,1.12,201.495652,Keth carries owned-task state across this visit,1
+494,28,v24-scene-d28,Vonn,1,1,1,0,0,0,1.12,345.637416,Vonn accepts repair for listening shell; access begins recovering,1
+495,28,v24-scene-d28,Keth,1,1,1,0,0,1,1.18,131.51918,Keth carries owned-task state across this visit,1
+496,28,v24-scene-d28,Melo,1,1,1,1,1,1,1.23,281.440944,Melo follows up on tally beads; unresolved duty changes options,1
+497,28,v24-scene-d28,Sova,0,0,1,0,0,0,1.12,40.812708,Sova carries owned-task state across this visit,1
+498,28,v24-scene-d28,Keth,1,1,1,0,0,0,1.12,174.064472,Keth accepts repair for path cord; access begins recovering,1
+499,28,v24-scene-d28,Sova,1,1,1,0,0,0,1.12,304.516236,Sova accepts repair for moth lantern; access begins recovering,1
+500,28,v24-scene-d28,Sova,1,1,1,1,0,1,1.23,97.978,Sova follows up on ember bowl; unresolved duty changes options,1
+501,28,v24-scene-d28,Vonn,0,0,1,0,0,0,1.12,223.189764,Vonn carries owned-task state across this visit,1
+502,28,v24-scene-d28,Melo,1,1,1,0,0,0,1.12,0.071528,Melo accepts repair for tally beads; access begins recovering,1
+503,28,v24-scene-d28,Vonn,1,0,1,0,1,0,1.16,139.353292,Vonn accepts repair for rain mirror; access begins recovering,1
+504,29,v24-scene-d29,Sova,1,1,1,0,1,0,1.16,274.273056,Sova accepts repair for ember bowl; access begins recovering,1
+505,29,v24-scene-d29,Keth,0,0,1,0,0,0,1.12,52.78482,Keth carries owned-task state across this visit,1
+506,29,v24-scene-d29,Ori,1,1,1,0,0,0,1.12,188.456584,Ori accepts repair for sap hook; access begins recovering,1
+507,29,v24-scene-d29,Nari,1,1,1,1,1,1,1.27,347.998348,Nari follows up on ink ledger; unresolved duty changes options,1
+508,29,v24-scene-d29,Nari,1,1,1,0,0,0,1.18,119.340112,Nari accepts repair for ink ledger; access begins recovering,1
+509,29,v24-scene-d29,Ori,0,0,1,0,0,0,1.12,247.261876,Ori carries owned-task state across this visit,1
+510,29,v24-scene-d29,Sova,1,1,1,0,0,0,1.12,16.88364,Sova accepts repair for moth lantern; access begins recovering,1
+511,29,v24-scene-d29,Sova,1,1,1,0,1,0,1.16,154.625404,Sova accepts repair for ember bowl; access begins recovering,1
+512,29,v24-scene-d29,Nari,1,1,1,1,0,1,1.23,306.847168,Nari follows up on fern key; unresolved duty changes options,1
+513,29,v24-scene-d29,Vonn,0,0,1,0,0,0,1.12,79.318932,Vonn carries owned-task state across this visit,1
+514,29,v24-scene-d29,Keth,1,1,1,0,0,0,1.12,208.940696,Keth accepts repair for path cord; access begins recovering,1
+515,29,v24-scene-d29,Nari,1,1,1,0,0,1,1.18,0.87246,Nari carries owned-task state across this visit,1
+516,29,v24-scene-d29,Sova,1,1,1,0,0,0,1.12,130.414224,Sova accepts repair for moth lantern; access begins recovering,1
+517,29,v24-scene-d29,Sova,0,0,1,0,0,0,1.12,268.955988,Sova carries owned-task state across this visit,1
+518,29,v24-scene-d29,Ori,1,1,1,0,0,0,1.12,43.417752,Ori accepts repair for sap hook; access begins recovering,1
+519,29,v24-scene-d29,Melo,1,1,1,0,0,0,1.12,173.869516,Melo accepts repair for tally beads; access begins recovering,1
+520,29,v24-scene-d29,Vonn,1,0,1,1,1,1,1.27,330.11128,Vonn follows up on rain mirror; unresolved duty changes options,1
+521,29,v24-scene-d29,Vonn,1,0,1,0,0,1,1.18,105.053044,Vonn carries owned-task state across this visit,1
+522,30,v24-scene-d30,Sova,1,1,1,1,0,1,1.23,242.712808,Sova follows up on ember bowl; unresolved duty changes options,1
+523,30,v24-scene-d30,Ori,1,1,1,0,0,0,1.12,2.254572,Ori accepts repair for sap hook; access begins recovering,1
+524,30,v24-scene-d30,Melo,1,1,1,0,0,0,1.12,144.806336,Melo accepts repair for tally beads; access begins recovering,1
+525,30,v24-scene-d30,Nari,1,1,1,0,0,0,1.12,280.0981,Nari accepts repair for fern key; access begins recovering,1
+526,30,v24-scene-d30,Sova,1,1,1,0,0,0,1.12,61.439864,Sova accepts repair for ember bowl; access begins recovering,1
+527,30,v24-scene-d30,Keth,1,1,1,0,0,0,1.12,199.151628,Keth accepts repair for path cord; access begins recovering,1
+528,30,v24-scene-d30,Nari,1,0,1,1,1,1,1.23,1.203392,Nari follows up on ink ledger; unresolved duty changes options,1
+529,30,v24-scene-d30,Nari,1,0,1,1,0,1,1.23,140.125156,Nari follows up on ink ledger; unresolved duty changes options,1
+530,30,v24-scene-d30,Vonn,0,0,1,0,1,0,1.16,246.59692,Vonn accepts repair for rain mirror; access begins recovering,1
+531,30,v24-scene-d30,Vonn,1,1,1,0,0,0,1.12,25.158684,Vonn accepts repair for rain mirror; access begins recovering,1
+532,30,v24-scene-d30,Vonn,1,1,1,0,0,0,1.12,168.920448,Vonn accepts repair for listening shell; access begins recovering,1
+533,30,v24-scene-d30,Keth,0,0,1,0,0,0,1.12,302.622212,Keth carries owned-task state across this visit,1
+534,30,v24-scene-d30,Sova,1,1,1,1,0,1,1.23,97.673976,Sova follows up on ember bowl; unresolved duty changes options,1
+535,30,v24-scene-d30,Nari,1,0,1,0,1,0,1.16,219.99574,Nari accepts repair for ink ledger; access begins recovering,1
+536,30,v24-scene-d30,Vonn,1,1,1,0,0,0,1.12,352.507504,Vonn accepts repair for listening shell; access begins recovering,1
+537,30,v24-scene-d30,Nari,1,1,1,1,0,1,1.23,152.019268,Nari follows up on fern key; unresolved duty changes options,1
+538,30,v24-scene-d30,Melo,1,1,1,0,0,0,1.12,277.611032,Melo accepts repair for tally beads; access begins recovering,1
+539,30,v24-scene-d30,Vonn,1,0,1,1,0,1,1.23,60.512796,Vonn follows up on rain mirror; unresolved duty changes options,1

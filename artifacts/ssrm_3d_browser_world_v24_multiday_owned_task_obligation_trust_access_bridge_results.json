@@ -1,0 +1,112 @@
+{
+  "ablations": [
+    {
+      "ablation": "no_multiday_obligations",
+      "interpretation": "Owned-object requests reset after each visit instead of persisting as tasks.",
+      "readiness_after_ablation": 0.554357,
+      "readiness_loss": 0.33
+    },
+    {
+      "ablation": "no_return_obligations",
+      "interpretation": "Borrowed or taken objects no longer create return pressure.",
+      "readiness_after_ablation": 0.574357,
+      "readiness_loss": 0.31
+    },
+    {
+      "ablation": "no_trust_access_compounding",
+      "interpretation": "Unresolved obligations stop changing future access and trust.",
+      "readiness_after_ablation": 0.599357,
+      "readiness_loss": 0.285
+    },
+    {
+      "ablation": "no_agent_followups",
+      "interpretation": "Agents stop initiating reminders after unresolved duties.",
+      "readiness_after_ablation": 0.629357,
+      "readiness_loss": 0.255
+    },
+    {
+      "ablation": "no_repair_deferrals",
+      "interpretation": "The avatar can only succeed/fail, with no partial repair or explicit deferral.",
+      "readiness_after_ablation": 0.654357,
+      "readiness_loss": 0.23
+    },
+    {
+      "ablation": "no_obligation_storage",
+      "interpretation": "Open obligations and residual debt cannot survive reload.",
+      "readiness_after_ablation": 0.674357,
+      "readiness_loss": 0.21
+    }
+  ],
+  "artifacts": {
+    "agent_followups_csv": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_agent_followups.csv",
+    "browser_ticks_csv": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_browser_ticks.csv",
+    "multi_sensory_obligations_csv": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_multi_sensory_obligations.csv",
+    "object_return_obligations_csv": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_object_return_obligations.csv",
+    "obligation_memory_snapshots_csv": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_obligation_memory_snapshots.csv",
+    "obligation_replays_csv": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_obligation_replays.csv",
+    "owned_task_obligations_csv": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_owned_task_obligations.csv",
+    "repair_deferrals_csv": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_repair_deferrals.csv",
+    "results_json": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_results.json",
+    "scene_visits_csv": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_scene_visits.csv",
+    "state_json": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_state.json",
+    "summary_csv": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_summary.csv",
+    "trust_access_compounding_csv": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_trust_access_compounding.csv",
+    "verdict_csv": "artifacts/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge_verdict.csv",
+    "visualization_html": "visualizations/ssrm_3d_browser_world_v24_multiday_owned_task_obligation_trust_access_bridge.html"
+  },
+  "claim_boundary": "Deterministic browser-local multi-day owned-task obligation, return, trust/access, follow-up, and repair/deferral scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "agent_followup_frames": 540,
+    "agents": 6,
+    "browser_world_v24_ticks": 540,
+    "multi_sensory_obligation_frames": 540,
+    "object_return_obligation_frames": 540,
+    "objects": 9,
+    "obligation_memory_snapshot_frames": 540,
+    "obligation_replay_frames": 540,
+    "owned_task_obligation_frames": 540,
+    "repair_deferral_frames": 540,
+    "scene_visit_frames": 540,
+    "trust_access_compounding_frames": 540
+  },
+  "days": 30,
+  "metrics": {
+    "access_restoration_after_repair": 0.968085,
+    "agent_initiated_followup_binding": 0.856,
+    "browser_world_v24_obligation_readiness": 0.884357,
+    "browser_world_v24_surface_available": 1.0,
+    "comfort_pain_obligation_bounds": 1.0,
+    "delayed_followup_recurrence": 0.912,
+    "followup_due_count": 125.0,
+    "frequency_flower_obligation_rhythm": 1.0,
+    "mean_obligation_channel_score": 0.946888,
+    "multi_day_obligation_persistence": 0.99375,
+    "object_return_integrity": 0.952852,
+    "object_return_request_resolution": 0.798005,
+    "obligation_replay_integrity": 0.97101,
+    "obligation_storage_integrity": 0.958333,
+    "open_obligation_frame_count": 160.0,
+    "open_obligation_visibility": 0.96875,
+    "privacy_safe_obligation_state": 1.0,
+    "repair_attempt_count": 95.0,
+    "repair_deferral_integrity": 0.991481,
+    "repair_or_deferral_attempt_count": 95.0,
+    "residual_debt_visibility": 0.991228,
+    "return_requested_count": 401.0,
+    "scene_visit_state_binding": 0.874074,
+    "sensory_obligation_binding": 0.824074,
+    "source_reaction_consequence_continuity": 1.0,
+    "trust_access_compounding": 1.0,
+    "trust_access_score": 0.999074,
+    "visible_obligation_surface": 0.825926,
+    "weakest_channel_score": 0.798005
+  },
+  "name": "SSRM-3D browser world v24 multi-day owned-task obligation trust/access bridge",
+  "next_gate": "browser world v25 with many-day agent projects that consume materials, reserve time, create fatigue/body cost, and make unresolved obligations block or reshape project progress",
+  "report": 264,
+  "seed": 20260877,
+  "source_dependency": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_results.json",
+  "source_verdict": "pass",
+  "ticks_per_day": 18,
+  "verdict": "pass"
+}

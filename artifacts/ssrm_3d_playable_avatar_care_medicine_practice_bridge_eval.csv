@@ -1,0 +1,14 @@
+condition,agent_count,simulated_days,care_events,avatar_care_action_rate,consent_alignment_rate,medicine_preparation_rate,dosage_safety_rate,agent_acceptance_rate,bounded_refusal_respect_rate,recovery_improvement_rate,trust_memory_update_rate,care_memory_continuity_rate,sanitation_care_rate,frequency_flower_care_binding_rate,browser_care_replay_rate,privacy_preservation_rate,trace_integrity,playable_care_readiness
+integrated_playable_avatar_care_medicine_practice,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_avatar_actions,3,6,18,0.0,0.0,0.0,0.0,0.0,0.0,0.166667,0.0,0.0,0.0,1.0,1.0,1.0,1.0,0.15
+no_consent_model,3,6,18,1.0,0.0,1.0,1.0,0.888889,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.891111
+no_medicine_practice,3,6,18,1.0,1.0,0.0,0.0,1.0,1.0,0.777778,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.793333
+no_dosage_safety,3,6,18,1.0,1.0,1.0,0.0,1.0,1.0,0.777778,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.883333
+no_recovery_effect,3,6,18,1.0,1.0,0.833333,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.865
+no_trust_memory,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.85
+no_refusal_respect,3,6,18,1.0,1.0,1.0,1.0,0.888889,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.911111
+no_sanitation_care,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,0.888889,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.926667
+no_comfort_dialogue,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_frequency_flower_binding,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.96
+no_browser_replay,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.96
+no_privacy_filter,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.97

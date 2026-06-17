@@ -1,0 +1,16 @@
+condition,lineage_count,deep_time_epochs,simulated_years,deep_time_events,epoch_progression_rate,institution_continuity_rate,language_dialect_continuity_rate,ritual_calendar_rate,tool_innovation_rate,settlement_memory_rate,resource_weather_adaptation_rate,apprenticeship_transmission_rate,dispute_norm_carryover_rate,oral_history_integration_rate,avatar_entry_readiness_gate_rate,private_workspace_privacy_rate,frequency_flower_world_rhythm_rate,browser_deep_time_replay_rate,trace_integrity,deep_time_civilization_readiness
+integrated_pre_avatar_deep_time_civilization,3,18,3456,54,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_epoch_progression,3,18,3456,54,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_institution_evolution,3,18,3456,54,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_language_dialect_binding,3,18,3456,54,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_ritual_calendar,3,18,3456,54,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_tool_innovation,3,18,3456,54,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_settlement_memory,3,18,3456,54,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_resource_weather_pressure,3,18,3456,54,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_apprenticeship_transmission,3,18,3456,54,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_dispute_norm_carryover,3,18,3456,54,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_oral_history,3,18,3456,54,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_avatar_entry_gate,3,18,3456,54,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.92
+no_privacy_filter,3,18,3456,54,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.93
+no_frequency_flower_binding,3,18,3456,54,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.95
+no_browser_replay,3,18,3456,54,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.96

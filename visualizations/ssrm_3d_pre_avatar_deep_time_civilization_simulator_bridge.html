@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Pre-Avatar Deep Time Civilization Simulator Bridge</title>
+  <style>
+    :root {
+      --ink: #18211d;
+      --paper: #f4ecd6;
+      --panel: rgba(255, 250, 232, .88);
+      --leaf: #536f45;
+      --rust: #a35b3f;
+      --gold: #c89b3f;
+      --blue: #3f7184;
+      --line: rgba(24,33,29,.17);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 14% 18%, rgba(200,155,63,.30), transparent 26rem),
+        radial-gradient(circle at 84% 12%, rgba(63,113,132,.24), transparent 25rem),
+        radial-gradient(circle at 48% 88%, rgba(83,111,69,.25), transparent 34rem),
+        linear-gradient(135deg, #f8efd9 0%, #e1d0aa 58%, #c8af7d 100%);
+    }
+    header { padding: 2.3rem clamp(1rem, 4vw, 4rem) 1rem; }
+    h1 { max-width: 1180px; margin: 0; font-size: clamp(2rem, 5vw, 5.4rem); line-height: .9; letter-spacing: -.055em; }
+    .sub { max-width: 1000px; margin: 1rem 0 0; line-height: 1.55; font-size: 1.08rem; }
+    main { padding: 1rem clamp(1rem, 4vw, 4rem) 4rem; display: grid; gap: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 1.2rem; padding: 1rem; box-shadow: 0 20px 54px rgba(24,33,29,.13); backdrop-filter: blur(10px); }
+    .wide { grid-column: span 12; }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    h2 { margin: 0 0 .75rem; color: var(--leaf); text-transform: uppercase; letter-spacing: .13em; font-size: .95rem; }
+    .metric { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: .6rem; padding: .38rem 0; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+    .metric:last-child { border-bottom: 0; }
+    .events { display: grid; gap: .75rem; max-height: 680px; overflow: auto; padding-right: .25rem; }
+    .event { border-left: 5px solid var(--gold); background: rgba(255,255,255,.43); padding: .75rem; border-radius: .85rem; }
+    .event.entry { border-color: var(--rust); }
+    .event small { display: block; color: rgba(24,33,29,.66); margin-top: .25rem; }
+    .pill { display: inline-block; margin: .16rem .25rem .16rem 0; padding: .18rem .5rem; border-radius: 999px; background: rgba(83,111,69,.12); color: var(--leaf); font-size: .82rem; }
+    .world { display: grid; gap: .5rem; }
+    .node { padding: .7rem .8rem; border: 1px solid var(--line); border-radius: .8rem; background: rgba(255,255,255,.40); }
+    .flower { min-height: 350px; position: relative; overflow: hidden; }
+    .ring { position: absolute; border-radius: 50%; border: 2px solid rgba(83,111,69,.22); transform: translate(-50%, -50%); }
+    .center { position: absolute; left: 50%; top: 50%; width: 12rem; height: 12rem; transform: translate(-50%,-50%); border-radius: 50%; background: rgba(200,155,63,.27); display: grid; place-items: center; text-align: center; padding: 1rem; font-weight: 700; }
+    code { background: rgba(24,33,29,.08); padding: .1rem .25rem; border-radius: .25rem; }
+    @media (max-width: 850px) { .half, .third { grid-column: span 12; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pre-avatar deep time civilization simulator</h1>
+    <p class="sub">Report 201 replay: thousands of simulated years before avatar entry, with institutions, dialects, rituals, tools, settlement memory, weather pressure, apprenticeships, dispute norms, and an avatar spawn lock.</p>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card third"><h2>Verdict</h2><div id="verdict"></div></div>
+      <div class="card third"><h2>Deep-Time Metrics</h2><div id="metrics"></div></div>
+      <div class="card third"><h2>Ablation Losses</h2><div id="losses"></div></div>
+      <div class="card half"><h2>World Memory</h2><div id="world" class="world"></div></div>
+      <div class="card half flower"><h2>Frequency / Flower World Rhythm</h2><div id="rings"></div><div class="center">settle<br/>work<br/>remember<br/>lock avatar</div></div>
+      <div class="card wide"><h2>Deep-Time Replay</h2><div id="events" class="events"></div></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_pre_avatar_deep_time_civilization_simulator_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_pre_avatar_deep_time_civilization_simulator_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_pre_avatar_deep_time_civilization_simulator_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_PRE_AVATAR_DEEP_TIME_CIVILIZATION_SIMULATOR_RESULTS;
+    const trace = window.SSRM_3D_PRE_AVATAR_DEEP_TIME_CIVILIZATION_SIMULATOR_TRACE;
+    const state = window.SSRM_3D_PRE_AVATAR_DEEP_TIME_CIVILIZATION_SIMULATOR_STATE;
+    const verdict = results.verdict;
+    const full = results.rows.find(r => r.condition === verdict.full_condition);
+    function metric(label, value) { return `<div class="metric"><span>${label}</span><strong>${Number(value).toFixed(6)}</strong></div>`; }
+    document.getElementById('verdict').innerHTML = [
+      metric('verdict', verdict.verdict === 'pass' ? 1 : 0),
+      metric('readiness', verdict.full_deep_time_civilization_readiness),
+      metric('simulated years', full.simulated_years),
+      metric('events', full.deep_time_events)
+    ].join('');
+    document.getElementById('metrics').innerHTML = [
+      ['epoch progression', full.epoch_progression_rate],
+      ['institutions', full.institution_continuity_rate],
+      ['language/dialect', full.language_dialect_continuity_rate],
+      ['ritual calendar', full.ritual_calendar_rate],
+      ['tools', full.tool_innovation_rate],
+      ['settlement memory', full.settlement_memory_rate],
+      ['weather adaptation', full.resource_weather_adaptation_rate],
+      ['avatar gate', full.avatar_entry_readiness_gate_rate],
+      ['privacy', full.private_workspace_privacy_rate]
+    ].map(([k,v]) => metric(k,v)).join('');
+    document.getElementById('losses').innerHTML = Object.entries(verdict)
+      .filter(([k]) => k.endsWith('_loss'))
+      .slice(0, 10)
+      .map(([k,v]) => metric(k.replaceAll('_',' '), v)).join('');
+    const world = state.deep_time_state.world || {};
+    const lineages = Object.keys(state.deep_time_state.lineages || {});
+    document.getElementById('world').innerHTML = lineages.map(name => `<div class="node"><strong>${name}</strong><br><small>institutions ${(world.institutions[name] || []).length} · tools ${(world.tools[name] || []).length} · settlements ${(world.settlements[name] || []).length} · rituals ${(world.rituals[name] || []).length}</small></div>`).join('');
+    const rings = document.getElementById('rings');
+    for (let i = 0; i < 20; i++) {
+      const r = document.createElement('div');
+      r.className = 'ring';
+      const size = 44 + i * 15;
+      r.style.width = `${size}px`;
+      r.style.height = `${size}px`;
+      r.style.left = `${50 + Math.cos(i * Math.PI / 10) * 20}%`;
+      r.style.top = `${50 + Math.sin(i * Math.PI / 10) * 20}%`;
+      r.style.borderColor = i % 5 === 0 ? 'rgba(163,91,63,.34)' : 'rgba(83,111,69,.23)';
+      rings.appendChild(r);
+    }
+    document.getElementById('events').innerHTML = trace.map(ev => `<article class="event ${ev.avatar_entry_gate && ev.avatar_entry_gate.state === 'eligible_after_deep_time' ? 'entry' : ''}">
+      <strong>Year ${ev.simulated_year} / ${ev.lineage}: ${ev.institution ? ev.institution.name : 'no institution'}</strong>
+      <small>${ev.weather} · ${ev.resource_pressure} · word ${ev.inherited_word} · ${ev.flower_path || 'unbound'}</small>
+      <span class="pill">tool ${ev.tool ? ev.tool.name : 'none'}</span>
+      <span class="pill">settlement ${ev.settlement ? ev.settlement.name : 'none'}</span>
+      <span class="pill">ritual ${ev.ritual ? ev.ritual.name : 'none'}</span>
+      <span class="pill">gate ${ev.avatar_entry_gate ? ev.avatar_entry_gate.state : 'none'}</span>
+      <span class="pill">private hidden ${ev.private_workspace_hidden}</span>
+      <small>${ev.adaptation ? ev.adaptation.response : ''}</small>
+    </article>`).join('');
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+{
+  "agents": {
+    "Ari": {
+      "body": {
+        "fatigue": 0.357,
+        "hunger": 0.45,
+        "illness_risk": 0.155,
+        "pain": 0.08,
+        "symptoms": 0.09,
+        "warmth_deficit": 0.523,
+        "wetness": 0.214
+      },
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Ari accepts a dry wrap after the avatar waits for a nod.",
+        "Ari refuses bitter herb; the avatar records no and does not press.",
+        "Ari accepts task deferral without losing status.",
+        "Ari accepts threshold drying because the avatar names the work boundary.",
+        "Ari accepts a clean cloth wrap for wrist comfort.",
+        "Ari chooses routine over extra care and the avatar stops."
+      ],
+      "relationships": {
+        "Fay": 0.696,
+        "Milo": 0.644
+      },
+      "temperament": "cautious-proud repair keeper",
+      "trust": 0.774
+    },
+    "Fay": {
+      "body": {
+        "fatigue": 0.329,
+        "hunger": 0.491,
+        "illness_risk": 0.079,
+        "pain": 0.04,
+        "symptoms": 0.09,
+        "warmth_deficit": 0.252,
+        "wetness": 0.404
+      },
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Fay accepts warm water and a cough-distance boundary.",
+        "Fay accepts a clean cloth and separate cup.",
+        "Fay accepts rest and lets Ari take the next dry-wood errand.",
+        "Fay accepts a second warm water inside safe dose limits.",
+        "Fay accepts a hosting pause; care capacity stops falling.",
+        "Fay accepts a low-pressure repair message.",
+        "Fay agrees to end cough spacing after symptom check."
+      ],
+      "relationships": {
+        "Ari": 0.774,
+        "Milo": 0.685
+      },
+      "temperament": "social ritual keeper",
+      "trust": 0.83
+    },
+    "Milo": {
+      "body": {
+        "fatigue": 0.328,
+        "hunger": 0.091,
+        "illness_risk": 0.248,
+        "pain": 0.06,
+        "symptoms": 0.08,
+        "warmth_deficit": 0.417,
+        "wetness": 0.393
+      },
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Milo accepts care only if the folded map is not touched.",
+        "Milo accepts lamp rest if the avatar stays outside the map line.",
+        "Milo refuses the cup change but accepts route spacing; contagion boundary is imperfect.",
+        "Milo accepts care because no repayment speech is attached.",
+        "Milo refuses Fay's approach; the avatar respects distance.",
+        "Milo accepts Fay's message only at route-edge distance.",
+        "Milo accepts final food check but keeps debt memory."
+      ],
+      "relationships": {
+        "Ari": 0.618,
+        "Fay": 0.659
+      },
+      "temperament": "guarded map carrier",
+      "trust": 0.702
+    }
+  },
+  "claim_boundary": "Deterministic body-care gameplay substrate only: not real medicine, not real care, not real consent, not subjective suffering, not subjective consciousness, and not moral patienthood.",
+  "module": "ssrm_3d_recoverable_body_care_gameplay_player_intervention_contagion_medicine_triage_bridge",
+  "next_gate": "playable clinic loop with inventory, repeated visits, consent memory, medicine side effects, and agent-initiated help seeking",
+  "seed": 20260825,
+  "source_condition": "integrated_seasonal_body_ecology_illness_care_market_relationship",
+  "source_state_loaded": true,
+  "turns": 20
+}

@@ -1,0 +1,21 @@
+turn,agent,cue,priority,triage_priority_match,avatar_action,consent
+1,Fay,cough and low-light fatigue,high,True,ask to offer warm water and distance,accepted
+2,Ari,wet sleeve and wrist pain,medium,True,ask before drying sleeve,accepted
+3,Milo,guarded hunger and debt memory,medium,True,offer food at map-edge distance,conditional
+4,Fay,cough risk near shared stove,high,True,ask for temporary cough boundary,accepted
+5,Ari,bitter herb offer for symptoms,low,True,offer bitter herb,refused
+6,Milo,archive draft and fatigue,medium,True,ask for lamp rest near archive curtain,conditional
+7,Fay,fatigue from care rounds,medium,True,ask to shorten care queue,accepted
+8,Ari,wrist ache after repair,medium,True,offer lamp rest and task deferral,accepted
+9,Milo,possible cough after stove visit,high,True,ask for separate cup and route spacing,refused
+10,Fay,symptoms improving but fatigue high,medium,True,ask for second warm water,accepted
+11,Ari,wet boots near dry storage,low,True,ask to clean threshold,accepted
+12,Milo,hunger with map guarding,medium,True,offer food without conversation debt,conditional
+13,Fay,care capacity low,medium,True,ask consent to pause hosting,accepted
+14,Ari,symptoms low but pain persists,low,True,offer clean cloth wrap,accepted
+15,Milo,guarded mood after boundary disagreement,medium,True,ask whether Fay may approach,refused
+16,Fay,relationship strain with Milo,low,True,ask to carry apology without pressure,accepted
+17,Ari,repair confidence returning,low,True,ask to stop care and resume routine,accepted
+18,Milo,accepts message but not closeness,low,True,offer distance-based repair,conditional
+19,Fay,cough mostly resolved,low,True,ask to end contagion boundary,accepted
+20,Milo,residual hunger and guarded trust,medium,True,offer final food check,accepted

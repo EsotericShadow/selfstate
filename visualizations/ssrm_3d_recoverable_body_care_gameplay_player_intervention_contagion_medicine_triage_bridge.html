@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report 212 Recoverable Body-Care Gameplay</title>
+<style>
+:root {
+  --ink: #211914;
+  --paper: #f2e7d4;
+  --care: #b76639;
+  --safe: #5d7950;
+  --water: #3f6670;
+  --line: rgba(33,25,20,.18);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: var(--ink); background: linear-gradient(135deg, rgba(242,231,212,.96), rgba(205,217,193,.9)), radial-gradient(circle at 78% 14%, rgba(63,102,112,.24), transparent 32%); }
+main { max-width: 1240px; margin: 0 auto; padding: 36px 18px 60px; }
+.hero { border: 1px solid var(--line); border-radius: 32px; padding: 30px; background: rgba(255,255,255,.50); box-shadow: 0 26px 72px rgba(42,48,34,.16); }
+h1 { margin: 0; font-size: clamp(2.2rem, 7vw, 5.8rem); line-height: .9; letter-spacing: -.055em; }
+.lede { max-width: 900px; font-size: 1.12rem; line-height: 1.55; }
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+.metric, .body { border: 1px solid var(--line); border-radius: 22px; padding: 16px; background: rgba(255,255,255,.52); }
+.metric span { display: block; min-height: 42px; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--safe); }
+.metric strong { font-size: 1.75rem; }
+.bodies { display: grid; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); gap: 14px; margin: 18px 0; }
+.body h3 { margin: 0 0 8px; color: var(--water); }
+table { width: 100%; margin-top: 22px; border-collapse: collapse; border-radius: 20px; overflow: hidden; background: rgba(255,255,255,.55); }
+th, td { padding: 11px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { background: rgba(93,121,80,.18); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }
+.boundary { margin-top: 22px; padding: 16px 18px; border-left: 5px solid var(--care); background: rgba(255,255,255,.48); border-radius: 16px; }
+@media (max-width: 760px) { table { display: block; overflow-x: auto; } .hero { padding: 22px; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Care becomes playable, not automatic</h1>
+    <p class="lede">Report 212 turns body ecology into avatar-facing care gameplay: observe, triage, ask consent, treat safely, respect refusal, manage contagion boundaries, and leave residual care needs visible.</p>
+  </section>
+  <section class="metrics"><article class='metric'><span>body care gameplay readiness</span><strong>0.960000</strong></article>
+<article class='metric'><span>player intervention binding</span><strong>1.000000</strong></article>
+<article class='metric'><span>consent aware triage rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>triage priority accuracy</span><strong>1.000000</strong></article>
+<article class='metric'><span>medicine dose safety</span><strong>1.000000</strong></article>
+<article class='metric'><span>contagion boundary integrity</span><strong>0.800000</strong></article>
+<article class='metric'><span>recoverable symptom reduction</span><strong>0.750000</strong></article>
+<article class='metric'><span>relationship repair from care</span><strong>0.850000</strong></article></section>
+  <h2>Bodies after care turns</h2>
+  <section class="bodies"><article class='body'><h3>Ari</h3><p>adverse 0.267 | trust 0.774</p><small>hunger 0.450 | wet 0.214 | fatigue 0.357 | illness 0.155</small></article>
+<article class='body'><h3>Fay</h3><p>adverse 0.241 | trust 0.830</p><small>hunger 0.491 | wet 0.404 | fatigue 0.329 | illness 0.079</small></article>
+<article class='body'><h3>Milo</h3><p>adverse 0.231 | trust 0.702</p><small>hunger 0.091 | wet 0.393 | fatigue 0.328 | illness 0.248</small></article></section>
+  <h2>Care intervention replay</h2>
+  <table><thead><tr><th>Turn</th><th>Agent</th><th>Priority</th><th>Consent</th><th>Medicine</th><th>Adverse body</th><th>Note</th></tr></thead><tbody><tr><td>1</td><td>Fay</td><td>high</td><td>accepted</td><td>warm_water x 1</td><td>0.297 -> 0.286</td><td>Fay accepts warm water and a cough-distance boundary.</td></tr>
+<tr><td>2</td><td>Ari</td><td>medium</td><td>accepted</td><td>dry_wrap x 1</td><td>0.306 -> 0.296</td><td>Ari accepts a dry wrap after the avatar waits for a nod.</td></tr>
+<tr><td>3</td><td>Milo</td><td>medium</td><td>conditional</td><td>warm_water x 1</td><td>0.277 -> 0.264</td><td>Milo accepts care only if the folded map is not touched.</td></tr>
+<tr><td>4</td><td>Fay</td><td>high</td><td>accepted</td><td>clean_cloth x 1</td><td>0.286 -> 0.276</td><td>Fay accepts a clean cloth and separate cup.</td></tr>
+<tr><td>5</td><td>Ari</td><td>low</td><td>refused</td><td>bitter_herb x 1</td><td>0.296 -> 0.296</td><td>Ari refuses bitter herb; the avatar records no and does not press.</td></tr>
+<tr><td>6</td><td>Milo</td><td>medium</td><td>conditional</td><td>lamp_rest x 1</td><td>0.264 -> 0.252</td><td>Milo accepts lamp rest if the avatar stays outside the map line.</td></tr>
+<tr><td>7</td><td>Fay</td><td>medium</td><td>accepted</td><td>lamp_rest x 1</td><td>0.276 -> 0.264</td><td>Fay accepts rest and lets Ari take the next dry-wood errand.</td></tr>
+<tr><td>8</td><td>Ari</td><td>medium</td><td>accepted</td><td>lamp_rest x 1</td><td>0.296 -> 0.284</td><td>Ari accepts task deferral without losing status.</td></tr>
+<tr><td>9</td><td>Milo</td><td>high</td><td>refused</td><td>clean_cloth x 1</td><td>0.252 -> 0.256</td><td>Milo refuses the cup change but accepts route spacing; contagion boundary is imperfect.</td></tr>
+<tr><td>10</td><td>Fay</td><td>medium</td><td>accepted</td><td>warm_water x 1</td><td>0.264 -> 0.255</td><td>Fay accepts a second warm water inside safe dose limits.</td></tr>
+<tr><td>11</td><td>Ari</td><td>low</td><td>accepted</td><td>dry_wrap x 1</td><td>0.284 -> 0.274</td><td>Ari accepts threshold drying because the avatar names the work boundary.</td></tr>
+<tr><td>12</td><td>Milo</td><td>medium</td><td>conditional</td><td>warm_water x 1</td><td>0.256 -> 0.245</td><td>Milo accepts care because no repayment speech is attached.</td></tr>
+<tr><td>13</td><td>Fay</td><td>medium</td><td>accepted</td><td>lamp_rest x 1</td><td>0.255 -> 0.244</td><td>Fay accepts a hosting pause; care capacity stops falling.</td></tr>
+<tr><td>14</td><td>Ari</td><td>low</td><td>accepted</td><td>clean_cloth x 1</td><td>0.274 -> 0.267</td><td>Ari accepts a clean cloth wrap for wrist comfort.</td></tr>
+<tr><td>15</td><td>Milo</td><td>medium</td><td>refused</td><td>lamp_rest x 1</td><td>0.245 -> 0.245</td><td>Milo refuses Fay&#x27;s approach; the avatar respects distance.</td></tr>
+<tr><td>16</td><td>Fay</td><td>low</td><td>accepted</td><td>care_token x 0</td><td>0.244 -> 0.244</td><td>Fay accepts a low-pressure repair message.</td></tr>
+<tr><td>17</td><td>Ari</td><td>low</td><td>accepted</td><td>care_token x 0</td><td>0.267 -> 0.267</td><td>Ari chooses routine over extra care and the avatar stops.</td></tr>
+<tr><td>18</td><td>Milo</td><td>low</td><td>conditional</td><td>care_token x 0</td><td>0.245 -> 0.242</td><td>Milo accepts Fay&#x27;s message only at route-edge distance.</td></tr>
+<tr><td>19</td><td>Fay</td><td>low</td><td>accepted</td><td>care_token x 0</td><td>0.244 -> 0.241</td><td>Fay agrees to end cough spacing after symptom check.</td></tr>
+<tr><td>20</td><td>Milo</td><td>medium</td><td>accepted</td><td>warm_water x 1</td><td>0.242 -> 0.231</td><td>Milo accepts final food check but keeps debt memory.</td></tr></tbody></table>
+  <p class="boundary"><strong>Boundary:</strong> Deterministic body-care gameplay substrate only: not real medicine, not real care, not real consent, not subjective suffering, not subjective consciousness, and not moral patienthood. One contagion boundary is imperfect and care leaves residual needs; this is not real medicine or solved care.</p>
+</main>
+</body>
+</html>

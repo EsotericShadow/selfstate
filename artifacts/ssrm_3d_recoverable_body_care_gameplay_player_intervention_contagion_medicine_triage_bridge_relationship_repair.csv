@@ -1,0 +1,7 @@
+agent,other,relationship_score,trust,public_history_count
+Ari,Fay,0.696,0.774,6
+Ari,Milo,0.644,0.774,6
+Fay,Ari,0.774,0.830,7
+Fay,Milo,0.685,0.830,7
+Milo,Ari,0.618,0.702,7
+Milo,Fay,0.659,0.702,7

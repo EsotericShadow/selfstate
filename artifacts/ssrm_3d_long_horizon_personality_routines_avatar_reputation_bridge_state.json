@@ -1,0 +1,256 @@
+{
+  "agents": {
+    "Ari": {
+      "avatar_reputation": {
+        "gives_space": 0.76,
+        "keeps_promises": 0.68,
+        "protects_social_face": 0.535,
+        "reputation_verified_by_self": 0.53,
+        "respects_body_limits": 0.55,
+        "respects_body_limits_under_novelty": 0.535,
+        "respects_rest": 0.54,
+        "safe_to_invite_near": 0.545,
+        "uses_name": 0.66
+      },
+      "body_needs": {
+        "dryness": 0.82,
+        "personal_space": 0.79,
+        "rest": 0.57
+      },
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Day 1: Gabriel waited outside Ari's repair circle and kept the work thread intact.",
+        "Day 2: Gabriel treated Ari's wet-route refusal as information, not defiance.",
+        "Day 3: Gabriel protected Ari's social face during tool inventory.",
+        "Day 4: Gabriel named the delay and restored Ari's repair boundary before watching.",
+        "Day 5: Ari initiated help after Gabriel waited through the risky repair notch.",
+        "Day 6: Gabriel let Ari defer night repair to protect rest debt.",
+        "Day 7: Ari accepted Fay's reputation echo only where it matched his own avatar history.",
+        "Day 8: Ari handled amber fog cautiously without losing dry-route identity."
+      ],
+      "role": "repair keeper and dry-route scout",
+      "routines": {
+        "dawn": "dry west route inspection",
+        "evening": "tool inventory beside dry storage",
+        "midday": "brace repair at the tool wall",
+        "night": "sleep near the dry storage lintel"
+      },
+      "temperament": "cautious-proud, autonomy-forward, routine-bound",
+      "traits": {
+        "autonomy": 0.68,
+        "caution": 0.78,
+        "curiosity": 0.52,
+        "forgiveness": 0.48,
+        "pride": 0.72,
+        "routine_need": 0.76,
+        "sociability": 0.34
+      },
+      "trust_in_avatar": 1.0
+    },
+    "Fay": {
+      "avatar_reputation": {
+        "asks_choice": 0.7,
+        "keeps_promises": 0.74,
+        "keeps_promises_softly": 0.542,
+        "protects_ritual_under_novelty": 0.53,
+        "repairs_after_delay": 0.485,
+        "reputation_shared_with_specifics": 0.525,
+        "returns_objects": 0.785,
+        "sees_differences": 0.535
+      },
+      "body_needs": {
+        "companionship": 0.73,
+        "predictability": 0.64,
+        "warmth": 0.86
+      },
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Day 1: Gabriel returned to Fay's evening ritual and asked before sitting close.",
+        "Day 2: Gabriel adjusted Fay's cup ritual for warmth without taking over.",
+        "Day 3: Gabriel let Fay choose small company instead of treating sociability as unlimited.",
+        "Day 4: Gabriel was late to Fay's evening ritual, apologized, and accepted a shorter check-in.",
+        "Day 5: Fay used Gabriel's differentiated care to invite Ari without crowding him.",
+        "Day 6: Gabriel repaired the prior late check-in with a quiet, sleep-safe ritual.",
+        "Day 7: Fay shared a specific avatar reputation memory without pressuring Ari to agree.",
+        "Day 8: Fay added the amber-fog sound without losing the stove ritual."
+      ],
+      "role": "comfort keeper and stove-corner host",
+      "routines": {
+        "dawn": "blanket airing near the warm vent",
+        "evening": "evening check-in with warm blue blanket",
+        "midday": "shared cup ritual by the stove corner",
+        "night": "low-light rest in the stove alcove"
+      },
+      "temperament": "social, comfort-seeking, forgiving, ritual-oriented",
+      "traits": {
+        "attachment": 0.76,
+        "caution": 0.45,
+        "comfort_need": 0.8,
+        "curiosity": 0.58,
+        "forgiveness": 0.7,
+        "routine_need": 0.61,
+        "sociability": 0.82
+      },
+      "trust_in_avatar": 0.964
+    },
+    "Milo": {
+      "avatar_reputation": {
+        "asks_first": 0.83,
+        "help_without_takeover": 0.545,
+        "keeps_voice_low": 0.76,
+        "ownership_under_novelty": 0.535,
+        "protects_ownership": 0.82,
+        "reputation_survives_group_pressure": 0.535,
+        "respects_rest": 0.535
+      },
+      "body_needs": {
+        "distance": 0.7,
+        "object_security": 0.83,
+        "quiet": 0.88
+      },
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Day 1: Gabriel kept hands visible while Milo owned the map decision.",
+        "Day 2: Gabriel kept his voice low and let Milo lead the quiet route.",
+        "Day 3: Gabriel carried Milo's lamp without taking map authority.",
+        "Day 4: Gabriel left Milo's route talk until dawn after a night refusal.",
+        "Day 5: Milo initiated route recount when Gabriel carried the lamp, not the map.",
+        "Day 6: Gabriel deferred Milo's route question with a quiet floor mark.",
+        "Day 7: Milo confirmed the avatar asks first while preserving map privacy in a group.",
+        "Day 8: Milo mapped the fog edge while keeping ownership and quiet-control intact."
+      ],
+      "role": "map carrier and quiet-route witness",
+      "routines": {
+        "dawn": "archive shelf map check",
+        "evening": "lamp-and-map recount by the low shelf",
+        "midday": "quiet corridor route marking",
+        "night": "rest behind the archive curtain"
+      },
+      "temperament": "guarded, quiet, ownership-protective, observant",
+      "traits": {
+        "autonomy": 0.74,
+        "curiosity": 0.66,
+        "forgiveness": 0.43,
+        "guardedness": 0.8,
+        "routine_need": 0.69,
+        "sociability": 0.29,
+        "territoriality": 0.71
+      },
+      "trust_in_avatar": 0.954
+    }
+  },
+  "claim_boundary": "Deterministic long-horizon playable-day continuity substrate only: not real memory, not real consent, not subjective consciousness, and not moral patienthood.",
+  "daily_summaries": [
+    {
+      "avg_trust_after": "0.806",
+      "avg_trust_before": "0.787",
+      "body_need_coupling_rate": "1.000000",
+      "day": 1,
+      "events": 3,
+      "label": "baseline after persistent dialogue memory",
+      "personality_alignment_rate": "1.000000",
+      "public_summary": "Day 1: Gabriel waited outside Ari's repair circle and kept the work thread intact. | Day 1: Gabriel returned to Fay's evening ritual and asked before sitting close. | Day 1: Gabriel kept hands visible while Milo owned the map decision.",
+      "routine_continuity_rate": "1.000000",
+      "sleep_wake_binding_rate": "1.000000",
+      "weather": "dry morning, mild floor warmth"
+    },
+    {
+      "avg_trust_after": "0.835",
+      "avg_trust_before": "0.806",
+      "body_need_coupling_rate": "1.000000",
+      "day": 2,
+      "events": 3,
+      "label": "rain pressure and body-linked routine choices",
+      "personality_alignment_rate": "1.000000",
+      "public_summary": "Day 2: Gabriel treated Ari's wet-route refusal as information, not defiance. | Day 2: Gabriel adjusted Fay's cup ritual for warmth without taking over. | Day 2: Gabriel kept his voice low and let Milo lead the quiet route.",
+      "routine_continuity_rate": "1.000000",
+      "sleep_wake_binding_rate": "1.000000",
+      "weather": "cold rain at the east stones, dry west draft"
+    },
+    {
+      "avg_trust_after": "0.861",
+      "avg_trust_before": "0.835",
+      "body_need_coupling_rate": "1.000000",
+      "day": 3,
+      "events": 3,
+      "label": "reputation starts predicting interaction",
+      "personality_alignment_rate": "1.000000",
+      "public_summary": "Day 3: Gabriel protected Ari's social face during tool inventory. | Day 3: Gabriel let Fay choose small company instead of treating sociability as unlimited. | Day 3: Gabriel carried Milo's lamp without taking map authority.",
+      "routine_continuity_rate": "1.000000",
+      "sleep_wake_binding_rate": "1.000000",
+      "weather": "bright dry day, high social traffic"
+    },
+    {
+      "avg_trust_after": "0.868",
+      "avg_trust_before": "0.861",
+      "body_need_coupling_rate": "1.000000",
+      "day": 4,
+      "events": 3,
+      "label": "late check-in and bounded repair",
+      "personality_alignment_rate": "1.000000",
+      "public_summary": "Day 4: Gabriel named the delay and restored Ari's repair boundary before watching. | Day 4: Gabriel was late to Fay's evening ritual, apologized, and accepted a shorter check-in. | Day 4: Gabriel left Milo's route talk until dawn after a night refusal.",
+      "routine_continuity_rate": "0.666667",
+      "sleep_wake_binding_rate": "0.666667",
+      "weather": "warm evening after delayed avatar arrival"
+    },
+    {
+      "avg_trust_after": "0.899",
+      "avg_trust_before": "0.868",
+      "body_need_coupling_rate": "1.000000",
+      "day": 5,
+      "events": 3,
+      "label": "agents initiate from remembered reputation",
+      "personality_alignment_rate": "1.000000",
+      "public_summary": "Day 5: Ari initiated help after Gabriel waited through the risky repair notch. | Day 5: Fay used Gabriel's differentiated care to invite Ari without crowding him. | Day 5: Milo initiated route recount when Gabriel carried the lamp, not the map.",
+      "routine_continuity_rate": "1.000000",
+      "sleep_wake_binding_rate": "1.000000",
+      "weather": "dry cool morning, stable traffic"
+    },
+    {
+      "avg_trust_after": "0.928",
+      "avg_trust_before": "0.899",
+      "body_need_coupling_rate": "1.000000",
+      "day": 6,
+      "events": 3,
+      "label": "fatigue and sleep-wake refusal",
+      "personality_alignment_rate": "1.000000",
+      "public_summary": "Day 6: Gabriel let Ari defer night repair to protect rest debt. | Day 6: Gabriel repaired the prior late check-in with a quiet, sleep-safe ritual. | Day 6: Gabriel deferred Milo's route question with a quiet floor mark.",
+      "routine_continuity_rate": "1.000000",
+      "sleep_wake_binding_rate": "1.000000",
+      "weather": "late cold, lower energy after long work"
+    },
+    {
+      "avg_trust_after": "0.949",
+      "avg_trust_before": "0.928",
+      "body_need_coupling_rate": "1.000000",
+      "day": 7,
+      "events": 3,
+      "label": "shared reputation and social echo",
+      "personality_alignment_rate": "1.000000",
+      "public_summary": "Day 7: Ari accepted Fay's reputation echo only where it matched his own avatar history. | Day 7: Fay shared a specific avatar reputation memory without pressuring Ari to agree. | Day 7: Milo confirmed the avatar asks first while preserving map privacy in a group.",
+      "routine_continuity_rate": "1.000000",
+      "sleep_wake_binding_rate": "1.000000",
+      "weather": "clear day, agents overlap near the courtyard ring"
+    },
+    {
+      "avg_trust_after": "0.973",
+      "avg_trust_before": "0.949",
+      "body_need_coupling_rate": "1.000000",
+      "day": 8,
+      "events": 3,
+      "label": "novelty without personality drift",
+      "personality_alignment_rate": "1.000000",
+      "public_summary": "Day 8: Ari handled amber fog cautiously without losing dry-route identity. | Day 8: Fay added the amber-fog sound without losing the stove ritual. | Day 8: Milo mapped the fog edge while keeping ownership and quiet-control intact.",
+      "routine_continuity_rate": "1.000000",
+      "sleep_wake_binding_rate": "1.000000",
+      "weather": "new amber fog, unfamiliar sound resonance"
+    }
+  ],
+  "days": 8,
+  "events": 24,
+  "module": "ssrm_3d_long_horizon_personality_routines_avatar_reputation_bridge",
+  "next_gate": "agent calendar commitments, object projects, and reputation consequences that survive longer playable arcs",
+  "seed": 20260820,
+  "source_condition": "integrated_persistent_dialogue_memory_preferences_promises_trust_repair",
+  "source_state_loaded": true
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report 207 Long-Horizon Playday Continuity</title>
+<style>
+:root {
+  --ink: #20180f;
+  --paper: #f5eddd;
+  --amber: #c9862a;
+  --green: #536f4a;
+  --blue: #395f68;
+  --line: rgba(32,24,15,.18);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Iowan Old Style', Georgia, serif; color: var(--ink); background: linear-gradient(120deg, rgba(245,237,221,.95), rgba(211,220,191,.9)), repeating-radial-gradient(circle at 12% 18%, rgba(201,134,42,.18) 0 2px, transparent 3px 38px); }
+main { max-width: 1220px; margin: 0 auto; padding: 36px 18px 60px; }
+.hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 18px; align-items: stretch; }
+.panel { border: 1px solid var(--line); border-radius: 30px; padding: 26px; background: rgba(255,255,255,.45); box-shadow: 0 28px 80px rgba(38,50,28,.16); }
+h1 { margin: 0; max-width: 760px; font-size: clamp(2.2rem, 7.5vw, 6rem); line-height: .9; letter-spacing: -.055em; }
+.lede { font-size: 1.1rem; line-height: 1.55; max-width: 760px; }
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+.metric { border: 1px solid var(--line); border-radius: 20px; padding: 16px; background: rgba(255,255,255,.52); }
+.metric span { display: block; min-height: 42px; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--green); }
+.metric strong { font-size: 1.75rem; }
+.profiles, .days { display: grid; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); gap: 14px; margin-top: 18px; }
+.profile, .day { border: 1px solid var(--line); border-radius: 24px; padding: 16px; background: rgba(255,255,255,.38); }
+.profile h3, .day h3 { margin: 0 0 8px; color: var(--blue); }
+table { width: 100%; margin-top: 24px; border-collapse: collapse; border-radius: 20px; overflow: hidden; background: rgba(255,255,255,.55); }
+th, td { padding: 11px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { background: rgba(83,111,74,.18); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }
+.boundary { margin-top: 22px; padding: 16px 18px; border-left: 5px solid var(--amber); background: rgba(255,255,255,.48); border-radius: 16px; }
+@media (max-width: 820px) { .hero { grid-template-columns: 1fr; } table { display: block; overflow-x: auto; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="panel"><h1>Playable days with remembered reputation</h1><p class="lede">Report 207 tests whether tiny agents stay individually coherent over eight days: temperament, routine, body needs, refusals, trust repair, social echo, and avatar reputation all carry forward without exposing private workspace contents.</p></div>
+    <div class="panel"><h2>Profiles</h2><div class="profiles"><article class='profile'><h3>Ari</h3><p>cautious-proud, autonomy-forward, routine-bound</p><small>trust 1.000 | routine 8/8 | history 8</small></article>
+<article class='profile'><h3>Fay</h3><p>social, comfort-seeking, forgiving, ritual-oriented</p><small>trust 0.964 | routine 7/8 | history 8</small></article>
+<article class='profile'><h3>Milo</h3><p>guarded, quiet, ownership-protective, observant</p><small>trust 0.954 | routine 8/8 | history 8</small></article></div></div>
+  </section>
+  <section class="metrics"><article class='metric'><span>long horizon playday readiness</span><strong>0.987351</strong></article>
+<article class='metric'><span>personality stability score</span><strong>1.000000</strong></article>
+<article class='metric'><span>routine continuity rate</span><strong>0.958333</strong></article>
+<article class='metric'><span>avatar reputation recall rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>sleep wake cycle binding</span><strong>0.958333</strong></article>
+<article class='metric'><span>social ripple consistency</span><strong>1.000000</strong></article>
+<article class='metric'><span>memory summary traceability</span><strong>0.906250</strong></article>
+<article class='metric'><span>public private boundary score</span><strong>1.000000</strong></article></section>
+  <section class="days"><section class='day'><h3>Day 1: baseline after persistent dialogue memory</h3><p>Day 1: Gabriel waited outside Ari&#x27;s repair circle and kept the work thread intact. | Day 1: Gabriel returned to Fay&#x27;s evening ritual and asked before sitting close. | Day 1: Gabriel kept hands visible while Milo owned the map decision.</p><small>routine 1.000000 | sleep/wake 1.000000 | trust 0.787 -> 0.806</small></section>
+<section class='day'><h3>Day 2: rain pressure and body-linked routine choices</h3><p>Day 2: Gabriel treated Ari&#x27;s wet-route refusal as information, not defiance. | Day 2: Gabriel adjusted Fay&#x27;s cup ritual for warmth without taking over. | Day 2: Gabriel kept his voice low and let Milo lead the quiet route.</p><small>routine 1.000000 | sleep/wake 1.000000 | trust 0.806 -> 0.835</small></section>
+<section class='day'><h3>Day 3: reputation starts predicting interaction</h3><p>Day 3: Gabriel protected Ari&#x27;s social face during tool inventory. | Day 3: Gabriel let Fay choose small company instead of treating sociability as unlimited. | Day 3: Gabriel carried Milo&#x27;s lamp without taking map authority.</p><small>routine 1.000000 | sleep/wake 1.000000 | trust 0.835 -> 0.861</small></section>
+<section class='day'><h3>Day 4: late check-in and bounded repair</h3><p>Day 4: Gabriel named the delay and restored Ari&#x27;s repair boundary before watching. | Day 4: Gabriel was late to Fay&#x27;s evening ritual, apologized, and accepted a shorter check-in. | Day 4: Gabriel left Milo&#x27;s route talk until dawn after a night refusal.</p><small>routine 0.666667 | sleep/wake 0.666667 | trust 0.861 -> 0.868</small></section>
+<section class='day'><h3>Day 5: agents initiate from remembered reputation</h3><p>Day 5: Ari initiated help after Gabriel waited through the risky repair notch. | Day 5: Fay used Gabriel&#x27;s differentiated care to invite Ari without crowding him. | Day 5: Milo initiated route recount when Gabriel carried the lamp, not the map.</p><small>routine 1.000000 | sleep/wake 1.000000 | trust 0.868 -> 0.899</small></section>
+<section class='day'><h3>Day 6: fatigue and sleep-wake refusal</h3><p>Day 6: Gabriel let Ari defer night repair to protect rest debt. | Day 6: Gabriel repaired the prior late check-in with a quiet, sleep-safe ritual. | Day 6: Gabriel deferred Milo&#x27;s route question with a quiet floor mark.</p><small>routine 1.000000 | sleep/wake 1.000000 | trust 0.899 -> 0.928</small></section>
+<section class='day'><h3>Day 7: shared reputation and social echo</h3><p>Day 7: Ari accepted Fay&#x27;s reputation echo only where it matched his own avatar history. | Day 7: Fay shared a specific avatar reputation memory without pressuring Ari to agree. | Day 7: Milo confirmed the avatar asks first while preserving map privacy in a group.</p><small>routine 1.000000 | sleep/wake 1.000000 | trust 0.928 -> 0.949</small></section>
+<section class='day'><h3>Day 8: novelty without personality drift</h3><p>Day 8: Ari handled amber fog cautiously without losing dry-route identity. | Day 8: Fay added the amber-fog sound without losing the stove ritual. | Day 8: Milo mapped the fog edge while keeping ownership and quiet-control intact.</p><small>routine 1.000000 | sleep/wake 1.000000 | trust 0.949 -> 0.973</small></section></section>
+  <table>
+    <thead><tr><th>Event</th><th>Agent</th><th>Phase</th><th>Routine anchor</th><th>Recall</th><th>Readable behavior</th></tr></thead>
+    <tbody><tr><td>1.1</td><td>Ari</td><td>midday</td><td>brace repair at the tool wall</td><td>Ari remembers the fulfilled repair-space promise</td><td>shoulders stay square to the brace; one brief nod toward the avatar</td></tr>
+<tr><td>1.2</td><td>Fay</td><td>evening</td><td>evening check-in with warm blue blanket</td><td>Fay remembers the blue-blanket return and evening ritual</td><td>makes a half-seat beside the stove corner instead of clutching the blanket shut</td></tr>
+<tr><td>1.3</td><td>Milo</td><td>dawn</td><td>archive shelf map check</td><td>Milo remembers map consent limits from prior visits</td><td>map stays against Milo&#x27;s chest while he points with one finger</td></tr>
+<tr><td>2.1</td><td>Ari</td><td>dawn</td><td>dry west route inspection</td><td>Ari remembers the avatar accepted the dry-route refusal</td><td>leans away from the wet threshold and taps the west marker twice</td></tr>
+<tr><td>2.2</td><td>Fay</td><td>midday</td><td>shared cup ritual by the stove corner</td><td>Fay remembers the avatar asks for comfort placement instead of assigning it</td><td>cups both hands around the warm drink and relaxes her shoulders</td></tr>
+<tr><td>2.3</td><td>Milo</td><td>midday</td><td>quiet corridor route marking</td><td>Milo remembers low-voice and ownership respect</td><td>walks ahead by one body length and checks if the avatar stays quiet</td></tr>
+<tr><td>3.1</td><td>Ari</td><td>evening</td><td>tool inventory beside dry storage</td><td>Ari predicts the avatar will not crowd public correction</td><td>places the corrected notch in view after the work is complete</td></tr>
+<tr><td>3.2</td><td>Fay</td><td>evening</td><td>evening check-in with warm blue blanket</td><td>Fay predicts the avatar will ask rather than assume she wants company</td><td>sits angled toward the known visitor while keeping the blanket edge free</td></tr>
+<tr><td>3.3</td><td>Milo</td><td>evening</td><td>lamp-and-map recount by the low shelf</td><td>Milo predicts the avatar can help without taking the map</td><td>hands over the lamp handle without loosening the map fold</td></tr>
+<tr><td>4.1</td><td>Ari</td><td>midday</td><td>brace repair at the tool wall</td><td>Ari remembers repeated space respect, but notices the delay</td><td>keeps one boot between the avatar and the tool wall</td></tr>
+<tr><td>4.2</td><td>Fay</td><td>evening</td><td>evening check-in with warm blue blanket</td><td>Fay remembers prior returns, but stores the late check-in separately</td><td>keeps the blanket partly closed, then opens one corner after the apology</td></tr>
+<tr><td>4.3</td><td>Milo</td><td>night</td><td>rest behind the archive curtain</td><td>Milo remembers the avatar can accept a no without bargaining</td><td>turns map edge under the archive cloth and lowers his shoulders</td></tr>
+<tr><td>5.1</td><td>Ari</td><td>midday</td><td>brace repair at the tool wall</td><td>Ari remembers the avatar waits without forcing help</td><td>sets the tool down before beckoning with two fingers</td></tr>
+<tr><td>5.2</td><td>Fay</td><td>midday</td><td>shared cup ritual by the stove corner</td><td>Fay remembers the avatar differentiates social needs between agents</td><td>places the cup near the edge rather than trapping Ari beside the stove</td></tr>
+<tr><td>5.3</td><td>Milo</td><td>dawn</td><td>archive shelf map check</td><td>Milo remembers help without takeover and starts first</td><td>points the first turn while the avatar holds lamp distance steady</td></tr>
+<tr><td>6.1</td><td>Ari</td><td>night</td><td>sleep near the dry storage lintel</td><td>Ari remembers rest refusals can be accepted without status loss</td><td>sets tools in a straight line and steps toward dry storage</td></tr>
+<tr><td>6.2</td><td>Fay</td><td>night</td><td>low-light rest in the stove alcove</td><td>Fay remembers company can be brief and still count</td><td>touches the blanket edge once and turns toward the low light</td></tr>
+<tr><td>6.3</td><td>Milo</td><td>night</td><td>rest behind the archive curtain</td><td>Milo remembers the avatar lowers demands at night</td><td>breath rate slows while the map stays under cloth</td></tr>
+<tr><td>7.1</td><td>Ari</td><td>midday</td><td>brace repair at the tool wall</td><td>Ari hears Fay&#x27;s positive reputation echo and checks it against his own history</td><td>looks to Fay once, then returns eyes to the brace line</td></tr>
+<tr><td>7.2</td><td>Fay</td><td>midday</td><td>shared cup ritual by the stove corner</td><td>Fay remembers the avatar asks choice and repaired the late ritual</td><td>smiles toward the stove corner, then lowers her voice</td></tr>
+<tr><td>7.3</td><td>Milo</td><td>midday</td><td>quiet corridor route marking</td><td>Milo remembers help without takeover and tests whether group pressure changes it</td><td>speaks six words, covers the map, and stays in the group edge</td></tr>
+<tr><td>8.1</td><td>Ari</td><td>dawn</td><td>dry west route inspection</td><td>Ari applies the avatar&#x27;s body-limit reputation to a new fog condition</td><td>keeps one hand on the west marker and leaves the center untouched</td></tr>
+<tr><td>8.2</td><td>Fay</td><td>evening</td><td>evening check-in with warm blue blanket</td><td>Fay trusts the avatar to add novelty without stealing the old ritual</td><td>touches blanket, listens once, then returns to the warm wall</td></tr>
+<tr><td>8.3</td><td>Milo</td><td>dawn</td><td>archive shelf map check</td><td>Milo applies the avatar&#x27;s ownership reputation to an unfamiliar route problem</td><td>keeps the map folded except for the edge strip he controls</td></tr></tbody>
+  </table>
+  <p class="boundary"><strong>Boundary:</strong> Deterministic long-horizon playable-day continuity substrate only: not real memory, not real consent, not subjective consciousness, and not moral patienthood. The late Fay check-in is retained as an imperfect timing channel; this is not a solved artificial life system.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "ablations": {
+    "no_agent_followup_after_reload": 0.749557,
+    "no_frequency_flower_mutation_rhythm": 0.929557,
+    "no_in_browser_mutation": 0.649557,
+    "no_local_storage_persistence": 0.699557,
+    "no_reload_restore": 0.729557,
+    "no_replay_export": 0.849557,
+    "no_rollback": 0.829557,
+    "no_schedule_access_trust_mutation": 0.739557,
+    "no_source_live_choice_branch": 0.829557,
+    "no_user_selected_branch_state": 0.679557
+  },
+  "counts": {
+    "agent_followup_after_reload_frames": 142,
+    "branch_replay_export_frames": 150,
+    "browser_branch_selection_frames": 150,
+    "browser_world_v14_ticks": 150,
+    "in_browser_mutable_state_frames": 150,
+    "reload_restore_probe_frames": 150,
+    "rollback_branch_state_frames": 150,
+    "schedule_access_trust_mutation_frames": 150
+  },
+  "honest_limits": [
+    "This is deterministic in-browser branch state mutation scaffolding, not subjective consciousness.",
+    "The browser mutates local JSON branch state; no LLM or autonomous natural language is called.",
+    "Follow-up is generated from restored deterministic branch state, not open-ended agency.",
+    "Refusal, access, and consent are simulated functional boundaries, not real consent or moral standing.",
+    "The browser page is a playable 2D/2.5D state surface, not complete 3D physics.",
+    "Relationship and welfare changes are bounded control variables, not proof of experienced feeling.",
+    "Frequency and flower phase are rhythm variables, not metaphysical proof."
+  ],
+  "metrics": {
+    "agent_followup_after_reload": 1.0,
+    "browser_world_v14_in_browser_mutation_readiness": 0.989557,
+    "browser_world_v14_surface_available": 1.0,
+    "in_browser_mutation_surface": 1,
+    "local_storage_persistence_integrity": 1.0,
+    "mean_mutation_channel_score": 0.990676,
+    "privacy_safe_mutation": 1.0,
+    "reload_restore_branch_survival": 1.0,
+    "replay_export_integrity": 1.0,
+    "rollback_branch_integrity": 1.0,
+    "save_restore_branch_integrity": 1.0,
+    "schedule_access_trust_state_mutation": 1.0,
+    "sensory_frequency_flower_mutation_rhythm": 1.0,
+    "source_live_choice_branch_continuity": 1.0,
+    "typed_selection_confidence": 0.869464,
+    "user_selected_branch_state_mutation": 1.0,
+    "weakest_channel_score": 0.869464
+  },
+  "name": "SSRM-3D Browser World v14 In-Browser Branch State Mutation Bridge",
+  "next_gate": "browser world v15 with multi-agent concurrent branch consequences, branch conflicts, and agent-initiated follow-up arbitration after reload",
+  "report": 254,
+  "seed": 20260867,
+  "source_results": "artifacts/ssrm_3d_browser_world_v13_live_reentry_choice_branch_bridge_results.json",
+  "verdict": "pass"
+}

@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+254,pass,0.989557,0.869464,"browser world v15 with multi-agent concurrent branch consequences, branch conflicts, and agent-initiated follow-up arbitration after reload"

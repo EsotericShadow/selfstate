@@ -1,0 +1,151 @@
+mutation_id,choice_id,lineage,agent,schedule_delta_minutes,access_delta,trust_delta,boundary_delta,welfare_delta,mutation_reason,visible_behavior
+1,1,Hearthline,Sova,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+2,2,Hearthline,Sova,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+3,3,Hearthline,Sova,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+4,4,Hearthline,Sova,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+5,5,Hearthline,Sova,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+6,6,Routeline,Keth,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+7,7,Routeline,Keth,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+8,8,Routeline,Keth,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+9,9,Routeline,Keth,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+10,10,Routeline,Keth,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+11,11,Marketline,Melo,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+12,12,Marketline,Melo,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+13,13,Marketline,Melo,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+14,14,Marketline,Melo,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+15,15,Marketline,Melo,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+16,16,Ledgerline,Nari,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+17,17,Ledgerline,Nari,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+18,18,Ledgerline,Nari,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+19,19,Ledgerline,Nari,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+20,20,Ledgerline,Nari,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+21,21,Orchardline,Ori,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+22,22,Orchardline,Ori,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+23,23,Orchardline,Ori,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+24,24,Orchardline,Ori,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+25,25,Orchardline,Ori,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+26,26,Rainline,Vonn,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+27,27,Rainline,Vonn,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+28,28,Rainline,Vonn,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+29,29,Rainline,Vonn,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+30,30,Rainline,Vonn,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+31,31,Hearthline,Sova,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+32,32,Hearthline,Sova,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+33,33,Hearthline,Sova,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+34,34,Hearthline,Sova,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+35,35,Hearthline,Sova,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+36,36,Routeline,Keth,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+37,37,Routeline,Keth,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+38,38,Routeline,Keth,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+39,39,Routeline,Keth,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+40,40,Routeline,Keth,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+41,41,Marketline,Melo,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+42,42,Marketline,Melo,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+43,43,Marketline,Melo,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+44,44,Marketline,Melo,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+45,45,Marketline,Melo,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+46,46,Ledgerline,Nari,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+47,47,Ledgerline,Nari,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+48,48,Ledgerline,Nari,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+49,49,Ledgerline,Nari,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+50,50,Ledgerline,Nari,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+51,51,Orchardline,Ori,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+52,52,Orchardline,Ori,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+53,53,Orchardline,Ori,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+54,54,Orchardline,Ori,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+55,55,Orchardline,Ori,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+56,56,Rainline,Vonn,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+57,57,Rainline,Vonn,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+58,58,Rainline,Vonn,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+59,59,Rainline,Vonn,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+60,60,Rainline,Vonn,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+61,61,Hearthline,Sova,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+62,62,Hearthline,Sova,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+63,63,Hearthline,Sova,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+64,64,Hearthline,Sova,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+65,65,Hearthline,Sova,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+66,66,Routeline,Keth,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+67,67,Routeline,Keth,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+68,68,Routeline,Keth,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+69,69,Routeline,Keth,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+70,70,Routeline,Keth,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+71,71,Marketline,Melo,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+72,72,Marketline,Melo,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+73,73,Marketline,Melo,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+74,74,Marketline,Melo,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+75,75,Marketline,Melo,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+76,76,Ledgerline,Nari,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+77,77,Ledgerline,Nari,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+78,78,Ledgerline,Nari,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+79,79,Ledgerline,Nari,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+80,80,Ledgerline,Nari,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+81,81,Orchardline,Ori,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+82,82,Orchardline,Ori,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+83,83,Orchardline,Ori,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+84,84,Orchardline,Ori,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+85,85,Orchardline,Ori,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+86,86,Rainline,Vonn,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+87,87,Rainline,Vonn,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+88,88,Rainline,Vonn,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+89,89,Rainline,Vonn,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+90,90,Rainline,Vonn,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+91,91,Hearthline,Sova,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+92,92,Hearthline,Sova,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+93,93,Hearthline,Sova,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+94,94,Hearthline,Sova,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+95,95,Hearthline,Sova,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+96,96,Routeline,Keth,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+97,97,Routeline,Keth,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+98,98,Routeline,Keth,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+99,99,Routeline,Keth,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+100,100,Routeline,Keth,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+101,101,Marketline,Melo,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+102,102,Marketline,Melo,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+103,103,Marketline,Melo,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+104,104,Marketline,Melo,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+105,105,Marketline,Melo,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+106,106,Ledgerline,Nari,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+107,107,Ledgerline,Nari,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+108,108,Ledgerline,Nari,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+109,109,Ledgerline,Nari,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+110,110,Ledgerline,Nari,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+111,111,Orchardline,Ori,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+112,112,Orchardline,Ori,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+113,113,Orchardline,Ori,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+114,114,Orchardline,Ori,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+115,115,Orchardline,Ori,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+116,116,Rainline,Vonn,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+117,117,Rainline,Vonn,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+118,118,Rainline,Vonn,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+119,119,Rainline,Vonn,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+120,120,Rainline,Vonn,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+121,121,Hearthline,Sova,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+122,122,Hearthline,Sova,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+123,123,Hearthline,Sova,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+124,124,Hearthline,Sova,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+125,125,Hearthline,Sova,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+126,126,Routeline,Keth,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+127,127,Routeline,Keth,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+128,128,Routeline,Keth,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+129,129,Routeline,Keth,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+130,130,Routeline,Keth,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+131,131,Marketline,Melo,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+132,132,Marketline,Melo,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+133,133,Marketline,Melo,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+134,134,Marketline,Melo,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+135,135,Marketline,Melo,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+136,136,Ledgerline,Nari,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+137,137,Ledgerline,Nari,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+138,138,Ledgerline,Nari,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+139,139,Ledgerline,Nari,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+140,140,Ledgerline,Nari,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+141,141,Orchardline,Ori,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+142,142,Orchardline,Ori,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+143,143,Orchardline,Ori,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+144,144,Orchardline,Ori,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+145,145,Orchardline,Ori,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back
+146,146,Rainline,Vonn,10,0.055,0.032,-0.026,0.018,limited public access accepted,faces avatar and points to witness mark
+147,147,Rainline,Vonn,18,0.038,0.048,-0.036,0.026,repair before access,kneels near repair object and leaves path open
+148,148,Rainline,Vonn,6,0.02,0.018,-0.018,0.012,"summary first, defer access",opens public summary board
+149,149,Rainline,Vonn,36,-0.045,-0.042,0.058,-0.02,old access blocked until repair,turns sideways and protects route boundary
+150,150,Rainline,Vonn,2,0.01,0.014,-0.01,0.008,"observe, then agent follow-up",keeps working while glancing back

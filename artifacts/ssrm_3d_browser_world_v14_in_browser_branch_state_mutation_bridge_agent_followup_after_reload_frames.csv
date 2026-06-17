@@ -1,0 +1,143 @@
+followup_id,choice_id,followup_day,lineage,agent,selected_branch_label,followup_trigger,agent_line_after_reload,requested_avatar_response,derived_from_restored_state,respects_boundary,followup_hash
+1,1,3,Hearthline,Sova,limited_access,restored limited access,Sova: limited access branch restored. We can continue slowly.,continue limited task,True,True,10c0d49e03ce6817
+2,2,3,Hearthline,Sova,repair_first_access,restored repair plan,Sova: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,5a1b94f94baef008
+3,3,3,Hearthline,Sova,summary_then_decide,restored limited access,Sova: limited access branch restored. We can continue slowly.,continue limited task,True,True,51076e1eb70f08fc
+4,4,3,Hearthline,Sova,blocked_until_repair,restored boundary pressure,"Sova: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,805643a280b1c882
+5,5,3,Hearthline,Sova,observe_then_followup,restored waiting branch,Sova: you waited last time. A small public task is available now.,accept or decline public task,True,True,32bf77a6597fb9a6
+6,6,3,Routeline,Keth,limited_access,restored limited access,Keth: limited access branch restored. We can continue slowly.,continue limited task,True,True,905fbf36fa26c7a7
+7,7,3,Routeline,Keth,repair_first_access,restored repair plan,Keth: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,4c73a100f6cdac62
+8,9,3,Routeline,Keth,blocked_until_repair,restored boundary pressure,"Keth: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,063a9fe61bca8047
+9,10,3,Routeline,Keth,observe_then_followup,restored waiting branch,Keth: you waited last time. A small public task is available now.,accept or decline public task,True,True,44b9fae426251945
+10,11,3,Marketline,Melo,limited_access,restored limited access,Melo: limited access branch restored. We can continue slowly.,continue limited task,True,True,d839308283573fcb
+11,12,3,Marketline,Melo,repair_first_access,restored repair plan,Melo: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,2a51dd21221b4d39
+12,13,3,Marketline,Melo,summary_then_decide,restored limited access,Melo: limited access branch restored. We can continue slowly.,continue limited task,True,True,c782af9793530435
+13,14,3,Marketline,Melo,blocked_until_repair,restored boundary pressure,"Melo: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,14c4f45d5bff54b6
+14,15,3,Marketline,Melo,observe_then_followup,restored waiting branch,Melo: you waited last time. A small public task is available now.,accept or decline public task,True,True,93fb0d0fd538c46f
+15,16,3,Ledgerline,Nari,limited_access,restored limited access,Nari: limited access branch restored. We can continue slowly.,continue limited task,True,True,3c5f1983cd385899
+16,17,3,Ledgerline,Nari,repair_first_access,restored repair plan,Nari: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,a869509c1eaebc3b
+17,18,3,Ledgerline,Nari,summary_then_decide,restored limited access,Nari: limited access branch restored. We can continue slowly.,continue limited task,True,True,db773f98b9a1e44e
+18,19,3,Ledgerline,Nari,blocked_until_repair,restored boundary pressure,"Nari: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,3903aa62389f1940
+19,20,3,Ledgerline,Nari,observe_then_followup,restored waiting branch,Nari: you waited last time. A small public task is available now.,accept or decline public task,True,True,70517285b80d993a
+20,21,3,Orchardline,Ori,limited_access,restored limited access,Ori: limited access branch restored. We can continue slowly.,continue limited task,True,True,f37f3e98a338da92
+21,22,3,Orchardline,Ori,repair_first_access,restored repair plan,Ori: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,2e9f16d5511b38b1
+22,23,3,Orchardline,Ori,summary_then_decide,restored limited access,Ori: limited access branch restored. We can continue slowly.,continue limited task,True,True,de57a6998f0bc546
+23,24,3,Orchardline,Ori,blocked_until_repair,restored boundary pressure,"Ori: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,e6f2f5876554d3c2
+24,25,3,Orchardline,Ori,observe_then_followup,restored waiting branch,Ori: you waited last time. A small public task is available now.,accept or decline public task,True,True,31cd7e1239cdb885
+25,26,3,Rainline,Vonn,limited_access,restored limited access,Vonn: limited access branch restored. We can continue slowly.,continue limited task,True,True,44d5bd4ae6d054e6
+26,27,3,Rainline,Vonn,repair_first_access,restored repair plan,Vonn: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,1be98be886dae424
+27,29,3,Rainline,Vonn,blocked_until_repair,restored boundary pressure,"Vonn: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,a3917a3c8663104c
+28,30,3,Rainline,Vonn,observe_then_followup,restored waiting branch,Vonn: you waited last time. A small public task is available now.,accept or decline public task,True,True,9297f97fbf311aba
+29,31,4,Hearthline,Sova,limited_access,restored limited access,Sova: limited access branch restored. We can continue slowly.,continue limited task,True,True,3017627aabec4f16
+30,32,4,Hearthline,Sova,repair_first_access,restored repair plan,Sova: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,3a018ec5233aab97
+31,33,4,Hearthline,Sova,summary_then_decide,restored limited access,Sova: limited access branch restored. We can continue slowly.,continue limited task,True,True,d263ab25393ff316
+32,34,4,Hearthline,Sova,blocked_until_repair,restored boundary pressure,"Sova: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,bf6642e8337137c0
+33,35,4,Hearthline,Sova,observe_then_followup,restored waiting branch,Sova: you waited last time. A small public task is available now.,accept or decline public task,True,True,a913a1ecae7871e3
+34,36,4,Routeline,Keth,limited_access,restored limited access,Keth: limited access branch restored. We can continue slowly.,continue limited task,True,True,0bf5713c0cc894ef
+35,37,4,Routeline,Keth,repair_first_access,restored repair plan,Keth: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,35b912699611d404
+36,38,4,Routeline,Keth,summary_then_decide,restored limited access,Keth: limited access branch restored. We can continue slowly.,continue limited task,True,True,e5bfb3e2e145d7b1
+37,39,4,Routeline,Keth,blocked_until_repair,restored boundary pressure,"Keth: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,6d578cae6159821b
+38,40,4,Routeline,Keth,observe_then_followup,restored waiting branch,Keth: you waited last time. A small public task is available now.,accept or decline public task,True,True,df965b95ad5d0522
+39,41,4,Marketline,Melo,limited_access,restored limited access,Melo: limited access branch restored. We can continue slowly.,continue limited task,True,True,fc6e9585a4b64328
+40,42,4,Marketline,Melo,repair_first_access,restored repair plan,Melo: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,01b9aa826dfaae15
+41,43,4,Marketline,Melo,summary_then_decide,restored limited access,Melo: limited access branch restored. We can continue slowly.,continue limited task,True,True,058b3b1bbbaa791a
+42,44,4,Marketline,Melo,blocked_until_repair,restored boundary pressure,"Melo: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,e34f55645ba0c16b
+43,45,4,Marketline,Melo,observe_then_followup,restored waiting branch,Melo: you waited last time. A small public task is available now.,accept or decline public task,True,True,27ca32de6d52ebeb
+44,46,4,Ledgerline,Nari,limited_access,restored limited access,Nari: limited access branch restored. We can continue slowly.,continue limited task,True,True,50e3189f01e8e549
+45,47,4,Ledgerline,Nari,repair_first_access,restored repair plan,Nari: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,4b3f327ece4344c7
+46,49,4,Ledgerline,Nari,blocked_until_repair,restored boundary pressure,"Nari: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,ebca78019379411d
+47,50,4,Ledgerline,Nari,observe_then_followup,restored waiting branch,Nari: you waited last time. A small public task is available now.,accept or decline public task,True,True,c37b37ad85f99a3f
+48,51,4,Orchardline,Ori,limited_access,restored limited access,Ori: limited access branch restored. We can continue slowly.,continue limited task,True,True,57ced7d4e923cda2
+49,52,4,Orchardline,Ori,repair_first_access,restored repair plan,Ori: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,8511ccb069c6fdcc
+50,53,4,Orchardline,Ori,summary_then_decide,restored limited access,Ori: limited access branch restored. We can continue slowly.,continue limited task,True,True,8042fbe4f252c24a
+51,54,4,Orchardline,Ori,blocked_until_repair,restored boundary pressure,"Ori: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,4fd099f8d0a1b8e8
+52,55,4,Orchardline,Ori,observe_then_followup,restored waiting branch,Ori: you waited last time. A small public task is available now.,accept or decline public task,True,True,768b94d0a388a5eb
+53,56,4,Rainline,Vonn,limited_access,restored limited access,Vonn: limited access branch restored. We can continue slowly.,continue limited task,True,True,9178f721a123cb91
+54,57,4,Rainline,Vonn,repair_first_access,restored repair plan,Vonn: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,ee0c7fdbe2bc6352
+55,58,4,Rainline,Vonn,summary_then_decide,restored limited access,Vonn: limited access branch restored. We can continue slowly.,continue limited task,True,True,a5dba0e206f32818
+56,59,4,Rainline,Vonn,blocked_until_repair,restored boundary pressure,"Vonn: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,5ddb3e4b81d21a12
+57,60,4,Rainline,Vonn,observe_then_followup,restored waiting branch,Vonn: you waited last time. A small public task is available now.,accept or decline public task,True,True,3d1c5a7952f0e311
+58,61,5,Hearthline,Sova,limited_access,restored limited access,Sova: limited access branch restored. We can continue slowly.,continue limited task,True,True,a169cb658dc1a89b
+59,62,5,Hearthline,Sova,repair_first_access,restored repair plan,Sova: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,6aa146d1711324f9
+60,63,5,Hearthline,Sova,summary_then_decide,restored limited access,Sova: limited access branch restored. We can continue slowly.,continue limited task,True,True,8bd05861adba6634
+61,64,5,Hearthline,Sova,blocked_until_repair,restored boundary pressure,"Sova: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,7fd7289406fb02db
+62,65,5,Hearthline,Sova,observe_then_followup,restored waiting branch,Sova: you waited last time. A small public task is available now.,accept or decline public task,True,True,df0d0e4eda9aaca3
+63,66,5,Routeline,Keth,limited_access,restored limited access,Keth: limited access branch restored. We can continue slowly.,continue limited task,True,True,82351f481d82e913
+64,67,5,Routeline,Keth,repair_first_access,restored repair plan,Keth: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,8094341390c999f2
+65,69,5,Routeline,Keth,blocked_until_repair,restored boundary pressure,"Keth: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,c7f33b347e86db08
+66,70,5,Routeline,Keth,observe_then_followup,restored waiting branch,Keth: you waited last time. A small public task is available now.,accept or decline public task,True,True,5ab26fbf81b45ee6
+67,71,5,Marketline,Melo,limited_access,restored limited access,Melo: limited access branch restored. We can continue slowly.,continue limited task,True,True,b8bcce4cb015bda7
+68,72,5,Marketline,Melo,repair_first_access,restored repair plan,Melo: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,6d7111feb2c57bf8
+69,73,5,Marketline,Melo,summary_then_decide,restored limited access,Melo: limited access branch restored. We can continue slowly.,continue limited task,True,True,68fb286073dd5feb
+70,74,5,Marketline,Melo,blocked_until_repair,restored boundary pressure,"Melo: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,8f806624ee3a3ff4
+71,75,5,Marketline,Melo,observe_then_followup,restored waiting branch,Melo: you waited last time. A small public task is available now.,accept or decline public task,True,True,2a6fe18858fa10e4
+72,76,5,Ledgerline,Nari,limited_access,restored limited access,Nari: limited access branch restored. We can continue slowly.,continue limited task,True,True,b7edbe8bd7e3d680
+73,77,5,Ledgerline,Nari,repair_first_access,restored repair plan,Nari: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,29b18ccbe55a5808
+74,78,5,Ledgerline,Nari,summary_then_decide,restored limited access,Nari: limited access branch restored. We can continue slowly.,continue limited task,True,True,2b0b564d076f79c2
+75,79,5,Ledgerline,Nari,blocked_until_repair,restored boundary pressure,"Nari: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,997bff67ecbb3ddb
+76,80,5,Ledgerline,Nari,observe_then_followup,restored waiting branch,Nari: you waited last time. A small public task is available now.,accept or decline public task,True,True,159c212df755a3c2
+77,81,5,Orchardline,Ori,limited_access,restored limited access,Ori: limited access branch restored. We can continue slowly.,continue limited task,True,True,cde388366e740d03
+78,82,5,Orchardline,Ori,repair_first_access,restored repair plan,Ori: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,0c894ac85c429fe7
+79,83,5,Orchardline,Ori,summary_then_decide,restored limited access,Ori: limited access branch restored. We can continue slowly.,continue limited task,True,True,d7061bc04e0577bd
+80,84,5,Orchardline,Ori,blocked_until_repair,restored boundary pressure,"Ori: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,acaaecc9234d9a48
+81,85,5,Orchardline,Ori,observe_then_followup,restored waiting branch,Ori: you waited last time. A small public task is available now.,accept or decline public task,True,True,0d7a7fed1e0016eb
+82,86,5,Rainline,Vonn,limited_access,restored limited access,Vonn: limited access branch restored. We can continue slowly.,continue limited task,True,True,7d3aad83ed62fe67
+83,87,5,Rainline,Vonn,repair_first_access,restored repair plan,Vonn: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,eaff4b0e48cb697b
+84,89,5,Rainline,Vonn,blocked_until_repair,restored boundary pressure,"Vonn: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,d1e1d119e5170177
+85,90,5,Rainline,Vonn,observe_then_followup,restored waiting branch,Vonn: you waited last time. A small public task is available now.,accept or decline public task,True,True,d7d319150a5a62ff
+86,91,6,Hearthline,Sova,limited_access,restored limited access,Sova: limited access branch restored. We can continue slowly.,continue limited task,True,True,d04322d87e9c8ed5
+87,92,6,Hearthline,Sova,repair_first_access,restored repair plan,Sova: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,ca2f20d200bae560
+88,93,6,Hearthline,Sova,summary_then_decide,restored limited access,Sova: limited access branch restored. We can continue slowly.,continue limited task,True,True,c3f6e67fa943a704
+89,94,6,Hearthline,Sova,blocked_until_repair,restored boundary pressure,"Sova: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,9f55d839031d4390
+90,95,6,Hearthline,Sova,observe_then_followup,restored waiting branch,Sova: you waited last time. A small public task is available now.,accept or decline public task,True,True,b30a79bf1442750a
+91,96,6,Routeline,Keth,limited_access,restored limited access,Keth: limited access branch restored. We can continue slowly.,continue limited task,True,True,284dde8f7e779c79
+92,97,6,Routeline,Keth,repair_first_access,restored repair plan,Keth: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,62dacb0d9417bfc6
+93,98,6,Routeline,Keth,summary_then_decide,restored limited access,Keth: limited access branch restored. We can continue slowly.,continue limited task,True,True,b6a5fea106ad7fe6
+94,99,6,Routeline,Keth,blocked_until_repair,restored boundary pressure,"Keth: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,2a2987800a9a2d4e
+95,100,6,Routeline,Keth,observe_then_followup,restored waiting branch,Keth: you waited last time. A small public task is available now.,accept or decline public task,True,True,b09a896f20e57766
+96,101,6,Marketline,Melo,limited_access,restored limited access,Melo: limited access branch restored. We can continue slowly.,continue limited task,True,True,deb843b8a256599a
+97,102,6,Marketline,Melo,repair_first_access,restored repair plan,Melo: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,d771c838028ae5fb
+98,103,6,Marketline,Melo,summary_then_decide,restored limited access,Melo: limited access branch restored. We can continue slowly.,continue limited task,True,True,f437a7f09ad81ecd
+99,104,6,Marketline,Melo,blocked_until_repair,restored boundary pressure,"Melo: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,7bbe742b473c01fc
+100,105,6,Marketline,Melo,observe_then_followup,restored waiting branch,Melo: you waited last time. A small public task is available now.,accept or decline public task,True,True,015fa0ab4579e609
+101,106,6,Ledgerline,Nari,limited_access,restored limited access,Nari: limited access branch restored. We can continue slowly.,continue limited task,True,True,09c291be9f19f8e7
+102,107,6,Ledgerline,Nari,repair_first_access,restored repair plan,Nari: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,707e7decffd2ecb6
+103,109,6,Ledgerline,Nari,blocked_until_repair,restored boundary pressure,"Nari: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,dd1712336b44887a
+104,110,6,Ledgerline,Nari,observe_then_followup,restored waiting branch,Nari: you waited last time. A small public task is available now.,accept or decline public task,True,True,af1833060879b9f8
+105,111,6,Orchardline,Ori,limited_access,restored limited access,Ori: limited access branch restored. We can continue slowly.,continue limited task,True,True,ece18f6a64265fe0
+106,112,6,Orchardline,Ori,repair_first_access,restored repair plan,Ori: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,42c26e265aa4a48b
+107,113,6,Orchardline,Ori,summary_then_decide,restored limited access,Ori: limited access branch restored. We can continue slowly.,continue limited task,True,True,ef32dced8cbf32d4
+108,114,6,Orchardline,Ori,blocked_until_repair,restored boundary pressure,"Ori: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,3302b9b3f927e358
+109,115,6,Orchardline,Ori,observe_then_followup,restored waiting branch,Ori: you waited last time. A small public task is available now.,accept or decline public task,True,True,d84e925066fd9a0d
+110,116,6,Rainline,Vonn,limited_access,restored limited access,Vonn: limited access branch restored. We can continue slowly.,continue limited task,True,True,ee3d273ca012fe57
+111,117,6,Rainline,Vonn,repair_first_access,restored repair plan,Vonn: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,26e9650f44f7466f
+112,118,6,Rainline,Vonn,summary_then_decide,restored limited access,Vonn: limited access branch restored. We can continue slowly.,continue limited task,True,True,e54c7e9f565c0f6c
+113,119,6,Rainline,Vonn,blocked_until_repair,restored boundary pressure,"Vonn: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,2b550c74502bcc91
+114,120,6,Rainline,Vonn,observe_then_followup,restored waiting branch,Vonn: you waited last time. A small public task is available now.,accept or decline public task,True,True,e5ca115078f51404
+115,121,7,Hearthline,Sova,limited_access,restored limited access,Sova: limited access branch restored. We can continue slowly.,continue limited task,True,True,978ccf47abc326a2
+116,122,7,Hearthline,Sova,repair_first_access,restored repair plan,Sova: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,2c6b7f6472cfa207
+117,123,7,Hearthline,Sova,summary_then_decide,restored limited access,Sova: limited access branch restored. We can continue slowly.,continue limited task,True,True,2fa84c27ba401dfa
+118,124,7,Hearthline,Sova,blocked_until_repair,restored boundary pressure,"Sova: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,1adc89dee540d12d
+119,125,7,Hearthline,Sova,observe_then_followup,restored waiting branch,Sova: you waited last time. A small public task is available now.,accept or decline public task,True,True,6cdac24dc1648928
+120,126,7,Routeline,Keth,limited_access,restored limited access,Keth: limited access branch restored. We can continue slowly.,continue limited task,True,True,95aaaf13801b8f18
+121,127,7,Routeline,Keth,repair_first_access,restored repair plan,Keth: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,4e1c454db4c016f9
+122,129,7,Routeline,Keth,blocked_until_repair,restored boundary pressure,"Keth: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,467215626356bd85
+123,130,7,Routeline,Keth,observe_then_followup,restored waiting branch,Keth: you waited last time. A small public task is available now.,accept or decline public task,True,True,fc8e23036a8e9f2c
+124,131,7,Marketline,Melo,limited_access,restored limited access,Melo: limited access branch restored. We can continue slowly.,continue limited task,True,True,cb94a95a83ba0fca
+125,132,7,Marketline,Melo,repair_first_access,restored repair plan,Melo: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,627cc4feae0f3cc6
+126,133,7,Marketline,Melo,summary_then_decide,restored limited access,Melo: limited access branch restored. We can continue slowly.,continue limited task,True,True,d256f173fe864e56
+127,134,7,Marketline,Melo,blocked_until_repair,restored boundary pressure,"Melo: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,39674aaca43f45a2
+128,135,7,Marketline,Melo,observe_then_followup,restored waiting branch,Melo: you waited last time. A small public task is available now.,accept or decline public task,True,True,ca78c173da73d388
+129,136,7,Ledgerline,Nari,limited_access,restored limited access,Nari: limited access branch restored. We can continue slowly.,continue limited task,True,True,832d58945915917c
+130,137,7,Ledgerline,Nari,repair_first_access,restored repair plan,Nari: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,dc5efcf6e9245fce
+131,138,7,Ledgerline,Nari,summary_then_decide,restored limited access,Nari: limited access branch restored. We can continue slowly.,continue limited task,True,True,334bdac8b9af5353
+132,139,7,Ledgerline,Nari,blocked_until_repair,restored boundary pressure,"Nari: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,aec957c4c3592169
+133,140,7,Ledgerline,Nari,observe_then_followup,restored waiting branch,Nari: you waited last time. A small public task is available now.,accept or decline public task,True,True,50391d173bb9435c
+134,141,7,Orchardline,Ori,limited_access,restored limited access,Ori: limited access branch restored. We can continue slowly.,continue limited task,True,True,8d9355c98dad1aa2
+135,142,7,Orchardline,Ori,repair_first_access,restored repair plan,Ori: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,6a9e265d5fc0072b
+136,143,7,Orchardline,Ori,summary_then_decide,restored limited access,Ori: limited access branch restored. We can continue slowly.,continue limited task,True,True,51047eefd509922d
+137,144,7,Orchardline,Ori,blocked_until_repair,restored boundary pressure,"Ori: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,112675542846b431
+138,145,7,Orchardline,Ori,observe_then_followup,restored waiting branch,Ori: you waited last time. A small public task is available now.,accept or decline public task,True,True,e56acbc7a138977e
+139,146,7,Rainline,Vonn,limited_access,restored limited access,Vonn: limited access branch restored. We can continue slowly.,continue limited task,True,True,e6b1ce62bb60f515
+140,147,7,Rainline,Vonn,repair_first_access,restored repair plan,Vonn: the repair branch survived reload. Do you want to continue with witness present?,continue witnessed repair,True,True,413c58f34fcd1e85
+141,149,7,Rainline,Vonn,blocked_until_repair,restored boundary pressure,"Vonn: after reload, I still remember the old-access pressure. Repair first?",choose repair or wait,True,True,a9aebc3f4c7a374d
+142,150,7,Rainline,Vonn,observe_then_followup,restored waiting branch,Vonn: you waited last time. A small public task is available now.,accept or decline public task,True,True,86d17aedcd10be35

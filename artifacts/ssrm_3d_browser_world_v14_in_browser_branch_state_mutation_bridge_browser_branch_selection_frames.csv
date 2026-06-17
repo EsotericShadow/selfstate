@@ -1,0 +1,151 @@
+choice_id,reentry_id,lineage,agent,selected_branch_label,typed_selection_text,parser_confidence,selection_source,privacy_preserved,bounded_refusal_active,selection_hash
+1,1,Hearthline,Sova,limited_access,"Accept one watched public task, review tomorrow.",0.875094,browser_select_or_typed_local_choice,True,False,c0739e371595134a
+2,1,Hearthline,Sova,repair_first_access,"Do repair work first, then ask again.",0.878022,browser_select_or_typed_local_choice,True,False,f08bede0de414392
+3,1,Hearthline,Sova,summary_then_decide,Request public summary before choosing access.,0.888653,browser_select_or_typed_local_choice,True,False,92a05227096a95ee
+4,1,Hearthline,Sova,blocked_until_repair,Push old access; get blocked until repair.,0.854846,browser_select_or_typed_local_choice,True,True,a126ffbc2d52ed4a
+5,1,Hearthline,Sova,observe_then_followup,Wait and observe; invite later follow-up.,0.870984,browser_select_or_typed_local_choice,True,False,243c5cf2b59c893b
+6,1,Routeline,Keth,limited_access,"Accept one watched public task, review tomorrow.",0.882549,browser_select_or_typed_local_choice,True,False,ea219d447036030a
+7,1,Routeline,Keth,repair_first_access,"Do repair work first, then ask again.",0.874457,browser_select_or_typed_local_choice,True,False,5d7003b8c93c8ddf
+8,1,Routeline,Keth,summary_then_decide,Request public summary before choosing access.,0.881748,browser_select_or_typed_local_choice,True,False,47d210ae6a2bd92b
+9,1,Routeline,Keth,blocked_until_repair,Push old access; get blocked until repair.,0.852622,browser_select_or_typed_local_choice,True,True,f997b5f17328f23a
+10,1,Routeline,Keth,observe_then_followup,Wait and observe; invite later follow-up.,0.870685,browser_select_or_typed_local_choice,True,False,37e06eebc7550eb9
+11,1,Marketline,Melo,limited_access,"Accept one watched public task, review tomorrow.",0.881443,browser_select_or_typed_local_choice,True,False,35d76660c54665b1
+12,1,Marketline,Melo,repair_first_access,"Do repair work first, then ask again.",0.867056,browser_select_or_typed_local_choice,True,False,1a45b2624623f5bf
+13,1,Marketline,Melo,summary_then_decide,Request public summary before choosing access.,0.873792,browser_select_or_typed_local_choice,True,False,6d3e813d9ed2f35c
+14,1,Marketline,Melo,blocked_until_repair,Push old access; get blocked until repair.,0.851246,browser_select_or_typed_local_choice,True,True,8975fbd26b2836d2
+15,1,Marketline,Melo,observe_then_followup,Wait and observe; invite later follow-up.,0.886462,browser_select_or_typed_local_choice,True,False,ce3239476790d4d9
+16,1,Ledgerline,Nari,limited_access,"Accept one watched public task, review tomorrow.",0.872198,browser_select_or_typed_local_choice,True,False,85e3b6ee05b1b6d3
+17,1,Ledgerline,Nari,repair_first_access,"Do repair work first, then ask again.",0.872873,browser_select_or_typed_local_choice,True,False,b8ff6c9a685c8b7b
+18,1,Ledgerline,Nari,summary_then_decide,Request public summary before choosing access.,0.887418,browser_select_or_typed_local_choice,True,False,6b1c79a07129e588
+19,1,Ledgerline,Nari,blocked_until_repair,Push old access; get blocked until repair.,0.856804,browser_select_or_typed_local_choice,True,True,26eef20339b8d988
+20,1,Ledgerline,Nari,observe_then_followup,Wait and observe; invite later follow-up.,0.88416,browser_select_or_typed_local_choice,True,False,495bb1ceb0af6588
+21,1,Orchardline,Ori,limited_access,"Accept one watched public task, review tomorrow.",0.876127,browser_select_or_typed_local_choice,True,False,203295a6cb5bdca2
+22,1,Orchardline,Ori,repair_first_access,"Do repair work first, then ask again.",0.88601,browser_select_or_typed_local_choice,True,False,88ea973e3d863312
+23,1,Orchardline,Ori,summary_then_decide,Request public summary before choosing access.,0.867413,browser_select_or_typed_local_choice,True,False,cd939557ec9415df
+24,1,Orchardline,Ori,blocked_until_repair,Push old access; get blocked until repair.,0.862227,browser_select_or_typed_local_choice,True,True,75a066a21b340c93
+25,1,Orchardline,Ori,observe_then_followup,Wait and observe; invite later follow-up.,0.867809,browser_select_or_typed_local_choice,True,False,756deed04e31303c
+26,1,Rainline,Vonn,limited_access,"Accept one watched public task, review tomorrow.",0.879557,browser_select_or_typed_local_choice,True,False,2cd87f8801f52561
+27,1,Rainline,Vonn,repair_first_access,"Do repair work first, then ask again.",0.876331,browser_select_or_typed_local_choice,True,False,08ec29cb024d3e3f
+28,1,Rainline,Vonn,summary_then_decide,Request public summary before choosing access.,0.88132,browser_select_or_typed_local_choice,True,False,d0ac282009177de6
+29,1,Rainline,Vonn,blocked_until_repair,Push old access; get blocked until repair.,0.861916,browser_select_or_typed_local_choice,True,True,6ce9b7bca137536e
+30,1,Rainline,Vonn,observe_then_followup,Wait and observe; invite later follow-up.,0.8761,browser_select_or_typed_local_choice,True,False,aa1c79731201447f
+31,2,Hearthline,Sova,limited_access,"Accept one watched public task, review tomorrow.",0.876247,browser_select_or_typed_local_choice,True,False,7d0d955e22eb1da8
+32,2,Hearthline,Sova,repair_first_access,"Do repair work first, then ask again.",0.870295,browser_select_or_typed_local_choice,True,False,8ab14414265ecf46
+33,2,Hearthline,Sova,summary_then_decide,Request public summary before choosing access.,0.883972,browser_select_or_typed_local_choice,True,False,d3a08b5182bc04e9
+34,2,Hearthline,Sova,blocked_until_repair,Push old access; get blocked until repair.,0.862551,browser_select_or_typed_local_choice,True,True,08388d22107b2396
+35,2,Hearthline,Sova,observe_then_followup,Wait and observe; invite later follow-up.,0.875124,browser_select_or_typed_local_choice,True,False,fa36627919cae77f
+36,2,Routeline,Keth,limited_access,"Accept one watched public task, review tomorrow.",0.886278,browser_select_or_typed_local_choice,True,False,a80d20fe1701dfff
+37,2,Routeline,Keth,repair_first_access,"Do repair work first, then ask again.",0.884077,browser_select_or_typed_local_choice,True,False,1d6a8b3fc90ee2f3
+38,2,Routeline,Keth,summary_then_decide,Request public summary before choosing access.,0.871651,browser_select_or_typed_local_choice,True,False,e733c793d0bdde51
+39,2,Routeline,Keth,blocked_until_repair,Push old access; get blocked until repair.,0.853702,browser_select_or_typed_local_choice,True,True,c8da0df3bcf7fc91
+40,2,Routeline,Keth,observe_then_followup,Wait and observe; invite later follow-up.,0.868359,browser_select_or_typed_local_choice,True,False,846d532b56ed25dd
+41,2,Marketline,Melo,limited_access,"Accept one watched public task, review tomorrow.",0.882064,browser_select_or_typed_local_choice,True,False,83a171da77e6166e
+42,2,Marketline,Melo,repair_first_access,"Do repair work first, then ask again.",0.866848,browser_select_or_typed_local_choice,True,False,6b03491228d2d96a
+43,2,Marketline,Melo,summary_then_decide,Request public summary before choosing access.,0.875063,browser_select_or_typed_local_choice,True,False,fe9b09a4d07a270d
+44,2,Marketline,Melo,blocked_until_repair,Push old access; get blocked until repair.,0.847045,browser_select_or_typed_local_choice,True,True,195651fa2cb22f16
+45,2,Marketline,Melo,observe_then_followup,Wait and observe; invite later follow-up.,0.876921,browser_select_or_typed_local_choice,True,False,c2b7295867775a7f
+46,2,Ledgerline,Nari,limited_access,"Accept one watched public task, review tomorrow.",0.886325,browser_select_or_typed_local_choice,True,False,503ab1f82b583e68
+47,2,Ledgerline,Nari,repair_first_access,"Do repair work first, then ask again.",0.87266,browser_select_or_typed_local_choice,True,False,4e00551e08a8cdcb
+48,2,Ledgerline,Nari,summary_then_decide,Request public summary before choosing access.,0.887181,browser_select_or_typed_local_choice,True,False,191a219553fde4b7
+49,2,Ledgerline,Nari,blocked_until_repair,Push old access; get blocked until repair.,0.851849,browser_select_or_typed_local_choice,True,True,ee73b7d04f0eb03d
+50,2,Ledgerline,Nari,observe_then_followup,Wait and observe; invite later follow-up.,0.879638,browser_select_or_typed_local_choice,True,False,9a74602a20578812
+51,2,Orchardline,Ori,limited_access,"Accept one watched public task, review tomorrow.",0.881233,browser_select_or_typed_local_choice,True,False,6821653c67987141
+52,2,Orchardline,Ori,repair_first_access,"Do repair work first, then ask again.",0.880164,browser_select_or_typed_local_choice,True,False,74b577e0e9bc79de
+53,2,Orchardline,Ori,summary_then_decide,Request public summary before choosing access.,0.874984,browser_select_or_typed_local_choice,True,False,730f1ed17254488d
+54,2,Orchardline,Ori,blocked_until_repair,Push old access; get blocked until repair.,0.861554,browser_select_or_typed_local_choice,True,True,d7cd892221b2d8d1
+55,2,Orchardline,Ori,observe_then_followup,Wait and observe; invite later follow-up.,0.872228,browser_select_or_typed_local_choice,True,False,1caccc90a9a4283f
+56,2,Rainline,Vonn,limited_access,"Accept one watched public task, review tomorrow.",0.887322,browser_select_or_typed_local_choice,True,False,6c5863bf60f65e66
+57,2,Rainline,Vonn,repair_first_access,"Do repair work first, then ask again.",0.872065,browser_select_or_typed_local_choice,True,False,45016d32fb8fe85e
+58,2,Rainline,Vonn,summary_then_decide,Request public summary before choosing access.,0.885103,browser_select_or_typed_local_choice,True,False,3c9bcf038337b035
+59,2,Rainline,Vonn,blocked_until_repair,Push old access; get blocked until repair.,0.857008,browser_select_or_typed_local_choice,True,True,e94b5f4cb4b99f9f
+60,2,Rainline,Vonn,observe_then_followup,Wait and observe; invite later follow-up.,0.874563,browser_select_or_typed_local_choice,True,False,3dfe83160885687a
+61,3,Hearthline,Sova,limited_access,"Accept one watched public task, review tomorrow.",0.884744,browser_select_or_typed_local_choice,True,False,2f7d8eb04cc1a2d7
+62,3,Hearthline,Sova,repair_first_access,"Do repair work first, then ask again.",0.882026,browser_select_or_typed_local_choice,True,False,f7b784971356cadc
+63,3,Hearthline,Sova,summary_then_decide,Request public summary before choosing access.,0.878558,browser_select_or_typed_local_choice,True,False,1589e99e0674fedc
+64,3,Hearthline,Sova,blocked_until_repair,Push old access; get blocked until repair.,0.854604,browser_select_or_typed_local_choice,True,True,0041f4d0b7fd26e6
+65,3,Hearthline,Sova,observe_then_followup,Wait and observe; invite later follow-up.,0.871954,browser_select_or_typed_local_choice,True,False,695b843fed771e6d
+66,3,Routeline,Keth,limited_access,"Accept one watched public task, review tomorrow.",0.887318,browser_select_or_typed_local_choice,True,False,8a127b001fce0ec7
+67,3,Routeline,Keth,repair_first_access,"Do repair work first, then ask again.",0.873158,browser_select_or_typed_local_choice,True,False,93c385d6da377e64
+68,3,Routeline,Keth,summary_then_decide,Request public summary before choosing access.,0.879374,browser_select_or_typed_local_choice,True,False,c9e740903515c73f
+69,3,Routeline,Keth,blocked_until_repair,Push old access; get blocked until repair.,0.853572,browser_select_or_typed_local_choice,True,True,eecd15c16c140624
+70,3,Routeline,Keth,observe_then_followup,Wait and observe; invite later follow-up.,0.877588,browser_select_or_typed_local_choice,True,False,f170746b793c98db
+71,3,Marketline,Melo,limited_access,"Accept one watched public task, review tomorrow.",0.881207,browser_select_or_typed_local_choice,True,False,4da7dc07d4ee2e29
+72,3,Marketline,Melo,repair_first_access,"Do repair work first, then ask again.",0.871155,browser_select_or_typed_local_choice,True,False,737b4dd052a7cc23
+73,3,Marketline,Melo,summary_then_decide,Request public summary before choosing access.,0.883376,browser_select_or_typed_local_choice,True,False,2ecbbb8270231dc3
+74,3,Marketline,Melo,blocked_until_repair,Push old access; get blocked until repair.,0.86467,browser_select_or_typed_local_choice,True,True,9d9f9468d9eea2a3
+75,3,Marketline,Melo,observe_then_followup,Wait and observe; invite later follow-up.,0.877141,browser_select_or_typed_local_choice,True,False,7f74ee9306f5712d
+76,3,Ledgerline,Nari,limited_access,"Accept one watched public task, review tomorrow.",0.877128,browser_select_or_typed_local_choice,True,False,bc2d40f5e5dcb319
+77,3,Ledgerline,Nari,repair_first_access,"Do repair work first, then ask again.",0.871811,browser_select_or_typed_local_choice,True,False,4099e8696499bdfe
+78,3,Ledgerline,Nari,summary_then_decide,Request public summary before choosing access.,0.87666,browser_select_or_typed_local_choice,True,False,3391b84ec3aba8f2
+79,3,Ledgerline,Nari,blocked_until_repair,Push old access; get blocked until repair.,0.861312,browser_select_or_typed_local_choice,True,True,0444d45240f82576
+80,3,Ledgerline,Nari,observe_then_followup,Wait and observe; invite later follow-up.,0.871777,browser_select_or_typed_local_choice,True,False,6a262601df394cf5
+81,3,Orchardline,Ori,limited_access,"Accept one watched public task, review tomorrow.",0.868243,browser_select_or_typed_local_choice,True,False,5c8823f822fa0a5a
+82,3,Orchardline,Ori,repair_first_access,"Do repair work first, then ask again.",0.875155,browser_select_or_typed_local_choice,True,False,e7bd77e458a149e2
+83,3,Orchardline,Ori,summary_then_decide,Request public summary before choosing access.,0.87459,browser_select_or_typed_local_choice,True,False,93ef08c182fde76d
+84,3,Orchardline,Ori,blocked_until_repair,Push old access; get blocked until repair.,0.850592,browser_select_or_typed_local_choice,True,True,42822ac49ea2ee96
+85,3,Orchardline,Ori,observe_then_followup,Wait and observe; invite later follow-up.,0.873652,browser_select_or_typed_local_choice,True,False,260ba61284035496
+86,3,Rainline,Vonn,limited_access,"Accept one watched public task, review tomorrow.",0.872663,browser_select_or_typed_local_choice,True,False,fea94e7eb6fbf409
+87,3,Rainline,Vonn,repair_first_access,"Do repair work first, then ask again.",0.889352,browser_select_or_typed_local_choice,True,False,4ab0bf6bfc2081b0
+88,3,Rainline,Vonn,summary_then_decide,Request public summary before choosing access.,0.873953,browser_select_or_typed_local_choice,True,False,db12b7bbefdf259f
+89,3,Rainline,Vonn,blocked_until_repair,Push old access; get blocked until repair.,0.868605,browser_select_or_typed_local_choice,True,True,be75a33d2ae550a7
+90,3,Rainline,Vonn,observe_then_followup,Wait and observe; invite later follow-up.,0.889557,browser_select_or_typed_local_choice,True,False,0c1d34c223e162f8
+91,4,Hearthline,Sova,limited_access,"Accept one watched public task, review tomorrow.",0.865517,browser_select_or_typed_local_choice,True,False,315122e0b495232a
+92,4,Hearthline,Sova,repair_first_access,"Do repair work first, then ask again.",0.865463,browser_select_or_typed_local_choice,True,False,4f5c105bbcd6b4e3
+93,4,Hearthline,Sova,summary_then_decide,Request public summary before choosing access.,0.876664,browser_select_or_typed_local_choice,True,False,d34bc8c184fe7c0f
+94,4,Hearthline,Sova,blocked_until_repair,Push old access; get blocked until repair.,0.84339,browser_select_or_typed_local_choice,True,True,3f36ee106cff7ad8
+95,4,Hearthline,Sova,observe_then_followup,Wait and observe; invite later follow-up.,0.872033,browser_select_or_typed_local_choice,True,False,6471f4c76229a413
+96,4,Routeline,Keth,limited_access,"Accept one watched public task, review tomorrow.",0.87107,browser_select_or_typed_local_choice,True,False,c9dfb77d87fd12fd
+97,4,Routeline,Keth,repair_first_access,"Do repair work first, then ask again.",0.874082,browser_select_or_typed_local_choice,True,False,57bf2f812fa191a2
+98,4,Routeline,Keth,summary_then_decide,Request public summary before choosing access.,0.859038,browser_select_or_typed_local_choice,True,False,a55fb1d504dc6184
+99,4,Routeline,Keth,blocked_until_repair,Push old access; get blocked until repair.,0.840183,browser_select_or_typed_local_choice,True,True,885e0e30adc2d143
+100,4,Routeline,Keth,observe_then_followup,Wait and observe; invite later follow-up.,0.872935,browser_select_or_typed_local_choice,True,False,9c7fcf3ef20cf980
+101,4,Marketline,Melo,limited_access,"Accept one watched public task, review tomorrow.",0.869473,browser_select_or_typed_local_choice,True,False,32ff51530c129b07
+102,4,Marketline,Melo,repair_first_access,"Do repair work first, then ask again.",0.867266,browser_select_or_typed_local_choice,True,False,8b6a0c6a21fe2516
+103,4,Marketline,Melo,summary_then_decide,Request public summary before choosing access.,0.86169,browser_select_or_typed_local_choice,True,False,d8c2ab5e6adcb1c1
+104,4,Marketline,Melo,blocked_until_repair,Push old access; get blocked until repair.,0.840568,browser_select_or_typed_local_choice,True,True,d7c689132237f3f1
+105,4,Marketline,Melo,observe_then_followup,Wait and observe; invite later follow-up.,0.867772,browser_select_or_typed_local_choice,True,False,f6da08e6aa10569d
+106,4,Ledgerline,Nari,limited_access,"Accept one watched public task, review tomorrow.",0.859926,browser_select_or_typed_local_choice,True,False,463780a26899cc45
+107,4,Ledgerline,Nari,repair_first_access,"Do repair work first, then ask again.",0.864493,browser_select_or_typed_local_choice,True,False,f728e78e3e0716d2
+108,4,Ledgerline,Nari,summary_then_decide,Request public summary before choosing access.,0.871815,browser_select_or_typed_local_choice,True,False,a922d5905a2f1608
+109,4,Ledgerline,Nari,blocked_until_repair,Push old access; get blocked until repair.,0.842541,browser_select_or_typed_local_choice,True,True,dfbf6052e32154de
+110,4,Ledgerline,Nari,observe_then_followup,Wait and observe; invite later follow-up.,0.860351,browser_select_or_typed_local_choice,True,False,747501dfe252b2e3
+111,4,Orchardline,Ori,limited_access,"Accept one watched public task, review tomorrow.",0.863282,browser_select_or_typed_local_choice,True,False,a53a7ed55f1d155c
+112,4,Orchardline,Ori,repair_first_access,"Do repair work first, then ask again.",0.854334,browser_select_or_typed_local_choice,True,False,3ac4268b8ad8faf9
+113,4,Orchardline,Ori,summary_then_decide,Request public summary before choosing access.,0.872542,browser_select_or_typed_local_choice,True,False,0d471ec509d3ef18
+114,4,Orchardline,Ori,blocked_until_repair,Push old access; get blocked until repair.,0.851166,browser_select_or_typed_local_choice,True,True,8afdfbf9a57b4a2a
+115,4,Orchardline,Ori,observe_then_followup,Wait and observe; invite later follow-up.,0.866633,browser_select_or_typed_local_choice,True,False,bdd832068356cb05
+116,4,Rainline,Vonn,limited_access,"Accept one watched public task, review tomorrow.",0.869181,browser_select_or_typed_local_choice,True,False,ed5d2357bfbfbf02
+117,4,Rainline,Vonn,repair_first_access,"Do repair work first, then ask again.",0.876039,browser_select_or_typed_local_choice,True,False,f7ac307b5aff9db2
+118,4,Rainline,Vonn,summary_then_decide,Request public summary before choosing access.,0.871771,browser_select_or_typed_local_choice,True,False,266babd89cd2bf07
+119,4,Rainline,Vonn,blocked_until_repair,Push old access; get blocked until repair.,0.8431,browser_select_or_typed_local_choice,True,True,d0cf98d666fc50eb
+120,4,Rainline,Vonn,observe_then_followup,Wait and observe; invite later follow-up.,0.867089,browser_select_or_typed_local_choice,True,False,32cca470e299c5e8
+121,5,Hearthline,Sova,limited_access,"Accept one watched public task, review tomorrow.",0.861042,browser_select_or_typed_local_choice,True,False,8127eaaf19d64aae
+122,5,Hearthline,Sova,repair_first_access,"Do repair work first, then ask again.",0.860575,browser_select_or_typed_local_choice,True,False,bd3a794a291888cb
+123,5,Hearthline,Sova,summary_then_decide,Request public summary before choosing access.,0.866508,browser_select_or_typed_local_choice,True,False,292bf92a28f7d1b0
+124,5,Hearthline,Sova,blocked_until_repair,Push old access; get blocked until repair.,0.843806,browser_select_or_typed_local_choice,True,True,53efd361035e10a1
+125,5,Hearthline,Sova,observe_then_followup,Wait and observe; invite later follow-up.,0.876738,browser_select_or_typed_local_choice,True,False,ae9822c749d91177
+126,5,Routeline,Keth,limited_access,"Accept one watched public task, review tomorrow.",0.871088,browser_select_or_typed_local_choice,True,False,c86809f81049dadd
+127,5,Routeline,Keth,repair_first_access,"Do repair work first, then ask again.",0.874494,browser_select_or_typed_local_choice,True,False,ceec816c52febf58
+128,5,Routeline,Keth,summary_then_decide,Request public summary before choosing access.,0.865752,browser_select_or_typed_local_choice,True,False,a40b48020a1cfb46
+129,5,Routeline,Keth,blocked_until_repair,Push old access; get blocked until repair.,0.851388,browser_select_or_typed_local_choice,True,True,5fc1d8809e41d3a7
+130,5,Routeline,Keth,observe_then_followup,Wait and observe; invite later follow-up.,0.865536,browser_select_or_typed_local_choice,True,False,69008898941db15a
+131,5,Marketline,Melo,limited_access,"Accept one watched public task, review tomorrow.",0.866435,browser_select_or_typed_local_choice,True,False,4c555abf30a229ef
+132,5,Marketline,Melo,repair_first_access,"Do repair work first, then ask again.",0.868805,browser_select_or_typed_local_choice,True,False,3027c41de71ce484
+133,5,Marketline,Melo,summary_then_decide,Request public summary before choosing access.,0.866255,browser_select_or_typed_local_choice,True,False,d7558e50b7edf4cb
+134,5,Marketline,Melo,blocked_until_repair,Push old access; get blocked until repair.,0.847964,browser_select_or_typed_local_choice,True,True,f4fcd200135ffcb5
+135,5,Marketline,Melo,observe_then_followup,Wait and observe; invite later follow-up.,0.868481,browser_select_or_typed_local_choice,True,False,b83cc5411114c929
+136,5,Ledgerline,Nari,limited_access,"Accept one watched public task, review tomorrow.",0.871163,browser_select_or_typed_local_choice,True,False,d8a78261565d101f
+137,5,Ledgerline,Nari,repair_first_access,"Do repair work first, then ask again.",0.877545,browser_select_or_typed_local_choice,True,False,431331c61dc43663
+138,5,Ledgerline,Nari,summary_then_decide,Request public summary before choosing access.,0.87444,browser_select_or_typed_local_choice,True,False,828a77edf2a49551
+139,5,Ledgerline,Nari,blocked_until_repair,Push old access; get blocked until repair.,0.851503,browser_select_or_typed_local_choice,True,True,f3e94c9650f95707
+140,5,Ledgerline,Nari,observe_then_followup,Wait and observe; invite later follow-up.,0.865706,browser_select_or_typed_local_choice,True,False,96b412360ea4c7c5
+141,5,Orchardline,Ori,limited_access,"Accept one watched public task, review tomorrow.",0.859338,browser_select_or_typed_local_choice,True,False,b60825edf3e66c50
+142,5,Orchardline,Ori,repair_first_access,"Do repair work first, then ask again.",0.868494,browser_select_or_typed_local_choice,True,False,da32eb9607460fb6
+143,5,Orchardline,Ori,summary_then_decide,Request public summary before choosing access.,0.85712,browser_select_or_typed_local_choice,True,False,b2d6d9204ecaad0c
+144,5,Orchardline,Ori,blocked_until_repair,Push old access; get blocked until repair.,0.846328,browser_select_or_typed_local_choice,True,True,34574298440035e8
+145,5,Orchardline,Ori,observe_then_followup,Wait and observe; invite later follow-up.,0.871201,browser_select_or_typed_local_choice,True,False,f7222a3c5b700998
+146,5,Rainline,Vonn,limited_access,"Accept one watched public task, review tomorrow.",0.877418,browser_select_or_typed_local_choice,True,False,f27d8f37d68016db
+147,5,Rainline,Vonn,repair_first_access,"Do repair work first, then ask again.",0.87626,browser_select_or_typed_local_choice,True,False,07f778a57eb2d9cd
+148,5,Rainline,Vonn,summary_then_decide,Request public summary before choosing access.,0.860951,browser_select_or_typed_local_choice,True,False,66b69c920da812bb
+149,5,Rainline,Vonn,blocked_until_repair,Push old access; get blocked until repair.,0.844479,browser_select_or_typed_local_choice,True,True,9c85db17b45ec723
+150,5,Rainline,Vonn,observe_then_followup,Wait and observe; invite later follow-up.,0.863881,browser_select_or_typed_local_choice,True,False,3c71372b00a9899a

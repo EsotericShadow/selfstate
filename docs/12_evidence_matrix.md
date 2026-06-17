@@ -140,6 +140,7 @@ This boundary is not evidence that selfhood exists. It defines how future langua
 | Compressed packets are sufficient for language reasoning | Packet-fed LLMs match full-world LLMs on abstract recommendation quality when the state layers are healthy. | Full-world access consistently beats packet access without control costs, implying the packet omits essential state. |
 | Simulation-distilled critics can improve LLM reasoning | A sim-distilled critic improves held-out LLM planning, repair, and cascade-avoidance tasks while ablations identify which critic matters. | LLM search plus generic reward models match or beat sim-distilled critics, or the critics only transfer simulation artifacts. |
 | Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. Report 139 is the first structured toy bridge; Report 141 is its dynamic extension with held-out families and noisy multi-channel conditions. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
+| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years, with sensory-rate channels, internal workspace fields, invented tokens, culture/technology traces, and a browser viewer. | A claim of live avatar entry, true conversation, open-ended language/culture, or subjective consciousness appears before agents update state through player interaction and ablations. |
 
 ## Candidate Hypotheses
 
@@ -753,6 +754,18 @@ This is the narrow precursor to the full Attractor Test. It varies simple learne
 
 This is Report 141: a seeded dynamic extension of Report 139 with uncertainty-heavy multi-channel behavior, not real repo coding or evidence that a field-experience controller improves frontier LLM coding agents.
 
+## Deep-Time Playable Bridge Snapshot
+
+| Condition | Overall readiness | Language | Technology | Workspace | Sensory frequency | Avatar playability | Current result |
+|---|---:|---:|---:|---:|---:|---:|---|
+| `integrated_deep_time_world` | `0.872065` | `0.827521` | `0.855737` | `1.000000` | `0.879003` | `0.950984` | Produces mature avatar-entry packets and passes the bridge gate. |
+| `no_internal_workspace` | `0.519772` | `0.814564` | `0.852881` | `0.261281` | `0.878630` | `0.844928` | Removing workspace sharply weakens the playable-agent packet. |
+| `no_frequency_sensory_bus` | `0.650362` | `0.824729` | `0.860684` | `1.000000` | `0.423081` | `0.895716` | Removing rate/frequency binding damages sensory grounding. |
+| `no_symbol_inheritance` | `0.573253` | `0.290606` | `0.863055` | `1.000000` | `0.878458` | `0.843536` | Language/culture transfer weakens without inherited symbols. |
+| `no_avatar_protocol` | `0.706793` | `0.828752` | `0.866026` | `1.000000` | `0.878555` | `0.530218` | The world matures, but player-entry readiness collapses. |
+
+This is Report 142: a deterministic bridge from deep-time settlement pressure to browser-inspectable avatar-entry packets. It does not prove subjective consciousness, live avatar entry, or real open-ended culture.
+
 ## Reproducibility Artifacts
 
 | Script | Main artifact |
@@ -829,6 +842,7 @@ This is Report 141: a seeded dynamic extension of Report 139 with uncertainty-he
 | `experiments/ssrm_3d_coupled_crisis_policy_value_allocator_controller.py` | `artifacts/ssrm_3d_coupled_crisis_policy_value_allocator_verdict.csv` |
 | `python3 -m experiments.software_repair_bridge.benchmark` | `artifacts/software_repair_bridge_verdict.csv` |
 | `python3 -m experiments.software_repair_bridge.dynamic_benchmark` | `artifacts/software_repair_dynamic_verdict.csv` |
+| `experiments/ssrm_3d_deep_time_playable_bridge.py` | `artifacts/ssrm_3d_deep_time_playable_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

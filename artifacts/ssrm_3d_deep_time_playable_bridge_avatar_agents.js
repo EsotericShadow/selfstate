@@ -1,0 +1,394 @@
+window.SSRM_3D_DEEP_TIME_PLAYABLE_BRIDGE_AGENTS = [
+  {
+    "agent_id": "integrated_deep_time_world:00",
+    "name": "Ari",
+    "role": "scout",
+    "lineage_year": 4096,
+    "position": {
+      "x": 8.0,
+      "z": 0.0
+    },
+    "native_tokens": [
+      "vosha",
+      "shanoeya",
+      "nono",
+      "misavo"
+    ],
+    "translation_hints": {
+      "vosha": "danger-or-weather-memory",
+      "shanoeya": "shared-resource",
+      "nono": "tool-or-route",
+      "misavo": "care-or-kinship"
+    },
+    "sensory_rates_hz": {
+      "visual": 2.5642,
+      "audio": 4.961,
+      "olfactory": 6.9965,
+      "thermal": 7.9895,
+      "wetness": 11.2088,
+      "pain": 13.2865,
+      "affect": 13.4611,
+      "vestibular": 15.372
+    },
+    "internal_workspace": {
+      "attention": "shared-food",
+      "motive": "trade-safely",
+      "body_state": 0.8653,
+      "affect": {
+        "fear": 0.2359,
+        "attachment": 0.7239,
+        "curiosity": 0.5147
+      },
+      "private_thought": "Ari weighs scout duty against vosha signal history."
+    },
+    "conversation_hooks": [
+      "Ask Ari what vosha means near the old shelter.",
+      "Ask Ari why the scout tradition survived the last wet season.",
+      "Ask Ari what tool, route, or promise should be protected next."
+    ],
+    "avatar_entry_ready": true
+  },
+  {
+    "agent_id": "integrated_deep_time_world:01",
+    "name": "Bo",
+    "role": "builder",
+    "lineage_year": 3904,
+    "position": {
+      "x": 7.794,
+      "z": 4.5
+    },
+    "native_tokens": [
+      "eyaom",
+      "nonoeya",
+      "vori",
+      "shatusha"
+    ],
+    "translation_hints": {
+      "eyaom": "danger-or-weather-memory",
+      "nonoeya": "shared-resource",
+      "vori": "tool-or-route",
+      "shatusha": "care-or-kinship"
+    },
+    "sensory_rates_hz": {
+      "visual": 2.5642,
+      "audio": 4.961,
+      "olfactory": 6.9965,
+      "thermal": 7.9895,
+      "wetness": 11.2088,
+      "pain": 13.2865,
+      "affect": 13.4611,
+      "vestibular": 15.372
+    },
+    "internal_workspace": {
+      "attention": "weather-memory",
+      "motive": "trade-safely",
+      "body_state": 0.8126,
+      "affect": {
+        "fear": 0.248,
+        "attachment": 0.7873,
+        "curiosity": 0.5761
+      },
+      "private_thought": "Bo weighs builder duty against eyaom signal history."
+    },
+    "conversation_hooks": [
+      "Ask Bo what eyaom means near the old shelter.",
+      "Ask Bo why the builder tradition survived the last wet season.",
+      "Ask Bo what tool, route, or promise should be protected next."
+    ],
+    "avatar_entry_ready": true
+  },
+  {
+    "agent_id": "integrated_deep_time_world:02",
+    "name": "Cy",
+    "role": "healer",
+    "lineage_year": 3712,
+    "position": {
+      "x": 5.0,
+      "z": 8.66
+    },
+    "native_tokens": [
+      "shath",
+      "shathsha",
+      "voeya",
+      "eyasami"
+    ],
+    "translation_hints": {
+      "shath": "danger-or-weather-memory",
+      "shathsha": "shared-resource",
+      "voeya": "tool-or-route",
+      "eyasami": "care-or-kinship"
+    },
+    "sensory_rates_hz": {
+      "visual": 2.5642,
+      "audio": 4.961,
+      "olfactory": 6.9965,
+      "thermal": 7.9895,
+      "wetness": 11.2088,
+      "pain": 13.2865,
+      "affect": 13.4611,
+      "vestibular": 15.372
+    },
+    "internal_workspace": {
+      "attention": "child-safety",
+      "motive": "teach-pattern",
+      "body_state": 0.805,
+      "affect": {
+        "fear": 0.2591,
+        "attachment": 0.7371,
+        "curiosity": 0.5307
+      },
+      "private_thought": "Cy weighs healer duty against shath signal history."
+    },
+    "conversation_hooks": [
+      "Ask Cy what shath means near the old shelter.",
+      "Ask Cy why the healer tradition survived the last wet season.",
+      "Ask Cy what tool, route, or promise should be protected next."
+    ],
+    "avatar_entry_ready": true
+  },
+  {
+    "agent_id": "integrated_deep_time_world:03",
+    "name": "Dee",
+    "role": "farmer",
+    "lineage_year": 3520,
+    "position": {
+      "x": 0.0,
+      "z": 11.0
+    },
+    "native_tokens": [
+      "shavo",
+      "vonono",
+      "saka",
+      "shatusha"
+    ],
+    "translation_hints": {
+      "shavo": "danger-or-weather-memory",
+      "vonono": "shared-resource",
+      "saka": "tool-or-route",
+      "shatusha": "care-or-kinship"
+    },
+    "sensory_rates_hz": {
+      "visual": 2.5642,
+      "audio": 4.961,
+      "olfactory": 6.9965,
+      "thermal": 7.9895,
+      "wetness": 11.2088,
+      "pain": 13.2865,
+      "affect": 13.4611,
+      "vestibular": 15.372
+    },
+    "internal_workspace": {
+      "attention": "council",
+      "motive": "repair-tool",
+      "body_state": 0.8376,
+      "affect": {
+        "fear": 0.1996,
+        "attachment": 0.7752,
+        "curiosity": 0.5327
+      },
+      "private_thought": "Dee weighs farmer duty against shavo signal history."
+    },
+    "conversation_hooks": [
+      "Ask Dee what shavo means near the old shelter.",
+      "Ask Dee why the farmer tradition survived the last wet season.",
+      "Ask Dee what tool, route, or promise should be protected next."
+    ],
+    "avatar_entry_ready": true
+  },
+  {
+    "agent_id": "integrated_deep_time_world:04",
+    "name": "Eli",
+    "role": "guard",
+    "lineage_year": 3328,
+    "position": {
+      "x": -6.0,
+      "z": 10.392
+    },
+    "native_tokens": [
+      "mitu",
+      "vovomi",
+      "mivo",
+      "kathth"
+    ],
+    "translation_hints": {
+      "mitu": "danger-or-weather-memory",
+      "vovomi": "shared-resource",
+      "mivo": "tool-or-route",
+      "kathth": "care-or-kinship"
+    },
+    "sensory_rates_hz": {
+      "visual": 2.5642,
+      "audio": 4.961,
+      "olfactory": 6.9965,
+      "thermal": 7.9895,
+      "wetness": 11.2088,
+      "pain": 13.2865,
+      "affect": 13.4611,
+      "vestibular": 15.372
+    },
+    "internal_workspace": {
+      "attention": "tool-repair",
+      "motive": "learn-route",
+      "body_state": 0.8695,
+      "affect": {
+        "fear": 0.2061,
+        "attachment": 0.7662,
+        "curiosity": 0.5365
+      },
+      "private_thought": "Eli weighs guard duty against mitu signal history."
+    },
+    "conversation_hooks": [
+      "Ask Eli what mitu means near the old shelter.",
+      "Ask Eli why the guard tradition survived the last wet season.",
+      "Ask Eli what tool, route, or promise should be protected next."
+    ],
+    "avatar_entry_ready": true
+  },
+  {
+    "agent_id": "integrated_deep_time_world:05",
+    "name": "Fay",
+    "role": "teacher",
+    "lineage_year": 3136,
+    "position": {
+      "x": -11.258,
+      "z": 6.5
+    },
+    "native_tokens": [
+      "vomi",
+      "shalenka",
+      "tulen",
+      "milenno"
+    ],
+    "translation_hints": {
+      "vomi": "danger-or-weather-memory",
+      "shalenka": "shared-resource",
+      "tulen": "tool-or-route",
+      "milenno": "care-or-kinship"
+    },
+    "sensory_rates_hz": {
+      "visual": 2.5642,
+      "audio": 4.961,
+      "olfactory": 6.9965,
+      "thermal": 7.9895,
+      "wetness": 11.2088,
+      "pain": 13.2865,
+      "affect": 13.4611,
+      "vestibular": 15.372
+    },
+    "internal_workspace": {
+      "attention": "outer-path",
+      "motive": "repair-tool",
+      "body_state": 0.8437,
+      "affect": {
+        "fear": 0.263,
+        "attachment": 0.7612,
+        "curiosity": 0.5682
+      },
+      "private_thought": "Fay weighs teacher duty against vomi signal history."
+    },
+    "conversation_hooks": [
+      "Ask Fay what vomi means near the old shelter.",
+      "Ask Fay why the teacher tradition survived the last wet season.",
+      "Ask Fay what tool, route, or promise should be protected next."
+    ],
+    "avatar_entry_ready": true
+  },
+  {
+    "agent_id": "integrated_deep_time_world:06",
+    "name": "Gus",
+    "role": "trader",
+    "lineage_year": 2944,
+    "position": {
+      "x": -14.0,
+      "z": 0.0
+    },
+    "native_tokens": [
+      "leneya",
+      "kamith",
+      "omno",
+      "omriri"
+    ],
+    "translation_hints": {
+      "leneya": "danger-or-weather-memory",
+      "kamith": "shared-resource",
+      "omno": "tool-or-route",
+      "omriri": "care-or-kinship"
+    },
+    "sensory_rates_hz": {
+      "visual": 2.5642,
+      "audio": 4.961,
+      "olfactory": 6.9965,
+      "thermal": 7.9895,
+      "wetness": 11.2088,
+      "pain": 13.2865,
+      "affect": 13.4611,
+      "vestibular": 15.372
+    },
+    "internal_workspace": {
+      "attention": "shared-food",
+      "motive": "learn-route",
+      "body_state": 0.837,
+      "affect": {
+        "fear": 0.2444,
+        "attachment": 0.7692,
+        "curiosity": 0.507
+      },
+      "private_thought": "Gus weighs trader duty against leneya signal history."
+    },
+    "conversation_hooks": [
+      "Ask Gus what leneya means near the old shelter.",
+      "Ask Gus why the trader tradition survived the last wet season.",
+      "Ask Gus what tool, route, or promise should be protected next."
+    ],
+    "avatar_entry_ready": true
+  },
+  {
+    "agent_id": "integrated_deep_time_world:07",
+    "name": "Ira",
+    "role": "pattern_keeper",
+    "lineage_year": 2752,
+    "position": {
+      "x": -12.99,
+      "z": -7.5
+    },
+    "native_tokens": [
+      "omom",
+      "mieyaeya",
+      "voeya",
+      "vothsha"
+    ],
+    "translation_hints": {
+      "omom": "danger-or-weather-memory",
+      "mieyaeya": "shared-resource",
+      "voeya": "tool-or-route",
+      "vothsha": "care-or-kinship"
+    },
+    "sensory_rates_hz": {
+      "visual": 2.5642,
+      "audio": 4.961,
+      "olfactory": 6.9965,
+      "thermal": 7.9895,
+      "wetness": 11.2088,
+      "pain": 13.2865,
+      "affect": 13.4611,
+      "vestibular": 15.372
+    },
+    "internal_workspace": {
+      "attention": "tool-repair",
+      "motive": "protect-settlement",
+      "body_state": 0.824,
+      "affect": {
+        "fear": 0.237,
+        "attachment": 0.7572,
+        "curiosity": 0.5071
+      },
+      "private_thought": "Ira weighs pattern_keeper duty against omom signal history."
+    },
+    "conversation_hooks": [
+      "Ask Ira what omom means near the old shelter.",
+      "Ask Ira why the pattern_keeper tradition survived the last wet season.",
+      "Ask Ira what tool, route, or promise should be protected next."
+    ],
+    "avatar_entry_ready": true
+  }
+];

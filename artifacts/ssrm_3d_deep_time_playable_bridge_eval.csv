@@ -1,0 +1,8 @@
+condition,years,epochs,population_alive,civilization_depth,language_emergence,technology_depth,culture_depth,internal_workspace_score,sensory_frequency_score,flower_lattice_score,avatar_playability_score,overall_readiness
+integrated_deep_time_world,4096,64,12,0.84633,0.827521,0.855737,1.0,1.0,0.879003,0.909758,0.950984,0.872065
+no_internal_workspace,4096,64,12,0.766571,0.814564,0.852881,0.7,0.261281,0.87863,0.909435,0.844928,0.519772
+no_frequency_sensory_bus,4096,64,12,0.850033,0.824729,0.860684,1.0,1.0,0.423081,0.465031,0.895716,0.650362
+no_symbol_inheritance,4096,64,12,0.755906,0.290606,0.863055,1.0,1.0,0.878458,0.90931,0.843536,0.573253
+no_technology_memory,4096,64,12,0.671858,0.826251,0.330307,1.0,1.0,0.878396,0.909268,0.950658,0.593154
+no_culture_memory,4096,64,12,0.713922,0.827396,0.828302,0.563738,1.0,0.879418,0.910184,0.951009,0.706551
+no_avatar_protocol,4096,64,12,0.855298,0.828752,0.866026,1.0,1.0,0.878555,0.909413,0.530218,0.706793

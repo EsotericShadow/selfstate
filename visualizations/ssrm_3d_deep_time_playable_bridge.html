@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Deep-Time Playable Bridge</title>
+  <script src="../artifacts/ssrm_3d_deep_time_playable_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_deep_time_playable_bridge_avatar_agents.js"></script>
+  <script src="../artifacts/ssrm_3d_deep_time_playable_bridge_trace.js"></script>
+  <style>
+    :root {
+      --ink: #17201b;
+      --muted: #64716b;
+      --paper: #f6f3e8;
+      --panel: #fffdf4;
+      --line: #c9c0a4;
+      --moss: #58765d;
+      --rust: #a4552f;
+      --gold: #d0a13b;
+      --water: #47788a;
+      --leaf: #7f9d62;
+      --shadow: rgba(23, 32, 27, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        linear-gradient(120deg, rgba(208, 161, 59, 0.14), transparent 34%),
+        linear-gradient(210deg, rgba(71, 120, 138, 0.16), transparent 40%),
+        var(--paper);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+
+    .shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(360px, 1fr) minmax(330px, 420px);
+      gap: 18px;
+      padding: 18px;
+    }
+
+    .world,
+    .side {
+      border: 1px solid var(--line);
+      background: rgba(255, 253, 244, 0.86);
+      box-shadow: 0 18px 40px var(--shadow);
+    }
+
+    .world {
+      display: grid;
+      grid-template-rows: auto minmax(420px, 1fr) auto;
+      min-height: calc(100vh - 36px);
+    }
+
+    header,
+    .hud,
+    .side-header,
+    .chat-input {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    header {
+      justify-content: space-between;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(1.25rem, 2vw, 2rem);
+      letter-spacing: 0;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .badge {
+      border: 1px solid var(--line);
+      background: #ebe3ca;
+      color: var(--ink);
+      padding: 5px 8px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      display: block;
+      background:
+        linear-gradient(rgba(23, 32, 27, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 32, 27, 0.04) 1px, transparent 1px),
+        #ede8d6;
+      background-size: 28px 28px;
+    }
+
+    .hud {
+      border-top: 1px solid var(--line);
+      border-bottom: 0;
+      flex-wrap: wrap;
+    }
+
+    .metric {
+      min-width: 132px;
+      display: grid;
+      gap: 3px;
+      font-size: 0.76rem;
+      color: var(--muted);
+    }
+
+    .metric strong {
+      color: var(--ink);
+      font-size: 1rem;
+    }
+
+    .side {
+      min-height: calc(100vh - 36px);
+      display: grid;
+      grid-template-rows: auto auto minmax(220px, 1fr) auto;
+      overflow: hidden;
+    }
+
+    .agent-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: #f3ecd7;
+      color: var(--ink);
+      min-height: 40px;
+      padding: 8px 10px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover,
+    button.active {
+      background: var(--moss);
+      color: white;
+      border-color: var(--moss);
+    }
+
+    .detail {
+      overflow: auto;
+      padding: 14px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    .stack {
+      display: grid;
+      gap: 8px;
+    }
+
+    .tokens {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .token {
+      border: 1px solid var(--line);
+      background: #efe2bd;
+      padding: 5px 7px;
+      font-family: Georgia, serif;
+      font-weight: 700;
+    }
+
+    .rate {
+      display: grid;
+      grid-template-columns: 82px 1fr 46px;
+      gap: 8px;
+      align-items: center;
+      font-size: 0.82rem;
+    }
+
+    .bar {
+      height: 8px;
+      background: #ded5ba;
+      overflow: hidden;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--water), var(--gold), var(--rust));
+    }
+
+    .log {
+      min-height: 120px;
+      max-height: 210px;
+      overflow: auto;
+      padding: 12px;
+      display: grid;
+      gap: 9px;
+      border-top: 1px solid var(--line);
+      background: #ede6cf;
+    }
+
+    .line {
+      padding: 8px 10px;
+      background: rgba(255, 253, 244, 0.82);
+      border-left: 3px solid var(--moss);
+      font-size: 0.88rem;
+      line-height: 1.35;
+    }
+
+    .chat-input {
+      border-top: 1px solid var(--line);
+      border-bottom: 0;
+    }
+
+    input {
+      min-width: 0;
+      flex: 1;
+      height: 40px;
+      border: 1px solid var(--line);
+      background: white;
+      padding: 0 10px;
+      font: inherit;
+    }
+
+    @media (max-width: 880px) {
+      .shell {
+        grid-template-columns: 1fr;
+      }
+
+      .world,
+      .side {
+        min-height: auto;
+      }
+
+      canvas {
+        min-height: 360px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="world">
+      <header>
+        <h1>Deep-Time Playable Bridge</h1>
+        <span class="badge" id="verdict">loading</span>
+      </header>
+      <canvas id="world" width="1200" height="760"></canvas>
+      <div class="hud" id="hud"></div>
+    </section>
+
+    <aside class="side">
+      <div class="side-header">
+        <h2>Avatar Entry Agents</h2>
+        <span class="badge" id="years">4096 years</span>
+      </div>
+      <div class="agent-list" id="agents"></div>
+      <div class="detail" id="detail"></div>
+      <div class="log" id="log"></div>
+      <form class="chat-input" id="chat">
+        <input id="prompt" autocomplete="off" placeholder="Ask the selected agent" />
+        <button type="submit">Ask</button>
+      </form>
+    </aside>
+  </main>
+
+  <script>
+    const payload = window.SSRM_3D_DEEP_TIME_PLAYABLE_BRIDGE_RESULTS || {};
+    const agents = window.SSRM_3D_DEEP_TIME_PLAYABLE_BRIDGE_AGENTS || payload.avatar_agents || [];
+    const trace = window.SSRM_3D_DEEP_TIME_PLAYABLE_BRIDGE_TRACE || payload.trace || [];
+    const canvas = document.getElementById("world");
+    const ctx = canvas.getContext("2d");
+    const agentList = document.getElementById("agents");
+    const detail = document.getElementById("detail");
+    const log = document.getElementById("log");
+    const hud = document.getElementById("hud");
+    const verdict = document.getElementById("verdict");
+    const years = document.getElementById("years");
+    let selected = 0;
+    let tick = 0;
+
+    function fmt(value) {
+      return Number(value || 0).toFixed(3);
+    }
+
+    function selectedAgent() {
+      return agents[selected] || agents[0];
+    }
+
+    function renderHud() {
+      const v = payload.verdict || {};
+      verdict.textContent = v.verdict ? `verdict: ${v.verdict}` : "no artifact";
+      years.textContent = payload.config ? `${payload.config.years} years` : "deep time";
+      const metrics = [
+        ["overall", v.full_overall_readiness],
+        ["language", v.full_language_emergence],
+        ["technology", v.full_technology_depth],
+        ["culture", v.full_culture_depth],
+        ["workspace", v.full_workspace_score],
+        ["sensory", v.full_sensory_frequency_score],
+        ["avatar", v.full_avatar_playability_score]
+      ];
+      hud.innerHTML = metrics.map(([name, value]) => `<div class="metric">${name}<strong>${fmt(value)}</strong></div>`).join("");
+    }
+
+    function renderAgents() {
+      agentList.innerHTML = agents.map((agent, index) => (
+        `<button class="${index === selected ? "active" : ""}" data-index="${index}">${agent.name}<br><small>${agent.role}</small></button>`
+      )).join("");
+      agentList.querySelectorAll("button").forEach((button) => {
+        button.addEventListener("click", () => {
+          selected = Number(button.dataset.index);
+          renderAgents();
+          renderDetail();
+          draw();
+        });
+      });
+    }
+
+    function renderDetail() {
+      const agent = selectedAgent();
+      if (!agent) {
+        detail.innerHTML = "<p>No agent packet loaded.</p>";
+        return;
+      }
+      const workspace = agent.internal_workspace || {};
+      const affect = workspace.affect || {};
+      const rates = agent.sensory_rates_hz || {};
+      const hooks = (agent.conversation_hooks || []).map((hook) => `<button class="hook" data-hook="${hook.replace(/"/g, "&quot;")}">${hook}</button>`).join("");
+      const rateRows = Object.entries(rates).map(([sense, value]) => (
+        `<div class="rate"><span>${sense}</span><div class="bar"><span style="width:${Math.min(100, value * 6)}%"></span></div><strong>${Number(value).toFixed(2)}</strong></div>`
+      )).join("");
+      detail.innerHTML = `
+        <div class="stack">
+          <h2>${agent.name} / ${agent.role}</h2>
+          <p>${workspace.private_thought || ""}</p>
+        </div>
+        <div class="stack">
+          <h3>Native Tokens</h3>
+          <div class="tokens">${(agent.native_tokens || []).map((token) => `<span class="token">${token}</span>`).join("")}</div>
+        </div>
+        <div class="stack">
+          <h3>Workspace</h3>
+          <p>attention: ${workspace.attention || "unknown"}</p>
+          <p>motive: ${workspace.motive || "unknown"}</p>
+          <p>body: ${fmt(workspace.body_state)} fear: ${fmt(affect.fear)} attachment: ${fmt(affect.attachment)} curiosity: ${fmt(affect.curiosity)}</p>
+        </div>
+        <div class="stack">
+          <h3>Sensory Rates</h3>
+          ${rateRows}
+        </div>
+        <div class="stack">
+          <h3>Hooks</h3>
+          ${hooks}
+        </div>
+      `;
+      detail.querySelectorAll(".hook").forEach((button) => {
+        button.addEventListener("click", () => ask(button.dataset.hook));
+      });
+    }
+
+    function ask(text) {
+      const agent = selectedAgent();
+      if (!agent) return;
+      const tokens = agent.native_tokens || ["ka"];
+      const hints = agent.translation_hints || {};
+      const token = tokens[(text.length + selected) % tokens.length];
+      const meaning = hints[token] || "untranslated pattern";
+      const workspace = agent.internal_workspace || {};
+      const response = `${agent.name}: "${token}" means ${meaning}; attention stays on ${workspace.attention || "the shared field"}.`;
+      log.insertAdjacentHTML("afterbegin", `<div class="line">${text}</div><div class="line">${response}</div>`);
+    }
+
+    function drawFlower(cx, cy, scale) {
+      ctx.save();
+      ctx.strokeStyle = "rgba(88, 118, 93, 0.35)";
+      ctx.lineWidth = 2;
+      const nodes = [[0, 0], [1, 0], [0.5, 0.866], [-0.5, 0.866], [-1, 0], [-0.5, -0.866], [0.5, -0.866]];
+      for (const [x, y] of nodes) {
+        ctx.beginPath();
+        ctx.arc(cx + x * scale, cy + y * scale, scale, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+
+    function draw() {
+      const width = canvas.width;
+      const height = canvas.height;
+      ctx.clearRect(0, 0, width, height);
+      ctx.fillStyle = "#ede8d6";
+      ctx.fillRect(0, 0, width, height);
+      drawFlower(width * 0.50, height * 0.47, 135);
+      const latest = trace[trace.length - 1] || {};
+      ctx.fillStyle = "#17201b";
+      ctx.font = "700 24px Georgia";
+      ctx.fillText(`Year ${latest.year || "?"}`, 34, 48);
+      ctx.font = "16px Avenir Next, sans-serif";
+      ctx.fillText(`language ${fmt(latest.language)}  culture ${fmt(latest.culture)}  technology ${fmt(latest.technology)}`, 34, 76);
+
+      agents.forEach((agent, index) => {
+        const px = width * 0.50 + agent.position.x * 12;
+        const py = height * 0.47 + agent.position.z * 12;
+        const pulse = 7 + Math.sin(tick * 0.05 + index) * 2.5;
+        ctx.beginPath();
+        ctx.fillStyle = index === selected ? "#a4552f" : "#58765d";
+        ctx.arc(px, py, 12 + pulse, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "#fffdf4";
+        ctx.font = "700 13px Avenir Next, sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText(agent.name, px, py + 4);
+      });
+      ctx.textAlign = "left";
+      tick += 1;
+      requestAnimationFrame(draw);
+    }
+
+    document.getElementById("chat").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const input = document.getElementById("prompt");
+      const text = input.value.trim();
+      if (text) ask(text);
+      input.value = "";
+    });
+
+    renderHud();
+    renderAgents();
+    renderDetail();
+    ask("Avatar enters quietly and waits for a first greeting.");
+    draw();
+  </script>
+</body>
+</html>

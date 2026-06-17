@@ -20,6 +20,12 @@ The key question becomes:
 
 > Do autonomous agents invent self-representations because the world punishes them when they do not?
 
+## Current Playable Bridge
+
+Report 142 adds the first deterministic bridge toward the intended playable surface. It compresses `4096` simulated years into a deep-time prehistory and emits mature avatar-entry packets: invented native tokens, culture/technology traces, sensory-rate channels, internal workspace fields, affect/body summaries, and conversation hooks.
+
+This is still not a completed playable civilization. The bridge gives the browser viewer concrete agents to inspect and lightly question, but the next gate is live state change: player actions must alter agent attention, trust, plans, and world state, then leave an intervention trace that can be replayed and ablated.
+
 ## What The Testbed Can Study
 
 ### Emergent Selfhood

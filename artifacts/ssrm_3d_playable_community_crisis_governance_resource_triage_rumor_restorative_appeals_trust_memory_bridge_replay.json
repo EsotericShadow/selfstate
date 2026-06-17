@@ -1,0 +1,315 @@
+{
+  "frames": [
+    {
+      "agent_markers": "agents glance at resource shelf before speaking",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "council ledger / resource_stock",
+      "flower_overlay": "flower node 1 around crisis circle",
+      "frequency_overlay": "142.882Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "scarcity ledger",
+      "tick": 3
+    },
+    {
+      "agent_markers": "agents glance at resource shelf before speaking",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "council ledger / resource_stock",
+      "flower_overlay": "flower node 2 around crisis circle",
+      "frequency_overlay": "157.141Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "scarcity ledger",
+      "tick": 4
+    },
+    {
+      "agent_markers": "agents glance at resource shelf before speaking",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "council ledger / resource_stock",
+      "flower_overlay": "flower node 3 around crisis circle",
+      "frequency_overlay": "178.156Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "scarcity ledger",
+      "tick": 5
+    },
+    {
+      "agent_markers": "agents glance at resource shelf before speaking",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "council ledger / resource_stock",
+      "flower_overlay": "flower node 4 around crisis circle",
+      "frequency_overlay": "190.332Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "scarcity ledger",
+      "tick": 6
+    },
+    {
+      "agent_markers": "agents glance at resource shelf before speaking",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "council ledger / resource_stock",
+      "flower_overlay": "flower node 5 around crisis circle",
+      "frequency_overlay": "210.048Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "scarcity ledger",
+      "tick": 8
+    },
+    {
+      "agent_markers": "agents sit in a rough flower-ring rather than a queue",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "crisis council / crisis_policy",
+      "flower_overlay": "flower node 4 around crisis circle",
+      "frequency_overlay": "155.000Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "crisis policy board",
+      "tick": 9
+    },
+    {
+      "agent_markers": "agents sit in a rough flower-ring rather than a queue",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "crisis council / crisis_policy",
+      "flower_overlay": "flower node 7 around crisis circle",
+      "frequency_overlay": "188.000Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "crisis policy board",
+      "tick": 10
+    },
+    {
+      "agent_markers": "walks slower but resumes west-route repair",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Ari / resource_triage",
+      "flower_overlay": "flower node 12 around crisis circle",
+      "frequency_overlay": "194.900Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "triage table",
+      "tick": 11
+    },
+    {
+      "agent_markers": "wraps blanket around shoulders and keeps clinic doorway open",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Fay / resource_triage",
+      "flower_overlay": "flower node 12 around crisis circle",
+      "frequency_overlay": "195.350Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "triage table",
+      "tick": 11
+    },
+    {
+      "agent_markers": "agents sit in a rough flower-ring rather than a queue",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "crisis council / crisis_policy",
+      "flower_overlay": "flower node 10 around crisis circle",
+      "frequency_overlay": "223.000Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "crisis policy board",
+      "tick": 12
+    },
+    {
+      "agent_markers": "paces near the cart path and keeps one hand on runner bag",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Milo / resource_triage",
+      "flower_overlay": "flower node 1 around crisis circle",
+      "frequency_overlay": "195.800Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "triage table",
+      "tick": 12
+    },
+    {
+      "agent_markers": "nearby agents turn toward the public panel instead of the target body",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "unknown whisper / rumor",
+      "flower_overlay": "flower node 11 around crisis circle",
+      "frequency_overlay": "241.000Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "rumor correction wall",
+      "tick": 12
+    },
+    {
+      "agent_markers": "lifts tool openly toward public repair board",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Ari / resource_triage",
+      "flower_overlay": "flower node 2 around crisis circle",
+      "frequency_overlay": "198.350Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "triage table",
+      "tick": 13
+    },
+    {
+      "agent_markers": "looks away from tool shed and writes a short objection",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Milo / resource_triage",
+      "flower_overlay": "flower node 2 around crisis circle",
+      "frequency_overlay": "197.300Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "triage table",
+      "tick": 13
+    },
+    {
+      "agent_markers": "nearby agents turn toward the public panel instead of the target body",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "anxious runner / rumor",
+      "flower_overlay": "flower node 12 around crisis circle",
+      "frequency_overlay": "257.000Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "rumor correction wall",
+      "tick": 13
+    },
+    {
+      "agent_markers": "keeps carrying water but avoids the accusation wall",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Sol / resource_triage",
+      "flower_overlay": "flower node 3 around crisis circle",
+      "frequency_overlay": "199.850Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "triage table",
+      "tick": 14
+    },
+    {
+      "agent_markers": "agent speaks from boundary marker while circle members face them",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Milo / restorative_appeal",
+      "flower_overlay": "flower node 3 around crisis circle",
+      "frequency_overlay": "229.600Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "restorative circle",
+      "tick": 14
+    },
+    {
+      "agent_markers": "stands by the north desk and closes private note flap",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Nia / resource_triage",
+      "flower_overlay": "flower node 4 around crisis circle",
+      "frequency_overlay": "202.400Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "triage table",
+      "tick": 15
+    },
+    {
+      "agent_markers": "nearby agents turn toward the public panel instead of the target body",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "blanket queue / rumor",
+      "flower_overlay": "flower node 2 around crisis circle",
+      "frequency_overlay": "263.000Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "rumor correction wall",
+      "tick": 15
+    },
+    {
+      "agent_markers": "checks medicine drawer then marks a stockout warning",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Fay / resource_triage",
+      "flower_overlay": "flower node 5 around crisis circle",
+      "frequency_overlay": "203.300Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "triage table",
+      "tick": 16
+    },
+    {
+      "agent_markers": "agent speaks from boundary marker while circle members face them",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Sol / restorative_appeal",
+      "flower_overlay": "flower node 5 around crisis circle",
+      "frequency_overlay": "232.400Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "restorative circle",
+      "tick": 16
+    },
+    {
+      "agent_markers": "agent speaks from boundary marker while circle members face them",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Fay / restorative_appeal",
+      "flower_overlay": "flower node 6 around crisis circle",
+      "frequency_overlay": "233.800Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "restorative circle",
+      "tick": 17
+    },
+    {
+      "agent_markers": "nearby agents turn toward the public panel instead of the target body",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "tool shed joke / rumor",
+      "flower_overlay": "flower node 5 around crisis circle",
+      "frequency_overlay": "282.000Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "rumor correction wall",
+      "tick": 18
+    },
+    {
+      "agent_markers": "agent speaks from boundary marker while circle members face them",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Milo / restorative_appeal",
+      "flower_overlay": "flower node 8 around crisis circle",
+      "frequency_overlay": "236.600Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "restorative circle",
+      "tick": 19
+    },
+    {
+      "agent_markers": "nearby agents turn toward the public panel instead of the target body",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "north desk murmur / rumor",
+      "flower_overlay": "flower node 8 around crisis circle",
+      "frequency_overlay": "296.000Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "rumor correction wall",
+      "tick": 20
+    },
+    {
+      "agent_markers": "agent speaks from boundary marker while circle members face them",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Nia / restorative_appeal",
+      "flower_overlay": "flower node 10 around crisis circle",
+      "frequency_overlay": "239.400Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "restorative circle",
+      "tick": 21
+    },
+    {
+      "agent_markers": "returns tool at the public board instead of keeping it near the workshop bench",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Ari / long_term_trust_memory",
+      "flower_overlay": "flower node 12 around crisis circle",
+      "frequency_overlay": "267.550Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "community memory shelf",
+      "tick": 23
+    },
+    {
+      "agent_markers": "points to the stockout board before opening the private medicine drawer",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Fay / long_term_trust_memory",
+      "flower_overlay": "flower node 1 around crisis circle",
+      "frequency_overlay": "268.400Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "community memory shelf",
+      "tick": 24
+    },
+    {
+      "agent_markers": "takes the runner slot but waits for the warmth recheck marker",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Milo / long_term_trust_memory",
+      "flower_overlay": "flower node 2 around crisis circle",
+      "frequency_overlay": "269.250Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "community memory shelf",
+      "tick": 25
+    },
+    {
+      "agent_markers": "keeps the archive flap closed and reads the boundary explanation aloud",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Nia / long_term_trust_memory",
+      "flower_overlay": "flower node 3 around crisis circle",
+      "frequency_overlay": "270.100Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "community memory shelf",
+      "tick": 26
+    },
+    {
+      "agent_markers": "walks the cistern route with two witnesses carrying beside him",
+      "avatar_position": "community square threshold as participant-observer avatar",
+      "camera_focus": "Sol / long_term_trust_memory",
+      "flower_overlay": "flower node 4 around crisis circle",
+      "frequency_overlay": "270.950Hz crisis pulse",
+      "private_boundary": "private body states, feelings, and workspace details remain sealed digests",
+      "public_panel": "community memory shelf",
+      "tick": 27
+    }
+  ],
+  "report": 217
+}

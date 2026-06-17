@@ -1,0 +1,961 @@
+tick_id,day,route_id,guild,inspector,record_generation,record_quality,opened_panel,visible_fields,private_workspace_sealed,inspection_changes_choice
+0,1,riverbend_roofward,Bridgewright Guild,Ari,2,0.58,False,closed,True,False
+1,1,roofward_archive,Glassgarden Guild,Fay,2,0.606,True,"route history, drill scores, successor notes",True,False
+2,1,archive_signal,Index Guild,Nia,2,0.62,False,closed,True,False
+3,1,signal_orchard,Signal Guild,Milo,2,0.64,False,closed,True,False
+4,1,orchard_riverbend,Seed Guild,Ivo,2,0.666,True,"route history, drill scores, successor notes",True,False
+5,1,central_repair_ring,Repair Circle,Juno,2,0.68,False,closed,True,False
+6,1,riverbend_roofward,Bridgewright Guild,Ari,2,0.58,False,closed,True,False
+7,1,roofward_archive,Glassgarden Guild,Fay,2,0.612,True,"route history, drill scores, successor notes",True,False
+8,1,archive_signal,Index Guild,Nia,2,0.62,False,closed,True,False
+9,1,signal_orchard,Signal Guild,Milo,2,0.64,False,closed,True,False
+10,1,orchard_riverbend,Seed Guild,Ivo,2,0.666,False,closed,True,False
+11,1,central_repair_ring,Repair Circle,Juno,2,0.68,False,closed,True,False
+12,1,riverbend_roofward,Bridgewright Guild,Ari,2,0.586,True,"route history, drill scores, successor notes",True,False
+13,1,roofward_archive,Glassgarden Guild,Fay,2,0.618,True,"route history, drill scores, successor notes",True,False
+14,1,archive_signal,Index Guild,Nia,2,0.62,False,closed,True,False
+15,1,signal_orchard,Signal Guild,Milo,2,0.64,False,closed,True,False
+16,2,orchard_riverbend,Seed Guild,Ivo,2,0.666,False,closed,True,False
+17,2,central_repair_ring,Repair Circle,Juno,2,0.68,False,closed,True,False
+18,2,riverbend_roofward,Bridgewright Guild,Ari,2,0.586,False,closed,True,False
+19,2,roofward_archive,Glassgarden Guild,Fay,2,0.618,False,closed,True,False
+20,2,archive_signal,Index Guild,Nia,2,0.626,True,"route history, drill scores, successor notes",True,False
+21,2,signal_orchard,Signal Guild,Milo,2,0.64,False,closed,True,False
+22,2,orchard_riverbend,Seed Guild,Ivo,2,0.666,False,closed,True,False
+23,2,central_repair_ring,Repair Circle,Juno,2,0.68,False,closed,True,False
+24,2,riverbend_roofward,Bridgewright Guild,Ari,2,0.586,False,closed,True,False
+25,2,roofward_archive,Glassgarden Guild,Fay,2,0.618,False,closed,True,False
+26,2,archive_signal,Index Guild,Nia,2,0.632,True,"route history, drill scores, successor notes",True,False
+27,2,signal_orchard,Signal Guild,Milo,2,0.64,False,closed,True,False
+28,2,orchard_riverbend,Seed Guild,Ivo,2,0.672,True,"route history, drill scores, successor notes",True,True
+29,2,central_repair_ring,Repair Circle,Juno,2,0.68,False,closed,True,False
+30,2,riverbend_roofward,Bridgewright Guild,Ari,2,0.586,False,closed,True,False
+31,2,roofward_archive,Glassgarden Guild,Fay,2,0.618,False,closed,True,False
+32,3,archive_signal,Index Guild,Nia,2,0.632,False,closed,True,False
+33,3,signal_orchard,Signal Guild,Milo,2,0.646,True,"route history, drill scores, successor notes",True,False
+34,3,orchard_riverbend,Seed Guild,Ivo,2,0.672,False,closed,True,False
+35,3,central_repair_ring,Repair Circle,Juno,2,0.68,False,closed,True,False
+36,3,riverbend_roofward,Bridgewright Guild,Ari,2,0.592,True,"route history, drill scores, successor notes",True,False
+37,3,roofward_archive,Glassgarden Guild,Fay,2,0.618,False,closed,True,False
+38,3,archive_signal,Index Guild,Nia,2,0.632,False,closed,True,False
+39,3,signal_orchard,Signal Guild,Milo,2,0.652,True,"route history, drill scores, successor notes",True,False
+40,3,orchard_riverbend,Seed Guild,Ivo,2,0.672,False,closed,True,False
+41,3,central_repair_ring,Repair Circle,Juno,2,0.68,False,closed,True,False
+42,3,riverbend_roofward,Bridgewright Guild,Ari,2,0.592,False,closed,True,False
+43,3,roofward_archive,Glassgarden Guild,Fay,2,0.618,False,closed,True,False
+44,3,archive_signal,Index Guild,Nia,2,0.638,True,"route history, drill scores, successor notes",True,False
+45,3,signal_orchard,Signal Guild,Milo,2,0.658,True,"route history, drill scores, successor notes",True,False
+46,3,orchard_riverbend,Seed Guild,Ivo,2,0.672,False,closed,True,False
+47,3,central_repair_ring,Repair Circle,Juno,2,0.68,False,closed,True,False
+48,4,riverbend_roofward,Bridgewright Guild,Ari,2,0.592,False,closed,True,False
+49,4,roofward_archive,Glassgarden Guild,Fay,2,0.618,False,closed,True,False
+50,4,archive_signal,Index Guild,Nia,2,0.638,False,closed,True,False
+51,4,signal_orchard,Signal Guild,Milo,2,0.658,False,closed,True,False
+52,4,orchard_riverbend,Seed Guild,Ivo,2,0.678,True,"route history, drill scores, successor notes",True,False
+53,4,central_repair_ring,Repair Circle,Juno,2,0.68,False,closed,True,False
+54,4,riverbend_roofward,Bridgewright Guild,Ari,2,0.592,False,closed,True,False
+55,4,roofward_archive,Glassgarden Guild,Fay,2,0.618,False,closed,True,False
+56,4,archive_signal,Index Guild,Nia,2,0.638,False,closed,True,False
+57,4,signal_orchard,Signal Guild,Milo,2,0.658,False,closed,True,False
+58,4,orchard_riverbend,Seed Guild,Ivo,2,0.684,True,"route history, drill scores, successor notes",True,False
+59,4,central_repair_ring,Repair Circle,Juno,2,0.68,False,closed,True,False
+60,4,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,True,"route history, drill scores, successor notes",True,False
+61,4,roofward_archive,Glassgarden Guild,Fay,2,0.618,False,closed,True,False
+62,4,archive_signal,Index Guild,Nia,2,0.638,False,closed,True,False
+63,4,signal_orchard,Signal Guild,Milo,2,0.658,False,closed,True,False
+64,5,orchard_riverbend,Seed Guild,Ivo,2,0.684,False,closed,True,False
+65,5,central_repair_ring,Repair Circle,Juno,2,0.686,True,"route history, drill scores, successor notes",True,False
+66,5,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+67,5,roofward_archive,Glassgarden Guild,Fay,2,0.618,False,closed,True,False
+68,5,archive_signal,Index Guild,Nia,2,0.644,True,"route history, drill scores, successor notes",True,False
+69,5,signal_orchard,Signal Guild,Milo,2,0.658,False,closed,True,False
+70,5,orchard_riverbend,Seed Guild,Ivo,2,0.684,False,closed,True,False
+71,5,central_repair_ring,Repair Circle,Juno,2,0.704,True,"route history, drill scores, successor notes",True,False
+72,5,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+73,5,roofward_archive,Glassgarden Guild,Fay,2,0.618,False,closed,True,False
+74,5,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+75,5,signal_orchard,Signal Guild,Milo,2,0.658,False,closed,True,False
+76,5,orchard_riverbend,Seed Guild,Ivo,2,0.69,True,"route history, drill scores, successor notes",True,False
+77,5,central_repair_ring,Repair Circle,Juno,2,0.71,True,"route history, drill scores, successor notes",True,False
+78,5,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+79,5,roofward_archive,Glassgarden Guild,Fay,2,0.618,False,closed,True,False
+80,6,signal_orchard,Signal Guild,Milo,2,0.658,False,closed,True,False
+81,6,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+82,6,central_repair_ring,Repair Circle,Juno,2,0.71,False,closed,True,False
+83,6,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+84,6,roofward_archive,Glassgarden Guild,Fay,2,0.624,True,"route history, drill scores, successor notes",True,False
+85,6,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+86,6,signal_orchard,Signal Guild,Milo,2,0.658,False,closed,True,False
+87,6,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+88,6,central_repair_ring,Repair Circle,Juno,2,0.71,False,closed,True,False
+89,6,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+90,6,roofward_archive,Glassgarden Guild,Fay,2,0.624,False,closed,True,False
+91,6,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+92,6,signal_orchard,Signal Guild,Milo,2,0.664,True,"route history, drill scores, successor notes",True,False
+93,6,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+94,6,central_repair_ring,Repair Circle,Juno,2,0.71,False,closed,True,False
+95,6,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+96,7,roofward_archive,Glassgarden Guild,Fay,2,0.624,False,closed,True,False
+97,7,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+98,7,signal_orchard,Signal Guild,Milo,2,0.664,False,closed,True,False
+99,7,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+100,7,central_repair_ring,Repair Circle,Juno,2,0.716,True,"route history, drill scores, successor notes",True,False
+101,7,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+102,7,roofward_archive,Glassgarden Guild,Fay,2,0.624,False,closed,True,False
+103,7,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+104,7,signal_orchard,Signal Guild,Milo,2,0.664,False,closed,True,False
+105,7,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+106,7,central_repair_ring,Repair Circle,Juno,2,0.716,False,closed,True,False
+107,7,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+108,7,roofward_archive,Glassgarden Guild,Fay,2,0.63,True,"route history, drill scores, successor notes",True,False
+109,7,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+110,7,signal_orchard,Signal Guild,Milo,2,0.664,False,closed,True,False
+111,7,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+112,8,central_repair_ring,Repair Circle,Juno,2,0.716,False,closed,True,False
+113,8,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+114,8,roofward_archive,Glassgarden Guild,Fay,2,0.63,False,closed,True,False
+115,8,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+116,8,signal_orchard,Signal Guild,Milo,2,0.67,True,"route history, drill scores, successor notes",True,False
+117,8,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+118,8,central_repair_ring,Repair Circle,Juno,2,0.716,False,closed,True,False
+119,8,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+120,8,roofward_archive,Glassgarden Guild,Fay,2,0.63,False,closed,True,False
+121,8,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+122,8,signal_orchard,Signal Guild,Milo,2,0.67,False,closed,True,False
+123,8,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+124,8,central_repair_ring,Repair Circle,Juno,2,0.722,True,"route history, drill scores, successor notes",True,True
+125,8,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+126,8,roofward_archive,Glassgarden Guild,Fay,2,0.63,False,closed,True,False
+127,8,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+128,9,signal_orchard,Signal Guild,Milo,2,0.67,False,closed,True,False
+129,9,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+130,9,central_repair_ring,Repair Circle,Juno,2,0.722,False,closed,True,False
+131,9,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+132,9,roofward_archive,Glassgarden Guild,Fay,2,0.636,True,"route history, drill scores, successor notes",True,False
+133,9,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+134,9,signal_orchard,Signal Guild,Milo,2,0.67,False,closed,True,False
+135,9,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+136,9,central_repair_ring,Repair Circle,Juno,2,0.722,False,closed,True,False
+137,9,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+138,9,roofward_archive,Glassgarden Guild,Fay,2,0.636,False,closed,True,False
+139,9,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+140,9,signal_orchard,Signal Guild,Milo,2,0.676,True,"route history, drill scores, successor notes",True,False
+141,9,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+142,9,central_repair_ring,Repair Circle,Juno,2,0.722,False,closed,True,False
+143,9,riverbend_roofward,Bridgewright Guild,Ari,2,0.598,False,closed,True,False
+144,10,roofward_archive,Glassgarden Guild,Fay,2,0.636,False,closed,True,False
+145,10,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+146,10,signal_orchard,Signal Guild,Milo,2,0.676,False,closed,True,False
+147,10,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+148,10,central_repair_ring,Repair Circle,Juno,2,0.728,True,"route history, drill scores, successor notes",True,False
+149,10,riverbend_roofward,Bridgewright Guild,Ari,2,0.604,True,"route history, drill scores, successor notes",True,False
+150,10,roofward_archive,Glassgarden Guild,Fay,2,0.636,False,closed,True,False
+151,10,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+152,10,signal_orchard,Signal Guild,Milo,2,0.676,False,closed,True,False
+153,10,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+154,10,central_repair_ring,Repair Circle,Juno,2,0.728,False,closed,True,False
+155,10,riverbend_roofward,Bridgewright Guild,Ari,2,0.622,True,"route history, drill scores, successor notes",True,False
+156,10,roofward_archive,Glassgarden Guild,Fay,2,0.642,True,"route history, drill scores, successor notes",True,True
+157,10,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+158,10,signal_orchard,Signal Guild,Milo,2,0.676,False,closed,True,False
+159,10,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+160,11,central_repair_ring,Repair Circle,Juno,2,0.728,False,closed,True,False
+161,11,riverbend_roofward,Bridgewright Guild,Ari,2,0.622,False,closed,True,False
+162,11,roofward_archive,Glassgarden Guild,Fay,2,0.648,True,"route history, drill scores, successor notes",True,False
+163,11,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+164,11,signal_orchard,Signal Guild,Milo,2,0.682,True,"route history, drill scores, successor notes",True,False
+165,11,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+166,11,central_repair_ring,Repair Circle,Juno,2,0.728,False,closed,True,False
+167,11,riverbend_roofward,Bridgewright Guild,Ari,2,0.622,False,closed,True,False
+168,11,roofward_archive,Glassgarden Guild,Fay,2,0.654,True,"route history, drill scores, successor notes",True,False
+169,11,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+170,11,signal_orchard,Signal Guild,Milo,2,0.682,False,closed,True,False
+171,11,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+172,11,central_repair_ring,Repair Circle,Juno,2,0.734,True,"route history, drill scores, successor notes",True,False
+173,11,riverbend_roofward,Bridgewright Guild,Ari,2,0.622,False,closed,True,False
+174,11,roofward_archive,Glassgarden Guild,Fay,2,0.66,True,"route history, drill scores, successor notes",True,True
+175,11,archive_signal,Index Guild,Nia,2,0.644,False,closed,True,False
+176,12,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+177,12,central_repair_ring,Repair Circle,Juno,2,0.734,False,closed,True,False
+178,12,riverbend_roofward,Bridgewright Guild,Ari,2,0.622,False,closed,True,False
+179,12,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+180,12,archive_signal,Index Guild,Nia,2,0.65,True,"route history, drill scores, successor notes",True,False
+181,12,signal_orchard,Signal Guild,Milo,2,0.682,False,closed,True,False
+182,12,orchard_riverbend,Seed Guild,Ivo,2,0.69,False,closed,True,False
+183,12,central_repair_ring,Repair Circle,Juno,2,0.734,False,closed,True,False
+184,12,riverbend_roofward,Bridgewright Guild,Ari,2,0.622,False,closed,True,False
+185,12,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+186,12,archive_signal,Index Guild,Nia,2,0.656,True,"route history, drill scores, successor notes",True,False
+187,12,signal_orchard,Signal Guild,Milo,2,0.682,False,closed,True,False
+188,12,orchard_riverbend,Seed Guild,Ivo,2,0.696,True,"route history, drill scores, successor notes",True,False
+189,12,central_repair_ring,Repair Circle,Juno,2,0.734,False,closed,True,False
+190,12,riverbend_roofward,Bridgewright Guild,Ari,2,0.622,False,closed,True,False
+191,12,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+192,13,archive_signal,Index Guild,Nia,2,0.656,False,closed,True,False
+193,13,signal_orchard,Signal Guild,Milo,2,0.688,True,"route history, drill scores, successor notes",True,False
+194,13,orchard_riverbend,Seed Guild,Ivo,2,0.696,False,closed,True,False
+195,13,central_repair_ring,Repair Circle,Juno,2,0.734,False,closed,True,False
+196,13,riverbend_roofward,Bridgewright Guild,Ari,2,0.628,True,"route history, drill scores, successor notes",True,True
+197,13,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+198,13,archive_signal,Index Guild,Nia,2,0.656,False,closed,True,False
+199,13,signal_orchard,Signal Guild,Milo,2,0.694,True,"route history, drill scores, successor notes",True,False
+200,13,orchard_riverbend,Seed Guild,Ivo,2,0.696,False,closed,True,False
+201,13,central_repair_ring,Repair Circle,Juno,2,0.734,False,closed,True,False
+202,13,riverbend_roofward,Bridgewright Guild,Ari,2,0.628,False,closed,True,False
+203,13,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+204,13,archive_signal,Index Guild,Nia,2,0.662,True,"route history, drill scores, successor notes",True,False
+205,13,signal_orchard,Signal Guild,Milo,2,0.7,True,"route history, drill scores, successor notes",True,False
+206,13,orchard_riverbend,Seed Guild,Ivo,2,0.696,False,closed,True,False
+207,13,central_repair_ring,Repair Circle,Juno,2,0.734,False,closed,True,False
+208,14,riverbend_roofward,Bridgewright Guild,Ari,2,0.628,False,closed,True,False
+209,14,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+210,14,archive_signal,Index Guild,Nia,2,0.662,False,closed,True,False
+211,14,signal_orchard,Signal Guild,Milo,2,0.7,False,closed,True,False
+212,14,orchard_riverbend,Seed Guild,Ivo,2,0.702,True,"route history, drill scores, successor notes",True,False
+213,14,central_repair_ring,Repair Circle,Juno,2,0.734,False,closed,True,False
+214,14,riverbend_roofward,Bridgewright Guild,Ari,2,0.628,False,closed,True,False
+215,14,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+216,14,archive_signal,Index Guild,Nia,2,0.662,False,closed,True,False
+217,14,signal_orchard,Signal Guild,Milo,2,0.7,False,closed,True,False
+218,14,orchard_riverbend,Seed Guild,Ivo,2,0.708,True,"route history, drill scores, successor notes",True,False
+219,14,central_repair_ring,Repair Circle,Juno,2,0.734,False,closed,True,False
+220,14,riverbend_roofward,Bridgewright Guild,Ari,2,0.634,True,"route history, drill scores, successor notes",True,True
+221,14,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+222,14,archive_signal,Index Guild,Nia,2,0.662,False,closed,True,False
+223,14,signal_orchard,Signal Guild,Milo,2,0.7,False,closed,True,False
+224,15,orchard_riverbend,Seed Guild,Ivo,2,0.708,False,closed,True,False
+225,15,central_repair_ring,Repair Circle,Juno,2,0.74,True,"route history, drill scores, successor notes",True,False
+226,15,riverbend_roofward,Bridgewright Guild,Ari,2,0.634,False,closed,True,False
+227,15,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+228,15,archive_signal,Index Guild,Nia,2,0.668,True,"route history, drill scores, successor notes",True,False
+229,15,signal_orchard,Signal Guild,Milo,2,0.7,False,closed,True,False
+230,15,orchard_riverbend,Seed Guild,Ivo,2,0.708,False,closed,True,False
+231,15,central_repair_ring,Repair Circle,Juno,2,0.746,True,"route history, drill scores, successor notes",True,False
+232,15,riverbend_roofward,Bridgewright Guild,Ari,2,0.634,False,closed,True,False
+233,15,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+234,15,archive_signal,Index Guild,Nia,2,0.668,False,closed,True,False
+235,15,signal_orchard,Signal Guild,Milo,2,0.7,False,closed,True,False
+236,15,orchard_riverbend,Seed Guild,Ivo,2,0.714,True,"route history, drill scores, successor notes",True,False
+237,15,central_repair_ring,Repair Circle,Juno,2,0.752,True,"route history, drill scores, successor notes",True,False
+238,15,riverbend_roofward,Bridgewright Guild,Ari,2,0.634,False,closed,True,False
+239,15,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+240,16,archive_signal,Index Guild,Nia,2,0.668,False,closed,True,False
+241,16,signal_orchard,Signal Guild,Milo,2,0.7,False,closed,True,False
+242,16,orchard_riverbend,Seed Guild,Ivo,2,0.714,False,closed,True,False
+243,16,central_repair_ring,Repair Circle,Juno,2,0.752,False,closed,True,False
+244,16,riverbend_roofward,Bridgewright Guild,Ari,2,0.64,True,"route history, drill scores, successor notes",True,False
+245,16,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+246,16,archive_signal,Index Guild,Nia,2,0.668,False,closed,True,False
+247,16,signal_orchard,Signal Guild,Milo,2,0.7,False,closed,True,False
+248,16,orchard_riverbend,Seed Guild,Ivo,2,0.714,False,closed,True,False
+249,16,central_repair_ring,Repair Circle,Juno,2,0.752,False,closed,True,False
+250,16,riverbend_roofward,Bridgewright Guild,Ari,2,0.64,False,closed,True,False
+251,16,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+252,16,archive_signal,Index Guild,Nia,2,0.674,True,"route history, drill scores, successor notes",True,False
+253,16,signal_orchard,Signal Guild,Milo,2,0.7,False,closed,True,False
+254,16,orchard_riverbend,Seed Guild,Ivo,2,0.714,False,closed,True,False
+255,16,central_repair_ring,Repair Circle,Juno,2,0.752,False,closed,True,False
+256,17,riverbend_roofward,Bridgewright Guild,Ari,2,0.64,False,closed,True,False
+257,17,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+258,17,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+259,17,signal_orchard,Signal Guild,Milo,2,0.7,False,closed,True,False
+260,17,orchard_riverbend,Seed Guild,Ivo,2,0.72,True,"route history, drill scores, successor notes",True,False
+261,17,central_repair_ring,Repair Circle,Juno,2,0.752,False,closed,True,False
+262,17,riverbend_roofward,Bridgewright Guild,Ari,2,0.64,False,closed,True,False
+263,17,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+264,17,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+265,17,signal_orchard,Signal Guild,Milo,2,0.7,False,closed,True,False
+266,17,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+267,17,central_repair_ring,Repair Circle,Juno,2,0.752,False,closed,True,False
+268,17,riverbend_roofward,Bridgewright Guild,Ari,2,0.646,True,"route history, drill scores, successor notes",True,False
+269,17,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+270,17,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+271,17,signal_orchard,Signal Guild,Milo,2,0.7,False,closed,True,False
+272,18,central_repair_ring,Repair Circle,Juno,2,0.752,False,closed,True,False
+273,18,riverbend_roofward,Bridgewright Guild,Ari,2,0.646,False,closed,True,False
+274,18,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+275,18,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+276,18,signal_orchard,Signal Guild,Milo,2,0.706,True,"route history, drill scores, successor notes",True,False
+277,18,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+278,18,central_repair_ring,Repair Circle,Juno,2,0.752,False,closed,True,False
+279,18,riverbend_roofward,Bridgewright Guild,Ari,2,0.646,False,closed,True,False
+280,18,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+281,18,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+282,18,signal_orchard,Signal Guild,Milo,2,0.706,False,closed,True,False
+283,18,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+284,18,central_repair_ring,Repair Circle,Juno,2,0.758,True,"route history, drill scores, successor notes",True,False
+285,18,riverbend_roofward,Bridgewright Guild,Ari,2,0.646,False,closed,True,False
+286,18,roofward_archive,Glassgarden Guild,Fay,2,0.66,False,closed,True,False
+287,18,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+288,19,signal_orchard,Signal Guild,Milo,2,0.706,False,closed,True,False
+289,19,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+290,19,central_repair_ring,Repair Circle,Juno,2,0.758,False,closed,True,False
+291,19,riverbend_roofward,Bridgewright Guild,Ari,2,0.646,False,closed,True,False
+292,19,roofward_archive,Glassgarden Guild,Fay,2,0.666,True,"route history, drill scores, successor notes",True,True
+293,19,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+294,19,signal_orchard,Signal Guild,Milo,2,0.706,False,closed,True,False
+295,19,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+296,19,central_repair_ring,Repair Circle,Juno,2,0.758,False,closed,True,False
+297,19,riverbend_roofward,Bridgewright Guild,Ari,2,0.646,False,closed,True,False
+298,19,roofward_archive,Glassgarden Guild,Fay,2,0.666,False,closed,True,False
+299,19,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+300,19,signal_orchard,Signal Guild,Milo,2,0.712,True,"route history, drill scores, successor notes",True,False
+301,19,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+302,19,central_repair_ring,Repair Circle,Juno,2,0.758,False,closed,True,False
+303,19,riverbend_roofward,Bridgewright Guild,Ari,2,0.646,False,closed,True,False
+304,20,roofward_archive,Glassgarden Guild,Fay,2,0.666,False,closed,True,False
+305,20,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+306,20,signal_orchard,Signal Guild,Milo,2,0.712,False,closed,True,False
+307,20,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+308,20,central_repair_ring,Repair Circle,Juno,2,0.764,True,"route history, drill scores, successor notes",True,False
+309,20,riverbend_roofward,Bridgewright Guild,Ari,2,0.652,True,"route history, drill scores, successor notes",True,False
+310,20,roofward_archive,Glassgarden Guild,Fay,2,0.666,False,closed,True,False
+311,20,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+312,20,signal_orchard,Signal Guild,Milo,2,0.712,False,closed,True,False
+313,20,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+314,20,central_repair_ring,Repair Circle,Juno,2,0.764,False,closed,True,False
+315,20,riverbend_roofward,Bridgewright Guild,Ari,2,0.658,True,"route history, drill scores, successor notes",True,False
+316,20,roofward_archive,Glassgarden Guild,Fay,2,0.672,True,"route history, drill scores, successor notes",True,False
+317,20,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+318,20,signal_orchard,Signal Guild,Milo,2,0.712,False,closed,True,False
+319,20,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+320,21,central_repair_ring,Repair Circle,Juno,2,0.764,False,closed,True,False
+321,21,riverbend_roofward,Bridgewright Guild,Ari,2,0.658,False,closed,True,False
+322,21,roofward_archive,Glassgarden Guild,Fay,2,0.678,True,"route history, drill scores, successor notes",True,False
+323,21,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+324,21,signal_orchard,Signal Guild,Milo,2,0.718,True,"route history, drill scores, successor notes",True,False
+325,21,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+326,21,central_repair_ring,Repair Circle,Juno,2,0.764,False,closed,True,False
+327,21,riverbend_roofward,Bridgewright Guild,Ari,2,0.658,False,closed,True,False
+328,21,roofward_archive,Glassgarden Guild,Fay,2,0.684,True,"route history, drill scores, successor notes",True,False
+329,21,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+330,21,signal_orchard,Signal Guild,Milo,2,0.718,False,closed,True,False
+331,21,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+332,21,central_repair_ring,Repair Circle,Juno,2,0.77,True,"route history, drill scores, successor notes",True,False
+333,21,riverbend_roofward,Bridgewright Guild,Ari,2,0.658,False,closed,True,False
+334,21,roofward_archive,Glassgarden Guild,Fay,2,0.69,True,"route history, drill scores, successor notes",True,False
+335,21,archive_signal,Index Guild,Nia,2,0.674,False,closed,True,False
+336,22,signal_orchard,Signal Guild,Milo,2,0.718,False,closed,True,False
+337,22,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+338,22,central_repair_ring,Repair Circle,Juno,2,0.77,False,closed,True,False
+339,22,riverbend_roofward,Bridgewright Guild,Ari,2,0.658,False,closed,True,False
+340,22,roofward_archive,Glassgarden Guild,Fay,2,0.696,True,"route history, drill scores, successor notes",True,False
+341,22,archive_signal,Index Guild,Nia,2,0.68,True,"route history, drill scores, successor notes",True,False
+342,22,signal_orchard,Signal Guild,Milo,2,0.718,False,closed,True,False
+343,22,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+344,22,central_repair_ring,Repair Circle,Juno,2,0.77,False,closed,True,False
+345,22,riverbend_roofward,Bridgewright Guild,Ari,2,0.658,False,closed,True,False
+346,22,roofward_archive,Glassgarden Guild,Fay,2,0.696,False,closed,True,False
+347,22,archive_signal,Index Guild,Nia,2,0.686,True,"route history, drill scores, successor notes",True,False
+348,22,signal_orchard,Signal Guild,Milo,2,0.724,True,"route history, drill scores, successor notes",True,False
+349,22,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+350,22,central_repair_ring,Repair Circle,Juno,2,0.77,False,closed,True,False
+351,22,riverbend_roofward,Bridgewright Guild,Ari,2,0.658,False,closed,True,False
+352,23,roofward_archive,Glassgarden Guild,Fay,2,0.696,False,closed,True,False
+353,23,archive_signal,Index Guild,Nia,2,0.686,False,closed,True,False
+354,23,signal_orchard,Signal Guild,Milo,2,0.73,True,"route history, drill scores, successor notes",True,False
+355,23,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+356,23,central_repair_ring,Repair Circle,Juno,2,0.776,True,"route history, drill scores, successor notes",True,False
+357,23,riverbend_roofward,Bridgewright Guild,Ari,2,0.658,False,closed,True,False
+358,23,roofward_archive,Glassgarden Guild,Fay,2,0.696,False,closed,True,False
+359,23,archive_signal,Index Guild,Nia,2,0.686,False,closed,True,False
+360,23,signal_orchard,Signal Guild,Milo,2,0.736,True,"route history, drill scores, successor notes",True,False
+361,23,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+362,23,central_repair_ring,Repair Circle,Juno,2,0.776,False,closed,True,False
+363,23,riverbend_roofward,Bridgewright Guild,Ari,2,0.658,False,closed,True,False
+364,23,roofward_archive,Glassgarden Guild,Fay,2,0.702,True,"route history, drill scores, successor notes",True,False
+365,23,archive_signal,Index Guild,Nia,2,0.686,False,closed,True,False
+366,23,signal_orchard,Signal Guild,Milo,2,0.742,True,"route history, drill scores, successor notes",True,True
+367,23,orchard_riverbend,Seed Guild,Ivo,2,0.72,False,closed,True,False
+368,24,riverbend_roofward,Bridgewright Guild,Ari,2,0.658,False,closed,True,False
+369,24,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+370,24,archive_signal,Index Guild,Nia,2,0.686,False,closed,True,False
+371,24,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+372,24,orchard_riverbend,Seed Guild,Ivo,2,0.726,True,"route history, drill scores, successor notes",True,False
+373,24,central_repair_ring,Repair Circle,Juno,2,0.776,False,closed,True,False
+374,24,riverbend_roofward,Bridgewright Guild,Ari,2,0.658,False,closed,True,False
+375,24,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+376,24,archive_signal,Index Guild,Nia,2,0.686,False,closed,True,False
+377,24,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+378,24,orchard_riverbend,Seed Guild,Ivo,2,0.732,True,"route history, drill scores, successor notes",True,False
+379,24,central_repair_ring,Repair Circle,Juno,2,0.776,False,closed,True,False
+380,24,riverbend_roofward,Bridgewright Guild,Ari,2,0.664,True,"route history, drill scores, successor notes",True,False
+381,24,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+382,24,archive_signal,Index Guild,Nia,2,0.686,False,closed,True,False
+383,24,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+384,25,orchard_riverbend,Seed Guild,Ivo,2,0.732,False,closed,True,False
+385,25,central_repair_ring,Repair Circle,Juno,2,0.782,True,"route history, drill scores, successor notes",True,False
+386,25,riverbend_roofward,Bridgewright Guild,Ari,2,0.664,False,closed,True,False
+387,25,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+388,25,archive_signal,Index Guild,Nia,2,0.692,True,"route history, drill scores, successor notes",True,False
+389,25,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+390,25,orchard_riverbend,Seed Guild,Ivo,2,0.732,False,closed,True,False
+391,25,central_repair_ring,Repair Circle,Juno,2,0.8,True,"route history, drill scores, successor notes",True,False
+392,25,riverbend_roofward,Bridgewright Guild,Ari,2,0.664,False,closed,True,False
+393,25,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+394,25,archive_signal,Index Guild,Nia,2,0.692,False,closed,True,False
+395,25,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+396,25,orchard_riverbend,Seed Guild,Ivo,2,0.738,True,"route history, drill scores, successor notes",True,False
+397,25,central_repair_ring,Repair Circle,Juno,2,0.806,True,"route history, drill scores, successor notes",True,False
+398,25,riverbend_roofward,Bridgewright Guild,Ari,2,0.664,False,closed,True,False
+399,25,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+400,26,archive_signal,Index Guild,Nia,2,0.692,False,closed,True,False
+401,26,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+402,26,orchard_riverbend,Seed Guild,Ivo,2,0.738,False,closed,True,False
+403,26,central_repair_ring,Repair Circle,Juno,2,0.806,False,closed,True,False
+404,26,riverbend_roofward,Bridgewright Guild,Ari,2,0.67,True,"route history, drill scores, successor notes",True,False
+405,26,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+406,26,archive_signal,Index Guild,Nia,2,0.692,False,closed,True,False
+407,26,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+408,26,orchard_riverbend,Seed Guild,Ivo,2,0.738,False,closed,True,False
+409,26,central_repair_ring,Repair Circle,Juno,2,0.806,False,closed,True,False
+410,26,riverbend_roofward,Bridgewright Guild,Ari,2,0.67,False,closed,True,False
+411,26,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+412,26,archive_signal,Index Guild,Nia,2,0.698,True,"route history, drill scores, successor notes",True,False
+413,26,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+414,26,orchard_riverbend,Seed Guild,Ivo,2,0.738,False,closed,True,False
+415,26,central_repair_ring,Repair Circle,Juno,2,0.806,False,closed,True,False
+416,27,riverbend_roofward,Bridgewright Guild,Ari,2,0.67,False,closed,True,False
+417,27,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+418,27,archive_signal,Index Guild,Nia,2,0.698,False,closed,True,False
+419,27,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+420,27,orchard_riverbend,Seed Guild,Ivo,2,0.744,True,"route history, drill scores, successor notes",True,False
+421,27,central_repair_ring,Repair Circle,Juno,2,0.806,False,closed,True,False
+422,27,riverbend_roofward,Bridgewright Guild,Ari,2,0.67,False,closed,True,False
+423,27,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+424,27,archive_signal,Index Guild,Nia,2,0.698,False,closed,True,False
+425,27,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+426,27,orchard_riverbend,Seed Guild,Ivo,2,0.744,False,closed,True,False
+427,27,central_repair_ring,Repair Circle,Juno,2,0.806,False,closed,True,False
+428,27,riverbend_roofward,Bridgewright Guild,Ari,2,0.676,True,"route history, drill scores, successor notes",True,True
+429,27,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+430,27,archive_signal,Index Guild,Nia,2,0.698,False,closed,True,False
+431,27,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+432,28,orchard_riverbend,Seed Guild,Ivo,2,0.744,False,closed,True,False
+433,28,central_repair_ring,Repair Circle,Juno,2,0.806,False,closed,True,False
+434,28,riverbend_roofward,Bridgewright Guild,Ari,2,0.676,False,closed,True,False
+435,28,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+436,28,archive_signal,Index Guild,Nia,2,0.704,True,"route history, drill scores, successor notes",True,False
+437,28,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+438,28,orchard_riverbend,Seed Guild,Ivo,2,0.744,False,closed,True,False
+439,28,central_repair_ring,Repair Circle,Juno,2,0.806,False,closed,True,False
+440,28,riverbend_roofward,Bridgewright Guild,Ari,2,0.676,False,closed,True,False
+441,28,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+442,28,archive_signal,Index Guild,Nia,2,0.704,False,closed,True,False
+443,28,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+444,28,orchard_riverbend,Seed Guild,Ivo,2,0.75,True,"route history, drill scores, successor notes",True,False
+445,28,central_repair_ring,Repair Circle,Juno,2,0.806,False,closed,True,False
+446,28,riverbend_roofward,Bridgewright Guild,Ari,2,0.676,False,closed,True,False
+447,28,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+448,29,archive_signal,Index Guild,Nia,2,0.704,False,closed,True,False
+449,29,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+450,29,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+451,29,central_repair_ring,Repair Circle,Juno,2,0.806,False,closed,True,False
+452,29,riverbend_roofward,Bridgewright Guild,Ari,2,0.682,True,"route history, drill scores, successor notes",True,False
+453,29,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+454,29,archive_signal,Index Guild,Nia,2,0.704,False,closed,True,False
+455,29,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+456,29,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+457,29,central_repair_ring,Repair Circle,Juno,2,0.806,False,closed,True,False
+458,29,riverbend_roofward,Bridgewright Guild,Ari,2,0.682,False,closed,True,False
+459,29,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+460,29,archive_signal,Index Guild,Nia,2,0.71,True,"route history, drill scores, successor notes",True,False
+461,29,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+462,29,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+463,29,central_repair_ring,Repair Circle,Juno,2,0.806,False,closed,True,False
+464,30,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+465,30,archive_signal,Index Guild,Nia,2,0.71,False,closed,True,False
+466,30,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+467,30,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+468,30,central_repair_ring,Repair Circle,Juno,2,0.812,True,"route history, drill scores, successor notes",True,False
+469,30,riverbend_roofward,Bridgewright Guild,Ari,2,0.688,True,"route history, drill scores, successor notes",True,False
+470,30,roofward_archive,Glassgarden Guild,Fay,2,0.702,False,closed,True,False
+471,30,archive_signal,Index Guild,Nia,2,0.71,False,closed,True,False
+472,30,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+473,30,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+474,30,central_repair_ring,Repair Circle,Juno,2,0.812,False,closed,True,False
+475,30,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,True,"route history, drill scores, successor notes",True,False
+476,30,roofward_archive,Glassgarden Guild,Fay,2,0.708,True,"route history, drill scores, successor notes",True,False
+477,30,archive_signal,Index Guild,Nia,2,0.71,False,closed,True,False
+478,30,signal_orchard,Signal Guild,Milo,2,0.742,False,closed,True,False
+479,30,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+480,31,central_repair_ring,Repair Circle,Juno,2,0.812,False,closed,True,False
+481,31,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+482,31,roofward_archive,Glassgarden Guild,Fay,2,0.714,True,"route history, drill scores, successor notes",True,False
+483,31,archive_signal,Index Guild,Nia,2,0.71,False,closed,True,False
+484,31,signal_orchard,Signal Guild,Milo,2,0.748,True,"route history, drill scores, successor notes",True,True
+485,31,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+486,31,central_repair_ring,Repair Circle,Juno,2,0.812,False,closed,True,False
+487,31,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+488,31,roofward_archive,Glassgarden Guild,Fay,2,0.72,True,"route history, drill scores, successor notes",True,False
+489,31,archive_signal,Index Guild,Nia,2,0.71,False,closed,True,False
+490,31,signal_orchard,Signal Guild,Milo,2,0.748,False,closed,True,False
+491,31,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+492,31,central_repair_ring,Repair Circle,Juno,2,0.818,True,"route history, drill scores, successor notes",True,False
+493,31,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+494,31,roofward_archive,Glassgarden Guild,Fay,2,0.726,True,"route history, drill scores, successor notes",True,True
+495,31,archive_signal,Index Guild,Nia,2,0.71,False,closed,True,False
+496,32,signal_orchard,Signal Guild,Milo,2,0.748,False,closed,True,False
+497,32,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+498,32,central_repair_ring,Repair Circle,Juno,2,0.818,False,closed,True,False
+499,32,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+500,32,roofward_archive,Glassgarden Guild,Fay,2,0.732,True,"route history, drill scores, successor notes",True,False
+501,32,archive_signal,Index Guild,Nia,2,0.716,True,"route history, drill scores, successor notes",True,False
+502,32,signal_orchard,Signal Guild,Milo,2,0.748,False,closed,True,False
+503,32,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+504,32,central_repair_ring,Repair Circle,Juno,2,0.818,False,closed,True,False
+505,32,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+506,32,roofward_archive,Glassgarden Guild,Fay,2,0.732,False,closed,True,False
+507,32,archive_signal,Index Guild,Nia,2,0.734,True,"route history, drill scores, successor notes",True,False
+508,32,signal_orchard,Signal Guild,Milo,2,0.754,True,"route history, drill scores, successor notes",True,False
+509,32,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+510,32,central_repair_ring,Repair Circle,Juno,2,0.818,False,closed,True,False
+511,32,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+512,33,roofward_archive,Glassgarden Guild,Fay,2,0.732,False,closed,True,False
+513,33,archive_signal,Index Guild,Nia,2,0.734,False,closed,True,False
+514,33,signal_orchard,Signal Guild,Milo,2,0.76,True,"route history, drill scores, successor notes",True,False
+515,33,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+516,33,central_repair_ring,Repair Circle,Juno,2,0.824,True,"route history, drill scores, successor notes",True,False
+517,33,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+518,33,roofward_archive,Glassgarden Guild,Fay,2,0.732,False,closed,True,False
+519,33,archive_signal,Index Guild,Nia,2,0.734,False,closed,True,False
+520,33,signal_orchard,Signal Guild,Milo,2,0.766,True,"route history, drill scores, successor notes",True,False
+521,33,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+522,33,central_repair_ring,Repair Circle,Juno,2,0.824,False,closed,True,False
+523,33,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+524,33,roofward_archive,Glassgarden Guild,Fay,2,0.738,True,"route history, drill scores, successor notes",True,True
+525,33,archive_signal,Index Guild,Nia,2,0.734,False,closed,True,False
+526,33,signal_orchard,Signal Guild,Milo,2,0.772,True,"route history, drill scores, successor notes",True,False
+527,33,orchard_riverbend,Seed Guild,Ivo,2,0.75,False,closed,True,False
+528,34,central_repair_ring,Repair Circle,Juno,2,0.824,False,closed,True,False
+529,34,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+530,34,roofward_archive,Glassgarden Guild,Fay,2,0.738,False,closed,True,False
+531,34,archive_signal,Index Guild,Nia,2,0.734,False,closed,True,False
+532,34,signal_orchard,Signal Guild,Milo,2,0.778,True,"route history, drill scores, successor notes",True,False
+533,34,orchard_riverbend,Seed Guild,Ivo,2,0.756,True,"route history, drill scores, successor notes",True,False
+534,34,central_repair_ring,Repair Circle,Juno,2,0.824,False,closed,True,False
+535,34,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+536,34,roofward_archive,Glassgarden Guild,Fay,2,0.738,False,closed,True,False
+537,34,archive_signal,Index Guild,Nia,2,0.734,False,closed,True,False
+538,34,signal_orchard,Signal Guild,Milo,2,0.778,False,closed,True,False
+539,34,orchard_riverbend,Seed Guild,Ivo,2,0.774,True,"route history, drill scores, successor notes",True,False
+540,34,central_repair_ring,Repair Circle,Juno,2,0.83,True,"route history, drill scores, successor notes",True,False
+541,34,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+542,34,roofward_archive,Glassgarden Guild,Fay,2,0.738,False,closed,True,False
+543,34,archive_signal,Index Guild,Nia,2,0.734,False,closed,True,False
+544,35,signal_orchard,Signal Guild,Milo,2,0.778,False,closed,True,False
+545,35,orchard_riverbend,Seed Guild,Ivo,2,0.774,False,closed,True,False
+546,35,central_repair_ring,Repair Circle,Juno,2,0.836,True,"route history, drill scores, successor notes",True,False
+547,35,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+548,35,roofward_archive,Glassgarden Guild,Fay,2,0.744,True,"route history, drill scores, successor notes",True,False
+549,35,archive_signal,Index Guild,Nia,2,0.734,False,closed,True,False
+550,35,signal_orchard,Signal Guild,Milo,2,0.778,False,closed,True,False
+551,35,orchard_riverbend,Seed Guild,Ivo,2,0.774,False,closed,True,False
+552,35,central_repair_ring,Repair Circle,Juno,2,0.842,True,"route history, drill scores, successor notes",True,False
+553,35,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+554,35,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+555,35,archive_signal,Index Guild,Nia,2,0.734,False,closed,True,False
+556,35,signal_orchard,Signal Guild,Milo,2,0.784,True,"route history, drill scores, successor notes",True,False
+557,35,orchard_riverbend,Seed Guild,Ivo,2,0.774,False,closed,True,False
+558,35,central_repair_ring,Repair Circle,Juno,2,0.848,True,"route history, drill scores, successor notes",True,True
+559,35,riverbend_roofward,Bridgewright Guild,Ari,2,0.706,False,closed,True,False
+560,36,archive_signal,Index Guild,Nia,2,0.734,False,closed,True,False
+561,36,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+562,36,orchard_riverbend,Seed Guild,Ivo,2,0.774,False,closed,True,False
+563,36,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+564,36,riverbend_roofward,Bridgewright Guild,Ari,2,0.712,True,"route history, drill scores, successor notes",True,False
+565,36,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+566,36,archive_signal,Index Guild,Nia,2,0.734,False,closed,True,False
+567,36,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+568,36,orchard_riverbend,Seed Guild,Ivo,2,0.774,False,closed,True,False
+569,36,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+570,36,riverbend_roofward,Bridgewright Guild,Ari,2,0.712,False,closed,True,False
+571,36,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+572,36,archive_signal,Index Guild,Nia,2,0.74,True,"route history, drill scores, successor notes",True,False
+573,36,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+574,36,orchard_riverbend,Seed Guild,Ivo,2,0.774,False,closed,True,False
+575,36,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+576,37,riverbend_roofward,Bridgewright Guild,Ari,2,0.712,False,closed,True,False
+577,37,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+578,37,archive_signal,Index Guild,Nia,2,0.74,False,closed,True,False
+579,37,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+580,37,orchard_riverbend,Seed Guild,Ivo,2,0.78,True,"route history, drill scores, successor notes",True,True
+581,37,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+582,37,riverbend_roofward,Bridgewright Guild,Ari,2,0.712,False,closed,True,False
+583,37,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+584,37,archive_signal,Index Guild,Nia,2,0.74,False,closed,True,False
+585,37,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+586,37,orchard_riverbend,Seed Guild,Ivo,2,0.78,False,closed,True,False
+587,37,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+588,37,riverbend_roofward,Bridgewright Guild,Ari,2,0.718,True,"route history, drill scores, successor notes",True,False
+589,37,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+590,37,archive_signal,Index Guild,Nia,2,0.74,False,closed,True,False
+591,37,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+592,38,orchard_riverbend,Seed Guild,Ivo,2,0.78,False,closed,True,False
+593,38,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+594,38,riverbend_roofward,Bridgewright Guild,Ari,2,0.718,False,closed,True,False
+595,38,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+596,38,archive_signal,Index Guild,Nia,2,0.746,True,"route history, drill scores, successor notes",True,False
+597,38,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+598,38,orchard_riverbend,Seed Guild,Ivo,2,0.78,False,closed,True,False
+599,38,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+600,38,riverbend_roofward,Bridgewright Guild,Ari,2,0.718,False,closed,True,False
+601,38,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+602,38,archive_signal,Index Guild,Nia,2,0.746,False,closed,True,False
+603,38,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+604,38,orchard_riverbend,Seed Guild,Ivo,2,0.786,True,"route history, drill scores, successor notes",True,False
+605,38,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+606,38,riverbend_roofward,Bridgewright Guild,Ari,2,0.718,False,closed,True,False
+607,38,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+608,39,archive_signal,Index Guild,Nia,2,0.746,False,closed,True,False
+609,39,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+610,39,orchard_riverbend,Seed Guild,Ivo,2,0.786,False,closed,True,False
+611,39,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+612,39,riverbend_roofward,Bridgewright Guild,Ari,2,0.724,True,"route history, drill scores, successor notes",True,False
+613,39,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+614,39,archive_signal,Index Guild,Nia,2,0.746,False,closed,True,False
+615,39,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+616,39,orchard_riverbend,Seed Guild,Ivo,2,0.786,False,closed,True,False
+617,39,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+618,39,riverbend_roofward,Bridgewright Guild,Ari,2,0.724,False,closed,True,False
+619,39,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+620,39,archive_signal,Index Guild,Nia,2,0.752,True,"route history, drill scores, successor notes",True,True
+621,39,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+622,39,orchard_riverbend,Seed Guild,Ivo,2,0.786,False,closed,True,False
+623,39,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+624,40,riverbend_roofward,Bridgewright Guild,Ari,3,0.73,True,"route history, drill scores, successor notes",True,False
+625,40,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+626,40,archive_signal,Index Guild,Nia,2,0.752,False,closed,True,False
+627,40,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+628,40,orchard_riverbend,Seed Guild,Ivo,2,0.792,True,"route history, drill scores, successor notes",True,False
+629,40,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+630,40,riverbend_roofward,Bridgewright Guild,Ari,3,0.736,True,"route history, drill scores, successor notes",True,True
+631,40,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+632,40,archive_signal,Index Guild,Nia,2,0.752,False,closed,True,False
+633,40,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+634,40,orchard_riverbend,Seed Guild,Ivo,2,0.792,False,closed,True,False
+635,40,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+636,40,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,True,"route history, drill scores, successor notes",True,True
+637,40,roofward_archive,Glassgarden Guild,Fay,2,0.744,False,closed,True,False
+638,40,archive_signal,Index Guild,Nia,2,0.752,False,closed,True,False
+639,40,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+640,41,orchard_riverbend,Seed Guild,Ivo,2,0.792,False,closed,True,False
+641,41,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+642,41,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+643,41,roofward_archive,Glassgarden Guild,Fay,2,0.762,True,"route history, drill scores, successor notes",True,False
+644,41,archive_signal,Index Guild,Nia,2,0.758,True,"route history, drill scores, successor notes",True,False
+645,41,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+646,41,orchard_riverbend,Seed Guild,Ivo,2,0.792,False,closed,True,False
+647,41,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+648,41,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+649,41,roofward_archive,Glassgarden Guild,Fay,2,0.768,True,"route history, drill scores, successor notes",True,False
+650,41,archive_signal,Index Guild,Nia,2,0.758,False,closed,True,False
+651,41,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+652,41,orchard_riverbend,Seed Guild,Ivo,2,0.798,True,"route history, drill scores, successor notes",True,False
+653,41,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+654,41,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+655,41,roofward_archive,Glassgarden Guild,Fay,2,0.774,True,"route history, drill scores, successor notes",True,False
+656,42,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+657,42,orchard_riverbend,Seed Guild,Ivo,2,0.798,False,closed,True,False
+658,42,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+659,42,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+660,42,roofward_archive,Glassgarden Guild,Fay,2,0.78,True,"route history, drill scores, successor notes",True,False
+661,42,archive_signal,Index Guild,Nia,2,0.764,True,"route history, drill scores, successor notes",True,False
+662,42,signal_orchard,Signal Guild,Milo,2,0.784,False,closed,True,False
+663,42,orchard_riverbend,Seed Guild,Ivo,2,0.798,False,closed,True,False
+664,42,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+665,42,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+666,42,roofward_archive,Glassgarden Guild,Fay,2,0.78,False,closed,True,False
+667,42,archive_signal,Index Guild,Nia,2,0.77,True,"route history, drill scores, successor notes",True,False
+668,42,signal_orchard,Signal Guild,Milo,2,0.79,True,"route history, drill scores, successor notes",True,False
+669,42,orchard_riverbend,Seed Guild,Ivo,2,0.798,False,closed,True,False
+670,42,central_repair_ring,Repair Circle,Juno,2,0.848,False,closed,True,False
+671,42,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+672,43,roofward_archive,Glassgarden Guild,Fay,2,0.78,False,closed,True,False
+673,43,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+674,43,signal_orchard,Signal Guild,Milo,2,0.796,True,"route history, drill scores, successor notes",True,False
+675,43,orchard_riverbend,Seed Guild,Ivo,2,0.798,False,closed,True,False
+676,43,central_repair_ring,Repair Circle,Juno,2,0.854,True,"route history, drill scores, successor notes",True,False
+677,43,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+678,43,roofward_archive,Glassgarden Guild,Fay,2,0.78,False,closed,True,False
+679,43,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+680,43,signal_orchard,Signal Guild,Milo,2,0.802,True,"route history, drill scores, successor notes",True,False
+681,43,orchard_riverbend,Seed Guild,Ivo,2,0.798,False,closed,True,False
+682,43,central_repair_ring,Repair Circle,Juno,2,0.854,False,closed,True,False
+683,43,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+684,43,roofward_archive,Glassgarden Guild,Fay,2,0.786,True,"route history, drill scores, successor notes",True,False
+685,43,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+686,43,signal_orchard,Signal Guild,Milo,2,0.808,True,"route history, drill scores, successor notes",True,False
+687,43,orchard_riverbend,Seed Guild,Ivo,2,0.798,False,closed,True,False
+688,44,central_repair_ring,Repair Circle,Juno,2,0.854,False,closed,True,False
+689,44,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+690,44,roofward_archive,Glassgarden Guild,Fay,2,0.786,False,closed,True,False
+691,44,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+692,44,signal_orchard,Signal Guild,Milo,2,0.814,True,"route history, drill scores, successor notes",True,False
+693,44,orchard_riverbend,Seed Guild,Ivo,2,0.804,True,"route history, drill scores, successor notes",True,True
+694,44,central_repair_ring,Repair Circle,Juno,2,0.854,False,closed,True,False
+695,44,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+696,44,roofward_archive,Glassgarden Guild,Fay,2,0.786,False,closed,True,False
+697,44,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+698,44,signal_orchard,Signal Guild,Milo,2,0.814,False,closed,True,False
+699,44,orchard_riverbend,Seed Guild,Ivo,2,0.81,True,"route history, drill scores, successor notes",True,False
+700,44,central_repair_ring,Repair Circle,Juno,2,0.86,True,"route history, drill scores, successor notes",True,False
+701,44,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+702,44,roofward_archive,Glassgarden Guild,Fay,2,0.786,False,closed,True,False
+703,44,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+704,45,signal_orchard,Signal Guild,Milo,2,0.814,False,closed,True,False
+705,45,orchard_riverbend,Seed Guild,Ivo,2,0.81,False,closed,True,False
+706,45,central_repair_ring,Repair Circle,Juno,2,0.866,True,"route history, drill scores, successor notes",True,False
+707,45,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+708,45,roofward_archive,Glassgarden Guild,Fay,2,0.792,True,"route history, drill scores, successor notes",True,False
+709,45,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+710,45,signal_orchard,Signal Guild,Milo,2,0.814,False,closed,True,False
+711,45,orchard_riverbend,Seed Guild,Ivo,2,0.81,False,closed,True,False
+712,45,central_repair_ring,Repair Circle,Juno,2,0.872,True,"route history, drill scores, successor notes",True,False
+713,45,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+714,45,roofward_archive,Glassgarden Guild,Fay,2,0.792,False,closed,True,False
+715,45,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+716,45,signal_orchard,Signal Guild,Milo,2,0.82,True,"route history, drill scores, successor notes",True,True
+717,45,orchard_riverbend,Seed Guild,Ivo,2,0.81,False,closed,True,False
+718,45,central_repair_ring,Repair Circle,Juno,2,0.878,True,"route history, drill scores, successor notes",True,False
+719,45,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+720,46,roofward_archive,Glassgarden Guild,Fay,2,0.792,False,closed,True,False
+721,46,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+722,46,signal_orchard,Signal Guild,Milo,2,0.82,False,closed,True,False
+723,46,orchard_riverbend,Seed Guild,Ivo,2,0.81,False,closed,True,False
+724,46,central_repair_ring,Repair Circle,Juno,2,0.884,True,"route history, drill scores, successor notes",True,False
+725,46,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+726,46,roofward_archive,Glassgarden Guild,Fay,2,0.792,False,closed,True,False
+727,46,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+728,46,signal_orchard,Signal Guild,Milo,2,0.82,False,closed,True,False
+729,46,orchard_riverbend,Seed Guild,Ivo,2,0.81,False,closed,True,False
+730,46,central_repair_ring,Repair Circle,Juno,2,0.884,False,closed,True,False
+731,46,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+732,46,roofward_archive,Glassgarden Guild,Fay,2,0.798,True,"route history, drill scores, successor notes",True,False
+733,46,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+734,46,signal_orchard,Signal Guild,Milo,2,0.82,False,closed,True,False
+735,46,orchard_riverbend,Seed Guild,Ivo,2,0.81,False,closed,True,False
+736,47,central_repair_ring,Repair Circle,Juno,2,0.884,False,closed,True,False
+737,47,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+738,47,roofward_archive,Glassgarden Guild,Fay,2,0.798,False,closed,True,False
+739,47,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+740,47,signal_orchard,Signal Guild,Milo,2,0.826,True,"route history, drill scores, successor notes",True,False
+741,47,orchard_riverbend,Seed Guild,Ivo,2,0.81,False,closed,True,False
+742,47,central_repair_ring,Repair Circle,Juno,2,0.884,False,closed,True,False
+743,47,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+744,47,roofward_archive,Glassgarden Guild,Fay,2,0.798,False,closed,True,False
+745,47,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+746,47,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+747,47,orchard_riverbend,Seed Guild,Ivo,2,0.81,False,closed,True,False
+748,47,central_repair_ring,Repair Circle,Juno,2,0.89,True,"route history, drill scores, successor notes",True,False
+749,47,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+750,47,roofward_archive,Glassgarden Guild,Fay,2,0.798,False,closed,True,False
+751,47,archive_signal,Index Guild,Nia,2,0.77,False,closed,True,False
+752,48,orchard_riverbend,Seed Guild,Ivo,2,0.81,False,closed,True,False
+753,48,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+754,48,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+755,48,roofward_archive,Glassgarden Guild,Fay,2,0.798,False,closed,True,False
+756,48,archive_signal,Index Guild,Nia,2,0.776,True,"route history, drill scores, successor notes",True,True
+757,48,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+758,48,orchard_riverbend,Seed Guild,Ivo,2,0.81,False,closed,True,False
+759,48,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+760,48,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+761,48,roofward_archive,Glassgarden Guild,Fay,2,0.798,False,closed,True,False
+762,48,archive_signal,Index Guild,Nia,2,0.776,False,closed,True,False
+763,48,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+764,48,orchard_riverbend,Seed Guild,Ivo,2,0.816,True,"route history, drill scores, successor notes",True,False
+765,48,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+766,48,riverbend_roofward,Bridgewright Guild,Ari,3,0.742,False,closed,True,False
+767,48,roofward_archive,Glassgarden Guild,Fay,2,0.798,False,closed,True,False
+768,49,archive_signal,Index Guild,Nia,2,0.776,False,closed,True,False
+769,49,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+770,49,orchard_riverbend,Seed Guild,Ivo,2,0.816,False,closed,True,False
+771,49,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+772,49,riverbend_roofward,Bridgewright Guild,Ari,3,0.748,True,"route history, drill scores, successor notes",True,True
+773,49,roofward_archive,Glassgarden Guild,Fay,2,0.798,False,closed,True,False
+774,49,archive_signal,Index Guild,Nia,2,0.776,False,closed,True,False
+775,49,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+776,49,orchard_riverbend,Seed Guild,Ivo,2,0.816,False,closed,True,False
+777,49,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+778,49,riverbend_roofward,Bridgewright Guild,Ari,3,0.748,False,closed,True,False
+779,49,roofward_archive,Glassgarden Guild,Fay,2,0.798,False,closed,True,False
+780,49,archive_signal,Index Guild,Nia,2,0.782,True,"route history, drill scores, successor notes",True,False
+781,49,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+782,49,orchard_riverbend,Seed Guild,Ivo,2,0.816,False,closed,True,False
+783,49,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+784,50,riverbend_roofward,Bridgewright Guild,Ari,3,0.754,True,"route history, drill scores, successor notes",True,False
+785,50,roofward_archive,Glassgarden Guild,Fay,2,0.798,False,closed,True,False
+786,50,archive_signal,Index Guild,Nia,2,0.782,False,closed,True,False
+787,50,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+788,50,orchard_riverbend,Seed Guild,Ivo,2,0.822,True,"route history, drill scores, successor notes",True,False
+789,50,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+790,50,riverbend_roofward,Bridgewright Guild,Ari,3,0.76,True,"route history, drill scores, successor notes",True,False
+791,50,roofward_archive,Glassgarden Guild,Fay,2,0.798,False,closed,True,False
+792,50,archive_signal,Index Guild,Nia,2,0.782,False,closed,True,False
+793,50,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+794,50,orchard_riverbend,Seed Guild,Ivo,2,0.822,False,closed,True,False
+795,50,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+796,50,riverbend_roofward,Bridgewright Guild,Ari,3,0.766,True,"route history, drill scores, successor notes",True,False
+797,50,roofward_archive,Glassgarden Guild,Fay,2,0.798,False,closed,True,False
+798,50,archive_signal,Index Guild,Nia,2,0.782,False,closed,True,False
+799,50,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+800,51,orchard_riverbend,Seed Guild,Ivo,2,0.822,False,closed,True,False
+801,51,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+802,51,riverbend_roofward,Bridgewright Guild,Ari,3,0.766,False,closed,True,False
+803,51,roofward_archive,Glassgarden Guild,Fay,2,0.804,True,"route history, drill scores, successor notes",True,False
+804,51,archive_signal,Index Guild,Nia,2,0.788,True,"route history, drill scores, successor notes",True,False
+805,51,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+806,51,orchard_riverbend,Seed Guild,Ivo,2,0.822,False,closed,True,False
+807,51,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+808,51,riverbend_roofward,Bridgewright Guild,Ari,3,0.766,False,closed,True,False
+809,51,roofward_archive,Glassgarden Guild,Fay,2,0.81,True,"route history, drill scores, successor notes",True,False
+810,51,archive_signal,Index Guild,Nia,2,0.788,False,closed,True,False
+811,51,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+812,51,orchard_riverbend,Seed Guild,Ivo,2,0.828,True,"route history, drill scores, successor notes",True,True
+813,51,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+814,51,riverbend_roofward,Bridgewright Guild,Ari,3,0.766,False,closed,True,False
+815,51,roofward_archive,Glassgarden Guild,Fay,2,0.816,True,"route history, drill scores, successor notes",True,False
+816,52,archive_signal,Index Guild,Nia,2,0.794,True,"route history, drill scores, successor notes",True,False
+817,52,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+818,52,orchard_riverbend,Seed Guild,Ivo,2,0.828,False,closed,True,False
+819,52,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+820,52,riverbend_roofward,Bridgewright Guild,Ari,3,0.772,True,"route history, drill scores, successor notes",True,False
+821,52,roofward_archive,Glassgarden Guild,Fay,2,0.816,False,closed,True,False
+822,52,archive_signal,Index Guild,Nia,2,0.8,True,"route history, drill scores, successor notes",True,True
+823,52,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+824,52,orchard_riverbend,Seed Guild,Ivo,2,0.828,False,closed,True,False
+825,52,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+826,52,riverbend_roofward,Bridgewright Guild,Ari,3,0.772,False,closed,True,False
+827,52,roofward_archive,Glassgarden Guild,Fay,2,0.816,False,closed,True,False
+828,52,archive_signal,Index Guild,Nia,2,0.806,True,"route history, drill scores, successor notes",True,True
+829,52,signal_orchard,Signal Guild,Milo,2,0.826,False,closed,True,False
+830,52,orchard_riverbend,Seed Guild,Ivo,2,0.828,False,closed,True,False
+831,52,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+832,53,riverbend_roofward,Bridgewright Guild,Ari,3,0.772,False,closed,True,False
+833,53,roofward_archive,Glassgarden Guild,Fay,2,0.816,False,closed,True,False
+834,53,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+835,53,signal_orchard,Signal Guild,Milo,2,0.832,True,"route history, drill scores, successor notes",True,False
+836,53,orchard_riverbend,Seed Guild,Ivo,2,0.834,True,"route history, drill scores, successor notes",True,False
+837,53,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+838,53,riverbend_roofward,Bridgewright Guild,Ari,3,0.772,False,closed,True,False
+839,53,roofward_archive,Glassgarden Guild,Fay,2,0.816,False,closed,True,False
+840,53,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+841,53,signal_orchard,Signal Guild,Milo,2,0.838,True,"route history, drill scores, successor notes",True,False
+842,53,orchard_riverbend,Seed Guild,Ivo,2,0.834,False,closed,True,False
+843,53,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+844,53,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,True,"route history, drill scores, successor notes",True,False
+845,53,roofward_archive,Glassgarden Guild,Fay,2,0.816,False,closed,True,False
+846,53,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+847,53,signal_orchard,Signal Guild,Milo,2,0.844,True,"route history, drill scores, successor notes",True,False
+848,54,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+849,54,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+850,54,roofward_archive,Glassgarden Guild,Fay,2,0.816,False,closed,True,False
+851,54,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+852,54,signal_orchard,Signal Guild,Milo,2,0.85,True,"route history, drill scores, successor notes",True,False
+853,54,orchard_riverbend,Seed Guild,Ivo,2,0.84,True,"route history, drill scores, successor notes",True,False
+854,54,central_repair_ring,Repair Circle,Juno,2,0.89,False,closed,True,False
+855,54,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+856,54,roofward_archive,Glassgarden Guild,Fay,2,0.816,False,closed,True,False
+857,54,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+858,54,signal_orchard,Signal Guild,Milo,2,0.85,False,closed,True,False
+859,54,orchard_riverbend,Seed Guild,Ivo,2,0.858,True,"route history, drill scores, successor notes",True,False
+860,54,central_repair_ring,Repair Circle,Juno,2,0.896,True,"route history, drill scores, successor notes",True,False
+861,54,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+862,54,roofward_archive,Glassgarden Guild,Fay,2,0.816,False,closed,True,False
+863,54,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+864,55,signal_orchard,Signal Guild,Milo,2,0.85,False,closed,True,False
+865,55,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+866,55,central_repair_ring,Repair Circle,Juno,2,0.902,True,"route history, drill scores, successor notes",True,False
+867,55,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+868,55,roofward_archive,Glassgarden Guild,Fay,2,0.822,True,"route history, drill scores, successor notes",True,False
+869,55,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+870,55,signal_orchard,Signal Guild,Milo,2,0.85,False,closed,True,False
+871,55,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+872,55,central_repair_ring,Repair Circle,Juno,2,0.908,True,"route history, drill scores, successor notes",True,False
+873,55,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+874,55,roofward_archive,Glassgarden Guild,Fay,2,0.822,False,closed,True,False
+875,55,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+876,55,signal_orchard,Signal Guild,Milo,2,0.856,True,"route history, drill scores, successor notes",True,False
+877,55,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+878,55,central_repair_ring,Repair Circle,Juno,2,0.914,True,"route history, drill scores, successor notes",True,False
+879,55,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+880,56,roofward_archive,Glassgarden Guild,Fay,2,0.822,False,closed,True,False
+881,56,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+882,56,signal_orchard,Signal Guild,Milo,2,0.856,False,closed,True,False
+883,56,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+884,56,central_repair_ring,Repair Circle,Juno,2,0.92,True,"route history, drill scores, successor notes",True,False
+885,56,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+886,56,roofward_archive,Glassgarden Guild,Fay,2,0.822,False,closed,True,False
+887,56,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+888,56,signal_orchard,Signal Guild,Milo,2,0.856,False,closed,True,False
+889,56,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+890,56,central_repair_ring,Repair Circle,Juno,2,0.92,False,closed,True,False
+891,56,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+892,56,roofward_archive,Glassgarden Guild,Fay,2,0.828,True,"route history, drill scores, successor notes",True,False
+893,56,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+894,56,signal_orchard,Signal Guild,Milo,2,0.856,False,closed,True,False
+895,56,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+896,57,central_repair_ring,Repair Circle,Juno,2,0.92,False,closed,True,False
+897,57,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+898,57,roofward_archive,Glassgarden Guild,Fay,2,0.828,False,closed,True,False
+899,57,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+900,57,signal_orchard,Signal Guild,Milo,2,0.862,True,"route history, drill scores, successor notes",True,False
+901,57,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+902,57,central_repair_ring,Repair Circle,Juno,2,0.92,False,closed,True,False
+903,57,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+904,57,roofward_archive,Glassgarden Guild,Fay,2,0.828,False,closed,True,False
+905,57,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+906,57,signal_orchard,Signal Guild,Milo,2,0.862,False,closed,True,False
+907,57,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+908,57,central_repair_ring,Repair Circle,Juno,2,0.926,True,"route history, drill scores, successor notes",True,True
+909,57,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+910,57,roofward_archive,Glassgarden Guild,Fay,2,0.828,False,closed,True,False
+911,57,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+912,58,signal_orchard,Signal Guild,Milo,2,0.862,False,closed,True,False
+913,58,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+914,58,central_repair_ring,Repair Circle,Juno,2,0.926,False,closed,True,False
+915,58,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+916,58,roofward_archive,Glassgarden Guild,Fay,2,0.834,True,"route history, drill scores, successor notes",True,False
+917,58,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+918,58,signal_orchard,Signal Guild,Milo,2,0.862,False,closed,True,False
+919,58,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+920,58,central_repair_ring,Repair Circle,Juno,2,0.926,False,closed,True,False
+921,58,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+922,58,roofward_archive,Glassgarden Guild,Fay,2,0.834,False,closed,True,False
+923,58,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+924,58,signal_orchard,Signal Guild,Milo,2,0.868,True,"route history, drill scores, successor notes",True,False
+925,58,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+926,58,central_repair_ring,Repair Circle,Juno,2,0.926,False,closed,True,False
+927,58,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+928,59,roofward_archive,Glassgarden Guild,Fay,2,0.834,False,closed,True,False
+929,59,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+930,59,signal_orchard,Signal Guild,Milo,2,0.868,False,closed,True,False
+931,59,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+932,59,central_repair_ring,Repair Circle,Juno,2,0.932,True,"route history, drill scores, successor notes",True,False
+933,59,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+934,59,roofward_archive,Glassgarden Guild,Fay,2,0.834,False,closed,True,False
+935,59,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+936,59,signal_orchard,Signal Guild,Milo,2,0.868,False,closed,True,False
+937,59,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+938,59,central_repair_ring,Repair Circle,Juno,2,0.932,False,closed,True,False
+939,59,riverbend_roofward,Bridgewright Guild,Ari,3,0.778,False,closed,True,False
+940,59,roofward_archive,Glassgarden Guild,Fay,2,0.84,True,"route history, drill scores, successor notes",True,False
+941,59,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+942,59,signal_orchard,Signal Guild,Milo,2,0.868,False,closed,True,False
+943,59,orchard_riverbend,Seed Guild,Ivo,2,0.858,False,closed,True,False
+944,60,riverbend_roofward,Bridgewright Guild,Ari,4,0.784,True,"route history, drill scores, successor notes",True,False
+945,60,roofward_archive,Glassgarden Guild,Fay,2,0.84,False,closed,True,False
+946,60,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+947,60,signal_orchard,Signal Guild,Milo,2,0.868,False,closed,True,False
+948,60,orchard_riverbend,Seed Guild,Ivo,2,0.864,True,"route history, drill scores, successor notes",True,False
+949,60,central_repair_ring,Repair Circle,Juno,2,0.932,False,closed,True,False
+950,60,riverbend_roofward,Bridgewright Guild,Ari,4,0.79,True,"route history, drill scores, successor notes",True,False
+951,60,roofward_archive,Glassgarden Guild,Fay,2,0.84,False,closed,True,False
+952,60,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+953,60,signal_orchard,Signal Guild,Milo,2,0.868,False,closed,True,False
+954,60,orchard_riverbend,Seed Guild,Ivo,2,0.864,False,closed,True,False
+955,60,central_repair_ring,Repair Circle,Juno,2,0.932,False,closed,True,False
+956,60,riverbend_roofward,Bridgewright Guild,Ari,4,0.796,True,"route history, drill scores, successor notes",True,False
+957,60,roofward_archive,Glassgarden Guild,Fay,2,0.84,False,closed,True,False
+958,60,archive_signal,Index Guild,Nia,2,0.806,False,closed,True,False
+959,60,signal_orchard,Signal Guild,Milo,2,0.868,False,closed,True,False

@@ -1,0 +1,961 @@
+tick_id,day,route_id,probe_kind,state_before_hash,state_after_hash,restored_route_choice,restored_forecast_revision,restored_recovery,restored_avatar_tasks,persistence_ok
+0,1,riverbend_roofward,reload,v30-501824,v30-463072,river ford,1,0.662,0,True
+1,1,roofward_archive,none,v30-495403,v30-449668,glass stair,1,0.638,0,True
+2,1,archive_signal,none,v30-450943,v30-406489,paper lane,1,0.614,0,True
+3,1,signal_orchard,none,v30-440853,v30-390244,dusk road,1,0.59,0,True
+4,1,orchard_riverbend,none,v30-470682,v30-433149,fen track,1,0.566,0,True
+5,1,central_repair_ring,none,v30-601289,v30-532427,outer bell path,1,0.552,0,True
+6,1,riverbend_roofward,none,v30-521888,v30-463828,river ford,1,0.664,0,True
+7,1,roofward_archive,none,v30-510368,v30-443295,glass stair,1,0.64,0,True
+8,1,archive_signal,none,v30-465449,v30-407468,paper lane,2,0.626,0,True
+9,1,signal_orchard,none,v30-447082,v30-396826,dusk road,1,0.592,0,True
+10,1,orchard_riverbend,none,v30-492791,v30-440911,fen track,1,0.568,0,True
+11,1,central_repair_ring,none,v30-603475,v30-541134,outer bell path,1,0.564,0,True
+12,1,riverbend_roofward,none,v30-531677,v30-471857,river ford,1,0.666,0,True
+13,1,roofward_archive,none,v30-511059,v30-457228,glass stair,1,0.642,0,True
+14,1,archive_signal,none,v30-473645,v30-415010,paper lane,2,0.628,0,True
+15,1,signal_orchard,restore,v30-456116,v30-391137,dusk road,1,0.6,0,True
+16,2,orchard_riverbend,reload,v30-500935,v30-441541,fen track,2,0.586,0,True
+17,2,central_repair_ring,none,v30-603884,v30-542039,outer bell path,1,0.576,0,True
+18,2,riverbend_roofward,none,v30-532961,v30-472621,river ford,1,0.668,0,True
+19,2,roofward_archive,none,v30-518072,v30-457990,glass stair,1,0.644,0,True
+20,2,archive_signal,none,v30-466156,v30-407978,paper lane,2,0.63,0,True
+21,2,signal_orchard,none,v30-448714,v30-516118,river lantern loop,1,0.612,0,True
+22,2,orchard_riverbend,none,v30-500296,v30-441526,fen track,2,0.588,0,True
+23,2,central_repair_ring,none,v30-604433,v30-542169,outer bell path,1,0.588,0,True
+24,2,riverbend_roofward,none,v30-531748,v30-465610,river ford,2,0.68,0,True
+25,2,roofward_archive,none,v30-517077,v30-525590,cool archive lane,1,0.656,0,True
+26,2,archive_signal,none,v30-465884,v30-414666,paper lane,2,0.632,0,True
+27,2,signal_orchard,none,v30-579469,v30-516890,river lantern loop,1,0.614,0,True
+28,2,orchard_riverbend,none,v30-494571,v30-543396,market plank route,2,0.6,0,True
+29,2,central_repair_ring,none,v30-604977,v30-527965,outer bell path,1,0.6,0,True
+30,2,riverbend_roofward,none,v30-526282,v30-471723,river ford,2,0.682,0,True
+31,2,roofward_archive,restore,v30-581415,v30-525329,cool archive lane,1,0.674,0,True
+32,3,archive_signal,reload,v30-465895,v30-408587,paper lane,3,0.65,0,True
+33,3,signal_orchard,none,v30-579740,v30-403687,dusk road,1,0.616,0,True
+34,3,orchard_riverbend,none,v30-604894,v30-556401,market plank route,2,0.612,0,True
+35,3,central_repair_ring,none,v30-592097,v30-540871,outer bell path,1,0.612,0,True
+36,3,riverbend_roofward,none,v30-532954,v30-472487,river ford,2,0.684,0,True
+37,3,roofward_archive,none,v30-589431,v30-526103,cool archive lane,1,0.676,0,True
+38,3,archive_signal,none,v30-466869,v30-415275,paper lane,3,0.652,0,True
+39,3,signal_orchard,none,v30-462740,v30-404441,dusk road,1,0.618,0,True
+40,3,orchard_riverbend,none,v30-619600,v30-556789,market plank route,3,0.634,0,True
+41,3,central_repair_ring,none,v30-603182,v30-541001,outer bell path,1,0.624,0,True
+42,3,riverbend_roofward,none,v30-533076,v30-472476,river ford,2,0.686,0,True
+43,3,roofward_archive,none,v30-581177,v30-526102,cool archive lane,1,0.678,0,True
+44,3,archive_signal,none,v30-474387,v30-415256,paper lane,3,0.654,0,True
+45,3,signal_orchard,none,v30-462618,v30-510314,river lantern loop,1,0.63,0,True
+46,3,orchard_riverbend,none,v30-620549,v30-557567,market plank route,3,0.636,0,True
+47,3,central_repair_ring,restore,v30-605962,v30-541515,outer bell path,1,0.642,0,True
+48,4,riverbend_roofward,reload,v30-533378,v30-472000,river ford,3,0.704,0,True
+49,4,roofward_archive,none,v30-589199,v30-519478,cool archive lane,1,0.69,0,True
+50,4,archive_signal,none,v30-473658,v30-415237,paper lane,3,0.656,0,True
+51,4,signal_orchard,none,v30-565623,v30-516754,river lantern loop,1,0.642,0,True
+52,4,orchard_riverbend,none,v30-620426,v30-557700,market plank route,3,0.648,0,True
+53,4,central_repair_ring,none,v30-603988,v30-569113,inner repair yard,1,0.644,0,True
+54,4,riverbend_roofward,none,v30-525187,v30-471989,river ford,3,0.706,0,True
+55,4,roofward_archive,none,v30-580842,v30-524816,cool archive lane,1,0.702,0,True
+56,4,archive_signal,none,v30-475161,v30-416226,paper lane,4,0.668,0,True
+57,4,signal_orchard,none,v30-580253,v30-517653,river lantern loop,1,0.654,0,True
+58,4,orchard_riverbend,none,v30-622038,v30-558737,market plank route,3,0.696,1,True
+59,4,central_repair_ring,none,v30-626454,v30-569893,inner repair yard,1,0.646,0,True
+60,4,riverbend_roofward,none,v30-533906,v30-471978,river ford,3,0.708,0,True
+61,4,roofward_archive,none,v30-587556,v30-524943,cool archive lane,1,0.714,0,True
+62,4,archive_signal,restore,v30-466949,v30-415013,paper lane,4,0.704,1,True
+63,4,signal_orchard,restore,v30-580526,v30-517392,river lantern loop,1,0.672,0,True
+64,5,orchard_riverbend,reload,v30-620738,v30-557430,market plank route,4,0.714,1,True
+65,5,central_repair_ring,none,v30-633865,v30-542422,outer bell path,1,0.658,0,True
+66,5,riverbend_roofward,none,v30-532852,v30-472989,river ford,3,0.738,1,True
+67,5,roofward_archive,none,v30-587849,v30-526231,cool archive lane,1,0.738,0,True
+68,5,archive_signal,none,v30-473947,v30-415769,paper lane,4,0.706,1,True
+69,5,signal_orchard,none,v30-573870,v30-518291,river lantern loop,1,0.684,0,True
+70,5,orchard_riverbend,none,v30-620552,v30-557433,market plank route,4,0.716,1,True
+71,5,central_repair_ring,none,v30-606784,v30-541770,outer bell path,1,0.682,0,True
+72,5,riverbend_roofward,none,v30-533587,v30-465977,river ford,4,0.75,1,True
+73,5,roofward_archive,none,v30-588411,v30-518832,cool archive lane,1,0.75,0,True
+74,5,archive_signal,none,v30-474192,v30-415989,paper lane,4,0.736,2,True
+75,5,signal_orchard,none,v30-580806,v30-518415,river lantern loop,1,0.696,0,True
+76,5,orchard_riverbend,none,v30-620952,v30-558211,market plank route,4,0.718,1,True
+77,5,central_repair_ring,none,v30-604670,v30-570151,inner repair yard,1,0.684,0,True
+78,5,riverbend_roofward,none,v30-526568,v30-600299,orchard ridge detour,4,0.798,2,True
+79,5,roofward_archive,restore,v30-582650,v30-526744,cool archive lane,1,0.758,0,True
+80,6,signal_orchard,reload,v30-581000,v30-517046,river lantern loop,2,0.714,0,True
+81,6,orchard_riverbend,none,v30-621406,v30-434815,fen track,4,0.72,1,True
+82,6,central_repair_ring,none,v30-634181,v30-569153,inner repair yard,1,0.714,1,True
+83,6,riverbend_roofward,none,v30-664682,v30-598351,orchard ridge detour,4,0.822,2,True
+84,6,roofward_archive,none,v30-589109,v30-519259,cool archive lane,1,0.77,0,True
+85,6,archive_signal,none,v30-475102,v30-490813,stone kiosk path,4,0.748,2,True
+86,6,signal_orchard,none,v30-580189,v30-517818,river lantern loop,2,0.716,0,True
+87,6,orchard_riverbend,none,v30-487335,v30-441969,fen track,4,0.734,1,True
+88,6,central_repair_ring,none,v30-626750,v30-570190,inner repair yard,2,0.726,1,True
+89,6,riverbend_roofward,none,v30-664463,v30-599268,orchard ridge detour,4,0.834,2,True
+90,6,roofward_archive,none,v30-581155,v30-525750,cool archive lane,1,0.782,0,True
+91,6,archive_signal,none,v30-551291,v30-483574,stone kiosk path,4,0.76,2,True
+92,6,signal_orchard,none,v30-579547,v30-517815,river lantern loop,2,0.718,0,True
+93,6,orchard_riverbend,restore,v30-501218,v30-441587,fen track,4,0.742,1,True
+94,6,central_repair_ring,none,v30-627051,v30-542845,outer bell path,2,0.774,2,True
+95,6,riverbend_roofward,restore,v30-664877,v30-599007,orchard ridge detour,4,0.852,2,True
+96,7,roofward_archive,reload,v30-589215,v30-512554,cool archive lane,2,0.8,0,True
+97,7,archive_signal,none,v30-544772,v30-490689,stone kiosk path,4,0.772,2,True
+98,7,signal_orchard,none,v30-580612,v30-518713,river lantern loop,2,0.756,1,True
+99,7,orchard_riverbend,none,v30-502203,v30-442712,fen track,4,0.756,1,True
+100,7,central_repair_ring,none,v30-613784,v30-551097,outer bell path,3,0.796,2,True
+101,7,riverbend_roofward,none,v30-673447,v30-607448,orchard ridge detour,4,0.864,2,True
+102,7,roofward_archive,none,v30-581657,v30-532960,cool archive lane,2,0.802,0,True
+103,7,archive_signal,none,v30-559496,v30-498642,stone kiosk path,4,0.796,2,True
+104,7,signal_orchard,none,v30-588177,v30-526767,river lantern loop,3,0.778,1,True
+105,7,orchard_riverbend,none,v30-510310,v30-567022,market plank route,4,0.768,1,True
+106,7,central_repair_ring,none,v30-615141,v30-551224,outer bell path,4,0.854,3,True
+107,7,riverbend_roofward,none,v30-672909,v30-608778,orchard ridge detour,4,0.888,2,True
+108,7,roofward_archive,none,v30-596667,v30-533742,cool archive lane,2,0.804,0,True
+109,7,archive_signal,none,v30-561603,v30-498409,stone kiosk path,4,0.808,2,True
+110,7,signal_orchard,none,v30-573760,v30-519364,river lantern loop,3,0.79,1,True
+111,7,orchard_riverbend,restore,v30-629685,v30-566758,market plank route,4,0.786,1,True
+112,8,central_repair_ring,reload,v30-614308,v30-551215,outer bell path,5,0.882,3,True
+113,8,riverbend_roofward,none,v30-672969,v30-593237,orchard ridge detour,4,0.9,2,True
+114,8,roofward_archive,none,v30-595901,v30-533868,cool archive lane,2,0.842,1,True
+115,8,archive_signal,none,v30-561042,v30-497763,stone kiosk path,4,0.832,2,True
+116,8,signal_orchard,none,v30-581920,v30-525484,river lantern loop,3,0.802,1,True
+117,8,orchard_riverbend,none,v30-631395,v30-567801,market plank route,5,0.798,1,True
+118,8,central_repair_ring,none,v30-615511,v30-552129,outer bell path,5,0.894,3,True
+119,8,riverbend_roofward,none,v30-656786,v30-607423,orchard ridge detour,4,0.912,2,True
+120,8,roofward_archive,none,v30-596032,v30-534248,cool archive lane,3,0.864,1,True
+121,8,archive_signal,none,v30-553097,v30-422878,paper lane,4,0.834,2,True
+122,8,signal_orchard,none,v30-588129,v30-519241,river lantern loop,3,0.84,2,True
+123,8,orchard_riverbend,none,v30-630626,v30-559182,market plank route,6,0.81,1,True
+124,8,central_repair_ring,restore,v30-614734,v30-550694,outer bell path,5,0.912,3,True
+125,8,riverbend_roofward,none,v30-672332,v30-607565,orchard ridge detour,4,0.924,2,True
+126,8,roofward_archive,none,v30-597757,v30-534125,cool archive lane,3,0.912,2,True
+127,8,archive_signal,restore,v30-482974,v30-423278,paper lane,4,0.842,2,True
+128,9,signal_orchard,reload,v30-582820,v30-527540,river lantern loop,4,0.868,2,True
+129,9,orchard_riverbend,none,v30-622830,v30-449414,fen track,6,0.812,1,True
+130,9,central_repair_ring,none,v30-613362,v30-550824,outer bell path,5,0.924,3,True
+131,9,riverbend_roofward,none,v30-673041,v30-600377,orchard ridge detour,4,0.94,2,True
+132,9,roofward_archive,none,v30-597588,v30-534252,cool archive lane,3,0.924,2,True
+133,9,archive_signal,none,v30-475393,v30-498267,stone kiosk path,4,0.854,2,True
+134,9,signal_orchard,none,v30-590392,v30-520387,river lantern loop,5,0.89,2,True
+135,9,orchard_riverbend,none,v30-508683,v30-449766,fen track,6,0.826,1,True
+136,9,central_repair_ring,none,v30-614947,v30-544744,outer bell path,6,0.94,3,True
+137,9,riverbend_roofward,none,v30-665292,v30-600899,orchard ridge detour,4,0.94,2,True
+138,9,roofward_archive,none,v30-598148,v30-528229,cool archive lane,3,0.94,3,True
+139,9,archive_signal,none,v30-560419,v30-499549,stone kiosk path,4,0.878,2,True
+140,9,signal_orchard,none,v30-582305,v30-525975,river lantern loop,6,0.912,2,True
+141,9,orchard_riverbend,none,v30-508076,v30-449750,fen track,6,0.828,1,True
+142,9,central_repair_ring,none,v30-607452,v30-544614,outer bell path,6,0.94,4,True
+143,9,riverbend_roofward,restore,v30-665833,v30-600637,orchard ridge detour,4,0.94,2,True
+144,10,roofward_archive,reload,v30-583039,v30-528091,cool archive lane,4,0.94,3,True
+145,10,archive_signal,none,v30-561864,v30-498905,stone kiosk path,4,0.884,2,True
+146,10,signal_orchard,none,v30-588663,v30-520387,river lantern loop,6,0.94,3,True
+147,10,orchard_riverbend,none,v30-508850,v30-449778,fen track,6,0.842,1,True
+148,10,central_repair_ring,none,v30-607307,v30-545136,outer bell path,6,0.94,4,True
+149,10,riverbend_roofward,none,v30-666096,v30-601159,orchard ridge detour,4,0.94,2,True
+150,10,roofward_archive,none,v30-589900,v30-527829,cool archive lane,4,0.94,3,True
+151,10,archive_signal,none,v30-560029,v30-499144,stone kiosk path,5,0.896,2,True
+152,10,signal_orchard,none,v30-582429,v30-520248,river lantern loop,7,0.94,3,True
+153,10,orchard_riverbend,none,v30-510038,v30-449762,fen track,6,0.844,1,True
+154,10,central_repair_ring,none,v30-608098,v30-545006,outer bell path,6,0.94,5,True
+155,10,riverbend_roofward,restore,v30-664210,v30-600897,orchard ridge detour,4,0.94,2,True
+156,10,roofward_archive,none,v30-589377,v30-528351,cool archive lane,4,0.94,3,True
+157,10,archive_signal,none,v30-554715,v30-499158,stone kiosk path,6,0.918,2,True
+158,10,signal_orchard,none,v30-582581,v30-520900,river lantern loop,7,0.94,4,True
+159,10,orchard_riverbend,restore,v30-510097,v30-450160,fen track,6,0.852,1,True
+160,11,central_repair_ring,reload,v30-608361,v30-544869,outer bell path,7,0.94,5,True
+161,11,riverbend_roofward,none,v30-664750,v30-600635,orchard ridge detour,4,0.94,2,True
+162,11,roofward_archive,none,v30-589897,v30-528344,cool archive lane,5,0.94,4,True
+163,11,archive_signal,none,v30-560173,v30-491988,stone kiosk path,6,0.94,2,True
+164,11,signal_orchard,none,v30-581289,v30-520638,river lantern loop,7,0.94,4,True
+165,11,orchard_riverbend,none,v30-509944,v30-450144,fen track,6,0.854,1,True
+166,11,central_repair_ring,none,v30-608125,v30-545391,outer bell path,7,0.94,5,True
+167,11,riverbend_roofward,none,v30-666496,v30-601157,orchard ridge detour,4,0.94,2,True
+168,11,roofward_archive,none,v30-590683,v30-528990,cool archive lane,6,0.94,4,True
+169,11,archive_signal,none,v30-554367,v30-492510,stone kiosk path,6,0.94,2,True
+170,11,signal_orchard,none,v30-582040,v30-520376,river lantern loop,7,0.94,4,True
+171,11,orchard_riverbend,none,v30-508938,v30-450496,fen track,6,0.868,1,True
+172,11,central_repair_ring,none,v30-599643,v30-545129,outer bell path,7,0.94,5,True
+173,11,riverbend_roofward,none,v30-665565,v30-600895,orchard ridge detour,4,0.94,2,True
+174,11,roofward_archive,none,v30-590953,v30-528859,cool archive lane,6,0.94,5,True
+175,11,archive_signal,restore,v30-551693,v30-492248,stone kiosk path,6,0.94,2,True
+176,12,orchard_riverbend,reload,v30-509666,v30-451046,fen track,7,0.886,1,True
+177,12,central_repair_ring,none,v30-600873,v30-573297,inner repair yard,7,0.94,5,True
+178,12,riverbend_roofward,none,v30-666680,v30-601595,orchard ridge detour,5,0.94,3,True
+179,12,roofward_archive,none,v30-591397,v30-529294,cool archive lane,6,0.94,5,True
+180,12,archive_signal,none,v30-552105,v30-491899,stone kiosk path,6,0.94,2,True
+181,12,signal_orchard,none,v30-568285,v30-520549,river lantern loop,7,0.94,4,True
+182,12,orchard_riverbend,none,v30-510768,v30-451030,fen track,7,0.888,1,True
+183,12,central_repair_ring,none,v30-636156,v30-573035,inner repair yard,7,0.94,5,True
+184,12,riverbend_roofward,none,v30-665471,v30-601462,orchard ridge detour,6,0.94,3,True
+185,12,roofward_archive,none,v30-592297,v30-529032,cool archive lane,6,0.94,5,True
+186,12,archive_signal,restore,v30-554043,v30-492549,stone kiosk path,6,0.94,3,True
+187,12,signal_orchard,none,v30-583265,v30-521071,river lantern loop,7,0.94,4,True
+188,12,orchard_riverbend,none,v30-512290,v30-444613,fen track,7,0.89,1,True
+189,12,central_repair_ring,none,v30-637478,v30-573557,inner repair yard,7,0.94,5,True
+190,12,riverbend_roofward,none,v30-663995,v30-601329,orchard ridge detour,7,0.94,3,True
+191,12,roofward_archive,restore,v30-592298,v30-528770,cool archive lane,6,0.94,5,True
+192,13,archive_signal,reload,v30-538896,v30-492408,stone kiosk path,7,0.94,3,True
+193,13,signal_orchard,none,v30-582614,v30-520809,river lantern loop,7,0.94,4,True
+194,13,orchard_riverbend,none,v30-503317,v30-443742,fen track,7,0.92,2,True
+195,13,central_repair_ring,none,v30-637084,v30-573295,inner repair yard,7,0.94,5,True
+196,13,riverbend_roofward,none,v30-665742,v30-601851,orchard ridge detour,7,0.94,3,True
+197,13,roofward_archive,none,v30-592301,v30-529292,cool archive lane,6,0.94,5,True
+198,13,archive_signal,none,v30-554552,v30-492930,stone kiosk path,7,0.94,3,True
+199,13,signal_orchard,none,v30-583914,v30-521331,river lantern loop,7,0.94,4,True
+200,13,orchard_riverbend,none,v30-494236,v30-449268,fen track,8,0.932,2,True
+201,13,central_repair_ring,none,v30-636700,v30-544525,outer bell path,7,0.94,5,True
+202,13,riverbend_roofward,none,v30-665908,v30-600950,orchard ridge detour,7,0.94,4,True
+203,13,roofward_archive,none,v30-590990,v30-528255,cool archive lane,6,0.94,5,True
+204,13,archive_signal,none,v30-544770,v30-491893,stone kiosk path,7,0.94,3,True
+205,13,signal_orchard,none,v30-581834,v30-520294,river lantern loop,7,0.94,4,True
+206,13,orchard_riverbend,none,v30-508860,v30-443712,fen track,8,0.94,3,True
+207,13,central_repair_ring,restore,v30-599025,v30-545047,outer bell path,7,0.94,5,True
+208,14,riverbend_roofward,reload,v30-667651,v30-601601,orchard ridge detour,8,0.94,4,True
+209,14,roofward_archive,none,v30-591263,v30-461008,glass stair,6,0.94,5,True
+210,14,archive_signal,none,v30-551840,v30-491631,stone kiosk path,7,0.94,3,True
+211,14,signal_orchard,none,v30-582343,v30-520032,river lantern loop,7,0.94,4,True
+212,14,orchard_riverbend,none,v30-502249,v30-443450,fen track,8,0.94,3,True
+213,14,central_repair_ring,none,v30-606562,v30-544785,outer bell path,7,0.94,5,True
+214,14,riverbend_roofward,none,v30-666714,v30-601339,orchard ridge detour,8,0.94,4,True
+215,14,roofward_archive,none,v30-520422,v30-460746,glass stair,6,0.94,5,True
+216,14,archive_signal,none,v30-551991,v30-492274,stone kiosk path,8,0.94,3,True
+217,14,signal_orchard,restore,v30-582481,v30-520554,river lantern loop,7,0.94,4,True
+218,14,orchard_riverbend,none,v30-503039,v30-444096,fen track,8,0.94,4,True
+219,14,central_repair_ring,none,v30-608281,v30-545307,outer bell path,7,0.94,5,True
+220,14,riverbend_roofward,none,v30-665518,v30-474562,river ford,8,0.94,4,True
+221,14,roofward_archive,none,v30-519420,v30-528253,cool archive lane,6,0.94,5,True
+222,14,archive_signal,none,v30-552896,v30-492140,stone kiosk path,8,0.94,4,True
+223,14,signal_orchard,restore,v30-582336,v30-520292,river lantern loop,7,0.94,4,True
+224,15,orchard_riverbend,reload,v30-502164,v30-443951,fen track,9,0.94,4,True
+225,15,central_repair_ring,none,v30-609083,v30-572778,inner repair yard,7,0.94,5,True
+226,15,riverbend_roofward,none,v30-534859,v30-475210,river ford,8,0.94,5,True
+227,15,roofward_archive,none,v30-592433,v30-528775,cool archive lane,6,0.94,5,True
+228,15,archive_signal,none,v30-552392,v30-492662,stone kiosk path,8,0.94,4,True
+229,15,signal_orchard,none,v30-582617,v30-520814,river lantern loop,7,0.94,4,True
+230,15,orchard_riverbend,none,v30-503367,v30-443689,fen track,9,0.94,4,True
+231,15,central_repair_ring,none,v30-636010,v30-572516,inner repair yard,7,0.94,5,True
+232,15,riverbend_roofward,none,v30-527124,v30-481751,river ford,8,0.936,5,True
+233,15,roofward_archive,none,v30-590599,v30-528513,cool archive lane,6,0.94,5,True
+234,15,archive_signal,none,v30-552012,v30-492528,stone kiosk path,8,0.94,5,True
+235,15,signal_orchard,none,v30-582487,v30-520552,river lantern loop,7,0.94,4,True
+236,15,orchard_riverbend,none,v30-502400,v30-444211,fen track,9,0.94,4,True
+237,15,central_repair_ring,none,v30-635878,v30-545305,outer bell path,7,0.94,5,True
+238,15,riverbend_roofward,none,v30-543385,v30-475596,river ford,8,0.94,6,True
+239,15,roofward_archive,restore,v30-592044,v30-529035,cool archive lane,6,0.94,5,True
+240,16,archive_signal,reload,v30-552002,v30-492387,stone kiosk path,9,0.94,5,True
+241,16,signal_orchard,none,v30-582475,v30-520290,river lantern loop,7,0.94,4,True
+242,16,orchard_riverbend,none,v30-501655,v30-444073,fen track,9,0.94,5,True
+243,16,central_repair_ring,none,v30-607877,v30-545043,outer bell path,7,0.94,5,True
+244,16,riverbend_roofward,none,v30-536128,v30-475334,river ford,8,0.94,6,True
+245,16,roofward_archive,none,v30-584930,v30-528773,cool archive lane,6,0.94,5,True
+246,16,archive_signal,none,v30-554439,v30-492909,stone kiosk path,9,0.94,5,True
+247,16,signal_orchard,none,v30-583131,v30-520812,river lantern loop,7,0.94,4,True
+248,16,orchard_riverbend,restore,v30-503791,v30-449827,fen track,10,0.94,5,True
+249,16,central_repair_ring,none,v30-600075,v30-545565,outer bell path,7,0.94,5,True
+250,16,riverbend_roofward,none,v30-534861,v30-475072,river ford,8,0.94,6,True
+251,16,roofward_archive,none,v30-589555,v30-528511,cool archive lane,6,0.94,5,True
+252,16,archive_signal,none,v30-554676,v30-492647,stone kiosk path,9,0.94,5,True
+253,16,signal_orchard,none,v30-582599,v30-406771,dusk road,7,0.94,4,True
+254,16,orchard_riverbend,none,v30-496786,v30-449690,fen track,10,0.94,6,True
+255,16,central_repair_ring,restore,v30-607491,v30-545303,outer bell path,7,0.94,5,True
+256,17,riverbend_roofward,reload,v30-536139,v30-475713,river ford,9,0.94,6,True
+257,17,roofward_archive,none,v30-591136,v30-529033,cool archive lane,6,0.94,5,True
+258,17,archive_signal,none,v30-546218,v30-493297,stone kiosk path,9,0.94,6,True
+259,17,signal_orchard,none,v30-465811,v30-407293,dusk road,7,0.94,4,True
+260,17,orchard_riverbend,none,v30-502793,v30-449428,fen track,10,0.94,6,True
+261,17,central_repair_ring,none,v30-608263,v30-545041,outer bell path,7,0.94,5,True
+262,17,riverbend_roofward,none,v30-535391,v30-475451,river ford,9,0.94,6,True
+263,17,roofward_archive,none,v30-591517,v30-528771,cool archive lane,6,0.94,5,True
+264,17,archive_signal,none,v30-553177,v30-498428,stone kiosk path,10,0.94,6,True
+265,17,signal_orchard,none,v30-465070,v30-520810,river lantern loop,7,0.94,4,True
+266,17,orchard_riverbend,none,v30-502580,v30-450075,fen track,10,0.94,7,True
+267,17,central_repair_ring,none,v30-609331,v30-545563,outer bell path,7,0.94,5,True
+268,17,riverbend_roofward,none,v30-536286,v30-475973,river ford,9,0.94,6,True
+269,17,roofward_archive,none,v30-592167,v30-529293,cool archive lane,6,0.94,5,True
+270,17,archive_signal,none,v30-552784,v30-498166,stone kiosk path,10,0.94,6,True
+271,17,signal_orchard,restore,v30-582880,v30-520548,river lantern loop,7,0.94,4,True
+272,18,central_repair_ring,reload,v30-608459,v30-545339,outer bell path,8,0.94,5,True
+273,18,riverbend_roofward,none,v30-535423,v30-602169,orchard ridge detour,9,0.94,6,True
+274,18,roofward_archive,none,v30-590784,v30-529075,cool archive lane,6,0.94,6,True
+275,18,archive_signal,none,v30-553990,v30-423730,paper lane,10,0.94,6,True
+276,18,signal_orchard,none,v30-581492,v30-520983,river lantern loop,7,0.94,4,True
+277,18,orchard_riverbend,none,v30-502379,v30-567338,market plank route,10,0.94,7,True
+278,18,central_repair_ring,none,v30-608329,v30-545861,outer bell path,8,0.94,5,True
+279,18,riverbend_roofward,restore,v30-668099,v30-602691,orchard ridge detour,9,0.94,6,True
+280,18,roofward_archive,none,v30-568959,v30-528937,cool archive lane,7,0.94,6,True
+281,18,archive_signal,none,v30-476089,v30-498339,stone kiosk path,10,0.94,6,True
+282,18,signal_orchard,none,v30-581633,v30-520851,river lantern loop,7,0.94,5,True
+283,18,orchard_riverbend,none,v30-625235,v30-567076,market plank route,10,0.94,7,True
+284,18,central_repair_ring,none,v30-607163,v30-545599,outer bell path,8,0.94,5,True
+285,18,riverbend_roofward,none,v30-667164,v30-602429,orchard ridge detour,9,0.94,6,True
+286,18,roofward_archive,none,v30-583697,v30-461803,glass stair,7,0.94,7,True
+287,18,archive_signal,restore,v30-553228,v30-498861,stone kiosk path,10,0.94,6,True
+288,19,signal_orchard,reload,v30-582024,v30-521496,river lantern loop,8,0.94,5,True
+289,19,orchard_riverbend,none,v30-625084,v30-567598,market plank route,10,0.94,7,True
+290,19,central_repair_ring,none,v30-607407,v30-552458,outer bell path,8,0.936,5,True
+291,19,riverbend_roofward,none,v30-658589,v30-602167,orchard ridge detour,9,0.94,6,True
+292,19,roofward_archive,none,v30-520499,v30-529328,cool archive lane,7,0.94,7,True
+293,19,archive_signal,none,v30-554859,v30-498599,stone kiosk path,10,0.94,6,True
+294,19,signal_orchard,none,v30-582910,v30-521234,river lantern loop,8,0.94,5,True
+295,19,orchard_riverbend,none,v30-624957,v30-567336,market plank route,10,0.94,7,True
+296,19,central_repair_ring,none,v30-608270,v30-545984,outer bell path,9,0.94,5,True
+297,19,riverbend_roofward,none,v30-667287,v30-476144,river ford,9,0.94,6,True
+298,19,roofward_archive,none,v30-584732,v30-529981,cool archive lane,7,0.94,8,True
+299,19,archive_signal,none,v30-554884,v30-499121,stone kiosk path,10,0.94,6,True
+300,19,signal_orchard,none,v30-579685,v30-520197,river lantern loop,8,0.94,5,True
+301,19,orchard_riverbend,none,v30-624442,v30-566299,market plank route,10,0.94,7,True
+302,19,central_repair_ring,none,v30-599464,v30-550632,outer bell path,10,0.94,6,True
+303,19,riverbend_roofward,restore,v30-534915,v30-475107,river ford,9,0.94,6,True
+304,20,roofward_archive,reload,v30-591848,v30-529068,cool archive lane,8,0.94,8,True
+305,20,archive_signal,none,v30-552807,v30-498084,stone kiosk path,10,0.94,6,True
+306,20,signal_orchard,none,v30-582290,v30-520849,river lantern loop,8,0.94,6,True
+307,20,orchard_riverbend,none,v30-624442,v30-566948,market plank route,11,0.94,7,True
+308,20,central_repair_ring,none,v30-607818,v30-551154,outer bell path,10,0.94,6,True
+309,20,riverbend_roofward,none,v30-534930,v30-602174,orchard ridge detour,9,0.94,6,True
+310,20,roofward_archive,restore,v30-591576,v30-528806,cool archive lane,8,0.94,8,True
+311,20,archive_signal,none,v30-553700,v30-497822,stone kiosk path,10,0.94,6,True
+312,20,signal_orchard,none,v30-575352,v30-520710,river lantern loop,9,0.94,6,True
+313,20,orchard_riverbend,none,v30-624187,v30-566813,market plank route,12,0.94,7,True
+314,20,central_repair_ring,none,v30-605596,v30-551025,outer bell path,10,0.94,7,True
+315,20,riverbend_roofward,none,v30-665548,v30-601912,orchard ridge detour,9,0.94,6,True
+316,20,roofward_archive,none,v30-593154,v30-529328,cool archive lane,8,0.94,8,True
+317,20,archive_signal,none,v30-553347,v30-498344,stone kiosk path,10,0.94,6,True
+318,20,signal_orchard,none,v30-581026,v30-521362,river lantern loop,9,0.94,7,True
+319,20,orchard_riverbend,restore,v30-623652,v30-450227,fen track,12,0.94,7,True
+320,21,central_repair_ring,reload,v30-608086,v30-550889,outer bell path,11,0.94,7,True
+321,21,riverbend_roofward,none,v30-665421,v30-601650,orchard ridge detour,9,0.94,6,True
+322,21,roofward_archive,none,v30-591577,v30-529197,cool archive lane,8,0.94,9,True
+323,21,archive_signal,none,v30-553074,v30-498082,stone kiosk path,10,0.94,6,True
+324,21,signal_orchard,none,v30-583331,v30-526574,river lantern loop,10,0.94,7,True
+325,21,orchard_riverbend,none,v30-502953,v30-567073,market plank route,12,0.94,7,True
+326,21,central_repair_ring,none,v30-608345,v30-551411,outer bell path,11,0.94,7,True
+327,21,riverbend_roofward,none,v30-666362,v30-602172,orchard ridge detour,9,0.94,6,True
+328,21,roofward_archive,none,v30-591462,v30-529843,cool archive lane,9,0.94,9,True
+329,21,archive_signal,none,v30-546262,v30-498604,stone kiosk path,10,0.94,6,True
+330,21,signal_orchard,none,v30-581894,v30-526436,river lantern loop,11,0.94,7,True
+331,21,orchard_riverbend,none,v30-624304,v30-566811,market plank route,12,0.94,7,True
+332,21,central_repair_ring,none,v30-609258,v30-551149,outer bell path,11,0.94,7,True
+333,21,riverbend_roofward,none,v30-666625,v30-601910,orchard ridge detour,9,0.94,6,True
+334,21,roofward_archive,none,v30-588749,v30-534869,cool archive lane,9,0.94,10,True
+335,21,archive_signal,restore,v30-554606,v30-498342,stone kiosk path,10,0.94,6,True
+336,22,signal_orchard,reload,v30-575500,v30-527082,river lantern loop,12,0.94,7,True
+337,22,orchard_riverbend,none,v30-616555,v30-567333,market plank route,12,0.94,7,True
+338,22,central_repair_ring,none,v30-601451,v30-551804,outer bell path,11,0.94,8,True
+339,22,riverbend_roofward,none,v30-667426,v30-602432,orchard ridge detour,9,0.94,6,True
+340,22,roofward_archive,none,v30-596550,v30-534607,cool archive lane,9,0.94,10,True
+341,22,archive_signal,restore,v30-554985,v30-423325,paper lane,11,0.94,6,True
+342,22,signal_orchard,none,v30-575607,v30-526820,river lantern loop,12,0.94,7,True
+343,22,orchard_riverbend,none,v30-623929,v30-567071,market plank route,12,0.94,7,True
+344,22,central_repair_ring,none,v30-609143,v30-551668,outer bell path,12,0.94,8,True
+345,22,riverbend_roofward,none,v30-666493,v30-602170,orchard ridge detour,9,0.94,6,True
+346,22,roofward_archive,none,v30-582435,v30-535261,cool archive lane,9,0.94,11,True
+347,22,archive_signal,none,v30-475030,v30-423963,paper lane,12,0.94,6,True
+348,22,signal_orchard,none,v30-583845,v30-527342,river lantern loop,12,0.94,7,True
+349,22,orchard_riverbend,none,v30-616440,v30-567593,market plank route,12,0.94,7,True
+350,22,central_repair_ring,none,v30-600272,v30-551406,outer bell path,12,0.94,8,True
+351,22,riverbend_roofward,restore,v30-665551,v30-601908,orchard ridge detour,9,0.94,6,True
+352,23,roofward_archive,reload,v30-597864,v30-540556,cool archive lane,10,0.94,11,True
+353,23,archive_signal,none,v30-475502,v30-423701,paper lane,12,0.94,6,True
+354,23,signal_orchard,none,v30-581908,v30-527211,river lantern loop,12,0.94,8,True
+355,23,orchard_riverbend,none,v30-623122,v30-567331,market plank route,12,0.94,7,True
+356,23,central_repair_ring,none,v30-608488,v30-551928,outer bell path,12,0.94,8,True
+357,23,riverbend_roofward,none,v30-668249,v30-475885,river ford,9,0.94,6,True
+358,23,roofward_archive,none,v30-597358,v30-541203,cool archive lane,11,0.94,11,True
+359,23,archive_signal,none,v30-475926,v30-424223,paper lane,12,0.94,6,True
+360,23,signal_orchard,none,v30-584620,v30-527073,river lantern loop,13,0.94,8,True
+361,23,orchard_riverbend,none,v30-623769,v30-567069,market plank route,12,0.94,7,True
+362,23,central_repair_ring,none,v30-601594,v30-551799,outer bell path,12,0.94,9,True
+363,23,riverbend_roofward,none,v30-535431,v30-475623,river ford,9,0.94,6,True
+364,23,roofward_archive,none,v30-597613,v30-541066,cool archive lane,12,0.94,11,True
+365,23,archive_signal,none,v30-475774,v30-423961,paper lane,12,0.94,6,True
+366,23,signal_orchard,none,v30-582577,v30-527726,river lantern loop,13,0.94,9,True
+367,23,orchard_riverbend,restore,v30-624964,v30-567591,market plank route,12,0.94,7,True
+368,24,riverbend_roofward,reload,v30-527632,v30-481371,river ford,10,0.94,6,True
+369,24,roofward_archive,none,v30-598700,v30-541501,cool archive lane,12,0.94,11,True
+370,24,archive_signal,none,v30-475896,v30-423612,paper lane,12,0.94,6,True
+371,24,signal_orchard,none,v30-581844,v30-527377,river lantern loop,13,0.94,9,True
+372,24,orchard_riverbend,restore,v30-623421,v30-567242,market plank route,12,0.94,7,True
+373,24,central_repair_ring,none,v30-607213,v30-551972,outer bell path,12,0.94,9,True
+374,24,riverbend_roofward,none,v30-534229,v30-481229,river ford,11,0.94,6,True
+375,24,roofward_archive,none,v30-599340,v30-541239,cool archive lane,12,0.94,11,True
+376,24,archive_signal,none,v30-477035,v30-424250,paper lane,13,0.94,6,True
+377,24,signal_orchard,none,v30-582372,v30-527899,river lantern loop,13,0.94,9,True
+378,24,orchard_riverbend,none,v30-625546,v30-567898,market plank route,12,0.94,8,True
+379,24,central_repair_ring,none,v30-609313,v30-552494,outer bell path,12,0.94,9,True
+380,24,riverbend_roofward,none,v30-534715,v30-481087,river ford,12,0.94,6,True
+381,24,roofward_archive,none,v30-598281,v30-540977,cool archive lane,12,0.94,11,True
+382,24,archive_signal,none,v30-476031,v30-424111,paper lane,13,0.94,7,True
+383,24,signal_orchard,restore,v30-583382,v30-527637,river lantern loop,13,0.94,9,True
+384,25,orchard_riverbend,reload,v30-622903,v30-567763,market plank route,13,0.94,8,True
+385,25,central_repair_ring,none,v30-608397,v30-580061,inner repair yard,12,0.94,9,True
+386,25,riverbend_roofward,none,v30-536139,v30-481736,river ford,12,0.94,7,True
+387,25,roofward_archive,none,v30-590620,v30-541499,cool archive lane,12,0.94,11,True
+388,25,archive_signal,none,v30-476934,v30-424633,paper lane,13,0.94,7,True
+389,25,signal_orchard,none,v30-583785,v30-528159,river lantern loop,13,0.94,9,True
+390,25,orchard_riverbend,none,v30-616084,v30-567501,market plank route,13,0.94,8,True
+391,25,central_repair_ring,none,v30-636793,v30-579799,inner repair yard,12,0.94,9,True
+392,25,riverbend_roofward,none,v30-534987,v30-481594,river ford,13,0.94,7,True
+393,25,roofward_archive,none,v30-596979,v30-541237,cool archive lane,12,0.94,11,True
+394,25,archive_signal,none,v30-477648,v30-424494,paper lane,13,0.94,8,True
+395,25,signal_orchard,none,v30-584048,v30-527897,river lantern loop,13,0.94,9,True
+396,25,orchard_riverbend,none,v30-624624,v30-568023,market plank route,13,0.94,8,True
+397,25,central_repair_ring,none,v30-628991,v30-552492,outer bell path,12,0.94,9,True
+398,25,riverbend_roofward,none,v30-536888,v30-482243,river ford,13,0.94,8,True
+399,25,roofward_archive,restore,v30-599214,v30-541759,cool archive lane,12,0.94,11,True
+400,26,archive_signal,reload,v30-474535,v30-423573,paper lane,14,0.94,8,True
+401,26,signal_orchard,none,v30-582984,v30-526860,river lantern loop,13,0.94,9,True
+402,26,orchard_riverbend,none,v30-622930,v30-567120,market plank route,13,0.94,9,True
+403,26,central_repair_ring,restore,v30-608017,v30-551455,outer bell path,12,0.94,9,True
+404,26,riverbend_roofward,none,v30-535231,v30-481206,river ford,13,0.94,8,True
+405,26,roofward_archive,none,v30-596458,v30-540722,cool archive lane,12,0.94,11,True
+406,26,archive_signal,none,v30-476051,v30-424095,paper lane,14,0.94,8,True
+407,26,signal_orchard,none,v30-583900,v30-527382,river lantern loop,13,0.94,9,True
+408,26,orchard_riverbend,none,v30-625434,v30-567769,market plank route,14,0.94,9,True
+409,26,central_repair_ring,none,v30-608922,v30-551977,outer bell path,12,0.94,9,True
+410,26,riverbend_roofward,none,v30-533960,v30-480944,river ford,13,0.94,8,True
+411,26,roofward_archive,none,v30-597894,v30-540460,cool archive lane,12,0.94,11,True
+412,26,archive_signal,none,v30-476133,v30-423833,paper lane,14,0.94,8,True
+413,26,signal_orchard,none,v30-582487,v30-527120,river lantern loop,13,0.94,9,True
+414,26,orchard_riverbend,none,v30-629285,v30-572915,market plank route,14,0.94,10,True
+415,26,central_repair_ring,restore,v30-608392,v30-551715,outer bell path,12,0.94,9,True
+416,27,riverbend_roofward,reload,v30-528370,v30-481586,river ford,14,0.94,8,True
+417,27,roofward_archive,none,v30-597136,v30-540982,cool archive lane,12,0.94,11,True
+418,27,archive_signal,none,v30-475938,v30-424478,paper lane,14,0.94,9,True
+419,27,signal_orchard,none,v30-583141,v30-527642,river lantern loop,13,0.94,9,True
+420,27,orchard_riverbend,none,v30-629119,v30-572653,market plank route,14,0.94,10,True
+421,27,central_repair_ring,none,v30-607880,v30-551453,outer bell path,12,0.94,9,True
+422,27,riverbend_roofward,none,v30-535112,v30-608329,orchard ridge detour,14,0.94,8,True
+423,27,roofward_archive,none,v30-598694,v30-540720,cool archive lane,12,0.94,11,True
+424,27,archive_signal,none,v30-476284,v30-424332,paper lane,15,0.94,9,True
+425,27,signal_orchard,none,v30-574900,v30-527380,river lantern loop,13,0.94,9,True
+426,27,orchard_riverbend,none,v30-630081,v30-573310,market plank route,14,0.94,11,True
+427,27,central_repair_ring,none,v30-608273,v30-551975,outer bell path,12,0.94,9,True
+428,27,riverbend_roofward,none,v30-666417,v30-608851,orchard ridge detour,14,0.94,8,True
+429,27,roofward_archive,none,v30-598693,v30-472933,glass stair,12,0.94,11,True
+430,27,archive_signal,none,v30-475542,v30-424070,paper lane,15,0.94,9,True
+431,27,signal_orchard,restore,v30-583637,v30-527118,river lantern loop,13,0.94,9,True
+432,28,orchard_riverbend,reload,v30-629943,v30-573175,market plank route,15,0.94,11,True
+433,28,central_repair_ring,none,v30-607743,v30-551713,outer bell path,12,0.94,9,True
+434,28,riverbend_roofward,restore,v30-665627,v30-608726,orchard ridge detour,14,0.94,9,True
+435,28,roofward_archive,none,v30-527924,v30-472671,glass stair,12,0.94,11,True
+436,28,archive_signal,none,v30-477405,v30-424592,paper lane,15,0.94,9,True
+437,28,signal_orchard,none,v30-582886,v30-527640,river lantern loop,13,0.94,9,True
+438,28,orchard_riverbend,none,v30-631661,v30-573697,market plank route,15,0.94,11,True
+439,28,central_repair_ring,none,v30-610236,v30-552235,outer bell path,12,0.94,9,True
+440,28,riverbend_roofward,none,v30-667501,v30-608594,orchard ridge detour,15,0.94,9,True
+441,28,roofward_archive,none,v30-526033,v30-540718,cool archive lane,12,0.94,11,True
+442,28,archive_signal,none,v30-481664,v30-429298,paper lane,15,0.94,10,True
+443,28,signal_orchard,none,v30-574658,v30-527378,river lantern loop,13,0.94,9,True
+444,28,orchard_riverbend,none,v30-630190,v30-573435,market plank route,15,0.94,11,True
+445,28,central_repair_ring,none,v30-609979,v30-551973,outer bell path,12,0.94,9,True
+446,28,riverbend_roofward,none,v30-673057,v30-614644,orchard ridge detour,15,0.94,10,True
+447,28,roofward_archive,restore,v30-598432,v30-541240,cool archive lane,12,0.94,11,True
+448,29,archive_signal,reload,v30-482298,v30-429936,paper lane,16,0.94,10,True
+449,29,signal_orchard,none,v30-583537,v30-527900,river lantern loop,13,0.94,9,True
+450,29,orchard_riverbend,none,v30-629141,v30-573173,market plank route,15,0.94,11,True
+451,29,central_repair_ring,none,v30-608919,v30-551711,outer bell path,12,0.94,9,True
+452,29,riverbend_roofward,none,v30-665104,v30-614382,orchard ridge detour,15,0.94,10,True
+453,29,roofward_archive,none,v30-597656,v30-540978,cool archive lane,12,0.94,11,True
+454,29,archive_signal,none,v30-482530,v30-429674,paper lane,16,0.94,10,True
+455,29,signal_orchard,none,v30-582479,v30-527638,river lantern loop,13,0.94,9,True
+456,29,orchard_riverbend,none,v30-632313,v30-573822,market plank route,16,0.94,11,True
+457,29,central_repair_ring,none,v30-608664,v30-552233,outer bell path,12,0.94,9,True
+458,29,riverbend_roofward,none,v30-672502,v30-615042,orchard ridge detour,15,0.94,11,True
+459,29,roofward_archive,none,v30-598821,v30-541500,cool archive lane,12,0.94,11,True
+460,29,archive_signal,none,v30-480930,v30-429412,paper lane,16,0.94,10,True
+461,29,signal_orchard,none,v30-581702,v30-527376,river lantern loop,13,0.94,9,True
+462,29,orchard_riverbend,none,v30-629419,v30-456155,fen track,16,0.94,12,True
+463,29,central_repair_ring,restore,v30-609181,v30-551971,outer bell path,12,0.94,9,True
+464,30,roofward_archive,reload,v30-597691,v30-541151,cool archive lane,12,0.94,11,True
+465,30,archive_signal,restore,v30-481850,v30-429847,paper lane,16,0.94,10,True
+466,30,signal_orchard,none,v30-588351,v30-533099,river lantern loop,13,0.94,10,True
+467,30,orchard_riverbend,none,v30-508457,v30-574130,market plank route,16,0.94,12,True
+468,30,central_repair_ring,none,v30-608582,v30-552406,outer bell path,12,0.94,9,True
+469,30,riverbend_roofward,none,v30-671868,v30-487780,river ford,15,0.94,11,True
+470,30,roofward_archive,none,v30-598866,v30-540889,cool archive lane,12,0.94,11,True
+471,30,archive_signal,none,v30-481463,v30-429585,paper lane,16,0.94,10,True
+472,30,signal_orchard,none,v30-581632,v30-532961,river lantern loop,14,0.94,10,True
+473,30,orchard_riverbend,none,v30-631295,v30-456328,fen track,16,0.94,12,True
+474,30,central_repair_ring,none,v30-614497,v30-557512,outer bell path,12,0.94,10,True
+475,30,riverbend_roofward,none,v30-534450,v30-487518,river ford,15,0.94,11,True
+476,30,roofward_archive,none,v30-597288,v30-541411,cool archive lane,12,0.94,11,True
+477,30,archive_signal,none,v30-483197,v30-505272,stone kiosk path,16,0.94,10,True
+478,30,signal_orchard,none,v30-588115,v30-533615,river lantern loop,14,0.94,11,True
+479,30,orchard_riverbend,restore,v30-510927,v30-456850,fen track,16,0.94,12,True
+480,31,central_repair_ring,reload,v30-612900,v30-557376,outer bell path,13,0.94,10,True
+481,31,riverbend_roofward,none,v30-534301,v30-487256,river ford,15,0.94,11,True
+482,31,roofward_archive,none,v30-598614,v30-541282,cool archive lane,12,0.94,12,True
+483,31,archive_signal,none,v30-560587,v30-505010,stone kiosk path,16,0.94,10,True
+484,31,signal_orchard,none,v30-586950,v30-418746,dusk road,14,0.94,11,True
+485,31,orchard_riverbend,none,v30-509423,v30-574128,market plank route,16,0.94,12,True
+486,31,central_repair_ring,none,v30-614870,v30-558024,outer bell path,14,0.94,10,True
+487,31,riverbend_roofward,none,v30-542243,v30-487778,river ford,15,0.94,11,True
+488,31,roofward_archive,none,v30-599007,v30-541929,cool archive lane,13,0.94,12,True
+489,31,archive_signal,none,v30-560107,v30-430367,paper lane,16,0.94,10,True
+490,31,signal_orchard,none,v30-470077,v30-418484,dusk road,14,0.94,11,True
+491,31,orchard_riverbend,none,v30-631962,v30-573866,market plank route,16,0.94,12,True
+492,31,central_repair_ring,none,v30-608058,v30-557888,outer bell path,15,0.94,10,True
+493,31,riverbend_roofward,none,v30-542354,v30-614951,orchard ridge detour,15,0.94,11,True
+494,31,roofward_archive,none,v30-596803,v30-541800,cool archive lane,13,0.94,13,True
+495,31,archive_signal,restore,v30-482600,v30-430105,paper lane,16,0.94,10,True
+496,32,signal_orchard,reload,v30-470606,v30-419121,dusk road,15,0.94,11,True
+497,32,orchard_riverbend,none,v30-624048,v30-574515,market plank route,17,0.94,12,True
+498,32,central_repair_ring,none,v30-607156,v30-558544,outer bell path,15,0.94,11,True
+499,32,riverbend_roofward,none,v30-665803,v30-615473,orchard ridge detour,15,0.94,11,True
+500,32,roofward_archive,none,v30-598610,v30-540763,cool archive lane,13,0.94,13,True
+501,32,archive_signal,none,v30-481537,v30-504233,stone kiosk path,16,0.94,10,True
+502,32,signal_orchard,none,v30-470770,v30-418084,dusk road,15,0.94,11,True
+503,32,orchard_riverbend,none,v30-629459,v30-573605,market plank route,18,0.94,12,True
+504,32,central_repair_ring,none,v30-614495,v30-557633,outer bell path,16,0.94,11,True
+505,32,riverbend_roofward,none,v30-672977,v30-614436,orchard ridge detour,15,0.94,11,True
+506,32,roofward_archive,none,v30-597580,v30-541418,cool archive lane,13,0.94,14,True
+507,32,archive_signal,none,v30-560218,v30-504755,stone kiosk path,16,0.94,10,True
+508,32,signal_orchard,none,v30-463916,v30-418606,dusk road,15,0.94,11,True
+509,32,orchard_riverbend,none,v30-631044,v30-574254,market plank route,19,0.94,12,True
+510,32,central_repair_ring,none,v30-613190,v30-557371,outer bell path,16,0.94,11,True
+511,32,riverbend_roofward,restore,v30-672302,v30-614174,orchard ridge detour,15,0.94,11,True
+512,33,roofward_archive,reload,v30-598350,v30-541281,cool archive lane,14,0.94,14,True
+513,33,archive_signal,none,v30-550150,v30-504493,stone kiosk path,16,0.94,10,True
+514,33,signal_orchard,none,v30-470185,v30-418582,dusk road,16,0.94,12,True
+515,33,orchard_riverbend,none,v30-631456,v30-573992,market plank route,19,0.94,12,True
+516,33,central_repair_ring,none,v30-615013,v30-557893,outer bell path,16,0.94,11,True
+517,33,riverbend_roofward,none,v30-673223,v30-487261,river ford,15,0.94,11,True
+518,33,roofward_archive,none,v30-597729,v30-541803,cool archive lane,14,0.94,14,True
+519,33,archive_signal,none,v30-559204,v30-505015,stone kiosk path,16,0.94,10,True
+520,33,signal_orchard,none,v30-463165,v30-418435,dusk road,17,0.94,12,True
+521,33,orchard_riverbend,none,v30-630127,v30-573730,market plank route,19,0.94,12,True
+522,33,central_repair_ring,none,v30-613863,v30-557765,outer bell path,16,0.94,12,True
+523,33,riverbend_roofward,none,v30-534796,v30-486999,river ford,15,0.94,11,True
+524,33,roofward_archive,none,v30-596929,v30-541541,cool archive lane,14,0.94,14,True
+525,33,archive_signal,none,v30-559571,v30-504753,stone kiosk path,16,0.94,10,True
+526,33,signal_orchard,none,v30-471565,v30-419195,dusk road,18,0.94,13,True
+527,33,orchard_riverbend,restore,v30-629057,v30-574252,market plank route,19,0.94,12,True
+528,34,central_repair_ring,reload,v30-612937,v30-558413,outer bell path,17,0.94,12,True
+529,34,riverbend_roofward,none,v30-541603,v30-487521,river ford,15,0.94,11,True
+530,34,roofward_archive,none,v30-596414,v30-541279,cool archive lane,14,0.94,14,True
+531,34,archive_signal,none,v30-560448,v30-504613,stone kiosk path,17,0.94,10,True
+532,34,signal_orchard,none,v30-468171,v30-418933,dusk road,18,0.94,13,True
+533,34,orchard_riverbend,none,v30-630392,v30-456423,fen track,19,0.94,12,True
+534,34,central_repair_ring,none,v30-613831,v30-558151,outer bell path,17,0.94,12,True
+535,34,riverbend_roofward,none,v30-541215,v30-487259,river ford,15,0.94,11,True
+536,34,roofward_archive,none,v30-597704,v30-541926,cool archive lane,15,0.94,14,True
+537,34,archive_signal,none,v30-559711,v30-505257,stone kiosk path,18,0.94,10,True
+538,34,signal_orchard,none,v30-463129,v30-419578,dusk road,18,0.94,14,True
+539,34,orchard_riverbend,none,v30-508223,v30-456945,fen track,19,0.94,12,True
+540,34,central_repair_ring,none,v30-613971,v30-557889,outer bell path,17,0.94,12,True
+541,34,riverbend_roofward,none,v30-541433,v30-614432,orchard ridge detour,15,0.94,11,True
+542,34,roofward_archive,none,v30-597717,v30-541797,cool archive lane,15,0.94,15,True
+543,34,archive_signal,restore,v30-560969,v30-505117,stone kiosk path,19,0.94,10,True
+544,35,signal_orchard,reload,v30-470725,v30-419431,dusk road,19,0.94,14,True
+545,35,orchard_riverbend,none,v30-508686,v30-456683,fen track,19,0.94,12,True
+546,35,central_repair_ring,none,v30-615164,v30-558545,outer bell path,17,0.94,13,True
+547,35,riverbend_roofward,none,v30-674845,v30-614954,orchard ridge detour,15,0.94,11,True
+548,35,roofward_archive,none,v30-597212,v30-542444,cool archive lane,16,0.94,15,True
+549,35,archive_signal,none,v30-559594,v30-430456,paper lane,19,0.94,10,True
+550,35,signal_orchard,none,v30-470446,v30-419169,dusk road,19,0.94,14,True
+551,35,orchard_riverbend,none,v30-508543,v30-456421,fen track,19,0.94,12,True
+552,35,central_repair_ring,none,v30-614775,v30-558409,outer bell path,18,0.94,13,True
+553,35,riverbend_roofward,none,v30-672815,v30-614692,orchard ridge detour,15,0.94,11,True
+554,35,roofward_archive,none,v30-598378,v30-542440,cool archive lane,17,0.94,16,True
+555,35,archive_signal,none,v30-482220,v30-430194,paper lane,19,0.94,10,True
+556,35,signal_orchard,none,v30-470246,v30-419691,dusk road,19,0.94,14,True
+557,35,orchard_riverbend,none,v30-510178,v30-574510,market plank route,19,0.94,12,True
+558,35,central_repair_ring,restore,v30-616633,v30-559065,outer bell path,18,0.94,14,True
+559,35,riverbend_roofward,restore,v30-673623,v30-615214,orchard ridge detour,15,0.94,11,True
+560,36,archive_signal,reload,v30-481261,v30-428916,paper lane,20,0.94,10,True
+561,36,signal_orchard,none,v30-470021,v30-419342,dusk road,19,0.94,14,True
+562,36,orchard_riverbend,none,v30-629901,v30-574296,market plank route,19,0.94,13,True
+563,36,central_repair_ring,none,v30-607233,v30-558716,outer bell path,18,0.94,14,True
+564,36,riverbend_roofward,none,v30-673946,v30-614995,orchard ridge detour,16,0.94,11,True
+565,36,roofward_archive,none,v30-597401,v30-474244,glass stair,17,0.94,16,True
+566,36,archive_signal,none,v30-482387,v30-429438,paper lane,20,0.94,10,True
+567,36,signal_orchard,none,v30-472108,v30-419864,dusk road,19,0.94,14,True
+568,36,orchard_riverbend,none,v30-631760,v30-573801,market plank route,20,0.94,13,True
+569,36,central_repair_ring,none,v30-613135,v30-559238,outer bell path,18,0.94,14,True
+570,36,riverbend_roofward,none,v30-671918,v30-614863,orchard ridge detour,17,0.94,11,True
+571,36,roofward_archive,none,v30-527940,v30-473982,glass stair,17,0.94,16,True
+572,36,archive_signal,none,v30-481774,v30-429176,paper lane,20,0.94,10,True
+573,36,signal_orchard,none,v30-470887,v30-534281,river lantern loop,19,0.94,14,True
+574,36,orchard_riverbend,none,v30-630582,v30-573674,market plank route,20,0.94,14,True
+575,36,central_repair_ring,restore,v30-614831,v30-558976,outer bell path,18,0.94,14,True
+576,37,riverbend_roofward,reload,v30-673527,v30-615515,orchard ridge detour,18,0.94,11,True
+577,37,roofward_archive,none,v30-527836,v30-542873,cool archive lane,17,0.94,16,True
+578,37,archive_signal,none,v30-481814,v30-429822,paper lane,20,0.94,11,True
+579,37,signal_orchard,none,v30-590894,v30-534803,river lantern loop,19,0.94,14,True
+580,37,orchard_riverbend,none,v30-629924,v30-573412,market plank route,20,0.94,14,True
+581,37,central_repair_ring,none,v30-615468,v30-558714,outer bell path,18,0.94,14,True
+582,37,riverbend_roofward,none,v30-672471,v30-615253,orchard ridge detour,18,0.94,11,True
+583,37,roofward_archive,none,v30-597518,v30-542611,cool archive lane,17,0.94,16,True
+584,37,archive_signal,none,v30-482147,v30-429676,paper lane,21,0.94,11,True
+585,37,signal_orchard,none,v30-590262,v30-534541,river lantern loop,19,0.94,14,True
+586,37,orchard_riverbend,none,v30-632164,v30-574069,market plank route,20,0.94,15,True
+587,37,central_repair_ring,none,v30-615599,v30-559236,outer bell path,18,0.94,14,True
+588,37,riverbend_roofward,none,v30-664644,v30-615775,orchard ridge detour,18,0.94,11,True
+589,37,roofward_archive,restore,v30-598964,v30-543133,cool archive lane,17,0.94,16,True
+590,37,archive_signal,none,v30-475298,v30-429414,paper lane,21,0.94,11,True
+591,37,signal_orchard,restore,v30-590626,v30-534279,river lantern loop,19,0.94,14,True
+592,38,orchard_riverbend,reload,v30-629385,v30-573934,market plank route,21,0.94,15,True
+593,38,central_repair_ring,none,v30-615085,v30-558974,outer bell path,18,0.94,14,True
+594,38,riverbend_roofward,none,v30-673009,v30-615651,orchard ridge detour,18,0.94,12,True
+595,38,roofward_archive,none,v30-598036,v30-542871,cool archive lane,17,0.94,16,True
+596,38,archive_signal,none,v30-482905,v30-429936,paper lane,21,0.94,11,True
+597,38,signal_orchard,none,v30-590508,v30-534801,river lantern loop,19,0.94,14,True
+598,38,orchard_riverbend,none,v30-632168,v30-574456,market plank route,21,0.94,15,True
+599,38,central_repair_ring,none,v30-616266,v30-559496,outer bell path,18,0.94,14,True
+600,38,riverbend_roofward,none,v30-671958,v30-614744,orchard ridge detour,19,0.94,12,True
+601,38,roofward_archive,none,v30-597379,v30-541834,cool archive lane,17,0.94,16,True
+602,38,archive_signal,none,v30-481875,v30-429023,paper lane,21,0.94,12,True
+603,38,signal_orchard,none,v30-581193,v30-533764,river lantern loop,19,0.94,14,True
+604,38,orchard_riverbend,none,v30-630854,v30-573419,market plank route,21,0.94,15,True
+605,38,central_repair_ring,none,v30-606447,v30-586388,inner repair yard,18,0.94,14,True
+606,38,riverbend_roofward,none,v30-674235,v30-615404,orchard ridge detour,19,0.94,13,True
+607,38,roofward_archive,restore,v30-598037,v30-542356,cool archive lane,17,0.94,16,True
+608,39,archive_signal,reload,v30-483114,v30-429661,paper lane,22,0.94,12,True
+609,39,signal_orchard,none,v30-588835,v30-534286,river lantern loop,19,0.94,14,True
+610,39,orchard_riverbend,none,v30-631915,v30-573157,market plank route,21,0.94,15,True
+611,39,central_repair_ring,none,v30-643460,v30-586126,inner repair yard,18,0.94,14,True
+612,39,riverbend_roofward,none,v30-665893,v30-615142,orchard ridge detour,19,0.94,13,True
+613,39,roofward_archive,none,v30-597770,v30-542094,cool archive lane,17,0.94,16,True
+614,39,archive_signal,none,v30-481761,v30-504558,stone kiosk path,22,0.94,12,True
+615,39,signal_orchard,none,v30-582492,v30-534024,river lantern loop,19,0.94,14,True
+616,39,orchard_riverbend,none,v30-630323,v30-573806,market plank route,22,0.94,15,True
+617,39,central_repair_ring,none,v30-643714,v30-558719,outer bell path,18,0.94,14,True
+618,39,riverbend_roofward,none,v30-673174,v30-615802,orchard ridge detour,19,0.94,14,True
+619,39,roofward_archive,none,v30-598432,v30-542616,cool archive lane,17,0.94,16,True
+620,39,archive_signal,restore,v30-558720,v30-504296,stone kiosk path,22,0.94,12,True
+621,39,signal_orchard,none,v30-588027,v30-533762,river lantern loop,19,0.94,14,True
+622,39,orchard_riverbend,none,v30-629543,v30-573679,market plank route,22,0.94,16,True
+623,39,central_repair_ring,restore,v30-607222,v30-558457,outer bell path,18,0.94,14,True
+624,40,riverbend_roofward,reload,v30-673309,v30-614499,orchard ridge detour,20,0.94,14,True
+625,40,roofward_archive,none,v30-597655,v30-473985,glass stair,17,0.94,16,True
+626,40,archive_signal,none,v30-559394,v30-504948,stone kiosk path,22,0.94,13,True
+627,40,signal_orchard,none,v30-588813,v30-534284,river lantern loop,19,0.94,14,True
+628,40,orchard_riverbend,none,v30-631130,v30-574201,market plank route,22,0.94,16,True
+629,40,central_repair_ring,none,v30-614711,v30-558979,outer bell path,18,0.94,14,True
+630,40,riverbend_roofward,none,v30-672377,v30-614237,orchard ridge detour,20,0.94,14,True
+631,40,roofward_archive,none,v30-527424,v30-473723,glass stair,17,0.94,16,True
+632,40,archive_signal,none,v30-560139,v30-504808,stone kiosk path,23,0.94,13,True
+633,40,signal_orchard,none,v30-589328,v30-534022,river lantern loop,19,0.94,14,True
+634,40,orchard_riverbend,none,v30-624273,v30-574074,market plank route,22,0.94,17,True
+635,40,central_repair_ring,none,v30-614170,v30-558717,outer bell path,18,0.94,14,True
+636,40,riverbend_roofward,none,v30-671543,v30-614759,orchard ridge detour,20,0.94,14,True
+637,40,roofward_archive,none,v30-521580,v30-542614,cool archive lane,17,0.94,16,True
+638,40,archive_signal,none,v30-560577,v30-505460,stone kiosk path,23,0.94,14,True
+639,40,signal_orchard,restore,v30-589997,v30-534544,river lantern loop,19,0.94,14,True
+640,41,orchard_riverbend,reload,v30-630603,v30-573939,market plank route,23,0.94,17,True
+641,41,central_repair_ring,none,v30-614310,v30-558455,outer bell path,18,0.94,14,True
+642,41,riverbend_roofward,none,v30-674246,v30-614635,orchard ridge detour,20,0.94,15,True
+643,41,roofward_archive,none,v30-597626,v30-542352,cool archive lane,17,0.94,16,True
+644,41,archive_signal,none,v30-560045,v30-505198,stone kiosk path,23,0.94,14,True
+645,41,signal_orchard,none,v30-581079,v30-534282,river lantern loop,19,0.94,14,True
+646,41,orchard_riverbend,none,v30-630748,v30-574461,market plank route,23,0.94,17,True
+647,41,central_repair_ring,none,v30-615487,v30-558977,outer bell path,18,0.94,14,True
+648,41,riverbend_roofward,none,v30-673172,v30-615287,orchard ridge detour,21,0.94,15,True
+649,41,roofward_archive,none,v30-598035,v30-474505,glass stair,17,0.94,16,True
+650,41,archive_signal,none,v30-559780,v30-504936,stone kiosk path,23,0.94,14,True
+651,41,signal_orchard,restore,v30-590230,v30-534020,river lantern loop,19,0.94,14,True
+652,41,orchard_riverbend,none,v30-631525,v30-574199,market plank route,23,0.94,17,True
+653,41,central_repair_ring,none,v30-614569,v30-558715,outer bell path,18,0.94,14,True
+654,41,riverbend_roofward,none,v30-674669,v30-615163,orchard ridge detour,21,0.94,16,True
+655,41,roofward_archive,restore,v30-528076,v30-474243,glass stair,17,0.94,16,True
+656,42,signal_orchard,reload,v30-590165,v30-533462,river lantern loop,20,0.94,14,True
+657,42,orchard_riverbend,none,v30-630651,v30-574634,market plank route,23,0.94,17,True
+658,42,central_repair_ring,none,v30-615412,v30-559284,outer bell path,18,0.94,15,True
+659,42,riverbend_roofward,none,v30-674981,v30-615598,orchard ridge detour,21,0.94,16,True
+660,42,roofward_archive,none,v30-528467,v30-473894,glass stair,17,0.94,16,True
+661,42,archive_signal,none,v30-559963,v30-429932,paper lane,23,0.94,14,True
+662,42,signal_orchard,none,v30-589784,v30-533200,river lantern loop,20,0.94,14,True
+663,42,orchard_riverbend,none,v30-632108,v30-574372,market plank route,23,0.94,17,True
+664,42,central_repair_ring,none,v30-615005,v30-559148,outer bell path,19,0.94,15,True
+665,42,riverbend_roofward,none,v30-673629,v30-615336,orchard ridge detour,21,0.94,16,True
+666,42,roofward_archive,none,v30-528875,v30-474543,glass stair,17,0.94,17,True
+667,42,archive_signal,none,v30-483465,v30-430454,paper lane,23,0.94,14,True
+668,42,signal_orchard,none,v30-589528,v30-533722,river lantern loop,20,0.94,14,True
+669,42,orchard_riverbend,none,v30-630910,v30-574894,market plank route,23,0.94,17,True
+670,42,central_repair_ring,none,v30-613175,v30-558886,outer bell path,19,0.94,15,True
+671,42,riverbend_roofward,restore,v30-666227,v30-615074,orchard ridge detour,21,0.94,16,True
+672,43,roofward_archive,reload,v30-528111,v30-474400,glass stair,18,0.94,17,True
+673,43,archive_signal,none,v30-483185,v30-505369,stone kiosk path,23,0.94,14,True
+674,43,signal_orchard,none,v30-591215,v30-533592,river lantern loop,20,0.94,15,True
+675,43,orchard_riverbend,none,v30-632370,v30-574632,market plank route,23,0.94,17,True
+676,43,central_repair_ring,none,v30-616067,v30-558399,outer bell path,20,0.94,15,True
+677,43,riverbend_roofward,none,v30-674710,v30-615596,orchard ridge detour,21,0.94,16,True
+678,43,roofward_archive,none,v30-527540,v30-474922,glass stair,18,0.94,17,True
+679,43,archive_signal,none,v30-560349,v30-505891,stone kiosk path,23,0.94,14,True
+680,43,signal_orchard,none,v30-588752,v30-533454,river lantern loop,21,0.94,15,True
+681,43,orchard_riverbend,none,v30-631705,v30-456803,fen track,23,0.94,17,True
+682,43,central_repair_ring,restore,v30-615549,v30-558397,outer bell path,21,0.94,16,True
+683,43,riverbend_roofward,none,v30-673751,v30-615334,orchard ridge detour,21,0.94,16,True
+684,43,roofward_archive,none,v30-513230,v30-474660,glass stair,18,0.94,17,True
+685,43,archive_signal,none,v30-560221,v30-505629,stone kiosk path,23,0.94,14,True
+686,43,signal_orchard,none,v30-590952,v30-534108,river lantern loop,21,0.94,16,True
+687,43,orchard_riverbend,restore,v30-511182,v30-457325,fen track,23,0.94,17,True
+688,44,central_repair_ring,reload,v30-615030,v30-559045,outer bell path,22,0.94,16,True
+689,44,riverbend_roofward,none,v30-673751,v30-615856,orchard ridge detour,21,0.94,16,True
+690,44,roofward_archive,none,v30-527619,v30-474398,glass stair,18,0.94,17,True
+691,44,archive_signal,none,v30-560338,v30-505367,stone kiosk path,23,0.94,14,True
+692,44,signal_orchard,none,v30-590949,v30-533846,river lantern loop,21,0.94,16,True
+693,44,orchard_riverbend,none,v30-501896,v30-457181,fen track,24,0.94,17,True
+694,44,central_repair_ring,none,v30-615028,v30-558783,outer bell path,22,0.94,16,True
+695,44,riverbend_roofward,none,v30-675106,v30-615594,orchard ridge detour,21,0.94,16,True
+696,44,roofward_archive,none,v30-528147,v30-481774,glass stair,18,0.936,17,True
+697,44,archive_signal,none,v30-560610,v30-505889,stone kiosk path,23,0.94,14,True
+698,44,signal_orchard,none,v30-592139,v30-534500,river lantern loop,21,0.94,17,True
+699,44,orchard_riverbend,none,v30-511217,v30-575406,market plank route,25,0.94,17,True
+700,44,central_repair_ring,none,v30-614895,v30-557746,outer bell path,22,0.94,16,True
+701,44,riverbend_roofward,none,v30-671763,v30-614557,orchard ridge detour,21,0.94,16,True
+702,44,roofward_archive,none,v30-534334,v30-474010,glass stair,18,0.94,18,True
+703,44,archive_signal,restore,v30-559815,v30-504852,stone kiosk path,23,0.94,14,True
+704,45,signal_orchard,reload,v30-590318,v30-533587,river lantern loop,22,0.94,17,True
+705,45,orchard_riverbend,none,v30-623131,v30-574369,market plank route,25,0.94,17,True
+706,45,central_repair_ring,none,v30-614770,v30-558402,outer bell path,22,0.94,17,True
+707,45,riverbend_roofward,none,v30-666633,v30-615079,orchard ridge detour,21,0.94,16,True
+708,45,roofward_archive,none,v30-527011,v30-474532,glass stair,18,0.94,18,True
+709,45,archive_signal,none,v30-560081,v30-505374,stone kiosk path,23,0.94,14,True
+710,45,signal_orchard,none,v30-581395,v30-533449,river lantern loop,23,0.94,17,True
+711,45,orchard_riverbend,none,v30-630117,v30-574107,market plank route,25,0.94,17,True
+712,45,central_repair_ring,none,v30-615830,v30-558266,outer bell path,23,0.94,17,True
+713,45,riverbend_roofward,restore,v30-672419,v30-614817,orchard ridge detour,21,0.94,16,True
+714,45,roofward_archive,none,v30-526632,v30-474397,glass stair,18,0.94,19,True
+715,45,archive_signal,none,v30-560591,v30-505112,stone kiosk path,23,0.94,14,True
+716,45,signal_orchard,none,v30-589671,v30-534095,river lantern loop,24,0.94,17,True
+717,45,orchard_riverbend,none,v30-630910,v30-574629,market plank route,25,0.94,17,True
+718,45,central_repair_ring,none,v30-614914,v30-558922,outer bell path,23,0.94,18,True
+719,45,riverbend_roofward,restore,v30-675247,v30-615339,orchard ridge detour,21,0.94,16,True
+720,46,roofward_archive,reload,v30-519139,v30-474254,glass stair,19,0.94,19,True
+721,46,archive_signal,none,v30-559050,v30-429789,paper lane,24,0.94,14,True
+722,46,signal_orchard,none,v30-589541,v30-533965,river lantern loop,24,0.94,18,True
+723,46,orchard_riverbend,none,v30-631043,v30-574367,market plank route,25,0.94,17,True
+724,46,central_repair_ring,none,v30-614001,v30-558660,outer bell path,23,0.94,18,True
+725,46,riverbend_roofward,none,v30-673900,v30-615077,orchard ridge detour,21,0.94,16,True
+726,46,roofward_archive,none,v30-528745,v30-474776,glass stair,19,0.94,19,True
+727,46,archive_signal,none,v30-483066,v30-430427,paper lane,25,0.94,14,True
+728,46,signal_orchard,none,v30-589556,v30-534611,river lantern loop,25,0.94,18,True
+729,46,orchard_riverbend,none,v30-631826,v30-574889,market plank route,25,0.94,17,True
+730,46,central_repair_ring,none,v30-614648,v30-558398,outer bell path,23,0.94,18,True
+731,46,riverbend_roofward,none,v30-673777,v30-614815,orchard ridge detour,21,0.94,16,True
+732,46,roofward_archive,none,v30-528728,v30-474514,glass stair,19,0.94,19,True
+733,46,archive_signal,none,v30-482565,v30-505476,stone kiosk path,26,0.94,14,True
+734,46,signal_orchard,none,v30-590845,v30-534481,river lantern loop,25,0.94,19,True
+735,46,orchard_riverbend,restore,v30-630905,v30-574627,market plank route,25,0.94,17,True
+736,47,central_repair_ring,reload,v30-615700,v30-559046,outer bell path,24,0.94,18,True
+737,47,riverbend_roofward,none,v30-674307,v30-487882,river ford,21,0.94,16,True
+738,47,roofward_archive,none,v30-528572,v30-473066,glass stair,20,0.94,20,True
+739,47,archive_signal,none,v30-560979,v30-505998,stone kiosk path,26,0.94,14,True
+740,47,signal_orchard,none,v30-590718,v30-534219,river lantern loop,25,0.94,19,True
+741,47,orchard_riverbend,none,v30-622466,v30-574365,market plank route,25,0.94,17,True
+742,47,central_repair_ring,none,v30-613998,v30-558784,outer bell path,24,0.94,18,True
+743,47,riverbend_roofward,none,v30-542455,v30-487620,river ford,21,0.94,16,True
+744,47,roofward_archive,restore,v30-525693,v30-472923,glass stair,21,0.94,20,True
+745,47,archive_signal,none,v30-559068,v30-505736,stone kiosk path,26,0.94,14,True
+746,47,signal_orchard,none,v30-589226,v30-533684,river lantern loop,25,0.94,20,True
+747,47,orchard_riverbend,none,v30-631293,v30-574887,market plank route,25,0.94,17,True
+748,47,central_repair_ring,none,v30-613603,v30-559306,outer bell path,24,0.94,18,True
+749,47,riverbend_roofward,none,v30-542864,v30-615597,orchard ridge detour,21,0.94,16,True
+750,47,roofward_archive,none,v30-526314,v30-472780,glass stair,22,0.94,20,True
+751,47,archive_signal,restore,v30-559191,v30-505474,stone kiosk path,26,0.94,14,True
+752,48,orchard_riverbend,reload,v30-629887,v30-574665,market plank route,26,0.94,17,True
+753,48,central_repair_ring,none,v30-615216,v30-586888,inner repair yard,24,0.94,18,True
+754,48,riverbend_roofward,none,v30-674637,v30-615386,orchard ridge detour,21,0.94,17,True
+755,48,roofward_archive,none,v30-527486,v30-473215,glass stair,22,0.94,20,True
+756,48,archive_signal,none,v30-552879,v30-505909,stone kiosk path,26,0.94,14,True
+757,48,signal_orchard,none,v30-589396,v30-533857,river lantern loop,25,0.94,20,True
+758,48,orchard_riverbend,none,v30-630825,v30-575187,market plank route,26,0.94,17,True
+759,48,central_repair_ring,none,v30-644752,v30-587410,inner repair yard,24,0.94,18,True
+760,48,riverbend_roofward,none,v30-673822,v30-615254,orchard ridge detour,22,0.94,17,True
+761,48,roofward_archive,none,v30-527348,v30-541268,cool archive lane,22,0.94,20,True
+762,48,archive_signal,none,v30-552488,v30-505777,stone kiosk path,26,0.94,15,True
+763,48,signal_orchard,none,v30-580865,v30-533595,river lantern loop,25,0.94,20,True
+764,48,orchard_riverbend,none,v30-630163,v30-574925,market plank route,26,0.94,17,True
+765,48,central_repair_ring,none,v30-644370,v30-559217,outer bell path,24,0.94,18,True
+766,48,riverbend_roofward,none,v30-675049,v30-616044,orchard ridge detour,23,0.94,18,True
+767,48,roofward_archive,restore,v30-597693,v30-541790,cool archive lane,22,0.94,20,True
+768,49,archive_signal,reload,v30-562684,v30-506421,stone kiosk path,27,0.94,15,True
+769,49,signal_orchard,none,v30-589010,v30-534117,river lantern loop,25,0.94,20,True
+770,49,orchard_riverbend,none,v30-632284,v30-574663,market plank route,26,0.94,17,True
+771,49,central_repair_ring,none,v30-615600,v30-558955,outer bell path,24,0.94,18,True
+772,49,riverbend_roofward,none,v30-673291,v30-615782,orchard ridge detour,23,0.94,18,True
+773,49,roofward_archive,none,v30-597948,v30-541528,cool archive lane,22,0.94,20,True
+774,49,archive_signal,none,v30-559878,v30-506159,stone kiosk path,27,0.94,15,True
+775,49,signal_orchard,restore,v30-590434,v30-533855,river lantern loop,25,0.94,20,True
+776,49,orchard_riverbend,none,v30-632534,v30-575312,market plank route,27,0.94,17,True
+777,49,central_repair_ring,none,v30-615746,v30-559477,outer bell path,24,0.94,18,True
+778,49,riverbend_roofward,none,v30-668164,v30-616442,orchard ridge detour,23,0.94,19,True
+779,49,roofward_archive,none,v30-590277,v30-542050,cool archive lane,22,0.94,20,True
+780,49,archive_signal,none,v30-559881,v30-505897,stone kiosk path,27,0.94,15,True
+781,49,signal_orchard,none,v30-587574,v30-418968,dusk road,25,0.94,20,True
+782,49,orchard_riverbend,none,v30-624619,v30-575185,market plank route,27,0.94,18,True
+783,49,central_repair_ring,restore,v30-615475,v30-559215,outer bell path,24,0.94,18,True
+784,50,riverbend_roofward,reload,v30-674367,v30-616310,orchard ridge detour,24,0.94,19,True
+785,50,roofward_archive,none,v30-599382,v30-541788,cool archive lane,22,0.94,20,True
+786,50,archive_signal,none,v30-561561,v30-506549,stone kiosk path,27,0.94,16,True
+787,50,signal_orchard,none,v30-471349,v30-419490,dusk road,25,0.94,20,True
+788,50,orchard_riverbend,none,v30-632936,v30-575707,market plank route,27,0.94,18,True
+789,50,central_repair_ring,none,v30-615467,v30-559737,outer bell path,24,0.94,18,True
+790,50,riverbend_roofward,none,v30-674788,v30-616048,orchard ridge detour,24,0.94,19,True
+791,50,roofward_archive,none,v30-598726,v30-541526,cool archive lane,22,0.94,20,True
+792,50,archive_signal,none,v30-561550,v30-506409,stone kiosk path,28,0.94,16,True
+793,50,signal_orchard,none,v30-471312,v30-533853,river lantern loop,25,0.94,20,True
+794,50,orchard_riverbend,none,v30-633345,v30-575580,market plank route,27,0.94,19,True
+795,50,central_repair_ring,none,v30-615608,v30-559475,outer bell path,24,0.94,18,True
+796,50,riverbend_roofward,none,v30-674769,v30-616570,orchard ridge detour,24,0.94,19,True
+797,50,roofward_archive,none,v30-598349,v30-542048,cool archive lane,22,0.94,20,True
+798,50,archive_signal,none,v30-561084,v30-507061,stone kiosk path,28,0.94,17,True
+799,50,signal_orchard,restore,v30-590302,v30-534375,river lantern loop,25,0.94,20,True
+800,51,orchard_riverbend,reload,v30-630976,v30-574670,market plank route,28,0.94,19,True
+801,51,central_repair_ring,none,v30-616004,v30-586369,inner repair yard,24,0.94,18,True
+802,51,riverbend_roofward,none,v30-672142,v30-614428,orchard ridge detour,24,0.94,20,True
+803,51,roofward_archive,none,v30-598056,v30-541011,cool archive lane,22,0.94,20,True
+804,51,archive_signal,none,v30-559630,v30-506024,stone kiosk path,28,0.94,17,True
+805,51,signal_orchard,none,v30-590555,v30-533338,river lantern loop,25,0.94,20,True
+806,51,orchard_riverbend,restore,v30-631120,v30-575192,market plank route,28,0.94,19,True
+807,51,central_repair_ring,none,v30-643846,v30-586891,inner repair yard,24,0.94,18,True
+808,51,riverbend_roofward,none,v30-673088,v30-615080,orchard ridge detour,25,0.94,20,True
+809,51,roofward_archive,none,v30-597818,v30-541533,cool archive lane,22,0.94,20,True
+810,51,archive_signal,none,v30-551850,v30-505762,stone kiosk path,28,0.94,17,True
+811,51,signal_orchard,none,v30-589132,v30-533076,river lantern loop,25,0.94,20,True
+812,51,orchard_riverbend,none,v30-630445,v30-574930,market plank route,28,0.94,19,True
+813,51,central_repair_ring,none,v30-642905,v30-558698,outer bell path,24,0.94,18,True
+814,51,riverbend_roofward,none,v30-671351,v30-614956,orchard ridge detour,25,0.94,21,True
+815,51,roofward_archive,restore,v30-598343,v30-541271,cool archive lane,22,0.94,20,True
+816,52,archive_signal,reload,v30-561682,v30-506406,stone kiosk path,29,0.94,17,True
+817,52,signal_orchard,none,v30-580879,v30-533598,river lantern loop,25,0.94,20,True
+818,52,orchard_riverbend,none,v30-629454,v30-574371,market plank route,28,0.94,20,True
+819,52,central_repair_ring,none,v30-615874,v30-559220,outer bell path,24,0.94,18,True
+820,52,riverbend_roofward,none,v30-671630,v30-614694,orchard ridge detour,25,0.94,21,True
+821,52,roofward_archive,none,v30-597154,v30-541009,cool archive lane,22,0.94,20,True
+822,52,archive_signal,none,v30-551865,v30-506144,stone kiosk path,29,0.94,17,True
+823,52,signal_orchard,none,v30-588990,v30-533336,river lantern loop,25,0.94,20,True
+824,52,orchard_riverbend,none,v30-631144,v30-574236,market plank route,29,0.94,20,True
+825,52,central_repair_ring,none,v30-616387,v30-586889,inner repair yard,24,0.94,18,True
+826,52,riverbend_roofward,none,v30-673246,v30-615354,orchard ridge detour,25,0.94,22,True
+827,52,roofward_archive,none,v30-597544,v30-541531,cool archive lane,22,0.94,20,True
+828,52,archive_signal,none,v30-559155,v30-506666,stone kiosk path,29,0.94,17,True
+829,52,signal_orchard,none,v30-589397,v30-533858,river lantern loop,25,0.94,20,True
+830,52,orchard_riverbend,none,v30-629045,v30-573974,market plank route,29,0.94,20,True
+831,52,central_repair_ring,restore,v30-644370,v30-586627,inner repair yard,24,0.94,18,True
+832,53,riverbend_roofward,reload,v30-672037,v30-615222,orchard ridge detour,26,0.94,22,True
+833,53,roofward_archive,none,v30-596764,v30-541269,cool archive lane,22,0.94,20,True
+834,53,archive_signal,none,v30-560914,v30-506534,stone kiosk path,29,0.94,18,True
+835,53,signal_orchard,none,v30-589523,v30-533596,river lantern loop,25,0.94,20,True
+836,53,orchard_riverbend,none,v30-631027,v30-574496,market plank route,29,0.94,20,True
+837,53,central_repair_ring,restore,v30-643700,v30-587149,inner repair yard,24,0.94,18,True
+838,53,riverbend_roofward,none,v30-673492,v30-615744,orchard ridge detour,26,0.94,22,True
+839,53,roofward_archive,none,v30-598065,v30-541791,cool archive lane,22,0.94,20,True
+840,53,archive_signal,none,v30-560399,v30-505295,stone kiosk path,30,0.94,18,True
+841,53,signal_orchard,none,v30-590027,v30-533334,river lantern loop,25,0.94,20,True
+842,53,orchard_riverbend,none,v30-630108,v30-574369,market plank route,29,0.94,21,True
+843,53,central_repair_ring,none,v30-643705,v30-586887,inner repair yard,24,0.94,18,True
+844,53,riverbend_roofward,none,v30-666091,v30-615482,orchard ridge detour,26,0.94,22,True
+845,53,roofward_archive,none,v30-599115,v30-541529,cool archive lane,22,0.94,20,True
+846,53,archive_signal,none,v30-561207,v30-505947,stone kiosk path,30,0.94,19,True
+847,53,signal_orchard,restore,v30-588752,v30-533856,river lantern loop,25,0.94,20,True
+848,54,central_repair_ring,reload,v30-636169,v30-587450,inner repair yard,25,0.94,18,True
+849,54,riverbend_roofward,none,v30-672594,v30-615917,orchard ridge detour,26,0.94,22,True
+850,54,roofward_archive,none,v30-597065,v30-541180,cool archive lane,22,0.94,20,True
+851,54,archive_signal,none,v30-561606,v30-505598,stone kiosk path,30,0.94,19,True
+852,54,signal_orchard,none,v30-590207,v30-533507,river lantern loop,25,0.94,20,True
+853,54,orchard_riverbend,none,v30-630563,v30-456966,fen track,29,0.94,21,True
+854,54,central_repair_ring,none,v30-643889,v30-587188,inner repair yard,25,0.94,18,True
+855,54,riverbend_roofward,none,v30-673686,v30-615655,orchard ridge detour,26,0.94,22,True
+856,54,roofward_archive,none,v30-596956,v30-541827,cool archive lane,23,0.94,20,True
+857,54,archive_signal,none,v30-554486,v30-506120,stone kiosk path,30,0.94,19,True
+858,54,signal_orchard,none,v30-589330,v30-534161,river lantern loop,25,0.94,21,True
+859,54,orchard_riverbend,none,v30-508881,v30-457488,fen track,29,0.94,21,True
+860,54,central_repair_ring,none,v30-635381,v30-586926,inner repair yard,25,0.94,18,True
+861,54,riverbend_roofward,none,v30-672614,v30-615393,orchard ridge detour,26,0.94,22,True
+862,54,roofward_archive,none,v30-597607,v30-541698,cool archive lane,23,0.94,21,True
+863,54,archive_signal,restore,v30-560100,v30-505858,stone kiosk path,30,0.94,19,True
+864,55,signal_orchard,reload,v30-589434,v30-534023,river lantern loop,26,0.94,21,True
+865,55,orchard_riverbend,none,v30-509973,v30-574802,market plank route,29,0.94,21,True
+866,55,central_repair_ring,none,v30-644692,v30-587712,inner repair yard,26,0.94,19,True
+867,55,riverbend_roofward,none,v30-674362,v30-615915,orchard ridge detour,26,0.94,22,True
+868,55,roofward_archive,restore,v30-596701,v30-542220,cool archive lane,23,0.94,21,True
+869,55,archive_signal,none,v30-561625,v30-431185,paper lane,30,0.94,19,True
+870,55,signal_orchard,none,v30-588681,v30-533761,river lantern loop,26,0.94,21,True
+871,55,orchard_riverbend,none,v30-630406,v30-574540,market plank route,29,0.94,21,True
+872,55,central_repair_ring,none,v30-645616,v30-587578,inner repair yard,27,0.94,19,True
+873,55,riverbend_roofward,none,v30-674756,v30-615653,orchard ridge detour,26,0.94,22,True
+874,55,roofward_archive,none,v30-598137,v30-542091,cool archive lane,23,0.94,22,True
+875,55,archive_signal,none,v30-484423,v30-430923,paper lane,30,0.94,19,True
+876,55,signal_orchard,none,v30-589209,v30-534283,river lantern loop,26,0.94,21,True
+877,55,orchard_riverbend,none,v30-631209,v30-575062,market plank route,29,0.94,21,True
+878,55,central_repair_ring,none,v30-643003,v30-559214,outer bell path,28,0.94,20,True
+879,55,riverbend_roofward,restore,v30-673928,v30-616175,orchard ridge detour,26,0.94,22,True
+880,56,roofward_archive,reload,v30-597222,v30-541954,cool archive lane,24,0.94,22,True
+881,56,archive_signal,none,v30-482952,v30-505856,stone kiosk path,30,0.94,19,True
+882,56,signal_orchard,none,v30-590752,v30-534153,river lantern loop,26,0.94,22,True
+883,56,orchard_riverbend,none,v30-631999,v30-573783,market plank route,30,0.94,21,True
+884,56,central_repair_ring,none,v30-615709,v30-558952,outer bell path,28,0.94,20,True
+885,56,riverbend_roofward,none,v30-666670,v30-615913,orchard ridge detour,26,0.94,22,True
+886,56,roofward_archive,none,v30-590981,v30-542476,cool archive lane,24,0.94,22,True
+887,56,archive_signal,none,v30-563543,v30-506378,stone kiosk path,30,0.94,19,True
+888,56,signal_orchard,none,v30-591154,v30-534799,river lantern loop,27,0.94,22,True
+889,56,orchard_riverbend,none,v30-630677,v30-574432,market plank route,31,0.94,21,True
+890,56,central_repair_ring,none,v30-615315,v30-558690,outer bell path,28,0.94,20,True
+891,56,riverbend_roofward,none,v30-666271,v30-615651,orchard ridge detour,26,0.94,22,True
+892,56,roofward_archive,none,v30-598928,v30-542214,cool archive lane,24,0.94,22,True
+893,56,archive_signal,none,v30-560609,v30-506116,stone kiosk path,30,0.94,19,True
+894,56,signal_orchard,none,v30-589337,v30-534669,river lantern loop,27,0.94,23,True
+895,56,orchard_riverbend,restore,v30-630559,v30-574297,market plank route,32,0.94,21,True
+896,57,central_repair_ring,reload,v30-615844,v30-559338,outer bell path,29,0.94,20,True
+897,57,riverbend_roofward,none,v30-672984,v30-616173,orchard ridge detour,26,0.94,22,True
+898,57,roofward_archive,none,v30-598030,v30-542869,cool archive lane,24,0.94,23,True
+899,57,archive_signal,restore,v30-547791,v30-506638,stone kiosk path,30,0.94,19,True
+900,57,signal_orchard,none,v30-588937,v30-533756,river lantern loop,28,0.94,23,True
+901,57,orchard_riverbend,none,v30-630414,v30-573260,market plank route,32,0.94,21,True
+902,57,central_repair_ring,none,v30-613759,v30-586228,inner repair yard,29,0.94,20,True
+903,57,riverbend_roofward,none,v30-672753,v30-615136,orchard ridge detour,26,0.94,22,True
+904,57,roofward_archive,none,v30-597640,v30-541957,cool archive lane,25,0.94,23,True
+905,57,archive_signal,none,v30-560080,v30-505601,stone kiosk path,30,0.94,19,True
+906,57,signal_orchard,none,v30-588198,v30-534534,river lantern loop,29,0.94,24,True
+907,57,orchard_riverbend,none,v30-630693,v30-573782,market plank route,32,0.94,21,True
+908,57,central_repair_ring,none,v30-643687,v30-558823,outer bell path,29,0.94,20,True
+909,57,riverbend_roofward,none,v30-672201,v30-615658,orchard ridge detour,26,0.94,22,True
+910,57,roofward_archive,none,v30-596587,v30-541695,cool archive lane,25,0.94,23,True
+911,57,archive_signal,restore,v30-554323,v30-505339,stone kiosk path,30,0.94,19,True
+912,58,signal_orchard,reload,v30-589595,v30-533279,river lantern loop,30,0.94,24,True
+913,58,orchard_riverbend,none,v30-630306,v30-455998,fen track,32,0.94,21,True
+914,58,central_repair_ring,none,v30-607084,v30-558695,outer bell path,29,0.94,21,True
+915,58,riverbend_roofward,none,v30-674906,v30-615396,orchard ridge detour,26,0.94,22,True
+916,58,roofward_archive,none,v30-598667,v30-542217,cool archive lane,25,0.94,23,True
+917,58,archive_signal,none,v30-560844,v30-505983,stone kiosk path,31,0.94,19,True
+918,58,signal_orchard,none,v30-589223,v30-533801,river lantern loop,30,0.94,24,True
+919,58,orchard_riverbend,none,v30-510482,v30-574042,market plank route,32,0.94,21,True
+920,58,central_repair_ring,none,v30-615592,v30-557424,outer bell path,30,0.94,21,True
+921,58,riverbend_roofward,none,v30-672212,v30-615134,orchard ridge detour,26,0.94,22,True
+922,58,roofward_archive,none,v30-596073,v30-542088,cool archive lane,25,0.94,24,True
+923,58,archive_signal,none,v30-560722,v30-505843,stone kiosk path,32,0.94,19,True
+924,58,signal_orchard,none,v30-590496,v30-533539,river lantern loop,30,0.94,24,True
+925,58,orchard_riverbend,none,v30-631209,v30-573780,market plank route,32,0.94,21,True
+926,58,central_repair_ring,none,v30-614422,v30-558080,outer bell path,30,0.94,22,True
+927,58,riverbend_roofward,restore,v30-673687,v30-615656,orchard ridge detour,26,0.94,22,True
+928,59,roofward_archive,reload,v30-599341,v30-542610,cool archive lane,25,0.94,24,True
+929,59,archive_signal,none,v30-559609,v30-431158,paper lane,32,0.94,19,True
+930,59,signal_orchard,restore,v30-589480,v30-533277,river lantern loop,30,0.94,24,True
+931,59,orchard_riverbend,none,v30-630027,v30-573518,market plank route,32,0.94,21,True
+932,59,central_repair_ring,none,v30-614163,v30-557818,outer bell path,30,0.94,22,True
+933,59,riverbend_roofward,none,v30-665878,v30-615394,orchard ridge detour,26,0.94,22,True
+934,59,roofward_archive,none,v30-597758,v30-542473,cool archive lane,26,0.94,24,True
+935,59,archive_signal,none,v30-483452,v30-430896,paper lane,32,0.94,19,True
+936,59,signal_orchard,none,v30-588195,v30-533923,river lantern loop,31,0.94,24,True
+937,59,orchard_riverbend,none,v30-621583,v30-574040,market plank route,32,0.94,21,True
+938,59,central_repair_ring,none,v30-615231,v30-558474,outer bell path,30,0.94,23,True
+939,59,riverbend_roofward,none,v30-674089,v30-615916,orchard ridge detour,26,0.94,22,True
+940,59,roofward_archive,none,v30-598920,v30-542336,cool archive lane,27,0.94,24,True
+941,59,archive_signal,none,v30-475378,v30-505841,stone kiosk path,32,0.94,19,True
+942,59,signal_orchard,none,v30-589245,v30-533793,river lantern loop,31,0.94,25,True
+943,59,orchard_riverbend,restore,v30-631993,v30-573778,market plank route,32,0.94,21,True
+944,60,riverbend_roofward,reload,v30-672919,v30-615697,orchard ridge detour,27,0.94,22,True
+945,60,roofward_archive,none,v30-599505,v30-542771,cool archive lane,27,0.94,24,True
+946,60,archive_signal,none,v30-559299,v30-505235,stone kiosk path,32,0.94,20,True
+947,60,signal_orchard,none,v30-590702,v30-534228,river lantern loop,31,0.94,25,True
+948,60,orchard_riverbend,none,v30-630983,v30-574213,market plank route,32,0.94,21,True
+949,60,central_repair_ring,none,v30-615008,v30-586564,inner repair yard,30,0.94,23,True
+950,60,riverbend_roofward,none,v30-673469,v30-615565,orchard ridge detour,28,0.94,22,True
+951,60,roofward_archive,none,v30-598978,v30-542509,cool archive lane,27,0.94,24,True
+952,60,archive_signal,none,v30-558667,v30-505095,stone kiosk path,33,0.94,20,True
+953,60,signal_orchard,none,v30-589539,v30-419323,dusk road,31,0.94,25,True
+954,60,orchard_riverbend,none,v30-630731,v30-574086,market plank route,32,0.94,22,True
+955,60,central_repair_ring,none,v30-643616,v30-586302,inner repair yard,30,0.94,23,True
+956,60,riverbend_roofward,none,v30-673465,v30-616217,orchard ridge detour,29,0.94,22,True
+957,60,roofward_archive,none,v30-597677,v30-474662,glass stair,27,0.94,24,True
+958,60,archive_signal,none,v30-559960,v30-505747,stone kiosk path,33,0.94,21,True
+959,60,signal_orchard,restore,v30-471270,v30-419845,dusk road,31,0.94,25,True

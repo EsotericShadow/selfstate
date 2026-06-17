@@ -1,0 +1,961 @@
+tick_id,day,tick,route_id,control_surface,keyboard_input,pointer_input,option_count,selected_option,previous_route_choice,updated_route_choice,valid_selection,live_mutation_visible,local_storage_key
+0,1,0,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+1,1,1,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,glass stair,glass stair,glass stair,True,True,ssrm_v30_route_choice_roofward_archive
+2,1,2,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+3,1,3,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+4,1,4,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+5,1,5,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,inner repair yard,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+6,1,6,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+7,1,7,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+8,1,8,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+9,1,9,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,dusk road,dusk road,dusk road,True,True,ssrm_v30_route_choice_signal_orchard
+10,1,10,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+11,1,11,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+12,1,12,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+13,1,13,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,glass stair,glass stair,glass stair,True,True,ssrm_v30_route_choice_roofward_archive
+14,1,14,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+15,1,15,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+16,2,0,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+17,2,1,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+18,2,2,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+19,2,3,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+20,2,4,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+21,2,5,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,dusk road,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+22,2,6,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,fen track,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+23,2,7,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+24,2,8,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+25,2,9,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,glass stair,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+26,2,10,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+27,2,11,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+28,2,12,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,fen track,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+29,2,13,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+30,2,14,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+31,2,15,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+32,3,0,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+33,3,1,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,dusk road,river lantern loop,dusk road,True,True,ssrm_v30_route_choice_signal_orchard
+34,3,2,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+35,3,3,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+36,3,4,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+37,3,5,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,glass stair,cool archive lane,cool archive lane,False,False,ssrm_v30_route_choice_roofward_archive
+38,3,6,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+39,3,7,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+40,3,8,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+41,3,9,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+42,3,10,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+43,3,11,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+44,3,12,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+45,3,13,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,dusk road,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+46,3,14,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+47,3,15,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+48,4,0,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+49,4,1,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+50,4,2,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+51,4,3,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+52,4,4,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+53,4,5,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,outer bell path,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+54,4,6,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+55,4,7,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+56,4,8,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+57,4,9,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+58,4,10,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+59,4,11,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+60,4,12,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+61,4,13,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+62,4,14,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+63,4,15,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+64,5,0,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+65,5,1,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,inner repair yard,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+66,5,2,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+67,5,3,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+68,5,4,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+69,5,5,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+70,5,6,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+71,5,7,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+72,5,8,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+73,5,9,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+74,5,10,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+75,5,11,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+76,5,12,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+77,5,13,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,outer bell path,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+78,5,14,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,river ford,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+79,5,15,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+80,6,0,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+81,6,1,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,market plank route,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+82,6,2,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+83,6,3,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+84,6,4,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+85,6,5,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,paper lane,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+86,6,6,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+87,6,7,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+88,6,8,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+89,6,9,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+90,6,10,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+91,6,11,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+92,6,12,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+93,6,13,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,fen track,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+94,6,14,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,inner repair yard,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+95,6,15,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+96,7,0,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+97,7,1,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+98,7,2,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+99,7,3,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+100,7,4,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+101,7,5,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+102,7,6,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+103,7,7,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+104,7,8,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+105,7,9,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,fen track,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+106,7,10,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+107,7,11,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+108,7,12,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+109,7,13,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+110,7,14,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+111,7,15,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+112,8,0,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+113,8,1,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+114,8,2,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+115,8,3,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+116,8,4,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+117,8,5,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+118,8,6,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+119,8,7,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+120,8,8,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+121,8,9,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,paper lane,stone kiosk path,paper lane,True,True,ssrm_v30_route_choice_archive_signal
+122,8,10,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+123,8,11,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+124,8,12,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+125,8,13,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+126,8,14,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+127,8,15,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+128,9,0,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+129,9,1,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,market plank route,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+130,9,2,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+131,9,3,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+132,9,4,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+133,9,5,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,paper lane,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+134,9,6,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+135,9,7,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+136,9,8,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+137,9,9,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+138,9,10,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+139,9,11,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+140,9,12,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+141,9,13,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,fen track,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+142,9,14,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+143,9,15,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+144,10,0,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+145,10,1,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+146,10,2,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+147,10,3,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+148,10,4,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+149,10,5,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+150,10,6,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+151,10,7,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+152,10,8,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+153,10,9,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,fen track,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+154,10,10,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+155,10,11,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+156,10,12,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+157,10,13,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+158,10,14,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+159,10,15,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+160,11,0,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+161,11,1,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+162,11,2,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+163,11,3,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+164,11,4,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+165,11,5,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,fen track,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+166,11,6,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+167,11,7,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+168,11,8,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+169,11,9,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+170,11,10,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+171,11,11,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+172,11,12,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+173,11,13,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+174,11,14,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+175,11,15,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+176,12,0,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+177,12,1,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,outer bell path,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+178,12,2,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+179,12,3,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+180,12,4,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+181,12,5,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+182,12,6,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+183,12,7,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+184,12,8,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+185,12,9,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,False,False,ssrm_v30_route_choice_roofward_archive
+186,12,10,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+187,12,11,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+188,12,12,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+189,12,13,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,inner repair yard,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+190,12,14,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+191,12,15,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+192,13,0,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+193,13,1,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+194,13,2,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+195,13,3,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+196,13,4,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+197,13,5,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+198,13,6,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+199,13,7,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+200,13,8,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+201,13,9,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,inner repair yard,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+202,13,10,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+203,13,11,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+204,13,12,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+205,13,13,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+206,13,14,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+207,13,15,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+208,14,0,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+209,14,1,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,glass stair,cool archive lane,glass stair,True,True,ssrm_v30_route_choice_roofward_archive
+210,14,2,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+211,14,3,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+212,14,4,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+213,14,5,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+214,14,6,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+215,14,7,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+216,14,8,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+217,14,9,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+218,14,10,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+219,14,11,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+220,14,12,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,river ford,orchard ridge detour,river ford,True,True,ssrm_v30_route_choice_riverbend_roofward
+221,14,13,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,glass stair,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+222,14,14,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+223,14,15,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+224,15,0,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+225,15,1,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,outer bell path,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+226,15,2,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+227,15,3,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+228,15,4,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+229,15,5,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+230,15,6,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+231,15,7,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+232,15,8,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+233,15,9,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+234,15,10,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+235,15,11,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+236,15,12,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+237,15,13,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,inner repair yard,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+238,15,14,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+239,15,15,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+240,16,0,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+241,16,1,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+242,16,2,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+243,16,3,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+244,16,4,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+245,16,5,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+246,16,6,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+247,16,7,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+248,16,8,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+249,16,9,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+250,16,10,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+251,16,11,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+252,16,12,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+253,16,13,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,dusk road,river lantern loop,dusk road,True,True,ssrm_v30_route_choice_signal_orchard
+254,16,14,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+255,16,15,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+256,17,0,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+257,17,1,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+258,17,2,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+259,17,3,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+260,17,4,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+261,17,5,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+262,17,6,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+263,17,7,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+264,17,8,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+265,17,9,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,dusk road,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+266,17,10,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+267,17,11,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+268,17,12,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+269,17,13,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+270,17,14,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+271,17,15,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+272,18,0,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+273,18,1,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,river ford,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+274,18,2,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+275,18,3,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,paper lane,stone kiosk path,paper lane,True,True,ssrm_v30_route_choice_archive_signal
+276,18,4,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+277,18,5,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,fen track,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+278,18,6,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+279,18,7,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+280,18,8,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+281,18,9,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,paper lane,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+282,18,10,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+283,18,11,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+284,18,12,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+285,18,13,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+286,18,14,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,glass stair,cool archive lane,glass stair,True,True,ssrm_v30_route_choice_roofward_archive
+287,18,15,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+288,19,0,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+289,19,1,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+290,19,2,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+291,19,3,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+292,19,4,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,glass stair,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+293,19,5,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+294,19,6,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+295,19,7,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+296,19,8,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+297,19,9,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,river ford,orchard ridge detour,river ford,True,True,ssrm_v30_route_choice_riverbend_roofward
+298,19,10,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+299,19,11,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+300,19,12,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+301,19,13,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+302,19,14,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+303,19,15,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+304,20,0,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+305,20,1,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+306,20,2,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+307,20,3,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+308,20,4,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+309,20,5,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,river ford,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+310,20,6,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+311,20,7,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+312,20,8,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+313,20,9,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+314,20,10,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+315,20,11,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+316,20,12,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+317,20,13,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+318,20,14,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+319,20,15,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,market plank route,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+320,21,0,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+321,21,1,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+322,21,2,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+323,21,3,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+324,21,4,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+325,21,5,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,fen track,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+326,21,6,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+327,21,7,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+328,21,8,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+329,21,9,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+330,21,10,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+331,21,11,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+332,21,12,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+333,21,13,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,False,False,ssrm_v30_route_choice_riverbend_roofward
+334,21,14,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+335,21,15,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+336,22,0,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+337,22,1,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+338,22,2,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+339,22,3,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+340,22,4,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+341,22,5,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,paper lane,stone kiosk path,paper lane,True,True,ssrm_v30_route_choice_archive_signal
+342,22,6,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+343,22,7,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+344,22,8,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+345,22,9,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+346,22,10,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+347,22,11,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+348,22,12,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+349,22,13,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+350,22,14,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+351,22,15,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+352,23,0,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+353,23,1,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,paper lane,paper lane,paper lane,True,True,ssrm_v30_route_choice_archive_signal
+354,23,2,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+355,23,3,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+356,23,4,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+357,23,5,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,river ford,orchard ridge detour,river ford,True,True,ssrm_v30_route_choice_riverbend_roofward
+358,23,6,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+359,23,7,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+360,23,8,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+361,23,9,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+362,23,10,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+363,23,11,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+364,23,12,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+365,23,13,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,paper lane,paper lane,paper lane,True,True,ssrm_v30_route_choice_archive_signal
+366,23,14,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+367,23,15,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+368,24,0,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+369,24,1,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+370,24,2,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+371,24,3,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+372,24,4,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+373,24,5,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+374,24,6,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+375,24,7,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+376,24,8,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+377,24,9,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+378,24,10,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+379,24,11,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+380,24,12,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+381,24,13,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+382,24,14,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+383,24,15,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+384,25,0,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+385,25,1,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,outer bell path,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+386,25,2,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+387,25,3,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+388,25,4,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+389,25,5,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+390,25,6,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+391,25,7,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+392,25,8,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+393,25,9,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+394,25,10,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+395,25,11,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+396,25,12,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+397,25,13,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,inner repair yard,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+398,25,14,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+399,25,15,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+400,26,0,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+401,26,1,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+402,26,2,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+403,26,3,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+404,26,4,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+405,26,5,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+406,26,6,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+407,26,7,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+408,26,8,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+409,26,9,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+410,26,10,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+411,26,11,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+412,26,12,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+413,26,13,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+414,26,14,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+415,26,15,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+416,27,0,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+417,27,1,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+418,27,2,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+419,27,3,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+420,27,4,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+421,27,5,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+422,27,6,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,river ford,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+423,27,7,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+424,27,8,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+425,27,9,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+426,27,10,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+427,27,11,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+428,27,12,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+429,27,13,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,glass stair,cool archive lane,glass stair,True,True,ssrm_v30_route_choice_roofward_archive
+430,27,14,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+431,27,15,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+432,28,0,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+433,28,1,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+434,28,2,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+435,28,3,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+436,28,4,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+437,28,5,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+438,28,6,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+439,28,7,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+440,28,8,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+441,28,9,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,glass stair,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+442,28,10,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+443,28,11,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+444,28,12,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+445,28,13,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+446,28,14,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+447,28,15,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+448,29,0,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+449,29,1,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+450,29,2,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+451,29,3,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+452,29,4,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+453,29,5,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+454,29,6,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+455,29,7,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+456,29,8,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+457,29,9,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+458,29,10,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+459,29,11,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+460,29,12,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+461,29,13,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+462,29,14,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,market plank route,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+463,29,15,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+464,30,0,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+465,30,1,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,paper lane,paper lane,paper lane,True,True,ssrm_v30_route_choice_archive_signal
+466,30,2,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+467,30,3,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,fen track,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+468,30,4,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+469,30,5,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,river ford,orchard ridge detour,river ford,True,True,ssrm_v30_route_choice_riverbend_roofward
+470,30,6,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+471,30,7,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+472,30,8,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+473,30,9,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,market plank route,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+474,30,10,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+475,30,11,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+476,30,12,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+477,30,13,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,paper lane,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+478,30,14,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+479,30,15,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+480,31,0,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+481,31,1,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,river ford,river ford,False,False,ssrm_v30_route_choice_riverbend_roofward
+482,31,2,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+483,31,3,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+484,31,4,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,dusk road,river lantern loop,dusk road,True,True,ssrm_v30_route_choice_signal_orchard
+485,31,5,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,fen track,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+486,31,6,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+487,31,7,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+488,31,8,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+489,31,9,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,paper lane,stone kiosk path,paper lane,True,True,ssrm_v30_route_choice_archive_signal
+490,31,10,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+491,31,11,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+492,31,12,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+493,31,13,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,river ford,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+494,31,14,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+495,31,15,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+496,32,0,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+497,32,1,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+498,32,2,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+499,32,3,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+500,32,4,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+501,32,5,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,paper lane,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+502,32,6,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+503,32,7,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+504,32,8,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+505,32,9,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+506,32,10,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+507,32,11,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+508,32,12,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+509,32,13,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+510,32,14,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+511,32,15,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+512,33,0,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+513,33,1,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+514,33,2,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+515,33,3,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+516,33,4,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+517,33,5,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,river ford,orchard ridge detour,river ford,True,True,ssrm_v30_route_choice_riverbend_roofward
+518,33,6,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,False,False,ssrm_v30_route_choice_roofward_archive
+519,33,7,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+520,33,8,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+521,33,9,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+522,33,10,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+523,33,11,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+524,33,12,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+525,33,13,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+526,33,14,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+527,33,15,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+528,34,0,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+529,34,1,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,river ford,river ford,river ford,True,True,ssrm_v30_route_choice_riverbend_roofward
+530,34,2,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+531,34,3,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+532,34,4,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+533,34,5,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,market plank route,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+534,34,6,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+535,34,7,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+536,34,8,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+537,34,9,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+538,34,10,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+539,34,11,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+540,34,12,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+541,34,13,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,river ford,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+542,34,14,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+543,34,15,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+544,35,0,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+545,35,1,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,fen track,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+546,35,2,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+547,35,3,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+548,35,4,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+549,35,5,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,paper lane,stone kiosk path,paper lane,True,True,ssrm_v30_route_choice_archive_signal
+550,35,6,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+551,35,7,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+552,35,8,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+553,35,9,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+554,35,10,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+555,35,11,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+556,35,12,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+557,35,13,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,fen track,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+558,35,14,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+559,35,15,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+560,36,0,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+561,36,1,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,dusk road,dusk road,dusk road,True,True,ssrm_v30_route_choice_signal_orchard
+562,36,2,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+563,36,3,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+564,36,4,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+565,36,5,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,glass stair,cool archive lane,glass stair,True,True,ssrm_v30_route_choice_roofward_archive
+566,36,6,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+567,36,7,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+568,36,8,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+569,36,9,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+570,36,10,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+571,36,11,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+572,36,12,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+573,36,13,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,dusk road,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+574,36,14,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+575,36,15,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+576,37,0,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+577,37,1,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,glass stair,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+578,37,2,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+579,37,3,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+580,37,4,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+581,37,5,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+582,37,6,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+583,37,7,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+584,37,8,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+585,37,9,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+586,37,10,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+587,37,11,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+588,37,12,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+589,37,13,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+590,37,14,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+591,37,15,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+592,38,0,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+593,38,1,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+594,38,2,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+595,38,3,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+596,38,4,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+597,38,5,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+598,38,6,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+599,38,7,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+600,38,8,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+601,38,9,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+602,38,10,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+603,38,11,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+604,38,12,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+605,38,13,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,outer bell path,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+606,38,14,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+607,38,15,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+608,39,0,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+609,39,1,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+610,39,2,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+611,39,3,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+612,39,4,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+613,39,5,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+614,39,6,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,paper lane,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+615,39,7,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+616,39,8,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+617,39,9,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,inner repair yard,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+618,39,10,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+619,39,11,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+620,39,12,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+621,39,13,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+622,39,14,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+623,39,15,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+624,40,0,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+625,40,1,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,glass stair,cool archive lane,glass stair,True,True,ssrm_v30_route_choice_roofward_archive
+626,40,2,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+627,40,3,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+628,40,4,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+629,40,5,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,False,False,ssrm_v30_route_choice_central_repair_ring
+630,40,6,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+631,40,7,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+632,40,8,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+633,40,9,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+634,40,10,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+635,40,11,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+636,40,12,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+637,40,13,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,glass stair,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+638,40,14,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+639,40,15,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+640,41,0,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+641,41,1,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+642,41,2,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+643,41,3,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+644,41,4,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+645,41,5,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+646,41,6,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+647,41,7,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+648,41,8,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+649,41,9,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,glass stair,cool archive lane,glass stair,True,True,ssrm_v30_route_choice_roofward_archive
+650,41,10,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+651,41,11,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+652,41,12,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+653,41,13,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+654,41,14,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+655,41,15,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+656,42,0,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+657,42,1,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+658,42,2,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+659,42,3,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+660,42,4,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+661,42,5,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,paper lane,stone kiosk path,paper lane,True,True,ssrm_v30_route_choice_archive_signal
+662,42,6,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+663,42,7,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+664,42,8,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+665,42,9,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+666,42,10,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+667,42,11,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+668,42,12,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+669,42,13,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+670,42,14,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+671,42,15,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+672,43,0,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+673,43,1,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,paper lane,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+674,43,2,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+675,43,3,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+676,43,4,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+677,43,5,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+678,43,6,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+679,43,7,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+680,43,8,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+681,43,9,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,market plank route,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+682,43,10,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+683,43,11,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+684,43,12,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+685,43,13,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+686,43,14,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+687,43,15,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+688,44,0,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+689,44,1,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+690,44,2,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+691,44,3,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+692,44,4,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+693,44,5,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,fen track,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+694,44,6,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+695,44,7,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+696,44,8,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+697,44,9,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+698,44,10,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+699,44,11,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,fen track,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+700,44,12,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+701,44,13,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+702,44,14,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+703,44,15,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+704,45,0,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+705,45,1,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+706,45,2,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+707,45,3,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+708,45,4,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+709,45,5,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+710,45,6,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+711,45,7,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+712,45,8,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+713,45,9,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+714,45,10,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+715,45,11,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+716,45,12,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+717,45,13,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+718,45,14,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+719,45,15,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+720,46,0,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+721,46,1,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,paper lane,stone kiosk path,paper lane,True,True,ssrm_v30_route_choice_archive_signal
+722,46,2,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+723,46,3,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+724,46,4,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+725,46,5,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+726,46,6,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+727,46,7,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+728,46,8,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+729,46,9,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+730,46,10,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+731,46,11,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+732,46,12,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+733,46,13,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,paper lane,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+734,46,14,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+735,46,15,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+736,47,0,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+737,47,1,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,river ford,orchard ridge detour,river ford,True,True,ssrm_v30_route_choice_riverbend_roofward
+738,47,2,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+739,47,3,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+740,47,4,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+741,47,5,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+742,47,6,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+743,47,7,riverbend_roofward,route radio buttons + map path highlight,none,none,2,river ford,river ford,river ford,True,False,ssrm_v30_route_choice_riverbend_roofward
+744,47,8,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+745,47,9,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+746,47,10,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+747,47,11,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+748,47,12,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+749,47,13,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,river ford,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+750,47,14,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+751,47,15,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+752,48,0,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+753,48,1,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,outer bell path,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+754,48,2,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+755,48,3,roofward_archive,route radio buttons + map path highlight,none,none,2,glass stair,glass stair,glass stair,True,False,ssrm_v30_route_choice_roofward_archive
+756,48,4,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+757,48,5,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+758,48,6,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+759,48,7,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+760,48,8,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+761,48,9,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,glass stair,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+762,48,10,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+763,48,11,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+764,48,12,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+765,48,13,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,inner repair yard,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+766,48,14,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+767,48,15,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+768,49,0,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+769,49,1,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+770,49,2,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+771,49,3,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+772,49,4,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+773,49,5,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+774,49,6,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+775,49,7,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+776,49,8,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+777,49,9,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,outer bell path,outer bell path,False,False,ssrm_v30_route_choice_central_repair_ring
+778,49,10,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+779,49,11,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+780,49,12,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+781,49,13,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,dusk road,river lantern loop,dusk road,True,True,ssrm_v30_route_choice_signal_orchard
+782,49,14,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+783,49,15,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+784,50,0,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+785,50,1,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+786,50,2,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+787,50,3,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard
+788,50,4,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+789,50,5,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+790,50,6,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+791,50,7,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+792,50,8,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+793,50,9,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,dusk road,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+794,50,10,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+795,50,11,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+796,50,12,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+797,50,13,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+798,50,14,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+799,50,15,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+800,51,0,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+801,51,1,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,outer bell path,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+802,51,2,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+803,51,3,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+804,51,4,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+805,51,5,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+806,51,6,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+807,51,7,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+808,51,8,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+809,51,9,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+810,51,10,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+811,51,11,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+812,51,12,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+813,51,13,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,inner repair yard,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+814,51,14,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+815,51,15,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+816,52,0,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+817,52,1,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+818,52,2,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+819,52,3,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+820,52,4,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+821,52,5,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+822,52,6,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+823,52,7,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+824,52,8,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+825,52,9,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,outer bell path,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+826,52,10,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+827,52,11,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+828,52,12,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+829,52,13,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+830,52,14,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+831,52,15,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+832,53,0,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+833,53,1,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+834,53,2,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+835,53,3,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+836,53,4,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+837,53,5,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,inner repair yard,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+838,53,6,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+839,53,7,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+840,53,8,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+841,53,9,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,river lantern loop,river lantern loop,river lantern loop,True,True,ssrm_v30_route_choice_signal_orchard
+842,53,10,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+843,53,11,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+844,53,12,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+845,53,13,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+846,53,14,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+847,53,15,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+848,54,0,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+849,54,1,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+850,54,2,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+851,54,3,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+852,54,4,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+853,54,5,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,market plank route,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+854,54,6,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+855,54,7,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+856,54,8,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+857,54,9,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+858,54,10,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+859,54,11,orchard_riverbend,route radio buttons + map path highlight,none,none,2,fen track,fen track,fen track,True,False,ssrm_v30_route_choice_orchard_riverbend
+860,54,12,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+861,54,13,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+862,54,14,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+863,54,15,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+864,55,0,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+865,55,1,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,fen track,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+866,55,2,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+867,55,3,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+868,55,4,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+869,55,5,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,paper lane,stone kiosk path,paper lane,True,True,ssrm_v30_route_choice_archive_signal
+870,55,6,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+871,55,7,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+872,55,8,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+873,55,9,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+874,55,10,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+875,55,11,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+876,55,12,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+877,55,13,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+878,55,14,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,inner repair yard,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+879,55,15,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+880,56,0,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+881,56,1,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,paper lane,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+882,56,2,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+883,56,3,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+884,56,4,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+885,56,5,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+886,56,6,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+887,56,7,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+888,56,8,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+889,56,9,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+890,56,10,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+891,56,11,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+892,56,12,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+893,56,13,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+894,56,14,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+895,56,15,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+896,57,0,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+897,57,1,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+898,57,2,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+899,57,3,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+900,57,4,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+901,57,5,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+902,57,6,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,outer bell path,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+903,57,7,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+904,57,8,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+905,57,9,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+906,57,10,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+907,57,11,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+908,57,12,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,inner repair yard,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+909,57,13,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+910,57,14,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+911,57,15,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+912,58,0,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+913,58,1,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,fen track,market plank route,fen track,True,True,ssrm_v30_route_choice_orchard_riverbend
+914,58,2,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,outer bell path,outer bell path,outer bell path,True,True,ssrm_v30_route_choice_central_repair_ring
+915,58,3,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+916,58,4,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+917,58,5,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,stone kiosk path,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+918,58,6,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+919,58,7,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,fen track,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+920,58,8,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+921,58,9,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+922,58,10,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+923,58,11,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+924,58,12,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+925,58,13,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,False,False,ssrm_v30_route_choice_orchard_riverbend
+926,58,14,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+927,58,15,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+928,59,0,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+929,59,1,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,paper lane,stone kiosk path,paper lane,True,True,ssrm_v30_route_choice_archive_signal
+930,59,2,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+931,59,3,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+932,59,4,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+933,59,5,riverbend_roofward,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,True,ssrm_v30_route_choice_riverbend_roofward
+934,59,6,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+935,59,7,archive_signal,route radio buttons + map path highlight,none,none,2,paper lane,paper lane,paper lane,True,False,ssrm_v30_route_choice_archive_signal
+936,59,8,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+937,59,9,orchard_riverbend,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,market plank route,market plank route,market plank route,True,True,ssrm_v30_route_choice_orchard_riverbend
+938,59,10,central_repair_ring,route radio buttons + map path highlight,none,none,2,outer bell path,outer bell path,outer bell path,True,False,ssrm_v30_route_choice_central_repair_ring
+939,59,11,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+940,59,12,roofward_archive,route radio buttons + map path highlight,none,none,2,cool archive lane,cool archive lane,cool archive lane,True,False,ssrm_v30_route_choice_roofward_archive
+941,59,13,archive_signal,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,stone kiosk path,paper lane,stone kiosk path,True,True,ssrm_v30_route_choice_archive_signal
+942,59,14,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+943,59,15,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+944,60,0,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+945,60,1,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+946,60,2,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+947,60,3,signal_orchard,route radio buttons + map path highlight,none,none,2,river lantern loop,river lantern loop,river lantern loop,True,False,ssrm_v30_route_choice_signal_orchard
+948,60,4,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+949,60,5,central_repair_ring,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,inner repair yard,outer bell path,inner repair yard,True,True,ssrm_v30_route_choice_central_repair_ring
+950,60,6,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+951,60,7,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap detour,2,cool archive lane,cool archive lane,cool archive lane,True,True,ssrm_v30_route_choice_roofward_archive
+952,60,8,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+953,60,9,signal_orchard,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,dusk road,river lantern loop,dusk road,True,True,ssrm_v30_route_choice_signal_orchard
+954,60,10,orchard_riverbend,route radio buttons + map path highlight,none,none,2,market plank route,market plank route,market plank route,True,False,ssrm_v30_route_choice_orchard_riverbend
+955,60,11,central_repair_ring,route radio buttons + map path highlight,none,none,2,inner repair yard,inner repair yard,inner repair yard,True,False,ssrm_v30_route_choice_central_repair_ring
+956,60,12,riverbend_roofward,route radio buttons + map path highlight,none,none,2,orchard ridge detour,orchard ridge detour,orchard ridge detour,True,False,ssrm_v30_route_choice_riverbend_roofward
+957,60,13,roofward_archive,route radio buttons + map path highlight,ArrowRight+Enter,tap direct,2,glass stair,cool archive lane,glass stair,True,True,ssrm_v30_route_choice_roofward_archive
+958,60,14,archive_signal,route radio buttons + map path highlight,none,none,2,stone kiosk path,stone kiosk path,stone kiosk path,True,False,ssrm_v30_route_choice_archive_signal
+959,60,15,signal_orchard,route radio buttons + map path highlight,none,none,2,dusk road,dusk road,dusk road,True,False,ssrm_v30_route_choice_signal_orchard

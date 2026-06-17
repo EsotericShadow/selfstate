@@ -1,0 +1,154 @@
+{
+  "avatar_task_count": {
+    "archive_signal": 21,
+    "central_repair_ring": 23,
+    "orchard_riverbend": 22,
+    "riverbend_roofward": 22,
+    "roofward_archive": 24,
+    "signal_orchard": 25
+  },
+  "boundary": "deterministic browser-local live route-selection/caravan-task/forecast-edit/drill/reload scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, complete 3D engine, or metaphysical frequency claim",
+  "caravan_fatigue": {
+    "archive_signal": 0.124,
+    "central_repair_ring": 0.126,
+    "orchard_riverbend": 0.114,
+    "riverbend_roofward": 0.1,
+    "roofward_archive": 0.1,
+    "signal_orchard": 0.1
+  },
+  "days": 60,
+  "drill_score": {
+    "archive_signal": 0.848,
+    "central_repair_ring": 0.924,
+    "orchard_riverbend": 0.95,
+    "riverbend_roofward": 0.95,
+    "roofward_archive": 0.908,
+    "signal_orchard": 0.774
+  },
+  "forecast": {
+    "archive_signal": 0.410981,
+    "central_repair_ring": 0.441844,
+    "orchard_riverbend": 0.491227,
+    "riverbend_roofward": 0.485477,
+    "roofward_archive": 0.561242,
+    "signal_orchard": 0.420159
+  },
+  "forecast_revision": {
+    "archive_signal": 33,
+    "central_repair_ring": 30,
+    "orchard_riverbend": 32,
+    "riverbend_roofward": 29,
+    "roofward_archive": 27,
+    "signal_orchard": 31
+  },
+  "guild_generation": {
+    "Bridgewright Guild": 4,
+    "Glassgarden Guild": 2,
+    "Index Guild": 2,
+    "Repair Circle": 2,
+    "Seed Guild": 2,
+    "Signal Guild": 2
+  },
+  "guild_quality": {
+    "Bridgewright Guild": 0.796,
+    "Glassgarden Guild": 0.84,
+    "Index Guild": 0.806,
+    "Repair Circle": 0.932,
+    "Seed Guild": 0.864,
+    "Signal Guild": 0.868
+  },
+  "recovery": {
+    "archive_signal": 0.94,
+    "central_repair_ring": 0.94,
+    "orchard_riverbend": 0.94,
+    "riverbend_roofward": 0.94,
+    "roofward_archive": 0.94,
+    "signal_orchard": 0.94
+  },
+  "route_choice": {
+    "archive_signal": "stone kiosk path",
+    "central_repair_ring": "inner repair yard",
+    "orchard_riverbend": "market plank route",
+    "riverbend_roofward": "orchard ridge detour",
+    "roofward_archive": "glass stair",
+    "signal_orchard": "dusk road"
+  },
+  "routes": [
+    {
+      "destination": "roofward",
+      "detour_label": "orchard ridge detour",
+      "direct_label": "river ford",
+      "forecast_hazard": "river flood",
+      "guild": "Bridgewright Guild",
+      "inspector": "Ari",
+      "route_id": "riverbend_roofward",
+      "source": "riverbend",
+      "task_a": "mark bridge boards",
+      "task_b": "carry flood rope"
+    },
+    {
+      "destination": "archive_quarter",
+      "detour_label": "cool archive lane",
+      "direct_label": "glass stair",
+      "forecast_hazard": "heat surge",
+      "guild": "Glassgarden Guild",
+      "inspector": "Fay",
+      "route_id": "roofward_archive",
+      "source": "roofward",
+      "task_a": "shade herb cart",
+      "task_b": "steady glass crate"
+    },
+    {
+      "destination": "signal_ridge",
+      "detour_label": "stone kiosk path",
+      "direct_label": "paper lane",
+      "forecast_hazard": "wind scatter",
+      "guild": "Index Guild",
+      "inspector": "Nia",
+      "route_id": "archive_signal",
+      "source": "archive_quarter",
+      "task_a": "pin route notice",
+      "task_b": "weigh paper packs"
+    },
+    {
+      "destination": "orchard_fen",
+      "detour_label": "river lantern loop",
+      "direct_label": "dusk road",
+      "forecast_hazard": "dusk ice",
+      "guild": "Signal Guild",
+      "inspector": "Milo",
+      "route_id": "signal_orchard",
+      "source": "signal_ridge",
+      "task_a": "dim signal relay",
+      "task_b": "carry oil lamp"
+    },
+    {
+      "destination": "riverbend",
+      "detour_label": "market plank route",
+      "direct_label": "fen track",
+      "forecast_hazard": "fen mud",
+      "guild": "Seed Guild",
+      "inspector": "Ivo",
+      "route_id": "orchard_riverbend",
+      "source": "orchard_fen",
+      "task_a": "lay stepping mats",
+      "task_b": "sort seed sacks"
+    },
+    {
+      "destination": "repair_hall",
+      "detour_label": "outer bell path",
+      "direct_label": "inner repair yard",
+      "forecast_hazard": "crowded repair yard",
+      "guild": "Repair Circle",
+      "inspector": "Juno",
+      "route_id": "central_repair_ring",
+      "source": "central_exchange",
+      "task_a": "queue repair token",
+      "task_b": "carry wire spool"
+    }
+  ],
+  "seed": 20260883,
+  "source_v29_next_gate": "browser world v30 with live browser route selection controls, avatar-chosen caravan tasks, forecast editing, drill minigames, guild-record inspection, and persistent regional recovery consequences after reload",
+  "source_v29_verdict": "pass",
+  "ticks_per_day": 16
+}

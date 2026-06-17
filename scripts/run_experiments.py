@@ -2130,6 +2130,12 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_browser_world_v30_live_route_selection_caravan_task_forecast_drill_reload_bridge.py",
+        "--seed",
+        "20260883",
+    ],
+    [
+        sys.executable,
         "experiments/ssrm_3d_learned_multiday_maturation_controller.py",
         "--train-seeds",
         "20260911,20260912,20260913,20260914,20260915,20260916",

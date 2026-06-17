@@ -1,0 +1,961 @@
+tick_id,day,agent,route_id,public_memory_key,remembered_route_choice,remembered_forecast_revision,remembered_avatar_task,remembered_drill,remembered_reload_recovery,private_workspace_sealed,replay_pointer
+0,1,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day1,river ford,rev:1 risk:0.34,tasks:0,score:0.28,recovery:0.66,True,replay:0:riverbend_roofward
+1,1,Fay,roofward_archive,v30:Fay:roofward_archive:day1,glass stair,rev:1 risk:0.37,tasks:0,score:0.28,recovery:0.64,True,replay:1:roofward_archive
+2,1,Nia,archive_signal,v30:Nia:archive_signal:day1,paper lane,rev:1 risk:0.41,tasks:0,score:0.28,recovery:0.61,True,replay:2:archive_signal
+3,1,Milo,signal_orchard,v30:Milo:signal_orchard:day1,dusk road,rev:1 risk:0.42,tasks:0,score:0.28,recovery:0.59,True,replay:3:signal_orchard
+4,1,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day1,fen track,rev:1 risk:0.43,tasks:0,score:0.28,recovery:0.57,True,replay:4:orchard_riverbend
+5,1,Juno,central_repair_ring,v30:Juno:central_repair_ring:day1,outer bell path,rev:1 risk:0.47,tasks:0,score:0.28,recovery:0.55,True,replay:5:central_repair_ring
+6,1,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day1,river ford,rev:1 risk:0.34,tasks:0,score:0.28,recovery:0.66,True,replay:6:riverbend_roofward
+7,1,Fay,roofward_archive,v30:Fay:roofward_archive:day1,glass stair,rev:1 risk:0.39,tasks:0,score:0.28,recovery:0.64,True,replay:7:roofward_archive
+8,1,Nia,archive_signal,v30:Nia:archive_signal:day1,paper lane,rev:2 risk:0.46,tasks:0,score:0.28,recovery:0.63,True,replay:8:archive_signal
+9,1,Milo,signal_orchard,v30:Milo:signal_orchard:day1,dusk road,rev:1 risk:0.44,tasks:0,score:0.28,recovery:0.59,True,replay:9:signal_orchard
+10,1,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day1,fen track,rev:1 risk:0.42,tasks:0,score:0.28,recovery:0.57,True,replay:10:orchard_riverbend
+11,1,Juno,central_repair_ring,v30:Juno:central_repair_ring:day1,outer bell path,rev:1 risk:0.46,tasks:0,score:0.28,recovery:0.56,True,replay:11:central_repair_ring
+12,1,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day1,river ford,rev:1 risk:0.38,tasks:0,score:0.28,recovery:0.67,True,replay:12:riverbend_roofward
+13,1,Fay,roofward_archive,v30:Fay:roofward_archive:day1,glass stair,rev:1 risk:0.39,tasks:0,score:0.28,recovery:0.64,True,replay:13:roofward_archive
+14,1,Nia,archive_signal,v30:Nia:archive_signal:day1,paper lane,rev:2 risk:0.46,tasks:0,score:0.28,recovery:0.63,True,replay:14:archive_signal
+15,1,Milo,signal_orchard,v30:Milo:signal_orchard:day1,dusk road,rev:1 risk:0.45,tasks:0,score:0.28,recovery:0.60,True,replay:15:signal_orchard
+16,2,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day2,fen track,rev:2 risk:0.51,tasks:0,score:0.28,recovery:0.59,True,replay:16:orchard_riverbend
+17,2,Juno,central_repair_ring,v30:Juno:central_repair_ring:day2,outer bell path,rev:1 risk:0.45,tasks:0,score:0.28,recovery:0.58,True,replay:17:central_repair_ring
+18,2,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day2,river ford,rev:1 risk:0.40,tasks:0,score:0.28,recovery:0.67,True,replay:18:riverbend_roofward
+19,2,Fay,roofward_archive,v30:Fay:roofward_archive:day2,glass stair,rev:1 risk:0.43,tasks:0,score:0.28,recovery:0.64,True,replay:19:roofward_archive
+20,2,Nia,archive_signal,v30:Nia:archive_signal:day2,paper lane,rev:2 risk:0.44,tasks:0,score:0.28,recovery:0.63,True,replay:20:archive_signal
+21,2,Milo,signal_orchard,v30:Milo:signal_orchard:day2,river lantern loop,rev:1 risk:0.45,tasks:0,score:0.28,recovery:0.61,True,replay:21:signal_orchard
+22,2,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day2,fen track,rev:2 risk:0.51,tasks:0,score:0.28,recovery:0.59,True,replay:22:orchard_riverbend
+23,2,Juno,central_repair_ring,v30:Juno:central_repair_ring:day2,outer bell path,rev:1 risk:0.44,tasks:0,score:0.28,recovery:0.59,True,replay:23:central_repair_ring
+24,2,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day2,river ford,rev:2 risk:0.46,tasks:0,score:0.28,recovery:0.68,True,replay:24:riverbend_roofward
+25,2,Fay,roofward_archive,v30:Fay:roofward_archive:day2,cool archive lane,rev:1 risk:0.44,tasks:0,score:0.28,recovery:0.66,True,replay:25:roofward_archive
+26,2,Nia,archive_signal,v30:Nia:archive_signal:day2,paper lane,rev:2 risk:0.42,tasks:0,score:0.28,recovery:0.63,True,replay:26:archive_signal
+27,2,Milo,signal_orchard,v30:Milo:signal_orchard:day2,river lantern loop,rev:1 risk:0.44,tasks:0,score:0.28,recovery:0.61,True,replay:27:signal_orchard
+28,2,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day2,market plank route,rev:2 risk:0.52,tasks:0,score:0.28,recovery:0.60,True,replay:28:orchard_riverbend
+29,2,Juno,central_repair_ring,v30:Juno:central_repair_ring:day2,outer bell path,rev:1 risk:0.46,tasks:0,score:0.28,recovery:0.60,True,replay:29:central_repair_ring
+30,2,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day2,river ford,rev:2 risk:0.45,tasks:0,score:0.28,recovery:0.68,True,replay:30:riverbend_roofward
+31,2,Fay,roofward_archive,v30:Fay:roofward_archive:day2,cool archive lane,rev:1 risk:0.45,tasks:0,score:0.28,recovery:0.67,True,replay:31:roofward_archive
+32,3,Nia,archive_signal,v30:Nia:archive_signal:day3,paper lane,rev:3 risk:0.48,tasks:0,score:0.28,recovery:0.65,True,replay:32:archive_signal
+33,3,Milo,signal_orchard,v30:Milo:signal_orchard:day3,dusk road,rev:1 risk:0.42,tasks:0,score:0.28,recovery:0.62,True,replay:33:signal_orchard
+34,3,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day3,market plank route,rev:2 risk:0.50,tasks:0,score:0.28,recovery:0.61,True,replay:34:orchard_riverbend
+35,3,Juno,central_repair_ring,v30:Juno:central_repair_ring:day3,outer bell path,rev:1 risk:0.48,tasks:0,score:0.28,recovery:0.61,True,replay:35:central_repair_ring
+36,3,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day3,river ford,rev:2 risk:0.43,tasks:0,score:0.28,recovery:0.68,True,replay:36:riverbend_roofward
+37,3,Fay,roofward_archive,v30:Fay:roofward_archive:day3,cool archive lane,rev:1 risk:0.44,tasks:0,score:0.28,recovery:0.68,True,replay:37:roofward_archive
+38,3,Nia,archive_signal,v30:Nia:archive_signal:day3,paper lane,rev:3 risk:0.48,tasks:0,score:0.28,recovery:0.65,True,replay:38:archive_signal
+39,3,Milo,signal_orchard,v30:Milo:signal_orchard:day3,dusk road,rev:1 risk:0.46,tasks:0,score:0.28,recovery:0.62,True,replay:39:signal_orchard
+40,3,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day3,market plank route,rev:3 risk:0.46,tasks:0,score:0.28,recovery:0.63,True,replay:40:orchard_riverbend
+41,3,Juno,central_repair_ring,v30:Juno:central_repair_ring:day3,outer bell path,rev:1 risk:0.47,tasks:0,score:0.28,recovery:0.62,True,replay:41:central_repair_ring
+42,3,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day3,river ford,rev:2 risk:0.45,tasks:0,score:0.28,recovery:0.69,True,replay:42:riverbend_roofward
+43,3,Fay,roofward_archive,v30:Fay:roofward_archive:day3,cool archive lane,rev:1 risk:0.43,tasks:0,score:0.28,recovery:0.68,True,replay:43:roofward_archive
+44,3,Nia,archive_signal,v30:Nia:archive_signal:day3,paper lane,rev:3 risk:0.49,tasks:0,score:0.28,recovery:0.65,True,replay:44:archive_signal
+45,3,Milo,signal_orchard,v30:Milo:signal_orchard:day3,river lantern loop,rev:1 risk:0.47,tasks:0,score:0.28,recovery:0.63,True,replay:45:signal_orchard
+46,3,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day3,market plank route,rev:3 risk:0.43,tasks:0,score:0.28,recovery:0.64,True,replay:46:orchard_riverbend
+47,3,Juno,central_repair_ring,v30:Juno:central_repair_ring:day3,outer bell path,rev:1 risk:0.46,tasks:0,score:0.28,recovery:0.64,True,replay:47:central_repair_ring
+48,4,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day4,river ford,rev:3 risk:0.51,tasks:0,score:0.28,recovery:0.70,True,replay:48:riverbend_roofward
+49,4,Fay,roofward_archive,v30:Fay:roofward_archive:day4,cool archive lane,rev:1 risk:0.45,tasks:0,score:0.28,recovery:0.69,True,replay:49:roofward_archive
+50,4,Nia,archive_signal,v30:Nia:archive_signal:day4,paper lane,rev:3 risk:0.47,tasks:0,score:0.28,recovery:0.66,True,replay:50:archive_signal
+51,4,Milo,signal_orchard,v30:Milo:signal_orchard:day4,river lantern loop,rev:1 risk:0.48,tasks:0,score:0.28,recovery:0.64,True,replay:51:signal_orchard
+52,4,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day4,market plank route,rev:3 risk:0.45,tasks:0,score:0.28,recovery:0.65,True,replay:52:orchard_riverbend
+53,4,Juno,central_repair_ring,v30:Juno:central_repair_ring:day4,inner repair yard,rev:1 risk:0.44,tasks:0,score:0.28,recovery:0.64,True,replay:53:central_repair_ring
+54,4,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day4,river ford,rev:3 risk:0.50,tasks:0,score:0.28,recovery:0.71,True,replay:54:riverbend_roofward
+55,4,Fay,roofward_archive,v30:Fay:roofward_archive:day4,cool archive lane,rev:1 risk:0.47,tasks:0,score:0.28,recovery:0.70,True,replay:55:roofward_archive
+56,4,Nia,archive_signal,v30:Nia:archive_signal:day4,paper lane,rev:4 risk:0.40,tasks:0,score:0.28,recovery:0.67,True,replay:56:archive_signal
+57,4,Milo,signal_orchard,v30:Milo:signal_orchard:day4,river lantern loop,rev:1 risk:0.47,tasks:0,score:0.28,recovery:0.65,True,replay:57:signal_orchard
+58,4,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day4,market plank route,rev:3 risk:0.45,tasks:1,score:0.28,recovery:0.70,True,replay:58:orchard_riverbend
+59,4,Juno,central_repair_ring,v30:Juno:central_repair_ring:day4,inner repair yard,rev:1 risk:0.46,tasks:0,score:0.28,recovery:0.65,True,replay:59:central_repair_ring
+60,4,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day4,river ford,rev:3 risk:0.50,tasks:0,score:0.28,recovery:0.71,True,replay:60:riverbend_roofward
+61,4,Fay,roofward_archive,v30:Fay:roofward_archive:day4,cool archive lane,rev:1 risk:0.48,tasks:0,score:0.28,recovery:0.71,True,replay:61:roofward_archive
+62,4,Nia,archive_signal,v30:Nia:archive_signal:day4,paper lane,rev:4 risk:0.43,tasks:1,score:0.28,recovery:0.70,True,replay:62:archive_signal
+63,4,Milo,signal_orchard,v30:Milo:signal_orchard:day4,river lantern loop,rev:1 risk:0.45,tasks:0,score:0.28,recovery:0.67,True,replay:63:signal_orchard
+64,5,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day5,market plank route,rev:4 risk:0.42,tasks:1,score:0.28,recovery:0.71,True,replay:64:orchard_riverbend
+65,5,Juno,central_repair_ring,v30:Juno:central_repair_ring:day5,outer bell path,rev:1 risk:0.46,tasks:0,score:0.28,recovery:0.66,True,replay:65:central_repair_ring
+66,5,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day5,river ford,rev:3 risk:0.47,tasks:1,score:0.28,recovery:0.74,True,replay:66:riverbend_roofward
+67,5,Fay,roofward_archive,v30:Fay:roofward_archive:day5,cool archive lane,rev:1 risk:0.48,tasks:0,score:0.31,recovery:0.74,True,replay:67:roofward_archive
+68,5,Nia,archive_signal,v30:Nia:archive_signal:day5,paper lane,rev:4 risk:0.43,tasks:1,score:0.28,recovery:0.71,True,replay:68:archive_signal
+69,5,Milo,signal_orchard,v30:Milo:signal_orchard:day5,river lantern loop,rev:1 risk:0.47,tasks:0,score:0.28,recovery:0.68,True,replay:69:signal_orchard
+70,5,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day5,market plank route,rev:4 risk:0.41,tasks:1,score:0.28,recovery:0.72,True,replay:70:orchard_riverbend
+71,5,Juno,central_repair_ring,v30:Juno:central_repair_ring:day5,outer bell path,rev:1 risk:0.47,tasks:0,score:0.31,recovery:0.68,True,replay:71:central_repair_ring
+72,5,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day5,river ford,rev:4 risk:0.54,tasks:1,score:0.28,recovery:0.75,True,replay:72:riverbend_roofward
+73,5,Fay,roofward_archive,v30:Fay:roofward_archive:day5,cool archive lane,rev:1 risk:0.46,tasks:0,score:0.31,recovery:0.75,True,replay:73:roofward_archive
+74,5,Nia,archive_signal,v30:Nia:archive_signal:day5,paper lane,rev:4 risk:0.43,tasks:2,score:0.28,recovery:0.74,True,replay:74:archive_signal
+75,5,Milo,signal_orchard,v30:Milo:signal_orchard:day5,river lantern loop,rev:1 risk:0.47,tasks:0,score:0.28,recovery:0.70,True,replay:75:signal_orchard
+76,5,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day5,market plank route,rev:4 risk:0.41,tasks:1,score:0.28,recovery:0.72,True,replay:76:orchard_riverbend
+77,5,Juno,central_repair_ring,v30:Juno:central_repair_ring:day5,inner repair yard,rev:1 risk:0.46,tasks:0,score:0.31,recovery:0.68,True,replay:77:central_repair_ring
+78,5,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day5,orchard ridge detour,rev:4 risk:0.54,tasks:2,score:0.28,recovery:0.80,True,replay:78:riverbend_roofward
+79,5,Fay,roofward_archive,v30:Fay:roofward_archive:day5,cool archive lane,rev:1 risk:0.44,tasks:0,score:0.31,recovery:0.76,True,replay:79:roofward_archive
+80,6,Milo,signal_orchard,v30:Milo:signal_orchard:day6,river lantern loop,rev:2 risk:0.42,tasks:0,score:0.28,recovery:0.71,True,replay:80:signal_orchard
+81,6,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day6,fen track,rev:4 risk:0.42,tasks:1,score:0.28,recovery:0.72,True,replay:81:orchard_riverbend
+82,6,Juno,central_repair_ring,v30:Juno:central_repair_ring:day6,inner repair yard,rev:1 risk:0.48,tasks:1,score:0.31,recovery:0.71,True,replay:82:central_repair_ring
+83,6,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day6,orchard ridge detour,rev:4 risk:0.53,tasks:2,score:0.31,recovery:0.82,True,replay:83:riverbend_roofward
+84,6,Fay,roofward_archive,v30:Fay:roofward_archive:day6,cool archive lane,rev:1 risk:0.44,tasks:0,score:0.31,recovery:0.77,True,replay:84:roofward_archive
+85,6,Nia,archive_signal,v30:Nia:archive_signal:day6,stone kiosk path,rev:4 risk:0.45,tasks:2,score:0.28,recovery:0.75,True,replay:85:archive_signal
+86,6,Milo,signal_orchard,v30:Milo:signal_orchard:day6,river lantern loop,rev:2 risk:0.41,tasks:0,score:0.28,recovery:0.72,True,replay:86:signal_orchard
+87,6,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day6,fen track,rev:4 risk:0.44,tasks:1,score:0.31,recovery:0.73,True,replay:87:orchard_riverbend
+88,6,Juno,central_repair_ring,v30:Juno:central_repair_ring:day6,inner repair yard,rev:2 risk:0.55,tasks:1,score:0.31,recovery:0.73,True,replay:88:central_repair_ring
+89,6,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day6,orchard ridge detour,rev:4 risk:0.51,tasks:2,score:0.31,recovery:0.83,True,replay:89:riverbend_roofward
+90,6,Fay,roofward_archive,v30:Fay:roofward_archive:day6,cool archive lane,rev:1 risk:0.44,tasks:0,score:0.31,recovery:0.78,True,replay:90:roofward_archive
+91,6,Nia,archive_signal,v30:Nia:archive_signal:day6,stone kiosk path,rev:4 risk:0.46,tasks:2,score:0.28,recovery:0.76,True,replay:91:archive_signal
+92,6,Milo,signal_orchard,v30:Milo:signal_orchard:day6,river lantern loop,rev:2 risk:0.41,tasks:0,score:0.28,recovery:0.72,True,replay:92:signal_orchard
+93,6,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day6,fen track,rev:4 risk:0.43,tasks:1,score:0.31,recovery:0.74,True,replay:93:orchard_riverbend
+94,6,Juno,central_repair_ring,v30:Juno:central_repair_ring:day6,outer bell path,rev:2 risk:0.54,tasks:2,score:0.31,recovery:0.77,True,replay:94:central_repair_ring
+95,6,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day6,orchard ridge detour,rev:4 risk:0.48,tasks:2,score:0.31,recovery:0.85,True,replay:95:riverbend_roofward
+96,7,Fay,roofward_archive,v30:Fay:roofward_archive:day7,cool archive lane,rev:2 risk:0.39,tasks:0,score:0.31,recovery:0.80,True,replay:96:roofward_archive
+97,7,Nia,archive_signal,v30:Nia:archive_signal:day7,stone kiosk path,rev:4 risk:0.46,tasks:2,score:0.28,recovery:0.77,True,replay:97:archive_signal
+98,7,Milo,signal_orchard,v30:Milo:signal_orchard:day7,river lantern loop,rev:2 risk:0.43,tasks:1,score:0.28,recovery:0.76,True,replay:98:signal_orchard
+99,7,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day7,fen track,rev:4 risk:0.43,tasks:1,score:0.34,recovery:0.76,True,replay:99:orchard_riverbend
+100,7,Juno,central_repair_ring,v30:Juno:central_repair_ring:day7,outer bell path,rev:3 risk:0.49,tasks:2,score:0.31,recovery:0.80,True,replay:100:central_repair_ring
+101,7,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day7,orchard ridge detour,rev:4 risk:0.48,tasks:2,score:0.31,recovery:0.86,True,replay:101:riverbend_roofward
+102,7,Fay,roofward_archive,v30:Fay:roofward_archive:day7,cool archive lane,rev:2 risk:0.38,tasks:0,score:0.31,recovery:0.80,True,replay:102:roofward_archive
+103,7,Nia,archive_signal,v30:Nia:archive_signal:day7,stone kiosk path,rev:4 risk:0.47,tasks:2,score:0.31,recovery:0.80,True,replay:103:archive_signal
+104,7,Milo,signal_orchard,v30:Milo:signal_orchard:day7,river lantern loop,rev:3 risk:0.48,tasks:1,score:0.28,recovery:0.78,True,replay:104:signal_orchard
+105,7,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day7,market plank route,rev:4 risk:0.45,tasks:1,score:0.34,recovery:0.77,True,replay:105:orchard_riverbend
+106,7,Juno,central_repair_ring,v30:Juno:central_repair_ring:day7,outer bell path,rev:4 risk:0.45,tasks:3,score:0.31,recovery:0.85,True,replay:106:central_repair_ring
+107,7,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day7,orchard ridge detour,rev:4 risk:0.48,tasks:2,score:0.34,recovery:0.89,True,replay:107:riverbend_roofward
+108,7,Fay,roofward_archive,v30:Fay:roofward_archive:day7,cool archive lane,rev:2 risk:0.42,tasks:0,score:0.31,recovery:0.80,True,replay:108:roofward_archive
+109,7,Nia,archive_signal,v30:Nia:archive_signal:day7,stone kiosk path,rev:4 risk:0.45,tasks:2,score:0.31,recovery:0.81,True,replay:109:archive_signal
+110,7,Milo,signal_orchard,v30:Milo:signal_orchard:day7,river lantern loop,rev:3 risk:0.47,tasks:1,score:0.28,recovery:0.79,True,replay:110:signal_orchard
+111,7,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day7,market plank route,rev:4 risk:0.46,tasks:1,score:0.34,recovery:0.79,True,replay:111:orchard_riverbend
+112,8,Juno,central_repair_ring,v30:Juno:central_repair_ring:day8,outer bell path,rev:5 risk:0.53,tasks:3,score:0.31,recovery:0.88,True,replay:112:central_repair_ring
+113,8,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day8,orchard ridge detour,rev:4 risk:0.47,tasks:2,score:0.34,recovery:0.90,True,replay:113:riverbend_roofward
+114,8,Fay,roofward_archive,v30:Fay:roofward_archive:day8,cool archive lane,rev:2 risk:0.43,tasks:1,score:0.31,recovery:0.84,True,replay:114:roofward_archive
+115,8,Nia,archive_signal,v30:Nia:archive_signal:day8,stone kiosk path,rev:4 risk:0.48,tasks:2,score:0.34,recovery:0.83,True,replay:115:archive_signal
+116,8,Milo,signal_orchard,v30:Milo:signal_orchard:day8,river lantern loop,rev:3 risk:0.45,tasks:1,score:0.28,recovery:0.80,True,replay:116:signal_orchard
+117,8,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day8,market plank route,rev:5 risk:0.42,tasks:1,score:0.34,recovery:0.80,True,replay:117:orchard_riverbend
+118,8,Juno,central_repair_ring,v30:Juno:central_repair_ring:day8,outer bell path,rev:5 risk:0.53,tasks:3,score:0.31,recovery:0.89,True,replay:118:central_repair_ring
+119,8,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day8,orchard ridge detour,rev:4 risk:0.47,tasks:2,score:0.34,recovery:0.91,True,replay:119:riverbend_roofward
+120,8,Fay,roofward_archive,v30:Fay:roofward_archive:day8,cool archive lane,rev:3 risk:0.49,tasks:1,score:0.31,recovery:0.86,True,replay:120:roofward_archive
+121,8,Nia,archive_signal,v30:Nia:archive_signal:day8,paper lane,rev:4 risk:0.49,tasks:2,score:0.34,recovery:0.83,True,replay:121:archive_signal
+122,8,Milo,signal_orchard,v30:Milo:signal_orchard:day8,river lantern loop,rev:3 risk:0.43,tasks:2,score:0.28,recovery:0.84,True,replay:122:signal_orchard
+123,8,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day8,market plank route,rev:6 risk:0.38,tasks:1,score:0.34,recovery:0.81,True,replay:123:orchard_riverbend
+124,8,Juno,central_repair_ring,v30:Juno:central_repair_ring:day8,outer bell path,rev:5 risk:0.54,tasks:3,score:0.31,recovery:0.91,True,replay:124:central_repair_ring
+125,8,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day8,orchard ridge detour,rev:4 risk:0.45,tasks:2,score:0.34,recovery:0.92,True,replay:125:riverbend_roofward
+126,8,Fay,roofward_archive,v30:Fay:roofward_archive:day8,cool archive lane,rev:3 risk:0.47,tasks:2,score:0.31,recovery:0.91,True,replay:126:roofward_archive
+127,8,Nia,archive_signal,v30:Nia:archive_signal:day8,paper lane,rev:4 risk:0.49,tasks:2,score:0.34,recovery:0.84,True,replay:127:archive_signal
+128,9,Milo,signal_orchard,v30:Milo:signal_orchard:day9,river lantern loop,rev:4 risk:0.49,tasks:2,score:0.28,recovery:0.87,True,replay:128:signal_orchard
+129,9,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day9,fen track,rev:6 risk:0.37,tasks:1,score:0.34,recovery:0.81,True,replay:129:orchard_riverbend
+130,9,Juno,central_repair_ring,v30:Juno:central_repair_ring:day9,outer bell path,rev:5 risk:0.52,tasks:3,score:0.31,recovery:0.92,True,replay:130:central_repair_ring
+131,9,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day9,orchard ridge detour,rev:4 risk:0.47,tasks:2,score:0.37,recovery:0.94,True,replay:131:riverbend_roofward
+132,9,Fay,roofward_archive,v30:Fay:roofward_archive:day9,cool archive lane,rev:3 risk:0.45,tasks:2,score:0.31,recovery:0.92,True,replay:132:roofward_archive
+133,9,Nia,archive_signal,v30:Nia:archive_signal:day9,stone kiosk path,rev:4 risk:0.47,tasks:2,score:0.34,recovery:0.85,True,replay:133:archive_signal
+134,9,Milo,signal_orchard,v30:Milo:signal_orchard:day9,river lantern loop,rev:5 risk:0.44,tasks:2,score:0.28,recovery:0.89,True,replay:134:signal_orchard
+135,9,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day9,fen track,rev:6 risk:0.42,tasks:1,score:0.37,recovery:0.83,True,replay:135:orchard_riverbend
+136,9,Juno,central_repair_ring,v30:Juno:central_repair_ring:day9,outer bell path,rev:6 risk:0.47,tasks:3,score:0.31,recovery:0.94,True,replay:136:central_repair_ring
+137,9,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day9,orchard ridge detour,rev:4 risk:0.48,tasks:2,score:0.37,recovery:0.94,True,replay:137:riverbend_roofward
+138,9,Fay,roofward_archive,v30:Fay:roofward_archive:day9,cool archive lane,rev:3 risk:0.47,tasks:3,score:0.31,recovery:0.94,True,replay:138:roofward_archive
+139,9,Nia,archive_signal,v30:Nia:archive_signal:day9,stone kiosk path,rev:4 risk:0.46,tasks:2,score:0.37,recovery:0.88,True,replay:139:archive_signal
+140,9,Milo,signal_orchard,v30:Milo:signal_orchard:day9,river lantern loop,rev:6 risk:0.50,tasks:2,score:0.28,recovery:0.91,True,replay:140:signal_orchard
+141,9,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day9,fen track,rev:6 risk:0.43,tasks:1,score:0.37,recovery:0.83,True,replay:141:orchard_riverbend
+142,9,Juno,central_repair_ring,v30:Juno:central_repair_ring:day9,outer bell path,rev:6 risk:0.45,tasks:4,score:0.31,recovery:0.94,True,replay:142:central_repair_ring
+143,9,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day9,orchard ridge detour,rev:4 risk:0.47,tasks:2,score:0.37,recovery:0.94,True,replay:143:riverbend_roofward
+144,10,Fay,roofward_archive,v30:Fay:roofward_archive:day10,cool archive lane,rev:4 risk:0.52,tasks:3,score:0.31,recovery:0.94,True,replay:144:roofward_archive
+145,10,Nia,archive_signal,v30:Nia:archive_signal:day10,stone kiosk path,rev:4 risk:0.47,tasks:2,score:0.37,recovery:0.88,True,replay:145:archive_signal
+146,10,Milo,signal_orchard,v30:Milo:signal_orchard:day10,river lantern loop,rev:6 risk:0.48,tasks:3,score:0.28,recovery:0.94,True,replay:146:signal_orchard
+147,10,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day10,fen track,rev:6 risk:0.45,tasks:1,score:0.40,recovery:0.84,True,replay:147:orchard_riverbend
+148,10,Juno,central_repair_ring,v30:Juno:central_repair_ring:day10,outer bell path,rev:6 risk:0.46,tasks:4,score:0.31,recovery:0.94,True,replay:148:central_repair_ring
+149,10,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day10,orchard ridge detour,rev:4 risk:0.45,tasks:2,score:0.37,recovery:0.94,True,replay:149:riverbend_roofward
+150,10,Fay,roofward_archive,v30:Fay:roofward_archive:day10,cool archive lane,rev:4 risk:0.51,tasks:3,score:0.31,recovery:0.94,True,replay:150:roofward_archive
+151,10,Nia,archive_signal,v30:Nia:archive_signal:day10,stone kiosk path,rev:5 risk:0.56,tasks:2,score:0.37,recovery:0.90,True,replay:151:archive_signal
+152,10,Milo,signal_orchard,v30:Milo:signal_orchard:day10,river lantern loop,rev:7 risk:0.41,tasks:3,score:0.28,recovery:0.94,True,replay:152:signal_orchard
+153,10,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day10,fen track,rev:6 risk:0.44,tasks:1,score:0.40,recovery:0.84,True,replay:153:orchard_riverbend
+154,10,Juno,central_repair_ring,v30:Juno:central_repair_ring:day10,outer bell path,rev:6 risk:0.46,tasks:5,score:0.31,recovery:0.94,True,replay:154:central_repair_ring
+155,10,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day10,orchard ridge detour,rev:4 risk:0.43,tasks:2,score:0.40,recovery:0.94,True,replay:155:riverbend_roofward
+156,10,Fay,roofward_archive,v30:Fay:roofward_archive:day10,cool archive lane,rev:4 risk:0.51,tasks:3,score:0.31,recovery:0.94,True,replay:156:roofward_archive
+157,10,Nia,archive_signal,v30:Nia:archive_signal:day10,stone kiosk path,rev:6 risk:0.52,tasks:2,score:0.37,recovery:0.92,True,replay:157:archive_signal
+158,10,Milo,signal_orchard,v30:Milo:signal_orchard:day10,river lantern loop,rev:7 risk:0.43,tasks:4,score:0.28,recovery:0.94,True,replay:158:signal_orchard
+159,10,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day10,fen track,rev:6 risk:0.43,tasks:1,score:0.40,recovery:0.85,True,replay:159:orchard_riverbend
+160,11,Juno,central_repair_ring,v30:Juno:central_repair_ring:day11,outer bell path,rev:7 risk:0.42,tasks:5,score:0.31,recovery:0.94,True,replay:160:central_repair_ring
+161,11,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day11,orchard ridge detour,rev:4 risk:0.44,tasks:2,score:0.40,recovery:0.94,True,replay:161:riverbend_roofward
+162,11,Fay,roofward_archive,v30:Fay:roofward_archive:day11,cool archive lane,rev:5 risk:0.45,tasks:4,score:0.31,recovery:0.94,True,replay:162:roofward_archive
+163,11,Nia,archive_signal,v30:Nia:archive_signal:day11,stone kiosk path,rev:6 risk:0.52,tasks:2,score:0.40,recovery:0.94,True,replay:163:archive_signal
+164,11,Milo,signal_orchard,v30:Milo:signal_orchard:day11,river lantern loop,rev:7 risk:0.44,tasks:4,score:0.28,recovery:0.94,True,replay:164:signal_orchard
+165,11,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day11,fen track,rev:6 risk:0.45,tasks:1,score:0.40,recovery:0.85,True,replay:165:orchard_riverbend
+166,11,Juno,central_repair_ring,v30:Juno:central_repair_ring:day11,outer bell path,rev:7 risk:0.41,tasks:5,score:0.31,recovery:0.94,True,replay:166:central_repair_ring
+167,11,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day11,orchard ridge detour,rev:4 risk:0.47,tasks:2,score:0.43,recovery:0.94,True,replay:167:riverbend_roofward
+168,11,Fay,roofward_archive,v30:Fay:roofward_archive:day11,cool archive lane,rev:6 risk:0.52,tasks:4,score:0.31,recovery:0.94,True,replay:168:roofward_archive
+169,11,Nia,archive_signal,v30:Nia:archive_signal:day11,stone kiosk path,rev:6 risk:0.50,tasks:2,score:0.40,recovery:0.94,True,replay:169:archive_signal
+170,11,Milo,signal_orchard,v30:Milo:signal_orchard:day11,river lantern loop,rev:7 risk:0.44,tasks:4,score:0.28,recovery:0.94,True,replay:170:signal_orchard
+171,11,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day11,fen track,rev:6 risk:0.46,tasks:1,score:0.43,recovery:0.87,True,replay:171:orchard_riverbend
+172,11,Juno,central_repair_ring,v30:Juno:central_repair_ring:day11,outer bell path,rev:7 risk:0.41,tasks:5,score:0.31,recovery:0.94,True,replay:172:central_repair_ring
+173,11,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day11,orchard ridge detour,rev:4 risk:0.46,tasks:2,score:0.43,recovery:0.94,True,replay:173:riverbend_roofward
+174,11,Fay,roofward_archive,v30:Fay:roofward_archive:day11,cool archive lane,rev:6 risk:0.52,tasks:5,score:0.31,recovery:0.94,True,replay:174:roofward_archive
+175,11,Nia,archive_signal,v30:Nia:archive_signal:day11,stone kiosk path,rev:6 risk:0.47,tasks:2,score:0.40,recovery:0.94,True,replay:175:archive_signal
+176,12,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day12,fen track,rev:7 risk:0.40,tasks:1,score:0.43,recovery:0.89,True,replay:176:orchard_riverbend
+177,12,Juno,central_repair_ring,v30:Juno:central_repair_ring:day12,inner repair yard,rev:7 risk:0.42,tasks:5,score:0.31,recovery:0.94,True,replay:177:central_repair_ring
+178,12,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day12,orchard ridge detour,rev:5 risk:0.41,tasks:3,score:0.43,recovery:0.94,True,replay:178:riverbend_roofward
+179,12,Fay,roofward_archive,v30:Fay:roofward_archive:day12,cool archive lane,rev:6 risk:0.52,tasks:5,score:0.34,recovery:0.94,True,replay:179:roofward_archive
+180,12,Nia,archive_signal,v30:Nia:archive_signal:day12,stone kiosk path,rev:6 risk:0.47,tasks:2,score:0.40,recovery:0.94,True,replay:180:archive_signal
+181,12,Milo,signal_orchard,v30:Milo:signal_orchard:day12,river lantern loop,rev:7 risk:0.46,tasks:4,score:0.28,recovery:0.94,True,replay:181:signal_orchard
+182,12,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day12,fen track,rev:7 risk:0.40,tasks:1,score:0.43,recovery:0.89,True,replay:182:orchard_riverbend
+183,12,Juno,central_repair_ring,v30:Juno:central_repair_ring:day12,inner repair yard,rev:7 risk:0.44,tasks:5,score:0.34,recovery:0.94,True,replay:183:central_repair_ring
+184,12,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day12,orchard ridge detour,rev:6 risk:0.50,tasks:3,score:0.43,recovery:0.94,True,replay:184:riverbend_roofward
+185,12,Fay,roofward_archive,v30:Fay:roofward_archive:day12,cool archive lane,rev:6 risk:0.49,tasks:5,score:0.34,recovery:0.94,True,replay:185:roofward_archive
+186,12,Nia,archive_signal,v30:Nia:archive_signal:day12,stone kiosk path,rev:6 risk:0.47,tasks:3,score:0.40,recovery:0.94,True,replay:186:archive_signal
+187,12,Milo,signal_orchard,v30:Milo:signal_orchard:day12,river lantern loop,rev:7 risk:0.47,tasks:4,score:0.29,recovery:0.94,True,replay:187:signal_orchard
+188,12,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day12,fen track,rev:7 risk:0.40,tasks:1,score:0.43,recovery:0.89,True,replay:188:orchard_riverbend
+189,12,Juno,central_repair_ring,v30:Juno:central_repair_ring:day12,inner repair yard,rev:7 risk:0.43,tasks:5,score:0.34,recovery:0.94,True,replay:189:central_repair_ring
+190,12,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day12,orchard ridge detour,rev:7 risk:0.57,tasks:3,score:0.43,recovery:0.94,True,replay:190:riverbend_roofward
+191,12,Fay,roofward_archive,v30:Fay:roofward_archive:day12,cool archive lane,rev:6 risk:0.47,tasks:5,score:0.34,recovery:0.94,True,replay:191:roofward_archive
+192,13,Nia,archive_signal,v30:Nia:archive_signal:day13,stone kiosk path,rev:7 risk:0.41,tasks:3,score:0.40,recovery:0.94,True,replay:192:archive_signal
+193,13,Milo,signal_orchard,v30:Milo:signal_orchard:day13,river lantern loop,rev:7 risk:0.46,tasks:4,score:0.29,recovery:0.94,True,replay:193:signal_orchard
+194,13,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day13,fen track,rev:7 risk:0.42,tasks:2,score:0.43,recovery:0.92,True,replay:194:orchard_riverbend
+195,13,Juno,central_repair_ring,v30:Juno:central_repair_ring:day13,inner repair yard,rev:7 risk:0.43,tasks:5,score:0.37,recovery:0.94,True,replay:195:central_repair_ring
+196,13,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day13,orchard ridge detour,rev:7 risk:0.55,tasks:3,score:0.43,recovery:0.94,True,replay:196:riverbend_roofward
+197,13,Fay,roofward_archive,v30:Fay:roofward_archive:day13,cool archive lane,rev:6 risk:0.47,tasks:5,score:0.34,recovery:0.94,True,replay:197:roofward_archive
+198,13,Nia,archive_signal,v30:Nia:archive_signal:day13,stone kiosk path,rev:7 risk:0.40,tasks:3,score:0.40,recovery:0.94,True,replay:198:archive_signal
+199,13,Milo,signal_orchard,v30:Milo:signal_orchard:day13,river lantern loop,rev:7 risk:0.47,tasks:4,score:0.29,recovery:0.94,True,replay:199:signal_orchard
+200,13,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day13,fen track,rev:8 risk:0.47,tasks:2,score:0.43,recovery:0.93,True,replay:200:orchard_riverbend
+201,13,Juno,central_repair_ring,v30:Juno:central_repair_ring:day13,outer bell path,rev:7 risk:0.45,tasks:5,score:0.37,recovery:0.94,True,replay:201:central_repair_ring
+202,13,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day13,orchard ridge detour,rev:7 risk:0.53,tasks:4,score:0.43,recovery:0.94,True,replay:202:riverbend_roofward
+203,13,Fay,roofward_archive,v30:Fay:roofward_archive:day13,cool archive lane,rev:6 risk:0.48,tasks:5,score:0.37,recovery:0.94,True,replay:203:roofward_archive
+204,13,Nia,archive_signal,v30:Nia:archive_signal:day13,stone kiosk path,rev:7 risk:0.44,tasks:3,score:0.40,recovery:0.94,True,replay:204:archive_signal
+205,13,Milo,signal_orchard,v30:Milo:signal_orchard:day13,river lantern loop,rev:7 risk:0.45,tasks:4,score:0.29,recovery:0.94,True,replay:205:signal_orchard
+206,13,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day13,fen track,rev:8 risk:0.47,tasks:3,score:0.43,recovery:0.94,True,replay:206:orchard_riverbend
+207,13,Juno,central_repair_ring,v30:Juno:central_repair_ring:day13,outer bell path,rev:7 risk:0.46,tasks:5,score:0.37,recovery:0.94,True,replay:207:central_repair_ring
+208,14,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day14,orchard ridge detour,rev:8 risk:0.47,tasks:4,score:0.43,recovery:0.94,True,replay:208:riverbend_roofward
+209,14,Fay,roofward_archive,v30:Fay:roofward_archive:day14,glass stair,rev:6 risk:0.46,tasks:5,score:0.37,recovery:0.94,True,replay:209:roofward_archive
+210,14,Nia,archive_signal,v30:Nia:archive_signal:day14,stone kiosk path,rev:7 risk:0.44,tasks:3,score:0.40,recovery:0.94,True,replay:210:archive_signal
+211,14,Milo,signal_orchard,v30:Milo:signal_orchard:day14,river lantern loop,rev:7 risk:0.49,tasks:4,score:0.32,recovery:0.94,True,replay:211:signal_orchard
+212,14,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day14,fen track,rev:8 risk:0.45,tasks:3,score:0.43,recovery:0.94,True,replay:212:orchard_riverbend
+213,14,Juno,central_repair_ring,v30:Juno:central_repair_ring:day14,outer bell path,rev:7 risk:0.46,tasks:5,score:0.37,recovery:0.94,True,replay:213:central_repair_ring
+214,14,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day14,orchard ridge detour,rev:8 risk:0.48,tasks:4,score:0.43,recovery:0.94,True,replay:214:riverbend_roofward
+215,14,Fay,roofward_archive,v30:Fay:roofward_archive:day14,glass stair,rev:6 risk:0.46,tasks:5,score:0.40,recovery:0.94,True,replay:215:roofward_archive
+216,14,Nia,archive_signal,v30:Nia:archive_signal:day14,stone kiosk path,rev:8 risk:0.41,tasks:3,score:0.40,recovery:0.94,True,replay:216:archive_signal
+217,14,Milo,signal_orchard,v30:Milo:signal_orchard:day14,river lantern loop,rev:7 risk:0.49,tasks:4,score:0.32,recovery:0.94,True,replay:217:signal_orchard
+218,14,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day14,fen track,rev:8 risk:0.43,tasks:4,score:0.43,recovery:0.94,True,replay:218:orchard_riverbend
+219,14,Juno,central_repair_ring,v30:Juno:central_repair_ring:day14,outer bell path,rev:7 risk:0.45,tasks:5,score:0.40,recovery:0.94,True,replay:219:central_repair_ring
+220,14,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day14,river ford,rev:8 risk:0.51,tasks:4,score:0.43,recovery:0.94,True,replay:220:riverbend_roofward
+221,14,Fay,roofward_archive,v30:Fay:roofward_archive:day14,cool archive lane,rev:6 risk:0.44,tasks:5,score:0.40,recovery:0.94,True,replay:221:roofward_archive
+222,14,Nia,archive_signal,v30:Nia:archive_signal:day14,stone kiosk path,rev:8 risk:0.41,tasks:4,score:0.40,recovery:0.94,True,replay:222:archive_signal
+223,14,Milo,signal_orchard,v30:Milo:signal_orchard:day14,river lantern loop,rev:7 risk:0.49,tasks:4,score:0.32,recovery:0.94,True,replay:223:signal_orchard
+224,15,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day15,fen track,rev:9 risk:0.49,tasks:4,score:0.43,recovery:0.94,True,replay:224:orchard_riverbend
+225,15,Juno,central_repair_ring,v30:Juno:central_repair_ring:day15,inner repair yard,rev:7 risk:0.43,tasks:5,score:0.40,recovery:0.94,True,replay:225:central_repair_ring
+226,15,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day15,river ford,rev:8 risk:0.50,tasks:5,score:0.43,recovery:0.94,True,replay:226:riverbend_roofward
+227,15,Fay,roofward_archive,v30:Fay:roofward_archive:day15,cool archive lane,rev:6 risk:0.47,tasks:5,score:0.40,recovery:0.94,True,replay:227:roofward_archive
+228,15,Nia,archive_signal,v30:Nia:archive_signal:day15,stone kiosk path,rev:8 risk:0.39,tasks:4,score:0.40,recovery:0.94,True,replay:228:archive_signal
+229,15,Milo,signal_orchard,v30:Milo:signal_orchard:day15,river lantern loop,rev:7 risk:0.48,tasks:4,score:0.32,recovery:0.94,True,replay:229:signal_orchard
+230,15,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day15,fen track,rev:9 risk:0.49,tasks:4,score:0.43,recovery:0.94,True,replay:230:orchard_riverbend
+231,15,Juno,central_repair_ring,v30:Juno:central_repair_ring:day15,inner repair yard,rev:7 risk:0.46,tasks:5,score:0.40,recovery:0.94,True,replay:231:central_repair_ring
+232,15,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day15,river ford,rev:8 risk:0.48,tasks:5,score:0.43,recovery:0.94,True,replay:232:riverbend_roofward
+233,15,Fay,roofward_archive,v30:Fay:roofward_archive:day15,cool archive lane,rev:6 risk:0.47,tasks:5,score:0.40,recovery:0.94,True,replay:233:roofward_archive
+234,15,Nia,archive_signal,v30:Nia:archive_signal:day15,stone kiosk path,rev:8 risk:0.42,tasks:5,score:0.40,recovery:0.94,True,replay:234:archive_signal
+235,15,Milo,signal_orchard,v30:Milo:signal_orchard:day15,river lantern loop,rev:7 risk:0.46,tasks:4,score:0.35,recovery:0.94,True,replay:235:signal_orchard
+236,15,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day15,fen track,rev:9 risk:0.50,tasks:4,score:0.43,recovery:0.94,True,replay:236:orchard_riverbend
+237,15,Juno,central_repair_ring,v30:Juno:central_repair_ring:day15,outer bell path,rev:7 risk:0.47,tasks:5,score:0.40,recovery:0.94,True,replay:237:central_repair_ring
+238,15,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day15,river ford,rev:8 risk:0.46,tasks:6,score:0.43,recovery:0.94,True,replay:238:riverbend_roofward
+239,15,Fay,roofward_archive,v30:Fay:roofward_archive:day15,cool archive lane,rev:6 risk:0.47,tasks:5,score:0.40,recovery:0.94,True,replay:239:roofward_archive
+240,16,Nia,archive_signal,v30:Nia:archive_signal:day16,stone kiosk path,rev:9 risk:0.48,tasks:5,score:0.40,recovery:0.94,True,replay:240:archive_signal
+241,16,Milo,signal_orchard,v30:Milo:signal_orchard:day16,river lantern loop,rev:7 risk:0.47,tasks:4,score:0.35,recovery:0.94,True,replay:241:signal_orchard
+242,16,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day16,fen track,rev:9 risk:0.47,tasks:5,score:0.43,recovery:0.94,True,replay:242:orchard_riverbend
+243,16,Juno,central_repair_ring,v30:Juno:central_repair_ring:day16,outer bell path,rev:7 risk:0.48,tasks:5,score:0.43,recovery:0.94,True,replay:243:central_repair_ring
+244,16,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day16,river ford,rev:8 risk:0.48,tasks:6,score:0.43,recovery:0.94,True,replay:244:riverbend_roofward
+245,16,Fay,roofward_archive,v30:Fay:roofward_archive:day16,cool archive lane,rev:6 risk:0.45,tasks:5,score:0.40,recovery:0.94,True,replay:245:roofward_archive
+246,16,Nia,archive_signal,v30:Nia:archive_signal:day16,stone kiosk path,rev:9 risk:0.47,tasks:5,score:0.40,recovery:0.94,True,replay:246:archive_signal
+247,16,Milo,signal_orchard,v30:Milo:signal_orchard:day16,river lantern loop,rev:7 risk:0.50,tasks:4,score:0.38,recovery:0.94,True,replay:247:signal_orchard
+248,16,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day16,fen track,rev:10 risk:0.40,tasks:5,score:0.43,recovery:0.94,True,replay:248:orchard_riverbend
+249,16,Juno,central_repair_ring,v30:Juno:central_repair_ring:day16,outer bell path,rev:7 risk:0.47,tasks:5,score:0.43,recovery:0.94,True,replay:249:central_repair_ring
+250,16,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day16,river ford,rev:8 risk:0.48,tasks:6,score:0.43,recovery:0.94,True,replay:250:riverbend_roofward
+251,16,Fay,roofward_archive,v30:Fay:roofward_archive:day16,cool archive lane,rev:6 risk:0.43,tasks:5,score:0.43,recovery:0.94,True,replay:251:roofward_archive
+252,16,Nia,archive_signal,v30:Nia:archive_signal:day16,stone kiosk path,rev:9 risk:0.48,tasks:5,score:0.40,recovery:0.94,True,replay:252:archive_signal
+253,16,Milo,signal_orchard,v30:Milo:signal_orchard:day16,dusk road,rev:7 risk:0.49,tasks:4,score:0.38,recovery:0.94,True,replay:253:signal_orchard
+254,16,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day16,fen track,rev:10 risk:0.43,tasks:6,score:0.43,recovery:0.94,True,replay:254:orchard_riverbend
+255,16,Juno,central_repair_ring,v30:Juno:central_repair_ring:day16,outer bell path,rev:7 risk:0.45,tasks:5,score:0.43,recovery:0.94,True,replay:255:central_repair_ring
+256,17,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day17,river ford,rev:9 risk:0.45,tasks:6,score:0.43,recovery:0.94,True,replay:256:riverbend_roofward
+257,17,Fay,roofward_archive,v30:Fay:roofward_archive:day17,cool archive lane,rev:6 risk:0.44,tasks:5,score:0.43,recovery:0.94,True,replay:257:roofward_archive
+258,17,Nia,archive_signal,v30:Nia:archive_signal:day17,stone kiosk path,rev:9 risk:0.45,tasks:6,score:0.40,recovery:0.94,True,replay:258:archive_signal
+259,17,Milo,signal_orchard,v30:Milo:signal_orchard:day17,dusk road,rev:7 risk:0.50,tasks:4,score:0.38,recovery:0.94,True,replay:259:signal_orchard
+260,17,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day17,fen track,rev:10 risk:0.44,tasks:6,score:0.43,recovery:0.94,True,replay:260:orchard_riverbend
+261,17,Juno,central_repair_ring,v30:Juno:central_repair_ring:day17,outer bell path,rev:7 risk:0.47,tasks:5,score:0.43,recovery:0.94,True,replay:261:central_repair_ring
+262,17,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day17,river ford,rev:9 risk:0.44,tasks:6,score:0.43,recovery:0.94,True,replay:262:riverbend_roofward
+263,17,Fay,roofward_archive,v30:Fay:roofward_archive:day17,cool archive lane,rev:6 risk:0.46,tasks:5,score:0.46,recovery:0.94,True,replay:263:roofward_archive
+264,17,Nia,archive_signal,v30:Nia:archive_signal:day17,stone kiosk path,rev:10 risk:0.53,tasks:6,score:0.40,recovery:0.94,True,replay:264:archive_signal
+265,17,Milo,signal_orchard,v30:Milo:signal_orchard:day17,river lantern loop,rev:7 risk:0.48,tasks:4,score:0.38,recovery:0.94,True,replay:265:signal_orchard
+266,17,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day17,fen track,rev:10 risk:0.44,tasks:7,score:0.43,recovery:0.94,True,replay:266:orchard_riverbend
+267,17,Juno,central_repair_ring,v30:Juno:central_repair_ring:day17,outer bell path,rev:7 risk:0.48,tasks:5,score:0.46,recovery:0.94,True,replay:267:central_repair_ring
+268,17,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day17,river ford,rev:9 risk:0.45,tasks:6,score:0.43,recovery:0.94,True,replay:268:riverbend_roofward
+269,17,Fay,roofward_archive,v30:Fay:roofward_archive:day17,cool archive lane,rev:6 risk:0.46,tasks:5,score:0.46,recovery:0.94,True,replay:269:roofward_archive
+270,17,Nia,archive_signal,v30:Nia:archive_signal:day17,stone kiosk path,rev:10 risk:0.53,tasks:6,score:0.40,recovery:0.94,True,replay:270:archive_signal
+271,17,Milo,signal_orchard,v30:Milo:signal_orchard:day17,river lantern loop,rev:7 risk:0.45,tasks:4,score:0.38,recovery:0.94,True,replay:271:signal_orchard
+272,18,Juno,central_repair_ring,v30:Juno:central_repair_ring:day18,outer bell path,rev:8 risk:0.42,tasks:5,score:0.46,recovery:0.94,True,replay:272:central_repair_ring
+273,18,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day18,orchard ridge detour,rev:9 risk:0.46,tasks:6,score:0.43,recovery:0.94,True,replay:273:riverbend_roofward
+274,18,Fay,roofward_archive,v30:Fay:roofward_archive:day18,cool archive lane,rev:6 risk:0.44,tasks:6,score:0.46,recovery:0.94,True,replay:274:roofward_archive
+275,18,Nia,archive_signal,v30:Nia:archive_signal:day18,paper lane,rev:10 risk:0.52,tasks:6,score:0.40,recovery:0.94,True,replay:275:archive_signal
+276,18,Milo,signal_orchard,v30:Milo:signal_orchard:day18,river lantern loop,rev:7 risk:0.46,tasks:4,score:0.38,recovery:0.94,True,replay:276:signal_orchard
+277,18,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day18,market plank route,rev:10 risk:0.45,tasks:7,score:0.43,recovery:0.94,True,replay:277:orchard_riverbend
+278,18,Juno,central_repair_ring,v30:Juno:central_repair_ring:day18,outer bell path,rev:8 risk:0.41,tasks:5,score:0.46,recovery:0.94,True,replay:278:central_repair_ring
+279,18,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day18,orchard ridge detour,rev:9 risk:0.48,tasks:6,score:0.46,recovery:0.94,True,replay:279:riverbend_roofward
+280,18,Fay,roofward_archive,v30:Fay:roofward_archive:day18,cool archive lane,rev:7 risk:0.52,tasks:6,score:0.46,recovery:0.94,True,replay:280:roofward_archive
+281,18,Nia,archive_signal,v30:Nia:archive_signal:day18,stone kiosk path,rev:10 risk:0.50,tasks:6,score:0.40,recovery:0.94,True,replay:281:archive_signal
+282,18,Milo,signal_orchard,v30:Milo:signal_orchard:day18,river lantern loop,rev:7 risk:0.45,tasks:5,score:0.38,recovery:0.94,True,replay:282:signal_orchard
+283,18,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day18,market plank route,rev:10 risk:0.46,tasks:7,score:0.46,recovery:0.94,True,replay:283:orchard_riverbend
+284,18,Juno,central_repair_ring,v30:Juno:central_repair_ring:day18,outer bell path,rev:8 risk:0.41,tasks:5,score:0.46,recovery:0.94,True,replay:284:central_repair_ring
+285,18,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day18,orchard ridge detour,rev:9 risk:0.47,tasks:6,score:0.46,recovery:0.94,True,replay:285:riverbend_roofward
+286,18,Fay,roofward_archive,v30:Fay:roofward_archive:day18,glass stair,rev:7 risk:0.52,tasks:7,score:0.46,recovery:0.94,True,replay:286:roofward_archive
+287,18,Nia,archive_signal,v30:Nia:archive_signal:day18,stone kiosk path,rev:10 risk:0.47,tasks:6,score:0.40,recovery:0.94,True,replay:287:archive_signal
+288,19,Milo,signal_orchard,v30:Milo:signal_orchard:day19,river lantern loop,rev:8 risk:0.40,tasks:5,score:0.38,recovery:0.94,True,replay:288:signal_orchard
+289,19,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day19,market plank route,rev:10 risk:0.46,tasks:7,score:0.46,recovery:0.94,True,replay:289:orchard_riverbend
+290,19,Juno,central_repair_ring,v30:Juno:central_repair_ring:day19,outer bell path,rev:8 risk:0.43,tasks:5,score:0.46,recovery:0.94,True,replay:290:central_repair_ring
+291,19,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day19,orchard ridge detour,rev:9 risk:0.47,tasks:6,score:0.49,recovery:0.94,True,replay:291:riverbend_roofward
+292,19,Fay,roofward_archive,v30:Fay:roofward_archive:day19,cool archive lane,rev:7 risk:0.51,tasks:7,score:0.46,recovery:0.94,True,replay:292:roofward_archive
+293,19,Nia,archive_signal,v30:Nia:archive_signal:day19,stone kiosk path,rev:10 risk:0.48,tasks:6,score:0.40,recovery:0.94,True,replay:293:archive_signal
+294,19,Milo,signal_orchard,v30:Milo:signal_orchard:day19,river lantern loop,rev:8 risk:0.39,tasks:5,score:0.38,recovery:0.94,True,replay:294:signal_orchard
+295,19,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day19,market plank route,rev:10 risk:0.47,tasks:7,score:0.49,recovery:0.94,True,replay:295:orchard_riverbend
+296,19,Juno,central_repair_ring,v30:Juno:central_repair_ring:day19,outer bell path,rev:9 risk:0.48,tasks:5,score:0.46,recovery:0.94,True,replay:296:central_repair_ring
+297,19,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day19,river ford,rev:9 risk:0.45,tasks:6,score:0.49,recovery:0.94,True,replay:297:riverbend_roofward
+298,19,Fay,roofward_archive,v30:Fay:roofward_archive:day19,cool archive lane,rev:7 risk:0.49,tasks:8,score:0.46,recovery:0.94,True,replay:298:roofward_archive
+299,19,Nia,archive_signal,v30:Nia:archive_signal:day19,stone kiosk path,rev:10 risk:0.48,tasks:6,score:0.43,recovery:0.94,True,replay:299:archive_signal
+300,19,Milo,signal_orchard,v30:Milo:signal_orchard:day19,river lantern loop,rev:8 risk:0.43,tasks:5,score:0.38,recovery:0.94,True,replay:300:signal_orchard
+301,19,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day19,market plank route,rev:10 risk:0.45,tasks:7,score:0.49,recovery:0.94,True,replay:301:orchard_riverbend
+302,19,Juno,central_repair_ring,v30:Juno:central_repair_ring:day19,outer bell path,rev:10 risk:0.43,tasks:6,score:0.46,recovery:0.94,True,replay:302:central_repair_ring
+303,19,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day19,river ford,rev:9 risk:0.46,tasks:6,score:0.49,recovery:0.94,True,replay:303:riverbend_roofward
+304,20,Fay,roofward_archive,v30:Fay:roofward_archive:day20,cool archive lane,rev:8 risk:0.44,tasks:8,score:0.46,recovery:0.94,True,replay:304:roofward_archive
+305,20,Nia,archive_signal,v30:Nia:archive_signal:day20,stone kiosk path,rev:10 risk:0.47,tasks:6,score:0.43,recovery:0.94,True,replay:305:archive_signal
+306,20,Milo,signal_orchard,v30:Milo:signal_orchard:day20,river lantern loop,rev:8 risk:0.44,tasks:6,score:0.38,recovery:0.94,True,replay:306:signal_orchard
+307,20,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day20,market plank route,rev:11 risk:0.55,tasks:7,score:0.49,recovery:0.94,True,replay:307:orchard_riverbend
+308,20,Juno,central_repair_ring,v30:Juno:central_repair_ring:day20,outer bell path,rev:10 risk:0.42,tasks:6,score:0.46,recovery:0.94,True,replay:308:central_repair_ring
+309,20,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day20,orchard ridge detour,rev:9 risk:0.47,tasks:6,score:0.49,recovery:0.94,True,replay:309:riverbend_roofward
+310,20,Fay,roofward_archive,v30:Fay:roofward_archive:day20,cool archive lane,rev:8 risk:0.46,tasks:8,score:0.46,recovery:0.94,True,replay:310:roofward_archive
+311,20,Nia,archive_signal,v30:Nia:archive_signal:day20,stone kiosk path,rev:10 risk:0.47,tasks:6,score:0.46,recovery:0.94,True,replay:311:archive_signal
+312,20,Milo,signal_orchard,v30:Milo:signal_orchard:day20,river lantern loop,rev:9 risk:0.40,tasks:6,score:0.38,recovery:0.94,True,replay:312:signal_orchard
+313,20,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day20,market plank route,rev:12 risk:0.52,tasks:7,score:0.49,recovery:0.94,True,replay:313:orchard_riverbend
+314,20,Juno,central_repair_ring,v30:Juno:central_repair_ring:day20,outer bell path,rev:10 risk:0.40,tasks:7,score:0.46,recovery:0.94,True,replay:314:central_repair_ring
+315,20,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day20,orchard ridge detour,rev:9 risk:0.46,tasks:6,score:0.49,recovery:0.94,True,replay:315:riverbend_roofward
+316,20,Fay,roofward_archive,v30:Fay:roofward_archive:day20,cool archive lane,rev:8 risk:0.48,tasks:8,score:0.46,recovery:0.94,True,replay:316:roofward_archive
+317,20,Nia,archive_signal,v30:Nia:archive_signal:day20,stone kiosk path,rev:10 risk:0.44,tasks:6,score:0.46,recovery:0.94,True,replay:317:archive_signal
+318,20,Milo,signal_orchard,v30:Milo:signal_orchard:day20,river lantern loop,rev:9 risk:0.40,tasks:7,score:0.38,recovery:0.94,True,replay:318:signal_orchard
+319,20,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day20,fen track,rev:12 risk:0.51,tasks:7,score:0.49,recovery:0.94,True,replay:319:orchard_riverbend
+320,21,Juno,central_repair_ring,v30:Juno:central_repair_ring:day21,outer bell path,rev:11 risk:0.46,tasks:7,score:0.46,recovery:0.94,True,replay:320:central_repair_ring
+321,21,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day21,orchard ridge detour,rev:9 risk:0.45,tasks:6,score:0.49,recovery:0.94,True,replay:321:riverbend_roofward
+322,21,Fay,roofward_archive,v30:Fay:roofward_archive:day21,cool archive lane,rev:8 risk:0.48,tasks:9,score:0.46,recovery:0.94,True,replay:322:roofward_archive
+323,21,Nia,archive_signal,v30:Nia:archive_signal:day21,stone kiosk path,rev:10 risk:0.47,tasks:6,score:0.47,recovery:0.94,True,replay:323:archive_signal
+324,21,Milo,signal_orchard,v30:Milo:signal_orchard:day21,river lantern loop,rev:10 risk:0.35,tasks:7,score:0.38,recovery:0.94,True,replay:324:signal_orchard
+325,21,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day21,market plank route,rev:12 risk:0.50,tasks:7,score:0.49,recovery:0.94,True,replay:325:orchard_riverbend
+326,21,Juno,central_repair_ring,v30:Juno:central_repair_ring:day21,outer bell path,rev:11 risk:0.47,tasks:7,score:0.46,recovery:0.94,True,replay:326:central_repair_ring
+327,21,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day21,orchard ridge detour,rev:9 risk:0.44,tasks:6,score:0.52,recovery:0.94,True,replay:327:riverbend_roofward
+328,21,Fay,roofward_archive,v30:Fay:roofward_archive:day21,cool archive lane,rev:9 risk:0.44,tasks:9,score:0.46,recovery:0.94,True,replay:328:roofward_archive
+329,21,Nia,archive_signal,v30:Nia:archive_signal:day21,stone kiosk path,rev:10 risk:0.47,tasks:6,score:0.47,recovery:0.94,True,replay:329:archive_signal
+330,21,Milo,signal_orchard,v30:Milo:signal_orchard:day21,river lantern loop,rev:11 risk:0.44,tasks:7,score:0.38,recovery:0.94,True,replay:330:signal_orchard
+331,21,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day21,market plank route,rev:12 risk:0.48,tasks:7,score:0.52,recovery:0.94,True,replay:331:orchard_riverbend
+332,21,Juno,central_repair_ring,v30:Juno:central_repair_ring:day21,outer bell path,rev:11 risk:0.48,tasks:7,score:0.46,recovery:0.94,True,replay:332:central_repair_ring
+333,21,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day21,orchard ridge detour,rev:9 risk:0.46,tasks:6,score:0.52,recovery:0.94,True,replay:333:riverbend_roofward
+334,21,Fay,roofward_archive,v30:Fay:roofward_archive:day21,cool archive lane,rev:9 risk:0.43,tasks:10,score:0.46,recovery:0.94,True,replay:334:roofward_archive
+335,21,Nia,archive_signal,v30:Nia:archive_signal:day21,stone kiosk path,rev:10 risk:0.47,tasks:6,score:0.47,recovery:0.94,True,replay:335:archive_signal
+336,22,Milo,signal_orchard,v30:Milo:signal_orchard:day22,river lantern loop,rev:12 risk:0.50,tasks:7,score:0.38,recovery:0.94,True,replay:336:signal_orchard
+337,22,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day22,market plank route,rev:12 risk:0.49,tasks:7,score:0.52,recovery:0.94,True,replay:337:orchard_riverbend
+338,22,Juno,central_repair_ring,v30:Juno:central_repair_ring:day22,outer bell path,rev:11 risk:0.46,tasks:8,score:0.46,recovery:0.94,True,replay:338:central_repair_ring
+339,22,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day22,orchard ridge detour,rev:9 risk:0.48,tasks:6,score:0.55,recovery:0.94,True,replay:339:riverbend_roofward
+340,22,Fay,roofward_archive,v30:Fay:roofward_archive:day22,cool archive lane,rev:9 risk:0.45,tasks:10,score:0.46,recovery:0.94,True,replay:340:roofward_archive
+341,22,Nia,archive_signal,v30:Nia:archive_signal:day22,paper lane,rev:11 risk:0.40,tasks:6,score:0.47,recovery:0.94,True,replay:341:archive_signal
+342,22,Milo,signal_orchard,v30:Milo:signal_orchard:day22,river lantern loop,rev:12 risk:0.49,tasks:7,score:0.38,recovery:0.94,True,replay:342:signal_orchard
+343,22,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day22,market plank route,rev:12 risk:0.51,tasks:7,score:0.55,recovery:0.94,True,replay:343:orchard_riverbend
+344,22,Juno,central_repair_ring,v30:Juno:central_repair_ring:day22,outer bell path,rev:12 risk:0.39,tasks:8,score:0.46,recovery:0.94,True,replay:344:central_repair_ring
+345,22,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day22,orchard ridge detour,rev:9 risk:0.47,tasks:6,score:0.55,recovery:0.94,True,replay:345:riverbend_roofward
+346,22,Fay,roofward_archive,v30:Fay:roofward_archive:day22,cool archive lane,rev:9 risk:0.46,tasks:11,score:0.46,recovery:0.94,True,replay:346:roofward_archive
+347,22,Nia,archive_signal,v30:Nia:archive_signal:day22,paper lane,rev:12 risk:0.35,tasks:6,score:0.47,recovery:0.94,True,replay:347:archive_signal
+348,22,Milo,signal_orchard,v30:Milo:signal_orchard:day22,river lantern loop,rev:12 risk:0.49,tasks:7,score:0.38,recovery:0.94,True,replay:348:signal_orchard
+349,22,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day22,market plank route,rev:12 risk:0.51,tasks:7,score:0.55,recovery:0.94,True,replay:349:orchard_riverbend
+350,22,Juno,central_repair_ring,v30:Juno:central_repair_ring:day22,outer bell path,rev:12 risk:0.42,tasks:8,score:0.46,recovery:0.94,True,replay:350:central_repair_ring
+351,22,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day22,orchard ridge detour,rev:9 risk:0.46,tasks:6,score:0.55,recovery:0.94,True,replay:351:riverbend_roofward
+352,23,Fay,roofward_archive,v30:Fay:roofward_archive:day23,cool archive lane,rev:10 risk:0.43,tasks:11,score:0.46,recovery:0.94,True,replay:352:roofward_archive
+353,23,Nia,archive_signal,v30:Nia:archive_signal:day23,paper lane,rev:12 risk:0.37,tasks:6,score:0.47,recovery:0.94,True,replay:353:archive_signal
+354,23,Milo,signal_orchard,v30:Milo:signal_orchard:day23,river lantern loop,rev:12 risk:0.47,tasks:8,score:0.38,recovery:0.94,True,replay:354:signal_orchard
+355,23,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day23,market plank route,rev:12 risk:0.51,tasks:7,score:0.58,recovery:0.94,True,replay:355:orchard_riverbend
+356,23,Juno,central_repair_ring,v30:Juno:central_repair_ring:day23,outer bell path,rev:12 risk:0.43,tasks:8,score:0.46,recovery:0.94,True,replay:356:central_repair_ring
+357,23,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day23,river ford,rev:9 risk:0.44,tasks:6,score:0.55,recovery:0.94,True,replay:357:riverbend_roofward
+358,23,Fay,roofward_archive,v30:Fay:roofward_archive:day23,cool archive lane,rev:11 risk:0.40,tasks:11,score:0.46,recovery:0.94,True,replay:358:roofward_archive
+359,23,Nia,archive_signal,v30:Nia:archive_signal:day23,paper lane,rev:12 risk:0.40,tasks:6,score:0.50,recovery:0.94,True,replay:359:archive_signal
+360,23,Milo,signal_orchard,v30:Milo:signal_orchard:day23,river lantern loop,rev:13 risk:0.53,tasks:8,score:0.38,recovery:0.94,True,replay:360:signal_orchard
+361,23,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day23,market plank route,rev:12 risk:0.48,tasks:7,score:0.58,recovery:0.94,True,replay:361:orchard_riverbend
+362,23,Juno,central_repair_ring,v30:Juno:central_repair_ring:day23,outer bell path,rev:12 risk:0.43,tasks:9,score:0.46,recovery:0.94,True,replay:362:central_repair_ring
+363,23,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day23,river ford,rev:9 risk:0.46,tasks:6,score:0.58,recovery:0.94,True,replay:363:riverbend_roofward
+364,23,Fay,roofward_archive,v30:Fay:roofward_archive:day23,cool archive lane,rev:12 risk:0.47,tasks:11,score:0.46,recovery:0.94,True,replay:364:roofward_archive
+365,23,Nia,archive_signal,v30:Nia:archive_signal:day23,paper lane,rev:12 risk:0.41,tasks:6,score:0.50,recovery:0.94,True,replay:365:archive_signal
+366,23,Milo,signal_orchard,v30:Milo:signal_orchard:day23,river lantern loop,rev:13 risk:0.53,tasks:9,score:0.38,recovery:0.94,True,replay:366:signal_orchard
+367,23,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day23,market plank route,rev:12 risk:0.46,tasks:7,score:0.58,recovery:0.94,True,replay:367:orchard_riverbend
+368,24,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day24,river ford,rev:10 risk:0.41,tasks:6,score:0.58,recovery:0.94,True,replay:368:riverbend_roofward
+369,24,Fay,roofward_archive,v30:Fay:roofward_archive:day24,cool archive lane,rev:12 risk:0.48,tasks:11,score:0.46,recovery:0.94,True,replay:369:roofward_archive
+370,24,Nia,archive_signal,v30:Nia:archive_signal:day24,paper lane,rev:12 risk:0.39,tasks:6,score:0.50,recovery:0.94,True,replay:370:archive_signal
+371,24,Milo,signal_orchard,v30:Milo:signal_orchard:day24,river lantern loop,rev:13 risk:0.53,tasks:9,score:0.41,recovery:0.94,True,replay:371:signal_orchard
+372,24,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day24,market plank route,rev:12 risk:0.46,tasks:7,score:0.58,recovery:0.94,True,replay:372:orchard_riverbend
+373,24,Juno,central_repair_ring,v30:Juno:central_repair_ring:day24,outer bell path,rev:12 risk:0.45,tasks:9,score:0.46,recovery:0.94,True,replay:373:central_repair_ring
+374,24,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day24,river ford,rev:11 risk:0.36,tasks:6,score:0.58,recovery:0.94,True,replay:374:riverbend_roofward
+375,24,Fay,roofward_archive,v30:Fay:roofward_archive:day24,cool archive lane,rev:12 risk:0.50,tasks:11,score:0.49,recovery:0.94,True,replay:375:roofward_archive
+376,24,Nia,archive_signal,v30:Nia:archive_signal:day24,paper lane,rev:13 risk:0.48,tasks:6,score:0.50,recovery:0.94,True,replay:376:archive_signal
+377,24,Milo,signal_orchard,v30:Milo:signal_orchard:day24,river lantern loop,rev:13 risk:0.50,tasks:9,score:0.41,recovery:0.94,True,replay:377:signal_orchard
+378,24,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day24,market plank route,rev:12 risk:0.46,tasks:8,score:0.58,recovery:0.94,True,replay:378:orchard_riverbend
+379,24,Juno,central_repair_ring,v30:Juno:central_repair_ring:day24,outer bell path,rev:12 risk:0.46,tasks:9,score:0.49,recovery:0.94,True,replay:379:central_repair_ring
+380,24,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day24,river ford,rev:12 risk:0.42,tasks:6,score:0.58,recovery:0.94,True,replay:380:riverbend_roofward
+381,24,Fay,roofward_archive,v30:Fay:roofward_archive:day24,cool archive lane,rev:12 risk:0.49,tasks:11,score:0.49,recovery:0.94,True,replay:381:roofward_archive
+382,24,Nia,archive_signal,v30:Nia:archive_signal:day24,paper lane,rev:13 risk:0.49,tasks:7,score:0.50,recovery:0.94,True,replay:382:archive_signal
+383,24,Milo,signal_orchard,v30:Milo:signal_orchard:day24,river lantern loop,rev:13 risk:0.48,tasks:9,score:0.41,recovery:0.94,True,replay:383:signal_orchard
+384,25,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day25,market plank route,rev:13 risk:0.41,tasks:8,score:0.58,recovery:0.94,True,replay:384:orchard_riverbend
+385,25,Juno,central_repair_ring,v30:Juno:central_repair_ring:day25,inner repair yard,rev:12 risk:0.45,tasks:9,score:0.49,recovery:0.94,True,replay:385:central_repair_ring
+386,25,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day25,river ford,rev:12 risk:0.44,tasks:7,score:0.58,recovery:0.94,True,replay:386:riverbend_roofward
+387,25,Fay,roofward_archive,v30:Fay:roofward_archive:day25,cool archive lane,rev:12 risk:0.49,tasks:11,score:0.52,recovery:0.94,True,replay:387:roofward_archive
+388,25,Nia,archive_signal,v30:Nia:archive_signal:day25,paper lane,rev:13 risk:0.48,tasks:7,score:0.50,recovery:0.94,True,replay:388:archive_signal
+389,25,Milo,signal_orchard,v30:Milo:signal_orchard:day25,river lantern loop,rev:13 risk:0.48,tasks:9,score:0.41,recovery:0.94,True,replay:389:signal_orchard
+390,25,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day25,market plank route,rev:13 risk:0.39,tasks:8,score:0.58,recovery:0.94,True,replay:390:orchard_riverbend
+391,25,Juno,central_repair_ring,v30:Juno:central_repair_ring:day25,inner repair yard,rev:12 risk:0.46,tasks:9,score:0.50,recovery:0.94,True,replay:391:central_repair_ring
+392,25,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day25,river ford,rev:13 risk:0.50,tasks:7,score:0.58,recovery:0.94,True,replay:392:riverbend_roofward
+393,25,Fay,roofward_archive,v30:Fay:roofward_archive:day25,cool archive lane,rev:12 risk:0.46,tasks:11,score:0.52,recovery:0.94,True,replay:393:roofward_archive
+394,25,Nia,archive_signal,v30:Nia:archive_signal:day25,paper lane,rev:13 risk:0.47,tasks:8,score:0.50,recovery:0.94,True,replay:394:archive_signal
+395,25,Milo,signal_orchard,v30:Milo:signal_orchard:day25,river lantern loop,rev:13 risk:0.48,tasks:9,score:0.41,recovery:0.94,True,replay:395:signal_orchard
+396,25,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day25,market plank route,rev:13 risk:0.43,tasks:8,score:0.58,recovery:0.94,True,replay:396:orchard_riverbend
+397,25,Juno,central_repair_ring,v30:Juno:central_repair_ring:day25,outer bell path,rev:12 risk:0.45,tasks:9,score:0.50,recovery:0.94,True,replay:397:central_repair_ring
+398,25,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day25,river ford,rev:13 risk:0.50,tasks:8,score:0.58,recovery:0.94,True,replay:398:riverbend_roofward
+399,25,Fay,roofward_archive,v30:Fay:roofward_archive:day25,cool archive lane,rev:12 risk:0.47,tasks:11,score:0.52,recovery:0.94,True,replay:399:roofward_archive
+400,26,Nia,archive_signal,v30:Nia:archive_signal:day26,paper lane,rev:14 risk:0.42,tasks:8,score:0.50,recovery:0.94,True,replay:400:archive_signal
+401,26,Milo,signal_orchard,v30:Milo:signal_orchard:day26,river lantern loop,rev:13 risk:0.47,tasks:9,score:0.41,recovery:0.94,True,replay:401:signal_orchard
+402,26,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day26,market plank route,rev:13 risk:0.44,tasks:9,score:0.58,recovery:0.94,True,replay:402:orchard_riverbend
+403,26,Juno,central_repair_ring,v30:Juno:central_repair_ring:day26,outer bell path,rev:12 risk:0.48,tasks:9,score:0.53,recovery:0.94,True,replay:403:central_repair_ring
+404,26,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day26,river ford,rev:13 risk:0.48,tasks:8,score:0.58,recovery:0.94,True,replay:404:riverbend_roofward
+405,26,Fay,roofward_archive,v30:Fay:roofward_archive:day26,cool archive lane,rev:12 risk:0.48,tasks:11,score:0.52,recovery:0.94,True,replay:405:roofward_archive
+406,26,Nia,archive_signal,v30:Nia:archive_signal:day26,paper lane,rev:14 risk:0.44,tasks:8,score:0.50,recovery:0.94,True,replay:406:archive_signal
+407,26,Milo,signal_orchard,v30:Milo:signal_orchard:day26,river lantern loop,rev:13 risk:0.47,tasks:9,score:0.44,recovery:0.94,True,replay:407:signal_orchard
+408,26,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day26,market plank route,rev:14 risk:0.40,tasks:9,score:0.58,recovery:0.94,True,replay:408:orchard_riverbend
+409,26,Juno,central_repair_ring,v30:Juno:central_repair_ring:day26,outer bell path,rev:12 risk:0.49,tasks:9,score:0.53,recovery:0.94,True,replay:409:central_repair_ring
+410,26,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day26,river ford,rev:13 risk:0.46,tasks:8,score:0.58,recovery:0.94,True,replay:410:riverbend_roofward
+411,26,Fay,roofward_archive,v30:Fay:roofward_archive:day26,cool archive lane,rev:12 risk:0.47,tasks:11,score:0.55,recovery:0.94,True,replay:411:roofward_archive
+412,26,Nia,archive_signal,v30:Nia:archive_signal:day26,paper lane,rev:14 risk:0.47,tasks:8,score:0.50,recovery:0.94,True,replay:412:archive_signal
+413,26,Milo,signal_orchard,v30:Milo:signal_orchard:day26,river lantern loop,rev:13 risk:0.45,tasks:9,score:0.44,recovery:0.94,True,replay:413:signal_orchard
+414,26,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day26,market plank route,rev:14 risk:0.40,tasks:10,score:0.58,recovery:0.94,True,replay:414:orchard_riverbend
+415,26,Juno,central_repair_ring,v30:Juno:central_repair_ring:day26,outer bell path,rev:12 risk:0.49,tasks:9,score:0.53,recovery:0.94,True,replay:415:central_repair_ring
+416,27,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day27,river ford,rev:14 risk:0.52,tasks:8,score:0.58,recovery:0.94,True,replay:416:riverbend_roofward
+417,27,Fay,roofward_archive,v30:Fay:roofward_archive:day27,cool archive lane,rev:12 risk:0.45,tasks:11,score:0.55,recovery:0.94,True,replay:417:roofward_archive
+418,27,Nia,archive_signal,v30:Nia:archive_signal:day27,paper lane,rev:14 risk:0.46,tasks:9,score:0.50,recovery:0.94,True,replay:418:archive_signal
+419,27,Milo,signal_orchard,v30:Milo:signal_orchard:day27,river lantern loop,rev:13 risk:0.47,tasks:9,score:0.47,recovery:0.94,True,replay:419:signal_orchard
+420,27,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day27,market plank route,rev:14 risk:0.39,tasks:10,score:0.58,recovery:0.94,True,replay:420:orchard_riverbend
+421,27,Juno,central_repair_ring,v30:Juno:central_repair_ring:day27,outer bell path,rev:12 risk:0.47,tasks:9,score:0.53,recovery:0.94,True,replay:421:central_repair_ring
+422,27,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day27,orchard ridge detour,rev:14 risk:0.52,tasks:8,score:0.58,recovery:0.94,True,replay:422:riverbend_roofward
+423,27,Fay,roofward_archive,v30:Fay:roofward_archive:day27,cool archive lane,rev:12 risk:0.45,tasks:11,score:0.55,recovery:0.94,True,replay:423:roofward_archive
+424,27,Nia,archive_signal,v30:Nia:archive_signal:day27,paper lane,rev:15 risk:0.43,tasks:9,score:0.50,recovery:0.94,True,replay:424:archive_signal
+425,27,Milo,signal_orchard,v30:Milo:signal_orchard:day27,river lantern loop,rev:13 risk:0.47,tasks:9,score:0.47,recovery:0.94,True,replay:425:signal_orchard
+426,27,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day27,market plank route,rev:14 risk:0.41,tasks:11,score:0.58,recovery:0.94,True,replay:426:orchard_riverbend
+427,27,Juno,central_repair_ring,v30:Juno:central_repair_ring:day27,outer bell path,rev:12 risk:0.45,tasks:9,score:0.53,recovery:0.94,True,replay:427:central_repair_ring
+428,27,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day27,orchard ridge detour,rev:14 risk:0.53,tasks:8,score:0.58,recovery:0.94,True,replay:428:riverbend_roofward
+429,27,Fay,roofward_archive,v30:Fay:roofward_archive:day27,glass stair,rev:12 risk:0.46,tasks:11,score:0.55,recovery:0.94,True,replay:429:roofward_archive
+430,27,Nia,archive_signal,v30:Nia:archive_signal:day27,paper lane,rev:15 risk:0.42,tasks:9,score:0.50,recovery:0.94,True,replay:430:archive_signal
+431,27,Milo,signal_orchard,v30:Milo:signal_orchard:day27,river lantern loop,rev:13 risk:0.47,tasks:9,score:0.47,recovery:0.94,True,replay:431:signal_orchard
+432,28,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day28,market plank route,rev:15 risk:0.48,tasks:11,score:0.58,recovery:0.94,True,replay:432:orchard_riverbend
+433,28,Juno,central_repair_ring,v30:Juno:central_repair_ring:day28,outer bell path,rev:12 risk:0.47,tasks:9,score:0.53,recovery:0.94,True,replay:433:central_repair_ring
+434,28,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day28,orchard ridge detour,rev:14 risk:0.51,tasks:9,score:0.58,recovery:0.94,True,replay:434:riverbend_roofward
+435,28,Fay,roofward_archive,v30:Fay:roofward_archive:day28,glass stair,rev:12 risk:0.48,tasks:11,score:0.58,recovery:0.94,True,replay:435:roofward_archive
+436,28,Nia,archive_signal,v30:Nia:archive_signal:day28,paper lane,rev:15 risk:0.44,tasks:9,score:0.50,recovery:0.94,True,replay:436:archive_signal
+437,28,Milo,signal_orchard,v30:Milo:signal_orchard:day28,river lantern loop,rev:13 risk:0.45,tasks:9,score:0.47,recovery:0.94,True,replay:437:signal_orchard
+438,28,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day28,market plank route,rev:15 risk:0.47,tasks:11,score:0.58,recovery:0.94,True,replay:438:orchard_riverbend
+439,28,Juno,central_repair_ring,v30:Juno:central_repair_ring:day28,outer bell path,rev:12 risk:0.49,tasks:9,score:0.56,recovery:0.94,True,replay:439:central_repair_ring
+440,28,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day28,orchard ridge detour,rev:15 risk:0.44,tasks:9,score:0.58,recovery:0.94,True,replay:440:riverbend_roofward
+441,28,Fay,roofward_archive,v30:Fay:roofward_archive:day28,cool archive lane,rev:12 risk:0.48,tasks:11,score:0.58,recovery:0.94,True,replay:441:roofward_archive
+442,28,Nia,archive_signal,v30:Nia:archive_signal:day28,paper lane,rev:15 risk:0.45,tasks:10,score:0.50,recovery:0.94,True,replay:442:archive_signal
+443,28,Milo,signal_orchard,v30:Milo:signal_orchard:day28,river lantern loop,rev:13 risk:0.43,tasks:9,score:0.50,recovery:0.94,True,replay:443:signal_orchard
+444,28,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day28,market plank route,rev:15 risk:0.48,tasks:11,score:0.58,recovery:0.94,True,replay:444:orchard_riverbend
+445,28,Juno,central_repair_ring,v30:Juno:central_repair_ring:day28,outer bell path,rev:12 risk:0.49,tasks:9,score:0.56,recovery:0.94,True,replay:445:central_repair_ring
+446,28,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day28,orchard ridge detour,rev:15 risk:0.42,tasks:10,score:0.58,recovery:0.94,True,replay:446:riverbend_roofward
+447,28,Fay,roofward_archive,v30:Fay:roofward_archive:day28,cool archive lane,rev:12 risk:0.46,tasks:11,score:0.58,recovery:0.94,True,replay:447:roofward_archive
+448,29,Nia,archive_signal,v30:Nia:archive_signal:day29,paper lane,rev:16 risk:0.42,tasks:10,score:0.50,recovery:0.94,True,replay:448:archive_signal
+449,29,Milo,signal_orchard,v30:Milo:signal_orchard:day29,river lantern loop,rev:13 risk:0.44,tasks:9,score:0.50,recovery:0.94,True,replay:449:signal_orchard
+450,29,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day29,market plank route,rev:15 risk:0.45,tasks:11,score:0.58,recovery:0.94,True,replay:450:orchard_riverbend
+451,29,Juno,central_repair_ring,v30:Juno:central_repair_ring:day29,outer bell path,rev:12 risk:0.50,tasks:9,score:0.59,recovery:0.94,True,replay:451:central_repair_ring
+452,29,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day29,orchard ridge detour,rev:15 risk:0.44,tasks:10,score:0.58,recovery:0.94,True,replay:452:riverbend_roofward
+453,29,Fay,roofward_archive,v30:Fay:roofward_archive:day29,cool archive lane,rev:12 risk:0.44,tasks:11,score:0.58,recovery:0.94,True,replay:453:roofward_archive
+454,29,Nia,archive_signal,v30:Nia:archive_signal:day29,paper lane,rev:16 risk:0.42,tasks:10,score:0.50,recovery:0.94,True,replay:454:archive_signal
+455,29,Milo,signal_orchard,v30:Milo:signal_orchard:day29,river lantern loop,rev:13 risk:0.47,tasks:9,score:0.50,recovery:0.94,True,replay:455:signal_orchard
+456,29,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day29,market plank route,rev:16 risk:0.52,tasks:11,score:0.58,recovery:0.94,True,replay:456:orchard_riverbend
+457,29,Juno,central_repair_ring,v30:Juno:central_repair_ring:day29,outer bell path,rev:12 risk:0.47,tasks:9,score:0.59,recovery:0.94,True,replay:457:central_repair_ring
+458,29,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day29,orchard ridge detour,rev:15 risk:0.44,tasks:11,score:0.58,recovery:0.94,True,replay:458:riverbend_roofward
+459,29,Fay,roofward_archive,v30:Fay:roofward_archive:day29,cool archive lane,rev:12 risk:0.46,tasks:11,score:0.59,recovery:0.94,True,replay:459:roofward_archive
+460,29,Nia,archive_signal,v30:Nia:archive_signal:day29,paper lane,rev:16 risk:0.43,tasks:10,score:0.50,recovery:0.94,True,replay:460:archive_signal
+461,29,Milo,signal_orchard,v30:Milo:signal_orchard:day29,river lantern loop,rev:13 risk:0.46,tasks:9,score:0.50,recovery:0.94,True,replay:461:signal_orchard
+462,29,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day29,fen track,rev:16 risk:0.52,tasks:12,score:0.58,recovery:0.94,True,replay:462:orchard_riverbend
+463,29,Juno,central_repair_ring,v30:Juno:central_repair_ring:day29,outer bell path,rev:12 risk:0.45,tasks:9,score:0.59,recovery:0.94,True,replay:463:central_repair_ring
+464,30,Fay,roofward_archive,v30:Fay:roofward_archive:day30,cool archive lane,rev:12 risk:0.46,tasks:11,score:0.59,recovery:0.94,True,replay:464:roofward_archive
+465,30,Nia,archive_signal,v30:Nia:archive_signal:day30,paper lane,rev:16 risk:0.44,tasks:10,score:0.50,recovery:0.94,True,replay:465:archive_signal
+466,30,Milo,signal_orchard,v30:Milo:signal_orchard:day30,river lantern loop,rev:13 risk:0.44,tasks:10,score:0.50,recovery:0.94,True,replay:466:signal_orchard
+467,30,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day30,market plank route,rev:16 risk:0.52,tasks:12,score:0.61,recovery:0.94,True,replay:467:orchard_riverbend
+468,30,Juno,central_repair_ring,v30:Juno:central_repair_ring:day30,outer bell path,rev:12 risk:0.45,tasks:9,score:0.59,recovery:0.94,True,replay:468:central_repair_ring
+469,30,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day30,river ford,rev:15 risk:0.42,tasks:11,score:0.58,recovery:0.94,True,replay:469:riverbend_roofward
+470,30,Fay,roofward_archive,v30:Fay:roofward_archive:day30,cool archive lane,rev:12 risk:0.45,tasks:11,score:0.59,recovery:0.94,True,replay:470:roofward_archive
+471,30,Nia,archive_signal,v30:Nia:archive_signal:day30,paper lane,rev:16 risk:0.46,tasks:10,score:0.50,recovery:0.94,True,replay:471:archive_signal
+472,30,Milo,signal_orchard,v30:Milo:signal_orchard:day30,river lantern loop,rev:14 risk:0.52,tasks:10,score:0.50,recovery:0.94,True,replay:472:signal_orchard
+473,30,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day30,fen track,rev:16 risk:0.50,tasks:12,score:0.61,recovery:0.94,True,replay:473:orchard_riverbend
+474,30,Juno,central_repair_ring,v30:Juno:central_repair_ring:day30,outer bell path,rev:12 risk:0.45,tasks:10,score:0.59,recovery:0.94,True,replay:474:central_repair_ring
+475,30,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day30,river ford,rev:15 risk:0.44,tasks:11,score:0.61,recovery:0.94,True,replay:475:riverbend_roofward
+476,30,Fay,roofward_archive,v30:Fay:roofward_archive:day30,cool archive lane,rev:12 risk:0.45,tasks:11,score:0.59,recovery:0.94,True,replay:476:roofward_archive
+477,30,Nia,archive_signal,v30:Nia:archive_signal:day30,stone kiosk path,rev:16 risk:0.46,tasks:10,score:0.50,recovery:0.94,True,replay:477:archive_signal
+478,30,Milo,signal_orchard,v30:Milo:signal_orchard:day30,river lantern loop,rev:14 risk:0.52,tasks:11,score:0.50,recovery:0.94,True,replay:478:signal_orchard
+479,30,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day30,fen track,rev:16 risk:0.47,tasks:12,score:0.61,recovery:0.94,True,replay:479:orchard_riverbend
+480,31,Juno,central_repair_ring,v30:Juno:central_repair_ring:day31,outer bell path,rev:13 risk:0.40,tasks:10,score:0.59,recovery:0.94,True,replay:480:central_repair_ring
+481,31,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day31,river ford,rev:15 risk:0.45,tasks:11,score:0.61,recovery:0.94,True,replay:481:riverbend_roofward
+482,31,Fay,roofward_archive,v30:Fay:roofward_archive:day31,cool archive lane,rev:12 risk:0.47,tasks:12,score:0.59,recovery:0.94,True,replay:482:roofward_archive
+483,31,Nia,archive_signal,v30:Nia:archive_signal:day31,stone kiosk path,rev:16 risk:0.46,tasks:10,score:0.53,recovery:0.94,True,replay:483:archive_signal
+484,31,Milo,signal_orchard,v30:Milo:signal_orchard:day31,dusk road,rev:14 risk:0.51,tasks:11,score:0.50,recovery:0.94,True,replay:484:signal_orchard
+485,31,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day31,market plank route,rev:16 risk:0.48,tasks:12,score:0.61,recovery:0.94,True,replay:485:orchard_riverbend
+486,31,Juno,central_repair_ring,v30:Juno:central_repair_ring:day31,outer bell path,rev:14 risk:0.35,tasks:10,score:0.59,recovery:0.94,True,replay:486:central_repair_ring
+487,31,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day31,river ford,rev:15 risk:0.46,tasks:11,score:0.64,recovery:0.94,True,replay:487:riverbend_roofward
+488,31,Fay,roofward_archive,v30:Fay:roofward_archive:day31,cool archive lane,rev:13 risk:0.52,tasks:12,score:0.59,recovery:0.94,True,replay:488:roofward_archive
+489,31,Nia,archive_signal,v30:Nia:archive_signal:day31,paper lane,rev:16 risk:0.44,tasks:10,score:0.53,recovery:0.94,True,replay:489:archive_signal
+490,31,Milo,signal_orchard,v30:Milo:signal_orchard:day31,dusk road,rev:14 risk:0.49,tasks:11,score:0.50,recovery:0.94,True,replay:490:signal_orchard
+491,31,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day31,market plank route,rev:16 risk:0.48,tasks:12,score:0.64,recovery:0.94,True,replay:491:orchard_riverbend
+492,31,Juno,central_repair_ring,v30:Juno:central_repair_ring:day31,outer bell path,rev:15 risk:0.45,tasks:10,score:0.59,recovery:0.94,True,replay:492:central_repair_ring
+493,31,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day31,orchard ridge detour,rev:15 risk:0.45,tasks:11,score:0.64,recovery:0.94,True,replay:493:riverbend_roofward
+494,31,Fay,roofward_archive,v30:Fay:roofward_archive:day31,cool archive lane,rev:13 risk:0.51,tasks:13,score:0.59,recovery:0.94,True,replay:494:roofward_archive
+495,31,Nia,archive_signal,v30:Nia:archive_signal:day31,paper lane,rev:16 risk:0.46,tasks:10,score:0.53,recovery:0.94,True,replay:495:archive_signal
+496,32,Milo,signal_orchard,v30:Milo:signal_orchard:day32,dusk road,rev:15 risk:0.44,tasks:11,score:0.50,recovery:0.94,True,replay:496:signal_orchard
+497,32,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day32,market plank route,rev:17 risk:0.42,tasks:12,score:0.64,recovery:0.94,True,replay:497:orchard_riverbend
+498,32,Juno,central_repair_ring,v30:Juno:central_repair_ring:day32,outer bell path,rev:15 risk:0.46,tasks:11,score:0.59,recovery:0.94,True,replay:498:central_repair_ring
+499,32,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day32,orchard ridge detour,rev:15 risk:0.45,tasks:11,score:0.64,recovery:0.94,True,replay:499:riverbend_roofward
+500,32,Fay,roofward_archive,v30:Fay:roofward_archive:day32,cool archive lane,rev:13 risk:0.50,tasks:13,score:0.59,recovery:0.94,True,replay:500:roofward_archive
+501,32,Nia,archive_signal,v30:Nia:archive_signal:day32,stone kiosk path,rev:16 risk:0.46,tasks:10,score:0.53,recovery:0.94,True,replay:501:archive_signal
+502,32,Milo,signal_orchard,v30:Milo:signal_orchard:day32,dusk road,rev:15 risk:0.46,tasks:11,score:0.50,recovery:0.94,True,replay:502:signal_orchard
+503,32,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day32,market plank route,rev:18 risk:0.47,tasks:12,score:0.64,recovery:0.94,True,replay:503:orchard_riverbend
+504,32,Juno,central_repair_ring,v30:Juno:central_repair_ring:day32,outer bell path,rev:16 risk:0.42,tasks:11,score:0.59,recovery:0.94,True,replay:504:central_repair_ring
+505,32,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day32,orchard ridge detour,rev:15 risk:0.47,tasks:11,score:0.64,recovery:0.94,True,replay:505:riverbend_roofward
+506,32,Fay,roofward_archive,v30:Fay:roofward_archive:day32,cool archive lane,rev:13 risk:0.48,tasks:14,score:0.59,recovery:0.94,True,replay:506:roofward_archive
+507,32,Nia,archive_signal,v30:Nia:archive_signal:day32,stone kiosk path,rev:16 risk:0.46,tasks:10,score:0.56,recovery:0.94,True,replay:507:archive_signal
+508,32,Milo,signal_orchard,v30:Milo:signal_orchard:day32,dusk road,rev:15 risk:0.49,tasks:11,score:0.50,recovery:0.94,True,replay:508:signal_orchard
+509,32,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day32,market plank route,rev:19 risk:0.40,tasks:12,score:0.64,recovery:0.94,True,replay:509:orchard_riverbend
+510,32,Juno,central_repair_ring,v30:Juno:central_repair_ring:day32,outer bell path,rev:16 risk:0.42,tasks:11,score:0.59,recovery:0.94,True,replay:510:central_repair_ring
+511,32,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day32,orchard ridge detour,rev:15 risk:0.47,tasks:11,score:0.64,recovery:0.94,True,replay:511:riverbend_roofward
+512,33,Fay,roofward_archive,v30:Fay:roofward_archive:day33,cool archive lane,rev:14 risk:0.53,tasks:14,score:0.59,recovery:0.94,True,replay:512:roofward_archive
+513,33,Nia,archive_signal,v30:Nia:archive_signal:day33,stone kiosk path,rev:16 risk:0.44,tasks:10,score:0.56,recovery:0.94,True,replay:513:archive_signal
+514,33,Milo,signal_orchard,v30:Milo:signal_orchard:day33,dusk road,rev:16 risk:0.45,tasks:12,score:0.50,recovery:0.94,True,replay:514:signal_orchard
+515,33,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day33,market plank route,rev:19 risk:0.44,tasks:12,score:0.67,recovery:0.94,True,replay:515:orchard_riverbend
+516,33,Juno,central_repair_ring,v30:Juno:central_repair_ring:day33,outer bell path,rev:16 risk:0.40,tasks:11,score:0.59,recovery:0.94,True,replay:516:central_repair_ring
+517,33,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day33,river ford,rev:15 risk:0.47,tasks:11,score:0.64,recovery:0.94,True,replay:517:riverbend_roofward
+518,33,Fay,roofward_archive,v30:Fay:roofward_archive:day33,cool archive lane,rev:14 risk:0.53,tasks:14,score:0.59,recovery:0.94,True,replay:518:roofward_archive
+519,33,Nia,archive_signal,v30:Nia:archive_signal:day33,stone kiosk path,rev:16 risk:0.44,tasks:10,score:0.59,recovery:0.94,True,replay:519:archive_signal
+520,33,Milo,signal_orchard,v30:Milo:signal_orchard:day33,dusk road,rev:17 risk:0.42,tasks:12,score:0.50,recovery:0.94,True,replay:520:signal_orchard
+521,33,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day33,market plank route,rev:19 risk:0.44,tasks:12,score:0.67,recovery:0.94,True,replay:521:orchard_riverbend
+522,33,Juno,central_repair_ring,v30:Juno:central_repair_ring:day33,outer bell path,rev:16 risk:0.42,tasks:12,score:0.59,recovery:0.94,True,replay:522:central_repair_ring
+523,33,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day33,river ford,rev:15 risk:0.46,tasks:11,score:0.67,recovery:0.94,True,replay:523:riverbend_roofward
+524,33,Fay,roofward_archive,v30:Fay:roofward_archive:day33,cool archive lane,rev:14 risk:0.54,tasks:14,score:0.59,recovery:0.94,True,replay:524:roofward_archive
+525,33,Nia,archive_signal,v30:Nia:archive_signal:day33,stone kiosk path,rev:16 risk:0.46,tasks:10,score:0.59,recovery:0.94,True,replay:525:archive_signal
+526,33,Milo,signal_orchard,v30:Milo:signal_orchard:day33,dusk road,rev:18 risk:0.38,tasks:13,score:0.50,recovery:0.94,True,replay:526:signal_orchard
+527,33,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day33,market plank route,rev:19 risk:0.44,tasks:12,score:0.67,recovery:0.94,True,replay:527:orchard_riverbend
+528,34,Juno,central_repair_ring,v30:Juno:central_repair_ring:day34,outer bell path,rev:17 risk:0.49,tasks:12,score:0.59,recovery:0.94,True,replay:528:central_repair_ring
+529,34,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day34,river ford,rev:15 risk:0.44,tasks:11,score:0.67,recovery:0.94,True,replay:529:riverbend_roofward
+530,34,Fay,roofward_archive,v30:Fay:roofward_archive:day34,cool archive lane,rev:14 risk:0.52,tasks:14,score:0.59,recovery:0.94,True,replay:530:roofward_archive
+531,34,Nia,archive_signal,v30:Nia:archive_signal:day34,stone kiosk path,rev:17 risk:0.53,tasks:10,score:0.59,recovery:0.94,True,replay:531:archive_signal
+532,34,Milo,signal_orchard,v30:Milo:signal_orchard:day34,dusk road,rev:18 risk:0.41,tasks:13,score:0.50,recovery:0.94,True,replay:532:signal_orchard
+533,34,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day34,fen track,rev:19 risk:0.43,tasks:12,score:0.67,recovery:0.94,True,replay:533:orchard_riverbend
+534,34,Juno,central_repair_ring,v30:Juno:central_repair_ring:day34,outer bell path,rev:17 risk:0.48,tasks:12,score:0.59,recovery:0.94,True,replay:534:central_repair_ring
+535,34,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day34,river ford,rev:15 risk:0.47,tasks:11,score:0.70,recovery:0.94,True,replay:535:riverbend_roofward
+536,34,Fay,roofward_archive,v30:Fay:roofward_archive:day34,cool archive lane,rev:15 risk:0.45,tasks:14,score:0.59,recovery:0.94,True,replay:536:roofward_archive
+537,34,Nia,archive_signal,v30:Nia:archive_signal:day34,stone kiosk path,rev:18 risk:0.48,tasks:10,score:0.59,recovery:0.94,True,replay:537:archive_signal
+538,34,Milo,signal_orchard,v30:Milo:signal_orchard:day34,dusk road,rev:18 risk:0.43,tasks:14,score:0.50,recovery:0.94,True,replay:538:signal_orchard
+539,34,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day34,fen track,rev:19 risk:0.41,tasks:12,score:0.70,recovery:0.94,True,replay:539:orchard_riverbend
+540,34,Juno,central_repair_ring,v30:Juno:central_repair_ring:day34,outer bell path,rev:17 risk:0.48,tasks:12,score:0.59,recovery:0.94,True,replay:540:central_repair_ring
+541,34,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day34,orchard ridge detour,rev:15 risk:0.48,tasks:11,score:0.70,recovery:0.94,True,replay:541:riverbend_roofward
+542,34,Fay,roofward_archive,v30:Fay:roofward_archive:day34,cool archive lane,rev:15 risk:0.43,tasks:15,score:0.59,recovery:0.94,True,replay:542:roofward_archive
+543,34,Nia,archive_signal,v30:Nia:archive_signal:day34,stone kiosk path,rev:19 risk:0.43,tasks:10,score:0.59,recovery:0.94,True,replay:543:archive_signal
+544,35,Milo,signal_orchard,v30:Milo:signal_orchard:day35,dusk road,rev:19 risk:0.49,tasks:14,score:0.50,recovery:0.94,True,replay:544:signal_orchard
+545,35,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day35,fen track,rev:19 risk:0.43,tasks:12,score:0.70,recovery:0.94,True,replay:545:orchard_riverbend
+546,35,Juno,central_repair_ring,v30:Juno:central_repair_ring:day35,outer bell path,rev:17 risk:0.46,tasks:13,score:0.59,recovery:0.94,True,replay:546:central_repair_ring
+547,35,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day35,orchard ridge detour,rev:15 risk:0.49,tasks:11,score:0.73,recovery:0.94,True,replay:547:riverbend_roofward
+548,35,Fay,roofward_archive,v30:Fay:roofward_archive:day35,cool archive lane,rev:16 risk:0.49,tasks:15,score:0.59,recovery:0.94,True,replay:548:roofward_archive
+549,35,Nia,archive_signal,v30:Nia:archive_signal:day35,paper lane,rev:19 risk:0.42,tasks:10,score:0.59,recovery:0.94,True,replay:549:archive_signal
+550,35,Milo,signal_orchard,v30:Milo:signal_orchard:day35,dusk road,rev:19 risk:0.48,tasks:14,score:0.50,recovery:0.94,True,replay:550:signal_orchard
+551,35,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day35,fen track,rev:19 risk:0.45,tasks:12,score:0.73,recovery:0.94,True,replay:551:orchard_riverbend
+552,35,Juno,central_repair_ring,v30:Juno:central_repair_ring:day35,outer bell path,rev:18 risk:0.53,tasks:13,score:0.59,recovery:0.94,True,replay:552:central_repair_ring
+553,35,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day35,orchard ridge detour,rev:15 risk:0.48,tasks:11,score:0.73,recovery:0.94,True,replay:553:riverbend_roofward
+554,35,Fay,roofward_archive,v30:Fay:roofward_archive:day35,cool archive lane,rev:17 risk:0.44,tasks:16,score:0.59,recovery:0.94,True,replay:554:roofward_archive
+555,35,Nia,archive_signal,v30:Nia:archive_signal:day35,paper lane,rev:19 risk:0.44,tasks:10,score:0.62,recovery:0.94,True,replay:555:archive_signal
+556,35,Milo,signal_orchard,v30:Milo:signal_orchard:day35,dusk road,rev:19 risk:0.48,tasks:14,score:0.50,recovery:0.94,True,replay:556:signal_orchard
+557,35,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day35,market plank route,rev:19 risk:0.45,tasks:12,score:0.73,recovery:0.94,True,replay:557:orchard_riverbend
+558,35,Juno,central_repair_ring,v30:Juno:central_repair_ring:day35,outer bell path,rev:18 risk:0.53,tasks:14,score:0.59,recovery:0.94,True,replay:558:central_repair_ring
+559,35,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day35,orchard ridge detour,rev:15 risk:0.46,tasks:11,score:0.73,recovery:0.94,True,replay:559:riverbend_roofward
+560,36,Nia,archive_signal,v30:Nia:archive_signal:day36,paper lane,rev:20 risk:0.39,tasks:10,score:0.62,recovery:0.94,True,replay:560:archive_signal
+561,36,Milo,signal_orchard,v30:Milo:signal_orchard:day36,dusk road,rev:19 risk:0.48,tasks:14,score:0.50,recovery:0.94,True,replay:561:signal_orchard
+562,36,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day36,market plank route,rev:19 risk:0.43,tasks:13,score:0.73,recovery:0.94,True,replay:562:orchard_riverbend
+563,36,Juno,central_repair_ring,v30:Juno:central_repair_ring:day36,outer bell path,rev:18 risk:0.53,tasks:14,score:0.62,recovery:0.94,True,replay:563:central_repair_ring
+564,36,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day36,orchard ridge detour,rev:16 risk:0.52,tasks:11,score:0.73,recovery:0.94,True,replay:564:riverbend_roofward
+565,36,Fay,roofward_archive,v30:Fay:roofward_archive:day36,glass stair,rev:17 risk:0.42,tasks:16,score:0.59,recovery:0.94,True,replay:565:roofward_archive
+566,36,Nia,archive_signal,v30:Nia:archive_signal:day36,paper lane,rev:20 risk:0.39,tasks:10,score:0.62,recovery:0.94,True,replay:566:archive_signal
+567,36,Milo,signal_orchard,v30:Milo:signal_orchard:day36,dusk road,rev:19 risk:0.50,tasks:14,score:0.53,recovery:0.94,True,replay:567:signal_orchard
+568,36,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day36,market plank route,rev:20 risk:0.51,tasks:13,score:0.73,recovery:0.94,True,replay:568:orchard_riverbend
+569,36,Juno,central_repair_ring,v30:Juno:central_repair_ring:day36,outer bell path,rev:18 risk:0.50,tasks:14,score:0.62,recovery:0.94,True,replay:569:central_repair_ring
+570,36,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day36,orchard ridge detour,rev:17 risk:0.48,tasks:11,score:0.73,recovery:0.94,True,replay:570:riverbend_roofward
+571,36,Fay,roofward_archive,v30:Fay:roofward_archive:day36,glass stair,rev:17 risk:0.44,tasks:16,score:0.62,recovery:0.94,True,replay:571:roofward_archive
+572,36,Nia,archive_signal,v30:Nia:archive_signal:day36,paper lane,rev:20 risk:0.40,tasks:10,score:0.62,recovery:0.94,True,replay:572:archive_signal
+573,36,Milo,signal_orchard,v30:Milo:signal_orchard:day36,river lantern loop,rev:19 risk:0.49,tasks:14,score:0.53,recovery:0.94,True,replay:573:signal_orchard
+574,36,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day36,market plank route,rev:20 risk:0.51,tasks:14,score:0.73,recovery:0.94,True,replay:574:orchard_riverbend
+575,36,Juno,central_repair_ring,v30:Juno:central_repair_ring:day36,outer bell path,rev:18 risk:0.47,tasks:14,score:0.62,recovery:0.94,True,replay:575:central_repair_ring
+576,37,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day37,orchard ridge detour,rev:18 risk:0.43,tasks:11,score:0.73,recovery:0.94,True,replay:576:riverbend_roofward
+577,37,Fay,roofward_archive,v30:Fay:roofward_archive:day37,cool archive lane,rev:17 risk:0.45,tasks:16,score:0.62,recovery:0.94,True,replay:577:roofward_archive
+578,37,Nia,archive_signal,v30:Nia:archive_signal:day37,paper lane,rev:20 risk:0.43,tasks:11,score:0.62,recovery:0.94,True,replay:578:archive_signal
+579,37,Milo,signal_orchard,v30:Milo:signal_orchard:day37,river lantern loop,rev:19 risk:0.49,tasks:14,score:0.53,recovery:0.94,True,replay:579:signal_orchard
+580,37,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day37,market plank route,rev:20 risk:0.50,tasks:14,score:0.73,recovery:0.94,True,replay:580:orchard_riverbend
+581,37,Juno,central_repair_ring,v30:Juno:central_repair_ring:day37,outer bell path,rev:18 risk:0.48,tasks:14,score:0.62,recovery:0.94,True,replay:581:central_repair_ring
+582,37,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day37,orchard ridge detour,rev:18 risk:0.42,tasks:11,score:0.73,recovery:0.94,True,replay:582:riverbend_roofward
+583,37,Fay,roofward_archive,v30:Fay:roofward_archive:day37,cool archive lane,rev:17 risk:0.46,tasks:16,score:0.65,recovery:0.94,True,replay:583:roofward_archive
+584,37,Nia,archive_signal,v30:Nia:archive_signal:day37,paper lane,rev:21 risk:0.48,tasks:11,score:0.62,recovery:0.94,True,replay:584:archive_signal
+585,37,Milo,signal_orchard,v30:Milo:signal_orchard:day37,river lantern loop,rev:19 risk:0.46,tasks:14,score:0.53,recovery:0.94,True,replay:585:signal_orchard
+586,37,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day37,market plank route,rev:20 risk:0.49,tasks:15,score:0.73,recovery:0.94,True,replay:586:orchard_riverbend
+587,37,Juno,central_repair_ring,v30:Juno:central_repair_ring:day37,outer bell path,rev:18 risk:0.48,tasks:14,score:0.65,recovery:0.94,True,replay:587:central_repair_ring
+588,37,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day37,orchard ridge detour,rev:18 risk:0.42,tasks:11,score:0.73,recovery:0.94,True,replay:588:riverbend_roofward
+589,37,Fay,roofward_archive,v30:Fay:roofward_archive:day37,cool archive lane,rev:17 risk:0.45,tasks:16,score:0.65,recovery:0.94,True,replay:589:roofward_archive
+590,37,Nia,archive_signal,v30:Nia:archive_signal:day37,paper lane,rev:21 risk:0.48,tasks:11,score:0.62,recovery:0.94,True,replay:590:archive_signal
+591,37,Milo,signal_orchard,v30:Milo:signal_orchard:day37,river lantern loop,rev:19 risk:0.48,tasks:14,score:0.53,recovery:0.94,True,replay:591:signal_orchard
+592,38,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day38,market plank route,rev:21 risk:0.44,tasks:15,score:0.73,recovery:0.94,True,replay:592:orchard_riverbend
+593,38,Juno,central_repair_ring,v30:Juno:central_repair_ring:day38,outer bell path,rev:18 risk:0.47,tasks:14,score:0.65,recovery:0.94,True,replay:593:central_repair_ring
+594,38,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day38,orchard ridge detour,rev:18 risk:0.44,tasks:12,score:0.73,recovery:0.94,True,replay:594:riverbend_roofward
+595,38,Fay,roofward_archive,v30:Fay:roofward_archive:day38,cool archive lane,rev:17 risk:0.45,tasks:16,score:0.67,recovery:0.94,True,replay:595:roofward_archive
+596,38,Nia,archive_signal,v30:Nia:archive_signal:day38,paper lane,rev:21 risk:0.47,tasks:11,score:0.62,recovery:0.94,True,replay:596:archive_signal
+597,38,Milo,signal_orchard,v30:Milo:signal_orchard:day38,river lantern loop,rev:19 risk:0.48,tasks:14,score:0.53,recovery:0.94,True,replay:597:signal_orchard
+598,38,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day38,market plank route,rev:21 risk:0.45,tasks:15,score:0.73,recovery:0.94,True,replay:598:orchard_riverbend
+599,38,Juno,central_repair_ring,v30:Juno:central_repair_ring:day38,outer bell path,rev:18 risk:0.47,tasks:14,score:0.68,recovery:0.94,True,replay:599:central_repair_ring
+600,38,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day38,orchard ridge detour,rev:19 risk:0.50,tasks:12,score:0.73,recovery:0.94,True,replay:600:riverbend_roofward
+601,38,Fay,roofward_archive,v30:Fay:roofward_archive:day38,cool archive lane,rev:17 risk:0.47,tasks:16,score:0.67,recovery:0.94,True,replay:601:roofward_archive
+602,38,Nia,archive_signal,v30:Nia:archive_signal:day38,paper lane,rev:21 risk:0.45,tasks:12,score:0.62,recovery:0.94,True,replay:602:archive_signal
+603,38,Milo,signal_orchard,v30:Milo:signal_orchard:day38,river lantern loop,rev:19 risk:0.47,tasks:14,score:0.56,recovery:0.94,True,replay:603:signal_orchard
+604,38,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day38,market plank route,rev:21 risk:0.48,tasks:15,score:0.73,recovery:0.94,True,replay:604:orchard_riverbend
+605,38,Juno,central_repair_ring,v30:Juno:central_repair_ring:day38,inner repair yard,rev:18 risk:0.44,tasks:14,score:0.68,recovery:0.94,True,replay:605:central_repair_ring
+606,38,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day38,orchard ridge detour,rev:19 risk:0.49,tasks:13,score:0.73,recovery:0.94,True,replay:606:riverbend_roofward
+607,38,Fay,roofward_archive,v30:Fay:roofward_archive:day38,cool archive lane,rev:17 risk:0.47,tasks:16,score:0.67,recovery:0.94,True,replay:607:roofward_archive
+608,39,Nia,archive_signal,v30:Nia:archive_signal:day39,paper lane,rev:22 risk:0.51,tasks:12,score:0.62,recovery:0.94,True,replay:608:archive_signal
+609,39,Milo,signal_orchard,v30:Milo:signal_orchard:day39,river lantern loop,rev:19 risk:0.45,tasks:14,score:0.56,recovery:0.94,True,replay:609:signal_orchard
+610,39,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day39,market plank route,rev:21 risk:0.47,tasks:15,score:0.73,recovery:0.94,True,replay:610:orchard_riverbend
+611,39,Juno,central_repair_ring,v30:Juno:central_repair_ring:day39,inner repair yard,rev:18 risk:0.47,tasks:14,score:0.68,recovery:0.94,True,replay:611:central_repair_ring
+612,39,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day39,orchard ridge detour,rev:19 risk:0.47,tasks:13,score:0.73,recovery:0.94,True,replay:612:riverbend_roofward
+613,39,Fay,roofward_archive,v30:Fay:roofward_archive:day39,cool archive lane,rev:17 risk:0.47,tasks:16,score:0.67,recovery:0.94,True,replay:613:roofward_archive
+614,39,Nia,archive_signal,v30:Nia:archive_signal:day39,stone kiosk path,rev:22 risk:0.52,tasks:12,score:0.62,recovery:0.94,True,replay:614:archive_signal
+615,39,Milo,signal_orchard,v30:Milo:signal_orchard:day39,river lantern loop,rev:19 risk:0.45,tasks:14,score:0.59,recovery:0.94,True,replay:615:signal_orchard
+616,39,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day39,market plank route,rev:22 risk:0.44,tasks:15,score:0.73,recovery:0.94,True,replay:616:orchard_riverbend
+617,39,Juno,central_repair_ring,v30:Juno:central_repair_ring:day39,outer bell path,rev:18 risk:0.47,tasks:14,score:0.68,recovery:0.94,True,replay:617:central_repair_ring
+618,39,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day39,orchard ridge detour,rev:19 risk:0.44,tasks:14,score:0.73,recovery:0.94,True,replay:618:riverbend_roofward
+619,39,Fay,roofward_archive,v30:Fay:roofward_archive:day39,cool archive lane,rev:17 risk:0.46,tasks:16,score:0.67,recovery:0.94,True,replay:619:roofward_archive
+620,39,Nia,archive_signal,v30:Nia:archive_signal:day39,stone kiosk path,rev:22 risk:0.53,tasks:12,score:0.62,recovery:0.94,True,replay:620:archive_signal
+621,39,Milo,signal_orchard,v30:Milo:signal_orchard:day39,river lantern loop,rev:19 risk:0.47,tasks:14,score:0.59,recovery:0.94,True,replay:621:signal_orchard
+622,39,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day39,market plank route,rev:22 risk:0.43,tasks:16,score:0.73,recovery:0.94,True,replay:622:orchard_riverbend
+623,39,Juno,central_repair_ring,v30:Juno:central_repair_ring:day39,outer bell path,rev:18 risk:0.47,tasks:14,score:0.68,recovery:0.94,True,replay:623:central_repair_ring
+624,40,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day40,orchard ridge detour,rev:20 risk:0.51,tasks:14,score:0.73,recovery:0.94,True,replay:624:riverbend_roofward
+625,40,Fay,roofward_archive,v30:Fay:roofward_archive:day40,glass stair,rev:17 risk:0.44,tasks:16,score:0.67,recovery:0.94,True,replay:625:roofward_archive
+626,40,Nia,archive_signal,v30:Nia:archive_signal:day40,stone kiosk path,rev:22 risk:0.51,tasks:13,score:0.62,recovery:0.94,True,replay:626:archive_signal
+627,40,Milo,signal_orchard,v30:Milo:signal_orchard:day40,river lantern loop,rev:19 risk:0.48,tasks:14,score:0.62,recovery:0.94,True,replay:627:signal_orchard
+628,40,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day40,market plank route,rev:22 risk:0.45,tasks:16,score:0.73,recovery:0.94,True,replay:628:orchard_riverbend
+629,40,Juno,central_repair_ring,v30:Juno:central_repair_ring:day40,outer bell path,rev:18 risk:0.45,tasks:14,score:0.68,recovery:0.94,True,replay:629:central_repair_ring
+630,40,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day40,orchard ridge detour,rev:20 risk:0.51,tasks:14,score:0.73,recovery:0.94,True,replay:630:riverbend_roofward
+631,40,Fay,roofward_archive,v30:Fay:roofward_archive:day40,glass stair,rev:17 risk:0.47,tasks:16,score:0.70,recovery:0.94,True,replay:631:roofward_archive
+632,40,Nia,archive_signal,v30:Nia:archive_signal:day40,stone kiosk path,rev:23 risk:0.44,tasks:13,score:0.62,recovery:0.94,True,replay:632:archive_signal
+633,40,Milo,signal_orchard,v30:Milo:signal_orchard:day40,river lantern loop,rev:19 risk:0.48,tasks:14,score:0.62,recovery:0.94,True,replay:633:signal_orchard
+634,40,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day40,market plank route,rev:22 risk:0.46,tasks:17,score:0.73,recovery:0.94,True,replay:634:orchard_riverbend
+635,40,Juno,central_repair_ring,v30:Juno:central_repair_ring:day40,outer bell path,rev:18 risk:0.43,tasks:14,score:0.71,recovery:0.94,True,replay:635:central_repair_ring
+636,40,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day40,orchard ridge detour,rev:20 risk:0.51,tasks:14,score:0.73,recovery:0.94,True,replay:636:riverbend_roofward
+637,40,Fay,roofward_archive,v30:Fay:roofward_archive:day40,cool archive lane,rev:17 risk:0.48,tasks:16,score:0.70,recovery:0.94,True,replay:637:roofward_archive
+638,40,Nia,archive_signal,v30:Nia:archive_signal:day40,stone kiosk path,rev:23 risk:0.42,tasks:14,score:0.62,recovery:0.94,True,replay:638:archive_signal
+639,40,Milo,signal_orchard,v30:Milo:signal_orchard:day40,river lantern loop,rev:19 risk:0.47,tasks:14,score:0.62,recovery:0.94,True,replay:639:signal_orchard
+640,41,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day41,market plank route,rev:23 risk:0.43,tasks:17,score:0.73,recovery:0.94,True,replay:640:orchard_riverbend
+641,41,Juno,central_repair_ring,v30:Juno:central_repair_ring:day41,outer bell path,rev:18 risk:0.44,tasks:14,score:0.71,recovery:0.94,True,replay:641:central_repair_ring
+642,41,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day41,orchard ridge detour,rev:20 risk:0.49,tasks:15,score:0.73,recovery:0.94,True,replay:642:riverbend_roofward
+643,41,Fay,roofward_archive,v30:Fay:roofward_archive:day41,cool archive lane,rev:17 risk:0.49,tasks:16,score:0.73,recovery:0.94,True,replay:643:roofward_archive
+644,41,Nia,archive_signal,v30:Nia:archive_signal:day41,stone kiosk path,rev:23 risk:0.44,tasks:14,score:0.62,recovery:0.94,True,replay:644:archive_signal
+645,41,Milo,signal_orchard,v30:Milo:signal_orchard:day41,river lantern loop,rev:19 risk:0.44,tasks:14,score:0.62,recovery:0.94,True,replay:645:signal_orchard
+646,41,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day41,market plank route,rev:23 risk:0.42,tasks:17,score:0.73,recovery:0.94,True,replay:646:orchard_riverbend
+647,41,Juno,central_repair_ring,v30:Juno:central_repair_ring:day41,outer bell path,rev:18 risk:0.46,tasks:14,score:0.74,recovery:0.94,True,replay:647:central_repair_ring
+648,41,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day41,orchard ridge detour,rev:21 risk:0.43,tasks:15,score:0.73,recovery:0.94,True,replay:648:riverbend_roofward
+649,41,Fay,roofward_archive,v30:Fay:roofward_archive:day41,glass stair,rev:17 risk:0.48,tasks:16,score:0.73,recovery:0.94,True,replay:649:roofward_archive
+650,41,Nia,archive_signal,v30:Nia:archive_signal:day41,stone kiosk path,rev:23 risk:0.44,tasks:14,score:0.62,recovery:0.94,True,replay:650:archive_signal
+651,41,Milo,signal_orchard,v30:Milo:signal_orchard:day41,river lantern loop,rev:19 risk:0.46,tasks:14,score:0.62,recovery:0.94,True,replay:651:signal_orchard
+652,41,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day41,market plank route,rev:23 risk:0.43,tasks:17,score:0.73,recovery:0.94,True,replay:652:orchard_riverbend
+653,41,Juno,central_repair_ring,v30:Juno:central_repair_ring:day41,outer bell path,rev:18 risk:0.46,tasks:14,score:0.74,recovery:0.94,True,replay:653:central_repair_ring
+654,41,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day41,orchard ridge detour,rev:21 risk:0.45,tasks:16,score:0.73,recovery:0.94,True,replay:654:riverbend_roofward
+655,41,Fay,roofward_archive,v30:Fay:roofward_archive:day41,glass stair,rev:17 risk:0.46,tasks:16,score:0.73,recovery:0.94,True,replay:655:roofward_archive
+656,42,Milo,signal_orchard,v30:Milo:signal_orchard:day42,river lantern loop,rev:20 risk:0.41,tasks:14,score:0.62,recovery:0.94,True,replay:656:signal_orchard
+657,42,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day42,market plank route,rev:23 risk:0.44,tasks:17,score:0.73,recovery:0.94,True,replay:657:orchard_riverbend
+658,42,Juno,central_repair_ring,v30:Juno:central_repair_ring:day42,outer bell path,rev:18 risk:0.44,tasks:15,score:0.74,recovery:0.94,True,replay:658:central_repair_ring
+659,42,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day42,orchard ridge detour,rev:21 risk:0.46,tasks:16,score:0.76,recovery:0.94,True,replay:659:riverbend_roofward
+660,42,Fay,roofward_archive,v30:Fay:roofward_archive:day42,glass stair,rev:17 risk:0.47,tasks:16,score:0.73,recovery:0.94,True,replay:660:roofward_archive
+661,42,Nia,archive_signal,v30:Nia:archive_signal:day42,paper lane,rev:23 risk:0.42,tasks:14,score:0.62,recovery:0.94,True,replay:661:archive_signal
+662,42,Milo,signal_orchard,v30:Milo:signal_orchard:day42,river lantern loop,rev:20 risk:0.41,tasks:14,score:0.62,recovery:0.94,True,replay:662:signal_orchard
+663,42,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day42,market plank route,rev:23 risk:0.46,tasks:17,score:0.74,recovery:0.94,True,replay:663:orchard_riverbend
+664,42,Juno,central_repair_ring,v30:Juno:central_repair_ring:day42,outer bell path,rev:19 risk:0.52,tasks:15,score:0.74,recovery:0.94,True,replay:664:central_repair_ring
+665,42,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day42,orchard ridge detour,rev:21 risk:0.45,tasks:16,score:0.76,recovery:0.94,True,replay:665:riverbend_roofward
+666,42,Fay,roofward_archive,v30:Fay:roofward_archive:day42,glass stair,rev:17 risk:0.47,tasks:17,score:0.73,recovery:0.94,True,replay:666:roofward_archive
+667,42,Nia,archive_signal,v30:Nia:archive_signal:day42,paper lane,rev:23 risk:0.44,tasks:14,score:0.62,recovery:0.94,True,replay:667:archive_signal
+668,42,Milo,signal_orchard,v30:Milo:signal_orchard:day42,river lantern loop,rev:20 risk:0.42,tasks:14,score:0.62,recovery:0.94,True,replay:668:signal_orchard
+669,42,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day42,market plank route,rev:23 risk:0.46,tasks:17,score:0.74,recovery:0.94,True,replay:669:orchard_riverbend
+670,42,Juno,central_repair_ring,v30:Juno:central_repair_ring:day42,outer bell path,rev:19 risk:0.52,tasks:15,score:0.74,recovery:0.94,True,replay:670:central_repair_ring
+671,42,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day42,orchard ridge detour,rev:21 risk:0.44,tasks:16,score:0.76,recovery:0.94,True,replay:671:riverbend_roofward
+672,43,Fay,roofward_archive,v30:Fay:roofward_archive:day43,glass stair,rev:18 risk:0.42,tasks:17,score:0.73,recovery:0.94,True,replay:672:roofward_archive
+673,43,Nia,archive_signal,v30:Nia:archive_signal:day43,stone kiosk path,rev:23 risk:0.45,tasks:14,score:0.62,recovery:0.94,True,replay:673:archive_signal
+674,43,Milo,signal_orchard,v30:Milo:signal_orchard:day43,river lantern loop,rev:20 risk:0.44,tasks:15,score:0.62,recovery:0.94,True,replay:674:signal_orchard
+675,43,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day43,market plank route,rev:23 risk:0.46,tasks:17,score:0.77,recovery:0.94,True,replay:675:orchard_riverbend
+676,43,Juno,central_repair_ring,v30:Juno:central_repair_ring:day43,outer bell path,rev:20 risk:0.48,tasks:15,score:0.74,recovery:0.94,True,replay:676:central_repair_ring
+677,43,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day43,orchard ridge detour,rev:21 risk:0.46,tasks:16,score:0.76,recovery:0.94,True,replay:677:riverbend_roofward
+678,43,Fay,roofward_archive,v30:Fay:roofward_archive:day43,glass stair,rev:18 risk:0.41,tasks:17,score:0.73,recovery:0.94,True,replay:678:roofward_archive
+679,43,Nia,archive_signal,v30:Nia:archive_signal:day43,stone kiosk path,rev:23 risk:0.46,tasks:14,score:0.65,recovery:0.94,True,replay:679:archive_signal
+680,43,Milo,signal_orchard,v30:Milo:signal_orchard:day43,river lantern loop,rev:21 risk:0.50,tasks:15,score:0.62,recovery:0.94,True,replay:680:signal_orchard
+681,43,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day43,fen track,rev:23 risk:0.44,tasks:17,score:0.77,recovery:0.94,True,replay:681:orchard_riverbend
+682,43,Juno,central_repair_ring,v30:Juno:central_repair_ring:day43,outer bell path,rev:21 risk:0.45,tasks:16,score:0.74,recovery:0.94,True,replay:682:central_repair_ring
+683,43,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day43,orchard ridge detour,rev:21 risk:0.47,tasks:16,score:0.79,recovery:0.94,True,replay:683:riverbend_roofward
+684,43,Fay,roofward_archive,v30:Fay:roofward_archive:day43,glass stair,rev:18 risk:0.41,tasks:17,score:0.73,recovery:0.94,True,replay:684:roofward_archive
+685,43,Nia,archive_signal,v30:Nia:archive_signal:day43,stone kiosk path,rev:23 risk:0.45,tasks:14,score:0.65,recovery:0.94,True,replay:685:archive_signal
+686,43,Milo,signal_orchard,v30:Milo:signal_orchard:day43,river lantern loop,rev:21 risk:0.49,tasks:16,score:0.62,recovery:0.94,True,replay:686:signal_orchard
+687,43,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day43,fen track,rev:23 risk:0.46,tasks:17,score:0.77,recovery:0.94,True,replay:687:orchard_riverbend
+688,44,Juno,central_repair_ring,v30:Juno:central_repair_ring:day44,outer bell path,rev:22 risk:0.40,tasks:16,score:0.74,recovery:0.94,True,replay:688:central_repair_ring
+689,44,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day44,orchard ridge detour,rev:21 risk:0.46,tasks:16,score:0.79,recovery:0.94,True,replay:689:riverbend_roofward
+690,44,Fay,roofward_archive,v30:Fay:roofward_archive:day44,glass stair,rev:18 risk:0.43,tasks:17,score:0.73,recovery:0.94,True,replay:690:roofward_archive
+691,44,Nia,archive_signal,v30:Nia:archive_signal:day44,stone kiosk path,rev:23 risk:0.45,tasks:14,score:0.68,recovery:0.94,True,replay:691:archive_signal
+692,44,Milo,signal_orchard,v30:Milo:signal_orchard:day44,river lantern loop,rev:21 risk:0.48,tasks:16,score:0.62,recovery:0.94,True,replay:692:signal_orchard
+693,44,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day44,fen track,rev:24 risk:0.52,tasks:17,score:0.77,recovery:0.94,True,replay:693:orchard_riverbend
+694,44,Juno,central_repair_ring,v30:Juno:central_repair_ring:day44,outer bell path,rev:22 risk:0.42,tasks:16,score:0.74,recovery:0.94,True,replay:694:central_repair_ring
+695,44,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day44,orchard ridge detour,rev:21 risk:0.47,tasks:16,score:0.79,recovery:0.94,True,replay:695:riverbend_roofward
+696,44,Fay,roofward_archive,v30:Fay:roofward_archive:day44,glass stair,rev:18 risk:0.44,tasks:17,score:0.73,recovery:0.94,True,replay:696:roofward_archive
+697,44,Nia,archive_signal,v30:Nia:archive_signal:day44,stone kiosk path,rev:23 risk:0.47,tasks:14,score:0.68,recovery:0.94,True,replay:697:archive_signal
+698,44,Milo,signal_orchard,v30:Milo:signal_orchard:day44,river lantern loop,rev:21 risk:0.46,tasks:17,score:0.62,recovery:0.94,True,replay:698:signal_orchard
+699,44,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day44,market plank route,rev:25 risk:0.47,tasks:17,score:0.77,recovery:0.94,True,replay:699:orchard_riverbend
+700,44,Juno,central_repair_ring,v30:Juno:central_repair_ring:day44,outer bell path,rev:22 risk:0.46,tasks:16,score:0.74,recovery:0.94,True,replay:700:central_repair_ring
+701,44,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day44,orchard ridge detour,rev:21 risk:0.45,tasks:16,score:0.79,recovery:0.94,True,replay:701:riverbend_roofward
+702,44,Fay,roofward_archive,v30:Fay:roofward_archive:day44,glass stair,rev:18 risk:0.44,tasks:18,score:0.73,recovery:0.94,True,replay:702:roofward_archive
+703,44,Nia,archive_signal,v30:Nia:archive_signal:day44,stone kiosk path,rev:23 risk:0.47,tasks:14,score:0.68,recovery:0.94,True,replay:703:archive_signal
+704,45,Milo,signal_orchard,v30:Milo:signal_orchard:day45,river lantern loop,rev:22 risk:0.52,tasks:17,score:0.62,recovery:0.94,True,replay:704:signal_orchard
+705,45,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day45,market plank route,rev:25 risk:0.45,tasks:17,score:0.77,recovery:0.94,True,replay:705:orchard_riverbend
+706,45,Juno,central_repair_ring,v30:Juno:central_repair_ring:day45,outer bell path,rev:22 risk:0.45,tasks:17,score:0.74,recovery:0.94,True,replay:706:central_repair_ring
+707,45,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day45,orchard ridge detour,rev:21 risk:0.48,tasks:16,score:0.82,recovery:0.94,True,replay:707:riverbend_roofward
+708,45,Fay,roofward_archive,v30:Fay:roofward_archive:day45,glass stair,rev:18 risk:0.42,tasks:18,score:0.73,recovery:0.94,True,replay:708:roofward_archive
+709,45,Nia,archive_signal,v30:Nia:archive_signal:day45,stone kiosk path,rev:23 risk:0.47,tasks:14,score:0.68,recovery:0.94,True,replay:709:archive_signal
+710,45,Milo,signal_orchard,v30:Milo:signal_orchard:day45,river lantern loop,rev:23 risk:0.57,tasks:17,score:0.62,recovery:0.94,True,replay:710:signal_orchard
+711,45,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day45,market plank route,rev:25 risk:0.45,tasks:17,score:0.80,recovery:0.94,True,replay:711:orchard_riverbend
+712,45,Juno,central_repair_ring,v30:Juno:central_repair_ring:day45,outer bell path,rev:23 risk:0.42,tasks:17,score:0.74,recovery:0.94,True,replay:712:central_repair_ring
+713,45,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day45,orchard ridge detour,rev:21 risk:0.49,tasks:16,score:0.82,recovery:0.94,True,replay:713:riverbend_roofward
+714,45,Fay,roofward_archive,v30:Fay:roofward_archive:day45,glass stair,rev:18 risk:0.41,tasks:19,score:0.73,recovery:0.94,True,replay:714:roofward_archive
+715,45,Nia,archive_signal,v30:Nia:archive_signal:day45,stone kiosk path,rev:23 risk:0.46,tasks:14,score:0.71,recovery:0.94,True,replay:715:archive_signal
+716,45,Milo,signal_orchard,v30:Milo:signal_orchard:day45,river lantern loop,rev:24 risk:0.62,tasks:17,score:0.62,recovery:0.94,True,replay:716:signal_orchard
+717,45,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day45,market plank route,rev:25 risk:0.46,tasks:17,score:0.80,recovery:0.94,True,replay:717:orchard_riverbend
+718,45,Juno,central_repair_ring,v30:Juno:central_repair_ring:day45,outer bell path,rev:23 risk:0.41,tasks:18,score:0.74,recovery:0.94,True,replay:718:central_repair_ring
+719,45,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day45,orchard ridge detour,rev:21 risk:0.49,tasks:16,score:0.82,recovery:0.94,True,replay:719:riverbend_roofward
+720,46,Fay,roofward_archive,v30:Fay:roofward_archive:day46,glass stair,rev:19 risk:0.48,tasks:19,score:0.73,recovery:0.94,True,replay:720:roofward_archive
+721,46,Nia,archive_signal,v30:Nia:archive_signal:day46,paper lane,rev:24 risk:0.41,tasks:14,score:0.71,recovery:0.94,True,replay:721:archive_signal
+722,46,Milo,signal_orchard,v30:Milo:signal_orchard:day46,river lantern loop,rev:24 risk:0.58,tasks:18,score:0.62,recovery:0.94,True,replay:722:signal_orchard
+723,46,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day46,market plank route,rev:25 risk:0.48,tasks:17,score:0.83,recovery:0.94,True,replay:723:orchard_riverbend
+724,46,Juno,central_repair_ring,v30:Juno:central_repair_ring:day46,outer bell path,rev:23 risk:0.43,tasks:18,score:0.74,recovery:0.94,True,replay:724:central_repair_ring
+725,46,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day46,orchard ridge detour,rev:21 risk:0.47,tasks:16,score:0.82,recovery:0.94,True,replay:725:riverbend_roofward
+726,46,Fay,roofward_archive,v30:Fay:roofward_archive:day46,glass stair,rev:19 risk:0.48,tasks:19,score:0.73,recovery:0.94,True,replay:726:roofward_archive
+727,46,Nia,archive_signal,v30:Nia:archive_signal:day46,paper lane,rev:25 risk:0.51,tasks:14,score:0.71,recovery:0.94,True,replay:727:archive_signal
+728,46,Milo,signal_orchard,v30:Milo:signal_orchard:day46,river lantern loop,rev:25 risk:0.51,tasks:18,score:0.62,recovery:0.94,True,replay:728:signal_orchard
+729,46,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day46,market plank route,rev:25 risk:0.48,tasks:17,score:0.83,recovery:0.94,True,replay:729:orchard_riverbend
+730,46,Juno,central_repair_ring,v30:Juno:central_repair_ring:day46,outer bell path,rev:23 risk:0.44,tasks:18,score:0.74,recovery:0.94,True,replay:730:central_repair_ring
+731,46,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day46,orchard ridge detour,rev:21 risk:0.46,tasks:16,score:0.83,recovery:0.94,True,replay:731:riverbend_roofward
+732,46,Fay,roofward_archive,v30:Fay:roofward_archive:day46,glass stair,rev:19 risk:0.49,tasks:19,score:0.73,recovery:0.94,True,replay:732:roofward_archive
+733,46,Nia,archive_signal,v30:Nia:archive_signal:day46,stone kiosk path,rev:26 risk:0.58,tasks:14,score:0.71,recovery:0.94,True,replay:733:archive_signal
+734,46,Milo,signal_orchard,v30:Milo:signal_orchard:day46,river lantern loop,rev:25 risk:0.48,tasks:19,score:0.62,recovery:0.94,True,replay:734:signal_orchard
+735,46,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day46,market plank route,rev:25 risk:0.46,tasks:17,score:0.83,recovery:0.94,True,replay:735:orchard_riverbend
+736,47,Juno,central_repair_ring,v30:Juno:central_repair_ring:day47,outer bell path,rev:24 risk:0.42,tasks:18,score:0.74,recovery:0.94,True,replay:736:central_repair_ring
+737,47,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day47,river ford,rev:21 risk:0.47,tasks:16,score:0.83,recovery:0.94,True,replay:737:riverbend_roofward
+738,47,Fay,roofward_archive,v30:Fay:roofward_archive:day47,glass stair,rev:20 risk:0.43,tasks:20,score:0.73,recovery:0.94,True,replay:738:roofward_archive
+739,47,Nia,archive_signal,v30:Nia:archive_signal:day47,stone kiosk path,rev:26 risk:0.58,tasks:14,score:0.74,recovery:0.94,True,replay:739:archive_signal
+740,47,Milo,signal_orchard,v30:Milo:signal_orchard:day47,river lantern loop,rev:25 risk:0.48,tasks:19,score:0.62,recovery:0.94,True,replay:740:signal_orchard
+741,47,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day47,market plank route,rev:25 risk:0.44,tasks:17,score:0.83,recovery:0.94,True,replay:741:orchard_riverbend
+742,47,Juno,central_repair_ring,v30:Juno:central_repair_ring:day47,outer bell path,rev:24 risk:0.41,tasks:18,score:0.74,recovery:0.94,True,replay:742:central_repair_ring
+743,47,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day47,river ford,rev:21 risk:0.50,tasks:16,score:0.86,recovery:0.94,True,replay:743:riverbend_roofward
+744,47,Fay,roofward_archive,v30:Fay:roofward_archive:day47,glass stair,rev:21 risk:0.38,tasks:20,score:0.73,recovery:0.94,True,replay:744:roofward_archive
+745,47,Nia,archive_signal,v30:Nia:archive_signal:day47,stone kiosk path,rev:26 risk:0.55,tasks:14,score:0.74,recovery:0.94,True,replay:745:archive_signal
+746,47,Milo,signal_orchard,v30:Milo:signal_orchard:day47,river lantern loop,rev:25 risk:0.48,tasks:20,score:0.62,recovery:0.94,True,replay:746:signal_orchard
+747,47,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day47,market plank route,rev:25 risk:0.46,tasks:17,score:0.86,recovery:0.94,True,replay:747:orchard_riverbend
+748,47,Juno,central_repair_ring,v30:Juno:central_repair_ring:day47,outer bell path,rev:24 risk:0.42,tasks:18,score:0.74,recovery:0.94,True,replay:748:central_repair_ring
+749,47,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day47,orchard ridge detour,rev:21 risk:0.49,tasks:16,score:0.86,recovery:0.94,True,replay:749:riverbend_roofward
+750,47,Fay,roofward_archive,v30:Fay:roofward_archive:day47,glass stair,rev:22 risk:0.46,tasks:20,score:0.73,recovery:0.94,True,replay:750:roofward_archive
+751,47,Nia,archive_signal,v30:Nia:archive_signal:day47,stone kiosk path,rev:26 risk:0.52,tasks:14,score:0.74,recovery:0.94,True,replay:751:archive_signal
+752,48,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day48,market plank route,rev:26 risk:0.41,tasks:17,score:0.86,recovery:0.94,True,replay:752:orchard_riverbend
+753,48,Juno,central_repair_ring,v30:Juno:central_repair_ring:day48,inner repair yard,rev:24 risk:0.44,tasks:18,score:0.74,recovery:0.94,True,replay:753:central_repair_ring
+754,48,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day48,orchard ridge detour,rev:21 risk:0.47,tasks:17,score:0.86,recovery:0.94,True,replay:754:riverbend_roofward
+755,48,Fay,roofward_archive,v30:Fay:roofward_archive:day48,glass stair,rev:22 risk:0.47,tasks:20,score:0.76,recovery:0.94,True,replay:755:roofward_archive
+756,48,Nia,archive_signal,v30:Nia:archive_signal:day48,stone kiosk path,rev:26 risk:0.52,tasks:14,score:0.74,recovery:0.94,True,replay:756:archive_signal
+757,48,Milo,signal_orchard,v30:Milo:signal_orchard:day48,river lantern loop,rev:25 risk:0.46,tasks:20,score:0.62,recovery:0.94,True,replay:757:signal_orchard
+758,48,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day48,market plank route,rev:26 risk:0.41,tasks:17,score:0.86,recovery:0.94,True,replay:758:orchard_riverbend
+759,48,Juno,central_repair_ring,v30:Juno:central_repair_ring:day48,inner repair yard,rev:24 risk:0.46,tasks:18,score:0.77,recovery:0.94,True,replay:759:central_repair_ring
+760,48,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day48,orchard ridge detour,rev:22 risk:0.42,tasks:17,score:0.86,recovery:0.94,True,replay:760:riverbend_roofward
+761,48,Fay,roofward_archive,v30:Fay:roofward_archive:day48,cool archive lane,rev:22 risk:0.46,tasks:20,score:0.76,recovery:0.94,True,replay:761:roofward_archive
+762,48,Nia,archive_signal,v30:Nia:archive_signal:day48,stone kiosk path,rev:26 risk:0.52,tasks:15,score:0.74,recovery:0.94,True,replay:762:archive_signal
+763,48,Milo,signal_orchard,v30:Milo:signal_orchard:day48,river lantern loop,rev:25 risk:0.47,tasks:20,score:0.65,recovery:0.94,True,replay:763:signal_orchard
+764,48,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day48,market plank route,rev:26 risk:0.42,tasks:17,score:0.86,recovery:0.94,True,replay:764:orchard_riverbend
+765,48,Juno,central_repair_ring,v30:Juno:central_repair_ring:day48,outer bell path,rev:24 risk:0.46,tasks:18,score:0.77,recovery:0.94,True,replay:765:central_repair_ring
+766,48,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day48,orchard ridge detour,rev:23 risk:0.51,tasks:18,score:0.86,recovery:0.94,True,replay:766:riverbend_roofward
+767,48,Fay,roofward_archive,v30:Fay:roofward_archive:day48,cool archive lane,rev:22 risk:0.45,tasks:20,score:0.76,recovery:0.94,True,replay:767:roofward_archive
+768,49,Nia,archive_signal,v30:Nia:archive_signal:day49,stone kiosk path,rev:27 risk:0.46,tasks:15,score:0.74,recovery:0.94,True,replay:768:archive_signal
+769,49,Milo,signal_orchard,v30:Milo:signal_orchard:day49,river lantern loop,rev:25 risk:0.47,tasks:20,score:0.65,recovery:0.94,True,replay:769:signal_orchard
+770,49,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day49,market plank route,rev:26 risk:0.44,tasks:17,score:0.86,recovery:0.94,True,replay:770:orchard_riverbend
+771,49,Juno,central_repair_ring,v30:Juno:central_repair_ring:day49,outer bell path,rev:24 risk:0.46,tasks:18,score:0.80,recovery:0.94,True,replay:771:central_repair_ring
+772,49,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day49,orchard ridge detour,rev:23 risk:0.51,tasks:18,score:0.86,recovery:0.94,True,replay:772:riverbend_roofward
+773,49,Fay,roofward_archive,v30:Fay:roofward_archive:day49,cool archive lane,rev:22 risk:0.46,tasks:20,score:0.76,recovery:0.94,True,replay:773:roofward_archive
+774,49,Nia,archive_signal,v30:Nia:archive_signal:day49,stone kiosk path,rev:27 risk:0.45,tasks:15,score:0.74,recovery:0.94,True,replay:774:archive_signal
+775,49,Milo,signal_orchard,v30:Milo:signal_orchard:day49,river lantern loop,rev:25 risk:0.49,tasks:20,score:0.65,recovery:0.94,True,replay:775:signal_orchard
+776,49,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day49,market plank route,rev:27 risk:0.49,tasks:17,score:0.86,recovery:0.94,True,replay:776:orchard_riverbend
+777,49,Juno,central_repair_ring,v30:Juno:central_repair_ring:day49,outer bell path,rev:24 risk:0.43,tasks:18,score:0.80,recovery:0.94,True,replay:777:central_repair_ring
+778,49,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day49,orchard ridge detour,rev:23 risk:0.50,tasks:19,score:0.86,recovery:0.94,True,replay:778:riverbend_roofward
+779,49,Fay,roofward_archive,v30:Fay:roofward_archive:day49,cool archive lane,rev:22 risk:0.47,tasks:20,score:0.79,recovery:0.94,True,replay:779:roofward_archive
+780,49,Nia,archive_signal,v30:Nia:archive_signal:day49,stone kiosk path,rev:27 risk:0.44,tasks:15,score:0.74,recovery:0.94,True,replay:780:archive_signal
+781,49,Milo,signal_orchard,v30:Milo:signal_orchard:day49,dusk road,rev:25 risk:0.47,tasks:20,score:0.65,recovery:0.94,True,replay:781:signal_orchard
+782,49,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day49,market plank route,rev:27 risk:0.49,tasks:18,score:0.86,recovery:0.94,True,replay:782:orchard_riverbend
+783,49,Juno,central_repair_ring,v30:Juno:central_repair_ring:day49,outer bell path,rev:24 risk:0.45,tasks:18,score:0.80,recovery:0.94,True,replay:783:central_repair_ring
+784,50,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day50,orchard ridge detour,rev:24 risk:0.45,tasks:19,score:0.86,recovery:0.94,True,replay:784:riverbend_roofward
+785,50,Fay,roofward_archive,v30:Fay:roofward_archive:day50,cool archive lane,rev:22 risk:0.47,tasks:20,score:0.79,recovery:0.94,True,replay:785:roofward_archive
+786,50,Nia,archive_signal,v30:Nia:archive_signal:day50,stone kiosk path,rev:27 risk:0.45,tasks:16,score:0.74,recovery:0.94,True,replay:786:archive_signal
+787,50,Milo,signal_orchard,v30:Milo:signal_orchard:day50,dusk road,rev:25 risk:0.46,tasks:20,score:0.68,recovery:0.94,True,replay:787:signal_orchard
+788,50,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day50,market plank route,rev:27 risk:0.48,tasks:18,score:0.86,recovery:0.94,True,replay:788:orchard_riverbend
+789,50,Juno,central_repair_ring,v30:Juno:central_repair_ring:day50,outer bell path,rev:24 risk:0.46,tasks:18,score:0.80,recovery:0.94,True,replay:789:central_repair_ring
+790,50,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day50,orchard ridge detour,rev:24 risk:0.43,tasks:19,score:0.86,recovery:0.94,True,replay:790:riverbend_roofward
+791,50,Fay,roofward_archive,v30:Fay:roofward_archive:day50,cool archive lane,rev:22 risk:0.47,tasks:20,score:0.82,recovery:0.94,True,replay:791:roofward_archive
+792,50,Nia,archive_signal,v30:Nia:archive_signal:day50,stone kiosk path,rev:28 risk:0.51,tasks:16,score:0.74,recovery:0.94,True,replay:792:archive_signal
+793,50,Milo,signal_orchard,v30:Milo:signal_orchard:day50,river lantern loop,rev:25 risk:0.48,tasks:20,score:0.68,recovery:0.94,True,replay:793:signal_orchard
+794,50,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day50,market plank route,rev:27 risk:0.46,tasks:19,score:0.86,recovery:0.94,True,replay:794:orchard_riverbend
+795,50,Juno,central_repair_ring,v30:Juno:central_repair_ring:day50,outer bell path,rev:24 risk:0.45,tasks:18,score:0.83,recovery:0.94,True,replay:795:central_repair_ring
+796,50,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day50,orchard ridge detour,rev:24 risk:0.47,tasks:19,score:0.86,recovery:0.94,True,replay:796:riverbend_roofward
+797,50,Fay,roofward_archive,v30:Fay:roofward_archive:day50,cool archive lane,rev:22 risk:0.46,tasks:20,score:0.82,recovery:0.94,True,replay:797:roofward_archive
+798,50,Nia,archive_signal,v30:Nia:archive_signal:day50,stone kiosk path,rev:28 risk:0.50,tasks:17,score:0.74,recovery:0.94,True,replay:798:archive_signal
+799,50,Milo,signal_orchard,v30:Milo:signal_orchard:day50,river lantern loop,rev:25 risk:0.49,tasks:20,score:0.68,recovery:0.94,True,replay:799:signal_orchard
+800,51,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day51,market plank route,rev:28 risk:0.52,tasks:19,score:0.86,recovery:0.94,True,replay:800:orchard_riverbend
+801,51,Juno,central_repair_ring,v30:Juno:central_repair_ring:day51,inner repair yard,rev:24 risk:0.44,tasks:18,score:0.83,recovery:0.94,True,replay:801:central_repair_ring
+802,51,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day51,orchard ridge detour,rev:24 risk:0.47,tasks:20,score:0.86,recovery:0.94,True,replay:802:riverbend_roofward
+803,51,Fay,roofward_archive,v30:Fay:roofward_archive:day51,cool archive lane,rev:22 risk:0.49,tasks:20,score:0.82,recovery:0.94,True,replay:803:roofward_archive
+804,51,Nia,archive_signal,v30:Nia:archive_signal:day51,stone kiosk path,rev:28 risk:0.48,tasks:17,score:0.74,recovery:0.94,True,replay:804:archive_signal
+805,51,Milo,signal_orchard,v30:Milo:signal_orchard:day51,river lantern loop,rev:25 risk:0.48,tasks:20,score:0.68,recovery:0.94,True,replay:805:signal_orchard
+806,51,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day51,market plank route,rev:28 risk:0.52,tasks:19,score:0.86,recovery:0.94,True,replay:806:orchard_riverbend
+807,51,Juno,central_repair_ring,v30:Juno:central_repair_ring:day51,inner repair yard,rev:24 risk:0.44,tasks:18,score:0.83,recovery:0.94,True,replay:807:central_repair_ring
+808,51,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day51,orchard ridge detour,rev:25 risk:0.44,tasks:20,score:0.86,recovery:0.94,True,replay:808:riverbend_roofward
+809,51,Fay,roofward_archive,v30:Fay:roofward_archive:day51,cool archive lane,rev:22 risk:0.49,tasks:20,score:0.82,recovery:0.94,True,replay:809:roofward_archive
+810,51,Nia,archive_signal,v30:Nia:archive_signal:day51,stone kiosk path,rev:28 risk:0.46,tasks:17,score:0.74,recovery:0.94,True,replay:810:archive_signal
+811,51,Milo,signal_orchard,v30:Milo:signal_orchard:day51,river lantern loop,rev:25 risk:0.47,tasks:20,score:0.71,recovery:0.94,True,replay:811:signal_orchard
+812,51,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day51,market plank route,rev:28 risk:0.53,tasks:19,score:0.86,recovery:0.94,True,replay:812:orchard_riverbend
+813,51,Juno,central_repair_ring,v30:Juno:central_repair_ring:day51,outer bell path,rev:24 risk:0.46,tasks:18,score:0.83,recovery:0.94,True,replay:813:central_repair_ring
+814,51,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day51,orchard ridge detour,rev:25 risk:0.43,tasks:21,score:0.86,recovery:0.94,True,replay:814:riverbend_roofward
+815,51,Fay,roofward_archive,v30:Fay:roofward_archive:day51,cool archive lane,rev:22 risk:0.49,tasks:20,score:0.82,recovery:0.94,True,replay:815:roofward_archive
+816,52,Nia,archive_signal,v30:Nia:archive_signal:day52,stone kiosk path,rev:29 risk:0.52,tasks:17,score:0.74,recovery:0.94,True,replay:816:archive_signal
+817,52,Milo,signal_orchard,v30:Milo:signal_orchard:day52,river lantern loop,rev:25 risk:0.44,tasks:20,score:0.71,recovery:0.94,True,replay:817:signal_orchard
+818,52,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day52,market plank route,rev:28 risk:0.51,tasks:20,score:0.86,recovery:0.94,True,replay:818:orchard_riverbend
+819,52,Juno,central_repair_ring,v30:Juno:central_repair_ring:day52,outer bell path,rev:24 risk:0.48,tasks:18,score:0.86,recovery:0.94,True,replay:819:central_repair_ring
+820,52,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day52,orchard ridge detour,rev:25 risk:0.41,tasks:21,score:0.86,recovery:0.94,True,replay:820:riverbend_roofward
+821,52,Fay,roofward_archive,v30:Fay:roofward_archive:day52,cool archive lane,rev:22 risk:0.48,tasks:20,score:0.82,recovery:0.94,True,replay:821:roofward_archive
+822,52,Nia,archive_signal,v30:Nia:archive_signal:day52,stone kiosk path,rev:29 risk:0.51,tasks:17,score:0.74,recovery:0.94,True,replay:822:archive_signal
+823,52,Milo,signal_orchard,v30:Milo:signal_orchard:day52,river lantern loop,rev:25 risk:0.48,tasks:20,score:0.74,recovery:0.94,True,replay:823:signal_orchard
+824,52,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day52,market plank route,rev:29 risk:0.44,tasks:20,score:0.86,recovery:0.94,True,replay:824:orchard_riverbend
+825,52,Juno,central_repair_ring,v30:Juno:central_repair_ring:day52,inner repair yard,rev:24 risk:0.47,tasks:18,score:0.86,recovery:0.94,True,replay:825:central_repair_ring
+826,52,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day52,orchard ridge detour,rev:25 risk:0.43,tasks:22,score:0.86,recovery:0.94,True,replay:826:riverbend_roofward
+827,52,Fay,roofward_archive,v30:Fay:roofward_archive:day52,cool archive lane,rev:22 risk:0.46,tasks:20,score:0.85,recovery:0.94,True,replay:827:roofward_archive
+828,52,Nia,archive_signal,v30:Nia:archive_signal:day52,stone kiosk path,rev:29 risk:0.52,tasks:17,score:0.74,recovery:0.94,True,replay:828:archive_signal
+829,52,Milo,signal_orchard,v30:Milo:signal_orchard:day52,river lantern loop,rev:25 risk:0.48,tasks:20,score:0.74,recovery:0.94,True,replay:829:signal_orchard
+830,52,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day52,market plank route,rev:29 risk:0.42,tasks:20,score:0.86,recovery:0.94,True,replay:830:orchard_riverbend
+831,52,Juno,central_repair_ring,v30:Juno:central_repair_ring:day52,inner repair yard,rev:24 risk:0.46,tasks:18,score:0.86,recovery:0.94,True,replay:831:central_repair_ring
+832,53,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day53,orchard ridge detour,rev:26 risk:0.51,tasks:22,score:0.86,recovery:0.94,True,replay:832:riverbend_roofward
+833,53,Fay,roofward_archive,v30:Fay:roofward_archive:day53,cool archive lane,rev:22 risk:0.47,tasks:20,score:0.85,recovery:0.94,True,replay:833:roofward_archive
+834,53,Nia,archive_signal,v30:Nia:archive_signal:day53,stone kiosk path,rev:29 risk:0.50,tasks:18,score:0.74,recovery:0.94,True,replay:834:archive_signal
+835,53,Milo,signal_orchard,v30:Milo:signal_orchard:day53,river lantern loop,rev:25 risk:0.49,tasks:20,score:0.74,recovery:0.94,True,replay:835:signal_orchard
+836,53,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day53,market plank route,rev:29 risk:0.44,tasks:20,score:0.86,recovery:0.94,True,replay:836:orchard_riverbend
+837,53,Juno,central_repair_ring,v30:Juno:central_repair_ring:day53,inner repair yard,rev:24 risk:0.44,tasks:18,score:0.86,recovery:0.94,True,replay:837:central_repair_ring
+838,53,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day53,orchard ridge detour,rev:26 risk:0.50,tasks:22,score:0.86,recovery:0.94,True,replay:838:riverbend_roofward
+839,53,Fay,roofward_archive,v30:Fay:roofward_archive:day53,cool archive lane,rev:22 risk:0.50,tasks:20,score:0.88,recovery:0.94,True,replay:839:roofward_archive
+840,53,Nia,archive_signal,v30:Nia:archive_signal:day53,stone kiosk path,rev:30 risk:0.43,tasks:18,score:0.74,recovery:0.94,True,replay:840:archive_signal
+841,53,Milo,signal_orchard,v30:Milo:signal_orchard:day53,river lantern loop,rev:25 risk:0.48,tasks:20,score:0.74,recovery:0.94,True,replay:841:signal_orchard
+842,53,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day53,market plank route,rev:29 risk:0.44,tasks:21,score:0.86,recovery:0.94,True,replay:842:orchard_riverbend
+843,53,Juno,central_repair_ring,v30:Juno:central_repair_ring:day53,inner repair yard,rev:24 risk:0.46,tasks:18,score:0.89,recovery:0.94,True,replay:843:central_repair_ring
+844,53,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day53,orchard ridge detour,rev:26 risk:0.50,tasks:22,score:0.86,recovery:0.94,True,replay:844:riverbend_roofward
+845,53,Fay,roofward_archive,v30:Fay:roofward_archive:day53,cool archive lane,rev:22 risk:0.50,tasks:20,score:0.88,recovery:0.94,True,replay:845:roofward_archive
+846,53,Nia,archive_signal,v30:Nia:archive_signal:day53,stone kiosk path,rev:30 risk:0.45,tasks:19,score:0.74,recovery:0.94,True,replay:846:archive_signal
+847,53,Milo,signal_orchard,v30:Milo:signal_orchard:day53,river lantern loop,rev:25 risk:0.46,tasks:20,score:0.74,recovery:0.94,True,replay:847:signal_orchard
+848,54,Juno,central_repair_ring,v30:Juno:central_repair_ring:day54,inner repair yard,rev:25 risk:0.41,tasks:18,score:0.89,recovery:0.94,True,replay:848:central_repair_ring
+849,54,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day54,orchard ridge detour,rev:26 risk:0.51,tasks:22,score:0.86,recovery:0.94,True,replay:849:riverbend_roofward
+850,54,Fay,roofward_archive,v30:Fay:roofward_archive:day54,cool archive lane,rev:22 risk:0.47,tasks:20,score:0.88,recovery:0.94,True,replay:850:roofward_archive
+851,54,Nia,archive_signal,v30:Nia:archive_signal:day54,stone kiosk path,rev:30 risk:0.47,tasks:19,score:0.74,recovery:0.94,True,replay:851:archive_signal
+852,54,Milo,signal_orchard,v30:Milo:signal_orchard:day54,river lantern loop,rev:25 risk:0.47,tasks:20,score:0.74,recovery:0.94,True,replay:852:signal_orchard
+853,54,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day54,fen track,rev:29 risk:0.42,tasks:21,score:0.86,recovery:0.94,True,replay:853:orchard_riverbend
+854,54,Juno,central_repair_ring,v30:Juno:central_repair_ring:day54,inner repair yard,rev:25 risk:0.40,tasks:18,score:0.89,recovery:0.94,True,replay:854:central_repair_ring
+855,54,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day54,orchard ridge detour,rev:26 risk:0.53,tasks:22,score:0.89,recovery:0.94,True,replay:855:riverbend_roofward
+856,54,Fay,roofward_archive,v30:Fay:roofward_archive:day54,cool archive lane,rev:23 risk:0.43,tasks:20,score:0.88,recovery:0.94,True,replay:856:roofward_archive
+857,54,Nia,archive_signal,v30:Nia:archive_signal:day54,stone kiosk path,rev:30 risk:0.46,tasks:19,score:0.74,recovery:0.94,True,replay:857:archive_signal
+858,54,Milo,signal_orchard,v30:Milo:signal_orchard:day54,river lantern loop,rev:25 risk:0.47,tasks:21,score:0.74,recovery:0.94,True,replay:858:signal_orchard
+859,54,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day54,fen track,rev:29 risk:0.44,tasks:21,score:0.89,recovery:0.94,True,replay:859:orchard_riverbend
+860,54,Juno,central_repair_ring,v30:Juno:central_repair_ring:day54,inner repair yard,rev:25 risk:0.41,tasks:18,score:0.89,recovery:0.94,True,replay:860:central_repair_ring
+861,54,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day54,orchard ridge detour,rev:26 risk:0.52,tasks:22,score:0.89,recovery:0.94,True,replay:861:riverbend_roofward
+862,54,Fay,roofward_archive,v30:Fay:roofward_archive:day54,cool archive lane,rev:23 risk:0.45,tasks:21,score:0.88,recovery:0.94,True,replay:862:roofward_archive
+863,54,Nia,archive_signal,v30:Nia:archive_signal:day54,stone kiosk path,rev:30 risk:0.44,tasks:19,score:0.74,recovery:0.94,True,replay:863:archive_signal
+864,55,Milo,signal_orchard,v30:Milo:signal_orchard:day55,river lantern loop,rev:26 risk:0.42,tasks:21,score:0.74,recovery:0.94,True,replay:864:signal_orchard
+865,55,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day55,market plank route,rev:29 risk:0.45,tasks:21,score:0.89,recovery:0.94,True,replay:865:orchard_riverbend
+866,55,Juno,central_repair_ring,v30:Juno:central_repair_ring:day55,inner repair yard,rev:26 risk:0.48,tasks:19,score:0.89,recovery:0.94,True,replay:866:central_repair_ring
+867,55,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day55,orchard ridge detour,rev:26 risk:0.52,tasks:22,score:0.91,recovery:0.94,True,replay:867:riverbend_roofward
+868,55,Fay,roofward_archive,v30:Fay:roofward_archive:day55,cool archive lane,rev:23 risk:0.45,tasks:21,score:0.88,recovery:0.94,True,replay:868:roofward_archive
+869,55,Nia,archive_signal,v30:Nia:archive_signal:day55,paper lane,rev:30 risk:0.46,tasks:19,score:0.74,recovery:0.94,True,replay:869:archive_signal
+870,55,Milo,signal_orchard,v30:Milo:signal_orchard:day55,river lantern loop,rev:26 risk:0.41,tasks:21,score:0.74,recovery:0.94,True,replay:870:signal_orchard
+871,55,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day55,market plank route,rev:29 risk:0.46,tasks:21,score:0.92,recovery:0.94,True,replay:871:orchard_riverbend
+872,55,Juno,central_repair_ring,v30:Juno:central_repair_ring:day55,inner repair yard,rev:27 risk:0.53,tasks:19,score:0.89,recovery:0.94,True,replay:872:central_repair_ring
+873,55,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day55,orchard ridge detour,rev:26 risk:0.49,tasks:22,score:0.91,recovery:0.94,True,replay:873:riverbend_roofward
+874,55,Fay,roofward_archive,v30:Fay:roofward_archive:day55,cool archive lane,rev:23 risk:0.45,tasks:22,score:0.88,recovery:0.94,True,replay:874:roofward_archive
+875,55,Nia,archive_signal,v30:Nia:archive_signal:day55,paper lane,rev:30 risk:0.47,tasks:19,score:0.77,recovery:0.94,True,replay:875:archive_signal
+876,55,Milo,signal_orchard,v30:Milo:signal_orchard:day55,river lantern loop,rev:26 risk:0.41,tasks:21,score:0.74,recovery:0.94,True,replay:876:signal_orchard
+877,55,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day55,market plank route,rev:29 risk:0.45,tasks:21,score:0.92,recovery:0.94,True,replay:877:orchard_riverbend
+878,55,Juno,central_repair_ring,v30:Juno:central_repair_ring:day55,outer bell path,rev:28 risk:0.48,tasks:20,score:0.89,recovery:0.94,True,replay:878:central_repair_ring
+879,55,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day55,orchard ridge detour,rev:26 risk:0.47,tasks:22,score:0.91,recovery:0.94,True,replay:879:riverbend_roofward
+880,56,Fay,roofward_archive,v30:Fay:roofward_archive:day56,cool archive lane,rev:24 risk:0.41,tasks:22,score:0.88,recovery:0.94,True,replay:880:roofward_archive
+881,56,Nia,archive_signal,v30:Nia:archive_signal:day56,stone kiosk path,rev:30 risk:0.46,tasks:19,score:0.77,recovery:0.94,True,replay:881:archive_signal
+882,56,Milo,signal_orchard,v30:Milo:signal_orchard:day56,river lantern loop,rev:26 risk:0.43,tasks:22,score:0.74,recovery:0.94,True,replay:882:signal_orchard
+883,56,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day56,market plank route,rev:30 risk:0.42,tasks:21,score:0.92,recovery:0.94,True,replay:883:orchard_riverbend
+884,56,Juno,central_repair_ring,v30:Juno:central_repair_ring:day56,outer bell path,rev:28 risk:0.47,tasks:20,score:0.89,recovery:0.94,True,replay:884:central_repair_ring
+885,56,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day56,orchard ridge detour,rev:26 risk:0.48,tasks:22,score:0.91,recovery:0.94,True,replay:885:riverbend_roofward
+886,56,Fay,roofward_archive,v30:Fay:roofward_archive:day56,cool archive lane,rev:24 risk:0.39,tasks:22,score:0.88,recovery:0.94,True,replay:886:roofward_archive
+887,56,Nia,archive_signal,v30:Nia:archive_signal:day56,stone kiosk path,rev:30 risk:0.47,tasks:19,score:0.80,recovery:0.94,True,replay:887:archive_signal
+888,56,Milo,signal_orchard,v30:Milo:signal_orchard:day56,river lantern loop,rev:27 risk:0.49,tasks:22,score:0.74,recovery:0.94,True,replay:888:signal_orchard
+889,56,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day56,market plank route,rev:31 risk:0.51,tasks:21,score:0.92,recovery:0.94,True,replay:889:orchard_riverbend
+890,56,Juno,central_repair_ring,v30:Juno:central_repair_ring:day56,outer bell path,rev:28 risk:0.45,tasks:20,score:0.89,recovery:0.94,True,replay:890:central_repair_ring
+891,56,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day56,orchard ridge detour,rev:26 risk:0.48,tasks:22,score:0.91,recovery:0.94,True,replay:891:riverbend_roofward
+892,56,Fay,roofward_archive,v30:Fay:roofward_archive:day56,cool archive lane,rev:24 risk:0.43,tasks:22,score:0.88,recovery:0.94,True,replay:892:roofward_archive
+893,56,Nia,archive_signal,v30:Nia:archive_signal:day56,stone kiosk path,rev:30 risk:0.45,tasks:19,score:0.80,recovery:0.94,True,replay:893:archive_signal
+894,56,Milo,signal_orchard,v30:Milo:signal_orchard:day56,river lantern loop,rev:27 risk:0.48,tasks:23,score:0.74,recovery:0.94,True,replay:894:signal_orchard
+895,56,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day56,market plank route,rev:32 risk:0.58,tasks:21,score:0.92,recovery:0.94,True,replay:895:orchard_riverbend
+896,57,Juno,central_repair_ring,v30:Juno:central_repair_ring:day57,outer bell path,rev:29 risk:0.51,tasks:20,score:0.89,recovery:0.94,True,replay:896:central_repair_ring
+897,57,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day57,orchard ridge detour,rev:26 risk:0.46,tasks:22,score:0.91,recovery:0.94,True,replay:897:riverbend_roofward
+898,57,Fay,roofward_archive,v30:Fay:roofward_archive:day57,cool archive lane,rev:24 risk:0.44,tasks:23,score:0.88,recovery:0.94,True,replay:898:roofward_archive
+899,57,Nia,archive_signal,v30:Nia:archive_signal:day57,stone kiosk path,rev:30 risk:0.49,tasks:19,score:0.83,recovery:0.94,True,replay:899:archive_signal
+900,57,Milo,signal_orchard,v30:Milo:signal_orchard:day57,river lantern loop,rev:28 risk:0.43,tasks:23,score:0.74,recovery:0.94,True,replay:900:signal_orchard
+901,57,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day57,market plank route,rev:32 risk:0.56,tasks:21,score:0.92,recovery:0.94,True,replay:901:orchard_riverbend
+902,57,Juno,central_repair_ring,v30:Juno:central_repair_ring:day57,inner repair yard,rev:29 risk:0.51,tasks:20,score:0.89,recovery:0.94,True,replay:902:central_repair_ring
+903,57,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day57,orchard ridge detour,rev:26 risk:0.46,tasks:22,score:0.94,recovery:0.94,True,replay:903:riverbend_roofward
+904,57,Fay,roofward_archive,v30:Fay:roofward_archive:day57,cool archive lane,rev:25 risk:0.42,tasks:23,score:0.88,recovery:0.94,True,replay:904:roofward_archive
+905,57,Nia,archive_signal,v30:Nia:archive_signal:day57,stone kiosk path,rev:30 risk:0.49,tasks:19,score:0.83,recovery:0.94,True,replay:905:archive_signal
+906,57,Milo,signal_orchard,v30:Milo:signal_orchard:day57,river lantern loop,rev:29 risk:0.38,tasks:24,score:0.74,recovery:0.94,True,replay:906:signal_orchard
+907,57,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day57,market plank route,rev:32 risk:0.53,tasks:21,score:0.95,recovery:0.94,True,replay:907:orchard_riverbend
+908,57,Juno,central_repair_ring,v30:Juno:central_repair_ring:day57,outer bell path,rev:29 risk:0.53,tasks:20,score:0.89,recovery:0.94,True,replay:908:central_repair_ring
+909,57,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day57,orchard ridge detour,rev:26 risk:0.44,tasks:22,score:0.94,recovery:0.94,True,replay:909:riverbend_roofward
+910,57,Fay,roofward_archive,v30:Fay:roofward_archive:day57,cool archive lane,rev:25 risk:0.41,tasks:23,score:0.88,recovery:0.94,True,replay:910:roofward_archive
+911,57,Nia,archive_signal,v30:Nia:archive_signal:day57,stone kiosk path,rev:30 risk:0.49,tasks:19,score:0.83,recovery:0.94,True,replay:911:archive_signal
+912,58,Milo,signal_orchard,v30:Milo:signal_orchard:day58,river lantern loop,rev:30 risk:0.45,tasks:24,score:0.74,recovery:0.94,True,replay:912:signal_orchard
+913,58,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day58,fen track,rev:32 risk:0.50,tasks:21,score:0.95,recovery:0.94,True,replay:913:orchard_riverbend
+914,58,Juno,central_repair_ring,v30:Juno:central_repair_ring:day58,outer bell path,rev:29 risk:0.51,tasks:21,score:0.89,recovery:0.94,True,replay:914:central_repair_ring
+915,58,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day58,orchard ridge detour,rev:26 risk:0.47,tasks:22,score:0.95,recovery:0.94,True,replay:915:riverbend_roofward
+916,58,Fay,roofward_archive,v30:Fay:roofward_archive:day58,cool archive lane,rev:25 risk:0.40,tasks:23,score:0.88,recovery:0.94,True,replay:916:roofward_archive
+917,58,Nia,archive_signal,v30:Nia:archive_signal:day58,stone kiosk path,rev:31 risk:0.43,tasks:19,score:0.83,recovery:0.94,True,replay:917:archive_signal
+918,58,Milo,signal_orchard,v30:Milo:signal_orchard:day58,river lantern loop,rev:30 risk:0.46,tasks:24,score:0.74,recovery:0.94,True,replay:918:signal_orchard
+919,58,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day58,market plank route,rev:32 risk:0.53,tasks:21,score:0.95,recovery:0.94,True,replay:919:orchard_riverbend
+920,58,Juno,central_repair_ring,v30:Juno:central_repair_ring:day58,outer bell path,rev:30 risk:0.44,tasks:21,score:0.89,recovery:0.94,True,replay:920:central_repair_ring
+921,58,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day58,orchard ridge detour,rev:26 risk:0.47,tasks:22,score:0.95,recovery:0.94,True,replay:921:riverbend_roofward
+922,58,Fay,roofward_archive,v30:Fay:roofward_archive:day58,cool archive lane,rev:25 risk:0.42,tasks:24,score:0.88,recovery:0.94,True,replay:922:roofward_archive
+923,58,Nia,archive_signal,v30:Nia:archive_signal:day58,stone kiosk path,rev:32 risk:0.37,tasks:19,score:0.83,recovery:0.94,True,replay:923:archive_signal
+924,58,Milo,signal_orchard,v30:Milo:signal_orchard:day58,river lantern loop,rev:30 risk:0.47,tasks:24,score:0.74,recovery:0.94,True,replay:924:signal_orchard
+925,58,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day58,market plank route,rev:32 risk:0.53,tasks:21,score:0.95,recovery:0.94,True,replay:925:orchard_riverbend
+926,58,Juno,central_repair_ring,v30:Juno:central_repair_ring:day58,outer bell path,rev:30 risk:0.42,tasks:22,score:0.89,recovery:0.94,True,replay:926:central_repair_ring
+927,58,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day58,orchard ridge detour,rev:26 risk:0.47,tasks:22,score:0.95,recovery:0.94,True,replay:927:riverbend_roofward
+928,59,Fay,roofward_archive,v30:Fay:roofward_archive:day59,cool archive lane,rev:25 risk:0.43,tasks:24,score:0.88,recovery:0.94,True,replay:928:roofward_archive
+929,59,Nia,archive_signal,v30:Nia:archive_signal:day59,paper lane,rev:32 risk:0.40,tasks:19,score:0.83,recovery:0.94,True,replay:929:archive_signal
+930,59,Milo,signal_orchard,v30:Milo:signal_orchard:day59,river lantern loop,rev:30 risk:0.45,tasks:24,score:0.74,recovery:0.94,True,replay:930:signal_orchard
+931,59,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day59,market plank route,rev:32 risk:0.53,tasks:21,score:0.95,recovery:0.94,True,replay:931:orchard_riverbend
+932,59,Juno,central_repair_ring,v30:Juno:central_repair_ring:day59,outer bell path,rev:30 risk:0.43,tasks:22,score:0.89,recovery:0.94,True,replay:932:central_repair_ring
+933,59,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day59,orchard ridge detour,rev:26 risk:0.45,tasks:22,score:0.95,recovery:0.94,True,replay:933:riverbend_roofward
+934,59,Fay,roofward_archive,v30:Fay:roofward_archive:day59,cool archive lane,rev:26 risk:0.49,tasks:24,score:0.88,recovery:0.94,True,replay:934:roofward_archive
+935,59,Nia,archive_signal,v30:Nia:archive_signal:day59,paper lane,rev:32 risk:0.44,tasks:19,score:0.85,recovery:0.94,True,replay:935:archive_signal
+936,59,Milo,signal_orchard,v30:Milo:signal_orchard:day59,river lantern loop,rev:31 risk:0.40,tasks:24,score:0.74,recovery:0.94,True,replay:936:signal_orchard
+937,59,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day59,market plank route,rev:32 risk:0.51,tasks:21,score:0.95,recovery:0.94,True,replay:937:orchard_riverbend
+938,59,Juno,central_repair_ring,v30:Juno:central_repair_ring:day59,outer bell path,rev:30 risk:0.44,tasks:23,score:0.89,recovery:0.94,True,replay:938:central_repair_ring
+939,59,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day59,orchard ridge detour,rev:26 risk:0.43,tasks:22,score:0.95,recovery:0.94,True,replay:939:riverbend_roofward
+940,59,Fay,roofward_archive,v30:Fay:roofward_archive:day59,cool archive lane,rev:27 risk:0.56,tasks:24,score:0.88,recovery:0.94,True,replay:940:roofward_archive
+941,59,Nia,archive_signal,v30:Nia:archive_signal:day59,stone kiosk path,rev:32 risk:0.44,tasks:19,score:0.85,recovery:0.94,True,replay:941:archive_signal
+942,59,Milo,signal_orchard,v30:Milo:signal_orchard:day59,river lantern loop,rev:31 risk:0.42,tasks:25,score:0.74,recovery:0.94,True,replay:942:signal_orchard
+943,59,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day59,market plank route,rev:32 risk:0.49,tasks:21,score:0.95,recovery:0.94,True,replay:943:orchard_riverbend
+944,60,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day60,orchard ridge detour,rev:27 risk:0.48,tasks:22,score:0.95,recovery:0.94,True,replay:944:riverbend_roofward
+945,60,Fay,roofward_archive,v30:Fay:roofward_archive:day60,cool archive lane,rev:27 risk:0.56,tasks:24,score:0.88,recovery:0.94,True,replay:945:roofward_archive
+946,60,Nia,archive_signal,v30:Nia:archive_signal:day60,stone kiosk path,rev:32 risk:0.43,tasks:20,score:0.85,recovery:0.94,True,replay:946:archive_signal
+947,60,Milo,signal_orchard,v30:Milo:signal_orchard:day60,river lantern loop,rev:31 risk:0.44,tasks:25,score:0.77,recovery:0.94,True,replay:947:signal_orchard
+948,60,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day60,market plank route,rev:32 risk:0.49,tasks:21,score:0.95,recovery:0.94,True,replay:948:orchard_riverbend
+949,60,Juno,central_repair_ring,v30:Juno:central_repair_ring:day60,inner repair yard,rev:30 risk:0.42,tasks:23,score:0.89,recovery:0.94,True,replay:949:central_repair_ring
+950,60,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day60,orchard ridge detour,rev:28 risk:0.43,tasks:22,score:0.95,recovery:0.94,True,replay:950:riverbend_roofward
+951,60,Fay,roofward_archive,v30:Fay:roofward_archive:day60,cool archive lane,rev:27 risk:0.57,tasks:24,score:0.91,recovery:0.94,True,replay:951:roofward_archive
+952,60,Nia,archive_signal,v30:Nia:archive_signal:day60,stone kiosk path,rev:33 risk:0.39,tasks:20,score:0.85,recovery:0.94,True,replay:952:archive_signal
+953,60,Milo,signal_orchard,v30:Milo:signal_orchard:day60,dusk road,rev:31 risk:0.43,tasks:25,score:0.77,recovery:0.94,True,replay:953:signal_orchard
+954,60,Ivo,orchard_riverbend,v30:Ivo:orchard_riverbend:day60,market plank route,rev:32 risk:0.49,tasks:22,score:0.95,recovery:0.94,True,replay:954:orchard_riverbend
+955,60,Juno,central_repair_ring,v30:Juno:central_repair_ring:day60,inner repair yard,rev:30 risk:0.44,tasks:23,score:0.92,recovery:0.94,True,replay:955:central_repair_ring
+956,60,Ari,riverbend_roofward,v30:Ari:riverbend_roofward:day60,orchard ridge detour,rev:29 risk:0.49,tasks:22,score:0.95,recovery:0.94,True,replay:956:riverbend_roofward
+957,60,Fay,roofward_archive,v30:Fay:roofward_archive:day60,glass stair,rev:27 risk:0.56,tasks:24,score:0.91,recovery:0.94,True,replay:957:roofward_archive
+958,60,Nia,archive_signal,v30:Nia:archive_signal:day60,stone kiosk path,rev:33 risk:0.41,tasks:21,score:0.85,recovery:0.94,True,replay:958:archive_signal
+959,60,Milo,signal_orchard,v30:Milo:signal_orchard:day60,dusk road,rev:31 risk:0.42,tasks:25,score:0.77,recovery:0.94,True,replay:959:signal_orchard

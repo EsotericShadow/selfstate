@@ -1,0 +1,961 @@
+tick_id,day,route_id,drill_id,minigame_step,input_prompt,selected_action,step_success,score_delta,recovery_lesson,replayable
+0,1,riverbend_roofward,drill:riverbend_roofward:d1,none,none,none,False,0.0,none,False
+1,1,roofward_archive,drill:roofward_archive:d1,none,none,none,False,0.0,none,False
+2,1,archive_signal,drill:archive_signal:d1,none,none,none,False,0.0,none,False
+3,1,signal_orchard,drill:signal_orchard:d1,none,none,none,False,0.0,none,False
+4,1,orchard_riverbend,drill:orchard_riverbend:d1,none,none,none,False,0.0,none,False
+5,1,central_repair_ring,drill:central_repair_ring:d1,none,none,none,False,0.0,none,False
+6,1,riverbend_roofward,drill:riverbend_roofward:d1,none,none,none,False,0.0,none,False
+7,1,roofward_archive,drill:roofward_archive:d1,none,none,none,False,0.0,none,False
+8,1,archive_signal,drill:archive_signal:d1,none,none,none,False,0.0,none,False
+9,1,signal_orchard,drill:signal_orchard:d1,none,none,none,False,0.0,none,False
+10,1,orchard_riverbend,drill:orchard_riverbend:d1,none,none,none,False,0.0,none,False
+11,1,central_repair_ring,drill:central_repair_ring:d1,none,none,none,False,0.0,none,False
+12,1,riverbend_roofward,drill:riverbend_roofward:d1,none,none,none,False,0.0,none,False
+13,1,roofward_archive,drill:roofward_archive:d1,none,none,none,False,0.0,none,False
+14,1,archive_signal,drill:archive_signal:d1,none,none,none,False,0.0,none,False
+15,1,signal_orchard,drill:signal_orchard:d1,none,none,none,False,0.0,none,False
+16,2,orchard_riverbend,drill:orchard_riverbend:d2,none,none,none,False,0.0,none,False
+17,2,central_repair_ring,drill:central_repair_ring:d2,none,none,none,False,0.0,none,False
+18,2,riverbend_roofward,drill:riverbend_roofward:d2,none,none,none,False,0.0,none,False
+19,2,roofward_archive,drill:roofward_archive:d2,none,none,none,False,0.0,none,False
+20,2,archive_signal,drill:archive_signal:d2,none,none,none,False,0.0,none,False
+21,2,signal_orchard,drill:signal_orchard:d2,none,none,none,False,0.0,none,False
+22,2,orchard_riverbend,drill:orchard_riverbend:d2,none,none,none,False,0.0,none,False
+23,2,central_repair_ring,drill:central_repair_ring:d2,none,none,none,False,0.0,none,False
+24,2,riverbend_roofward,drill:riverbend_roofward:d2,none,none,none,False,0.0,none,False
+25,2,roofward_archive,drill:roofward_archive:d2,none,none,none,False,0.0,none,False
+26,2,archive_signal,drill:archive_signal:d2,none,none,none,False,0.0,none,False
+27,2,signal_orchard,drill:signal_orchard:d2,none,none,none,False,0.0,none,False
+28,2,orchard_riverbend,drill:orchard_riverbend:d2,none,none,none,False,0.0,none,False
+29,2,central_repair_ring,drill:central_repair_ring:d2,none,none,none,False,0.0,none,False
+30,2,riverbend_roofward,drill:riverbend_roofward:d2,none,none,none,False,0.0,none,False
+31,2,roofward_archive,drill:roofward_archive:d2,none,none,none,False,0.0,none,False
+32,3,archive_signal,drill:archive_signal:d3,none,none,none,False,0.0,none,False
+33,3,signal_orchard,drill:signal_orchard:d3,none,none,none,False,0.0,none,False
+34,3,orchard_riverbend,drill:orchard_riverbend:d3,none,none,none,False,0.0,none,False
+35,3,central_repair_ring,drill:central_repair_ring:d3,none,none,none,False,0.0,none,False
+36,3,riverbend_roofward,drill:riverbend_roofward:d3,none,none,none,False,0.0,none,False
+37,3,roofward_archive,drill:roofward_archive:d3,none,none,none,False,0.0,none,False
+38,3,archive_signal,drill:archive_signal:d3,none,none,none,False,0.0,none,False
+39,3,signal_orchard,drill:signal_orchard:d3,none,none,none,False,0.0,none,False
+40,3,orchard_riverbend,drill:orchard_riverbend:d3,none,none,none,False,0.0,none,False
+41,3,central_repair_ring,drill:central_repair_ring:d3,none,none,none,False,0.0,none,False
+42,3,riverbend_roofward,drill:riverbend_roofward:d3,none,none,none,False,0.0,none,False
+43,3,roofward_archive,drill:roofward_archive:d3,none,none,none,False,0.0,none,False
+44,3,archive_signal,drill:archive_signal:d3,none,none,none,False,0.0,none,False
+45,3,signal_orchard,drill:signal_orchard:d3,none,none,none,False,0.0,none,False
+46,3,orchard_riverbend,drill:orchard_riverbend:d3,none,none,none,False,0.0,none,False
+47,3,central_repair_ring,drill:central_repair_ring:d3,none,none,none,False,0.0,none,False
+48,4,riverbend_roofward,drill:riverbend_roofward:d4,none,none,none,False,0.0,none,False
+49,4,roofward_archive,drill:roofward_archive:d4,none,none,none,False,0.0,none,False
+50,4,archive_signal,drill:archive_signal:d4,none,none,none,False,0.0,none,False
+51,4,signal_orchard,drill:signal_orchard:d4,none,none,none,False,0.0,none,False
+52,4,orchard_riverbend,drill:orchard_riverbend:d4,none,none,none,False,0.0,none,False
+53,4,central_repair_ring,drill:central_repair_ring:d4,none,none,none,False,0.0,none,False
+54,4,riverbend_roofward,drill:riverbend_roofward:d4,none,none,none,False,0.0,none,False
+55,4,roofward_archive,drill:roofward_archive:d4,none,none,none,False,0.0,none,False
+56,4,archive_signal,drill:archive_signal:d4,none,none,none,False,0.0,none,False
+57,4,signal_orchard,drill:signal_orchard:d4,none,none,none,False,0.0,none,False
+58,4,orchard_riverbend,drill:orchard_riverbend:d4,none,none,none,False,0.0,none,False
+59,4,central_repair_ring,drill:central_repair_ring:d4,none,none,none,False,0.0,none,False
+60,4,riverbend_roofward,drill:riverbend_roofward:d4,none,none,none,False,0.0,none,False
+61,4,roofward_archive,drill:roofward_archive:d4,none,none,none,False,0.0,none,False
+62,4,archive_signal,drill:archive_signal:d4,none,none,none,False,0.0,none,False
+63,4,signal_orchard,drill:signal_orchard:d4,none,none,none,False,0.0,none,False
+64,5,orchard_riverbend,drill:orchard_riverbend:d5,none,none,none,False,0.0,none,False
+65,5,central_repair_ring,drill:central_repair_ring:d5,none,none,none,False,0.0,none,False
+66,5,riverbend_roofward,drill:riverbend_roofward:d5,none,none,none,False,0.0,none,False
+67,5,roofward_archive,drill:roofward_archive:d5,choose detour,choose public recovery action,cool archive lane,True,0.03,"forecast, caravan task, recovery marker",True
+68,5,archive_signal,drill:archive_signal:d5,none,none,none,False,0.0,none,False
+69,5,signal_orchard,drill:signal_orchard:d5,none,none,none,False,0.0,none,False
+70,5,orchard_riverbend,drill:orchard_riverbend:d5,none,none,none,False,0.0,none,False
+71,5,central_repair_ring,drill:central_repair_ring:d5,assign caravan task,choose public recovery action,carry wire spool,True,0.03,"forecast, caravan task, recovery marker",True
+72,5,riverbend_roofward,drill:riverbend_roofward:d5,none,none,none,False,0.0,none,False
+73,5,roofward_archive,drill:roofward_archive:d5,none,none,none,False,0.0,none,False
+74,5,archive_signal,drill:archive_signal:d5,none,none,none,False,0.0,none,False
+75,5,signal_orchard,drill:signal_orchard:d5,none,none,none,False,0.0,none,False
+76,5,orchard_riverbend,drill:orchard_riverbend:d5,none,none,none,False,0.0,none,False
+77,5,central_repair_ring,drill:central_repair_ring:d5,none,none,none,False,0.0,none,False
+78,5,riverbend_roofward,drill:riverbend_roofward:d5,none,none,none,False,0.0,none,False
+79,5,roofward_archive,drill:roofward_archive:d5,none,none,none,False,0.0,none,False
+80,6,signal_orchard,drill:signal_orchard:d6,none,none,none,False,0.0,none,False
+81,6,orchard_riverbend,drill:orchard_riverbend:d6,none,none,none,False,0.0,none,False
+82,6,central_repair_ring,drill:central_repair_ring:d6,none,none,none,False,0.0,none,False
+83,6,riverbend_roofward,drill:riverbend_roofward:d6,choose detour,choose public recovery action,orchard ridge detour,True,0.03,"forecast, caravan task, recovery marker",True
+84,6,roofward_archive,drill:roofward_archive:d6,none,none,none,False,0.0,none,False
+85,6,archive_signal,drill:archive_signal:d6,none,none,none,False,0.0,none,False
+86,6,signal_orchard,drill:signal_orchard:d6,none,none,none,False,0.0,none,False
+87,6,orchard_riverbend,drill:orchard_riverbend:d6,assign caravan task,choose public recovery action,sort seed sacks,True,0.03,"forecast, caravan task, recovery marker",True
+88,6,central_repair_ring,drill:central_repair_ring:d6,none,none,none,False,0.0,none,False
+89,6,riverbend_roofward,drill:riverbend_roofward:d6,none,none,none,False,0.0,none,False
+90,6,roofward_archive,drill:roofward_archive:d6,none,none,none,False,0.0,none,False
+91,6,archive_signal,drill:archive_signal:d6,none,none,none,False,0.0,none,False
+92,6,signal_orchard,drill:signal_orchard:d6,none,none,none,False,0.0,none,False
+93,6,orchard_riverbend,drill:orchard_riverbend:d6,none,none,none,False,0.0,none,False
+94,6,central_repair_ring,drill:central_repair_ring:d6,none,none,none,False,0.0,none,False
+95,6,riverbend_roofward,drill:riverbend_roofward:d6,none,none,none,False,0.0,none,False
+96,7,roofward_archive,drill:roofward_archive:d7,none,none,none,False,0.0,none,False
+97,7,archive_signal,drill:archive_signal:d7,none,none,none,False,0.0,none,False
+98,7,signal_orchard,drill:signal_orchard:d7,none,none,none,False,0.0,none,False
+99,7,orchard_riverbend,drill:orchard_riverbend:d7,choose detour,choose public recovery action,market plank route,True,0.03,"forecast, caravan task, recovery marker",True
+100,7,central_repair_ring,drill:central_repair_ring:d7,none,none,none,False,0.0,none,False
+101,7,riverbend_roofward,drill:riverbend_roofward:d7,none,none,none,False,0.0,none,False
+102,7,roofward_archive,drill:roofward_archive:d7,none,none,none,False,0.0,none,False
+103,7,archive_signal,drill:archive_signal:d7,assign caravan task,choose public recovery action,weigh paper packs,True,0.03,"forecast, caravan task, recovery marker",True
+104,7,signal_orchard,drill:signal_orchard:d7,none,none,none,False,0.0,none,False
+105,7,orchard_riverbend,drill:orchard_riverbend:d7,none,none,none,False,0.0,none,False
+106,7,central_repair_ring,drill:central_repair_ring:d7,none,none,none,False,0.0,none,False
+107,7,riverbend_roofward,drill:riverbend_roofward:d7,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+108,7,roofward_archive,drill:roofward_archive:d7,none,none,none,False,0.0,none,False
+109,7,archive_signal,drill:archive_signal:d7,none,none,none,False,0.0,none,False
+110,7,signal_orchard,drill:signal_orchard:d7,none,none,none,False,0.0,none,False
+111,7,orchard_riverbend,drill:orchard_riverbend:d7,none,none,none,False,0.0,none,False
+112,8,central_repair_ring,drill:central_repair_ring:d8,none,none,none,False,0.0,none,False
+113,8,riverbend_roofward,drill:riverbend_roofward:d8,none,none,none,False,0.0,none,False
+114,8,roofward_archive,drill:roofward_archive:d8,none,none,none,False,0.0,none,False
+115,8,archive_signal,drill:archive_signal:d8,choose detour,choose public recovery action,stone kiosk path,True,0.03,"forecast, caravan task, recovery marker",True
+116,8,signal_orchard,drill:signal_orchard:d8,none,none,none,False,0.0,none,False
+117,8,orchard_riverbend,drill:orchard_riverbend:d8,none,none,none,False,0.0,none,False
+118,8,central_repair_ring,drill:central_repair_ring:d8,none,none,none,False,0.0,none,False
+119,8,riverbend_roofward,drill:riverbend_roofward:d8,none,none,none,False,0.0,none,False
+120,8,roofward_archive,drill:roofward_archive:d8,none,none,none,False,0.0,none,False
+121,8,archive_signal,drill:archive_signal:d8,none,none,none,False,0.0,none,False
+122,8,signal_orchard,drill:signal_orchard:d8,none,none,none,False,0.0,none,False
+123,8,orchard_riverbend,drill:orchard_riverbend:d8,none,none,none,False,0.0,none,False
+124,8,central_repair_ring,drill:central_repair_ring:d8,none,none,none,False,0.0,none,False
+125,8,riverbend_roofward,drill:riverbend_roofward:d8,none,none,none,False,0.0,none,False
+126,8,roofward_archive,drill:roofward_archive:d8,none,none,none,False,0.0,none,False
+127,8,archive_signal,drill:archive_signal:d8,none,none,none,False,0.0,none,False
+128,9,signal_orchard,drill:signal_orchard:d9,none,none,none,False,0.0,none,False
+129,9,orchard_riverbend,drill:orchard_riverbend:d9,none,none,none,False,0.0,none,False
+130,9,central_repair_ring,drill:central_repair_ring:d9,none,none,none,False,0.0,none,False
+131,9,riverbend_roofward,drill:riverbend_roofward:d9,choose detour,choose public recovery action,orchard ridge detour,True,0.03,"forecast, caravan task, recovery marker",True
+132,9,roofward_archive,drill:roofward_archive:d9,none,none,none,False,0.0,none,False
+133,9,archive_signal,drill:archive_signal:d9,none,none,none,False,0.0,none,False
+134,9,signal_orchard,drill:signal_orchard:d9,none,none,none,False,0.0,none,False
+135,9,orchard_riverbend,drill:orchard_riverbend:d9,assign caravan task,choose public recovery action,sort seed sacks,True,0.03,"forecast, caravan task, recovery marker",True
+136,9,central_repair_ring,drill:central_repair_ring:d9,none,none,none,False,0.0,none,False
+137,9,riverbend_roofward,drill:riverbend_roofward:d9,none,none,none,False,0.0,none,False
+138,9,roofward_archive,drill:roofward_archive:d9,none,none,none,False,0.0,none,False
+139,9,archive_signal,drill:archive_signal:d9,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+140,9,signal_orchard,drill:signal_orchard:d9,none,none,none,False,0.0,none,False
+141,9,orchard_riverbend,drill:orchard_riverbend:d9,none,none,none,False,0.0,none,False
+142,9,central_repair_ring,drill:central_repair_ring:d9,none,none,none,False,0.0,none,False
+143,9,riverbend_roofward,drill:riverbend_roofward:d9,none,none,none,False,0.0,none,False
+144,10,roofward_archive,drill:roofward_archive:d10,none,none,none,False,0.0,none,False
+145,10,archive_signal,drill:archive_signal:d10,none,none,none,False,0.0,none,False
+146,10,signal_orchard,drill:signal_orchard:d10,none,none,none,False,0.0,none,False
+147,10,orchard_riverbend,drill:orchard_riverbend:d10,choose detour,choose public recovery action,market plank route,True,0.03,"forecast, caravan task, recovery marker",True
+148,10,central_repair_ring,drill:central_repair_ring:d10,none,none,none,False,0.0,none,False
+149,10,riverbend_roofward,drill:riverbend_roofward:d10,none,none,none,False,0.0,none,False
+150,10,roofward_archive,drill:roofward_archive:d10,none,none,none,False,0.0,none,False
+151,10,archive_signal,drill:archive_signal:d10,none,none,none,False,0.0,none,False
+152,10,signal_orchard,drill:signal_orchard:d10,none,none,none,False,0.0,none,False
+153,10,orchard_riverbend,drill:orchard_riverbend:d10,none,none,none,False,0.0,none,False
+154,10,central_repair_ring,drill:central_repair_ring:d10,none,none,none,False,0.0,none,False
+155,10,riverbend_roofward,drill:riverbend_roofward:d10,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+156,10,roofward_archive,drill:roofward_archive:d10,none,none,none,False,0.0,none,False
+157,10,archive_signal,drill:archive_signal:d10,none,none,none,False,0.0,none,False
+158,10,signal_orchard,drill:signal_orchard:d10,none,none,none,False,0.0,none,False
+159,10,orchard_riverbend,drill:orchard_riverbend:d10,none,none,none,False,0.0,none,False
+160,11,central_repair_ring,drill:central_repair_ring:d11,none,none,none,False,0.0,none,False
+161,11,riverbend_roofward,drill:riverbend_roofward:d11,none,none,none,False,0.0,none,False
+162,11,roofward_archive,drill:roofward_archive:d11,none,none,none,False,0.0,none,False
+163,11,archive_signal,drill:archive_signal:d11,choose detour,choose public recovery action,stone kiosk path,True,0.03,"forecast, caravan task, recovery marker",True
+164,11,signal_orchard,drill:signal_orchard:d11,none,none,none,False,0.0,none,False
+165,11,orchard_riverbend,drill:orchard_riverbend:d11,none,none,none,False,0.0,none,False
+166,11,central_repair_ring,drill:central_repair_ring:d11,none,none,none,False,0.0,none,False
+167,11,riverbend_roofward,drill:riverbend_roofward:d11,assign caravan task,choose public recovery action,carry flood rope,True,0.03,"forecast, caravan task, recovery marker",True
+168,11,roofward_archive,drill:roofward_archive:d11,none,none,none,False,0.0,none,False
+169,11,archive_signal,drill:archive_signal:d11,none,none,none,False,0.0,none,False
+170,11,signal_orchard,drill:signal_orchard:d11,none,none,none,False,0.0,none,False
+171,11,orchard_riverbend,drill:orchard_riverbend:d11,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+172,11,central_repair_ring,drill:central_repair_ring:d11,none,none,none,False,0.0,none,False
+173,11,riverbend_roofward,drill:riverbend_roofward:d11,none,none,none,False,0.0,none,False
+174,11,roofward_archive,drill:roofward_archive:d11,none,none,none,False,0.0,none,False
+175,11,archive_signal,drill:archive_signal:d11,none,none,none,False,0.0,none,False
+176,12,orchard_riverbend,drill:orchard_riverbend:d12,none,none,none,False,0.0,none,False
+177,12,central_repair_ring,drill:central_repair_ring:d12,none,none,none,False,0.0,none,False
+178,12,riverbend_roofward,drill:riverbend_roofward:d12,none,none,none,False,0.0,none,False
+179,12,roofward_archive,drill:roofward_archive:d12,choose detour,choose public recovery action,cool archive lane,True,0.03,"forecast, caravan task, recovery marker",True
+180,12,archive_signal,drill:archive_signal:d12,none,none,none,False,0.0,none,False
+181,12,signal_orchard,drill:signal_orchard:d12,none,none,none,False,0.0,none,False
+182,12,orchard_riverbend,drill:orchard_riverbend:d12,none,none,none,False,0.0,none,False
+183,12,central_repair_ring,drill:central_repair_ring:d12,assign caravan task,choose public recovery action,carry wire spool,True,0.03,"forecast, caravan task, recovery marker",True
+184,12,riverbend_roofward,drill:riverbend_roofward:d12,none,none,none,False,0.0,none,False
+185,12,roofward_archive,drill:roofward_archive:d12,none,none,none,False,0.0,none,False
+186,12,archive_signal,drill:archive_signal:d12,none,none,none,False,0.0,none,False
+187,12,signal_orchard,drill:signal_orchard:d12,confirm recovery marker,choose public recovery action,mark public recovery board,False,0.014,"forecast, caravan task, recovery marker",True
+188,12,orchard_riverbend,drill:orchard_riverbend:d12,none,none,none,False,0.0,none,False
+189,12,central_repair_ring,drill:central_repair_ring:d12,none,none,none,False,0.0,none,False
+190,12,riverbend_roofward,drill:riverbend_roofward:d12,none,none,none,False,0.0,none,False
+191,12,roofward_archive,drill:roofward_archive:d12,none,none,none,False,0.0,none,False
+192,13,archive_signal,drill:archive_signal:d13,none,none,none,False,0.0,none,False
+193,13,signal_orchard,drill:signal_orchard:d13,none,none,none,False,0.0,none,False
+194,13,orchard_riverbend,drill:orchard_riverbend:d13,none,none,none,False,0.0,none,False
+195,13,central_repair_ring,drill:central_repair_ring:d13,choose detour,choose public recovery action,outer bell path,True,0.03,"forecast, caravan task, recovery marker",True
+196,13,riverbend_roofward,drill:riverbend_roofward:d13,none,none,none,False,0.0,none,False
+197,13,roofward_archive,drill:roofward_archive:d13,none,none,none,False,0.0,none,False
+198,13,archive_signal,drill:archive_signal:d13,none,none,none,False,0.0,none,False
+199,13,signal_orchard,drill:signal_orchard:d13,none,none,none,False,0.0,none,False
+200,13,orchard_riverbend,drill:orchard_riverbend:d13,none,none,none,False,0.0,none,False
+201,13,central_repair_ring,drill:central_repair_ring:d13,none,none,none,False,0.0,none,False
+202,13,riverbend_roofward,drill:riverbend_roofward:d13,none,none,none,False,0.0,none,False
+203,13,roofward_archive,drill:roofward_archive:d13,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+204,13,archive_signal,drill:archive_signal:d13,none,none,none,False,0.0,none,False
+205,13,signal_orchard,drill:signal_orchard:d13,none,none,none,False,0.0,none,False
+206,13,orchard_riverbend,drill:orchard_riverbend:d13,none,none,none,False,0.0,none,False
+207,13,central_repair_ring,drill:central_repair_ring:d13,none,none,none,False,0.0,none,False
+208,14,riverbend_roofward,drill:riverbend_roofward:d14,none,none,none,False,0.0,none,False
+209,14,roofward_archive,drill:roofward_archive:d14,none,none,none,False,0.0,none,False
+210,14,archive_signal,drill:archive_signal:d14,none,none,none,False,0.0,none,False
+211,14,signal_orchard,drill:signal_orchard:d14,choose detour,choose public recovery action,river lantern loop,True,0.03,"forecast, caravan task, recovery marker",True
+212,14,orchard_riverbend,drill:orchard_riverbend:d14,none,none,none,False,0.0,none,False
+213,14,central_repair_ring,drill:central_repair_ring:d14,none,none,none,False,0.0,none,False
+214,14,riverbend_roofward,drill:riverbend_roofward:d14,none,none,none,False,0.0,none,False
+215,14,roofward_archive,drill:roofward_archive:d14,assign caravan task,choose public recovery action,steady glass crate,True,0.03,"forecast, caravan task, recovery marker",True
+216,14,archive_signal,drill:archive_signal:d14,none,none,none,False,0.0,none,False
+217,14,signal_orchard,drill:signal_orchard:d14,none,none,none,False,0.0,none,False
+218,14,orchard_riverbend,drill:orchard_riverbend:d14,none,none,none,False,0.0,none,False
+219,14,central_repair_ring,drill:central_repair_ring:d14,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+220,14,riverbend_roofward,drill:riverbend_roofward:d14,none,none,none,False,0.0,none,False
+221,14,roofward_archive,drill:roofward_archive:d14,none,none,none,False,0.0,none,False
+222,14,archive_signal,drill:archive_signal:d14,none,none,none,False,0.0,none,False
+223,14,signal_orchard,drill:signal_orchard:d14,none,none,none,False,0.0,none,False
+224,15,orchard_riverbend,drill:orchard_riverbend:d15,none,none,none,False,0.0,none,False
+225,15,central_repair_ring,drill:central_repair_ring:d15,none,none,none,False,0.0,none,False
+226,15,riverbend_roofward,drill:riverbend_roofward:d15,none,none,none,False,0.0,none,False
+227,15,roofward_archive,drill:roofward_archive:d15,none,none,none,False,0.0,none,False
+228,15,archive_signal,drill:archive_signal:d15,none,none,none,False,0.0,none,False
+229,15,signal_orchard,drill:signal_orchard:d15,none,none,none,False,0.0,none,False
+230,15,orchard_riverbend,drill:orchard_riverbend:d15,none,none,none,False,0.0,none,False
+231,15,central_repair_ring,drill:central_repair_ring:d15,none,none,none,False,0.0,none,False
+232,15,riverbend_roofward,drill:riverbend_roofward:d15,none,none,none,False,0.0,none,False
+233,15,roofward_archive,drill:roofward_archive:d15,none,none,none,False,0.0,none,False
+234,15,archive_signal,drill:archive_signal:d15,none,none,none,False,0.0,none,False
+235,15,signal_orchard,drill:signal_orchard:d15,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+236,15,orchard_riverbend,drill:orchard_riverbend:d15,none,none,none,False,0.0,none,False
+237,15,central_repair_ring,drill:central_repair_ring:d15,none,none,none,False,0.0,none,False
+238,15,riverbend_roofward,drill:riverbend_roofward:d15,none,none,none,False,0.0,none,False
+239,15,roofward_archive,drill:roofward_archive:d15,none,none,none,False,0.0,none,False
+240,16,archive_signal,drill:archive_signal:d16,none,none,none,False,0.0,none,False
+241,16,signal_orchard,drill:signal_orchard:d16,none,none,none,False,0.0,none,False
+242,16,orchard_riverbend,drill:orchard_riverbend:d16,none,none,none,False,0.0,none,False
+243,16,central_repair_ring,drill:central_repair_ring:d16,choose detour,choose public recovery action,outer bell path,True,0.03,"forecast, caravan task, recovery marker",True
+244,16,riverbend_roofward,drill:riverbend_roofward:d16,none,none,none,False,0.0,none,False
+245,16,roofward_archive,drill:roofward_archive:d16,none,none,none,False,0.0,none,False
+246,16,archive_signal,drill:archive_signal:d16,none,none,none,False,0.0,none,False
+247,16,signal_orchard,drill:signal_orchard:d16,assign caravan task,choose public recovery action,carry oil lamp,True,0.03,"forecast, caravan task, recovery marker",True
+248,16,orchard_riverbend,drill:orchard_riverbend:d16,none,none,none,False,0.0,none,False
+249,16,central_repair_ring,drill:central_repair_ring:d16,none,none,none,False,0.0,none,False
+250,16,riverbend_roofward,drill:riverbend_roofward:d16,none,none,none,False,0.0,none,False
+251,16,roofward_archive,drill:roofward_archive:d16,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+252,16,archive_signal,drill:archive_signal:d16,none,none,none,False,0.0,none,False
+253,16,signal_orchard,drill:signal_orchard:d16,none,none,none,False,0.0,none,False
+254,16,orchard_riverbend,drill:orchard_riverbend:d16,none,none,none,False,0.0,none,False
+255,16,central_repair_ring,drill:central_repair_ring:d16,none,none,none,False,0.0,none,False
+256,17,riverbend_roofward,drill:riverbend_roofward:d17,none,none,none,False,0.0,none,False
+257,17,roofward_archive,drill:roofward_archive:d17,none,none,none,False,0.0,none,False
+258,17,archive_signal,drill:archive_signal:d17,none,none,none,False,0.0,none,False
+259,17,signal_orchard,drill:signal_orchard:d17,none,none,none,False,0.0,none,False
+260,17,orchard_riverbend,drill:orchard_riverbend:d17,none,none,none,False,0.0,none,False
+261,17,central_repair_ring,drill:central_repair_ring:d17,none,none,none,False,0.0,none,False
+262,17,riverbend_roofward,drill:riverbend_roofward:d17,none,none,none,False,0.0,none,False
+263,17,roofward_archive,drill:roofward_archive:d17,assign caravan task,choose public recovery action,steady glass crate,True,0.03,"forecast, caravan task, recovery marker",True
+264,17,archive_signal,drill:archive_signal:d17,none,none,none,False,0.0,none,False
+265,17,signal_orchard,drill:signal_orchard:d17,none,none,none,False,0.0,none,False
+266,17,orchard_riverbend,drill:orchard_riverbend:d17,none,none,none,False,0.0,none,False
+267,17,central_repair_ring,drill:central_repair_ring:d17,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+268,17,riverbend_roofward,drill:riverbend_roofward:d17,none,none,none,False,0.0,none,False
+269,17,roofward_archive,drill:roofward_archive:d17,none,none,none,False,0.0,none,False
+270,17,archive_signal,drill:archive_signal:d17,none,none,none,False,0.0,none,False
+271,17,signal_orchard,drill:signal_orchard:d17,none,none,none,False,0.0,none,False
+272,18,central_repair_ring,drill:central_repair_ring:d18,none,none,none,False,0.0,none,False
+273,18,riverbend_roofward,drill:riverbend_roofward:d18,none,none,none,False,0.0,none,False
+274,18,roofward_archive,drill:roofward_archive:d18,none,none,none,False,0.0,none,False
+275,18,archive_signal,drill:archive_signal:d18,none,none,none,False,0.0,none,False
+276,18,signal_orchard,drill:signal_orchard:d18,none,none,none,False,0.0,none,False
+277,18,orchard_riverbend,drill:orchard_riverbend:d18,none,none,none,False,0.0,none,False
+278,18,central_repair_ring,drill:central_repair_ring:d18,none,none,none,False,0.0,none,False
+279,18,riverbend_roofward,drill:riverbend_roofward:d18,assign caravan task,choose public recovery action,carry flood rope,True,0.03,"forecast, caravan task, recovery marker",True
+280,18,roofward_archive,drill:roofward_archive:d18,none,none,none,False,0.0,none,False
+281,18,archive_signal,drill:archive_signal:d18,none,none,none,False,0.0,none,False
+282,18,signal_orchard,drill:signal_orchard:d18,none,none,none,False,0.0,none,False
+283,18,orchard_riverbend,drill:orchard_riverbend:d18,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+284,18,central_repair_ring,drill:central_repair_ring:d18,none,none,none,False,0.0,none,False
+285,18,riverbend_roofward,drill:riverbend_roofward:d18,none,none,none,False,0.0,none,False
+286,18,roofward_archive,drill:roofward_archive:d18,none,none,none,False,0.0,none,False
+287,18,archive_signal,drill:archive_signal:d18,none,none,none,False,0.0,none,False
+288,19,signal_orchard,drill:signal_orchard:d19,none,none,none,False,0.0,none,False
+289,19,orchard_riverbend,drill:orchard_riverbend:d19,none,none,none,False,0.0,none,False
+290,19,central_repair_ring,drill:central_repair_ring:d19,none,none,none,False,0.0,none,False
+291,19,riverbend_roofward,drill:riverbend_roofward:d19,choose detour,choose public recovery action,orchard ridge detour,True,0.03,"forecast, caravan task, recovery marker",True
+292,19,roofward_archive,drill:roofward_archive:d19,none,none,none,False,0.0,none,False
+293,19,archive_signal,drill:archive_signal:d19,none,none,none,False,0.0,none,False
+294,19,signal_orchard,drill:signal_orchard:d19,none,none,none,False,0.0,none,False
+295,19,orchard_riverbend,drill:orchard_riverbend:d19,assign caravan task,choose public recovery action,sort seed sacks,True,0.03,"forecast, caravan task, recovery marker",True
+296,19,central_repair_ring,drill:central_repair_ring:d19,none,none,none,False,0.0,none,False
+297,19,riverbend_roofward,drill:riverbend_roofward:d19,none,none,none,False,0.0,none,False
+298,19,roofward_archive,drill:roofward_archive:d19,none,none,none,False,0.0,none,False
+299,19,archive_signal,drill:archive_signal:d19,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+300,19,signal_orchard,drill:signal_orchard:d19,none,none,none,False,0.0,none,False
+301,19,orchard_riverbend,drill:orchard_riverbend:d19,none,none,none,False,0.0,none,False
+302,19,central_repair_ring,drill:central_repair_ring:d19,none,none,none,False,0.0,none,False
+303,19,riverbend_roofward,drill:riverbend_roofward:d19,none,none,none,False,0.0,none,False
+304,20,roofward_archive,drill:roofward_archive:d20,none,none,none,False,0.0,none,False
+305,20,archive_signal,drill:archive_signal:d20,none,none,none,False,0.0,none,False
+306,20,signal_orchard,drill:signal_orchard:d20,none,none,none,False,0.0,none,False
+307,20,orchard_riverbend,drill:orchard_riverbend:d20,none,none,none,False,0.0,none,False
+308,20,central_repair_ring,drill:central_repair_ring:d20,none,none,none,False,0.0,none,False
+309,20,riverbend_roofward,drill:riverbend_roofward:d20,none,none,none,False,0.0,none,False
+310,20,roofward_archive,drill:roofward_archive:d20,none,none,none,False,0.0,none,False
+311,20,archive_signal,drill:archive_signal:d20,assign caravan task,choose public recovery action,weigh paper packs,True,0.03,"forecast, caravan task, recovery marker",True
+312,20,signal_orchard,drill:signal_orchard:d20,none,none,none,False,0.0,none,False
+313,20,orchard_riverbend,drill:orchard_riverbend:d20,none,none,none,False,0.0,none,False
+314,20,central_repair_ring,drill:central_repair_ring:d20,none,none,none,False,0.0,none,False
+315,20,riverbend_roofward,drill:riverbend_roofward:d20,none,none,none,False,0.0,none,False
+316,20,roofward_archive,drill:roofward_archive:d20,none,none,none,False,0.0,none,False
+317,20,archive_signal,drill:archive_signal:d20,none,none,none,False,0.0,none,False
+318,20,signal_orchard,drill:signal_orchard:d20,none,none,none,False,0.0,none,False
+319,20,orchard_riverbend,drill:orchard_riverbend:d20,none,none,none,False,0.0,none,False
+320,21,central_repair_ring,drill:central_repair_ring:d21,none,none,none,False,0.0,none,False
+321,21,riverbend_roofward,drill:riverbend_roofward:d21,none,none,none,False,0.0,none,False
+322,21,roofward_archive,drill:roofward_archive:d21,none,none,none,False,0.0,none,False
+323,21,archive_signal,drill:archive_signal:d21,choose detour,choose public recovery action,stone kiosk path,False,0.014,"forecast, caravan task, recovery marker",True
+324,21,signal_orchard,drill:signal_orchard:d21,none,none,none,False,0.0,none,False
+325,21,orchard_riverbend,drill:orchard_riverbend:d21,none,none,none,False,0.0,none,False
+326,21,central_repair_ring,drill:central_repair_ring:d21,none,none,none,False,0.0,none,False
+327,21,riverbend_roofward,drill:riverbend_roofward:d21,assign caravan task,choose public recovery action,carry flood rope,True,0.03,"forecast, caravan task, recovery marker",True
+328,21,roofward_archive,drill:roofward_archive:d21,none,none,none,False,0.0,none,False
+329,21,archive_signal,drill:archive_signal:d21,none,none,none,False,0.0,none,False
+330,21,signal_orchard,drill:signal_orchard:d21,none,none,none,False,0.0,none,False
+331,21,orchard_riverbend,drill:orchard_riverbend:d21,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+332,21,central_repair_ring,drill:central_repair_ring:d21,none,none,none,False,0.0,none,False
+333,21,riverbend_roofward,drill:riverbend_roofward:d21,none,none,none,False,0.0,none,False
+334,21,roofward_archive,drill:roofward_archive:d21,none,none,none,False,0.0,none,False
+335,21,archive_signal,drill:archive_signal:d21,none,none,none,False,0.0,none,False
+336,22,signal_orchard,drill:signal_orchard:d22,none,none,none,False,0.0,none,False
+337,22,orchard_riverbend,drill:orchard_riverbend:d22,none,none,none,False,0.0,none,False
+338,22,central_repair_ring,drill:central_repair_ring:d22,none,none,none,False,0.0,none,False
+339,22,riverbend_roofward,drill:riverbend_roofward:d22,choose detour,choose public recovery action,orchard ridge detour,True,0.03,"forecast, caravan task, recovery marker",True
+340,22,roofward_archive,drill:roofward_archive:d22,none,none,none,False,0.0,none,False
+341,22,archive_signal,drill:archive_signal:d22,none,none,none,False,0.0,none,False
+342,22,signal_orchard,drill:signal_orchard:d22,none,none,none,False,0.0,none,False
+343,22,orchard_riverbend,drill:orchard_riverbend:d22,assign caravan task,choose public recovery action,sort seed sacks,True,0.03,"forecast, caravan task, recovery marker",True
+344,22,central_repair_ring,drill:central_repair_ring:d22,none,none,none,False,0.0,none,False
+345,22,riverbend_roofward,drill:riverbend_roofward:d22,none,none,none,False,0.0,none,False
+346,22,roofward_archive,drill:roofward_archive:d22,none,none,none,False,0.0,none,False
+347,22,archive_signal,drill:archive_signal:d22,none,none,none,False,0.0,none,False
+348,22,signal_orchard,drill:signal_orchard:d22,none,none,none,False,0.0,none,False
+349,22,orchard_riverbend,drill:orchard_riverbend:d22,none,none,none,False,0.0,none,False
+350,22,central_repair_ring,drill:central_repair_ring:d22,none,none,none,False,0.0,none,False
+351,22,riverbend_roofward,drill:riverbend_roofward:d22,none,none,none,False,0.0,none,False
+352,23,roofward_archive,drill:roofward_archive:d23,none,none,none,False,0.0,none,False
+353,23,archive_signal,drill:archive_signal:d23,none,none,none,False,0.0,none,False
+354,23,signal_orchard,drill:signal_orchard:d23,none,none,none,False,0.0,none,False
+355,23,orchard_riverbend,drill:orchard_riverbend:d23,choose detour,choose public recovery action,market plank route,True,0.03,"forecast, caravan task, recovery marker",True
+356,23,central_repair_ring,drill:central_repair_ring:d23,none,none,none,False,0.0,none,False
+357,23,riverbend_roofward,drill:riverbend_roofward:d23,none,none,none,False,0.0,none,False
+358,23,roofward_archive,drill:roofward_archive:d23,none,none,none,False,0.0,none,False
+359,23,archive_signal,drill:archive_signal:d23,assign caravan task,choose public recovery action,weigh paper packs,True,0.03,"forecast, caravan task, recovery marker",True
+360,23,signal_orchard,drill:signal_orchard:d23,none,none,none,False,0.0,none,False
+361,23,orchard_riverbend,drill:orchard_riverbend:d23,none,none,none,False,0.0,none,False
+362,23,central_repair_ring,drill:central_repair_ring:d23,none,none,none,False,0.0,none,False
+363,23,riverbend_roofward,drill:riverbend_roofward:d23,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+364,23,roofward_archive,drill:roofward_archive:d23,none,none,none,False,0.0,none,False
+365,23,archive_signal,drill:archive_signal:d23,none,none,none,False,0.0,none,False
+366,23,signal_orchard,drill:signal_orchard:d23,none,none,none,False,0.0,none,False
+367,23,orchard_riverbend,drill:orchard_riverbend:d23,none,none,none,False,0.0,none,False
+368,24,riverbend_roofward,drill:riverbend_roofward:d24,none,none,none,False,0.0,none,False
+369,24,roofward_archive,drill:roofward_archive:d24,none,none,none,False,0.0,none,False
+370,24,archive_signal,drill:archive_signal:d24,none,none,none,False,0.0,none,False
+371,24,signal_orchard,drill:signal_orchard:d24,choose detour,choose public recovery action,river lantern loop,True,0.03,"forecast, caravan task, recovery marker",True
+372,24,orchard_riverbend,drill:orchard_riverbend:d24,none,none,none,False,0.0,none,False
+373,24,central_repair_ring,drill:central_repair_ring:d24,none,none,none,False,0.0,none,False
+374,24,riverbend_roofward,drill:riverbend_roofward:d24,none,none,none,False,0.0,none,False
+375,24,roofward_archive,drill:roofward_archive:d24,assign caravan task,choose public recovery action,steady glass crate,True,0.03,"forecast, caravan task, recovery marker",True
+376,24,archive_signal,drill:archive_signal:d24,none,none,none,False,0.0,none,False
+377,24,signal_orchard,drill:signal_orchard:d24,none,none,none,False,0.0,none,False
+378,24,orchard_riverbend,drill:orchard_riverbend:d24,none,none,none,False,0.0,none,False
+379,24,central_repair_ring,drill:central_repair_ring:d24,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+380,24,riverbend_roofward,drill:riverbend_roofward:d24,none,none,none,False,0.0,none,False
+381,24,roofward_archive,drill:roofward_archive:d24,none,none,none,False,0.0,none,False
+382,24,archive_signal,drill:archive_signal:d24,none,none,none,False,0.0,none,False
+383,24,signal_orchard,drill:signal_orchard:d24,none,none,none,False,0.0,none,False
+384,25,orchard_riverbend,drill:orchard_riverbend:d25,none,none,none,False,0.0,none,False
+385,25,central_repair_ring,drill:central_repair_ring:d25,none,none,none,False,0.0,none,False
+386,25,riverbend_roofward,drill:riverbend_roofward:d25,none,none,none,False,0.0,none,False
+387,25,roofward_archive,drill:roofward_archive:d25,choose detour,choose public recovery action,cool archive lane,True,0.03,"forecast, caravan task, recovery marker",True
+388,25,archive_signal,drill:archive_signal:d25,none,none,none,False,0.0,none,False
+389,25,signal_orchard,drill:signal_orchard:d25,none,none,none,False,0.0,none,False
+390,25,orchard_riverbend,drill:orchard_riverbend:d25,none,none,none,False,0.0,none,False
+391,25,central_repair_ring,drill:central_repair_ring:d25,assign caravan task,choose public recovery action,carry wire spool,False,0.014,"forecast, caravan task, recovery marker",True
+392,25,riverbend_roofward,drill:riverbend_roofward:d25,none,none,none,False,0.0,none,False
+393,25,roofward_archive,drill:roofward_archive:d25,none,none,none,False,0.0,none,False
+394,25,archive_signal,drill:archive_signal:d25,none,none,none,False,0.0,none,False
+395,25,signal_orchard,drill:signal_orchard:d25,none,none,none,False,0.0,none,False
+396,25,orchard_riverbend,drill:orchard_riverbend:d25,none,none,none,False,0.0,none,False
+397,25,central_repair_ring,drill:central_repair_ring:d25,none,none,none,False,0.0,none,False
+398,25,riverbend_roofward,drill:riverbend_roofward:d25,none,none,none,False,0.0,none,False
+399,25,roofward_archive,drill:roofward_archive:d25,none,none,none,False,0.0,none,False
+400,26,archive_signal,drill:archive_signal:d26,none,none,none,False,0.0,none,False
+401,26,signal_orchard,drill:signal_orchard:d26,none,none,none,False,0.0,none,False
+402,26,orchard_riverbend,drill:orchard_riverbend:d26,none,none,none,False,0.0,none,False
+403,26,central_repair_ring,drill:central_repair_ring:d26,choose detour,choose public recovery action,outer bell path,True,0.03,"forecast, caravan task, recovery marker",True
+404,26,riverbend_roofward,drill:riverbend_roofward:d26,none,none,none,False,0.0,none,False
+405,26,roofward_archive,drill:roofward_archive:d26,none,none,none,False,0.0,none,False
+406,26,archive_signal,drill:archive_signal:d26,none,none,none,False,0.0,none,False
+407,26,signal_orchard,drill:signal_orchard:d26,assign caravan task,choose public recovery action,carry oil lamp,True,0.03,"forecast, caravan task, recovery marker",True
+408,26,orchard_riverbend,drill:orchard_riverbend:d26,none,none,none,False,0.0,none,False
+409,26,central_repair_ring,drill:central_repair_ring:d26,none,none,none,False,0.0,none,False
+410,26,riverbend_roofward,drill:riverbend_roofward:d26,none,none,none,False,0.0,none,False
+411,26,roofward_archive,drill:roofward_archive:d26,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+412,26,archive_signal,drill:archive_signal:d26,none,none,none,False,0.0,none,False
+413,26,signal_orchard,drill:signal_orchard:d26,none,none,none,False,0.0,none,False
+414,26,orchard_riverbend,drill:orchard_riverbend:d26,none,none,none,False,0.0,none,False
+415,26,central_repair_ring,drill:central_repair_ring:d26,none,none,none,False,0.0,none,False
+416,27,riverbend_roofward,drill:riverbend_roofward:d27,none,none,none,False,0.0,none,False
+417,27,roofward_archive,drill:roofward_archive:d27,none,none,none,False,0.0,none,False
+418,27,archive_signal,drill:archive_signal:d27,none,none,none,False,0.0,none,False
+419,27,signal_orchard,drill:signal_orchard:d27,choose detour,choose public recovery action,river lantern loop,True,0.03,"forecast, caravan task, recovery marker",True
+420,27,orchard_riverbend,drill:orchard_riverbend:d27,none,none,none,False,0.0,none,False
+421,27,central_repair_ring,drill:central_repair_ring:d27,none,none,none,False,0.0,none,False
+422,27,riverbend_roofward,drill:riverbend_roofward:d27,none,none,none,False,0.0,none,False
+423,27,roofward_archive,drill:roofward_archive:d27,none,none,none,False,0.0,none,False
+424,27,archive_signal,drill:archive_signal:d27,none,none,none,False,0.0,none,False
+425,27,signal_orchard,drill:signal_orchard:d27,none,none,none,False,0.0,none,False
+426,27,orchard_riverbend,drill:orchard_riverbend:d27,none,none,none,False,0.0,none,False
+427,27,central_repair_ring,drill:central_repair_ring:d27,none,none,none,False,0.0,none,False
+428,27,riverbend_roofward,drill:riverbend_roofward:d27,none,none,none,False,0.0,none,False
+429,27,roofward_archive,drill:roofward_archive:d27,none,none,none,False,0.0,none,False
+430,27,archive_signal,drill:archive_signal:d27,none,none,none,False,0.0,none,False
+431,27,signal_orchard,drill:signal_orchard:d27,none,none,none,False,0.0,none,False
+432,28,orchard_riverbend,drill:orchard_riverbend:d28,none,none,none,False,0.0,none,False
+433,28,central_repair_ring,drill:central_repair_ring:d28,none,none,none,False,0.0,none,False
+434,28,riverbend_roofward,drill:riverbend_roofward:d28,none,none,none,False,0.0,none,False
+435,28,roofward_archive,drill:roofward_archive:d28,choose detour,choose public recovery action,cool archive lane,True,0.03,"forecast, caravan task, recovery marker",True
+436,28,archive_signal,drill:archive_signal:d28,none,none,none,False,0.0,none,False
+437,28,signal_orchard,drill:signal_orchard:d28,none,none,none,False,0.0,none,False
+438,28,orchard_riverbend,drill:orchard_riverbend:d28,none,none,none,False,0.0,none,False
+439,28,central_repair_ring,drill:central_repair_ring:d28,assign caravan task,choose public recovery action,carry wire spool,True,0.03,"forecast, caravan task, recovery marker",True
+440,28,riverbend_roofward,drill:riverbend_roofward:d28,none,none,none,False,0.0,none,False
+441,28,roofward_archive,drill:roofward_archive:d28,none,none,none,False,0.0,none,False
+442,28,archive_signal,drill:archive_signal:d28,none,none,none,False,0.0,none,False
+443,28,signal_orchard,drill:signal_orchard:d28,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+444,28,orchard_riverbend,drill:orchard_riverbend:d28,none,none,none,False,0.0,none,False
+445,28,central_repair_ring,drill:central_repair_ring:d28,none,none,none,False,0.0,none,False
+446,28,riverbend_roofward,drill:riverbend_roofward:d28,none,none,none,False,0.0,none,False
+447,28,roofward_archive,drill:roofward_archive:d28,none,none,none,False,0.0,none,False
+448,29,archive_signal,drill:archive_signal:d29,none,none,none,False,0.0,none,False
+449,29,signal_orchard,drill:signal_orchard:d29,none,none,none,False,0.0,none,False
+450,29,orchard_riverbend,drill:orchard_riverbend:d29,none,none,none,False,0.0,none,False
+451,29,central_repair_ring,drill:central_repair_ring:d29,choose detour,choose public recovery action,outer bell path,True,0.03,"forecast, caravan task, recovery marker",True
+452,29,riverbend_roofward,drill:riverbend_roofward:d29,none,none,none,False,0.0,none,False
+453,29,roofward_archive,drill:roofward_archive:d29,none,none,none,False,0.0,none,False
+454,29,archive_signal,drill:archive_signal:d29,none,none,none,False,0.0,none,False
+455,29,signal_orchard,drill:signal_orchard:d29,none,none,none,False,0.0,none,False
+456,29,orchard_riverbend,drill:orchard_riverbend:d29,none,none,none,False,0.0,none,False
+457,29,central_repair_ring,drill:central_repair_ring:d29,none,none,none,False,0.0,none,False
+458,29,riverbend_roofward,drill:riverbend_roofward:d29,none,none,none,False,0.0,none,False
+459,29,roofward_archive,drill:roofward_archive:d29,confirm recovery marker,choose public recovery action,mark public recovery board,False,0.014,"forecast, caravan task, recovery marker",True
+460,29,archive_signal,drill:archive_signal:d29,none,none,none,False,0.0,none,False
+461,29,signal_orchard,drill:signal_orchard:d29,none,none,none,False,0.0,none,False
+462,29,orchard_riverbend,drill:orchard_riverbend:d29,none,none,none,False,0.0,none,False
+463,29,central_repair_ring,drill:central_repair_ring:d29,none,none,none,False,0.0,none,False
+464,30,roofward_archive,drill:roofward_archive:d30,none,none,none,False,0.0,none,False
+465,30,archive_signal,drill:archive_signal:d30,none,none,none,False,0.0,none,False
+466,30,signal_orchard,drill:signal_orchard:d30,none,none,none,False,0.0,none,False
+467,30,orchard_riverbend,drill:orchard_riverbend:d30,choose detour,choose public recovery action,market plank route,True,0.03,"forecast, caravan task, recovery marker",True
+468,30,central_repair_ring,drill:central_repair_ring:d30,none,none,none,False,0.0,none,False
+469,30,riverbend_roofward,drill:riverbend_roofward:d30,none,none,none,False,0.0,none,False
+470,30,roofward_archive,drill:roofward_archive:d30,none,none,none,False,0.0,none,False
+471,30,archive_signal,drill:archive_signal:d30,none,none,none,False,0.0,none,False
+472,30,signal_orchard,drill:signal_orchard:d30,none,none,none,False,0.0,none,False
+473,30,orchard_riverbend,drill:orchard_riverbend:d30,none,none,none,False,0.0,none,False
+474,30,central_repair_ring,drill:central_repair_ring:d30,none,none,none,False,0.0,none,False
+475,30,riverbend_roofward,drill:riverbend_roofward:d30,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+476,30,roofward_archive,drill:roofward_archive:d30,none,none,none,False,0.0,none,False
+477,30,archive_signal,drill:archive_signal:d30,none,none,none,False,0.0,none,False
+478,30,signal_orchard,drill:signal_orchard:d30,none,none,none,False,0.0,none,False
+479,30,orchard_riverbend,drill:orchard_riverbend:d30,none,none,none,False,0.0,none,False
+480,31,central_repair_ring,drill:central_repair_ring:d31,none,none,none,False,0.0,none,False
+481,31,riverbend_roofward,drill:riverbend_roofward:d31,none,none,none,False,0.0,none,False
+482,31,roofward_archive,drill:roofward_archive:d31,none,none,none,False,0.0,none,False
+483,31,archive_signal,drill:archive_signal:d31,choose detour,choose public recovery action,stone kiosk path,True,0.03,"forecast, caravan task, recovery marker",True
+484,31,signal_orchard,drill:signal_orchard:d31,none,none,none,False,0.0,none,False
+485,31,orchard_riverbend,drill:orchard_riverbend:d31,none,none,none,False,0.0,none,False
+486,31,central_repair_ring,drill:central_repair_ring:d31,none,none,none,False,0.0,none,False
+487,31,riverbend_roofward,drill:riverbend_roofward:d31,assign caravan task,choose public recovery action,carry flood rope,True,0.03,"forecast, caravan task, recovery marker",True
+488,31,roofward_archive,drill:roofward_archive:d31,none,none,none,False,0.0,none,False
+489,31,archive_signal,drill:archive_signal:d31,none,none,none,False,0.0,none,False
+490,31,signal_orchard,drill:signal_orchard:d31,none,none,none,False,0.0,none,False
+491,31,orchard_riverbend,drill:orchard_riverbend:d31,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+492,31,central_repair_ring,drill:central_repair_ring:d31,none,none,none,False,0.0,none,False
+493,31,riverbend_roofward,drill:riverbend_roofward:d31,none,none,none,False,0.0,none,False
+494,31,roofward_archive,drill:roofward_archive:d31,none,none,none,False,0.0,none,False
+495,31,archive_signal,drill:archive_signal:d31,none,none,none,False,0.0,none,False
+496,32,signal_orchard,drill:signal_orchard:d32,none,none,none,False,0.0,none,False
+497,32,orchard_riverbend,drill:orchard_riverbend:d32,none,none,none,False,0.0,none,False
+498,32,central_repair_ring,drill:central_repair_ring:d32,none,none,none,False,0.0,none,False
+499,32,riverbend_roofward,drill:riverbend_roofward:d32,none,none,none,False,0.0,none,False
+500,32,roofward_archive,drill:roofward_archive:d32,none,none,none,False,0.0,none,False
+501,32,archive_signal,drill:archive_signal:d32,none,none,none,False,0.0,none,False
+502,32,signal_orchard,drill:signal_orchard:d32,none,none,none,False,0.0,none,False
+503,32,orchard_riverbend,drill:orchard_riverbend:d32,none,none,none,False,0.0,none,False
+504,32,central_repair_ring,drill:central_repair_ring:d32,none,none,none,False,0.0,none,False
+505,32,riverbend_roofward,drill:riverbend_roofward:d32,none,none,none,False,0.0,none,False
+506,32,roofward_archive,drill:roofward_archive:d32,none,none,none,False,0.0,none,False
+507,32,archive_signal,drill:archive_signal:d32,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+508,32,signal_orchard,drill:signal_orchard:d32,none,none,none,False,0.0,none,False
+509,32,orchard_riverbend,drill:orchard_riverbend:d32,none,none,none,False,0.0,none,False
+510,32,central_repair_ring,drill:central_repair_ring:d32,none,none,none,False,0.0,none,False
+511,32,riverbend_roofward,drill:riverbend_roofward:d32,none,none,none,False,0.0,none,False
+512,33,roofward_archive,drill:roofward_archive:d33,none,none,none,False,0.0,none,False
+513,33,archive_signal,drill:archive_signal:d33,none,none,none,False,0.0,none,False
+514,33,signal_orchard,drill:signal_orchard:d33,none,none,none,False,0.0,none,False
+515,33,orchard_riverbend,drill:orchard_riverbend:d33,choose detour,choose public recovery action,market plank route,True,0.03,"forecast, caravan task, recovery marker",True
+516,33,central_repair_ring,drill:central_repair_ring:d33,none,none,none,False,0.0,none,False
+517,33,riverbend_roofward,drill:riverbend_roofward:d33,none,none,none,False,0.0,none,False
+518,33,roofward_archive,drill:roofward_archive:d33,none,none,none,False,0.0,none,False
+519,33,archive_signal,drill:archive_signal:d33,assign caravan task,choose public recovery action,weigh paper packs,True,0.03,"forecast, caravan task, recovery marker",True
+520,33,signal_orchard,drill:signal_orchard:d33,none,none,none,False,0.0,none,False
+521,33,orchard_riverbend,drill:orchard_riverbend:d33,none,none,none,False,0.0,none,False
+522,33,central_repair_ring,drill:central_repair_ring:d33,none,none,none,False,0.0,none,False
+523,33,riverbend_roofward,drill:riverbend_roofward:d33,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+524,33,roofward_archive,drill:roofward_archive:d33,none,none,none,False,0.0,none,False
+525,33,archive_signal,drill:archive_signal:d33,none,none,none,False,0.0,none,False
+526,33,signal_orchard,drill:signal_orchard:d33,none,none,none,False,0.0,none,False
+527,33,orchard_riverbend,drill:orchard_riverbend:d33,none,none,none,False,0.0,none,False
+528,34,central_repair_ring,drill:central_repair_ring:d34,none,none,none,False,0.0,none,False
+529,34,riverbend_roofward,drill:riverbend_roofward:d34,none,none,none,False,0.0,none,False
+530,34,roofward_archive,drill:roofward_archive:d34,none,none,none,False,0.0,none,False
+531,34,archive_signal,drill:archive_signal:d34,none,none,none,False,0.0,none,False
+532,34,signal_orchard,drill:signal_orchard:d34,none,none,none,False,0.0,none,False
+533,34,orchard_riverbend,drill:orchard_riverbend:d34,none,none,none,False,0.0,none,False
+534,34,central_repair_ring,drill:central_repair_ring:d34,none,none,none,False,0.0,none,False
+535,34,riverbend_roofward,drill:riverbend_roofward:d34,assign caravan task,choose public recovery action,carry flood rope,True,0.03,"forecast, caravan task, recovery marker",True
+536,34,roofward_archive,drill:roofward_archive:d34,none,none,none,False,0.0,none,False
+537,34,archive_signal,drill:archive_signal:d34,none,none,none,False,0.0,none,False
+538,34,signal_orchard,drill:signal_orchard:d34,none,none,none,False,0.0,none,False
+539,34,orchard_riverbend,drill:orchard_riverbend:d34,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+540,34,central_repair_ring,drill:central_repair_ring:d34,none,none,none,False,0.0,none,False
+541,34,riverbend_roofward,drill:riverbend_roofward:d34,none,none,none,False,0.0,none,False
+542,34,roofward_archive,drill:roofward_archive:d34,none,none,none,False,0.0,none,False
+543,34,archive_signal,drill:archive_signal:d34,none,none,none,False,0.0,none,False
+544,35,signal_orchard,drill:signal_orchard:d35,none,none,none,False,0.0,none,False
+545,35,orchard_riverbend,drill:orchard_riverbend:d35,none,none,none,False,0.0,none,False
+546,35,central_repair_ring,drill:central_repair_ring:d35,none,none,none,False,0.0,none,False
+547,35,riverbend_roofward,drill:riverbend_roofward:d35,choose detour,choose public recovery action,orchard ridge detour,True,0.03,"forecast, caravan task, recovery marker",True
+548,35,roofward_archive,drill:roofward_archive:d35,none,none,none,False,0.0,none,False
+549,35,archive_signal,drill:archive_signal:d35,none,none,none,False,0.0,none,False
+550,35,signal_orchard,drill:signal_orchard:d35,none,none,none,False,0.0,none,False
+551,35,orchard_riverbend,drill:orchard_riverbend:d35,assign caravan task,choose public recovery action,sort seed sacks,True,0.03,"forecast, caravan task, recovery marker",True
+552,35,central_repair_ring,drill:central_repair_ring:d35,none,none,none,False,0.0,none,False
+553,35,riverbend_roofward,drill:riverbend_roofward:d35,none,none,none,False,0.0,none,False
+554,35,roofward_archive,drill:roofward_archive:d35,none,none,none,False,0.0,none,False
+555,35,archive_signal,drill:archive_signal:d35,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+556,35,signal_orchard,drill:signal_orchard:d35,none,none,none,False,0.0,none,False
+557,35,orchard_riverbend,drill:orchard_riverbend:d35,none,none,none,False,0.0,none,False
+558,35,central_repair_ring,drill:central_repair_ring:d35,none,none,none,False,0.0,none,False
+559,35,riverbend_roofward,drill:riverbend_roofward:d35,none,none,none,False,0.0,none,False
+560,36,archive_signal,drill:archive_signal:d36,none,none,none,False,0.0,none,False
+561,36,signal_orchard,drill:signal_orchard:d36,none,none,none,False,0.0,none,False
+562,36,orchard_riverbend,drill:orchard_riverbend:d36,none,none,none,False,0.0,none,False
+563,36,central_repair_ring,drill:central_repair_ring:d36,choose detour,choose public recovery action,outer bell path,True,0.03,"forecast, caravan task, recovery marker",True
+564,36,riverbend_roofward,drill:riverbend_roofward:d36,none,none,none,False,0.0,none,False
+565,36,roofward_archive,drill:roofward_archive:d36,none,none,none,False,0.0,none,False
+566,36,archive_signal,drill:archive_signal:d36,none,none,none,False,0.0,none,False
+567,36,signal_orchard,drill:signal_orchard:d36,assign caravan task,choose public recovery action,carry oil lamp,True,0.03,"forecast, caravan task, recovery marker",True
+568,36,orchard_riverbend,drill:orchard_riverbend:d36,none,none,none,False,0.0,none,False
+569,36,central_repair_ring,drill:central_repair_ring:d36,none,none,none,False,0.0,none,False
+570,36,riverbend_roofward,drill:riverbend_roofward:d36,none,none,none,False,0.0,none,False
+571,36,roofward_archive,drill:roofward_archive:d36,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+572,36,archive_signal,drill:archive_signal:d36,none,none,none,False,0.0,none,False
+573,36,signal_orchard,drill:signal_orchard:d36,none,none,none,False,0.0,none,False
+574,36,orchard_riverbend,drill:orchard_riverbend:d36,none,none,none,False,0.0,none,False
+575,36,central_repair_ring,drill:central_repair_ring:d36,none,none,none,False,0.0,none,False
+576,37,riverbend_roofward,drill:riverbend_roofward:d37,none,none,none,False,0.0,none,False
+577,37,roofward_archive,drill:roofward_archive:d37,none,none,none,False,0.0,none,False
+578,37,archive_signal,drill:archive_signal:d37,none,none,none,False,0.0,none,False
+579,37,signal_orchard,drill:signal_orchard:d37,none,none,none,False,0.0,none,False
+580,37,orchard_riverbend,drill:orchard_riverbend:d37,none,none,none,False,0.0,none,False
+581,37,central_repair_ring,drill:central_repair_ring:d37,none,none,none,False,0.0,none,False
+582,37,riverbend_roofward,drill:riverbend_roofward:d37,none,none,none,False,0.0,none,False
+583,37,roofward_archive,drill:roofward_archive:d37,assign caravan task,choose public recovery action,steady glass crate,True,0.03,"forecast, caravan task, recovery marker",True
+584,37,archive_signal,drill:archive_signal:d37,none,none,none,False,0.0,none,False
+585,37,signal_orchard,drill:signal_orchard:d37,none,none,none,False,0.0,none,False
+586,37,orchard_riverbend,drill:orchard_riverbend:d37,none,none,none,False,0.0,none,False
+587,37,central_repair_ring,drill:central_repair_ring:d37,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+588,37,riverbend_roofward,drill:riverbend_roofward:d37,none,none,none,False,0.0,none,False
+589,37,roofward_archive,drill:roofward_archive:d37,none,none,none,False,0.0,none,False
+590,37,archive_signal,drill:archive_signal:d37,none,none,none,False,0.0,none,False
+591,37,signal_orchard,drill:signal_orchard:d37,none,none,none,False,0.0,none,False
+592,38,orchard_riverbend,drill:orchard_riverbend:d38,none,none,none,False,0.0,none,False
+593,38,central_repair_ring,drill:central_repair_ring:d38,none,none,none,False,0.0,none,False
+594,38,riverbend_roofward,drill:riverbend_roofward:d38,none,none,none,False,0.0,none,False
+595,38,roofward_archive,drill:roofward_archive:d38,choose detour,choose public recovery action,cool archive lane,False,0.014,"forecast, caravan task, recovery marker",True
+596,38,archive_signal,drill:archive_signal:d38,none,none,none,False,0.0,none,False
+597,38,signal_orchard,drill:signal_orchard:d38,none,none,none,False,0.0,none,False
+598,38,orchard_riverbend,drill:orchard_riverbend:d38,none,none,none,False,0.0,none,False
+599,38,central_repair_ring,drill:central_repair_ring:d38,assign caravan task,choose public recovery action,carry wire spool,True,0.03,"forecast, caravan task, recovery marker",True
+600,38,riverbend_roofward,drill:riverbend_roofward:d38,none,none,none,False,0.0,none,False
+601,38,roofward_archive,drill:roofward_archive:d38,none,none,none,False,0.0,none,False
+602,38,archive_signal,drill:archive_signal:d38,none,none,none,False,0.0,none,False
+603,38,signal_orchard,drill:signal_orchard:d38,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+604,38,orchard_riverbend,drill:orchard_riverbend:d38,none,none,none,False,0.0,none,False
+605,38,central_repair_ring,drill:central_repair_ring:d38,none,none,none,False,0.0,none,False
+606,38,riverbend_roofward,drill:riverbend_roofward:d38,none,none,none,False,0.0,none,False
+607,38,roofward_archive,drill:roofward_archive:d38,none,none,none,False,0.0,none,False
+608,39,archive_signal,drill:archive_signal:d39,none,none,none,False,0.0,none,False
+609,39,signal_orchard,drill:signal_orchard:d39,none,none,none,False,0.0,none,False
+610,39,orchard_riverbend,drill:orchard_riverbend:d39,none,none,none,False,0.0,none,False
+611,39,central_repair_ring,drill:central_repair_ring:d39,none,none,none,False,0.0,none,False
+612,39,riverbend_roofward,drill:riverbend_roofward:d39,none,none,none,False,0.0,none,False
+613,39,roofward_archive,drill:roofward_archive:d39,none,none,none,False,0.0,none,False
+614,39,archive_signal,drill:archive_signal:d39,none,none,none,False,0.0,none,False
+615,39,signal_orchard,drill:signal_orchard:d39,assign caravan task,choose public recovery action,carry oil lamp,True,0.03,"forecast, caravan task, recovery marker",True
+616,39,orchard_riverbend,drill:orchard_riverbend:d39,none,none,none,False,0.0,none,False
+617,39,central_repair_ring,drill:central_repair_ring:d39,none,none,none,False,0.0,none,False
+618,39,riverbend_roofward,drill:riverbend_roofward:d39,none,none,none,False,0.0,none,False
+619,39,roofward_archive,drill:roofward_archive:d39,none,none,none,False,0.0,none,False
+620,39,archive_signal,drill:archive_signal:d39,none,none,none,False,0.0,none,False
+621,39,signal_orchard,drill:signal_orchard:d39,none,none,none,False,0.0,none,False
+622,39,orchard_riverbend,drill:orchard_riverbend:d39,none,none,none,False,0.0,none,False
+623,39,central_repair_ring,drill:central_repair_ring:d39,none,none,none,False,0.0,none,False
+624,40,riverbend_roofward,drill:riverbend_roofward:d40,none,none,none,False,0.0,none,False
+625,40,roofward_archive,drill:roofward_archive:d40,none,none,none,False,0.0,none,False
+626,40,archive_signal,drill:archive_signal:d40,none,none,none,False,0.0,none,False
+627,40,signal_orchard,drill:signal_orchard:d40,choose detour,choose public recovery action,river lantern loop,True,0.03,"forecast, caravan task, recovery marker",True
+628,40,orchard_riverbend,drill:orchard_riverbend:d40,none,none,none,False,0.0,none,False
+629,40,central_repair_ring,drill:central_repair_ring:d40,none,none,none,False,0.0,none,False
+630,40,riverbend_roofward,drill:riverbend_roofward:d40,none,none,none,False,0.0,none,False
+631,40,roofward_archive,drill:roofward_archive:d40,assign caravan task,choose public recovery action,steady glass crate,True,0.03,"forecast, caravan task, recovery marker",True
+632,40,archive_signal,drill:archive_signal:d40,none,none,none,False,0.0,none,False
+633,40,signal_orchard,drill:signal_orchard:d40,none,none,none,False,0.0,none,False
+634,40,orchard_riverbend,drill:orchard_riverbend:d40,none,none,none,False,0.0,none,False
+635,40,central_repair_ring,drill:central_repair_ring:d40,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+636,40,riverbend_roofward,drill:riverbend_roofward:d40,none,none,none,False,0.0,none,False
+637,40,roofward_archive,drill:roofward_archive:d40,none,none,none,False,0.0,none,False
+638,40,archive_signal,drill:archive_signal:d40,none,none,none,False,0.0,none,False
+639,40,signal_orchard,drill:signal_orchard:d40,none,none,none,False,0.0,none,False
+640,41,orchard_riverbend,drill:orchard_riverbend:d41,none,none,none,False,0.0,none,False
+641,41,central_repair_ring,drill:central_repair_ring:d41,none,none,none,False,0.0,none,False
+642,41,riverbend_roofward,drill:riverbend_roofward:d41,none,none,none,False,0.0,none,False
+643,41,roofward_archive,drill:roofward_archive:d41,choose detour,choose public recovery action,cool archive lane,True,0.03,"forecast, caravan task, recovery marker",True
+644,41,archive_signal,drill:archive_signal:d41,none,none,none,False,0.0,none,False
+645,41,signal_orchard,drill:signal_orchard:d41,none,none,none,False,0.0,none,False
+646,41,orchard_riverbend,drill:orchard_riverbend:d41,none,none,none,False,0.0,none,False
+647,41,central_repair_ring,drill:central_repair_ring:d41,assign caravan task,choose public recovery action,carry wire spool,True,0.03,"forecast, caravan task, recovery marker",True
+648,41,riverbend_roofward,drill:riverbend_roofward:d41,none,none,none,False,0.0,none,False
+649,41,roofward_archive,drill:roofward_archive:d41,none,none,none,False,0.0,none,False
+650,41,archive_signal,drill:archive_signal:d41,none,none,none,False,0.0,none,False
+651,41,signal_orchard,drill:signal_orchard:d41,none,none,none,False,0.0,none,False
+652,41,orchard_riverbend,drill:orchard_riverbend:d41,none,none,none,False,0.0,none,False
+653,41,central_repair_ring,drill:central_repair_ring:d41,none,none,none,False,0.0,none,False
+654,41,riverbend_roofward,drill:riverbend_roofward:d41,none,none,none,False,0.0,none,False
+655,41,roofward_archive,drill:roofward_archive:d41,none,none,none,False,0.0,none,False
+656,42,signal_orchard,drill:signal_orchard:d42,none,none,none,False,0.0,none,False
+657,42,orchard_riverbend,drill:orchard_riverbend:d42,none,none,none,False,0.0,none,False
+658,42,central_repair_ring,drill:central_repair_ring:d42,none,none,none,False,0.0,none,False
+659,42,riverbend_roofward,drill:riverbend_roofward:d42,choose detour,choose public recovery action,orchard ridge detour,True,0.03,"forecast, caravan task, recovery marker",True
+660,42,roofward_archive,drill:roofward_archive:d42,none,none,none,False,0.0,none,False
+661,42,archive_signal,drill:archive_signal:d42,none,none,none,False,0.0,none,False
+662,42,signal_orchard,drill:signal_orchard:d42,none,none,none,False,0.0,none,False
+663,42,orchard_riverbend,drill:orchard_riverbend:d42,assign caravan task,choose public recovery action,sort seed sacks,False,0.014,"forecast, caravan task, recovery marker",True
+664,42,central_repair_ring,drill:central_repair_ring:d42,none,none,none,False,0.0,none,False
+665,42,riverbend_roofward,drill:riverbend_roofward:d42,none,none,none,False,0.0,none,False
+666,42,roofward_archive,drill:roofward_archive:d42,none,none,none,False,0.0,none,False
+667,42,archive_signal,drill:archive_signal:d42,none,none,none,False,0.0,none,False
+668,42,signal_orchard,drill:signal_orchard:d42,none,none,none,False,0.0,none,False
+669,42,orchard_riverbend,drill:orchard_riverbend:d42,none,none,none,False,0.0,none,False
+670,42,central_repair_ring,drill:central_repair_ring:d42,none,none,none,False,0.0,none,False
+671,42,riverbend_roofward,drill:riverbend_roofward:d42,none,none,none,False,0.0,none,False
+672,43,roofward_archive,drill:roofward_archive:d43,none,none,none,False,0.0,none,False
+673,43,archive_signal,drill:archive_signal:d43,none,none,none,False,0.0,none,False
+674,43,signal_orchard,drill:signal_orchard:d43,none,none,none,False,0.0,none,False
+675,43,orchard_riverbend,drill:orchard_riverbend:d43,choose detour,choose public recovery action,market plank route,True,0.03,"forecast, caravan task, recovery marker",True
+676,43,central_repair_ring,drill:central_repair_ring:d43,none,none,none,False,0.0,none,False
+677,43,riverbend_roofward,drill:riverbend_roofward:d43,none,none,none,False,0.0,none,False
+678,43,roofward_archive,drill:roofward_archive:d43,none,none,none,False,0.0,none,False
+679,43,archive_signal,drill:archive_signal:d43,assign caravan task,choose public recovery action,weigh paper packs,True,0.03,"forecast, caravan task, recovery marker",True
+680,43,signal_orchard,drill:signal_orchard:d43,none,none,none,False,0.0,none,False
+681,43,orchard_riverbend,drill:orchard_riverbend:d43,none,none,none,False,0.0,none,False
+682,43,central_repair_ring,drill:central_repair_ring:d43,none,none,none,False,0.0,none,False
+683,43,riverbend_roofward,drill:riverbend_roofward:d43,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+684,43,roofward_archive,drill:roofward_archive:d43,none,none,none,False,0.0,none,False
+685,43,archive_signal,drill:archive_signal:d43,none,none,none,False,0.0,none,False
+686,43,signal_orchard,drill:signal_orchard:d43,none,none,none,False,0.0,none,False
+687,43,orchard_riverbend,drill:orchard_riverbend:d43,none,none,none,False,0.0,none,False
+688,44,central_repair_ring,drill:central_repair_ring:d44,none,none,none,False,0.0,none,False
+689,44,riverbend_roofward,drill:riverbend_roofward:d44,none,none,none,False,0.0,none,False
+690,44,roofward_archive,drill:roofward_archive:d44,none,none,none,False,0.0,none,False
+691,44,archive_signal,drill:archive_signal:d44,choose detour,choose public recovery action,stone kiosk path,True,0.03,"forecast, caravan task, recovery marker",True
+692,44,signal_orchard,drill:signal_orchard:d44,none,none,none,False,0.0,none,False
+693,44,orchard_riverbend,drill:orchard_riverbend:d44,none,none,none,False,0.0,none,False
+694,44,central_repair_ring,drill:central_repair_ring:d44,none,none,none,False,0.0,none,False
+695,44,riverbend_roofward,drill:riverbend_roofward:d44,none,none,none,False,0.0,none,False
+696,44,roofward_archive,drill:roofward_archive:d44,none,none,none,False,0.0,none,False
+697,44,archive_signal,drill:archive_signal:d44,none,none,none,False,0.0,none,False
+698,44,signal_orchard,drill:signal_orchard:d44,none,none,none,False,0.0,none,False
+699,44,orchard_riverbend,drill:orchard_riverbend:d44,none,none,none,False,0.0,none,False
+700,44,central_repair_ring,drill:central_repair_ring:d44,none,none,none,False,0.0,none,False
+701,44,riverbend_roofward,drill:riverbend_roofward:d44,none,none,none,False,0.0,none,False
+702,44,roofward_archive,drill:roofward_archive:d44,none,none,none,False,0.0,none,False
+703,44,archive_signal,drill:archive_signal:d44,none,none,none,False,0.0,none,False
+704,45,signal_orchard,drill:signal_orchard:d45,none,none,none,False,0.0,none,False
+705,45,orchard_riverbend,drill:orchard_riverbend:d45,none,none,none,False,0.0,none,False
+706,45,central_repair_ring,drill:central_repair_ring:d45,none,none,none,False,0.0,none,False
+707,45,riverbend_roofward,drill:riverbend_roofward:d45,choose detour,choose public recovery action,orchard ridge detour,True,0.03,"forecast, caravan task, recovery marker",True
+708,45,roofward_archive,drill:roofward_archive:d45,none,none,none,False,0.0,none,False
+709,45,archive_signal,drill:archive_signal:d45,none,none,none,False,0.0,none,False
+710,45,signal_orchard,drill:signal_orchard:d45,none,none,none,False,0.0,none,False
+711,45,orchard_riverbend,drill:orchard_riverbend:d45,assign caravan task,choose public recovery action,sort seed sacks,True,0.03,"forecast, caravan task, recovery marker",True
+712,45,central_repair_ring,drill:central_repair_ring:d45,none,none,none,False,0.0,none,False
+713,45,riverbend_roofward,drill:riverbend_roofward:d45,none,none,none,False,0.0,none,False
+714,45,roofward_archive,drill:roofward_archive:d45,none,none,none,False,0.0,none,False
+715,45,archive_signal,drill:archive_signal:d45,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+716,45,signal_orchard,drill:signal_orchard:d45,none,none,none,False,0.0,none,False
+717,45,orchard_riverbend,drill:orchard_riverbend:d45,none,none,none,False,0.0,none,False
+718,45,central_repair_ring,drill:central_repair_ring:d45,none,none,none,False,0.0,none,False
+719,45,riverbend_roofward,drill:riverbend_roofward:d45,none,none,none,False,0.0,none,False
+720,46,roofward_archive,drill:roofward_archive:d46,none,none,none,False,0.0,none,False
+721,46,archive_signal,drill:archive_signal:d46,none,none,none,False,0.0,none,False
+722,46,signal_orchard,drill:signal_orchard:d46,none,none,none,False,0.0,none,False
+723,46,orchard_riverbend,drill:orchard_riverbend:d46,choose detour,choose public recovery action,market plank route,True,0.03,"forecast, caravan task, recovery marker",True
+724,46,central_repair_ring,drill:central_repair_ring:d46,none,none,none,False,0.0,none,False
+725,46,riverbend_roofward,drill:riverbend_roofward:d46,none,none,none,False,0.0,none,False
+726,46,roofward_archive,drill:roofward_archive:d46,none,none,none,False,0.0,none,False
+727,46,archive_signal,drill:archive_signal:d46,none,none,none,False,0.0,none,False
+728,46,signal_orchard,drill:signal_orchard:d46,none,none,none,False,0.0,none,False
+729,46,orchard_riverbend,drill:orchard_riverbend:d46,none,none,none,False,0.0,none,False
+730,46,central_repair_ring,drill:central_repair_ring:d46,none,none,none,False,0.0,none,False
+731,46,riverbend_roofward,drill:riverbend_roofward:d46,confirm recovery marker,choose public recovery action,mark public recovery board,False,0.014,"forecast, caravan task, recovery marker",True
+732,46,roofward_archive,drill:roofward_archive:d46,none,none,none,False,0.0,none,False
+733,46,archive_signal,drill:archive_signal:d46,none,none,none,False,0.0,none,False
+734,46,signal_orchard,drill:signal_orchard:d46,none,none,none,False,0.0,none,False
+735,46,orchard_riverbend,drill:orchard_riverbend:d46,none,none,none,False,0.0,none,False
+736,47,central_repair_ring,drill:central_repair_ring:d47,none,none,none,False,0.0,none,False
+737,47,riverbend_roofward,drill:riverbend_roofward:d47,none,none,none,False,0.0,none,False
+738,47,roofward_archive,drill:roofward_archive:d47,none,none,none,False,0.0,none,False
+739,47,archive_signal,drill:archive_signal:d47,choose detour,choose public recovery action,stone kiosk path,True,0.03,"forecast, caravan task, recovery marker",True
+740,47,signal_orchard,drill:signal_orchard:d47,none,none,none,False,0.0,none,False
+741,47,orchard_riverbend,drill:orchard_riverbend:d47,none,none,none,False,0.0,none,False
+742,47,central_repair_ring,drill:central_repair_ring:d47,none,none,none,False,0.0,none,False
+743,47,riverbend_roofward,drill:riverbend_roofward:d47,assign caravan task,choose public recovery action,carry flood rope,True,0.03,"forecast, caravan task, recovery marker",True
+744,47,roofward_archive,drill:roofward_archive:d47,none,none,none,False,0.0,none,False
+745,47,archive_signal,drill:archive_signal:d47,none,none,none,False,0.0,none,False
+746,47,signal_orchard,drill:signal_orchard:d47,none,none,none,False,0.0,none,False
+747,47,orchard_riverbend,drill:orchard_riverbend:d47,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+748,47,central_repair_ring,drill:central_repair_ring:d47,none,none,none,False,0.0,none,False
+749,47,riverbend_roofward,drill:riverbend_roofward:d47,none,none,none,False,0.0,none,False
+750,47,roofward_archive,drill:roofward_archive:d47,none,none,none,False,0.0,none,False
+751,47,archive_signal,drill:archive_signal:d47,none,none,none,False,0.0,none,False
+752,48,orchard_riverbend,drill:orchard_riverbend:d48,none,none,none,False,0.0,none,False
+753,48,central_repair_ring,drill:central_repair_ring:d48,none,none,none,False,0.0,none,False
+754,48,riverbend_roofward,drill:riverbend_roofward:d48,none,none,none,False,0.0,none,False
+755,48,roofward_archive,drill:roofward_archive:d48,choose detour,choose public recovery action,cool archive lane,True,0.03,"forecast, caravan task, recovery marker",True
+756,48,archive_signal,drill:archive_signal:d48,none,none,none,False,0.0,none,False
+757,48,signal_orchard,drill:signal_orchard:d48,none,none,none,False,0.0,none,False
+758,48,orchard_riverbend,drill:orchard_riverbend:d48,none,none,none,False,0.0,none,False
+759,48,central_repair_ring,drill:central_repair_ring:d48,assign caravan task,choose public recovery action,carry wire spool,True,0.03,"forecast, caravan task, recovery marker",True
+760,48,riverbend_roofward,drill:riverbend_roofward:d48,none,none,none,False,0.0,none,False
+761,48,roofward_archive,drill:roofward_archive:d48,none,none,none,False,0.0,none,False
+762,48,archive_signal,drill:archive_signal:d48,none,none,none,False,0.0,none,False
+763,48,signal_orchard,drill:signal_orchard:d48,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+764,48,orchard_riverbend,drill:orchard_riverbend:d48,none,none,none,False,0.0,none,False
+765,48,central_repair_ring,drill:central_repair_ring:d48,none,none,none,False,0.0,none,False
+766,48,riverbend_roofward,drill:riverbend_roofward:d48,none,none,none,False,0.0,none,False
+767,48,roofward_archive,drill:roofward_archive:d48,none,none,none,False,0.0,none,False
+768,49,archive_signal,drill:archive_signal:d49,none,none,none,False,0.0,none,False
+769,49,signal_orchard,drill:signal_orchard:d49,none,none,none,False,0.0,none,False
+770,49,orchard_riverbend,drill:orchard_riverbend:d49,none,none,none,False,0.0,none,False
+771,49,central_repair_ring,drill:central_repair_ring:d49,choose detour,choose public recovery action,outer bell path,True,0.03,"forecast, caravan task, recovery marker",True
+772,49,riverbend_roofward,drill:riverbend_roofward:d49,none,none,none,False,0.0,none,False
+773,49,roofward_archive,drill:roofward_archive:d49,none,none,none,False,0.0,none,False
+774,49,archive_signal,drill:archive_signal:d49,none,none,none,False,0.0,none,False
+775,49,signal_orchard,drill:signal_orchard:d49,none,none,none,False,0.0,none,False
+776,49,orchard_riverbend,drill:orchard_riverbend:d49,none,none,none,False,0.0,none,False
+777,49,central_repair_ring,drill:central_repair_ring:d49,none,none,none,False,0.0,none,False
+778,49,riverbend_roofward,drill:riverbend_roofward:d49,none,none,none,False,0.0,none,False
+779,49,roofward_archive,drill:roofward_archive:d49,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+780,49,archive_signal,drill:archive_signal:d49,none,none,none,False,0.0,none,False
+781,49,signal_orchard,drill:signal_orchard:d49,none,none,none,False,0.0,none,False
+782,49,orchard_riverbend,drill:orchard_riverbend:d49,none,none,none,False,0.0,none,False
+783,49,central_repair_ring,drill:central_repair_ring:d49,none,none,none,False,0.0,none,False
+784,50,riverbend_roofward,drill:riverbend_roofward:d50,none,none,none,False,0.0,none,False
+785,50,roofward_archive,drill:roofward_archive:d50,none,none,none,False,0.0,none,False
+786,50,archive_signal,drill:archive_signal:d50,none,none,none,False,0.0,none,False
+787,50,signal_orchard,drill:signal_orchard:d50,choose detour,choose public recovery action,river lantern loop,True,0.03,"forecast, caravan task, recovery marker",True
+788,50,orchard_riverbend,drill:orchard_riverbend:d50,none,none,none,False,0.0,none,False
+789,50,central_repair_ring,drill:central_repair_ring:d50,none,none,none,False,0.0,none,False
+790,50,riverbend_roofward,drill:riverbend_roofward:d50,none,none,none,False,0.0,none,False
+791,50,roofward_archive,drill:roofward_archive:d50,assign caravan task,choose public recovery action,steady glass crate,True,0.03,"forecast, caravan task, recovery marker",True
+792,50,archive_signal,drill:archive_signal:d50,none,none,none,False,0.0,none,False
+793,50,signal_orchard,drill:signal_orchard:d50,none,none,none,False,0.0,none,False
+794,50,orchard_riverbend,drill:orchard_riverbend:d50,none,none,none,False,0.0,none,False
+795,50,central_repair_ring,drill:central_repair_ring:d50,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+796,50,riverbend_roofward,drill:riverbend_roofward:d50,none,none,none,False,0.0,none,False
+797,50,roofward_archive,drill:roofward_archive:d50,none,none,none,False,0.0,none,False
+798,50,archive_signal,drill:archive_signal:d50,none,none,none,False,0.0,none,False
+799,50,signal_orchard,drill:signal_orchard:d50,none,none,none,False,0.0,none,False
+800,51,orchard_riverbend,drill:orchard_riverbend:d51,none,none,none,False,0.0,none,False
+801,51,central_repair_ring,drill:central_repair_ring:d51,none,none,none,False,0.0,none,False
+802,51,riverbend_roofward,drill:riverbend_roofward:d51,none,none,none,False,0.0,none,False
+803,51,roofward_archive,drill:roofward_archive:d51,none,none,none,False,0.0,none,False
+804,51,archive_signal,drill:archive_signal:d51,none,none,none,False,0.0,none,False
+805,51,signal_orchard,drill:signal_orchard:d51,none,none,none,False,0.0,none,False
+806,51,orchard_riverbend,drill:orchard_riverbend:d51,none,none,none,False,0.0,none,False
+807,51,central_repair_ring,drill:central_repair_ring:d51,none,none,none,False,0.0,none,False
+808,51,riverbend_roofward,drill:riverbend_roofward:d51,none,none,none,False,0.0,none,False
+809,51,roofward_archive,drill:roofward_archive:d51,none,none,none,False,0.0,none,False
+810,51,archive_signal,drill:archive_signal:d51,none,none,none,False,0.0,none,False
+811,51,signal_orchard,drill:signal_orchard:d51,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+812,51,orchard_riverbend,drill:orchard_riverbend:d51,none,none,none,False,0.0,none,False
+813,51,central_repair_ring,drill:central_repair_ring:d51,none,none,none,False,0.0,none,False
+814,51,riverbend_roofward,drill:riverbend_roofward:d51,none,none,none,False,0.0,none,False
+815,51,roofward_archive,drill:roofward_archive:d51,none,none,none,False,0.0,none,False
+816,52,archive_signal,drill:archive_signal:d52,none,none,none,False,0.0,none,False
+817,52,signal_orchard,drill:signal_orchard:d52,none,none,none,False,0.0,none,False
+818,52,orchard_riverbend,drill:orchard_riverbend:d52,none,none,none,False,0.0,none,False
+819,52,central_repair_ring,drill:central_repair_ring:d52,choose detour,choose public recovery action,outer bell path,True,0.03,"forecast, caravan task, recovery marker",True
+820,52,riverbend_roofward,drill:riverbend_roofward:d52,none,none,none,False,0.0,none,False
+821,52,roofward_archive,drill:roofward_archive:d52,none,none,none,False,0.0,none,False
+822,52,archive_signal,drill:archive_signal:d52,none,none,none,False,0.0,none,False
+823,52,signal_orchard,drill:signal_orchard:d52,assign caravan task,choose public recovery action,carry oil lamp,True,0.03,"forecast, caravan task, recovery marker",True
+824,52,orchard_riverbend,drill:orchard_riverbend:d52,none,none,none,False,0.0,none,False
+825,52,central_repair_ring,drill:central_repair_ring:d52,none,none,none,False,0.0,none,False
+826,52,riverbend_roofward,drill:riverbend_roofward:d52,none,none,none,False,0.0,none,False
+827,52,roofward_archive,drill:roofward_archive:d52,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+828,52,archive_signal,drill:archive_signal:d52,none,none,none,False,0.0,none,False
+829,52,signal_orchard,drill:signal_orchard:d52,none,none,none,False,0.0,none,False
+830,52,orchard_riverbend,drill:orchard_riverbend:d52,none,none,none,False,0.0,none,False
+831,52,central_repair_ring,drill:central_repair_ring:d52,none,none,none,False,0.0,none,False
+832,53,riverbend_roofward,drill:riverbend_roofward:d53,none,none,none,False,0.0,none,False
+833,53,roofward_archive,drill:roofward_archive:d53,none,none,none,False,0.0,none,False
+834,53,archive_signal,drill:archive_signal:d53,none,none,none,False,0.0,none,False
+835,53,signal_orchard,drill:signal_orchard:d53,none,none,none,False,0.0,none,False
+836,53,orchard_riverbend,drill:orchard_riverbend:d53,none,none,none,False,0.0,none,False
+837,53,central_repair_ring,drill:central_repair_ring:d53,none,none,none,False,0.0,none,False
+838,53,riverbend_roofward,drill:riverbend_roofward:d53,none,none,none,False,0.0,none,False
+839,53,roofward_archive,drill:roofward_archive:d53,assign caravan task,choose public recovery action,steady glass crate,True,0.03,"forecast, caravan task, recovery marker",True
+840,53,archive_signal,drill:archive_signal:d53,none,none,none,False,0.0,none,False
+841,53,signal_orchard,drill:signal_orchard:d53,none,none,none,False,0.0,none,False
+842,53,orchard_riverbend,drill:orchard_riverbend:d53,none,none,none,False,0.0,none,False
+843,53,central_repair_ring,drill:central_repair_ring:d53,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+844,53,riverbend_roofward,drill:riverbend_roofward:d53,none,none,none,False,0.0,none,False
+845,53,roofward_archive,drill:roofward_archive:d53,none,none,none,False,0.0,none,False
+846,53,archive_signal,drill:archive_signal:d53,none,none,none,False,0.0,none,False
+847,53,signal_orchard,drill:signal_orchard:d53,none,none,none,False,0.0,none,False
+848,54,central_repair_ring,drill:central_repair_ring:d54,none,none,none,False,0.0,none,False
+849,54,riverbend_roofward,drill:riverbend_roofward:d54,none,none,none,False,0.0,none,False
+850,54,roofward_archive,drill:roofward_archive:d54,none,none,none,False,0.0,none,False
+851,54,archive_signal,drill:archive_signal:d54,none,none,none,False,0.0,none,False
+852,54,signal_orchard,drill:signal_orchard:d54,none,none,none,False,0.0,none,False
+853,54,orchard_riverbend,drill:orchard_riverbend:d54,none,none,none,False,0.0,none,False
+854,54,central_repair_ring,drill:central_repair_ring:d54,none,none,none,False,0.0,none,False
+855,54,riverbend_roofward,drill:riverbend_roofward:d54,assign caravan task,choose public recovery action,carry flood rope,True,0.03,"forecast, caravan task, recovery marker",True
+856,54,roofward_archive,drill:roofward_archive:d54,none,none,none,False,0.0,none,False
+857,54,archive_signal,drill:archive_signal:d54,none,none,none,False,0.0,none,False
+858,54,signal_orchard,drill:signal_orchard:d54,none,none,none,False,0.0,none,False
+859,54,orchard_riverbend,drill:orchard_riverbend:d54,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+860,54,central_repair_ring,drill:central_repair_ring:d54,none,none,none,False,0.0,none,False
+861,54,riverbend_roofward,drill:riverbend_roofward:d54,none,none,none,False,0.0,none,False
+862,54,roofward_archive,drill:roofward_archive:d54,none,none,none,False,0.0,none,False
+863,54,archive_signal,drill:archive_signal:d54,none,none,none,False,0.0,none,False
+864,55,signal_orchard,drill:signal_orchard:d55,none,none,none,False,0.0,none,False
+865,55,orchard_riverbend,drill:orchard_riverbend:d55,none,none,none,False,0.0,none,False
+866,55,central_repair_ring,drill:central_repair_ring:d55,none,none,none,False,0.0,none,False
+867,55,riverbend_roofward,drill:riverbend_roofward:d55,choose detour,choose public recovery action,orchard ridge detour,False,0.014,"forecast, caravan task, recovery marker",True
+868,55,roofward_archive,drill:roofward_archive:d55,none,none,none,False,0.0,none,False
+869,55,archive_signal,drill:archive_signal:d55,none,none,none,False,0.0,none,False
+870,55,signal_orchard,drill:signal_orchard:d55,none,none,none,False,0.0,none,False
+871,55,orchard_riverbend,drill:orchard_riverbend:d55,assign caravan task,choose public recovery action,sort seed sacks,True,0.03,"forecast, caravan task, recovery marker",True
+872,55,central_repair_ring,drill:central_repair_ring:d55,none,none,none,False,0.0,none,False
+873,55,riverbend_roofward,drill:riverbend_roofward:d55,none,none,none,False,0.0,none,False
+874,55,roofward_archive,drill:roofward_archive:d55,none,none,none,False,0.0,none,False
+875,55,archive_signal,drill:archive_signal:d55,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+876,55,signal_orchard,drill:signal_orchard:d55,none,none,none,False,0.0,none,False
+877,55,orchard_riverbend,drill:orchard_riverbend:d55,none,none,none,False,0.0,none,False
+878,55,central_repair_ring,drill:central_repair_ring:d55,none,none,none,False,0.0,none,False
+879,55,riverbend_roofward,drill:riverbend_roofward:d55,none,none,none,False,0.0,none,False
+880,56,roofward_archive,drill:roofward_archive:d56,none,none,none,False,0.0,none,False
+881,56,archive_signal,drill:archive_signal:d56,none,none,none,False,0.0,none,False
+882,56,signal_orchard,drill:signal_orchard:d56,none,none,none,False,0.0,none,False
+883,56,orchard_riverbend,drill:orchard_riverbend:d56,none,none,none,False,0.0,none,False
+884,56,central_repair_ring,drill:central_repair_ring:d56,none,none,none,False,0.0,none,False
+885,56,riverbend_roofward,drill:riverbend_roofward:d56,none,none,none,False,0.0,none,False
+886,56,roofward_archive,drill:roofward_archive:d56,none,none,none,False,0.0,none,False
+887,56,archive_signal,drill:archive_signal:d56,assign caravan task,choose public recovery action,weigh paper packs,True,0.03,"forecast, caravan task, recovery marker",True
+888,56,signal_orchard,drill:signal_orchard:d56,none,none,none,False,0.0,none,False
+889,56,orchard_riverbend,drill:orchard_riverbend:d56,none,none,none,False,0.0,none,False
+890,56,central_repair_ring,drill:central_repair_ring:d56,none,none,none,False,0.0,none,False
+891,56,riverbend_roofward,drill:riverbend_roofward:d56,none,none,none,False,0.0,none,False
+892,56,roofward_archive,drill:roofward_archive:d56,none,none,none,False,0.0,none,False
+893,56,archive_signal,drill:archive_signal:d56,none,none,none,False,0.0,none,False
+894,56,signal_orchard,drill:signal_orchard:d56,none,none,none,False,0.0,none,False
+895,56,orchard_riverbend,drill:orchard_riverbend:d56,none,none,none,False,0.0,none,False
+896,57,central_repair_ring,drill:central_repair_ring:d57,none,none,none,False,0.0,none,False
+897,57,riverbend_roofward,drill:riverbend_roofward:d57,none,none,none,False,0.0,none,False
+898,57,roofward_archive,drill:roofward_archive:d57,none,none,none,False,0.0,none,False
+899,57,archive_signal,drill:archive_signal:d57,choose detour,choose public recovery action,stone kiosk path,True,0.03,"forecast, caravan task, recovery marker",True
+900,57,signal_orchard,drill:signal_orchard:d57,none,none,none,False,0.0,none,False
+901,57,orchard_riverbend,drill:orchard_riverbend:d57,none,none,none,False,0.0,none,False
+902,57,central_repair_ring,drill:central_repair_ring:d57,none,none,none,False,0.0,none,False
+903,57,riverbend_roofward,drill:riverbend_roofward:d57,assign caravan task,choose public recovery action,carry flood rope,True,0.03,"forecast, caravan task, recovery marker",True
+904,57,roofward_archive,drill:roofward_archive:d57,none,none,none,False,0.0,none,False
+905,57,archive_signal,drill:archive_signal:d57,none,none,none,False,0.0,none,False
+906,57,signal_orchard,drill:signal_orchard:d57,none,none,none,False,0.0,none,False
+907,57,orchard_riverbend,drill:orchard_riverbend:d57,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+908,57,central_repair_ring,drill:central_repair_ring:d57,none,none,none,False,0.0,none,False
+909,57,riverbend_roofward,drill:riverbend_roofward:d57,none,none,none,False,0.0,none,False
+910,57,roofward_archive,drill:roofward_archive:d57,none,none,none,False,0.0,none,False
+911,57,archive_signal,drill:archive_signal:d57,none,none,none,False,0.0,none,False
+912,58,signal_orchard,drill:signal_orchard:d58,none,none,none,False,0.0,none,False
+913,58,orchard_riverbend,drill:orchard_riverbend:d58,none,none,none,False,0.0,none,False
+914,58,central_repair_ring,drill:central_repair_ring:d58,none,none,none,False,0.0,none,False
+915,58,riverbend_roofward,drill:riverbend_roofward:d58,choose detour,choose public recovery action,orchard ridge detour,True,0.03,"forecast, caravan task, recovery marker",True
+916,58,roofward_archive,drill:roofward_archive:d58,none,none,none,False,0.0,none,False
+917,58,archive_signal,drill:archive_signal:d58,none,none,none,False,0.0,none,False
+918,58,signal_orchard,drill:signal_orchard:d58,none,none,none,False,0.0,none,False
+919,58,orchard_riverbend,drill:orchard_riverbend:d58,assign caravan task,choose public recovery action,sort seed sacks,True,0.03,"forecast, caravan task, recovery marker",True
+920,58,central_repair_ring,drill:central_repair_ring:d58,none,none,none,False,0.0,none,False
+921,58,riverbend_roofward,drill:riverbend_roofward:d58,none,none,none,False,0.0,none,False
+922,58,roofward_archive,drill:roofward_archive:d58,none,none,none,False,0.0,none,False
+923,58,archive_signal,drill:archive_signal:d58,none,none,none,False,0.0,none,False
+924,58,signal_orchard,drill:signal_orchard:d58,none,none,none,False,0.0,none,False
+925,58,orchard_riverbend,drill:orchard_riverbend:d58,none,none,none,False,0.0,none,False
+926,58,central_repair_ring,drill:central_repair_ring:d58,none,none,none,False,0.0,none,False
+927,58,riverbend_roofward,drill:riverbend_roofward:d58,none,none,none,False,0.0,none,False
+928,59,roofward_archive,drill:roofward_archive:d59,none,none,none,False,0.0,none,False
+929,59,archive_signal,drill:archive_signal:d59,none,none,none,False,0.0,none,False
+930,59,signal_orchard,drill:signal_orchard:d59,none,none,none,False,0.0,none,False
+931,59,orchard_riverbend,drill:orchard_riverbend:d59,choose detour,choose public recovery action,market plank route,True,0.03,"forecast, caravan task, recovery marker",True
+932,59,central_repair_ring,drill:central_repair_ring:d59,none,none,none,False,0.0,none,False
+933,59,riverbend_roofward,drill:riverbend_roofward:d59,none,none,none,False,0.0,none,False
+934,59,roofward_archive,drill:roofward_archive:d59,none,none,none,False,0.0,none,False
+935,59,archive_signal,drill:archive_signal:d59,assign caravan task,choose public recovery action,weigh paper packs,False,0.014,"forecast, caravan task, recovery marker",True
+936,59,signal_orchard,drill:signal_orchard:d59,none,none,none,False,0.0,none,False
+937,59,orchard_riverbend,drill:orchard_riverbend:d59,none,none,none,False,0.0,none,False
+938,59,central_repair_ring,drill:central_repair_ring:d59,none,none,none,False,0.0,none,False
+939,59,riverbend_roofward,drill:riverbend_roofward:d59,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+940,59,roofward_archive,drill:roofward_archive:d59,none,none,none,False,0.0,none,False
+941,59,archive_signal,drill:archive_signal:d59,none,none,none,False,0.0,none,False
+942,59,signal_orchard,drill:signal_orchard:d59,none,none,none,False,0.0,none,False
+943,59,orchard_riverbend,drill:orchard_riverbend:d59,none,none,none,False,0.0,none,False
+944,60,riverbend_roofward,drill:riverbend_roofward:d60,none,none,none,False,0.0,none,False
+945,60,roofward_archive,drill:roofward_archive:d60,none,none,none,False,0.0,none,False
+946,60,archive_signal,drill:archive_signal:d60,none,none,none,False,0.0,none,False
+947,60,signal_orchard,drill:signal_orchard:d60,choose detour,choose public recovery action,river lantern loop,True,0.03,"forecast, caravan task, recovery marker",True
+948,60,orchard_riverbend,drill:orchard_riverbend:d60,none,none,none,False,0.0,none,False
+949,60,central_repair_ring,drill:central_repair_ring:d60,none,none,none,False,0.0,none,False
+950,60,riverbend_roofward,drill:riverbend_roofward:d60,none,none,none,False,0.0,none,False
+951,60,roofward_archive,drill:roofward_archive:d60,assign caravan task,choose public recovery action,steady glass crate,True,0.03,"forecast, caravan task, recovery marker",True
+952,60,archive_signal,drill:archive_signal:d60,none,none,none,False,0.0,none,False
+953,60,signal_orchard,drill:signal_orchard:d60,none,none,none,False,0.0,none,False
+954,60,orchard_riverbend,drill:orchard_riverbend:d60,none,none,none,False,0.0,none,False
+955,60,central_repair_ring,drill:central_repair_ring:d60,confirm recovery marker,choose public recovery action,mark public recovery board,True,0.03,"forecast, caravan task, recovery marker",True
+956,60,riverbend_roofward,drill:riverbend_roofward:d60,none,none,none,False,0.0,none,False
+957,60,roofward_archive,drill:roofward_archive:d60,none,none,none,False,0.0,none,False
+958,60,archive_signal,drill:archive_signal:d60,none,none,none,False,0.0,none,False
+959,60,signal_orchard,drill:signal_orchard:d60,none,none,none,False,0.0,none,False

@@ -1,0 +1,961 @@
+tick_id,day,route_id,hazard,forecast_before,proposed_forecast,forecast_after,edit_source,edit_accepted,revision,saved_to_local_state,public_archive_visible
+0,1,riverbend_roofward,river flood,0.3407,0.3957,0.3407,avatar forecast slider,False,1,True,True
+1,1,roofward_archive,heat surge,0.3748,0.4398,0.3748,stored seasonal drift,False,1,False,True
+2,1,archive_signal,wind scatter,0.4089,0.4539,0.4089,stored seasonal drift,False,1,False,True
+3,1,signal_orchard,dusk ice,0.4157,0.4707,0.4157,stored seasonal drift,False,1,False,True
+4,1,orchard_riverbend,fen mud,0.433,0.408,0.433,stored seasonal drift,False,1,False,True
+5,1,central_repair_ring,crowded repair yard,0.4671,0.5121,0.4671,stored seasonal drift,False,1,False,True
+6,1,riverbend_roofward,river flood,0.335002,0.300002,0.335002,stored seasonal drift,False,1,False,True
+7,1,roofward_archive,heat surge,0.393728,0.458728,0.393728,stored seasonal drift,False,1,False,True
+8,1,archive_signal,wind scatter,0.418854,0.463854,0.463854,avatar forecast slider,True,2,True,True
+9,1,signal_orchard,dusk ice,0.437302,0.492302,0.437302,stored seasonal drift,False,1,False,True
+10,1,orchard_riverbend,fen mud,0.42068,0.39568,0.42068,stored seasonal drift,False,1,False,True
+11,1,central_repair_ring,crowded repair yard,0.462606,0.417606,0.462606,stored seasonal drift,False,1,False,True
+12,1,riverbend_roofward,river flood,0.384702,0.439702,0.384702,stored seasonal drift,False,1,False,True
+13,1,roofward_archive,heat surge,0.386906,0.361906,0.386906,stored seasonal drift,False,1,False,True
+14,1,archive_signal,wind scatter,0.459814,0.414814,0.459814,stored seasonal drift,False,2,False,True
+15,1,signal_orchard,dusk ice,0.44958,0.50458,0.44958,stored seasonal drift,False,1,False,True
+16,2,orchard_riverbend,fen mud,0.441585,0.506585,0.506585,avatar forecast slider,True,2,True,True
+17,2,central_repair_ring,crowded repair yard,0.446141,0.401141,0.446141,stored seasonal drift,False,1,False,True
+18,2,riverbend_roofward,river flood,0.398044,0.453044,0.398044,stored seasonal drift,False,1,False,True
+19,2,roofward_archive,heat surge,0.429339,0.494339,0.429339,stored seasonal drift,False,1,False,True
+20,2,archive_signal,wind scatter,0.44374,0.39874,0.44374,stored seasonal drift,False,2,False,True
+21,2,signal_orchard,dusk ice,0.447539,0.412539,0.447539,stored seasonal drift,False,1,False,True
+22,2,orchard_riverbend,fen mud,0.509163,0.574163,0.509163,stored seasonal drift,False,2,False,True
+23,2,central_repair_ring,crowded repair yard,0.442481,0.397481,0.442481,stored seasonal drift,False,1,False,True
+24,2,riverbend_roofward,river flood,0.403218,0.458218,0.458218,avatar forecast slider,True,2,True,True
+25,2,roofward_archive,heat surge,0.442732,0.507732,0.442732,stored seasonal drift,False,1,False,True
+26,2,archive_signal,wind scatter,0.423616,0.378616,0.423616,stored seasonal drift,False,2,False,True
+27,2,signal_orchard,dusk ice,0.439484,0.404484,0.439484,stored seasonal drift,False,1,False,True
+28,2,orchard_riverbend,fen mud,0.52188,0.58688,0.52188,stored seasonal drift,False,2,False,True
+29,2,central_repair_ring,crowded repair yard,0.460334,0.505334,0.460334,stored seasonal drift,False,1,False,True
+30,2,riverbend_roofward,river flood,0.448667,0.413667,0.448667,stored seasonal drift,False,2,False,True
+31,2,roofward_archive,heat surge,0.44795,0.51295,0.44795,stored seasonal drift,False,1,False,True
+32,3,archive_signal,wind scatter,0.43781,0.48281,0.48281,avatar forecast slider,True,3,True,True
+33,3,signal_orchard,dusk ice,0.419956,0.384956,0.419956,stored seasonal drift,False,1,False,True
+34,3,orchard_riverbend,fen mud,0.503417,0.478417,0.503417,stored seasonal drift,False,2,False,True
+35,3,central_repair_ring,crowded repair yard,0.479887,0.524887,0.479887,stored seasonal drift,False,1,False,True
+36,3,riverbend_roofward,river flood,0.427854,0.392854,0.427854,stored seasonal drift,False,2,False,True
+37,3,roofward_archive,heat surge,0.439837,0.414837,0.439837,stored seasonal drift,False,1,False,True
+38,3,archive_signal,wind scatter,0.482417,0.437417,0.482417,stored seasonal drift,False,3,False,True
+39,3,signal_orchard,dusk ice,0.457762,0.512762,0.457762,stored seasonal drift,False,1,False,True
+40,3,orchard_riverbend,fen mud,0.481239,0.456239,0.456239,avatar forecast slider,True,3,True,True
+41,3,central_repair_ring,crowded repair yard,0.473603,0.428603,0.473603,stored seasonal drift,False,1,False,True
+42,3,riverbend_roofward,river flood,0.447754,0.502754,0.447754,stored seasonal drift,False,2,False,True
+43,3,roofward_archive,heat surge,0.42656,0.40156,0.42656,stored seasonal drift,False,1,False,True
+44,3,archive_signal,wind scatter,0.492579,0.537579,0.492579,stored seasonal drift,False,3,False,True
+45,3,signal_orchard,dusk ice,0.467175,0.522175,0.467175,stored seasonal drift,False,1,False,True
+46,3,orchard_riverbend,fen mud,0.434366,0.409366,0.434366,stored seasonal drift,False,3,False,True
+47,3,central_repair_ring,crowded repair yard,0.461899,0.416899,0.461899,stored seasonal drift,False,1,False,True
+48,4,riverbend_roofward,river flood,0.452268,0.507268,0.507268,avatar forecast slider,True,3,True,True
+49,4,roofward_archive,heat surge,0.446642,0.511642,0.446642,stored seasonal drift,False,1,False,True
+50,4,archive_signal,wind scatter,0.471918,0.426918,0.471918,stored seasonal drift,False,3,False,True
+51,4,signal_orchard,dusk ice,0.47947,0.53447,0.47947,stored seasonal drift,False,1,False,True
+52,4,orchard_riverbend,fen mud,0.447055,0.512055,0.447055,stored seasonal drift,False,3,False,True
+53,4,central_repair_ring,crowded repair yard,0.439233,0.394233,0.439233,stored seasonal drift,False,1,False,True
+54,4,riverbend_roofward,river flood,0.49715,0.46215,0.49715,stored seasonal drift,False,3,False,True
+55,4,roofward_archive,heat surge,0.474412,0.539412,0.474412,stored seasonal drift,False,1,False,True
+56,4,archive_signal,wind scatter,0.447849,0.402849,0.402849,avatar forecast slider,True,4,True,True
+57,4,signal_orchard,dusk ice,0.466944,0.431944,0.466944,stored seasonal drift,False,1,False,True
+58,4,orchard_riverbend,fen mud,0.451667,0.516667,0.451667,stored seasonal drift,False,3,False,True
+59,4,central_repair_ring,crowded repair yard,0.45754,0.50254,0.45754,stored seasonal drift,False,1,False,True
+60,4,riverbend_roofward,river flood,0.498949,0.553949,0.498949,stored seasonal drift,False,3,False,True
+61,4,roofward_archive,heat surge,0.475194,0.540194,0.475194,stored seasonal drift,False,1,False,True
+62,4,archive_signal,wind scatter,0.42625,0.47125,0.42625,stored seasonal drift,False,4,False,True
+63,4,signal_orchard,dusk ice,0.449872,0.414872,0.449872,stored seasonal drift,False,1,False,True
+64,5,orchard_riverbend,fen mud,0.443034,0.418034,0.418034,avatar forecast slider,True,4,True,True
+65,5,central_repair_ring,crowded repair yard,0.460684,0.505684,0.460684,stored seasonal drift,False,1,False,True
+66,5,riverbend_roofward,river flood,0.471096,0.436096,0.471096,stored seasonal drift,False,3,False,True
+67,5,roofward_archive,heat surge,0.480067,0.545067,0.480067,stored seasonal drift,False,1,False,True
+68,5,archive_signal,wind scatter,0.433775,0.478775,0.433775,stored seasonal drift,False,4,False,True
+69,5,signal_orchard,dusk ice,0.46669,0.52169,0.46669,stored seasonal drift,False,1,False,True
+70,5,orchard_riverbend,fen mud,0.407809,0.382809,0.407809,stored seasonal drift,False,4,False,True
+71,5,central_repair_ring,crowded repair yard,0.473888,0.518888,0.473888,stored seasonal drift,False,1,False,True
+72,5,riverbend_roofward,river flood,0.484943,0.539943,0.539943,avatar forecast slider,True,4,True,True
+73,5,roofward_archive,heat surge,0.461158,0.436158,0.461158,stored seasonal drift,False,1,False,True
+74,5,archive_signal,wind scatter,0.433947,0.478947,0.433947,stored seasonal drift,False,4,False,True
+75,5,signal_orchard,dusk ice,0.474853,0.529853,0.474853,stored seasonal drift,False,1,False,True
+76,5,orchard_riverbend,fen mud,0.409516,0.474516,0.409516,stored seasonal drift,False,4,False,True
+77,5,central_repair_ring,crowded repair yard,0.462144,0.417144,0.462144,stored seasonal drift,False,1,False,True
+78,5,riverbend_roofward,river flood,0.537851,0.502851,0.537851,stored seasonal drift,False,4,False,True
+79,5,roofward_archive,heat surge,0.438596,0.413596,0.438596,stored seasonal drift,False,1,False,True
+80,6,signal_orchard,dusk ice,0.462974,0.417974,0.417974,avatar forecast slider,True,2,True,True
+81,6,orchard_riverbend,fen mud,0.419384,0.474384,0.419384,stored seasonal drift,False,4,False,True
+82,6,central_repair_ring,crowded repair yard,0.477244,0.542244,0.477244,stored seasonal drift,False,1,False,True
+83,6,riverbend_roofward,river flood,0.533952,0.488952,0.533952,stored seasonal drift,False,4,False,True
+84,6,roofward_archive,heat surge,0.444393,0.499393,0.444393,stored seasonal drift,False,1,False,True
+85,6,archive_signal,wind scatter,0.452994,0.517994,0.452994,stored seasonal drift,False,4,False,True
+86,6,signal_orchard,dusk ice,0.407758,0.362758,0.407758,stored seasonal drift,False,2,False,True
+87,6,orchard_riverbend,fen mud,0.43837,0.49337,0.43837,stored seasonal drift,False,4,False,True
+88,6,central_repair_ring,crowded repair yard,0.48393,0.54893,0.54893,avatar forecast slider,True,2,True,True
+89,6,riverbend_roofward,river flood,0.507499,0.462499,0.507499,stored seasonal drift,False,4,False,True
+90,6,roofward_archive,heat surge,0.443078,0.408078,0.443078,stored seasonal drift,False,1,False,True
+91,6,archive_signal,wind scatter,0.463075,0.528075,0.463075,stored seasonal drift,False,4,False,True
+92,6,signal_orchard,dusk ice,0.409472,0.454472,0.409472,stored seasonal drift,False,2,False,True
+93,6,orchard_riverbend,fen mud,0.431598,0.396598,0.431598,stored seasonal drift,False,4,False,True
+94,6,central_repair_ring,crowded repair yard,0.53928,0.51428,0.53928,stored seasonal drift,False,2,False,True
+95,6,riverbend_roofward,river flood,0.478449,0.433449,0.478449,stored seasonal drift,False,4,False,True
+96,7,roofward_archive,heat surge,0.429347,0.394347,0.394347,avatar forecast slider,True,2,True,True
+97,7,archive_signal,wind scatter,0.459145,0.434145,0.459145,stored seasonal drift,False,4,False,True
+98,7,signal_orchard,dusk ice,0.425646,0.470646,0.425646,stored seasonal drift,False,2,False,True
+99,7,orchard_riverbend,fen mud,0.429974,0.394974,0.429974,stored seasonal drift,False,4,False,True
+100,7,central_repair_ring,crowded repair yard,0.518381,0.493381,0.493381,avatar forecast slider,True,3,True,True
+101,7,riverbend_roofward,river flood,0.484966,0.529966,0.484966,stored seasonal drift,False,4,False,True
+102,7,roofward_archive,heat surge,0.381138,0.346138,0.381138,stored seasonal drift,False,2,False,True
+103,7,archive_signal,wind scatter,0.466265,0.531265,0.466265,stored seasonal drift,False,4,False,True
+104,7,signal_orchard,dusk ice,0.433256,0.478256,0.478256,avatar forecast slider,True,3,True,True
+105,7,orchard_riverbend,fen mud,0.449578,0.504578,0.449578,stored seasonal drift,False,4,False,True
+106,7,central_repair_ring,crowded repair yard,0.472608,0.447608,0.447608,avatar forecast slider,True,4,True,True
+107,7,riverbend_roofward,river flood,0.484271,0.439271,0.484271,stored seasonal drift,False,4,False,True
+108,7,roofward_archive,heat surge,0.424379,0.479379,0.424379,stored seasonal drift,False,2,False,True
+109,7,archive_signal,wind scatter,0.449288,0.424288,0.449288,stored seasonal drift,False,4,False,True
+110,7,signal_orchard,dusk ice,0.4722,0.4272,0.4722,stored seasonal drift,False,3,False,True
+111,7,orchard_riverbend,fen mud,0.460137,0.515137,0.460137,stored seasonal drift,False,4,False,True
+112,8,central_repair_ring,crowded repair yard,0.464743,0.529743,0.529743,avatar forecast slider,True,5,True,True
+113,8,riverbend_roofward,river flood,0.471073,0.426073,0.471073,stored seasonal drift,False,4,False,True
+114,8,roofward_archive,heat surge,0.432166,0.487166,0.432166,stored seasonal drift,False,2,False,True
+115,8,archive_signal,wind scatter,0.482988,0.547988,0.482988,stored seasonal drift,False,4,False,True
+116,8,signal_orchard,dusk ice,0.454392,0.409392,0.454392,stored seasonal drift,False,3,False,True
+117,8,orchard_riverbend,fen mud,0.456618,0.421618,0.421618,avatar forecast slider,True,5,True,True
+118,8,central_repair_ring,crowded repair yard,0.529079,0.504079,0.529079,stored seasonal drift,False,5,False,True
+119,8,riverbend_roofward,river flood,0.470223,0.425223,0.470223,stored seasonal drift,False,4,False,True
+120,8,roofward_archive,heat surge,0.432563,0.487563,0.487563,avatar forecast slider,True,3,True,True
+121,8,archive_signal,wind scatter,0.48887,0.55387,0.48887,stored seasonal drift,False,4,False,True
+122,8,signal_orchard,dusk ice,0.432777,0.387777,0.432777,stored seasonal drift,False,3,False,True
+123,8,orchard_riverbend,fen mud,0.417191,0.382191,0.382191,avatar forecast slider,True,6,True,True
+124,8,central_repair_ring,crowded repair yard,0.539008,0.604008,0.539008,stored seasonal drift,False,5,False,True
+125,8,riverbend_roofward,river flood,0.446392,0.401392,0.446392,stored seasonal drift,False,4,False,True
+126,8,roofward_archive,heat surge,0.473904,0.438904,0.473904,stored seasonal drift,False,3,False,True
+127,8,archive_signal,wind scatter,0.487628,0.462628,0.487628,stored seasonal drift,False,4,False,True
+128,9,signal_orchard,dusk ice,0.445688,0.490688,0.490688,avatar forecast slider,True,4,True,True
+129,9,orchard_riverbend,fen mud,0.370684,0.335684,0.370684,stored seasonal drift,False,6,False,True
+130,9,central_repair_ring,crowded repair yard,0.518147,0.493147,0.518147,stored seasonal drift,False,5,False,True
+131,9,riverbend_roofward,river flood,0.474197,0.519197,0.474197,stored seasonal drift,False,4,False,True
+132,9,roofward_archive,heat surge,0.449557,0.414557,0.449557,stored seasonal drift,False,3,False,True
+133,9,archive_signal,wind scatter,0.47396,0.44896,0.47396,stored seasonal drift,False,4,False,True
+134,9,signal_orchard,dusk ice,0.489192,0.444192,0.444192,avatar forecast slider,True,5,True,True
+135,9,orchard_riverbend,fen mud,0.415388,0.470388,0.415388,stored seasonal drift,False,6,False,True
+136,9,central_repair_ring,crowded repair yard,0.493906,0.468906,0.468906,avatar forecast slider,True,6,True,True
+137,9,riverbend_roofward,river flood,0.475009,0.520009,0.475009,stored seasonal drift,False,4,False,True
+138,9,roofward_archive,heat surge,0.466419,0.521419,0.466419,stored seasonal drift,False,3,False,True
+139,9,archive_signal,wind scatter,0.455906,0.430906,0.455906,stored seasonal drift,False,4,False,True
+140,9,signal_orchard,dusk ice,0.459705,0.504705,0.504705,avatar forecast slider,True,6,True,True
+141,9,orchard_riverbend,fen mud,0.430734,0.485734,0.430734,stored seasonal drift,False,6,False,True
+142,9,central_repair_ring,crowded repair yard,0.445259,0.420259,0.445259,stored seasonal drift,False,6,False,True
+143,9,riverbend_roofward,river flood,0.469408,0.424408,0.469408,stored seasonal drift,False,4,False,True
+144,10,roofward_archive,heat surge,0.46832,0.52332,0.52332,avatar forecast slider,True,4,True,True
+145,10,archive_signal,wind scatter,0.471879,0.536879,0.471879,avatar forecast slider,False,4,True,True
+146,10,signal_orchard,dusk ice,0.482346,0.437346,0.482346,stored seasonal drift,False,6,False,True
+147,10,orchard_riverbend,fen mud,0.448131,0.503131,0.448131,stored seasonal drift,False,6,False,True
+148,10,central_repair_ring,crowded repair yard,0.456423,0.521423,0.456423,stored seasonal drift,False,6,False,True
+149,10,riverbend_roofward,river flood,0.451991,0.406991,0.451991,stored seasonal drift,False,4,False,True
+150,10,roofward_archive,heat surge,0.510955,0.475955,0.510955,stored seasonal drift,False,4,False,True
+151,10,archive_signal,wind scatter,0.496116,0.561116,0.561116,avatar forecast slider,True,5,True,True
+152,10,signal_orchard,dusk ice,0.456818,0.411818,0.411818,avatar forecast slider,True,7,True,True
+153,10,orchard_riverbend,fen mud,0.439993,0.404993,0.439993,stored seasonal drift,False,6,False,True
+154,10,central_repair_ring,crowded repair yard,0.459724,0.524724,0.459724,stored seasonal drift,False,6,False,True
+155,10,riverbend_roofward,river flood,0.430712,0.385712,0.430712,stored seasonal drift,False,4,False,True
+156,10,roofward_archive,heat surge,0.510821,0.475821,0.510821,stored seasonal drift,False,4,False,True
+157,10,archive_signal,wind scatter,0.54976,0.52476,0.52476,avatar forecast slider,True,6,True,True
+158,10,signal_orchard,dusk ice,0.433963,0.478963,0.433963,stored seasonal drift,False,7,False,True
+159,10,orchard_riverbend,fen mud,0.426694,0.391694,0.426694,stored seasonal drift,False,6,False,True
+160,11,central_repair_ring,crowded repair yard,0.449963,0.424963,0.424963,avatar forecast slider,True,7,True,True
+161,11,riverbend_roofward,river flood,0.443912,0.488912,0.443912,stored seasonal drift,False,4,False,True
+162,11,roofward_archive,heat surge,0.481306,0.446306,0.446306,avatar forecast slider,True,5,True,True
+163,11,archive_signal,wind scatter,0.522694,0.497694,0.522694,stored seasonal drift,False,6,False,True
+164,11,signal_orchard,dusk ice,0.440408,0.485408,0.440408,stored seasonal drift,False,7,False,True
+165,11,orchard_riverbend,fen mud,0.446757,0.501757,0.446757,stored seasonal drift,False,6,False,True
+166,11,central_repair_ring,crowded repair yard,0.413768,0.388768,0.413768,stored seasonal drift,False,7,False,True
+167,11,riverbend_roofward,river flood,0.465764,0.510764,0.465764,stored seasonal drift,False,4,False,True
+168,11,roofward_archive,heat surge,0.463623,0.518623,0.518623,avatar forecast slider,True,6,True,True
+169,11,archive_signal,wind scatter,0.497817,0.472817,0.497817,stored seasonal drift,False,6,False,True
+170,11,signal_orchard,dusk ice,0.439651,0.394651,0.439651,stored seasonal drift,False,7,False,True
+171,11,orchard_riverbend,fen mud,0.457711,0.512711,0.457711,stored seasonal drift,False,6,False,True
+172,11,central_repair_ring,crowded repair yard,0.41464,0.47964,0.41464,stored seasonal drift,False,7,False,True
+173,11,riverbend_roofward,river flood,0.461457,0.416457,0.461457,stored seasonal drift,False,4,False,True
+174,11,roofward_archive,heat surge,0.519516,0.574516,0.519516,avatar forecast slider,False,6,True,True
+175,11,archive_signal,wind scatter,0.470123,0.445123,0.470123,stored seasonal drift,False,6,False,True
+176,12,orchard_riverbend,fen mud,0.448231,0.403231,0.403231,avatar forecast slider,True,7,True,True
+177,12,central_repair_ring,crowded repair yard,0.42379,0.47879,0.42379,stored seasonal drift,False,7,False,True
+178,12,riverbend_roofward,river flood,0.438853,0.413853,0.413853,avatar forecast slider,True,5,True,True
+179,12,roofward_archive,heat surge,0.518184,0.473184,0.518184,stored seasonal drift,False,6,False,True
+180,12,archive_signal,wind scatter,0.471506,0.526506,0.471506,stored seasonal drift,False,6,False,True
+181,12,signal_orchard,dusk ice,0.4579,0.5229,0.4579,stored seasonal drift,False,7,False,True
+182,12,orchard_riverbend,fen mud,0.395079,0.350079,0.395079,stored seasonal drift,False,7,False,True
+183,12,central_repair_ring,crowded repair yard,0.442159,0.497159,0.442159,stored seasonal drift,False,7,False,True
+184,12,riverbend_roofward,river flood,0.435714,0.500714,0.500714,avatar forecast slider,True,6,True,True
+185,12,roofward_archive,heat surge,0.493938,0.448938,0.493938,stored seasonal drift,False,6,False,True
+186,12,archive_signal,wind scatter,0.466395,0.431395,0.466395,stored seasonal drift,False,6,False,True
+187,12,signal_orchard,dusk ice,0.467294,0.532294,0.467294,stored seasonal drift,False,7,False,True
+188,12,orchard_riverbend,fen mud,0.398568,0.443568,0.398568,stored seasonal drift,False,7,False,True
+189,12,central_repair_ring,crowded repair yard,0.434857,0.399857,0.434857,stored seasonal drift,False,7,False,True
+190,12,riverbend_roofward,river flood,0.504114,0.569114,0.569114,avatar forecast slider,True,7,True,True
+191,12,roofward_archive,heat surge,0.466787,0.421787,0.466787,stored seasonal drift,False,6,False,True
+192,13,archive_signal,wind scatter,0.4494,0.4144,0.4144,avatar forecast slider,True,7,True,True
+193,13,signal_orchard,dusk ice,0.462773,0.437773,0.462773,stored seasonal drift,False,7,False,True
+194,13,orchard_riverbend,fen mud,0.416268,0.461268,0.416268,stored seasonal drift,False,7,False,True
+195,13,central_repair_ring,crowded repair yard,0.432777,0.397777,0.432777,stored seasonal drift,False,7,False,True
+196,13,riverbend_roofward,river flood,0.550338,0.525338,0.550338,stored seasonal drift,False,7,False,True
+197,13,roofward_archive,heat surge,0.474937,0.519937,0.474937,stored seasonal drift,False,6,False,True
+198,13,archive_signal,wind scatter,0.398384,0.363384,0.398384,stored seasonal drift,False,7,False,True
+199,13,signal_orchard,dusk ice,0.469385,0.534385,0.469385,stored seasonal drift,False,7,False,True
+200,13,orchard_riverbend,fen mud,0.42519,0.47019,0.47019,avatar forecast slider,True,8,True,True
+201,13,central_repair_ring,crowded repair yard,0.451988,0.506988,0.451988,stored seasonal drift,False,7,False,True
+202,13,riverbend_roofward,river flood,0.527891,0.502891,0.527891,stored seasonal drift,False,7,False,True
+203,13,roofward_archive,heat surge,0.475646,0.520646,0.475646,stored seasonal drift,False,6,False,True
+204,13,archive_signal,wind scatter,0.43921,0.49421,0.43921,stored seasonal drift,False,7,False,True
+205,13,signal_orchard,dusk ice,0.451971,0.426971,0.451971,stored seasonal drift,False,7,False,True
+206,13,orchard_riverbend,fen mud,0.465263,0.420263,0.465263,stored seasonal drift,False,8,False,True
+207,13,central_repair_ring,crowded repair yard,0.46221,0.51721,0.46221,stored seasonal drift,False,7,False,True
+208,14,riverbend_roofward,river flood,0.495986,0.470986,0.470986,avatar forecast slider,True,8,True,True
+209,14,roofward_archive,heat surge,0.463656,0.418656,0.463656,stored seasonal drift,False,6,False,True
+210,14,archive_signal,wind scatter,0.444921,0.499921,0.444921,stored seasonal drift,False,7,False,True
+211,14,signal_orchard,dusk ice,0.485295,0.550295,0.485295,stored seasonal drift,False,7,False,True
+212,14,orchard_riverbend,fen mud,0.448426,0.403426,0.448426,stored seasonal drift,False,8,False,True
+213,14,central_repair_ring,crowded repair yard,0.458401,0.423401,0.458401,stored seasonal drift,False,7,False,True
+214,14,riverbend_roofward,river flood,0.484848,0.549848,0.484848,stored seasonal drift,False,8,False,True
+215,14,roofward_archive,heat surge,0.463844,0.508844,0.463844,stored seasonal drift,False,6,False,True
+216,14,archive_signal,wind scatter,0.443532,0.408532,0.408532,avatar forecast slider,True,8,True,True
+217,14,signal_orchard,dusk ice,0.490854,0.555854,0.490854,stored seasonal drift,False,7,False,True
+218,14,orchard_riverbend,fen mud,0.427646,0.382646,0.427646,stored seasonal drift,False,8,False,True
+219,14,central_repair_ring,crowded repair yard,0.448825,0.413825,0.448825,stored seasonal drift,False,7,False,True
+220,14,riverbend_roofward,river flood,0.507269,0.572269,0.507269,stored seasonal drift,False,8,False,True
+221,14,roofward_archive,heat surge,0.440906,0.395906,0.440906,stored seasonal drift,False,6,False,True
+222,14,archive_signal,wind scatter,0.405938,0.370938,0.405938,stored seasonal drift,False,8,False,True
+223,14,signal_orchard,dusk ice,0.489334,0.464334,0.489334,stored seasonal drift,False,7,False,True
+224,15,orchard_riverbend,fen mud,0.441276,0.486276,0.486276,avatar forecast slider,True,9,True,True
+225,15,central_repair_ring,crowded repair yard,0.427989,0.392989,0.427989,stored seasonal drift,False,7,False,True
+226,15,riverbend_roofward,river flood,0.497151,0.472151,0.497151,stored seasonal drift,False,8,False,True
+227,15,roofward_archive,heat surge,0.469479,0.514479,0.469479,stored seasonal drift,False,6,False,True
+228,15,archive_signal,wind scatter,0.391107,0.356107,0.391107,stored seasonal drift,False,8,False,True
+229,15,signal_orchard,dusk ice,0.475427,0.450427,0.475427,stored seasonal drift,False,7,False,True
+230,15,orchard_riverbend,fen mud,0.485397,0.440397,0.485397,stored seasonal drift,False,9,False,True
+231,15,central_repair_ring,crowded repair yard,0.464671,0.519671,0.464671,stored seasonal drift,False,7,False,True
+232,15,riverbend_roofward,river flood,0.48215,0.45715,0.48215,avatar forecast slider,False,8,True,True
+233,15,roofward_archive,heat surge,0.470952,0.515952,0.470952,stored seasonal drift,False,6,False,True
+234,15,archive_signal,wind scatter,0.416152,0.471152,0.416152,stored seasonal drift,False,8,False,True
+235,15,signal_orchard,dusk ice,0.457167,0.432167,0.457167,stored seasonal drift,False,7,False,True
+236,15,orchard_riverbend,fen mud,0.495141,0.540141,0.495141,stored seasonal drift,False,9,False,True
+237,15,central_repair_ring,crowded repair yard,0.473117,0.528117,0.473117,stored seasonal drift,False,7,False,True
+238,15,riverbend_roofward,river flood,0.462949,0.437949,0.462949,stored seasonal drift,False,8,False,True
+239,15,roofward_archive,heat surge,0.465919,0.420919,0.465919,stored seasonal drift,False,6,False,True
+240,16,archive_signal,wind scatter,0.425091,0.480091,0.480091,avatar forecast slider,True,9,True,True
+241,16,signal_orchard,dusk ice,0.472964,0.537964,0.472964,stored seasonal drift,False,7,False,True
+242,16,orchard_riverbend,fen mud,0.474121,0.429121,0.474121,stored seasonal drift,False,9,False,True
+243,16,central_repair_ring,crowded repair yard,0.484581,0.539581,0.484581,stored seasonal drift,False,7,False,True
+244,16,riverbend_roofward,river flood,0.477936,0.542936,0.477936,stored seasonal drift,False,8,False,True
+245,16,roofward_archive,heat surge,0.44899,0.40399,0.44899,stored seasonal drift,False,6,False,True
+246,16,archive_signal,wind scatter,0.473778,0.438778,0.473778,stored seasonal drift,False,9,False,True
+247,16,signal_orchard,dusk ice,0.497049,0.562049,0.497049,stored seasonal drift,False,7,False,True
+248,16,orchard_riverbend,fen mud,0.449744,0.404744,0.404744,avatar forecast slider,True,10,True,True
+249,16,central_repair_ring,crowded repair yard,0.47134,0.43634,0.47134,stored seasonal drift,False,7,False,True
+250,16,riverbend_roofward,river flood,0.484525,0.549525,0.484525,stored seasonal drift,False,8,False,True
+251,16,roofward_archive,heat surge,0.428131,0.383131,0.428131,stored seasonal drift,False,6,False,True
+252,16,archive_signal,wind scatter,0.478849,0.533849,0.478849,stored seasonal drift,False,9,False,True
+253,16,signal_orchard,dusk ice,0.494662,0.469662,0.494662,stored seasonal drift,False,7,False,True
+254,16,orchard_riverbend,fen mud,0.42788,0.47288,0.42788,stored seasonal drift,False,10,False,True
+255,16,central_repair_ring,crowded repair yard,0.453652,0.418652,0.453652,stored seasonal drift,False,7,False,True
+256,17,riverbend_roofward,river flood,0.477592,0.452592,0.452592,avatar forecast slider,True,9,True,True
+257,17,roofward_archive,heat surge,0.441693,0.486693,0.441693,stored seasonal drift,False,6,False,True
+258,17,archive_signal,wind scatter,0.45381,0.41881,0.45381,stored seasonal drift,False,9,False,True
+259,17,signal_orchard,dusk ice,0.496809,0.561809,0.496809,stored seasonal drift,False,7,False,True
+260,17,orchard_riverbend,fen mud,0.435177,0.480177,0.435177,stored seasonal drift,False,10,False,True
+261,17,central_repair_ring,crowded repair yard,0.469941,0.524941,0.469941,stored seasonal drift,False,7,False,True
+262,17,riverbend_roofward,river flood,0.443829,0.418829,0.443829,stored seasonal drift,False,9,False,True
+263,17,roofward_archive,heat surge,0.463856,0.508856,0.463856,stored seasonal drift,False,6,False,True
+264,17,archive_signal,wind scatter,0.470077,0.525077,0.525077,avatar forecast slider,True,10,True,True
+265,17,signal_orchard,dusk ice,0.475556,0.450556,0.475556,stored seasonal drift,False,7,False,True
+266,17,orchard_riverbend,fen mud,0.435152,0.390152,0.435152,stored seasonal drift,False,10,False,True
+267,17,central_repair_ring,crowded repair yard,0.477649,0.532649,0.477649,stored seasonal drift,False,7,False,True
+268,17,riverbend_roofward,river flood,0.446793,0.511793,0.446793,stored seasonal drift,False,9,False,True
+269,17,roofward_archive,heat surge,0.459816,0.414816,0.459816,stored seasonal drift,False,6,False,True
+270,17,archive_signal,wind scatter,0.525066,0.490066,0.525066,stored seasonal drift,False,10,False,True
+271,17,signal_orchard,dusk ice,0.450978,0.425978,0.450978,stored seasonal drift,False,7,False,True
+272,18,central_repair_ring,crowded repair yard,0.465378,0.420378,0.420378,avatar forecast slider,True,8,True,True
+273,18,riverbend_roofward,river flood,0.457742,0.512742,0.457742,stored seasonal drift,False,9,False,True
+274,18,roofward_archive,heat surge,0.437442,0.412442,0.437442,stored seasonal drift,False,6,False,True
+275,18,archive_signal,wind scatter,0.522957,0.477957,0.522957,stored seasonal drift,False,10,False,True
+276,18,signal_orchard,dusk ice,0.455041,0.510041,0.455041,stored seasonal drift,False,7,False,True
+277,18,orchard_riverbend,fen mud,0.454031,0.519031,0.454031,stored seasonal drift,False,10,False,True
+278,18,central_repair_ring,crowded repair yard,0.409825,0.364825,0.409825,stored seasonal drift,False,8,False,True
+279,18,riverbend_roofward,river flood,0.477658,0.532658,0.477658,stored seasonal drift,False,9,False,True
+280,18,roofward_archive,heat surge,0.456,0.521,0.521,avatar forecast slider,True,7,True,True
+281,18,archive_signal,wind scatter,0.498043,0.453043,0.498043,stored seasonal drift,False,10,False,True
+282,18,signal_orchard,dusk ice,0.452235,0.417235,0.452235,stored seasonal drift,False,7,False,True
+283,18,orchard_riverbend,fen mud,0.463967,0.528967,0.463967,stored seasonal drift,False,10,False,True
+284,18,central_repair_ring,crowded repair yard,0.411249,0.456249,0.411249,stored seasonal drift,False,8,False,True
+285,18,riverbend_roofward,river flood,0.471686,0.436686,0.471686,stored seasonal drift,False,9,False,True
+286,18,roofward_archive,heat surge,0.52156,0.58656,0.52156,stored seasonal drift,False,7,False,True
+287,18,archive_signal,wind scatter,0.470317,0.425317,0.470317,stored seasonal drift,False,10,False,True
+288,19,signal_orchard,dusk ice,0.437222,0.402222,0.402222,avatar forecast slider,True,8,True,True
+289,19,orchard_riverbend,fen mud,0.459912,0.434912,0.459912,stored seasonal drift,False,10,False,True
+290,19,central_repair_ring,crowded repair yard,0.427174,0.472174,0.427174,avatar forecast slider,False,8,True,True
+291,19,riverbend_roofward,river flood,0.47075,0.43575,0.47075,stored seasonal drift,False,9,False,True
+292,19,roofward_archive,heat surge,0.509442,0.484442,0.509442,stored seasonal drift,False,7,False,True
+293,19,archive_signal,wind scatter,0.477973,0.522973,0.477973,stored seasonal drift,False,10,False,True
+294,19,signal_orchard,dusk ice,0.387911,0.352911,0.387911,stored seasonal drift,False,8,False,True
+295,19,orchard_riverbend,fen mud,0.466924,0.531924,0.466924,stored seasonal drift,False,10,False,True
+296,19,central_repair_ring,crowded repair yard,0.43457,0.47957,0.47957,avatar forecast slider,True,9,True,True
+297,19,riverbend_roofward,river flood,0.446845,0.411845,0.446845,stored seasonal drift,False,9,False,True
+298,19,roofward_archive,heat surge,0.49272,0.46772,0.49272,stored seasonal drift,False,7,False,True
+299,19,archive_signal,wind scatter,0.478257,0.523257,0.478257,stored seasonal drift,False,10,False,True
+300,19,signal_orchard,dusk ice,0.430203,0.485203,0.430203,stored seasonal drift,False,8,False,True
+301,19,orchard_riverbend,fen mud,0.449855,0.424855,0.449855,stored seasonal drift,False,10,False,True
+302,19,central_repair_ring,crowded repair yard,0.47333,0.42833,0.42833,avatar forecast slider,True,10,True,True
+303,19,riverbend_roofward,river flood,0.464087,0.519087,0.464087,stored seasonal drift,False,9,False,True
+304,20,roofward_archive,heat surge,0.465739,0.440739,0.440739,avatar forecast slider,True,8,True,True
+305,20,archive_signal,wind scatter,0.465901,0.420901,0.465901,stored seasonal drift,False,10,False,True
+306,20,signal_orchard,dusk ice,0.437175,0.492175,0.437175,stored seasonal drift,False,8,False,True
+307,20,orchard_riverbend,fen mud,0.483475,0.548475,0.548475,avatar forecast slider,True,11,True,True
+308,20,central_repair_ring,crowded repair yard,0.416664,0.371664,0.416664,stored seasonal drift,False,10,False,True
+309,20,riverbend_roofward,river flood,0.466315,0.521315,0.466315,stored seasonal drift,False,9,False,True
+310,20,roofward_archive,heat surge,0.458836,0.523836,0.458836,stored seasonal drift,False,8,False,True
+311,20,archive_signal,wind scatter,0.465775,0.420775,0.465775,stored seasonal drift,False,10,False,True
+312,20,signal_orchard,dusk ice,0.43687,0.40187,0.40187,avatar forecast slider,True,9,True,True
+313,20,orchard_riverbend,fen mud,0.545188,0.520188,0.520188,avatar forecast slider,True,12,True,True
+314,20,central_repair_ring,crowded repair yard,0.400331,0.355331,0.400331,stored seasonal drift,False,10,False,True
+315,20,riverbend_roofward,river flood,0.461931,0.426931,0.461931,stored seasonal drift,False,9,False,True
+316,20,roofward_archive,heat surge,0.484899,0.549899,0.484899,stored seasonal drift,False,8,False,True
+317,20,archive_signal,wind scatter,0.442566,0.397566,0.442566,stored seasonal drift,False,10,False,True
+318,20,signal_orchard,dusk ice,0.400208,0.365208,0.400208,stored seasonal drift,False,9,False,True
+319,20,orchard_riverbend,fen mud,0.514562,0.489562,0.514562,avatar forecast slider,False,12,True,True
+320,21,central_repair_ring,crowded repair yard,0.417785,0.462785,0.462785,avatar forecast slider,True,11,True,True
+321,21,riverbend_roofward,river flood,0.445561,0.410561,0.445561,stored seasonal drift,False,9,False,True
+322,21,roofward_archive,heat surge,0.477913,0.452913,0.477913,stored seasonal drift,False,8,False,True
+323,21,archive_signal,wind scatter,0.470907,0.515907,0.470907,stored seasonal drift,False,10,False,True
+324,21,signal_orchard,dusk ice,0.386179,0.351179,0.351179,avatar forecast slider,True,10,True,True
+325,21,orchard_riverbend,fen mud,0.497123,0.472123,0.497123,stored seasonal drift,False,12,False,True
+326,21,central_repair_ring,crowded repair yard,0.465195,0.510195,0.465195,stored seasonal drift,False,11,False,True
+327,21,riverbend_roofward,river flood,0.441982,0.406982,0.441982,stored seasonal drift,False,9,False,True
+328,21,roofward_archive,heat surge,0.465605,0.440605,0.440605,avatar forecast slider,True,9,True,True
+329,21,archive_signal,wind scatter,0.47218,0.51718,0.47218,stored seasonal drift,False,10,False,True
+330,21,signal_orchard,dusk ice,0.381814,0.436814,0.436814,avatar forecast slider,True,11,True,True
+331,21,orchard_riverbend,fen mud,0.475826,0.450826,0.475826,stored seasonal drift,False,12,False,True
+332,21,central_repair_ring,crowded repair yard,0.477768,0.522768,0.477768,stored seasonal drift,False,11,False,True
+333,21,riverbend_roofward,river flood,0.459905,0.514905,0.459905,stored seasonal drift,False,9,False,True
+334,21,roofward_archive,heat surge,0.42722,0.40222,0.42722,stored seasonal drift,False,9,False,True
+335,21,archive_signal,wind scatter,0.466975,0.421975,0.466975,stored seasonal drift,False,10,False,True
+336,22,signal_orchard,dusk ice,0.44286,0.49786,0.49786,avatar forecast slider,True,12,True,True
+337,22,orchard_riverbend,fen mud,0.48901,0.55401,0.48901,stored seasonal drift,False,12,False,True
+338,22,central_repair_ring,crowded repair yard,0.45918,0.41418,0.45918,stored seasonal drift,False,11,False,True
+339,22,riverbend_roofward,river flood,0.479518,0.534518,0.479518,stored seasonal drift,False,9,False,True
+340,22,roofward_archive,heat surge,0.447209,0.512209,0.447209,stored seasonal drift,False,9,False,True
+341,22,archive_signal,wind scatter,0.449898,0.404898,0.404898,avatar forecast slider,True,11,True,True
+342,22,signal_orchard,dusk ice,0.48906,0.45406,0.48906,stored seasonal drift,False,12,False,True
+343,22,orchard_riverbend,fen mud,0.510849,0.575849,0.510849,stored seasonal drift,False,12,False,True
+344,22,central_repair_ring,crowded repair yard,0.436895,0.391895,0.391895,avatar forecast slider,True,12,True,True
+345,22,riverbend_roofward,river flood,0.473285,0.438285,0.473285,stored seasonal drift,False,9,False,True
+346,22,roofward_archive,heat surge,0.4581,0.5231,0.4581,stored seasonal drift,False,9,False,True
+347,22,archive_signal,wind scatter,0.390212,0.345212,0.345212,avatar forecast slider,True,12,True,True
+348,22,signal_orchard,dusk ice,0.491992,0.546992,0.491992,stored seasonal drift,False,12,False,True
+349,22,orchard_riverbend,fen mud,0.50653,0.48153,0.50653,stored seasonal drift,False,12,False,True
+350,22,central_repair_ring,crowded repair yard,0.41683,0.46183,0.41683,stored seasonal drift,False,12,False,True
+351,22,riverbend_roofward,river flood,0.461625,0.426625,0.461625,stored seasonal drift,False,9,False,True
+352,23,roofward_archive,heat surge,0.454866,0.429866,0.429866,avatar forecast slider,True,10,True,True
+353,23,archive_signal,wind scatter,0.370382,0.415382,0.370382,stored seasonal drift,False,12,False,True
+354,23,signal_orchard,dusk ice,0.465113,0.430113,0.465113,stored seasonal drift,False,12,False,True
+355,23,orchard_riverbend,fen mud,0.507016,0.572016,0.507016,stored seasonal drift,False,12,False,True
+356,23,central_repair_ring,crowded repair yard,0.425674,0.470674,0.425674,stored seasonal drift,False,12,False,True
+357,23,riverbend_roofward,river flood,0.438997,0.403997,0.438997,stored seasonal drift,False,9,False,True
+358,23,roofward_archive,heat surge,0.424285,0.399285,0.399285,avatar forecast slider,True,11,True,True
+359,23,archive_signal,wind scatter,0.402529,0.447529,0.402529,stored seasonal drift,False,12,False,True
+360,23,signal_orchard,dusk ice,0.479797,0.534797,0.534797,avatar forecast slider,True,13,True,True
+361,23,orchard_riverbend,fen mud,0.484334,0.459334,0.484334,stored seasonal drift,False,12,False,True
+362,23,central_repair_ring,crowded repair yard,0.42698,0.47198,0.42698,stored seasonal drift,False,12,False,True
+363,23,riverbend_roofward,river flood,0.457337,0.512337,0.457337,stored seasonal drift,False,9,False,True
+364,23,roofward_archive,heat surge,0.408485,0.473485,0.473485,avatar forecast slider,True,12,True,True
+365,23,archive_signal,wind scatter,0.407075,0.452075,0.407075,stored seasonal drift,False,12,False,True
+366,23,signal_orchard,dusk ice,0.533425,0.498425,0.533425,stored seasonal drift,False,13,False,True
+367,23,orchard_riverbend,fen mud,0.458527,0.433527,0.458527,stored seasonal drift,False,12,False,True
+368,24,riverbend_roofward,river flood,0.45421,0.40921,0.40921,avatar forecast slider,True,10,True,True
+369,24,roofward_archive,heat surge,0.480697,0.535697,0.480697,stored seasonal drift,False,12,False,True
+370,24,archive_signal,wind scatter,0.392085,0.367085,0.392085,stored seasonal drift,False,12,False,True
+371,24,signal_orchard,dusk ice,0.530146,0.485146,0.530146,stored seasonal drift,False,13,False,True
+372,24,orchard_riverbend,fen mud,0.461533,0.516533,0.461533,stored seasonal drift,False,12,False,True
+373,24,central_repair_ring,crowded repair yard,0.447003,0.512003,0.447003,stored seasonal drift,False,12,False,True
+374,24,riverbend_roofward,river flood,0.406521,0.361521,0.361521,avatar forecast slider,True,11,True,True
+375,24,roofward_archive,heat surge,0.497399,0.552399,0.497399,stored seasonal drift,False,12,False,True
+376,24,archive_signal,wind scatter,0.416993,0.481993,0.481993,avatar forecast slider,True,13,True,True
+377,24,signal_orchard,dusk ice,0.504226,0.459226,0.504226,stored seasonal drift,False,13,False,True
+378,24,orchard_riverbend,fen mud,0.457818,0.422818,0.457818,stored seasonal drift,False,12,False,True
+379,24,central_repair_ring,crowded repair yard,0.457923,0.522923,0.457923,stored seasonal drift,False,12,False,True
+380,24,riverbend_roofward,river flood,0.376008,0.421008,0.421008,avatar forecast slider,True,12,True,True
+381,24,roofward_archive,heat surge,0.488663,0.453663,0.488663,stored seasonal drift,False,12,False,True
+382,24,archive_signal,wind scatter,0.488014,0.553014,0.488014,stored seasonal drift,False,13,False,True
+383,24,signal_orchard,dusk ice,0.475634,0.430634,0.475634,stored seasonal drift,False,13,False,True
+384,25,orchard_riverbend,fen mud,0.442023,0.407023,0.407023,avatar forecast slider,True,13,True,True
+385,25,central_repair_ring,crowded repair yard,0.454714,0.429714,0.454714,stored seasonal drift,False,12,False,True
+386,25,riverbend_roofward,river flood,0.441867,0.486867,0.441867,stored seasonal drift,False,12,False,True
+387,25,roofward_archive,heat surge,0.48535,0.45035,0.48535,stored seasonal drift,False,12,False,True
+388,25,archive_signal,wind scatter,0.480592,0.455592,0.480592,stored seasonal drift,False,13,False,True
+389,25,signal_orchard,dusk ice,0.482545,0.527545,0.482545,stored seasonal drift,False,13,False,True
+390,25,orchard_riverbend,fen mud,0.39204,0.35704,0.39204,stored seasonal drift,False,13,False,True
+391,25,central_repair_ring,crowded repair yard,0.462454,0.527454,0.462454,stored seasonal drift,False,12,False,True
+392,25,riverbend_roofward,river flood,0.453506,0.498506,0.498506,avatar forecast slider,True,13,True,True
+393,25,roofward_archive,heat surge,0.459401,0.424401,0.459401,stored seasonal drift,False,12,False,True
+394,25,archive_signal,wind scatter,0.467909,0.442909,0.467909,stored seasonal drift,False,13,False,True
+395,25,signal_orchard,dusk ice,0.482189,0.437189,0.482189,stored seasonal drift,False,13,False,True
+396,25,orchard_riverbend,fen mud,0.433754,0.488754,0.433754,stored seasonal drift,False,13,False,True
+397,25,central_repair_ring,crowded repair yard,0.44601,0.42101,0.44601,stored seasonal drift,False,12,False,True
+398,25,riverbend_roofward,river flood,0.495915,0.450915,0.495915,stored seasonal drift,False,13,False,True
+399,25,roofward_archive,heat surge,0.474885,0.529885,0.474885,stored seasonal drift,False,12,False,True
+400,26,archive_signal,wind scatter,0.444402,0.419402,0.419402,avatar forecast slider,True,14,True,True
+401,26,signal_orchard,dusk ice,0.469283,0.424283,0.469283,stored seasonal drift,False,13,False,True
+402,26,orchard_riverbend,fen mud,0.440228,0.495228,0.440228,stored seasonal drift,False,13,False,True
+403,26,central_repair_ring,crowded repair yard,0.480169,0.545169,0.480169,stored seasonal drift,False,12,False,True
+404,26,riverbend_roofward,river flood,0.481087,0.436087,0.481087,stored seasonal drift,False,13,False,True
+405,26,roofward_archive,heat surge,0.475601,0.530601,0.475601,stored seasonal drift,False,12,False,True
+406,26,archive_signal,wind scatter,0.440486,0.505486,0.440486,stored seasonal drift,False,14,False,True
+407,26,signal_orchard,dusk ice,0.468683,0.423683,0.468683,stored seasonal drift,False,13,False,True
+408,26,orchard_riverbend,fen mud,0.439496,0.404496,0.404496,avatar forecast slider,True,14,True,True
+409,26,central_repair_ring,crowded repair yard,0.486445,0.551445,0.486445,stored seasonal drift,False,12,False,True
+410,26,riverbend_roofward,river flood,0.462035,0.417035,0.462035,stored seasonal drift,False,13,False,True
+411,26,roofward_archive,heat surge,0.469917,0.434917,0.469917,stored seasonal drift,False,12,False,True
+412,26,archive_signal,wind scatter,0.469118,0.534118,0.469118,stored seasonal drift,False,14,False,True
+413,26,signal_orchard,dusk ice,0.445067,0.400067,0.445067,stored seasonal drift,False,13,False,True
+414,26,orchard_riverbend,fen mud,0.402467,0.367467,0.402467,stored seasonal drift,False,14,False,True
+415,26,central_repair_ring,crowded repair yard,0.485543,0.460543,0.485543,stored seasonal drift,False,12,False,True
+416,27,riverbend_roofward,river flood,0.47715,0.52215,0.52215,avatar forecast slider,True,14,True,True
+417,27,roofward_archive,heat surge,0.452429,0.417429,0.452429,stored seasonal drift,False,12,False,True
+418,27,archive_signal,wind scatter,0.464341,0.439341,0.464341,stored seasonal drift,False,14,False,True
+419,27,signal_orchard,dusk ice,0.473058,0.518058,0.473058,stored seasonal drift,False,13,False,True
+420,27,orchard_riverbend,fen mud,0.388122,0.353122,0.388122,stored seasonal drift,False,14,False,True
+421,27,central_repair_ring,crowded repair yard,0.472167,0.447167,0.472167,stored seasonal drift,False,12,False,True
+422,27,riverbend_roofward,river flood,0.522549,0.567549,0.522549,stored seasonal drift,False,14,False,True
+423,27,roofward_archive,heat surge,0.447889,0.412889,0.447889,stored seasonal drift,False,12,False,True
+424,27,archive_signal,wind scatter,0.453933,0.428933,0.428933,avatar forecast slider,True,15,True,True
+425,27,signal_orchard,dusk ice,0.47403,0.51903,0.47403,stored seasonal drift,False,13,False,True
+426,27,orchard_riverbend,fen mud,0.413585,0.468585,0.413585,stored seasonal drift,False,14,False,True
+427,27,central_repair_ring,crowded repair yard,0.454364,0.429364,0.454364,stored seasonal drift,False,12,False,True
+428,27,riverbend_roofward,river flood,0.533392,0.578392,0.533392,stored seasonal drift,False,14,False,True
+429,27,roofward_archive,heat surge,0.464985,0.519985,0.464985,stored seasonal drift,False,12,False,True
+430,27,archive_signal,wind scatter,0.417182,0.392182,0.417182,stored seasonal drift,False,15,False,True
+431,27,signal_orchard,dusk ice,0.468566,0.423566,0.468566,stored seasonal drift,False,13,False,True
+432,28,orchard_riverbend,fen mud,0.422883,0.477883,0.477883,avatar forecast slider,True,15,True,True
+433,28,central_repair_ring,crowded repair yard,0.470553,0.535553,0.470553,stored seasonal drift,False,12,False,True
+434,28,riverbend_roofward,river flood,0.513317,0.468317,0.513317,stored seasonal drift,False,14,False,True
+435,28,roofward_archive,heat surge,0.483887,0.538887,0.483887,stored seasonal drift,False,12,False,True
+436,28,archive_signal,wind scatter,0.438577,0.503577,0.438577,stored seasonal drift,False,15,False,True
+437,28,signal_orchard,dusk ice,0.451267,0.406267,0.451267,stored seasonal drift,False,13,False,True
+438,28,orchard_riverbend,fen mud,0.471879,0.436879,0.471879,stored seasonal drift,False,15,False,True
+439,28,central_repair_ring,crowded repair yard,0.494976,0.559976,0.494976,stored seasonal drift,False,12,False,True
+440,28,riverbend_roofward,river flood,0.489753,0.444753,0.444753,avatar forecast slider,True,15,True,True
+441,28,roofward_archive,heat surge,0.477043,0.442043,0.477043,stored seasonal drift,False,12,False,True
+442,28,archive_signal,wind scatter,0.450676,0.515676,0.450676,stored seasonal drift,False,15,False,True
+443,28,signal_orchard,dusk ice,0.43009,0.38509,0.43009,stored seasonal drift,False,13,False,True
+444,28,orchard_riverbend,fen mud,0.477216,0.532216,0.477216,stored seasonal drift,False,15,False,True
+445,28,central_repair_ring,crowded repair yard,0.492879,0.467879,0.492879,stored seasonal drift,False,12,False,True
+446,28,riverbend_roofward,river flood,0.424488,0.379488,0.424488,stored seasonal drift,False,15,False,True
+447,28,roofward_archive,heat surge,0.464857,0.429857,0.464857,stored seasonal drift,False,12,False,True
+448,29,archive_signal,wind scatter,0.448481,0.423481,0.423481,avatar forecast slider,True,16,True,True
+449,29,signal_orchard,dusk ice,0.443377,0.488377,0.443377,stored seasonal drift,False,13,False,True
+450,29,orchard_riverbend,fen mud,0.452406,0.417406,0.452406,stored seasonal drift,False,15,False,True
+451,29,central_repair_ring,crowded repair yard,0.495276,0.560276,0.495276,stored seasonal drift,False,12,False,True
+452,29,riverbend_roofward,river flood,0.43856,0.48356,0.43856,stored seasonal drift,False,15,False,True
+453,29,roofward_archive,heat surge,0.441777,0.406777,0.441777,stored seasonal drift,False,12,False,True
+454,29,archive_signal,wind scatter,0.418794,0.393794,0.418794,stored seasonal drift,False,16,False,True
+455,29,signal_orchard,dusk ice,0.465304,0.510304,0.465304,stored seasonal drift,False,13,False,True
+456,29,orchard_riverbend,fen mud,0.468869,0.523869,0.523869,avatar forecast slider,True,16,True,True
+457,29,central_repair_ring,crowded repair yard,0.474237,0.449237,0.474237,stored seasonal drift,False,12,False,True
+458,29,riverbend_roofward,river flood,0.444362,0.489362,0.444362,stored seasonal drift,False,15,False,True
+459,29,roofward_archive,heat surge,0.459728,0.514728,0.459728,stored seasonal drift,False,12,False,True
+460,29,archive_signal,wind scatter,0.425263,0.490263,0.425263,stored seasonal drift,False,16,False,True
+461,29,signal_orchard,dusk ice,0.461061,0.416061,0.461061,stored seasonal drift,False,13,False,True
+462,29,orchard_riverbend,fen mud,0.524027,0.579027,0.524027,stored seasonal drift,False,16,False,True
+463,29,central_repair_ring,crowded repair yard,0.449844,0.424844,0.449844,stored seasonal drift,False,12,False,True
+464,30,roofward_archive,heat surge,0.456266,0.411266,0.456266,avatar forecast slider,False,12,True,True
+465,30,archive_signal,wind scatter,0.439226,0.494226,0.439226,stored seasonal drift,False,16,False,True
+466,30,signal_orchard,dusk ice,0.438512,0.413512,0.438512,stored seasonal drift,False,13,False,True
+467,30,orchard_riverbend,fen mud,0.522063,0.477063,0.522063,stored seasonal drift,False,16,False,True
+468,30,central_repair_ring,crowded repair yard,0.454066,0.509066,0.454066,stored seasonal drift,False,12,False,True
+469,30,riverbend_roofward,river flood,0.424151,0.399151,0.424151,stored seasonal drift,False,15,False,True
+470,30,roofward_archive,heat surge,0.446989,0.401989,0.446989,stored seasonal drift,False,12,False,True
+471,30,archive_signal,wind scatter,0.461734,0.516734,0.461734,stored seasonal drift,False,16,False,True
+472,30,signal_orchard,dusk ice,0.45692,0.52192,0.52192,avatar forecast slider,True,14,True,True
+473,30,orchard_riverbend,fen mud,0.497274,0.452274,0.497274,stored seasonal drift,False,16,False,True
+474,30,central_repair_ring,crowded repair yard,0.451397,0.416397,0.451397,stored seasonal drift,False,12,False,True
+475,30,riverbend_roofward,river flood,0.44457,0.50957,0.44457,stored seasonal drift,False,15,False,True
+476,30,roofward_archive,heat surge,0.449511,0.494511,0.449511,stored seasonal drift,False,12,False,True
+477,30,archive_signal,wind scatter,0.457991,0.422991,0.457991,stored seasonal drift,False,16,False,True
+478,30,signal_orchard,dusk ice,0.522351,0.587351,0.522351,stored seasonal drift,False,14,False,True
+479,30,orchard_riverbend,fen mud,0.469656,0.424656,0.469656,stored seasonal drift,False,16,False,True
+480,31,central_repair_ring,crowded repair yard,0.436501,0.401501,0.401501,avatar forecast slider,True,13,True,True
+481,31,riverbend_roofward,river flood,0.44953,0.51453,0.44953,stored seasonal drift,False,15,False,True
+482,31,roofward_archive,heat surge,0.466379,0.511379,0.466379,stored seasonal drift,False,12,False,True
+483,31,archive_signal,wind scatter,0.458972,0.513972,0.458972,stored seasonal drift,False,16,False,True
+484,31,signal_orchard,dusk ice,0.510122,0.485122,0.510122,stored seasonal drift,False,14,False,True
+485,31,orchard_riverbend,fen mud,0.477404,0.522404,0.477404,stored seasonal drift,False,16,False,True
+486,31,central_repair_ring,crowded repair yard,0.387291,0.352291,0.352291,avatar forecast slider,True,14,True,True
+487,31,riverbend_roofward,river flood,0.464296,0.529296,0.464296,stored seasonal drift,False,15,False,True
+488,31,roofward_archive,heat surge,0.474586,0.519586,0.519586,avatar forecast slider,True,13,True,True
+489,31,archive_signal,wind scatter,0.436716,0.401716,0.436716,stored seasonal drift,False,16,False,True
+490,31,signal_orchard,dusk ice,0.493305,0.468305,0.493305,stored seasonal drift,False,14,False,True
+491,31,orchard_riverbend,fen mud,0.477767,0.522767,0.477767,stored seasonal drift,False,16,False,True
+492,31,central_repair_ring,crowded repair yard,0.39957,0.45457,0.45457,avatar forecast slider,True,15,True,True
+493,31,riverbend_roofward,river flood,0.453895,0.428895,0.453895,stored seasonal drift,False,15,False,True
+494,31,roofward_archive,heat surge,0.514044,0.469044,0.514044,stored seasonal drift,False,13,False,True
+495,31,archive_signal,wind scatter,0.455376,0.510376,0.455376,stored seasonal drift,False,16,False,True
+496,32,signal_orchard,dusk ice,0.466242,0.441242,0.441242,avatar forecast slider,True,15,True,True
+497,32,orchard_riverbend,fen mud,0.46548,0.42048,0.42048,avatar forecast slider,True,17,True,True
+498,32,central_repair_ring,crowded repair yard,0.45813,0.51313,0.45813,stored seasonal drift,False,15,False,True
+499,32,riverbend_roofward,river flood,0.44915,0.42415,0.44915,stored seasonal drift,False,15,False,True
+500,32,roofward_archive,heat surge,0.496678,0.451678,0.496678,stored seasonal drift,False,13,False,True
+501,32,archive_signal,wind scatter,0.458823,0.513823,0.458823,stored seasonal drift,False,16,False,True
+502,32,signal_orchard,dusk ice,0.459268,0.524268,0.459268,stored seasonal drift,False,15,False,True
+503,32,orchard_riverbend,fen mud,0.426713,0.471713,0.471713,avatar forecast slider,True,18,True,True
+504,32,central_repair_ring,crowded repair yard,0.454892,0.419892,0.419892,avatar forecast slider,True,16,True,True
+505,32,riverbend_roofward,river flood,0.466069,0.531069,0.466069,stored seasonal drift,False,15,False,True
+506,32,roofward_archive,heat surge,0.475443,0.430443,0.475443,stored seasonal drift,False,13,False,True
+507,32,archive_signal,wind scatter,0.455488,0.420488,0.455488,stored seasonal drift,False,16,False,True
+508,32,signal_orchard,dusk ice,0.48527,0.55027,0.48527,stored seasonal drift,False,15,False,True
+509,32,orchard_riverbend,fen mud,0.447673,0.402673,0.402673,avatar forecast slider,True,19,True,True
+510,32,central_repair_ring,crowded repair yard,0.415707,0.380707,0.415707,stored seasonal drift,False,16,False,True
+511,32,riverbend_roofward,river flood,0.474319,0.539319,0.474319,stored seasonal drift,False,15,False,True
+512,33,roofward_archive,heat surge,0.488681,0.533681,0.533681,avatar forecast slider,True,14,True,True
+513,33,archive_signal,wind scatter,0.44002,0.40502,0.44002,stored seasonal drift,False,16,False,True
+514,33,signal_orchard,dusk ice,0.478232,0.453232,0.453232,avatar forecast slider,True,16,True,True
+515,33,orchard_riverbend,fen mud,0.436599,0.481599,0.436599,stored seasonal drift,False,19,False,True
+516,33,central_repair_ring,crowded repair yard,0.399508,0.364508,0.399508,stored seasonal drift,False,16,False,True
+517,33,riverbend_roofward,river flood,0.468814,0.443814,0.468814,stored seasonal drift,False,15,False,True
+518,33,roofward_archive,heat surge,0.532466,0.487466,0.532466,stored seasonal drift,False,14,False,True
+519,33,archive_signal,wind scatter,0.437217,0.402217,0.437217,stored seasonal drift,False,16,False,True
+520,33,signal_orchard,dusk ice,0.44438,0.41938,0.41938,avatar forecast slider,True,17,True,True
+521,33,orchard_riverbend,fen mud,0.442675,0.487675,0.442675,stored seasonal drift,False,19,False,True
+522,33,central_repair_ring,crowded repair yard,0.423377,0.478377,0.423377,stored seasonal drift,False,16,False,True
+523,33,riverbend_roofward,river flood,0.45778,0.43278,0.45778,stored seasonal drift,False,15,False,True
+524,33,roofward_archive,heat surge,0.541921,0.586921,0.541921,stored seasonal drift,False,14,False,True
+525,33,archive_signal,wind scatter,0.455807,0.510807,0.455807,stored seasonal drift,False,16,False,True
+526,33,signal_orchard,dusk ice,0.408967,0.383967,0.383967,avatar forecast slider,True,18,True,True
+527,33,orchard_riverbend,fen mud,0.441601,0.396601,0.441601,stored seasonal drift,False,19,False,True
+528,34,central_repair_ring,crowded repair yard,0.431304,0.486304,0.486304,avatar forecast slider,True,17,True,True
+529,34,riverbend_roofward,river flood,0.435691,0.410691,0.435691,stored seasonal drift,False,15,False,True
+530,34,roofward_archive,heat surge,0.520652,0.475652,0.520652,stored seasonal drift,False,14,False,True
+531,34,archive_signal,wind scatter,0.475994,0.530994,0.530994,avatar forecast slider,True,17,True,True
+532,34,signal_orchard,dusk ice,0.410012,0.475012,0.410012,stored seasonal drift,False,18,False,True
+533,34,orchard_riverbend,fen mud,0.428077,0.383077,0.428077,stored seasonal drift,False,19,False,True
+534,34,central_repair_ring,crowded repair yard,0.479121,0.444121,0.479121,stored seasonal drift,False,17,False,True
+535,34,riverbend_roofward,river flood,0.471294,0.536294,0.471294,stored seasonal drift,False,15,False,True
+536,34,roofward_archive,heat surge,0.496061,0.451061,0.451061,avatar forecast slider,True,15,True,True
+537,34,archive_signal,wind scatter,0.517555,0.482555,0.482555,avatar forecast slider,True,18,True,True
+538,34,signal_orchard,dusk ice,0.42611,0.49111,0.42611,stored seasonal drift,False,18,False,True
+539,34,orchard_riverbend,fen mud,0.410146,0.365146,0.410146,stored seasonal drift,False,19,False,True
+540,34,central_repair_ring,crowded repair yard,0.483444,0.538444,0.483444,stored seasonal drift,False,17,False,True
+541,34,riverbend_roofward,river flood,0.478813,0.543813,0.478813,stored seasonal drift,False,15,False,True
+542,34,roofward_archive,heat surge,0.429912,0.384912,0.429912,stored seasonal drift,False,15,False,True
+543,34,archive_signal,wind scatter,0.469597,0.434597,0.434597,avatar forecast slider,True,19,True,True
+544,35,signal_orchard,dusk ice,0.427355,0.492355,0.492355,avatar forecast slider,True,19,True,True
+545,35,orchard_riverbend,fen mud,0.426226,0.471226,0.426226,stored seasonal drift,False,19,False,True
+546,35,central_repair_ring,crowded repair yard,0.457762,0.422762,0.457762,stored seasonal drift,False,17,False,True
+547,35,riverbend_roofward,river flood,0.489479,0.554479,0.489479,stored seasonal drift,False,15,False,True
+548,35,roofward_archive,heat surge,0.443224,0.488224,0.488224,avatar forecast slider,True,16,True,True
+549,35,archive_signal,wind scatter,0.415753,0.380753,0.415753,stored seasonal drift,False,19,False,True
+550,35,signal_orchard,dusk ice,0.478025,0.453025,0.478025,stored seasonal drift,False,19,False,True
+551,35,orchard_riverbend,fen mud,0.450554,0.495554,0.450554,stored seasonal drift,False,19,False,True
+552,35,central_repair_ring,crowded repair yard,0.473475,0.528475,0.528475,avatar forecast slider,True,18,True,True
+553,35,riverbend_roofward,river flood,0.475552,0.450552,0.475552,stored seasonal drift,False,15,False,True
+554,35,roofward_archive,heat surge,0.487073,0.442073,0.442073,avatar forecast slider,True,17,True,True
+555,35,archive_signal,wind scatter,0.437348,0.492348,0.437348,stored seasonal drift,False,19,False,True
+556,35,signal_orchard,dusk ice,0.476201,0.451201,0.476201,stored seasonal drift,False,19,False,True
+557,35,orchard_riverbend,fen mud,0.448376,0.403376,0.448376,stored seasonal drift,False,19,False,True
+558,35,central_repair_ring,crowded repair yard,0.527988,0.492988,0.527988,stored seasonal drift,False,18,False,True
+559,35,riverbend_roofward,river flood,0.457275,0.432275,0.457275,stored seasonal drift,False,15,False,True
+560,36,archive_signal,wind scatter,0.437019,0.392019,0.392019,avatar forecast slider,True,20,True,True
+561,36,signal_orchard,dusk ice,0.483033,0.538033,0.483033,stored seasonal drift,False,19,False,True
+562,36,orchard_riverbend,fen mud,0.427603,0.402603,0.427603,stored seasonal drift,False,19,False,True
+563,36,central_repair_ring,crowded repair yard,0.52547,0.48047,0.52547,stored seasonal drift,False,18,False,True
+564,36,riverbend_roofward,river flood,0.466757,0.521757,0.521757,avatar forecast slider,True,16,True,True
+565,36,roofward_archive,heat surge,0.422183,0.397183,0.422183,stored seasonal drift,False,17,False,True
+566,36,archive_signal,wind scatter,0.391736,0.346736,0.391736,stored seasonal drift,False,20,False,True
+567,36,signal_orchard,dusk ice,0.499408,0.554408,0.499408,stored seasonal drift,False,19,False,True
+568,36,orchard_riverbend,fen mud,0.447539,0.512539,0.512539,avatar forecast slider,True,20,True,True
+569,36,central_repair_ring,crowded repair yard,0.500204,0.455204,0.500204,stored seasonal drift,False,18,False,True
+570,36,riverbend_roofward,river flood,0.515911,0.480911,0.480911,avatar forecast slider,True,17,True,True
+571,36,roofward_archive,heat surge,0.442877,0.507877,0.442877,stored seasonal drift,False,17,False,True
+572,36,archive_signal,wind scatter,0.401993,0.446993,0.401993,stored seasonal drift,False,20,False,True
+573,36,signal_orchard,dusk ice,0.490391,0.455391,0.490391,stored seasonal drift,False,19,False,True
+574,36,orchard_riverbend,fen mud,0.514284,0.579284,0.514284,stored seasonal drift,False,20,False,True
+575,36,central_repair_ring,crowded repair yard,0.472175,0.427175,0.472175,stored seasonal drift,False,18,False,True
+576,37,riverbend_roofward,river flood,0.468183,0.433183,0.433183,avatar forecast slider,True,18,True,True
+577,37,roofward_archive,heat surge,0.448074,0.513074,0.448074,stored seasonal drift,False,17,False,True
+578,37,archive_signal,wind scatter,0.425514,0.470514,0.425514,stored seasonal drift,False,20,False,True
+579,37,signal_orchard,dusk ice,0.486836,0.451836,0.486836,stored seasonal drift,False,19,False,True
+580,37,orchard_riverbend,fen mud,0.503184,0.478184,0.503184,stored seasonal drift,False,20,False,True
+581,37,central_repair_ring,crowded repair yard,0.479571,0.524571,0.479571,stored seasonal drift,False,18,False,True
+582,37,riverbend_roofward,river flood,0.420837,0.385837,0.420837,stored seasonal drift,False,18,False,True
+583,37,roofward_archive,heat surge,0.463044,0.528044,0.463044,stored seasonal drift,False,17,False,True
+584,37,archive_signal,wind scatter,0.439442,0.484442,0.484442,avatar forecast slider,True,21,True,True
+585,37,signal_orchard,dusk ice,0.460679,0.425679,0.460679,stored seasonal drift,False,19,False,True
+586,37,orchard_riverbend,fen mud,0.487338,0.462338,0.487338,stored seasonal drift,False,20,False,True
+587,37,central_repair_ring,crowded repair yard,0.479631,0.524631,0.479631,stored seasonal drift,False,18,False,True
+588,37,riverbend_roofward,river flood,0.42072,0.38572,0.42072,stored seasonal drift,False,18,False,True
+589,37,roofward_archive,heat surge,0.452818,0.427818,0.452818,stored seasonal drift,False,17,False,True
+590,37,archive_signal,wind scatter,0.48382,0.43882,0.48382,stored seasonal drift,False,21,False,True
+591,37,signal_orchard,dusk ice,0.475984,0.530984,0.475984,stored seasonal drift,False,19,False,True
+592,38,orchard_riverbend,fen mud,0.461111,0.436111,0.436111,avatar forecast slider,True,21,True,True
+593,38,central_repair_ring,crowded repair yard,0.467083,0.422083,0.467083,stored seasonal drift,False,18,False,True
+594,38,riverbend_roofward,river flood,0.435319,0.490319,0.435319,stored seasonal drift,False,18,False,True
+595,38,roofward_archive,heat surge,0.448223,0.423223,0.448223,stored seasonal drift,False,17,False,True
+596,38,archive_signal,wind scatter,0.470685,0.425685,0.470685,stored seasonal drift,False,21,False,True
+597,38,signal_orchard,dusk ice,0.476546,0.531546,0.476546,stored seasonal drift,False,19,False,True
+598,38,orchard_riverbend,fen mud,0.454855,0.519855,0.454855,stored seasonal drift,False,21,False,True
+599,38,central_repair_ring,crowded repair yard,0.466791,0.421791,0.466791,stored seasonal drift,False,18,False,True
+600,38,riverbend_roofward,river flood,0.441574,0.496574,0.496574,avatar forecast slider,True,19,True,True
+601,38,roofward_archive,heat surge,0.465272,0.530272,0.465272,stored seasonal drift,False,17,False,True
+602,38,archive_signal,wind scatter,0.453089,0.408089,0.453089,stored seasonal drift,False,21,False,True
+603,38,signal_orchard,dusk ice,0.47073,0.43573,0.47073,stored seasonal drift,False,19,False,True
+604,38,orchard_riverbend,fen mud,0.481475,0.546475,0.481475,stored seasonal drift,False,21,False,True
+605,38,central_repair_ring,crowded repair yard,0.44344,0.39844,0.44344,stored seasonal drift,False,18,False,True
+606,38,riverbend_roofward,river flood,0.487954,0.452954,0.487954,stored seasonal drift,False,19,False,True
+607,38,roofward_archive,heat surge,0.473634,0.538634,0.473634,stored seasonal drift,False,17,False,True
+608,39,archive_signal,wind scatter,0.469457,0.514457,0.514457,avatar forecast slider,True,22,True,True
+609,39,signal_orchard,dusk ice,0.453128,0.418128,0.453128,stored seasonal drift,False,19,False,True
+610,39,orchard_riverbend,fen mud,0.474969,0.449969,0.474969,stored seasonal drift,False,21,False,True
+611,39,central_repair_ring,crowded repair yard,0.471658,0.516658,0.471658,stored seasonal drift,False,18,False,True
+612,39,riverbend_roofward,river flood,0.46794,0.43294,0.46794,stored seasonal drift,False,19,False,True
+613,39,roofward_archive,heat surge,0.468225,0.443225,0.468225,stored seasonal drift,False,17,False,True
+614,39,archive_signal,wind scatter,0.515933,0.560933,0.515933,stored seasonal drift,False,22,False,True
+615,39,signal_orchard,dusk ice,0.44849,0.41349,0.44849,stored seasonal drift,False,19,False,True
+616,39,orchard_riverbend,fen mud,0.463073,0.438073,0.438073,avatar forecast slider,True,22,True,True
+617,39,central_repair_ring,crowded repair yard,0.472826,0.517826,0.472826,stored seasonal drift,False,18,False,True
+618,39,riverbend_roofward,river flood,0.444428,0.409428,0.444428,stored seasonal drift,False,19,False,True
+619,39,roofward_archive,heat surge,0.457273,0.432273,0.457273,stored seasonal drift,False,17,False,True
+620,39,archive_signal,wind scatter,0.527702,0.572702,0.527702,stored seasonal drift,False,22,False,True
+621,39,signal_orchard,dusk ice,0.465501,0.520501,0.465501,stored seasonal drift,False,19,False,True
+622,39,orchard_riverbend,fen mud,0.425043,0.400043,0.425043,stored seasonal drift,False,22,False,True
+623,39,central_repair_ring,crowded repair yard,0.46753,0.42253,0.46753,stored seasonal drift,False,18,False,True
+624,40,riverbend_roofward,river flood,0.455708,0.510708,0.510708,avatar forecast slider,True,20,True,True
+625,40,roofward_archive,heat surge,0.435255,0.410255,0.435255,stored seasonal drift,False,17,False,True
+626,40,archive_signal,wind scatter,0.508424,0.463424,0.508424,stored seasonal drift,False,22,False,True
+627,40,signal_orchard,dusk ice,0.484331,0.539331,0.484331,stored seasonal drift,False,19,False,True
+628,40,orchard_riverbend,fen mud,0.445337,0.510337,0.445337,stored seasonal drift,False,22,False,True
+629,40,central_repair_ring,crowded repair yard,0.450376,0.405376,0.450376,stored seasonal drift,False,18,False,True
+630,40,riverbend_roofward,river flood,0.506409,0.471409,0.506409,stored seasonal drift,False,20,False,True
+631,40,roofward_archive,heat surge,0.470919,0.535919,0.470919,stored seasonal drift,False,17,False,True
+632,40,archive_signal,wind scatter,0.485545,0.440545,0.440545,avatar forecast slider,True,23,True,True
+633,40,signal_orchard,dusk ice,0.477425,0.442425,0.477425,stored seasonal drift,False,19,False,True
+634,40,orchard_riverbend,fen mud,0.45649,0.52149,0.45649,stored seasonal drift,False,22,False,True
+635,40,central_repair_ring,crowded repair yard,0.429323,0.384323,0.429323,stored seasonal drift,False,18,False,True
+636,40,riverbend_roofward,river flood,0.513212,0.568212,0.513212,stored seasonal drift,False,20,False,True
+637,40,roofward_archive,heat surge,0.47849,0.54349,0.47849,stored seasonal drift,False,17,False,True
+638,40,archive_signal,wind scatter,0.420869,0.375869,0.420869,stored seasonal drift,False,23,False,True
+639,40,signal_orchard,dusk ice,0.465186,0.430186,0.465186,stored seasonal drift,False,19,False,True
+640,41,orchard_riverbend,fen mud,0.453481,0.428481,0.428481,avatar forecast slider,True,23,True,True
+641,41,central_repair_ring,crowded repair yard,0.442718,0.487718,0.442718,stored seasonal drift,False,18,False,True
+642,41,riverbend_roofward,river flood,0.489662,0.454662,0.489662,stored seasonal drift,False,20,False,True
+643,41,roofward_archive,heat surge,0.489201,0.554201,0.489201,stored seasonal drift,False,17,False,True
+644,41,archive_signal,wind scatter,0.435447,0.480447,0.435447,stored seasonal drift,False,23,False,True
+645,41,signal_orchard,dusk ice,0.44206,0.40706,0.44206,stored seasonal drift,False,19,False,True
+646,41,orchard_riverbend,fen mud,0.423094,0.398094,0.423094,stored seasonal drift,False,23,False,True
+647,41,central_repair_ring,crowded repair yard,0.464737,0.509737,0.464737,stored seasonal drift,False,18,False,True
+648,41,riverbend_roofward,river flood,0.463109,0.428109,0.428109,avatar forecast slider,True,21,True,True
+649,41,roofward_archive,heat surge,0.475313,0.450313,0.475313,stored seasonal drift,False,17,False,True
+650,41,archive_signal,wind scatter,0.441684,0.486684,0.441684,stored seasonal drift,False,23,False,True
+651,41,signal_orchard,dusk ice,0.459972,0.514972,0.459972,stored seasonal drift,False,19,False,True
+652,41,orchard_riverbend,fen mud,0.428961,0.493961,0.428961,stored seasonal drift,False,23,False,True
+653,41,central_repair_ring,crowded repair yard,0.460574,0.415574,0.460574,stored seasonal drift,False,18,False,True
+654,41,riverbend_roofward,river flood,0.447974,0.502974,0.447974,stored seasonal drift,False,21,False,True
+655,41,roofward_archive,heat surge,0.457069,0.432069,0.457069,stored seasonal drift,False,17,False,True
+656,42,signal_orchard,dusk ice,0.456476,0.411476,0.411476,avatar forecast slider,True,20,True,True
+657,42,orchard_riverbend,fen mud,0.442406,0.497406,0.442406,stored seasonal drift,False,23,False,True
+658,42,central_repair_ring,crowded repair yard,0.438094,0.413094,0.438094,stored seasonal drift,False,18,False,True
+659,42,riverbend_roofward,river flood,0.462958,0.507958,0.462958,stored seasonal drift,False,21,False,True
+660,42,roofward_archive,heat surge,0.466579,0.521579,0.466579,stored seasonal drift,False,17,False,True
+661,42,archive_signal,wind scatter,0.421848,0.396848,0.421848,stored seasonal drift,False,23,False,True
+662,42,signal_orchard,dusk ice,0.408469,0.363469,0.408469,stored seasonal drift,False,20,False,True
+663,42,orchard_riverbend,fen mud,0.464469,0.519469,0.464469,stored seasonal drift,False,23,False,True
+664,42,central_repair_ring,crowded repair yard,0.456561,0.521561,0.521561,avatar forecast slider,True,19,True,True
+665,42,riverbend_roofward,river flood,0.452744,0.407744,0.452744,stored seasonal drift,False,21,False,True
+666,42,roofward_archive,heat surge,0.468458,0.523458,0.468458,stored seasonal drift,False,17,False,True
+667,42,archive_signal,wind scatter,0.442589,0.507589,0.442589,stored seasonal drift,False,23,False,True
+668,42,signal_orchard,dusk ice,0.416383,0.461383,0.416383,stored seasonal drift,False,20,False,True
+669,42,orchard_riverbend,fen mud,0.460343,0.425343,0.460343,stored seasonal drift,False,23,False,True
+670,42,central_repair_ring,crowded repair yard,0.522042,0.587042,0.522042,stored seasonal drift,False,19,False,True
+671,42,riverbend_roofward,river flood,0.43766,0.39266,0.43766,stored seasonal drift,False,21,False,True
+672,43,roofward_archive,heat surge,0.457474,0.422474,0.422474,avatar forecast slider,True,18,True,True
+673,43,archive_signal,wind scatter,0.447827,0.512827,0.447827,stored seasonal drift,False,23,False,True
+674,43,signal_orchard,dusk ice,0.437889,0.482889,0.437889,stored seasonal drift,False,20,False,True
+675,43,orchard_riverbend,fen mud,0.460995,0.515995,0.460995,stored seasonal drift,False,23,False,True
+676,43,central_repair_ring,crowded repair yard,0.509856,0.484856,0.484856,avatar forecast slider,True,20,True,True
+677,43,riverbend_roofward,river flood,0.456188,0.501188,0.456188,stored seasonal drift,False,21,False,True
+678,43,roofward_archive,heat surge,0.411628,0.376628,0.411628,stored seasonal drift,False,18,False,True
+679,43,archive_signal,wind scatter,0.462831,0.527831,0.462831,stored seasonal drift,False,23,False,True
+680,43,signal_orchard,dusk ice,0.450085,0.495085,0.495085,avatar forecast slider,True,21,True,True
+681,43,orchard_riverbend,fen mud,0.438456,0.403456,0.438456,stored seasonal drift,False,23,False,True
+682,43,central_repair_ring,crowded repair yard,0.471576,0.446576,0.446576,avatar forecast slider,True,21,True,True
+683,43,riverbend_roofward,river flood,0.465822,0.510822,0.465822,stored seasonal drift,False,21,False,True
+684,43,roofward_archive,heat surge,0.4128,0.4678,0.4128,stored seasonal drift,False,18,False,True
+685,43,archive_signal,wind scatter,0.452635,0.427635,0.452635,stored seasonal drift,False,23,False,True
+686,43,signal_orchard,dusk ice,0.492973,0.447973,0.492973,stored seasonal drift,False,21,False,True
+687,43,orchard_riverbend,fen mud,0.456872,0.511872,0.456872,stored seasonal drift,False,23,False,True
+688,44,central_repair_ring,crowded repair yard,0.426055,0.401055,0.401055,avatar forecast slider,True,22,True,True
+689,44,riverbend_roofward,river flood,0.461507,0.416507,0.461507,stored seasonal drift,False,21,False,True
+690,44,roofward_archive,heat surge,0.428508,0.483508,0.428508,stored seasonal drift,False,18,False,True
+691,44,archive_signal,wind scatter,0.448066,0.423066,0.448066,stored seasonal drift,False,23,False,True
+692,44,signal_orchard,dusk ice,0.478557,0.433557,0.478557,stored seasonal drift,False,21,False,True
+693,44,orchard_riverbend,fen mud,0.46011,0.51511,0.51511,avatar forecast slider,True,24,True,True
+694,44,central_repair_ring,crowded repair yard,0.424707,0.489707,0.424707,stored seasonal drift,False,22,False,True
+695,44,riverbend_roofward,river flood,0.468296,0.513296,0.468296,stored seasonal drift,False,21,False,True
+696,44,roofward_archive,heat surge,0.435717,0.490717,0.435717,avatar forecast slider,False,18,True,True
+697,44,archive_signal,wind scatter,0.465137,0.530137,0.465137,stored seasonal drift,False,23,False,True
+698,44,signal_orchard,dusk ice,0.459859,0.414859,0.459859,stored seasonal drift,False,21,False,True
+699,44,orchard_riverbend,fen mud,0.503895,0.468895,0.468895,avatar forecast slider,True,25,True,True
+700,44,central_repair_ring,crowded repair yard,0.455548,0.520548,0.455548,stored seasonal drift,False,22,False,True
+701,44,riverbend_roofward,river flood,0.451035,0.406035,0.451035,stored seasonal drift,False,21,False,True
+702,44,roofward_archive,heat surge,0.435617,0.400617,0.435617,stored seasonal drift,False,18,False,True
+703,44,archive_signal,wind scatter,0.473518,0.538518,0.473518,stored seasonal drift,False,23,False,True
+704,45,signal_orchard,dusk ice,0.475279,0.520279,0.520279,avatar forecast slider,True,22,True,True
+705,45,orchard_riverbend,fen mud,0.45155,0.41655,0.45155,stored seasonal drift,False,25,False,True
+706,45,central_repair_ring,crowded repair yard,0.452671,0.427671,0.452671,stored seasonal drift,False,22,False,True
+707,45,riverbend_roofward,river flood,0.48449,0.52949,0.48449,stored seasonal drift,False,21,False,True
+708,45,roofward_archive,heat surge,0.422931,0.387931,0.422931,stored seasonal drift,False,18,False,True
+709,45,archive_signal,wind scatter,0.468125,0.443125,0.468125,stored seasonal drift,False,23,False,True
+710,45,signal_orchard,dusk ice,0.52094,0.56594,0.56594,avatar forecast slider,True,23,True,True
+711,45,orchard_riverbend,fen mud,0.447133,0.412133,0.447133,stored seasonal drift,False,25,False,True
+712,45,central_repair_ring,crowded repair yard,0.443897,0.418897,0.418897,avatar forecast slider,True,23,True,True
+713,45,riverbend_roofward,river flood,0.490161,0.535161,0.490161,stored seasonal drift,False,21,False,True
+714,45,roofward_archive,heat surge,0.405721,0.370721,0.405721,stored seasonal drift,False,18,False,True
+715,45,archive_signal,wind scatter,0.457187,0.432187,0.457187,stored seasonal drift,False,23,False,True
+716,45,signal_orchard,dusk ice,0.570708,0.615708,0.615708,avatar forecast slider,True,24,True,True
+717,45,orchard_riverbend,fen mud,0.464334,0.519334,0.464334,stored seasonal drift,False,25,False,True
+718,45,central_repair_ring,crowded repair yard,0.408551,0.383551,0.408551,stored seasonal drift,False,23,False,True
+719,45,riverbend_roofward,river flood,0.488738,0.443738,0.488738,stored seasonal drift,False,21,False,True
+720,46,roofward_archive,heat surge,0.42242,0.47742,0.47742,avatar forecast slider,True,19,True,True
+721,46,archive_signal,wind scatter,0.435181,0.410181,0.410181,avatar forecast slider,True,24,True,True
+722,46,signal_orchard,dusk ice,0.584109,0.539109,0.584109,stored seasonal drift,False,24,False,True
+723,46,orchard_riverbend,fen mud,0.483327,0.538327,0.483327,stored seasonal drift,False,25,False,True
+724,46,central_repair_ring,crowded repair yard,0.431154,0.496154,0.431154,stored seasonal drift,False,23,False,True
+725,46,riverbend_roofward,river flood,0.474915,0.429915,0.474915,stored seasonal drift,False,21,False,True
+726,46,roofward_archive,heat surge,0.477781,0.532781,0.477781,stored seasonal drift,False,19,False,True
+727,46,archive_signal,wind scatter,0.449356,0.514356,0.514356,avatar forecast slider,True,25,True,True
+728,46,signal_orchard,dusk ice,0.550634,0.505634,0.505634,avatar forecast slider,True,25,True,True
+729,46,orchard_riverbend,fen mud,0.476561,0.441561,0.476561,stored seasonal drift,False,25,False,True
+730,46,central_repair_ring,crowded repair yard,0.444292,0.509292,0.444292,stored seasonal drift,False,23,False,True
+731,46,riverbend_roofward,river flood,0.456727,0.411727,0.456727,stored seasonal drift,False,21,False,True
+732,46,roofward_archive,heat surge,0.488592,0.543592,0.488592,stored seasonal drift,False,19,False,True
+733,46,archive_signal,wind scatter,0.515846,0.580846,0.580846,avatar forecast slider,True,26,True,True
+734,46,signal_orchard,dusk ice,0.476845,0.431845,0.476845,stored seasonal drift,False,25,False,True
+735,46,orchard_riverbend,fen mud,0.464442,0.429442,0.464442,stored seasonal drift,False,25,False,True
+736,47,central_repair_ring,crowded repair yard,0.442991,0.417991,0.417991,avatar forecast slider,True,24,True,True
+737,47,riverbend_roofward,river flood,0.472585,0.517585,0.472585,stored seasonal drift,False,21,False,True
+738,47,roofward_archive,heat surge,0.468489,0.433489,0.433489,avatar forecast slider,True,20,True,True
+739,47,archive_signal,wind scatter,0.577228,0.552228,0.577228,stored seasonal drift,False,26,False,True
+740,47,signal_orchard,dusk ice,0.483587,0.528587,0.483587,stored seasonal drift,False,25,False,True
+741,47,orchard_riverbend,fen mud,0.44142,0.40642,0.44142,stored seasonal drift,False,25,False,True
+742,47,central_repair_ring,crowded repair yard,0.414072,0.389072,0.414072,stored seasonal drift,False,24,False,True
+743,47,riverbend_roofward,river flood,0.496723,0.541723,0.496723,stored seasonal drift,False,21,False,True
+744,47,roofward_archive,heat surge,0.414801,0.379801,0.379801,avatar forecast slider,True,21,True,True
+745,47,archive_signal,wind scatter,0.551016,0.526016,0.551016,stored seasonal drift,False,26,False,True
+746,47,signal_orchard,dusk ice,0.483085,0.438085,0.483085,stored seasonal drift,False,25,False,True
+747,47,orchard_riverbend,fen mud,0.459421,0.514421,0.459421,stored seasonal drift,False,25,False,True
+748,47,central_repair_ring,crowded repair yard,0.421202,0.486202,0.421202,stored seasonal drift,False,24,False,True
+749,47,riverbend_roofward,river flood,0.494382,0.449382,0.494382,stored seasonal drift,False,21,False,True
+750,47,roofward_archive,heat surge,0.406429,0.461429,0.461429,avatar forecast slider,True,22,True,True
+751,47,archive_signal,wind scatter,0.522174,0.497174,0.522174,stored seasonal drift,False,26,False,True
+752,48,orchard_riverbend,fen mud,0.456002,0.411002,0.411002,avatar forecast slider,True,26,True,True
+753,48,central_repair_ring,crowded repair yard,0.435734,0.490734,0.435734,stored seasonal drift,False,24,False,True
+754,48,riverbend_roofward,river flood,0.473469,0.448469,0.473469,avatar forecast slider,False,21,True,True
+755,48,roofward_archive,heat surge,0.474529,0.519529,0.474529,stored seasonal drift,False,22,False,True
+756,48,archive_signal,wind scatter,0.52257,0.57757,0.52257,stored seasonal drift,False,26,False,True
+757,48,signal_orchard,dusk ice,0.457453,0.432453,0.457453,stored seasonal drift,False,25,False,True
+758,48,orchard_riverbend,fen mud,0.408062,0.363062,0.408062,stored seasonal drift,False,26,False,True
+759,48,central_repair_ring,crowded repair yard,0.458731,0.513731,0.458731,stored seasonal drift,False,24,False,True
+760,48,riverbend_roofward,river flood,0.449183,0.424183,0.424183,avatar forecast slider,True,22,True,True
+761,48,roofward_archive,heat surge,0.462695,0.417695,0.462695,stored seasonal drift,False,22,False,True
+762,48,archive_signal,wind scatter,0.51661,0.48161,0.51661,stored seasonal drift,False,26,False,True
+763,48,signal_orchard,dusk ice,0.47321,0.53821,0.47321,stored seasonal drift,False,25,False,True
+764,48,orchard_riverbend,fen mud,0.416033,0.461033,0.416033,stored seasonal drift,False,26,False,True
+765,48,central_repair_ring,crowded repair yard,0.455409,0.420409,0.455409,stored seasonal drift,False,24,False,True
+766,48,riverbend_roofward,river flood,0.444597,0.509597,0.509597,avatar forecast slider,True,23,True,True
+767,48,roofward_archive,heat surge,0.446218,0.401218,0.446218,stored seasonal drift,False,22,False,True
+768,49,archive_signal,wind scatter,0.498885,0.463885,0.463885,avatar forecast slider,True,27,True,True
+769,49,signal_orchard,dusk ice,0.474161,0.539161,0.474161,stored seasonal drift,False,25,False,True
+770,49,orchard_riverbend,fen mud,0.437588,0.482588,0.437588,stored seasonal drift,False,26,False,True
+771,49,central_repair_ring,crowded repair yard,0.456752,0.511752,0.456752,stored seasonal drift,False,24,False,True
+772,49,riverbend_roofward,river flood,0.505453,0.480453,0.505453,stored seasonal drift,False,23,False,True
+773,49,roofward_archive,heat surge,0.463547,0.508547,0.463547,stored seasonal drift,False,22,False,True
+774,49,archive_signal,wind scatter,0.447241,0.412241,0.447241,stored seasonal drift,False,27,False,True
+775,49,signal_orchard,dusk ice,0.485478,0.550478,0.485478,stored seasonal drift,False,25,False,True
+776,49,orchard_riverbend,fen mud,0.449826,0.494826,0.494826,avatar forecast slider,True,27,True,True
+777,49,central_repair_ring,crowded repair yard,0.434807,0.399807,0.434807,stored seasonal drift,False,24,False,True
+778,49,riverbend_roofward,river flood,0.49559,0.47059,0.49559,stored seasonal drift,False,23,False,True
+779,49,roofward_archive,heat surge,0.47215,0.51715,0.47215,stored seasonal drift,False,22,False,True
+780,49,archive_signal,wind scatter,0.443427,0.408427,0.443427,stored seasonal drift,False,27,False,True
+781,49,signal_orchard,dusk ice,0.472111,0.447111,0.472111,stored seasonal drift,False,25,False,True
+782,49,orchard_riverbend,fen mud,0.49275,0.44775,0.49275,stored seasonal drift,False,27,False,True
+783,49,central_repair_ring,crowded repair yard,0.453734,0.508734,0.453734,stored seasonal drift,False,24,False,True
+784,50,riverbend_roofward,river flood,0.474507,0.449507,0.449507,avatar forecast slider,True,24,True,True
+785,50,roofward_archive,heat surge,0.466949,0.421949,0.466949,stored seasonal drift,False,22,False,True
+786,50,archive_signal,wind scatter,0.454847,0.509847,0.454847,stored seasonal drift,False,27,False,True
+787,50,signal_orchard,dusk ice,0.464815,0.439815,0.464815,stored seasonal drift,False,25,False,True
+788,50,orchard_riverbend,fen mud,0.478365,0.433365,0.478365,stored seasonal drift,False,27,False,True
+789,50,central_repair_ring,crowded repair yard,0.457411,0.512411,0.457411,stored seasonal drift,False,24,False,True
+790,50,riverbend_roofward,river flood,0.428576,0.403576,0.428576,stored seasonal drift,False,24,False,True
+791,50,roofward_archive,heat surge,0.472976,0.517976,0.472976,stored seasonal drift,False,22,False,True
+792,50,archive_signal,wind scatter,0.458368,0.513368,0.513368,avatar forecast slider,True,28,True,True
+793,50,signal_orchard,dusk ice,0.479541,0.544541,0.479541,stored seasonal drift,False,25,False,True
+794,50,orchard_riverbend,fen mud,0.459694,0.414694,0.459694,stored seasonal drift,False,27,False,True
+795,50,central_repair_ring,crowded repair yard,0.454273,0.419273,0.454273,stored seasonal drift,False,24,False,True
+796,50,riverbend_roofward,river flood,0.465175,0.530175,0.465175,stored seasonal drift,False,24,False,True
+797,50,roofward_archive,heat surge,0.455059,0.410059,0.455059,stored seasonal drift,False,22,False,True
+798,50,archive_signal,wind scatter,0.502396,0.467396,0.502396,stored seasonal drift,False,28,False,True
+799,50,signal_orchard,dusk ice,0.485905,0.550905,0.485905,stored seasonal drift,False,25,False,True
+800,51,orchard_riverbend,fen mud,0.475137,0.520137,0.520137,avatar forecast slider,True,28,True,True
+801,51,central_repair_ring,crowded repair yard,0.438975,0.403975,0.438975,stored seasonal drift,False,24,False,True
+802,51,riverbend_roofward,river flood,0.467251,0.532251,0.467251,stored seasonal drift,False,24,False,True
+803,51,roofward_archive,heat surge,0.487951,0.532951,0.487951,stored seasonal drift,False,22,False,True
+804,51,archive_signal,wind scatter,0.480361,0.445361,0.480361,stored seasonal drift,False,28,False,True
+805,51,signal_orchard,dusk ice,0.478778,0.453778,0.478778,stored seasonal drift,False,25,False,True
+806,51,orchard_riverbend,fen mud,0.520818,0.565818,0.520818,stored seasonal drift,False,28,False,True
+807,51,central_repair_ring,crowded repair yard,0.436318,0.401318,0.436318,stored seasonal drift,False,24,False,True
+808,51,riverbend_roofward,river flood,0.462736,0.437736,0.437736,avatar forecast slider,True,25,True,True
+809,51,roofward_archive,heat surge,0.493138,0.538138,0.493138,stored seasonal drift,False,22,False,True
+810,51,archive_signal,wind scatter,0.45511,0.42011,0.45511,stored seasonal drift,False,28,False,True
+811,51,signal_orchard,dusk ice,0.466349,0.441349,0.466349,stored seasonal drift,False,25,False,True
+812,51,orchard_riverbend,fen mud,0.531903,0.576903,0.531903,stored seasonal drift,False,28,False,True
+813,51,central_repair_ring,crowded repair yard,0.455033,0.510033,0.455033,stored seasonal drift,False,24,False,True
+814,51,riverbend_roofward,river flood,0.431053,0.406053,0.431053,stored seasonal drift,False,25,False,True
+815,51,roofward_archive,heat surge,0.491299,0.446299,0.491299,stored seasonal drift,False,22,False,True
+816,52,archive_signal,wind scatter,0.464895,0.519895,0.519895,avatar forecast slider,True,29,True,True
+817,52,signal_orchard,dusk ice,0.44306,0.41806,0.44306,stored seasonal drift,False,25,False,True
+818,52,orchard_riverbend,fen mud,0.512037,0.467037,0.512037,stored seasonal drift,False,28,False,True
+819,52,central_repair_ring,crowded repair yard,0.475328,0.530328,0.475328,stored seasonal drift,False,24,False,True
+820,52,riverbend_roofward,river flood,0.412706,0.387706,0.412706,stored seasonal drift,False,25,False,True
+821,52,roofward_archive,heat surge,0.477117,0.432117,0.477117,stored seasonal drift,False,22,False,True
+822,52,archive_signal,wind scatter,0.51431,0.47931,0.51431,stored seasonal drift,False,29,False,True
+823,52,signal_orchard,dusk ice,0.477632,0.542632,0.477632,stored seasonal drift,False,25,False,True
+824,52,orchard_riverbend,fen mud,0.488652,0.443652,0.443652,avatar forecast slider,True,29,True,True
+825,52,central_repair_ring,crowded repair yard,0.469682,0.434682,0.469682,stored seasonal drift,False,24,False,True
+826,52,riverbend_roofward,river flood,0.434727,0.499727,0.434727,stored seasonal drift,False,25,False,True
+827,52,roofward_archive,heat surge,0.458621,0.413621,0.458621,stored seasonal drift,False,22,False,True
+828,52,archive_signal,wind scatter,0.520007,0.575007,0.520007,stored seasonal drift,False,29,False,True
+829,52,signal_orchard,dusk ice,0.484264,0.549264,0.484264,stored seasonal drift,False,25,False,True
+830,52,orchard_riverbend,fen mud,0.423541,0.378541,0.423541,stored seasonal drift,False,29,False,True
+831,52,central_repair_ring,crowded repair yard,0.458527,0.423527,0.458527,stored seasonal drift,False,24,False,True
+832,53,riverbend_roofward,river flood,0.441065,0.506065,0.506065,avatar forecast slider,True,26,True,True
+833,53,roofward_archive,heat surge,0.474214,0.519214,0.474214,stored seasonal drift,False,22,False,True
+834,53,archive_signal,wind scatter,0.495506,0.460506,0.495506,stored seasonal drift,False,29,False,True
+835,53,signal_orchard,dusk ice,0.494167,0.559167,0.494167,stored seasonal drift,False,25,False,True
+836,53,orchard_riverbend,fen mud,0.437745,0.482745,0.437745,stored seasonal drift,False,29,False,True
+837,53,central_repair_ring,crowded repair yard,0.436333,0.401333,0.436333,stored seasonal drift,False,24,False,True
+838,53,riverbend_roofward,river flood,0.496116,0.471116,0.496116,stored seasonal drift,False,26,False,True
+839,53,roofward_archive,heat surge,0.498124,0.543124,0.498124,stored seasonal drift,False,22,False,True
+840,53,archive_signal,wind scatter,0.468135,0.433135,0.433135,avatar forecast slider,True,30,True,True
+841,53,signal_orchard,dusk ice,0.479584,0.454584,0.479584,stored seasonal drift,False,25,False,True
+842,53,orchard_riverbend,fen mud,0.443661,0.488661,0.443661,stored seasonal drift,False,29,False,True
+843,53,central_repair_ring,crowded repair yard,0.455046,0.510046,0.455046,stored seasonal drift,False,24,False,True
+844,53,riverbend_roofward,river flood,0.49806,0.56306,0.49806,stored seasonal drift,False,26,False,True
+845,53,roofward_archive,heat surge,0.495587,0.450587,0.495587,stored seasonal drift,False,22,False,True
+846,53,archive_signal,wind scatter,0.452296,0.507296,0.452296,stored seasonal drift,False,30,False,True
+847,53,signal_orchard,dusk ice,0.460742,0.435742,0.460742,stored seasonal drift,False,25,False,True
+848,54,central_repair_ring,crowded repair yard,0.45224,0.40724,0.40724,avatar forecast slider,True,25,True,True
+849,54,riverbend_roofward,river flood,0.508132,0.563132,0.508132,stored seasonal drift,False,26,False,True
+850,54,roofward_archive,heat surge,0.474505,0.449505,0.474505,stored seasonal drift,False,22,False,True
+851,54,archive_signal,wind scatter,0.466675,0.511675,0.466675,stored seasonal drift,False,30,False,True
+852,54,signal_orchard,dusk ice,0.469738,0.524738,0.469738,stored seasonal drift,False,25,False,True
+853,54,orchard_riverbend,fen mud,0.423548,0.398548,0.423548,stored seasonal drift,False,29,False,True
+854,54,central_repair_ring,crowded repair yard,0.404826,0.359826,0.404826,stored seasonal drift,False,25,False,True
+855,54,riverbend_roofward,river flood,0.527294,0.582294,0.527294,stored seasonal drift,False,26,False,True
+856,54,roofward_archive,heat surge,0.450074,0.425074,0.425074,avatar forecast slider,True,23,True,True
+857,54,archive_signal,wind scatter,0.45594,0.41094,0.45594,stored seasonal drift,False,30,False,True
+858,54,signal_orchard,dusk ice,0.471175,0.526175,0.471175,stored seasonal drift,False,25,False,True
+859,54,orchard_riverbend,fen mud,0.444051,0.509051,0.444051,stored seasonal drift,False,29,False,True
+860,54,central_repair_ring,crowded repair yard,0.41325,0.45825,0.41325,stored seasonal drift,False,25,False,True
+861,54,riverbend_roofward,river flood,0.520673,0.485673,0.520673,stored seasonal drift,False,26,False,True
+862,54,roofward_archive,heat surge,0.445364,0.510364,0.445364,stored seasonal drift,False,23,False,True
+863,54,archive_signal,wind scatter,0.440408,0.395408,0.440408,stored seasonal drift,False,30,False,True
+864,55,signal_orchard,dusk ice,0.459811,0.424811,0.424811,avatar forecast slider,True,26,True,True
+865,55,orchard_riverbend,fen mud,0.449084,0.514084,0.449084,stored seasonal drift,False,29,False,True
+866,55,central_repair_ring,crowded repair yard,0.435195,0.480195,0.480195,avatar forecast slider,True,26,True,True
+867,55,riverbend_roofward,river flood,0.519179,0.484179,0.519179,stored seasonal drift,False,26,False,True
+868,55,roofward_archive,heat surge,0.450213,0.515213,0.450213,stored seasonal drift,False,23,False,True
+869,55,archive_signal,wind scatter,0.458551,0.503551,0.458551,stored seasonal drift,False,30,False,True
+870,55,signal_orchard,dusk ice,0.413637,0.378637,0.413637,stored seasonal drift,False,26,False,True
+871,55,orchard_riverbend,fen mud,0.463912,0.528912,0.463912,stored seasonal drift,False,29,False,True
+872,55,central_repair_ring,crowded repair yard,0.486468,0.531468,0.531468,avatar forecast slider,True,27,True,True
+873,55,riverbend_roofward,river flood,0.494794,0.459794,0.494794,stored seasonal drift,False,26,False,True
+874,55,roofward_archive,heat surge,0.448083,0.423083,0.448083,stored seasonal drift,False,23,False,True
+875,55,archive_signal,wind scatter,0.467854,0.512854,0.467854,stored seasonal drift,False,30,False,True
+876,55,signal_orchard,dusk ice,0.414528,0.469528,0.414528,stored seasonal drift,False,26,False,True
+877,55,orchard_riverbend,fen mud,0.453564,0.428564,0.453564,stored seasonal drift,False,29,False,True
+878,55,central_repair_ring,crowded repair yard,0.524262,0.479262,0.479262,avatar forecast slider,True,28,True,True
+879,55,riverbend_roofward,river flood,0.467523,0.432523,0.467523,stored seasonal drift,False,26,False,True
+880,56,roofward_archive,heat surge,0.433651,0.408651,0.408651,avatar forecast slider,True,24,True,True
+881,56,archive_signal,wind scatter,0.463254,0.418254,0.463254,stored seasonal drift,False,30,False,True
+882,56,signal_orchard,dusk ice,0.429994,0.484994,0.429994,stored seasonal drift,False,26,False,True
+883,56,orchard_riverbend,fen mud,0.448865,0.423865,0.423865,avatar forecast slider,True,30,True,True
+884,56,central_repair_ring,crowded repair yard,0.466765,0.421765,0.466765,stored seasonal drift,False,28,False,True
+885,56,riverbend_roofward,river flood,0.47557,0.53057,0.47557,stored seasonal drift,False,26,False,True
+886,56,roofward_archive,heat surge,0.39344,0.36844,0.39344,stored seasonal drift,False,24,False,True
+887,56,archive_signal,wind scatter,0.469798,0.514798,0.469798,stored seasonal drift,False,30,False,True
+888,56,signal_orchard,dusk ice,0.436995,0.491995,0.491995,avatar forecast slider,True,27,True,True
+889,56,orchard_riverbend,fen mud,0.444324,0.509324,0.509324,avatar forecast slider,True,31,True,True
+890,56,central_repair_ring,crowded repair yard,0.449718,0.404718,0.449718,stored seasonal drift,False,28,False,True
+891,56,riverbend_roofward,river flood,0.47619,0.53119,0.47619,stored seasonal drift,False,26,False,True
+892,56,roofward_archive,heat surge,0.434958,0.499958,0.434958,stored seasonal drift,False,24,False,True
+893,56,archive_signal,wind scatter,0.452326,0.407326,0.452326,stored seasonal drift,False,30,False,True
+894,56,signal_orchard,dusk ice,0.484016,0.449016,0.484016,stored seasonal drift,False,27,False,True
+895,56,orchard_riverbend,fen mud,0.511519,0.576519,0.576519,avatar forecast slider,True,32,True,True
+896,57,central_repair_ring,crowded repair yard,0.466557,0.511557,0.511557,avatar forecast slider,True,29,True,True
+897,57,riverbend_roofward,river flood,0.464123,0.429123,0.464123,stored seasonal drift,False,26,False,True
+898,57,roofward_archive,heat surge,0.441264,0.506264,0.441264,stored seasonal drift,False,24,False,True
+899,57,archive_signal,wind scatter,0.4856,0.5306,0.4856,stored seasonal drift,False,30,False,True
+900,57,signal_orchard,dusk ice,0.464554,0.429554,0.429554,avatar forecast slider,True,28,True,True
+901,57,orchard_riverbend,fen mud,0.556706,0.531706,0.556706,stored seasonal drift,False,32,False,True
+902,57,central_repair_ring,crowded repair yard,0.513439,0.558439,0.513439,stored seasonal drift,False,29,False,True
+903,57,riverbend_roofward,river flood,0.464246,0.519246,0.464246,stored seasonal drift,False,26,False,True
+904,57,roofward_archive,heat surge,0.440387,0.415387,0.415387,avatar forecast slider,True,25,True,True
+905,57,archive_signal,wind scatter,0.491116,0.536116,0.491116,stored seasonal drift,False,30,False,True
+906,57,signal_orchard,dusk ice,0.411416,0.376416,0.376416,avatar forecast slider,True,29,True,True
+907,57,orchard_riverbend,fen mud,0.533367,0.508367,0.533367,stored seasonal drift,False,32,False,True
+908,57,central_repair_ring,crowded repair yard,0.525558,0.570558,0.525558,stored seasonal drift,False,29,False,True
+909,57,riverbend_roofward,river flood,0.441252,0.406252,0.441252,stored seasonal drift,False,26,False,True
+910,57,roofward_archive,heat surge,0.411833,0.386833,0.411833,stored seasonal drift,False,25,False,True
+911,57,archive_signal,wind scatter,0.48956,0.44456,0.48956,stored seasonal drift,False,30,False,True
+912,58,signal_orchard,dusk ice,0.397218,0.452218,0.452218,avatar forecast slider,True,30,True,True
+913,58,orchard_riverbend,fen mud,0.500696,0.475696,0.500696,stored seasonal drift,False,32,False,True
+914,58,central_repair_ring,crowded repair yard,0.50658,0.46158,0.50658,stored seasonal drift,False,29,False,True
+915,58,riverbend_roofward,river flood,0.469777,0.524777,0.469777,stored seasonal drift,False,26,False,True
+916,58,roofward_archive,heat surge,0.396176,0.371176,0.396176,stored seasonal drift,False,25,False,True
+917,58,archive_signal,wind scatter,0.475622,0.430622,0.430622,avatar forecast slider,True,31,True,True
+918,58,signal_orchard,dusk ice,0.456107,0.511107,0.456107,stored seasonal drift,False,30,False,True
+919,58,orchard_riverbend,fen mud,0.527199,0.592199,0.527199,stored seasonal drift,False,32,False,True
+920,58,central_repair_ring,crowded repair yard,0.483959,0.438959,0.438959,avatar forecast slider,True,30,True,True
+921,58,riverbend_roofward,river flood,0.471208,0.526208,0.471208,stored seasonal drift,False,26,False,True
+922,58,roofward_archive,heat surge,0.420511,0.485511,0.420511,stored seasonal drift,False,25,False,True
+923,58,archive_signal,wind scatter,0.418635,0.373635,0.373635,avatar forecast slider,True,32,True,True
+924,58,signal_orchard,dusk ice,0.469952,0.524952,0.469952,stored seasonal drift,False,30,False,True
+925,58,orchard_riverbend,fen mud,0.526891,0.501891,0.526891,stored seasonal drift,False,32,False,True
+926,58,central_repair_ring,crowded repair yard,0.419505,0.374505,0.419505,stored seasonal drift,False,30,False,True
+927,58,riverbend_roofward,river flood,0.466139,0.431139,0.466139,stored seasonal drift,False,26,False,True
+928,59,roofward_archive,heat surge,0.428839,0.493839,0.428839,avatar forecast slider,False,25,True,True
+929,59,archive_signal,wind scatter,0.401126,0.446126,0.401126,stored seasonal drift,False,32,False,True
+930,59,signal_orchard,dusk ice,0.452459,0.417459,0.452459,stored seasonal drift,False,30,False,True
+931,59,orchard_riverbend,fen mud,0.530826,0.595826,0.530826,stored seasonal drift,False,32,False,True
+932,59,central_repair_ring,crowded repair yard,0.434274,0.479274,0.434274,stored seasonal drift,False,30,False,True
+933,59,riverbend_roofward,river flood,0.44918,0.41418,0.44918,stored seasonal drift,False,26,False,True
+934,59,roofward_archive,heat surge,0.429702,0.494702,0.494702,avatar forecast slider,True,26,True,True
+935,59,archive_signal,wind scatter,0.435268,0.480268,0.435268,stored seasonal drift,False,32,False,True
+936,59,signal_orchard,dusk ice,0.431115,0.396115,0.396115,avatar forecast slider,True,31,True,True
+937,59,orchard_riverbend,fen mud,0.51111,0.48611,0.51111,stored seasonal drift,False,32,False,True
+938,59,central_repair_ring,crowded repair yard,0.440676,0.485676,0.440676,stored seasonal drift,False,30,False,True
+939,59,riverbend_roofward,river flood,0.428295,0.393295,0.428295,stored seasonal drift,False,26,False,True
+940,59,roofward_archive,heat surge,0.496844,0.561844,0.561844,avatar forecast slider,True,27,True,True
+941,59,archive_signal,wind scatter,0.44153,0.48653,0.44153,stored seasonal drift,False,32,False,True
+942,59,signal_orchard,dusk ice,0.420459,0.475459,0.420459,stored seasonal drift,False,31,False,True
+943,59,orchard_riverbend,fen mud,0.487855,0.462855,0.487855,stored seasonal drift,False,32,False,True
+944,60,riverbend_roofward,river flood,0.435534,0.480534,0.480534,avatar forecast slider,True,27,True,True
+945,60,roofward_archive,heat surge,0.562986,0.617986,0.562986,stored seasonal drift,False,27,False,True
+946,60,archive_signal,wind scatter,0.428016,0.403016,0.428016,stored seasonal drift,False,32,False,True
+947,60,signal_orchard,dusk ice,0.439295,0.484295,0.439295,stored seasonal drift,False,31,False,True
+948,60,orchard_riverbend,fen mud,0.493055,0.548055,0.493055,stored seasonal drift,False,32,False,True
+949,60,central_repair_ring,crowded repair yard,0.420981,0.395981,0.420981,stored seasonal drift,False,30,False,True
+950,60,riverbend_roofward,river flood,0.474159,0.429159,0.429159,avatar forecast slider,True,28,True,True
+951,60,roofward_archive,heat surge,0.574468,0.629468,0.574468,stored seasonal drift,False,27,False,True
+952,60,archive_signal,wind scatter,0.410094,0.385094,0.385094,avatar forecast slider,True,33,True,True
+953,60,signal_orchard,dusk ice,0.432394,0.387394,0.432394,stored seasonal drift,False,31,False,True
+954,60,orchard_riverbend,fen mud,0.491227,0.456227,0.491227,stored seasonal drift,False,32,False,True
+955,60,central_repair_ring,crowded repair yard,0.441844,0.506844,0.441844,stored seasonal drift,False,30,False,True
+956,60,riverbend_roofward,river flood,0.440477,0.485477,0.485477,avatar forecast slider,True,29,True,True
+957,60,roofward_archive,heat surge,0.561242,0.526242,0.561242,stored seasonal drift,False,27,False,True
+958,60,archive_signal,wind scatter,0.410981,0.475981,0.410981,stored seasonal drift,False,33,False,True
+959,60,signal_orchard,dusk ice,0.420159,0.375159,0.420159,stored seasonal drift,False,31,False,True

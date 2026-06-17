@@ -1,0 +1,13 @@
+condition,agent_count,group_count,society_events,social_graph_binding_rate,contagion_calibration_rate,group_mood_coherence_rate,distress_damping_rate,recovery_ritual_rate,relationship_specificity_rate,locality_filter_rate,boundary_respect_rate,frequency_synchrony_rate,diversity_preservation_rate,chaos_avoidance_rate,privacy_preservation_rate,replay_continuity_rate,trace_integrity,tiny_society_group_mood_readiness
+integrated_tiny_society_group_mood,8,3,6,1.0,1.0,0.962741,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.997019
+no_social_graph,8,3,6,0.0,1.0,0.962741,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.857019
+no_contagion,8,3,6,1.0,0.0,0.962741,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.907019
+no_mood_damping,8,3,6,1.0,1.0,0.955372,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.90643
+no_recovery_ritual,8,3,6,1.0,1.0,0.972604,1.0,0.666667,1.0,1.0,1.0,1.0,0.833333,1.0,1.0,1.0,1.0,0.962808
+no_frequency_coupling,8,3,6,1.0,1.0,0.962741,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.927019
+no_relationship_specificity,8,3,6,1.0,1.0,0.962735,1.0,1.0,0.0,1.0,1.0,1.0,0.833333,1.0,1.0,1.0,1.0,0.915352
+no_locality_filter,8,3,6,1.0,1.0,0.962733,1.0,1.0,1.0,0.0,1.0,1.0,0.666667,1.0,1.0,1.0,1.0,0.903685
+no_boundary_respect,8,3,6,1.0,1.0,0.962716,1.0,1.0,1.0,1.0,0.0,1.0,0.833333,1.0,1.0,1.0,1.0,0.905351
+no_diversity_preservation,8,3,6,1.0,1.0,0.967832,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.927427
+no_privacy_filter,8,3,6,1.0,1.0,0.962741,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.947019
+no_replay_continuity,8,3,6,1.0,1.0,0.962741,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.947019

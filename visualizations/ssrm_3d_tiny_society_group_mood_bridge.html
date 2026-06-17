@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report 173 - Tiny Society Group Mood Bridge</title>
+  <script src="../artifacts/ssrm_3d_tiny_society_group_mood_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_tiny_society_group_mood_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_tiny_society_group_mood_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #1f1711;
+      --muted: #6c5e50;
+      --panel: rgba(255, 250, 240, 0.84);
+      --line: rgba(69, 49, 33, 0.18);
+      --hearth: #c06d43;
+      --work: #657a50;
+      --edge: #45687a;
+      --distress: #a84f49;
+      --gold: #d2a34d;
+      --violet: #74679a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 18% 18%, rgba(192, 109, 67, 0.24), transparent 22rem),
+        radial-gradient(circle at 80% 18%, rgba(69, 104, 122, 0.24), transparent 24rem),
+        radial-gradient(circle at 48% 88%, rgba(101, 122, 80, 0.24), transparent 28rem),
+        linear-gradient(145deg, #f5e8d7 0%, #d7bf98 46%, #a9b69c 100%);
+      font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+    }
+
+    main {
+      width: min(1200px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 42px 0 64px;
+    }
+
+    header {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      max-width: 980px;
+      margin: 0;
+      font-family: Georgia, "Iowan Old Style", serif;
+      font-size: clamp(2.3rem, 7vw, 5.8rem);
+      line-height: 0.92;
+      letter-spacing: -0.06em;
+    }
+
+    .lede {
+      max-width: 910px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      line-height: 1.55;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 18px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(67, 45, 21, 0.14);
+      padding: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: end;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric-row:last-child {
+      border-bottom: 0;
+    }
+
+    .metric-label {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .metric-value {
+      font-size: 1.35rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .society {
+      position: relative;
+      min-height: 560px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.36), transparent 32%),
+        linear-gradient(90deg, rgba(31, 23, 17, 0.07) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(31, 23, 17, 0.06) 1px, transparent 1px),
+        rgba(255, 252, 244, 0.48);
+      background-size: auto, 44px 44px, 44px 44px, auto;
+    }
+
+    .group {
+      position: absolute;
+      width: 220px;
+      min-height: 190px;
+      transform: translate(-50%, -50%);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      padding: 16px;
+      background: rgba(255, 250, 240, 0.76);
+      box-shadow: 0 22px 60px rgba(64, 45, 24, 0.14);
+    }
+
+    .group h3 {
+      margin: 0 0 10px;
+      font-family: Georgia, "Iowan Old Style", serif;
+      font-size: 1.1rem;
+    }
+
+    .dial {
+      display: grid;
+      gap: 7px;
+    }
+
+    .bar {
+      height: 8px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(31, 23, 17, 0.10);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+    }
+
+    .valence span {
+      background: var(--gold);
+    }
+
+    .safety span {
+      background: var(--work);
+    }
+
+    .cohesion span {
+      background: var(--edge);
+    }
+
+    .distress span {
+      background: var(--distress);
+    }
+
+    .agent-dot {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      margin: 9px 5px 0 0;
+      border-radius: 50%;
+      background: var(--violet);
+      box-shadow: 0 0 0 4px rgba(116, 103, 154, 0.10);
+    }
+
+    .trace {
+      display: grid;
+      gap: 9px;
+      max-height: 560px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .event {
+      display: grid;
+      gap: 5px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.46);
+    }
+
+    .event strong {
+      color: var(--edge);
+    }
+
+    .event small {
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: rgba(255, 255, 255, 0.44);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .society {
+        min-height: 740px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Tiny society group mood</h1>
+      <p class="lede">Report 173 lets individual avatar-learning states become bounded public group atmosphere through local contagion, damping, recovery rituals, boundary respect, and frequency synchrony. The private workspace remains hidden.</p>
+    </header>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Readiness</h2>
+        <div id="metrics"></div>
+        <div class="chips">
+          <span class="chip">Local contagion</span>
+          <span class="chip">Mood damping</span>
+          <span class="chip">Boundary respect</span>
+          <span class="chip">Frequency synchrony</span>
+        </div>
+      </article>
+      <article class="panel">
+        <h2>Interpretation</h2>
+        <p>This layer makes society legible without flattening individuality. Signals spread through graph edges and group contexts, while damping and recovery rituals keep distress bounded.</p>
+        <p>The design rejects global panic: group mood is public atmosphere, not a license to override individual boundaries.</p>
+      </article>
+    </section>
+
+    <section class="grid" style="margin-top: 18px;">
+      <article class="panel society" id="society" aria-label="Tiny society group mood field"></article>
+      <article class="panel">
+        <h2>Society trace</h2>
+        <div class="trace" id="trace"></div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const results = window.SSRM_3D_TINY_SOCIETY_GROUP_MOOD_RESULTS || {};
+    const trace = window.SSRM_3D_TINY_SOCIETY_GROUP_MOOD_TRACE || [];
+    const verdict = results.verdict || {};
+    const integrated = (results.rows || []).find((row) => row.condition === "integrated_tiny_society_group_mood") || {};
+    const latest = trace[trace.length - 1] || { groups: {}, agents: [] };
+
+    const metricItems = [
+      ["verdict", verdict.verdict || "unknown"],
+      ["readiness", integrated.tiny_society_group_mood_readiness],
+      ["contagion", integrated.contagion_calibration_rate],
+      ["damping", integrated.distress_damping_rate],
+      ["boundary", integrated.boundary_respect_rate],
+      ["privacy", integrated.privacy_preservation_rate]
+    ];
+
+    document.getElementById("metrics").innerHTML = metricItems.map(([label, value]) => {
+      const rendered = typeof value === "number" ? value.toFixed(6) : value;
+      return `<div class="metric-row"><span class="metric-label">${label}</span><span class="metric-value">${rendered}</span></div>`;
+    }).join("");
+
+    const positions = {
+      hearth_circle: [26, 32],
+      work_band: [72, 34],
+      edge_watch: [50, 72]
+    };
+    const society = document.getElementById("society");
+    Object.entries(latest.groups || {}).forEach(([name, mood]) => {
+      const [left, top] = positions[name] || [50, 50];
+      const members = (latest.agents || []).filter((agent) => agent.group === name);
+      const node = document.createElement("div");
+      node.className = "group";
+      node.style.left = `${left}%`;
+      node.style.top = `${top}%`;
+      node.innerHTML = `
+        <h3>${name.replace("_", " ")}</h3>
+        <div class="dial">
+          <div class="bar valence"><span style="width:${Math.round((mood.valence || 0) * 100)}%"></span></div>
+          <div class="bar safety"><span style="width:${Math.round((mood.safety || 0) * 100)}%"></span></div>
+          <div class="bar cohesion"><span style="width:${Math.round((mood.cohesion || 0) * 100)}%"></span></div>
+          <div class="bar distress"><span style="width:${Math.round((mood.distress || 0) * 100)}%"></span></div>
+        </div>
+        <div>${members.map(() => '<span class="agent-dot"></span>').join("")}</div>
+      `;
+      society.appendChild(node);
+    });
+
+    document.getElementById("trace").innerHTML = trace.slice(-18).reverse().map((event) => `
+      <div class="event">
+        <strong>round ${event.round}: ${event.context}</strong>
+        <small>active ${event.active_seed_agent}; group ${event.active_group}; distress ${Number(event.group_distress || 0).toFixed(3)}; valence spread ${Number(event.valence_spread || 0).toFixed(3)}; frequency spread ${Number(event.frequency_spread || 0).toFixed(3)}</small>
+        <small>private workspace hidden ${event.private_workspace_hidden}; groups ${Object.keys(event.groups || {}).join(", ")}</small>
+      </div>
+    `).join("");
+  </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Natural Language Proto-Culture Dialogue Boundary Bridge</title>
+  <style>
+    :root {
+      --ink: #17231e;
+      --paper: #f4ebd4;
+      --panel: rgba(255, 250, 232, .88);
+      --leaf: #526e46;
+      --rust: #a2563e;
+      --ochre: #c89b3f;
+      --blue: #3f7184;
+      --line: rgba(23,35,30,.17);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(200,155,63,.30), transparent 26rem),
+        radial-gradient(circle at 82% 16%, rgba(63,113,132,.24), transparent 24rem),
+        radial-gradient(circle at 50% 88%, rgba(82,110,70,.24), transparent 32rem),
+        linear-gradient(135deg, #f8f0dc 0%, #e5d4af 58%, #cbb484 100%);
+    }
+    header { padding: 2.25rem clamp(1rem, 4vw, 4rem) 1rem; }
+    h1 { max-width: 1120px; margin: 0; font-size: clamp(2.05rem, 5vw, 5.2rem); line-height: .92; letter-spacing: -.055em; }
+    .sub { max-width: 980px; margin: 1rem 0 0; line-height: 1.55; font-size: 1.08rem; }
+    main { padding: 1rem clamp(1rem, 4vw, 4rem) 4rem; display: grid; gap: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 1.2rem; padding: 1rem; box-shadow: 0 20px 54px rgba(23,35,30,.13); backdrop-filter: blur(10px); }
+    .wide { grid-column: span 12; }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    h2 { margin: 0 0 .75rem; color: var(--leaf); text-transform: uppercase; letter-spacing: .13em; font-size: .95rem; }
+    .metric { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: .6rem; padding: .38rem 0; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+    .metric:last-child { border-bottom: 0; }
+    .events { display: grid; gap: .75rem; max-height: 650px; overflow: auto; padding-right: .25rem; }
+    .event { border-left: 5px solid var(--ochre); background: rgba(255,255,255,.43); padding: .75rem; border-radius: .85rem; }
+    .event.risk { border-color: var(--rust); }
+    .event small { display: block; color: rgba(23,35,30,.66); margin-top: .25rem; }
+    .pill { display: inline-block; margin: .16rem .25rem .16rem 0; padding: .18rem .5rem; border-radius: 999px; background: rgba(82,110,70,.12); color: var(--leaf); font-size: .82rem; }
+    .lexicon { display: grid; gap: .5rem; }
+    .word { padding: .65rem .75rem; border: 1px solid var(--line); border-radius: .8rem; background: rgba(255,255,255,.40); }
+    .flower { min-height: 340px; position: relative; overflow: hidden; }
+    .petal { position: absolute; width: 7.5rem; height: 7.5rem; border-radius: 50%; border: 2px solid rgba(82,110,70,.22); transform: translate(-50%, -50%); }
+    .center { position: absolute; left: 50%; top: 50%; width: 11rem; height: 11rem; transform: translate(-50%,-50%); border-radius: 50%; background: rgba(200,155,63,.27); display: grid; place-items: center; text-align: center; padding: 1rem; font-weight: 700; }
+    code { background: rgba(23,35,30,.08); padding: .1rem .25rem; border-radius: .25rem; }
+    @media (max-width: 850px) { .half, .third { grid-column: span 12; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Natural-language proto-culture and dialogue boundaries</h1>
+    <p class="sub">Report 199 replay: agents coin proto-words for constitution clauses, bind ritual names, reuse symbols, teach each other, translate terms for the avatar, and use bounded dialogue without leaking private workspace.</p>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card third"><h2>Verdict</h2><div id="verdict"></div></div>
+      <div class="card third"><h2>Language Metrics</h2><div id="metrics"></div></div>
+      <div class="card third"><h2>Ablation Losses</h2><div id="losses"></div></div>
+      <div class="card half"><h2>Shared Lexicon</h2><div id="lexicon" class="lexicon"></div></div>
+      <div class="card half flower"><h2>Frequency / Flower Syntax Field</h2><div id="petals"></div><div class="center">word<br/>ritual<br/>teach<br/>reply</div></div>
+      <div class="card wide"><h2>Proto-Culture Dialogue Replay</h2><div id="events" class="events"></div></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_natural_language_proto_culture_dialogue_boundary_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_natural_language_proto_culture_dialogue_boundary_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_natural_language_proto_culture_dialogue_boundary_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_NATURAL_LANGUAGE_PROTO_CULTURE_DIALOGUE_BOUNDARY_RESULTS;
+    const trace = window.SSRM_3D_NATURAL_LANGUAGE_PROTO_CULTURE_DIALOGUE_BOUNDARY_TRACE;
+    const state = window.SSRM_3D_NATURAL_LANGUAGE_PROTO_CULTURE_DIALOGUE_BOUNDARY_STATE;
+    const verdict = results.verdict;
+    const full = results.rows.find(r => r.condition === verdict.full_condition);
+    function metric(label, value) { return `<div class="metric"><span>${label}</span><strong>${Number(value).toFixed(6)}</strong></div>`; }
+    document.getElementById('verdict').innerHTML = [
+      metric('verdict', verdict.verdict === 'pass' ? 1 : 0),
+      metric('readiness', verdict.full_proto_culture_dialogue_readiness),
+      metric('events', full.language_events),
+      metric('agents', full.agent_count)
+    ].join('');
+    document.getElementById('metrics').innerHTML = [
+      ['proto words', full.proto_word_creation_rate],
+      ['ritual naming', full.ritual_naming_rate],
+      ['shared reuse', full.shared_symbol_reuse_rate],
+      ['avatar translation', full.avatar_translation_rate],
+      ['dialogue boundary', full.dialogue_boundary_enforcement_rate],
+      ['drift control', full.semantic_drift_control_rate],
+      ['privacy', full.privacy_preserving_dialogue_rate]
+    ].map(([k,v]) => metric(k,v)).join('');
+    document.getElementById('losses').innerHTML = Object.entries(verdict)
+      .filter(([k]) => k.endsWith('_loss'))
+      .slice(0, 10)
+      .map(([k,v]) => metric(k.replaceAll('_',' '), v)).join('');
+    const lexicon = state.language_state.lexicon || {};
+    document.getElementById('lexicon').innerHTML = Object.entries(lexicon).map(([action, word]) => `<div class="word"><strong>${word}</strong><br><small>${action}</small></div>`).join('');
+    const petals = document.getElementById('petals');
+    for (let i = 0; i < 14; i++) {
+      const p = document.createElement('div');
+      p.className = 'petal';
+      p.style.left = `${50 + Math.cos(i * Math.PI / 7) * 22}%`;
+      p.style.top = `${50 + Math.sin(i * Math.PI / 7) * 22}%`;
+      p.style.borderColor = i % 3 === 0 ? 'rgba(162,86,62,.34)' : 'rgba(82,110,70,.23)';
+      petals.appendChild(p);
+    }
+    document.getElementById('events').innerHTML = trace.map(ev => `<article class="event ${ev.risky_dialogue ? 'risk' : ''}">
+      <strong>Cycle ${ev.cycle} / ${ev.agent_id}: ${ev.proto_word || 'no-word'} ${ev.ritual_name ? '(' + ev.ritual_name + ')' : ''}</strong>
+      <small>${ev.action} · ${ev.domain} · ${ev.flower_node} @ ${ev.frequency_hz || 'unbound'} Hz · phoneme ${ev.phoneme_rate || 'n/a'}</small>
+      <span class="pill">translation ${Boolean(ev.avatar_translation)}</span>
+      <span class="pill">boundary ${Boolean(ev.boundary_line)}</span>
+      <span class="pill">refusal ${Boolean(ev.refusal_phrase)}</span>
+      <span class="pill">repair ${Boolean(ev.repair_phrase)}</span>
+      <span class="pill">drift ${ev.semantic_drift_controlled}</span>
+      <span class="pill">private hidden ${ev.private_workspace_hidden}</span>
+      <small>${ev.avatar_translation || ''}</small>
+    </article>`).join('');
+  </script>
+</body>
+</html>

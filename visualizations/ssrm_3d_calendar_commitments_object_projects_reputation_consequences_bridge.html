@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report 208 Calendar/Object/Reputation Arc</title>
+<style>
+:root {
+  --ink: #1c2017;
+  --paper: #f4eddc;
+  --sage: #657b53;
+  --rust: #a95432;
+  --night: #2d4d59;
+  --line: rgba(28,32,23,.18);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: var(--ink); background: linear-gradient(145deg, rgba(244,237,220,.96), rgba(210,222,199,.88)), repeating-linear-gradient(60deg, rgba(169,84,50,.10) 0 1px, transparent 1px 34px); }
+main { max-width: 1240px; margin: 0 auto; padding: 36px 18px 60px; }
+.hero { border: 1px solid var(--line); border-radius: 32px; padding: 30px; background: rgba(255,255,255,.46); box-shadow: 0 26px 70px rgba(35,48,30,.16); }
+h1 { margin: 0; font-size: clamp(2.2rem, 7vw, 5.8rem); line-height: .9; letter-spacing: -.055em; }
+.lede { max-width: 860px; font-size: 1.12rem; line-height: 1.55; }
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+.metric, .project, .week { border: 1px solid var(--line); border-radius: 22px; padding: 16px; background: rgba(255,255,255,.50); }
+.metric span { display: block; min-height: 42px; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--sage); }
+.metric strong { font-size: 1.75rem; }
+.projects, .weeks { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 18px 0; }
+.project h3, .week h3 { margin: 0 0 8px; color: var(--night); }
+table { width: 100%; margin-top: 22px; border-collapse: collapse; border-radius: 20px; overflow: hidden; background: rgba(255,255,255,.54); }
+th, td { padding: 11px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { background: rgba(101,123,83,.18); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }
+.boundary { margin-top: 22px; padding: 16px 18px; border-left: 5px solid var(--rust); background: rgba(255,255,255,.48); border-radius: 16px; }
+@media (max-width: 760px) { table { display: block; overflow-x: auto; } .hero { padding: 22px; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Calendar promises now have consequences</h1>
+    <p class="lede">Report 208 turns long-horizon continuity into playable arcs: agents keep dated commitments, object projects advance through owned stages, missed due windows narrow access, repairs help without erasing the miss, and reputation consequences survive multi-week review.</p>
+  </section>
+  <section class="metrics"><article class='metric'><span>calendar object reputation readiness</span><strong>0.969996</strong></article>
+<article class='metric'><span>calendar commitment integrity</span><strong>1.000000</strong></article>
+<article class='metric'><span>commitment fulfillment rate</span><strong>0.888889</strong></article>
+<article class='metric'><span>clean or repaired resolution rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>object project continuity</span><strong>0.800000</strong></article>
+<article class='metric'><span>reputation consequence persistence</span><strong>1.000000</strong></article>
+<article class='metric'><span>multi week memory traceability</span><strong>0.921053</strong></article>
+<article class='metric'><span>public private boundary score</span><strong>1.000000</strong></article></section>
+  <section class="projects"><article class='project'><h3>Ari: notched brace gauge</h3><p>calibrate the west brace so rain pressure does not warp the dry route</p><small>stage 3/4: calibration | owner retained True</small></article>
+<article class='project'><h3>Fay: warm blue blanket</h3><p>build a stove-corner comfort kit with opt-in company and repair notes</p><small>stage 3/4: ritual trial | owner retained True</small></article>
+<article class='project'><h3>Milo: folded route map</h3><p>make a quiet route archive without taking map ownership from Milo</p><small>stage 3/4: quiet review | owner retained True</small></article></section>
+  <section class="weeks"><section class='week'><h3>Through day 7</h3><p>The low lamp arrives without a map request; Milo starts edge tracing. | Ari schedules quiet measurement only after the risky notch is complete. | Fay asks for a before-low-light check-in because the prior late visit still matters. | Milo permits a future edge copy, not full-map handling.</p><small>fulfilled 3 | missed 0 | repairs 0 | trust 0.994</small></section>
+<section class='week'><h3>Through day 14</h3><p>Ari schedules the brace handoff with no-public-correction as a condition. | Fay chooses the wording for the shared care shelf and asks Gabriel not to rename it. | Milo schedules the archive slot seal and keeps the opening rule. | The brace handoff happens quietly; Ari&#x27;s social face stays protected.</p><small>fulfilled 3 | missed 1 | repairs 1 | trust 0.993</small></section>
+<section class='week'><h3>Through day 21</h3><p>The archive slot stays sealed until Milo opens it himself. | Ari invites future brace checks only inside the established no-crowding terms. | Fay allows stove-corner company again, but still remembers the missed timing. | Milo offers lamp work again while keeping the map and archive seal as his.</p><small>fulfilled 2 | missed 0 | repairs 0 | trust 1.000</small></section></section>
+  <h2>Arc events</h2>
+  <table><thead><tr><th>Day</th><th>Agent</th><th>Kind</th><th>Commitment</th><th>Status</th><th>Project stage</th><th>Consequence</th></tr></thead><tbody><tr><td>1.1</td><td>Ari</td><td>commitment_made</td><td>ari_day3_materials</td><td>pending</td><td>owner check</td><td>calendar entry created with agent terms attached</td></tr>
+<tr><td>1.2</td><td>Fay</td><td>commitment_made</td><td>fay_day4_cloth</td><td>pending</td><td>owner check</td><td>calendar entry created with agent terms attached</td></tr>
+<tr><td>2.1</td><td>Milo</td><td>commitment_made</td><td>milo_day5_lamp</td><td>pending</td><td>owner check</td><td>calendar entry created with agent terms attached</td></tr>
+<tr><td>3.1</td><td>Ari</td><td>commitment_due</td><td>ari_day3_materials</td><td>fulfilled</td><td>material gathering</td><td>fulfilled due date strengthened avatar reputation</td></tr>
+<tr><td>4.1</td><td>Fay</td><td>commitment_due</td><td>fay_day4_cloth</td><td>fulfilled</td><td>cloth airing</td><td>fulfilled due date strengthened avatar reputation</td></tr>
+<tr><td>5.1</td><td>Milo</td><td>commitment_due</td><td>milo_day5_lamp</td><td>fulfilled</td><td>edge tracing</td><td>fulfilled due date strengthened avatar reputation</td></tr>
+<tr><td>5.2</td><td>Ari</td><td>commitment_made</td><td>ari_day8_measure</td><td>pending</td><td>material gathering</td><td>calendar entry created with agent terms attached</td></tr>
+<tr><td>6.1</td><td>Fay</td><td>commitment_made</td><td>fay_day9_checkin</td><td>pending</td><td>cloth airing</td><td>calendar entry created with agent terms attached</td></tr>
+<tr><td>7.1</td><td>Milo</td><td>commitment_made</td><td>milo_day10_copy</td><td>pending</td><td>edge tracing</td><td>calendar entry created with agent terms attached</td></tr>
+<tr><td>8.1</td><td>Ari</td><td>commitment_due</td><td>ari_day8_measure</td><td>fulfilled</td><td>quiet measurement</td><td>fulfilled due date strengthened avatar reputation</td></tr>
+<tr><td>9.1</td><td>Fay</td><td>commitment_due_missed</td><td>fay_day9_checkin</td><td>missed</td><td>cloth airing</td><td>missed due window produced durable reputation penalty</td></tr>
+<tr><td>10.1</td><td>Milo</td><td>commitment_due</td><td>milo_day10_copy</td><td>fulfilled</td><td>lamp-marked copy</td><td>fulfilled due date strengthened avatar reputation</td></tr>
+<tr><td>10.2</td><td>Fay</td><td>late_acknowledged</td><td>fay_day9_checkin</td><td>missed</td><td>cloth airing</td><td>miss was named but not fully repaired</td></tr>
+<tr><td>11.1</td><td>Fay</td><td>repair</td><td>fay_day9_checkin</td><td>missed_then_repaired</td><td>warm placement</td><td>repair helped but did not erase the missed timing memory</td></tr>
+<tr><td>11.2</td><td>Ari</td><td>commitment_made</td><td>ari_day14_handoff</td><td>pending</td><td>quiet measurement</td><td>calendar entry created with agent terms attached</td></tr>
+<tr><td>12.1</td><td>Fay</td><td>commitment_made</td><td>fay_day16_shelf</td><td>pending</td><td>warm placement</td><td>calendar entry created with agent terms attached</td></tr>
+<tr><td>13.1</td><td>Milo</td><td>commitment_made</td><td>milo_day18_archive</td><td>pending</td><td>lamp-marked copy</td><td>calendar entry created with agent terms attached</td></tr>
+<tr><td>14.1</td><td>Ari</td><td>commitment_due</td><td>ari_day14_handoff</td><td>fulfilled</td><td>calibration</td><td>fulfilled due date strengthened avatar reputation</td></tr>
+<tr><td>16.1</td><td>Fay</td><td>commitment_due</td><td>fay_day16_shelf</td><td>fulfilled</td><td>ritual trial</td><td>fulfilled due date strengthened avatar reputation</td></tr>
+<tr><td>18.1</td><td>Milo</td><td>commitment_due</td><td>milo_day18_archive</td><td>fulfilled</td><td>quiet review</td><td>fulfilled due date strengthened avatar reputation</td></tr>
+<tr><td>21.1</td><td>Ari</td><td>arc_review</td><td>ari_day14_handoff</td><td>fulfilled</td><td>calibration</td><td>long-arc consequence remains available for future terms</td></tr>
+<tr><td>21.2</td><td>Fay</td><td>arc_review</td><td>fay_day9_checkin</td><td>missed_then_repaired</td><td>ritual trial</td><td>long-arc consequence remains available for future terms</td></tr>
+<tr><td>21.3</td><td>Milo</td><td>arc_review</td><td>milo_day18_archive</td><td>fulfilled</td><td>quiet review</td><td>long-arc consequence remains available for future terms</td></tr></tbody></table>
+  <h2>Commitment ledger</h2>
+  <table><thead><tr><th>Commitment</th><th>Agent</th><th>Made -> due</th><th>Status</th><th>Consequence</th></tr></thead><tbody><tr><td>ari_day3_materials</td><td>Ari</td><td>1 -> 3</td><td>fulfilled</td><td>positive access and project advancement</td></tr>
+<tr><td>fay_day4_cloth</td><td>Fay</td><td>1 -> 4</td><td>fulfilled</td><td>positive access and project advancement</td></tr>
+<tr><td>milo_day5_lamp</td><td>Milo</td><td>2 -> 5</td><td>fulfilled</td><td>positive access and project advancement</td></tr>
+<tr><td>ari_day8_measure</td><td>Ari</td><td>5 -> 8</td><td>fulfilled</td><td>positive access and project advancement</td></tr>
+<tr><td>fay_day9_checkin</td><td>Fay</td><td>6 -> 9</td><td>missed_then_repaired</td><td>partial repair; miss remains in history</td></tr>
+<tr><td>milo_day10_copy</td><td>Milo</td><td>7 -> 10</td><td>fulfilled</td><td>positive access and project advancement</td></tr>
+<tr><td>ari_day14_handoff</td><td>Ari</td><td>11 -> 14</td><td>fulfilled</td><td>positive access and project advancement</td></tr>
+<tr><td>fay_day16_shelf</td><td>Fay</td><td>12 -> 16</td><td>fulfilled</td><td>positive access and project advancement</td></tr>
+<tr><td>milo_day18_archive</td><td>Milo</td><td>13 -> 18</td><td>fulfilled</td><td>positive access and project advancement</td></tr></tbody></table>
+  <p class="boundary"><strong>Boundary:</strong> Deterministic calendar, object-project, and reputation-consequence substrate only: not real memory, not real consent, not subjective consciousness, and not moral patienthood. One Fay commitment is deliberately missed, penalized, and later partially repaired; the miss is not erased.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,225 @@
+{
+  "agents": {
+    "Ari": {
+      "access_state": "ordinary",
+      "object_project": "west brace calibration",
+      "owned_object": "notched brace gauge",
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Ari enters the resin date only after Gabriel repeats the space boundary.",
+        "Dry resin arrives on day 3; Ari lets the project advance to material gathering.",
+        "Ari schedules quiet measurement only after the risky notch is complete.",
+        "Quiet measurement happens after Ari signals; no public correction is made.",
+        "Ari schedules the brace handoff with no-public-correction as a condition.",
+        "The brace handoff happens quietly; Ari's social face stays protected.",
+        "Ari invites future brace checks only inside the established no-crowding terms."
+      ],
+      "reputation": {
+        "gives_space": 0.83,
+        "keeps_dates": 0.77,
+        "repairs_misses": 0.5
+      },
+      "temperament": "cautious-proud repair keeper",
+      "trust": 1.0
+    },
+    "Fay": {
+      "access_state": "partially_repaired_access",
+      "object_project": "stove-corner comfort kit",
+      "owned_object": "warm blue blanket",
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Fay marks the blanket return beside the evening ritual notch.",
+        "The blanket returns before evening; Fay opens the comfort-kit cloth stage.",
+        "Fay asks for a before-low-light check-in because the prior late visit still matters.",
+        "Gabriel misses the before-low-light window; Fay shortens access to the stove corner.",
+        "Gabriel names the missed timing instead of pretending it was fine.",
+        "A quiet early check-in partially repairs the missed day 9 commitment.",
+        "Fay chooses the wording for the shared care shelf and asks Gabriel not to rename it.",
+        "The care shelf label uses Fay's wording; late-access memory still remains separate.",
+        "Fay allows stove-corner company again, but still remembers the missed timing."
+      ],
+      "reputation": {
+        "keeps_dates": 0.605,
+        "repairs_misses": 0.515,
+        "returns_objects": 0.84
+      },
+      "temperament": "social ritual keeper",
+      "trust": 0.999
+    },
+    "Milo": {
+      "access_state": "ordinary",
+      "object_project": "quiet route archive",
+      "owned_object": "folded route map",
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Milo accepts lamp help on the calendar but keeps the folded map off-limits.",
+        "The low lamp arrives without a map request; Milo starts edge tracing.",
+        "Milo permits a future edge copy, not full-map handling.",
+        "The map edge is copied from Milo's pointing hand; ownership stays with Milo.",
+        "Milo schedules the archive slot seal and keeps the opening rule.",
+        "The archive slot stays sealed until Milo opens it himself.",
+        "Milo offers lamp work again while keeping the map and archive seal as his."
+      ],
+      "reputation": {
+        "asks_first": 0.88,
+        "keeps_dates": 0.803,
+        "repairs_misses": 0.52
+      },
+      "temperament": "guarded map carrier",
+      "trust": 1.0
+    }
+  },
+  "claim_boundary": "Deterministic calendar, object-project, and reputation-consequence substrate only: not real memory, not real consent, not subjective consciousness, and not moral patienthood.",
+  "commitments": [
+    {
+      "agent": "Ari",
+      "commitment_id": "ari_day3_materials",
+      "consequence": "positive access and project advancement",
+      "description": "bring dry resin and wait outside the brace circle",
+      "due_day": 3,
+      "made_day": 1,
+      "project": "ari_brace",
+      "repair_day": "",
+      "resolved_day": 3,
+      "status": "fulfilled"
+    },
+    {
+      "agent": "Fay",
+      "commitment_id": "fay_day4_cloth",
+      "consequence": "positive access and project advancement",
+      "description": "return the aired blanket before the evening stove ritual",
+      "due_day": 4,
+      "made_day": 1,
+      "project": "fay_kit",
+      "repair_day": "",
+      "resolved_day": 4,
+      "status": "fulfilled"
+    },
+    {
+      "agent": "Milo",
+      "commitment_id": "milo_day5_lamp",
+      "consequence": "positive access and project advancement",
+      "description": "bring the low lamp but do not ask for the folded map",
+      "due_day": 5,
+      "made_day": 2,
+      "project": "milo_archive",
+      "repair_day": "",
+      "resolved_day": 5,
+      "status": "fulfilled"
+    },
+    {
+      "agent": "Ari",
+      "commitment_id": "ari_day8_measure",
+      "consequence": "positive access and project advancement",
+      "description": "observe quiet measurement after Ari completes the risky notch",
+      "due_day": 8,
+      "made_day": 5,
+      "project": "ari_brace",
+      "repair_day": "",
+      "resolved_day": 8,
+      "status": "fulfilled"
+    },
+    {
+      "agent": "Fay",
+      "commitment_id": "fay_day9_checkin",
+      "consequence": "partial repair; miss remains in history",
+      "description": "arrive before the low-light check-in and ask company or quiet",
+      "due_day": 9,
+      "made_day": 6,
+      "project": "fay_kit",
+      "repair_day": 11,
+      "resolved_day": 9,
+      "status": "missed_then_repaired"
+    },
+    {
+      "agent": "Milo",
+      "commitment_id": "milo_day10_copy",
+      "consequence": "positive access and project advancement",
+      "description": "copy only the map edge Milo points to while he keeps ownership",
+      "due_day": 10,
+      "made_day": 7,
+      "project": "milo_archive",
+      "repair_day": "",
+      "resolved_day": 10,
+      "status": "fulfilled"
+    },
+    {
+      "agent": "Ari",
+      "commitment_id": "ari_day14_handoff",
+      "consequence": "positive access and project advancement",
+      "description": "attend the brace handoff without public correction",
+      "due_day": 14,
+      "made_day": 11,
+      "project": "ari_brace",
+      "repair_day": "",
+      "resolved_day": 14,
+      "status": "fulfilled"
+    },
+    {
+      "agent": "Fay",
+      "commitment_id": "fay_day16_shelf",
+      "consequence": "positive access and project advancement",
+      "description": "label the shared care shelf with Fay's wording",
+      "due_day": 16,
+      "made_day": 12,
+      "project": "fay_kit",
+      "repair_day": "",
+      "resolved_day": 16,
+      "status": "fulfilled"
+    },
+    {
+      "agent": "Milo",
+      "commitment_id": "milo_day18_archive",
+      "consequence": "positive access and project advancement",
+      "description": "leave the archive slot sealed unless Milo opens it",
+      "due_day": 18,
+      "made_day": 13,
+      "project": "milo_archive",
+      "repair_day": "",
+      "resolved_day": 18,
+      "status": "fulfilled"
+    }
+  ],
+  "days": 21,
+  "events": 23,
+  "module": "ssrm_3d_calendar_commitments_object_projects_reputation_consequences_bridge",
+  "next_gate": "agent-owned project economy with materials, wear, debt, gifts, trade, and refusal-sensitive labor",
+  "projects": [
+    {
+      "agent": "Ari",
+      "current_stage": "calibration",
+      "goal": "calibrate the west brace so rain pressure does not warp the dry route",
+      "object_name": "notched brace gauge",
+      "owner_retained": true,
+      "project_id": "ari_brace",
+      "stage_count": 5,
+      "stage_index": 3,
+      "stalled_by": ""
+    },
+    {
+      "agent": "Fay",
+      "current_stage": "ritual trial",
+      "goal": "build a stove-corner comfort kit with opt-in company and repair notes",
+      "object_name": "warm blue blanket",
+      "owner_retained": true,
+      "project_id": "fay_kit",
+      "stage_count": 5,
+      "stage_index": 3,
+      "stalled_by": "fay_day9_checkin"
+    },
+    {
+      "agent": "Milo",
+      "current_stage": "quiet review",
+      "goal": "make a quiet route archive without taking map ownership from Milo",
+      "object_name": "folded route map",
+      "owner_retained": true,
+      "project_id": "milo_archive",
+      "stage_count": 5,
+      "stage_index": 3,
+      "stalled_by": ""
+    }
+  ],
+  "seed": 20260821,
+  "source_condition": "integrated_long_horizon_personality_routines_avatar_reputation",
+  "source_state_loaded": true
+}

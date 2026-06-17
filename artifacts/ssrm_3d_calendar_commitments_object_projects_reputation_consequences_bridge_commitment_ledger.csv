@@ -1,0 +1,10 @@
+commitment_id,agent,made_day,due_day,status,resolved_day,repair_day,description,project,consequence
+ari_day3_materials,Ari,1,3,fulfilled,3,,bring dry resin and wait outside the brace circle,ari_brace,positive access and project advancement
+fay_day4_cloth,Fay,1,4,fulfilled,4,,return the aired blanket before the evening stove ritual,fay_kit,positive access and project advancement
+milo_day5_lamp,Milo,2,5,fulfilled,5,,bring the low lamp but do not ask for the folded map,milo_archive,positive access and project advancement
+ari_day8_measure,Ari,5,8,fulfilled,8,,observe quiet measurement after Ari completes the risky notch,ari_brace,positive access and project advancement
+fay_day9_checkin,Fay,6,9,missed_then_repaired,9,11,arrive before the low-light check-in and ask company or quiet,fay_kit,partial repair; miss remains in history
+milo_day10_copy,Milo,7,10,fulfilled,10,,copy only the map edge Milo points to while he keeps ownership,milo_archive,positive access and project advancement
+ari_day14_handoff,Ari,11,14,fulfilled,14,,attend the brace handoff without public correction,ari_brace,positive access and project advancement
+fay_day16_shelf,Fay,12,16,fulfilled,16,,label the shared care shelf with Fay's wording,fay_kit,positive access and project advancement
+milo_day18_archive,Milo,13,18,fulfilled,18,,leave the archive slot sealed unless Milo opens it,milo_archive,positive access and project advancement

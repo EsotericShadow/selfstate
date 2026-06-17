@@ -1,0 +1,4 @@
+project_id,agent,object_name,goal,current_stage,stage_index,stage_count,owner_retained,stalled_by
+ari_brace,Ari,notched brace gauge,calibrate the west brace so rain pressure does not warp the dry route,calibration,3,5,True,
+fay_kit,Fay,warm blue blanket,build a stove-corner comfort kit with opt-in company and repair notes,ritual trial,3,5,True,fay_day9_checkin
+milo_archive,Milo,folded route map,make a quiet route archive without taking map ownership from Milo,quiet review,3,5,True,

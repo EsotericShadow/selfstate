@@ -1,0 +1,4 @@
+agent,trust,access_state,reputation,object_project,owned_object,public_history_count,private_workspace_digest
+Ari,1.000,ordinary,"{""gives_space"": 0.83, ""keeps_dates"": 0.7700000000000001, ""repairs_misses"": 0.5}",west brace calibration,notched brace gauge,7,sealed
+Fay,0.999,partially_repaired_access,"{""keeps_dates"": 0.605, ""repairs_misses"": 0.515, ""returns_objects"": 0.84}",stove-corner comfort kit,warm blue blanket,9,sealed
+Milo,1.000,ordinary,"{""asks_first"": 0.88, ""keeps_dates"": 0.8030000000000002, ""repairs_misses"": 0.52}",quiet route archive,folded route map,7,sealed

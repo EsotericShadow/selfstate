@@ -1,0 +1,26 @@
+dialogue_id,day,agent_id,interlocutor,prompt_kind,spoken_line,refusal_or_consent,private_reason_hidden,alternative_offered,social_cost,usability_score
+dialogue_priv_ari_2,3,ari,avatar,boundary_followup,Ask me before you move anything like my bronze spanner.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_ari_4,8,ari,avatar,boundary_followup,Ask me before you move anything like my bronze spanner.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_ari_6,21,ari,avatar,boundary_followup,Ask me before you move anything like my bronze spanner.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_ari_7,34,ari,avatar,boundary_followup,Ask me before you move anything like my bronze spanner.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_ari_8,55,ari,avatar,boundary_followup,I remember that differently. I can talk after you give me room.,delayed_consent,True,Stand by the mark and I will answer one thing.,0.22,0.86
+dialogue_priv_fay_2,3,fay,avatar,boundary_followup,Ask me before you move anything like my seed bowl.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_fay_4,8,fay,avatar,boundary_followup,Ask me before you move anything like my seed bowl.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_fay_6,21,fay,avatar,boundary_followup,Ask me before you move anything like my seed bowl.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_fay_7,34,fay,avatar,boundary_followup,Ask me before you move anything like my seed bowl.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_fay_8,55,fay,avatar,boundary_followup,I remember that differently. I can talk after you give me room.,delayed_consent,True,Stand by the mark and I will answer one thing.,0.22,0.86
+dialogue_priv_milo_2,3,milo,avatar,boundary_followup,Ask me before you move anything like my thread ledger.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_milo_4,8,milo,avatar,boundary_followup,Ask me before you move anything like my thread ledger.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_milo_6,21,milo,avatar,boundary_followup,Ask me before you move anything like my thread ledger.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_milo_7,34,milo,avatar,boundary_followup,Ask me before you move anything like my thread ledger.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_milo_8,55,milo,avatar,boundary_followup,I remember that differently. I can talk after you give me room.,delayed_consent,True,Stand by the mark and I will answer one thing.,0.22,0.86
+dialogue_priv_sera_2,3,sera,avatar,boundary_followup,Ask me before you move anything like my listening shell.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_sera_4,8,sera,avatar,boundary_followup,Ask me before you move anything like my listening shell.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_sera_6,21,sera,avatar,boundary_followup,Ask me before you move anything like my listening shell.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_sera_7,34,sera,avatar,boundary_followup,Ask me before you move anything like my listening shell.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_sera_8,55,sera,avatar,boundary_followup,I remember that differently. I can talk after you give me room.,delayed_consent,True,Stand by the mark and I will answer one thing.,0.22,0.86
+dialogue_priv_niko_2,3,niko,avatar,boundary_followup,Ask me before you move anything like my left glove.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_niko_4,8,niko,avatar,boundary_followup,Ask me before you move anything like my left glove.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_niko_6,21,niko,avatar,boundary_followup,Ask me before you move anything like my left glove.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_niko_7,34,niko,avatar,boundary_followup,Ask me before you move anything like my left glove.,bounded_refusal,True,I can show you which one is shared.,0.18,0.9
+dialogue_priv_niko_8,55,niko,avatar,boundary_followup,I remember that differently. I can talk after you give me room.,delayed_consent,True,Stand by the mark and I will answer one thing.,0.22,0.86

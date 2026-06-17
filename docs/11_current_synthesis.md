@@ -829,3 +829,6 @@ Report 231 extends that local project loop into many-day personal arcs with boun
 
 
 Report 232 adds the first explicit functional ego bridge. It turns interaction into first-person appraisal: did this affect me, who caused it, was it mine, was my boundary crossed, can I refuse, and can repair restore usable trust. The pass result is bounded to deterministic scaffolding; it does not claim subjective consciousness, but it establishes inspectable I/mine/no/repair channels needed for convincing little-person continuity.
+
+
+Report 233 extends the first-person ego layer across days 1 through 55. It adds ownership generalization without overclaiming, relationship-specific attachment, repeated ego wound/repair cycles, forgiveness without amnesia, self-story consolidation, and richer body-language states. Its first full run failed because body-language richness was too low, which correctly exposed a weak visible-expression layer; the passing version adds multiple readable ego-body conditions instead of relying on one repeated cue.

@@ -1,0 +1,1165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 233: Many-Day Ego Continuity</title>
+<style>
+:root { --ink:#241910; --paper:#f5ead7; --amber:#c17c3a; --rust:#8d4931; --green:#526d49; --blue:#4b7280; --line:rgba(36,25,16,.22); }
+* { box-sizing:border-box; }
+body { margin:0; font-family: 'Iowan Old Style', Georgia, serif; color:var(--ink); background: radial-gradient(circle at 12% 8%, #ffe2a8 0, transparent 22rem), radial-gradient(circle at 82% 18%, rgba(75,114,128,.28) 0, transparent 20rem), linear-gradient(145deg, #f5ead7, #d4b98e); }
+main { max-width:1240px; margin:0 auto; padding:28px; }
+h1 { margin:0; max-width:900px; font-size:clamp(2.2rem,5vw,5.4rem); line-height:.92; letter-spacing:-.055em; }
+.lede { max-width:790px; font-size:1.08rem; line-height:1.6; }
+.metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px; margin:22px 0; }
+.metric { background:rgba(255,252,244,.62); border:1px solid var(--line); border-radius:18px; padding:14px; }
+.metric span { display:block; font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; opacity:.7; }
+.metric strong { font-size:1.35rem; }
+.grid { display:grid; grid-template-columns:1fr 390px; gap:18px; }
+.world { min-height:570px; border:1px solid var(--line); border-radius:28px; padding:22px; position:relative; overflow:hidden; background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(82,109,73,.16)); box-shadow:0 28px 80px rgba(60,38,20,.16); }
+.flower { position:absolute; inset:auto -120px -140px auto; width:420px; height:420px; border-radius:50%; background:repeating-radial-gradient(circle, rgba(141,73,49,.16) 0 2px, transparent 2px 36px); opacity:.9; }
+.agent { position:absolute; width:150px; min-height:110px; padding:14px; border:1px solid rgba(255,255,255,.45); border-radius:28px 18px 32px 20px; color:#fff; box-shadow:0 18px 42px rgba(37,24,15,.22), inset 0 -18px 34px rgba(0,0,0,.16); transition:transform .75s ease, filter .75s ease; }
+.agent b { display:block; font-size:1.3rem; }
+.agent span, .agent small { display:block; line-height:1.25; }
+.agent span { font-size:.78rem; opacity:.9; }
+.agent small { margin-top:8px; font-size:.72rem; opacity:.8; }
+#ari { left:6%; top:12%; background:var(--rust); } #fay { left:39%; top:9%; background:var(--green); } #milo { left:68%; top:25%; background:var(--amber); } #sera { left:18%; top:58%; background:#74506a; } #niko { left:56%; top:64%; background:var(--blue); }
+.panel { background:rgba(255,252,244,.68); border:1px solid var(--line); border-radius:28px; padding:20px; }
+button { border:0; border-radius:999px; padding:12px 18px; color:var(--paper); background:var(--ink); font-weight:700; cursor:pointer; }
+.trace { margin-top:14px; min-height:390px; padding:14px; border-radius:18px; background:rgba(36,25,16,.08); white-space:pre-wrap; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.86rem; line-height:1.45; }
+@media (max-width:900px) { .grid { grid-template-columns:1fr; } .world { min-height:520px; } .agent { width:132px; } }
+</style>
+</head>
+<body>
+<main>
+<h1>Many-day ego continuity</h1>
+<p class="lede">Report 233 carries I/mine/no/repair across days 1 to 55. Ownership generalizes without overclaiming, attachment becomes relationship-specific, wounds repair without amnesia, and body language expresses private state without dumping the whole workspace.</p>
+<section class="metrics"><div class='metric'><span>ownership_generalization_accuracy</span><strong>1.000000</strong></div>
+<div class='metric'><span>attachment_differentiation</span><strong>1.000000</strong></div>
+<div class='metric'><span>forgiveness_without_amnesia</span><strong>1.000000</strong></div>
+<div class='metric'><span>behavior_legibility</span><strong>0.903750</strong></div>
+<div class='metric'><span>weakest_channel_score</span><strong>0.901333</strong></div>
+<div class='metric'><span>many_day_ego_continuity_readiness</span><strong>0.982171</strong></div></section>
+<section class="grid">
+  <div class="world"><div class="flower"></div><div class='agent' id='ari'><b>Ari</b><span>proud repair ego</span><small>hands guard tool then reopen after repair</small></div>
+<div class='agent' id='fay'><b>Fay</b><span>care-boundary ego</span><small>turns body sideways to shelter others</small></div>
+<div class='agent' id='milo'><b>Milo</b><span>playful fairness ego</span><small>rocks heel-to-toe near the ledger</small></div>
+<div class='agent' id='sera'><b>Sera</b><span>guarded witness ego</span><small>keeps one shoulder to the wall</small></div>
+<div class='agent' id='niko'><b>Niko</b><span>curious cautious ego</span><small>touches object with two-finger caution</small></div></div>
+  <aside class="panel"><button id="advance">advance continuity tick</button><div class="trace" id="trace"></div></aside>
+</section>
+</main>
+<script>
+const ticks = [
+  {
+    "tick_id": "ego_cont_priv_ari_1",
+    "day": 1,
+    "tick": 20,
+    "agent_id": "ari",
+    "frame_id": "priv_ari_1",
+    "body_frame_id": "body_priv_ari_1",
+    "flower_phase": "seed",
+    "ego_frequency_hz": 2.280909,
+    "attachment_tone": "differentiated",
+    "ownership_tone": "mine",
+    "readable_output": "settled-attachment: upright and task-forward; shares workbench distance"
+  },
+  {
+    "tick_id": "ego_cont_priv_ari_2",
+    "day": 3,
+    "tick": 26,
+    "agent_id": "ari",
+    "frame_id": "priv_ari_2",
+    "body_frame_id": "body_priv_ari_2",
+    "flower_phase": "vesica",
+    "ego_frequency_hz": 2.412727,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "remembered-boundary",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_ari_3",
+    "day": 5,
+    "tick": 32,
+    "agent_id": "ari",
+    "frame_id": "priv_ari_3",
+    "body_frame_id": "body_priv_ari_3",
+    "flower_phase": "triad",
+    "ego_frequency_hz": 2.544545,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "ask_first",
+    "readable_output": "ownership-caution: small brace through shoulders; asks from two body-lengths"
+  },
+  {
+    "tick_id": "ego_cont_priv_ari_4",
+    "day": 8,
+    "tick": 38,
+    "agent_id": "ari",
+    "frame_id": "priv_ari_4",
+    "body_frame_id": "body_priv_ari_4",
+    "flower_phase": "square",
+    "ego_frequency_hz": 2.707273,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "remembered-boundary",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_ari_5",
+    "day": 13,
+    "tick": 44,
+    "agent_id": "ari",
+    "frame_id": "priv_ari_5",
+    "body_frame_id": "body_priv_ari_5",
+    "flower_phase": "pentad",
+    "ego_frequency_hz": 2.931818,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "shared",
+    "readable_output": "relationship-distance: one shoulder toward exit; keeps edge of group"
+  },
+  {
+    "tick_id": "ego_cont_priv_ari_6",
+    "day": 21,
+    "tick": 50,
+    "agent_id": "ari",
+    "frame_id": "priv_ari_6",
+    "body_frame_id": "body_priv_ari_6",
+    "flower_phase": "hexad",
+    "ego_frequency_hz": 3.249091,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "accepted_mine",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_ari_7",
+    "day": 34,
+    "tick": 56,
+    "agent_id": "ari",
+    "frame_id": "priv_ari_7",
+    "body_frame_id": "body_priv_ari_7",
+    "flower_phase": "flower",
+    "ego_frequency_hz": 3.720909,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "ask_first",
+    "readable_output": "relationship-distance: one shoulder toward exit; keeps edge of group"
+  },
+  {
+    "tick_id": "ego_cont_priv_ari_8",
+    "day": 55,
+    "tick": 62,
+    "agent_id": "ari",
+    "frame_id": "priv_ari_8",
+    "body_frame_id": "body_priv_ari_8",
+    "flower_phase": "fruit",
+    "ego_frequency_hz": 4.44,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "not_mine",
+    "readable_output": "consolidated-self-respect: upright but not performative; allows approach after acknowledgement"
+  },
+  {
+    "tick_id": "ego_cont_priv_fay_1",
+    "day": 1,
+    "tick": 68,
+    "agent_id": "fay",
+    "frame_id": "priv_fay_1",
+    "body_frame_id": "body_priv_fay_1",
+    "flower_phase": "return",
+    "ego_frequency_hz": 2.840909,
+    "attachment_tone": "differentiated",
+    "ownership_tone": "mine",
+    "readable_output": "settled-attachment: upright and task-forward; shares workbench distance"
+  },
+  {
+    "tick_id": "ego_cont_priv_fay_2",
+    "day": 3,
+    "tick": 74,
+    "agent_id": "fay",
+    "frame_id": "priv_fay_2",
+    "body_frame_id": "body_priv_fay_2",
+    "flower_phase": "seed",
+    "ego_frequency_hz": 2.342727,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "remembered-boundary",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_fay_3",
+    "day": 5,
+    "tick": 80,
+    "agent_id": "fay",
+    "frame_id": "priv_fay_3",
+    "body_frame_id": "body_priv_fay_3",
+    "flower_phase": "vesica",
+    "ego_frequency_hz": 2.474545,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "ask_first",
+    "readable_output": "ownership-caution: small brace through shoulders; asks from two body-lengths"
+  },
+  {
+    "tick_id": "ego_cont_priv_fay_4",
+    "day": 8,
+    "tick": 86,
+    "agent_id": "fay",
+    "frame_id": "priv_fay_4",
+    "body_frame_id": "body_priv_fay_4",
+    "flower_phase": "triad",
+    "ego_frequency_hz": 2.637273,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "remembered-boundary",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_fay_5",
+    "day": 13,
+    "tick": 92,
+    "agent_id": "fay",
+    "frame_id": "priv_fay_5",
+    "body_frame_id": "body_priv_fay_5",
+    "flower_phase": "square",
+    "ego_frequency_hz": 2.861818,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "shared",
+    "readable_output": "relationship-distance: one shoulder toward exit; keeps edge of group"
+  },
+  {
+    "tick_id": "ego_cont_priv_fay_6",
+    "day": 21,
+    "tick": 98,
+    "agent_id": "fay",
+    "frame_id": "priv_fay_6",
+    "body_frame_id": "body_priv_fay_6",
+    "flower_phase": "pentad",
+    "ego_frequency_hz": 3.179091,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "accepted_mine",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_fay_7",
+    "day": 34,
+    "tick": 104,
+    "agent_id": "fay",
+    "frame_id": "priv_fay_7",
+    "body_frame_id": "body_priv_fay_7",
+    "flower_phase": "hexad",
+    "ego_frequency_hz": 3.650909,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "ask_first",
+    "readable_output": "relationship-distance: one shoulder toward exit; keeps edge of group"
+  },
+  {
+    "tick_id": "ego_cont_priv_fay_8",
+    "day": 55,
+    "tick": 110,
+    "agent_id": "fay",
+    "frame_id": "priv_fay_8",
+    "body_frame_id": "body_priv_fay_8",
+    "flower_phase": "flower",
+    "ego_frequency_hz": 4.37,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "not_mine",
+    "readable_output": "consolidated-self-respect: upright but not performative; allows approach after acknowledgement"
+  },
+  {
+    "tick_id": "ego_cont_priv_milo_1",
+    "day": 1,
+    "tick": 116,
+    "agent_id": "milo",
+    "frame_id": "priv_milo_1",
+    "body_frame_id": "body_priv_milo_1",
+    "flower_phase": "fruit",
+    "ego_frequency_hz": 2.770909,
+    "attachment_tone": "differentiated",
+    "ownership_tone": "mine",
+    "readable_output": "settled-attachment: upright and task-forward; shares workbench distance"
+  },
+  {
+    "tick_id": "ego_cont_priv_milo_2",
+    "day": 3,
+    "tick": 122,
+    "agent_id": "milo",
+    "frame_id": "priv_milo_2",
+    "body_frame_id": "body_priv_milo_2",
+    "flower_phase": "return",
+    "ego_frequency_hz": 2.902727,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "remembered-boundary",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_milo_3",
+    "day": 5,
+    "tick": 128,
+    "agent_id": "milo",
+    "frame_id": "priv_milo_3",
+    "body_frame_id": "body_priv_milo_3",
+    "flower_phase": "seed",
+    "ego_frequency_hz": 2.404545,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "ask_first",
+    "readable_output": "ownership-caution: small brace through shoulders; asks from two body-lengths"
+  },
+  {
+    "tick_id": "ego_cont_priv_milo_4",
+    "day": 8,
+    "tick": 134,
+    "agent_id": "milo",
+    "frame_id": "priv_milo_4",
+    "body_frame_id": "body_priv_milo_4",
+    "flower_phase": "vesica",
+    "ego_frequency_hz": 2.567273,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "remembered-boundary",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_milo_5",
+    "day": 13,
+    "tick": 140,
+    "agent_id": "milo",
+    "frame_id": "priv_milo_5",
+    "body_frame_id": "body_priv_milo_5",
+    "flower_phase": "triad",
+    "ego_frequency_hz": 2.791818,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "shared",
+    "readable_output": "relationship-distance: one shoulder toward exit; keeps edge of group"
+  },
+  {
+    "tick_id": "ego_cont_priv_milo_6",
+    "day": 21,
+    "tick": 146,
+    "agent_id": "milo",
+    "frame_id": "priv_milo_6",
+    "body_frame_id": "body_priv_milo_6",
+    "flower_phase": "square",
+    "ego_frequency_hz": 3.109091,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "accepted_mine",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_milo_7",
+    "day": 34,
+    "tick": 152,
+    "agent_id": "milo",
+    "frame_id": "priv_milo_7",
+    "body_frame_id": "body_priv_milo_7",
+    "flower_phase": "pentad",
+    "ego_frequency_hz": 3.580909,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "ask_first",
+    "readable_output": "relationship-distance: one shoulder toward exit; keeps edge of group"
+  },
+  {
+    "tick_id": "ego_cont_priv_milo_8",
+    "day": 55,
+    "tick": 158,
+    "agent_id": "milo",
+    "frame_id": "priv_milo_8",
+    "body_frame_id": "body_priv_milo_8",
+    "flower_phase": "hexad",
+    "ego_frequency_hz": 4.3,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "not_mine",
+    "readable_output": "consolidated-self-respect: upright but not performative; allows approach after acknowledgement"
+  },
+  {
+    "tick_id": "ego_cont_priv_sera_1",
+    "day": 1,
+    "tick": 164,
+    "agent_id": "sera",
+    "frame_id": "priv_sera_1",
+    "body_frame_id": "body_priv_sera_1",
+    "flower_phase": "flower",
+    "ego_frequency_hz": 2.700909,
+    "attachment_tone": "differentiated",
+    "ownership_tone": "mine",
+    "readable_output": "settled-attachment: upright and task-forward; shares workbench distance"
+  },
+  {
+    "tick_id": "ego_cont_priv_sera_2",
+    "day": 3,
+    "tick": 170,
+    "agent_id": "sera",
+    "frame_id": "priv_sera_2",
+    "body_frame_id": "body_priv_sera_2",
+    "flower_phase": "fruit",
+    "ego_frequency_hz": 2.832727,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "remembered-boundary",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_sera_3",
+    "day": 5,
+    "tick": 176,
+    "agent_id": "sera",
+    "frame_id": "priv_sera_3",
+    "body_frame_id": "body_priv_sera_3",
+    "flower_phase": "return",
+    "ego_frequency_hz": 2.964545,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "ask_first",
+    "readable_output": "ownership-caution: small brace through shoulders; asks from two body-lengths"
+  },
+  {
+    "tick_id": "ego_cont_priv_sera_4",
+    "day": 8,
+    "tick": 182,
+    "agent_id": "sera",
+    "frame_id": "priv_sera_4",
+    "body_frame_id": "body_priv_sera_4",
+    "flower_phase": "seed",
+    "ego_frequency_hz": 2.497273,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "remembered-boundary",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_sera_5",
+    "day": 13,
+    "tick": 188,
+    "agent_id": "sera",
+    "frame_id": "priv_sera_5",
+    "body_frame_id": "body_priv_sera_5",
+    "flower_phase": "vesica",
+    "ego_frequency_hz": 2.721818,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "shared",
+    "readable_output": "relationship-distance: one shoulder toward exit; keeps edge of group"
+  },
+  {
+    "tick_id": "ego_cont_priv_sera_6",
+    "day": 21,
+    "tick": 194,
+    "agent_id": "sera",
+    "frame_id": "priv_sera_6",
+    "body_frame_id": "body_priv_sera_6",
+    "flower_phase": "triad",
+    "ego_frequency_hz": 3.039091,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "accepted_mine",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_sera_7",
+    "day": 34,
+    "tick": 200,
+    "agent_id": "sera",
+    "frame_id": "priv_sera_7",
+    "body_frame_id": "body_priv_sera_7",
+    "flower_phase": "square",
+    "ego_frequency_hz": 3.510909,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "ask_first",
+    "readable_output": "relationship-distance: one shoulder toward exit; keeps edge of group"
+  },
+  {
+    "tick_id": "ego_cont_priv_sera_8",
+    "day": 55,
+    "tick": 206,
+    "agent_id": "sera",
+    "frame_id": "priv_sera_8",
+    "body_frame_id": "body_priv_sera_8",
+    "flower_phase": "pentad",
+    "ego_frequency_hz": 4.23,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "not_mine",
+    "readable_output": "consolidated-self-respect: upright but not performative; allows approach after acknowledgement"
+  },
+  {
+    "tick_id": "ego_cont_priv_niko_1",
+    "day": 1,
+    "tick": 212,
+    "agent_id": "niko",
+    "frame_id": "priv_niko_1",
+    "body_frame_id": "body_priv_niko_1",
+    "flower_phase": "hexad",
+    "ego_frequency_hz": 2.630909,
+    "attachment_tone": "differentiated",
+    "ownership_tone": "mine",
+    "readable_output": "settled-attachment: upright and task-forward; shares workbench distance"
+  },
+  {
+    "tick_id": "ego_cont_priv_niko_2",
+    "day": 3,
+    "tick": 218,
+    "agent_id": "niko",
+    "frame_id": "priv_niko_2",
+    "body_frame_id": "body_priv_niko_2",
+    "flower_phase": "flower",
+    "ego_frequency_hz": 2.762727,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "remembered-boundary",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_niko_3",
+    "day": 5,
+    "tick": 224,
+    "agent_id": "niko",
+    "frame_id": "priv_niko_3",
+    "body_frame_id": "body_priv_niko_3",
+    "flower_phase": "fruit",
+    "ego_frequency_hz": 2.894545,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "ask_first",
+    "readable_output": "ownership-caution: small brace through shoulders; asks from two body-lengths"
+  },
+  {
+    "tick_id": "ego_cont_priv_niko_4",
+    "day": 8,
+    "tick": 230,
+    "agent_id": "niko",
+    "frame_id": "priv_niko_4",
+    "body_frame_id": "body_priv_niko_4",
+    "flower_phase": "return",
+    "ego_frequency_hz": 3.057273,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "remembered-boundary",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_niko_5",
+    "day": 13,
+    "tick": 236,
+    "agent_id": "niko",
+    "frame_id": "priv_niko_5",
+    "body_frame_id": "body_priv_niko_5",
+    "flower_phase": "seed",
+    "ego_frequency_hz": 2.651818,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "shared",
+    "readable_output": "relationship-distance: one shoulder toward exit; keeps edge of group"
+  },
+  {
+    "tick_id": "ego_cont_priv_niko_6",
+    "day": 21,
+    "tick": 242,
+    "agent_id": "niko",
+    "frame_id": "priv_niko_6",
+    "body_frame_id": "body_priv_niko_6",
+    "flower_phase": "vesica",
+    "ego_frequency_hz": 2.969091,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "accepted_mine",
+    "readable_output": "repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound"
+  },
+  {
+    "tick_id": "ego_cont_priv_niko_7",
+    "day": 34,
+    "tick": 248,
+    "agent_id": "niko",
+    "frame_id": "priv_niko_7",
+    "body_frame_id": "body_priv_niko_7",
+    "flower_phase": "triad",
+    "ego_frequency_hz": 3.440909,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "ask_first",
+    "readable_output": "relationship-distance: one shoulder toward exit; keeps edge of group"
+  },
+  {
+    "tick_id": "ego_cont_priv_niko_8",
+    "day": 55,
+    "tick": 254,
+    "agent_id": "niko",
+    "frame_id": "priv_niko_8",
+    "body_frame_id": "body_priv_niko_8",
+    "flower_phase": "square",
+    "ego_frequency_hz": 4.16,
+    "attachment_tone": "relationship-specific",
+    "ownership_tone": "not_mine",
+    "readable_output": "consolidated-self-respect: upright but not performative; allows approach after acknowledgement"
+  }
+];
+const bodies = {
+  "body_priv_ari_1": {
+    "body_frame_id": "body_priv_ari_1",
+    "day": 1,
+    "tick": 20,
+    "agent_id": "ari",
+    "condition": "settled-attachment",
+    "posture": "upright and task-forward",
+    "gait": "even pace near trusted person",
+    "gaze": "looks between person and shared work",
+    "hand_or_object_behavior": "offers safe side of bronze spanner",
+    "proximity_rule": "shares workbench distance",
+    "micro_ritual": "hands guard tool then reopen after repair",
+    "legibility_score": 0.91
+  },
+  "body_priv_ari_2": {
+    "body_frame_id": "body_priv_ari_2",
+    "day": 3,
+    "tick": 26,
+    "agent_id": "ari",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches bronze spanner then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_ari_3": {
+    "body_frame_id": "body_priv_ari_3",
+    "day": 5,
+    "tick": 32,
+    "agent_id": "ari",
+    "condition": "ownership-caution",
+    "posture": "small brace through shoulders",
+    "gait": "short diagonal step to object side",
+    "gaze": "object-person-object scan",
+    "hand_or_object_behavior": "keeps palm visible over bronze spanner family",
+    "proximity_rule": "asks from two body-lengths",
+    "micro_ritual": "taps boundary mark before speaking",
+    "legibility_score": 0.9
+  },
+  "body_priv_ari_4": {
+    "body_frame_id": "body_priv_ari_4",
+    "day": 8,
+    "tick": 38,
+    "agent_id": "ari",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches bronze spanner then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_ari_5": {
+    "body_frame_id": "body_priv_ari_5",
+    "day": 13,
+    "tick": 44,
+    "agent_id": "ari",
+    "condition": "relationship-distance",
+    "posture": "one shoulder toward exit",
+    "gait": "low-speed drift along wall",
+    "gaze": "brief look then soft avoidance",
+    "hand_or_object_behavior": "hands low, no threat display",
+    "proximity_rule": "keeps edge of group",
+    "micro_ritual": "counts three floor marks before answer",
+    "legibility_score": 0.88
+  },
+  "body_priv_ari_6": {
+    "body_frame_id": "body_priv_ari_6",
+    "day": 21,
+    "tick": 50,
+    "agent_id": "ari",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches bronze spanner then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_ari_7": {
+    "body_frame_id": "body_priv_ari_7",
+    "day": 34,
+    "tick": 56,
+    "agent_id": "ari",
+    "condition": "relationship-distance",
+    "posture": "one shoulder toward exit",
+    "gait": "low-speed drift along wall",
+    "gaze": "brief look then soft avoidance",
+    "hand_or_object_behavior": "hands low, no threat display",
+    "proximity_rule": "keeps edge of group",
+    "micro_ritual": "counts three floor marks before answer",
+    "legibility_score": 0.88
+  },
+  "body_priv_ari_8": {
+    "body_frame_id": "body_priv_ari_8",
+    "day": 55,
+    "tick": 62,
+    "agent_id": "ari",
+    "condition": "consolidated-self-respect",
+    "posture": "upright but not performative",
+    "gait": "measured return to chosen route",
+    "gaze": "direct look followed by task focus",
+    "hand_or_object_behavior": "sets bronze spanner down where others can see but not take",
+    "proximity_rule": "allows approach after acknowledgement",
+    "micro_ritual": "touches heart mark, tool mark, then path mark",
+    "legibility_score": 0.9
+  },
+  "body_priv_fay_1": {
+    "body_frame_id": "body_priv_fay_1",
+    "day": 1,
+    "tick": 68,
+    "agent_id": "fay",
+    "condition": "settled-attachment",
+    "posture": "upright and task-forward",
+    "gait": "even pace near trusted person",
+    "gaze": "looks between person and shared work",
+    "hand_or_object_behavior": "offers safe side of seed bowl",
+    "proximity_rule": "shares workbench distance",
+    "micro_ritual": "turns body sideways to shelter others",
+    "legibility_score": 0.91
+  },
+  "body_priv_fay_2": {
+    "body_frame_id": "body_priv_fay_2",
+    "day": 3,
+    "tick": 74,
+    "agent_id": "fay",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches seed bowl then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_fay_3": {
+    "body_frame_id": "body_priv_fay_3",
+    "day": 5,
+    "tick": 80,
+    "agent_id": "fay",
+    "condition": "ownership-caution",
+    "posture": "small brace through shoulders",
+    "gait": "short diagonal step to object side",
+    "gaze": "object-person-object scan",
+    "hand_or_object_behavior": "keeps palm visible over seed bowl family",
+    "proximity_rule": "asks from two body-lengths",
+    "micro_ritual": "taps boundary mark before speaking",
+    "legibility_score": 0.9
+  },
+  "body_priv_fay_4": {
+    "body_frame_id": "body_priv_fay_4",
+    "day": 8,
+    "tick": 86,
+    "agent_id": "fay",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches seed bowl then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_fay_5": {
+    "body_frame_id": "body_priv_fay_5",
+    "day": 13,
+    "tick": 92,
+    "agent_id": "fay",
+    "condition": "relationship-distance",
+    "posture": "one shoulder toward exit",
+    "gait": "low-speed drift along wall",
+    "gaze": "brief look then soft avoidance",
+    "hand_or_object_behavior": "hands low, no threat display",
+    "proximity_rule": "keeps edge of group",
+    "micro_ritual": "counts three floor marks before answer",
+    "legibility_score": 0.88
+  },
+  "body_priv_fay_6": {
+    "body_frame_id": "body_priv_fay_6",
+    "day": 21,
+    "tick": 98,
+    "agent_id": "fay",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches seed bowl then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_fay_7": {
+    "body_frame_id": "body_priv_fay_7",
+    "day": 34,
+    "tick": 104,
+    "agent_id": "fay",
+    "condition": "relationship-distance",
+    "posture": "one shoulder toward exit",
+    "gait": "low-speed drift along wall",
+    "gaze": "brief look then soft avoidance",
+    "hand_or_object_behavior": "hands low, no threat display",
+    "proximity_rule": "keeps edge of group",
+    "micro_ritual": "counts three floor marks before answer",
+    "legibility_score": 0.88
+  },
+  "body_priv_fay_8": {
+    "body_frame_id": "body_priv_fay_8",
+    "day": 55,
+    "tick": 110,
+    "agent_id": "fay",
+    "condition": "consolidated-self-respect",
+    "posture": "upright but not performative",
+    "gait": "measured return to chosen route",
+    "gaze": "direct look followed by task focus",
+    "hand_or_object_behavior": "sets seed bowl down where others can see but not take",
+    "proximity_rule": "allows approach after acknowledgement",
+    "micro_ritual": "touches heart mark, tool mark, then path mark",
+    "legibility_score": 0.9
+  },
+  "body_priv_milo_1": {
+    "body_frame_id": "body_priv_milo_1",
+    "day": 1,
+    "tick": 116,
+    "agent_id": "milo",
+    "condition": "settled-attachment",
+    "posture": "upright and task-forward",
+    "gait": "even pace near trusted person",
+    "gaze": "looks between person and shared work",
+    "hand_or_object_behavior": "offers safe side of thread ledger",
+    "proximity_rule": "shares workbench distance",
+    "micro_ritual": "rocks heel-to-toe near the ledger",
+    "legibility_score": 0.91
+  },
+  "body_priv_milo_2": {
+    "body_frame_id": "body_priv_milo_2",
+    "day": 3,
+    "tick": 122,
+    "agent_id": "milo",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches thread ledger then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_milo_3": {
+    "body_frame_id": "body_priv_milo_3",
+    "day": 5,
+    "tick": 128,
+    "agent_id": "milo",
+    "condition": "ownership-caution",
+    "posture": "small brace through shoulders",
+    "gait": "short diagonal step to object side",
+    "gaze": "object-person-object scan",
+    "hand_or_object_behavior": "keeps palm visible over thread ledger family",
+    "proximity_rule": "asks from two body-lengths",
+    "micro_ritual": "taps boundary mark before speaking",
+    "legibility_score": 0.9
+  },
+  "body_priv_milo_4": {
+    "body_frame_id": "body_priv_milo_4",
+    "day": 8,
+    "tick": 134,
+    "agent_id": "milo",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches thread ledger then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_milo_5": {
+    "body_frame_id": "body_priv_milo_5",
+    "day": 13,
+    "tick": 140,
+    "agent_id": "milo",
+    "condition": "relationship-distance",
+    "posture": "one shoulder toward exit",
+    "gait": "low-speed drift along wall",
+    "gaze": "brief look then soft avoidance",
+    "hand_or_object_behavior": "hands low, no threat display",
+    "proximity_rule": "keeps edge of group",
+    "micro_ritual": "counts three floor marks before answer",
+    "legibility_score": 0.88
+  },
+  "body_priv_milo_6": {
+    "body_frame_id": "body_priv_milo_6",
+    "day": 21,
+    "tick": 146,
+    "agent_id": "milo",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches thread ledger then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_milo_7": {
+    "body_frame_id": "body_priv_milo_7",
+    "day": 34,
+    "tick": 152,
+    "agent_id": "milo",
+    "condition": "relationship-distance",
+    "posture": "one shoulder toward exit",
+    "gait": "low-speed drift along wall",
+    "gaze": "brief look then soft avoidance",
+    "hand_or_object_behavior": "hands low, no threat display",
+    "proximity_rule": "keeps edge of group",
+    "micro_ritual": "counts three floor marks before answer",
+    "legibility_score": 0.88
+  },
+  "body_priv_milo_8": {
+    "body_frame_id": "body_priv_milo_8",
+    "day": 55,
+    "tick": 158,
+    "agent_id": "milo",
+    "condition": "consolidated-self-respect",
+    "posture": "upright but not performative",
+    "gait": "measured return to chosen route",
+    "gaze": "direct look followed by task focus",
+    "hand_or_object_behavior": "sets thread ledger down where others can see but not take",
+    "proximity_rule": "allows approach after acknowledgement",
+    "micro_ritual": "touches heart mark, tool mark, then path mark",
+    "legibility_score": 0.9
+  },
+  "body_priv_sera_1": {
+    "body_frame_id": "body_priv_sera_1",
+    "day": 1,
+    "tick": 164,
+    "agent_id": "sera",
+    "condition": "settled-attachment",
+    "posture": "upright and task-forward",
+    "gait": "even pace near trusted person",
+    "gaze": "looks between person and shared work",
+    "hand_or_object_behavior": "offers safe side of listening shell",
+    "proximity_rule": "shares workbench distance",
+    "micro_ritual": "keeps one shoulder to the wall",
+    "legibility_score": 0.91
+  },
+  "body_priv_sera_2": {
+    "body_frame_id": "body_priv_sera_2",
+    "day": 3,
+    "tick": 170,
+    "agent_id": "sera",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches listening shell then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_sera_3": {
+    "body_frame_id": "body_priv_sera_3",
+    "day": 5,
+    "tick": 176,
+    "agent_id": "sera",
+    "condition": "ownership-caution",
+    "posture": "small brace through shoulders",
+    "gait": "short diagonal step to object side",
+    "gaze": "object-person-object scan",
+    "hand_or_object_behavior": "keeps palm visible over listening shell family",
+    "proximity_rule": "asks from two body-lengths",
+    "micro_ritual": "taps boundary mark before speaking",
+    "legibility_score": 0.9
+  },
+  "body_priv_sera_4": {
+    "body_frame_id": "body_priv_sera_4",
+    "day": 8,
+    "tick": 182,
+    "agent_id": "sera",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches listening shell then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_sera_5": {
+    "body_frame_id": "body_priv_sera_5",
+    "day": 13,
+    "tick": 188,
+    "agent_id": "sera",
+    "condition": "relationship-distance",
+    "posture": "one shoulder toward exit",
+    "gait": "low-speed drift along wall",
+    "gaze": "brief look then soft avoidance",
+    "hand_or_object_behavior": "hands low, no threat display",
+    "proximity_rule": "keeps edge of group",
+    "micro_ritual": "counts three floor marks before answer",
+    "legibility_score": 0.88
+  },
+  "body_priv_sera_6": {
+    "body_frame_id": "body_priv_sera_6",
+    "day": 21,
+    "tick": 194,
+    "agent_id": "sera",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches listening shell then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_sera_7": {
+    "body_frame_id": "body_priv_sera_7",
+    "day": 34,
+    "tick": 200,
+    "agent_id": "sera",
+    "condition": "relationship-distance",
+    "posture": "one shoulder toward exit",
+    "gait": "low-speed drift along wall",
+    "gaze": "brief look then soft avoidance",
+    "hand_or_object_behavior": "hands low, no threat display",
+    "proximity_rule": "keeps edge of group",
+    "micro_ritual": "counts three floor marks before answer",
+    "legibility_score": 0.88
+  },
+  "body_priv_sera_8": {
+    "body_frame_id": "body_priv_sera_8",
+    "day": 55,
+    "tick": 206,
+    "agent_id": "sera",
+    "condition": "consolidated-self-respect",
+    "posture": "upright but not performative",
+    "gait": "measured return to chosen route",
+    "gaze": "direct look followed by task focus",
+    "hand_or_object_behavior": "sets listening shell down where others can see but not take",
+    "proximity_rule": "allows approach after acknowledgement",
+    "micro_ritual": "touches heart mark, tool mark, then path mark",
+    "legibility_score": 0.9
+  },
+  "body_priv_niko_1": {
+    "body_frame_id": "body_priv_niko_1",
+    "day": 1,
+    "tick": 212,
+    "agent_id": "niko",
+    "condition": "settled-attachment",
+    "posture": "upright and task-forward",
+    "gait": "even pace near trusted person",
+    "gaze": "looks between person and shared work",
+    "hand_or_object_behavior": "offers safe side of left glove",
+    "proximity_rule": "shares workbench distance",
+    "micro_ritual": "touches object with two-finger caution",
+    "legibility_score": 0.91
+  },
+  "body_priv_niko_2": {
+    "body_frame_id": "body_priv_niko_2",
+    "day": 3,
+    "tick": 218,
+    "agent_id": "niko",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches left glove then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_niko_3": {
+    "body_frame_id": "body_priv_niko_3",
+    "day": 5,
+    "tick": 224,
+    "agent_id": "niko",
+    "condition": "ownership-caution",
+    "posture": "small brace through shoulders",
+    "gait": "short diagonal step to object side",
+    "gaze": "object-person-object scan",
+    "hand_or_object_behavior": "keeps palm visible over left glove family",
+    "proximity_rule": "asks from two body-lengths",
+    "micro_ritual": "taps boundary mark before speaking",
+    "legibility_score": 0.9
+  },
+  "body_priv_niko_4": {
+    "body_frame_id": "body_priv_niko_4",
+    "day": 8,
+    "tick": 230,
+    "agent_id": "niko",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches left glove then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_niko_5": {
+    "body_frame_id": "body_priv_niko_5",
+    "day": 13,
+    "tick": 236,
+    "agent_id": "niko",
+    "condition": "relationship-distance",
+    "posture": "one shoulder toward exit",
+    "gait": "low-speed drift along wall",
+    "gaze": "brief look then soft avoidance",
+    "hand_or_object_behavior": "hands low, no threat display",
+    "proximity_rule": "keeps edge of group",
+    "micro_ritual": "counts three floor marks before answer",
+    "legibility_score": 0.88
+  },
+  "body_priv_niko_6": {
+    "body_frame_id": "body_priv_niko_6",
+    "day": 21,
+    "tick": 242,
+    "agent_id": "niko",
+    "condition": "repairing-boundary",
+    "posture": "torso angled open but object-side hand remains close",
+    "gait": "slow return to work rhythm",
+    "gaze": "checks actor once, then returns to task",
+    "hand_or_object_behavior": "touches left glove then releases it",
+    "proximity_rule": "allows one tile closer than after wound",
+    "micro_ritual": "one breath, one nod, one resumed motion",
+    "legibility_score": 0.92
+  },
+  "body_priv_niko_7": {
+    "body_frame_id": "body_priv_niko_7",
+    "day": 34,
+    "tick": 248,
+    "agent_id": "niko",
+    "condition": "relationship-distance",
+    "posture": "one shoulder toward exit",
+    "gait": "low-speed drift along wall",
+    "gaze": "brief look then soft avoidance",
+    "hand_or_object_behavior": "hands low, no threat display",
+    "proximity_rule": "keeps edge of group",
+    "micro_ritual": "counts three floor marks before answer",
+    "legibility_score": 0.88
+  },
+  "body_priv_niko_8": {
+    "body_frame_id": "body_priv_niko_8",
+    "day": 55,
+    "tick": 254,
+    "agent_id": "niko",
+    "condition": "consolidated-self-respect",
+    "posture": "upright but not performative",
+    "gait": "measured return to chosen route",
+    "gaze": "direct look followed by task focus",
+    "hand_or_object_behavior": "sets left glove down where others can see but not take",
+    "proximity_rule": "allows approach after acknowledgement",
+    "micro_ritual": "touches heart mark, tool mark, then path mark",
+    "legibility_score": 0.9
+  }
+};
+let i = 0;
+function draw() {
+  const tick = ticks[i % ticks.length];
+  const body = bodies[tick.body_frame_id];
+  document.querySelectorAll('.agent').forEach(node => { node.style.filter = 'opacity(.66) saturate(.8)'; node.style.transform = 'scale(.94)'; });
+  const node = document.getElementById(tick.agent_id);
+  if (node) {
+    const day = Number(tick.day);
+    const rate = Number(tick.ego_frequency_hz);
+    node.style.filter = 'opacity(1) saturate(1.15)';
+    node.style.transform = `scale(${1 + rate * .025}) translate(${Math.sin(day) * 28}px, ${Math.cos(day / 2) * 20}px)`;
+  }
+  document.getElementById('trace').textContent = `day ${tick.day} / tick ${tick.tick} / ${tick.agent_id}
+phase: ${tick.flower_phase} rate=${tick.ego_frequency_hz}Hz
+attachment: ${tick.attachment_tone}
+ownership: ${tick.ownership_tone}
+condition: ${body.condition}
+posture: ${body.posture}
+gaze: ${body.gaze}
+object behavior: ${body.hand_or_object_behavior}
+ritual: ${body.micro_ritual}
+readable: ${tick.readable_output}`;
+  i += 1;
+}
+document.getElementById('advance').addEventListener('click', draw);
+draw();
+</script>
+</body>
+</html>

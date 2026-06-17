@@ -1,0 +1,41 @@
+tick_id,day,tick,agent_id,frame_id,body_frame_id,flower_phase,ego_frequency_hz,attachment_tone,ownership_tone,readable_output
+ego_cont_priv_ari_1,1,20,ari,priv_ari_1,body_priv_ari_1,seed,2.280909,differentiated,mine,settled-attachment: upright and task-forward; shares workbench distance
+ego_cont_priv_ari_2,3,26,ari,priv_ari_2,body_priv_ari_2,vesica,2.412727,relationship-specific,remembered-boundary,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_ari_3,5,32,ari,priv_ari_3,body_priv_ari_3,triad,2.544545,relationship-specific,ask_first,ownership-caution: small brace through shoulders; asks from two body-lengths
+ego_cont_priv_ari_4,8,38,ari,priv_ari_4,body_priv_ari_4,square,2.707273,relationship-specific,remembered-boundary,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_ari_5,13,44,ari,priv_ari_5,body_priv_ari_5,pentad,2.931818,relationship-specific,shared,relationship-distance: one shoulder toward exit; keeps edge of group
+ego_cont_priv_ari_6,21,50,ari,priv_ari_6,body_priv_ari_6,hexad,3.249091,relationship-specific,accepted_mine,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_ari_7,34,56,ari,priv_ari_7,body_priv_ari_7,flower,3.720909,relationship-specific,ask_first,relationship-distance: one shoulder toward exit; keeps edge of group
+ego_cont_priv_ari_8,55,62,ari,priv_ari_8,body_priv_ari_8,fruit,4.44,relationship-specific,not_mine,consolidated-self-respect: upright but not performative; allows approach after acknowledgement
+ego_cont_priv_fay_1,1,68,fay,priv_fay_1,body_priv_fay_1,return,2.840909,differentiated,mine,settled-attachment: upright and task-forward; shares workbench distance
+ego_cont_priv_fay_2,3,74,fay,priv_fay_2,body_priv_fay_2,seed,2.342727,relationship-specific,remembered-boundary,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_fay_3,5,80,fay,priv_fay_3,body_priv_fay_3,vesica,2.474545,relationship-specific,ask_first,ownership-caution: small brace through shoulders; asks from two body-lengths
+ego_cont_priv_fay_4,8,86,fay,priv_fay_4,body_priv_fay_4,triad,2.637273,relationship-specific,remembered-boundary,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_fay_5,13,92,fay,priv_fay_5,body_priv_fay_5,square,2.861818,relationship-specific,shared,relationship-distance: one shoulder toward exit; keeps edge of group
+ego_cont_priv_fay_6,21,98,fay,priv_fay_6,body_priv_fay_6,pentad,3.179091,relationship-specific,accepted_mine,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_fay_7,34,104,fay,priv_fay_7,body_priv_fay_7,hexad,3.650909,relationship-specific,ask_first,relationship-distance: one shoulder toward exit; keeps edge of group
+ego_cont_priv_fay_8,55,110,fay,priv_fay_8,body_priv_fay_8,flower,4.37,relationship-specific,not_mine,consolidated-self-respect: upright but not performative; allows approach after acknowledgement
+ego_cont_priv_milo_1,1,116,milo,priv_milo_1,body_priv_milo_1,fruit,2.770909,differentiated,mine,settled-attachment: upright and task-forward; shares workbench distance
+ego_cont_priv_milo_2,3,122,milo,priv_milo_2,body_priv_milo_2,return,2.902727,relationship-specific,remembered-boundary,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_milo_3,5,128,milo,priv_milo_3,body_priv_milo_3,seed,2.404545,relationship-specific,ask_first,ownership-caution: small brace through shoulders; asks from two body-lengths
+ego_cont_priv_milo_4,8,134,milo,priv_milo_4,body_priv_milo_4,vesica,2.567273,relationship-specific,remembered-boundary,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_milo_5,13,140,milo,priv_milo_5,body_priv_milo_5,triad,2.791818,relationship-specific,shared,relationship-distance: one shoulder toward exit; keeps edge of group
+ego_cont_priv_milo_6,21,146,milo,priv_milo_6,body_priv_milo_6,square,3.109091,relationship-specific,accepted_mine,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_milo_7,34,152,milo,priv_milo_7,body_priv_milo_7,pentad,3.580909,relationship-specific,ask_first,relationship-distance: one shoulder toward exit; keeps edge of group
+ego_cont_priv_milo_8,55,158,milo,priv_milo_8,body_priv_milo_8,hexad,4.3,relationship-specific,not_mine,consolidated-self-respect: upright but not performative; allows approach after acknowledgement
+ego_cont_priv_sera_1,1,164,sera,priv_sera_1,body_priv_sera_1,flower,2.700909,differentiated,mine,settled-attachment: upright and task-forward; shares workbench distance
+ego_cont_priv_sera_2,3,170,sera,priv_sera_2,body_priv_sera_2,fruit,2.832727,relationship-specific,remembered-boundary,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_sera_3,5,176,sera,priv_sera_3,body_priv_sera_3,return,2.964545,relationship-specific,ask_first,ownership-caution: small brace through shoulders; asks from two body-lengths
+ego_cont_priv_sera_4,8,182,sera,priv_sera_4,body_priv_sera_4,seed,2.497273,relationship-specific,remembered-boundary,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_sera_5,13,188,sera,priv_sera_5,body_priv_sera_5,vesica,2.721818,relationship-specific,shared,relationship-distance: one shoulder toward exit; keeps edge of group
+ego_cont_priv_sera_6,21,194,sera,priv_sera_6,body_priv_sera_6,triad,3.039091,relationship-specific,accepted_mine,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_sera_7,34,200,sera,priv_sera_7,body_priv_sera_7,square,3.510909,relationship-specific,ask_first,relationship-distance: one shoulder toward exit; keeps edge of group
+ego_cont_priv_sera_8,55,206,sera,priv_sera_8,body_priv_sera_8,pentad,4.23,relationship-specific,not_mine,consolidated-self-respect: upright but not performative; allows approach after acknowledgement
+ego_cont_priv_niko_1,1,212,niko,priv_niko_1,body_priv_niko_1,hexad,2.630909,differentiated,mine,settled-attachment: upright and task-forward; shares workbench distance
+ego_cont_priv_niko_2,3,218,niko,priv_niko_2,body_priv_niko_2,flower,2.762727,relationship-specific,remembered-boundary,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_niko_3,5,224,niko,priv_niko_3,body_priv_niko_3,fruit,2.894545,relationship-specific,ask_first,ownership-caution: small brace through shoulders; asks from two body-lengths
+ego_cont_priv_niko_4,8,230,niko,priv_niko_4,body_priv_niko_4,return,3.057273,relationship-specific,remembered-boundary,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_niko_5,13,236,niko,priv_niko_5,body_priv_niko_5,seed,2.651818,relationship-specific,shared,relationship-distance: one shoulder toward exit; keeps edge of group
+ego_cont_priv_niko_6,21,242,niko,priv_niko_6,body_priv_niko_6,vesica,2.969091,relationship-specific,accepted_mine,repairing-boundary: torso angled open but object-side hand remains close; allows one tile closer than after wound
+ego_cont_priv_niko_7,34,248,niko,priv_niko_7,body_priv_niko_7,triad,3.440909,relationship-specific,ask_first,relationship-distance: one shoulder toward exit; keeps edge of group
+ego_cont_priv_niko_8,55,254,niko,priv_niko_8,body_priv_niko_8,square,4.16,relationship-specific,not_mine,consolidated-self-respect: upright but not performative; allows approach after acknowledgement

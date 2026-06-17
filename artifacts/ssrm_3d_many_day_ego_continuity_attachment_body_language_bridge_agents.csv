@@ -1,0 +1,6 @@
+agent_id,name,ego_style,attachment_style,home_place,primary_owned_object,ownership_family,trusted_person,difficult_person,body_language_signature,initial_trust_trusted,initial_trust_difficult,initial_boundary_pressure,self_story_anchor
+ari,Ari,proud repair ego,trusts through respected competence,west arch alcove,bronze spanner,repair-tools,Gabriel,Mara,hands guard tool then reopen after repair,0.57,0.42,0.4,I keep the west route safe.
+fay,Fay,care-boundary ego,attaches through quiet reliability,warm moss room,seed bowl,living-promises,Niko,Mara,turns body sideways to shelter others,0.64,0.46,0.34,The seed bowl is my promise.
+milo,Milo,playful fairness ego,attaches through returning attention,north stall step,thread ledger,counting-ledgers,Gabriel,Rook,rocks heel-to-toe near the ledger,0.55,0.38,0.37,I keep the count fair.
+sera,Sera,guarded witness ego,attaches through being believed,quiet red stair,listening shell,witness-objects,Fay,Mara,keeps one shoulder to the wall,0.49,0.31,0.51,I say what I know and no more.
+niko,Niko,curious cautious ego,attaches through patient instruction,wheelhouse loft,left glove,safety-gear,Ari,Rook,touches object with two-finger caution,0.6,0.4,0.39,I learn by touching slowly.

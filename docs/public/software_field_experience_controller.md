@@ -249,3 +249,7 @@ Report 231 extends the playable local SSRM-3D agent bridge from short project lo
 
 Report 232 adds the first explicit functional ego layer to the playable SSRM-3D stack: self-boundary, ownership, self/other attribution, private workspace frames, bounded refusal, self-story updates, visible expression, and recoverable ego wound/repair. The deterministic run passes with readiness 0.983242 and weakest-channel score 0.911667. The controller boundary remains strict: this is inspectable ego scaffolding, not subjective consciousness, legal consent, moral patienthood, or open-ended language. The next target is a many-day first-person interior loop with ownership generalization, relationship-specific attachment, and richer readable body language.
 
+## Report 233 Many-Day Ego Continuity Bridge Note
+
+Report 233 extends the first-person ego bridge across days 1, 3, 5, 8, 13, 21, 34, and 55. It adds ownership generalization, false mine-claim rejection, relationship-specific attachment, repeated wound/repair cycles, forgiveness without amnesia, private interior continuity, self-story consolidation, richer body-language expression, and boundary dialogue. The deterministic run passes with readiness 0.982171 and weakest-channel score 0.901333. The first full run failed on body-language richness, correctly forcing more varied visible ego states before publication. The next controller target is a playable first-person society loop with multi-agent markets, household rituals, proto-language tokens, and thousands-year pre-avatar civilization scaffolding.
+

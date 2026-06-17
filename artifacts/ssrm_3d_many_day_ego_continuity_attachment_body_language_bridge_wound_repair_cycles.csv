@@ -1,0 +1,21 @@
+cycle_id,day,agent_id,actor,wound_kind,wound_intensity,boundary_before,boundary_after_wound,repair_kind,repair_quality,boundary_after_repair,trust_after_wound,trust_after_repair,memory_retained,grudge_residue,recovery_note
+cycle_ari_1,3,ari,Mara,interrupt_work,0.32,0.4,0.5408,waited_and_asked,0.62,0.3548,0.3304,0.4544,0.7204,0.0272,repair lowers pressure without deleting memory
+cycle_ari_2,8,ari,Mara,moved_owned_object,0.42,0.3548,0.5396,returned_object_and_apologized,0.78,0.3056,0.3368,0.4928,0.7288,0.0384,repair lowers pressure without deleting memory
+cycle_ari_3,21,ari,Mara,ignored_refusal,0.46,0.3056,0.508,accepted_no_and_offered_route,0.82,0.262,0.364,0.528,0.7336,0.0448,repair lowers pressure without deleting memory
+cycle_ari_4,55,ari,Mara,misnamed_publicly,0.28,0.262,0.3852,corrected_name_in_public,0.7,0.1752,0.4496,0.5896,0.7084,0.0112,repair lowers pressure without deleting memory
+cycle_fay_1,3,fay,Mara,interrupt_work,0.32,0.34,0.47696,waited_and_asked,0.62,0.29096,0.3704,0.4944,0.7204,0.0272,repair lowers pressure without deleting memory
+cycle_fay_2,8,fay,Mara,moved_owned_object,0.42,0.29096,0.47072,returned_object_and_apologized,0.78,0.23672,0.3768,0.5328,0.7288,0.0384,repair lowers pressure without deleting memory
+cycle_fay_3,21,fay,Mara,ignored_refusal,0.46,0.23672,0.4336,accepted_no_and_offered_route,0.82,0.1876,0.404,0.568,0.7336,0.0448,repair lowers pressure without deleting memory
+cycle_fay_4,55,fay,Mara,misnamed_publicly,0.28,0.1876,0.30744,corrected_name_in_public,0.7,0.09744,0.4896,0.6296,0.7084,0.0112,repair lowers pressure without deleting memory
+cycle_milo_1,3,milo,Rook,interrupt_work,0.32,0.37,0.50888,waited_and_asked,0.62,0.32288,0.2904,0.4144,0.7204,0.0272,repair lowers pressure without deleting memory
+cycle_milo_2,8,milo,Rook,moved_owned_object,0.42,0.32288,0.50516,returned_object_and_apologized,0.78,0.27116,0.2968,0.4528,0.7288,0.0384,repair lowers pressure without deleting memory
+cycle_milo_3,21,milo,Rook,ignored_refusal,0.46,0.27116,0.4708,accepted_no_and_offered_route,0.82,0.2248,0.324,0.488,0.7336,0.0448,repair lowers pressure without deleting memory
+cycle_milo_4,55,milo,Rook,misnamed_publicly,0.28,0.2248,0.34632,corrected_name_in_public,0.7,0.13632,0.4096,0.5496,0.7084,0.0112,repair lowers pressure without deleting memory
+cycle_sera_1,3,sera,Mara,interrupt_work,0.32,0.51,0.65784,waited_and_asked,0.62,0.47184,0.2204,0.3444,0.7204,0.0272,repair lowers pressure without deleting memory
+cycle_sera_2,8,sera,Mara,moved_owned_object,0.42,0.47184,0.66588,returned_object_and_apologized,0.78,0.43188,0.2268,0.3828,0.7288,0.0384,repair lowers pressure without deleting memory
+cycle_sera_3,21,sera,Mara,ignored_refusal,0.46,0.43188,0.6444,accepted_no_and_offered_route,0.82,0.3984,0.254,0.418,0.7336,0.0448,repair lowers pressure without deleting memory
+cycle_sera_4,55,sera,Mara,misnamed_publicly,0.28,0.3984,0.52776,corrected_name_in_public,0.7,0.31776,0.3396,0.4796,0.7084,0.0112,repair lowers pressure without deleting memory
+cycle_niko_1,3,niko,Rook,interrupt_work,0.32,0.39,0.53016,waited_and_asked,0.62,0.34416,0.3104,0.4344,0.7204,0.0272,repair lowers pressure without deleting memory
+cycle_niko_2,8,niko,Rook,moved_owned_object,0.42,0.34416,0.52812,returned_object_and_apologized,0.78,0.29412,0.3168,0.4728,0.7288,0.0384,repair lowers pressure without deleting memory
+cycle_niko_3,21,niko,Rook,ignored_refusal,0.46,0.29412,0.4956,accepted_no_and_offered_route,0.82,0.2496,0.344,0.508,0.7336,0.0448,repair lowers pressure without deleting memory
+cycle_niko_4,55,niko,Rook,misnamed_publicly,0.28,0.2496,0.37224,corrected_name_in_public,0.7,0.16224,0.4296,0.5696,0.7084,0.0112,repair lowers pressure without deleting memory

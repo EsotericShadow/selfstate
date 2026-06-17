@@ -1,0 +1,31 @@
+utterance_id,day,tick,agent_id,raw_text,expected_intent,expected_goal_effect,expected_schedule_effect,privacy_sensitive
+u_1_ka60,1,20,ka60,can I trade a fair token for the dry route pass [katr6],trade,prepare_fair_exchange,market_slot,False
+u_1_mu61,1,24,mu61,I can help repair but you choose the tool [mubo6],help,accept_help_if_boundary_clear,work_slot,True
+u_1_lo62,1,28,lo62,may I observe the ritual from the edge [lori6],ritual_consent,offer_edge_place,ritual_slot,True
+u_1_sa63,1,32,sa63,sorry I stepped too close; I will move back [sase6],apology,repair_relationship,repair_slot,True
+u_1_ni64,1,36,ni64,that thing maybe means something [nise6],ambiguous,delay_goal_change,clarify_slot,False
+u_2_ka60,2,40,ka60,I can help repair but you choose the tool [kabo6],help,accept_help_if_boundary_clear,work_slot,True
+u_2_mu61,2,44,mu61,may I observe the ritual from the edge [muri6],ritual_consent,offer_edge_place,ritual_slot,True
+u_2_lo62,2,48,lo62,sorry I stepped too close; I will move back [lose6],apology,repair_relationship,repair_slot,True
+u_2_sa63,2,52,sa63,that thing maybe means something [sase6],ambiguous,delay_goal_change,clarify_slot,False
+u_2_ni64,2,56,ni64,"hello Ka60, I will keep distance while asking your goal [nibo6]",goal_question,explain_goal_publicly,planning_slot,False
+u_3_ka60,3,60,ka60,may I observe the ritual from the edge [kari6],ritual_consent,offer_edge_place,ritual_slot,True
+u_3_mu61,3,64,mu61,sorry I stepped too close; I will move back [muse6],apology,repair_relationship,repair_slot,True
+u_3_lo62,3,68,lo62,that thing maybe means something [lose6],ambiguous,delay_goal_change,clarify_slot,False
+u_3_sa63,3,72,sa63,"hello Ka60, I will keep distance while asking your goal [sabo6]",goal_question,explain_goal_publicly,planning_slot,False
+u_3_ni64,3,76,ni64,can I trade a fair token for the dry route pass [nitr6],trade,prepare_fair_exchange,market_slot,False
+u_5_ka60,5,80,ka60,that thing maybe means something [kase6],ambiguous,delay_goal_change,clarify_slot,False
+u_5_mu61,5,84,mu61,"hello Ka60, I will keep distance while asking your goal [mubo6]",goal_question,explain_goal_publicly,planning_slot,False
+u_5_lo62,5,88,lo62,can I trade a fair token for the dry route pass [lotr6],trade,prepare_fair_exchange,market_slot,False
+u_5_sa63,5,92,sa63,I can help repair but you choose the tool [sabo6],help,accept_help_if_boundary_clear,work_slot,True
+u_5_ni64,5,96,ni64,may I observe the ritual from the edge [niri6],ritual_consent,offer_edge_place,ritual_slot,True
+u_8_ka60,8,100,ka60,I can help repair but you choose the tool [kabo6],help,accept_help_if_boundary_clear,work_slot,True
+u_8_mu61,8,104,mu61,may I observe the ritual from the edge [muri6],ritual_consent,offer_edge_place,ritual_slot,True
+u_8_lo62,8,108,lo62,sorry I stepped too close; I will move back [lose6],apology,repair_relationship,repair_slot,True
+u_8_sa63,8,112,sa63,that thing maybe means something [sase6],ambiguous,delay_goal_change,clarify_slot,False
+u_8_ni64,8,116,ni64,"hello Ka60, I will keep distance while asking your goal [nibo6]",goal_question,explain_goal_publicly,planning_slot,False
+u_13_ka60,13,120,ka60,can I trade a fair token for the dry route pass [katr6],trade,prepare_fair_exchange,market_slot,False
+u_13_mu61,13,124,mu61,I can help repair but you choose the tool [mubo6],help,accept_help_if_boundary_clear,work_slot,True
+u_13_lo62,13,128,lo62,may I observe the ritual from the edge [lori6],ritual_consent,offer_edge_place,ritual_slot,True
+u_13_sa63,13,132,sa63,sorry I stepped too close; I will move back [sase6],apology,repair_relationship,repair_slot,True
+u_13_ni64,13,136,ni64,that thing maybe means something [nise6],ambiguous,delay_goal_change,clarify_slot,False

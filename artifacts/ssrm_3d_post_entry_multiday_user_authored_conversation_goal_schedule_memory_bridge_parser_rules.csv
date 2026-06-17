@@ -1,0 +1,9 @@
+rule_id,intent,keyword_pattern,proto_token_hint,priority,schedule_binding,goal_binding,ambiguity_policy
+rule_greet,greet,"[""hello"", ""meet"", ""greet"", ""welcome""]",se,1,no_schedule_change,increase_social_opening,answer briefly
+rule_trade,trade,"[""trade"", ""price"", ""exchange"", ""buy"", ""fair""]",tr,2,market_slot,prepare_fair_exchange,ask which good
+rule_help,help,"[""help"", ""repair"", ""carry"", ""fix"", ""assist""]",bo,3,work_slot,accept_help_if_boundary_clear,ask tool owner
+rule_ritual,ritual_consent,"[""ritual"", ""join"", ""observe"", ""ceremony"", ""edge""]",ri,4,ritual_slot,offer_edge_place,offer observe option
+rule_boundary,boundary,"[""permission"", ""touch"", ""distance"", ""no"", ""boundary""]",se,5,pause_slot,protect_boundary,confirm no-touch
+rule_apology,apology,"[""sorry"", ""apologize"", ""wrong"", ""repair trust""]",se,6,repair_slot,repair_relationship,acknowledge but retain memory
+rule_goal,goal_question,"[""goal"", ""plan"", ""want"", ""tomorrow"", ""need""]",bo,7,planning_slot,explain_goal_publicly,share only public goal
+rule_ambiguous,ambiguous,"[""thing"", ""stuff"", ""maybe"", ""whatever""]",,9,clarify_slot,delay_goal_change,ask clarification

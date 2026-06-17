@@ -269,3 +269,7 @@ Report 236 adds the first deterministic browser-playable avatar-entry prototype 
 
 Report 237 adds deterministic typed post-entry conversation after avatar entry. It generates a 20-token proto-language lexicon, 25 typed avatar utterances, 25 intent routes, 25 proto-language interpretations, 25 dialogue responses, 25 relationship memory writes, 25 multi-day consequences, 25 session states, transcript persistence events, and a browser visualization with agent selection and text input. The run passes with readiness 0.980973 and weakest-channel score 0.856000. The weakest channel is proto-language interpretation confidence, correctly marking the next language work. No LLM is called.
 
+## Report 238 Multi-Day User-Authored Conversation Bridge Note
+
+Report 238 moves post-entry typed interaction into a multi-day browser-local state loop. It generates 30 user-authored utterance examples, 8 parser rules, 30 parsed intents, 30 public agent goals, 30 goal updates, 30 household schedule changes, 30 relationship memory updates, 13 browser-local memory events, 30 consequence resolutions, 30 durable snapshots, and 30 loop ticks. The run passes with readiness 0.985091 and weakest-channel score 0.866667. The weakest channel is parser accuracy, correctly preserving the boundary that this is deterministic routing, not open-ended language understanding.
+

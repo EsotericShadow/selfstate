@@ -1,0 +1,31 @@
+schedule_id,utterance_id,household_id,agent_id,day,old_slot,new_slot,conflict_detected,conflict_resolution,schedule_integrity_score
+sched_u_1_ka60,u_1_ka60,westkeepers,ka60,1,day 1 westkeepers baseline work/ritual/market rotation,day 1 westkeepers adds trade response in market_slot,False,slot inserted without conflict,0.96
+sched_u_1_mu61,u_1_mu61,mossgarden,mu61,1,day 1 mossgarden baseline work/ritual/market rotation,day 1 mossgarden adds help response in work_slot,False,slot inserted without conflict,0.96
+sched_u_1_lo62,u_1_lo62,ledgerkin,lo62,1,day 1 ledgerkin baseline work/ritual/market rotation,day 1 ledgerkin adds ritual_consent response in ritual_slot,False,slot inserted without conflict,0.96
+sched_u_1_sa63,u_1_sa63,redstair,sa63,1,day 1 redstair baseline work/ritual/market rotation,day 1 redstair adds apology response in repair_slot,False,slot inserted without conflict,0.96
+sched_u_1_ni64,u_1_ni64,wheelwright,ni64,1,day 1 wheelwright baseline work/ritual/market rotation,day 1 wheelwright adds ambiguous response in clarify_slot,False,slot inserted without conflict,0.96
+sched_u_2_ka60,u_2_ka60,westkeepers,ka60,2,day 2 westkeepers baseline work/ritual/market rotation,day 2 westkeepers adds help response in work_slot,True,move lower-priority chore after rest bell,0.9
+sched_u_2_mu61,u_2_mu61,mossgarden,mu61,2,day 2 mossgarden baseline work/ritual/market rotation,day 2 mossgarden adds ritual_consent response in ritual_slot,True,move lower-priority chore after rest bell,0.9
+sched_u_2_lo62,u_2_lo62,ledgerkin,lo62,2,day 2 ledgerkin baseline work/ritual/market rotation,day 2 ledgerkin adds apology response in repair_slot,False,slot inserted without conflict,0.96
+sched_u_2_sa63,u_2_sa63,redstair,sa63,2,day 2 redstair baseline work/ritual/market rotation,day 2 redstair adds ambiguous response in clarify_slot,False,slot inserted without conflict,0.96
+sched_u_2_ni64,u_2_ni64,wheelwright,ni64,2,day 2 wheelwright baseline work/ritual/market rotation,day 2 wheelwright adds greet response in planning_slot,False,slot inserted without conflict,0.96
+sched_u_3_ka60,u_3_ka60,westkeepers,ka60,3,day 3 westkeepers baseline work/ritual/market rotation,day 3 westkeepers adds ritual_consent response in ritual_slot,False,slot inserted without conflict,0.96
+sched_u_3_mu61,u_3_mu61,mossgarden,mu61,3,day 3 mossgarden baseline work/ritual/market rotation,day 3 mossgarden adds apology response in repair_slot,False,slot inserted without conflict,0.96
+sched_u_3_lo62,u_3_lo62,ledgerkin,lo62,3,day 3 ledgerkin baseline work/ritual/market rotation,day 3 ledgerkin adds ambiguous response in clarify_slot,False,slot inserted without conflict,0.96
+sched_u_3_sa63,u_3_sa63,redstair,sa63,3,day 3 redstair baseline work/ritual/market rotation,day 3 redstair adds greet response in planning_slot,False,slot inserted without conflict,0.96
+sched_u_3_ni64,u_3_ni64,wheelwright,ni64,3,day 3 wheelwright baseline work/ritual/market rotation,day 3 wheelwright adds trade response in market_slot,False,slot inserted without conflict,0.96
+sched_u_5_ka60,u_5_ka60,westkeepers,ka60,5,day 5 westkeepers baseline work/ritual/market rotation,day 5 westkeepers adds ambiguous response in clarify_slot,False,slot inserted without conflict,0.96
+sched_u_5_mu61,u_5_mu61,mossgarden,mu61,5,day 5 mossgarden baseline work/ritual/market rotation,day 5 mossgarden adds greet response in planning_slot,False,slot inserted without conflict,0.96
+sched_u_5_lo62,u_5_lo62,ledgerkin,lo62,5,day 5 ledgerkin baseline work/ritual/market rotation,day 5 ledgerkin adds trade response in market_slot,True,move lower-priority chore after rest bell,0.9
+sched_u_5_sa63,u_5_sa63,redstair,sa63,5,day 5 redstair baseline work/ritual/market rotation,day 5 redstair adds help response in work_slot,True,move lower-priority chore after rest bell,0.9
+sched_u_5_ni64,u_5_ni64,wheelwright,ni64,5,day 5 wheelwright baseline work/ritual/market rotation,day 5 wheelwright adds ritual_consent response in ritual_slot,True,move lower-priority chore after rest bell,0.9
+sched_u_8_ka60,u_8_ka60,westkeepers,ka60,8,day 8 westkeepers baseline work/ritual/market rotation,day 8 westkeepers adds help response in work_slot,False,slot inserted without conflict,0.96
+sched_u_8_mu61,u_8_mu61,mossgarden,mu61,8,day 8 mossgarden baseline work/ritual/market rotation,day 8 mossgarden adds ritual_consent response in ritual_slot,False,slot inserted without conflict,0.96
+sched_u_8_lo62,u_8_lo62,ledgerkin,lo62,8,day 8 ledgerkin baseline work/ritual/market rotation,day 8 ledgerkin adds apology response in repair_slot,False,slot inserted without conflict,0.96
+sched_u_8_sa63,u_8_sa63,redstair,sa63,8,day 8 redstair baseline work/ritual/market rotation,day 8 redstair adds ambiguous response in clarify_slot,False,slot inserted without conflict,0.96
+sched_u_8_ni64,u_8_ni64,wheelwright,ni64,8,day 8 wheelwright baseline work/ritual/market rotation,day 8 wheelwright adds greet response in planning_slot,False,slot inserted without conflict,0.96
+sched_u_13_ka60,u_13_ka60,westkeepers,ka60,13,day 13 westkeepers baseline work/ritual/market rotation,day 13 westkeepers adds trade response in market_slot,False,slot inserted without conflict,0.96
+sched_u_13_mu61,u_13_mu61,mossgarden,mu61,13,day 13 mossgarden baseline work/ritual/market rotation,day 13 mossgarden adds help response in work_slot,False,slot inserted without conflict,0.96
+sched_u_13_lo62,u_13_lo62,ledgerkin,lo62,13,day 13 ledgerkin baseline work/ritual/market rotation,day 13 ledgerkin adds ritual_consent response in ritual_slot,False,slot inserted without conflict,0.96
+sched_u_13_sa63,u_13_sa63,redstair,sa63,13,day 13 redstair baseline work/ritual/market rotation,day 13 redstair adds apology response in repair_slot,False,slot inserted without conflict,0.96
+sched_u_13_ni64,u_13_ni64,wheelwright,ni64,13,day 13 wheelwright baseline work/ritual/market rotation,day 13 wheelwright adds ambiguous response in clarify_slot,False,slot inserted without conflict,0.96

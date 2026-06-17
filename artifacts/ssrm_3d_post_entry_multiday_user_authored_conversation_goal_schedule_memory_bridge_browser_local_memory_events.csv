@@ -1,0 +1,14 @@
+local_event_id,day,tick,action,key,rows_written,rows_read,expected_persistence,integrity_score
+local_day1_write,1,501,localStorage.setItem,ssrm238_memory,5,0,all prior day memory rows remain serialized,1.0
+local_day1_read,1,521,localStorage.getItem,ssrm238_memory,5,5,restore reads all prior memory rows,1.0
+local_day2_write,2,502,localStorage.setItem,ssrm238_memory,10,0,all prior day memory rows remain serialized,1.0
+local_day2_read,2,522,localStorage.getItem,ssrm238_memory,10,10,restore reads all prior memory rows,1.0
+local_day3_write,3,503,localStorage.setItem,ssrm238_memory,15,0,all prior day memory rows remain serialized,1.0
+local_day3_read,3,523,localStorage.getItem,ssrm238_memory,15,15,restore reads all prior memory rows,1.0
+local_day5_write,5,505,localStorage.setItem,ssrm238_memory,20,0,all prior day memory rows remain serialized,1.0
+local_day5_read,5,525,localStorage.getItem,ssrm238_memory,20,20,restore reads all prior memory rows,1.0
+local_day8_write,8,508,localStorage.setItem,ssrm238_memory,25,0,all prior day memory rows remain serialized,1.0
+local_day8_read,8,528,localStorage.getItem,ssrm238_memory,25,25,restore reads all prior memory rows,1.0
+local_day13_write,13,513,localStorage.setItem,ssrm238_memory,30,0,all prior day memory rows remain serialized,1.0
+local_day13_read,13,533,localStorage.getItem,ssrm238_memory,30,30,restore reads all prior memory rows,1.0
+local_export_replay,13,700,exportReplay,ssrm238_replay,30,30,"replay includes relationship, goal, schedule, and transcript rows",1.0

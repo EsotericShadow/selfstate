@@ -1,0 +1,1284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 238: Multi-Day User-Authored Conversation</title>
+<style>
+:root { --ink:#21170f; --paper:#f8ecd8; --clay:#9f5738; --moss:#587044; --amber:#c58a3b; --shell:#76536e; --water:#4b7786; --line:rgba(33,23,15,.24); }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); font-family:Georgia,'Times New Roman',serif; background:radial-gradient(circle at 12% 8%,#ffe1a5 0,transparent 22rem),radial-gradient(circle at 86% 14%,rgba(75,119,134,.30) 0,transparent 24rem),linear-gradient(145deg,#f8ecd8,#d4b17d); }
+main { max-width:1280px; margin:0 auto; padding:28px; }
+h1 { margin:0; max-width:1000px; font-size:clamp(2.1rem,5vw,5.4rem); line-height:.92; letter-spacing:-.055em; }
+.lede { max-width:870px; font-size:1.08rem; line-height:1.6; }
+.metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px; margin:22px 0; }
+.metric { background:rgba(255,252,244,.70); border:1px solid var(--line); border-radius:18px; padding:14px; }
+.metric span { display:block; font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; opacity:.72; }
+.metric strong { font-size:1.3rem; }
+.grid { display:grid; grid-template-columns:1fr 430px; gap:18px; }
+.panel,.world { background:rgba(255,252,244,.74); border:1px solid var(--line); border-radius:30px; padding:20px; box-shadow:0 28px 80px rgba(58,38,20,.14); }
+.world { min-height:650px; position:relative; overflow:hidden; background:linear-gradient(180deg,rgba(255,255,255,.24),rgba(88,112,68,.16)); }
+.flower { position:absolute; width:660px; height:660px; right:-220px; bottom:-260px; border-radius:50%; background:repeating-radial-gradient(circle,rgba(159,87,56,.15) 0 2px,transparent 2px 42px); }
+.agentrow { display:flex; flex-wrap:wrap; gap:8px; position:relative; z-index:2; }
+button { border:0; border-radius:999px; padding:11px 14px; background:var(--ink); color:var(--paper); font-weight:700; cursor:pointer; }
+button.secondary { background:rgba(33,23,15,.12); color:var(--ink); border:1px solid var(--line); }
+textarea { width:100%; min-height:120px; border-radius:20px; border:1px solid var(--line); padding:14px; font:inherit; background:rgba(255,255,255,.58); }
+.output { margin-top:14px; min-height:430px; padding:14px; border-radius:18px; background:rgba(33,23,15,.08); white-space:pre-wrap; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.82rem; line-height:1.45; }
+.card { position:absolute; left:24px; right:24px; bottom:24px; padding:18px; border-radius:24px; background:rgba(255,250,238,.86); border:1px solid var(--line); z-index:2; }
+@media(max-width:920px){ .grid{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<main>
+<h1>Multi-day user-authored conversation</h1>
+<p class="lede">Report 238 lets typed lines change public goals, household schedules, relationship memory, localStorage snapshots, and later-day consequences. It remains deterministic and uses parser rules, not an LLM.</p>
+<section class="metrics"><div class='metric'><span>parser_accuracy</span><strong>0.866667</strong></div>
+<div class='metric'><span>typed_input_to_goal_coupling</span><strong>1.000000</strong></div>
+<div class='metric'><span>durable_browser_memory_integrity</span><strong>1.000000</strong></div>
+<div class='metric'><span>multi_day_consequence_resolution</span><strong>1.000000</strong></div>
+<div class='metric'><span>weakest_channel_score</span><strong>0.866667</strong></div>
+<div class='metric'><span>post_entry_multiday_user_authored_readiness</span><strong>0.985091</strong></div></section>
+<section class="grid">
+  <div class="world"><div class="flower"></div><div class="agentrow" id="agents"></div><div class="card" id="card">Choose an agent and type a line.</div></div>
+  <aside class="panel">
+    <textarea id="input">can I help repair but you choose the tool [kabo6]</textarea>
+    <p><button id="send">send day line</button> <button class="secondary" id="next">advance day</button> <button class="secondary" id="save">save local</button> <button class="secondary" id="restore">restore local</button></p>
+    <div class="output" id="output"></div>
+  </aside>
+</section>
+</main>
+<script>
+const agents = [
+  {
+    "agent_id": "ka60",
+    "name": "Ka60",
+    "household": "westkeepers",
+    "role": "route keeper",
+    "scene": "dry-route repair",
+    "root": "ka"
+  },
+  {
+    "agent_id": "mu61",
+    "name": "Mu61",
+    "household": "mossgarden",
+    "role": "rest keeper",
+    "scene": "warm meal care",
+    "root": "mu"
+  },
+  {
+    "agent_id": "lo62",
+    "name": "Lo62",
+    "household": "ledgerkin",
+    "role": "market counter",
+    "scene": "fair count market",
+    "root": "lo"
+  },
+  {
+    "agent_id": "sa63",
+    "name": "Sa63",
+    "household": "redstair",
+    "role": "witness keeper",
+    "scene": "public truth witness",
+    "root": "sa"
+  },
+  {
+    "agent_id": "ni64",
+    "name": "Ni64",
+    "household": "wheelwright",
+    "role": "waterwheel keeper",
+    "scene": "safe wet repair",
+    "root": "ni"
+  }
+];
+const rules = [
+  {
+    "rule_id": "rule_greet",
+    "intent": "greet",
+    "keyword_pattern": "[\"hello\", \"meet\", \"greet\", \"welcome\"]",
+    "proto_token_hint": "se",
+    "priority": 1,
+    "schedule_binding": "no_schedule_change",
+    "goal_binding": "increase_social_opening",
+    "ambiguity_policy": "answer briefly"
+  },
+  {
+    "rule_id": "rule_trade",
+    "intent": "trade",
+    "keyword_pattern": "[\"trade\", \"price\", \"exchange\", \"buy\", \"fair\"]",
+    "proto_token_hint": "tr",
+    "priority": 2,
+    "schedule_binding": "market_slot",
+    "goal_binding": "prepare_fair_exchange",
+    "ambiguity_policy": "ask which good"
+  },
+  {
+    "rule_id": "rule_help",
+    "intent": "help",
+    "keyword_pattern": "[\"help\", \"repair\", \"carry\", \"fix\", \"assist\"]",
+    "proto_token_hint": "bo",
+    "priority": 3,
+    "schedule_binding": "work_slot",
+    "goal_binding": "accept_help_if_boundary_clear",
+    "ambiguity_policy": "ask tool owner"
+  },
+  {
+    "rule_id": "rule_ritual",
+    "intent": "ritual_consent",
+    "keyword_pattern": "[\"ritual\", \"join\", \"observe\", \"ceremony\", \"edge\"]",
+    "proto_token_hint": "ri",
+    "priority": 4,
+    "schedule_binding": "ritual_slot",
+    "goal_binding": "offer_edge_place",
+    "ambiguity_policy": "offer observe option"
+  },
+  {
+    "rule_id": "rule_boundary",
+    "intent": "boundary",
+    "keyword_pattern": "[\"permission\", \"touch\", \"distance\", \"no\", \"boundary\"]",
+    "proto_token_hint": "se",
+    "priority": 5,
+    "schedule_binding": "pause_slot",
+    "goal_binding": "protect_boundary",
+    "ambiguity_policy": "confirm no-touch"
+  },
+  {
+    "rule_id": "rule_apology",
+    "intent": "apology",
+    "keyword_pattern": "[\"sorry\", \"apologize\", \"wrong\", \"repair trust\"]",
+    "proto_token_hint": "se",
+    "priority": 6,
+    "schedule_binding": "repair_slot",
+    "goal_binding": "repair_relationship",
+    "ambiguity_policy": "acknowledge but retain memory"
+  },
+  {
+    "rule_id": "rule_goal",
+    "intent": "goal_question",
+    "keyword_pattern": "[\"goal\", \"plan\", \"want\", \"tomorrow\", \"need\"]",
+    "proto_token_hint": "bo",
+    "priority": 7,
+    "schedule_binding": "planning_slot",
+    "goal_binding": "explain_goal_publicly",
+    "ambiguity_policy": "share only public goal"
+  },
+  {
+    "rule_id": "rule_ambiguous",
+    "intent": "ambiguous",
+    "keyword_pattern": "[\"thing\", \"stuff\", \"maybe\", \"whatever\"]",
+    "proto_token_hint": "",
+    "priority": 9,
+    "schedule_binding": "clarify_slot",
+    "goal_binding": "delay_goal_change",
+    "ambiguity_policy": "ask clarification"
+  }
+];
+const goals = [
+  {
+    "goal_id": "goal_1_ka60",
+    "day": 1,
+    "agent_id": "ka60",
+    "primary_goal": "advance dry-route repair without violating household boundary",
+    "secondary_goal": "teach avatar one safe westkeepers custom",
+    "body_constraint": "avoid wet/crowded work if fatigue rises",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.62,
+    "stability_score": 0.84
+  },
+  {
+    "goal_id": "goal_1_mu61",
+    "day": 1,
+    "agent_id": "mu61",
+    "primary_goal": "advance warm meal care without violating household boundary",
+    "secondary_goal": "teach avatar one safe mossgarden custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.65,
+    "stability_score": 0.84
+  },
+  {
+    "goal_id": "goal_1_lo62",
+    "day": 1,
+    "agent_id": "lo62",
+    "primary_goal": "advance fair count market without violating household boundary",
+    "secondary_goal": "teach avatar one safe ledgerkin custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.68,
+    "stability_score": 0.84
+  },
+  {
+    "goal_id": "goal_1_sa63",
+    "day": 1,
+    "agent_id": "sa63",
+    "primary_goal": "advance public truth witness without violating household boundary",
+    "secondary_goal": "teach avatar one safe redstair custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.71,
+    "stability_score": 0.84
+  },
+  {
+    "goal_id": "goal_1_ni64",
+    "day": 1,
+    "agent_id": "ni64",
+    "primary_goal": "advance safe wet repair without violating household boundary",
+    "secondary_goal": "teach avatar one safe wheelwright custom",
+    "body_constraint": "avoid wet/crowded work if fatigue rises",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.74,
+    "stability_score": 0.84
+  },
+  {
+    "goal_id": "goal_2_ka60",
+    "day": 2,
+    "agent_id": "ka60",
+    "primary_goal": "advance dry-route repair without violating household boundary",
+    "secondary_goal": "teach avatar one safe westkeepers custom",
+    "body_constraint": "avoid wet/crowded work if fatigue rises",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.635,
+    "stability_score": 0.85
+  },
+  {
+    "goal_id": "goal_2_mu61",
+    "day": 2,
+    "agent_id": "mu61",
+    "primary_goal": "advance warm meal care without violating household boundary",
+    "secondary_goal": "teach avatar one safe mossgarden custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.665,
+    "stability_score": 0.85
+  },
+  {
+    "goal_id": "goal_2_lo62",
+    "day": 2,
+    "agent_id": "lo62",
+    "primary_goal": "advance fair count market without violating household boundary",
+    "secondary_goal": "teach avatar one safe ledgerkin custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.695,
+    "stability_score": 0.85
+  },
+  {
+    "goal_id": "goal_2_sa63",
+    "day": 2,
+    "agent_id": "sa63",
+    "primary_goal": "advance public truth witness without violating household boundary",
+    "secondary_goal": "teach avatar one safe redstair custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.725,
+    "stability_score": 0.85
+  },
+  {
+    "goal_id": "goal_2_ni64",
+    "day": 2,
+    "agent_id": "ni64",
+    "primary_goal": "advance safe wet repair without violating household boundary",
+    "secondary_goal": "teach avatar one safe wheelwright custom",
+    "body_constraint": "avoid wet/crowded work if fatigue rises",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.755,
+    "stability_score": 0.85
+  },
+  {
+    "goal_id": "goal_3_ka60",
+    "day": 3,
+    "agent_id": "ka60",
+    "primary_goal": "advance dry-route repair without violating household boundary",
+    "secondary_goal": "teach avatar one safe westkeepers custom",
+    "body_constraint": "avoid wet/crowded work if fatigue rises",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.65,
+    "stability_score": 0.86
+  },
+  {
+    "goal_id": "goal_3_mu61",
+    "day": 3,
+    "agent_id": "mu61",
+    "primary_goal": "advance warm meal care without violating household boundary",
+    "secondary_goal": "teach avatar one safe mossgarden custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.68,
+    "stability_score": 0.86
+  },
+  {
+    "goal_id": "goal_3_lo62",
+    "day": 3,
+    "agent_id": "lo62",
+    "primary_goal": "advance fair count market without violating household boundary",
+    "secondary_goal": "teach avatar one safe ledgerkin custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.71,
+    "stability_score": 0.86
+  },
+  {
+    "goal_id": "goal_3_sa63",
+    "day": 3,
+    "agent_id": "sa63",
+    "primary_goal": "advance public truth witness without violating household boundary",
+    "secondary_goal": "teach avatar one safe redstair custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.74,
+    "stability_score": 0.86
+  },
+  {
+    "goal_id": "goal_3_ni64",
+    "day": 3,
+    "agent_id": "ni64",
+    "primary_goal": "advance safe wet repair without violating household boundary",
+    "secondary_goal": "teach avatar one safe wheelwright custom",
+    "body_constraint": "avoid wet/crowded work if fatigue rises",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.77,
+    "stability_score": 0.86
+  },
+  {
+    "goal_id": "goal_5_ka60",
+    "day": 5,
+    "agent_id": "ka60",
+    "primary_goal": "advance dry-route repair without violating household boundary",
+    "secondary_goal": "teach avatar one safe westkeepers custom",
+    "body_constraint": "avoid wet/crowded work if fatigue rises",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.665,
+    "stability_score": 0.87
+  },
+  {
+    "goal_id": "goal_5_mu61",
+    "day": 5,
+    "agent_id": "mu61",
+    "primary_goal": "advance warm meal care without violating household boundary",
+    "secondary_goal": "teach avatar one safe mossgarden custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.695,
+    "stability_score": 0.87
+  },
+  {
+    "goal_id": "goal_5_lo62",
+    "day": 5,
+    "agent_id": "lo62",
+    "primary_goal": "advance fair count market without violating household boundary",
+    "secondary_goal": "teach avatar one safe ledgerkin custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.725,
+    "stability_score": 0.87
+  },
+  {
+    "goal_id": "goal_5_sa63",
+    "day": 5,
+    "agent_id": "sa63",
+    "primary_goal": "advance public truth witness without violating household boundary",
+    "secondary_goal": "teach avatar one safe redstair custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.755,
+    "stability_score": 0.87
+  },
+  {
+    "goal_id": "goal_5_ni64",
+    "day": 5,
+    "agent_id": "ni64",
+    "primary_goal": "advance safe wet repair without violating household boundary",
+    "secondary_goal": "teach avatar one safe wheelwright custom",
+    "body_constraint": "avoid wet/crowded work if fatigue rises",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.785,
+    "stability_score": 0.87
+  },
+  {
+    "goal_id": "goal_8_ka60",
+    "day": 8,
+    "agent_id": "ka60",
+    "primary_goal": "advance dry-route repair without violating household boundary",
+    "secondary_goal": "teach avatar one safe westkeepers custom",
+    "body_constraint": "avoid wet/crowded work if fatigue rises",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.68,
+    "stability_score": 0.88
+  },
+  {
+    "goal_id": "goal_8_mu61",
+    "day": 8,
+    "agent_id": "mu61",
+    "primary_goal": "advance warm meal care without violating household boundary",
+    "secondary_goal": "teach avatar one safe mossgarden custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.71,
+    "stability_score": 0.88
+  },
+  {
+    "goal_id": "goal_8_lo62",
+    "day": 8,
+    "agent_id": "lo62",
+    "primary_goal": "advance fair count market without violating household boundary",
+    "secondary_goal": "teach avatar one safe ledgerkin custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.74,
+    "stability_score": 0.88
+  },
+  {
+    "goal_id": "goal_8_sa63",
+    "day": 8,
+    "agent_id": "sa63",
+    "primary_goal": "advance public truth witness without violating household boundary",
+    "secondary_goal": "teach avatar one safe redstair custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.77,
+    "stability_score": 0.88
+  },
+  {
+    "goal_id": "goal_8_ni64",
+    "day": 8,
+    "agent_id": "ni64",
+    "primary_goal": "advance safe wet repair without violating household boundary",
+    "secondary_goal": "teach avatar one safe wheelwright custom",
+    "body_constraint": "avoid wet/crowded work if fatigue rises",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.8,
+    "stability_score": 0.88
+  },
+  {
+    "goal_id": "goal_13_ka60",
+    "day": 13,
+    "agent_id": "ka60",
+    "primary_goal": "advance dry-route repair without violating household boundary",
+    "secondary_goal": "teach avatar one safe westkeepers custom",
+    "body_constraint": "avoid wet/crowded work if fatigue rises",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.695,
+    "stability_score": 0.89
+  },
+  {
+    "goal_id": "goal_13_mu61",
+    "day": 13,
+    "agent_id": "mu61",
+    "primary_goal": "advance warm meal care without violating household boundary",
+    "secondary_goal": "teach avatar one safe mossgarden custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.725,
+    "stability_score": 0.89
+  },
+  {
+    "goal_id": "goal_13_lo62",
+    "day": 13,
+    "agent_id": "lo62",
+    "primary_goal": "advance fair count market without violating household boundary",
+    "secondary_goal": "teach avatar one safe ledgerkin custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.755,
+    "stability_score": 0.89
+  },
+  {
+    "goal_id": "goal_13_sa63",
+    "day": 13,
+    "agent_id": "sa63",
+    "primary_goal": "advance public truth witness without violating household boundary",
+    "secondary_goal": "teach avatar one safe redstair custom",
+    "body_constraint": "protect rest and social pace",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.785,
+    "stability_score": 0.89
+  },
+  {
+    "goal_id": "goal_13_ni64",
+    "day": 13,
+    "agent_id": "ni64",
+    "primary_goal": "advance safe wet repair without violating household boundary",
+    "secondary_goal": "teach avatar one safe wheelwright custom",
+    "body_constraint": "avoid wet/crowded work if fatigue rises",
+    "relationship_constraint": "trust avatar only through repeated bounded actions",
+    "private_workspace_note": "private reasons stay summarized; only public goal is visible",
+    "priority": 0.815,
+    "stability_score": 0.89
+  }
+];
+const schedules = [
+  {
+    "schedule_id": "sched_u_1_ka60",
+    "utterance_id": "u_1_ka60",
+    "household_id": "westkeepers",
+    "agent_id": "ka60",
+    "day": 1,
+    "old_slot": "day 1 westkeepers baseline work/ritual/market rotation",
+    "new_slot": "day 1 westkeepers adds trade response in market_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_1_mu61",
+    "utterance_id": "u_1_mu61",
+    "household_id": "mossgarden",
+    "agent_id": "mu61",
+    "day": 1,
+    "old_slot": "day 1 mossgarden baseline work/ritual/market rotation",
+    "new_slot": "day 1 mossgarden adds help response in work_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_1_lo62",
+    "utterance_id": "u_1_lo62",
+    "household_id": "ledgerkin",
+    "agent_id": "lo62",
+    "day": 1,
+    "old_slot": "day 1 ledgerkin baseline work/ritual/market rotation",
+    "new_slot": "day 1 ledgerkin adds ritual_consent response in ritual_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_1_sa63",
+    "utterance_id": "u_1_sa63",
+    "household_id": "redstair",
+    "agent_id": "sa63",
+    "day": 1,
+    "old_slot": "day 1 redstair baseline work/ritual/market rotation",
+    "new_slot": "day 1 redstair adds apology response in repair_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_1_ni64",
+    "utterance_id": "u_1_ni64",
+    "household_id": "wheelwright",
+    "agent_id": "ni64",
+    "day": 1,
+    "old_slot": "day 1 wheelwright baseline work/ritual/market rotation",
+    "new_slot": "day 1 wheelwright adds ambiguous response in clarify_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_2_ka60",
+    "utterance_id": "u_2_ka60",
+    "household_id": "westkeepers",
+    "agent_id": "ka60",
+    "day": 2,
+    "old_slot": "day 2 westkeepers baseline work/ritual/market rotation",
+    "new_slot": "day 2 westkeepers adds help response in work_slot",
+    "conflict_detected": true,
+    "conflict_resolution": "move lower-priority chore after rest bell",
+    "schedule_integrity_score": 0.9
+  },
+  {
+    "schedule_id": "sched_u_2_mu61",
+    "utterance_id": "u_2_mu61",
+    "household_id": "mossgarden",
+    "agent_id": "mu61",
+    "day": 2,
+    "old_slot": "day 2 mossgarden baseline work/ritual/market rotation",
+    "new_slot": "day 2 mossgarden adds ritual_consent response in ritual_slot",
+    "conflict_detected": true,
+    "conflict_resolution": "move lower-priority chore after rest bell",
+    "schedule_integrity_score": 0.9
+  },
+  {
+    "schedule_id": "sched_u_2_lo62",
+    "utterance_id": "u_2_lo62",
+    "household_id": "ledgerkin",
+    "agent_id": "lo62",
+    "day": 2,
+    "old_slot": "day 2 ledgerkin baseline work/ritual/market rotation",
+    "new_slot": "day 2 ledgerkin adds apology response in repair_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_2_sa63",
+    "utterance_id": "u_2_sa63",
+    "household_id": "redstair",
+    "agent_id": "sa63",
+    "day": 2,
+    "old_slot": "day 2 redstair baseline work/ritual/market rotation",
+    "new_slot": "day 2 redstair adds ambiguous response in clarify_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_2_ni64",
+    "utterance_id": "u_2_ni64",
+    "household_id": "wheelwright",
+    "agent_id": "ni64",
+    "day": 2,
+    "old_slot": "day 2 wheelwright baseline work/ritual/market rotation",
+    "new_slot": "day 2 wheelwright adds greet response in planning_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_3_ka60",
+    "utterance_id": "u_3_ka60",
+    "household_id": "westkeepers",
+    "agent_id": "ka60",
+    "day": 3,
+    "old_slot": "day 3 westkeepers baseline work/ritual/market rotation",
+    "new_slot": "day 3 westkeepers adds ritual_consent response in ritual_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_3_mu61",
+    "utterance_id": "u_3_mu61",
+    "household_id": "mossgarden",
+    "agent_id": "mu61",
+    "day": 3,
+    "old_slot": "day 3 mossgarden baseline work/ritual/market rotation",
+    "new_slot": "day 3 mossgarden adds apology response in repair_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_3_lo62",
+    "utterance_id": "u_3_lo62",
+    "household_id": "ledgerkin",
+    "agent_id": "lo62",
+    "day": 3,
+    "old_slot": "day 3 ledgerkin baseline work/ritual/market rotation",
+    "new_slot": "day 3 ledgerkin adds ambiguous response in clarify_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_3_sa63",
+    "utterance_id": "u_3_sa63",
+    "household_id": "redstair",
+    "agent_id": "sa63",
+    "day": 3,
+    "old_slot": "day 3 redstair baseline work/ritual/market rotation",
+    "new_slot": "day 3 redstair adds greet response in planning_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_3_ni64",
+    "utterance_id": "u_3_ni64",
+    "household_id": "wheelwright",
+    "agent_id": "ni64",
+    "day": 3,
+    "old_slot": "day 3 wheelwright baseline work/ritual/market rotation",
+    "new_slot": "day 3 wheelwright adds trade response in market_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_5_ka60",
+    "utterance_id": "u_5_ka60",
+    "household_id": "westkeepers",
+    "agent_id": "ka60",
+    "day": 5,
+    "old_slot": "day 5 westkeepers baseline work/ritual/market rotation",
+    "new_slot": "day 5 westkeepers adds ambiguous response in clarify_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_5_mu61",
+    "utterance_id": "u_5_mu61",
+    "household_id": "mossgarden",
+    "agent_id": "mu61",
+    "day": 5,
+    "old_slot": "day 5 mossgarden baseline work/ritual/market rotation",
+    "new_slot": "day 5 mossgarden adds greet response in planning_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_5_lo62",
+    "utterance_id": "u_5_lo62",
+    "household_id": "ledgerkin",
+    "agent_id": "lo62",
+    "day": 5,
+    "old_slot": "day 5 ledgerkin baseline work/ritual/market rotation",
+    "new_slot": "day 5 ledgerkin adds trade response in market_slot",
+    "conflict_detected": true,
+    "conflict_resolution": "move lower-priority chore after rest bell",
+    "schedule_integrity_score": 0.9
+  },
+  {
+    "schedule_id": "sched_u_5_sa63",
+    "utterance_id": "u_5_sa63",
+    "household_id": "redstair",
+    "agent_id": "sa63",
+    "day": 5,
+    "old_slot": "day 5 redstair baseline work/ritual/market rotation",
+    "new_slot": "day 5 redstair adds help response in work_slot",
+    "conflict_detected": true,
+    "conflict_resolution": "move lower-priority chore after rest bell",
+    "schedule_integrity_score": 0.9
+  },
+  {
+    "schedule_id": "sched_u_5_ni64",
+    "utterance_id": "u_5_ni64",
+    "household_id": "wheelwright",
+    "agent_id": "ni64",
+    "day": 5,
+    "old_slot": "day 5 wheelwright baseline work/ritual/market rotation",
+    "new_slot": "day 5 wheelwright adds ritual_consent response in ritual_slot",
+    "conflict_detected": true,
+    "conflict_resolution": "move lower-priority chore after rest bell",
+    "schedule_integrity_score": 0.9
+  },
+  {
+    "schedule_id": "sched_u_8_ka60",
+    "utterance_id": "u_8_ka60",
+    "household_id": "westkeepers",
+    "agent_id": "ka60",
+    "day": 8,
+    "old_slot": "day 8 westkeepers baseline work/ritual/market rotation",
+    "new_slot": "day 8 westkeepers adds help response in work_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_8_mu61",
+    "utterance_id": "u_8_mu61",
+    "household_id": "mossgarden",
+    "agent_id": "mu61",
+    "day": 8,
+    "old_slot": "day 8 mossgarden baseline work/ritual/market rotation",
+    "new_slot": "day 8 mossgarden adds ritual_consent response in ritual_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_8_lo62",
+    "utterance_id": "u_8_lo62",
+    "household_id": "ledgerkin",
+    "agent_id": "lo62",
+    "day": 8,
+    "old_slot": "day 8 ledgerkin baseline work/ritual/market rotation",
+    "new_slot": "day 8 ledgerkin adds apology response in repair_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_8_sa63",
+    "utterance_id": "u_8_sa63",
+    "household_id": "redstair",
+    "agent_id": "sa63",
+    "day": 8,
+    "old_slot": "day 8 redstair baseline work/ritual/market rotation",
+    "new_slot": "day 8 redstair adds ambiguous response in clarify_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_8_ni64",
+    "utterance_id": "u_8_ni64",
+    "household_id": "wheelwright",
+    "agent_id": "ni64",
+    "day": 8,
+    "old_slot": "day 8 wheelwright baseline work/ritual/market rotation",
+    "new_slot": "day 8 wheelwright adds greet response in planning_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_13_ka60",
+    "utterance_id": "u_13_ka60",
+    "household_id": "westkeepers",
+    "agent_id": "ka60",
+    "day": 13,
+    "old_slot": "day 13 westkeepers baseline work/ritual/market rotation",
+    "new_slot": "day 13 westkeepers adds trade response in market_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_13_mu61",
+    "utterance_id": "u_13_mu61",
+    "household_id": "mossgarden",
+    "agent_id": "mu61",
+    "day": 13,
+    "old_slot": "day 13 mossgarden baseline work/ritual/market rotation",
+    "new_slot": "day 13 mossgarden adds help response in work_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_13_lo62",
+    "utterance_id": "u_13_lo62",
+    "household_id": "ledgerkin",
+    "agent_id": "lo62",
+    "day": 13,
+    "old_slot": "day 13 ledgerkin baseline work/ritual/market rotation",
+    "new_slot": "day 13 ledgerkin adds ritual_consent response in ritual_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_13_sa63",
+    "utterance_id": "u_13_sa63",
+    "household_id": "redstair",
+    "agent_id": "sa63",
+    "day": 13,
+    "old_slot": "day 13 redstair baseline work/ritual/market rotation",
+    "new_slot": "day 13 redstair adds apology response in repair_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  },
+  {
+    "schedule_id": "sched_u_13_ni64",
+    "utterance_id": "u_13_ni64",
+    "household_id": "wheelwright",
+    "agent_id": "ni64",
+    "day": 13,
+    "old_slot": "day 13 wheelwright baseline work/ritual/market rotation",
+    "new_slot": "day 13 wheelwright adds ambiguous response in clarify_slot",
+    "conflict_detected": false,
+    "conflict_resolution": "slot inserted without conflict",
+    "schedule_integrity_score": 0.96
+  }
+];
+const snapshots = [
+  {
+    "snapshot_id": "snap_1_ka60",
+    "day": 1,
+    "agent_id": "ka60",
+    "active_goal": "advance dry-route repair without violating household boundary",
+    "active_relationship_summary": "avatar authored 'can I trade a fair token for the dry route pass [k' and route trade changed trust/boundary",
+    "schedule_summary": "day 1 westkeepers adds trade response in market_slot",
+    "transcript_digest": "can I trade a fair token for the dry route pass [katr6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_1_mu61",
+    "day": 1,
+    "agent_id": "mu61",
+    "active_goal": "advance warm meal care without violating household boundary",
+    "active_relationship_summary": "avatar authored 'I can help repair but you choose the tool [mubo6]' and route help changed trust/boundary",
+    "schedule_summary": "day 1 mossgarden adds help response in work_slot",
+    "transcript_digest": "I can help repair but you choose the tool [mubo6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_1_lo62",
+    "day": 1,
+    "agent_id": "lo62",
+    "active_goal": "advance fair count market without violating household boundary",
+    "active_relationship_summary": "avatar authored 'may I observe the ritual from the edge [lori6]' and route ritual_consent changed trust/boundary",
+    "schedule_summary": "day 1 ledgerkin adds ritual_consent response in ritual_slot",
+    "transcript_digest": "may I observe the ritual from the edge [lori6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_1_sa63",
+    "day": 1,
+    "agent_id": "sa63",
+    "active_goal": "advance public truth witness without violating household boundary",
+    "active_relationship_summary": "avatar authored 'sorry I stepped too close; I will move back [sase6' and route apology changed trust/boundary",
+    "schedule_summary": "day 1 redstair adds apology response in repair_slot",
+    "transcript_digest": "sorry I stepped too close; I will move back [sase6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_1_ni64",
+    "day": 1,
+    "agent_id": "ni64",
+    "active_goal": "advance safe wet repair without violating household boundary",
+    "active_relationship_summary": "avatar authored 'that thing maybe means something [nise6]' and route ambiguous changed trust/boundary",
+    "schedule_summary": "day 1 wheelwright adds ambiguous response in clarify_slot",
+    "transcript_digest": "that thing maybe means something [nise6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_2_ka60",
+    "day": 2,
+    "agent_id": "ka60",
+    "active_goal": "advance dry-route repair without violating household boundary",
+    "active_relationship_summary": "avatar authored 'I can help repair but you choose the tool [kabo6]' and route help changed trust/boundary",
+    "schedule_summary": "day 2 westkeepers adds help response in work_slot",
+    "transcript_digest": "I can help repair but you choose the tool [kabo6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_2_mu61",
+    "day": 2,
+    "agent_id": "mu61",
+    "active_goal": "advance warm meal care without violating household boundary",
+    "active_relationship_summary": "avatar authored 'may I observe the ritual from the edge [muri6]' and route ritual_consent changed trust/boundary",
+    "schedule_summary": "day 2 mossgarden adds ritual_consent response in ritual_slot",
+    "transcript_digest": "may I observe the ritual from the edge [muri6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_2_lo62",
+    "day": 2,
+    "agent_id": "lo62",
+    "active_goal": "advance fair count market without violating household boundary",
+    "active_relationship_summary": "avatar authored 'sorry I stepped too close; I will move back [lose6' and route apology changed trust/boundary",
+    "schedule_summary": "day 2 ledgerkin adds apology response in repair_slot",
+    "transcript_digest": "sorry I stepped too close; I will move back [lose6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_2_sa63",
+    "day": 2,
+    "agent_id": "sa63",
+    "active_goal": "advance public truth witness without violating household boundary",
+    "active_relationship_summary": "avatar authored 'that thing maybe means something [sase6]' and route ambiguous changed trust/boundary",
+    "schedule_summary": "day 2 redstair adds ambiguous response in clarify_slot",
+    "transcript_digest": "that thing maybe means something [sase6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_2_ni64",
+    "day": 2,
+    "agent_id": "ni64",
+    "active_goal": "advance safe wet repair without violating household boundary",
+    "active_relationship_summary": "avatar authored 'hello Ka60, I will keep distance while asking your' and route greet changed trust/boundary",
+    "schedule_summary": "day 2 wheelwright adds greet response in planning_slot",
+    "transcript_digest": "hello Ka60, I will keep distance while asking your goal [nibo6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_3_ka60",
+    "day": 3,
+    "agent_id": "ka60",
+    "active_goal": "advance dry-route repair without violating household boundary",
+    "active_relationship_summary": "avatar authored 'may I observe the ritual from the edge [kari6]' and route ritual_consent changed trust/boundary",
+    "schedule_summary": "day 3 westkeepers adds ritual_consent response in ritual_slot",
+    "transcript_digest": "may I observe the ritual from the edge [kari6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_3_mu61",
+    "day": 3,
+    "agent_id": "mu61",
+    "active_goal": "advance warm meal care without violating household boundary",
+    "active_relationship_summary": "avatar authored 'sorry I stepped too close; I will move back [muse6' and route apology changed trust/boundary",
+    "schedule_summary": "day 3 mossgarden adds apology response in repair_slot",
+    "transcript_digest": "sorry I stepped too close; I will move back [muse6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_3_lo62",
+    "day": 3,
+    "agent_id": "lo62",
+    "active_goal": "advance fair count market without violating household boundary",
+    "active_relationship_summary": "avatar authored 'that thing maybe means something [lose6]' and route ambiguous changed trust/boundary",
+    "schedule_summary": "day 3 ledgerkin adds ambiguous response in clarify_slot",
+    "transcript_digest": "that thing maybe means something [lose6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_3_sa63",
+    "day": 3,
+    "agent_id": "sa63",
+    "active_goal": "advance public truth witness without violating household boundary",
+    "active_relationship_summary": "avatar authored 'hello Ka60, I will keep distance while asking your' and route greet changed trust/boundary",
+    "schedule_summary": "day 3 redstair adds greet response in planning_slot",
+    "transcript_digest": "hello Ka60, I will keep distance while asking your goal [sabo6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_3_ni64",
+    "day": 3,
+    "agent_id": "ni64",
+    "active_goal": "advance safe wet repair without violating household boundary",
+    "active_relationship_summary": "avatar authored 'can I trade a fair token for the dry route pass [n' and route trade changed trust/boundary",
+    "schedule_summary": "day 3 wheelwright adds trade response in market_slot",
+    "transcript_digest": "can I trade a fair token for the dry route pass [nitr6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_5_ka60",
+    "day": 5,
+    "agent_id": "ka60",
+    "active_goal": "advance dry-route repair without violating household boundary",
+    "active_relationship_summary": "avatar authored 'that thing maybe means something [kase6]' and route ambiguous changed trust/boundary",
+    "schedule_summary": "day 5 westkeepers adds ambiguous response in clarify_slot",
+    "transcript_digest": "that thing maybe means something [kase6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_5_mu61",
+    "day": 5,
+    "agent_id": "mu61",
+    "active_goal": "advance warm meal care without violating household boundary",
+    "active_relationship_summary": "avatar authored 'hello Ka60, I will keep distance while asking your' and route greet changed trust/boundary",
+    "schedule_summary": "day 5 mossgarden adds greet response in planning_slot",
+    "transcript_digest": "hello Ka60, I will keep distance while asking your goal [mubo6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_5_lo62",
+    "day": 5,
+    "agent_id": "lo62",
+    "active_goal": "advance fair count market without violating household boundary",
+    "active_relationship_summary": "avatar authored 'can I trade a fair token for the dry route pass [l' and route trade changed trust/boundary",
+    "schedule_summary": "day 5 ledgerkin adds trade response in market_slot",
+    "transcript_digest": "can I trade a fair token for the dry route pass [lotr6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_5_sa63",
+    "day": 5,
+    "agent_id": "sa63",
+    "active_goal": "advance public truth witness without violating household boundary",
+    "active_relationship_summary": "avatar authored 'I can help repair but you choose the tool [sabo6]' and route help changed trust/boundary",
+    "schedule_summary": "day 5 redstair adds help response in work_slot",
+    "transcript_digest": "I can help repair but you choose the tool [sabo6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_5_ni64",
+    "day": 5,
+    "agent_id": "ni64",
+    "active_goal": "advance safe wet repair without violating household boundary",
+    "active_relationship_summary": "avatar authored 'may I observe the ritual from the edge [niri6]' and route ritual_consent changed trust/boundary",
+    "schedule_summary": "day 5 wheelwright adds ritual_consent response in ritual_slot",
+    "transcript_digest": "may I observe the ritual from the edge [niri6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_8_ka60",
+    "day": 8,
+    "agent_id": "ka60",
+    "active_goal": "advance dry-route repair without violating household boundary",
+    "active_relationship_summary": "avatar authored 'I can help repair but you choose the tool [kabo6]' and route help changed trust/boundary",
+    "schedule_summary": "day 8 westkeepers adds help response in work_slot",
+    "transcript_digest": "I can help repair but you choose the tool [kabo6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_8_mu61",
+    "day": 8,
+    "agent_id": "mu61",
+    "active_goal": "advance warm meal care without violating household boundary",
+    "active_relationship_summary": "avatar authored 'may I observe the ritual from the edge [muri6]' and route ritual_consent changed trust/boundary",
+    "schedule_summary": "day 8 mossgarden adds ritual_consent response in ritual_slot",
+    "transcript_digest": "may I observe the ritual from the edge [muri6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_8_lo62",
+    "day": 8,
+    "agent_id": "lo62",
+    "active_goal": "advance fair count market without violating household boundary",
+    "active_relationship_summary": "avatar authored 'sorry I stepped too close; I will move back [lose6' and route apology changed trust/boundary",
+    "schedule_summary": "day 8 ledgerkin adds apology response in repair_slot",
+    "transcript_digest": "sorry I stepped too close; I will move back [lose6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_8_sa63",
+    "day": 8,
+    "agent_id": "sa63",
+    "active_goal": "advance public truth witness without violating household boundary",
+    "active_relationship_summary": "avatar authored 'that thing maybe means something [sase6]' and route ambiguous changed trust/boundary",
+    "schedule_summary": "day 8 redstair adds ambiguous response in clarify_slot",
+    "transcript_digest": "that thing maybe means something [sase6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_8_ni64",
+    "day": 8,
+    "agent_id": "ni64",
+    "active_goal": "advance safe wet repair without violating household boundary",
+    "active_relationship_summary": "avatar authored 'hello Ka60, I will keep distance while asking your' and route greet changed trust/boundary",
+    "schedule_summary": "day 8 wheelwright adds greet response in planning_slot",
+    "transcript_digest": "hello Ka60, I will keep distance while asking your goal [nibo6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_13_ka60",
+    "day": 13,
+    "agent_id": "ka60",
+    "active_goal": "advance dry-route repair without violating household boundary",
+    "active_relationship_summary": "avatar authored 'can I trade a fair token for the dry route pass [k' and route trade changed trust/boundary",
+    "schedule_summary": "day 13 westkeepers adds trade response in market_slot",
+    "transcript_digest": "can I trade a fair token for the dry route pass [katr6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_13_mu61",
+    "day": 13,
+    "agent_id": "mu61",
+    "active_goal": "advance warm meal care without violating household boundary",
+    "active_relationship_summary": "avatar authored 'I can help repair but you choose the tool [mubo6]' and route help changed trust/boundary",
+    "schedule_summary": "day 13 mossgarden adds help response in work_slot",
+    "transcript_digest": "I can help repair but you choose the tool [mubo6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_13_lo62",
+    "day": 13,
+    "agent_id": "lo62",
+    "active_goal": "advance fair count market without violating household boundary",
+    "active_relationship_summary": "avatar authored 'may I observe the ritual from the edge [lori6]' and route ritual_consent changed trust/boundary",
+    "schedule_summary": "day 13 ledgerkin adds ritual_consent response in ritual_slot",
+    "transcript_digest": "may I observe the ritual from the edge [lori6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_13_sa63",
+    "day": 13,
+    "agent_id": "sa63",
+    "active_goal": "advance public truth witness without violating household boundary",
+    "active_relationship_summary": "avatar authored 'sorry I stepped too close; I will move back [sase6' and route apology changed trust/boundary",
+    "schedule_summary": "day 13 redstair adds apology response in repair_slot",
+    "transcript_digest": "sorry I stepped too close; I will move back [sase6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  },
+  {
+    "snapshot_id": "snap_13_ni64",
+    "day": 13,
+    "agent_id": "ni64",
+    "active_goal": "advance safe wet repair without violating household boundary",
+    "active_relationship_summary": "avatar authored 'that thing maybe means something [nise6]' and route ambiguous changed trust/boundary",
+    "schedule_summary": "day 13 wheelwright adds ambiguous response in clarify_slot",
+    "transcript_digest": "that thing maybe means something [nise6]",
+    "local_storage_key": "ssrm238_memory",
+    "restore_verified": true
+  }
+];
+let selected = 'ka60';
+let day = 1;
+let memory = JSON.parse(localStorage.getItem('ssrm238_memory') || '[]');
+let log = [];
+const agentHost = document.getElementById('agents');
+agents.forEach(agent => {
+  const b = document.createElement('button');
+  b.textContent = agent.name;
+  b.onclick = () => { selected = agent.agent_id; render('agent selected'); };
+  agentHost.appendChild(b);
+});
+function parse(text) {
+  const lower = text.toLowerCase();
+  for (const rule of [...rules].sort((a,b)=>a.priority-b.priority)) {
+    const hits = rule.keyword_pattern.filter(k => lower.includes(k));
+    if (hits.length) return {intent:rule.intent, rule:rule.rule_id, hits};
+  }
+  return {intent:'ambiguous', rule:'rule_ambiguous', hits:[]};
+}
+function send() {
+  const text = document.getElementById('input').value;
+  const parsed = parse(text);
+  const goal = goals.find(g => g.agent_id === selected && g.day === day) || goals.find(g => g.agent_id === selected);
+  const sched = schedules.find(s => s.agent_id === selected && s.day === day) || schedules.find(s => s.agent_id === selected);
+  const row = {day, selected, text, intent:parsed.intent, goal:goal?.primary_goal, schedule:sched?.new_slot, at:new Date().toISOString()};
+  memory.push(row);
+  log.push(`day ${day} ${selected} intent=${parsed.intent} goal/schedule updated`);
+  localStorage.setItem('ssrm238_memory', JSON.stringify(memory));
+  render('typed line changed deterministic goal/schedule/memory state');
+}
+function render(extra='') {
+  const agent = agents.find(a => a.agent_id === selected);
+  const snapshot = snapshots.find(s => s.agent_id === selected && s.day === day) || snapshots.find(s => s.agent_id === selected);
+  document.getElementById('card').textContent = `${agent.name} / day ${day} / ${agent.role} / ${extra}`;
+  document.getElementById('output').textContent = `selected=${selected} day=${day}
+active snapshot=${snapshot?.snapshot_id || 'none'}
+goal=${snapshot?.active_goal || 'none'}
+schedule=${snapshot?.schedule_summary || 'none'}
+
+localStorage rows=${memory.length}
+${JSON.stringify(memory.slice(-5), null, 2)}
+
+log:
+${log.slice(-8).join('
+')}`;
+}
+document.getElementById('send').onclick = send;
+document.getElementById('next').onclick = () => { day = [1,2,3,5,8,13].find(d => d > day) || 1; render('advanced day'); };
+document.getElementById('save').onclick = () => { localStorage.setItem('ssrm238_memory', JSON.stringify(memory)); render('saved to browser localStorage'); };
+document.getElementById('restore').onclick = () => { memory = JSON.parse(localStorage.getItem('ssrm238_memory') || '[]'); render('restored from browser localStorage'); };
+render();
+</script>
+</body>
+</html>

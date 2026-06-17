@@ -1,0 +1,31 @@
+parsed_id,utterance_id,detected_intent,matched_rule_id,matched_keywords,proto_token_seen,confidence,ambiguity_flag,clarification_line
+p_u_1_ka60,u_1_ka60,trade,rule_trade,"[""trade"", ""fair""]",katr6,0.93,False,
+p_u_1_mu61,u_1_mu61,help,rule_help,"[""help"", ""repair""]",mubo6,0.93,False,
+p_u_1_lo62,u_1_lo62,ritual_consent,rule_ritual,"[""ritual"", ""observe"", ""edge""]",lori6,0.93,False,
+p_u_1_sa63,u_1_sa63,apology,rule_apology,"[""sorry""]",sase6,0.93,False,
+p_u_1_ni64,u_1_ni64,ambiguous,rule_ambiguous,"[""thing"", ""maybe""]",nise6,0.82,True,ask clarification
+p_u_2_ka60,u_2_ka60,help,rule_help,"[""help"", ""repair""]",kabo6,0.93,False,
+p_u_2_mu61,u_2_mu61,ritual_consent,rule_ritual,"[""ritual"", ""observe"", ""edge""]",muri6,0.93,False,
+p_u_2_lo62,u_2_lo62,apology,rule_apology,"[""sorry""]",lose6,0.93,False,
+p_u_2_sa63,u_2_sa63,ambiguous,rule_ambiguous,"[""thing"", ""maybe""]",sase6,0.82,True,ask clarification
+p_u_2_ni64,u_2_ni64,greet,rule_greet,"[""hello""]",nibo6,0.76,False,
+p_u_3_ka60,u_3_ka60,ritual_consent,rule_ritual,"[""ritual"", ""observe"", ""edge""]",kari6,0.93,False,
+p_u_3_mu61,u_3_mu61,apology,rule_apology,"[""sorry""]",muse6,0.93,False,
+p_u_3_lo62,u_3_lo62,ambiguous,rule_ambiguous,"[""thing"", ""maybe""]",lose6,0.82,True,ask clarification
+p_u_3_sa63,u_3_sa63,greet,rule_greet,"[""hello""]",sabo6,0.76,False,
+p_u_3_ni64,u_3_ni64,trade,rule_trade,"[""trade"", ""fair""]",nitr6,0.93,False,
+p_u_5_ka60,u_5_ka60,ambiguous,rule_ambiguous,"[""thing"", ""maybe""]",kase6,0.82,True,ask clarification
+p_u_5_mu61,u_5_mu61,greet,rule_greet,"[""hello""]",mubo6,0.76,False,
+p_u_5_lo62,u_5_lo62,trade,rule_trade,"[""trade"", ""fair""]",lotr6,0.93,False,
+p_u_5_sa63,u_5_sa63,help,rule_help,"[""help"", ""repair""]",sabo6,0.93,False,
+p_u_5_ni64,u_5_ni64,ritual_consent,rule_ritual,"[""ritual"", ""observe"", ""edge""]",niri6,0.93,False,
+p_u_8_ka60,u_8_ka60,help,rule_help,"[""help"", ""repair""]",kabo6,0.93,False,
+p_u_8_mu61,u_8_mu61,ritual_consent,rule_ritual,"[""ritual"", ""observe"", ""edge""]",muri6,0.93,False,
+p_u_8_lo62,u_8_lo62,apology,rule_apology,"[""sorry""]",lose6,0.93,False,
+p_u_8_sa63,u_8_sa63,ambiguous,rule_ambiguous,"[""thing"", ""maybe""]",sase6,0.82,True,ask clarification
+p_u_8_ni64,u_8_ni64,greet,rule_greet,"[""hello""]",nibo6,0.76,False,
+p_u_13_ka60,u_13_ka60,trade,rule_trade,"[""trade"", ""fair""]",katr6,0.93,False,
+p_u_13_mu61,u_13_mu61,help,rule_help,"[""help"", ""repair""]",mubo6,0.93,False,
+p_u_13_lo62,u_13_lo62,ritual_consent,rule_ritual,"[""ritual"", ""observe"", ""edge""]",lori6,0.93,False,
+p_u_13_sa63,u_13_sa63,apology,rule_apology,"[""sorry""]",sase6,0.93,False,
+p_u_13_ni64,u_13_ni64,ambiguous,rule_ambiguous,"[""thing"", ""maybe""]",nise6,0.82,True,ask clarification

@@ -1,0 +1,31 @@
+relationship_id,utterance_id,agent_id,day,trust_before,trust_after,boundary_before,boundary_after,gratitude_delta,resentment_delta,memory_summary
+rel_u_1_ka60,u_1_ka60,ka60,1,0.54,0.57,0.38,0.368,0.02,0.0,avatar authored 'can I trade a fair token for the dry route pass [k' and route trade changed trust/boundary
+rel_u_1_mu61,u_1_mu61,mu61,1,0.54,0.585,0.38,0.355,0.035,0.0,avatar authored 'I can help repair but you choose the tool [mubo6]' and route help changed trust/boundary
+rel_u_1_lo62,u_1_lo62,lo62,1,0.54,0.585,0.38,0.355,0.035,0.0,avatar authored 'may I observe the ritual from the edge [lori6]' and route ritual_consent changed trust/boundary
+rel_u_1_sa63,u_1_sa63,sa63,1,0.54,0.585,0.38,0.355,0.035,0.0,avatar authored 'sorry I stepped too close; I will move back [sase6' and route apology changed trust/boundary
+rel_u_1_ni64,u_1_ni64,ni64,1,0.54,0.555,0.38,0.39,0.005,0.0,avatar authored 'that thing maybe means something [nise6]' and route ambiguous changed trust/boundary
+rel_u_2_ka60,u_2_ka60,ka60,2,0.57,0.615,0.368,0.343,0.035,0.0,avatar authored 'I can help repair but you choose the tool [kabo6]' and route help changed trust/boundary
+rel_u_2_mu61,u_2_mu61,mu61,2,0.585,0.63,0.355,0.33,0.035,0.0,avatar authored 'may I observe the ritual from the edge [muri6]' and route ritual_consent changed trust/boundary
+rel_u_2_lo62,u_2_lo62,lo62,2,0.585,0.63,0.355,0.33,0.035,0.0,avatar authored 'sorry I stepped too close; I will move back [lose6' and route apology changed trust/boundary
+rel_u_2_sa63,u_2_sa63,sa63,2,0.585,0.6,0.355,0.365,0.005,0.0,avatar authored 'that thing maybe means something [sase6]' and route ambiguous changed trust/boundary
+rel_u_2_ni64,u_2_ni64,ni64,2,0.555,0.585,0.39,0.378,0.02,0.0,"avatar authored 'hello Ka60, I will keep distance while asking your' and route greet changed trust/boundary"
+rel_u_3_ka60,u_3_ka60,ka60,3,0.615,0.66,0.343,0.318,0.035,0.0,avatar authored 'may I observe the ritual from the edge [kari6]' and route ritual_consent changed trust/boundary
+rel_u_3_mu61,u_3_mu61,mu61,3,0.63,0.675,0.33,0.305,0.035,0.0,avatar authored 'sorry I stepped too close; I will move back [muse6' and route apology changed trust/boundary
+rel_u_3_lo62,u_3_lo62,lo62,3,0.63,0.645,0.33,0.34,0.005,0.0,avatar authored 'that thing maybe means something [lose6]' and route ambiguous changed trust/boundary
+rel_u_3_sa63,u_3_sa63,sa63,3,0.6,0.63,0.365,0.353,0.02,0.0,"avatar authored 'hello Ka60, I will keep distance while asking your' and route greet changed trust/boundary"
+rel_u_3_ni64,u_3_ni64,ni64,3,0.585,0.615,0.378,0.366,0.02,0.0,avatar authored 'can I trade a fair token for the dry route pass [n' and route trade changed trust/boundary
+rel_u_5_ka60,u_5_ka60,ka60,5,0.66,0.675,0.318,0.328,0.005,0.0,avatar authored 'that thing maybe means something [kase6]' and route ambiguous changed trust/boundary
+rel_u_5_mu61,u_5_mu61,mu61,5,0.675,0.705,0.305,0.293,0.02,0.0,"avatar authored 'hello Ka60, I will keep distance while asking your' and route greet changed trust/boundary"
+rel_u_5_lo62,u_5_lo62,lo62,5,0.645,0.675,0.34,0.328,0.02,0.0,avatar authored 'can I trade a fair token for the dry route pass [l' and route trade changed trust/boundary
+rel_u_5_sa63,u_5_sa63,sa63,5,0.63,0.675,0.353,0.328,0.035,0.0,avatar authored 'I can help repair but you choose the tool [sabo6]' and route help changed trust/boundary
+rel_u_5_ni64,u_5_ni64,ni64,5,0.615,0.66,0.366,0.341,0.035,0.0,avatar authored 'may I observe the ritual from the edge [niri6]' and route ritual_consent changed trust/boundary
+rel_u_8_ka60,u_8_ka60,ka60,8,0.675,0.72,0.328,0.303,0.035,0.0,avatar authored 'I can help repair but you choose the tool [kabo6]' and route help changed trust/boundary
+rel_u_8_mu61,u_8_mu61,mu61,8,0.705,0.75,0.293,0.268,0.035,0.0,avatar authored 'may I observe the ritual from the edge [muri6]' and route ritual_consent changed trust/boundary
+rel_u_8_lo62,u_8_lo62,lo62,8,0.675,0.72,0.328,0.303,0.035,0.0,avatar authored 'sorry I stepped too close; I will move back [lose6' and route apology changed trust/boundary
+rel_u_8_sa63,u_8_sa63,sa63,8,0.675,0.69,0.328,0.338,0.005,0.0,avatar authored 'that thing maybe means something [sase6]' and route ambiguous changed trust/boundary
+rel_u_8_ni64,u_8_ni64,ni64,8,0.66,0.69,0.341,0.329,0.02,0.0,"avatar authored 'hello Ka60, I will keep distance while asking your' and route greet changed trust/boundary"
+rel_u_13_ka60,u_13_ka60,ka60,13,0.72,0.75,0.303,0.291,0.02,0.0,avatar authored 'can I trade a fair token for the dry route pass [k' and route trade changed trust/boundary
+rel_u_13_mu61,u_13_mu61,mu61,13,0.75,0.795,0.268,0.243,0.035,0.0,avatar authored 'I can help repair but you choose the tool [mubo6]' and route help changed trust/boundary
+rel_u_13_lo62,u_13_lo62,lo62,13,0.72,0.765,0.303,0.278,0.035,0.0,avatar authored 'may I observe the ritual from the edge [lori6]' and route ritual_consent changed trust/boundary
+rel_u_13_sa63,u_13_sa63,sa63,13,0.69,0.735,0.338,0.313,0.035,0.0,avatar authored 'sorry I stepped too close; I will move back [sase6' and route apology changed trust/boundary
+rel_u_13_ni64,u_13_ni64,ni64,13,0.69,0.705,0.329,0.339,0.005,0.0,avatar authored 'that thing maybe means something [nise6]' and route ambiguous changed trust/boundary

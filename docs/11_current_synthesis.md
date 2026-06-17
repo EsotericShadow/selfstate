@@ -844,3 +844,6 @@ Report 236 adds the first browser-playable avatar-entry prototype scaffold after
 
 
 Report 237 adds deterministic typed post-entry conversation. User text is routed through keyword intent detection, proto-language token lookup, ambiguity recovery, response selection, persistent relationship memory, and multi-day consequence scheduling. It deliberately does not call an LLM; the weakest channel is proto-language interpretation confidence, which correctly marks the next language-pressure point.
+
+
+Report 238 moves typed interaction into a multi-day state loop. User-authored utterance examples route through deterministic parser rules and then update public agent goals, household schedules, relationship memory, browser-local memory snapshots, and later-day consequences. The weakest channel is parser accuracy, which honestly marks that user-authored text is still handled by deterministic rules rather than open-ended language understanding.

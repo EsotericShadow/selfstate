@@ -1,0 +1,9 @@
+tick,signal_id,zone,source,observed_by,symptom_rate,contact_rate,uncertainty,false_signal,irrelevant_noise,evidence_strength,vibration_hz,flower_node,public_summary,private_detail_hash
+4,sig-wet-cough-01,west route,clinic cough log,Fay,0.42,0.31,0.21,False,False,0.437497,131.48,1,two agents cough after cold wet crossing,sealed:sig-wet-cough-01:body-rates-not-public
+6,sig-fatigue-cluster-02,warm alcove,rest debt board,Ari,0.38,0.27,0.24,False,False,0.391026,144.22,2,fatigue rises around shared blanket queue,sealed:sig-fatigue-cluster-02:body-rates-not-public
+8,sig-tool-sneeze-03,tool shed,inventory dust note,Milo,0.29,0.43,0.36,True,False,0.219779,156.01,3,dust sneeze looks suspicious but follows sawdust sweep,sealed:sig-tool-sneeze-03:body-rates-not-public
+10,sig-water-mark-04,north desk,sensor damp mark,Nia,0.18,0.19,0.62,False,True,0.055997,167.42,4,irrelevant wet-floor alert trips during roof drip,sealed:sig-water-mark-04:body-rates-not-public
+13,sig-shared-cup-05,warm alcove,object proximity trace,Fay,0.51,0.49,0.18,False,False,0.533698,187.19,5,shared cup correlates with discomfort reports,sealed:sig-shared-cup-05:body-rates-not-public
+16,sig-late-arrival-06,west route,calendar drift,Ari,0.23,0.21,0.58,True,True,0.0,195.37,6,late arrivals mimic avoidance but come from route work,sealed:sig-late-arrival-06:body-rates-not-public
+20,sig-breath-rate-07,tool shed,body-rate sampler,Milo,0.46,0.52,0.22,False,False,0.514534,213.24,7,breath-rate bump follows crowding in tool shed,sealed:sig-breath-rate-07:body-rates-not-public
+24,sig-quiet-corner-08,north desk,relationship memory recall,Nia,0.35,0.24,0.33,False,False,0.364704,224.65,8,two agents withdraw to quiet corner after headache report,sealed:sig-quiet-corner-08:body-rates-not-public

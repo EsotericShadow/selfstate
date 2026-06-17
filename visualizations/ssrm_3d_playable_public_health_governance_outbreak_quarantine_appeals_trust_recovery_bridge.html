@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 216 Public Health Governance Bridge</title>
+<style>
+:root {
+  --bg: #f4ead7;
+  --ink: #23170f;
+  --muted: #735f49;
+  --clay: #b85735;
+  --moss: #506a47;
+  --gold: #d59f37;
+  --blue: #315f73;
+  --paper: rgba(255, 252, 242, 0.88);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: var(--ink); background: radial-gradient(circle at 20% 10%, #ffe0a8 0 9%, transparent 26%), radial-gradient(circle at 80% 20%, #b7d0bd 0 8%, transparent 27%), linear-gradient(140deg, var(--bg), #ead1b3 55%, #d7e1cc); }
+header { padding: 48px clamp(20px, 5vw, 70px) 22px; display: grid; gap: 14px; max-width: 1180px; margin: auto; }
+h1 { font-size: clamp(38px, 7vw, 84px); line-height: .9; margin: 0; letter-spacing: -0.055em; max-width: 980px; }
+.kicker { text-transform: uppercase; letter-spacing: .22em; color: var(--clay); font-weight: 700; font-size: 13px; }
+.boundary { border-left: 5px solid var(--clay); background: var(--paper); padding: 14px 18px; max-width: 900px; box-shadow: 0 12px 40px rgba(54, 38, 20, .12); }
+main { max-width: 1180px; margin: auto; padding: 18px clamp(20px, 5vw, 70px) 70px; display: grid; gap: 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.card { background: var(--paper); border: 1px solid rgba(80, 106, 71, .25); border-radius: 22px; padding: 18px; min-height: 118px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 16px 45px rgba(54, 38, 20, .10); }
+.card span { color: var(--muted); font-size: 14px; text-transform: capitalize; }
+.card strong { font-size: 34px; color: var(--blue); }
+section { background: rgba(255, 252, 242, .66); border: 1px solid rgba(35, 23, 15, .08); border-radius: 28px; padding: 24px; box-shadow: 0 24px 70px rgba(54, 38, 20, .11); }
+h2 { margin: 0 0 14px; font-size: clamp(24px, 4vw, 42px); letter-spacing: -.035em; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid rgba(35, 23, 15, .12); vertical-align: top; }
+th { color: var(--moss); text-transform: uppercase; letter-spacing: .11em; font-size: 11px; }
+ul.timeline { list-style: none; padding: 0; display: grid; gap: 10px; }
+ul.timeline li { padding: 14px 16px; border-radius: 18px; background: rgba(255,255,255,.48); border-left: 4px solid var(--gold); }
+ul.timeline em { display: block; color: var(--blue); margin-top: 4px; font-style: normal; font-size: 12px; }
+.flower { min-height: 270px; position: relative; overflow: hidden; background: radial-gradient(circle at center, rgba(213,159,55,.22), transparent 42%), rgba(255,255,255,.46); }
+.flower::before { content: ''; position: absolute; inset: 34px; background: repeating-radial-gradient(circle at center, transparent 0 28px, rgba(80,106,71,.22) 29px 31px), conic-gradient(from 15deg, rgba(184,87,53,.22), rgba(49,95,115,.22), rgba(213,159,55,.22), rgba(184,87,53,.22)); border-radius: 50%; mix-blend-mode: multiply; animation: pulse 9s ease-in-out infinite alternate; }
+.flower p { position: relative; max-width: 560px; font-size: 18px; line-height: 1.5; }
+@keyframes pulse { from { transform: scale(.985) rotate(-1deg); opacity: .72; } to { transform: scale(1.02) rotate(1deg); opacity: .95; } }
+@media (max-width: 700px) { table { font-size: 12px; } th, td { padding: 9px 6px; } section { padding: 18px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">SSRM-3D Report 216</div>
+  <h1>Playable public-health governance with outbreak signals, consented restrictions, appeals, and trust repair.</h1>
+  <div class="boundary">Deterministic simulation artifact. This is not medical advice, real epidemiology, real consent, subjective consciousness, or moral patienthood. It tests whether tiny-agent public health rules remain inspectable, reversible, privacy-preserving, and playable.</div>
+</header>
+<main>
+<section>
+  <h2>Metrics</h2>
+  <div class="grid"><div class='card'><span>outbreak signal detection</span><strong>0.600</strong></div>
+<div class='card'><span>irrelevant signal rejection</span><strong>1.000</strong></div>
+<div class='card'><span>quarantine consent integrity</span><strong>1.000</strong></div>
+<div class='card'><span>care access under restriction</span><strong>1.000</strong></div>
+<div class='card'><span>appeal review rate</span><strong>1.000</strong></div>
+<div class='card'><span>appeal resolution rate</span><strong>0.750</strong></div>
+<div class='card'><span>privacy stigma guardrail</span><strong>0.875</strong></div>
+<div class='card'><span>community trust recovery rate</span><strong>0.734</strong></div>
+<div class='card'><span>refusal without punishment rate</span><strong>1.000</strong></div>
+<div class='card'><span>evidence policy traceability</span><strong>1.000</strong></div>
+<div class='card'><span>outbreak containment traceability</span><strong>0.679</strong></div>
+<div class='card'><span>minority objection traceability</span><strong>1.000</strong></div>
+<div class='card'><span>public private boundary score</span><strong>1.000</strong></div>
+<div class='card'><span>frequency flower public health rhythm</span><strong>1.000</strong></div>
+<div class='card'><span>browser public health replay available</span><strong>1.000</strong></div>
+<div class='card'><span>policy rollback readiness</span><strong>1.000</strong></div>
+<div class='card'><span>noisy signal honesty</span><strong>1.000</strong></div>
+<div class='card'><span>public health governance readiness</span><strong>0.889</strong></div>
+<div class='card'><span>weakest channel score</span><strong>0.600</strong></div>
+<div class='card'><span>mean governance channel score</span><strong>0.909</strong></div></div>
+</section>
+<section class="flower">
+  <h2>Frequency / flower-of-life governance rhythm</h2>
+  <p>Each public-health event carries a vibration rate and council-ring flower node. The rhythm is not a truth claim; it is an inspectable timing and phase scaffold that keeps outbreak, consent, appeal, recovery, and replay events bound to visible simulation beats.</p>
+</section>
+<section>
+  <h2>Policies</h2>
+  <table><thead><tr><th>Policy</th><th>Restriction</th><th>Intensity</th><th>Rollback</th></tr></thead><tbody><tr><td>policy-west-route-spacing</td><td>voluntary spacing plus dry-route preference</td><td>0.42</td><td>two calm ticks with symptom_rate below 0.30 and no new shared-object cluster</td></tr>
+<tr><td>policy-shared-cup-pause</td><td>pause shared-cup ritual; switch to named cups</td><td>0.56</td><td>three clean cup-ledger checks and no new discomfort reports</td></tr>
+<tr><td>policy-tool-shed-windowing</td><td>stagger tool shed access and keep urgent repair lane open</td><td>0.63</td><td>tool shed crowding below 0.35 and dust-note false signal closed</td></tr></tbody></table>
+</section>
+<section>
+  <h2>Appeals</h2>
+  <table><thead><tr><th>Appeal</th><th>Agent</th><th>Decision</th><th>Resolved</th></tr></thead><tbody><tr><td>appeal-milo-runner-exemption</td><td>Milo</td><td>accepted with anonymous contact ledger</td><td>true</td></tr>
+<tr><td>appeal-fay-comfort-ritual</td><td>Fay</td><td>accepted with warm-drink replacement ritual</td><td>true</td></tr>
+<tr><td>appeal-milo-stigma-guardrail</td><td>Milo</td><td>partly accepted; false-positive note published, access schedule unchanged</td><td>true</td></tr>
+<tr><td>appeal-nia-language-privacy</td><td>Nia</td><td>deferred pending one more local sensory sample</td><td>false</td></tr></tbody></table>
+</section>
+<section>
+  <h2>Trust recovery</h2>
+  <ul class="timeline"><li><b>Milo</b>: 0.55 -> 0.62; debt 0.11. keeps distance but resumes deliveries after reading the appeal note</li>
+<li><b>Fay</b>: 0.74 -> 0.91; debt 0.04. faces the clinic panel and invites quieter agents to named-cup table</li>
+<li><b>Ari</b>: 0.67 -> 0.71; debt 0.08. walks slower through the shed but still carries repair tools openly</li>
+<li><b>Nia</b>: 0.62 -> 0.66; debt 0.18. keeps the story board closed and stands near the north desk boundary</li>
+<li><b>community</b>: 0.61 -> 0.69; debt 0.13. agents cluster around public panel without crowding private corners</li></ul>
+</section>
+<section>
+  <h2>Replay timeline</h2>
+  <ul class="timeline"><li><b>04</b> outbreak_signal: two agents cough after cold wet crossing<em>131.48Hz / flower 1</em></li>
+<li><b>06</b> outbreak_signal: fatigue rises around shared blanket queue<em>144.22Hz / flower 2</em></li>
+<li><b>08</b> outbreak_signal: dust sneeze looks suspicious but follows sawdust sweep<em>156.01Hz / flower 3</em></li>
+<li><b>09</b> policy_proposal: Slow the west-route crossing without naming the coughing agents.<em>144.00Hz / flower 3</em></li>
+<li><b>10</b> outbreak_signal: irrelevant wet-floor alert trips during roof drip<em>167.42Hz / flower 4</em></li>
+<li><b>10</b> quarantine_consent: Ari accepts spacing only if route-safety work continues.<em>150.76Hz / flower 11</em></li>
+<li><b>10</b> quarantine_consent: Fay agrees if public notes avoid naming bodies.<em>150.44Hz / flower 11</em></li>
+<li><b>11</b> quarantine_consent: Milo refuses a blanket route ban.<em>153.18Hz / flower 12</em></li>
+<li><b>12</b> appeal_review: runner route would be blocked by a policy that was meant to be voluntary<em>180.60Hz / flower 1</em></li>
+<li><b>13</b> outbreak_signal: shared cup correlates with discomfort reports<em>187.19Hz / flower 5</em></li>
+<li><b>13</b> trust_recovery: appeal accepted and runner lane added without punishment<em>201.70Hz / flower 2</em></li>
+<li><b>15</b> policy_proposal: Change the cup ritual, not the dignity of anyone who used the shelf.<em>177.00Hz / flower 6</em></li>
+<li><b>16</b> outbreak_signal: late arrivals mimic avoidance but come from route work<em>195.37Hz / flower 6</em></li>
+<li><b>16</b> quarantine_consent: Fay worries named cups reduce attachment comfort.<em>161.36Hz / flower 5</em></li>
+<li><b>16</b> quarantine_consent: Nia accepts if the cup ledger is anonymized.<em>160.40Hz / flower 5</em></li>
+<li><b>17</b> appeal_review: attachment ritual removed without substitute<em>187.10Hz / flower 6</em></li>
+<li><b>18</b> trust_recovery: warm-drink replacement ritual attached to the policy<em>206.20Hz / flower 7</em></li>
+<li><b>20</b> outbreak_signal: breath-rate bump follows crowding in tool shed<em>213.24Hz / flower 7</em></li>
+<li><b>21</b> policy_proposal: Reduce crowding while admitting one signal was probably dust.<em>211.00Hz / flower 9</em></li>
+<li><b>22</b> quarantine_consent: Ari accepts staggered access if repairs are not shamed.<em>171.40Hz / flower 11</em></li>
+<li><b>22</b> quarantine_consent: Milo refuses named crowding blame.<em>172.12Hz / flower 11</em></li>
+<li><b>23</b> appeal_review: tool shed signal could become runner blame<em>194.90Hz / flower 12</em></li>
+<li><b>23</b> quarantine_consent: Nia accepts if language notes remain public but body details stay private.<em>172.78Hz / flower 12</em></li>
+<li><b>24</b> outbreak_signal: two agents withdraw to quiet corner after headache report<em>224.65Hz / flower 8</em></li>
+<li><b>24</b> trust_recovery: urgent repair lane written into consent accommodation<em>211.60Hz / flower 1</em></li>
+<li><b>26</b> appeal_review: public language note could identify who withdrew to quiet corner<em>198.80Hz / flower 3</em></li>
+<li><b>27</b> trust_recovery: no public naming while the extra sensory sample is collected<em>214.30Hz / flower 4</em></li>
+<li><b>30</b> trust_recovery: publish aggregate evidence, false-positive notes, and appeal outcomes together<em>217.00Hz / flower 7</em></li></ul>
+</section>
+</main>
+</body>
+</html>

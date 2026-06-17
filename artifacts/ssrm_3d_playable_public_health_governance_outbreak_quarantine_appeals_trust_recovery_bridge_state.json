@@ -1,0 +1,10 @@
+{
+  "appeal_resolution_rate": 0.75,
+  "community_trust_recovery_rate": 0.7342,
+  "condition": "integrated_playable_public_health_governance_outbreak_quarantine_appeals_trust_recovery",
+  "next_gate": "playable community-scale crisis governance with resource triage, rumor dynamics, restorative appeals, and long-term trust memory",
+  "private_boundary": "sealed private workspace digests only",
+  "public_health_governance_readiness": 0.888849,
+  "report": 216,
+  "source_condition": "integrated_agent_authored_care_plans_clinic_scheduling_medicine_learning_followup_negotiation"
+}

@@ -1,0 +1,285 @@
+{
+  "frames": [
+    {
+      "agent_markers": "agent glances at public health panel, then away from named bodies",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "local sensory sampler",
+      "flower_overlay": "flower node 1 around council ring",
+      "frequency_overlay": "131.480Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "signal ledger",
+      "tick": 4
+    },
+    {
+      "agent_markers": "agent glances at public health panel, then away from named bodies",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "local sensory sampler",
+      "flower_overlay": "flower node 2 around council ring",
+      "frequency_overlay": "144.220Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "signal ledger",
+      "tick": 6
+    },
+    {
+      "agent_markers": "agent glances at public health panel, then away from named bodies",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "local sensory sampler",
+      "flower_overlay": "flower node 3 around council ring",
+      "frequency_overlay": "156.010Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "signal ledger",
+      "tick": 8
+    },
+    {
+      "agent_markers": "agents form a loose ring instead of a command queue",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "public council ring",
+      "flower_overlay": "flower node 3 around council ring",
+      "frequency_overlay": "144.000Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "policy draft",
+      "tick": 9
+    },
+    {
+      "agent_markers": "agent glances at public health panel, then away from named bodies",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "local sensory sampler",
+      "flower_overlay": "flower node 4 around council ring",
+      "frequency_overlay": "167.420Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "signal ledger",
+      "tick": 10
+    },
+    {
+      "agent_markers": "hesitates at boundary",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "Ari boundary marker",
+      "flower_overlay": "flower node 11 around council ring",
+      "frequency_overlay": "150.760Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "consent board",
+      "tick": 10
+    },
+    {
+      "agent_markers": "steps forward",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "Fay boundary marker",
+      "flower_overlay": "flower node 11 around council ring",
+      "frequency_overlay": "150.440Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "consent board",
+      "tick": 10
+    },
+    {
+      "agent_markers": "steps back but remains in discussion",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "Milo boundary marker",
+      "flower_overlay": "flower node 12 around council ring",
+      "frequency_overlay": "153.180Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "consent board",
+      "tick": 11
+    },
+    {
+      "agent_markers": "agent points to public note, then checks private boundary marker",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "Milo appeal note",
+      "flower_overlay": "flower node 1 around council ring",
+      "frequency_overlay": "180.600Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "appeals ledger",
+      "tick": 12
+    },
+    {
+      "agent_markers": "agent glances at public health panel, then away from named bodies",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "local sensory sampler",
+      "flower_overlay": "flower node 5 around council ring",
+      "frequency_overlay": "187.190Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "signal ledger",
+      "tick": 13
+    },
+    {
+      "agent_markers": "keeps distance but resumes deliveries after reading the appeal note",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "community trust meter",
+      "flower_overlay": "flower node 2 around council ring",
+      "frequency_overlay": "201.700Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "recovery memory",
+      "tick": 13
+    },
+    {
+      "agent_markers": "agents form a loose ring instead of a command queue",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "public council ring",
+      "flower_overlay": "flower node 6 around council ring",
+      "frequency_overlay": "177.000Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "policy draft",
+      "tick": 15
+    },
+    {
+      "agent_markers": "agent glances at public health panel, then away from named bodies",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "local sensory sampler",
+      "flower_overlay": "flower node 6 around council ring",
+      "frequency_overlay": "195.370Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "signal ledger",
+      "tick": 16
+    },
+    {
+      "agent_markers": "hesitates at boundary",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "Fay boundary marker",
+      "flower_overlay": "flower node 5 around council ring",
+      "frequency_overlay": "161.360Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "consent board",
+      "tick": 16
+    },
+    {
+      "agent_markers": "steps forward",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "Nia boundary marker",
+      "flower_overlay": "flower node 5 around council ring",
+      "frequency_overlay": "160.400Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "consent board",
+      "tick": 16
+    },
+    {
+      "agent_markers": "agent points to public note, then checks private boundary marker",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "Fay appeal note",
+      "flower_overlay": "flower node 6 around council ring",
+      "frequency_overlay": "187.100Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "appeals ledger",
+      "tick": 17
+    },
+    {
+      "agent_markers": "faces the clinic panel and invites quieter agents to named-cup table",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "community trust meter",
+      "flower_overlay": "flower node 7 around council ring",
+      "frequency_overlay": "206.200Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "recovery memory",
+      "tick": 18
+    },
+    {
+      "agent_markers": "agent glances at public health panel, then away from named bodies",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "local sensory sampler",
+      "flower_overlay": "flower node 7 around council ring",
+      "frequency_overlay": "213.240Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "signal ledger",
+      "tick": 20
+    },
+    {
+      "agent_markers": "agents form a loose ring instead of a command queue",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "public council ring",
+      "flower_overlay": "flower node 9 around council ring",
+      "frequency_overlay": "211.000Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "policy draft",
+      "tick": 21
+    },
+    {
+      "agent_markers": "hesitates at boundary",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "Ari boundary marker",
+      "flower_overlay": "flower node 11 around council ring",
+      "frequency_overlay": "171.400Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "consent board",
+      "tick": 22
+    },
+    {
+      "agent_markers": "steps back but remains in discussion",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "Milo boundary marker",
+      "flower_overlay": "flower node 11 around council ring",
+      "frequency_overlay": "172.120Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "consent board",
+      "tick": 22
+    },
+    {
+      "agent_markers": "agent points to public note, then checks private boundary marker",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "Milo appeal note",
+      "flower_overlay": "flower node 12 around council ring",
+      "frequency_overlay": "194.900Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "appeals ledger",
+      "tick": 23
+    },
+    {
+      "agent_markers": "hesitates at boundary",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "Nia boundary marker",
+      "flower_overlay": "flower node 12 around council ring",
+      "frequency_overlay": "172.780Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "consent board",
+      "tick": 23
+    },
+    {
+      "agent_markers": "agent glances at public health panel, then away from named bodies",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "local sensory sampler",
+      "flower_overlay": "flower node 8 around council ring",
+      "frequency_overlay": "224.650Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "signal ledger",
+      "tick": 24
+    },
+    {
+      "agent_markers": "walks slower through the shed but still carries repair tools openly",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "community trust meter",
+      "flower_overlay": "flower node 1 around council ring",
+      "frequency_overlay": "211.600Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "recovery memory",
+      "tick": 24
+    },
+    {
+      "agent_markers": "agent points to public note, then checks private boundary marker",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "Nia appeal note",
+      "flower_overlay": "flower node 3 around council ring",
+      "frequency_overlay": "198.800Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "appeals ledger",
+      "tick": 26
+    },
+    {
+      "agent_markers": "keeps the story board closed and stands near the north desk boundary",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "community trust meter",
+      "flower_overlay": "flower node 4 around council ring",
+      "frequency_overlay": "214.300Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "recovery memory",
+      "tick": 27
+    },
+    {
+      "agent_markers": "agents cluster around public panel without crowding private corners",
+      "avatar_position": "inside clinic doorway as participant-observer avatar",
+      "camera_focus": "community trust meter",
+      "flower_overlay": "flower node 7 around council ring",
+      "frequency_overlay": "217.000Hz governance pulse",
+      "private_boundary": "private workspace digests sealed; public facts are aggregate or consented",
+      "public_panel": "recovery memory",
+      "tick": 30
+    }
+  ],
+  "report": 216
+}

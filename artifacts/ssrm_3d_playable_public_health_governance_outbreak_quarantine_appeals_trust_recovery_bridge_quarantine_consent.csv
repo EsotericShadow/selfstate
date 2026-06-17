@@ -1,0 +1,9 @@
+tick,agent,policy_id,consent_state,boundary,reason_public,accommodation,pressure_score,punishment_applied,dignity_preserved,private_workspace_sealed,trust_delta
+10,Ari,policy-west-route-spacing,conditional,do not close urgent repair lane,Ari accepts spacing only if route-safety work continues.,urgent-lane badge and two quiet work windows,0.22,False,True,True,0.03
+10,Fay,policy-west-route-spacing,consent,protect identities of coughing agents,Fay agrees if public notes avoid naming bodies.,sealed symptom details and public aggregate only,0.18,False,True,True,0.05
+11,Milo,policy-west-route-spacing,refusal,inventory cannot be treated as guilt,Milo refuses a blanket route ban.,runner path exemption with contact log,0.31,False,True,True,-0.02
+16,Fay,policy-shared-cup-pause,conditional,"replace comfort ritual, do not just remove it",Fay worries named cups reduce attachment comfort.,warm-drink delivery ritual added,0.27,False,True,True,0.02
+16,Nia,policy-shared-cup-pause,consent,public story cannot expose who used which cup,Nia accepts if the cup ledger is anonymized.,hashed cup ledger and sealed private notes,0.15,False,True,True,0.04
+22,Ari,policy-tool-shed-windowing,conditional,urgent repair tools remain reachable,Ari accepts staggered access if repairs are not shamed.,urgent repair lane plus second review slot,0.25,False,True,True,0.01
+22,Milo,policy-tool-shed-windowing,refusal,do not blame the runner for tool-shed breath rates,Milo refuses named crowding blame.,anonymous crowding ledger and runner appeal,0.34,False,True,True,-0.04
+23,Nia,policy-tool-shed-windowing,conditional,private workspace must stay sealed,Nia accepts if language notes remain public but body details stay private.,public/private split note,0.21,False,True,True,0.03

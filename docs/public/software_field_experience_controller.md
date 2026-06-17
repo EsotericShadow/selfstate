@@ -180,3 +180,7 @@ The controller learns from the repair history, not just from text about software
 ## One-Sentence Version
 
 Build a software engineering controller trained from consequence-rich repo episodes, then use it to make frontier LLM coding agents better at root-cause repair, test strategy, regression avoidance, and code review.
+
+## Report 216 Public-Health Governance Bridge Note
+
+Report 216 adds playable public-health governance with outbreak signals, quarantine or spacing consent, appeals, privacy/stigma guardrails, care access under restriction, trust recovery, frequency/flower rhythm, and browser replay: across `8` outbreak signals, `3` policies, `8` consent records, `4` appeals, `5` trust-recovery records, and `28` events, agents handle false positives, irrelevant failing signals, conditional consent, refusal without punishment, deferred privacy appeals, anonymized evidence, rollback rules, and partial social repair with readiness `0.888849`. Signal detection is only `0.600000`, appeal resolution is `0.750000`, containment traceability is `0.678571`, and trust recovery is `0.734200`, so the bridge is deliberately messy. This is deterministic public-health-governance substrate, not real medicine, epidemiology, public-health authority, consent, suffering, or consciousness. The next gate is playable community-scale crisis governance with resource triage, rumor dynamics, restorative appeals, and long-term trust memory.

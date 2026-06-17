@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Recurrent Faction Dialogue Controller Bridge</title>
+  <style>
+    :root {
+      --ink: #1d1912;
+      --muted: #6b614f;
+      --paper: #f7ecd2;
+      --panel: rgba(255, 250, 236, 0.9);
+      --line: rgba(55, 40, 18, 0.2);
+      --rust: #9d4e25;
+      --teal: #2e6471;
+      --moss: #5e7846;
+      --gold: #b68a32;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "Iowan Old Style", Georgia, serif;
+      background:
+        radial-gradient(circle at 12% 14%, rgba(157,78,37,0.28), transparent 28rem),
+        radial-gradient(circle at 84% 12%, rgba(46,100,113,0.24), transparent 30rem),
+        repeating-conic-gradient(from 0deg at 50% 52%, rgba(29,25,18,0.035) 0deg 12deg, transparent 12deg 30deg),
+        linear-gradient(132deg, #d6bd84 0%, #f8edcf 48%, #c79b5d 100%);
+    }
+    header { padding: 44px clamp(18px, 5vw, 72px) 18px; }
+    h1 { margin: 0; max-width: 1160px; font-size: clamp(2.1rem, 5.4vw, 5.5rem); line-height: 0.9; letter-spacing: -0.06em; }
+    .subtitle { max-width: 980px; color: var(--muted); margin-top: 18px; font-size: 1.06rem; }
+    main { display: grid; grid-template-columns: minmax(300px, 0.9fr) minmax(340px, 1.15fr); gap: 18px; padding: 18px clamp(18px, 5vw, 72px) 54px; }
+    section, .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 24px; box-shadow: 0 24px 80px rgba(46,34,18,0.16); backdrop-filter: blur(9px); }
+    section { padding: 18px; }
+    h2 { margin: 0 0 12px; font-size: 1.12rem; letter-spacing: -0.02em; }
+    .metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .metric { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.43); }
+    .metric b { display: block; color: var(--rust); font-size: 1.35rem; }
+    .metric span { color: var(--muted); font-size: 0.8rem; }
+    select, textarea, button { width: 100%; border: 1px solid var(--line); border-radius: 16px; padding: 11px 12px; background: rgba(255,255,255,0.72); color: var(--ink); font: inherit; }
+    textarea { min-height: 92px; resize: vertical; margin: 10px 0; }
+    button { background: var(--ink); color: var(--paper); cursor: pointer; }
+    .answer { margin-top: 12px; padding: 14px; border-radius: 18px; background: rgba(29,25,18,0.065); white-space: pre-wrap; }
+    .tag { display: inline-block; padding: 4px 8px; border-radius: 999px; margin: 2px; background: rgba(157,78,37,0.13); color: var(--rust); font-size: 0.78rem; }
+    .small { color: var(--muted); font-size: 0.88rem; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+    .trace-list { max-height: 560px; overflow: auto; display: grid; gap: 10px; padding-right: 6px; }
+    .trace-item { padding: 12px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,0.42); }
+    .trace-item strong { color: var(--teal); }
+    @media (max-width: 880px) { main, .grid { grid-template-columns: 1fr; } .metrics { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dialogue now has recurrent state across live avatar turns.</h1>
+    <p class="subtitle">Report 154 carries “that proposal” follow-ups through a session, writes persistent faction memory, and applies learned update deltas from earlier councils to held-out live sessions. It remains deterministic and bounded.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Bridge verdict</h2>
+      <div class="metrics" id="metrics"></div>
+      <div class="grid">
+        <div class="tile" style="padding:14px">
+          <h2>Controller objects</h2>
+          <div id="objects" class="small"></div>
+        </div>
+        <div class="tile" style="padding:14px">
+          <h2>Faction memory</h2>
+          <div id="factions" class="small"></div>
+        </div>
+      </div>
+      <h2 style="margin-top:18px">Replay live turn</h2>
+      <select id="turnSelect"></select>
+      <textarea id="questionBox"></textarea>
+      <button id="askButton">Replay recurrent answer</button>
+      <div class="answer" id="answerBox"></div>
+    </section>
+    <section>
+      <h2>Turn trace</h2>
+      <div class="trace-list" id="traceList"></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_recurrent_faction_dialogue_controller_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_recurrent_faction_dialogue_controller_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_recurrent_faction_dialogue_controller_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_RECURRENT_FACTION_DIALOGUE_CONTROLLER_RESULTS || { verdict: {} };
+    const trace = window.SSRM_3D_RECURRENT_FACTION_DIALOGUE_CONTROLLER_TRACE || [];
+    const state = window.SSRM_3D_RECURRENT_FACTION_DIALOGUE_CONTROLLER_STATE || {};
+    const verdict = results.verdict || {};
+    const metricKeys = [
+      ['full_recurrent_dialogue_readiness', 'recurrent readiness'],
+      ['full_turn_intent_accuracy', 'turn intent'],
+      ['full_followup_context_resolution_rate', 'follow-up context'],
+      ['full_persistent_memory_update_rate', 'memory updates'],
+      ['full_learned_faction_update_accuracy', 'learned updates'],
+      ['full_refusal_boundary_accuracy', 'refusal boundary']
+    ];
+    document.getElementById('metrics').innerHTML = metricKeys.map(([key, label]) => `<div class="metric"><b>${Number(verdict[key] || 0).toFixed(3)}</b><span>${label}</span></div>`).join('');
+    const objects = state.recurrent_controller_objects || {};
+    document.getElementById('objects').innerHTML = Object.entries(objects).map(([key, value]) => `<span class="tag">${key}</span><br>${value}`).join('<br><br>');
+    const factions = state.faction_state || {};
+    document.getElementById('factions').innerHTML = Object.entries(factions).map(([key, value]) => `<span class="tag">${key}</span> pref=${Number(value.preference || 0).toFixed(2)} grudge=${Number(value.grudge || 0).toFixed(2)} trust=${Number(value.trust || 0).toFixed(2)} updates=${(value.updates || []).length}`).join('<br>');
+    const select = document.getElementById('turnSelect');
+    trace.forEach((item, idx) => {
+      const option = document.createElement('option');
+      option.value = String(idx);
+      option.textContent = `${item.turn_id}: ${item.teacher_intent} => ${item.predicted_intent}`;
+      select.appendChild(option);
+    });
+    const questionBox = document.getElementById('questionBox');
+    const answerBox = document.getElementById('answerBox');
+    function renderSelected() {
+      const item = trace[Number(select.value || 0)] || trace[0] || {};
+      questionBox.value = item.question || '';
+      answerBox.textContent = item.answer || 'No turn trace loaded.';
+    }
+    select.addEventListener('change', renderSelected);
+    document.getElementById('askButton').addEventListener('click', () => {
+      const text = questionBox.value.toLowerCase();
+      const found = trace.find(item => (item.question || '').toLowerCase() === text) || trace.find(item => text.includes(item.teacher_intent));
+      answerBox.textContent = found ? found.answer : 'This viewer replays generated recurrent turns only. It does not synthesize open dialogue.';
+    });
+    document.getElementById('traceList').innerHTML = trace.slice(0, 140).map(item => `<div class="trace-item"><strong>${item.turn_id}</strong> <span class="tag">${item.faction}</span><span class="tag">${item.teacher_intent}</span><span class="tag">pred ${item.predicted_intent}</span><div class="small">${item.question}</div><p>${item.answer}</p></div>`).join('');
+    renderSelected();
+  </script>
+</body>
+</html>

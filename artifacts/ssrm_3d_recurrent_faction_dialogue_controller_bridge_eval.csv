@@ -1,0 +1,10 @@
+condition,sessions,turns,turn_intent_accuracy,followup_context_resolution_rate,persistent_memory_update_rate,learned_faction_update_accuracy,source_citation_rate,refusal_boundary_accuracy,cross_turn_consistency_score,live_session_continuity_rate,heldout_session_generalization_rate,replay_trace_integrity,recurrent_dialogue_readiness
+integrated_recurrent_faction_dialogue_controller,40,240,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_recurrent_state,40,240,0.166667,0.0,0.0,1.0,0.2,0.0,0.0,1.0,1.0,1.0,0.388333
+no_turn_context_resolution,40,240,0.166667,0.0,0.0,1.0,0.2,0.0,0.0,1.0,1.0,1.0,0.388333
+no_persistent_agent_memory,40,240,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.88
+no_learned_faction_updates,40,240,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.88
+no_source_citation,40,240,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_refusal_boundary,40,240,0.833333,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.881667
+no_heldout_session_split,40,240,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.92
+no_trace_replay,40,240,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.93

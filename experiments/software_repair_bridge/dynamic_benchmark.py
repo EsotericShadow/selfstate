@@ -1037,7 +1037,7 @@ def main() -> int:
         eval_rows=eval_rows,
         summary_rows=summary_rows,
         verdict=verdict,
-        report=140,
+        report=141,
         name="Programmable repair bridge / Dynamic WrongFix Arena",
         prefix="software_repair_dynamic",
     )

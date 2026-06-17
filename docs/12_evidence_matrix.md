@@ -139,7 +139,7 @@ This boundary is not evidence that selfhood exists. It defines how future langua
 | The arbiter owns action authority | Advisory LLM improves slow decisions only when accepted by the arbiter. | Direct LLM motor control matches layered realtime survival with no latency or invalid-action cost. |
 | Compressed packets are sufficient for language reasoning | Packet-fed LLMs match full-world LLMs on abstract recommendation quality when the state layers are healthy. | Full-world access consistently beats packet access without control costs, implying the packet omits essential state. |
 | Simulation-distilled critics can improve LLM reasoning | A sim-distilled critic improves held-out LLM planning, repair, and cascade-avoidance tasks while ablations identify which critic matters. | LLM search plus generic reward models match or beat sim-distilled critics, or the critics only transfer simulation artifacts. |
-| Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. Report 139 is the first structured toy bridge; Report 140 is its dynamic extension with held-out families and noisy multi-channel conditions. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
+| Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. Report 139 is the first structured toy bridge; Report 141 is its dynamic extension with held-out families and noisy multi-channel conditions. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
 
 ## Candidate Hypotheses
 
@@ -751,7 +751,7 @@ This is the narrow precursor to the full Attractor Test. It varies simple learne
 | `risk_tolerant_shipper` | `1.000` | `0.840` | `0.320` | `0.864` | `0.137453` | Favors visible speed and still permits a sizable wrong-fix share. |
 | `oracle` | `0.840` | `1.000` | `0.000` | `0.968` | `0.118663` | Expected best repair. |
 
-This is Report 140: a seeded dynamic extension of Report 139 with uncertainty-heavy multi-channel behavior, not real repo coding or evidence that a field-experience controller improves frontier LLM coding agents.
+This is Report 141: a seeded dynamic extension of Report 139 with uncertainty-heavy multi-channel behavior, not real repo coding or evidence that a field-experience controller improves frontier LLM coding agents.
 
 ## Reproducibility Artifacts
 

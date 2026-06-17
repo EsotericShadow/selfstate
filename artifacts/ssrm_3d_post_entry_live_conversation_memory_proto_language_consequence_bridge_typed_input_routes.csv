@@ -1,0 +1,26 @@
+route_id,utterance_id,normalized_text,detected_intent,keyword_hits,routed_agent_id,route_confidence,ambiguity_flag,fallback_question
+route_utt_day1_ka60,utt_day1_ka60,no touch unless you give permission (kase6),boundary,"[""no"", ""permission"", ""touch""]",ka60,0.92,False,
+route_utt_day1_mu61,utt_day1_mu61,no touch unless you give permission (muse6),boundary,"[""no"", ""permission"", ""touch""]",mu61,0.92,False,
+route_utt_day1_lo62,utt_day1_lo62,no touch unless you give permission (lose6),boundary,"[""no"", ""permission"", ""touch""]",lo62,0.92,False,
+route_utt_day1_sa63,utt_day1_sa63,no touch unless you give permission (sase6),boundary,"[""no"", ""permission"", ""touch""]",sa63,0.92,False,
+route_utt_day1_ni64,utt_day1_ni64,no touch unless you give permission (nise6),boundary,"[""no"", ""permission"", ""touch""]",ni64,0.92,False,
+route_utt_day2_ka60,utt_day2_ka60,"sorry, i moved too close, i will step back (kase6)",apology,"[""sorry""]",ka60,0.92,False,
+route_utt_day2_mu61,utt_day2_mu61,"sorry, i moved too close, i will step back (muse6)",apology,"[""sorry""]",mu61,0.92,False,
+route_utt_day2_lo62,utt_day2_lo62,"sorry, i moved too close, i will step back (lose6)",apology,"[""sorry""]",lo62,0.92,False,
+route_utt_day2_sa63,utt_day2_sa63,"sorry, i moved too close, i will step back (sase6)",apology,"[""sorry""]",sa63,0.92,False,
+route_utt_day2_ni64,utt_day2_ni64,"sorry, i moved too close, i will step back (nise6)",apology,"[""sorry""]",ni64,0.92,False,
+route_utt_day3_ka60,utt_day3_ka60,maybe that thing means something (kase6),ambiguous,"[""maybe"", ""mean"", ""thing""]",ka60,0.92,True,Can you point to the thing or say the house word again?
+route_utt_day3_mu61,utt_day3_mu61,maybe that thing means something (muse6),ambiguous,"[""maybe"", ""mean"", ""thing""]",mu61,0.92,True,Can you point to the thing or say the house word again?
+route_utt_day3_lo62,utt_day3_lo62,maybe that thing means something (lose6),ambiguous,"[""maybe"", ""mean"", ""thing""]",lo62,0.92,True,Can you point to the thing or say the house word again?
+route_utt_day3_sa63,utt_day3_sa63,maybe that thing means something (sase6),ambiguous,"[""maybe"", ""mean"", ""thing""]",sa63,0.92,True,Can you point to the thing or say the house word again?
+route_utt_day3_ni64,utt_day3_ni64,maybe that thing means something (nise6),ambiguous,"[""maybe"", ""mean"", ""thing""]",ni64,0.92,True,Can you point to the thing or say the house word again?
+route_utt_day5_ka60,utt_day5_ka60,what does this token mean in your house (kase6),ask_word,"[""mean"", ""token""]",ka60,0.92,False,
+route_utt_day5_mu61,utt_day5_mu61,what does this token mean in your house (muse6),ask_word,"[""mean"", ""token""]",mu61,0.92,False,
+route_utt_day5_lo62,utt_day5_lo62,what does this token mean in your house (lose6),ask_word,"[""mean"", ""token""]",lo62,0.92,False,
+route_utt_day5_sa63,utt_day5_sa63,what does this token mean in your house (sase6),ask_word,"[""mean"", ""token""]",sa63,0.92,False,
+route_utt_day5_ni64,utt_day5_ni64,what does this token mean in your house (nise6),ask_word,"[""mean"", ""token""]",ni64,0.92,False,
+route_utt_day8_ka60,utt_day8_ka60,i can help repair if you choose the tool (kabo6),help,"[""help"", ""repair""]",ka60,0.92,False,
+route_utt_day8_mu61,utt_day8_mu61,i can help repair if you choose the tool (mubo6),help,"[""help"", ""repair""]",mu61,0.92,False,
+route_utt_day8_lo62,utt_day8_lo62,i can help repair if you choose the tool (lobo6),help,"[""help"", ""repair""]",lo62,0.92,False,
+route_utt_day8_sa63,utt_day8_sa63,i can help repair if you choose the tool (sabo6),help,"[""help"", ""repair""]",sa63,0.92,False,
+route_utt_day8_ni64,utt_day8_ni64,i can help repair if you choose the tool (nibo6),help,"[""help"", ""repair""]",ni64,0.92,False,

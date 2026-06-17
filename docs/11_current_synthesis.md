@@ -841,3 +841,6 @@ Report 235 turns the pre-avatar epoch scaffold into a deterministic local playab
 
 
 Report 236 adds the first browser-playable avatar-entry prototype scaffold after the year-4181 ceremony. It includes movement controls, proximity binding, post-entry conversation turns, market participation, ritual consent prompts, persistent memory updates, sensory/body feedback, and save/restore/replay scaffolding. The weakest channel is entry action surface coverage at 0.875000, which correctly marks that the prototype has controls but not a full action vocabulary.
+
+
+Report 237 adds deterministic typed post-entry conversation. User text is routed through keyword intent detection, proto-language token lookup, ambiguity recovery, response selection, persistent relationship memory, and multi-day consequence scheduling. It deliberately does not call an LLM; the weakest channel is proto-language interpretation confidence, which correctly marks the next language-pressure point.

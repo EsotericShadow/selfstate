@@ -1,0 +1,26 @@
+session_id,day,tick,agent_id,focus,active_memory_refs,trust_level,boundary_pressure,transcript_tail,save_restore_marker
+sess_utt_day1_ka60,1,10,ka60,boundary,"[""mem_utt_day1_ka60""]",0.54,0.34,no touch unless you give permission (kase6),restore_1_ka60
+sess_utt_day1_mu61,1,13,mu61,boundary,"[""mem_utt_day1_mu61""]",0.54,0.34,no touch unless you give permission (muse6),restore_1_mu61
+sess_utt_day1_lo62,1,16,lo62,boundary,"[""mem_utt_day1_lo62""]",0.54,0.34,no touch unless you give permission (lose6),restore_1_lo62
+sess_utt_day1_sa63,1,19,sa63,boundary,"[""mem_utt_day1_sa63""]",0.54,0.34,no touch unless you give permission (sase6),restore_1_sa63
+sess_utt_day1_ni64,1,22,ni64,boundary,"[""mem_utt_day1_ni64""]",0.54,0.34,no touch unless you give permission (nise6),restore_1_ni64
+sess_utt_day2_ka60,2,25,ka60,apology,"[""mem_utt_day1_ka60"", ""mem_utt_day2_ka60""]",0.59,0.3,"sorry, I moved too close, I will step back (kase6)",restore_2_ka60
+sess_utt_day2_mu61,2,28,mu61,apology,"[""mem_utt_day1_mu61"", ""mem_utt_day2_mu61""]",0.59,0.3,"sorry, I moved too close, I will step back (muse6)",restore_2_mu61
+sess_utt_day2_lo62,2,31,lo62,apology,"[""mem_utt_day1_lo62"", ""mem_utt_day2_lo62""]",0.59,0.3,"sorry, I moved too close, I will step back (lose6)",restore_2_lo62
+sess_utt_day2_sa63,2,34,sa63,apology,"[""mem_utt_day1_sa63"", ""mem_utt_day2_sa63""]",0.59,0.3,"sorry, I moved too close, I will step back (sase6)",restore_2_sa63
+sess_utt_day2_ni64,2,37,ni64,apology,"[""mem_utt_day1_ni64"", ""mem_utt_day2_ni64""]",0.59,0.3,"sorry, I moved too close, I will step back (nise6)",restore_2_ni64
+sess_utt_day3_ka60,3,40,ka60,ambiguous,"[""mem_utt_day1_ka60"", ""mem_utt_day2_ka60"", ""mem_utt_day3_ka60""]",0.6,0.29,maybe that thing means something (kase6),restore_3_ka60
+sess_utt_day3_mu61,3,43,mu61,ambiguous,"[""mem_utt_day1_mu61"", ""mem_utt_day2_mu61"", ""mem_utt_day3_mu61""]",0.6,0.29,maybe that thing means something (muse6),restore_3_mu61
+sess_utt_day3_lo62,3,46,lo62,ambiguous,"[""mem_utt_day1_lo62"", ""mem_utt_day2_lo62"", ""mem_utt_day3_lo62""]",0.6,0.29,maybe that thing means something (lose6),restore_3_lo62
+sess_utt_day3_sa63,3,49,sa63,ambiguous,"[""mem_utt_day1_sa63"", ""mem_utt_day2_sa63"", ""mem_utt_day3_sa63""]",0.6,0.29,maybe that thing means something (sase6),restore_3_sa63
+sess_utt_day3_ni64,3,52,ni64,ambiguous,"[""mem_utt_day1_ni64"", ""mem_utt_day2_ni64"", ""mem_utt_day3_ni64""]",0.6,0.29,maybe that thing means something (nise6),restore_3_ni64
+sess_utt_day5_ka60,5,55,ka60,ask_word,"[""mem_utt_day2_ka60"", ""mem_utt_day3_ka60"", ""mem_utt_day5_ka60""]",0.62,0.28,what does this token mean in your house (kase6),restore_5_ka60
+sess_utt_day5_mu61,5,58,mu61,ask_word,"[""mem_utt_day2_mu61"", ""mem_utt_day3_mu61"", ""mem_utt_day5_mu61""]",0.62,0.28,what does this token mean in your house (muse6),restore_5_mu61
+sess_utt_day5_lo62,5,61,lo62,ask_word,"[""mem_utt_day2_lo62"", ""mem_utt_day3_lo62"", ""mem_utt_day5_lo62""]",0.62,0.28,what does this token mean in your house (lose6),restore_5_lo62
+sess_utt_day5_sa63,5,64,sa63,ask_word,"[""mem_utt_day2_sa63"", ""mem_utt_day3_sa63"", ""mem_utt_day5_sa63""]",0.62,0.28,what does this token mean in your house (sase6),restore_5_sa63
+sess_utt_day5_ni64,5,67,ni64,ask_word,"[""mem_utt_day2_ni64"", ""mem_utt_day3_ni64"", ""mem_utt_day5_ni64""]",0.62,0.28,what does this token mean in your house (nise6),restore_5_ni64
+sess_utt_day8_ka60,8,70,ka60,help,"[""mem_utt_day3_ka60"", ""mem_utt_day5_ka60"", ""mem_utt_day8_ka60""]",0.64,0.27,I can help repair if you choose the tool (kabo6),restore_8_ka60
+sess_utt_day8_mu61,8,73,mu61,help,"[""mem_utt_day3_mu61"", ""mem_utt_day5_mu61"", ""mem_utt_day8_mu61""]",0.64,0.27,I can help repair if you choose the tool (mubo6),restore_8_mu61
+sess_utt_day8_lo62,8,76,lo62,help,"[""mem_utt_day3_lo62"", ""mem_utt_day5_lo62"", ""mem_utt_day8_lo62""]",0.64,0.27,I can help repair if you choose the tool (lobo6),restore_8_lo62
+sess_utt_day8_sa63,8,79,sa63,help,"[""mem_utt_day3_sa63"", ""mem_utt_day5_sa63"", ""mem_utt_day8_sa63""]",0.64,0.27,I can help repair if you choose the tool (sabo6),restore_8_sa63
+sess_utt_day8_ni64,8,82,ni64,help,"[""mem_utt_day3_ni64"", ""mem_utt_day5_ni64"", ""mem_utt_day8_ni64""]",0.64,0.27,I can help repair if you choose the tool (nibo6),restore_8_ni64

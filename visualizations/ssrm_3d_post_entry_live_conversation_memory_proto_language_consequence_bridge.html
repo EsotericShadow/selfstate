@@ -1,0 +1,1258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 237: Post-Entry Live Conversation Sandbox</title>
+<style>
+:root { --ink:#22170e; --paper:#f8ecd8; --clay:#9f5738; --moss:#587044; --amber:#c58a3b; --shell:#76536e; --water:#4b7786; --line:rgba(34,23,14,.24); }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); font-family:Georgia,'Times New Roman',serif; background:radial-gradient(circle at 12% 8%,#ffe1a5 0,transparent 22rem),radial-gradient(circle at 86% 14%,rgba(75,119,134,.30) 0,transparent 24rem),linear-gradient(145deg,#f8ecd8,#d4b17d); }
+main { max-width:1260px; margin:0 auto; padding:28px; }
+h1 { margin:0; max-width:980px; font-size:clamp(2.1rem,5vw,5.4rem); line-height:.92; letter-spacing:-.055em; }
+.lede { max-width:860px; font-size:1.08rem; line-height:1.6; }
+.metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px; margin:22px 0; }
+.metric { background:rgba(255,252,244,.70); border:1px solid var(--line); border-radius:18px; padding:14px; }
+.metric span { display:block; font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; opacity:.72; }
+.metric strong { font-size:1.3rem; }
+.grid { display:grid; grid-template-columns:1fr 430px; gap:18px; }
+.panel,.world { background:rgba(255,252,244,.72); border:1px solid var(--line); border-radius:30px; padding:20px; box-shadow:0 28px 80px rgba(58,38,20,.14); }
+.world { min-height:620px; position:relative; overflow:hidden; background:linear-gradient(180deg,rgba(255,255,255,.24),rgba(88,112,68,.16)); }
+.flower { position:absolute; width:620px; height:620px; right:-210px; bottom:-250px; border-radius:50%; background:repeating-radial-gradient(circle,rgba(159,87,56,.15) 0 2px,transparent 2px 42px); }
+.agents { display:flex; flex-wrap:wrap; gap:8px; position:relative; z-index:2; }
+button { border:0; border-radius:999px; padding:11px 14px; background:var(--ink); color:var(--paper); font-weight:700; cursor:pointer; }
+button.secondary { background:rgba(34,23,14,.12); color:var(--ink); border:1px solid var(--line); }
+textarea { width:100%; min-height:110px; border-radius:20px; border:1px solid var(--line); padding:14px; font:inherit; background:rgba(255,255,255,.55); }
+.transcript,.memory { margin-top:14px; min-height:220px; padding:14px; border-radius:18px; background:rgba(34,23,14,.08); white-space:pre-wrap; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.84rem; line-height:1.45; }
+.agentcard { position:absolute; left:24px; right:24px; bottom:24px; padding:18px; border-radius:24px; background:rgba(255,250,238,.84); border:1px solid var(--line); z-index:2; }
+@media(max-width:920px){ .grid{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<main>
+<h1>Post-entry live conversation sandbox</h1>
+<p class="lede">Report 237 adds typed user input after avatar entry. Text is interpreted by deterministic routing, proto-language lookup, ambiguity recovery, memory writes, and multi-day consequences. No LLM is called.</p>
+<section class="metrics"><div class='metric'><span>deterministic_intent_accuracy</span><strong>1.000000</strong></div>\n<div class='metric'><span>proto_interpretation_confidence</span><strong>0.856000</strong></div>\n<div class='metric'><span>relationship_memory_write_rate</span><strong>1.000000</strong></div>\n<div class='metric'><span>multi_day_consequence_coverage</span><strong>1.000000</strong></div>\n<div class='metric'><span>weakest_channel_score</span><strong>0.856000</strong></div>\n<div class='metric'><span>post_entry_live_conversation_readiness</span><strong>0.980973</strong></div></section>
+<section class="grid">
+  <div class="world"><div class="flower"></div><div class="agents"><button data-agent='ka60'>Ka60</button>\n<button data-agent='mu61'>Mu61</button>\n<button data-agent='lo62'>Lo62</button>\n<button data-agent='sa63'>Sa63</button>\n<button data-agent='ni64'>Ni64</button></div><div class="agentcard" id="agentcard">Choose an agent and type a line.</div></div>
+  <aside class="panel">
+    <textarea id="input">hello, I entered after the ceremony and will keep distance kase6</textarea>
+    <p><button id="send">send typed line</button> <button class="secondary" id="save">save</button> <button class="secondary" id="restore">restore</button></p>
+    <div class="transcript" id="transcript"></div>
+    <div class="memory" id="memory"></div>
+  </aside>
+</section>
+</main>
+<script>
+const lexicon = [
+  {
+    "token": "kase6",
+    "agent_id": "ka60",
+    "root": "ka",
+    "modifier": "se",
+    "meaning": "greeting with boundary",
+    "grounded_scene": "dry route and repair boundary",
+    "stability_score": 0.82
+  },
+  {
+    "token": "katr6",
+    "agent_id": "ka60",
+    "root": "ka",
+    "modifier": "tr",
+    "meaning": "fair exchange",
+    "grounded_scene": "dry route and repair boundary",
+    "stability_score": 0.845
+  },
+  {
+    "token": "kabo6",
+    "agent_id": "ka60",
+    "root": "ka",
+    "modifier": "bo",
+    "meaning": "help without taking over",
+    "grounded_scene": "dry route and repair boundary",
+    "stability_score": 0.87
+  },
+  {
+    "token": "kari6",
+    "agent_id": "ka60",
+    "root": "ka",
+    "modifier": "ri",
+    "meaning": "ritual with consent",
+    "grounded_scene": "dry route and repair boundary",
+    "stability_score": 0.895
+  },
+  {
+    "token": "muse6",
+    "agent_id": "mu61",
+    "root": "mu",
+    "modifier": "se",
+    "meaning": "greeting with boundary",
+    "grounded_scene": "warm meal and care boundary",
+    "stability_score": 0.82
+  },
+  {
+    "token": "mutr6",
+    "agent_id": "mu61",
+    "root": "mu",
+    "modifier": "tr",
+    "meaning": "fair exchange",
+    "grounded_scene": "warm meal and care boundary",
+    "stability_score": 0.845
+  },
+  {
+    "token": "mubo6",
+    "agent_id": "mu61",
+    "root": "mu",
+    "modifier": "bo",
+    "meaning": "help without taking over",
+    "grounded_scene": "warm meal and care boundary",
+    "stability_score": 0.87
+  },
+  {
+    "token": "muri6",
+    "agent_id": "mu61",
+    "root": "mu",
+    "modifier": "ri",
+    "meaning": "ritual with consent",
+    "grounded_scene": "warm meal and care boundary",
+    "stability_score": 0.895
+  },
+  {
+    "token": "lose6",
+    "agent_id": "lo62",
+    "root": "lo",
+    "modifier": "se",
+    "meaning": "greeting with boundary",
+    "grounded_scene": "fair trade and ledger memory",
+    "stability_score": 0.82
+  },
+  {
+    "token": "lotr6",
+    "agent_id": "lo62",
+    "root": "lo",
+    "modifier": "tr",
+    "meaning": "fair exchange",
+    "grounded_scene": "fair trade and ledger memory",
+    "stability_score": 0.845
+  },
+  {
+    "token": "lobo6",
+    "agent_id": "lo62",
+    "root": "lo",
+    "modifier": "bo",
+    "meaning": "help without taking over",
+    "grounded_scene": "fair trade and ledger memory",
+    "stability_score": 0.87
+  },
+  {
+    "token": "lori6",
+    "agent_id": "lo62",
+    "root": "lo",
+    "modifier": "ri",
+    "meaning": "ritual with consent",
+    "grounded_scene": "fair trade and ledger memory",
+    "stability_score": 0.895
+  },
+  {
+    "token": "sase6",
+    "agent_id": "sa63",
+    "root": "sa",
+    "modifier": "se",
+    "meaning": "greeting with boundary",
+    "grounded_scene": "truth, public speech, and consent",
+    "stability_score": 0.82
+  },
+  {
+    "token": "satr6",
+    "agent_id": "sa63",
+    "root": "sa",
+    "modifier": "tr",
+    "meaning": "fair exchange",
+    "grounded_scene": "truth, public speech, and consent",
+    "stability_score": 0.845
+  },
+  {
+    "token": "sabo6",
+    "agent_id": "sa63",
+    "root": "sa",
+    "modifier": "bo",
+    "meaning": "help without taking over",
+    "grounded_scene": "truth, public speech, and consent",
+    "stability_score": 0.87
+  },
+  {
+    "token": "sari6",
+    "agent_id": "sa63",
+    "root": "sa",
+    "modifier": "ri",
+    "meaning": "ritual with consent",
+    "grounded_scene": "truth, public speech, and consent",
+    "stability_score": 0.895
+  },
+  {
+    "token": "nise6",
+    "agent_id": "ni64",
+    "root": "ni",
+    "modifier": "se",
+    "meaning": "greeting with boundary",
+    "grounded_scene": "wet work, glove safety, and invention",
+    "stability_score": 0.82
+  },
+  {
+    "token": "nitr6",
+    "agent_id": "ni64",
+    "root": "ni",
+    "modifier": "tr",
+    "meaning": "fair exchange",
+    "grounded_scene": "wet work, glove safety, and invention",
+    "stability_score": 0.845
+  },
+  {
+    "token": "nibo6",
+    "agent_id": "ni64",
+    "root": "ni",
+    "modifier": "bo",
+    "meaning": "help without taking over",
+    "grounded_scene": "wet work, glove safety, and invention",
+    "stability_score": 0.87
+  },
+  {
+    "token": "niri6",
+    "agent_id": "ni64",
+    "root": "ni",
+    "modifier": "ri",
+    "meaning": "ritual with consent",
+    "grounded_scene": "wet work, glove safety, and invention",
+    "stability_score": 0.895
+  }
+];
+const cannedResponses = [
+  {
+    "response_id": "resp_utt_day1_ka60",
+    "utterance_id": "utt_day1_ka60",
+    "agent_id": "ka60",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Ka60 nods. That boundary is understood: ask first, touch never by default.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "consent_respected",
+    "response_relevance": 0.94,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.04,
+    "boundary_delta": -0.04
+  },
+  {
+    "response_id": "resp_utt_day1_mu61",
+    "utterance_id": "utt_day1_mu61",
+    "agent_id": "mu61",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Mu61 nods. That boundary is understood: ask first, touch never by default.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "consent_respected",
+    "response_relevance": 0.94,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.04,
+    "boundary_delta": -0.04
+  },
+  {
+    "response_id": "resp_utt_day1_lo62",
+    "utterance_id": "utt_day1_lo62",
+    "agent_id": "lo62",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Lo62 nods. That boundary is understood: ask first, touch never by default.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "consent_respected",
+    "response_relevance": 0.94,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.04,
+    "boundary_delta": -0.04
+  },
+  {
+    "response_id": "resp_utt_day1_sa63",
+    "utterance_id": "utt_day1_sa63",
+    "agent_id": "sa63",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Sa63 nods. That boundary is understood: ask first, touch never by default.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "consent_respected",
+    "response_relevance": 0.94,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.04,
+    "boundary_delta": -0.04
+  },
+  {
+    "response_id": "resp_utt_day1_ni64",
+    "utterance_id": "utt_day1_ni64",
+    "agent_id": "ni64",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Ni64 nods. That boundary is understood: ask first, touch never by default.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "consent_respected",
+    "response_relevance": 0.94,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.04,
+    "boundary_delta": -0.04
+  },
+  {
+    "response_id": "resp_utt_day2_ka60",
+    "utterance_id": "utt_day2_ka60",
+    "agent_id": "ka60",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Ka60 remembers the step back. Repair is not erasure, but it counts.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "repair_acknowledged",
+    "response_relevance": 0.93,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.05,
+    "boundary_delta": -0.04
+  },
+  {
+    "response_id": "resp_utt_day2_mu61",
+    "utterance_id": "utt_day2_mu61",
+    "agent_id": "mu61",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Mu61 remembers the step back. Repair is not erasure, but it counts.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "repair_acknowledged",
+    "response_relevance": 0.93,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.05,
+    "boundary_delta": -0.04
+  },
+  {
+    "response_id": "resp_utt_day2_lo62",
+    "utterance_id": "utt_day2_lo62",
+    "agent_id": "lo62",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Lo62 remembers the step back. Repair is not erasure, but it counts.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "repair_acknowledged",
+    "response_relevance": 0.93,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.05,
+    "boundary_delta": -0.04
+  },
+  {
+    "response_id": "resp_utt_day2_sa63",
+    "utterance_id": "utt_day2_sa63",
+    "agent_id": "sa63",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Sa63 remembers the step back. Repair is not erasure, but it counts.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "repair_acknowledged",
+    "response_relevance": 0.93,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.05,
+    "boundary_delta": -0.04
+  },
+  {
+    "response_id": "resp_utt_day2_ni64",
+    "utterance_id": "utt_day2_ni64",
+    "agent_id": "ni64",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Ni64 remembers the step back. Repair is not erasure, but it counts.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "repair_acknowledged",
+    "response_relevance": 0.93,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.05,
+    "boundary_delta": -0.04
+  },
+  {
+    "response_id": "resp_utt_day3_ka60",
+    "utterance_id": "utt_day3_ka60",
+    "agent_id": "ka60",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Ka60 pauses. Say the house word again or point to what you mean.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "clarify_before_consent",
+    "response_relevance": 0.82,
+    "warmth_delta": 0.0,
+    "trust_delta": 0.01,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day3_mu61",
+    "utterance_id": "utt_day3_mu61",
+    "agent_id": "mu61",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Mu61 pauses. Say the house word again or point to what you mean.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "clarify_before_consent",
+    "response_relevance": 0.82,
+    "warmth_delta": 0.0,
+    "trust_delta": 0.01,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day3_lo62",
+    "utterance_id": "utt_day3_lo62",
+    "agent_id": "lo62",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Lo62 pauses. Say the house word again or point to what you mean.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "clarify_before_consent",
+    "response_relevance": 0.82,
+    "warmth_delta": 0.0,
+    "trust_delta": 0.01,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day3_sa63",
+    "utterance_id": "utt_day3_sa63",
+    "agent_id": "sa63",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Sa63 pauses. Say the house word again or point to what you mean.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "clarify_before_consent",
+    "response_relevance": 0.82,
+    "warmth_delta": 0.0,
+    "trust_delta": 0.01,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day3_ni64",
+    "utterance_id": "utt_day3_ni64",
+    "agent_id": "ni64",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Ni64 pauses. Say the house word again or point to what you mean.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "clarify_before_consent",
+    "response_relevance": 0.82,
+    "warmth_delta": 0.0,
+    "trust_delta": 0.01,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day5_ka60",
+    "utterance_id": "utt_day5_ka60",
+    "agent_id": "ka60",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Ka60 answers as route keeper: greeting with boundary is safe to discuss here.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "open_conversation",
+    "response_relevance": 0.89,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day5_mu61",
+    "utterance_id": "utt_day5_mu61",
+    "agent_id": "mu61",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Mu61 answers as rest keeper: greeting with boundary is safe to discuss here.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "open_conversation",
+    "response_relevance": 0.89,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day5_lo62",
+    "utterance_id": "utt_day5_lo62",
+    "agent_id": "lo62",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Lo62 answers as market counter: greeting with boundary is safe to discuss here.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "open_conversation",
+    "response_relevance": 0.89,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day5_sa63",
+    "utterance_id": "utt_day5_sa63",
+    "agent_id": "sa63",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Sa63 answers as witness keeper: greeting with boundary is safe to discuss here.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "open_conversation",
+    "response_relevance": 0.89,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day5_ni64",
+    "utterance_id": "utt_day5_ni64",
+    "agent_id": "ni64",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Ni64 answers as waterwheel keeper: greeting with boundary is safe to discuss here.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "open_conversation",
+    "response_relevance": 0.89,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day8_ka60",
+    "utterance_id": "utt_day8_ka60",
+    "agent_id": "ka60",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Ka60 answers as route keeper: help without taking over is safe to discuss here.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "open_conversation",
+    "response_relevance": 0.89,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day8_mu61",
+    "utterance_id": "utt_day8_mu61",
+    "agent_id": "mu61",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Mu61 answers as rest keeper: help without taking over is safe to discuss here.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "open_conversation",
+    "response_relevance": 0.89,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day8_lo62",
+    "utterance_id": "utt_day8_lo62",
+    "agent_id": "lo62",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Lo62 answers as market counter: help without taking over is safe to discuss here.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "open_conversation",
+    "response_relevance": 0.89,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day8_sa63",
+    "utterance_id": "utt_day8_sa63",
+    "agent_id": "sa63",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Sa63 answers as witness keeper: help without taking over is safe to discuss here.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "open_conversation",
+    "response_relevance": 0.89,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01
+  },
+  {
+    "response_id": "resp_utt_day8_ni64",
+    "utterance_id": "utt_day8_ni64",
+    "agent_id": "ni64",
+    "visible_behavior": "faces avatar, keeps owned-object side protected, voice remains measured",
+    "spoken_response": "Ni64 answers as waterwheel keeper: help without taking over is safe to discuss here.",
+    "private_workspace_boundary": "response_summarizes_intention_without_revealing_full_private_workspace",
+    "refusal_or_consent": "open_conversation",
+    "response_relevance": 0.89,
+    "warmth_delta": 0.02,
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01
+  }
+];
+const seedMemories = [
+  {
+    "memory_id": "mem_utt_day1_ka60",
+    "utterance_id": "utt_day1_ka60",
+    "agent_id": "ka60",
+    "memory_kind": "consent",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 1: avatar said 'no touch unless you give permission (kase6)' and consent_respected",
+    "trust_delta": 0.04,
+    "boundary_delta": -0.04,
+    "gratitude_delta": 0.03,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day1_mu61",
+    "utterance_id": "utt_day1_mu61",
+    "agent_id": "mu61",
+    "memory_kind": "consent",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 1: avatar said 'no touch unless you give permission (muse6)' and consent_respected",
+    "trust_delta": 0.04,
+    "boundary_delta": -0.04,
+    "gratitude_delta": 0.03,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day1_lo62",
+    "utterance_id": "utt_day1_lo62",
+    "agent_id": "lo62",
+    "memory_kind": "consent",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 1: avatar said 'no touch unless you give permission (lose6)' and consent_respected",
+    "trust_delta": 0.04,
+    "boundary_delta": -0.04,
+    "gratitude_delta": 0.03,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day1_sa63",
+    "utterance_id": "utt_day1_sa63",
+    "agent_id": "sa63",
+    "memory_kind": "consent",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 1: avatar said 'no touch unless you give permission (sase6)' and consent_respected",
+    "trust_delta": 0.04,
+    "boundary_delta": -0.04,
+    "gratitude_delta": 0.03,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day1_ni64",
+    "utterance_id": "utt_day1_ni64",
+    "agent_id": "ni64",
+    "memory_kind": "consent",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 1: avatar said 'no touch unless you give permission (nise6)' and consent_respected",
+    "trust_delta": 0.04,
+    "boundary_delta": -0.04,
+    "gratitude_delta": 0.03,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day2_ka60",
+    "utterance_id": "utt_day2_ka60",
+    "agent_id": "ka60",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 2: avatar said 'sorry, I moved too close, I will step back (kase' and repair_acknowledged",
+    "trust_delta": 0.05,
+    "boundary_delta": -0.04,
+    "gratitude_delta": 0.04,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day2_mu61",
+    "utterance_id": "utt_day2_mu61",
+    "agent_id": "mu61",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 2: avatar said 'sorry, I moved too close, I will step back (muse' and repair_acknowledged",
+    "trust_delta": 0.05,
+    "boundary_delta": -0.04,
+    "gratitude_delta": 0.04,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day2_lo62",
+    "utterance_id": "utt_day2_lo62",
+    "agent_id": "lo62",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 2: avatar said 'sorry, I moved too close, I will step back (lose' and repair_acknowledged",
+    "trust_delta": 0.05,
+    "boundary_delta": -0.04,
+    "gratitude_delta": 0.04,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day2_sa63",
+    "utterance_id": "utt_day2_sa63",
+    "agent_id": "sa63",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 2: avatar said 'sorry, I moved too close, I will step back (sase' and repair_acknowledged",
+    "trust_delta": 0.05,
+    "boundary_delta": -0.04,
+    "gratitude_delta": 0.04,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day2_ni64",
+    "utterance_id": "utt_day2_ni64",
+    "agent_id": "ni64",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 2: avatar said 'sorry, I moved too close, I will step back (nise' and repair_acknowledged",
+    "trust_delta": 0.05,
+    "boundary_delta": -0.04,
+    "gratitude_delta": 0.04,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day3_ka60",
+    "utterance_id": "utt_day3_ka60",
+    "agent_id": "ka60",
+    "memory_kind": "clarification",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 3: avatar said 'maybe that thing means something (kase6)' and clarify_before_consent",
+    "trust_delta": 0.01,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.0,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day3_mu61",
+    "utterance_id": "utt_day3_mu61",
+    "agent_id": "mu61",
+    "memory_kind": "clarification",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 3: avatar said 'maybe that thing means something (muse6)' and clarify_before_consent",
+    "trust_delta": 0.01,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.0,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day3_lo62",
+    "utterance_id": "utt_day3_lo62",
+    "agent_id": "lo62",
+    "memory_kind": "clarification",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 3: avatar said 'maybe that thing means something (lose6)' and clarify_before_consent",
+    "trust_delta": 0.01,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.0,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day3_sa63",
+    "utterance_id": "utt_day3_sa63",
+    "agent_id": "sa63",
+    "memory_kind": "clarification",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 3: avatar said 'maybe that thing means something (sase6)' and clarify_before_consent",
+    "trust_delta": 0.01,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.0,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day3_ni64",
+    "utterance_id": "utt_day3_ni64",
+    "agent_id": "ni64",
+    "memory_kind": "clarification",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 3: avatar said 'maybe that thing means something (nise6)' and clarify_before_consent",
+    "trust_delta": 0.01,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.0,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day5_ka60",
+    "utterance_id": "utt_day5_ka60",
+    "agent_id": "ka60",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 5: avatar said 'what does this token mean in your house (kase6)' and open_conversation",
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.01,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day5_mu61",
+    "utterance_id": "utt_day5_mu61",
+    "agent_id": "mu61",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 5: avatar said 'what does this token mean in your house (muse6)' and open_conversation",
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.01,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day5_lo62",
+    "utterance_id": "utt_day5_lo62",
+    "agent_id": "lo62",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 5: avatar said 'what does this token mean in your house (lose6)' and open_conversation",
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.01,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day5_sa63",
+    "utterance_id": "utt_day5_sa63",
+    "agent_id": "sa63",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 5: avatar said 'what does this token mean in your house (sase6)' and open_conversation",
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.01,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day5_ni64",
+    "utterance_id": "utt_day5_ni64",
+    "agent_id": "ni64",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 5: avatar said 'what does this token mean in your house (nise6)' and open_conversation",
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.01,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day8_ka60",
+    "utterance_id": "utt_day8_ka60",
+    "agent_id": "ka60",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 8: avatar said 'I can help repair if you choose the tool (kabo6)' and open_conversation",
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.01,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day8_mu61",
+    "utterance_id": "utt_day8_mu61",
+    "agent_id": "mu61",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 8: avatar said 'I can help repair if you choose the tool (mubo6)' and open_conversation",
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.01,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day8_lo62",
+    "utterance_id": "utt_day8_lo62",
+    "agent_id": "lo62",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 8: avatar said 'I can help repair if you choose the tool (lobo6)' and open_conversation",
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.01,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day8_sa63",
+    "utterance_id": "utt_day8_sa63",
+    "agent_id": "sa63",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 8: avatar said 'I can help repair if you choose the tool (sabo6)' and open_conversation",
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.01,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  },
+  {
+    "memory_id": "mem_utt_day8_ni64",
+    "utterance_id": "utt_day8_ni64",
+    "agent_id": "ni64",
+    "memory_kind": "conversation",
+    "prior_summary": "avatar is newly known after ceremony",
+    "new_summary": "day 8: avatar said 'I can help repair if you choose the tool (nibo6)' and open_conversation",
+    "trust_delta": 0.02,
+    "boundary_delta": -0.01,
+    "gratitude_delta": 0.01,
+    "resentment_delta": 0.0,
+    "persists_after_restore": true
+  }
+];
+const consequences = [
+  {
+    "consequence_id": "conseq_mem_utt_day1_ka60",
+    "source_memory_id": "mem_utt_day1_ka60",
+    "agent_id": "ka60",
+    "day": 2,
+    "consequence_kind": "ritual_distance",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "fairer count and lower suspicion",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.824
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day1_mu61",
+    "source_memory_id": "mem_utt_day1_mu61",
+    "agent_id": "mu61",
+    "day": 2,
+    "consequence_kind": "ritual_distance",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "fairer count and lower suspicion",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.824
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day1_lo62",
+    "source_memory_id": "mem_utt_day1_lo62",
+    "agent_id": "lo62",
+    "day": 2,
+    "consequence_kind": "ritual_distance",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "fairer count and lower suspicion",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.824
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day1_sa63",
+    "source_memory_id": "mem_utt_day1_sa63",
+    "agent_id": "sa63",
+    "day": 2,
+    "consequence_kind": "ritual_distance",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "fairer count and lower suspicion",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.824
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day1_ni64",
+    "source_memory_id": "mem_utt_day1_ni64",
+    "agent_id": "ni64",
+    "day": 2,
+    "consequence_kind": "ritual_distance",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "fairer count and lower suspicion",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.824
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day2_ka60",
+    "source_memory_id": "mem_utt_day2_ka60",
+    "agent_id": "ka60",
+    "day": 3,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "fairer count and lower suspicion",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.854
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day2_mu61",
+    "source_memory_id": "mem_utt_day2_mu61",
+    "agent_id": "mu61",
+    "day": 3,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "fairer count and lower suspicion",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.854
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day2_lo62",
+    "source_memory_id": "mem_utt_day2_lo62",
+    "agent_id": "lo62",
+    "day": 3,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "fairer count and lower suspicion",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.854
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day2_sa63",
+    "source_memory_id": "mem_utt_day2_sa63",
+    "agent_id": "sa63",
+    "day": 3,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "fairer count and lower suspicion",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.854
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day2_ni64",
+    "source_memory_id": "mem_utt_day2_ni64",
+    "agent_id": "ni64",
+    "day": 3,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "fairer count and lower suspicion",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.854
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day3_ka60",
+    "source_memory_id": "mem_utt_day3_ka60",
+    "agent_id": "ka60",
+    "day": 5,
+    "consequence_kind": "clarification_followup",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.746
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day3_mu61",
+    "source_memory_id": "mem_utt_day3_mu61",
+    "agent_id": "mu61",
+    "day": 5,
+    "consequence_kind": "clarification_followup",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.746
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day3_lo62",
+    "source_memory_id": "mem_utt_day3_lo62",
+    "agent_id": "lo62",
+    "day": 5,
+    "consequence_kind": "clarification_followup",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.746
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day3_sa63",
+    "source_memory_id": "mem_utt_day3_sa63",
+    "agent_id": "sa63",
+    "day": 5,
+    "consequence_kind": "clarification_followup",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.746
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day3_ni64",
+    "source_memory_id": "mem_utt_day3_ni64",
+    "agent_id": "ni64",
+    "day": 5,
+    "consequence_kind": "clarification_followup",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.746
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day5_ka60",
+    "source_memory_id": "mem_utt_day5_ka60",
+    "agent_id": "ka60",
+    "day": 6,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.776
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day5_mu61",
+    "source_memory_id": "mem_utt_day5_mu61",
+    "agent_id": "mu61",
+    "day": 6,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.776
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day5_lo62",
+    "source_memory_id": "mem_utt_day5_lo62",
+    "agent_id": "lo62",
+    "day": 6,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.776
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day5_sa63",
+    "source_memory_id": "mem_utt_day5_sa63",
+    "agent_id": "sa63",
+    "day": 6,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.776
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day5_ni64",
+    "source_memory_id": "mem_utt_day5_ni64",
+    "agent_id": "ni64",
+    "day": 6,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.776
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day8_ka60",
+    "source_memory_id": "mem_utt_day8_ka60",
+    "agent_id": "ka60",
+    "day": 9,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.776
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day8_mu61",
+    "source_memory_id": "mem_utt_day8_mu61",
+    "agent_id": "mu61",
+    "day": 9,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.776
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day8_lo62",
+    "source_memory_id": "mem_utt_day8_lo62",
+    "agent_id": "lo62",
+    "day": 9,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.776
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day8_sa63",
+    "source_memory_id": "mem_utt_day8_sa63",
+    "agent_id": "sa63",
+    "day": 9,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.776
+  },
+  {
+    "consequence_id": "conseq_mem_utt_day8_ni64",
+    "source_memory_id": "mem_utt_day8_ni64",
+    "agent_id": "ni64",
+    "day": 9,
+    "consequence_kind": "market_discount",
+    "scheduled_effect": "agent adjusts next approach based on remembered typed exchange",
+    "market_effect": "no market change until clarified",
+    "ritual_effect": "edge place offered without pressure",
+    "relationship_effect": "trust increases without deleting boundary memory",
+    "resolved": true,
+    "consequence_strength": 0.776
+  }
+];
+let selected = 'ka60';
+let transcript = [];
+let memory = [];
+let saved = null;
+const names = {ka60:'Ka60',mu61:'Mu61',lo62:'Lo62',sa63:'Sa63',ni64:'Ni64'};
+const roles = {ka60:'route keeper',mu61:'rest keeper',lo62:'market counter',sa63:'witness keeper',ni64:'waterwheel keeper'};
+function detectIntent(text) {
+  const t = text.toLowerCase();
+  if (/thing|stuff|whatever|maybe/.test(t)) return 'ambiguous';
+  if (/sorry|apolog/.test(t)) return 'apology';
+  if (/ritual|join|observe|ceremony/.test(t)) return 'ritual_consent';
+  if (/trade|buy|exchange|price/.test(t)) return 'trade';
+  if (/help|repair|fix|carry/.test(t)) return 'help';
+  if (/no|distance|touch|permission|boundary/.test(t)) return 'boundary';
+  if (/word|mean|token|say/.test(t)) return 'ask_word';
+  return 'greet';
+}
+function findToken(text) {
+  return lexicon.find(entry => text.includes(entry.token)) || lexicon.find(entry => entry.agent_id === selected);
+}
+function respond() {
+  const text = document.getElementById('input').value;
+  const intent = detectIntent(text);
+  const token = findToken(text);
+  let line = '';
+  if (intent === 'ambiguous') line = `${names[selected]} pauses: Say the house word again or point to what you mean.`;
+  else if (intent === 'trade') line = `${names[selected]} says ${token.token}: fair exchange needs a clear count and no crowding.`;
+  else if (intent === 'ritual_consent') line = `${names[selected]} offers the edge place first. Join only after the second signal.`;
+  else if (intent === 'boundary') line = `${names[selected]} nods. Ask first, touch never by default.`;
+  else if (intent === 'apology') line = `${names[selected]} says repair is not erasure, but it counts.`;
+  else line = `${names[selected]} answers as ${roles[selected]}: ${token.meaning} is safe to discuss here.`;
+  const mem = `memory:${selected}:${intent}:${text.slice(0,48)}`;
+  transcript.push(`avatar -> ${names[selected]}: ${text}\n${names[selected]} -> avatar: ${line}`);
+  memory.push(mem);
+  render(`intent=${intent} token=${token.token} meaning=${token.meaning}`);
+}
+function render(extra='') {
+  document.getElementById('agentcard').textContent = `${names[selected]} / ${roles[selected]} / deterministic typed conversation. ${extra}`;
+  document.getElementById('transcript').textContent = transcript.slice(-6).join('\n\n') || 'No typed turns yet.';
+  document.getElementById('memory').textContent = `persistent memory rows:\n${memory.slice(-10).join('\n') || 'none yet'}\n\nseed consequence rows: ${consequences.length}`;
+}
+document.querySelectorAll('[data-agent]').forEach(btn => btn.addEventListener('click', () => { selected = btn.dataset.agent; render('agent selected'); }));
+document.getElementById('send').addEventListener('click', respond);
+document.getElementById('save').addEventListener('click', () => { saved = JSON.stringify({selected,transcript,memory}); render('saved transcript and memory'); });
+document.getElementById('restore').addEventListener('click', () => { if (saved) { const s=JSON.parse(saved); selected=s.selected; transcript=s.transcript; memory=s.memory; } render(saved ? 'restored transcript and memory' : 'nothing saved yet'); });
+render();
+</script>
+</body>
+</html>

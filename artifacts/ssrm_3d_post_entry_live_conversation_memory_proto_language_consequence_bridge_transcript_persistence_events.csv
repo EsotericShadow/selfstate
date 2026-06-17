@@ -1,0 +1,4 @@
+persistence_id,day,tick,action,transcript_rows,memory_rows,restore_expected,replay_export_marker,integrity_score
+persist_day1_save,1,99,save,5,5,day 1 transcript and memory rows restore,replay_day1,1.0
+persist_day3_restore,3,199,restore,15,15,day 1-3 relationship memory survives restore,replay_day3,1.0
+persist_day5_export,5,299,export_replay,20,25,exported replay keeps transcript and memory refs,replay_day5,1.0

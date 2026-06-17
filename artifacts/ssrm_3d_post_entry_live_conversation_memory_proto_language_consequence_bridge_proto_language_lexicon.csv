@@ -1,0 +1,21 @@
+token,agent_id,root,modifier,meaning,grounded_scene,stability_score
+kase6,ka60,ka,se,greeting with boundary,dry route and repair boundary,0.82
+katr6,ka60,ka,tr,fair exchange,dry route and repair boundary,0.845
+kabo6,ka60,ka,bo,help without taking over,dry route and repair boundary,0.87
+kari6,ka60,ka,ri,ritual with consent,dry route and repair boundary,0.895
+muse6,mu61,mu,se,greeting with boundary,warm meal and care boundary,0.82
+mutr6,mu61,mu,tr,fair exchange,warm meal and care boundary,0.845
+mubo6,mu61,mu,bo,help without taking over,warm meal and care boundary,0.87
+muri6,mu61,mu,ri,ritual with consent,warm meal and care boundary,0.895
+lose6,lo62,lo,se,greeting with boundary,fair trade and ledger memory,0.82
+lotr6,lo62,lo,tr,fair exchange,fair trade and ledger memory,0.845
+lobo6,lo62,lo,bo,help without taking over,fair trade and ledger memory,0.87
+lori6,lo62,lo,ri,ritual with consent,fair trade and ledger memory,0.895
+sase6,sa63,sa,se,greeting with boundary,"truth, public speech, and consent",0.82
+satr6,sa63,sa,tr,fair exchange,"truth, public speech, and consent",0.845
+sabo6,sa63,sa,bo,help without taking over,"truth, public speech, and consent",0.87
+sari6,sa63,sa,ri,ritual with consent,"truth, public speech, and consent",0.895
+nise6,ni64,ni,se,greeting with boundary,"wet work, glove safety, and invention",0.82
+nitr6,ni64,ni,tr,fair exchange,"wet work, glove safety, and invention",0.845
+nibo6,ni64,ni,bo,help without taking over,"wet work, glove safety, and invention",0.87
+niri6,ni64,ni,ri,ritual with consent,"wet work, glove safety, and invention",0.895

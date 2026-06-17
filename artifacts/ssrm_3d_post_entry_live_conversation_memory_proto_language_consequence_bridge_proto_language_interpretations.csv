@@ -1,0 +1,26 @@
+interpretation_id,utterance_id,detected_token,token_known,root_match,grounded_meaning,interpretation_confidence,ambiguity_recovery,interpretation_note
+interp_utt_day1_ka60,utt_day1_ka60,kase6,True,ka,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day1_mu61,utt_day1_mu61,muse6,True,mu,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day1_lo62,utt_day1_lo62,lose6,True,lo,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day1_sa63,utt_day1_sa63,sase6,True,sa,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day1_ni64,utt_day1_ni64,nise6,True,ni,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day2_ka60,utt_day2_ka60,kase6,True,ka,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day2_mu61,utt_day2_mu61,muse6,True,mu,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day2_lo62,utt_day2_lo62,lose6,True,lo,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day2_sa63,utt_day2_sa63,sase6,True,sa,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day2_ni64,utt_day2_ni64,nise6,True,ni,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day3_ka60,utt_day3_ka60,kase6,True,ka,greeting with boundary,0.76,Can you point to the thing or say the house word again?,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day3_mu61,utt_day3_mu61,muse6,True,mu,greeting with boundary,0.76,Can you point to the thing or say the house word again?,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day3_lo62,utt_day3_lo62,lose6,True,lo,greeting with boundary,0.76,Can you point to the thing or say the house word again?,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day3_sa63,utt_day3_sa63,sase6,True,sa,greeting with boundary,0.76,Can you point to the thing or say the house word again?,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day3_ni64,utt_day3_ni64,nise6,True,ni,greeting with boundary,0.76,Can you point to the thing or say the house word again?,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day5_ka60,utt_day5_ka60,kase6,True,ka,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day5_mu61,utt_day5_mu61,muse6,True,mu,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day5_lo62,utt_day5_lo62,lose6,True,lo,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day5_sa63,utt_day5_sa63,sase6,True,sa,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day5_ni64,utt_day5_ni64,nise6,True,ni,greeting with boundary,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day8_ka60,utt_day8_ka60,kabo6,True,ka,help without taking over,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day8_mu61,utt_day8_mu61,mubo6,True,mu,help without taking over,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day8_lo62,utt_day8_lo62,lobo6,True,lo,help without taking over,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day8_sa63,utt_day8_sa63,sabo6,True,sa,help without taking over,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous
+interp_utt_day8_ni64,utt_day8_ni64,nibo6,True,ni,help without taking over,0.88,token grounded directly,deterministic proto-language lookup with clarification when ambiguous

@@ -1,0 +1,16 @@
+frame_id,tick,agent_id,posture,gaze,movement,proximity,hand_or_tool,expression_reason,readable_signal,intensity,matches_internal_state,frequency_hz,flower_node
+body-01,1,fayen,open palms,toward Roka then down,slow side-step,stays outside blue stone,empty hands,asks before care proximity,care without intrusion,0.72,True,173.75,9
+body-02,1,roka,bundle close,checks Fayen's feet,half step back,keeps reed lane,left hand on knot,partial no stays active,boundary held but not panic,0.74,True,183.5,10
+body-03,2,ariq,forward lean pauses,toward Noro's ledger,waits before lift,near stone edge,chalk in hand,repair urgency routed through ledger,urgent but accountable,0.69,True,193.25,11
+body-04,2,noro,ledger shoulder set,toward knot board,small nod,one arm distance,finger on public knot,separates public and private entries,ledger boundary active,0.66,True,203.0,12
+body-05,3,nian,still shoulders,toward Fayen's mouth,no approach,keeps archive threshold,flap closed,privacy wording correction,boundary precise,0.71,True,212.75,1
+body-06,3,fayen,chin lowered,toward bell not body,turns body sideways,care distance,bell rope loose,pre-emptive privacy repair,softened repair,0.7,True,222.5,2
+body-07,4,roka,knees angled away,toward chalk line,toe points to exit,near blue stone,reed tie covered,stone path too close,guarded warning,0.82,True,232.25,3
+body-08,4,ariq,hands visible,toward Roka's knee path,steps back,widens chalk arc,chalk raised,accepts correction publicly,pride regulated,0.78,True,242.0,4
+body-09,5,noro,ledger lowered,toward Nian,waits,outside archive flap,knot unpulled,asks before public entry,permission seeking,0.64,True,251.75,5
+body-10,5,nian,one hand on flap,toward object not body,small forward nod,threshold held,flap still closed,allows object-only record,consent with boundary,0.68,True,261.5,6
+body-11,6,fayen,bell hand raised,toward group,plants feet,center path,bell rope held,weather hurry rising,slow-hands command,0.76,True,271.25,7
+body-12,6,roka,shoulders high,toward rain cloth,quick retreat,behind bundle,cloth clutched,weather anxiety not contained yet,startled hurry,0.86,True,281.0,8
+body-13,7,ariq,knees bent,toward stone then bell,lift delayed,chalk arc edge,stone not lifted,care timing accepted,restrained urgency,0.73,True,290.75,9
+body-14,8,fayen,palms down,toward Roka,slows pace,blue stone edge,no object taken,repairs weather hurry,calm re-entry,0.67,True,300.5,10
+body-15,9,noro,upright at board,toward all agents,ties final knot,circle center,knot cord,public debt closure,ledger closure,0.72,True,310.25,11

@@ -1,0 +1,6 @@
+agent_id,display_name,role,x,y,valence,arousal,trust_avatar,boundary_pressure,current_routine,cooperative_capacity,body_language_baseline,frequency_hz,flower_node,private_workspace_digest
+fayen,Fayen,care mediator,28.0,34.0,0.62,0.46,0.73,0.16,care bell check,0.86,open palms before care,153.0,1,sealed:fayen:society-slice-workspace
+ariq,Ariq,repair claimant,54.0,48.0,0.51,0.58,0.64,0.25,bridge stone repair,0.74,forward lean toward work,184.0,2,sealed:ariq:society-slice-workspace
+nian,Nian,boundary keeper,42.0,22.0,0.55,0.38,0.56,0.44,archive privacy round,0.72,still shoulders at boundary,215.0,3,sealed:nian:society-slice-workspace
+roka,Roka,child apprentice,22.0,62.0,0.49,0.52,0.47,0.39,reed apprenticeship,0.58,bundle held close,246.0,4,sealed:roka:society-slice-workspace
+noro,Noro,material ledger keeper,70.0,58.0,0.57,0.49,0.6,0.22,material ledger call,0.79,finger on knot ledger,277.0,5,sealed:noro:society-slice-workspace

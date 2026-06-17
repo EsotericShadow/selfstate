@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report 211 Seasonal Body Ecology</title>
+<style>
+:root {
+  --ink: #1f1915;
+  --paper: #f0e6d1;
+  --sick: #7a7847;
+  --care: #b06b3c;
+  --cold: #3b6870;
+  --line: rgba(31,25,21,.18);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: var(--ink); background: linear-gradient(135deg, rgba(240,230,209,.96), rgba(202,213,190,.90)), radial-gradient(circle at 82% 10%, rgba(59,104,112,.24), transparent 30%); }
+main { max-width: 1240px; margin: 0 auto; padding: 36px 18px 60px; }
+.hero { border: 1px solid var(--line); border-radius: 32px; padding: 30px; background: rgba(255,255,255,.48); box-shadow: 0 26px 72px rgba(42,48,34,.16); }
+h1 { margin: 0; font-size: clamp(2.2rem, 7vw, 5.8rem); line-height: .9; letter-spacing: -.055em; }
+.lede { max-width: 900px; font-size: 1.12rem; line-height: 1.55; }
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+.metric, .body { border: 1px solid var(--line); border-radius: 22px; padding: 16px; background: rgba(255,255,255,.52); }
+.metric span { display: block; min-height: 42px; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--sick); }
+.metric strong { font-size: 1.75rem; }
+.bodies { display: grid; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); gap: 14px; margin: 18px 0; }
+.body h3 { margin: 0 0 8px; color: var(--cold); }
+table { width: 100%; margin-top: 22px; border-collapse: collapse; border-radius: 20px; overflow: hidden; background: rgba(255,255,255,.55); }
+th, td { padding: 11px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { background: rgba(122,120,71,.18); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }
+.boundary { margin-top: 22px; padding: 16px 18px; border-left: 5px solid var(--care); background: rgba(255,255,255,.48); border-radius: 16px; }
+@media (max-width: 760px) { table { display: block; overflow-x: auto; } .hero { padding: 22px; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Market pressure reaches the body</h1>
+    <p class="lede">Report 211 makes seasonal economy consequences embodied: wetness, cold, hunger, fatigue, illness risk, symptoms, communal care, care capacity, and relationship strain all persist across the arc.</p>
+  </section>
+  <section class="metrics"><article class='metric'><span>seasonal body ecology readiness</span><strong>0.934694</strong></article>
+<article class='metric'><span>seasonal exposure binding</span><strong>1.000000</strong></article>
+<article class='metric'><span>illness risk traceability</span><strong>1.000000</strong></article>
+<article class='metric'><span>communal care response rate</span><strong>0.800000</strong></article>
+<article class='metric'><span>relationship repair rate</span><strong>0.285714</strong></article>
+<article class='metric'><span>illness recovery rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>bounded negative state score</span><strong>1.000000</strong></article>
+<article class='metric'><span>residual distress honesty</span><strong>1.000000</strong></article></section>
+  <h2>Season-end bodies</h2>
+  <section class="bodies"><article class='body'><h3>Ari</h3><p>adverse 0.306 | illness 0.205 | symptoms 0.090</p><small>hunger 0.450 | warmth deficit 0.523 | wetness 0.354 | stress 0.380</small></article>
+<article class='body'><h3>Fay</h3><p>adverse 0.297 | illness 0.224 | symptoms 0.090</p><small>hunger 0.581 | warmth deficit 0.252 | wetness 0.404 | stress 0.470</small></article>
+<article class='body'><h3>Milo</h3><p>adverse 0.277 | illness 0.253 | symptoms 0.080</p><small>hunger 0.331 | warmth deficit 0.417 | wetness 0.393 | stress 0.720</small></article></section>
+  <h2>Relationships under care and stress</h2>
+  <table><thead><tr><th>Agent</th><th>Other</th><th>Relationship</th><th>Market stress</th><th>Care capacity</th></tr></thead><tbody><tr><td>Ari</td><td>Fay</td><td>0.728</td><td>0.380</td><td>0.470</td></tr>
+<tr><td>Ari</td><td>Milo</td><td>0.657</td><td>0.380</td><td>0.470</td></tr>
+<tr><td>Fay</td><td>Ari</td><td>0.748</td><td>0.470</td><td>0.560</td></tr>
+<tr><td>Fay</td><td>Milo</td><td>0.610</td><td>0.470</td><td>0.560</td></tr>
+<tr><td>Milo</td><td>Ari</td><td>0.638</td><td>0.720</td><td>0.430</td></tr>
+<tr><td>Milo</td><td>Fay</td><td>0.617</td><td>0.720</td><td>0.430</td></tr></tbody></table>
+  <h2>Body ecology events</h2>
+  <table><thead><tr><th>Day</th><th>Season</th><th>Agent</th><th>Kind</th><th>Adverse body</th><th>Note</th></tr></thead><tbody><tr><td>1</td><td>wet chill</td><td>Ari</td><td>exposure</td><td>0.259 -> 0.306</td><td>Ari starts wet route work without enough heat wood.</td></tr>
+<tr><td>3</td><td>wet chill</td><td>Ari</td><td>care</td><td>0.310 -> 0.286</td><td>Fay dries Ari&#x27;s sleeve and shares stove time.</td></tr>
+<tr><td>5</td><td>wet chill</td><td>Fay</td><td>tradeoff</td><td>0.243 -> 0.251</td><td>Fay protects hunger at the cost of warmth.</td></tr>
+<tr><td>8</td><td>wet chill</td><td>Milo</td><td>exposure</td><td>0.255 -> 0.283</td><td>Milo waits in wet archive draft because tool price is high.</td></tr>
+<tr><td>11</td><td>wet chill</td><td>Fay</td><td>symptom</td><td>0.254 -> 0.278</td><td>Fay develops a cough after cold stove nights and misses one repair meal.</td></tr>
+<tr><td>14</td><td>wet chill</td><td>Fay</td><td>care</td><td>0.282 -> 0.267</td><td>Ari brings dry wood and accepts a shorter visit.</td></tr>
+<tr><td>18</td><td>wet chill</td><td>Milo</td><td>market_stress</td><td>0.287 -> 0.313</td><td>Milo&#x27;s food debt makes him guarded when Fay asks about repayment.</td></tr>
+<tr><td>21</td><td>cold scarcity</td><td>Milo</td><td>care</td><td>0.318 -> 0.302</td><td>Fay shares food without erasing Milo&#x27;s debt memory.</td></tr>
+<tr><td>24</td><td>cold scarcity</td><td>Ari</td><td>refusal</td><td>0.290 -> 0.286</td><td>Ari refuses night brace labor and Milo accepts the body limit.</td></tr>
+<tr><td>27</td><td>cold scarcity</td><td>Ari</td><td>symptom</td><td>0.291 -> 0.320</td><td>Ari&#x27;s chill becomes a wrist ache after repeated wet work.</td></tr>
+<tr><td>30</td><td>cold scarcity</td><td>Ari</td><td>delayed_care</td><td>0.325 -> 0.322</td><td>Milo can only bring lamp warmth late, so Ari improves only slightly.</td></tr>
+<tr><td>34</td><td>cold scarcity</td><td>Milo</td><td>tradeoff</td><td>0.307 -> 0.309</td><td>Milo chooses food debt over warmth, straining Fay&#x27;s patience.</td></tr>
+<tr><td>38</td><td>thaw sickness</td><td>Fay</td><td>exposure</td><td>0.272 -> 0.302</td><td>Thaw damp raises Fay&#x27;s illness risk during care rounds.</td></tr>
+<tr><td>41</td><td>thaw sickness</td><td>Fay</td><td>care_capacity_strain</td><td>0.306 -> 0.325</td><td>Fay keeps caring while tired and becomes less patient with Milo&#x27;s debt avoidance.</td></tr>
+<tr><td>44</td><td>thaw sickness</td><td>Milo</td><td>care</td><td>0.314 -> 0.301</td><td>Ari repairs the archive draft cloth after Milo accepts a shorter work day.</td></tr>
+<tr><td>47</td><td>thaw sickness</td><td>Ari</td><td>market_stress</td><td>0.326 -> 0.332</td><td>Tool scarcity pushes Ari to ask too much from Fay&#x27;s care shelf.</td></tr>
+<tr><td>50</td><td>thaw sickness</td><td>Ari</td><td>relationship_repair</td><td>0.337 -> 0.334</td><td>Ari returns care shelf herbs and names the over-ask.</td></tr>
+<tr><td>53</td><td>thaw sickness</td><td>Fay</td><td>recovery</td><td>0.329 -> 0.304</td><td>Fay recovers after two protected low-light nights.</td></tr>
+<tr><td>56</td><td>dry recovery</td><td>Milo</td><td>market_stress</td><td>0.297 -> 0.307</td><td>Milo&#x27;s remaining debt makes him avoid Fay&#x27;s stove corner.</td></tr>
+<tr><td>59</td><td>dry recovery</td><td>Milo</td><td>relationship_repair</td><td>0.303 -> 0.298</td><td>Milo brings a small ration token and sits near the edge instead of disappearing.</td></tr>
+<tr><td>62</td><td>dry recovery</td><td>Ari</td><td>recovery</td><td>0.330 -> 0.306</td><td>Dry recovery lowers Ari&#x27;s wrist ache but not all fatigue.</td></tr>
+<tr><td>65</td><td>dry recovery</td><td>Fay</td><td>communal_care</td><td>0.300 -> 0.297</td><td>Fay hosts a small care meal; care helps warmth but costs energy.</td></tr>
+<tr><td>68</td><td>dry recovery</td><td>Milo</td><td>recovery</td><td>0.294 -> 0.284</td><td>Milo&#x27;s body risk drops, but debt stress stays visible.</td></tr>
+<tr><td>72</td><td>dry recovery</td><td>Milo</td><td>season_review</td><td>0.280 -> 0.277</td><td>Season review records partial recovery with residual debt-linked avoidance.</td></tr></tbody></table>
+  <p class="boundary"><strong>Boundary:</strong> Deterministic seasonal body-ecology substrate only: not real illness, not real care, not subjective suffering, not subjective consciousness, and not moral patienthood. Residual stress remains visible; distress is bounded and routed through care/recovery opportunities, not spectacle.</p>
+</main>
+</body>
+</html>

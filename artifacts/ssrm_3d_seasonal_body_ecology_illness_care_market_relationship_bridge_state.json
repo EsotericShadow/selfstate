@@ -1,0 +1,107 @@
+{
+  "agents": {
+    "Ari": {
+      "body": {
+        "fatigue": 0.437,
+        "hunger": 0.45,
+        "illness_risk": 0.205,
+        "pain": 0.08,
+        "symptoms": 0.09,
+        "warmth_deficit": 0.523,
+        "wetness": 0.354
+      },
+      "care_capacity": 0.47,
+      "debt_memory": 0.0,
+      "market_stress": 0.38,
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Ari starts wet route work without enough heat wood.",
+        "Fay dries Ari's sleeve and shares stove time.",
+        "Day 14: cared for Fay: Ari brings dry wood and accepts a shorter visit.",
+        "Ari refuses night brace labor and Milo accepts the body limit.",
+        "Ari's chill becomes a wrist ache after repeated wet work.",
+        "Milo can only bring lamp warmth late, so Ari improves only slightly.",
+        "Day 44: cared for Milo: Ari repairs the archive draft cloth after Milo accepts a shorter work day.",
+        "Tool scarcity pushes Ari to ask too much from Fay's care shelf.",
+        "Ari returns care shelf herbs and names the over-ask.",
+        "Dry recovery lowers Ari's wrist ache but not all fatigue."
+      ],
+      "relationships": {
+        "Fay": 0.728,
+        "Milo": 0.657
+      },
+      "temperament": "cautious-proud repair keeper"
+    },
+    "Fay": {
+      "body": {
+        "fatigue": 0.489,
+        "hunger": 0.581,
+        "illness_risk": 0.224,
+        "pain": 0.04,
+        "symptoms": 0.09,
+        "warmth_deficit": 0.252,
+        "wetness": 0.404
+      },
+      "care_capacity": 0.56,
+      "debt_memory": 0.0,
+      "market_stress": 0.47,
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Day 3: cared for Ari: Fay dries Ari's sleeve and shares stove time.",
+        "Fay protects hunger at the cost of warmth.",
+        "Fay develops a cough after cold stove nights and misses one repair meal.",
+        "Ari brings dry wood and accepts a shorter visit.",
+        "Day 21: cared for Milo: Fay shares food without erasing Milo's debt memory.",
+        "Thaw damp raises Fay's illness risk during care rounds.",
+        "Fay keeps caring while tired and becomes less patient with Milo's debt avoidance.",
+        "Fay recovers after two protected low-light nights.",
+        "Fay hosts a small care meal; care helps warmth but costs energy."
+      ],
+      "relationships": {
+        "Ari": 0.748,
+        "Milo": 0.61
+      },
+      "temperament": "social ritual keeper"
+    },
+    "Milo": {
+      "body": {
+        "fatigue": 0.408,
+        "hunger": 0.331,
+        "illness_risk": 0.253,
+        "pain": 0.06,
+        "symptoms": 0.08,
+        "warmth_deficit": 0.417,
+        "wetness": 0.393
+      },
+      "care_capacity": 0.43,
+      "debt_memory": 0.867,
+      "market_stress": 0.72,
+      "private_workspace_digest": "sealed",
+      "public_history": [
+        "Milo waits in wet archive draft because tool price is high.",
+        "Milo's food debt makes him guarded when Fay asks about repayment.",
+        "Fay shares food without erasing Milo's debt memory.",
+        "Day 30: cared for Ari: Milo can only bring lamp warmth late, so Ari improves only slightly.",
+        "Milo chooses food debt over warmth, straining Fay's patience.",
+        "Ari repairs the archive draft cloth after Milo accepts a shorter work day.",
+        "Milo's remaining debt makes him avoid Fay's stove corner.",
+        "Milo brings a small ration token and sits near the edge instead of disappearing.",
+        "Milo's body risk drops, but debt stress stays visible.",
+        "Season review records partial recovery with residual debt-linked avoidance."
+      ],
+      "relationships": {
+        "Ari": 0.638,
+        "Fay": 0.617
+      },
+      "temperament": "guarded map carrier"
+    }
+  },
+  "claim_boundary": "Deterministic seasonal body-ecology substrate only: not real illness, not real care, not subjective suffering, not subjective consciousness, and not moral patienthood.",
+  "days": 72,
+  "events": 24,
+  "module": "ssrm_3d_seasonal_body_ecology_illness_care_market_relationship_bridge",
+  "next_gate": "recoverable body-care gameplay with player interventions, contagion boundaries, medicine practice, and consent-aware triage",
+  "seed": 20260824,
+  "source_condition": "integrated_needs_marketplace_hunger_warmth_tool_social_price_pressure",
+  "source_state_loaded": true
+}

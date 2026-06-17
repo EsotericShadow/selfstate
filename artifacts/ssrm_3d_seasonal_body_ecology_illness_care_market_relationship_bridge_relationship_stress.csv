@@ -1,0 +1,7 @@
+agent,other,relationship_score,market_stress,care_capacity
+Ari,Fay,0.728,0.380,0.470
+Ari,Milo,0.657,0.380,0.470
+Fay,Ari,0.748,0.470,0.560
+Fay,Milo,0.610,0.470,0.560
+Milo,Ari,0.638,0.720,0.430
+Milo,Fay,0.617,0.720,0.430

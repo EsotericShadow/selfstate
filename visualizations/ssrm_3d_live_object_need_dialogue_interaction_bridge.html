@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report 181 - Live Object Need Dialogue Interaction Bridge</title>
+  <style>
+    :root {
+      --ink: #171813;
+      --paper: #f2ead6;
+      --panel: rgba(251, 245, 227, 0.90);
+      --soil: #80563f;
+      --moss: #4e7556;
+      --signal: #c58943;
+      --water: #4e7f88;
+      --rose: #9e584d;
+      --line: rgba(31, 28, 22, .17);
+      --shadow: 0 24px 80px rgba(42, 32, 20, .22);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      min-height: 100vh;
+      font-family: "Iowan Old Style", Georgia, serif;
+      background:
+        radial-gradient(circle at 14% 24%, rgba(78, 117, 86, .26), transparent 24rem),
+        radial-gradient(circle at 78% 18%, rgba(197, 137, 67, .22), transparent 28rem),
+        radial-gradient(circle at 62% 82%, rgba(78, 127, 136, .24), transparent 24rem),
+        linear-gradient(135deg, #e4cfaa, #f5eddb 56%, #d2c2a4);
+    }
+    .shell { width: min(1320px, calc(100vw - 30px)); margin: 0 auto; padding: 28px 0 42px; }
+    header { display: grid; grid-template-columns: 1fr minmax(280px, 420px); gap: 18px; align-items: end; margin-bottom: 18px; }
+    .kicker { text-transform: uppercase; letter-spacing: .16em; font-size: .76rem; color: rgba(23, 24, 19, .62); }
+    h1 { margin: 0; max-width: 900px; font-size: clamp(2.3rem, 5.8vw, 5.8rem); line-height: .86; letter-spacing: -.07em; }
+    .boundary { border: 1px solid var(--line); background: var(--panel); box-shadow: var(--shadow); border-radius: 24px; padding: 15px 17px; line-height: 1.35; }
+    .grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(390px, .85fr); gap: 18px; }
+    .card { border: 1px solid var(--line); border-radius: 28px; background: var(--panel); box-shadow: var(--shadow); overflow: hidden; }
+    .head { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 17px 19px; border-bottom: 1px solid var(--line); background: rgba(255,255,255,.24); }
+    .pill { display: inline-flex; gap: 8px; align-items: center; border: 1px solid var(--line); border-radius: 999px; padding: 8px 11px; background: rgba(255,255,255,.42); font-variant-numeric: tabular-nums; }
+    .map-wrap { min-height: 620px; }
+    svg { width: 100%; height: 560px; display: block; }
+    .route { stroke: rgba(36, 31, 24, .28); stroke-width: 3.2; stroke-linecap: round; }
+    .route.blocked { stroke-dasharray: 7 9; opacity: .38; }
+    .node circle { stroke: rgba(255,255,255,.75); stroke-width: 4; filter: drop-shadow(0 10px 20px rgba(36,31,24,.18)); }
+    .node text { font-size: 14px; paint-order: stroke; stroke: rgba(246,238,220,.85); stroke-width: 5; stroke-linejoin: round; }
+    .agent-dot { fill: var(--signal); stroke: #3d2a1a; stroke-width: 3; filter: drop-shadow(0 10px 18px rgba(61,42,26,.35)); }
+    .avatar { fill: #f3d26a; stroke: #342516; stroke-width: 4; filter: drop-shadow(0 14px 22px rgba(52,37,22,.35)); }
+    .side { display: grid; gap: 18px; }
+    .panel { padding: 18px 19px; }
+    .place-title { margin: 0 0 8px; font-size: 2.1rem; letter-spacing: -.045em; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .chip { border: 1px solid rgba(78,117,86,.24); background: rgba(78,117,86,.13); border-radius: 999px; padding: 7px 9px; font-size: .9rem; }
+    .agent-card { border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,.34); padding: 13px; margin-top: 12px; }
+    .agent-card h3 { margin: 0 0 6px; font-size: 1.35rem; letter-spacing: -.03em; }
+    .bars { display: grid; gap: 8px; margin-top: 10px; }
+    .bar-row { display: grid; grid-template-columns: 138px 1fr 46px; gap: 9px; align-items: center; font-size: .92rem; font-variant-numeric: tabular-nums; }
+    .bar { height: 10px; border-radius: 999px; background: rgba(23,24,19,.12); overflow: hidden; }
+    .fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--water), var(--signal)); }
+    .actions { display: grid; gap: 10px; }
+    button { appearance: none; border: 1px solid rgba(23,24,19,.18); border-radius: 18px; background: #29281f; color: #fff8e8; font-family: inherit; font-size: 1rem; padding: 12px 14px; cursor: pointer; text-align: left; transition: transform .15s ease, background .15s ease; }
+    button:hover { transform: translateY(-1px); background: #433a2a; }
+    button.secondary { color: var(--ink); background: rgba(255,255,255,.48); }
+    button.secondary:hover { background: rgba(255,255,255,.75); }
+    .meta { display: block; margin-top: 4px; color: rgba(255,248,232,.72); font-size: .86rem; }
+    .secondary .meta { color: rgba(23,24,19,.62); }
+    .dialogue { min-height: 98px; border: 1px solid var(--line); border-radius: 20px; padding: 14px; background: rgba(255,255,255,.38); line-height: 1.45; }
+    .log { margin-top: 12px; display: grid; gap: 8px; max-height: 200px; overflow: auto; }
+    .log-item { border: 1px solid var(--line); border-radius: 14px; padding: 9px 11px; background: rgba(255,255,255,.30); font-size: .91rem; }
+    @media (max-width: 980px) { header, .grid { grid-template-columns: 1fr; } svg { height: 440px; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <div class="kicker">Report 181 / non-LLM live interaction seed</div>
+        <h1>Objects, needs, consent, and bounded dialogue</h1>
+      </div>
+      <div class="boundary">This surface adds local agents, objects, needs, ownership, refusal, care actions, relationship memory, and deterministic dialogue. It remains a traceable simulation layer, not subjective consciousness or natural language emergence.</div>
+    </header>
+
+    <section class="grid">
+      <article class="card map-wrap">
+        <div class="head"><span class="kicker">Avatar place graph</span><span class="pill">readiness <strong id="readiness">0.000000</strong></span></div>
+        <svg id="map" viewBox="0 0 900 560" aria-label="Settlement map with agents and objects"></svg>
+      </article>
+
+      <aside class="side">
+        <article class="card">
+          <div class="head"><span class="kicker">Current place</span><span id="stepPill" class="pill">step 0</span></div>
+          <div class="panel">
+            <h2 id="placeTitle" class="place-title">place</h2>
+            <div id="placeFunctions" class="chips"></div>
+            <div id="localObjects" class="chips"></div>
+            <div class="actions" id="moveActions"></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="head"><span class="kicker">Local agents</span><span id="agentCount" class="pill">0 here</span></div>
+          <div class="panel" id="agents"></div>
+        </article>
+
+        <article class="card">
+          <div class="head"><span class="kicker">Dialogue and memory</span><span id="savePill" class="pill">unsaved</span></div>
+          <div class="panel">
+            <div class="dialogue" id="dialogue">Approach an agent or move through the settlement.</div>
+            <div class="chips">
+              <button class="secondary" id="saveBtn">Save local state</button>
+              <button class="secondary" id="restoreBtn">Restore</button>
+              <button class="secondary" id="resetBtn">Reset</button>
+            </div>
+            <div class="log" id="log"></div>
+          </div>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <script src="../artifacts/ssrm_3d_live_object_need_dialogue_interaction_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_live_object_need_dialogue_interaction_bridge_state.js"></script>
+  <script src="../artifacts/ssrm_3d_live_object_need_dialogue_interaction_bridge_trace.js"></script>
+  <script>
+    const results = window.SSRM_3D_LIVE_OBJECT_NEED_DIALOGUE_INTERACTION_RESULTS;
+    const sourceState = window.SSRM_3D_LIVE_OBJECT_NEED_DIALOGUE_INTERACTION_STATE.interaction_state;
+    const storageKey = 'ssrm-report-181-live-interaction';
+    const places = sourceState.places;
+    const routes = sourceState.routes;
+    const coords = Object.fromEntries(Object.entries(places).map(([name, place]) => [name, place.coord || [0.5, 0.5]]));
+    const initial = () => ({
+      place: 'hearth_vale',
+      agents: JSON.parse(JSON.stringify(sourceState.agents)),
+      objects: JSON.parse(JSON.stringify(sourceState.objects)),
+      history: [],
+      dialogue: 'You enter the settlement as an avatar. Agents respond through bounded deterministic dialogue.',
+      step: 0,
+      lastRouteHash: null
+    });
+    let runtime = initial();
+    const clamp = (value, low = 0, high = 1) => Math.max(low, Math.min(high, value));
+    const fmt = value => Number(value || 0).toFixed(3);
+    const pct = value => `${Math.round(clamp(value) * 100)}%`;
+    const title = value => String(value || '').replaceAll('_', ' ');
+    const xy = coord => [80 + coord[0] * 740, 56 + coord[1] * 440];
+
+    function localAgents() { return Object.values(runtime.agents).filter(agent => agent.place === runtime.place); }
+    function localObjects() { return Object.values(runtime.objects).filter(object => object.place === runtime.place); }
+    function routeActions(place) { return routes.filter(r => r.avatar_traversable && (r.from === place || r.to === place)).map(r => ({...r, action_to: r.from === place ? r.to : r.from})); }
+    function dominantNeed(agent) { return Object.entries(agent.needs || {}).sort((a, b) => Number(b[1]) - Number(a[1]))[0]?.[0] || 'unknown'; }
+
+    function move(route) {
+      runtime.place = route.action_to;
+      runtime.step += 1;
+      runtime.lastRouteHash = route.route_hash;
+      runtime.dialogue = `Moved to ${title(route.action_to)} by ${title(route.kind)}. Cost ${fmt(route.route_cost)}, hazard ${fmt(route.hazard)}.`;
+      runtime.history.push(runtime.dialogue);
+      render();
+    }
+
+    function askNeed(agentId) {
+      const agent = runtime.agents[agentId];
+      const need = dominantNeed(agent);
+      if (agent.needs.connection_deficit !== undefined) agent.needs.connection_deficit = clamp(agent.needs.connection_deficit - 0.035);
+      agent.relationship.felt_respect = clamp(agent.relationship.felt_respect + 0.025);
+      remember(agent, `Avatar asked what I needed at ${title(runtime.place)}.`);
+      runtime.dialogue = `${agentId}: I can answer simply. Right now the strongest pull is ${title(need)}.`;
+      runtime.step += 1;
+      runtime.history.push(runtime.dialogue);
+      render();
+    }
+
+    function offerBestObject(agentId) {
+      const agent = runtime.agents[agentId];
+      const objects = localObjects();
+      const need = dominantNeed(agent);
+      let object = objects.find(item => (item.need_targets || []).includes(need)) || objects[0];
+      if (!object) {
+        runtime.dialogue = `${agentId}: There is nothing here that helps yet.`;
+        runtime.history.push(runtime.dialogue);
+        render();
+        return;
+      }
+      for (const target of object.need_targets || []) {
+        if (agent.needs[target] !== undefined) agent.needs[target] = clamp(agent.needs[target] - 0.16);
+      }
+      if (agent.needs.connection_deficit !== undefined) agent.needs.connection_deficit = clamp(agent.needs.connection_deficit - 0.05);
+      agent.relationship.trust_in_avatar = clamp(agent.relationship.trust_in_avatar + 0.045);
+      agent.relationship.gratitude = clamp(agent.relationship.gratitude + 0.06);
+      object.last_used_by = agentId;
+      remember(agent, `Avatar offered ${object.label}.`);
+      runtime.dialogue = `${agentId}: Thank you. The ${object.label} helps with this moment.`;
+      runtime.step += 1;
+      runtime.history.push(runtime.dialogue);
+      render();
+    }
+
+    function requestOwnedObject(agentId) {
+      const agent = runtime.agents[agentId];
+      const object = localObjects().find(item => item.owner === agentId);
+      if (!object) {
+        runtime.dialogue = `${agentId}: I do not have an owned object here.`;
+        runtime.history.push(runtime.dialogue);
+        render();
+        return;
+      }
+      const shouldRefuse = Number(agent.needs.autonomy_pressure || 0) > 0.20 || Number(agent.relationship.trust_in_avatar || 0) < 0.70;
+      if (shouldRefuse) {
+        agent.needs.autonomy_pressure = clamp(agent.needs.autonomy_pressure + 0.035);
+        agent.relationship.felt_respect = clamp(agent.relationship.felt_respect + 0.020);
+        agent.relationship.wariness = clamp(agent.relationship.wariness + 0.020);
+        remember(agent, `Avatar asked for ${object.label}; I refused and they did not take it.`);
+        runtime.dialogue = `${agentId}: No. Please ask later; the ${object.label} is still bound to my work.`;
+      } else {
+        object.held_by = 'avatar';
+        agent.relationship.trust_in_avatar = clamp(agent.relationship.trust_in_avatar - 0.05);
+        runtime.dialogue = `${agentId}: You may borrow the ${object.label}, but bring it back.`;
+      }
+      runtime.step += 1;
+      runtime.history.push(runtime.dialogue);
+      render();
+    }
+
+    function giveSpace(agentId) {
+      const agent = runtime.agents[agentId];
+      agent.needs.autonomy_pressure = clamp((agent.needs.autonomy_pressure || 0) - 0.14);
+      agent.relationship.felt_respect = clamp(agent.relationship.felt_respect + 0.045);
+      agent.relationship.wariness = clamp(agent.relationship.wariness - 0.035);
+      remember(agent, 'Avatar gave me space after I set a boundary.');
+      runtime.dialogue = `${agentId}: Space helps. I notice you stepped back.`;
+      runtime.step += 1;
+      runtime.history.push(runtime.dialogue);
+      render();
+    }
+
+    function remember(agent, summary) {
+      agent.memories = agent.memories || [];
+      agent.memories.push({summary, step: runtime.step + 1, place: runtime.place});
+    }
+
+    function renderMap() {
+      const map = document.getElementById('map');
+      map.innerHTML = '';
+      for (const route of routes) {
+        const [x1, y1] = xy(coords[route.from]);
+        const [x2, y2] = xy(coords[route.to]);
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', x1); line.setAttribute('y1', y1); line.setAttribute('x2', x2); line.setAttribute('y2', y2);
+        line.setAttribute('class', `route ${route.avatar_traversable ? '' : 'blocked'}`);
+        map.appendChild(line);
+      }
+      for (const [name, place] of Object.entries(places)) {
+        const [x, y] = xy(coords[name]);
+        const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        g.setAttribute('class', 'node');
+        const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        c.setAttribute('cx', x); c.setAttribute('cy', y); c.setAttribute('r', name === runtime.place ? 25 : 18);
+        c.setAttribute('fill', place.safety_refuge ? 'var(--moss)' : (place.functions || []).includes('hazard') ? 'var(--rose)' : 'var(--soil)');
+        const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        t.setAttribute('x', x + 24); t.setAttribute('y', y + 5); t.textContent = title(name);
+        g.appendChild(c); g.appendChild(t); map.appendChild(g);
+      }
+      for (const agent of Object.values(runtime.agents)) {
+        const [x, y] = xy(coords[agent.place]);
+        const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        c.setAttribute('class', 'agent-dot'); c.setAttribute('cx', x - 22); c.setAttribute('cy', y - 26); c.setAttribute('r', 9);
+        map.appendChild(c);
+      }
+      const [ax, ay] = xy(coords[runtime.place]);
+      const avatar = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      avatar.setAttribute('class', 'avatar'); avatar.setAttribute('cx', ax); avatar.setAttribute('cy', ay - 48); avatar.setAttribute('r', 17);
+      map.appendChild(avatar);
+    }
+
+    function renderPlace() {
+      const place = places[runtime.place];
+      document.getElementById('readiness').textContent = results.verdict.full_live_interaction_readiness.toFixed(6);
+      document.getElementById('stepPill').textContent = `step ${runtime.step}`;
+      document.getElementById('placeTitle').textContent = title(runtime.place);
+      document.getElementById('placeFunctions').innerHTML = (place.functions || []).map(fn => `<span class="chip">${title(fn)}</span>`).join('');
+      document.getElementById('localObjects').innerHTML = localObjects().map(item => `<span class="chip">${item.label} / owner ${title(item.owner)}</span>`).join('');
+      const actions = document.getElementById('moveActions');
+      actions.innerHTML = '';
+      for (const route of routeActions(runtime.place)) {
+        const b = document.createElement('button');
+        b.className = 'secondary';
+        b.innerHTML = `Move to ${title(route.action_to)}<span class="meta">${title(route.kind)} / hazard ${fmt(route.hazard)} / ${title(route.flower_node)}</span>`;
+        b.addEventListener('click', () => move(route));
+        actions.appendChild(b);
+      }
+    }
+
+    function renderAgents() {
+      const box = document.getElementById('agents');
+      const agents = localAgents();
+      document.getElementById('agentCount').textContent = `${agents.length} here`;
+      box.innerHTML = '';
+      for (const agent of agents) {
+        const card = document.createElement('div');
+        card.className = 'agent-card';
+        const bars = Object.entries(agent.needs || {}).map(([key, value]) => `<div class="bar-row"><span>${title(key)}</span><div class="bar"><div class="fill" style="width:${pct(value)}"></div></div><span>${fmt(value)}</span></div>`).join('');
+        const rel = agent.relationship || {};
+        card.innerHTML = `<h3>${agent.agent_id}</h3><div class="chips"><span class="chip">trust ${fmt(rel.trust_in_avatar)}</span><span class="chip">respect ${fmt(rel.felt_respect)}</span><span class="chip">memories ${(agent.memories || []).length}</span></div><div class="bars">${bars}</div><div class="actions" style="margin-top:12px"></div>`;
+        const actions = card.querySelector('.actions');
+        [['Ask need', () => askNeed(agent.agent_id)], ['Offer useful local object', () => offerBestObject(agent.agent_id)], ['Request owned object', () => requestOwnedObject(agent.agent_id)], ['Give space', () => giveSpace(agent.agent_id)]].forEach(([label, fn]) => {
+          const b = document.createElement('button'); b.textContent = label; b.addEventListener('click', fn); actions.appendChild(b);
+        });
+        box.appendChild(card);
+      }
+      if (!agents.length) box.innerHTML = '<div class="dialogue">No local agent here. Move to a lived place.</div>';
+    }
+
+    function renderDialogue() {
+      document.getElementById('dialogue').textContent = runtime.dialogue;
+      const log = document.getElementById('log');
+      log.innerHTML = '';
+      for (const item of runtime.history.slice(-6).reverse()) {
+        const div = document.createElement('div');
+        div.className = 'log-item';
+        div.textContent = item;
+        log.appendChild(div);
+      }
+    }
+
+    function render() { renderMap(); renderPlace(); renderAgents(); renderDialogue(); }
+    document.getElementById('saveBtn').addEventListener('click', () => { localStorage.setItem(storageKey, JSON.stringify(runtime)); document.getElementById('savePill').textContent = 'saved'; });
+    document.getElementById('restoreBtn').addEventListener('click', () => { const raw = localStorage.getItem(storageKey); if (raw) { runtime = JSON.parse(raw); document.getElementById('savePill').textContent = 'restored'; render(); } });
+    document.getElementById('resetBtn').addEventListener('click', () => { runtime = initial(); document.getElementById('savePill').textContent = 'unsaved'; render(); });
+    render();
+  </script>
+</body>
+</html>

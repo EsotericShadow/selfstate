@@ -1,0 +1,14 @@
+condition,agent_count,object_count,interaction_events,object_affordance_binding_rate,need_state_update_rate,interaction_cost_application_rate,bounded_dialogue_response_rate,refusal_consent_boundary_rate,care_opportunity_resolution_rate,object_ownership_respect_rate,place_context_binding_rate,relationship_memory_update_rate,replay_interaction_event_rate,browser_state_mutation_rate,privacy_preservation_rate,trace_integrity,live_interaction_readiness
+integrated_live_object_need_dialogue_interaction,3,6,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9,1.0,1.0,1.0,1.0,1.0,0.993
+no_objects,3,0,10,0.0,0.7,1.0,1.0,0.0,0.5,0.0,0.9,1.0,1.0,1.0,1.0,1.0,0.673
+no_need_state,3,6,10,1.0,0.0,1.0,1.0,1.0,0.0,1.0,0.9,1.0,1.0,1.0,1.0,1.0,0.813
+no_interaction_costs,3,6,10,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.9,1.0,1.0,1.0,1.0,1.0,0.923
+no_bounded_dialogue,3,6,10,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.9,1.0,1.0,1.0,1.0,1.0,0.893
+no_refusal_consent,3,6,10,1.0,1.0,1.0,1.0,0.0,1.0,0.8,0.9,1.0,1.0,1.0,1.0,1.0,0.889
+no_care_resolution,3,6,10,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.9,1.0,1.0,1.0,1.0,1.0,0.913
+no_ownership,3,6,10,1.0,1.0,1.0,1.0,0.0,1.0,0.0,0.9,1.0,1.0,1.0,1.0,1.0,0.833
+no_place_context,3,6,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_relationship_memory,3,6,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9,0.0,1.0,1.0,1.0,1.0,0.903
+no_replay_log,3,6,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9,1.0,0.0,1.0,1.0,1.0,0.923
+no_browser_mutation,3,6,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9,1.0,1.0,0.0,1.0,1.0,0.913
+no_privacy_filter,3,6,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9,1.0,1.0,1.0,0.0,1.0,0.953

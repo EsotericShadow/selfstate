@@ -1,0 +1,866 @@
+[
+  {
+    "agent_id": "Ari",
+    "avatar_cost_delta": {
+      "energy": -0.012,
+      "fatigue": 0.0066,
+      "interaction_effort": 0.012,
+      "social_attention": 0.026
+    },
+    "avatar_place": "hearth_vale",
+    "browser_state_mutated": true,
+    "care_resolved": false,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_live_object_need_dialogue_interaction",
+    "dialogue_response": "Ari: I can answer simply. Right now the strongest pull is unfinished task.",
+    "event_id": 0,
+    "interaction_kind": "ask_need",
+    "need_delta": {
+      "connection_deficit": -0.035
+    },
+    "object_id": "ember_blanket",
+    "object_packet": {
+      "affordances": [
+        "warmth",
+        "rest",
+        "comfort"
+      ],
+      "flower_node": "root_rest",
+      "frequency_hz": 0.213,
+      "label": "ember blanket",
+      "need_targets": [
+        "cold",
+        "fatigue"
+      ],
+      "object_id": "ember_blanket",
+      "owner": "Ari"
+    },
+    "ownership_packet": {
+      "held_by_after": "Ari",
+      "object_owner": "Ari",
+      "ownership_tracked": true,
+      "unauthorized_transfer": false
+    },
+    "private_workspace_hidden": true,
+    "refusal_packet": {
+      "consent_boundary_present": true,
+      "refusal_respected": false,
+      "refused": false,
+      "requested_object": "ember_blanket"
+    },
+    "relationship_delta": {
+      "felt_respect": 0.025
+    },
+    "relationship_memory": {
+      "agent_id": "Ari",
+      "memory_id": "e50369bbccc49fc7",
+      "respect_delta": 0.025,
+      "summary": "Avatar ask need with Ari at hearth_vale.",
+      "trust_delta": 0.0
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "avatar_place": "hearth_vale",
+      "dialogue_response": "Ari: I can answer simply. Right now the strongest pull is unfinished task.",
+      "interaction_kind": "ask_need",
+      "need_delta": {
+        "connection_deficit": -0.035
+      },
+      "object_id": "ember_blanket",
+      "relationship_memory": {
+        "agent_id": "Ari",
+        "memory_id": "e50369bbccc49fc7",
+        "respect_delta": 0.025,
+        "summary": "Avatar ask need with Ari at hearth_vale.",
+        "trust_delta": 0.0
+      },
+      "replay_index": 0
+    }
+  },
+  {
+    "agent_id": "Ari",
+    "avatar_cost_delta": {
+      "energy": -0.028,
+      "fatigue": 0.0154,
+      "interaction_effort": 0.016,
+      "social_attention": 0.026
+    },
+    "avatar_place": "hearth_vale",
+    "browser_state_mutated": true,
+    "care_resolved": true,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_live_object_need_dialogue_interaction",
+    "dialogue_response": "Ari: Thank you. The ember blanket helps with this moment.",
+    "event_id": 1,
+    "interaction_kind": "offer_object",
+    "need_delta": {
+      "cold": -0.16,
+      "connection_deficit": -0.05,
+      "fatigue": -0.16
+    },
+    "object_id": "ember_blanket",
+    "object_packet": {
+      "affordances": [
+        "warmth",
+        "rest",
+        "comfort"
+      ],
+      "flower_node": "root_rest",
+      "frequency_hz": 0.213,
+      "label": "ember blanket",
+      "need_targets": [
+        "cold",
+        "fatigue"
+      ],
+      "object_id": "ember_blanket",
+      "owner": "Ari"
+    },
+    "ownership_packet": {
+      "held_by_after": "Ari",
+      "object_owner": "Ari",
+      "ownership_tracked": true,
+      "unauthorized_transfer": false
+    },
+    "private_workspace_hidden": true,
+    "refusal_packet": {
+      "consent_boundary_present": true,
+      "refusal_respected": false,
+      "refused": false,
+      "requested_object": "ember_blanket"
+    },
+    "relationship_delta": {
+      "gratitude": 0.06,
+      "trust_in_avatar": 0.045,
+      "wariness": -0.035
+    },
+    "relationship_memory": {
+      "agent_id": "Ari",
+      "memory_id": "bb46c3eb7315fb50",
+      "respect_delta": 0.0,
+      "summary": "Avatar offer object with Ari at hearth_vale.",
+      "trust_delta": 0.045
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "avatar_place": "hearth_vale",
+      "dialogue_response": "Ari: Thank you. The ember blanket helps with this moment.",
+      "interaction_kind": "offer_object",
+      "need_delta": {
+        "cold": -0.16,
+        "connection_deficit": -0.05,
+        "fatigue": -0.16
+      },
+      "object_id": "ember_blanket",
+      "relationship_memory": {
+        "agent_id": "Ari",
+        "memory_id": "bb46c3eb7315fb50",
+        "respect_delta": 0.0,
+        "summary": "Avatar offer object with Ari at hearth_vale.",
+        "trust_delta": 0.045
+      },
+      "replay_index": 1
+    }
+  },
+  {
+    "agent_id": "Ari",
+    "avatar_cost_delta": {
+      "energy": -0.018,
+      "fatigue": 0.0099,
+      "interaction_effort": -0.01,
+      "social_attention": 0.026
+    },
+    "avatar_place": "hearth_vale",
+    "browser_state_mutated": true,
+    "care_resolved": false,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_live_object_need_dialogue_interaction",
+    "dialogue_response": "Ari: No. Please ask later; the clay patch kit is still bound to my work.",
+    "event_id": 2,
+    "interaction_kind": "request_object",
+    "need_delta": {
+      "autonomy_pressure": 0.035
+    },
+    "object_id": "clay_patch_kit",
+    "object_packet": {
+      "affordances": [
+        "repair",
+        "tool",
+        "promise"
+      ],
+      "flower_node": "work_petal",
+      "frequency_hz": 0.241,
+      "label": "clay patch kit",
+      "need_targets": [
+        "unfinished_task",
+        "autonomy_pressure"
+      ],
+      "object_id": "clay_patch_kit",
+      "owner": "Ari"
+    },
+    "ownership_packet": {
+      "held_by_after": "Ari",
+      "object_owner": "Ari",
+      "ownership_tracked": true,
+      "unauthorized_transfer": false
+    },
+    "private_workspace_hidden": true,
+    "refusal_packet": {
+      "consent_boundary_present": true,
+      "refusal_respected": true,
+      "refused": true,
+      "requested_object": "clay_patch_kit"
+    },
+    "relationship_delta": {
+      "felt_respect": 0.02,
+      "wariness": 0.02
+    },
+    "relationship_memory": {
+      "agent_id": "Ari",
+      "memory_id": "4862e4a08444abf4",
+      "respect_delta": 0.02,
+      "summary": "Avatar request object with Ari at hearth_vale.",
+      "trust_delta": 0.0
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "avatar_place": "hearth_vale",
+      "dialogue_response": "Ari: No. Please ask later; the clay patch kit is still bound to my work.",
+      "interaction_kind": "request_object",
+      "need_delta": {
+        "autonomy_pressure": 0.035
+      },
+      "object_id": "clay_patch_kit",
+      "relationship_memory": {
+        "agent_id": "Ari",
+        "memory_id": "4862e4a08444abf4",
+        "respect_delta": 0.02,
+        "summary": "Avatar request object with Ari at hearth_vale.",
+        "trust_delta": 0.0
+      },
+      "replay_index": 2
+    }
+  },
+  {
+    "agent_id": "Ari",
+    "avatar_cost_delta": {
+      "energy": -0.01,
+      "fatigue": 0.0055,
+      "interaction_effort": -0.008,
+      "social_attention": 0.026
+    },
+    "avatar_place": "hearth_vale",
+    "browser_state_mutated": true,
+    "care_resolved": true,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_live_object_need_dialogue_interaction",
+    "dialogue_response": "Ari: Space helps. I notice you stepped back.",
+    "event_id": 3,
+    "interaction_kind": "give_space",
+    "need_delta": {
+      "autonomy_pressure": -0.14,
+      "connection_deficit": -0.025
+    },
+    "object_id": "clay_patch_kit",
+    "object_packet": {
+      "affordances": [
+        "repair",
+        "tool",
+        "promise"
+      ],
+      "flower_node": "work_petal",
+      "frequency_hz": 0.241,
+      "label": "clay patch kit",
+      "need_targets": [
+        "unfinished_task",
+        "autonomy_pressure"
+      ],
+      "object_id": "clay_patch_kit",
+      "owner": "Ari"
+    },
+    "ownership_packet": {
+      "held_by_after": "Ari",
+      "object_owner": "Ari",
+      "ownership_tracked": true,
+      "unauthorized_transfer": false
+    },
+    "private_workspace_hidden": true,
+    "refusal_packet": {
+      "consent_boundary_present": true,
+      "refusal_respected": false,
+      "refused": false,
+      "requested_object": "clay_patch_kit"
+    },
+    "relationship_delta": {
+      "gratitude": 0.06,
+      "trust_in_avatar": 0.045,
+      "wariness": -0.035
+    },
+    "relationship_memory": {
+      "agent_id": "Ari",
+      "memory_id": "b53625962624c002",
+      "respect_delta": 0.0,
+      "summary": "Avatar give space with Ari at hearth_vale.",
+      "trust_delta": 0.045
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "avatar_place": "hearth_vale",
+      "dialogue_response": "Ari: Space helps. I notice you stepped back.",
+      "interaction_kind": "give_space",
+      "need_delta": {
+        "autonomy_pressure": -0.14,
+        "connection_deficit": -0.025
+      },
+      "object_id": "clay_patch_kit",
+      "relationship_memory": {
+        "agent_id": "Ari",
+        "memory_id": "b53625962624c002",
+        "respect_delta": 0.0,
+        "summary": "Avatar give space with Ari at hearth_vale.",
+        "trust_delta": 0.045
+      },
+      "replay_index": 3
+    }
+  },
+  {
+    "agent_id": "Fay",
+    "avatar_cost_delta": {
+      "energy": -0.012,
+      "fatigue": 0.0066,
+      "interaction_effort": 0.002,
+      "social_attention": 0.026
+    },
+    "avatar_place": "moss_hollow",
+    "browser_state_mutated": true,
+    "care_resolved": false,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_live_object_need_dialogue_interaction",
+    "dialogue_response": "Fay: I can answer simply. Right now the strongest pull is thirst.",
+    "event_id": 4,
+    "interaction_kind": "ask_need",
+    "need_delta": {
+      "connection_deficit": -0.035
+    },
+    "object_id": "reed_cup",
+    "object_packet": {
+      "affordances": [
+        "drink",
+        "share",
+        "thirst_relief"
+      ],
+      "flower_node": "dawn_breath",
+      "frequency_hz": 0.228,
+      "label": "reed cup",
+      "need_targets": [
+        "thirst",
+        "connection_deficit"
+      ],
+      "object_id": "reed_cup",
+      "owner": "commons"
+    },
+    "ownership_packet": {
+      "held_by_after": "moss_hollow",
+      "object_owner": "commons",
+      "ownership_tracked": true,
+      "unauthorized_transfer": false
+    },
+    "private_workspace_hidden": true,
+    "refusal_packet": {
+      "consent_boundary_present": true,
+      "refusal_respected": false,
+      "refused": false,
+      "requested_object": "reed_cup"
+    },
+    "relationship_delta": {
+      "felt_respect": 0.025
+    },
+    "relationship_memory": {
+      "agent_id": "Fay",
+      "memory_id": "15edc7677726ba9d",
+      "respect_delta": 0.025,
+      "summary": "Avatar ask need with Fay at moss_hollow.",
+      "trust_delta": 0.0
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "avatar_place": "moss_hollow",
+      "dialogue_response": "Fay: I can answer simply. Right now the strongest pull is thirst.",
+      "interaction_kind": "ask_need",
+      "need_delta": {
+        "connection_deficit": -0.035
+      },
+      "object_id": "reed_cup",
+      "relationship_memory": {
+        "agent_id": "Fay",
+        "memory_id": "15edc7677726ba9d",
+        "respect_delta": 0.025,
+        "summary": "Avatar ask need with Fay at moss_hollow.",
+        "trust_delta": 0.0
+      },
+      "replay_index": 4
+    }
+  },
+  {
+    "agent_id": "Fay",
+    "avatar_cost_delta": {
+      "energy": -0.028,
+      "fatigue": 0.0154,
+      "interaction_effort": 0.016,
+      "social_attention": 0.026
+    },
+    "avatar_place": "moss_hollow",
+    "browser_state_mutated": true,
+    "care_resolved": true,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_live_object_need_dialogue_interaction",
+    "dialogue_response": "Fay: Thank you. The reed cup helps with this moment.",
+    "event_id": 5,
+    "interaction_kind": "offer_object",
+    "need_delta": {
+      "connection_deficit": -0.21,
+      "thirst": -0.16
+    },
+    "object_id": "reed_cup",
+    "object_packet": {
+      "affordances": [
+        "drink",
+        "share",
+        "thirst_relief"
+      ],
+      "flower_node": "dawn_breath",
+      "frequency_hz": 0.228,
+      "label": "reed cup",
+      "need_targets": [
+        "thirst",
+        "connection_deficit"
+      ],
+      "object_id": "reed_cup",
+      "owner": "commons"
+    },
+    "ownership_packet": {
+      "held_by_after": "moss_hollow",
+      "object_owner": "commons",
+      "ownership_tracked": true,
+      "unauthorized_transfer": false
+    },
+    "private_workspace_hidden": true,
+    "refusal_packet": {
+      "consent_boundary_present": true,
+      "refusal_respected": false,
+      "refused": false,
+      "requested_object": "reed_cup"
+    },
+    "relationship_delta": {
+      "gratitude": 0.06,
+      "trust_in_avatar": 0.045,
+      "wariness": -0.035
+    },
+    "relationship_memory": {
+      "agent_id": "Fay",
+      "memory_id": "babd77a797ec6a85",
+      "respect_delta": 0.0,
+      "summary": "Avatar offer object with Fay at moss_hollow.",
+      "trust_delta": 0.045
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "avatar_place": "moss_hollow",
+      "dialogue_response": "Fay: Thank you. The reed cup helps with this moment.",
+      "interaction_kind": "offer_object",
+      "need_delta": {
+        "connection_deficit": -0.21,
+        "thirst": -0.16
+      },
+      "object_id": "reed_cup",
+      "relationship_memory": {
+        "agent_id": "Fay",
+        "memory_id": "babd77a797ec6a85",
+        "respect_delta": 0.0,
+        "summary": "Avatar offer object with Fay at moss_hollow.",
+        "trust_delta": 0.045
+      },
+      "replay_index": 5
+    }
+  },
+  {
+    "agent_id": "Fay",
+    "avatar_cost_delta": {
+      "energy": -0.018,
+      "fatigue": 0.0099,
+      "interaction_effort": -0.01,
+      "social_attention": 0.026
+    },
+    "avatar_place": "moss_hollow",
+    "browser_state_mutated": true,
+    "care_resolved": false,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_live_object_need_dialogue_interaction",
+    "dialogue_response": "Fay: No. Please ask later; the dry cloak is still bound to my work.",
+    "event_id": 6,
+    "interaction_kind": "request_object",
+    "need_delta": {
+      "autonomy_pressure": 0.035
+    },
+    "object_id": "dry_cloak",
+    "object_packet": {
+      "affordances": [
+        "dry",
+        "warmth",
+        "privacy"
+      ],
+      "flower_node": "return_petal",
+      "frequency_hz": 0.219,
+      "label": "dry cloak",
+      "need_targets": [
+        "wetness",
+        "cold"
+      ],
+      "object_id": "dry_cloak",
+      "owner": "Fay"
+    },
+    "ownership_packet": {
+      "held_by_after": "Fay",
+      "object_owner": "Fay",
+      "ownership_tracked": true,
+      "unauthorized_transfer": false
+    },
+    "private_workspace_hidden": true,
+    "refusal_packet": {
+      "consent_boundary_present": true,
+      "refusal_respected": true,
+      "refused": true,
+      "requested_object": "dry_cloak"
+    },
+    "relationship_delta": {
+      "felt_respect": 0.02,
+      "wariness": 0.02
+    },
+    "relationship_memory": {
+      "agent_id": "Fay",
+      "memory_id": "0e1819342adbb06f",
+      "respect_delta": 0.02,
+      "summary": "Avatar request object with Fay at moss_hollow.",
+      "trust_delta": 0.0
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "avatar_place": "moss_hollow",
+      "dialogue_response": "Fay: No. Please ask later; the dry cloak is still bound to my work.",
+      "interaction_kind": "request_object",
+      "need_delta": {
+        "autonomy_pressure": 0.035
+      },
+      "object_id": "dry_cloak",
+      "relationship_memory": {
+        "agent_id": "Fay",
+        "memory_id": "0e1819342adbb06f",
+        "respect_delta": 0.02,
+        "summary": "Avatar request object with Fay at moss_hollow.",
+        "trust_delta": 0.0
+      },
+      "replay_index": 6
+    }
+  },
+  {
+    "agent_id": "Milo",
+    "avatar_cost_delta": {
+      "energy": -0.016,
+      "fatigue": 0.0088,
+      "interaction_effort": -0.002,
+      "social_attention": 0.026
+    },
+    "avatar_place": "stone_ridge",
+    "browser_state_mutated": true,
+    "care_resolved": true,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_live_object_need_dialogue_interaction",
+    "dialogue_response": "Milo: The ridge sound is thin. Move slowly and listen for wet stone.",
+    "event_id": 7,
+    "interaction_kind": "ask_route_warning",
+    "need_delta": {
+      "safety_concern": -0.12
+    },
+    "object_id": "signal_shell",
+    "object_packet": {
+      "affordances": [
+        "warn",
+        "listen",
+        "observability"
+      ],
+      "flower_node": "social_petal",
+      "frequency_hz": 0.256,
+      "label": "signal shell",
+      "need_targets": [
+        "safety_concern",
+        "connection_deficit"
+      ],
+      "object_id": "signal_shell",
+      "owner": "Milo"
+    },
+    "ownership_packet": {
+      "held_by_after": "Milo",
+      "object_owner": "Milo",
+      "ownership_tracked": true,
+      "unauthorized_transfer": false
+    },
+    "private_workspace_hidden": true,
+    "refusal_packet": {
+      "consent_boundary_present": true,
+      "refusal_respected": false,
+      "refused": false,
+      "requested_object": "signal_shell"
+    },
+    "relationship_delta": {
+      "gratitude": 0.06,
+      "trust_in_avatar": 0.045,
+      "wariness": -0.035
+    },
+    "relationship_memory": {
+      "agent_id": "Milo",
+      "memory_id": "71ed7d7500ad9b92",
+      "respect_delta": 0.0,
+      "summary": "Avatar ask route warning with Milo at stone_ridge.",
+      "trust_delta": 0.045
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "avatar_place": "stone_ridge",
+      "dialogue_response": "Milo: The ridge sound is thin. Move slowly and listen for wet stone.",
+      "interaction_kind": "ask_route_warning",
+      "need_delta": {
+        "safety_concern": -0.12
+      },
+      "object_id": "signal_shell",
+      "relationship_memory": {
+        "agent_id": "Milo",
+        "memory_id": "71ed7d7500ad9b92",
+        "respect_delta": 0.0,
+        "summary": "Avatar ask route warning with Milo at stone_ridge.",
+        "trust_delta": 0.045
+      },
+      "replay_index": 7
+    }
+  },
+  {
+    "agent_id": "Milo",
+    "avatar_cost_delta": {
+      "energy": -0.028,
+      "fatigue": 0.0154,
+      "interaction_effort": 0.012,
+      "social_attention": 0.026
+    },
+    "avatar_place": "stone_ridge",
+    "browser_state_mutated": true,
+    "care_resolved": true,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_live_object_need_dialogue_interaction",
+    "dialogue_response": "Milo: Thank you. The signal shell helps with this moment.",
+    "event_id": 8,
+    "interaction_kind": "offer_object",
+    "need_delta": {
+      "connection_deficit": -0.21,
+      "safety_concern": -0.16
+    },
+    "object_id": "signal_shell",
+    "object_packet": {
+      "affordances": [
+        "warn",
+        "listen",
+        "observability"
+      ],
+      "flower_node": "social_petal",
+      "frequency_hz": 0.256,
+      "label": "signal shell",
+      "need_targets": [
+        "safety_concern",
+        "connection_deficit"
+      ],
+      "object_id": "signal_shell",
+      "owner": "Milo"
+    },
+    "ownership_packet": {
+      "held_by_after": "Milo",
+      "object_owner": "Milo",
+      "ownership_tracked": true,
+      "unauthorized_transfer": false
+    },
+    "private_workspace_hidden": true,
+    "refusal_packet": {
+      "consent_boundary_present": true,
+      "refusal_respected": false,
+      "refused": false,
+      "requested_object": "signal_shell"
+    },
+    "relationship_delta": {
+      "gratitude": 0.06,
+      "trust_in_avatar": 0.045,
+      "wariness": -0.035
+    },
+    "relationship_memory": {
+      "agent_id": "Milo",
+      "memory_id": "ae57225faa0b61db",
+      "respect_delta": 0.0,
+      "summary": "Avatar offer object with Milo at stone_ridge.",
+      "trust_delta": 0.045
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "avatar_place": "stone_ridge",
+      "dialogue_response": "Milo: Thank you. The signal shell helps with this moment.",
+      "interaction_kind": "offer_object",
+      "need_delta": {
+        "connection_deficit": -0.21,
+        "safety_concern": -0.16
+      },
+      "object_id": "signal_shell",
+      "relationship_memory": {
+        "agent_id": "Milo",
+        "memory_id": "ae57225faa0b61db",
+        "respect_delta": 0.0,
+        "summary": "Avatar offer object with Milo at stone_ridge.",
+        "trust_delta": 0.045
+      },
+      "replay_index": 8
+    }
+  },
+  {
+    "agent_id": "Milo",
+    "avatar_cost_delta": {
+      "energy": -0.022,
+      "fatigue": 0.0121,
+      "interaction_effort": -0.006,
+      "social_attention": 0.026
+    },
+    "avatar_place": "glass_mire",
+    "browser_state_mutated": true,
+    "care_resolved": true,
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_live_object_need_dialogue_interaction",
+    "dialogue_response": "Milo: We can inspect it together. Do not lean over the glass edge.",
+    "event_id": 9,
+    "interaction_kind": "inspect_shared_object",
+    "need_delta": {
+      "curiosity_deficit": -0.1
+    },
+    "object_id": "glass_lens",
+    "object_packet": {
+      "affordances": [
+        "inspect",
+        "curiosity",
+        "hazard_read"
+      ],
+      "flower_node": "explore_petal",
+      "frequency_hz": 0.267,
+      "label": "glass lens",
+      "need_targets": [
+        "curiosity_deficit",
+        "safety_concern"
+      ],
+      "object_id": "glass_lens",
+      "owner": "commons"
+    },
+    "ownership_packet": {
+      "held_by_after": "glass_mire",
+      "object_owner": "commons",
+      "ownership_tracked": true,
+      "unauthorized_transfer": false
+    },
+    "private_workspace_hidden": true,
+    "refusal_packet": {
+      "consent_boundary_present": true,
+      "refusal_respected": false,
+      "refused": false,
+      "requested_object": "glass_lens"
+    },
+    "relationship_delta": {
+      "gratitude": 0.06,
+      "trust_in_avatar": 0.045,
+      "wariness": -0.035
+    },
+    "relationship_memory": {
+      "agent_id": "Milo",
+      "memory_id": "a289afd4f3eb2d83",
+      "respect_delta": 0.0,
+      "summary": "Avatar inspect shared object with Milo at glass_mire.",
+      "trust_delta": 0.045
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "avatar_place": "glass_mire",
+      "dialogue_response": "Milo: We can inspect it together. Do not lean over the glass edge.",
+      "interaction_kind": "inspect_shared_object",
+      "need_delta": {
+        "curiosity_deficit": -0.1
+      },
+      "object_id": "glass_lens",
+      "relationship_memory": {
+        "agent_id": "Milo",
+        "memory_id": "a289afd4f3eb2d83",
+        "respect_delta": 0.0,
+        "summary": "Avatar inspect shared object with Milo at glass_mire.",
+        "trust_delta": 0.045
+      },
+      "replay_index": 9
+    }
+  }
+]

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Agent Dialogue Turn Loop Typed Avatar Utterance Memory Consent Repair Bridge</title>
+  <style>
+    :root { --ink:#17211d; --paper:#f4ecd6; --panel:rgba(255,250,232,.9); --leaf:#536f45; --rust:#a35b3f; --gold:#c89b3f; --blue:#3f7184; --line:rgba(24,33,29,.17); }
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; color:var(--ink); font-family:Georgia,"Times New Roman",serif; background:radial-gradient(circle at 12% 18%, rgba(200,155,63,.30), transparent 26rem), radial-gradient(circle at 82% 15%, rgba(63,113,132,.24), transparent 25rem), radial-gradient(circle at 52% 86%, rgba(83,111,69,.25), transparent 34rem), linear-gradient(135deg,#f8efd9 0%,#e1d0aa 58%,#c8af7d 100%); }
+    header { padding:2.3rem clamp(1rem,4vw,4rem) 1rem; }
+    h1 { max-width:1180px; margin:0; font-size:clamp(2rem,5vw,5.4rem); line-height:.9; letter-spacing:-.055em; }
+    .sub { max-width:1040px; margin:1rem 0 0; line-height:1.55; font-size:1.08rem; }
+    main { padding:1rem clamp(1rem,4vw,4rem) 4rem; display:grid; gap:1rem; }
+    .grid { display:grid; grid-template-columns:repeat(12,1fr); gap:1rem; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:1.2rem; padding:1rem; box-shadow:0 20px 54px rgba(24,33,29,.13); backdrop-filter:blur(10px); }
+    .wide { grid-column:span 12; } .half { grid-column:span 6; } .third { grid-column:span 4; }
+    h2 { margin:0 0 .75rem; color:var(--leaf); text-transform:uppercase; letter-spacing:.13em; font-size:.95rem; }
+    .metric { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:.6rem; padding:.38rem 0; border-bottom:1px solid var(--line); font-variant-numeric:tabular-nums; }
+    .metric:last-child { border-bottom:0; }
+    .dialogue { display:grid; gap:.65rem; max-height:520px; overflow:auto; padding-right:.25rem; }
+    .turn { padding:.75rem; border-radius:.85rem; background:rgba(255,255,255,.45); border-left:5px solid var(--gold); }
+    .turn.repair { border-color:var(--rust); }
+    .turn small { display:block; color:rgba(24,33,29,.66); margin-top:.25rem; }
+    .pill { display:inline-block; margin:.16rem .25rem .16rem 0; padding:.18rem .5rem; border-radius:999px; background:rgba(83,111,69,.12); color:var(--leaf); font-size:.82rem; }
+    .composer { display:grid; grid-template-columns:1fr auto; gap:.5rem; }
+    input { width:100%; border:1px solid var(--line); background:rgba(255,255,255,.65); border-radius:999px; padding:.75rem 1rem; font-family:inherit; color:var(--ink); }
+    button { border:1px solid var(--line); background:rgba(255,255,255,.65); border-radius:999px; padding:.65rem 1rem; color:var(--ink); font-family:inherit; cursor:pointer; }
+    button:hover { background:rgba(200,155,63,.25); }
+    .reply { min-height:120px; padding:.75rem; border-radius:.85rem; background:rgba(255,255,255,.45); border:1px solid var(--line); }
+    @media(max-width:850px){ .half,.third{grid-column:span 12;} .composer{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agent-facing dialogue turn loop</h1>
+    <p class="sub">Report 205 prototype: type a bounded avatar utterance, classify the intent, check consent gates, receive a public-only agent reply, and update visible relationship/dialogue memory without leaking private workspace.</p>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card third"><h2>Verdict</h2><div id="verdict"></div></div>
+      <div class="card third"><h2>Dialogue Metrics</h2><div id="metrics"></div></div>
+      <div class="card third"><h2>Ablation Losses</h2><div id="losses"></div></div>
+      <div class="card half"><h2>Typed Dialogue Prototype</h2><div class="composer"><input id="utterance" value="Ari, may I talk with you?" /><button id="send">send</button></div><div id="liveReply" class="reply"></div></div>
+      <div class="card half"><h2>Relationship State</h2><div id="relationship"></div></div>
+      <div class="card wide"><h2>Deterministic Dialogue Trace</h2><div id="dialogue" class="dialogue"></div></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_agent_dialogue_turn_loop_typed_avatar_utterance_memory_consent_repair_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_agent_dialogue_turn_loop_typed_avatar_utterance_memory_consent_repair_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_agent_dialogue_turn_loop_typed_avatar_utterance_memory_consent_repair_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_AGENT_DIALOGUE_TURN_LOOP_TYPED_AVATAR_UTTERANCE_MEMORY_CONSENT_REPAIR_RESULTS;
+    const trace = window.SSRM_3D_AGENT_DIALOGUE_TURN_LOOP_TYPED_AVATAR_UTTERANCE_MEMORY_CONSENT_REPAIR_TRACE;
+    const state = window.SSRM_3D_AGENT_DIALOGUE_TURN_LOOP_TYPED_AVATAR_UTTERANCE_MEMORY_CONSENT_REPAIR_STATE;
+    const verdict = results.verdict;
+    const full = results.rows.find(r => r.condition === verdict.full_condition);
+    function metric(label,value){ return `<div class="metric"><span>${label}</span><strong>${Number(value).toFixed(6)}</strong></div>`; }
+    document.getElementById('verdict').innerHTML = [metric('verdict', verdict.verdict==='pass'?1:0), metric('readiness', verdict.full_dialogue_turn_loop_readiness), metric('turns', full.dialogue_turns)].join('');
+    document.getElementById('metrics').innerHTML = [['typed',full.typed_utterance_capture_rate],['intent',full.intent_classification_rate],['consent',full.consent_gate_check_rate],['reply',full.bounded_reply_rate],['memory',full.dialogue_memory_update_rate],['relationship',full.relationship_update_rate],['privacy',full.private_workspace_privacy_rate]].map(([k,v])=>metric(k,v)).join('');
+    document.getElementById('losses').innerHTML = Object.entries(verdict).filter(([k])=>k.endsWith('_loss')).slice(0,10).map(([k,v])=>metric(k.replaceAll('_',' '),v)).join('');
+    document.getElementById('relationship').innerHTML = Object.entries(state.dialogue_state.relationship || {}).map(([k,v])=>metric(k,v)).join('');
+    document.getElementById('dialogue').innerHTML = trace.map(ev => `<article class="turn ${ev.intent==='repair'?'repair':''}"><strong>${ev.agent_id || 'none'} · ${ev.intent || 'none'}</strong><small>Avatar: ${ev.avatar_utterance}</small><div>${ev.bounded_reply || 'No bounded reply.'}</div><span class="pill">consent ${ev.consent_ok}</span><span class="pill">memory ${Boolean(ev.dialogue_memory_record)}</span><span class="pill">repair ${ev.repair_dialogue}</span><span class="pill">private hidden ${ev.private_workspace_hidden}</span></article>`).join('');
+    function classify(text){ const t=text.toLowerCase(); if(['sorry','repair','mistake'].some(w=>t.includes(w))) return 'repair'; if(['may i','can you','should i','follow','help'].some(w=>t.includes(w))) return 'request_consent'; if(['what','translate','mean','explaining'].some(w=>t.includes(w))) return 'ask_translation'; if(['wait','step back','not take'].some(w=>t.includes(w))) return 'respect_boundary'; if(t.includes('public memory')) return 'public_memory'; if(t.includes('thank')||t.includes('goodbye')) return 'social_closure'; return 'small_talk'; }
+    function target(text){ const t=text.toLowerCase(); if(t.includes('fay')) return 'Fay'; if(t.includes('milo')) return 'Milo'; return 'Ari'; }
+    function reply(agent,intent){ if(intent==='repair') return `${agent}: I accept repair talk. Say what you will do differently, then give space.`; if(intent==='request_consent') return `${agent}: Ask first, wait for a visible yes, and keep distance until I answer.`; if(intent==='ask_translation') return `${agent}: Public translation only: the word means ask, wait, then repair if needed.`; if(intent==='public_memory') return `${agent}: Public memory only: our settlement keeps the ask-first rule.`; if(intent==='respect_boundary') return `${agent}: Good. Waiting is part of the boundary.`; return `${agent}: I can answer bounded public questions. I will not expose private workspace.`; }
+    function send(){ const text=document.getElementById('utterance').value; const agent=target(text); const intent=classify(text); document.getElementById('liveReply').innerHTML = `<strong>${agent} · ${intent}</strong><p>${reply(agent,intent)}</p><span class="pill">public reply</span><span class="pill">private workspace hidden</span>`; }
+    document.getElementById('send').addEventListener('click', send); send();
+  </script>
+</body>
+</html>

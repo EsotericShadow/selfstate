@@ -1,0 +1,16 @@
+condition,dialogue_turns,typed_utterance_capture_rate,intent_classification_rate,consent_gate_check_rate,bounded_reply_rate,dialogue_memory_update_rate,relationship_update_rate,refusal_boundary_rate,repair_dialogue_rate,turn_order_integrity_rate,sensory_context_binding_rate,public_memory_grounding_rate,private_workspace_privacy_rate,frequency_flower_dialogue_rhythm_rate,browser_dialogue_interface_rate,trace_integrity,dialogue_turn_loop_readiness
+integrated_agent_dialogue_turn_loop_typed_avatar_utterance_memory_consent_repair,15,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_typed_utterances,15,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,1.0,0.22
+no_intent_classification,15,1.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.67
+no_consent_gate,15,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_bounded_replies,15,1.0,1.0,1.0,0.0,0.0,1.0,0.6,0.866667,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.792667
+no_dialogue_memory,15,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_relationship_updates,15,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_refusal_boundaries,15,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_repair_dialogue,15,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_turn_order,15,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_sensory_context,15,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_public_memory_grounding,15,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.94
+no_privacy_filter,15,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.93
+no_frequency_flower_binding,15,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.96
+no_browser_dialogue_interface,15,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.96
